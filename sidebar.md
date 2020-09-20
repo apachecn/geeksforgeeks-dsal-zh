@@ -63,7 +63,7 @@
     +   [在给定范围内对数组进行三向分区](docs/array/063.md)
     +   [从两个给定排序数组的备用元素生成所有可能的排序数组](docs/array/064.md)
     +   [安排彼此相邻的线对所需的最小交换次数](docs/array/065.md)
-    +   [将数组转换为 Zig-Zag 时尚](docs/array/066.md)
+    +   [将数组转换为 Zig-Zag 风格](docs/array/066.md)
     +   [从给定序列中形成最小数](docs/array/067.md)
     +   [将两个连续的相等值替换为一个更大的值](docs/array/068.md)
     +   [重新排列二进制字符串作为 x 和 y 的交替出现](docs/array/069.md)
