@@ -58,12 +58,15 @@
     }
     
     window.$docsify = {
-      loadSidebar: 'sidebar.md',
+      loadSidebar: 'SUMMARY.md',
       name: 'GeeksForGeeks 中文系列教程',
       auto2top: true,
       themeColor: '#2f8d46',
       repo: 'apachecn/geeksforgeeks-zh',
       plugins: [window.docsPlugin],
+      alias: {
+        '/.*/SUMMARY.md': '/SUMMARY.md',
+      },
       search: {
         paths: 'auto',
         placeholder: '搜索',
