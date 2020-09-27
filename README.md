@@ -11,6 +11,14 @@
 
 ## 下载
 
+### PYPI
+
+```
+pip install geeksforgeeks-zh
+geeksforgeeks-zh <port>
+# 访问 http://localhost:{port} 查看文档
+```
+
 ### NPM
 
 ```
