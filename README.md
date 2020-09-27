@@ -9,6 +9,16 @@
 * [在线阅读](https://g4g.apachecn.org)
 * [ApacheCN 学习资源](http://docs.apachecn.org/)
 
+## 下载
+
+### NPM
+
+```
+npm install -g geeksforgeeks-zh
+geeksforgeeks-zh <port>
+# 访问 http://localhost:{port} 查看文档
+```
+
 ## 贡献指南
 
 本项目需要校对，欢迎大家提交 Pull Request。
