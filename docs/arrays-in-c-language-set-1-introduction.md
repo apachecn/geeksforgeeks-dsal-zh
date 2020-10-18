@@ -76,33 +76,228 @@ C 或 C++ 中的数组是存储在连续内存位置的项目的集合，可以�
 
 **关于 C/C++ 中的数组的事实**：
 
-*   **访问数组元素**：
+**访问数组元素**：
 
-    Array elements are accessed by using an integer index. Array index starts with 0 and goes till size of array minus 1.
+Array elements are accessed by using an integer index. Array index starts with 0 and goes till size of array minus 1.
 
     
 
-    ![](img/f638bc6d869bd54a01af33849b8a4661.png)
+![](img/f638bc6d869bd54a01af33849b8a4661.png)
 
-    **示例**：
+**示例**：
 
-    ## C
+## C
 
-    ```
+```c
 
-    #include <stdio.h> 
+#include <stdio.h> 
 
-    int main() 
-    { 
-        int arr[5]; 
-        arr[0] = 5; 
-        arr[2] = -10; 
-        arr[3 / 2] = 2; // this is same as arr[1] = 2 
-        arr[3] = arr[0]; 
+int main() 
+{ 
+    int arr[5]; 
+    arr[0] = 5; 
+    arr[2] = -10; 
+    arr[3 / 2] = 2; // this is same as arr[1] = 2 
+    arr[3] = arr[0]; 
 
-        printf("%d %d %d %d", arr[0], arr[1], arr[2], arr[3]); 
+    printf("%d %d %d %d", arr[0], arr[1], arr[2], arr[3]); 
 
-        return 0; 
-    } 
+    return 0; 
+} 
 
-    ```
+```
+
+## C++
+    
+```cpp
+#include <iostream> 
+using namespace std; 
+  
+int main() 
+{ 
+    int arr[5]; 
+    arr[0] = 5; 
+    arr[2] = -10; 
+  
+    // this is same as arr[1] = 2 
+    arr[3 / 2] = 2; 
+    arr[3] = arr[0]; 
+  
+    cout << arr[0] << " " << arr[1] 
+         << " " << arr[2] << " " << arr[3]; 
+  
+    return 0; 
+} 
+```
+
+输出：
+
+```
+5 2 -10 5
+```
+
+没有索引越界检查：
+
+在 C/C++ 中，没有没有超出范围的索引检查，例如，以下程序可以正常编译，但在运行时可能会产生意外的输出。
+
+## C
+
+```c
+// This C program compiles fine 
+// as index out of bound 
+// is not checked in C. 
+  
+#include <stdio.h> 
+  
+int main() 
+{ 
+    int arr[2]; 
+  
+    printf("%d ", arr[3]); 
+    printf("%d ", arr[-2]); 
+  
+    return 0; 
+} 
+```
+
+## C++
+
+```cpp
+// This C++ program compiles fine 
+// as index out of bound 
+// is not checked in C. 
+  
+#include <iostream> 
+using namespace std; 
+  
+int main() 
+{ 
+    int arr[2]; 
+  
+    cout << arr[3] << " "; 
+    cout << arr[-2] << " "; 
+  
+    return 0; 
+} 
+```
+
+输出：
+
+```
+2008101287 4195777
+```
+
+在 C 语言中，使用比指定大小更多的元素初始化数组不是编译器错误。 例如，下面的程序可以正常编译并仅显示警告。
+
+```c
+#include <stdio.h> 
+int main() 
+{ 
+  
+    // Array declaration by initializing it with more 
+    // elements than specified size. 
+    int arr[2] = { 10, 20, 30, 40, 50 }; 
+  
+    return 0; 
+} 
+```
+
+警告：
+
+```
+prog.c: In function 'main':
+prog.c:7:25: warning: excess elements in array initializer
+  int arr[2] = { 10, 20, 30, 40, 50 };
+                         ^
+prog.c:7:25: note: (near initialization for 'arr')
+prog.c:7:29: warning: excess elements in array initializer
+  int arr[2] = { 10, 20, 30, 40, 50 };
+                             ^
+prog.c:7:29: note: (near initialization for 'arr')
+prog.c:7:33: warning: excess elements in array initializer
+  int arr[2] = { 10, 20, 30, 40, 50 };
+                                 ^
+prog.c:7:33: note: (near initialization for 'arr')
+```
+
+注意：该程序无法在 C++ 中编译。 如果将上述程序另存为`.cpp`，则该程序会生成编译器错误“错误：`'int [2]'`的初始化器太多”。
+
+元素存储在连续的内存位置：
+
+例：
+
+## C
+
+```c
+// C program to demonstrate that array elements are stored 
+// contiguous locations 
+  
+#include <stdio.h> 
+int main() 
+{ 
+    // an array of 10 integers.  If arr[0] is stored at 
+    // address x, then arr[1] is stored at x + sizeof(int) 
+    // arr[2] is stored at x + sizeof(int) + sizeof(int) 
+    // and so on. 
+    int arr[5], i; 
+  
+    printf("Size of integer in this compiler is %lu\n", sizeof(int)); 
+  
+    for (i = 0; i < 5; i++) 
+        // The use of '&' before a variable name, yields 
+        // address of variable. 
+        printf("Address arr[%d] is %p\n", i, &arr[i]); 
+  
+    return 0; 
+} 
+```
+
+## C++
+
+```cpp
+// C++ program to demonstrate that array elements 
+// are stored contiguous locations 
+  
+#include <iostream> 
+using namespace std; 
+  
+int main() 
+{ 
+    // an array of 10 integers.  If arr[0] is stored at 
+    // address x, then arr[1] is stored at x + sizeof(int) 
+    // arr[2] is stored at x + sizeof(int) + sizeof(int) 
+    // and so on. 
+    int arr[5], i; 
+  
+    cout << "Size of integer in this compiler is " << sizeof(int) << "\n"; 
+  
+    for (i = 0; i < 5; i++) 
+        // The use of '&' before a variable name, yields 
+        // address of variable. 
+        cout << "Address arr[" << i << "] is " << &arr[i] << "\n"; 
+  
+    return 0; 
+} 
+```
+
+输出：
+
+```
+Size of integer in this compiler is 4
+Address arr[0] is 0x7ffd636b4260
+Address arr[1] is 0x7ffd636b4264
+Address arr[2] is 0x7ffd636b4268
+Address arr[3] is 0x7ffd636b426c
+Address arr[4] is 0x7ffd636b4270
+```
+
+数组与指针：
+
+数组和指针是两个不同的东西（我们可以通过应用`sizeof`进行检查）。 之所以会造成混乱，是因为数组名称指示第一个元素的地址，并且数组始终作为指针传递（即使我们使用方括号）。 更多细节请参阅：[C 中的指针和数组之间的区别？](https://www.geeksforgeeks.org/difference-pointer-array-c/)。
+
+C++ 中的向量是什么？
+C++ 中的`vector`是 STL 中的一个表示数组的类。 向量比普通阵列的优势在于，
+
++   声明向量时，我们不需要传递大小作为额外的参数，即向量支持动态大小（我们不必最初指定向量的大小）。 我们还可以调整向量的大小。
++   向量具有许多内置功能，例如删除元素等。
++   要了解有关`vector`提供的功能的更多信息，请参考 [C++ 中的`vector`](https://www.geeksforgeeks.org/vector-in-cpp-stl/)获取更多详细信息。
