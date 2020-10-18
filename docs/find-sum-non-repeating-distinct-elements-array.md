@@ -63,3 +63,282 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+import java.util.Arrays; 
+  
+// Java Find the sum of all non-repeated  
+// elements in an array  
+public class GFG { 
+  
+// Find the sum of all non-repeated elements  
+// in an array  
+    static int findSum(int arr[], int n) { 
+        // sort all elements of array  
+  
+        Arrays.sort(arr); 
+         
+        int sum = arr[0]; 
+        for (int i = 0; i < n-1; i++) { 
+            if (arr[i] != arr[i + 1]) { 
+                sum = sum + arr[i+1]; 
+            } 
+        } 
+  
+        return sum; 
+    } 
+  
+// Driver code  
+    public static void main(String[] args) { 
+        int arr[] = {1, 2, 3, 1, 1, 4, 5, 6}; 
+        int n = arr.length; 
+        System.out.println(findSum(arr, n)); 
+  
+    } 
+}
+```
+
+## Python3
+
+```
+# Python3 Find the sum of all non-repeated 
+# elements in an array 
+  
+   
+# Find the sum of all non-repeated elements 
+# in an array 
+def findSum(arr,  n): 
+    # sort all elements of array 
+    arr.sort() 
+   
+    sum = arr[0] 
+    for i in range(0,n-1): 
+        if (arr[i] != arr[i+1]): 
+            sum = sum + arr[i+1] 
+      
+    return sum
+   
+# Driver code 
+def main(): 
+    arr= [1, 2, 3, 1, 1, 4, 5, 6] 
+    n = len(arr) 
+    print(findSum(arr, n)) 
+  
+if __name__ == '__main__': 
+    main() 
+# This code is contributed by 29AjayKumar
+```
+
+## C#
+
+```
+// C# Find the sum of all non-repeated  
+// elements in an array  
+using System; 
+class GFG  
+{  
+  
+    // Find the sum of all non-repeated elements  
+    // in an array  
+    static int findSum(int []arr, int n) 
+    {  
+        // sort all elements of array  
+        Array.Sort(arr);  
+          
+        int sum = arr[0];  
+        for (int i = 0; i < n - 1; i++)  
+        {  
+            if (arr[i] != arr[i + 1])  
+            {  
+                sum = sum + arr[i + 1];  
+            }  
+        }  
+        return sum;  
+    }  
+  
+    // Driver code  
+    public static void Main() 
+    {  
+        int []arr = {1, 2, 3, 1, 1, 4, 5, 6};  
+        int n = arr.Length;  
+        Console.WriteLine(findSum(arr, n));  
+    }  
+}  
+  
+// This code is contributed by 29AjayKumar
+```
+
+输出：
+
+```
+21
+```
+
+时间复杂度：`O(n log n)`。
+
+空间复杂度：`O(1)`。
+
+此问题的有效解决方案是，使用`unordered_set`我们运行一个`for`循环，并且该值首次出现在其`add sum`变量中，并存储在哈希表中，下一次我们不使用该值。
+
+## C++
+
+```
+// C++ Find the sum of all non- repeated 
+// elements in an array 
+#include<bits/stdc++.h> 
+using namespace std; 
+  
+// Find the sum of all non-repeated elements 
+// in an array 
+int findSum(int arr[],int n) 
+{ 
+    int sum = 0; 
+  
+    // Hash to store all element of array 
+    unordered_set< int > s; 
+    for (int i=0; i<n; i++) 
+    { 
+        if (s.find(arr[i]) == s.end()) 
+        { 
+            sum += arr[i]; 
+            s.insert(arr[i]); 
+        } 
+    } 
+  
+    return sum; 
+} 
+  
+// Driver code 
+int main() 
+{ 
+    int arr[] = {1, 2, 3, 1, 1, 4, 5, 6}; 
+    int n = sizeof(arr)/sizeof(int); 
+    cout << findSum(arr, n); 
+    return 0; 
+}
+```
+
+## Java
+
+```
+// Java Find the sum of all non- repeated  
+// elements in an array  
+import java.util.*; 
+  
+class GFG 
+{ 
+      
+    // Find the sum of all non-repeated elements  
+    // in an array  
+    static int findSum(int arr[], int n) 
+    { 
+        int sum = 0; 
+  
+        // Hash to store all element of array  
+        HashSet<Integer> s = new HashSet<Integer>(); 
+        for (int i = 0; i < n; i++) 
+        { 
+            if (!s.contains(arr[i])) 
+            { 
+                sum += arr[i]; 
+                s.add(arr[i]); 
+            } 
+        } 
+        return sum; 
+    } 
+  
+    // Driver code  
+    public static void main(String[] args)  
+    { 
+        int arr[] = {1, 2, 3, 1, 1, 4, 5, 6}; 
+        int n = arr.length; 
+        System.out.println(findSum(arr, n)); 
+    } 
+}  
+  
+// This code is contributed by Rajput-Ji
+```
+
+## Python3
+
+```
+# Python3 Find the sum of all  
+# non- repeated elements in an array  
+  
+# Find the sum of all non-repeated 
+# elements in an array 
+def findSum(arr, n): 
+    s = set() 
+    sum = 0
+  
+    # Hash to store all element  
+    # of array 
+    for i in range(n): 
+        if arr[i] not in s: 
+            s.add(arr[i]) 
+    for i in s: 
+        sum = sum + i 
+  
+    return sum
+  
+# Driver code 
+arr = [1, 2, 3, 1, 1, 4, 5, 6] 
+n = len(arr) 
+print(findSum(arr, n)) 
+  
+# This code is contributed by Shrikant13
+```
+
+## C#
+
+```
+// C# Find the sum of all non- repeated  
+// elements in an array  
+using System; 
+using System.Collections.Generic; 
+  
+class GFG 
+{ 
+      
+    // Find the sum of all non-repeated elements  
+    // in an array  
+    static int findSum(int []arr, int n) 
+    { 
+        int sum = 0; 
+  
+        // Hash to store all element of array  
+        HashSet<int> s = new HashSet<int>(); 
+        for (int i = 0; i < n; i++) 
+        { 
+            if (!s.Contains(arr[i])) 
+            { 
+                sum += arr[i]; 
+                s.Add(arr[i]); 
+            } 
+        } 
+        return sum; 
+    } 
+  
+    // Driver code  
+    public static void Main(String[] args)  
+    { 
+        int []arr = {1, 2, 3, 1, 1, 4, 5, 6}; 
+        int n = arr.Length; 
+        Console.WriteLine(findSum(arr, n)); 
+    } 
+} 
+  
+// This code is contributed by Rajput-Ji
+```
+
+输出：
+
+```
+21
+```
+
+时间复杂度：`O(n)`。
+
+辅助空间：`O(n)`。

@@ -81,3 +81,242 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to find largest pair sum in a given array 
+  
+class Test 
+{ 
+    static int arr[] = new int[]{12, 34, 10, 6, 40}; 
+      
+    /* Method to return largest pair sum. Assumes that  
+       there are at-least  two elements in arr[] */
+    static int findLargestSumPair() 
+    { 
+        // Initialize first and second largest element 
+        int first, second; 
+        if (arr[0] > arr[1]) 
+        { 
+            first = arr[0]; 
+            second = arr[1]; 
+        } 
+        else
+        { 
+            first = arr[1]; 
+            second = arr[0]; 
+        } 
+       
+        // Traverse remaining array and find first and second largest 
+        // elements in overall array 
+        for (int i = 2; i<arr.length; i ++) 
+        { 
+            /* If current element is greater than first then update both 
+              first and second */
+            if (arr[i] > first) 
+            { 
+                second = first; 
+                first = arr[i]; 
+            } 
+       
+            /* If arr[i] is in between first and second then update second  */
+            else if (arr[i] > second && arr[i] != first) 
+                second = arr[i]; 
+        } 
+        return (first + second); 
+    } 
+    // Driver method to test the above function 
+    public static void main(String[] args)  
+    { 
+          
+        System.out.println("Max Pair Sum is " + findLargestSumPair()); 
+          
+    } 
+}
+```
+
+## Python3
+
+```
+# Python3 program to find largest  
+# pair sum in a given array 
+  
+# Function to return largest pair  
+# sum. Assumes that there are  
+# at-least two elements in arr[]  
+def findLargestSumPair(arr, n): 
+  
+    # Initialize first and second 
+    # largest element 
+    if arr[0] > arr[1]: 
+        first = arr[0] 
+        second = arr[1] 
+      
+    else: 
+        first = arr[1] 
+        second = arr[0] 
+      
+  
+    # Traverse remaining array and  
+    # find first and second largest 
+    # elements in overall array 
+    for i in range(2, n): 
+      
+        # If current element is greater 
+        # than first then update both 
+        # first and second  
+        if arr[i] > first: 
+            second = first 
+            first = arr[i] 
+          
+  
+        # If arr[i] is in between first  
+        # and second then update second  
+        elif arr[i] > second and arr[i] != first: 
+            second = arr[i] 
+      
+    return (first + second) 
+  
+# Driver program to test above function */ 
+arr = [12, 34, 10, 6, 40] 
+n = len(arr) 
+print("Max Pair Sum is",  
+      findLargestSumPair(arr, n)) 
+  
+# This code is contributed by Smitha Dinesh Semwal
+```
+
+## C#
+
+```
+// C# program to find largest 
+// pair sum in a given array 
+using System; 
+  
+class GFG 
+{ 
+    /* Method to return largest pair 
+    sum. Assumes that there are 
+    at-least two elements in arr[] */
+    static int findLargestSumPair(int []arr) 
+    { 
+        // Initialize first and  
+        // second largest element 
+        int first, second; 
+        if (arr[0] > arr[1]) 
+        { 
+            first = arr[0]; 
+            second = arr[1]; 
+        } 
+        else
+        { 
+            first = arr[1]; 
+            second = arr[0]; 
+        } 
+      
+        // Traverse remaining array and 
+        // find first and second largest 
+        // elements in overall array 
+        for (int i = 2; i < arr.Length; i ++) 
+        { 
+            /* If current element is greater  
+               than first then update both 
+               first and second */
+            if (arr[i] > first) 
+            { 
+                second = first; 
+                first = arr[i]; 
+            } 
+      
+            /* If arr[i] is in between first 
+               and second then update second */
+            else if (arr[i] > second &&  
+                     arr[i] != first) 
+                second = arr[i]; 
+        } 
+        return (first + second); 
+    } 
+    // Driver Code 
+    public static void Main()  
+    { 
+        int []arr1 = new int[]{12, 34, 10, 6, 40}; 
+        Console.Write("Max Pair Sum is " +  
+                       findLargestSumPair(arr1)); 
+          
+    } 
+}
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find largest  
+// pair sum in a given array 
+  
+// Function to return largest  
+// pair sum. Assumes that  
+// there are at-least two  
+// elements in arr[] */ 
+function findLargestSumPair($arr, $n) 
+{ 
+      
+    // Initialize first and  
+    // second largest element 
+    $first;  
+    $second; 
+      
+    if ($arr[0] > $arr[1]) 
+    { 
+        $first = $arr[0]; 
+        $second = $arr[1]; 
+    } 
+    else
+    { 
+        $first = $arr[1]; 
+        $second = $arr[0]; 
+    } 
+  
+    // Traverse remaining array  
+    // and find first and second  
+    // largest elements in overall 
+    // array 
+    for ( $i = 2; $i<$n; $i ++) 
+    { 
+          
+        // If current element is greater 
+        // than first then update both 
+        // first and second  
+        if ($arr[$i] > $first) 
+        { 
+            $second = $first; 
+            $first = $arr[$i]; 
+        } 
+  
+        // If arr[i] is in between first  
+        // and second then update second 
+        else if ($arr[$i] > $second and
+                 $arr[$i] != $first) 
+            $second = $arr[$i]; 
+    } 
+    return ($first + $second); 
+} 
+  
+    // Driver Code  
+    $arr = array(12, 34, 10, 6, 40); 
+    $n = count($arr); 
+    echo "Max Pair Sum is " 
+          , findLargestSumPair($arr, $n); 
+  
+// This code is contributed by anuj_67. 
+?>
+```
+
+输出：
+
+```
+Max Pair Sum is 74
+```
+
+上述解决方案的时间复杂度为`O(n)`。
