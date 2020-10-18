@@ -58,3 +58,159 @@ int main() 
 // This is code is contributed by rathbhupendra 
 
 ```
+
+## C
+
+```
+// C program to check fixed point  
+// in an array using linear search 
+#include<stdio.h> 
+  
+int linearSearch(int arr[], int n) 
+{ 
+    int i; 
+    for(i = 0; i < n; i++) 
+    { 
+        if(arr[i] == i) 
+            return i; 
+    } 
+  
+    /* If no fixed point present then return -1 */
+    return -1; 
+} 
+  
+/* Driver program to check above functions */
+int main() 
+{ 
+    int arr[] = {-10, -1, 0, 3, 10, 11, 30, 50, 100}; 
+    int n = sizeof(arr)/sizeof(arr[0]); 
+    printf("Fixed Point is %d", linearSearch(arr, n)); 
+    getchar(); 
+    return 0; 
+}
+```
+
+## Java
+
+```
+// Java program to check fixed point  
+// in an array using linear search 
+   
+class Main 
+{ 
+    static int linearSearch(int arr[], int n) 
+    { 
+        int i; 
+        for(i = 0; i < n; i++) 
+        { 
+            if(arr[i] == i) 
+                return i; 
+        } 
+        
+        /* If no fixed point present  
+           then return -1 */
+        return -1; 
+    } 
+    //main function 
+    public static void main(String args[]) 
+    { 
+        int arr[] = {-10, -1, 0, 3, 10, 11, 30, 50, 100}; 
+        int n = arr.length; 
+        System.out.println("Fixed Point is " 
+                     + linearSearch(arr, n)); 
+    } 
+}
+```
+
+## Python
+
+```
+# Python program to check fixed point  
+# in an array using linear search 
+def linearSearch(arr, n): 
+    for i in range(n): 
+        if arr[i] is i: 
+            return i 
+    # If no fixed point present then return -1 
+    return -1
+  
+# Driver program to check above functions 
+arr = [-10, -1, 0, 3, 10, 11, 30, 50, 100] 
+n = len(arr) 
+print("Fixed Point is " + str(linearSearch(arr,n))) 
+  
+# This code is contributed by Pratik Chhajer
+```
+
+## C#
+
+```
+// C# program to check fixed point  
+// in an array using linear search 
+using System; 
+  
+class GFG 
+{ 
+    static int linearSearch(int []arr, int n) 
+    { 
+        int i; 
+        for(i = 0; i < n; i++) 
+        { 
+            if(arr[i] == i) 
+                return i; 
+        } 
+          
+        /* If no fixed point present  
+        then return -1 */
+        return -1; 
+    } 
+    // Driver code 
+    public static void Main() 
+    { 
+        int []arr = {-10, -1, 0, 3, 10, 11, 30, 50, 100}; 
+        int n = arr.Length; 
+        Console.Write("Fixed Point is "+ linearSearch(arr, n)); 
+    } 
+} 
+  
+// This code is contributed by Sam007
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to check fixed point  
+// in an array using linear search 
+  
+function linearSearch($arr, $n) 
+{ 
+    for($i = 0; $i < $n; $i++) 
+    { 
+        if($arr[$i] == $i) 
+            return $i; 
+    } 
+  
+    // If no fixed point present then 
+    // return -1 
+    return -1; 
+} 
+  
+    // Driver Code 
+    $arr = array(-10, -1, 0, 3, 10,  
+                  11, 30, 50, 100); 
+    $n = count($arr); 
+    echo "Fixed Point is ". 
+            linearSearch($arr,$n); 
+  
+// This code is contributed by Sam007 
+?>
+```
+
+输出：
+
+```
+Fixed Point is 3
+```
+
+时间复杂度：`O(n)`。

@@ -104,3 +104,100 @@ public class MoveCellPerCellValue {
 } 
 
 ```
+
+## C#
+
+```
+/* C# program to Find a 2-D array is completely 
+traversed or not by following the cell values */
+using System; 
+  
+public class Cell 
+{ 
+    public int x; 
+    public int y; 
+  
+    // Cell class constructor 
+    public Cell(int x, int y) 
+    { 
+        this.x = x; 
+        this.y = y; 
+    } 
+} 
+  
+public class MoveCellPerCellValue  
+{ 
+  
+    // function which tells all cells are visited or not 
+    public Boolean isAllCellTraversed(Cell [,]grid) 
+    { 
+        Boolean[,] visited =  
+            new Boolean[grid.GetLength(0),  
+                        grid.GetLength(1)]; 
+  
+        int total = grid.GetLength(0) *  
+                    grid.GetLength(1); 
+                      
+        // starting cell values 
+        int startx = grid[0, 0].x; 
+        int starty = grid[0, 0].y; 
+  
+        for (int i = 0; i < total - 2; i++)  
+        { 
+  
+            // if we get null before the end of loop  
+            // then returns false. Because it means we  
+            // didn't traverse all the cells 
+            if (grid[startx, starty] == null)  
+                return false; 
+              
+            // If found cycle then return false 
+            if (visited[startx, starty] == true)  
+                return false; 
+              
+            visited[startx, starty] = true; 
+            int x = grid[startx, starty].x; 
+            int y = grid[startx, starty].y; 
+  
+            // Update startx and starty values  
+            // to next cell values 
+            startx = x; 
+            starty = y; 
+        } 
+  
+        // finally if we reach our goal 
+        // then returns true 
+        if (grid[startx, starty] == null)  
+            return true; 
+          
+        return false; 
+    } 
+  
+    // Driver Code 
+    public static void Main(String []args) 
+    { 
+        Cell [,]cell = new Cell[3, 2]; 
+        cell[0, 0] = new Cell(0, 1); 
+        cell[0, 1] = new Cell(2, 0); 
+        cell[1, 0] = null; 
+        cell[1, 1] = new Cell(1, 0); 
+        cell[2, 0] = new Cell(2, 1); 
+        cell[2, 1] = new Cell(1, 1); 
+  
+        MoveCellPerCellValue mcp = new MoveCellPerCellValue(); 
+        Console.WriteLine(mcp.isAllCellTraversed(cell)); 
+    } 
+} 
+  
+// This code is contributed by Rajput-Ji
+```
+
+输出：
+
+```
+true
+```
+
+时间复杂度：`O(N)`。
+
+辅助空间：`O(M * N)`。

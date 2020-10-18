@@ -329,3 +329,157 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// An efficient java program to find 
+// sum of diagonals 
+import java.io.*; 
+  
+public class GFG { 
+  
+    static void printDiagonalSums(int [][]mat, 
+                                        int n) 
+    { 
+        int principal = 0, secondary = 0;  
+        for (int i = 0; i < n; i++) { 
+            principal += mat[i][i]; 
+            secondary += mat[i][n - i - 1];  
+        } 
+      
+        System.out.println("Principal Diagonal:"
+                                   + principal); 
+                                     
+        System.out.println("Secondary Diagonal:"
+                                   + secondary); 
+    } 
+      
+    // Driver code 
+    static public void main (String[] args) 
+    { 
+        int [][]a = { { 1, 2, 3, 4 }, 
+                      { 5, 6, 7, 8 },  
+                      { 1, 2, 3, 4 }, 
+                      { 5, 6, 7, 8 } }; 
+      
+        printDiagonalSums(a, 4); 
+    } 
+} 
+  
+// This code is contributed by vt_m.
+```
+
+## Python3
+
+```
+# A simple Python3 program to find 
+# sum of diagonals 
+MAX = 100
+  
+def printDiagonalSums(mat, n): 
+  
+    principal = 0
+    secondary = 0
+    for i in range(0, n):  
+        principal += mat[i][i] 
+        secondary += mat[i][n - i - 1] 
+          
+    print("Principal Diagonal:", principal) 
+    print("Secondary Diagonal:", secondary) 
+  
+# Driver code 
+a = [[ 1, 2, 3, 4 ], 
+     [ 5, 6, 7, 8 ],  
+     [ 1, 2, 3, 4 ], 
+     [ 5, 6, 7, 8 ]] 
+printDiagonalSums(a, 4) 
+  
+# This code is contributed 
+# by ihritik
+```
+
+## C#
+
+```
+// An efficient C#program to find 
+// sum of diagonals 
+using System; 
+  
+public class GFG { 
+  
+    static void printDiagonalSums(int [,]mat, 
+                                       int n) 
+    { 
+        int principal = 0, secondary = 0;  
+        for (int i = 0; i < n; i++) { 
+            principal += mat[i,i]; 
+            secondary += mat[i,n - i - 1];  
+        } 
+      
+        Console.WriteLine("Principal Diagonal:"
+                                  + principal); 
+                                    
+        Console.WriteLine("Secondary Diagonal:"
+                                  + secondary); 
+    } 
+      
+    // Driver code 
+    static public void Main () 
+    { 
+        int [,]a = { { 1, 2, 3, 4 }, 
+                     { 5, 6, 7, 8 },  
+                     { 1, 2, 3, 4 }, 
+                     { 5, 6, 7, 8 } }; 
+                       
+        printDiagonalSums(a, 4); 
+    } 
+} 
+  
+// This code is contributed by vt_m.
+```
+
+## PHP
+
+```
+<?php 
+// An efficient PHP program  
+// to find sum of diagonals 
+$MAX = 100; 
+  
+function printDiagonalSums($mat, $n) 
+{ 
+    global $MAX; 
+    $principal = 0; $secondary = 0;  
+    for ($i = 0; $i < $n; $i++)  
+    { 
+        $principal += $mat[$i][$i]; 
+        $secondary += $mat[$i][$n - $i - 1];      
+    } 
+  
+    echo "Principal Diagonal:" , 
+               $principal ,"\n"; 
+    echo "Secondary Diagonal:" ,  
+               $secondary ,"\n"; 
+} 
+  
+// Driver Code 
+$a = array(array(1, 2, 3, 4), 
+           array(5, 6, 7, 8),  
+           array(1, 2, 3, 4), 
+           array(5, 6, 7, 8)); 
+printDiagonalSums($a, 4); 
+  
+// This code is contributed by aj_36  
+?>
+```
+
+输出：
+
+```
+Principal Diagonal:18
+Secondary Diagonal:18
+```
+
+此代码需要`O(n)`时间和`O(1)`辅助空间。
+
