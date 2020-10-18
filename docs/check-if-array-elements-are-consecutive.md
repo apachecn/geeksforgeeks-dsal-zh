@@ -464,29 +464,28 @@ else
 ## C++
 
 ```
-
 #include<stdio.h> 
 #include<stdlib.h> 
-
+  
 /* Helper functions to get minimum and maximum in an array */
 int getMin(int arr[], int n); 
 int getMax(int arr[], int n); 
-
+  
 /* The function checks if the array elements are consecutive 
   If elements are consecutive, then returns true, else returns 
   false */
 bool areConsecutive(int arr[], int n) 
 { 
-
+  
     if ( n <  1 ) 
         return false; 
-
+  
     /* 1) Get the minimum element in array */
     int min = getMin(arr, n); 
-
+  
     /* 2) Get the maximum element in array */
     int max = getMax(arr, n); 
-
+  
     /* 3) max - min + 1 is equal to n then only check all elements */
     if (max - min  + 1 == n) 
     { 
@@ -494,12 +493,12 @@ bool areConsecutive(int arr[], int n)
         for(i = 0; i < n; i++) 
         { 
             int j; 
-
+  
             if (arr[i] < 0) 
                 j = -arr[i] - min; 
             else
                 j = arr[i] - min; 
-
+  
             // if the value at index j is negative then 
             // there is repetition 
             if (arr[j] > 0) 
@@ -507,15 +506,15 @@ bool areConsecutive(int arr[], int n)
             else
                 return false; 
         } 
-
+  
         /* If we do not see a negative value then all elements 
            are distinct */
         return true; 
     } 
-
+  
     return false; // if (max - min  + 1 != n) 
 } 
-
+  
 /* UTILITY FUNCTIONS */
 int getMin(int arr[], int n) 
 { 
@@ -525,7 +524,7 @@ int getMin(int arr[], int n)
             min = arr[i]; 
     return min; 
 } 
-
+  
 int getMax(int arr[], int n) 
 { 
     int max = arr[0]; 
@@ -534,7 +533,7 @@ int getMax(int arr[], int n)
             max = arr[i]; 
     return max; 
 } 
-
+  
 /* Driver program to test above functions */
 int main() 
 { 
@@ -546,6 +545,354 @@ int main()
         printf(" Array elements are not consecutive "); 
     getchar(); 
     return 0; 
-} 
+}
+```
+
+## Java
 
 ```
+class AreConsecutive  
+{ 
+    /* The function checks if the array elements are consecutive 
+       If elements are consecutive, then returns true, else returns 
+       false */
+    boolean areConsecutive(int arr[], int n)  
+    { 
+        if (n < 1) 
+            return false; 
+  
+        /* 1) Get the minimum element in array */
+        int min = getMin(arr, n); 
+  
+        /* 2) Get the maximum element in array */
+        int max = getMax(arr, n); 
+  
+        /* 3) max-min+1 is equal to n then only check all elements */
+        if (max - min + 1 == n)  
+        { 
+            int i; 
+            for (i = 0; i < n; i++)  
+            { 
+                int j; 
+  
+                if (arr[i] < 0) 
+                    j = -arr[i] - min; 
+                else
+                    j = arr[i] - min; 
+  
+                // if the value at index j is negative then 
+                // there is repitition 
+                if (arr[j] > 0)  
+                    arr[j] = -arr[j]; 
+                else
+                    return false; 
+            } 
+  
+            /* If we do not see a negative value then all elements 
+               are distinct */
+            return true; 
+        } 
+  
+        return false; // if (max-min+1 != n) 
+    } 
+  
+    /* UTILITY FUNCTIONS */
+    int getMin(int arr[], int n)  
+    { 
+        int min = arr[0]; 
+        for (int i = 1; i < n; i++)  
+        { 
+            if (arr[i] < min) 
+                min = arr[i]; 
+        } 
+        return min; 
+    } 
+  
+    int getMax(int arr[], int n)  
+    { 
+        int max = arr[0]; 
+        for (int i = 1; i < n; i++)  
+        { 
+            if (arr[i] > max) 
+                max = arr[i]; 
+        } 
+        return max; 
+    } 
+  
+    /* Driver program to test above functions */
+    public static void main(String[] args)  
+    { 
+        AreConsecutive consecutive = new AreConsecutive(); 
+        int arr[] = {5, 4, 2, 3, 1, 6}; 
+        int n = arr.length; 
+        if (consecutive.areConsecutive(arr, n) == true) 
+            System.out.println("Array elements are consecutive"); 
+        else
+            System.out.println("Array elements are not consecutive"); 
+    } 
+} 
+  
+// This code is contributed by Mayank Jaiswal
+```
+
+## Python 3
+
+```
+# Helper functions to get minimum and  
+# maximum in an array  
+  
+# The function checks if the array  
+# elements are consecutive. If elements  
+# are consecutive, then returns true,  
+# else returns false  
+def areConsecutive(arr, n): 
+  
+    if ( n < 1 ): 
+        return False
+  
+    # 1) Get the minimum element in array  
+    min = getMin(arr, n) 
+  
+    # 2) Get the maximum element in array  
+    max = getMax(arr, n) 
+  
+    # 3) max - min + 1 is equal to n  
+    # then only check all elements  
+    if (max - min + 1 == n): 
+  
+        for i in range(n): 
+  
+            if (arr[i] < 0): 
+                j = -arr[i] - min
+            else: 
+                j = arr[i] - min
+  
+            # if the value at index j is negative  
+            # then there is repetition 
+            if (arr[j] > 0): 
+                arr[j] = -arr[j] 
+            else: 
+                return False
+  
+        # If we do not see a negative value  
+        # then all elements are distinct  
+        return True
+  
+    return False     # if (max - min + 1 != n) 
+  
+# UTILITY FUNCTIONS  
+def getMin(arr, n): 
+      
+    min = arr[0] 
+    for i in range(1, n): 
+        if (arr[i] < min): 
+            min = arr[i] 
+    return min
+  
+def getMax(arr, n): 
+    max = arr[0] 
+    for i in range(1, n): 
+        if (arr[i] > max): 
+            max = arr[i] 
+    return max
+  
+# Driver Code 
+if __name__ == "__main__": 
+      
+    arr = [1, 4, 5, 3, 2, 6] 
+    n = len(arr) 
+    if(areConsecutive(arr, n) == True): 
+        print(" Array elements are consecutive ") 
+    else: 
+        print(" Array elements are not consecutive ") 
+  
+# This code is contributed by ita_c
+```
+
+## C#
+
+```
+using System; 
+  
+class GFG { 
+      
+    /* The function checks if the array  
+    elements are consecutive If elements 
+    are consecutive, then returns true,  
+    else returns false */
+    static bool areConsecutive(int []arr, int n)  
+    { 
+        if (n < 1) 
+            return false; 
+  
+        /* 1) Get the minimum element in 
+        array */
+        int min = getMin(arr, n); 
+  
+        /* 2) Get the maximum element in 
+        array */
+        int max = getMax(arr, n); 
+  
+        /* 3) max-min+1 is equal to n then 
+        only check all elements */
+        if (max - min + 1 == n)  
+        { 
+            int i; 
+            for (i = 0; i < n; i++)  
+            { 
+                int j; 
+  
+                if (arr[i] < 0) 
+                    j = -arr[i] - min; 
+                else
+                    j = arr[i] - min; 
+  
+                // if the value at index j 
+                // is negative then 
+                // there is repitition 
+                if (arr[j] > 0)  
+                    arr[j] = -arr[j]; 
+                else
+                    return false; 
+            } 
+  
+            /* If we do not see a negative  
+            value then all elements 
+            are distinct */
+            return true; 
+        } 
+  
+        // if (max-min+1 != n) 
+        return false;  
+    } 
+  
+    /* UTILITY FUNCTIONS */
+    static int getMin(int []arr, int n)  
+    { 
+        int min = arr[0]; 
+        for (int i = 1; i < n; i++)  
+        { 
+            if (arr[i] < min) 
+                min = arr[i]; 
+        } 
+        return min; 
+    } 
+  
+    static int getMax(int []arr, int n)  
+    { 
+        int max = arr[0]; 
+        for (int i = 1; i < n; i++)  
+        { 
+            if (arr[i] > max) 
+                max = arr[i]; 
+        } 
+        return max; 
+    } 
+  
+    /* Driver program to test above 
+    functions */
+    public static void Main()  
+    { 
+        int []arr = {5, 4, 2, 3, 1, 6}; 
+        int n = arr.Length; 
+          
+        if (areConsecutive(arr, n) == true) 
+            Console.Write("Array elements "
+                      + "are consecutive"); 
+        else
+            Console.Write("Array elements "
+                  + "are not consecutive"); 
+    } 
+} 
+  
+// This code is contributed by nitin mittal.
+```
+
+## PHP
+
+```
+<?php 
+  
+/* The function checks if the array elements 
+are consecutive If elements are consecutive, 
+then returns true, else returns false */
+function areConsecutive( $arr, $n) 
+{ 
+  
+    if ( $n < 1 ) 
+        return false; 
+  
+    /* 1) Get the minimum element in array */
+    $min = getMin($arr, $n); 
+  
+    /* 2) Get the maximum element in array */
+    $max = getMax($arr, $n); 
+  
+    /* 3) max - min + 1 is equal to n then  
+          only check all elements */
+    if ($max - $min + 1 == $n) 
+    { 
+    $i; 
+        for($i = 0; $i < $n; $i++) 
+        { 
+            $j; 
+  
+            if ($arr[$i] < 0) 
+                $j = -$arr[$i] - $min; 
+            else
+                $j = $arr[$i] - $min; 
+  
+            // if the value at index j is 
+            // negative then there is 
+            // repetition 
+            if ($arr[$j] > 0) 
+                $arr[$j] = -$arr[$j]; 
+            else
+                return false; 
+        } 
+  
+        /* If we do not see a negative value 
+        then all elements are distinct */
+        return true; 
+    } 
+  
+    return false; // if (max - min + 1 != n) 
+} 
+  
+/* UTILITY FUNCTIONS */
+function getMin( $arr, $n) 
+{ 
+    $min = $arr[0]; 
+    for ( $i = 1; $i < $n; $i++) 
+        if ($arr[$i] < $min) 
+            $min = $arr[$i]; 
+    return $min; 
+} 
+  
+function getMax( $arr, $n) 
+{ 
+    $max = $arr[0]; 
+    for ( $i = 1; $i < $n; $i++) 
+        if ($arr[$i] > $max) 
+            $max = $arr[$i]; 
+    return $max; 
+} 
+  
+/* Driver program to test above functions */
+    $arr= array(1, 4, 5, 3, 2, 6); 
+    $n = count($arr); 
+    if(areConsecutive($arr, $n) == true) 
+        echo " Array elements are consecutive "; 
+    else
+        echo " Array elements are not consecutive "; 
+  
+  
+// This code is contributed by anuj_67. 
+?>
+```
+
+请注意，此方法可能不适用于负数。 例如，它为`{2, 1, 0, -3, -1, -2}`返回`false`。
+
+时间复杂度：`O(n)`。
+
+额外空间：`O(1)`。

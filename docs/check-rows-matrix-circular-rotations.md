@@ -97,3 +97,271 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to check if all rows of a matrix  
+// are rotations of each other  
+class GFG  
+{ 
+  
+    static int MAX = 1000; 
+  
+    // Returns true if all rows of mat[0..n-1][0..n-1]  
+    // are rotations of each other.  
+    static boolean isPermutedMatrix(int mat[][], int n)  
+    { 
+        // Creating a string that contains 
+        // elements of first row.  
+        String str_cat = ""; 
+        for (int i = 0; i < n; i++)  
+        { 
+            str_cat = str_cat + "-" + String.valueOf(mat[0][i]); 
+        } 
+  
+        // Concatenating the string with itself  
+        // so that substring search operations   
+        // can be performed on this  
+        str_cat = str_cat + str_cat; 
+  
+        // Start traversing remaining rows  
+        for (int i = 1; i < n; i++) 
+        { 
+            // Store the matrix into vector in the form  
+            // of strings  
+            String curr_str = ""; 
+            for (int j = 0; j < n; j++)  
+            { 
+                curr_str = curr_str + "-" + String.valueOf(mat[i][j]); 
+            } 
+  
+            // Check if the current string is present in  
+            // the concatenated string or not  
+            if (str_cat.contentEquals(curr_str))  
+            { 
+                return false; 
+            } 
+        } 
+  
+        return true; 
+    } 
+  
+    // Drivers code  
+    public static void main(String[] args)  
+    { 
+        int n = 4; 
+        int mat[][] = {{1, 2, 3, 4}, 
+        {4, 1, 2, 3}, 
+        {3, 4, 1, 2}, 
+        {2, 3, 4, 1} 
+        }; 
+        if (isPermutedMatrix(mat, n))  
+        { 
+            System.out.println("Yes"); 
+        } 
+        else
+        { 
+            System.out.println("No"); 
+        } 
+    } 
+} 
+  
+/* This code contributed by PrinciRaj1992 */
+```
+
+## Python3
+
+```
+# Python3 program to check if all rows  
+# of a matrix are rotations of each other  
+  
+MAX = 1000
+  
+# Returns true if all rows of mat[0..n-1][0..n-1]  
+# are rotations of each other.  
+def isPermutedMatrix(mat, n) : 
+      
+    # Creating a string that contains  
+    # elements of first row.  
+    str_cat = "" 
+    for i in range(n) : 
+        str_cat = str_cat + "-" + str(mat[0][i]) 
+  
+    # Concatenating the string with itself  
+    # so that substring search operations  
+    # can be performed on this  
+    str_cat = str_cat + str_cat 
+  
+    # Start traversing remaining rows  
+    for i in range(1, n) : 
+          
+        # Store the matrix into vector  
+        # in the form of strings  
+        curr_str = "" 
+          
+        for j in range(n) : 
+            curr_str = curr_str + "-" + str(mat[i][j]) 
+  
+        # Check if the current string is present  
+        # in the concatenated string or not  
+        if (str_cat.find(curr_str)) :  
+            return True
+              
+    return False
+  
+# Driver code  
+if __name__ == "__main__" : 
+    n = 4
+    mat = [[1, 2, 3, 4],  
+           [4, 1, 2, 3],  
+           [3, 4, 1, 2],  
+           [2, 3, 4, 1]]  
+      
+    if (isPermutedMatrix(mat, n)): 
+        print("Yes") 
+    else : 
+        print("No") 
+          
+# This code is contributed by Ryuga
+```
+
+## C#
+
+```
+// C# program to check if all rows of a matrix  
+// are rotations of each other  
+using System; 
+  
+class GFG  
+{ 
+  
+    //static int MAX = 1000; 
+  
+    // Returns true if all rows of mat[0..n-1,0..n-1]  
+    // are rotations of each other.  
+    static bool isPermutedMatrix(int [,]mat, int n)  
+    { 
+        // Creating a string that contains 
+        // elements of first row.  
+        string str_cat = ""; 
+        for (int i = 0; i < n; i++)  
+        { 
+            str_cat = str_cat + "-" + mat[0,i].ToString(); 
+        } 
+  
+        // Concatenating the string with itself  
+        // so that substring search operations  
+        // can be performed on this  
+        str_cat = str_cat + str_cat; 
+  
+        // Start traversing remaining rows  
+        for (int i = 1; i < n; i++) 
+        { 
+            // Store the matrix into vector in the form  
+            // of strings  
+            string curr_str = ""; 
+            for (int j = 0; j < n; j++)  
+            { 
+                curr_str = curr_str + "-" + mat[i,j].ToString(); 
+            } 
+  
+            // Check if the current string is present in  
+            // the concatenated string or not  
+            if (str_cat.Equals(curr_str))  
+            { 
+                return false; 
+            } 
+        } 
+  
+        return true; 
+    } 
+  
+    // Driver code  
+    static void Main()  
+    { 
+        int n = 4; 
+        int [,]mat = {{1, 2, 3, 4}, 
+        {4, 1, 2, 3}, 
+        {3, 4, 1, 2}, 
+        {2, 3, 4, 1} 
+        }; 
+          
+        if (isPermutedMatrix(mat, n))  
+        { 
+            Console.WriteLine("Yes"); 
+        } 
+        else
+        { 
+            Console.WriteLine("No"); 
+        } 
+    } 
+} 
+  
+/* This code contributed by mits */
+```
+
+## PHP
+
+```
+<?php  
+// PHP program to check if all rows of a  
+// matrix are rotations of each other 
+$MAX = 1000; 
+  
+// Returns true if all rows of mat[0..n-1][0..n-1] 
+// are rotations of each other. 
+function isPermutedMatrix( &$mat, $n) 
+{ 
+    // Creating a string that contains  
+    // elements of first row. 
+    $str_cat = ""; 
+    for ($i = 0 ; $i < $n ; $i++) 
+        $str_cat = $str_cat . "-" .  
+                   strval($mat[0][$i]); 
+  
+    // Concatenating the string with itself  
+    // so that substring search operations  
+    // can be performed on this 
+    $str_cat = $str_cat . $str_cat; 
+  
+    // Start traversing remaining rows 
+    for ($i = 1; $i < $n; $i++) 
+    { 
+        // Store the matrix into vector  
+        // in the form of strings 
+        $curr_str = ""; 
+        for ($j = 0 ; $j < $n ; $j++) 
+            $curr_str = $curr_str . "-" . 
+                        strval($mat[$i][$j]); 
+  
+        // Check if the current string is present  
+        // in the concatenated string or not 
+        if (strpos($str_cat, $curr_str)) 
+            return true; 
+    } 
+  
+    return false; 
+} 
+  
+// Driver Code 
+$n = 4; 
+$mat = array(array(1, 2, 3, 4), 
+             array(4, 1, 2, 3), 
+             array(3, 4, 1, 2), 
+             array(2, 3, 4, 1)); 
+if (isPermutedMatrix($mat, $n)) 
+    echo "Yes"; 
+else
+    echo "No"; 
+  
+// This code is contributed by ita_c 
+?>
+```
+
+输出：
+
+```
+Yes
+```
+

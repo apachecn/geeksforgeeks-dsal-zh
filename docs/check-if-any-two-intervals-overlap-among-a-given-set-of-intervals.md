@@ -179,3 +179,191 @@ int main()
 // This Code is written by Anjali Agarwal 
 
 ```
+
+## Java
+
+```java
+// A Java program to check if any two intervals overlap  
+class GFG 
+{  
+  
+// An interval has start time and end time  
+static class Interval  
+{  
+    int start;  
+    int end; 
+    public Interval(int start, int end)  
+    { 
+        super(); 
+        this.start = start; 
+        this.end = end; 
+    }  
+};  
+  
+// Function to check if any two intervals overlap  
+static boolean isOverlap(Interval arr[], int n)  
+{  
+  
+    int max_ele = 0;  
+  
+    // Find the overall maximum element  
+    for (int i = 0; i < n; i++) 
+    {  
+        if (max_ele < arr[i].end)  
+            max_ele = arr[i].end;  
+    }  
+  
+    // Initialize an array of size max_ele  
+    int []aux = new int[max_ele + 1]; 
+    for (int i = 0; i < n; i++)  
+    {  
+  
+        // starting point of the interval  
+        int x = arr[i].start;  
+  
+        // end point of the interval  
+        int y = arr[i].end;  
+        aux[x]++; 
+        aux[y ]--;  
+    }  
+    for (int i = 1; i <= max_ele; i++) 
+    {  
+        // Calculating the prefix Sum  
+        aux[i] += aux[i - 1];  
+  
+        // Overlap  
+        if (aux[i] > 1)  
+            return true;  
+    }  
+  
+    // If we reach here, then no Overlap  
+    return false;  
+}  
+  
+// Driver program  
+public static void main(String[] args)  
+{  
+    Interval arr1[] = { new Interval(1, 3), new Interval(7, 9), 
+                       new Interval(4, 6), new Interval(10, 13) };  
+    int n1 = arr1.length;  
+  
+    if(isOverlap(arr1, n1)) 
+        System.out.print("Yes\n"); 
+    else
+        System.out.print("No\n");  
+  
+    Interval arr2[] = { new Interval(6, 8), new Interval(1, 3), 
+                        new Interval(2, 4), new Interval(4, 7) };  
+    int n2 = arr2.length;  
+    if(isOverlap(arr2, n2)) 
+        System.out.print("Yes\n"); 
+    else
+        System.out.print("No\n"); 
+} 
+}  
+  
+// This code is contributed by 29AjayKumar 
+```
+
+## C#
+
+```cs
+// C# program to check if 
+// any two intervals overlap  
+using System; 
+  
+class GFG 
+{  
+  
+// An interval has start time and end time  
+class Interval  
+{  
+    public int start;  
+    public int end; 
+    public Interval(int start, int end)  
+    { 
+        this.start = start; 
+        this.end = end; 
+    }  
+};  
+  
+// Function to check if 
+// any two intervals overlap  
+static bool isOverlap(Interval []arr, int n)  
+{  
+    int max_ele = 0;  
+  
+    // Find the overall maximum element  
+    for (int i = 0; i < n; i++) 
+    {  
+        if (max_ele < arr[i].end)  
+            max_ele = arr[i].end;  
+    }  
+  
+    // Initialize an array of size max_ele  
+    int []aux = new int[max_ele + 1]; 
+    for (int i = 0; i < n; i++)  
+    {  
+  
+        // starting point of the interval  
+        int x = arr[i].start;  
+  
+        // end point of the interval  
+        int y = arr[i].end;  
+        aux[x]++; 
+        aux[y ]--;  
+    }  
+      
+    for (int i = 1; i <= max_ele; i++) 
+    {  
+        // Calculating the prefix Sum  
+        aux[i] += aux[i - 1];  
+  
+        // Overlap  
+        if (aux[i] > 1)  
+            return true;  
+    }  
+  
+    // If we reach here, then no Overlap  
+    return false;  
+}  
+  
+// Driver Code 
+public static void Main(String[] args)  
+{  
+    Interval []arr1 = { new Interval(1, 3),  
+                        new Interval(7, 9), 
+                        new Interval(4, 6),  
+                        new Interval(10, 13) };  
+    int n1 = arr1.Length;  
+  
+    if(isOverlap(arr1, n1)) 
+        Console.Write("Yes\n"); 
+    else
+        Console.Write("No\n");  
+  
+    Interval []arr2 = { new Interval(6, 8),  
+                        new Interval(1, 3), 
+                        new Interval(2, 4), 
+                        new Interval(4, 7) };  
+    int n2 = arr2.Length;  
+    if(isOverlap(arr2, n2)) 
+        Console.Write("Yes\n"); 
+    else
+        Console.Write("No\n"); 
+} 
+} 
+  
+// This code is contributed by Rajput-Ji 
+```
+
+输出：
+
+```
+No
+Yes
+```
+
+时间复杂度：`O(max_ele + n)`。
+
+注意：如果有更多的间隔数，并且同时所有间隔中的最大值都应较小，则此方法比方法1更有效，因为时间复杂度与`O(max_ele)`成正比。

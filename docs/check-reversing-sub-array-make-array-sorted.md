@@ -441,3 +441,277 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to check whether reversing a sub array  
+// make the array sorted or not 
+  
+class GFG { 
+  
+// Return true, if reversing the subarray will sort t  
+// he array, else return false.  
+    static boolean checkReverse(int arr[], int n) { 
+        if (n == 1) { 
+            return true; 
+        } 
+  
+        // Find first increasing part  
+        int i; 
+        for (i = 1; arr[i - 1] < arr[i] && i < n; i++); 
+        if (i == n) { 
+            return true; 
+        } 
+  
+        // Find reversed part  
+        int j = i; 
+        while (j < n && arr[j] < arr[j - 1]) { 
+            if (i > 1 && arr[j] < arr[i - 2]) { 
+                return false; 
+            } 
+            j++; 
+        } 
+  
+        if (j == n) { 
+            return true; 
+        } 
+  
+        // Find last increasing part  
+        int k = j; 
+  
+        // To handle cases like {1,2,3,4,20,9,16,17}  
+        if (arr[k] < arr[i - 1]) { 
+            return false; 
+        } 
+  
+        while (k > 1 && k < n) { 
+            if (arr[k] < arr[k - 1]) { 
+                return false; 
+            } 
+            k++; 
+        } 
+        return true; 
+    } 
+  
+// Driven Program  
+    public static void main(String[] args) { 
+  
+        int arr[] = {1, 3, 4, 10, 9, 8}; 
+        int n = arr.length; 
+  
+        if (checkReverse(arr, n)) { 
+            System.out.print("Yes"); 
+        } else { 
+            System.out.print("No"); 
+        } 
+    } 
+  
+} 
+  
+// This code is contributed 
+// by Rajput-Ji
+```
+
+## Python3
+
+```
+# Python3 program to check whether reversing  
+# a sub array make the array sorted or not 
+import math as mt 
+  
+# Return True, if reversing the subarray  
+# will sort the array, else return False. 
+def checkReverse(arr, n): 
+  
+    if (n == 1): 
+        return True
+  
+    # Find first increasing part 
+    i = 1
+    for i in range(1, n): 
+        if arr[i - 1] < arr[i] : 
+            if (i == n): 
+                return True
+           
+        else:  
+            break
+  
+    # Find reversed part 
+    j = i 
+    while (j < n and arr[j] < arr[j - 1]): 
+       
+        if (i > 1 and arr[j] < arr[i - 2]): 
+            return False
+        j += 1
+  
+    if (j == n): 
+        return True
+  
+    # Find last increasing part 
+    k = j 
+  
+    # To handle cases like 1,2,3,4,20,9,16,17 
+    if (arr[k] < arr[i - 1]): 
+        return False
+  
+    while (k > 1 and k < n): 
+      
+        if (arr[k] < arr[k - 1]): 
+            return False
+        k += 1
+      
+    return True
+  
+# Driver Code 
+arr = [ 1, 3, 4, 10, 9, 8] 
+n = len(arr) 
+if checkReverse(arr, n): 
+    print("Yes") 
+else: 
+    print("No") 
+          
+# This code is contributed by  
+# Mohit kumar 29
+```
+
+## C#
+
+```
+// C# program to check whether reversing a  
+// sub array make the array sorted or not 
+   
+using System; 
+public class GFG{ 
+  
+// Return true, if reversing the subarray will sort t  
+// he array, else return false.  
+    static bool checkReverse(int []arr, int n) { 
+        if (n == 1) { 
+            return true; 
+        } 
+  
+        // Find first increasing part  
+        int i; 
+        for (i = 1; arr[i - 1] < arr[i] && i < n; i++); 
+        if (i == n) { 
+            return true; 
+        } 
+  
+        // Find reversed part  
+        int j = i; 
+        while (j < n && arr[j] < arr[j - 1]) { 
+            if (i > 1 && arr[j] < arr[i - 2]) { 
+                return false; 
+            } 
+            j++; 
+        } 
+  
+        if (j == n) { 
+            return true; 
+        } 
+  
+        // Find last increasing part  
+        int k = j; 
+  
+        // To handle cases like {1,2,3,4,20,9,16,17}  
+        if (arr[k] < arr[i - 1]) { 
+            return false; 
+        } 
+  
+        while (k > 1 && k < n) { 
+            if (arr[k] < arr[k - 1]) { 
+                return false; 
+            } 
+            k++; 
+        } 
+        return true; 
+    } 
+  
+  
+// Driven Program  
+    public static void Main() { 
+  
+        int []arr = {1, 3, 4, 10, 9, 8}; 
+        int n = arr.Length; 
+  
+        if (checkReverse(arr, n)) { 
+            Console.Write("Yes"); 
+        } else { 
+            Console.Write("No"); 
+        } 
+    } 
+} 
+// This code is contributed 
+// by 29AjayKumar
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to check whether reversing  
+// a sub array make the array sorted or not 
+  
+// Return true, if reversing the subarray  
+// will sort the array, else return false. 
+function checkReverse($arr, $n) 
+{ 
+    if ($n == 1) 
+        return true; 
+  
+    // Find first increasing part 
+    for ($i = 1;  
+         $i < $n && $arr[$i - 1] < $arr[$i];  
+         $i++); 
+    if ($i == $n) 
+        return true; 
+  
+    // Find reversed part 
+    $j = $i; 
+    while ($arr[$j] < $arr[$j - 1]) 
+    { 
+        if ($i > 1 && $arr[$j] < $arr[$i - 2]) 
+            return false; 
+        $j++; 
+    } 
+  
+    if ($j == $n) 
+        return true; 
+  
+    // Find last increasing part 
+    $k = $j; 
+  
+    // To handle cases like {1,2,3,4,20,9,16,17} 
+    if ($arr[$k] < $arr[$i - 1]) 
+    return false; 
+  
+    while ($k > 1 && $k < $n) 
+    { 
+        if ($arr[$k] < $arr[$k - 1]) 
+            return false; 
+        $k++; 
+    } 
+    return true; 
+} 
+  
+// Driver Code 
+$arr = array(1, 3, 4, 10, 9, 8); 
+$n = sizeof($arr); 
+if(checkReverse($arr, $n)) 
+    echo "Yes"; 
+else
+    echo "No"; 
+  
+// This code is contributed 
+// by Akanksha Rai(Abby_akku) 
+?>
+```
+
+输出：
+
+```
+Yes
+```
+
+时间复杂度：`O(n)`。
