@@ -127,3 +127,313 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to tell the Current direction in 
+// R x C grid 
+import java.io.*; 
+  
+class GFG { 
+  
+    // Function which tells the Current direction     
+    static void direction(int R, int C) 
+    { 
+        if (R != C && R % 2 == 0 && C % 2 != 0 && R < C) { 
+            System.out.println("Left"); 
+            return; 
+        } 
+        if (R != C && R % 2 != 0 && C % 2 == 0 && R > C) { 
+            System.out.println("Up"); 
+            return; 
+        } 
+        if (R == C && R % 2 != 0 && C % 2 != 0) { 
+            System.out.println("Right"); 
+            return; 
+        } 
+        if (R == C && R % 2 == 0 && C % 2 == 0) { 
+            System.out.println("Left"); 
+            return; 
+        } 
+        if (R != C && R % 2 != 0 && C % 2 != 0 && R < C) { 
+            System.out.println("Right"); 
+            return; 
+        } 
+        if (R != C && R % 2 != 0 && C % 2 != 0 && R > C) { 
+            System.out.println("Down"); 
+            return; 
+        } 
+        if (R != C && R % 2 == 0 && C % 2 == 0 && R < C) { 
+            System.out.println("Left"); 
+            return; 
+        } 
+        if (R != C && R % 2 == 0 && C % 2 == 0 && R > C) { 
+            System.out.println("Up"); 
+            return; 
+        } 
+        if (R != C && R % 2 == 0 && C % 2 != 0 && R > C) { 
+            System.out.println("Down"); 
+            return; 
+        } 
+        if (R != C && R % 2 != 0 && C % 2 == 0 && R < C) { 
+            System.out.println("Right"); 
+            return; 
+        } 
+    } 
+  
+    // Driver code 
+    public static void main(String[] args) 
+    { 
+        int R = 3, C = 1; 
+          
+        direction(R, C); 
+    } 
+} 
+  
+// This code is contributed by KRV.
+```
+
+## Python3
+
+```
+# Python3 program to tell the Current  
+# direction in R x C grid 
+  
+# Function which tells the Current direction 
+def direction(R, C): 
+    if (R != C and R % 2 == 0 and
+        C % 2 != 0 and R < C): 
+        print("Left") 
+        return
+  
+    if (R != C and R % 2 == 0 and 
+        C % 2 == 0 and R > C): 
+        print("Up") 
+        return
+  
+    if R == C and R % 2 != 0 and C % 2 != 0: 
+        print("Right") 
+        return
+  
+    if R == C and R % 2 == 0 and C % 2 == 0: 
+        print("Left") 
+        return
+  
+    if (R != C and R % 2 != 0 and 
+        C % 2 != 0 and R < C): 
+        print("Right") 
+        return
+  
+    if (R != C and R % 2 != 0 and 
+        C % 2 != 0 and R > C): 
+        print("Down") 
+        return
+  
+    if (R != C and R % 2 == 0 and 
+        C % 2 != 0 and R < C): 
+        print("Left") 
+        return
+  
+    if (R != C and R % 2 == 0 and 
+        C % 2 == 0 and R > C): 
+        print("Up") 
+        return
+  
+    if (R != C and R % 2 != 0 and 
+        C % 2 != 0 and R > C): 
+        print("Down") 
+        return
+  
+    if (R != C and R % 2 != 0 and 
+        C % 2 != 0 and R < C): 
+        print("Right") 
+        return
+  
+# Driver code 
+R = 3; C = 1
+direction(R, C) 
+  
+# This code is contributed by Shrikant13
+```
+
+## C#
+
+```
+// C# program to tell the Current 
+// direction in R x C grid 
+using System; 
+  
+class GFG 
+{ 
+      
+    // Function which tells  
+    // the Current direction  
+    static void direction(int R, int C) 
+    { 
+        if (R != C && R % 2 == 0 &&  
+            C % 2 != 0 && R < C)  
+        { 
+            Console.WriteLine("Left"); 
+            return; 
+        } 
+        if (R != C && R % 2 != 0 &&  
+            C % 2 == 0 && R > C)  
+        { 
+            Console.WriteLine("Up"); 
+            return; 
+        } 
+        if (R == C && R % 2 != 0 &&  
+            C % 2 != 0)  
+        { 
+            Console.WriteLine("Right"); 
+            return; 
+        } 
+        if (R == C && R % 2 == 0 &&  
+            C % 2 == 0)  
+        { 
+            Console.WriteLine("Left"); 
+            return; 
+        } 
+        if (R != C && R % 2 != 0 && 
+            C % 2 != 0 && R < C)  
+        { 
+            Console.WriteLine("Right"); 
+            return; 
+        } 
+        if (R != C && R % 2 != 0 &&  
+            C % 2 != 0 && R > C)  
+        { 
+            Console.WriteLine("Down"); 
+            return; 
+        } 
+        if (R != C && R % 2 == 0 &&  
+            C % 2 == 0 && R < C)  
+        { 
+            Console.WriteLine("Left"); 
+            return; 
+        } 
+        if (R != C && R % 2 == 0 && 
+            C % 2 == 0 && R > C)  
+        { 
+            Console.WriteLine("Up"); 
+            return; 
+        } 
+        if (R != C && R % 2 == 0 &&  
+            C % 2 != 0 && R > C)  
+        { 
+            Console.WriteLine("Down"); 
+            return; 
+        } 
+        if (R != C && R % 2 != 0 &&  
+            C % 2 == 0 && R < C)  
+        { 
+            Console.WriteLine("Right"); 
+            return; 
+        } 
+    } 
+  
+    // Driver code 
+    static public void Main () 
+    { 
+        int R = 3, C = 1; 
+          
+        direction(R, C); 
+    } 
+} 
+  
+// This code is contributed by m_kit
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to tell the Current  
+// direction in R x C grid 
+  
+// Function which tells 
+// the Current direction 
+function direction($R, $C) 
+{ 
+    if ($R != $C && $R % 2 == 0 &&  
+                    $C % 2 != 0 && $R < $C)  
+    { 
+        echo "Left" ,"\n"; 
+        return; 
+    } 
+    if ($R != $C && $R % 2 != 0 &&  
+                    $C % 2 == 0 && $R > $C)  
+    { 
+        echo "Up" ,"\n"; 
+        return; 
+    } 
+    if ($R == $C && $R % 2 != 0  
+                 && $C % 2 != 0)  
+    { 
+        echo "Right" ,"\n"; 
+        return; 
+    } 
+    if ($R == $C && $R % 2 == 0  
+                 && $C % 2 == 0)  
+    { 
+        echo "Left" ,"\n"; 
+        return; 
+    } 
+    if ($R != $C && $R % 2 != 0 &&  
+                    $C % 2 != 0 && $R < $C)  
+    { 
+        echo "Right" ,"\n"; 
+        return; 
+    } 
+    if ($R != $C && $R % 2 != 0 &&  
+                    $C % 2 != 0 && $R > $C)  
+    { 
+        echo "Down" ,"\n"; 
+        return; 
+    } 
+    if ($R != $C && $R % 2 == 0 &&  
+                    $C % 2 == 0 && $R < $C)  
+    { 
+        echo "Left" ,"\n"; 
+        return; 
+    } 
+    if ($R != $C && $R % 2 == 0 &&  
+                    $C % 2 == 0 && $R > $C) 
+    { 
+        echo "Up" ,"\n"; 
+        return; 
+    } 
+    if ($R != $C && $R % 2 == 0 &&  
+                    $C % 2 != 0 && $R > $C)  
+    { 
+        echo "Down" ,"\n"; 
+        return; 
+    } 
+    if ($R != $C && $R % 2 != 0 &&  
+                    $C % 2 == 0 && $R < $C) 
+    { 
+        echo "Right" ,"\n"; 
+        return; 
+    } 
+} 
+  
+// Driver Code 
+$R = 3; $C = 1; 
+direction($R, $C); 
+  
+// This code is contributed by aj_36 
+?>
+```
+
+输出：
+
+```
+ Down
+```
+
+时间复杂度：`O(1)`。
+
+辅助空间：`O(1)`。
+
+参考：<http://www.spoj.com/problems/TRGRID/>。

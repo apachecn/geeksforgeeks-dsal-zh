@@ -65,3 +65,213 @@ int main() 
 // This is code is contributed by rathbhupendra 
 
 ```
+
+## Java
+
+```
+/* Dynamic Programming Java  
+   implementation of Maximum Sum 
+   Increasing Subsequence (MSIS) 
+   problem */
+class GFG 
+{ 
+    /* maxSumIS() returns the  
+    maximum sum of increasing 
+    subsequence in arr[] of size n */
+    static int maxSumIS(int arr[], int n) 
+    { 
+        int i, j, max = 0; 
+        int msis[] = new int[n]; 
+  
+        /* Initialize msis values  
+           for all indexes */
+        for (i = 0; i < n; i++) 
+            msis[i] = arr[i]; 
+  
+        /* Compute maximum sum values 
+           in bottom up manner */
+        for (i = 1; i < n; i++) 
+            for (j = 0; j < i; j++) 
+                if (arr[i] > arr[j] && 
+                    msis[i] < msis[j] + arr[i]) 
+                    msis[i] = msis[j] + arr[i]; 
+  
+        /* Pick maximum of all 
+           msis values */
+        for (i = 0; i < n; i++) 
+            if (max < msis[i]) 
+                max = msis[i]; 
+  
+        return max; 
+    } 
+  
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+        int arr[] = new int[]{1, 101, 2, 3, 100, 4, 5}; 
+        int n = arr.length; 
+        System.out.println("Sum of maximum sum "+ 
+                            "increasing subsequence is "+ 
+                              maxSumIS(arr, n)); 
+    } 
+} 
+  
+// This code is contributed  
+// by Rajat Mishra
+```
+
+## Python
+
+```
+# Dynamic Programming bsed Python  
+# implementation of Maximum Sum  
+# Increasing Subsequence (MSIS) 
+# problem 
+  
+# maxSumIS() returns the maximum  
+# sum of increasing subsequence  
+# in arr[] of size n 
+def maxSumIS(arr, n): 
+    max = 0
+    msis = [0 for x in range(n)] 
+  
+    # Initialize msis values 
+    # for all indexes 
+    for i in range(n): 
+        msis[i] = arr[i] 
+  
+    # Compute maximum sum  
+    # values in bottom up manner 
+    for i in range(1, n): 
+        for j in range(i): 
+            if (arr[i] > arr[j] and
+                msis[i] < msis[j] + arr[i]): 
+                msis[i] = msis[j] + arr[i] 
+  
+    # Pick maximum of 
+    # all msis values 
+    for i in range(n): 
+        if max < msis[i]: 
+            max = msis[i] 
+  
+    return max
+  
+# Driver Code 
+arr = [1, 101, 2, 3, 100, 4, 5] 
+n = len(arr) 
+print("Sum of maximum sum increasing " + 
+                     "subsequence is " +
+                  str(maxSumIS(arr, n))) 
+  
+# This code is contributed  
+# by Bhavya Jain
+```
+
+## C#
+
+```
+// Dynamic Programming C# implementation 
+// of Maximum Sum Increasing Subsequence 
+// (MSIS) problem  
+using System; 
+class GFG { 
+      
+    // maxSumIS() returns the  
+    // maximum sum of increasing 
+    // subsequence in arr[] of size n  
+    static int maxSumIS( int []arr, int n ) 
+    { 
+        int i, j, max = 0; 
+        int []msis = new int[n]; 
+  
+        /* Initialize msis values 
+           for all indexes */
+        for ( i = 0; i < n; i++ ) 
+            msis[i] = arr[i]; 
+  
+        /* Compute maximum sum values 
+           in bottom up manner */
+        for ( i = 1; i < n; i++ ) 
+            for ( j = 0; j < i; j++ ) 
+                if ( arr[i] > arr[j] && 
+                    msis[i] < msis[j] + arr[i]) 
+                    msis[i] = msis[j] + arr[i]; 
+  
+        /* Pick maximum of all  
+           msis values */
+        for ( i = 0; i < n; i++ ) 
+            if ( max < msis[i] ) 
+                max = msis[i]; 
+  
+        return max; 
+    } 
+      
+    // Driver Code 
+    public static void Main() 
+    { 
+        int []arr = new int[]{1, 101, 2, 3, 100, 4, 5}; 
+        int n = arr.Length; 
+        Console.WriteLine("Sum of maximum sum increasing "+ 
+                                        " subsequence is "+ 
+        maxSumIS(arr, n)); 
+    } 
+} 
+  
+// This code is contributed by Sam007
+```
+
+## PHP
+
+```
+<?php 
+// Dynamic Programming implementation 
+// of Maximum Sum Increasing 
+// Subsequence (MSIS) problem  
+  
+// maxSumIS() returns the maximum  
+// sum of increasing subsequence 
+// in arr[] of size n  
+function maxSumIS($arr, $n) 
+{ 
+    $max = 0; 
+    $msis= array($n); 
+  
+    // Initialize msis values 
+    // for all indexes  
+    for($i = 0; $i < $n; $i++ ) 
+        $msis[$i] = $arr[$i]; 
+  
+    // Compute maximum sum values 
+    // in bottom up manner  
+    for($i = 1; $i < $n; $i++) 
+        for($j = 0; $j < $i; $j++) 
+            if ($arr[$i] > $arr[$j] &&  
+                $msis[$i] < $msis[$j] + $arr[$i]) 
+                $msis[$i] = $msis[$j] + $arr[$i]; 
+  
+    // Pick maximum of all msis values 
+    for($i = 0;$i < $n; $i++ ) 
+        if ($max < $msis[$i] ) 
+            $max = $msis[$i]; 
+  
+    return $max; 
+} 
+  
+    // Driver Code 
+    $arr = array(1, 101, 2, 3, 100, 4, 5); 
+    $n = count($arr); 
+    echo "Sum of maximum sum increasing subsequence is " 
+                                   .maxSumIS( $arr, $n ); 
+          
+// This code is contributed by Sam007 
+?>
+```
+
+输出：
+
+```
+Sum of maximum sum increasing subsequence is 106
+```
+
+时间复杂度：`O(n^2)`。
+
