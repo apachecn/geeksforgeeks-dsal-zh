@@ -63,3 +63,159 @@ int main()
 } 
 
 ```
+
+## Java
+
+```java
+// Hashing based Java program 
+// to find if there is a 
+// majority element in input array. 
+import java.util.*; 
+import java.lang.*; 
+import java.io.*; 
+  
+class Gfg 
+{ 
+    // Returns true if there is a 
+    // majority element in a[] 
+    static boolean isMajority(int a[], int n) 
+    { 
+        // Insert all elements  
+        // in a hash table 
+        HashMap <Integer,Integer> mp = new 
+                            HashMap<Integer,Integer>(); 
+          
+        for (int i = 0; i < n; i++)  
+          
+            if (mp.containsKey(a[i])) 
+                mp.put(a[i], mp.get(a[i]) + 1); 
+          
+            else mp.put(a[i] , 1); 
+          
+        // Check if frequency of any 
+        // element is n/2 or more. 
+        for (Map.Entry<Integer, Integer> x : mp.entrySet()) 
+             
+            if (x.getValue() >= n/2) 
+                return true; 
+        return false; 
+    } 
+      
+    // Driver code 
+    public static void main (String[] args) 
+    { 
+        int a[] = { 2, 3, 9, 2, 2 }; 
+        int n = a.length; 
+          
+        if (isMajority(a, n)) 
+            System.out.println("Yes"); 
+        else
+            System.out.println("No"); 
+    } 
+} 
+  
+// This code is contributed by Ansu Kumari 
+```
+
+## Python3
+
+```py
+# Hashing based Python  
+# program to find if 
+# there is a majority  
+# element in input array. 
+  
+# Returns true if there  
+# is a majority element 
+# in a[] 
+def isMajority(a): 
+      
+    # Insert all elements  
+    # in a hash table 
+    mp = {} 
+      
+    for i in a: 
+        if i in mp: mp[i] += 1
+        else: mp[i] = 1
+      
+    # Check if frequency  
+    # of any element is 
+    # n/2 or more. 
+    for x in mp: 
+        if mp[x] >= len(a)//2: 
+            return True
+    return False
+  
+# Driver code 
+a = [ 2, 3, 9, 2, 2 ] 
+  
+print("Yes" if isMajority(a) else "No") 
+  
+#This code is contributed by Ansu Kumari 
+```
+
+## C#
+
+```cs
+// Hashing based C# program 
+// to find if there is a 
+// majority element in input array. 
+using System; 
+using System.Collections.Generic; 
+  
+class GFG 
+{ 
+    // Returns true if there is a 
+    // majority element in a[] 
+    static Boolean isMajority(int []a, int n) 
+    { 
+        // Insert all elements  
+        // in a hash table 
+        Dictionary<int,  
+                   int> mp = new Dictionary<int, 
+                                            int>(); 
+          
+        for (int i = 0; i < n; i++) 
+        { 
+            if(mp.ContainsKey(a[i])) 
+            { 
+                var val = mp[a[i]]; 
+                mp.Remove(a[i]); 
+                mp.Add(a[i], val + 1);  
+            } 
+            else
+            { 
+                mp.Add(a[i], 1); 
+            } 
+        } 
+          
+        // Check if frequency of any 
+        // element is n/2 or more. 
+        foreach(KeyValuePair<int, int> x in mp) 
+              
+            if (x.Value >= n / 2) 
+                return true; 
+        return false; 
+    } 
+      
+    // Driver code 
+    public static void Main (String[] args) 
+    { 
+        int []a = { 2, 3, 9, 2, 2 }; 
+        int n = a.Length; 
+          
+        if (isMajority(a, n)) 
+            Console.WriteLine("Yes"); 
+        else
+            Console.WriteLine("No"); 
+    } 
+} 
+  
+// This code is contributed by PrinciRaj1992 
+```
+
+输出：
+
+```
+Yes
+```

@@ -90,3 +90,244 @@ int main()
 } 
 
 ```
+
+## Java
+
+```java
+// Java program to find maximum elements  
+// that can be made equal with k updates 
+import java.util.Arrays; 
+public class GFG { 
+      
+    static int MAX = 100; 
+      
+    // Function to Check center element  
+    // is equal to the individual  
+    // sum of all the half diagonals 
+    static boolean HalfDiagonalSums(int mat[][], 
+                                          int n) 
+    {  
+          
+        // Find sums of half diagonals 
+        int diag1_left = 0, diag1_right = 0; 
+        int diag2_left = 0, diag2_right = 0;  
+        for (int i = 0, j = n - 1; i < n;  
+                                    i++, j--) 
+        { 
+              
+            if (i < n/2) { 
+                diag1_left += mat[i][i]; 
+                diag2_left += mat[j][i];          
+            } 
+            else if (i > n/2) { 
+                diag1_right += mat[i][i]; 
+                diag2_right += mat[j][i];          
+            } 
+        } 
+          
+        return (diag1_left == diag2_right &&  
+                diag2_right == diag2_left && 
+                diag1_right == diag2_left && 
+                diag2_right == mat[n/2][n/2]); 
+    } 
+      
+    // Driver code 
+    public static void main(String args[])  
+    { 
+          
+        int a[][] = { { 2, 9, 1, 4, -2}, 
+                      { 6, 7, 2, 11, 4},  
+                      { 4, 2, 9, 2, 4}, 
+                      { 1, 9, 2, 4, 4}, 
+                      { 0, 2, 4, 2, 5} }; 
+                        
+        System.out.print ( HalfDiagonalSums(a, 5) 
+                                ? "Yes" : "No" ); 
+    } 
+} 
+  
+// This code is contributed by Sam007 
+```
+
+## Python 3
+
+```py
+# Python 3 Program to check if the center 
+# element is equal to the individual  
+# sum of all the half diagonals 
+   
+MAX = 100
+   
+# Function to Check center element  
+# is equal to the individual  
+# sum of all the half diagonals 
+def HalfDiagonalSums( mat,  n): 
+  
+    # Find sums of half diagonals 
+    diag1_left = 0
+    diag1_right = 0
+    diag2_left = 0
+    diag2_right = 0  
+    i = 0
+    j = n - 1
+    while i < n: 
+           
+        if (i < n//2) : 
+            diag1_left += mat[i][i] 
+            diag2_left += mat[j][i]            
+          
+        elif (i > n//2) : 
+            diag1_right += mat[i][i] 
+            diag2_right += mat[j][i]            
+        i += 1
+        j -= 1
+       
+    return (diag1_left == diag2_right and
+            diag2_right == diag2_left and
+            diag1_right == diag2_left and
+            diag2_right == mat[n//2][n//2]) 
+   
+# Driver code 
+if __name__ == "__main__": 
+      
+    a = [[2, 9, 1, 4, -2], 
+         [6, 7, 2, 11, 4],  
+         [ 4, 2, 9, 2, 4], 
+         [1, 9, 2, 4, 4 ], 
+         [ 0, 2, 4, 2, 5]] 
+      
+    print("Yes") if (HalfDiagonalSums(a, 5)) else print("No" ) 
+```
+
+## C#
+
+```cs
+// C# program to find maximum  
+// elements that can be made  
+// equal with k updates 
+using System; 
+  
+class GFG 
+{ 
+  
+    // Function to Check  
+    // center element is 
+    // equal to the individual  
+    // sum of all the half  
+    // diagonals 
+    static bool HalfDiagonalSums(int [,]mat, 
+                                 int n) 
+    {  
+          
+        // Find sums of  
+        // half diagonals 
+        int diag1_left = 0,  
+            diag1_right = 0; 
+        int diag2_left = 0,  
+            diag2_right = 0;  
+        for (int i = 0, j = n - 1;  
+                 i < n; i++, j--) 
+        { 
+              
+            if (i < n / 2)  
+            { 
+                diag1_left += mat[i, i]; 
+                diag2_left += mat[j, i];      
+            } 
+            else if (i > n / 2)  
+            { 
+                diag1_right += mat[i, i]; 
+                diag2_right += mat[j, i];          
+            } 
+        } 
+          
+        return (diag1_left == diag2_right &&  
+                diag2_right == diag2_left && 
+                diag1_right == diag2_left && 
+                diag2_right == mat[n / 2, n / 2]); 
+    } 
+      
+    // Driver code 
+    static public void Main () 
+    { 
+        int [,]a = {{ 2, 9, 1, 4, -2}, 
+                    { 6, 7, 2, 11, 4},  
+                    { 4, 2, 9, 2, 4}, 
+                    { 1, 9, 2, 4, 4}, 
+                    { 0, 2, 4, 2, 5}}; 
+                      
+        Console.WriteLine(HalfDiagonalSums(a, 5)?  
+                                  "Yes" : "No" ); 
+    } 
+} 
+  
+// This code is contributed by ajit 
+```
+
+## PHP
+
+```php
+<?php 
+// PHP Program to check if  
+// the center element is  
+// equal to the individual  
+// sum of all the half diagonals 
+$MAX = 100; 
+  
+// Function to Check center  
+// element is equal to the  
+// individual sum of all  
+// the half diagonals 
+function HalfDiagonalSums($mat, $n) 
+{  
+    global $MAX ; 
+      
+    // Find sums of  
+    // half diagonals 
+    $diag1_left = 1; $diag1_right = 1; 
+    $diag2_left = 1; $diag2_right = 1;  
+    for ($i = 0, $j = $n - 1;  
+         $i < $n; $i++, $j--) 
+    { 
+          
+        if ($i < $n / 2)  
+        { 
+            $diag1_left += $mat[$i][$i]; 
+            $diag2_left += $mat[$j][$i];          
+        } 
+        else if ($i > $n / 2)  
+        { 
+            $diag1_right += $mat[$i][$i]; 
+            $diag2_right += $mat[$j][$i];      
+        } 
+    } 
+      
+    return ($diag1_left == $diag2_right &&  
+            $diag2_right == $diag2_left && 
+            $diag1_right == $diag2_left && 
+            $diag2_right == $mat[$n / 2][$n / 2]); 
+} 
+  
+// Driver code 
+$a = array(array(2, 9, 1, 4, -2), 
+           array(6, 7, 2, 11, 4),  
+           array(4, 2, 9, 2, 4), 
+           array(1, 9, 2, 4, 4), 
+           array(0, 2, 4, 2, 5)); 
+if(HalfDiagonalSums($a, 5) == 0) 
+    echo "Yes" ; 
+else
+    echo "No" ; 
+          
+// This code is contributed 
+// by akt_mit 
+?> 
+```
+
+输出：
+
+```
+Yes
+```
+
+时间复杂度：`O(N)`。

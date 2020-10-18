@@ -59,3 +59,134 @@ int main()
 } 
 
 ```
+
+## Java
+
+```java
+// java program to find if a subarray 
+// is even or odd. 
+import java.io.*; 
+  
+class GFG  
+{ 
+    // prints if subarray is even or odd 
+    static void checkEVENodd (int arr[], int n, int l, int r) 
+    { 
+        // if arr[r] = 1 print odd 
+        if (arr[r] == 1) 
+            System.out.println( "odd") ; 
+      
+        // if arr[r] = 0 print even 
+        else
+            System.out.println ( "even") ; 
+    } 
+  
+    // driver code 
+    public static void main (String[] args)  
+    { 
+        int arr[] = {1, 1, 0, 1}; 
+        int n = arr.length; 
+        checkEVENodd (arr, n, 1, 3); 
+          
+          
+    } 
+} 
+  
+// This article is contributed by vt_m.  
+```
+
+## Python3
+
+```py
+# Python3 program to find if a  
+# subarray is even or odd. 
+  
+# Prints if subarray is even or odd 
+def checkEVENodd (arr, n, l, r): 
+  
+    # if arr[r] = 1 print odd 
+    if (arr[r] == 1): 
+        print("odd") 
+  
+    # if arr[r] = 0 print even 
+    else: 
+        print("even") 
+  
+# Driver code 
+arr = [1, 1, 0, 1] 
+n = len(arr) 
+checkEVENodd (arr, n, 1, 3) 
+  
+# This code is contributed by Anant Agarwal. 
+```
+
+## C#
+
+```cs
+// C# program to find if a subarray 
+// is even or odd. 
+using System; 
+   
+class GFG { 
+      
+    // prints if subarray is even or odd 
+    static void checkEVENodd (int []arr,  
+                     int n, int l, int r) 
+    { 
+          
+        // if arr[r] = 1 print odd 
+        if (arr[r] == 1) 
+            Console.WriteLine( "odd") ; 
+       
+        // if arr[r] = 0 print even 
+        else
+            Console.WriteLine( "even") ; 
+    } 
+   
+    // driver code 
+    public static void Main()  
+    { 
+          
+        int []arr = {1, 1, 0, 1}; 
+        int n = arr.Length; 
+          
+        checkEVENodd (arr, n, 1, 3); 
+    } 
+} 
+   
+// This article is contributed by Anant Agarwal. 
+```
+
+## PHP
+
+```php
+<?php 
+// PHP program to find if a subarray 
+// is even or odd. 
+  
+// prints if subarray is even or odd 
+function checkEVENodd ($arr, $n, $l, $r) 
+{ 
+    // if arr[r] = 1 print odd 
+    if ($arr[$r] == 1) 
+        echo "odd", "\n"; 
+  
+    // if arr[r] = 0 print even 
+    else
+        echo "even", "\n"; 
+} 
+  
+// Driver code 
+$arr = array(1, 1, 0, 1); 
+$n = sizeof($arr); 
+checkEVENodd ($arr, $n, 1, 3); 
+  
+// This code is Contributed by Ajit 
+?> 
+```
+
+输出：
+
+```
+odd
+```
