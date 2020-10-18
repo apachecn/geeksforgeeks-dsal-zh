@@ -323,3 +323,228 @@ int main()
 // This code is improved by Gautam Agrawal 
 
 ```
+
+## Java
+
+```
+// An efficient approach based Java program to
+// find if there is a rectangle with 1 as
+// corners.
+import java.util.HashMap;
+import java.util.HashSet;
+public class FindRectangle {
+    // Returns true if there is a rectangle with
+    // 1 as corners.
+    static boolean isRectangle(int matrix[][])
+    {
+        // finding row and column size
+        int rows = matrix.length;
+        if (rows == 0)
+            return false;
+        int columns = matrix[0].length;
+ 
+        // map for storing the index of combination of 2 1's
+        HashMap<Integer, HashSet<Integer> > table = new HashMap<>();
+ 
+        // scanning from top to bottom line by line
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns - 1; j++) {
+                for (int k = j + 1; k < columns; k++) {
+                    // if found two 1's in a column
+                    if (matrix[i][j] == 1 && matrix[i][k] == 1) {
+                        // check if there exists 1's in same
+                        // row previously then return true
+                        if (table.containsKey(j) && table.get(j).contains(k)) {
+                            return true;
+                        }
+                        if (table.containsKey(k) && table.get(k).contains(j)) {
+                            return true;
+                        }
+ 
+                        // store the indexes in hashset
+                        if (!table.containsKey(j)) {
+                            HashSet<Integer> x = new HashSet<>();
+                            x.add(k);
+                            table.put(j, x);
+                        }
+                        else {
+                            table.get(j).add(k);
+                        }
+                        if (!table.containsKey(k)) {
+                            HashSet<Integer> x = new HashSet<>();
+                            x.add(j);
+                            table.put(k, x);
+                        }
+                        else {
+                            table.get(k).add(j);
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
+ 
+    public static void main(String args[])
+    {
+        int mat[][] = { { 1, 0, 0, 1, 0 },
+                        { 0, 0, 1, 0, 1 },
+                        { 0, 0, 0, 1, 0 },
+                        { 1, 0, 1, 0, 1 } };
+        if (isRectangle(mat))
+            System.out.print("Yes");
+        else
+            System.out.print("No");
+    }
+}
+// This code is contributed by Gaurav Tiwari
+```
+
+## Python3
+
+```
+# An efficient approach based Python program 
+# to find if there is a rectangle with 1 as 
+# corners. 
+ 
+# Returns true if there is a rectangle
+# with 1 as corners. 
+def isRectangle(matrix):
+ 
+    # finding row and column size 
+    rows = len(matrix)
+    if (rows == 0):
+        return False
+ 
+    columns = len(matrix[0])
+ 
+    # map for storing the index of 
+    # combination of 2 1's 
+    table = {}
+ 
+    # scanning from top to bottom 
+    # line by line 
+    for i in range(rows): 
+        for j in range(columns - 1):
+            for k in range(j + 1, columns): 
+ 
+                # if found two 1's in a column 
+                if (matrix[i][j] == 1 and
+                    matrix[i][k] == 1):
+ 
+                    # check if there exists 1's in same 
+                    # row previously then return true 
+                    if (j in table and k in table[j]):
+                        return True
+ 
+                    if (k in table and j in table[k]):
+                        return True
+ 
+                    # store the indexes in hashset 
+                    if j not in table:
+                        table[j] = set()
+                    if k not in table:
+                        table[k] = set()
+                    table[j].add(k) 
+                    table[k].add(j)
+    return False
+ 
+# Driver Code
+if __name__ == '__main__':
+    mat = [[ 1, 0, 0, 1, 0 ],
+           [ 0, 0, 1, 0, 1 ],
+           [ 0, 0, 0, 1, 0 ],
+           [ 1, 0, 1, 0, 1 ]] 
+    if (isRectangle(mat)):
+        print("Yes")
+    else:
+        print("No")
+     
+# This code is contributed 
+# by SHUBHAMSINGH10
+```
+
+## C#
+
+```
+// An efficient approach based C# program to
+// find if there is a rectangle with 1 as
+// corners.
+using System;
+using System.Collections.Generic;
+ 
+public class FindRectangle {
+    // Returns true if there is a rectangle with
+    // 1 as corners.
+    static bool isRectangle(int[, ] matrix)
+    {
+        // finding row and column size
+        int rows = matrix.GetLength(0);
+        if (rows == 0)
+            return false;
+        int columns = matrix.GetLength(1);
+ 
+        // map for storing the index of combination of 2 1's
+        Dictionary<int, HashSet<int> > table = new Dictionary<int, HashSet<int> >();
+ 
+        // scanning from top to bottom line by line
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns - 1; j++) {
+                for (int k = j + 1; k < columns; k++) {
+                    // if found two 1's in a column
+                    if (matrix[i, j] == 1 && matrix[i, k] == 1) {
+                        // check if there exists 1's in same
+                        // row previously then return true
+                        if (table.ContainsKey(j) && table[j].Contains(k)) {
+                            return true;
+                        }
+                        if (table.ContainsKey(k) && table[k].Contains(j)) {
+                            return true;
+                        }
+ 
+                        // store the indexes in hashset
+                        if (!table.ContainsKey(j)) {
+                            HashSet<int> x = new HashSet<int>();
+                            x.Add(k);
+                            table.Add(j, x);
+                        }
+                        else {
+                            table[j].Add(k);
+                        }
+                        if (!table.ContainsKey(k)) {
+                            HashSet<int> x = new HashSet<int>();
+                            x.Add(j);
+                            table.Add(k, x);
+                        }
+                        else {
+                            table[k].Add(j);
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
+ 
+    public static void Main(String[] args)
+    {
+        int[, ] mat = { { 1, 0, 0, 1, 0 },
+                        { 0, 0, 1, 0, 1 },
+                        { 0, 0, 0, 1, 0 },
+                        { 1, 0, 1, 0, 1 } };
+        if (isRectangle(mat))
+            Console.Write("Yes");
+        else
+            Console.Write("No");
+    }
+}
+ 
+// This code is contributed by PrinciRaj1992
+```
+
+输出：
+
+```
+Yes
+```
+

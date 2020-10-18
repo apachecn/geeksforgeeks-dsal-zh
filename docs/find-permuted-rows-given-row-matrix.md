@@ -77,3 +77,186 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to find all permutations of a given row 
+import java.util.*; 
+  
+class GFG 
+{ 
+      
+static int MAX = 100; 
+  
+// Function to find all permuted rows of a given row r 
+static void permutatedRows(int mat[][], int m, int n, int r) 
+{ 
+    // Creating an empty set 
+    LinkedHashSet<Integer> s = new LinkedHashSet<>(); 
+  
+  
+    // Count frequencies of elements in given row r 
+    for (int j = 0; j < n; j++) 
+        s.add(mat[r][j]); 
+  
+    // Traverse through all remaining rows 
+    for (int i = 0; i < m; i++) 
+    { 
+        // we do not need to check for given row r 
+        if (i == r) 
+            continue; 
+  
+        // initialize hash i.e; count frequencies 
+        // of elements in row i 
+        int j; 
+        for (j = 0; j < n; j++) 
+            if (!s.contains(mat[i][j])) 
+                break; 
+        if (j != n) 
+        continue; 
+  
+        System.out.print(i+", "); 
+    } 
+} 
+  
+// Driver program to run the case 
+public static void main(String[] args) 
+{ 
+    int m = 4, n = 4,r = 3; 
+    int mat[][] = {{3, 1, 4, 2}, 
+                    {1, 6, 9, 3}, 
+                    {1, 2, 3, 4}, 
+                    {4, 3, 2, 1}}; 
+    permutatedRows(mat, m, n, r); 
+} 
+} 
+  
+// This code has been contributed by 29AjayKumar
+```
+
+## Python3
+
+```
+# Python program to find all 
+# permutations of a given row 
+  
+# Function to find all 
+# permuted rows of a given row r 
+def permutatedRows(mat, m, n, r): 
+  
+  
+    # Creating an empty set 
+    s=set() 
+  
+    # Count frequencies of 
+    # elements in given row r 
+    for j in range(n): 
+        s.add(mat[r][j])     
+  
+    # Traverse through all remaining rows 
+    for i in range(m): 
+  
+        # we do not need to check 
+        # for given row r 
+        if i == r: 
+            continue
+  
+        # initialize hash i.e 
+        # count frequencies 
+        # of elements in row i 
+        for j in range(n): 
+            if mat[i][j] not in s: 
+  
+                # to avoid the case when last 
+                # element does not match 
+                j = j - 2
+                break; 
+        if j + 1 != n: 
+            continue
+        print(i) 
+              
+      
+  
+# Driver program to run the case 
+m = 4
+n = 4
+r = 3
+mat = [[3, 1, 4, 2], 
+       [1, 6, 9, 3], 
+       [1, 2, 3, 4], 
+       [4, 3, 2, 1]] 
+  
+permutatedRows(mat, m, n, r) 
+  
+# This code is contributed 
+# by Upendra Singh Bartwal.
+```
+
+## C#
+
+```
+// C# program to find all permutations of a given row  
+using System; 
+using System.Collections.Generic; 
+  
+class GFG  
+{  
+      
+static int MAX = 100;  
+  
+// Function to find all permuted rows of a given row r  
+static void permutatedRows(int [,]mat, int m, int n, int r)  
+{  
+    // Creating an empty set  
+    HashSet<int> s = new HashSet<int>();  
+  
+  
+    // Count frequencies of elements in given row r  
+    for (int j = 0; j < n; j++)  
+        s.Add(mat[r, j]);  
+  
+    // Traverse through all remaining rows  
+    for (int i = 0; i < m; i++)  
+    {  
+        // we do not need to check for given row r  
+        if (i == r)  
+            continue;  
+  
+        // initialize hash i.e; count frequencies  
+        // of elements in row i  
+        int j;  
+        for (j = 0; j < n; j++)  
+            if (!s.Contains(mat[i,j]))  
+                break;  
+        if (j != n)  
+        continue;  
+  
+        Console.Write(i+", ");  
+    }  
+}  
+  
+// Driver program to run the case  
+public static void Main(String[] args)  
+{  
+    int m = 4, n = 4,r = 3;  
+    int [,]mat = {{3, 1, 4, 2},  
+                    {1, 6, 9, 3},  
+                    {1, 2, 3, 4},  
+                    {4, 3, 2, 1}};  
+    permutatedRows(mat, m, n, r);  
+}  
+}  
+  
+/* This code contributed by PrinciRaj1992 */
+```
+
+输出：
+
+```
+0, 2
+```
+
+练习：
+
+扩展上述解决方案，使其适用于行的所有元素都不相同的输入矩阵。 （提示：我们可以使用哈希映射代替哈希集）。
