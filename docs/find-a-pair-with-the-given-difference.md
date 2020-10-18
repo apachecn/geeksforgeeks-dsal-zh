@@ -74,3 +74,231 @@ int main() 
 // This is code is contributed by rathbhupendra 
 
 ```
+
+## C
+
+```
+// C program to find a pair with the given difference 
+#include <stdio.h> 
+  
+// The function assumes that the array is sorted  
+bool findPair(int arr[], int size, int n) 
+{ 
+    // Initialize positions of two elements 
+    int i = 0;   
+    int j = 1; 
+  
+    // Search for a pair 
+    while (i<size && j<size) 
+    { 
+        if (i != j && arr[j]-arr[i] == n) 
+        { 
+            printf("Pair Found: (%d, %d)", arr[i], arr[j]); 
+            return true; 
+        } 
+        else if (arr[j]-arr[i] < n) 
+            j++; 
+        else
+            i++; 
+    } 
+  
+    printf("No such pair"); 
+    return false; 
+} 
+  
+// Driver program to test above function 
+int main() 
+{ 
+    int arr[] = {1, 8, 30, 40, 100}; 
+    int size = sizeof(arr)/sizeof(arr[0]); 
+    int n = 60; 
+    findPair(arr, size, n); 
+    return 0; 
+}
+```
+
+## Java
+
+```
+// Java program to find a pair with the given difference 
+import java.io.*; 
+  
+class PairDifference 
+{ 
+    // The function assumes that the array is sorted 
+    static boolean findPair(int arr[],int n) 
+    { 
+        int size = arr.length; 
+  
+        // Initialize positions of two elements 
+        int i = 0, j = 1; 
+  
+        // Search for a pair 
+        while (i < size && j < size) 
+        { 
+            if (i != j && arr[j]-arr[i] == n) 
+            { 
+                System.out.print("Pair Found: "+ 
+                                 "( "+arr[i]+", "+ arr[j]+" )"); 
+                return true; 
+            } 
+            else if (arr[j] - arr[i] < n) 
+                j++; 
+            else
+                i++; 
+        } 
+  
+        System.out.print("No such pair"); 
+        return false; 
+    } 
+  
+    // Driver program to test above function 
+    public static void main (String[] args) 
+    { 
+        int arr[] = {1, 8, 30, 40, 100}; 
+        int n = 60; 
+        findPair(arr,n); 
+    } 
+} 
+/*This code is contributed by Devesh Agrawal*/
+```
+
+## Python
+
+```
+# Python program to find a pair with the given difference 
+  
+# The function assumes that the array is sorted 
+def findPair(arr,n): 
+  
+    size = len(arr) 
+  
+    # Initialize positions of two elements 
+    i,j = 0,1
+  
+    # Search for a pair 
+    while i < size and j < size: 
+  
+        if i != j and arr[j]-arr[i] == n: 
+            print "Pair found (",arr[i],",",arr[j],")"
+            return True
+  
+        elif arr[j] - arr[i] < n: 
+            j+=1
+        else: 
+            i+=1
+    print "No pair found"
+    return False
+  
+# Driver function to test above function 
+arr = [1, 8, 30, 40, 100] 
+n = 60
+findPair(arr, n) 
+  
+# This code is contributed by Devesh Agrawal
+```
+
+## C#
+
+```
+// C# program to find a pair with the given difference 
+using System; 
+  
+class GFG { 
+      
+    // The function assumes that the array is sorted 
+    static bool findPair(int []arr, int n) 
+    { 
+        int size = arr.Length; 
+  
+        // Initialize positions of two elements 
+        int i = 0, j = 1; 
+  
+        // Search for a pair 
+        while (i < size && j < size) 
+        { 
+            if (i != j && arr[j] - arr[i] == n) 
+            { 
+                Console.Write("Pair Found: " 
+                + "( " + arr[i] + ", " + arr[j] +" )"); 
+                  
+                return true; 
+            } 
+            else if (arr[j] - arr[i] < n) 
+                j++; 
+            else
+                i++; 
+        } 
+  
+        Console.Write("No such pair"); 
+          
+        return false; 
+    } 
+  
+    // Driver program to test above function 
+    public static void Main () 
+    { 
+        int []arr = {1, 8, 30, 40, 100}; 
+        int n = 60; 
+          
+        findPair(arr, n); 
+    } 
+} 
+  
+// This code is contributed by Sam007.
+```
+
+## PHP
+
+```
+<?php  
+// PHP program to find a pair with 
+// the given difference 
+  
+// The function assumes that the  
+// array is sorted  
+function findPair(&$arr, $size, $n) 
+{ 
+    // Initialize positions of  
+    // two elements 
+    $i = 0;  
+    $j = 1; 
+  
+    // Search for a pair 
+    while ($i < $size && $j < $size) 
+    { 
+        if ($i != $j && $arr[$j] -  
+                        $arr[$i] == $n) 
+        { 
+            echo "Pair Found: " . "(" .  
+                  $arr[$i] . ", " . $arr[$j] . ")"; 
+            return true; 
+        } 
+        else if ($arr[$j] - $arr[$i] < $n) 
+            $j++; 
+        else
+            $i++; 
+    } 
+  
+    echo "No such pair"; 
+    return false; 
+} 
+  
+// Driver Code 
+$arr = array(1, 8, 30, 40, 100); 
+$size = sizeof($arr); 
+$n = 60; 
+findPair($arr, $size, $n); 
+  
+// This code is contributed  
+// by ChitraNayal 
+?>
+```
+
+输出：
+
+```
+Pair Found: (40, 100)
+```
+
+散列也可以用来解决此问题。 创建一个空的哈希表`HT`。 遍历数组，将数组元素用作哈希键，然后将它们输入`HT`。 再次遍历数组，寻找`HT`中的值`n + arr[i]`。
