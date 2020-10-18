@@ -82,3 +82,175 @@ int main()
 // This code is contributed by Niteesh Kumar 
 
 ```
+
+## Java
+
+```
+// Java implementation of Naive method 
+// to count of negative numbers in 
+// M[n][m] 
+import java.util.*; 
+import java.lang.*; 
+import java.io.*; 
+  
+class GFG { 
+    static int countNegative(int M[][], int n, 
+                             int m) 
+    { 
+        int count = 0; 
+  
+        // Follow the path shown using 
+        // arrows above 
+        for (int i = 0; i < n; i++) { 
+            for (int j = 0; j < m; j++) { 
+                if (M[i][j] < 0) 
+                    count += 1; 
+  
+                // no more negative numbers 
+                // in this row 
+                else
+                    break; 
+            } 
+        } 
+        return count; 
+    } 
+  
+    // Driver program to test above functions 
+    public static void main(String[] args) 
+    { 
+        int M[][] = { { -3, -2, -1, 1 }, 
+                      { -2, 2, 3, 4 }, 
+                      { 4, 5, 7, 8 } }; 
+  
+        System.out.println(countNegative(M, 3, 4)); 
+    } 
+} 
+// This code is contributed by Chhavi
+```
+
+## Python
+
+```
+# Python implementation of Naive method to count of  
+# negative numbers in M[n][m] 
+  
+def countNegative(M, n, m): 
+    count = 0
+  
+    # Follow the path shown using arrows above 
+    for i in range(n): 
+        for j in range(m):  
+  
+            if M[i][j] < 0: 
+                count += 1
+  
+            else: 
+                # no more negative numbers in this row 
+                break
+    return count 
+  
+  
+# Driver code 
+M = [  
+      [-3, -2, -1,  1], 
+      [-2,  2,  3,  4], 
+      [ 4,  5,  7,  8] 
+    ] 
+print(countNegative(M, 3, 4))
+```
+
+## C#
+
+```
+// C# implementation of Naive method 
+// to count of negative numbers in 
+// M[n][m] 
+using System; 
+  
+class GFG { 
+  
+    // Function to count 
+    // negative number 
+    static int countNegative(int[, ] M, int n, 
+                             int m) 
+    { 
+        int count = 0; 
+  
+        // Follow the path shown 
+        // using arrows above 
+        for (int i = 0; i < n; i++) { 
+            for (int j = 0; j < m; j++) { 
+                if (M[i, j] < 0) 
+                    count += 1; 
+  
+                // no more negative numbers 
+                // in this row 
+                else
+                    break; 
+            } 
+        } 
+        return count; 
+    } 
+  
+    // Driver Code 
+    public static void Main() 
+    { 
+        int[, ] M = { { -3, -2, -1, 1 }, 
+                      { -2, 2, 3, 4 }, 
+                      { 4, 5, 7, 8 } }; 
+  
+        Console.WriteLine(countNegative(M, 3, 4)); 
+    } 
+} 
+  
+// This code is contributed by Sam007
+```
+
+## PHP
+
+```
+<?php 
+// PHP implementation of Naive method 
+// to count of negative numbers in  
+// M[n][m] 
+  
+function countNegative($M, $n, $m) 
+{ 
+    $count = 0; 
+  
+    // Follow the path shown using  
+    // arrows above 
+    for( $i = 0; $i < $n; $i++) 
+    { 
+        for( $j = 0; $j < $m; $j++) 
+        { 
+            if( $M[$i][$j] < 0 ) 
+                $count += 1; 
+          
+            // no more negative numbers 
+            // in this row 
+            else
+                break; 
+        } 
+    } 
+    return $count; 
+} 
+  
+    // Driver Code 
+    $M = array(array(-3, -2, -1, 1), 
+               array(-2, 2, 3, 4), 
+               array(4, 5, 7, 8)); 
+      
+    echo countNegative($M, 3, 4); 
+      
+// This code is contributed by anuj_67. 
+?>
+```
+
+输出：
+
+```
+4
+```
+
+在这种方法中，我们遍历所有元素，因此，在最坏的情况下（当矩阵中所有数字均为负数时），这需要`O(n * m)`的时间。
