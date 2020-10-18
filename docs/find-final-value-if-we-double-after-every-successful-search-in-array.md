@@ -56,3 +56,150 @@ int main() {
 } 
 
 ```
+
+## Java
+
+```
+// Java program to find value  
+// if we double  the value after  
+// every successful search 
+  
+class GFG 
+{ 
+    // Function to Find the value of k 
+    static int findValue(int arr[], int n, int k) { 
+      
+    // Search for k. After every successful 
+    // search, double k. 
+    for (int i = 0; i < n; i++)  
+        if (arr[i] == k) 
+        k *= 2; 
+      
+    return k; 
+    } 
+  
+    // Driver Code 
+    public static void main(String[] args)  
+    { 
+    int arr[] = {2, 3, 4, 10, 8, 1}, k = 2; 
+    int n = arr.length; 
+    System.out.print(findValue(arr, n, k)); 
+    } 
+} 
+// This code is contriubted by 
+// Smitha Dinesh Semwal
+```
+
+## Python3
+
+```
+# Python program to find 
+# value if we double  
+# the value after every 
+# successful search 
+  
+# Function to Find the value of k 
+def findValue(arr,n,k): 
+   
+    # Search for k. 
+    # After every successful 
+    # search, double k. 
+    for i in range(n):  
+        if (arr[i] == k): 
+            k =k* 2
+     
+    return k 
+  
+# Driver's Code 
+  
+arr = [2, 3, 4, 10, 8, 1] 
+k = 2
+n = len(arr) 
+  
+print(findValue(arr, n, k)) 
+    
+# This code is contributed 
+# by Anant Agarwal.
+```
+
+## C#
+
+```
+// C# program to find value  
+// if we double the value after  
+// every successful search 
+using System; 
+  
+class GFG { 
+      
+    // Function to Find the value of k 
+    static int findValue(int []arr, int n, int k) { 
+      
+        // Search for k. After every successful 
+        // search, double k. 
+        for (int i = 0; i < n; i++)  
+            if (arr[i] == k) 
+                k *= 2; 
+          
+        return k; 
+    } 
+  
+    // Driver Code 
+    public static void Main()  
+    { 
+        int []arr = {2, 3, 4, 10, 8, 1}; 
+        int k = 2; 
+        int n = arr.Length; 
+          
+        Console.WriteLine(findValue(arr, n, k)); 
+    } 
+} 
+  
+// This code is contriubted by vt_m.
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find  
+// value if we double  
+// the value after every  
+// successful search 
+  
+// Function to Find  
+// the value of k 
+function findValue($arr, $n, $k)  
+{ 
+  
+    // Search for k. After every  
+    // successful search, double k. 
+    for ($i = 0; $i < $n; $i++)  
+        if ($arr[$i] == $k) 
+        $k *= 2; 
+      
+    return $k; 
+} 
+  
+// Driver Code 
+$arr = array(2, 3, 4, 10, 8, 1);  
+$k = 2; 
+$n = count($arr); 
+echo findValue($arr, $n, $k); 
+  
+// This code is contriubted by anuj_67. 
+?>
+```
+
+输出：
+
+```
+Output: 16 
+```
+
+时间复杂度：`O(n)`。
+
+参考：
+
+<https://www.geeksforgeeks.org/flipkart-interview-experience-set-35-on-campus-for-sde-1/>
+
