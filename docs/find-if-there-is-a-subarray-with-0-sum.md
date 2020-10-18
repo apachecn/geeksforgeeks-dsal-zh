@@ -89,3 +89,152 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// A Java program to find if there is a zero sum subarray 
+import java.util.Set;  
+import java.util.HashSet; 
+  
+class ZeroSumSubarray { 
+      
+    // Returns true if arr[] has a subarray with sero sum 
+    static Boolean subArrayExists(int arr[]) 
+    { 
+        // Creates an empty hashset hs 
+        Set<Integer> hs = new HashSet<Integer>();  
+          
+        // Initialize sum of elements 
+        int sum = 0;      
+          
+        // Traverse through the given array 
+        for (int i = 0; i < arr.length; i++) 
+        {  
+            // Add current element to sum 
+            sum += arr[i]; 
+              
+            // Return true in following cases 
+            // a) Current element is 0 
+            // b) sum of elements from 0 to i is 0 
+            // c) sum is already present in hash map 
+            if (arr[i] == 0 || sum == 0 || hs.contains(sum))                          
+                return true; 
+              
+            // Add sum to hash set 
+            hs.add(sum); 
+        }  
+          
+        // We reach here only when there is 
+        // no subarray with 0 sum 
+        return false; 
+    }      
+      
+    // driver code 
+    public static void main(String arg[]) 
+    { 
+        int arr[] = {-3, 2, 3, 1, 6}; 
+        if (subArrayExists(arr)) 
+            System.out.println("Found a subarray with 0 sum"); 
+        else
+            System.out.println("No Such Sub Array Exists!");          
+    }          
+}
+```
+
+## Python3
+
+```
+# A python program to find if  
+# there is a zero sum subarray  
+  
+def subArrayExists(arr,n): 
+    # traverse through array  
+    # and store prefix sums  
+    n_sum = 0
+    s = set() 
+  
+    for i in range(n): 
+        n_sum += arr[i] 
+  
+        # If prefix sum is 0 or  
+        # it is already present  
+        if n_sum == 0 or n_sum in s: 
+            return True
+        s.add(n_sum) 
+  
+    return False
+  
+# Driver code 
+arr = [-3, 2, 3, 1, 6]     
+n = len(arr) 
+if subArrayExists(arr, n) == True: 
+    print("Found a sunbarray with 0 sum") 
+else: 
+    print("No Such sub array exits!") 
+  
+# This code is contributed by Shrikant13
+```
+
+## C#
+
+```
+// A C# program to find if there  
+// is a zero sum subarray  
+using System; 
+using System.Collections.Generic; 
+  
+class GFG 
+{ 
+    // Returns true if arr[] has  
+    // a subarray with sero sum  
+    static bool SubArrayExists(int[] arr) 
+    { 
+        // Creates an empty HashSet hM  
+        HashSet<int> hs = new HashSet<int>(); 
+        // Initialize sum of elements  
+        int sum = 0; 
+  
+        // Traverse through the given array  
+        for (int i = 0; i < arr.Length; i++) 
+        { 
+            // Add current element to sum  
+            sum += arr[i]; 
+  
+            // Return true in following cases  
+            // a) Current element is 0  
+            // b) sum of elements from 0 to i is 0  
+            // c) sum is already present in hash set  
+            if (arr[i] == 0 || sum == 0 || hs.Contains(sum)) 
+                return true; 
+  
+            // Add sum to hash set  
+            hs.Add(sum); 
+        } 
+  
+        // We reach here only when there is  
+        // no subarray with 0 sum  
+        return false; 
+    } 
+  
+    // Main Method 
+    public static void Main() 
+    { 
+        int[] arr = { -3, 2, 3, 1, 6 }; 
+        if (SubArrayExists(arr)) 
+            Console.WriteLine("Found a subarray with 0 sum"); 
+        else
+            Console.WriteLine("No Such Sub Array Exists!"); 
+    } 
+}
+```
+
+输出：
+
+```
+No Such Sub Array Exists!
+```
+
+在我们具有良好的哈希函数（允许在`O(1)`时间内进行插入和检索操作）的假设下，该解决方案的时间复杂度可以视为`O(n)`。
+
+练习：扩展上述程序，以打印总和为 0 的所有子数组的开始和结束索引。

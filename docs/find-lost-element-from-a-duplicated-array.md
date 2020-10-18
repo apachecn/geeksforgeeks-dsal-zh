@@ -114,3 +114,333 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to find missing element 
+// from same arrays 
+// (except one missing element) 
+  
+import java.io.*; 
+class MissingNumber { 
+  
+    /* Function to find missing element based 
+     on binary search approach. arr1[] is of 
+     larger size and N is size of it.arr1[] and  
+     arr2[] are assumed to be in same order. */
+    int findMissingUtil(int arr1[], int arr2[], 
+                        int N) 
+    { 
+        // special case, for only element 
+        // which is missing in second array 
+        if (N == 1) 
+            return arr1[0]; 
+  
+        // special case, for first 
+        // element missing 
+        if (arr1[0] != arr2[0]) 
+            return arr1[0]; 
+  
+        // Initialize current corner points 
+        int lo = 0, hi = N - 1; 
+  
+        // loop until lo < hi 
+        while (lo < hi) { 
+            int mid = (lo + hi) / 2; 
+  
+            // If element at mid indices are 
+            // equal then go to right subarray 
+            if (arr1[mid] == arr2[mid]) 
+                lo = mid; 
+            else
+                hi = mid; 
+  
+            // if lo, hi becomes  
+            // contiguous, break 
+            if (lo == hi - 1) 
+                break; 
+        } 
+  
+        // missing element will be at hi  
+        // index of bigger array 
+        return arr1[hi]; 
+    } 
+  
+    // This function mainly does basic error 
+    // checking and calls findMissingUtil 
+    void findMissing(int arr1[], int arr2[],  
+                              int M, int N) 
+    { 
+        if (N == M - 1) 
+        System.out.println("Missing Element is "
+        + findMissingUtil(arr1, arr2, M) + "\n"); 
+        else if (M == N - 1) 
+        System.out.println("Missing Element is "
+        + findMissingUtil(arr2, arr1, N) + "\n"); 
+        else
+        System.out.println("Invalid Input"); 
+    } 
+  
+    // Driver Code 
+    public static void main(String args[]) 
+    { 
+        MissingNumber obj = new MissingNumber(); 
+        int arr1[] = { 1, 4, 5, 7, 9 }; 
+        int arr2[] = { 4, 5, 7, 9 }; 
+        int M = arr1.length; 
+        int N = arr2.length; 
+        obj.findMissing(arr1, arr2, M, N); 
+    } 
+} 
+  
+// This code is contributed by Anshika Goyal.
+```
+
+## Python3
+
+```
+# Python3 program to find missing 
+# element from same arrays  
+# (except one missing element) 
+  
+# Function to find missing element based 
+# on binary search approach. arr1[] is  
+# of larger size and N is size of it.  
+# arr1[] and arr2[] are assumed 
+# to be in same order. 
+def findMissingUtil(arr1, arr2, N): 
+  
+    # special case, for only element  
+    # which is missing in second array 
+    if N == 1: 
+        return arr1[0]; 
+  
+    # special case, for first 
+    # element missing 
+    if arr1[0] != arr2[0]: 
+        return arr1[0] 
+  
+    # Initialize current corner points 
+    lo = 0
+    hi = N - 1
+      
+    # loop until lo < hi 
+    while (lo < hi): 
+      
+        mid = (lo + hi) / 2
+  
+        # If element at mid indices 
+        # are equal then go to  
+        # right subarray 
+        if arr1[mid] == arr2[mid]: 
+            lo = mid 
+        else: 
+            hi = mid 
+  
+        # if lo, hi becomes  
+        # contiguous, break 
+        if lo == hi - 1: 
+            break
+      
+    # missing element will be at 
+    # hi index of bigger array 
+    return arr1[hi] 
+  
+# This function mainly does basic 
+# error checking and calls  
+# findMissingUtil 
+def findMissing(arr1, arr2, M, N): 
+  
+    if N == M-1: 
+        print("Missing Element is", 
+            findMissingUtil(arr1, arr2, M)) 
+    elif M == N-1: 
+        print("Missing Element is", 
+            findMissingUtil(arr2, arr1, N)) 
+    else: 
+        print("Invalid Input") 
+  
+# Driver Code 
+arr1 = [1, 4, 5, 7, 9] 
+arr2 = [4, 5, 7, 9] 
+M = len(arr1) 
+N = len(arr2) 
+findMissing(arr1, arr2, M, N) 
+  
+# This code is contributed by Smitha Dinesh Semwal
+```
+
+## C#
+
+```
+// C# program to find missing element from  
+// same arrays (except one missing element) 
+using System; 
+  
+class GFG { 
+  
+    /* Function to find missing element based 
+    on binary search approach. arr1[] is of 
+    larger size and N is size of it.arr1[] and  
+    arr2[] are assumed to be in same order. */
+    static int findMissingUtil(int []arr1,  
+                            int []arr2, int N) 
+    { 
+          
+        // special case, for only element 
+        // which is missing in second array 
+        if (N == 1) 
+            return arr1[0]; 
+  
+        // special case, for first 
+        // element missing 
+        if (arr1[0] != arr2[0]) 
+            return arr1[0]; 
+  
+        // Initialize current corner points 
+        int lo = 0, hi = N - 1; 
+  
+        // loop until lo < hi 
+        while (lo < hi) { 
+            int mid = (lo + hi) / 2; 
+  
+            // If element at mid indices are 
+            // equal then go to right subarray 
+            if (arr1[mid] == arr2[mid]) 
+                lo = mid; 
+            else
+                hi = mid; 
+  
+            // if lo, hi becomes  
+            // contiguous, break 
+            if (lo == hi - 1) 
+                break; 
+        } 
+  
+        // missing element will be at hi  
+        // index of bigger array 
+        return arr1[hi]; 
+    } 
+  
+    // This function mainly does basic error 
+    // checking and calls findMissingUtil 
+    static void findMissing(int []arr1, int []arr2,  
+                            int M, int N) 
+    { 
+        if (N == M - 1) 
+            Console.WriteLine("Missing Element is "
+            + findMissingUtil(arr1, arr2, M) + "\n"); 
+        else if (M == N - 1) 
+            Console.WriteLine("Missing Element is "
+            + findMissingUtil(arr2, arr1, N) + "\n"); 
+        else
+            Console.WriteLine("Invalid Input"); 
+    } 
+  
+    // Driver Code 
+    public static void Main() 
+    { 
+        int []arr1 = { 1, 4, 5, 7, 9 }; 
+        int []arr2 = { 4, 5, 7, 9 }; 
+        int M = arr1.Length; 
+        int N = arr2.Length; 
+        findMissing(arr1, arr2, M, N); 
+    } 
+} 
+  
+// This code is contributed by anuj_67.
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find missing  
+// element from same arrays  
+// (except one missing element) 
+  
+// Function to find missing  
+// element based on binary 
+// search approach. arr1[]  
+// is of larger size and 
+// N is size of it. arr1[] 
+// and arr2[] are assumed 
+// to be in same order. 
+function findMissingUtil($arr1, $arr2, $N) 
+{ 
+      
+    // special case, for only  
+    // element which is 
+    // missing in second array 
+    if ($N == 1) 
+        return $arr1[0]; 
+  
+    // special case, for first 
+    // element missing 
+    if ($arr1[0] != $arr2[0]) 
+        return $arr1[0]; 
+  
+    // Initialize current  
+    // corner points 
+    $lo = 0; 
+    $hi = $N - 1; 
+  
+    // loop until lo < hi 
+    while ($lo < $hi) 
+    { 
+        $mid = ($lo + $hi) / 2; 
+  
+        // If element at mid indices are  
+        // equal then go to right subarray 
+        if ($arr1[$mid] == $arr2[$mid]) 
+            $lo = $mid; 
+        else
+            $hi = $mid; 
+  
+        // if lo, hi becomes  
+        // contiguous, break 
+        if ($lo == $hi - 1) 
+            break; 
+    } 
+  
+    // missing element will be  
+    // at hi index of 
+    // bigger array 
+    return $arr1[$hi]; 
+} 
+  
+// This function mainly  
+// does basic error checking 
+// and calls findMissingUtil 
+function findMissing($arr1, $arr2,  
+                           $M, $N) 
+{ 
+    if ($N == $M - 1) 
+        echo "Missing Element is "
+             , findMissingUtil($arr1,  
+                         $arr2, $M) ; 
+    else if ($M == $N - 1) 
+        echo "Missing Element is "
+             , findMissingUtil($arr2,  
+                           $arr1, $N); 
+    else
+        echo "Invalid Input"; 
+} 
+  
+    // Driver Code 
+    $arr1 = array(1, 4, 5, 7, 9); 
+    $arr2 = array(4, 5, 7, 9); 
+    $M = count($arr1); 
+    $N = count($arr2); 
+    findMissing($arr1, $arr2, $M, $N); 
+  
+// This code is contributed by anuj_67. 
+?>
+```
+
+输出：
+
+```
+Missing Element is 1
+```

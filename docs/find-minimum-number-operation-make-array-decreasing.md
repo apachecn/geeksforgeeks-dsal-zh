@@ -86,3 +86,219 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to make an 
+// array decreasing 
+import java.util.*; 
+import java.lang.*; 
+  
+public class GfG{ 
+      
+    // Function to count minimum no of operation 
+    public static int min_noOf_operation(int arr[],  
+                                      int n, int k) 
+    { 
+        int noOfSubtraction; 
+        int res = 0; 
+          
+        for (int i = 1; i < n; i++) { 
+            noOfSubtraction = 0; 
+  
+            if (arr[i] > arr[i - 1]) { 
+      
+                // Count how many times  
+                // we have to subtract. 
+                noOfSubtraction = (arr[i] - arr[i - 1]) / k; 
+  
+                // Check an additional subtraction  
+                // is required or not. 
+                if ((arr[i] - arr[i - 1]) % k != 0) 
+                    noOfSubtraction++; 
+  
+                // Modify the value of arr[i] 
+                arr[i] = arr[i] - k * noOfSubtraction; 
+            } 
+  
+            // Count total no of subtraction 
+            res = res + noOfSubtraction; 
+        } 
+  
+        return res; 
+    } 
+      
+    // driver function 
+    public static void main(String argc[]){ 
+        int arr = { 1, 1, 2, 3 }; 
+        int N = 4; 
+        int k = 5; 
+        System.out.println(min_noOf_operation(arr, 
+                                           N, k));  
+    } 
+      
+} 
+  
+/* This code is contributed by Sagar Shukla */
+```
+
+## Python3
+
+```
+# Python program to make an array decreasing 
+  
+# Function to count minimum no of operation 
+def min_noOf_operation(arr, n, k): 
+  
+    res = 0
+    for i in range(1,n): 
+        noOfSubtraction = 0
+  
+        if (arr[i] > arr[i - 1]): 
+  
+            # Count how many times we have to subtract. 
+            noOfSubtraction = (arr[i] - arr[i - 1]) / k; 
+  
+            # Check an additional subtraction is  
+            # required or not. 
+            if ((arr[i] - arr[i - 1]) % k != 0): 
+                noOfSubtraction+=1
+  
+            # Modify the value of arr[i]. 
+            arr[i] = arr[i] - k * noOfSubtraction 
+          
+  
+        # Count total no of operation/subtraction . 
+        res = res + noOfSubtraction 
+      
+  
+    return int(res) 
+  
+  
+# Driver Code 
+arr = [ 1, 1, 2, 3 ] 
+N = len(arr) 
+k = 5
+print(min_noOf_operation(arr, N, k)) 
+  
+# This code is contributed by 
+# Smitha Dinesh Semwal
+```
+
+## C#
+
+```
+// C# program to make an 
+// array decreasing 
+using System; 
+  
+public class GfG{ 
+      
+    // Function to count minimum no of operation 
+    public static int min_noOf_operation(int []arr,  
+                                       int n, int k) 
+    { 
+        int noOfSubtraction; 
+        int res = 0; 
+          
+        for (int i = 1; i < n; i++) { 
+            noOfSubtraction = 0; 
+  
+            if (arr[i] > arr[i - 1]) { 
+      
+                // Count how many times  
+                // we have to subtract. 
+                noOfSubtraction = (arr[i] - arr[i - 1]) / k; 
+  
+                // Check an additional subtraction  
+                // is required or not. 
+                if ((arr[i] - arr[i - 1]) % k != 0) 
+                    noOfSubtraction++; 
+  
+                // Modify the value of arr[i] 
+                arr[i] = arr[i] - k * noOfSubtraction; 
+            } 
+  
+            // Count total no of subtraction 
+            res = res + noOfSubtraction; 
+        } 
+  
+        return res; 
+    } 
+      
+    // driver function 
+    public static void Main() 
+    { 
+        int []arr = { 1, 1, 2, 3 }; 
+        int N = 4; 
+        int k = 5; 
+        Console.WriteLine(min_noOf_operation(arr, 
+                                        N, k));  
+    } 
+      
+} 
+  
+// This code is contributed by vt_m
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to make an array decreasing 
+  
+// Function to count minimum no of operation 
+function min_noOf_operation($arr, $n, $k) 
+{ 
+      
+    $noOfSubtraction; 
+    $res = 0; 
+    for($i = 1; $i < $n; $i++)  
+    { 
+        $noOfSubtraction = 0; 
+  
+        if ($arr[$i] > $arr[$i - 1])  
+        { 
+  
+            // Count how many times we 
+            // have to subtract. 
+            $noOfSubtraction = ($arr[$i] -  
+                      $arr[$i - 1]) / $k; 
+  
+            // Check an additional subtraction  
+            // is required or not. 
+            if (($arr[$i] - $arr[$i - 1])  
+                               % $k != 0) 
+                $noOfSubtraction++; 
+  
+            // Modify the value of arr[i]. 
+            $arr[$i] = $arr[$i] - $k *  
+                      $noOfSubtraction; 
+        } 
+  
+        // Count total no of  
+        // operation/subtraction . 
+        $res = $res + $noOfSubtraction; 
+    } 
+  
+    return floor($res); 
+} 
+  
+    // Driver Code 
+    $arr = array(1, 1, 2, 3); 
+    $N = count($arr); 
+    $k = 5; 
+    echo min_noOf_operation($arr, $N, $k) ; 
+  
+// This code is contributed by anuj_67. 
+?>
+```
+
+输出：
+
+```
+ 3
+```
+
+时间复杂度：`O(N)`。
