@@ -78,3 +78,421 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// JAVA Code for Find difference between sums 
+// of two diagonals 
+class GFG { 
+      
+    public static int difference(int arr[][], int n) 
+    { 
+        // Initialize sums of diagonals 
+        int d1 = 0, d2 = 0; 
+       
+        for (int i = 0; i < n; i++) 
+        { 
+            for (int j = 0; j < n; j++) 
+            { 
+                // finding sum of primary diagonal 
+                if (i == j) 
+                    d1 += arr[i][j]; 
+       
+                // finding sum of secondary diagonal 
+                if (i == n - j - 1) 
+                    d2 += arr[i][j]; 
+            } 
+        } 
+       
+        // Absolute difference of the sums 
+        // across the diagonals 
+        return Math.abs(d1 - d2); 
+    } 
+      
+    /* Driver program to test above function */
+    public static void main(String[] args)  
+    { 
+        int n = 3; 
+           
+        int arr[][] = 
+        { 
+            {11, 2, 4}, 
+            {4 , 5, 6}, 
+            {10, 8, -12} 
+        }; 
+       
+        System.out.print(difference(arr, n)); 
+         
+    } 
+  } 
+// This code is contributed by Arnav Kr. Mandal.
+```
+
+## Python3
+
+```
+# Python3 program to find the difference 
+# between the sum of diagonal. 
+def difference(arr, n): 
+  
+    # Initialize sums of diagonals 
+    d1 = 0
+    d2 = 0
+  
+    for i in range(0, n): 
+      
+        for j in range(0, n): 
+          
+            # finding sum of primary diagonal 
+            if (i == j): 
+                d1 += arr[i][j] 
+  
+            # finding sum of secondary diagonal 
+            if (i == n - j - 1): 
+                d2 += arr[i][j] 
+          
+    # Absolute difference of the sums 
+    # across the diagonals 
+    return abs(d1 - d2); 
+  
+# Driver Code 
+n = 3
+  
+arr = [[11, 2, 4], 
+       [4 , 5, 6], 
+       [10, 8, -12]] 
+  
+print(difference(arr, n)) 
+      
+# This code is contributed  
+# by ihritik
+```
+
+## C#
+
+```
+// C# Code for find difference between 
+// sums of two diagonals 
+using System; 
+  
+public class GFG 
+{ 
+  
+    // Function to calculate difference 
+    public static int difference(int[,] arr, 
+                                 int n) 
+    { 
+          
+        // Initialize sums of diagonals 
+        int d1 = 0, d2 = 0; 
+      
+        for (int i = 0; i < n; i++) 
+        { 
+            for (int j = 0; j < n; j++) 
+            { 
+                  
+                // finding sum of primary diagonal 
+                if (i == j) 
+                    d1 += arr[i, j]; 
+      
+                // finding sum of secondary diagonal 
+                if (i == n - j - 1) 
+                    d2 += arr[i, j]; 
+            } 
+        } 
+      
+        // Absolute difference of the 
+        // sums across the diagonals 
+        return Math.Abs(d1 - d2); 
+    } 
+      
+    // Driver Code 
+    public static void Main()  
+    { 
+        int n = 3; 
+          
+        int[,] arr ={{11, 2, 4}, 
+                     {4 , 5, 6}, 
+                     {10, 8, -12}}; 
+      
+        Console.Write(difference(arr, n)); 
+          
+    } 
+} 
+  
+// This code is contributed by shiv_bhakt.
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find the difference 
+// between the sum of diagonal. 
+  
+function difference($arr, $n) 
+{ 
+      
+    // Initialize sums of diagonals 
+    $d1 = 0; $d2 = 0; 
+  
+    for ($i = 0; $i < $n; $i++) 
+    { 
+        for ($j = 0; $j < $n; $j++) 
+        { 
+              
+            // finding sum of  
+            // primary diagonal 
+            if ($i == $j) 
+                $d1 += $arr[$i][$j]; 
+  
+            // finding sum of  
+            // secondary diagonal 
+            if ($i == $n - $j - 1) 
+                $d2 += $arr[$i][$j]; 
+        } 
+    } 
+  
+    // Absolute difference of the sums 
+    // across the diagonals 
+    return abs($d1 - $d2); 
+} 
+  
+// Driver Code 
+{ 
+    $n = 3; 
+  
+    $arr = array(array(11, 2, 4), 
+                 array(4 , 5, 6), 
+                 array(10, 8, -12)); 
+  
+    echo difference($arr, $n); 
+    return 0; 
+} 
+  
+// This code is contributed by nitin mittal. 
+?>
+```
+
+输出：
+
+```
+15
+```
+
+时间复杂度：`O(n * n)`。
+
+我们可以使用单元格索引中存在的模式来优化上述解决方案以在`O(n)`中工作。
+
+## C++
+
+```
+// C++ program to find the difference 
+// between the sum of diagonal. 
+#include <bits/stdc++.h> 
+#define MAX 100 
+using namespace std; 
+  
+int difference(int arr[][MAX], int n) 
+{ 
+    // Initialize sums of diagonals 
+    int d1 = 0, d2 = 0; 
+  
+    for (int i = 0; i < n; i++) 
+    { 
+        d1 += arr[i][i]; 
+        d2 += arr[i][n-i-1]; 
+    } 
+  
+    // Absolute difference of the sums 
+    // across the diagonals 
+    return abs(d1 - d2); 
+} 
+  
+// Driven Program 
+int main() 
+{ 
+    int n = 3; 
+  
+    int arr[][MAX] = 
+    { 
+        {11, 2, 4}, 
+        {4 , 5, 6}, 
+        {10, 8, -12} 
+    }; 
+  
+    cout << difference(arr, n); 
+    return 0; 
+}
+```
+
+## Java
+
+```
+// JAVA Code for Find difference between sums 
+// of two diagonals 
+  
+class GFG { 
+      
+    public static int difference(int arr[][], int n) 
+    { 
+        // Initialize sums of diagonals 
+        int d1 = 0, d2 = 0; 
+       
+        for (int i = 0; i < n; i++) 
+        { 
+            d1 += arr[i][i]; 
+            d2 += arr[i][n-i-1]; 
+        } 
+       
+        // Absolute difference of the sums 
+        // across the diagonals 
+        return Math.abs(d1 - d2); 
+    } 
+      
+    /* Driver program to test above function */
+    public static void main(String[] args)  
+    { 
+        int n = 3; 
+           
+        int arr[][] = 
+        { 
+            {11, 2, 4}, 
+            {4 , 5, 6}, 
+            {10, 8, -12} 
+        }; 
+       
+        System.out.print(difference(arr, n)); 
+         
+    } 
+  } 
+// This code is contributed by Arnav Kr. Mandal.
+```
+
+## Python3
+
+```
+# Python3 program to find the difference 
+# between the sum of diagonal. 
+def difference(arr, n): 
+  
+    # Initialize sums of diagonals 
+    d1 = 0
+    d2 = 0
+  
+    for i in range(0, n): 
+        d1 = d1 + arr[i][i] 
+        d2 = d2 + arr[i][n - i - 1] 
+          
+    # Absolute difference of the sums 
+    # across the diagonals 
+    return abs(d1 - d2) 
+  
+# Driver Code 
+n = 3
+  
+arr = [[11, 2, 4], 
+       [4 , 5, 6], 
+       [10, 8, -12]] 
+  
+print(difference(arr, n)) 
+      
+# This code is contributed 
+# by ihritik
+```
+
+## C#
+
+```
+// C# Code for find difference between  
+// sums of two diagonals 
+using System; 
+  
+public class GFG 
+  
+{ 
+      
+    //Function to find difference 
+    public static int difference(int[,] arr, 
+                                 int n) 
+    { 
+          
+        // Initialize sums of diagonals 
+        int d1 = 0, d2 = 0; 
+      
+        for (int i = 0; i < n; i++) 
+        { 
+            d1 += arr[i, i]; 
+            d2 += arr[i, n - i - 1]; 
+        } 
+      
+        // Absolute difference of the sums 
+        // across the diagonals 
+        return Math.Abs(d1 - d2); 
+    } 
+      
+    // Driver Code 
+    public static void Main()  
+    { 
+        int n = 3; 
+          
+        int[,] arr ={{11, 2, 4}, 
+                     {4 , 5, 6}, 
+                     {10, 8, -12}}; 
+      
+        Console.Write(difference(arr, n)); 
+          
+    } 
+} 
+  
+// This code is contributed by shiv_bhakt.
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find the difference 
+// between the sum of diagonal. 
+  
+function difference($arr, $n) 
+{ 
+      
+    // Initialize sums of diagonals 
+    $d1 = 0; $d2 = 0; 
+  
+    for ($i = 0; $i < $n; $i++) 
+    { 
+        $d1 += $arr[$i][$i]; 
+        $d2 += $arr[$i][$n-$i-1]; 
+    } 
+  
+    // Absolute difference of the sums 
+    // across the diagonals 
+    return abs($d1 - $d2); 
+} 
+  
+// Driver Code 
+{ 
+    $n = 3; 
+  
+    $arr =array(array(11, 2, 4), 
+                array(4, 5, 6), 
+                array(10, 8, -12)); 
+  
+    echo difference($arr, $n); 
+    return 0; 
+} 
+  
+// This code is contributed by nitin mittal. 
+?>
+```
+
+输出：
+
+```
+15
+```
+
+时间复杂度：`O(n)`。
