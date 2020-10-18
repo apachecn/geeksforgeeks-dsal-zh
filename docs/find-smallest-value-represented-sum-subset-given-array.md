@@ -84,3 +84,214 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to find the smallest positive value that cannot be 
+// represented as sum of subsets of a given sorted array 
+class FindSmallestInteger  
+{ 
+    // Returns the smallest number that cannot be represented as sum 
+    // of subset of elements from set represented by sorted array arr[0..n-1] 
+    int findSmallest(int arr[], int n)  
+    { 
+        int res = 1; // Initialize result 
+  
+        // Traverse the array and increment 'res' if arr[i] is 
+        // smaller than or equal to 'res'. 
+        for (int i = 0; i < n && arr[i] <= res; i++) 
+            res = res + arr[i]; 
+  
+        return res; 
+    } 
+  
+    // Driver program to test above functions 
+    public static void main(String[] args)  
+    { 
+        FindSmallestInteger small = new FindSmallestInteger(); 
+        int arr1[] = {1, 3, 4, 5}; 
+        int n1 = arr1.length; 
+        System.out.println(small.findSmallest(arr1, n1)); 
+  
+        int arr2[] = {1, 2, 6, 10, 11, 15}; 
+        int n2 = arr2.length; 
+        System.out.println(small.findSmallest(arr2, n2)); 
+  
+        int arr3[] = {1, 1, 1, 1}; 
+        int n3 = arr3.length; 
+        System.out.println(small.findSmallest(arr3, n3)); 
+  
+        int arr4[] = {1, 1, 3, 4}; 
+        int n4 = arr4.length; 
+        System.out.println(small.findSmallest(arr4, n4)); 
+  
+    } 
+} 
+  
+// This code has been contributed by Mayank Jaiswal(mayank_24)
+```
+
+## Python3
+
+```
+# Python3 program to find the smallest 
+# positive value that cannot be 
+# represented as sum of subsets  
+# of a given sorted array 
+  
+# Returns the smallest number  
+# that cannot be represented as sum 
+# of subset of elements from set 
+# represented by sorted array arr[0..n-1] 
+def findSmallest(arr, n): 
+  
+    res = 1 #Initialize result 
+  
+    # Traverse the array and increment 
+    # 'res' if arr[i] is smaller than 
+    # or equal to 'res'. 
+    for i in range (0, n ): 
+        if arr[i] <= res: 
+            res = res + arr[i] 
+        else: 
+            break
+    return res 
+  
+  
+# Driver program to test above function 
+arr1 = [1, 3, 4, 5] 
+n1 = len(arr1) 
+print(findSmallest(arr1, n1)) 
+  
+arr2= [1, 2, 6, 10, 11, 15] 
+n2 = len(arr2) 
+print(findSmallest(arr2, n2)) 
+  
+arr3= [1, 1, 1, 1] 
+n3 = len(arr3) 
+print(findSmallest(arr3, n3)) 
+  
+arr4 = [1, 1, 3, 4] 
+n4 = len(arr4) 
+print(findSmallest(arr4, n4)) 
+  
+# This code is.contributed by Smitha Dinesh Semwal
+```
+
+## C#
+
+```
+// C# program to find the smallest 
+// positive value that cannot be 
+// represented as sum of subsets  
+// of a given sorted array 
+using System; 
+  
+class GFG { 
+      
+    // Returns the smallest number that 
+    // cannot be represented as sum 
+    // of subset of elements from set  
+    // represented by sorted array 
+    // arr[0..n-1] 
+    static int findSmallest(int []arr, int n)  
+    { 
+         // Initialize result 
+         int res = 1; 
+  
+        // Traverse the array and  
+        // increment 'res' if arr[i] is 
+        // smaller than or equal to 'res'. 
+        for (int i = 0; i < n &&  
+             arr[i] <= res; i++) 
+            res = res + arr[i]; 
+  
+        return res; 
+    } 
+  
+    // Driver code 
+    public static void Main()  
+    { 
+        int []arr1 = {1, 3, 4, 5}; 
+        int n1 = arr1.Length; 
+        Console.WriteLine(findSmallest(arr1, n1)); 
+  
+        int []arr2 = {1, 2, 6, 10, 11, 15}; 
+        int n2 = arr2.Length; 
+        Console.WriteLine(findSmallest(arr2, n2)); 
+  
+        int []arr3 = {1, 1, 1, 1}; 
+        int n3 = arr3.Length; 
+        Console.WriteLine(findSmallest(arr3, n3)); 
+  
+        int []arr4 = {1, 1, 3, 4}; 
+        int n4 = arr4.Length; 
+        Console.WriteLine(findSmallest(arr4, n4)); 
+  
+    } 
+} 
+  
+// This code is contributed by Sam007
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find the smallest 
+// positive value that cannot be 
+// represented as sum of subsets 
+// of a given sorted array 
+  
+// Returns the smallest number that 
+// cannot be represented as sum of  
+// subset of elements from set 
+// represented by sorted array  
+// arr[0..n-1] 
+function findSmallest($arr, $n) 
+{ 
+      
+    // Initialize result 
+    $res = 1;  
+      
+    // Traverse the array and  
+    // increment 'res' if arr[i] is 
+    // smaller than or equal to 'res'. 
+    for($i = 0; $i < $n and $arr[$i] <= $res; $i++) 
+        $res = $res + $arr[$i]; 
+      
+    return $res; 
+} 
+  
+// Driver Code 
+$arr1 = array(1, 3, 4, 5); 
+$n1 = count($arr1); 
+echo findSmallest($arr1, $n1),"\n"; 
+  
+$arr2 = array(1, 2, 6, 10, 11, 15); 
+$n2 = count($arr2); 
+echo findSmallest($arr2, $n2),"\n" ; 
+  
+$arr3 = array(1, 1, 1, 1); 
+$n3 = count($arr3); 
+echo findSmallest($arr3, $n3),"\n"; 
+  
+$arr4 = array(1, 1, 3, 4); 
+$n4 = count($arr4); 
+echo findSmallest($arr4, $n4); 
+  
+// This code is contributed by anuj_67. 
+?>
+```
+
+输出：
+
+```
+2
+4
+5
+10
+```
+
+上述程序的时间复杂度为`O(n)`。
