@@ -526,32 +526,31 @@ Inversion Count : 4
 
 ## C
 
-```c
-
+```
 // C++ program to count inversions of size three using  
 // Binary Indexed Tree 
 #include<bits/stdc++.h> 
 using namespace std; 
-
+  
 // Returns sum of arr[0..index]. This function assumes 
 // that the array is preprocessed and partial sums of 
 // array elements are stored in BITree[]. 
 int getSum(int BITree[], int index) 
 { 
     int sum = 0; // Initialize result 
-
+  
     // Traverse ancestors of BITree[index] 
     while (index > 0) 
     { 
         // Add current element of BITree to sum 
         sum += BITree[index]; 
-
+  
         // Move index to parent node in getSum View 
         index -= index & (-index); 
     } 
     return sum; 
 } 
-
+  
 // Updates a node in Binary Index Tree (BITree) at given index 
 // in BITree.  The given value 'val' is added to BITree[i] and 
 // all of its ancestors in tree. 
@@ -562,12 +561,12 @@ void updateBIT(int BITree[], int n, int index, int val)
     { 
        // Add 'val' to current node of BI Tree 
        BITree[index] += val; 
-
+  
        // Update index to that of parent in update View 
        index += index & (-index); 
     } 
 } 
-
+  
 // Converts an array to an array with values from 1 to n 
 // and relative order of smaller and greater elements remains 
 // same.  For example, {7, -90, 100, 1} is converted to 
@@ -580,7 +579,7 @@ void convert(int arr[], int n)
     for (int i=0; i<n; i++) 
         temp[i] = arr[i]; 
     sort(temp, temp+n); 
-
+  
     // Traverse all array elements 
     for (int i=0; i<n; i++) 
     { 
@@ -589,7 +588,7 @@ void convert(int arr[], int n)
         arr[i] = lower_bound(temp, temp+n, arr[i]) - temp + 1; 
     } 
 } 
-
+  
 // Returns count of inversions of size three 
 int getInvCount(int arr[], int n) 
 { 
@@ -598,44 +597,44 @@ int getInvCount(int arr[], int n)
     // same.  For example, {7, -90, 100, 1} is converted to 
     //  {3, 1, 4 ,2 } 
     convert(arr, n); 
-
+  
     // Create and initialize smaller and greater arrays 
     int greater1[n], smaller1[n]; 
     for (int i=0; i<n; i++) 
         greater1[i] = smaller1[i] = 0; 
-
+  
     // Create and initialize an array to store Binary 
     // Indexed Tree 
     int BIT[n+1]; 
     for (int i=1; i<=n; i++) 
         BIT[i]=0; 
-
+  
     for(int i=n-1; i>=0; i--) 
     { 
         smaller1[i] = getSum(BIT, arr[i]-1); 
         updateBIT(BIT, n, arr[i], 1); 
     } 
-
+  
     // Reset BIT 
     for (int i=1; i<=n; i++) 
         BIT[i] = 0; 
-
+  
     // Count greater elements 
     for (int i=0; i<n; i++) 
     { 
         greater1[i] = i - getSum(BIT,arr[i]); 
         updateBIT(BIT, n, arr[i], 1); 
     } 
-
+  
     // Compute Inversion count using smaller[] and 
     // greater[].  
     int invcount = 0; 
     for (int i=0; i<n; i++) 
         invcount += smaller1[i]*greater1[i]; 
-
+  
     return invcount; 
 } 
-
+  
 // Driver program to test above function 
 int main() 
 { 
@@ -643,6 +642,433 @@ int main()
     int n = sizeof(arr)/sizeof(arr[0]); 
     cout << "Inversion Count : " << getInvCount(arr, n); 
     return 0; 
-} 
+}
+```
+
+## Java
 
 ```
+// Java program to count inversions of size three using  
+// Binary Indexed Tree 
+import java.util.Arrays; 
+  
+class BinaryTree { 
+  
+   // Returns sum of arr[0..index]. This function assumes 
+   // that the array is preprocessed and partial sums of 
+   // array elements are stored in BITree[]. 
+    int getSum(int BITree[], int index) { 
+        int sum = 0; // Initialize result 
+  
+        // Traverse ancestors of BITree[index] 
+        while (index > 0) { 
+  
+            // Add current element of BITree to sum 
+            sum += BITree[index]; 
+  
+            // Move index to parent node in getSum View 
+            index -= index & (-index); 
+        } 
+        return sum; 
+    } 
+  
+    // Updates a node in Binary Index Tree (BITree) at given 
+    // index in BITree.  The given value 'val' is added to  
+    // BITree[i] and  all of its ancestors in tree. 
+    void updateBIT(int BITree[], int n, int index, int val) { 
+      
+        // Traverse all ancestors and add 'val' 
+        while (index <= n) { 
+      
+            // Add 'val' to current node of BI Tree 
+            BITree[index] += val; 
+  
+            // Update index to that of parent in update View 
+            index += index & (-index); 
+        } 
+    } 
+  
+    // Converts an array to an array with values from 1 to n 
+    // and relative order of smaller and greater elements remains 
+    // same.  For example, {7, -90, 100, 1} is converted to 
+    // {3, 1, 4 ,2 } 
+    void convert(int arr[], int n) { 
+          
+        // Create a copy of arrp[] in temp and sort the temp array 
+        // in increasing order 
+        int temp[]= new int[n]; 
+        for (int i = 0; i < n; i++) { 
+            temp[i] = arr[i]; 
+        } 
+        Arrays.sort(temp); 
+  
+        // Traverse all array elements 
+        for (int i = 0; i < n; i++) { 
+         
+            // lower_bound() Returns pointer to the first element 
+            // greater than or equal to arr[i] 
+            arr[i] = Arrays.binarySearch(temp, arr[i])  + 1; 
+        } 
+    } 
+  
+    // Returns count of inversions of size three 
+    int getInvCount(int arr[], int n) { 
+         
+        // Convert arr[] to an array with values from 1 to n and 
+        // relative order of smaller and greater elements remains 
+        // same.  For example, {7, -90, 100, 1} is converted to 
+        //  {3, 1, 4 ,2 } 
+        convert(arr, n); 
+  
+        // Create and initialize smaller and greater arrays 
+        int greater1[]= new int[n]; 
+        int smaller1[]= new int[n]; 
+        for (int i = 0; i < n; i++) { 
+            greater1[i] = smaller1[i] = 0; 
+        } 
+  
+        // Create and initialize an array to store Binary 
+        // Indexed Tree 
+        int BIT[]= new int[n+1]; 
+        for (int i = 1; i <= n; i++) { 
+            BIT[i] = 0; 
+        } 
+  
+        for (int i = n - 1; i >= 0; i--) { 
+            smaller1[i] = getSum(BIT, arr[i] - 1); 
+            updateBIT(BIT, n, arr[i], 1); 
+        } 
+  
+        // Reset BIT 
+        for (int i = 1; i <= n; i++) { 
+            BIT[i] = 0; 
+        } 
+  
+        // Count greater elements 
+        for (int i = 0; i < n; i++) { 
+            greater1[i] = i - getSum(BIT, arr[i]); 
+            updateBIT(BIT, n, arr[i], 1); 
+        } 
+  
+        // Compute Inversion count using smaller[] and 
+        // greater[].  
+        int invcount = 0; 
+        for (int i = 0; i < n; i++) { 
+            invcount += smaller1[i] * greater1[i]; 
+        } 
+  
+        return invcount; 
+    } 
+  
+    // Driver program to test above function 
+    public static void main(String args[]) { 
+        BinaryTree tree = new BinaryTree(); 
+        int[] arr = new int[]{8, 4, 2, 1}; 
+        int n = arr.length; 
+        System.out.print( "Inversion Count : " +  
+                           tree.getInvCount(arr, n)); 
+    } 
+} 
+  
+// This code is contributed by Mayank Jaiswal
+```
+
+## C#
+
+```
+// C# program to count inversions 
+// of size three using Binary Indexed Tree 
+using System;  
+  
+class GFG  
+{ 
+  
+// Returns sum of arr[0..index].  
+// This function assumes that  
+// the array is preprocessed and  
+// partial sums of array elements  
+// are stored in BITree[]. 
+int getSum(int[] BITree, int index)  
+{ 
+    int sum = 0; // Initialize result 
+  
+    // Traverse ancestors of 
+    // BITree[index] 
+    while (index > 0)  
+    { 
+  
+        // Add current element of  
+        // BITree to sum 
+        sum += BITree[index]; 
+  
+        // Move index to parent node  
+        // in getSum View 
+        index -= index & (-index); 
+    } 
+    return sum; 
+} 
+  
+// Updates a node in Binary Index  
+// Tree (BITree) at given index  
+// in BITree. The given value  
+// 'val' is added to BITree[i] and  
+// all of its ancestors in tree. 
+void updateBIT(int[] BITree, int n,  
+               int index, int val)  
+{ 
+  
+    // Traverse all ancestors  
+    // and add 'val' 
+    while (index <= n)  
+    { 
+  
+        // Add 'val' to current  
+        // node of BI Tree 
+        BITree[index] += val; 
+  
+        // Update index to that of 
+        // parent in update View 
+        index += index & (-index); 
+    } 
+} 
+  
+// Converts an array to an array  
+// with values from 1 to n and  
+// relative order of smaller and  
+// greater elements remains same.  
+// For example, {7, -90, 100, 1}  
+// is converted to {3, 1, 4 ,2 } 
+void convert(int[] arr, int n)  
+{ 
+      
+    // Create a copy of arrp[] in  
+    // temp and sort the temp array 
+    // in increasing order 
+    int[] temp = new int[n]; 
+    for (int i = 0; i < n; i++) 
+    { 
+        temp[i] = arr[i]; 
+    } 
+    Array.Sort(temp); 
+  
+    // Traverse all array elements 
+    for (int i = 0; i < n; i++)  
+    { 
+      
+        // lower_bound() Returns pointer  
+        // to the first element greater 
+        // than or equal to arr[i] 
+        arr[i] = Array.BinarySearch(temp,  
+                                    arr[i]) + 1; 
+    } 
+} 
+  
+// Returns count of inversions  
+// of size three 
+int getInvCount(int[] arr, int n)  
+{ 
+      
+    // Convert arr[] to an array with  
+    // values from 1 to n and relative  
+    // order of smaller and greater  
+    // elements remains same. For  
+    // example, {7, -90, 100, 1} is  
+    // converted to {3, 1, 4 ,2 } 
+    convert(arr, n); 
+  
+    // Create and initialize  
+    // smaller and greater arrays 
+    int[] greater1 = new int[n]; 
+    int[] smaller1 = new int[n]; 
+    for (int i = 0; i < n; i++)  
+    { 
+        greater1[i] = smaller1[i] = 0; 
+    } 
+  
+    // Create and initialize an  
+    // array to store Binary Indexed Tree 
+    int[] BIT = new int[n + 1]; 
+    for (int i = 1; i <= n; i++) 
+    { 
+        BIT[i] = 0; 
+    } 
+  
+    for (int i = n - 1; i >= 0; i--)  
+    { 
+        smaller1[i] = getSum(BIT,  
+                             arr[i] - 1); 
+        updateBIT(BIT, n, arr[i], 1); 
+    } 
+  
+    // Reset BIT 
+    for (int i = 1; i <= n; i++)  
+    { 
+        BIT[i] = 0; 
+    } 
+  
+    // Count greater elements 
+    for (int i = 0; i < n; i++)  
+    { 
+        greater1[i] = i - getSum(BIT, 
+                                 arr[i]); 
+        updateBIT(BIT, n, arr[i], 1); 
+    } 
+  
+    // Compute Inversion count using  
+    // smaller[] and greater[].  
+    int invcount = 0; 
+    for (int i = 0; i < n; i++)  
+    { 
+        invcount += smaller1[i] *  
+                    greater1[i]; 
+    } 
+  
+    return invcount; 
+} 
+  
+// Driver Code 
+public static void Main() 
+{ 
+    GFG tree = new GFG(); 
+    int[] arr = new int[]{8, 4, 2, 1}; 
+    int n = arr.Length; 
+    Console.Write( "Inversion Count : " +  
+                    tree.getInvCount(arr, n)); 
+} 
+} 
+  
+// This code is contributed  
+// by ChitraNayal
+```
+
+## Python3
+
+```
+# Python3 program to count inversions of  
+# size three using Binary Indexed Tree  
+  
+# Returns sum of arr[0..index]. This function 
+# assumes that the array is preprocessed and  
+# partial sums of array elements are stored 
+# in BITree[].  
+def getSum(BITree, index): 
+    sum = 0 # Initialize result  
+      
+    # Traverse ancestors of BITree[index]  
+    while (index > 0):  
+  
+        # Add current element of  
+        # BITree to sum  
+        sum += BITree[index]  
+  
+        # Move index to parent node  
+        # in getSum View  
+        index -= index & (-index)  
+  
+    return sum
+  
+# Updates a node in Binary Index Tree  
+# (BITree) at given index in BITree. 
+# The given value 'val' is added to BITree[i]  
+# and all of its ancestors in tree.  
+def updateBIT( BITree, n, index, val): 
+  
+    # Traverse all ancestors and add 'val'  
+    while (index <= n):  
+  
+        # Add 'val' to current node of BI Tree  
+        BITree[index] += val  
+  
+        # Update index to that of parent  
+        # in update View  
+        index += index & (-index)  
+  
+# Converts an array to an array with values  
+# from 1 to n and relative order of smaller  
+# and greater elements remains same. For example,  
+# 7, -90, 100, 1 is converted to 3, 1, 4 ,2  
+def convert(arr, n) : 
+  
+    # Create a copy of arrp[] in temp and  
+    # sort the temp array in increasing order  
+    temp = [0] * n  
+    for i in range(n): 
+        temp[i] = arr[i]  
+    temp = sorted(temp) 
+    j = 1
+      
+    # Traverse all array elements  
+    for i in temp:  
+  
+        # lower_bound() Returns poer to  
+        # the first element greater than 
+        # or equal to arr[i]  
+        arr[arr.index(i)] = j 
+        j += 1
+  
+# Returns count of inversions of size three  
+def getInvCount( arr, n): 
+  
+    # Convert arr[] to an array with values  
+    # from 1 to n and relative order of smaller  
+    # and greater elements remains same. For example, 
+    # 7, -90, 100, 1 is converted to 3, 1, 4 ,2  
+    convert(arr, n)  
+  
+    # Create and initialize smaller and  
+    # greater arrays  
+    greater1 = [0] * n 
+    smaller1 = [0] * n  
+    for i in range(n): 
+        greater1[i], smaller1[i] = 0, 0
+  
+    # Create and initialize an array to  
+    # store Binary Indexed Tree  
+    BIT = [0] * (n + 1)  
+    for i in range(1, n + 1):  
+        BIT[i] = 0
+    for i in range(n - 1, -1, -1): 
+  
+        smaller1[i] = getSum(BIT, arr[i] - 1)  
+        updateBIT(BIT, n, arr[i], 1)  
+  
+    # Reset BIT  
+    for i in range(1, n + 1):  
+        BIT[i] = 0
+  
+    # Count greater elements  
+    for i in range(n):  
+  
+        greater1[i] = i - getSum(BIT, arr[i])  
+        updateBIT(BIT, n, arr[i], 1)  
+  
+    # Compute Inversion count using smaller[]  
+    # and greater[].  
+    invcount = 0
+    for i in range(n):  
+        invcount += smaller1[i] * greater1[i]  
+  
+    return invcount  
+      
+# Driver code  
+if __name__ =="__main__": 
+    arr= [8, 4, 2, 1]  
+    n = 4
+    print("Inversion Count : ",  
+           getInvCount(arr, n)) 
+      
+# This code is contributed by 
+# Shubham Singh(SHUBHAMSINGH10)
+```
+
+输出：
+
+```
+Inversion Count : 4 
+```
+
+时间复杂度：`O(n log n)`。
+
+辅助空间：`O(n)`。
+
+我们还可以使用自平衡二进制搜索树在左侧计算较大的元素，在右侧计算较小的元素。 该方法的时间复杂度也为`O(n log n)`，但基于 BIT 的方法易于实现。

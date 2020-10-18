@@ -92,3 +92,198 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java Program to prints common element in all 
+// rows of matrix 
+import java.util.*; 
+  
+class GFG  
+{ 
+  
+// Specify number of rows and columns 
+static int M = 4; 
+static int N =5; 
+  
+// prints common element in all rows of matrix 
+static void printCommonElements(int mat[][]) 
+{ 
+  
+    Map<Integer,Integer> mp = new HashMap<>(); 
+      
+    // initalize 1st row elements with value 1 
+    for (int j = 0; j < N; j++) 
+        mp.put(mat[0][j],1); 
+          
+    // traverse the matrix 
+    for (int i = 1; i < M; i++) 
+    { 
+        for (int j = 0; j < N; j++) 
+        { 
+            // If element is present in the map and 
+            // is not duplicated in current row. 
+            if (mp.get(mat[i][j]) != null && mp.get(mat[i][j]) == i) 
+            { 
+                // we increment count of the element 
+                // in map by 1 
+                mp.put(mat[i][j], i + 1); 
+  
+                // If this is last row 
+                if (i == M - 1) 
+                    System.out.print(mat[i][j] + " "); 
+            } 
+        } 
+    } 
+} 
+  
+// Driver code 
+public static void main(String[] args)  
+{ 
+    int mat[][] = 
+    { 
+        {1, 2, 1, 4, 8}, 
+        {3, 7, 8, 5, 1}, 
+        {8, 7, 7, 3, 1}, 
+        {8, 1, 2, 7, 9}, 
+    }; 
+  
+    printCommonElements(mat); 
+} 
+} 
+  
+// This code contributed by Rajput-Ji
+```
+
+## Python3
+
+```
+# A Program to prints common element  
+# in all rows of matrix 
+  
+# Specify number of rows and columns 
+M = 4
+N = 5
+  
+# prints common element in all  
+# rows of matrix 
+def printCommonElements(mat): 
+  
+    mp = dict() 
+  
+    # initalize 1st row elements  
+    # with value 1 
+    for j in range(N): 
+        mp[mat[0][j]] = 1
+  
+    # traverse the matrix 
+    for i in range(1, M): 
+        for j in range(N): 
+              
+            # If element is present in the 
+            # map and is not duplicated in  
+            # current row. 
+            if (mat[i][j] in mp.keys() and
+                             mp[mat[i][j]] == i): 
+                                   
+            # we increment count of the  
+            # element in map by 1 
+                mp[mat[i][j]] = i + 1
+  
+                # If this is last row 
+                if i == M - 1: 
+                    print(mat[i][j], end = " ") 
+              
+# Driver Code 
+mat = [[1, 2, 1, 4, 8], 
+       [3, 7, 8, 5, 1], 
+       [8, 7, 7, 3, 1], 
+       [8, 1, 2, 7, 9]] 
+  
+printCommonElements(mat) 
+  
+# This code is conteibuted  
+# by mohit kumar 29
+```
+
+## C#
+
+```
+// C# Program to print common element in all 
+// rows of matrix to another. 
+using System;  
+using System.Collections.Generic;  
+  
+class GFG  
+{ 
+  
+// Specify number of rows and columns 
+static int M = 4; 
+static int N = 5; 
+  
+// prints common element in all rows of matrix 
+static void printCommonElements(int [,]mat) 
+{ 
+  
+    Dictionary<int, int> mp = new Dictionary<int, int>(); 
+      
+    // initalize 1st row elements with value 1 
+    for (int j = 0; j < N; j++) 
+    { 
+        if(!mp.ContainsKey(mat[0, j])) 
+            mp.Add(mat[0, j], 1); 
+    } 
+      
+    // traverse the matrix 
+    for (int i = 1; i < M; i++) 
+    { 
+        for (int j = 0; j < N; j++) 
+        { 
+            // If element is present in the map and 
+            // is not duplicated in current row. 
+            if (mp.ContainsKey(mat[i, j])&& 
+               (mp[mat[i, j]] != 0 &&  
+                mp[mat[i, j]] == i)) 
+            { 
+                // we increment count of the element 
+                // in map by 1 
+                if(mp.ContainsKey(mat[i, j])) 
+                { 
+                    var v = mp[mat[i, j]]; 
+                    mp.Remove(mat[i, j]); 
+                    mp.Add(mat[i, j], i + 1); 
+                } 
+                else
+                    mp.Add(mat[i, j], i + 1); 
+  
+                // If this is last row 
+                if (i == M - 1) 
+                    Console.Write(mat[i, j] + " "); 
+            } 
+        } 
+    } 
+} 
+  
+// Driver code 
+public static void Main(String[] args)  
+{ 
+    int [,]mat = {{1, 2, 1, 4, 8}, 
+                  {3, 7, 8, 5, 1}, 
+                  {8, 7, 7, 3, 1}, 
+                  {8, 1, 2, 7, 9}}; 
+  
+    printCommonElements(mat); 
+} 
+} 
+  
+// This code is contributed by 29AjayKumar
+```
+
+输出：
+
+```
+8 1
+```
+
+该解决方案的时间复杂度为`O(m * n)`，我们只对矩阵进行一次遍历。

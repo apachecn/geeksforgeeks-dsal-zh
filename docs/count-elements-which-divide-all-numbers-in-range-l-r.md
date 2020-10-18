@@ -95,3 +95,253 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to Count elements which 
+// divides all numbers in range L-R 
+import java.io.*; 
+  
+class GFG  
+{ 
+  
+// function to count element 
+// Time complexity O(n^2) worst case 
+static int answerQuery(int a[], int n,  
+                       int l, int r) 
+{ 
+    // answer for query 
+    int count = 0; 
+  
+    // 0 based index 
+    l = l - 1; 
+  
+    // iterate for all elements 
+    for (int i = l; i < r; i++)  
+    { 
+        int element = a[i]; 
+        int divisors = 0; 
+  
+        // check if the element divides 
+        // all numbers in range 
+        for (int j = l; j < r; j++)  
+        { 
+            // no of elements 
+            if (a[j] % a[i] == 0) 
+                divisors++; 
+            else
+                break; 
+        } 
+          
+        // if all elements are divisible by a[i] 
+        if (divisors == (r - l)) 
+            count++; 
+    } 
+  
+    // answer for every query 
+    return count; 
+} 
+  
+// Driver Code 
+public static void main (String[] args)  
+{ 
+    int a[] = { 1, 2, 3, 5 }; 
+    int n = a.length; 
+      
+    int l = 1, r = 4; 
+    System.out.println( answerQuery(a, n, l, r)); 
+      
+    l = 2; r = 4;  
+    System.out.println( answerQuery(a, n, l, r)); 
+} 
+} 
+  
+// This code is contributed by anuj_67..
+```
+
+## Python3
+
+```
+# Python 3 program to Count elements which 
+# divides all numbers in range L-R 
+  
+# function to count element 
+# Time complexity O(n^2) worst case 
+def answerQuery(a, n, l, r): 
+      
+    # answer for query 
+    count = 0
+  
+    # 0 based index 
+    l = l - 1
+  
+    # iterate for all elements 
+    for i in range(l, r, 1): 
+        element = a[i] 
+        divisors = 0
+  
+        # check if the element divides 
+        # all numbers in range 
+        for j in range(l, r, 1): 
+              
+            # no of elements 
+            if (a[j] % a[i] == 0): 
+                divisors += 1
+            else: 
+                break
+          
+        # if all elements are divisible 
+        # by a[i] 
+        if (divisors == (r - l)): 
+            count += 1
+  
+    # answer for every query 
+    return count 
+  
+# Driver Code 
+if __name__ =='__main__': 
+    a = [1, 2, 3, 5] 
+    n = len(a) 
+  
+    l = 1
+    r = 4
+    print(answerQuery(a, n, l, r)) 
+  
+    l = 2
+    r = 4
+    print(answerQuery(a, n, l, r)) 
+  
+# This code is contributed by 
+# Shashank_Sharma
+```
+
+## C#
+
+```
+// C# program to Count elements which 
+// divides all numbers in range L-R 
+using System; 
+  
+class GFG  
+{ 
+  
+// function to count element 
+// Time complexity O(n^2) worst case 
+static int answerQuery(int []a, int n,  
+                       int l, int r) 
+{ 
+    // answer for query 
+    int count = 0; 
+  
+    // 0 based index 
+    l = l - 1; 
+  
+    // iterate for all elements 
+    for (int i = l; i < r; i++)  
+    { 
+        //int element = a[i]; 
+        int divisors = 0; 
+  
+        // check if the element divides 
+        // all numbers in range 
+        for (int j = l; j < r; j++)  
+        { 
+            // no of elements 
+            if (a[j] % a[i] == 0) 
+                divisors++; 
+            else
+                break; 
+        } 
+          
+        // if all elements are divisible by a[i] 
+        if (divisors == (r - l)) 
+            count++; 
+    } 
+  
+    // answer for every query 
+    return count; 
+} 
+  
+// Driver Code 
+public static void Main ()  
+{ 
+    int []a = { 1, 2, 3, 5 }; 
+    int n = a.Length; 
+      
+    int l = 1, r = 4; 
+    Console.WriteLine(answerQuery(a, n, l, r)); 
+      
+    l = 2; r = 4;  
+    Console.WriteLine(answerQuery(a, n, l, r)); 
+} 
+} 
+  
+// This code is contributed by anuj_67..
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to Count elements which 
+// divides all numbers in range L-R 
+  
+// function to count element 
+// Time complexity O(n^2) worst case 
+function answerQuery($a, $n, $l, $r) 
+{ 
+    // answer for query 
+    $count = 0; 
+  
+    // 0 based index 
+    $l = $l - 1; 
+  
+    // iterate for all elements 
+    for ($i = $l; $i < $r; $i++)  
+    { 
+        $element = $a[$i]; 
+        $divisors = 0; 
+  
+        // check if the element divides 
+        // all numbers in range 
+        for ($j = $l; $j < $r; $j++)  
+        { 
+            // no of elements 
+            if ($a[$j] % $a[$i] == 0) 
+                $divisors++; 
+            else
+                break; 
+        } 
+          
+        // if all elements are divisible by a[i] 
+        if ($divisors == ($r - $l)) 
+            $count++; 
+    } 
+  
+    // answer for every query 
+    return $count; 
+} 
+  
+// Driver Code 
+$a = array(1, 2, 3, 5); 
+$n = sizeof($a); 
+  
+$l = 1; $r = 4; 
+echo answerQuery($a, $n, $l, $r) . "\n"; 
+  
+$l = 2; $r = 4;  
+echo answerQuery($a, $n, $l, $r) . "\n"; 
+  
+// This code is contributed 
+// by Akanksha Rai
+```
+
+输出：
+
+```
+0
+2
+```
+
+时间复杂度：由于树的构造需要`O(n)`且找出 gcd 的需要花费`O(log n)`，所以树的构造的时间复杂度为`O(n log n)`。 在最坏的情况下，每个查询所花费的时间为`O(log n * log n)`，因为内置函数`__gcd`需要`O(log n)`。

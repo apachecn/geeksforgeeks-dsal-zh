@@ -92,3 +92,222 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to get updated array after
+// many array range add operation
+import java.io.*;
+ 
+class GFG {
+    // Utility method to add value val,
+    // to range [lo, hi]
+    static void add(int arr[], int N, int lo, int hi,
+                    int val)
+    {
+        arr[lo] += val;
+        if (hi != N - 1)
+            arr[hi + 1] -= val;
+    }
+ 
+    // Utility method to get actual array from
+    // operation array
+    static void updateArray(int arr[], int N)
+    {
+        // convert array into prefix sum array
+        for (int i = 1; i < N; i++)
+            arr[i] += arr[i - 1];
+    }
+ 
+    // method to print final updated array
+    static void printArr(int arr[], int N)
+    {
+        updateArray(arr, N);
+        for (int i = 0; i < N; i++)
+            System.out.print("" + arr[i] + " ");
+        System.out.print("\n");
+    }
+ 
+    // Driver code
+    public static void main(String[] args)
+    {
+        int N = 6;
+ 
+        int arr[] = new int[N];
+ 
+        // Range add Queries
+        add(arr, N, 0, 2, 100);
+        add(arr, N, 1, 5, 100);
+        add(arr, N, 2, 3, 100);
+ 
+        printArr(arr, N);
+    }
+}
+ 
+// This code is contributed by Prakriti Gupta
+```
+
+## Python3
+
+```
+# Python3 program to get updated array
+# after many array range add operation
+ 
+# Utility method to add value
+# val, to range [lo, hi]
+ 
+ 
+def add(arr, N, lo, hi, val):
+ 
+    arr[lo] += val
+    if (hi != N - 1):
+        arr[hi + 1] -= val
+ 
+# Utility method to get actual
+# array from operation array
+ 
+ 
+def updateArray(arr, N):
+ 
+    # convert array into prefix sum array
+    for i in range(1, N):
+        arr[i] += arr[i - 1]
+ 
+# method to print final updated array
+ 
+ 
+def printArr(arr, N):
+ 
+    updateArray(arr, N)
+    for i in range(N):
+        print(arr[i], end=" ")
+    print()
+ 
+ 
+# Driver code
+N = 6
+arr = [0 for i in range(N)]
+ 
+# Range add Queries
+add(arr, N, 0, 2, 100)
+add(arr, N, 1, 5, 100)
+add(arr, N, 2, 3, 100)
+ 
+printArr(arr, N)
+ 
+# This code is contributed by Anant Agarwal.
+```
+
+## C#
+
+```
+// C# program to get updated array after
+// many array range add operation
+using System;
+ 
+class GFG {
+ 
+    // Utility method to add value val,
+    // to range [lo, hi]
+    static void add(int[] arr, int N, int lo, int hi,
+                    int val)
+    {
+        arr[lo] += val;
+        if (hi != N - 1)
+            arr[hi + 1] -= val;
+    }
+ 
+    // Utility method to get actual
+    // array from operation array
+    static void updateArray(int[] arr, int N)
+    {
+        // convert array into
+        // prefix sum array
+        for (int i = 1; i < N; i++)
+            arr[i] += arr[i - 1];
+    }
+ 
+    // method to print final updated array
+    static void printArr(int[] arr, int N)
+    {
+        updateArray(arr, N);
+        for (int i = 0; i < N; i++)
+            Console.Write("" + arr[i] + " ");
+        Console.Write("\n");
+    }
+ 
+    // Driver code
+    public static void Main()
+    {
+        int N = 6;
+ 
+        int[] arr = new int[N];
+ 
+        // Range add Queries
+        add(arr, N, 0, 2, 100);
+        add(arr, N, 1, 5, 100);
+        add(arr, N, 2, 3, 100);
+ 
+        printArr(arr, N);
+    }
+}
+ 
+// This code is contributed by Nitin Mittal.
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to get updated array after 
+// many array range add operation
+ 
+// Utility method to add value val, 
+// to range [lo, hi]
+function add(&$arr, $N, $lo, $hi, $val)
+{
+    $arr[$lo] += $val;
+    if ($hi != $N - 1)
+    $arr[$hi + 1] -= $val;
+}
+ 
+// Utility method to get actual array
+// from operation array
+function updateArray(&$arr, $N)
+{
+    // convert array into prefix sum array
+    for ($i = 1; $i < $N; $i++)
+        $arr[$i] += $arr[$i - 1];
+}
+ 
+// method to print final updated array
+function printArr(&$arr, $N)
+{
+    updateArray($arr, $N);
+    for ($i = 0; $i < $N; $i++)
+        echo $arr[$i] . " ";
+    echo "\n";
+}
+ 
+// Driver Code
+$N = 6;
+$arr = array_fill(0, $N, NULL);
+ 
+// Range add Queries
+add($arr, $N, 0, 2, 100);
+add($arr, $N, 1, 5, 100);
+add($arr, $N, 2, 3, 100);
+ 
+printArr($arr, $N);
+ 
+// This code is contributed by ita_c
+?>
+```
+
+输出：
+
+```
+100 200 300 200 100 100 
+```
+
