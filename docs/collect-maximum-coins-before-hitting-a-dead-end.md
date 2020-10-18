@@ -127,3 +127,162 @@ int main()
 } 
 
 ```
+
+## Python3
+
+```
+# A Naive Recursive Python 3 program to  
+# find maximum number of coins  
+# that can be collected before hitting a dead end  
+R= 5
+C= 5
+  
+# to check whether current cell is out of the grid or not  
+def isValid( i, j):  
+  
+    return (i >=0 and i < R and j >=0 and j < C)  
+  
+  
+# dir = 0 for left, dir = 1 for facing right.  
+# This function returns  
+# number of maximum coins that can be collected 
+# starting from (i, j).  
+def maxCoinsRec(arr, i, j, dir):  
+  
+    # If this is a invalid cell or if cell is a blocking cell  
+    if (isValid(i,j) == False or arr[i][j] == '#'):  
+        return 0
+  
+    # Check if this cell contains the coin 'C' or if its empty 'E'.  
+    if (arr[i][j] == 'C'): 
+        result=1
+    else: 
+        result=0
+  
+    # Get the maximum of two cases when you are facing right in this cell  
+    if (dir == 1): 
+          
+     # Direction is right  
+        return (result + max(maxCoinsRec(arr, i+1, j, 0), 
+               maxCoinsRec(arr, i, j+1, 1)))  
+  
+    # Direction is left  
+    # Get the maximum of two cases when you are facing left in this cell  
+    return (result + max(maxCoinsRec(arr, i+1, j, 1), 
+           maxCoinsRec(arr, i, j-1, 0)))  
+  
+  
+# Driver program to test above function  
+if __name__=='__main__': 
+    arr = [ ['E', 'C', 'C', 'C', 'C'], 
+          ['C', '#', 'C', '#', 'E'], 
+          ['#', 'C', 'C', '#', 'C'], 
+          ['C', 'E', 'E', 'C', 'E'], 
+          ['C', 'E', '#', 'C', 'E'] ]  
+  
+    # As per the question initial cell is (0, 0) and direction is  
+    # right  
+    print("Maximum number of collected coins is ", maxCoinsRec(arr, 0, 0, 1))  
+  
+# this code is contributed by ash264
+```
+
+输出：
+
+```
+Maximum number of collected coins is 8
+```
+
+上述解决方案递归的时间复杂度是指数的。 我们可以使用动态规划在多项式时间内解决此问题。 这个想法是使用 3 维表`dp[R][C][k]`，其中`R`是行数，`C`是列数，`d`是方向。 下面是基于动态编程的 C++ 实现。
+
+## C++
+
+```cpp
+// A Dynamic Programming based C++ program to find maximum 
+// number of coins that can be collected before hitting a 
+// dead end 
+#include<bits/stdc++.h> 
+using namespace std; 
+#define R 5 
+#define C 5 
+  
+// to check whether current cell is out of the grid or not 
+bool isValid(int i, int j) 
+{ 
+    return (i >=0 && i < R && j >=0 && j < C); 
+} 
+  
+// dir = 0 for left, dir = 1 for right.  This function returns 
+// number of maximum coins that can be collected starting from 
+// (i, j). 
+int maxCoinsUtil(char arr[R][C],  int i, int j, int dir, 
+                 int dp[R][C][2]) 
+{ 
+    // If this is a invalid cell or if cell is a blocking cell 
+    if (isValid(i,j) == false || arr[i][j] == '#') 
+        return 0; 
+  
+    // If this subproblem is already solved than return the 
+    // already evaluated answer. 
+    if (dp[i][j][dir] != -1) 
+       return dp[i][j][dir]; 
+  
+    // Check if this cell contains the coin 'C' or if its 'E'. 
+    dp[i][j][dir] = (arr[i][j] == 'C')? 1: 0; 
+  
+    // Get the maximum of two cases when you are facing right 
+    // in this cell 
+    if (dir == 1) // Direction is right 
+       dp[i][j][dir] += max(maxCoinsUtil(arr, i+1, j, 0, dp), // Down 
+                            maxCoinsUtil(arr, i, j+1, 1, dp)); // Ahead in rught 
+  
+    // Get the maximum of two cases when you are facing left 
+    // in this cell 
+    if (dir == 0) // Direction is left 
+       dp[i][j][dir] += max(maxCoinsUtil(arr, i+1, j, 1, dp),  // Down 
+                            maxCoinsUtil(arr, i, j-1, 0, dp)); // Ahead in left 
+  
+    // return the answer 
+    return dp[i][j][dir]; 
+} 
+  
+// This function mainly creates a lookup table and calls 
+// maxCoinsUtil() 
+int maxCoins(char arr[R][C]) 
+{ 
+    // Create lookup table and initialize all values as -1 
+    int dp[R][C][2]; 
+    memset(dp, -1, sizeof dp); 
+  
+    // As per the question initial cell is (0, 0) and direction 
+    // is right 
+    return maxCoinsUtil(arr, 0, 0, 1, dp); 
+} 
+  
+// Driver program to test above function 
+int main() 
+{ 
+    char arr[R][C] = { {'E', 'C', 'C', 'C', 'C'}, 
+                       {'C', '#', 'C', '#', 'E'}, 
+                       {'#', 'C', 'C', '#', 'C'}, 
+                       {'C', 'E', 'E', 'C', 'E'}, 
+                       {'C', 'E', '#', 'C', 'E'} 
+                     }; 
+  
+  
+    cout << "Maximum number of collected coins is "
+         << maxCoins(arr); 
+  
+    return 0; 
+} 
+```
+
+输出：
+
+```
+Maximum number of collected coins is 8
+```
+
+上述解决方案的时间复杂度为`O(R x C x d)`。 由于`d`为 2，因此时间复杂度可以写为`O(R x C)`。
+
+感谢 Gaurav Ahirwar 提出上述解决方案。
