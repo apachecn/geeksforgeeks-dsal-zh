@@ -76,3 +76,141 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java for printing smallest n number in order 
+import java.util.*; 
+  
+class GFG  
+{ 
+  
+  
+// Function to print smallest n numbers 
+static void printSmall(int arr[], int asize, int n) 
+{ 
+    // Make copy of array 
+    int []copy_arr = Arrays.copyOf(arr,asize); 
+  
+    // Sort copy array 
+    Arrays.sort(copy_arr); 
+  
+    // For each arr[i] find whether 
+    // it is a part of n-smallest 
+    // with binary search 
+    for (int i = 0; i < asize; ++i) 
+    { 
+        if (Arrays.binarySearch(copy_arr,0,n, arr[i])>-1) 
+            System.out.print(arr[i] + " "); 
+    } 
+} 
+  
+// Driver code 
+public static void main(String[] args)  
+{ 
+    int arr[] = { 1, 5, 8, 9, 6, 7, 3, 4, 2, 0 }; 
+    int asize = arr.length;  
+    int n = 5; 
+    printSmall(arr, asize, n); 
+} 
+} 
+  
+// This code is contributed by Princi Singh
+```
+
+## Python3
+
+```
+# Python3 for printing smallest n number in order 
+  
+# Function for binary_search 
+def binary_search(arr, low, high, ele): 
+    while low < high: 
+        mid = (low + high) // 2
+        if arr[mid] == ele: 
+            return mid 
+        elif arr[mid] > ele: 
+            high = mid 
+        else: 
+            low = mid + 1
+    return -1
+  
+# Function to print smallest n numbers 
+def printSmall(arr, asize, n): 
+  
+    # Make copy of array 
+    copy_arr = arr.copy() 
+  
+    # Sort copy array 
+    copy_arr.sort() 
+  
+    # For each arr[i] find whether 
+    # it is a part of n-smallest 
+    # with binary search 
+    for i in range(asize): 
+        if binary_search(copy_arr, low = 0,  
+                         high = n, ele = arr[i]) > -1: 
+            print(arr[i], end = " ") 
+  
+# Driver Code 
+if __name__ == "__main__": 
+    arr = [1, 5, 8, 9, 6, 7, 3, 4, 2, 0] 
+    asize = len(arr) 
+    n = 5
+    printSmall(arr, asize, n) 
+  
+# This code is conributed by 
+# sanjeev2552
+```
+
+## C#
+
+```
+// C# for printing smallest n number in order 
+using System;      
+  
+class GFG  
+{ 
+  
+  
+// Function to print smallest n numbers 
+static void printSmall(int []arr, int asize, int n) 
+{ 
+    // Make copy of array 
+    int []copy_arr = new int[asize]; 
+    Array.Copy(arr, copy_arr, asize); 
+  
+    // Sort copy array 
+    Array.Sort(copy_arr); 
+  
+    // For each arr[i] find whether 
+    // it is a part of n-smallest 
+    // with binary search 
+    for (int i = 0; i < asize; ++i) 
+    { 
+        if (Array.BinarySearch(copy_arr, 0, n, arr[i])>-1) 
+            Console.Write(arr[i] + " "); 
+    } 
+} 
+  
+// Driver code 
+public static void Main(String[] args)  
+{ 
+    int []arr = { 1, 5, 8, 9, 6, 7, 3, 4, 2, 0 }; 
+    int asize = arr.Length;  
+    int n = 5; 
+    printSmall(arr, asize, n); 
+} 
+} 
+  
+// This code has been contributed by 29AjayKumar
+```
+
+输出：
+
+```
+1 3 4 2 0 
+```
+
+为了复制数组，我们需要`O(n)`的空间复杂度，然后为了排序，我们需要`O(n log n)`的复杂度。 进一步，对于`arr[]`中的每个元素，我们都在`copy_arr[]`中执行搜索，这将导致`O(n)`进行线性搜索，但是我们可以通过应用二进制搜索对其进行改进，因此我们的整体时间复杂度将为`O(n log n)`。

@@ -388,3 +388,207 @@ int main()
 // This code is contributed by Smitha 
 
 ```
+
+## Java
+
+```
+// Java program to find number of pairs  
+// in an array such that their XOR is 0  
+import java.util.*; 
+  
+class GFG  
+{ 
+  
+    // Function to calculate the answer  
+    static int calculate(int a[], int n)  
+    { 
+  
+        // Finding the maximum of the array  
+        int maximum = Arrays.stream(a).max().getAsInt(); 
+  
+        // Creating frequency array  
+        // With initial value 0  
+        int frequency[] = new int[maximum + 1]; 
+  
+        // Traversing through the array  
+        for (int i = 0; i < n; i++)  
+        { 
+              
+            // Counting frequency  
+            frequency[a[i]] += 1; 
+        } 
+        int answer = 0; 
+  
+        // Traversing through the frequency array  
+        for (int i = 0; i < (maximum) + 1; i++)  
+        { 
+              
+            // Calculating answer  
+            answer = answer + frequency[i] * (frequency[i] - 1); 
+        } 
+        return answer / 2; 
+    } 
+  
+    // Driver Code  
+    public static void main(String[] args)  
+    { 
+        int a[] = {1, 2, 1, 2, 4}; 
+        int n = a.length; 
+  
+        // Function calling  
+        System.out.println(calculate(a, n)); 
+    } 
+} 
+  
+// This code is contributed by 29AjayKumar
+```
+
+## Python 3
+
+```
+# Python3 program to find number of pairs 
+# in an array such that their XOR is 0 
+  
+# Function to calculate the answer 
+def calculate(a) : 
+      
+    # Finding the maximum of the array 
+    maximum = max(a) 
+      
+    # Creating frequency array 
+    # With initial value 0 
+    frequency = [0 for x in range(maximum + 1)] 
+      
+    # Traversing through the array  
+    for i in a : 
+           
+        # Counting frequency 
+        frequency[i] += 1
+      
+    answer = 0
+      
+    # Traversing through the frequency array 
+    for i in frequency : 
+          
+        # Calculating answer 
+        answer = answer + i * (i - 1) // 2
+      
+    return answer 
+  
+# Driver Code 
+a = [1, 2, 1, 2, 4] 
+print(calculate(a))
+```
+
+## C#
+
+```
+// C# program to find number of pairs  
+// in an array such that their XOR is 0  
+using System; 
+using System.Linq; 
+class GFG  
+{ 
+  
+    // Function to calculate the answer  
+    static int calculate(int []a, int n)  
+    { 
+  
+        // Finding the maximum of the array  
+        int maximum = a.Max(); 
+  
+        // Creating frequency array  
+        // With initial value 0  
+        int []frequency = new int[maximum + 1]; 
+  
+        // Traversing through the array  
+        for (int i = 0; i < n; i++)  
+        { 
+              
+            // Counting frequency  
+            frequency[a[i]] += 1; 
+        } 
+        int answer = 0; 
+  
+        // Traversing through the frequency array  
+        for (int i = 0; i < (maximum) + 1; i++)  
+        { 
+              
+            // Calculating answer  
+            answer = answer + frequency[i] *  
+                             (frequency[i] - 1); 
+        } 
+        return answer / 2; 
+    } 
+  
+    // Driver Code  
+    public static void Main(String[] args)  
+    { 
+        int []a = {1, 2, 1, 2, 4}; 
+        int n = a.Length; 
+  
+        // Function calling  
+        Console.WriteLine(calculate(a, n)); 
+    } 
+} 
+  
+// This code is contributed by PrinciRaj1992
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find number  
+// of pairs in an array such  
+// that their XOR is 0 
+  
+// Function to calculate the answer 
+function calculate($a, $n) 
+{ 
+      
+    // Finding the maximum of the array 
+    $maximum = max($a); 
+      
+    // Creating frequency array 
+    // With initial value 0 
+    $frequency = array_fill(0, $maximum + 1, 0); 
+      
+    // Traversing through the array  
+    for($i = 0; $i < $n; $i++) 
+    {  
+        // Counting frequency 
+        $frequency[$a[$i]] += 1; 
+    } 
+    $answer = 0; 
+      
+    // Traversing through  
+    // the frequency array 
+    for($i = 0; $i < ($maximum) + 1; $i++) 
+    {  
+        // Calculating answer 
+        $answer = $answer + $frequency[$i] * 
+                        ($frequency[$i] - 1); 
+    } 
+    return $answer / 2; 
+} 
+  
+// Driver Code 
+$a = array(1, 2, 1, 2, 4); 
+$n = count($a); 
+// Function calling 
+echo (calculate($a,$n)); 
+  
+// This code is contributed by Smitha 
+?>
+```
+
+输出：
+
+```
+2
+```
+
+时间复杂度：`O(N)`。
+
+注意：仅当数组中的数字不大时才可以使用索引映射方法。 在这种情况下，可以使用分类方法。
