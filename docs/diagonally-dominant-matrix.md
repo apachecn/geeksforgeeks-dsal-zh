@@ -93,3 +93,219 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// JAVA Program to check whether given matrix 
+// is Diagonally Dominant Matrix. 
+import java.util.*; 
+  
+class GFG { 
+      
+    // check the given given matrix is Diagonally 
+    // Dominant Matrix or not. 
+    static boolean isDDM(int m[][], int n) 
+    { 
+        // for each row 
+        for (int i = 0; i < n; i++) 
+        {         
+       
+            // for each column, finding  
+            //sum of each row. 
+            int sum = 0; 
+            for (int j = 0; j < n; j++)              
+                sum += Math.abs(m[i][j]);         
+       
+            // removing the diagonal element. 
+            sum -= Math.abs(m[i][i]); 
+       
+            // checking if diagonal element is less  
+            // than sum of non-diagonal element. 
+            if (Math.abs(m[i][i]) < sum)  
+                return false;  
+         
+        } 
+  
+        return true; 
+    } 
+  
+    /* Driver program to test above function */
+    public static void main(String[] args)  
+    { 
+        int n = 3; 
+        int m[][] = { { 3, -2, 1 }, 
+                      { 1, -3, 2 }, 
+                      { -1, 2, 4 } }; 
+       
+        if (isDDM(m, n)) 
+             System.out.println("YES") ; 
+        else  
+            System.out.println("NO"); 
+      
+    } 
+} 
+  
+// This code is contributed by  Arnav Kr. Mandal.
+```
+
+## Python3
+
+```
+# Python Program to check 
+# whether given matrix is  
+# Diagonally Dominant Matrix. 
+  
+# check the given given  
+# matrix is Diagonally  
+# Dominant Matrix or not. 
+def isDDM(m, n) : 
+  
+    # for each row 
+    for i in range(0, n) :          
+      
+        # for each column, finding 
+        # sum of each row. 
+        sum = 0
+        for j in range(0, n) : 
+            sum = sum + abs(m[i][j])      
+  
+        # removing the  
+        # diagonal element. 
+        sum = sum - abs(m[i][i]) 
+  
+        # checking if diagonal  
+        # element is less than  
+        # sum of non-diagonal 
+        # element. 
+        if (abs(m[i][i]) < sum) : 
+            return False
+  
+    return True
+  
+# Driver Code 
+n = 3
+m = [[ 3, -2, 1 ], 
+    [ 1, -3, 2 ], 
+    [ -1, 2, 4 ]] 
+  
+if((isDDM(m, n))) : 
+    print ("YES") 
+else : 
+    print ("NO") 
+  
+# This code is contributed by  
+# Manish Shaw(manishshaw1)
+```
+
+## C#
+
+```
+// C# Program to check whether given matrix 
+// is Diagonally Dominant Matrix. 
+using System; 
+  
+class GFG { 
+      
+    // check the given given matrix is Diagonally 
+    // Dominant Matrix or not. 
+    static bool isDDM(int [,]m, int n) 
+    { 
+        // for each row 
+        for (int i = 0; i < n; i++) 
+        {  
+      
+            // for each column, finding  
+            //sum of each row. 
+            int sum = 0; 
+            for (int j = 0; j < n; j++)          
+                sum += Math.Abs(m[i, j]);      
+      
+            // removing the diagonal element. 
+            sum -= Math.Abs(m[i, i]); 
+      
+            // checking if diagonal element is less  
+            // than sum of non-diagonal element. 
+            if (Math.Abs(m[i,i]) < sum)  
+                return false;  
+          
+        } 
+  
+        return true; 
+    } 
+  
+    // Driver program  
+    public static void Main()  
+    { 
+        int n = 3; 
+        int [,]m = { { 3, -2, 1 }, 
+                    { 1, -3, 2 }, 
+                    { -1, 2, 4 } }; 
+      
+        if (isDDM(m, n)) 
+            Console.WriteLine("YES") ; 
+        else
+            Console.WriteLine("NO"); 
+      
+    } 
+} 
+  
+// This code is contributed by Vt_m.
+```
+
+## PHP
+
+```
+<?php 
+// PHP Program to check whether  
+// given matrix is Diagonally 
+// Dominant Matrix. 
+  
+// check the given given matrix  
+// is Diagonally Dominant Matrix or not. 
+function isDDM( $m, $n) 
+{ 
+    // for each row 
+    for ($i = 0; $i < $n; $i++) 
+          
+    { 
+        // for each column, finding 
+        // sum of each row. 
+        $sum = 0; 
+        for ( $j = 0; $j < $n; $j++)              
+            $sum += abs($m[$i][$j]);      
+  
+        // removing the diagonal element. 
+        $sum -= abs($m[$i][$i]); 
+  
+        // checking if diagonal element  
+        // is less than sum of non-diagonal 
+        // element. 
+        if (abs($m[$i][$i]) < $sum)  
+            return false;  
+    } 
+  
+    return true; 
+} 
+  
+// Driver Code 
+$n = 3; 
+$m = array(array( 3, -2, 1 ), 
+           array( 1, -3, 2 ), 
+           array( -1, 2, 4 )); 
+  
+if((isDDM($m, $n)))  
+echo "YES";  
+else
+echo"NO"; 
+  
+// This code is contributed by SanjuTomar 
+?>
+```
+
+输出：
+
+```
+YES
+```
+
