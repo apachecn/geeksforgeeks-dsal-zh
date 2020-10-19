@@ -350,3 +350,170 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+//Java program to find the most frequent element 
+//in an array 
+import java.util.HashMap; 
+import java.util.Map; 
+import java.util.Map.Entry; 
+  
+class GFG { 
+      
+    static int mostFrequent(int arr[], int n) 
+    { 
+          
+        // Insert all elements in hash 
+        Map<Integer, Integer> hp = 
+               new HashMap<Integer, Integer>(); 
+          
+        for(int i = 0; i < n; i++) 
+        { 
+            int key = arr[i]; 
+            if(hp.containsKey(key)) 
+            { 
+                int freq = hp.get(key); 
+                freq++; 
+                hp.put(key, freq); 
+            } 
+            else
+            { 
+                hp.put(key, 1); 
+            } 
+        } 
+          
+        // find max frequency. 
+        int max_count = 0, res = -1; 
+          
+        for(Entry<Integer, Integer> val : hp.entrySet()) 
+        { 
+            if (max_count < val.getValue()) 
+            { 
+                res = val.getKey(); 
+                max_count = val.getValue(); 
+            } 
+        } 
+          
+        return res; 
+    } 
+      
+    // Driver code 
+    public static void main (String[] args) { 
+          
+        int arr[] = {1, 5, 2, 1, 3, 2, 1}; 
+        int n = arr.length; 
+          
+        System.out.println(mostFrequent(arr, n)); 
+    } 
+} 
+  
+// This code is contributed by Akash Singh.
+```
+
+## Python3
+
+```
+# Python3 program to find the most  
+# frequent element in an array. 
+import math as mt 
+  
+def mostFrequent(arr, n): 
+  
+    # Insert all elements in Hash. 
+    Hash = dict() 
+    for i in range(n): 
+        if arr[i] in Hash.keys(): 
+            Hash[arr[i]] += 1
+        else: 
+            Hash[arr[i]] = 1
+  
+    # find the max frequency 
+    max_count = 0
+    res = -1
+    for i in Hash:  
+        if (max_count < Hash[i]):  
+            res = i 
+            max_count = Hash[i] 
+          
+    return res 
+  
+# Driver Code 
+arr = [ 1, 5, 2, 1, 3, 2, 1]  
+n = len(arr) 
+print(mostFrequent(arr, n)) 
+  
+# This code is contributed  
+# by Mohit kumar 29
+```
+
+## C#
+
+```
+// C# program to find the most  
+// frequent element in an array 
+using System; 
+using System.Collections.Generic; 
+  
+class GFG 
+{ 
+    static int mostFrequent(int []arr,  
+                            int n) 
+    { 
+        // Insert all elements in hash 
+        Dictionary<int, int> hp =  
+                    new Dictionary<int, int>(); 
+          
+        for (int i = 0; i < n; i++) 
+        { 
+            int key = arr[i]; 
+            if(hp.ContainsKey(key)) 
+            { 
+                int freq = hp[key]; 
+                freq++; 
+                hp[key] = freq; 
+            } 
+            else
+                hp.Add(key, 1); 
+        } 
+          
+        // find max frequency. 
+        int min_count = 0, res = -1; 
+          
+        foreach (KeyValuePair<int,  
+                    int> pair in hp) 
+        { 
+            if (min_count < pair.Value) 
+            { 
+                res = pair.Key; 
+                min_count = pair.Value; 
+            } 
+        }  
+        return res; 
+    } 
+      
+    // Driver code 
+    static void Main () 
+    { 
+        int []arr = new int[]{1, 5, 2,  
+                              1, 3, 2, 1}; 
+        int n = arr.Length; 
+          
+        Console.Write(mostFrequent(arr, n)); 
+    } 
+} 
+  
+// This code is contributed by 
+// Manish Shaw(manishshaw1)
+```
+
+输出：
+
+```
+1
+```
+
+时间复杂度：`O(n)`。
+
+辅助空间：`O(n)`。
