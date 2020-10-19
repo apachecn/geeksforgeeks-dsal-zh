@@ -203,3 +203,322 @@ int main()
 }  
 
 ```
+
+## Java
+
+```
+// Java program to print Magic square 
+// of Doubly even order 
+import java.io.*; 
+  
+class GFG  
+{ 
+    // Function for calculating Magic square 
+    static void doublyEven(int n) 
+    { 
+        int[][] arr = new int[n][n]; 
+        int i, j; 
+   
+        // filling matrix with its count value  
+        // starting from 1; 
+        for ( i = 0; i < n; i++) 
+            for ( j = 0; j < n; j++) 
+                arr[i][j] = (n*i) + j + 1; 
+        
+        // change value of Array elements 
+        // at fix location as per rule  
+        // (n*n+1)-arr[i][j] 
+        // Top Left corner of Matrix  
+        // (order (n/4)*(n/4)) 
+        for ( i = 0; i < n/4; i++) 
+            for ( j = 0; j < n/4; j++) 
+                arr[i][j] = (n*n + 1) - arr[i][j]; 
+      
+        // Top Right corner of Matrix  
+        // (order (n/4)*(n/4)) 
+        for ( i = 0; i < n/4; i++) 
+            for ( j = 3 * (n/4); j < n; j++) 
+                arr[i][j] = (n*n + 1) - arr[i][j]; 
+       
+        // Bottom Left corner of Matrix 
+        // (order (n/4)*(n/4)) 
+        for ( i = 3 * n/4; i < n; i++) 
+            for ( j = 0; j < n/4; j++) 
+                arr[i][j] = (n*n+1) - arr[i][j]; 
+      
+        // Bottom Right corner of Matrix  
+        // (order (n/4)*(n/4)) 
+        for ( i = 3 * n/4; i < n; i++) 
+            for ( j = 3 * n/4; j < n; j++) 
+                arr[i][j] = (n*n + 1) - arr[i][j]; 
+     
+        // Centre of Matrix (order (n/2)*(n/2)) 
+        for ( i = n/4; i < 3 * n/4; i++) 
+            for ( j = n/4; j < 3 * n/4; j++) 
+                arr[i][j] = (n*n + 1) - arr[i][j]; 
+   
+        // Printing the magic-square 
+        for (i = 0; i < n; i++) 
+        { 
+            for ( j = 0; j < n; j++) 
+                System.out.print(arr[i][j]+" "); 
+            System.out.println(); 
+        } 
+    } 
+      
+    // driver program 
+    public static void main (String[] args)  
+    { 
+        int n = 8; 
+        // Function call 
+        doublyEven(n); 
+    } 
+} 
+  
+// Contributed by Pramod Kumar
+```
+
+## Python
+
+```
+# Python program to print magic square of double order 
+  
+def DoublyEven(n): 
+      
+    # 2-D matrix with all entries as 0 
+    arr = [[(n*y)+x+1 for x in range(n)]for y in range(n)] 
+  
+    # Change value of array elements at fix location  
+    # as per the rule (n*n+1)-arr[i][[j] 
+      
+    # Corners of order (n/4)*(n/4) 
+    # Top left corner 
+    for i in range(0,n/4): 
+        for j in range(0,n/4): 
+            arr[i][j] = (n*n + 1) - arr[i][j]; 
+      
+    # Top right corner 
+    for i in range(0,n/4): 
+        for j in range(3 * (n/4),n): 
+            arr[i][j] = (n*n + 1) - arr[i][j]; 
+  
+    # Bottom Left corner 
+    for i in range(3 * (n/4),n): 
+        for j in range(0,n/4): 
+            arr[i][j] = (n*n + 1) - arr[i][j]; 
+      
+    # Bottom Right corner 
+    for i in range(3 * (n/4),n): 
+        for j in range(3 * (n/4),n): 
+            arr[i][j] = (n*n + 1) - arr[i][j]; 
+              
+    # Centre of matrix,order (n/2)*(n/2) 
+    for i in range(n/4,3 * (n/4)): 
+        for j in range(n/4,3 * (n/4)): 
+            arr[i][j] = (n*n + 1) - arr[i][j]; 
+      
+    # Printing the square 
+    for i in range(n): 
+        for j in range(n): 
+            print '%2d ' %(arr[i][j]), 
+        print
+          
+# Driver Program 
+n = 8
+DoublyEven(n) 
+  
+# Contributed by Harshit Agrawal
+```
+
+## C#
+
+```
+// C# program to print Magic square  
+// of Doubly even order  
+using System; 
+  
+class GFG 
+{ 
+// Function for calculating Magic square  
+public static void doublyEven(int n) 
+{ 
+  
+    int[,] arr = new int[n,n]; 
+    int i, j; 
+  
+    // filling matrix with its count  
+    // value starting from 1;  
+    for (i = 0; i < n; i++) 
+    { 
+        for (j = 0; j < n; j++) 
+        { 
+            arr[i, j] = (n * i) + j + 1; 
+        } 
+    } 
+  
+    // change value of Array elements  
+    // at fix location as per rule  
+    // (n*n+1)-arr[i][j]  
+    // Top Left corner of Matrix  
+    // (order (n/4)*(n/4))  
+    for (i = 0; i < n / 4; i++) 
+    { 
+        for (j = 0; j < n / 4; j++) 
+        { 
+            arr[i, j] = (n * n + 1) - arr[i, j]; 
+        } 
+    } 
+  
+    // Top Right corner of Matrix  
+    // (order (n/4)*(n/4))  
+    for (i = 0; i < n / 4; i++) 
+    { 
+        for (j = 3 * (n / 4); j < n; j++) 
+        { 
+            arr[i, j] = (n * n + 1) - arr[i, j]; 
+        } 
+    } 
+  
+    // Bottom Left corner of Matrix  
+    // (order (n/4)*(n/4))  
+    for (i = 3 * n / 4; i < n; i++) 
+    { 
+        for (j = 0; j < n / 4; j++) 
+        { 
+            arr[i, j] = (n * n + 1) - arr[i, j]; 
+        } 
+    } 
+  
+    // Bottom Right corner of Matrix  
+    // (order (n/4)*(n/4))  
+    for (i = 3 * n / 4; i < n; i++) 
+    { 
+        for (j = 3 * n / 4; j < n; j++) 
+        { 
+            arr[i, j] = (n * n + 1) - arr[i, j]; 
+        } 
+    } 
+  
+    // Centre of Matrix (order (n/2)*(n/2))  
+    for (i = n / 4; i < 3 * n / 4; i++) 
+    { 
+        for (j = n / 4; j < 3 * n / 4; j++) 
+        { 
+            arr[i, j] = (n * n + 1) - arr[i, j]; 
+        } 
+    } 
+  
+    // Printing the magic-square  
+    for (i = 0; i < n; i++) 
+    { 
+        for (j = 0; j < n; j++) 
+        { 
+            Console.Write(arr[i, j] + " " + " "); 
+        } 
+        Console.WriteLine(); 
+    } 
+} 
+  
+// Driver Code  
+public static void Main(string[] args) 
+{ 
+    int n = 8; 
+      
+    // Function call  
+    doublyEven(n); 
+} 
+} 
+  
+// This code is contributed by Shrikant13
+```
+
+## PHP
+
+```
+<?php 
+// PHP Program to print Magic square 
+// of Doubly even order 
+  
+// Function for calculating Magic square  
+function doublyEven($n) 
+{  
+    $arr = array_fill(0, $n, 
+           array_fill(0, $n, 0)); 
+  
+    // filling matrix with its count  
+    // value starting from 1; 
+    for ( $i = 0; $i < $n; $i++) 
+        for ( $j = 0; $j < $n; $j++) 
+            $arr[$i][$j] = ($n * $i) + $j + 1; 
+      
+    // change value of Array elements at fix  
+    // location as per rule (n*n+1)-arr[i][j] 
+    // Top Left corner of Matrix  
+    // (order (n/4)*(n/4)) 
+    for ($i = 0; $i < $n / 4; $i++) 
+        for ($j = 0; $j < $n / 4; $j++) 
+            $arr[$i][$j] = ($n * $n + 1) -  
+                            $arr[$i][$j]; 
+      
+    // Top Right corner of Matrix  
+    // (order (n/4)*(n/4)) 
+    for ($i = 0; $i < $n / 4; $i++) 
+        for ($j = 3 * ($n / 4); $j < $n; $j++) 
+            $arr[$i][$j] = ($n * $n + 1) -  
+                            $arr[$i][$j]; 
+      
+    // Bottom Left corner of Matrix 
+    // (order (n/4)*(n/4)) 
+    for ($i = 3 * $n / 4; $i < $n; $i++) 
+        for ($j = 0; $j < $n / 4; $j++) 
+            $arr[$i][$j] = ($n * $n + 1) -  
+                            $arr[$i][$j]; 
+      
+    // Bottom Right corner of Matrix  
+    // (order (n/4)*(n/4)) 
+    for ($i = 3 * $n / 4; $i < $n; $i++) 
+        for ($j = 3 * $n / 4; $j < $n; $j++) 
+            $arr[$i][$j] = ($n * $n + 1) -  
+                            $arr[$i][$j]; 
+  
+    // Centre of Matrix (order (n/2)*(n/2)) 
+    for ($i = $n / 4; $i < 3 * $n / 4; $i++) 
+        for ($j = $n / 4; $j < 3 * $n / 4; $j++) 
+            $arr[$i][$j] = ($n * $n + 1) -  
+                            $arr[$i][$j]; 
+  
+    // Printing the magic-square 
+    for ($i = 0; $i < $n; $i++) 
+    { 
+        for ($j = 0; $j < $n; $j++) 
+            echo $arr[$i][$j] . " "; 
+        echo "\n"; 
+    } 
+} 
+  
+// Driver Code 
+$n = 8; 
+doublyEven($n); //Function call 
+  
+// This code is contributed by mits  
+?>
+```
+
+输出：
+
+```
+64   63   3    4    5    6    58   57   
+56   55   11   12   13   14   50   49   
+17   18   46   45   44   43   23   24   
+25   26   38   37   36   35   31   32   
+33   34   30   29   28   27   39   40   
+41   42   22   21   20   19   47   48   
+16   15   51   52   53   54   10   9   
+8    7    59   60   61   62   2   1 
+```
+
+时间复杂度：`O(n^2)`。
+
+参考：
+
+<http://www.1728.org/magicsq2.html>

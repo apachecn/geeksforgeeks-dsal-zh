@@ -82,3 +82,185 @@ int main() 
 // This code is contributed by Anant Agarwal. 
 
 ```
+
+## Java
+
+```
+// Java code to check Markov Matrix 
+import java.io.*; 
+  
+public class markov 
+{ 
+    static boolean checkMarkov(double m[][]) 
+    { 
+        // outer loop to access rows 
+        // and inner to access columns 
+        for (int i = 0; i < m.length; i++) { 
+  
+            // Find sum of current row 
+            double sum = 0; 
+            for (int j = 0; j < m[i].length; j++) 
+                sum = sum + m[i][j]; 
+  
+            if (sum != 1) 
+               return false; 
+        } 
+  
+        return true; 
+    } 
+  
+    public static void main(String args[]) 
+    { 
+        // Matrix to check 
+        double m[][] = { { 0, 0, 1 }, 
+                         { 0.5, 0, 0.5 }, 
+                         { 1, 0, 0 } }; 
+  
+        // calls the function check() 
+        if (checkMarkov(m)) 
+            System.out.println(" yes "); 
+        else
+            System.out.println(" no "); 
+    } 
+}
+```
+
+## Python3
+
+```
+# Python 3 code to check Markov Matrix 
+  
+def checkMarkov(m) : 
+      
+    # Outer loop to access rows 
+    # and inner to access columns 
+    for i in range(0, len(m)) : 
+          
+        # Find sum of current row 
+        sm = 0
+        for j in range(0, len(m[i])) : 
+            sm = sm + m[i][j] 
+  
+        if (sm != 1) : 
+            return False
+              
+    return True
+      
+# Matrix to check 
+m = [ [ 0, 0, 1 ], 
+      [ 0.5, 0, 0.5 ], 
+      [ 1, 0, 0 ]      ] 
+  
+# Calls the function check() 
+if (checkMarkov(m)) : 
+    print(" yes ") 
+else : 
+    print(" no ") 
+      
+      
+# This code is contributed by Nikita Tiwari.
+```
+
+## C#
+
+```
+// C# code to check  
+// Markov Matrix 
+using System; 
+  
+class GFG 
+{ 
+static bool checkMarkov(double [,]m) 
+{ 
+    // outer loop to access  
+    // rows and inner to  
+    // access columns 
+    for (int i = 0; 
+             i < m.GetLength(0); i++)  
+    { 
+  
+        // Find sum of  
+        // current row 
+        double sum = 0; 
+        for (int j = 0;  
+                 j < m.GetLength(1); j++) 
+            sum = sum + m[i, j]; 
+  
+        if (sum != 1) 
+        return false; 
+    } 
+  
+    return true; 
+} 
+  
+// Driver Code 
+static void Main() 
+{ 
+    // Matrix to check 
+    double [,]m = new double[,]{{ 0, 0, 1}, 
+                                {0.5, 0, 0.5}, 
+                                {1, 0, 0}}; 
+  
+    // calls the  
+    // function check() 
+    if (checkMarkov(m)) 
+        Console.WriteLine(" yes "); 
+    else
+        Console.WriteLine(" no "); 
+} 
+} 
+  
+// This code is contributed by  
+// Manish Shaw(manishshaw1)
+```
+
+## PHP
+
+```
+<?php 
+// PHP code to check Markov Matrix 
+  
+function checkMarkov($m) 
+{ 
+    $n = 3; 
+      
+    // outer loop to access rows 
+    // and inner to access columns 
+    for ($i = 0; $i <$n; $i++)  
+    { 
+  
+        // Find sum of current row 
+        $sum = 0; 
+        for ($j = 0; $j < $n; $j++) 
+            $sum = $sum + $m[$i][$j]; 
+  
+        if ($sum != 1) 
+        return false; 
+    } 
+  
+    return true; 
+} 
+  
+    // Driver Code 
+    // Matrix to check 
+    $m = array(array(0, 0, 1), 
+               array(0.5, 0, 0.5), 
+               array(1, 0, 0)); 
+  
+  
+    // calls the function check() 
+    if (checkMarkov($m)) 
+        echo " yes "; 
+    else
+        echo " no "; 
+  
+// This code is contributed by nitin mittal. 
+?>
+```
+
+输出：
+
+```
+yes
+```
+
