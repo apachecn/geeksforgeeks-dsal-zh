@@ -126,3 +126,305 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to print the maximum elements 
+// giving second array higher priority 
+import java.util.*; 
+  
+class GFG  
+{ 
+  
+// Function to maximize array elements 
+static void maximizeArray(int[] arr1,int[] arr2) 
+{ 
+    // auxiliary array arr3 to store  
+    // elements of arr1 & arr2 
+    int arr3[] = new int[10];  
+    for(int i = 0; i < arr3.length; i++) 
+    { 
+        //arr2 has high priority 
+        arr3[i] = 0; 
+    } 
+      
+    // Arraylist to store n largest 
+    // unique elements 
+    ArrayList<Integer> al = new ArrayList<Integer>(); 
+      
+    for(int i = 0; i < arr2.length; i++) 
+    { 
+        if(arr3[arr2[i]] == 0)  
+        {  
+            // to avoid repetition of digits of arr2 in arr3 
+            arr3[arr2[i]] = 2; 
+              
+            // simultaneously setting arraylist to  
+            // preserve order of arr2 and arr3 
+            al.add(arr2[i]);  
+        } 
+    } 
+      
+    for(int i = 0; i < arr1.length; i++) 
+    { 
+        if(arr3[arr1[i]] == 0) 
+        { 
+            // if digit is already present in arr2 
+            // then priority is arr2 
+            arr3[arr1[i]] = 1; 
+              
+            // simultaneously setting arraylist to 
+            // preserve order of arr1 
+            al.add(arr1[i]);  
+        } 
+    } 
+  
+    // to get only highest n elements(arr2+arr1) 
+    // and remove others from arraylist 
+    int count = 0; 
+    for(int j = 9; j >= 0; j--) 
+    { 
+        if(count < arr1.length &  
+          (arr3[j] == 2 || arr3[j] == 1)) 
+        { 
+            // to not allow those elements  
+            // which are absent in both arrays 
+            count++; 
+        } 
+        else
+        { 
+            al.remove(Integer.valueOf(j)); 
+        } 
+    } 
+  
+    int i = 0; 
+    for(int x:al) 
+    { 
+        arr1[i++] = x; 
+    } 
+} 
+  
+// Function to print array elements 
+static void printArray(int[] arr) 
+{ 
+    for(int x:arr) 
+    { 
+        System.out.print(x + " "); 
+    } 
+} 
+  
+// Driver Code 
+public static void main(String args[]) 
+{ 
+    int arr1[] = {7, 4, 8, 0, 1}; 
+    int arr2[] = {9, 7, 2, 3, 6}; 
+    maximizeArray(arr1,arr2); 
+    printArray(arr1); 
+} 
+} 
+  
+// This code is contributed by KhwajaBilkhis
+```
+
+## Python3
+
+```
+# Python3 program to print the maximum elements 
+# giving second array higher priority 
+  
+# Function to maximize array elements 
+def maximizeArray(arr1, arr2, n): 
+      
+    # Auxiliary array arr3 to store 
+    # elements of arr1 & arr2 
+    arr3 = [0] * (2 * n) 
+    k = 0
+      
+    for i in range(n): 
+        arr3[k] = arr1[i] 
+        k += 1
+          
+    for i in range(n): 
+        arr3[k] = arr2[i] 
+        k += 1
+  
+    # Hash table to store n largest 
+    # unique elements 
+    hash = {} 
+  
+    # Sorting arr3 in decreasing order 
+    arr3 = sorted(arr3) 
+    arr3 = arr3[::-1] 
+  
+    # Finding n largest unique elements 
+    # from arr3 and storing in hash 
+    i = 0
+    while (len(hash) != n): 
+  
+        # If arr3 element not present in hash, 
+        # then store this element in hash 
+        if (arr3[i] not in hash): 
+            hash[arr3[i]] = 1
+  
+        i += 1
+  
+    # Store that elements of arr2 in arr3 
+    # that are present in hash 
+    k = 0
+    for i in range(n): 
+  
+        # If arr2 element is present in  
+        # hash, store it in arr3 
+        if (arr2[i] in hash): 
+            arr3[k] = arr2[i] 
+            k += 1
+              
+            del hash[arr2[i]] 
+  
+    # Store that elements of arr1 in arr3 
+    # that are present in hash 
+    for i in range(n): 
+  
+        # If arr1 element is present  
+        # in hash, store it in arr3 
+        if (arr1[i] in hash): 
+            arr3[k] = arr1[i] 
+            k += 1
+              
+            del hash[arr1[i]] 
+  
+    # Copying 1st n elements of 
+    # arr3 to arr1 
+    for i in range(n): 
+        arr1[i] = arr3[i] 
+  
+# Function to prarray elements 
+def printArray(arr, n): 
+      
+    for i in arr: 
+        print(i, end = " ") 
+          
+    print() 
+  
+# Driver Code 
+if __name__ == '__main__': 
+      
+    array1 = [ 7, 4, 8, 0, 1 ] 
+    array2 = [ 9, 7, 2, 3, 6 ] 
+    size = len(array1) 
+      
+    maximizeArray(array1, array2, size) 
+    printArray(array1, size) 
+      
+# This code is contributed by mohit kumar 29
+```
+
+## C#
+
+```
+// C# program to print the maximum elements 
+// giving second array higher priority 
+using System; 
+using System.Collections.Generic; 
+  
+class GFG  
+{ 
+  
+// Function to maximize array elements 
+static void maximizeArray(int[] arr1, int[] arr2) 
+{ 
+    // auxiliary array arr3 to store  
+    // elements of arr1 & arr2 
+    int []arr3 = new int[10];  
+    for(int i = 0; i < arr3.Length; i++) 
+    { 
+        //arr2 has high priority 
+        arr3[i] = 0; 
+    } 
+      
+    // Arraylist to store n largest 
+    // unique elements 
+    List<int> al = new List<int>(); 
+      
+    for(int i = 0; i < arr2.Length; i++) 
+    { 
+        if(arr3[arr2[i]] == 0)  
+        {  
+            // to avoid repetition of digits of arr2 in arr3 
+            arr3[arr2[i]] = 2; 
+              
+            // simultaneously setting arraylist to  
+            // preserve order of arr2 and arr3 
+            al.Add(arr2[i]);  
+        } 
+    } 
+      
+    for(int i = 0; i < arr1.Length; i++) 
+    { 
+        if(arr3[arr1[i]] == 0) 
+        { 
+            // if digit is already present in arr2 
+            // then priority is arr2 
+            arr3[arr1[i]] = 1; 
+              
+            // simultaneously setting arraylist to 
+            // preserve order of arr1 
+            al.Add(arr1[i]);  
+        } 
+    } 
+  
+    // to get only highest n elements(arr2+arr1) 
+    // and remove others from arraylist 
+    int count = 0; 
+    for(int j = 9; j >= 0; j--) 
+    { 
+        if(count < arr1.Length &  
+        (arr3[j] == 2 || arr3[j] == 1)) 
+        { 
+            // to not allow those elements  
+            // which are absent in both arrays 
+            count++; 
+        } 
+        else
+        { 
+            al.Remove(j); 
+        } 
+    } 
+  
+    int c = 0; 
+    foreach(int x in al) 
+    { 
+        arr1[c++] = x; 
+    } 
+} 
+  
+// Function to print array elements 
+static void printArray(int[] arr) 
+{ 
+    foreach(int x in arr) 
+    { 
+        Console.Write(x + " "); 
+    } 
+} 
+  
+// Driver Code 
+public static void Main(String []args) 
+{ 
+    int []arr1 = {7, 4, 8, 0, 1}; 
+    int []arr2 = {9, 7, 2, 3, 6}; 
+    maximizeArray(arr1, arr2); 
+    printArray(arr1); 
+} 
+} 
+  
+// This code is contributed by PrinciRaj1992
+```
+
+输出：
+
+```
+9 7 6 4 8
+```
+
+时间复杂度：`O(n * log n)`。
