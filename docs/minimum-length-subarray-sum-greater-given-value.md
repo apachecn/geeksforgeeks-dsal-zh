@@ -521,3 +521,332 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// O(n) solution for finding smallest subarray with sum 
+// greater than x 
+  
+class SmallestSubArraySum 
+{ 
+    // Returns length of smallest subarray with sum greater than x. 
+    // If there is no subarray with given sum, then returns n+1 
+    static int smallestSubWithSum(int arr[], int n, int x)  
+    { 
+        // Initialize current sum and minimum length 
+        int curr_sum = 0, min_len = n + 1; 
+  
+        // Initialize starting and ending indexes 
+        int start = 0, end = 0; 
+        while (end < n)  
+        { 
+            // Keep adding array elements while current sum 
+            // is smaller than x 
+            while (curr_sum <= x && end < n) 
+                curr_sum += arr[end++]; 
+  
+            // If current sum becomes greater than x. 
+            while (curr_sum > x && start < n)  
+            { 
+                // Update minimum length if needed 
+                if (end - start < min_len) 
+                    min_len = end - start; 
+  
+                // remove starting elements 
+                curr_sum -= arr[start++]; 
+            } 
+        } 
+        return min_len; 
+    } 
+    // Driver program to test above functions 
+    public static void main(String[] args) 
+    { 
+        int arr1[] = {1, 4, 45, 6, 10, 19}; 
+        int x = 51; 
+        int n1 = arr1.length; 
+        int res1 = smallestSubWithSum(arr1, n1, x); 
+        if (res1 == n1+1) 
+           System.out.println("Not Possible"); 
+        else
+           System.out.println(res1); 
+  
+        int arr2[] = {1, 10, 5, 2, 7}; 
+        int n2 = arr2.length; 
+        x = 9; 
+        int res2 = smallestSubWithSum(arr2, n2, x); 
+        if (res2 == n2+1) 
+           System.out.println("Not Possible"); 
+        else
+           System.out.println(res2); 
+  
+        int arr3[] = {1, 11, 100, 1, 0, 200, 3, 2, 1, 250}; 
+        int n3 = arr3.length; 
+        x = 280; 
+        int res3 = smallestSubWithSum(arr3, n3, x); 
+        if (res3 == n3+1) 
+           System.out.println("Not Possible"); 
+        else
+           System.out.println(res3); 
+    } 
+} 
+  
+// This code has been contributed by Mayank Jaiswal
+```
+
+## Python3
+
+```
+# O(n) solution for finding smallest 
+# subarray with sum greater than x 
+  
+# Returns length of smallest subarray 
+# with sum greater than x. If there  
+# is no subarray with given sum, then 
+# returns n + 1 
+def smallestSubWithSum(arr, n, x): 
+  
+    # Initialize current sum and minimum length 
+    curr_sum = 0
+    min_len = n + 1
+  
+    # Initialize starting and ending indexes 
+    start = 0
+    end = 0
+    while (end < n): 
+      
+        # Keep adding array elements while current 
+        # sum is smaller than x 
+        while (curr_sum <= x and end < n): 
+            curr_sum += arr[end] 
+            end+= 1
+  
+        # If current sum becomes greater than x. 
+        while (curr_sum > x and start < n): 
+          
+            # Update minimum length if needed 
+            if (end - start < min_len): 
+                min_len = end - start  
+  
+            # remove starting elements 
+            curr_sum -= arr[start] 
+            start+= 1
+      
+    return min_len  
+  
+# Driver program   
+arr1 = [1, 4, 45, 6, 10, 19]  
+x = 51
+n1 = len(arr1)  
+res1 = smallestSubWithSum(arr1, n1, x)  
+print("Not possible") if (res1 == n1 + 1) else print(res1)  
+  
+arr2 = [1, 10, 5, 2, 7]  
+n2 = len(arr2)  
+x = 9
+res2 = smallestSubWithSum(arr2, n2, x) 
+print("Not possible") if (res2 == n2 + 1) else print(res2)  
+  
+arr3 = [1, 11, 100, 1, 0, 200, 3, 2, 1, 250 ]  
+n3 = len(arr3)  
+x = 280
+res3 = smallestSubWithSum(arr3, n3, x)  
+print("Not possible") if (res3 == n3 + 1) else print(res3)  
+  
+# This code is contributed by 
+# Smitha Dinesh Semwal
+```
+
+## C#
+
+```
+// O(n) solution for finding  
+// smallest subarray with sum 
+// greater than x 
+using System; 
+  
+class GFG 
+{ 
+      
+    // Returns length of smallest  
+    // subarray with sum greater  
+    // than x. If there is no  
+    // subarray with given sum,  
+    // then returns n+1 
+    static int smallestSubWithSum(int []arr,  
+                                  int n, int x)  
+    { 
+        // Initialize current  
+        // sum and minimum length 
+        int curr_sum = 0, 
+            min_len = n + 1; 
+  
+        // Initialize starting 
+        // and ending indexes 
+        int start = 0, end = 0; 
+        while (end < n)  
+        { 
+            // Keep adding array elements  
+            // while current sum is smaller 
+            // than x 
+            while (curr_sum <= x && end < n) 
+                curr_sum += arr[end++]; 
+  
+            // If current sum becomes 
+            // greater than x. 
+            while (curr_sum > x && start < n)  
+            { 
+                // Update minimum  
+                // length if needed 
+                if (end - start < min_len) 
+                    min_len = end - start; 
+  
+                // remove starting elements 
+                curr_sum -= arr[start++]; 
+            } 
+        } 
+        return min_len; 
+    } 
+      
+    // Driver Code 
+    static public void Main () 
+    { 
+        int []arr1 = {1, 4, 45,  
+                      6, 10, 19}; 
+        int x = 51; 
+        int n1 = arr1.Length; 
+        int res1 = smallestSubWithSum(arr1,  
+                                      n1, x); 
+        if (res1 == n1 + 1) 
+        Console.WriteLine("Not Possible"); 
+        else
+        Console.WriteLine(res1); 
+  
+        int []arr2 = {1, 10, 5, 2, 7}; 
+        int n2 = arr2.Length; 
+        x = 9; 
+        int res2 = smallestSubWithSum(arr2, 
+                                      n2, x); 
+        if (res2 == n2 + 1) 
+        Console.WriteLine("Not Possible"); 
+        else
+        Console.WriteLine(res2); 
+  
+        int []arr3 = {1, 11, 100, 1, 0, 
+                      200, 3, 2, 1, 250}; 
+        int n3 = arr3.Length; 
+        x = 280; 
+        int res3 = smallestSubWithSum(arr3, 
+                                      n3, x); 
+        if (res3 == n3 + 1) 
+        Console.WriteLine("Not Possible"); 
+        else
+        Console.WriteLine(res3); 
+    } 
+} 
+  
+// This code is contributed by akt_mit
+```
+
+## PHP
+
+```
+<?php 
+// O(n) solution for finding  
+// smallest subarray with sum  
+// greater than x 
+  
+// Returns length of smallest 
+// subarray with sum greater  
+// than x. If there is no  
+// subarray with given sum,  
+// then returns n+1 
+function smallestSubWithSum($arr,  
+                            $n, $x) 
+{ 
+    // Initialize current  
+    // sum and minimum length 
+    $curr_sum = 0;  
+    $min_len = $n + 1; 
+  
+    // Initialize starting  
+    // and ending indexes 
+    $start = 0; 
+    $end = 0; 
+    while ($end < $n) 
+    { 
+        // Keep adding array elements  
+        // while current sum is smaller 
+        // than x 
+        while ($curr_sum <= $x &&  
+               $end < $n) 
+            $curr_sum += $arr[$end++]; 
+  
+        // If current sum becomes 
+        // greater than x. 
+        while ($curr_sum > $x && 
+               $start < $n) 
+        { 
+            // Update minimum 
+            // length if needed 
+            if ($end - $start < $min_len) 
+                $min_len = $end - $start; 
+  
+            // remove starting elements 
+            $curr_sum -= $arr[$start++]; 
+        } 
+    } 
+    return $min_len; 
+} 
+  
+// Driver Code 
+$arr1 = array(1, 4, 45,  
+              6, 10, 19); 
+$x = 51; 
+$n1 = sizeof($arr1); 
+$res1 = smallestSubWithSum($arr1,  
+   
+                           $n1, $x); 
+if($res1 == $n1 + 1)  
+echo "Not possible\n" ; 
+else
+echo $res1 ,"\n"; 
+  
+$arr2 = array(1, 10, 5, 2, 7); 
+$n2 = sizeof($arr2); 
+$x = 9; 
+$res2 = smallestSubWithSum($arr2,  
+                           $n2, $x); 
+if($res2 == $n2 + 1)  
+echo "Not possible\n" ; 
+else
+echo $res2,"\n"; 
+  
+$arr3 = array(1, 11, 100, 1, 0,  
+              200, 3, 2, 1, 250); 
+$n3 = sizeof($arr3); 
+$x = 280; 
+$res3 = smallestSubWithSum($arr3,  
+                           $n3, $x); 
+                             
+if($res3 == $n3 + 1) 
+echo "Not possible\n" ; 
+else
+echo $res3, "\n"; 
+  
+// This code is contributed by ajit 
+?>
+```
+
+输出：
+
+```
+3
+1
+4 
+```
+
+如何处理负数？
+
+如果输入数组包含负数，则上述解决方案可能不起作用。 例如`arr[] = {-8, 1, 4, 2, -6}`。 要处理负数，请添加条件以忽略具有负和的子数组。 我们可以使用[在恒定空间中查找具有给定总和且允许有负数的子数组](https://www.geeksforgeeks.org/find-subarray-with-given-sum-with-negatives-allowed-in-constant-space/)中讨论的解决方案。
+

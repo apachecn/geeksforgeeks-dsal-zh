@@ -301,3 +301,233 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to find minimum number 
+// of elements to add so that its  
+// median equals x. 
+import java.util.*; 
+import java.lang.*; 
+  
+class GFG { 
+  
+    public static int minNumber(int a[], 
+                           int n, int x) 
+    { 
+        int l = 0, h = 0, e = 0; 
+        for (int i = 0; i < n; i++) 
+        { 
+  
+            // no. of elements equals to 
+            // x, that is, e. 
+            if (a[i] == x) 
+                e++; 
+  
+            // no. of elements greater 
+            // than x, that is, h. 
+            else if (a[i] > x) 
+                h++; 
+  
+            // no. of elements smaller 
+            // than x, that is, l. 
+            else if (a[i] < x) 
+                l++; 
+        } 
+  
+        int ans = 0; 
+        if (l > h)  
+            ans = l - h; 
+        else if (l < h)  
+            ans = h - l - 1; 
+      
+        // subtract the no. of elements  
+        // that are equal to x. 
+        return ans + 1 - e; 
+    } 
+  
+    // Driven Program 
+    public static void main(String[] args) 
+    { 
+        int x = 10; 
+        int a[] = { 10, 20, 30 }; 
+        int n = a.length; 
+        System.out.println( 
+                      minNumber(a, n, x)); 
+    } 
+} 
+  
+// This code is contributed by  
+// Prasad Kshirsagar
+```
+
+## Python3
+
+```
+# Python3 program to find minimum number  
+# of elements to add so that its median  
+# equals x. 
+  
+def minNumber (a, n, x): 
+    l = 0
+    h = 0
+    e = 0
+    for i in range(n): 
+      
+        # no. of elements equals to x, 
+        # that is, e. 
+        if a[i] == x: 
+            e+=1
+          
+        # no. of elements greater than x, 
+        # that is, h. 
+        elif a[i] > x: 
+            h+=1
+          
+        # no. of elements smaller than x, 
+        # that is, l. 
+        elif a[i] < x: 
+            l+=1
+      
+    ans = 0; 
+    if l > h: 
+        ans = l - h 
+    elif l < h: 
+        ans = h - l - 1; 
+      
+    # subtract the no. of elements  
+    # that are equal to x. 
+    return ans + 1 - e 
+  
+# Driver code 
+x = 10
+a = [10, 20, 30] 
+n = len(a) 
+print(minNumber(a, n, x)) 
+  
+# This code is contributed 
+# by "Abhishek Sharma 44"
+```
+
+## C#
+
+```
+// C# program to find minimum  
+// number of elements to add  
+// so that its median equals x. 
+using System; 
+  
+class GFG  
+{ 
+public static int minNumber(int []a, 
+                            int n,  
+                            int x) 
+{ 
+    int l = 0, h = 0, e = 0; 
+    for (int i = 0; i < n; i++) 
+    { 
+  
+        // no. of elements  
+        // equals to x, 
+        // that is, e. 
+        if (a[i] == x) 
+            e++; 
+  
+        // no. of elements  
+        // greater than x, 
+        // that is, h. 
+        else if (a[i] > x) 
+            h++; 
+  
+        // no. of elements smaller 
+        // than x, that is, l. 
+        else if (a[i] < x) 
+            l++; 
+    } 
+  
+    int ans = 0; 
+    if (l > h)  
+        ans = l - h; 
+    else if (l < h)  
+        ans = h - l - 1; 
+  
+    // subtract the no.  
+    // of elements that 
+    // are equal to x. 
+    return ans + 1 - e; 
+} 
+  
+// Driver Code 
+public static void Main() 
+{ 
+    int x = 10; 
+    int []a = {10, 20, 30}; 
+    int n = a.Length; 
+    Console.WriteLine( 
+                minNumber(a, n, x)); 
+} 
+} 
+  
+// This code is contributed 
+// by anuj_67.
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find minimum  
+// number of elements to add so   
+// that its median equals x. 
+  
+function minNumber($a, $n, $x) 
+{ 
+    $l = 0; $h = 0; $e = 0; 
+    for ($i = 0; $i < $n; $i++) 
+    { 
+  
+        // no. of elements equals   
+        // to x, that is, e. 
+        if ($a[$i] == $x) 
+            $e++; 
+  
+        // no. of elements greater 
+        // than x, that is, h. 
+        else if ($a[$i] > $x) 
+            $h++; 
+  
+        // no. of elements smaller  
+        // than x, that is, l. 
+        else if ($a[$i] < $x) 
+            $l++; 
+    } 
+  
+    $ans = 0; 
+    if ($l > $h)  
+        $ans = $l - $h; 
+    else if ($l < $h)  
+        $ans = $h - $l - 1; 
+      
+    // subtract the no. of elements  
+    // that are equal to x. 
+    return $ans + 1 - $e; 
+} 
+  
+// Driver code 
+$x = 10; 
+$a = array (10, 20, 30); 
+$n = sizeof($a) ; 
+echo minNumber($a, $n, $x), "\n"; 
+  
+// This code is contributed by jit_t 
+?>
+```
+
+输出：
+
+```
+1
+```
+
+时间复杂度：`O(n)`。
