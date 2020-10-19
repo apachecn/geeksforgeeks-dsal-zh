@@ -93,3 +93,227 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java code to find maximum shortest distance  
+// from endpoints 
+import java.util.*; 
+  
+class GFG  
+{ 
+static void makePermutation(int []a, int n) 
+{ 
+    // Store counts of all elements. 
+    HashMap<Integer,  
+            Integer> count = new HashMap<Integer,  
+                                         Integer>(); 
+    for (int i = 0; i < n; i++) 
+    { 
+        if(count.containsKey(a[i])) 
+        { 
+            count.put(a[i], count.get(a[i]) + 1); 
+        } 
+        else
+        { 
+            count.put(a[i], 1); 
+        } 
+    } 
+} 
+  
+// function to find maximum shortest distance 
+static int find_maximum(int a[], int n, int k) 
+{  
+    // stores the shortest distance of every  
+    // element in original array. 
+    HashMap<Integer, 
+            Integer> b = new HashMap<Integer, 
+                                     Integer>(); 
+      
+    for (int i = 0; i < n; i++)  
+    { 
+        int x = a[i]; 
+          
+        // shortest distance from ends 
+        int d = Math.min(1 + i, n - i);  
+        if (!b.containsKey(x)) 
+            b.put(x, d);  
+  
+        else
+        { 
+  
+            /* if duplicates are found, b[x]  
+            is replaced with minimum of the 
+            previous and current position's 
+            shortest distance*/
+            b. put(x, Math.min(d, b.get(x)));  
+        } 
+    } 
+      
+    int ans = Integer.MAX_VALUE; 
+    for (int i = 0; i < n; i++)  
+    { 
+        int x = a[i]; 
+          
+        // similar elements ignore them  
+        // cause we need distinct elements  
+        if (x != k - x && b.containsKey(k - x))          
+            ans = Math.min(Math.max(b.get(x),  
+                                    b.get(k - x)), ans);      
+    } 
+    return ans; 
+} 
+  
+// Driver Code 
+public static void main(String[] args) 
+{ 
+    int a[] = { 3, 5, 8, 6, 7 }; 
+    int K = 11; 
+    int n = a.length; 
+    System.out.println(find_maximum(a, n, K)); 
+} 
+} 
+  
+// This code is contributed by Rajput-Ji
+```
+
+## Python3
+
+```
+# Python3 code to find maximum shortest  
+# distance from endpoints 
+  
+# function to find maximum shortest distance 
+def find_maximum(a, n, k): 
+      
+    # stores the shortest distance of every  
+    # element in original array. 
+    b = dict() 
+      
+    for i in range(n): 
+        x = a[i] 
+          
+        # shortest distance from ends 
+        d = min(1 + i, n - i) 
+        if x not in b.keys(): 
+            b[x] = d 
+        else: 
+  
+            # if duplicates are found, b[x]  
+            # is replaced with minimum of the 
+            # previous and current position's 
+            # shortest distance*/ 
+            b[x] = min(d, b[x]) 
+      
+    ans = 10**9
+    for i in range(n): 
+        x = a[i] 
+          
+        # similar elements ignore them  
+        # cause we need distinct elements  
+        if (x != (k - x) and (k - x) in b.keys()):          
+            ans = min(max(b[x], b[k - x]), ans)  
+  
+    return ans 
+  
+# Driver code 
+a = [3, 5, 8, 6, 7] 
+K = 11
+n = len(a) 
+print(find_maximum(a, n, K)) 
+  
+# This code is contributed by mohit kumar
+```
+
+## C#
+
+```
+// C# code to find maximum shortest distance  
+// from endpoints 
+using System; 
+using System.Collections.Generic; 
+      
+class GFG  
+{ 
+static void makePermutation(int []a, int n) 
+{ 
+    // Store counts of all elements. 
+    Dictionary<int, 
+               int> count = new Dictionary<int, 
+                                           int>(); 
+    for (int i = 0; i < n; i++) 
+    { 
+        if(count.ContainsKey(a[i])) 
+        { 
+            count[a[i]] = count[a[i]] + 1; 
+        } 
+        else
+        { 
+            count.Add(a[i], 1); 
+        } 
+    } 
+} 
+  
+// function to find maximum shortest distance 
+static int find_maximum(int []a, int n, int k) 
+{  
+    // stores the shortest distance of every  
+    // element in original array. 
+    Dictionary<int, 
+               int> b = new Dictionary<int, 
+                                       int>(); 
+      
+    for (int i = 0; i < n; i++)  
+    { 
+        int x = a[i]; 
+          
+        // shortest distance from ends 
+        int d = Math.Min(1 + i, n - i);  
+        if (!b.ContainsKey(x)) 
+            b.Add(x, d);  
+  
+        else
+        { 
+  
+            /* if duplicates are found, b[x]  
+            is replaced with minimum of the 
+            previous and current position's 
+            shortest distance*/
+            b[x] = Math.Min(d, b[x]);  
+        } 
+    } 
+      
+    int ans = int.MaxValue; 
+    for (int i = 0; i < n; i++)  
+    { 
+        int x = a[i]; 
+          
+        // similar elements ignore them  
+        // cause we need distinct elements  
+        if (x != k - x && b.ContainsKey(k - x))          
+            ans = Math.Min(Math.Max(b[x],  
+                                    b[k - x]), ans);      
+    } 
+    return ans; 
+} 
+  
+// Driver Code 
+public static void Main(String[] args) 
+{ 
+    int []a = { 3, 5, 8, 6, 7 }; 
+    int K = 11; 
+    int n = a.Length; 
+    Console.WriteLine(find_maximum(a, n, K)); 
+} 
+} 
+  
+// This code is contributed by Princi Singh
+```
+
+输出：
+
+```
+ 2
+```
+

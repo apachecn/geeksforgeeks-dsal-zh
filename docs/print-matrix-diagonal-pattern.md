@@ -119,3 +119,514 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to print matrix in diagonal order 
+class GFG { 
+    static final int MAX = 100; 
+  
+    static void printMatrixDiagonal(int mat[][], int n) 
+    { 
+        // Initialize indexes of element to be printed next 
+        int i = 0, j = 0; 
+  
+        // Direction is initially from down to up 
+        boolean isUp = true; 
+  
+        // Traverse the matrix till all elements get traversed 
+        for (int k = 0; k < n * n;) { 
+            // If isUp = true then traverse from downward 
+            // to upward 
+            if (isUp) { 
+                for (; i >= 0 && j < n; j++, i--) { 
+                    System.out.print(mat[i][j] + " "); 
+                    k++; 
+                } 
+  
+                // Set i and j according to direction 
+                if (i < 0 && j <= n - 1) 
+                    i = 0; 
+                if (j == n) { 
+                    i = i + 2; 
+                    j--; 
+                } 
+            } 
+  
+            // If isUp = 0 then traverse up to down 
+            else { 
+                for (; j >= 0 && i < n; i++, j--) { 
+                    System.out.print(mat[i][j] + " "); 
+                    k++; 
+                } 
+  
+                // Set i and j according to direction 
+                if (j < 0 && i <= n - 1) 
+                    j = 0; 
+                if (i == n) { 
+                    j = j + 2; 
+                    i--; 
+                } 
+            } 
+  
+            // Revert the isUp to change the direction 
+            isUp = !isUp; 
+        } 
+    } 
+  
+    // Driver code 
+    public static void main(String[] args) 
+    { 
+        int mat[][] = { { 1, 2, 3 }, 
+                        { 4, 5, 6 }, 
+                        { 7, 8, 9 } }; 
+  
+        int n = 3; 
+        printMatrixDiagonal(mat, n); 
+    } 
+} 
+// This code is contributed by Anant Agarwal.
+```
+
+## Python 3
+
+```
+# Python 3 program to print matrix in diagonal order 
+MAX = 100
+  
+def printMatrixDiagonal(mat, n): 
+    # Initialize indexes of element to be printed next 
+    i = 0
+    j = 0
+    k = 0
+    # Direction is initially from down to up 
+    isUp = True
+  
+     # Traverse the matrix till all elements get traversed 
+    while k<n * n: 
+         # If isUp = True then traverse from downward 
+         # to upward 
+        if isUp: 
+            while i >= 0 and j<n : 
+                print(str(mat[i][j]), end = " ") 
+                k += 1
+                j += 1
+                i -= 1
+  
+              # Set i and j according to direction 
+            if i < 0 and j <= n - 1: 
+                i = 0
+            if j == n: 
+                i = i + 2
+                j -= 1
+  
+         # If isUp = 0 then traverse up to down 
+        else: 
+            while j >= 0 and i<n : 
+                print(mat[i][j], end = " ") 
+                k += 1
+                i += 1
+                j -= 1
+  
+              # Set i and j according to direction 
+            if j < 0 and i <= n - 1: 
+                j = 0
+            if i == n: 
+                j = j + 2
+                i -= 1
+  
+         # Revert the isUp to change the direction 
+        isUp = not isUp 
+  
+# Driver program 
+if __name__ == "__main__": 
+    mat = [[1, 2, 3], 
+        [4, 5, 6], 
+        [7, 8, 9] ] 
+  
+   n = 3
+   printMatrixDiagonal(mat, n) 
+  
+# This code is contributed by Chitra Nayal
+```
+
+## C#
+
+```
+// C# program to print matrix in diagonal order 
+using System; 
+class GFG { 
+    static int MAX = 100; 
+  
+    static void printMatrixDiagonal(int[, ] mat, int n) 
+    { 
+        // Initialize indexes of element to be printed next 
+        int i = 0, j = 0; 
+  
+        // Direction is initially from down to up 
+        bool isUp = true; 
+  
+        // Traverse the matrix till all elements get traversed 
+        for (int k = 0; k < n * n;) { 
+            // If isUp = true then traverse from downward 
+            // to upward 
+            if (isUp) { 
+                for (; i >= 0 && j < n; j++, i--) { 
+                    Console.Write(mat[i, j] + " "); 
+                    k++; 
+                } 
+  
+                // Set i and j according to direction 
+                if (i < 0 && j <= n - 1) 
+                    i = 0; 
+                if (j == n) { 
+                    i = i + 2; 
+                    j--; 
+                } 
+            } 
+  
+            // If isUp = 0 then traverse up to down 
+            else { 
+                for (; j >= 0 && i < n; i++, j--) { 
+                    Console.Write(mat[i, j] + " "); 
+                    k++; 
+                } 
+  
+                // Set i and j according to direction 
+                if (j < 0 && i <= n - 1) 
+                    j = 0; 
+                if (i == n) { 
+                    j = j + 2; 
+                    i--; 
+                } 
+            } 
+  
+            // Revert the isUp to change the direction 
+            isUp = !isUp; 
+        } 
+    } 
+  
+    // Driver code 
+    public static void Main() 
+    { 
+        int[, ] mat = { { 1, 2, 3 }, 
+                        { 4, 5, 6 }, 
+                        { 7, 8, 9 } }; 
+  
+        int n = 3; 
+        printMatrixDiagonal(mat, n); 
+    } 
+} 
+// This code is contributed by vt_m.
+```
+
+## PHP
+
+```
+<?php 
+// php program to print matrix 
+// in diagonal order 
+  
+$MAX = 100; 
+  
+function printMatrixDiagonal($mat, $n) 
+{ 
+      
+    // Initialize indexes of element 
+    // to be printed next 
+    $i = 0; 
+    $j = 0 ; 
+  
+    // Direction is initially 
+    // from down to up 
+    $isUp = true; 
+  
+    // Traverse the matrix till 
+    // all elements get traversed 
+    for ($k = 0;$k < $n * $n 
+    { 
+        // If isUp = true then traverse  
+        // from downward to upward 
+        if ($isUp) 
+        { 
+            for ( ;$i >= 0 && $j < $n;$j++, $i--) 
+            { 
+                echo $mat[$i][$j]." "; 
+                $k++; 
+            } 
+  
+            // Set i and j according  
+            // to direction 
+            if ($i < 0 && $j <= $n - 1) 
+                $i = 0; 
+            if ($j == $n) 
+            { 
+                $i = $i + 2; 
+                $j--; 
+            } 
+        } 
+  
+        // If isUp = 0 then  
+        // traverse up to down 
+        else
+        { 
+            for ( ; $j >= 0 &&  
+                 $i<$n ; $i++, $j--) 
+            { 
+                echo $mat[$i][$j]." "; 
+                $k++; 
+            } 
+  
+            // Set i and j according 
+            // to direction 
+            if ($j < 0 && $i <= $n - 1) 
+                $j = 0; 
+            if ($i == $n) 
+            { 
+                $j = $j + 2; 
+                $i--; 
+            } 
+        } 
+  
+        // Revert the isUp to 
+        // change the direction 
+        $isUp = !$isUp; 
+    } 
+} 
+  
+    // Driver code 
+    $mat= array(array(1, 2, 3), 
+          array(4, 5, 6), 
+          array(7, 8, 9)); 
+  
+    $n = 3; 
+    printMatrixDiagonal($mat, $n); 
+  
+// This code is contributed by mits  
+?>
+```
+
+输出：
+
+```
+1 2 4 7 5 3 6 8 9
+```
+
+复杂度分析：
+
++   时间复杂度：`O(n * n)`。
+
+    要遍历矩阵`O(n * n)`，需要时间复杂度。
++   空间复杂度：`O(1)`。
+
+    由于不需要额外的空间。
+
+替代实现：这是与上述相同方法的另一种简单且紧凑的实现。
+
+## C++
+
+```
+// C++ program to print matrix in diagonal order 
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+int main() 
+{ 
+    // Initialize matrix 
+    int mat[][4] = { { 1, 2, 3, 4 }, 
+                     { 5, 6, 7, 8 }, 
+                     { 9, 10, 11, 12 }, 
+                     { 13, 14, 15, 16 } }; 
+    // n - size 
+    // mode - switch to derive up/down traversal 
+    // it - iterator count - increases until it 
+    // reaches n and then decreases 
+    int n = 4, mode = 0, it = 0, lower = 0; 
+  
+    // 2n will be the number of iterations 
+    for (int t = 0; t < (2 * n - 1); t++) { 
+        int t1 = t; 
+        if (t1 >= n) { 
+            mode++; 
+            t1 = n - 1; 
+            it--; 
+            lower++; 
+        } 
+        else { 
+            lower = 0; 
+            it++; 
+        } 
+        for (int i = t1; i >= lower; i--) { 
+            if ((t1 + mode) % 2 == 0) { 
+                cout << (mat[i][t1 + lower - i]) << endl; 
+            } 
+            else { 
+                cout << (mat[t1 + lower - i][i]) << endl; 
+            } 
+        } 
+    } 
+    return 0; 
+} 
+  
+// This code is contributed by princiraj1992
+```
+
+## Java
+
+```
+// Java program to print matrix in diagonal order 
+public class MatrixDiag { 
+  
+    public static void main(String[] args) 
+    { 
+        // Initialize matrix 
+        int[][] mat = { { 1, 2, 3, 4 }, 
+                        { 5, 6, 7, 8 }, 
+                        { 9, 10, 11, 12 }, 
+                        { 13, 14, 15, 16 } }; 
+        // n - size 
+        // mode - switch to derive up/down traversal 
+        // it - iterator count - increases until it 
+        // reaches n and then decreases 
+        int n = 4, mode = 0, it = 0, lower = 0; 
+  
+        // 2n will be the number of iterations 
+        for (int t = 0; t < (2 * n - 1); t++) { 
+            int t1 = t; 
+            if (t1 >= n) { 
+                mode++; 
+                t1 = n - 1; 
+                it--; 
+                lower++; 
+            } 
+            else { 
+                lower = 0; 
+                it++; 
+            } 
+            for (int i = t1; i >= lower; i--) { 
+                if ((t1 + mode) % 2 == 0) { 
+                    System.out.println(mat[i][t1 + lower - i]); 
+                } 
+                else { 
+                    System.out.println(mat[t1 + lower - i][i]); 
+                } 
+            } 
+        } 
+    } 
+}
+```
+
+## Python3
+
+```
+# Python3 program to prmatrix in diagonal order 
+  
+# Driver code 
+  
+# Initialize matrix 
+mat = [[ 1, 2, 3, 4 ], 
+       [ 5, 6, 7, 8 ], 
+       [ 9, 10, 11, 12 ], 
+       [ 13, 14, 15, 16 ]]; 
+         
+# n - size 
+# mode - switch to derive up/down traversal 
+# it - iterator count - increases until it 
+# reaches n and then decreases 
+n = 4
+mode = 0
+it = 0
+lower = 0
+  
+# 2n will be the number of iterations 
+for t in range(2 * n - 1): 
+    t1 = t 
+    if (t1 >= n): 
+        mode += 1
+        t1 = n - 1
+        it -= 1
+        lower += 1
+    else: 
+        lower = 0
+        it += 1
+  
+    for i in range(t1, lower - 1, -1): 
+        if ((t1 + mode) % 2 == 0): 
+            print((mat[i][t1 + lower - i])) 
+        else: 
+            print(mat[t1 + lower - i][i]) 
+  
+# This code is contributed by princiraj1992
+```
+
+## C#
+
+```
+// C# program to print matrix in diagonal order 
+using System; 
+  
+public class MatrixDiag { 
+    // Driver code 
+    public static void Main(String[] args) 
+    { 
+        // Initialize matrix 
+        int[, ] mat = { { 1, 2, 3, 4 }, 
+                        { 5, 6, 7, 8 }, 
+                        { 9, 10, 11, 12 }, 
+                        { 13, 14, 15, 16 } }; 
+        // n - size 
+        // mode - switch to derive up/down traversal 
+        // it - iterator count - increases until it 
+        // reaches n and then decreases 
+        int n = 4, mode = 0, it = 0, lower = 0; 
+  
+        // 2n will be the number of iterations 
+        for (int t = 0; t < (2 * n - 1); t++) { 
+            int t1 = t; 
+            if (t1 >= n) { 
+                mode++; 
+                t1 = n - 1; 
+                it--; 
+                lower++; 
+            } 
+            else { 
+                lower = 0; 
+                it++; 
+            } 
+            for (int i = t1; i >= lower; i--) { 
+                if ((t1 + mode) % 2 == 0) { 
+                    Console.WriteLine(mat[i, t1 + lower - i]); 
+                } 
+                else { 
+                    Console.WriteLine(mat[t1 + lower - i, i]); 
+                } 
+            } 
+        } 
+    } 
+} 
+  
+// This code contributed by Rajput-Ji
+```
+
+输出：
+
+```
+1
+2
+5
+9
+6
+3
+4
+7
+10
+13
+14
+11
+8
+12
+15
+16
+```
+
