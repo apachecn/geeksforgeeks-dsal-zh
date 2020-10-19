@@ -73,3 +73,220 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to find the maximum repeating number 
+import java.io.*; 
+  
+class MaxRepeating { 
+  
+    // Returns maximum repeating element in arr[0..n-1]. 
+    // The array elements are in range from 0 to k-1 
+    static int maxRepeating(int arr[], int n, int k) 
+    { 
+        // Iterate though input array, for every element 
+        // arr[i], increment arr[arr[i]%k] by k 
+        for (int i = 0; i< n; i++) 
+            arr[(arr[i]%k)] += k; 
+  
+        // Find index of the maximum repeating element 
+        int max = arr[0], result = 0; 
+        for (int i = 1; i < n; i++) 
+        { 
+            if (arr[i] > max) 
+            { 
+                max = arr[i]; 
+                result = i; 
+            } 
+        } 
+  
+        /* Uncomment this code to get the original array back 
+        for (int i = 0; i< n; i++) 
+          arr[i] = arr[i]%k; */
+  
+        // Return index of the maximum element 
+        return result; 
+    } 
+  
+    /*Driver function to check for above function*/
+    public static void main (String[] args) 
+    { 
+  
+        int arr[] = {2, 3, 3, 5, 3, 4, 1, 7}; 
+        int n = arr.length; 
+        int k=8; 
+        System.out.println("Maximum repeating element is: " + 
+                           maxRepeating(arr,n,k)); 
+    } 
+} 
+/* This code is contributed by Devesh Agrawal */
+```
+
+## Python3
+
+```
+# Python program to find the maximum repeating number 
+  
+# Returns maximum repeating element in arr[0..n-1]. 
+# The array elements are in range from 0 to k-1 
+def maxRepeating(arr, n,  k): 
+  
+    # Iterate though input array, for every element 
+    # arr[i], increment arr[arr[i]%k] by k 
+    for i in range(0,  n): 
+        arr[arr[i]%k] += k 
+  
+    # Find index of the maximum repeating element 
+    max = arr[0] 
+    result = 0
+    for i in range(1, n): 
+      
+        if arr[i] > max: 
+            max = arr[i] 
+            result = i 
+  
+    # Uncomment this code to get the original array back 
+    #for i in range(0, n): 
+    #    arr[i] = arr[i]%k 
+  
+    # Return index of the maximum element 
+    return result 
+  
+  
+# Driver program to test above function 
+arr = [2, 3, 3, 5, 3, 4, 1, 7] 
+n = len(arr) 
+k = 8
+print("The maximum repeating number is",maxRepeating(arr, n, k)) 
+  
+# This code is contributed by 
+# Smitha Dinesh Semwal
+```
+
+## C#
+
+```
+//C# program to find the maximum repeating 
+// number 
+using System; 
+  
+class GFG { 
+      
+    // Returns maximum repeating element  
+    // in arr[0..n-1]. 
+    // The array elements are in range  
+    // from 0 to k-1 
+    static int maxRepeating(int []arr,  
+                             int n, int k) 
+    { 
+        // Iterate though input array, for 
+        // every element arr[i], increment 
+        // arr[arr[i]%k] by k 
+        for (int i = 0; i< n; i++) 
+            arr[(arr[i]%k)] += k; 
+  
+        // Find index of the maximum  
+        // repeating element 
+        int max = arr[0], result = 0; 
+          
+        for (int i = 1; i < n; i++) 
+        { 
+            if (arr[i] > max) 
+            { 
+                max = arr[i]; 
+                result = i; 
+            } 
+        } 
+  
+        // Return index of the  
+        // maximum element 
+        return result; 
+    } 
+  
+    /*Driver function to check for  
+     above function*/
+    public static void Main () 
+    { 
+  
+        int []arr = {2, 3, 3, 5, 3, 4, 1, 7}; 
+        int n = arr.Length; 
+        int k=8; 
+          
+        Console.Write("Maximum repeating "
+                          + "element is: " 
+                  + maxRepeating(arr,n,k)); 
+    } 
+} 
+  
+// This code is contributed by Sam007.
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find the  
+// maximum repeating number 
+  
+// Returns maximum repeating 
+// element in arr[0..n-1]. 
+// The array elements are  
+// in range from 0 to k-1 
+function maxRepeating($arr, $n, $k) 
+{ 
+      
+    // Iterate though input array, 
+    // for every element arr[i], 
+    // increment arr[arr[i]%k] by k 
+    for ($i = 0; $i< $n; $i++) 
+        $arr[$arr[$i] % $k] += $k; 
+  
+        // Find index of the  
+        // maximum repeating 
+        // element 
+        $max = $arr[0]; 
+        $result = 0; 
+    for ($i = 1; $i < $n; $i++) 
+    { 
+        if ($arr[$i] > $max) 
+        { 
+            $max = $arr[$i]; 
+            $result = $i; 
+        } 
+    } 
+  
+    /* Uncomment this code to 
+       get the original array back 
+       for (int i = 0; i< n; i++) 
+       arr[i] = arr[i] % k; */
+  
+    // Return index of the  
+    // maximum element 
+    return $result; 
+} 
+  
+    // Driver Code 
+    $arr = array(2, 3, 3, 5, 3, 4, 1, 7); 
+    $n = sizeof($arr); 
+    $k = 8; 
+  
+    echo "The maximum repeating number is ", 
+        maxRepeating($arr, $n, $k); 
+  
+// This Code is contributed by Ajit 
+?>
+```
+
+输出：
+
+```
+The maximum repeating number is 3
+```
+
+练习：
+
+上述解决方案仅打印一个重复元素，如果我们要打印所有最大重复元素，则该方法不起作用。 例如，如果输入数组为`{2, 3, 2, 3}`，则上述解决方案将仅打印 3。如果我们需要同时打印 2 和 3，因为它们都出现最大次数，该怎么办。 编写一个`O(n)`时间和`O(1)`额外空间函数，以打印所有最大重复元素。 （提示：我们可以在步骤 2 中使用最大商`arr[i] / n`代替最大值）。
+
+请注意，如果反复加`k`使该值大于`INT_MAX`，则上述解决方案可能会导致溢出。
