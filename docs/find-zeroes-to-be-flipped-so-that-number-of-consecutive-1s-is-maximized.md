@@ -131,3 +131,227 @@ int main()
 } 
 
 ```
+
+## Python3
+
+```
+# Python3 program to find positions 
+# of zeroes flipping which produces 
+# maximum number of xonsecutive 1's 
+  
+# m is maximum of number zeroes allowed  
+# to flip, n is size of array 
+def findZeroes(arr, n, m) : 
+      
+    # Left and right indexes of current window 
+    wL = wR = 0
+  
+    # Left index and size of the widest window  
+    bestL = bestWindow = 0
+  
+    # Count of zeroes in current window 
+    zeroCount = 0
+  
+    # While right boundary of current  
+    # window doesn't cross right end 
+    while wR < n: 
+          
+        # If zero count of current window is less than m, 
+        # widen the window toward right 
+        if zeroCount <= m : 
+            if arr[wR] == 0 : 
+                zeroCount += 1
+            wR += 1
+  
+        # If zero count of current window is more than m, 
+        # reduce the window from left 
+        if zeroCount > m : 
+            if arr[wL] == 0 : 
+                zeroCount -= 1
+            wL += 1
+  
+        # Updqate widest window if 
+        # this window size is more 
+        if (wR-wL > bestWindow) and (zeroCount<=m) : 
+            bestWindow = wR - wL 
+            bestL = wL 
+  
+    # Print positions of zeroes  
+    # in the widest window 
+    for i in range(0, bestWindow): 
+        if arr[bestL + i] == 0: 
+            print (bestL + i, end = " ") 
+  
+# Driver program 
+arr = [1, 0, 0, 1, 1, 0, 1, 0, 1, 1] 
+m = 2
+n = len(arr) 
+print ("Indexes of zeroes to be flipped are", end = " ") 
+findZeroes(arr, n, m) 
+  
+# This code is contributed by Shreyanshi Arun.
+```
+
+## C#
+
+```
+// C# to find positions of zeroes flipping which 
+// produces maximum number of consecutive 1's 
+using System; 
+  
+class Test 
+{ 
+    static int []arr = new int[]{1, 0, 0, 1, 1, 
+                                0, 1, 0, 1, 1}; 
+      
+    // m is maximum of number zeroes allowed to flip 
+    static void findZeroes(int m) 
+    { 
+        // Left and right indexes of current window 
+        int wL = 0, wR = 0;  
+      
+        // Left index and size of the widest window  
+        int bestL = 0, bestWindow = 0;  
+      
+        // Count of zeroes in current window 
+        int zeroCount = 0;  
+      
+        // While right boundary of current  
+        // window doesn't cross right end 
+        while (wR < arr.Length) 
+        { 
+            // If zero count of current window is less 
+            // than m, widen the window toward right 
+            if (zeroCount <= m) 
+            { 
+                if (arr[wR] == 0) 
+                zeroCount++; 
+                wR++; 
+            } 
+      
+            // If zero count of current window is more than m, 
+            // reduce the window from left 
+            if (zeroCount > m) 
+            { 
+                if (arr[wL] == 0) 
+                zeroCount--; 
+                wL++; 
+            } 
+      
+            // Update widest window if this window size is more 
+            if ((wR-wL > bestWindow) && (zeroCount<=m)) 
+            { 
+                bestWindow = wR-wL; 
+                bestL = wL; 
+            } 
+        } 
+      
+        // Print positions of zeroes in the widest window 
+        for (int i = 0; i < bestWindow; i++) 
+        { 
+            if (arr[bestL + i] == 0) 
+            Console.Write(bestL + i + " "); 
+        } 
+    } 
+      
+    // Driver method to test the above function 
+    public static void Main(String[] args)  
+    { 
+        int m = 2; 
+        Console.Write("Indexes of zeroes to be flipped are "); 
+        findZeroes(m); 
+    } 
+} 
+  
+// This code is contributed by parashar
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find positions of 
+// zeroes flipping which produces  
+// maximum number of xonsecutive 1's 
+  
+// m is maximum of number zeroes 
+// allowed to flip n is size of array 
+function findZeroes($arr, $n, $m) 
+{ 
+      
+    // Left and right indexes 
+    // of current window 
+    $wL = 0; 
+    $wR = 0;  
+  
+    // Left index and size of  
+    // the widest window  
+    $bestL = 0;  
+    $bestWindow = 0;  
+  
+    // Count of zeroes in 
+    // current window 
+    $zeroCount = 0;  
+  
+    // While right boundary of  
+    // current window doesn't cross  
+    // right end 
+    while ($wR < $n) 
+    { 
+          
+        // If zero count of current  
+        // window is less than m, 
+        // widen the window toward right 
+        if ($zeroCount <= $m) 
+        { 
+            if ($arr[$wR] == 0) 
+            $zeroCount++; 
+            $wR++; 
+        } 
+  
+        // If zero count of current 
+        // window is more than m, 
+        // reduce the window from left 
+        if ($zeroCount > $m) 
+        { 
+            if ($arr[$wL] == 0) 
+            $zeroCount--; 
+            $wL++; 
+        } 
+  
+        // Updqate widest window if 
+        // this window size is more 
+        if (($wR-$wL > $bestWindow) && ($zeroCount<=$m)) 
+        { 
+            $bestWindow = $wR - $wL; 
+            $bestL = $wL; 
+        } 
+    } 
+  
+    // Print positions of zeroes 
+    // in the widest window 
+    for($i = 0; $i < $bestWindow; $i++) 
+    { 
+        if ($arr[$bestL + $i] == 0) 
+        echo $bestL + $i . " "; 
+    } 
+} 
+  
+    // Driver Code 
+    $arr = array(1, 0, 0, 1, 1, 0, 1, 0, 1, 1); 
+    $m = 2; 
+    $n = sizeof($arr)/sizeof($arr[0]); 
+    echo "Indexes of zeroes to be flipped are "; 
+    findZeroes($arr, $n, $m); 
+    return 0; 
+  
+// This code is contributed by nitin mittal. 
+?>
+```
+
+输出：
+
+```
+Indexes of zeroes to be flipped are 5 7
+```
+

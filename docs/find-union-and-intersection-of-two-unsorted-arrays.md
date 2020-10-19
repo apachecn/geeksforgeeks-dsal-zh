@@ -1280,3 +1280,115 @@ public class UnsortedIntersectionUnion {
 // This code is contributed by Mohanakrishnan S. 
 
 ```
+
+## Python
+
+```
+# Python program to find union and intersection
+# using sets
+ 
+ 
+def printUnion(arr1, arr2, n1, n2):
+    hs = set()
+ 
+    # Inhsert the elements of arr1[] to set hs
+    for i in range(0, n1):
+        hs.add(arr1[i])
+ 
+    # Inhsert the elements of arr1[] to set hs
+    for i in range(0, n2):
+        hs.add(arr2[i])
+    print("Union:")
+    for i in hs:
+        print(i, end=" ")
+    print("\n")
+ 
+    # Prints intersection of arr1[0..n1-1] and
+    # arr2[0..n2-1]
+ 
+ 
+def printIntersection(arr1, arr2, n1, n2):
+    hs = set()
+ 
+    # Insert the elements of arr1[] to set S
+    for i in range(0, n1):
+        hs.add(arr1[i])
+    print("Intersection:")
+    for i in range(0, n2):
+ 
+        # If element is present in set then
+        # push it to vector V
+        if arr2[i] in hs:
+            print(arr2[i], end=" ")
+ 
+ 
+# Driver Program
+arr1 = [7, 1, 5, 2, 3, 6]
+arr2 = [3, 8, 6, 20, 7]
+n1 = len(arr1)
+n2 = len(arr2)
+ 
+# Function call
+printUnion(arr1, arr2, n1, n2)
+printIntersection(arr1, arr2, n1, n2)
+ 
+# This artice is contributed by Kumar Suman .
+```
+
+## C#
+
+```
+// C# program to find union and intersection
+// using Hashing
+using System;
+using System.Linq;
+using System.Collections.Generic;
+ 
+class GFG
+{ 
+    // Prints union of arr1[0..m-1] and arr2[0..n-1]
+    static void printUnion(int []arr1, int []arr2)
+    {
+        HashSet<int> hs = new HashSet<int>();
+         
+        for (int i = 0; i < arr1.Length; i++) 
+            hs.Add(arr1[i]);     
+        for (int i = 0; i < arr2.Length; i++) 
+            hs.Add(arr2[i]);
+     
+            Console.WriteLine(string.Join(", ", hs));     
+    }
+     
+    // Prints intersection of arr1[0..m-1] and arr2[0..n-1]
+    static void printIntersection(int []arr1, int []arr2)
+    {
+        HashSet<int> hs = new HashSet<int>();
+         
+        for (int i = 0; i < arr1.Length; i++) 
+            hs.Add(arr1[i]);
+         
+        for (int i = 0; i < arr2.Length; i++) 
+            if (hs.Contains(arr2[i]))
+            Console.Write(arr2[i] + " ");
+    }
+     
+    // Driver Code
+    static void Main() 
+    {
+        int []arr1 = {7, 1, 5, 2, 3, 6};
+        int []arr2 = {3, 8, 6, 20, 7};
+ 
+        Console.WriteLine("Union of two arrays is : ");
+        printUnion(arr1, arr2);
+     
+        Console.WriteLine("\nIntersection of two arrays is : ");
+        printIntersection(arr1, arr2); 
+    }
+}
+ 
+// This code is contributed by mits
+```
+
+有关排序数组，请参见以下文章。
+
+[查找两个排序数组的并集和交集](https://www.geeksforgeeks.org/union-and-intersection-of-two-sorted-arrays-2/)。
