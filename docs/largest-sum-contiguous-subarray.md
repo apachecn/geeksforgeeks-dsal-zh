@@ -111,3 +111,422 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+import java.io.*; 
+// Java program to print largest contiguous array sum 
+import java.util.*; 
+  
+class Kadane 
+{ 
+    public static void main (String[] args) 
+    { 
+        int [] a = {-2, -3, 4, -1, -2, 1, 5, -3}; 
+        System.out.println("Maximum contiguous sum is " + 
+                                       maxSubArraySum(a)); 
+    } 
+  
+    static int maxSubArraySum(int a[]) 
+    { 
+        int size = a.length; 
+        int max_so_far = Integer.MIN_VALUE, max_ending_here = 0; 
+  
+        for (int i = 0; i < size; i++) 
+        { 
+            max_ending_here = max_ending_here + a[i]; 
+            if (max_so_far < max_ending_here) 
+                max_so_far = max_ending_here; 
+            if (max_ending_here < 0) 
+                max_ending_here = 0; 
+        } 
+        return max_so_far; 
+    } 
+}
+```
+
+## Python
+
+```
+# Python program to find maximum contiguous subarray 
+   
+# Function to find the maximum contiguous subarray 
+from sys import maxint 
+def maxSubArraySum(a,size): 
+       
+    max_so_far = -maxint - 1
+    max_ending_here = 0
+       
+    for i in range(0, size): 
+        max_ending_here = max_ending_here + a[i] 
+        if (max_so_far < max_ending_here): 
+            max_so_far = max_ending_here 
+  
+        if max_ending_here < 0: 
+            max_ending_here = 0   
+    return max_so_far 
+   
+# Driver function to check the above function  
+a = [-13, -3, -25, -20, -3, -16, -23, -12, -5, -22, -15, -4, -7] 
+print "Maximum contiguous sum is", maxSubArraySum(a,len(a)) 
+   
+#This code is contributed by _Devesh Agrawal_
+```
+
+## C#
+
+```
+// C# program to print largest  
+// contiguous array sum 
+using System; 
+  
+class GFG 
+{ 
+    static int maxSubArraySum(int []a) 
+    { 
+        int size = a.Length; 
+        int max_so_far = int.MinValue,  
+            max_ending_here = 0; 
+  
+        for (int i = 0; i < size; i++) 
+        { 
+            max_ending_here = max_ending_here + a[i]; 
+              
+            if (max_so_far < max_ending_here) 
+                max_so_far = max_ending_here; 
+              
+            if (max_ending_here < 0) 
+                max_ending_here = 0; 
+        } 
+          
+        return max_so_far; 
+    } 
+      
+    // Driver code  
+    public static void Main () 
+    { 
+        int [] a = {-2, -3, 4, -1, -2, 1, 5, -3}; 
+        Console.Write("Maximum contiguous sum is " + 
+                                maxSubArraySum(a)); 
+    } 
+  
+} 
+  
+// This code is contributed by Sam007_
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to print largest 
+// contiguous array sum 
+  
+function maxSubArraySum($a, $size) 
+{ 
+    $max_so_far = PHP_INT_MIN;  
+    $max_ending_here = 0; 
+  
+    for ($i = 0; $i < $size; $i++) 
+    { 
+        $max_ending_here = $max_ending_here + $a[$i]; 
+        if ($max_so_far < $max_ending_here) 
+            $max_so_far = $max_ending_here; 
+  
+        if ($max_ending_here < 0) 
+            $max_ending_here = 0; 
+    } 
+    return $max_so_far; 
+} 
+  
+// Driver code 
+$a = array(-2, -3, 4, -1, 
+           -2, 1, 5, -3); 
+$n = count($a); 
+$max_sum = maxSubArraySum($a, $n); 
+echo "Maximum contiguous sum is " ,  
+                          $max_sum; 
+  
+// This code is contributed by anuj_67. 
+?>
+```
+
+输出：
+
+
+```
+Maximum contiguous sum is 7
+```
+
+如果我们将`max_so_far`与`max_ending_here`进行比较，则仅当`max_ending_here`大于 0 时，才能进一步优化上述程序。
+
+## C++
+
+```
+int maxSubArraySum(int a[], int size) 
+{ 
+   int max_so_far = 0, max_ending_here = 0; 
+   for (int i = 0; i < size; i++) 
+   { 
+       max_ending_here = max_ending_here + a[i]; 
+       if (max_ending_here < 0) 
+           max_ending_here = 0; 
+  
+       /* Do not compare for all elements. Compare only    
+          when  max_ending_here > 0 */
+       else if (max_so_far < max_ending_here) 
+           max_so_far = max_ending_here; 
+   } 
+   return max_so_far; 
+}
+```
+
+## Java
+
+```
+static int maxSubArraySum(int a[],int size)  
+{  
+      
+    int max_so_far = 0, max_ending_here = 0;  
+  
+    for (int i = 0; i < size; i++)  
+    {  
+        max_ending_here = max_ending_here + a[i]; 
+        if (max_ending_here < 0)  
+            max_ending_here = 0;  
+          
+        /* Do not compare for all 
+           elements. Compare only  
+           when max_ending_here > 0 */
+        else if (max_so_far < max_ending_here)  
+            max_so_far = max_ending_here;  
+          
+    }  
+    return max_so_far;  
+}  
+  
+// This code is contributed by ANKITRAI1
+```
+
+## Python
+
+```
+def maxSubArraySum(a,size): 
+      
+    max_so_far = 0
+    max_ending_here = 0
+      
+    for i in range(0, size): 
+        max_ending_here = max_ending_here + a[i] 
+        if max_ending_here < 0: 
+            max_ending_here = 0
+          
+        # Do not compare for all elements. Compare only    
+        # when  max_ending_here > 0 
+        elif (max_so_far < max_ending_here): 
+            max_so_far = max_ending_here 
+              
+    return max_so_far
+```
+
+## C#
+
+```
+static int maxSubArraySum(int[] a, 
+                          int size)  
+{  
+int max_so_far = 0,  
+    max_ending_here = 0;  
+  
+for (int i = 0; i < size; i++)  
+{  
+    max_ending_here = max_ending_here + a[i]; 
+    if (max_ending_here < 0)  
+        max_ending_here = 0;  
+      
+    /* Do not compare for all 
+    elements. Compare only  
+    when max_ending_here > 0 */
+    else if (max_so_far < max_ending_here)  
+        max_so_far = max_ending_here;  
+}  
+return max_so_far;  
+}  
+  
+// This code is contributed 
+// by ChitraNayal
+```
+
+## PHP
+
+```
+<?php  
+function maxSubArraySum(&$a, $size) 
+{ 
+$max_so_far = 0; 
+$max_ending_here = 0; 
+for ($i = 0; $i < $size; $i++) 
+{ 
+    $max_ending_here = $max_ending_here + $a[$i]; 
+    if ($max_ending_here < 0) 
+        $max_ending_here = 0; 
+  
+    /* Do not compare for all elements.  
+       Compare only when max_ending_here > 0 */
+    else if ($max_so_far < $max_ending_here) 
+        $max_so_far = $max_ending_here; 
+} 
+return $max_so_far; 
+  
+// This code is contributed 
+// by ChitraNayal 
+?>
+```
+
+輸出：
+
+```
+Maximum contiguous sum is 7
+```
+
+为了打印具有最大和的子数组，只要获得最大和，我们就维护索引。
+
+## C++
+
+```
+int maxSubArraySum(int a[], int size) 
+{ 
+   int max_so_far = 0, max_ending_here = 0; 
+   for (int i = 0; i < size; i++) 
+   { 
+       max_ending_here = max_ending_here + a[i]; 
+       if (max_ending_here < 0) 
+           max_ending_here = 0; 
+  
+       /* Do not compare for all elements. Compare only    
+          when  max_ending_here > 0 */
+       else if (max_so_far < max_ending_here) 
+           max_so_far = max_ending_here; 
+   } 
+   return max_so_far; 
+}
+```
+
+## Java
+
+```
+static int maxSubArraySum(int a[],int size)  
+{  
+      
+    int max_so_far = 0, max_ending_here = 0;  
+  
+    for (int i = 0; i < size; i++)  
+    {  
+        max_ending_here = max_ending_here + a[i]; 
+        if (max_ending_here < 0)  
+            max_ending_here = 0;  
+          
+        /* Do not compare for all 
+           elements. Compare only  
+           when max_ending_here > 0 */
+        else if (max_so_far < max_ending_here)  
+            max_so_far = max_ending_here;  
+          
+    }  
+    return max_so_far;  
+}  
+  
+// This code is contributed by ANKITRAI1
+```
+
+## Python
+
+```
+def maxSubArraySum(a,size): 
+      
+    max_so_far = 0
+    max_ending_here = 0
+      
+    for i in range(0, size): 
+        max_ending_here = max_ending_here + a[i] 
+        if max_ending_here < 0: 
+            max_ending_here = 0
+          
+        # Do not compare for all elements. Compare only    
+        # when  max_ending_here > 0 
+        elif (max_so_far < max_ending_here): 
+            max_so_far = max_ending_here 
+              
+    return max_so_far
+```
+
+## C#
+
+```
+static int maxSubArraySum(int[] a, 
+                          int size)  
+{  
+int max_so_far = 0,  
+    max_ending_here = 0;  
+  
+for (int i = 0; i < size; i++)  
+{  
+    max_ending_here = max_ending_here + a[i]; 
+    if (max_ending_here < 0)  
+        max_ending_here = 0;  
+      
+    /* Do not compare for all 
+    elements. Compare only  
+    when max_ending_here > 0 */
+    else if (max_so_far < max_ending_here)  
+        max_so_far = max_ending_here;  
+}  
+return max_so_far;  
+}  
+  
+// This code is contributed 
+// by ChitraNayal
+```
+
+## PHP
+
+```
+<?php  
+function maxSubArraySum(&$a, $size) 
+{ 
+$max_so_far = 0; 
+$max_ending_here = 0; 
+for ($i = 0; $i < $size; $i++) 
+{ 
+    $max_ending_here = $max_ending_here + $a[$i]; 
+    if ($max_ending_here < 0) 
+        $max_ending_here = 0; 
+  
+    /* Do not compare for all elements.  
+       Compare only when max_ending_here > 0 */
+    else if ($max_so_far < $max_ending_here) 
+        $max_so_far = $max_ending_here; 
+} 
+return $max_so_far; 
+  
+// This code is contributed 
+// by ChitraNayal 
+?>
+```
+
+输出：
+
+```
+Maximum contiguous sum is 7
+Starting index 2
+Ending index 6
+```
+
+现在尝试以下问题：
+
+给定一个整数数组（可能其中一些元素为负），编写一个 C 程序，通过将`n == ARRAY_SIZE`的`n`个连续整数乘以数组，找出最大乘积。 同时打印最大乘积子数组的起点。
+
+参考：
+
+<http://en.wikipedia.org/wiki/Kadane%27s_Algorithm>
