@@ -72,3 +72,200 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to repeatedly search an element by 
+// doubling it after every successful search 
+import java.util.Arrays; 
+public class Test4 { 
+  
+    static int findElement(int a[], int n, int b) 
+    { 
+        // Sort the given array so that binary search 
+        // can be applied on it 
+        Arrays.sort(a); 
+  
+        int max = a[n - 1]; // Maximum array element 
+  
+        while (b < max) { 
+  
+            // search for the element b present or 
+            // not in array 
+            if (Arrays.binarySearch(a, b) > -1) 
+                b *= 2; 
+            else
+                return b; 
+        } 
+  
+        return b; 
+    } 
+  
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+        int a[] = { 1, 2, 3 }; 
+        int n = a.length; 
+        int b = 1; 
+        System.out.println(findElement(a, n, b)); 
+    } 
+} 
+// This article is contributed by Sumit Ghosh
+```
+
+## Python
+
+```
+# Python program to repeatedly search an element by 
+# doubling it after every successful search 
+  
+def binary_search(a, x, lo = 0, hi = None): 
+    if hi is None: 
+        hi = len(a) 
+    while lo < hi: 
+        mid = (lo + hi)//2
+        midval = a[mid] 
+        if midval < x: 
+            lo = mid + 1
+        elif midval > x:  
+            hi = mid 
+        else: 
+            return mid 
+    return -1
+  
+def findElement(a, n, b): 
+     
+    # Sort the given array so that binary search 
+    # can be applied on it 
+    a.sort() 
+   
+    mx = a[n - 1] # Maximum array element 
+   
+    while (b < max): 
+          
+        # search for the element b present or 
+        # not in array 
+        if (binary_search(a, b, 0, n) != -1): 
+            b *= 2
+        else: 
+            return b 
+    return b 
+   
+# Driver code 
+a = [ 1, 2, 3 ] 
+n = len(a) 
+b = 1
+print findElement(a, n, b) 
+  
+# This code is contributed by Sachin Bisht
+```
+
+## C#
+
+```
+// C# program to repeatedly search an 
+// element by doubling it after every 
+// successful search 
+using System; 
+  
+public class GFG { 
+  
+    static int findElement(int[] a, 
+                           int n, int b) 
+    { 
+  
+        // Sort the given array so that 
+        // binary search can be applied 
+        // on it 
+        Array.Sort(a); 
+  
+        // Maximum array element 
+        int max = a[n - 1]; 
+  
+        while (b < max) { 
+  
+            // search for the element b 
+            // present or not in array 
+            if (Array.BinarySearch(a, b) > -1) 
+                b *= 2; 
+            else
+                return b; 
+        } 
+  
+        return b; 
+    } 
+  
+    // Driver code 
+    public static void Main() 
+    { 
+        int[] a = { 1, 2, 3 }; 
+        int n = a.Length; 
+        int b = 1; 
+        Console.WriteLine(findElement(a, n, b)); 
+    } 
+} 
+  
+// This code is contributed by vt_m.
+```
+
+## PHP
+
+```
+<?php 
+// Php program to repeatedly search an element by 
+// doubling it after every successful search 
+  
+function binary_search($a, $x, $lo=0, $hi=NULL) 
+{ 
+    if ($hi == NULL) 
+        $hi = count($a); 
+    while ($lo < $hi) { 
+        $mid = ($lo + $hi) / 2; 
+        $midval = $a[$mid]; 
+        if ($midval < $x) 
+            $lo = $mid + 1; 
+        else if ($midval > $x) 
+            $hi = $mid; 
+        else
+            return $mid; 
+    } 
+    return -1; 
+} 
+  
+function findElement($a, $n, $b) 
+{ 
+// Sort the given array so that binary search 
+// can be applied on it 
+    sort($a); 
+  
+    $mx = $a[$n - 1]; // Maximum array element 
+  
+while ($b < max($a)) { 
+  
+// search for the element b present or 
+// not in array 
+    if (binary_search($a, $b, 0, $n) != -1) 
+        $b *= 2; 
+    else
+        return $b; 
+} 
+return $b; 
+} 
+  
+// Driver code 
+$a = array(1, 2, 3 ); 
+$n = count($a); 
+$b = 1; 
+echo findElement($a, $n, $b); 
+  
+// This code is contributed by Srathore 
+?>
+```
+
+输出：
+
+```
+4
+```
+

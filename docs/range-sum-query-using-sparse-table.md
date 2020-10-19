@@ -110,3 +110,226 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to find the sum  
+// in a given range in an array  
+// using sparse table. 
+class GFG 
+{ 
+      
+// Because 2^17 is larger than 10^5 
+static int k = 16; 
+  
+// Maximum value of array 
+static int N = 100000; 
+  
+// k + 1 because we need 
+// to access table[r][k] 
+static long table[][] = new long[N][k + 1]; 
+  
+// it builds sparse table. 
+static void buildSparseTable(int arr[], 
+                             int n) 
+{ 
+    for (int i = 0; i < n; i++) 
+        table[i][0] = arr[i]; 
+  
+    for (int j = 1; j <= k; j++) 
+        for (int i = 0; i <= n - (1 << j); i++) 
+            table[i][j] = table[i][j - 1] + 
+            table[i + (1 << (j - 1))][j - 1]; 
+} 
+  
+// Returns the sum of the  
+// elements in the range L and R. 
+static long query(int L, int R) 
+{ 
+    // boundaries of next query, 
+    // 0-indexed 
+    long answer = 0; 
+    for (int j = k; j >= 0; j--)  
+    { 
+        if (L + (1 << j) - 1 <= R)  
+        { 
+            answer = answer + table[L][j]; 
+  
+            // instead of having L', we 
+            // increment L directly 
+            L += 1 << j; 
+        } 
+    } 
+    return answer; 
+} 
+  
+// Driver Code 
+public static void main(String args[]) 
+{ 
+    int arr[] = { 3, 7, 2, 5, 8, 9 }; 
+    int n = arr.length; 
+  
+    buildSparseTable(arr, n); 
+  
+    System.out.println(query(0, 5)); 
+    System.out.println(query(3, 5)); 
+    System.out.println(query(2, 4)); 
+} 
+} 
+  
+// This code is contributed  
+// by Kirti_Mangal
+```
+
+## C#
+
+```
+// C# program to find the  
+// sum in a given range 
+// in an array using 
+// sparse table. 
+using System; 
+  
+class GFG 
+{ 
+    // Because 2^17 is 
+    // larger than 10^5 
+    static int k = 16; 
+      
+    // Maximum value  
+    // of array 
+    static int N = 100000; 
+      
+    // k + 1 because we  
+    // need to access table[r,k] 
+    static long [,]table =  
+           new long[N, k + 1]; 
+      
+    // it builds sparse table. 
+    static void buildSparseTable(int []arr,  
+                                 int n) 
+    { 
+        for (int i = 0; i < n; i++) 
+            table[i, 0] = arr[i]; 
+      
+        for (int j = 1; j <= k; j++) 
+            for (int i = 0;      
+                     i <= n - (1 << j); i++) 
+                table[i, j] = table[i, j - 1] + 
+                table[i + (1 << (j - 1)), j - 1]; 
+    }      
+      
+    // Returns the sum of the 
+    // elements in the range 
+    // L and R. 
+    static long query(int L, int R) 
+    { 
+        // boundaries of next  
+        // query, 0-indexed 
+        long answer = 0; 
+        for (int j = k; j >= 0; j--)  
+        { 
+            if (L + (1 << j) - 1 <= R)  
+            { 
+                answer = answer +  
+                         table[L, j]; 
+      
+                // instead of having  
+                // L', we increment  
+                // L directly 
+                L += 1 << j; 
+            } 
+        } 
+        return answer; 
+    } 
+      
+    // Driver Code 
+    static void Main() 
+    { 
+        int []arr = new int[]{3, 7, 2,  
+                              5, 8, 9}; 
+        int n = arr.Length; 
+      
+        buildSparseTable(arr, n); 
+      
+        Console.WriteLine(query(0, 5)); 
+        Console.WriteLine(query(3, 5)); 
+        Console.WriteLine(query(2, 4)); 
+    } 
+} 
+  
+// This code is contributed by  
+// Manish Shaw(manishshaw1)
+```
+
+## Python3
+
+```
+# Python3 program to find the sum in a given 
+# range in an array using sparse table. 
+  
+# Because 2^17 is larger than 10^5 
+k = 16
+  
+# Maximum value of array 
+n = 100000
+  
+# k + 1 because we need to access 
+# table[r][k] 
+  
+table = [[0 for j in range(k+1)] for i in range(n)] 
+  
+# it builds sparse table 
+def buildSparseTable(arr, n): 
+    global table, k 
+    for i in range(n): 
+        table[i][0] = arr[i] 
+  
+    for j in range(1,k+1): 
+        for i in range(0,n-(1<<j)+1): 
+            table[i][j] = table[i][j-1] + \ 
+                          table[i + (1 << (j - 1))][j - 1] 
+  
+# Returns the sum of the elements in the range 
+# L and R. 
+def query(L, R): 
+    global table, k 
+  
+    # boundaries of next query, 0 - indexed 
+    answer = 0
+    for j in range(k,-1,-1): 
+        if (L + (1 << j) - 1 <= R): 
+            answer = answer + table[L][j] 
+  
+            # instead of having L ', we 
+            # increment L directly 
+            L+=1<<j 
+  
+    return answer 
+  
+# Driver program 
+if __name__ == '__main__': 
+    arr = [3, 7, 2, 5, 8, 9] 
+    n = len(arr) 
+  
+    buildSparseTable(arr, n) 
+    print(query(0,5)) 
+    print(query(3,5)) 
+    print(query(2,4)) 
+      
+# This code is contributed by  
+# chaudhary_19 (Mayank Chaudhary)
+```
+
+输出：
+
+```
+34
+22
+15
+```
+
+这种用稀疏表回答查询的算法适用于`O(k)`，即`O(log(n))`，因为我们选择最小的`k`使得`2 ^ k + 1 > n`。
+
+稀疏表构造的时间复杂度：外循环以`O(k)`运行，内循环以`O(n)`运行。 因此，总的来说，我们得到`O(n * k)= O(n * log(n))`。
