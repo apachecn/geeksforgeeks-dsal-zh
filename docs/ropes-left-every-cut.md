@@ -92,3 +92,239 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to print how many 
+// Ropes are Left After Every Cut 
+import java.util.*; 
+import java.lang.*; 
+import java.io.*; 
+  
+class GFG { 
+      
+    // function print how many Ropes are Left After 
+    // Every Cutting operation 
+    public static void cuttringRopes(int Ropes[], int n) 
+    { 
+        // sort all Ropes in increasing 
+        // order of their length 
+        Arrays.sort(Ropes); 
+  
+        int singleOperation = 0; 
+  
+        // min length rope 
+        int cuttingLenght = Ropes[0]; 
+  
+        // now traverse through the given Ropes in 
+        // increase order of length 
+        for (int i = 1; i < n; i++) 
+        { 
+            // After cutting if current rope length 
+            // is greater than '0' that mean all 
+            // ropes to it's right side are also 
+            // greater than 0 
+            if (Ropes[i] - cuttingLenght > 0) 
+            { 
+                System.out.print(n - i + " "); 
+                  
+                // now current rope become  
+                // min length rope 
+                cuttingLenght = Ropes[i]; 
+  
+                singleOperation++; 
+            } 
+        } 
+          
+        // after first operation all ropes 
+        // length become zero 
+        if (singleOperation == 0) 
+            System.out.print("0"); 
+    } 
+  
+    public static void main(String[] arg) 
+    { 
+        int[] Ropes = { 5, 1, 1, 2, 3, 5 }; 
+        int n = Ropes.length; 
+        cuttringRopes(Ropes, n); 
+    } 
+}
+```
+
+## Python3
+
+```
+# Python 3 program to 
+# print how many 
+# Ropes are Left After 
+# Every Cut 
+  
+# Function print how many Ropes are  
+# Left AfterEvery Cutting operation 
+def cuttringRopes(Ropes, n) : 
+  
+    # sort all Ropes in increase  
+    # of there length 
+    Ropes.sort() 
+   
+    singleOperation = 0
+   
+    # min length rope 
+    cuttingLenght = Ropes[0] 
+   
+    # now traverse through the given 
+    # Ropes in increase order of length 
+    for i in range(1,n) : 
+  
+        # After cutting if current rope length 
+        # is greater than '0' that mean all 
+        # ropes to it's right side are also  
+        # greater than 0 
+        if (Ropes[i] - cuttingLenght > 0) : 
+  
+            # print number of ropes remains 
+            print((n - i) ,end= " ") 
+               
+            # now current rope become 
+            # min length rope 
+            cuttingLenght = Ropes[i] 
+            singleOperation = singleOperation + 1
+          
+          
+    if (singleOperation == 0) : 
+        print("0 ",end="") 
+  
+  
+Ropes = [ 5, 1, 1, 2, 3, 5 ] 
+n = len(Ropes) 
+cuttringRopes(Ropes, n) 
+  
+  
+  
+# This code is contributed by Nikita Tiwari.
+```
+
+## C#
+
+```
+// C# program to print how many 
+// Ropes are Left After Every Cut 
+using System; 
+  
+class GFG { 
+      
+    // function print how many Ropes are Left After 
+    // Every Cutting operation 
+    public static void cuttringRopes(int []Ropes, int n) 
+    { 
+        // sort all Ropes in increasing 
+        // order of their length 
+        Array.Sort(Ropes); 
+  
+        int singleOperation = 0; 
+  
+        // min length rope 
+        int cuttingLenght = Ropes[0]; 
+  
+        // now traverse through the given Ropes in 
+        // increase order of length 
+        for (int i = 1; i < n; i++) 
+        { 
+            // After cutting if current rope length 
+            // is greater than '0' that mean all 
+            // ropes to it's right side are also 
+            // greater than 0 
+            if (Ropes[i] - cuttingLenght > 0) 
+            { 
+                Console.Write(n - i + " "); 
+                  
+                // now current rope become  
+                // min length rope 
+                cuttingLenght = Ropes[i]; 
+  
+                singleOperation++; 
+            } 
+        } 
+          
+        // after first operation all ropes 
+        // length become zero 
+        if (singleOperation == 0) 
+            Console.Write("0"); 
+    } 
+  
+    // Driver code 
+    public static void Main() 
+    { 
+        int[] Ropes = { 5, 1, 1, 2, 3, 5 }; 
+        int n = Ropes.Length; 
+        cuttringRopes(Ropes, n); 
+    } 
+} 
+  
+// This code is contributed by vt_m.
+```
+
+## php
+
+```
+<?php 
+// PHP program to print how many 
+// Ropes are Left After Every Cut 
+  
+// Function print how many Ropes are  
+// Left AfterEvery Cutting operation 
+function cuttringRopes($Ropes, $n) 
+{ 
+      
+    // sort all Ropes in increase  
+    // of there length 
+    sort($Ropes); 
+  
+    $singleOperation = 0; 
+  
+    // min length rope 
+    $cuttingLenght = $Ropes[0]; 
+  
+    // now traverse through the given 
+    // Ropes in increase order of length 
+    for ($i = 1; $i < $n; $i++) 
+    { 
+          
+        // After cutting if current rope length 
+        // is greater than '0' that mean all 
+        // ropes to it's right side are also  
+        // greater than 0 
+        if ($Ropes[$i] - $cuttingLenght > 0) 
+        { 
+            // print number of ropes remains 
+            echo ($n - $i). " "; 
+              
+            // now current rope become 
+            // min length rope 
+            $cuttingLenght = $Ropes[$i]; 
+            $singleOperation++; 
+        } 
+    } 
+    if ($singleOperation == 0) 
+        echo "0 "; 
+} 
+  
+    // Driver Code 
+    $Ropes = array(5, 1, 1, 2, 3, 5); 
+    $n = count($Ropes); 
+    cuttringRopes($Ropes, $n); 
+  
+// This code is contributed by Sam007 
+?>
+```
+
+输出：
+
+```
+4 3 2 
+```
+
+时间复杂度：`O(n long(n))`。
+
+空间复杂度：`O(1)`。
