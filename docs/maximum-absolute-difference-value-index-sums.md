@@ -413,3 +413,196 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to calculate the maximum 
+// absolute difference of an array. 
+public class MaximumAbsoluteDifference 
+{ 
+    // Function to return maximum absolue 
+    // difference in linear time. 
+    private static int maxDistance(int[] array) 
+    { 
+        // max and min variables as described 
+        // in algorithm. 
+        int max1 = Integer.MIN_VALUE; 
+        int min1 = Integer.MAX_VALUE; 
+        int max2 = Integer.MIN_VALUE; 
+        int min2 = Integer.MAX_VALUE; 
+  
+        for (int i = 0; i < array.length; i++) 
+        { 
+  
+            // Updating max and min variables 
+            // as described in algorithm. 
+            max1 = Math.max(max1, array[i] + i); 
+            min1 = Math.min(min1, array[i] + i); 
+            max2 = Math.max(max2, array[i] - i); 
+            min2 = Math.min(min2, array[i] - i); 
+        } 
+  
+        // Calculating maximum absolute difference. 
+        return Math.max(max1 - min1, max2 - min2); 
+    } 
+  
+    // Driver program to test above function 
+    public static void main(String[] args) 
+    { 
+        int[] array = { -70, -64, -6, -56, 64, 
+                         61, -57, 16, 48, -98 }; 
+        System.out.println(maxDistance(array)); 
+    } 
+} 
+  
+// This code is contributed by Harikrishnan Rajan
+```
+
+## Python3
+
+```
+# Python program to 
+# calculate the maximum 
+# absolute difference 
+# of an array. 
+  
+# Function to return 
+# maximum absolue 
+# difference in linear time. 
+def maxDistance(array): 
+      
+    # max and min variables as described 
+    # in algorithm. 
+    max1 = -2147483648
+    min1 = +2147483647
+    max2 = -2147483648
+    min2 = +2147483647
+   
+    for i in range(len(array)): 
+  
+   
+        # Updating max and min variables 
+        # as described in algorithm. 
+        max1 = max(max1, array[i] + i) 
+        min1 = min(min1, array[i] + i) 
+        max2 = max(max2, array[i] - i) 
+        min2 = min(min2, array[i] - i) 
+      
+   
+    # Calculating maximum absolute difference. 
+    return max(max1 - min1, max2 - min2) 
+  
+   
+# Driver program to 
+# test above function 
+  
+array = [ -70, -64, -6, -56, 64, 
+           61, -57, 16, 48, -98 ] 
+  
+print(maxDistance(array)) 
+  
+# This code is contributed 
+# by Anant Agarwal.
+```
+
+## C#
+
+```
+// C# program to calculate the maximum 
+// absolute difference of an array. 
+using System; 
+  
+public class MaximumAbsoluteDifference 
+{ 
+    // Function to return maximum absolue 
+    // difference in linear time. 
+    private static int maxDistance(int[] array) 
+    { 
+        // max and min variables as described 
+        // in algorithm. 
+        int max1 = int.MinValue ; 
+        int min1 = int.MaxValue ; 
+        int max2 = int.MinValue ; 
+        int min2 =int.MaxValue ; 
+  
+        for (int i = 0; i < array.Length; i++) 
+        { 
+  
+            // Updating max and min variables 
+            // as described in algorithm. 
+            max1 = Math.Max(max1, array[i] + i); 
+            min1 = Math.Min(min1, array[i] + i); 
+            max2 = Math.Max(max2, array[i] - i); 
+            min2 = Math.Min(min2, array[i] - i); 
+        } 
+  
+        // Calculating maximum absolute difference. 
+        return Math.Max(max1 - min1, max2 - min2); 
+    } 
+  
+    // Driver program  
+    public static void Main() 
+    { 
+        int[] array = { -70, -64, -6, -56, 64, 
+                        61, -57, 16, 48, -98 }; 
+        Console.WriteLine(maxDistance(array)); 
+    } 
+} 
+  
+// This code is contributed by vt_m
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to calculate the maximum 
+// absolute difference of an array. 
+  
+// Function to return maximum absolue 
+// difference in linear time. 
+function maxDistance( $arr, $n) 
+{ 
+      
+    // max and min variables as  
+    // described in algorithm. 
+    $max1 = PHP_INT_MIN; $min1 =  
+                    PHP_INT_MAX; 
+    $max2 = PHP_INT_MIN;$min2 =  
+                    PHP_INT_MAX; 
+  
+    for($i = 0; $i < $n; $i++)  
+    { 
+  
+        // Updating max and min variables 
+        // as described in algorithm. 
+        $max1 = max($max1, $arr[$i] + $i); 
+        $min1 = min($min1, $arr[$i] + $i); 
+        $max2 = max($max2, $arr[$i] - $i); 
+        $min2 = min($min2, $arr[$i] - $i); 
+    } 
+  
+    // Calculating maximum  
+    // absolute difference. 
+    return max($max1 - $min1, 
+               $max2 - $min2); 
+} 
+  
+    // Driver Code 
+    $arr = array(-70, -64, -6, -56, 64, 
+                  61, -57, 16, 48, -98); 
+    $n = count($arr); 
+    echo maxDistance($arr, $n); 
+  
+// This code is contributed by anuj_67. 
+?>
+```
+
+输出：
+
+```
+167
+```
+
+时间复杂度：`O(n)`。
