@@ -123,3 +123,249 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+class min_steps 
+{ 
+    static int minInitialPoints(int points[][],int R,int C) 
+    { 
+        // dp[i][j] represents the minimum initial points player 
+        // should have so that when starts with cell(i, j) successfully 
+        // reaches the destination cell(m-1, n-1) 
+        int dp[][] = new int[R][C]; 
+        int m = R, n = C; 
+       
+        // Base case 
+        dp[m-1][n-1] = points[m-1][n-1] > 0? 1: 
+                       Math.abs(points[m-1][n-1]) + 1; 
+       
+        // Fill last row and last column as base to fill 
+        // entire table 
+        for (int i = m-2; i >= 0; i--) 
+             dp[i][n-1] = Math.max(dp[i+1][n-1] - points[i][n-1], 1); 
+        for (int j = n-2; j >= 0; j--) 
+             dp[m-1][j] = Math.max(dp[m-1][j+1] - points[m-1][j], 1); 
+       
+        // fill the table in bottom-up fashion 
+        for (int i=m-2; i>=0; i--) 
+        { 
+            for (int j=n-2; j>=0; j--) 
+            { 
+                int min_points_on_exit = Math.min(dp[i+1][j], dp[i][j+1]); 
+                dp[i][j] = Math.max(min_points_on_exit - points[i][j], 1); 
+            } 
+         } 
+       
+         return dp[0][0]; 
+    } 
+  
+    /* Driver program to test above function */ 
+    public static void main (String args[]) 
+    { 
+          int points[][] = { {-2,-3,3}, 
+                      {-5,-10,1}, 
+                      {10,30,-5} 
+                    }; 
+          int R = 3,C = 3; 
+          System.out.println("Minimum Initial Points Required: "+ 
+                                            minInitialPoints(points,R,C) ); 
+    } 
+}/* This code is contributed by Rajat Mishra */
+```
+
+## Python3
+
+```
+# Python3 program to find minimum initial 
+# points to reach destination 
+import math as mt 
+R = 3
+C = 3
+  
+def minInitialPoints(points): 
+    ''' 
+    dp[i][j] represents the minimum initial 
+    points player should have so that when  
+    starts with cell(i, j) successfully 
+    reaches the destination cell(m-1, n-1) 
+    '''
+    dp = [[0 for x in range(C + 1)]  
+             for y in range(R + 1)] 
+    m, n = R, C 
+      
+    if points[m - 1][n - 1] > 0: 
+        dp[m - 1][n - 1] = 1
+    else: 
+        dp[m - 1][n - 1] = abs(points[m - 1][n - 1]) + 1
+    ''' 
+    Fill last row and last column as base 
+    to fill entire table 
+    '''
+    for i in range (m - 2, -1, -1): 
+        dp[i][n - 1] = max(dp[i + 1][n - 1] -
+                           points[i][n - 1], 1) 
+    for i in range (2, -1, -1): 
+        dp[m - 1][i] = max(dp[m - 1][i + 1] -
+                           points[m - 1][i], 1) 
+    ''' 
+    fill the table in bottom-up fashion 
+    '''
+    for i in range(m - 2, -1, -1): 
+        for j in range(n - 2, -1, -1): 
+            min_points_on_exit = min(dp[i + 1][j], 
+                                     dp[i][j + 1]) 
+            dp[i][j] = max(min_points_on_exit -
+                               points[i][j], 1) 
+              
+    return dp[0][0]  
+      
+# Driver code 
+points = [[-2, -3, 3], 
+          [-5, -10, 1], 
+          [10, 30, -5]] 
+  
+print("Minimum Initial Points Required:",  
+                minInitialPoints(points)) 
+  
+  
+# This code is contributed by  
+# Mohit kumar 29 (IIIT gwalior)
+```
+
+## C#
+
+```
+// C# program Minimum Initial Points 
+// to Reach Destination 
+using System; 
+class GFG { 
+      
+    static int minInitialPoints(int [,]points,  
+                                 int R, int C) 
+    { 
+          
+        // dp[i][j] represents the  
+        // minimum initial points  
+        // player should have so  
+        // that when starts with  
+        // cell(i, j) successfully 
+        // reaches the destination 
+        // cell(m-1, n-1) 
+        int [,]dp = new int[R,C]; 
+        int m = R, n = C; 
+      
+        // Base case 
+        dp[m - 1,n - 1] = points[m - 1, n - 1] > 0 ? 1: 
+                     Math.Abs(points[m - 1,n - 1]) + 1; 
+      
+        // Fill last row and last  
+        // column as base to fill 
+        // entire table 
+        for (int i = m-2; i >= 0; i--) 
+            dp[i, n - 1] = Math.Max(dp[i + 1, n - 1] -  
+                                points[i, n - 1], 1); 
+        for (int j = n - 2; j >= 0; j--) 
+            dp[m - 1, j] = Math.Max(dp[m - 1, j + 1] -  
+                                points[m - 1, j], 1); 
+      
+        // fill the table in  
+        // bottom-up fashion 
+        for(int i = m - 2; i >= 0; i--) 
+        { 
+            for (int j = n - 2; j >= 0; j--) 
+            { 
+                int min_points_on_exit = Math.Min(dp[i + 1, j],  
+                                                  dp[i, j + 1]); 
+                dp[i, j] = Math.Max(min_points_on_exit -  
+                                      points[i, j], 1); 
+            } 
+        } 
+      
+        return dp[0, 0]; 
+    } 
+  
+    // Driver Code 
+    public static void Main () 
+    { 
+        int [,]points = {{-2,-3,3}, 
+                         {-5,-10,1}, 
+                           {10,30,-5}}; 
+        int R = 3,C = 3; 
+        Console.Write("Minimum Initial Points Required: "+ 
+                           minInitialPoints(points, R, C)); 
+    } 
+} 
+  
+// This code is contributed by nitin mittal.
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find minimum initial 
+// points to reach destination 
+$R = 3; 
+$C = 3; 
+  
+function minInitialPoints($points) 
+{ 
+    // dp[i][j] represents the minimum  
+    // initial points player should have  
+    // so that when starts with cell(i, j)  
+    // successfully reaches the destination 
+    // cell(m-1, n-1) 
+    global $R; 
+    global $C; 
+    $dp[$R][$C] = array(); 
+    $m = $R; 
+    $n = $C; 
+  
+    // Base case 
+    $dp[$m - 1][$n - 1] = $points[$m - 1][$n - 1] > 0 ? 1 :  
+                      abs($points[$m - 1][$n - 1]) + 1; 
+  
+    // Fill last row and last column as  
+    // base to fill entire table 
+    for ($i = $m - 2; $i >= 0; $i--) 
+        $dp[$i][$n - 1] = max($dp[$i + 1][$n - 1] -  
+                              $points[$i][$n - 1], 1); 
+    for ($j = $n - 2; $j >= 0; $j--) 
+        $dp[$m - 1][$j] = max($dp[$m - 1][$j + 1] -  
+                              $points[$m - 1][$j], 1); 
+  
+    // fill the table in bottom-up fashion 
+    for ($i = $m - 2; $i >= 0; $i--) 
+    { 
+        for ($j = $n - 2; $j >= 0; $j--) 
+        { 
+            $min_points_on_exit = min($dp[$i + 1][$j],  
+                                      $dp[$i][$j + 1]); 
+            $dp[$i][$j] = max($min_points_on_exit -  
+                              $points[$i][$j], 1); 
+        } 
+    } 
+  
+    return $dp[0][0]; 
+} 
+  
+// Driver Code 
+$points = array(array(-2, -3, 3), 
+                array(-5, -10, 1), 
+                array(10, 30, -5)); 
+              
+echo "Minimum Initial Points Required: ", 
+               minInitialPoints($points); 
+  
+// This code is contributed by akt_mit 
+?>
+```
+
+输出：
+
+```
+Minimum Initial Points Required: 7
+```
+
