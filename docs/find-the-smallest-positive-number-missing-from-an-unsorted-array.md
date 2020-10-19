@@ -511,3 +511,263 @@ int main()
 // This code is contributed by gp6 
 
 ```
+
+## C++
+
+```
+// C++ implementation of the approach 
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+// Function to return the first missing positive 
+// number from the given unsorted array 
+int firstMissingPos(int A[], int n) 
+{ 
+  
+    // To mark the occurrence of elements 
+    bool present[n + 1] = { false }; 
+  
+    // Mark the occurrences 
+    for (int i = 0; i < n; i++) { 
+  
+        // Only mark the required elements 
+        // All non-positive elements and 
+        // the elements greater n + 1 will never 
+        // be the answer 
+        // For example, the array will be {1, 2, 3} 
+        // in the worst case and the result 
+        // will be 4 which is n + 1 
+        if (A[i] > 0 && A[i] <= n) 
+            present[A[i]] = true; 
+    } 
+  
+    // Find the first element which didn't 
+    // appear in the original array 
+    for (int i = 1; i <= n; i++) 
+        if (!present[i]) 
+            return i; 
+  
+    // If the original array was of the 
+    // type {1, 2, 3} in its sorted form 
+    return n + 1; 
+} 
+  
+// Driver code 
+int main() 
+{ 
+  
+    int A[] = { 0, 10, 2, -10, -20 }; 
+    int size = sizeof(A) / sizeof(A[0]); 
+    cout << firstMissingPos(A, size); 
+} 
+  
+// This code is contributed by gp6
+```
+
+## Java
+
+```
+// Java Program to find the smallest 
+// positive missing number 
+import java.util.Arrays; 
+public class GFG { 
+  
+    static int solution(int[] A) 
+    { 
+        int n = A.length; 
+  
+        // To mark the occurrence of elements 
+        boolean[] present = new boolean[n + 1]; 
+  
+        // Mark the occurrences 
+        for (int i = 0; i < n; i++) { 
+  
+            // Only mark the required elements 
+            // All non-positive elements and 
+            // the elements greater n + 1 will never 
+            // be the answer 
+            // For example, the array will be {1, 2, 3} 
+            // in the worst case and the result 
+            // will be 4 which is n + 1 
+            if (A[i] > 0 && A[i] <= n) 
+                present[A[i]] = true; 
+        } 
+  
+        // Find the first element which didn't 
+        // appear in the original array 
+        for (int i = 1; i <= n; i++) 
+            if (!present[i]) 
+                return i; 
+  
+        // If the original array was of the 
+        // type {1, 2, 3} in its sorted form 
+        return n + 1; 
+    } 
+  
+    public static void main(String[] args) 
+    { 
+  
+        int A[] = { 0, 10, 2, -10, -20 }; 
+        System.out.println(solution(A)); 
+    } 
+} 
+// This code is contributed by 29AjayKumar
+```
+
+## Python 3
+
+```
+# Python Program to find the smallest 
+# positive missing number 
+  
+def solution(A):# Our original array 
+  
+    m = max(A) # Storing maximum value 
+    if m < 1: 
+          
+        # In case all values in our array are negative 
+        return 1 
+    if len(A) == 1: 
+          
+        # If it contains only one element 
+        return 2 if A[0] == 1 else 1     
+    l = [0] * m 
+    for i in range(len(A)): 
+        if A[i] > 0: 
+            if l[A[i] - 1] != 1: 
+                  
+                # Changing the value status at the index of our list 
+                l[A[i] - 1] = 1 
+    for i in range(len(l)): 
+          
+        # Encountering first 0, i.e, the element with least value 
+        if l[i] == 0:  
+            return i + 1
+            # In case all values are filled between 1 and m 
+    return i + 2     
+  
+A = [0, 10, 2, -10, -20] 
+print(solution(A))
+```
+
+## C#
+
+```
+// C# Program to find the smallest 
+// positive missing number 
+using System; 
+using System.Linq; 
+  
+class GFG { 
+    static int solution(int[] A) 
+    { 
+        // Our original array 
+  
+        int m = A.Max(); // Storing maximum value 
+  
+        // In case all values in our array are negative 
+        if (m < 1) { 
+            return 1; 
+        } 
+        if (A.Length == 1) { 
+  
+            // If it contains only one element 
+            if (A[0] == 1) { 
+                return 2; 
+            } 
+            else { 
+                return 1; 
+            } 
+        } 
+        int i = 0; 
+        int[] l = new int[m]; 
+        for (i = 0; i < A.Length; i++) { 
+            if (A[i] > 0) { 
+                // Changing the value status at the index of our list 
+                if (l[A[i] - 1] != 1) { 
+                    l[A[i] - 1] = 1; 
+                } 
+            } 
+        } 
+  
+        // Encountering first 0, i.e, the element with least value 
+        for (i = 0; i < l.Length; i++) { 
+            if (l[i] == 0) { 
+                return i + 1; 
+            } 
+        } 
+  
+        // In case all values are filled between 1 and m 
+        return i + 2; 
+    } 
+  
+    // Driver code 
+    public static void Main() 
+    { 
+        int[] A = { 0, 10, 2, -10, -20 }; 
+        Console.WriteLine(solution(A)); 
+    } 
+} 
+  
+// This code is contributed by PrinciRaj1992
+```
+
+## PHP
+
+```
+<?php  
+// PHP Program to find the smallest 
+// positive missing number 
+   
+function solution($A){//Our original array 
+   
+    $m = max($A); //Storing maximum value 
+    if ($m < 1) 
+    {          
+        // In case all values in our array are negative 
+        return 1; 
+    } 
+    if (sizeof($A) == 1) 
+    {   
+        //If it contains only one element 
+        if ($A[0] == 1) 
+            return 2 ; 
+        else 
+            return 1 ; 
+    }         
+    $l = array_fill(0, $m, NULL); 
+    for($i = 0; $i < sizeof($A); $i++) 
+    {         
+        if( $A[$i] > 0) 
+        { 
+            if ($l[$A[$i] - 1] != 1) 
+            { 
+                  
+                //Changing the value status at the index of our list 
+                $l[$A[$i] - 1] = 1; 
+            } 
+        } 
+    } 
+    for ($i = 0;$i < sizeof($l); $i++) 
+    { 
+           
+        //Encountering first 0, i.e, the element with least value 
+        if ($l[$i] == 0)  
+            return $i+1; 
+    } 
+            //In case all values are filled between 1 and m 
+    return $i+2;     
+} 
+  
+$A = array(0, 10, 2, -10, -20); 
+echo solution($A); 
+return 0; 
+?>
+```
+
+输出：
+
+```
+ 1 
+```
+

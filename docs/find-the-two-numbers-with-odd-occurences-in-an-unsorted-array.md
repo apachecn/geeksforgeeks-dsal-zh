@@ -38,14 +38,13 @@ Output: 10 and 20
 
 因此，第一步之后，我们对`x`和`y`进行了 XOR。 令 XOR 的值为`xor2`。 `xor2`中的每个置位指示`x`和`y`中的对应位具有彼此不同的值。 例如，如果`x = 6`（0110）并且`y`为 15（1111），则`xor2`将为（1001），`xor2`中的两个置位指示`x`和`y`中的相应位不同。 在第二步中，我们选择`xor2`的一个固定位并将数组元素分为两组。 `x`和`y`将进入不同的组。 在下面的代码中，选择`xor2`的最右边设置位是因为很容易获得数字的最右边设置位。 如果我们对所有具有对应位集（或 1）的数组元素进行 XOR，则得到第一个奇数。 而且，如果我们对所有具有相应位 0 的元素进行 XOR，那么我们将获得另一个奇数发生数。 由于 XOR 具有相同的属性，因此可以执行此步骤。 一个数字的所有出现都将进入同一集合。 对所有出现的偶数次出现的所有数字进行 XOR 运算，其结果将为 0。 集合的异或将是奇数发生的元素之一。
 
-## C++ 
+## C++
 
-```cpp
-
+```
 // C++ Program to find the two odd occurring elements  
 #include <bits/stdc++.h> 
 using namespace std; 
-
+  
 /* Prints two numbers that occur odd number of times. The  
 function assumes that the array size is at least 2 and  
 there are exactly two numbers occurring odd number of times. */
@@ -56,35 +55,35 @@ void printTwoOdd(int arr[], int size) 
     int i;  
     int n = size - 2;  
     int x = 0, y = 0;  
-
+      
     /* Get the xor of all elements in arr[]. The xor will basically  
         be xor of two odd occurring elements */
     for(i = 1; i < size; i++)  
         xor2 = xor2 ^ arr[i];  
-
-    /* Get one set bit in the xor2\. We get rightmost set bit  
+      
+    /* Get one set bit in the xor2. We get rightmost set bit  
         in the following line as it is easy to get */
     set_bit_no = xor2 & ~(xor2-1);  
-
+      
     /* Now divide elements in two sets:  
         1) The elements having the corresponding bit as 1.  
-        2) The elements having the corresponding bit as 0\. */
+        2) The elements having the corresponding bit as 0. */
     for(i = 0; i < size; i++)  
     {  
         /* XOR of first set is finally going to hold one odd  
         occurring number x */
         if(arr[i] & set_bit_no)  
         x = x ^ arr[i];  
-
+      
         /* XOR of second set is finally going to hold the other  
         odd occurring number y */
         else
         y = y ^ arr[i];  
     }  
-
+  
     cout << "The two ODD elements are " << x << " & " << y;  
 }  
-
+  
 /* Driver code */
 int main()  
 {  
@@ -93,7 +92,353 @@ int main() 
     printTwoOdd(arr, arr_size);  
     return 0;  
 }  
+  
+// This is code is contributed by rathbhupendra
+```
 
-// This is code is contributed by rathbhupendra 
+## C
 
 ```
+// Program to find the two odd occurring elements 
+#include<stdio.h> 
+  
+/* Prints two numbers that occur odd number of times. The 
+   function assumes that the array size is at least 2 and 
+   there are exactly two numbers occurring odd number of times. */
+void printTwoOdd(int arr[], int size) 
+{ 
+  int xor2 = arr[0]; /* Will hold XOR of two odd occurring elements */
+  int set_bit_no;  /* Will have only single set bit of xor2 */
+  int i; 
+  int n = size - 2; 
+  int x = 0, y = 0; 
+  
+  /* Get the xor of all elements in arr[]. The xor will basically 
+     be xor of two odd occurring elements */
+  for(i = 1; i < size; i++) 
+    xor2 = xor2 ^ arr[i]; 
+  
+  /* Get one set bit in the xor2. We get rightmost set bit 
+     in the following line as it is easy to get */
+  set_bit_no = xor2 & ~(xor2-1); 
+  
+  /* Now divide elements in two sets:  
+    1) The elements having the corresponding bit as 1.  
+    2) The elements having the corresponding bit as 0.  */
+  for(i = 0; i < size; i++) 
+  { 
+     /* XOR of first set is finally going to hold one odd  
+       occurring number x */ 
+    if(arr[i] & set_bit_no) 
+      x = x ^ arr[i]; 
+  
+     /* XOR of second set is finally going to hold the other  
+       odd occurring number y */ 
+    else
+      y = y ^ arr[i];  
+  } 
+  
+  printf("\n The two ODD elements are %d & %d ", x, y); 
+} 
+  
+/* Driver program to test above function */
+int main() 
+{ 
+  int arr[] = {4, 2, 4, 5, 2, 3, 3, 1}; 
+  int arr_size = sizeof(arr)/sizeof(arr[0]); 
+  printTwoOdd(arr, arr_size); 
+  getchar(); 
+  return 0; 
+}
+```
+
+## Java
+
+```
+// Java program to find two odd 
+// occurring elements 
+  
+import java.util.*; 
+  
+class Main 
+{    
+       
+    /* Prints two numbers that occur odd  
+       number of times. The function assumes  
+       that the array size is at least 2 and 
+       there are exactly two numbers occurring  
+       odd number of times. */
+    static void printTwoOdd(int arr[], int size) 
+    { 
+      /* Will hold XOR of two odd occurring elements */    
+      int xor2 = arr[0];  
+        
+      /* Will have only single set bit of xor2 */
+      int set_bit_no;   
+      int i; 
+      int n = size - 2; 
+      int x = 0, y = 0; 
+       
+      /* Get the xor of all elements in arr[].  
+         The xor will basically be xor of two  
+         odd occurring elements */
+      for(i = 1; i < size; i++) 
+        xor2 = xor2 ^ arr[i]; 
+       
+      /* Get one set bit in the xor2. We get  
+         rightmost set bit in the following  
+         line as it is easy to get */
+      set_bit_no = xor2 & ~(xor2-1); 
+       
+      /* Now divide elements in two sets:  
+            1) The elements having the  
+               corresponding bit as 1.  
+            2) The elements having the  
+               corresponding bit as 0.  */
+      for(i = 0; i < size; i++) 
+      { 
+         /* XOR of first set is finally going  
+            to hold one odd occurring number x */
+        if((arr[i] & set_bit_no)>0) 
+          x = x ^ arr[i]; 
+       
+         /* XOR of second set is finally going  
+            to hold the other odd occurring number y */
+        else
+          y = y ^ arr[i];  
+      } 
+       
+      System.out.println("The two ODD elements are "+ 
+                                        x + " & " + y); 
+    } 
+      
+    // main function 
+    public static void main (String[] args)  
+    { 
+        int arr[] = {4, 2, 4, 5, 2, 3, 3, 1}; 
+        int arr_size = arr.length; 
+        printTwoOdd(arr, arr_size); 
+    } 
+}
+```
+
+## Python3
+
+```
+# Python3 program to find the 
+# two odd occurring elements 
+  
+# Prints two numbers that occur odd 
+# number of times. The function assumes 
+# that the array size is at least 2 and 
+# there are exactly two numbers occurring 
+# odd number of times. 
+def printTwoOdd(arr, size): 
+      
+    # Will hold XOR of two odd occurring elements  
+    xor2 = arr[0]  
+      
+    # Will have only single set bit of xor2 
+    set_bit_no = 0  
+    n = size - 2
+    x, y = 0, 0
+  
+    # Get the xor of all elements in arr[].  
+    # The xor will basically be xor of two 
+    # odd occurring elements  
+    for i in range(1, size): 
+        xor2 = xor2 ^ arr[i] 
+  
+    # Get one set bit in the xor2. We get  
+    # rightmost set bit in the following  
+    # line as it is easy to get  
+    set_bit_no = xor2 & ~(xor2 - 1) 
+  
+    # Now divide elements in two sets:  
+    # 1) The elements having the corresponding bit as 1.  
+    # 2) The elements having the corresponding bit as 0.  
+    for i in range(size): 
+      
+        # XOR of first set is finally going to   
+        # hold one odd  occurring number x  
+        if(arr[i] & set_bit_no): 
+            x = x ^ arr[i] 
+  
+        # XOR of second set is finally going  
+        # to hold the other odd occurring number y  
+        else: 
+            y = y ^ arr[i]  
+  
+    print("The two ODD elements are", x, "&", y) 
+  
+# Driver Code 
+arr = [4, 2, 4, 5, 2, 3, 3, 1] 
+arr_size = len(arr) 
+printTwoOdd(arr, arr_size) 
+  
+# This code is contributed by Anant Agarwal.
+```
+
+## C#
+
+```
+// C# program to find two odd 
+// occurring elements 
+using System; 
+  
+class main 
+{    
+        
+    // Prints two numbers that occur 
+    // odd number of times. Function 
+    // assumes that array size is at 
+    // least 2 and there are exactly 
+    // two numbers occurring odd number 
+    // of times. 
+    static void printTwoOdd(int []arr, int size) { 
+     
+      // Will hold XOR of two odd 
+      //occurring elements    
+      int xor2 = arr[0];  
+         
+      // Will have only single set 
+      // bit of xor2 
+      int set_bit_no;   
+      int i; 
+        
+      //int n = size - 2; 
+      int x = 0, y = 0; 
+        
+      // Get the xor of all the elements 
+      // in arr[].The xor will basically  
+      // be xor of two odd occurring 
+      // elements 
+      for(i = 1; i < size; i++) 
+        xor2 = xor2 ^ arr[i]; 
+        
+      // Get one set bit in the xor2. 
+      // We get rightmost set bit in 
+      // the following line as it is 
+      // to get. 
+         set_bit_no = xor2 & ~(xor2-1); 
+        
+      // divide elements in two sets:  
+      // 1) The elements having the  
+      // corresponding bit as 1.  
+      // 2) The elements having the  
+      // corresponding bit as 0. 
+      for(i = 0; i < size; i++) 
+      { 
+         // XOR of first set is finally  
+         // going to hold one odd  
+         // occurring number x 
+            if((arr[i] & set_bit_no)>0) 
+            x = x ^ arr[i]; 
+        
+            // XOR of second set is finally 
+            // going to hold the other  
+            // odd occurring number y 
+            else
+            y = y ^ arr[i];  
+      } 
+        
+      Console.WriteLine("The two ODD elements are "+ 
+                                        x + " & " + y); 
+    } 
+       
+    // main function 
+    public static void Main()  
+    { 
+        int []arr = {4, 2, 4, 5, 2, 3, 3, 1}; 
+        int arr_size = arr.Length; 
+        printTwoOdd(arr, arr_size); 
+    } 
+} 
+  
+//This code is contributed by Anant Agarwal.
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find the  
+// two odd occurring elements 
+  
+/* Prints two numbers that occur 
+   odd number of times. The 
+   function assumes that the  
+   array size is at least 2 and 
+   there are exactly two numbers  
+   occurring odd number of times. */
+function printTwoOdd($arr, $size) 
+{ 
+      
+     // Will hold XOR of two  
+     // odd occurring elements 
+     $xor2 = $arr[0]; 
+       
+     // Will have only single  
+     // set bit of xor2  
+     $set_bit_no; 
+       
+    $i; 
+    $n = $size - 2; 
+    $x = 0;$y = 0; 
+  
+     // Get the xor of all elements 
+     // in arr[]. The xor will basically 
+     // be xor of two odd occurring  
+     // elements  
+    for($i = 1; $i < $size; $i++) 
+        $xor2 = $xor2 ^ $arr[$i]; 
+      
+    // Get one set bit in the xor2.  
+    // We get rightmost set bit 
+    // in the following line as  
+    // it is easy to get  
+    $set_bit_no = $xor2 & ~($xor2-1); 
+      
+    /* Now divide elements in two sets:  
+        1) The elements having the 
+           corresponding bit as 1.  
+        2) The elements having the  
+           corresponding bit as 0. */
+    for($i = 0; $i < $size; $i++) 
+    { 
+          
+        /* XOR of first set is finally  
+           going to hold one odd  
+           occurring number x */
+        if($arr[$i] & $set_bit_no) 
+        $x = $x ^ $arr[$i]; 
+      
+        /* XOR of second set is finally 
+           going to hold the other  
+           odd occurring number y */
+        else
+        $y = $y ^ $arr[$i];  
+    } 
+      
+    echo "The two ODD elements are ", $x, " & ", $y; 
+    } 
+  
+// Driver Code 
+$arr = array(4, 2, 4, 5, 2, 3, 3, 1); 
+$arr_size = sizeof($arr); 
+printTwoOdd($arr, $arr_size); 
+  
+// This code is Contributed by Ajit 
+?>
+```
+
+输出：
+
+```
+The two ODD elements are 5 & 1
+```
+
+时间复杂度：`O(n)`。
+
+辅助空间：`O(1)`。
+
