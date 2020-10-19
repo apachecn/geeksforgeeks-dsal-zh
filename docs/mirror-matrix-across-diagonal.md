@@ -464,3 +464,192 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Efficient Java program to find mirror of 
+// matrix across diagonal. 
+import java.io.*; 
+  
+class GFG { 
+      
+    static int MAX = 100; 
+      
+    static void imageSwap(int mat[][], int n) 
+    { 
+          
+        // traverse a matrix and swap  
+        // mat[i][j] with mat[j][i] 
+        for (int i = 0; i < n; i++) 
+            for (int j = 0; j <= i; j++)  
+                mat[i][j] = mat[i][j] + mat[j][i] 
+                       - (mat[j][i] = mat[i][j]);      
+    } 
+      
+    // Utility function to print a matrix 
+    static void printMatrix(int mat[][], int n) 
+    { 
+        for (int i = 0; i < n; i++) { 
+            for (int j = 0; j < n; j++) 
+                System.out.print( mat[i][j] + " "); 
+            System.out.println(); 
+        } 
+    } 
+      
+    // driver program to test above function 
+    public static void main (String[] args)  
+    { 
+        int mat[][] = { { 1, 2, 3, 4 }, 
+                        { 5, 6, 7, 8 }, 
+                        { 9, 10, 11, 12 }, 
+                        { 13, 14, 15, 16 } }; 
+        int n = 4; 
+        imageSwap(mat, n); 
+        printMatrix(mat, n); 
+    } 
+} 
+  
+// This code is contributed by anuj_67.
+```
+
+## Python3
+
+```
+# Efficient Python3 program to find mirror of 
+# matrix across diagonal. 
+from builtins import range
+MAX = 100; 
+  
+def imageSwap(mat, n): 
+  
+    # traverse a matrix and swap 
+    # mat[i][j] with mat[j][i] 
+    for i in range(n): 
+        for j in range(i + 1): 
+            t = mat[i][j]; 
+            mat[i][j] = mat[j][i] 
+            mat[j][i] = t 
+  
+# Utility function to pra matrix 
+def printMatrix(mat, n): 
+    for i in range(n): 
+        for j in range(n): 
+            print(mat[i][j], end=" "); 
+        print(); 
+  
+# Driver code 
+if __name__ == '__main__': 
+    mat = [1, 2, 3, 4], \ 
+        [5, 6, 7, 8], \ 
+        [9, 10, 11, 12], \ 
+        [13, 14, 15, 16]; 
+    n = 4; 
+    imageSwap(mat, n); 
+    printMatrix(mat, n); 
+  
+# This code is contributed by Rajput-Ji
+```
+
+## C#
+
+```
+// Efficient C# program to find mirror of 
+// matrix across diagonal. 
+using System; 
+class GFG { 
+      
+    //static int MAX = 100; 
+      
+    static void imageSwap(int [,]mat, int n) 
+    { 
+          
+        // traverse a matrix and swap  
+        // mat[i][j] with mat[j][i] 
+        for (int i = 0; i < n; i++) 
+            for (int j = 0; j <= i; j++)  
+                mat[i,j] = mat[i,j] + mat[j,i] 
+                    - (mat[j,i] = mat[i,j]);      
+    } 
+      
+    // Utility function to print a matrix 
+    static void printMatrix(int [,]mat, int n) 
+    { 
+        for (int i = 0; i < n; i++) { 
+            for (int j = 0; j < n; j++) 
+                Console.Write( mat[i,j] + " "); 
+            Console.WriteLine(); 
+        } 
+    } 
+      
+    // driver program to test above function 
+    public static void Main ()  
+    { 
+        int [,]mat = { { 1, 2, 3, 4 }, 
+                        { 5, 6, 7, 8 }, 
+                        { 9, 10, 11, 12 }, 
+                        { 13, 14, 15, 16 } }; 
+        int n = 4; 
+        imageSwap(mat, n); 
+        printMatrix(mat, n); 
+    } 
+} 
+  
+// This code is contributed by anuj_67.
+```
+
+## PHP
+
+```
+<?php 
+// Efficient PHP program to find mirror  
+// of matrix across diagonal. 
+  
+function imageSwap(&$mat, $n) 
+{ 
+    // traverse a matrix and swap  
+    // mat[i][j] with mat[j][i] 
+    for ($i = 0; $i < $n; $i++) 
+        for ($j = 0; $j <= $i; $j++)  
+            $mat[$i][$j] = $mat[$i][$j] + $mat[$j][$i] -  
+                          ($mat[$j][$i] = $mat[$i][$j]);  
+} 
+  
+// Utility function to print a matrix 
+function printMatrix(&$mat, $n) 
+{ 
+    for ($i = 0; $i < $n; $i++) 
+    { 
+        for ($j = 0; $j < $n; $j++) 
+        { 
+            echo ($mat[$i][$j]); 
+            echo (" "); 
+        } 
+        echo ("\n"); 
+    } 
+} 
+  
+// Driver Code 
+$mat = array(array(1, 2, 3, 4), 
+             array(5, 6, 7, 8), 
+             array(9, 10, 11, 12), 
+             array(13, 14, 15, 16)); 
+$n = 4; 
+imageSwap($mat, $n); 
+printMatrix($mat, $n); 
+  
+// This code is contributed  
+// by Shivi_Aggarwal 
+?>
+```
+
+输出：
+
+```
+1 5 9 13 
+2 6 10 14 
+3 7 11 15 
+4 8 12 16 
+```
+
+时间复杂度：`O(n*n)`。

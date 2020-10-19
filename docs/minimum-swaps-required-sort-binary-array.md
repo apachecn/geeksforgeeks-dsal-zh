@@ -73,3 +73,194 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java code to find minimum number of 
+// swaps to sort a binary array 
+class gfg { 
+      
+    static int findMinSwaps(int arr[], int n) 
+    { 
+        // Array to store count of zeroes 
+        int noOfZeroes[] = new int[n]; 
+        int i, count = 0; 
+  
+        // Count number of zeroes 
+        // on right side of every one. 
+        noOfZeroes[n - 1] = 1 - arr[n - 1]; 
+        for (i = n - 2; i >= 0; i--)  
+        { 
+            noOfZeroes[i] = noOfZeroes[i + 1]; 
+            if (arr[i] == 0) 
+                noOfZeroes[i]++; 
+        } 
+  
+        // Count total number of swaps by adding number 
+        // of zeroes on right side of every one. 
+        for (i = 0; i < n; i++)  
+        { 
+            if (arr[i] == 1) 
+                count += noOfZeroes[i]; 
+        } 
+        return count; 
+    } 
+      
+    // Driver Code 
+    public static void main(String args[]) 
+    { 
+        int ar[] = { 0, 0, 1, 0, 1, 0, 1, 1 }; 
+        System.out.println(findMinSwaps(ar, ar.length)); 
+    } 
+} 
+  
+// This code is contributed by Niraj_Pandey.
+```
+
+## Python3
+
+```
+# Python3 code to find minimum number of 
+# swaps to sort a binary array 
+  
+# Function to find minimum swaps to 
+# sort an array of 0s and 1s. 
+def findMinSwaps(arr, n) : 
+    # Array to store count of zeroes 
+    noOfZeroes = [0] * n 
+    count = 0
+      
+    # Count number of zeroes 
+    # on right side of every one. 
+    noOfZeroes[n - 1] = 1 - arr[n - 1] 
+    for i in range(n-2, -1, -1) : 
+        noOfZeroes[i] = noOfZeroes[i + 1] 
+        if (arr[i] == 0) : 
+            noOfZeroes[i] = noOfZeroes[i] + 1
+  
+    # Count total number of swaps by adding  
+    # number of zeroes on right side of  
+    # every one. 
+    for i in range(0, n) : 
+        if (arr[i] == 1) : 
+            count = count + noOfZeroes[i] 
+  
+    return count 
+  
+# Driver code 
+arr = [ 0, 0, 1, 0, 1, 0, 1, 1 ] 
+n = len(arr) 
+print (findMinSwaps(arr, n)) 
+  
+# This code is contributed by Manish Shaw 
+# (manishshaw1)
+```
+
+## C#
+
+```
+// C# code to find minimum number of 
+// swaps to sort a binary array 
+using System; 
+  
+class GFG { 
+      
+    static int findMinSwaps(int []arr, int n) 
+    { 
+          
+        // Array to store count of zeroes 
+        int []noOfZeroes = new int[n]; 
+        int i, count = 0; 
+  
+        // Count number of zeroes 
+        // on right side of every one. 
+        noOfZeroes[n - 1] = 1 - arr[n - 1]; 
+        for (i = n - 2; i >= 0; i--)  
+        { 
+            noOfZeroes[i] = noOfZeroes[i + 1]; 
+            if (arr[i] == 0) 
+                noOfZeroes[i]++; 
+        } 
+  
+        // Count total number of swaps by  
+        // adding number of zeroes on right 
+        // side of every one. 
+        for (i = 0; i < n; i++)  
+        { 
+            if (arr[i] == 1) 
+                count += noOfZeroes[i]; 
+        } 
+          
+        return count; 
+    } 
+      
+    // Driver Code 
+    public static void Main() 
+    { 
+        int []ar = { 0, 0, 1, 0, 1, 
+                                0, 1, 1 }; 
+                                  
+        Console.WriteLine( 
+              findMinSwaps(ar, ar.Length)); 
+    } 
+} 
+  
+// This code is contributed by vt_m.
+```
+
+## PHP
+
+```
+<?php 
+// PHP code to find minimum number of 
+// swaps to sort a binary array 
+  
+// Function to find minimum swaps to 
+// sort an array of 0s and 1s. 
+function findMinSwaps($arr, $n) 
+{ 
+    // Array to store count of zeroes 
+    $noOfZeroes[$n] = array(); 
+    $noOfZeroes = array_fill(0, $n, true); 
+    $count = 0; 
+  
+    // Count number of zeroes 
+    // on right side of every one. 
+    $noOfZeroes[$n - 1] = 1 - $arr[$n - 1]; 
+    for ($i = $n - 2; $i >= 0; $i--) 
+    { 
+        $noOfZeroes[$i] = $noOfZeroes[$i + 1]; 
+        if ($arr[$i] == 0) 
+            $noOfZeroes[$i]++; 
+    } 
+  
+    // Count total number of swaps by adding  
+    // number of zeroes on right side of every one. 
+    for ($i = 0; $i < $n; $i++)  
+    { 
+        if ($arr[$i] == 1) 
+            $count += $noOfZeroes[$i]; 
+    } 
+  
+    return $count; 
+} 
+  
+// Driver code 
+$arr = array( 0, 0, 1, 0, 1, 0, 1, 1 ); 
+$n = sizeof($arr); 
+echo findMinSwaps($arr, $n); 
+  
+// This code is contributed by Sach_code 
+?>
+```
+
+输出：
+
+```
+3
+```
+
+时间复杂度：`O(n)`。
+
+辅助空间：`O(n)`。
