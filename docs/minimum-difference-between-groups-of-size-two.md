@@ -69,3 +69,159 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to find minimum 
+// difference between groups of  
+// highest and lowest sums. 
+import java.util.Arrays; 
+import java.util.Collections; 
+import java.util.Vector; 
+  
+  
+class GFG { 
+  
+static long calculate(long a[], int n) 
+{ 
+    // Sorting the whole array. 
+    Arrays.sort(a);  
+    int i,j; 
+      
+    // Generating sum groups. 
+    Vector<Long> s = new Vector<>(); 
+    for (i = 0, j = n - 1; i < j; i++, j--)  
+        s.add((a[i] + a[j])); 
+          
+    long mini = Collections.min(s); 
+    long maxi = Collections.max(s);  
+    return Math.abs(maxi - mini); 
+} 
+  
+// Driver code 
+public static void main(String[] args)  
+{ 
+    long a[] = { 2, 6, 4, 3 }; 
+    int n = a.length; 
+    System.out.println(calculate(a, n)); 
+    } 
+}  
+// This code is contributed by 29AjayKumar
+```
+
+## Python3
+
+```
+# Python3 program to find minimum  
+# difference between groups of  
+# highest and lowest sums. 
+def calculate(a, n): 
+      
+    # Sorting the whole array. 
+    a.sort();  
+  
+    # Generating sum groups. 
+    s = []; 
+    i = 0; 
+    j = n - 1; 
+    while(i < j): 
+        s.append((a[i] + a[j])); 
+        i += 1; 
+        j -= 1; 
+  
+    mini = min(s);  
+    maxi = max(s);  
+  
+    return abs(maxi - mini); 
+  
+# Driver Code 
+a = [ 2, 6, 4, 3 ]; 
+n = len(a); 
+print(calculate(a, n)); 
+  
+# This is contributed by mits
+```
+
+## C#
+
+```
+// C# program to find minimum 
+// difference between groups of  
+// highest and lowest sums. 
+using System; 
+using System.Linq; 
+using System.Collections.Generic; 
+  
+class GFG  
+{ 
+  
+    static long calculate(long []a, int n) 
+    { 
+        // Sorting the whole array. 
+        Array.Sort(a);  
+        int i, j; 
+  
+        // Generating sum groups. 
+        List<long> s = new List<long>(); 
+        for (i = 0, j = n - 1; i < j; i++, j--)  
+            s.Add((a[i] + a[j])); 
+  
+        long mini = s.Min(); 
+        long maxi = s.Max();  
+        return Math.Abs(maxi - mini); 
+    } 
+  
+    // Driver code 
+    public static void Main()  
+    { 
+        long []a = { 2, 6, 4, 3 }; 
+        int n = a.Length; 
+        Console.WriteLine(calculate(a, n)); 
+    } 
+} 
+  
+//This code is contributed by Rajput-Ji
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find minimum  
+// difference between groups of  
+// highest and lowest sums. 
+  
+function calculate($a, $n) 
+{ 
+    // Sorting the whole array. 
+    sort($a);  
+  
+    // Generating sum groups. 
+    $s = array(); 
+    for ($i = 0, $j = $n - 1;  
+         $i < $j; $i++, $j--)  
+    array_push($s, ($a[$i] + $a[$j])); 
+  
+    $mini = min($s);  
+    $maxi = max($s);  
+  
+    return abs($maxi - $mini); 
+} 
+  
+// Driver Code 
+$a = array( 2, 6, 4, 3 ); 
+$n = sizeof($a); 
+echo calculate($a, $n); 
+  
+// This is contributed by mits  
+?>
+```
+
+输出：
+
+```
+1
+```
+
+时间复杂度：`O (n * log n)`。

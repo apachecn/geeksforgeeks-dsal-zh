@@ -335,3 +335,5 @@ ar2[] = {2, 13, 15, 20};
 // 13 is moved from ar1[] to ar2[]
 // 3 from ar2[] is inserted in ar1[]
 ```
+
+[使用`O(1)`空间有效合并两个排序数组](https://www.geeksforgeeks.org/efficiently-merging-two-sorted-arrays-wtih-o1-extra-space/)。
