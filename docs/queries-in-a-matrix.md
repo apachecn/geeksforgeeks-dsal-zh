@@ -4,11 +4,11 @@
 
 给定大小为`m x n`（`1 < = m, n < = 1000`）的矩阵`M`。 最初按行主顺序依次填充从 1 到`m x n`的整数。 任务是处理操纵`M`的查询列表，以使每个查询都是以下三个之一。
 
-1.  **`R(x, y)`**：交换`M`的第`x`和`y`行，其中`x`和`y`从 1 到`m`变化。
+1.  `R(x, y)`：交换`M`的第`x`和`y`行，其中`x`和`y`从 1 到`m`变化。
 
-2.  **`C(x, y)`**：交换`M`的第`x`和`y`列，其中`x`和`y`在 1 到`n`之间变化。
+2.  `C(x, y)`：交换`M`的第`x`和`y`列，其中`x`和`y`在 1 到`n`之间变化。
 
-3.  **`P(x, y)`**：在第`x`行和第`y`列打印元素，其中`x`从 1 到`m`变化，而`y`从 1 到`n`变化。
+3.  `P(x, y)`：在第`x`行和第`y`列打印元素，其中`x`从 1 到`m`变化，而`y`从 1 到`n`变化。
 
 请注意，给定矩阵存储为典型的 2D 数组，索引从 0 开始，但是`x`和`y`的值从 1 开始。
 
@@ -149,3 +149,277 @@ int main()
 } 
 
 ```
+
+## C++
+
+```
+// C++ implementation of program 
+#include<bits/stdc++.h> 
+using namespace std; 
+  
+// Fills initial values in rows[] and cols[] 
+void preprocessMatrix(int rows[], int cols[], 
+                     int m, int n) 
+{ 
+    // Fill rows with 1 to m-1 
+    for (int i=0; i<m; i++) 
+        rows[i] = i; 
+  
+    // Fill columns with 1 to n-1 
+    for (int i=0; i<n; i++) 
+        cols[i] = i; 
+} 
+  
+// Function to perform queries on matrix 
+// m --> number of rows 
+// n --> number of columns 
+// ch --> type of query 
+// x --> number of row for query 
+// y --> number of column for query 
+void queryMatrix(int rows[], int cols[], int m, 
+                 int n, char ch, int x, int y) 
+{ 
+    // perform queries 
+    int tmp; 
+    switch(ch) 
+    { 
+    case 'R': 
+  
+        // swap row x with y 
+        swap(rows[x-1], rows[y-1]); 
+        break; 
+  
+    case 'C': 
+  
+        // swap coloumn x with y 
+        swap(cols[x-1], cols[y-1]); 
+        break; 
+  
+    case 'P': 
+  
+        // Print value at (x, y) 
+        printf("value at (%d, %d) = %d\n", x, y, 
+                   rows[x-1]*n + cols[y-1]+1); 
+        break; 
+    } 
+    return ; 
+} 
+  
+// Driver program to run the case 
+int main() 
+{ 
+    int m = 1234, n = 5678; 
+  
+    // row[] is array for rows and cols[] 
+    // is array for coloumns 
+    int rows[m], cols[n]; 
+  
+    // Fill initial values in rows[] and cols[] 
+    preprocessMatrix(rows, cols, m, n); 
+  
+    queryMatrix(rows, cols, m, n, 'R', 1, 2); 
+    queryMatrix(rows, cols, m, n, 'P', 1, 1); 
+    queryMatrix(rows, cols, m, n, 'P', 2, 1); 
+    queryMatrix(rows, cols, m, n, 'C', 1, 2); 
+    queryMatrix(rows, cols, m, n, 'P', 1, 1); 
+    queryMatrix(rows, cols, m, n, 'P', 2, 1); 
+    return 0; 
+}
+```
+
+## Java
+
+```
+// Java implementation of program  
+class GFG  
+{ 
+  
+    // Fills initial values in rows[] and cols[]  
+    static void preprocessMatrix(int rows[], int cols[], 
+                                        int m, int n)  
+    { 
+        // Fill rows with 1 to m-1  
+        for (int i = 0; i < m; i++) 
+        { 
+            rows[i] = i; 
+        } 
+  
+        // Fill columns with 1 to n-1  
+        for (int i = 0; i < n; i++)  
+        { 
+            cols[i] = i; 
+        } 
+    } 
+  
+    // Function to perform queries on matrix  
+    // m --> number of rows  
+    // n --> number of columns  
+    // ch --> type of query  
+    // x --> number of row for query  
+    // y --> number of column for query  
+    static void queryMatrix(int rows[], int cols[], int m, 
+                            int n, char ch, int x, int y)  
+    { 
+        // perform queries  
+        int tmp; 
+        switch (ch)  
+        { 
+            case 'R': 
+  
+                // swap row x with y  
+                swap(rows, x - 1, y - 1); 
+                break; 
+  
+            case 'C': 
+  
+                // swap coloumn x with y  
+                swap(cols, x - 1, y - 1); 
+                break; 
+  
+            case 'P': 
+  
+                // Print value at (x, y)  
+                System.out.printf("value at (%d, %d) = %d\n", x, y, 
+                        rows[x - 1] * n + cols[y - 1] + 1); 
+                break; 
+        } 
+        return; 
+    } 
+  
+    static int[] swap(int[] arr, int i, int j)  
+    { 
+        int temp = arr[i]; 
+        arr[i] = arr[j]; 
+        arr[j] = temp; 
+        return arr; 
+    } 
+  
+    // Driver code 
+    public static void main(String[] args) 
+    { 
+        int m = 1234, n = 5678; 
+  
+        // row[] is array for rows and cols[]  
+        // is array for coloumns  
+        int rows[] = new int[m], cols[] = new int[n]; 
+  
+        // Fill initial values in rows[] and cols[]  
+        preprocessMatrix(rows, cols, m, n); 
+  
+        queryMatrix(rows, cols, m, n, 'R', 1, 2); 
+        queryMatrix(rows, cols, m, n, 'P', 1, 1); 
+        queryMatrix(rows, cols, m, n, 'P', 2, 1); 
+        queryMatrix(rows, cols, m, n, 'C', 1, 2); 
+        queryMatrix(rows, cols, m, n, 'P', 1, 1); 
+        queryMatrix(rows, cols, m, n, 'P', 2, 1); 
+    } 
+} 
+  
+// This code contributed by Rajput-Ji
+```
+
+## C#
+
+```
+// C# implementation of program  
+using System; 
+  
+class GFG  
+{ 
+  
+    // Fills initial values in rows[] and cols[]  
+    static void preprocessMatrix(int []rows, int []cols, 
+                                        int m, int n)  
+    { 
+        // Fill rows with 1 to m-1  
+        for (int i = 0; i < m; i++) 
+        { 
+            rows[i] = i; 
+        } 
+  
+        // Fill columns with 1 to n-1  
+        for (int i = 0; i < n; i++)  
+        { 
+            cols[i] = i; 
+        } 
+    } 
+  
+    // Function to perform queries on matrix  
+    // m --> number of rows  
+    // n --> number of columns  
+    // ch --> type of query  
+    // x --> number of row for query  
+    // y --> number of column for query  
+    static void queryMatrix(int []rows, int []cols, int m, 
+                            int n, char ch, int x, int y)  
+    { 
+        // perform queries  
+        int tmp; 
+        switch (ch)  
+        { 
+            case 'R': 
+  
+                // swap row x with y  
+                swap(rows, x - 1, y - 1); 
+                break; 
+  
+            case 'C': 
+  
+                // swap coloumn x with y  
+                swap(cols, x - 1, y - 1); 
+                break; 
+  
+            case 'P': 
+  
+                // Print value at (x, y)  
+                Console.Write("value at ({0}, {1}) = {2}\n", x, y, 
+                        rows[x - 1] * n + cols[y - 1] + 1); 
+                break; 
+        } 
+        return; 
+    } 
+  
+    static int[] swap(int[] arr, int i, int j)  
+    { 
+        int temp = arr[i]; 
+        arr[i] = arr[j]; 
+        arr[j] = temp; 
+        return arr; 
+    } 
+  
+    // Driver code 
+    public static void Main() 
+    { 
+        int m = 1234, n = 5678; 
+  
+        // row[] is array for rows and cols[]  
+        // is array for coloumns  
+        int []rows = new int[m]; int []cols = new int[n]; 
+  
+        // Fill initial values in rows[] and cols[]  
+        preprocessMatrix(rows, cols, m, n); 
+  
+        queryMatrix(rows, cols, m, n, 'R', 1, 2); 
+        queryMatrix(rows, cols, m, n, 'P', 1, 1); 
+        queryMatrix(rows, cols, m, n, 'P', 2, 1); 
+        queryMatrix(rows, cols, m, n, 'C', 1, 2); 
+        queryMatrix(rows, cols, m, n, 'P', 1, 1); 
+        queryMatrix(rows, cols, m, n, 'P', 2, 1); 
+    } 
+} 
+  
+/* This code contributed by PrinciRaj1992 */
+```
+
+输出：
+
+```
+value at (1, 1) = 5679
+value at (2, 1) = 1
+value at (1, 1) = 5680
+value at (2, 1) = 2
+```
+
+时间复杂度：`O(q)`，`q =`查询数。
+
+腋窝空间：`O(m + n)`。
