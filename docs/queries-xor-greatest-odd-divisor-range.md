@@ -76,3 +76,160 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java code Queries on XOR of  
+// greatest odd divisor of the range 
+import java.io.*; 
+  
+class GFG  
+{ 
+    // Precompute the prefix XOR of greatest  
+    // odd divisor 
+    static void prefixXOR(int arr[], int preXOR[], int n) 
+    { 
+        // Finding the Greatest Odd divisor 
+        for (int i = 0; i < n; i++)  
+        { 
+            while (arr[i] % 2 != 1) 
+                arr[i] /= 2; 
+      
+            preXOR[i] = arr[i]; 
+        } 
+      
+        // Finding prefix XOR 
+        for (int i = 1; i < n; i++) 
+            preXOR[i] = preXOR[i - 1] ^ preXOR[i]; 
+    } 
+      
+    // Return XOR of the range 
+    static int query(int preXOR[], int l, int r) 
+    { 
+        if (l == 0) 
+            return preXOR[r]; 
+        else
+            return preXOR[r] ^ preXOR[l - 1]; 
+    } 
+      
+    // Driven Program 
+    public static void main (String[] args)  
+    { 
+        int arr[] = { 3, 4, 5 }; 
+        int n = arr.length; 
+      
+        int preXOR[] = new int[n]; 
+        prefixXOR(arr, preXOR, n); 
+      
+        System.out.println(query(preXOR, 0, 2)) ; 
+        System.out.println (query(preXOR, 1, 2)); 
+      
+              
+    } 
+} 
+  
+// This article is contributed by vt_m
+```
+
+## Python3
+
+```
+# Precompute the prefix XOR of greatest  
+# odd divisor 
+def prefixXOR(arr, preXOR, n): 
+      
+    # Finding the Greatest Odd divisor 
+    for i in range(0, n, 1): 
+        while (arr[i] % 2 != 1): 
+            arr[i] = int(arr[i] / 2)  
+  
+        preXOR[i] = arr[i] 
+  
+    # Finding prefix XOR 
+    for i in range(1, n, 1): 
+        preXOR[i] = preXOR[i - 1] ^ preXOR[i] 
+  
+# Return XOR of the range 
+def query(preXOR, l, r): 
+    if (l == 0): 
+        return preXOR[r] 
+    else: 
+        return preXOR[r] ^ preXOR[l - 1] 
+  
+# Driver Code 
+if __name__ == '__main__': 
+    arr = [3, 4, 5] 
+    n = len(arr) 
+  
+    preXOR = [0 for i in range(n)] 
+    prefixXOR(arr, preXOR, n) 
+  
+    print(query(preXOR, 0, 2)) 
+    print(query(preXOR, 1, 2)) 
+      
+# This code is contributed by 
+# Sahil_shelangia
+```
+
+## C#
+
+```
+// C# code Queries on XOR of  
+// greatest odd divisor of the range 
+using System; 
+  
+class GFG  
+{ 
+    // Precompute the prefix XOR of greatest  
+    // odd divisor 
+    static void prefixXOR(int []arr,  
+                    int []preXOR, int n) 
+    { 
+        // Finding the Greatest Odd divisor 
+        for (int i = 0; i < n; i++)  
+        { 
+            while (arr[i] % 2 != 1) 
+                arr[i] /= 2; 
+      
+            preXOR[i] = arr[i]; 
+        } 
+      
+        // Finding prefix XOR 
+        for (int i = 1; i < n; i++) 
+            preXOR[i] = preXOR[i - 1] ^ preXOR[i]; 
+    } 
+      
+    // Return XOR of the range 
+    static int query(int [] preXOR, int l, int r) 
+    { 
+        if (l == 0) 
+            return preXOR[r]; 
+        else
+            return preXOR[r] ^ preXOR[l - 1]; 
+    } 
+      
+    // Driven Program 
+    public static void Main ()  
+    { 
+        int []arr = { 3, 4, 5 }; 
+        int n = arr.Length; 
+      
+        int []preXOR = new int[n]; 
+        prefixXOR(arr, preXOR, n); 
+      
+        Console.WriteLine(query(preXOR, 0, 2)) ; 
+        Console.WriteLine (query(preXOR, 1, 2)); 
+    } 
+} 
+  
+// This code is contributed by vt_m
+```
+
+输出：
+
+```
+7
+4
+```
+
