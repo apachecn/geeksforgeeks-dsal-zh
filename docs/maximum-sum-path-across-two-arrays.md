@@ -54,80 +54,473 @@ Explanation: 122 is sum of 1, 5, 7, 8, 10, 12, 15, 30, 34
 
 **实现**：
 
-## C++ 
-
-```cpp
-
-#include<iostream> 
-using namespace std; 
-
-// Utility function to find maximum of two integers 
-int max(int x, int y) { return (x > y)? x : y; } 
-
-// This function returns the sum of elements on maximum path 
-// from beginning to end 
-int maxPathSum(int ar1[], int ar2[], int m, int n) 
-{ 
-    // initialize indexes for ar1[] and ar2[] 
-    int i = 0, j = 0; 
-
-    // Initialize result and current sum through ar1[] and ar2[]. 
-    int  result = 0, sum1 = 0, sum2 = 0; 
-
-    // Below 3 loops are similar to merge in merge sort 
-    while (i < m && j < n) 
-    { 
-        // Add elements of ar1[] to sum1 
-        if (ar1[i] < ar2[j]) 
-            sum1 += ar1[i++]; 
-
-        // Add elements of ar2[] to sum2 
-        else if (ar1[i] > ar2[j]) 
-            sum2 += ar2[j++]; 
-
-        else  // we reached a common point 
-        { 
-            // Take the maximum of two sums and add to result 
-            result += max(sum1, sum2); 
-
-            // Update sum1 and sum2 for elements after this 
-            // intersection point 
-            sum1 = 0, sum2 = 0; 
-
-            // Keep updating result while there are more common 
-            // elements 
-            while (i < m &&  j < n && ar1[i] == ar2[j]) 
-            { 
-                result = result + ar1[i++]; 
-                j++; 
-            } 
-        } 
-    } 
-
-    // Add remaining elements of ar1[] 
-    while (i < m) 
-        sum1  +=  ar1[i++]; 
-
-    // Add remaining elements of ar2[] 
-    while (j < n) 
-        sum2 +=  ar2[j++]; 
-
-    // Add maximum of two sums of remaining elements 
-    result +=  max(sum1, sum2); 
-
-    return result; 
-} 
-
-// Driver program to test above function 
-int main() 
-{ 
-    int ar1[]  = {2, 3, 7, 10, 12, 15, 30, 34}; 
-    int ar2[] =  {1, 5, 7, 8, 10, 15, 16, 19}; 
-    int m = sizeof(ar1)/sizeof(ar1[0]); 
-    int n = sizeof(ar2)/sizeof(ar2[0]); 
-    cout << "Maximum sum path is " 
-         << maxPathSum(ar1, ar2, m, n); 
-    return 0; 
-} 
+## C++
 
 ```
+// C++ program to find maximum sum path
+#include <iostream>
+using namespace std;
+ 
+// Utility function to find maximum of two integers
+int max(int x, int y) { return (x > y) ? x : y; }
+ 
+// This function returns the sum of elements on maximum path
+// from beginning to end
+int maxPathSum(int ar1[], int ar2[], int m, int n)
+{
+    // initialize indexes for ar1[] and ar2[]
+    int i = 0, j = 0;
+ 
+    // Initialize result and current sum through ar1[] and
+    // ar2[].
+    int result = 0, sum1 = 0, sum2 = 0;
+ 
+    // Below 3 loops are similar to merge in merge sort
+    while (i < m && j < n) 
+    {
+        // Add elements of ar1[] to sum1
+        if (ar1[i] < ar2[j])
+            sum1 += ar1[i++];
+ 
+        // Add elements of ar2[] to sum2
+        else if (ar1[i] > ar2[j])
+            sum2 += ar2[j++];
+ 
+        else // we reached a common point
+        {
+            // Take the maximum of two sums and add to
+            // result
+            result += max(sum1, sum2);
+ 
+            // Update sum1 and sum2 for elements after this
+            // intersection point
+            sum1 = 0, sum2 = 0;
+ 
+            // Keep updating result while there are more
+            // common elements
+            int temp = i;
+            while (i < m && ar1[i] == ar2[j])
+                sum1 += ar1[i++];
+ 
+            while (j < n && ar1[temp] == ar2[j])
+                sum2 += ar2[j++];
+ 
+            result += max(sum1, sum2);
+ 
+            sum1 = 0, sum2 = 0;
+        }
+    }
+ 
+    // Add remaining elements of ar1[]
+    while (i < m)
+        sum1 += ar1[i++];
+ 
+    // Add remaining elements of ar2[]
+    while (j < n)
+        sum2 += ar2[j++];
+ 
+    // Add maximum of two sums of remaining elements
+    result += max(sum1, sum2);
+ 
+    return result;
+}
+ 
+// Driver code
+int main()
+{
+    int ar1[] = { 2, 3, 7, 10, 12, 15, 30, 34 };
+    int ar2[] = { 1, 5, 7, 8, 10, 15, 16, 19 };
+    int m = sizeof(ar1) / sizeof(ar1[0]);
+    int n = sizeof(ar2) / sizeof(ar2[0]);
+   
+    // Function call
+    cout << "Maximum sum path is "
+         << maxPathSum(ar1, ar2, m, n);
+    return 0;
+}
+```
+
+## Java
+
+```
+// JAVA program to find maximum sum path
+class MaximumSumPath 
+{
+    // Utility function to find maximum of two integers
+    int max(int x, int y) { return (x > y) ? x : y; }
+ 
+    // This function returns the sum of elements on maximum
+    // path from beginning to end
+    int maxPathSum(int ar1[], int ar2[], int m, int n)
+    {
+        // initialize indexes for ar1[] and ar2[]
+        int i = 0, j = 0;
+ 
+        // Initialize result and current sum through ar1[]
+        // and ar2[].
+        int result = 0, sum1 = 0, sum2 = 0;
+ 
+        // Below 3 loops are similar to merge in merge sort
+        while (i < m && j < n) 
+        {
+            // Add elements of ar1[] to sum1
+            if (ar1[i] < ar2[j])
+                sum1 += ar1[i++];
+ 
+            // Add elements of ar2[] to sum2
+            else if (ar1[i] > ar2[j])
+                sum2 += ar2[j++];
+ 
+            // we reached a common point
+            else
+            {
+                // Take the maximum of two sums and add to
+                // result
+                result += max(sum1, sum2);
+ 
+                // Update sum1 and sum2 for elements after
+                // this intersection point
+                sum1 = 0;
+                sum2 = 0;
+ 
+                // Keep updating result while there are more
+                // common elements
+                int temp = i;
+                while (i < m && ar1[i] == ar2[j])
+                    sum1 += ar1[i++];
+ 
+                while (j < n && ar1[temp] == ar2[j])
+                    sum2 += ar2[j++];
+ 
+                result += max(sum1, sum2);
+ 
+                sum1 = 0;
+                sum2 = 0;
+            }
+        }
+ 
+        // Add remaining elements of ar1[]
+        while (i < m)
+            sum1 += ar1[i++];
+ 
+        // Add remaining elements of ar2[]
+        while (j < n)
+            sum2 += ar2[j++];
+ 
+        // Add maximum of two sums of remaining elements
+        result += max(sum1, sum2);
+ 
+        return result;
+    }
+ 
+    // Driver code
+    public static void main(String[] args)
+    {
+        MaximumSumPath sumpath = new MaximumSumPath();
+        int ar1[] = { 2, 3, 7, 10, 12, 15, 30, 34 };
+        int ar2[] = { 1, 5, 7, 8, 10, 15, 16, 19 };
+        int m = ar1.length;
+        int n = ar2.length;
+       
+        // Function call
+        System.out.println(
+            "Maximum sum path is :"
+            + sumpath.maxPathSum(ar1, ar2, m, n));
+    }
+}
+ 
+// This code has been contributed by Mayank Jaiswal
+```
+
+## Python
+
+```
+# Python program to find maximum sum path
+ 
+# This function returns the sum of elements on maximum path from
+# beginning to end
+ 
+ 
+def maxPathSum(ar1, ar2, m, n):
+ 
+    # initialize indexes for ar1[] and ar2[]
+    i, j = 0, 0
+ 
+    # Initialize result and current sum through ar1[] and ar2[]
+    result, sum1, sum2 = 0, 0, 0
+ 
+    # Below 3 loops are similar to merge in merge sort
+    while (i < m and j < n):
+ 
+        # Add elements of ar1[] to sum1
+        if ar1[i] < ar2[j]:
+            sum1 += ar1[i]
+            i += 1
+ 
+        # Add elements of ar2[] to sum1
+        elif ar1[i] > ar2[j]:
+            sum2 += ar2[j]
+            j += 1
+ 
+        else:   # we reached a common point
+ 
+            # Take the maximum of two sums and add to result
+            result += max(sum1, sum2)
+ 
+            # Update sum1 and sum2 for elements after this intersection point
+            sum1, sum2 = 0, 0
+ 
+            # Keep updating result while there are more common elements
+            temp = i
+            while i < m and ar1[i] == ar2[j]:
+                sum1 += ar1[i];
+                i += 1
+            while j<n and ar1[temp] == ar2[j]:
+                sum2 += ar2[j]
+                j += 1
+            result += max(sum1,sum2)
+            sum1 = sum2 = 0;           
+ 
+    # Add remaining elements of ar1[]
+    while i < m:
+        sum1 += ar1[i]
+        i += 1
+    # Add remaining elements of b[]
+    while j < n:
+        sum2 += ar2[j]
+        j += 1
+ 
+    # Add maximum of two sums of remaining elements
+    result += max(sum1, sum2)
+ 
+    return result
+ 
+ 
+# Driver code
+ar1 = [2, 3, 7, 10, 12, 15, 30, 34]
+ar2 = [1, 5, 7, 8, 10, 15, 16, 19]
+m = len(ar1)
+n = len(ar2)
+ 
+# Function call
+print "Maximum sum path is", maxPathSum(ar1, ar2, m, n)
+ 
+# This code is contributed by __Devesh Agrawal__
+```
+
+## C#
+
+```
+// C# program for Maximum Sum Path in
+// Two Arrays
+using System;
+ 
+class GFG {
+ 
+    // Utility function to find maximum
+    // of two integers
+    static int max(int x, int y) { return (x > y) ? x : y; }
+ 
+    // This function returns the sum of
+    // elements on maximum path from
+    // beginning to end
+    static int maxPathSum(int[] ar1, int[] ar2, int m,
+                          int n)
+    {
+ 
+        // initialize indexes for ar1[]
+        // and ar2[]
+        int i = 0, j = 0;
+ 
+        // Initialize result and current
+        // sum through ar1[] and ar2[].
+        int result = 0, sum1 = 0, sum2 = 0;
+ 
+        // Below 3 loops are similar to
+        // merge in merge sort
+        while (i < m && j < n) {
+            // Add elements of ar1[] to sum1
+            if (ar1[i] < ar2[j])
+                sum1 += ar1[i++];
+ 
+            // Add elements of ar2[] to sum2
+            else if (ar1[i] > ar2[j])
+                sum2 += ar2[j++];
+ 
+            // we reached a common point
+            else {
+ 
+                // Take the maximum of two
+                // sums and add to result
+                result += max(sum1, sum2);
+ 
+                // Update sum1 and sum2 for
+                // elements after this
+                // intersection point
+                sum1 = 0;
+                sum2 = 0;
+ 
+                // Keep updating result while
+                // there are more common
+                // elements
+                int temp = i;
+                while (i < m && ar1[i] == ar2[j])
+                    sum1 += ar1[i++];
+ 
+                while (j < n && ar1[temp] == ar2[j])
+                    sum2 += ar2[j++];
+ 
+                result += max(sum1, sum2);
+ 
+                sum1 = 0;
+                sum2 = 0;
+            }
+        }
+ 
+        // Add remaining elements of ar1[]
+        while (i < m)
+            sum1 += ar1[i++];
+ 
+        // Add remaining elements of ar2[]
+        while (j < n)
+            sum2 += ar2[j++];
+ 
+        // Add maximum of two sums of
+        // remaining elements
+        result += max(sum1, sum2);
+ 
+        return result;
+    }
+ 
+    // Driver code
+    public static void Main()
+    {
+        int[] ar1 = { 2, 3, 7, 10, 12, 15, 30, 34 };
+        int[] ar2 = { 1, 5, 7, 8, 10, 15, 16, 19 };
+        int m = ar1.Length;
+        int n = ar2.Length;
+       
+        // Function call
+        Console.Write("Maximum sum path is :"
+                      + maxPathSum(ar1, ar2, m, n));
+    }
+}
+ 
+// This code is contributed by nitin mittal.
+```
+
+## PHP
+
+```
+<?php
+// PHP Program to find Maximum Sum 
+// Path in Two Arrays
+ 
+// This function returns the sum of
+// elements on maximum path
+// from beginning to end
+function maxPathSum($ar1, $ar2, $m, $n)
+{
+     
+    // initialize indexes for 
+    // ar1[] and ar2[]
+    $i = 0; 
+    $j = 0;
+ 
+    // Initialize result and 
+    // current sum through ar1[] 
+    // and ar2[].
+    $result = 0;
+    $sum1 = 0; 
+    $sum2 = 0;
+ 
+    // Below 3 loops are similar
+    // to merge in merge sort
+    while ($i < $m and $j < $n)
+    {
+         
+        // Add elements of
+        // ar1[] to sum1
+        if ($ar1[$i] < $ar2[$j])
+            $sum1 += $ar1[$i++];
+ 
+        // Add elements of 
+        // ar2[] to sum2
+        else if ($ar1[$i] > $ar2[$j])
+            $sum2 += $ar2[$j++];
+ 
+        // we reached a 
+        // common point
+        else
+        {
+             
+            // Take the maximum of two
+            // sums and add to result
+            $result += max($sum1, $sum2);
+ 
+            // Update sum1 and sum2 for
+            // elements after this
+            // intersection point
+            $sum1 = 0; 
+            $sum2 = 0;
+ 
+            // Keep updating result while
+            // there are more common
+            // elements
+           $temp = $i;
+           while ($i < $m && $ar1[$i] == $ar2[$j])
+               $sum1 += $ar1[$i++];
+ 
+           while ($j < $n && $ar1[$temp] == $ar2[$j])
+               $sum2 += $ar2[$j++];
+ 
+           $result += max($sum1, $sum2);
+ 
+           $sum1 = 0;
+           $sum2 = 0;
+        }
+    }
+ 
+    // Add remaining elements of ar1[]
+    while ($i < $m)
+        $sum1 += $ar1[$i++];
+ 
+    // Add remaining elements of ar2[]
+    while ($j < $n)
+        $sum2 += $ar2[$j++];
+ 
+    // Add maximum of two sums 
+    // of remaining elements
+    $result += max($sum1, $sum2);
+ 
+    return $result;
+}
+ 
+    // Driver Code
+    $ar1 = array(2, 3, 7, 10, 12, 15, 30, 34);
+    $ar2 = array(1, 5, 7, 8, 10, 15, 16, 19);
+    $m = count($ar1);
+    $n = count($ar2);
+ 
+    // Function call
+    echo "Maximum sum path is "
+        , maxPathSum($ar1, $ar2, $m, $n);
+         
+// This code is contributed by anuj_67.
+?>
+```
+
+输出：
+
+```
+Maximum sum path is 122
+```
+
+复杂度分析：
+
++   空间复杂度：`O(1)`。
+
+    不需要任何额外的空间，因此空间复杂度是恒定的。
++   时间复杂度：`O(m + n)`。
+    
+    在`while`循环的每次迭代中，都会处理两个数组之一的元素。 总共有`m + n`个元素。 因此，时间复杂度为`O(m + n)`。

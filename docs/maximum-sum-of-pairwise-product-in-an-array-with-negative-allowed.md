@@ -98,3 +98,273 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program for above implementation 
+import java.io.*; 
+import java.util.*; 
+  
+class GFG { 
+  
+static int Mod = 1000000007; 
+  
+// Function to find the maximum sum 
+static long findSum(int arr[], int n) { 
+    long sum = 0; 
+  
+    // Sort the array first 
+    Arrays.sort(arr); 
+  
+    // First multiply negative numbers  
+    // pairwise and sum up from starting  
+    // as to get maximum sum. 
+    int i = 0; 
+    while (i < n && arr[i] < 0) { 
+    if (i != n - 1 && arr[i + 1] <= 0) { 
+        sum = (sum + (arr[i] * arr[i + 1]) % Mod) % Mod; 
+        i += 2; 
+    }  
+    else
+        break; 
+    } 
+  
+    // Second multiply positive numbers  
+    // pairwise and summed up from the  
+    // last as to get maximum sum. 
+    int j = n - 1; 
+    while (j >= 0 && arr[j] > 0) { 
+    if (j != 0 && arr[j - 1] > 0) { 
+        sum = (sum + (arr[j] * arr[j - 1]) % Mod) % Mod; 
+        j -= 2; 
+    } else
+        break; 
+    } 
+  
+    // To handle case if positive and negative 
+    // numbers both are odd in counts. 
+    if (j > i) 
+    sum = (sum + (arr[i] * arr[j]) % Mod) % Mod; 
+  
+    // If one of them occurs odd times 
+    else if (i == j) 
+    sum = (sum + arr[i]) % Mod; 
+  
+    return sum; 
+} 
+  
+// Drivers code 
+public static void main(String args[]) { 
+    int arr[] = {-1, 9, 4, 5, -4, 7}; 
+    int n = arr.length; 
+    System.out.println(findSum(arr, n)); 
+} 
+} 
+  
+/*This code is contributed by Nikita Tiwari.*/
+```
+
+## Python3
+
+```
+# Python3 code for above implementation 
+Mod= 1000000007
+  
+# Function to find the maximum sum 
+def findSum(arr, n): 
+    sum = 0
+      
+    # Sort the array first 
+    arr.sort() 
+      
+    # First multiply negative numbers  
+    # pairwise and sum up from starting 
+    # as to get maximum sum. 
+    i = 0
+    while i < n and arr[i] < 0: 
+        if i != n - 1 and arr[i + 1] <= 0: 
+            sum = (sum + (arr[i] * arr[i + 1])  
+                                 % Mod) % Mod 
+            i += 2
+        else: 
+            break
+          
+    # Second multiply positive numbers 
+    # pairwise and summed up from the  
+    # last as to get maximum sum. 
+    j = n - 1
+    while j >= 0 and arr[j] > 0: 
+        if j != 0 and arr[j - 1] > 0: 
+            sum = (sum + (arr[j] * arr[j - 1]) 
+                                 % Mod) % Mod 
+            j -= 2
+        else: 
+            break
+          
+    # To handle case if positive  
+    # and negative numbers both 
+    # are odd in counts. 
+    if j > i: 
+        sum = (sum + (arr[i] * arr[j]) % Mod)  
+                                       % Mod 
+          
+    # If one of them occurs odd times 
+    elif i == j: 
+        sum = (sum + arr[i]) % Mod 
+      
+    return sum
+  
+# Driver code 
+arr = [ -1, 9, 4, 5, -4, 7 ] 
+n = len(arr)  
+print(findSum(arr, n)) 
+  
+# This code is contributed by "Sharad_Bhardwaj".
+```
+
+## C#
+
+```
+// C# program for above implementation 
+using System; 
+  
+class GFG { 
+  
+    static int Mod = 1000000007; 
+  
+    // Function to find the maximum sum 
+    static long findSum(int[] arr, int n) 
+    { 
+        long sum = 0; 
+  
+        // Sort the array first 
+        Array.Sort(arr); 
+  
+        // First multiply negative numbers 
+        // pairwise and sum up from starting 
+        // as to get maximum sum. 
+        int i = 0; 
+        while (i < n && arr[i] < 0) { 
+            if (i != n - 1 && arr[i + 1] <= 0) { 
+                sum = (sum + (arr[i] * arr[i + 1]) % Mod) % Mod; 
+                i += 2; 
+            } 
+            else
+                break; 
+        } 
+  
+        // Second multiply positive numbers 
+        // pairwise and summed up from the 
+        // last as to get maximum sum. 
+        int j = n - 1; 
+        while (j >= 0 && arr[j] > 0) { 
+            if (j != 0 && arr[j - 1] > 0) { 
+                sum = (sum + (arr[j] * arr[j - 1]) % Mod) % Mod; 
+                j -= 2; 
+            } 
+            else
+                break; 
+        } 
+  
+        // To handle case if positive and negative 
+        // numbers both are odd in counts. 
+        if (j > i) 
+            sum = (sum + (arr[i] * arr[j]) % Mod) % Mod; 
+  
+        // If one of them occurs odd times 
+        else if (i == j) 
+            sum = (sum + arr[i]) % Mod; 
+  
+        return sum; 
+    } 
+  
+    // Drivers code 
+    public static void Main() 
+    { 
+        int[] arr = { -1, 9, 4, 5, -4, 7 }; 
+        int n = arr.Length; 
+        Console.WriteLine(findSum(arr, n)); 
+    } 
+} 
+  
+/*This code is contributed by vt_m.*/
+```
+
+## PHP
+
+```
+<?php 
+// PHP program for above implementation 
+  
+$Mod = 1000000007; 
+  
+// Function to find the maximum sum 
+function findSum(&$arr, $n) 
+{ 
+    global $Mod; 
+    $sum = 0; 
+  
+    // Sort the array first 
+    sort($arr); 
+  
+    // First multiply negative numbers  
+    // pairwise and sum up from starting  
+    // as to get maximum sum.  
+    $i = 0; 
+    while ($i < $n && $arr[$i] < 0)  
+    { 
+        if ($i != $n - 1 && $arr[$i + 1] <= 0)  
+        { 
+            $sum = ($sum + ($arr[$i] * 
+                    $arr[$i + 1]) % $Mod) % $Mod; 
+            $i += 2; 
+        } 
+        else
+            break; 
+    } 
+  
+    // Second multiply positive numbers pairwise 
+    // and summed up from the last as to get  
+    // maximum sum. 
+    $j = $n - 1; 
+    while ($j >= 0 && $arr[$j] > 0) 
+    { 
+        if ($j != 0 && $arr[$j - 1] > 0) 
+        { 
+            $sum = ($sum + ($arr[$j] *  
+                    $arr[$j - 1]) % $Mod) % $Mod; 
+            $j -= 2; 
+        } 
+        else
+            break; 
+    } 
+  
+    // To handle case if positive and negative 
+    // numbers both are odd in counts. 
+    if ($j > $i) 
+        $sum = ($sum + ($arr[$i] *  
+                $arr[$j]) % $Mod) % $Mod; 
+  
+    // If one of them occurs odd times 
+    else if ($i == $j) 
+        $sum = ($sum + $arr[$i]) % Mod; 
+  
+    return $sum; 
+} 
+  
+// Driver code 
+$arr = array (-1, 9, 4, 5, -4, 7 ); 
+$n = sizeof($arr); 
+echo findSum($arr, $n); 
+  
+// This code is contributed by ita_c 
+?>
+```
+
+输出：
+
+```
+87
+```
+
