@@ -367,3 +367,250 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java implementation to print 
+// all the triplets in given array 
+// that form Arithmetic Progression 
+   
+import java.io.*; 
+   
+class GFG  
+{ 
+       
+    // Function to print all triplets in 
+    // given sorted array that forms AP 
+    static void findAllTriplets(int arr[], int n) 
+    { 
+           
+        for (int i = 1; i < n - 1; i++)  
+        { 
+       
+            // Search other two elements  
+            // of AP with arr[i] as middle. 
+            for (int j = i - 1, k = i + 1; j >= 0 && k < n;) 
+            { 
+                   
+                // if a triplet is found 
+                if (arr[j] + arr[k] == 2 * arr[i])  
+                { 
+                    System.out.println(arr[j] +" " +  
+                                       arr[i]+ " " + arr[k]); 
+       
+                    // Since elements are distinct, 
+                    // arr[k] and arr[j] cannot form 
+                    // any more triplets with arr[i] 
+                    k++; 
+                    j--; 
+                } 
+       
+                // If middle element is more move to  
+                // higher side, else move lower side. 
+                else if (arr[j] + arr[k] < 2 * arr[i])  
+                    k++;          
+                else
+                    j--;          
+            } 
+        } 
+    } 
+   
+    // Driver code 
+    public static void main (String[] args)  
+    { 
+           
+        int arr[] = { 2, 6, 9, 12, 17,  
+                      22, 31, 32, 35, 42 }; 
+        int n = arr.length; 
+           
+        findAllTriplets(arr, n); 
+    } 
+} 
+   
+// This code is contributed by vt_m.
+```
+
+## Python 3
+
+```
+# python 3 program to print all triplets in given  
+# array that form Arithmetic Progression 
+   
+# Function to print all triplets in 
+# given sorted array that forms AP 
+def printAllAPTriplets(arr, n): 
+   
+    for i in range(1, n - 1):  
+   
+        # Search other two elements of 
+        # AP with arr[i] as middle. 
+        j = i - 1
+        k = i + 1
+        while(j >= 0 and k < n ):  
+   
+            # if a triplet is found 
+            if (arr[j] + arr[k] == 2 * arr[i]):  
+                print(arr[j], "", arr[i], "", arr[k]) 
+   
+                # Since elements are distinct, 
+                # arr[k] and arr[j] cannot form 
+                # any more triplets with arr[i] 
+                k += 1
+                j -= 1
+               
+   
+            # If middle element is more move to  
+            # higher side, else move lower side. 
+            elif (arr[j] + arr[k] < 2 * arr[i]):  
+                k += 1     
+            else: 
+                j -= 1     
+           
+# Driver code 
+arr = [ 2, 6, 9, 12, 17,  
+        22, 31, 32, 35, 42 ] 
+n = len(arr)  
+printAllAPTriplets(arr, n) 
+   
+# This article is contributed  
+# by Smitha Dinesh Semwal
+```
+
+## C#
+
+```
+// C# implementation to print 
+// all the triplets in given array 
+// that form Arithmetic Progression 
+   
+using System; 
+   
+class GFG  
+{ 
+       
+    // Function to print all triplets in 
+    // given sorted array that forms AP 
+    static void findAllTriplets(int []arr, int n) 
+    { 
+           
+        for (int i = 1; i < n - 1; i++)  
+        { 
+       
+            // Search other two elements  
+            // of AP with arr[i] as middle. 
+            for (int j = i - 1, k = i + 1; j >= 0 && k < n;) 
+            { 
+                   
+                // if a triplet is found 
+                if (arr[j] + arr[k] == 2 * arr[i])  
+                { 
+                    Console.WriteLine(arr[j] +" " +  
+                                      arr[i]+ " " + arr[k]); 
+       
+                    // Since elements are distinct, 
+                    // arr[k] and arr[j] cannot form 
+                    // any more triplets with arr[i] 
+                    k++; 
+                    j--; 
+                } 
+       
+                // If middle element is more move to  
+                // higher side, else move lower side. 
+                else if (arr[j] + arr[k] < 2 * arr[i])  
+                    k++;          
+                else
+                    j--;          
+            } 
+        } 
+    } 
+   
+    // Driver code 
+    public static void Main ()  
+    { 
+           
+        int []arr = { 2, 6, 9, 12, 17,  
+                      22, 31, 32, 35, 42 }; 
+        int n = arr.Length; 
+           
+        findAllTriplets(arr, n); 
+    } 
+} 
+   
+// This code is contributed by vt_m.
+```
+
+## PHP
+
+```
+<?php 
+// PHP implementation to print 
+// all the triplets in given array 
+// that form Arithmetic Progression 
+  
+// Function to print all triplets in 
+// given sorted array that forms AP 
+function findAllTriplets($arr, $n) 
+{ 
+    for ($i = 1; $i < $n - 1; $i++)  
+    { 
+  
+        // Search other two elements  
+        // of AP with arr[i] as middle. 
+        for ($j = $i - 1, $k = $i + 1;  
+                   $j >= 0 && $k < $n😉 
+        { 
+              
+            // if a triplet is found 
+            if ($arr[$j] + $arr[$k] == 2 *  
+                           $arr[$i])  
+            { 
+                echo $arr[$j] ." " . 
+                     $arr[$i]. " " .  
+                     $arr[$k] . "\n"; 
+  
+                // Since elements are distinct, 
+                // arr[k] and arr[j] cannot form 
+                // any more triplets with arr[i] 
+                $k++; 
+                $j--; 
+            } 
+  
+            // If middle element is more move to  
+            // higher side, else move lower side. 
+            else if ($arr[$j] + $arr[$k] < 2 *  
+                                     $arr[$i])  
+                $k++;          
+            else
+                $j--;          
+        } 
+    } 
+} 
+  
+// Driver code 
+$arr = array(2, 6, 9, 12, 17,  
+             22, 31, 32, 35, 42); 
+               
+$n = count($arr); 
+findAllTriplets($arr, $n); 
+  
+// This code is contributed by Sam007 
+?>
+```
+
+输出：
+
+```
+6 9 12
+2 12 22
+12 17 22
+2 17 32
+12 22 32
+9 22 35
+2 22 42
+22 32 42
+```
+
+时间复杂度：`O(n2)`。
+
+辅助空间：`O(1)`。

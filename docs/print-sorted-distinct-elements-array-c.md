@@ -50,3 +50,107 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to print sorted distinct 
+// elements. 
+import java.io.*; 
+import java.util.*; 
+  
+public class GFG { 
+       
+    static void printRepeating(Integer []arr, int size) 
+    { 
+        // Create a set using array elements 
+        SortedSet<Integer> s = new TreeSet<>(); 
+        Collections.addAll(s, arr); 
+          
+        // Print contents of the set. 
+        System.out.print(s); 
+    } 
+       
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+        Integer []arr = {1, 3, 2, 2, 1}; 
+        int n = arr.length; 
+        printRepeating(arr, n); 
+    } 
+} 
+   
+// This code is contributed by 
+// Manish Shaw (manishshaw1)
+```
+
+## Python3
+
+```
+# Python3 program to print  
+# sorted distinct elements. 
+  
+def printRepeating(arr,size): 
+  
+    # Create a set using array elements  
+    s = set() 
+    for i in range(size): 
+        if arr[i] not in s: 
+            s.add(arr[i]) 
+  
+    # Print contents of the set. 
+    for i in s: 
+        print(i,end=" ") 
+  
+# Driver code 
+if __name__=='__main__': 
+    arr = [1,3,2,2,1] 
+    size = len(arr) 
+    printRepeating(arr,size) 
+  
+# This code is contributed by  
+# Shrikant13
+```
+
+## C#
+
+```
+// C# program to print sorted distinct 
+// elements. 
+using System; 
+using System.Collections.Generic; 
+using System.Linq; 
+  
+class GFG { 
+      
+    static void printRepeating(int []arr, int size) 
+    { 
+        // Create a set using array elements 
+        SortedSet<int> s = new SortedSet<int>(arr); 
+      
+        // Print contents of the set. 
+        foreach (var n in s) 
+        { 
+            Console.Write(n + " "); 
+        }  
+    } 
+      
+    // Driver code 
+    public static void Main() 
+    { 
+        int []arr = {1, 3, 2, 2, 1}; 
+        int n = arr.Length; 
+        printRepeating(arr, n); 
+    } 
+} 
+  
+// This code is contributed by 
+// Manish Shaw (manishshaw1)
+```
+
+输出：
+
+```
+1 2 3
+```
+

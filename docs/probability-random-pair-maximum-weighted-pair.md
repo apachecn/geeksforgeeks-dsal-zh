@@ -85,3 +85,241 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to find Probability  
+// of a random pair being the maximum 
+// weighted pair 
+import java.io.*; 
+  
+class GFG { 
+      
+    // Function to return probability 
+    static double probability(int a[], int b[],  
+                            int size1,int size2) 
+    { 
+        // Count occurrences of maximum  
+        // element in A[] 
+        int max1 = Integer.MIN_VALUE,  count1 = 0; 
+        for (int i = 0; i < size1; i++) { 
+            if (a[i] > max1) { 
+                max1 = a[i]; 
+                count1 = 1; 
+            } 
+            else if (a[i] == max1) { 
+                count1++; 
+            } 
+        } 
+       
+        // Count occurrences of maximum  
+        // element in B[] 
+        int max2 = Integer.MIN_VALUE, count2 = 0; 
+        for (int i = 0; i < size2; i++) { 
+            if (b[i] > max2) { 
+                max2 = b[i]; 
+                count2 = 1; 
+            } 
+            else if (b[i] == max2) { 
+                count2++; 
+            } 
+        } 
+       
+        // Returning probability 
+        return (double)(count1 * count2) / (size1 * size2); 
+    } 
+       
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+        int a[] = { 1, 2, 3 }; 
+        int b[] = { 1, 3, 3 }; 
+       
+        int size1 = a.length; 
+        int size2 = b.length; 
+       
+        System.out.println(probability(a, b,  
+                            size1, size2)); 
+    } 
+} 
+  
+/*This code is contributed by Nikita Tiwari.*/
+```
+
+## Python3
+
+```
+import sys 
+  
+# Function to return probability  
+def probability(a, b, size1, size2): 
+  
+    # Count occurrences of maximum 
+    # element in A[]  
+    max1 = -(sys.maxsize - 1) 
+    count1 = 0
+    for i in range(size1): 
+        if a[i] > max1: 
+            count1 = 1
+        elif a[i] == max1: 
+            count1 += 1
+  
+    # Count occurrences of maximum  
+    # element in B[]  
+    max2 = -(sys.maxsize - 1) 
+    count2 = 0
+    for i in range(size2): 
+        if b[i] > max2: 
+            max2 = b[i] 
+            count2 = 1
+        elif b[i] == max2: 
+            count2 += 1
+  
+    # Returning probability  
+    return round((count1 * count2) / 
+                 (size1 * size2), 6) 
+  
+# Driver code 
+a = [1, 2, 3] 
+b = [1, 3, 3] 
+size1 = len(a) 
+size2 = len(b) 
+print(probability(a, b, size1, size2)) 
+  
+# This code is contributed  
+# by Shrikant13
+```
+
+## C#
+
+```
+// C# program to find Probability of a random  
+// pair being the maximum weighted pair 
+using System; 
+  
+class GFG { 
+      
+    // Function to return probability 
+    static float probability(int []a, int []b,  
+                          int size1,int size2) 
+    { 
+          
+        // Count occurrences of maximum  
+        // element in A[] 
+        int max1 = int.MinValue, count1 = 0; 
+          
+        for (int i = 0; i < size1; i++) { 
+            if (a[i] > max1) { 
+                max1 = a[i]; 
+                count1 = 1; 
+            } 
+            else if (a[i] == max1) { 
+                count1++; 
+            } 
+        } 
+      
+        // Count occurrences of maximum  
+        // element in B[] 
+        int max2 = int.MinValue, count2 = 0; 
+          
+        for (int i = 0; i < size2; i++) { 
+            if (b[i] > max2) { 
+                max2 = b[i]; 
+                count2 = 1; 
+            } 
+            else if (b[i] == max2) { 
+                count2++; 
+            } 
+        } 
+      
+        // Returning probability 
+        return (float)(count1 * count2) /  
+                            (size1 * size2); 
+    } 
+      
+    // Driver code 
+    public static void Main() 
+    { 
+        int []a = { 1, 2, 3 }; 
+        int []b = { 1, 3, 3 }; 
+      
+        int size1 = a.Length; 
+        int size2 = b.Length; 
+      
+        Console.WriteLine(probability(a, b,  
+                            size1, size2)); 
+    } 
+} 
+  
+/* This code is contributed by vt_m.*/
+```
+
+## PHP
+
+```
+<?php 
+// PHP program for Probability of  
+// a random pair being the maximum  
+// weighted pair 
+  
+// Function to return probability 
+function probability($a, $b,  
+             $size1, $size2) 
+{ 
+      
+    // Count occurrences of maximum 
+    // element in A[] 
+    $max1 = PHP_INT_MIN; $count1 = 0; 
+    for ($i = 0; $i < $size1; $i++) 
+    { 
+        if ($a[$i] > $max1) 
+        { 
+            $max1 = $a[$i]; 
+            $count1 = 1; 
+        } 
+        else if ($a[$i] == $max1) 
+        { 
+            $count1++; 
+        } 
+    } 
+  
+    // Count occurrences of maximum  
+    // element in B[] 
+    $max2 = PHP_INT_MIN; $count2 = 0; 
+    for ($i = 0; $i < $size2; $i++)  
+    { 
+        if ($b[$i] > $max2)  
+        { 
+            $max2 = $b[$i]; 
+            $count2 = 1; 
+        } 
+        else if ($b[$i] == $max2)  
+        { 
+            $count2++; 
+        } 
+    } 
+  
+    // Returning probability 
+    return (double)($count1 * $count2) /  
+                     ($size1 * $size2); 
+} 
+  
+    // Driver code 
+    $a = array(1, 2, 3); 
+    $b = array(1, 3, 3); 
+    $size1 = sizeof($a); 
+    $size2 = sizeof($b); 
+    echo probability($a, $b,  
+            $size1, $size2); 
+      
+// This code is contributed by ajit 
+?>
+```
+
+输出：
+
+```
+0.222222
+```
+
