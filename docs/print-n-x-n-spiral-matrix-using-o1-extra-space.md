@@ -113,3 +113,218 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to print a n x n spiral matrix 
+// in clockwise direction using O(1) space 
+  
+import java.io.*; 
+import java.util.*; 
+  
+class GFG { 
+  
+    // Prints spiral matrix of size n x n  
+    // containing numbers from 1 to n x n 
+    static void printSpiral(int n) 
+    { 
+        for (int i = 0; i < n; i++) { 
+            for (int j = 0; j < n; j++) { 
+                  
+                // x stores the layer in which (i, j)th 
+                // element lies 
+                int x; 
+  
+                // Finds minimum of four inputs 
+                x = Math.min(Math.min(i, j),  
+                    Math.min(n - 1 - i, n - 1 - j)); 
+  
+                // For upper right half 
+                if (i <= j) 
+                    System.out.print((n - 2 * x) * (n - 2 * x) -  
+                                     (i - x) - (j - x) + "\t"); 
+  
+                // for lower left half 
+                else
+                    System.out.print((n - 2 * x - 2) * (n - 2 * x - 2) + 
+                                     (i - x) + (j - x) + "\t"); 
+            } 
+            System.out.println(); 
+        } 
+    } 
+  
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+        int n = 5; 
+  
+        // print a n x n spiral matrix in O(1) space 
+        printSpiral(n); 
+    } 
+} 
+  
+/*This code is contributed by Nikita Tiwari.*/
+```
+
+## Python3
+
+```
+# Python3 program to print a n x n spiral matrix 
+# in clockwise direction using O(1) space 
+  
+# Prints spiral matrix of size n x n  
+# containing numbers from 1 to n x n 
+def printSpiral(n) : 
+      
+    for i in range(0, n) : 
+        for j in range(0, n) : 
+              
+            # Finds minimum of four inputs 
+            x = min(min(i, j), min(n - 1 - i, n - 1 - j)) 
+              
+            # For upper right half 
+            if (i <= j) : 
+                print((n - 2 * x) * (n - 2 * x) -
+                      (i - x)- (j - x), end = "\t") 
+  
+            # For lower left half 
+            else : 
+                print(((n - 2 * x - 2) *
+                       (n - 2 * x - 2) +
+                       (i - x) + (j - x)), end = "\t") 
+        print() 
+          
+# Driver code 
+n = 5
+  
+# print a n x n spiral matrix 
+# in O(1) space 
+printSpiral(n) 
+  
+# This code is contributed by Nikita Tiwari.
+```
+
+## C#
+
+```
+// C# program to print a n x n  
+// spiral matrix in clockwise 
+// direction using O(1) space 
+using System; 
+  
+class GFG { 
+  
+    // Prints spiral matrix of  
+    // size n x n containing 
+    // numbers from 1 to n x n 
+    static void printSpiral(int n) 
+    { 
+        for (int i = 0; i < n; i++)  
+        { 
+            for (int j = 0; j < n; j++) 
+            { 
+                  
+                // x stores the layer in which  
+                // (i, j)th element lies 
+                int x; 
+  
+                // Finds minimum of four inputs 
+                x = Math.Min(Math.Min(i, j),  
+                    Math.Min(n - 1 - i, n - 1 - j)); 
+  
+                // For upper right half 
+                if (i <= j) 
+                    Console.Write((n - 2 * x) *  
+                                  (n - 2 * x) -  
+                                  (i - x) - (j - x) + "\t"); 
+  
+                // for lower left half 
+                else
+                    Console.Write((n - 2 * x - 2) *  
+                                  (n - 2 * x - 2) +  
+                                  (i - x) + (j - x) + "\t"); 
+            } 
+            Console.WriteLine(); 
+        } 
+    } 
+  
+    // Driver code 
+    public static void Main() 
+    { 
+        int n = 5; 
+  
+        // print a n x n spiral  
+        // matrix in O(1) space 
+        printSpiral(n); 
+    } 
+} 
+  
+// This code is contributed by KRV
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to print a n x n  
+// spiral matrix in clockwise  
+// direction using O(1) space 
+  
+// Prints spiral matrix of size  
+// n x n containing numbers  
+// from 1 to n x n 
+function printSpiral($n) 
+{ 
+    for ($i = 0; $i < $n; $i++) 
+    { 
+        for ($j = 0; $j < $n; $j++) 
+        { 
+            // x stores the layer in  
+            // which (i, j)th element lies 
+            $x; 
+  
+            // Finds minimum of four inputs 
+            $x = min(min($i, $j), min($n - 1 - $i,  
+                                      $n - 1 - $j)); 
+  
+            // For upper right half 
+            if ($i <= $j) 
+                echo "\t ", ($n - 2 * $x) *  
+                            ($n - 2 * $x) -  
+                            ($i - $x) - ($j - $x); 
+  
+            // for lower left half 
+            else
+                echo "\t ", ($n - 2 * $x - 2) *  
+                            ($n - 2 * $x - 2) +  
+                            ($i - $x) + ($j - $x); 
+        } 
+        echo "\n"; 
+    } 
+} 
+  
+// Driver code 
+$n = 5; 
+  
+// print a n x n spiral 
+// matrix in O(1) space 
+printSpiral($n); 
+  
+// This code is contributed by ajit 
+?>
+```
+
+输出：
+
+```
+25     24     23     22     21     
+10     9     8     7     20     
+11     2     1     6     19     
+12     3     4     5     18     
+13     14     15     16     17
+```
+
+练习：
+
+对于给定的数字`n`，使用`O(1)`空间沿逆时针方向打印`n x n`螺旋矩阵。

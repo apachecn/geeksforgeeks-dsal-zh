@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/print-modified-array-executing-commands-addition-subtraction/](https://www.geeksforgeeks.org/print-modified-array-executing-commands-addition-subtraction/)
 
-给定大小为'n'的数组和给定的大小为'm'的命令集。 每个命令由四个整数`q, l, r, k`组成。 这些命令具有以下类型：
+给定大小为`n`的数组和给定的大小为`m`的命令集。 每个命令由四个整数`q, l, r, k`组成。 这些命令具有以下类型：
 
 *   如果`q = 0`，则将`k`添加到范围`a`至`b`的所有整数中（`1 <= a <= b <= n`）。
 
@@ -108,3 +108,223 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to find modified array 
+// after executing m commands/queries 
+import java.util.Arrays; 
+  
+class GFG { 
+      
+    // Update function for every command 
+    static void updateQuery(int arr[], int n,  
+                  int q, int l, int r, int k) 
+    { 
+          
+        // If q == 0, add 'k' and '-k' 
+        // to 'l-1' and 'r' index 
+        if (q == 0){ 
+            arr[l-1] += k; 
+            arr[r] += -k; 
+        } 
+       
+        // If q == 1, add '-k' and 'k' 
+        // to 'l-1' and 'r' index 
+        else{ 
+            arr[l-1] += -k; 
+            arr[r] += k; 
+        } 
+          
+        return; 
+    } 
+       
+    // Function to generate the final 
+    // array after executing all  
+    // commands 
+    static void generateArray(int arr[], int n) 
+    { 
+        // Generate final array with the  
+        // help of DP concept 
+        for (int i = 1; i < n; ++i) 
+            arr[i] += arr[i-1]; 
+           
+    } 
+    //driver code 
+    public static void main(String arg[]) 
+    { 
+        int n = 5; 
+        int arr[] = new int[n+1]; 
+          
+        //Set all array elements to '0' 
+        Arrays.fill(arr, 0); 
+          
+        int q = 0, l = 1, r = 3, k = 2; 
+        updateQuery(arr, n, q, l, r, k); 
+       
+        q = 1 ; l = 3; r = 5; k = 3; 
+        updateQuery(arr, n, q, l, r, k); 
+       
+        q = 0 ; l = 2; r = 5; k = 1; 
+        updateQuery(arr, n, q, l, r, k); 
+       
+        // Generate final array 
+        generateArray(arr, n); 
+       
+        // Printing the final modified array 
+        for (int i = 0; i < n; ++i) 
+            System.out.print(arr[i]+" "); 
+    } 
+} 
+  
+// This code is contributed by Anant Agarwal.
+```
+
+## Python3
+
+```
+# Python3 program to find modified array 
+# after executing m commands/queries 
+  
+# Update function for every command 
+def updateQuery(arr, n, q, l, r, k): 
+  
+    # If q == 0, add 'k' and '-k' 
+    # to 'l-1' and 'r' index 
+    if (q == 0): 
+        arr[l - 1] += k 
+        arr[r] += -k 
+  
+    # If q == 1, add '-k' and 'k' 
+    # to 'l-1' and 'r' index 
+    else: 
+        arr[l - 1] += -k 
+        arr[r] += k 
+      
+    return
+  
+# Function to generate the final 
+# array after executing all commands 
+def generateArray(arr, n): 
+  
+    # Generate final array with the  
+    # help of DP concept 
+    for i in range(1, n): 
+        arr[i] += arr[i - 1] 
+      
+    return
+  
+# Driver Code 
+n = 5
+arr = [0 for i in range(n + 1)] 
+  
+# Set all array elements to '0' 
+q = 0; l = 1; r = 3; k = 2
+updateQuery(arr, n, q, l, r, k) 
+  
+q, l, r, k = 1, 3, 5, 3
+updateQuery(arr, n, q, l, r, k); 
+  
+q, l, r, k = 0, 2, 5, 1
+updateQuery(arr, n, q, l, r, k) 
+  
+# Generate final array 
+generateArray(arr, n) 
+  
+# Printing the final modified array 
+for i in range(n): 
+    print(arr[i], end = " ") 
+      
+      
+# This code is contributed by Anant Agarwal.
+```
+
+## C#
+
+```
+// Program to find modified 
+// array after executing 
+// m commands/queries 
+using System; 
+  
+class GFG { 
+  
+    // Update function for every command 
+    static void updateQuery(int[] arr, int n, int q, 
+                            int l, int r, int k) 
+    { 
+  
+        // If q == 0, add 'k' and '-k' 
+        // to 'l-1' and 'r' index 
+        if (q == 0) { 
+            arr[l - 1] += k; 
+            arr[r] += -k; 
+        } 
+  
+        // If q == 1, add '-k' and 'k' 
+        // to 'l-1' and 'r' index 
+        else { 
+            arr[l - 1] += -k; 
+            arr[r] += k; 
+        } 
+        return; 
+    } 
+  
+    // Function to generate final 
+    // array after executing all 
+    // commands 
+    static void generateArray(int[] arr, int n) 
+    { 
+        // Generate final array with 
+        // the help of DP concept 
+        for (int i = 1; i < n; ++i) 
+            arr[i] += arr[i - 1]; 
+    } 
+  
+    // Driver code 
+    public static void Main() 
+    { 
+        int n = 5; 
+        int[] arr = new int[n + 1]; 
+  
+        // Set all array elements to '0' 
+        for (int i = 0; i < arr.Length; i++) 
+            arr[i] = 0; 
+  
+        int q = 0, l = 1, r = 3, k = 2; 
+        updateQuery(arr, n, q, l, r, k); 
+  
+        q = 1; 
+        l = 3; 
+        r = 5; 
+        k = 3; 
+        updateQuery(arr, n, q, l, r, k); 
+  
+        q = 0; 
+        l = 2; 
+        r = 5; 
+        k = 1; 
+        updateQuery(arr, n, q, l, r, k); 
+  
+        // Generate final array 
+        generateArray(arr, n); 
+  
+        // Printing the final modified array 
+        for (int i = 0; i < n; ++i) 
+            Console.Write(arr[i] + " "); 
+    } 
+} 
+  
+// This code is contributed by Anant Agarwal.
+```
+
+输出：
+
+```
+Output: 2 3 0 -2 -2 
+```
+
+时间复杂度：`O(Max(m, n))`。
+
+辅助空间：`O(n)`。
