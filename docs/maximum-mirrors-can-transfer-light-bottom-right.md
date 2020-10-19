@@ -118,3 +118,210 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to find how many mirror can transfer 
+// light from bottom to right 
+import java.util.*; 
+  
+class GFG  
+{ 
+  
+    // method returns number of mirror which can transfer 
+    // light from bottom to right 
+    static int maximumMirrorInMatrix(String mat[], int N)  
+    { 
+        // To store first obstacles horizontaly (from right) 
+        // and vertically (from bottom) 
+        int[] horizontal = new int[N]; 
+        int[] vertical = new int[N]; 
+  
+        // initialize both array as -1, signifying no obstacle 
+        Arrays.fill(horizontal, -1); 
+        Arrays.fill(vertical, -1); 
+          
+        // looping matrix to mark column for obstacles 
+        for (int i = 0; i < N; i++)  
+        { 
+            for (int j = N - 1; j >= 0; j--)  
+            { 
+                if (mat[i].charAt(j) == 'B') 
+                { 
+                    continue; 
+                } 
+  
+                // mark rightmost column with obstacle 
+                horizontal[i] = j; 
+                break; 
+            } 
+        } 
+  
+        // looping matrix to mark rows for obstacles 
+        for (int j = 0; j < N; j++)  
+        { 
+            for (int i = N - 1; i >= 0; i--)  
+            { 
+                if (mat[i].charAt(j) == 'B')  
+                { 
+                    continue; 
+                } 
+  
+                // mark leftmost row with obstacle 
+                vertical[j] = i; 
+                break; 
+            } 
+        } 
+  
+        int res = 0; // Initialize result 
+  
+        // if there is not obstacle on right or below, 
+        // then mirror can be placed to transfer light 
+        for (int i = 0; i < N; i++) 
+        { 
+            for (int j = 0; j < N; j++)  
+            { 
+                /* if i > vertical[j] then light can from bottom 
+                if j > horizontal[i] then light can go to right */
+                if (i > vertical[j] && j > horizontal[i]) 
+                { 
+                    /* uncomment this code to print actual mirror 
+                    position also 
+                    cout << i << " " << j << endl; */
+                    res++; 
+                } 
+            } 
+        } 
+  
+        return res; 
+    } 
+  
+// Driver code 
+public static void main(String[] args)  
+{ 
+    int N = 5; 
+  
+    // B - Blank     O - Obstacle 
+    String mat[] = {"BBOBB", 
+        "BBBBO", 
+        "BBBBB", 
+        "BOOBO", 
+        "BBBOB"
+    }; 
+  
+    System.out.println(maximumMirrorInMatrix(mat, N)); 
+} 
+} 
+  
+/* This code is contributed by PrinciRaj1992 */
+```
+
+## C#
+
+```
+// C# program to find how many mirror can transfer 
+// light from bottom to right 
+using System; 
+      
+class GFG  
+{ 
+  
+    // method returns number of mirror which can transfer 
+    // light from bottom to right 
+    static int maximumMirrorInMatrix(String []mat, int N)  
+    { 
+        // To store first obstacles horizontaly (from right) 
+        // and vertically (from bottom) 
+        int[] horizontal = new int[N]; 
+        int[] vertical = new int[N]; 
+  
+        // initialize both array as -1, signifying no obstacle 
+        for (int i = 0; i < N; i++)  
+        { 
+            horizontal[i]=-1; 
+            vertical[i]=-1; 
+        } 
+          
+        // looping matrix to mark column for obstacles 
+        for (int i = 0; i < N; i++)  
+        { 
+            for (int j = N - 1; j >= 0; j--)  
+            { 
+                if (mat[i][j] == 'B') 
+                { 
+                    continue; 
+                } 
+  
+                // mark rightmost column with obstacle 
+                horizontal[i] = j; 
+                break; 
+            } 
+        } 
+  
+        // looping matrix to mark rows for obstacles 
+        for (int j = 0; j < N; j++)  
+        { 
+            for (int i = N - 1; i >= 0; i--)  
+            { 
+                if (mat[i][j] == 'B')  
+                { 
+                    continue; 
+                } 
+  
+                // mark leftmost row with obstacle 
+                vertical[j] = i; 
+                break; 
+            } 
+        } 
+  
+        int res = 0; // Initialize result 
+  
+        // if there is not obstacle on right or below, 
+        // then mirror can be placed to transfer light 
+        for (int i = 0; i < N; i++) 
+        { 
+            for (int j = 0; j < N; j++)  
+            { 
+                /* if i > vertical[j] then light can from bottom 
+                if j > horizontal[i] then light can go to right */
+                if (i > vertical[j] && j > horizontal[i]) 
+                { 
+                    /* uncomment this code to print actual mirror 
+                    position also 
+                    cout << i << " " << j << endl; */
+                    res++; 
+                } 
+            } 
+        } 
+  
+        return res; 
+    } 
+  
+// Driver code 
+public static void Main(String[] args)  
+{ 
+    int N = 5; 
+  
+    // B - Blank     O - Obstacle 
+    String []mat = {"BBOBB", 
+        "BBBBO", 
+        "BBBBB", 
+        "BOOBO", 
+        "BBBOB"
+    }; 
+  
+    Console.WriteLine(maximumMirrorInMatrix(mat, N)); 
+} 
+} 
+  
+// This code is contributed by Princi Singh
+```
+
+
+输出：
+
+```
+2
+```
+
