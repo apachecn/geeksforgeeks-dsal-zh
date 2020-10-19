@@ -184,3 +184,316 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program for online algorithm for 
+// palindrome checking 
+public class GFG  
+{       
+    // d is the number of characters in  
+    // input alphabet 
+    static final int d = 256; 
+       
+    // q is a prime number used for  
+    // evaluating Rabin Karp's Rolling hash 
+    static final int q = 103; 
+       
+    static void checkPalindromes(String str) 
+    { 
+        // Length of input string 
+        int N = str.length(); 
+       
+        // A single character is always a palindrome 
+        System.out.println(str.charAt(0)+" Yes"); 
+       
+        // Return if string has only one character 
+        if (N == 1) return; 
+       
+        // Initialize first half reverse and second  
+        // half for as firstr and second characters 
+        int firstr  = str.charAt(0) % q; 
+        int second = str.charAt(1) % q; 
+       
+        int h = 1, i, j; 
+       
+        // Now check for palindromes from second  
+        // character onward 
+        for (i = 1; i < N; i++) 
+        { 
+            // If the hash values of 'firstr' and 
+            // 'second' match, then only check  
+            // individual characters 
+            if (firstr == second) 
+            { 
+                /* Check if str[0..i] is palindrome 
+                using simple character by character  
+                 match */
+                for (j = 0; j < i/2; j++) 
+                { 
+                    if (str.charAt(j) != str.charAt(i  
+                                               - j)) 
+                        break; 
+                } 
+                System.out.println((j == i/2) ?  
+                  str.charAt(i) + " Yes": str.charAt(i)+ 
+                  " No"); 
+            } 
+            else System.out.println(str.charAt(i)+ " No"); 
+       
+            // Calculate hash values for next iteration. 
+            // Don't calculate hash for next characters 
+            // if this is the last character of string 
+            if (i != N - 1) 
+            { 
+                // If i is even (next i is odd)  
+                if (i % 2 == 0) 
+                { 
+                    // Add next character after first  
+                    // half at beginning of 'firstr' 
+                    h = (h * d) % q; 
+                    firstr  = (firstr + h *str.charAt(i /  
+                                                 2)) % q; 
+                       
+                    // Add next character after second  
+                    // half at the end of second half. 
+                    second = (second * d + str.charAt(i +  
+                                                1)) % q; 
+                } 
+                else
+                { 
+                    // If next i is odd (next i is even) 
+                    // then we need not to change firstr, 
+                    // we need to remove first character 
+                    // of second and append a character 
+                    // to it. 
+                    second = (d * (second + q - str.charAt( 
+                             (i + 1) / 2) * h) % q + 
+                               str.charAt(i + 1)) % q; 
+                } 
+            } 
+        } 
+    } 
+       
+    /* Driver program to test above function */
+    public static void main(String args[]) 
+    { 
+        String txt = "aabaacaabaa"; 
+        checkPalindromes(txt); 
+    } 
+} 
+// This code is contributed by Sumit Ghosh
+```
+
+## Python
+
+```
+# Python program Online algorithm for checking palindrome 
+# in a stream 
+  
+# d is the number of characters in input alphabet 
+d = 256
+  
+# q is a prime number used for evaluating Rabin Karp's 
+# Rolling hash 
+q = 103
+  
+def checkPalindromes(string): 
+  
+    # Length of input string 
+    N = len(string) 
+  
+    # A single character is always a palindrome 
+    print string[0] + " Yes"
+  
+    # Return if string has only one character 
+    if N == 1: 
+        return
+  
+    # Initialize first half reverse and second half for 
+    # as firstr and second characters 
+    firstr = ord(string[0]) % q 
+    second = ord(string[1]) % q 
+  
+    h = 1
+    i = 0
+    j = 0
+  
+    # Now check for palindromes from second character 
+    # onward 
+    for i in xrange(1,N): 
+  
+        # If the hash values of 'firstr' and 'second' 
+        # match, then only check individual characters 
+        if firstr == second: 
+  
+            # Check if str[0..i] is palindrome using 
+            # simple character by character match 
+            for j in xrange(0,i/2): 
+                if string[j] != string[i-j]: 
+                    break
+            j += 1
+            if j == i/2: 
+                print string[i] + " Yes"
+            else: 
+                print string[i] + " No"
+        else: 
+            print string[i] + " No"
+  
+        # Calculate hash values for next iteration. 
+        # Don't calculate hash for next characters if 
+        # this is the last character of string 
+        if i != N-1: 
+  
+            # If i is even (next i is odd) 
+            if i % 2 == 0: 
+  
+                # Add next character after first half at 
+                # beginning of 'firstr' 
+                h = (h*d) % q 
+                firstr = (firstr + h*ord(string[i/2]))%q 
+  
+                # Add next character after second half at 
+                # the end of second half. 
+                second = (second*d + ord(string[i+1]))%q 
+            else: 
+                # If next i is odd (next i is even) then we 
+                # need not to change firstr, we need to remove 
+                # first character of second and append a 
+                # character to it. 
+                second = (d*(second + q - ord(string[(i+1)/2])*h)%q 
+                            + ord(string[i+1]))%q 
+  
+# Driver program 
+txt = "aabaacaabaa"
+checkPalindromes(txt) 
+# This code is contributed by Bhavya Jain
+```
+
+## C#
+
+```
+// C# program for online algorithm for  
+// palindrome checking  
+using System; 
+  
+class GFG 
+{ 
+// d is the number of characters   
+// in input alphabet  
+public const int d = 256; 
+  
+// q is a prime number used for  
+// evaluating Rabin Karp's Rolling hash  
+public const int q = 103; 
+  
+public static void checkPalindromes(string str) 
+{ 
+    // Length of input string  
+    int N = str.Length; 
+  
+    // A single character is always 
+    // a palindrome  
+    Console.WriteLine(str[0] + " Yes"); 
+  
+    // Return if string has only  
+    // one character  
+    if (N == 1) 
+    { 
+        return; 
+    } 
+  
+    // Initialize first half reverse and second  
+    // half for as firstr and second characters  
+    int firstr = str[0] % q; 
+    int second = str[1] % q; 
+  
+    int h = 1, i, j; 
+  
+    // Now check for palindromes from  
+    // second character onward  
+    for (i = 1; i < N; i++) 
+    { 
+        // If the hash values of 'firstr'  
+        // and 'second' match, then only  
+        // check individual characters  
+        if (firstr == second) 
+        { 
+            /* Check if str[0..i] is palindrome  
+            using simple character by character  
+            match */
+            for (j = 0; j < i / 2; j++) 
+            { 
+                if (str[j] != str[i - j]) 
+                { 
+                    break; 
+                } 
+            } 
+            Console.WriteLine((j == i / 2) ? str[i] +  
+                             " Yes": str[i] + " No"); 
+        } 
+        else
+        { 
+            Console.WriteLine(str[i] + " No"); 
+        } 
+  
+        // Calculate hash values for next iteration.  
+        // Don't calculate hash for next characters  
+        // if this is the last character of string  
+        if (i != N - 1) 
+        { 
+            // If i is even (next i is odd)  
+            if (i % 2 == 0) 
+            { 
+                // Add next character after first  
+                // half at beginning of 'firstr'  
+                h = (h * d) % q; 
+                firstr = (firstr + h * str[i / 2]) % q; 
+  
+                // Add next character after second  
+                // half at the end of second half.  
+                second = (second * d + str[i + 1]) % q; 
+            } 
+            else
+            { 
+                // If next i is odd (next i is even)  
+                // then we need not to change firstr,  
+                // we need to remove first character  
+                // of second and append a character  
+                // to it.  
+                second = (d * (second + q - str[(i + 1) / 2] * 
+                                   h) % q + str[i + 1]) % q; 
+            } 
+        } 
+    } 
+} 
+  
+// Driver Code 
+public static void Main(string[] args) 
+{ 
+    string txt = "aabaacaabaa"; 
+    checkPalindromes(txt); 
+} 
+} 
+  
+// This code is contributed by Shrikant13
+```
+
+输出：
+
+```
+a Yes
+a Yes
+b No
+a No
+a Yes
+c No
+a No
+a No
+b No
+a No
+a Yes
+```
+
+上述解决方案在最坏情况下的时间复杂度仍为`O(n * n)`，但总的来说，它比简单方法要好得多，因为我们在大多数时间通过首先比较散列值来避免完全子串比较。 最坏的情况发生在具有所有相同字符（例如`"aaaaaa"`）的输入字符串中。

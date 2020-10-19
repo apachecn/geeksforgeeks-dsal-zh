@@ -94,3 +94,186 @@ int main() 
 } 
 
 ```
+
+## Java
+
+```
+// Java program to count 
+// the number of unique 
+// triplets whose XOR is 0
+import java.io.*;
+import java.util.*;
+ 
+class GFG
+{
+    // function to count the 
+    // number of unique triplets
+    // whose xor is 0
+    static int countTriplets(int []a, 
+                             int n) 
+    {
+        // To store values 
+        // that are present
+        ArrayList<Integer> s = 
+                  new ArrayList<Integer>();
+        for (int i = 0; i < n; i++)
+            s.add(a[i]);
+         
+        // stores the count 
+        // of unique triplets
+        int count = 0;
+         
+        // traverse for all i, 
+        // j pairs such that j>i
+        for (int i = 0; i < n; i++) 
+        {
+            for (int j = i + 1; 
+                     j < n; j++)
+            {
+     
+            // xor of a[i] and a[j]
+            int xr = a[i] ^ a[j];
+         
+            // if xr of two numbers 
+            // is present, then 
+            // increase the count
+            if (s.contains(xr) &&
+                xr != a[i] && xr != a[j])
+                count++;
+            }
+        }
+         
+        // returns answer
+        return count / 3;
+    }
+     
+    // Driver code
+    public static void main(String srgs[])
+    {
+        int []a = {1, 3, 5, 
+                   10, 14, 15};
+        int n = a.length;
+        System.out.print(countTriplets(a, n));
+    }
+}
+ 
+// This code is contributed by 
+// Manish Shaw(manishshaw1)
+```
+
+## Python3
+
+```
+# Python 3 program to count the number of
+# unique triplets whose XOR is 0
+ 
+# function to count the number of 
+# unique triplets whose xor is 0
+def countTriplets(a, n):
+     
+    # To store values that are present
+    s = set()
+    for i in range(n):
+        s.add(a[i])
+     
+    # stores the count of unique triplets
+    count = 0
+     
+    # traverse for all i, j pairs such that j>i
+    for i in range(n):
+        for j in range(i + 1, n, 1):
+             
+            # xor of a[i] and a[j]
+            xr = a[i] ^ a[j]
+             
+            # if xr of two numbers is present,
+            # then increase the count
+            if (xr in s and xr != a[i] and
+                            xr != a[j]):
+                count += 1;
+         
+    # returns answer
+    return int(count / 3)
+ 
+# Driver code
+if __name__ == '__main__':
+    a = [1, 3, 5, 10, 14, 15]
+    n = len(a) 
+    print(countTriplets(a, n)) 
+     
+# This code is contributed by
+# Surendra_Gangwar
+```
+
+## C#
+
+```
+// C# program to count 
+// the number of unique 
+// triplets whose XOR is 0
+using System;
+using System.Collections.Generic;
+ 
+class GFG
+{
+    // function to count the 
+    // number of unique triplets
+    // whose xor is 0
+    static int countTriplets(int []a, 
+                             int n) 
+    {
+        // To store values 
+        // that are present
+        List<int> s = new List<int>();
+        for (int i = 0; i < n; i++)
+            s.Add(a[i]);
+         
+        // stores the count 
+        // of unique triplets
+        int count = 0;
+         
+        // traverse for all i, 
+        // j pairs such that j>i
+        for (int i = 0; i < n; i++) 
+        {
+            for (int j = i + 1; 
+                     j < n; j++)
+            {
+     
+            // xor of a[i] and a[j]
+            int xr = a[i] ^ a[j];
+         
+            // if xr of two numbers 
+            // is present, then 
+            // increase the count
+            if (s.Exists(item => item == xr) &&
+                   xr != a[i] && xr != a[j])
+                count++;
+            }
+        }
+         
+        // returns answer
+        return count / 3;
+    }
+     
+    // Driver code
+    static void Main()
+    {
+        int []a = new int[]{1, 3, 5, 
+                            10, 14, 15};
+        int n = a.Length;
+        Console.Write(countTriplets(a, n));
+    }
+}
+ 
+// This code is contributed by 
+// Manish Shaw(manishshaw1)
+```
+
+输出：
+
+```
+2
+```
+
+时间复杂度：`O(n ^ 2)`。
