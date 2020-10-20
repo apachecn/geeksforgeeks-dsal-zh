@@ -313,3 +313,184 @@ int main()
 // This code is contributed by SHUBHAMSINGH10 
 
 ```
+
+## Java
+
+```
+// Java program to insert an
+// element in a sorted array
+ 
+class Main {
+    // Inserts a key in arr[] of given
+    // capacity.  n is current size of arr[].
+    // This function returns n+1 if insertion
+    // is successful, else n.
+    static int insertSorted(int arr[], int n, int key, int capacity)
+    {
+        // Cannot insert more elements if n is already
+        // more than or equal to capcity
+        if (n >= capacity)
+            return n;
+ 
+        int i;
+        for (i = n - 1; (i >= 0 && arr[i] > key); i--)
+            arr[i + 1] = arr[i];
+ 
+        arr[i + 1] = key;
+ 
+        return (n + 1);
+    }
+ 
+    /* Driver program to test above function */
+    public static void main(String[] args)
+    {
+        int arr[] = new int[20];
+        arr[0] = 12;
+        arr[1] = 16;
+        arr[2] = 20;
+        arr[3] = 40;
+        arr[4] = 50;
+        arr[5] = 70;
+        int capacity = arr.length;
+        int n = 6;
+        int key = 26;
+ 
+        System.out.print("\nBefore Insertion: ");
+        for (int i = 0; i < n; i++)
+            System.out.print(arr[i] + " ");
+ 
+        // Inserting key
+        n = insertSorted(arr, n, key, capacity);
+ 
+        System.out.print("\nAfter Insertion: ");
+        for (int i = 0; i < n; i++)
+            System.out.print(arr[i] + " ");
+    }
+}
+```
+
+## Python3
+
+```
+# Python3 program to implement insert 
+# operation in an sorted array.
+ 
+# Inserts a key in arr[] of given capacity. 
+# n is current size of arr[]. This function 
+# returns n+1 if insertion is successful, else n.
+def insertSorted(arr, n, key, capacity):
+     
+    # Cannot insert more elements if n is 
+    # already more than or equal to capcity
+    if (n >= capacity):
+        return n
+ 
+    i = n - 1
+    while i >= 0 and arr[i] > key:
+        arr[i + 1] = arr[i]
+        i -= 1
+ 
+    arr[i + 1] = key
+ 
+    return (n + 1)
+ 
+# Driver Code
+arr = [12, 16, 20, 40, 50, 70]
+ 
+for i in range(20):
+    arr.append(0)
+ 
+capacity = len(arr)
+n = 6
+key = 26
+ 
+print("Before Insertion: ", end = " ");
+for i in range(n):
+    print(arr[i], end = " ")
+     
+# Inserting key
+n = insertSorted(arr, n, key, capacity)
+ 
+print("\nAfter Insertion: ", end = "")
+for i in range(n):
+    print(arr[i], end = " ")
+ 
+# This code is contributed by Mohit Kumar
+```
+
+## C#
+
+```
+using System;
+ 
+// C# program to insert an
+// element in a sorted array
+ 
+public class GFG {
+    // Inserts a key in arr[] of given
+    // capacity.  n is current size of arr[].
+    // This function returns n+1 if insertion
+    // is successful, else n.
+    public static int insertSorted(int[] arr, int n, int key, int capacity)
+    {
+        // Cannot insert more elements if n is already
+        // more than or equal to capcity
+        if (n >= capacity) {
+            return n;
+        }
+ 
+        int i;
+        for (i = n - 1; (i >= 0 && arr[i] > key); i--) {
+            arr[i + 1] = arr[i];
+        }
+ 
+        arr[i + 1] = key;
+ 
+        return (n + 1);
+    }
+ 
+    /* Driver program to test above function */
+    public static void Main(string[] args)
+    {
+        int[] arr = new int[20];
+        arr[0] = 12;
+        arr[1] = 16;
+        arr[2] = 20;
+        arr[3] = 40;
+        arr[4] = 50;
+        arr[5] = 70;
+        int capacity = arr.Length;
+        int n = 6;
+        int key = 26;
+ 
+        Console.Write("\nBefore Insertion: ");
+        for (int i = 0; i < n; i++) {
+            Console.Write(arr[i] + " ");
+        }
+ 
+        // Inserting key
+        n = insertSorted(arr, n, key, capacity);
+ 
+        Console.Write("\nAfter Insertion: ");
+        for (int i = 0; i < n; i++) {
+            Console.Write(arr[i] + " ");
+        }
+    }
+}
+ 
+// This code is contributed by Shrikant13
+```
+
+输出：
+
+```
+Array before deletion
+10 20 30 40 50 
+
+Array after deletion
+10 20 40 50 
+```
+
+删除操作的时间复杂度：`O(n)`【在最坏的情况下，所有元素都可能必须移动】。
+
+<https://www.youtube.com/watch?v=SX1rtrsJ4R4>
