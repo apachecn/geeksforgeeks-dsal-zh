@@ -166,3 +166,298 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to demonstrate working of  
+// Square Root Decomposition. 
+import java.util.*; 
+  
+class GFG  
+{ 
+  
+static int MAXN = 10000; 
+static int SQRSIZE = 100; 
+  
+static int []arr = new int[MAXN];             // original array 
+static int []block = new int[SQRSIZE];         // decomposed array 
+static int blk_sz;                             // block size 
+  
+// Time Complexity : O(1) 
+static void update(int idx, int val) 
+{ 
+    int blockNumber = idx / blk_sz; 
+    block[blockNumber] += val - arr[idx]; 
+    arr[idx] = val; 
+} 
+  
+// Time Complexity : O(sqrt(n)) 
+static int query(int l, int r) 
+{ 
+    int sum = 0; 
+    while (l < r && l % blk_sz != 0 && l != 0) 
+    { 
+        // traversing first block in range 
+        sum += arr[l]; 
+        l++; 
+    } 
+    while (l+blk_sz <= r) 
+    { 
+        // traversing completely 
+        // overlapped blocks in range 
+        sum += block[l / blk_sz]; 
+        l += blk_sz; 
+    } 
+    while (l <= r) 
+    { 
+        // traversing last block in range 
+        sum += arr[l]; 
+        l++; 
+    } 
+    return sum; 
+} 
+  
+// Fills values in input[] 
+static void preprocess(int input[], int n) 
+{ 
+    // initiating block pointer 
+    int blk_idx = -1; 
+  
+    // calculating size of block 
+    blk_sz = (int) Math.sqrt(n); 
+  
+    // building the decomposed array 
+    for (int i = 0; i < n; i++) 
+    { 
+        arr[i] = input[i]; 
+        if (i % blk_sz == 0) 
+        { 
+            // entering next block 
+            // incementing block pointer 
+            blk_idx++; 
+        } 
+        block[blk_idx] += arr[i]; 
+    } 
+} 
+  
+// Driver code 
+public static void main(String[] args)  
+{ 
+      
+    // We have used separate array for input because 
+    // the purpose of this code is to explain SQRT 
+    // decomposition in competitive programming where 
+    // we have multiple inputs. 
+    int input[] = {1, 5, 2, 4, 6, 1, 3, 5, 7, 10}; 
+    int n = input.length; 
+  
+    preprocess(input, n); 
+  
+    System.out.println("query(3, 8) : " + 
+                        query(3, 8)); 
+    System.out.println("query(1, 6) : " + 
+                        query(1, 6)); 
+    update(8, 0); 
+    System.out.println("query(8, 8) : " +  
+                        query(8, 8)); 
+} 
+}  
+  
+// This code is contributed by PrinciRaj1992
+```
+
+## Python 3
+
+```
+# Python 3 program to demonstrate working of Square Root 
+# Decomposition. 
+from math import sqrt 
+  
+MAXN = 10000
+SQRSIZE = 100
+  
+arr = [0]*(MAXN)         # original array 
+block = [0]*(SQRSIZE)     # decomposed array 
+blk_sz = 0                 # block size 
+  
+# Time Complexity : O(1) 
+def update(idx, val): 
+    blockNumber = idx // blk_sz 
+    block[blockNumber] += val - arr[idx] 
+    arr[idx] = val 
+  
+# Time Complexity : O(sqrt(n)) 
+def query(l, r): 
+    sum = 0
+    while (l < r and l % blk_sz != 0 and l != 0): 
+          
+        # traversing first block in range 
+        sum += arr[l] 
+        l += 1
+      
+    while (l + blk_sz <= r): 
+          
+        # traversing completely overlapped blocks in range 
+        sum += block[l//blk_sz] 
+        l += blk_sz 
+      
+    while (l <= r): 
+          
+        # traversing last block in range 
+        sum += arr[l] 
+        l += 1
+      
+    return sum
+      
+# Fills values in input[] 
+def preprocess(input, n): 
+      
+    # initiating block pointer 
+    blk_idx = -1
+  
+    # calculating size of block 
+    global blk_sz 
+    blk_sz = int(sqrt(n)) 
+  
+    # building the decomposed array 
+    for i in range(n): 
+        arr[i] = input[i]; 
+        if (i % blk_sz == 0): 
+              
+            # entering next block 
+            # incementing block pointer 
+            blk_idx += 1; 
+          
+        block[blk_idx] += arr[i] 
+  
+# Driver code 
+  
+# We have used separate array for input because 
+# the purpose of this code is to explain SQRT 
+# decomposition in competitive programming where 
+# we have multiple inputs. 
+input= [1, 5, 2, 4, 6, 1, 3, 5, 7, 10] 
+n = len(input) 
+  
+preprocess(input, n) 
+  
+print("query(3,8) : ",query(3, 8)) 
+print("query(1,6) : ",query(1, 6)) 
+update(8, 0) 
+print("query(8,8) : ",query(8, 8)) 
+  
+# This code is contributed by Sanjit_Prasad
+```
+
+## C#
+
+```
+// C# program to demonstrate working of  
+// Square Root Decomposition.  
+using System; 
+      
+class GFG  
+{ 
+static int MAXN = 10000; 
+static int SQRSIZE = 100; 
+  
+static int []arr = new int[MAXN];             // original array 
+static int []block = new int[SQRSIZE];         // decomposed array 
+static int blk_sz;                             // block size 
+  
+// Time Complexity : O(1) 
+static void update(int idx, int val) 
+{ 
+    int blockNumber = idx / blk_sz; 
+    block[blockNumber] += val - arr[idx]; 
+    arr[idx] = val; 
+} 
+  
+// Time Complexity : O(sqrt(n)) 
+static int query(int l, int r) 
+{ 
+    int sum = 0; 
+    while (l < r && l % blk_sz != 0 && l != 0) 
+    { 
+        // traversing first block in range 
+        sum += arr[l]; 
+        l++; 
+    } 
+    while (l + blk_sz <= r) 
+    { 
+        // traversing completely 
+        // overlapped blocks in range 
+        sum += block[l / blk_sz]; 
+        l += blk_sz; 
+    } 
+    while (l <= r) 
+    { 
+        // traversing last block in range 
+        sum += arr[l]; 
+        l++; 
+    } 
+    return sum; 
+} 
+  
+// Fills values in input[] 
+static void preprocess(int []input, int n) 
+{ 
+    // initiating block pointer 
+    int blk_idx = -1; 
+  
+    // calculating size of block 
+    blk_sz = (int) Math.Sqrt(n); 
+  
+    // building the decomposed array 
+    for (int i = 0; i < n; i++) 
+    { 
+        arr[i] = input[i]; 
+        if (i % blk_sz == 0) 
+        { 
+            // entering next block 
+            // incementing block pointer 
+            blk_idx++; 
+        } 
+        block[blk_idx] += arr[i]; 
+    } 
+} 
+  
+// Driver code 
+public static void Main(String[] args)  
+{ 
+      
+    // We have used separate array for input because 
+    // the purpose of this code is to explain SQRT 
+    // decomposition in competitive programming where 
+    // we have multiple inputs. 
+    int []input = {1, 5, 2, 4, 6, 1, 3, 5, 7, 10}; 
+    int n = input.Length; 
+  
+    preprocess(input, n); 
+  
+    Console.WriteLine("query(3, 8) : " + 
+                       query(3, 8)); 
+    Console.WriteLine("query(1, 6) : " + 
+                       query(1, 6)); 
+    update(8, 0); 
+    Console.WriteLine("query(8, 8) : " +  
+                       query(8, 8)); 
+} 
+} 
+  
+// This code is contributed by 29AjayKumar
+```
+
+
+输出：
+
+```
+query(3,8) : 26
+query(1,6) : 21
+query(8,8) : 0
+```
+
+注意：即使`n`不是理想平方，上面的代码也可以工作。 在这种情况下，最后一个块将包含比`sqrt(n)`更少的元素数，从而减少了迭代次数。
+
+假设`n = 10`。在这种情况下，我们将有 4 个块，前三个块的大小为 3，最后一个块的大小为 1。

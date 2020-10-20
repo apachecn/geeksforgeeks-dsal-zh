@@ -394,3 +394,229 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Efficient JAVA program to print squares of 
+// diagonal elements. 
+import java.io.*; 
+  
+class GFG  
+{ 
+    static int MAX =100; 
+      
+    // function of diagonal square 
+    static void diagonalsquare(int mat[][], int row, int column) 
+    { 
+        // This loop is for finding of square of  
+        // the first side of diagonal elements 
+        System.out.print (" Diagonal one : "); 
+        for (int i = 0; i < row; i++) 
+        { 
+      
+            // printing direct square of diagonal  
+            // element there is no need to check  
+            // condition 
+            System.out.print( mat[i][i] * mat[i][i] +" "); 
+        } 
+        System.out.println(); 
+      
+        // This loop is for finding square of the  
+        // second side of diagonal elements 
+        System.out.print( " Diagonal two : "); 
+        for (int i = 0; i < row; i++) 
+        { 
+            // printing direct square of diagonal  
+            // element in the second side 
+            System.out.print( mat[i][row - i - 1] * 
+                              mat[i][row - i - 1] + " "); 
+        } 
+    } 
+      
+    // Driver code 
+    public static void main (String[] args)  
+    { 
+        int mat[][] = { { 2, 5, 7 }, 
+                        { 3, 7, 2 },  
+                        { 5, 6, 9 } }; 
+        diagonalsquare(mat, 3, 3); 
+      
+    } 
+}  
+  
+// This code is contributed by vt_m.
+```
+
+## Python3
+
+```
+# Efficient Python program  
+# to print squares of  
+# diagonal elements. 
+  
+# function of diagonal square 
+def diagonalsquare(mat, row,  
+                   column) : 
+      
+    # This loop is for finding 
+    # of square of the first  
+    # side of diagonal elements 
+    print ("Diagonal one : ",  
+                    end = "") 
+    for i in range(0, row) :  
+  
+        # printing direct square  
+        # of diagonal element  
+        # there is no need to  
+        # check condition 
+        print (mat[i][i] *
+               mat[i][i], end = " ") 
+      
+  
+    # This loop is for finding  
+    # square of the second side 
+    # of diagonal elements 
+    print ("\n\nDiagonal two : ", 
+                        end = "") 
+      
+    for i in range(0, row) :      
+          
+        # printing direct square  
+        # of diagonal element in 
+        # the second side 
+        print (mat[i][row - i - 1] *
+               mat[i][row - i - 1] ,  
+                          end = " ")  
+  
+# Driver code 
+mat = [[2, 5, 7 ], 
+       [3, 7, 2 ],  
+       [5, 6, 9 ]] 
+diagonalsquare(mat, 3, 3) 
+      
+# This code is contributed by  
+# Manish Shaw(manishshaw1)
+```
+
+## C#
+
+```
+// Efficient C# program to print  
+// squares of diagonal elements. 
+using System; 
+  
+class GFG { 
+      
+    static int MAX =100; 
+      
+    // function of diagonal square 
+    static void diagonalsquare(int [,] mat,  
+                               int row,  
+                               int column) 
+    { 
+          
+        // This loop is for finding of  
+        // square of the first side of  
+        // diagonal elements 
+        Console.Write ("Diagonal one : "); 
+          
+        for (int i = 0; i < row; i++) 
+        { 
+      
+            // printing direct square of diagonal  
+            // element there is no need to check  
+            // condition 
+            Console.Write(mat[i, i] *  
+                          mat[i, i] +" "); 
+        } 
+        Console.WriteLine(); 
+      
+        // This loop is for finding square  
+        // of the second side of diagonal 
+        // elements 
+        Console.Write("Diagonal two : "); 
+        for (int i = 0; i < row; i++) 
+        { 
+            // printing direct square of diagonal  
+            // element in the second side 
+            Console.Write(mat[i, row - i - 1] * 
+                          mat[i, row - i - 1] + " "); 
+        } 
+    } 
+      
+    // Driver code 
+    public static void Main ()  
+    { 
+        int [,] mat = new int[,]{{ 2, 5, 7 }, 
+                                 { 3, 7, 2 },  
+                                 { 5, 6, 9 }}; 
+        diagonalsquare(mat, 3, 3); 
+      
+    } 
+}  
+  
+// This code is contributed by KRV.
+```
+
+## PHP
+
+```
+<?php 
+// Efficient PHP program to print squares of 
+// diagonal elements. 
+  
+$MAX = 100; 
+  
+// function of diagonal square 
+function diagonalsquare( $mat, $row, 
+                            $column) 
+{ 
+      
+    // This loop is for finding of square of  
+    // the first side of diagonal elements 
+    echo " \nDiagonal one : "; 
+    for($i = 0; $i < $row; $i++) 
+    { 
+  
+        // printing direct square of diagonal  
+        // element there is no need to check  
+        // condition 
+        echo $mat[$i][$i] * $mat[$i][$i] , " "; 
+    } 
+  
+    // This loop is for finding square of the  
+    // second side of diagonal elements 
+    echo " \n\nDiagonal two : "; 
+      
+    for ( $i = 0; $i < $row; $i++) 
+    { 
+          
+        // printing direct square of diagonal  
+        // element in the second side 
+        echo $mat[$i][$row - $i - 1] *  
+             $mat[$i][$row - $i - 1]  
+            , " "; 
+    } 
+} 
+  
+    // Driver code 
+    $mat = array(array(2, 5, 7 ), 
+           array(3, 7, 2 ),  
+           array(5, 6, 9 )); 
+    diagonalsquare($mat, 3, 3); 
+      
+// This code is contributed by anuj_67. 
+?>
+```
+
+输出：
+
+```
+Diagonal one : 4 49 81  
+
+Diagonal two : 49 49 25 
+```
+
+时间复杂度：`O(n)`。
+
