@@ -70,3 +70,141 @@ int main()
 } 
 
 ```
+
+## Python3
+
+```
+# Simple Python program to find smallest 
+# greater element in whole array for  
+# every element. 
+def smallestGreater(arr, n) : 
+    for i in range(0, n) : 
+  
+        # Find the closest greater element  
+        # for arr[j] in the entire array. 
+        diff = 1000;  
+        closest = -1; 
+        for j in range(0, n) : 
+            if ( arr[i] < arr[j] and 
+                  arr[j] - arr[i] < diff) : 
+                diff = arr[j] - arr[i]; 
+                closest = j;      
+          
+        # Check if arr[i] is largest 
+        if (closest == -1) : 
+            print ("_ ", end = ""); 
+        else : 
+            print ("{} ".format(arr[closest]), 
+                                    end = ""); 
+  
+# Driver code 
+ar = [6, 3, 9, 8, 10, 2, 1, 15, 7]; 
+n = len(ar) ; 
+smallestGreater(ar, n); 
+  
+# This code is contributed by Manish Shaw 
+# (manishshaw1)
+```
+
+## C#
+
+```
+// Simple C# program to find 
+// smallest greater element in  
+// whole array for every element. 
+using System; 
+  
+class GFG  
+{ 
+static void smallestGreater(int []arr,  
+                            int n) 
+{ 
+    for (int i = 0; i < n; i++)  
+    { 
+  
+        // Find the closest greater 
+        // element for arr[j] in  
+        // the entire array. 
+        int diff = int.MaxValue; 
+        int closest = -1; 
+        for (int j = 0; j < n; j++)  
+        { 
+            if (arr[i] < arr[j] &&  
+                arr[j] - arr[i] < diff) 
+            { 
+                diff = arr[j] - arr[i]; 
+                closest = j;          
+            } 
+        } 
+          
+        // Check if arr[i] is largest 
+        if(closest == -1) 
+        Console.Write( "_ " ); 
+        else
+        Console.Write(arr[closest] + " "); 
+    } 
+} 
+  
+// Driver code 
+public static void Main()  
+{ 
+    int []ar = {6, 3, 9, 8, 10,  
+                2, 1, 15, 7}; 
+    int n = ar.Length; 
+    smallestGreater(ar, n); 
+} 
+} 
+  
+// This code is contributed by anuj_67.
+```
+
+## PHP
+
+```
+<?php 
+// Simple PHP program to find smallest 
+// greater element in whole array for  
+// every element. 
+  
+function smallestGreater($arr, $n) 
+{ 
+    for ( $i = 0; $i < $n; $i++) { 
+  
+        // Find the closest greater element  
+        // for arr[j] in the entire array. 
+        $diff = PHP_INT_MAX; $closest = -1; 
+        for ( $j = 0; $j < $n; $j++) { 
+            if ( $arr[$i] < $arr[$j] &&  
+                $arr[$j] - $arr[$i] < $diff) 
+            { 
+                $diff = $arr[$j] - $arr[$i]; 
+                $closest = $j;      
+            } 
+        } 
+          
+        // Check if arr[i] is largest 
+        if ($closest == -1) 
+        echo "_ " ; 
+        else
+            echo $arr[$closest] , " "; 
+    } 
+} 
+  
+    // Driver code 
+    $ar = array (6, 3, 9, 8, 10, 2, 1, 15, 7); 
+    $n = sizeof($ar) ; 
+    smallestGreater($ar, $n); 
+  
+// This code is contributed by ajit 
+?>
+```
+
+输出：
+
+```
+7 6 10 9 15 3 2 _ 8
+```
+
+时间复杂度：`O(n * n)`。
+
+辅助空间：`O(1)`。

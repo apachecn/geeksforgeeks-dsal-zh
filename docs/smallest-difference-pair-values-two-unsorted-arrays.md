@@ -110,3 +110,283 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java Code to find Smallest  
+// Difference between two Arrays 
+import java.util.*; 
+  
+class GFG  
+{ 
+      
+    // function to calculate Small  
+    // result between two arrays 
+    static int findSmallestDifference(int A[], int B[], 
+                                      int m, int n) 
+    { 
+        // Sort both arrays  
+        // using sort function 
+        Arrays.sort(A); 
+        Arrays.sort(B); 
+      
+        int a = 0, b = 0; 
+      
+        // Initialize result as max value 
+        int result = Integer.MAX_VALUE; 
+      
+        // Scan Both Arrays upto  
+        // sizeof of the Arrays 
+        while (a < m && b < n) 
+        { 
+            if (Math.abs(A[a] - B[b]) < result) 
+                result = Math.abs(A[a] - B[b]); 
+      
+            // Move Smaller Value 
+            if (A[a] < B[b]) 
+                a++; 
+      
+            else
+                b++; 
+        } 
+          
+        // return final sma result 
+        return result;  
+    } 
+      
+    // Driver Code 
+    public static void main(String[] args)  
+    { 
+        // Input given array A 
+        int A[] = {1, 2, 11, 5}; 
+      
+        // Input given array B 
+        int B[] = {4, 12, 19, 23, 127, 235}; 
+      
+      
+        // Calculate size of Both arrays 
+        int m = A.length; 
+        int n = B.length; 
+      
+        // Call function to  
+        // print smallest result 
+        System.out.println(findSmallestDifference 
+                                   (A, B, m, n)); 
+          
+    } 
+} 
+// This code is contributed 
+// by Arnav Kr. Mandal.
+```
+
+## Python3
+
+```
+# Python 3 Code to find 
+# Smallest Difference between 
+# two Arrays 
+import sys 
+  
+# function to calculate 
+# Small result between 
+# two arrays 
+def findSmallestDifference(A, B, m, n): 
+  
+    # Sort both arrays  
+    # using sort function 
+    A.sort() 
+    B.sort() 
+  
+    a = 0
+    b = 0
+  
+    # Initialize result as max value 
+    result = sys.maxsize 
+  
+    # Scan Both Arrays upto 
+    # sizeof of the Arrays 
+    while (a < m and b < n): 
+      
+        if (abs(A[a] - B[b]) < result): 
+            result = abs(A[a] - B[b]) 
+  
+        # Move Smaller Value 
+        if (A[a] < B[b]): 
+            a += 1
+  
+        else: 
+            b += 1
+    # return final sma result 
+    return result  
+  
+# Driver Code 
+  
+# Input given array A 
+A = [1, 2, 11, 5] 
+  
+# Input given array B 
+B = [4, 12, 19, 23, 127, 235] 
+  
+# Calculate size of Both arrays 
+m = len(A) 
+n = len(B) 
+  
+# Call function to  
+# print smallest result 
+print(findSmallestDifference(A, B, m, n)) 
+  
+# This code is contributed by 
+# Smitha Dinesh Semwal
+```
+
+## C#
+
+```
+// C# Code to find Smallest  
+// Difference between two Arrays 
+using System; 
+  
+class GFG  
+{ 
+      
+    // function to calculate Small  
+    // result between two arrays 
+    static int findSmallestDifference(int []A, int []B, 
+                                      int m, int n) 
+    { 
+          
+        // Sort both arrays using 
+        // sort function 
+        Array.Sort(A); 
+        Array.Sort(B); 
+      
+        int a = 0, b = 0; 
+      
+        // Initialize result as max value 
+        int result = int.MaxValue; 
+      
+        // Scan Both Arrays upto  
+        // sizeof of the Arrays 
+        while (a < m && b < n) 
+        { 
+            if (Math.Abs(A[a] - B[b]) < result) 
+                result = Math.Abs(A[a] - B[b]); 
+      
+            // Move Smaller Value 
+            if (A[a] < B[b]) 
+                a++; 
+      
+            else
+                b++; 
+        } 
+          
+        // return final sma result 
+        return result;  
+    } 
+      
+    // Driver Code 
+    public static void Main()  
+    { 
+          
+        // Input given array A 
+        int []A = {1, 2, 11, 5}; 
+      
+        // Input given array B 
+        int []B = {4, 12, 19, 23, 127, 235}; 
+      
+      
+        // Calculate size of Both arrays 
+        int m = A.Length; 
+        int n = B.Length; 
+      
+        // Call function to  
+        // print smallest result 
+        Console.Write(findSmallestDifference 
+                              (A, B, m, n)); 
+          
+    } 
+} 
+  
+// This code is contributed 
+// by nitin mittal.
+```
+
+## PHP
+
+```
+<?php 
+// PHP Code to find Smallest  
+// Difference between two Arrays 
+  
+  
+// function to calculate Small 
+// result between two arrays 
+function findSmallestDifference($A, $B, 
+                                $m, $n) 
+{ 
+    // Sort both arrays  
+    // using sort function 
+    sort($A);  
+    sort($A, $m); 
+    sort($B);  
+    sort($B, $n); 
+  
+    $a = 0; $b = 0; 
+    $INT_MAX = 1; 
+  
+    // Initialize result  
+    // as max value 
+    $result = $INT_MAX; 
+  
+    // Scan Both Arrays upto 
+    // sizeof of the Arrays 
+    while ($a < $m && $b < $n) 
+    { 
+        if (abs($A[$a] - $B[$b]) < $result) 
+            $result = abs($A[$a] - $B[$b]); 
+  
+        // Move Smaller Value 
+        if ($A[$a] < $B[$b]) 
+            $a++; 
+  
+        else
+            $b++; 
+    } 
+  
+    // return final sma result 
+    return $result;  
+} 
+  
+// Driver Code 
+{ 
+    // Input given array A 
+    $A = array(1, 2, 11, 5); 
+  
+    // Input given array B 
+    $B = array(4, 12, 19, 23, 127, 235); 
+  
+  
+    // Calculate size of Both arrays 
+    $m = sizeof($A) / sizeof($A[0]); 
+    $n = sizeof($B) / sizeof($B[0]); 
+  
+    // Call function to print 
+    // smallest result 
+    echo findSmallestDifference($A, $B, $m, $n); 
+  
+    return 0; 
+} 
+  
+// This code is contributed by nitin mittal. 
+?>
+```
+
+输出：
+
+```
+1
+```
+
+该算法需要`O(m log m + n log n)`时间进行排序，并花费`O(m + n)`时间来找到最小差异。 因此，总体运行时间为`O(m log m + n log n)`。
+
