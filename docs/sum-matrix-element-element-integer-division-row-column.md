@@ -57,3 +57,427 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// java program to find sum of matrix 
+// element where each element is integer 
+// division of row and column. 
+  
+import java.io.*; 
+  
+class GFG { 
+      
+    // Return sum of matrix element  
+    // where each element is division 
+    // of its corresponding row and 
+    // column. 
+    static int findSum(int n) 
+    { 
+        int ans = 0; 
+          
+        // for rows 
+        for (int i = 1; i <= n; i++)  
+          
+            // for columns 
+            for (int j = 1; j <= n; j++)  
+                ans += (i/j); 
+                  
+        return ans; 
+    } 
+      
+    // Driven Program 
+    public static void main (String[] args)  
+    { 
+        int N = 2; 
+        System.out.println( findSum(N)); 
+    } 
+} 
+  
+// This code is contributed by anuj_67.
+```
+
+## Python3
+
+```
+# Python 3 program to find sum of  
+# matrix element where each element  
+# is integer division of row and column.  
+  
+# Return sum of matrix element  
+# where each element is division  
+# of its corresponding row and column.  
+def findSum(N): 
+    ans = 0
+    for i in range(1, N + 1): 
+        for j in range(1, N + 1): 
+            ans += i // j 
+    return ans 
+  
+# Driver code 
+N = 2
+print(findSum(N)) 
+  
+# This code is contributed  
+# by Shrikant13
+```
+
+## C#
+
+```
+// C# program to find the sum of matrix 
+// element where each element is an integer 
+// division of row and column. 
+using System; 
+  
+class GFG { 
+      
+    // Return sum of matrix element  
+    // where each element is division 
+    // of its corresponding row and 
+    // column. 
+    static int findSum(int n) 
+    { 
+        int ans = 0; 
+          
+        // for rows 
+        for (int i = 1; i <= n; i++)  
+          
+            // for columns 
+            for (int j = 1; j <= n; j++)  
+                ans += (i/j); 
+                  
+        return ans; 
+    } 
+      
+    // Driven Program 
+    public static void Main ()  
+    { 
+        int N = 2; 
+        Console.WriteLine( findSum(N)); 
+    } 
+} 
+  
+// This code is contributed by anuj_67.
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find sum of matrix element 
+// where each element is integer division of 
+// row and column. 
+  
+// Return sum of matrix element 
+// where each element is division  
+// of its corresponding row and  
+// column. 
+function findSum( $n) 
+{ 
+    $ans = 0; 
+      
+    // for rows 
+    for($i = 1; $i <= $n; $i++)  
+      
+        // for columns 
+        for($j = 1; $j <= $n; $j++)  
+            $ans += ($i / $j); 
+    return floor($ans); 
+} 
+  
+    // Driver Code 
+    $N = 2; 
+    echo findSum($N); 
+      
+// This code is contributed by anuj_67. 
+?>
+```
+
+输出：
+
+```
+4
+```
+
+方法 2（高效）：
+
+令`N = 9`，矩阵将是：
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/sumofmatrix1.png)
+
+观察，对于第`j`列：
+
+```
+mat[i][k] = 0, for 1 <= k < j, 1 <= i <= N
+mat[i][k] = 1, for j <= k < 2*j, 1 <= i <= N
+mat[i][k] = 2, for 2*j <= k < 3*j, 1 <= i <= N
+...
+```
+
+因此，在第`i`列中，有`i – 1`个零，然后是`i`乘以 1，然后是`i`乘以 2，依此类推。
+
+我们逐列遍历矩阵和求和元素。
+
+下面是这种方法的实现：
+
+## C++
+
+```
+// C++ program to find sum of matrix element 
+// where each element is integer division of 
+// row and column. 
+#include<bits/stdc++.h> 
+using namespace std; 
+  
+// Return sum of matrix element where each 
+// element is division of its corresponding 
+// row and column. 
+int findSum(int n) 
+{ 
+    int ans = 0, temp = 0, num; 
+  
+    // For each column. 
+    for (int i = 1; i <= n && temp < n; i++) 
+    { 
+        // count the number of elements of 
+        // each column. Initialize to i -1 
+        // because number of zeroes are i - 1. 
+        temp = i - 1; 
+  
+        // For multiply 
+        num = 1; 
+  
+        while (temp < n) 
+        { 
+            if (temp + i <= n) 
+                ans += (i * num); 
+            else
+                ans += ((n - temp) * num); 
+  
+            temp += i; 
+            num ++; 
+        } 
+    } 
+  
+    return ans; 
+} 
+  
+// Driven Program 
+int main() 
+{ 
+    int N = 2; 
+    cout << findSum(N) << endl; 
+    return 0; 
+}
+```
+
+## Java
+
+```
+// java program to find sum of matrix element 
+// where each element is integer division of 
+// row and column. 
+  
+import java.io.*; 
+  
+class GFG { 
+      
+    // Return sum of matrix element where each 
+    // element is division of its corresponding 
+    // row and column. 
+    static int findSum(int n) 
+    { 
+        int ans = 0, temp = 0, num; 
+      
+        // For each column. 
+        for (int i = 1; i <= n && temp < n; i++) 
+        { 
+              
+            // count the number of elements of 
+            // each column. Initialize to i -1 
+            // because number of zeroes are i - 1. 
+            temp = i - 1; 
+      
+            // For multiply 
+            num = 1; 
+      
+            while (temp < n) 
+            { 
+                if (temp + i <= n) 
+                    ans += (i * num); 
+                else
+                    ans += ((n - temp) * num); 
+      
+                temp += i; 
+                num ++; 
+            } 
+        } 
+      
+        return ans; 
+    } 
+      
+    // Driven Program 
+    public static void main (String[] args)  
+    { 
+        int N = 2; 
+        System.out.println(findSum(N)); 
+    } 
+} 
+  
+// This code is contributed by anuj_67.
+```
+
+## Python3
+
+```
+# Program to find sum of matrix element  
+# where each element is integer division   
+# of row and column.  
+  
+# Return sum of matrix element where each  
+# element is division of its corresponding  
+# row and column.  
+def findSum(n): 
+    ans = 0; temp = 0; 
+  
+    for i in range(1, n + 1): 
+  
+        # count the number of elements of  
+        # each column. Initialize to i -1  
+        # because number of zeroes are i - 1.  
+        if temp < n: 
+            temp = i - 1
+  
+            # For multiply 
+            num = 1
+            while temp < n: 
+                if temp + i <= n: 
+                    ans += i * num 
+                else: 
+                    ans += (n - temp) * num 
+                temp += i 
+                num += 1
+    return ans 
+  
+# Driver Code 
+N = 2
+print(findSum(N)) 
+  
+# This code is contributed by Shrikant13
+```
+
+## C#
+
+```
+// C# program to find sum of matrix  
+// element where each element is  
+// integer division of row and column. 
+using System; 
+  
+class GFG  
+{ 
+      
+    // Return sum of matrix element  
+    // where each element is division  
+    // of its corresponding row and column. 
+    static int findSum(int n) 
+    { 
+        int ans = 0, temp = 0, num; 
+      
+        // For each column. 
+        for (int i = 1; i <= n && temp < n; i++) 
+        { 
+              
+            // count the number of elements  
+            // of each column. Initialize  
+            // to i -1 because number of  
+            // zeroes are i - 1. 
+            temp = i - 1; 
+      
+            // For multiply 
+            num = 1; 
+      
+            while (temp < n) 
+            { 
+                if (temp + i <= n) 
+                    ans += (i * num); 
+                else
+                    ans += ((n - temp) * num); 
+      
+                temp += i; 
+                num ++; 
+            } 
+        } 
+      
+        return ans; 
+    } 
+      
+    // Driver Code 
+    public static void Main ()  
+    { 
+        int N = 2; 
+        Console.WriteLine(findSum(N)); 
+    } 
+} 
+  
+// This code is contributed by anuj_67.
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find sum of  
+// matrix element where each  
+// element is integer division  
+// of row and column. 
+  
+// Return sum of matrix element  
+// where each element is division  
+// of its corresponding row and column. 
+function findSum( $n) 
+{ 
+    $ans = 0; $temp = 0; $num; 
+  
+    // For each column. 
+    for ($i = 1; $i <= $n and 
+         $temp < $n; $i++) 
+    { 
+        // count the number of elements  
+        // of each column. Initialize  
+        // to i -1 because number of  
+        // zeroes are i - 1. 
+        $temp = $i - 1; 
+  
+        // For multiply 
+        $num = 1; 
+  
+        while ($temp < $n) 
+        { 
+            if ($temp + $i <= $n) 
+                $ans += ($i * $num); 
+            else
+                $ans += (($n - $temp) *      
+                                $num); 
+  
+            $temp += $i; 
+            $num ++; 
+        } 
+    } 
+  
+    return $ans; 
+} 
+  
+// Driver Code 
+$N = 2; 
+echo findSum($N); 
+  
+// This code is contributed by anuj_67. 
+?>
+```
+
+来源：
+
+<http://stackoverflow.com/questions/41094769/sum-of-integer-division-matrix?rq=1>

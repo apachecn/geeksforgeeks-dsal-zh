@@ -69,3 +69,164 @@ int main() {
 } 
 
 ```
+
+## Java
+
+```
+// Java implementation to swap 
+// diagonal of a matrix 
+import java.io.*; 
+  
+class Gfg { 
+static int N = 3; 
+  
+// Function to swap diagonal of matrix 
+static void swapDiagonal(int matrix[][]) { 
+    for (int i = 0; i < N; i++) { 
+    int temp = matrix[i][i]; 
+    matrix[i][i] = matrix[i][N - i - 1]; 
+    matrix[i][N - i - 1] = temp; 
+    } 
+} 
+  
+// Driver function 
+public static void main(String arg[]) { 
+    int matrix[][] = {{0, 1, 2},  
+                      {3, 4, 5},  
+                      {6, 7, 8}}; 
+  
+    swapDiagonal(matrix); 
+  
+    // Displaying modified matrix 
+    for (int i = 0; i < N; i++) { 
+    for (int j = 0; j < N; j++) 
+        System.out.print(matrix[i][j] + " "); 
+    System.out.println(); 
+    } 
+} 
+} 
+  
+// This code is contributed by Anant Agarwal.
+```
+
+## Python3
+
+```
+# Python3 Program to swap diagonal of a matrix 
+  
+# size of square matrix 
+N = 3
+  
+# Function to swap diagonal of matrix 
+def swapDiagonal(matrix): 
+      
+    for i in range(N): 
+          
+        matrix[i][i], matrix[i][N-i-1] = \ 
+            matrix[i][N-i-1], matrix[i][i] 
+  
+  
+# Driver Code 
+matrix = [[0, 1, 2], 
+          [3, 4, 5], 
+          [6, 7, 8]] 
+  
+# swap diagonals of matrix 
+swapDiagonal(matrix); 
+  
+# Displaying modified matrix 
+for i in range(N):     
+    for j in range(N):         
+        print(matrix[i][j], end = ' ')         
+    print()
+```
+
+## C#
+
+```
+// C# implementation to swap 
+// diagonal of a matrix 
+using System; 
+  
+class Gfg { 
+      
+    static int N = 3; 
+      
+    // Function to swap diagonal of matrix 
+    static void swapDiagonal(int [,]matrix) { 
+        for (int i = 0; i < N; i++) { 
+        int temp = matrix[i,i]; 
+        matrix[i,i] = matrix[i,N - i - 1]; 
+        matrix[i,N - i - 1] = temp; 
+        } 
+    } 
+      
+    // Driver function 
+    public static void Main() { 
+        int [,]matrix = {{0, 1, 2},  
+                         {3, 4, 5},  
+                         {6, 7, 8}}; 
+      
+        swapDiagonal(matrix); 
+      
+        // Displaying modified matrix 
+        for (int i = 0; i < N; i++) { 
+            for (int j = 0; j < N; j++) 
+                Console.Write(matrix[i,j] + " "); 
+            Console.WriteLine(); 
+        } 
+    } 
+} 
+  
+// This code is contributed by vt_m.
+```
+
+## PHP
+
+```
+<?php 
+// PHP Program to swap  
+// diagonal of a matrix 
+  
+// size of square matrix 
+$N = 3; 
+  
+// Function to swap  
+// diagonal of matrix 
+function swapDiagonal($matrix)  
+{ 
+    global $N; 
+    for ($i = 0; $i < $N; $i++) 
+    { 
+        $tmp=$matrix[$i][$i]; 
+        $matrix[$i][$i] = $matrix[$i][$N - $i - 1]; 
+        $matrix[$i][$N - $i - 1] = $tmp; 
+    } 
+      
+// Displaying modified matrix 
+for ($i = 0; $i < $N; $i++)  
+{ 
+    for ($j = 0; $j < $N; $j++) 
+        echo $matrix[$i][$j] . " "; 
+    echo "\n"; 
+} 
+} 
+  
+// Driver Code 
+$matrix = array(array(0, 1, 2),  
+                array(3, 4, 5),  
+                array(6, 7, 8)); 
+  
+swapDiagonal($matrix); 
+  
+// This code is contributed by mits 
+?>
+```
+
+输出：
+
+```
+2 1 0
+3 4 5
+8 7 6
+```
