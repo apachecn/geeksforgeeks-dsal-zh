@@ -413,3 +413,253 @@ int main()
 } 
 
 ```
+
+## Java
+
+```
+// Java program to find third Largest element in an array 
+class GFG { 
+  
+    static void thirdLargest(int arr[], int arr_size) { 
+        /* There should be atleast three elements */
+        if (arr_size < 3) { 
+            System.out.printf(" Invalid Input "); 
+            return; 
+        } 
+  
+        // Initialize first, second and third Largest element 
+        int first = arr[0], second = Integer.MIN_VALUE, 
+                            third = Integer.MIN_VALUE; 
+  
+        // Traverse array elements to find the third Largest 
+        for (int i = 1; i < arr_size; i++) { 
+            /* If current element is greater than first, 
+        then update first, second and third */
+            if (arr[i] > first) { 
+                third = second; 
+                second = first; 
+                first = arr[i]; 
+            } /* If arr[i] is in between first and second */
+            else if (arr[i] > second) { 
+                third = second; 
+                second = arr[i]; 
+            } /* If arr[i] is in between second and third */
+            else if (arr[i] > third) { 
+                third = arr[i]; 
+            } 
+        } 
+  
+        System.out.printf("The third Largest element is %d\n", third); 
+    } 
+  
+    /* Driver program to test above function */
+    public static void main(String []args) { 
+        int arr[] = {12, 13, 1, 10, 34, 16}; 
+        int n = arr.length; 
+        thirdLargest(arr, n); 
+    } 
+} 
+//This code is contributed by 29AjayKumar
+```
+
+## Python3
+
+```
+# Python3 program to find  
+# third Largest element in  
+# an array 
+import sys 
+def thirdLargest(arr, arr_size): 
+  
+    # There should be  
+    # atleast three elements  
+    if (arr_size < 3): 
+      
+        print(" Invalid Input ") 
+        return
+      
+    # Initialize first, second 
+    # and third Largest element 
+    first = arr[0] 
+    second = -sys.maxsize 
+    third = -sys.maxsize 
+  
+    # Traverse array elements 
+    # to find the third Largest 
+    for i in range(1, arr_size): 
+      
+        # If current element is 
+        # greater than first, 
+        # then update first,  
+        # second and third  
+        if (arr[i] > first): 
+          
+            third = second 
+            second = first 
+            first = arr[i] 
+          
+  
+        # If arr[i] is in between  
+        # first and second  
+        elif (arr[i] > second): 
+          
+            third = second 
+            second = arr[i] 
+          
+        # If arr[i] is in between 
+        # second and third  
+        elif (arr[i] > third): 
+            third = arr[i] 
+      
+    print("The third Largest" ,  
+                  "element is", third) 
+  
+# Driver Code 
+arr = [12, 13, 1, 
+       10, 34, 16] 
+n = len(arr) 
+thirdLargest(arr, n) 
+  
+# This code is contributed 
+# by Smitha
+```
+
+## C#
+
+```
+// C# program to find third Largest element in an array 
+using System; 
+class GFG { 
+  
+static void thirdLargest(int[] arr, int arr_size)  
+{ 
+    /* There should be atleast three elements */
+    if (arr_size < 3) 
+    { 
+        Console.Write(" Invalid Input "); 
+        return; 
+          
+    } 
+  
+    // Initialize first, second and third Largest element 
+    int first = arr[0], second = int.MinValue, 
+                            third = int.MinValue; 
+  
+    // Traverse array elements to find the third Largest 
+    for (int i = 1; i < arr_size; i++)  
+    { 
+        /* If current element is greater than first, 
+        then update first, second and third */
+        if (arr[i] > first) { 
+            third = second; 
+            second = first; 
+            first = arr[i]; 
+        } 
+          
+        /* If arr[i] is in between first and second */
+        else if (arr[i] > second) { 
+            third = second; 
+            second = arr[i]; 
+        }  
+        /* If arr[i] is in between second and third */
+        else if (arr[i] > third) { 
+            third = arr[i]; 
+        } 
+    } 
+  
+    Console.Write("The third Largest element is "+ third); 
+} 
+  
+/* Driver program to test above function */
+public static void Main() { 
+        int[] arr = {12, 13, 1, 10, 34, 16}; 
+        int n = arr.Length; 
+        thirdLargest(arr, n); 
+    } 
+} 
+  
+// This code is contributed 
+// by Ita_c
+```
+
+## PHP
+
+```
+<?php 
+// PHP program to find third  
+// Largest element in an array 
+  
+function thirdLargest($arr, $arr_size) 
+{ 
+    /* There should be atleast 
+       three elements */
+    if ($arr_size < 3) 
+    { 
+        echo " Invalid Input "; 
+        return; 
+    } 
+  
+    // Initialize first, second and  
+    // third Largest element 
+    $first = $arr[0];  
+    $second = PHP_INT_MIN; 
+    $third = PHP_INT_MIN; 
+  
+    // Traverse array elements to 
+    // find the third Largest 
+    for ($i = 1; $i < $arr_size ; $i ++) 
+    { 
+        /* If current element is greater  
+        than first, then update first,  
+        second and third */
+        if ($arr[$i] > $first) 
+        { 
+            $third = $second; 
+            $second = $first; 
+            $first = $arr[$i]; 
+        } 
+  
+        /* If arr[i] is in between 
+        first and second */
+        else if ($arr[$i] > $second) 
+        { 
+            $third = $second; 
+            $second = $arr[$i]; 
+        } 
+  
+        /* If arr[i] is in between 
+        second and third */
+        else if ($arr[$i] > $third) 
+            $third = $arr[$i]; 
+    } 
+  
+    echo "The third Largest element is ",  
+                                  $third; 
+} 
+  
+// Driver Code 
+$arr = array (12, 13, 1,  
+              10, 34, 16); 
+$n = sizeof($arr); 
+thirdLargest($arr, $n); 
+  
+// This code is contributed by jit_t 
+?>
+```
+
+输出：
+
+```
+The third Largest element is 13
+```
+
+复杂度分析：
+
++   时间复杂度：`O(n)`。
+    
+    由于数组要重复三次，并且要在固定时间内完成
++   空间复杂度：`O(1)`。
+    
+    由于索引可以存储在恒定空间中，因此不需要额外的空间。
+
+练习题：扩展上述解决方案以在数组可能具有重复项时找到第三大解决方案。 例如，如果输入数组为`{10, 5, 15, 5, 15, 10, 1, 1}`，则输出应为 5。扩展解也应一次遍历。
