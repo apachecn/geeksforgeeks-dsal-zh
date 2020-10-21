@@ -1,4 +1,4 @@
-# 查找一个数组是否是另一个数组的子集 新增方法 3
+# 查找一个数组是否是另一个数组的子集 | 新增方法 3
 
 > 原文： [https://www.geeksforgeeks.org/find-whether-an-array-is-subset-of-another-array-set-1/](https://www.geeksforgeeks.org/find-whether-an-array-is-subset-of-another-array-set-1/)
 
