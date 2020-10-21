@@ -49,11 +49,11 @@ elements except 5 is 24
 
 2.  从第二个索引到结束遍历数组。
 
-3.  对于每个索引`i`，将`prefix[i]`更新为`prefix[i] = prefix[i-1] * array[i-1]`，即存储 从数组开始到乘积最高为`i - 1`索引。
+3.  对于每个索引`i`，将`prefix[i]`更新为`prefix[i] = prefix[i-1] * array[i-1]`，即存储从数组开始到`i - 1`索引的乘积。
 
 4.  从倒数第二个索引开始遍历数组。
 
-5.  对于每个索引`i`，将`subfix[i]`更新为`subfix[i] = subfix[i + 1] * array[i + 1]`，即存储 从数组末尾开始直到`i + 1`索引的乘积。
+5.  对于每个索引`i`，将`subfix[i]`更新为`subfix[i] = subfix[i + 1] * array[i + 1]`，即存储从数组末尾开始直到`i + 1`索引的乘积。
 
 6.  从头到尾遍历数组。
 

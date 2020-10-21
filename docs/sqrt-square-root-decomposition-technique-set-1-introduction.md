@@ -1,4 +1,4 @@
-# 平方根分解技术 系列 1（简介）
+# 平方根分解技术 | 系列 1（简介）
 
 > 原文： [https://www.geeksforgeeks.org/sqrt-square-root-decomposition-technique-set-1-introduction/](https://www.geeksforgeeks.org/sqrt-square-root-decomposition-technique-set-1-introduction/)
 
