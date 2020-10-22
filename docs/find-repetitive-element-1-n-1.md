@@ -170,7 +170,7 @@ class GFG 
 
 ## C++
 
-```
+```cpp
 
 // CPP program to find the only repeating 
 // element in an array where elements are 
@@ -274,7 +274,7 @@ print(findRepeating(arr, n))
 
 ## C#
 
-```
+```cs
 
 // C# program to find the only repeating  
 // element in an array where elements are  
@@ -334,7 +334,7 @@ public static void Main(String[] args) 
 
 ## C++
 
-```
+```cpp
 
 // CPP program to find the only repeating 
 // element in an array where elements are 
@@ -369,7 +369,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find the only repeating 
 // element in an array where elements are 
 // from 1 to n-1. 
@@ -405,7 +405,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python3 program to find the only  
 # repeating element in an array where  
 # elements are from 1 to n-1. 
@@ -432,7 +432,7 @@ print(findRepeating(arr, n))
 
 ## C#
 
-```
+```cs
 // C# program to find the  
 // only repeating element  
 // in an array where elements  
@@ -473,7 +473,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the only repeating 
 // element in an array where elements are 
@@ -519,7 +519,7 @@ function findRepeating($arr, $n)
 
 ## C++
 
-```
+```cpp
 // CPP program to find the only  
 // repeating element in an array  
 // where elements are from 1 to n-1. 
@@ -564,7 +564,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find the only  
 // repeating element in an array  
 // where elements are from 1 to n-1. 
@@ -612,7 +612,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python3 program to find the only  
 # repeating element in an array  
 # where elements are from 1 to n-1. 
@@ -645,7 +645,7 @@ print(findRepeating(arr, n))
 
 ## C#
 
-```
+```cs
 using System; 
   
 // C# program to find the only  
@@ -697,7 +697,7 @@ public class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the only  
 // repeating element in an array  

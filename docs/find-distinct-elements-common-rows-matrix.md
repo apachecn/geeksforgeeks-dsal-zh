@@ -30,7 +30,7 @@ Output : 1 3 14
 
 ## C++
 
-```
+```cpp
 // C++ implementation to find distinct elements 
 // common to all rows of a matrix 
 #include <bits/stdc++.h> 
@@ -122,7 +122,7 @@ int main()
 
 ## Java
 
-```
+```java
 // JAVA Code to find distinct elements 
 // common to all rows of a matrix 
 import java.util.*; 
@@ -217,7 +217,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 implementation to find distinct  
 # elements common to all rows of a matrix 
 MAX = 100
@@ -305,7 +305,7 @@ findAndPrintCommonElements(mat, n)
 
 ## C#
 
-```
+```cs
 // C# Code to find distinct elements  
 // common to all rows of a matrix  
 using System; 
@@ -433,7 +433,7 @@ public static void Main(string[] args)
 
 ## C++
 
-```
+```cpp
 // C++ program to find distinct elements 
 // common to all rows of a matrix 
 #include <bits/stdc++.h> 
@@ -499,7 +499,7 @@ int main()
 
 ## Python3
 
-```
+```py
 # Python3 program to find distinct elements 
 # common to all rows of a matrix 
 MAX = 100

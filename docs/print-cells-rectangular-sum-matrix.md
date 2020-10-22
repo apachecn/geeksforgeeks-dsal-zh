@@ -258,7 +258,7 @@ public static void main(String[] args)
 
 ## Python
 
-```
+```py
 
 # Python program to print cells with same rectangular 
 # sum diagonally 

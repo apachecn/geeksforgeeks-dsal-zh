@@ -74,7 +74,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to check if a given array 
 // can form arithmetic progression 
 import java.util.Arrays; 
@@ -120,7 +120,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to check if a given  
 # array can form arithmetic progression 
   
@@ -151,7 +151,7 @@ print("Yes") if(checkIsAP(arr, n)) else print("No")
 
 ## C#
 
-```
+```cs
 // C# program to check if a given array 
 // can form arithmetic progression 
 using System; 
@@ -197,7 +197,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to check if  
 // a given array can form 

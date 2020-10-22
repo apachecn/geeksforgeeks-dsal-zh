@@ -74,7 +74,7 @@ int mat[N][N] = {
 
 ## Java
 
-```
+```java
 // A Naive method to find maximum value of mat1[d][e] 
 // - ma[a][b] such that d > a and e > b 
 import java.io.*; 
@@ -170,7 +170,7 @@ print("Maximum Value is " + 
 
 ## C#
 
-```
+```cs
 // A Naive method to find maximum  
 // value of mat[d][e] - mat[a][b] 
 // such that d > a and e > b 
@@ -225,7 +225,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // A Naive method to find maximum  
 // value of $mat[d][e] - ma[a][b] 
@@ -285,7 +285,7 @@ Maximum Value is 18
 
 ## C++
 
-```
+```cpp
 // An efficient method to find maximum value of mat[d] 
 // - ma[a][b] such that c > a and d > b 
 #include <bits/stdc++.h> 
@@ -365,7 +365,7 @@ int main()
 
 ## Java
 
-```
+```java
 // An efficient method to find maximum value of mat1[d] 
 // - ma[a][b] such that c > a and d > b 
 import java.io.*; 
@@ -449,7 +449,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 # An efficient method to find maximum value  
 # of mat[d] - ma[a][b] such that c > a and d > b 
   
@@ -523,7 +523,7 @@ print ("Maximum Value is",
 
 ## C#
 
-```
+```cs
 // An efficient method to find  
 // maximum value of mat1[d] 
 // - ma[a][b] such that c > a  
@@ -615,7 +615,7 @@ class GFG  {
 
 ## PHP
 
-```
+```php
 <?php  
 // An efficient method to find  
 // maximum value of mat[d] - ma[a][b]  

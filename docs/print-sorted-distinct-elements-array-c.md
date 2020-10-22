@@ -53,7 +53,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to print sorted distinct 
 // elements. 
 import java.io.*; 
@@ -86,7 +86,7 @@ public class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to print  
 # sorted distinct elements. 
   
@@ -114,7 +114,7 @@ if __name__=='__main__':
 
 ## C#
 
-```
+```cs
 // C# program to print sorted distinct 
 // elements. 
 using System; 

@@ -116,7 +116,7 @@ class Majority {
 
 ## Python
 
-```
+```py
 
 '''Python3 Program to check for majority element in a sorted array'''
 
@@ -400,7 +400,7 @@ class Majority {
 
 ## Python
 
-```
+```py
 
 '''Python3 Program to check for majority element in a sorted array'''
 
@@ -458,7 +458,7 @@ else:
 
 ## C#
 
-```
+```cs
 
 // C# Program to check for majority 
 // element in a sorted array */ 

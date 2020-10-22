@@ -95,7 +95,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to print how many 
 // Ropes are Left After Every Cut 
 import java.util.*; 
@@ -154,7 +154,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python 3 program to 
 # print how many 
 # Ropes are Left After 
@@ -207,7 +207,7 @@ cuttringRopes(Ropes, n)
 
 ## C#
 
-```
+```cs
 // C# program to print how many 
 // Ropes are Left After Every Cut 
 using System; 
@@ -267,7 +267,7 @@ class GFG {
 
 ## php
 
-```
+```php
 <?php 
 // PHP program to print how many 
 // Ropes are Left After Every Cut 

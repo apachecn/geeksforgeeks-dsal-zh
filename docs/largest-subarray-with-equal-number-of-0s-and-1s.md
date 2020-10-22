@@ -854,7 +854,7 @@ maxLen(arr, n) 
 
 ## C#
 
-```
+```cs
 
 // C# program to find the largest subarray 
 // with equal number of 0s and 1s 

@@ -126,7 +126,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find  
 // minimum number of swaps
 // required to sort an array
@@ -235,7 +235,7 @@ class MinSwaps
 
 ## Python3
 
-```
+```py
 # Python3 program to find  minimum number 
 # of swaps required to sort an array
  
@@ -318,7 +318,7 @@ print(minSwaps(arr))
 
 ## Java
 
-```
+```java
 // Java program to find
 // minimum number of swaps
 // required to sort an array
@@ -417,7 +417,7 @@ class Main
 
 ## Java
 
-```
+```java
 // Java program to find
 // minimum number of swaps
 // required to sort an array

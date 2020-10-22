@@ -84,7 +84,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java code to swap the element of first 
 // and last row and display the result 
 import java.io.*; 
@@ -127,7 +127,7 @@ public class Interchange {
 
 ## Python3
 
-```
+```py
 # Python code to swap the element 
 # of first and last row and display 
 # the result 
@@ -163,7 +163,7 @@ for i in range(n):
 
 ## C#
 
-```
+```cs
 // C# code to swap the element of first  
 // and last row and display the result  
 using System; 
@@ -216,7 +216,7 @@ public static void Main(string[] args)
 
 ## PHP
 
-```
+```php
 <?php  
 // PHP code to swap the element of first 
 // and last row and display the result 

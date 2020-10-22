@@ -66,7 +66,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java implementation of simple method to find 
 // minimum difference between any pair 
   
@@ -102,7 +102,7 @@ class GFG
 
 ## Python
 
-```
+```py
 # Python implementation of simple method to find 
 # minimum difference between any pair 
   
@@ -131,7 +131,7 @@ print("Minimum difference is " + str(findMinDiff(arr, n)))
 
 ## C#
 
-```
+```cs
 // C# implementation of simple method to find 
 // minimum difference between any pair 
 using System; 
@@ -170,7 +170,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP implementation of simple  
 // method to find minimum  
@@ -224,7 +224,7 @@ Minimum difference is 1
 
 ## C++
 
-```
+```cpp
 // C++ program to find minimum difference between 
 // any pair in an unsorted array 
 #include <bits/stdc++.h> 
@@ -261,7 +261,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find minimum difference between 
 // any pair in an unsorted array 
   
@@ -301,7 +301,7 @@ class GFG
 
 ## Python
 
-```
+```py
 # Python program to find minimum difference between 
 # any pair in an unsorted array 
   
@@ -333,7 +333,7 @@ print("Minimum difference is " + str(findMinDiff(arr, n)))
 
 ## C#
 
-```
+```cs
 // C# program to find minimum  
 // difference between any pair 
 // in an unsorted array 
@@ -380,7 +380,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find minimum  
 // difference between any pair  

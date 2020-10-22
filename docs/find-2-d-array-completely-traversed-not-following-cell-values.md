@@ -107,7 +107,7 @@ public class MoveCellPerCellValue {
 
 ## C#
 
-```
+```cs
 /* C# program to Find a 2-D array is completely 
 traversed or not by following the cell values */
 using System; 

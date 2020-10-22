@@ -116,7 +116,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to print a n x n spiral matrix 
 // in clockwise direction using O(1) space 
   
@@ -169,7 +169,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to print a n x n spiral matrix 
 # in clockwise direction using O(1) space 
   
@@ -207,7 +207,7 @@ printSpiral(n)
 
 ## C#
 
-```
+```cs
 // C# program to print a n x n  
 // spiral matrix in clockwise 
 // direction using O(1) space 
@@ -265,7 +265,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to print a n x n  
 // spiral matrix in clockwise  

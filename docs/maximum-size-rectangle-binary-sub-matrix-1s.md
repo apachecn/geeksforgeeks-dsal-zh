@@ -79,7 +79,7 @@ Step 2:
 
 ## C++
 
-```
+```cpp
 // C++ program to find largest rectangle with all 1s 
 // in a binary matrix 
 #include <bits/stdc++.h> 
@@ -188,7 +188,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find largest rectangle with all 1s 
 // in a binary matrix 
 import java.io.*; 
@@ -297,7 +297,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find largest rectangle  
 # with all 1s in a binary matrix  
   
@@ -402,7 +402,7 @@ if __name__ == '__main__':
 
 ## C#
 
-```
+```cs
 // C# program to find largest rectangle 
 // with all 1s in a binary matrix 
 using System; 

@@ -79,7 +79,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java for printing smallest n number in order 
 import java.util.*; 
   
@@ -121,7 +121,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 # Python3 for printing smallest n number in order 
   
 # Function for binary_search 
@@ -166,7 +166,7 @@ if __name__ == "__main__":
 
 ## C#
 
-```
+```cs
 // C# for printing smallest n number in order 
 using System;      
   

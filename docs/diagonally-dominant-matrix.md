@@ -96,7 +96,7 @@ int main()
 
 ## Java
 
-```
+```java
 // JAVA Program to check whether given matrix 
 // is Diagonally Dominant Matrix. 
 import java.util.*; 
@@ -151,7 +151,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python Program to check 
 # whether given matrix is  
 # Diagonally Dominant Matrix. 
@@ -200,7 +200,7 @@ else :
 
 ## C#
 
-```
+```cs
 // C# Program to check whether given matrix 
 // is Diagonally Dominant Matrix. 
 using System; 
@@ -255,7 +255,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP Program to check whether  
 // given matrix is Diagonally 

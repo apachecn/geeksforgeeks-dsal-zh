@@ -406,7 +406,7 @@ for i in range(n):
 
 ## C#
 
-```
+```cs
 
 // C# program to remove a given 
 // element from an array 

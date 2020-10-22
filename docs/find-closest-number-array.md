@@ -25,7 +25,7 @@ Output : 5
 
 ## C++
 
-```
+```cpp
 // CPP program to find element 
 // closet to given target. 
 #include <bits/stdc++.h> 
@@ -106,7 +106,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find element closet to given target. 
 import java.util.*; 
 import java.lang.*; 
@@ -254,7 +254,7 @@ print(findClosest(arr, n, target))
 
 ## C#
 
-```
+```cs
 // C# program to find element  
 // closet to given target. 
 using System; 
@@ -348,7 +348,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find element closest  
 // to given target.  

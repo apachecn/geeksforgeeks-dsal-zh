@@ -143,7 +143,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find the largest rectangle of  
 // 1's with swapping of columns allowed. 
 class GFG { 
@@ -232,7 +232,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python 3 program to find the largest 
 # rectangle of 1's with swapping 
 # of columns allowed. 
@@ -314,7 +314,7 @@ if __name__ == '__main__':
 
 ## C#
 
-```
+```cs
 // C# program to find the largest rectangle of  
 // 1's with swapping of columns allowed. 
 using System; 

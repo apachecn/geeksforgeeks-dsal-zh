@@ -427,7 +427,7 @@ else :
 
 ## C#
 
-```
+```cs
 
 // Program to check matrix 
 // is scalar matrix or not. 

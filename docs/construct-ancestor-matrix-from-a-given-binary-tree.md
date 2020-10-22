@@ -145,7 +145,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java Program to construct ancestor matrix for a given tree 
 import java.util.*; 
   
@@ -249,7 +249,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python3 program to construct ancestor  
 # matrix for given tree. 
   
@@ -327,7 +327,7 @@ ancestorMatrix(root)
 
 ## C#
 
-```
+```cs
 // C# Program to construct ancestor matrix for a given tree  
 using System; 
   
@@ -460,7 +460,7 @@ class GFG 
 
 ## C++
 
-```
+```cpp
 // C++ program to construct ancestor matrix for  
 // given tree.  
 #include<bits/stdc++.h>  

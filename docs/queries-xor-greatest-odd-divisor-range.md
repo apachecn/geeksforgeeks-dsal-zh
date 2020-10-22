@@ -79,7 +79,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java code Queries on XOR of  
 // greatest odd divisor of the range 
 import java.io.*; 
@@ -134,7 +134,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 # Precompute the prefix XOR of greatest  
 # odd divisor 
 def prefixXOR(arr, preXOR, n): 
@@ -174,7 +174,7 @@ if __name__ == '__main__':
 
 ## C#
 
-```
+```cs
 // C# code Queries on XOR of  
 // greatest odd divisor of the range 
 using System; 

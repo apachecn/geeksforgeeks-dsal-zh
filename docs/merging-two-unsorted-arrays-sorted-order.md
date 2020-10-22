@@ -136,7 +136,7 @@ class GFG {
 
 ## Python
 
-```
+```py
 
 # Python program to merge two unsorted lists  
 # in sorted order 
@@ -296,7 +296,7 @@ Sorted merged list : 2 3 5 10 12 15 20
 
 ## C++
 
-```
+```cpp
 
 // CPP program to merge two unsorted lists  
 // in sorted order 
@@ -431,7 +431,7 @@ class GFG {
 
 ## Python
 
-```
+```py
 
 # Python program to merge two unsorted lists  
 # in sorted order 
@@ -485,7 +485,7 @@ for i in range(n + m):
 
 ## C#
 
-```
+```cs
 
 // C# Code for Merging two unsorted  
 // arrays in sorted order 

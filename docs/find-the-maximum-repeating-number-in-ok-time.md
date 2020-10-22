@@ -76,7 +76,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find the maximum repeating number 
 import java.io.*; 
   
@@ -126,7 +126,7 @@ class MaxRepeating {
 
 ## Python3
 
-```
+```py
 # Python program to find the maximum repeating number 
   
 # Returns maximum repeating element in arr[0..n-1]. 
@@ -167,7 +167,7 @@ print("The maximum repeating number is",maxRepeating(arr, n, k))
 
 ## C#
 
-```
+```cs
 //C# program to find the maximum repeating 
 // number 
 using System; 
@@ -225,7 +225,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the  
 // maximum repeating number 

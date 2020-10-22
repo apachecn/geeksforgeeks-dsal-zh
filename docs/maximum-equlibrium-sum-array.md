@@ -67,7 +67,7 @@ int main()
 
 ## Java
 
-```
+```java
 // java program to find maximum
 // equilibrium sum.
 import java.io.*;
@@ -113,7 +113,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python 3 program to find maximum 
 # equilibrium sum.
 import sys
@@ -148,7 +148,7 @@ if __name__ == '__main__':
 
 ## C#
 
-```
+```cs
 // C# program to find maximum
 // equilibrium sum.
 using System;
@@ -194,7 +194,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php
 // PHP program to find
 // maximum equilibrium sum.
@@ -246,7 +246,7 @@ echo findMaxSum($arr, $n);
 
 ## C++
 
-```
+```cpp
 // CPP program to find
 // maximum equilibrium sum.
 #include <bits/stdc++.h>
@@ -281,7 +281,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find maximum equilibrium
 // sum.
 import java.lang.Math.*;
@@ -324,7 +324,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find
 # maximum equilibrium sum.
 import sys
@@ -361,7 +361,7 @@ if __name__=="__main__":
 
 ## C#
 
-```
+```cs
 // C# program to find maximum equilibrium sum.
 using System.Linq;
 using System;

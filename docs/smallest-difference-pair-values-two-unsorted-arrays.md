@@ -113,7 +113,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java Code to find Smallest  
 // Difference between two Arrays 
 import java.util.*; 
@@ -182,7 +182,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 # Python 3 Code to find 
 # Smallest Difference between 
 # two Arrays 
@@ -242,7 +242,7 @@ print(findSmallestDifference(A, B, m, n))
 
 ## C#
 
-```
+```cs
 // C# Code to find Smallest  
 // Difference between two Arrays 
 using System; 
@@ -314,7 +314,7 @@ class GFG 
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP Code to find Smallest  
 // Difference between two Arrays 

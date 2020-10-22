@@ -90,7 +90,7 @@ class Gfg
 
 ## Python
 
-```
+```py
 
 # Python program to find elements that are larger than 
 # half of the elements in array 

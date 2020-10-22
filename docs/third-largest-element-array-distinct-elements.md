@@ -416,7 +416,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find third Largest element in an array 
 class GFG { 
   
@@ -464,7 +464,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find  
 # third Largest element in  
 # an array 
@@ -526,7 +526,7 @@ thirdLargest(arr, n)
 
 ## C#
 
-```
+```cs
 // C# program to find third Largest element in an array 
 using System; 
 class GFG { 
@@ -584,7 +584,7 @@ public static void Main() {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find third  
 // Largest element in an array 

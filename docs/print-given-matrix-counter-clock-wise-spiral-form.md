@@ -32,7 +32,7 @@ Output:
 
 ## C++
 
-```
+```cpp
 // C++ implementation to print 
 // the counter clock wise 
 // spiral traversal of matrix 
@@ -135,7 +135,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java implementation to print 
 // the counter clock wise 
 // spiral traversal of matrix 
@@ -243,7 +243,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 # Python3 implementation to print 
 # the counter clock wise 
 # spiral traversal of matrix 
@@ -328,7 +328,7 @@ counterClockspiralPrint(R, C, arr)
 
 ## C#
 
-```
+```cs
 // C# implementation to print 
 // the counter clock wise 
 // spiral traversal of matrix; 
@@ -433,7 +433,7 @@ public static void Main()
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP implementation to print 
 // the counter clock wise 
@@ -543,7 +543,7 @@ echo counterClockspiralPrint($R, $C, $arr);
 
 ## Python
 
-```
+```py
 # Python3 implementation to print 
 # the counter clock wise 
 # spiral traversal of matrix 

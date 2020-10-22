@@ -538,7 +538,7 @@ Step3: Iterate over HashTable and print all those keys for
 
 ## C++
 
-```
+```cpp
 
 // C++ implementation of the approach 
 #include <bits/stdc++.h> 
@@ -700,7 +700,7 @@ public static void main(String[] args) 
 
 ## Python
 
-```
+```py
 
 # Python3 implementation of the approach 
 from collections import defaultdict 
@@ -769,7 +769,7 @@ else:
 
 ## C#
 
-```
+```cs
 
 // C# implementation of the approach 
 using System; 

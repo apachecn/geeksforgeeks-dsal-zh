@@ -282,7 +282,7 @@ Maximum difference is 109
 
 ## C++
 
-```
+```cpp
 
 // C++ program to find Maximum difference  
 // between two elements such that larger  
@@ -448,7 +448,7 @@ print ("Maximum difference is", 
 
 ## C#
 
-```
+```cs
 
 // C# code to find Maximum difference 
 using System; 
@@ -551,7 +551,7 @@ Maximum difference is 109
 
 ## C++
 
-```
+```cpp
 
 // C++ program to find Maximum difference  
 // between two elements such that larger  

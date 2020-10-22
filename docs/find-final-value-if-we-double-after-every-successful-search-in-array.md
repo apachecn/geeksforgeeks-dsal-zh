@@ -59,7 +59,7 @@ int main() {
 
 ## Java
 
-```
+```java
 // Java program to find value  
 // if we double  the value after  
 // every successful search 
@@ -92,7 +92,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python program to find 
 # value if we double  
 # the value after every 
@@ -124,7 +124,7 @@ print(findValue(arr, n, k))
 
 ## C#
 
-```
+```cs
 // C# program to find value  
 // if we double the value after  
 // every successful search 
@@ -160,7 +160,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find  
 // value if we double  

@@ -34,7 +34,7 @@ Let first array be mPlusN[] and other array be N[]
 
 ## C++
 
-```
+```cpp
 // C++ program to Merge an array of  
 // size n into another array of size m + n 
 #include <bits/stdc++.h> 
@@ -119,7 +119,7 @@ int main()
 
 ## C
 
-```
+```c
 #include <stdio.h> 
   
 /* Assuming -1 is filled for the places where element 
@@ -200,7 +200,7 @@ int main()
 
 ## Java
 
-```
+```java
 class MergeArrays  
 { 
     /* Function to move m elements at the end of array mPlusN[] */
@@ -287,7 +287,7 @@ class MergeArrays 
 
 ## Python3
 
-```
+```py
 # Assuming -1 is filled 
 # for the places where element 
 # is not available 
@@ -369,7 +369,7 @@ printArray(mPlusN, m+n)
 
 ## C#
 
-```
+```cs
 // C# program to Merge an array of  
 // size n into another array of size m + n 
 using System; 
@@ -472,7 +472,7 @@ public static void Main(string[] args)
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to Merge an array  
 // of size n into another array  

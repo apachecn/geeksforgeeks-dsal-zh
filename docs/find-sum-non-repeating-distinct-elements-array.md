@@ -66,7 +66,7 @@ int main()
 
 ## Java
 
-```
+```java
 import java.util.Arrays; 
   
 // Java Find the sum of all non-repeated  
@@ -102,7 +102,7 @@ public class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 Find the sum of all non-repeated 
 # elements in an array 
   
@@ -133,7 +133,7 @@ if __name__ == '__main__':
 
 ## C#
 
-```
+```cs
 // C# Find the sum of all non-repeated  
 // elements in an array  
 using System; 
@@ -184,7 +184,7 @@ class GFG 
 
 ## C++
 
-```
+```cpp
 // C++ Find the sum of all non- repeated 
 // elements in an array 
 #include<bits/stdc++.h> 
@@ -222,7 +222,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java Find the sum of all non- repeated  
 // elements in an array  
 import java.util.*; 
@@ -263,7 +263,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python3 Find the sum of all  
 # non- repeated elements in an array  
   
@@ -293,7 +293,7 @@ print(findSum(arr, n))
 
 ## C#
 
-```
+```cs
 // C# Find the sum of all non- repeated  
 // elements in an array  
 using System; 

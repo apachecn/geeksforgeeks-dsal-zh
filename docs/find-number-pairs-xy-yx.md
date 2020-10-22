@@ -99,7 +99,7 @@ int countPairsBruteForce(int X[], int Y[], int m, int n)
 
 ## C++
 
-```
+```cpp
 
 // C++ program to finds the number of pairs (x, y) 
 // in an array such that x^y > y^x 
@@ -178,7 +178,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to finds number of pairs (x, y) 
 // in an array such that x^y > y^x 
   
@@ -262,7 +262,7 @@ class Test
 
 ## Python3
 
-```
+```py
 # Python3 program to find the number  
 # of pairs (x, y) in an array 
 # such that x^y > y^x  
@@ -344,7 +344,7 @@ if __name__ == '__main__':
 
 ## C#
 
-```
+```cs
 // C# program to finds number of pairs (x, y) 
 // in an array such that x^y > y^x 
 using System; 

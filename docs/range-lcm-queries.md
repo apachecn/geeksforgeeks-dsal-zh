@@ -38,7 +38,7 @@ Explanation : In the first query LCM(5, 2, 10, 12) = 60,
 
 ## C++
 
-```
+```cpp
 // LCM of given range queries using Segment Tree 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -150,7 +150,7 @@ int main()
 
 ## Java
 
-```
+```java
 // LCM of given range queries  
 // using Segment Tree  
   
@@ -276,7 +276,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 # LCM of given range queries using Segment Tree 
 MAX = 1000
   
@@ -380,7 +380,7 @@ if __name__ == "__main__":
 
 ## C#
 
-```
+```cs
 // LCM of given range queries  
 // using Segment Tree  
 using System; 

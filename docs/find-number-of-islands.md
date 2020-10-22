@@ -41,7 +41,7 @@ Output : 5
 
 ## C++
 
-```
+```cpp
 // C++ Program to count islands in boolean 2D matrix 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -130,7 +130,7 @@ int main()
 
 ## C
 
-```
+```c
 // Program to count islands in boolean 2D matrix 
 #include <stdbool.h> 
 #include <stdio.h> 
@@ -205,7 +205,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to count islands in boolean 2D matrix 
 import java.util.*; 
 import java.lang.*; 
@@ -283,7 +283,7 @@ class Islands {
 
 ## Python
 
-```
+```py
 # Program to count islands in boolean 2D matrix 
 class Graph: 
   
@@ -368,7 +368,7 @@ print g.countIslands()
 
 ## C#
 
-```
+```cs
 // C# program to count 
 // islands in boolean 
 // 2D matrix 
@@ -466,7 +466,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php  
 // Program to count islands  
 // in boolean 2D matrix 

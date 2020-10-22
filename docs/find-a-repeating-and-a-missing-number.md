@@ -101,7 +101,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C program to Find the repeating 
 // and missing elements 
@@ -141,7 +141,7 @@ int main()
 
 ## Java
 
-```
+```java
 
 // Java program to Find the repeating 
 // and missing elements 
@@ -185,7 +185,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 code to Find the repeating  
 # and the missing elements 
@@ -254,7 +254,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 
 <?php 
 // PHP program to Find the repeating 
@@ -342,7 +342,7 @@ and the missing element is 1
 
 ## C++
 
-```
+```cpp
 // C++ program to Find the repeating 
 // and missing elements 
   
@@ -429,7 +429,7 @@ int main()
 
 ## C
 
-```
+```c
 // C program to Find the repeating 
 // and missing elements 
   
@@ -511,7 +511,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to Find the repeating 
 // and missing elements 
   
@@ -592,7 +592,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find the repeating  
 # and missing elements  
   
@@ -665,7 +665,7 @@ print("The missing element is", x,
 
 ## C#
 
-```
+```cs
 // C# program to Find the repeating 
 // and missing elements 
   
@@ -751,7 +751,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to Find the repeating 
 // and missing elements 
@@ -848,7 +848,7 @@ The missing element is 7 and the repeating number is 5
 
 ## Java
 
-```
+```java
 // Java program to find the 
 // repeating and missing elements 
 // using Maps 
@@ -887,7 +887,7 @@ public class Test1 {
 
 ## Python3
 
-```
+```py
 # Python3 program to find the  
 # repeating and missing elements  
 # using Maps 
@@ -915,7 +915,7 @@ main()
 
 ## C#
 
-```
+```cs
 // C# program to find the 
 // repeating and missing elements 
 // using Maps 
@@ -987,7 +987,7 @@ Missing = 5
 
 ## C++
 
-```
+```cpp
 #include <bits/stdc++.h>  
   
 using namespace std; 
@@ -1024,7 +1024,7 @@ int main(void){
 
 ## Java
 
-```
+```java
 import java.util.*; 
   
 class GFG  
@@ -1069,7 +1069,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 def repeatedNumber(A): 
       
     length = len(A) 
@@ -1105,7 +1105,7 @@ for i in res:
 
 ## C#
 
-```
+```cs
 using System; 
 using System.Collections.Generic; 
   

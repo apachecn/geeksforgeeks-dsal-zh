@@ -193,7 +193,7 @@ public class ShuffleRand 
 
 ## Python
 
-```
+```py
 
 # Python Program to shuffle a given array 
 import random 

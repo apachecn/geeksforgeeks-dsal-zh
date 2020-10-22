@@ -524,7 +524,7 @@ int main()
 
 ## Java
 
-```
+```java
 // O(n) solution for finding smallest subarray with sum 
 // greater than x 
   
@@ -596,7 +596,7 @@ class SmallestSubArraySum
 
 ## Python3
 
-```
+```py
 # O(n) solution for finding smallest 
 # subarray with sum greater than x 
   
@@ -659,7 +659,7 @@ print("Not possible") if (res3 == n3 + 1) else print(res3) 
 
 ## C#
 
-```
+```cs
 // O(n) solution for finding  
 // smallest subarray with sum 
 // greater than x 
@@ -750,7 +750,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // O(n) solution for finding  
 // smallest subarray with sum  

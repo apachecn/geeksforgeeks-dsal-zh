@@ -81,7 +81,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java Program to find minimum flip 
 // required to make Binary Matrix 
 // symmetric along main diagonal 
@@ -129,7 +129,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 code to find minimum flip 
 # required to make Binary Matrix  
 # symmetric along main diagonal 
@@ -169,7 +169,7 @@ print( minimumflip(mat, n))
 
 ## C#
 
-```
+```cs
 // C# Program to find minimum flip 
 // required to make Binary Matrix 
 // symmetric along main diagonal 
@@ -217,7 +217,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP Program to find minimum 
 // flip required to make 
@@ -276,7 +276,7 @@ echo minimumflip($mat, $n),"\n";
 
 ## C++
 
-```
+```cpp
 // CPP Program to find minimum flip required to make 
 // Binary Matrix symmetric along main diagonal 
 #include <bits/stdc++.h> 
@@ -312,7 +312,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java Program to find minimum flip 
 // required to make Binary Matrix 
 // symmetric along main diagonal 
@@ -351,7 +351,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 code to find minimum flip 
 # required to make Binary Matrix 
 # symmetric along main diagonal 
@@ -383,7 +383,7 @@ print( minimumflip(mat, n))
 
 ## C#
 
-```
+```cs
 // C# Program to find minimum flip 
 // required to make Binary Matrix 
 // symmetric along main diagonal 
@@ -423,7 +423,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP Program to find minimum 
 // flip required to make Binary 

@@ -383,7 +383,7 @@ Yes
 
 ## C++
 
-```
+```cpp
 
 // C++ program to check whether reversing a sub array 
 // make the array sorted or not 
@@ -444,7 +444,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to check whether reversing a sub array  
 // make the array sorted or not 
   
@@ -515,7 +515,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to check whether reversing  
 # a sub array make the array sorted or not 
 import math as mt 
@@ -577,7 +577,7 @@ else:
 
 ## C#
 
-```
+```cs
 // C# program to check whether reversing a  
 // sub array make the array sorted or not 
    
@@ -648,7 +648,7 @@ public class GFG{
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to check whether reversing  
 // a sub array make the array sorted or not 

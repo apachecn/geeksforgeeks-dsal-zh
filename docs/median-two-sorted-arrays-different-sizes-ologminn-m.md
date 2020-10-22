@@ -752,7 +752,7 @@ The median is : 13.5
 
 ## C++
 
-```
+```cpp
 
 // CPP code for finding median of the given two 
 // sorted arrays that exists in the merged array ((n+m) / 2 - 1 position) 
@@ -845,7 +845,7 @@ int main()
 
 ## C#
 
-```
+```cs
 
 // C# code for finding median  
 // of the given two sorted  

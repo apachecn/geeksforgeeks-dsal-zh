@@ -347,7 +347,7 @@ for ($i = 0; $i < $n; $i++)
 
 ## C++
 
-```
+```cpp
 
 // C++ program to rearrange positive 
 // and negative numbers 

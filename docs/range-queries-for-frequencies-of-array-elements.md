@@ -62,7 +62,7 @@ int main()
 
 ## Java
 
-```
+```java
 // JAVA Code to find total count of an element 
 // in a range 
   
@@ -101,7 +101,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python program to find total   
 # count of an element in a range 
   
@@ -134,7 +134,7 @@ print("Frequency of 8 from 4 to 9 = ",
 
 ## C#
 
-```
+```cs
 // C# Code to find total count  
 // of an element in a range 
 using System; 
@@ -178,7 +178,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find total count of  
 // an element in a range 
@@ -242,7 +242,7 @@ echo "Frequency of 8 from 4 to 9 = ". 
 
 ## C++
 
-```
+```cpp
 // C++ program to find total count of an element 
 #include<bits/stdc++.h> 
 using namespace std; 
@@ -292,7 +292,7 @@ int main()
 
 ## Python3
 
-```
+```py
 # Python3 program to find total count of an element 
 from collections import defaultdict as dict
 from bisect import bisect_left as lower_bound 

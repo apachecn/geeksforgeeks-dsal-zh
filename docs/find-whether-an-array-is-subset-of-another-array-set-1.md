@@ -312,7 +312,7 @@ arr2[] is subset of arr1[]
 
 ## C++
 
-```
+```cpp
 
 // C++ program to find whether an array 
 // is subset of another array 
@@ -745,7 +745,7 @@ else:
 
 ## C#
 
-```
+```cs
 
 // C# program to find whether an array 
 // is subset of another array 
@@ -998,7 +998,7 @@ arr2 is a subset of arr1
 
 ## C++
 
-```
+```cpp
 
 // C++ program to find whether an array 
 // is subset of another array 
@@ -1161,7 +1161,7 @@ else:
 
 ## C#
 
-```
+```cs
 
 // C# code to find whether an array 
 // is subset of another array 
@@ -1349,7 +1349,7 @@ class GFG
 
 ## C#
 
-```
+```cs
 
 // C# code to find whether an array is  
 // subset of another array  

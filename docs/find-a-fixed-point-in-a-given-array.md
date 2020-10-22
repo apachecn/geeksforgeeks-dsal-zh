@@ -61,7 +61,7 @@ int main() 
 
 ## C
 
-```
+```c
 // C program to check fixed point  
 // in an array using linear search 
 #include<stdio.h> 
@@ -92,7 +92,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to check fixed point  
 // in an array using linear search 
    
@@ -124,7 +124,7 @@ class Main
 
 ## Python
 
-```
+```py
 # Python program to check fixed point  
 # in an array using linear search 
 def linearSearch(arr, n): 
@@ -144,7 +144,7 @@ print("Fixed Point is " + str(linearSearch(arr,n)))
 
 ## C#
 
-```
+```cs
 // C# program to check fixed point  
 // in an array using linear search 
 using System; 
@@ -178,7 +178,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to check fixed point  
 // in an array using linear search 

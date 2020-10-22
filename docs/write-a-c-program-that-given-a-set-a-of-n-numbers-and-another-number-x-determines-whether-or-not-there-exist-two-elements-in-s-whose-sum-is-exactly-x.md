@@ -278,7 +278,7 @@ class GFG {
 
 ## Python
 
-```
+```py
 
 # Python program to check for the sum condition to be satisified 
 
@@ -557,7 +557,7 @@ for(i=0 to end)
 
 ## C++
 
-```
+```cpp
 
 // C++ program to check if given array 
 // has 2 elements whose sum is equal 
@@ -683,7 +683,7 @@ class PairSum {
 
 ## Python
 
-```
+```py
 
 # Python program to find if there are 
 # two elements wtih given sum 
@@ -712,7 +712,7 @@ printPairs(A, len(A), n)
 
 ## C#
 
-```
+```cs
 
 // C# implementation using Hashing 
 using System; 

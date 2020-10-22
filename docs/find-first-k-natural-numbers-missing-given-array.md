@@ -84,7 +84,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find missing k numbers
 // in an array.
 import java.util.Arrays;
@@ -137,7 +137,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find missing 
 # k numbers in an array. 
  
@@ -184,7 +184,7 @@ printKMissing(arr, n, k);
 
 ## C#
 
-```
+```cs
 // C# program to find missing 
 // k numbers in an array.
 using System;
@@ -240,7 +240,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php
 // PHP program to find missing k numbers
 // in an array.
@@ -307,7 +307,7 @@ function printKMissing($arr, $n, $k)
 
 ## C++
 
-```
+```cpp
 // C++ code for 
 // the above approach
 #include <bits/stdc++.h>
@@ -358,7 +358,7 @@ int main()
 
 ## Python3
 
-```
+```py
 # Python3 code for above approach
  
 # Program to print first k

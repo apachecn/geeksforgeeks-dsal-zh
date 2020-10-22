@@ -331,7 +331,7 @@ leftRotate($arr, $n, $k, $temp);
 
 ## C++
 
-```
+```cpp
 
 // CPP implementation of left rotation of 
 // an array K number of times 
@@ -457,7 +457,7 @@ print()
 
 ## C#
 
-```
+```cs
 
 // C# implementation of  
 // left rotation of an  

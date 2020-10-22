@@ -404,7 +404,7 @@ echo calculate($L, $R);
 
 ## C++
 
-```
+```cpp
 
 // C++ implementation of above idea  
 #include <bits/stdc++.h>  
@@ -657,7 +657,7 @@ print(calculate(L, R))
 
 ## C#
 
-```
+```cs
 
 // C# implementation of above idea 
 using System; 

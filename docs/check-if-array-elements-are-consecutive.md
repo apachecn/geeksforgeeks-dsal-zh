@@ -463,7 +463,7 @@ else
 
 ## C++
 
-```
+```cpp
 #include<stdio.h> 
 #include<stdlib.h> 
   
@@ -550,7 +550,7 @@ int main()
 
 ## Java
 
-```
+```java
 class AreConsecutive  
 { 
     /* The function checks if the array elements are consecutive 
@@ -711,7 +711,7 @@ if __name__ == "__main__":
 
 ## C#
 
-```
+```cs
 using System; 
   
 class GFG { 
@@ -810,7 +810,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
   
 /* The function checks if the array elements 

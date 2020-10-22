@@ -67,7 +67,7 @@ int main()
 
 ## Java
 
-```
+```java
 // java program to check if there are two 
 // adjacent set bits. 
 public class GFG { 
@@ -119,7 +119,7 @@ public class GFG {
 
 ## Python3
 
-```
+```py
 # Python program to check the if 
 # sum of a row is same as  
 # corresponding column 
@@ -158,7 +158,7 @@ print(areSumSame(M, n, m))
 
 ## C#
 
-```
+```cs
 // C# program to check if there are two 
 // adjacent set bits. 
 using System; 
@@ -210,7 +210,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // Function to check the if  
 // sum of a row is same as 

@@ -73,7 +73,7 @@ int main()
 
 ## Python3
 
-```
+```py
 # Simple Python program to find smallest 
 # greater element in whole array for  
 # every element. 
@@ -108,7 +108,7 @@ smallestGreater(ar, n);
 
 ## C#
 
-```
+```cs
 // Simple C# program to find 
 // smallest greater element in  
 // whole array for every element. 
@@ -160,7 +160,7 @@ public static void Main() 
 
 ## PHP
 
-```
+```php
 <?php 
 // Simple PHP program to find smallest 
 // greater element in whole array for  

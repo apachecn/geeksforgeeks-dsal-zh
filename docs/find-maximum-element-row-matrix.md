@@ -90,7 +90,7 @@ const int N = 4; 
 
 ## Java
 
-```
+```java
 // Java program to find maximum  
 // element of each row in a matrix 
 public class GFG{ 
@@ -140,7 +140,7 @@ public class GFG{
 
 ## Python
 
-```
+```py
 # Python program to find maximum  
 # element of each row in a matrix 
   
@@ -178,7 +178,7 @@ maxelement(arr)
 
 ## C#
 
-```
+```cs
 // C# program to find maximum  
 // element of each row in a matrix  
 using System; 
@@ -246,7 +246,7 @@ public static void Main(string[] args)
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find maximum  
 // element of each row in a matrix 

@@ -125,7 +125,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java code to demonstrate Difference Array 
 class GFG { 
       
@@ -201,7 +201,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 code to demonstrate Difference Array 
   
 # Creates a diff array D[] for A[] and returns 
@@ -266,7 +266,7 @@ printArray(A, D)
 
 ## C#
 
-```
+```cs
 // C# code to demonstrate Difference Array 
 using System; 
   

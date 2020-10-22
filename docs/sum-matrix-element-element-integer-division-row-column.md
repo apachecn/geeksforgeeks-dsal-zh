@@ -60,7 +60,7 @@ int main()
 
 ## Java
 
-```
+```java
 // java program to find sum of matrix 
 // element where each element is integer 
 // division of row and column. 
@@ -100,7 +100,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python 3 program to find sum of  
 # matrix element where each element  
 # is integer division of row and column.  
@@ -125,7 +125,7 @@ print(findSum(N))
 
 ## C#
 
-```
+```cs
 // C# program to find the sum of matrix 
 // element where each element is an integer 
 // division of row and column. 
@@ -164,7 +164,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find sum of matrix element 
 // where each element is integer division of 
@@ -224,7 +224,7 @@ mat[i][k] = 2, for 2*j <= k < 3*j, 1 <= i <= N
 
 ## C++
 
-```
+```cpp
 // C++ program to find sum of matrix element 
 // where each element is integer division of 
 // row and column. 
@@ -275,7 +275,7 @@ int main()
 
 ## Java
 
-```
+```java
 // java program to find sum of matrix element 
 // where each element is integer division of 
 // row and column. 
@@ -331,7 +331,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Program to find sum of matrix element  
 # where each element is integer division   
 # of row and column.  
@@ -370,7 +370,7 @@ print(findSum(N))
 
 ## C#
 
-```
+```cs
 // C# program to find sum of matrix  
 // element where each element is  
 // integer division of row and column. 
@@ -427,7 +427,7 @@ class GFG 
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find sum of  
 // matrix element where each  

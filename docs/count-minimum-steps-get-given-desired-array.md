@@ -60,7 +60,7 @@ Finally, we get all zeros in target array.
 
 ## C++
 
-```
+```cpp
 /* C++ program to count minimum number of operations 
    to get the given target array */
 #include <bits/stdc++.h> 
@@ -137,7 +137,7 @@ int main()
 
 ## Java
 
-```
+```java
 /* Java program to count minimum number of operations 
    to get the given arr array */
    
@@ -215,7 +215,7 @@ class Test
 
 ## Python3
 
-```
+```py
 # Python3 program to count minimum number of  
 # operations to get the given target array  
   
@@ -283,7 +283,7 @@ print("Minimum number of steps required to",
 
 ## C#
 
-```
+```cs
 // C# program to count minimum  
 // number of operations to get  
 // the given arr array */ 
@@ -377,7 +377,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to count minimum 
 // number of operations to get  

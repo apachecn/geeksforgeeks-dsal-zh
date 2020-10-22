@@ -141,7 +141,7 @@ int main()
 
 ## C++
 
-```
+```cpp
 // C++ program to find number of cells a queen can move 
 // with obstacles on the chessborad 
 #include <bits/stdc++.h> 
@@ -222,7 +222,7 @@ int main(void)
 
 ## Java
 
-```
+```java
 // Java program to find number of cells a  
 // queen can move with obstacles on the  
 // chessborad 
@@ -308,7 +308,7 @@ class GFG {
 
 ## C#
 
-```
+```cs
 // C# program to find number of cells a  
 // queen can move with obstacles on the  
 // chessborad 
@@ -395,7 +395,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 //PHP program to find number of cells a queen can move 
 // with obstacles on the chessborad 

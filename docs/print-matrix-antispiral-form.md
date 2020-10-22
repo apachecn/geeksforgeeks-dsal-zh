@@ -105,7 +105,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java Code for Print matrix in antispiral form 
 import java.util.*; 
   
@@ -246,7 +246,7 @@ antiSpiralTraversal(R - 1, C - 1, mat)
 
 ## C#
 
-```
+```cs
 using System; 
 using System.Collections.Generic; 
   

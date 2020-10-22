@@ -155,7 +155,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to rotate a matrix 
 import java.lang.*; 
 import java.util.*; 
@@ -272,7 +272,7 @@ class GFG
 
 ## Python
 
-```
+```py
 # Python program to rotate a matrix 
   
 # Function to rotate a matrix 
@@ -364,7 +364,7 @@ printMatrix(matrix)
 
 ## C#
 
-```
+```cs
 // C# program to rotate a matrix 
 using System; 
   
@@ -480,7 +480,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to rotate a matrix 
 $R = 4; 

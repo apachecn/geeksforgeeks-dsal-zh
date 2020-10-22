@@ -54,7 +54,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java Program to find  
 // transpose of a matrix 
   
@@ -99,7 +99,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python3 Program to find 
 # transpose of a matrix 
   
@@ -137,7 +137,7 @@ for i in range(N):
 
 ## C#
 
-```
+```cs
 // C# Program to find  
 // transpose of a matrix 
 using System; 
@@ -184,7 +184,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
   
 // This function stores transpose  
@@ -239,7 +239,7 @@ Result matrix is
 
 ## C++
 
-```
+```cpp
 #include <stdio.h> 
 #define M 3 
 #define N 4 
@@ -278,7 +278,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java Program to find  
 // transpose of a matrix 
   
@@ -323,7 +323,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python3 Program to find 
 # transpose of a matrix 
   
@@ -359,7 +359,7 @@ for i in range(N):
 
 ## C#
 
-```
+```cs
 // C# Program to find  
 // transpose of a matrix 
  using System; 
@@ -404,7 +404,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
   
 // This function stores transpose 
@@ -458,7 +458,7 @@ Result matrix is
 
 ## C++
 
-```
+```cpp
 #include <bits/stdc++.h> 
 using namespace std; 
   
@@ -495,7 +495,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java Program to find  
 // transpose of a matrix 
   
@@ -538,7 +538,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python3 Program to find 
 # transpose of a matrix 
   
@@ -571,7 +571,7 @@ for i in range(N):
 
 ## C#
 
-```
+```cs
 // C# Program to find transpose of 
 // a matrix 
 using System; 
@@ -618,7 +618,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // Converts A[][] to its transpose 
 function transpose(&$A) 

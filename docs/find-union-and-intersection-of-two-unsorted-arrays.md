@@ -807,7 +807,7 @@ if __name__ =="__main__":
 
 ## C#
 
-```
+```cs
 
 // C# code to find intersection when 
 // elements may not be distinct 
@@ -942,7 +942,7 @@ intersection($a, $b, $n, $m);
 
 ## C++
 
-```
+```cpp
 
 // CPP program to find union and intersection 
 // using sets 
@@ -1056,7 +1056,7 @@ class Test
 
 ## Python
 
-```
+```py
 
 # Python program to find union and intersection  
 # using sets 
@@ -1105,7 +1105,7 @@ printIntersection(arr1, arr2, n1, n2) 
 
 ## C#
 
-```
+```cs
 
 // C# program to find union and intersection 
 // using Hashing 
@@ -1283,7 +1283,7 @@ public class UnsortedIntersectionUnion {
 
 ## Python
 
-```
+```py
 # Python program to find union and intersection
 # using sets
  
@@ -1337,7 +1337,7 @@ printIntersection(arr1, arr2, n1, n2)
 
 ## C#
 
-```
+```cs
 // C# program to find union and intersection
 // using Hashing
 using System;

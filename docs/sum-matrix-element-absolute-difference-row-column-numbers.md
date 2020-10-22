@@ -74,7 +74,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find sum of matrix 
 // in which each element is absolute 
 // difference of its corresponding 
@@ -118,7 +118,7 @@ static int findSum(int n)
 
 ## Python3
 
-```
+```py
 # Python3 program to find sum of matrix  
 # in which each element is absolute  
 # difference of its corresponding 
@@ -155,7 +155,7 @@ if __name__ == "__main__":
 
 ## C#
 
-```
+```cs
 // C# program to find sum of matrix 
 // in which each element is absolute 
 // difference of its corresponding 
@@ -199,7 +199,7 @@ static int findSum(int n)
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find sum of  
 // matrix in which each element 
@@ -262,7 +262,7 @@ function findSum( $n)
 
 ## C++
 
-```
+```cpp
 // C++ program to find sum of matrix in which 
 // each element is absolute difference of its 
 // corresponding row and column number row. 
@@ -291,7 +291,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find sum of matrix in which 
 // each element is absolute difference of its 
 // corresponding row and column number row. 
@@ -323,7 +323,7 @@ static int findSum(int n)
 
 ## C#
 
-```
+```cs
 // C# program to find sum of matrix in which 
 // each element is absolute difference of its 
 // corresponding row and column number row. 
@@ -355,7 +355,7 @@ static int findSum(int n)
 
 ## Python3
 
-```
+```py
 # Python 3 program to find sum  
 # of matrix in which each element  
 # is absolute difference of its  
@@ -381,7 +381,7 @@ print(findSum(n))
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find sum of matrix in which 
 // each element is absolute difference of its 
@@ -437,7 +437,7 @@ Sum of first n natural number = ((n)*(n + 1)*(2*n + 1)/6.
 
 ## C++
 
-```
+```cpp
 // C++ program to find sum of matrix in which 
 // each element is absolute difference of its 
 // corresponding row and column number row. 
@@ -467,7 +467,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find sum of matrix in which 
 // each element is absolute difference of its 
 // corresponding row and column number row. 
@@ -500,7 +500,7 @@ static int findSum(int n)
 
 ## Python3
 
-```
+```py
 # Python 3 program to find sum of matrix  
 # in which each element is absolute  
 # difference of its corresponding row  
@@ -526,7 +526,7 @@ print(findSum(n)) 
 
 ## C#
 
-```
+```cs
 // C# program to find sum of matrix in which 
 // each element is absolute difference of its 
 // corresponding row and column number row. 
@@ -559,7 +559,7 @@ static int findSum(int n)
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find sum of  
 // matrix in which each element  

@@ -82,7 +82,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to count number of strictly 
 // increasing subarrays 
   
@@ -126,7 +126,7 @@ class Test
 
 ## Python3
 
-```
+```py
 # Python3 program to count number 
 # of strictly increasing subarrays 
   
@@ -163,7 +163,7 @@ print ("Count of strictly increasing subarrays is",
 
 ## C#
 
-```
+```cs
 // C# program to count number of  
 // strictly increasing subarrays 
 using System; 
@@ -210,7 +210,7 @@ class Test
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to count number of 
 // strictly increasing subarrays 

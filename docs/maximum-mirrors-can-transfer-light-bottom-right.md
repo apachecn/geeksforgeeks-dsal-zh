@@ -121,7 +121,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find how many mirror can transfer 
 // light from bottom to right 
 import java.util.*; 
@@ -219,7 +219,7 @@ public static void main(String[] args) 
 
 ## C#
 
-```
+```cs
 // C# program to find how many mirror can transfer 
 // light from bottom to right 
 using System; 

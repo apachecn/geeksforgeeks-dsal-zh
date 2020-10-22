@@ -89,7 +89,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to make an 
 // array decreasing 
 import java.util.*; 
@@ -145,7 +145,7 @@ public class GfG{
 
 ## Python3
 
-```
+```py
 # Python program to make an array decreasing 
   
 # Function to count minimum no of operation 
@@ -188,7 +188,7 @@ print(min_noOf_operation(arr, N, k))
 
 ## C#
 
-```
+```cs
 // C# program to make an 
 // array decreasing 
 using System; 
@@ -244,7 +244,7 @@ public class GfG{
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to make an array decreasing 
   

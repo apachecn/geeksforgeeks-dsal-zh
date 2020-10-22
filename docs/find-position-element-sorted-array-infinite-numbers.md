@@ -154,7 +154,7 @@ class Test
 
 ## Python
 
-```
+```py
 
 # Python Program to demonstrate working of an algorithm that finds 
 # an element in an array of infinite size 

@@ -97,7 +97,7 @@ int main() 
 
 ## Java
 
-```
+```java
 // Java program to count 
 // the number of unique 
 // triplets whose XOR is 0
@@ -163,7 +163,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python 3 program to count the number of
 # unique triplets whose XOR is 0
  
@@ -207,7 +207,7 @@ if __name__ == '__main__':
 
 ## C#
 
-```
+```cs
 // C# program to count 
 // the number of unique 
 // triplets whose XOR is 0

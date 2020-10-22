@@ -130,7 +130,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to tell the Current direction in 
 // R x C grid 
 import java.io.*; 
@@ -196,7 +196,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to tell the Current  
 # direction in R x C grid 
   
@@ -259,7 +259,7 @@ direction(R, C)
 
 ## C#
 
-```
+```cs
 // C# program to tell the Current 
 // direction in R x C grid 
 using System; 
@@ -347,7 +347,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to tell the Current  
 // direction in R x C grid 

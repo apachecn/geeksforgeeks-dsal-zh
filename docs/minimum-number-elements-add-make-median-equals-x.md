@@ -250,7 +250,7 @@ echo minNumber($a, $n, $x),"\n";
 
 ## C++
 
-```
+```cpp
 
 // CPP program to find minimum number of  
 // elements to add so that its median  
@@ -304,7 +304,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find minimum number 
 // of elements to add so that its  
 // median equals x. 
@@ -364,7 +364,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find minimum number  
 # of elements to add so that its median  
 # equals x. 
@@ -412,7 +412,7 @@ print(minNumber(a, n, x))
 
 ## C#
 
-```
+```cs
 // C# program to find minimum  
 // number of elements to add  
 // so that its median equals x. 
@@ -475,7 +475,7 @@ public static void Main()
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find minimum  
 // number of elements to add so   

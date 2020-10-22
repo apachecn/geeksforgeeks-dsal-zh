@@ -225,7 +225,7 @@ Output:
 
 ## C++
 
-```
+```cpp
 
 // C++ program to merge overlapping Intervals in  
 // O(n Log n) time and O(1) extra space.  
@@ -287,7 +287,7 @@ int main() 
 
 ## Java
 
-```
+```java
 // Java program to merge overlapping Intervals in
 // O(n Log n) time and O(1) extra space
  
@@ -366,7 +366,7 @@ public class MergeOverlappingIntervals {
 
 ## Python3
 
-```
+```py
 # Python3 program to merge overlapping Intervals 
 # in O(n Log n) time and O(1) extra space
 def mergeIntervals(arr):

@@ -169,7 +169,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to demonstrate working of  
 // Square Root Decomposition. 
 import java.util.*; 
@@ -352,7 +352,7 @@ print("query(8,8) : ",query(8, 8))
 
 ## C#
 
-```
+```cs
 // C# program to demonstrate working of  
 // Square Root Decomposition.  
 using System; 

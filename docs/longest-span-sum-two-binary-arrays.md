@@ -95,7 +95,7 @@ int main()
 
 ## Java
 
-```
+```java
 // A Simple Java program to find longest common 
 // subarray of two binary arrays with same sum 
   
@@ -149,7 +149,7 @@ class Test
 
 ## Python3
 
-```
+```py
 # A Simple python program to find longest common 
 # subarray of two binary arrays with same sum 
   
@@ -198,7 +198,7 @@ print("Length of the longest common span with same "
 
 ## C#
 
-```
+```cs
 // A Simple C# program to find  
 // longest common subarray of  
 // two binary arrays with same sum 
@@ -262,7 +262,7 @@ public static void Main() 
 
 ## PHP
 
-```
+```php
 <?php 
 // A Simple PHP program to find  
 // longest common subarray of  
@@ -354,7 +354,7 @@ Length of the longest common span with same sum is 6
 
 ## C++
 
-```
+```cpp
 // A O(n) and O(n) extra space C++ program to find 
 // longest common subarray of two binary arrays with 
 // same sum 
@@ -432,7 +432,7 @@ int main()
 
 ## Java
 
-```
+```java
 // A O(n) and O(n) extra space Java program to find 
 // longest common subarray of two binary arrays with 
 // same sum 
@@ -512,7 +512,7 @@ class Test
 
 ## Python
 
-```
+```py
 # Python program to find longest common 
 # subarray of two binary arrays with 
 # same sum 
@@ -569,7 +569,7 @@ print("sum is",longestCommonSum(arr1, 
 
 ## C#
 
-```
+```cs
 // A O(n) and O(n) extra space C# program  
 // to find longest common subarray of two  
 // binary arrays with same sum 
@@ -677,7 +677,7 @@ Length of the longest common span with same sum is 6
 
 ## C++
 
-```
+```cpp
 // C++ program to find largest subarray  
 // with equal number of 0's and 1's. 
 #include <bits/stdc++.h> 
@@ -733,7 +733,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find largest subarray  
 // with equal number of 0's and 1's.  
 import java.io.*; 

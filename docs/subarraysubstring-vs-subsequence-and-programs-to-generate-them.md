@@ -54,7 +54,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program toto generate all possible subarrays/subArrays 
 //  Complexity- O(n^3) */ 
   
@@ -91,7 +91,7 @@ class Test
 
 ## Python3
 
-```
+```py
 # Python3 code to generate all possible 
 # subarrays/subArrays 
 # Complexity- O(n^3)  
@@ -126,7 +126,7 @@ subArray(arr, n);
 
 ## C#
 
-```
+```cs
 // C# program toto generate all 
 // possible subarrays/subArrays 
 // Complexity- O(n^3) 
@@ -172,7 +172,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP code to generate all possible 
 // subarrays/subArrays Complexity- O(n^3)  
@@ -241,7 +241,7 @@ All Non-empty Subarrays
 
 ## C++
 
-```
+```cpp
 /*  C++ code to generate all possible subsequences. 
     Time Complexity O(n * 2^n) */
 #include<bits/stdc++.h> 
@@ -279,7 +279,7 @@ int main()
 
 ## Java
 
-```
+```java
 /*  Java code to generate all possible subsequences. 
     Time Complexity O(n * 2^n) */
   
@@ -320,7 +320,7 @@ class Test
 
 ## Python3
 
-```
+```py
 # Python 3 code to generate all 
 # possible subsequences. 
 # Time Complexity O(n * 2 ^ n)  
@@ -355,7 +355,7 @@ printSubsequences(arr, n)
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP code to generate all  
 // possible subsequences. 

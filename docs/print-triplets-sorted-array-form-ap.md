@@ -314,7 +314,7 @@ printAllAPTriplets($arr, $n);
 
 ## C++
 
-```
+```cpp
 
 // C++ program to print all triplets in given  
 // array that form Arithmetic Progression 
@@ -370,7 +370,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java implementation to print 
 // all the triplets in given array 
 // that form Arithmetic Progression 
@@ -479,7 +479,7 @@ printAllAPTriplets(arr, n)
 
 ## C#
 
-```
+```cs
 // C# implementation to print 
 // all the triplets in given array 
 // that form Arithmetic Progression 
@@ -542,7 +542,7 @@ class GFG 
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP implementation to print 
 // all the triplets in given array 

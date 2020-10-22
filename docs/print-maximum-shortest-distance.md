@@ -96,7 +96,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java code to find maximum shortest distance  
 // from endpoints 
 import java.util.*; 
@@ -180,7 +180,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 # Python3 code to find maximum shortest  
 # distance from endpoints 
   
@@ -228,7 +228,7 @@ print(find_maximum(a, n, K))
 
 ## C#
 
-```
+```cs
 // C# code to find maximum shortest distance  
 // from endpoints 
 using System; 

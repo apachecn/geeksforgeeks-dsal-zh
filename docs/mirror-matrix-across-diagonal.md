@@ -421,7 +421,7 @@ class GFG 
 
 ## C++
 
-```
+```cpp
 
 // Efficient CPP program to find mirror of 
 // matrix across diagonal. 
@@ -467,7 +467,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Efficient Java program to find mirror of 
 // matrix across diagonal. 
 import java.io.*; 
@@ -515,7 +515,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Efficient Python3 program to find mirror of 
 # matrix across diagonal. 
 from builtins import range
@@ -553,7 +553,7 @@ if __name__ == '__main__':
 
 ## C#
 
-```
+```cs
 // Efficient C# program to find mirror of 
 // matrix across diagonal. 
 using System; 
@@ -600,7 +600,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // Efficient PHP program to find mirror  
 // of matrix across diagonal. 

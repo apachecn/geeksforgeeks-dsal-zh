@@ -88,7 +88,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find Probability  
 // of a random pair being the maximum 
 // weighted pair 
@@ -149,7 +149,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 import sys 
   
 # Function to return probability  
@@ -193,7 +193,7 @@ print(probability(a, b, size1, size2))
 
 ## C#
 
-```
+```cs
 // C# program to find Probability of a random  
 // pair being the maximum weighted pair 
 using System; 
@@ -257,7 +257,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program for Probability of  
 // a random pair being the maximum  

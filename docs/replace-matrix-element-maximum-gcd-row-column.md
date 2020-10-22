@@ -97,7 +97,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to replace each each element with 
 // maximum of GCD of row or column. 
 import java .io.*; 
@@ -166,7 +166,7 @@ static void replacematrix(int [][]mat, int n, int m)
 
 ## Python3
 
-```
+```py
 # Python3 program to replace each each element  
 # with maximum of GCD of row or column. 
   
@@ -220,7 +220,7 @@ if __name__ == "__main__":
 
 ## C#
 
-```
+```cs
 // C# program to replace each each element with 
 // maximum of GCD of row or column. 
 using System; 

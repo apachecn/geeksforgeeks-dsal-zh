@@ -85,7 +85,7 @@ int main() 
 
 ## Java
 
-```
+```java
 // Java code to check Markov Matrix 
 import java.io.*; 
   
@@ -127,7 +127,7 @@ public class markov
 
 ## Python3
 
-```
+```py
 # Python 3 code to check Markov Matrix 
   
 def checkMarkov(m) : 
@@ -163,7 +163,7 @@ else :
 
 ## C#
 
-```
+```cs
 // C# code to check  
 // Markov Matrix 
 using System; 
@@ -216,7 +216,7 @@ static void Main()
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP code to check Markov Matrix 
   

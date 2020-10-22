@@ -383,7 +383,7 @@ Sum found between indexes 1 and 4
 
 ## C++
 
-```
+```cpp
 
 /* An efficient program to print  
 subarray with sum as given sum */
@@ -630,7 +630,7 @@ subArraySum(arr, n, sum)
 
 ## C#
 
-```
+```cs
 
 // An efficient C# program to print 
 // subarray with sum as given sum 

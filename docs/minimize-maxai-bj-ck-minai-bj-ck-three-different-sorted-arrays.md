@@ -96,7 +96,7 @@ int solve(int A[], int B[], int C[], int i, int j, int k)
 
 ## Java
 
-```
+```java
 // Java code for above approach 
 import java.io.*; 
   
@@ -206,7 +206,7 @@ print(solve(A, B, C))
 
 ## C#
 
-```
+```cs
 // C# code for above approach 
 using System; 
   
@@ -269,7 +269,7 @@ class GFG 
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP code for above approach 
 function solve($A, $B, $C,  

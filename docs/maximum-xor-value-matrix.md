@@ -98,7 +98,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to Find maximum XOR value in 
 // matrix either row / column wise 
 class GFG { 
@@ -160,7 +160,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to Find maximum 
 # XOR value in matrix either row / column wise 
   
@@ -212,7 +212,7 @@ print("maximum XOR value : ",
 
 ## C#
 
-```
+```cs
 // C# program to Find maximum XOR value in 
 // matrix either row / column wise 
 using System; 
@@ -277,7 +277,7 @@ class GFG 
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to Find  
 // maximum XOR value in 

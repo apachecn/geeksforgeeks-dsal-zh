@@ -80,7 +80,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find all permutations of a given row 
 import java.util.*; 
   
@@ -137,7 +137,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 # Python program to find all 
 # permutations of a given row 
   
@@ -195,7 +195,7 @@ permutatedRows(mat, m, n, r)
 
 ## C#
 
-```
+```cs
 // C# program to find all permutations of a given row  
 using System; 
 using System.Collections.Generic; 

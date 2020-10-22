@@ -122,7 +122,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to print matrix in diagonal order 
 class GFG { 
     static final int MAX = 100; 
@@ -253,7 +253,7 @@ if __name__ == "__main__":
 
 ## C#
 
-```
+```cs
 // C# program to print matrix in diagonal order 
 using System; 
 class GFG { 
@@ -323,7 +323,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // php program to print matrix 
 // in diagonal order 
@@ -426,7 +426,7 @@ function printMatrixDiagonal($mat, $n)
 
 ## C++
 
-```
+```cpp
 // C++ program to print matrix in diagonal order 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -474,7 +474,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to print matrix in diagonal order 
 public class MatrixDiag { 
   
@@ -519,7 +519,7 @@ public class MatrixDiag {
 
 ## Python3
 
-```
+```py
 # Python3 program to prmatrix in diagonal order 
   
 # Driver code 
@@ -562,7 +562,7 @@ for t in range(2 * n - 1):
 
 ## C#
 
-```
+```cs
 // C# program to print matrix in diagonal order 
 using System; 
   

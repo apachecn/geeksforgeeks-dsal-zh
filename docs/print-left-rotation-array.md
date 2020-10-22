@@ -126,7 +126,7 @@ class arr_rot
 
 ## Python
 
-```
+```py
 
 # Python implementation of left rotation of 
 # an array K number of times 

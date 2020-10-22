@@ -501,7 +501,7 @@ The Maximum Subarray Sum = 7
 
 ## C++
 
-```
+```cpp
 
 // C++ Program to find max subarray  
 // sum excluding some elements 

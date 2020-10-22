@@ -290,7 +290,7 @@ class GFG 
 
 ## C++
 
-```
+```cpp
 
 #include <bits/stdc++.h> 
 #define ll long long int 
@@ -454,7 +454,7 @@ if __name__=='__main__':
 
 ## C#
 
-```
+```cs
 
 // C# program for Maximizing Unique Pairs  
 // from two arrays 

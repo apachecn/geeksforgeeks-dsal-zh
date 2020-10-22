@@ -337,7 +337,7 @@ echo countUnique($mat, 3, 4);
 
 ## C++
 
-```
+```cpp
 
 // Efficient C++ program to count unique 
 // cells in a binary matrix 
@@ -482,7 +482,7 @@ if __name__ == '__main__': 
 
 ## C#
 
-```
+```cs
 
 // Efficient C# program to count unique 
 // cells in a binary matrix 

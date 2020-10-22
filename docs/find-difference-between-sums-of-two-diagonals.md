@@ -81,7 +81,7 @@ int main()
 
 ## Java
 
-```
+```java
 // JAVA Code for Find difference between sums 
 // of two diagonals 
 class GFG { 
@@ -131,7 +131,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find the difference 
 # between the sum of diagonal. 
 def difference(arr, n): 
@@ -171,7 +171,7 @@ print(difference(arr, n))
 
 ## C#
 
-```
+```cs
 // C# Code for find difference between 
 // sums of two diagonals 
 using System; 
@@ -226,7 +226,7 @@ public class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the difference 
 // between the sum of diagonal. 
@@ -287,7 +287,7 @@ function difference($arr, $n)
 
 ## C++
 
-```
+```cpp
 // C++ program to find the difference 
 // between the sum of diagonal. 
 #include <bits/stdc++.h> 
@@ -329,7 +329,7 @@ int main()
 
 ## Java
 
-```
+```java
 // JAVA Code for Find difference between sums 
 // of two diagonals 
   
@@ -372,7 +372,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find the difference 
 # between the sum of diagonal. 
 def difference(arr, n): 
@@ -404,7 +404,7 @@ print(difference(arr, n))
 
 ## C#
 
-```
+```cs
 // C# Code for find difference between  
 // sums of two diagonals 
 using System; 
@@ -451,7 +451,7 @@ public class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the difference 
 // between the sum of diagonal. 

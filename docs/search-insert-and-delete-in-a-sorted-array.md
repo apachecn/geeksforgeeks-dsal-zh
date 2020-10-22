@@ -262,7 +262,7 @@ Index: 5
 
 ## C++
 
-```
+```cpp
 
 // C++ program to implement insert operation in 
 // an sorted array. 
@@ -316,7 +316,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to insert an
 // element in a sorted array
  
@@ -371,7 +371,7 @@ class Main {
 
 ## Python3
 
-```
+```py
 # Python3 program to implement insert 
 # operation in an sorted array.
  
@@ -420,7 +420,7 @@ for i in range(n):
 
 ## C#
 
-```
+```cs
 using System;
  
 // C# program to insert an

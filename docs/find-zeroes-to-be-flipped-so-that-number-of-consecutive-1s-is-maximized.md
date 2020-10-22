@@ -134,7 +134,7 @@ int main()
 
 ## Python3
 
-```
+```py
 # Python3 program to find positions 
 # of zeroes flipping which produces 
 # maximum number of xonsecutive 1's 
@@ -194,7 +194,7 @@ findZeroes(arr, n, m)
 
 ## C#
 
-```
+```cs
 // C# to find positions of zeroes flipping which 
 // produces maximum number of consecutive 1's 
 using System; 
@@ -268,7 +268,7 @@ class Test
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find positions of 
 // zeroes flipping which produces  

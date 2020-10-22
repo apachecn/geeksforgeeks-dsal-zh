@@ -151,7 +151,7 @@ class Test
 
 ## Python
 
-```
+```py
 
 # Python program to sort an array in Zig-Zag form 
 

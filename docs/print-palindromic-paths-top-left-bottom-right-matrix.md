@@ -90,7 +90,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to print all palindromic paths 
 // from top left to bottom right in a grid. 
 public class PalinPath { 
@@ -194,7 +194,7 @@ if __name__ == "__main__":
 
 ## C#
 
-```
+```cs
 // C# program to print all palindromic paths  
 // from top left to bottom right in a grid.  
 using System; 

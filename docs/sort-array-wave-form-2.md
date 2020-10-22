@@ -125,7 +125,7 @@ class SortWave
 
 ## Python
 
-```
+```py
 
 # Python function to sort the array arr[0..n-1] in wave form, 
 # i.e., arr[0] >= arr[1] <= arr[2] >= arr[3] <= arr[4] >= arr[5] 
@@ -215,7 +215,7 @@ Output:
 
 ## C++
 
-```
+```cpp
 
 // A O(n) program to sort an input array in wave form 
 #include<iostream> 
@@ -310,7 +310,7 @@ class SortWave
 
 ## Python
 
-```
+```py
 
 # Python function to sort the array arr[0..n-1] in wave form, 
 # i.e., arr[0] >= arr[1] <= arr[2] >= arr[3] <= arr[4] >= arr[5] 
@@ -339,7 +339,7 @@ for i in range(0,len(arr)):
 
 ## C#
 
-```
+```cs
 
 // A O(n) C# program to sort an 
 // input array in wave form 

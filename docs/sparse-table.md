@@ -434,7 +434,7 @@ Output : 1
 
 ## C++
 
-```
+```cpp
 
 // C++ program to do range minimum query 
 // using sparse table 
@@ -632,7 +632,7 @@ if __name__ == "__main__":
 
 ## C#
 
-```
+```cs
 
 // C# program to do range minimum query  
 // using sparse table  

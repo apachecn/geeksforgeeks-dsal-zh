@@ -113,7 +113,7 @@ int main()
 
 ## Java
 
-```
+```java
 class GFG { 
 static final int ROW = 5; 
 static final int COL = 4; 
@@ -190,7 +190,7 @@ public static void main(String[] args) {
 
 ## Python3
 
-```
+```py
 # Python3 program to print all elements 
 # of given matrix in diagonal order 
 ROW = 5
@@ -247,7 +247,7 @@ diagonalOrder(M)
 
 ## C#
 
-```
+```cs
 // C# program to print all elements 
 // of given matrix in diagonal order 
 using System; 
@@ -321,7 +321,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php  
 // PHP Code for Zigzag (or diagonal)  
 // traversal of Matrix 
@@ -440,7 +440,7 @@ Observe the sequence
 
 ## C++
 
-```
+```cpp
 #include<bits/stdc++.h> 
 #define R 5 
 #define C 4 
@@ -513,7 +513,7 @@ int main()
 
 ## Java
 
-```
+```java
 // JAVA Code for Zigzag (or diagonal)  
 // traversal of Matrix 
     
@@ -604,7 +604,7 @@ int main()
 
 ## Python3
 
-```
+```py
 # Python3 program to print all elements 
 # of given matrix in diagonal order 
 R = 5
@@ -679,7 +679,7 @@ diagonalOrder(arr)
 
 ## C#
 
-```
+```cs
 // C# Code for Zigzag (or diagonal)  
 // traversal of Matrix 
 using System; 
@@ -779,7 +779,7 @@ public static void Main() 
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP code for Zigzag (or diagonal)  
 // traversal of Matrix 

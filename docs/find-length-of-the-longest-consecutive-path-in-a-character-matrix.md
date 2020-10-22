@@ -36,7 +36,7 @@ Output: 1
 
 ## C++
 
-```
+```cpp
 // C++ program to find the longest consecutive path 
 #include<bits/stdc++.h> 
 #define R 3 
@@ -136,7 +136,7 @@ int main() {
 
 ## Java
 
-```
+```java
 // Java program to find the longest consecutive path 
 class path 
 { 
@@ -236,7 +236,7 @@ class path
 
 ## Python3
 
-```
+```py
 # Python3 program to find the longest consecutive path   
 R=3 
 C=3 
@@ -319,7 +319,7 @@ print (getLen(mat, 'f')) 
 
 ## C#
 
-```
+```cs
 // C# program to find the longest consecutive path 
 using System; 
   
@@ -446,7 +446,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the longest consecutive path 
 $R = 3; 

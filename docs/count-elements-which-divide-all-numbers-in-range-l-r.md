@@ -98,7 +98,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to Count elements which 
 // divides all numbers in range L-R 
 import java.io.*; 
@@ -162,7 +162,7 @@ public static void main (String[] args) 
 
 ## Python3
 
-```
+```py
 # Python 3 program to Count elements which 
 # divides all numbers in range L-R 
   
@@ -218,7 +218,7 @@ if __name__ =='__main__':
 
 ## C#
 
-```
+```cs
 // C# program to Count elements which 
 // divides all numbers in range L-R 
 using System; 
@@ -282,7 +282,7 @@ public static void Main () 
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to Count elements which 
 // divides all numbers in range L-R 

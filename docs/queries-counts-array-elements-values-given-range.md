@@ -111,7 +111,7 @@ class GFG 
 
 ## Python
 
-```
+```py
 
 # function to count elements within given range 
 def countInRange(arr, n, x, y): 
@@ -247,7 +247,7 @@ function countInRange($arr, $n,
 
 ## C++
 
-```
+```cpp
 
 // Efficient C++ program to count number of elements 
 // with values in given range. 
@@ -388,7 +388,7 @@ class GFG 
 
 ## Python
 
-```
+```py
 
 # function to find first index >= x 
 def lowerIndex(arr, n, x): 
@@ -440,7 +440,7 @@ print(countInRange(arr, n, i, j))
 
 ## C#
 
-```
+```cs
 
 // Efficient C# program to count number  
 // of elements with values in given range. 

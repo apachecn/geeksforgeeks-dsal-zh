@@ -314,7 +314,7 @@ function mostFrequent( $arr, $n)
 
 ## C++
 
-```
+```cpp
 
 // CPP program to find the most frequent element 
 // in an array. 
@@ -353,7 +353,7 @@ int main()
 
 ## Java
 
-```
+```java
 //Java program to find the most frequent element 
 //in an array 
 import java.util.HashMap; 
@@ -414,7 +414,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find the most  
 # frequent element in an array. 
 import math as mt 
@@ -450,7 +450,7 @@ print(mostFrequent(arr, n))
 
 ## C#
 
-```
+```cs
 // C# program to find the most  
 // frequent element in an array 
 using System; 

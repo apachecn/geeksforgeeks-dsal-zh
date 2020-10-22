@@ -367,7 +367,7 @@ The two elements whose sum is minimum are -80 and 85
 
 ## C++
 
-```
+```cpp
 #include <bits/stdc++.h> 
 using namespace std; 
   
@@ -479,7 +479,7 @@ void quickSort(int arr[], int si, int ei) 
 
 ## C
 
-```
+```c
 # include <stdio.h> 
 # include <math.h> 
 # include <limits.h> 
@@ -587,7 +587,7 @@ void quickSort(int arr[], int si, int ei)
 
 ## Java
 
-```
+```java
 import java.util.*; 
 import java.lang.*; 
 class Main 
@@ -703,7 +703,7 @@ class Main
 
 ## Python3
 
-```
+```py
 # Function to prpair of elements 
 # having minimum sum */ 
   
@@ -781,7 +781,7 @@ minAbsSumPair(arr, n)
 
 ## C#
 
-```
+```cs
 using System; 
   
 class GFG 
@@ -920,7 +920,7 @@ The two elements whose sum is minimum are -80 and 85
 
 ## C++
 
-```
+```cpp
 // C++ implementation using STL 
 #include <bits/stdc++.h> 
 using namespace std; 

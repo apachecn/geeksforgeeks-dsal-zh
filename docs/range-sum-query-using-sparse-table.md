@@ -113,7 +113,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find the sum  
 // in a given range in an array  
 // using sparse table. 
@@ -184,7 +184,7 @@ public static void main(String args[])
 
 ## C#
 
-```
+```cs
 // C# program to find the  
 // sum in a given range 
 // in an array using 
@@ -265,7 +265,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python3 program to find the sum in a given 
 # range in an array using sparse table. 
   

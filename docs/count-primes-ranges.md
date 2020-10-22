@@ -94,7 +94,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to answer queries for  
 // count of primes in given range. 
 import java.util.*; 
@@ -160,7 +160,7 @@ public static void main(String[] args) {
 
 ## Python3
 
-```
+```py
 # Python3 program to answer queries for  
 # count of primes in given range. 
 MAX = 10000
@@ -222,7 +222,7 @@ if __name__=='__main__':
 
 ## C#
 
-```
+```cs
 // C# program to answer  
 // queries for count of 
 // primes in given range. 
@@ -302,7 +302,7 @@ public static void Main()
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to answer queries for  
 // count of primes in given range. 

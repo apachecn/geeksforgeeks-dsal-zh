@@ -116,7 +116,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find closest pair in an array 
 class ClosestPair 
 { 
@@ -176,7 +176,7 @@ class ClosestPair
 
 ## Python3
 
-```
+```py
 # Python3 program to find the pair from 
 # two sorted arays such that the sum  
 # of pair is closest to a given number x 
@@ -235,7 +235,7 @@ printClosest(ar1, ar2, m, n, x)
 
 ## C#
 
-```
+```cs
 // C# program to find closest pair in 
 // an array 
 using System; 
@@ -312,7 +312,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the pair  
 // from two sorted arays such 

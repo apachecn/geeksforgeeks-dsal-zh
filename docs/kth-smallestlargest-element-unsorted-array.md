@@ -474,7 +474,7 @@ K'th smallest element is 12
 
 ## C++
 
-```
+```cpp
 
 #include <climits> 
 #include <iostream> 

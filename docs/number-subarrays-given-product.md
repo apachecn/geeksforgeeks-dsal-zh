@@ -195,7 +195,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find number of subarrays  
 // having product exactly equal to k. 
 import java.util.*; 
@@ -273,7 +273,7 @@ class GFG
 
 ## C#
 
-```
+```cs
 // C# program to find number  
 // of subarrays having product  
 // exactly equal to k. 
@@ -366,7 +366,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find number of subarrays  
 // having product exactly equal to k. 

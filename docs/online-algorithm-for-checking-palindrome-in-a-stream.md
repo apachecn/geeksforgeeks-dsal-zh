@@ -187,7 +187,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program for online algorithm for 
 // palindrome checking 
 public class GFG  
@@ -288,7 +288,7 @@ public class GFG 
 
 ## Python
 
-```
+```py
 # Python program Online algorithm for checking palindrome 
 # in a stream 
   
@@ -373,7 +373,7 @@ checkPalindromes(txt)
 
 ## C#
 
-```
+```cs
 // C# program for online algorithm for  
 // palindrome checking  
 using System; 

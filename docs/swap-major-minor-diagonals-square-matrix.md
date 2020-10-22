@@ -72,7 +72,7 @@ int main() {
 
 ## Java
 
-```
+```java
 // Java implementation to swap 
 // diagonal of a matrix 
 import java.io.*; 
@@ -111,7 +111,7 @@ public static void main(String arg[]) {
 
 ## Python3
 
-```
+```py
 # Python3 Program to swap diagonal of a matrix 
   
 # size of square matrix 
@@ -143,7 +143,7 @@ for i in range(N):    
 
 ## C#
 
-```
+```cs
 // C# implementation to swap 
 // diagonal of a matrix 
 using System; 
@@ -183,7 +183,7 @@ class Gfg {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP Program to swap  
 // diagonal of a matrix 

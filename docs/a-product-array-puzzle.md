@@ -494,7 +494,7 @@ The product array is :
 
 ## C++
 
-```
+```cpp
 
 // C++ implementation of above approach 
 #include <bits/stdc++.h> 
@@ -671,7 +671,7 @@ productArray(arr, n)
 
 ## C#
 
-```
+```cs
 
 using System; 
 

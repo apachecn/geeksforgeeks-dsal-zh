@@ -107,7 +107,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to do range minimum query  
 // in O(1) time with O(n*n) extra space  
 // and O(n*n) preprocessing time. 
@@ -198,7 +198,7 @@ public static void main(String[] args)
 
 ## C#
 
-```
+```cs
 // C# program to do range minimum query  
 // in O(1) time with O(n*n) extra space  
 // and O(n*n) preprocessing time. 
@@ -370,7 +370,7 @@ Else
 
 ## C++
 
-```
+```cpp
 // C++ program to do range minimum query in O(1) time with 
 // O(n Log n) extra space and O(n Log n) preprocessing time 
 #include<bits/stdc++.h> 
@@ -458,7 +458,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to do range minimum query  
 // in O(1) time with O(n Log n) extra space  
 // and O(n Log n) preprocessing time 
@@ -567,7 +567,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 # Python3 program to do range minimum query  
 # in O(1) time with O(n Log n) extra space 
 # and O(n Log n) preprocessing time 
@@ -674,7 +674,7 @@ if __name__ == "__main__":
 
 ## C#
 
-```
+```cs
 // C# program to do range minimum query  
 // in O(1) time with O(n Log n) extra space  
 // and O(n Log n) preprocessing time 

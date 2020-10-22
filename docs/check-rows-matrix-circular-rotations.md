@@ -100,7 +100,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to check if all rows of a matrix  
 // are rotations of each other  
 class GFG  
@@ -172,7 +172,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 # Python3 program to check if all rows  
 # of a matrix are rotations of each other  
   
@@ -228,7 +228,7 @@ if __name__ == "__main__" :
 
 ## C#
 
-```
+```cs
 // C# program to check if all rows of a matrix  
 // are rotations of each other  
 using System; 
@@ -303,7 +303,7 @@ class GFG 
 
 ## PHP
 
-```
+```php
 <?php  
 // PHP program to check if all rows of a  
 // matrix are rotations of each other 

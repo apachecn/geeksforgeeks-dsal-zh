@@ -162,7 +162,7 @@ class Main
 
 ## Python
 
-```
+```py
 
 # Function to print element and NGE pair for all elements of list 
 def printNGE(arr): 
@@ -305,7 +305,7 @@ function printNGE($arr, $n)
 
 ## C++
 
-```
+```cpp
 
 // A Stack based C++ program to find next 
 // greater element for all array elements. 
@@ -611,7 +611,7 @@ public class NGE 
 
 ## Python
 
-```
+```py
 
 # Python program to print next greater element using stack 
 
@@ -689,7 +689,7 @@ printNGE(arr)
 
 ## C#
 
-```
+```cs
 
 using System; 
 

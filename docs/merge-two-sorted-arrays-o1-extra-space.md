@@ -96,7 +96,7 @@ int main(void)
 
 ## Java
 
-```
+```java
 // Java program program to merge two  
 // sorted arrays with O(1) extra space. 
   
@@ -143,7 +143,7 @@ class Test
 
 ## Python3
 
-```
+```py
 # Python program to merge 
 # two sorted arrays 
 # with O(1) extra space. 
@@ -197,7 +197,7 @@ for i in range(n):
 
 ## C#
 
-```
+```cs
 // C# program program to merge two  
 // sorted arrays with O(1) extra space.  
 using System; 
@@ -253,7 +253,7 @@ public class Test 
 
 ## PHP
 
-```
+```php
 <?php  
 // PHP program to merge two sorted arrays with O(1) extra space. 
    

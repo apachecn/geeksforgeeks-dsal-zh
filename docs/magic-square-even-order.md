@@ -206,7 +206,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to print Magic square 
 // of Doubly even order 
 import java.io.*; 
@@ -280,7 +280,7 @@ class GFG 
 
 ## Python
 
-```
+```py
 # Python program to print magic square of double order 
   
 def DoublyEven(n): 
@@ -332,7 +332,7 @@ DoublyEven(n)
 
 ## C#
 
-```
+```cs
 // C# program to print Magic square  
 // of Doubly even order  
 using System; 
@@ -434,7 +434,7 @@ public static void Main(string[] args)
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP Program to print Magic square 
 // of Doubly even order 

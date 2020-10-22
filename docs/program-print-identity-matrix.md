@@ -75,7 +75,7 @@ int main()
 
 ## C
 
-```
+```c
 // C program to print Identity Matrix 
 #include<stdio.h> 
   
@@ -109,7 +109,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to print Identity Matrix 
 class GFG { 
       
@@ -145,7 +145,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python code to print identity matrix 
   
 # Function to print identity matrix 
@@ -167,7 +167,7 @@ Identity(size)
 
 ## C#
 
-```
+```cs
 // C# program to print Identity Matrix 
 using System; 
   
@@ -205,7 +205,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to print  
 // Identity Matrix 
@@ -253,7 +253,7 @@ function Identity($num)
 
 ## C++
 
-```
+```cpp
 // CPP program to check if a given matrix is identity 
 #include<iostream> 
 using namespace std; 
@@ -293,7 +293,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to check if a given  
 // matrix is identity 
 class GFG { 
@@ -337,7 +337,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to check  
 # if a given matrix is identity 
 MAX = 100; 
@@ -369,7 +369,7 @@ else:
 
 ## C#
 
-```
+```cs
 // C# program to check if a given  
 // matrix is identity 
 using System; 
@@ -415,7 +415,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to check if a 
 // given matrix is identity 

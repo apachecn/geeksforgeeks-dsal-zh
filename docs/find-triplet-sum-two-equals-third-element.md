@@ -168,7 +168,7 @@ public class GFG {
 
 ## Python
 
-```
+```py
 
 # Python program to find three numbers 
 # such that sum of two makes the 

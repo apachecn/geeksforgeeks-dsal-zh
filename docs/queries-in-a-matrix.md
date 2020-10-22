@@ -152,7 +152,7 @@ int main()
 
 ## C++
 
-```
+```cpp
 // C++ implementation of program 
 #include<bits/stdc++.h> 
 using namespace std; 
@@ -229,7 +229,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java implementation of program  
 class GFG  
 { 
@@ -320,7 +320,7 @@ class GFG 
 
 ## C#
 
-```
+```cs
 // C# implementation of program  
 using System; 
   

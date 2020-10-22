@@ -207,7 +207,7 @@ Yes
 
 ## C++
 
-```
+```cpp
 
 // C++ program to check if an 
 // Array is sorted or not 
@@ -328,7 +328,7 @@ else:
 
 ## C#
 
-```
+```cs
 
 // Recursive approach to check if an 
 // Array is sorted or not 

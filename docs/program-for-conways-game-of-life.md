@@ -155,7 +155,7 @@ public class GameOfLife
 
 ## C#
 
-```
+```cs
 // A simple C# program to implement 
 // Game of Life 
 using System; 

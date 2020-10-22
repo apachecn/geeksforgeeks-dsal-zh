@@ -66,7 +66,7 @@ int main()
 
 ## Python
 
-```
+```py
 
 # Python program to count one's in a boolean array 
 

@@ -60,7 +60,7 @@ int main()
 
 ## Java
 
-```
+```java
 // java code to find count of Pairs with  
 // difference less than K. 
 import java.io.*; 
@@ -93,7 +93,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 code to find count of Pairs   
 # with difference less than K. 
   
@@ -117,7 +117,7 @@ print(countPairs(a, n, k), end = "")
 
 ## C#
 
-```
+```cs
 // C# code to find count of Pairs  
 //  with difference less than K. 
 using System; 
@@ -153,7 +153,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP code to find count of Pairs 
 // with difference less than K. 
@@ -193,7 +193,7 @@ function countPairs( $a, $n, $k)
 
 ## C++
 
-```
+```cpp
 // CPP code to find count of Pairs with  
 // difference less than K. 
 #include <bits/stdc++.h> 
@@ -232,7 +232,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java code to find count of Pairs with  
 // difference less than K. 
 import java.io.*; 
@@ -277,7 +277,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python code to find count of Pairs   
 # with difference less than K. 
   
@@ -307,7 +307,7 @@ print(countPairs(a, n, k), end = "")
 
 ## C#
 
-```
+```cs
 // C# code to find count of Pairs  
 // with difference less than K. 
 using System; 
@@ -354,7 +354,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP code to find count of  
 // Pairs with difference less than K. 

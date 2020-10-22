@@ -66,7 +66,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find the element occurring 
 // odd number of times 
 class OddOccurrence { 
@@ -101,7 +101,7 @@ class OddOccurrence {
 
 ## Python3
 
-```
+```py
 # Python program to find the element occurring 
 # odd number of times 
       
@@ -132,7 +132,7 @@ print(getOddOccurrence(arr, n))
 
 ## C#
 
-```
+```cs
 // C# program to find the element  
 // occurring odd number of times 
 using System; 
@@ -170,7 +170,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the  
 // element occurring odd 
@@ -220,7 +220,7 @@ echo(getOddOccurrence($arr, $n));
 
 ## C++
 
-```
+```cpp
 // C++ program to find the element   
 // occurring odd number of times  
 #include <bits/stdc++.h> 
@@ -269,7 +269,7 @@ int main() 
 
 ## Java
 
-```
+```java
 // Java program to find the element occurring odd  
 // number of times 
 import java.io.*; 
@@ -325,7 +325,7 @@ class OddOccurrence 
 
 ## Python3
 
-```
+```py
 # Python3 program to find the element   
 # occurring odd number of times  
    
@@ -361,7 +361,7 @@ print(getOddOccurrence(arr, n)) 
 
 ## C#
 
-```
+```cs
 // C# program to find the element occurring odd  
 // number of times 
 using System; 
@@ -431,7 +431,7 @@ public class OddOccurrence 
 
 ## C++
 
-```
+```cpp
 // C++ program to find the element 
 // occurring odd number of times 
 #include <bits/stdc++.h> 
@@ -463,7 +463,7 @@ int main()
 
 ## C
 
-```
+```c
 // C program to find the element 
 // occurring odd number of times 
 #include <stdio.h> 
@@ -493,7 +493,7 @@ int main()
 
 ## Java
 
-```
+```java
 //Java program to find the element occurring odd number of times 
   
 class OddOccurance  
@@ -522,7 +522,7 @@ class OddOccurance 
 
 ## Python3
 
-```
+```py
 # Python program to find the element occurring odd number of times 
   
 def getOddOccurrence(arr): 
@@ -545,7 +545,7 @@ print("%d" % getOddOccurrence(arr))
 
 ## C#
 
-```
+```cs
 // C# program to find the element 
 // occurring odd number of times 
 using System; 
@@ -578,7 +578,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the  
 // element occurring odd  

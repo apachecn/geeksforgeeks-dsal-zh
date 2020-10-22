@@ -86,7 +86,7 @@ int main()
 
 ## Java
 
-```
+```java
 // A Naive Recursive Java program to  
 // count paths with exactly 'k' coins   
   
@@ -133,7 +133,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # A Naive Recursive Python program to 
 # count paths with exactly 'k' coins 
   
@@ -173,7 +173,7 @@ print(pathCount(mat, k))
 
 ## C#
 
-```
+```cs
 using System; 
   
 // A Naive Recursive c# program to  
@@ -230,7 +230,7 @@ public class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // A Naive Recursive PHP program to 
 // count paths with exactly 'k' coins 
@@ -289,7 +289,7 @@ function pathCount($mat, $k)
 
 ## C++
 
-```
+```cpp
 // A Dynamic Programming based C++ program to count paths with 
 // exactly 'k' coins 
 #include <bits/stdc++.h> 
@@ -340,7 +340,7 @@ int main()
 
 ## Java
 
-```
+```java
 // A Dynamic Programming based JAVA program to count paths with 
 // exactly 'k' coins 
   
@@ -405,7 +405,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # A Dynamic Programming based Python3 program to 
 # count paths with exactly 'k' coins 
 R = 3
@@ -455,7 +455,7 @@ print(pathCountDP(mat, k))
 
 ## C#
 
-```
+```cs
 // A Dynamic Programming based C# program  
 // to count paths with exactly 'k' coins 
 using System; 

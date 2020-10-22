@@ -34,7 +34,7 @@ public class UniqueInArray2 {
 
 ## C#
 
-```
+```cs
 // C# implementation of the approach 
 using System; 
 using System.Collections.Generic;  
@@ -86,7 +86,7 @@ Output: 1
 
 ## C++
 
-```
+```cpp
 // C++ program to print all distinct elements in a given array 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -120,7 +120,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to print all distinct 
 // elements in a given array 
 import java.io.*; 
@@ -161,7 +161,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # python program to print all distinct 
 # elements in a given array 
   
@@ -193,7 +193,7 @@ printDistinct(arr, n)
 
 ## C#
 
-```
+```cs
 // C# program to print all distinct 
 // elements in a given array 
 using System; 
@@ -238,7 +238,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to print all distinct 
 // elements in a given array 
@@ -282,7 +282,7 @@ function printDistinct($arr, $n)
 
 ## C++
 
-```
+```cpp
 // C++ program to print all distinct elements in a given array 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -316,7 +316,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to print all distinct  
 // elements in a given array 
 import java.io.*; 
@@ -359,7 +359,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 # Python program to print all distinct  
 # elements in a given array 
   
@@ -392,7 +392,7 @@ printDistinct(arr, n);
 
 ## C#
 
-```
+```cs
 // C# program to print all distinct  
 // elements in a given array 
 using System; 
@@ -436,7 +436,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to print all distinct 
 // elements in a given array 
@@ -484,7 +484,7 @@ function printDistinct( $arr, $n)
 
 ## C++
 
-```
+```cpp
 /* CPP program to print all distinct elements  
    of a given array */
 #include<bits/stdc++.h> 
@@ -521,7 +521,7 @@ int main ()
 
 ## Java
 
-```
+```java
 /* Java program to print all distinct elements of a given array */
 import java.util.*; 
   
@@ -556,7 +556,7 @@ class Main
 
 ## Python3
 
-```
+```py
 # Python3 program to print all distinct elements  
 # of a given array  
   
@@ -585,7 +585,7 @@ printDistinct(arr, n);
 
 ## C#
 
-```
+```cs
 // C# program to print all distinct 
 // elements of a given array  
 using System; 

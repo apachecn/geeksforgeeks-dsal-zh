@@ -126,7 +126,7 @@ int main()
 
 ## Java
 
-```
+```java
 class min_steps 
 { 
     static int minInitialPoints(int points[][],int R,int C) 
@@ -177,7 +177,7 @@ class min_steps
 
 ## Python3
 
-```
+```py
 # Python3 program to find minimum initial 
 # points to reach destination 
 import math as mt 
@@ -236,7 +236,7 @@ print("Minimum Initial Points Required:", 
 
 ## C#
 
-```
+```cs
 // C# program Minimum Initial Points 
 // to Reach Destination 
 using System; 
@@ -303,7 +303,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find minimum initial 
 // points to reach destination 

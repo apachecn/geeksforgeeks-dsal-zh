@@ -157,7 +157,7 @@ Popped element from stack2 is : 15
 
 ## C++
 
-```
+```cpp
 #include <iostream> 
 #include <stdlib.h> 
   
@@ -255,7 +255,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to implement two stacks in a 
 // single array 
 class TwoStacks { 
@@ -354,7 +354,7 @@ class TwoStacks {
 
 ## Python
 
-```
+```py
 # Python Script to Implement two stacks in a list 
 class twoStacks: 
       
@@ -425,7 +425,7 @@ print("Popped element from stack2 is " + str(ts.pop2()))
 
 ## C#
 
-```
+```cs
 // C# program to implement two 
 // stacks in a single array 
 using System; 
@@ -528,7 +528,7 @@ public class TwoStacks {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to implement two  
 // stacks in a single array      

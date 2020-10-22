@@ -171,7 +171,7 @@ class GFG
 
 ## Python
 
-```
+```py
 
 # Python program to find number of operations 
 # to make an array palindrome 

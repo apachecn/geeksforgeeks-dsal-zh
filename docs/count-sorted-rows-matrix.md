@@ -95,7 +95,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find number of sorted rows 
   
 class GFG { 
@@ -163,7 +163,7 @@ class GFG {
 
 ## Python
 
-```
+```py
 # Python3 program to find number  
 # of sorted rows 
 def sortedCount(mat, r, c): 
@@ -224,7 +224,7 @@ print(sortedCount(mat, m, n))
 
 ## C#
 
-```
+```cs
 // C# program to find number of sorted rows 
 using System; 
   
@@ -304,7 +304,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find  
 // number of sorted rows 

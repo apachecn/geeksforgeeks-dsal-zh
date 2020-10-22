@@ -257,7 +257,7 @@ Yes
 
 ## C++
 
-```
+```cpp
 
 // An efficient approach based CPP program to 
 // find if there is a rectangle with 1 as 
@@ -326,7 +326,7 @@ int main()
 
 ## Java
 
-```
+```java
 // An efficient approach based Java program to
 // find if there is a rectangle with 1 as
 // corners.
@@ -402,7 +402,7 @@ public class FindRectangle {
 
 ## Python3
 
-```
+```py
 # An efficient approach based Python program 
 # to find if there is a rectangle with 1 as 
 # corners. 
@@ -466,7 +466,7 @@ if __name__ == '__main__':
 
 ## C#
 
-```
+```cs
 // An efficient approach based C# program to
 // find if there is a rectangle with 1 as
 // corners.

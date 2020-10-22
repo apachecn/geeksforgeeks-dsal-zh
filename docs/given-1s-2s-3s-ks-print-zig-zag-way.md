@@ -46,7 +46,7 @@ and number of 1's are 2
 
 ## C++
 
-```
+```cpp
 // CPP program to print  given number of 1's,  
 // 2's, 3's ....k's in  zig-zag way. 
 #include <bits/stdc++.h> 
@@ -131,7 +131,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to print given 
 // number of 1's, 2's, 3's ....k's  
 // in zig-zag way. 
@@ -296,7 +296,7 @@ ZigZag(rows, columns, Numbers)
 
 ## C#
 
-```
+```cs
 // C# program to print given 
 // number of 1's, 2's, 3's ....k's  
 // in zig-zag way. 
@@ -388,7 +388,7 @@ public class GfG{
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to print given number of 1's,  
 // 2's, 3's ....k's in zig-zag way. 

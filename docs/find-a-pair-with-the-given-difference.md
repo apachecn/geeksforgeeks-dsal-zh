@@ -77,7 +77,7 @@ int main() 
 
 ## C
 
-```
+```c
 // C program to find a pair with the given difference 
 #include <stdio.h> 
   
@@ -119,7 +119,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find a pair with the given difference 
 import java.io.*; 
   
@@ -165,7 +165,7 @@ class PairDifference
 
 ## Python
 
-```
+```py
 # Python program to find a pair with the given difference 
   
 # The function assumes that the array is sorted 
@@ -200,7 +200,7 @@ findPair(arr, n)
 
 ## C#
 
-```
+```cs
 // C# program to find a pair with the given difference 
 using System; 
   
@@ -250,7 +250,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php  
 // PHP program to find a pair with 
 // the given difference 

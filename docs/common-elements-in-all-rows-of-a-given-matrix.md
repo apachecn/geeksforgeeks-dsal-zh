@@ -95,7 +95,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java Program to prints common element in all 
 // rows of matrix 
 import java.util.*; 
@@ -158,7 +158,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 # A Program to prints common element  
 # in all rows of matrix 
   
@@ -209,7 +209,7 @@ printCommonElements(mat)
 
 ## C#
 
-```
+```cs
 // C# Program to print common element in all 
 // rows of matrix to another. 
 using System;  

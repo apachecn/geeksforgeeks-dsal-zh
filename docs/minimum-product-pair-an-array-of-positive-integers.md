@@ -89,7 +89,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to calculate minimum 
 // product of a pair 
 import java.util.*; 
@@ -141,7 +141,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python program to 
 # calculate minimum 
 # product of a pair 
@@ -188,7 +188,7 @@ print(printMinimumProduct(a,n))
 
 ## C#
 
-```
+```cs
 // C# program to calculate minimum 
 // product of a pair 
 using System; 
@@ -249,7 +249,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to calculate minimum 
 // product of a pair 

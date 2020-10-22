@@ -189,7 +189,7 @@ class Profit
 
 ## Python
 
-```
+```py
 
 # Returns maximum profit with two transactions on a given  
 # list of stock prices price[0..n-1] 

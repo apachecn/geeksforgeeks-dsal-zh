@@ -526,7 +526,7 @@ print("The maximum average subarray of length", k,
 
 ## C#
 
-```
+```cs
 
 // C# program to find maximum average  
 // subarray of given length. 

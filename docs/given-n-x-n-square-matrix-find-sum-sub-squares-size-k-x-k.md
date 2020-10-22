@@ -90,7 +90,7 @@ int main()
 
 ## Java
 
-```
+```java
 // A simple Java program to find sum of all  
 // subsquares of size k x k 
 class GFG 
@@ -205,7 +205,7 @@ if __name__ == "__main__":
 
 ## C#
 
-```
+```cs
 // A simple C# program to find sum of all  
 // subsquares of size k x k 
 using System; 
@@ -266,7 +266,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // A simple PHP program to find  
 // sum of all subsquares of size 
@@ -341,7 +341,7 @@ function printSumSimple( $mat, $k)
 
 ## C++
 
-```
+```cpp
 // An efficient C++ program to find sum of all subsquares of size k x k 
 #include <iostream> 
 using namespace std; 
@@ -416,7 +416,7 @@ int main()
 
 ## Java
 
-```
+```java
 // An efficient Java program to find 
 // sum of all subsquares of size k x k 
 import java.io.*; 
@@ -498,7 +498,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 # An efficient Python3 program to find sum  
 # of all subsquares of size k x k  
   
@@ -570,7 +570,7 @@ printSumTricky(mat, k) 
 
 ## C#
 
-```
+```cs
 // An efficient C# program to find 
 // sum of all subsquares of size k x k 
 using System; 
@@ -663,7 +663,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // An efficient PHP program to 
 // find sum of all subsquares 

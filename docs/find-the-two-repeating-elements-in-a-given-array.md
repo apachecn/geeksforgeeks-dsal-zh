@@ -49,7 +49,7 @@ int main()
 
 ## C
 
-```
+```c
 #include<stdio.h> 
 #include<stdlib.h> 
 void printRepeating(int arr[], int size) 
@@ -74,7 +74,7 @@ int main()
 
 ## Java
 
-```
+```java
 class RepeatElement  
 { 
     void printRepeating(int arr[], int size)  
@@ -103,7 +103,7 @@ class RepeatElement 
 
 ## Python3
 
-```
+```py
 # Python3 program to Find the two 
 # repeating elements in a given array 
   
@@ -126,7 +126,7 @@ printRepeating(arr, arr_size)
 
 ## C#
 
-```
+```cs
 using System; 
   
 class GFG 
@@ -161,7 +161,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to Find the two  
 // repeating elements in  
@@ -206,7 +206,7 @@ Repeating elements are 4 2
 
 ## C++
 
-```
+```cpp
 // C++ implementation of above approach 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -240,7 +240,7 @@ int main() 
 
 ## C
 
-```
+```c
 #include<stdio.h> 
 #include<stdlib.h> 
   
@@ -271,7 +271,7 @@ int main()
 
 ## Java
 
-```
+```java
 class RepeatElement 
 { 
     void printRepeating(int arr[], int size)  
@@ -301,7 +301,7 @@ class RepeatElement
 
 ## Python3
 
-```
+```py
 # Python3 code for Find the two repeating  
 # elements in a given array 
   
@@ -328,7 +328,7 @@ printRepeating(arr, arr_size)
 
 ## C#
 
-```
+```cs
 // C# program to Find the two 
 // repeating elements in a given array 
 using System; 
@@ -367,7 +367,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to Find the two 
 // repeating elements in a given array 
@@ -439,7 +439,7 @@ X – Y = 2
 
 ## C++
 
-```
+```cpp
 #include <bits/stdc++.h> 
 using namespace std;  
   
@@ -491,7 +491,7 @@ int main() 
 
 ## C
 
-```
+```c
 #include<stdio.h> 
 #include<stdlib.h> 
 #include<math.h> 
@@ -542,7 +542,7 @@ int main()
 
 ## Java
 
-```
+```java
 class RepeatElement 
 { 
     void printRepeating(int arr[], int size)  
@@ -603,7 +603,7 @@ class RepeatElement
 
 ## Python3
 
-```
+```py
 # Python3 code for Find the two repeating  
 # elements in a given array 
 import math 
@@ -657,7 +657,7 @@ printRepeating(arr, arr_size)
 
 ## C#
 
-```
+```cs
 using System; 
   
 class GFG 
@@ -723,7 +723,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
   
 /* function to get factorial of n */

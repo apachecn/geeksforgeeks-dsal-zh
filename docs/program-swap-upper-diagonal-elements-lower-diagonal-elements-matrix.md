@@ -83,7 +83,7 @@ int main()
 
 ## Java
 
-```
+```java
 // java Program to implement matrix 
 // for swapping the upper diagonal 
 // elements with lower diagonal  
@@ -177,7 +177,7 @@ swapUpperToLower(arr);
 
 ## C#
 
-```
+```cs
 // C# Program to implement matrix 
 // for swapping the upper diagonal 
 // elements with lower diagonal  
@@ -232,7 +232,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP Program to implement matrix 
 // for swapping the upper diagonal 

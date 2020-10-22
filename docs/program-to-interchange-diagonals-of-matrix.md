@@ -74,7 +74,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to interchange  
 // the diagonals of matrix 
 import java.io.*; 
@@ -119,7 +119,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 # Python program to interchange  
 # the diagonals of matrix 
 N = 3; 
@@ -149,7 +149,7 @@ if __name__ == '__main__':
 
 ## C#
 
-```
+```cs
 // C# program to interchange  
 // the diagonals of matrix 
 using System; 

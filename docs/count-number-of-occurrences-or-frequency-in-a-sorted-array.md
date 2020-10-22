@@ -58,7 +58,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to count occurrences  
 // of an element 
   
@@ -86,7 +86,7 @@ class Main
 
 ## Python3
 
-```
+```py
 # Python3 program to count  
 # occurrences of an element 
   
@@ -108,7 +108,7 @@ print (countOccurrences(arr, n, x))
 
 ## C#
 
-```
+```cs
 // C# program to count occurrences  
 // of an element 
 using System; 
@@ -145,7 +145,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to count occurrences 
 // of an element 
@@ -185,7 +185,7 @@ function countOccurrences($arr, $n, $x)
 
 ## C++
 
-```
+```cpp
 // C++ program to count occurrences of an element 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -251,7 +251,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to count  
 // occurrences of an element 
 class GFG  
@@ -413,7 +413,7 @@ print(countOccurrences(arr, n, x))
 
 ## C#
 
-```
+```cs
 // C# program to count  
 // occurrences of an element 
 using System; 
@@ -504,7 +504,7 @@ class GFG 
 
 ## PHP
 
-```
+```php
 <?php  
 // PHP program to count  
 // occurrences of an element 
@@ -603,7 +603,7 @@ echo countOccurrences($arr, $n, $x);
 
 ## C++
 
-```
+```cpp
 // C++ program to count occurrences of an element 
 // in a sorted array. 
 # include <bits/stdc++.h> 
@@ -643,7 +643,7 @@ int main()
 
 ## C
 
-```
+```c
 # include <stdio.h> 
   
 /* if x is present in arr[] then returns  
@@ -720,7 +720,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to count occurrences  
 // of an element 
   
@@ -806,7 +806,7 @@ class Main
 
 ## Python3
 
-```
+```py
 # Python3 program to count 
 # occurrences of an element 
   
@@ -876,7 +876,7 @@ print ("%d occurs %d times "%(x, c))
 
 ## C#
 
-```
+```cs
 // C# program to count occurrences  
 // of an element 
 using System; 

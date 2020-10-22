@@ -48,7 +48,7 @@ int main()
 
 ## Java
 
-```
+```java
 class LeadersInArray  
 { 
     /*Java Function to print leaders in an array */
@@ -80,7 +80,7 @@ class LeadersInArray 
 
 ## Python
 
-```
+```py
 # Python Function to print leaders in array  
   
 def printLeaders(arr,size):  
@@ -101,7 +101,7 @@ printLeaders(arr, len(arr)) 
 
 ## C#
 
-```
+```cs
 // C# program to print 
 // leaders in array 
 using System; 
@@ -141,7 +141,7 @@ class GFG 
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP Function to print 
 // leaders in an array  
@@ -184,7 +184,7 @@ printLeaders($arr, $n);
 
 ## C++
 
-```
+```cpp
 #include <iostream> 
 using namespace std; 
   
@@ -218,7 +218,7 @@ int main()
 
 ## Java
 
-```
+```java
 class LeadersInArray  
 { 
     /* Java Function to print leaders in an array */
@@ -252,7 +252,7 @@ class LeadersInArray 
 
 ## Python
 
-```
+```py
 # Python function to print leaders in array 
 def printLeaders(arr, size): 
      
@@ -272,7 +272,7 @@ printLeaders(arr, len(arr))
 
 ## C#
 
-```
+```cs
 // C# program to find Leaders in an array 
 using System; 
   
@@ -313,7 +313,7 @@ class LeadersInArray {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP Function to print 
 // leaders in an array  

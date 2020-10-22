@@ -99,7 +99,7 @@ int main() {
 
 ## Java
 
-```
+```java
 // Java program to rotate a matrix  
 // right by k times 
   
@@ -170,7 +170,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python program to rotate  
 # a matrix right by k times 
   
@@ -239,7 +239,7 @@ displayMatrix()
 
 ## C#
 
-```
+```cs
 // C# program to rotate a   
 // matrix right by k times 
 using System; 
@@ -313,7 +313,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to rotate  
 // a matrix right by k times 

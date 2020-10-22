@@ -50,7 +50,7 @@ void insertionSort(int A[], int size)
 
 ## Java
 
-```
+```java
 /* Function to sort an array using insertion sort*/
 static void insertionSort(int A[], int size)  
 {  
@@ -75,7 +75,7 @@ for (i = 1; i < size; i++) 
 
 ## Python3
 
-```
+```py
 # Function to sort an array using 
 # insertion sort 
 def insertionSort(A, size): 
@@ -96,7 +96,7 @@ for i in range(size):
 
 ## C#
 
-```
+```cs
 /* C# Function to sort an array using insertion sort*/
 static void insertionSort(int A[], int size)  
 {  
@@ -130,7 +130,7 @@ static void insertionSort(int A[], int size) 
 
 ## C++
 
-```
+```cpp
 // A STL based C++ program to sort a nearly sorted array. 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -185,7 +185,7 @@ int main()
 
 ## Java
 
-```
+```java
 // A java program to sort a nearly sorted array 
 import java.util.Iterator; 
 import java.util.PriorityQueue; 
@@ -247,7 +247,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 # A Python3 program to sort a 
 # nearly sorted array. 
   

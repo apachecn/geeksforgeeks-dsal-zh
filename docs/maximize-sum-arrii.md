@@ -62,7 +62,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find the 
 // maximum value of i*arr[i] 
 import java.util.*; 
@@ -97,7 +97,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python program to find the 
 # maximum value of i*arr[i] 
 def maxSum(arr,n): 
@@ -124,7 +124,7 @@ print(maxSum(arr,n))
 
 ## C#
 
-```
+```cs
 // C# program to find the 
 // maximum value of i*arr[i] 
 using System; 
@@ -163,7 +163,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the  
 // maximum value of i*arr[i] 

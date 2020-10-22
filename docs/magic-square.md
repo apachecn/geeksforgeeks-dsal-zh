@@ -83,7 +83,7 @@ Steps:
 
 ## C++
 
-```
+```cpp
 // C++ program to generate odd sized magic squares
 #include <bits/stdc++.h>
 using namespace std;
@@ -161,7 +161,7 @@ int main()
 
 ## C
 
-```
+```c
 // C program to generate odd sized magic squares
 #include <stdio.h>
 #include <string.h>
@@ -231,7 +231,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to generate odd sized magic squares
 import java.io.*;
  
@@ -305,7 +305,7 @@ class GFG {
 
 ## Python
 
-```
+```py
 # Python program to generate
 # odd sized magic squares
 # A function to generate odd
@@ -381,7 +381,7 @@ generateSquare(n)
 
 ## C#
 
-```
+```cs
 // C# program to generate odd sized magic squares
 using System;
  
@@ -459,7 +459,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php
 // php program to generate odd sized
 // magic squares

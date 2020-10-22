@@ -42,7 +42,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find minimum (or maximum) 
 // element in an array.
 import java.io.*;
@@ -84,7 +84,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find minimum
 # (or maximum) element in an array
  
@@ -114,7 +114,7 @@ print ("Maximum element of array:", getMax(arr, n))
 
 ## C#
 
-```
+```cs
 // C# program to find 
 // minimum (or maximum) 
 // element in an array.
@@ -161,7 +161,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php
 // PHP program to find minimum 
 // (or maximum) element in an
@@ -208,7 +208,7 @@ Maximum element of array: 1234
 
 ## C++
 
-```
+```cpp
 // CPP program to find 
 // minimum (or maximum) element
 // in an array.
@@ -247,7 +247,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find minimum 
 // (or maximum) element
 // in an array.
@@ -289,7 +289,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 # Python3 program to find minimum 
 # (or maximum) element in an array.
 def getMin(arr, n):
@@ -323,7 +323,7 @@ print("Maximum element of array: ",
 
 ## C#
 
-```
+```cs
 // C# program to find minimum 
 // (or maximum) element 
 // in an array.
@@ -378,7 +378,7 @@ Max of array: 1234
 
 ## C++
 
-```
+```cpp
 // CPP program to find minimum (or maximum) element 
 // in an array. 
 #include <bits/stdc++.h> 
@@ -406,7 +406,7 @@ int main()
 
 ## Java
 
-```
+```java
 import java.util.Arrays;
  
 // Java program to find minimum (or maximum) element 
@@ -436,7 +436,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find minimum 
 # (or maximum) element 
 # in an array. 
@@ -461,7 +461,7 @@ if __name__=='__main__':
 
 ## C#
 
-```
+```cs
 // C# program to find minimum 
 // (or maximum) element in an array. 
 using System;
@@ -495,7 +495,7 @@ public static void Main(String[] args)
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find minimum (or maximum) 
 // element in an array. 

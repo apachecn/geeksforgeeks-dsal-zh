@@ -117,7 +117,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find missing element 
 // from same arrays 
 // (except one missing element) 
@@ -199,7 +199,7 @@ class MissingNumber {
 
 ## Python3
 
-```
+```py
 # Python3 program to find missing 
 # element from same arrays  
 # (except one missing element) 
@@ -273,7 +273,7 @@ findMissing(arr1, arr2, M, N)
 
 ## C#
 
-```
+```cs
 // C# program to find missing element from  
 // same arrays (except one missing element) 
 using System; 
@@ -354,7 +354,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find missing  
 // element from same arrays  

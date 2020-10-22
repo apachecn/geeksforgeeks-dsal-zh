@@ -228,7 +228,7 @@ MULTIPLES of 2 and 5:
 
 ## C++
 
-```
+```cpp
 
 // CPP code to for marking multiples 
 #include <bits/stdc++.h> 
@@ -346,7 +346,7 @@ class GFG 
 
 ## C#
 
-```
+```cs
 
 // C# code to for marking multiples 
 using System; 

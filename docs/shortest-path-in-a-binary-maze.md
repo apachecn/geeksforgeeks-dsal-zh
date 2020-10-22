@@ -50,7 +50,7 @@ Shortest Path is 11
 
 ## C++
 
-```
+```cpp
 // C++ program to find the shortest path between
 // a given source cell to a destination cell.
 #include <bits/stdc++.h>
@@ -180,7 +180,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find the shortest 
 // path between a given source cell 
 // to a destination cell.
@@ -326,7 +326,7 @@ public static void main(String[] args)
 
 ## Python
 
-```
+```py
 # Python program to find the shortest
 # path between a given source cell 
 # to a destination cell.
@@ -436,7 +436,7 @@ main()
 
 ## C#
 
-```
+```cs
 // C# program to find the shortest 
 // path between a given source cell 
 // to a destination cell.

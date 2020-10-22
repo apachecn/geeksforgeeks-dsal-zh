@@ -82,7 +82,7 @@ int main()
 
 ## C
 
-```
+```c
 // C program to find equilibrium 
 // index of an array 
   
@@ -131,7 +131,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find equilibrium 
 // index of an array 
   
@@ -179,7 +179,7 @@ class EquilibriumIndex {
 
 ## Python3
 
-```
+```py
 # Python program to find equilibrium  
 # index of an array 
   
@@ -220,7 +220,7 @@ print (equilibrium(arr))
 
 ## C#
 
-```
+```cs
 // C# program to find equilibrium 
 // index of an array 
   
@@ -279,7 +279,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php  
 // PHP program to find equilibrium  
 // index of an array  
@@ -355,7 +355,7 @@ echo equilibrium($arr, $arr_size); 
 
 ## C++
 
-```
+```cpp
 // C++ program to find equilibrium  
 // index of an array  
 #include <bits/stdc++.h> 
@@ -398,7 +398,7 @@ int main() 
 
 ## C
 
-```
+```c
 // C program to find equilibrium 
 // index of an array 
   
@@ -441,7 +441,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find equilibrium 
 // index of an array 
   
@@ -484,7 +484,7 @@ class EquilibriumIndex {
 
 ## Python3
 
-```
+```py
 # Python program to find the equilibrium 
 # index of an array 
   
@@ -518,7 +518,7 @@ print ('First equilibrium index is ',
 
 ## C#
 
-```
+```cs
 // C# program to find the equilibrium 
 //  index of an array 
   
@@ -569,7 +569,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find equilibrium  
 // index of an array  

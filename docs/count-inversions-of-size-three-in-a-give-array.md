@@ -107,7 +107,7 @@ class Inversion{
 
 ## Python
 
-```
+```py
 
 # A simple python O(n^3) program 
 # to count inversions of size 3 
@@ -250,7 +250,7 @@ Inversion Count : 4
 
 ## C++
 
-```
+```cpp
 
 // A O(n^2) C++  program to count inversions of size 3 
 #include<bits/stdc++.h> 
@@ -391,7 +391,7 @@ print("Inversion Count :",getInvCount(arr, n))
 
 ## C#
 
-```
+```cs
 
 // A O(n^2) Java program to count inversions 
 // of size 3 
@@ -526,7 +526,7 @@ Inversion Count : 4
 
 ## C
 
-```
+```c
 // C++ program to count inversions of size three using  
 // Binary Indexed Tree 
 #include<bits/stdc++.h> 
@@ -647,7 +647,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to count inversions of size three using  
 // Binary Indexed Tree 
 import java.util.Arrays; 
@@ -775,7 +775,7 @@ class BinaryTree {
 
 ## C#
 
-```
+```cs
 // C# program to count inversions 
 // of size three using Binary Indexed Tree 
 using System;  
@@ -943,7 +943,7 @@ public static void Main()
 
 ## Python3
 
-```
+```py
 # Python3 program to count inversions of  
 # size three using Binary Indexed Tree  
   

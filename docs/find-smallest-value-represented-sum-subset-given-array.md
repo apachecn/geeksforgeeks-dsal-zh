@@ -87,7 +87,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find the smallest positive value that cannot be 
 // represented as sum of subsets of a given sorted array 
 class FindSmallestInteger  
@@ -134,7 +134,7 @@ class FindSmallestInteger 
 
 ## Python3
 
-```
+```py
 # Python3 program to find the smallest 
 # positive value that cannot be 
 # represented as sum of subsets  
@@ -181,7 +181,7 @@ print(findSmallest(arr4, n4))
 
 ## C#
 
-```
+```cs
 // C# program to find the smallest 
 // positive value that cannot be 
 // represented as sum of subsets  
@@ -237,7 +237,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the smallest 
 // positive value that cannot be 

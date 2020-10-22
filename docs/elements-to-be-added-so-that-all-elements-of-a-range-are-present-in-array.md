@@ -65,7 +65,7 @@ int main()
 
 ## Java
 
-```
+```java
 // java program for above implementation 
 import java.io.*; 
 import java.util.*; 
@@ -106,7 +106,7 @@ public class GFG {
 
 ## Python3
 
-```
+```py
 # python program for above implementation 
   
 # Function to count numbers to be added 
@@ -136,7 +136,7 @@ print(countNum(arr, n))
 
 ## C#
 
-```
+```cs
 // C# program for above implementation 
 using System; 
   
@@ -176,7 +176,7 @@ public class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program for  
 // above implementation 
@@ -230,7 +230,7 @@ echo countNum($arr, $n) ;
 
 ## C++
 
-```
+```cpp
 // C++ program for above implementation 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -272,7 +272,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java implementation of the approach 
 import java.util.HashSet; 
   
@@ -321,7 +321,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 # Function to count numbers to be added 
 def countNum(arr, n): 
   
@@ -355,7 +355,7 @@ print(countNum(arr, n))
 
 ## C#
 
-```
+```cs
 // C# implementation of the approach 
 using System; 
 using System.Collections.Generic; 

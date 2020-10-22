@@ -313,7 +313,7 @@ class SortedSubsequence {
 
 ## Python
 
-```
+```py
 
 # Python program to fund a sorted 
 # sub-sequence of size 3 

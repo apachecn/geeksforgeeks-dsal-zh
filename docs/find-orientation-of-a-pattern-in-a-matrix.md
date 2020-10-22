@@ -162,7 +162,7 @@ int main() 
 
 ## C
 
-```
+```c
 // C program for finding orientation of the pattern 
 // using KMP pattern searching algorithm 
 #include<stdio.h> 
@@ -297,7 +297,7 @@ int main()
 
 ## Python
 
-```
+```py
 # Python3 program for finding orientation of the pattern 
 # using KMP pattern searching algorithm 
 N = 5

@@ -96,7 +96,7 @@ int main()
 
 ## C
 
-```
+```c
 // C program to find union of 
 // two sorted arrays 
 #include <stdio.h> 
@@ -140,7 +140,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find union of 
 // two sorted arrays 
   
@@ -185,7 +185,7 @@ class FindUnion {
 
 ## Python
 
-```
+```py
 # Python program to find union of 
 # two sorted arrays 
 # Function prints union of arr1[] and arr2[] 
@@ -226,7 +226,7 @@ printUnion(arr1, arr2, m, n)
 
 ## C#
 
-```
+```cs
 // C# program to find union of 
 // two sorted arrays 
   
@@ -278,7 +278,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find union of 
 // two sorted arrays 
@@ -344,7 +344,7 @@ printUnion($arr1, $arr2, $m, $n);
 
 ## Java
 
-```
+```java
 // Java program to find union of two 
 // sorted arrays (Handling Duplicates) 
 class FindUnion { 
@@ -416,7 +416,7 @@ class FindUnion {
 
 ## Python3
 
-```
+```py
 # Python3 program to find union of two  
 # sorted arrays (Handling Duplicates)  
 def UnionArray(arr1, arr2):  
@@ -482,7 +482,7 @@ if __name__ == "__main__": 
 
 ## C#
 
-```
+```cs
 // C# program to find union of two 
 // sorted arrays (Handling Duplicates) 
 using System; 
@@ -576,7 +576,7 @@ class GFG {
 
 ## C++
 
-```
+```cpp
 // C++ program to find intersection of 
 // two sorted arrays 
 #include <bits/stdc++.h> 
@@ -620,7 +620,7 @@ int main()
 
 ## C
 
-```
+```c
 // C program to find intersection of 
 // two sorted arrays 
 #include <stdio.h> 
@@ -659,7 +659,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find intersection of 
 // two sorted arrays 
   
@@ -695,7 +695,7 @@ class FindIntersection {
 
 ## Python
 
-```
+```py
 # Python program to find intersection of 
 # two sorted arrays 
 # Function prints Intersection of arr1[] and arr2[] 
@@ -725,7 +725,7 @@ printIntersection(arr1, arr2, m, n)
 
 ## C#
 
-```
+```cs
 // C# program to find Intersection of 
 // two sorted arrays 
   
@@ -770,7 +770,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find intersection of 
 // two sorted arrays 
@@ -830,7 +830,7 @@ printIntersection($arr1, $arr2, $m, $n);
 
 ## Python3
 
-```
+```py
 # Python3 program to find Intersection of two 
 # Sorted Arrays (Handling Duplicates) 
 def IntersectionArray(a, b, n, m): 

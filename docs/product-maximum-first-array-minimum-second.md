@@ -124,7 +124,7 @@ class GfG
 
 ## Python
 
-```
+```py
 
 # A Python program to find the to 
 # calculate the product of max 
@@ -256,7 +256,7 @@ echo minMaxProduct($arr1, $arr2, 
 
 ## C++
 
-```
+```cpp
 
 // C++ program to find the to  
 // calculate the product of  
@@ -323,7 +323,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to calculate the 
 // product of max element of first  
 // array and min element of second array 
@@ -399,7 +399,7 @@ class GfG
 
 ## Python3
 
-```
+```py
 # Python3 program to find the to  
 # calculate the product of  
 # max element of first array  
@@ -457,7 +457,7 @@ print(minMaxProduct(arr1, arr2, n1, n2))
 
 ## C#
 
-```
+```cs
 // C# program to find the to  
 // calculate the product of  
 // max element of first array  
@@ -534,7 +534,7 @@ class GfG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the  
 // to calculate the product 

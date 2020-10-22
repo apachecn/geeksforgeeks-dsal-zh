@@ -68,7 +68,7 @@ int main() 
 
 ## Java
 
-```
+```java
 /* Dynamic Programming Java  
    implementation of Maximum Sum 
    Increasing Subsequence (MSIS) 
@@ -122,7 +122,7 @@ class GFG
 
 ## Python
 
-```
+```py
 # Dynamic Programming bsed Python  
 # implementation of Maximum Sum  
 # Increasing Subsequence (MSIS) 
@@ -169,7 +169,7 @@ print("Sum of maximum sum increasing " + 
 
 ## C#
 
-```
+```cs
 // Dynamic Programming C# implementation 
 // of Maximum Sum Increasing Subsequence 
 // (MSIS) problem  
@@ -222,7 +222,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // Dynamic Programming implementation 
 // of Maximum Sum Increasing 

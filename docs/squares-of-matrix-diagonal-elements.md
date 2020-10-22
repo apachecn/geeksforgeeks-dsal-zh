@@ -346,7 +346,7 @@ Diagonal two : 49  49  25
 
 ## C++
 
-```
+```cpp
 
 // Efficient CPP program to print squares of 
 // diagonal elements. 
@@ -397,7 +397,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Efficient JAVA program to print squares of 
 // diagonal elements. 
 import java.io.*; 
@@ -450,7 +450,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 # Efficient Python program  
 # to print squares of  
 # diagonal elements. 
@@ -501,7 +501,7 @@ diagonalsquare(mat, 3, 3)
 
 ## C#
 
-```
+```cs
 // Efficient C# program to print  
 // squares of diagonal elements. 
 using System; 
@@ -561,7 +561,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // Efficient PHP program to print squares of 
 // diagonal elements. 

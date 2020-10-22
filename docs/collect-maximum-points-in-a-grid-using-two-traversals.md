@@ -74,7 +74,7 @@ result  +=  max { // Max of 9 cases
 
 ## C++
 
-```
+```cpp
 // A Memoization based program to find maximum collection 
 // using two traversals of a grid 
 #include<bits/stdc++.h> 
@@ -159,7 +159,7 @@ int main()
 
 ## Java
 
-```
+```java
 // A Memoization based program to find maximum collection 
 // using two traversals of a grid 
 class GFG  
@@ -270,7 +270,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 # A Memoization based program to find maximum collection 
 # using two traversals of a grid 
   
@@ -364,7 +364,7 @@ if __name__=='__main__':
 
 ## C#
 
-```
+```cs
 // A Memoization based program to find maximum collection 
 // using two traversals of a grid 
 using System; 

@@ -98,7 +98,7 @@ int main()
 
 ## Java
 
-```
+```java
 // A Simple Java program to find  
 // minimum average subarray 
   
@@ -155,7 +155,7 @@ class Test {
 
 ## Python3
 
-```
+```py
 # Python3 program to find 
 # minimum average subarray 
   
@@ -207,7 +207,7 @@ findMinAvgSubarray(arr, n, k)
 
 ## C#
 
-```
+```cs
 // A Simple C# program to find  
 // minimum average subarray 
 using System; 
@@ -267,7 +267,7 @@ class Test {
 
 ## PHP
 
-```
+```php
 <?php 
 // A Simple PHP program to find  
 // minimum average subarray 

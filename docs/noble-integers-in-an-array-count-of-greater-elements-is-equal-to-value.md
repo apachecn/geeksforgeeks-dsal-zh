@@ -73,7 +73,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find Noble elements 
 // in an array. 
 import java.util.ArrayList; 
@@ -117,7 +117,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find Noble 
 # elements in an array. 
   
@@ -155,7 +155,7 @@ else:
 
 ## C#
 
-```
+```cs
 // C# program to find Noble elements 
 // in an array. 
 using System; 
@@ -202,7 +202,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find Noble  
 // elements in an array. 
@@ -257,7 +257,7 @@ The noble integer is 3
 
 ## C++
 
-```
+```cpp
 // C++ program to find Noble elements 
 // in an array. 
 #include<bits/stdc++.h> 
@@ -303,7 +303,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find Noble elements 
 // in an array. 
 import java.util.Arrays; 
@@ -351,7 +351,7 @@ public class Main
 
 ## Python
 
-```
+```py
 # Python3 code to find Noble elements 
 # in an array 
   
@@ -393,7 +393,7 @@ else:
 
 ## C#
 
-```
+```cs
 // C# program to find Noble elements 
 // in an array.  
 using System; 
@@ -444,7 +444,7 @@ public class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find Noble elements 
   

@@ -87,7 +87,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find sum of 
 // diagonals of spiral matrix 
   
@@ -118,7 +118,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 # Python3 program to find sum of 
 # diagonals of spiral matrix 
   
@@ -143,7 +143,7 @@ print(spiralDiaSum(n))
 
 ## C#
 
-```
+```cs
 // C# program to find sum of 
 // diagonals of spiral matrix 
 using System; 
@@ -175,7 +175,7 @@ class GFG  {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find sum of 
 // diagonals of spiral matrix 

@@ -42,7 +42,7 @@
 
 ## C++
 
-```
+```cpp
 // C++ code for Maximum size square  
 // sub-matrix with all 1s  
 #include <bits/stdc++.h> 
@@ -125,7 +125,7 @@ int main() 
 
 ## C
 
-```
+```c
 // C code for Maximum size square  
 // sub-matrix with all 1s 
 #include<stdio.h> 
@@ -216,7 +216,7 @@ getchar(); 
 
 ## Java
 
-```
+```java
 // JAVA Code for Maximum size square  
 // sub-matrix with all 1s 
 public class GFG 
@@ -297,7 +297,7 @@ public class GFG
 
 ## Python3
 
-```
+```py
 # Python3 code for Maximum size 
 # square sub-matrix with all 1s 
   
@@ -350,7 +350,7 @@ printMaxSubSquare(M)
 
 ## C#
 
-```
+```cs
 // C# Code for Maximum size square  
 // sub-matrix with all 1s 
   
@@ -437,7 +437,7 @@ public class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP code for Maximum size square  
 // sub-matrix with all 1s  

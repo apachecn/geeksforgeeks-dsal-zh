@@ -85,7 +85,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java implementation of Naive method 
 // to count of negative numbers in 
 // M[n][m] 
@@ -130,7 +130,7 @@ class GFG {
 
 ## Python
 
-```
+```py
 # Python implementation of Naive method to count of  
 # negative numbers in M[n][m] 
   
@@ -161,7 +161,7 @@ print(countNegative(M, 3, 4))
 
 ## C#
 
-```
+```cs
 // C# implementation of Naive method 
 // to count of negative numbers in 
 // M[n][m] 
@@ -208,7 +208,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP implementation of Naive method 
 // to count of negative numbers in  

@@ -119,7 +119,7 @@ int main()
 
 ## C
 
-```
+```c
 // C program to find the Minimum length Unsorted Subarray,  
 // sorting which makes the complete array sorted 
 #include<stdio.h> 
@@ -195,7 +195,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find the Minimum length Unsorted Subarray,  
 // sorting which makes the complete array sorted 
 class Main 
@@ -271,7 +271,7 @@ class Main
 
 ## Python3
 
-```
+```py
 # Python3 program to find the Minimum length Unsorted Subarray,  
 # sorting which makes the complete array sorted 
 def printUnsorted(arr, n): 
@@ -328,7 +328,7 @@ printUnsorted(arr, arr_size)
 
 ## C#
 
-```
+```cs
 // C# program to find the Minimum length Unsorted Subarray,  
 // sorting which makes the complete array sorted 
   
@@ -414,7 +414,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php  
 // PHP program to find the Minimum length Unsorted Subarray,  
 // sorting which makes the complete array sorted 

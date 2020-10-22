@@ -85,7 +85,7 @@ int main() {
 
 ## Java
 
-```
+```java
 // Java program to find all those  
 // elements of arr1[] that are not 
 // present in arr2[] 
@@ -146,7 +146,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python program to find all those  
 # elements of arr1[] that are not 
 # present in arr2[] 
@@ -193,7 +193,7 @@ relativeComplement(arr1, arr2, n, m)
 
 ## C#
 
-```
+```cs
 // C# program to find all those  
 // elements of arr1[] that are not 
 // present in arr2[] 
@@ -259,7 +259,7 @@ namespace Complement
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find all those  
 // elements of arr1[] that are not 

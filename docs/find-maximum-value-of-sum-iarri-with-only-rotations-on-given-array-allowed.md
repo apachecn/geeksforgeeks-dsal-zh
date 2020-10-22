@@ -182,7 +182,7 @@ class Test
 
 ## Python
 
-```
+```py
 
 '''Python program to find maximum value of Sum(i*arr[i])'''
 

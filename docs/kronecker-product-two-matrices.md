@@ -113,7 +113,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java code to find the Kronecker Product of 
 // two matrices and stores it as matrix C 
 import java.io.*; 
@@ -181,7 +181,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 code to find the Kronecker Product of two 
 # matrices and stores it as matrix C 
    
@@ -249,7 +249,7 @@ Kroneckerproduct( A , B )
 
 ## C#
 
-```
+```cs
 // C# code to find the Kronecker Product of 
 // two matrices and stores it as matrix C 
 using System; 
@@ -320,7 +320,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP code to find the 
 // Kronecker Product of two 

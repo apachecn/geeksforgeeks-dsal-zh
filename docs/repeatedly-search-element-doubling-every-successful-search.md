@@ -75,7 +75,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to repeatedly search an element by 
 // doubling it after every successful search 
 import java.util.Arrays; 
@@ -116,7 +116,7 @@ public class Test4 {
 
 ## Python
 
-```
+```py
 # Python program to repeatedly search an element by 
 # doubling it after every successful search 
   
@@ -163,7 +163,7 @@ print findElement(a, n, b)
 
 ## C#
 
-```
+```cs
 // C# program to repeatedly search an 
 // element by doubling it after every 
 // successful search 
@@ -211,7 +211,7 @@ public class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // Php program to repeatedly search an element by 
 // doubling it after every successful search 

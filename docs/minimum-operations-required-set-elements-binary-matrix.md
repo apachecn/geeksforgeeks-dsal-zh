@@ -99,7 +99,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find minimum operations required  
 // to set all the element of binary matrix  
   
@@ -215,7 +215,7 @@ print(minOperation(mat))
 
 ## C#
 
-```
+```cs
 using System; 
   
 // C# program to find minimum operations required   
@@ -285,7 +285,7 @@ public class GFG
 
 ## PHP
 
-```
+```php
 <?php  
 // PHP program to find minimum  
 // operations required to set  

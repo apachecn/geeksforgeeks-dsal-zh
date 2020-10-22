@@ -68,7 +68,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find an array element 
 // that divides all numbers in the array  
 // using naive approach 
@@ -112,7 +112,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python 3 program to find an array 
 # element that divides all numbers 
 # in the array using naive approach 
@@ -147,7 +147,7 @@ print(findSmallest(a, n))
 
 ## C#
 
-```
+```cs
 // C# program to find an array element 
 // that divides all numbers in the array  
 // using naive approach 
@@ -191,7 +191,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find an array  
 // element that divides all  
@@ -242,7 +242,7 @@ function findSmallest($a, $n)
 
 ## C++
 
-```
+```cpp
 // CPP Program to find the smallest number 
 // that divides all numbers in an array 
 #include <bits/stdc++.h> 
@@ -275,7 +275,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java Program to find the  
 // smallest number that divides 
 // all numbers in an array 
@@ -325,7 +325,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 Program to find the 
 # smallest number that divides 
 # all numbers in an array 
@@ -370,7 +370,7 @@ print(findSmallest(a, n))
 
 ## C#
 
-```
+```cs
 // C# Program to find the  
 // smallest number that divides 
 // all numbers in an array 
@@ -421,7 +421,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP Program to find the smallest number 
 // that divides all numbers in an array 

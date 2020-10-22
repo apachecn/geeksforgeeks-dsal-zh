@@ -291,7 +291,7 @@ class Main {
 
 ## Python
 
-```
+```py
 
 ''' Python program to find the  
 smallest positive missing number '''
@@ -460,7 +460,7 @@ The smallest positive missing number is 1
 
 ## C++
 
-```
+```cpp
 
 // C++ implementation of the approach 
 #include <bits/stdc++.h> 
@@ -514,7 +514,7 @@ int main()
 
 ## C++
 
-```
+```cpp
 // C++ implementation of the approach 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -566,7 +566,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java Program to find the smallest 
 // positive missing number 
 import java.util.Arrays; 
@@ -652,7 +652,7 @@ print(solution(A))
 
 ## C#
 
-```
+```cs
 // C# Program to find the smallest 
 // positive missing number 
 using System; 
@@ -714,7 +714,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php  
 // PHP Program to find the smallest 
 // positive missing number 

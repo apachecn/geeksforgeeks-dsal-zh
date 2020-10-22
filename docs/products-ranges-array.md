@@ -73,7 +73,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Product in range Queries in O(N) 
 import java.io.*; 
   
@@ -123,7 +123,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 # Python3 program to find  
 # Product in range Queries in O(N) 
   
@@ -158,7 +158,7 @@ print (calculateProduct(A, L, R, P))
 
 ## C#
 
-```
+```cs
 // Product in range Queries in O(N) 
 using System; 
   
@@ -208,7 +208,7 @@ class GFG 
 
 ## PHP
 
-```
+```php
 <?php 
 // Product in range Queries in O(N) 
   
@@ -261,7 +261,7 @@ echo calculateProduct($A, $L, $R, $P),"\n" ;
 
 ## C++
 
-```
+```cpp
 // Product in range Queries in O(1) 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -387,7 +387,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find Product 
 // in range Queries in O(1) 
 class GFG 
@@ -518,7 +518,7 @@ public static void main(String[] s)
 
 ## Python3
 
-```
+```py
 # Python3 implementation of the 
 # above approach 
   
@@ -620,7 +620,7 @@ if __name__ == "__main__":
 
 ## C#
 
-```
+```cs
 // C# program to find Product 
 // in range Queries in O(1) 
 using System; 

@@ -27,7 +27,7 @@ Output: 2
 
 ## C++
 
-```
+```cpp
 // CPP program to find the row  
 // with maximum number of 1s  
 #include <bits/stdc++.h> 
@@ -100,7 +100,7 @@ int main() 
 
 ## C
 
-```
+```c
 // C program to find the row 
 // with maximum number of 1s 
 #include <stdio.h> 
@@ -171,7 +171,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find the row 
 // with maximum number of 1s 
 import java.io.*; 
@@ -303,7 +303,7 @@ print ("Index of row with maximum 1s is", 
 
 ## C#
 
-```
+```cs
 // C# program to find the row with maximum 
 // number of 1s  
 using System; 
@@ -390,7 +390,7 @@ public static void Main(string[] args)
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the row  
 // with maximum number of 1s  
@@ -477,7 +477,7 @@ Index of row with maximum 1s is 2
 
 ## C++
 
-```
+```cpp
 #include <bits/stdc++.h> 
 using namespace std; 
   
@@ -524,7 +524,7 @@ int rowWithMax1s(bool mat[R][C]) 
 
 ## C
 
-```
+```c
 // The main function that returns index of row with maximum number of 1s. 
 int rowWithMax1s(bool mat[R][C]) 
 { 

@@ -341,7 +341,7 @@ function calculate($a, $n)
 
 ## C++
 
-```
+```cpp
 
 // C++ program to find number of pairs 
 // in an array such that their XOR is 0 
@@ -391,7 +391,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find number of pairs  
 // in an array such that their XOR is 0  
 import java.util.*; 
@@ -482,7 +482,7 @@ print(calculate(a))
 
 ## C#
 
-```
+```cs
 // C# program to find number of pairs  
 // in an array such that their XOR is 0  
 using System; 
@@ -537,7 +537,7 @@ class GFG 
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find number  
 // of pairs in an array such  

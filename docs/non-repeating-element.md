@@ -201,7 +201,7 @@ function firstNonRepeating($arr, $n)
 
 ## C++
 
-```
+```cpp
 
 // Efficient CPP program to find first non- 
 // repeating element. 
@@ -313,7 +313,7 @@ print(firstNonRepeating(arr, n)) 
 
 ## C#
 
-```
+```cs
 
 // Efficient C# program to find first non- 
 // repeating element. 
@@ -377,7 +377,7 @@ class GFG {
 
 ## C++
 
-```
+```cpp
 
 // Efficient CPP program to print all non- 
 // repeating elements. 
@@ -486,7 +486,7 @@ firstNonRepeating(arr, n)
 
 ## C#
 
-```
+```cs
 
 // Efficient C# program to print all non- 
 // repeating elements. 

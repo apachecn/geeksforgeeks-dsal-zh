@@ -84,7 +84,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find largest pair sum in a given array 
   
 class Test 
@@ -138,7 +138,7 @@ class Test
 
 ## Python3
 
-```
+```py
 # Python3 program to find largest  
 # pair sum in a given array 
   
@@ -189,7 +189,7 @@ print("Max Pair Sum is", 
 
 ## C#
 
-```
+```cs
 // C# program to find largest 
 // pair sum in a given array 
 using System; 
@@ -250,7 +250,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find largest  
 // pair sum in a given array 

@@ -72,7 +72,7 @@ int main() 
 
 ## Java
 
-```
+```java
 // java program to find maximum 
 // element 
   
@@ -105,7 +105,7 @@ class Main
 
 ## Python3
 
-```
+```py
 # Python3 program to find  
 # maximum element 
   
@@ -128,7 +128,7 @@ print ("The maximum element is %d"% 
 
 ## C#
 
-```
+```cs
 // C# program to find maximum 
 // element 
 using System; 
@@ -164,7 +164,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to Find the maximum  
 // element in an array which is first 
@@ -211,7 +211,7 @@ The maximum element is 70
 
 ## C++
 
-```
+```cpp
 #include <bits/stdc++.h> 
 using namespace std; 
   
@@ -266,7 +266,7 @@ int main() 
 
 ## C
 
-```
+```c
 #include <stdio.h> 
   
 int findMaximum(int arr[], int low, int high) 
@@ -315,7 +315,7 @@ int main()
 
 ## Java
 
-```
+```java
 // java program to find maximum 
 // element 
   
@@ -376,7 +376,7 @@ class Main
 
 ## Python3
 
-```
+```py
 def findMaximum(arr, low, high): 
     # Base Case: Only one element is present in arr[low..high]*/ 
     if low == high: 
@@ -417,7 +417,7 @@ print ("The maximum element is %d"% findMaximum(arr, 0, n-1))
 
 ## C#
 
-```
+```cs
 // C# program to find maximum 
 // element 
 using System; 
@@ -480,7 +480,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to Find the maximum  
 // element in an array which is  

@@ -66,7 +66,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find common  
 // elements in two diagonals. 
 import java.io.*; 
@@ -101,7 +101,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python3 program to find common  
 # elements in two diagonals. 
   
@@ -131,7 +131,7 @@ print(countCommon(mat, 3))
 
 ## C#
 
-```
+```cs
 // C# program to find common  
 // elements in two diagonals. 
 using System; 
@@ -167,7 +167,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find common  
 // elements in two diagonals. 

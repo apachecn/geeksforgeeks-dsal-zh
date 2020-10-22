@@ -111,7 +111,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find modified array 
 // after executing m commands/queries 
 import java.util.Arrays; 
@@ -183,7 +183,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find modified array 
 # after executing m commands/queries 
   
@@ -242,7 +242,7 @@ for i in range(n):
 
 ## C#
 
-```
+```cs
 // Program to find modified 
 // array after executing 
 // m commands/queries 

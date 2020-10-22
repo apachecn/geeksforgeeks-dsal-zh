@@ -76,7 +76,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Simple java code for check a matrix is 
 // symmetric or not. 
   
@@ -127,7 +127,7 @@ class GFG {
 
 ## Python
 
-```
+```py
 # Simple Python code for check a matrix is 
 # symmetric or not. 
    
@@ -160,7 +160,7 @@ else:
 
 ## C#
 
-```
+```cs
 // Simple C# code for check a matrix is 
 // symmetric or not. 
   
@@ -211,7 +211,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // Simple PHP code for check a matrix is 
 // symmetric or not. 
@@ -262,7 +262,7 @@ function isSymmetric($mat, $N)
 
 ## C++
 
-```
+```cpp
 // Efficient c++ code for check a matrix is 
 // symmetric or not. 
 #include <iostream> 
@@ -297,7 +297,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Efficient Java code for check a matrix is 
 // symmetric or no 
   
@@ -340,7 +340,7 @@ static int MAX = 100;
 
 ## Python
 
-```
+```py
 # Efficient Python code for check a matrix is 
 # symmetric or not. 
   
@@ -364,7 +364,7 @@ else:
 
 ## C#
 
-```
+```cs
 // Efficient C# code for check a matrix is 
 // symmetric or no 
   
@@ -406,7 +406,7 @@ class GFG 
 
 ## PHP
 
-```
+```php
 <?php 
 // Efficient PHP code for  
 // check a matrix is 

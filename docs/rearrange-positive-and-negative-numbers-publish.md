@@ -250,7 +250,7 @@ class Alternate {
 
 ## Python
 
-```
+```py
 
 #  Python program to put positive numbers at even indexes (0,  // 2, 4,..) and 
 #  negative numbers at odd indexes (1, 3, 5, ..) 

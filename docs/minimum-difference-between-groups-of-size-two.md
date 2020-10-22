@@ -72,7 +72,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find minimum 
 // difference between groups of  
 // highest and lowest sums. 
@@ -112,7 +112,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 # Python3 program to find minimum  
 # difference between groups of  
 # highest and lowest sums. 
@@ -145,7 +145,7 @@ print(calculate(a, n));
 
 ## C#
 
-```
+```cs
 // C# program to find minimum 
 // difference between groups of  
 // highest and lowest sums. 
@@ -186,7 +186,7 @@ class GFG 
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find minimum  
 // difference between groups of  

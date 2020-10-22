@@ -95,7 +95,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find maximum difference 
 // of sum of elements of two rows 
 class GFG { 
@@ -157,7 +157,7 @@ public static void main(String[] args) {
 
 ## Python3
 
-```
+```py
 # Python3 program to find maximum difference  
 # of sum of elements of two rows 
   
@@ -215,7 +215,7 @@ print( maxRowDiff(mat, m, n))
 
 ## C#
 
-```
+```cs
 // C# program to find maximum difference 
 // of sum of elements of two rows 
 using System; 
@@ -294,7 +294,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find maximum  
 // difference of sum of 

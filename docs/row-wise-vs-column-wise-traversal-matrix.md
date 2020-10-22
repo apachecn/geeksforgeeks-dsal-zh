@@ -88,7 +88,7 @@ int main() {
 
 ## Java
 
-```
+```java
 // Java program showing time difference 
 // in row major and column major access 
 import java.time.Duration; 

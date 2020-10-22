@@ -129,7 +129,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to print the maximum elements 
 // giving second array higher priority 
 import java.util.*; 
@@ -229,7 +229,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 # Python3 program to print the maximum elements 
 # giving second array higher priority 
   
@@ -322,7 +322,7 @@ if __name__ == '__main__':
 
 ## C#
 
-```
+```cs
 // C# program to print the maximum elements 
 // giving second array higher priority 
 using System; 

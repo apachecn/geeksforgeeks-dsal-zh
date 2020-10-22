@@ -92,7 +92,7 @@ int main()
 
 ## Java
 
-```
+```java
 // A Java program to find if there is a zero sum subarray 
 import java.util.Set;  
 import java.util.HashSet; 
@@ -144,7 +144,7 @@ class ZeroSumSubarray {
 
 ## Python3
 
-```
+```py
 # A python program to find if  
 # there is a zero sum subarray  
   
@@ -178,7 +178,7 @@ else:
 
 ## C#
 
-```
+```cs
 // A C# program to find if there  
 // is a zero sum subarray  
 using System; 

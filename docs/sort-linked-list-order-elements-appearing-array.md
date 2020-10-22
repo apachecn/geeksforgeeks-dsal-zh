@@ -117,7 +117,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Efficient JAVA program to sort given list in order 
 // elements are appearing in an array 
 import java.util.*; 
@@ -222,7 +222,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 # Efficient Python3 program to sort given list in order 
 # elements are appearing in an array 
   
@@ -310,7 +310,7 @@ printList(head)
 
 ## C#
 
-```
+```cs
 // Efficient C# program to sort given list in order 
 // elements are appearing in an array 
 using System; 

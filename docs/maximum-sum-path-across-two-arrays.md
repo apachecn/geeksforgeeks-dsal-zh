@@ -56,7 +56,7 @@ Explanation: 122 is sum of 1, 5, 7, 8, 10, 12, 15, 30, 34
 
 ## C++
 
-```
+```cpp
 // C++ program to find maximum sum path
 #include <iostream>
 using namespace std;
@@ -142,7 +142,7 @@ int main()
 
 ## Java
 
-```
+```java
 // JAVA program to find maximum sum path
 class MaximumSumPath 
 {
@@ -234,7 +234,7 @@ class MaximumSumPath
 
 ## Python
 
-```
+```py
 # Python program to find maximum sum path
  
 # This function returns the sum of elements on maximum path from
@@ -310,7 +310,7 @@ print "Maximum sum path is", maxPathSum(ar1, ar2, m, n)
 
 ## C#
 
-```
+```cs
 // C# program for Maximum Sum Path in
 // Two Arrays
 using System;
@@ -411,7 +411,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php
 // PHP Program to find Maximum Sum 
 // Path in Two Arrays

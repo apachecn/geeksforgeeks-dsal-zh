@@ -76,7 +76,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java code to find minimum number of 
 // swaps to sort a binary array 
 class gfg { 
@@ -120,7 +120,7 @@ class gfg {
 
 ## Python3
 
-```
+```py
 # Python3 code to find minimum number of 
 # swaps to sort a binary array 
   
@@ -159,7 +159,7 @@ print (findMinSwaps(arr, n))
 
 ## C#
 
-```
+```cs
 // C# code to find minimum number of 
 // swaps to sort a binary array 
 using System; 
@@ -211,7 +211,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP code to find minimum number of 
 // swaps to sort a binary array 

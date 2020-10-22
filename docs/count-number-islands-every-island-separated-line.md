@@ -98,7 +98,7 @@ int main()
 
 ## Java
 
-```
+```java
 // A Java program to count the number of rectangular 
 // islands where every island is separated by a line 
 import java.io.*; 
@@ -158,7 +158,7 @@ class islands 
 
 ## Python3
 
-```
+```py
 # A Python3 program to count the number  
 # of rectangular islands where every  
 # island is separated by a line 
@@ -208,7 +208,7 @@ print("Number of rectangular islands is", 
 
 ## C#
 
-```
+```cs
 // A C# program to count the number of rectangular  
 // islands where every island is separated by  
 // a line 
@@ -272,7 +272,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // A PHP program to count the 
 // number of rectangular islands  

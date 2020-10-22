@@ -75,7 +75,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java implementation of simple method to find count of 
 // pairs with given sum. 
 public class find 
@@ -108,7 +108,7 @@ public class find
 
 ## Python3
 
-```
+```py
 # Python3 implementation of simple method 
 # to find count of pairs with given sum. 
   
@@ -139,7 +139,7 @@ print("Count of pairs is",
 
 ## C#
 
-```
+```cs
 // C# implementation of simple  
 // method to find count of  
 // pairs with given sum.  
@@ -181,7 +181,7 @@ static public void Main ()
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP implementation of simple  
 // method to find count of 
@@ -239,7 +239,7 @@ Count of pairs is 3
 
 ## C++
 
-```
+```cpp
 // C++ implementation of simple method to find count of 
 // pairs with given sum. 
 #include <bits/stdc++.h> 
@@ -289,7 +289,7 @@ int main()
 
 ## Java
 
-```
+```java
 /* Java implementation of simple method to find count of 
 pairs with given sum*/
   
@@ -349,7 +349,7 @@ class Test
 
 ## Python3
 
-```
+```py
 # Python 3 implementation of simple method 
 # to find count of pairs with given sum. 
 import sys 
@@ -399,7 +399,7 @@ print("Count of pairs is", getPairsCount(arr,
 
 ## C#
 
-```
+```cs
 // C# implementation of simple method to 
 // find count of pairs with given sum 
 using System; 

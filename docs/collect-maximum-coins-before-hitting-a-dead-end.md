@@ -130,7 +130,7 @@ int main()
 
 ## Python3
 
-```
+```py
 # A Naive Recursive Python 3 program to  
 # find maximum number of coins  
 # that can be collected before hitting a dead end  

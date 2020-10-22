@@ -399,7 +399,7 @@ Result matrix is
 
 ## C++
 
-```
+```cpp
 
 // C++ program to multiply two 
 // rectangular matrices 

@@ -300,7 +300,7 @@ Then we reverse elements of every column again
 
 ## C++
 
-```
+```cpp
 
 // C++ program for left rotation of matrix by 180 
 #include <bits/stdc++.h> 
@@ -434,7 +434,7 @@ class GFG {
 
 ## C#
 
-```
+```cs
 
 // C# program for left 
 // rotation of matrix by 180 

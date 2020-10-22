@@ -245,7 +245,7 @@ Count of pairs with given diff is 2
 
 ## C++
 
-```
+```cpp
 
 /* A sorting based program to count pairs with difference k*/
 #include <iostream> 
@@ -364,7 +364,7 @@ class GFG {
 
 ## Python
 
-```
+```py
 
 # A sorting based program to  
 # count pairs with difference k 
@@ -416,7 +416,7 @@ print ("Count of pairs with given diff is ",
 
 ## C#
 
-```
+```cs
 
 // A sorting base C# program to  
 // count pairs with difference k 
@@ -633,7 +633,7 @@ int countPairsWithDiffK(int arr[], int n, int k)
 
 ## C++
 
-```
+```cpp
 
 /* A sorting based program to count pairs with difference k*/
 #include <iostream> 
@@ -772,7 +772,7 @@ if __name__=='__main__':
 
 ## C#
 
-```
+```cs
 
 // A sorting based C# program to count  
 // pairs with difference k 

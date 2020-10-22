@@ -101,7 +101,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program for above implementation 
 import java.io.*; 
 import java.util.*; 
@@ -167,7 +167,7 @@ public static void main(String args[]) {
 
 ## Python3
 
-```
+```py
 # Python3 code for above implementation 
 Mod= 1000000007
   
@@ -225,7 +225,7 @@ print(findSum(arr, n))
 
 ## C#
 
-```
+```cs
 // C# program for above implementation 
 using System; 
   
@@ -293,7 +293,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program for above implementation 
   

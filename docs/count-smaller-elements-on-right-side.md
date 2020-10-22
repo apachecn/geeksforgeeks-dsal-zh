@@ -74,7 +74,7 @@ int main()
 
 ## Java
 
-```
+```java
 class CountSmaller 
 {
     void constructLowerArray(int arr[], int countSmaller[], int n) 
@@ -120,7 +120,7 @@ class CountSmaller
 
 ## Python3
 
-```
+```py
 def constructLowerArray (arr, countSmaller, n):
  
     # initialize all the counts in countSmaller array as 0 
@@ -150,7 +150,7 @@ printArray(low, n)
 
 ## C#
 
-```
+```cs
 using System;
  
 class GFG {
@@ -216,7 +216,7 @@ class GFG {
 
 ## C
 
-```
+```c
 #include<stdio.h>
 #include<stdlib.h>
  
@@ -522,7 +522,7 @@ int main()
 
 ## Python
 
-```
+```py
 class Node: 
     def __init__(self,val): 
         self.val = val 

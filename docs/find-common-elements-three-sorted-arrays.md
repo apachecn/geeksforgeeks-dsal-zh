@@ -155,7 +155,7 @@ class FindCommon
 
 ## Python
 
-```
+```py
 
 # Python function to print common elements in three sorted arrays 
 def findCommon(ar1, ar2, ar3, n1, n2, n3): 

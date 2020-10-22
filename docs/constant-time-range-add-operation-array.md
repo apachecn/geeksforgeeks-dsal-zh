@@ -95,7 +95,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to get updated array after
 // many array range add operation
 import java.io.*;
@@ -150,7 +150,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to get updated array
 # after many array range add operation
  
@@ -201,7 +201,7 @@ printArr(arr, N)
 
 ## C#
 
-```
+```cs
 // C# program to get updated array after
 // many array range add operation
 using System;
@@ -258,7 +258,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to get updated array after 
 // many array range add operation

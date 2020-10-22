@@ -66,7 +66,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to count pairs 
 // with maximum sum. 
 class GFG { 
@@ -107,7 +107,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 # Python program to count pairs with  
 # maximum sum 
   
@@ -139,7 +139,7 @@ print(_sum(array, n))
 
 ## C#
 
-```
+```cs
 // C# program to count pairs 
 // with maximum sum. 
 using System; 
@@ -185,7 +185,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to count pairs 
 // with maximum sum. 
@@ -241,7 +241,7 @@ function sum( $a, $n)
 
 ## C++
 
-```
+```cpp
 // CPP program to count pairs with maximum sum. 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -292,7 +292,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to count pairs  
 // with maximum sum. 
 import java.io.*; 
@@ -350,7 +350,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 # Python 3 program to count 
 # pairs with maximum sum. 
 import sys 
@@ -401,7 +401,7 @@ print(sum(array, n))
 
 ## C#
 
-```
+```cs
 // C# program to count pairs with maximum 
 // sum. 
 using System; 
@@ -468,7 +468,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to count 
 // pairs with maximum sum. 

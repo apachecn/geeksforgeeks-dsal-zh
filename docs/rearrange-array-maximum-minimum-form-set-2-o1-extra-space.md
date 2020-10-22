@@ -388,7 +388,7 @@ Modified Array
 
 ## C++
 
-```
+```cpp
 
 // C++ program to rearrange an array in minimum 
 // maximum form 
@@ -545,7 +545,7 @@ for i in range(n):
 
 ## C#
 
-```
+```cs
 
 // C# program to rearrange  
 // an array in minimum  

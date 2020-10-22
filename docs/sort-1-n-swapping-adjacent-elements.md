@@ -321,7 +321,7 @@ A can be sorted
 
 ## C++
 
-```
+```cpp
 
 // CPP program to test whether array 
 // can be sorted by swapping adjacent 
@@ -460,7 +460,7 @@ if __name__=='__main__':
 
 ## C#
 
-```
+```cs
 
 // C# program to test whether array 
 // can be sorted by swapping adjacent 

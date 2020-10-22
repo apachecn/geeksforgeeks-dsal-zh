@@ -166,7 +166,7 @@ class GFG 
 
 ## Python
 
-```
+```py
 
 # Python program to count number  
 # of 0s in the given row-wise 

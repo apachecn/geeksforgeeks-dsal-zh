@@ -267,7 +267,7 @@ class GFG {
 
 ## Python
 
-```
+```py
 
 ''' Python program to find k such that all elements in k'th row  
     are 0 and k'th column are 1'''

@@ -140,7 +140,7 @@ class Main
 
 ## Python
 
-```
+```py
 
 # Python program for searching in 
 # unsorted array 
@@ -266,7 +266,7 @@ Element Found at Position: 5
 
 ## C++
 
-```
+```cpp
 
 // C++ program to implement insert  
 // operation in an unsorted array. 
@@ -428,7 +428,7 @@ class Main
 
 ## Python
 
-```
+```py
 
 # Python program for inserting 
 # an element in an unsorted array 
@@ -457,7 +457,7 @@ print (arr)
 
 ## C#
 
-```
+```cs
 
 // C# program to implement insert  
 // operation in an unsorted array. 
@@ -586,7 +586,7 @@ After Insertion: 12 16 20 40 50 70 26
 
 ## C++
 
-```
+```cpp
 
 // C++ program to implement delete operation in a  
 // unsorted array  
@@ -790,7 +790,7 @@ class Main
 
 ## Python
 
-```
+```py
 
 # Python program to delete an element 
 # from an unsorted array 
@@ -814,7 +814,7 @@ print(arr)
 
 ## C#
 
-```
+```cs
 
 // C# program to implement delete 
 // operation in an unsorted array 

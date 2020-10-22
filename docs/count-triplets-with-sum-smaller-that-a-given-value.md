@@ -69,7 +69,7 @@ int main()
 
 ## Java
 
-```
+```java
 // A Simple Java program to count triplets with sum smaller 
 // than a given value 
   
@@ -142,7 +142,7 @@ print(countTriplets(arr, n, sum))
 
 ## C#
 
-```
+```cs
 // A Simple C# program to count triplets with sum smaller 
 // than a given value 
    
@@ -207,7 +207,7 @@ class Test
 
 ## C++
 
-```
+```cpp
 // C++ program to count triplets with sum smaller than a given value 
 #include<bits/stdc++.h> 
 using namespace std; 
@@ -262,7 +262,7 @@ int main()
 
 ## Java
 
-```
+```java
 // A Simple Java program to count triplets with sum smaller 
 // than a given value 
   
@@ -320,7 +320,7 @@ class Test
 
 ## Python3
 
-```
+```py
 # Python3 program to count triplets with  
 # sum smaller than a given value  
   
@@ -375,7 +375,7 @@ if __name__=='__main__':
 
 ## C#
 
-```
+```cs
 // A Simple C# program to count  
 // triplets with sum smaller 
 // than a given value 

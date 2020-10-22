@@ -40,7 +40,7 @@ Output: 10 and 20
 
 ## C++
 
-```
+```cpp
 // C++ Program to find the two odd occurring elements  
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -98,7 +98,7 @@ int main() 
 
 ## C
 
-```
+```c
 // Program to find the two odd occurring elements 
 #include<stdio.h> 
   
@@ -154,7 +154,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find two odd 
 // occurring elements 
   
@@ -224,7 +224,7 @@ class Main
 
 ## Python3
 
-```
+```py
 # Python3 program to find the 
 # two odd occurring elements 
   
@@ -281,7 +281,7 @@ printTwoOdd(arr, arr_size)
 
 ## C#
 
-```
+```cs
 // C# program to find two odd 
 // occurring elements 
 using System; 
@@ -360,7 +360,7 @@ class main
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find the  
 // two odd occurring elements 

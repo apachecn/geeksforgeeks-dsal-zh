@@ -311,7 +311,7 @@ function leastFrequent($arr, $n)
 
 ## C++
 
-```
+```cpp
 
 // CPP program to find the least frequent element 
 // in an array. 
@@ -448,7 +448,7 @@ print(leastFrequent(arr, n))
 
 ## C#
 
-```
+```cs
 
 // C# program to find the  
 // least frequent element  

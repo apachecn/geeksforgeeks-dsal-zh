@@ -299,7 +299,7 @@ Secondary Diagonal:18
 
 ## C++
 
-```
+```cpp
 
 // An efficient C++ program to find sum of diagonals 
 #include <bits/stdc++.h> 
@@ -332,7 +332,7 @@ int main()
 
 ## Java
 
-```
+```java
 // An efficient java program to find 
 // sum of diagonals 
 import java.io.*; 
@@ -372,7 +372,7 @@ public class GFG {
 
 ## Python3
 
-```
+```py
 # A simple Python3 program to find 
 # sum of diagonals 
 MAX = 100
@@ -401,7 +401,7 @@ printDiagonalSums(a, 4)
 
 ## C#
 
-```
+```cs
 // An efficient C#program to find 
 // sum of diagonals 
 using System; 
@@ -441,7 +441,7 @@ public class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // An efficient PHP program  
 // to find sum of diagonals 

@@ -46,7 +46,7 @@ which is 1/2.
 
 ## C++
 
-```
+```cpp
 // CPP program to find probability of even 
 // or odd elements in a given range. 
 #include <bits/stdc++.h> 
@@ -140,7 +140,7 @@ int main()
 
 ## Java
 
-```
+```java
 // java program to find probability 
 // of even or odd elements in a 
 // given range. 
@@ -350,7 +350,7 @@ if __name__ =="__main__":
 
 ## C#
 
-```
+```cs
 // C# program to find probability 
 // of even or odd elements in a 
 // given range. 
@@ -478,7 +478,7 @@ public class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find probability 
 // of even or odd elements in a 

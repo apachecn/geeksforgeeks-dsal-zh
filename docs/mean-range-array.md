@@ -75,7 +75,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find floor value 
 // of mean in range l to r 
 public class Main { 
@@ -115,7 +115,7 @@ public class Main {
 
 ## Python3
 
-```
+```py
 # Python 3 program to find floor value 
 # of mean in range l to r 
 import math 
@@ -153,7 +153,7 @@ print(findMean(arr, 0, 4))
 
 ## C#
 
-```
+```cs
 //C# program to find floor value 
 // of mean in range l to r 
 using System; 
@@ -197,7 +197,7 @@ public class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find floor  
 // value of mean in range l to r 
@@ -253,7 +253,7 @@ echo findMean($arr, 0, 4), "\n";
 
 ## C++
 
-```
+```cpp
 // CPP program to find floor value 
 // of mean in range l to r 
 #include <bits/stdc++.h> 
@@ -301,7 +301,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find floor value 
 // of mean in range l to r 
 public class Main { 
@@ -347,7 +347,7 @@ public static final int MAX = 1000005;
 
 ## Python3
 
-```
+```py
 # Python3 program to find floor value 
 # of mean in range l to r 
 import math as mt 
@@ -394,7 +394,7 @@ print(findMean(0, 4))
 
 ## C#
 
-```
+```cs
 // C# program to find floor value 
 // of mean in range l to r 
 using System; 

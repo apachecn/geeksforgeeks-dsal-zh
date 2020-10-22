@@ -205,7 +205,7 @@ function maxTripletSum( $arr, $n)
 
 ## C++
 
-```
+```cpp
 
 // C++ code to find maximum triplet sum 
 #include <bits/stdc++.h> 
@@ -302,7 +302,7 @@ print(maxTripletSum(arr, n))
 
 ## C#
 
-```
+```cs
 
 // C# code to find maximum triplet sum 
 using System; 
@@ -383,7 +383,7 @@ echo maxTripletSum($arr, $n);
 
 ## C++
 
-```
+```cpp
 
 // C++ code to find maximum triplet sum 
 #include <bits/stdc++.h> 
@@ -544,7 +544,7 @@ print(maxTripletSum(arr, n))
 
 ## C#
 
-```
+```cs
 
 // C# code to find maximum triplet sum 
 using System; 

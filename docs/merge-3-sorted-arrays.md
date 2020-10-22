@@ -185,7 +185,7 @@ class GFG {
 
 ## Python
 
-```
+```py
 
 # Python program to merge three sorted arrays 
 # by merging two at a time. 
@@ -405,7 +405,7 @@ int main()
 
 ## Python
 
-```
+```py
 
 # Python program to merge three sorted arrays 
 # simultaneously.  

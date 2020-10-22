@@ -85,7 +85,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Javaprogram to find Minimum 
 // number of jumps to reach end 
 import java.util.*; 
@@ -137,7 +137,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find Minimum  
 # number of jumps to reach end 
   
@@ -181,7 +181,7 @@ print('Minimum number of jumps to reach',
 
 ## C#
 
-```
+```cs
 // C# program to find Minimum 
 // number of jumps to reach end 
 using System; 
@@ -230,7 +230,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // php program to find Minimum  
 // number of jumps to reach end 
@@ -311,7 +311,7 @@ Minimum number of jumps to reach end is 4
 
 ## C++
 
-```
+```cpp
 // C++ program for Minimum number 
 // of jumps to reach end 
 #include <bits/stdc++.h> 
@@ -361,7 +361,7 @@ int main()
 
 ## C
 
-```
+```c
 #include <limits.h> 
 #include <stdio.h> 
   
@@ -409,7 +409,7 @@ int main()
 
 ## Java
 
-```
+```java
 // JAVA Code for Minimum number 
 // of jumps to reach end 
 class GFG { 
@@ -459,7 +459,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 program to find Minimum  
 # number of jumps to reach end 
   
@@ -496,7 +496,7 @@ print('Minimum number of jumps to reach',
 
 ## C#
 
-```
+```cs
 // C# Code for Minimum number of jumps to reach end 
 using System; 
   
@@ -544,7 +544,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP code for Minimum number of 
 // jumps to reach end 
@@ -609,7 +609,7 @@ Minimum number of jumps to reach end is 3
 
 ## C++
 
-```
+```cpp
 // CPP program to find Minimum 
 // number of jumps to reach end 
 #include <bits/stdc++.h> 
@@ -687,7 +687,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to find Minimum 
 // number of jumps to reach end 
 class GFG { 
@@ -771,7 +771,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # Python3 progrma to find Minimum  
 # number of jumps to reach end 
   
@@ -844,7 +844,7 @@ print('Minimum number of jumps to reach',
 
 ## C#
 
-```
+```cs
 // C# program to find Minimum 
 // number of jumps to reach end 
 using System; 
@@ -927,7 +927,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to find Minimum  
 // number of jumps to reach end 

@@ -124,7 +124,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java implementation to sort the rows 
 // of matrix in ascending order followed by 
 // sorting the columns in descending order 
@@ -218,7 +218,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 # Python implementation to sort the rows 
 # of matrix in ascending order followed by 
 # sorting the columns in descending order 
@@ -297,7 +297,7 @@ printMat(mat, n)
 
 ## PHP
 
-```
+```php
 <?php  
 // PHP implementation to sort the rows 
 // of matrix in ascending order followed by 

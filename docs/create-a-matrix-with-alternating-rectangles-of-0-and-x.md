@@ -50,7 +50,7 @@ X X X X X X X
 
 ## C++
 
-```
+```cpp
 #include <stdio.h> 
   
 // Function to print alternating rectangles of 0 and X 
@@ -131,7 +131,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java code to demonstrate the working. 
   
 import java.io.*; 
@@ -226,7 +226,7 @@ public static void main (String[] args) {
 
 ## Python3
 
-```
+```py
 # Python3 program to Create a matrix with 
 # alternating rectangles of O and X 
   
@@ -309,7 +309,7 @@ if __name__ == '__main__':
 
 ## C#
 
-```
+```cs
 // C# code to demonstrate the working. 
 using System; 
   
@@ -412,7 +412,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to Create a matrix with 
 // alternating rectangles of O and X 

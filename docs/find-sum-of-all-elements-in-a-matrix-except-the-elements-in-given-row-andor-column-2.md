@@ -258,7 +258,7 @@ class GFG 
 
 ## C++
 
-```
+```cpp
 
 // An efficient C++ program to compute sum for given array of cell indexes 
 #include<bits/stdc++.h> 
@@ -430,7 +430,7 @@ if __name__ == "__main__":
 
 ## C#
 
-```
+```cs
 
 // An efficient C# program to compute  
 // sum for given array of cell indexes 

@@ -388,7 +388,7 @@ echo maximumSum($arr, $n);
 
 ## C++
 
-```
+```cpp
 
 // CPP program to find maximum sum 
 // by selecting a element from n arrays 

@@ -114,7 +114,7 @@ int main()
 
 ## Java
 
-```
+```java
 import java.io.*; 
 // Java program to print largest contiguous array sum 
 import java.util.*; 
@@ -148,7 +148,7 @@ class Kadane
 
 ## Python
 
-```
+```py
 # Python program to find maximum contiguous subarray 
    
 # Function to find the maximum contiguous subarray 
@@ -176,7 +176,7 @@ print "Maximum contiguous sum is", maxSubArraySum(a,len(a))
 
 ## C#
 
-```
+```cs
 // C# program to print largest  
 // contiguous array sum 
 using System; 
@@ -218,7 +218,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to print largest 
 // contiguous array sum 
@@ -263,7 +263,7 @@ Maximum contiguous sum is 7
 
 ## C++
 
-```
+```cpp
 int maxSubArraySum(int a[], int size) 
 { 
    int max_so_far = 0, max_ending_here = 0; 
@@ -284,7 +284,7 @@ int maxSubArraySum(int a[], int size)
 
 ## Java
 
-```
+```java
 static int maxSubArraySum(int a[],int size)  
 {  
       
@@ -311,7 +311,7 @@ static int maxSubArraySum(int a[],int size) 
 
 ## Python
 
-```
+```py
 def maxSubArraySum(a,size): 
       
     max_so_far = 0
@@ -332,7 +332,7 @@ def maxSubArraySum(a,size):
 
 ## C#
 
-```
+```cs
 static int maxSubArraySum(int[] a, 
                           int size)  
 {  
@@ -360,7 +360,7 @@ return max_so_far; 
 
 ## PHP
 
-```
+```php
 <?php  
 function maxSubArraySum(&$a, $size) 
 { 
@@ -394,7 +394,7 @@ Maximum contiguous sum is 7
 
 ## C++
 
-```
+```cpp
 int maxSubArraySum(int a[], int size) 
 { 
    int max_so_far = 0, max_ending_here = 0; 
@@ -415,7 +415,7 @@ int maxSubArraySum(int a[], int size)
 
 ## Java
 
-```
+```java
 static int maxSubArraySum(int a[],int size)  
 {  
       
@@ -442,7 +442,7 @@ static int maxSubArraySum(int a[],int size) 
 
 ## Python
 
-```
+```py
 def maxSubArraySum(a,size): 
       
     max_so_far = 0
@@ -463,7 +463,7 @@ def maxSubArraySum(a,size):
 
 ## C#
 
-```
+```cs
 static int maxSubArraySum(int[] a, 
                           int size)  
 {  
@@ -491,7 +491,7 @@ return max_so_far; 
 
 ## PHP
 
-```
+```php
 <?php  
 function maxSubArraySum(&$a, $size) 
 { 

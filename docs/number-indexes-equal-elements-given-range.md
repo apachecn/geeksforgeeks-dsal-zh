@@ -79,7 +79,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to count the number of  
 // indexes in range L R such that  
 // Ai = Ai+1 
@@ -167,7 +167,7 @@ print(answer_query(a, n, L, R))
 
 ## C#
 
-```
+```cs
 // C# program to count the number of  
 // indexes in range L R such that  
 // Ai = Ai+1 
@@ -219,7 +219,7 @@ class GFG {
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to count the  
 // number of indexes in  
@@ -279,7 +279,7 @@ echo (answer_query($a, $n, 
 
 ## C++
 
-```
+```cpp
 // CPP program to count the number of indexes 
 // in range L R such that Ai=Ai+1 
 #include <bits/stdc++.h> 
@@ -339,7 +339,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to count 
 // the number of indexes 
 // in range L R such that 
@@ -409,7 +409,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 # Python program to count  
 # the number of indexes in  
 # range L R such that Ai=Ai+1 
@@ -473,7 +473,7 @@ print (answer_query(L, R))
 
 ## C#
 
-```
+```cs
 // C# program to count the  
 // number of indexes in  
 // range L R such that Ai=Ai+1 
@@ -545,7 +545,7 @@ class GFG
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to count the  
 // number of indexes in  

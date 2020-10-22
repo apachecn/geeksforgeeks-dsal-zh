@@ -151,7 +151,7 @@ int main()
 
 ## C
 
-```
+```c
 // C++ program to find 4 elements
 // with given sum
 #include <stdio.h>
@@ -283,7 +283,7 @@ int main()
 
 ## C++
 
-```
+```cpp
 // A hashing based  CPP program
 // to find if there are
 // four elements with given sum.
@@ -341,7 +341,7 @@ int main()
 
 ## Java
 
-```
+```java
 // A hashing based Java program to find
 // if there are four elements with given sum.
 import java.util.HashMap;
@@ -410,7 +410,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 # A hashing based Python program to find if there are
 # four elements with given summ.
  
@@ -457,7 +457,7 @@ findFourElements(arr, n, X)
 
 ## C#
 
-```
+```cs
 // A hashing based C# program to find
 // if there are four elements with given sum.
 using System;
@@ -560,7 +560,7 @@ class GFG {
 
 ## Java
 
-```
+```java
 // Java prgram to find four 
 // elements with the given sum
 import java.util.*;

@@ -372,7 +372,7 @@ hence, f(i, j) = -(A[i] - i) + (A[j] - j)
 
 ## C++
 
-```
+```cpp
 
 // C++ program to calculate the maximum 
 // absolute difference of an array. 
@@ -416,7 +416,7 @@ int main()
 
 ## Java
 
-```
+```java
 // Java program to calculate the maximum 
 // absolute difference of an array. 
 public class MaximumAbsoluteDifference 
@@ -461,7 +461,7 @@ public class MaximumAbsoluteDifference
 
 ## Python3
 
-```
+```py
 # Python program to 
 # calculate the maximum 
 # absolute difference 
@@ -508,7 +508,7 @@ print(maxDistance(array))
 
 ## C#
 
-```
+```cs
 // C# program to calculate the maximum 
 // absolute difference of an array. 
 using System; 
@@ -555,7 +555,7 @@ public class MaximumAbsoluteDifference
 
 ## PHP
 
-```
+```php
 <?php 
 // PHP program to calculate the maximum 
 // absolute difference of an array. 

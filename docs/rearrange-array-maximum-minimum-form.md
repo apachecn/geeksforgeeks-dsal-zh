@@ -149,7 +149,7 @@ public class GFG
 
 ## Python
 
-```
+```py
 
 # Python program to rearrange an array in minimum 
 # maximum form 
