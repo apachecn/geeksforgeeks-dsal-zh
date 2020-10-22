@@ -1,8 +1,8 @@
-# 程序检查对合矩阵
+# 检查对合矩阵的程序
 
 > 原文： [https://www.geeksforgeeks.org/program-check-involutory-matrix/](https://www.geeksforgeeks.org/program-check-involutory-matrix/)
 
-给定一个矩阵，任务是检查矩阵是否为非强制矩阵。
+给定一个矩阵，任务是检查矩阵是否为对合矩阵。
 
 [**对合矩阵**](https://en.wikipedia.org/wiki/Involutory_matrix)：如果矩阵本身相乘返回恒等矩阵，则称该矩阵为对合矩阵。 对合矩阵是其自身的逆矩阵。 如果`A * A ＝ I`，则矩阵`A`被称为​​对合矩阵。 `I`是单位矩阵。
 

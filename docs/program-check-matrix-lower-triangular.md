@@ -1,4 +1,4 @@
-# 程序检查矩阵是否为下三角
+# 检查矩阵是否为下三角的程序
 
 > 原文： [https://www.geeksforgeeks.org/program-check-matrix-lower-triangular/](https://www.geeksforgeeks.org/program-check-matrix-lower-triangular/)
 

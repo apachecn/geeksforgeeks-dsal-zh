@@ -1,4 +1,4 @@
-# 查询值在给定范围内的数组元素的计数
+# 计算值在给定范围内的数组元素的数量
 
 > 原文： [https://www.geeksforgeeks.org/queries-counts-array-elements-values-given-range/](https://www.geeksforgeeks.org/queries-counts-array-elements-values-given-range/)
 

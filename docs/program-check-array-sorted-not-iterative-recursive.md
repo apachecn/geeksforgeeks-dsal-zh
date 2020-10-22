@@ -1,4 +1,4 @@
-# 程序检查数组是否排序（迭代和递归）
+# 检查数组是否排序的程序（迭代和递归）
 
 > 原文： [https://www.geeksforgeeks.org/program-check-array-sorted-not-iterative-recursive/](https://www.geeksforgeeks.org/program-check-array-sorted-not-iterative-recursive/)
 

@@ -1,4 +1,4 @@
-# 程序检查矩阵是否为上三角
+# 检查矩阵是否为上三角的程序
 
 > 原文： [https://www.geeksforgeeks.org/program-check-matrix-upper-triangular/](https://www.geeksforgeeks.org/program-check-matrix-upper-triangular/)
 

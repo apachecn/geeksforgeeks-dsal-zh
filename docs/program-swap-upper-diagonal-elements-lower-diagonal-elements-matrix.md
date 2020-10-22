@@ -1,4 +1,4 @@
-# 程序用矩阵的下对角元素交换上对角元素。
+# 将矩阵的下对角和上对角元素交换的程序
 
 > 原文： [https://www.geeksforgeeks.org/program-swap-upper-diagonal-elements-lower-diagonal-elements-matrix/](https://www.geeksforgeeks.org/program-swap-upper-diagonal-elements-lower-diagonal-elements-matrix/)
 

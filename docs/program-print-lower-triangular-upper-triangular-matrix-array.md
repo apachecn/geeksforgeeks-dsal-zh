@@ -1,4 +1,4 @@
-# 程序打印数组的下三角和上三角矩阵
+# 打印数组的下三角和上三角矩阵的程序
 
 > 原文： [https://www.geeksforgeeks.org/program-print-lower-triangular-upper-triangular-matrix-array/](https://www.geeksforgeeks.org/program-print-lower-triangular-upper-triangular-matrix-array/)
 

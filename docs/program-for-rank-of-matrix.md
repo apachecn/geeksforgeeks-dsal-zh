@@ -1,4 +1,4 @@
-# 矩阵秩程序
+# 矩阵秩的程序
 
 > 原文： [https://www.geeksforgeeks.org/program-for-rank-of-matrix/](https://www.geeksforgeeks.org/program-for-rank-of-matrix/)
 

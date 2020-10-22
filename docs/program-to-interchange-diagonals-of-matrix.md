@@ -1,4 +1,4 @@
-# 矩阵对角线互换程序
+# 互换矩阵对角线程序
 
 > 原文： [https://www.geeksforgeeks.org/program-to-interchange-diagonals-of-matrix/](https://www.geeksforgeeks.org/program-to-interchange-diagonals-of-matrix/)
 

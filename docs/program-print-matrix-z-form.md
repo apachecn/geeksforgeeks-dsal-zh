@@ -1,4 +1,4 @@
-# 程序以 Z 格式打印矩阵
+# 以 Z 字形打印矩阵的程序
 
 > 原文： [https://www.geeksforgeeks.org/program-print-matrix-z-form/](https://www.geeksforgeeks.org/program-print-matrix-z-form/)
 

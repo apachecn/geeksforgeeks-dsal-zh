@@ -1,4 +1,4 @@
-# 矩阵的标量乘法程序
+# 矩阵的标量乘法的程序
 
 > 原文： [https://www.geeksforgeeks.org/program-for-scalar-multiplication-of-a-matrix/](https://www.geeksforgeeks.org/program-for-scalar-multiplication-of-a-matrix/)
 

@@ -1,4 +1,4 @@
-# 程序来查找数组的最小（或最大）元素
+# 查找数组的最小（或最大）元素的程序
 
 > 原文： [https://www.geeksforgeeks.org/program-find-minimum-maximum-element-array/](https://www.geeksforgeeks.org/program-find-minimum-maximum-element-array/)
 

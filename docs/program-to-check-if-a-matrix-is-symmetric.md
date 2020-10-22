@@ -1,4 +1,4 @@
-# 程序检查矩阵是否对称
+# 检查矩阵是否对称的程序
 
 > 原文： [https://www.geeksforgeeks.org/program-to-check-if-a-matrix-is-symmetric/](https://www.geeksforgeeks.org/program-to-check-if-a-matrix-is-symmetric/)
 
