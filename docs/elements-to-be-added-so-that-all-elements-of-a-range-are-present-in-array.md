@@ -1,4 +1,4 @@
-# 要添加的元素，以便数组中存在某个范围的所有元素
+# 添加元素以便数组中存在某个范围的所有元素
 
 > 原文： [https://www.geeksforgeeks.org/elements-to-be-added-so-that-all-elements-of-a-range-are-present-in-array/](https://www.geeksforgeeks.org/elements-to-be-added-so-that-all-elements-of-a-range-are-present-in-array/)
 

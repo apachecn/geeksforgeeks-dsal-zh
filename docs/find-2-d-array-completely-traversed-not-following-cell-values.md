@@ -1,4 +1,4 @@
-# 通过遵循单元格值来查找二维数组是否被完全遍历
+# 通过跟踪单元格的值来判断二维数组是否被完全遍历
 
 > 原文： [https://www.geeksforgeeks.org/find-2-d-array-completely-traversed-not-following-cell-values/](https://www.geeksforgeeks.org/find-2-d-array-completely-traversed-not-following-cell-values/)
 

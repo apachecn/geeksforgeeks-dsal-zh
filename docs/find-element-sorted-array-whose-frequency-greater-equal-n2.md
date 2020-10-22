@@ -1,4 +1,4 @@
-# 在频率大于或等于`n / 2`的排序数组中查找元素。
+# 在排序数组中查找频率大于或等于`n / 2`的元素。
 
 > 原文： [https://www.geeksforgeeks.org/find-element-sorted-array-whose-frequency-greater-equal-n2/](https://www.geeksforgeeks.org/find-element-sorted-array-whose-frequency-greater-equal-n2/)
 

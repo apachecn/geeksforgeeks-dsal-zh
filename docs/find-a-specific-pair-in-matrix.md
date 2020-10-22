@@ -1,4 +1,4 @@
-# 在矩阵中查找特定对
+# 在矩阵中查找特定偶对
 
 > 原文： [https://www.geeksforgeeks.org/find-a-specific-pair-in-matrix/](https://www.geeksforgeeks.org/find-a-specific-pair-in-matrix/)
 

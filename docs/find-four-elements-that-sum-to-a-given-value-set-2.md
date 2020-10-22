@@ -1,4 +1,4 @@
-# 找到四个总和为给定值的元素 | 系列 2
+# 找到总和为给定值的四个元素 | 系列 2
 
 > 原文： [https://www.geeksforgeeks.org/find-four-elements-that-sum-to-a-given-value-set-2/](https://www.geeksforgeeks.org/find-four-elements-that-sum-to-a-given-value-set-2/)
 

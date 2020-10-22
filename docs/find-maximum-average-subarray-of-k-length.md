@@ -1,4 +1,4 @@
-# 查找`k`个长度的最大平均子数组
+# 查找长度为`k`的最大平均子数组
 
 > 原文： [https://www.geeksforgeeks.org/find-maximum-average-subarray-of-k-length/](https://www.geeksforgeeks.org/find-maximum-average-subarray-of-k-length/)
 

@@ -1,4 +1,4 @@
-# 查找数组中的对数`(x, y)`，使得`x ^ y > y ^ x`
+# 查找数组中的偶对`(x, y)`的数量，使得`x ^ y > y ^ x`
 
 > 原文： [https://www.geeksforgeeks.org/find-number-pairs-xy-yx/](https://www.geeksforgeeks.org/find-number-pairs-xy-yx/)
 

@@ -1,4 +1,4 @@
-# 在三个排序的数组中查找共同的元素
+# 在三个排序的数组中查找公共元素
 
 > 原文： [https://www.geeksforgeeks.org/find-common-elements-three-sorted-arrays/](https://www.geeksforgeeks.org/find-common-elements-three-sorted-arrays/)
 

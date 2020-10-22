@@ -1,4 +1,4 @@
-# 如果我们在数组中每次成功搜索后加倍，则找到最终值
+# 如果我们在数组中每次成功搜索后加倍，查找最终值
 
 > 原文： [https://www.geeksforgeeks.org/find-final-value-if-we-double-after-every-successful-search-in-array/](https://www.geeksforgeeks.org/find-final-value-if-we-double-after-every-successful-search-in-array/)
 

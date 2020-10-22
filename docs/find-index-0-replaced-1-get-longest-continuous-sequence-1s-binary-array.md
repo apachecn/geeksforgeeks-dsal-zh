@@ -1,4 +1,4 @@
-# 查找索引 0 替换为 1，以获得二进制数组中最长的连续序列 1
+# 查找 0 的索引，将其替换为 1 来在二进制数组中获得 1 的最长连续序列
 
 > 原文： [https://www.geeksforgeeks.org/find-index-0-replaced-1-get-longest-continuous-sequence-1s-binary-array/](https://www.geeksforgeeks.org/find-index-0-replaced-1-get-longest-continuous-sequence-1s-binary-array/)
 

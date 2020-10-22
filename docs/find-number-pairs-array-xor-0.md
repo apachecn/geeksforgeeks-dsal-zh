@@ -1,4 +1,4 @@
-# 查找数组中对的数量，以使它们的 XOR 为 0
+# 查找数组中的偶对数量，以使它们的 XOR 为 0
 
 > 原文： [https://www.geeksforgeeks.org/find-number-pairs-array-xor-0/](https://www.geeksforgeeks.org/find-number-pairs-array-xor-0/)
 

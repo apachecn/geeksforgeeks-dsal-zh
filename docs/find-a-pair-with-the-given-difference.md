@@ -1,4 +1,4 @@
-# 找到具有给定差异的一对
+# 找到具有给定差异的偶对
 
 > 原文： [https://www.geeksforgeeks.org/find-a-pair-with-the-given-difference/](https://www.geeksforgeeks.org/find-a-pair-with-the-given-difference/)
 

@@ -1,4 +1,4 @@
-# 查找峰元素
+# 查找峰值元素
 
 > 原文： [https://www.geeksforgeeks.org/find-a-peak-in-a-given-array/](https://www.geeksforgeeks.org/find-a-peak-in-a-given-array/)
 

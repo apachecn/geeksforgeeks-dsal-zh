@@ -1,4 +1,4 @@
-# 查找矩阵中图案的方向
+# 查找矩阵中模式的方向
 
 > 原文： [https://www.geeksforgeeks.org/find-orientation-of-a-pattern-in-a-matrix/](https://www.geeksforgeeks.org/find-orientation-of-a-pattern-in-a-matrix/)
 

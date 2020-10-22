@@ -1,4 +1,4 @@
-# 查找数组中至少有两个大元素的所有元素
+# 在至少有两个较大元素的数组中查找所有元素
 
 > 原文： [https://www.geeksforgeeks.org/find-elements-array-least-two-greater-elements/](https://www.geeksforgeeks.org/find-elements-array-least-two-greater-elements/)
 

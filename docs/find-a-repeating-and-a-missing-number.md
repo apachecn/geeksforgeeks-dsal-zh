@@ -1,4 +1,4 @@
-# 找到重复的和丢失的 | 3 种新增方法
+# 找到重复和丢失数值 | 3 种新增方法
 
 > 原文： [https://www.geeksforgeeks.org/find-a-repeating-and-a-missing-number/](https://www.geeksforgeeks.org/find-a-repeating-and-a-missing-number/)
 

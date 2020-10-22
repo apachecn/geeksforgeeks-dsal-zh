@@ -1,4 +1,4 @@
-# 查找一个三元组，将其总和成给定值
+# 查找总和为给定值的三元组
 
 > 原文： [https://www.geeksforgeeks.org/find-a-triplet-that-sum-to-a-given-value/](https://www.geeksforgeeks.org/find-a-triplet-that-sum-to-a-given-value/)
 

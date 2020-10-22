@@ -1,4 +1,4 @@
-# 查找给定的矩阵是否为 Toeplitz
+# 判断给定的矩阵是否为 Toeplitz
 
 > 原文： [https://www.geeksforgeeks.org/find-if-given-matrix-is-toeplitz-or-not/](https://www.geeksforgeeks.org/find-if-given-matrix-is-toeplitz-or-not/)
 
