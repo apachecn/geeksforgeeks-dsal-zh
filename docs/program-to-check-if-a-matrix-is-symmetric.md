@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/program-to-check-if-a-matrix-is-symmetric/](https://www.geeksforgeeks.org/program-to-check-if-a-matrix-is-symmetric/)
 
-如果矩阵的转置与给定矩阵相同，则称方矩阵为**对称矩阵**。 **对称矩阵**可以通过将行更改为列，将列更改为行来获得。
+如果矩阵的转置与给定矩阵相同，则称方阵为**对称矩阵**。 **对称矩阵**可以通过将行更改为列，将列更改为行来获得。
 
 例子：
 

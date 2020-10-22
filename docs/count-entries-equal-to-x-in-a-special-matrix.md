@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/count-entries-equal-to-x-in-a-special-matrix/](https://www.geeksforgeeks.org/count-entries-equal-to-x-in-a-special-matrix/)
 
-您将得到`n`阶方矩阵（`matrix[][]`），其中`matrix[i][j] = i * j`。 查找具有等于给定数字`x`的条目的单元格数。
+您将得到`n`阶方阵（`matrix[][]`），其中`matrix[i][j] = i * j`。 查找具有等于给定数字`x`的条目的单元格数。
 
 注意：矩阵的索引从 1 开始，即`1 <= i, j < = n`。
 

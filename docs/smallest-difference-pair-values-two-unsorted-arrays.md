@@ -1,4 +1,4 @@
-# 两个未排序数组之间的最小差值对
+# 两个未排序数组之间的差值最小的偶对
 
 > 原文： [https://www.geeksforgeeks.org/smallest-difference-pair-values-two-unsorted-arrays/](https://www.geeksforgeeks.org/smallest-difference-pair-values-two-unsorted-arrays/)
 

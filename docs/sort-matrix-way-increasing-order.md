@@ -1,4 +1,4 @@
-# 以各种方式对矩阵进行排序
+# 以各种方式对矩阵排序
 
 > 原文： [https://www.geeksforgeeks.org/sort-matrix-way-increasing-order/](https://www.geeksforgeeks.org/sort-matrix-way-increasing-order/)
 

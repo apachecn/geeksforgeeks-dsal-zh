@@ -1,4 +1,4 @@
-# 不使用多余空间将`2n`个整数随机排列为`a1-b1-a2-b2-a3-b3-....-bn`
+# 不使用多余空间将`2n`个整数打乱为`a1-b1-a2-b2-a3-b3-....-bn`
 
 > 原文： [https://www.geeksforgeeks.org/shuffle-2n-integers-a1-b1-a2-b2-a3-b3-bn-without-using-extra-space/](https://www.geeksforgeeks.org/shuffle-2n-integers-a1-b1-a2-b2-a3-b3-bn-without-using-extra-space/)
 

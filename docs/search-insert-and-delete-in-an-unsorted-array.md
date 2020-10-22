@@ -1,4 +1,4 @@
-# 搜索，插入和删除未排序的数组
+# 在未排序的数组中搜索，插入和删除
 
 > 原文： [https://www.geeksforgeeks.org/search-insert-and-delete-in-an-unsorted-array/](https://www.geeksforgeeks.org/search-insert-and-delete-in-an-unsorted-array/)
 

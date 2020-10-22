@@ -1,4 +1,4 @@
-# 矩阵中间行和列的总和
+# 矩阵的中间行和列的总和
 
 > 原文： [https://www.geeksforgeeks.org/sum-middle-row-column-matrix/](https://www.geeksforgeeks.org/sum-middle-row-column-matrix/)
 

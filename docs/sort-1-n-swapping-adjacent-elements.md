@@ -1,4 +1,4 @@
-# 通过交换相邻元素将 1 排序为`N`
+# 通过交换相邻元素从 1 到`N`排序
 
 > 原文： [https://www.geeksforgeeks.org/sort-1-n-swapping-adjacent-elements/](https://www.geeksforgeeks.org/sort-1-n-swapping-adjacent-elements/)
 

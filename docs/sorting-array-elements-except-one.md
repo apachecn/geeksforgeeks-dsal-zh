@@ -1,4 +1,4 @@
-# 对除一个以外的所有数组元素进行排序
+# 除一个元素以外，对所有数组元素排序
 
 > 原文： [https://www.geeksforgeeks.org/sorting-array-elements-except-one/](https://www.geeksforgeeks.org/sorting-array-elements-except-one/)
 

@@ -1,4 +1,4 @@
-# 间隔之和与除数的更新
+# 间隔之和以及带有除数的更新
 
 > 原文： [https://www.geeksforgeeks.org/sum-interval-update-number-divisors/](https://www.geeksforgeeks.org/sum-interval-update-number-divisors/)
 

@@ -1,4 +1,4 @@
-# 每个元素是其行号和列号的绝对差的矩阵总和
+# 矩阵总和，其中每个元素是其行号和列号的绝对差
 
 > 原文： [https://www.geeksforgeeks.org/sum-matrix-element-absolute-difference-row-column-numbers/](https://www.geeksforgeeks.org/sum-matrix-element-absolute-difference-row-column-numbers/)
 

@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/c-program-subtraction-matices/](https://www.geeksforgeeks.org/c-program-subtraction-matices/)
 
-下面的程序减去大小为`4 * 4`的两个平方矩阵，我们可以针对不同的维数更改`N`。
+下面的程序减去大小为`4 * 4`的两个方阵，我们可以针对不同的维数更改`N`。
 
 ## C++ 
 

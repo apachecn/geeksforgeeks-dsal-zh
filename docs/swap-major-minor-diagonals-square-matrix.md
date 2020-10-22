@@ -1,4 +1,4 @@
-# 交换方矩阵的主要和次要对角线
+# 交换方阵的主要和次要对角线
 
 > 原文： [https://www.geeksforgeeks.org/swap-major-minor-diagonals-square-matrix/](https://www.geeksforgeeks.org/swap-major-minor-diagonals-square-matrix/)
 

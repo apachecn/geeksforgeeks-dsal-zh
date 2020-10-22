@@ -4,7 +4,7 @@
 
 给定一个`N * N`矩阵，任务是检查矩阵是否为幂等矩阵。
 
-[**幂等矩阵**](https://en.wikipedia.org/wiki/Idempotent_matrix)：如果矩阵与自身相乘返回相同的矩阵，则称该矩阵为幂等矩阵。 当且仅当`M * M = M`时，矩阵`M`才是幂等矩阵。 在幂等矩阵中，`M`是平方矩阵。
+[**幂等矩阵**](https://en.wikipedia.org/wiki/Idempotent_matrix)：如果矩阵与自身相乘返回相同的矩阵，则称该矩阵为幂等矩阵。 当且仅当`M * M = M`时，矩阵`M`才是幂等矩阵。 在幂等矩阵中，`M`是方阵。
 
 ![idempotent matrix](img/8f86cce9b07f210db176de40f0d9888b.png)
 

@@ -1,4 +1,4 @@
-# 对 0、1 和 2 的数组进行排序
+# 排序 0、1 和 2 的数组
 
 > 原文： [https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/](https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/)
 

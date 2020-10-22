@@ -1,4 +1,4 @@
-# 矩阵对角元素的正方形
+# 矩阵对角元素的平方
 
 > 原文： [https://www.geeksforgeeks.org/squares-of-matrix-diagonal-elements/](https://www.geeksforgeeks.org/squares-of-matrix-diagonal-elements/)
 

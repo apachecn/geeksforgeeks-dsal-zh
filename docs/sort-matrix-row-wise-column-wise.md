@@ -1,4 +1,4 @@
-# 按行和列对矩阵进行排序
+# 按行和列对矩阵排序
 
 > 原文： [https://www.geeksforgeeks.org/sort-matrix-row-wise-column-wise/](https://www.geeksforgeeks.org/sort-matrix-row-wise-column-wise/)
 

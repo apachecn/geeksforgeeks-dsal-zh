@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/strassens-matrix-multiplication/](https://www.geeksforgeeks.org/strassens-matrix-multiplication/)
 
-给定两个大小分别为`n x n`的平方矩阵`A`和`B`，找到它们的乘法矩阵。
+给定两个大小分别为`n x n`的方阵`A`和`B`，找到它们的乘法矩阵。
 
 **朴素的方法**：
 
@@ -31,7 +31,7 @@ void multiply(int A[][N], int B[][N], int C[][N])
 
 **分治**：
 
-以下是简单的分治方法来将两个平方矩阵相乘。
+以下是简单的分治方法来将两个方阵相乘。
 
 1.  如下图所示，将矩阵`A`和`B`划分为大小为`N / 2 x N / 2`的 4 个子矩阵。
 

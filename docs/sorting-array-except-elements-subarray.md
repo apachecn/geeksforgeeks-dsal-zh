@@ -1,4 +1,4 @@
-# 除子数组中的元素外，对数组进行排序
+# 除子数组中的元素外，对数组排序
 
 > 原文： [https://www.geeksforgeeks.org/sorting-array-except-elements-subarray/](https://www.geeksforgeeks.org/sorting-array-except-elements-subarray/)
 

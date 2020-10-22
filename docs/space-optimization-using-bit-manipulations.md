@@ -1,4 +1,4 @@
-# 使用位操作进行空间优化
+# 使用位操作的空间优化
 
 > 原文： [https://www.geeksforgeeks.org/space-optimization-using-bit-manipulations/](https://www.geeksforgeeks.org/space-optimization-using-bit-manipulations/)
 

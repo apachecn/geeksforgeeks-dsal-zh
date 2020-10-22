@@ -1,4 +1,4 @@
-# 使用 STL 根据因素数量进行排序
+# 使用 STL 根据因子数量进行排序
 
 > 原文： [https://www.geeksforgeeks.org/sort-basis-number-factors-using-stl/](https://www.geeksforgeeks.org/sort-basis-number-factors-using-stl/)
 

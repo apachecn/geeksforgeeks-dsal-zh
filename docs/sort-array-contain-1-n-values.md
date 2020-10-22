@@ -1,8 +1,8 @@
-# 对包含 1 到`n`个值的数组进行排序
+# 对包含 1 到`n`的数组进行排序
 
 > 原文： [https://www.geeksforgeeks.org/sort-array-contain-1-n-values/](https://www.geeksforgeeks.org/sort-array-contain-1-n-values/)
 
-您给定了一个包含 1 到`n`个元素的数组，您的任务是以一种有效的方式对该数组进行排序，而无需替换为 1 到`n`个数字。
+您给定了一个包含 1 到`n`元素的数组，您的任务是以一种有效的方式对该数组进行排序，而无需替换为 1 到`n`数字。
 
 **示例**：
 
