@@ -1,4 +1,4 @@
-# 与给定的总和和距末端的最大最短距离配对
+# 具有给定总和和距离结尾的最大最短距离的偶对
 
 > 原文： [https://www.geeksforgeeks.org/print-maximum-shortest-distance/](https://www.geeksforgeeks.org/print-maximum-shortest-distance/)
 

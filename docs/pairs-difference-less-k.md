@@ -1,4 +1,4 @@
-# 差异小于`K`的对
+# 差异小于`K`的偶对
 
 > 原文： [https://www.geeksforgeeks.org/pairs-difference-less-k/](https://www.geeksforgeeks.org/pairs-difference-less-k/)
 

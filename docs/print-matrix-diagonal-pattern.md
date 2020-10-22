@@ -1,4 +1,4 @@
-# 以对角线图案打印矩阵
+# 以对角线模式打印矩阵
 
 > 原文： [https://www.geeksforgeeks.org/print-matrix-diagonal-pattern/](https://www.geeksforgeeks.org/print-matrix-diagonal-pattern/)
 

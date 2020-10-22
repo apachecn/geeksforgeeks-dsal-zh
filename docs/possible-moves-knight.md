@@ -1,4 +1,4 @@
-# 骑士的可能举动
+# 骑士的可能移动
 
 > 原文： [https://www.geeksforgeeks.org/possible-moves-knight/](https://www.geeksforgeeks.org/possible-moves-knight/)
 

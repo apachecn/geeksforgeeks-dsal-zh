@@ -1,4 +1,4 @@
-# 给定数组范围的 XOR 之和最大的数字
+# 给定数组范围的 XOR 与它之和最大的数字
 
 > 原文： [https://www.geeksforgeeks.org/number-whose-sum-of-xor-with-given-array-range-is-maximum/](https://www.geeksforgeeks.org/number-whose-sum-of-xor-with-given-array-range-is-maximum/)
 

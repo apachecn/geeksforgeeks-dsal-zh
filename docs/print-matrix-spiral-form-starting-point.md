@@ -1,4 +1,4 @@
-# 从点开始以螺旋形式打印矩阵
+# 从起始点以螺旋形式打印矩阵
 
 > 原文： [https://www.geeksforgeeks.org/print-matrix-spiral-form-starting-point/](https://www.geeksforgeeks.org/print-matrix-spiral-form-starting-point/)
 

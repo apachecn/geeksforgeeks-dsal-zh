@@ -1,4 +1,4 @@
-# 在线检查回文的在线算法
+# 检查回文的在线算法
 
 > 原文： [https://www.geeksforgeeks.org/online-algorithm-for-checking-palindrome-in-a-stream/](https://www.geeksforgeeks.org/online-algorithm-for-checking-palindrome-in-a-stream/)
 

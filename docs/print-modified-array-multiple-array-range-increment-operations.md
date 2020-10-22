@@ -1,4 +1,4 @@
-# 多次数组范围递增操作后打印修改后的数组
+# 在多次数组范围递增操作后打印修改后的数组
 
 > 原文： [https://www.geeksforgeeks.org/print-modified-array-multiple-array-range-increment-operations/](https://www.geeksforgeeks.org/print-modified-array-multiple-array-range-increment-operations/)
 

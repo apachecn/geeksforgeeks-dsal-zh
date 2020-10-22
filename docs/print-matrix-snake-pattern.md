@@ -1,4 +1,4 @@
-# 以蛇形图案打印矩阵
+# 以蛇形模式打印矩阵
 
 > 原文： [https://www.geeksforgeeks.org/print-matrix-snake-pattern/](https://www.geeksforgeeks.org/print-matrix-snake-pattern/)
 

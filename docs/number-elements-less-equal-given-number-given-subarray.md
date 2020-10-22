@@ -1,4 +1,4 @@
-# 给定子数组中小于或等于给定数目的元素数
+# 给定子数组中小于或等于给定数字的元素数
 
 > 原文： [https://www.geeksforgeeks.org/number-elements-less-equal-given-number-given-subarray/](https://www.geeksforgeeks.org/number-elements-less-equal-given-number-given-subarray/)
 

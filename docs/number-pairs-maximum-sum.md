@@ -1,4 +1,4 @@
-# 最大和的对数
+# 具有最大和的偶对数量
 
 > 原文： [https://www.geeksforgeeks.org/number-pairs-maximum-sum/](https://www.geeksforgeeks.org/number-pairs-maximum-sum/)
 

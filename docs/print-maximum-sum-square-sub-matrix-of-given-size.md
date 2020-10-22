@@ -1,4 +1,4 @@
-# 打印给定大小的最大和平方子矩阵
+# 打印给定大小的最大和正方形子矩阵
 
 > 原文： [https://www.geeksforgeeks.org/print-maximum-sum-square-sub-matrix-of-given-size/](https://www.geeksforgeeks.org/print-maximum-sum-square-sub-matrix-of-given-size/)
 

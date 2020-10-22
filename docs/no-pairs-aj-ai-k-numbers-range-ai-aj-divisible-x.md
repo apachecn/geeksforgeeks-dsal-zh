@@ -1,4 +1,4 @@
-# 范围在`(a[i], a[j])`中，可被`x`整除的`k`个数字的对数（`a[j] >= a[i]`）
+# 范围在`(a[i], a[j])`中，可被`x`整除的`k`个数字的偶对数量（`a[j] >= a[i]`）
 
 > 原文： [https://www.geeksforgeeks.org/no-pairs-aj-ai-k-numbers-range-ai-aj-divisible-x/](https://www.geeksforgeeks.org/no-pairs-aj-ai-k-numbers-range-ai-aj-divisible-x/)
 

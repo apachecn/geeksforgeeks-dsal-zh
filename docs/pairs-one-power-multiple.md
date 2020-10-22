@@ -1,4 +1,4 @@
-# 配对使得一个是其他的幂倍
+# 一个元素是另一个的幂倍数的偶对
 
 > 原文： [https://www.geeksforgeeks.org/pairs-one-power-multiple/](https://www.geeksforgeeks.org/pairs-one-power-multiple/)
 
