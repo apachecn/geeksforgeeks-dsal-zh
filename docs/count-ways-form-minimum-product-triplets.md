@@ -1,4 +1,4 @@
-# 计数构成最小乘积三元组的方法
+# 计算构成最小乘积三元组的方法数量
 
 > 原文： [https://www.geeksforgeeks.org/count-ways-form-minimum-product-triplets/](https://www.geeksforgeeks.org/count-ways-form-minimum-product-triplets/)
 

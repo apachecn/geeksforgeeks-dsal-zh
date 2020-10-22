@@ -1,4 +1,4 @@
-# 计数获得给定的所需数组的最小步数
+# 计算获得给定的所需数组的最小步数
 
 > 原文： [https://www.geeksforgeeks.org/count-minimum-steps-get-given-desired-array/](https://www.geeksforgeeks.org/count-minimum-steps-get-given-desired-array/)
 

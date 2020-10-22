@@ -1,4 +1,4 @@
-# 计数给定总和的偶对
+# 计算给定总和的偶对数量
 
 > 原文： [https://www.geeksforgeeks.org/count-pairs-with-given-sum/](https://www.geeksforgeeks.org/count-pairs-with-given-sum/)
 

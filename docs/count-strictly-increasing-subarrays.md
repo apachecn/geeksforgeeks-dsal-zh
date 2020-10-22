@@ -1,4 +1,4 @@
-# 计数严格增加的子数组
+# 计算严格增加的子数组数量
 
 > 原文： [https://www.geeksforgeeks.org/count-strictly-increasing-subarrays/](https://www.geeksforgeeks.org/count-strictly-increasing-subarrays/)
 

@@ -1,4 +1,4 @@
-# 计数总和可被`k`整除的子矩阵
+# 计算总和可被`k`整除的子矩阵数量
 
 > 原文： [https://www.geeksforgeeks.org/count-sub-matrices-sum-divisible-k/](https://www.geeksforgeeks.org/count-sub-matrices-sum-divisible-k/)
 

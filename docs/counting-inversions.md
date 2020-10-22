@@ -1,4 +1,4 @@
-# 计数数组中的反转 | 系列 1（使用归并排序）
+# 计算数组中的反转数量 | 系列 1（使用归并排序）
 
 > 原文： [https://www.geeksforgeeks.org/counting-inversions/](https://www.geeksforgeeks.org/counting-inversions/)
 

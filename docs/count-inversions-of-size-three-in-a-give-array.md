@@ -1,4 +1,4 @@
-# 计数给定数组中大小为 3 的反转
+# 计算给定数组中大小为 3 的反转数量
 
 > 原文： [https://www.geeksforgeeks.org/count-inversions-of-size-three-in-a-give-array/](https://www.geeksforgeeks.org/count-inversions-of-size-three-in-a-give-array/)
 

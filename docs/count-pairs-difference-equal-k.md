@@ -1,4 +1,4 @@
-# 计数所有等于`k`的不同对
+算所有等于`k`的不同对的数量
 
 > 原文： [https://www.geeksforgeeks.org/count-pairs-difference-equal-k/](https://www.geeksforgeeks.org/count-pairs-difference-equal-k/)
 
