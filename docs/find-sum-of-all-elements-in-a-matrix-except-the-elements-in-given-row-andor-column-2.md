@@ -1,4 +1,4 @@
-# 查找矩阵中除给定单元格的行和/或列中的元素以外的所有元素的总和？
+# 查找矩阵中除了给定单元格的行和列中的元素以外的所有元素的总和
 
 > 原文： [https://www.geeksforgeeks.org/find-sum-of-all-elements-in-a-matrix-except-the-elements-in-given-row-andor-column-2/](https://www.geeksforgeeks.org/find-sum-of-all-elements-in-a-matrix-except-the-elements-in-given-row-andor-column-2/)
 

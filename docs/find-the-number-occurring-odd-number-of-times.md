@@ -1,4 +1,4 @@
-# 查找出现次数的奇数
+# 查找出现奇数次的数字
 
 > 原文： [https://www.geeksforgeeks.org/find-the-number-occurring-odd-number-of-times/](https://www.geeksforgeeks.org/find-the-number-occurring-odd-number-of-times/)
 

@@ -1,4 +1,4 @@
-# 查找最大数为 1 的二进制矩阵的行号
+# 查找 1 最多的二进制矩阵的行号
 
 > 原文： [https://www.geeksforgeeks.org/find-row-number-binary-matrix-maximum-number-1s/](https://www.geeksforgeeks.org/find-row-number-binary-matrix-maximum-number-1s/)
 

@@ -1,4 +1,4 @@
-# 在二进制矩阵中查找所有位形成的最大`"+"`的大小
+# 在二进制矩阵中查找所有 1 构成的最大`"+"`的大小
 
 > 原文： [https://www.geeksforgeeks.org/find-size-of-the-largest-formed-by-all-ones-in-a-binary-matrix/](https://www.geeksforgeeks.org/find-size-of-the-largest-formed-by-all-ones-in-a-binary-matrix/)
 

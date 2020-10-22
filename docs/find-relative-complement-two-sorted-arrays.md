@@ -1,8 +1,8 @@
-# 查找两个排序数组的相对补码
+# 查找两个排序数组的相对补集
 
 > 原文： [https://www.geeksforgeeks.org/find-relative-complement-two-sorted-arrays/](https://www.geeksforgeeks.org/find-relative-complement-two-sorted-arrays/)
 
-给定两个大小分别为`m`和`n`的排序数组`arr1`和`arr2`。 我们需要找到两个数组的相对补码，即`arr1 – arr2`，这意味着我们需要找到`arr1`中存在但`arr2`中不存在的所有元素。
+给定两个大小分别为`m`和`n`的排序数组`arr1`和`arr2`。 我们需要找到两个数组的相对补集，即`arr1 – arr2`，这意味着我们需要找到`arr1`中存在但`arr2`中不存在的所有元素。
 
 例子：
 

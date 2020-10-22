@@ -1,4 +1,4 @@
-# 寻找最小的遗失数字
+# 寻找最小的缺失数字
 
 > 原文： [https://www.geeksforgeeks.org/find-the-first-missing-number/](https://www.geeksforgeeks.org/find-the-first-missing-number/)
 

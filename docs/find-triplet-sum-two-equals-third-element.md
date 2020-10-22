@@ -1,4 +1,4 @@
-# 找到一个三元组，使得两个和等于第三元素
+# 查找一个三元组，使得前两个元素的和等于第三元素
 
 > 原文： [https://www.geeksforgeeks.org/find-triplet-sum-two-equals-third-element/](https://www.geeksforgeeks.org/find-triplet-sum-two-equals-third-element/)
 

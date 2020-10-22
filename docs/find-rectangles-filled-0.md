@@ -1,4 +1,4 @@
-# 查找所有填充有 0 的矩形
+# 查找所有填充为 0 的矩形
 
 > 原文： [https://www.geeksforgeeks.org/find-rectangles-filled-0/](https://www.geeksforgeeks.org/find-rectangles-filled-0/)
 

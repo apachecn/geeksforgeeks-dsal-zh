@@ -1,4 +1,4 @@
-# 在无数排序数组中查找元素的位置
+# 在无限排序数组中查找元素的位置
 
 > 原文： [https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/](https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/)
 

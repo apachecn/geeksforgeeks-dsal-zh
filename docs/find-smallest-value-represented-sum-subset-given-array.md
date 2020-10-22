@@ -1,4 +1,4 @@
-# 查找不能表示为给定数组的任何子集之和的最小正整数值
+# 查找最小正整数值，它不能表示为给定数组的任何子集之和
 
 > 原文： [https://www.geeksforgeeks.org/find-smallest-value-represented-sum-subset-given-array/](https://www.geeksforgeeks.org/find-smallest-value-represented-sum-subset-given-array/)
 

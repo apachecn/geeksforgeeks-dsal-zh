@@ -1,4 +1,4 @@
-# 检查是否可以从给定数组形成算术级数
+# 检查是否可以从给定数组生成算术级数
 
 > 原文： [https://www.geeksforgeeks.org/check-whether-arithmetic-progression-can-formed-given-array/](https://www.geeksforgeeks.org/check-whether-arithmetic-progression-can-formed-given-array/)
 

@@ -1,4 +1,4 @@
-# 找到要翻转的零，以使连续的 1 的数目最大化
+# 找到要翻转的零，使连续的 1 的数量最大
 
 > 原文： [https://www.geeksforgeeks.org/find-zeroes-to-be-flipped-so-that-number-of-consecutive-1s-is-maximized/](https://www.geeksforgeeks.org/find-zeroes-to-be-flipped-so-that-number-of-consecutive-1s-is-maximized/)
 

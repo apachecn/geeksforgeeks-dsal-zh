@@ -1,4 +1,4 @@
-# 从给定序列中形成最小数
+# 从给定序列中生成最小数
 
 > 原文： [https://www.geeksforgeeks.org/form-minimum-number-from-given-sequence/](https://www.geeksforgeeks.org/form-minimum-number-from-given-sequence/)
 

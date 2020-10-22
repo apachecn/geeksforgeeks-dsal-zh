@@ -1,4 +1,4 @@
-# 查找平均数最少的子数组
+# 查找均值最小的子数组
 
 > 原文： [https://www.geeksforgeeks.org/find-subarray-least-average/](https://www.geeksforgeeks.org/find-subarray-least-average/)
 

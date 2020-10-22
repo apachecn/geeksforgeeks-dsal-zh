@@ -1,4 +1,4 @@
-# 在二进制矩阵中查找以 1s 形成的形状的周长
+# 在二进制矩阵中查找以 1s 构成的形状的周长
 
 > 原文： [https://www.geeksforgeeks.org/find-perimeter-shapes-formed-1s-binary-matrix/](https://www.geeksforgeeks.org/find-perimeter-shapes-formed-1s-binary-matrix/)
 

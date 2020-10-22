@@ -1,4 +1,4 @@
-# 排列给定数字来形成最大数字 | 系列 1
+# 排列给定数字来生成最大数字 | 系列 1
 
 > 原文： [https://www.geeksforgeeks.org/given-an-array-of-numbers-arrange-the-numbers-to-form-the-biggest-number/](https://www.geeksforgeeks.org/given-an-array-of-numbers-arrange-the-numbers-to-form-the-biggest-number/)
 

@@ -1,4 +1,4 @@
-# 打印形成 AP 的排序数组中的所有三元组
+# 打印构成 AP 的排序数组中的所有三元组
 
 > 原文： [https://www.geeksforgeeks.org/print-triplets-sorted-array-form-ap/](https://www.geeksforgeeks.org/print-triplets-sorted-array-form-ap/)
 

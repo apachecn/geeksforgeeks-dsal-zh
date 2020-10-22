@@ -1,4 +1,4 @@
-# 在未排序的数组中找到出现奇数的两个数字
+# 在未排序的数组中找到出现奇数次的两个数字
 
 > 原文： [https://www.geeksforgeeks.org/find-the-two-numbers-with-odd-occurences-in-an-unsorted-array/](https://www.geeksforgeeks.org/find-the-two-numbers-with-odd-occurences-in-an-unsorted-array/)
 

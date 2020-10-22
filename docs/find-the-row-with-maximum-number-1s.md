@@ -1,4 +1,4 @@
-# 查找最大数量为 1 的行
+# 查找 1 最多的行
 
 > 原文： [https://www.geeksforgeeks.org/find-the-row-with-maximum-number-1s/](https://www.geeksforgeeks.org/find-the-row-with-maximum-number-1s/)
 

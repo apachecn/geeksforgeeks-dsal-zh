@@ -1,4 +1,4 @@
-# 在`O(n)`时间和`O(1)`多余空间中找到最大重复数
+# 在`O(n)`时间和`O(1)`多余空间中找到最大重复数字
 
 > 原文： [https://www.geeksforgeeks.org/find-the-maximum-repeating-number-in-ok-time/](https://www.geeksforgeeks.org/find-the-maximum-repeating-number-in-ok-time/)
 

@@ -1,4 +1,4 @@
-# 查找子数组是否为山脉形式
+# 查找子数组是否为山峰形式
 
 > 原文： [https://www.geeksforgeeks.org/find-whether-subarray-form-mountain-not/](https://www.geeksforgeeks.org/find-whether-subarray-form-mountain-not/)
 

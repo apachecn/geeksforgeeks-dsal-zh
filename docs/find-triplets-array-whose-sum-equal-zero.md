@@ -1,4 +1,4 @@
-# 找到所有零和的三元组
+# 查找所有零和的三元组
 
 > 原文： [https://www.geeksforgeeks.org/find-triplets-array-whose-sum-equal-zero/](https://www.geeksforgeeks.org/find-triplets-array-whose-sum-equal-zero/)
 

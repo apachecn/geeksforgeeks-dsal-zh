@@ -1,4 +1,4 @@
-# 找到给定数组中的两个重复元素
+# 查找给定数组中的两个重复元素
 
 > 原文： [https://www.geeksforgeeks.org/find-the-two-repeating-elements-in-a-given-array/](https://www.geeksforgeeks.org/find-the-two-repeating-elements-in-a-given-array/)
 

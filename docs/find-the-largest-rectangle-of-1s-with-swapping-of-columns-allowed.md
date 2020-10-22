@@ -1,4 +1,4 @@
-# 找到 1 的最大矩形，并允许交换列
+# 在允许交换列的情况下找到 1 的最大矩形
 
 > 原文： [https://www.geeksforgeeks.org/find-the-largest-rectangle-of-1s-with-swapping-of-columns-allowed/](https://www.geeksforgeeks.org/find-the-largest-rectangle-of-1s-with-swapping-of-columns-allowed/)
 
