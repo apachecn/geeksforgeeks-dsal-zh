@@ -1,4 +1,4 @@
-# 通过`k`次运算的最小增量以使所有元素相等
+# 使所有元素相等的`k`次运算的最小增量
 
 > 原文： [https://www.geeksforgeeks.org/minimum-increment-k-operations-make-elements-equal/](https://www.geeksforgeeks.org/minimum-increment-k-operations-make-elements-equal/)
 

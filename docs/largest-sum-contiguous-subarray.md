@@ -1,4 +1,4 @@
-# 最大总和连续子数组
+# 最大和连续子数组
 
 > 原文： [https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)
 

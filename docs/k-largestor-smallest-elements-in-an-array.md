@@ -1,4 +1,4 @@
-# 数组中的`k`个最大（或最小）元素| 添加了最小堆方法
+# 数组中的`k`个最大（或最小）元素 | 新增最小堆方法
 
 > 原文： [https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/](https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/)
 

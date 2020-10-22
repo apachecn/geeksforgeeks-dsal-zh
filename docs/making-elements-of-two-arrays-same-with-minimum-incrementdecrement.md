@@ -1,4 +1,4 @@
-# 使两个数组的元素相同，最小增减
+# 使用最小增减使两个数组的元素相同
 
 > 原文： [https://www.geeksforgeeks.org/making-elements-of-two-arrays-same-with-minimum-incrementdecrement/](https://www.geeksforgeeks.org/making-elements-of-two-arrays-same-with-minimum-incrementdecrement/)
 

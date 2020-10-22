@@ -1,4 +1,4 @@
-# 领导者数组
+# 数组中的领导者
 
 > 原文： [https://www.geeksforgeeks.org/leaders-in-an-array/](https://www.geeksforgeeks.org/leaders-in-an-array/)
 

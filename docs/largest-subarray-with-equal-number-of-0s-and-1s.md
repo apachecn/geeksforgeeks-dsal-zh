@@ -1,4 +1,4 @@
-# 最大数目等于 0 和 1 的子数组
+# 0 和 1 数目相等的子数组
 
 > 原文： [https://www.geeksforgeeks.org/largest-subarray-with-equal-number-of-0s-and-1s/](https://www.geeksforgeeks.org/largest-subarray-with-equal-number-of-0s-and-1s/)
 

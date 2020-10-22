@@ -1,4 +1,4 @@
-# 要使中位数等于`x`的最小元素数量
+# 使中位数等于`x`的要添加的最小元素数量
 
 > 原文： [https://www.geeksforgeeks.org/minimum-number-elements-add-make-median-equals-x/](https://www.geeksforgeeks.org/minimum-number-elements-add-make-median-equals-x/)
 

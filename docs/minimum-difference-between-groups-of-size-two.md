@@ -1,4 +1,4 @@
-# 两个大小的组之间的最小差异
+# 大小为 2 的分组之间的最小差异
 
 > 原文： [https://www.geeksforgeeks.org/minimum-difference-between-groups-of-size-two/](https://www.geeksforgeeks.org/minimum-difference-between-groups-of-size-two/)
 

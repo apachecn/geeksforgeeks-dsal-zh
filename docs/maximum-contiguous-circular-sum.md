@@ -1,4 +1,4 @@
-# 最大循环子数组总和
+# 最大的循环子数组总和
 
 > 原文： [https://www.geeksforgeeks.org/maximum-contiguous-circular-sum/](https://www.geeksforgeeks.org/maximum-contiguous-circular-sum/)
 

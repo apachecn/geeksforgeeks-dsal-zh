@@ -1,4 +1,4 @@
-# 第`K`个最大和的连续子数组
+# 连续子数组的第`K`个最大和
 
 > 原文： [https://www.geeksforgeeks.org/k-th-largest-sum-contiguous-subarray/](https://www.geeksforgeeks.org/k-th-largest-sum-contiguous-subarray/)
 

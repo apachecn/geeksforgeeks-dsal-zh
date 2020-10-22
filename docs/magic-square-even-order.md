@@ -1,4 +1,4 @@
-# 魔术广场| 偶数顺序
+# 幻方 | 偶数阶
 
 > 原文： [https://www.geeksforgeeks.org/magic-square-even-order/](https://www.geeksforgeeks.org/magic-square-even-order/)
 
@@ -43,7 +43,7 @@ Magic Square of order 8:
 
 2.  双偶数阶幻方。 示例：`4, 8, 12, 16, .. (4 * n)`
 
-3.  单双阶幻方。 例子：`6, 10, 14, 18, .. (4 * n + 2)`
+3.  单偶数阶幻方。 例子：`6, 10, 14, 18, .. (4 * n + 2)`
 
 
 

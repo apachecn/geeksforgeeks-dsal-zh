@@ -1,4 +1,4 @@
-# 值和索引和的最大绝对差
+# 值和索引的和的最大绝对差
 
 > 原文： [https://www.geeksforgeeks.org/maximum-absolute-difference-value-index-sums/](https://www.geeksforgeeks.org/maximum-absolute-difference-value-index-sums/)
 

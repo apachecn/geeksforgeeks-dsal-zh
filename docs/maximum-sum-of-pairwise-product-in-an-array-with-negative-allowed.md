@@ -1,4 +1,4 @@
-# 允许负数的数组中成对乘积的最大和
+# 允许负数的数组中的偶对乘积的最大和
 
 > 原文： [https://www.geeksforgeeks.org/maximum-sum-of-pairwise-product-in-an-array-with-negative-allowed/](https://www.geeksforgeeks.org/maximum-sum-of-pairwise-product-in-an-array-with-negative-allowed/)
 

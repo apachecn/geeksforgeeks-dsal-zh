@@ -1,4 +1,4 @@
-# 方阵中的最大值和最小值。
+# 方阵中的最大值和最小值
 
 > 原文： [https://www.geeksforgeeks.org/maximum-and-minimum-in-a-square-matrix/](https://www.geeksforgeeks.org/maximum-and-minimum-in-a-square-matrix/)
 

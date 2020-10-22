@@ -1,4 +1,4 @@
-# 可以单独排序以进行排序的最大分区数
+# 可以单独排序来使数组排序的最大分区数
 
 > 原文： [https://www.geeksforgeeks.org/maximum-number-partitions-can-sorted-individually-make-sorted/](https://www.geeksforgeeks.org/maximum-number-partitions-can-sorted-individually-make-sorted/)
 

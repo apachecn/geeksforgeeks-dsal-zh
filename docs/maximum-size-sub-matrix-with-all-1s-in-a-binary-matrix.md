@@ -1,4 +1,4 @@
-# 全为 1 的最大尺寸正方形子矩阵
+# 全为 1 的最大尺寸的正方形子矩阵
 
 > 原文： [https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/](https://www.geeksforgeeks.org/maximum-size-sub-matrix-with-all-1s-in-a-binary-matrix/)
 

@@ -1,4 +1,4 @@
-# 魔术广场
+# 幻方
 
 > 原文： [https://www.geeksforgeeks.org/magic-square/](https://www.geeksforgeeks.org/magic-square/)
 

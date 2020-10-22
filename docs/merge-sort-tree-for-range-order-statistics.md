@@ -1,4 +1,4 @@
-# 归并排序树以获取范围顺序统计信息
+# 用于范围顺序统计信息的归并排序树
 
 > 原文： [https://www.geeksforgeeks.org/merge-sort-tree-for-range-order-statistics/](https://www.geeksforgeeks.org/merge-sort-tree-for-range-order-statistics/)
 

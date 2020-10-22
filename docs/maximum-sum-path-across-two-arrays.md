@@ -1,4 +1,4 @@
-# 两个数组中的最大求和路径
+# 两个数组中的最大和路径
 
 > 原文： [https://www.geeksforgeeks.org/maximum-sum-path-across-two-arrays/](https://www.geeksforgeeks.org/maximum-sum-path-across-two-arrays/)
 

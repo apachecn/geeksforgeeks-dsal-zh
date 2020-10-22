@@ -1,4 +1,4 @@
-# 数组中的最大三元组和
+# 数组中的最大三元组总和
 
 > 原文： [https://www.geeksforgeeks.org/maximum-triplet-sum-array/](https://www.geeksforgeeks.org/maximum-triplet-sum-array/)
 

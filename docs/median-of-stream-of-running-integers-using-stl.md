@@ -1,4 +1,4 @@
-# 使用 STL 的运行整数流的中位数
+# 使用 STL 的整数流的中位数
 
 > 原文： [https://www.geeksforgeeks.org/median-of-stream-of-running-integers-using-stl/](https://www.geeksforgeeks.org/median-of-stream-of-running-integers-using-stl/)
 

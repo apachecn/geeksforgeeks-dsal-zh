@@ -1,4 +1,4 @@
-# 两次最大出现之间的最小距离
+# 最大值的两次出现之间的最小距离
 
 > 原文： [https://www.geeksforgeeks.org/minimum-distance-between-two-occurrences-of-maximum/](https://www.geeksforgeeks.org/minimum-distance-between-two-occurrences-of-maximum/)
 

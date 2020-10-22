@@ -1,4 +1,4 @@
-# 通过最多买卖两次股份获得最大利润
+# 通过最多买卖两次股份获得的最大利润
 
 > 原文： [https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/](https://www.geeksforgeeks.org/maximum-profit-by-buying-and-selling-a-share-at-most-twice/)
 

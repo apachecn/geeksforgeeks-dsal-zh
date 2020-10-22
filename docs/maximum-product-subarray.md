@@ -1,4 +1,4 @@
-# 最大产品子数组
+# 最大乘积子数组
 
 > 原文： [https://www.geeksforgeeks.org/maximum-product-subarray/](https://www.geeksforgeeks.org/maximum-product-subarray/)
 

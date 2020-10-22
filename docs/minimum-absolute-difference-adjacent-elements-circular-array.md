@@ -1,4 +1,4 @@
-# 圆形数组中相邻元素的最小绝对差
+# 循环数组中相邻元素的最小绝对差
 
 > 原文： [https://www.geeksforgeeks.org/minimum-absolute-difference-adjacent-elements-circular-array/](https://www.geeksforgeeks.org/minimum-absolute-difference-adjacent-elements-circular-array/)
 

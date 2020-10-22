@@ -1,4 +1,4 @@
-# 全为 1 的最大尺寸矩形二进制子矩阵
+# 全为 1 的最大尺寸的二进制矩形子矩阵
 
 > 原文： [https://www.geeksforgeeks.org/maximum-size-rectangle-binary-sub-matrix-1s/](https://www.geeksforgeeks.org/maximum-size-rectangle-binary-sub-matrix-1s/)
 

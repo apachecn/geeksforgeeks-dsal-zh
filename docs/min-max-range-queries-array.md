@@ -1,4 +1,4 @@
-# 数组中的最小-最大范围查询
+# 数组中的最小 - 最大范围查询
 
 > 原文： [https://www.geeksforgeeks.org/min-max-range-queries-array/](https://www.geeksforgeeks.org/min-max-range-queries-array/)
 

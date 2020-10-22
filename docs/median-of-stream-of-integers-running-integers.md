@@ -1,4 +1,4 @@
-# 中位数为整数流（运行整数）
+# 整数流的中位数（流动的整数）
 
 > 原文： [https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/)
 

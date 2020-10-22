@@ -1,4 +1,4 @@
-# 两个大小的组之间的最大差异
+# 大小为 2 的分组之间的最大差异
 
 > 原文： [https://www.geeksforgeeks.org/maximum-difference-groups-size-two/](https://www.geeksforgeeks.org/maximum-difference-groups-size-two/)
 

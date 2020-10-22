@@ -1,4 +1,4 @@
-# 找到最小长度未排序子数组，进行排序，使整个数组排序
+# 找到长度最小未排序子数组，进行排序，使整个数组排序
 
 > 原文： [https://www.geeksforgeeks.org/minimum-length-unsorted-subarray-sorting-which-makes-the-complete-array-sorted/](https://www.geeksforgeeks.org/minimum-length-unsorted-subarray-sorting-which-makes-the-complete-array-sorted/)
 

@@ -1,4 +1,4 @@
-# `n`个数组中升序元素的最大和
+# `n`个数组中的升序元素的最大和
 
 > 原文： [https://www.geeksforgeeks.org/maximum-sum-increasing-order-elements-n-arrays/](https://www.geeksforgeeks.org/maximum-sum-increasing-order-elements-n-arrays/)
 

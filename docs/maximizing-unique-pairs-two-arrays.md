@@ -1,4 +1,4 @@
-# 从两个数组最大化唯一对
+# 最大化来自两个数组的唯一偶对
 
 > 原文： [https://www.geeksforgeeks.org/maximizing-unique-pairs-two-arrays/](https://www.geeksforgeeks.org/maximizing-unique-pairs-two-arrays/)
 

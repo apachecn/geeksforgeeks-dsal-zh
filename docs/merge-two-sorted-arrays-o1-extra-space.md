@@ -1,4 +1,4 @@
-# 合并两个有`O(1)`额外空间的排序数组
+# 在`O(1)`额外空间中合并两个排序数组
 
 > 原文： [https://www.geeksforgeeks.org/merge-two-sorted-arrays-o1-extra-space/](https://www.geeksforgeeks.org/merge-two-sorted-arrays-o1-extra-space/)
 

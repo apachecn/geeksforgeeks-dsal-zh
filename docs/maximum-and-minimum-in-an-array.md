@@ -1,4 +1,4 @@
-# 使用最少数量的比较的数组的最大值和最小值
+# 数组的最大值和最小值，使用最少数量的比较
 
 > 原文： [https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/](https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/)
 

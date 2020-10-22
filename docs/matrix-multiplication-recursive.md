@@ -1,4 +1,4 @@
-# 矩阵乘法| 递归的
+# 矩阵乘法 | 递归
 
 > 原文： [https://www.geeksforgeeks.org/matrix-multiplication-recursive/](https://www.geeksforgeeks.org/matrix-multiplication-recursive/)
 

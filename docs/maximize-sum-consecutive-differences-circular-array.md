@@ -1,4 +1,4 @@
-# 最大化圆形数组中的连续差之和
+# 最大化循环数组中的连续差之和
 
 > 原文： [https://www.geeksforgeeks.org/maximize-sum-consecutive-differences-circular-array/](https://www.geeksforgeeks.org/maximize-sum-consecutive-differences-circular-array/)
 
