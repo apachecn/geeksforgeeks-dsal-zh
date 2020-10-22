@@ -1,4 +1,4 @@
-# 给定大小为`n`且数字为`k`的数组，找到出现次数超过`n / k`次的所有元素
+# 给定大小为`n`的数组和数字`k`，找到出现超过`n / k`次的所有元素
 
 > 原文： [https://www.geeksforgeeks.org/given-an-array-of-of-size-n-finds-all-the-elements-that-appear-more-than-nk-times/](https://www.geeksforgeeks.org/given-an-array-of-of-size-n-finds-all-the-elements-that-appear-more-than-nk-times/)
 

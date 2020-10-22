@@ -1,4 +1,4 @@
-# 按特定顺序就地转换矩阵
+# 按特定顺序原地转换矩阵
 
 > 原文： [https://www.geeksforgeeks.org/in-place-convert-matrix-in-specific-order/](https://www.geeksforgeeks.org/in-place-convert-matrix-in-specific-order/)
 

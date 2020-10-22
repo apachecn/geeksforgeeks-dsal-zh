@@ -1,4 +1,4 @@
-# 从两个排序的数组中找到最接近的对
+# 从两个排序的数组中找到最接近`x`的偶对
 
 > 原文： [https://www.geeksforgeeks.org/given-two-sorted-arrays-number-x-find-pair-whose-sum-closest-x/](https://www.geeksforgeeks.org/given-two-sorted-arrays-number-x-find-pair-whose-sum-closest-x/)
 

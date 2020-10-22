@@ -1,4 +1,4 @@
-# 从两个给定排序数组的备用元素生成所有可能的排序数组
+# 从两个给定排序数组的交替元素生成所有可能的排序数组
 
 > 原文： [https://www.geeksforgeeks.org/generate-all-possible-sorted-arrays-from-alternate-elements-of-two-given-arrays/](https://www.geeksforgeeks.org/generate-all-possible-sorted-arrays-from-alternate-elements-of-two-given-arrays/)
 

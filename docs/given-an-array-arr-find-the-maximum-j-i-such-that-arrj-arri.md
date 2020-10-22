@@ -1,4 +1,4 @@
-# 给定数组`arr[]`，找到最大`j – i`，使得`arr[j] > arr[i]`
+# 给定数组`arr[]`，找到最大的`j – i`，使得`arr[j] > arr[i]`
 
 > 原文： [https://www.geeksforgeeks.org/given-an-array-arr-find-the-maximum-j-i-such-that-arrj-arri/](https://www.geeksforgeeks.org/given-an-array-arr-find-the-maximum-j-i-such-that-arrj-arri/)
 

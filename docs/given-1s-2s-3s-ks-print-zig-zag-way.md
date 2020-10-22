@@ -1,4 +1,4 @@
-# 给定`1, 2, 3, ..., k`以之字形打印它们。
+# 给定`1, 2, 3, ..., k`以 Z 字形打印它们。
 
 > 原文： [https://www.geeksforgeeks.org/given-1s-2s-3s-ks-print-zig-zag-way/](https://www.geeksforgeeks.org/given-1s-2s-3s-ks-print-zig-zag-way/)
 

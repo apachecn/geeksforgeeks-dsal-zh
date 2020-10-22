@@ -1,4 +1,4 @@
-# 矩阵中第一行和最后一行的交换元素
+# 交换矩阵中第一行和最后一行的元素
 
 > 原文： [https://www.geeksforgeeks.org/interchange-elements-of-first-and-last-rows-in-matrix/](https://www.geeksforgeeks.org/interchange-elements-of-first-and-last-rows-in-matrix/)
 
