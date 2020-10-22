@@ -1,4 +1,4 @@
-# 计算二进制矩阵中 1 和 0 的集合
+# 计数二进制矩阵中 1 和 0 的集合
 
 > 原文： [https://www.geeksforgeeks.org/counting-sets-of-1s-and-0s-in-a-binary-matrix/](https://www.geeksforgeeks.org/counting-sets-of-1s-and-0s-in-a-binary-matrix/)
 

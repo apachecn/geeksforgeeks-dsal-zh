@@ -1,4 +1,4 @@
-# 检查矩阵的所有行是否都是彼此旋转
+# 检查矩阵的所有行是否都是彼此的旋转
 
 > 原文： [https://www.geeksforgeeks.org/check-rows-matrix-circular-rotations/](https://www.geeksforgeeks.org/check-rows-matrix-circular-rotations/)
 

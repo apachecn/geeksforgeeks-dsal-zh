@@ -1,4 +1,4 @@
-# 检查是否反转子数组使数组排序
+# 检查反转子数组是否使数组有序
 
 > 原文： [https://www.geeksforgeeks.org/check-reversing-sub-array-make-array-sorted/](https://www.geeksforgeeks.org/check-reversing-sub-array-make-array-sorted/)
 

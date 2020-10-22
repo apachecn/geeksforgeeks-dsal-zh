@@ -1,4 +1,4 @@
-# 检查数组元素是否连续，新增方法 3
+# 检查数组元素是否连续 | 新增方法 3
 
 > 原文： [https://www.geeksforgeeks.org/check-if-array-elements-are-consecutive/](https://www.geeksforgeeks.org/check-if-array-elements-are-consecutive/)
 

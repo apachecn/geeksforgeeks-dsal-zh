@@ -1,4 +1,4 @@
-# 删除小于下一个或变得更小的数组元素
+# 删除小于下一个或更小的数组元素
 
 > 原文： [https://www.geeksforgeeks.org/delete-array-elements-which-are-smaller-than-next-or-become-smaller/](https://www.geeksforgeeks.org/delete-array-elements-which-are-smaller-than-next-or-become-smaller/)
 

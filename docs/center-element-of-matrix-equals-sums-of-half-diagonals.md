@@ -1,4 +1,4 @@
-# 矩阵的中心元素等于对角线的一半
+# 矩阵中心元素等于半对角线总和
 
 > 原文： [https://www.geeksforgeeks.org/center-element-of-matrix-equals-sums-of-half-diagonals/](https://www.geeksforgeeks.org/center-element-of-matrix-equals-sums-of-half-diagonals/)
 

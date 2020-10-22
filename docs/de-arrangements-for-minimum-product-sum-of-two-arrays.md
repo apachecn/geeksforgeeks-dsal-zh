@@ -1,4 +1,4 @@
-# 对两个数组的最小乘积之和进行重新排列
+# 两个数组的最小乘积之和的重新排列
 
 > 原文： [https://www.geeksforgeeks.org/de-arrangements-for-minimum-product-sum-of-two-arrays/](https://www.geeksforgeeks.org/de-arrangements-for-minimum-product-sum-of-two-arrays/)
 

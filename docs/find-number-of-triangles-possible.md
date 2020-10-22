@@ -1,4 +1,4 @@
-# 计算可能的三角形数量
+# 计数可能的三角形数量
 
 > 原文： [https://www.geeksforgeeks.org/find-number-of-triangles-possible/](https://www.geeksforgeeks.org/find-number-of-triangles-possible/)
 

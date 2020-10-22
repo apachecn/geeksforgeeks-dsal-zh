@@ -1,4 +1,4 @@
-# 2D 矩阵中的最大和矩形| DP-27
+# 2D 矩阵中的最大和矩形 | DP-27
 
 > 原文： [https://www.geeksforgeeks.org/dynamic-programming-set-27-max-sum-rectangle-in-a-2d-matrix/](https://www.geeksforgeeks.org/dynamic-programming-set-27-max-sum-rectangle-in-a-2d-matrix/)
 

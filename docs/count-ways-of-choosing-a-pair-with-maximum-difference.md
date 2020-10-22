@@ -1,4 +1,4 @@
-# 计算选择差异最大的对的方法
+# 计数选择差异最大的偶对的方法
 
 > 原文： [https://www.geeksforgeeks.org/count-ways-of-choosing-a-pair-with-maximum-difference/](https://www.geeksforgeeks.org/count-ways-of-choosing-a-pair-with-maximum-difference/)
 

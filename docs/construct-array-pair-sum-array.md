@@ -1,4 +1,4 @@
-# 从其对和数组构造一个数组
+# 从偶对和数组构造一个数组
 
 > 原文： [https://www.geeksforgeeks.org/construct-array-pair-sum-array/](https://www.geeksforgeeks.org/construct-array-pair-sum-array/)
 

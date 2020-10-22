@@ -1,4 +1,4 @@
-# 乘积数组难题
+# 乘积数组问题
 
 > 原文： [https://www.geeksforgeeks.org/a-product-array-puzzle/](https://www.geeksforgeeks.org/a-product-array-puzzle/)
 

@@ -1,4 +1,4 @@
-# 数组范围查询以搜索元素
+# 搜索元素的数组范围查询
 
 > 原文： [https://www.geeksforgeeks.org/array-range-queries-for-searching-an-element/](https://www.geeksforgeeks.org/array-range-queries-for-searching-an-element/)
 

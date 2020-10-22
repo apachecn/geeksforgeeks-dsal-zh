@@ -1,4 +1,4 @@
-# 计数和切换二进制数组上的查询
+# 二进制数组上的计数和切换查询
 
 > 原文： [https://www.geeksforgeeks.org/count-toggle-queries-binary-array/](https://www.geeksforgeeks.org/count-toggle-queries-binary-array/)
 

@@ -1,4 +1,4 @@
-# 在按行和按列排序的矩阵中计数零
+# 在按行和按列排序的矩阵中统计零
 
 > 原文： [https://www.geeksforgeeks.org/count-zeros-in-a-row-wise-and-column-wise-sorted-matrix/](https://www.geeksforgeeks.org/count-zeros-in-a-row-wise-and-column-wise-sorted-matrix/)
 

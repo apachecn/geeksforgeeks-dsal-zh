@@ -1,4 +1,4 @@
-# 计算排序数组中的出现次数（或频率）
+# 计数排序数组中的出现次数（或频率）
 
 > 原文： [https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-a-sorted-array/](https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-a-sorted-array/)
 

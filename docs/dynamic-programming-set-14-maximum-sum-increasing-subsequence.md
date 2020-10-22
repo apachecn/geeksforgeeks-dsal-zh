@@ -1,4 +1,4 @@
-# 最大总和增加子序列| DP-14
+# 最大和递增子序列 | DP-14
 
 > 原文： [https://www.geeksforgeeks.org/dynamic-programming-set-14-maximum-sum-increasing-subsequence/](https://www.geeksforgeeks.org/dynamic-programming-set-14-maximum-sum-increasing-subsequence/)
 

@@ -1,4 +1,4 @@
-# 在死胡同之前收集最多硬币
+# 在结束之前收集最多的硬币
 
 > 原文： [https://www.geeksforgeeks.org/collect-maximum-coins-before-hitting-a-dead-end/](https://www.geeksforgeeks.org/collect-maximum-coins-before-hitting-a-dead-end/)
 

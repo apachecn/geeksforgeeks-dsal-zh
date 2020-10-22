@@ -1,4 +1,4 @@
-# 计算特殊矩阵中等于`x`的条目
+# 计数特殊矩阵中等于`x`的条目
 
 > 原文： [https://www.geeksforgeeks.org/count-entries-equal-to-x-in-a-special-matrix/](https://www.geeksforgeeks.org/count-entries-equal-to-x-in-a-special-matrix/)
 

@@ -1,4 +1,4 @@
-# 将数组转换为 Zig-Zag 风格
+# 将数组转换为 Z 字形风格
 
 > 原文： [https://www.geeksforgeeks.org/convert-array-into-zig-zag-fashion/](https://www.geeksforgeeks.org/convert-array-into-zig-zag-fashion/)
 

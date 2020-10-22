@@ -1,4 +1,4 @@
-# 连续元素排序数组中仅重复元素的计数
+# 连续元素排序数组中唯一重复元素的数量
 
 > 原文： [https://www.geeksforgeeks.org/count-of-only-repeated-element-in-a-sorted-array-of-consecutive-elements/](https://www.geeksforgeeks.org/count-of-only-repeated-element-in-a-sorted-array-of-consecutive-elements/)
 

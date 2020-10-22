@@ -1,4 +1,4 @@
-# 在列明智和行明智排序矩阵中计算负数
+# 在按列和行排序矩阵中统计负数
 
 > 原文： [https://www.geeksforgeeks.org/count-negative-numbers-in-a-column-wise-row-wise-sorted-matrix/](https://www.geeksforgeeks.org/count-negative-numbers-in-a-column-wise-row-wise-sorted-matrix/)
 

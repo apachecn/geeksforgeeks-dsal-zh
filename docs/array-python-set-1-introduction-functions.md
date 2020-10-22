@@ -1,4 +1,4 @@
-# Python 中的数组 | 系列 1（简介和功能）
+# Python 中的数组 | 系列 1（简介和函数）
 
 > 原文： [https://www.geeksforgeeks.org/array-python-set-1-introduction-functions/](https://www.geeksforgeeks.org/array-python-set-1-introduction-functions/)
 

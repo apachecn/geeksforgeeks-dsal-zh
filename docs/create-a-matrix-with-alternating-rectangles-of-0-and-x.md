@@ -1,4 +1,4 @@
-# 创建具有`O`和`X`的交替矩形的矩阵
+# 使用`O`和`X`的交替矩形创建矩阵
 
 > 原文： [https://www.geeksforgeeks.org/create-a-matrix-with-alternating-rectangles-of-0-and-x/](https://www.geeksforgeeks.org/create-a-matrix-with-alternating-rectangles-of-0-and-x/)
 

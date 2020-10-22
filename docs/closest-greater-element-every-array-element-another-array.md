@@ -1,4 +1,4 @@
-# 每个数组元素中另一个数组中最接近的较大元素
+# 来自另一个数组的每个数组元素的最接近的较大元素
 
 > 原文： [https://www.geeksforgeeks.org/closest-greater-element-every-array-element-another-array/](https://www.geeksforgeeks.org/closest-greater-element-every-array-element-another-array/)
 

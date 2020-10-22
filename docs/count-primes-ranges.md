@@ -1,4 +1,4 @@
-# 计算范围内的素数
+# 计数范围内的素数
 
 > 原文： [https://www.geeksforgeeks.org/count-primes-ranges/](https://www.geeksforgeeks.org/count-primes-ranges/)
 

@@ -1,4 +1,4 @@
-# 差异数组|`O(1)`中的范围更新查询
+# 差异数组 | `O(1)`中的范围更新查询
 
 > 原文： [https://www.geeksforgeeks.org/difference-array-range-update-query-o1/](https://www.geeksforgeeks.org/difference-array-range-update-query-o1/)
 

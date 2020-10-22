@@ -1,4 +1,4 @@
-# 圆形矩阵（以螺旋方式构造数字 1 到`m * n`的矩阵）
+# 循环矩阵（以螺旋方式构造数字 1 到`m * n`的矩阵）
 
 > 原文： [https://www.geeksforgeeks.org/circular-matrix-construct-a-matrix-with-numbers-1-to-mn-in-spiral-way/](https://www.geeksforgeeks.org/circular-matrix-construct-a-matrix-with-numbers-1-to-mn-in-spiral-way/)
 

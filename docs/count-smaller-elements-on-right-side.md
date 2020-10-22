@@ -1,4 +1,4 @@
-# 计算右侧较小的元素
+# 计数右侧较小的元素
 
 > 原文： [https://www.geeksforgeeks.org/count-smaller-elements-on-right-side/](https://www.geeksforgeeks.org/count-smaller-elements-on-right-side/)
 

@@ -1,4 +1,4 @@
-# 计算矩阵中所有排序的行
+# 计数矩阵中所有排序的行
 
 > 原文： [https://www.geeksforgeeks.org/count-sorted-rows-matrix/](https://www.geeksforgeeks.org/count-sorted-rows-matrix/)
 

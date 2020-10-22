@@ -1,4 +1,4 @@
-# C 程序检查矩阵是否倾斜对称
+# C 程序：检查矩阵是否倾斜对称
 
 > 原文： [https://www.geeksforgeeks.org/c-program-check-whether-matrix-skew-symmetric-not/](https://www.geeksforgeeks.org/c-program-check-whether-matrix-skew-symmetric-not/)
 

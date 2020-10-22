@@ -1,4 +1,4 @@
-# 程序将两个矩阵相乘
+# 将两个矩阵相乘的程序
 
 > 原文： [https://www.geeksforgeeks.org/c-program-multiply-two-matrices/](https://www.geeksforgeeks.org/c-program-multiply-two-matrices/)
 

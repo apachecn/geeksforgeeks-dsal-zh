@@ -1,4 +1,4 @@
-# 对排序向量中的二分搜索
+# 排序偶对向量中的二分搜索
 
 > 原文： [https://www.geeksforgeeks.org/binary-search-sorted-vector-pairs/](https://www.geeksforgeeks.org/binary-search-sorted-vector-pairs/)
 

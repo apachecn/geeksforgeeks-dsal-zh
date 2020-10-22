@@ -1,4 +1,4 @@
-# 检查数组中是否存在两个元素的总和等于数组其余部分的总和
+# 检查数组中是否存在两个元素，总和等于数组其余部分的总和
 
 > 原文： [https://www.geeksforgeeks.org/check-exist-two-elements-array-whose-sum-equal-sum-rest-array/](https://www.geeksforgeeks.org/check-exist-two-elements-array-whose-sum-equal-sum-rest-array/)
 

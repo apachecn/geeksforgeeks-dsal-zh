@@ -1,4 +1,4 @@
-# 程序以查找数组中的最大元素
+# 查找数组中的最大元素的程序
 
 > 原文： [https://www.geeksforgeeks.org/c-program-find-largest-element-array/](https://www.geeksforgeeks.org/c-program-find-largest-element-array/)
 

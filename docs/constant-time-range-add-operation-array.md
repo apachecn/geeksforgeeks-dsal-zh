@@ -1,4 +1,4 @@
-# 数组上的恒定时间范围添加操作
+# 数组上的恒定时间的范围添加操作
 
 > 原文： [https://www.geeksforgeeks.org/constant-time-range-add-operation-array/](https://www.geeksforgeeks.org/constant-time-range-add-operation-array/)
 

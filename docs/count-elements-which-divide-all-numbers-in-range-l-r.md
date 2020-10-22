@@ -1,4 +1,4 @@
-# 计算将`L-R`范围内的所有数字相除的元素
+# 计数将`L-R`范围内的所有数字整除的元素
 
 > 原文： [https://www.geeksforgeeks.org/count-elements-which-divide-all-numbers-in-range-l-r/](https://www.geeksforgeeks.org/count-elements-which-divide-all-numbers-in-range-l-r/)
 

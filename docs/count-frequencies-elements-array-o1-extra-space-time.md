@@ -1,4 +1,4 @@
-# 计算`O(1)`额外空间和`O(n)`时间中数组中所有元素的频率
+# 在`O(1)`额外空间和`O(n)`时间中计算数组中所有元素的频率
 
 > 原文： [https://www.geeksforgeeks.org/count-frequencies-elements-array-o1-extra-space-time/](https://www.geeksforgeeks.org/count-frequencies-elements-array-o1-extra-space-time/)
 

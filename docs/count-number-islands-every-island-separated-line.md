@@ -1,4 +1,4 @@
-# 计算每个岛按行和列分隔的岛数
+# 计数岛数，每个岛按行和列分隔
 
 > 原文： [https://www.geeksforgeeks.org/count-number-islands-every-island-separated-line/](https://www.geeksforgeeks.org/count-number-islands-every-island-separated-line/)
 

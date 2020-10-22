@@ -1,4 +1,4 @@
-# 范围查询中的数组范围查询
+# 范围查询上的数组范围查询
 
 > 原文： [https://www.geeksforgeeks.org/array-range-queries-range-queries/](https://www.geeksforgeeks.org/array-range-queries-range-queries/)
 

@@ -1,4 +1,4 @@
-# 数组范围查询频率与值相同的元素
+# 频率与值相同的元素的数组范围查询
 
 > 原文： [https://www.geeksforgeeks.org/array-range-queries-elements-frequency-value/](https://www.geeksforgeeks.org/array-range-queries-elements-frequency-value/)
 

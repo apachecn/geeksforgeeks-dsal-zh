@@ -1,4 +1,4 @@
-# 用于添加两个矩阵的程序
+# 用于相加两个矩阵的程序
 
 > 原文： [https://www.geeksforgeeks.org/c-program-addition-two-matrices/](https://www.geeksforgeeks.org/c-program-addition-two-matrices/)
 
