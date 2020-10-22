@@ -1,4 +1,4 @@
-# 两个数组对的绝对差的最小和
+# 两个数组的偶对的绝对差的最小和
 
 > 原文： [https://www.geeksforgeeks.org/minimum-sum-absolute-difference-pairs-two-arrays/](https://www.geeksforgeeks.org/minimum-sum-absolute-difference-pairs-two-arrays/)
 

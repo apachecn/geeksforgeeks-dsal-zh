@@ -1,4 +1,4 @@
-# 到达目的地的最低初始点
+# 到达目的地的最小初始点
 
 > 原文： [https://www.geeksforgeeks.org/minimum-positive-points-to-reach-destination/](https://www.geeksforgeeks.org/minimum-positive-points-to-reach-destination/)
 

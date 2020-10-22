@@ -1,4 +1,4 @@
-# 最小乘积对为正整数数组
+# 正整数数组的最小乘积对
 
 > 原文： [https://www.geeksforgeeks.org/minimum-product-pair-an-array-of-positive-integers/](https://www.geeksforgeeks.org/minimum-product-pair-an-array-of-positive-integers/)
 

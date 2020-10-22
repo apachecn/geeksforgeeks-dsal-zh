@@ -1,4 +1,4 @@
-# 安排彼此相邻的线对所需的最小交换次数
+# 安排每对使其彼此相邻所需的最小交换次数
 
 > 原文： [https://www.geeksforgeeks.org/minimum-number-of-swaps-required-for-arranging-pairs-adjacent-to-each-other/](https://www.geeksforgeeks.org/minimum-number-of-swaps-required-for-arranging-pairs-adjacent-to-each-other/)
 
