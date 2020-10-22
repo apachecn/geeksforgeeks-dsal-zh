@@ -1,4 +1,4 @@
-# 重新排列数组，使偶数位置大于奇数
+# 重新排列数组，使偶数位置元素大于奇数
 
 > 原文： [https://www.geeksforgeeks.org/rearrange-array-such-that-even-positioned-are-greater-than-odd/](https://www.geeksforgeeks.org/rearrange-array-such-that-even-positioned-are-greater-than-odd/)
 

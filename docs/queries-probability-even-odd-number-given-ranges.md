@@ -1,4 +1,4 @@
-# 在给定范围内偶数或奇数的查询概率
+# 给定范围中的偶数或奇数概率的查询
 
 > 原文： [https://www.geeksforgeeks.org/queries-probability-even-odd-number-given-ranges/](https://www.geeksforgeeks.org/queries-probability-even-odd-number-given-ranges/)
 

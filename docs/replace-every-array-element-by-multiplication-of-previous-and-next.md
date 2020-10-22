@@ -1,4 +1,4 @@
-# 用上一个和下一个的乘法替换每个数组元素
+# 用上一个和下一个元素的乘积替换数组的每个元素
 
 > 原文： [https://www.geeksforgeeks.org/replace-every-array-element-by-multiplication-of-previous-and-next/](https://www.geeksforgeeks.org/replace-every-array-element-by-multiplication-of-previous-and-next/)
 

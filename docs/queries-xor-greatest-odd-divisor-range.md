@@ -1,4 +1,4 @@
-# 范围最大奇数的 XOR 查询
+# 最大奇数除数的 XOR 的范围查询
 
 > 原文： [https://www.geeksforgeeks.org/queries-xor-greatest-odd-divisor-range/](https://www.geeksforgeeks.org/queries-xor-greatest-odd-divisor-range/)
 

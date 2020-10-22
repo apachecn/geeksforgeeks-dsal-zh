@@ -1,4 +1,4 @@
-# 二维数组中的按行排序
+# 二维数组的按行排序
 
 > 原文： [https://www.geeksforgeeks.org/row-wise-sorting-2d-array/](https://www.geeksforgeeks.org/row-wise-sorting-2d-array/)
 

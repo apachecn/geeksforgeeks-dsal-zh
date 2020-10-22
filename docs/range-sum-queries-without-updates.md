@@ -1,4 +1,4 @@
-# 范围总和查询，无更新
+# 范围总和查询（无更新）
 
 > 原文： [https://www.geeksforgeeks.org/range-sum-queries-without-updates/](https://www.geeksforgeeks.org/range-sum-queries-without-updates/)
 

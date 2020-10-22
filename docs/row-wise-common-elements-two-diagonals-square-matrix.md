@@ -1,4 +1,4 @@
-# 方矩阵的两个对角线中的行式公共元素
+# 方阵的两个对角线中的行公共元素
 
 > 原文： [https://www.geeksforgeeks.org/row-wise-common-elements-two-diagonals-square-matrix/](https://www.geeksforgeeks.org/row-wise-common-elements-two-diagonals-square-matrix/)
 

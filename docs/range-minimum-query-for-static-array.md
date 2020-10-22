@@ -1,4 +1,4 @@
-# 范围最小查询（平方根分解和稀疏表）
+# 最小值的范围查询（平方根分解和稀疏表）
 
 > 原文： [https://www.geeksforgeeks.org/range-minimum-query-for-static-array/](https://www.geeksforgeeks.org/range-minimum-query-for-static-array/)
 

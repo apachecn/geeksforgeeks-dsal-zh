@@ -1,4 +1,4 @@
-# 替换元素会使数组元素连续
+# 替换元素使数组元素连续
 
 > 原文： [https://www.geeksforgeeks.org/replacing-an-element-makes-array-elements-consecutive/](https://www.geeksforgeeks.org/replacing-an-element-makes-array-elements-consecutive/)
 

@@ -1,4 +1,4 @@
-# 对数组的范围查询，其每个元素都是索引值与前一个元素的 XOR
+# 数组的范围查询，其每个元素都是索引值与前一个元素的 XOR
 
 > 原文： [https://www.geeksforgeeks.org/range-query-array-whose-element-xor-index-value-previous-element/](https://www.geeksforgeeks.org/range-query-array-whose-element-xor-index-value-previous-element/)
 

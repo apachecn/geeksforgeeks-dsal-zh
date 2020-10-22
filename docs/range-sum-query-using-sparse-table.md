@@ -1,4 +1,4 @@
-# 使用稀疏表进行范围总和查询
+# 使用稀疏表的范围总和查询
 
 > 原文： [https://www.geeksforgeeks.org/range-sum-query-using-sparse-table/](https://www.geeksforgeeks.org/range-sum-query-using-sparse-table/)
 

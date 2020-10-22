@@ -1,4 +1,4 @@
-# 数组元素的频率范围查询
+# 数组元素频率的范围查询
 
 > 原文： [https://www.geeksforgeeks.org/range-queries-for-frequencies-of-array-elements/](https://www.geeksforgeeks.org/range-queries-for-frequencies-of-array-elements/)
 

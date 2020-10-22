@@ -1,4 +1,4 @@
-# 连续步骤到屋顶
+# 到屋顶的连续步长
 
 > 原文： [https://www.geeksforgeeks.org/roof-top/](https://www.geeksforgeeks.org/roof-top/)
 

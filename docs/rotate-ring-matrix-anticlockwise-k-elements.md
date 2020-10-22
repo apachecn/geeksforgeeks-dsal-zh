@@ -1,8 +1,8 @@
-# 用`K`元素逆时针旋转矩阵的每个环
+# 将矩阵的每个环逆时针旋转`K`个元素
 
 > 原文： [https://www.geeksforgeeks.org/rotate-ring-matrix-anticlockwise-k-elements/](https://www.geeksforgeeks.org/rotate-ring-matrix-anticlockwise-k-elements/)
 
-给定一个阶数为`M * N`且值为`K`的矩阵，任务是将矩阵的每个环逆时针旋转`K`个元素。 如果任何一个环中的元素都小于等于`K`，则不要旋转它。
+给定一个阶数为`M * N`的矩阵和值`K`，任务是将矩阵的每个环逆时针旋转`K`个元素。 如果任何一个环中的元素都小于等于`K`，则不要旋转它。
 
 例子：
 

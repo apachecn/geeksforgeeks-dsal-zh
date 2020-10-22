@@ -1,4 +1,4 @@
-# 使用内置排序功能重新排列正数和负数
+# 使用内置排序函数重新排列正数和负数
 
 > 原文： [https://www.geeksforgeeks.org/rearrange-positive-negative-numbers-using-inbuilt-sort-function/](https://www.geeksforgeeks.org/rearrange-positive-negative-numbers-using-inbuilt-sort-function/)
 

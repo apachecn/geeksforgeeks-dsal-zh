@@ -1,4 +1,4 @@
-# 重新排列二进制字符串作为`x`和`y`的交替出现
+# 重新排列二进制字符串为`x`和`y`的交替出现
 
 > 原文： [https://www.geeksforgeeks.org/rearrange-binary-string-alternate-x-y-occurrences/](https://www.geeksforgeeks.org/rearrange-binary-string-alternate-x-y-occurrences/)
 

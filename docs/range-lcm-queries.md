@@ -1,4 +1,4 @@
-# 范围 LCM 查询
+# LCM 的范围查询
 
 > 原文： [https://www.geeksforgeeks.org/range-lcm-queries/](https://www.geeksforgeeks.org/range-lcm-queries/)
 
