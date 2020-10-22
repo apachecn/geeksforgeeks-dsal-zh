@@ -1,4 +1,4 @@
-# 查找数组中的最小和第二个最小元素
+# 查找数组中的最小和第二小元素
 
 > 原文： [https://www.geeksforgeeks.org/to-find-smallest-and-second-smallest-element-in-an-array/](https://www.geeksforgeeks.org/to-find-smallest-and-second-smallest-element-in-an-array/)
 

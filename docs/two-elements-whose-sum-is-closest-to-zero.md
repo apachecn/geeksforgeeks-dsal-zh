@@ -1,4 +1,4 @@
-# 两个元素的和最接近零
+# 最接近零的两个元素的总和
 
 > 原文： [https://www.geeksforgeeks.org/two-elements-whose-sum-is-closest-to-zero/](https://www.geeksforgeeks.org/two-elements-whose-sum-is-closest-to-zero/)
 

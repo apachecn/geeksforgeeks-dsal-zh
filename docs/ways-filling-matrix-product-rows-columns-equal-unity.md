@@ -1,4 +1,4 @@
-# 填充矩阵以使所有行和所有列的乘积等于 1 的方式
+# 填充矩阵的方式，以使所有行和所有列的乘积等于 1 
 
 > 原文： [https://www.geeksforgeeks.org/ways-filling-matrix-product-rows-columns-equal-unity/](https://www.geeksforgeeks.org/ways-filling-matrix-product-rows-columns-equal-unity/)
 

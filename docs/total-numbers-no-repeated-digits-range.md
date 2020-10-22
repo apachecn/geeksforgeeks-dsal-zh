@@ -1,4 +1,4 @@
-# 范围内没有重复数字的总数
+# 范围内没有重复数字的数字总数
 
 > 原文： [https://www.geeksforgeeks.org/total-numbers-no-repeated-digits-range/](https://www.geeksforgeeks.org/total-numbers-no-repeated-digits-range/)
 

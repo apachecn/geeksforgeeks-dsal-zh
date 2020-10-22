@@ -1,4 +1,4 @@
-# 在给定范围内对数组进行三向分区
+# 数组在给定范围内的三路分区
 
 > 原文： [https://www.geeksforgeeks.org/three-way-partitioning-of-an-array-around-a-given-range/](https://www.geeksforgeeks.org/three-way-partitioning-of-an-array-around-a-given-range/)
 

@@ -1,4 +1,4 @@
-# 矩阵的锯齿形（或对角线）遍历
+# 矩阵的 Z 字形（或对角线）遍历
 
 > 原文： [https://www.geeksforgeeks.org/zigzag-or-diagonal-traversal-of-matrix/](https://www.geeksforgeeks.org/zigzag-or-diagonal-traversal-of-matrix/)
 

@@ -1,4 +1,4 @@
-# 所有合计给定值的唯一三元组
+# 总和为给定值的唯一三元组
 
 > 原文： [https://www.geeksforgeeks.org/unique-triplets-sum-given-value/](https://www.geeksforgeeks.org/unique-triplets-sum-given-value/)
 
