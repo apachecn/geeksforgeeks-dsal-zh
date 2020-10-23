@@ -36,7 +36,7 @@ Output :  arr[] = {6, 3, 2, 8}
 
 在 C++ 中，通过[集合](http://quiz.geeksforgeeks.org/set-associative-containers-the-c-standard-template-library-stl/)，[映射](http://quiz.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)和[多重映射](http://quiz.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/)实现自平衡二叉搜索树。 我们拥有键值对（不仅是键），因此无法在这里使用集合。 我们也不能直接使用映射，因为单个键可以属于多个值，而映射则允许键具有单个值。 因此，我们使用多图存储键值对，并且键可以有多个值。
 
-1.  将值以`x`为键将差异存储在多图中。
+1.  以`x`为键，以差异为值，将其存储在多图中。
 
 2.  在多重映射中，值已经根据关键字进行排序，即与`x`的差异，因为它在内部实现了自平衡二叉树。
 

@@ -25,7 +25,7 @@ Output : 180 210 315 441 104 166
 
 以下步骤按因子计数的降序对数字进行排序。
 
-1.  计算每个元素的不同数量的因素。 请参考。
+1.  计算每个元素的不同数量的因子。 请参考。
 
 2.  创建[偶对](https://www.geeksforgeeks.org/pair-in-cpp-stl/)的[向量](http://www.geeksforgeeks.org/vector-in-cpp-stl/)，该向量存储元素及其因子计数。
 

@@ -472,7 +472,7 @@ Explanation :The output is matrix in spiral format.
 
         要遍历矩阵`O(m * n)`，需要时间。
 
-    *   **空间可喜度**：`O(1)`。
+    *   **空间复杂度**：`O(1)`。
 
         不需要多余的空间。
 
@@ -723,7 +723,7 @@ Explanation :The output is matrix in spiral format.
 
         要遍历矩阵`O(m * n)`，需要时间。
 
-    *   **空间可喜度**：`O(1)`。
+    *   **空间复杂度**：`O(1)`。
 
         不需要多余的空间。
 
