@@ -1,4 +1,4 @@
-# 在数组中找到第一个，第二个和第三个最小元素
+# 在数组中找到第一个，第二个和第三小元素
 
 > 原文： [https://www.geeksforgeeks.org/find-the-first-second-and-third-minimum-elements-in-an-array/](https://www.geeksforgeeks.org/find-the-first-second-and-third-minimum-elements-in-an-array/)
 

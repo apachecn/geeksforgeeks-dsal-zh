@@ -1,8 +1,8 @@
-# 按顺序重新排列数组：最小，最大，第二个最小，第二个最大..
+# 按顺序重新排列数组：最小，最大，第二小，第二大..
 
 > 原文： [https://www.geeksforgeeks.org/rearrange-array-order-smallest-largest-2nd-smallest-2nd-largest/](https://www.geeksforgeeks.org/rearrange-array-order-smallest-largest-2nd-smallest-2nd-largest/)
 
-给定一个整数数组，任务是按以下顺序打印该数组：最小数，最大数，第二最小数，第二最大数，第三最小数，第三最大数，依此类推。
+给定一个整数数组，任务是按以下顺序打印该数组：最小数，最大数，第二小数，第二大数，第三最小数，第三最大数，依此类推。
 
 **示例**：
 

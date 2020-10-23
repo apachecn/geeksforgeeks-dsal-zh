@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/to-find-smallest-and-second-smallest-element-in-an-array/](https://www.geeksforgeeks.org/to-find-smallest-and-second-smallest-element-in-an-array/)
 
-编写高效的 C 程序以查找数组中的最小和第二个最小元素。
+编写高效的 C 程序以查找数组中的最小和第二小元素。
 
 ![](img/111eac0cedd7eba13b40b5ba82b67845.png)
 

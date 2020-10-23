@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/rearrange-array-maximum-minimum-form/](https://www.geeksforgeeks.org/rearrange-array-maximum-minimum-form/)
 
-给定一个带正整数的排序数组，请交替排列数组，即第一个元素应为最大值，第二个最小值，第三个第二个最大值，第四个第二个最小值等。
+给定一个带正整数的排序数组，请交替排列数组，即第一个元素应为最大值，第二小值，第三个第二大值，第四个第二小值等。
 
 **示例**：
 

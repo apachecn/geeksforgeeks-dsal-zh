@@ -17,7 +17,7 @@ Output : 7 6 5
 
 
 
-使用 [Kadane 的算法](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)，我们可以找到数组的最大连续子数组和。 但在[一些情况下](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)，Kadane 的算法不起作用。 当我们在数组中命中负数时，会将`max_ending_here`变量设置为零，因此我们错过了第二个最大值的可能性。
+使用 [Kadane 的算法](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)，我们可以找到数组的最大连续子数组和。 但在[一些情况下](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)，Kadane 的算法不起作用。 当我们在数组中命中负数时，会将`max_ending_here`变量设置为零，因此我们错过了第二大值的可能性。
 
 这里我们是由 [Sung Eun Bae 和 Tadao Takaoka](http://ieeexplore.ieee.org/abstract/document/1300488/) 提出的算法，该算法计算`O(n)`时间中的[最大子数组和问题](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)和`O(k * n)`时间中的`k`个最大子数组和问题。
 
