@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/alternative-sorting/](https://www.geeksforgeeks.org/alternative-sorting/)
 
-给定一个整数数组，以第一个元素为第一大值，第二个元素为第一小值的方式打印该数组，依此类推。
+给定一个整数数组，以第一个元素为最大值，第二个元素为最小值的方式打印该数组，依此类推。
 
 **示例**：
 

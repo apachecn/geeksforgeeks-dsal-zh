@@ -52,7 +52,7 @@ No valid pair exists.
 
 1.  `hasArrayTwoCandidates(A[], ar_size, sum)`
 
-2.  以非降序对数组进行排序
+2.  对数组非降序排序
 
 3.  初始化两个索引变量以在排序的数组中找到候选元素
 
