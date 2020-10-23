@@ -30,7 +30,7 @@ Output : No unique element in the matrix
 
 3.  如果字典中存在元素，则增加其计数。
 
-4.  否则插入值为 1 的元素。
+4.  否则使用值 1 插入元素。
 
 ## C++ 
 

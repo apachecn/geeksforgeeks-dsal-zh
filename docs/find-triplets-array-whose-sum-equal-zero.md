@@ -523,7 +523,7 @@ Explanation : The triplets with zero sum is
 
 *   **算法**：
 
-    1.  以升序对数组进行排序。
+    1.  对数组升序排序。
 
     2.  从头到尾遍历数组。
 

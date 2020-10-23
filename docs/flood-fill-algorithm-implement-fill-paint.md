@@ -352,7 +352,7 @@ Updated screen after call to floodFill:
 
 基于 BFS 的方法算法：
 
-1.  创建一个成对队列。
+1.  创建一个偶对队列。
 
 2.  插入队列中给定的初始索引。
 
