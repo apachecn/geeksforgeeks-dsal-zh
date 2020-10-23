@@ -339,7 +339,7 @@ K'th smallest element is 5
 
 步骤 2 为`O((n-k) * logk)`。
 
-3.  最后，MH 的根是第`k`个最小元素。
+3.  最后，`MH`的根是第`k`个最小元素。
 
 该解决方案的时间复杂度为`O(k + (n-k) * Logk)`。
 

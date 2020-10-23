@@ -34,7 +34,7 @@ Explanation : {4, 7, 3} is the only triplet whose XOR is 0
 
 2.  运行两个嵌套循环，一个来自`i-n`，另一个来自`i + 1-n`，以获取所有对。
 
-3.  获得对的异或。
+3.  获得偶对的异或。
 
 4.  检查 XOR 是否为数组元素，而不是`i`或`j`之一。
 

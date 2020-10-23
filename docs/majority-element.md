@@ -340,7 +340,7 @@ greater than the half of the size of the array size.
 
     3.  如果任何节点的最大频率大于数组大小的一半，则执行有序遍历并找到频率大于一半的节点。
 
-    4.  其他打印无多数元素。
+    4.  否则打印无多数元素。
 
 *   **实现**：
 
