@@ -174,7 +174,7 @@ column = 3 value = 6
 
 稀疏矩阵的另一种表示形式是字典。 对于字典的关键字段，使用行和列索引对，它们与矩阵的非零元素映射。 这种方法可以节省空间，但是顺序访问项目成本很高。
 
-在 C++ 中，字典定义为 STL（标准模板库）的地图类。 要了解有关地图的更多信息，请单击下面的链接：
+在 C++ 中，字典定义为 STL（标准模板库）的映射类。 要了解有关映射的更多信息，请单击下面的链接：
 
 [映射基础](http://quiz.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)
 

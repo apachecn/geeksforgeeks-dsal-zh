@@ -328,7 +328,7 @@ Length of the longest common span with same sum is 6
 辅助空间：`O(1)`。
 
  
-方法 2（使用辅助阵列）：
+方法 2（使用辅助数组）：
 
 该想法基于以下观察。
 

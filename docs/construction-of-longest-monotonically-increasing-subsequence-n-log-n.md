@@ -452,6 +452,6 @@ LIS size 6
 
 1.  您知道 [Kadane](http://en.wikipedia.org/wiki/Maximum_subarray_problem) 的算法，可以找到[最大和子数组](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)。 修改 Kadane 的算法，以跟踪最大和子数组的开始和结束位置。
 
-2.  修改 [Kadane](http://en.wikipedia.org/wiki/Maximum_subarray_problem) 的算法，以在圆形阵列中找到最大和子阵列。 有关这个问题的许多评论，请参考 GFG 论坛。
+2.  修改 [Kadane](http://en.wikipedia.org/wiki/Maximum_subarray_problem) 的算法，以在圆形数组中找到最大和子数组。 有关这个问题的许多评论，请参考 GFG 论坛。
 
 3.  给定两个整数`A`和`B`作为输入。 查找这两个数字（包括`A`和`B`）之间存在的斐波那契数。 例如，`A = 3`且`B = 18`，则`{3, 5, 8, 13}`之间有4个斐波那契数。 在O`(log K)`时间执行，其中`K`为`max(A, B)`。 你的观察是什么？

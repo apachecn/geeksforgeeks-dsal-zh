@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/range-lcm-queries/](https://www.geeksforgeeks.org/range-lcm-queries/)
 
-给定一个整数数组，请评估形式为`LCM(l, r)`的查询。 可能有很多查询，因此可以有效地评估查询。
+给定一个整数数组，请求值形式为`LCM(l, r)`的查询。 可能有很多查询，因此可以有效地求值查询。
 
 ```
 LCM (l, r) denotes the LCM of array elements

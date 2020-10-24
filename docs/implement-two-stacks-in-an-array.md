@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/implement-two-stacks-in-an-array/](https://www.geeksforgeeks.org/implement-two-stacks-in-an-array/)
 
-创建代表两个栈的数据结构 **twoStacks**。 **twoStacks** 的实现应该仅使用一个数组，即两个栈都应使用相同的数组来存储元素。 **twoStacks** 必须支持以下功能。
+创建代表两个栈的数据结构 **twoStacks**。 **twoStacks** 的实现应该仅使用一个数组，即两个栈都应使用相同的数组来存储元素。 **twoStacks** 必须支持以下函数。
 
 `push1(int x)`：将`x`推送到第一栈。
 
@@ -648,4 +648,4 @@ Popped element from stack2 is 40
     +   弹出操作：`O(1)`。
 +   辅助空间：`O(N)`。
     
-    使用数组实现堆栈，因此它是一种空间优化的方法。
+    使用数组实现栈，因此它是一种空间优化的方法。

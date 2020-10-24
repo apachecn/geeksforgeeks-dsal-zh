@@ -287,7 +287,7 @@ public static void Main(String[] args)
 // This code is contributed by PrinciRaj1992
 ```
 
-此方法支持`O(1)`中的查询，但预处理需要`O(n ^ 2)`时间。 同样，此方法需要`O(n ^ 2)`额外空间，这对于大型输入阵列可能会变得很大。
+此方法支持`O(1)`中的查询，但预处理需要`O(n ^ 2)`时间。 同样，此方法需要`O(n ^ 2)`额外空间，这对于大型输入数组可能会变得很大。
 
 
 

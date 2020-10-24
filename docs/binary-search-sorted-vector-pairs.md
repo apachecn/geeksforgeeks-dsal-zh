@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/binary-search-sorted-vector-pairs/](https://www.geeksforgeeks.org/binary-search-sorted-vector-pairs/)
 
-给定向量按其第一个值（关键字）排序的情况下，如何将 STL [`binary_search`](https://www.geeksforgeeks.org/binary-search-algorithms-the-c-standard-template-library-stl/)应用于（键，值）对的[向量](https://www.geeksforgeeks.org/vector-in-cpp-stl/)
+给定向量按其第一个值（键）排序的情况下，如何将 STL [`binary_search`](https://www.geeksforgeeks.org/binary-search-algorithms-the-c-standard-template-library-stl/)应用于（键，值）对的[向量](https://www.geeksforgeeks.org/vector-in-cpp-stl/)
 
 代码中的**结构比较**包含两个函数，将键（搜索元素）与向量中的第一个元素进行比较。
 
