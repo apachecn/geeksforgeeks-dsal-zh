@@ -834,5 +834,5 @@ The product array is :
 
 [根据数组中所有元素的异或构造，将同一索引处的元素除外](https://www.geeksforgeeks.org/construct-an-array-from-xor-of-all-elements-of-array-except-element-at-same-index/)
 
-如果您发现上述代码/算法有误，请写注释，或者找到解决同一问题的更好方法。
+如果您发现上述代码/算法有误，请写评论，或者找到解决同一问题的更好方法。
 

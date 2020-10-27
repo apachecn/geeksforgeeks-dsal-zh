@@ -295,7 +295,7 @@ Minimum number of jumps to reach end is 4
 
 +   辅助空间：`O(1)`。
 
-    不需要空间（如果递归堆栈空间被忽略）。
+    不需要空间（如果递归栈空间被忽略）。
 
 注意：如果跟踪此方法的执行，则可以看到会有重叠的子问题。 例如，`minJumps(3, 9)`将被调用两次，因为从`arr[1]`和`arr[2]`可以到达`arr[3]`。 因此，此问题同时具有动态编程的属性（最佳子结构和重叠子问题）。
 
@@ -1018,6 +1018,6 @@ Minimum number of jumps to reach end is 3
     需要对数组进行嵌套遍历。
 +   辅助空间：`O(n)`。
     
-    要存储 DP 阵列，需要线性空间。
+    要存储 DP 数组，需要线性空间。
 
 [到达终点的最小跳数 | 系列 2（`O(n)`解）](https://www.geeksforgeeks.org/minimum-number-jumps-reach-endset-2on-solution/)。

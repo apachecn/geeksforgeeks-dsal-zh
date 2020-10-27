@@ -20,7 +20,7 @@
 
 *   每种数组类型都实现接口[`Cloneable`](https://www.geeksforgeeks.org/marker-interface-java/)和[`java.io.Serializable`](https://www.geeksforgeeks.org/serialization-in-java/)。
 
-数组可以包含类的基元（`int`，`char`等）以及对象的对象（或非基元）引用，具体取决于数组的定义。 对于基元数据类型，实际值存储在连续的存储位置中。 对于[类的对象](https://www.geeksforgeeks.org/g-fact-46/)，实际对象存储在堆段中。
+数组可以包含类的原始类型（`int`，`char`等）以及对象的对象（或非原始类型）引用，具体取决于数组的定义。 对于原始数据类型，实际值存储在连续的存储位置中。 对于[类的对象](https://www.geeksforgeeks.org/g-fact-46/)，实际对象存储在堆段中。
 
 ![Arrays](img/8cb539709f616ce76d2904a850a3c608.png)
 
@@ -185,7 +185,7 @@ Element at index 4 : 50
  Student[] arr = new Student[7]; //student is a user-defined class
 ```
 
-`studentArray`包含七个内存空间，每个内存空间可以容纳七个学生类，每个学生类的大小可以存储七个学生对象的地址。必须使用学生类的构造函数实例化学生对象，并且应将其引用分配给数组中的数组元素。 以下方式。
+`studentArray`包含七个内存空间，每个内存空间可以容纳七个学生类，每个学生类的大小可以存储七个学生对象的地址。必须使用学生类的构造器实例化学生对象，并且应将其引用分配给数组中的数组元素。 以下方式。
 
 ```
 Student[] arr = new Student[5];
@@ -469,7 +469,7 @@ class [Ljava.lang.String;
 
 *   [从类`Object`继承的所有成员](https://www.geeksforgeeks.org/object-class-in-java/) ；对象的唯一方法是[克隆](https://www.geeksforgeeks.org/clone-method-in-java-2/)方法。
 
-*   公共方法`clone()`，它重写类`Object`中的克隆方法，并且不抛出[检查的异常](https://www.geeksforgeeks.org/checked-vs-unchecked-exceptions-in-java/)。
+*   公共方法`clone()`，它覆盖类`Object`中的克隆方法，并且不抛出[受检异常](https://www.geeksforgeeks.org/checked-vs-unchecked-exceptions-in-java/)。
 
 **克隆数组**：
 

@@ -415,7 +415,7 @@ public static void Main(String[] args)
 
 迭代实现：
 
-这是相同算法的迭代实现。 此处使用相同的实用程序功能`swap()`。
+这是相同算法的迭代实现。 此处使用相同的工具函数`swap()`。
 
 ## C
 

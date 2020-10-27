@@ -24,7 +24,7 @@ Output : Total number of 1's in range 2 to 3 is = 1
 
 针对此问题的一种**简单解决方案**是遍历`Toggle`查询的完整范围，当您获得`Count`查询时，然后为给定范围计算所有 1。 但是这种方法的时间复杂度将是`O(q * n)`，其中`q =`查询总数。
 
-针对此问题的有效解决方案是将[**段树**](https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)与[**延迟传播**](https://www.geeksforgeeks.org/lazy-propagation-in-segment-tree/)结合使用。 在这里，我们收集更新，直到获得`Count`查询。 当我们获得`Count`的查询时，我们会在数组中进行所有先前收集的`Toggle`更新，然后在给定范围内对数字 1 进行计数。
+针对此问题的有效解决方案是将[**段树**](https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)与[**延迟传播**](https://www.geeksforgeeks.org/lazy-propagation-in-segment-tree/)结合使用。 在这里，我们收集更新，直到获得`Count`查询。 当我们获得`Count`的查询时，我们会在数组中更新所有先前收集的`Toggle`，然后在给定范围内对数字 1 进行计数。
 
 以下是上述方法的实现：
 
