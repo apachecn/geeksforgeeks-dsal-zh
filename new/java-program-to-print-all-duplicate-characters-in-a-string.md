@@ -1,0 +1,121 @@
+# Java 程序以字符串形式打印所有重复的字符
+
+给定字符串，任务是编写 [Java](http://www.geeksforgeeks.org/java/) 程序以按频率打印所有重复的字符
+
+**示例：**
+
+> **输入：** str =“ geeksforgeeks”
+> **输出：**
+> s：2
+> e：4
+> g：2
+> k：2
+> 
+> **输入：** str =“ java”
+> **输出：**
+> a：2
+
+**方法：**的想法是使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 进行[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
+
+*   创建类型为 **{char，int}** 的 hashMap。
+*   遍历字符串，检查 **hashMap** 是否已包含遍历的字符。
+*   如果存在，则增加计数或在频率为 1 的哈希图中插入字符。
+*   现在，遍历哈希图并查找频率大于 1 的字符。以它们各自的频率打印这些字符。
+
+下面是上述方法的实现：
+
+## 爪哇
+
+```
+
+// Java program for the above approach 
+import java.util.*; 
+class GFG { 
+
+    // Function to print all duplicate 
+    // characters in string using HashMap 
+    public static void
+    countDuplicateCharacters(String str) 
+    { 
+
+        // Creating a HashMap containing char 
+        // as a key and occurrences as a value 
+        Map<Character, Integer> map 
+            = new HashMap<Character, Integer>(); 
+
+        // Converting given string into 
+        // a char array 
+        char[] charArray = str.toCharArray(); 
+
+        // Checking each character 
+        // of charArray 
+        for (char c : charArray) { 
+
+            if (map.containsKey(c)) { 
+
+                // If character is present 
+                // in map incrementing it's 
+                // count by 1 
+                map.put(c, map.get(c) + 1); 
+            } 
+            else { 
+
+                // If character is not present 
+                // in map putting this 
+                // character into map with 
+                // 1 as it's value. 
+                map.put(c, 1); 
+            } 
+        } 
+
+        // Traverse the HashMap, check 
+        // if the count of the character 
+        // is greater than 1 then print 
+        // the character and its frequency 
+        for (Map.Entry<Character, Integer> entry : 
+             map.entrySet()) { 
+
+            if (entry.getValue() > 1) { 
+                System.out.println(entry.getKey() 
+                                   + " : "
+                                   + entry.getValue()); 
+            } 
+        } 
+    } 
+
+    // Driver Code 
+    public static void
+    main(String args[]) 
+    { 
+        // Given String str 
+        String str = "geeksforgeeks"; 
+
+        // Function Call 
+        countDuplicateCharacters(str); 
+    } 
+} 
+
+```
+
+**Output:**
+
+```
+s : 2
+e : 4
+g : 2
+k : 2
+
+```
+
+**时间复杂度：** *O（N）*
+**辅助空间：** *O（1）*
+
+注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

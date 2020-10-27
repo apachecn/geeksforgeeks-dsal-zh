@@ -1,0 +1,103 @@
+# 什么是哈希函数，以及如何选择良好的哈希函数？
+
+**先决条件：** [哈希| 第 1 组（简介）](https://www.geeksforgeeks.org/hashing-set-1-introduction/) 
+
+<u>**什么是哈希函数？**</u>
+
+将给定的大电话号码转换为小的实际整数值的功能。 映射的整数值用作哈希表中的索引。 简而言之，哈希函数将一个大数字或字符串映射为一个小的整数，可用作哈希表中的索引。
+
+<u>**良好哈希函数的含义是什么？**</u>
+
+一个好的哈希函数应具有以下属性：
+
+1.  高效可计算。
+2.  应均匀分配键（每个键在每个表中的位置均等）
+
+**例如：**对于电话号码，无效的哈希函数是采用前三位数字。 更好的功能被认为是后三位数字。 请注意，这可能不是最好的哈希函数。 可能有更好的方法。
+
+在实践中，我们经常可以使用 ***启发式技术*** 创建性能良好的哈希函数。 有关密钥分配的定性信息可能在此设计过程中有用。 通常，哈希函数应取决于键的每个单个位，以便两个键的不同之处仅是一位或一组位（无论该组是在键的开始，结尾还是中间），或者 存在于整个键中）散列为不同的值。 因此，仅提取一部分键的哈希函数是不合适的。 类似地，如果两个键只是简单的数字或彼此的字符排列*（例如 139 和 319）*，则它们也应散列为不同的值。
+
+两种启发式方法是 ***除法*** 和 ***通过乘法*** 进行哈希处理，它们分别是：
+
+1.  **The mod method:**
+    *   在这种创建哈希函数的方法中，我们通过将键的其余部分除以 table_size 来将键映射到表的插槽中。 也就是说，哈希函数为
+
+        ```
+        h(key) = key mod table_size 
+
+        i.e. key % table_size
+        ```
+
+    *   由于只需要一个除法运算，因此除法散列就相当快。
+    *   使用除法时，我们通常避免 table_size 之类的某些值，例如 table_size 不应为 **r** 的幂，因为 ***table_size = r ^ p*** ，则 h（key）只是 key 的 p 个最低位。 除非我们知道所有低阶 p 位模式均等可能，否则最好将散列函数设计为依赖于密钥的所有位。
+    *   已经发现，当表大小为素数时，使用分割方法可获得最佳结果。 但是，即使 table_size 是质数，也需要附加限制。 如果 **r** 是计算机上可能的字符代码数，并且如果 **table_size** 是质数，则 r％table_size 等于 1，则哈希函数 **h（key）= 键％table_size** 只是键 mod table_size 中字符的二进制表示形式的*和。*
+
+    **示例：**
+
+    *   假设 **r** = 256 并且 **table_size** = 17，其中 r％table_size 即 256％17 = 1。
+    *   因此，对于**键= 37596** ，其哈希为
+
+        ```
+        37596 % 17 = 12
+        ```
+
+    *   但对于**键= 573** ，其哈希函数也为
+
+        ```
+        573 % 12 = 12
+        ```
+
+    *   因此，可以看出，通过该哈希函数，许多键可以具有相同的哈希。 这称为[碰撞](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)。
+    *   不太接近 2 的幂的素数通常是 table_size 的不错选择。
+2.  **The multiplication method:**
+    *   在乘法方法中，我们将键 **k** 与范围为 **0 < c < 1** 的常数实数 **c** 相乘，并提取[HTG6 **k * c** 的小数部分。
+    *   Then we multiply this value by table_size **m** and take the floor of the result. It can be represented as
+
+        ```
+        h(k) = floor (m * (k * c mod 1))
+                             or
+        h(k) = floor (m * frac (k * c))
+
+        ```
+
+        其中在标准库 *math.h* 中可用的函数 **[floor（x）](https://www.geeksforgeeks.org/ceil-floor-functions-cpp/)** 产生实数 x 的整数部分，而 **frac（ x）**产生小数部分。 **[frac（x）= x – floor（x）]**
+
+    *   乘法方法的优点是 *m 的值不是关键*，我们通常选择它为 2 的幂（ **m = 2 <sup>p</sup>** 一些整数 **p** ），因为我们随后可以轻松地在大多数计算机上实现该功能
+    *   假设机器的字长为 **w** 位，并且该密钥适合单个字。
+    *   我们将 **c** 限制为 **s /（2 <sup>w</sup> ）**形式的分数，其中 s 是 **0 <范围内的整数 s < 2 <sup>w</sup>** 。
+    *   参照图，我们首先将密钥乘以 w 位整数 **s = c * 2 <sup>w</sup>** 。 结果是 2w 位值
+
+        ```
+        r1 * 2<sup>w</sup> + r0
+
+        where r1 = high-order word of the product
+              r0 = lower order word of the product
+
+        ```
+
+    *   Although this method works with any value of the constant **c**, it works better with some values than the others.
+
+        ```
+        c ~ (sqrt (5) – 1) / 2 = 0.618033988 . . .
+        ```
+
+        可能会运作良好。
+
+    **示例：**
+
+    *   假设 **k** = 123456， **p** = 14
+    *   **m** = 2 ^ 14 = 16384， **w** = 32。
+    *   修改 **Knuth 的建议**， **c** 的形式为 **s / 2 ^ 32** 的形式。
+    *   然后**键* s** = 327706022297664 =（76300 * 2 ^ 32）+ 17612864，
+    *   因此 **r1** = 76300， **r0** = 176122864。
+    *   r0 的 14 个最高有效位产生值 **h（key）=67。**
+
+注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

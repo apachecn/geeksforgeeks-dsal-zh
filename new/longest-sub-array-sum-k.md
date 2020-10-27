@@ -1,0 +1,299 @@
+# 最长为 k 的子数组
+
+给定大小为 **n** 的包含整数的数组 **arr []** 。 问题在于找到总和等于给定值 **k** 的最长子阵列的长度。
+
+**示例：**
+
+```
+Input : arr[] = { 10, 5, 2, 7, 1, 9 }, 
+            k = 15
+Output : 4
+The sub-array is {5, 2, 7, 1}.
+
+Input : arr[] = {-5, 8, -14, 2, 4, 12},
+            k = -5
+Output : 5
+
+```
+
+**天真的方法：**考虑所有子数组的总和，并返回总和为“ k”的最长子数组的长度。 时间复杂度为 O（n ^ 2）。
+
+**有效方法：**以下是步骤：
+
+1.  初始化**总和** = 0 和 **maxLen** = 0。
+2.  创建具有**（总和，索引）**元组的哈希表。
+3.  对于 i = 0 到 n-1，执行以下步骤：
+    1.  将 arr [i]累积到**总和**。
+    2.  如果 sum == k，则更新 **maxLen** = i + 1。
+    3.  检查哈希表中是否存在**和**。 如果不存在，则将其作为**（和，i）**对添加到哈希表中。
+    4.  检查哈希表中是否存在**（sum-k）**。 如果存在，则从哈希表中获取**（sum-k）**的索引作为**索引**。 现在检查 maxLen <（i-index），然后更新 **maxLen** =（i-index）。
+4.  返回 **maxLen** 。
+
+## C ++
+
+```
+
+// C++ implementation to find the length 
+// of longest subarray having sum k 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// function to find the length of longest 
+// subarray having sum k 
+int lenOfLongSubarr(int arr[],  
+                    int n, 
+                    int k) 
+{ 
+
+    // unordered_map 'um' implemented  
+    // as hash table 
+    unordered_map<int, int> um; 
+    int sum = 0, maxLen = 0; 
+
+    // traverse the given array 
+    for (int i = 0; i < n; i++) { 
+
+        // accumulate sum 
+        sum += arr[i]; 
+
+        // when subarray starts from index '0' 
+        if (sum == k) 
+            maxLen = i + 1; 
+
+        // make an entry for 'sum' if it is 
+        // not present in 'um' 
+        if (um.find(sum) == um.end()) 
+            um[sum] = i; 
+
+        // check if 'sum-k' is present in 'um' 
+        // or not 
+        if (um.find(sum - k) != um.end()) { 
+
+            // update maxLength 
+            if (maxLen < (i - um[sum - k])) 
+                maxLen = i - um[sum - k]; 
+        } 
+    } 
+
+    // required maximum length 
+    return maxLen; 
+} 
+
+// Driver Code 
+int main() 
+{ 
+    int arr[] = {10, 5, 2, 7, 1, 9}; 
+    int n = sizeof(arr) / sizeof(arr[0]); 
+    int k = 15; 
+    cout << "Length = "
+         << lenOfLongSubarr(arr, n, k); 
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation to find the length 
+// of longest subarray having sum k 
+import java.io.*; 
+import java.util.*; 
+
+class GFG { 
+
+      // function to find the length of longest 
+      // subarray having sum k 
+      static int lenOfLongSubarr(int[] arr, int n, int k) 
+      { 
+             // HashMap to store (sum, index) tuples 
+             HashMap<Integer, Integer> map = new HashMap<>(); 
+             int sum = 0, maxLen = 0; 
+
+             // traverse the given array 
+             for (int i = 0; i < n; i++) { 
+
+                  // accumulate sum 
+                  sum += arr[i]; 
+
+                  // when subarray starts from index '0' 
+                  if (sum == k) 
+                      maxLen = i + 1; 
+
+                  // make an entry for 'sum' if it is 
+                  // not present in 'map' 
+                  if (!map.containsKey(sum)) { 
+                      map.put(sum, i); 
+                  } 
+
+                  // check if 'sum-k' is present in 'map' 
+                  // or not 
+                  if (map.containsKey(sum - k)) { 
+
+                      // update maxLength 
+                      if (maxLen < (i - map.get(sum - k))) 
+                          maxLen = i - map.get(sum - k); 
+                  } 
+             } 
+
+             return maxLen;              
+      } 
+
+      // Driver code 
+      public static void main(String args[]) 
+      { 
+             int[] arr = {10, 5, 2, 7, 1, 9}; 
+             int n = arr.length; 
+             int k = 15; 
+             System.out.println("Length = " +  
+                                lenOfLongSubarr(arr, n, k)); 
+      } 
+} 
+
+// This code is contibuted by rachana soma 
+
+```
+
+## Python3
+
+```
+
+# Python3 implementation to find the length 
+# of longest subArray having sum k 
+
+# function to find the longest 
+# subarray having sum k 
+def lenOfLongSubarr(arr, n, k): 
+
+    # dictionary mydict implemented 
+    # as hash map 
+    mydict = dict() 
+
+    # Initialize sum and maxLen with 0 
+    sum = 0
+    maxLen = 0
+
+    # traverse the given array 
+    for i in range(n): 
+
+        # accumulate the sum 
+        sum += arr[i] 
+
+        # when subArray starts from index '0' 
+        if (sum == k): 
+            maxLen = i + 1
+
+        # check if 'sum-k' is present in 
+        # mydict or not 
+        elif (sum - k) in mydict: 
+            maxLen = max(maxLen, i - mydict[sum - k]) 
+
+        # if sum is not present in dictionary 
+        # push it in the dictionary with its index 
+        if sum not in mydict: 
+            mydict[sum] = i 
+
+    return maxLen 
+
+# Driver Code 
+if __name__ == '__main__': 
+    arr = [10, 5, 2, 7, 1, 9] 
+    n = len(arr) 
+    k = 15
+    print("Length =", lenOfLongSubarr(arr, n, k)) 
+
+# This code is contributed by  
+# chaudhary_19 (Mayank Chaudhary) 
+
+```
+
+## C＃
+
+```
+
+// C# implementation to find the length  
+// of longest subarray having sum k  
+using System; 
+using System.Collections.Generic; 
+
+class GFG  
+{  
+
+// function to find the length of longest  
+// subarray having sum k  
+static int lenOfLongSubarr(int[] arr,  
+                           int n, int k)  
+{  
+    // HashMap to store (sum, index) tuples  
+    Dictionary<int, 
+               int> map = new Dictionary<int, 
+                                         int>();  
+    int sum = 0, maxLen = 0;  
+
+    // traverse the given array  
+    for (int i = 0; i < n; i++) 
+    {  
+
+        // accumulate sum  
+        sum += arr[i];  
+
+        // when subarray starts from index '0'  
+        if (sum == k)  
+            maxLen = i + 1;  
+
+        // make an entry for 'sum' if it is  
+        // not present in 'map'  
+        if (!map.ContainsKey(sum)) 
+        {  
+            map.Add(sum, i);  
+        }  
+
+        // check if 'sum-k' is present in 'map'  
+        // or not  
+        if (map.ContainsKey(sum - k))  
+        {  
+
+            // update maxLength  
+            if (maxLen < (i - map[sum - k]))  
+                maxLen = i - map[sum - k];  
+        }  
+    }  
+
+    return maxLen;          
+}  
+
+// Driver code  
+public static void Main()  
+{  
+    int[] arr = {10, 5, 2, 7, 1, 9};  
+    int n = arr.Length;  
+    int k = 15;  
+    Console.WriteLine("Length = " +  
+                       lenOfLongSubarr(arr, n, k));  
+}  
+}  
+
+// This code is contibuted by PrinciRaj1992 
+
+```
+
+**Output:**
+
+```
+Length = 4
+
+```
+
+**时间复杂度：** O（n）。
+**辅助空间：** O（n）。
+
+注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

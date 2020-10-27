@@ -1,0 +1,304 @@
+# 从 0 到 N 的整数对的最大设置位计数，其总和为 N
+
+给定**整数 N，**的任务是在从 **0 到 N** 的所有整数对中找到设置位的最大频率，该总和产生为 N。
+
+**示例：**
+
+> **输入：** N = 5
+> **输出：** 3
+> **说明：**
+> 所有对都是{0，5}，{1， 4}，{2，3}，其总和为 5。
+> 0（0000）和 5（0101），设置的位数= 2
+> 1（0001）和 4（0100），设置的位数 位= 2
+> 2（0010）和 3（0011），设置的位数= 3，因此 3 是最大值。
+> 
+> **输入：** N = 11
+> **输出：** 4
+> **说明：**
+> 所有对都是{0，11}，{1， 10}，{2、9}，{3、8}，{4、7}，{5、6}，并且最大 ans 将用于{4，7}对。
+> 4 = 1000 和 7 = 0111 ，设置的位数总数= 1 + 3 = 4
+
+**天真的方法：**解决此问题的最简单方法是生成所有总和为 **N** 的可能对，并计算所有此类对的设置位的最大和，并打印最大不 设置位总和。
+
+***时间复杂度*** **：** *O（N * log N）*
+***辅助空间*** **：** *O（1）*
+
+**高效方法：**可以通过以下步骤优化上述方法：
+
+*   找出一个小于等于 **N** 的数字，该数字中从最低有效位到最高有效位的所有位均为置位位。 该数字将是该对中的第一个数字。
+*   计算对 **{first，N-first}** 对的设置位数。
+
+下面是上述方法的实现：
+
+## C ++
+
+```
+
+// C++ program for the above approach
+
+#include <bits/stdc++.h>
+using namespace std;
+
+// Function to find the first number
+int create_first_no(int n)
+{
+    // Length of the binary from
+    int length = 0;
+
+    // Number of set bits
+    int freq_set_bits = 0;
+    int ans = 0;
+    while (n) {
+
+        // Update the first number
+        ans = ans << 1;
+        ans = ans + 1;
+
+        // Increment length
+        length++;
+
+        // Update the frequency
+        if ((n & 1))
+            freq_set_bits += 1;
+
+        n = n >> 1;
+    }
+    // Check if n does not have all the
+    // bits as set bits then make
+    // the first as less than n
+    if (length != freq_set_bits)
+        ans = (ans >> 1);
+
+    // Return the first value
+    return ans;
+}
+
+// Function to calculate maximum
+// set bit frequency sum
+int maxSetBits(int n)
+{
+    // First value of pair
+    int first = create_first_no(n);
+
+    // Second value of pair
+    int second = n - first;
+
+    // __builtin_popcount() is inbuilt
+    // function to count the number of set bits
+    int freq_first
+        = __builtin_popcount(first);
+    int freq_second
+        = __builtin_popcount(second);
+
+    // Return the sum of freq of setbits
+    return freq_first + freq_second;
+}
+
+// Driver Code
+int main()
+{
+    int N = 5;
+
+    // Function call
+    cout << maxSetBits(N);
+    return 0;
+}
+
+```
+
+## 爪哇
+
+```
+
+// Java program to implement the
+// above approach
+import java.util.*;
+
+class GFG {
+
+// Function to find the first number
+static int create_first_no(int n)
+{
+
+    // Length of the binary from
+    int length = 0;
+
+    // Number of set bits
+    int freq_set_bits = 0;
+    int ans = 0;
+
+    while (n != 0) 
+    {
+
+        // Update the first number
+        ans = ans << 1;
+        ans = ans + 1;
+
+        // Increment length
+        length++;
+
+        // Update the frequency
+        if ((n & 1) == 1)
+            freq_set_bits += 1;
+
+        n = n >> 1;
+    }
+
+    // Check if n does not have all the
+    // bits as set bits then make
+    // the first as less than n
+    if (length != freq_set_bits)
+        ans = (ans >> 1);
+
+    // Return the first value
+    return ans;
+}
+
+// Function to calculate maximum
+// set bit frequency sum
+static int maxSetBits(int n)
+{
+
+    // First value of pair
+    int first = create_first_no(n);
+
+    // Second value of pair
+    int second = n - first;
+
+    // Integer.bitCount() is inbuilt
+    // function to count the number of set bits
+    int freq_first = Integer.bitCount(first);
+    int freq_second = Integer.bitCount(second);
+
+    // Return the sum of freq of setbits
+    return freq_first + freq_second;
+}
+
+// Driver code
+public static void main(String[] args)
+{
+    int N = 5;
+
+    // Function call
+    System.out.println(maxSetBits(N));
+}
+}
+
+// This code is contributed by offbeat
+
+```
+
+## C＃
+
+```
+
+// C# program to implement the
+// above approach
+using System;
+using System.Linq; 
+class GFG {
+
+// Function to find the first number
+static int create_first_no(int n)
+{
+
+    // Length of the binary from
+    int length = 0;
+
+    // Number of set bits
+    int freq_set_bits = 0;
+    int ans = 0;
+
+    while (n != 0) 
+    {
+
+        // Update the first number
+        ans = ans << 1;
+        ans = ans + 1;
+
+        // Increment length
+        length++;
+
+        // Update the frequency
+        if ((n & 1) == 1)
+            freq_set_bits += 1;
+
+        n = n >> 1;
+    }
+
+    // Check if n does not have all the
+    // bits as set bits then make
+    // the first as less than n
+    if (length != freq_set_bits)
+        ans = (ans >> 1);
+
+    // Return the first value
+    return ans;
+}
+public static int countSetBits(int n) 
+{ 
+
+  // base case 
+  if (n == 0) 
+    return 0; 
+
+  else
+
+    // if last bit set 
+    // add 1 else add 0 
+    return (n & 1) + countSetBits(n >> 1); 
+} 
+
+// Function to calculate maximum
+// set bit frequency sum
+static int maxSetBits(int n)
+{
+
+    // First value of pair
+    int first = create_first_no(n);
+
+    // Second value of pair
+    int second = n - first;
+
+    //countSetBits function to 
+    //count the number of set bits
+    int freq_first = countSetBits(first);
+    int freq_second = countSetBits(second);
+
+    // Return the sum of freq of setbits
+    return freq_first + freq_second;
+}
+
+// Driver code
+public static void Main(string[] args)
+{
+    int N = 5;
+
+    // Function call
+    Console.Write(maxSetBits(N));
+}
+}
+
+// This code is contributed by Ritik Bansal
+
+```
+
+**Output:** 
+
+```
+3
+
+```
+
+***时间复杂度：** O（logN）*
+***辅助空间：** O（1）*
+
+注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

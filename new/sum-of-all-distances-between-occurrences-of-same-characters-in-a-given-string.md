@@ -1,0 +1,485 @@
+# 给定字符串
+
+中出现相同字符之间的所有距离之和
+
+给定字符串 **S** ，任务是从包含相同字符的给定字符串中查找所有索引对对之间的距离之和。
+
+**示例：**
+
+> **输入：** S =“ ababa”
+> **输出：** 10
+> **说明：**
+> 具有相同字符的一对索引为：（0 ，2）（0，4）（1，3）（2，4）
+> 这些对索引之间的绝对差之和= | 2 – 0 | + | 4 – 0 | + | 1 – 3 | + | 2 – 4 | =10。
+> 因此，必需的答案是 10。
+> 
+> **输入：** S =“ ttt”
+> **输出：** 4
+
+**天真的方法：**解决该问题的最简单方法是遍历字符串，对于遇到的每个字符，遍历右边的其余字符串以查找该字符的出现。 对于找到的每一个重复字符，请继续在答案中添加相关索引之间的绝对差。 最后，打印获得的总和。
+
+***时间复杂度：** O（N <sup>2</sup> ）*
+***辅助空间：** O（1）*
+
+下面是上述方法的实现：
+
+## C ++
+
+```
+
+// C++ program for the above approach
+
+#include <bits/stdc++.h>
+using namespace std;
+
+// Function to calculate the sum
+// of distances between occurrences
+// of same characters in a string
+int findSum(string s)
+{
+    int sum = 0;
+    for (int i = 0; i < s.size(); i++) {
+        for (int j = i + 1; j < s.size(); j++) {
+
+            // If similar characters are found
+            if (s[i] == s[j]) {
+
+                // Add the difference
+                // of their positions
+                sum += (j - i);
+            }
+        }
+    }
+
+    // Return the answer
+    return sum;
+}
+
+// Driver Code
+int main()
+{
+    string s = "ttt";
+    cout << findSum(s) << endl;
+}
+
+```
+
+## 爪哇
+
+```
+
+// Java program for the above approach
+import java.util.*;
+class GFG{
+
+// Function to calculate the sum
+// of distances between occurrences
+// of same characters in a String
+static int findSum(String s)
+{
+    int sum = 0;
+    for (int i = 0; i < s.length(); i++) 
+    {
+        for (int j = i + 1; j < s.length(); j++) 
+        {
+            // If similar characters are found
+            if (s.charAt(i) == s.charAt(j)) 
+            {
+                // Add the difference
+                // of their positions
+                sum += (j - i);
+            }
+        }
+    }
+
+    // Return the answer
+    return sum;
+}
+
+// Driver Code
+public static void main(String[] args)
+{
+    String s = "ttt";
+    System.out.print(findSum(s) + "\n");
+}
+}
+// This code is contributed by shikhasingrajput
+
+```
+
+## Python3
+
+```
+
+# Python3 program for the above approach 
+
+# Function to calculate the sum
+# of distances between occurrences
+# of same characters in a string
+def findSum(s):
+
+    sum = 0
+    for i in range(len(s)):
+        for j in range(i + 1, len(s)):
+
+            # If similar characters are found
+            if (s[i] == s[j]):
+
+                # Add the difference
+                # of their positions
+                sum += (j - i)
+
+    # Return the answer
+    return sum
+
+# Driver Code
+s = "ttt"
+
+print(findSum(s))
+
+# This code is contributed by code_hunt
+
+```
+
+## C＃
+
+```
+
+// C# program for 
+// the above approach
+using System;
+class GFG{
+
+// Function to calculate the sum
+// of distances between occurrences
+// of same characters in a String
+static int findSum(String s)
+{
+  int sum = 0;
+  for (int i = 0; i < s.Length; i++) 
+  {
+    for (int j = i + 1; j < s.Length; j++) 
+    {
+      // If similar characters 
+      // are found
+      if (s[i] == s[j]) 
+      {
+        // Add the difference
+        // of their positions
+        sum += (j - i);
+      }
+    }
+  }
+
+  // Return the answer
+  return sum;
+}
+
+// Driver Code
+public static void Main(String[] args)
+{
+  String s = "ttt";
+  Console.Write(findSum(s) + "\n");
+}
+}
+
+// This code is contributed by shikhasingrajput
+
+```
+
+**Output:** 
+
+```
+4
+
+```
+
+**有效方法：**可以基于以下观察来优化上述方法：
+
+*   最初，假定每个字符的所有相似字符都位于索引 **0** 处。
+*   根据以上假设，所需的总和等于：
+
+> 先前访问过的相似字符的数量*字符索引–那些相似字符到索引 0 的距离之和
+
+因此，请按照以下步骤解决问题：
+
+*   初始化两个数组 **Visited []** 和 **distance []** ，以分别存储字符串中每个字符的频率和每个字符的先前出现之间的距离。
+*   [遍历字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)，对于遇到的每个字符，即 S [i]，更新以下内容：
+    *   将**访问过的[S [i] * i –距离[S [i]]** 加到所需的总和中。
+    *   递增**访问了[S [i]]** 以增加字符的频率。
+    *   将**距离[S [i]]** 增加 **i** ，以增加与先前出现的 **S [i]，**的距离为 0。
+*   完成上述步骤后，打印获得的总和。
+
+下面是上述方法的实现：
+
+## C ++
+
+```
+
+// C++ program for the above approach
+
+#include <bits/stdc++.h>
+using namespace std;
+
+// Function to calculate the sum
+// of distances between occurrences
+// of same characters in a string
+int findSum(string s)
+{
+    int visited[256];
+    int distance[256];
+
+    // Initially make all the distances
+    // and number of characters visited as 0
+    for (int i = 0; i < 256; i++) {
+        visited[i] = 0;
+        distance[i] = 0;
+    }
+
+    int sum = 0;
+
+    for (int i = 0; i < s.size(); i++) {
+
+        // Assuming that all the similar
+        // characters are located at index 0
+
+        // Add visited[s[i]]*i to sum
+        // and subtract the distances of
+        // characters from index 0
+        sum += visited[s[i]] * i
+               - distance[s[i]];
+
+        // Increment the number of
+        // visited characters
+        visited[s[i]]++;
+
+        // Add the distance of the
+        // character from position 0
+        // i.e., (i - 0) = i
+        distance[s[i]] += i;
+    }
+
+    // Return the answer
+    return sum;
+}
+
+// Driver code
+int main()
+{
+    string s = "ttt";
+
+    // Function call
+    cout << findSum(s) << endl;
+}
+
+```
+
+## 爪哇
+
+```
+
+// Java program for the above approach
+import java.io.*;
+
+class GFG{
+
+// Function to calculate the sum
+// of distances between occurrences
+// of same characters in a string
+static int findSum(String s)
+{
+    int[] visited = new int[256];
+    int[] distance = new int[256];
+
+    // Initially make all the distances
+    // and number of characters visited as 0
+    for(int i = 0; i < 256; i++)
+    {
+        visited[i] = 0;
+        distance[i] = 0;
+    }
+
+    int sum = 0;
+
+    for(int i = 0; i < s.length(); i++)
+    {
+
+        // Assuming that all the similar
+        // characters are located at index 0
+
+        // Add visited[s[i]]*i to sum
+        // and subtract the distances of
+        // characters from index 0
+        sum += visited[s.charAt(i)] * i - 
+              distance[s.charAt(i)];
+
+        // Increment the number of
+        // visited characters
+        visited[s.charAt(i)]++;
+
+        // Add the distance of the
+        // character from position 0
+        // i.e., (i - 0) = i
+        distance[s.charAt(i)] += i;
+    }
+
+    // Return the answer
+    return sum;
+} 
+
+// Driver code
+public static void main (String[] args)
+{
+    String s = "ttt";
+
+    // Function call
+    System.out.println(findSum(s));
+}
+}
+
+// This code is contributed by offbeat
+
+```
+
+## Python3
+
+```
+
+# Python3 program for the above approach
+
+# Function to calculate the sum
+# of distances between occurrences
+# of same characters in a string
+def findSum(s):
+    visited = [0 for i in range(256)];
+    distance = [0 for i in range(256)];
+
+    # Initially make all 
+    # the distances and number 
+    # of characters visited as 0
+    for i in range(256):
+        visited[i] = 0;
+        distance[i] = 0;    
+
+    sum = 0;
+
+    for i in range(len(s)):
+
+        # Assuming that all the similar
+        # characters are located at index 0
+
+        # Add visited[s[i]]*i to sum
+        # and subtract the distances of
+        # characters from index 0
+        sum += visited[ord(s[i])] * i - distance[ord(s[i])];
+
+        # Increment the number of
+        # visited characters
+        visited[ord(s[i])] += 1;
+
+        # Add the distance of the
+        # character from position 0
+        # i.e., (i - 0) = i
+        distance[ord(s[i])] += i;    
+
+    # Return the answer
+    return sum;
+
+# Driver code
+if __name__ == '__main__':
+
+    s = "ttt";
+
+    # Function call
+    print(findSum(s));
+
+# This code is contributed by Rajput-Ji
+
+```
+
+## C＃
+
+```
+
+// C# program for the above approach
+using System;
+
+class GFG{
+
+// Function to calculate the sum
+// of distances between occurrences
+// of same characters in a string
+static int findSum(String s)
+{
+    int[] visited = new int[256];
+    int[] distance = new int[256];
+
+    // Initially make all the distances
+    // and number of characters visited as 0
+    for(int i = 0; i < 256; i++)
+    {
+        visited[i] = 0;
+        distance[i] = 0;
+    }
+
+    int sum = 0;
+
+    for(int i = 0; i < s.Length; i++)
+    {
+
+        // Assuming that all the similar
+        // characters are located at index 0
+
+        // Add visited[s[i]]*i to sum
+        // and subtract the distances of
+        // characters from index 0
+        sum += visited[s[i]] * i - 
+              distance[s[i]];
+
+        // Increment the number of
+        // visited characters
+        visited[s[i]]++;
+
+        // Add the distance of the
+        // character from position 0
+        // i.e., (i - 0) = i
+        distance[s[i]] += i;
+    }
+
+    // Return the answer
+    return sum;
+} 
+
+// Driver code
+public static void Main(String[] args)
+{
+    String s = "ttt";
+
+    // Function call
+    Console.WriteLine(findSum(s));
+}
+}
+
+// This code is contributed by Amit Katiyar
+
+```
+
+**Output:** 
+
+```
+4
+
+```
+
+***时间复杂度：** O（N）*
+***辅助空间：** O（1）*
+
+注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
