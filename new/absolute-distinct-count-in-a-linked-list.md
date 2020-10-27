@@ -11,7 +11,7 @@
 > 
 > **解释**：
 > 
-> 不同的绝对节点值为`{0，1，2，4，4，5，8}`
+> 不同的绝对节点值为`{0, 1, 2, 4, 4, 5, 8}`
 > 
 > **输入**：`- 1-> -1 -> -1 -> 0 -> 1`
 > 
@@ -19,7 +19,7 @@
 > 
 > **说明**：
 > 
-> 不同的绝对节点值为`{0，1}`。
+> 不同的绝对节点值为`{0, 1}`。
 
 **方法**：为了解决此问题，我们需要[集](https://www.geeksforgeeks.org/set-in-cpp-stl/)或 [HashSet](https://www.geeksforgeeks.org/hashset-in-java/)来存储链表中存在的不同绝对值。 [遍历整个链表](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)并在**集**中插入每个节点的绝对值后，**集** 的[大小给出了 链表中存在绝对不同的绝对值。](https://www.geeksforgeeks.org/setsize-c-stl/)
 
@@ -330,8 +330,8 @@ public static void Main(String []args)
 
 ```
 
-***时间复杂度**：O（N）*
-***辅助空间**：O（N）*
+**时间复杂度**：`O(N)`
+**辅助空间**：`O(N)`
 
 
 

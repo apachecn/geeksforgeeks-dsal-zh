@@ -27,7 +27,7 @@
 当您使用任何需要用户登录的在线网站时，请输入电子邮件和密码以验证您尝试使用的帐户属于您。 输入密码后，将计算出密码的哈希值，然后将其发送到服务器以验证密码。 存储在服务器上的密码实际上是原始密码的计算得出的哈希值。 这样做是为了确保当密码从客户端发送到服务器时，不会出现嗅探。
 
 **数据结构（编程语言）**：
-各种编程语言都有基于哈希表的数据结构。 基本思想是创建一个键值对，其中键应该是唯一值，而不同键的值可以相同。 在 C++中的 unordered_set & unordered_map，Java 中的 HashSet & HashMap，Python 中的 dict 等中可以看到此实现。
+各种编程语言都有基于哈希表的数据结构。 基本思想是创建一个键值对，其中键应该是唯一值，而不同键的值可以相同。 在 C++ 中的`unordered_set`和`unordered_map`，Java 中的`HashSet`和`HashMap`，Python 中的`dict`等中可以看到此实现。
 
 **编译器操作**：
 编程语言的关键字与其他标识符的处理方式不同。 为了区分编程语言的关键字（如果是，用于返回等）和其他标识符并成功地编译程序，编译器将所有这些关键字存储在使用哈希表实现的集合中。
@@ -36,7 +36,7 @@
 哈希最著名的应用之一是 Rabin-Karp 算法。 这基本上是一个字符串搜索算法，它使用哈希来查找字符串中的任何一组模式。 该算法的实际应用是检测抄袭。 要了解有关 Rabin-Karp 算法的更多信息，请浏览[。 集合 3（Rabin-Karp 算法）](https://www.geeksforgeeks.org/searching-for-patterns-set-3-rabin-karp-algorithm/)。
 
 **将文件名和路径链接在一起**：
-在本地系统上浏览文件时，我们观察到文件的两个非常关键的组成部分，即 file_name 和 file_path。 为了存储 file_name 和 file_path 之间的对应关系，系统使用通过哈希表实现的 map（file_name，file_path）。
+在本地系统上浏览文件时，我们观察到文件的两个非常关键的组成部分，即`file_name`和`file_path`。 为了存储`file_name`和`file_path`之间的对应关系，系统使用通过哈希表实现的`map(file_name, file_path)`。
 
 **相关文章**：
  [哈希 vs BST](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/) [哈希 vs Trie](https://www.geeksforgeeks.org/advantages-trie-data-structure/)
