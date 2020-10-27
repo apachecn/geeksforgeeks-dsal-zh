@@ -4,18 +4,18 @@
 
 给定 **N** 个整数的排序数组 **arr []** ，任务是在范围 **[arr [0]，arr [N]之间找到数组中的多个缺失元素 -1]]** 。
 
-**示例：**
+**示例**：
 
-> ***输入：** arr [] = {6，7，10，11，13}*
-> ***输出：** 8 9 12*
-> **解释：**
+> ***输入**：arr [] = {6，7，10，11，13}*
+> ***输出**：8 9 12*
+> **解释**：
 > 数组的元素存在于最大和最小数组元素[6，13]的范围内。 因此，总值为{6、7、8、9、10、11、12、13}。
 > 数组中缺少上述范围的元素是{8，9，12}。
 > 
-> ***输入：** arr [] = {1、2、4、6}*
-> ***输出：** 3 5*
+> ***输入**：arr [] = {1、2、4、6}*
+> ***输出**：3 5*
 
-**天真的方法：**天真的想法是遍历连续对元素之间的[差异，并打印该范围内的所有数字（如果差异非零）。 步骤如下：](https://www.geeksforgeeks.org/calculate-the-difference-between-consecutive-pair-of-elements-of-a-vector-in-r-programming-diff-function/)
+**天真的方法**：天真的想法是遍历连续对元素之间的[差异，并打印该范围内的所有数字（如果差异非零）。 步骤如下：](https://www.geeksforgeeks.org/calculate-the-difference-between-consecutive-pair-of-elements-of-a-vector-in-r-programming-diff-function/)
 
 1.  初始化变量 **diff** ，该变量等于 **arr [0] – 0** 。
 2.  现在[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，看看 **arr [i] – i** 与 **diff** 之间的差是否为零。
@@ -225,10 +225,10 @@ static void Main()
 
 ```
 
-***时间复杂度：** O（N <sup>2</sup> ）*
-***辅助空间：** O（1）*
+***时间复杂度**：O（N <sup>2</sup> ）*
+***辅助空间**：O（1）*
 
-**高效方法：**的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)优化上述方法。 创建一个布尔数组（例如 **b []** ），其大小等于数组中的最大元素，并仅标记数组 b []中存在于给定数组中的那些位置。 打印数组 **b []** 中所有未标记的索引。
+**高效方法**：的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)优化上述方法。 创建一个布尔数组（例如 **b []** ），其大小等于数组中的最大元素，并仅标记数组 b []中存在于给定数组中的那些位置。 打印数组 **b []** 中所有未标记的索引。
 以下是步骤：
 
 1.  初始化一个布尔数组 **b []** ，其大小为零，等于数组的[最大元素。](https://www.geeksforgeeks.org/c-program-find-largest-element-array/)
@@ -449,8 +449,8 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（M），其中 M 是数组的最大元素。*
-***辅助空间：** O（M）*
+***时间复杂度**：O（M），其中 M 是数组的最大元素。*
+***辅助空间**：O（M）*
 
 
 

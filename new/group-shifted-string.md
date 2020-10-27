@@ -165,7 +165,7 @@ groupShiftedString(str, n)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 a x

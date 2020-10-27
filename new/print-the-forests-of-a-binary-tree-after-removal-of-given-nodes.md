@@ -2,9 +2,9 @@
 
 给定 [**二叉树**](https://www.geeksforgeeks.org/binary-tree-data-structure/) 和由要删除的节点值组成的数组 **arr []** ，任务是打印[有序遍历](http://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/) 删除节点后的[森林](https://www.geeksforgeeks.org/count-number-trees-forest/)中的一个。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {10，5}
+> **输入**：arr [] = {10，5}
 > 
 > ```
 >         10
@@ -15,11 +15,11 @@
 > 
 > ```
 > 
-> **输出：**
+> **输出**：
 > 4 20
 > 30 7
 > 
-> **输入：** arr [] = {5}
+> **输入**：arr [] = {5}
 > 
 > ```
 >          1
@@ -30,11 +30,11 @@
 > 
 > ```
 > 
-> **输出：**
+> **输出**：
 > 10
 > 1 6 12
 
-**方法：**请按照以下步骤解决问题：
+**方法**：请按照以下步骤解决问题：
 
 1.  执行二叉树的[后置遍历](https://www.geeksforgeeks.org/iterative-postorder-traversal/)。
 2.  对于每个节点，检查它是否包含要删除的值。
@@ -412,8 +412,8 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（1）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（1）*
 
 
 

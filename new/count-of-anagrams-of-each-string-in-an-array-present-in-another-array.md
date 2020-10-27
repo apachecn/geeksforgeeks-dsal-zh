@@ -2,23 +2,23 @@
 
 给定两个由字符串组成的数组 **arr1 []** 和 **arr2 []** ，任务是打印 arr1 []中存在的 arr2 []中每个字符串的字首计数。
 
-**示例：**
+**示例**：
 
-> **输入：** arr1 [] = [“极客”，“学习”，“针对”，“爱克”，“ ealrn”]，arr2 [] = [“ kgees”，“ rof”，“ nrael” ]
-> **输出：** 2 1 2
-> **说明：**
+> **输入**：arr1 [] = [“极客”，“学习”，“针对”，“爱克”，“ ealrn”]，arr2 [] = [“ kgees”，“ rof”，“ nrael” ]
+> **输出**：2 1 2
+> **说明**：
 > arr1 中 arr2 [0]（“ kgees”）的组合图：“极客”和“ egeks” 。
 > arr1：“ for”中 arr2 [1]（“ rof”）的组合图。
 > arr1 中 arr2 [2]（“ nrael”）的相似字：“ learn”和“ ealrn”。
 > 
-> **输入：** arr1 [] = [“代码”，“至”，“增长”，“奇数”]，arr2 [] = [“ edoc”，“ wgor”，“ ot”]
-> **输出：** 2 1 1
-> **说明：**
+> **输入**：arr1 [] = [“代码”，“至”，“增长”，“奇数”]，arr2 [] = [“ edoc”，“ wgor”，“ ot”]
+> **输出**：2 1 1
+> **说明**：
 > arr1“ code”和“ odce”中 arr2 [0]（“ edoc”）的字谜。
 > arr1“增长”中 arr2 [1]（“ wgor”）的字谜。
 > arr1“至”中 arr2 [2]（“ ot”）的组合
 
-**方法：**
+**方法**：
 为了解决该问题，想法是在 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 的帮助下使用[频率计数](https://www.geeksforgeeks.org/basic/frequency-counting/)。 将每个字符串的频率以其排序形式存储在哈希图中的 arr1 []中。 遍历 arr2 []，在 arr2 []中对字符串进行排序，然后在 HashMap 中打印它们各自的频率。
 
 下面是上述方法的实现：

@@ -4,24 +4,24 @@
 
 给定一个[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，该数组由 **N** 个整数组成，任务是从该数组中打印出所有相邻的整数对，这些对在给定数组中出现多次 。 如果数组包含多个这样的对，请按排序顺序打印所有对。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {1、2、5、1、2}
-> **输出：**
+> **输入**：arr [] = {1、2、5、1、2}
+> **输出**：
 > 1 2
-> **说明：**
+> **说明**：
 > 1 2 是数组中唯一重复的整数对。
 > 
-> **输入：** arr [] = {1、2、3、4、1、2、3、4、1、2}
-> **输出：**
+> **输入**：arr [] = {1、2、3、4、1、2、3、4、1、2}
+> **输出**：
 > 1 2
 > 2 3
 > 3 4
 > 4 1
-> **说明：**
+> **说明**：
 > 由于数组具有多个重复对，因此所有对均按排序顺序打印。
 
-**方法：**最简单的方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并将每个相邻对存储在 [Map](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 中。 打印频率大于 **1** 的所有此类对。 请按照以下步骤解决问题：
+**方法**：最简单的方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并将每个相邻对存储在 [Map](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 中。 打印频率大于 **1** 的所有此类对。 请按照以下步骤解决问题：
 
 1.  创建一个映射 **M** 以将所有相邻对存储在数组中。
 2.  [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并将每个相邻对存储在 Map **M** 中。
@@ -117,8 +117,8 @@ int main()
 
 ```
 
-***时间复杂度：** O（N * log N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N * log N）*
+***辅助空间**：O（N）*
 
 
 

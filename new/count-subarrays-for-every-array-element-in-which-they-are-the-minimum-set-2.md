@@ -2,18 +2,18 @@
 
 给定一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个整数组成，任务是创建大小为**的数组 **brr []** N** 其中 **brr [i]** 代表其中 **arr [i]** 是最小元素的子阵列的数量。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {3，2，4}
-> **输出：** {1，3，1}
-> **说明：** ]对于 arr [0]，只有一个子数组，其中 3 是最小的（{3}）。
+> **输入**：arr [] = {3，2，4}
+> **输出**：{1，3，1}
+> **说明**：]对于 arr [0]，只有一个子数组，其中 3 是最小的（{3}）。
 > 对于 arr [1]，存在三个这样的子数组，其中 2 是最小的（{2}，{3、2}，{2、4}）。
 > 对于 arr [2]，只有一个子数组，其中 4 最小（{4}）。
 > 
-> **输入：** arr [] = {1、2、3、4、5}
-> **输出：** {5、4、3、2、1}
+> **输入**：arr [] = {1、2、3、4、5}
+> **输出**：{5、4、3、2、1}
 
-[**散列**](http://www.geeksforgeeks.org/hashing-data-structure/) **方法：** [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)找出[所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)的最小元素并将其计数存储在 [映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 请按照以下步骤解决问题：
+[**散列**](http://www.geeksforgeeks.org/hashing-data-structure/) **方法**：[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)找出[所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)的最小元素并将其计数存储在 [映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 请按照以下步骤解决问题：
 
 1.  创建一个[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，以存储每个元素的[子数组](https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/)的数量。
 2.  遍历所有可能的子数组，找到子数组中的最小元素。
@@ -131,10 +131,10 @@ if __name__ == '__main__':
 
 ```
 
-***时间复杂度：** O（N <sup>2</sup> ）*
-***辅助空间：** O（1）*
+***时间复杂度**：O（N <sup>2</sup> ）*
+***辅助空间**：O（1）*
 
-**有效方法：**此方法基于[下一个较大元素](https://www.geeksforgeeks.org/next-greater-element/)和[前一个较大元素](https://www.geeksforgeeks.org/previous-greater-element/)的概念。 请按照以下步骤解决问题：
+**有效方法**：此方法基于[下一个较大元素](https://www.geeksforgeeks.org/next-greater-element/)和[前一个较大元素](https://www.geeksforgeeks.org/previous-greater-element/)的概念。 请按照以下步骤解决问题：
 
 1.  为了找到元素的最小值，首先找到 **x** 和 **y** ，其中 **x** 是在左边的严格大于数字的长度。 **arr [i]** 和 **y** 是 **arr [i]** 右边较大数字的长度。
 2.  因此， **x * y** 是其中 **arr [i]** 最小的子阵列的总数。
@@ -294,8 +294,8 @@ if __name__ == "__main__":
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（N）*
 
 
 

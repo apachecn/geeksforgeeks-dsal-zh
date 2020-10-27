@@ -2,10 +2,10 @@
 
 给定[字符串](https://www.geeksforgeeks.org/string-data-structure/) **S** 包含小写英文字符，任务是[查找字符串](https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/)中所有字符的频率。
 
-**示例：**
+**示例**：
 
-> **输入：** S =“ geeksforgeeks”
-> **输出：**
+> **输入**：S =“ geeksforgeeks”
+> **输出**：
 > e – 4
 > f – 1
 > g – 2
@@ -15,11 +15,11 @@
 > s – 2
 > 
 > **输入**：S =“ gfg”
-> **输出：**
+> **输出**：
 > f – 1
 > g – 2
 
-**方法：**请按照以下步骤解决问题：
+**方法**：请按照以下步骤解决问题：
 
 1.  初始化数组 **freq []** ，以将每个字母的[频率存储在给定的字符串](https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/)中。 **0** <sup>第</sup>索引存储字符' **a'**的频率，1 <sup>st / sup >索引存储字符' b'，依此类推。</sup>
 2.  [迭代给定的字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/) **S** ，并通过执行 **freq [S [i] –'a' ] + = 1** 。 如果 **S [i] ='a'**，则 **S [i] –'a'**等于 0，因此'a'的频率在数组中增加。
@@ -101,8 +101,8 @@ s - 2
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（26）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（26）*
 
 
 

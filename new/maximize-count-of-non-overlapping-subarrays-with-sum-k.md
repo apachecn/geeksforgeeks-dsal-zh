@@ -2,16 +2,16 @@
 
 给定数组 **arr []** 和整数 **K** ，任务是打印与 **K** 之和的非重叠子数组的最大数量。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {-2，6，6，3，5，4，1，2，8}，K = 10
+> **输入**：arr [] = {-2，6，6，3，5，4，1，2，8}，K = 10
 > **输出**：3
-> **解释：**所有和为 K（= 10）的不重叠子阵列都是{-2，6，6}，{5，4，1}，{2，8}。 因此，所需的计数为 3。
+> **解释**：所有和为 K（= 10）的不重叠子阵列都是{-2，6，6}，{5，4，1}，{2，8}。 因此，所需的计数为 3。
 > 
-> **输入：** arr [] = {1，1，1}，K = 2
-> **输出：** 1
+> **输入**：arr [] = {1，1，1}，K = 2
+> **输出**：1
 
-**方法：**可以使用[前缀和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)的概念解决此问题。 请按照以下步骤解决问题：
+**方法**：可以使用[前缀和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)的概念解决此问题。 请按照以下步骤解决问题：
 
 1.  初始化[集](https://www.geeksforgeeks.org/set-in-cpp-stl/)以存储直到当前元素为止获得的所有前缀和。
 2.  初始化变量 **prefixSum** 和 **res** ，以存储当前子数组的前缀和和分别等于 **K** 的子数组的数量。
@@ -288,8 +288,8 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（N）*
 
 
 

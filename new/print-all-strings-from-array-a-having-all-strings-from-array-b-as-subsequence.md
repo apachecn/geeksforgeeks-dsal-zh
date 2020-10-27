@@ -1,23 +1,23 @@
 # 打印数组 A []中的所有字符串，并将数组 B []中的所有字符串作为子序列
 
 给定两个由字符串组成的数组 **A []** 和 **B []** ，任务是从数组 **A []** 中打印所有字符串都位于 B [ ]作为子序列。
-**范例：**
+**范例**：
 
-> **输入：** A [] = {“ geeksforgeeks”，“ mapple”，“ twitter”，“ table”，“ Linkedin”}，B [] = {“ e”，“ l”}
-> **输出：** maplet tablelinkedin
-> **说明：**字符串“ e”和“ l”都是“ mapple”，“ table”，“ linkedin”中的子集。
+> **输入**：A [] = {“ geeksforgeeks”，“ mapple”，“ twitter”，“ table”，“ Linkedin”}，B [] = {“ e”，“ l”}
+> **输出**：maplet tablelinkedin
+> **说明**：字符串“ e”和“ l”都是“ mapple”，“ table”，“ linkedin”中的子集。
 > 
-> **输入：** A [] = {“ geeksforgeeks”，“ topcoder”，“ leetcode”}，B [] = {“ geek”，“ ee”}
-> **输出：** geeksforgeeks
-> **说明：** B []，{“ geek”，“ ee”}中的每个字符串仅出现在“ geeksforgeeks”中。
+> **输入**：A [] = {“ geeksforgeeks”，“ topcoder”，“ leetcode”}，B [] = {“ geek”，“ ee”}
+> **输出**：geeksforgeeks
+> **说明**：B []，{“ geek”，“ ee”}中的每个字符串仅出现在“ geeksforgeeks”中。
 
-**天真的方法：**
+**天真的方法**：
 解决该问题的最简单方法是遍历数组 A []，对于每个字符串，检查数组 B []中的所有字符串是否都以[的形式存在 子序列](https://www.geeksforgeeks.org/given-two-strings-find-first-string-subsequence-second/)与否。
 
-***时间复杂度：** O（N <sup>2</sup> * L），其中 length 表示数组 A []中字符串的最大长度*
-*[ **辅助空间：** O（1）*
+***时间复杂度**：O（N <sup>2</sup> * L），其中 length 表示数组 A []中字符串的最大长度*
+*[ **辅助空间**：O（1）*
 
-**有效方法：**
+**有效方法**：
 要优化上述方法，请按照以下步骤操作：
 
 *   初始化矩阵 **A_fre [] []** ，其中 **A_fre [i]** 将每个字符的频率存储在第<sup>个</sup>字符串中。
@@ -494,8 +494,8 @@ geeksforgeeks
 
 ```
 
-***时间复杂度：** O（N * * L），其中 length 表示数组 A []中字符串的最大长度。*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N * * L），其中 length 表示数组 A []中字符串的最大长度。*
+***辅助空间**：O（N）*
 
 
 

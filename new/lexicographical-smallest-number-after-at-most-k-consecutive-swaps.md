@@ -4,24 +4,24 @@
 
 > **连续交换**表示一次交换就可以将索引 **i** 的字符与索引 **i – 1** 或 **i + 1** 的字符交换。 。
 
-**示例：**
+**示例**：
 
-> **输入：** str =“ 76921”，K = 3
-> **输出：** 27691
-> **说明：**
+> **输入**：str =“ 76921”，K = 3
+> **输出**：27691
+> **说明**：
 > 27691 是词典上可能的最小数字 。
 > 
-> **输入：** str =“ 9438957234785635408”，K = 23
-> **输出：** 0345989723478563548
-> **说明：**
+> **输入**：str =“ 9438957234785635408”，K = 23
+> **输出**：0345989723478563548
+> **说明**：
 > 0345989723478563548 是字典上最小的数字 。
 
-**天真的方法：**最简单的想法是[生成给定字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，并检查哪个词典上最小的字符串最多满足 **K** 交换的条件。 打印该字符串。
+**天真的方法**：最简单的想法是[生成给定字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，并检查哪个词典上最小的字符串最多满足 **K** 交换的条件。 打印该字符串。
 
-**时间复杂度：** *O（N！），其中 N 是给定字符串的*长度。
-**辅助空间：** *O（1）*
+**时间复杂度**：*O（N！），其中 N 是给定字符串的*长度。
+**辅助空间**：*O（1）*
 
-**更好的方法：**更好的方法是使用[贪婪方法](https://www.geeksforgeeks.org/greedy-algorithms/)。 步骤如下：
+**更好的方法**：更好的方法是使用[贪婪方法](https://www.geeksforgeeks.org/greedy-algorithms/)。 步骤如下：
 
 1.  如果给定数字中存在前导零，则将其删除。
 2.  当 **K** 较小时，从字符串 str [考虑 **str [k]** 中选择最小的元素，否则 **N** ]。
@@ -30,10 +30,10 @@
 5.  如果仍然剩下 **K > 0** ，那么我们从下一个起始位置开始应用相同的程序，即 **str [2，…N]，**，然后 将其放置在**第一**位置。
 6.  因此，我们继续应用相同的过程，直到 **K 变为 0** 为止。
 
-**时间复杂度：** *O（N <sup>2</sup> ），其中 N 是给定字符串的*长度。
-**辅助空间：** *O（1）*
+**时间复杂度**：*O（N <sup>2</sup> ），其中 N 是给定字符串的*长度。
+**辅助空间**：*O（1）*
 
-**有效方法：**的想法是使用 [**细分树**](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/) 和 [**散列**](http://www.geeksforgeeks.org/hashing-data-structure/) 。 步骤如下：
+**有效方法**：的想法是使用 [**细分树**](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/) 和 [**散列**](http://www.geeksforgeeks.org/hashing-data-structure/) 。 步骤如下：
 
 1.  如果给定数字中存在前导零，则将其删除。
 2.  将数字的原始位置存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，并找到最适合每个移位小于 **K** 的索引的数字。
@@ -250,8 +250,8 @@ int main()
 
 ```
 
-***时间复杂度：** O（N * log N），其中 N 是字符串的长度。*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N * log N），其中 N 是字符串的长度。*
+***辅助空间**：O（N）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

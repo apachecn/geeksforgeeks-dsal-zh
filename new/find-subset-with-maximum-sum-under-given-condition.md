@@ -2,7 +2,7 @@
 
 给定 n 个项目的**值[]** 和**标签[]** 和正整数**限制**，我们需要选择这些项目的子集 以这样的方式，子集中相同类型标签的数量应为< =极限，并且在所有可能的子集中选择中，值的总和最大。
 
-**范例：**
+**范例**：
 
 ```
 Input: values[] = [5, 3, 7, 1, 2],
@@ -25,7 +25,7 @@ Output: 29
 
 ```
 
-**方法：**的想法是使用 [Multimap](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/) 和 [Hashmap](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 解决此问题。
+**方法**：的想法是使用 [Multimap](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/) 和 [Hashmap](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 解决此问题。
 
 *   我们将所有值和相应的标签成对存储在 Multimap 中。
 *   在 Multimap 中，{values，labels}对按升序排序。 因此，我们将反向遍历 Multimap 以获得降序对。
@@ -92,7 +92,7 @@ return 0;
 
 ```
 
-**时间复杂度：** O（N），其中 N 是数组的长度。
+**时间复杂度**：O（N），其中 N 是数组的长度。
 
 
 

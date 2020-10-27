@@ -1,19 +1,19 @@
 # 将给定字符串拆分为两个非空回文的方法的数量
 
 给定字符串 **S** ，任务是找到将给定字符串 **S** 分为两个非空回文字符串的方法。
-**范例：**
+**范例**：
 
-> **输入：** S =“ aaaaa”
-> **输出：** 4
-> **说明：**
+> **输入**：S =“ aaaaa”
+> **输出**：4
+> **说明**：
 > 可能的分割：{“ a”，“ aaaa” }，{“ aa”，“ aaa”}，{“ aaa”，“ aa”}，{“ aaaa”，“ a”}
 > 
-> **输入：** S =“ abacc”
-> **输出：** 1
-> **说明：**
+> **输入**：S =“ abacc”
+> **输出**：1
+> **说明**：
 > 仅可能的拆分是“ aba”，“ cc” 。
 
-**天真方法：**天真方法是在每个可能的索引处分割字符串，并检查两个子字符串是否都是回文。 如果是，则增加该索引的**计数**。 打印最终的**计数**。
+**天真方法**：天真方法是在每个可能的索引处分割字符串，并检查两个子字符串是否都是回文。 如果是，则增加该索引的**计数**。 打印最终的**计数**。
 
 下面是上述方法的实现：
 
@@ -306,9 +306,9 @@ public static void Main(string []args)
 
 ```
 
-***时间复杂度：** O（N <sup>2</sup> ）*
+***时间复杂度**：O（N <sup>2</sup> ）*
 
-**有效方法：**可以使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)和 [Rabin-Karp 算法](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/)来存储字符串的**前缀和后缀哈希**，从而优化上述方法 。 请按照以下步骤解决问题：
+**有效方法**：可以使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)和 [Rabin-Karp 算法](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/)来存储字符串的**前缀和后缀哈希**，从而优化上述方法 。 请按照以下步骤解决问题：
 
 *   计算给定字符串的前缀和后缀哈希。
 *   对于[1，N – 1]范围内的每个索引 i，检查两个子字符串[0，i – 1]和[i，N – 1]是否为回文。
@@ -498,8 +498,8 @@ int main()
 
 ```
 
-***时间复杂度：** O（N * log（10 <sup>9</sup> ）））*
-***空间复杂度：** O（N）*
+***时间复杂度**：O（N * log（10 <sup>9</sup> ）））*
+***空间复杂度**：O（N）*
 
 
 

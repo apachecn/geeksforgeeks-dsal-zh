@@ -2,17 +2,17 @@
 
 给定大小为 **M * N** 的矩阵 **mat [] []** ，任务是找到所有矩阵元素，这些矩阵元素在其各自的行中最小，在其各自的列中最大。 如果不存在此类元素，则打印 **-1** 。
 
-**示例：**
+**示例**：
 
-> **输入：** mat [] [] = {{1，10，4}，{9，3，8}，{15，16，17}}
-> **输出：** 15
-> **说明：**
+> **输入**：mat [] [] = {{1，10，4}，{9，3，8}，{15，16，17}}
+> **输出**：15
+> **说明**：
 > 15 是唯一在其列{1，3， **15** }中最大而在其行{ **15 [** ，16、17}。
 > 
-> **输入：** m [] [] = {{10，41}，{3，5}，{16，2}}
-> **输出：** -1
+> **输入**：m [] [] = {{10，41}，{3，5}，{16，2}}
+> **输出**：-1
 
-**方法：**请按照以下步骤解决问题：
+**方法**：请按照以下步骤解决问题：
 
 1.  创建 [**无序集**](https://www.geeksforgeeks.org/unordered_set-in-cpp-stl/) ，并存储矩阵每一行的[最小元素。](https://www.geeksforgeeks.org/minimum-element-of-each-row-and-each-column-in-a-matrix/)
 2.  [遍历矩阵](https://www.geeksforgeeks.org/traverse-a-given-matrix-using-recursion/)并找到每列的**最大元素**。 对于每一列，检查获得的最大值是否已经存在于 [unordered_set](http://www.geeksforgeeks.org/unorderd_set-stl-uses/) 中。
@@ -340,8 +340,8 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（M * N）*
-***辅助空间：** O（M + N）*
+***时间复杂度**：O（M * N）*
+***辅助空间**：O（M + N）*
 
 
 

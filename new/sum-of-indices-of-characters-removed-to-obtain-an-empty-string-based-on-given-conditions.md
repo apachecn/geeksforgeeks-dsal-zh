@@ -6,28 +6,28 @@
 *   对于多次出现的最小字母，请删除索引最小的那个字母。
 *   删除每个字符后，其右边所有字符的索引都会减少 1。
 
-**示例：**
+**示例**：
 
-> **输入：** str =“ aba”
-> **输出：** 4
-> **说明：** aba”->“ ba”，总和= 1
+> **输入**：str =“ aba”
+> **输出**：4
+> **说明**：aba”->“ ba”，总和= 1
 > “ b **a** ”->“ b”，总和= 1 + 2 = 3
 > “ b”->“”，总和= 3 +1 = 4
 > 
-> **输入：** str =“ geeksforgeeks”
-> **输出：** 41
+> **输入**：str =“ geeksforgeeks”
+> **输出**：41
 
-**天真的方法：**
+**天真的方法**：
 请按照以下步骤解决问题：
 
 *   查找具有最小索引的最小字符。
 *   从字符串中删除该字符，并将所有字符向右移一个索引。
 *   重复上述步骤，直到字符串为空。
 
-***时间复杂度：** O（N ^ 2）
-**辅助空间：** O（N）*
+***时间复杂度**：O（N ^ 2）
+**辅助空间**：O（N）*
 
-**高效方法：**可以使用[分段树](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)和[哈希优化上述方法。](https://www.geeksforgeeks.org/hashing-data-structure/) 请按照以下步骤解决问题：
+**高效方法**：可以使用[分段树](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)和[哈希优化上述方法。](https://www.geeksforgeeks.org/hashing-data-structure/) 请按照以下步骤解决问题：
 
 *   可以观察到，仅删除字符右侧的索引受到影响，也就是说，它们需要移动一个位置。
 *   将字符的索引存储在 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中
@@ -164,8 +164,8 @@ int main()
 
 ```
 
-***时间复杂度：** O（N log N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N log N）*
+***辅助空间**：O（N）*
 
 
 

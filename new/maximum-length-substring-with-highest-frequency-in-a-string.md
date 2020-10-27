@@ -3,7 +3,7 @@
 中频率最高的最大子字符串
 
 给定一个字符串。 任务是找到最大长度的最大出现子字符串。 这些情况可能会重叠。
-**范例：**
+**范例**：
 
 ```
 Input: str = "abab"
@@ -15,7 +15,7 @@ Output: a
 
 ```
 
-**方法：**这个想法是使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)存储每个子串的频率，并打印出最大频率和最大长度的子串。
+**方法**：这个想法是使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)存储每个子串的频率，并打印出最大频率和最大长度的子串。
 以下是上述方法的实现：
 
 ## C++

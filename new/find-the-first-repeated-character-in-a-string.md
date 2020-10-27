@@ -6,7 +6,7 @@
 
 [![find first repeated character in a string](img/6e31e5e3a0b96a7e5578d6ceb6eeb146.png)](https://media.geeksforgeeks.org/wp-content/uploads/find-first-repeated-character-in-a-string.png)
 
-**示例：**
+**示例**：
 
 > **输入**：ch =“ geeksforgeeks”
 > **输出**：e
@@ -260,7 +260,7 @@ e
 
 ```
 
-**类似的问题：** [在字符串](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)中找到第一个非重复字符。
+**类似的问题**：[在字符串](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)中找到第一个非重复字符。
 
 本文由 **Afzal Ansari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

@@ -247,14 +247,14 @@ public static void Main(String[] args) 
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 3
 
 ```
 
-**时间复杂度：** O（n）
+**时间复杂度**：O（n）
 
 
 

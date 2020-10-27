@@ -5,22 +5,22 @@
 
 > 超级能力定义为数组中的一个数字，当乘以数组中除自身以外的任何其他数字时，就形成一个完美的平方。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {2，2，2}
-> **输出：** 0
-> **说明：**
+> **输入**：arr [] = {2，2，2}
+> **输出**：0
+> **说明**：
 > 我们不需要 在数组上执行任何操作，因为选择任何元素（2）并将其与其他索引（2）中的任何元素相乘，我们得到一个完美的平方（4）。
-> **输入：** arr [] = {2，4，6}
-> **输出：** 2
-> **说明：**
+> **输入**：arr [] = {2，4，6}
+> **输出**：2
+> **说明**：
 > 我们需要 执行以下两个操作：
 > 首先，我们将索引 1 处的元素与整数 2 相乘。数组变为{2,8,6}。
 > 其次，我们将索引 2 的元素与整数 3 相乘。数组变为{2，8，18}。
 > 现在，所有要素都已成为超级大国。 数组中任何两个数字相乘得到一个完美的平方。
 > 即 2 * 8 = 16、2 * 16 = 36 和 8 * 18 = 144。
 
-**方法：**由于我们需要检查所有数字的素因数，所以我们的想法是首先预先计算所有数字的[唯一素因数](https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)并将其存储在[哈希图中](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 。 然后，我们创建一个变量来存储[主因子](https://www.geeksforgeeks.org/prime-factor/)在数组的每个元素中出现的次数。 我们还需要观察到，我们需要找到转换数组的最小步骤数。 因此，我们计算向量中的奇数个数和偶数素数的个数，取最小者为准。 可以计算以下步骤来找到答案：
+**方法**：由于我们需要检查所有数字的素因数，所以我们的想法是首先预先计算所有数字的[唯一素因数](https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)并将其存储在[哈希图中](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 。 然后，我们创建一个变量来存储[主因子](https://www.geeksforgeeks.org/prime-factor/)在数组的每个元素中出现的次数。 我们还需要观察到，我们需要找到转换数组的最小步骤数。 因此，我们计算向量中的奇数个数和偶数素数的个数，取最小者为准。 可以计算以下步骤来找到答案：
 
 1.  我们首先需要计算 spf []数组。 这是存储所有元素的最小素因数的数组。
 2.  然后，我们需要找到唯一的主要因素并将其存储在哈希图中。
@@ -547,7 +547,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** *O（N * log（N））*，其中 N 是输入数组的大小。
+**时间复杂度**：*O（N * log（N））*，其中 N 是输入数组的大小。
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

@@ -2,16 +2,16 @@
 
 给定[字符串](https://www.geeksforgeeks.org/string-data-structure/) **S []** 的[数组，该数组由 **N** 个长度为 **M** 的不同字符串组成。 任务是通过连接给定数组中的某些字符串来生成最长的](https://www.geeksforgeeks.org/array-data-structure/)[回文字符串](https://www.geeksforgeeks.org/string-palindrome/)。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 4，M = 3，S [] = {“ omg”，“ bbb”，“ ffd”，“ gmo”}
-> **输出：** omgbbbgmo [
-> **说明：**字符串“ omg”和“ gmo”彼此相反，而“ bbb”本身就是回文。 因此，连接“ omg” +“ bbb” +“ gmo”会生成最长回文字符串“ omgbbbgmo”。
+> **输入**：N = 4，M = 3，S [] = {“ omg”，“ bbb”，“ ffd”，“ gmo”}
+> **输出**：omgbbbgmo [
+> **说明**：字符串“ omg”和“ gmo”彼此相反，而“ bbb”本身就是回文。 因此，连接“ omg” +“ bbb” +“ gmo”会生成最长回文字符串“ omgbbbgmo”。
 > 
-> **输入：** N = 4，M = 3，s [] = {“ poy”，“ fgh”，“ hgf”，“ yop”}
-> **输出：** poyfghhgfyop
+> **输入**：N = 4，M = 3，s [] = {“ poy”，“ fgh”，“ hgf”，“ yop”}
+> **输出**：poyfghhgfyop
 
-**方法：**请按照以下步骤解决问题：
+**方法**：请按照以下步骤解决问题：
 
 *   初始化[设置](https://www.geeksforgeeks.org/set-in-cpp-stl/)，并将给定数组中的每个字符串插入**设置**中。
 *   初始化两个[向量](https://www.geeksforgeeks.org/vector-in-cpp-stl/) **left_ans** 和 **right_ans** ，以跟踪获得的[回文串](https://www.geeksforgeeks.org/string-palindrome/)。
@@ -436,15 +436,15 @@ public static void Main(String[] args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 omgbbbgmo
 
 ```
 
-***时间复杂度：** O（N * M）*
-***辅助空间：** O（N * M）*
+***时间复杂度**：O（N * M）*
+***辅助空间**：O（N * M）*
 
 
 

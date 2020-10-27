@@ -1,25 +1,25 @@
 # 包含另一个字符串的所有子字符串的字符串的按字典顺序排列的最小排列
 
 给定两个字符串 **A** 和 **B** ，任务是从字典上找到字符串 **B** 的最小排列，以使其包含字符串 **A 中的每个子字符串** 作为其[子字符串](https://www.geeksforgeeks.org/length-of-the-longest-valid-substring/)。 如果无法进行有效的排列，请打印“ **-1”** 。
-**范例：**
+**范例**：
 
-> **输入：** A =“ aa”，B =“ ababab”
-> **输出：** aaabbb
-> **说明：**。
+> **输入**：A =“ aa”，B =“ ababab”
+> **输出**：aaabbb
+> **说明**：。
 > A 的所有可能子串 是（'a'，'a'，'aa'）。
 > 将字符串 B 重新排列为“ aaabb”。
 > 现在，在字典上，“ aaabb”是 B 的最小排列，其中包含 A 的所有子串。
 > 
-> **输入：** A =“ aaa”，B =“ ramialsadaka” 是（'a'，'aa'，'aaa'）。
+> **输入**：A =“ aaa”，B =“ ramialsadaka” 是（'a'，'aa'，'aaa'）。
 > 将字符串 B 重新排列为“ aaaaadiklmrs”。
 > 现在，“ aaaaadiklmrs”是 B 在字典上的最小排列，其中包含 A 的所有子串。
 
-**天真的方法：**最简单的方法是[生成字符串 **B**](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/) 的所有可能排列，然后从所有这些排列中，从字典上找到包含所有子串的最小排列 **A** 的组成。
+**天真的方法**：最简单的方法是[生成字符串 **B**](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/) 的所有可能排列，然后从所有这些排列中，从字典上找到包含所有子串的最小排列 **A** 的组成。
 
-***时间复杂度：** O（N！）*
-***辅助空间：** O（1）*
+***时间复杂度**：O（N！）*
+***辅助空间**：O（1）*
 
-**有效方法：**为优化上述方法，主要观察结果是，包含 **A** 所有子字符串的最小字符串是字符串 **A** 本身。 因此，要对字符串 **B** 重新排序并包含 **A** 的所有子字符串，它必须包含 **A** 作为子字符串。 仅当字符串 **B** 中每个字符的[频率大于或等于**中的频率时，重新排序的字符串 B 才能包含 **A** 作为其子字符串。 A** 。 步骤如下：](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/)
+**有效方法**：为优化上述方法，主要观察结果是，包含 **A** 所有子字符串的最小字符串是字符串 **A** 本身。 因此，要对字符串 **B** 重新排序并包含 **A** 的所有子字符串，它必须包含 **A** 作为子字符串。 仅当字符串 **B** 中每个字符的[频率大于或等于**中的频率时，重新排序的字符串 B 才能包含 **A** 作为其子字符串。 A** 。 步骤如下：](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/)
 
 1.  计算数组 **freq []** 中字符串 **B** 中每个字符的[频率，然后从中减去字符串 **A 中相应字符的频率** 。](https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/)
 2.  为了按字典顺序形成最小的字符串，请初始化一个空字符串**结果**，然后将其追加，其值小于字符串 **A** 的第一个字符的所有剩余字符。
@@ -441,8 +441,8 @@ aaabbb
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（1）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（1）*
 
 
 

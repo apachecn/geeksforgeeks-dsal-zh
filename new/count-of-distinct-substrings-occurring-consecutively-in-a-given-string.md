@@ -4,26 +4,26 @@
 
 给定字符串 **str** ，任务是查找在给定字符串中连续放置的**个不同的子字符串**的数量。
 
-**示例：**
+**示例**：
 
-> **输入：** str =“ geeksgeeksforgeeks”
-> **输出：** 2
-> **说明：**。 ] {“怪胎”}
+> **输入**：str =“ geeksgeeksforgeeks”
+> **输出**：2
+> **说明**：。 ] {“怪胎”}
 > g **ee** ksg **ee** ksforg **ee** ks-> {“ e”}}
 > 仅连续出现一次 考虑“ e”的。
 > 因此，两个不同的子字符串{“ geeks”，“ e”}在字符串中连续出现。
 > 因此，答案是 2。
 > 
-> **输入：** s =“ geeksforgeeks” HTG13] {“ e”，“ e”}
+> **输入**：s =“ geeksforgeeks” HTG13] {“ e”，“ e”}
 > 字符串中仅连续出现一个子字符串{“ e”}。
 
-**天真的方法：**
+**天真的方法**：
 最简单的方法是[生成给定字符串的所有可能的子字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)，并为每个子字符串找到子字符串中的**计数** 给定在字符串中连续出现。 最后，打印**计数。**
 
-***时间复杂度：** O（N <sup>3</sup> ）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N <sup>3</sup> ）*
+***辅助空间**：O（N）*
 
-**有效方法：**
+**有效方法**：
 为了优化上述方法，其想法是使用[动态编程](http://www.geeksforgeeks.org/dynamic-programming/)。
 请按照以下步骤解决问题：
 
@@ -265,8 +265,8 @@ print(distinctSimilarSubstrings(str))
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（N）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

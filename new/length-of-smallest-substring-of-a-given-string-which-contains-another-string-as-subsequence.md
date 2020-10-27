@@ -2,18 +2,18 @@
 
 给定两个[字符串](https://www.geeksforgeeks.org/category/data-structures/c-strings/) **A** 和 **B** ，任务是找到具有**的 **A** 中最小的[子字符串](https://www.geeksforgeeks.org/substring-in-java/) ] B** 作为[子序列](https://www.geeksforgeeks.org/tag/subsequence/)。
 
-**示例：**
+**示例**：
 
-> **输入：** A =“ abcdefababaef”，B =“ abf”
-> **输出：** 5
-> **说明：**
+> **输入**：A =“ abcdefababaef”，B =“ abf”
+> **输出**：5
+> **说明**：
 > A 的最小子串 B 作为子序列是 abcdef。
 > 因此，所需长度为 5。
 > 
-> **输入：** A =“ abcdefababaef”，B =“ aef”
-> **输出：** 3
+> **输入**：A =“ abcdefababaef”，B =“ aef”
+> **输出**：3
 
-**方法：**请按照以下步骤解决问题：
+**方法**：请按照以下步骤解决问题：
 
 *   将 **A** 的字符的所有索引存储在 [Map](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) **CharacterIndex** 中的 **B** 中。
 *   [遍历字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/) **B** 的所有字符。
@@ -306,8 +306,8 @@ if __name__ == '__main__':
 
 ```
 
-***时间复杂度：** O（N <sup>2</sup> ）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N <sup>2</sup> ）*
+***辅助空间**：O（N）*
 
 
 

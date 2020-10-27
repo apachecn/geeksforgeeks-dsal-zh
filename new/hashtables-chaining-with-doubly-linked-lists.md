@@ -3,7 +3,7 @@
 **先决条件–** [哈希简介](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，[使用单链接列表的哈希表](https://www.geeksforgeeks.org/c-program-hashing-chaining/) & [用 Java 中的单独链接实现我们自己的哈希表](https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/)
 
 使用通过双向链接列表链接实现哈希表类似于使用单链接列表实现[哈希表。 唯一的区别是，链表的每个节点都具有下一个节点和上一个节点的地址。 这将加快从列表中添加和删除元素的过程，因此，时间复杂度将大大降低。
-**例如：**](https://www.geeksforgeeks.org/c-program-hashing-chaining/)
+**例如**：](https://www.geeksforgeeks.org/c-program-hashing-chaining/)
 
 > 如果我们有一个单链表：
 > 

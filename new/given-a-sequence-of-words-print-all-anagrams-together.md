@@ -380,14 +380,14 @@ printAnagramsTogether(wordArr, size)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 cat tac act dog god 
 
 ```
 
-***时间复杂度：*** 假设有 N 个单词，每个单词最多包含 M 个字符。 上限为 O（NMLogM + MNLogN）。
+***时间复杂度**：* 假设有 N 个单词，每个单词最多包含 M 个字符。 上限为 O（NMLogM + MNLogN）。
 步骤 2 需要 O（NMLogM）时间。 排序单词最多需要 O（MLogM）时间。 因此，对 N 个单词进行排序需要 O（NMLogM）时间。 步骤 3 使用 O（MNLogN）单词排序数组进行 NLogN 比较。 比较可能需要最多 O（M）时间。 因此，对单词数组进行排序的时间为 O（MNLogN）。
 
 **使用哈希图**
@@ -567,7 +567,7 @@ class GFG {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 [cat, tac, act][dog, god]
@@ -743,15 +743,15 @@ public class FindAnagrams {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 [[cat, atc], [dog, ogd, god]]
 
 ```
 
-***时间复杂度：*** 假设有 N 个单词，每个单词最多包含 M 个字符。 上限为 O（NM）。
-***空间复杂度：*** 假设有 N 个单词，每个单词最多包含 M 个字符。 上限为 O（N + M）。
+***时间复杂度**：* 假设有 N 个单词，每个单词最多包含 M 个字符。 上限为 O（NM）。
+***空间复杂度**：* 假设有 N 个单词，每个单词最多包含 M 个字符。 上限为 O（N + M）。
 
 [**给定一个单词序列，一起打印所有字谜| 第 2 组**](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-set-2/)
 如果发现不正确的内容，或者想共享有关上述主题的更多信息，请写评论。

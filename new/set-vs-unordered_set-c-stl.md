@@ -4,7 +4,7 @@
 
 先决条件：在 C++中设置 [](https://www.geeksforgeeks.org/set-in-cpp-stl/) ，在 C++中设置 [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
 
-**差异：**
+**差异**：
 
 ```
                 |     set             | unordered_set

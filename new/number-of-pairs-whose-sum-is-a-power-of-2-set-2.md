@@ -2,20 +2,20 @@
 
 给定由 **N** 个正整数组成的[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，任务是计算对数**（arr [i]，arr [j]）**，使得 **arr [i] + arr [j]** 是[的 2](https://www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/) 次方。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {1，-1、2、3}
-> **输出：** 5
-> **说明：**（1、1） ，（2、2），（1、3），（-1、3），（-1、2）是有效对，其和为 2 的幂。
+> **输入**：arr [] = {1，-1、2、3}
+> **输出**：5
+> **说明**：（1、1） ，（2、2），（1、3），（-1、3），（-1、2）是有效对，其和为 2 的幂。
 > 
-> **输入：** arr [] = {1，1，1}
-> **输出：** 6
+> **输入**：arr [] = {1，1，1}
+> **输出**：6
 
-**天真的方法：**解决该问题的最简单方法是[从给定数组](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)生成所有可能的对，并且对于每对，[检查该对的和是否是幂 是否为 2](https://www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/) 。
-***时间复杂度：** O（N <sup>2</sup> ）
-**辅助空间：** O（1）*
+**天真的方法**：解决该问题的最简单方法是[从给定数组](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)生成所有可能的对，并且对于每对，[检查该对的和是否是幂 是否为 2](https://www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/) 。
+***时间复杂度**：O（N <sup>2</sup> ）
+**辅助空间**：O（1）*
 
-**有效方法：**可以使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 优化上述方法。 请按照以下步骤解决问题：
+**有效方法**：可以使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 优化上述方法。 请按照以下步骤解决问题：
 
 *   创建 **[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)** ，以存储数组 **arr []** 的每个元素的[频率。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
 *   初始化变量**和**以存储总和等于 2 的任何**幂的对的计数。**
@@ -164,8 +164,8 @@ class GFG {
 
 ```
 
-***时间复杂度：** O（NlogN）*
-***辅助空间：** O（1）*
+***时间复杂度**：O（NlogN）*
+***辅助空间**：O（1）*
 
 
 

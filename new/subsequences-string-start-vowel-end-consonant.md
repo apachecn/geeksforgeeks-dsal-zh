@@ -1,7 +1,7 @@
 # 打印所有以元音开头和辅音结尾的字符串子序列。
 
 给定一个字符串，返回所有可能的子序列，这些子序列以元音开头，以辅音结尾。 字符串是给定字符串的子序列，它是通过删除给定字符串的某些字符而不更改其顺序而生成的。
-**范例：**
+**范例**：
 
 ```
 Input : 'abc'
@@ -14,7 +14,7 @@ Output : ab, aab
 
 问题来源： [Yatra.com 采访经历| 设置 7](https://www.geeksforgeeks.org/yatra-com-interview-experience-set-7/)
 
-**算法说明：**
+**算法说明**：
 
 ```
 Step 1: Iterate over the entire String

@@ -3,13 +3,13 @@
 给定两个字符串 **str1** 和 **str2** ，任务是查找包含 **str2** 作为子字符串的 **str1** 的词典最小排列。
 **注意**：假定解决方案始终存在。
 
-**示例：**
+**示例**：
 
-> **输入：** str1 =“ abab”，str2 =“ ab” 是“ aabb”，由于“ aabb”包含字符串“ ab”作为替换，因此，“ aabb”是必需的答案。
-> ***输入：** str1 =“ geeksforgeeks”，str2 =“用于”*
-> ***输出：**“ eeeeforggkkss”*
+> **输入**：str1 =“ abab”，str2 =“ ab” 是“ aabb”，由于“ aabb”包含字符串“ ab”作为替换，因此，“ aabb”是必需的答案。
+> ***输入**：str1 =“ geeksforgeeks”，str2 =“用于”*
+> ***输出**：“ eeeeforggkkss”*
 
-**方法：**可以使用[频率计数](https://www.geeksforgeeks.org/print-characters-frequencies-order-occurrence/)技术的概念来解决此问题。 请按照以下步骤解决此问题。
+**方法**：可以使用[频率计数](https://www.geeksforgeeks.org/print-characters-frequencies-order-occurrence/)技术的概念来解决此问题。 请按照以下步骤解决此问题。
 
 1.  存储字符串 **str1** 和 **str2** 的所有字符的频率。
 2.  用子字符串初始化结果字符串。
@@ -353,8 +353,8 @@ eeeefforggkkorss
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（1）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（1）*
 
 
 

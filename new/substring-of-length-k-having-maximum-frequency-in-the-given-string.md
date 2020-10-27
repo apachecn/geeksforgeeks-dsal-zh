@@ -4,29 +4,29 @@
 
 给定字符串 **str** ，任务是找到长度为 **K** 的[子字符串](https://www.geeksforgeeks.org/substring-in-cpp/)，出现次数最多。 如果最多出现多次字符串，请打印按字典顺序最小的子字符串。
 
-**示例：**
+**示例**：
 
-> **输入：** str =“ bbbbbaaaaabbabababa”，K = 5
-> **输出：** ababa
-> **说明：**
+> **输入**：str =“ bbbbbaaaaabbabababa”，K = 5
+> **输出**：ababa
+> **说明**：
 > 长度为 5 的子字符串 上面的字符串是{bbbbb，bbbba，bbbaa，bbaaa，baaaa，aaaaa，aaaab，aaabb，aabba，abbab，bbaba，babab，ababa，babab，ababa}。
 > 在所有字符串中，子字符串{ababa，babab}占最大次数（= 2）。
 > 从{ababa，babab}开始的词典上最小的字符串是 ababa。
 > 因此，“ ababa”是必需的答案。
 > 
-> **输入：** str =“ heisagoodboy”，K = 5
-> **输出：** agood
-> **说明：**
+> **输入**：str =“ heisagoodboy”，K = 5
+> **输出**：agood
+> **说明**：
 > 长度为 5 的子字符串 上面的字符串是{heisa，eisag，isago，sagoo，agood，goodb，oodbo，odboy}。
 > 所有这些仅发生一次。 但是，按字典顺序，最小的字符串是“好”。
 > 因此，“ agood”是必需的答案。
 
-**天真的方法：**解决问题的最简单方法是[从给定的字符串中生成大小为 **K** 的所有子字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)，并将每个子字符串的频率存储在一个 [地图](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 然后，遍历**映射**并找到出现次数最多的字典上最小的子字符串并将其打印出来。
+**天真的方法**：解决问题的最简单方法是[从给定的字符串中生成大小为 **K** 的所有子字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)，并将每个子字符串的频率存储在一个 [地图](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 然后，遍历**映射**并找到出现次数最多的字典上最小的子字符串并将其打印出来。
 
- ***时间复杂度：** O（N *（K + log K））
-***辅助空间：** O（N * K）*
+ ***时间复杂度**：O（N *（K + log K））
+***辅助空间**：O（N * K）*
 
-**有效方法：**为了优化上述方法，其想法是使用[滑动窗口技术](http://www.geeksforgeeks.org/window-sliding-technique/)。 考虑一个大小为
+**有效方法**：为了优化上述方法，其想法是使用[滑动窗口技术](http://www.geeksforgeeks.org/window-sliding-technique/)。 考虑一个大小为
 **K** 到[的窗口，生成长度为 **K** 的所有子串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)，[计算在](https://www.geeksforgeeks.org/frequency-substring-string/) [地图](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 遍历地图，找到出现次数最多的子字符串并打印。 如果它们中的几个存在，则按字典顺序打印[最小的子字符串。](https://www.geeksforgeeks.org/lexicographically-next-string/)
 
 下面是上述方法的实现。
@@ -207,8 +207,8 @@ ababa
 
 ```
 
-***时间复杂度：** O（（N-K）* log（N-K））*
-***辅助空间：** O（N-K ）*
+***时间复杂度**：O（（N-K）* log（N-K））*
+***辅助空间**：O（N-K ）*
 
 
 

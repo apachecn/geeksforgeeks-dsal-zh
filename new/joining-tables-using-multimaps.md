@@ -4,11 +4,11 @@
 
 生成的多图必须基于哈希。 [散列](http://www.geeksforgeeks.org/hashing-data-structure/)本质上是一种将大元素转换为代表相同元素的小元素的技术。 因此，为较小的表生成多图，从而减少其生成时间和内存大小。
 
-**示例：**
+**示例**：
 
 [![](img/3bcb8881cc979aca5e01e2abf75912ed.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200803045046/t.png)
 
-**方法：**
+**方法**：
 
 *   创建两个表。
 *   现在，获得两个表中列的 **ID** 。

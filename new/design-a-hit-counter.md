@@ -2,11 +2,11 @@
 
 设计一个点击计数器，计算过去 5 分钟内收到的点击次数。
 
-**来源：** [Microsoft 面试体验](https://www.geeksforgeeks.org/microsoft-interview-experience-set-109-2-years-experienced/)
+**来源**：[Microsoft 面试体验](https://www.geeksforgeeks.org/microsoft-interview-experience-set-109-2-years-experienced/)
 
 最近，包括 Dropbox 在内的许多公司都提出了“设计命中计数器”问题，这个问题比看起来要困难的多。 它包括几个主题，例如基本数据结构设计，各种优化，并发和分布式计数器。
 
-它应该支持以下两个操作：**命中**和 **getHits** 。
+它应该支持以下两个操作**：命中**和 **getHits** 。
 
 **hit（timestamp）** –显示给定时间戳的匹配。
 
@@ -43,9 +43,9 @@ counter.getHits(301);
 
 ```
 
-**询问：**微软，亚马逊，Dropbox 等。
+**询问**：微软，亚马逊，Dropbox 等。
 
-**1.简单解决方案（暴力法）：**
+**1.简单解决方案（暴力法）**：
 
 我们可以使用向量来存储所有匹配。 这两个功能是自我解释。
 
@@ -74,7 +74,7 @@ return v.size() - i;
 // Time Complexity : O(n)
 ```
 
-**2.空间优化解决方案：**
+**2.空间优化解决方案**：
 
 我们可以使用队列存储命中并删除队列中没有用的条目。 它将节省我们的空间。
 我们正在从队列中删除多余的元素。
@@ -103,7 +103,7 @@ return q.size();
 // Time Complexity : O(n)
 ```
 
-**3.最优化的解决方案：**
+**3.最优化的解决方案**：
 
 如果数据无序排列并且多个匹配项带有相同的时间戳怎么办？
 
@@ -176,7 +176,7 @@ return res;
 
 为了计算数量，每台机器都独立工作以计算过去一分钟内自己的用户。 当我们请求全局编号时，我们只需要将所有计数器加在一起即可。
 
-**参考：**我最初是在此处发布它的。
+**参考**：我最初是在此处发布它的。
 https://aonecode.com/getArticle/211
 
 [![design-pattern-img](img/14db468c0f00e6c64bfe591457d1b437.png)](https://practice.geeksforgeeks.org/courses/design-patterns-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_ooddpl)

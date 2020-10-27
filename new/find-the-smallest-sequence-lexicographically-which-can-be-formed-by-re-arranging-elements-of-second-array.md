@@ -6,16 +6,16 @@
 
 **注意**：数组元素在[0，n）范围内。
 
-**示例：**
+**示例**：
 
-> **输入：** a [] = {0，1，2，1}，b [] = {3，2，1，1}
-> **输出：** 1 0 0 2
+> **输入**：a [] = {0，1，2，1}，b [] = {3，2，1，1}
+> **输出**：1 0 0 2
 > 将 B 重新排序为{1、3、2、1}，以获得可能的最小序列。
 > 
-> **输入：** a [] = {2，0，0}，b [] = {1，0，2}
-> **输出：** 0 0 2
+> **输入**：a [] = {2，0，0}，b [] = {1，0，2}
+> **输出**：0 0 2
 
-**方法：**可以贪婪地解决问题。 最初使用哈希保留所有数组 B 的数目的计数，并将它们存储在 C++ 中设置的[中，以便](https://www.geeksforgeeks.org/set-in-cpp-stl/) [lower_bound（）](https://www.geeksforgeeks.org/upper_bound-and-lower_bound-for-vector-in-cpp-stl/) [*检查元素[* 和 [delete（）](https://www.geeksforgeeks.org/multiset-erase-in-c-stl/) [*要擦除元素*]，可以在对数时间内进行操作。
+**方法**：可以贪婪地解决问题。 最初使用哈希保留所有数组 B 的数目的计数，并将它们存储在 C++ 中设置的[中，以便](https://www.geeksforgeeks.org/set-in-cpp-stl/) [lower_bound（）](https://www.geeksforgeeks.org/upper_bound-and-lower_bound-for-vector-in-cpp-stl/) [*检查元素[* 和 [delete（）](https://www.geeksforgeeks.org/multiset-erase-in-c-stl/) [*要擦除元素*]，可以在对数时间内进行操作。
 
 对于数组中的每个元素，请使用 *lower_bound* 函数检查是否等于或大于 **n-a [i]** 的数字。 如果没有这样的元素，则采用集合中最小的元素。 将哈希表中使用的数字减少 1，如果哈希表的值为 0，则还将集合中的元素也删除。
 

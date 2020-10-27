@@ -2,7 +2,7 @@
 
 给定一个字符串，找到具有给定字符串的所有不同字符的最小窗口长度。 例如。 str =“ aabcbcdbca”，则结果将是 4，因为最小的窗口将是“ dbca”。
 
-**示例：**
+**示例**：
 
 ```
 Input: aabcbcdbca
@@ -24,7 +24,7 @@ the distinct characters of given string.
 
 ```
 
-**解决方案：**上述问题指出，即使最小的字符串包含重复元素，我们也必须找到包含给定字符串的所有不同字符的最小窗口。
+**解决方案**：上述问题指出，即使最小的字符串包含重复元素，我们也必须找到包含给定字符串的所有不同字符的最小窗口。
 例如，在“ aabcbcdb”中，包含所有字符的最小字符串是“ abcbcd”。
 
 <u>**方法 1**</u> ：这是使用 HashMap 解决问题的蛮力方法。
@@ -37,7 +37,7 @@ the distinct characters of given string.
     1.  将给定字符串的所有不同字符存储在 hash_map 中。
     2.  进行变量计数并将其初始化为值 0。
     3.  使用两个指针生成子字符串。
-    4.  **现在检查生成的子字符串是否有效-：**
+    4.  **现在检查生成的子字符串是否有效-**：
         1.  一旦我们发现之前从未遇到过生成的子字符串的字符，则以 **1** 递增计数。
         2.  我们可以使用 **max_chars** 大小的访问数组来查找当前字符是否曾经遇到过。
         3.  如果 count 等于 hash_map 的大小，则生成的子字符串有效
@@ -134,9 +134,9 @@ the distinct characters of given string.
     ```
 
 *   **Complexiy Analysis:**
-    *   **时间复杂度：** O（N ^ 2）。
+    *   **时间复杂度**：O（N ^ 2）。
         需要这段时间来生成长度为“ N”的字符串的所有可能的子字符串。
-    *   **空间复杂度：** O（N）。
+    *   **空间复杂度**：O（N）。
         作为大小为 N 的 **hash_map** 。
 
 <u>**方法 2**</u> ：这里我们使用了[滑动窗口](https://www.geeksforgeeks.org/window-sliding-technique/)技术来得出解决方案。 该技术说明了如何将很少出现问题的嵌套 for 循环转换为单个 for 循环，从而降低时间复杂度。
@@ -150,11 +150,11 @@ the distinct characters of given string.
     3.  取一个**计数器= 0** ，该计数器将用于计算窗口中的不同字符。
     4.  现在开始读取给定字符串的字符，如果遇到尚未访问的字符，则将计数器增加 **1** 。
     5.  如果**计数器**等于不同字符的总数，请尝试缩小窗口。
-    6.  **用于缩小窗口-：**
+    6.  **用于缩小窗口-**：
         1.  如果开始指针处字符的**频率**大于**大于 1** ，则增加指针，因为它是多余的。
         2.  现在将当前窗口的长度与最小窗口长度进行比较。
 
-*   **实现：**
+*   **实现**：
 
     ## C++
 
@@ -479,7 +479,7 @@ the distinct characters of given string.
 
     ```
 
-    **输出：**
+    **输出**：
 
     ```
     Smallest window containing all 
@@ -488,12 +488,12 @@ the distinct characters of given string.
     ```
 
 *   **Complexiy Analysis:**
-    *   **时间复杂度：** O（N）。
+    *   **时间复杂度**：O（N）。
         由于仅使用两个指针遍历字符串一次。
-    *   **空间复杂度：** O（N）。
+    *   **空间复杂度**：O（N）。
         作为大小为 N 的 **hash_map** 被使用。
 
-**相关文章：**
+**相关文章**：
 
 1.  [包含最大不同字符的最小子字符串的长度](https://www.geeksforgeeks.org/length-smallest-sub-string-consisting-maximum-distinct-characters/)
 2.  [https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string- contains-all-characters-of-another-string /](https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/)

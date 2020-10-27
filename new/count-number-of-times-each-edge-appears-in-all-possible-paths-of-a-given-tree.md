@@ -2,33 +2,33 @@
 
 给定一个 [**无向连通图**](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/) ，形式为 [**树**](https://www.geeksforgeeks.org/binary-tree-data-structure/) ，该树由 **N 个**节点和**组成（ N – 1）**边，每个边的任务是计算它在树中所有可能路径上出现的次数。
 
-**示例：**
+**示例**：
 
-> **输入：**
+> **输入**：
 > 
 > [![](img/106cfac1750d1bf817f0fe41e7613f80.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200824053939/Example1Graph.jpg)
 > 
-> **输出：** 3 4 3
-> **说明：** ），（2、3），（2、4），（3、4）}。
+> **输出**：3 4 3
+> **说明**：），（2、3），（2、4），（3、4）}。
 > 边缘 1 出现在路径{（1、2），（1、3），（1、4）}中。 因此，边缘的频率为 3\.
 > 边缘 2 出现在路径{（1、3），（1、4），（2、3），（2、4）}中。 因此，边缘的频率为 4。
 > 边缘 3 出现在路径{（1、4），（2、4），（3、4）}中。 因此，边沿的频率为 3。
-> **输入：**
+> **输入**：
 > 
 > [![](img/3c9cf8446076b0558573ddc66a2f2f62.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200824054414/Example2Graph.jpg)
 > 
-> **输出：** 4 6 4 4
-> **说明：**
+> **输出**：4 6 4 4
+> **说明**：
 > 边缘 1 出现在路径{（1、2），（1、3），（1、4）中 ，（1，5）}。 因此，边缘的频率为 4。
 > 边缘 2 出现在路径{（1、3），（1、4），（1、5），（2、3），（2、4），（ 2、5）}。 因此，边缘的频率为 6
 > 边缘 3 出现在路径{（1、4），（2、4），（3、4），（4、5）}中。 因此，边缘的频率为 4。
 > 边缘 4 出现在路径{（1、5），（2、5），（3、5），（4、5）}中。 因此，边缘的频率为 4
 
-**天真的方法：**最简单的方法是从给定图的每个节点生成所有可能的路径，并通过 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 存储在这些路径中出现的边数。 最后，打印每个边的频率。
-***时间复杂度：** O（N <sup>2</sup> ）*
-***辅助空间：** O（N）*
+**天真的方法**：最简单的方法是从给定图的每个节点生成所有可能的路径，并通过 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 存储在这些路径中出现的边数。 最后，打印每个边的频率。
+***时间复杂度**：O（N <sup>2</sup> ）*
+***辅助空间**：O（N）*
 
-**有效方法：**为了优化上述方法，需要进行以下观察：
+**有效方法**：为了优化上述方法，需要进行以下观察：
 
 > [![](img/7a6be6b76c27e8846d4210613617bf7e.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200824055300/ApproachGraph.jpg)
 > 
@@ -453,7 +453,7 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N）*
+***时间复杂度**：O（N）*
 ***辅助空间**：O（N）*
 
 

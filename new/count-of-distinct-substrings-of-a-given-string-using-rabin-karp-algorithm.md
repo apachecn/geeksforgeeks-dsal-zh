@@ -17,7 +17,7 @@ Total number of distinct substring are 10 - "a", "ab", "abc", "abcd", "b", "bc",
 
 ```
 
-**方法：**
+**方法**：
 
 **前提条件**：[用于模式搜索的 Rabin-Karp 算法](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/)
 
@@ -94,7 +94,7 @@ a ab abc abcd b bc bcd c cd d
 
 ```
 
-***时间复杂度：** O（N <sup>2</sup> ），N 是字符串*的长度
+***时间复杂度**：O（N <sup>2</sup> ），N 是字符串*的长度
 
 
 

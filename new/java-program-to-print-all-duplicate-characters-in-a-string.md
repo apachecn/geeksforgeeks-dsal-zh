@@ -2,20 +2,20 @@
 
 给定字符串，任务是编写 [Java](http://www.geeksforgeeks.org/java/) 程序以按频率打印所有重复的字符
 
-**示例：**
+**示例**：
 
-> **输入：** str =“ geeksforgeeks”
-> **输出：**
+> **输入**：str =“ geeksforgeeks”
+> **输出**：
 > s：2
 > e：4
 > g：2
 > k：2
 > 
-> **输入：** str =“ java”
-> **输出：**
+> **输入**：str =“ java”
+> **输出**：
 > a：2
 
-**方法：**的想法是使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 进行[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
+**方法**：的想法是使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 进行[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
 
 *   创建类型为 **{char，int}** 的 hashMap。
 *   遍历字符串，检查 **hashMap** 是否已包含遍历的字符。
@@ -107,8 +107,8 @@ k : 2
 
 ```
 
-**时间复杂度：** *O（N）*
-**辅助空间：** *O（1）*
+**时间复杂度**：*O（N）*
+**辅助空间**：*O（1）*
 
 
 

@@ -4,24 +4,24 @@
 
 给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，其中包括 **N 个**整数和 [2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/) **查询[] []** ，其中 **Q** 个查询，格式为{ **p** ， **x** }，每个查询的任务是将 **p** 位置的元素替换为 **x** 并打印数组中存在的不同元素的[计数。](https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/)
 
-**示例：**
+**示例**：
 
-> **输入：** Q = 3，arr [] = {2，2，5，5，5，4，6，3}，查询[] [] = {{1，7}，{6，8} ，{7，2}}
-> **输出：** {6，6，5}
-> **说明：**
+> **输入**：Q = 3，arr [] = {2，2，5，5，5，4，6，3}，查询[] [] = {{1，7}，{6，8} ，{7，2}}
+> **输出**：{6，6，5}
+> **说明**：
 > 每个查询之后的总不同元素（基于 索引）：
 > 查询 1：p = 1 且 x =7。因此，arr [1] = 7 且 arr []变为{7，2，5，5，4，6，3 }。 因此，不同的元素=6。
 > 查询 2：p = 6 和 x =8。因此，arr [6] = 8 且 arr []变为{7，2，5，5，4，4，8}。 因此，不同的元素=6。
 > 查询 3：p = 7 和 x =2。因此，arr [7] = 2 且 arr []变为{7，2，5，5，4，4，8}。 因此，不同的元素= 5。
 > 
-> **输入：** Q = 2，arr [] = {1，1，1，1}，查询[] [] = {{2，2}，{3，3}}
-> **输出：** {2，3}
-> **解释：**
+> **输入**：Q = 2，arr [] = {1，1，1，1}，查询[] [] = {{2，2}，{3，3}}
+> **输出**：{2，3}
+> **解释**：
 > 每次查询（基于索引的索引）后的总不同元素：
 > 查询 1 ：p = 2 且 x =2。因此，arr [2] = 2 且 arr []变为{1,2,1,1}。 因此，不同的元素=2。
 > 查询 2：p = 3 且 x =3。因此，arr [3] = 3 且 arr []变为{1,2,3,1}。 因此，不同的元素= 3。
 
-**天真的方法：**最简单的方法是为每个查询更新给定的数组，然后[将更新后的数组的所有元素插入](https://www.geeksforgeeks.org/set-insert-function-in-c-stl/)到 [Set](https://www.geeksforgeeks.org/set-in-java/) 中。 将集合的[大小打印为不同数组元素](https://www.geeksforgeeks.org/setsize-c-stl/)的[个计数。](https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/)
+**天真的方法**：最简单的方法是为每个查询更新给定的数组，然后[将更新后的数组的所有元素插入](https://www.geeksforgeeks.org/set-insert-function-in-c-stl/)到 [Set](https://www.geeksforgeeks.org/set-in-java/) 中。 将集合的[大小打印为不同数组元素](https://www.geeksforgeeks.org/setsize-c-stl/)的[个计数。](https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/)
 
 下面是上述方法的实现：
 
@@ -172,10 +172,10 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（Q * N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（Q * N）*
+***辅助空间**：O（N）*
 
-**高效方法：**为了优化上述方法，其思想是将每个数组元素的[频率存储在](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，然后遍历每个查询并打印大小 每次更新后的地图。 请按照以下步骤解决问题：
+**高效方法**：为了优化上述方法，其思想是将每个数组元素的[频率存储在](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，然后遍历每个查询并打印大小 每次更新后的地图。 请按照以下步骤解决问题：
 
 *   [将每个元素](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) **M** 中。
 *   对于每个查询 **{p，x}** ，执行以下步骤：
@@ -297,8 +297,8 @@ class GFG {
 
 ```
 
-***时间复杂度：** O（N + Q）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N + Q）*
+***辅助空间**：O（N）*
 
 
 

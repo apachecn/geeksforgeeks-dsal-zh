@@ -1119,8 +1119,8 @@ Dist(8, 5) = 5
 
 ```
 
-**时间复杂度：** O（Log N）
-**空间复杂度：** O（N）
+**时间复杂度**：O（Log N）
+**空间复杂度**：O（N）
 [查询以查找二叉树的两个节点之间的距离– O（ 1）方法](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

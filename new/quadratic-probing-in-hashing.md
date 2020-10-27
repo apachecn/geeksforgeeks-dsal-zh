@@ -1,9 +1,9 @@
 # 哈希中的二次探查
 
 [哈希](https://www.geeksforgeeks.org/hashing-set-1-introduction/)是对[直接访问表](https://www.geeksforgeeks.org/direct-address-table/)的改进。 该想法是使用[哈希函数](https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/)，该函数将给定的电话号码或任何其他键转换为较小的数字，并将该较小的数字用作称为[哈希表](https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/)的表中的索引。
-[**哈希函数**](https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/) **：**一个将给定的大数字转换为小的实际整数值的函数。 映射的整数值用作哈希表中的索引。 简而言之，哈希函数将一个较大的数字或字符串映射为一个较小的整数，可用作哈希表中的索引。
+[**哈希函数**](https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/) ****：一个将给定的大数字转换为小的实际整数值的函数。 映射的整数值用作哈希表中的索引。 简而言之，哈希函数将一个较大的数字或字符串映射为一个较小的整数，可用作哈希表中的索引。
 本文讨论了[碰撞技术](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)，**二次探测**。
-**二次探测：**二次探测是一种[开放寻址](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)方案，我们在其中寻找 i **<sup>2</sup> 第 i 个插槽** 如果给定的哈希值 x 与哈希表冲突，则执行第 n 次迭代。
+**二次探测**：二次探测是一种[开放寻址](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)方案，我们在其中寻找 i **<sup>2</sup> 第 i 个插槽** 如果给定的哈希值 x 与哈希表冲突，则执行第 n 次迭代。
 **如何进行二次探测？**
 令 hash（x）为使用哈希函数计算的插槽索引。
 
@@ -12,7 +12,7 @@
 *   如果（hash（x）+ 2 * 2）％S 也已满，那么我们尝试（hash（x）+ 3 * 3）％S。
 *   对 i 的所有值重复此过程，直到找到空插槽。
 
-**例如：**让我们考虑一个简单的哈希函数为“ **key mod 7** ”，并将密钥序列作为 **50、700、76、85、92、73、101 [** 。
+**例如**：让我们考虑一个简单的哈希函数为“ **key mod 7** ”，并将密钥序列作为 **50、700、76、85、92、73、101 [** 。
 
 ![](img/c1de63a15bcf9f639a2a93e41177ac4d.png)
 

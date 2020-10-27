@@ -4,23 +4,23 @@
 
 给定由 **N** 个整数组成的数组 **arr []** ，任务是找到总和等于 **K** 的最小子数组的长度。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {2，4，6，10，2，1}，K = 12
-> **输出：** 2
+> **输入**：arr [] = {2，4，6，10，2，1}，K = 12
+> **输出**：2
 > **说明：[
 > 
 > 总和为 12 的所有可能的子数组为{2，4，6}和{10，2}。**
 > 
-> **输入：** arr [] = {1，2，4，3，2，4，1}，K = 7
-> **输出：** 2
+> **输入**：arr [] = {1，2，4，3，2，4，1}，K = 7
+> **输出**：2
 
-**天真的方法：**解决该问题的最简单方法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并为每个子数组检查其总和是否等于 **K** 。 打印所有此类子数组的最小长度。
+**天真的方法**：解决该问题的最简单方法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并为每个子数组检查其总和是否等于 **K** 。 打印所有此类子数组的最小长度。
 
-***时间复杂度：** O（N <sup>2</sup> ）*
-***辅助空间：** O（1）*
+***时间复杂度**：O（N <sup>2</sup> ）*
+***辅助空间**：O（1）*
 
-**有效方法：**可以使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)技术和 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 进一步优化上述方法。 请按照以下步骤解决问题：
+**有效方法**：可以使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)技术和 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 进一步优化上述方法。 请按照以下步骤解决问题：
 
 1.  计算每个索引的前缀总和，并将其（索引，前缀总和）存储为映射中的键值对。
 2.  遍历前缀总和数组，并计算前缀总和与所需总和之间的差。
@@ -357,8 +357,8 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（NlogN）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（NlogN）*
+***辅助空间**：O（N）*
 
 
 

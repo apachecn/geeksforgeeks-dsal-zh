@@ -2,30 +2,30 @@
 
 给定一个小写字母的字符串 **str** 和一个整数 **K** ，任务是计算长度为 **K** 的所有子字符串，这些子字符串的正好为 **K** 不同的字符。
 
-**示例：**
+**示例**：
 
-> **输入：** str =“ abcc”，K = 2
-> **输出：** 2
-> **说明：**
+> **输入**：str =“ abcc”，K = 2
+> **输出**：2
+> **说明**：
 > 长度为 K = 2 的可能子串 是
 > ab：2 个不同的字符
 > bc：2 个不同的字符
 > cc：1 个不同的字符
 > 仅存在两个有效的子字符串{“ ab”，“ bc”}。
 > 
-> **输入：** str =“ aabab”，K = 3
-> **输出：** 0
-> **说明：**
+> **输入**：str =“ aabab”，K = 3
+> **输出**：0
+> **说明**：
 > 长度为 K = 3 的可能子串 是
 > aab：2 个不同的字符
 > aba：2 个不同的字符
 > bab：2 个不同的字符
 > 不存在长度为 3 的子字符串，而恰好有 3 个不同的字符
 
-**天真的方法：**
+**天真的方法**：
 这个想法是生成所有长度为 **K** 的子字符串，并为每个子字符串计数不同字符。 如果字符串的长度为 **N** ，则可以有 **N – K + 1** 个子字符串，长度为 **K** 。 生成这些子字符串将需要 **O（N）**复杂度，而检查每个子字符串将需要 **O（K）**复杂度，因此将整体复杂度设为 **O（N * K） 。**
 
-**高效方法：**
+**高效方法**：
 这个想法是使用[窗口滑动技术](https://www.geeksforgeeks.org/window-sliding-technique/)。 保持大小为 **K** 的窗口，并使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 保留窗口中所有字符的计数。 遍历字符串会减少 **HashMap** 中前一个窗口的第一个字符的计数，并增加当前窗口的最后一个字符的频率。 如果在长度为 **K** 的窗口中不同字符的计数等于 **K** ，则将答案增加 1。
 
 下面是上述方法的实现：
@@ -430,7 +430,7 @@ public static void Main(string[] args) 
 
 ```
 
-**时间复杂度：** O（N）
+**时间复杂度**：O（N）
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

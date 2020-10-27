@@ -1,7 +1,7 @@
 # 从后序和顺序构建二叉树
 
 给定 Postorder 和 Inorder 遍历，构造树。
-**示例：** [
+**示例**：[
 
 ```
 Input: 
@@ -493,8 +493,8 @@ Preorder of the constructed tree :
 1 2 4 8 5 3 6 7 
 ```
 
-**时间复杂度：** O（n <sup>2</sup> ）
-**优化的方法：**我们可以使用哈希（C++中的 unordered_map 或 Java 中的 HashMap）优化上述解决方案。 我们将有序遍历的索引存储在哈希表中。 这样就可以完成 O（1）次搜索。
+**时间复杂度**：O（n <sup>2</sup> ）
+**优化的方法**：我们可以使用哈希（C++中的 unordered_map 或 Java 中的 HashMap）优化上述解决方案。 我们将有序遍历的索引存储在哈希表中。 这样就可以完成 O（1）次搜索。
 
 ## C++
 
@@ -611,7 +611,7 @@ Preorder of the constructed tree :
 1 2 4 8 5 3 6 7 
 ```
 
-**时间复杂度：** O（n）
+**时间复杂度**：O（n）
 
 **另一种方法**：
 

@@ -4,28 +4,28 @@
 
 > **MEX** 是数组中不存在的[最小正整数。](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/)
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {2，3，5，1，6}。
-> **输出：** 2
-> **说明：**
+> **输入**：arr [] = {2，3，5，1，6}。
+> **输出**：2
+> **说明**：
 > 数组中不存在的最小正整数为 4。
 > 因此，给定数组的 MEX 为 4。
 > 因此，可以删除 5 和 6 而无需更改数组的 MEX。
 > 
-> **输入：** arr [] = {12，4，6，1，7，2}。
-> **输出：** 4
-> **说明：**
+> **输入**：arr [] = {12，4，6，1，7，2}。
+> **输出**：4
+> **说明**：
 > 数组中不存在的最小正整数是 3。
 > 因此，给定数组的 MEX 为 3。
 > 因此，可以在不更改数组 MEX 的情况下删除 4、6、7 和 12。 。
 
-**天真的方法：**最简单的方法是[对数组](https://www.geeksforgeeks.org/sorting-algorithms/)排序，然后[从 **i = 0** 遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，而 **arr [ i]** 等于 **i +1** 。 之后，将答案打印为**（N – i）**，这是在不更改其 **MEX** 的情况下可以从给定数组中删除的最大元素数。
+**天真的方法**：最简单的方法是[对数组](https://www.geeksforgeeks.org/sorting-algorithms/)排序，然后[从 **i = 0** 遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，而 **arr [ i]** 等于 **i +1** 。 之后，将答案打印为**（N – i）**，这是在不更改其 **MEX** 的情况下可以从给定数组中删除的最大元素数。
 
-***时间复杂度：** O（N * log N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N * log N）*
+***辅助空间**：O（N）*
 
-**高效方法：**为了优化上述方法，其思想是使用[散列](https://www.geeksforgeeks.org/hashing-set-1-introduction/)。 请注意，可以删除的最大元素数是大于 **MEX** 的元素数。 请按照以下步骤解决问题：
+**高效方法**：为了优化上述方法，其思想是使用[散列](https://www.geeksforgeeks.org/hashing-set-1-introduction/)。 请注意，可以删除的最大元素数是大于 **MEX** 的元素数。 请按照以下步骤解决问题：
 
 1.  初始化长度为 **N + 1** 的数组 **hash []** ，其中，如果元素 **i [ **hash [i]** 为 **1** HTG9]存在于给定的数组中，否则 **hash [i] =0。****
 2.  用 **N +1** 初始化变量 **mex** ，以存储给定阵列的 **MEX** 。
@@ -273,8 +273,8 @@ public static void Main()
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（N）*
 
 
 

@@ -2,7 +2,7 @@
 
 实现节省空间的算法，以检查字符串中的第一个重复字符，而无需在一次遍历中使用任何其他数据结构。 不允许使用其他数据结构，例如 count 数组，hash 等。
 
-**示例：**
+**示例**：
 
 ```
 Input :  abcfdeacf
@@ -260,8 +260,8 @@ Char = a   and Index = 6
 
 ```
 
-**时间复杂度：** O（n）
-**辅助空间：** O（1）
+**时间复杂度**：O（n）
+**辅助空间**：O（1）
 
 本文由 **Somesh Awasthi 先生**提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

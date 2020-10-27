@@ -4,28 +4,28 @@
 
 给定一个整数 **K** 和一个包含 **N** 个整数的数组 **arr []** ，任务是找到最小的 **K** 的和和乘积 数组中最大的 **K** 斐波那契数。
 
-**注意：**假设数组中至少有 **K** 个斐波那契数。
+**注意**：假设数组中至少有 **K** 个斐波那契数。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {2，5，6，8，10，11}，K = 2
-> **输出：**
+> **输入**：arr [] = {2，5，6，8，10，11}，K = 2
+> **输出**：
 > K 个最小斐波那契数的总和 是 7
 > K-最小斐波那契数的乘积是 10
 > K-最大斐波那契数的总和是 13
 > K-最大斐波那契数的乘积是 40
-> **说明：**
+> **说明**：
 > {2，5，8}是数组中唯一的斐波那契数。
 > {2，5}是其中的 2 个最小值，{5，8}是其中的 2 个最大值。
 > 
-> **输入：** arr [] = {3，2，12，13，5，19}，K = 3
-> **输出：**
+> **输入**：arr [] = {3，2，12，13，5，19}，K = 3
+> **输出**：
 > K 个最小斐波那契数之和 是 10
 > K-最小斐波那契数的乘积是 30
 > K-最大斐波那契数的总和是 21
 > K-最小斐波那契数的乘积是 195
 
-**方法：**的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契结点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)到最大值，并将其存储在[设置](https://www.geeksforgeeks.org/set-in-java/)中，以 使检查变得容易和高效（在 O（1）时间内）。
+**方法**：的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契结点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)到最大值，并将其存储在[设置](https://www.geeksforgeeks.org/set-in-java/)中，以 使检查变得容易和高效（在 O（1）时间内）。
 
 1.  遍历整个数组并获得列表中的最大值。
 2.  现在，构建一个[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于数组最大值的 Fibonacci 节点。

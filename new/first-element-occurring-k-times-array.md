@@ -4,7 +4,7 @@
 
 给定 n 个整数数组。 任务是找到出现 k 次的第一个元素。 如果没有元素出现 k 倍，则打印-1。 整数元素的分布可以在任何范围内。
 
-**示例：**
+**示例**：
 
 > **输入**：{1、7、4、3、4、8、7}，
 > k = 2
@@ -16,11 +16,11 @@
 > k = 1
 > **输出**：-1
 
-**简单方法：**通过使用两个循环，计算数字在数组中出现的次数。
+**简单方法**：通过使用两个循环，计算数字在数组中出现的次数。
 
 **时间复杂度**：O（n <sup>2</sup> ）。
 
-**高效方法：**将 [unordered_map](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 用于散列，因为范围未知。 脚步：
+**高效方法**：将 [unordered_map](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 用于散列，因为范围未知。 脚步：
 
 1.  从左到右遍历数组元素。
 2.  遍历时，它们在哈希表中的计数增加。
@@ -245,7 +245,7 @@ class GFG 
 
 ```
 
-**时间复杂度：** O（n）
+**时间复杂度**：O（n）
 
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

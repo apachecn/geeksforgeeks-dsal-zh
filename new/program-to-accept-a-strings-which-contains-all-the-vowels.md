@@ -2,17 +2,17 @@
 
 给定字符串 **S** ，任务是检查并接受给定的字符串是否包含所有元音，即**'a'，'e'，'i'。'o'，'u'或 'A'，'E'，'I'，'O'，'U'**。
 
-**示例：**
+**示例**：
 
-> **输入：** S =“ GeeksforGeeks”
-> **输出：**不接受
+> **输入**：S =“ GeeksforGeeks”
+> **输出**：不接受
 > 由于 S 不包含元音 a，i 和 u
 > 
-> **输入：** S =“ ABeeIghiObhkUul”
-> **输出：**接受
+> **输入**：S =“ ABeeIghiObhkUul”
+> **输出**：接受
 > 由于 S 包含所有元音 a，e，i，o 和 u
 
-**方法：**
+**方法**：
 
 *   [哈希](http://www.geeksforgeeks.org/hashing-data-structure/)可轻松解决此问题。 为此，需要创建大小为 **5** 的[哈希数据结构](https://www.geeksforgeeks.org/data-structure-gq/hash-gq/)，以使索引 0、1、2、3 和 4 表示元音 a，e，i，o 和 你
 *   创建一个布尔数组，作为哈希数据结构，以检查字符串中是否存在所有元音。

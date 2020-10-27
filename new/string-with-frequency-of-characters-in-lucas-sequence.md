@@ -6,21 +6,21 @@
 
 [卢卡斯序列](https://www.geeksforgeeks.org/lucas-numbers/)。
 
-**注意：**必须使用所有频率检查它们是否在 Lucas 序列中。
+**注意**：必须使用所有频率检查它们是否在 Lucas 序列中。
 
-**示例：**
+**示例**：
 
-> **输入：** str =“ gggeek”
-> **输出：**是
+> **输入**：str =“ gggeek”
+> **输出**：是
 > 的频率'g'= 3
 > 的频率'e'= 2
 > 的频率 'k'= 1
 > 这些频率可以安排为形成卢卡斯序列的前 3 个项{2，1，3}。
 > 
-> **输入：** str =“ geeksforgeeks”
-> **输出：**否
+> **输入**：str =“ geeksforgeeks”
+> **输出**：否
 
-**方法：**
+**方法**：
 
 *   使用[映射 STL](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 将每个字符的频率存储在矢量中。 然后将向量排序。
 *   由于卢卡斯序列的前两个数字为“ 2”和“ 1”，因此将第一个向量的第一个和第二个元素分别更改为“ 2”和“ 1”。 但是，只有在向量中存在“ 1”和“ 2”的情况下，才可以进行更改。 如果不存在，则频率永远不会处于卢卡斯序列中并输出 NO。

@@ -2,21 +2,21 @@
 
 给定包含 **Q** 个查询和整数 **K** 的数组 **arr [] []** ，其中每个查询由范围 **[L，R]** ，任务是找到给定范围内的整数，该整数的[数字总和](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/)是[斐波那契数](http://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)并且可以被 **K** 整除。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] [] = {{1，11}，{5，15}，{2，24}}，K = 2
-> **输出：** 3 2 5
-> **说明：**
+> **输入**：arr [] [] = {{1，11}，{5，15}，{2，24}}，K = 2
+> **输出**：3 2 5
+> **说明**：
 > 对于查询 1：1、2、8 和 11 是给定范围内的数字，其位数之和为斐波那契，并且可以被 K 整除。 11 是给定范围内的数字，其数字总和是斐波那契并可以被 K 整除。
 > 查询 3：2、8、11、17 和 20 是给定范围内的数字，其数字总和是斐波那契，并且可以被 K 整除 。
 > 
-> **输入：** arr [] [] = {{2，17}，{3，24}}，K = 3
-> **输出：** 4 4
-> **说明：**
+> **输入**：arr [] [] = {{2，17}，{3，24}}，K = 3
+> **输出**：4 4
+> **说明**：
 > 对于查询 1：1、2、8、11 和 17 是给定范围内的数字，其数字总和为斐波那契并被 K 整除。
 > 对于查询 2：8、11、17 和 20 是给定范围内的数字，其数字总和为斐波那契并被 K 整除。
 
-**方法：**的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契结点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，直到给定范围内的最大值，从而使检查变得容易和高效 （在 O（1）时间内）。
+**方法**：的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契结点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，直到给定范围内的最大值，从而使检查变得容易和高效 （在 O（1）时间内）。
 
 *   预计算后，标记从 **1** 到 **maxVal** 的所有整数，这些整数可以被 **K** 整除并且是斐波那契。
 *   查找标记数组的[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)。

@@ -1,7 +1,7 @@
 # 查找出现在第一个数组而不是第二个数组中的元素
 
 给定两个数组，任务是我们找到第一个数组中存在但第二个数组中不存在的数字。
-**范例：**
+**范例**：
 
 ```
 Input : a[] = {1, 2, 3, 4, 5, 10};
@@ -406,8 +406,8 @@ class GfG
 
 ```
 
-**时间复杂度：** O（n）
-**辅助空间：** O（n）
+**时间复杂度**：O（n）
+**辅助空间**：O（n）
 
 本文由 **DANISH_RAZA** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

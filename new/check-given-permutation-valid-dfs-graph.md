@@ -4,9 +4,9 @@
 
 给定一个图，该图具有从 1 到 N 的 N 个节点和 M 个边缘的数字，以及从 1 到 N 的数字数组。请检查是否有可能通过在给定图上应用 DFS（深度优先遍历）来获得数组的任何排列。
 
-**先决条件：** [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) | CPP 中的[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)
+**先决条件**：[DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) | CPP 中的[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)
 
-**示例：**
+**示例**：
 
 ```
 Input: N = 3, M = 2
@@ -33,14 +33,14 @@ in the order of given permutation.
 
 ```
 
-**方法：**我们假设输入图表示为[邻接表](https://www.geeksforgeeks.org/graph-and-its-representations/)。 想法是首先根据输入顺序对所有邻接表进行排序，然后从给定排列的第一个节点开始遍历给定图。 如果我们以相同顺序访问所有顶点，则给定的排列是有效的 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。
+**方法**：我们假设输入图表示为[邻接表](https://www.geeksforgeeks.org/graph-and-its-representations/)。 想法是首先根据输入顺序对所有邻接表进行排序，然后从给定排列的第一个节点开始遍历给定图。 如果我们以相同顺序访问所有顶点，则给定的排列是有效的 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。
 
 1.  将每个数字的索引存储在哈希图中的给定排列中。
 2.  由于需要维护顺序，因此根据排列索引对每个邻接表进行排序。
 3.  使用源节点作为给定排列的第一个数字执行深度优先遍历搜索。
 4.  保留一个计数器变量，并在每次递归调用时，检查计数器是否已达到节点数（即 N），并将标志设置为 1。如果在完成 DFS 后标志为 0，则回答为“否”，否则为“是”
 
-**以下是上述方法的实现：**
+**以下是上述方法的实现**：
 
 ```
 // C++ program to check if given

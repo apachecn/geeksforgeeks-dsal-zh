@@ -4,7 +4,7 @@
 
 给定一个分数，找到一个数字的重复序列（如果存在），否则，打印“无重复序列”。
 
-**示例：**
+**示例**：
 
 ```
 Input  : Numerator = 8, Denominator = 3
@@ -325,7 +325,7 @@ public static void Main(string[] args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Recurring sequence is 27

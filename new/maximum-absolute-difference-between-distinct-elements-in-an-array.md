@@ -3,26 +3,26 @@
 中不同元素之间的最大绝对差
 
 给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到数组不同元素之间的最大绝对差。
-**范例：**
+**范例**：
 
-> **输入：** arr [] = {12，10，9，45，2，10，10，45，10}
-> **输出：** 10
-> **说明 ：**
+> **输入**：arr [] = {12，10，9，45，2，10，10，45，10}
+> **输出**：10
+> **说明 **：
 > 给定数组的不同元素是 12、9、2。
 > 因此，它们之间的最大绝对差为（12 – 2）= 10。
 > 
-> **输入：** arr [] = {2，-1，10，3，-2，-1，10}
-> **输出：** 5
-> **说明：**
+> **输入**：arr [] = {2，-1，10，3，-2，-1，10}
+> **输出**：5
+> **说明**：
 > 给定数组的不同元素是 2、3，-2。
 > 因此，它们之间的最大绝对差为（3 –（-2））=5。
 
-**天真的方法：**天真的方法是将[不同元素存储在给定数组](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)中的数组 **temp []** 中，并打印出最大和最小元素差 数组 **temp []** 。
+**天真的方法**：天真的方法是将[不同元素存储在给定数组](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)中的数组 **temp []** 中，并打印出最大和最小元素差 数组 **temp []** 。
 
-***时间复杂度：** O（N <sup>2</sup> ）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N <sup>2</sup> ）*
+***辅助空间**：O（N）*
 
-**有效方法：**可以使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)来优化上述幼稚方法。 步骤如下：
+**有效方法**：可以使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)来优化上述幼稚方法。 步骤如下：
 
 1.  将数组 **arr []** 的每个元素的频率存储在 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中。
 2.  现在，使用上面创建的 HashMap 找到频率为 **1** 的数组的最大值和最小值。
@@ -313,8 +313,8 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** *O（N）*；
-**辅助空间：** *O（N）*
+**时间复杂度**：*O（N）*；
+**辅助空间**：*O（N）*
 
 
 

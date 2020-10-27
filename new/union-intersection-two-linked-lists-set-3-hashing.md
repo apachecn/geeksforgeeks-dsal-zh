@@ -2,7 +2,7 @@
 
 给定两个链接列表，创建包含给定列表中元素的并集和交集的并集和交集列表。 输出列表中元素的顺序无关紧要。
 
-**示例：**
+**示例**：
 
 ```
 Input:
@@ -173,7 +173,7 @@ return 0;
 }
 ```
 
-**输出：**
+**输出**：
 
 ```
 First list is 
@@ -189,14 +189,14 @@ Union list is
 
 我们还可以通过为两个列表维护单独的 Hash 来处理重复项。
 
-**复杂度分析：**
+**复杂度分析**：
 
-*   **时间复杂度：** O（m + n）。
+*   **时间复杂度**：O（m + n）。
     这里的“ m”和“ n”分别是第一和第二列表中存在的元素数。
-    **原因：**
+    **原因**：
     对于联合：遍历两个列表，将元素存储在哈希图中并更新各自的计数。
     对于路口：检查哈希图中元素的计数是否为“ 2”。
-*   **辅助空间：** O（m + n）。
+*   **辅助空间**：O（m + n）。
     使用哈希图数据结构存储值。
 
 本文由 **[Sahil Chhabra](https://www.facebook.com/sahil.chhabra.965)** 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

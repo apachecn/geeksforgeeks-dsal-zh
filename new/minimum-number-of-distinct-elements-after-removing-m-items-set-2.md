@@ -2,23 +2,23 @@
 
 给定一个项目的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)，第 ith 个索引元素表示该项目的 ID，给定一个数字 m，任务是删除 m 个元素，以使剩余的唯一 ID 最少。 打印不同 ID 的数量。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {2，2，1，3，3，3} m = 3
-> **输出：** 1
-> **说明：**
+> **输入**：arr [] = {2，2，1，3，3，3} m = 3
+> **输出**：1
+> **说明**：
 > 删除 1 和两个 2。
 > 因此，仅剩 3 个，因此元素的不同数目为 1。
 > 
-> **输入：** arr [] = {2，4，1，5，3，5，1，3} m = 2
-> **输出：** 3
-> **说明：**
+> **输入**：arr [] = {2，4，1，5，3，5，1，3} m = 2
+> **输出**：3
+> **说明**：
 > 完全卸下 2 和 4。
 > 因此，剩下的 1、3 和 5，即 3 个元素。
 
 对于 **O（N * log N）**方法，请参考[先前的文章](https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items/)。
 
-**高效方法：**这个想法是将每个元素的出现存储在[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)中，然后再次计算每个频率在哈希中的出现。 步骤如下：
+**高效方法**：这个想法是将每个元素的出现存储在[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)中，然后再次计算每个频率在哈希中的出现。 步骤如下：
 
 1.  遍历给定的数组元素，[对每个数字](https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-a-sorted-array/)的出现进行计数，并将其存储到[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)中。
 2.  现在，不对频率进行排序，而是将频率的出现计数到另一个数组中，例如 ***fre*** **_** ***arr []** [* 。
@@ -313,8 +313,8 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（N）*
 
 
 

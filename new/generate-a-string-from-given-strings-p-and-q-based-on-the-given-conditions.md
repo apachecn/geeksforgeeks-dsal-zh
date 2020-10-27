@@ -6,25 +6,25 @@
 *   **S** 中 **Q** 之前的所有字符均应小于或等于 **Q** 中的第一个字符，并按词典顺序排列。
 *   其余字符应按字典顺序出现在 **Q** 之后
 
-**注意：** Q 的所有字符始终存在于 P 中，并且 Q 的长度始终小于或等于 P 的长度。
+**注意**：Q 的所有字符始终存在于 P 中，并且 Q 的长度始终小于或等于 P 的长度。
 
-**示例：**
+**示例**：
 
-> **输入：** P =“ geeksforgeeksfor” Q =“用于”
-> **输出：** eeeefforggkkorss
-> **说明：**
+> **输入**：P =“ geeksforgeeksfor” Q =“用于”
+> **输出**：eeeefforggkkorss
+> **说明**：
 > 字符'e'和 “ f”是这里唯一小于或等于“ f”（Q 的第一个字符）的字符。
 > 因此，在“ for”之前，字符串在字典上等于 eeeef。
 > P 中的其余字符大于“ f”，因​​此按字典顺序放在“ for”之后。
 > 因此，在“ for”之后，字符串是 ggkkorss。
 > 因此，输出为 eeeefforggkkorss。
 > 
-> **输入：** P =“字典式” Q =“间隙”
-> **输出：** accegaphiillorx
-> **说明：**
+> **输入**：P =“字典式” Q =“间隙”
+> **输出**：accegaphiillorx
+> **说明**：
 > 字符串 accegaphiillorx 满足上述要求 字符串 P 和 Q 的条件。
 
-**方法：**的想法是找到 P 和 Q 中所有字符的[**频率**](https://www.geeksforgeeks.org/print-characters-frequencies-order-occurrence/) 以解决问题。
+**方法**：的想法是找到 P 和 Q 中所有字符的[**频率**](https://www.geeksforgeeks.org/print-characters-frequencies-order-occurrence/) 以解决问题。
 
 *   维持 P 和 Q 中所有字母的频率数组。
 *   找到频率后，根据 Q 中的第一个字符分隔 P 中的字符，并将它们添加到结果字符串中。
@@ -324,8 +324,8 @@ eeeefforggkkorss
 
 ```
 
-***时间复杂度：** O（N + M），其中 N 和 M 分别是 P 和 Q 的长度。*
-***辅助空间：** O （1）*
+***时间复杂度**：O（N + M），其中 N 和 M 分别是 P 和 Q 的长度。*
+***辅助空间**：O （1）*
 
 
 

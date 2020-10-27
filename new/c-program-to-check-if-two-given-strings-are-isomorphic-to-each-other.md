@@ -4,22 +4,22 @@
 
 > 如果 **str1** 的每个字符到 **str2** 的每个字符都有一个**一对一的映射**，则说两个字符串是**同构**。 并且 **str1** 中每个字符的所有出现都映射到 **str2** 中的相同字符。
 
-**示例：**
+**示例**：
 
-> **输入：** str1 =“ egg”，str2 =“ add”
-> **输出：**是
-> **说明：**
+> **输入**：str1 =“ egg”，str2 =“ add”
+> **输出**：是
+> **说明**：
 > str1 中的'e' ASCII 值 101 的 str2 中的 ASCII 值 97 映射为'a'。ASCII 值 103 的 str1 中的
 > 'g'映射为 ASCII 值 100 的 str2 中的'd'。
 > 
-> **输入：** str1 =“蛋”，str2 =“添加”
-> **输出：**否
+> **输入**：str1 =“蛋”，str2 =“添加”
+> **输出**：否
 
-**[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)方法：**有关基于 [Hashmap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 的方法，请参考[先前的文章](https://www.geeksforgeeks.org/check-if-two-given-strings-are-isomorphic-to-each-other/)。
-***时间复杂度：** O（N）
-**辅助空间：** O（256）*
+**[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)方法**：有关基于 [Hashmap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 的方法，请参考[先前的文章](https://www.geeksforgeeks.org/check-if-two-given-strings-are-isomorphic-to-each-other/)。
+***时间复杂度**：O（N）
+**辅助空间**：O（256）*
 
-**[基于 ASCII 值](https://en.wikipedia.org/wiki/ASCII#Character_order)的方法：**该想法与上述方法类似。 请按照以下步骤解决问题：
+**[基于 ASCII 值](https://en.wikipedia.org/wiki/ASCII#Character_order)的方法**：该想法与上述方法类似。 请按照以下步骤解决问题：
 
 1.  初始化大小为 256 的两个数组。
 2.  [遍历给定字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)的字符，并在 **i <sup>在</sup>** 位置递增等于该字符的 ASCII 值的索引。
@@ -90,7 +90,7 @@ Yes
 
 ```
 
-***时间复杂度：** O（N）
+***时间复杂度**：O（N）
 **辅助空间：O（256）***
 
 

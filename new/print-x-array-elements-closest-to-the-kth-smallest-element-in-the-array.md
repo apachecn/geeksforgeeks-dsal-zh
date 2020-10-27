@@ -4,21 +4,21 @@
 
 给定两个整数 **K** ， **X** 和一个[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，它们由 **N** 个不同的元素组成， 任务是从给定数组中找到最接近 [**K <sup>K</sup>** 个最小元素的 **X** 元素。](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/)
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {1、2、3、4、10}，K = 3，X = 2
-> **输出：** 2 3
+> **输入**：arr [] = {1、2、3、4、10}，K = 3，X = 2
+> **输出**：2 3
 > **说明：给定数组中存在的** K <sup>个第</sup>个最小元素是 3，最接近 X 的 X（= 2）数组元素是{2，3}或{3，4}。
 > 因此，所需的输出为 2 3。
 > 
-> **输入：** arr [] = {1、9、8、2、7、3、6、4、5、10、13、12、16、14、11、15}，K = 3， X = 5
-> **输出：** 1 2 3 4 5
+> **输入**：arr [] = {1、9、8、2、7、3、6、4、5、10、13、12、16、14、11、15}，K = 3， X = 5
+> **输出**：1 2 3 4 5
 
-**天真的方法：**解决此问题的最简单方法是[对数组](https://www.geeksforgeeks.org/sorting-algorithms/)排序，并打印 **X** 最接近 **K <sup>th</sup>** 使用[两指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)的给定数组的最小元素。
-***时间复杂度：** O（N * log N）*
-***辅助空间：** O（1）*
+**天真的方法**：解决此问题的最简单方法是[对数组](https://www.geeksforgeeks.org/sorting-algorithms/)排序，并打印 **X** 最接近 **K <sup>th</sup>** 使用[两指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)的给定数组的最小元素。
+***时间复杂度**：O（N * log N）*
+***辅助空间**：O（1）*
 
-**有效方法：**为了优化上述方法，其思想是使用[中值来有效计算给定阵列的 **K <sup>th</sup>** 最小元素的值 选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)。 请按照以下步骤解决问题：
+**有效方法**：为了优化上述方法，其思想是使用[中值来有效计算给定阵列的 **K <sup>th</sup>** 最小元素的值 选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)。 请按照以下步骤解决问题：
 
 *   使用[中值选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)计算给定数组的最小 Kth，即 **KthElem** 。
 *   初始化一个数组，例如说 **diff []** ，以存储 **arr [i]** 和 **KthElem** 的绝对差。
@@ -231,8 +231,8 @@ if __name__ == '__main__':
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（N）*
 
 
 

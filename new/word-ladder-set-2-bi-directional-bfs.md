@@ -2,15 +2,15 @@
 
 给定一个字典，并且两个单词**起始于**和**目标**（两者长度相同）。 查找从**起始**到**目标**的最小链的长度（如果存在），使得链中的相邻单词仅相差一个字符，并且链中的每个单词都是有效单词，即， 它存在于字典中。 可以假设在字典中存在**目标**词，并且所有字典词的长度均相等。
 
-**示例：**
+**示例**：
 
-> **输入：**词典= {POON，PLEE，SAME，POIE，PLEA，PLIE，POIN}
+> **输入**：词典= {POON，PLEE，SAME，POIE，PLEA，PLIE，POIN}
 > start =“卡通”
 > 目标=“ PLEA”
-> **输出：** 7
+> **输出**：7
 > 卡通-> POON – > POIN – > POIE – > PLIE – > PLEE – > PLEA
 
-**方法：**可以使用标准 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 方法（如[在此处](https://www.geeksforgeeks.org/word-ladder-length-of-shortest-chain-to-reach-a-target-word/)中讨论的方法）解决，但可以通过使用双向 BFS 来提高其性能。
+**方法**：可以使用标准 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 方法（如[在此处](https://www.geeksforgeeks.org/word-ladder-length-of-shortest-chain-to-reach-a-target-word/)中讨论的方法）解决，但可以通过使用双向 BFS 来提高其性能。
 双向 BFS 不会降低解决方案的时间复杂度，但是在许多情况下，它无疑可以优化性能。 这种方法还可以用于许多其他最短寻路问题中，在这些问题中，我们可以获得有关源节点和目标节点的足够信息。 双向 BFS 涉及的基本思想是从路径的两端开始搜索。
 因此，需要维护两个队列和两个访问数组来跟踪两条路径。 因此，只要源队列中存在一个节点（例如 A）遇到目标队列中存在的一个节点（例如 B），我们就可以通过将 A 到源的距离与 B 的距离相加来计算答案 从目标减 1 开始（一个节点是公共的）。 这样，与标准 BFS 方法相比，我们可以在一半时间内计算出答案。 此方法也称为中间相遇 BFS 方法。
 

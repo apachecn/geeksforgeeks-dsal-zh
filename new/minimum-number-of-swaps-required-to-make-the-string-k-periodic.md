@@ -1,17 +1,17 @@
 # 使字符串 K 变为周期性所需的最小交换次数
 
 给定长度为 **N** 的字符串 **S** 以及由小写字母组成的数组 **A** 。 还给出一个正整数 **K** 。 任务是找到使字符串 **S** **K** 成为周期性所需的最小交换次数（在 S 和 A 之间）。
-**注意：**
+**注意**：
 
 *   如果对于字符串 **S [i] = S [i + K]** 中的每个位置 i，则该字符串都称为 K 周期。
 *   一口气只能将 S 的一个字符替换为 A 的字符。
 *   A 中的字符可以多次使用。
 
-**示例：**
+**示例**：
 
-> **输入：** S =“ nihsiakyt”，K = 3，A = ['n'，'i'，'p'，'s'，'q']
-> **输出：** 6
-> **说明：**
+> **输入**：S =“ nihsiakyt”，K = 3，A = ['n'，'i'，'p'，'s'，'q']
+> **输出**：6
+> **说明**：
 > 考虑字符串 S 从 0 开始的定位：
 > 位置 3、6 应替换为'n'。
 > 位置 7 应该替换为“ i”。
@@ -19,12 +19,12 @@
 > 最后 3 个周期字符串：“ nisnisnis”。
 > 因此，所需的最小掉期= 6
 > 
-> **输入：** S =“ abcdeactr”，K = 4，A = ['a'，'c'，'p']
-> **输出：** 5
-> **说明：**
+> **输入**：S =“ abcdeactr”，K = 4，A = ['a'，'c'，'p']
+> **输出**：5
+> **说明**：
 > 总共需要进行 5 次更改才能使字符串 4 成为周期性。
 
-**方法：**可以借助[频率计数](https://www.geeksforgeeks.org/tag/frequency-counting/)和[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)解决此问题。
+**方法**：可以借助[频率计数](https://www.geeksforgeeks.org/tag/frequency-counting/)和[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)解决此问题。
 
 1.  为了解决上述问题，我们使用二维数组 **freq [K] [26]** 将所有![0 \le j < N ](img/5e132a15f8b500725556c362f0d51cd5.png "Rendered by QuickLaTeX.com")的字符频率存储在 **j％K** 位置。
 2.  使用**布尔数组标记数组 A 中存在的所有字符**。

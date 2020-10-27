@@ -1,18 +1,18 @@
 # 使用分段筛的最长质数子数组
 
 给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到最长的子数组，其中该子数组中的所有数字均为质数。
-**范例：**
+**范例**：
 
-> **输入：** arr [] = {3，5，2，66，7，11，8}
-> **输出：** 3
-> **说明：**
+> **输入**：arr [] = {3，5，2，66，7，11，8}
+> **输出**：3
+> **说明**：
 > 最大连续素数序列为{2，3，5}
 > 
-> **输入：** arr [] = {1,2,11,32,8,9}
-> **输出：** 2
-> **说明：** ]最大连续素数序列为{2，11}
+> **输入**：arr [] = {1,2,11,32,8,9}
+> **输出**：2
+> **说明**：]最大连续素数序列为{2，11}
 
-**方法：**
+**方法**：
 对于按 **10 <sup>6</sup>** 顺序排列的数组元素，我们在[本文的](https://www.geeksforgeeks.org/maximum-no-of-contiguous-prime-numbers-in-an-array/)[中讨论了一种方法。
 对于按 **10 <sup>9</sup>** 顺序排列的数组元素，想法是使用](https://www.geeksforgeeks.org/maximum-no-of-contiguous-prime-numbers-in-an-array/)[分段筛](https://www.geeksforgeeks.org/segmented-sieve/)查找[质数](https://www.geeksforgeeks.org/prime-numbers/) 值最高为 **10 <sup>9</sup>** 。
 **步骤**：
@@ -472,8 +472,8 @@ public static void Main(string[] args)
 
 ```
 
-**时间复杂度：** O（N），其中 N 是数组的长度。
-**辅助空间：** O（N），其中 N 是数组的长度。
+**时间复杂度**：O（N），其中 N 是数组的长度。
+**辅助空间**：O（N），其中 N 是数组的长度。
 
 
 

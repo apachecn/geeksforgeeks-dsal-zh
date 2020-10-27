@@ -5,30 +5,30 @@
 *   **查询（开始，结束）**：从头到尾打印子数组中的斐波那契数
 *   **update（i，x）**：将 x 添加到数组索引 **i** 引用的数组元素中，即：arr [i] = x
 
-**示例：**
+**示例**：
 
-> **输入：** arr = {1，2，3，4，8，9}
+> **输入**：arr = {1，2，3，4，8，9}
 > 查询 1：查询（开始= 0，结束= 4）
 > 查询 2：更新（i = 3 ，x = 5）
 > 查询 3：查询（开始= 0，结束= 4）
-> **输出：** 4
+> **输出**：4
 > 5
 > **说明**
 > 在**查询 1** 中，子数组[0…4]具有 **4** 斐波那契数即。 {1、2、3、8}
 > 在**查询 2** 中，索引 3 的值更新为 5，数组 arr 现在为{1、2、3、5、8、9 }
 > 在**查询 3** 中，子数组[0…4]具有 **5** 斐波那契数。 {1,2,3,5,8}
 
-**方法：**为了处理点更新和范围查询，为此目的，[段树](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)是最佳的。
+**方法**：为了处理点更新和范围查询，为此目的，[段树](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)是最佳的。
 
 为了检查[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，我们可以使用[动态编程](http://www.geeksforgeeks.org/dynamic-programming/)来构建[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于最大值 arr [ <sub>i</sub> 。 我们可以采用 MAX 来测试 O（1）时间复杂度的数字。
 
-**构建细分树：**
+**构建细分树**：
 
 *   现在，使用段树问题将问题简化为[子数组总和。](https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)
 *   现在，我们可以构建分段树，其中叶节点表示为 0（如果不是素数）或 1（如果是斐波那契数）。
 *   段树的内部节点等于其子节点的总和，因此，一个节点表示从 L 到 R 的范围内的总斐波那契数，范围[L，R]落在该节点下面，并且在其下面是子树。
 
-**处理查询和积分更新：**
+**处理查询和积分更新**：
 
 *   每当我们收到从头到尾的查询时，我们都可以在段树中查询从头到尾的范围内的节点总数，这又表示从头到尾的范围内的斐波那契数。
 *   To perform a point update and to update the value at index i to x, we check for the following cases:
@@ -286,7 +286,7 @@ Number of Fibonacci numbers in subarray from 0 to 4 = 5
 
 ```
 
-**时间复杂度：**每个查询和更新的时间复杂度为 **O（log n）**，构建段树的时间复杂度为 **O（n）**
+**时间复杂度**：每个查询和更新的时间复杂度为 **O（log n）**，构建段树的时间复杂度为 **O（n）**
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

@@ -2,23 +2,23 @@
 
 给定 **N** 个元素的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 。 任务是计算索引**（i，j）**的总数，以使 **arr [i] = arr [j]** 和 **i！= j**
 
-**示例：**
+**示例**：
 
 > **输入**：arr [] = {1、2、1、1} ​​
 > **输出**：3
-> **说明：**
+> **说明**：
 > 在数组中 arr [0] = arr [2] = arr [3]
 > 有效对为（0，2），（0，3）和（2，3）
 > 
 > **输入**：arr [] = {2，2，3，2，3}
 > **输出**：4
-> **说明：**
+> **说明**：
 > 输入 数组 arr [0] = arr [1] = arr [3]和 arr [2] = arr [4]
 > 所以有效对是（0，1），（0，3），（1，3） ，（2，4）
 
 对于朴素和有效的方法，请参阅本文的[先前文章](https://www.geeksforgeeks.org/count-index-pairs-equal-elements-array/)。
 
-**更好的方法-使用两个指针：**这个想法是[对给定的数组和具有相同元素的索引差进行](https://www.geeksforgeeks.org/sorting-algorithms/)排序。 步骤如下：
+**更好的方法-使用两个指针**：这个想法是[对给定的数组和具有相同元素的索引差进行](https://www.geeksforgeeks.org/sorting-algorithms/)排序。 步骤如下：
 
 1.  排序给定的数组。
 2.  将两个指针**左侧**和**右侧**分别初始化为 0 和 1。
@@ -233,10 +233,10 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N * log N）*
-***辅助空间：** O（1）*
+***时间复杂度**：O（N * log N）*
+***辅助空间**：O（1）*
 
-**高效方法–使用单个遍历：**的想法是使用 [**散列**](https://www.geeksforgeeks.org/hashing-data-structure/) 并更新频率大于 1 的每对的计数。以下是步骤：
+**高效方法–使用单个遍历**：的想法是使用 [**散列**](https://www.geeksforgeeks.org/hashing-data-structure/) 并更新频率大于 1 的每对的计数。以下是步骤：
 
 1.  创建一个 [unordered_map](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) **M** ，以将每个元素的[频率存储在数组](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)中。
 2.  遍历给定的数组，并继续更新 **M** 中每个元素的频率。
@@ -415,8 +415,8 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（N）*
 
 
 

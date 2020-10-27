@@ -1,8 +1,8 @@
 # 打印最长子字符串而不重复字符
 
 给定一个字符串，打印最长的子字符串，而不重复字符。 例如，没有重复字符“ ABDEFGABEF”的最长子串是“ BDEFGA”和“ DEFGAB”，长度为 6。对于“ BBBB”，最长子串是“ B”，长度为 1。所需的时间复杂度为 O（n ），其中 n 是字符串的长度。
-**先决条件：** [最长子串的长度，不包含重复字符](https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/)
-**示例：**
+**先决条件**：[最长子串的长度，不包含重复字符](https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/)
+**示例**：
 
 ```
 Input : GEEKSFORGEEKS
@@ -15,8 +15,8 @@ Output : BDEFGA
 
 [Recommended : Please try your approach first on IDE and then look at the solution.](https://ide.geeksforgeeks.org)
 
-**方法：**的想法是遍历字符串，对于每个已访问的字符，将其最后一次出现存储在哈希表中（此处 unordered_map 用作哈希，键作为字符，值作为其最后位置）。 变量 st 存储当前子串的起点，maxlen 存储最大长度子串​​的长度，start 存储最大长度子串​​的起始索引。 在遍历字符串时，请检查哈希表中是否存在当前字符。 如果不存在，则将当前字符存储在哈希表中，并将值作为当前索引。 如果哈希表中已经存在该字符，则意味着当前字符可以在当前子字符串中重复。 对于此检查，字符的上一次出现是在当前子字符串的起点 st 之前还是之后。 如果它在 st 之前，则仅更新哈希表中的值。 如果在 st 之后，则找到当前子串 currlen 的长度为 i-st，其中 i 是当前索引。 比较 currlen 和 maxlen。 如果 maxlen 小于 currlen，则将 maxlen 更新为 currlen 并从 st 开始。 完整遍历字符串后，所需的最长子字符串（不重复字符）为 s [start]到 s [start + maxlen-1]。
-**实施：**
+**方法**：的想法是遍历字符串，对于每个已访问的字符，将其最后一次出现存储在哈希表中（此处 unordered_map 用作哈希，键作为字符，值作为其最后位置）。 变量 st 存储当前子串的起点，maxlen 存储最大长度子串​​的长度，start 存储最大长度子串​​的起始索引。 在遍历字符串时，请检查哈希表中是否存在当前字符。 如果不存在，则将当前字符存储在哈希表中，并将值作为当前索引。 如果哈希表中已经存在该字符，则意味着当前字符可以在当前子字符串中重复。 对于此检查，字符的上一次出现是在当前子字符串的起点 st 之前还是之后。 如果它在 st 之前，则仅更新哈希表中的值。 如果在 st 之后，则找到当前子串 currlen 的长度为 i-st，其中 i 是当前索引。 比较 currlen 和 maxlen。 如果 maxlen 小于 currlen，则将 maxlen 更新为 currlen 并从 st 开始。 完整遍历字符串后，所需的最长子字符串（不重复字符）为 s [start]到 s [start + maxlen-1]。
+**实施**：
 
 ## C++
 
@@ -438,15 +438,15 @@ public static void Main(String[] args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 EKSFORG 
 
 ```
 
-**时间复杂度：** O（n）
-**辅助空间：** O（n）
+**时间复杂度**：O（n）
+**辅助空间**：O（n）
 
 
 

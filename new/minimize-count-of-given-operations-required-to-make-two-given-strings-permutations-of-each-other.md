@@ -6,23 +6,23 @@
 2.  从字符串中删除一个字符。
 3.  用字符串中的另一个字符替换一个字符。
 
-***注意：**所有上述操作费用相同。*
+***注意**：所有上述操作费用相同。*
 
-**示例：**
+**示例**：
 
-> **输入：** str1 =“ geeksforgeeks”，str2 =“ geeksforcoder”
-> **输出：** 4
-> **说明：**将字符串 str2 重新排列为“ geeksforcedor”
+> **输入**：str1 =“ geeksforgeeks”，str2 =“ geeksforcoder”
+> **输出**：4
+> **说明**：将字符串 str2 重新排列为“ geeksforcedor”
 > 将 str1 [8]的值替换为'c'。
 > 将 str1 [10]的值替换为“ d”。
 > 将 str1 [11]的值替换为“ o”。
 > 将 str1 [12]的值替换为“ r”。
 > 因此，所需的输出为 4。
 > 
-> **输入：** str1 **=** “怪胎”，str2 =“ keeg”
-> **输出：** 1
+> **输入**：str1 **=** “怪胎”，str2 =“ keeg”
+> **输出**：1
 
-**方法：**可以使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)存储两个字符串的每个字符的频率来解决该问题。 以下是解决该问题的观察结果：
+**方法**：可以使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)存储两个字符串的每个字符的频率来解决该问题。 以下是解决该问题的观察结果：
 
 > X =字符串 str1 和 str2 中都存在的字符数。
 > N1 – X =仅出现在 str1 中的字符数。
@@ -361,8 +361,8 @@ public static void Main()
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（1）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（1）*
 
 
 

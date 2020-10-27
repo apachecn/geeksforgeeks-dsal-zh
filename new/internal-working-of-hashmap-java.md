@@ -90,7 +90,7 @@ index = hashCode(key) & (n-1).
 
     ```
 
-    **步骤：**
+    **步骤**：
 
     1.  计算密钥{“ vishal”}的哈希码。 它将生成为 118。
     2.  使用索引方法计算索引将为 6。
@@ -120,7 +120,7 @@ index = hashCode(key) & (n-1).
 
     ```
 
-    **步骤：**
+    **步骤**：
 
     1.  计算密钥{“ sachin”}的 hashCode。 它将生成为 115。
     2.  使用索引方法计算索引将为 3。
@@ -138,14 +138,14 @@ index = hashCode(key) & (n-1).
     如果没有其他对象，则将该对象放置在索引 3 处。
     现在 HashMap 变为： [![2_hasharray](img/bbe2368957ded4573b3f6fed015ecb69.png)](https://media.geeksforgeeks.org/wp-content/uploads/Hashmap_working_2.jpg)
 
-*   **发生碰撞时：**现在，放入另一对，
+*   **发生碰撞时**：现在，放入另一对，
 
     ```
     map.put(new Key("vaibhav"), 40);
 
     ```
 
-    **步骤：**
+    **步骤**：
 
     1.  计算密钥{“ vaibhav”}的哈希码。 它将生成为 118。
     2.  使用索引方法计算索引将为 6。
@@ -178,7 +178,7 @@ index = hashCode(key) & (n-1).
 
     ```
 
-    **步骤：**
+    **步骤**：
 
     1.  计算密钥{“ sachin”}的哈希码。 它将生成为 115。
     2.  使用索引方法计算索引将为 3。
@@ -191,7 +191,7 @@ index = hashCode(key) & (n-1).
 
     ```
 
-    **步骤：**
+    **步骤**：
 
     1.  计算密钥{“ vaibhav”}的哈希码。 它将生成为 118。
     2.  使用索引方法计算索引将为 6。

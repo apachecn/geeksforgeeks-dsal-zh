@@ -4,19 +4,19 @@
 
 给定一个大小为 **N** 的整数 **arr []** 数组，任务是对频率等于其值的频率的所有元素进行计数。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {3，2，2，3，4，3}
-> **输出：** 2
+> **输入**：arr [] = {3，2，2，3，4，3}
+> **输出**：2
 > 元素 2 的频率为 2
 > 频率 元素 3 的频率为 3
 > 元素 4 的频率为 1
 > 2 和 3 是与其值具有相同频率的元素
 > 
-> **输入：** arr [] = {1、2、3、4、5、6}
-> **输出：** 1
+> **输入**：arr [] = {1、2、3、4、5、6}
+> **输出**：1
 
-**方法：**使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)存储数组的每个元素的[频率，最后计数频率等于其值的所有那些元素。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
+**方法**：使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)存储数组的每个元素的[频率，最后计数频率等于其值的所有那些元素。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
 
 下面是上述方法的实现：
 

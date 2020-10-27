@@ -2,9 +2,9 @@
 
 查找并打印两个给定字符串中不常见的字符（按排序顺序）。 此处不常见的字符表示该字符出现在一个字符串中，或​​者出现在其他字符串中，但都不出现在两个字符串中。 字符串仅包含小写字符，并且可以包含重复项。
 
-**来源：** [亚马逊访谈经验| 套装 355（体验 1 年）](https://www.geeksforgeeks.org/amazon-interview-experience-set-355-1-year-experienced/)
+**来源**：[亚马逊访谈经验| 套装 355（体验 1 年）](https://www.geeksforgeeks.org/amazon-interview-experience-set-355-1-year-experienced/)
 
-**示例：**
+**示例**：
 
 > **输入**：str1 =“字符”，str2 =“字母”
 > **输出**：b c l p r
@@ -12,11 +12,11 @@
 > **输入**：str1 =“ geeksforgeeks”，str2 =“ geeksquiz”
 > **输出**：f i o q r u z
 
-**天真的方法：**使用两个循环，对于第一个字符串的每个字符，检查第二个字符串中是否存在该字符。 同样，对于第二字符串的每个字符，请检查第一字符串中是否存在该字符。
+**天真的方法**：使用两个循环，对于第一个字符串的每个字符，检查第二个字符串中是否存在该字符。 同样，对于第二字符串的每个字符，请检查第一字符串中是否存在该字符。
 
 **时间复杂度**：O（n ^ 2）以及其他费用来处理重复项。
 
-**有效方法：**有效方法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
+**有效方法**：有效方法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
 
 *   将大小为 26 的哈希表用于所有小写字符。
 *   最初，将每个字符的存在标记为“ 0”（表示两个字符串中都不存在该字符）。
@@ -310,7 +310,7 @@ b c l p r
 
 ```
 
-**时间复杂度：** O（m + n），其中 **m** 和 **n** 分别是两个字符串的大小。
+**时间复杂度**：O（m + n），其中 **m** 和 **n** 分别是两个字符串的大小。
 
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

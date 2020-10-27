@@ -2,15 +2,15 @@
 
 给定 **N** 个字符串列表，任务是查找不是任何其他给定列表的子列表的列表计数。
 
-**示例：**
+**示例**：
 
-> **输入：** [[“嘿”，“嗨”，“你好”]，[“嘿”，“再见”]，[“嘿”，“嗨”]]
-> **输出 ：** 2
+> **输入**：[[“嘿”，“嗨”，“你好”]，[“嘿”，“再见”]，[“嘿”，“嗨”]]
+> **输出 **：2
 > **解释**
 > 第三列表是第一列表的子集，因此第一和第二列表是必需列表。
 > 
-> **输入：** [[“ geeksforgeeks”，“ geeks”]，[“ geeks”，“ geeksforgeeks”]]
-> **输出：** 0
+> **输入**：[[“ geeksforgeeks”，“ geeks”]，[“ geeks”，“ geeksforgeeks”]]
+> **输出**：0
 > **说明：[** 这两个列表都包含相同的字符串集。
 
 **方法**
@@ -117,8 +117,8 @@ signed main()
 
 ```
 
-***时间复杂度：** O（N * M）*
-***辅助空间：** O（N * M）*
+***时间复杂度**：O（N * M）*
+***辅助空间**：O（N * M）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

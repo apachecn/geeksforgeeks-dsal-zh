@@ -2,20 +2,20 @@
 
 给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，对于每个数组索引，任务是找到[最小的丢失的非负整数](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/) ]直到给定数组的索引。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {1、3、0、2}
-> **输出：** 0 0 2 4
-> **说明：**
+> **输入**：arr [] = {1、3、0、2}
+> **输出**：0 0 2 4
+> **说明**：
 > 从索引 0 到 0 的最小丢失的非负整数是 0。
 > 从索引 0 到 1 的最小丢失的非负整数是 0。
 > 从索引 0 到 2 的最小丢失的非负整数是 2。
 > 从索引 0 到 3 的最小丢失的非负整数是 4。
 > 
-> **输入：** arr [] = {0，1，2，3，5}
-> **输出：** 1 2 3 4 4
+> **输入**：arr [] = {0，1，2，3，5}
+> **输出**：1 2 3 4 4
 
-**方法：**可以使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)解决此问题。 请按照以下步骤解决问题：
+**方法**：可以使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)解决此问题。 请按照以下步骤解决问题：
 
 *   初始化一个变量，例如 **smNonNeg** ，以在给定数组的起始索引和当前索引之间存储[最小丢失的非负整数](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/)。
 *   初始化一个数组，例如说 **hash [N]** ，以检查在起始索引和当前索引之间是否存在 **smNonNeg** 。
@@ -277,8 +277,8 @@ public static void Main ()
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（N）*
 
 
 

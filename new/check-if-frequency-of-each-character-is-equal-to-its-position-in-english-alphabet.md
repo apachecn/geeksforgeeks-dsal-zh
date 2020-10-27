@@ -3,18 +3,18 @@
 中的位置
 
 给定小写字母的字符串 **str** ，任务是检查字符串中每个不同字符的频率是否等于其在英语字母表中的位置。 如果有效，则打印**“是”** ，否则打印**“否”** 。
-**范例：**
+**范例**：
 
-> **输入：** str =“ abbcccdddd” 英文字母，即
+> **输入**：str =“ abbcccdddd” 英文字母，即
 > F（a）= 1，
 > F（b）= 2，
 > F（c）= 3 和
 > F（d）= 4
 > 因此 输出为是。
-> **输入：** str =“ geeksforgeeks”。
-> **输出：**否
+> **输入**：str =“ geeksforgeeks”。
+> **输出**：否
 
-**方法：**
+**方法**：
 
 1.  将每个字符的[频率存储在 26 个](https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/)[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)中，以用于[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
 2.  现在遍历哈希数组，并检查索引 i 处每个字符的频率是否等于（i +1）。
@@ -263,8 +263,8 @@ Yes
 
 ```
 
-**时间复杂度：** *O（N）*，其中 N 是字符串的长度。
-**辅助空间：** *O（26）*
+**时间复杂度**：*O（N）*，其中 N 是字符串的长度。
+**辅助空间**：*O（26）*
 
 
 

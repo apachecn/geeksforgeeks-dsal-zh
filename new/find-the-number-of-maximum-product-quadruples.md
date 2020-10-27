@@ -1,7 +1,7 @@
 # 查找最大乘积四倍的数量
 
 给定一个由 N 个正元素组成的数组，可以找到四倍的（i，j，k，m）数，使得 i < j < k < m such that the product **a <sub>i</sub> a <sub>j</sub> a <sub>k [</sub> a <sub>m</sub>** 是最大可能值
-**示例：**
+**示例**：
 
 ```
 Input : N = 7, arr = {1, 2, 3, 3, 3, 3, 5}  
@@ -288,14 +288,14 @@ if __name__ == "__main__":
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 1
 
 ```
 
-**时间复杂度：** O（NlogN），其中 N 是数组的大小
+**时间复杂度**：O（NlogN），其中 N 是数组的大小
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

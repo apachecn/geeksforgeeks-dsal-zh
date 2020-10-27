@@ -208,7 +208,7 @@ public class Permutaions
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Arrays are permutations of each other

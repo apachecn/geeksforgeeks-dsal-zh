@@ -1,23 +1,23 @@
 # 最小化数组元素的增减，以使每个模 K 相等
 
 给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，长度为 **N** 和整数 **K** 。 在每个操作中，可以从数组中选择任何元素（例如 **arr [i]** ），并且可以将其更改为 **arr [i] + 1** 或 **arr [i] – 1** 。 任务是找到在数组上执行所需的最少操作数，以使数组**以 K** 为模的每个值保持相同。
-**范例：**
+**范例**：
 
-> **输入：** arr [] = {4、5、8、3、12}，k = 5
-> **输出：** 4
-> **说明：**
+> **输入**：arr [] = {4、5、8、3、12}，k = 5
+> **输出**：4
+> **说明**：
 > 操作 1：{3，5，8，3，12}，将索引 0 处的 4 减少 1。
 > 操作 2：{3，4，8，8，3，12}，将索引 1 处的 5 减少 1。 1\.
 > 操作 3：{3，3，8，3，12}，将索引 1 处的 4 减少 1。
 > 操作 4：{3，3，8，3，13}，将索引 1 处的 12 增加 4 乘 1。
 > 每个数字的模等于 3，所需的最小步长为 4。
 > 
-> **输入：** arr [] = {2，35，48，23，52}，k = 3
-> **输出：** 2
-> **说明：**
+> **输入**：arr [] = {2，35，48，23，52}，k = 3
+> **输出**：2
+> **说明**：
 > 使每个数字的模相等所需的最小步数为 2。
 
-**方法：**的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)来保持已获取的每个模的数量。
+**方法**：的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)来保持已获取的每个模的数量。
 
 *   现在，针对范围 0 <= i
 *   如果小于获得的值小于当前存储的值，则对其进行更新。
@@ -476,7 +476,7 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N * K）*
+***时间复杂度**：O（N * K）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

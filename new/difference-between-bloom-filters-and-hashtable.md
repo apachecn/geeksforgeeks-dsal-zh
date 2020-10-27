@@ -2,11 +2,11 @@
 
 之间的区别
 
-**HashTable：**
+**HashTable**：
 [Hashtable](https://www.geeksforgeeks.org/hashing-set-1-introduction/) 设计为使用一种称为 Hash 函数的特殊函数，该函数用于使用特定键映射给定值，以更快地访问元素。 它用于需要快速查找的地方。（在合理的假设下，哈希表中元素查找的平均时间为 O（1））。 Python 中的字典是使用 HashTables 实现的。 Java 还实现了 [HashTable](https://www.geeksforgeeks.org/hashtable-in-java/) 类。
 可以在中找到一些哈希应用。
 
-**布隆过滤器：**
+**布隆过滤器**：
 [布隆过滤器](https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/)是一种节省空间的概率数据结构，用于测试元素是否为集合的成员。 它用于只需要知道元素是否属于对象的地方。 Bloom 筛选器使用 k 个哈希函数和 n 位数组，其中数组位设置为 0，表示元素不存在，而 1 表示存在该元素。 布隆过滤器的一些应用是：
 
 *   Google Bigtable，Apache HBase，Apache Cassandra 和 PostgreSQL 使用 Bloom 过滤器来减少对不存在的行或列的磁盘查找。 避免进行昂贵的磁盘查找，可大大提高数据库查询操作的性能。

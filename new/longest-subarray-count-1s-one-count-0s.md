@@ -2,7 +2,7 @@
 
 给定大小为 **n** 的数组，仅包含 0 和 1。 问题是要找到最长的子数组的长度，其计数为 1 的数字要大于 0 的数字。
 
-**示例：**
+**示例**：
 
 ```
 Input : arr = {0, 1, 1, 0, 0, 1}
@@ -14,7 +14,7 @@ Output : 1
 
 ```
 
-**方法：**以下是步骤：
+**方法**：以下是步骤：
 
 1.  将数组中的所有 0 都视为“ -1”。
 2.  初始化**总和** = 0 和 **maxLen** = 0。
@@ -291,8 +291,8 @@ Length = 5
 
 ```
 
-**时间复杂度：** O（n）
-**辅助空间：** O（n）
+**时间复杂度**：O（n）
+**辅助空间**：O（n）
 
 本文由 [**Ayush Jauhari**](https://auth.geeksforgeeks.org/profile.php?user=ayushjauhari14) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

@@ -3,30 +3,30 @@
 给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是用数组中的[等级替换 Array 的每个元素。](https://www.geeksforgeeks.org/rank-elements-array/)
 
 > 元素的**等级定义为当数组以升序排列时，元素与数组的第一个元素之间的距离。 如果数组中两个或两个以上相同，则它们的排名也将与元素首次出现的排名相同。
-> **例如：**假设给定数组 arr [] = {2，2，1，6}，则元素的等级由下式给出：
+> **例如**：假设给定数组 arr [] = {2，2，1，6}，则元素的等级由下式给出：
 > 排序后的数组为：
 > arr [ ] = {1、2、2、6}
 > 等级（1）= 1（在索引 0） 索引 2）
 > 排名（6）= 4（在索引 3 处）**
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = [100，5，70，2]
-> **输出：** [4，2，3，1]
+> **输入**：arr [] = [100，5，70，2]
+> **输出**：[4，2，3，1]
 > **说明：[
 > 2 的排名是 1、5 是 2、70 是 3 和 100 是 4。**
 > 
-> **输入：** arr [] = [100，2，70，2]
-> **输出：** [3，1，2，1]
+> **输入**：arr [] = [100，2，70，2]
+> **输出**：[3，1，2，1]
 > **说明：[
 > 2 的排名是 1，70 是 2，100 是 3。**
 
-**天真的方法：**天真的方法是查找每个元素的等级为 **1 +** [**数组**](https://www.geeksforgeeks.org/count-smaller-equal-elements-sorted-array/) 中较小元素的数量 当前元素。
+**天真的方法**：天真的方法是查找每个元素的等级为 **1 +** [**数组**](https://www.geeksforgeeks.org/count-smaller-equal-elements-sorted-array/) 中较小元素的数量 当前元素。
 
- ***时间复杂度：** O（N <sup>2</sup> ）
-***辅助空间：** O（1）*
+ ***时间复杂度**：O（N <sup>2</sup> ）
+***辅助空间**：O（1）*
 
-**高效方法：**要优化上述幼稚方法，请找到元素的等级，然后将等级分配给元素。 步骤如下：
+**高效方法**：要优化上述幼稚方法，请找到元素的等级，然后将等级分配给元素。 步骤如下：
 
 1.  要计算元素的等级，请首先制作给定 **arr []** 的副本，然后以升序对复制的数组进行排序。
 2.  然后遍历复制的数组，并通过获取等级变量将其等级放入 **HashMap** 中。
@@ -314,8 +314,8 @@ public static void Main(string[] args) 
 [3, 1, 2, 1]
 ```
 
-**时间复杂度：** *O（N * log N）*
-**辅助空间：** *O（N）*
+**时间复杂度**：*O（N * log N）*
+**辅助空间**：*O（N）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

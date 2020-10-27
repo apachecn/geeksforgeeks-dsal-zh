@@ -2,17 +2,17 @@
 
 给定仅由小写英文字母组成的字符串 **str** ，任务是找到包含所有元音的最小长度的子字符串。 如果找不到这样的子字符串，请打印 **-1** 。
 
-**示例：**
+**示例**：
 
-> **输入：** str =“ babeivoucu”
-> **输出：** 7
-> **说明：**包含每个元音至少一次的最小子串为长度“ abeivou” 7
+> **输入**：str =“ babeivoucu”
+> **输出**：7
+> **说明**：包含每个元音至少一次的最小子串为长度“ abeivou” 7
 > 
-> **输入：** str =“ abcdef”
-> **输出：** -1
-> **说明：**找不到这样的子字符串。
+> **输入**：str =“ abcdef”
+> **输出**：-1
+> **说明**：找不到这样的子字符串。
 
-[**两指针方法**](https://www.geeksforgeeks.org/two-pointers-technique/) **：**
+[**两指针方法**](https://www.geeksforgeeks.org/two-pointers-technique/) ****：
 
 *   [存储每个元音的频率](https://www.geeksforgeeks.org/print-number-words-vowels-frequency-character/)和存在元音的索引。
 *   如果没有所有元音，请直接打印-1。
@@ -477,8 +477,8 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** *O（N）*；
-**辅助空间：** *O（N）*
+**时间复杂度**：*O（N）*；
+**辅助空间**：*O（N）*
 
 [**滑动窗口方法**](https://www.geeksforgeeks.org/window-sliding-technique/) ：
 
@@ -892,7 +892,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** *O（N）*
+**时间复杂度**：*O（N）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

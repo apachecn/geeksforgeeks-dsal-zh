@@ -2,17 +2,17 @@
 
 给定字符串 **str** ，任务是找到旋转所需的子字符串的最小长度，以从给定字符串生成回文子字符串。
 
-**示例：**
+**示例**：
 
-> **输入：** str =“ abcbd”
-> **输出：** 0
-> **说明：**无法生成回文子字符串，字符串中没有重复字符 。
+> **输入**：str =“ abcbd”
+> **输出**：0
+> **说明**：无法生成回文子字符串，字符串中没有重复字符 。
 > 
-> **输入：** str =“ abcdeba”
-> **输出：** 3
-> **说明：**旋转子字符串“ deb”将给定的字符串转换为 **bcb** eda，回文子串为“ bcb”。
+> **输入**：str =“ abcdeba”
+> **输出**：3
+> **说明**：旋转子字符串“ deb”将给定的字符串转换为 **bcb** eda，回文子串为“ bcb”。
 
-**方法：**
+**方法**：
 
 *   如果字符串中没有重复字符，则不会生成回文子字符串。
 *   对于每个重复字符，请检查其先前出现的索引是否在当前索引的一两个索引内。 如果是这样，则回文子串已经存在。
@@ -322,7 +322,7 @@ public static void Main(string[] args)
 
 ```
 
-**时间复杂度：** *O（N）*
+**时间复杂度**：*O（N）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

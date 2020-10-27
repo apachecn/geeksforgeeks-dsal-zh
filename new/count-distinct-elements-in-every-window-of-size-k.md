@@ -2,7 +2,7 @@
 
 给定大小为 n 的数组和整数 k，返回所有大小为 k 的窗口中不同数字的计数。
 
-**示例：**
+**示例**：
 
 ```
 Input: arr[] = {1, 2, 1, 3, 4, 2, 3};
@@ -26,7 +26,7 @@ First window is {4, 4}, count of distinct numbers is 1
 
 ```
 
-**来源：** [Microsoft 面试问题中已出现此问题。](http://qa.geeksforgeeks.org/1137/counting-factorial-numbers-in-c)
+**来源**：[Microsoft 面试问题中已出现此问题。](http://qa.geeksforgeeks.org/1137/counting-factorial-numbers-in-c)
 
 **<u>天真的方法：</u>** 天真的解决方案是遍历给定数组，考虑其中的每个窗口，并对窗口的不同元素进行计数。
 
@@ -247,7 +247,7 @@ First window is {4, 4}, count of distinct numbers is 1
     ```
 
 *   **Complexity Analysis:**
-    *   **时间复杂度：** O（nk <sup>2</sup> ）。
+    *   **时间复杂度**：O（nk <sup>2</sup> ）。
         通过使用排序修改 countWindowDistinct（），可以将时间复杂度提高到 *O（n * k * log k）*。 可以进一步优化该功能以使用[哈希在窗口中查找不同的元素](http://geeksquiz.com/print-distinct-elements-given-integer-array/)。 通过散列，时间复杂度变为 *O（n * k）*。
     *   **空间复杂度：O（1）**我们不需要任何额外的空间。
 
@@ -266,9 +266,9 @@ First window is {4, 4}, count of distinct numbers is 1
     7.  添加当前元素（新窗口的最后一个元素）
         *   如果添加的元素不在 hM 中存在，请将其添加到 *hM* 中并增加不重复计数，即*“ dist_count ++”*
         *   否则（添加的元素出现多次），以 *hM* 递增其计数
-*   **以下是上述方法的模拟：**
+*   **以下是上述方法的模拟**：
     ![](img/3a18bec756059e94265d825bf8cb3b9e.png)
-*   **实现：**
+*   **实现**：
 
     ## C++
 
@@ -535,7 +535,7 @@ First window is {4, 4}, count of distinct numbers is 1
 
     ```
 
-*   **输出：**
+*   **输出**：
 
     ```
     3

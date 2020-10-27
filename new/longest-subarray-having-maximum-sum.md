@@ -2,7 +2,7 @@
 
 给定包含 **n** 个整数的数组 **arr []** 。 问题是找到具有最大和的子数组的长度。 如果存在两个或更多具有最大和的子数组，则打印最长子数组的长度。
 
-**示例：**
+**示例**：
 
 ```
 Input : arr[] = {5, -2, -1, 3, -4}
@@ -18,7 +18,7 @@ The subarray is {4, -1, -2, 1, 5}
 
 ```
 
-**方法：**以下是步骤：
+**方法**：以下是步骤：
 
 1.  找到[最大和连续子数组](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)。 令该和为 **maxSum** 。
 2.  找到总和等于 **maxSum** 的最长子数组的长度。 请参阅此帖子的[。](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
@@ -380,8 +380,8 @@ Length of longest subarray having maximum sum = 4
 
 ```
 
-**时间复杂度：** O（n）。
-**辅助空间：** O（n）。
+**时间复杂度**：O（n）。
+**辅助空间**：O（n）。
 
 
 

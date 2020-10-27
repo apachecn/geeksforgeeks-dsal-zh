@@ -2,7 +2,7 @@
 
 给定大小为 N 的数组，找到多数元素。 多数元素是在给定数组中出现![\floor{\frac{n}{2}}](img/6b97b83019d889e5a31cda3e150a83d9.png "Rendered by QuickLaTeX.com")次以上的元素。
 
-**示例：**
+**示例**：
 
 ```
 Input: [3, 2, 3]

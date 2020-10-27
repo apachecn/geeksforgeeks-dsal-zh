@@ -2,7 +2,7 @@
 
 给定两个序列，一个是递增序列 **a []** ，另一个是正常序列 **b []** ，在递增序列中找到第 K 个缺失元素，该元素在给定序列中不存在 顺序。 如果没有第 k 个缺失元素，则输出-1
 
-**示例：**
+**示例**：
 
 ```
 Input:  a[] = {0, 2, 4, 6, 8, 10, 12, 14, 15};
@@ -222,8 +222,8 @@ public static void Main(String[] args) 
 
 ```
 
-**时间复杂度：** O（n1 + n2）
-**辅助空间：** O（n2）
+**时间复杂度**：O（n1 + n2）
+**辅助空间**：O（n2）
 
 本文由 [**Raja Vikramaditya**](https://www.facebook.com/raja.vikramaditya.7) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

@@ -123,8 +123,8 @@ int main()
 
 ```
 
-***注意：**使用 g ++中的-std = C++ 11 标志编译以上程序*
-**输出：**
+***注意**：使用 g ++中的-std = C++ 11 标志编译以上程序*
+**输出**：
 
 ```
 cat act tca 
@@ -133,11 +133,11 @@ geeksquiz zuiqkeegs
 
 ```
 
-**复杂度分析：**，
+**复杂度分析**：，
 
-*   **时间复杂度：** O（n * m（log m）），其中 m 是单词的长度。
+*   **时间复杂度**：O（n * m（log m）），其中 m 是单词的长度。
     需要对数组进行一次遍历。
-*   **空间复杂度：** O（n）。
+*   **空间复杂度**：O（n）。
     字符串中有 n 个单词。 该映射需要 O（n）空间来存储字符串。
 
 本文由 [**Mandeep Singh**](https://github.com/msdeep14) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

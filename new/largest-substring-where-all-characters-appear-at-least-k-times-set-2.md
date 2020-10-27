@@ -2,21 +2,21 @@
 
 给定字符串 **str** 和整数 **K** ，任务是找到最长子字符串 **S** 的长度，以使 **S 中的每个字符** 出现至少 **K** 次。
 
-**示例：**
+**示例**：
 
-> **输入：** str =“ aabbba”，K = 3
-> **输出：** 6
-> **说明：**
+> **输入**：str =“ aabbba”，K = 3
+> **输出**：6
+> **说明**：
 > 在子字符串 aabbba 中，每个字符重复 至少 k 次，其长度为 6。
 > 
-> **输入：** str =“ ababacb”，K = 3
-> **输出：** 0
-> **说明：**
+> **输入**：str =“ ababacb”，K = 3
+> **输出**：0
+> **说明**：
 > 没有每个字符的子字符串 重复至少 k 次。
 
-**朴素方法：**我们在[之前的文章](https://www.geeksforgeeks.org/largest-sub-string-where-all-the-characters-appear-at-least-k-times/)中讨论了朴素方法。
+**朴素方法**：我们在[之前的文章](https://www.geeksforgeeks.org/largest-sub-string-where-all-the-characters-appear-at-least-k-times/)中讨论了朴素方法。
 
-**方法：**在本文中，我们将讨论使用[分而治之](https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/)技术和[递归](https://www.geeksforgeeks.org/recursion/)的方法。 步骤如下：
+**方法**：在本文中，我们将讨论使用[分而治之](https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/)技术和[递归](https://www.geeksforgeeks.org/recursion/)的方法。 步骤如下：
 
 1.  将给定字符串的每个字符的[频率存储在大小为 **26** 的频率数组中。](https://www.geeksforgeeks.org/print-the-frequency-of-each-character-in-alphabetical-order/)
 2.  初始化两个变量*，以*从 0 开始，以*结束*，这是字符串 **str** 的长度。
@@ -291,7 +291,7 @@ public static void Main(string[] args)
 
 ```
 
-**时间复杂度：** *O（N * log <sub>2</sub> N）*
+**时间复杂度**：*O（N * log <sub>2</sub> N）*
 
 
 

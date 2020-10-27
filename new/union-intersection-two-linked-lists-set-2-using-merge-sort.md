@@ -2,7 +2,7 @@
 
 给定两个链接列表，创建包含给定列表中元素的并集和交集的并集和交集列表。 输出列表中元素的顺序无关紧要。
 
-**示例：**
+**示例**：
 
 ```
 Input:
@@ -42,7 +42,7 @@ Following are the steps to be followed to get union and intersection lists.
 
 ```
 
-**算法：**
+**算法**：
 
 1.  [使用合并排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)对两个链表进行排序。
 2.  线性扫描两个排序列表以获取并集和交集。
@@ -269,7 +269,7 @@ return 0;
 }
 ```
 
-**输出：**
+**输出**：
 
 ```
 First list is 
@@ -283,11 +283,11 @@ Union list is
 
 ```
 
-**复杂度分析：**
+**复杂度分析**：
 
-*   **时间复杂度：** O（m Log m + n Log n）。
+*   **时间复杂度**：O（m Log m + n Log n）。
     对列表进行排序所需的时间为 n log n 和 m log m，以及查找并集和交点线性时间。
-*   **辅助空间：** O（m + n）。
+*   **辅助空间**：O（m + n）。
     如果存储了输出，则需要 O（m + n）空间。
 
 在下一篇文章中，将讨论方法 3，即使用散列。

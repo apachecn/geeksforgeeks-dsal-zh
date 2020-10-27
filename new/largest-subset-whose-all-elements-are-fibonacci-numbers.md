@@ -4,7 +4,7 @@
 
 在 Facebook 问
 
-**示例：**
+**示例**：
 
 ```
 Input : arr[] = {1, 4, 3, 9, 10, 13, 7};
@@ -233,7 +233,7 @@ class GFG
 
 ```
 
-**参考：**
+**参考**：
 [https://www.careercup.com/question?id=5154130839470080](https://www.careercup.com/question?id=5154130839470080)
 
 本文由 **DANISH_RAZA** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

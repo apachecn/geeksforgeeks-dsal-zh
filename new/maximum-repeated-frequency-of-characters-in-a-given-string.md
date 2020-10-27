@@ -6,21 +6,21 @@
 
 **范例**：
 
-> **输入：** S =“ geeksgeeks”
-> **输出：**频率 2 重复 3 次
-> **说明：**
+> **输入**：S =“ geeksgeeks”
+> **输出**：频率 2 重复 3 次
+> **说明**：
 > 给定字符的频率 字符串–
 > {“ g”：2，“ e”：4，“ k”：2，“ s”：2}
 > 频率 2 对于字符“ g”，“ k”重复三次， “ s”。
 > 
-> **输入：** S =“ abcabcdedee”
-> **输出：**频率 2 重复 4 次。
-> **说明：**
+> **输入**：S =“ abcabcdedee”
+> **输出**：频率 2 重复 4 次。
+> **说明**：
 > 给定字符串中字符的频率–
 > {“ a”：2，“ b”：2，“ c”：2，“ d”：2， “ e”：3}
 > 频率 2 对于字符“ a”，“ b”，“ c”，“ d”重复四次。
 
-**有效方法：**
+**有效方法**：
 
 *   这个想法是首先将字符串的字符频率存储在大小为 26 的数组中。由于字符串的所有字符都在 26 个小写英文字母之间，因此我们可以将字符的频率存储在大小为 26 的数组中。
 *   创建一个哈希图，以存储字符的频率计数并返回出现次数最多的频率。
@@ -280,10 +280,10 @@ Frequency 2 is repeated 3 times
 
 ```
 
-**效果分析：**
+**效果分析**：
 
-*   **时间复杂度：** O（N）
-*   **辅助空间：** O（N）
+*   **时间复杂度**：O（N）
+*   **辅助空间**：O（N）
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

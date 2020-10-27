@@ -2,21 +2,21 @@
 
 给定[数组](https://www.geeksforgeeks.org/array-data-structure/)， **arr []** 的大小为 **N** ，任务是[将数组](https://www.geeksforgeeks.org/split-array-two-equal-sum-subarrays/)拆分为最大数量 [子阵列](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，这样[的第一个和最后一个出现的](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)，所有不同的数组元素都位于单个子阵列中。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {1、1、2、2}
-> **输出：** 2
-> **说明：**
+> **输入**：arr [] = {1、1、2、2}
+> **输出**：2
+> **说明**：
 > 拆分数组 分成子数组{1，1}和{2，2}。
 > 因此，所需的输出为 2。
 > 
-> **输入：** arr [] = {1、2、4、1、4、7、7、8}
-> **输出：** 3
+> **输入**：arr [] = {1、2、4、1、4、7、7、8}
+> **输出**：3
 > **说明：[**
 > 将阵列拆分为子阵列{1、2、4、1、4}，{7、7}和{8}。
 > 因此，所需的输出为 3。
 
-**方法：**的想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)存储每个数组元素最后一次出现的索引。 请按照以下步骤解决问题：
+**方法**：的想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)存储每个数组元素最后一次出现的索引。 请按照以下步骤解决问题：
 
 1.  初始化一个数组，说 **hash []** 到[存储每个数组元素](https://www.geeksforgeeks.org/print-the-last-occurrence-of-elements-in-array-in-relative-order/)的最后一次出现的索引。
 2.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并检查当前子数组的所有先前元素的最后一次出现的最大索引是否小于或等于当前索引，然后将**计数**加 1 。
@@ -267,8 +267,8 @@ public static void Main(String[] args)
 3
 ```
 
-**时间复杂度：** O（N）
-**辅助空间：** O（X）其中 X 是给定数组中的最大元素。
+**时间复杂度**：O（N）
+**辅助空间**：O（X）其中 X 是给定数组中的最大元素。
 
 
 

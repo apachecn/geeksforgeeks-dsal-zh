@@ -4,16 +4,16 @@
 给定自然数 **N** 和 **P** ，任务是找到 **P [ **N！** 。
 **范例****
 
-> **输入：** N = 4，P = 2
-> **输出：** 3
-> **说明：**
+> **输入**：N = 4，P = 2
+> **输出**：3
+> **说明**：
 > 素因数 4 的 2 的幂。 ！ = 24 是 3
-> **输入：** N = 24，P = 4
-> **输出：** 11
+> **输入**：N = 24，P = 4
+> **输出**：11
 
-**天真的方法：**这个想法是为从 **1 到 N** 的每个数字找到 **P** 的幂，并在相乘幂时将它们相加。
-**时间复杂度：** O（N * P）
-**有效方法：**
+**天真的方法**：这个想法是为从 **1 到 N** 的每个数字找到 **P** 的幂，并在相乘幂时将它们相加。
+**时间复杂度**：O（N * P）
+**有效方法**：
 求 N 中 **P 的幂！** 执行以下操作：
 
 1.  通过使用本文章[中讨论的方法，找到所有 **P** 的](https://www.geeksforgeeks.org/print-all-prime-factors-and-their-powers/)[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)及其频率。 将[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)及其频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
@@ -541,7 +541,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** O（sqrt（P）*（log <sub>P</sub> N））
+**时间复杂度**：O（sqrt（P）*（log <sub>P</sub> N））
 
 
 

@@ -8,22 +8,22 @@
 *   将非质数 **arr [i]** 更新为小于 **arr [i]** 的最接近质数。
 *   将非素数 **arr [i]** 更新为大于 **arr [i]** 的最接近素数。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {8，6，9，2，5}
-> **输出：** 2
+> **输入**：arr [] = {8，6，9，2，5}
+> **输出**：2
 > **说明**：
 > 可能 数组的重排为：{{7，5，2，5}，{7，7，2，5}，{11，5，2，5}，{1，7，2，5}}。
 > 因此，最长递增的主要子序列的长度= 2。
 > 
-> **输入：** arr [] = {27，38，43，68，83，12，69，12}
-> **输出：** 5
+> **输入**：arr [] = {27，38，43，68，83，12，69，12}
+> **输出**：5
 
-**天真的方法：**最简单的方法是将给定数组的所有元素更新为最接近的较小素数或最接近的较大素数，然后[生成给定数组的所有可能子序列](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/) 排列并按升序打印由[质数](https://www.geeksforgeeks.org/prime-numbers/)组成的最长子序列的长度。
-***时间复杂度：** O（2 <sup>N</sup> ）*
-***辅助空间：** O（N）*
+**天真的方法**：最简单的方法是将给定数组的所有元素更新为最接近的较小素数或最接近的较大素数，然后[生成给定数组的所有可能子序列](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/) 排列并按升序打印由[质数](https://www.geeksforgeeks.org/prime-numbers/)组成的最长子序列的长度。
+***时间复杂度**：O（2 <sup>N</sup> ）*
+***辅助空间**：O（N）*
 
-**高效方法：**的想法是使用[动态编程](https://www.geeksforgeeks.org/dynamic-programming/)方法来优化上述方法。 此问题是[最长增加质数子序列（LIPS）问题](https://www.geeksforgeeks.org/length-of-longest-increasing-prime-subsequence-from-a-given-array/)的基本变体。 请按照以下步骤解决问题。
+**高效方法**：的想法是使用[动态编程](https://www.geeksforgeeks.org/dynamic-programming/)方法来优化上述方法。 此问题是[最长增加质数子序列（LIPS）问题](https://www.geeksforgeeks.org/length-of-longest-increasing-prime-subsequence-from-a-given-array/)的基本变体。 请按照以下步骤解决问题。
 
 1.  初始化[二维](https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/)数组，例如 **dp [] []** ，大小为 **N * 2** ，其中 **dp [i] [0]** 通过选择小于 **i <sup>th</sup>** 索引和 **dp []的 **arr [i]** 的最接近素数来存储最长增长素数子序列的长度。 i] [1]** 通过选择大于或等于 **i <sup>th</sup>** 索引处的 arr [i]的最接近质数来存储最长递增质数子序列的长度。 下面是递归关系：
 
@@ -193,8 +193,8 @@ public class Main {
 
 ```
 
-***时间复杂度：** O（N <sup>2</sup> logN）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N <sup>2</sup> logN）*
+***辅助空间**：O（N）*
 
 
 

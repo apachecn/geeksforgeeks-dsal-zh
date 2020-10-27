@@ -34,7 +34,7 @@ Output: 7
 说明：
 ![](img/3feb5b22775e6b7b7f5c6b3c0cd8db78.png)
 
-**方法：**的想法是使用 [DFS](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/) 创建节点的高度邻接表并存储父级。 然后使用另一个 dfs 计算使用以下 dp 状态可以达到的最大特殊节点数：
+**方法**：的想法是使用 [DFS](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/) 创建节点的高度邻接表并存储父级。 然后使用另一个 dfs 计算使用以下 dp 状态可以达到的最大特殊节点数：
 
 ```
 dp[current_node][j] = max( max{ dp[child_i][j], for all children of current_node },
@@ -45,7 +45,7 @@ dp[current_node][j] = max( max{ dp[child_i][j], for all children of current_node
 
 因此， **dp [Root_Node] [Total_no_of_Jumps]** 给出了该问题的答案。
 
-**以下是上述方法的实现：**
+**以下是上述方法的实现**：
 
 ```
 // Program to demonstrate tree traversal with
@@ -162,7 +162,7 @@ return 0;
 
 ```
 
-**时间复杂度：** O（n * n * k）（最坏的情况，例如：2 层树，其根具有 n-1 个子节点）
+**时间复杂度**：O（n * n * k）（最坏的情况，例如：2 层树，其根具有 n-1 个子节点）
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

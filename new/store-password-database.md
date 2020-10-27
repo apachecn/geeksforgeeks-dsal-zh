@@ -37,7 +37,7 @@
 
 上面的方法很好地降低了黑客的速度。 但是，建议使用 *bcrypt* 和 *scrypt* 之类的算法代替 MD5 / SHA1。 Bcrypt 是基于 Blowfish 的哈希算法。 它要求您指定成本/工作系数。 工作因子使整个过程变慢，因此生成哈希表所需的时间将增加多次。
 
-**参考：**
+**参考**：
 [https://nakedsecurity.sophos.com/2013/11/20/serious-security-how-to-store-your-users- 安全密码/](https://nakedsecurity.sophos.com/2013/11/20/serious-security-how-to-store-your-users-passwords-safely/)
 
 本文由 **[Saket Kumar](https://www.facebook.com/saketkumar95)** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

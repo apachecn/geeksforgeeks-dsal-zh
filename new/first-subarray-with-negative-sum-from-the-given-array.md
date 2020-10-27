@@ -4,26 +4,26 @@
 
 给定由 **N** 个整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到第一个子数组的起始索引和结尾索引为负数。 如果不存在这样的子数组，则打印**“ -1”** 。
 
-**注意：**如果给定数组中有多个负和子数组，则第一个子数组是指起始索引最低的子数组。
+**注意**：如果给定数组中有多个负和子数组，则第一个子数组是指起始索引最低的子数组。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {3，3，-4，-2}
-> **输出：** 1 2
-> **说明：**
+> **输入**：arr [] = {3，3，-4，-2}
+> **输出**：1 2
+> **说明**：
 > 具有负和的第一个子数组是从索引 1 到索引 2，即 arr [1] + arr [2] = -1。
 > 
-> **输入：** arr [] = {1、2、3、10}。
-> **输出：** -1
-> **说明：**
+> **输入**：arr [] = {1、2、3、10}。
+> **输出**：-1
+> **说明**：
 > 不存在负和的子阵列。
 
-**朴素方法：**朴素方法是[从阵列中从左到右生成所有子阵列](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并检查这些子阵列中的任何一个是否具有负和。 如果是，则打印该子数组的开始和结束索引。
+**朴素方法**：朴素方法是[从阵列中从左到右生成所有子阵列](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并检查这些子阵列中的任何一个是否具有负和。 如果是，则打印该子数组的开始和结束索引。
 
-***时间复杂度：** O（N <sup>2</sup> ）
-**辅助空间：** O（1）*
+***时间复杂度**：O（N <sup>2</sup> ）
+**辅助空间**：O（1）*
 
-**有效方法：**的想法是使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)解决问题。 步骤如下：
+**有效方法**：的想法是使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)解决问题。 步骤如下：
 
 1.  计算数组的 **[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)** 并将其存储到 **[HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)** 中。
 2.  遍历数组，对于第 i 个<sup>索引（其中 i 的范围为 **[0，N – 1]** ），检查第 i 个<sup>索引</sup>的元素是否为 否定的。 如果是这样，则 arr [i]是必需的子数组。</sup>
@@ -162,8 +162,8 @@ int main()
 
 ```
 
-**时间复杂度：** *O（N * log N）*
-**辅助空间：** *O（N）*
+**时间复杂度**：*O（N * log N）*
+**辅助空间**：*O（N）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

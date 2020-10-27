@@ -2,21 +2,21 @@
 
 给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到最长的[子序列](https://www.geeksforgeeks.org/tag/subsequence/)的长度，该子序列仅包含不同的元素 。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {1、1、2、2、2、3、3}
-> **输出：** 3
-> **说明：**
+> **输入**：arr [] = {1、1、2、2、2、3、3}
+> **输出**：3
+> **说明**：
 > 具有不同元素的最长子序列为{1、2、3}。
-> **输入：** arr [] = {1，2，3，3，4，5，5，5}
-> **输出：** 5
+> **输入**：arr [] = {1，2，3，3，4，5，5，5}
+> **输出**：5
 
-**天真的方法：**最简单的方法是[生成数组](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/)的所有子序列，并检查它是否仅由不同的元素组成。 不断更新获得的此类子序列的最大长度。 最后，打印获得的最大长度。
+**天真的方法**：最简单的方法是[生成数组](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/)的所有子序列，并检查它是否仅由不同的元素组成。 不断更新获得的此类子序列的最大长度。 最后，打印获得的最大长度。
 
-***时间复杂度：** O（2 <sup>N</sup> ）*
-***辅助空间：** O（1）*
+***时间复杂度**：O（2 <sup>N</sup> ）*
+***辅助空间**：O（1）*
 
-**高效方法：**仅包含不同元素的最长子序列的长度将等于数组中不同元素的数量。 请按照以下步骤解决问题：
+**高效方法**：仅包含不同元素的最长子序列的长度将等于数组中不同元素的数量。 请按照以下步骤解决问题：
 
 1.  [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)继续在[哈希集](http://www.geeksforgeeks.org/hashset-in-java/)中插入遇到的元素。
 2.  由于 HashSet 仅包含唯一元素，因此在完成遍历数组后，将 HashSet 的[大小打印为所需答案。](https://www.geeksforgeeks.org/hashset-size-method-in-java/)
@@ -221,8 +221,8 @@ public static void Main(string[] args)
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（N）*
 
 
 
