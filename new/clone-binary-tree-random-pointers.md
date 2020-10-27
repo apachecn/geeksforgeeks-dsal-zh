@@ -29,7 +29,7 @@ struct node {
    cloneNode->random = map[treeNode->random] 
 ```
 
-以下是上述想法的 C ++实现。 以下实现使用来自 C ++ ST L 的 [unordered_map。请注意，映射未实现哈希表，它实际上基于自平衡二进制搜索树。](https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/)
+以下是上述想法的 C++实现。 以下实现使用来自 C++ ST L 的 [unordered_map。请注意，映射未实现哈希表，它实际上基于自平衡二进制搜索树。](https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/)
 
 ```
 // A hashmap based C++ program to clone a binary
@@ -159,7 +159,7 @@ Inorder traversal of cloned binary tree is:
 
 **3\.** 在原始树和克隆树中正确还原左指针
 
-以下是上述算法的 C ++实现。
+以下是上述算法的 C++实现。
 
 ```
 #include <iostream>
@@ -354,4 +354,3 @@ Inorder traversal of cloned binary tree is:
 
 本文由 **Anurag Singh** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

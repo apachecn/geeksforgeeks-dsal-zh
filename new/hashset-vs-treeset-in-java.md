@@ -100,12 +100,11 @@ practice
 
 4\. [LinkedHashSet](https://www.geeksforgeeks.org/linkedhashset-class-in-java-with-examples/) 是这两者之间的另一个数据结构。 它提供类似于 HashSet 的时间复杂性，并保持插入顺序（请注意，这不是排序顺序，而是元素插入的顺序）。
 
-注意读者！ 现在不要停止学习。 通过 [**Java 和 Java Collections 基础课程**](https://practice.geeksforgeeks.org/courses/Java-Collections?vC=1) 以对学生方便的价格掌握所有重要的 Java 和 Collections 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

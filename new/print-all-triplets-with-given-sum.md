@@ -37,9 +37,9 @@ If we calculate the sum of the output,
 7.  **转到步骤 2** 并递增 **j** ，对于 **j** 的每个值，运行 **k** 的内部循环。
 8.  如果 **j** 等于**倒数第二个索引** **转到步骤 1** 并递增 **i** 的值，直到**倒数第三个索引**，然后再次继续整个过程，直到 **i** 的值等于最后一个索引。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A simple C++ program to find three elements 
 // whose sum is equal to given sum 
@@ -73,9 +73,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A simple Java program 
 // to find three elements 
@@ -151,9 +151,9 @@ findTriplets(arr, n, -2)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A simple C# program 
 // to find three elements 
@@ -196,9 +196,9 @@ class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // A simple PHP program to  
@@ -256,7 +256,7 @@ findTriplets($arr, $n, -2);
 **方法：**
 散列可用于解决此问题。 HashTable 或 HashMaps 允许我们以恒定的时间复杂度执行查找或搜索操作。 如果可以发现对于每个可能的二元组，数组中已经存在一个可以使 **sum = target sum** 的元素，那么该问题将以有效的方式解决。
 
-要实现哈希，我们可以在 C ++ 中使用 [unordered_set 或在 Java](https://www.geeksforgeeks.org/unorderd_set-stl-uses/) 中使用 [HashSet。](https://www.geeksforgeeks.org/hashset-in-java/)
+要实现哈希，我们可以在 C++ 中使用 [unordered_set 或在 Java](https://www.geeksforgeeks.org/unorderd_set-stl-uses/) 中使用 [HashSet。](https://www.geeksforgeeks.org/hashset-in-java/)
 
 *   当我们修复第一个指针**（例如 a）**时，使用第二个指针**（例如 b）**遍历数组，并继续将遇到的元素存储在 **HashTable** 中。
 *   一旦我们发现等于 **HashTable** 中已经存在的剩余总和**（目标总和-（a + b））**的元素，就打印三元组。
@@ -283,9 +283,9 @@ Run a loop from i=0 to n-2
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find triplets in a given 
 // array whose sum is equal to given sum. 
@@ -321,9 +321,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find triplets in a given 
 // array whose sum is equal to given sum. 
@@ -365,7 +365,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find triplets in a given 
 # array whose Sum is equal to given sum. 
@@ -397,9 +397,9 @@ findTriplets(arr, n, Sum)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find triplets in a given 
 // array whose sum is equal to given sum. 
@@ -488,9 +488,9 @@ public class GFG {
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find triplets in a given 
 // array whose sum is given sum. 
@@ -543,9 +543,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find triplets 
 // in a given array whose sum 
@@ -612,7 +612,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find triplets in a  
 # given array whose sum is given sum. 
@@ -660,9 +660,9 @@ findTriplets(arr, n, sum);
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find triplets 
 // in a given array whose sum 
@@ -723,9 +723,9 @@ class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // PHP program to find triplets 
@@ -800,12 +800,11 @@ findTriplets($arr, $n, $sum);
 *   **辅助空间：** O（1）。
     由于不使用其他数据结构。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

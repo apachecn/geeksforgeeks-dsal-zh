@@ -19,9 +19,9 @@ Output : 5
 **方法 1（简单）**
 天真的方法是使用两个循环和检查第二个数组中不存在的元素。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ simple program to  
 // find elements which are  
@@ -60,9 +60,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java simple program to  
 // find elements which are  
@@ -140,9 +140,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# simple program to find elements 
 // which are not present in second array 
@@ -186,9 +186,9 @@ class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // PHP simple program to find  
@@ -234,9 +234,9 @@ findMissing($a, $b, $n, $m);
 **方法 2（使用哈希）**
 在此方法中，我们将第二个数组的所有元素存储在哈希表中（ [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/) ）。 逐一检查第一个数组的所有元素，并打印散列表中不存在的所有那些元素。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ efficient program to  
 // find elements which are not 
@@ -277,9 +277,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java efficient program to find elements  
 // which are not present in second array  
@@ -322,7 +322,7 @@ public class GfG{
 
 ## Python3
 
-```
+```py
 
 # Python3 efficient program to find elements  
 # which are not present in second array 
@@ -354,9 +354,9 @@ findMissing(a, b, n, m)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# efficient program to find elements  
 // which are not present in second array  
@@ -413,4 +413,3 @@ class GfG
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

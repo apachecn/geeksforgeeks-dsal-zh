@@ -20,9 +20,9 @@ All elements are not Distinct
 
 这个想法是使用哈希表（Java 中为 [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) ）来存储所有生成的子字符串。 最后，我们返回 HashSet 的大小。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count all distinct substrings in a string 
 #include<bits/stdc++.h> 
@@ -59,9 +59,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count all distinct substrings in a string 
 import java.util.HashSet; 
@@ -100,7 +100,7 @@ public class DistinctSubstring {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to count all distinct substrings in a string 
 
@@ -126,9 +126,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count all distinct 
 // substrings in a string 
@@ -178,9 +178,9 @@ class DistinctSubstring 
 
 **如何打印不同的子字符串？**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count all distinct 
 // substrings in a string 
@@ -224,9 +224,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count all distinct substrings in a string 
 import java.util.HashSet; 
@@ -271,7 +271,7 @@ public class DistinctSubstring {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to count all distinct  
 # substrings in a string 
@@ -305,9 +305,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count all distinct  
 // substrings in a string 
@@ -369,9 +369,9 @@ aaaa
 **优化：**
 我们可以进一步优化上面的代码。 substr（）函数以线性时间工作。 我们可以使用将当前字符追加到前一个子字符串来获取当前子字符串。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of the approach 
 #include <bits/stdc++.h> 
@@ -415,9 +415,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the approach 
 import java.util.*; 
@@ -468,7 +468,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation of the approach 
 
@@ -504,9 +504,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the approach 
 using System; 
@@ -561,14 +561,13 @@ public static void Main(String[] args)
 ```
 bc b abc ab aabc aa aaa c a aaab aab aaabc
 
-```
+```c
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
 
-* * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+* * *
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+
+

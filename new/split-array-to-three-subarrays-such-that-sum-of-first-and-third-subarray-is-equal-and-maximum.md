@@ -19,15 +19,15 @@
 **有效方法**如下：
 
 *   存储 N 个数字的[前缀总和和后缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)。
-*   使用 C ++中的 [unordered_map 和 Java 中的](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) [Hash-map 散列后缀总和的索引。](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)
+*   使用 C++中的 [unordered_map 和 Java 中的](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) [Hash-map 散列后缀总和的索引。](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)
 *   从数组的开头进行迭代，并检查前缀和是否存在于当前索引 i 之外的后缀数组中。
 *   如果是这样，则检查先前的最大值并相应地进行更新。
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for Split the array into three
 // subarrays such that summation of first
@@ -92,9 +92,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for Split the array into three
 // subarrays such that summation of first
@@ -165,7 +165,7 @@ class GfG {
 
 ## Python3
 
-```
+```py
 
 # Python 3 program for Split the array into three
 # subarrays such that summation of first
@@ -223,9 +223,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for Split the array into three
 // subarrays such that summation of first
@@ -325,9 +325,9 @@ class GfG {
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for Split the array into three
 // subarrays such that summation of first
@@ -412,12 +412,11 @@ int main()
 **时间复杂度：** O（n）
 **辅助空间：** O（1）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

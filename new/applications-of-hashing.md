@@ -27,7 +27,7 @@
 当您使用任何需要用户登录的在线网站时，请输入电子邮件和密码以验证您尝试使用的帐户属于您。 输入密码后，将计算出密码的哈希值，然后将其发送到服务器以验证密码。 存储在服务器上的密码实际上是原始密码的计算得出的哈希值。 这样做是为了确保当密码从客户端发送到服务器时，不会出现嗅探。
 
 **数据结构（编程语言）：**
-各种编程语言都有基于哈希表的数据结构。 基本思想是创建一个键值对，其中键应该是唯一值，而不同键的值可以相同。 在 C ++中的 unordered_set & unordered_map，Java 中的 HashSet & HashMap，Python 中的 dict 等中可以看到此实现。
+各种编程语言都有基于哈希表的数据结构。 基本思想是创建一个键值对，其中键应该是唯一值，而不同键的值可以相同。 在 C++中的 unordered_set & unordered_map，Java 中的 HashSet & HashMap，Python 中的 dict 等中可以看到此实现。
 
 **编译器操作：**
 编程语言的关键字与其他标识符的处理方式不同。 为了区分编程语言的关键字（如果是，用于返回等）和其他标识符并成功地编译程序，编译器将所有这些关键字存储在使用哈希表实现的集合中。
@@ -41,12 +41,11 @@
 **相关文章：**
  [哈希 vs BST](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/) [哈希 vs Trie](https://www.geeksforgeeks.org/advantages-trie-data-structure/)
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

@@ -21,9 +21,9 @@ exactly equal to 33.
 **天真的解决方案–**
 一个简单的解决方案是遍历所有子数组并计算其总和。 如果总和等于所需总和，则增加子数组的数量。 打印子数组的最终计数。 天真的解决方案的 Java 实现-
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for
 // the above approach
@@ -58,9 +58,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 import java.util.*;
 class Solution {
@@ -103,9 +103,9 @@ class Solution {
 **高效解决方案–**
 高效解决方案是遍历数组时，以求和方式存储到目前为止的总和。 另外，请在地图中维护不同的求和值计数。 如果在任何情况下，currsum 的值等于所需的总和，则子数组的个数增加 1。 currsum 的值超过 currsum – sum 的期望总和。 如果从并购中删除此值，则可以获得所需的总和。 从图中找到先前发现的总和等于 currsum-sum 的子数组的数量。 从当前子阵列中排除所有这些子阵列，将得到具有所需总和的新子阵列。 因此，通过此类子数组的数量增加计数。 请注意，当 currsum 等于所需的总和时，还应检查先前总和等于 0 的子数组的数量。从当前子数组中排除这些子数组会得到具有所需总和的新子数组。 在这种情况下，将计数增加总和为 0 的子数组的数量。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find number of subarrays
 // with sum exactly equal to k.
@@ -164,9 +164,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find number of subarrays
 // with sum exactly equal to k.
@@ -236,7 +236,7 @@ public class GfG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find the number of 
 # subarrays with sum exactly equal to k. 
@@ -292,9 +292,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find number of subarrays
 // with sum exactly equal to k.
@@ -374,12 +374,11 @@ class GFG {
 **时间复杂度：** O（nlogn）
 **辅助空间：** O（n）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

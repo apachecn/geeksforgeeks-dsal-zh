@@ -17,9 +17,9 @@
 
 这个想法是将哈希与频率索引一起使用。 我们首先将计数存储在哈希中。 然后，我们遍历哈希并使用频率作为索引来存储具有给定频率的元素。 此处的重要因素是最大频率可以为 n。 因此，大小为 n + 1 的数组会很好。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find k numbers with most
 // occurrences in the given array
@@ -72,9 +72,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find k elements with max occurence.
 import java.util.*;
@@ -127,9 +127,9 @@ public class KFrequentNumbers {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find 
 // k elements with max occurence.
@@ -222,9 +222,9 @@ public static void Main(String[] args)
 
 **根据第一种出现方式进行打印。** 为了保持所需的顺序，我们遍历了原始数组而不是地图。 为避免重复，我们需要在映射中将已处理条目标记为-1。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find k numbers with most
 // occurrences in the given array
@@ -282,9 +282,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find k elements with max occurence.
 import java.util.*;
@@ -342,9 +342,9 @@ public class KFrequentNumbers {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find k elements
 // with max occurence.
@@ -438,12 +438,11 @@ public static void Main(String[] args)
 **时间复杂度：** O（n）
 **辅助空间：** O（n）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

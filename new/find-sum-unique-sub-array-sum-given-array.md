@@ -20,9 +20,9 @@
 4-将所有重复的子数组总和标记为零。
 5-计算并返回 totalSum。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ for finding sum of all unique
 // subarray sum
@@ -88,9 +88,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java for finding sum of all unique
 // subarray sum
@@ -164,7 +164,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 for finding sum of all 
 # unique subarray sum
@@ -219,9 +219,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# for finding sum of all unique
 // subarray sum
@@ -304,9 +304,9 @@ public static void Main(String[] args)
 
 **方法 2（基于哈希）**的想法是制作一个空的哈希表。 我们生成所有子数组。 对于每个子数组，我们计算其总和以及哈希表中总和的增量计数。 最后，我们将所有计数为 1 的总和相加。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ for finding sum of all unique subarray sum
 #include <bits/stdc++.h>
@@ -348,9 +348,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java for finding sum of all
 // unique subarray sum
@@ -411,7 +411,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 for finding sum of all
 # unique subarray sum
@@ -447,9 +447,9 @@ print(findSubarraySum(arr, n))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# for finding sum of all
 // unique subarray sum
@@ -515,12 +515,11 @@ public static void Main(String[] args)
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

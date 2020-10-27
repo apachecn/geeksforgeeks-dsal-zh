@@ -21,7 +21,7 @@
 让我们将一个简单的哈希函数视为“ **key mod 7** ”，并将密钥序列设为 50、700、76、85、92、73、101。
 [![hashChaining](img/87b2f4b25bdb1c562607a6c32a013a07.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2015/07/hashChaining1.png)
 
-**[C ++程序，用于通过链接进行哈希](https://www.geeksforgeeks.org/c-program-hashing-chaining/)**
+**[C++程序，用于通过链接进行哈希](https://www.geeksforgeeks.org/c-program-hashing-chaining/)**
 
 **优点：**
 1）实现简单。
@@ -63,4 +63,3 @@ Time to insert = O(1)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

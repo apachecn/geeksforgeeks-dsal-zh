@@ -11,7 +11,7 @@ In above diagram, we can see that there
 must be at least 3 points to get above 
 path, which are denoted by A, B and C
 
-```
+```c
 
 我们可以通过观察停靠点的运动方式来解决此问题。 如果我们想从一个点到另一个点采用最短的路径，那么我们将在一个或最大两个方向上移动，即始终可以沿着最大两个方向到达另一个点，如果使用了两个以上的方向，则该路径 不会是最短的，例如，路径 LLURD 只能用 LLL 代替，因此要找到路径中的最小停靠点，我们将遍历路径的字符并维护到目前为止的方向图。 如果在任何索引处我们同时找到了“ L”和“ R”，或者同时找到了“ U”和“ D”，那么当前索引必须有一个止损，因此我们将止损计数增加一个，然后我们 会清除下一段的地图。
 
@@ -77,4 +77,3 @@ return 0;
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

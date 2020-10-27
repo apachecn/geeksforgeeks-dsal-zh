@@ -26,9 +26,9 @@ Output : 1
     4.  检查哈希表中是否存在**（sum-1）**。 如果存在，则从哈希表中获取**（sum-1）**的索引作为**索引**。 现在检查 maxLen 是否小于（i-index），然后更新 **maxLen** =（i-index）。
 5.  返回 maxLen。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the length of 
 // longest subarray having count of 1's one 
@@ -87,9 +87,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the length of 
 // longest subarray having count of 1's one 
@@ -158,7 +158,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python 3 implementation to find the length of 
 # longest subarray having count of 1's one 
@@ -214,9 +214,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the length of 
 // longest subarray having count of 1's one 
@@ -298,4 +298,3 @@ Length = 5
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

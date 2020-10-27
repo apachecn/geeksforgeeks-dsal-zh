@@ -29,9 +29,9 @@ achieved by the following quadruple {1, 2, 3, 4} as a<sub>1</sub>a<sub>2</sub>a<
 假定最大元素是频率为 F <sub>X</sub> 的 X，则如果该元素的频率为> = 4，则最适合选择四个元素 X，X，X 作为 给定最大乘积，并且实现方法的数量为 <sup>F</sup> <sub><sup>X</sup></sub> C <sub>4</sub>
 ，如果频率为 小于 4 时，选择它的方式数为 1，现在所需的元素数为 4 – F <sub>X</sub> 。 对于第二个元素，说 Y，方法的数量为： <sup>F</sup> <sub><sup>X</sup></sub> C <sub>剩余的选择</sub>。 剩余的选择表示选择第一个元素后需要选择的其他元素的数量。 如果在任何时候剩余的选择= 0，则表示选择了四倍，因此我们可以停止算法。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find the number of Quadruples
 // having maximum product
@@ -112,9 +112,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the number of Quadruples
 // having maximum product
@@ -201,7 +201,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find 
 # the number of Quadruples
@@ -303,6 +303,5 @@ if __name__ == "__main__":
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

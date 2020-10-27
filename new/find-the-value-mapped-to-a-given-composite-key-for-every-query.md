@@ -18,7 +18,7 @@
 > 组合键位于 firstkey [2]（= 3）和 secondkey [2]（= 3）上。
 > 因此，相应的值为 value [2] = 6
 
-**方法：**的想法是使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，其中映射的键是 C ++中两个整数的[对，它们是 python](https://www.geeksforgeeks.org/pair-in-cpp-stl/) 中的两个整数。 表示 **firstkey []** 和 **secondkey []** 的各个元素，它们映射到相应的 **value []** 元素。 这使我们能够在 **O（1）**时间内回答每个查询。
+**方法：**的想法是使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，其中映射的键是 C++中两个整数的[对，它们是 python](https://www.geeksforgeeks.org/pair-in-cpp-stl/) 中的两个整数。 表示 **firstkey []** 和 **secondkey []** 的各个元素，它们映射到相应的 **value []** 元素。 这使我们能够在 **O（1）**时间内回答每个查询。
 **例如：**
 
 ```
@@ -34,9 +34,9 @@ formed is {(4, 7): 5, (4, 1): 3, (5, 3): 8}
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the 
 // value of the given composite keys 
@@ -98,9 +98,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the 
 // value of the given composite keys 
@@ -217,6 +217,5 @@ Not Found
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

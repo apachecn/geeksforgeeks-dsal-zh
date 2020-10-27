@@ -23,9 +23,9 @@ Output : for
 2.  在地图上找到第二个最大值。
 3.  再次遍历该映射，并返回出现值等于第二个最大值的单词。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find out the second 
 // most repeated word 
@@ -72,9 +72,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find out the second 
 // most repeated word 
@@ -143,9 +143,9 @@ class GFG 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find out the second 
 // most repeated word 
@@ -217,7 +217,7 @@ class GFG 
 ```
 ccc
 
-```
+```c
 
 **参考：**
 [https://www.careercup.com/question?id=5748104113422336](https://www.careercup.com/question?id=5748104113422336)
@@ -226,4 +226,3 @@ ccc
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

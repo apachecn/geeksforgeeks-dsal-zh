@@ -19,9 +19,9 @@ Output : 0
 
 **天真的方法**是将每个三元组一一考虑，并计算它们的乘积是否等于 m。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count triplets with given
 // product m
@@ -58,9 +58,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count triplets with given
 // product m
@@ -96,7 +96,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to count 
 # triplets with given product m
@@ -127,9 +127,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count triplets 
 // with given product m
@@ -167,9 +167,9 @@ public class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php
 // PHP program to count triplets
@@ -220,9 +220,9 @@ function countTriplets($arr, $n, $m)
     *   如果满足以上所有条件，则增加计数。
 3.  返回计数。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count triplets with given
 // product m
@@ -280,9 +280,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count triplets with given
 // product m
@@ -342,7 +342,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program for the above approach
 
@@ -388,9 +388,9 @@ countTriplets(li,product)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the above 
 // approach 
@@ -477,4 +477,3 @@ static void Main()
 本文由 [**Sahil Chhabra**](https://www.facebook.com/sahil.chhabra.965) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，您还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 如果发现任何不正确的内容，或者想共享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

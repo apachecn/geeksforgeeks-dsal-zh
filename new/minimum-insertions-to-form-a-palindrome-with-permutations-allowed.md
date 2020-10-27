@@ -24,9 +24,9 @@ bacab
 
 这个想法是计算字符串中每个字符的出现。 由于回文串可以有一个出现奇数次的字符，因此插入数将比出现奇数次的字符数少一个。 如果字符串已经是回文，我们不需要添加任何字符，因此结果将为 0。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find minimum number 
 // of insertions to make a string 
@@ -77,9 +77,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find minimum number 
 // of insertions to make a string 
@@ -131,7 +131,7 @@ public class Palindrome {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find minimum number 
 # of insertions to make a string 
@@ -181,9 +181,9 @@ print(minInsertion(str1))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find minimum number 
 // of insertions to make a string 
@@ -240,9 +240,9 @@ public class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // PHP program to find minimum number 
@@ -304,4 +304,3 @@ echo(minInsertion($str));
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

@@ -25,11 +25,11 @@ form of a list.
 ```
 
 这个想法是使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)。 我们在哈希中存储子树的[有序遍历](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)。 由于简单的有序遍历无法唯一地识别树，因此我们使用“（”和“）”之类的符号来表示 NULL 节点。
-我们将 C ++ 中的[无序映射作为辅助函数的参数传递，该函数以递归方式计算有序字符串并增加其在 map 中的计数。 如果任何字符串被重复，那么它将暗示以该节点为根的子树的重复，因此将该节点推入最终结果并返回这些节点的向量。](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)
+我们将 C++ 中的[无序映射作为辅助函数的参数传递，该函数以递归方式计算有序字符串并增加其在 map 中的计数。 如果任何字符串被重复，那么它将暗示以该节点为根的子树的重复，因此将该节点推入最终结果并返回这些节点的向量。](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find averages of all levels 
 // in a binary tree. 
@@ -102,9 +102,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A java program to find all duplicate subtrees  
 // in a binary tree. 
@@ -177,7 +177,7 @@ public class Duplicate_subtress {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find averages of  
 # all levels in a binary tree.  
@@ -236,9 +236,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to find all duplicate subtrees  
 // in a binary tree. 
@@ -326,8 +326,7 @@ class GFG 
 
 ```
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

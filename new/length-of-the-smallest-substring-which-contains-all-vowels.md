@@ -23,9 +23,9 @@
 
 以下代码是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to find the
 // length of the smallest
@@ -129,9 +129,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the length of 
 // the smallest substring of which
@@ -255,7 +255,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find the 
 # length of the smallest 
@@ -350,9 +350,9 @@ print(findMinLength(s))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find the length of 
 // the smallest substring of which
@@ -493,9 +493,9 @@ public static void Main(String[] args)
 
 以下代码实现了上述方法：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to find the
 // length of the smallest
@@ -595,9 +595,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the length 
 // of the smallest subString of 
@@ -698,7 +698,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 Program to find the
 # length of the smallest
@@ -785,9 +785,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find the length 
 // of the smallest subString of 
@@ -900,6 +900,5 @@ public static void Main(String[] args)
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

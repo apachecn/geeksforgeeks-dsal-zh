@@ -16,9 +16,9 @@ Output : 0 1
 
 **简单解决方案**是使用两个嵌套循环。 外循环用于选择起点，内循环用于选择终点。 对于每对起点到起点，我们都会计算其中的不同元素，如果当前窗口较小，则会更新结果。 我们使用散列来计算范围内的不同元素。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find minimum range that
 // contains exactly k distinct numbers.
@@ -78,9 +78,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find minimum 
 // range that contains exactly 
@@ -212,9 +212,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C#  program to find minimum  
 // range that contains exactly  
@@ -304,9 +304,9 @@ public static void Main(string[] args)
 **时间复杂度：** O（n <sup>2</sup> ）
 **通过上述简单解决方案的优化**。 我们的想法是在找到 k 个不同的元素后删除左侧的重复项。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find minimum range that
 // contains exactly k distinct numbers.
@@ -395,9 +395,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find minimum range that
 // contains exactly k distinct numbers.
@@ -501,7 +501,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find the minimum range 
 # that contains exactly k distinct numbers. 
@@ -583,9 +583,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find minimum 
 // range that contains exactly 
@@ -709,4 +709,3 @@ public static void Main(String[] args)
 本文由 [**Pawan Asipu**](https://www.facebook.com/pawan.asipu.5) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

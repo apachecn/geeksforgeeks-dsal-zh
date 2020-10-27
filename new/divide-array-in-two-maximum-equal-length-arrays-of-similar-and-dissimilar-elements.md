@@ -28,9 +28,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the max-size to which 
 // an array can be divided into 2 equal parts 
@@ -110,9 +110,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the  
 // max-size to which an array  
@@ -217,7 +217,7 @@ class GFG{
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find the max-size to which 
 # an array can be divided into 2 equal parts 
@@ -290,9 +290,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find the max-size  
 // to which an array can be divided 
@@ -412,4 +412,3 @@ The Second Array Is :
 
 **时间复杂度：** O（N）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

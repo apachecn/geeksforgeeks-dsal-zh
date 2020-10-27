@@ -49,9 +49,9 @@ Bombay->Delhi, Delhi->Goa, Goa->Chennai, Chennai->Banglore,
 
 以下是上述想法的 Java 实现。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print itinerary in order 
 import java.util.HashMap; 
@@ -114,9 +114,9 @@ public class printItinerary
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -185,4 +185,3 @@ Bombay->Delhi, Delhi->Goa, Goa->Chennai, Chennai->Banglore,
 
 本文由 **Rahul Jain** 编译。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

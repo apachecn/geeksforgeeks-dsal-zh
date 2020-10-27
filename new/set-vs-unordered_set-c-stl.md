@@ -1,8 +1,8 @@
-# C ++ STL 中的
+# C++ STL 中的
 
 # set vs unordered_set
 
-先决条件：在 C ++中设置 [](https://www.geeksforgeeks.org/set-in-cpp-stl/) ，在 C ++中设置 [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
+先决条件：在 C++中设置 [](https://www.geeksforgeeks.org/set-in-cpp-stl/) ，在 C++中设置 [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
 
 **差异：**
 
@@ -50,7 +50,7 @@ Output : 9 3 1 8 2 5
 
 ```
 
-如果要查看 c ++ STL 中 set 和 unordered_set 的实现细节，请参见 [Set Vs Map](https://www.geeksforgeeks.org/set-vs-map-c-stl/) 。 Set 允许按排序顺序遍历元素，而 Unordered_set 不允许按排序顺序遍历元素。
+如果要查看 C++ STL 中 set 和 unordered_set 的实现细节，请参见 [Set Vs Map](https://www.geeksforgeeks.org/set-vs-map-c-stl/) 。 Set 允许按排序顺序遍历元素，而 Unordered_set 不允许按排序顺序遍历元素。
 
 ```
 // Program to print elements of set
@@ -183,12 +183,11 @@ No successor
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

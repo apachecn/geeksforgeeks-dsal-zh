@@ -39,9 +39,9 @@ which contains element from all the three arrays.
         3.  递增指向当前最小元素的指针。
 *   **Implementation:**
 
-    ## C ++
+    ## C++
 
-    ```
+    ```cpp
 
     // C++ program to finds out smallest range that includes 
     // elements from each of the given sorted lists. 
@@ -128,9 +128,9 @@ which contains element from all the three arrays.
 
     ```
 
-    ## 爪哇
+    ## Java
 
-    ```
+    ```java
 
     // Java program to finds out smallest range that includes 
     // elements from each of the given sorted lists. 
@@ -306,9 +306,9 @@ which contains element from all the three arrays.
 
     ```
 
-    ## C＃
+    ## C#
 
-    ```
+    ```cs
 
     // C# program to finds out smallest 
     // range that includes elements from 
@@ -432,9 +432,9 @@ which contains element from all the three arrays.
         3.  从优先级队列中删除 top 或 root 元素，然后从列表中插入包含 min 元素的下一个元素，并使用插入的新元素更新 max。
 *   **实现：**
 
-    ## C ++
+    ## C++
 
-    ```
+    ```cpp
 
     // C++ program to finds out smallest range that includes 
     // elements from each of the given sorted lists. 
@@ -612,9 +612,9 @@ which contains element from all the three arrays.
 
     ```
 
-    ## 爪哇
+    ## Java
 
-    ```
+    ```java
 
     // Java program to find out smallest 
     // range that includes elements from 
@@ -798,9 +798,9 @@ which contains element from all the three arrays.
 
     ```
 
-    ## C＃
+    ## C#
 
-    ```
+    ```cs
 
     // C# program to find out smallest 
     // range that includes elements from 
@@ -1005,4 +1005,3 @@ which contains element from all the three arrays.
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

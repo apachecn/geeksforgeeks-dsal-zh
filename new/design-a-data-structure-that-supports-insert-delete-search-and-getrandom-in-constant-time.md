@@ -35,9 +35,9 @@ getRandom（）：从当前元素集中返回一个随机元素
 
 下面是数据结构的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ program to design a DS that supports folloiwng operations 
 in Theta(n) time 
@@ -136,9 +136,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Java program to design a data structure that support folloiwng operations 
    in Theta(n) time 
@@ -245,7 +245,7 @@ class Main
 
 ## Python3
 
-```
+```py
 
 ''' 
 Python program to design a DS that  
@@ -361,4 +361,3 @@ if __name__=="__main__":
 
 本文由 **Manish Gupta** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

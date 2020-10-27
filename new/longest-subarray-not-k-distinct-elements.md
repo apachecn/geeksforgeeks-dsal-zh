@@ -24,9 +24,9 @@ distinct elements.
 
 **有效方法**使用*两个指针*的概念，其中我们维护一个散列来计数元素的出现。 我们从头开始，一直计数不同的元素，直到数量超过 k。 一旦它超过 K，我们就开始从子数组开始的地方开始减少哈希中元素的数量，并随着子数组的减少而减少我们的长度，从而指针向右移动。 我们不断删除元素，直到再次获得 k 个不同的元素。 我们继续这个过程，直到我们再次拥有超过 k 个不同的元素，并在此之前保持左指针不变。 如果新的子数组长度大于前一个子数组的长度，我们将根据其更新开始和结束。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find longest subarray with 
 // k or less distinct elements. 
@@ -92,9 +92,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find longest subarray with 
 // k or less distinct elements. 
@@ -239,9 +239,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find longest subarray with 
 // k or less distinct elements. 
@@ -329,4 +329,3 @@ public static void Main(String []args)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

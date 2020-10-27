@@ -46,9 +46,9 @@ No valid pair exists.
     3.  其他 r–</r> 
 5.  整个数组中没有候选者-返回 0
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check if given array
 // has 2 elements whose sum is equal
@@ -104,7 +104,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C program to check if given array
 // has 2 elements whose sum is equal
@@ -197,9 +197,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check if given array
 // has 2 elements whose sum is equal
@@ -316,9 +316,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to check for pair
 // in A[] with sum as x
@@ -424,9 +424,9 @@ class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php
 // PHP program to check if given 
@@ -524,9 +524,9 @@ for(i=0 to end)
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check if given array
 // has 2 elements whose sum is equal
@@ -570,7 +570,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C++ program to check if given array
 // has 2 elements whose sum is equal
@@ -613,9 +613,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation using Hashing
 import java.io.*;
@@ -683,9 +683,9 @@ printPairs(A, len(A), n)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation using Hashing
 using System;
@@ -906,4 +906,3 @@ Yes
 
 如果您发现以上任何代码/算法不正确，或者找到其他解决相同问题的方法，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

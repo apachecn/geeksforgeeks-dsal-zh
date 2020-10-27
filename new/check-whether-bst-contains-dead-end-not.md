@@ -32,7 +32,7 @@ Explanation : We can't insert any element at
 
 为了实现上述想法，我们首先遍历整个 BST 并将所有节点存储在 hash_map 中。 我们还将所有叶子存储在单独的哈希中，以避免重新遍历 BST。 最后，我们检查每个叶节点 x，是否在 hash_map 中存在 x-1 和 x + 1。
 
-下面是上述思想的 C ++实现。
+下面是上述思想的 C++实现。
 
 ```
 // C++ program check weather BST contains
@@ -161,4 +161,3 @@ Yes
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

@@ -58,9 +58,9 @@ Output : [2, 2, 2, -1, -1, -1, -1, 3, -1, -1]
 
 下面是上述问题的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program of Next Greater Frequency Element
 #include <iostream>
@@ -147,9 +147,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program of Next Greater Frequency Element
 import java.util.*;
@@ -244,7 +244,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 '''NFG function to find the next greater frequency
    element for each element in the array'''
@@ -321,9 +321,9 @@ print(NFG([1, 1, 2, 3, 4, 2, 1], 7))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program of Next Greater Frequency Element
 using System;
@@ -432,4 +432,3 @@ class GFG {
 本文由 **Sruti Rai** 提供。 感谢 [Koustav](https://www.facebook.com/ironDEvil) 的宝贵支持。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

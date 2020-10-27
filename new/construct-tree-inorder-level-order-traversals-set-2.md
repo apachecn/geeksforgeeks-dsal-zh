@@ -21,11 +21,11 @@ Output: Construct the tree represented
 我们在下面的文章中讨论了一种可用于 O（N ^ 3）
 [的解决方案。 设置 1](https://www.geeksforgeeks.org/construct-tree-inorder-level-order-traversals/)
 
-**方法：**以下算法使用 O（N ^ 2）时间复杂度来解决上述问题，它使用 c ++中的 [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/) 数据结构（基本上是创建哈希表）来放入 当前根的左子树以及以后的子树，我们将检查 O（1）的复杂度，以确定当前的 levelOrder 节点是否是左子树的一部分。
+**方法：**以下算法使用 O（N ^ 2）时间复杂度来解决上述问题，它使用 C++中的 [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/) 数据结构（基本上是创建哈希表）来放入 当前根的左子树以及以后的子树，我们将检查 O（1）的复杂度，以确定当前的 levelOrder 节点是否是左子树的一部分。
 
 如果它是左侧子树的一部分，则为左侧添加一个 lLevel 数组，否则将其添加到右侧子树的 rLevel 数组中。
 
-以下是具有上述想法的 c ++实现
+以下是具有上述想法的 C++实现
 
 ```
 /* program to construct tree using inorder
@@ -125,12 +125,11 @@ constructed tree is 4 8 10 12 14
 
 时间复杂度：O（N ^ 2）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

@@ -17,9 +17,9 @@ We can delete any four elements from array.
 
 在这个问题上，我们需要最小化删除操作。 该方法很简单，我们计算数组中每个元素的频率，然后在**计数数组**中找到最频繁的元素的频率。 将此频率设为 max_freq。 要获取要从数组中删除的最小元素数，请计算 **n – max_freq** ，其中 n 是给定数组中的元素数。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find minimum
 // number of deletes required
@@ -59,9 +59,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find minimum number
 // of deletes required to make all
@@ -113,7 +113,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find minimum 
 # number of deletes required to 
@@ -157,9 +157,9 @@ print(minDelete(arr, n));
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find minimum number
 // of deletes required to make all
@@ -228,4 +228,3 @@ class GFG {
 本文由 [**Shashank Mishra（Gullu）**](https://www.facebook.com/shashank.mishra.92167) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

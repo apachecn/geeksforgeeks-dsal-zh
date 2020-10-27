@@ -53,9 +53,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the Nth 
 // smallest character in a given range 
@@ -148,9 +148,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // JAVA implementation to find the Nth 
 // smallest character for a given range 
@@ -261,7 +261,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to find the Nth 
 # smallest character in a given range 
@@ -340,9 +340,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the Nth 
 // smallest character for a given range 
@@ -465,12 +465,11 @@ e
 *   对于上述方法，尽管预处理由两个循环组成，但第二个循环运行了固定次数（26）。 因此，预处理花费的时间为 **O（N）**。
 *   预处理之后，对于每个查询，字符都会以恒定的时间返回，因为这里 for 循环再次运行固定的次数（26）。 因此，回答每个查询所花费的时间为 **O（1）**。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

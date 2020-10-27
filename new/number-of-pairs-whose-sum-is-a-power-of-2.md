@@ -19,9 +19,9 @@
 
 **有效方法：**是从数组中找出最大元素，例如 **X** ，然后从其余数组元素 **Y** 中找到最大元素，使得 **Y≤X** 和 **X + Y** 是 2 的**次幂。 这是对的最佳选择，因为即使 **Y** 与其他某些元素（例如 **Z** ）形成有效对，然后 **Z** 也会与其他元素配对 **Y** （如果可能的话）来最大化有效对的数量。**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of above approach 
 #include <bits/stdc++.h> 
@@ -85,9 +85,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of above approach 
 import java.util.TreeMap; 
@@ -155,7 +155,7 @@ class Count
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation of above approach  
 
@@ -216,9 +216,9 @@ if __name__ == "__main__" : 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of above approach 
 using System; 
@@ -308,12 +308,11 @@ cur <<= 1;
 
 优化上述表达式后，该解决方案的时间复杂度变为 O（n Log n）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

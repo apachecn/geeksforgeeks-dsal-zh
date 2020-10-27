@@ -18,7 +18,7 @@
 3.  遍历数组，并为每个数组元素添加当前元素，以更新 **prefixSum** 。 现在，检查**集**中是否已经存在 **prefixSum – K** 值。 如果确定为真，则将 **res** 递增，清除**设置**，然后重置 **prefixSum** 的值。
 4.  重复上述步骤，直到遍历整个数组。 最后，打印 **res 的值。**
 
-## C ++ 14
+## C++ 14
 
 ```
 
@@ -82,9 +82,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to implement 
 // the above approach 
@@ -151,7 +151,7 @@ class GFG{
 
 ## Python3
 
-```
+```py
 
 # Python3 program to implement 
 # the above approach 
@@ -208,9 +208,9 @@ print(CtSubarr(arr, N, K))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to implement 
 // the above approach 
@@ -291,12 +291,11 @@ public static void Main(String[] args)
 ***时间复杂度：** O（N）*
 ***辅助空间：** O（N）*
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

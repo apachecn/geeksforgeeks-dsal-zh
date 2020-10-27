@@ -24,9 +24,9 @@ Output : 5
 
 **方法 1（朴素方法）：**使用两个循环从两个数组中选取元素，并检查该对的总和是否等于 **x** 。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to count  
 // pairs from both sorted arrays  
@@ -73,9 +73,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count pairs from 
 // both sorted arrays whose sum is equal 
@@ -128,7 +128,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # python implementation to count 
 # pairs from both sorted arrays  
@@ -167,9 +167,9 @@ print("Count = ", 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count pairs from 
 // both sorted arrays whose sum is equal 
@@ -220,9 +220,9 @@ class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // PHP implementation to count 
@@ -280,9 +280,9 @@ Count = 2
 
 **方法 2（二进制搜索）：**对于每个元素 **arr1 [i]** ，其中 **1 < = i < = m** ，搜索值[ **arr2 []** 中的**（x – arr1 [i]）**。 如果搜索成功，则增加**计数**。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to count  
 // pairs from both sorted arrays  
@@ -354,9 +354,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count  
 // pairs from both sorted arrays  
@@ -495,9 +495,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count pairs from both  
 // sorted arrays whose sum is equal to a given 
@@ -572,9 +572,9 @@ class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // PHP implementation to count  
@@ -656,11 +656,11 @@ Count = 2
 **时间复杂度：** O（mlogn），应在更大大小的数组上进行搜索，以减少时间复杂度。
 **辅助空间：** O（1）
 
-**方法 3（哈希）：**哈希表是使用 C ++ 中的 [unordered_set 实现的。 我们将所有第一个数组元素存储在哈希表中。 对于第二个数组的元素，我们从 **x** 中减去每个元素，然后在哈希表中检查结果。 如果结果存在，我们将增加**计数**。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
+**方法 3（哈希）：**哈希表是使用 C++ 中的 [unordered_set 实现的。 我们将所有第一个数组元素存储在哈希表中。 对于第二个数组的元素，我们从 **x** 中减去每个元素，然后在哈希表中检查结果。 如果结果存在，我们将增加**计数**。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to count  
 // pairs from both sorted arrays  
@@ -712,9 +712,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 import java.util.*; 
 // Java implementation to count  
@@ -772,7 +772,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to count  
 # pairs from both sorted arrays  
@@ -814,9 +814,9 @@ print("Count =", 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count  
 // pairs from both sorted arrays  
@@ -906,9 +906,9 @@ countPairs(arr1, arr2, m, n, x)
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to count  
 // pairs from both sorted arrays  
@@ -972,9 +972,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count  
 // pairs from both sorted arrays  
@@ -1044,7 +1044,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python 3 implementation to count 
 # pairs from both sorted arrays 
@@ -1101,9 +1101,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count  
 // pairs from both sorted arrays  
@@ -1171,9 +1171,9 @@ class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // PHP implementation to count  
@@ -1249,4 +1249,3 @@ Count = 2
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

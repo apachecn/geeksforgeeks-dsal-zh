@@ -11,7 +11,7 @@ Output : a -1 b b
 Input  : a a c
 Output : a -1 c
 
-```
+```c
 
 我们已经在[先前的文章](https://www.geeksforgeeks.org/find-first-non-repeating-character-stream-characters/)中讨论了基于双链表的方法。
 
@@ -27,9 +27,9 @@ Output : a -1 c
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for a Queue based approach  
 // to find first non-repeating character 
@@ -79,9 +79,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program for a Queue based approach  
 // to find first non-repeating character 
@@ -141,7 +141,7 @@ public class NonReapatingCQueue {
 
 ## Python3
 
-```
+```py
 
 # Python3 program for a Queue based approach  
 # to find first non-repeating character  
@@ -187,9 +187,9 @@ firstnonrepeating(Str)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 using System; 
 using System.Collections.Generic; 
@@ -269,4 +269,3 @@ a -1 b b
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

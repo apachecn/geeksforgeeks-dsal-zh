@@ -34,9 +34,9 @@ of 8(index 5) are 10.
 
 下面是上述方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -157,9 +157,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print number of NGEs to the right
 import java.util.*;
@@ -291,9 +291,9 @@ public static void main(String args[])
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print number of 
 // NGEs to the right
@@ -440,9 +440,9 @@ public static void Main(String []args)
 **辅助空间：** O（n）
 **替代性更短实现**
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -520,4 +520,3 @@ int main()
 本文由 [**Raja Vikramaditya**](https://www.facebook.com/raja.vikramaditya.7) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

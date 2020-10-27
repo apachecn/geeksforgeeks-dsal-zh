@@ -16,9 +16,9 @@ q[0] appears two times in arr[], q1[] appears
 
 这个想法很简单，对于每个查询字符串，我们都将其与数组中给出的所有字符串进行比较。 如果查询字符串匹配，我们将增加计数。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find number of times a 
 // string appears in an array.
@@ -65,9 +65,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find number of times a string
 // appears in an array.
@@ -107,7 +107,7 @@ class SubString
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find number of 
 # times a string appears in an array.
@@ -141,9 +141,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find number of 
 // times a string appears in an array.
@@ -185,9 +185,9 @@ class SubString
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php
 # Php program to find number of 
@@ -350,4 +350,3 @@ int main()
 本文由 **Pranav** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，您还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 如果发现任何不正确的内容，或者想共享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

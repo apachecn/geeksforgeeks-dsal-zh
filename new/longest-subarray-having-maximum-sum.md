@@ -23,9 +23,9 @@ The subarray is {4, -1, -2, 1, 5}
 1.  找到[最大和连续子数组](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)。 令该和为 **maxSum** 。
 2.  找到总和等于 **maxSum** 的最长子数组的长度。 请参阅此帖子的[。](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the length of the longest 
 // subarray having maximum sum 
@@ -104,9 +104,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find 
 // the length of the longest  
@@ -205,7 +205,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to find the length  
 # of the longest subarray having maximum sum 
@@ -275,9 +275,9 @@ print("Length of longest subarray having maximum sum = ", 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find  
 // the length of the longest  
@@ -383,12 +383,11 @@ Length of longest subarray having maximum sum = 4
 **时间复杂度：** O（n）。
 **辅助空间：** O（n）。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

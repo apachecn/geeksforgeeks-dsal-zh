@@ -34,9 +34,9 @@ z[i] – t[i] = z[j-1] – t[j-1]
 
 可以在循环执行字符串时跟踪上述关系，在每个索引处，我们将计算该差异对，并检查该差异对之前发生了多少次，并将该计数添加到结果中以保持跟踪 在下面的代码中，我们使用了[映射](http://quiz.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 考虑到[映射操作](http://quiz.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)（例如搜索和插入）花费 O（Log n）时间这一事实，该解决方案的总时间复杂度为 O（n log n）。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find substring with equal 
 // number of 0's, 1's and 2's 
@@ -101,7 +101,7 @@ int main()
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find substring with equal 
 # number of 0's, 1's and 2's 
@@ -178,4 +178,3 @@ Output:
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

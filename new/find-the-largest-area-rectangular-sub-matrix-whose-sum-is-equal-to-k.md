@@ -23,9 +23,9 @@ Output : (Top, Left): (0, 1)
 
 **高效方法：** [一维阵列的总和为](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)的最长子阵列可用于将时间复杂度降低至 O（n ^ 3）。 这个想法是一一固定左列和右列，并为每个左列和右列对找到连续行的最长子数组，其总和等于“ k”。 我们基本上为每个固定的左和右列对找到顶部和底部行号（它们是最大子矩阵的一部分）。 要找到顶部和底部的行号，请计算从左到右每一行中元素的总和，并将这些总和存储在一个名为 temp []的数组中。 因此，temp [i]表示第 i 行中从左到右的元素总和。 现在，在 temp []上应用具有总和 k 的[最长子阵列](https://www.geeksforgeeks.org/longest-sub-array-sum-k/) 1D 算法，并获得总和等于 temp []的“ k”的最长子阵列。 该长度将是最大可能的长度，其中左侧和右侧为边界列。 设置左对右列对的“顶部”和“底部”行索引并计算面积。 以类似的方式获取总和等于“ k”的其他子矩阵的顶部，底部，左侧，右侧索引，并打印具有最大面积的索引。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the largest area rectangular 
 // sub-matrix whose sum is equal to k 
@@ -176,9 +176,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find  
 // the largest area rectangular 
@@ -353,9 +353,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find  
 // the largest area rectangular 
@@ -545,12 +545,11 @@ public static void Main(String[] args)
 **时间复杂度：** O（n ^ 3）。
 **辅助空间：** O（n）。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

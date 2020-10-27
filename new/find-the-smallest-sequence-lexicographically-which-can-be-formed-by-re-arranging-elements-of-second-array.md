@@ -15,7 +15,7 @@
 > **输入：** a [] = {2，0，0}，b [] = {1，0，2}
 > **输出：** 0 0 2
 
-**方法：**可以贪婪地解决问题。 最初使用哈希保留所有数组 B 的数目的计数，并将它们存储在 C ++ 中设置的[中，以便](https://www.geeksforgeeks.org/set-in-cpp-stl/) [lower_bound（）](https://www.geeksforgeeks.org/upper_bound-and-lower_bound-for-vector-in-cpp-stl/) [*检查元素[* 和 [delete（）](https://www.geeksforgeeks.org/multiset-erase-in-c-stl/) [*要擦除元素*]，可以在对数时间内进行操作。
+**方法：**可以贪婪地解决问题。 最初使用哈希保留所有数组 B 的数目的计数，并将它们存储在 C++ 中设置的[中，以便](https://www.geeksforgeeks.org/set-in-cpp-stl/) [lower_bound（）](https://www.geeksforgeeks.org/upper_bound-and-lower_bound-for-vector-in-cpp-stl/) [*检查元素[* 和 [delete（）](https://www.geeksforgeeks.org/multiset-erase-in-c-stl/) [*要擦除元素*]，可以在对数时间内进行操作。
 
 对于数组中的每个元素，请使用 *lower_bound* 函数检查是否等于或大于 **n-a [i]** 的数字。 如果没有这样的元素，则采用集合中最小的元素。 将哈希表中使用的数字减少 1，如果哈希表的值为 0，则还将集合中的元素也删除。
 
@@ -105,12 +105,11 @@ return 0;
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

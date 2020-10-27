@@ -21,9 +21,9 @@ Output : 2 7
 *   现在，再次遍历。
 *   打印出现少于或等于 k 次的元素。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to remove the elements which 
 // appear more than k times from the array. 
@@ -65,9 +65,9 @@ int main(int argc, char const* argv[])
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to remove the elements which 
 // appear more than k times from the array. 
@@ -121,7 +121,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 
 # Python 3 program to remove the elements which 
 # appear more than k times from the array. 
@@ -158,9 +158,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to remove the elements which 
 // appear more than k times from the array. 
@@ -230,6 +230,5 @@ static public void Main() 
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

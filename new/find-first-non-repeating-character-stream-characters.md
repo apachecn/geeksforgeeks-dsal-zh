@@ -23,9 +23,9 @@
 
 下面是上述方法的实现：
 
-## C / C ++
+## C / C++
 
-```
+```cpp
 
 // A C++ program to find first 
 // non-repeating character 
@@ -140,9 +140,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to find first non-repeating character 
 // from a stream of characters 
@@ -207,7 +207,7 @@ public class NonReapeatingC {
 
 ## Python3
 
-```
+```py
 
 # A Python program to find first non-repeating character from 
 # a stream of characters 
@@ -254,9 +254,9 @@ findFirstNonRepeating()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to find first non-repeating character 
 // from a stream of characters 
@@ -382,4 +382,3 @@ First non-repeating character so far is a
 
 本文由 **[Amit Jain](http://in.linkedin.com/in/amitjainju)** 贡献。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

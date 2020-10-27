@@ -18,9 +18,9 @@ Output : NO PAIR EXIST
 **方法（蛮力）**
 反复检查它们是否存在一对
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code to find the pair with given sum 
 #include <bits/stdc++.h> 
@@ -104,9 +104,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to find the pair with given sum 
 import java.util.*; 
@@ -199,7 +199,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 program for finding the pair with given sum 
 import math 
@@ -269,9 +269,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to find the pair with given sum 
 using System; 
@@ -377,9 +377,9 @@ public static void Main(String[] args)
 2.迭代地将散列表中存在于链表
 中的所有元素标记为 1。 。迭代查找链表的 sum-current 元素是否存在于哈希表中
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to for finding the pair with given sum 
 #include <bits/stdc++.h> 
@@ -459,9 +459,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for finding  
 // the pair with given sum 
@@ -550,9 +550,9 @@ public static void main(String[] args) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for finding  
 // the pair with given sum 
@@ -652,12 +652,11 @@ public static void Main(String[] args) 
 时间复杂度：O（n）
 辅助空间：O（n）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

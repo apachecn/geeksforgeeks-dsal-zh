@@ -21,9 +21,9 @@ Output: 50, 52, 53, 54
 
 1.  **Use Sorting :** Sort the array, then do binary search for ‘low’. Once location of low is find, start traversing array from that location and keep printing all missing numbers.
 
-    ## C ++
+    ## C++
 
-    ```
+    ```cpp
 
     // A sorting based C++ program to find missing 
     // elements from an array 
@@ -81,9 +81,9 @@ Output: 50, 52, 53, 54
 
     ```
 
-    ## 爪哇
+    ## Java
 
-    ```
+    ```java
 
     // A sorting based Java program to find missing 
     // elements from an array 
@@ -225,9 +225,9 @@ Output: 50, 52, 53, 54
 
     ```
 
-    ## C＃
+    ## C#
 
-    ```
+    ```cs
 
     // A sorting based Java program to 
     // find missing elements from an array 
@@ -327,9 +327,9 @@ Output: 50, 52, 53, 54
 
 2.  **Using Arrays :** Create a boolean array, where each index will represent wether the (i+low)th element is present in array or not. Mark all those elements which are in the given range and are present in the array. Once all array items, present in given range have been marked true in the array we traverse through the boolean array and print all elements whose value is false.
 
-    ## C ++
+    ## C++
 
-    ```
+    ```cpp
 
     // An array based C++ program 
     // to find missing elements from 
@@ -380,9 +380,9 @@ Output: 50, 52, 53, 54
 
     ```
 
-    ## 爪哇
+    ## Java
 
-    ```
+    ```java
 
     // An array based Java program 
     // to find missing elements from 
@@ -436,7 +436,7 @@ Output: 50, 52, 53, 54
 
     ## Python3
 
-    ```
+    ```py
 
     # n array-based Python 3 program to  
     # find missing elements from an array  
@@ -485,9 +485,9 @@ Output: 50, 52, 53, 54
 
 3.  **Use Hashing :** Create a hash table and insert all array items into the hash table. Once all items are in hash table, traverse through the range and print all missing elements.
 
-    ## C ++
+    ## C++
 
-    ```
+    ```cpp
 
     // A hashing based C++ program to find missing 
     // elements from an array 
@@ -523,9 +523,9 @@ Output: 50, 52, 53, 54
 
     ```
 
-    ## 爪哇
+    ## Java
 
-    ```
+    ```java
 
     // A hashing based Java program to find missing 
     // elements from an array 
@@ -568,7 +568,7 @@ Output: 50, 52, 53, 54
 
     ## Python3
 
-    ```
+    ```py
 
     # A hashing based Python 3 program to  
     # find missing elements from an array  
@@ -599,9 +599,9 @@ Output: 50, 52, 53, 54
 
     ```
 
-    ## C＃
+    ## C#
 
-    ```
+    ```cs
 
     // A hashing based C# program to 
     // find missing elements from an array 
@@ -660,4 +660,3 @@ Output: 50, 52, 53, 54
 
 本文由 **Piyush Gupta** 和 **Shubh Bansal** 贡献。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

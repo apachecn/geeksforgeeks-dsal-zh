@@ -24,9 +24,9 @@ Output: The most frequent digit is 0
 
 这个想法很简单，我们编写了一个函数来计算给定整数中给定数字的出现次数。 然后，我们计算给定整数中从 0 到 9 的所有数字。 每当计数大于或等于先前计数时，我们都会不断更新最大计数。 下面是实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Finds maximum occurring digit without using any array/string 
 #include <bits/stdc++.h> 
@@ -82,9 +82,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Finds maximum occurring digit 
 // without using any array/string 
@@ -166,7 +166,7 @@ public static void main (String[] args) 
 
 ## Python3
 
-```
+```py
 
 # Finds maximum occurring digit  
 # without using any array/string  
@@ -222,9 +222,9 @@ print("Max occurring digit is", 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // Finds maximum occurring digit 
 // without using any array/string 
@@ -299,9 +299,9 @@ static void Main() 
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // Finds maximum occurring digit 
@@ -372,4 +372,3 @@ Max occurring digit is 5
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

@@ -29,9 +29,9 @@
     5.  现在遍历第一个数组并打印 prefix [arr_1 [i]]的值
 *   **实现：**
 
-    ## C ++
+    ## C++
 
-    ```
+    ```cpp
 
     // C++ program for each element in 1st  
     // array count elements less than or equal to it  
@@ -86,9 +86,9 @@
 
     ```
 
-    ## 爪哇
+    ## Java
 
-    ```
+    ```java
 
     // Java program for each element  
     // in 1st array count elements  
@@ -157,7 +157,7 @@
 
     ## Python3
 
-    ```
+    ```py
 
     # Python 3 program for each element in 1st  
     # array count elements less than or equal  
@@ -271,9 +271,9 @@
 
     ```
 
-    ## 的 PHP
+    ## PHP
 
-    ```
+    ```php
 
     <?php  
     // PHP program for each element in 1st  
@@ -336,9 +336,9 @@
 
 *   **实现：**
 
-    ## C ++
+    ## C++
 
-    ```
+    ```cpp
 
     // C++ program for each element in 1st  
     // array count elements less than or equal to it  
@@ -384,7 +384,7 @@
 
     ## Python3
 
-    ```
+    ```py
 
     # Python3 program for each element in 1st  
     # array count elements less than or equal to it  
@@ -445,12 +445,11 @@
     *   **空间复杂度：** O（max）其中 max 是两个数组的最大元素。
         需要大小为 max 的前缀数组。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

@@ -39,9 +39,9 @@ EndLoop;
 
 以下是上述想法的实现。 在下面的实现中，使用 map 代替哈希。 映射插入和搜索的时间复杂度实际上是 O（Log n）而不是 O（1）。 因此，下面的实现是 O（n <sup>2</sup> Log n）。
 
-## C / C ++
+## C / C++
 
-```
+```cpp
 
 // Find four different elements a,b,c and d of array such that 
 // a+b = c+d 
@@ -94,9 +94,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to find four different elements a,b,c and d of 
 // array such that a+b = c+d 
@@ -202,9 +202,9 @@ findPairs(arr, n)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 using System; 
 using System.Collections.Generic; 
@@ -306,4 +306,3 @@ S1 is lexicographically smaller than S2 iff
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

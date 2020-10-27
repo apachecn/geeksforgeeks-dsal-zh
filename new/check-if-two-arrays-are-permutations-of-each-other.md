@@ -22,9 +22,9 @@ Output: No
 3）如果找到了所有元素，则返回 true。
 以下是此方法的实现。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to find one array is permutation of other array
 import java.util.HashMap;
@@ -83,7 +83,7 @@ class Permutaions
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find one 
 # array is permutation of other array
@@ -136,9 +136,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find one array 
 // is permutation of other array
@@ -218,4 +218,3 @@ Arrays are permutations of each other
 在我们有一个哈希函数在 O（1）时间中插入并找到元素的假设下，此方法的时间复杂度为 O（n）。
 本文由 **Ravi** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请写评论
 
-注意读者！ 现在不要停止学习。 通过 [**Java 和 Java Collections 基础课程**](https://practice.geeksforgeeks.org/courses/Java-Collections?vC=1) 以对学生方便的价格掌握所有重要的 Java 和 Collections 概念，并为行业做好准备。

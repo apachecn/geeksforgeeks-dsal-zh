@@ -57,9 +57,9 @@ Dist(n1, n2) = Level[n1] + Level[n2] - 2*Level[lca]
 >     （II）查询段树，得到 L 数组中的最小值 当 X = 0，index = 7 时在 1 和 2 之间。
 > 2.  最后，我们应用上面讨论的距离公式来获得两个节点之间的距离。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find distance between
 // two nodes for multiple queries
@@ -301,9 +301,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find distance between 
 // two nodes for multiple queries
@@ -593,7 +593,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find distance between
 # two nodes for multiple queries
@@ -821,9 +821,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find distance between 
 // two nodes for multiple queries
@@ -1129,6 +1129,5 @@ Dist(8, 5) = 5
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

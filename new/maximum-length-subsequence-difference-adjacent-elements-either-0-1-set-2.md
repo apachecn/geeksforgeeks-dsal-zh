@@ -19,9 +19,9 @@ The subsequence is {-2, -1, -1, 0}.
 
 **方法 2（有效方法）：**的想法是创建一个具有**（ele，len）**形式的元组的哈希图，其中 **len** 表示长度 以元素 **ele** 结尾的最长子序列。 现在，对于每个元素 arr [i]，我们可以找到哈希表中值 arr [i] -1，arr [i]和 arr [i] +1 的长度，并考虑其中的最大值。 将该最大值设为 **max** 。 现在，以 arr [i]结尾的最长子序列的长度为 **max + 1** 。 与哈希表中的元素 arr [i]一起更新此长度。 最后，在哈希表中具有最大长度的元素给出最大长度子序列。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find maximum length 
 // subsequence with difference between adjacent  
@@ -89,9 +89,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find maximum length 
 // subsequence with difference between adjacent  
@@ -167,7 +167,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to find maximum  
 # length subsequence with difference between  
@@ -245,4 +245,3 @@ Maximum length subsequence = 5
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

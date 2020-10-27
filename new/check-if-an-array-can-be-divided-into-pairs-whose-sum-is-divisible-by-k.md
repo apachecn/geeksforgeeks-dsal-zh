@@ -44,7 +44,7 @@
 
 ```
 
-**有效方法**是使用散列（Java 中的 [unordered_map 在 C ++](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 和 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中）。
+**有效方法**是使用散列（Java 中的 [unordered_map 在 C++](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 和 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中）。
 
 下图是上述方法的模拟：
 
@@ -52,9 +52,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to check if arr[0..n-1] can be divided
 // in pairs such that every pair is divisible by k.
@@ -125,9 +125,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // JAVA program to check if arr[0..n-1] can be divided
 // in pairs such that every pair is divisible by k.
@@ -224,4 +224,3 @@ True
 
 本文由 **Priyanka** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

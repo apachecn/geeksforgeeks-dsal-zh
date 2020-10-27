@@ -23,9 +23,9 @@ Output : 5
 
 **方法 1（天真方法）：**使用两个循环从两个链表中选择元素，并检查该对的总和是否等于 **x** 。
 
-## C / C ++
+## C / C++
 
-```
+```cpp
 
 // C++ implementation to count pairs from both linked  
 // lists  whose sum is equal to a given value 
@@ -109,9 +109,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count pairs from both linked  
 // lists  whose sum is equal to a given value 
@@ -174,7 +174,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to count pairs from both linked  
 # lists whose sum is equal to a given value 
@@ -247,9 +247,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count pairs from both linked  
 // lists whose sum is equal to a given value 
@@ -341,9 +341,9 @@ countPairs(list1, list2, x)
 
 为简单起见，下面给出的实现假定 list1 以升序排序，list2 以降序排序。
 
-## C / C ++
+## C / C++
 
-```
+```cpp
 
 // C++ implementation to count pairs from both linked  
 // lists  whose sum is equal to a given value 
@@ -443,9 +443,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count pairs from both linked  
 // lists  whose sum is equal to a given value 
@@ -538,11 +538,11 @@ Count = 2
 **辅助空间：** O（1）
 排序将更改节点的顺序。 如果顺序很重要，则可以创建和使用链接列表的副本。
 
-**方法 3（哈希）：**哈希表是使用 C ++ 中的 [unordered_set 实现的。 我们将所有第一个链接列表元素存储在哈希表中。 对于第二个链表的元素，我们从 **x** 中减去每个元素，然后在哈希表中检查结果。 如果结果存在，我们将增加**计数**。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
+**方法 3（哈希）：**哈希表是使用 C++ 中的 [unordered_set 实现的。 我们将所有第一个链接列表元素存储在哈希表中。 对于第二个链表的元素，我们从 **x** 中减去每个元素，然后在哈希表中检查结果。 如果结果存在，我们将增加**计数**。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to count pairs from both linked   
 // lists whose sum is equal to a given value 
@@ -634,9 +634,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count pairs from both linked  
 // lists  whose sum is equal to a given value 
@@ -702,9 +702,9 @@ class GFG 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count pairs from both linked  
 // lists whose sum is equal to a given value 
@@ -781,4 +781,3 @@ Count = 2
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

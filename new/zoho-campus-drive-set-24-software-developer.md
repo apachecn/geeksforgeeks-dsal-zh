@@ -12,7 +12,7 @@ Zoho 曾访问我们的大学以招募软件开发人员。 有两种类型的�
 **第 2 轮–编码**
 
 这是涉及 8 个问题的动手编码。
-您可以使用 C，C ++或 JAVA
+您可以使用 C，C++或 JAVA
 
 *大多数问题都很简单：*
 
@@ -48,7 +48,7 @@ Those who did really well got the higher package and those who just missed it al
 Some were offered internships.
 Overall it was a challenging process. Those with strong logical and coding skills would make it 🙂
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

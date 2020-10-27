@@ -25,9 +25,9 @@ Output : 127
 
 这类似于计算 n 个给定元素集中的子集数。 **1** 被减去，因为未考虑空集。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to count subsets having 
 // even numbers only and all are distinct 
@@ -68,9 +68,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count subsets having 
 // even numbers only and all are distinct 
@@ -115,7 +115,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 
 # python implementation to count subsets having  
 # even numbers only and all are distinct  
@@ -146,9 +146,9 @@ print("Numbers of subset=", countSubSets(arr,n))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count subsets having 
 // even numbers only and all are distinct  
@@ -205,4 +205,3 @@ Number of subsets = 7
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

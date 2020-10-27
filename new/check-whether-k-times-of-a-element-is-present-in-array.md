@@ -17,9 +17,9 @@
 **天真的方法：**一个简单的解决方案是运行两个嵌套的[循环](https://www.geeksforgeeks.org/loops-in-c-and-cpp/)，并检查每个元素在数组中是否也存在该元素的 K 倍。
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to check whether
 // K times of a element is present in 
@@ -66,9 +66,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to check whether
 // K times of a element is present in 
@@ -122,7 +122,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to check whether
 # K times of a element is present in 
@@ -161,9 +161,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to check whether
 // K times of a element is present in 
@@ -225,9 +225,9 @@ Yes
 **高效方法：**的想法是将所有元素存储在[哈希图中](https://www.geeksforgeeks.org/hashing-data-structure/)，并针对每个元素检查该哈希图中是否存在该元素的 K 次。 如果它存在于哈希图中，则返回 True，否则返回 False。
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to check whether
 // K times of a element is present in 
@@ -274,9 +274,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to check whether
 // K times of a element is present in 
@@ -330,7 +330,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to 
 # check whether K times of  
@@ -368,9 +368,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to check whether
 // K times of a element is present in 
@@ -432,12 +432,11 @@ Yes
 
 **时间复杂度：** O（n）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

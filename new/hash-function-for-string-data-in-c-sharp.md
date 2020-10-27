@@ -1,6 +1,6 @@
-# C＃中字符串数据的哈希函数
+# C#中字符串数据的哈希函数
 
-**问题：**用 C＃编写代码以哈希键数组并显示其哈希码。
+**问题：**用 C#编写代码以哈希键数组并显示其哈希码。
 
 *答案：*哈希表是一种广泛使用的数据结构，用于存储以其哈希码索引的值（即键）。 哈希码是哈希函数的结果，用作存储键的索引的值。 如果两个不同的密钥散列到相同的值，则将这种情况称为*冲突*，并且良好的散列函数可以最大程度地减少冲突。
 
@@ -125,16 +125,15 @@ return ( int )total;
 19 Python
 28 Java
 
-```
+```java
 
 **说明：**在 *HashFunction* 中，我们将参数作为要散列的字符串以及字符串数据“ *值*”传递。 方法 *[ToCharArray](https://www.geeksforgeeks.org/c-tochararray-method/)* 将字符串转换为字符数组，然后从字符数组的开始到结尾开始 for 循环。 在 for 循环内，我们计算数组中每个字符的 ASCII 值的总和。 方法 [GetUpperBound](https://www.geeksforgeeks.org/c-finding-the-index-of-last-element-in-the-array/) 返回数组最高索引的值。 然后，哈希函数以数组的上限返回总和的模（在本例中为 49，因为 *string [] values = new string [50]* ）。 在 *HashFunction2* 中，我们传递了相同的参数，但是此函数发生冲突的可能性较小。 除了此处我们使用 *Horner 规则*计算 11 的多项式函数外，所有内容基本相同。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

@@ -20,9 +20,9 @@ Two different sub-strings are "ha" and "hakha".
 
 **方法：**查找出现的所有字符串开头和结尾。 将每个字符串的索引存储在两个不同的数组中。 之后遍历整个字符串，并在每次迭代中向已看到的子字符串添加一个符号，然后将新字符串映射到一些非负整数。 由于字符串的开头和结尾以及长度相等的不同字符串被映射为不同的数字（并且相等的字符串被相等地映射），因此只需计算一定长度的必要子字符串的数目即可。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Cpp program to find number of 
 // different sub stings 
@@ -115,9 +115,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find number of  
 // different sub stings 
@@ -226,7 +226,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python 3 program to find number of 
 # different sub stings 
@@ -312,11 +312,11 @@ if __name__ == "__main__":
 
 # This code is contributed by ita_c 
 
-```
+```c
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find number of  
 // different sub stings 
@@ -430,12 +430,11 @@ public static void Main(String[] args)
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

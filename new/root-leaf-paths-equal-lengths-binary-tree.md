@@ -31,9 +31,9 @@ Output : 2 paths are of length 3
 想法是遍历树并跟踪路径长度。 每当到达叶节点时，我们都会在哈希图中增加路径长度计数。
 一旦我们遍历了树，哈希图就会具有不同路径长度的计数。 最后，我们打印哈希图的内容。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count root to leaf paths of different 
 // lengths. 
@@ -113,7 +113,7 @@ int main()
 
 ## Python3
 
-```
+```py
 
 # Python3 program to count root to leaf  
 # paths of different lengths. 
@@ -193,4 +193,3 @@ if __name__ == '__main__':
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

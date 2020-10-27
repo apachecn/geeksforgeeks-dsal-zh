@@ -37,9 +37,9 @@ First window is {4, 4}, count of distinct numbers is 1
     4.  打印计数。
 *   **Implementation:**
 
-    ## C ++
+    ## C++
 
-    ```
+    ```cpp
 
     // Simple C++ program to count distinct 
     // elements in every window of size k 
@@ -83,9 +83,9 @@ First window is {4, 4}, count of distinct numbers is 1
 
     ```
 
-    ## 爪哇
+    ## Java
 
-    ```
+    ```java
 
     // Simple Java program to count distinct elements in every 
     // window of size k 
@@ -132,7 +132,7 @@ First window is {4, 4}, count of distinct numbers is 1
 
     ## Python3
 
-    ```
+    ```py
 
     # Simple Python3 program to count distinct  
     # elements in every window of size k 
@@ -179,9 +179,9 @@ First window is {4, 4}, count of distinct numbers is 1
 
     ```
 
-    ## C＃
+    ## C#
 
-    ```
+    ```cs
 
     // Simple C# program to count distinct 
     // elements in every window of size k 
@@ -270,9 +270,9 @@ First window is {4, 4}, count of distinct numbers is 1
     ![](img/3a18bec756059e94265d825bf8cb3b9e.png)
 *   **实现：**
 
-    ## C ++
+    ## C++
 
-    ```
+    ```cpp
 
     // An efficient C++ program to 
     // count distinct elements in 
@@ -338,9 +338,9 @@ First window is {4, 4}, count of distinct numbers is 1
 
     ```
 
-    ## 爪哇
+    ## Java
 
-    ```
+    ```java
 
     // An efficient Java program to count distinct elements in 
     // every window of size k 
@@ -395,7 +395,7 @@ First window is {4, 4}, count of distinct numbers is 1
 
     ## Python3
 
-    ```
+    ```py
 
     # An efficient Python program to 
     # count distinct elements in 
@@ -551,4 +551,3 @@ First window is {4, 4}, count of distinct numbers is 1
 
 本文由 **Piyush** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

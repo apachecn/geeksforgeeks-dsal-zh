@@ -24,11 +24,11 @@ Output : res[] = [ 6 7 5 9 ]
 3）将结果数组初始化为空。
 4）遍历 A []，复制哈希中存在的 A []元素。 这样做是为了保持元素的顺序相同。
 5）对 B []重复步骤 4。 这次，我们只考虑 A []中不存在的那些元素（不要在哈希中出现两次）。
-下面的 c ++实现上述想法。
+下面的 C++实现上述想法。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Make a set of maximum elements from two
 // arrays A[] and B[]
@@ -98,7 +98,7 @@ int main()
 
 ## Python3
 
-```
+```py
 
 # Python3 program to implement the 
 # above approach
@@ -173,12 +173,11 @@ if __name__ == "__main__":
 
 **时间复杂度：** O（n Log n）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

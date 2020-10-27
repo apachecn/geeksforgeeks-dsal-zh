@@ -1,4 +1,4 @@
-# 用于通过链接进行哈希处理的 C ++程序
+# 用于通过链接进行哈希处理的 C++程序
 
 在[散列](http://www.geeksforgeeks.org/hashing-data-structure/)中，存在一个散列函数，可将键映射到某些值。 但是这些哈希函数可能会导致将两个或更多键映射到相同值的冲突。 **链哈希**避免了冲突。 这个想法是使哈希表的每个单元指向具有相同哈希函数值的记录的链接列表。
 
@@ -13,7 +13,7 @@
 
 请参考 **[哈希| 设置 2（单独链接）](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)** 以获得详细信息。
 
-我们在 C ++ 中使用[列表，该列表在内部实现为链接列表（更快的插入和删除）。](https://www.geeksforgeeks.org/list-cpp-stl/)
+我们在 C++ 中使用[列表，该列表在内部实现为链接列表（更快的插入和删除）。](https://www.geeksforgeeks.org/list-cpp-stl/)
 
 ```
 // CPP program to implement hashing with chaining
@@ -105,12 +105,11 @@ return 0;
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

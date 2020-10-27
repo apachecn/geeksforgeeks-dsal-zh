@@ -20,9 +20,9 @@ There is no common element in two sets.
 遍历第一个集合的每个元素，然后在另一个集合中搜索，如果找到任何元素，则返回 false。 如果未找到任何元素，则返回树。 该方法的时间复杂度为 O（mn）。
 以下是上述想法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A Simple C++ program to check if two sets are disjoint 
 #include<bits/stdc++.h> 
@@ -54,9 +54,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check if two sets are disjoint 
 
@@ -128,9 +128,9 @@ print("yes") if areDisjoint(set1, set2, m, n) else(" No")
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to check if two  
 // sets are disjoint  
@@ -185,9 +185,9 @@ public static void Main(string[] args)
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // A Simple PHP program to check  
@@ -238,9 +238,9 @@ Yes
 2）使用合并等过程来比较元素。
 以下是上述想法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A Simple C++ program to check if two sets are disjoint 
 #include<bits/stdc++.h> 
@@ -281,9 +281,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check if two sets are disjoint 
 
@@ -374,9 +374,9 @@ print("Yes") if areDisjoint(set1, set2, m, n) else print("No")
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to check if two sets are disjoint 
 using System; 
@@ -453,9 +453,9 @@ Yes
 4）如果哈希表中不存在第二组的所有元素，则返回 true。
 以下是此方法的实现。
 
-## C / C ++
+## C / C++
 
-```
+```cpp
 
 /* C++ program to check if two sets are distinct or not */
 #include<bits/stdc++.h> 
@@ -497,9 +497,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Java program to check if two sets are distinct or not */
 import java.util.*; 
@@ -541,7 +541,7 @@ class Main
 
 ## Python3
 
-```
+```py
 
 # Python3 program to  
 # check if two sets are  
@@ -586,9 +586,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 using System; 
 using System.Collections.Generic; 
@@ -651,4 +651,3 @@ No
 在假设像 add（）和 contains（）这样的哈希集操作在 O（1）时间内工作的情况下，上述实现的时间复杂度为 O（m + n）。
 本文由 **Rajeev** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请写评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

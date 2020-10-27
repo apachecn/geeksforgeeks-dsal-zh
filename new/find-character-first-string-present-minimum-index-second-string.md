@@ -14,9 +14,9 @@
 
 **天真的方法：**使用两个循环，在 **str** 中找到 **patt** 的每个字符的第一个索引。 打印具有最小索引的字符。 如果 **str** 中没有 **patt** 字符，则打印“无字符”。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the character in 
 // first string that is present at minimum index
@@ -72,9 +72,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the character in 
 // first string that is present at minimum index
@@ -132,7 +132,7 @@ public class GFG
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to find the character in
 # first that is present at minimum index
@@ -180,9 +180,9 @@ printMinIndexChar(Str, patt)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the character in 
 // first string that is present at minimum index
@@ -258,16 +258,16 @@ Minimum Index Character = e
     *   如果存在，则从哈希表中获取其索引，并更新 **minIndex** （到目前为止遇到的最小索引）。
     *   对于不匹配的字符，请打印“不存在字符”。
 
-哈希表是使用 C ++ 中的 [unordered_set 实现的。
+哈希表是使用 C++ 中的 [unordered_set 实现的。
 下图是上述方法的模拟：](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)
 
 ![](img/3e573678674decc4ea707509c440194d.png)
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the character in first 
 // string that is present at minimum index in second
@@ -325,9 +325,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the character in 
 // first string that is present at minimum index
@@ -388,7 +388,7 @@ public class GFG
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to 
 # find the character in first 
@@ -450,9 +450,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the character in 
 // first string that is present at minimum index
@@ -530,4 +530,3 @@ Minimum Index Character = e
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，也可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

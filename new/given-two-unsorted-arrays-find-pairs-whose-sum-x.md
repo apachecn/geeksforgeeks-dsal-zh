@@ -24,9 +24,9 @@ Output : 1 8
 
 **天真的方法**是简单地运行两个循环并从两个数组中选择元素。 逐一检查两个元素的总和是否等于给定值 x。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find all pairs in both arrays 
 // whose sum is equal to given value x 
@@ -60,9 +60,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find all pairs in both arrays 
 // whose sum is equal to given value x 
@@ -99,7 +99,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python 3 program to find all  
 # pairs in both arrays whose  
@@ -127,9 +127,9 @@ findPairs(arr1, arr2, n, m, x)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find all 
 // pairs in both arrays 
@@ -169,9 +169,9 @@ class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // PHP program to find all pairs  
@@ -219,15 +219,15 @@ findPairs($arr1, $arr2, 
 **时间复杂度：** O（n ^ 2）
 **辅助空间：** O（1）
 
-此问题的**有效解决方案**是[哈希处理](http://www.geeksforgeeks.org/hashing-data-structure/)。 哈希表是使用 C ++ 中的 [unordered_set 实现的。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
+此问题的**有效解决方案**是[哈希处理](http://www.geeksforgeeks.org/hashing-data-structure/)。 哈希表是使用 C++ 中的 [unordered_set 实现的。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
 
 *   我们将所有第一个数组元素存储在哈希表中。
 *   对于第二个数组的元素，我们从 x 中减去每个元素，然后在哈希表中检查结果。
 *   如果存在结果，则将元素和键打印在哈希（这是第一个数组的元素）中。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find all pair in both arrays 
 // whose sum is equal to given value x 
@@ -267,9 +267,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // JAVA Code for Given two unsorted arrays, 
 // find all pairs whose sum is x 
@@ -312,7 +312,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find all  
 # pair in both arrays whose  
@@ -351,9 +351,9 @@ findPairs(arr1, arr2, n, m, x)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Code for Given two unsorted arrays, 
 // find all pairs whose sum is x 
@@ -423,4 +423,3 @@ class GFG {
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

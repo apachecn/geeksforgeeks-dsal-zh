@@ -19,9 +19,9 @@ Output : aeiou, aeiouu
 
 我们使用基于[散列](https://www.geeksforgeeks.org/hashing-data-structure/)的技术，并从头开始遍历字符串。 对于每个字符，我们考虑从该字符开始的所有子字符串。 如果遇到辅音，则移至下一个起始字符。 否则，我们在哈希中插入当前字符。 如果包括所有元音，我们将打印当前子串。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find all substring that  
 // contain all vowels 
@@ -77,9 +77,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find all substring that   
 // contain all vowels  
@@ -134,7 +134,7 @@ public class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find all subthat 
 # contain all vowels 
@@ -182,9 +182,9 @@ FindSubstr1ing(str1)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find all substring that  
 // contain all vowels  
@@ -263,9 +263,9 @@ aeiou aeiouu
 **优化的解决方案：**
 对于每个字符，如果当前字符是元音，则插入到哈希中。 否则将标志 Start 设置为从第 i + 1 个索引开始的下一个子字符串。 如果包括所有元音，我们将打印当前子串。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find all substring that 
 // contain all vowels 
@@ -320,9 +320,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find all substring that   
 // contain all vowels  
@@ -373,7 +373,7 @@ public class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find all substring  
 # that contain all vowels 
@@ -417,9 +417,9 @@ FindSubstring(str);
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 using System; 
 using System.Collections.Generic; 
@@ -494,4 +494,3 @@ aeiou aeiouu
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

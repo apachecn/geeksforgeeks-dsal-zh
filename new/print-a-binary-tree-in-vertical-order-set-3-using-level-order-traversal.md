@@ -61,9 +61,9 @@ The output of print this tree vertically will be:
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for printing vertical order 
 // of a given binary tree usin BFS. 
@@ -155,7 +155,7 @@ int main()
 
 ## Python3
 
-```
+```py
 
 # python3 Program to print zigzag traversal of binary tree 
 import collections 
@@ -268,9 +268,9 @@ verticalTraverse(root)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 import java.util.ArrayList; 
 import java.util.LinkedList; 
@@ -400,4 +400,3 @@ Vertical order traversal is
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

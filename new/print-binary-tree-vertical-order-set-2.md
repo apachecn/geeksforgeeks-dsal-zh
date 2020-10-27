@@ -25,11 +25,11 @@ The output of print this tree vertically will be:
 
 我们已经在[之前的文章](https://www.geeksforgeeks.org/print-binary-tree-vertical-order/)中讨论了 O（n <sup>2</sup> ）解决方案。 在这篇文章中，讨论了一种基于哈希图的有效解决方案。 我们需要检查所有节点到根的水平距离。 如果两个节点的水平距离（HD）相同，则它们在同一垂直线上。 HD 的想法很简单。 根的 HD 为 0，将右边缘（连接到右子树的边缘）视为+1 水平距离，而左边缘则视为-1 水平距离。 例如，在上面的树中，节点 4 的 HD 为-2，节点 2 的 HD 为-1，节点 5 和 6 的 HD 为 0，节点 7 的 HD 为+2。
 我们可以对给定的二叉树进行遍历。 在遍历树时，我们可以递归计算 HD。 最初，我们将根的水平距离设为 0。 对于左子树，我们将“水平距离”作为根的水平距离减去 1。对于右子树，我们将“水平距离”作为根的水平距离加上 1。对于每个 HD 值，我们在哈希图中维护节点列表。 每当我们看到遍历中的节点时，我们都会进入哈希映射条目，并使用 HD 作为映射中的键将节点添加到哈希映射中。
-以下是上述方法的 C ++实现。 感谢 Chirag 提供以下 C ++实现。
+以下是上述方法的 C++实现。 感谢 Chirag 提供以下 C++实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for printing vertical order of a given binary tree
 #include <iostream>
@@ -112,9 +112,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for printing vertical order of a given binary tree
 import java.util.TreeMap;
@@ -292,7 +292,7 @@ Vertical order traversal is
 
 ```
 
-基于哈希的解决方案的**时间复杂度**在我们具有良好的哈希函数（允许在 O（1）时间内进行插入和检索操作）的假设下可以视为 O（n）。 在上述 C ++实现中，使用了 STL 的[映射。 STL 中的 map 通常是使用自平衡二进制搜索树实现的，其中所有操作都需要 O（Logn）时间。 因此，上述实现的时间复杂度为 O（nLogn）。
+基于哈希的解决方案的**时间复杂度**在我们具有良好的哈希函数（允许在 O（1）时间内进行插入和检索操作）的假设下可以视为 O（n）。 在上述 C++实现中，使用了 STL 的[映射。 STL 中的 map 通常是使用自平衡二进制搜索树实现的，其中所有操作都需要 O（Logn）时间。 因此，上述实现的时间复杂度为 O（nLogn）。
 **请注意，上述解决方案可能以与树中出现的节点相同的垂直顺序打印节点。** 例如，上述程序在 12 之前打印 12。](http://www.cplusplus.com/reference/map/map/) 
 
 ```
@@ -319,9 +319,9 @@ Vertical order traversal is
 
 下面是上述方法的实现。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program for above approach
 import java.util.ArrayList;
@@ -426,4 +426,3 @@ public class BinaryTree
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

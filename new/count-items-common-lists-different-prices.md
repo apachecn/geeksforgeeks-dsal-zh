@@ -18,9 +18,9 @@ lists but with different prices.
 
 **方法 1（朴素方法）：**使用两个嵌套循环将 **list1** 的每个项目与 **list2** 的所有项目进行比较。 如果找到价格不同的匹配项，则增加**计数**。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to count items common to both 
 // the lists but with different prices
@@ -74,9 +74,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count items common to both 
 // the lists but with different prices
@@ -136,7 +136,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python implementation to
 # count items common to both 
@@ -173,9 +173,9 @@ print("Count = ", countItems(list1, list2))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count items common to both 
 // the lists but with different prices
@@ -353,9 +353,9 @@ Count = 2
 为了提高效率，应对元素数量最大的列表进行排序，并将其用于二进制搜索。
 **方法 3（有效方法）：**使用**（键，值）**元组作为**（项目名称，价格）**创建哈希表。 在哈希表中插入 **list1** 的元素。 现在，对于 **list2** 的每个元素，检查它是否是哈希表。 如果存在，则检查其价格是否与哈希表中的值不同。 如果是这样，则增加**计数**。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to count items common to both 
 // the lists but with different prices
@@ -416,9 +416,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count
 // items common to both the lists
@@ -491,9 +491,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count
 // items common to both the lists
@@ -582,12 +582,11 @@ Count = 2
 辅助空间：O（m）。
 为了提高效率，应在哈希表中插入元素数量最少的列表。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

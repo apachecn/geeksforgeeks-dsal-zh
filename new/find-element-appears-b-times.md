@@ -13,9 +13,9 @@ Output : 1
 
 将每个数字相加一次，然后将总和乘以 a，我们将得到数组每个元素之和的乘积。 将其存储为 a_sum。 从 a_sum 中减去整个数组的总和，然后将结果除以（a-b）。 我们得到的数字是必需的数字（在数组中出现 b 次）。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find the only element that  
 // appears b times 
@@ -53,9 +53,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the only element that  
 // appears b times 
@@ -101,7 +101,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find the only  
 # element that appears b times 
@@ -133,9 +133,9 @@ print(appearsbTimes(arr, n, a, b))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find the only element that  
 // appears b times 
@@ -192,12 +192,11 @@ public static void Main(String[] args) 
 
 [查找出现 k 次的唯一元素。](https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/)
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

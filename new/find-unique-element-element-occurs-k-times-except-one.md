@@ -31,9 +31,9 @@ Every element appears 4 times accept 10.
 2.  填充计数数组，以便 count [i]存储设置了第 i 位的数组元素的计数。
 3.  使用 count 数组形成结果。 如果 count [i]不为 k 的倍数，则将 1 放置在结果 i 中。 否则我们将 0。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find unique element where 
 // every element appears k times except one 
@@ -80,9 +80,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find unique element where  
 // every element appears k times except one  
@@ -134,7 +134,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 
 # Python 3 program to find unique element where 
 # every element appears k times except one 
@@ -178,9 +178,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find unique element where  
 // every element appears k times except one  
@@ -230,9 +230,9 @@ public static void Main(String[] args) 
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 //PHP program to find unique element where  
@@ -289,4 +289,3 @@ function findUnique($a, $n, $k) 
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

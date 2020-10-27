@@ -31,9 +31,9 @@ i.e. g and f in str 2.
 2.  计算两个字符串中不同字符的数量（在这种情况下，如果一个字符串有 4 个 a，而第二个字符串有 3 个“ a”，则也将被计数。
 3.  如果不同字符的数量小于或等于 k，则返回 true，否则返回 false。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check if two strings are k anagram 
 // or not. 
@@ -88,9 +88,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check if two strings are k anagram 
 // or not. 
@@ -149,7 +149,7 @@ public class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to check if two  
 # strings are k anagram or not. 
@@ -205,9 +205,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to check if two  
 // strings are k anagram or not. 
@@ -269,9 +269,9 @@ class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // PHP program to check  
@@ -333,9 +333,9 @@ Yes
 **方法 2：**
 我们可以优化上述解决方案。 在这里，我们仅使用一个 count 数组来存储 str1 中的字符计数。 我们遍历 str2 并减少出现在 str2 中的 count 数组中每个字符的出现。 如果在 str1 中找到一个不存在的字符，则增加不同字符的计数。 如果不同字符的数量大于 k，则返回 false。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Optimized C++ program to check if two strings 
 // are k anagram or not. 
@@ -395,9 +395,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Optimized Java program to check if two strings 
 // are k anagram or not. 
@@ -460,7 +460,7 @@ public class GFG {
 
 ## Python3
 
-```
+```py
 
 # Optimized Python3 program  
 # to check if two strings 
@@ -514,9 +514,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // Optimized C# program to check if two strings 
 // are k anagram or not. 
@@ -580,9 +580,9 @@ using System;
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // Optimized PHP program  
@@ -659,9 +659,9 @@ Yes
 
 下面是上述方法的实现：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for the above approach 
 import java.util.*; 
@@ -748,4 +748,3 @@ Yes
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

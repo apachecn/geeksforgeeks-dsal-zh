@@ -34,9 +34,9 @@ Output : 9
 3.  现在保持 **R <sub>1</sub>** 不变，向左递增**。 降低前一个元素的频率，即 **arr [0]，**，如果其频率变为 0，则减小窗口大小。 现在，子数组为 **[左= 1，右= R <sub>1</sub> ]** 。**
 4.  从步骤 2 开始，对 Left 和 Right 的其他值重复相同的过程，直到 **Left < N** 为止。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program Count total number of sub-arrays 
 // having total distinct elements same as that 
@@ -101,9 +101,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program Count total number of sub-arrays 
 // having total distinct elements same as that 
@@ -179,7 +179,7 @@ class Test
 
 ## Python3
 
-```
+```py
 
 # Python3 program Count total number of  
 # sub-arrays having total distinct elements  
@@ -245,9 +245,9 @@ print(countDistictSubarray(arr, n))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program Count total number of sub-arrays 
 // having total distinct elements same as that 
@@ -333,4 +333,3 @@ class Test
 
 本文由 [Shubham Bansal](https://www.quora.com/profile/Shubham-Bansal-209) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

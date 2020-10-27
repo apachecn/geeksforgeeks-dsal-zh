@@ -46,9 +46,9 @@ words[]:  act  act  act  dgo  dgo
 
 以下是上述算法的实现。 在下面的程序中，结构“ Word”的数组用于存储索引和单词数组。 DupArray 是另一个存储结构“ Word”的数组的结构。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to print all anagarms together
 #include <bits/stdc++.h>
@@ -143,7 +143,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // A C program to print all anagarms together
 #include <stdio.h>
@@ -231,9 +231,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to print all anagrams together
 import java.util.Arrays;
@@ -394,9 +394,9 @@ cat tac act dog god
 在这里，我们首先对每个单词进行排序，将排序后的单词用作键，然后将原始单词放入地图中。 映射的值将是一个列表，其中包含排序后具有相同单词的所有单词。
 最后，我们将打印哈希图中所有值大于 1 的值。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print anagrams
 // together using dictionary
@@ -459,7 +459,7 @@ public class FindAnagrams {
 
 ## Python3
 
-```
+```py
 
 from collections import defaultdict 
 
@@ -481,9 +481,9 @@ if __name__ == "__main__":  
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print anagrams
 // together using dictionary
@@ -578,9 +578,9 @@ class GFG {
 在先前的方法中，我们对每个字符串进行排序以维护相似的键，但是这种方法花费额外的时间将利用另一个哈希图来 保持字符的频率，将为具有相同字符频率的不同字符串生成相同的哈希函数。
 在这里，我们将使用 HashMap < HashMap，ArrayList >，内部的 hashmap 将计算每个字符串的字符的频率，外部的 HashMap 将检查该 hashmap 是否存在（如果存在），然后它将 将该字符串添加到相应的列表中。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code to print all anagrams together 
 #include <bits/stdc++.h>
@@ -661,9 +661,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code tp print all anagrams together
 import java.util.ArrayList;
@@ -756,4 +756,3 @@ public class FindAnagrams {
 [**给定一个单词序列，一起打印所有字谜| 第 2 组**](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-set-2/)
 如果发现不正确的内容，或者想共享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

@@ -22,7 +22,7 @@ subsequence of consecutive elements.
 **天真的方法：**的想法是首先对数组进行排序，然后找到具有连续元素的最长子数组。
 对数组进行排序后，运行循环并保持 count 和 max（最初均为零）。 从头到尾运行一个循环，如果当前元素不等于前一个元素（元素+1），则将计数设置为 1，否则增加计数。 用最大数量和最大数量更新最大数量。
 
-## C ++ 14
+## C++ 14
 
 ```
 
@@ -69,9 +69,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find longest 
 // contiguous subsequence 
@@ -156,9 +156,9 @@ Length of the Longest contiguous subsequence is 4
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find longest
 // contiguous subsequence
@@ -208,9 +208,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find longest
 // consecutive subsequence
@@ -310,9 +310,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 using System;
 using System.Collections.Generic;
@@ -384,4 +384,3 @@ Length of the Longest contiguous subsequence is 4
 *感谢* [*Gaurav Ahirwar*](http://qa.geeksforgeeks.org/user/Mr.Lazy) *为上述解决方案。*
 如果发现任何不正确的内容，或者想共享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

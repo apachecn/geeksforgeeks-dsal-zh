@@ -18,9 +18,9 @@ Output : BDEFGA
 **方法：**的想法是遍历字符串，对于每个已访问的字符，将其最后一次出现存储在哈希表中（此处 unordered_map 用作哈希，键作为字符，值作为其最后位置）。 变量 st 存储当前子串的起点，maxlen 存储最大长度子串​​的长度，start 存储最大长度子串​​的起始索引。 在遍历字符串时，请检查哈希表中是否存在当前字符。 如果不存在，则将当前字符存储在哈希表中，并将值作为当前索引。 如果哈希表中已经存在该字符，则意味着当前字符可以在当前子字符串中重复。 对于此检查，字符的上一次出现是在当前子字符串的起点 st 之前还是之后。 如果它在 st 之前，则仅更新哈希表中的值。 如果在 st 之后，则找到当前子串 currlen 的长度为 i-st，其中 i 是当前索引。 比较 currlen 和 maxlen。 如果 maxlen 小于 currlen，则将 maxlen 更新为 currlen 并从 st 开始。 完整遍历字符串后，所需的最长子字符串（不重复字符）为 s [start]到 s [start + maxlen-1]。
 **实施：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find and print longest
 // substring without repeating characters.
@@ -113,9 +113,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find 
 // and print longest substring
@@ -235,7 +235,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find and print longest 
 # substring without repeating characters. 
@@ -317,9 +317,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find 
 // and print longest substring
@@ -448,12 +448,11 @@ EKSFORG
 **时间复杂度：** O（n）
 **辅助空间：** O（n）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

@@ -52,9 +52,9 @@ Dist(n1, n2) = Level[n1] + Level[n2] - 2*Level[lca]
 >     
 > 4.  最后，应用上面讨论的距离公式来获得两个节点之间的距离。
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <bits/stdc++.h> 
 #define MAX 100001 
@@ -278,9 +278,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the approach 
 import java.util.*; 
@@ -512,7 +512,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 from collections import deque 
 from math import log2 
@@ -744,6 +744,5 @@ Dist(8, 5) = 5
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

@@ -32,9 +32,9 @@
 *   UUID 用于生成随机数，该随机数将转换为字符串并作为输入传递。
 *   可以使用 DatatypeConverter 将返回的对象转换为十六进制二进制格式。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to demonstrate 
 // how to create a Hash 
@@ -140,9 +140,9 @@ public class Hashing {
 
 **代码：**
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to demonstrate 
 // how to hash a password 
@@ -232,12 +232,11 @@ public class Hashing {
 *   记录敏感数据。
 *   保存密码。
 
-注意读者！ 现在不要停止学习。 通过 [**Java 和 Java Collections 基础课程**](https://practice.geeksforgeeks.org/courses/Java-Collections?vC=1) 以对学生方便的价格掌握所有重要的 Java 和 Collections 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

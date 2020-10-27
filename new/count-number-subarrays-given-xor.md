@@ -21,9 +21,9 @@ Explanation : The subarrays having XOR of
 
 **简单解决方案**是使用两个循环遍历 arr []的所有可能子数组，并将其元素具有 XOR 的子数组的数量计为 m。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A simple C++ Program to count all subarrays having
 // XOR of elements as given value m
@@ -68,9 +68,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A simple Java Program to count all
 // subarrays having XOR of elements 
@@ -135,7 +135,7 @@ public class GFG {
 
 ## Python3
 
-```
+```py
 
 # A simple Python3 Program to count all subarrays having
 # XOR of elements as given value m
@@ -177,9 +177,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A simple C# Program to count all
 // subarrays having XOR of elements
@@ -243,9 +243,9 @@ class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php
 // A simple PHP Program to 
@@ -329,9 +329,9 @@ Number of subarrays having given XOR is 4
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to count all subarrays having
 // XOR of elements as given value m with
@@ -399,9 +399,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to count all subarrays having
 // XOR of elements as given value m with
@@ -479,7 +479,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 
 # Python3 Program to count all subarrays 
 # having XOR of elements as given value m 
@@ -545,9 +545,9 @@ print("Number of subarrays having given XOR is",
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to count all subarrays having
 // XOR of elements as given value m with
@@ -637,7 +637,7 @@ Number of subarrays having given XOR is 4
 
 ## Python3
 
-```
+```py
 
 from collections import defaultdict
 def subarrayXor(arr, n, m): 
@@ -681,4 +681,3 @@ Number of subarrays having given XOR is 4
 本文由 **Anmol Ratnam** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 如果发现任何不正确的内容，或者您​​想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

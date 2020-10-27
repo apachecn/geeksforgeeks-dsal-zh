@@ -21,9 +21,9 @@
 **更好的方法：**
 为了避免溢出而不是将数字相乘，我们可以分别找到每个元素的素因数，并将素因数存储在一组或唯一图中。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count distinct prime 
 // factors of a number. 
@@ -81,9 +81,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count distinct 
 // prime factors of a number. 
@@ -155,7 +155,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to count distinct  
 # prime factors of a number 
@@ -206,11 +206,11 @@ if __name__ == "__main__":
 
 # This code is contributed by ita_c 
 
-```
+```c
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count distinct 
 // prime factors of a number. 
@@ -294,6 +294,5 @@ class GFG {
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

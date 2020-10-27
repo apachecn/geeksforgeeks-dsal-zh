@@ -19,11 +19,11 @@ line are 4, those point are {0, 0}, {1, 1}, {2, 2},
 在实现中需要注意的一些事情是：
 1）如果两个点分别是（x1，y1）和（x2，y2），则它们的斜率将是（y2 – y1）/（x2 – x1），可以是双精度值 并可能导致精度问题。 为了消除精度问题，我们将斜率视为对（（y2 – y1），（x2 – x1））而不是比率，并在插入地图之前将其对的 gcd 减小。 在下面的代码中，垂直或重复的代码点将单独处理。
 
-2）如果我们使用 c ++ 中的 [unordered_map 或 Java](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 中的 [HashMap 来存储斜率对，则解的总时间复杂度将为 O（n ^ 2）](https://www.geeksforgeeks.org/hashmap-treemap-java/)
+2）如果我们使用 C++ 中的 [unordered_map 或 Java](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 中的 [HashMap 来存储斜率对，则解的总时间复杂度将为 O（n ^ 2）](https://www.geeksforgeeks.org/hashmap-treemap-java/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C/C++ program to find maximum number of point 
 which lie on same line */
@@ -118,7 +118,7 @@ int main()
 
 ## Python3
 
-```
+```py
 
 def maxPoints(points): 
         n=len(points) 
@@ -174,4 +174,3 @@ print(maxPoints(points))
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

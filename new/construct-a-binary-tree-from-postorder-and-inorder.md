@@ -47,9 +47,9 @@ Output: Root of below tree
 ……。使创建的树成为根的左子节点。
 以下是上述想法的实现。 一个重要的观察结果是，每当创建新节点时，我们都会降低后序索引的索引，因此在左子树之前递归地调用右子树。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ program to construct tree using inorder and 
    postorder traversals */
@@ -160,9 +160,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to construct a tree using inorder 
 // and postorder traversals 
@@ -269,7 +269,7 @@ class BinaryTree {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to construct tree using  
 # inorder and postorder traversals  
@@ -356,9 +356,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to construct a tree using  
 // inorder and postorder traversals  
@@ -494,11 +494,11 @@ Preorder of the constructed tree :
 ```
 
 **时间复杂度：** O（n <sup>2</sup> ）
-**优化的方法：**我们可以使用哈希（C ++中的 unordered_map 或 Java 中的 HashMap）优化上述解决方案。 我们将有序遍历的索引存储在哈希表中。 这样就可以完成 O（1）次搜索。
+**优化的方法：**我们可以使用哈希（C++中的 unordered_map 或 Java 中的 HashMap）优化上述解决方案。 我们将有序遍历的索引存储在哈希表中。 这样就可以完成 O（1）次搜索。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ program to construct tree using inorder and  
 postorder traversals */
@@ -619,9 +619,9 @@ Preorder of the constructed tree :
 
 以下是上述想法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program for above approach 
 #include <bits/stdc++.h>  
@@ -767,4 +767,3 @@ Preorder of the constructed tree :
 
 本文由 **Rishi** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

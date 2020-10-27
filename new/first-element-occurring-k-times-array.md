@@ -33,9 +33,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find first 
 // element occurring k times 
@@ -76,9 +76,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 import java.util.HashMap; 
 
@@ -130,7 +130,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to  
 # find first element  
@@ -177,9 +177,9 @@ if __name__=="__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find first  
 // element occurring k times  
@@ -251,4 +251,3 @@ class GFG 
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

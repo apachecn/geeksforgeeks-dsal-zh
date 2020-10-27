@@ -17,9 +17,9 @@ Output: 1
 
 这个想法是**使用[散列](https://www.geeksforgeeks.org/hashing-set-1-introduction/)** 来平均解决 O（n）时间。 我们将元素及其计数存储在哈希表中。 存储完计数后，我们再次遍历输入数组并打印计数不止一次的那些元素。 为了确保每个输出元素仅打印一次，我们在打印元素后将 count 设置为 0。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print all repeating elements 
 #include <bits/stdc++.h> 
@@ -60,9 +60,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print all repeating elements 
 
@@ -115,7 +115,7 @@ public class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to print 
 # all repeating elements 
@@ -154,9 +154,9 @@ printRepeating(arr, n)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print all repeating elements 
 using System; 
@@ -220,12 +220,11 @@ public static void Main(String[] args)
 
 **时间复杂度：在散列插入和搜索功能在 O（1）时间工作的假设下，** O（n）。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则也可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

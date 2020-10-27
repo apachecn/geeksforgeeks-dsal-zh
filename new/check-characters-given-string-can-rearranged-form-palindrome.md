@@ -14,9 +14,9 @@
 
 下面是上述方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to check if 
 // characters of a given string can 
@@ -66,9 +66,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to check if 
 // characters of a given string can 
@@ -132,7 +132,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to check if 
 # characters of a given string can 
@@ -182,9 +182,9 @@ else :
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to check if 
 // characters of a given string can 
@@ -262,9 +262,9 @@ Yes
 4）或如果字符串长度为奇数，则列表大小应为 1。
 5）在上述两个条件（3）或（4）中返回 true，否则返回 false。
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include<bits/stdc++.h> 
 using namespace std; 
@@ -322,9 +322,9 @@ int main() 
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 import java.util.ArrayList; 
 import java.util.List; 
@@ -379,7 +379,7 @@ class GFG{
 
 ## Python3
 
-```
+```py
 
 ''' 
 * function to check whether characters of  
@@ -422,9 +422,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Implementation of the above approach  
 using System;  
@@ -491,4 +491,3 @@ No
 Yes
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

@@ -12,9 +12,9 @@ Output : char = a, index= 6
 
 想法是使用整数变量，并使用其二进制表示形式的位来存储是否存在字符。 通常，整数至少有 32 位，我们只需要存储 26 个字符的存在/不存在。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Efficiently check First repeated character 
 // in C++ program  
@@ -63,9 +63,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Efficiently check First repeated character 
 // in Java program  
@@ -154,9 +154,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to Efficiently  
 // check First repeated character 
@@ -203,9 +203,9 @@ public class First_Repeated_char {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php  
 // Efficiently check First repeated character 
@@ -267,4 +267,3 @@ Char = a   and Index = 6
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

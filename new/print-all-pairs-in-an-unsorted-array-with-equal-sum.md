@@ -21,7 +21,7 @@ Pairs : ( 4, 86) ( 23, 67) have sum : 90
 
 ```
 
-这个想法是在 C ++ STL 中使用[映射，以避免重复的元素对。](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 
+这个想法是在 C++ STL 中使用[映射，以避免重复的元素对。](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 
 
 *   创建一个键，键为整数的[对](https://www.geeksforgeeks.org/pair-in-cpp-stl/)，值的整数作为整数，以存储所有唯一的元素对及其对应的总和。
 *   遍历数组并生成所有可能的对，并将这些对及其对应的和存储在第一张地图上。
@@ -30,9 +30,9 @@ Pairs : ( 4, 86) ( 23, 67) have sum : 90
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print all pairs 
 // with equal sum 
@@ -89,9 +89,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print all pairs 
 // with equal sum 
@@ -168,7 +168,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python implementation of the 
 # approach 
@@ -213,9 +213,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print all pairs 
 // with equal sum 
@@ -320,9 +320,9 @@ Pairs : ( 10, 54) ( 22, 42)  have sum : 64
 
 使用一个单一映射的上述方法的另一种实现。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for the above approach 
 import java.io.*; 
@@ -409,12 +409,11 @@ Pairs:(8,2) (6,4)  have sum:10
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

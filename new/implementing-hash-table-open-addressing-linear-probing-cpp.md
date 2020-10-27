@@ -1,4 +1,4 @@
-# 在 C ++中使用开放式寻址线性探测实现自己的哈希表
+# 在 C++中使用开放式寻址线性探测实现自己的哈希表
 
 **先决条件–** [散列简介](https://www.geeksforgeeks.org/hashing-set-1-introduction/)和[用 Java 中的单独链接实现我们自己的散列表](https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/)
 
@@ -188,4 +188,3 @@ key = 2 value = 3
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

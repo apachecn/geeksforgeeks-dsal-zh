@@ -33,9 +33,9 @@ with indexes {1, 2, 3, 4}.
 **解释：**
 如果（sum [i]％k）==（sum [j]％k），其中 sum [i] = sum（arr [0] + .. + arr [i ]）和 sum [j] = sum（arr [0] + .. + arr [j]）且'i'小于'j'，则 sum（arr [i + 1] + .. + arr [j ]）必须被'k'整除。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the maximum number 
 // of chocolates to be distributed equally among 
@@ -107,9 +107,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the maximum number 
 // of chocolates to be distributed equally among 
@@ -185,7 +185,7 @@ System.out.println("Maximum number of chocolates: "
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to  
 # find the maximum number 
@@ -236,9 +236,9 @@ print("Maximum number of chocolates: " +
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find  
 // the maximum number of  
@@ -342,12 +342,11 @@ Maximum number of chocolates: 6
 **时间复杂度：** O（n）。
 **辅助空间：** O（n）。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

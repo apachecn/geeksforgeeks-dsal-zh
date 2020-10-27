@@ -21,7 +21,7 @@
 
 **[STL 映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)**
 
-容器映射是 C ++ 的[标准库中包含的关联容器。 此类的定义位于名称空间 std 的头文件“ map”中。](https://www.geeksforgeeks.org/stack-in-cpp-stl/)
+容器映射是 C++ 的[标准库中包含的关联容器。 此类的定义位于名称空间 std 的头文件“ map”中。](https://www.geeksforgeeks.org/stack-in-cpp-stl/)
 
 **STL Map 内部实现：**
 它是作为自平衡红黑树实现的。 可能最常见的两种自平衡树是[红黑树](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)和 [AVL 树](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/)。 为了在插入/更新之后平衡树，两种算法都使用旋转的概念，在该概念中，树的节点被旋转以执行重新平衡。 在两种算法中，插入/删除操作均为 O（log n），在红黑树重新平衡旋转的情况下为 O（1）操作，而对于 AVL，这是 O（log n）操作，因此 RB 树在这方面的重新平衡鼠尾草效率更高，并且是更常用的可能原因之一。
@@ -43,4 +43,3 @@
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

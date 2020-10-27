@@ -30,9 +30,9 @@ Top view of the above binary tree is
 
 这个想法是做类似于[垂直顺序遍历](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)的操作。 像[垂直顺序遍历](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)一样，我们需要将水平距离相同的节点放在一起。 我们进行水平顺序遍历，以便在其下方具有相同水平距离的任何其他节点之前访问水平节点上的最高节点。 散列用于检查是否看到给定水平距离的节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print top 
 // view of binary tree 
@@ -132,9 +132,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print top 
 // view of binary tree 
@@ -238,7 +238,7 @@ class BinaryTree {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to print top  
 # view of binary tree 
@@ -331,9 +331,9 @@ Following are nodes in top view of Binary Tree
 
 这种方法不需要队列。 这里我们使用两个变量，一个用于当前节点到根的垂直距离，另一个用于当前节点到根的深度。 我们使用垂直距离进行索引。 如果具有相同垂直距离的一个节点再次出现，我们将检查新节点的深度相对于地图中具有相同垂直距离的当前节点是较低还是较高。 如果新节点的深度较小，则我们将其替换。
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include<bits/stdc++.h> 
 using namespace std; 
@@ -398,9 +398,9 @@ int main(){
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print top 
 // view of binary tree 
@@ -496,7 +496,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Binary Tree Node  
 """ utility that allocates a newNode  
@@ -560,4 +560,3 @@ Following are nodes in top view of Binary Tree
 
 本文由 **Rohan** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

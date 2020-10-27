@@ -29,9 +29,9 @@ Output : 5
     4.  检查哈希表中是否存在**（sum-k）**。 如果存在，则从哈希表中获取**（sum-k）**的索引作为**索引**。 现在检查 maxLen <（i-index），然后更新 **maxLen** =（i-index）。
 4.  返回 **maxLen** 。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the length 
 // of longest subarray having sum k 
@@ -92,9 +92,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the length 
 // of longest subarray having sum k 
@@ -157,7 +157,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to find the length 
 # of longest subArray having sum k 
@@ -208,9 +208,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the length  
 // of longest subarray having sum k  
@@ -288,12 +288,11 @@ Length = 4
 **时间复杂度：** O（n）。
 **辅助空间：** O（n）。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
+
 
 * * *
 
 * * *
 
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+

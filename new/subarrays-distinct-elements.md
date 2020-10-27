@@ -34,9 +34,9 @@ Output : 20
 
 以下是此方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to calculate sum of lengths of subarrays 
 // of distinct elements. 
@@ -87,9 +87,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to calculate sum of lengths of subarrays  
 // of distinct elements.  
@@ -191,11 +191,11 @@ if __name__=="__main__":
 
 # This code is contributed by ita_c 
 
-```
+```c
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to calculate sum of lengths of subarrays  
 // of distinct elements 
@@ -264,4 +264,3 @@ public class geeks
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。
