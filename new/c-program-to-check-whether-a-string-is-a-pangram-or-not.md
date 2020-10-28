@@ -2,31 +2,31 @@
 
 > 原文：[https://www.geeksforgeeks.org/c-program-to-check-whether-a-string-is-a-pangram-or-not/](https://www.geeksforgeeks.org/c-program-to-check-whether-a-string-is-a-pangram-or-not/)
 
-给定字符串 **str，**，任务是检查在 C++中是否使用了字符串。
+给定字符串`str`，任务是检查在 C++ 中是否使用了字符串。
 
-> 如果[字符串包含所有英语字母，则该字符串为 Pangram](https://www.geeksforgeeks.org/pangram-checking/) 。
+> [如果字符串包含所有英语字母，则该字符串为 Pangram](https://www.geeksforgeeks.org/pangram-checking/)。
 
 **示例**：
 
-> **输入：str =“** 我们立即判断下一个奖项的古董象牙带扣”
+> **输入**：`str = "We promptly judged antique ivory buckles for the next prize"`
 > 
 > **输出**：是
 > 
-> **说明**：在上面的字符串中，str 具有所有英语字母。
+> **说明**：在上面的字符串中，`str`具有所有英语字母。
 > 
-> **输入：str =“** 我们立即判断了该奖品的古董象牙带扣“
+> **输入**：`str = "We promptly judged antique ivory buckles for the prize"`
 > 
 > **输出**：否
 
- **### **<u>方法-1：不使用 STL</u>**
+**方法 1：不使用 STL**
 
 这种方法基于散列。
 
-1.  创建大小为 26 的布尔类型的哈希数据结构，以使索引 0 表示字符“ a”，索引 1 表示字符“ b”，依此类推。
+1.  创建大小为 26 的布尔类型的哈希数据结构，以使索引 0 表示字符`"a"`，索引 1 表示字符`"b"`，依此类推。
 
 2.  逐字符遍历字符串，并将特定字符标记为哈希中的字符。
 
-3.  在完成遍历和标记字符串之后，遍历哈希并查看是否存在所有字符，即每个索引都为 true。 如果都标记了，则返回 true，否则返回 False。
+3.  在完成遍历和标记字符串之后，遍历哈希并查看是否存在所有字符，即每个索引都为`true`。 如果都标记了，则返回`true`，否则返回`False`。
 
 下面是上述方法的实现：
 
@@ -107,17 +107,19 @@ int main()
 Yes
 ```
 
-**时间复杂度**：*O（N），其中 N 为*，，*字符串的长度。*
+**时间复杂度**：`O(n)`，其中`N`为字符串的长度。
 
-**辅助空间**：*O（1）*
+**辅助空间**：`O(1)`
 
-### **<u>方法 2：使用</u>** [**<u>STL</u>**](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/)
+**方法 2**：使用 [**STL**](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/)
 
-STL 的 [transform（）方法可用于检查给定的字符串是否为 Pangram。](https://www.geeksforgeeks.org/transform-c-stl-perform-operation-elements/)
+STL 的[`transform()`方法](https://www.geeksforgeeks.org/transform-c-stl-perform-operation-elements/)可用于检查给定的字符串是否为 Pangram。
 
 **语法**：
 
-> transform（s.begin（），s.end（），s.begin（），:: toupper）;
+```
+transform(s.begin(), s.end(), s.begin(), ::toupper);
+```
 
 **方法**：
 
@@ -126,7 +128,7 @@ STL 的 [transform（）方法可用于检查给定的字符串是否为 Pangram
 > **步骤 1**：首先将所有字母都转换为大写或小写，因为如果不进行转换就进行检查，则将小写和大写字母视为不同的字母。
 > **步骤 2**：对字符串进行排序并检查不同的字母。
 > **步骤 3**：空间也将被视为一个独立的实体。
-> **步骤 4**：现在检查是否 count = 27，则该字符串包含所有 26 个字母。
+> **步骤 4**：现在检查是否`count = 27`，则该字符串包含所有 26 个字母。
 
 下面是上述方法的实现：
 
@@ -200,9 +202,9 @@ int main()
 Yes
 ```
 
-**时间复杂度**：*O（N），其中 N 为*，，*字符串的长度。*
+**时间复杂度**：`O(N)`，其中`N`为字符串的长度。
 
-**辅助空间**：*O（1）*
+**辅助空间**：`O(1)`
 
 
 
