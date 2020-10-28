@@ -8,17 +8,17 @@
 
 **示例**：
 
-> **输入**：`str1 = "egg"`，`str2 ="add"`
+> **输入**：`str1 = "egg", str2 ="add"`
 > 
-> **输出**：是
+> **输出**：`Yes`
 > 
 > **说明**：
 > 
 > `str1`中的 ASCII 值 101 的`'e'`映射为`str2`中的 ASCII 值 97 的`'a'`。`str1`中 ASCII 值 103 的`'g'`映射为`str2`中的 ASCII 值 100 的`'d'`。
 > 
-> **输入**：`str1 ="蛋"，str2 ="添加"`
+> **输入**：`str1 = “eggs”, str2 = “addd”`
 > 
-> **输出**：否
+> **输出**：`No`
 
 [哈希](http://www.geeksforgeeks.org/hashing-data-structure/)方法：有关基于[`Hashmap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)的方法，请参考[先前的文章](https://www.geeksforgeeks.org/check-if-two-given-strings-are-isomorphic-to-each-other/)。
 
