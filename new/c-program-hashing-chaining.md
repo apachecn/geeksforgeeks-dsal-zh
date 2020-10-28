@@ -1,19 +1,20 @@
-# 用于通过链接进行哈希处理的 C++程序
+# 用于通过链接进行哈希处理的 C++ 程序
 
 在[散列](http://www.geeksforgeeks.org/hashing-data-structure/)中，存在一个散列函数，可将键映射到某些值。 但是这些哈希函数可能会导致将两个或更多键映射到相同值的冲突。 **链哈希**避免了冲突。 这个想法是使哈希表的每个单元指向具有相同哈希函数值的记录的链接列表。
 
-让我们创建一个哈希函数，使我们的哈希表具有“ N”个存储桶。
+让我们创建一个哈希函数，使我们的哈希表具有`N`个存储桶。
 要将节点插入哈希表，我们需要找到给定键的哈希索引。 并且可以使用哈希函数进行计算。
-**示例：hashIndex =键％noOfBuckets**
+
+示例：`hashIndex = key % noOfBuckets`
 
 **插入**：移至对应于上述计算得出的哈希索引的存储桶，并将新节点插入列表的末尾。
 
 **删除**：要从哈希表中删除节点，请计算密钥的哈希索引，移动到与计算出的哈希索引相对应的存储桶中，在当前存储桶中搜索列表以查找并删除节点 给定密钥（如果找到）。
 ![](img/9f7240401363f22b94eb01c1c94738d1.png)
 
-请参考 **[哈希| 设置 2（单独链接）](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)** 以获得详细信息。
+请参考[哈希 | 设置 2（单独链接）](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)以获得详细信息。
 
-我们在 C++ 中使用[列表，该列表在内部实现为链接列表（更快的插入和删除）。](https://www.geeksforgeeks.org/list-cpp-stl/)
+我们在 C++ 中使用[列表](https://www.geeksforgeeks.org/list-cpp-stl/)，该列表在内部实现为链接列表（更快的插入和删除）。
 
 ```
 // CPP program to implement hashing with chaining

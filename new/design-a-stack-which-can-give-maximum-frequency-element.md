@@ -5,18 +5,24 @@
 **示例**：
 
 > **输入**：
-> push（4）8
-> push（6）6
-> push（7）7
-> push（6）6
-> push（8）； 4
+>
+> ```
+> push(4) 8
+> push(6) 6
+> push(7) 7
+> push(6) 6
+> push(8); 4
+> ```
 > 
 > **输出**：
-> pop（）->返回 6，因为 6 是最常见的（频率 6 = 2）。
-> pop（）->返回 8（6 的频率也最高，但不是最高）
+> 
+> `pop()`返回 6，因为 6 是最常见的（频率`6 = 2`）。
+> 
+> `pop()`返回 8（6 的频率也最高，但不是最高）
 
-**方法**：维护两个 [HashMap](https://www.geeksforgeeks.org/java-util-hashmap-in-java/) ，一个是频率 HashMap，它将元素映射到它们的频率，另一个是 setMap，将所有具有相同频率的元素映射到一组（堆栈）。
-FrequencyStack 具有 2 个功能：
+**方法**：维护两个[`HashMap`](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)，一个是频率`HashMap`，它将元素映射到它们的频率，另一个是`setMap`，将所有具有相同频率的元素映射到一组（堆栈）。
+
+`FrequencyStack`具有 2 个功能：
 
 1.  **push（int x）**：使用频率 HashMap 映射元素（x）并更新 maxfreq 变量（即，直到现在都保持最大频率）。 **setMap** 维护一个堆栈，其中包含所有具有相同频率的元素。
 2.  **pop（）**：首先从 setMap 中获取 maxfreq 元素，然后降低弹出元素的频率。 弹出后，如果堆栈变空，则减小 maxfreq。
