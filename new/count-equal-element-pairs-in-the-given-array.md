@@ -1,5 +1,7 @@
 # 在给定数组
 
+> 原文：[https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/](https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/)
+
 中对相等的元素对进行计数
 
 给定表示手套长度的 **N** 个整数的数组 **arr []** ，任务是从给定的数组中计算最大可能的手套对。 **注意**手套只能与相同尺寸的手套配对，并且只能是单副手套的一部分。
@@ -131,8 +133,14 @@ class GFG {
 
 # Python3 implementation of the approach
 
+> 原文：[https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/](https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/)
+
 # Function to return the maximum
+
+> 原文：[https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/](https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/)
 # possible pairs of gloves
+
+> 原文：[https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/](https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/)
 
 def cntgloves(arr, n):
 
@@ -160,6 +168,8 @@ def cntgloves(arr, n):
     return count
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/](https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/)
 if __name__ == "__main__":
 
     arr = [6, 5, 2, 3, 5, 2, 2, 1]

@@ -1,5 +1,7 @@
 # 给定字符串的最小子字符串的长度，该字符串包含另一个字符串作为子序列
 
+> 原文：[https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/](https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/)
+
 给定两个[字符串](https://www.geeksforgeeks.org/category/data-structures/c-strings/) **A** 和 **B** ，任务是找到具有**的 **A** 中最小的[子字符串](https://www.geeksforgeeks.org/substring-in-java/) ] B** 作为[子序列](https://www.geeksforgeeks.org/tag/subsequence/)。
 
 **示例**：
@@ -190,12 +192,22 @@ int main()
 ```py
 
 # Python3 program to implement
+
+> 原文：[https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/](https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/)
 # the above approach
+
+> 原文：[https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/](https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/)
 import sys
 
 # Function to find the length of
+
+> 原文：[https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/](https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/)
 # smallest substring of a having
+
+> 原文：[https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/](https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/)
 # string b as a subsequence
+
+> 原文：[https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/](https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/)
 def minLength(a, b):
 
     # Stores the characters present
@@ -291,6 +303,8 @@ def minLength(a, b):
     return l
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/](https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/)
 if __name__ == '__main__':
 
     # Given two string
@@ -304,6 +318,8 @@ if __name__ == '__main__':
         print("Impossible")
 
 # This code is contributed by SURENDRA_GANGWAR
+
+> 原文：[https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/](https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/)
 
 ```
 

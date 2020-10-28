@@ -1,5 +1,7 @@
 # XY 平面中 M 条线段与 N 条垂直线的交点计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
+
 给定 **N** 垂直线（平行于 Y 轴）的 **x** 坐标和 **M** 线段从（x1，y1）延伸到（x2，y2）的坐标， 任务是找到线段与垂直线相交的总数。
 
 **范例**：
@@ -286,9 +288,15 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation for the  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
 # above approach 
 
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
+
 # Function to create prefix sum array 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
 def createPrefixArray(n, arr, prefSize, pref): 
 
     # Initialize the prefix array  
@@ -307,7 +315,11 @@ def createPrefixArray(n, arr, prefSize, pref):
         pref[i] += pref[i - 1] 
 
 # Function that returns the count  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
 # of total intersection 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
 def pointOfIntersection(m, segments, size, pref): 
 
     # ans is the number of points of  
@@ -345,10 +357,16 @@ def pointOfIntersection(m, segments, size, pref):
 
 # Driver code 
 
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
+
 # Number of vertical lines 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
 N = 4 
 
 # Number of line segments 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
 M = 8 
 
 size = 2000000 + 2
@@ -356,6 +374,8 @@ pref = [0] * size 
 lines = [ -5, -3, 2, 3 ] 
 
 # Format : x1, y1, x2, y2 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
 segments = [ [ -2, 5, 5, -6 ], 
              [ -5, -2, -3, -5 ], 
              [ -2, 3, -6, 1 ], 
@@ -366,12 +386,18 @@ segments = [ [ -2, 5, 5, -6 ],
              [ 1, 2, -2, 1 ] ] 
 
 # First create the prefix array 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
 createPrefixArray(N, lines, size, pref) 
 
 # Print the total number of intersections 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
 print(pointOfIntersection(M, segments, size, pref)) 
 
 # This code is contributed by himanshu77 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
 
 ```
 

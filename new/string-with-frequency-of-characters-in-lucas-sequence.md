@@ -1,5 +1,7 @@
 # 具有卢卡斯序列
 
+> 原文：[https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/](https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/)
+
 中字符频率的字符串
 
 给定包含小写英文字母的字符串“ str”，任务是查找字符串字符的频率是否按 Lucas 顺序排列。 您可以随意安排频率编号，以形成卢卡斯序列。 如果可能，请打印*是*，否则打印 *NO* 。
@@ -225,10 +227,16 @@ class GFG 
 ```py
 
 # Python3 implementation of the approach  
+
+> 原文：[https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/](https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/)
 from collections import defaultdict 
 
 # Function that checks if the  
+
+> 原文：[https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/](https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/)
 # frequencies are in Lucas sequence.  
+
+> 原文：[https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/](https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/)
 def lucas_sequence(s, n):  
 
     # map is used to store  
@@ -281,6 +289,8 @@ def lucas_sequence(s, n): 
         return "NO"
 
 # Driver code  
+
+> 原文：[https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/](https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/)
 if __name__ == "__main__": 
 
     s = "oooeeeeqkk"
@@ -288,6 +298,8 @@ if __name__ == "__main__":
     print(lucas_sequence(s, n))  
 
 # This code is contributed by Rituraj Jain 
+
+> 原文：[https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/](https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/)
 
 ```
 

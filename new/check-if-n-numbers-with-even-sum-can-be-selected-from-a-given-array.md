@@ -1,5 +1,7 @@
 # 检查是否可以从给定数组
 
+> 原文：[https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/](https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/)
+
 中选择 N 个偶数和的数字
 
 给定[数组](https://www.geeksforgeeks.org/array-data-structure/) ***arr []*** 和奇数 ***N*** ，任务是检查[HTG10 可以从具有**甚至** ***和*** 的阵列中选择 **N 个** 号。 如果可能，打印 ***是*** 。 否则打印 ***否*** 。
@@ -216,11 +218,21 @@ public static void main(String[] args)
 ```py
 
 # Python3 efficient program to check 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/](https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/)
 # if N numbers with Odd sum can be 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/](https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/)
 # selected from the given array 
 
+> 原文：[https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/](https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/)
+
 # Function to check if an odd sum can be 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/](https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/)
 # made using N integers from the array 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/](https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/)
 def checkEvenSum(arr, N, size): 
 
     # Initialize odd and even counts 
@@ -275,6 +287,8 @@ def checkEvenSum(arr, N, size):
     return False
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/](https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/)
 if __name__ == "__main__": 
 
     arr = [ 9, 2, 3, 4, 18, 7, 7, 6 ] 
@@ -287,6 +301,8 @@ if __name__ == "__main__":
         print("No") 
 
 # This code is contributed by chitranayal 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/](https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/)
 
 ```
 

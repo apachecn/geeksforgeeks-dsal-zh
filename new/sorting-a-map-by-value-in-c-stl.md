@@ -1,5 +1,7 @@
 # 按 C++ STL 中的值对地图排序
 
+> 原文：[https://www.geeksforgeeks.org/sorting-a-map-by-value-in-c-stl/](https://www.geeksforgeeks.org/sorting-a-map-by-value-in-c-stl/)
+
 [映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)是以映射方式存储元素的关联容器。 每个元素都有一个键值和一个映射值。 任何两个映射值都不能具有相等的键值。 默认情况下， [C++](http://www.geeksforgeeks.org/c-plus-plus/) 中的 Map 根据其键以升序排序。 下面是实现此目的的各种方法：
 
 **<u>方法 1 –使用[对的](https://www.geeksforgeeks.org/pair-in-cpp-stl/)[向量](http://www.geeksforgeeks.org/vector-in-cpp-stl/)</u>** 的想法是将地图中的所有内容复制到[的对应向量中 对](https://www.geeksforgeeks.org/pair-in-cpp-stl/)和[使用下面给出的](https://www.geeksforgeeks.org/sorting-vector-of-pairs-in-c-set-1-sort-by-first-and-second/) [lambda 函数](https://www.geeksforgeeks.org/lambda-expression-in-c/)根据第二值对对向量进行排序：

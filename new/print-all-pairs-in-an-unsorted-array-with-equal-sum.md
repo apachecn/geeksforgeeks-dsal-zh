@@ -1,5 +1,7 @@
 # 以相等的总和在未排序的数组中打印所有对
 
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/](https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/)
+
 给定一个未排序的数组 A []。 任务是以相等的总和打印未排序数组中的所有**个唯一对**。
 
 **注意**：以以下示例所示的格式打印结果。
@@ -176,10 +178,18 @@ class GFG {
 ```py
 
 # Python implementation of the 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/](https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/)
 # approach 
 
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/](https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/)
+
 # Function to print all pairs 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/](https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/)
 # with equal sum 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/](https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/)
 
 def pairWithEqualSum(A, n): 
     mp = {} 
@@ -208,6 +218,8 @@ def pairWithEqualSum(A, n):
             print("have sum :", itr) 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/](https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/)
 if __name__ == "__main__": 
 
     A = [6, 4, 12, 10, 22, 54, 

@@ -1,5 +1,7 @@
 # 数组
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/)
+
 中所有偶数元素的总和
 
 给定包含重复元素的整数数组。 任务是找到给定数组中所有偶数元素的总和。 那是所有此类元素在阵列中的偶数频率之和。
@@ -130,11 +132,21 @@ public class GFG {
 ```py
 
 # Python3 program to find the sum 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/)
 # of all even occurring elements
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/)
 # in an array 
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/)
+
 # Function to find the sum of all even 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/)
 # occurring elements in an array 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/)
 def findSum(arr, N): 
 
     # Map to store frequency of 
@@ -161,6 +173,8 @@ def findSum(arr, N):
     return Sum
 
 # Driver code    
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/)
 arr = [ 10, 20, 20, 40, 40 ]
 
 N = len(arr)
@@ -168,6 +182,8 @@ N = len(arr)
 print(findSum(arr, N))
 
 # This code is contributed by divyeshrabadiya07
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-even-occurring-element-in-an-array/)
 
 ```
 

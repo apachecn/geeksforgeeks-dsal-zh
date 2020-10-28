@@ -1,5 +1,7 @@
 # 检查字符串的任何字谜是否回文
 
+> 原文：[https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/](https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/)
+
 我们给出了一个字谜字符串，我们必须检查它是否可以做成回文。
 
 **示例**：
@@ -156,6 +158,8 @@ def canFormPalindrome(string):
     return True
 
 # Driver program to test to print printDups
+
+> 原文：[https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/](https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/)
 if(canFormPalindrome("geeksforgeeks")):
     print "Yes"
 else:
@@ -166,6 +170,8 @@ else:
     print "NO"
 
 # This code is contributed by Sachin Bisht
+
+> 原文：[https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/](https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/)
 
 ```
 

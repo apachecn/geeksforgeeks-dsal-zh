@@ -1,5 +1,7 @@
 # 连续整数
 
+> 原文：[https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/](https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/)
+
 的最大递增子序列
 
 给定 n 个正整数数组。 我们需要找到连续正整数的最大递增序列。
@@ -140,9 +142,15 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation of longest  
+
+> 原文：[https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/](https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/)
 # continuous increasing subsequence 
 
+> 原文：[https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/](https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/)
+
 # Function for LIS 
+
+> 原文：[https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/](https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/)
 def findLIS(A, n): 
     hash = dict() 
 
@@ -178,12 +186,16 @@ def findLIS(A, n):
         start += 1
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/](https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/)
 if __name__ == "__main__": 
     A = [ 2, 5, 3, 7, 4, 8, 5, 13, 6 ] 
     n = len(A) 
     findLIS(A, n) 
 
 # This code is contributed by sanjeev2552 
+
+> 原文：[https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/](https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/)
 
 ```
 

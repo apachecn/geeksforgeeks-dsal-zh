@@ -1,5 +1,7 @@
 # 检查二叉树是否包含一对总和为 K 的叶节点
 
+> 原文：[https://www.geeksforgeeks.org/check-if-a-binary-tree-consists-of-a-pair-of-leaf-nodes-with-sum-k/](https://www.geeksforgeeks.org/check-if-a-binary-tree-consists-of-a-pair-of-leaf-nodes-with-sum-k/)
+
 给定 [**二叉树**](https://www.geeksforgeeks.org/binary-tree-data-structure/) 和整数 **K** ，任务是检查树是否由一对叶节点组成，它们的总和为 **K [** 。 如果有多对，则打印其中任何一对。 否则打印-1。
 
 **注意**：假定给定的二叉树将始终具有多个 1 个叶节点。

@@ -1,5 +1,7 @@
 # 程序用于解析分子并获取原子数
 
+> 原文：[https://www.geeksforgeeks.org/program-to-parse-the-molecules-and-get-the-atoms-count/](https://www.geeksforgeeks.org/program-to-parse-the-molecules-and-get-the-atoms-count/)
+
 给定化学式为字符串，任务是获取该化学式中的原子数。
 
 **示例**：

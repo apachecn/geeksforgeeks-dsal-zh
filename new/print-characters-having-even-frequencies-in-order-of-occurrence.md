@@ -1,5 +1,7 @@
 # 按出现顺序打印具有偶数频率的字符
 
+> 原文：[https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/)
+
 给定仅包含小写字符的字符串 **str** 。 任务是按照出现的顺序打印频率均匀的字符。
 
 **注意**：重复出现的偶数频率按出现的次数打印。
@@ -130,10 +132,16 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation of the approach 
+
+> 原文：[https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/)
 SIZE = 26
 
 # Function to print the even frequency characters 
+
+> 原文：[https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/)
 # in the order of their occurrence 
+
+> 原文：[https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/)
 def printChar(string, n): 
 
     # To store the frequency of each of 
@@ -154,12 +162,16 @@ def printChar(string, n):
             print(string[i], end = "") 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/)
 if __name__ == '__main__': 
     string = "geeksforgeeks"
     n = len(string) 
     printChar(string, n) 
 
 # This code is contributed by Ashutosh450 
+
+> 原文：[https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/)
 
 ```
 

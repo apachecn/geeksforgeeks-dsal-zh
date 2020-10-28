@@ -1,5 +1,7 @@
 # 使用 STL
 
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/](https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/)
+
 的无向图的连接组件的唯一长度计数
 
 给定一个无向图，任务是查找每个连接组件的大小并打印连接组件的唯一大小的数量
@@ -270,20 +272,32 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to find unique count of
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/](https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/)
 # connected components
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/](https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/)
 graph = [[] for i in range(100 + 1)]
 visited = [False] * (100 + 1)
 ans = 0
 
 # Function to add edge in the garph
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/](https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/)
 def add_edge(u, v):
 
     graph[u].append(v)
     graph[v].append(u)
 
 # Function to traverse the undirected graph
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/](https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/)
 # using DFS algorithm and keep a track of
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/](https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/)
 # individual lengths of connected chains
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/](https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/)
 def depthFirst(v):
 
     global ans
@@ -305,7 +319,11 @@ def depthFirst(v):
             depthFirst(i)
 
 # Function to initialize the graph
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/](https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/)
 # and display the result
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/](https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/)
 def UniqueConnectedComponent(n):
 
     global ans
@@ -341,6 +359,8 @@ def UniqueConnectedComponent(n):
     print(len(result))
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/](https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/)
 if __name__ == '__main__':
 
     # Number of nodes
@@ -358,6 +378,8 @@ if __name__ == '__main__':
     UniqueConnectedComponent(n)
 
 # This code is contributed by mohit kumar 29
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/](https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/)
 
 ```
 

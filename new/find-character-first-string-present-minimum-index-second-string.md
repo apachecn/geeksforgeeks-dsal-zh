@@ -1,5 +1,7 @@
 # 查找第二个字符串
 
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
+
 中最小索引处出现的第一个字符串中的字符
 
 给定一个字符串 **str** 和另一个字符串 **patt** 。 在 **patt** 中找到出现在 **str** 中最小索引处的字符。 如果 **str** 中没有 **patt** 字符，则打印“无字符”。
@@ -136,10 +138,18 @@ public class GFG
 ```py
 
 # Python3 implementation to find the character in
+
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
 # first that is present at minimum index
+
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
 # in second String
 
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
+
 # function to find the minimum index character
+
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
 def printMinIndexChar(Str, patt):
 
     # to store the index of character having
@@ -173,11 +183,15 @@ def printMinIndexChar(Str, patt):
 
 # Driver code
 
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
+
 Str = "geeksforgeeks"
 patt = "set"
 printMinIndexChar(Str, patt)
 
 # This code is contributed by mohit kumar 29
+
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
 
 ```
 
@@ -398,13 +412,25 @@ public class GFG
 ```py
 
 # Python3 implementation to 
+
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
 # find the character in first 
+
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
 # string that is present at
+
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
 # minimum index in second string
+
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
 import sys
 
 # Function to find the 
+
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
 # minimum index character
+
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
 def printMinIndexChar(st, patt):
 
     # unordered_map 'um' 
@@ -447,6 +473,8 @@ def printMinIndexChar(st, patt):
         print ("No character present")
 
 # Driver program to test above
+
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
 if __name__ == "__main__":
 
   st = "geeksforgeeks"
@@ -454,6 +482,8 @@ if __name__ == "__main__":
   printMinIndexChar(st, patt)
 
 # This code is contributed by Chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
 
 ```
 

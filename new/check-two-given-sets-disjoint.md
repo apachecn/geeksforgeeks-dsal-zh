@@ -1,5 +1,7 @@
 # 如何检查两个给定的集合是否不相交？
 
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
+
 给定两个数组表示的两个集合，如何检查给定的两个集合是否不相交？ 可以假定给定的数组没有重复项。
 
 ```
@@ -107,9 +109,15 @@ public class disjoint1 
 ```
 
 # A Simple python 3 program to check 
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 # if two sets are disjoint 
 
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
+
 # Returns true if set1[] and set2[] are disjoint, else false 
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 def areDisjoint(set1, set2, m, n): 
     # Take every element of set1[] and search it in set2 
     for i in range(0, m): 
@@ -121,6 +129,8 @@ def areDisjoint(set1, set2, m, n):
     return True
 
 # Driver program 
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 set1 = [12, 34, 11, 9, 3] 
 set2 = [7, 2, 1, 5] 
 m = len(set1) 
@@ -128,6 +138,8 @@ n = len(set2)
 print("yes") if areDisjoint(set1, set2, m, n) else(" No") 
 
 # This code ia contributed by Smitha Dinesh Semwal 
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 
 ```
 
@@ -346,10 +358,18 @@ public class disjoint1 
 ```
 
 # A Simple Python 3 program to check 
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 # if two sets are disjoint 
 
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
+
 # Returns true if set1[] and set2[] 
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 # are disjoint, else false 
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 def areDisjoint(set1, set2, m, n): 
     # Sort the given two sets 
     set1.sort() 
@@ -369,6 +389,8 @@ def areDisjoint(set1, set2, m, n):
     return True
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 set1 = [12, 34, 11, 9, 3] 
 set2 = [7, 2, 1, 5] 
 m = len(set1) 
@@ -377,6 +399,8 @@ n = len(set2)
 print("Yes") if areDisjoint(set1, set2, m, n) else print("No") 
 
 # This code is contributed by Smitha Dinesh Semwal 
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 
 ```
 
@@ -567,10 +591,20 @@ class Main
 ```py
 
 # Python3 program to  
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 # check if two sets are  
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 # distinct or not  
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 # This function prints  
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 # all distinct elements 
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 def areDisjoint(set1, set2,  
                 n1, n2): 
 
@@ -591,6 +625,8 @@ def areDisjoint(set1, set2, 
   return True
 
 # Driver method to test above method 
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 if __name__ == "__main__": 
 
   set1 = [10, 5, 3, 4, 6] 
@@ -606,6 +642,8 @@ if __name__ == "__main__":
     print("No") 
 
 # This code is contributed by Chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
 
 ```
 

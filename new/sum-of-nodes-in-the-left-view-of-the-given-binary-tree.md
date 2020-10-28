@@ -1,5 +1,7 @@
 # 给定二叉树
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/)
+
 左侧视图中的节点总数
 
 给定一个二叉树，任务是找到在左视图中可见的节点的总和。 二叉树的左视图是从左侧查看树时可见的节点集。
@@ -174,7 +176,11 @@ class BinaryTree {
 
 # Python3 implementation of the approach 
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/)
+
 # A binary tree node  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/)
 class Node:  
 
     # Constructor to create a new node  
@@ -184,7 +190,11 @@ class Node: 
         self.right = None
 
 # Recursive function to find the sum of nodes  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/)
 # of the left view of the given binary tree 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/)
 def sumLeftViewUtil(root, level, max_level, sum):  
 
     # Base Case  
@@ -201,6 +211,8 @@ def sumLeftViewUtil(root, level, max_level, sum): 
     sumLeftViewUtil(root.right, level + 1, max_level, sum)  
 
 # A wrapper over sumLeftViewUtil()  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/)
 def sumLeftView(root):  
     max_level = [0]  
     sum =[0] 
@@ -208,6 +220,8 @@ def sumLeftView(root): 
     print(sum[0]) 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-left-view-of-the-given-binary-tree/)
 root = Node(12)  
 root.left = Node(10)  
 root.right = Node(20)  

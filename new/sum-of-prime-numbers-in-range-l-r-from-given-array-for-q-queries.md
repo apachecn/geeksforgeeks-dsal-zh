@@ -1,5 +1,7 @@
 # Q 查询中给定数组在[L，R]范围内的质数之和
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
+
 给定 **N** 大小的**数组 arr []** ，然后是以下两种类型的 **Q 查询**数组：
 
 *   查询类型 1：给定两个整数 L 和 R，找到从索引 L 到 R 的素数元素的总和，其中 0 <= L <= R <= N-1。
@@ -291,16 +293,28 @@ int main()
 ```py
 
 # Python3 program for the above approach 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 import math 
 MAX = 1000001
 
 # Create a boolean array prime[] 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # and initialize all entires it as true 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # A value in prime[i] will  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # finally be false if i is Not a prime 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 prime = [True] * MAX
 
 # Function to find prime numbers 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 def SieveOfEratosthenes(): 
 
     p = 2
@@ -322,14 +336,24 @@ def SieveOfEratosthenes():
         p += 1
 
 # Function to get the middle  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # index from corner indexes  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 def getMid(s, e): 
 
     return s + (e - s) // 2
 
 # Function to get the sum of  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # values in the given range  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # of the array  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 def getSumUtil(st, ss, se, qs, qe, si): 
 
     # If segment of this node is a  
@@ -353,7 +377,11 @@ def getSumUtil(st, ss, se, qs, qe, si):
                        qs, qe, 2 * si + 2)) 
 
 # Function to update the nodes which  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # have the given index in their range  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 def updateValueUtil(st, ss, se, i, diff, si): 
 
     # If the input index lies  
@@ -375,7 +403,11 @@ def updateValueUtil(st, ss, se, i, diff, si):
                         diff, 2 * si + 2) 
 
 # Function to update a value in  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # input array and segment tree  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 def updateValue(arr, st, n, i, new_val): 
 
     # Check for errorneous imput index 
@@ -414,8 +446,14 @@ def updateValue(arr, st, n, i, new_val):
                             i, diff, 0) 
 
 # Return sum of elements in range  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # from index qs (quey start) to qe  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # (query end). It mainly uses getSumUtil()  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 def getSum(st, n, qs, qe): 
 
     # Check for erroneous input values  
@@ -425,6 +463,8 @@ def getSum(st, n, qs, qe):
     return getSumUtil(st, 0, n - 1, qs, qe, 0) 
 
 # Function that constructs the Segment Tree 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 def constructSTUtil(arr, ss, se, st, si): 
 
     # If there is one element in  
@@ -453,7 +493,11 @@ def constructSTUtil(arr, ss, se, st, si):
     return st[si] 
 
 # Function to construct segment  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # tree from given array  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 def constructST(arr, n): 
 
     # Allocate memory for the segment tree 
@@ -474,6 +518,8 @@ def constructST(arr, n):
     return st 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 arr = [ 1, 3, 5, 7, 9, 11 ] 
 n = len(arr) 
 
@@ -482,24 +528,42 @@ Q = [ [ 1, 1, 3 ],
       [ 1, 1, 3 ] ] 
 
 # Function call 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 SieveOfEratosthenes() 
 
 # Build segment tree from given array 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 st = constructST(arr, n) 
 
 # Print sum of values in  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # array from index 1 to 3  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 print(getSum(st, n, 1, 3)) 
 
 # Update: set arr[1] = 10  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # and update corresponding  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 # segment tree nodes  
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 updateValue(arr, st, n, 1, 10) 
 
 # Find sum after value is updated 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 print(getSum(st, n, 1, 3)) 
 
 # This code is contrinuted by Stuti Pathak 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 
 ```
 

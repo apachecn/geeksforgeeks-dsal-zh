@@ -1,5 +1,7 @@
 # 字梯–设置 2（双向 BFS）
 
+> 原文：[https://www.geeksforgeeks.org/word-ladder-set-2-bi-directional-bfs/](https://www.geeksforgeeks.org/word-ladder-set-2-bi-directional-bfs/)
+
 给定一个字典，并且两个单词**起始于**和**目标**（两者长度相同）。 查找从**起始**到**目标**的最小链的长度（如果存在），使得链中的相邻单词仅相差一个字符，并且链中的每个单词都是有效单词，即， 它存在于字典中。 可以假设在字典中存在**目标**词，并且所有字典词的长度均相等。
 
 **示例**：

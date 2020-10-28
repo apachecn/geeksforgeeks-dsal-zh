@@ -1,5 +1,7 @@
 # 打印字符串数组中出现次数最多的字符
 
+> 原文：[https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/](https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/)
+
 给定小写字符串数组 **arr []** ，任务是打印字符串集中出现次数最多的字符。
 
 **示例**：
@@ -149,9 +151,15 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to print the most occurring  
+
+> 原文：[https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/](https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/)
 # character in an array of strings  
 
+> 原文：[https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/](https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/)
+
 # Function to print the most occurring character  
+
+> 原文：[https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/](https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/)
 def findMostOccurringChar(string) : 
 
     # Creating a hash of size 26  
@@ -178,6 +186,8 @@ def findMostOccurringChar(string) :
     print((chr)(max + 97));  
 
 # Driver code  
+
+> 原文：[https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/](https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/)
 if __name__ == "__main__" :  
 
     # Declaring Vector of String type  
@@ -190,6 +200,8 @@ if __name__ == "__main__" : 
     findMostOccurringChar(string);  
 
 # This code is contributed by AnkitRai01 
+
+> 原文：[https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/](https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 为每个数组元素计数数组中所有重复的元素对。
 
+> 原文：[https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/](https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/)
+
 给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 。 对于数组中的每个元素，任务是计算可能的对（i，j），不包括当前元素，以使 **i < j** 和 **arr [i] = arr [ j]** 。
 
 **示例**：
@@ -174,11 +176,21 @@ public static void main(String[] args)
 ```py
 
 # Python3 program for 
+
+> 原文：[https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/](https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/)
 # the above approach
 
+> 原文：[https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/](https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/)
+
 # Function to prthe required
+
+> 原文：[https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/](https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/)
 # count of pairs excluding the
+
+> 原文：[https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/](https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/)
 # current element
+
+> 原文：[https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/](https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/)
 def solve(arr, n):
 
     # Store the frequency
@@ -204,6 +216,8 @@ def solve(arr, n):
         print(i, end = " ")
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/](https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/)
 if __name__ == '__main__':
 
     # Given array arr[]
@@ -215,6 +229,8 @@ if __name__ == '__main__':
     solve(arr, N)
 
 # This code is contributed by mohit kumar 29
+
+> 原文：[https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/](https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/)
 
 ```
 

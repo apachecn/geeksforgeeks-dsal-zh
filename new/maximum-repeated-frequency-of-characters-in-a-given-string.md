@@ -1,5 +1,7 @@
 # 给定字符串
 
+> 原文：[https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/](https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/)
+
 中字符的最大重复频率
 
 给定字符串 **S** ，任务是查找给定字符串 S 中字符的最大重复频率计数。
@@ -157,12 +159,24 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation to find the 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/](https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/)
 # maximum repeated frequency of  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/](https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/)
 # characters in the given string 
 
+> 原文：[https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/](https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/)
+
 # Function to find the maximum 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/](https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/)
 # repeated frequency of the  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/](https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/)
 # characters in the given string 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/](https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/)
 def findMaxFrequency(s): 
 
     # Hash-Array to store the  
@@ -198,12 +212,18 @@ def findMaxFrequency(s):
 
 # Driver Code 
 
+> 原文：[https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/](https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/)
+
 s = "geeksgeeks"
 
 # Function Call 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/](https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/)
 findMaxFrequency(s) 
 
 # This code is contributed by shubhamsingh10 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/](https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/)
 
 ```
 

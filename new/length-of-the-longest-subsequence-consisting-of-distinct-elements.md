@@ -1,5 +1,7 @@
 # 由不同元素组成的最长子序列的长度
 
+> 原文：[https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/](https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/)
+
 给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到最长的[子序列](https://www.geeksforgeeks.org/tag/subsequence/)的长度，该子序列仅包含不同的元素 。
 
 **示例**：
@@ -128,11 +130,21 @@ public static void main (String[] args)
 ```py
 
 # Python3 program for 
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/](https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/)
 # the above approach
 
+> 原文：[https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/](https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/)
+
 # Function to find length of
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/](https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/)
 # the longest subsequence
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/](https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/)
 # consisting of distinct elements
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/](https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/)
 def longestSubseq(arr, n):
 
     # Stores the distinct
@@ -152,14 +164,20 @@ def longestSubseq(arr, n):
     return len(s)
 
 # Given array
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/](https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/)
 arr = [1, 2, 3, 3, 
        4, 5, 5, 5]
 n = len(arr)
 
 # Function Call
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/](https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/)
 print(longestSubseq(arr, n))
 
 # This code is contributed by divyeshrabadiya07
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/](https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 打印最接近数组
 
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
+
 中第 K 个最小元素的 X 个数组元素
 
 给定两个整数 **K** ， **X** 和一个[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，它们由 **N** 个不同的元素组成， 任务是从给定数组中找到最接近 [**K <sup>K</sup>** 个最小元素的 **X** 元素。](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/)
@@ -41,19 +43,31 @@
 ```py
 
 # Python3 program to implement 
+
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 # the above approach 
+
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 
 import collections 
 
 # Function to swap 
+
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 # two elements of array 
+
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 def swap(arr, a, b): 
     temp = arr[a] 
     arr[a] = arr[b] 
     arr[b] = temp 
 
 # Function to partition  
+
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 # the array around x 
+
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 def partition(arr, l, r, x): 
 
     # Traverse array  
@@ -79,8 +93,14 @@ def partition(arr, l, r, x):
     return i 
 
 # Function to find 
+
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 # median of arr[]  
+
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 # from index l to l + n 
+
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 def findMedian(arr, l, n): 
     lis = [] 
     for i in range(l, l + n): 
@@ -93,7 +113,11 @@ def findMedian(arr, l, n):
     return lis[n // 2] 
 
 # Function to get  
+
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 # the kth smallest element 
+
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 def kthSmallest(arr, l, r, k): 
 
     # If k is smaller than 
@@ -165,6 +189,8 @@ def kthSmallest(arr, l, r, k):
     return 999999999999
 
 # Function to print  
+
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 def closestElements(arr, k, x): 
 
     # Stores size of arr 
@@ -216,6 +242,8 @@ def closestElements(arr, k, x):
     return res 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 if __name__ == '__main__': 
 
     arr = [1, 2, 3, 4, 10, 15] 

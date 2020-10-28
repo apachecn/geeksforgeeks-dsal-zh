@@ -1,5 +1,7 @@
 # 总和等于 k 的子数组数
 
+> 原文：[https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/](https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/)
+
 给定一个未排序的整数数组，找到总和等于给定数 k 的子数组的数量。
 
 **示例**：
@@ -242,11 +244,19 @@ public class GfG {
 ```py
 
 # Python3 program to find the number of 
+
+> 原文：[https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/](https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/)
 # subarrays with sum exactly equal to k. 
+
+> 原文：[https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/](https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/)
 from collections import defaultdict
 
 # Function to find number of subarrays  
+
+> 原文：[https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/](https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/)
 # with sum exactly equal to k. 
+
+> 原文：[https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/](https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/)
 def findSubarraySum(arr, n, Sum): 
 
     # Dictionary to store number of subarrays 
@@ -292,6 +302,8 @@ if __name__ == "__main__":
     print(findSubarraySum(arr, n, Sum)) 
 
 # This code is contributed by Rituraj Jain
+
+> 原文：[https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/](https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/)
 
 ```
 

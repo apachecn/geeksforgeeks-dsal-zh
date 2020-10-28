@@ -1,5 +1,7 @@
 # 数组的排列，以使所有相邻元素的乘积均匀
 
+> 原文：[https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/](https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/)
+
 给定由 **N** 个正整数组成的数组 **arr []** ，任务是找到给定数组的任何排列，以使相邻元素的乘积为偶数。 打印任何这样的排列，如果不可能，则打印-1。
 
 **示例**：
@@ -205,11 +207,21 @@ public static void main (String[] args)
 ```py
 
 # Python3 program to Permutation of Array  
+
+> 原文：[https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/](https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/)
 # such that product of all  
+
+> 原文：[https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/](https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/)
 # adjacent elements is even  
 
+> 原文：[https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/](https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/)
+
 # Function to print  
+
+> 原文：[https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/](https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/)
 # the required permutation  
+
+> 原文：[https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/](https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/)
 def printPermutation(arr, n):  
 
     odd, even = [], []  
@@ -252,14 +264,20 @@ def printPermutation(arr, n): 
         j += 1
 
 # Driver Code  
+
+> 原文：[https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/](https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/)
 arr = [ 6, 7, 9, 8, 10, 11 ]  
 
 N = len(arr)  
 
 # Function call  
+
+> 原文：[https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/](https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/)
 printPermutation(arr, N)  
 
 # This code is contributed by Shivam Singh  
+
+> 原文：[https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/](https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/)
 
 ```
 

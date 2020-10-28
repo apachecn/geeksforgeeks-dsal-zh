@@ -1,5 +1,7 @@
 # 使用 PHP 生成随机字符串
 
+> 原文：[https://www.geeksforgeeks.org/generating-random-string-using-php/](https://www.geeksforgeeks.org/generating-random-string-using-php/)
+
 使用 PHP 生成一个随机的，唯一的字母数字字符串。
 
 例子：

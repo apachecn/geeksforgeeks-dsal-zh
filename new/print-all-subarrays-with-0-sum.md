@@ -1,5 +1,7 @@
 # 打印总和为 0 的所有子数组
 
+> 原文：[https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/](https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/)
+
 给定一个数组，打印该数组中所有总和为 0 的子数组。
 
 **示例**：
@@ -222,10 +224,18 @@ public class GFG
 ```py
 
 # Python3 program to print all subarrays 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/](https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/)
 # in the array which has sum 0 
 
+> 原文：[https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/](https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/)
+
 # Function to get all subarrays 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/](https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/)
 # in the array which has sum 0 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/](https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/)
 def findSubArrays(arr,n): 
 
     # create a python dict 
@@ -263,13 +273,19 @@ def findSubArrays(arr,n):
     return out 
 
 # Utility function to print 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/](https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/)
 # all subarrays with sum 0  
+
+> 原文：[https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/](https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/)
 def printOutput(output): 
     for i in output: 
         print ("Subarray found from Index " + 
                 str(i[0]) + " to " + str(i[1])) 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/](https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/)
 if __name__ == '__main__': 
     arr = [6, 3, -1, -3, 4, -2,  
               2, 4, 6, -12, -7] 
@@ -284,6 +300,8 @@ if __name__ == '__main__':
         printOutput (out)  
 
 # This code is contributed by Vikas Chitturi 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/](https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/)
 
 ```
 

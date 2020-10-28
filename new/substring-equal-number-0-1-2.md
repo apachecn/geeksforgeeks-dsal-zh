@@ -1,5 +1,7 @@
 # 计数具有相等数量的 0s，1s 和 2s 的子字符串
 
+> 原文：[https://www.geeksforgeeks.org/substring-equal-number-0-1-2/](https://www.geeksforgeeks.org/substring-equal-number-0-1-2/)
+
 给定一个仅包含 0、1s 或 2s 的字符串，请计算具有相等数目的 0s，1s 和 2s 的子字符串的数量。
 
 **示例**：
@@ -104,10 +106,18 @@ int main()
 ```py
 
 # Python3 program to find substring with equal 
+
+> 原文：[https://www.geeksforgeeks.org/substring-equal-number-0-1-2/](https://www.geeksforgeeks.org/substring-equal-number-0-1-2/)
 # number of 0's, 1's and 2's 
 
+> 原文：[https://www.geeksforgeeks.org/substring-equal-number-0-1-2/](https://www.geeksforgeeks.org/substring-equal-number-0-1-2/)
+
 # Method to count number of substring which 
+
+> 原文：[https://www.geeksforgeeks.org/substring-equal-number-0-1-2/](https://www.geeksforgeeks.org/substring-equal-number-0-1-2/)
 # has equal 0, 1 and 2 
+
+> 原文：[https://www.geeksforgeeks.org/substring-equal-number-0-1-2/](https://www.geeksforgeeks.org/substring-equal-number-0-1-2/)
 def getSubstringWithEqual012(string): 
     n = len(string) 
 
@@ -158,12 +168,18 @@ def getSubstringWithEqual012(string):
     return res 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/substring-equal-number-0-1-2/](https://www.geeksforgeeks.org/substring-equal-number-0-1-2/)
 if __name__ == "__main__": 
     string = "0102010"
     print(getSubstringWithEqual012(string)) 
 
 # This code is conributed by 
+
+> 原文：[https://www.geeksforgeeks.org/substring-equal-number-0-1-2/](https://www.geeksforgeeks.org/substring-equal-number-0-1-2/)
 # sanjeev2552 
+
+> 原文：[https://www.geeksforgeeks.org/substring-equal-number-0-1-2/](https://www.geeksforgeeks.org/substring-equal-number-0-1-2/)
 
 ```
 

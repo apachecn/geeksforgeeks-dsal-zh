@@ -1,5 +1,7 @@
 # 曼哈顿和欧几里得距离相同的对
 
+> 原文：[https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/](https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/)
+
 在给定的笛卡尔平面中，有 N 个点。 任务是找到点对数（A，B）使得
 
 *   点 A 和点 B 不重合。
@@ -148,13 +150,25 @@ int main()
 ```py
 
 # Python3 implementtaion of the  
+
+> 原文：[https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/](https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/)
 # above approach  
+
+> 原文：[https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/](https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/)
 from collections import defaultdict 
 
 # Function to return the number of  
+
+> 原文：[https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/](https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/)
 # non coincident pairs of points with  
+
+> 原文：[https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/](https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/)
 # manhattan distance equal to  
+
+> 原文：[https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/](https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/)
 # euclidean distance  
+
+> 原文：[https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/](https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/)
 def findManhattanEuclidPair(arr, n):  
 
     # To store frequency of all distinct Xi  
@@ -212,6 +226,8 @@ def findManhattanEuclidPair(arr, n): 
     return (xAns + yAns - xyAns)  
 
 # Driver Code  
+
+> 原文：[https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/](https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/)
 if __name__ == "__main__": 
 
     arr = [[1, 2], [2, 3], [1, 3]]  
@@ -221,6 +237,8 @@ if __name__ == "__main__":
     print(findManhattanEuclidPair(arr, n))  
 
 # This code is contributed by Rituraj Jain 
+
+> 原文：[https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/](https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 由相同元素组成的子序列数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/](https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/)
+
 给定由 **N** 个整数组成的数组 **A []** ，任务是找到子序列的总数，该子序列仅包含在整个子序列中重复的一个不同的数。
 
 **示例**：
@@ -142,10 +144,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/](https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/)
 # the above approach  
 
+> 原文：[https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/](https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/)
+
 # Function to count subsequences in  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/](https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/)
 # array containing same element  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/](https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/)
 def CountSubSequence(A, N):
 
     # Stores the frequency  
@@ -169,12 +179,16 @@ def CountSubSequence(A, N):
     print(result)
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/](https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/)
 A = [ 5, 4, 4, 5, 10, 4 ]
 N = len(A)
 
 CountSubSequence(A, N)
 
 # This code is contributed by jojo9911
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/](https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 查找具有至少一个重复的最小子数组
 
+> 原文：[https://www.geeksforgeeks.org/find-the-smallest-subarray-having-atleast-one-duplicate/](https://www.geeksforgeeks.org/find-the-smallest-subarray-having-atleast-one-duplicate/)
+
 给定一个数组[rrG0] N 个元素，则任务是查找给定数组中包含至少一个重复元素的最小子数组的长度。 子数组由数组的连续元素形成。 如果不存在这样的数组，则打印“ -1”。
 
 **示例**：
@@ -136,6 +138,8 @@ class GFG
 ```
 
 # Python program for above approach 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-smallest-subarray-having-atleast-one-duplicate/](https://www.geeksforgeeks.org/find-the-smallest-subarray-having-atleast-one-duplicate/)
 n = 7
 arr = [1, 2, 3, 1, 5, 4, 5] 
 minLen = n + 1
@@ -335,6 +339,8 @@ class GFG 
 ```
 
 # Python program for above approach 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-smallest-subarray-having-atleast-one-duplicate/](https://www.geeksforgeeks.org/find-the-smallest-subarray-having-atleast-one-duplicate/)
 
 n = 7
 arr = [1, 2, 3, 1, 5, 4, 5] 

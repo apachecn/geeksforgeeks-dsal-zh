@@ -1,5 +1,7 @@
 # 对于任何给定的整数
 
+> 原文：[https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/](https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/)
+
 ，最大化 F（N）= max（N，F（N / 2）+ F（N / 3）+ F（N / 4））的值
 
 给定整数 **N，**的任务是找到由**给定的函数 **F（n）**的最大值 F（N）= max（N，F（N / 2） ）+ F（N / 3）+ F（N / 4））**。
@@ -172,8 +174,14 @@ public static void main(String[] args)
 
 # Python3 program for the above approach
 
+> 原文：[https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/](https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/)
+
 # Function to build the auxiliary DP
+
+> 原文：[https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/](https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/)
 # array from the start
+
+> 原文：[https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/](https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/)
 def build(dp, N):
 
     # Base Case
@@ -189,7 +197,11 @@ def build(dp, N):
                     dp[i // 4])
 
 # Function to find the maximum value of
+
+> 原文：[https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/](https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/)
 # F(n) = max(n, F[n/2] + F[n/3] + F[n/4])
+
+> 原文：[https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/](https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/)
 def maxValue(N):
 
     # Auxuliary DP array
@@ -202,6 +214,8 @@ def maxValue(N):
     print(dp[N], end = "")
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/](https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/)
 if __name__ == '__main__':
 
     # Given N
@@ -211,6 +225,8 @@ if __name__ == '__main__':
     maxValue(N)
 
 # This code is contributed by mohit kumar 29
+
+> 原文：[https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/](https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/)
 
 ```
 

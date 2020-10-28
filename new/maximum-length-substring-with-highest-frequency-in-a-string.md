@@ -1,5 +1,7 @@
 # 字符串
 
+> 原文：[https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/](https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/)
+
 中频率最高的最大子字符串
 
 给定一个字符串。 任务是找到最大长度的最大出现子字符串。 这些情况可能会重叠。
@@ -163,10 +165,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to find maximum 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/](https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/)
 # occured of a string 
 
+> 原文：[https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/](https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/)
+
 # function to return maximum occurred 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/](https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/)
 # substring of a string 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/](https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/)
 def MaxFreq(s): 
 
     # size of string 
@@ -203,11 +213,15 @@ def MaxFreq(s):
     return maxi_str 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/](https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/)
 strng = "ababecdecd"
 
 print(MaxFreq(strng)) 
 
 # This code is contributed by Mohit kumar 29     
+
+> 原文：[https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/](https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/)
 
 ```
 

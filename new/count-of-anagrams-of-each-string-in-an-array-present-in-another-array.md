@@ -1,5 +1,7 @@
 # 另一个数组中存在的数组中每个字符串的字谜计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/](https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/)
+
 给定两个由字符串组成的数组 **arr1 []** 和 **arr2 []** ，任务是打印 arr1 []中存在的 arr2 []中每个字符串的字首计数。
 
 **示例**：
@@ -183,10 +185,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to count the number
+
+> 原文：[https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/](https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/)
 # of anagrams of each string in a 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/](https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/)
 # given array present in another array 
 
+> 原文：[https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/](https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/)
+
 # Function to return the count of anagrams
+
+> 原文：[https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/](https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/)
 def count(arr1, arr2, n, m):
 
     # Store the frequencies of 
@@ -219,6 +229,8 @@ def count(arr1, arr2, n, m):
     print()     
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/](https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/)
 if __name__ == '__main__':
 
     arr1 = [ "geeks", "learn", "for",
@@ -231,6 +243,8 @@ if __name__ == '__main__':
     count(arr1, arr2, n, m)
 
 # This code is contributed by Pawan_29
+
+> 原文：[https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/](https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/)
 
 ```
 

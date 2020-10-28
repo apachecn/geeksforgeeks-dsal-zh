@@ -1,6 +1,10 @@
 # Java 中的
 
+> 原文：[https://www.geeksforgeeks.org/md5-hash-in-java/](https://www.geeksforgeeks.org/md5-hash-in-java/)
+
 # MD5 哈希值
+
+> 原文：[https://www.geeksforgeeks.org/md5-hash-in-java/](https://www.geeksforgeeks.org/md5-hash-in-java/)
 
 要在 Java 中计算加密哈希值，请使用 **MessageDigest** 类，位于包 java.security 下。
 

@@ -1,5 +1,7 @@
 # 程序接受包含所有元音的字符串
 
+> 原文：[https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/](https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/)
+
 给定字符串 **S** ，任务是检查并接受给定的字符串是否包含所有元音，即**'a'，'e'，'i'。'o'，'u'或 'A'，'E'，'I'，'O'，'U'**。
 
 **示例**：
@@ -177,10 +179,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation to check that  
+
+> 原文：[https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/](https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/)
 # a string contains all vowels  
 
+> 原文：[https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/](https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/)
+
 # Function to to check that  
+
+> 原文：[https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/](https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/)
 # a string contains all vowels  
+
+> 原文：[https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/](https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/)
 def checkIfAllVowels(string) :  
 
     # Hash Array of size 5  
@@ -215,7 +225,11 @@ def checkIfAllVowels(string) : 
     return 0;  
 
 # Function to to check that  
+
+> 原文：[https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/](https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/)
 # a string contains all vowels  
+
+> 原文：[https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/](https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/)
 def checkIfAllVowelsArePresent(string) :  
 
     if (checkIfAllVowels(string)) : 
@@ -224,12 +238,16 @@ def checkIfAllVowelsArePresent(string) : 
         print("Accepted");  
 
 # Driver Code  
+
+> 原文：[https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/](https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/)
 if __name__ == "__main__" :  
 
     string = "aeioubc";  
     checkIfAllVowelsArePresent(string);  
 
 # This code is contributed by AnkitRai01 
+
+> 原文：[https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/](https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/)
 
 ```
 

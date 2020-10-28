@@ -1,5 +1,7 @@
 # 根据给定的字符串
 
+> 原文：[https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/](https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/)
+
 构造一个具有完全 K 个子序列的字符串
 
 给定字符串 **str** 和整数 **K** ，任务是找到字符串 **S** ，使其具有给定的 **K** 子序列 字符串 **str** 。
@@ -211,11 +213,19 @@ public static void main(String[] args)
 ```py
 
 # Python3 program for 
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/](https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/)
 # the above approach
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/](https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/)
 import math
 
 # Function that computes 
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/](https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/)
 # the string s
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/](https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/)
 def printSubsequenceString(st, k):
     # Length of the given 
     # string str
@@ -270,6 +280,8 @@ def printSubsequenceString(st, k):
     print (s)
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/](https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/)
 if __name__ == "__main__":
 
     # Given String
@@ -281,6 +293,8 @@ if __name__ == "__main__":
     printSubsequenceString(st, k)
 
 # This code is contributed by Chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/](https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 按出现顺序打印具有奇数频率的字符
 
+> 原文：[https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/)
+
 给定仅包含小写字符的字符串 **str** 。 任务是按照出现的频率打印出具有奇数频率的字符。
 
 **注意**：具有奇数频率的重复元素按出现的次数打印多次。
@@ -122,11 +124,17 @@ class GFG {
 ```py
 
 # Python3 implementation of the approach 
+
+> 原文：[https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/)
 import sys 
 import math 
 
 # Function to print the odd frequency characters  
+
+> 原文：[https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/)
 # in the order of their occurrence  
+
+> 原文：[https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/)
 def printChar(str_, n): 
 
     # To store the frequency of each of  
@@ -147,12 +155,16 @@ def printChar(str_, n):
             print("{}".format(str_[i]), end = "") 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/)
 if __name__=='__main__': 
     str_ = "geeksforgeeks"
     n = len(str_) 
     printChar(str_, n) 
 
 # This code is contributed by Vikash Kumar 37 
+
+> 原文：[https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/)
 
 ```
 

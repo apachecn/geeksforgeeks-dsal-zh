@@ -1,5 +1,7 @@
 # 通过将数组与其自身串联 N 次而形成的最长递增子序列
 
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/](https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/)
+
 给定大小为 **N** 的数组 **arr []** ，任务是找到由 arr 串联而成的数组中[最长递增子序列](https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/)的长度 []将自身结尾 N 次。
 
 **示例**：[
@@ -137,10 +139,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation to find the
+
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/](https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/)
 # longest increasing subsequence
+
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/](https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/)
 # in repeating element of array
 
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/](https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/)
+
 # Function to find the LCS
+
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/](https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/)
 def findLCS(arr, n):
 
     mp = {}
@@ -155,12 +165,16 @@ def findLCS(arr, n):
     return len(mp)
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/](https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/)
 n = 3
 arr = [ 3, 2, 1 ]
 
 print(findLCS(arr, n))
 
 # This code is contributed by ng24_7
+
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/](https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/)
 
 ```
 

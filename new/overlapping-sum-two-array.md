@@ -1,5 +1,7 @@
 # 两组的不重叠总和
 
+> 原文：[https://www.geeksforgeeks.org/overlapping-sum-two-array/](https://www.geeksforgeeks.org/overlapping-sum-two-array/)
+
 给定两个大小为 n 的数组 A []和 B []。 假定两个数组分别包含不同的元素。 我们需要找到所有不常见元素的总和。
 
 **示例**：
@@ -138,10 +140,16 @@ class GFG 
 ```py
 
 # Python3 program to find Non-overlapping sum  
+
+> 原文：[https://www.geeksforgeeks.org/overlapping-sum-two-array/](https://www.geeksforgeeks.org/overlapping-sum-two-array/)
 from collections import defaultdict 
 
 # Function for calculating  
+
+> 原文：[https://www.geeksforgeeks.org/overlapping-sum-two-array/](https://www.geeksforgeeks.org/overlapping-sum-two-array/)
 # Non-overlapping sum of two array  
+
+> 原文：[https://www.geeksforgeeks.org/overlapping-sum-two-array/](https://www.geeksforgeeks.org/overlapping-sum-two-array/)
 def findSum(A, B, n):  
 
     # Insert elements of both arrays  
@@ -159,6 +167,8 @@ def findSum(A, B, n): 
     return Sum
 
 # Driver code  
+
+> 原文：[https://www.geeksforgeeks.org/overlapping-sum-two-array/](https://www.geeksforgeeks.org/overlapping-sum-two-array/)
 if __name__ == "__main__":  
 
     A = [5, 4, 9, 2, 3]  
@@ -171,7 +181,11 @@ if __name__ == "__main__": 
     print(findSum(A, B, n))  
 
 # This code is contributed  
+
+> 原文：[https://www.geeksforgeeks.org/overlapping-sum-two-array/](https://www.geeksforgeeks.org/overlapping-sum-two-array/)
 # by Rituraj Jain 
+
+> 原文：[https://www.geeksforgeeks.org/overlapping-sum-two-array/](https://www.geeksforgeeks.org/overlapping-sum-two-array/)
 
 ```
 

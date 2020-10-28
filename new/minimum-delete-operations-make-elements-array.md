@@ -1,5 +1,7 @@
 # 最小删除操作，以使数组的所有元素相同
 
+> 原文：[https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/](https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/)
+
 给定 n 个元素的数组，以便元素可以重复。 我们可以从数组中删除任意数量的元素。 任务是找到要从数组中删除的元素的最小数量，以使其相等。
 
 **范例**：
@@ -117,12 +119,24 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to find minimum 
+
+> 原文：[https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/](https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/)
 # number of deletes required to 
+
+> 原文：[https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/](https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/)
 # make all elements same. 
 
+> 原文：[https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/](https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/)
+
 # Function to get minimum number 
+
+> 原文：[https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/](https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/)
 # of elements to be deleted from 
+
+> 原文：[https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/](https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/)
 # array to make array elements equal 
+
+> 原文：[https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/](https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/)
 def minDelete(arr, n): 
 
     # Create an dictionary and store 
@@ -149,12 +163,16 @@ def minDelete(arr, n):
     return n - max_freq; 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/](https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/)
 arr = [ 4, 3, 4, 4, 2, 4 ]; 
 n = len(arr) 
 
 print(minDelete(arr, n)); 
 
 # This code is contributed by grand_master 
+
+> 原文：[https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/](https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 打印数组 A []中的所有字符串，并将数组 B []中的所有字符串作为子序列
 
+> 原文：[https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/](https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/)
+
 给定两个由字符串组成的数组 **A []** 和 **B []** ，任务是从数组 **A []** 中打印所有字符串都位于 B [ ]作为子序列。
 
 **范例**：
@@ -285,10 +287,18 @@ public static void main (String[] args) 
 ```py
 
 # Python3 program to implement 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/](https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/)
 # the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/](https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/)
+
 # Function to find strings from A[] 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/](https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/)
 # having all strings in B[] as subsequence 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/](https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/)
 def UniversalSubset(A, B): 
 
     # Calculate respective sizes 
@@ -358,6 +368,8 @@ def UniversalSubset(A, B):
         print(-1, end = "") 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/](https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/)
 if __name__ == '__main__': 
 
     A = [ "geeksforgeeks", "topcoder",  
@@ -367,6 +379,8 @@ if __name__ == '__main__':
     UniversalSubset(A, B) 
 
 # This code is contributed by Shivam Singh 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/](https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/)
 
 ```
 

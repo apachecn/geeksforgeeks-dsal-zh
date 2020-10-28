@@ -1,5 +1,7 @@
 # 将相似和不相似元素的两个最大等长数组划分为数组
 
+> 原文：[https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/](https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/)
+
 给定一个自然数为 **n** 的**数组 arr** ，找到可以将数组 **arr** 划分为两个相等大小的数组的最大大小，这样 第一个数组包含所有相同的元素，而第二个数组包含所有不同的元素。
 
 **范例**：
@@ -226,12 +228,24 @@ class GFG{
 ```py
 
 # Python3 program to find the max-size to which 
+
+> 原文：[https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/](https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/)
 # an array can be divided into 2 equal parts 
+
+> 原文：[https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/](https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/)
 # such that one part contains unique elements  
+
+> 原文：[https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/](https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/)
 # while another contains similar elements 
 
+> 原文：[https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/](https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/)
+
 # Function to find the max-size to which an  
+
+> 原文：[https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/](https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/)
 # array can be divided into 2 equal parts 
+
+> 原文：[https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/](https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/)
 def Solve(arr, size, n): 
 
     v = [0] * (n + 1); 
@@ -279,6 +293,8 @@ def Solve(arr, size, n):
     print() 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/](https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/)
 if __name__ == "__main__": 
 
     # Initialise n 
@@ -293,6 +309,8 @@ if __name__ == "__main__":
     Solve(arr, size, n) 
 
 # This code is contributed by chitranayal 
+
+> 原文：[https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/](https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/)
 
 ```
 

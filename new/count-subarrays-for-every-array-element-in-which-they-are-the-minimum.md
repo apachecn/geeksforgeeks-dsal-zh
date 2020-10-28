@@ -1,5 +1,7 @@
 # 为每个数组元素中最小的子数组计数
 
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/)
+
 给定一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个整数组成，任务是创建大小为**的数组 **brr []** N** 其中 **brr [i]** 代表其中 **arr [i]** 是最小元素的子阵列的数量。
 
 **示例**：
@@ -252,8 +254,14 @@ public static void main (String[] args) 
 
 # Python3 program for the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/)
+
 # Function to find the boundary of every 
+
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/)
 # element within which it is minimum 
+
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/)
 def binaryInsert(boundary, i): 
 
     l = 0
@@ -279,6 +287,8 @@ def binaryInsert(boundary, i):
     return l 
 
 # Function to required count subarrays 
+
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/)
 def countingSubarray(arr, n): 
 
     # Stores the indices of element 
@@ -315,12 +325,18 @@ def countingSubarray(arr, n):
 
 # Driver Code 
 
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/)
+
 N = 5
 
 # Given array arr[] 
+
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/)
 arr = [3, 2, 4, 1, 5] 
 
 # Function Call 
+
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/)
 print(countingSubarray(arr, N)) 
 
 ```

@@ -1,5 +1,7 @@
 # 唯一对（arr [i]，arr [j]）的计数，使得 i < j
 
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
+
 给定数组 **arr []** ，任务是打印唯一对**（arr [i]，arr [j]）**的计数，以便 **i < j** 。
 
 **示例**：
@@ -107,8 +109,14 @@ class GFG {
 
 # Python3 implementation of the approach 
 
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
+
 # Function to return the count 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
 # of unique pairs in the array 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
 def getPairs(arr, n) :
 
     # Set to store unique pairs 
@@ -124,6 +132,8 @@ def getPairs(arr, n) :
     return len(h); 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
 if __name__ == "__main__" :
 
     arr = [ 1, 2, 2, 4, 2, 5, 3, 5 ] 
@@ -132,6 +142,8 @@ if __name__ == "__main__" :
     print(getPairs(arr, n))
 
 # This code is contributed by Ryuga
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
 
 ```
 
@@ -361,8 +373,14 @@ public class GFG {
 
 # Python3 implementation of the approach 
 
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
+
 # Function to return the count 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
 # of unique pairs in the array 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
 def getPairs(a, n):
 
     visited1 = set() 
@@ -411,13 +429,19 @@ def getPairs(a, n):
 
 # Driver code 
 
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
+
 a = [1, 2, 2, 4, 2, 5, 3, 5]
 n = len(a)
 
 # Print the count of unique pairs 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
 print(getPairs(a, n)) 
 
 # This code is contributed by SHUBHAMSINGH10
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
 
 ```
 

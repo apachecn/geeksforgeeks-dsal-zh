@@ -1,5 +1,7 @@
 # 检查数组是否可以分为 K 个连续元素的子集
 
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/](https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/)
+
 给定一个数组 **arr []** 和整数 **K** ，任务是将该数组拆分为大小为 **K** 的子集，以使每个子集由**组成 K** 个连续元素。
 
 **示例**：
@@ -188,13 +190,23 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement the
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/](https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/)
 # above approach
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/](https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/)
 
 from collections import defaultdict
 
 # Function to check if a given array can
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/](https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/)
 # be split into subsets of K consecutive
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/](https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/)
 # elements
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/](https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/)
 def groupInKConsecutive(arr, K):
 
     # Stores the frequencies of
@@ -231,6 +243,8 @@ def groupInKConsecutive(arr, K):
     return True
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/](https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/)
 if __name__ == "__main__":
 
     arr = [ 1, 2, 3, 6, 2,
@@ -243,6 +257,8 @@ if __name__ == "__main__":
         print("False")
 
 # This code is contributed by chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/](https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/)
 
 ```
 

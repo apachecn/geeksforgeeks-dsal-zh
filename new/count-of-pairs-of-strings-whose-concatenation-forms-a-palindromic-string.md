@@ -1,5 +1,7 @@
 # 串联形成回文字符串的字符串对的计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/](https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/)
+
 给定由 **N** 个字符串组成的数组 **A []** ，任务是计算在合并后形成**回文字符串**或 重新排列以形成[回文字符串](https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/)。
 
 **示例**：
@@ -226,7 +228,11 @@ public static void main (String[] args)
 ```py
 
 # Python3 program to find  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/](https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/)
 # palindromic string  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/](https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/)
 from collections import defaultdict  
 
 def getCount(N, s):  
@@ -273,6 +279,8 @@ def getCount(N, s): 
     return ans  
 
 # Driver code  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/](https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/)
 if __name__ == '__main__':  
 
     N = 6
@@ -282,6 +290,8 @@ if __name__ == '__main__': 
     print(getCount(N, A))  
 
 # This code is contributed by Shivam Singh  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/](https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/)
 
 ```
 

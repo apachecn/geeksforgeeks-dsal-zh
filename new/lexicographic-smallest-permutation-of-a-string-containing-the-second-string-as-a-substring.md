@@ -1,5 +1,7 @@
 # 包含第二个字符串作为子字符串的字符串的词典编排最小排列
 
+> 原文：[https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/](https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/)
+
 给定两个字符串 **str1** 和 **str2** ，任务是查找包含 **str2** 作为子字符串的 **str1** 的词典最小排列。
 
 **注意**：假定解决方案始终存在。
@@ -202,10 +204,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement 
+
+> 原文：[https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/](https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/)
 # the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/](https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/)
+
 # Function to print the desired 
+
+> 原文：[https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/](https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/)
 # lexicographic smaller string 
+
+> 原文：[https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/](https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/)
 def findSmallestString(str1, str2):
 
     freq1 = [0] * 26
@@ -256,12 +266,16 @@ def findSmallestString(str1, str2):
     return res
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/](https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/)
 str1 = "geeksforgeeksfor"
 str2 = "for"
 
 print(findSmallestString(str1, str2))
 
 # This code is contributed by Stuti Pathak
+
+> 原文：[https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/](https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 查找所有划分最大数组元素的数字
 
+> 原文：[https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/](https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/)
+
 给定一个由 N 个数字组成的数组，任务是打印所有大于 1 的数字，这些数字除以数组元素的最大值。
 
 **范例**：
@@ -180,10 +182,18 @@ public static void main(String[] args) 
 ```py
 
 # Python3 program to print all the numbers 
+
+> 原文：[https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/](https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/)
 # that divides maximum of array elements 
 
+> 原文：[https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/](https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/)
+
 # Function that prints all the numbers 
+
+> 原文：[https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/](https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/)
 # which divides maximum of array elements 
+
+> 原文：[https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/](https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/)
 def printNumbers(a, n): 
 
     # hash to store the number of times 
@@ -221,11 +231,15 @@ def printNumbers(a, n):
             print(it,end=" ") 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/](https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/)
 a = [12, 15, 27, 20, 40 ] 
 n = len(a) 
 printNumbers(a, n) 
 
 # This code is contributed by mohit kumar 
+
+> 原文：[https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/](https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/)
 
 ```
 

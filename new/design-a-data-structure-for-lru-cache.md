@@ -1,5 +1,7 @@
 # 设计用于 LRU 缓存
 
+> 原文：[https://www.geeksforgeeks.org/design-a-data-structure-for-lru-cache/](https://www.geeksforgeeks.org/design-a-data-structure-for-lru-cache/)
+
 的数据结构
 
 为 [LRU 缓存](https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU)设计数据结构。 它应支持以下操作**：获取**和**设置**。

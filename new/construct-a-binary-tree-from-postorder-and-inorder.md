@@ -1,5 +1,7 @@
 # 从后序和顺序构建二叉树
 
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
+
 给定 Postorder 和 Inorder 遍历，构造树。
 
 **示例**：[
@@ -281,22 +283,44 @@ class BinaryTree {
 ```py
 
 # Python3 program to construct tree using  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 # inorder and postorder traversals  
 
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
+
 # Helper function that allocates  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 # a new node  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 class newNode: 
     def __init__(self, data): 
         self.data = data  
         self.left = self.right = None
 
 # Recursive function to construct binary  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 # of size n from Inorder traversal in[]  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 # and Postorder traversal post[]. Initial  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 # values of inStrt and inEnd should be  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 # 0 and n -1\. The function doesn't do any  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 # error checking for cases where inorder  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 # and postorder do not form a tree  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 def buildUtil(In, post, inStrt, inEnd, pIndex): 
 
     # Base case  
@@ -327,14 +351,24 @@ def buildUtil(In, post, inStrt, inEnd, pIndex):
     return node 
 
 # This function mainly initializes index  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 # of root and calls buildUtil()  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 def buildTree(In, post, n): 
     pIndex = [n - 1]  
     return buildUtil(In, post, 0, n - 1, pIndex) 
 
 # Function to find index of value in  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 # arr[start...end]. The function assumes  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 # that value is postsent in in[]  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 def search(arr, strt, end, value): 
     i = 0
     for i in range(strt, end + 1): 
@@ -343,6 +377,8 @@ def search(arr, strt, end, value):
     return i 
 
 # This funtcion is here just to test  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 def preOrder(node): 
     if node == None:  
         return
@@ -351,6 +387,8 @@ def preOrder(node):
     preOrder(node.right) 
 
 # Driver code  
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 if __name__ == '__main__': 
     In = [4, 8, 2, 5, 1, 6, 3, 7] 
     post = [8, 4, 5, 2, 6, 7, 3, 1]  
@@ -362,6 +400,8 @@ if __name__ == '__main__':
     preOrder(root) 
 
 # This code is contributed by PranchalK 
+
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
 
 ```
 

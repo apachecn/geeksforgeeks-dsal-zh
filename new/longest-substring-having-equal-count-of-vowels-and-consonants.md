@@ -1,5 +1,7 @@
 # 带有相等数量的元音和辅音的最长子串
 
+> 原文：[https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/](https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/)
+
 给定由小写英文字母组成的字符串 **S** ，任务是从给定的字符串中找到具有相等数量的元音和辅音的最长子字符串的长度。
 
 **示例**：
@@ -177,11 +179,21 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement
+
+> 原文：[https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/](https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/)
 # the above approach
 
+> 原文：[https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/](https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/)
+
 # Function to return the length of
+
+> 原文：[https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/](https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/)
 # the longest substring having equal
+
+> 原文：[https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/](https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/)
 # number of vowel and consonant
+
+> 原文：[https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/](https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/)
 def maxsubstringLength(S, N):
 
     arr = [0] * N
@@ -230,13 +242,19 @@ def maxsubstringLength(S, N):
     return maxLen
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/](https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/)
 S = "geeksforgeeks"
 n = len(S)
 
 # Function call
+
+> 原文：[https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/](https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/)
 print(maxsubstringLength(S, n))
 
 # This code is contributed by Shivam Singh
+
+> 原文：[https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/](https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/)
 
 ```
 

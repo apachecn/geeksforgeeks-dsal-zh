@@ -1,5 +1,7 @@
 # 哈希中的二次探查
 
+> 原文：[https://www.geeksforgeeks.org/quadratic-probing-in-hashing/](https://www.geeksforgeeks.org/quadratic-probing-in-hashing/)
+
 [哈希](https://www.geeksforgeeks.org/hashing-set-1-introduction/)是对[直接访问表](https://www.geeksforgeeks.org/direct-address-table/)的改进。 该想法是使用[哈希函数](https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/)，该函数将给定的电话号码或任何其他键转换为较小的数字，并将该较小的数字用作称为[哈希表](https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/)的表中的索引。
 
 [**哈希函数**](https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/) ****：一个将给定的大数字转换为小的实际整数值的函数。 映射的整数值用作哈希表中的索引。 简而言之，哈希函数将一个较大的数字或字符串映射为一个较小的整数，可用作哈希表中的索引。
@@ -195,9 +197,15 @@ class GFG {
 ```py
 
 # Python3 implementation of 
+
+> 原文：[https://www.geeksforgeeks.org/quadratic-probing-in-hashing/](https://www.geeksforgeeks.org/quadratic-probing-in-hashing/)
 # the Quadratic Probing 
 
+> 原文：[https://www.geeksforgeeks.org/quadratic-probing-in-hashing/](https://www.geeksforgeeks.org/quadratic-probing-in-hashing/)
+
 # Function to pran array 
+
+> 原文：[https://www.geeksforgeeks.org/quadratic-probing-in-hashing/](https://www.geeksforgeeks.org/quadratic-probing-in-hashing/)
 def printArray(arr, n): 
 
     # Iterating and printing the array 
@@ -205,7 +213,11 @@ def printArray(arr, n):
         print(arr[i], end = " ") 
 
 # Function to implement the 
+
+> 原文：[https://www.geeksforgeeks.org/quadratic-probing-in-hashing/](https://www.geeksforgeeks.org/quadratic-probing-in-hashing/)
 # quadratic probing 
+
+> 原文：[https://www.geeksforgeeks.org/quadratic-probing-in-hashing/](https://www.geeksforgeeks.org/quadratic-probing-in-hashing/)
 def hashing(table, tsize, arr, N): 
 
     # Iterating through the array 
@@ -240,23 +252,33 @@ def hashing(table, tsize, arr, N):
     printArray(table, N) 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/quadratic-probing-in-hashing/](https://www.geeksforgeeks.org/quadratic-probing-in-hashing/)
 arr = [ 50, 700, 76,  
         85, 92, 73, 101 ] 
 N = 7
 
 # Size of the hash table 
+
+> 原文：[https://www.geeksforgeeks.org/quadratic-probing-in-hashing/](https://www.geeksforgeeks.org/quadratic-probing-in-hashing/)
 L = 7
 
 hash_table = [0] * 7
 
 # Initializing the hash table 
+
+> 原文：[https://www.geeksforgeeks.org/quadratic-probing-in-hashing/](https://www.geeksforgeeks.org/quadratic-probing-in-hashing/)
 for i in range(L): 
     hash_table[i] = -1
 
 # Quadratic probing 
+
+> 原文：[https://www.geeksforgeeks.org/quadratic-probing-in-hashing/](https://www.geeksforgeeks.org/quadratic-probing-in-hashing/)
 hashing(hash_table, L, arr, N) 
 
 # This code is contributed by code_hunt 
+
+> 原文：[https://www.geeksforgeeks.org/quadratic-probing-in-hashing/](https://www.geeksforgeeks.org/quadratic-probing-in-hashing/)
 
 ```
 

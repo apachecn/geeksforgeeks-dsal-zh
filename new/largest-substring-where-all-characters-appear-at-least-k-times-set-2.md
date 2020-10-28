@@ -1,5 +1,7 @@
 # 最大的子字符串，其中所有字符至少出现 K 次| 设置 2
 
+> 原文：[https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/](https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/)
+
 给定字符串 **str** 和整数 **K** ，任务是找到最长子字符串 **S** 的长度，以使 **S 中的每个字符** 出现至少 **K** 次。
 
 **示例**：
@@ -175,7 +177,11 @@ public static void main(String[] args) 
 
 # Python3 program for the above approach  
 
+> 原文：[https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/](https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/)
+
 # Function to find the longest substring  
+
+> 原文：[https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/](https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/)
 def longestSubString(start, end, s, k):  
 
     # List for counting the number of  
@@ -209,14 +215,22 @@ def longestSubString(start, end, s, k): 
 
 # Driver Code  
 
+> 原文：[https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/](https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/)
+
 # Given String str  
+
+> 原文：[https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/](https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/)
 str = "aabbba"
 k = 3
 
 # Function call  
+
+> 原文：[https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/](https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/)
 print(longestSubString(0, len(str), str, k))  
 
 # This code is contributed by dadimadhav 
+
+> 原文：[https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/](https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/)
 
 ```
 

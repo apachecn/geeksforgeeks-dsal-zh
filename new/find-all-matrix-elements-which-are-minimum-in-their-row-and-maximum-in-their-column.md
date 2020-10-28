@@ -1,5 +1,7 @@
 # 查找所有矩阵元素，这些元素在其行中的最小值在其列中的最大值
 
+> 原文：[https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/](https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/)
+
 给定大小为 **M * N** 的矩阵 **mat [] []** ，任务是找到所有矩阵元素，这些矩阵元素在其各自的行中最小，在其各自的列中最大。 如果不存在此类元素，则打印 **-1** 。
 
 **示例**：
@@ -189,11 +191,19 @@ public static void main(String[] args)
 ```py
 
 # Python3 program for the above approach
+
+> 原文：[https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/](https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/)
 import sys
 
 # Functionto find all the matrix elements
+
+> 原文：[https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/](https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/)
 # which are minimum in its row and maximum
+
+> 原文：[https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/](https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/)
 # in its column
+
+> 原文：[https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/](https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/)
 def minmaxNumbers(matrix, res):
 
     # Initialize unordered set
@@ -229,6 +239,8 @@ def minmaxNumbers(matrix, res):
     return res
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/](https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/)
 if __name__ == '__main__':
 
     mat = [ [ 1, 10, 4 ], 
@@ -249,6 +261,8 @@ if __name__ == '__main__':
         print(ans[i])
 
 # This code is contributed by SURENDRA_GANGWAR
+
+> 原文：[https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/](https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/)
 
 ```
 

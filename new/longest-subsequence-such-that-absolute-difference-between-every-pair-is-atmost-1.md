@@ -1,5 +1,7 @@
 # 最长子序列，使得每对之间的绝对差最大为 1
 
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/](https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/)
+
 给定大小为 **N** 的整数数组 **arr []** ，任务是找到最长的子序列 **S** ，以便对每个 a [i]，a [j ]∈S 和 **| a [i] – a [j] | ≤1** 。
 
 **示例**：
@@ -114,8 +116,14 @@ public class GeeksForGeeks {
 ```py
 
 # Python3 implementation for 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/](https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/)
 # Longest subsequence such that absolute 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/](https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/)
 # difference between every pair is atmost 1 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/](https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/)
 
 def longestAr(n, arr): 
     count = dict() 
@@ -159,6 +167,8 @@ def longestAr(n, arr):
     return maxm 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/](https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/)
 if __name__ == '__main__': 
     n = 8
     arr = [2, 2, 3, 5, 5, 6, 6, 6] 
@@ -166,6 +176,8 @@ if __name__ == '__main__':
     print(maxLen) 
 
 # This code is contributed by mohit kumar 29 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/](https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/)
 
 ```
 

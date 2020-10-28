@@ -1,5 +1,7 @@
 # 在包含另一个字符串
 
+> 原文：[https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/](https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/)
+
 的所有字符的字符串中找到最小的窗口
 
 给定两个字符串 string1 和 string2，任务是在 string1 中找到包含 string2 的所有字符的最小子字符串。
@@ -248,11 +250,19 @@ public class GFG 
 ```py
 
 # Python3 program to find the smallest window  
+
+> 原文：[https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/](https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/)
 # containing all characters of a pattern.  
+
+> 原文：[https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/](https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/)
 no_of_chars = 256
 
 # Function to find smallest window  
+
+> 原文：[https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/](https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/)
 # containing all characters of 'pat'  
+
+> 原文：[https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/](https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/)
 def findSubString(string, pat):  
 
     len1 = len(string)  
@@ -322,6 +332,8 @@ def findSubString(string, pat): 
     return string[start_index : start_index + min_len]  
 
 # Driver code  
+
+> 原文：[https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/](https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/)
 if __name__ == "__main__": 
 
     string = "this is a test string"
@@ -331,6 +343,8 @@ if __name__ == "__main__":
     print(findSubString(string, pat))  
 
 # This code is contributed by Rituraj Jain 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/](https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/)
 
 ```
 

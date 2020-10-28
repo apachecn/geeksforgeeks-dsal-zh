@@ -1,5 +1,7 @@
 # 通过交换一对字符可以计算回文字符串
 
+> 原文：[https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/](https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/)
+
 给定[回文字符串](https://www.geeksforgeeks.org/string-palindrome/) **S** ，任务是通过一次交换一对字符来查找回文字符串的数量。
 
 **范例**：
@@ -147,10 +149,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/](https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/)
 # the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/](https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/)
+
 # Function to return the count of 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/](https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/)
 # possible palindromic strings 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/](https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/)
 def findNewString(s): 
 
     ans = 0
@@ -176,11 +186,15 @@ def findNewString(s):
     return ans 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/](https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/)
 s = "aaabaaa"
 
 print(findNewString(s)) 
 
 # This code is contributed by code_hunt 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/](https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/)
 
 ```
 

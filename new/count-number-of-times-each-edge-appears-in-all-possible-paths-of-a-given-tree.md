@@ -1,5 +1,7 @@
 # 计算每个边缘在给定树的所有可能路径中出现的次数
 
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
+
 给定一个 [**无向连通图**](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/) ，形式为 [**树**](https://www.geeksforgeeks.org/binary-tree-data-structure/) ，该树由 **N 个**节点和**组成（ N – 1）**边，每个边的任务是计算它在树中所有可能路径上出现的次数。
 
 **示例**：
@@ -258,12 +260,20 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement
+
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 # the above approach
 
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
+
 # Number of nodes
+
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 N = 4
 
 # Structure of a Node
+
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 class Node:
 
     def __init__(self, v, label):
@@ -272,16 +282,26 @@ class Node:
         self.edgeLabel = label
 
 # Adjacency list to 
+
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 # represent the Tree
+
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 adj = []
 for i in range(100005):
     adj.append([])
 
 # Stores the frequencies 
+
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 # of each edge
+
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 freq = [0] * N
 
 # Function to perform DFS
+
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 def dfs(u = 1, p = 1):
 
     global N
@@ -312,13 +332,19 @@ def dfs(u = 1, p = 1):
     return sz
 
 # Function to add edge between nodes
+
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 def addEdge(u, v, label):
 
     adj[u].append(Node(v, label))
     adj[v].append(Node(u, label))
 
 # Function to print the frequencies 
+
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 # of each edge in all possible paths 
+
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 def printFrequencies():
 
     # Stores the frequency 
@@ -332,6 +358,8 @@ def printFrequencies():
         print(freq[i], end = " ")
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 N = 4
 addEdge(1, 2, 1)
 addEdge(2, 3, 2)
@@ -340,6 +368,8 @@ addEdge(3, 4, 3)
 printFrequencies()
 
 # This code is contributed by Stuti Pathak
+
+> 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 
 ```
 

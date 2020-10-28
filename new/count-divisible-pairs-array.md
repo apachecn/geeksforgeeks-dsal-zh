@@ -1,5 +1,7 @@
 # 计数数组中的可分割对
 
+> 原文：[https://www.geeksforgeeks.org/count-divisible-pairs-array/](https://www.geeksforgeeks.org/count-divisible-pairs-array/)
+
 给定一个数组，对数组中的对进行计数，以使该对中的一个元素除以另一个。
 
 例子：
@@ -96,7 +98,11 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to count  
+
+> 原文：[https://www.geeksforgeeks.org/count-divisible-pairs-array/](https://www.geeksforgeeks.org/count-divisible-pairs-array/)
 # divisible pairs.  
+
+> 原文：[https://www.geeksforgeeks.org/count-divisible-pairs-array/](https://www.geeksforgeeks.org/count-divisible-pairs-array/)
 
 def countDivisibles(arr, n) : 
 
@@ -115,13 +121,19 @@ def countDivisibles(arr, n) :
     return res  
 
 # Driver code  
+
+> 原文：[https://www.geeksforgeeks.org/count-divisible-pairs-array/](https://www.geeksforgeeks.org/count-divisible-pairs-array/)
 if __name__=='__main__': 
     a = [1, 2, 3, 9] 
     n = len(a)  
     print(countDivisibles(a, n) ) 
 
 # this code is contributed by  
+
+> 原文：[https://www.geeksforgeeks.org/count-divisible-pairs-array/](https://www.geeksforgeeks.org/count-divisible-pairs-array/)
 # Smitha Dinesh Semwal     
+
+> 原文：[https://www.geeksforgeeks.org/count-divisible-pairs-array/](https://www.geeksforgeeks.org/count-divisible-pairs-array/)
 
 ```
 

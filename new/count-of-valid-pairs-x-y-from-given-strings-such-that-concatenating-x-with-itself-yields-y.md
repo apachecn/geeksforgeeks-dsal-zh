@@ -1,5 +1,7 @@
 # 来自给定字符串的有效对（X，Y）的计数，以使 X 与自身连接产生 Y
 
+> 原文：[https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/](https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/)
+
 给定 **N** 个字符串的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 。 假设 **X** 和 **Y** 为两个字符串，如果重排，则 **X** 和 **Y** 是有效的对。 从 **X** 与 **X** （**，即 X** + **X** ）串联得到的字符串的结果为 **Y** 。 任务是计算此类有效对的数量。
 
 **示例**：
@@ -204,10 +206,16 @@ public class Main {
 ```py
 
 # Python3 program for the above approach
+
+> 原文：[https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/](https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/)
 from collections import defaultdict
 
 # Function that count total number
+
+> 原文：[https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/](https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/)
 # of valid pairs 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/](https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/)
 def countPairs(arr, N):
 
     # Create hashmap to store the
@@ -238,15 +246,23 @@ def countPairs(arr, N):
     return count
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/](https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/)
 N = 3
 
 # Given array of strings
+
+> 原文：[https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/](https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/)
 arr = [ "easy", "yeasseay", "medium" ]
 
 # Function call
+
+> 原文：[https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/](https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/)
 print(countPairs(arr, N))
 
 # This code is contributed by Shivam Singh
+
+> 原文：[https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/](https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/)
 
 ```
 

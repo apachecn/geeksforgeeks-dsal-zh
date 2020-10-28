@@ -1,5 +1,7 @@
 # 在链接列表
 
+> 原文：[https://www.geeksforgeeks.org/find-unique-elements-linked-list/](https://www.geeksforgeeks.org/find-unique-elements-linked-list/)
+
 中查找唯一的元素
 
 给定一个链表。 我们需要在链表中找到唯一元素，即链表中未重复的元素或频率为 1 的元素。如果列表中不存在此类元素，请打印“无唯一元素”。
@@ -201,18 +203,28 @@ public static void main(String[] args)
 ```py
 
 # Python3 Program to Find the Unique elements in  
+
+> 原文：[https://www.geeksforgeeks.org/find-unique-elements-linked-list/](https://www.geeksforgeeks.org/find-unique-elements-linked-list/)
 # linked lists  
+
+> 原文：[https://www.geeksforgeeks.org/find-unique-elements-linked-list/](https://www.geeksforgeeks.org/find-unique-elements-linked-list/)
 import sys 
 import math 
 
 # Linked list node  
+
+> 原文：[https://www.geeksforgeeks.org/find-unique-elements-linked-list/](https://www.geeksforgeeks.org/find-unique-elements-linked-list/)
 class Node: 
     def __init__(self,data): 
         self.data = data 
         self.next = None
 
 # Function to insert a node at the beginning of  
+
+> 原文：[https://www.geeksforgeeks.org/find-unique-elements-linked-list/](https://www.geeksforgeeks.org/find-unique-elements-linked-list/)
 # the linked list  
+
+> 原文：[https://www.geeksforgeeks.org/find-unique-elements-linked-list/](https://www.geeksforgeeks.org/find-unique-elements-linked-list/)
 def push(head,data): 
     if not head: 
         return Node(data) 
@@ -222,6 +234,8 @@ def push(head,data):
     return head 
 
 # function to Find the unique elements in linked lists  
+
+> 原文：[https://www.geeksforgeeks.org/find-unique-elements-linked-list/](https://www.geeksforgeeks.org/find-unique-elements-linked-list/)
 def uniqueElements(head): 
 
     # Initialize hash array that store the  
@@ -249,6 +263,8 @@ def uniqueElements(head):
         print("No Unique Elements") 
 
 # Driver program to test above 
+
+> 原文：[https://www.geeksforgeeks.org/find-unique-elements-linked-list/](https://www.geeksforgeeks.org/find-unique-elements-linked-list/)
 if __name__=='__main__': 
 
     # creating linked list 
@@ -265,6 +281,8 @@ if __name__=='__main__':
     uniqueElements(head) 
 
 # This code is Contributed by Vikash Kumar 37 
+
+> 原文：[https://www.geeksforgeeks.org/find-unique-elements-linked-list/](https://www.geeksforgeeks.org/find-unique-elements-linked-list/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 进行字符串回文的逆时针移位数
 
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
+
 给定一串小写英语字母，找到使该字符串回文所需的字符的逆时针移位数。 据认为，移弦总是会导致回文。
 
 **范例**：
@@ -183,10 +185,18 @@ class GFG {
 ```py
 
 # Python3 program to find counter clockwise
+
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 # shifts to make string palindrome.
 
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
+
 # Function to check if given string 
+
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 # is palindrome or not.
+
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 def isPalindrome(str, l, r):
 
     while (l < r) :
@@ -199,7 +209,11 @@ def isPalindrome(str, l, r):
     return True
 
 # Function to find counter clockwise 
+
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 # shifts to make string palindrome.
+
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 def CyclicShifts(str):
 
     n = len(str)
@@ -238,6 +252,8 @@ def CyclicShifts(str):
     return cnt
 
 # Driver code.
+
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 if __name__ == "__main__":
 
     str = "bccbbaab";
@@ -245,6 +261,8 @@ if __name__ == "__main__":
     print(CyclicShifts(str))
 
 # This code is contributed by ita_c
+
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 
 ```c
 
@@ -619,11 +637,19 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to find counter clockwise
+
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 # shifts to make string palindrome.
+
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 mod = 1000000007
 
 # Function to find counter clockwise shifts
+
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 # to make string palindrome.
+
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 def CyclicShifts(str1):
 
     n = len(str1)
@@ -707,11 +733,15 @@ def CyclicShifts(str1):
     return cnt
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 str1 = "bccbbaab"
 
 print(CyclicShifts(str1))
 
 # This code is contributed by mohit kumar
+
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 
 ```
 

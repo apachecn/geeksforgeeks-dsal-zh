@@ -1,5 +1,7 @@
 # 当元素不限于范围时，查找给定数组中的重复项
 
+> 原文：[https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/](https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/)
+
 给定 n 个整数数组。 任务是在给定数组中打印重复项。 如果没有重复，则打印-1。
 
 **范例**：
@@ -209,7 +211,11 @@ public class FindDuplicatedInArray
 ```py
 
 # Python 3 code to find duplicates 
+
+> 原文：[https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/](https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/)
 # using dictionary approach.
+
+> 原文：[https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/](https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/)
 def printDuplicates(arr):
     dict = {}
 
@@ -229,13 +235,19 @@ def printDuplicates(arr):
     print("\n")
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/](https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/)
 if __name__ == "__main__":
     list = [12, 11, 40, 12, 
             5, 6, 5, 12, 11]
     printDuplicates(list)
 
 # This code is contributed
+
+> 原文：[https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/](https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/)
 # by Sushil Bhile
+
+> 原文：[https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/](https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/)
 
 ```
 

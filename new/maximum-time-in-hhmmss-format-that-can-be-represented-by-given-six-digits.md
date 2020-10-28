@@ -1,5 +1,7 @@
 # HH：MM：SS 格式的最长时间，可以用给定的六位数字表示
 
+> 原文：[https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/](https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/)
+
 给定仅由六个整数组成的[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，任务是以 **24 小时格式**返回最大时间，可以使用 给定数组中的数字。
 
 **注意**：24 小时格式的最短时间为 00:00:00，最大时间为 23:59:59。 如果无法形成有效时间，请打印-1。
@@ -234,12 +236,24 @@ public static void main(String[] args)
 ```py
 
 # Python 3 Program of the
+
+> 原文：[https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/](https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/)
 # above approach
 
+> 原文：[https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/](https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/)
+
 # Function to return the 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/](https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/)
 # maximum possible time in 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/](https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/)
 # 24-Hours format that can 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/](https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/)
 # be represented by array elements
+
+> 原文：[https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/](https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/)
 def largestTimeFromDigits(A):
 
     # Stores the frequency
@@ -310,12 +324,16 @@ def largestTimeFromDigits(A):
     return "-1"
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/](https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/)
 if __name__ == '__main__':
 
     v =  [0, 2, 1, 9, 3, 2]
     print(largestTimeFromDigits(v))
 
 # This code is contributed by ipg2016107
+
+> 原文：[https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/](https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/)
 
 ```
 

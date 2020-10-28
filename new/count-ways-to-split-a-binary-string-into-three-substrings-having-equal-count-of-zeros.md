@@ -1,5 +1,7 @@
 # 数种方式将二进制字符串拆分为三个具有相等零计数的子字符串
 
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
+
 给定[二进制字符串](https://www.geeksforgeeks.org/tag/binary-string/) **str** ，任务是计算将给定字符串拆分为三个具有相同 **0** 数量的非重叠子字符串的方式总数 s。
 
 **示例**：
@@ -186,11 +188,21 @@ class GFG {
 ```py
 
 # Python3 implementation for 
+
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
 # the above approach
 
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
+
 # Function to return ways to split
+
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
 # a string into three  parts
+
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
 # with the equal number of 0
+
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
 def count(s):
 
     # Store total count of 0s
@@ -240,6 +252,8 @@ def count(s):
     return res
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
 if __name__ == "__main__":
 
     # Given string
@@ -249,6 +263,8 @@ if __name__ == "__main__":
     print(count(st))
 
 # This code is contributed by Chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
 
 ```
 
@@ -548,8 +564,14 @@ public static void main(String args[])
 
 # Python3 program for above approach
 
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
+
 # Function to calculate
+
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
 # the number of ways to split
+
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
 def splitstring(s):
 
     n = len(s)
@@ -613,12 +635,18 @@ def splitstring(s):
     return waysOfFirstCut * waysOfSecondCut
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
 s = "01010"
 
 # Function call
+
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
 print("The number of ways to split is", splitstring(s))
 
 # This code is contributed by divyeshrabadiya07
+
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 包含字符串本身的所有字符的最小窗口
 
+> 原文：[https://www.geeksforgeeks.org/smallest-window-contains-characters-string/](https://www.geeksforgeeks.org/smallest-window-contains-characters-string/)
+
 给定一个字符串，找到具有给定字符串的所有不同字符的最小窗口长度。 例如。 str =“ aabcbcdbca”，则结果将是 4，因为最小的窗口将是“ dbca”。
 
 **示例**：

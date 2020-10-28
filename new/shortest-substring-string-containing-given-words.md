@@ -1,5 +1,7 @@
 # 包含所有给定单词的字符串的最短子字符串
 
+> 原文：[https://www.geeksforgeeks.org/shortest-substring-string-containing-given-words/](https://www.geeksforgeeks.org/shortest-substring-string-containing-given-words/)
+
 打印包含所有给定单词的字符串的最短子字符串。
 
 ![](img/244ab3390a4cb1b1c85d3d980b9bdc36.png)

@@ -1,5 +1,7 @@
 # 不能形成总和为 2 的幂的任何对的元素计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
+
 给定长度为 **N** 的数组 **arr []** ，任务是打印无法与任何其他数组元素成对的数组元素，其总和为 2 的幂。
 
 **范例**：
@@ -222,15 +224,31 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to count of
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
 # array elements which do
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
 # not form a pair with sum
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
 # equal to a power of 2
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
 # with any other array element
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
 from collections import defaultdict
 
 # Function to calculate
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
 # and return the
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
 # count of elements
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
 def powerOfTwo(a, n):
 
     # Stores the frequencies
@@ -283,6 +301,8 @@ def powerOfTwo(a, n):
     return count
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
 if __name__ == "__main__":
 
     a = [6, 2, 11]
@@ -290,6 +310,8 @@ if __name__ == "__main__":
     print(powerOfTwo(a, n))
 
 # This code is contributed by Chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 在二叉树中打印第一个最短的根到叶路径
 
+> 原文：[https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/](https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/)
+
 给定具有不同值的二叉树，任务是打印第一个最小的根到叶路径。 我们基本上需要打印出节点数最少的最左边的根到叶的路径。
 
 ```
@@ -315,9 +317,15 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to print first 
+
+> 原文：[https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/](https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/)
 # shortest root to leaf path 
 
+> 原文：[https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/](https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/)
+
 # Binary tree node 
+
+> 原文：[https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/](https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/)
 class Node:
 
     def __init__(self, data):
@@ -326,7 +334,11 @@ class Node:
         self.right = None
 
 # Recursive function used by leftMostShortest 
+
+> 原文：[https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/](https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/)
 # to print the first shortest root to leaf path 
+
+> 原文：[https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/](https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/)
 def printPath(Data, parent): 
 
     # If the root's data is same as 
@@ -341,7 +353,11 @@ def printPath(Data, parent):
     print(parent[Data], end = " ") 
 
 # Function to perform level order traversal 
+
+> 原文：[https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/](https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/)
 # until we find the first leaf node 
+
+> 原文：[https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/](https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/)
 def leftMostShortest(root): 
 
     # Queue to store the nodes 
@@ -403,6 +419,8 @@ def leftMostShortest(root):
     print(LeafData, end = " ")
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/](https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/)
 if __name__ == "__main__": 
 
     root = Node(1) 
@@ -418,6 +436,8 @@ if __name__ == "__main__":
     leftMostShortest(root) 
 
 # This code is contributed by Rituraj Jain
+
+> 原文：[https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/](https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/)
 
 ```
 

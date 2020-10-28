@@ -1,5 +1,7 @@
 # 树的每个节点与给定的断开连接的组件
 
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
+
 连接后的直径
 
 给定 [**树**](https://www.geeksforgeeks.org/generic-treesn-array-trees/) ，该树具有通过 **N-1** 边缘连接的 **N** 个节点和**单断开节点**的任务 是在将给定树与给定的断开连接的组件连接后找到给定树的每个节点的直径。
@@ -306,22 +308,40 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement 
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 # the above approach 
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 from collections import defaultdict
 
 # Keeps track of the farthest 
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 # end of the diameter 
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 X = 1
 
 # Keeps track of the length of 
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 # the diameter 
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 diameter = 0
 
 # Stores the nodes which are at 
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 # ends of the diameter 
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 mp = defaultdict(lambda :0)
 
 # Perform DFS on the given tree
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 def dfs(current_node, prev_node, 
         len, add_to_map, adj):
 
@@ -343,7 +363,11 @@ def dfs(current_node, prev_node,
                 add_to_map, adj)
 
 # Function to call DFS for the 
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 # required purposes 
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 def dfsUtility(adj):
 
     # DFS from a random node and find 
@@ -385,7 +409,11 @@ def printDiameters(adj):
 
 # Driver code
 
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
+
 # constructed tree is 
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 #         1 
 #        / \ 
 #      2   3 
@@ -399,6 +427,8 @@ for i in range(7):
     adj.append([])
 
 # Creating undirected edges
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 adj[1].append(2)
 adj[2].append(1)
 adj[1].append(3)
@@ -413,6 +443,8 @@ adj[6].append(2)
 printDiameters(adj)
 
 # This code is contributed by Stuti Pathak
+
+> 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
 
 ```
 

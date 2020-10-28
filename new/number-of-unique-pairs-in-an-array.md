@@ -1,5 +1,7 @@
 # 数组
 
+> 原文：[https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/](https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/)
+
 中的唯一对数
 
 给定 N 个元素的数组，任务是找到可以使用给定数组的元素形成的所有唯一对。
@@ -102,8 +104,14 @@ public static void main(String[] args)
 
 # Python3 implementation of the approach
 
+> 原文：[https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/](https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/)
+
 # Function to return the number
+
+> 原文：[https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/](https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/)
 # of unique pairs in the array
+
+> 原文：[https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/](https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/)
 def countUnique(arr, n):
     # Set to store unique pairs
     s = set()
@@ -118,11 +126,15 @@ def countUnique(arr, n):
 
 # Driver code
 
+> 原文：[https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/](https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/)
+
 arr = [ 1, 2, 2, 4, 2, 5, 3, 5 ]
 n = len(arr)
 print(countUnique(arr, n))
 
 # This code is contributed by ankush_953
+
+> 原文：[https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/](https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/)
 
 ```
 
@@ -278,8 +290,14 @@ by PrinciRaj1992*/
 
 # Python3 implementation of the approach 
 
+> 原文：[https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/](https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/)
+
 # Function to return the number 
+
+> 原文：[https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/](https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/)
 # of unique pairs in the array 
+
+> 原文：[https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/](https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/)
 def countUnique(arr, n) :
 
     s = set(); 
@@ -291,6 +309,8 @@ def countUnique(arr, n) :
     return count; 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/](https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/)
 if __name__ == "__main__" : 
 
     arr = [ 1, 2, 2, 4, 2, 5, 3, 5 ]; 
@@ -299,6 +319,8 @@ if __name__ == "__main__" :
     print(countUnique(arr, n));
 
 # This code is contributed by Ryuga
+
+> 原文：[https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/](https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/)
 
 ```
 

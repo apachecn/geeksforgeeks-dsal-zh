@@ -1,5 +1,7 @@
 # 查询以圆形是否可以合并框
 
+> 原文：[https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/](https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/)
+
 考虑 **n** 个框，它们沿顺时针方向（从 1 到 n）以递增顺序排列成一个圆圈。 您将获得 **q** 个查询，每个查询包含两个整数 i 和 j。 任务是检查是否可以通过杆将**框 i** 与**框 j** 连接，而没有相交的杆来连接先前查询中的其他框。 同样，每个盒子最多只能连接到另一个盒子，任何盒子都不能与其自身连接。
 
 **示例**：
@@ -242,11 +244,17 @@ public static void main(String[] args)
 ```
 
 # Python 3 implementation of  
+
+> 原文：[https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/](https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/)
 # above approach 
+
+> 原文：[https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/](https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/)
 
 MAX = 50
 
 # Print the answer to each query 
+
+> 原文：[https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/](https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/)
 def solveQuery(n, q, qi, qj): 
 
     arr = [None] * MAX
@@ -305,6 +313,8 @@ def solveQuery(n, q, qi, qj):
             print("NO") 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/](https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/)
 if __name__ == "__main__": 
     n = 10
     q = 7
@@ -314,7 +324,11 @@ if __name__ == "__main__":
     solveQuery(n, q, qi, qj) 
 
 # This code is contributed 
+
+> 原文：[https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/](https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/)
 # by ChitraNayal 
+
+> 原文：[https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/](https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/)
 
 ```
 

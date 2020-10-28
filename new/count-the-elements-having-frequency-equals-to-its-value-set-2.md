@@ -1,5 +1,7 @@
 # 计算频率等于其值的元素| 设置 2
 
+> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/)
+
 给定一个大小为 **N** 的整数 **arr []** 数组，任务是对频率等于其值的频率的所有元素进行计数。
 
 **范例**：
@@ -144,11 +146,21 @@ public static void main(String[] args)
 ```py
 
 # Python3 program of the
+
+> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/)
 # above approach
 
+> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/)
+
 # Function to find the integer
+
+> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/)
 # which has a frequency in the
+
+> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/)
 # array equal to its value.
+
+> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/)
 def solve(arr, n):
 
     # Store frequency of array
@@ -177,6 +189,8 @@ def solve(arr, n):
     print(count , "");
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/)
 if __name__ == '__main__':
 
     arr = [3, 1, 1, 3, 
@@ -185,6 +199,8 @@ if __name__ == '__main__':
     solve(arr, N);
 
 # This code is contributed by shikhasingrajput
+
+> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/)
 
 ```
 

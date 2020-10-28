@@ -1,5 +1,7 @@
 # 最相似的字符串
 
+> 原文：[https://www.geeksforgeeks.org/most-similar-string/](https://www.geeksforgeeks.org/most-similar-string/)
+
 给定字符串 **str** 和[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)，字符串 **arr []** 的大小为 **N** ，任务是从 arr [打印字符串 ]，最多可匹配 str 个字符。
 
 **示例**：
@@ -159,10 +161,16 @@ public class GFG {
 ```py
 
 # Python3 program for the above appraoch
+
+> 原文：[https://www.geeksforgeeks.org/most-similar-string/](https://www.geeksforgeeks.org/most-similar-string/)
 import sys
 
 # Function that print string which 
+
+> 原文：[https://www.geeksforgeeks.org/most-similar-string/](https://www.geeksforgeeks.org/most-similar-string/)
 # has maximum similar characters
+
+> 原文：[https://www.geeksforgeeks.org/most-similar-string/](https://www.geeksforgeeks.org/most-similar-string/)
 def maxMatchingChar(list, n, ch):
 
     val = ""
@@ -181,7 +189,11 @@ def maxMatchingChar(list, n, ch):
     print(val, end = " ")
 
 # Function that returns the count 
+
+> 原文：[https://www.geeksforgeeks.org/most-similar-string/](https://www.geeksforgeeks.org/most-similar-string/)
 # of number of matching characters
+
+> 原文：[https://www.geeksforgeeks.org/most-similar-string/](https://www.geeksforgeeks.org/most-similar-string/)
 def matchingChar(s, ch):
 
     freq = 0
@@ -198,23 +210,35 @@ def matchingChar(s, ch):
     return freq
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/most-similar-string/](https://www.geeksforgeeks.org/most-similar-string/)
 n = 3
 str = "Vikas"
 D = [ "preeti", "khusbu", "katherina" ]
 
 # Remove duplicate characters and
+
+> 原文：[https://www.geeksforgeeks.org/most-similar-string/](https://www.geeksforgeeks.org/most-similar-string/)
 # convert to lowercase 
+
+> 原文：[https://www.geeksforgeeks.org/most-similar-string/](https://www.geeksforgeeks.org/most-similar-string/)
 ch = list(set(str.lower()))
 List = []
 
 # Insert each string in the list
+
+> 原文：[https://www.geeksforgeeks.org/most-similar-string/](https://www.geeksforgeeks.org/most-similar-string/)
 for i in range(n):
     List.append(D[i])
 
 # Function call 
+
+> 原文：[https://www.geeksforgeeks.org/most-similar-string/](https://www.geeksforgeeks.org/most-similar-string/)
 maxMatchingChar(List, n, ch)
 
 # This code is contributed by avanitrachhadiya2155
+
+> 原文：[https://www.geeksforgeeks.org/most-similar-string/](https://www.geeksforgeeks.org/most-similar-string/)
 
 ```
 

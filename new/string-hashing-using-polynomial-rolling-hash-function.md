@@ -1,5 +1,7 @@
 # 使用多项式滚动哈希函数
 
+> 原文：[https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/](https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/)
+
 的字符串哈希
 
 ### **什么是字符串哈希？**
@@ -130,10 +132,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation of the
+
+> 原文：[https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/](https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/)
 # Polynomial Rolling Hash Function
 
+> 原文：[https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/](https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/)
+
 # Function to calculate
+
+> 原文：[https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/](https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/)
 # the hash of a string
+
+> 原文：[https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/](https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/)
 def polynomialRollingHash(str):
 
     # P and M
@@ -154,6 +164,8 @@ def polynomialRollingHash(str):
     return int(hash_val)
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/](https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/)
 if __name__ == '__main__':
 
     # Given string
@@ -163,6 +175,8 @@ if __name__ == '__main__':
           str1, polynomialRollingHash(str1)))
 
 # This code is contributed by Shivam Singh
+
+> 原文：[https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/](https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/)
 
 ```
 

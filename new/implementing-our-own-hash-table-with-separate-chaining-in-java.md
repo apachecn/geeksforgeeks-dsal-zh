@@ -1,5 +1,7 @@
 # 用 Java 中的单独链接实现自己的哈希表
 
+> 原文：[https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/](https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/)
+
 每个数据结构都有其自己的特殊特性，例如，当需要快速搜索元素（在 log（n）中）时，将使用 BST。 当需要在恒定时间内获取最小或最大元素时，将使用堆或优先级队列。 类似地，哈希表用于在固定时间内获取，添加和删除元素。 任何人都必须先了解哈希表的工作，然后再进行实施。 因此，这是哈希表工作的简要背景，还应注意，尽管 Java 中的 HashTables 是线程安全的，而 HashMaps 不是线程安全的，但我们将互换使用 Hash Map 和 Hash Table 术语。
 
 我们将要实现的代码位于 [Link 1](https://github.com/ishaan007/Data-Structures/blob/master/HashMaps/Map.java) 和 [Link2](https://github.com/ishaan007/Data-Structures/blob/master/HashMaps/HashNode.java)

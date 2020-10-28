@@ -1,5 +1,7 @@
 # 大小为 3 的 GP（几何级数）子序列的数量
 
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
+
 给定 n 个元素和一个比率 r，求 G.P. 子序列的长度为 3。子序列被视为 GP，长度为 3，比率为 r。
 
 **范例**：
@@ -176,11 +178,19 @@ public static void main (String[] args)
 ```py
 
 # Python3 program to count GP subsequences 
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 # of size 3\. 
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 from collections import defaultdict
 
 # Returns count of G.P. subseqeunces 
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 # with length 3 and common ratio r 
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 def subsequences(a, n, r): 
 
     # hashing to maintain left and right
@@ -222,6 +232,8 @@ def subsequences(a, n, r):
     return ans 
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 if __name__ == "__main__": 
 
     a = [1, 2, 6, 2, 3, 6, 9, 18, 3, 9] 
@@ -230,7 +242,11 @@ if __name__ == "__main__":
     print(subsequences(a, n, r)) 
 
 # This code is contributed by 
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 # Rituraj Jain
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 
 ```
 
@@ -440,11 +456,19 @@ int main()
 ```py
 
 # Python3 program to count 
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 # GP subsequences of size 3.
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 from collections import defaultdict
 
 # To calculate nCr
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 # DP approach
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 def binomialCoeff(n, k):
 
   C = [0] * (k + 1)
@@ -461,7 +485,11 @@ def binomialCoeff(n, k):
   return C[k]
 
 # Returns count of G.P. subseqeunces
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 # with length 3 and common ratio r
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 def subsequences(a, n, r):
 
     # hashing to maintain left
@@ -529,6 +557,8 @@ def subsequences(a, n, r):
     return ans
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 if __name__ == "__main__":
 
     a = [1, 2, 6, 2, 3, 
@@ -538,6 +568,8 @@ if __name__ == "__main__":
     print ( subsequences(a, n, r))
 
 # This code is contributed by Chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
 
 ```
 

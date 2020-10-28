@@ -1,5 +1,7 @@
 # 打印字符串的按字典顺序最小的非回文排列的最后一个字符
 
+> 原文：[https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/](https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/)
+
 给定[字符串](https://www.geeksforgeeks.org/string-data-structure/) **str** ，任务是打印给定字符串的字典最小的[非回文排列的最后一个字符。 如果不存在这样的排列，请打印**“ -1”** 。](https://www.geeksforgeeks.org/make-the-string-lexicographically-smallest-non-palindromic-by-replacing-exactly-one-character/)
 
 **示例**：
@@ -464,8 +466,14 @@ int main()
 
 # Python3 program for the above approach
 
+> 原文：[https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/](https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/)
+
 # Function to find the smallest non
+
+> 原文：[https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/](https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/)
 # palindromic lexicographic string
+
+> 原文：[https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/](https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/)
 def lexicographicSmallestString(s, N):
 
     # Stores the frequency of each
@@ -486,6 +494,8 @@ def lexicographicSmallestString(s, N):
         print(x)
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/](https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/)
 if __name__ == '__main__':
 
     # Given str
@@ -498,6 +508,8 @@ if __name__ == '__main__':
     lexicographicSmallestString(str, N)
 
 # This code is contributed by mohit kumar 29
+
+> 原文：[https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/](https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/)
 
 ```
 

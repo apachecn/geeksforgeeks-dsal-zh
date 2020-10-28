@@ -1,5 +1,7 @@
 # 具有唯一（或不同）数字的数字
 
+> 原文：[https://www.geeksforgeeks.org/numbers-unique-distinct-digits/](https://www.geeksforgeeks.org/numbers-unique-distinct-digits/)
+
 给定范围，请打印所有具有唯一数字的数字。
 
 **示例**：
@@ -125,12 +127,24 @@ class Test
 ```py
 
 # Python3 implementation 
+
+> 原文：[https://www.geeksforgeeks.org/numbers-unique-distinct-digits/](https://www.geeksforgeeks.org/numbers-unique-distinct-digits/)
 # to find unique digit 
+
+> 原文：[https://www.geeksforgeeks.org/numbers-unique-distinct-digits/](https://www.geeksforgeeks.org/numbers-unique-distinct-digits/)
 # numbers in a range 
 
+> 原文：[https://www.geeksforgeeks.org/numbers-unique-distinct-digits/](https://www.geeksforgeeks.org/numbers-unique-distinct-digits/)
+
 # Function to print 
+
+> 原文：[https://www.geeksforgeeks.org/numbers-unique-distinct-digits/](https://www.geeksforgeeks.org/numbers-unique-distinct-digits/)
 # unique digit numbers 
+
+> 原文：[https://www.geeksforgeeks.org/numbers-unique-distinct-digits/](https://www.geeksforgeeks.org/numbers-unique-distinct-digits/)
 # in range from l to r. 
+
+> 原文：[https://www.geeksforgeeks.org/numbers-unique-distinct-digits/](https://www.geeksforgeeks.org/numbers-unique-distinct-digits/)
 def printUnique(l,r): 
 
     # Start traversing 
@@ -160,12 +174,18 @@ def printUnique(l,r):
             print(i, end = " "); 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/numbers-unique-distinct-digits/](https://www.geeksforgeeks.org/numbers-unique-distinct-digits/)
 l = 1; 
 r = 20; 
 printUnique(l, r); 
 
 # This code is 
+
+> 原文：[https://www.geeksforgeeks.org/numbers-unique-distinct-digits/](https://www.geeksforgeeks.org/numbers-unique-distinct-digits/)
 # contributed by mits 
+
+> 原文：[https://www.geeksforgeeks.org/numbers-unique-distinct-digits/](https://www.geeksforgeeks.org/numbers-unique-distinct-digits/)
 
 ```
 

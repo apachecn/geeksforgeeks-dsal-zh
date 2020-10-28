@@ -1,5 +1,7 @@
 # 程序使用 STL 查找数组中是否存在两个数字及其 AM 和 HM
 
+> 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
+
 给定一个 Number 数组和两个值 **A** 和 **B** ，任务是检查以下条件：
 
 1.  数组中是否存在两个数字。
@@ -235,23 +237,43 @@ public static void main(String args[]) 
 ```py
 
 # Python3 program to check if two numbers  
+
+> 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
 # are present in an array then their 
+
+> 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
 # AM and HM are also present. Finally, 
+
+> 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
 # find the GM of the numbers 
+
+> 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
 from math import sqrt 
 
 # Function to find the arithmetic mean  
+
+> 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
 # of 2 numbers 
+
+> 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
 def ArithmeticMean(A, B): 
     return (A + B) / 2
 
 # Function to find the harmonic mean 
+
+> 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
 # of 2 numbers 
+
+> 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
 def HarmonicMean(A, B): 
     return (2 * A * B) / (A + B) 
 
 # Following function checks and computes the 
+
+> 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
 # desired results based on the means 
+
+> 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
 def CheckArithmeticHarmonic(arr, A, B, N): 
 
     # Calculate means  
@@ -288,6 +310,8 @@ def CheckArithmeticHarmonic(arr, A, B, N):
         print("Numbers not found") 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
 if __name__ == '__main__': 
 
     arr = [ 1.0, 2.0, 2.5, 3.0, 
@@ -299,6 +323,8 @@ if __name__ == '__main__':
     CheckArithmeticHarmonic(arr, A, B, N) 
 
 # This code is contributed by Samarth 
+
+> 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
 
 ```
 

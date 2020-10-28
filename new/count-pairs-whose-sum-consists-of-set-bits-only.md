@@ -1,5 +1,7 @@
 # 计数对，其总和仅由设置的位组成
 
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
+
 给定由 **N** 个整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是查找给定数组中无序对的计数，其总和包含所有设置位。
 
 **示例**：
@@ -166,10 +168,16 @@ public static void main(String[] args)
 ```py
 
 # Python3 program for the above approach
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 from math import log2
 
 # Function to check if the number num
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 # has all set bits or not
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 def allSetBits(num):
 
     # Find total bits
@@ -185,7 +193,11 @@ def allSetBits(num):
         return False
 
 # Function that find the count of
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 # pairs whose sum has all set bits
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 def countPairs(arr, n):
 
     # Stores the count of pairs
@@ -206,6 +218,8 @@ def countPairs(arr, n):
     return ans
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 if __name__ == '__main__':
 
     arr = [ 1, 2, 5, 10 ]
@@ -215,6 +229,8 @@ if __name__ == '__main__':
     print(countPairs(arr, N))
 
 # This code is contributed by mohit kumar 29
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 
 ```
 
@@ -490,27 +506,49 @@ public static void main(String[] args)
 ```py
 
 # Python3 program for the 
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 # above approach
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 from collections import defaultdict
 
 # Store numbers having 
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 # all set bits
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 setArray = []
 
 # Store frequency of values 
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 # in arr[]
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 mp = defaultdict (int)
 
 # Function to fill setArray[] with
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 # numbers that have all set bits
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 def fillsetArray():
 
     for i in range (1, 31):
         setArray.append((1 << i) - 1)
 
 # Function to find the 
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 # count of pairs whose sum 
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 # contains all set bits
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 def countPairs(arr, n):
 
     # Stores the count of pairs
@@ -540,6 +578,8 @@ def countPairs(arr, n):
     return ans // 2
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 if __name__ == "__main__":
 
     arr = [1, 2, 5, 10]
@@ -549,6 +589,8 @@ if __name__ == "__main__":
     print (countPairs(arr, N))
 
 # This code is contributed by Chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 螺母&螺栓问题（锁定&钥匙问题）| 设置 2（哈希图）
 
+> 原文：[https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem-set-2-hashmap/](https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem-set-2-hashmap/)
+
 给定一组 n 个不同尺寸的螺母和 n 个不同尺寸的螺栓。 螺母和螺栓之间存在一对一的映射。 有效地匹配螺母和螺栓。
 
 **约束**：不允许将螺母与另一个螺母或一个螺栓与另一个螺栓进行比较。 这意味着只能将螺母与螺栓进行比较，而只能将螺栓与螺母进行比较以查看哪个更大或更小。

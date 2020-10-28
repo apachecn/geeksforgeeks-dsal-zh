@@ -1,5 +1,7 @@
 # 多数元素| 第 2 组（哈希）
 
+> 原文：[https://www.geeksforgeeks.org/majority-element-set-2-hashing/](https://www.geeksforgeeks.org/majority-element-set-2-hashing/)
+
 给定大小为 N 的数组，找到多数元素。 多数元素是在给定数组中出现![\floor{\frac{n}{2}}](img/6b97b83019d889e5a31cda3e150a83d9.png "Rendered by QuickLaTeX.com")次以上的元素。
 
 **示例**：
@@ -107,7 +109,11 @@ public static void main(String[] args) 
 ```
 
 # function to print the  
+
+> 原文：[https://www.geeksforgeeks.org/majority-element-set-2-hashing/](https://www.geeksforgeeks.org/majority-element-set-2-hashing/)
 # majorityNumber 
+
+> 原文：[https://www.geeksforgeeks.org/majority-element-set-2-hashing/](https://www.geeksforgeeks.org/majority-element-set-2-hashing/)
 def majorityNumber(nums): 
 
     # stores the num count  
@@ -127,6 +133,8 @@ def majorityNumber(nums):
     return -1
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/majority-element-set-2-hashing/](https://www.geeksforgeeks.org/majority-element-set-2-hashing/)
 a = [2, 2, 1, 1, 1, 2, 2] 
 print majorityNumber(a) 
 

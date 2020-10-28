@@ -1,5 +1,7 @@
 # 检查给定堆栈中是否存在所有数组元素
 
+> 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/)
+
 给定一个整数 **S** 的堆栈和一个整数 **arr []** 的数组，任务是检查堆栈中是否存在所有数组元素。
 
 **示例**：
@@ -151,10 +153,18 @@ public static void main(String[] args)
 ```py
 
 # Python program of 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/)
 # the above approach
 
+> 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/)
+
 # Function to check if all array
+
+> 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/)
 # elements is present in the stack
+
+> 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/)
 def checkArrInStack(s, arr):
   freq = {}
 
@@ -180,6 +190,8 @@ def checkArrInStack(s, arr):
   return False
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/)
 if __name__ == "__main__":
   s = [10, 20, 30, 40, 50]
   arr = [20, 30]

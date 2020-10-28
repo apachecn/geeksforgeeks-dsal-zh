@@ -1,5 +1,7 @@
 # 最长为 k 的子数组
 
+> 原文：[https://www.geeksforgeeks.org/longest-sub-array-sum-k/](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
+
 给定大小为 **n** 的包含整数的数组 **arr []** 。 问题在于找到总和等于给定值 **k** 的最长子阵列的长度。
 
 **示例**：
@@ -167,10 +169,18 @@ class GFG {
 ```py
 
 # Python3 implementation to find the length 
+
+> 原文：[https://www.geeksforgeeks.org/longest-sub-array-sum-k/](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
 # of longest subArray having sum k 
 
+> 原文：[https://www.geeksforgeeks.org/longest-sub-array-sum-k/](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
+
 # function to find the longest 
+
+> 原文：[https://www.geeksforgeeks.org/longest-sub-array-sum-k/](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
 # subarray having sum k 
+
+> 原文：[https://www.geeksforgeeks.org/longest-sub-array-sum-k/](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
 def lenOfLongSubarr(arr, n, k): 
 
     # dictionary mydict implemented 
@@ -204,6 +214,8 @@ def lenOfLongSubarr(arr, n, k):
     return maxLen 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/longest-sub-array-sum-k/](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
 if __name__ == '__main__': 
     arr = [10, 5, 2, 7, 1, 9] 
     n = len(arr) 
@@ -211,7 +223,11 @@ if __name__ == '__main__':
     print("Length =", lenOfLongSubarr(arr, n, k)) 
 
 # This code is contributed by  
+
+> 原文：[https://www.geeksforgeeks.org/longest-sub-array-sum-k/](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
 # chaudhary_19 (Mayank Chaudhary) 
+
+> 原文：[https://www.geeksforgeeks.org/longest-sub-array-sum-k/](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
 
 ```
 

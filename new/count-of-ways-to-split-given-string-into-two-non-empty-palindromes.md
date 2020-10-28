@@ -1,5 +1,7 @@
 # 将给定字符串拆分为两个非空回文的方法的数量
 
+> 原文：[https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/](https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/)
+
 给定字符串 **S** ，任务是找到将给定字符串 **S** 分为两个非空回文字符串的方法。
 
 **范例**：
@@ -170,11 +172,21 @@ public static void main(String args[])
 ```py
 
 # Python3 program to implement 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/](https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/)
 # the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/](https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/)
+
 # Function to check whether the 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/](https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/)
 # substring from l to r is 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/](https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/)
 # palindrome or not 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/](https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/)
 def isPalindrome(l, r, s): 
 
     while (l <= r): 
@@ -194,7 +206,11 @@ def isPalindrome(l, r, s):
     return bool(True) 
 
 # Function to count and return 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/](https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/)
 # the number of possible splits 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/](https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/)
 def numWays(s): 
 
     n = len(s) 
@@ -217,11 +233,15 @@ def numWays(s):
     return ans 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/](https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/)
 S = "aaaaa"
 
 print(numWays(S)) 
 
 # This code is contributed by divyeshrabadiya07 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/](https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/)
 
 ```
 

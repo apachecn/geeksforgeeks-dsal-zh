@@ -1,5 +1,7 @@
 # 最大化数组中连续减少的子序列数
 
+> 原文：[https://www.geeksforgeeks.org/maximize-count-of-decreasing-consecutive-subsequences-from-an-array/](https://www.geeksforgeeks.org/maximize-count-of-decreasing-consecutive-subsequences-from-an-array/)
+
 给定由 **N** 个整数组成的数组 **arr []** ，任务是从满足以下条件的数组中找出**个递减子序列**的最大数量：
 
 *   每个子序列都以其最长的形式存在。

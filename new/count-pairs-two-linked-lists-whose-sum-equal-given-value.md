@@ -1,5 +1,7 @@
 # 来自两个链表的计数对，其总和等于给定值
 
+> 原文：[https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/](https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/)
+
 给定两个链表（可以排序或不排序），它们的大小分别为 **n1** 和 **n2** 。 给定值 **x** 。 问题是要计算两个列表中总和等于给定值 **x** 的所有对。
 
 **注意**：该对具有每个链接列表中的元素。
@@ -177,16 +179,26 @@ class GFG 
 ```py
 
 # Python3 implementation to count pairs from both linked  
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/](https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/)
 # lists whose sum is equal to a given value 
 
+> 原文：[https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/](https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/)
+
 # A Linked list node  
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/](https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/)
 class Node:  
     def __init__(self,data):  
         self.data = data  
         self.next = None
 
 # function to insert a node at the 
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/](https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/)
 # beginning of the linked list 
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/](https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/)
 
 def push(head_ref,new_data): 
     new_node=Node(new_data) 
@@ -196,7 +208,11 @@ def push(head_ref,new_data):
     return head_ref 
 
 # function to count all pairs from both the linked lists 
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/](https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/)
 # whose sum is equal to a given value 
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/](https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/)
 def countPairs(head1, head2, x): 
     count = 0
 
@@ -222,6 +238,8 @@ def countPairs(head1, head2, x):
     return count 
 
 # Driver program to test above 
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/](https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/)
 if __name__=='__main__':  
 
     head1 = None
@@ -244,6 +262,8 @@ if __name__=='__main__': 
     print("Count = ",countPairs(head1, head2, x)) 
 
 # This code is contributed by AbhiThakur 
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/](https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/)
 
 ```
 

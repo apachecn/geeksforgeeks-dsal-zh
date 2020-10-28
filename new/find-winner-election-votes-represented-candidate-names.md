@@ -1,5 +1,7 @@
 # 查找以投票代表候选人姓名的选举的获胜者
 
+> 原文：[https://www.geeksforgeeks.org/find-winner-election-votes-represented-candidate-names/](https://www.geeksforgeeks.org/find-winner-election-votes-represented-candidate-names/)
+
 在选举中给出一系列候选人姓名。 数组中的候选人名称代表对候选人的投票。 打印获得 Max 投票的候选人姓名。 如果有平局，则按字典顺序打印较小的名称。
 
 例子：

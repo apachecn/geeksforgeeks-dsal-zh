@@ -1,5 +1,7 @@
 # 给定一个单词序列，一起打印所有字谜| 设置 1
 
+> 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
+
 给定一组单词，将所有字谜一起打印。 例如，如果给定的数组是{“ cat”，“ dog”，“ tac”，“ god”，“ act”}，则输出可能是“ cat tac act dog god”。
 
 **简单方法**是创建哈希表。 以所有字谜都具有相同哈希值的方式计算每个单词的哈希值。 用这些哈希值填充哈希表。 最后，将这些单词与相同的哈希值一起打印。 一个简单的哈希机制可以是所有字符的模和。 使用模和，两个非字谜单词可能具有相同的哈希值。 这可以通过匹配单个字符来处理。
@@ -332,14 +334,22 @@ public class GFG {
 
 # A Python program to print all anagarms together
 
+> 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
+
 # structure for each word of duplicate array
+
+> 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
 class Word(object):
     def __init__(self, string, index):
         self.string = string
         self.index = index
 
 # Create a DupArray object that contains an array
+
+> 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
 # of Words
+
+> 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
 def createDupArray(string, size):
     dupArray = []
 
@@ -351,6 +361,8 @@ def createDupArray(string, size):
     return dupArray
 
 # Given a list of words in wordArr[]
+
+> 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
 def printAnagramsTogether(wordArr, size):
     # Step 1: Create a copy of all words present in
     # given wordArr.
@@ -372,11 +384,15 @@ def printAnagramsTogether(wordArr, size):
         print wordArr[word.index],
 
 # Driver program
+
+> 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
 wordArr = ["cat", "dog", "tac", "god", "act"]
 size = len(wordArr)
 printAnagramsTogether(wordArr, size)
 
 # This code is contributed by BHAVYA JAIN
+
+> 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
 
 ```
 

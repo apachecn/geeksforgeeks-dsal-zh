@@ -1,5 +1,7 @@
 # 计算范围内的数字，以使其与 q 的乘积不相等
 
+> 原文：[https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/](https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/)
+
 给定一系列数字[l，r]和一个整数 q。 任务是对给定范围内的所有此类数字进行计数，以使该数字的任何数字与产品中具有给定数字 q 的任何数字都不匹配。
 
 **范例**：
@@ -171,9 +173,17 @@ class GfG {
 
 # Python 3 program for above approach
 
+> 原文：[https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/](https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/)
+
 # Function to check if all of the digits
+
+> 原文：[https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/](https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/)
 # in a number and it's product with q
+
+> 原文：[https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/](https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/)
 # are unequal or not
+
+> 原文：[https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/](https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/)
 def checkIfUnequal(n, q):
 
     # convert first number into string
@@ -204,8 +214,14 @@ def checkIfUnequal(n, q):
     return True
 
 # Function to count numbers in the range [l, r]
+
+> 原文：[https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/](https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/)
 # such that all of the digits of the number and
+
+> 原文：[https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/](https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/)
 # it's product with q are unequal
+
+> 原文：[https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/](https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/)
 def countInRange(l, r, q):
     count = 0
 
@@ -218,6 +234,8 @@ def countInRange(l, r, q):
     return count
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/](https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/)
 if __name__ == '__main__':
     l = 10
     r = 12
@@ -227,7 +245,11 @@ if __name__ == '__main__':
     print(countInRange(l, r, q))
 
 # This code is contributed by
+
+> 原文：[https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/](https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/)
 # Sahil_Shelangia
+
+> 原文：[https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/](https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/)
 
 ```
 

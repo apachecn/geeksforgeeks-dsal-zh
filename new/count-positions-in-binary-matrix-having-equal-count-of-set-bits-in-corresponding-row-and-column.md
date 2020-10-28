@@ -1,5 +1,7 @@
 # 二进制矩阵中相应行和列中具有相等设置位计数的计数位置
 
+> 原文：[https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/](https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/)
+
 给定一个布尔型矩阵 **mat [] []** ，大小为 **M * N，**，任务是从矩阵中打印索引的计数，该矩阵的相应行和列包含相同数量的 set 位。
 
 **示例**：
@@ -190,13 +192,27 @@ class GFG {
 ```py
 
 # Python3 program to implement
+
+> 原文：[https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/](https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/)
 # the above approach
 
+> 原文：[https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/](https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/)
+
 # Function to return the count 
+
+> 原文：[https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/](https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/)
 # of indices in from the given 
+
+> 原文：[https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/](https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/)
 # binary matrix having equal
+
+> 原文：[https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/](https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/)
 # count of set bits in its
+
+> 原文：[https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/](https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/)
 # row and column
+
+> 原文：[https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/](https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/)
 def countPosition(mat):
 
     n = len(mat)
@@ -237,12 +253,16 @@ def countPosition(mat):
     return count
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/](https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/)
 mat = [ [ 0, 1 ],
         [ 1, 1 ] ]
 
 print(countPosition(mat))
 
 # This code is contributed by sanjoy_62
+
+> 原文：[https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/](https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/)
 
 ```
 

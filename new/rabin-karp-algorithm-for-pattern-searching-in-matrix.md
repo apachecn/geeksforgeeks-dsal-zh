@@ -1,5 +1,7 @@
 # 用于矩阵搜索的 Rabin-Karp 算法
 
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
+
 给定尺寸为 **m1 x m2** 的矩阵 **txt [] []** 和尺寸为 **n1 x n2** 的图案 **pat [] []** 任务是检查矩阵中是否存在某个模式，如果存在，则在 **txt [] []** 中打印 **pat [] []** 的顶部 mot 索引。 假设 **m1，m2≥n1，n2**
 
 **示例**：
@@ -58,10 +60,18 @@ Pattern found at (1, 1)
 ```py
 
 # Python implementation for the  
+
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
 # pattern matching in 2-D matrix 
 
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
+
 # Function to find the hash-value  
+
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
 # of the given columns of text 
+
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
 def findHash(arr, col, row): 
     hashCol = [] 
     add = 0
@@ -78,12 +88,18 @@ def findHash(arr, col, row):
     return hashCol 
 
 # Function to check equality of the  
+
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
 # two strings 
+
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
 def checkEquality(txt, row, col, flag): 
     txt = [txt[i][col:patCol + col]  
            for i in range(row, patRow + row)] 
 
 # If pattern found 
+
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
     if txt == pat: 
         flag = 1
         print("Pattern found at", \ 
@@ -91,8 +107,14 @@ def checkEquality(txt, row, col, flag):
     return flag 
 
 # Function to find the hash value of 
+
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
 # of the next column using rolling-hash 
+
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
 # of the Rabin-karp 
+
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
 def colRollingHash(txtHash, nxtRow): 
 
     radix = 256
@@ -107,10 +129,16 @@ def colRollingHash(txtHash, nxtRow):
     return txtHash 
 
 # Function to match a pattern in  
+
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
 # the given 2D Matrix 
+
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
 def search(txt, pat): 
 
 # List of the hashed value for 
+
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
     # the text and pattern columns 
     patHash = [] 
     txtHash = [] 
@@ -184,6 +212,8 @@ def search(txt, pat):
         print("Pattern not found") 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
 if __name__ == "__main__": 
 
   # Given Text 

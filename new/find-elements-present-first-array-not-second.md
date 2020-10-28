@@ -1,5 +1,7 @@
 # 查找出现在第一个数组而不是第二个数组中的元素
 
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
+
 给定两个数组，任务是我们找到第一个数组中存在但第二个数组中不存在的数字。
 
 **范例**：
@@ -114,10 +116,18 @@ class GFG 
 ```
 
 # Python 3 simple program to find elements  
+
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
 # which are not present in second array 
 
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
+
 # Function for finding elements which  
+
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
 # are there in a[] but not in b[]. 
+
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
 def findMissing(a, b, n, m): 
 
     for i in range(n): 
@@ -129,6 +139,8 @@ def findMissing(a, b, n, m):
             print(a[i], end = " ") 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
 if __name__ == "__main__": 
 
     a = [ 1, 2, 6, 3, 4, 5 ] 
@@ -138,7 +150,11 @@ if __name__ == "__main__":
     findMissing(a, b, n, m) 
 
 # This code is contributed  
+
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
 # by ChitraNayal 
+
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
 
 ```
 
@@ -328,10 +344,18 @@ public class GfG{
 ```py
 
 # Python3 efficient program to find elements  
+
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
 # which are not present in second array 
 
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
+
 # Function for finding elements which  
+
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
 # are there in a[] but not in b[]. 
+
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
 def findMissing(a, b, n, m): 
 
     # Store all elements of second  
@@ -347,6 +371,8 @@ def findMissing(a, b, n, m):
             print(a[i], end = " ") 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
 a = [ 1, 2, 6, 3, 4, 5 ] 
 b = [ 2, 4, 3, 1, 0 ] 
 n = len(a) 
@@ -354,6 +380,8 @@ m = len(b)
 findMissing(a, b, n, m) 
 
 # This code is contributed by mohit kumar 
+
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
 
 ```
 

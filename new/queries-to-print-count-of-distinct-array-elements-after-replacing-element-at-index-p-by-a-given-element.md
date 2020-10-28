@@ -1,5 +1,7 @@
 # 在给定元素
 
+> 原文：[https://www.geeksforgeeks.org/queries-to-print-count-of-distinct-array-elements-after-replacing-element-at-index-p-by-a-given-element/](https://www.geeksforgeeks.org/queries-to-print-count-of-distinct-array-elements-after-replacing-element-at-index-p-by-a-given-element/)
+
 替换索引 P 处的元素后查询打印不同数组元素的数量
 
 给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，其中包括 **N 个**整数和 [2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/) **查询[] []** ，其中 **Q** 个查询，格式为{ **p** ， **x** }，每个查询的任务是将 **p** 位置的元素替换为 **x** 并打印数组中存在的不同元素的[计数。](https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/)

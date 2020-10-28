@@ -1,5 +1,7 @@
 # 根据数字乘积进行分组时最大组的数量
 
+> 原文：[https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/](https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/)
+
 给定**整数 N** ，任务是查找具有最大大小的组数。 从 1 到 N 的每个数字都根据其数字的**乘积进行分组。
 
 **范例**：**
@@ -185,11 +187,21 @@ public static void main(String args[]) 
 ```py
 
 # Python3 implementation to Count the  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/](https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/)
 # groups having largest size while  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/](https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/)
 # grouping is according to  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/](https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/)
 # the product of its digits  
 
+> 原文：[https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/](https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/)
+
 # Function to find out product of digit  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/](https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/)
 def digit_prod(x) : 
     prod = 1
 
@@ -202,6 +214,8 @@ def digit_prod(x) :
     return prod  
 
 # Function to find the count  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/](https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/)
 def find_count(n) : 
 
     # hash map for  
@@ -237,12 +251,18 @@ def find_count(n) :
 
 # Driver code  
 
+> 原文：[https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/](https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/)
+
 # initialise N  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/](https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/)
 N = 13
 
 print(find_count(N)) 
 
 # This code is contributed by Sanjit_Prasad 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/](https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/)
 
 ```
 

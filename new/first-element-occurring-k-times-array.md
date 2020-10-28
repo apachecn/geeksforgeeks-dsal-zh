@@ -1,5 +1,7 @@
 # 第一个元素在数组
 
+> 原文：[https://www.geeksforgeeks.org/first-element-occurring-k-times-array/](https://www.geeksforgeeks.org/first-element-occurring-k-times-array/)
+
 中出现 k 次
 
 给定 n 个整数数组。 任务是找到出现 k 次的第一个元素。 如果没有元素出现 k 倍，则打印-1。 整数元素的分布可以在任何范围内。
@@ -136,12 +138,24 @@ class GFG {
 ```py
 
 # Python3 implementation to  
+
+> 原文：[https://www.geeksforgeeks.org/first-element-occurring-k-times-array/](https://www.geeksforgeeks.org/first-element-occurring-k-times-array/)
 # find first element  
+
+> 原文：[https://www.geeksforgeeks.org/first-element-occurring-k-times-array/](https://www.geeksforgeeks.org/first-element-occurring-k-times-array/)
 # occurring k times 
 
+> 原文：[https://www.geeksforgeeks.org/first-element-occurring-k-times-array/](https://www.geeksforgeeks.org/first-element-occurring-k-times-array/)
+
 # function to find the  
+
+> 原文：[https://www.geeksforgeeks.org/first-element-occurring-k-times-array/](https://www.geeksforgeeks.org/first-element-occurring-k-times-array/)
 # first element occurring  
+
+> 原文：[https://www.geeksforgeeks.org/first-element-occurring-k-times-array/](https://www.geeksforgeeks.org/first-element-occurring-k-times-array/)
 # k number of times 
+
+> 原文：[https://www.geeksforgeeks.org/first-element-occurring-k-times-array/](https://www.geeksforgeeks.org/first-element-occurring-k-times-array/)
 def firstElement(arr, n, k): 
 
     # dictionary to count 
@@ -168,6 +182,8 @@ def firstElement(arr, n, k):
     return -1
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/first-element-occurring-k-times-array/](https://www.geeksforgeeks.org/first-element-occurring-k-times-array/)
 if __name__=="__main__": 
 
     arr = [1, 7, 4, 3, 4, 8, 7]; 
@@ -176,7 +192,11 @@ if __name__=="__main__":
     print(firstElement(arr, n, k)) 
 
 # This code is contributed  
+
+> 原文：[https://www.geeksforgeeks.org/first-element-occurring-k-times-array/](https://www.geeksforgeeks.org/first-element-occurring-k-times-array/)
 # by Abhishek Sharma 
+
+> 原文：[https://www.geeksforgeeks.org/first-element-occurring-k-times-array/](https://www.geeksforgeeks.org/first-element-occurring-k-times-array/)
 
 ```
 

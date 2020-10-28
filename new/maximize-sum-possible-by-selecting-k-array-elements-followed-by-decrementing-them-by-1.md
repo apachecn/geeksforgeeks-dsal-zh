@@ -1,5 +1,7 @@
 # 通过选择 K 个数组元素，然后将它们减 1，可以使总和最大化。
 
+> 原文：[https://www.geeksforgeeks.org/maximize-sum-possible-by-selecting-k-array-elements-followed-by-decrementing-them-by-1/](https://www.geeksforgeeks.org/maximize-sum-possible-by-selecting-k-array-elements-followed-by-decrementing-them-by-1/)
+
 给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个正整数和一个整数 **K** 组成。 在一个操作中，选择一个数组元素，将其添加到总和中，然后将其递减 **1** 。 任务是打印通过执行 **K** 次操作可获得的最大和。
 
 **示例**：

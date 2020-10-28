@@ -1,5 +1,7 @@
 # 将排列转换为身份排列所需的最小给定操作数
 
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/](https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/)
+
 给定第一个 **n** 个自然数的置换 **P** （P1，P2，P3，……Pn）。 找到将其转换为身份置换的最小操作数，即 **1、2、3，…，n** ，其中每个操作定义为：
 
 **P [i] = P [P [P [i]]** ![\forall](img/9dea966ef2ec64199005c6b655762165.png "Rendered by QuickLaTeX.com") i 从 1 到 n（基于 1 的索引）。 如果无法转换，请打印 **-1** 。
@@ -215,6 +217,8 @@ public static void main(String args[])
 ```py
 
 # Python3 implementation of the approach 
+
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/](https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/)
 def calculateCycleOperations(length): 
 
     cycle_operations = 0
@@ -225,7 +229,11 @@ def calculateCycleOperations(length):
     return cycle_operations - 1
 
 # Function to return the minimum  
+
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/](https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/)
 # operations required 
+
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/](https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/)
 def minimumOperations(p, n): 
 
     # Array to keep track of visited elements 
@@ -274,6 +282,8 @@ def minimumOperations(p, n):
     return ans 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/](https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/)
 if __name__ == "__main__": 
 
     # 1-based indexing 
@@ -284,6 +294,8 @@ if __name__ == "__main__":
     print(minimumOperations(P, n)) 
 
 # This code is contributed by Rituraj Jain 
+
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/](https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 使用普通哈希函数
 
+> 原文：[https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/](https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/)
+
 进行排序
 
 使用[普通哈希](https://www.geeksforgeeks.org/index-mapping-or-trivial-hashing-with-negatives-allowed/)函数进行排序。
@@ -156,7 +158,11 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to sort an array  
+
+> 原文：[https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/](https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/)
 # using hash function  
+
+> 原文：[https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/](https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/)
 def sortUsingHash(a, n):  
 
     # find the maximum element  
@@ -189,6 +195,8 @@ def sortUsingHash(a, n): 
                 print(i, end = " ")  
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/](https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/)
 if __name__ == "__main__":  
 
     a = [9, 4, 3, 2, 5, 2, 1, 0, 4,  
@@ -198,6 +206,8 @@ if __name__ == "__main__": 
     sortUsingHash(a, n)  
 
 # This code is contributed by Rituraj Jain 
+
+> 原文：[https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/](https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/)
 
 ```
 
@@ -455,7 +465,11 @@ public static void main(String[] args) 
 ```py
 
 # Python3 program to sort an array using hash  
+
+> 原文：[https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/](https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/)
 # function with negative values allowed.  
+
+> 原文：[https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/](https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/)
 def sortUsingHash(a, n):  
 
     # find the maximum element  
@@ -506,6 +520,8 @@ def sortUsingHash(a, n): 
                 print(i, end = " ") 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/](https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/)
 if __name__ == "__main__":  
 
     a = [-1, -2, -3, -4, -5, -6,  
@@ -515,6 +531,8 @@ if __name__ == "__main__": 
     sortUsingHash(a, n)  
 
 # This code is contributed by Rituraj Jain 
+
+> 原文：[https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/](https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/)
 
 ```
 

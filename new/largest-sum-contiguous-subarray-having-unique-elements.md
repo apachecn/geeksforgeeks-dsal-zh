@@ -1,5 +1,7 @@
 # 具有唯一元素的最大总和连续子数组
 
+> 原文：[https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/)
+
 给定 **N** 个正整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是在所有具有唯一元素的子数组中找到具有最大和的子数组并打印其和。
 
 > **输入** arr [] = {1、2、3、3、4、5、2、1}
@@ -197,8 +199,14 @@ public class GFG {
 
 # Python3 program for the above approach
 
+> 原文：[https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/)
+
 # Function to calculate required
+
+> 原文：[https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/)
 # maximum subarray sum
+
+> 原文：[https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/)
 def maxSumSubarray(arr):
 
     # Initialize two pointers
@@ -243,6 +251,8 @@ def maxSumSubarray(arr):
     return maxsum
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/)
 if __name__ == '__main__':
 
     # Given array arr[]
@@ -255,6 +265,8 @@ if __name__ == '__main__':
     print(ans)
 
 # This code is contributed by mohit kumar 29
+
+> 原文：[https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/)
 
 ```
 

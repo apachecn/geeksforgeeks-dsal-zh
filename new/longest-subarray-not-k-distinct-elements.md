@@ -1,5 +1,7 @@
 # 最长子数组，不超过 K 个不同元素
 
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/](https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/)
+
 给定 N 个元素和一个数字 K，找到最长不超过 K 个不同元素的子数组（它可以少于 K 个）
 
 **示例**：
@@ -175,9 +177,15 @@ public static void main(String args[])
 ```
 
 # Python 3 program to find longest  
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/](https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/)
 # subarray with k or less distinct elements. 
 
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/](https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/)
+
 # function to print the longest sub-array 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/](https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/)
 def longest(a, n, k): 
 
     freq = [0] * n 
@@ -226,6 +234,8 @@ def longest(a, n, k):
         print(a[i], end = " ") 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/](https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/)
 if __name__ == "__main__": 
 
     a = [ 6, 5, 1, 2, 3,  
@@ -235,7 +245,11 @@ if __name__ == "__main__":
     longest(a, n, k) 
 
 # This code is contributed 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/](https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/)
 # by ChitraNayal 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/](https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/)
 
 ```
 

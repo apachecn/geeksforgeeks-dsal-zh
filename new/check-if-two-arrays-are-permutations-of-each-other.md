@@ -1,5 +1,7 @@
 # 检查两个数组是否彼此置换
 
+> 原文：[https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/](https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/)
+
 给定两个相同大小的未排序数组，编写一个函数，如果两个数组彼此置换，则返回 true，否则返回 false。
 
 示例：
@@ -93,12 +95,22 @@ class Permutaions
 ```py
 
 # Python3 program to find one 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/](https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/)
 # array is permutation of other array
+
+> 原文：[https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/](https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/)
 from collections import defaultdict
 
 # Returns true if arr1[] and 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/](https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/)
 # arr2[] are permutations of 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/](https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/)
 # each other
+
+> 原文：[https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/](https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/)
 def arePermutations(arr1, arr2):
 
     # Creates an empty hashMap hM
@@ -130,6 +142,8 @@ def arePermutations(arr1, arr2):
     return True
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/](https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/)
 if __name__ == "__main__":
 
     arr1 = [2, 1, 3, 5, 4, 3, 2]
@@ -140,6 +154,8 @@ if __name__ == "__main__":
         print("Arrays are NOT permutations of each other")
 
 # This code is contributed by Chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/](https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/)
 
 ```
 

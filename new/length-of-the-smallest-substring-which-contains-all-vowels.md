@@ -1,5 +1,7 @@
 # 包含所有元音的最小子串的长度
 
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
+
 给定仅由小写英文字母组成的字符串 **str** ，任务是找到包含所有元音的最小长度的子字符串。 如果找不到这样的子字符串，请打印 **-1** 。
 
 **示例**：
@@ -263,9 +265,17 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to find the 
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 # length of the smallest 
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 # substring of which 
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 # contains all vowels 
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 from collections import defaultdict
 
 def findMinLength(s): 
@@ -347,11 +357,17 @@ def findMinLength(s):
     return (indices[j] - indices[i] + 1) 
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 s = "aaeebbeaccaaoiuooooooooiuu"
 print(findMinLength(s)) 
 
 # This code is contributed by
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 # divyamohan123
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 
 ```
 
@@ -714,13 +730,27 @@ public static void main(String[] args)
 ```py
 
 # Python3 Program to find the
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 # length of the smallest
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 # substring of which
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 # contains all vowels
 
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
+
 # Function to return the
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 # index for respective
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 # vowels to increase their count
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 def get_index(ch):
 
     if (ch == 'a'):
@@ -739,6 +769,8 @@ def get_index(ch):
         return -1
 
 # Function to find the minimum length
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 def findMinLength(s):
 
     n = len(s)
@@ -789,12 +821,16 @@ def findMinLength(s):
     return ans
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 if __name__ == "__main__":
 
     s = "aaeebbeaccaaoiuooooooooiuu"
     print(findMinLength(s))
 
 # This code is contributed by Chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/](https://www.geeksforgeeks.org/length-of-the-smallest-substring-which-contains-all-vowels/)
 
 ```
 

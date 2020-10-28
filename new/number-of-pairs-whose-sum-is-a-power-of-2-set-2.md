@@ -1,5 +1,7 @@
 # 对的总数为 2 的幂| 设置 2
 
+> 原文：[https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2-set-2/](https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2-set-2/)
+
 给定由 **N** 个正整数组成的[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，任务是计算对数**（arr [i]，arr [j]）**，使得 **arr [i] + arr [j]** 是[的 2](https://www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/) 次方。
 
 **示例**：

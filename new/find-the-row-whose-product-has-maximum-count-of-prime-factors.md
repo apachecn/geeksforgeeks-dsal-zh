@@ -1,5 +1,7 @@
 # 查找其乘积具有最大素数的行
 
+> 原文：[https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/](https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/)
+
 给定大小为 **N x M** 的矩阵，任务是打印其乘积具有最大素数计数的行元素。
 
 **示例**：
@@ -282,8 +284,14 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation to find the row 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/](https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/)
 # whose product has maximum number 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/](https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/)
 # of prime factors 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/](https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/)
 N = 3
 M = 5
 
@@ -292,6 +300,8 @@ Large = int(1e6);
 prime = []; 
 
 # function for SieveOfEratosthenes 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/](https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/)
 def SieveOfEratosthenes() :
 
     # Create a boolean array "isPrime[0..N]" 
@@ -317,13 +327,19 @@ def SieveOfEratosthenes() :
             prime.append(p); 
 
 # function to display the answer 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/](https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/)
 def Display(arr, row) : 
 
     for i in range(M) : 
         print(arr[row][i], end=" "); 
 
 # function to Count the row number of 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/](https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/)
 # divisors in particular row multiplication 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/](https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/)
 def countDivisorsMult(arr) : 
 
     # Find count of occurrences 
@@ -366,6 +382,8 @@ def countDivisorsMult(arr) :
     Display(arr, row_no); 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/](https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/)
 if __name__ == "__main__" : 
 
     arr = [ [ 1, 2, 3, 10, 23 ], 
@@ -377,6 +395,8 @@ if __name__ == "__main__" :
     countDivisorsMult(arr); 
 
 # This code is contributed by Yash_R
+
+> 原文：[https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/](https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 数组
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/)
+
 中所有最小出现元素的总和
 
 给定包含重复元素的整数数组。 任务是找到给定数组中所有最少出现的元素的总和。 这是其频率在阵列中最小的所有此类元素的总和。
@@ -145,11 +147,19 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to find theSum of all 
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/)
 # minimum occurring elements in an array
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/)
 import math as mt
 
 # Function to find theSum of all minimum
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/)
 # occurring elements in an array
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/)
 def findSum(arr, N):
 
     # Store frequencies of elements
@@ -177,6 +187,8 @@ def findSum(arr, N):
     return Sum
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/)
 arr = [ 10, 20, 30, 40, 40] 
 
 N = len(arr)
@@ -184,7 +196,11 @@ N = len(arr)
 print(findSum(arr, N))
 
 # This code is contributed by
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/)
 # mohit kumar 29
+
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/)
 
 ```
 

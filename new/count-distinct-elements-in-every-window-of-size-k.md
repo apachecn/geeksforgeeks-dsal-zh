@@ -1,5 +1,7 @@
 # 在每个大小为 k 的窗口中计数不同的元素
 
+> 原文：[https://www.geeksforgeeks.org/count-distinct-elements-in-every-window-of-size-k/](https://www.geeksforgeeks.org/count-distinct-elements-in-every-window-of-size-k/)
+
 给定大小为 n 的数组和整数 k，返回所有大小为 k 的窗口中不同数字的计数。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 数组
 
+> 原文：[https://www.geeksforgeeks.org/maximum-consecutive-numbers-present-array/](https://www.geeksforgeeks.org/maximum-consecutive-numbers-present-array/)
+
 中存在的最大连续数
 
 查找在数组中混杂的最大连续数的长度。
@@ -142,7 +144,11 @@ public static void main(String[] args) 
 ```py
 
 # Python3 program to find largest consecutive 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-consecutive-numbers-present-array/](https://www.geeksforgeeks.org/maximum-consecutive-numbers-present-array/)
 # numbers present in arr. 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-consecutive-numbers-present-array/](https://www.geeksforgeeks.org/maximum-consecutive-numbers-present-array/)
 
 def findLongestConseqSubseq(arr, n): 
     '''We insert all the array elements into unordered set.'''
@@ -176,12 +182,16 @@ def findLongestConseqSubseq(arr, n):
     return ans; 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-consecutive-numbers-present-array/](https://www.geeksforgeeks.org/maximum-consecutive-numbers-present-array/)
 if __name__ == '__main__': 
     arr = [ 1, 94, 93, 1000, 5, 92, 78 ]; 
     n = len(arr); 
     print(findLongestConseqSubseq(arr, n)); 
 
 # This code is contributed by 29AjayKumar 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-consecutive-numbers-present-array/](https://www.geeksforgeeks.org/maximum-consecutive-numbers-present-array/)
 
 ```
 

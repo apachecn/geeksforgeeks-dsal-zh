@@ -1,5 +1,7 @@
 # 打印具有给定总和的所有三胞胎
 
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
+
 给定一系列不同的元素。 任务是在数组中找到三元组，其总和等于给定数。
 
 **示例**：
@@ -132,12 +134,24 @@ class GFG {
 ```
 
 # A simple Python 3 program 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 # to find three elements 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 # whose sum is equal to  
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 # given sum 
 
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
+
 # Prints all triplets in 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 # arr[] with given sum 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 def findTriplets(arr, n, sum): 
 
     for i in range(0, n - 2):  
@@ -150,12 +164,18 @@ def findTriplets(arr, n, sum):
                           arr[k], sep = "") 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 arr = [ 0, -1, 2, -3, 1 ] 
 n = len(arr)  
 findTriplets(arr, n, -2) 
 
 # This code is contributed  
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 # by Smitha 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 
 ```
 
@@ -387,10 +407,16 @@ class GFG {
 ```py
 
 # Python3 program to find triplets in a given 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 # array whose Sum is equal to given sum. 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 import math as mt 
 
 # function to print triplets with given sum 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 def findTriplets(arr, n, Sum): 
 
     for i in range(n - 1): 
@@ -406,13 +432,19 @@ def findTriplets(arr, n, Sum):
                 s[arr[j]] = 1
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 arr = [ 0, -1, 2, -3, 1 ] 
 Sum = -2
 n = len(arr) 
 findTriplets(arr, n, Sum) 
 
 # This code is contributed  
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 # by mohit kumar 29 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 
 ```
 
@@ -646,10 +678,18 @@ class GFG {
 ```py
 
 # Python3 program to find triplets in a  
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 # given array whose sum is given sum. 
 
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
+
 # function to print triplets with 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 # given sum 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 def findTriplets(arr, n, sum): 
 
     # sort array elements 
@@ -681,13 +721,19 @@ def findTriplets(arr, n, sum):
                 r = r - 1; 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 arr = [ 0, -1, 2, -3, 1 ]; 
 sum = -2; 
 n = len(arr); 
 findTriplets(arr, n, sum); 
 
 # This code is contributed by  
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 # Shivi_Aggarwal  
+
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
 
 ```
 

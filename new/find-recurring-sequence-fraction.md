@@ -1,5 +1,7 @@
 # 查找分数
 
+> 原文：[https://www.geeksforgeeks.org/find-recurring-sequence-fraction/](https://www.geeksforgeeks.org/find-recurring-sequence-fraction/)
+
 中的重复序列
 
 给定一个分数，找到一个数字的重复序列（如果存在），否则，打印“无重复序列”。
@@ -193,11 +195,21 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to find repeating 
+
+> 原文：[https://www.geeksforgeeks.org/find-recurring-sequence-fraction/](https://www.geeksforgeeks.org/find-recurring-sequence-fraction/)
 # sequence in a fraction
 
+> 原文：[https://www.geeksforgeeks.org/find-recurring-sequence-fraction/](https://www.geeksforgeeks.org/find-recurring-sequence-fraction/)
+
 # This function returns repeating sequence 
+
+> 原文：[https://www.geeksforgeeks.org/find-recurring-sequence-fraction/](https://www.geeksforgeeks.org/find-recurring-sequence-fraction/)
 # of a fraction.If repeating sequence doesn't
+
+> 原文：[https://www.geeksforgeeks.org/find-recurring-sequence-fraction/](https://www.geeksforgeeks.org/find-recurring-sequence-fraction/)
 # exits, then returns empty string
+
+> 原文：[https://www.geeksforgeeks.org/find-recurring-sequence-fraction/](https://www.geeksforgeeks.org/find-recurring-sequence-fraction/)
 def fractionToDecimal(numr, denr):
 
     # Initialize result
@@ -238,6 +250,8 @@ def fractionToDecimal(numr, denr):
         return res[mp[rem]:]
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/find-recurring-sequence-fraction/](https://www.geeksforgeeks.org/find-recurring-sequence-fraction/)
 numr, denr = 50, 22
 res = fractionToDecimal(numr, denr)
 
@@ -247,6 +261,8 @@ else:
     print("Recurring sequence is", res)
 
 # This code is contributed by divyeshrabadiya07
+
+> 原文：[https://www.geeksforgeeks.org/find-recurring-sequence-fraction/](https://www.geeksforgeeks.org/find-recurring-sequence-fraction/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 在给定字符串
 
+> 原文：[https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/](https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/)
+
 中具有最大频率的长度为 K 的子字符串
 
 给定字符串 **str** ，任务是找到长度为 **K** 的[子字符串](https://www.geeksforgeeks.org/substring-in-cpp/)，出现次数最多。 如果最多出现多次字符串，请打印按字典顺序最小的子字符串。
@@ -124,11 +126,17 @@ int main()
 ```py
 
 # Python3 program for the above approach 
+
+> 原文：[https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/](https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/)
 from collections import deque, Counter, defaultdict 
 import sys 
 
 # Function that generates substring 
+
+> 原文：[https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/](https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/)
 # of length K that occurs maximum times 
+
+> 原文：[https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/](https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/)
 def maximumOccurringString(s, K): 
 
     # Store the frequency of substrings 
@@ -187,6 +195,8 @@ def maximumOccurringString(s, K):
         print(ans[i], end = "") 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/](https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/)
 if __name__ == '__main__': 
 
     # Given string 
@@ -199,6 +209,8 @@ if __name__ == '__main__':
     maximumOccurringString(s, K) 
 
 # This code is contributed by mohit kumar 29
+
+> 原文：[https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/](https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/)
 
 ```
 

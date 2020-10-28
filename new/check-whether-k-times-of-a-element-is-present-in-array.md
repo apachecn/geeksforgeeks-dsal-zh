@@ -1,5 +1,7 @@
 # 检查数组
 
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
+
 中是否存在元素的 K 次
 
 给定数组 **arr []** 和整数 **K** ，任务是检查数组中是否还存在 K 次任何元素。
@@ -127,11 +129,21 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation to check whether
+
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
 # K times of a element is present in 
+
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
 # the array
 
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
+
 # Function to find if K times of
+
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
 # an element exists in array
+
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
 def checkKTimesElement(arr, n, k):
 
     found = False
@@ -150,6 +162,8 @@ def checkKTimesElement(arr, n, k):
         print('No')
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
 if __name__=='__main__':
 
     arr = [ 10, 14, 8, 13, 5 ]
@@ -160,6 +174,8 @@ if __name__=='__main__':
     checkKTimesElement(arr, n, k)
 
 # This code is contributed by rutvik_56
+
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
 
 ```
 
@@ -336,11 +352,21 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation to 
+
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
 # check whether K times of  
+
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
 # a element is present in the array
 
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
+
 # Function to check if K times of
+
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
 # an element exists in array
+
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
 def checkKTimesElement(arr, n, k):
 
   # Create an empty set
@@ -356,6 +382,8 @@ def checkKTimesElement(arr, n, k):
     return False
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
 if __name__ == "__main__":
 
   arr = [5, 14, 8, 13, 10]
@@ -368,6 +396,8 @@ if __name__ == "__main__":
     print("No")
 
 # This code is contributed by Chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
 
 ```
 

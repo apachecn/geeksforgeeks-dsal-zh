@@ -1,5 +1,7 @@
 # 所有给定句子中出现的单词数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/](https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/)
+
 给定 **n** 个句子。 任务是计算所有这些句子中出现的单词数。 **请注意，**每个单词仅由小写英文字母组成。
 
 **示例**：
@@ -270,10 +272,16 @@ class GFG
 ```py
 
 # Python3 implementation of the approach  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/](https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/)
 from collections import defaultdict 
 
 # Function to return the count of  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/](https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/)
 # common words in all the sentences  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/](https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/)
 def commonWords(S):  
 
     # It will be used to check if a word  
@@ -349,6 +357,8 @@ def commonWords(S): 
     return cnt  
 
 # Driver code  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/](https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/)
 if __name__ == "__main__": 
 
     S = []  
@@ -360,6 +370,8 @@ if __name__ == "__main__":
     print(commonWords(S))  
 
 # This code is contributed by Rituraj Jain  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/](https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/)
 
 ```
 

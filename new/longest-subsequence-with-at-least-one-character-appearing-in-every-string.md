@@ -1,5 +1,7 @@
 # 最长子序列，每个字符串中至少出现一个字符
 
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/](https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/)
+
 给定一个字符串数组 **arr []** ，任务是找到该数组的最长子序列，并且在所有字符串中至少出现一个字符。 **请注意，**所有字符串仅包含小写英文字母。
 
 **示例**：
@@ -152,11 +154,19 @@ class GFG
 ```py
 
 # Python3 implementation of the approach  
+
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/](https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/)
 MAX = 26
 
 # Function to return the length of the longest  
+
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/](https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/)
 # sub-sequence with at least one  
+
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/](https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/)
 # common character in every string  
+
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/](https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/)
 def largestSubSeq(arr, n): 
 
     # count[0] will store the number of strings  
@@ -184,13 +194,19 @@ def largestSubSeq(arr, n):
     return max(count) 
 
 # Driver code  
+
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/](https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/)
 if __name__ == "__main__": 
     arr = [ "ab", "bc", "de" ] 
     n = len(arr) 
     print(largestSubSeq(arr, n)) 
 
 # This code is contributed by 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/](https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/)
 # sanjeev2552 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/](https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/)
 
 ```
 

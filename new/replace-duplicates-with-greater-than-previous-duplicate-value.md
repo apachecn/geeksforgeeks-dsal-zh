@@ -1,5 +1,7 @@
 # 用大于以前的重复值
 
+> 原文：[https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/](https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/)
+
 替换重复项
 
 给定一个元素数组，并以使该数组上的所有元素都不同的方式更改该数组。 如果要替换值，则替换值应大于先前的值，并且修改后元素的总和应尽可能小。
@@ -123,7 +125,11 @@ public class ReplaceDuplicateWithGreaterThanPreviousDuplicate {
 ```py
 
 # Python3 program to replace every repeating 
+
+> 原文：[https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/](https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/)
 # element with next greater element. 
+
+> 原文：[https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/](https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/)
 import sys 
 
 def replaceElements(arr, n): 
@@ -147,6 +153,8 @@ def replaceElements(arr, n):
                     break
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/](https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/)
 if __name__ == "__main__": 
 
     arr = [ 1, 2, 5, 7, 8, 8, 7 ] 
@@ -159,7 +167,11 @@ if __name__ == "__main__":
     print () 
 
 # This code is contributed  
+
+> 原文：[https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/](https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/)
 # by ChitraNayal 
+
+> 原文：[https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/](https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 查询字符串中给定范围的第 N 个最小字符
 
+> 原文：[https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/](https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/)
+
 给定一个仅由小写字母组成的字符串 **str** 和一个数组 **arr [] []** ，该数组代表给定字符串 str 上的范围查询，其中每个查询包含 3 个整数，{L，R ，N}，这样对于每个查询，我们都必须输出在查询中指定的给定范围[L，R]中的第 N <sup>个第</sup>个最小字符。
 
 **示例**：
@@ -267,11 +269,21 @@ class GFG {
 ```py
 
 # Python3 implementation to find the Nth 
+
+> 原文：[https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/](https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/)
 # smallest character in a given range 
+
+> 原文：[https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/](https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/)
 # of a string 
 
+> 原文：[https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/](https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/)
+
 # Function to print the Nth smallest 
+
+> 原文：[https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/](https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/)
 # character for a given range in a string 
+
+> 原文：[https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/](https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/)
 def findSmallest(s, q, m): 
 
     # Integer N contains the 
@@ -325,6 +337,8 @@ def findSmallest(s, q, m):
                 break
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/](https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/)
 if __name__ == '__main__': 
 
     # Input s 
@@ -340,6 +354,8 @@ if __name__ == '__main__':
     findSmallest(s, q, x) 
 
 # This code is contributed by mohit kumar 29     
+
+> 原文：[https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/](https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/)
 
 ```
 

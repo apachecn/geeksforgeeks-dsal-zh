@@ -1,5 +1,7 @@
 # 对数组 arr [] & brr []中的对（i，j）进行计数，使得 arr [i] – brr [j] = arr [j] – brr [i]
 
+> 原文：[https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/](https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/)
+
 给定两个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 和 **brr []** 数组，它们由 **N** 个整数组成，其任务是计算对数 **]（i，j）**来自两个数组，使得**（arr [i] – brr [j]）**和**（arr [j] – brr [i]）** 相等。
 
 **示例**：
@@ -186,8 +188,14 @@ public static void main(String args[])
 
 # Python3 program for the above approach
 
+> 原文：[https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/](https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/)
+
 # Function to count the pairs such that
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/](https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/)
 # given condition is satisfied
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/](https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/)
 def CountPairs(a, b, n):
 
     # Stores the sum of element at
@@ -224,17 +232,27 @@ def CountPairs(a, b, n):
 
 # Driver Code
 
+> 原文：[https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/](https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/)
+
 # Given array arr[] and brr[]
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/](https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/)
 arr = [ 1, 4, 20, 3, 10, 5 ]
 brr = [ 9, 6, 1, 7, 11, 6 ]
 
 # Size of given array
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/](https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/)
 N = len(arr)
 
 # Function calling
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/](https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/)
 CountPairs(arr, brr, N)
 
 # This code is contributed by code_hunt
+
+> 原文：[https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/](https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/)
 
 ```
 

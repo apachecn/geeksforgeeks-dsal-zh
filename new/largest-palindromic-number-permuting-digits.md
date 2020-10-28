@@ -1,5 +1,7 @@
 # 按排列数字排列的最大回文数
 
+> 原文：[https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/](https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/)
+
 给定 N（非常大），任务是打印通过排列 N 的数字获得的最大回文数。如果不可能生成回文数，则打印适当的消息。
 
 **示例**：
@@ -146,11 +148,19 @@ int main()
 ```py
 
 # Python3 program to print the largest palindromic  
+
+> 原文：[https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/](https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/)
 # number by permuting digits of a number  
+
+> 原文：[https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/](https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/)
 from collections import defaultdict 
 
 # Function to check if a number can be  
+
+> 原文：[https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/](https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/)
 # permuted to form a palindrome number  
+
+> 原文：[https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/](https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/)
 def possibility(m, length, s):  
 
     # counts the occurrence of  
@@ -169,7 +179,11 @@ def possibility(m, length, s): 
     return True
 
 # Function to print the largest palindromic  
+
+> 原文：[https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/](https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/)
 # number by permuting digits of a number  
+
+> 原文：[https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/](https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/)
 def largestPalindrome(s):  
 
     # string length  
@@ -236,12 +250,16 @@ def largestPalindrome(s): 
         print(largest[i], end = "")  
 
 # Driver Code  
+
+> 原文：[https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/](https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/)
 if __name__ == "__main__":  
 
     s = "313551"
     largestPalindrome(s)  
 
 # This code is contributed by Rituraj Jain 
+
+> 原文：[https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/](https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/)
 
 ```
 

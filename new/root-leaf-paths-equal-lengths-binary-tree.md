@@ -1,5 +1,7 @@
 # 二叉树
 
+> 原文：[https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/](https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/)
+
 中具有相同长度的叶路径的根
 
 给定一棵二叉树，打印具有相等长度的根到叶路径的数量。
@@ -117,9 +119,15 @@ int main()
 ```py
 
 # Python3 program to count root to leaf  
+
+> 原文：[https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/](https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/)
 # paths of different lengths. 
 
+> 原文：[https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/](https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/)
+
 # Binary Tree Node  
+
+> 原文：[https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/](https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/)
 """ utility that allocates a newNode  
 with the given key """
 class newnode:  
@@ -131,7 +139,11 @@ class newnode: 
         self.right = None
 
 # Function to store counts of different  
+
+> 原文：[https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/](https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/)
 # root to leaf path lengths in hash map m.  
+
+> 原文：[https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/](https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/)
 def pathCountUtil(node, m,path_len) : 
 
     # Base condition  
@@ -152,6 +164,8 @@ def pathCountUtil(node, m,path_len) :
     pathCountUtil(node.right, m, [path_len[0] + 1])  
 
 # A wrapper over pathCountUtil()  
+
+> 原文：[https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/](https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/)
 def pathCounts(root) : 
 
     # create an empty hash table  
@@ -166,6 +180,8 @@ def pathCounts(root) :
         print(m[itr], " paths have length ", itr)  
 
 # Driver Code  
+
+> 原文：[https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/](https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/)
 if __name__ == '__main__': 
 
     root = newnode(8)  
@@ -178,7 +194,11 @@ if __name__ == '__main__':
     pathCounts(root) 
 
 # This code is contributed by 
+
+> 原文：[https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/](https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/)
 # Shubham Singh(SHUBHAMSINGH10) 
+
+> 原文：[https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/](https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/)
 
 ```
 

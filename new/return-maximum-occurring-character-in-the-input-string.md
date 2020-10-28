@@ -1,5 +1,7 @@
 # 返回输入字符串
 
+> 原文：[https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/](https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/)
+
 中出现的最大字符
 
 编写高效的函数以返回输入字符串中出现的最大字符，例如，如果输入字符串为“ test”，则函数应返回“ t”。
@@ -121,6 +123,8 @@ public class GFG 
 ```
 
 # Python program to return the maximum occurring character in the input string 
+
+> 原文：[https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/](https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/)
 ASCII_SIZE = 256
 
 def getMaxOccuringChar(str): 
@@ -145,20 +149,38 @@ def getMaxOccuringChar(str):
     return c 
 
 # Driver program to test the above function 
+
+> 原文：[https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/](https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/)
 str = "sample string"
 print "Max occurring character is " + getMaxOccuringChar(str) 
 
 # Although this program can be written in atmost 3 lines in Python 
+
+> 原文：[https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/](https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/)
 # the above program has been written for a better understanding of 
+
+> 原文：[https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/](https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/)
 # the reader 
 
+> 原文：[https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/](https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/)
+
 # Shorter version of the program 
+
+> 原文：[https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/](https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/)
 # import collections 
+
+> 原文：[https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/](https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/)
 # str = "sample string" 
+
+> 原文：[https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/](https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/)
 # print "Max occurring character is " + 
+
+> 原文：[https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/](https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/)
 #        collections.Counter(str).most_common(1)[0][0] 
 
 # This code has been contributed by Bhavya Jain 
+
+> 原文：[https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/](https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/)
 
 ```
 

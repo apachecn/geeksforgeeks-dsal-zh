@@ -1,5 +1,7 @@
 # 数组中可能的最大子集，以使任何元素都不是子集中任何其他元素的 K 倍
 
+> 原文：[https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/](https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/)
+
 给定由 **N** 个不同整数和整数 **K** 组成的数组 **arr []** ，任务是找到可能的最大子集大小，以确保没有元素 子集中的**是 K** 乘以子集的任何其他元素（即，子集中不应存在这样的对 **{n，m}** ，这样 **m = n * K** 或 **n = m * K** ）。
 
 **示例**：
@@ -188,10 +190,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation of 
+
+> 原文：[https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/](https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/)
 # the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/](https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/)
+
 # Function to find the maximum 
+
+> 原文：[https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/](https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/)
 # size of the required subset 
+
+> 原文：[https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/](https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/)
 def findMaxLen(a, k): 
 
     # Size of the array 
@@ -235,6 +245,8 @@ def findMaxLen(a, k):
     return n - c 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/](https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/)
 if __name__ == '__main__': 
 
     K = 3
@@ -243,6 +255,8 @@ if __name__ == '__main__':
     print(findMaxLen(arr, K)) 
 
 # This code is contributed by Shivam Singh 
+
+> 原文：[https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/](https://www.geeksforgeeks.org/largest-possible-subset-from-an-array-such-that-no-element-is-k-times-any-other-element-in-the-subset/)
 
 ```
 

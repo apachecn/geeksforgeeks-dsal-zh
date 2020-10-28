@@ -1,5 +1,7 @@
 # 最小化给定数组之间相应索引处不等元素的数量
 
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
+
 给定两个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **A []** 和 **B []** ，它们由 **N** 个正整数和一个矩阵 **List [] []组成** 由 **M** 对索引组成，任务是最大程度地减少不相等的相同索引元素的数量（ **A <sub>i</sub> ！= B <sub>i</sub>** ），方法是在数组 A []中的任意一对给定索引之间交换。
 
 **示例**：
@@ -299,8 +301,14 @@ class GFG {
 
 # Python3 program for the above approach  
 
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
+
 # Function that count of the mismatched 
+
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
 # pairs in bot the array  
+
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
 def countPairs(A, B, N, M, List): 
 
     count = 0
@@ -358,7 +366,11 @@ def countPairs(A, B, N, M, List):
     return count 
 
 # Function that gives the connected 
+
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
 # component of each index 
+
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
 def find(par, x): 
 
     if(par[x] == x): 
@@ -368,7 +380,11 @@ def find(par, x):
         return par[x] 
 
 # Function that creates the 
+
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
 # connected componenets 
+
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
 def union(par, a, b): 
 
     # Find parent of a and b 
@@ -383,21 +399,31 @@ def union(par, a, b):
     par[a] = b 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
 N = 5
 M = 4
 
 # Given arrays A[], B[] 
+
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
 A = [ 1, 5, 9, 2, 3 ] 
 B = [ 2, 4, 5, 1, 3 ] 
 
 # List of indices 
+
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
 List = [ [ 1, 4 ], [ 2, 3 ], 
         [ 3, 5 ], [ 2, 5 ] ] 
 
 # Function call 
+
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
 print(countPairs(A, B, N, M, List)) 
 
 # This code is contributed by Shivam Singh 
+
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
 
 ```
 

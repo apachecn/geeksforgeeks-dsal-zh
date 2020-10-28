@@ -1,5 +1,7 @@
 # K 长度子数组
 
+> 原文：[https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/](https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/)
+
 中元素的最大不同素因数
 
 给定 **N** 个正整数的数组 **arr []** 和一个整数 **K** ，任务是在 长度为 **K** 的[子阵列](https://www.geeksforgeeks.org/tag/subarray/)。
@@ -302,16 +304,26 @@ class GFG {
 ```py
 
 # Python program for the above approach 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/](https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/)
 import math as mt 
 
 Max = 100001
 
 # Stores smallest prime factor for 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/](https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/)
 # every number 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/](https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/)
 spf = [0 for i in range(Max)] 
 
 # Function to precalculate smallest 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/](https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/)
 # prime factor of every number 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/](https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/)
 
 def sieve(): 
 
@@ -340,8 +352,14 @@ def sieve():
                     spf[j] = i 
 
 # Function to find maximum  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/](https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/)
 # distinct prime factors 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/](https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/)
 # of the subarray of length k 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/](https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/)
 
 def maximumDPF(arr, n, k): 
 
@@ -399,6 +417,8 @@ def maximumDPF(arr, n, k):
     return ans 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/](https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/)
 if __name__ == '__main__': 
 
     # Given array arr 

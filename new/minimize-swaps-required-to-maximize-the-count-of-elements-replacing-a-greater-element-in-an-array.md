@@ -1,5 +1,7 @@
 # 最小化交换以最大化替换数组中较大元素的元素数
 
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
+
 给定一个数组 **A []** ，该数组由 **N** 个元素组成，任务是查找所需交换的最小数量，以便在原始数组中交换数组元素以替换更高的元素 ，已最大化。
 
 **示例**：
@@ -152,10 +154,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement
+
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
 # the above approach
 
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
+
 # Function to find the minimum
+
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
 # number of swaps required
+
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
 def countSwaps(A, n):
 
     # Sort the array in ascending order
@@ -189,11 +199,15 @@ def countSwaps(A, n):
     return res
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
 A = [ 4, 3, 3, 2, 5 ]
 
 print (countSwaps(A, 5))
 
 # This code is contributed by chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
 
 ```
 
@@ -383,10 +397,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 Program to implement 
+
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
 # the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
+
 # Function to find the minimum 
+
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
 # number of swaps required 
+
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
 def countSwaps(A, n): 
 
     # Stores the frequency of the 
@@ -412,6 +434,8 @@ def countSwaps(A, n):
     return n - max_frequency
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
 if __name__ == "__main__":    
 
       A = [6, 5, 4, 3, 2, 1] 
@@ -420,6 +444,8 @@ if __name__ == "__main__":   
     print(countSwaps(A, 6))
 
 # This code is contributed by divyeshrabadiya07
+
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
 
 ```
 

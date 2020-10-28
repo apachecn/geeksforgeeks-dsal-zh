@@ -1,5 +1,7 @@
 # 使用 Rabin Karp 算法计算字符串的不同子字符串
 
+> 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-of-a-given-string-using-rabin-karp-algorithm/](https://www.geeksforgeeks.org/count-of-distinct-substrings-of-a-given-string-using-rabin-karp-algorithm/)
+
 给定一个字符串，使用 Rabin Karp 算法计算不同子字符串的数量。
 
 **范例**：
@@ -48,10 +50,14 @@ Rabin 和 Karp 建议的哈希函数计算一个整数值。 字符串的整数�
 ```py
 
 # importing libraries
+
+> 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-of-a-given-string-using-rabin-karp-algorithm/](https://www.geeksforgeeks.org/count-of-distinct-substrings-of-a-given-string-using-rabin-karp-algorithm/)
 import sys
 import math as mt
 t = 1
 # store prime to reduce overflow
+
+> 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-of-a-given-string-using-rabin-karp-algorithm/](https://www.geeksforgeeks.org/count-of-distinct-substrings-of-a-given-string-using-rabin-karp-algorithm/)
 mod = 9007199254740881
 
 for ___ in range(t):

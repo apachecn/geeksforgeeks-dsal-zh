@@ -1,5 +1,7 @@
 # 删除 M 个项目后，不同元素的最小数量| 设置 2
 
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/](https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/)
+
 给定一个项目的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)，第 ith 个索引元素表示该项目的 ID，给定一个数字 m，任务是删除 m 个元素，以使剩余的唯一 ID 最少。 打印不同 ID 的数量。
 
 **示例**：
@@ -176,8 +178,14 @@ public static void main(String[] args)
 
 # Python3 program for the above approach
 
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/](https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/)
+
 # Function to return minimum distinct
+
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/](https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/)
 # character after M removals
+
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/](https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/)
 def distinctNumbers(arr, m, n):
 
     count = {}
@@ -213,6 +221,8 @@ def distinctNumbers(arr, m, n):
     return ans
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/](https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/)
 if __name__ == '__main__':
 
     # Initialize array
@@ -226,6 +236,8 @@ if __name__ == '__main__':
     print(distinctNumbers(arr, m, n))
 
 # This code is contributed by mohit kumar 29
+
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/](https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/)
 
 ```
 

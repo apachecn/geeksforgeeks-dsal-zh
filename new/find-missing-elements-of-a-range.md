@@ -1,5 +1,7 @@
 # 查找范围为
 
+> 原文：[https://www.geeksforgeeks.org/find-missing-elements-of-a-range/](https://www.geeksforgeeks.org/find-missing-elements-of-a-range/)
+
 的缺失元素
 
 给定一个由不同元素组成的数组 arr [0..n-1]和一个范围[low，high]，找到所有在范围内但不在数组中的数字。 缺少的元素应按排序顺序打印。

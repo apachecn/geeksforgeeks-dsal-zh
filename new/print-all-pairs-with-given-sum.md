@@ -1,5 +1,7 @@
 # 打印具有给定总和的所有对
 
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
+
 给定一个整数数组和一个数字“和”，请打印该数组中所有总和等于“和”的对。
 
 ```
@@ -98,12 +100,24 @@ class GFG {
 ```py
 
 # Python 3 implementation 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 # of simple method to find
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 # print pairs with given sum.
 
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
+
 # Returns number of pairs 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 # in arr[0..n-1] with sum
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 # equal to 'sum'
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 def printPairs(arr, n, sum):
 
     # count = 0 
@@ -118,13 +132,19 @@ def printPairs(arr, n, sum):
                       ")", sep = "")
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 arr = [1, 5, 7, -1, 5]
 n = len(arr)
 sum = 6
 printPairs(arr, n, sum)
 
 # This code is contributed 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 # by Smitha
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 
 ```
 
@@ -504,7 +524,11 @@ public class SumOfPairs {
 ```py
 
 # Python3 program for the 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 # above approach
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 def pairedElements(arr, sum):
 
     low = 0;
@@ -521,6 +545,8 @@ def pairedElements(arr, sum):
             low += 1;
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 if __name__ == '__main__':
 
     arr = [2, 3, 4, -2, 
@@ -529,6 +555,8 @@ if __name__ == '__main__':
     pairedElements(arr, 6);
 
 # This code contributed by shikhasingrajput
+
+> 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 
 ```
 

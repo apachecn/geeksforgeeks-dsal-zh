@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
+
 中的绝对唯一计数
 
 给定由整数组成的[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是打印链表中存在的不同绝对值的数量。
@@ -181,9 +183,17 @@ class GFG {
 ```py
 
 # Python3 program to calculate 
+
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
 # the count of distinct  
+
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
 # absolute values in a  
+
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
 # linked list 
+
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
 
 class Node:   
 
@@ -192,8 +202,14 @@ class Node:  
         self.next = next
 
 # Function to insert a  
+
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
 # node at the beginning   
+
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
 # of the singly Linked List   
+
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
 def push( head_ref, new_data) :  
 
     # Alocate node   
@@ -212,8 +228,14 @@ def push( head_ref, new_data) : 
     return head_ref 
 
 # Function to return the  
+
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
 # count of distinct absolute 
+
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
 # values in the linked list 
+
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
 def distinctCount(head_ref1):  
     s = set()  
     ptr1 = head_ref1 
@@ -224,9 +246,15 @@ def distinctCount(head_ref1): 
     return len(s)     
 
 # Driver code   
+
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
 # Create the Head 
+
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
 head1 = None
 # Insert nodes   
+
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
 head1 = push(head1, -1)   
 head1 = push(head1, -2)   
 head1 = push(head1, 0)   

@@ -1,5 +1,7 @@
 # 在 C++中使用开放式寻址线性探测实现自己的哈希表
 
+> 原文：[https://www.geeksforgeeks.org/implementing-hash-table-open-addressing-linear-probing-cpp/](https://www.geeksforgeeks.org/implementing-hash-table-open-addressing-linear-probing-cpp/)
+
 **先决条件–** [散列简介](https://www.geeksforgeeks.org/hashing-set-1-introduction/)和[用 Java 中的单独链接实现我们自己的散列表](https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/)
 
 在开放式寻址中，所有元素都存储在哈希表本身中。 因此，表的大小在任何时候都必须大于或等于键的总数（请注意，如果需要，我们可以通过复制旧数据来增加表的大小）。

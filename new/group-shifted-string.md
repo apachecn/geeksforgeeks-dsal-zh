@@ -1,5 +1,7 @@
 # 组移弦
 
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
+
 给定一个字符串数组（所有小写字母），任务是对它们进行分组，以使组中的所有字符串彼此移位。 如果两个字符串 S 和 T 称为移位，
 
 ```
@@ -106,16 +108,32 @@ int main()
 ```py
 
 # Python3 program to print groups 
+
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
 # of shifted strings together.
 
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
+
 # Total lowercase letter 
+
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
 ALPHA = 26
 
 # Method to a difference string 
+
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
 # for a given string. If string 
+
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
 # is "adf" then difference string 
+
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
 # will be "cb" (first difference 
+
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
 # 3 then difference 2) 
+
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
 def getDiffString(str):
 
     shift=""
@@ -136,7 +154,11 @@ def getDiffString(str):
     return shift
 
 # Method for grouping 
+
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
 # shifted string 
+
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
 def groupShiftedString(str,n):
 
     # map for storing indices 
@@ -160,6 +182,8 @@ def groupShiftedString(str,n):
         print()
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
 str = ["acd", "dfg", "wyz", 
        "yab", "mop","bdfh", 
        "a", "x", "moqs"]
@@ -167,6 +191,8 @@ n = len(str)
 groupShiftedString(str, n)
 
 # This code is contributed by avanitrachhadiya2155
+
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
 
 ```
 

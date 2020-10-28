@@ -1,5 +1,7 @@
 # 用相同的按位 AND，OR 和 XOR 值计数子序列
 
+> 原文：[https://www.geeksforgeeks.org/count-subsequences-with-same-values-of-bitwise-and-or-and-xor/](https://www.geeksforgeeks.org/count-subsequences-with-same-values-of-bitwise-and-or-and-xor/)
+
 我们给定了 n 个元素的数组 arr。 我们需要计算非空子序列的数量，以使这些单个子序列的按位与，或和异或值相同。 例如，如果（x | y | z）等于（x＆y＆z）和（x ^ y ^ z），我们需要计算一个子序列（x，y，z）。 对于单个元素子序列，我们将元素本身视为 XOR，AND 和 OR 的结果。 因此，所有单元素子序列始终被视为结果的一部分。
 
 例子：
@@ -201,6 +203,8 @@ public static void Main(String []args)  
 ```py
 
 # function for finding count of possible subsequence 
+
+> 原文：[https://www.geeksforgeeks.org/count-subsequences-with-same-values-of-bitwise-and-or-and-xor/](https://www.geeksforgeeks.org/count-subsequences-with-same-values-of-bitwise-and-or-and-xor/)
 def countSubseq(arr, n): 
     count = 0
 
@@ -228,11 +232,15 @@ def countSubseq(arr, n):
     return count 
 
 # Driver function 
+
+> 原文：[https://www.geeksforgeeks.org/count-subsequences-with-same-values-of-bitwise-and-or-and-xor/](https://www.geeksforgeeks.org/count-subsequences-with-same-values-of-bitwise-and-or-and-xor/)
 arr= [2, 2, 2, 5, 6 ] 
 n = len(arr) 
 print(countSubseq(arr, n)) 
 
 # This code is contributed by apurva raj 
+
+> 原文：[https://www.geeksforgeeks.org/count-subsequences-with-same-values-of-bitwise-and-or-and-xor/](https://www.geeksforgeeks.org/count-subsequences-with-same-values-of-bitwise-and-or-and-xor/)
 
 ```
 

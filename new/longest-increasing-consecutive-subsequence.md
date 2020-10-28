@@ -1,5 +1,7 @@
 # 最长的连续子序列
 
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/)
+
 给定 N 个元素，编写一个程序，打印出相邻元素之差为 1 的最长递增子序列的长度。
 
 **范例**：
@@ -149,15 +151,27 @@ class lics {
 ```py
 
 # python program to find length of the 
+
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/)
 # longest increasing subsequence 
+
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/)
 # whose adjacent element differ by 1 
+
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/)
 
 from collections import defaultdict
 import sys
 
 # function that returns the length of the 
+
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/)
 # longest increasing subsequence 
+
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/)
 # whose adjacent element differ by 1 
+
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/)
 
 def longestSubsequence(a, n):
     mp = defaultdict(lambda:0)
@@ -191,11 +205,15 @@ def longestSubsequence(a, n):
     return maximum
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/)
 a = [3, 10, 3, 11, 4, 5, 6, 7, 8, 12]
 n = len(a)
 print(longestSubsequence(a, n))
 
 # This code is contributed by Shrikant13
+
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/)
 
 ```
 

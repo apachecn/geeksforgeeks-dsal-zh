@@ -1,5 +1,7 @@
 # 最大化总和为 K 的非重叠子数组的数量
 
+> 原文：[https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/](https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/)
+
 给定数组 **arr []** 和整数 **K** ，任务是打印与 **K** 之和的非重叠子数组的最大数量。
 
 **示例**：
@@ -157,10 +159,18 @@ class GFG{
 ```py
 
 # Python3 program to implement 
+
+> 原文：[https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/](https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/)
 # the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/](https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/)
+
 # Function to count the maximum  
+
+> 原文：[https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/](https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/)
 # number of subarrays with sum K 
+
+> 原文：[https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/](https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/)
 def CtSubarr(arr, N, K): 
 
     # Stores all the distinct 
@@ -200,14 +210,20 @@ def CtSubarr(arr, N, K):
     return res 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/](https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/)
 arr = [ -2, 6, 6, 3, 5, 4, 1, 2, 8 ] 
 N = len(arr) 
 K = 10
 
 # Function call 
+
+> 原文：[https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/](https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/)
 print(CtSubarr(arr, N, K)) 
 
 # This code is contributed by Shivam Singh 
+
+> 原文：[https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/](https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/)
 
 ```
 

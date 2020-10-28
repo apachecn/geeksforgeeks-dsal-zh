@@ -1,5 +1,7 @@
 # 重新排列给定的字符串以最大化出现字符串 t
 
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
+
 给定两个二进制字符串 **s** 和 **t** 。 任务是重新排列字符串 **s** ，使得在 **s** 中作为子字符串的字符串 **t** 的出现最大。
 
 **示例**：
@@ -21,9 +23,15 @@
 
 ```
 # Python3 implementation of the approach
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 from collections import defaultdict
 # Function to return the length of maximum
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 # proper suffix which is also proper prefix
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 def Prefix_Array(t):
 m = len(t)
 arr =[-1]*m
@@ -36,14 +44,22 @@ k+= 1
 arr[i]= k
 return arr[-1]
 # Function to return the rearranged string
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 def Rearranged(ds, dt):
 check = Prefix_Array(t)
 # If there is no proper suffix which is
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 # also a proper prefix
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 if check ==-1:
 if ds['1']<dt['1'] or ds['0']<dt['0']:
 return s
 # If count of 1's in string t is 0
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 if dt['1']== 0 and ds['0']!= 0:
 n = ds['0']//dt['0']
 temp = t * n
@@ -55,8 +71,12 @@ while ds['0']>0:
 temp+='0'
 ds['0']-= 1
 # Return the rearranged string
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 return temp
 # If count of 0's in string t is 0
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 if dt['0']== 0 and ds['1']!= 0:
 n = ds['1']//dt['1']
 temp = t * n
@@ -68,9 +88,15 @@ while ds['0']>0:
 temp+='0'
 ds['0']-= 1
 # Return the rearranged string
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 return temp
 # If both 1's and 0's are present in
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 # string t
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 m1 = ds['1']//dt['1']
 m2 = ds['0']//dt['0']
 n = min(m1, m2)
@@ -85,11 +111,17 @@ temp+='0'
 ds['0']-= 1
 return temp
 # If there is a suffix which is
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 # also a prefix in string t
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 else:
 if ds['1']<dt['1'] or ds['0']<dt['0']:
 return s
 # Append the remaining string each time
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 r = t[check + 1:]
 dr = defaultdict(int)
 for v in r:
@@ -98,7 +130,11 @@ temp = t
 ds['1']-= dt['1']
 ds['0']-= dt['0']
 # If we can't form the string t
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 # by the remaining 0's and 1's
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 if ds['1']<dr['1'] or ds['0']<dr['0']:
 while ds['1']>0:
 temp+='1'
@@ -108,6 +144,8 @@ temp+='0'
 ds['0']-= 1
 return temp
 # If count of 1's in string r is 0
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 if dr['1']== 0 and ds['0']!= 0:
 n = ds['0']//dr['0']
 temp+= r * n
@@ -120,6 +158,8 @@ temp+='0'
 ds['0']-= 1
 return temp
 # If count of 0's in string r is 0
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 if dr['0']== 0 and ds['1']!= 0:
 n = ds['1']//dr['1']
 temp+= r * n
@@ -132,6 +172,8 @@ temp+='0'
 ds['0']-= 1
 return temp
 # If string r have both 0's and 1's
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 m1 = ds['1']//dr['1']
 m2 = ds['0']//dr['0']
 n = min(m1, m2)
@@ -146,12 +188,18 @@ temp+='0'
 ds['0']-= 1
 return temp
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 if __name__=="__main__":
 s ="10101000"
 t ="101"
 # Count of 0's and 1's in string s
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 ds = defaultdict(int)
 # Count of 0's and 1's in string t
+
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 dt = defaultdict(int)
 for i in s:
 ds[i]= ds[i]+1

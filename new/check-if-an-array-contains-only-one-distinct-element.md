@@ -1,5 +1,7 @@
 # 检查数组是否仅包含一个不同的元素
 
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
+
 给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，任务是检查该数组是否仅包含一个不同的元素。 如果仅包含一个不同的元素，则打印“ **是”** ，否则打印“ **否”** 。
 
 **示例**：
@@ -128,8 +130,14 @@ public class Main {
 
 # Python3 program for the above approach
 
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
+
 # Function to find if the array 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
 # contains only one distinct element 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
 def uniqueElement(arr, n):
 
     # Create a set
@@ -142,6 +150,8 @@ def uniqueElement(arr, n):
         print('NO')
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
 if __name__=='__main__':
 
     arr = [ 9, 9, 9, 9, 9, 9, 9 ]
@@ -151,6 +161,8 @@ if __name__=='__main__':
     uniqueElement(arr, n)
 
 # This code is contributed by rutvik_56
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
 
 ```
 
@@ -336,8 +348,14 @@ public class Main {
 
 # Python3 program for the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
+
 # Function to find if the array 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
 # contains only one distinct element
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
 def uniqueElement(arr):
 
     # Assume first element to
@@ -364,13 +382,21 @@ def uniqueElement(arr):
 
 # Driver Code
 
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
+
 # Given array arr[]
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
 arr = [ 9, 9, 9, 9, 9, 9, 9 ]
 
 # Function call
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
 uniqueElement(arr)
 
 # This code is contributed by Shivam Singh
+
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
 
 ```
 

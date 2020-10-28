@@ -1,5 +1,7 @@
 # 数组
 
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/](https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/)
+
 中两次出现相同元素之间的最大距离
 
 给定一个包含重复元素的数组，任务是找到元素两次出现的最大距离。
@@ -120,9 +122,15 @@ public static void main(String args[])
 ```
 
 # Python program to find maximum distance between two 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/](https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/)
 # same occurrences of a number. 
 
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/](https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/)
+
 # Function to find maximum distance between equal elements 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/](https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/)
 def maxDistance(arr, n): 
 
     # Used to store element to first index mapping 
@@ -145,12 +153,16 @@ def maxDistance(arr, n):
     return maxDict 
 
 # Driver Program 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/](https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/)
 if __name__=='__main__': 
     arr = [3, 2, 1, 2, 1, 4, 5, 8, 6, 7, 4, 2] 
     n = len(arr) 
     print maxDistance(arr, n) 
 
 # Contributed By: Harshit Sidhwa 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/](https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 通过重新排列数组以使相邻元素之间的差最大为 1，来最大化给定数组的总和。
 
+> 原文：[https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/](https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/)
+
 给定由 **N** 个正整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是最大化数组元素的总和，以使数组的第一个元素为 **1** ，执行以下操作后，数组相邻元素之间的差最大为 **1** ：
 
 *   以任何方式重新排列数组元素。
@@ -182,9 +184,17 @@ class GFG {
 
 # Python3 program for the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/](https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/)
+
 # Function to find maximum possible 
+
+> 原文：[https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/](https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/)
 # sum after changing the array elements 
+
+> 原文：[https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/](https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/)
 # as per the given constraints 
+
+> 原文：[https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/](https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/)
 def maxSum(a, n): 
 
     # Stores the frequency of 
@@ -218,6 +228,8 @@ def maxSum(a, n):
     return ans 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/](https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/)
 if __name__ == '__main__': 
 
     # Given array arr[] 
@@ -230,6 +242,8 @@ if __name__ == '__main__':
     print(maxSum(arr, n)) 
 
 # This code is contributed by akhilsaini
+
+> 原文：[https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/](https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/)
 
 ```
 

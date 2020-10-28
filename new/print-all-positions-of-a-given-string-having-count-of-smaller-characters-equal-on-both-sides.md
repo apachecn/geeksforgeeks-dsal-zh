@@ -1,5 +1,7 @@
 # 打印给定字符串的所有位置，该字符串的小写字符数在两侧均相等
 
+> 原文：[https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/](https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/)
+
 给定[字符串](https://www.geeksforgeeks.org/string-data-structure/)， **str** ，任务是查找给定字符串的索引，以使该索引左侧和右侧的按字典顺序排列的较小字符数相等且非 -零。
 
 **示例**：
@@ -123,11 +125,21 @@ int main()
 ```py
 
 # Python3 program to implement 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/](https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/)
 # the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/](https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/)
+
 # Function to find indexes 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/](https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/)
 # of the given that 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/](https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/)
 # satisfy the condition 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/](https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/)
 def printIndexes(strr): 
 
     # Stores length of 
@@ -182,6 +194,8 @@ def printIndexes(strr):
             print(i, end = " ") 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/](https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/)
 if __name__ == '__main__': 
 
     strr = "aabacdabbb"
@@ -189,6 +203,8 @@ if __name__ == '__main__':
     printIndexes(strr) 
 
 # This code is contributed by mohit kumar 29
+
+> 原文：[https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/](https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/)
 
 ```
 

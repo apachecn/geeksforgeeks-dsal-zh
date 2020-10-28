@@ -1,5 +1,7 @@
 # 数组
 
+> 原文：[https://www.geeksforgeeks.org/count-of-greater-elements-for-each-element-in-the-array/](https://www.geeksforgeeks.org/count-of-greater-elements-for-each-element-in-the-array/)
+
 中每个元素的较大元素计数
 
 给定大小为 **N** 的整数的数组 **arr** ，任务是为每个元素查找大于它的元素数量。
@@ -109,6 +111,8 @@ class GfG {
 
 # Python 3 implementation of the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/count-of-greater-elements-for-each-element-in-the-array/](https://www.geeksforgeeks.org/count-of-greater-elements-for-each-element-in-the-array/)
+
 def countOfGreaterElements(arr, n): 
     # Store the frequency of the 
     # array elements 
@@ -135,6 +139,8 @@ def countOfGreaterElements(arr, n):
         print(mp[arr[i]], end = " ") 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-greater-elements-for-each-element-in-the-array/](https://www.geeksforgeeks.org/count-of-greater-elements-for-each-element-in-the-array/)
 if __name__ == '__main__': 
     arr = [7, 9, 5, 2, 1, 3, 4, 8, 6] 
     n = len(arr) 
@@ -142,6 +148,8 @@ if __name__ == '__main__':
     countOfGreaterElements(arr, n) 
 
 # This code is contributed by Surendra_Gangwar 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-greater-elements-for-each-element-in-the-array/](https://www.geeksforgeeks.org/count-of-greater-elements-for-each-element-in-the-array/)
 
 ```
 

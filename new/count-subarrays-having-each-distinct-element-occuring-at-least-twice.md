@@ -1,5 +1,7 @@
 # 计数具有每个不同元素至少出现两次的子数组
 
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/](https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/)
+
 给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，任务是计算给定数组中[子数组](https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/)的数量，从而 这些子数组中的每个不同元素至少出现两次。
 
 **示例**：
@@ -125,12 +127,22 @@ int main()
 ```py
 
 # Python3 program to implement 
+
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/](https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/)
 # the above appraoch 
+
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/](https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/)
 from collections import defaultdict 
 
 # Function to get the count 
+
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/](https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/)
 # of subarrays having each 
+
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/](https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/)
 # element occuring at least twice  
+
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/](https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/)
 def cntSubarrays(arr, N): 
 
     # Stores count of subarrays 
@@ -189,6 +201,8 @@ def cntSubarrays(arr, N):
     return cntSub 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/](https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/)
 if __name__ == '__main__': 
 
     arr = [ 1, 1, 2, 2, 2 ] 
@@ -197,6 +211,8 @@ if __name__ == '__main__':
     print(cntSubarrays(arr, N)) 
 
 # This code is contributed by Shivam Singh
+
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/](https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/)
 
 ```
 

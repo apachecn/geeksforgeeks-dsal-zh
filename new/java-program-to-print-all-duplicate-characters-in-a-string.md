@@ -1,5 +1,7 @@
 # Java 程序以字符串形式打印所有重复的字符
 
+> 原文：[https://www.geeksforgeeks.org/java-program-to-print-all-duplicate-characters-in-a-string/](https://www.geeksforgeeks.org/java-program-to-print-all-duplicate-characters-in-a-string/)
+
 给定字符串，任务是编写 [Java](http://www.geeksforgeeks.org/java/) 程序以按频率打印所有重复的字符
 
 **示例**：

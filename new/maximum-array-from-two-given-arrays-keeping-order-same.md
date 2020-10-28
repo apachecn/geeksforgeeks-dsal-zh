@@ -1,5 +1,7 @@
 # 来自两个给定数组的最大数组，它们保持顺序相同
 
+> 原文：[https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/](https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/)
+
 给定两个相同大小的数组 A []和 B []（两个数组分别包含不同的元素，但可能具有一些公共元素），任务是形成相同大小的第三个（或结果）数组。 所得数组应同时包含两个数组中最多 n 个元素。 它应该先选择 A []的元素，然后再选择 B []的元素，其顺序与原始数组中出现的顺序相同。 如果存在公共元素，则 res []中仅应存在一个元素，并且应将优先级赋予 A []。
 
 **示例**：
@@ -107,9 +109,17 @@ int main()
 ```py
 
 # Python3 program to implement the 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/](https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/)
 # above approach
+
+> 原文：[https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/](https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/)
 # Make a set of maximum elements 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/](https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/)
 # from two arrays A[] and B[]
+
+> 原文：[https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/](https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/)
 from collections import defaultdict
 
 def maximizeTheFirstArray(A, B, n):
@@ -159,6 +169,8 @@ def maximizeTheFirstArray(A, B, n):
         print (res[i], end = " ")
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/](https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/)
 if __name__ == "__main__":
 
     A = [9, 7, 2, 3, 6]
@@ -167,6 +179,8 @@ if __name__ == "__main__":
     maximizeTheFirstArray(A, B, n);
 
 # This code is contributed by Chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/](https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/)
 
 ```
 

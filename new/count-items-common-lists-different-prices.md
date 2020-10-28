@@ -1,5 +1,7 @@
 # 计算两个清单共有但价格不同的商品
 
+> 原文：[https://www.geeksforgeeks.org/count-items-common-lists-different-prices/](https://www.geeksforgeeks.org/count-items-common-lists-different-prices/)
+
 给定两个列表，分别包含 **m** 和 **n** 个项目的 **list1** 和 **list2** 。 每个项目都与两个字段关联：名称和价格。 问题是要计算两个列表中价格不同的商品。
 
 **示例**：
@@ -140,13 +142,27 @@ public static void main(String[] args)
 ```py
 
 # Python implementation to
+
+> 原文：[https://www.geeksforgeeks.org/count-items-common-lists-different-prices/](https://www.geeksforgeeks.org/count-items-common-lists-different-prices/)
 # count items common to both 
+
+> 原文：[https://www.geeksforgeeks.org/count-items-common-lists-different-prices/](https://www.geeksforgeeks.org/count-items-common-lists-different-prices/)
 # the lists but with different
+
+> 原文：[https://www.geeksforgeeks.org/count-items-common-lists-different-prices/](https://www.geeksforgeeks.org/count-items-common-lists-different-prices/)
 # prices
 
+> 原文：[https://www.geeksforgeeks.org/count-items-common-lists-different-prices/](https://www.geeksforgeeks.org/count-items-common-lists-different-prices/)
+
 # function to count items
+
+> 原文：[https://www.geeksforgeeks.org/count-items-common-lists-different-prices/](https://www.geeksforgeeks.org/count-items-common-lists-different-prices/)
 # common to both 
+
+> 原文：[https://www.geeksforgeeks.org/count-items-common-lists-different-prices/](https://www.geeksforgeeks.org/count-items-common-lists-different-prices/)
 # the lists but with different prices
+
+> 原文：[https://www.geeksforgeeks.org/count-items-common-lists-different-prices/](https://www.geeksforgeeks.org/count-items-common-lists-different-prices/)
 def countItems(list1, list2):
     count = 0
 
@@ -163,6 +179,8 @@ def countItems(list1, list2):
     return count
 
 # Driver program to test above
+
+> 原文：[https://www.geeksforgeeks.org/count-items-common-lists-different-prices/](https://www.geeksforgeeks.org/count-items-common-lists-different-prices/)
 list1 = [("apple", 60), ("bread", 20),
             ("wheat", 50), ("oil", 30)]
 list2 = [("milk", 20), ("bread", 15),
@@ -171,6 +189,8 @@ list2 = [("milk", 20), ("bread", 15),
 print("Count = ", countItems(list1, list2))
 
 # This code is contributed by Ansu Kumari.
+
+> 原文：[https://www.geeksforgeeks.org/count-items-common-lists-different-prices/](https://www.geeksforgeeks.org/count-items-common-lists-different-prices/)
 
 ```
 

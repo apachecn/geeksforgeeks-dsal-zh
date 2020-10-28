@@ -1,5 +1,7 @@
 # 删除给定元素后，找出 k 个最大数字
 
+> 原文：[https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/)
+
 给定一个整数数组，请在删除给定元素后找到 k 个最大数。 如果重复元素，请为包含要删除元素的数组中存在的元素的每个实例删除一个实例。
 
 假定删除 n 个元素后将剩余至少 k 个元素。
@@ -98,11 +100,19 @@ int main()
 ```py
 
 # Python3 program to find the k maximum  
+
+> 原文：[https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/)
 # number from the array after n deletions 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/)
 import math as mt 
 
 # Find k maximum element from arr[0..m-1]  
+
+> 原文：[https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/)
 # after deleting elements from del[0..n-1] 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/)
 def findElementsAfterDel(arr, m, dell, n, k): 
 
     # Hash Map of the numbers to be deleted 
@@ -139,6 +149,8 @@ def findElementsAfterDel(arr, m, dell, n, k):
     return heap[:k] 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/)
 array = [5, 12, 33, 4, 56, 12, 20] 
 m = len(array) 
 
@@ -148,7 +160,11 @@ k = 3
 print(*findElementsAfterDel(array, m, dell, n, k)) 
 
 # This code is contributed by 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/)
 # mohit kumar 29 
+
+> 原文：[https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/)
 
 ```
 

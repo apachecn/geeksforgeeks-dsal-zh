@@ -1,5 +1,7 @@
 # 检查所有数组元素是否都不同
 
+> 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-distinct/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-distinct/)
+
 给定一个数组，请检查数组中的所有元素是否互不相同。
 
 **示例**：
@@ -101,7 +103,11 @@ public class DistinctElements {
 ```py
 
 # Python3 program to check if all array  
+
+> 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-distinct/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-distinct/)
 # elements are distinct 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-distinct/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-distinct/)
 def areDistinct(arr) : 
 
     n = len(arr) 
@@ -116,6 +122,8 @@ def areDistinct(arr) :
     return (len(s) == len(arr)) 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-distinct/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-distinct/)
 arr = [ 1, 2, 3, 2 ] 
 
 if (areDistinct(arr)):  
@@ -125,6 +133,8 @@ else : 
     print("Not all Elements are Distinct") 
 
 # This code is contributed by ihritik 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-distinct/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-distinct/)
 
 ```
 

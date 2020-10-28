@@ -1,5 +1,7 @@
 # 检查在给定的二进制字符串
 
+> 原文：[https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/](https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/)
+
 中，子字符串是否存在 0 到 N 的二进制表示形式
 
 给出二进制**字符串** str 和整数 **N，**，任务是检查字符串的子字符串是否包含小于或等于给定整数 N 的所有非负整数的二进制表示形式 。
@@ -278,10 +280,18 @@ public static void main(String[] args) 
 ```py
 
 # Python3 implementation of 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/](https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/)
 # the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/](https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/)
+
 # Function to convert decimal to  
+
+> 原文：[https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/](https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/)
 # binary representation 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/](https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/)
 def decimalToBinary(N): 
 
     ans = "" 
@@ -301,8 +311,14 @@ def decimalToBinary(N):
     return ans 
 
 # Function to check if binary conversion 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/](https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/)
 # of numbers from N to 1 exists in the 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/](https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/)
 # string as a substring or not 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/](https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/)
 def checkBinaryString(str, N): 
 
     # To store the count of number 
@@ -350,6 +366,8 @@ def checkBinaryString(str, N):
         return "False"
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/](https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/)
 if __name__ == '__main__': 
 
     # Given String 
@@ -362,6 +380,8 @@ if __name__ == '__main__':
     print(checkBinaryString(str, N)) 
 
 # This code is contributed by Shivam Singh 
+
+> 原文：[https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/](https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/)
 
 ```
 

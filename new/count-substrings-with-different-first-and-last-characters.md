@@ -1,5 +1,7 @@
 # 计算具有不同首尾字符的子字符串
 
+> 原文：[https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/](https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/)
+
 给定字符串 **S** ，任务是打印给定字符串的子字符串计数，该字符串的首字符和尾字符不同。
 
 **示例**：
@@ -149,9 +151,17 @@ public static void main(String[] args)
 
 # Python3 program for the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/](https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/)
+
 # Function to count the substrings 
+
+> 原文：[https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/](https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/)
 # having different first and last 
+
+> 原文：[https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/](https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/)
 # characters 
+
+> 原文：[https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/](https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/)
 def countSubstring(s, n): 
 
     # Store the final count 
@@ -181,16 +191,26 @@ def countSubstring(s, n):
 
 # Driver Code 
 
+> 原文：[https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/](https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/)
+
 # Given string 
+
+> 原文：[https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/](https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/)
 S = "abcab"
 
 # Length of the string 
+
+> 原文：[https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/](https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/)
 N = 5
 
 # Function call 
+
+> 原文：[https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/](https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/)
 countSubstring(S, N) 
 
 # This code is contributed by code_hunt 
+
+> 原文：[https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/](https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/)
 
 ```
 

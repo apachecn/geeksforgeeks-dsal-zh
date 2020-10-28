@@ -1,5 +1,7 @@
 # 子字符串的最小长度，其旋转会生成回文子字符串
 
+> 原文：[https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/](https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/)
+
 给定字符串 **str** ，任务是找到旋转所需的子字符串的最小长度，以从给定字符串生成回文子字符串。
 
 **示例**：
@@ -176,14 +178,24 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to find the minimum  
+
+> 原文：[https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/](https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/)
 # length of substring whose rotation  
+
+> 原文：[https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/](https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/)
 # generates a palindromic substring  
+
+> 原文：[https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/](https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/)
 import sys 
 
 INT_MAX = sys.maxsize; 
 
 # Function to return the  
+
+> 原文：[https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/](https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/)
 # minimum lenth of substring  
+
+> 原文：[https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/](https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/)
 def count_min_length(s):  
 
     # Store the index of  
@@ -232,6 +244,8 @@ def count_min_length(s): 
     return ans;  
 
 # Driver Code  
+
+> 原文：[https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/](https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/)
 if __name__ == "__main__":  
 
     string = "abcdeba";  
@@ -239,6 +253,8 @@ if __name__ == "__main__": 
     print(count_min_length(string));  
 
 # This code is contributed by AnkitRai01 
+
+> 原文：[https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/](https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/)
 
 ```
 

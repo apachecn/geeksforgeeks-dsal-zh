@@ -1,5 +1,7 @@
 # 最大的词典字符串，最多包含 K 个连续元素
 
+> 原文：[https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/](https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/)
+
 给定字符串 **S** ，任务是通过重新排列或删除元素来查找最大不超过元素连续出现的 **K** 的词典字符串。
 
 **范例**：
@@ -276,9 +278,17 @@ public static void main(String[] args)
 
 # Python3 code for the above approach
 
+> 原文：[https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/](https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/)
+
 # Function to find the
+
+> 原文：[https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/](https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/)
 # largest lexicographical
+
+> 原文：[https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/](https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/)
 # string with given constraints.
+
+> 原文：[https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/](https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/)
 def getLargestString(s, k):
 
     # Vector containing frequency
@@ -364,6 +374,8 @@ def getLargestString(s, k):
     return ans            
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/](https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/)
 if __name__ == "__main__":
 
     S = "xxxxzza"
@@ -371,6 +383,8 @@ if __name__ == "__main__":
     print (getLargestString(S, k))
 
 # This code is contributed by Chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/](https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/)
 
 ```
 

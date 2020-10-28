@@ -1,5 +1,7 @@
 # 当一个人不能携带两个以上相同类型的物品时进行分配
 
+> 原文：[https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/](https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/)
+
 假设有 N 种糖果可以有许多不同的类型，并且有 k 个客户，那么一个客户购买的同一类型的糖果不会超过 2 件，任务是确定是否可以分发所有糖果，然后打印“是”，否则打印“ 没有”。
 
 给定数组 arr []表示糖果数组 **arr [i]是糖果**的类型。
@@ -142,8 +144,14 @@ public class GFG {
 
 # Python 3 program for above implementation 
 
+> 原文：[https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/](https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/)
+
 # Function to check occurrence 
+
+> 原文：[https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/](https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/)
 # of each element 
+
+> 原文：[https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/](https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/)
 def checkCount(arr, n, k):
 
     # Start traversing the elements 
@@ -163,6 +171,8 @@ def checkCount(arr, n, k):
     return True
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/](https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/)
 arr = [1, 1, 2, 3, 1]
 n = len(arr)
 k = 2
@@ -172,6 +182,8 @@ else:
     print("No")
 
 # This code is contributed by Shrikant13
+
+> 原文：[https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/](https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/)
 
 ```
 
@@ -397,10 +409,16 @@ class GfG
 ```py
 
 # Python3 program for above implementation 
+
+> 原文：[https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/](https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/)
 from collections import defaultdict
 
 # Function to check hash array 
+
+> 原文：[https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/](https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/)
 # corresponding to the given array 
+
+> 原文：[https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/](https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/)
 def checkCount(arr, n, k):
 
     mp = defaultdict(lambda:0)
@@ -417,6 +435,8 @@ def checkCount(arr, n, k):
     return True
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/](https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/)
 arr = [ 1, 1, 2, 3, 1 ]
 n = len(arr)
 k = 2
@@ -426,6 +446,8 @@ else:
     print("No")
 
 # This code is contributed by Shrikant13 
+
+> 原文：[https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/](https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/)
 
 ```
 

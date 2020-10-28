@@ -1,5 +1,7 @@
 # 给定一系列单词，请使用 STL
 
+> 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-using-stl/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-using-stl/)
+
 将所有字谜一起打印
 
 给定一组单词，将所有字谜一起打印。

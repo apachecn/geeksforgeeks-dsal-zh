@@ -1,5 +1,7 @@
 # 查找出现 b 次的唯一元素
 
+> 原文：[https://www.geeksforgeeks.org/find-element-appears-b-times/](https://www.geeksforgeeks.org/find-element-appears-b-times/)
+
 给定一个数组，其中每个元素出现一次，除了一个元素出现 b（a> b）次。 找到发生 b 次的元素。
 
 **示例**：
@@ -104,7 +106,11 @@ public static void main(String[] args) 
 ```py
 
 # Python3 program to find the only  
+
+> 原文：[https://www.geeksforgeeks.org/find-element-appears-b-times/](https://www.geeksforgeeks.org/find-element-appears-b-times/)
 # element that appears b times 
+
+> 原文：[https://www.geeksforgeeks.org/find-element-appears-b-times/](https://www.geeksforgeeks.org/find-element-appears-b-times/)
 def appearsbTimes(arr, n, a, b): 
 
     s = dict() 
@@ -124,12 +130,16 @@ def appearsbTimes(arr, n, a, b):
     return ((a_Sum - Sum) // (a - b)) 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/find-element-appears-b-times/](https://www.geeksforgeeks.org/find-element-appears-b-times/)
 arr = [1, 1, 2, 2, 2, 3, 3, 3] 
 a, b = 3, 2
 n = len(arr) 
 print(appearsbTimes(arr, n, a, b)) 
 
 # This code is contributed by mohit kumar 
+
+> 原文：[https://www.geeksforgeeks.org/find-element-appears-b-times/](https://www.geeksforgeeks.org/find-element-appears-b-times/)
 
 ```
 

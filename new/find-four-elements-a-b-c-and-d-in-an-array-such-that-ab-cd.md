@@ -1,5 +1,7 @@
 # 在数组中找到四个元素 a，b，c 和 d，使得 a + b = c + d
 
+> 原文：[https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
+
 给定一个由不同整数组成的数组，请查找是否有两对（a，b）和（c，d），使得 a + b = c + d，而 a，b，c 和 d 是不同的元素。 如果有多个答案，请打印其中的任何一个。
 
 例：
@@ -166,17 +168,31 @@ class ArrayElements
 ```
 
 # Python Program to find four different elements a,b,c and d of 
+
+> 原文：[https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
 # array such that a+b = c+d 
 
+> 原文：[https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
+
 # function to find a, b, c, d such that 
+
+> 原文：[https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
 # (a + b) = (c + d) 
+
+> 原文：[https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
 def findPairs(arr, n): 
 
 # Create an empty hashmap to store mapping  
+
+> 原文：[https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
 # from sum to pair indexes 
+
+> 原文：[https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
 Hash = {} 
 
 # Traverse through all possible pairs of arr[] 
+
+> 原文：[https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
 for i in range(n - 1): 
     for j in range(i + 1, n): 
     sum = arr[i] + arr[j] 
@@ -194,11 +210,15 @@ for i in range(n - 1):
 return False
 
 # driver program 
+
+> 原文：[https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
 arr = [3, 4, 7, 1, 2, 9, 8] 
 n = len(arr) 
 findPairs(arr, n) 
 
 # This code is contributed by Aditi Sharma 
+
+> 原文：[https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
 
 ```
 

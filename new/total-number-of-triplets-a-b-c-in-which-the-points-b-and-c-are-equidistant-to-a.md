@@ -1,5 +1,7 @@
 # B 和 C 点与 A 等距的三元组（A，B，C）总数
 
+> 原文：[https://www.geeksforgeeks.org/total-number-of-triplets-a-b-c-in-which-the-points-b-and-c-are-equidistant-to-a/](https://www.geeksforgeeks.org/total-number-of-triplets-a-b-c-in-which-the-points-b-and-c-are-equidistant-to-a/)
+
 给定包含 **N** 个点的数组 **arr** ，任务是找到点等距的三元组总数。
 
 > 当 P1 和 P2 之间的距离与 P1 和 P3 之间的距离相同时，点（P1，P2，P3）的**三元组被认为是等距的。**

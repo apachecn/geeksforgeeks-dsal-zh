@@ -1,5 +1,7 @@
 # 要删除的最小子数组的大小，以使数组元素的数量大于或小于 K
 
+> 原文：[https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/](https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/)
+
 给定一个整数 **K** 和一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个整数组成，任务是找到以下子数组的长度： 要删除的最小可能长度，以使其余数组中小于和大于 **K** 的数组元素数相等。
 
 **示例**：
@@ -274,11 +276,19 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement
+
+> 原文：[https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/](https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/)
 # the above approach
+
+> 原文：[https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/](https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/)
 import sys
 
 # Function ot find the length
+
+> 原文：[https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/](https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/)
 # of the smallest subarray
+
+> 原文：[https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/](https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/)
 def smallSubarray(arr, n, total_sum):
 
     # Stores (prefix Sum, index)
@@ -311,7 +321,11 @@ def smallSubarray(arr, n, total_sum):
     return length
 
 # Function to find the length of
+
+> 原文：[https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/](https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/)
 # the largest subarray
+
+> 原文：[https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/](https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/)
 def smallestSubarrayremoved(arr, n, k):
 
     # Stores the sum of all array
@@ -346,15 +360,21 @@ def smallestSubarrayremoved(arr, n, k):
                              total_sum)
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/](https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/)
 arr = [ 12, 16, 12, 13, 10 ]
 K = 13
 
 n = len(arr)
 
 # Function call
+
+> 原文：[https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/](https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/)
 print(smallestSubarrayremoved(arr, n, K))
 
 # This code is contributed by Shivam Singh
+
+> 原文：[https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/](https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/)
 
 ```
 

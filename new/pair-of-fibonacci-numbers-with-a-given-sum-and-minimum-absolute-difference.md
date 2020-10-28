@@ -1,5 +1,7 @@
 # 一对具有给定总和和最小绝对差的斐波那契数
 
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
+
 给定整数 **N** （小于 10 ^ 6），任务是找到一对[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，其总和等于给定的 **N** ， 所选对之间的绝对差最小。
 
 如果没有解决方法，请打印 **-1** 。
@@ -196,20 +198,42 @@ class GFG{
 ```py
 
 # Python 3 program to find 
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 # the pair of Fibonacci numbers 
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 # with a given sum and minimum 
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 # absolute difference
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 MAX = 10005
 
 # Hash to store all the
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 # Fibonacci numbers
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 fib = set()
 
 # Function to generate 
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 # fibonacci Series and 
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 # create hash table 
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 # to check Fibonacci 
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 # numbers
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 def fibonacci():
 
     global fib
@@ -235,9 +259,17 @@ def fibonacci():
         l += 1
 
 # Function to find the 
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 # pair of Fibonacci numbers 
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 # with the given sum and 
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 # minimum absolute difference
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 def findFibonacci(N):
 
     global fib
@@ -263,6 +295,8 @@ def findFibonacci(N):
     print("-1")
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 if __name__ == '__main__':
 
     # Generate the Fibonacci 
@@ -274,6 +308,8 @@ if __name__ == '__main__':
     findFibonacci(sum)
 
 # This code is contributed by bgangwar59
+
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 
 ```
 

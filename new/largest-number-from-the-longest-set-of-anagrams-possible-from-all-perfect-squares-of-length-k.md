@@ -1,5 +1,7 @@
 # 在长度为 K 的所有完美平方中，可能是最长的字谜集中最大的数字。
 
+> 原文：[https://www.geeksforgeeks.org/largest-number-from-the-longest-set-of-anagrams-possible-from-all-perfect-squares-of-length-k/](https://www.geeksforgeeks.org/largest-number-from-the-longest-set-of-anagrams-possible-from-all-perfect-squares-of-length-k/)
+
 给定整数 **K** ，使得存在一组所有可能的[完美平方](https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/)，每个长度为 **K** 。 从这组完美的正方形中，形成一组具有尽可能多的长度的集合，其长度彼此为[字谜。 任务是打印在生成的字谜集中存在的最大元素。
 
 **注意**：如果一组以上最大长度，则打印其中最大的一组。](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)

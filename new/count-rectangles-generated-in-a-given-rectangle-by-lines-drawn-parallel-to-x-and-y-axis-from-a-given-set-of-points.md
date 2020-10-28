@@ -1,5 +1,7 @@
 # 计算从给定点集中平行于 X 和 Y 轴绘制的线在给定矩形中生成的矩形
 
+> 原文：[https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/](https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/)
+
 给定 [2D 数组](https://www.geeksforgeeks.org/dynamically-allocate-2d-array-c/) [矩形[] []](https://www.geeksforgeeks.org/check-given-four-integers-sides-make-rectangle/) 表示矩形{（0，0），（L，0），（0，B），（L，B）的顶点 }的尺寸为 **L * B** ，而另一个 [2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/)的大小为 **N** ，的大小为，在直角坐标系中 。 从给定数组的每个点绘制平行于 **X 轴**的水平线和平行于 **Y 轴**的垂直线。 任务是计算给定矩形内存在的所有可能的矩形。
 
 **范例**：
@@ -255,11 +257,19 @@ public static void main(String args[])
 
 # Python3 program to implement
 
+> 原文：[https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/](https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/)
+
 # the above approach
+
+> 原文：[https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/](https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/)
 
 # Function to get the count 
 
+> 原文：[https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/](https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/)
+
 # of ractangles 
+
+> 原文：[https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/](https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/)
 
 def cntRect(points, N,
 
@@ -323,6 +333,8 @@ def cntRect(points, N,
 
 # Driver Code
 
+> 原文：[https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/](https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/)
+
 if __name__ == "__main__":
 
     rectangle = [[0, 0], [0, 5],
@@ -336,6 +348,8 @@ if __name__ == "__main__":
     print (cntRect(points, N, rectangle))
 
 # This code is contributed by Chitranayal
+
+> 原文：[https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/](https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/)
 
 ```
 

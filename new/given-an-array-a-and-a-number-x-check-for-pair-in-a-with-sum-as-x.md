@@ -1,5 +1,7 @@
 # 给定数组 A []和数字 x，请检查 A []中的对，且总和为 x
 
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
+
 编写一个程序，给定 n 个数字的数组 A []和另一个 x 的数组，确定 S 中是否存在两个元素的总和恰好是 x。
 
 **范例**：
@@ -269,7 +271,11 @@ class GFG {
 ```
 
 # Python program to check for the sum 
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 # condition to be satisified
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 
 def hasArrayTwoCandidates(A, arr_size, sum):
 
@@ -289,9 +295,17 @@ def hasArrayTwoCandidates(A, arr_size, sum):
     return 0
 
 # Implementation of Quick Sort
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 # A[] --> Array to be sorted
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 # si  --> Starting index
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 # ei  --> Ending index
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 def quickSort(A, si, ei):
     if si < ei:
         pi = partition(A, si, ei)
@@ -299,7 +313,11 @@ def quickSort(A, si, ei):
         quickSort(A, pi + 1, ei)
 
 # Utility function for partitioning 
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 # the array(used in quick sort)
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 def partition(A, si, ei):
     x = A[ei]
     i = (si-1)
@@ -316,6 +334,8 @@ def partition(A, si, ei):
     return i + 1
 
 # Driver program to test the functions
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 A = [1, 4, 45, 6, 10, -8]
 n = 16
 if (hasArrayTwoCandidates(A, len(A), n)):
@@ -677,10 +697,18 @@ class PairSum {
 ```
 
 # Python program to find if there are
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 # two elements wtih given sum
 
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
+
 # function to check for the given sum
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 # in the array
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 def printPairs(arr, arr_size, sum):
 
     # Create an empty hash set
@@ -694,11 +722,15 @@ def printPairs(arr, arr_size, sum):
         s.add(arr[i])
 
 # driver code
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 A = [1, 4, 45, 6, 10, 8]
 n = 16
 printPairs(A, len(A), n)
 
 # This code is contributed by __Devesh Agrawal__
+
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 元素计数，以使其与 X 的和/差也存在于数组
 
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/](https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/)
+
 中
 
 给定数组 **arr []** 和整数 **X** ，任务是对数组中的元素进行计数，以使它们在数组中存在元素![arr[i] - X](img/6481a6ffc9c0d160f8f6f17e3edfb950.png "Rendered by QuickLaTeX.com")或![arr[i] + X](img/e8db3b0f5854bd8b73da0cf3e3d4ef2a.png "Rendered by QuickLaTeX.com")。
@@ -141,13 +143,27 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation to count of  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/](https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/)
 # elements such that its sum/difference  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/](https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/)
 # with X also exists in the array  
 
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/](https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/)
+
 # Function to find the count of  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/](https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/)
 # elements in the array such that  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/](https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/)
 # element at the difference at X  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/](https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/)
 # is present in the array  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/](https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/)
 def findAns(arr, n, x): 
 
     s = set() 
@@ -170,14 +186,20 @@ def findAns(arr, n, x):
     print(ans) 
 
 # Driver Code  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/](https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/)
 arr = [ 2, 2, 4, 5, 6 ] 
 n = len(arr) 
 x = 3
 
 # Function call 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/](https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/)
 findAns(arr, n, x)  
 
 # This code is contributed by ishayadav181 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/](https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/)
 
 ```
 

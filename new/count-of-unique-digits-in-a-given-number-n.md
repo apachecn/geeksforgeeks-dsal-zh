@@ -1,5 +1,7 @@
 # 给定数字 N 中的唯一数字计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/](https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/)
+
 给定数字 **N** ，任务是计算给定数字中唯一数字的数量。
 
 **示例**：
@@ -173,8 +175,14 @@ class GFG {
 
 # Python3 program for the above approach  
 
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/](https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/)
+
 # Function that returns the count of  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/](https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/)
 # unique digits of the given number  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/](https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/)
 def countUniqueDigits(N): 
 
     # Initialize a variable to store 
@@ -214,13 +222,21 @@ def countUniqueDigits(N):
 
 # Driver Code 
 
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/](https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/)
+
 # Given number N 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/](https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/)
 N = 2234262
 
 # Function call  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/](https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/)
 print(countUniqueDigits(N))  
 
 # This code is contributed by vishu2908 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/](https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/)
 
 ```
 

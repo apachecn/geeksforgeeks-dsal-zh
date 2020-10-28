@@ -1,5 +1,7 @@
 # 什么是哈希函数，以及如何选择良好的哈希函数？
 
+> 原文：[https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/](https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/)
+
 **先决条件**：[哈希| 第 1 组（简介）](https://www.geeksforgeeks.org/hashing-set-1-introduction/) 
 
 <u>**什么是哈希函数？**</u>

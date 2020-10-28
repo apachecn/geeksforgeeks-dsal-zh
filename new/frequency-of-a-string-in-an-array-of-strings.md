@@ -1,5 +1,7 @@
 # 字符串数组中字符串的频率
 
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
+
 您会得到一个字符串集合和一个查询列表。 对于每个查询，都有一个字符串。 我们需要打印给定字符串在字符串集合中出现的次数。
 
 **范例**：
@@ -111,9 +113,15 @@ class SubString
 ```py
 
 # Python3 program to find number of 
+
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
 # times a string appears in an array.
 
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
+
 # Returns count of occurrences of s in arr[] 
+
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
 def search(arr, s):
     counter = 0
     for j in range(len(arr)):
@@ -132,13 +140,19 @@ def answerQueries(arr, q):
                      end = " ")
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
 if __name__ == '__main__':
     arr = ["aba", "baba", "aba", "xzxb"]
     q = ["aba", "xzxb", "ab"]
     answerQueries(arr, q)
 
 # This code is contributed 
+
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
 # by PrinciRaj19992
+
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
 
 ```
 
@@ -192,9 +206,15 @@ class SubString
 
 <?php
 # Php program to find number of 
+
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
 # times a string appears in an array.
 
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
+
 # Returns count of occurrences of s in arr[] 
+
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
 function search($arr, $s)
 {
     $counter = 0;
@@ -219,12 +239,18 @@ function answerQueries($arr, $q)
 
 # Driver code
 
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
+
 $arr = array("aba", "baba", "aba", "xzxb");
 $q = array("aba", "xzxb", "ab");
 answerQueries($arr, $q);
 
 # This code is contributed 
+
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
 # by Shivi_Aggarwal
+
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
 ?>
 
 ```

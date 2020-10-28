@@ -1,5 +1,7 @@
 # 最大限度地增加 P 巧克力可以连续分配给 N 个人的天数
 
+> 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
+
 给定一个整数，表示巧克力数量的 **P** 和数组 **a []** ，其中 <sub>i</sub> 表示 **i <sup>th [</sup>** 巧克力。 **N** 人每天都想吃巧克力。 考虑以下条件，找出 **N** 人可以吃巧克力的最大连续天数：
 
 1.  每个 **N** 人在特定的一天必须只吃一种巧克力。
@@ -247,16 +249,28 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement
+
+> 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
 # the above approach
 
+> 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
+
 # Stores the frequency of
+
+> 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
 # each type of chocolate
+
+> 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
 mp = {}
 
 N, P = 0, 0
 
 # Function to check if chocolates
+
+> 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
 # can be eaten for 'mid' no. of days
+
+> 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
 def helper(mid):
 
     cnt = 0;
@@ -272,8 +286,14 @@ def helper(mid):
     return cnt >= N
 
 # Function to find the maximum
+
+> 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
 # number of days for which
+
+> 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
 # chocolates can be eaten
+
+> 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
 def findMaximumDays(arr):
 
     # Store the frequency
@@ -309,6 +329,8 @@ def findMaximumDays(arr):
     return ans
 
 # Driver code
+
+> 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
 if __name__ == '__main__':
 
     N = 3
@@ -321,6 +343,8 @@ if __name__ == '__main__':
     print(findMaximumDays(arr))
 
 # This code is contributed by mohit kumar 29
+
+> 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
 
 ```
 

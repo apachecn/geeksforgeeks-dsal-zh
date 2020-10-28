@@ -1,5 +1,7 @@
 # 在第一个数组中存在元素，但在第二个数组中不存在
 
+> 原文：[https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/](https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/)
+
 给定两个分别为大小 M 和 N 的数组（可能会排序，也可能不会排序）。 这样的数组使得它们中可能包含一些公共元素。 您需要计算出现在第一个数组中而不是第二个数组中的元素的数量。
 
 **示例**：
@@ -139,8 +141,14 @@ class GFG {
 ```py
 
 # Python3 to count number of elements  
+
+> 原文：[https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/](https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/)
 # present in arr1 whose occurrence is 
+
+> 原文：[https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/](https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/)
 # more than in arr2 
+
+> 原文：[https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/](https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/)
 def Largercount(arr1, arr2, m, n): 
 
     count = 0
@@ -171,11 +179,15 @@ def Largercount(arr1, arr2, m, n):
     return count 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/](https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/)
 arr1 = [2, 4, 4, 6, 6, 6, 8, 9] 
 arr2 = [2, 2, 4, 6, 6 ] 
 print(Largercount(arr1, arr2, 8, 5)) 
 
 # This code is contributed by mohit kumar 
+
+> 原文：[https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/](https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/)
 
 ```
 

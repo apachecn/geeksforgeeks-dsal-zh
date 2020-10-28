@@ -1,5 +1,7 @@
 # 将数组拆分为最大子数组，以便每个不同的元素都位于单个子数组中
 
+> 原文：[https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/](https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/)
+
 给定[数组](https://www.geeksforgeeks.org/array-data-structure/)， **arr []** 的大小为 **N** ，任务是[将数组](https://www.geeksforgeeks.org/split-array-two-equal-sum-subarrays/)拆分为最大数量 [子阵列](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，这样[的第一个和最后一个出现的](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)，所有不同的数组元素都位于单个子阵列中。
 
 **示例**：
@@ -153,10 +155,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement
+
+> 原文：[https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/](https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/)
 # the above approach
 
+> 原文：[https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/](https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/)
+
 # Function to maximize the
+
+> 原文：[https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/](https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/)
 # count of subarrays
+
+> 原文：[https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/](https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/)
 def maxCtSubarrays(arr, N):
 
     # Store the last index of
@@ -188,6 +198,8 @@ def maxCtSubarrays(arr, N):
     return res
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/](https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/)
 if __name__ == '__main__':
 
     arr = [ 1, 2, 4, 1,
@@ -197,6 +209,8 @@ if __name__ == '__main__':
     print(maxCtSubarrays(arr, N))
 
 # This code is contributed by mohit kumar 29
+
+> 原文：[https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/](https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/)
 
 ```
 

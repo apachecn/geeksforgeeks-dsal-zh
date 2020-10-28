@@ -1,5 +1,7 @@
 # 数组
 
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
+
 的两个子集的最大可能差
 
 给定一个 n 整数数组。 该数组可以包含重复元素，但是任何元素的最高频率不得超过两个。 您必须制作两个子集，以使它们的元素之和的差最大，并且它们两个共同包含给定数组的所有元素以及最重要的条件，任何子集都不应包含重复元素。
@@ -160,11 +162,17 @@ public class GFG {
 ```py
 
 # Python3 find maximum difference
+
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
 # of subset sum
+
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
 
 import math
 
 # function for maximum subset diff
+
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
 def maxDiff(arr, n) :
     SubsetSum_1 = 0
     SubsetSum_2 = 0
@@ -190,13 +198,19 @@ def maxDiff(arr, n) :
     return abs(SubsetSum_1 - SubsetSum_2)
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
 arr = [4, 2, -3, 3, -2, -2, 8]
 n = len(arr)
 print ("Maximum Difference = {}"
                . format(maxDiff(arr, n)))
 
 # This code is contributed by Manish Shaw
+
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
 # (manishshaw1)
+
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
 
 ```
 
@@ -435,9 +449,15 @@ public class GFG {
 ```
 
 # Python 3 find maximum difference 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
 # of subset sum
 
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
+
 # function for maximum subset diff
+
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
 def maxDiff(arr, n):
 
     result = 0
@@ -461,6 +481,8 @@ def maxDiff(arr, n):
     return result
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
 if __name__ == "__main__":
 
     arr = [ 4, 2, -3, 3, -2, -2, 8 ]
@@ -469,6 +491,8 @@ if __name__ == "__main__":
                    maxDiff(arr, n))
 
 # This code is contributed by ita_c
+
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
 
 ```c
 
@@ -747,7 +771,11 @@ public static void main(String[] args)
 
 # Python3 find maximum difference of subset sum
 
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
+
 # function for maximum subset diff
+
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
 def maxDiff(arr, n):
 
     hashPositive = dict()
@@ -784,11 +812,15 @@ def maxDiff(arr, n):
     return abs(SubsetSum_1 - SubsetSum_2)
 
 # Driver Code
+
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
 arr = [4, 2, -3, 3, -2, -2, 8]
 n = len(arr)
 print("Maximum Difference =", maxDiff(arr, n))
 
 # This code is contributed by mohit kumar
+
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
 
 ```
 

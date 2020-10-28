@@ -1,5 +1,7 @@
 # 数组中的最大元素，等于其频率
 
+> 原文：[https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/](https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/)
+
 给定一个大小为 **N** 的整数 **arr []** 数组，任务是在数组中查找其频率等于其值的最大元素
 
 **示例**：
@@ -138,10 +140,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to find the maximum element  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/](https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/)
 # whose frequency equals to it’s value  
 
+> 原文：[https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/](https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/)
+
 # Function to find the maximum element  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/](https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/)
 # whose frequency equals to it’s value  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/](https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/)
 def find_maxm(arr, n) : 
 
     # Hash map for counting frquency  
@@ -164,15 +174,23 @@ def find_maxm(arr, n) :
     return ans 
 
 # Driver code  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/](https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/)
 arr = [ 3, 2, 2, 3, 4, 3 ] 
 
 # Size of array  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/](https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/)
 n = len(arr) 
 
 # Function call  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/](https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/)
 print(find_maxm(arr, n)) 
 
 # This code is contributed by Sanjit_Prasad 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/](https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/)
 
 ```
 

@@ -1,5 +1,7 @@
 # 有效地查找字符串中的第一个重复字符，而无需在一次遍历中使用任何其他数据结构
 
+> 原文：[https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/](https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/)
+
 实现节省空间的算法，以检查字符串中的第一个重复字符，而无需在一次遍历中使用任何其他数据结构。 不允许使用其他数据结构，例如 count 数组，hash 等。
 
 **示例**：
@@ -113,11 +115,21 @@ public class First_Repeated_char {
 ```
 
 # Efficiently check First repeated character 
+
+> 原文：[https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/](https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/)
 # in Python  
 
+> 原文：[https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/](https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/)
+
 # Returns -1 if all characters of str are 
+
+> 原文：[https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/](https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/)
 # unique. 
+
+> 原文：[https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/](https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/)
 # Assumptions : (1) str contains only characters 
+
+> 原文：[https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/](https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/)
 #                 from 'a' to 'z' 
 ##             (2) integers are stored using 32 
 ##                 bits 
@@ -143,6 +155,8 @@ def FirstRepeated(string):
     return -1
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/](https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/)
 string = "abcfdeacf"
 i = FirstRepeated(string) 
 if i != -1: 
@@ -151,6 +165,8 @@ else:
     print "No repeated Char"
 
 # This code is contributed by Sachin Bisht 
+
+> 原文：[https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/](https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/)
 
 ```
 

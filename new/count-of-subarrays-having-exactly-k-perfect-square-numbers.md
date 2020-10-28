@@ -1,5 +1,7 @@
 # 具有完全 K 个完美平方数的子数组的计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
+
 给定未排序的整数数组 **arr []** 和整数 **K** 。 任务是使用正整数 K [完美平方数](https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/)来计数子数组的数量。
 
 **范例**：
@@ -259,13 +261,23 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to count of subarrays  
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
 # having exactly K perfect square numbers. 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
 from collections import defaultdict  
 import math  
 
 # A utility function to check if 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
 # the number n is perfect square 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
 # or not 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
 def isPerfectSquare(x): 
 
     # Find floating point value of 
@@ -276,7 +288,11 @@ def isPerfectSquare(x):
     return ((sr - math.floor(sr)) == 0) 
 
 # Function to find number of subarrays 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
 # with sum exactly equal to k 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
 def findSubarraySum(arr, n, K): 
 
     # STL map to store number of subarrays 
@@ -315,7 +331,11 @@ def findSubarraySum(arr, n, K):
     return res 
 
 # Function to count the subarray with K 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
 # perfect square numbers 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
 def countSubarray(arr, n, K): 
 
     # Update the array element 
@@ -335,6 +355,8 @@ def countSubarray(arr, n, K):
     print(findSubarraySum(arr, n, K)) 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
 if __name__ == "__main__": 
 
     arr = [ 2, 4, 9, 2 ] 
@@ -345,6 +367,8 @@ if __name__ == "__main__":
     countSubarray(arr, N, K) 
 
 # This code is contributed by chitranayal 
+
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
 
 ```
 

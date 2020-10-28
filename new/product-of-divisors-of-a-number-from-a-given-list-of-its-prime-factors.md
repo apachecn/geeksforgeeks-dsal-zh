@@ -1,5 +1,7 @@
 # 从给定的主要因子列表中得出的数的除数
 
+> 原文：[https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/](https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/)
+
 给定表示给定数字素数列表的数组 **arr []** ，任务是找到该数字除数的乘积。
 
 **注意**：由于产品可以打印得很大，因此答案模版 10 <sup>9</sup> +7。
@@ -217,12 +219,18 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement  
+
+> 原文：[https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/](https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/)
 # the above approach  
+
+> 原文：[https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/](https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/)
 from collections import defaultdict 
 
 MOD = 1000000007
 
 # Function to calculate (a^b)% m 
+
+> 原文：[https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/](https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/)
 def power(a, b, m): 
 
     a %= m 
@@ -238,7 +246,11 @@ def power(a, b, m):
     return res % m 
 
 # Function to calculate and return 
+
+> 原文：[https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/](https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/)
 # the product of divisors 
+
+> 原文：[https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/](https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/)
 def productOfDivisors(p, n): 
 
     # Stores the frequencies of 
@@ -267,6 +279,8 @@ def productOfDivisors(p, n):
     return product 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/](https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/)
 if __name__ == "__main__": 
 
     arr = [ 11, 11 ] 
@@ -275,6 +289,8 @@ if __name__ == "__main__":
     print(productOfDivisors(arr, n)) 
 
 # This code is contributed by chitranayal 
+
+> 原文：[https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/](https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/)
 
 ```
 

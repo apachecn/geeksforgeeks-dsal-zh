@@ -1,5 +1,7 @@
 # 给定两个未排序的数组，找到总和为 x 的所有对。
 
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
+
 给定两个不同元素的未排序数组，任务是从两个数组中找到总和等于 **X** 的所有对。
 
 **示例**：
@@ -102,12 +104,24 @@ class GFG {
 ```py
 
 # Python 3 program to find all  
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 # pairs in both arrays whose  
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 # sum is equal to given value x 
 
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
+
 # Function to print all pairs  
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 # in both arrays whose sum is 
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 # equal to given value x 
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 def findPairs(arr1, arr2, n, m, x): 
 
     for i in range(0, n): 
@@ -116,6 +130,8 @@ def findPairs(arr1, arr2, n, m, x):
                 print(arr1[i], arr2[j]) 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 arr1 = [1, 2, 3, 7, 5, 4] 
 arr2 = [0, 7, 4, 3, 2, 1] 
 n = len(arr1) 
@@ -124,6 +140,8 @@ x = 8
 findPairs(arr1, arr2, n, m, x) 
 
 # This code is contributed by Smitha Dinesh Semwal 
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 
 ```
 
@@ -318,12 +336,24 @@ class GFG {
 ```py
 
 # Python3 program to find all  
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 # pair in both arrays whose  
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 # sum is equal to given value x 
 
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
+
 # Function to find all pairs  
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 # in both arrays whose sum is 
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 # equal to given value x 
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 def findPairs(arr1, arr2, n, m, x): 
 
     # Insert all elements of  
@@ -341,6 +371,8 @@ def findPairs(arr1, arr2, n, m, x):
             print((x - arr2[j]), '', arr2[j]) 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 arr1 = [1, 0, -4, 7, 6, 4] 
 arr2 = [0, 2, 4, -3, 2, 1] 
 x = 8
@@ -350,7 +382,11 @@ m = len(arr2)
 findPairs(arr1, arr2, n, m, x) 
 
 # This code is contributed  
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 # by ihritik 
+
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 
 ```
 

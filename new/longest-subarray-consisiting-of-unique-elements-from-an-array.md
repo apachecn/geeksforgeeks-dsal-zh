@@ -1,5 +1,7 @@
 # 最长的子数组，包含数组中的唯一元素
 
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/](https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/)
+
 给定一个由 **N** 个整数组成的数组 **arr []** ，任务是找到仅包含唯一元素的最大子数组。
 
 **示例**：
@@ -132,11 +134,19 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/](https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/)
 # the above approach 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/](https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/)
 from collections import defaultdict 
 
 # Function to find largest 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/](https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/)
 # subarray with no dublicates 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/](https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/)
 def largest_subarray(a, n): 
 
     # Stores index of array elements 
@@ -165,13 +175,19 @@ def largest_subarray(a, n):
     return ans 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/](https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/)
 arr = [ 1, 2, 3, 4, 5, 1, 2, 3 ] 
 n = len(arr) 
 
 # Function call 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/](https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/)
 print(largest_subarray(arr, n)) 
 
 # This code is contributed by Shivam Singh 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/](https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/)
 
 ```
 

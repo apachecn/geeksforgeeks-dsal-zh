@@ -1,5 +1,7 @@
 # 最长严格双子序列
 
+> 原文：[https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/](https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/)
+
 的长度
 
 给定一个包含 n 个整数的数组 arr []。 问题是找到最长的严格双音子序列的长度。 如果子序列先增大然后减小，且条件是在递增和递减部分中相邻项之间的绝对差仅为 1，则该子序列称为**严格**双音。 按升序排序的序列被视为 Bitonic，而降序部分为空。 类似地，降序序列被视为 Bitonic，而升序部分为空。
@@ -208,10 +210,18 @@ public static void main(String[] args) 
 ```py
 
 # Python3 implementation to find length of  
+
+> 原文：[https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/](https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/)
 # longest strict bitonic subsequence 
 
+> 原文：[https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/](https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/)
+
 # function to find length of longest 
+
+> 原文：[https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/](https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/)
 # strict bitonic subsequence 
+
+> 原文：[https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/](https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/)
 def longLenStrictBitonicSub(arr, n): 
 
     # hash table to map the array element  
@@ -272,6 +282,8 @@ def longLenStrictBitonicSub(arr, n):
     return longLen 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/](https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/)
 if __name__ == "__main__": 
     arr = [1, 5, 2, 3, 4, 5, 3, 2] 
     n = len(arr) 
@@ -279,6 +291,8 @@ if __name__ == "__main__":
            longLenStrictBitonicSub(arr, n)) 
 
 # This code is contributed by sanjeev2552 
+
+> 原文：[https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/](https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/)
 
 ```
 

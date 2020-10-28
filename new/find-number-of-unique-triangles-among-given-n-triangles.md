@@ -1,5 +1,7 @@
 # 在给定的 N 个三角形中查找唯一三角形的数量
 
+> 原文：[https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/](https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/)
+
 给定 N 个元素的三个数组 a []，b []和 c []，它们代表 **N** 个三角形的三个边。 任务是找到给定三角形中唯一的三角形数量。 如果三角形的所有边与其他三角形的所有边都匹配，则该三角形是非唯一的。
 
 **示例**：
@@ -83,10 +85,16 @@ int main()
 ```py
 
 # Python3 implementation of the approach 
+
+> 原文：[https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/](https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/)
 from collections import defaultdict 
 
 # Function to return the number 
+
+> 原文：[https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/](https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/)
 # of unique triangles 
+
+> 原文：[https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/](https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/)
 def UniqueTriangles(a, b, c, n): 
 
     sides = [None for i in range(n)] 
@@ -118,6 +126,8 @@ def UniqueTriangles(a, b, c, n):
     return count 
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/](https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/)
 if __name__ == "__main__": 
 
     a = [7, 5, 8, 2, 2]  
@@ -129,6 +139,8 @@ if __name__ == "__main__":
     print(UniqueTriangles(a, b, c, n)) 
 
 # This code is contributed by Rituraj Jain 
+
+> 原文：[https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/](https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/)
 
 ```
 

@@ -1,5 +1,7 @@
 # Python 中使用 OrderedDict 的 LRU 缓存
 
+> 原文：[https://www.geeksforgeeks.org/lru-cache-in-python-using-ordereddict/](https://www.geeksforgeeks.org/lru-cache-in-python-using-ordereddict/)
+
 [LRU（最近最少使用）缓存](https://www.geeksforgeeks.org/lru-cache-implementation/)首先丢弃最近最少使用的项目。 此算法需要跟踪何时使用了什么，如果要确保算法始终丢弃最近最少使用的商品，这将非常昂贵。 此技术的一般实现要求保留高速缓存行的“年龄位”，并根据年龄位跟踪“最近最少使用”的高速缓存行。
 
 我们的问题陈述是为最近最少使用（LRU）缓存设计和实现数据结构。
@@ -77,7 +79,11 @@ class LRUCache:
             self.cache.popitem(last = False)
 
 # RUNNER
+
+> 原文：[https://www.geeksforgeeks.org/lru-cache-in-python-using-ordereddict/](https://www.geeksforgeeks.org/lru-cache-in-python-using-ordereddict/)
 # initializing our cache with the capacity of 2
+
+> 原文：[https://www.geeksforgeeks.org/lru-cache-in-python-using-ordereddict/](https://www.geeksforgeeks.org/lru-cache-in-python-using-ordereddict/)
 cache = LRUCache(2) 
 
 cache.put(1, 1)

@@ -1,5 +1,7 @@
 # 绝对差为 K 的两个元素之间的最大距离
 
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/](https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/)
+
 给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 和数字 **K** ，任务是找到两个绝对差为 **K** 的元素之间的最大距离。 。 如果找不到最大距离，则打印**“ -1”** 。
 
 **示例**：
@@ -193,9 +195,17 @@ class GFG {
 
 # Python3 program for the above approach 
 
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/](https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/)
+
 # Function that find maximum distance  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/](https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/)
 # between two elements whose absolute  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/](https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/)
 # difference is K  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/](https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/)
 def maxDistance(arr, K): 
 
     # To store the first index 
@@ -235,16 +245,26 @@ def maxDistance(arr, K):
 
 # Driver code 
 
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/](https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/)
+
 # Given array arr[]  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/](https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/)
 arr = [ 11, 2, 3, 8, 5, 2 ] 
 
 # Given difference K  
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/](https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/)
 K = 2
 
 # Function call 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/](https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/)
 print(maxDistance(arr,K)) 
 
 # This code is contributed by Stuti Pathak 
+
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/](https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/)
 
 ```
 

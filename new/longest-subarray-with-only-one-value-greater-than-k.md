@@ -1,5 +1,7 @@
 # 最长子数组，其值仅大于 k
 
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/](https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/)
+
 给定 N 个数字的数组，请找到最长子数组的长度，以使 K 是插入时第二大的元素。
 
 **示例**：
@@ -176,10 +178,18 @@ int main()
 ```py
 
 # Python3 program to find the length of  
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/](https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/)
 # the longest subarray such that K is  
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/](https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/)
 # the second largest element on insertion 
 
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/](https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/)
+
 # Function to find the length of longest subarray 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/](https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/)
 def lengthOfLongestSubarray(a, n, k): 
     flag = 0
 
@@ -275,6 +285,8 @@ def lengthOfLongestSubarray(a, n, k):
     return maxi 
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/](https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/)
 a  = [9, 5, 5, 6, 8] 
 n = len(a) 
 k = 7
@@ -282,6 +294,8 @@ k = 7
 print(lengthOfLongestSubarray(a, n, k)) 
 
 # This code is contributed by Mohit Kumar 
+
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/](https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/)
 
 ```
 

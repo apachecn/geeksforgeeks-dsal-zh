@@ -1,5 +1,7 @@
 # 根据给定的条件从给定的字符串 P 和 Q 生成一个字符串
 
+> 原文：[https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/](https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/)
+
 给定两个字符串 **P** 和 **Q，**，任务是生成满足以下条件的字符串 **S** ：
 
 *   找到 **S** ，以便重新排列 **P** ，并且 **Q** 是其中的子串。
@@ -191,11 +193,21 @@ class GFG {
 ```py
 
 # Python3 program to implement
+
+> 原文：[https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/](https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/)
 # the above approach
 
+> 原文：[https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/](https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/)
+
 # Function to generate a string S 
+
+> 原文：[https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/](https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/)
 # from string P and Q according to 
+
+> 原文：[https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/](https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/)
 # the given conditions
+
+> 原文：[https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/](https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/)
 def manipulateStrings(P, Q):
 
     # Stores the frequencies
@@ -232,6 +244,8 @@ def manipulateStrings(P, Q):
     print(sb)
 
 # Driver Code 
+
+> 原文：[https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/](https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/)
 if __name__=="__main__":
 
     P = "geeksforgeeksfor";
@@ -241,6 +255,8 @@ if __name__=="__main__":
     manipulateStrings(P, Q);
 
 # This code is contributed by rutvik_56
+
+> 原文：[https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/](https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/)
 
 ```
 

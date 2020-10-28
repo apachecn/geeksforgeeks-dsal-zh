@@ -1,5 +1,7 @@
 # 具有不同元素的子阵列
 
+> 原文：[https://www.geeksforgeeks.org/subarrays-distinct-elements/](https://www.geeksforgeeks.org/subarrays-distinct-elements/)
+
 给定一个数组，任务是计算所有元素都不同的连续子数组的长度之和。
 
 **示例**：
@@ -150,10 +152,18 @@ class geeks
 ```
 
 # Python 3 program to calculate sum of  
+
+> 原文：[https://www.geeksforgeeks.org/subarrays-distinct-elements/](https://www.geeksforgeeks.org/subarrays-distinct-elements/)
 # lengths of subarrays of distinct elements. 
 
+> 原文：[https://www.geeksforgeeks.org/subarrays-distinct-elements/](https://www.geeksforgeeks.org/subarrays-distinct-elements/)
+
 # Returns sum of lengths of all subarrays  
+
+> 原文：[https://www.geeksforgeeks.org/subarrays-distinct-elements/](https://www.geeksforgeeks.org/subarrays-distinct-elements/)
 # with distinct elements. 
+
+> 原文：[https://www.geeksforgeeks.org/subarrays-distinct-elements/](https://www.geeksforgeeks.org/subarrays-distinct-elements/)
 def sumoflength(arr, n): 
 
     # For maintaining distinct elements. 
@@ -183,6 +193,8 @@ def sumoflength(arr, n):
     return ans 
 
 # Driven Code 
+
+> 原文：[https://www.geeksforgeeks.org/subarrays-distinct-elements/](https://www.geeksforgeeks.org/subarrays-distinct-elements/)
 if __name__=="__main__": 
 
     arr = [1, 2, 3, 4] 
@@ -190,6 +202,8 @@ if __name__=="__main__":
     print(sumoflength(arr, n)) 
 
 # This code is contributed by ita_c 
+
+> 原文：[https://www.geeksforgeeks.org/subarrays-distinct-elements/](https://www.geeksforgeeks.org/subarrays-distinct-elements/)
 
 ```c
 

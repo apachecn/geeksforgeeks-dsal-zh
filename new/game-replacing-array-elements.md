@@ -1,5 +1,7 @@
 # 替换数组元素的游戏
 
+> 原文：[https://www.geeksforgeeks.org/game-replacing-array-elements/](https://www.geeksforgeeks.org/game-replacing-array-elements/)
+
 有两个玩家 A 和 B 对玩数字游戏感兴趣。 玩家在每一步中选择两个不同的数字，例如 *a1* 和 *a2* ，然后将所有 *a2* 替换为 *a1* 或 *a1* 来自 *a2* 。 如果他们中的任何一个无法选择两个数字，而他们又无法选择一个数组中的两个不同的数字，则他们停止游戏。 第一玩家总是先移动，然后再移动。 任务是找到哪个玩家获胜。
 
 例子：
@@ -113,7 +115,11 @@ public class GameOfReplacingArrayElements 
 
 # Python program for Game of Replacement  
 
+> 原文：[https://www.geeksforgeeks.org/game-replacing-array-elements/](https://www.geeksforgeeks.org/game-replacing-array-elements/)
+
 # Function return which player win the game  
+
+> 原文：[https://www.geeksforgeeks.org/game-replacing-array-elements/](https://www.geeksforgeeks.org/game-replacing-array-elements/)
 def playGame(arr, n): 
 
     # Create hash that will stores  
@@ -126,11 +132,15 @@ def playGame(arr, n):
     return 1 if len(s) % 2 == 0 else 2
 
 # Driver code 
+
+> 原文：[https://www.geeksforgeeks.org/game-replacing-array-elements/](https://www.geeksforgeeks.org/game-replacing-array-elements/)
 arr = [1, 1, 2, 2, 2, 2] 
 n = len(arr) 
 print("Player",playGame(arr, n),"Wins") 
 
 # This code is contributed by Shrikant13 
+
+> 原文：[https://www.geeksforgeeks.org/game-replacing-array-elements/](https://www.geeksforgeeks.org/game-replacing-array-elements/)
 
 ```
 

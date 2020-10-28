@@ -1,5 +1,7 @@
 # 要删除的最短子数组，以使所有 Array 元素唯一
 
+> 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
+
 给定包含 **N** 个元素的数组 **arr []** ，任务是从给定数组中删除最小可能长度的子数组，以使所有其余元素成对区分。 打印子数组的最小可能长度。
 
 **范例**：
@@ -269,13 +271,25 @@ public static void main (String[] args) 
 ```py
 
 # Python3 program to make array elements  
+
+> 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
 # pairwise distinct by removing at most  
+
+> 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
 # one subarray of minimum length  
+
+> 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
 from collections import defaultdict  
 
 # Function to check if elements of  
+
+> 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
 # Prefix and suffix of each sub array  
+
+> 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
 # of size K are pairwise distinct or not  
+
+> 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
 def check(a, n, k):  
 
     # Hash map to store frequencies of  
@@ -333,9 +347,17 @@ def check(a, n, k): 
     return False
 
 # Function for calculating minimum  
+
+> 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
 # length of the subarray, which on  
+
+> 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
 # removing make all elements pairwise  
+
+> 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
 # distinct  
+
+> 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
 def minlength(a, n):  
 
     # Possible range of length of subarray  
@@ -357,6 +379,8 @@ def minlength(a, n): 
     return ans  
 
 # Driver code  
+
+> 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
 if __name__ == "__main__":  
 
     a = [ 1, 2, 1, 2, 3 ]  
@@ -365,6 +389,8 @@ if __name__ == "__main__": 
     print(minlength(a, n))  
 
 # This code is contributed by chitranayal  
+
+> 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
 
 ```
 
