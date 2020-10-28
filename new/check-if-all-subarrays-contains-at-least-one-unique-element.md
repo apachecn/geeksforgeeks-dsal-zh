@@ -1,7 +1,5 @@
 # 检查所有子数组是否至少包含一个唯一元素
 
-> 原文：[https://www.geeksforgeeks.org/check-if-all-subarrays-contains-at-least-one-unique-element/](https://www.geeksforgeeks.org/check-if-all-subarrays-contains-at-least-one-unique-element/)
-
 给定一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个整数组成，任务是检查该数组的所有[个子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)是否至少具有一个 是否包含唯一元素。 如果发现是真的，则打印**“是”** 。 否则，打印**“否”** 。
 
 **示例**：

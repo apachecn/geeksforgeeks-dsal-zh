@@ -1,7 +1,5 @@
 # 删除给定元素后找到最大的
 
-> 原文：[https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/)
-
 给定一个整数数组，请在删除给定元素后找到最大的数字。 如果重复元素，请为包含要删除元素的数组中存在的元素的每个实例删除一个实例。
 
 **示例**：
@@ -165,19 +163,11 @@ public static void main(String[] args) 
 ```py
 
 # Python3 program to find the largest  
-
-> 原文：[https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/)
 # number from the array after n deletions 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/)
 import math as mt 
 
 # Returns maximum element from arr[0..m-1]  
-
-> 原文：[https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/)
 # after deleting elements from del[0..n-1] 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/)
 def findlargestAfterDel(arr, m, dell, n): 
 
     # Hash Map of the numbers 
@@ -215,8 +205,6 @@ def findlargestAfterDel(arr, m, dell, n):
     return largestElement 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/)
 array = [5, 12, 33, 4, 56, 12, 20] 
 m = len(array) 
 
@@ -226,11 +214,7 @@ n = len(dell)
 print(findlargestAfterDel(array, m, dell, n)) 
 
 # This code is contributed  
-
-> 原文：[https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/)
 # by mohit kumar 29 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/)
 
 ```
 

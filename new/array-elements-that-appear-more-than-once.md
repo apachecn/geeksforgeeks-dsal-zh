@@ -1,7 +1,5 @@
 # 出现多次的数组元素
 
-> 原文：[https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/](https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/)
-
 给定一个整数数组，请打印该数组中所有重复的元素（出现多次的元素）。 输出应包含根据其首次出现的元素。
 
 **示例**：
@@ -120,11 +118,7 @@ public class GFG {
 ```py
 
 # Python3 program to print 
-
-> 原文：[https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/](https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/)
 # all repeating elements 
-
-> 原文：[https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/](https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/)
 def printRepeating(arr, n): 
 
     # Store elements and  
@@ -150,19 +144,13 @@ def printRepeating(arr, n):
             mp[arr[i]] = 0
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/](https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/)
 arr = [12, 10, 9, 45,  
        2, 10, 10, 45]  
 n = len(arr) 
 printRepeating(arr, n) 
 
 # This code is contributed  
-
-> 原文：[https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/](https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/)
 # by Smita 
-
-> 原文：[https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/](https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/)
 
 ```
 

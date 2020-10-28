@@ -1,7 +1,5 @@
 # 字符串中以给定字符串开头和结尾的不同子字符串
 
-> 原文：[https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/](https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/)
-
 给定一个字符串 s 和其他两个字符串的开头和结尾，请找到该字符串中以给定的 begin 和 end 字符串开头和结尾的不同子字符串的数量。
 
 **示例**：
@@ -231,18 +229,10 @@ public static void main(String[] args)
 ```py
 
 # Python 3 program to find number of 
-
-> 原文：[https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/](https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/)
 # different sub stings 
 
-> 原文：[https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/](https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/)
-
 # function to return number of different  
-
-> 原文：[https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/](https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/)
 # sub-strings 
-
-> 原文：[https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/](https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/)
 def numberOfDifferentSubstrings(s, a, b): 
 
     # initially our answer is zero. 
@@ -313,8 +303,6 @@ def numberOfDifferentSubstrings(s, a, b):
     return ans 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/](https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/)
 if __name__ == "__main__": 
 
     s = "codecppforfood"
@@ -323,8 +311,6 @@ if __name__ == "__main__":
     print(numberOfDifferentSubstrings(s, begin, end)) 
 
 # This code is contributed by ita_c 
-
-> 原文：[https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/](https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/)
 
 ```c
 

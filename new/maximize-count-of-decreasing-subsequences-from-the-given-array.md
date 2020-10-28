@@ -1,7 +1,5 @@
 # 最大化来自给定数组
 
-> 原文：[https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/](https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/)
-
 的递减子序列数
 
 给定数组 **arr []** ，任务是重新排列数组以生成**最大递减子序列**，并打印的最大 尽可能多的子序列，以使每个数组元素可以是单个子序列的一部分，并且子序列的长度需要最大化。
@@ -149,15 +147,9 @@ public class Main {
 ```py
 
 # Python3 program to implement  
-
-> 原文：[https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/](https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/)
 # the above approach  
 
-> 原文：[https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/](https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/)
-
 # Function to count maximum subsequence  
-
-> 原文：[https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/](https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/)
 def Maximum_subsequence(A, N): 
 
     # Stores the frequency  
@@ -183,15 +175,11 @@ def Maximum_subsequence(A, N):
     print(max_freq);  
 
 # Driver Code  
-
-> 原文：[https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/](https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/)
 arr = [ 5, 2, 6, 5, 2, 4, 5, 2 ];  
 
 Maximum_subsequence(arr, len(arr));  
 
 # This code is contributed by grand_master 
-
-> 原文：[https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/](https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/)
 
 ```
 

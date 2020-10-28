@@ -1,7 +1,5 @@
 # 对 Q 个查询用 Fibonacci 数字总和的范围内的 K 可整除的计数
 
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
-
 给定包含 **Q** 个查询和整数 **K** 的数组 **arr [] []** ，其中每个查询由范围 **[L，R]** ，任务是找到给定范围内的整数，该整数的[数字总和](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/)是[斐波那契数](http://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)并且可以被 **K** 整除。
 
 **示例**：
@@ -266,27 +264,15 @@ public static void main(String[] args)
 ```py
 
 # Python 3 program to count the integers 
-
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 # in a range [L, R] such that 
-
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 # their digit sum is Fibonacci 
-
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 # and divisible by K 
-
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 maxSize = 100005
 isFib = [False]*(maxSize) 
 prefix = [0]*maxSize 
 
 # Function to return the 
-
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 # digit sum of a number 
-
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 def digitSum(num): 
     s = 0
     while (num != 0): 
@@ -296,11 +282,7 @@ def digitSum(num):
     return s 
 
 # Function to generate all the Fibonacci 
-
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 # numbers upto maxSize 
-
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 def generateFibonacci(): 
 
     global isFib 
@@ -323,11 +305,7 @@ def generateFibonacci():
         curr = temp 
 
 # Pre-Computation till maxSize 
-
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 # and for a given K 
-
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 def precompute(k): 
 
     generateFibonacci() 
@@ -349,8 +327,6 @@ def precompute(k):
         prefix[i] = prefix[i]+ prefix[i - 1] 
 
 # Function to perform the queries 
-
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 def performQueries(k, q,query): 
 
     # Precompute the results 
@@ -368,8 +344,6 @@ def performQueries(k, q,query):
         print(cnt) 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 if __name__ == "__main__": 
     query = [ [ 1, 11 ], 
             [ 5, 15 ], 
@@ -380,8 +354,6 @@ if __name__ == "__main__":
     performQueries(k, q, query) 
 
 # This code is contributed by chitranayal 
-
-> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 
 ```
 

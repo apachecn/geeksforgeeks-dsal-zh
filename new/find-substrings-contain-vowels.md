@@ -1,7 +1,5 @@
 # 查找包含所有元音
 
-> 原文：[https://www.geeksforgeeks.org/find-substrings-contain-vowels/](https://www.geeksforgeeks.org/find-substrings-contain-vowels/)
-
 的子字符串
 
 我们给了我们一个小写字母的字符串。 我们需要至少打印一次包含所有元音的子字符串，并且子字符串中不存在辅音（非元音字符）。
@@ -139,15 +137,9 @@ public class GFG {
 ```py
 
 # Python3 program to find all subthat 
-
-> 原文：[https://www.geeksforgeeks.org/find-substrings-contain-vowels/](https://www.geeksforgeeks.org/find-substrings-contain-vowels/)
 # contain all vowels 
 
-> 原文：[https://www.geeksforgeeks.org/find-substrings-contain-vowels/](https://www.geeksforgeeks.org/find-substrings-contain-vowels/)
-
 # Returns true if x is vowel. 
-
-> 原文：[https://www.geeksforgeeks.org/find-substrings-contain-vowels/](https://www.geeksforgeeks.org/find-substrings-contain-vowels/)
 def isVowel(x): 
 
     # Function to check whether a character is 
@@ -183,14 +175,10 @@ def FindSubstr1ing(str1):
                 print(str1[i:j + 1], end = " ") 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/find-substrings-contain-vowels/](https://www.geeksforgeeks.org/find-substrings-contain-vowels/)
 str1 = "aeoibsddaeiouudb"
 FindSubstr1ing(str1) 
 
 # This code is contributed by Mohit Kumar 
-
-> 原文：[https://www.geeksforgeeks.org/find-substrings-contain-vowels/](https://www.geeksforgeeks.org/find-substrings-contain-vowels/)
 
 ```
 
@@ -389,15 +377,9 @@ public class GFG {
 ```py
 
 # Python3 program to find all substring  
-
-> 原文：[https://www.geeksforgeeks.org/find-substrings-contain-vowels/](https://www.geeksforgeeks.org/find-substrings-contain-vowels/)
 # that contain all vowels 
 
-> 原文：[https://www.geeksforgeeks.org/find-substrings-contain-vowels/](https://www.geeksforgeeks.org/find-substrings-contain-vowels/)
-
 # Returns true if x is vowel. 
-
-> 原文：[https://www.geeksforgeeks.org/find-substrings-contain-vowels/](https://www.geeksforgeeks.org/find-substrings-contain-vowels/)
 def isVowel(x): 
 
     # Function to check whether  
@@ -407,8 +389,6 @@ def isVowel(x):
             x == 'u'); 
 
 # Function to FindSubstrings of string 
-
-> 原文：[https://www.geeksforgeeks.org/find-substrings-contain-vowels/](https://www.geeksforgeeks.org/find-substrings-contain-vowels/)
 def FindSubstring(str): 
 
     hash = set(); # To store vowels 
@@ -431,14 +411,10 @@ def FindSubstring(str):
             hash.clear(); 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/find-substrings-contain-vowels/](https://www.geeksforgeeks.org/find-substrings-contain-vowels/)
 str = "aeoibsddaeiouudb"; 
 FindSubstring(str); 
 
 # This code is contributed by 29AjayKumar 
-
-> 原文：[https://www.geeksforgeeks.org/find-substrings-contain-vowels/](https://www.geeksforgeeks.org/find-substrings-contain-vowels/)
 
 ```
 

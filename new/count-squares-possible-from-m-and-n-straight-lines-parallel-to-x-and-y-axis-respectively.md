@@ -1,7 +1,5 @@
 # 分别可以从平行于 X 和 Y 轴的 M 和 N 直线计算平方数
 
-> 原文：[https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/](https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/)
-
 给定两个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **X []** 和 **Y []** ，它们由 **N** 和 **M** 整数组成，使得存在 平行于 **y 轴**的 **N 条**线和平行于 **x 轴**的 **M** 条线。 任务是找到在坐标平面上由这些线形成的正方形总数。
 
 > 阵列 **X []** 中的每个整数（例如 **a** ）表示具有等式 **x = a** 的线，平行于 **y 轴**。
@@ -222,17 +220,9 @@ public static void main(String[] args)
 
 # Python3 program for the above approach
 
-> 原文：[https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/](https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/)
-
 # Function to count all the possible
-
-> 原文：[https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/](https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/)
 # squares with given lines parallel
-
-> 原文：[https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/](https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/)
 # to both the X and Y axis
-
-> 原文：[https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/](https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/)
 def numberOfSquares(X, Y, N, M):
 
     # Stores the count of all possible
@@ -279,8 +269,6 @@ def numberOfSquares(X, Y, N, M):
     return ans
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/](https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/)
 if __name__ == "__main__":
 
     # Given lines
@@ -295,8 +283,6 @@ if __name__ == "__main__":
     print(numberOfSquares(X, Y, N, M))
 
 # This code is contributed by akhilsaini
-
-> 原文：[https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/](https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/)
 
 ```
 

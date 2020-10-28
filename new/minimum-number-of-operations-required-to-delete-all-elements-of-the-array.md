@@ -1,7 +1,5 @@
 # 删除数组
 
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/](https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/)
-
 的所有元素所需的最小操作数
 
 给定一个整数数组 *arr* ，任务是打印删除该数组所有元素所需的最少操作数。
@@ -129,18 +127,12 @@ public static void main(String args[]) 
 ```
 
 # Python 3 implementation of  
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/](https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/)
 # the above approach 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/](https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/)
 MAX = 10000
 
 hashTable = [0] * MAX
 
 # function to find minimum operations 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/](https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/)
 def minOperations(arr, n): 
 
     # sort array 
@@ -161,8 +153,6 @@ def minOperations(arr, n):
     return res 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/](https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/)
 if __name__ == "__main__": 
     arr = [ 4, 6, 2, 8, 7, 21, 24, 49, 44 ] 
     n = len(arr) 
@@ -170,11 +160,7 @@ if __name__ == "__main__":
     print(minOperations(arr, n)) 
 
 # This code is contributed  
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/](https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/)
 # by ChitraNayal 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/](https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/)
 
 ```
 

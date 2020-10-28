@@ -1,7 +1,5 @@
 # 检查一次删除后所有字符的频率是否可以相同
 
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/](https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/)
-
 给定一个包含较低字母字符的字符串，我们需要从该字符串中删除最多一个字符，以使该字符串中每个不同字符的频率相同。
 
 **示例**：
@@ -213,28 +211,16 @@ public class GFG {
 ```
 
 # Python3 program to get same frequency character  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/](https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/)
 # string by removal of at most one char 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/](https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/)
 M = 26
 
 # Utility method to get index of character ch  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/](https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/)
 # in lower alphabet characters  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/](https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/)
 def getIdx(ch): 
     return (ord(ch) - ord('a')) 
 
 # Returns true if all non-zero elements  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/](https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/)
 # values are same  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/](https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/)
 def allSame(freq, N): 
 
     # get first non-zero element  
@@ -252,11 +238,7 @@ def allSame(freq, N):
     return True
 
 # Returns true if we can make all  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/](https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/)
 # character frequencies same  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/](https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/)
 def possibleSameCharFreqByOneRemoval(str1): 
     l = len(str1) 
 
@@ -287,8 +269,6 @@ def possibleSameCharFreqByOneRemoval(str1):
     return False
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/](https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/)
 if __name__ == "__main__": 
     str1 = "xyyzz"
     if(possibleSameCharFreqByOneRemoval(str1)): 
@@ -297,8 +277,6 @@ if __name__ == "__main__":
         print("No") 
 
 # This code is contributed by Sairahul099 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/](https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/)
 
 ```
 

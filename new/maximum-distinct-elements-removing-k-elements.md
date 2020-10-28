@@ -1,7 +1,5 @@
 # 移除 k 个元素后的最大不同元素
 
-> 原文：[https://www.geeksforgeeks.org/maximum-distinct-elements-removing-k-elements/](https://www.geeksforgeeks.org/maximum-distinct-elements-removing-k-elements/)
-
 给定包含 **n** 个元素的数组 **arr []** 。 问题是从数组中删除 **k** 个元素后，找到最大数量的非重复元素（非重复）。
 
 **注意**：1 < = k < = n。

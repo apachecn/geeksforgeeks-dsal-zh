@@ -1,7 +1,5 @@
 # 产品数量等于给定数量的三胞胎数量
 
-> 原文：[https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/](https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/)
-
 给定一组不同的整数（仅包含正数）和数字“ m”，请找出乘积等于“ m”的三元组数。
 
 **示例**：
@@ -102,15 +100,9 @@ class GFG {
 ```py
 
 # Python3 program to count 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/](https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/)
 # triplets with given product m
 
-> 原文：[https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/](https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/)
-
 # Method to count such triplets
-
-> 原文：[https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/](https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/)
 def countTriplets(arr, n, m):
 
     count = 0
@@ -125,8 +117,6 @@ def countTriplets(arr, n, m):
     return count
 
 # Driver code
-
-> 原文：[https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/](https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/)
 if __name__ == "__main__":
 
     arr = [1, 4, 6, 2, 3, 8]
@@ -135,8 +125,6 @@ if __name__ == "__main__":
                         len(arr), m))
 
 # This code is contributed by Chitranayal
-
-> 原文：[https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/](https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/)
 
 ```
 
@@ -366,11 +354,7 @@ class GFG {
 
 # Python3 program for the above approach
 
-> 原文：[https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/](https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/)
-
 # Function to find the triplet
-
-> 原文：[https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/](https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/)
 def countTriplets(li,product):
     flag = 0
     count = 0
@@ -404,14 +388,10 @@ def countTriplets(li,product):
     print(count)
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/](https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/)
 li = [  1, 4, 6, 2, 3, 8 ]
 product = 24
 
 # Function call
-
-> 原文：[https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/](https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/)
 countTriplets(li,product)
 
 ```

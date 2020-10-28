@@ -1,7 +1,5 @@
 # 对 Q 查询用 K 替换给定索引后，数组中最频繁的元素
 
-> 原文：[https://www.geeksforgeeks.org/most-frequent-element-in-array-after-replacing-given-index-by-k-for-q-queries/](https://www.geeksforgeeks.org/most-frequent-element-in-array-after-replacing-given-index-by-k-for-q-queries/)
-
 给定大小为 **N** 的数组 **arr []** ，并以 **{i，k}** 的形式查询 **Q** 在**用 k** 替换 arr [i]之后，将在阵列中打印**最频繁元素**。
 
 **范例**：

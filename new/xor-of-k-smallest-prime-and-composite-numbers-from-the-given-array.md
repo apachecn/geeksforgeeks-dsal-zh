@@ -1,7 +1,5 @@
 # 来自给定数组
 
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/)
-
 的 K 个最小素数和复合数的 XOR
 
 给定 **N** 个非零正整数的数组 **arr []** 和一个整数 **K** ，任务是找到 **K [XOR]。** 最大质数和复合数。
@@ -307,11 +305,7 @@ class GFG
 from math import sqrt 
 # Python 3 implementation of the approach 
 
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/)
-
 # Function for Sieve of Eratosthenes 
-
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/)
 def SieveOfEratosthenes(max_val): 
 
     # Create a boolean vector "prime[0..n]". A 
@@ -338,14 +332,8 @@ def SieveOfEratosthenes(max_val):
     return prime 
 
 # Function that calculates the xor 
-
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/)
 # of k smallest and k 
-
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/)
 # largest prime numbers in an array 
-
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/)
 def kMinXOR(arr, n, k): 
 
     # Find maximum value in the array 
@@ -417,8 +405,6 @@ def kMinXOR(arr, n, k):
     print("Composite XOR = ",nonPrimeXor) 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/)
 if __name__ == '__main__': 
     arr = [4, 2, 12, 13, 5, 19] 
     n = len(arr) 
@@ -427,8 +413,6 @@ if __name__ == '__main__':
     kMinXOR(arr, n, k); 
 
 # This code is contributed by Surendra_Gangwar 
-
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/)
 
 ```
 

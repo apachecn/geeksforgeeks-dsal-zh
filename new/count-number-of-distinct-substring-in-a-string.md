@@ -1,7 +1,5 @@
 # 字符串
 
-> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
-
 中不同子字符串的计数
 
 给定一个字符串，计算给定字符串的所有不同子字符串。
@@ -106,8 +104,6 @@ public class DistinctSubstring {
 
 # Python3 program to count all distinct substrings in a string 
 
-> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
-
 def distinctSubstring(str): 
     # Put all distinct substring in a HashSet 
     result = set() 
@@ -122,15 +118,11 @@ def distinctSubstring(str):
     return len(result); 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
 if __name__ == '__main__': 
     str = "aaaa"; 
     print(distinctSubstring(str)); 
 
 # This code has been contributed by 29AjayKumar 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
 
 ```
 
@@ -282,11 +274,7 @@ public class DistinctSubstring {
 ```py
 
 # Python3 program to count all distinct  
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
 # substrings in a string 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
 
 def distinctSubstring(str): 
 
@@ -304,8 +292,6 @@ def distinctSubstring(str):
     return result; 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
 if __name__ == '__main__': 
 
     str = "aaaa"; 
@@ -316,8 +302,6 @@ if __name__ == '__main__':
         print(s); 
 
 # This code is contributed by 29AjayKumar 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
 
 ```
 
@@ -489,14 +473,8 @@ public static void main(String[] args)
 
 # Python3 implementation of the approach 
 
-> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
-
 # Function to return the count of 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
 # valid sub-Strings 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
 def printSubStrings(s): 
 
     # To store distinct output subStrings 
@@ -519,15 +497,11 @@ def printSubStrings(s):
         print(str, end=" "); 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
 if __name__ == '__main__': 
     str = "aaabc"; 
     printSubStrings(str); 
 
 # This code is contributed by 29AjayKumar 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
 
 ```
 

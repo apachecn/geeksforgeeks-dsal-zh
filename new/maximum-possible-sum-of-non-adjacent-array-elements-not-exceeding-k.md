@@ -1,7 +1,5 @@
 # 不相邻的数组元素的最大可能总和，不超过 K
 
-> 原文：[https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/](https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/)
-
 给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个整数和一个整数 **K** 组成，任务是选择一些**非 最大可能和不超过 **K** 的相邻数组元素**。
 
 **示例**：
@@ -81,17 +79,9 @@ class GFG {
 
 # Python3 program for the above approach
 
-> 原文：[https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/](https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/)
-
 # Function to find the maximum sum
-
-> 原文：[https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/](https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/)
 # not exceeding K possible by selecting
-
-> 原文：[https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/](https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/)
 # a subset of non-adjacent elements
-
-> 原文：[https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/](https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/)
 def maxSum(a, n, k):
 
     # Base Case
@@ -111,8 +101,6 @@ def maxSum(a, n, k):
     return option
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/](https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/)
 if __name__ == '__main__':
 
     # Given array arr[]
@@ -127,8 +115,6 @@ if __name__ == '__main__':
     print(maxSum(arr, N, K))
 
 # This code is contributed by mohit kumar 29
-
-> 原文：[https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/](https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/)
 
 ```
 

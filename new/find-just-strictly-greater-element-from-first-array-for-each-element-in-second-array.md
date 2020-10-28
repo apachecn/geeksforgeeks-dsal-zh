@@ -1,7 +1,5 @@
 # 从第二个数组
 
-> 原文：[https://www.geeksforgeeks.org/find-just-strictly-greater-element-from-first-array-for-each-element-in-second-array/](https://www.geeksforgeeks.org/find-just-strictly-greater-element-from-first-array-for-each-element-in-second-array/)
-
 中的每个元素开始，从第一个数组中严格查找更大的元素
 
 给定两个包含 **N** 个元素的数组 **A []** 和 **B []** ，任务是为数组 **B []中的每个元素查找。** ，该元素严格大于数组 **A []** 中存在的元素。 如果不存在任何值，则打印“ null”。

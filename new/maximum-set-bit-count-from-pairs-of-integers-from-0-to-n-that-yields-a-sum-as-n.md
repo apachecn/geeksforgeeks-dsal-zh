@@ -1,7 +1,5 @@
 # 从 0 到 N 的整数对的最大设置位计数，其总和为 N
 
-> 原文：[https://www.geeksforgeeks.org/maximum-set-bit-count-from-pairs-of-integers-from-0-to-n-that-yields-a-sum-as-n/](https://www.geeksforgeeks.org/maximum-set-bit-count-from-pairs-of-integers-from-0-to-n-that-yields-a-sum-as-n/)
-
 给定**整数 N，**的任务是在从 **0 到 N** 的所有整数对中找到设置位的最大频率，该总和产生为 N。
 
 **示例**：

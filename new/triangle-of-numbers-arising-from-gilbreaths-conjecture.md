@@ -1,7 +1,5 @@
 # 吉尔布雷斯猜想产生的数字三角形
 
-> 原文：[https://www.geeksforgeeks.org/triangle-of-numbers-arising-from-gilbreaths-conjecture/](https://www.geeksforgeeks.org/triangle-of-numbers-arising-from-gilbreaths-conjecture/)
-
 我们的任务是找到由 [Gilbreath 猜想](https://en.wikipedia.org/wiki/Gilbreath%27s_conjecture)产生的数字三角形。
 
 **吉尔布雷斯的猜想**：

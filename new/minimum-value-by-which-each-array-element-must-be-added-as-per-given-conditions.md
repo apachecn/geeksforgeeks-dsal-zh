@@ -1,7 +1,5 @@
 # 根据给定条件必须添加每个 Array 元素的最小值
 
-> 原文：[https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/](https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/)
-
 给定 2 个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **A []** 和 **B []** 和一个整数 **M** 。 任务是找到 **X** 的最小值，以便将数组的所有元素更改为**（arr [i] + X）％M** 的所有元素频率 **A []** 与 **B []** 所有元素的频率相同。 如果找不到 **X** 的任何值，则打印**“ -1”** 。
 
 **范例**：
@@ -120,18 +118,10 @@ int main()
 ```py
 
 # Python3 program for  
-
-> 原文：[https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/](https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/)
 # the above approach 
 
-> 原文：[https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/](https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/)
-
 # Function to find  
-
-> 原文：[https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/](https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/)
 # minimum value of X 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/](https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/)
 def findX(n, m,  
           ar1, ar2): 
 
@@ -174,8 +164,6 @@ def findX(n, m, 
     return x 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/](https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/)
 if __name__ == "__main__": 
 
     # Given value of M 
@@ -190,8 +178,6 @@ if __name__ == "__main__":
     print (findX(N, M, ar1, ar2)) 
 
 # This code is contributed by Chitranayal
-
-> 原文：[https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/](https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/)
 
 ```
 

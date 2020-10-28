@@ -1,7 +1,5 @@
 # 给定数组对，在其中找到所有对称对
 
-> 原文：[https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/](https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/)
-
 如果 c 等于 b 且 a 等于 d，则认为两对（a，b）和（c，d）是对称的。 例如，（10，20）和（20，10）是对称的。 给定成对的数组，找到其中的所有对称对。
 
 可以假设所有对中的第一个元素都是不同的。
@@ -128,18 +126,10 @@ class SymmetricPairs {
 ```py
 
 # A Python3 program to find all symmetric  
-
-> 原文：[https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/](https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/)
 # pairs in a given array of pairs. 
 
-> 原文：[https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/](https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/)
-
 # Print all pairs that have 
-
-> 原文：[https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/](https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/)
 # a symmetric counterpart 
-
-> 原文：[https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/](https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/)
 def findSymPairs(arr, row): 
 
     # Creates an empty hashMap hM 
@@ -163,8 +153,6 @@ def findSymPairs(arr, row):
             hM[first] = sec 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/](https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/)
 if __name__ == '__main__': 
     arr = [[0 for i in range(2)]  
               for i in range(5)] 
@@ -176,8 +164,6 @@ if __name__ == '__main__':
     findSymPairs(arr, 5) 
 
 # This code is contributed by Mohit Kumar 
-
-> 原文：[https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/](https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/)
 
 ```
 

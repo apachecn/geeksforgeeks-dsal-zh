@@ -1,7 +1,5 @@
 # 对于具有重复元素的数组，要严格获得 LIS 所需的最小连接| 第 2 组
 
-> 原文：[https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/](https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/)
-
 给定大小为 n 的**数组 A []** ，其中数组中可以包含重复元素。 我们必须找到序列 A 所需的最小串联，才能严格得到最长增长子序列。 对于数组 A []，我们遵循基于 1 的索引。
 
 **范例**：
@@ -108,20 +106,10 @@ int main()
 ```py
 
 # Python 3 implementation to 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/](https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/)
 # Find the minimum concatenation 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/](https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/)
 # required to get strictly Longest 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/](https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/)
 # Increasing Subsequence for the
-
-> 原文：[https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/](https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/)
 # given array with repetitive elements
-
-> 原文：[https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/](https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/)
 from bisect import bisect_left
 
 def LIS(arr, n):
@@ -171,8 +159,6 @@ def LIS(arr, n):
     print(ans)
 
 # Driver code
-
-> 原文：[https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/](https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/)
 if __name__ == '__main__':
 
     arr =  [1, 3, 2, 1, 2]
@@ -180,8 +166,6 @@ if __name__ == '__main__':
     LIS(arr, n)
 
 # This code is contributed by bgangwar59
-
-> 原文：[https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/](https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/)
 
 ```
 

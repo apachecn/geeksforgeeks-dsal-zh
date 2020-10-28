@@ -1,7 +1,5 @@
 # 检查每个字符的频率是否等于其在英语字母
 
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/](https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/)
-
 中的位置
 
 给定小写字母的字符串 **str** ，任务是检查字符串中每个不同字符的频率是否等于其在英语字母表中的位置。 如果有效，则打印**“是”** ，否则打印**“否”** 。
@@ -155,11 +153,7 @@ public static void main(String[] args)
 ```py
 
 # Python3 program for the 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/](https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/)
 # above approach
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/](https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/)
 def checkValidString(str):
 
     # Initialise frequency array
@@ -187,11 +181,7 @@ def checkValidString(str):
 
 # Driver Code
 
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/](https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/)
-
 # Given string str 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/](https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/)
 str = "abbcccdddd"
 
 if(checkValidString(str)):
@@ -200,8 +190,6 @@ else:
     print("No")
 
 # This code is contributed by avanitrachhadiya2155
-
-> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/](https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/)
 
 ```
 

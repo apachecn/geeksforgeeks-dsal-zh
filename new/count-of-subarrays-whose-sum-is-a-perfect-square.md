@@ -1,7 +1,5 @@
 # 和为完美平方的子数组的数量
 
-> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/](https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/)
-
 给定具有正负元素的数组 **arr []** ，任务是对所有和为完美平方的子数组进行计数。
 
 **范例**：
@@ -256,16 +254,10 @@ public static void main(String[] args)
 ```py
 
 # Python3 code for the above approach.
-
-> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/](https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/)
 from collections import defaultdict
 
 # Function to find count of subarrays 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/](https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/)
 # whose sum is a perfect square.
-
-> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/](https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/)
 def countSubarrays(arr, n):
 
     # To search for index with 
@@ -324,20 +316,14 @@ def countSubarrays(arr, n):
     return countSubs
 
 # Driver code
-
-> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/](https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/)
 arr = [ 2, 3, -5, 6, -7, 4 ]
 n = len(arr)
 ans = countSubarrays(arr, n)
 
 # Printing the result
-
-> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/](https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/)
 print(ans)
 
 # This code is contributed by Shivam Singh
-
-> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/](https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/)
 
 ```
 

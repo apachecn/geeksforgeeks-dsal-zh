@@ -1,7 +1,5 @@
 # 对可以表示为至少两个连续数组元素之和的数组元素进行计数
 
-> 原文：[https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/](https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/)
-
 给定一个数组 **A []** ，该数组由 **[1，N]** 范围内的 **N** 个整数组成，任务是计算数组元素的数量（非 可以表示为两个或多个连续数组元素的总和。
 
 **示例**：
@@ -186,17 +184,9 @@ class GFG {
 
 # Python3 program for above approach 
 
-> 原文：[https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/](https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/)
-
 # Function to find the number of array 
-
-> 原文：[https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/](https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/)
 # elements that can be represented as the sum 
-
-> 原文：[https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/](https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/)
 # of two or more consecutive array elements 
-
-> 原文：[https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/](https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/)
 def countElements(a, n): 
 
     # Stores the frequencies 
@@ -232,8 +222,6 @@ def countElements(a, n):
     return ans 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/](https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/)
 if __name__ == '__main__': 
 
     # Given array 
@@ -243,8 +231,6 @@ if __name__ == '__main__':
     print(countElements(a, len(a))) 
 
 # This code is contributed by mohit kumar 29 
-
-> 原文：[https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/](https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/)
 
 ```
 

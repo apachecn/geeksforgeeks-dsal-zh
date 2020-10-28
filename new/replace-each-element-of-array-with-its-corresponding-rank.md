@@ -1,7 +1,5 @@
 # 将 Array 的每个元素替换为其相应的等级
 
-> 原文：[https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/](https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/)
-
 给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是用数组中的[等级替换 Array 的每个元素。](https://www.geeksforgeeks.org/rank-elements-array/)
 
 > 元素的**等级定义为当数组以升序排列时，元素与数组的第一个元素之间的距离。 如果数组中两个或两个以上相同，则它们的排名也将与元素首次出现的排名相同。
@@ -197,14 +195,8 @@ class GFG { 
 
 # Python3 program for the above approach  
 
-> 原文：[https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/](https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/)
-
 # Function to assign rank to  
-
-> 原文：[https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/](https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/)
 # array eleements  
-
-> 原文：[https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/](https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/)
 def changeArr(input1):  
 
     # Copy input array into newArray  
@@ -233,8 +225,6 @@ def changeArr(input1): 
         input1[index] = ranks[input1[index]]  
 
 # Driver Code  
-
-> 原文：[https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/](https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/)
 if __name__ == "__main__":  
 
     # Given array arr[]  
@@ -247,8 +237,6 @@ if __name__ == "__main__": 
     print(arr)  
 
 # This code is contributed by chitranayal  
-
-> 原文：[https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/](https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/)
 
 ```
 

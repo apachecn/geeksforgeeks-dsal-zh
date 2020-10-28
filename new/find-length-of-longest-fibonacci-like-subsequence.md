@@ -1,7 +1,5 @@
 # 查找最长斐波那契式子序列
 
-> 原文：[https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/](https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/)
-
 的长度
 
 给定**严格增加的**数组 **A** 的正整数，其中，
@@ -142,18 +140,10 @@ public class GFG {
 ```py
 
 # Python3 implementation of the 
-
-> 原文：[https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/](https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/)
 # above approach 
 
-> 原文：[https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/](https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/)
-
 # Function to return the max Length 
-
-> 原文：[https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/](https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/)
 # of Fibonacci subsequence 
-
-> 原文：[https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/](https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/)
 def LongestFibSubseq(A, n): 
 
     # Store all array elements in 
@@ -182,8 +172,6 @@ def LongestFibSubseq(A, n):
     return maxLen if maxLen >= 3 else 0
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/](https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/)
 if __name__ == "__main__":
 
     A = [1, 2, 3, 4, 5, 6, 7, 8] 
@@ -191,11 +179,7 @@ if __name__ == "__main__":
     print(LongestFibSubseq(A, n)) 
 
 # This code is contributed 
-
-> 原文：[https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/](https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/)
 # by Rituraj Jain
-
-> 原文：[https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/](https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/)
 
 ```
 

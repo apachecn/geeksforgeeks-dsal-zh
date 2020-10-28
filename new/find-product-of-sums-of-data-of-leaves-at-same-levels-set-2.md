@@ -1,7 +1,5 @@
 # 查找相同级别的叶子数据总和的乘积| 设置 2
 
-> 原文：[https://www.geeksforgeeks.org/find-product-of-sums-of-data-of-leaves-at-same-levels-set-2/](https://www.geeksforgeeks.org/find-product-of-sums-of-data-of-leaves-at-same-levels-set-2/)
-
 给定二叉树，为其返回以下值。
 
 *   对于每个级别，如果此级别上有叶子，则计算所有叶子的总和。 否则忽略它。

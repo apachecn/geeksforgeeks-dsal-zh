@@ -1,7 +1,5 @@
 # 给定二叉树
 
-> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/)
-
 右侧视图中的节点总数
 
 给定一个二叉树，任务是找到在右视图中可见的节点的总和。 二叉树的右视图是从右侧查看树时可见的节点集。
@@ -178,11 +176,7 @@ class BinaryTree {
 
 # Python3 implementation of the approach 
 
-> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/)
-
 # A binary tree node  
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/)
 class Node:  
 
     # Constructor to create a new node  
@@ -192,11 +186,7 @@ class Node: 
         self.right = None
 
 # Recursive function to find the sum of nodes  
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/)
 # of the right view of the given binary tree 
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/)
 def sumRightViewUtil(root, level, max_level, sum):  
 
     # Base Case  
@@ -213,8 +203,6 @@ def sumRightViewUtil(root, level, max_level, sum): 
     sumRightViewUtil(root.left, level + 1, max_level, sum)  
 
 # A wrapper over sumRightViewUtil()  
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/)
 def sumRightView(root):  
     max_level = [0]  
     sum =[0] 
@@ -222,8 +210,6 @@ def sumRightView(root): 
     print(sum[0]) 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/)
 root = Node(12)  
 root.left = Node(10)  
 root.right = Node(30)  

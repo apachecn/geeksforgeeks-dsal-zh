@@ -1,7 +1,5 @@
 # Java 程序的输出| 第 55 集（Java 集合框架）
 
-> 原文：[https://www.geeksforgeeks.org/output-of-java-programs-set-55-java-collections-framework/](https://www.geeksforgeeks.org/output-of-java-programs-set-55-java-collections-framework/)
-
 **先决条件**：[Java Collection Framework](https://www.geeksforgeeks.org/java-collection-tutorial/) 。
 
 > **1.以下 Java 程序的输出是什么？**

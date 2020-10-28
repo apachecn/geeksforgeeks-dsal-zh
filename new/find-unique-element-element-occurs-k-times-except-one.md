@@ -1,7 +1,5 @@
 # 数组中的唯一元素，其中除一个
 
-> 原文：[https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/](https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/)
-
 以外，所有元素均出现 k 次
 
 给定一个包含所有元素出现 k 次的数组，但是一个数组仅出现一次。 找到那个独特的元素。
@@ -141,11 +139,7 @@ public static void main(String[] args) 
 ```py
 
 # Python 3 program to find unique element where 
-
-> 原文：[https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/](https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/)
 # every element appears k times except one 
-
-> 原文：[https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/](https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/)
 import sys 
 
 def findUnique(a, n, k): 
@@ -175,8 +169,6 @@ def findUnique(a, n, k):
     return res 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/](https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/)
 if __name__ == '__main__': 
     a = [6, 2, 5, 2, 2, 6, 6] 
     n = len(a) 
@@ -184,11 +176,7 @@ if __name__ == '__main__':
     print(findUnique(a, n, k)); 
 
 # This code is contributed by 
-
-> 原文：[https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/](https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/)
 # Surendra_Gangwar 
-
-> 原文：[https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/](https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/)
 
 ```
 

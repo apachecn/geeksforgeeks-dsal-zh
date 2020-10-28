@@ -1,7 +1,5 @@
 # 计数为 1s 的最长子数组比计数为 0s 的子数组多
 
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/](https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/)
-
 给定大小为 **n** 的数组，仅包含 0 和 1。 问题是要找到最长的子数组的长度，其计数为 1 的数字要大于 0 的数字。
 
 **示例**：
@@ -171,24 +169,12 @@ public static void main(String[] args)
 ```py
 
 # Python 3 implementation to find the length of 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/](https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/)
 # longest subarray having count of 1's one 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/](https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/)
 # more than count of 0's 
 
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/](https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/)
-
 # function to find the length of longest 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/](https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/)
 # subarray having count of 1's one more 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/](https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/)
 # than count of 0's 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/](https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/)
 def lenOfLongSubarr(arr, n): 
 
     # unordered_map 'um' implemented as 
@@ -226,19 +212,13 @@ def lenOfLongSubarr(arr, n):
     return maxLen 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/](https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/)
 if __name__ == '__main__': 
     arr = [0, 1, 1, 0, 0, 1] 
     n = len(arr) 
     print("Length =",lenOfLongSubarr(arr, n)) 
 
 # This code is contributed by 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/](https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/)
 # Surendra_Gangwar 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/](https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/)
 
 ```
 

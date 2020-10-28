@@ -1,7 +1,5 @@
 # 在不改变元音和辅音相对位置的情况下排列单词
 
-> 原文：[https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/](https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/)
-
 给定长度小于 10 的单词，任务是找到许多可以在不改变元音和辅音相对位置的情况下进行排列的方式。
 
 **示例**：
@@ -204,18 +202,10 @@ class GFG
 ```py
 
 # Python3 program for Arrangement of words 
-
-> 原文：[https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/](https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/)
 # without changing the relative position of  
-
-> 原文：[https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/](https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/)
 # vowel and consonants  
 
-> 原文：[https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/](https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/)
-
 # this function return n! 
-
-> 原文：[https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/](https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/)
 def factorial(n): 
     res = 1
     for i in range(1, n + 1): 
@@ -223,8 +213,6 @@ def factorial(n):
     return res 
 
 # this will return total number of ways  
-
-> 原文：[https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/](https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/)
 def count(word): 
 
     # freq maintains frequency 
@@ -266,28 +254,16 @@ def count(word):
 
 # Driver code 
 
-> 原文：[https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/](https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/)
-
 # string contains only 
-
-> 原文：[https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/](https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/)
 # capital letters 
-
-> 原文：[https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/](https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/)
 word = "COMPUTER"
 
 # this will contain ans 
-
-> 原文：[https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/](https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/)
 ans = count(word) 
 print(ans) 
 
 # This code is contributed  
-
-> 原文：[https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/](https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/)
 # by sahilshelangia 
-
-> 原文：[https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/](https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/)
 
 ```
 

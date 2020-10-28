@@ -1,7 +1,5 @@
 # 查找等于至少大小为 2 的任何子数组之和的数组元素
 
-> 原文：[https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/](https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/)
-
 给定一个数组 **arr []** ，任务是从该数组中查找等于大小大于 1 的任何子数组之和的元素。
 
 **示例**：
@@ -151,18 +149,10 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation to find array 
-
-> 原文：[https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/](https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/)
 # elements equal to the sum of any
-
-> 原文：[https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/](https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/)
 # subarray of at least size 2 
 
-> 原文：[https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/](https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/)
-
 # Function to find all elements 
-
-> 原文：[https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/](https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/)
 def findElements(arr, n): 
 
     if (n == 1):
@@ -196,8 +186,6 @@ def findElements(arr, n):
     print()
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/](https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/)
 if __name__ == "__main__": 
 
     arr1 = [ 1, 2, 3, 4, 5, 6 ]; 
@@ -206,8 +194,6 @@ if __name__ == "__main__":
     findElements(arr1, n1); 
 
 # This code is contributed by AnkitRai01
-
-> 原文：[https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/](https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/)
 
 ```
 

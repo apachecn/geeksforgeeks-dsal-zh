@@ -1,7 +1,5 @@
 # 在给定的句子中查找字谜最多的单词
 
-> 原文：[https://www.geeksforgeeks.org/find-the-word-with-most-anagrams-in-a-given-sentence/](https://www.geeksforgeeks.org/find-the-word-with-most-anagrams-in-a-given-sentence/)
-
 给定句子形式的字符串 **S** ，任务是从文本中查找具有 [**字谜**](https://www.geeksforgeeks.org/tag/anagram/) 出现在给定句子中。
 
 **例如**：[

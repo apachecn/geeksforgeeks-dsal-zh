@@ -1,7 +1,5 @@
 # 查找与给定数字 N 有不同数字的下一个数字
 
-> 原文：[https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/](https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/)
-
 给定自然数 **N** ，任务是查找与给定数字具有不同数字的下一个数字。
 
 **示例**：
@@ -318,18 +316,10 @@ class GFG{
 ```
 
 # Python 3 implementation to find 
-
-> 原文：[https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/](https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/)
 # the next distinct digits number 
 
-> 原文：[https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/](https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/)
-
 # Function to find the 
-
-> 原文：[https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/](https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/)
 # next distinct digits number 
-
-> 原文：[https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/](https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/)
 def findNextNumber(n): 
     h = [0 for i in range(10)] 
     i = 0
@@ -393,15 +383,11 @@ def findNextNumber(n):
         print("Not Possible") 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/](https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/)
 if __name__ == '__main__': 
     n = 2019
     findNextNumber(n) 
 
 # This code is contributed by Surendra_Gangwar 
-
-> 原文：[https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/](https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/)
 
 ```
 

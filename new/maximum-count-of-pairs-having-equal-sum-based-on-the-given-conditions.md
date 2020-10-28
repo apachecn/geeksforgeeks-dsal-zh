@@ -1,7 +1,5 @@
 # 基于给定条件的具有相等总和的对的最大计数
 
-> 原文：[https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/](https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/)
-
 给定长度为 **N** 的数组 **arr []** 包含范围为 **[1，N]** 的数组元素，任务是查找具有 假设数组中的任何元素只能是单个对的一部分，则**等于**之和。
 
 **示例**：
@@ -210,18 +208,10 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement
-
-> 原文：[https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/](https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/)
 # the above approach
 
-> 原文：[https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/](https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/)
-
 # Function to find the maximum count
-
-> 原文：[https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/](https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/)
 # of pairs having equal sum
-
-> 原文：[https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/](https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/)
 
 def maxCount(freq, maxi, mini):
 
@@ -261,11 +251,7 @@ def maxCount(freq, maxi, mini):
     return ans
 
 # Function to return the
-
-> 原文：[https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/](https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/)
 # count of pairs
-
-> 原文：[https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/](https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/)
 
 def countofPairs(a):
 
@@ -288,8 +274,6 @@ def countofPairs(a):
     return maxCount(freq, maxi, mini)
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/](https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/)
 if __name__ == "__main__":
 
     a = [1, 2, 4, 3, 3, 5, 6]
@@ -297,8 +281,6 @@ if __name__ == "__main__":
     print(countofPairs(a))
 
 # This code is contributed by chitranayal
-
-> 原文：[https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/](https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/)
 
 ```
 

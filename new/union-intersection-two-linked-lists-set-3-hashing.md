@@ -1,7 +1,5 @@
 # 两个链表的并集和相交| 第 3 组（哈希）
 
-> 原文：[https://www.geeksforgeeks.org/union-intersection-two-linked-lists-set-3-hashing/](https://www.geeksforgeeks.org/union-intersection-two-linked-lists-set-3-hashing/)
-
 给定两个链接列表，创建包含给定列表中元素的并集和交集的并集和交集列表。 输出列表中元素的顺序无关紧要。
 
 **示例**：

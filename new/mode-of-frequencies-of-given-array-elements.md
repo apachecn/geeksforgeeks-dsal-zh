@@ -1,7 +1,5 @@
 # 给定数组元素的频率模式
 
-> 原文：[https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/](https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/)
-
 给定数组 **arr []** ，任务是找到给定数组的元素的[频率的](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)[模式](https://www.geeksforgeeks.org/mode/)。
 
 **示例**：
@@ -188,20 +186,12 @@ public static void main(String[] args)
 ```py
 
 # Python3 program of the 
-
-> 原文：[https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/](https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/)
 # above approach 
-
-> 原文：[https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/](https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/)
 from collections import defaultdict 
 import sys 
 
 # Function to find the mode of the 
-
-> 原文：[https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/](https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/)
 # frequency of the array 
-
-> 原文：[https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/](https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/)
 def countFreq(arr, n): 
 
   # Stores the frequencies 
@@ -241,8 +231,6 @@ def countFreq(arr, n):
           return 0
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/](https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/)
 if __name__ == "__main__": 
 
   arr = [6, 10, 3, 10, 
@@ -251,8 +239,6 @@ if __name__ == "__main__":
   print (countFreq(arr, n)) 
 
 # This code is contributed by Chitranayal
-
-> 原文：[https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/](https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/)
 
 ```
 

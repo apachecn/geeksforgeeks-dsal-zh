@@ -1,7 +1,5 @@
 # 最长和可被 k 整除的子数组
 
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/](https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/)
-
 给定 **arr []** ，它包含 **n 个**整数和一个正整数 **k** 。 问题是找到最长子数组的长度，其中元素的总和可被给定值 **k** 整除。
 
 **范例**：
@@ -188,18 +186,10 @@ class GfG {
 ```py
 
 # Python3 implementation to find the  
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/](https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/)
 # longest subarray with sum divisible by k 
 
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/](https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/)
-
 # Function to find the longest 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/](https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/)
 # subarray with sum divisible by k 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/](https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/)
 def longSubarrWthSumDivByK(arr, n, k): 
 
     # unodered map 'um' implemented  
@@ -246,8 +236,6 @@ def longSubarrWthSumDivByK(arr, n, k):
     return max    
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/](https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/)
 if __name__ == '__main__': 
 
     arr = [ 2, 7, 6, 1, 4, 5 ] 
@@ -258,11 +246,7 @@ if __name__ == '__main__':
            longSubarrWthSumDivByK(arr, n, k)) 
 
 # This code is contributed by 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/](https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/)
 # Surendra_Gangwar 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/](https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/)
 
 ```
 

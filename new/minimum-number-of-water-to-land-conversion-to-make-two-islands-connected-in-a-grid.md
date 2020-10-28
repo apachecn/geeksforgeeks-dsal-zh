@@ -1,7 +1,5 @@
 # 在一个网格中连接两个岛的最少水土转换数量
 
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-water-to-land-conversion-to-make-two-islands-connected-in-a-grid/](https://www.geeksforgeeks.org/minimum-number-of-water-to-land-conversion-to-make-two-islands-connected-in-a-grid/)
-
 给定 2D 网格**'W'**和**'L'**的 **arr [] []** ，其中**'W'**表示水，**'L'**表示土地，任务是找到必须更改为土地成分**'L'**的最小水分量**'W'**，以便有两个岛屿 连接。
 
 > **岛**是已连接的**'L'**的集合。

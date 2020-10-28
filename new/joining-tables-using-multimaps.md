@@ -1,7 +1,5 @@
 # 使用 MultiMaps 联接表
 
-> 原文：[https://www.geeksforgeeks.org/joining-tables-using-multimaps/](https://www.geeksforgeeks.org/joining-tables-using-multimaps/)
-
 可以使用嵌套的[循环](https://www.geeksforgeeks.org/loops-in-c-and-cpp/)将两个不同的表连接到它们的匹配列上，但是更有效和可扩展的方法是使用[多图](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/)。 我们的想法是从我们要联接到包含它的所有行的每个列值中映射 [](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) ，以从两个表中的一个表生成一个多图。
 
 生成的多图必须基于哈希。 [散列](http://www.geeksforgeeks.org/hashing-data-structure/)本质上是一种将大元素转换为代表相同元素的小元素的技术。 因此，为较小的表生成多图，从而减少其生成时间和内存大小。
@@ -136,16 +134,10 @@ int main(int argc, char const* argv[])
 ```py
 
 # Python program for hashjoin on two tables 
-
-> 原文：[https://www.geeksforgeeks.org/joining-tables-using-multimaps/](https://www.geeksforgeeks.org/joining-tables-using-multimaps/)
 from collections import defaultdict 
 
 # Function that perform join operation 
-
-> 原文：[https://www.geeksforgeeks.org/joining-tables-using-multimaps/](https://www.geeksforgeeks.org/joining-tables-using-multimaps/)
 # on the two tables 
-
-> 原文：[https://www.geeksforgeeks.org/joining-tables-using-multimaps/](https://www.geeksforgeeks.org/joining-tables-using-multimaps/)
 def hashJoin(table1, index1, table2, index2): 
 
     h = defaultdict(list) 
@@ -159,11 +151,7 @@ def hashJoin(table1, index1, table2, index2):
 
 # Driver Code 
 
-> 原文：[https://www.geeksforgeeks.org/joining-tables-using-multimaps/](https://www.geeksforgeeks.org/joining-tables-using-multimaps/)
-
 # Given two tables 
-
-> 原文：[https://www.geeksforgeeks.org/joining-tables-using-multimaps/](https://www.geeksforgeeks.org/joining-tables-using-multimaps/)
 table1 = [("32", "Rahul"), 
            ("25", "Anshul"), 
            ("17", "Lok"), 
@@ -177,8 +165,6 @@ table2 = [("Rahul", "Tim"),
           ("Lok", "Vamsi")] 
 
 # Print the resultant table 
-
-> 原文：[https://www.geeksforgeeks.org/joining-tables-using-multimaps/](https://www.geeksforgeeks.org/joining-tables-using-multimaps/)
 for row in hashJoin(table1, 1, table2, 0): 
     print(row) 
 

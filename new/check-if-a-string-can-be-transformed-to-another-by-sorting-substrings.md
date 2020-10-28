@@ -1,7 +1,5 @@
 # 检查是否可以通过对子字符串进行排序将字符串转换为另一个字符串
 
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/](https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/)
-
 给定两个字符串 **str1** 和 **str2，**，每个字符串的长度 **N** ，并且仅由小写英文字母组成，任务是检查字符串 **str1** 通过多次执行以下操作，可以将]转换为字符串 **str2** 。
 
 *   在 **str1** 和[中选择一个非空的子字符串，按字典顺序](https://www.geeksforgeeks.org/sort-string-characters/)就地排序，以不降序排列子字符串的字符。
@@ -200,18 +198,10 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/](https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/)
 # the above approach
 
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/](https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/)
-
 # Function to check if str1 can be
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/](https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/)
 # transformed to t by sorting substrings
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/](https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/)
 def canTransform(s, t):
 
     n = len(s)
@@ -261,8 +251,6 @@ def canTransform(s, t):
         print("No")
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/](https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/)
 if __name__ == '__main__':
 
     s = "hdecb"
@@ -271,8 +259,6 @@ if __name__ == '__main__':
     canTransform(s, t)
 
 # This code is contributed by mohit kumar 29
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/](https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 查找与字典中特定模式匹配的所有字符串
 
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
-
 给定单词词典，找到与给定模式匹配的所有字符串，其中模式中的每个字符都唯一映射到词典中的字符。
 
 **示例**：
@@ -280,30 +278,14 @@ class GFG {
 ```py
 
 # Python3 program to print all the 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 # strings that match the 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 # given pattern where every 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 # character in the pattern is 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 # uniquely mapped to a character 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 # in the dictionary 
 
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
-
 # Function to encode 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 # given string
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 def encodeString(Str):
 
     map = {}
@@ -328,23 +310,11 @@ def encodeString(Str):
     return res
 
 # Function to print all 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 # the strings that match the 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 # given pattern where every 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 # character in the pattern is 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 # uniquely mapped to a character 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 # in the dictionary 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 def findMatchedWords(dict, pattern):
 
     # len is length of the 
@@ -368,15 +338,11 @@ def findMatchedWords(dict, pattern):
             print(word, end = " ")
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 dict = ["abb", "abc","xyz", "xyy" ]
 pattern = "foo"
 findMatchedWords(dict, pattern)
 
 # This code is contributed by avanitrachhadiya2155
-
-> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
 
 ```
 

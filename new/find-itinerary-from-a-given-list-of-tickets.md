@@ -1,7 +1,5 @@
 # 从给定的门票清单中查找行程
 
-> 原文：[https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/](https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/)
-
 给定票证列表，请使用给定列表按顺序查找行程。
 
 例：

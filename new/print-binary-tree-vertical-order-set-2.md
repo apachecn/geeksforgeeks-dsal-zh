@@ -1,7 +1,5 @@
 # 以垂直顺序打印二叉树| 设置 2（基于地图的方法）
 
-> 原文：[https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
-
 给定一棵二叉树，垂直打印。 以下示例说明了垂直顺序遍历。
 
 ```
@@ -218,15 +216,9 @@ public class VerticalOrderBtree
 ```
 
 # Python program for printing vertical order of a given
-
-> 原文：[https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
 # binary tree
 
-> 原文：[https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
-
 # A binary tree node
-
-> 原文：[https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
 class Node:
     # Constructor to create a new node
     def __init__(self, key):
@@ -235,14 +227,8 @@ class Node:
         self.right = None
 
 # Utility function to store vertical order in map 'm' 
-
-> 原文：[https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
 # 'hd' is horizontal distance of current node from root
-
-> 原文：[https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
 # 'hd' is initially passed as 0
-
-> 原文：[https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
 def getVerticalOrder(root, hd, m):
 
     # Base Case
@@ -262,8 +248,6 @@ def getVerticalOrder(root, hd, m):
     getVerticalOrder(root.right, hd+1, m)
 
 # The main function to print vertical order of a binary
-
-> 原文：[https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
 #tree ith given root
 def printVerticalOrder(root):
 
@@ -281,8 +265,6 @@ def printVerticalOrder(root):
         print
 
 # Driver program to test above function
-
-> 原文：[https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
 root = Node(1)
 root.left = Node(2)
 root.right = Node(3)
@@ -296,8 +278,6 @@ print "Vertical order traversal is"
 printVerticalOrder(root)
 
 # This code is contributed by Nikhil Kumar Singh(nickzuck_007)
-
-> 原文：[https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
 
 ```
 

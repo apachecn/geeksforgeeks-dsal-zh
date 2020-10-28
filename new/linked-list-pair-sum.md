@@ -1,7 +1,5 @@
 # 链表对总和
 
-> 原文：[https://www.geeksforgeeks.org/linked-list-pair-sum/](https://www.geeksforgeeks.org/linked-list-pair-sum/)
-
 给定一个链表和一个数字，请检查它们是否存在两个数字之和等于给定数字的数字。 如果存在两个数字，请打印它们。 如果有多个答案，请打印其中的任何一个。
 
 **示例**：
@@ -205,27 +203,17 @@ public static void main(String[] args)
 ```py
 
 # Python3 program for finding the pair with given sum 
-
-> 原文：[https://www.geeksforgeeks.org/linked-list-pair-sum/](https://www.geeksforgeeks.org/linked-list-pair-sum/)
 import math 
 import sys 
 
 # Link list node # 
-
-> 原文：[https://www.geeksforgeeks.org/linked-list-pair-sum/](https://www.geeksforgeeks.org/linked-list-pair-sum/)
 class Node: 
     def __init__(self,data): 
         self.data=data 
         self.next=None
 # Given a reference (pointer to pointer) to the head  
-
-> 原文：[https://www.geeksforgeeks.org/linked-list-pair-sum/](https://www.geeksforgeeks.org/linked-list-pair-sum/)
 # of a list and an int, push a new node on the front  
-
-> 原文：[https://www.geeksforgeeks.org/linked-list-pair-sum/](https://www.geeksforgeeks.org/linked-list-pair-sum/)
 # of the list. 
-
-> 原文：[https://www.geeksforgeeks.org/linked-list-pair-sum/](https://www.geeksforgeeks.org/linked-list-pair-sum/)
 
 def push(head,data): 
     if head == None: 
@@ -242,8 +230,6 @@ def push(head,data):
     return head 
 
 # Takes head pointer of the linked list and sum 
-
-> 原文：[https://www.geeksforgeeks.org/linked-list-pair-sum/](https://www.geeksforgeeks.org/linked-list-pair-sum/)
 def check_pair_sum(head,_sum_): 
     p = head 
     q = None
@@ -258,8 +244,6 @@ def check_pair_sum(head,_sum_):
     return False
 
 # Driver program to test above function 
-
-> 原文：[https://www.geeksforgeeks.org/linked-list-pair-sum/](https://www.geeksforgeeks.org/linked-list-pair-sum/)
 if __name__=='__main__': 
 
     # Start with the empty list 
@@ -283,8 +267,6 @@ if __name__=='__main__':
         print("NO PAIR EXIST") 
 
 # This code is contributed by Vikash Kumar 37 
-
-> 原文：[https://www.geeksforgeeks.org/linked-list-pair-sum/](https://www.geeksforgeeks.org/linked-list-pair-sum/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 计算具有给定 XOR 的子数组的数量
 
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
-
 给定一个整数数组 arr []和一个数 m，将其元素具有 XOR 的子数组的数量计为 m。
 
 **示例**：[
@@ -141,18 +139,10 @@ public class GFG {
 ```py
 
 # A simple Python3 Program to count all subarrays having
-
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
 # XOR of elements as given value m
 
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
-
 # Simple function that returns count of subarrays
-
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
 # of arr with XOR value equals to m
-
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
 def subarrayXor(arr, n, m):
     ans = 0 # Initialize ans
 
@@ -173,8 +163,6 @@ def subarrayXor(arr, n, m):
     return ans
 
 # Driver program to test above function
-
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
 def main():
     arr = [ 4, 2, 2, 6, 4 ]
     n = len(arr)
@@ -495,21 +483,11 @@ class GFG
 ```py
 
 # Python3 Program to count all subarrays 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
 # having XOR of elements as given value m 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
 # with O(n) time complexity.
 
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
-
 # Returns count of subarrays of arr 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
 # with XOR value equals to m
-
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
 def subarrayXor(arr, n, m):
 
     ans = 0 # Initialize answer to be returned
@@ -557,8 +535,6 @@ def subarrayXor(arr, n, m):
     return ans
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
 arr = [4, 2, 2, 6, 4]
 n = len(arr)
 m = 6
@@ -567,8 +543,6 @@ print("Number of subarrays having given XOR is",
                         subarrayXor(arr, n, m))
 
 # This code is contributed by mohit kumar
-
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
 
 ```
 
@@ -680,8 +654,6 @@ def subarrayXor(arr, n, m):
     return(count)
 
 # Driver program to test above function 
-
-> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
 def main(): 
     arr = [ 5, 6, 7, 8, 9 ] 
     n = len(arr) 

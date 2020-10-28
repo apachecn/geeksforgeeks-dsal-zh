@@ -1,7 +1,5 @@
 # 所有子串的计数，权重总和最多为 K
 
-> 原文：[https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/](https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/)
-
 给定由小英文字母组成的字符串 S 和由英文字母所有字符的权重组成的字符串 W，其中所有 i 均为![0 \leq Qi \leq 9 ](img/1a0542546fd5c88cb155251f79c599b2.png "Rendered by QuickLaTeX.com")。 我们必须找到唯一的子字符串的总数，其权重之和最多为 K。
 
 **示例**：
@@ -182,15 +180,9 @@ public static void main(String args[])
 ```py
 
 # Python3 implementation to Count all 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/](https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/)
 # sub-strings with sum of weights at most K 
 
-> 原文：[https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/](https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/)
-
 # Function to count all substrings 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/](https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/)
 def distinctSubstring(P, Q, K, N): 
 
     # Hashmap to store substrings 
@@ -230,8 +222,6 @@ def distinctSubstring(P, Q, K, N):
     return len(S) 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/](https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/)
 if __name__ == '__main__': 
     # initialise string 
     S = "abcde"
@@ -246,8 +236,6 @@ if __name__ == '__main__':
     print(distinctSubstring(S, W, K, N)) 
 
 # This code is contributed by Surendra_Gangwar 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/](https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/)
 
 ```
 

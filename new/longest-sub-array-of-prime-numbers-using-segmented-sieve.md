@@ -1,7 +1,5 @@
 # 使用分段筛的最长质数子数组
 
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
-
 给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到最长的子数组，其中该子数组中的所有数字均为质数。
 
 **范例**：
@@ -188,24 +186,14 @@ int main()
 ```py
 
 # Python3 program to find longest subarray 
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 # of prime numbers 
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 import math
 
 # To store the prime numbers
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 allPrimes = set()
 
 # Function that find prime numbers 
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 # till limit 
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 def simpleSieve(limit, prime):
 
     mark = [False] * (limit + 1)
@@ -220,14 +208,8 @@ def simpleSieve(limit, prime):
                 mark[j] = True
 
 # Function that finds all prime 
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 # numbers in given range using 
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 # Segmented Sieve
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 def primesInRange(low, high):
 
     # Find the limit
@@ -276,11 +258,7 @@ def primesInRange(low, high):
             allPrimes.add(i)
 
 # Function that finds longest subarray 
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 # of prime numbers 
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 def maxPrimeSubarray(arr, n):
 
     current_max = 0
@@ -306,33 +284,21 @@ def maxPrimeSubarray(arr, n):
     return max_so_far
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 arr = [ 1, 2, 4, 3, 29, 11, 7, 8, 9 ]
 n = len(arr)
 
 # Find minimum and maximum element 
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 max_el = max(arr)
 min_el = min(arr)
 
 # Find prime in the range 
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 # [min_el, max_el] 
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 primesInRange(min_el, max_el)
 
 # Function call 
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 print(maxPrimeSubarray(arr, n))
 
 # This code is contributed by Shivam Singh
-
-> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 
 ```
 

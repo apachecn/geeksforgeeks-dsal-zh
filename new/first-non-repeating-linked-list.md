@@ -1,7 +1,5 @@
 # 链表中的第一个非重复
 
-> 原文：[https://www.geeksforgeeks.org/first-non-repeating-linked-list/](https://www.geeksforgeeks.org/first-non-repeating-linked-list/)
-
 给定一个链表，找到它的第一个非重复整数元素。
 
 例子：

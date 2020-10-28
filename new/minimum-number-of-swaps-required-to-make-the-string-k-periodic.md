@@ -1,7 +1,5 @@
 # 使字符串 K 变为周期性所需的最小交换次数
 
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/](https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/)
-
 给定长度为 **N** 的字符串 **S** 以及由小写字母组成的数组 **A** 。 还给出一个正整数 **K** 。 任务是找到使字符串 **S** **K** 成为周期性所需的最小交换次数（在 S 和 A 之间）。
 
 **注意**：
@@ -242,14 +240,8 @@ public static void main(String[] args)
 ```py
 
 # Python3 code to find the minimum 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/](https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/)
 # number of swaps required to 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/](https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/)
 # make the string K periodic 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/](https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/)
 def minFlip(s, n, k, a, p): 
 
     allowed = [0] * 26
@@ -308,8 +300,6 @@ def minFlip(s, n, k, a, p):
     print(ans) 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/](https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/)
 if __name__ == "__main__": 
 
     S = "nihsiakyt"
@@ -323,8 +313,6 @@ if __name__ == "__main__":
     minFlip(S, n, K, A, p) 
 
 # This code is contributed by chitranayal 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/](https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/)
 
 ```
 

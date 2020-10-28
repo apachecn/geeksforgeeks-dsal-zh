@@ -1,7 +1,5 @@
 # 在给定字符串
 
-> 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/](https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/)
-
 中连续出现的不同子字符串的计数
 
 给定字符串 **str** ，任务是查找在给定字符串中连续放置的**个不同的子字符串**的数量。
@@ -213,18 +211,10 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/](https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/)
 # the above approach 
 
-> 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/](https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/)
-
 # Function to count the distinct substrings
-
-> 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/](https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/)
 # placed consecutively in the given string
-
-> 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/](https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/)
 def distinctSimilarSubstrings(str):
 
     # Length of the string
@@ -270,18 +260,12 @@ def distinctSimilarSubstrings(str):
     return len(substrings)
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/](https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/)
 str = "geeksgeeksforgeeks"
 
 # Function call
-
-> 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/](https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/)
 print(distinctSimilarSubstrings(str))
 
 # This code is contributed by Shivam Singh
-
-> 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/](https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/)
 
 ```
 

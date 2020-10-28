@@ -1,7 +1,5 @@
 # 删除 m 个项目后的最小不同元素数
 
-> 原文：[https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items/](https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items/)
-
 给定一个项目数组，第 i 个索引元素表示该项目 ID，给定数字 m，任务是删除 m 个元素，以使剩余的唯一 ID 最少。打印不同 ID 的数量。
 
 例子：

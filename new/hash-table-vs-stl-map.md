@@ -1,7 +1,5 @@
 # 哈希表与 STL 映射
 
-> 原文：[https://www.geeksforgeeks.org/hash-table-vs-stl-map/](https://www.geeksforgeeks.org/hash-table-vs-stl-map/)
-
 本文重点讨论：比较和对比 Hash 表和 STL Map。 哈希表如何实现？ 如果输入数量很少，那么可以使用哪些数据结构选项代替哈希表？
 
 **哈希表**

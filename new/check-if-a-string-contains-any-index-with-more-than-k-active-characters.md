@@ -1,7 +1,5 @@
 # 检查字符串是否包含具有超过 K 个有效字符的任何索引
 
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/](https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/)
-
 给定一个包含小写英文字母的字符串 **S** 和一个整数 **K** ，任务是查找包含超过 **K** 个以上有效字符串的任何索引 字符。 如果找到，则打印**是**。 否则，打印**否**。
 
 > 任何索引的**活动字符**的计数是具有在当前索引之前或当前索引中先前出现以及在当前索引之后或之后最后出现的字符数。
@@ -184,18 +182,10 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/](https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/)
 # the above approach  
 
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/](https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/)
-
 # Function to check if any index  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/](https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/)
 # contains more than K active characters  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/](https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/)
 def checkString(s, K): 
 
     n = len(s) 
@@ -231,16 +221,12 @@ def checkString(s, K):
     print("No") 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/](https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/)
 s = "aabbcdca"
 K = 2
 
 checkString(s, K) 
 
 # This code is contributed by vashisthamadhur2 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/](https://www.geeksforgeeks.org/check-if-a-string-contains-any-index-with-more-than-k-active-characters/)
 
 ```
 

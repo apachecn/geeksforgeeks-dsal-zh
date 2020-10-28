@@ -1,7 +1,5 @@
 # 设计点击计数器
 
-> 原文：[https://www.geeksforgeeks.org/design-a-hit-counter/](https://www.geeksforgeeks.org/design-a-hit-counter/)
-
 设计一个点击计数器，计算过去 5 分钟内收到的点击次数。
 
 **来源**：[Microsoft 面试体验](https://www.geeksforgeeks.org/microsoft-interview-experience-set-109-2-years-experienced/)

@@ -1,7 +1,5 @@
 # 查找字符串
 
-> 原文：[https://www.geeksforgeeks.org/find-the-first-repeated-character-in-a-string/](https://www.geeksforgeeks.org/find-the-first-repeated-character-in-a-string/)
-
 中的第一个重复字符
 
 给定一个字符串，找到其中的第一个重复字符。 我们需要找到多次出现并且其**第二次出现**的索引最小的字符。 在中讨论了这个问题的一个变体。
@@ -139,11 +137,7 @@ class Main
 ```
 
 # Python program to find the first 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-first-repeated-character-in-a-string/](https://www.geeksforgeeks.org/find-the-first-repeated-character-in-a-string/)
 # repeated character in a string 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-first-repeated-character-in-a-string/](https://www.geeksforgeeks.org/find-the-first-repeated-character-in-a-string/)
 def firstRepeatedChar(str): 
 
     h = {}  # Create empty hash 
@@ -164,8 +158,6 @@ def firstRepeatedChar(str):
     return '\0'
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-first-repeated-character-in-a-string/](https://www.geeksforgeeks.org/find-the-first-repeated-character-in-a-string/)
 print(firstRepeatedChar("geeksforgeeks")) 
 
 ```

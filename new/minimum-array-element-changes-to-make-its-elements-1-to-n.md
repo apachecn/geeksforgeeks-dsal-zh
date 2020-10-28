@@ -1,7 +1,5 @@
 # 最小数组元素更改以使其元素 1 到 N
 
-> 原文：[https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/](https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/)
-
 假设给定一个数组，该数组包含 N 个具有任何整数值的元素。 您需要找到必须更改的最小元素数，以便数组具有 1 到 N（包括 1，N）之间的所有整数值。
 
 **示例**：
@@ -108,11 +106,7 @@ class GfG
 ```
 
 # Count minimum changes to  
-
-> 原文：[https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/](https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/)
 # make array from 1 to n 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/](https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/)
 
 def countChanges(arr, n): 
 
@@ -134,19 +128,13 @@ def countChanges(arr, n):
     return count 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/](https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/)
 if __name__ == "__main__": 
     arr = [8, 55, 22, 1, 3, 22, 4, 5] 
     n = len(arr) 
     print(countChanges(arr, n)) 
 
 # This code is contributed  
-
-> 原文：[https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/](https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/)
 # by ChitraNayal 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/](https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 包含两个字符串中不常见字符的串联字符串
 
-> 原文：[https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/)
-
 给出了两个字符串，您必须修改第一个字符串，以便必须删除第二个字符串的所有常见字符，并且第二个字符串的不常见字符必须与第一个字符串的不常见字符连接在一起。
 
 **示例**：
@@ -130,11 +128,7 @@ class gfg {
 ```
 
 # Python3 program Find concatenated string  
-
-> 原文：[https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/)
 # with uncommon characters of given strings  
-
-> 原文：[https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/)
 def concatenetedString(s1, s2): 
     res = "" # result  
     m = {} 
@@ -160,19 +154,13 @@ def concatenetedString(s1, s2):
     return res      
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/)
 if __name__ == "__main__": 
     s1 = "abcs"
     s2 = "cxzca"
     print(concatenetedString(s1, s2)) 
 
 # This code is contributed 
-
-> 原文：[https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/)
 # by Sairahul099 
-
-> 原文：[https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/)
 
 ```
 

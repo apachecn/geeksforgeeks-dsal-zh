@@ -1,7 +1,5 @@
 # 所有可能长度的子数组中的最小公共元素
 
-> 原文：[https://www.geeksforgeeks.org/minimum-common-element-in-subarrays-of-all-possible-lengths/](https://www.geeksforgeeks.org/minimum-common-element-in-subarrays-of-all-possible-lengths/)
-
 给定[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，该数组由 **[1，N]** 范围内的 **N** 个整数组成（允许*重复 ]），任务是为每个可能的[子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)长度找到最小的公共元素。 如果对于任何特定长度的子数组不存在此类元素，则打印 **-1** 。*
 
 **示例**：

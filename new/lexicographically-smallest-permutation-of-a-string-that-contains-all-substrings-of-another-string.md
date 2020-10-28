@@ -1,7 +1,5 @@
 # 包含另一个字符串的所有子字符串的字符串的按字典顺序排列的最小排列
 
-> 原文：[https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/](https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/)
-
 给定两个字符串 **A** 和 **B** ，任务是从字典上找到字符串 **B** 的最小排列，以使其包含字符串 **A 中的每个子字符串** 作为其[子字符串](https://www.geeksforgeeks.org/length-of-the-longest-valid-substring/)。 如果无法进行有效的排列，请打印“ **-1”** 。
 
 **范例**：
@@ -251,14 +249,8 @@ public static void main(String[] args)
 
 # Python3 program for the above approach
 
-> 原文：[https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/](https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/)
-
 # Function to reorder the B
-
-> 原文：[https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/](https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/)
 # to contain all the substrings of A
-
-> 原文：[https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/](https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/)
 def reorderString(A, B):
 
     # Find length of strings
@@ -329,8 +321,6 @@ def reorderString(A, B):
     return "".join(answer)
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/](https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/)
 if __name__ == '__main__':
 
     # Given strings A and B
@@ -341,8 +331,6 @@ if __name__ == '__main__':
     print(reorderString(A, B))
 
 # This code is contributed by mohit kumar 29
-
-> 原文：[https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/](https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 根据数字的异或找到最大组的大小。
 
-> 原文：[https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/](https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/)
-
 给定**整数 N** ，任务是在 **1 到 N** 的范围内找到最大组的大小，其中，如果两个数字为 x 或 x，则两个数字属于同一组。 相同。
 
 **范例**：
@@ -162,18 +160,10 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation to find the
-
-> 原文：[https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/](https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/)
 # size of largest group, where groups
-
-> 原文：[https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/](https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/)
 # are according to the xor of its digits.
 
-> 原文：[https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/](https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/)
-
 # Function to find out xor of digit
-
-> 原文：[https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/](https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/)
 def digit_xor(x):
 
     xorr = 0
@@ -187,11 +177,7 @@ def digit_xor(x):
     return xorr
 
 # Function to find the
-
-> 原文：[https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/](https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/)
 # size of largest group
-
-> 原文：[https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/](https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/)
 def find_count(n):
 
     # Hash map for counting frquency
@@ -217,18 +203,12 @@ def find_count(n):
 
 # Driver code
 
-> 原文：[https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/](https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/)
-
 # Initialise N
-
-> 原文：[https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/](https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/)
 N = 13
 
 print(find_count(N))
 
 # This code is contributed by divyeshrabadiya07
-
-> 原文：[https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/](https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/)
 
 ```
 

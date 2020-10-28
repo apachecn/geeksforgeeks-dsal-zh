@@ -1,7 +1,5 @@
 # 数组
 
-> 原文：[https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/](https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/)
-
 中不同元素之间的最大绝对差
 
 给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到数组不同元素之间的最大绝对差。
@@ -184,23 +182,13 @@ class GFG {
 ```py
 
 # Python3 program for 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/](https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/)
 # the above approach
-
-> 原文：[https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/](https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/)
 import sys
 from collections import defaultdict
 
 # Function to find the maximum
-
-> 原文：[https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/](https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/)
 # absolute difference between
-
-> 原文：[https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/](https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/)
 # distinct elements in arr[]
-
-> 原文：[https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/](https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/)
 def MaxAbsDiff(arr, n):
 
     # HashMap to store each element
@@ -232,8 +220,6 @@ def MaxAbsDiff(arr, n):
     return abs(maxElement - minElement)
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/](https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/)
 if __name__ == "__main__":
 
     # Given array arr[]
@@ -245,8 +231,6 @@ if __name__ == "__main__":
     print(MaxAbsDiff(arr, n))
 
 # This code is contributed by Chitranayal
-
-> 原文：[https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/](https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 从数组
 
-> 原文：[https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/](https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/)
-
 中查找可以由其他字符串组成的最长字符串
 
 给定一个字符串数组 **arr []** ，任务是在将数组中的其他字符串相互串联后，从数组中找到最大的字符串。 如果不存在这样的字符串，则打印 **-1** 。
@@ -129,17 +127,9 @@ int main()
 
 # Python implementation of the approach 
 
-> 原文：[https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/](https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/)
-
 # Function that returns true if string s can be 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/](https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/)
 # made up of by other two string from the array 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/](https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/)
 # after concatenating one after another 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/](https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/)
 def canbuildword(s, isoriginalword, mp): 
 
     # If current string has been processed before 
@@ -169,14 +159,8 @@ def canbuildword(s, isoriginalword, mp):
     return False
 
 # Function to return the longest string 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/](https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/)
 # that can made be made up from the 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/](https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/)
 # other string of the given array 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/](https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/)
 def printlongestword(listofwords): 
 
     # Put all the strings in the map 
@@ -199,8 +183,6 @@ def printlongestword(listofwords):
     return "-1"
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/](https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/)
 if __name__ == "__main__": 
     listofwords = ["geeks", "for", "geeksfor", 
                 "geeksforgeeks"] 
@@ -208,11 +190,7 @@ if __name__ == "__main__":
     print(printlongestword(listofwords)) 
 
 # This code is contributed by 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/](https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/)
 # sanjeev2552 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/](https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/)
 
 ```
 

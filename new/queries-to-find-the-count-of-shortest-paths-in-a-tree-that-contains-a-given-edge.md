@@ -1,7 +1,5 @@
 # 查询以查找包含给定边的树中的最短路径数
 
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
-
 给定一个[树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，其中 **N 个**顶点的编号从 **0** 到 **N – 1，M** 个边，以及 **Q** 个查询 形式为 **{U，V}，**，这样树中的 **U** 和 **V** 之间有直接的边。 每个查询的任务是从给定树（包含给定节点对之间的边）找到任何可能的无序顶点对之间的所有可能的[最短路径](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)。
 
 **示例**：
@@ -239,48 +237,26 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation for 
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 # the above approach
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 sz = 100000
 
 # Adjacency list to
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 # represent the tree
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 tree = [[] for i in range(sz)]
 
 # Number of vertices
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 n = 0
 
 # Mark visited/ unvisited
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 # vertices
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 vis = [False] * sz
 
 # Stores the subtree size
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 # of the corresponding nodes
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 subtreeSize = [0 for i in range(sz)]
 
 # Function to create an
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 # edge between two vertices
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 def addEdge(a, b):
 
     global tree
@@ -292,8 +268,6 @@ def addEdge(a, b):
     tree[b].append(a)
 
 # Function to perform DFS
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 def dfs(x):
 
     # Mark the vertex
@@ -314,11 +288,7 @@ def dfs(x):
             subtreeSize[x] += subtreeSize[i]
 
 # Function to print the
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 # required number of paths
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 def countPairs(a, b):
 
     global subtreeSize
@@ -328,8 +298,6 @@ def countPairs(a, b):
     print(sub * (n - sub))
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 if __name__ == '__main__':
 
     # Number of vertices
@@ -349,8 +317,6 @@ if __name__ == '__main__':
     countPairs(0, 2)
 
 # This code is contributed by SURENDRA_GANGWAR
-
-> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 
 ```
 

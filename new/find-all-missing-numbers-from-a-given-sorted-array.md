@@ -1,7 +1,5 @@
 # 从给定的排序数组
 
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
-
 中查找所有缺失的数字
 
 给定 **N** 个整数的排序数组 **arr []** ，任务是在范围 **[arr [0]，arr [N]之间找到数组中的多个缺失元素 -1]]** 。
@@ -139,11 +137,7 @@ public static void main (String[] args)
 
 # Python3 program for the above approach 
 
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
-
 # Function to find the missing elements 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
 def printMissingElements(arr, N): 
 
     # Initialize diff 
@@ -163,23 +157,15 @@ def printMissingElements(arr, N):
 
 # Driver Code 
 
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
-
 # Given array arr[] 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
 arr = [ 6, 7, 10, 11, 13 ] 
 
 N = len(arr) 
 
 # Function call 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
 printMissingElements(arr, N) 
 
 # This code is contributed by Shivam Singh 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
 
 ```
 
@@ -373,15 +359,9 @@ public static void main (String[] args)
 ```py
 
 # Python3 program to implement 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
 # the above approach 
 
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
-
 # Function to find the missing elements 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
 def printMissingElements(arr, N): 
 
     # Initialize an array with zero 
@@ -404,23 +384,15 @@ def printMissingElements(arr, N):
 
 # Driver Code 
 
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
-
 # Given array arr[] 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
 arr = [ 6, 7, 10, 11, 13 ] 
 
 N = len(arr) 
 
 # Function call 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
 printMissingElements(arr, N) 
 
 # This code is contributed by Shivam Singh 
-
-> 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
 
 ```
 

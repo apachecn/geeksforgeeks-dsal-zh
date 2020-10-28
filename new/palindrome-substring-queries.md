@@ -1,7 +1,5 @@
 # 回文子串查询
 
-> 原文：[https://www.geeksforgeeks.org/palindrome-substring-queries/](https://www.geeksforgeeks.org/palindrome-substring-queries/)
-
 给定一个字符串和对给定输入字符串的子字符串的几个查询，以检查该子字符串是否是回文。
 
 **示例**：

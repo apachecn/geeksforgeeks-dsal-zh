@@ -1,7 +1,5 @@
 # 以递增顺序排列的第 k 个丢失元素，在给定序列中不存在
 
-> 原文：[https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/](https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/)
-
 给定两个序列，一个是递增序列 **a []** ，另一个是正常序列 **b []** ，在递增序列中找到第 K 个缺失元素，该元素在给定序列中不存在 顺序。 如果没有第 k 个缺失元素，则输出-1
 
 **示例**：
@@ -133,18 +131,10 @@ public static void main(String[] args) 
 ```py
 
 # Python3 program to find the k-th  
-
-> 原文：[https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/](https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/)
 # missing element in a given sequence  
 
-> 原文：[https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/](https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/)
-
 # Returns k-th missing element. It returns -1 if  
-
-> 原文：[https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/](https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/)
 # no k is more than number of missing elements.  
-
-> 原文：[https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/](https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/)
 def find(a, b, k, n1, n2): 
 
     # insert all elements of  
@@ -165,8 +155,6 @@ def find(a, b, k, n1, n2):
     return -1
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/](https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/)
 a = [0, 2, 4, 6, 8, 10, 12, 14, 15] 
 b = [4, 10, 6, 8, 12] 
 n1 = len(a) 
@@ -175,8 +163,6 @@ k = 3
 print(find(a, b, k, n1, n2)) 
 
 # This code is contributed by Shrikant13 
-
-> 原文：[https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/](https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 给定字符串
 
-> 原文：[https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/](https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/)
-
 中长度为 X 的唯一回文字符串的计数
 
 给定**字符串 s** 和**整数 X** ，我们的任务是从给定字符串中找到长度为 X 的不同回文字符串的数量。
@@ -133,24 +131,12 @@ int main()
 ```py
 
 # Python3 implementation to count  
-
-> 原文：[https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/](https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/)
 # different palindromic string of 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/](https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/)
 # length X from the given string S 
 
-> 原文：[https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/](https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/)
-
 # Function to count different 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/](https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/)
 # palindromic string of length X 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/](https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/)
 # from the given string S 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/](https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/)
 def findways(s, x): 
 
     # Base case 
@@ -223,8 +209,6 @@ def findways(s, x):
     return ans 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/](https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/)
 if __name__ == '__main__': 
 
     s = "aaa"
@@ -233,8 +217,6 @@ if __name__ == '__main__':
     print(findways(s, x)) 
 
 # This code is contributed by Shivam Singh 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/](https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 确定从字符串中删除字符的游戏的获胜者
 
-> 原文：[https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/](https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/)
-
 在给定数字字符串 **str** 的情况下，任务是确定当两个玩家根据给定条件使用该字符串以最佳方式玩游戏时，确定游戏的赢家：
 
 *   玩家 1 总是最先开始。
@@ -183,14 +181,8 @@ public static void main (String[] args)
 
 # Python3 program for the above approach  
 
-> 原文：[https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/](https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/)
-
 # Function to find the winner of the 
-
-> 原文：[https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/](https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/)
 # game when both players play optimally 
-
-> 原文：[https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/](https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/)
 def determineWinner(str): 
 
     # Stores the frequency of all digit 
@@ -229,8 +221,6 @@ def determineWinner(str):
         print("Player 2"); 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/](https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/)
 if __name__ == '__main__': 
 
     str = "78787"; 
@@ -238,8 +228,6 @@ if __name__ == '__main__':
     determineWinner(str); 
 
 # This code is contributed by Amit Katiyar  
-
-> 原文：[https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/](https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/)
 
 ```
 

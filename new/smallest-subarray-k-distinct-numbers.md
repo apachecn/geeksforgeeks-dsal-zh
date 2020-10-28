@@ -1,7 +1,5 @@
 # 具有 k 个不同数字的最小子数组
 
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
-
 给定一个由 n 个整数和一个整数 k 组成的数组。 我们需要在数组[l，r]中找到最小范围（l 和 r 都包括在内），以便恰好有 k 个不同的数字。
 
 **示例**：
@@ -163,18 +161,10 @@ public static void main(String args[])
 ```
 
 # Python 3 program to find minimum range 
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
 # that contains exactly k distinct numbers.
 
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
-
 # Prints the minimum range that contains 
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
 # exactly k distinct numbers.
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
 def minRange(arr, n, k):
 
     l = 0
@@ -211,8 +201,6 @@ def minRange(arr, n, k):
         print(l, r)
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
 if __name__ == "__main__":
 
     arr = [ 1, 2, 3, 4, 5 ]
@@ -221,11 +209,7 @@ if __name__ == "__main__":
     minRange(arr, n, k)
 
 # This code is contributed 
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
 # by ChitraNayal
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
 
 ```
 
@@ -522,19 +506,11 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to find the minimum range 
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
 # that contains exactly k distinct numbers. 
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
 from collections import defaultdict
 
 # Prints the minimum range that contains 
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
 # exactly k distinct numbers. 
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
 def minRange(arr, n, k): 
 
     # Initially left and right side is -1 
@@ -598,8 +574,6 @@ def minRange(arr, n, k):
         print(l, r) 
 
 # Driver code for above function. 
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
 if __name__ == "__main__": 
 
     arr = [1, 1, 2, 2, 3, 3, 4, 5]  
@@ -608,8 +582,6 @@ if __name__ == "__main__":
     minRange(arr, n, k) 
 
 # This code is contributed by Rituraj Jain 
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
 
 ```
 

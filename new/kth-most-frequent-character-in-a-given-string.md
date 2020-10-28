@@ -1,7 +1,5 @@
 # 给定字符串
 
-> 原文：[https://www.geeksforgeeks.org/kth-most-frequent-character-in-a-given-string/](https://www.geeksforgeeks.org/kth-most-frequent-character-in-a-given-string/)
-
 中第 K 个最常见的字符
 
 给定字符串 **str** 和整数 **K** ，任务是找到字符串中第 K 个最频繁出现的字符。 如果有多个字符可以解释为第 K 个最常见的字符，则打印其中的任何一个。

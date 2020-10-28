@@ -1,7 +1,5 @@
 # 查找数组
 
-> 原文：[https://www.geeksforgeeks.org/find-top-three-repeated-array/](https://www.geeksforgeeks.org/find-top-three-repeated-array/)
-
 中重复的前三名
 
 给定大小为 N 的重复数字数组，您必须找到前三个重复数字。

@@ -1,7 +1,5 @@
 # 最大子集，其所有元素均为斐波纳契数
 
-> 原文：[https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/](https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/)
-
 给定一个具有正数的数组，任务是我们从数组中找到包含[斐波纳契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)的元素的最大子集。
 
 在 Facebook 问
@@ -136,14 +134,8 @@ class GFG
 
 # python3 program to find largest Fibonacci subset 
 
-> 原文：[https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/](https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/)
-
 # Prints largest subset of an array whose 
-
-> 原文：[https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/](https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/)
 # all elements are fibonacci numbers 
-
-> 原文：[https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/](https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/)
 def findFibSubset(arr, n): 
 
     # Find maximum element in arr[] 
@@ -171,8 +163,6 @@ def findFibSubset(arr, n):
             print( arr[i],end=" ") 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/](https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/)
 if __name__ == "__main__": 
 
     arr = [4, 2, 8, 5, 20, 1, 40, 13, 23] 

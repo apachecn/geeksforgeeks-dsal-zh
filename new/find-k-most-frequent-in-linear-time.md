@@ -1,7 +1,5 @@
 # 查找线性时间中最频繁的 k
 
-> 原文：[https://www.geeksforgeeks.org/find-k-most-frequent-in-linear-time/](https://www.geeksforgeeks.org/find-k-most-frequent-in-linear-time/)
-
 给定一个整数数组，我们需要打印 k 个最频繁的元素。 如果存在平局，我们需要优先考虑首次出现的元素。
 
 **范例**：

@@ -1,7 +1,5 @@
 # 以很大的数字打印所有 K 位重复数字
 
-> 原文：[https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/](https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/)
-
 给定非常大的字符串形式的 **N** 和数字 **K** ，任务是打印所有 **K 数字**重复频率大于 1\.
 
 **示例**：
@@ -156,8 +154,6 @@ public static void main(String[] args) 
 ```py
 
 # Python3 program of the above approach  
-
-> 原文：[https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/](https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/)
 def print_Kdigit(S, K):  
 
     # Dictionary to store the substrings  
@@ -188,23 +184,15 @@ def print_Kdigit(S, K): 
             print(key, "-", value)  
 
 # Driver Code  
-
-> 原文：[https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/](https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/)
 str = "123412345123456"
 
 # Given K  
-
-> 原文：[https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/](https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/)
 K = 4
 
 # Function Call  
-
-> 原文：[https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/](https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/)
 print_Kdigit(str, K)  
 
 # This code is contributed by Vishal Maurya  
-
-> 原文：[https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/](https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/)
 
 ```
 

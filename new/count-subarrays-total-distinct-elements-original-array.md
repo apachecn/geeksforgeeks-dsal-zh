@@ -1,7 +1,5 @@
 # 计数具有与原始数组
 
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/](https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/)
-
 相同的不同元素的子数组
 
 给定 n 个整数数组。 计算具有与原始数组的总不同元素相同的总不同元素的子数组的总数。
@@ -187,18 +185,10 @@ class Test
 ```py
 
 # Python3 program Count total number of  
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/](https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/)
 # sub-arrays having total distinct elements  
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/](https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/)
 # same as that original array. 
 
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/](https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/)
-
 # Function to calculate distinct sub-array 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/](https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/)
 def countDistictSubarray(arr, n): 
 
     # Count distinct elements in whole array 
@@ -248,19 +238,13 @@ def countDistictSubarray(arr, n):
     return ans 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/](https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/)
 arr = [2, 1, 3, 2, 3] 
 n = len(arr) 
 
 print(countDistictSubarray(arr, n)) 
 
 # This code is contributed by 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/](https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/)
 # mohit kumar 29 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/](https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/)
 
 ```
 

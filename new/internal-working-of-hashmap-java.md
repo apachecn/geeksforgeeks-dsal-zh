@@ -1,7 +1,5 @@
 # Java 中 HashMap 的内部工作
 
-> 原文：[https://www.geeksforgeeks.org/internal-working-of-hashmap-java/](https://www.geeksforgeeks.org/internal-working-of-hashmap-java/)
-
 在本文中，我们将了解 hashmap 的 get 和 put 方法在内部如何工作。 执行什么操作。 哈希如何完成。 密钥如何获取值。 键值对的存储方式。
 
 与[先前的文章](https://www.geeksforgeeks.org/java-util-hashmap-in-java)中一样，HashMap 包含一个 Node 数组，并且 Node 可以表示具有以下对象的类：

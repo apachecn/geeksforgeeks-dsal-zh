@@ -1,7 +1,5 @@
 # 对数组中的对进行计数，以使一个频率至少等于另一个
 
-> 原文：[https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/](https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/)
-
 的值
 
 给定整数数组 A []。 任务是找到正整数（X，Y）的有序对总数，以使 X 在 A []中至少发生 Y 次，而 Y 在 A 中至少发生 X 次。
@@ -145,16 +143,10 @@ class GFG
 ```py
 
 # Python3 program to find the  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/](https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/)
 # number of ordered pairs  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/](https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/)
 from collections import defaultdict 
 
 # Function to find count of Ordered pairs  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/](https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/)
 def countOrderedPairs(A, n):  
 
     # Initialize pairs to 0  
@@ -175,8 +167,6 @@ def countOrderedPairs(A, n): 
     return orderedPairs  
 
 # Driver Code  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/](https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/)
 if __name__ == "__main__": 
 
     A = [1, 1, 2, 2, 3]  
@@ -184,8 +174,6 @@ if __name__ == "__main__":
     print(countOrderedPairs(A, n))  
 
 # This code is contributed by Rituraj Jain 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/](https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/)
 
 ```
 

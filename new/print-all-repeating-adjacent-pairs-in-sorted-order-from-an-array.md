@@ -1,7 +1,5 @@
 # 从数组
 
-> 原文：[https://www.geeksforgeeks.org/print-all-repeating-adjacent-pairs-in-sorted-order-from-an-array/](https://www.geeksforgeeks.org/print-all-repeating-adjacent-pairs-in-sorted-order-from-an-array/)
-
 中按排序顺序打印所有重复的相邻对
 
 给定一个[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，该数组由 **N** 个整数组成，任务是从该数组中打印出所有相邻的整数对，这些对在给定数组中出现多次 。 如果数组包含多个这样的对，请按排序顺序打印所有对。

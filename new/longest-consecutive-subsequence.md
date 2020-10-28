@@ -1,7 +1,5 @@
 # 最长连续子序列
 
-> 原文：[https://www.geeksforgeeks.org/longest-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-consecutive-subsequence/)
-
 给定整数数组，请找到最长子序列的长度，以使子序列中的元素为连续整数，连续数字可以为任意顺序。
 
 **范例**：
@@ -283,8 +281,6 @@ class ArrayElements {
 
 # Python program to find longest contiguous subsequence
 
-> 原文：[https://www.geeksforgeeks.org/longest-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-consecutive-subsequence/)
-
 from sets import Set
 def findLongestConseqSubseq(arr, n):
 
@@ -315,8 +311,6 @@ def findLongestConseqSubseq(arr, n):
     return ans
 
 # Driver function 
-
-> 原文：[https://www.geeksforgeeks.org/longest-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-consecutive-subsequence/)
 if __name__=='__main__':
     n = 7
     arr = [1, 9, 3, 10, 4, 20, 2]
@@ -324,8 +318,6 @@ if __name__=='__main__':
     print  findLongestConseqSubseq(arr, n)
 
 # Contributed by: Harshit Sidhwa
-
-> 原文：[https://www.geeksforgeeks.org/longest-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-consecutive-subsequence/)
 
 ```
 

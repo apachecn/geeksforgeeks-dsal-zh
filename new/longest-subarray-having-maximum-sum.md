@@ -1,7 +1,5 @@
 # 具有最大和的最长子数组
 
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/](https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/)
-
 给定包含 **n** 个整数的数组 **arr []** 。 问题是找到具有最大和的子数组的长度。 如果存在两个或更多具有最大和的子数组，则打印最长子数组的长度。
 
 **示例**：
@@ -211,18 +209,10 @@ public static void main(String args[])
 ```py
 
 # Python3 implementation to find the length  
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/](https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/)
 # of the longest subarray having maximum sum 
 
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/](https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/)
-
 # function to find the maximum sum that 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/](https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/)
 # exists in a subarray 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/](https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/)
 def maxSubArraySum(arr, size): 
 
     max_so_far = arr[0] 
@@ -234,11 +224,7 @@ def maxSubArraySum(arr, size):
     return max_so_far 
 
 # function to find the length of longest 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/](https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/)
 # subarray having sum k 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/](https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/)
 def lenOfLongSubarrWithGivenSum(arr, n, k): 
 
     # unordered_map 'um' implemented 
@@ -274,27 +260,19 @@ def lenOfLongSubarrWithGivenSum(arr, n, k):
     return maxLen 
 
 # function to find the length of the longest 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/](https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/)
 # subarray having maximum Sum 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/](https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/)
 def lenLongSubarrWithMaxSum(arr, n): 
 
     maxSum = maxSubArraySum(arr, n) 
     return lenOfLongSubarrWithGivenSum(arr, n, maxSum) 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/](https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/)
 arr = [5, -2, -1, 3, -4] 
 n = len(arr) 
 print("Length of longest subarray having maximum sum = ",  
                          lenLongSubarrWithMaxSum(arr, n)) 
 
 # This code is contributed by mohit kumar 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/](https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 二叉树
 
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
-
 顶视图中的打印节点
 
 二叉树的顶视图是从顶部查看树时可见的节点集。 给定一棵二叉树，打印它的顶视图。 可以按任何顺序打印输出节点。
@@ -243,15 +241,9 @@ class BinaryTree {
 ```py
 
 # Python3 program to print top  
-
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 # view of binary tree 
 
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
-
 # Binary Tree Node  
-
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 """ utility that allocates a newNode  
 with the given key """
 class newNode:  
@@ -264,11 +256,7 @@ class newNode: 
         self.hd = 0
 
 # function should print the topView  
-
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 # of the binary tree  
-
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 def topview(root) : 
 
     if(root == None) : 
@@ -305,8 +293,6 @@ def topview(root) :
         print(m[i], end = "")  
 
 # Driver Code  
-
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 if __name__ == '__main__': 
 
     """ Create following Binary Tree  
@@ -330,11 +316,7 @@ if __name__ == '__main__':
     topview(root) 
 
 # This code is contributed by 
-
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 # Shubham Singh(SHUBHAMSINGH10) 
-
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 
 ```
 
@@ -517,8 +499,6 @@ public static void main(String args[])
 ```py
 
 # Binary Tree Node  
-
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 """ utility that allocates a newNode  
 with the given key """
 class newNode:  
@@ -530,8 +510,6 @@ class newNode: 
         self.right = None
 
 # function to fill the map 
-
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 def fillMap(root, d, l, m): 
     if(root == None): 
         return
@@ -544,11 +522,7 @@ def fillMap(root, d, l, m):
     fillMap(root.right, d + 1, l + 1, m) 
 
 # function should prthe topView of 
-
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 # the binary tree 
-
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 def topView(root): 
 
     # map to store the pair of node value and its level  
@@ -560,8 +534,6 @@ def topView(root):
         print(m[it][0], end = " ") 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 root = newNode(1) 
 root.left = newNode(2) 
 root.right = newNode(3) 
@@ -572,8 +544,6 @@ print("Following are nodes in top view of Binary Tree")
 topView(root) 
 
 # This code is contributed by SHUBHAMSINGH10 
-
-> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 
 ```
 

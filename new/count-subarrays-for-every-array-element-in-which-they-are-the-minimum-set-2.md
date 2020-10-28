@@ -1,7 +1,5 @@
 # 为每个最小的数组元素计数子数组| 设置 2
 
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
-
 给定一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个整数组成，任务是创建大小为**的数组 **brr []** N** 其中 **brr [i]** 代表其中 **arr [i]** 是最小元素的子阵列的数量。
 
 **示例**：
@@ -86,27 +84,13 @@ int main()
 ```py
 
 # Python3 program for 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 # the above approach
 
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
-
 # Function to calculate total 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 # number of sub-arrays for 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 # each element where that 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 # element is occurring as the 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 # minimum element
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 def minSubarray(arr, N):
 
     # Map for storing the 
@@ -131,8 +115,6 @@ def minSubarray(arr, N):
         print(m[i], end = " ")
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 if __name__ == '__main__':
 
     arr = [3, 2, 1, 4]
@@ -142,8 +124,6 @@ if __name__ == '__main__':
     minSubarray(arr, N)
 
 # This code is contributed by mohit kumar 29
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 
 ```
 
@@ -257,21 +237,11 @@ int main()
 ```py
 
 # Python3 program for the 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 # above approach
 
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
-
 # Function to count subarrays
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 # for each element where it is
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 # the minimum
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 def minSubarray(arr, N):
 
     result = [0] * N
@@ -317,8 +287,6 @@ def minSubarray(arr, N):
               end = " ")
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 if __name__ == "__main__":
 
     arr = [3, 2, 1, 4]
@@ -328,8 +296,6 @@ if __name__ == "__main__":
     minSubarray(arr, N)
 
 # This code is contributed by Chitranayal
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 使用 Map 数据结构
 
-> 原文：[https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/](https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/)
-
 从未排序的数组中删除重复项
 
 给定一个未排序的整数数组，请从中删除重复的元素后再打印该数组。 我们需要根据它们的首次出现来打印不同的数组元素。
@@ -115,11 +113,7 @@ class GFG 
 ```py
 
 # Python 3 program to remove the 
-
-> 原文：[https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/](https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/)
 # duplicates from the array  
-
-> 原文：[https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/](https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/)
 def removeDups(arr, n): 
 
     # dict to store every element 
@@ -133,23 +127,15 @@ def removeDups(arr, n):
             mp[arr[i]] = 1
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/](https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/)
 arr = [ 1, 2, 5, 1, 7, 2, 4, 2 ] 
 
 # len of array 
-
-> 原文：[https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/](https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/)
 n = len(arr) 
 
 removeDups(arr,n) 
 
 # This code is contributed 
-
-> 原文：[https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/](https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/)
 # by Mohit Kumar 
-
-> 原文：[https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/](https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/)
 
 ```
 

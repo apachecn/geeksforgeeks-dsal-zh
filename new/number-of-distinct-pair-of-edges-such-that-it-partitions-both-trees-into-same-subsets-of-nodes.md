@@ -1,7 +1,5 @@
 # 不同对边的数量，以便将两棵树划分为相同的节点子集
 
-> 原文：[https://www.geeksforgeeks.org/number-of-distinct-pair-of-edges-such-that-it-partitions-both-trees-into-same-subsets-of-nodes/](https://www.geeksforgeeks.org/number-of-distinct-pair-of-edges-such-that-it-partitions-both-trees-into-same-subsets-of-nodes/)
-
 给定两个树，每个 N 个节点。 删除树的边缘会将树分为两个子集。
 
 求出不同边的最大总数（e1，e2）：第一棵树的 e1 和第二棵树的 e2，以便将这两个树划分为具有相同节点的子集。

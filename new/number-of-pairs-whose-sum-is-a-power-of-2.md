@@ -1,7 +1,5 @@
 # 其和为 2 的幂的对的数量
 
-> 原文：[https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/](https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/)
-
 给定正整数数组 **arr []** ，任务是计算对数**（arr [i]，arr [j]）**的最大可能数目，以使 **arr [i] + arr [j]** 是**的 2** 次方。
 
 **注意**：一个元素最多可以使用一次以形成一对。
@@ -162,14 +160,8 @@ class Count
 
 # Python3 implementation of above approach  
 
-> 原文：[https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/](https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/)
-
 # Function to return the count  
-
-> 原文：[https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/](https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/)
 # of valid pairs  
-
-> 原文：[https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/](https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/)
 def countPairs(a, n) :  
 
     # Storing occurrences of each element  
@@ -215,8 +207,6 @@ def countPairs(a, n) : 
     return count  
 
 # Driver code  
-
-> 原文：[https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/](https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/)
 if __name__ == "__main__" :  
 
     a = [ 3, 11, 14, 5, 13 ]  
@@ -224,8 +214,6 @@ if __name__ == "__main__" : 
     print(countPairs(a, n)) 
 
 # This code is contributed by Ryuga 
-
-> 原文：[https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/](https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/)
 
 ```
 

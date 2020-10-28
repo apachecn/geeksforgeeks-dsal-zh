@@ -1,7 +1,5 @@
 # 通过将每个元素的首次出现增加 K
 
-> 原文：[https://www.geeksforgeeks.org/modify-given-array-by-incrementing-first-occurrence-of-every-element-by-k/](https://www.geeksforgeeks.org/modify-given-array-by-incrementing-first-occurrence-of-every-element-by-k/)
-
 来修改给定数组
 
 给定由 **N** 整数组成的数组 **arr []** ，依次读取数组的每个元素并执行 以下操作：

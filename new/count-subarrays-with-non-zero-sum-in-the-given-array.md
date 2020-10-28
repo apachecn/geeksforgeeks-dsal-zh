@@ -1,7 +1,5 @@
 # 在给定数组
 
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/](https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/)
-
 中对总和非零的子数组进行计数
 
 给定大小为 N 的**数组 arr []** ，任务是计算给定数组 arr []的子数组的总数，该子数组具有非零和。
@@ -180,18 +178,10 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to count the total number  
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/](https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/)
 # of subarrays for a given array such that 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/](https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/)
 # its subarray should have non zero sum 
 
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/](https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/)
-
 # Function to build the prefix sum array 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/](https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/)
 def PrefixSumArray(arr, n):
 
     prefix = [0] * (n + 1); 
@@ -205,11 +195,7 @@ def PrefixSumArray(arr, n):
     return prefix; 
 
 # Function to return the count of 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/](https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/)
 # the total number of subarrays 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/](https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/)
 def CountSubarray(arr, n): 
 
     Prefix = [0] * (n + 1); 
@@ -238,8 +224,6 @@ def CountSubarray(arr, n):
     return ans; 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/](https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/)
 if __name__ == "__main__" : 
 
     arr = [ 1, 3, -2, 4, -1 ]; 
@@ -248,8 +232,6 @@ if __name__ == "__main__" :
     print(CountSubarray(arr, N)); 
 
 # This code is contributed by AnkitRai01
-
-> 原文：[https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/](https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/)
 
 ```
 

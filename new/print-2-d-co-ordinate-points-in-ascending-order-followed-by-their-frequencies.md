@@ -1,7 +1,5 @@
 # 按升序打印二维坐标点，然后打印其频率
 
-> 原文：[https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/](https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/)
-
 给定两个数组 **x []** 和 **y []** ，其中 **x [i]** 代表 **x** 坐标， **y [i ]** 代表二维点的相应 y 坐标，任务是按升序打印坐标点，然后打印其频率。
 
 **范例**：
@@ -73,14 +71,8 @@ int main()
 
 # Python3 implementation of the approach
 
-> 原文：[https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/](https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/)
-
 # Function to print the coordinates along with
-
-> 原文：[https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/](https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/)
 # their frequency in ascending order
-
-> 原文：[https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/](https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/)
 def Print(x, y, n):
 
     # map to store the pairs
@@ -99,8 +91,6 @@ def Print(x, y, n):
         print(i[0], i[1], m[i])
 
 # Driver code
-
-> 原文：[https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/](https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/)
 x = [1, 2, 1, 1, 1]
 y = [1, 1, 3, 1, 3]
 n = len(x)
@@ -108,11 +98,7 @@ n = len(x)
 Print(x, y, n)
 
 # This code is contributed 
-
-> 原文：[https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/](https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/)
 # by mohit kumar
-
-> 原文：[https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/](https://www.geeksforgeeks.org/print-2-d-co-ordinate-points-in-ascending-order-followed-by-their-frequencies/)
 
 ```
 

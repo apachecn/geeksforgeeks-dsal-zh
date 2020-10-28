@@ -1,7 +1,5 @@
 # 允许以排列排列形成回文的最小插入量
 
-> 原文：[https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/](https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/)
-
 给定一串小写字母。 查找要插入字符串中的最小字符，使其可以成为回文。 我们可以更改字符串中字符的位置。
 
 **示例**：
@@ -136,22 +134,12 @@ public class Palindrome {
 ```py
 
 # Python3 program to find minimum number 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/](https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/)
 # of insertions to make a string 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/](https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/)
 # palindrome 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/](https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/)
 import math as mt 
 
 # Function will return number of 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/](https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/)
 # characters to be added 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/](https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/)
 def minInsertion(tr1): 
 
     # To store str1ing length 
@@ -185,17 +173,11 @@ def minInsertion(tr1):
         return res - 1
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/](https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/)
 str1 = "geeksforgeeks"
 print(minInsertion(str1)) 
 
 # This code is contributed by  
-
-> 原文：[https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/](https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/)
 # Mohit kumar 29 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/](https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/)
 
 ```
 

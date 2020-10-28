@@ -1,7 +1,5 @@
 # 不是任何其他给定列表的子集的列表计数
 
-> 原文：[https://www.geeksforgeeks.org/count-of-lists-which-are-not-a-subset-of-any-other-given-lists/](https://www.geeksforgeeks.org/count-of-lists-which-are-not-a-subset-of-any-other-given-lists/)
-
 给定 **N** 个字符串列表，任务是查找不是任何其他给定列表的子列表的列表计数。
 
 **示例**：

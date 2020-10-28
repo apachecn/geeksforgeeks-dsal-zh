@@ -1,7 +1,5 @@
 # 数据结构概述| 第 2 组（二叉树，BST，堆和哈希）
 
-> 原文：[https://www.geeksforgeeks.org/overview-of-data-structures-set-2-binary-tree-bst-heap-and-hash/](https://www.geeksforgeeks.org/overview-of-data-structures-set-2-binary-tree-bst-heap-and-hash/)
-
 我们已经讨论了[数组，链接列表，队列和堆栈的概述](https://www.geeksforgeeks.org/overview-of-data-structures-set-1-linear-data-structures/)。 在本文中，将讨论以下数据结构。
 
 [**5.二进制树**](#code5) [

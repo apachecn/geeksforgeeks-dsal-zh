@@ -1,7 +1,5 @@
 # 最接近 N 的最小数字仅由奇数位组成
 
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
-
 给定整数 **N** ，任务是找到最接近 **N** 且仅具有奇数位的数字。 如果存在多个这样的数字，请打印最小值。
 
 **示例**：
@@ -57,21 +55,11 @@
 ```
 
 # Python program to implement 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
 # the above approach 
 
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
-
 # Function to return the smaller 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
 # number closest to N made up of 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
 # only odd digits 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
 def closest_smaller(N): 
 
     N = str(N) 
@@ -140,14 +128,8 @@ def closest_smaller(N):
     return result 
 
 # Function to return the greater 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
 # number closest to N made up of 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
 # only odd digits 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
 def closest_greater(N): 
 
     N = str(N) 
@@ -179,11 +161,7 @@ def closest_greater(N):
     return result 
 
 # Function to check if all  
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
 # digits of N are odd or not 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
 def check_all_digits_odd(N): 
 
     N = str(N) 
@@ -210,14 +188,8 @@ def check_all_digits_odd(N):
     return False
 
 # Function to return the  
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
 # closest number to N 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
 # having odd digits only 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
 def closestNumber(N): 
 
     # If all digits of N are odd 
@@ -241,8 +213,6 @@ def closestNumber(N):
             print(r) 
 
 # Driver Code. 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
 if __name__ == '__main__': 
 
     N = 110

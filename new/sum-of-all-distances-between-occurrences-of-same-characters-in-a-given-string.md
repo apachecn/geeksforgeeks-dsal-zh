@@ -1,7 +1,5 @@
 # 给定字符串
 
-> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
-
 中出现相同字符之间的所有距离之和
 
 给定字符串 **S** ，任务是从包含相同字符的给定字符串中查找所有索引对对之间的距离之和。
@@ -116,17 +114,9 @@ public static void main(String[] args)
 
 # Python3 program for the above approach 
 
-> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
-
 # Function to calculate the sum
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
 # of distances between occurrences
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
 # of same characters in a string
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
 def findSum(s):
 
     sum = 0
@@ -144,15 +134,11 @@ def findSum(s):
     return sum
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
 s = "ttt"
 
 print(findSum(s))
 
 # This code is contributed by code_hunt
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
 
 ```
 
@@ -368,17 +354,9 @@ public static void main (String[] args)
 
 # Python3 program for the above approach
 
-> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
-
 # Function to calculate the sum
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
 # of distances between occurrences
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
 # of same characters in a string
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
 def findSum(s):
     visited = [0 for i in range(256)];
     distance = [0 for i in range(256)];
@@ -415,8 +393,6 @@ def findSum(s):
     return sum;
 
 # Driver code
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
 if __name__ == '__main__':
 
     s = "ttt";
@@ -425,8 +401,6 @@ if __name__ == '__main__':
     print(findSum(s));
 
 # This code is contributed by Rajput-Ji
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
 
 ```
 

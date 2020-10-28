@@ -1,7 +1,5 @@
 # 打印二叉树的所有副本级
 
-> 原文：[https://www.geeksforgeeks.org/print-all-co-prime-levels-of-a-binary-tree/](https://www.geeksforgeeks.org/print-all-co-prime-levels-of-a-binary-tree/)
-
 给定[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，任务是打印该树的所有**互质数级**。
 
 > 如果此树的所有节点彼此都是[互素](https://www.geeksforgeeks.org/check-two-numbers-co-prime-not/)，则将二叉树的任何级别都称为**互素级别**。

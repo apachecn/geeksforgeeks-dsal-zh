@@ -1,7 +1,5 @@
 # 来自数组
 
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/](https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/)
-
 的总和为 K 的最小子数组
 
 给定由 **N** 个整数组成的数组 **arr []** ，任务是找到总和等于 **K** 的最小子数组的长度。
@@ -204,20 +202,12 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/](https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/)
 # the above approach
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/](https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/)
 from collections import defaultdict
 import sys
 
 # Function to find the length of the
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/](https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/)
 # smallest subarray with sum K
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/](https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/)
 def subArraylen(arr, n, K):
 
     # Stores the frequency of
@@ -259,8 +249,6 @@ def subArraylen(arr, n, K):
     return ln
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/](https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/)
 arr = [ 1, 2, 4, 3, 2, 4, 1 ]
 n = len(arr)
 
@@ -269,16 +257,12 @@ K = 7
 ln = subArraylen(arr, n, K)
 
 # Function call
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/](https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/)
 if(ln == sys.maxsize):
     print("-1")
 else:
     print(ln)
 
 # This code is contributed by Shivam Singh
-
-> 原文：[https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/](https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/)
 
 ```
 

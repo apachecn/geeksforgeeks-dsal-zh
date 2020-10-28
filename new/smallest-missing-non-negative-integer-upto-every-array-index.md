@@ -1,7 +1,5 @@
 # 丢失的最小非负整数，直到每个数组索引
 
-> 原文：[https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/](https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/)
-
 给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，对于每个数组索引，任务是找到[最小的丢失的非负整数](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/) ]直到给定数组的索引。
 
 **示例**：
@@ -158,21 +156,11 @@ public static void main (String[] args)
 ```py
 
 # Python3 program to implement
-
-> 原文：[https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/](https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/)
 # the above approach
 
-> 原文：[https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/](https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/)
-
 # Function to prthe smallest
-
-> 原文：[https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/](https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/)
 # missing non-negative integer
-
-> 原文：[https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/](https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/)
 # up to every array indices
-
-> 原文：[https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/](https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/)
 def smlstNonNeg(arr, N):
 
     # Stores the smallest missing
@@ -204,8 +192,6 @@ def smlstNonNeg(arr, N):
         print(smNonNeg, end = " ")
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/](https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/)
 if __name__ == '__main__':
 
     arr = [ 0, 1, 2, 3, 5 ]
@@ -214,8 +200,6 @@ if __name__ == '__main__':
     smlstNonNeg(arr, N)
 
 # This code is contributed by mohit kumar 29
-
-> 原文：[https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/](https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/)
 
 ```
 

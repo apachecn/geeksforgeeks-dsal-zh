@@ -1,7 +1,5 @@
 # 质数大于或等于 k 的数字
 
-> 原文：[https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/](https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/)
-
 给定一个数组，找到出现在最小 k 频率（频率> = k）中的素数次的元素。
 
 **示例**：
@@ -172,21 +170,11 @@ public class PrimeNumber {
 ```py
 
 # Python3 code to find number  
-
-> 原文：[https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/](https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/)
 # occurring prime number of 
-
-> 原文：[https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/](https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/)
 # times with frequency >= k 
 
-> 原文：[https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/](https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/)
-
 # Function to find number  
-
-> 原文：[https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/](https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/)
 # with prime occurrences 
-
-> 原文：[https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/](https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/)
 def primeOccurences(arr, k): 
     map = {} 
 
@@ -212,11 +200,7 @@ def primeOccurences(arr, k):
             print(entry) 
 
 # Check if the number of occurrences 
-
-> 原文：[https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/](https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/)
 # are primes or not 
-
-> 原文：[https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/](https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/)
 def isPrime(n): 
 
     if (n > 2 and not n % 2) or n == 1: 
@@ -230,8 +214,6 @@ def isPrime(n):
 
 # Driver code 
 
-> 原文：[https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/](https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/)
-
 arr = [ 11, 11, 11, 23, 11, 37, 
         37, 51, 51, 51, 51, 51 ] 
 k = 2
@@ -239,8 +221,6 @@ k = 2
 primeOccurences(arr, k) 
 
 # This code is contributed by Ansu Kumari. 
-
-> 原文：[https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/](https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 给定数组
 
-> 原文：[https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/](https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/)
-
 中任何特殊对之间的最小距离
 
 给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到特殊对的索引之间的最小可能绝对差。
@@ -167,16 +165,10 @@ int main() 
 ```py
 
 # Python3 program for the above approach 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/](https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/)
 import sys 
 
 # Function that finds the minimum 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/](https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/)
 # difference between two vectors 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/](https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/)
 def mindist(left, right): 
 
     res = sys.maxsize 
@@ -202,11 +194,7 @@ def mindist(left, right):
     return res 
 
 # Function to find the minimum distance 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/](https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/)
 # between index of special pairs 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/](https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/)
 def specialPairs(nums): 
 
     # Stores the index of each element 
@@ -251,8 +239,6 @@ def specialPairs(nums):
     return res 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/](https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/)
 if __name__ == "__main__": 
 
     # Given array  
@@ -262,8 +248,6 @@ if __name__ == "__main__":
     print(specialPairs(arr)) 
 
 # This code is contributed by dadi madhav
-
-> 原文：[https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/](https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/)
 
 ```
 

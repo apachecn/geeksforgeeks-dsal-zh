@@ -1,7 +1,5 @@
 # 阵列产品
 
-> 原文：[https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/](https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/)
-
 的不同主要因素
 
 给定一个整数数组，让我们说 P 是数组元素的乘积。 求出乘积 P 的不同素数的数量。
@@ -163,19 +161,11 @@ class GFG {
 ```py
 
 # Python3 program to count distinct  
-
-> 原文：[https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/](https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/)
 # prime factors of a number 
-
-> 原文：[https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/](https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/)
 import math 
 
 # Function to count the number of distinct  
-
-> 原文：[https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/](https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/)
 # prime factors of product of array 
-
-> 原文：[https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/](https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/)
 def Distinct_Prime_factors( a): 
 
     # use set to store distinct factors 
@@ -212,16 +202,12 @@ def Distinct_Prime_factors( a):
     return len(m) 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/](https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/)
 if __name__ == "__main__": 
 
     a = [ 1, 2, 3, 4, 5 ] 
     print (Distinct_Prime_factors(a)) 
 
 # This code is contributed by ita_c 
-
-> 原文：[https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/](https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/)
 
 ```c
 

@@ -1,7 +1,5 @@
 # 对（p，q）进行计数，以使 p 在数组中至少出现 q 次，并且 q 出现至少 p 次
 
-> 原文：[https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/](https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/)
-
 给定数组 **arr []** ，任务是对无序对正整数**（p，q）**进行计数，以使 **p 出现在数组**中。 至少 q 次**和 **q 发生至少 p 次**。**
 
 **示例**：
@@ -176,16 +174,10 @@ public static void main (String[] args) 
 ```py
 
 # Python3 implementation of the approach  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/](https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/)
 from collections import defaultdict 
 
 # Function to return the count of  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/](https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/)
 # required pairs  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/](https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/)
 def get_unordered_pairs(a, n):  
 
     # To store unique elements  
@@ -226,8 +218,6 @@ def get_unordered_pairs(a, n): 
     return number_of_pairs  
 
 # Driver code  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/](https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/)
 if __name__ == "__main__":  
 
     arr = [3, 3, 2, 2, 2]  
@@ -235,11 +225,7 @@ if __name__ == "__main__": 
     print(get_unordered_pairs(arr, n)) 
 
 # This code is contributed 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/](https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/)
 # by Rituraj Jain 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/](https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/)
 
 ```
 

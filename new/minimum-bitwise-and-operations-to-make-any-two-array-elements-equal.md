@@ -1,7 +1,5 @@
 # 使两个数组元素相等的最小按位与运算
 
-> 原文：[https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/](https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/)
-
 给定一个大小为'n'的整数数组和一个整数'k'，
 
 我们可以在任意数组元素和“ k”之间执行任意次的按位 AND 运算。
@@ -285,16 +283,10 @@ class geeks
 ```py
 
 # Python3 implementation of the approach  
-
-> 原文：[https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/](https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/)
 from collections import defaultdict 
 
 # Function to count the minimum  
-
-> 原文：[https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/](https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/)
 # operations required.  
-
-> 原文：[https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/](https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/)
 def minOperations(a, n, K):  
 
     Map = defaultdict(lambda:False) 
@@ -354,8 +346,6 @@ def minOperations(a, n, K): 
     return -1
 
 # Driver code  
-
-> 原文：[https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/](https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/)
 if __name__ == "__main__":  
 
     K = 3
@@ -366,8 +356,6 @@ if __name__ == "__main__": 
     print(minOperations(a, n, K))  
 
 # This code is contributed by Rituraj Jain 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/](https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/)
 
 ```
 

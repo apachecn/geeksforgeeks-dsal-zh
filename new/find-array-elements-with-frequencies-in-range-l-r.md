@@ -1,7 +1,5 @@
 # 查找频率范围为[l，r]的数组元素
 
-> 原文：[https://www.geeksforgeeks.org/find-array-elements-with-frequencies-in-range-l-r/](https://www.geeksforgeeks.org/find-array-elements-with-frequencies-in-range-l-r/)
-
 给定一个整数数组，请从该数组中查找其频率在[l，r]范围内的元素。
 
 **示例**：
@@ -122,11 +120,7 @@ public class GFG {
 ```py
 
 # Python 3 program to find the elements whose 
-
-> 原文：[https://www.geeksforgeeks.org/find-array-elements-with-frequencies-in-range-l-r/](https://www.geeksforgeeks.org/find-array-elements-with-frequencies-in-range-l-r/)
 # frequency lies in the range [l, r] 
-
-> 原文：[https://www.geeksforgeeks.org/find-array-elements-with-frequencies-in-range-l-r/](https://www.geeksforgeeks.org/find-array-elements-with-frequencies-in-range-l-r/)
 
 def findElements(arr, n, l, r): 
 
@@ -148,8 +142,6 @@ def findElements(arr, n, l, r):
             print(arr[i], end = " ") 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/find-array-elements-with-frequencies-in-range-l-r/](https://www.geeksforgeeks.org/find-array-elements-with-frequencies-in-range-l-r/)
 if __name__ == '__main__': 
     arr = [1, 2, 3, 3, 2, 2, 5] 
     n = len(arr) 
@@ -158,11 +150,7 @@ if __name__ == '__main__':
     findElements(arr, n, l, r) 
 
 # This code is contributed by 
-
-> 原文：[https://www.geeksforgeeks.org/find-array-elements-with-frequencies-in-range-l-r/](https://www.geeksforgeeks.org/find-array-elements-with-frequencies-in-range-l-r/)
 # Shashank_Sharma 
-
-> 原文：[https://www.geeksforgeeks.org/find-array-elements-with-frequencies-in-range-l-r/](https://www.geeksforgeeks.org/find-array-elements-with-frequencies-in-range-l-r/)
 
 ```
 

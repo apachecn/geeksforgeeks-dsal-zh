@@ -1,7 +1,5 @@
 # 删除出现 k 次以上的字符
 
-> 原文：[https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/)
-
 给定一串小写字母，通过删除出现在字符串中 k 次以上的字符来减少它。
 
 **示例**：
@@ -134,14 +132,8 @@ public static void main(String args[])
 ```py
 
 # Python 3 program to reduce the string by 
-
-> 原文：[https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/)
 # removing the characters which 
-
-> 原文：[https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/)
 # appears more than k times 
-
-> 原文：[https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/)
 MAX_CHAR = 26
 
 def removeChars(arr, k): 
@@ -170,8 +162,6 @@ def removeChars(arr, k):
         print(arr[i], end = '') 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/)
 if __name__ == '__main__': 
     str = "geeksforgeeks"
     str = list(str) 
@@ -179,11 +169,7 @@ if __name__ == '__main__':
     removeChars(str, k) 
 
 # This code is contributed by 
-
-> 原文：[https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/)
 # Shashank_Sharma 
-
-> 原文：[https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/)
 
 ```
 

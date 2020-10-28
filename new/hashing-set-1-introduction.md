@@ -1,7 +1,5 @@
 # 哈希| 第 1 组（简介）
 
-> 原文：[https://www.geeksforgeeks.org/hashing-set-1-introduction/](https://www.geeksforgeeks.org/hashing-set-1-introduction/)
-
 假设我们要设计一个系统来存储使用电话号码键控的员工记录。 我们希望以下查询能够有效执行：
 
 1.  插入电话号码和相应的信息。

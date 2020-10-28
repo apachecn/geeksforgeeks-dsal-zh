@@ -1,7 +1,5 @@
 # 检查给定数组列表的任何置换的串联是否生成给定数组
 
-> 原文：[https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/](https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/)
-
 给定 **N** 个不同整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 以及一个不同整数的数组**个[]** 的列表， 检查给定的数组列表是否可以以任何顺序串联以获得给定的数组。 如果可能，则打印**“是”** 。 否则，打印**“否”** 。
 
 **示例**：
@@ -271,19 +269,11 @@ class GFG {
 ```py
 
 # Python3 program for the above approach
-
-> 原文：[https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/](https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/)
 from array import *
 
 # Function to check if it is possible
-
-> 原文：[https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/](https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/)
 # to obtain array by concatenating
-
-> 原文：[https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/](https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/)
 # the arrays in list pieces[]
-
-> 原文：[https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/](https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/)
 def check(arr, pieces):
 
     # Stores the index of element in
@@ -340,8 +330,6 @@ def check(arr, pieces):
     return True
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/](https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/)
 if __name__ == "__main__":
 
     arr = [ 1, 2, 4, 3 ]
@@ -356,8 +344,6 @@ if __name__ == "__main__":
         print("No")
 
 # This code is contributed by akhilsaini
-
-> 原文：[https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/](https://www.geeksforgeeks.org/check-if-concatenation-of-any-permutation-of-given-list-of-arrays-generates-the-given-array/)
 
 ```
 

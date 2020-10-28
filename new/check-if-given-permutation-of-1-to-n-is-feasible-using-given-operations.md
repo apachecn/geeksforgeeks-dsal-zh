@@ -1,7 +1,5 @@
 # 使用给定的操作检查给定的 1 到 N 的排列是否可行
 
-> 原文：[https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/](https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/)
-
 给定大小为 **N** 的数组 **arr []** ，检查此数组是否在以下约束下构建的任务：
 
 1.  该数组只能包含 1 到 N 之间的数字。
@@ -228,21 +226,11 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to check if we 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/](https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/)
 # can build the given array 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/](https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/)
 # under given constraints. 
 
-> 原文：[https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/](https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/)
-
 # Function return true if we 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/](https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/)
 # can build the array 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/](https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/)
 def CheckArray(a, n):
 
     f = 0
@@ -294,8 +282,6 @@ def CheckArray(a, n):
     return True
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/](https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/)
 arr = [ 2, 3, 4, 5, 1 ]
 N = len(arr)
 
@@ -305,8 +291,6 @@ else:
     print('NO')
 
 # This code is contributed by yatinagg
-
-> 原文：[https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/](https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/)
 
 ```
 

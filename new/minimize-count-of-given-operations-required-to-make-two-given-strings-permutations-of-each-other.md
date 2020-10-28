@@ -1,7 +1,5 @@
 # 最小化使两个给定字符串彼此置换所需的给定操作数
 
-> 原文：[https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/](https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/)
-
 给定两个[字符串](https://www.geeksforgeeks.org/string-data-structure/) **str1** 和 **str2** ，任务是对两个字符串之一进行以下三种类型的最小操作数计数 使 **str1** 和 **str2** 彼此置换：
 
 1.  在字符串中插入一个字符。
@@ -218,21 +216,11 @@ public static void main(final String[] args)
 ```py
 
 # Python3 program to implement
-
-> 原文：[https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/](https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/)
 # the above approach
 
-> 原文：[https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/](https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/)
-
 # Function to minimize the count of
-
-> 原文：[https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/](https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/)
 # operations to make str1 and str2
-
-> 原文：[https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/](https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/)
 # permutations of each other
-
-> 原文：[https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/](https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/)
 def ctMinEdits(str1, str2):
 
     N1 = len(str1)
@@ -277,16 +265,12 @@ def ctMinEdits(str1, str2):
     return max(sum1, sum2)
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/](https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/)
 str1 = "geeksforgeeks"
 str2 = "geeksforcoder"
 
 print(ctMinEdits(str1, str2))
 
 # This code is contributed by code_hunt
-
-> 原文：[https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/](https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/)
 
 ```
 

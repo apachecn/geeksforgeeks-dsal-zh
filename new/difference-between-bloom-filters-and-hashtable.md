@@ -1,7 +1,5 @@
 # Bloom 过滤器与哈希表
 
-> 原文：[https://www.geeksforgeeks.org/difference-between-bloom-filters-and-hashtable/](https://www.geeksforgeeks.org/difference-between-bloom-filters-and-hashtable/)
-
 之间的区别
 
 **HashTable**：

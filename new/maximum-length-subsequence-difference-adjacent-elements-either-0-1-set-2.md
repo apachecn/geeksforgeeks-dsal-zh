@@ -1,7 +1,5 @@
 # 最大长度子序列，相邻元素之间的差为 0 或 1 | 设置 2
 
-> 原文：[https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/)
-
 给定 **n** 个整数的数组。 问题在于找到子序列的最大长度，且子序列中相邻元素之间的差为 0 或 1。需要 O（n）的时间复杂度。
 
 **示例**：
@@ -172,22 +170,12 @@ class GFG
 ```py
 
 # Python3 implementation to find maximum  
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/)
 # length subsequence with difference between  
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/)
 # adjacent elements as either 0 or 1  
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/)
 from collections import defaultdict 
 
 # Function to find maximum length subsequence with  
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/)
 # difference between adjacent elements as either 0 or 1  
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/)
 def maxLenSub(arr, n):  
 
     # hash table to map the array element with the  
@@ -231,8 +219,6 @@ def maxLenSub(arr, n): 
     return maxLen 
 
 # Driver program to test above  
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/)
 if __name__ == "__main__":  
 
     arr = [2, 5, 6, 3, 7, 6, 5, 8]  
@@ -240,8 +226,6 @@ if __name__ == "__main__": 
     print("Maximum length subsequence =", maxLenSub(arr, n)) 
 
 # This code is contributed by Rituraj Jain 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/)
 
 ```
 

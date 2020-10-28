@@ -1,7 +1,5 @@
 # 允许进行重排的最小等回文切割
 
-> 原文：[https://www.geeksforgeeks.org/minimum-equal-palindromic-cuts-with-rearrangements-allowed/](https://www.geeksforgeeks.org/minimum-equal-palindromic-cuts-with-rearrangements-allowed/)
-
 给定一个长度为 n 的字符串。 重新排列字符串后，找到最小可能的切口数（如果需要），以使每个切口都是回文，并且每个切口的长度相等。 也就是说，如果在分割之前允许重新排列字符串，则找到可以通过分割给定字符串而获得的等长回文数的最小数目。
 
 例子：

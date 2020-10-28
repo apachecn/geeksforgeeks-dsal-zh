@@ -1,7 +1,5 @@
 # 检查是否可以从给定的字符串中形成 K 个回文字符串
 
-> 原文：[https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/](https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/)
-
 给定大小为 **N** 的字符串 **S** 和整数 **K** ，任务是确定是否可以安排字符串的字符以使 **K** [回文字符串](https://www.geeksforgeeks.org/string-palindrome/)同时显示。
 
 **范例**：
@@ -193,18 +191,10 @@ public static void main (String[] args)
 ```py
 
 # Python3 program to check whether 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/](https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/)
 # the is K palindrome or not 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/](https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/)
 
 # Function to check whether 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/](https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/)
 # the is K palindrome or not 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/](https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/)
 def can_Construct(S, K): 
 
     # map to frequency of character 
@@ -243,8 +233,6 @@ def can_Construct(S, K):
     return True
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/](https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/)
 if __name__ == '__main__': 
 
     S = "annabelle"
@@ -256,8 +244,6 @@ if __name__ == '__main__':
         print("No") 
 
 # This code is contributed by mohit kumar 29 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/](https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/)
 
 ```
 

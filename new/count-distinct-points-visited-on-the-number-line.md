@@ -1,7 +1,5 @@
 # 计算在数字行
 
-> 原文：[https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/](https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/)
-
 上访问过的不同点
 
 给定某人的位置 **current_pos** 和二进制字符串**路径**，即该人执行的移动，如果 **path [i] ='0'**，则 人向左移动了一步，并且如果 **path [i] ='1'**，那么人向右移动了一步。 任务是找到该人拜访的不同职位的数量。
@@ -203,11 +201,7 @@ class GFG {
 ```py
 
 # Utility function to return the number 
-
-> 原文：[https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/](https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/)
 # of distinct elements in an array 
-
-> 原文：[https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/](https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/)
 def countDistinct(arr, Len): 
 
     hs = dict() 
@@ -222,11 +216,7 @@ def countDistinct(arr, Len):
     return len(hs) 
 
 # Function to return the count of 
-
-> 原文：[https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/](https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/)
 # positions the person went to 
-
-> 原文：[https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/](https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/)
 def getDistinctPoints(current_pos, path): 
 
     # Length of path 
@@ -266,16 +256,12 @@ def getDistinctPoints(current_pos, path):
     return countDistinct(points, Len + 1) 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/](https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/)
 current_pos = 5
 path = "011101"
 
 print(getDistinctPoints(current_pos, path)) 
 
 # This code is contributed by mohit kumar 
-
-> 原文：[https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/](https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/)
 
 ```
 

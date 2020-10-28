@@ -1,7 +1,5 @@
 # 将数组拆分为两个相等长度的子集，以使一个数字的所有重复都位于单个子集中
 
-> 原文：[https://www.geeksforgeeks.org/split-array-into-two-equal-length-subsets-such-that-all-repetitions-of-a-number-lies-in-a-single-subset/](https://www.geeksforgeeks.org/split-array-into-two-equal-length-subsets-such-that-all-repetitions-of-a-number-lies-in-a-single-subset/)
-
 给定由 **N** 个整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是检查是否有可能将整数分成两个等长的子集，以便所有 任何数组元素的重复都属于同一子集。 如果发现是真的，则打印**“是”** 。 否则，打印**“否”** 。
 
 **示例**：

@@ -1,7 +1,5 @@
 # 数组范围查询，用于统计具有更新的斐波纳契数的数量
 
-> 原文：[https://www.geeksforgeeks.org/array-range-queries-to-count-the-number-of-fibonacci-numbers-with-updates/](https://www.geeksforgeeks.org/array-range-queries-to-count-the-number-of-fibonacci-numbers-with-updates/)
-
 给定 **N** 个整数的数组 **arr []** ，任务是执行以下两个查询：
 
 *   **查询（开始，结束）**：从头到尾打印子数组中的斐波那契数

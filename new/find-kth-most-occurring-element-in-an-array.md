@@ -1,7 +1,5 @@
 # 查找数组
 
-> 原文：[https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/](https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/)
-
 中第 K 个最常出现的元素
 
 给定大小为 **N** 的整数 **arr []** 和数字 **K** 的数组，任务是找到第个 **K <sup>]</sup>** 此数组中最常出现的元素。
@@ -274,18 +272,10 @@ public static void main(String[] args)
 ```py
 
 # Python implementation to find K-th 
-
-> 原文：[https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/](https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/)
 # most occurring element in an array
 
-> 原文：[https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/](https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/)
-
 # Function to find K-th most 
-
-> 原文：[https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/](https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/)
 # occurring element in an array
-
-> 原文：[https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/](https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/)
 def findKthMostOccurring(arr, K):
 
     # Initializing a dictionary
@@ -355,8 +345,6 @@ def findKthMostOccurring(arr, K):
         K -= 1
 
 # Driver code           
-
-> 原文：[https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/](https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/)
 if __name__ == "__main__":
     arr = [1, 4, 4, 4, 2, 2, 2, 5, 5, 5, 5, 5, 7, 7, 8, 8, 8, 8]
     K = 3

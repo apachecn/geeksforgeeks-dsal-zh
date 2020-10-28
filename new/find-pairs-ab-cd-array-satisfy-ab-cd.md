@@ -1,7 +1,5 @@
 # 查找满足 ab = cd 的所有对（a，b）和（c，d）对
 
-> 原文：[https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
-
 给定一个由不同整数组成的数组，任务是找到两对（a，b）和（c，d），使得 ab = cd，其中 a，b，c 和 d 是不同元素。
 
 **示例**：
@@ -166,18 +164,10 @@ class GFG {
 ```py
 
 # Python3 program to find four elements  
-
-> 原文：[https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
 # a, b, c and d in array such that ab = cd 
 
-> 原文：[https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
-
 # Function to find out four elements in array 
-
-> 原文：[https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
 # whose product is ab = cd 
-
-> 原文：[https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
 def findPairs(arr, n): 
 
     found = False
@@ -208,18 +198,12 @@ def findPairs(arr, n):
         print("No pairs Found") 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
 arr = [1, 2, 3, 4, 5, 6, 7, 8] 
 n = len(arr) 
 findPairs(arr, n) 
 
 # This code is contributed 
-
-> 原文：[https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
 # by mohit kumar 
-
-> 原文：[https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
 
 ```
 

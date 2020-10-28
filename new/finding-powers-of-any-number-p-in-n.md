@@ -1,7 +1,5 @@
 # 寻找 N 中任意数量 P 的幂！
 
-> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
-
 前提条件：[打印所有素数及其幂](http://Print all prime factors and their powers)
 
 给定自然数 **N** 和 **P** ，任务是找到 **P [ **N！** 。
@@ -295,27 +293,15 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to find the power 
-
-> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 # of P in N! 
-
-> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 import math
 
 # Map to store all 
-
-> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 # the prime factors of P 
-
-> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 Map = {} 
 
 # Function to find the prime 
-
-> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 # factors of N im Map 
-
-> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 def findPrimeFactors(N): 
 
     # Clear map 
@@ -350,11 +336,7 @@ def findPrimeFactors(N):
             Map[N] = 1
 
 # Function to find the power 
-
-> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 # of prime number P in N! 
-
-> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 def PowInFactN(N, P): 
 
     ans = 0
@@ -376,11 +358,7 @@ def PowInFactN(N, P):
     return ans
 
 # Function that find the 
-
-> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 # powers of any P in N! 
-
-> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 def findPowers(N, P): 
 
     # Find all prime factors 
@@ -418,8 +396,6 @@ def findPowers(N, P):
 N, P = 24, 4
 
 # Driver code
-
-> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 if __name__ == "__main__":
 
   # Function to find 
@@ -427,8 +403,6 @@ if __name__ == "__main__":
   print(findPowers(N, P))
 
 # This code is contriibuted by divyeshrabadiya07
-
-> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 
 ```
 

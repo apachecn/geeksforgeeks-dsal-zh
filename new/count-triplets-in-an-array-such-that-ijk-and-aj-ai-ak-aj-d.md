@@ -1,7 +1,5 @@
 # 对数组中的三胞胎进行计数，使得 i
 
-> 原文：[https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/](https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/)
-
 给定一个数组 **arr** 和一个整数 **D** ，任务是对数组中的三元组（arr [i]，arr [j]，arr [k]）进行计数 那：
 
 1.  i
@@ -115,11 +113,7 @@ class GFG {
 
 # Python3 program to count the triplets 
 
-> 原文：[https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/](https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/)
-
 # Function to count the triplets 
-
-> 原文：[https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/](https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/)
 def CountTriplets(arr, d): 
 
     count = 0; 
@@ -137,8 +131,6 @@ def CountTriplets(arr, d):
     return count; 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/](https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/)
 if __name__ == '__main__': 
 
     A = [ 1, 6, 7, 7, 8, 10, 12, 13, 14 ]; 
@@ -147,8 +139,6 @@ if __name__ == '__main__':
     print(CountTriplets(A, D)); 
 
 # This code is contributed by Rajput-Ji 
-
-> 原文：[https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/](https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/)
 
 ```
 

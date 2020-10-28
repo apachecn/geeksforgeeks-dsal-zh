@@ -1,7 +1,5 @@
 # 使用 Java 中的 LinkedHashMap 按出现的顺序打印字符及其频率。
 
-> 原文：[https://www.geeksforgeeks.org/print-characters-and-their-frequencies-in-order-of-occurrence-using-a-linkedhashmap-in-java/](https://www.geeksforgeeks.org/print-characters-and-their-frequencies-in-order-of-occurrence-using-a-linkedhashmap-in-java/)
-
 给定仅包含小写字符的字符串 **str** 。 任务是按照给定字符串中出现的顺序打印字符及其频率。
 
 **示例**：

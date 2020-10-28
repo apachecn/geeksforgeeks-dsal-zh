@@ -1,7 +1,5 @@
 # 查找两个字符串中不常见的字符
 
-> 原文：[https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/)
-
 查找并打印两个给定字符串中不常见的字符（按排序顺序）。 此处不常见的字符表示该字符出现在一个字符串中，或​​者出现在其他字符串中，但都不出现在两个字符串中。 字符串仅包含小写字符，并且可以包含重复项。
 
 **来源**：[亚马逊访谈经验| 套装 355（体验 1 年）](https://www.geeksforgeeks.org/amazon-interview-experience-set-355-1-year-experienced/)
@@ -177,23 +175,13 @@ class GFG 
 ```
 
 # Python 3 implementation to find the  
-
-> 原文：[https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/)
 # uncommon characters of the two strings  
 
-> 原文：[https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/)
-
 # size of the hash table  
-
-> 原文：[https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/)
 MAX_CHAR = 26
 
 # function to find the uncommon characters  
-
-> 原文：[https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/)
 # of the two strings  
-
-> 原文：[https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/)
 def findAndPrintUncommonChars(str1, str2): 
 
     # mark presence of each character as 0  
@@ -229,19 +217,13 @@ def findAndPrintUncommonChars(str1, str2):
             print(chr(i + ord('a')), end = " ") 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/)
 if __name__ == "__main__": 
     str1 = "characters"
     str2 = "alphabets"
     findAndPrintUncommonChars(str1, str2) 
 
 # This code is contributed 
-
-> 原文：[https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/)
 # by Sairahul099 
-
-> 原文：[https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/)
 
 ```
 

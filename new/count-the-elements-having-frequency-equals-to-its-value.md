@@ -1,7 +1,5 @@
 # 计算频率等于其值
 
-> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/)
-
 的元素
 
 给定一个大小为 **N** 的整数 **arr []** 数组，任务是对频率等于其值的频率的所有元素进行计数。
@@ -134,15 +132,9 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to count the elements
-
-> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/)
 # having frequency equals to its value
 
-> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/)
-
 # Function to find the count
-
-> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/)
 def find_maxm(arr, n):
 
     # Hash map for counting frquency
@@ -170,8 +162,6 @@ def find_maxm(arr, n):
     return ans
 
 # Driver code
-
-> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/)
 if __name__ == "__main__":
 
     arr = [ 3, 2, 2, 3, 4, 3 ]
@@ -181,8 +171,6 @@ if __name__ == "__main__":
     print(find_maxm(arr, n))
 
 # This code is contributed by akhilsaini
-
-> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/)
 
 ```
 

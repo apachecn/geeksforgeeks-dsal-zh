@@ -1,7 +1,5 @@
 # 以给定字符串
 
-> 原文：[https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/](https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/)
-
 的字符频率降序生成数字
 
 给定长度为 **N** 的字符串 **Str** ，由小写字母组成，任务是按照给定字符串中字符频率的降序生成数字。 如果两个字符具有相同的频率，则首先显示具有较小 ASCII 值的字符。 分配给字符{a，b，…。，y，z}的数字分别为{1,2，…。，25，26}。
@@ -146,18 +144,10 @@ int main()
 ```py
 
 # Python3 Program to implement 
-
-> 原文：[https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/](https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/)
 # the above approach
 
-> 原文：[https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/](https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/)
-
 # Function to sort map 
-
-> 原文：[https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/](https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/)
 # accordingly
-
-> 原文：[https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/](https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/)
 def sort(m):
 
     # Declaring vector 
@@ -204,11 +194,7 @@ def sort(m):
     return out
 
 # Function to generate and return 
-
-> 原文：[https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/](https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/)
 # the required number
-
-> 原文：[https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/](https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/)
 def formString(s):
 
     # Stores the frequencies
@@ -228,15 +214,11 @@ def formString(s):
     return res
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/](https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/)
 N = 4
 Str = "akkzzz"
 print(formString(Str))
 
 # This code is contributed by avanitrachhadiya2155
-
-> 原文：[https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/](https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/)
 
 ```
 

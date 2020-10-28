@@ -1,7 +1,5 @@
 # 克隆具有随机指针的二叉树
 
-> 原文：[https://www.geeksforgeeks.org/clone-binary-tree-random-pointers/](https://www.geeksforgeeks.org/clone-binary-tree-random-pointers/)
-
 给定一个二叉树，其中每个节点都具有以下结构。
 
 ```

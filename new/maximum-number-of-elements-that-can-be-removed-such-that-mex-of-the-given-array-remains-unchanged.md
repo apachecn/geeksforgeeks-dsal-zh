@@ -1,7 +1,5 @@
 # 可以删除的最大元素数，以使给定阵列的 MEX 保持不变
 
-> 原文：[https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/](https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/)
-
 给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是计算在不更改[[ 原始阵列的 **MEX** 。
 
 > **MEX** 是数组中不存在的[最小正整数。](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/)
@@ -166,14 +164,8 @@ public static void main(String[] args)
 
 # Pyhton3 program for the above approach 
 
-> 原文：[https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/](https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/)
-
 # Function to find the maximum number 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/](https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/)
 # of elements that can be removed 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/](https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/)
 def countRemovableElem(arr, N): 
 
     # Initialize hash[] with 0s 
@@ -199,8 +191,6 @@ def countRemovableElem(arr, N):
     print(N - (mex - 1)) 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/](https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/)
 if __name__ == '__main__': 
 
     # Given array 
@@ -213,8 +203,6 @@ if __name__ == '__main__':
     countRemovableElem(arr, N) 
 
 # This code is contributed by akhilsaini
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/](https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 长度为 K 的子字符串的计数，其中恰好有 K 个不同的字符
 
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/](https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/)
-
 给定一个小写字母的字符串 **str** 和一个整数 **K** ，任务是计算长度为 **K** 的所有子字符串，这些子字符串的正好为 **K** 不同的字符。
 
 **示例**：
@@ -240,24 +238,12 @@ public static void main(String[] args) 
 ```py
 
 # Python3 program to find the  
-
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/](https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/)
 # count of k length substrings  
-
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/](https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/)
 # with k distinct characters  
-
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/](https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/)
 # using sliding window  
 
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/](https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/)
-
 # Function to return the  
-
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/](https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/)
 # required count of substrings  
-
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/](https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/)
 def countSubstrings(str, K):  
 
     N = len(str)  
@@ -311,8 +297,6 @@ def countSubstrings(str, K): 
     return answer  
 
 # Driver code  
-
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/](https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/)
 if __name__ == '__main__':  
 
     str = "aabcdabbcdc"
@@ -325,8 +309,6 @@ if __name__ == '__main__': 
     print(countSubstrings(str, K))  
 
 # This code is contributed by mohit kumar 29  
-
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/](https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/)
 
 ```
 

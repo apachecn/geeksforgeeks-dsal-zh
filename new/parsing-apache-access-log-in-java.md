@@ -1,7 +1,5 @@
 # 解析 Java 中的 Apache 访问日志
 
-> 原文：[https://www.geeksforgeeks.org/parsing-apache-access-log-in-java/](https://www.geeksforgeeks.org/parsing-apache-access-log-in-java/)
-
 Web 服务器日志，用于维护页面请求的历史记录，通常记录在文件末尾。 通常会添加有关请求的信息，包括客户端 IP 地址，请求日期/时间，请求的页面，HTTP 代码，服务的字节，用户代理和引荐来源网址。
 
 给定一个 Web 服务器日志记录，找到具有成功响应的 IP 地址成功 HTTL 响应的总数（200 个代码）。

@@ -1,7 +1,5 @@
 # 查询以查找二叉树
 
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
-
 的两个节点之间的距离
 
 给定一个二叉树，任务是找到一棵二叉树中两个键之间的距离，没有给出父指针。 两个节点之间的距离是要遍历以到达另一个节点的最小边数。
@@ -524,8 +522,6 @@ from math import log2
 MAX = 100001
 
 # A tree node structure 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 class Node: 
     def __init__(self, data): 
         self.data = data 
@@ -533,13 +529,9 @@ class Node:
         self.right = None
 
 # Array to store level of each node 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 level = [0] * MAX
 
 # Utility Function to store level of all nodes 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 def findLevels(root: Node): 
     global level 
 
@@ -571,18 +563,12 @@ def findLevels(root: Node):
             q.append((p[0].right, p[1] + 1)) 
 
 # Stores Euler Tour 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 Euler = [0] * MAX
 
 # index in Euler array 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 idx = 0
 
 # Find Euler Tour 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 def eulerTree(root: Node): 
     global Euler, idx 
     idx += 1
@@ -611,26 +597,16 @@ def eulerTree(root: Node):
         Euler[idx] = root.data 
 
 # checks for visited nodes 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 vis = [0] * MAX
 
 # Stores level of Euler Tour 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 L = [0] * MAX
 
 # Stores indices of the first occurrence 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 # of nodes in Euler tour 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 H = [0] * MAX
 
 # Preprocessing Euler Tour for finding LCA 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 def preprocessEuler(size: int): 
     global L, H, vis 
     for i in range(1, size + 1): 
@@ -646,19 +622,11 @@ def preprocessEuler(size: int):
             vis[Euler[i]] = 1
 
 # Sparse table of size [MAX][LOGMAX] 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 # M[i][j] is the index of the minimum value in 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 # the sub array starting at i having length 2^j 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 M = [[0 for i in range(18)] for j in range(MAX)] 
 
 # Utility function to preprocess Sparse table 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 def preprocessLCA(N: int): 
     global M 
     for i in range(N): 
@@ -677,11 +645,7 @@ def preprocessLCA(N: int):
         j += 1
 
 # Utility function to find the index of the minimum 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 # value in range a to b 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 def LCA(a: int, b: int) -> int: 
 
     # Subarray of length 2^j 
@@ -692,11 +656,7 @@ def LCA(a: int, b: int) -> int:
         return M[b - (1 << j) + 1][j] 
 
 # Function to return distance between 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 # two nodes n1 and n2 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 def findDistance(n1: int, n2: int) -> int: 
 
     # Maintain original Values 
@@ -737,8 +697,6 @@ def preProcessing(root: Node, N: int):
     preprocessLCA(2 * N - 1) 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 if __name__ == "__main__": 
 
     # Number of nodes 
@@ -764,11 +722,7 @@ if __name__ == "__main__":
     print("Dist(8, 5) =", findDistance(8, 5)) 
 
 # This code is contributed by 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 # sanjeev2552 
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 
 ```
 

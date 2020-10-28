@@ -1,7 +1,5 @@
 # 在给定范围内翻转 Q 查询的子矩阵后的二进制矩阵
 
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
-
 给定尺寸为 **M x N** 和 **Q** 尺寸为[ **x1，y1，x2，y2）的二进制矩阵 **arr [] []**** ，其中（[ **x1，y1** ）和（ **x2，y2** ）表示需要翻转的子矩阵的左上和右下索引（将 0s 转换为 1s 反之亦然）。 任务是打印执行给定的 **Q** 查询
 
 **后获得的最终矩阵。示例**：
@@ -109,15 +107,9 @@ public static void main (String[] args)
 ```py
 
 # Python3 Program to implement
-
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 # the above approach
 
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
-
 # Function to flip a submatrices
-
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 def manipulation(matrix, q):
 
     # Boundaries of the submatrix
@@ -135,23 +127,17 @@ def manipulation(matrix, q):
                 matrix[i][j] = 1
 
 # Function to perform the queries
-
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 def queries_fxn(matrix, queries):
     for q in queries:
         manipulation(matrix, q)
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 matrix = [[0, 1, 0], [1, 1, 0]]
 queries = [[1, 1, 2, 3], \
            [1, 1, 1, 1], \
            [1, 2, 2, 3]]
 
 # Function call
-
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 queries_fxn(matrix, queries)
 print(matrix)
 
@@ -283,18 +269,10 @@ public static void Main(String[] args)
 ```py
 
 # Python3 program to implement
-
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 # the above approach
 
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
-
 # Function to modify dp[][] array by
-
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 # generating prefix sum
-
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 def modifyDP(matrix, dp):
 
     for j in range(1, len(matrix)+1):
@@ -310,11 +288,7 @@ def modifyDP(matrix, dp):
                 matrix[j-1][k-1] = int(matrix[j-1][k-1]) ^ 1
 
 # Function to update dp[][] matrix
-
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 # for each query
-
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 def queries_fxn(matrix, queries, dp):
     for q in queries:
         x1, y1, x2, y2 = q
@@ -328,16 +302,12 @@ def queries_fxn(matrix, queries, dp):
     modifyDP(matrix, dp)
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 matrix = [[0, 1, 0], [1, 1, 0]]
 queries = [[1, 1, 2, 3], \
            [1, 1, 1, 1], \
            [1, 2, 2, 3]]
 
 # Initialize dp table
-
-> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 dp = [[0 for i in range(len(matrix[0])+2)] \
 for j in range(len(matrix)+2)]
 

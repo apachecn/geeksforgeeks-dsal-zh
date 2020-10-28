@@ -1,7 +1,5 @@
 # 删除出现严格少于 k 次的元素
 
-> 原文：[https://www.geeksforgeeks.org/remove-elements-that-appear-strictly-less-than-k-times/](https://www.geeksforgeeks.org/remove-elements-that-appear-strictly-less-than-k-times/)
-
 给定一个整数数组，删除严格小于 k 次的所有元素。
 
 **示例**：
@@ -130,11 +128,7 @@ class geeks 
 ```py
 
 # Python3 program to remove the elements which 
-
-> 原文：[https://www.geeksforgeeks.org/remove-elements-that-appear-strictly-less-than-k-times/](https://www.geeksforgeeks.org/remove-elements-that-appear-strictly-less-than-k-times/)
 # appear strictly less than k times from the array. 
-
-> 原文：[https://www.geeksforgeeks.org/remove-elements-that-appear-strictly-less-than-k-times/](https://www.geeksforgeeks.org/remove-elements-that-appear-strictly-less-than-k-times/)
 def removeElements(arr, n, k): 
 
     # Hash map which will store the 
@@ -155,16 +149,12 @@ def removeElements(arr, n, k):
             print(arr[i], end = " ") 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/remove-elements-that-appear-strictly-less-than-k-times/](https://www.geeksforgeeks.org/remove-elements-that-appear-strictly-less-than-k-times/)
 arr = [1, 2, 2, 3, 2, 3, 4] 
 n = len(arr) 
 k = 2
 removeElements(arr, n, k) 
 
 # This code is contributed by Mohit Kumar 
-
-> 原文：[https://www.geeksforgeeks.org/remove-elements-that-appear-strictly-less-than-k-times/](https://www.geeksforgeeks.org/remove-elements-that-appear-strictly-less-than-k-times/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 对三元组进行计数，以使任何两个数的和等于三| 设置 2
 
-> 原文：[https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/](https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/)
-
 给定*个不同的正整数* **arr []** 长度为 **N** 的数组，任务是对所有三元组进行计数，以使两个元素的总和等于第三个元素 。
 
 **示例**：
@@ -136,24 +134,12 @@ public static void main(String[] args)
 ```
 
 # Python 3 implementation to count the 
-
-> 原文：[https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/](https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/)
 # triplets such that the sum of the 
-
-> 原文：[https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/](https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/)
 # two numbers is equal to third number 
 
-> 原文：[https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/](https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/)
-
 # Function to find the count of the  
-
-> 原文：[https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/](https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/)
 # triplets such that sum of two  
-
-> 原文：[https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/](https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/)
 # numbers is equal to the third number  
-
-> 原文：[https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/](https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/)
 def countTriplets(arr, n): 
     freq = [0 for i in range(100)] 
 
@@ -170,8 +156,6 @@ def countTriplets(arr, n):
     return count 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/](https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/)
 if __name__ == '__main__': 
     n = 4
     arr = [1, 5, 3, 2] 
@@ -180,8 +164,6 @@ if __name__ == '__main__':
     print(countTriplets(arr, n)) 
 
 # This code is contributed by Surendra_Gangwar 
-
-> 原文：[https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/](https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/)
 
 ```
 

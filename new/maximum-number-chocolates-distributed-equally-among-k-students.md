@@ -1,7 +1,5 @@
 # 在 k 名学生中平均分配的最大巧克力数量
 
-> 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
-
 给定 **n** 个盒子，其中装有一些排成一行的巧克力。 学生人数 **k** 。 问题是，通过从给定批次中选择连续的盒子序列，在 **k** 学生中平均分配最大数量的巧克力。 考虑将盒子排列成从左到右从 1 到 n 的数字。 我们必须选择一组连续的盒子，它们可以为所有 **k** 学生平均提供最大数量的巧克力。 给出数组 **arr []** 来表示框的行排列，而 arr [i]表示该框中位置“ i”的巧克力数量。
 
 **示例**：
@@ -194,33 +192,15 @@ System.out.println("Maximum number of chocolates: "
 ```py
 
 # Python3 implementation to  
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
 # find the maximum number 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
 # of chocolates to be  
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
 # distributed equally 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
 # among k students 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
 
 # function to find the 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
 # maximum number of chocolates 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
 # to be distributed equally 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
 # among k students 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
 def maxNumOfChocolates(arr, n, k): 
 
     um, curr_rem, maxSum = {}, 0, 0
@@ -250,8 +230,6 @@ def maxNumOfChocolates(arr, n, k):
     return maxSum//k 
 
 # Driver program to test above 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
 arr = [ 2, 7, 6, 1, 4, 5 ] 
 n, k = len(arr), 3
 
@@ -259,8 +237,6 @@ print("Maximum number of chocolates: " +
      str(maxNumOfChocolates(arr, n, k))) 
 
 # This code is contributed by Ansu Kumari 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
 
 ```
 

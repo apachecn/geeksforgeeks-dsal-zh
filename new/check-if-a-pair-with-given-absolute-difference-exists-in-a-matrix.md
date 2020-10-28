@@ -1,7 +1,5 @@
 # 检查矩阵
 
-> 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/)
-
 中是否存在具有给定绝对差的一对
 
 给定一个 N×M 矩阵和一个 **K** 之差。 任务是检查矩阵中是否存在具有给定绝对差的一对。
@@ -181,26 +179,14 @@ public static void main(String[] args)
 ```py
 
 # Python 3 program to check for pairs 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/)
 # with given difference exits in the 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/)
 # matrix or not 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/)
 N = 4
 M = 4
 
 # Function to check if a 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/)
 # pair with given
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/)
 # difference exist in the matrix
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/)
 def isPairWithDiff(mat, k):
 
     # Store elements in a hash
@@ -222,8 +208,6 @@ def isPairWithDiff(mat, k):
     return False       
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/)
 n, m = 4, 4
 mat = [[5, 2, 3, 4],
        [5, 6, 7, 8],
@@ -231,8 +215,6 @@ mat = [[5, 2, 3, 4],
        [13, 14, 15, 100]]
 
 # given difference
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/)
 k = 85
 
 if isPairWithDiff(mat, k):
@@ -241,11 +223,7 @@ else:
     print("No")
 
 # This code is contributed by
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/)
 # Mohit kumar 29 (IIIT gwalior)
-
-> 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/)
 
 ```
 

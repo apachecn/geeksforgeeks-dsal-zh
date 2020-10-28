@@ -1,7 +1,5 @@
 # 计算给定字符串（其字谜是回文）的子字符串
 
-> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
-
 给定长度为 **N** 的仅包含小写字母的字符串 **S** ，任务是打印给定的[字符串，其字谜是回文](https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/)。
 
 **示例**：
@@ -145,18 +143,10 @@ public static void main(String[] args)
 ```py
 
 # Python3 program for
-
-> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 # the above approach
 
-> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
-
 # Function to prcount of subStrings
-
-> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 # whose anagrams are palindromic
-
-> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 def countSubString(s):
 
     # Stores the answer
@@ -179,8 +169,6 @@ def countSubString(s):
     print(res);
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 if __name__ == '__main__':
     str = "aaa";
 
@@ -188,8 +176,6 @@ if __name__ == '__main__':
     countSubString(str);
 
 # This code is contributed by 29AjayKumar
-
-> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 
 ```
 
@@ -391,16 +377,10 @@ public static void main(String[] args)
 ```py
 
 # Python3 program for the above approach 
-
-> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 from collections import defaultdict
 
 # Function to get the count of substrings
-
-> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 # whose anagrams are palindromic
-
-> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 def countSubstring(s):
 
     # Store the answer
@@ -431,18 +411,12 @@ def countSubstring(s):
     print(answer)
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 str = "abab"
 
 # Function call
-
-> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 countSubstring(str)
 
 # This code is contributed by Shivam Singh
-
-> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 
 ```
 

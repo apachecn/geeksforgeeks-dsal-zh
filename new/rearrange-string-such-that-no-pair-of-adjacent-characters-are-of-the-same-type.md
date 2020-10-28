@@ -1,7 +1,5 @@
 # 重新排列字符串，以使相邻的字符对都不属于同一类型
 
-> 原文：[https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/](https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/)
-
 给定字母数字字符串 **str** ，任务是重新排列字符串，以使两个相邻字符都不属于同一类型，即，两个相邻字符不能为字母或数字。 如果没有这种安排，请打印 **-1** 。
 
 **示例**：
@@ -199,24 +197,12 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement
-
-> 原文：[https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/](https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/)
 # the above approach
 
-> 原文：[https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/](https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/)
-
 # Function to rearrange given
-
-> 原文：[https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/](https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/)
 # alphanumeric such that no 
-
-> 原文：[https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/](https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/)
 # two adjacent characters
-
-> 原文：[https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/](https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/)
 # are of the same type
-
-> 原文：[https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/](https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/)
 def rearrange(s):
 
     # Stores alphabets and digits
@@ -283,8 +269,6 @@ def rearrange(s):
     return "".join(s)
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/](https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/)
 if __name__ == '__main__':
 
     # Given String
@@ -296,8 +280,6 @@ if __name__ == '__main__':
     print(rearrange(str1))
 
 # This code is contributed by mohit kumar 29
-
-> 原文：[https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/](https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/)
 
 ```
 

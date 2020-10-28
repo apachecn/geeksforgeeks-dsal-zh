@@ -1,7 +1,5 @@
 # 计算在给定字符串
 
-> 原文：[https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/](https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/)
-
 的所有子字符串中出现的元音数量
 
 给定一个长度为 N 的包含 0 个或多个元音的小写字符的字符串，任务是查找在给定字符串的所有子字符串中出现的元音计数。
@@ -144,14 +142,8 @@ public class Gfg {
 ```py
 
 # Python 3 implementation of  
-
-> 原文：[https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/](https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/)
 # a more efficient approach. 
-
-> 原文：[https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/](https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/)
 # return sum of all occurrences of all vowels 
-
-> 原文：[https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/](https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/)
 def sumVowel(string): 
     n = len(string) 
     sum = 0
@@ -180,11 +172,7 @@ if __name__ == '__main__':
     print(sumVowel(string)) 
 
 # This code is contributed by  
-
-> 原文：[https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/](https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/)
 # Abhay Subramanian K 
-
-> 原文：[https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/](https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/)
 
 ```
 

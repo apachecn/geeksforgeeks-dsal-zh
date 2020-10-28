@@ -1,7 +1,5 @@
 # 要与整数相乘的元素计数，以使每对 Array 成为一个完美的正方形
 
-> 原文：[https://www.geeksforgeeks.org/count-of-elements-to-be-multiplied-with-integers-to-make-each-pair-of-array-a-perfect-square/](https://www.geeksforgeeks.org/count-of-elements-to-be-multiplied-with-integers-to-make-each-pair-of-array-a-perfect-square/)
-
 给定包含正整数的数组 **arr []** ，任务是找到要在数组上执行的最小操作数，以使数组的每个数成为超能力。
 
 在每个操作中，我们可以将数组的任何元素乘以整数。

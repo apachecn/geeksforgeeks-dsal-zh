@@ -1,7 +1,5 @@
 # 将数组拆分为三个子数组，以使第一和第三子数组的总和相等且最大值
 
-> 原文：[https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/](https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/)
-
 给定一个由 N 个整数组成的数组，任务是通过将数组精确地分成三个子数组来打印第一个子数组的和，以使第一个和第三个子数组元素的和等于最大。
 
 **注意**：所有元素必须属于一个子数组，并且子数组也可以为空。
@@ -175,21 +173,11 @@ class GfG {
 ```py
 
 # Python 3 program for Split the array into three
-
-> 原文：[https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/](https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/)
 # subarrays such that summation of first
-
-> 原文：[https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/](https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/)
 # and third subarray is equal and maximum
 
-> 原文：[https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/](https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/)
-
 # Function to return the sum of
-
-> 原文：[https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/](https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/)
 # the first subarray
-
-> 原文：[https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/](https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/)
 
 def sumFirst(a, n):
     mp = {i: 0 for i in range(7)}
@@ -228,8 +216,6 @@ def sumFirst(a, n):
         return maxi
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/](https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/)
 if __name__ == '__main__':
     a = [1, 3, 2, 1, 4]
     n = len(a)
@@ -238,11 +224,7 @@ if __name__ == '__main__':
     print(sumFirst(a, n))
 
 # This code is contributed by
-
-> 原文：[https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/](https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/)
 # Surendra_Gangwar
-
-> 原文：[https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/](https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/)
 
 ```
 

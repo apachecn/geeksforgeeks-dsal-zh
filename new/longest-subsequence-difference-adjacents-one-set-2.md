@@ -1,7 +1,5 @@
 # 最长的子序列，使得相邻元素之间的差为 1 | 设置 2
 
-> 原文：[https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/](https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/)
-
 给定大小为 **n** 的数组。 任务是找到最长的子序列，以使相邻序列之间的差异为 1。 需要 O（n）的时间复杂度。
 
 **示例**：
@@ -163,22 +161,12 @@ public static void main(String[] args) 
 ```py
 
 # Python3 implementation to find longest  
-
-> 原文：[https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/](https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/)
 # subsequence such that difference between  
-
-> 原文：[https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/](https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/)
 # adjacents is one  
-
-> 原文：[https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/](https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/)
 from collections import defaultdict 
 
 # function to find longest subsequence such  
-
-> 原文：[https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/](https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/)
 # that difference between adjacents is one  
-
-> 原文：[https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/](https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/)
 def longLenSub(arr, n): 
 
     # hash table to map the array element  
@@ -218,16 +206,12 @@ def longLenSub(arr, n):
     return longLen 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/](https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/)
 arr = [1, 2, 3, 4, 5, 3, 2] 
 n = len(arr) 
 print("Longest length subsequence =", 
                   longLenSub(arr, n)) 
 
 # This code is contributed by Shrikant13 
-
-> 原文：[https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/](https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/)
 
 ```
 

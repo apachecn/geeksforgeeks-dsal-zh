@@ -1,7 +1,5 @@
 # 哈希的应用
 
-> 原文：[https://www.geeksforgeeks.org/applications-of-hashing/](https://www.geeksforgeeks.org/applications-of-hashing/)
-
 在本文中，我们将讨论[哈希](https://www.geeksforgeeks.org/hashing-set-1-introduction/)的应用。
 
 哈希平均提供恒定时间的搜索，插入和删除操作。 这就是为什么散列是最常用的数据结构之一的原因，示例问题包括[不同的元素](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)，计数项目的频率，查找重复项等。

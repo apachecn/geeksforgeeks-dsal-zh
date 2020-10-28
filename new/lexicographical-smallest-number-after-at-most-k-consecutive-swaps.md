@@ -1,7 +1,5 @@
 # 最多 K 次连续互换后的词典最小数字
 
-> 原文：[https://www.geeksforgeeks.org/lexicographical-smallest-number-after-at-most-k-consecutive-swaps/](https://www.geeksforgeeks.org/lexicographical-smallest-number-after-at-most-k-consecutive-swaps/)
-
 给定字符串 **str** 形式的数字和整数 **K** 的形式，任务是找到执行最多 **K** 次连续交换后可以形成的最小整数 。
 
 > **连续交换**表示一次交换就可以将索引 **i** 的字符与索引 **i – 1** 或 **i + 1** 的字符交换。 。

@@ -1,7 +1,5 @@
 # 通过按字母顺序删除字符来最大程度地减少清空给定字符串的成本。
 
-> 原文：[https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/](https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/)
-
 给定字符串 **str** ，任务是最小化以[字母顺序](https://www.geeksforgeeks.org/check-if-the-characters-of-a-given-string-are-in-alphabetical-order/)从字符串中删除所有字符的总成本。
 
 > 从字符串中删除第<sup>个第</sup>个索引处的任何字符的成本为 **i** 。 索引基于 1。
@@ -177,17 +175,9 @@ class GFG{
 
 # Python3 program for the above approach 
 
-> 原文：[https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/](https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/)
-
 # Function to find the minimum cost
-
-> 原文：[https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/](https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/)
 # required to remove each character
-
-> 原文：[https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/](https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/)
 # of the string in alphabetical order 
-
-> 原文：[https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/](https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/)
 def minSteps(str, N):
 
     cost = 0
@@ -223,23 +213,15 @@ def minSteps(str, N):
 
 # Driver Code
 
-> 原文：[https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/](https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/)
-
 # Given string str
-
-> 原文：[https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/](https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/)
 str = "abcab"
 
 N = len(str)
 
 # Function call
-
-> 原文：[https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/](https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/)
 print(minSteps(str, N))
 
 # This code is contributed by Shivam Singh
-
-> 原文：[https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/](https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/)
 
 ```
 

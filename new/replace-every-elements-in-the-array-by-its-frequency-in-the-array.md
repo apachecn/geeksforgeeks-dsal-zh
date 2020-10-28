@@ -1,7 +1,5 @@
 # 用数组
 
-> 原文：[https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/](https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/)
-
 中的频率替换数组中的每个元素
 
 给定一个整数数组，将每个元素替换为其在数组中的频率。
@@ -129,11 +127,7 @@ class GFG {
 ```py
 
 # Python 3 program to replace the elements 
-
-> 原文：[https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/](https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/)
 # by their frequency in the array. 
-
-> 原文：[https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/](https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/)
 
 def ReplaceElementsByFrequency(arr, n): 
 
@@ -152,8 +146,6 @@ def ReplaceElementsByFrequency(arr, n):
         arr[i] = mp[arr[i]] 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/](https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/)
 if __name__ == '__main__': 
     arr = [1, 2, 5, 2, 2, 5] 
     n = len(arr) 
@@ -165,11 +157,7 @@ if __name__ == '__main__':
         print(arr[i], end = " ") 
 
 # This code is contributed by 
-
-> 原文：[https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/](https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/)
 # Sahil_shelangia 
-
-> 原文：[https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/](https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/)
 
 ```
 

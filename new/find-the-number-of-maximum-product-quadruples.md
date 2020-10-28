@@ -1,7 +1,5 @@
 # 查找最大乘积四倍的数量
 
-> 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
-
 给定一个由 N 个正元素组成的数组，可以找到四倍的（i，j，k，m）数，使得 i < j < k < m such that the product **a <sub>i</sub> a <sub>j</sub> a <sub>k [</sub> a <sub>m</sub>** 是最大可能值
 
 **示例**：
@@ -212,25 +210,13 @@ public static void main(String args[])
 ```py
 
 # Python3 program to find 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
 # the number of Quadruples
-
-> 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
 # having maximum product
-
-> 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
 from collections import defaultdict
 
 # Returns the number of ways 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
 # to select r objects out of
-
-> 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
 # available n choices
-
-> 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
 def NCR(n, r):
 
     numerator = 1
@@ -249,14 +235,8 @@ def NCR(n, r):
     return (numerator // denominator)
 
 # Returns the number of
-
-> 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
 # quadruples having 
-
-> 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
 # maximum product
-
-> 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
 def findWays(arr, n):
 
     # stores the frequency 
@@ -303,8 +283,6 @@ def findWays(arr, n):
     return ans
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
 if __name__ == "__main__":
 
     arr = [1, 2, 3, 3, 3, 5]
@@ -313,8 +291,6 @@ if __name__ == "__main__":
     print (maxQuadrupleWays)
 
 # This code is contributed by Chitranayal
-
-> 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
 
 ```
 

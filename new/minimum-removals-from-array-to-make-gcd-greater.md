@@ -1,7 +1,5 @@
 # 从阵列中移除的最少数量，以使 GCD 更大
 
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
-
 给定 N 个数字，任务是找到最小的数字去除率，以使剩余数字的 GCD 大于 N 个数字的初始 GCD。 如果无法增加 GCD，请打印“否”。
 
 **示例**：
@@ -169,32 +167,18 @@ int main()
 ```py
 
 # Python3 program to find the minimum removals 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 # such that gcd of remaining numbers is more 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 # than the initial gcd of N numbers 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 from math import gcd as __gcd 
 
 MAXN = 100001
 
 # stores smallest prime factor for every number 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 spf = [i for i in range(MAXN)] 
 
 # Calculating SPF (Smallest Prime Factor) for every 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 # number till MAXN. 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 # Time Complexity : O(nloglogn) 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 def sieve(): 
 
     # separately marking spf for every even 
@@ -219,11 +203,7 @@ def sieve():
                     spf[j] = i 
 
 # A O(log n) function returning primefactorization 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 # by dividing by smallest prime factor at every step 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 def getFactorization(x): 
     ret = [] 
     while (x != 1): 
@@ -232,14 +212,8 @@ def getFactorization(x):
     return ret 
 
 # Function which returns the minimal 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 # removals required to make gcd 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 # greater than previous 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 def minimumRemovals(a, n): 
     g = 0
 
@@ -291,16 +265,12 @@ def minimumRemovals(a, n):
         return -1
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 a = [6, 9, 15, 30] 
 n = len(a) 
 sieve() 
 print(minimumRemovals(a, n)) 
 
 # This code is contributed by mohit kumar 29 
-
-> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 
 ```
 

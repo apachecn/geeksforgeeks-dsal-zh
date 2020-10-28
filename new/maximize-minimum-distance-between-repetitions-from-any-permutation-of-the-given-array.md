@@ -1,7 +1,5 @@
 # 最大化给定数组
 
-> 原文：[https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/](https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/)
-
 的任意排列所引起的重复之间的最小距离
 
 给定一个数组 **arr []** ，该数组由 **[1，N]** 范围内的 **N** 个正整数组成，任务是找到任意一个之间的最大最小距离 从给定数组的任何排列中元素的连续重复。
@@ -167,11 +165,7 @@ public static void main(String [] args) 
 ```py
 
 # Python3 program to implement 
-
-> 原文：[https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/](https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/)
 # the above approach 
-
-> 原文：[https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/](https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/)
 import sys 
 
 def findMaxLen(a): 
@@ -214,18 +208,12 @@ def findMaxLen(a):
     return ans 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/](https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/)
 a = [ 1, 2, 1, 2 ] 
 
 # Function call 
-
-> 原文：[https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/](https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/)
 print(findMaxLen(a)) 
 
 # This code is contributed by Shivam Singh 
-
-> 原文：[https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/](https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/)
 
 ```
 

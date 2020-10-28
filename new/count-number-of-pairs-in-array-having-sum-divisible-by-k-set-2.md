@@ -1,7 +1,5 @@
 # 计数可被 K |整除的数组中的对数 设置 2
 
-> 原文：[https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/](https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/)
-
 给定一个数组 A []和正整数 K，任务是计算其和可被 K 整除的数组中的对总数。
 
 **示例**：
@@ -151,11 +149,7 @@ class GFG
 ```py
 
 # Python Program to count pairs whose sum divisible
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/](https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/)
 # by 'K'
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/](https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/)
 def countKdivPairs(A, n, K):
 
     # Create a frequency array to count
@@ -180,8 +174,6 @@ def countKdivPairs(A, n, K):
     return ans
 
 # Driver code
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/](https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/)
 if __name__ == '__main__':
     A = [2, 2, 1, 7, 5, 3]
     n = len(A)
@@ -189,11 +181,7 @@ if __name__ == '__main__':
     print(countKdivPairs(A, n, K))
 
 # This code is contributed by
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/](https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/)
 # Surendra_Gangwar, Yadvendra Naveen
-
-> 原文：[https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/](https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/)
 
 ```
 

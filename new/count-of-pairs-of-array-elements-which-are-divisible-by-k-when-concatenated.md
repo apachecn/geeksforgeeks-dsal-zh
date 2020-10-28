@@ -1,7 +1,5 @@
 # 串联时可被 K 整除的 Array 元素对的数量
 
-> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/](https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/)
-
 给定数组 **arr []** 和整数 **K** ，任务是对索引对**（i，j）**进行计数，以使 **i！ ＝ j** ，并且 **a [i]** 和 **a [j]** 的串联可被 **K** 整除。
 
 **示例**：
@@ -219,23 +217,13 @@ public static void main (String[] args)
 ```py
 
 # Python3 program to count pairs
-
-> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/](https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/)
 # of array elements which are
-
-> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/](https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/)
 # divisible by K when concatenated
-
-> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/](https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/)
 rem = [ [ 0 for x in range(11) ]
             for y in range(11) ]
 
 # Function to calculate and return the
-
-> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/](https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/)
 # count of pairs
-
-> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/](https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/)
 def countPairs(a, n, k):
 
     l = [0] * n
@@ -281,8 +269,6 @@ def countPairs(a, n, k):
     return ans
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/](https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/)
 a = [ 4, 5, 2 ]
 n = len(a)
 k = 2
@@ -290,8 +276,6 @@ k = 2
 print(countPairs(a, n, k))
 
 # This code is contributed by chitranayal
-
-> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/](https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/)
 
 ```
 

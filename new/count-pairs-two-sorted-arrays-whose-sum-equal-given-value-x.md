@@ -1,7 +1,5 @@
 # 计数两个总和等于给定值 x 的排序数组对
 
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
-
 给定两个大小分别为 **m** 和 **n** 的不同元素的排序数组。 给定值 **x** 。 问题是要计算两个数组的总和等于 **x** 的所有对。
 
 **注意**：该对具有每个阵列中的一个元素。
@@ -134,27 +132,13 @@ class GFG {
 ```py
 
 # python implementation to count 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # pairs from both sorted arrays  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # whose sum is equal to a given  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # value 
 
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
-
 # function to count all pairs from 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # both the sorted arrays whose sum 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # is equal to a given value 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 def countPairs(arr1, arr2, m, n, x): 
     count = 0
 
@@ -172,8 +156,6 @@ def countPairs(arr1, arr2, m, n, x):
     return count 
 
 # Driver Program 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 arr1 = [1, 3, 5, 7] 
 arr2 = [2, 3, 5, 8] 
 m = len(arr1) 
@@ -183,8 +165,6 @@ print("Count = ", 
         countPairs(arr1, arr2, m, n, x)) 
 
 # This code is contributed by Shrikant13\. 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 
 ```
 
@@ -458,30 +438,14 @@ static int countPairs(int arr1[], int arr2[],
 ```
 
 # Python 3 implementation to count  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # pairs from both sorted arrays  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # whose sum is equal to a given 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # value 
 
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
-
 # function to search 'value'  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # in the given array 'arr[]'  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # it uses binary search technique  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # as 'arr[]' is sorted  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 def isPresent(arr, low, high, value): 
 
     while (low <= high): 
@@ -501,17 +465,9 @@ def isPresent(arr, low, high, value):
     return False
 
 # function to count all pairs  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # from both the sorted arrays  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # whose sum is equal to a given 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # value 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 def countPairs(arr1, arr2, m, n, x): 
     count = 0
     for i in range(m): 
@@ -527,8 +483,6 @@ def countPairs(arr1, arr2, m, n, x):
     return count 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 if __name__ == "__main__": 
     arr1 = [1, 3, 5, 7] 
     arr2 = [2, 3, 5, 8] 
@@ -539,11 +493,7 @@ if __name__ == "__main__":
            countPairs(arr1, arr2, m, n, x)) 
 
 # This code is contributed  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # by ChitraNayal 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 
 ```
 
@@ -828,24 +778,12 @@ public static void main(String[] args)
 ```py
 
 # Python3 implementation to count  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # pairs from both sorted arrays  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # whose sum is equal to a given value  
 
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
-
 # function to count all pairs from   
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # both the sorted arrays whose sum 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # is equal to a given value  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 def countPairs(arr1, arr2, m, n, x): 
     count = 0
     us = set() 
@@ -867,8 +805,6 @@ def countPairs(arr1, arr2, m, n, x):
     return count 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 arr1 = [1, 3, 5, 7] 
 arr2 = [2, 3, 5, 8] 
 m = len(arr1) 
@@ -878,8 +814,6 @@ print("Count =", 
        countPairs(arr1, arr2, m, n, x)) 
 
 # This code is contributed by Shrikant13 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 
 ```
 
@@ -1117,30 +1051,14 @@ class GFG {
 ```py
 
 # Python 3 implementation to count 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # pairs from both sorted arrays 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # whose sum is equal to a given 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # value 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 
 # function to count all pairs 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # from both the sorted arrays 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # whose sum is equal to a given 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # value 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 def countPairs(arr1, arr2, m, n, x): 
     count, l, r = 0, 0, n - 1
 
@@ -1172,8 +1090,6 @@ def countPairs(arr1, arr2, m, n, x):
     return count 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 if __name__ == '__main__': 
     arr1 = [1, 3, 5, 7] 
     arr2 = [2, 3, 5, 8] 
@@ -1185,11 +1101,7 @@ if __name__ == '__main__':
                           m, n, x)) 
 
 # This code is contributed  
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 # by PrinciRaj19992 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 用于流中第一个非重复字符的基于队列的方法
 
-> 原文：[https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/](https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/)
-
 给定字符流，每次将字符插入流中时，我们都必须找到第一个非重复字符。
 
 **示例**：
@@ -152,19 +150,11 @@ public class NonReapatingCQueue {
 ```py
 
 # Python3 program for a Queue based approach  
-
-> 原文：[https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/](https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/)
 # to find first non-repeating character  
-
-> 原文：[https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/](https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/)
 from queue import Queue  
 
 # function to find first non  
-
-> 原文：[https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/](https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/)
 # repeating character of sa Stream  
-
-> 原文：[https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/](https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/)
 def firstnonrepeating(Str): 
     global MAX_CHAR 
     q = Queue() 
@@ -195,15 +185,11 @@ def firstnonrepeating(Str):
     print() 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/](https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/)
 MAX_CHAR = 26
 Str = "aabc"
 firstnonrepeating(Str) 
 
 # This code is contributed by PranchalK 
-
-> 原文：[https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/](https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/)
 
 ```
 

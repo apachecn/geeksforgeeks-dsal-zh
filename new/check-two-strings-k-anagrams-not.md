@@ -1,7 +1,5 @@
 # 检查两个字符串是否为 k-anagrams
 
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
-
 给定两个字符串的小写字母和一个值 k，任务是查找两个字符串是否彼此为 K-anagram。
 
 如果满足以下两个条件，则两个字符串称为 **k-anagrams** 。
@@ -158,19 +156,11 @@ public class GFG {
 ```py
 
 # Python3 program to check if two  
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 # strings are k anagram or not. 
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 MAX_CHAR = 26
 
 # Function to check that is  
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 # k-anagram or not  
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 def arekAnagrams(str1, str2, k) : 
 
     # If both strings are not of equal  
@@ -205,8 +195,6 @@ def arekAnagrams(str1, str2, k) :
     return (count <= k)  
 
 # Driver Code  
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 if __name__ == '__main__': 
     str1 = "anagram"
     str2 = "grammar"
@@ -217,11 +205,7 @@ if __name__ == '__main__':
         print("No") 
 
 # This code is contributed 
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 # by SHUBHAMSINGH10 
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 
 ```
 
@@ -484,22 +468,12 @@ public class GFG {
 ```py
 
 # Optimized Python3 program  
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 # to check if two strings 
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 # are k anagram or not. 
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 MAX_CHAR = 26; 
 
 # Function to check if str1  
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 # and str2 are k-anagram or not 
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 def areKAnagrams(str1, str2, k): 
     # If both strings are  
     # not of equal length  
@@ -533,8 +507,6 @@ def areKAnagrams(str1, str2, k):
     return True; 
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 str1 = "fodr"; 
 str2 = "gork"; 
 k = 2; 
@@ -544,8 +516,6 @@ else:
     print("No"); 
 
 # This code is contributed by mits 
-
-> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 
 ```
 

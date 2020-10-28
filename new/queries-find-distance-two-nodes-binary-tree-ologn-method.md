@@ -1,7 +1,5 @@
 # 查询以查找二叉树的两个节点之间的距离-O（logn）方法
 
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
-
 给定一个二叉树，任务是找到一棵二叉树中两个键之间的距离，没有给出父指针。 两个节点之间的距离是要遍历才能到达另一个节点的最小边数。
 
 这个问题已经在[先前的文章](https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/)中进行了讨论，但是它使用**二叉树的三个遍历**，一个遍历用于查找两个节点的最低公共祖先（LCA）（let A 和 B），然后进行两次遍历以查找 LCA 与 A 之间的距离以及 LCA 与 B 之间的时间复杂度为 O（n）。 在这篇文章中，将讨论一种方法，该方法需要 **O（log（n））**时间来找到两个节点的 LCA。
@@ -601,11 +599,7 @@ class GFG
 ```py
 
 # Python3 program to find distance between
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 # two nodes for multiple queries
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 
 from collections import deque
 from sys import maxsize as INT_MAX
@@ -613,8 +607,6 @@ from sys import maxsize as INT_MAX
 MAX = 100001
 
 # A tree node structure
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 class Node:
     def __init__(self, data):
         self.data = data
@@ -622,13 +614,9 @@ class Node:
         self.right = None
 
 # Array to store level of each node
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 level = [0] * MAX
 
 # Utility Function to store level of all nodes
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 def findLevels(root: Node):
     global level
 
@@ -660,18 +648,12 @@ def findLevels(root: Node):
             q.append((p[0].right, p[1] + 1))
 
 # Stores Euler Tour
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 Euler = [0] * MAX
 
 # index in Euler array
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 idx = 0
 
 # Find Euler Tour
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 def eulerTree(root: Node):
     global Euler, idx
     idx += 1
@@ -700,26 +682,16 @@ def eulerTree(root: Node):
         Euler[idx] = root.data
 
 # checks for visited nodes
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 vis = [0] * MAX
 
 # Stores level of Euler Tour
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 L = [0] * MAX
 
 # Stores indices of the first occurrence
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 # of nodes in Euler tour
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 H = [0] * MAX
 
 # Preprocessing Euler Tour for finding LCA
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 def preprocessEuler(size: int):
     global L, H, vis
     for i in range(1, size + 1):
@@ -735,18 +707,12 @@ def preprocessEuler(size: int):
             vis[Euler[i]] = 1
 
 # Stores values and positions
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 seg = [0] * (4 * MAX)
 for i in range(4 * MAX):
     seg[i] = [0, 0]
 
 # Utility function to find minimum of
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 # pair type values
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 def minPair(a: list, b: list) -> list:
     if a[0] <= b[0]:
         return a
@@ -754,8 +720,6 @@ def minPair(a: list, b: list) -> list:
         return b
 
 # Utility function to build segment tree
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 def buildSegTree(low: int, high: int, 
                        pos: int) -> list:
     if low == high:
@@ -770,8 +734,6 @@ def buildSegTree(low: int, high: int,
     seg[pos] = min(seg[2 * pos], seg[2 * pos + 1])
 
 # Utility function to find LCA
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 def LCA(qlow: int, qhigh: int, low: int, 
                      high: int, pos: int) -> list:
     if qlow <= low and qhigh >= high:
@@ -786,11 +748,7 @@ def LCA(qlow: int, qhigh: int, low: int,
           LCA(qlow, qhigh, mid + 1, high, 2 * pos + 1))
 
 # Function to return distance between
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 # two nodes n1 and n2
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 def findDistance(n1: int, n2: int, size: int) -> int:
 
     # Maintain original Values
@@ -832,8 +790,6 @@ def preProcessing(root: Node, N: int):
     buildSegTree(1, 2 * N - 1, 1)
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 if __name__ == "__main__":
 
     # Number of nodes
@@ -864,11 +820,7 @@ if __name__ == "__main__":
           findDistance(8, 5, 2 * N - 1))
 
 # This code is contributed by
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 # sanjeev2552
-
-> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 
 ```
 

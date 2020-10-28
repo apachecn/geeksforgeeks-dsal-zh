@@ -1,7 +1,5 @@
 # 生成位于矩形
 
-> 原文：[https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/](https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/)
-
 内的所有积分点
 
 给定长度为 **L** 且宽度为 **W** 的矩形，任务是生成位于矩形 pf 尺寸 **L * W 内的所有积分坐标（X，Y）** 在其原点**（0，0）**中具有其顶点之一。
@@ -96,22 +94,14 @@ int main()
 ```py
 
 # Python3 program to implement
-
-> 原文：[https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/](https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/)
 # the above approach
-
-> 原文：[https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/](https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/)
 import time
 import random
 
 random.seed(time.time())
 
 # Function to generate coordinates
-
-> 原文：[https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/](https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/)
 # lying within the rectangle
-
-> 原文：[https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/](https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/)
 def generatePoints(L, W):
 
     # Store all possible coordinates
@@ -151,8 +141,6 @@ def generatePoints(L, W):
              ") ", end = "")
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/](https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/)
 if __name__ == '__main__':
 
     # Rectangle dimensions
@@ -161,8 +149,6 @@ if __name__ == '__main__':
     generatePoints(L, W)
 
 # This code is contributed by mohit kumar 29
-
-> 原文：[https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/](https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/)
 
 ```
 

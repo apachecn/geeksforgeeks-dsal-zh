@@ -1,7 +1,5 @@
 # 三胞胎计数
 
-> 原文：[https://www.geeksforgeeks.org/count-of-triplets/](https://www.geeksforgeeks.org/count-of-triplets/)
-
 给定 **N** 指向平面中呈 2D [数组](https://www.geeksforgeeks.org/introduction-to-arrays/)形式的点，以使每一行都包含两个整数 **L** 和 **R** L 属于 x 坐标， **R** 属于 y 坐标。 任务是计算点的三元组（例如 **a，b & c）**，以使 **a & b** 之间的距离等于 **a 之间的距离 & c** 。
 
 **注意**：三胞胎的顺序很重要。
@@ -163,11 +161,7 @@ class GFG{
 
 # Python3 program for the above appproach
 
-> 原文：[https://www.geeksforgeeks.org/count-of-triplets/](https://www.geeksforgeeks.org/count-of-triplets/)
-
 # Function to count the triplets
-
-> 原文：[https://www.geeksforgeeks.org/count-of-triplets/](https://www.geeksforgeeks.org/count-of-triplets/)
 def countTriplets(p) :
 
     # Intialise count
@@ -202,8 +196,6 @@ def countTriplets(p) :
     return count;
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/count-of-triplets/](https://www.geeksforgeeks.org/count-of-triplets/)
 if __name__ == "__main__" :
 
     # Set of points in plane
@@ -215,8 +207,6 @@ if __name__ == "__main__" :
     print(countTriplets(arr));
 
 # This code is contributed by Yash_R
-
-> 原文：[https://www.geeksforgeeks.org/count-of-triplets/](https://www.geeksforgeeks.org/count-of-triplets/)
 
 ```
 

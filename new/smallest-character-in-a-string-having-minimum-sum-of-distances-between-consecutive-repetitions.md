@@ -1,7 +1,5 @@
 # 字符串中的最小字符，连续重复之间的距离之和最小
 
-> 原文：[https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/](https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/)
-
 给定仅由小写字母组成的大小为 **N** 的字符串 **S** ，任务是找到在其连续重复之间具有最小距离之和的最小字符。 如果字符串 **S** 仅包含不同的字符，则打印**“ -1”** 。
 
 **示例**：
@@ -202,16 +200,10 @@ System.out.print(minDistChar(str.toCharArray()));
 ```py
 
 # Python3 program for the above approach
-
-> 原文：[https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/](https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/)
 import sys
 
 # Function to find the character
-
-> 原文：[https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/](https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/)
 # repeats with minimum distance
-
-> 原文：[https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/](https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/)
 def minDistChar(s):
 
     n = len(s)
@@ -255,8 +247,6 @@ def minDistChar(s):
     return chr(ans)
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/](https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/)
 if __name__ == "__main__":
 
     str = "geeksforgeeks"
@@ -265,8 +255,6 @@ if __name__ == "__main__":
     print(minDistChar(str))
 
 # This code is contributed by dadi madhav
-
-> 原文：[https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/](https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/)
 
 ```
 

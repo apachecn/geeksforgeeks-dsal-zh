@@ -1,7 +1,5 @@
 # 反向索引与正向索引
 
-> 原文：[https://www.geeksforgeeks.org/difference-inverted-index-forward-index/](https://www.geeksforgeeks.org/difference-inverted-index-forward-index/)
-
 之间的差异
 
 **[倒排索引](https://www.geeksforgeeks.org/inverted-index/)**

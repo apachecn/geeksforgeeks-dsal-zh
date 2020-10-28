@@ -1,7 +1,5 @@
 # 检查 N 是否除以除以 K 以外的所有值的唯一余数
 
-> 原文：[https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/](https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/)
-
 给定两个整数 **N** 和 **K** ，任务是检查 **N** 在除以**范围内的所有整数时是否仅剩下明显的余数[1] ，K]** 。 如果是这样，则打印**是**。 否则，打印**否**。
 
 **范例**：
@@ -145,18 +143,10 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to check if all 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/](https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/)
 # remainders are distinct or not 
 
-> 原文：[https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/](https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/)
-
 # Function to check and return 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/](https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/)
 # if all remainders are distinct 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/](https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/)
 def is_distinct(n, k): 
 
     # Stores the remainder 
@@ -177,8 +167,6 @@ def is_distinct(n, k):
     return True
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/](https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/)
 if __name__ == '__main__': 
 
     N = 5
@@ -190,8 +178,6 @@ if __name__ == '__main__':
         print("No") 
 
 # This code is contributed by Shivam Singh 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/](https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 具有可被 K 整除的所有对的绝对差的最长子序列的长度
 
-> 原文：[https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/](https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/)
-
 给定[数组](https://www.geeksforgeeks.org/array-data-structure/)， **arr []** 的大小 **N** 和整数 **K** ，任务是找到最长 [HTG8]来自给定数组的子序列](https://www.geeksforgeeks.org/array-data-structure/)，使得子序列中每对的绝对差可被 **K** 整除。
 
 **示例**：
@@ -154,21 +152,11 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement
-
-> 原文：[https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/](https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/)
 # the above approach
 
-> 原文：[https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/](https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/)
-
 # Function to find the length
-
-> 原文：[https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/](https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/)
 # of subsequence that satisfy
-
-> 原文：[https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/](https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/)
 # the given condition
-
-> 原文：[https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/](https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/)
 def maxLenSub(arr, N, K):
 
     # Store the frequencies
@@ -195,8 +183,6 @@ def maxLenSub(arr, N, K):
     return LenSub    
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/](https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/)
 if __name__ == '__main__':
 
     arr = [ 12, 3, 13, 5, 21, 11 ]
@@ -206,8 +192,6 @@ if __name__ == '__main__':
     print(maxLenSub(arr, N, K))
 
 # This code is contributed by mohit kumar 29
-
-> 原文：[https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/](https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/)
 
 ```
 

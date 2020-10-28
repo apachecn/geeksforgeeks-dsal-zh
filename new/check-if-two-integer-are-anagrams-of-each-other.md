@@ -1,7 +1,5 @@
 # 检查两个 Integer 是否彼此为字谜
 
-> 原文：[https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
-
 给定两个整数 **A** 和 **B** ，任务是检查给定的数字是否彼此为[字谜](https://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/)。 就像字符串一样，如果仅通过对数字进行改组就可以使该数字等于其他数字，则该数字被称为其他数字的类似物。
 
 **示例**：
@@ -176,19 +174,11 @@ class GFG
 ```py
 
 # Python3 implementation of the approach  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
 TEN = 10
 
 # Function to update the frequency array  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
 # such that freq[i] stores the  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
 # frequency of digit i in n  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
 def updateFreq(n, freq) : 
 
     # While there are digits  
@@ -204,11 +194,7 @@ def updateFreq(n, freq) :
         n //= TEN  
 
 # Function that returns true if a and b  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
 # are anagarams of each other  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
 def areAnagrams(a, b):  
 
     # To store the frequencies of  
@@ -237,8 +223,6 @@ def areAnagrams(a, b): 
     return True
 
 # Driver code  
-
-> 原文：[https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
 a = 240
 b = 204
 
@@ -248,11 +232,7 @@ else:
     print("No")  
 
 # This code is contributed by 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
 # divyamohan123 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
 
 ```
 

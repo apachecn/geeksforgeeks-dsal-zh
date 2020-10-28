@@ -1,7 +1,5 @@
 # 使用循环调度
 
-> 原文：[https://www.geeksforgeeks.org/calculate-server-loads-using-round-robin-scheduling/](https://www.geeksforgeeks.org/calculate-server-loads-using-round-robin-scheduling/)
-
 计算服务器负载
 
 给定 **M 个服务器**，它们处理具有无限计算能力的多个请求，并且数组**到达时间[]** 和 **processTime []** 的大小为 **N** ，表示到达 **N 个请求的时间和加载时间以下列方式**：

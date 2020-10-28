@@ -1,7 +1,5 @@
 # 将数组的元素映射到另一个数组的元素
 
-> 原文：[https://www.geeksforgeeks.org/map-elements-of-an-array-to-elements-of-another-array/](https://www.geeksforgeeks.org/map-elements-of-an-array-to-elements-of-another-array/)
-
 给定两个具有正整数的数组 *A* 和 *B* ，只有当两个数组 *A* 都可以映射到数组 *A* 的元素时， 元素具有相同的值。 任务是计算数组 *A* 中的位置，数组 *B* 的元素将映射到该位置。 如果无法完成特定元素的映射，则打印 NA。
 
 **注意**：对于一个位置，只能映射一个整数。

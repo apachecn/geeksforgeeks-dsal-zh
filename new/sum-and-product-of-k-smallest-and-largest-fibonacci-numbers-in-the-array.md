@@ -1,7 +1,5 @@
 # 数组
 
-> 原文：[https://www.geeksforgeeks.org/sum-and-product-of-k-smallest-and-largest-fibonacci-numbers-in-the-array/](https://www.geeksforgeeks.org/sum-and-product-of-k-smallest-and-largest-fibonacci-numbers-in-the-array/)
-
 中 K 个最小和最大斐波纳契数的总和与乘积
 
 给定一个整数 **K** 和一个包含 **N** 个整数的数组 **arr []** ，任务是找到最小的 **K** 的和和乘积 数组中最大的 **K** 斐波那契数。

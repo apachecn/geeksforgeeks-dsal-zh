@@ -1,7 +1,5 @@
 # 多集等价问题
 
-> 原文：[https://www.geeksforgeeks.org/multiset-equivalence-problem/](https://www.geeksforgeeks.org/multiset-equivalence-problem/)
-
 与集合不同，多重集可能包含相同编号的多次出现。 *多集*等价问题指出要检查两个给定的多集是否相等。 例如，令 **A** = {1,2,3}， **B** = {1,2,3,3}。 此处设置了 **A** ，但未设置 **B** （B 中出现两次），而 **A** 和 **B** 都是多集。 更正式地说，“对于两个给定的多集，定义为![ \(A' = \{ (a, frequency(a)) | a \in \mathbf{A} \}\) ](img/76708f2dcbd3dea50b7dba1f12a212a1.png "Rendered by QuickLaTeX.com")的对的*集*是否相等？”
 
 给定两个多重集 A 和 B，编写一个程序来检查两个多重集是否相等。
@@ -92,11 +90,7 @@ static boolean areSame(Vector<Integer>a, Vector<Integer>b) 
 ```py
 
 # Python3 program to check if  
-
-> 原文：[https://www.geeksforgeeks.org/multiset-equivalence-problem/](https://www.geeksforgeeks.org/multiset-equivalence-problem/)
 # two given multisets are equivalent 
-
-> 原文：[https://www.geeksforgeeks.org/multiset-equivalence-problem/](https://www.geeksforgeeks.org/multiset-equivalence-problem/)
 
 def areSame(a, b): 
 
@@ -108,8 +102,6 @@ def areSame(a, b):
     return (a == b); 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/multiset-equivalence-problem/](https://www.geeksforgeeks.org/multiset-equivalence-problem/)
 a = [ 7, 7, 5 ]; 
 b = [ 7, 5, 5 ]; 
 if (areSame(a, b)): 
@@ -118,8 +110,6 @@ else:
     print("No"); 
 
 # This code is contributed by Princi Singh 
-
-> 原文：[https://www.geeksforgeeks.org/multiset-equivalence-problem/](https://www.geeksforgeeks.org/multiset-equivalence-problem/)
 
 ```
 

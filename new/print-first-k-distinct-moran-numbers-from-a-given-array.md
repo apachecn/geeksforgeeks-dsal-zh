@@ -1,7 +1,5 @@
 # 打印给定数组中的前 K 个不同的 Moran 编号
 
-> 原文：[https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/](https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/)
-
 给定[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，其中包含 **N** 个不同的正整数，任务是打印第一个 **K** 个不同的 [Moran 给定数组中的数字](https://www.geeksforgeeks.org/check-whether-given-number-n-is-a-moran-number-or-not/)。
 
 > *数字 **N** 是 **Moran 数**，如果 **N** 除以其位数* [*的总和*](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/) *给出* [***素数***](https://www.geeksforgeeks.org/prime-numbers/) *。*
@@ -307,11 +305,7 @@ public static void main(String[] args)
 import math 
 
 # Function to calculate the 
-
-> 原文：[https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/](https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/)
 # sum of digits of a number 
-
-> 原文：[https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/](https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/)
 def digiSum(a): 
 
     # Stores the sum of digits 
@@ -329,11 +323,7 @@ def digiSum(a):
     return sums 
 
 # Function to check if a number 
-
-> 原文：[https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/](https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/)
 # is prime or not 
-
-> 原文：[https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/](https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/)
 def isPrime(r): 
 
     s = True
@@ -350,11 +340,7 @@ def isPrime(r):
     return s 
 
 # Function to check if a 
-
-> 原文：[https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/](https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/)
 # number is moran number 
-
-> 原文：[https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/](https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/)
 def isMorannumber(n): 
 
     dup = n 
@@ -376,11 +362,7 @@ def isMorannumber(n):
     return False
 
 # Function to print the first K 
-
-> 原文：[https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/](https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/)
 # Moran numbers from the array 
-
-> 原文：[https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/](https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/)
 def FirstKMorannumber(a, n, k): 
 
     X = k 
@@ -414,8 +396,6 @@ def FirstKMorannumber(a, n, k):
         print(i, end = ', ') 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/](https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/)
 if __name__ == '__main__': 
 
     A = [ 34, 198, 21, 42,  
@@ -427,8 +407,6 @@ if __name__ == '__main__':
     FirstKMorannumber(A, N, K) 
 
 # This code is contributed by akhilsaini
-
-> 原文：[https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/](https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/)
 
 ```
 

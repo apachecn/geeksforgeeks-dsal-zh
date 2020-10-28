@@ -1,7 +1,5 @@
 # 来自其和与差之积等于 0 的数组的计数对
 
-> 原文：[https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/](https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/)
-
 给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，任务是计算可能的成对数组元素**（arr [i]，arr [j ]）**，使得**（arr [i] + arr [j]）*（arr [i] – arr [j]）**为 **0** 。
 
 **示例**：
@@ -140,19 +138,11 @@ public static void main (String[] args)
 ```py
 
 # Python3 program for 
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/](https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/)
 # the above approach
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/](https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/)
 MAXN = 100005
 
 # Function to count required
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/](https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/)
 # number of pairs
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/](https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/)
 def countPairs(arr, N):
 
     # Stores count of pairs
@@ -176,8 +166,6 @@ def countPairs(arr, N):
     print (desiredPairs)
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/](https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/)
 if __name__ == "__main__":
 
     # Given arr[]
@@ -190,8 +178,6 @@ if __name__ == "__main__":
     countPairs(arr, N)
 
 # This code is contributed by Chitranayal
-
-> 原文：[https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/](https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/)
 
 ```
 

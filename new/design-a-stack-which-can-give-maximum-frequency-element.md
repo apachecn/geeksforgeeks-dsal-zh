@@ -1,7 +1,5 @@
 # 设计一个可以提供最大频率元素的堆栈
 
-> 原文：[https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/](https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/)
-
 给定 **N** 个元素，任务是实现一个堆栈，该堆栈将在每次弹出操作中删除并返回最大频率元素。 如果频率相等，则将返回最高频率元素。
 
 **示例**：
@@ -269,37 +267,23 @@ public class freqStack {
 
 # Python3 implementation of the approach  
 
-> 原文：[https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/](https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/)
-
 # freqMap is to map element to its frequency  
-
-> 原文：[https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/](https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/)
 
 freqMap = {};  
 
 # setMap is to map frequency to the  
 
-> 原文：[https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/](https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/)
-
 # element list with this frequency  
-
-> 原文：[https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/](https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/)
 
 setMap = {};  
 
 # Variable which stores maximum frequency  
 
-> 原文：[https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/](https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/)
-
 # of the stack element  
-
-> 原文：[https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/](https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/)
 
 maxfreq = 0;  
 
 # Function to insert x in the stack  
-
-> 原文：[https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/](https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/)
 
 def push(x) : 
 
@@ -337,8 +321,6 @@ def push(x) :
 
 # Function to remove maximum frequency element  
 
-> 原文：[https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/](https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/)
-
 def pop() : 
 
     global maxfreq 
@@ -369,8 +351,6 @@ def pop() :
 
 # Driver code  
 
-> 原文：[https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/](https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/)
-
 if __name__ == "__main__" :  
 
     # Push elements to the stack  
@@ -392,8 +372,6 @@ if __name__ == "__main__" : 
     print(pop());  
 
 # This code is contributed by AnkitRai01  
-
-> 原文：[https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/](https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/)
 
 ```
 

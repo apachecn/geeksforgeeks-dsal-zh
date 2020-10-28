@@ -1,7 +1,5 @@
 # 按频率对元素进行排序| 第 5 组（使用 Java Map）
 
-> 原文：[https://www.geeksforgeeks.org/sort-elements-by-frequency-set-5-using-java-map/](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-5-using-java-map/)
-
 给定一个整数数组，请按照元素的降序对数组进行排序，如果两个元素的频率相同，则按升序进行排序
 
 **示例**：

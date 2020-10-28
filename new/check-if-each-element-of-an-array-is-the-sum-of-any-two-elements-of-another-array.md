@@ -1,7 +1,5 @@
 # 检查数组的每个元素是否为另一个数组的任何两个元素的和
 
-> 原文：[https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/](https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/)
-
 给定两个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **A []** 和 **B []** ，它们由 **N** 整数组成，任务是检查数组 **B []** 可以通过添加数组 **A []** 的任意两个元素来形成。 如果可能，则打印“ **是”** 。 否则，打印“ **否”** 。
 
 **示例**：
@@ -165,21 +163,11 @@ public static void main(String args[])
 ```py
 
 # Python3 program to implement 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/](https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/)
 # the above approach 
 
-> 原文：[https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/](https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/)
-
 # Function to check if each element 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/](https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/)
 # of B[] can be formed by adding two 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/](https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/)
 # elements of array A[] 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/](https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/)
 def checkPossible(A, B, n):
 
     # Store each element of B[] 
@@ -212,8 +200,6 @@ def checkPossible(A, B, n):
         return "No"
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/](https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/)
 if __name__ == "__main__":
 
   N = 5
@@ -224,8 +210,6 @@ if __name__ == "__main__":
   print (checkPossible(A, B, N))
 
 # This code is contributed by Chitranayal
-
-> 原文：[https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/](https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/)
 
 ```
 

@@ -1,7 +1,5 @@
 # 总和等于其长度的子串的计数
 
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/](https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/)
-
 给定数字字符串 **str** ，任务是计算数字总和等于其长度的子字符串的数量。
 
 **示例**：
@@ -131,19 +129,11 @@ public static void main(String[] args)
 ```py
 
 # Python3 program to implement 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/](https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/)
 # the above approach
-
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/](https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/)
 from collections import defaultdict
 
 # Function to count the number of 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/](https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/)
 # substrings with sum equal to length
-
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/](https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/)
 def countSubstrings(s, n):
 
     count, sum = 0, 0
@@ -167,16 +157,12 @@ def countSubstrings(s, n):
     return count
 
 # Driver code
-
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/](https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/)
 str = '112112'
 n = len(str)
 
 print(countSubstrings(str, n))
 
 # This code is contributed by Stuti Pathak
-
-> 原文：[https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/](https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/)
 
 ```
 

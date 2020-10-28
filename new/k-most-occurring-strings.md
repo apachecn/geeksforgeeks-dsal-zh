@@ -1,7 +1,5 @@
 # K 个出现次数最多的字符串
 
-> 原文：[https://www.geeksforgeeks.org/k-most-occurring-strings/](https://www.geeksforgeeks.org/k-most-occurring-strings/)
-
 给定 **N** 个字符串的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 和一个整数 **K** ，任务是打印 **K** 在 **arr []** 中出现次数最多的字符串。 如果两个或两个以上的字符串具有相同的频率，请打印[依词典顺序最小的字符串](https://www.geeksforgeeks.org/lexicographically-smallest-string-obtained-concatenating-array/)。
 
 **注意**：**K** 的值始终小于或等于数组中不同元素的数量。

@@ -1,7 +1,5 @@
 # 数组
 
-> 原文：[https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/](https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/)
-
 的任何其他元素不能除的元素数
 
 给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是确定数组元素的数量，该数量不能被给定数组中的任何其他元素整除。
@@ -145,24 +143,12 @@ public static void main(String[] args)
 ```py
 
 # Python3 program for 
-
-> 原文：[https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/](https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/)
 # the above approach
 
-> 原文：[https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/](https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/)
-
 # Function to count the number of
-
-> 原文：[https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/](https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/)
 # elements of array which are not
-
-> 原文：[https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/](https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/)
 # divisible by any other element
-
-> 原文：[https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/](https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/)
 # in the array arr[]
-
-> 原文：[https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/](https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/)
 def count(a, n):
 
     countElements = 0
@@ -190,8 +176,6 @@ def count(a, n):
     return countElements
 
 # Driver Code
-
-> 原文：[https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/](https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/)
 if __name__ == "__main__":
 
     # Given array
@@ -203,8 +187,6 @@ if __name__ == "__main__":
     print( count(arr, n))
 
 # This code is contributed by Chitranayal
-
-> 原文：[https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/](https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/)
 
 ```
 

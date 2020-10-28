@@ -1,7 +1,5 @@
 # 二叉树
 
-> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/)
-
 底视图中的节点总数
 
 给定一个二叉树，任务是在给定的二叉树的底部视图中打印节点总数。 二叉树的底部视图是从底部查看树时可见的节点集。
@@ -147,8 +145,6 @@ int main()
 
 # Python3 implementation of the approach 
 
-> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/)
-
 class Node: 
 
     def __init__(self, data):
@@ -158,11 +154,7 @@ class Node:
         self.hd = None
 
 # Function that returns the Sum of 
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/)
 # nodes in bottom view of binary tree 
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/)
 def SumOfBottomView(root): 
 
     if root == None:
@@ -204,8 +196,6 @@ def SumOfBottomView(root):
     return Sum
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/)
 if __name__ == "__main__": 
 
     root = Node(20) 
@@ -221,8 +211,6 @@ if __name__ == "__main__":
     print(SumOfBottomView(root)) 
 
 # This code is contributed by Rituraj Jain
-
-> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/)
 
 ```
 

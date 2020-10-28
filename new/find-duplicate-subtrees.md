@@ -1,7 +1,5 @@
 # 查找所有重复的子树
 
-> 原文：[https://www.geeksforgeeks.org/find-duplicate-subtrees/](https://www.geeksforgeeks.org/find-duplicate-subtrees/)
-
 给定一棵二叉树，找到所有重复的子树。 对于每个重复的子树，我们只需要返回其中任何一个的根节点。 如果两棵树具有相同的结构和相同的节点值，则它们是重复的。
 
 **示例**：
@@ -183,21 +181,11 @@ public class Duplicate_subtress {
 ```py
 
 # Python3 program to find averages of  
-
-> 原文：[https://www.geeksforgeeks.org/find-duplicate-subtrees/](https://www.geeksforgeeks.org/find-duplicate-subtrees/)
 # all levels in a binary tree.  
 
-> 原文：[https://www.geeksforgeeks.org/find-duplicate-subtrees/](https://www.geeksforgeeks.org/find-duplicate-subtrees/)
-
 # Helper function that allocates a  
-
-> 原文：[https://www.geeksforgeeks.org/find-duplicate-subtrees/](https://www.geeksforgeeks.org/find-duplicate-subtrees/)
 # new node with the given data and  
-
-> 原文：[https://www.geeksforgeeks.org/find-duplicate-subtrees/](https://www.geeksforgeeks.org/find-duplicate-subtrees/)
 # None left and right pointers.  
-
-> 原文：[https://www.geeksforgeeks.org/find-duplicate-subtrees/](https://www.geeksforgeeks.org/find-duplicate-subtrees/)
 class newNode: 
     def __init__(self, data): 
         self.data = data  
@@ -229,15 +217,11 @@ def inorder(node, m):
     return Str
 
 # Wrapper over inorder()  
-
-> 原文：[https://www.geeksforgeeks.org/find-duplicate-subtrees/](https://www.geeksforgeeks.org/find-duplicate-subtrees/)
 def printAllDups(root): 
     m = {}  
     inorder(root, m) 
 
 # Driver code  
-
-> 原文：[https://www.geeksforgeeks.org/find-duplicate-subtrees/](https://www.geeksforgeeks.org/find-duplicate-subtrees/)
 if __name__ == '__main__': 
     root = None
     root = newNode(1)  
@@ -250,8 +234,6 @@ if __name__ == '__main__':
     printAllDups(root)  
 
 # This code is contributed by PranchalK 
-
-> 原文：[https://www.geeksforgeeks.org/find-duplicate-subtrees/](https://www.geeksforgeeks.org/find-duplicate-subtrees/)
 
 ```
 

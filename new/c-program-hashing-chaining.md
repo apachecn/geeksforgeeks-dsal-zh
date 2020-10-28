@@ -1,7 +1,5 @@
 # 用于通过链接进行哈希处理的 C++ 程序
 
-> 原文：[https://www.geeksforgeeks.org/c-program-hashing-chaining/](https://www.geeksforgeeks.org/c-program-hashing-chaining/)
-
 在[散列](http://www.geeksforgeeks.org/hashing-data-structure/)中，存在一个散列函数，可将键映射到某些值。 但是这些哈希函数可能会导致将两个或更多键映射到相同值的冲突。 **链哈希**避免了冲突。 这个想法是使哈希表的每个单元指向具有相同哈希函数值的记录的链接列表。
 
 让我们创建一个哈希函数，使我们的哈希表具有`N`个存储桶。

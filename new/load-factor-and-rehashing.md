@@ -1,7 +1,5 @@
 # 负载因子和哈希值
 
-> 原文：[https://www.geeksforgeeks.org/load-factor-and-rehashing/](https://www.geeksforgeeks.org/load-factor-and-rehashing/)
-
 先决条件：[哈希介绍](https://www.geeksforgeeks.org/hashing-set-1-introduction/)和[通过单独链接](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)的冲突处理
 
 ### 哈希如何工作：

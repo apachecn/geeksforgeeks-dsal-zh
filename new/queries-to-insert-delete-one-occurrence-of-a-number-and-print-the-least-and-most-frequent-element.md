@@ -1,7 +1,5 @@
 # 查询以插入，删除数字的一次出现并打印最少和最频繁的元素
 
-> 原文：[https://www.geeksforgeeks.org/queries-to-insert-delete-one-occurrence-of-a-number-and-print-the-least-and-most-frequent-element/](https://www.geeksforgeeks.org/queries-to-insert-delete-one-occurrence-of-a-number-and-print-the-least-and-most-frequent-element/)
-
 给定 Q 查询的类型为 1、2、3 和 4，如下所述。
 
 *   **Type-1**：在列表中插入一个数字。

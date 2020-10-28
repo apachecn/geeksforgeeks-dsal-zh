@@ -1,7 +1,5 @@
 # 检查给定字符串的字符是否可以重新排列以形成回文
 
-> 原文：[https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)
-
 给定字符串，请检查给定字符串的字符是否可以重新排列以形成回文。
 
 例如，可以重新排列“ geeksogeeks”的字符以形成回文“ geeksoskeegeg”，但是不能重新排列“ geeksforgeeks”的字符以形成回文。
@@ -141,23 +139,13 @@ public static void main(String args[])
 ```py
 
 # Python3 implementation to check if 
-
-> 原文：[https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)
 # characters of a given string can 
-
-> 原文：[https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)
 # be rearranged to form a palindrome 
-
-> 原文：[https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)
 
 NO_OF_CHARS = 256
 
 # function to check whether characters 
-
-> 原文：[https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)
 # of a string can form a palindrome  
-
-> 原文：[https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)
 def canFormPalindrome(st) : 
 
     # Create a count array and initialize   
@@ -184,8 +172,6 @@ def canFormPalindrome(st) :
     return True
 
 # Driver program 
-
-> 原文：[https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)
 if(canFormPalindrome("geeksforgeeks")) : 
     print("Yes") 
 else : 
@@ -197,8 +183,6 @@ else :
     print("No") 
 
 # This code is contributed by Nikita Tiwari. 
-
-> 原文：[https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)
 
 ```
 
@@ -434,8 +418,6 @@ def canFormPalindrome(strr):
         return False
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)
 if (canFormPalindrome("geeksforgeeks")): 
     print("Yes") 
 else: 
@@ -447,8 +429,6 @@ else:
     print("No") 
 
 # This code is contributed by SHUBHAMSINGH10 
-
-> 原文：[https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)
 
 ```
 

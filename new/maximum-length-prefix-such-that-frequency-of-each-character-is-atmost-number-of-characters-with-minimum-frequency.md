@@ -1,7 +1,5 @@
 # 最大长度前缀，以使每个字符的频率最多为最小频率的字符数
 
-> 原文：[https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/](https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/)
-
 给定字符串 **S** ，任务是找到具有最大可能长度的字符串 **S** 的前缀，以使前缀中每个字符的频率最多为 S 中的字符数 以最小的频率。
 
 **示例**：
@@ -41,27 +39,13 @@
 ```py
 
 # Python3 implementation to find the
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/](https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/)
 # prefix of the string such that 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/](https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/)
 # occurrence of each character is
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/](https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/)
 # atmost the count of minimum 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/](https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/)
 # frequency in the string
 
-> 原文：[https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/](https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/)
-
 # Function to find the maximum
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/](https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/)
 # possible prefix of the string
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/](https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/)
 def MaxPrefix(string):
 
     # Hash map to store the frequency
@@ -102,8 +86,6 @@ def MaxPrefix(string):
     print(string[:indi])
 
 # Driver code 
-
-> 原文：[https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/](https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/)
 if __name__ == '__main__': 
 
     # String is initialize.

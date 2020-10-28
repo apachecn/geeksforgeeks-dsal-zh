@@ -1,7 +1,5 @@
 # 使用哈希
 
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
-
 进行地址计算排序
 
 在此排序算法中，哈希函数 **f** 与**顺序保留函数**的属性一起使用，该函数声明是否为![ x <= y, f(x) <= f(y) ](img/5f9389d505cc011727b95eb952191496.png "Rendered by QuickLaTeX.com")。
@@ -48,14 +46,8 @@ ADDRESS 9: 29
 
 ```
 # Python3 code for implementation of
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 # Address Calculation Sorting using Hashing
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 # Size of the address table (In this case 0-9)
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 SIZE = 10
 class Node( object ):
 def __init__( self , data = None ):
@@ -66,33 +58,19 @@ def __init__( self ):
 self .head = None
 的
 # Insert values in such a way that the list remains sorted
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 def insert( self , data):
 newNode = Node(data)
 # If there is no node or new Node's value
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 # is smaller than the first value in the list,
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 # Insert new Node in the first place
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 ] if self .head = = None or data < self .head.data:
 newNode.nextNode = self .head
 self .head = newNode
 else :
 current = self .head
 # If the next node is null or its value
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 # is greater than the new Node's value, ]
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 # Insert new Node in that place
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 while current.nextNode ! = None \
 and \
 current.nextNode.data < data:
@@ -100,40 +78,22 @@ current = current.nextNode
 newNode.nextNode = current.nextNode
 current.nextNode = newNode
 # This function sorts the given list
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 # using Address Calculation Sorting using Hashing
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 def addressCalculationSort(arr):
 # Declare a list of Linked Lists of given SIZE
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 listOfLinkedLists = []
 for i in range (SIZE):
 listOfLinkedLists.append(LinkedList())
 # Calculate maximum value in the array
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 maximum = max (arr)
 # Find the address of each value
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 # in the address table
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 # and insert it in that list
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 for val in arr:
 address = hashFunction(val, maximum)
 listOfLinkedLists[address].insert(val)
 # Print the address table
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 # after all the values have been inserted
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 for i in range (SIZE):
 current = listOfLinkedLists[i].head
 print ( "ADDRESS " + str (i), end = ": " )
@@ -142,8 +102,6 @@ print (current.data, end = " " )
 current = current.nextNode
 print ()
 # Assign the sorted values to the input array
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 index = 0
 for i in range (SIZE):
 current = listOfLinkedLists[i].head
@@ -153,39 +111,21 @@ index + = 1
 current = current.nextNode
 ]
 # This function returns the corresponding address
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 # of given value in the address table
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 def hashFunction(num, maximum):
 # Scale the value such that address is between 0 to 9
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 address = int ((num * 1.0 / maximum) * (SIZE - 1 ))
 return address
 # -------------------------------------------------------
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 # Driver code
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 ]
 # giving the input address as follows
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 arr = [ 29 , [HTG2 94] , 14 , 5 , 15 , 10 , 3 , 18 , 1 ]
 # Printing the Input array
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 print ( "\nInput array: " + " " .join([ str (x) for x in arr]))
 # Performing address calculation sort
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 addressCalculationSort(arr)
 # printing the result sorted array
-
-> 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 print ( "\nSorted array: " + " " .join([ str (x) for x in arr]))
 ```
 

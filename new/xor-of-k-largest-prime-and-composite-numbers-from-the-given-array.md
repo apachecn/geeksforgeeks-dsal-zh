@@ -1,7 +1,5 @@
 # 来自给定数组
 
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/)
-
 的 K 个最大质数和复合数的 XOR
 
 给定 **N** 个非零正整数的数组 **arr []** 和一个整数 **K** ，任务是找到 **K [XOR]。** 最大质数和复合数。
@@ -305,13 +303,9 @@ class GFG 
 
 # Python implimentation of above approach 
 
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/)
-
 import heapq 
 
 # Function for Sieve of Eratosthenes 
-
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/)
 def SieveOfEratosthenes(max_val: int) -> list: 
 
     # Create a boolean vector "prime[0..n]". A 
@@ -339,14 +333,8 @@ def SieveOfEratosthenes(max_val: int) -> list:
     return prime 
 
 # Function that calculates the xor 
-
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/)
 # of k smallest and k 
-
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/)
 # largest prime numbers in an array 
-
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/)
 def kMaxXOR(arr: list, n: int, k: int): 
 
     # Find maximum value in the array 
@@ -415,8 +403,6 @@ def kMaxXOR(arr: list, n: int, k: int):
     print("Composite XOR =", nonPrimeXor) 
 
 # Driver Code 
-
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/)
 if __name__ == "__main__": 
 
     arr = [4, 2, 12, 13, 5, 19] 
@@ -425,11 +411,7 @@ if __name__ == "__main__":
     kMaxXOR(arr, n, k) 
 
 # This code is contributed by 
-
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/)
 # sanjeev2552 
-
-> 原文：[https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/)
 
 ```
 

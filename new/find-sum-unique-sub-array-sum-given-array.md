@@ -1,7 +1,5 @@
 # 查找给定数组的所有唯一子数组总和。
 
-> 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
-
 给定一组 n 个正元素。 子阵列总和定义为特定子阵列的所有元素的总和，任务是找到所有唯一子阵列总和的总和。
 
 注意：唯一子数组总和表示没有其他子数组具有相同的总和值。
@@ -176,15 +174,9 @@ public static void main(String[] args)
 ```py
 
 # Python3 for finding sum of all 
-
-> 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
 # unique subarray sum
 
-> 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
-
 # function for finding grandSum
-
-> 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
 def findSubarraySum(arr, n):
 
     # calculate cumulative sum of array
@@ -224,19 +216,13 @@ def findSubarraySum(arr, n):
     return totalSum
 
 # Drivers code
-
-> 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
 if __name__ == '__main__':
     arr = [3, 2, 3, 1, 4]
     n = len(arr)
     print(findSubarraySum(arr, n))
 
 # This code is contributed by
-
-> 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
 # Sahil_Shelangia
-
-> 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
 
 ```
 
@@ -435,15 +421,9 @@ public static void main(String[] args)
 ```py
 
 # Python3 for finding sum of all
-
-> 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
 # unique subarray sum
 
-> 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
-
 # function for finding grandSum
-
-> 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
 def findSubarraySum(arr, n):
 
     res = 0
@@ -466,15 +446,11 @@ def findSubarraySum(arr, n):
     return res
 
 # Driver code
-
-> 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
 arr = [3, 2, 3, 1, 4]
 n = len(arr)
 print(findSubarraySum(arr, n))
 
 # This code is contributed by mohit kumar
-
-> 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
 
 ```
 

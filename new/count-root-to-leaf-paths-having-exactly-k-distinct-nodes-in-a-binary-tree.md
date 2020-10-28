@@ -1,7 +1,5 @@
 # 在一棵二叉树中对具有完全 K 个不同节点的根到叶路径进行计数
 
-> 原文：[https://www.geeksforgeeks.org/count-root-to-leaf-paths-having-exactly-k-distinct-nodes-in-a-binary-tree/](https://www.geeksforgeeks.org/count-root-to-leaf-paths-having-exactly-k-distinct-nodes-in-a-binary-tree/)
-
 给定一个[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，该树由以 **1** 为根的 **N** 个节点，整数 **K** 和数组 **arr [] [HTG9 由分配给每个节点的值组成，任务是对给定二叉树中具有 **K** 个不同节点的叶路径的根数[进行计数。](https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/)**
 
 **示例**：

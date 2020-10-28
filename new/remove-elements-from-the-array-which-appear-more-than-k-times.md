@@ -1,7 +1,5 @@
 # 从数组中删除出现 k 次以上的元素
 
-> 原文：[https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/)
-
 给定一个整数数组，请删除所有出现在数组中严格超过 k 次的元素。
 
 **示例**：
@@ -128,11 +126,7 @@ public static void main(String[] args) 
 ```py
 
 # Python 3 program to remove the elements which 
-
-> 原文：[https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/)
 # appear more than k times from the array. 
-
-> 原文：[https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/)
 def RemoveElements(arr, n, k): 
 
     # Hash map which will store the 
@@ -153,8 +147,6 @@ def RemoveElements(arr, n, k):
             print(arr[i], end = " ") 
 
 # Driver Code     
-
-> 原文：[https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/)
 if __name__ == '__main__': 
     arr = [1, 2, 2, 3, 2, 3, 4] 
     n = len(arr) 
@@ -164,11 +156,7 @@ if __name__ == '__main__':
     RemoveElements(arr, n, k) 
 
 # This code is contributed by 
-
-> 原文：[https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/)
 # Sahil_Shelangia 
-
-> 原文：[https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/)
 
 ```
 
