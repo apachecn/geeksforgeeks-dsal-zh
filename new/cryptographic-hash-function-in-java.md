@@ -1,5 +1,7 @@
 # Java 中的
 
+> 原文：[https://www.geeksforgeeks.org/cryptographic-hash-function-in-java/](https://www.geeksforgeeks.org/cryptographic-hash-function-in-java/)
+
 # 加密哈希函数
 
 **加密哈希**是[哈希函数](https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/)，它接受随机大小的输入并产生固定大小的输出。 它很容易计算，但是要检索原始数据却很困难。 用唯一的输入来复制相同的哈希值是很困难的，并且是一种单向函数，因此无法进行还原。 散列也以不同的名称而闻名，例如摘要，[消息摘要](https://www.geeksforgeeks.org/messagedigest-getinstance-method-in-java-with-examples/)，[校验和](https://www.geeksforgeeks.org/implementing-checksum-using-java/)等。

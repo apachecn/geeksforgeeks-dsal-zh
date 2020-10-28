@@ -1,5 +1,7 @@
 # XY 平面中 M 条线段与 N 条垂直线的交点计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
+
 给定 **N** 垂直线（平行于 Y 轴）的 **x** 坐标和 **M** 线段从（x1，y1）延伸到（x2，y2）的坐标， 任务是找到线段与垂直线相交的总数。
 
 **范例**：

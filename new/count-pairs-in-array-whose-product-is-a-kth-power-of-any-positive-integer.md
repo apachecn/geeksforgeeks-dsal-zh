@@ -1,5 +1,7 @@
 # 数组中的乘积对，乘积为任何正整数的 Kth 幂
 
+> 原文：[https://www.geeksforgeeks.org/count-pairs-in-array-whose-product-is-a-kth-power-of-any-positive-integer/](https://www.geeksforgeeks.org/count-pairs-in-array-whose-product-is-a-kth-power-of-any-positive-integer/)
+
 给定长度为 **N** 的数组 **arr []** 和整数 **K** ，任务是对乘积为 **Kth** 的数组中的对进行计数 ]正整数的幂，即
 
 > 对于任何正整数 Z，A [i] * A [j] = Z <sup>K</sup> 。

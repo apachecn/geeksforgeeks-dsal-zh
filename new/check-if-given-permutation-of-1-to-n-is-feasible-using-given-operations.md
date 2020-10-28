@@ -1,5 +1,7 @@
 # 使用给定的操作检查给定的 1 到 N 的排列是否可行
 
+> 原文：[https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/](https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/)
+
 给定大小为 **N** 的数组 **arr []** ，检查此数组是否在以下约束下构建的任务：
 
 1.  该数组只能包含 1 到 N 之间的数字。

@@ -1,5 +1,7 @@
 # 使用 Rabin Karp 算法计算字符串的不同子字符串
 
+> 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-of-a-given-string-using-rabin-karp-algorithm/](https://www.geeksforgeeks.org/count-of-distinct-substrings-of-a-given-string-using-rabin-karp-algorithm/)
+
 给定一个字符串，使用 Rabin Karp 算法计算不同子字符串的数量。
 
 **范例**：

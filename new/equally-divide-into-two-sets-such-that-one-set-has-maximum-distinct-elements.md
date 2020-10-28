@@ -1,5 +1,7 @@
 # 平均分为两组，以便一组具有最大不同的元素
 
+> 原文：[https://www.geeksforgeeks.org/equally-divide-into-two-sets-such-that-one-set-has-maximum-distinct-elements/](https://www.geeksforgeeks.org/equally-divide-into-two-sets-such-that-one-set-has-maximum-distinct-elements/)
+
 有两个进程 P1 和 P2，以及 N 个资源，其中 N 是偶数。 有一个大小为 N 的数组，并且 arr [i]表示第 i 种资源的类型。可能有一个以上的资源实例。您将在 P1 和 P2 之间平均分配这些资源，以使最大数量的不同资源数 分配给 P2。 打印分配给 P2 的最大不同资源数。
 
 **示例**：

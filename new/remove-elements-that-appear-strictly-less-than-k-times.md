@@ -1,5 +1,7 @@
 # 删除出现严格少于 k 次的元素
 
+> 原文：[https://www.geeksforgeeks.org/remove-elements-that-appear-strictly-less-than-k-times/](https://www.geeksforgeeks.org/remove-elements-that-appear-strictly-less-than-k-times/)
+
 给定一个整数数组，删除严格小于 k 次的所有元素。
 
 **示例**：

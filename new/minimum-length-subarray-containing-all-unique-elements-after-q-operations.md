@@ -1,5 +1,7 @@
 # Q 操作后包含所有唯一元素的最小长度子数组
 
+> 原文：[https://www.geeksforgeeks.org/minimum-length-subarray-containing-all-unique-elements-after-q-operations/](https://www.geeksforgeeks.org/minimum-length-subarray-containing-all-unique-elements-after-q-operations/)
+
 给定大小为 **N** 的数组，该数组最初包含所有元素为 **0** ，并且给出一个 **Q** 查询，其中查询的范围为 **[L，R] [** 。 任务是通过向 **Q** 查询的 **[L，R]** 范围内的每个元素添加 **1** 来修改数组，然后打印最小长度的大小 包含所有唯一元素的子数组。
 
 **注意**：基于 1 的索引在[L，R]范围内使用。

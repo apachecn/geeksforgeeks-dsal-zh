@@ -1,5 +1,7 @@
 # 查找字符串
 
+> 原文：[https://www.geeksforgeeks.org/find-the-first-repeated-character-in-a-string/](https://www.geeksforgeeks.org/find-the-first-repeated-character-in-a-string/)
+
 中的第一个重复字符
 
 给定一个字符串，找到其中的第一个重复字符。 我们需要找到多次出现并且其**第二次出现**的索引最小的字符。 在中讨论了这个问题的一个变体。

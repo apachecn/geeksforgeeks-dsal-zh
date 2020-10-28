@@ -1,5 +1,7 @@
 # 设计一个可以提供最大频率元素的堆栈
 
+> 原文：[https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/](https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/)
+
 给定 **N** 个元素，任务是实现一个堆栈，该堆栈将在每次弹出操作中删除并返回最大频率元素。 如果频率相等，则将返回最高频率元素。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 从阵列中移除的最少数量，以使 GCD 更大
 
+> 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
+
 给定 N 个数字，任务是找到最小的数字去除率，以使剩余数字的 GCD 大于 N 个数字的初始 GCD。 如果无法增加 GCD，请打印“否”。
 
 **示例**：

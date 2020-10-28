@@ -1,5 +1,7 @@
 # 设计一个支持恒定时间插入，删除，搜索和 getRandom 的数据结构
 
+> 原文：[https://www.geeksforgeeks.org/design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time/](https://www.geeksforgeeks.org/design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time/)
+
 设计一个数据结构，以支持在Θ（1）时间内进行以下操作。
 
 insert（x）：将 x 插入数据结构（如果尚不存在）。

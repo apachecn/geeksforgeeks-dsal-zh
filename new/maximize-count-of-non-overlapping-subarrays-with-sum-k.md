@@ -1,5 +1,7 @@
 # 最大化总和为 K 的非重叠子数组的数量
 
+> 原文：[https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/](https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/)
+
 给定数组 **arr []** 和整数 **K** ，任务是打印与 **K** 之和的非重叠子数组的最大数量。
 
 **示例**：

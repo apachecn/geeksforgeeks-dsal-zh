@@ -1,5 +1,7 @@
 # 最大限度地增加 P 巧克力可以连续分配给 N 个人的天数
 
+> 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
+
 给定一个整数，表示巧克力数量的 **P** 和数组 **a []** ，其中 <sub>i</sub> 表示 **i <sup>th [</sup>** 巧克力。 **N** 人每天都想吃巧克力。 考虑以下条件，找出 **N** 人可以吃巧克力的最大连续天数：
 
 1.  每个 **N** 人在特定的一天必须只吃一种巧克力。

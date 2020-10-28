@@ -1,5 +1,7 @@
 # 最小化将给定字符串转换为长度为 K 的相等子字符串的串联的成本
 
+> 原文：[https://www.geeksforgeeks.org/minimize-cost-to-convert-given-string-into-concatenation-of-equal-substrings-of-length-k/](https://www.geeksforgeeks.org/minimize-cost-to-convert-given-string-into-concatenation-of-equal-substrings-of-length-k/)
+
 给定[字符串](https://www.geeksforgeeks.org/string-data-structure/) **S** ，长度为 **N** ，由小写字母和整数 **K** 组成，其中 **N％K = 0 [** ，任务是通过执行以下操作来找到将给定字符串转换为相同 **K** 个长度子字符串的串联字符串的最低成本：
 
 *   一个字符可以替换为另一个字符。

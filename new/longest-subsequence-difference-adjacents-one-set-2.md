@@ -1,5 +1,7 @@
 # 最长的子序列，使得相邻元素之间的差为 1 | 设置 2
 
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/](https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/)
+
 给定大小为 **n** 的数组。 任务是找到最长的子序列，以使相邻序列之间的差异为 1。 需要 O（n）的时间复杂度。
 
 **示例**：

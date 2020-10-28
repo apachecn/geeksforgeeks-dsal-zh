@@ -1,5 +1,7 @@
 # 给定字符串
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
+
 中出现相同字符之间的所有距离之和
 
 给定字符串 **S** ，任务是从包含相同字符的给定字符串中查找所有索引对对之间的距离之和。

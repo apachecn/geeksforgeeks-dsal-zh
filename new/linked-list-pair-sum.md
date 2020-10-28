@@ -1,5 +1,7 @@
 # 链表对总和
 
+> 原文：[https://www.geeksforgeeks.org/linked-list-pair-sum/](https://www.geeksforgeeks.org/linked-list-pair-sum/)
+
 给定一个链表和一个数字，请检查它们是否存在两个数字之和等于给定数字的数字。 如果存在两个数字，请打印它们。 如果有多个答案，请打印其中的任何一个。
 
 **示例**：

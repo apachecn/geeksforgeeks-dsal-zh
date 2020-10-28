@@ -1,5 +1,7 @@
 # 最长子数组，不超过 K 个不同元素
 
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/](https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/)
+
 给定 N 个元素和一个数字 K，找到最长不超过 K 个不同元素的子数组（它可以少于 K 个）
 
 **示例**：

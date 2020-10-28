@@ -1,5 +1,7 @@
 # 打印最长子字符串而不重复字符
 
+> 原文：[https://www.geeksforgeeks.org/print-longest-substring-without-repeating-characters/](https://www.geeksforgeeks.org/print-longest-substring-without-repeating-characters/)
+
 给定一个字符串，打印最长的子字符串，而不重复字符。 例如，没有重复字符“ ABDEFGABEF”的最长子串是“ BDEFGA”和“ DEFGAB”，长度为 6。对于“ BBBB”，最长子串是“ B”，长度为 1。所需的时间复杂度为 O（n ），其中 n 是字符串的长度。
 
 **先决条件**：[最长子串的长度，不包含重复字符](https://www.geeksforgeeks.org/length-of-the-longest-substring-without-repeating-characters/)

@@ -1,5 +1,7 @@
 # 检查给定数组中每个元素的频率是否唯一
 
+> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-each-element-in-given-array-is-unique-or-not/](https://www.geeksforgeeks.org/check-if-frequency-of-each-element-in-given-array-is-unique-or-not/)
+
 给定 **N** 个正整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，其中整数在 **1 到 N** 范围内。 检查数组中元素的[频率是否唯一。 如果所有频率都是唯一的，则打印**“是”** ，否则打印**“否”** 。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
 
 **示例**：

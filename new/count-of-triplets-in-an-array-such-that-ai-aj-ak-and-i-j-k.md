@@ -1,5 +1,7 @@
 # 数组中三元组的计数，使得 A [i] * A [j] = A [k]且 i < j < k
 
+> 原文：[https://www.geeksforgeeks.org/count-of-triplets-in-an-array-such-that-ai-aj-ak-and-i-j-k/](https://www.geeksforgeeks.org/count-of-triplets-in-an-array-such-that-ai-aj-ak-and-i-j-k/)
+
 给定由 **N** 个正整数组成的数组 **A []** ，任务是查找三元组 **A [i]，A [j] & A [ k]** 在数组中，这样 **i < j < k** 和 **A [i] * A [j] = A [k]** 。
 
 **示例**：

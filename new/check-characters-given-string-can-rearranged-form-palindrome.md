@@ -1,5 +1,7 @@
 # 检查给定字符串的字符是否可以重新排列以形成回文
 
+> 原文：[https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)
+
 给定字符串，请检查给定字符串的字符是否可以重新排列以形成回文。
 
 例如，可以重新排列“ geeksogeeks”的字符以形成回文“ geeksoskeegeg”，但是不能重新排列“ geeksforgeeks”的字符以形成回文。

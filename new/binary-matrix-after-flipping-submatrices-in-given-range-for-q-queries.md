@@ -1,5 +1,7 @@
 # 在给定范围内翻转 Q 查询的子矩阵后的二进制矩阵
 
+> 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
+
 给定尺寸为 **M x N** 和 **Q** 尺寸为[ **x1，y1，x2，y2）的二进制矩阵 **arr [] []**** ，其中（[ **x1，y1** ）和（ **x2，y2** ）表示需要翻转的子矩阵的左上和右下索引（将 0s 转换为 1s 反之亦然）。 任务是打印执行给定的 **Q** 查询
 
 **后获得的最终矩阵。示例**：

@@ -1,5 +1,7 @@
 # 查找出现在第一个数组而不是第二个数组中的元素
 
+> 原文：[https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/](https://www.geeksforgeeks.org/find-elements-present-first-array-not-second/)
+
 给定两个数组，任务是我们找到第一个数组中存在但第二个数组中不存在的数字。
 
 **范例**：

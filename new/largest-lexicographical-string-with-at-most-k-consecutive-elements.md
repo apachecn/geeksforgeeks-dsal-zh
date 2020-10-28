@@ -1,5 +1,7 @@
 # 最大的词典字符串，最多包含 K 个连续元素
 
+> 原文：[https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/](https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/)
+
 给定字符串 **S** ，任务是通过重新排列或删除元素来查找最大不超过元素连续出现的 **K** 的词典字符串。
 
 **范例**：

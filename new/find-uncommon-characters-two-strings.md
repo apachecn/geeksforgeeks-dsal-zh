@@ -1,5 +1,7 @@
 # 查找两个字符串中不常见的字符
 
+> 原文：[https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/)
+
 查找并打印两个给定字符串中不常见的字符（按排序顺序）。 此处不常见的字符表示该字符出现在一个字符串中，或​​者出现在其他字符串中，但都不出现在两个字符串中。 字符串仅包含小写字符，并且可以包含重复项。
 
 **来源**：[亚马逊访谈经验| 套装 355（体验 1 年）](https://www.geeksforgeeks.org/amazon-interview-experience-set-355-1-year-experienced/)

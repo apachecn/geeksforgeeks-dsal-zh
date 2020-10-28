@@ -1,5 +1,7 @@
 # 检查给定字符串的字符是否可用于形成 N 个相等的字符串
 
+> 原文：[https://www.geeksforgeeks.org/check-if-characters-of-a-given-string-can-be-used-to-form-any-n-equal-strings/](https://www.geeksforgeeks.org/check-if-characters-of-a-given-string-can-be-used-to-form-any-n-equal-strings/)
+
 给定字符串 **S** 和整数 **N** ，任务是检查是否有可能从给定字符串的字符中生成 N N 次的任何字符串**或 不。 如果可能，打印**是**。 否则，打印**否**。**
 
 **示例**：

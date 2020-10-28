@@ -1,5 +1,7 @@
 # 查找每个雇员下的雇员人数
 
+> 原文：[https://www.geeksforgeeks.org/find-number-of-employees-under-every-manager/](https://www.geeksforgeeks.org/find-number-of-employees-under-every-manager/)
+
 给定一个字典，其中包含员工及其经理作为许多（雇员，经理）对的映射，如下所示。
 
 ```

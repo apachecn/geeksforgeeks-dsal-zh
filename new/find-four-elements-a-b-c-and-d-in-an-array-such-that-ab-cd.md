@@ -1,5 +1,7 @@
 # 在数组中找到四个元素 a，b，c 和 d，使得 a + b = c + d
 
+> 原文：[https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
+
 给定一个由不同整数组成的数组，请查找是否有两对（a，b）和（c，d），使得 a + b = c + d，而 a，b，c 和 d 是不同的元素。 如果有多个答案，请打印其中的任何一个。
 
 例：

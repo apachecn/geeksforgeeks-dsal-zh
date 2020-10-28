@@ -1,5 +1,7 @@
 # 二叉树
 
+> 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
+
 顶视图中的打印节点
 
 二叉树的顶视图是从顶部查看树时可见的节点集。 给定一棵二叉树，打印它的顶视图。 可以按任何顺序打印输出节点。

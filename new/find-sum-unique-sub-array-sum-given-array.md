@@ -1,5 +1,7 @@
 # 查找给定数组的所有唯一子数组总和。
 
+> 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
+
 给定一组 n 个正元素。 子阵列总和定义为特定子阵列的所有元素的总和，任务是找到所有唯一子阵列总和的总和。
 
 注意：唯一子数组总和表示没有其他子数组具有相同的总和值。

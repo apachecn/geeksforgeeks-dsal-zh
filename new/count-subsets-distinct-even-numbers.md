@@ -1,5 +1,7 @@
 # 对具有不同偶数的子集进行计数
 
+> 原文：[https://www.geeksforgeeks.org/count-subsets-distinct-even-numbers/](https://www.geeksforgeeks.org/count-subsets-distinct-even-numbers/)
+
 给定 n 个数字的序列。 任务是对给定集合的所有子集进行计数，这些子集只有偶数，并且所有子集都是不同的。
 
 **注意**：根据集合的属性，如果两个子集具有相同的元素集，则将它们视为一个元素。 例如：[2，4，8]和[4，2，8]被认为是相同的。

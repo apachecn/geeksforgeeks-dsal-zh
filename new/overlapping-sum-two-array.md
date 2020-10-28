@@ -1,5 +1,7 @@
 # 两组的不重叠总和
 
+> 原文：[https://www.geeksforgeeks.org/overlapping-sum-two-array/](https://www.geeksforgeeks.org/overlapping-sum-two-array/)
+
 给定两个大小为 n 的数组 A []和 B []。 假定两个数组分别包含不同的元素。 我们需要找到所有不常见元素的总和。
 
 **示例**：

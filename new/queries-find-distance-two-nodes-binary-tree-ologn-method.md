@@ -1,5 +1,7 @@
 # 查询以查找二叉树的两个节点之间的距离-O（logn）方法
 
+> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
+
 给定一个二叉树，任务是找到一棵二叉树中两个键之间的距离，没有给出父指针。 两个节点之间的距离是要遍历才能到达另一个节点的最小边数。
 
 这个问题已经在[先前的文章](https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/)中进行了讨论，但是它使用**二叉树的三个遍历**，一个遍历用于查找两个节点的最低公共祖先（LCA）（let A 和 B），然后进行两次遍历以查找 LCA 与 A 之间的距离以及 LCA 与 B 之间的时间复杂度为 O（n）。 在这篇文章中，将讨论一种方法，该方法需要 **O（log（n））**时间来找到两个节点的 LCA。

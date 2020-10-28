@@ -1,5 +1,7 @@
 # 序列
 
+> 原文：[https://www.geeksforgeeks.org/second-repeated-word-sequence/](https://www.geeksforgeeks.org/second-repeated-word-sequence/)
+
 中第二重复的单词
 
 给定一个字符串序列，任务是找出给定序列中倒数第二个（或频繁出现）的字符串（考虑到两个单词都不是倒数第二个，总是会有一个单词）。

@@ -1,5 +1,7 @@
 # 具有不同元素的子阵列
 
+> 原文：[https://www.geeksforgeeks.org/subarrays-distinct-elements/](https://www.geeksforgeeks.org/subarrays-distinct-elements/)
+
 给定一个数组，任务是计算所有元素都不同的连续子数组的长度之和。
 
 **示例**：

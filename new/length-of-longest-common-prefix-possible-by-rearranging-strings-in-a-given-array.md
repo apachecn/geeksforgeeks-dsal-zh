@@ -1,5 +1,7 @@
 # 通过在给定数组中重新排列字符串，可以得到的最长公共前缀的长度
 
+> 原文：[https://www.geeksforgeeks.org/length-of-longest-common-prefix-possible-by-rearranging-strings-in-a-given-array/](https://www.geeksforgeeks.org/length-of-longest-common-prefix-possible-by-rearranging-strings-in-a-given-array/)
+
 给定[字符串](https://www.geeksforgeeks.org/string-data-structure/) **arr []** 的[数组](https://www.geeksforgeeks.org/array-data-structure/)，任务是通过重新排列以下字符来找到最长公共前缀的[长度 给定数组的每个字符串。](https://www.geeksforgeeks.org/longest-common-prefix-using-sorting/)
 
 **示例**：

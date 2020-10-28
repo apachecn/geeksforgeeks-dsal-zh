@@ -1,5 +1,7 @@
 # 字符串在其所有子字符串中的词典等级
 
+> 原文：[https://www.geeksforgeeks.org/lexicographic-rank-of-a-string-among-all-its-substrings/](https://www.geeksforgeeks.org/lexicographic-rank-of-a-string-among-all-its-substrings/)
+
 给定字符串 **str** ，任务是在字典编排的所有[子字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)中找到给定字符串的等级。
 
 **示例**：

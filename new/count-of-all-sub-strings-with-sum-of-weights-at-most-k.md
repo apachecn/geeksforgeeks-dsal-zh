@@ -1,5 +1,7 @@
 # 所有子串的计数，权重总和最多为 K
 
+> 原文：[https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/](https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/)
+
 给定由小英文字母组成的字符串 S 和由英文字母所有字符的权重组成的字符串 W，其中所有 i 均为![0 \leq Qi \leq 9 ](img/1a0542546fd5c88cb155251f79c599b2.png "Rendered by QuickLaTeX.com")。 我们必须找到唯一的子字符串的总数，其权重之和最多为 K。
 
 **示例**：

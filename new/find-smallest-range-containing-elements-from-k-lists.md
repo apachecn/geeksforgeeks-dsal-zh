@@ -1,5 +1,7 @@
 # 从 k 个列表中查找包含元素的最小范围
 
+> 原文：[https://www.geeksforgeeks.org/find-smallest-range-containing-elements-from-k-lists/](https://www.geeksforgeeks.org/find-smallest-range-containing-elements-from-k-lists/)
+
 给定 k 个大小为 n 的整数排序列表，从 k 个列表中的每一个中查找至少包含元素的最小范围。 如果找到多个最小范围，请打印其中任何一个。
 
 **示例**：

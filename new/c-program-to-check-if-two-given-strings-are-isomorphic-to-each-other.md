@@ -1,5 +1,7 @@
 # C 程序，用于检查两个给定的字符串是否彼此同构
 
+> 原文：[https://www.geeksforgeeks.org/c-program-to-check-if-two-given-strings-are-isomorphic-to-each-other/](https://www.geeksforgeeks.org/c-program-to-check-if-two-given-strings-are-isomorphic-to-each-other/)
+
 给定两个字符串`str1`和`str2`，任务是检查两个给定字符串[是否彼此同构](https://www.geeksforgeeks.org/check-if-two-given-strings-are-isomorphic-to-each-other/)。
 
 > 如果`str1`的每个字符到`str2`的每个字符都有一个**一对一的映射**，则说两个字符串是**同构**。 并且`str1`中每个字符的所有出现都映射到`str2`中的相同字符。

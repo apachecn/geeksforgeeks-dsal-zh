@@ -1,5 +1,7 @@
 # 通过交换一对字符可以计算回文字符串
 
+> 原文：[https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/](https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/)
+
 给定[回文字符串](https://www.geeksforgeeks.org/string-palindrome/) **S** ，任务是通过一次交换一对字符来查找回文字符串的数量。
 
 **范例**：

@@ -1,5 +1,7 @@
 # 打印给定数组中的前 K 个不同的 Moran 编号
 
+> 原文：[https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/](https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/)
+
 给定[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，其中包含 **N** 个不同的正整数，任务是打印第一个 **K** 个不同的 [Moran 给定数组中的数字](https://www.geeksforgeeks.org/check-whether-given-number-n-is-a-moran-number-or-not/)。
 
 > *数字 **N** 是 **Moran 数**，如果 **N** 除以其位数* [*的总和*](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/) *给出* [***素数***](https://www.geeksforgeeks.org/prime-numbers/) *。*

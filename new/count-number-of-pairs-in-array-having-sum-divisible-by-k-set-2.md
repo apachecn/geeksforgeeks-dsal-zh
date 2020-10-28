@@ -1,5 +1,7 @@
 # 计数可被 K |整除的数组中的对数 设置 2
 
+> 原文：[https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/](https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/)
+
 给定一个数组 A []和正整数 K，任务是计算其和可被 K 整除的数组中的对总数。
 
 **示例**：

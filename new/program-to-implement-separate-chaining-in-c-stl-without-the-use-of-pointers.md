@@ -1,5 +1,7 @@
 # 程序，无需使用指针即可在 C++ STL 中实现单独链接
 
+> 原文：[https://www.geeksforgeeks.org/program-to-implement-separate-chaining-in-c-stl-without-the-use-of-pointers/](https://www.geeksforgeeks.org/program-to-implement-separate-chaining-in-c-stl-without-the-use-of-pointers/)
+
 **先决条件**：[独立链接](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)和 [STL in C++](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/)
 
 本文借助 C++中的 STL 实现了哈希中的单独链接，而无需使用[指针](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)。

@@ -1,5 +1,7 @@
 # 删除给定元素后找到最大的
 
+> 原文：[https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/)
+
 给定一个整数数组，请在删除给定元素后找到最大的数字。 如果重复元素，请为包含要删除元素的数组中存在的元素的每个实例删除一个实例。
 
 **示例**：

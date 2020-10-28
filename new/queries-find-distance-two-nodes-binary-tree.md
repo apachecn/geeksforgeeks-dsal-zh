@@ -1,5 +1,7 @@
 # 查询以查找二叉树
 
+> 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
+
 的两个节点之间的距离
 
 给定一个二叉树，任务是找到一棵二叉树中两个键之间的距离，没有给出父指针。 两个节点之间的距离是要遍历以到达另一个节点的最小边数。

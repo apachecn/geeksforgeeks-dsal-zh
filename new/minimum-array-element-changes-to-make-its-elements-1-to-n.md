@@ -1,5 +1,7 @@
 # 最小数组元素更改以使其元素 1 到 N
 
+> 原文：[https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/](https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/)
+
 假设给定一个数组，该数组包含 N 个具有任何整数值的元素。 您需要找到必须更改的最小元素数，以便数组具有 1 到 N（包括 1，N）之间的所有整数值。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 可扩展散列（DBMS 的动态方法）
 
+> 原文：[https://www.geeksforgeeks.org/extendible-hashing-dynamic-approach-to-dbms/](https://www.geeksforgeeks.org/extendible-hashing-dynamic-approach-to-dbms/)
+
 **<u>可扩展散列</u>** 是一种动态散列方法，其中目录和存储桶用于散列数据。 这是一种非常灵活的方法，其中哈希函数也经历动态变化。
 
 **<u>可扩展哈希</u>的主要特征**：此哈希技术的主要特征是：

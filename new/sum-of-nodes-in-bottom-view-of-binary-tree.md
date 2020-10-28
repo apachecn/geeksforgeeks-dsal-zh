@@ -1,5 +1,7 @@
 # 二叉树
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-bottom-view-of-binary-tree/)
+
 底视图中的节点总数
 
 给定一个二叉树，任务是在给定的二叉树的底部视图中打印节点总数。 二叉树的底部视图是从底部查看树时可见的节点集。

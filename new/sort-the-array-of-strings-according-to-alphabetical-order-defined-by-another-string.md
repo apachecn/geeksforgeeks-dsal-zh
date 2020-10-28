@@ -1,5 +1,7 @@
 # 根据另一个字符串
 
+> 原文：[https://www.geeksforgeeks.org/sort-the-array-of-strings-according-to-alphabetical-order-defined-by-another-string/](https://www.geeksforgeeks.org/sort-the-array-of-strings-according-to-alphabetical-order-defined-by-another-string/)
+
 定义的字母顺序对字符串数组进行排序
 
 给定字符串 **str** 和字符串 **strArr []** 的数组，任务是根据 **str** 定义的字母顺序对数组进行排序。

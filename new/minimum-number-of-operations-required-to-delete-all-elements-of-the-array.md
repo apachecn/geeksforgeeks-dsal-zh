@@ -1,5 +1,7 @@
 # 删除数组
 
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/](https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/)
+
 的所有元素所需的最小操作数
 
 给定一个整数数组 *arr* ，任务是打印删除该数组所有元素所需的最少操作数。

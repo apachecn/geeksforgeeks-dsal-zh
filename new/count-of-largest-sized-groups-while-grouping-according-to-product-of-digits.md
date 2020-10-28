@@ -1,5 +1,7 @@
 # 根据数字乘积进行分组时最大组的数量
 
+> 原文：[https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/](https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/)
+
 给定**整数 N** ，任务是查找具有最大大小的组数。 从 1 到 N 的每个数字都根据其数字的**乘积进行分组。
 
 **范例**：**

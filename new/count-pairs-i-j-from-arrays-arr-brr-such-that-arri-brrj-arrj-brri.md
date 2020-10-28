@@ -1,5 +1,7 @@
 # 对数组 arr [] & brr []中的对（i，j）进行计数，使得 arr [i] – brr [j] = arr [j] – brr [i]
 
+> 原文：[https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/](https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/)
+
 给定两个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 和 **brr []** 数组，它们由 **N** 个整数组成，其任务是计算对数 **]（i，j）**来自两个数组，使得**（arr [i] – brr [j]）**和**（arr [j] – brr [i]）** 相等。
 
 **示例**：

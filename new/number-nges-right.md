@@ -1,5 +1,7 @@
 # 右侧
 
+> 原文：[https://www.geeksforgeeks.org/number-nges-right/](https://www.geeksforgeeks.org/number-nges-right/)
+
 的 NGE 数
 
 给定 n 个整数数组和 q 个查询，在给定索引元素的右边打印[的下一个更大元素](https://www.geeksforgeeks.org/next-greater-element/)的数量。

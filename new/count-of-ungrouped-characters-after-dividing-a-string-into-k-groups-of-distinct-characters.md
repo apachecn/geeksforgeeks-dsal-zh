@@ -1,5 +1,7 @@
 # 将字符串分成 K 组不同字符后的未分组字符数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-ungrouped-characters-after-dividing-a-string-into-k-groups-of-distinct-characters/](https://www.geeksforgeeks.org/count-of-ungrouped-characters-after-dividing-a-string-into-k-groups-of-distinct-characters/)
+
 给定大小为 **N** 的小写字母字符串**“ S”** ，以及整数 **K** ； 任务是在将给定的字符串分成 K 组不同的字符后，找到将保持未分组的字符数。
 
 **范例**：

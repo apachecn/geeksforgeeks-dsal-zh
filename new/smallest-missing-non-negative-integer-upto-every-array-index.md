@@ -1,5 +1,7 @@
 # 丢失的最小非负整数，直到每个数组索引
 
+> 原文：[https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/](https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/)
+
 给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，对于每个数组索引，任务是找到[最小的丢失的非负整数](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/) ]直到给定数组的索引。
 
 **示例**：

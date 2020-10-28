@@ -1,5 +1,7 @@
 # 查找数组
 
+> 原文：[https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/](https://www.geeksforgeeks.org/find-kth-most-occurring-element-in-an-array/)
+
 中第 K 个最常出现的元素
 
 给定大小为 **N** 的整数 **arr []** 和数字 **K** 的数组，任务是找到第个 **K <sup>]</sup>** 此数组中最常出现的元素。

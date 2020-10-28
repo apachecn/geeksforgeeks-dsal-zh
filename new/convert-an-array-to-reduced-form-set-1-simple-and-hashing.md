@@ -1,5 +1,7 @@
 # 将数组转换为简化形式| 设置 1（简单和哈希）
 
+> 原文：[https://www.geeksforgeeks.org/convert-an-array-to-reduced-form-set-1-simple-and-hashing/](https://www.geeksforgeeks.org/convert-an-array-to-reduced-form-set-1-simple-and-hashing/)
+
 给定具有 n 个不同元素的数组，请将给定数组转换为所有元素都在 0 到 n-1 范围内的形式。 元素的顺序相同，即，0 代替最小元素，1 代表第二个最小元素，…n-1 代表最大元素。
 
 ```

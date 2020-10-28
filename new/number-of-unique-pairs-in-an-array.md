@@ -1,5 +1,7 @@
 # 数组
 
+> 原文：[https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/](https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/)
+
 中的唯一对数
 
 给定 N 个元素的数组，任务是找到可以使用给定数组的元素形成的所有唯一对。

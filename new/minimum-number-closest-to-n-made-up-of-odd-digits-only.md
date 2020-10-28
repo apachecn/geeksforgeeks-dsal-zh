@@ -1,5 +1,7 @@
 # 最接近 N 的最小数字仅由奇数位组成
 
+> 原文：[https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/](https://www.geeksforgeeks.org/minimum-number-closest-to-n-made-up-of-odd-digits-only/)
+
 给定整数 **N** ，任务是找到最接近 **N** 且仅具有奇数位的数字。 如果存在多个这样的数字，请打印最小值。
 
 **示例**：

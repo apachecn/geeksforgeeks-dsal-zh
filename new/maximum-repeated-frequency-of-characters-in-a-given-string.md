@@ -1,5 +1,7 @@
 # 给定字符串
 
+> 原文：[https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/](https://www.geeksforgeeks.org/maximum-repeated-frequency-of-characters-in-a-given-string/)
+
 中字符的最大重复频率
 
 给定字符串 **S** ，任务是查找给定字符串 S 中字符的最大重复频率计数。

@@ -1,5 +1,7 @@
 # 检查数组是否可以分成对，其和可被 k 整除
 
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-can-be-divided-into-pairs-whose-sum-is-divisible-by-k/](https://www.geeksforgeeks.org/check-if-an-array-can-be-divided-into-pairs-whose-sum-is-divisible-by-k/)
+
 给定一个整数数组和一个数字 k，编写一个函数，如果给定的数组可以分成几对，则每对之和可被 k 整除，则该函数返回 true。
 
 **示例**：

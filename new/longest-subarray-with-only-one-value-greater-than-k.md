@@ -1,5 +1,7 @@
 # 最长子数组，其值仅大于 k
 
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/](https://www.geeksforgeeks.org/longest-subarray-with-only-one-value-greater-than-k/)
+
 给定 N 个数字的数组，请找到最长子数组的长度，以使 K 是插入时第二大的元素。
 
 **示例**：

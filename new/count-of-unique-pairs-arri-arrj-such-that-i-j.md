@@ -1,5 +1,7 @@
 # 唯一对（arr [i]，arr [j]）的计数，使得 i < j
 
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
+
 给定数组 **arr []** ，任务是打印唯一对**（arr [i]，arr [j]）**的计数，以便 **i < j** 。
 
 **示例**：

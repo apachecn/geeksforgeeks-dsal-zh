@@ -1,5 +1,7 @@
 # 根据顺序和级别顺序遍历构造树| 设置 2
 
+> 原文：[https://www.geeksforgeeks.org/construct-tree-inorder-level-order-traversals-set-2/](https://www.geeksforgeeks.org/construct-tree-inorder-level-order-traversals-set-2/)
+
 给定二叉树的有序遍历和层级遍历，构造二叉树。 下面是一个示例来说明此问题。
 
 例子：

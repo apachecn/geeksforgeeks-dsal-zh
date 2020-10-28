@@ -1,5 +1,7 @@
 # 绝对差为 K 的两个元素之间的最大距离
 
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/](https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/)
+
 给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 和数字 **K** ，任务是找到两个绝对差为 **K** 的元素之间的最大距离。 。 如果找不到最大距离，则打印**“ -1”** 。
 
 **示例**：

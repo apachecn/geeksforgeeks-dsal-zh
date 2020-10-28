@@ -1,5 +1,7 @@
 # 从后序和顺序构建二叉树
 
+> 原文：[https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/](https://www.geeksforgeeks.org/construct-a-binary-tree-from-postorder-and-inorder/)
+
 给定 Postorder 和 Inorder 遍历，构造树。
 
 **示例**：[

@@ -1,5 +1,7 @@
 # 在给定数组
 
+> 原文：[https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/](https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/)
+
 中对相等的元素对进行计数
 
 给定表示手套长度的 **N** 个整数的数组 **arr []** ，任务是从给定的数组中计算最大可能的手套对。 **注意**手套只能与相同尺寸的手套配对，并且只能是单副手套的一部分。

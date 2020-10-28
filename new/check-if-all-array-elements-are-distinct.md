@@ -1,5 +1,7 @@
 # 检查所有数组元素是否都不同
 
+> 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-distinct/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-distinct/)
+
 给定一个数组，请检查数组中的所有元素是否互不相同。
 
 **示例**：

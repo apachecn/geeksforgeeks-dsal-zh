@@ -1,5 +1,7 @@
 # 在第一个数组中存在元素，但在第二个数组中不存在
 
+> 原文：[https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/](https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/)
+
 给定两个分别为大小 M 和 N 的数组（可能会排序，也可能不会排序）。 这样的数组使得它们中可能包含一些公共元素。 您需要计算出现在第一个数组中而不是第二个数组中的元素的数量。
 
 **示例**：

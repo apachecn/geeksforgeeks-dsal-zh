@@ -1,5 +1,7 @@
 # 查找与给定数字 N 有不同数字的下一个数字
 
+> 原文：[https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/](https://www.geeksforgeeks.org/find-next-number-having-distinct-digits-from-the-given-number-n/)
+
 给定自然数 **N** ，任务是查找与给定数字具有不同数字的下一个数字。
 
 **示例**：

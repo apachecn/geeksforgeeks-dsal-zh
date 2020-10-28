@@ -1,5 +1,7 @@
 # 对于具有重复元素的数组，要严格获得 LIS 所需的最小连接| 第 2 组
 
+> 原文：[https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/](https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/)
+
 给定大小为 n 的**数组 A []** ，其中数组中可以包含重复元素。 我们必须找到序列 A 所需的最小串联，才能严格得到最长增长子序列。 对于数组 A []，我们遵循基于 1 的索引。
 
 **范例**：

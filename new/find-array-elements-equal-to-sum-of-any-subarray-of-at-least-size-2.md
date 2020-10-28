@@ -1,5 +1,7 @@
 # 查找等于至少大小为 2 的任何子数组之和的数组元素
 
+> 原文：[https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/](https://www.geeksforgeeks.org/find-array-elements-equal-to-sum-of-any-subarray-of-at-least-size-2/)
+
 给定一个数组 **arr []** ，任务是从该数组中查找等于大小大于 1 的任何子数组之和的元素。
 
 **示例**：

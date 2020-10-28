@@ -1,5 +1,7 @@
 # 查找其乘积具有最大素数的行
 
+> 原文：[https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/](https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/)
+
 给定大小为 **N x M** 的矩阵，任务是打印其乘积具有最大素数计数的行元素。
 
 **示例**：

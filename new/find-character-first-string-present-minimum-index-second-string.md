@@ -1,5 +1,7 @@
 # 查找第二个字符串
 
+> 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
+
 中最小索引处出现的第一个字符串中的字符
 
 给定一个字符串 **str** 和另一个字符串 **patt** 。 在 **patt** 中找到出现在 **str** 中最小索引处的字符。 如果 **str** 中没有 **patt** 字符，则打印“无字符”。

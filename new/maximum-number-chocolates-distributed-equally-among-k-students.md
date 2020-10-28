@@ -1,5 +1,7 @@
 # 在 k 名学生中平均分配的最大巧克力数量
 
+> 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
+
 给定 **n** 个盒子，其中装有一些排成一行的巧克力。 学生人数 **k** 。 问题是，通过从给定批次中选择连续的盒子序列，在 **k** 学生中平均分配最大数量的巧克力。 考虑将盒子排列成从左到右从 1 到 n 的数字。 我们必须选择一组连续的盒子，它们可以为所有 **k** 学生平均提供最大数量的巧克力。 给出数组 **arr []** 来表示框的行排列，而 arr [i]表示该框中位置“ i”的巧克力数量。
 
 **示例**：

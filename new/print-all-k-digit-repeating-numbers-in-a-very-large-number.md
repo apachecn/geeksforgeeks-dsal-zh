@@ -1,5 +1,7 @@
 # 以很大的数字打印所有 K 位重复数字
 
+> 原文：[https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/](https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/)
+
 给定非常大的字符串形式的 **N** 和数字 **K** ，任务是打印所有 **K 数字**重复频率大于 1\.
 
 **示例**：

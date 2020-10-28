@@ -1,5 +1,7 @@
 # 程序接受包含所有元音的字符串
 
+> 原文：[https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/](https://www.geeksforgeeks.org/program-to-accept-a-strings-which-contains-all-the-vowels/)
+
 给定字符串 **S** ，任务是检查并接受给定的字符串是否包含所有元音，即**'a'，'e'，'i'。'o'，'u'或 'A'，'E'，'I'，'O'，'U'**。
 
 **示例**：

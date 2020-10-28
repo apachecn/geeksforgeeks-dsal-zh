@@ -1,5 +1,7 @@
 # 使用分段筛的最长质数子数组
 
+> 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
+
 给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到最长的子数组，其中该子数组中的所有数字均为质数。
 
 **范例**：

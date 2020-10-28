@@ -1,5 +1,7 @@
 # 检查是否可以通过删除最多 K 个字符来使给定字符串的排列回文
 
+> 原文：[https://www.geeksforgeeks.org/check-if-permutation-of-a-given-string-can-be-made-palindromic-by-removing-at-most-k-characters/](https://www.geeksforgeeks.org/check-if-permutation-of-a-given-string-can-be-made-palindromic-by-removing-at-most-k-characters/)
+
 给定[字符串](https://www.geeksforgeeks.org/string-data-structure/) **str** 和整数 **K** ，任务是检查给定字符串的[排列是否可以设为[ 通过从给定字符串中删除最多 **K** 个字符，来实现](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)[回文](https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/)。
 
 **示例**：

@@ -1,5 +1,7 @@
 # C++ STL 中的
 
+> 原文：[https://www.geeksforgeeks.org/set-vs-unordered_set-c-stl/](https://www.geeksforgeeks.org/set-vs-unordered_set-c-stl/)
+
 # set vs unordered_set
 
 先决条件：在 C++中设置 [](https://www.geeksforgeeks.org/set-in-cpp-stl/) ，在 C++中设置 [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)

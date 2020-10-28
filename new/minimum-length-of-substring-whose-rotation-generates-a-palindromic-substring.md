@@ -1,5 +1,7 @@
 # 子字符串的最小长度，其旋转会生成回文子字符串
 
+> 原文：[https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/](https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/)
+
 给定字符串 **str** ，任务是找到旋转所需的子字符串的最小长度，以从给定字符串生成回文子字符串。
 
 **示例**：

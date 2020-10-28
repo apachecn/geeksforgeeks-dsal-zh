@@ -1,5 +1,7 @@
 # N 个轴平行矩形之间缺少顶点
 
+> 原文：[https://www.geeksforgeeks.org/missing-vertex-among-n-axis-parallel-rectangles/](https://www.geeksforgeeks.org/missing-vertex-among-n-axis-parallel-rectangles/)
+
 给定二维笛卡尔坐标系中的 **N 个**轴平行矩形以及 **4N-1** 顶点的坐标，任务是找到缺失的单个顶点。 **示例**：，
 
 > **输入**：N = 2，V [] [] = {{1，1}，{1，2}，{4，6}，{2，1}，{9，6}，{ 9，3}，{4，3}

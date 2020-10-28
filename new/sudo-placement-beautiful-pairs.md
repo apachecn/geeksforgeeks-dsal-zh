@@ -1,5 +1,7 @@
 # Sudo 放置| 美丽的一对
 
+> 原文：[https://www.geeksforgeeks.org/sudo-placement-beautiful-pairs/](https://www.geeksforgeeks.org/sudo-placement-beautiful-pairs/)
+
 给定两个整数数组，其中第一个数组的最大大小很大，第二个数组的最大大小很小。 您的任务是查找第一个数组中是否存在一对，其和出现在第二个数组中。
 
 例子：

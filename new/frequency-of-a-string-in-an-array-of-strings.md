@@ -1,5 +1,7 @@
 # 字符串数组中字符串的频率
 
+> 原文：[https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/](https://www.geeksforgeeks.org/frequency-of-a-string-in-an-array-of-strings/)
+
 您会得到一个字符串集合和一个查询列表。 对于每个查询，都有一个字符串。 我们需要打印给定字符串在字符串集合中出现的次数。
 
 **范例**：

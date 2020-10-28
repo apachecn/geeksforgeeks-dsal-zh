@@ -1,5 +1,7 @@
 # 在二叉树中打印第一个最短的根到叶路径
 
+> 原文：[https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/](https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/)
+
 给定具有不同值的二叉树，任务是打印第一个最小的根到叶路径。 我们基本上需要打印出节点数最少的最左边的根到叶的路径。
 
 ```

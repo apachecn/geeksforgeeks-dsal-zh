@@ -1,5 +1,7 @@
 # 为每个数组元素计数数组中所有重复的元素对。
 
+> 原文：[https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/](https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/)
+
 给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 。 对于数组中的每个元素，任务是计算可能的对（i，j），不包括当前元素，以使 **i < j** 和 **arr [i] = arr [ j]** 。
 
 **示例**：

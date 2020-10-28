@@ -1,5 +1,7 @@
 # 具有唯一元素的最大总和连续子数组
 
+> 原文：[https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/)
+
 给定 **N** 个正整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是在所有具有唯一元素的子数组中找到具有最大和的子数组并打印其和。
 
 > **输入** arr [] = {1、2、3、3、4、5、2、1}

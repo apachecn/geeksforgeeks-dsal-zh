@@ -1,5 +1,7 @@
 # 长度为 K 的子字符串的计数，其中恰好有 K 个不同的字符
 
+> 原文：[https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/](https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/)
+
 给定一个小写字母的字符串 **str** 和一个整数 **K** ，任务是计算长度为 **K** 的所有子字符串，这些子字符串的正好为 **K** 不同的字符。
 
 **示例**：

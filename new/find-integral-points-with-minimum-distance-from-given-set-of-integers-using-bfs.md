@@ -1,5 +1,7 @@
 # 使用 BFS 查找与给定整数集之间最小距离的积分点
 
+> 原文：[https://www.geeksforgeeks.org/find-integral-points-with-minimum-distance-from-given-set-of-integers-using-bfs/](https://www.geeksforgeeks.org/find-integral-points-with-minimum-distance-from-given-set-of-integers-using-bfs/)
+
 给定长度为 **N** 的整数数组 **A []** 和整数 **K** 。 任务是找到给定数组中不存在的 **K** 个不同积分点，以使它们与 **A []** 中最近点的距离之和最小。
 
 > **积分点**被定义为两个坐标均为整数的点。 另外，在 x 轴上，我们不需要考虑 y 坐标，因为所有点的 y 坐标都等于零。

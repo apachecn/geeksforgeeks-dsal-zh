@@ -1,5 +1,7 @@
 # 最小化使两个给定字符串彼此置换所需的给定操作数
 
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/](https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/)
+
 给定两个[字符串](https://www.geeksforgeeks.org/string-data-structure/) **str1** 和 **str2** ，任务是对两个字符串之一进行以下三种类型的最小操作数计数 使 **str1** 和 **str2** 彼此置换：
 
 1.  在字符串中插入一个字符。

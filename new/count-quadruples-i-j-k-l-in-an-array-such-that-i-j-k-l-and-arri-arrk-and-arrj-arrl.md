@@ -1,5 +1,7 @@
 # 计数阵列中的四倍（i，j，k，l），使得 i < j < k < l 和 arr [i] = arr [k]和 arr [j] = arr [ l]
 
+> 原文：[https://www.geeksforgeeks.org/count-quadruples-i-j-k-l-in-an-array-such-that-i-j-k-l-and-arri-arrk-and-arrj-arrl/](https://www.geeksforgeeks.org/count-quadruples-i-j-k-l-in-an-array-such-that-i-j-k-l-and-arri-arrk-and-arrj-arrl/)
+
 给定由 **N** 个整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是计算元组**（i，j，k，l）的数量 给定数组中的**，使得 **i < j < k < l** 和 **arr [i] = arr [k]** 和 **arr [ j] ＝ arr [1]** 。
 
 **示例**：

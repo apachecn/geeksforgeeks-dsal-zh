@@ -1,5 +1,7 @@
 # 最相似的字符串
 
+> 原文：[https://www.geeksforgeeks.org/most-similar-string/](https://www.geeksforgeeks.org/most-similar-string/)
+
 给定字符串 **str** 和[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)，字符串 **arr []** 的大小为 **N** ，任务是从 arr [打印字符串 ]，最多可匹配 str 个字符。
 
 **示例**：

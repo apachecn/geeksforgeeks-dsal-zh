@@ -1,5 +1,7 @@
 # 最小化获得阵列的排序顺序所需的步骤
 
+> 原文：[https://www.geeksforgeeks.org/minimize-steps-required-to-obtain-sorted-order-of-an-array/](https://www.geeksforgeeks.org/minimize-steps-required-to-obtain-sorted-order-of-an-array/)
+
 给定一个数组 **arr []** ，该数组由整数 **[1，N]** 的排列组成，通过重新排列排序的顺序 **[1，N]** ，该任务 通过重复相同的过程从步骤中从排序的序列中获得 arr []，找到**的最小步数**，此后将重复排序的顺序 **[1，N]** 。 每一步。
 
 **范例**：

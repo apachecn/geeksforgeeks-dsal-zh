@@ -1,5 +1,7 @@
 # 检查两个字符串是否为 k-anagrams
 
+> 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
+
 给定两个字符串的小写字母和一个值 k，任务是查找两个字符串是否彼此为 K-anagram。
 
 如果满足以下两个条件，则两个字符串称为 **k-anagrams** 。

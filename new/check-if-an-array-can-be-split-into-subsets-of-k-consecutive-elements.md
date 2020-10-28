@@ -1,5 +1,7 @@
 # 检查数组是否可以分为 K 个连续元素的子集
 
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/](https://www.geeksforgeeks.org/check-if-an-array-can-be-split-into-subsets-of-k-consecutive-elements/)
+
 给定一个数组 **arr []** 和整数 **K** ，任务是将该数组拆分为大小为 **K** 的子集，以使每个子集由**组成 K** 个连续元素。
 
 **示例**：

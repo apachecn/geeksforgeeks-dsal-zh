@@ -1,5 +1,7 @@
 # 按排列数字排列的最大回文数
 
+> 原文：[https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/](https://www.geeksforgeeks.org/largest-palindromic-number-permuting-digits/)
+
 给定 N（非常大），任务是打印通过排列 N 的数字获得的最大回文数。如果不可能生成回文数，则打印适当的消息。
 
 **示例**：

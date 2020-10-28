@@ -1,5 +1,7 @@
 # 由相同元素组成的子序列数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/](https://www.geeksforgeeks.org/count-of-subsequences-consisting-of-the-same-element/)
+
 给定由 **N** 个整数组成的数组 **A []** ，任务是找到子序列的总数，该子序列仅包含在整个子序列中重复的一个不同的数。
 
 **示例**：

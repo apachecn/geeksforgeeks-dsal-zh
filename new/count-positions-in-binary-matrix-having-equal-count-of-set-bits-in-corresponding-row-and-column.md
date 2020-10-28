@@ -1,5 +1,7 @@
 # 二进制矩阵中相应行和列中具有相等设置位计数的计数位置
 
+> 原文：[https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/](https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/)
+
 给定一个布尔型矩阵 **mat [] []** ，大小为 **M * N，**，任务是从矩阵中打印索引的计数，该矩阵的相应行和列包含相同数量的 set 位。
 
 **示例**：

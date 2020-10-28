@@ -1,5 +1,7 @@
 # 最小化数组元素的增减，以使每个模 K 相等
 
+> 原文：[https://www.geeksforgeeks.org/minimize-increment-decrement-of-array-elements-to-make-each-modulo-k-equal/](https://www.geeksforgeeks.org/minimize-increment-decrement-of-array-elements-to-make-each-modulo-k-equal/)
+
 给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，长度为 **N** 和整数 **K** 。 在每个操作中，可以从数组中选择任何元素（例如 **arr [i]** ），并且可以将其更改为 **arr [i] + 1** 或 **arr [i] – 1** 。 任务是找到在数组上执行所需的最少操作数，以使数组**以 K** 为模的每个值保持相同。
 
 **范例**：

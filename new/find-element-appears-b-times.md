@@ -1,5 +1,7 @@
 # 查找出现 b 次的唯一元素
 
+> 原文：[https://www.geeksforgeeks.org/find-element-appears-b-times/](https://www.geeksforgeeks.org/find-element-appears-b-times/)
+
 给定一个数组，其中每个元素出现一次，除了一个元素出现 b（a> b）次。 找到发生 b 次的元素。
 
 **示例**：

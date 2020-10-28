@@ -1,5 +1,7 @@
 # 使用普通哈希函数
 
+> 原文：[https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/](https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/)
+
 进行排序
 
 使用[普通哈希](https://www.geeksforgeeks.org/index-mapping-or-trivial-hashing-with-negatives-allowed/)函数进行排序。

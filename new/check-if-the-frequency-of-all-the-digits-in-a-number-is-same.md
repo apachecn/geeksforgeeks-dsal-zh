@@ -1,5 +1,7 @@
 # 检查一个数字中所有数字的频率是否相同
 
+> 原文：[https://www.geeksforgeeks.org/check-if-the-frequency-of-all-the-digits-in-a-number-is-same/](https://www.geeksforgeeks.org/check-if-the-frequency-of-all-the-digits-in-a-number-is-same/)
+
 给定正数“ N”，任务是查找“ N”是否平衡。 如果“ N”是一个平衡数字，则输出“ YES”，否则为“ NO”。
 
 > 如果数字中所有数字的频率相同，即所有数字出现相同的次数，则该数字是平衡的。

@@ -1,5 +1,7 @@
 # 最大长度子序列，相邻元素之间的差为 0 或 1 | 设置 2
 
+> 原文：[https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/)
+
 给定 **n** 个整数的数组。 问题在于找到子序列的最大长度，且子序列中相邻元素之间的差为 0 或 1。需要 O（n）的时间复杂度。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 进行字符串回文的逆时针移位数
 
+> 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
+
 给定一串小写英语字母，找到使该字符串回文所需的字符的逆时针移位数。 据认为，移弦总是会导致回文。
 
 **范例**：

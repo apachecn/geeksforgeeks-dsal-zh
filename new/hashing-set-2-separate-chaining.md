@@ -1,5 +1,7 @@
 # 哈希| 第 2 组（单独链接）
 
+> 原文：[https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)
+
 我们强烈建议您在下面的帖子中提及此内容。
 
 [哈希| 第 1 组（简介）](https://www.geeksforgeeks.org/hashing-set-1-introduction/)

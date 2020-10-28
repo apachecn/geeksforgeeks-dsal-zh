@@ -1,5 +1,7 @@
 # 如何在数据库中存储密码？
 
+> 原文：[https://www.geeksforgeeks.org/store-password-database/](https://www.geeksforgeeks.org/store-password-database/)
+
 大多数 Web 应用程序要求其用户通过询问用户名和密码来对自己进行身份验证。 他们将用户提供的凭据与存储在其数据库中的数据进行比较，如果凭据匹配，则授予用户访问权限。 听起来不错！ 但是，如果网站存储密码的数据库遭到破坏，将会发生什么？
 
 本文介绍了在数据库中存储密码的各种技术。

@@ -1,5 +1,7 @@
 # 具有唯一（或不同）数字的数字
 
+> 原文：[https://www.geeksforgeeks.org/numbers-unique-distinct-digits/](https://www.geeksforgeeks.org/numbers-unique-distinct-digits/)
+
 给定范围，请打印所有具有唯一数字的数字。
 
 **示例**：

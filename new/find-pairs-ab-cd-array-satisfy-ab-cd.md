@@ -1,5 +1,7 @@
 # 查找满足 ab = cd 的所有对（a，b）和（c，d）对
 
+> 原文：[https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
+
 给定一个由不同整数组成的数组，任务是找到两对（a，b）和（c，d），使得 ab = cd，其中 a，b，c 和 d 是不同元素。
 
 **示例**：

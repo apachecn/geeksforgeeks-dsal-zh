@@ -1,5 +1,7 @@
 # 打印使用任意一对给定字符串形成的所有可能的回文字符串
 
+> 原文：[https://www.geeksforgeeks.org/print-all-possible-palindromic-string-formed-using-any-pair-of-given-strings/](https://www.geeksforgeeks.org/print-all-possible-palindromic-string-formed-using-any-pair-of-given-strings/)
+
 给定[字符串](https://www.geeksforgeeks.org/introduction-to-arrays/)字符串 **arr []** 包含 **N** 个字的数组，任务是通过组合给定数组中的任何两个字符串来打印所有可能的回文字符串。
 
 **范例**：

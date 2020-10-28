@@ -1,5 +1,7 @@
 # 计算频率等于其值
 
+> 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/)
+
 的元素
 
 给定一个大小为 **N** 的整数 **arr []** 数组，任务是对频率等于其值的频率的所有元素进行计数。

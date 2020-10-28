@@ -1,5 +1,7 @@
 # 给定数组
 
+> 原文：[https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/](https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/)
+
 中任何特殊对之间的最小距离
 
 给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到特殊对的索引之间的最小可能绝对差。

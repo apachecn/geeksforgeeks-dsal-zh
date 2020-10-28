@@ -1,5 +1,7 @@
 # 在不改变元音和辅音相对位置的情况下排列单词
 
+> 原文：[https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/](https://www.geeksforgeeks.org/arrangement-of-words-without-changing-the-relative-position-of-vowel-and-consonants/)
+
 给定长度小于 10 的单词，任务是找到许多可以在不改变元音和辅音相对位置的情况下进行排列的方式。
 
 **示例**：

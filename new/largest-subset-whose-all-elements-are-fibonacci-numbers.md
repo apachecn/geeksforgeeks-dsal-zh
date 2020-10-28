@@ -1,5 +1,7 @@
 # 最大子集，其所有元素均为斐波纳契数
 
+> 原文：[https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/](https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/)
+
 给定一个具有正数的数组，任务是我们从数组中找到包含[斐波纳契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)的元素的最大子集。
 
 在 Facebook 问

@@ -1,5 +1,7 @@
 # 查找最频繁的数字而不使用数组/字符串
 
+> 原文：[https://www.geeksforgeeks.org/find-the-most-frequent-digit-without-using-arraystring/](https://www.geeksforgeeks.org/find-the-most-frequent-digit-without-using-arraystring/)
+
 给定一个整数，找到其中出现最多的数字。 如果两个或多个数字出现相同的次数，则返回它们中的最高位。 输入整数作为 int 变量而不是字符串或数组给出。 不允许使用哈希，数组或字符串。
 
 **示例**：

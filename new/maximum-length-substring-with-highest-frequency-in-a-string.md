@@ -1,5 +1,7 @@
 # 字符串
 
+> 原文：[https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/](https://www.geeksforgeeks.org/maximum-length-substring-with-highest-frequency-in-a-string/)
+
 中频率最高的最大子字符串
 
 给定一个字符串。 任务是找到最大长度的最大出现子字符串。 这些情况可能会重叠。

@@ -1,5 +1,7 @@
 # 按出现顺序打印具有偶数频率的字符
 
+> 原文：[https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-even-frequencies-in-order-of-occurrence/)
+
 给定仅包含小写字符的字符串 **str** 。 任务是按照出现的顺序打印频率均匀的字符。
 
 **注意**：重复出现的偶数频率按出现的次数打印。

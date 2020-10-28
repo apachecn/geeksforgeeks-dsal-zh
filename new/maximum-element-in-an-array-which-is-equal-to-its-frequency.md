@@ -1,5 +1,7 @@
 # 数组中的最大元素，等于其频率
 
+> 原文：[https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/](https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/)
+
 给定一个大小为 **N** 的整数 **arr []** 数组，任务是在数组中查找其频率等于其值的最大元素
 
 **示例**：

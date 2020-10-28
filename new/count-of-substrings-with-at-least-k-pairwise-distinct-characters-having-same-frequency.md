@@ -1,5 +1,7 @@
 # 具有至少 K 个成对区分字符且具有相同频率的子字符串的计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-substrings-with-at-least-k-pairwise-distinct-characters-having-same-frequency/](https://www.geeksforgeeks.org/count-of-substrings-with-at-least-k-pairwise-distinct-characters-having-same-frequency/)
+
 给定字符串 **S** 和整数 **K** ，任务是找到至少由 **K** 成对的具有相同频率的成对字符组成的子串数。
 
 **示例**：

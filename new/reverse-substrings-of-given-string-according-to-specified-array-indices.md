@@ -1,5 +1,7 @@
 # 根据指定的数组索引反转给定字符串的子字符串
 
+> 原文：[https://www.geeksforgeeks.org/reverse-substrings-of-given-string-according-to-specified-array-indices/](https://www.geeksforgeeks.org/reverse-substrings-of-given-string-according-to-specified-array-indices/)
+
 给定长度为 **N** 的字符串 **str** 和整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，对于数组元素 **arr [i]（ ***基于 1 的**索引*）**，[反转索引 **[arr [i]，N – arr [i] + 1]中的子字符串**](https://www.geeksforgeeks.org/reverse-the-substrings-of-the-given-string-according-to-the-given-array-of-indices/) 。 任务是在每次反转后打印字符串。
 
 **示例**：

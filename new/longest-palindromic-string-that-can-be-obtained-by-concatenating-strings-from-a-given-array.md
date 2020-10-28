@@ -1,5 +1,7 @@
 # 通过连接给定数组中的字符串，可以得到最长回文字符串
 
+> 原文：[https://www.geeksforgeeks.org/longest-palindromic-string-that-can-be-obtained-by-concatenating-strings-from-a-given-array/](https://www.geeksforgeeks.org/longest-palindromic-string-that-can-be-obtained-by-concatenating-strings-from-a-given-array/)
+
 给定[字符串](https://www.geeksforgeeks.org/string-data-structure/) **S []** 的[数组，该数组由 **N** 个长度为 **M** 的不同字符串组成。 任务是通过连接给定数组中的某些字符串来生成最长的](https://www.geeksforgeeks.org/array-data-structure/)[回文字符串](https://www.geeksforgeeks.org/string-palindrome/)。
 
 **示例**：

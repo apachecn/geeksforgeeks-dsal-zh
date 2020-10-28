@@ -1,5 +1,7 @@
 # 对数组中的三胞胎进行计数，使得 i
 
+> 原文：[https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/](https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/)
+
 给定一个数组 **arr** 和一个整数 **D** ，任务是对数组中的三元组（arr [i]，arr [j]，arr [k]）进行计数 那：
 
 1.  i

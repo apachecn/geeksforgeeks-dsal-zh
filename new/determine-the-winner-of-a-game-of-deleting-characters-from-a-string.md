@@ -1,5 +1,7 @@
 # 确定从字符串中删除字符的游戏的获胜者
 
+> 原文：[https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/](https://www.geeksforgeeks.org/determine-the-winner-of-a-game-of-deleting-characters-from-a-string/)
+
 在给定数字字符串 **str** 的情况下，任务是确定当两个玩家根据给定条件使用该字符串以最佳方式玩游戏时，确定游戏的赢家：
 
 *   玩家 1 总是最先开始。

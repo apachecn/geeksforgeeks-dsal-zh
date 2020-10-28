@@ -1,5 +1,7 @@
 # 包含第二个字符串作为子字符串的字符串的词典编排最小排列
 
+> 原文：[https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/](https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/)
+
 给定两个字符串 **str1** 和 **str2** ，任务是查找包含 **str2** 作为子字符串的 **str1** 的词典最小排列。
 
 **注意**：假定解决方案始终存在。

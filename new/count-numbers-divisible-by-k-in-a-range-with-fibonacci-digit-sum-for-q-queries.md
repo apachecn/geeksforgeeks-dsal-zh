@@ -1,5 +1,7 @@
 # 对 Q 个查询用 Fibonacci 数字总和的范围内的 K 可整除的计数
 
+> 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
+
 给定包含 **Q** 个查询和整数 **K** 的数组 **arr [] []** ，其中每个查询由范围 **[L，R]** ，任务是找到给定范围内的整数，该整数的[数字总和](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/)是[斐波那契数](http://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)并且可以被 **K** 整除。
 
 **示例**：

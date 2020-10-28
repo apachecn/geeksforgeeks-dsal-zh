@@ -1,5 +1,7 @@
 # 使用 Map 数据结构
 
+> 原文：[https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/](https://www.geeksforgeeks.org/remove-duplicates-from-unsorted-array-using-map-data-structure/)
+
 从未排序的数组中删除重复项
 
 给定一个未排序的整数数组，请从中删除重复的元素后再打印该数组。 我们需要根据它们的首次出现来打印不同的数组元素。

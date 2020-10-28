@@ -1,5 +1,7 @@
 # 最小化交换以最大化替换数组中较大元素的元素数
 
+> 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
+
 给定一个数组 **A []** ，该数组由 **N** 个元素组成，任务是查找所需交换的最小数量，以便在原始数组中交换数组元素以替换更高的元素 ，已最大化。
 
 **示例**：

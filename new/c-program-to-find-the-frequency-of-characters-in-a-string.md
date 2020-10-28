@@ -1,5 +1,7 @@
 # C 程序，用于查找字符串中的字符频率
 
+> 原文：[https://www.geeksforgeeks.org/c-program-to-find-the-frequency-of-characters-in-a-string/](https://www.geeksforgeeks.org/c-program-to-find-the-frequency-of-characters-in-a-string/)
+
 给定[字符串](https://www.geeksforgeeks.org/string-data-structure/) **S** 包含小写英文字符，任务是[查找字符串](https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/)中所有字符的频率。
 
 **示例**：

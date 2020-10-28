@@ -1,5 +1,7 @@
 # 给定两个未排序的数组，找到总和为 x 的所有对。
 
+> 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
+
 给定两个不同元素的未排序数组，任务是从两个数组中找到总和等于 **X** 的所有对。
 
 **示例**：

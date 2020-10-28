@@ -1,5 +1,7 @@
 # 检查是否可以从给定数组
 
+> 原文：[https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/](https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/)
+
 中选择 N 个偶数和的数字
 
 给定[数组](https://www.geeksforgeeks.org/array-data-structure/) ***arr []*** 和奇数 ***N*** ，任务是检查[HTG10 可以从具有**甚至** ***和*** 的阵列中选择 **N 个** 号。 如果可能，打印 ***是*** 。 否则打印 ***否*** 。

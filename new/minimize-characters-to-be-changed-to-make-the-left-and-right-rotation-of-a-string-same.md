@@ -1,5 +1,7 @@
 # 最小化要更改的字符以使字符串的左右旋转相同
 
+> 原文：[https://www.geeksforgeeks.org/minimize-characters-to-be-changed-to-make-the-left-and-right-rotation-of-a-string-same/](https://www.geeksforgeeks.org/minimize-characters-to-be-changed-to-make-the-left-and-right-rotation-of-a-string-same/)
+
 给定小写英文字母的字符串 **S** ，任务是找到要更改的最小字符数，以使字符串的[左右旋转相同。](https://www.geeksforgeeks.org/left-rotation-right-rotation-string-2/)
 
 **示例**：

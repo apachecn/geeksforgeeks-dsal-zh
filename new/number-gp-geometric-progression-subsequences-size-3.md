@@ -1,5 +1,7 @@
 # 大小为 3 的 GP（几何级数）子序列的数量
 
+> 原文：[https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/](https://www.geeksforgeeks.org/number-gp-geometric-progression-subsequences-size-3/)
+
 给定 n 个元素和一个比率 r，求 G.P. 子序列的长度为 3。子序列被视为 GP，长度为 3，比率为 r。
 
 **范例**：

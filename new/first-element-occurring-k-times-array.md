@@ -1,5 +1,7 @@
 # 第一个元素在数组
 
+> 原文：[https://www.geeksforgeeks.org/first-element-occurring-k-times-array/](https://www.geeksforgeeks.org/first-element-occurring-k-times-array/)
+
 中出现 k 次
 
 给定 n 个整数数组。 任务是找到出现 k 次的第一个元素。 如果没有元素出现 k 倍，则打印-1。 整数元素的分布可以在任何范围内。

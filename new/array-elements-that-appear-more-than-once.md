@@ -1,5 +1,7 @@
 # 出现多次的数组元素
 
+> 原文：[https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/](https://www.geeksforgeeks.org/array-elements-that-appear-more-than-once/)
+
 给定一个整数数组，请打印该数组中所有重复的元素（出现多次的元素）。 输出应包含根据其首次出现的元素。
 
 **示例**：

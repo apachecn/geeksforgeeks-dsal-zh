@@ -1,5 +1,7 @@
 # 检查 N 是否除以除以 K 以外的所有值的唯一余数
 
+> 原文：[https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/](https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/)
+
 给定两个整数 **N** 和 **K** ，任务是检查 **N** 在除以**范围内的所有整数时是否仅剩下明显的余数[1] ，K]** 。 如果是这样，则打印**是**。 否则，打印**否**。
 
 **范例**：

@@ -1,5 +1,7 @@
 # 检查每个字符的频率是否等于其在英语字母
 
+> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/](https://www.geeksforgeeks.org/check-if-frequency-of-each-character-is-equal-to-its-position-in-english-alphabet/)
+
 中的位置
 
 给定小写字母的字符串 **str** ，任务是检查字符串中每个不同字符的频率是否等于其在英语字母表中的位置。 如果有效，则打印**“是”** ，否则打印**“否”** 。

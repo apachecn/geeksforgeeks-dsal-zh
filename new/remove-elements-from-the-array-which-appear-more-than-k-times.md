@@ -1,5 +1,7 @@
 # 从数组中删除出现 k 次以上的元素
 
+> 原文：[https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-elements-from-the-array-which-appear-more-than-k-times/)
+
 给定一个整数数组，请删除所有出现在数组中严格超过 k 次的元素。
 
 **示例**：

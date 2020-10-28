@@ -1,5 +1,7 @@
 # 对三元组进行计数，以使任何两个数的和等于三| 设置 2
 
+> 原文：[https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/](https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/)
+
 给定*个不同的正整数* **arr []** 长度为 **N** 的数组，任务是对所有三元组进行计数，以使两个元素的总和等于第三个元素 。
 
 **示例**：

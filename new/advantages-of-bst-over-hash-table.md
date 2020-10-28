@@ -1,5 +1,7 @@
 # BST 优于哈希表
 
+> 原文：[https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/)
+
 [哈希表](http://geeksquiz.com/hashing-set-1-introduction/)支持`Θ(1)`时间的以下操作。
 
 1）搜索

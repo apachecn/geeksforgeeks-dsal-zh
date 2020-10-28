@@ -1,5 +1,7 @@
 # 计数数组中的可分割对
 
+> 原文：[https://www.geeksforgeeks.org/count-divisible-pairs-array/](https://www.geeksforgeeks.org/count-divisible-pairs-array/)
+
 给定一个数组，对数组中的对进行计数，以使该对中的一个元素除以另一个。
 
 例子：

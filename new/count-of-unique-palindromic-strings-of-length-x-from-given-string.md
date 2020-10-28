@@ -1,5 +1,7 @@
 # 给定字符串
 
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/](https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/)
+
 中长度为 X 的唯一回文字符串的计数
 
 给定**字符串 s** 和**整数 X** ，我们的任务是从给定字符串中找到长度为 X 的不同回文字符串的数量。

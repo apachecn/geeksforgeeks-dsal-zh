@@ -1,5 +1,7 @@
 # 不能形成总和为 2 的幂的任何对的元素计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
+
 给定长度为 **N** 的数组 **arr []** ，任务是打印无法与任何其他数组元素成对的数组元素，其总和为 2 的幂。
 
 **范例**：

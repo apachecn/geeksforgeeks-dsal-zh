@@ -1,5 +1,7 @@
 # 检查数组的每个元素是否为另一个数组的任何两个元素的和
 
+> 原文：[https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/](https://www.geeksforgeeks.org/check-if-each-element-of-an-array-is-the-sum-of-any-two-elements-of-another-array/)
+
 给定两个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **A []** 和 **B []** ，它们由 **N** 整数组成，任务是检查数组 **B []** 可以通过添加数组 **A []** 的任意两个元素来形成。 如果可能，则打印“ **是”** 。 否则，打印“ **否”** 。
 
 **示例**：

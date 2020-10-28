@@ -1,5 +1,7 @@
 # 最小化包含另一个字符串 T
 
+> 原文：[https://www.geeksforgeeks.org/minimize-length-of-prefix-of-string-s-containing-all-characters-of-another-string-t/](https://www.geeksforgeeks.org/minimize-length-of-prefix-of-string-s-containing-all-characters-of-another-string-t/)
+
 的所有字符的字符串 S 的前缀长度
 
 给定两个字符串 **S** 和 **T** ，任务是从 **S** 中查找最小长度前缀，该前缀由字符串 **T** 的所有字符组成 。 如果 **S** 不包含字符串 **T** 的所有字符，则打印 **-1** 。

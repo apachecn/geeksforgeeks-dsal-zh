@@ -1,5 +1,7 @@
 # 检查数组
 
+> 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
+
 中是否存在元素的 K 次
 
 给定数组 **arr []** 和整数 **K** ，任务是检查数组中是否还存在 K 次任何元素。

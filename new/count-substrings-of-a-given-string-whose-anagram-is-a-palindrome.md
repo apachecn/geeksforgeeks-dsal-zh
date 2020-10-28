@@ -1,5 +1,7 @@
 # 计算给定字符串（其字谜是回文）的子字符串
 
+> 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
+
 给定长度为 **N** 的仅包含小写字母的字符串 **S** ，任务是打印给定的[字符串，其字谜是回文](https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/)。
 
 **示例**：

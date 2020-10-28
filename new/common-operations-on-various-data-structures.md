@@ -1,5 +1,7 @@
 # 对各种数据结构的通用操作
 
+> 原文：[https://www.geeksforgeeks.org/common-operations-on-various-data-structures/](https://www.geeksforgeeks.org/common-operations-on-various-data-structures/)
+
 [数据结构](https://www.geeksforgeeks.org/data-structures/)是一种将数据存储在计算机内存中的方式，以便可以轻松，高效地使用它。 有用于存储数据的不同数据结构。 也可以将其定义为数据项特定组织的数学或逻辑模型。 计算机主存储器中特定数据结构的表示称为存储结构。 **例如**：[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)，[堆栈](http://www.geeksforgeeks.org/stack-data-structure/)，[队列](http://www.geeksforgeeks.org/queue-data-structure/)，[树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，[图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)等 。
 
 **<u>对不同数据结构的操作：</u>**

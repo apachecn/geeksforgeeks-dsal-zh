@@ -1,5 +1,7 @@
 # 用于流中第一个非重复字符的基于队列的方法
 
+> 原文：[https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/](https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/)
+
 给定字符流，每次将字符插入流中时，我们都必须找到第一个非重复字符。
 
 **示例**：

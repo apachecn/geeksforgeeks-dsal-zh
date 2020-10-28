@@ -1,5 +1,7 @@
 # 连续整数
 
+> 原文：[https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/](https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/)
+
 的最大递增子序列
 
 给定 n 个正整数数组。 我们需要找到连续正整数的最大递增序列。

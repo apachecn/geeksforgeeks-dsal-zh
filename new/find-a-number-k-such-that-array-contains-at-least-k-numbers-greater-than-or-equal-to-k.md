@@ -1,5 +1,7 @@
 # 找到一个数字 K，以便数组包含至少 K 个大于或等于 K 的数字
 
+> 原文：[https://www.geeksforgeeks.org/find-a-number-k-such-that-array-contains-at-least-k-numbers-greater-than-or-equal-to-k/](https://www.geeksforgeeks.org/find-a-number-k-such-that-array-contains-at-least-k-numbers-greater-than-or-equal-to-k/)
+
 给定大小为 **N** 的非负整数的数组 **arr []** ，任务是找到一个整数 **H** ，以便该数组中至少有 K 个整数 大于或等于 K。
 
 **范例**：

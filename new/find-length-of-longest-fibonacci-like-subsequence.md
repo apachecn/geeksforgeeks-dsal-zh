@@ -1,5 +1,7 @@
 # 查找最长斐波那契式子序列
 
+> 原文：[https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/](https://www.geeksforgeeks.org/find-length-of-longest-fibonacci-like-subsequence/)
+
 的长度
 
 给定**严格增加的**数组 **A** 的正整数，其中，

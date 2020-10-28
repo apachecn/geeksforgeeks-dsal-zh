@@ -1,5 +1,7 @@
 # 总和等于其长度的子串的计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/](https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/)
+
 给定数字字符串 **str** ，任务是计算数字总和等于其长度的子字符串的数量。
 
 **示例**：

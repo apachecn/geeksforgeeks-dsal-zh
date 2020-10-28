@@ -1,5 +1,7 @@
 # 数据结构的实时应用
 
+> 原文：[https://www.geeksforgeeks.org/real-time-application-of-data-structures/](https://www.geeksforgeeks.org/real-time-application-of-data-structures/)
+
 [数据结构](https://www.geeksforgeeks.org/data-structures/)是在计算机中组织数据的一种特殊方式，因此可以有效地使用它。 本文讨论了所有数据结构的实时应用。
 
 ### [阵列](https://www.geeksforgeeks.org/array-data-structure/)的应用：

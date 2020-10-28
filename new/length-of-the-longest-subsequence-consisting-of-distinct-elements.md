@@ -1,5 +1,7 @@
 # 由不同元素组成的最长子序列的长度
 
+> 原文：[https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/](https://www.geeksforgeeks.org/length-of-the-longest-subsequence-consisting-of-distinct-elements/)
+
 给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到最长的[子序列](https://www.geeksforgeeks.org/tag/subsequence/)的长度，该子序列仅包含不同的元素 。
 
 **示例**：

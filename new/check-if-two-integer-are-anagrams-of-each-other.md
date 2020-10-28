@@ -1,5 +1,7 @@
 # 检查两个 Integer 是否彼此为字谜
 
+> 原文：[https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
+
 给定两个整数 **A** 和 **B** ，任务是检查给定的数字是否彼此为[字谜](https://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/)。 就像字符串一样，如果仅通过对数字进行改组就可以使该数字等于其他数字，则该数字被称为其他数字的类似物。
 
 **示例**：

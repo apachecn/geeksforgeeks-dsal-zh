@@ -1,5 +1,7 @@
 # 返回输入字符串
 
+> 原文：[https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/](https://www.geeksforgeeks.org/return-maximum-occurring-character-in-the-input-string/)
+
 中出现的最大字符
 
 编写高效的函数以返回输入字符串中出现的最大字符，例如，如果输入字符串为“ test”，则函数应返回“ t”。

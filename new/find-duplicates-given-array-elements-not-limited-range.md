@@ -1,5 +1,7 @@
 # 当元素不限于范围时，查找给定数组中的重复项
 
+> 原文：[https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/](https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/)
+
 给定 n 个整数数组。 任务是在给定数组中打印重复项。 如果没有重复，则打印-1。
 
 **范例**：

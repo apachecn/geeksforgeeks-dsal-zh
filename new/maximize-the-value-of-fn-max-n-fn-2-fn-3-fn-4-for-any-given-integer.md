@@ -1,5 +1,7 @@
 # 对于任何给定的整数
 
+> 原文：[https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/](https://www.geeksforgeeks.org/maximize-the-value-of-fn-max-n-fn-2-fn-3-fn-4-for-any-given-integer/)
+
 ，最大化 F（N）= max（N，F（N / 2）+ F（N / 3）+ F（N / 4））的值
 
 给定整数 **N，**的任务是找到由**给定的函数 **F（n）**的最大值 F（N）= max（N，F（N / 2） ）+ F（N / 3）+ F（N / 4））**。

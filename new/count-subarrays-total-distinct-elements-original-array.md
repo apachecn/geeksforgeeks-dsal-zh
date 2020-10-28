@@ -1,5 +1,7 @@
 # 计数具有与原始数组
 
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/](https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/)
+
 相同的不同元素的子数组
 
 给定 n 个整数数组。 计算具有与原始数组的总不同元素相同的总不同元素的子数组的总数。

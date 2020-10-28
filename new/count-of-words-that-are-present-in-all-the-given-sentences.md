@@ -1,5 +1,7 @@
 # 所有给定句子中出现的单词数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/](https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/)
+
 给定 **n** 个句子。 任务是计算所有这些句子中出现的单词数。 **请注意，**每个单词仅由小写英文字母组成。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 检查两个数组是否彼此置换
 
+> 原文：[https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/](https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/)
+
 给定两个相同大小的未排序数组，编写一个函数，如果两个数组彼此置换，则返回 true，否则返回 false。
 
 示例：

@@ -1,5 +1,7 @@
 # 字符串
 
+> 原文：[https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/](https://www.geeksforgeeks.org/count-number-of-distinct-substring-in-a-string/)
+
 中不同子字符串的计数
 
 给定一个字符串，计算给定字符串的所有不同子字符串。

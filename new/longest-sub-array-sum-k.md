@@ -1,5 +1,7 @@
 # 最长为 k 的子数组
 
+> 原文：[https://www.geeksforgeeks.org/longest-sub-array-sum-k/](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
+
 给定大小为 **n** 的包含整数的数组 **arr []** 。 问题在于找到总和等于给定值 **k** 的最长子阵列的长度。
 
 **示例**：

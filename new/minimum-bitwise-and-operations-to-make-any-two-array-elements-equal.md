@@ -1,5 +1,7 @@
 # 使两个数组元素相等的最小按位与运算
 
+> 原文：[https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/](https://www.geeksforgeeks.org/minimum-bitwise-and-operations-to-make-any-two-array-elements-equal/)
+
 给定一个大小为'n'的整数数组和一个整数'k'，
 
 我们可以在任意数组元素和“ k”之间执行任意次的按位 AND 运算。

@@ -1,5 +1,7 @@
 # 在给定的嵌套数组
 
+> 原文：[https://www.geeksforgeeks.org/find-element-with-highest-frequency-in-given-nested-array/](https://www.geeksforgeeks.org/find-element-with-highest-frequency-in-given-nested-array/)
+
 中查找频率最高的元素
 
 给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 。 任务是创建给定阵列 **arr []** 的频率阵列 **freq []** ，并找到频率阵列的最大元素。 如果数组 **freq []** 中两个元素的频率相同，则返回值较小的元素。

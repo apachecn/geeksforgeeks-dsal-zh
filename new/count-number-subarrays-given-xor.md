@@ -1,5 +1,7 @@
 # 计算具有给定 XOR 的子数组的数量
 
+> 原文：[https://www.geeksforgeeks.org/count-number-subarrays-given-xor/](https://www.geeksforgeeks.org/count-number-subarrays-given-xor/)
+
 给定一个整数数组 arr []和一个数 m，将其元素具有 XOR 的子数组的数量计为 m。
 
 **示例**：[

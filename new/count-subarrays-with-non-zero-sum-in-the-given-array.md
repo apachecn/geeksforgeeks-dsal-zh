@@ -1,5 +1,7 @@
 # 在给定数组
 
+> 原文：[https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/](https://www.geeksforgeeks.org/count-subarrays-with-non-zero-sum-in-the-given-array/)
+
 中对总和非零的子数组进行计数
 
 给定大小为 N 的**数组 arr []** ，任务是计算给定数组 arr []的子数组的总数，该子数组具有非零和。

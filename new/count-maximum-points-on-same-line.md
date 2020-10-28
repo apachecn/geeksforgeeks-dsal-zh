@@ -1,5 +1,7 @@
 # 计算同一条线上的最大点数
 
+> 原文：[https://www.geeksforgeeks.org/count-maximum-points-on-same-line/](https://www.geeksforgeeks.org/count-maximum-points-on-same-line/)
+
 给定二维平面上的 N 个点作为（x，y）坐标对，我们需要找到同一条线上的最大点数。
 
 例子：

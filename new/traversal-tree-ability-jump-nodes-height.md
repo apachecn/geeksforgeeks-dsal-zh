@@ -1,5 +1,7 @@
 # 允许在相同高度的节点之间进行 k 次跳跃的树的遍历
 
+> 原文：[https://www.geeksforgeeks.org/traversal-tree-ability-jump-nodes-height/](https://www.geeksforgeeks.org/traversal-tree-ability-jump-nodes-height/)
+
 有一个带有 N 个节点的树，节点 1 是根节点。 树的每个节点可以包含或不包含果实。
 
 最初，您位于根节点并开始爬到树上。

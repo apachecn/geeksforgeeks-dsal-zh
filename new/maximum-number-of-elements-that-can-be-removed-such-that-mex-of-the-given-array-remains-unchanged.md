@@ -1,5 +1,7 @@
 # 可以删除的最大元素数，以使给定阵列的 MEX 保持不变
 
+> 原文：[https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/](https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/)
+
 给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是计算在不更改[[ 原始阵列的 **MEX** 。
 
 > **MEX** 是数组中不存在的[最小正整数。](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/)

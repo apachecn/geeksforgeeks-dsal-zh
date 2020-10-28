@@ -1,5 +1,7 @@
 # 生成位于矩形
 
+> 原文：[https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/](https://www.geeksforgeeks.org/generate-all-integral-points-lying-inside-a-rectangle/)
+
 内的所有积分点
 
 给定长度为 **L** 且宽度为 **W** 的矩形，任务是生成位于矩形 pf 尺寸 **L * W 内的所有积分坐标（X，Y）** 在其原点**（0，0）**中具有其顶点之一。

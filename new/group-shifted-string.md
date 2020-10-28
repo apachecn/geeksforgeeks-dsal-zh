@@ -1,5 +1,7 @@
 # 组移弦
 
+> 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
+
 给定一个字符串数组（所有小写字母），任务是对它们进行分组，以使组中的所有字符串彼此移位。 如果两个字符串 S 和 T 称为移位，
 
 ```

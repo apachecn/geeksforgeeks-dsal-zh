@@ -1,5 +1,7 @@
 # 不相邻的数组元素的最大可能总和，不超过 K
 
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/](https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/)
+
 给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个整数和一个整数 **K** 组成，任务是选择一些**非 最大可能和不超过 **K** 的相邻数组元素**。
 
 **示例**：

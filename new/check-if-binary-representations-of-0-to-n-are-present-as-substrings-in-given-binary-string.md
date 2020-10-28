@@ -1,5 +1,7 @@
 # 检查在给定的二进制字符串
 
+> 原文：[https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/](https://www.geeksforgeeks.org/check-if-binary-representations-of-0-to-n-are-present-as-substrings-in-given-binary-string/)
+
 中，子字符串是否存在 0 到 N 的二进制表示形式
 
 给出二进制**字符串** str 和整数 **N，**，任务是检查字符串的子字符串是否包含小于或等于给定整数 N 的所有非负整数的二进制表示形式 。

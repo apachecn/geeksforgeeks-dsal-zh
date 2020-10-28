@@ -1,5 +1,7 @@
 # 数组
 
+> 原文：[https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/](https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/)
+
 中两次出现相同元素之间的最大距离
 
 给定一个包含重复元素的数组，任务是找到元素两次出现的最大距离。

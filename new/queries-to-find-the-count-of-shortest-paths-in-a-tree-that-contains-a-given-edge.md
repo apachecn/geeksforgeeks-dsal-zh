@@ -1,5 +1,7 @@
 # 查询以查找包含给定边的树中的最短路径数
 
+> 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
+
 给定一个[树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，其中 **N 个**顶点的编号从 **0** 到 **N – 1，M** 个边，以及 **Q** 个查询 形式为 **{U，V}，**，这样树中的 **U** 和 **V** 之间有直接的边。 每个查询的任务是从给定树（包含给定节点对之间的边）找到任何可能的无序顶点对之间的所有可能的[最短路径](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)。
 
 **示例**：

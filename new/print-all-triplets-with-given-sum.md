@@ -1,5 +1,7 @@
 # 打印具有给定总和的所有三胞胎
 
+> 原文：[https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/](https://www.geeksforgeeks.org/print-all-triplets-with-given-sum/)
+
 给定一系列不同的元素。 任务是在数组中找到三元组，其总和等于给定数。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 查找分数
 
+> 原文：[https://www.geeksforgeeks.org/find-recurring-sequence-fraction/](https://www.geeksforgeeks.org/find-recurring-sequence-fraction/)
+
 中的重复序列
 
 给定一个分数，找到一个数字的重复序列（如果存在），否则，打印“无重复序列”。

@@ -1,5 +1,7 @@
 # 查找与字典中特定模式匹配的所有字符串
 
+> 原文：[https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/](https://www.geeksforgeeks.org/find-all-strings-that-match-specific-pattern-in-a-dictionary/)
+
 给定单词词典，找到与给定模式匹配的所有字符串，其中模式中的每个字符都唯一映射到词典中的字符。
 
 **示例**：

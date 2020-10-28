@@ -1,5 +1,7 @@
 # 根据给定的条件从给定的字符串 P 和 Q 生成一个字符串
 
+> 原文：[https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/](https://www.geeksforgeeks.org/generate-a-string-from-given-strings-p-and-q-based-on-the-given-conditions/)
+
 给定两个字符串 **P** 和 **Q，**，任务是生成满足以下条件的字符串 **S** ：
 
 *   找到 **S** ，以便重新排列 **P** ，并且 **Q** 是其中的子串。

@@ -1,5 +1,7 @@
 # 最长子序列，使得每对之间的绝对差最大为 1
 
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/](https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/)
+
 给定大小为 **N** 的整数数组 **arr []** ，任务是找到最长的子序列 **S** ，以便对每个 a [i]，a [j ]∈S 和 **| a [i] – a [j] | ≤1** 。
 
 **示例**：

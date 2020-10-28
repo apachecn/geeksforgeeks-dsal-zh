@@ -1,5 +1,7 @@
 # 来自数组
 
+> 原文：[https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/](https://www.geeksforgeeks.org/smallest-subarray-with-sum-k-from-an-array/)
+
 的总和为 K 的最小子数组
 
 给定由 **N** 个整数组成的数组 **arr []** ，任务是找到总和等于 **K** 的最小子数组的长度。

@@ -1,5 +1,7 @@
 # Q 查询中给定数组在[L，R]范围内的质数之和
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
+
 给定 **N** 大小的**数组 arr []** ，然后是以下两种类型的 **Q 查询**数组：
 
 *   查询类型 1：给定两个整数 L 和 R，找到从索引 L 到 R 的素数元素的总和，其中 0 <= L <= R <= N-1。

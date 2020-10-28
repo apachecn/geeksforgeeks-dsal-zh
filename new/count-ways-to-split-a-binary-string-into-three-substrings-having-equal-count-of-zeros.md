@@ -1,5 +1,7 @@
 # 数种方式将二进制字符串拆分为三个具有相等零计数的子字符串
 
+> 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
+
 给定[二进制字符串](https://www.geeksforgeeks.org/tag/binary-string/) **str** ，任务是计算将给定字符串拆分为三个具有相同 **0** 数量的非重叠子字符串的方式总数 s。
 
 **示例**：

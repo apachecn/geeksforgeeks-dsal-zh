@@ -1,5 +1,7 @@
 # 最长的连续子序列
 
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/)
+
 给定 N 个元素，编写一个程序，打印出相邻元素之差为 1 的最长递增子序列的长度。
 
 **范例**：

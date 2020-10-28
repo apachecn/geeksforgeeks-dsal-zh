@@ -1,5 +1,7 @@
 # 当一个人不能携带两个以上相同类型的物品时进行分配
 
+> 原文：[https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/](https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/)
+
 假设有 N 种糖果可以有许多不同的类型，并且有 k 个客户，那么一个客户购买的同一类型的糖果不会超过 2 件，任务是确定是否可以分发所有糖果，然后打印“是”，否则打印“ 没有”。
 
 给定数组 arr []表示糖果数组 **arr [i]是糖果**的类型。

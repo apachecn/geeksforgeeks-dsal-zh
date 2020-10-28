@@ -1,5 +1,7 @@
 # 给定数组 A []和数字 x，请检查 A []中的对，且总和为 x
 
+> 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
+
 编写一个程序，给定 n 个数字的数组 A []和另一个 x 的数组，确定 S 中是否存在两个元素的总和恰好是 x。
 
 **范例**：

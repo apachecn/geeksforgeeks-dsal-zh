@@ -1,5 +1,7 @@
 # 如何检查两个给定的集合是否不相交？
 
+> 原文：[https://www.geeksforgeeks.org/check-two-given-sets-disjoint/](https://www.geeksforgeeks.org/check-two-given-sets-disjoint/)
+
 给定两个数组表示的两个集合，如何检查给定的两个集合是否不相交？ 可以假定给定的数组没有重复项。
 
 ```

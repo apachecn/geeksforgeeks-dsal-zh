@@ -1,5 +1,7 @@
 # 串联时可被 K 整除的 Array 元素对的数量
 
+> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/](https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/)
+
 给定数组 **arr []** 和整数 **K** ，任务是对索引对**（i，j）**进行计数，以使 **i！ ＝ j** ，并且 **a [i]** 和 **a [j]** 的串联可被 **K** 整除。
 
 **示例**：

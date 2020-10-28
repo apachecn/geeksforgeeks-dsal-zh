@@ -1,5 +1,7 @@
 # 最小化给定数组之间相应索引处不等元素的数量
 
+> 原文：[https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/](https://www.geeksforgeeks.org/minimize-count-of-unequal-elements-at-corresponding-indices-between-given-arrays/)
+
 给定两个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **A []** 和 **B []** ，它们由 **N** 个正整数和一个矩阵 **List [] []组成** 由 **M** 对索引组成，任务是最大程度地减少不相等的相同索引元素的数量（ **A <sub>i</sub> ！= B <sub>i</sub>** ），方法是在数组 A []中的任意一对给定索引之间交换。
 
 **示例**：

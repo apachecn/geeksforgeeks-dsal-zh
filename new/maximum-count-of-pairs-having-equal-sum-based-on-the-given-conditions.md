@@ -1,5 +1,7 @@
 # 基于给定条件的具有相等总和的对的最大计数
 
+> 原文：[https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/](https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/)
+
 给定长度为 **N** 的数组 **arr []** 包含范围为 **[1，N]** 的数组元素，任务是查找具有 假设数组中的任何元素只能是单个对的一部分，则**等于**之和。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 在给定的 N 个三角形中查找唯一三角形的数量
 
+> 原文：[https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/](https://www.geeksforgeeks.org/find-number-of-unique-triangles-among-given-n-triangles/)
+
 给定 N 个元素的三个数组 a []，b []和 c []，它们代表 **N** 个三角形的三个边。 任务是找到给定三角形中唯一的三角形数量。 如果三角形的所有边与其他三角形的所有边都匹配，则该三角形是非唯一的。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 计算具有不同首尾字符的子字符串
 
+> 原文：[https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/](https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/)
+
 给定字符串 **S** ，任务是打印给定字符串的子字符串计数，该字符串的首字符和尾字符不同。
 
 **示例**：

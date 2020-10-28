@@ -1,5 +1,7 @@
 # 删除出现 k 次以上的字符
 
+> 原文：[https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/](https://www.geeksforgeeks.org/remove-characters-that-appear-more-than-k-times/)
+
 给定一串小写字母，通过删除出现在字符串中 k 次以上的字符来减少它。
 
 **示例**：

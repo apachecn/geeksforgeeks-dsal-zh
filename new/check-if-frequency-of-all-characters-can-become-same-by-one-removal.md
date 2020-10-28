@@ -1,5 +1,7 @@
 # 检查一次删除后所有字符的频率是否可以相同
 
+> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/](https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/)
+
 给定一个包含较低字母字符的字符串，我们需要从该字符串中删除最多一个字符，以使该字符串中每个不同字符的频率相同。
 
 **示例**：

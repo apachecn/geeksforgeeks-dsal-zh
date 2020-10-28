@@ -1,5 +1,7 @@
 # 和为完美平方的子数组的数量
 
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/](https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/)
+
 给定具有正负元素的数组 **arr []** ，任务是对所有和为完美平方的子数组进行计数。
 
 **范例**：

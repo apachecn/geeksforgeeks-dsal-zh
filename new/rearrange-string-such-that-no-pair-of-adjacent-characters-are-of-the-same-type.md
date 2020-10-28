@@ -1,5 +1,7 @@
 # 重新排列字符串，以使相邻的字符对都不属于同一类型
 
+> 原文：[https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/](https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/)
+
 给定字母数字字符串 **str** ，任务是重新排列字符串，以使两个相邻字符都不属于同一类型，即，两个相邻字符不能为字母或数字。 如果没有这种安排，请打印 **-1** 。
 
 **示例**：

@@ -1,5 +1,7 @@
 # K 长度子数组
 
+> 原文：[https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/](https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/)
+
 中元素的最大不同素因数
 
 给定 **N** 个正整数的数组 **arr []** 和一个整数 **K** ，任务是在 长度为 **K** 的[子阵列](https://www.geeksforgeeks.org/tag/subarray/)。

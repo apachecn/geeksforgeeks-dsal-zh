@@ -1,5 +1,7 @@
 # 在给定字符串
 
+> 原文：[https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/](https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/)
+
 中具有最大频率的长度为 K 的子字符串
 
 给定字符串 **str** ，任务是找到长度为 **K** 的[子字符串](https://www.geeksforgeeks.org/substring-in-cpp/)，出现次数最多。 如果最多出现多次字符串，请打印按字典顺序最小的子字符串。

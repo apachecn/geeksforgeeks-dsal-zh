@@ -1,5 +1,7 @@
 # 合并哈希
 
+> 原文：[https://www.geeksforgeeks.org/coalesced-hashing/](https://www.geeksforgeeks.org/coalesced-hashing/)
+
 [合并哈希](https://en.wikipedia.org/wiki/Coalesced_hashing)是在存在固定大小的数据时的避免冲突技术。 它是[单独链接](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)和[开放地址](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)的组合。 它使用开放寻址（线性探测）的概念从哈希表的底部查找冲突元素的第一个空白位置，并使用单独链接的概念通过指针将冲突元素彼此链接。 使用的哈希函数为 **h =（key）％（密钥总数）**。 在哈希表中，每个节点具有三个字段：
 
 *   h（key）：密钥的哈希函数的值。

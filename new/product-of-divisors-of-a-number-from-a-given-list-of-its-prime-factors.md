@@ -1,5 +1,7 @@
 # 从给定的主要因子列表中得出的数的除数
 
+> 原文：[https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/](https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/)
+
 给定表示给定数字素数列表的数组 **arr []** ，任务是找到该数字除数的乘积。
 
 **注意**：由于产品可以打印得很大，因此答案模版 10 <sup>9</sup> +7。

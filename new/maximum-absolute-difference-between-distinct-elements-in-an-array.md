@@ -1,5 +1,7 @@
 # 数组
 
+> 原文：[https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/](https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/)
+
 中不同元素之间的最大绝对差
 
 给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到数组不同元素之间的最大绝对差。

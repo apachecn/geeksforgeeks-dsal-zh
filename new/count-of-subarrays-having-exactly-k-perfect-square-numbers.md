@@ -1,5 +1,7 @@
 # 具有完全 K 个完美平方数的子数组的计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
+
 给定未排序的整数数组 **arr []** 和整数 **K** 。 任务是使用正整数 K [完美平方数](https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/)来计数子数组的数量。
 
 **范例**：

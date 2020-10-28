@@ -1,5 +1,7 @@
 # 删除给定节点后，打印二叉树的森林
 
+> 原文：[https://www.geeksforgeeks.org/print-the-forests-of-a-binary-tree-after-removal-of-given-nodes/](https://www.geeksforgeeks.org/print-the-forests-of-a-binary-tree-after-removal-of-given-nodes/)
+
 给定 [**二叉树**](https://www.geeksforgeeks.org/binary-tree-data-structure/) 和由要删除的节点值组成的数组 **arr []** ，任务是打印[有序遍历](http://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/) 删除节点后的[森林](https://www.geeksforgeeks.org/count-number-trees-forest/)中的一个。
 
 **示例**：

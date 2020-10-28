@@ -1,5 +1,7 @@
 # 串联形成回文字符串的字符串对的计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/](https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/)
+
 给定由 **N** 个字符串组成的数组 **A []** ，任务是计算在合并后形成**回文字符串**或 重新排列以形成[回文字符串](https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/)。
 
 **示例**：

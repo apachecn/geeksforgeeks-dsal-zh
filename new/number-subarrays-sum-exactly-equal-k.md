@@ -1,5 +1,7 @@
 # 总和等于 k 的子数组数
 
+> 原文：[https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/](https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/)
+
 给定一个未排序的整数数组，找到总和等于给定数 k 的子数组的数量。
 
 **示例**：

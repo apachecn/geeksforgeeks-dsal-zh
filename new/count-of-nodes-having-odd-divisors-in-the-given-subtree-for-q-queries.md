@@ -1,5 +1,7 @@
 # 对于 Q 查询，给定子树中具有奇数除数的节点数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-nodes-having-odd-divisors-in-the-given-subtree-for-q-queries/](https://www.geeksforgeeks.org/count-of-nodes-having-odd-divisors-in-the-given-subtree-for-q-queries/)
+
 给定 [N 元树](https://www.geeksforgeeks.org/generic-treesn-array-trees/)和 **Q** 查询，其中每个查询包含 N 元树的一个节点，任务是计算除数为奇数的节点数 在子树中进行 Q 查询。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 二叉树
 
+> 原文：[https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/](https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/)
+
 中具有相同长度的叶路径的根
 
 给定一棵二叉树，打印具有相等长度的根到叶路径的数量。

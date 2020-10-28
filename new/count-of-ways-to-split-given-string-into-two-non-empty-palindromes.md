@@ -1,5 +1,7 @@
 # 将给定字符串拆分为两个非空回文的方法的数量
 
+> 原文：[https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/](https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/)
+
 给定字符串 **S** ，任务是找到将给定字符串 **S** 分为两个非空回文字符串的方法。
 
 **范例**：

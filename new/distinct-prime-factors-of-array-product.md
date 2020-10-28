@@ -1,5 +1,7 @@
 # 阵列产品
 
+> 原文：[https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/](https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/)
+
 的不同主要因素
 
 给定一个整数数组，让我们说 P 是数组元素的乘积。 求出乘积 P 的不同素数的数量。

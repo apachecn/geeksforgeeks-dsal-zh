@@ -1,5 +1,7 @@
 # 使用 STL
 
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/](https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/)
+
 的无向图的连接组件的唯一长度计数
 
 给定一个无向图，任务是查找每个连接组件的大小并打印连接组件的唯一大小的数量

@@ -1,5 +1,7 @@
 # 以垂直顺序打印二叉树| 设置 3（使用级别顺序遍历）
 
+> 原文：[https://www.geeksforgeeks.org/print-a-binary-tree-in-vertical-order-set-3-using-level-order-traversal/](https://www.geeksforgeeks.org/print-a-binary-tree-in-vertical-order-set-3-using-level-order-traversal/)
+
 给定一棵二叉树，垂直打印。 以下示例说明了垂直顺序遍历。
 
 ```

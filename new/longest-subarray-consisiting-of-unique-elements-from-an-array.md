@@ -1,5 +1,7 @@
 # 最长的子数组，包含数组中的唯一元素
 
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/](https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/)
+
 给定一个由 **N** 个整数组成的数组 **arr []** ，任务是找到仅包含唯一元素的最大子数组。
 
 **示例**：

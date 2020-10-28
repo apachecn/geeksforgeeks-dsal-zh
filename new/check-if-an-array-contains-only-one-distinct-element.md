@@ -1,5 +1,7 @@
 # 检查数组是否仅包含一个不同的元素
 
+> 原文：[https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/](https://www.geeksforgeeks.org/check-if-an-array-contains-only-one-distinct-element/)
+
 给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，任务是检查该数组是否仅包含一个不同的元素。 如果仅包含一个不同的元素，则打印“ **是”** ，否则打印“ **否”** 。
 
 **示例**：

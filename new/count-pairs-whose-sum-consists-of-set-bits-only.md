@@ -1,5 +1,7 @@
 # 计数对，其总和仅由设置的位组成
 
+> 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
+
 给定由 **N** 个整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是查找给定数组中无序对的计数，其总和包含所有设置位。
 
 **示例**：

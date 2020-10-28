@@ -1,5 +1,7 @@
 # 以给定字符串
 
+> 原文：[https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/](https://www.geeksforgeeks.org/generate-a-number-in-decreasing-order-of-frequencies-of-characters-of-a-given-string/)
+
 的字符频率降序生成数字
 
 给定长度为 **N** 的字符串 **Str** ，由小写字母组成，任务是按照给定字符串中字符频率的降序生成数字。 如果两个字符具有相同的频率，则首先显示具有较小 ASCII 值的字符。 分配给字符{a，b，…。，y，z}的数字分别为{1,2，…。，25，26}。

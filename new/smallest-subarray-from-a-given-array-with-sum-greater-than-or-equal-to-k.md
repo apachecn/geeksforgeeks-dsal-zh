@@ -1,5 +1,7 @@
 # 给定数组中的最小子数组，总和大于或等于 K
 
+> 原文：[https://www.geeksforgeeks.org/smallest-subarray-from-a-given-array-with-sum-greater-than-or-equal-to-k/](https://www.geeksforgeeks.org/smallest-subarray-from-a-given-array-with-sum-greater-than-or-equal-to-k/)
+
 给定由 **N** 个整数和一个整数 **K** 组成的数组 **A []** ，任务是找到总和大于或等于的最小子数组的长度 到 **K** 。 如果不存在这样的子数组，则打印 **-1** 。
 
 **示例**：

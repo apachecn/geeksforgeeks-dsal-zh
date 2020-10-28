@@ -1,5 +1,7 @@
 # 将数组拆分为三个子数组，以使第一和第三子数组的总和相等且最大值
 
+> 原文：[https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/](https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/)
+
 给定一个由 N 个整数组成的数组，任务是通过将数组精确地分成三个子数组来打印第一个子数组的和，以使第一个和第三个子数组元素的和等于最大。
 
 **注意**：所有元素必须属于一个子数组，并且子数组也可以为空。

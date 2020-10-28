@@ -1,5 +1,7 @@
 # 数组
 
+> 原文：[https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/](https://www.geeksforgeeks.org/maximum-possible-difference-two-subsets-array/)
+
 的两个子集的最大可能差
 
 给定一个 n 整数数组。 该数组可以包含重复元素，但是任何元素的最高频率不得超过两个。 您必须制作两个子集，以使它们的元素之和的差最大，并且它们两个共同包含给定数组的所有元素以及最重要的条件，任何子集都不应包含重复元素。

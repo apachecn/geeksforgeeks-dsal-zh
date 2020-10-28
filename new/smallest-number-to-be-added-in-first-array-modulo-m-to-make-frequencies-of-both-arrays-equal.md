@@ -1,5 +1,7 @@
 # 在第一个数组模 M 中添加的最小数字，以使两个数组的频率相等
 
+> 原文：[https://www.geeksforgeeks.org/smallest-number-to-be-added-in-first-array-modulo-m-to-make-frequencies-of-both-arrays-equal/](https://www.geeksforgeeks.org/smallest-number-to-be-added-in-first-array-modulo-m-to-make-frequencies-of-both-arrays-equal/)
+
 给定两个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **A []** 和 **B []** ，它们由 **N** 个正整数和一个整数 **M** 组成， 任务是找到 **X** 的最小值，以便对数组 **A []** 的每个元素执行**（A [i] + X）％M** 导致形成一个元素频率与另一个给定数组 **B []** 相同的数组。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 给定数字 N 中的唯一数字计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/](https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/)
+
 给定数字 **N** ，任务是计算给定数字中唯一数字的数量。
 
 **示例**：

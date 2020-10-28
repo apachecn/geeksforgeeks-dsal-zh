@@ -1,5 +1,7 @@
 # 按频率对元素进行排序| 第 4 组（使用哈希的有效方法）
 
+> 原文：[https://www.geeksforgeeks.org/sort-elements-frequency-set-4-efficient-approach-using-hash/](https://www.geeksforgeeks.org/sort-elements-frequency-set-4-efficient-approach-using-hash/)
+
 如果 2 个数字具有相同的频率，则以递减的频率打印数组的元素，然后打印第一个出现的频率。
 
 **示例**：[

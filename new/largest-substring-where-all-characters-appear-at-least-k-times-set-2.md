@@ -1,5 +1,7 @@
 # 最大的子字符串，其中所有字符至少出现 K 次| 设置 2
 
+> 原文：[https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/](https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/)
+
 给定字符串 **str** 和整数 **K** ，任务是找到最长子字符串 **S** 的长度，以使 **S 中的每个字符** 出现至少 **K** 次。
 
 **示例**：

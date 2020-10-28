@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/](https://www.geeksforgeeks.org/absolute-distinct-count-in-a-linked-list/)
+
 中的绝对唯一计数
 
 给定由整数组成的[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是打印链表中存在的不同绝对值的数量。

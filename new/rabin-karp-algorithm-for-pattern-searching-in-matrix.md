@@ -1,5 +1,7 @@
 # 用于矩阵搜索的 Rabin-Karp 算法
 
+> 原文：[https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching-in-matrix/)
+
 给定尺寸为 **m1 x m2** 的矩阵 **txt [] []** 和尺寸为 **n1 x n2** 的图案 **pat [] []** 任务是检查矩阵中是否存在某个模式，如果存在，则在 **txt [] []** 中打印 **pat [] []** 的顶部 mot 索引。 假设 **m1，m2≥n1，n2**
 
 **示例**：

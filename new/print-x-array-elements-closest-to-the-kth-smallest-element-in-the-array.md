@@ -1,5 +1,7 @@
 # 打印最接近数组
 
+> 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
+
 中第 K 个最小元素的 X 个数组元素
 
 给定两个整数 **K** ， **X** 和一个[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，它们由 **N** 个不同的元素组成， 任务是从给定数组中找到最接近 [**K <sup>K</sup>** 个最小元素的 **X** 元素。](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/)

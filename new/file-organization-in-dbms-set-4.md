@@ -1,5 +1,7 @@
 # DBMS 中的文件组织| 设置 2
 
+> 原文：[https://www.geeksforgeeks.org/file-organization-in-dbms-set-4/](https://www.geeksforgeeks.org/file-organization-in-dbms-set-4/)
+
 先决条件– [散列数据结构](https://www.geeksforgeeks.org/hashing-data-structure/)
 
 在数据库管理系统中，当我们要检索特定数据时，搜索所有索引值并到达所需数据的效率非常低。 在这种情况下，散列技术应运而生。

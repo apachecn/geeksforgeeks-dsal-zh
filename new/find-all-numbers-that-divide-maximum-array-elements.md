@@ -1,5 +1,7 @@
 # 查找所有划分最大数组元素的数字
 
+> 原文：[https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/](https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/)
+
 给定一个由 N 个数字组成的数组，任务是打印所有大于 1 的数字，这些数字除以数组元素的最大值。
 
 **范例**：

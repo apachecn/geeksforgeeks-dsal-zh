@@ -1,5 +1,7 @@
 # 分割一个数组以使子数组最大化，而子数组的奇数和偶数元素数量相等，而成本不超过 K
 
+> 原文：[https://www.geeksforgeeks.org/split-an-array-to-maximize-subarrays-having-equal-count-of-odd-and-even-elements-for-a-cost-not-exceeding-k/](https://www.geeksforgeeks.org/split-an-array-to-maximize-subarrays-having-equal-count-of-odd-and-even-elements-for-a-cost-not-exceeding-k/)
+
 给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 和整数 **K** ，任务是将给定数组拆分为最大可能的子数组 具有偶数和奇数元素的[计数相等，从而拆分数组的成本不超过 **K** 。](https://www.geeksforgeeks.org/count-subarrays-with-same-even-and-odd-elements/)
 
 > 将数组拆分为子数组的成本分别是子数组的最后一个元素与第一个元素之间的差。

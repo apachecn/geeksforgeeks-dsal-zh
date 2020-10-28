@@ -1,5 +1,7 @@
 # 使用多项式滚动哈希函数
 
+> 原文：[https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/](https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/)
+
 的字符串哈希
 
 ### **什么是字符串哈希？**

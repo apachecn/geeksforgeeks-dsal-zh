@@ -1,5 +1,7 @@
 # 计数两个总和等于给定值 x 的排序数组对
 
+> 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
+
 给定两个大小分别为 **m** 和 **n** 的不同元素的排序数组。 给定值 **x** 。 问题是要计算两个数组的总和等于 **x** 的所有对。
 
 **注意**：该对具有每个阵列中的一个元素。

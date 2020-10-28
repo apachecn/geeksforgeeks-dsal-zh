@@ -1,5 +1,7 @@
 # 来自给定数组
 
+> 原文：[https://www.geeksforgeeks.org/first-subarray-with-negative-sum-from-the-given-array/](https://www.geeksforgeeks.org/first-subarray-with-negative-sum-from-the-given-array/)
+
 的总和为负的第一个子数组
 
 给定由 **N** 个整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到第一个子数组的起始索引和结尾索引为负数。 如果不存在这样的子数组，则打印**“ -1”** 。

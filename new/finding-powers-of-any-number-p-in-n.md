@@ -1,5 +1,7 @@
 # 寻找 N 中任意数量 P 的幂！
 
+> 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
+
 前提条件：[打印所有素数及其幂](http://Print all prime factors and their powers)
 
 给定自然数 **N** 和 **P** ，任务是找到 **P [ **N！** 。

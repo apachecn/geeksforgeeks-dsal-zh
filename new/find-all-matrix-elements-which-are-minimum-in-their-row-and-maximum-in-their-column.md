@@ -1,5 +1,7 @@
 # 查找所有矩阵元素，这些元素在其行中的最小值在其列中的最大值
 
+> 原文：[https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/](https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/)
+
 给定大小为 **M * N** 的矩阵 **mat [] []** ，任务是找到所有矩阵元素，这些矩阵元素在其各自的行中最小，在其各自的列中最大。 如果不存在此类元素，则打印 **-1** 。
 
 **示例**：

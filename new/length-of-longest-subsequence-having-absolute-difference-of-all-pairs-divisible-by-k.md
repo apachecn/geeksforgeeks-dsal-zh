@@ -1,5 +1,7 @@
 # 具有可被 K 整除的所有对的绝对差的最长子序列的长度
 
+> 原文：[https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/](https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/)
+
 给定[数组](https://www.geeksforgeeks.org/array-data-structure/)， **arr []** 的大小 **N** 和整数 **K** ，任务是找到最长 [HTG8]来自给定数组的子序列](https://www.geeksforgeeks.org/array-data-structure/)，使得子序列中每对的绝对差可被 **K** 整除。
 
 **示例**：

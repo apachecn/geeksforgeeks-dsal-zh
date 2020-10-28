@@ -1,5 +1,7 @@
 # 检查是否可以通过对子字符串进行排序将字符串转换为另一个字符串
 
+> 原文：[https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/](https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/)
+
 给定两个字符串 **str1** 和 **str2，**，每个字符串的长度 **N** ，并且仅由小写英文字母组成，任务是检查字符串 **str1** 通过多次执行以下操作，可以将]转换为字符串 **str2** 。
 
 *   在 **str1** 和[中选择一个非空的子字符串，按字典顺序](https://www.geeksforgeeks.org/sort-string-characters/)就地排序，以不降序排列子字符串的字符。

@@ -1,5 +1,7 @@
 # 来自给定数组
 
+> 原文：[https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-largest-prime-and-composite-numbers-from-the-given-array/)
+
 的 K 个最大质数和复合数的 XOR
 
 给定 **N** 个非零正整数的数组 **arr []** 和一个整数 **K** ，任务是找到 **K [XOR]。** 最大质数和复合数。

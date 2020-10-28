@@ -1,5 +1,7 @@
 # 查找最大乘积四倍的数量
 
+> 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
+
 给定一个由 N 个正元素组成的数组，可以找到四倍的（i，j，k，m）数，使得 i < j < k < m such that the product **a <sub>i</sub> a <sub>j</sub> a <sub>k [</sub> a <sub>m</sub>** 是最大可能值
 
 **示例**：

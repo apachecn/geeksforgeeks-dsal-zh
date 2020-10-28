@@ -1,5 +1,7 @@
 # 由每对相邻索引对最多进行一次交换形成的词典上最小的数组
 
+> 原文：[https://www.geeksforgeeks.org/lexicographically-smallest-array-formed-by-at-most-one-swap-for-every-pair-of-adjacent-indices/](https://www.geeksforgeeks.org/lexicographically-smallest-array-formed-by-at-most-one-swap-for-every-pair-of-adjacent-indices/)
+
 给定长度为 **N** 的数组 **A []** ，任务是通过为每个索引交换相邻元素至少一次来找到字典上最小的数组。 因此，对于任何索引：
 
 ![0 <= K < N-1 ](img/d49f8f8020d0874fbec2e57f46732f6e.png "Rendered by QuickLaTeX.com")

@@ -1,5 +1,7 @@
 # 曼哈顿和欧几里得距离相同的对
 
+> 原文：[https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/](https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/)
+
 在给定的笛卡尔平面中，有 N 个点。 任务是找到点对数（A，B）使得
 
 *   点 A 和点 B 不重合。

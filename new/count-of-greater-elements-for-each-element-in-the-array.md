@@ -1,5 +1,7 @@
 # 数组
 
+> 原文：[https://www.geeksforgeeks.org/count-of-greater-elements-for-each-element-in-the-array/](https://www.geeksforgeeks.org/count-of-greater-elements-for-each-element-in-the-array/)
+
 中每个元素的较大元素计数
 
 给定大小为 **N** 的整数的数组 **arr** ，任务是为每个元素查找大于它的元素数量。

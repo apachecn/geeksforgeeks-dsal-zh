@@ -1,5 +1,7 @@
 # 计数为 1s 的最长子数组比计数为 0s 的子数组多
 
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/](https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/)
+
 给定大小为 **n** 的数组，仅包含 0 和 1。 问题是要找到最长的子数组的长度，其计数为 1 的数字要大于 0 的数字。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 计算范围内的数字，以使其与 q 的乘积不相等
 
+> 原文：[https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/](https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/)
+
 给定一系列数字[l，r]和一个整数 q。 任务是对给定范围内的所有此类数字进行计数，以使该数字的任何数字与产品中具有给定数字 q 的任何数字都不匹配。
 
 **范例**：

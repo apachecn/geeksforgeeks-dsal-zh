@@ -1,5 +1,7 @@
 # 最小删除操作，以使数组的所有元素相同
 
+> 原文：[https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/](https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/)
+
 给定 n 个元素的数组，以便元素可以重复。 我们可以从数组中删除任意数量的元素。 任务是找到要从数组中删除的元素的最小数量，以使其相等。
 
 **范例**：

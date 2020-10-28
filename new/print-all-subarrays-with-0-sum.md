@@ -1,5 +1,7 @@
 # 打印总和为 0 的所有子数组
 
+> 原文：[https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/](https://www.geeksforgeeks.org/print-all-subarrays-with-0-sum/)
+
 给定一个数组，打印该数组中所有总和为 0 的子数组。
 
 **示例**：

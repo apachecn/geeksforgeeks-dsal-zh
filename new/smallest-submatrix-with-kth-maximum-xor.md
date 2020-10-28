@@ -1,5 +1,7 @@
 # 最小子矩阵，XOR 最大为 Kth
 
+> 原文：[https://www.geeksforgeeks.org/smallest-submatrix-with-kth-maximum-xor/](https://www.geeksforgeeks.org/smallest-submatrix-with-kth-maximum-xor/)
+
 给定尺寸为 **N×M** 的[矩阵](https://www.geeksforgeeks.org/matrix/) **m [] []** 和整数 **K** ，计算 **XOR（i， j）对于矩阵的每个索引，它等于从索引**（1，1）到（i，j））**的子矩阵所有元素的[按位 Xor 或](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/) 。 任务是找到具有 **K** <sup>th</sup> 最大 **XOR（i ，j）**值。 如果存在多个此类子矩阵，则打印最小的子矩阵。
 
 ***注意**：考虑（1，1）中矩阵的起始索引。***

@@ -1,5 +1,7 @@
 # 通过最小替换子序列的最小字符
 
+> 原文：[https://www.geeksforgeeks.org/convert-given-string-to-another-by-minimum-replacements-of-subsequences-by-its-smallest-character/](https://www.geeksforgeeks.org/convert-given-string-to-another-by-minimum-replacements-of-subsequences-by-its-smallest-character/)
+
 将给定的字符串转换为另一个字符串
 
 给定两个字符串 **A** 和 **B** ，任务是计算将字符串 **A** 转换​​为 **B** 所需的最小操作数。 在一个操作中，从字符串 **A** 中选择一个子序列，并将该子序列的每个字符转换为其中的最小字符。 如果无法进行转换，则打印**“ -1”** 。

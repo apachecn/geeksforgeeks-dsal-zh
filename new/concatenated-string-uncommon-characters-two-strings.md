@@ -1,5 +1,7 @@
 # 包含两个字符串中不常见字符的串联字符串
 
+> 原文：[https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/)
+
 给出了两个字符串，您必须修改第一个字符串，以便必须删除第二个字符串的所有常见字符，并且第二个字符串的不常见字符必须与第一个字符串的不常见字符连接在一起。
 
 **示例**：

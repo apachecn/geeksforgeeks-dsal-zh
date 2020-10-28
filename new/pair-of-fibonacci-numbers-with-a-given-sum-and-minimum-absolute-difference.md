@@ -1,5 +1,7 @@
 # 一对具有给定总和和最小绝对差的斐波那契数
 
+> 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
+
 给定整数 **N** （小于 10 ^ 6），任务是找到一对[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，其总和等于给定的 **N** ， 所选对之间的绝对差最小。
 
 如果没有解决方法，请打印 **-1** 。

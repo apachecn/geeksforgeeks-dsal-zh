@@ -1,5 +1,7 @@
 # 在数组
 
+> 原文：[https://www.geeksforgeeks.org/find-pairs-in-array-whose-sum-does-not-exist-in-array/](https://www.geeksforgeeks.org/find-pairs-in-array-whose-sum-does-not-exist-in-array/)
+
 中查找总和不存在的数组对
 
 给定由 **N** 个正整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是打印所有对的数组元素，其和在给定数组中不存在。 如果不存在这样的对，则打印**“ -1”** 。

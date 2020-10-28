@@ -1,5 +1,7 @@
 # 打印字符串数组中出现次数最多的字符
 
+> 原文：[https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/](https://www.geeksforgeeks.org/print-the-most-occurring-character-in-an-array-of-strings/)
+
 给定小写字符串数组 **arr []** ，任务是打印字符串集中出现次数最多的字符。
 
 **示例**：

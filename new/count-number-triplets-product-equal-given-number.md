@@ -1,5 +1,7 @@
 # 产品数量等于给定数量的三胞胎数量
 
+> 原文：[https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/](https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/)
+
 给定一组不同的整数（仅包含正数）和数字“ m”，请找出乘积等于“ m”的三元组数。
 
 **示例**：

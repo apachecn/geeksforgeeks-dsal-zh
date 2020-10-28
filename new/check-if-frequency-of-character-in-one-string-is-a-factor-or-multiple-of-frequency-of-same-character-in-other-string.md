@@ -1,5 +1,7 @@
 # 检查一个字符串中字符的频率是否是另一字符串中相同字符的频率的因数或倍数
 
+> 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-character-in-one-string-is-a-factor-or-multiple-of-frequency-of-same-character-in-other-string/](https://www.geeksforgeeks.org/check-if-frequency-of-character-in-one-string-is-a-factor-or-multiple-of-frequency-of-same-character-in-other-string/)
+
 给定两个字符串，任务是检查一个字符串中一个字符（每个字符）的频率是另一个字符串中的倍数还是一个因数。 如果是，则输出“是”，否则输出“否”。
 
 **示例**：

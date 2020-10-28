@@ -1,5 +1,7 @@
 # 删除 K 个字符后的最大非重复字符数
 
+> 原文：[https://www.geeksforgeeks.org/maximum-non-repeating-characters-after-removing-k-characters/](https://www.geeksforgeeks.org/maximum-non-repeating-characters-after-removing-k-characters/)
+
 给定一个字符串 **S** ，其中包含长度为 **N** 的小写英语字母和一个整数 **K** ，使得 **K≤N** 。 任务是从字符串中删除 **K** 个字符后，找到最大数目的非重复字符。
 
 **示例**：

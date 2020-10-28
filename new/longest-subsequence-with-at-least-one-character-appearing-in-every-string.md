@@ -1,5 +1,7 @@
 # 最长子序列，每个字符串中至少出现一个字符
 
+> 原文：[https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/](https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/)
+
 给定一个字符串数组 **arr []** ，任务是找到该数组的最长子序列，并且在所有字符串中至少出现一个字符。 **请注意，**所有字符串仅包含小写英文字母。
 
 **示例**：

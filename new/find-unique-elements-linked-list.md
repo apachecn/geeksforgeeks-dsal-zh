@@ -1,5 +1,7 @@
 # 在链接列表
 
+> 原文：[https://www.geeksforgeeks.org/find-unique-elements-linked-list/](https://www.geeksforgeeks.org/find-unique-elements-linked-list/)
+
 中查找唯一的元素
 
 给定一个链表。 我们需要在链表中找到唯一元素，即链表中未重复的元素或频率为 1 的元素。如果列表中不存在此类元素，请打印“无唯一元素”。

@@ -1,5 +1,7 @@
 # 数组的排列，以使所有相邻元素的乘积均匀
 
+> 原文：[https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/](https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/)
+
 给定由 **N** 个正整数组成的数组 **arr []** ，任务是找到给定数组的任何排列，以使相邻元素的乘积为偶数。 打印任何这样的排列，如果不可能，则打印-1。
 
 **示例**：

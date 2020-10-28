@@ -1,5 +1,7 @@
 # 另一个数组中存在的数组中每个字符串的字谜计数
 
+> 原文：[https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/](https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/)
+
 给定两个由字符串组成的数组 **arr1 []** 和 **arr2 []** ，任务是打印 arr1 []中存在的 arr2 []中每个字符串的字首计数。
 
 **示例**：

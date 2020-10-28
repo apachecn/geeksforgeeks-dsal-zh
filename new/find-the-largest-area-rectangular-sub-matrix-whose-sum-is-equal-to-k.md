@@ -1,5 +1,7 @@
 # 求和的总面积等于 k 的最大面积的矩形子矩阵
 
+> 原文：[https://www.geeksforgeeks.org/find-the-largest-area-rectangular-sub-matrix-whose-sum-is-equal-to-k/](https://www.geeksforgeeks.org/find-the-largest-area-rectangular-sub-matrix-whose-sum-is-equal-to-k/)
+
 给定二维矩阵 **mat [] []** 和值 **k** 。 求和等于 **k** 的最大矩形子矩阵。
 
 例：

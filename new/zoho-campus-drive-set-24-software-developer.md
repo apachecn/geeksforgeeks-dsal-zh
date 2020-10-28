@@ -1,5 +1,7 @@
 # Zoho 在校园大道上| 设置 24（软件开发人员）
 
+> 原文：[https://www.geeksforgeeks.org/zoho-campus-drive-set-24-software-developer/](https://www.geeksforgeeks.org/zoho-campus-drive-set-24-software-developer/)
+
 Zoho 曾访问我们的大学以招募软件开发人员。 有两种类型的薪资待遇和实习机会。
 
 以下是这些回合：

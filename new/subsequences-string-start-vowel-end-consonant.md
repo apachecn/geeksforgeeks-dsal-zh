@@ -1,5 +1,7 @@
 # 打印所有以元音开头和辅音结尾的字符串子序列。
 
+> 原文：[https://www.geeksforgeeks.org/subsequences-string-start-vowel-end-consonant/](https://www.geeksforgeeks.org/subsequences-string-start-vowel-end-consonant/)
+
 给定一个字符串，返回所有可能的子序列，这些子序列以元音开头，以辅音结尾。 字符串是给定字符串的子序列，它是通过删除给定字符串的某些字符而不更改其顺序而生成的。
 
 **范例**：

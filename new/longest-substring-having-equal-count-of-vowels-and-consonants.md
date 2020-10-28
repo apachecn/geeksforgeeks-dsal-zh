@@ -1,5 +1,7 @@
 # 带有相等数量的元音和辅音的最长子串
 
+> 原文：[https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/](https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/)
+
 给定由小写英文字母组成的字符串 **S** ，任务是从给定的字符串中找到具有相等数量的元音和辅音的最长子字符串的长度。
 
 **示例**：

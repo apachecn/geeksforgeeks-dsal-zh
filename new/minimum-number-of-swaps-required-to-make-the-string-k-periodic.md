@@ -1,5 +1,7 @@
 # 使字符串 K 变为周期性所需的最小交换次数
 
+> 原文：[https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/](https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/)
+
 给定长度为 **N** 的字符串 **S** 以及由小写字母组成的数组 **A** 。 还给出一个正整数 **K** 。 任务是找到使字符串 **S** **K** 成为周期性所需的最小交换次数（在 S 和 A 之间）。
 
 **注意**：

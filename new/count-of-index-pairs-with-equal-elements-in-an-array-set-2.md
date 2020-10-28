@@ -1,5 +1,7 @@
 # 数组中具有相等元素的索引对的计数| 设置 2
 
+> 原文：[https://www.geeksforgeeks.org/count-of-index-pairs-with-equal-elements-in-an-array-set-2/](https://www.geeksforgeeks.org/count-of-index-pairs-with-equal-elements-in-an-array-set-2/)
+
 给定 **N** 个元素的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 。 任务是计算索引**（i，j）**的总数，以使 **arr [i] = arr [j]** 和 **i！= j**
 
 **示例**：

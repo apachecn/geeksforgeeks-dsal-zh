@@ -1,5 +1,7 @@
 # 检查给定堆栈中是否存在所有数组元素
 
+> 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/)
+
 给定一个整数 **S** 的堆栈和一个整数 **arr []** 的数组，任务是检查堆栈中是否存在所有数组元素。
 
 **示例**：

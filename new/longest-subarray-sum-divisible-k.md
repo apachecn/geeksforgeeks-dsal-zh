@@ -1,5 +1,7 @@
 # 最长和可被 k 整除的子数组
 
+> 原文：[https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/](https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/)
+
 给定 **arr []** ，它包含 **n 个**整数和一个正整数 **k** 。 问题是找到最长子数组的长度，其中元素的总和可被给定值 **k** 整除。
 
 **范例**：

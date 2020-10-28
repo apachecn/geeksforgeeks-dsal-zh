@@ -1,5 +1,7 @@
 # 最长连续子序列
 
+> 原文：[https://www.geeksforgeeks.org/longest-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-consecutive-subsequence/)
+
 给定整数数组，请找到最长子序列的长度，以使子序列中的元素为连续整数，连续数字可以为任意顺序。
 
 **范例**：

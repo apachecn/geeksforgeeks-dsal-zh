@@ -1,5 +1,7 @@
 # 打印给定字符串的所有位置，该字符串的小写字符数在两侧均相等
 
+> 原文：[https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/](https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/)
+
 给定[字符串](https://www.geeksforgeeks.org/string-data-structure/)， **str** ，任务是查找给定字符串的索引，以使该索引左侧和右侧的按字典顺序排列的较小字符数相等且非 -零。
 
 **示例**：

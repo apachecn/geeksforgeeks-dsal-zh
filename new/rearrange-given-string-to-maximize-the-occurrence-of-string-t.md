@@ -1,5 +1,7 @@
 # 重新排列给定的字符串以最大化出现字符串 t
 
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
+
 给定两个二进制字符串 **s** 和 **t** 。 任务是重新排列字符串 **s** ，使得在 **s** 中作为子字符串的字符串 **t** 的出现最大。
 
 **示例**：

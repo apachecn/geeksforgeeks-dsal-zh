@@ -1,5 +1,7 @@
 # 根据给定条件删除的字符索引总和，以获得空字符串
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-indices-of-characters-removed-to-obtain-an-empty-string-based-on-given-conditions/](https://www.geeksforgeeks.org/sum-of-indices-of-characters-removed-to-obtain-an-empty-string-based-on-given-conditions/)
+
 给定由小写英文字母组成的字符串 **str** ，任务是通过以下操作来计算所删除字符的索引总和（从 1 开始的索引），以获得空字符串：
 
 *   删除字符串中最小的字母。

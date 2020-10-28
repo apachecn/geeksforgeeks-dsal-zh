@@ -1,5 +1,7 @@
 # 以垂直顺序打印二叉树| 设置 2（基于地图的方法）
 
+> 原文：[https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
+
 给定一棵二叉树，垂直打印。 以下示例说明了垂直顺序遍历。
 
 ```

@@ -1,5 +1,7 @@
 # 计数具有相等数量的 0s，1s 和 2s 的子字符串
 
+> 原文：[https://www.geeksforgeeks.org/substring-equal-number-0-1-2/](https://www.geeksforgeeks.org/substring-equal-number-0-1-2/)
+
 给定一个仅包含 0、1s 或 2s 的字符串，请计算具有相等数目的 0s，1s 和 2s 的子字符串的数量。
 
 **示例**：
