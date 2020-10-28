@@ -36,14 +36,19 @@ Pattern found at (1, 1)
 **方法**：为了使用 [Rabin-Karp 算法](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/)在二维数组中找到图案，请考虑输入矩阵 **txt [m1] [m2]** 和 模式 **pat [n1] [n2]** 。 这个想法是找到 **mat [] []** 和 **pat [] []** 每列的[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)并比较哈希值。 对于任何列，如果哈希值等于，则检查相应的行值。 步骤如下：
 
 1.  在 **txt [] []** 和 **pat [] []** 矩阵中找到前 **N1** 行的每一列的哈希值。
+
 2.  通过为步骤 1 中找到的列哈希查找哈希值来应用 Rabin-Karp 算法。
+
 3.  如果找到匹配项，则比较特定行和列的 **txt [] []** 和 **pat [] []** 矩阵。
+
 4.  否则，使用[滚动哈希](https://www.geeksforgeeks.org/string-hashing-using-polynomial-rolling-hash-function/)将 txt 矩阵中的列哈希值向下滑动 1 行。
+
 5.  对所有哈希值重复步骤 2 到 4，如果我们在 **txt [] []** 中找到任何 **pat [] []** 匹配项，然后在[ **txt [] []** 。
 
 **查找哈希值**：为了使用滚动哈希在文本中查找大小为 **N** 的子字符串的哈希值，请执行以下步骤：
 
 1.  从字符串中删除第一个字符： **hash（txt [s：s + n-1]）-（radix **（n-1）* txt [s]）％prime_number**
+
 2.  将下一个字符添加到字符串中： **hash（txt [s：s + n-1]）* radix + txt [n]**
 
 下面是上述方法的实现：

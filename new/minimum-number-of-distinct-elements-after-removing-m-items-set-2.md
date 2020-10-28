@@ -21,8 +21,11 @@
 **高效方法**：这个想法是将每个元素的出现存储在[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)中，然后再次计算每个频率在哈希中的出现。 步骤如下：
 
 1.  遍历给定的数组元素，[对每个数字](https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-a-sorted-array/)的出现进行计数，并将其存储到[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)中。
+
 2.  现在，不对频率进行排序，而是将频率的出现计数到另一个数组中，例如 ***fre*** **_** ***arr []** [* 。
+
 3.  计算不重复编号的总数（例如**和**）。
+
 4.  现在，遍历 **freq_arr []** 数组，如果 **freq_arr [i] > 0** ，则删除 **m / i** 和 **freq_arr [ i]** （例如 **t** ）从 **ans** 中扣除，然后从 **m** 中减去 **i * t** 以消除出现任何数字 i 来自 **m** 。
 
 下面是上述方法的实现。
@@ -314,6 +317,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

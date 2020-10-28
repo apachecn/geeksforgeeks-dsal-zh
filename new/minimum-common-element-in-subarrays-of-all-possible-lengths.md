@@ -20,8 +20,11 @@
 **方法**：请按照以下步骤解决问题：
 
 *   [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并将[每个元素](https://www.geeksforgeeks.org/print-the-last-occurrence-of-elements-in-array-in-relative-order/)的最后出现存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
+
 *   初始化数组 **temp []** ，并为每个值存储数组中数组的任意一对连续重复之间的最大距离。
+
 *   完成上述步骤后，通过将 **temp [i]** 与最后出现的 **i** 从阵列末端的距离进行比较，更新 **temp []** 。
+
 *   现在，将长度为 **1** 至 **N** 的所有子数组的最小注释元素一一存储，然后打印出来。
 
 下面是上述方法的实现：
@@ -142,6 +145,7 @@ int main()
 ```
 
 ***时间复杂度**：O（N）
+
 **辅助空间**：O（N）*
 
 

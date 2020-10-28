@@ -3,8 +3,11 @@
 给定 Q 查询的类型为 1、2、3 和 4，如下所述。
 
 *   **Type-1**：在列表中插入一个数字。
+
 *   **Type-2**：仅删除一次出现的数字（如果存在）。
+
 *   **Type-3**：打印最不频繁的元素，如果存在多个元素，则打印其中最频繁的元素。
+
 *   **Type-4**：打印最频繁的元素，如果存在多个元素，则打印其中最小的元素。
 
 任务是编写一个程序来执行上述所有查询。
@@ -48,8 +51,11 @@ data-types. *pr* is a struct which has first and second as two integers.
 以下是解决每种类型的查询的算法：
 
 *   **Type1**：使用哈希表检查元素是否存在。 如果不存在，则在[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)中标记该数字。 使用 [insert（）](https://www.geeksforgeeks.org/set-insert-function-in-c-stl/)在集 s1 中插入 **{num，1}** 并在 set2 中插入 **{1，num}** 在 set2 中。 如果以前存在，则从哈希表中获取频率，然后使用 [find（）从 set1 中删除 **{num，frequency}** ，并从 set2 中删除 **{frequency，num}** [](https://www.geeksforgeeks.org/set-find-function-in-c-stl/) 和 [delete（）](https://www.geeksforgeeks.org/seterase-c-stl/)函数。 在[set1]中插入 **{num，frequency + 1}** ，在[set2]中插入 **{frequency + 1，num}** 。 另外，增加哈希表中的计数。
+
 *   **Type2**：遵循与查询类型 1 相同的过程。 唯一的区别是减少哈希表中的计数，并在[set1]中插入 **{num，frequency-1}** ，在[set2]中插入 **{frequency-1，num}** 。
+
 *   **Type3**：打印可​​以使用 begin（）函数获得的开始元素，因为该集合的设计方式是 [begin（）](https://www.geeksforgeeks.org/setbegin-setend-c-stl/)返回最不频繁的元素。 如果有多个，则返回最大的。
+
 *   **Type4**：打印集合中的最后一个元素，可以使用集合中的 [rbegin（）](https://www.geeksforgeeks.org/setrbegin-and-setrend-in-c-stl/)函数获得该元素。
 
 下面是上述方法的实现：
@@ -195,6 +201,7 @@ return 0;
 ```
 
 **时间复杂度：每个查询** O（log N）。
+
 **辅助空间**：O（N）
 
 

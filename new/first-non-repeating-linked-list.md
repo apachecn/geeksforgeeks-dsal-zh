@@ -17,7 +17,9 @@ Output :No NOn-repeating element is found.
 ```
 
 1）创建一个哈希表，并将所有元素标记为零。
+
 2）遍历链表并计算哈希表中所有元素的出现频率。
+
 3）再次遍历链表，并在哈希表中查看频率为 1 的元素。
 
 ```
@@ -84,6 +86,7 @@ return 0;
 ```
 
 **进一步优化**：
+
 上述解决方案需要两次遍历链接列表。 如果我们有很多重复元素，则可以通过将位置也存储在哈希表中来保存一个遍历。 请参考[的最后一种方法。给定字符串，请查找其第一个非重复字符](http://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)。
 
 

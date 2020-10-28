@@ -3,6 +3,7 @@
 中所有最小出现元素的总和
 
 给定包含重复元素的整数数组。 任务是找到给定数组中所有最少出现的元素的总和。 这是其频率在阵列中最小的所有此类元素的总和。
+
 **范例**：
 
 ```
@@ -22,7 +23,9 @@ Their sum = 10 + 20 + 30 = 60.
 **方法**：
 
 *   遍历数组，并在 C++ 中使用 [unordered_map 存储数组元素的频率，以使 map 的键为数组元素，值为数组中的频率。](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)
+
 *   然后，遍历该图以查找出现最少的元素的频率。
+
 *   现在，要再次找到遍历该映射的总和，对于所有具有最小频率的元素，请找到 **frequency_of_min_occurring_element * min_occurring_element** 并找到其总和。
 
 下面是上述方法的实现：

@@ -34,12 +34,15 @@
 **<u>天真的方法</u>**：最简单的方法是使用[递归](https://www.geeksforgeeks.org/recursion/)计算 **F（N）**的值。 在每个步骤中，分别对值 **N / 2** ， **N / 3** 和 **N / 4** 分别调用三个递归调用，然后返回每个递归调用 **N** 的最大值与这些递归调用返回的值之和。 在所有递归调用结束后，将值打印为结果。
 
 ***时间复杂度**：O（3 <sup>N</sup> ）*
+
 ***辅助空间**：O（1）*
 
 [**<u>动态编程</u>**](http://www.geeksforgeeks.org/dynamic-programming/) **<u>使用自下而上的方法</u>**：上面的递归调用也可以使用 辅助数组 **dp []** ，并以自下而上的方式计算每个状态的值。 步骤如下：
 
 *   创建大小为 **N** 的辅助数组 **dp []** 。
+
 *   将 **0** 和 **1** 初始化为 **dp [0] = 0** 和 **dp [1] = 1** 。
+
 *   [在范围 **[2，N]** 范围内遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/) **dp []** ，并将每个状态更新为：
 
 > dp [i] = max（i，dp [i / 2] + dp [i / 3] + dp [i / 4]）
@@ -219,11 +222,13 @@ if __name__ == '__main__':
 ```
 
 ***时间复杂度**：O（N）*
+
 ***空间复杂度**：O（N）*
 
 [**<u>动态编程</u>**](http://www.geeksforgeeks.org/dynamic-programming/) **<u>使用自顶向下方法</u>**：与上述方法一样，[有很多重叠 每个递归调用的子问题](https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/)。 因此，为了优化上述方法，其思想是使用辅助空间[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来存储在每个递归调用中计算出的值并返回重复的存储状态。 步骤如下：
 
 *   初始化映射**映射**，以存储在每个递归调用中计算的值。
+
 *   **<u>基本情况</u>**：如果 **N** 的值为 **0** 或 **1** ，则结果为 **0** 和 **1** 。 同样，如果存在任何先前计算的状态，则将该值返回为：
 
 > >基本情况：
@@ -385,6 +390,7 @@ public static void main (String[] args)
 ```
 
 ***时间复杂度**：O（log N）*
+
 ***辅助空间**：O（log N）*
 
 

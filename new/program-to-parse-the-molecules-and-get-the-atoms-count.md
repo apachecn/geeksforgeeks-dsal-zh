@@ -20,8 +20,11 @@ Output: Na 2
 **方法**：以下方法在 Java 编程语言中起作用：
 
 *   以 [LinkedHashMap](https://www.geeksforgeeks.org/linkedhashmap-class-java-examples/) 按插入顺序存储原子名称（键）和计数（值）。
+
 *   检查字符串字符是否为小写，然后添加到前一个大写的字符串字符。
+
 *   检查字符串是否包含数字，然后将计数（值）添加到其特定的原子名称（键）。
+
 *   打印原子名称（键）和计数（值）。
 
 下面是上述方法的实现：

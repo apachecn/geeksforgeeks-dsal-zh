@@ -309,13 +309,17 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N <sup>2</sup> log N），其中 N 是给定数组的大小。*
+
 ***辅助空间**：O（N）*
 
 **高效方法**：关键观察结果是，从 **0** 到 **N** 仅存在 **log N** 个数字，其中包含所有设置位。 此属性可用于优化上述方法。 请按照以下步骤解决问题：
 
 *   将所有 **log（MAX_INTEGER）**元素存储在数组 **setArray []** 中。
+
 *   将数组 **arr []** 的所有元素映射到[映射数据结构](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，其中元素是键，其频率是值。
+
 *   [遍历范围为 **[0，N – 1]** 的给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/) **arr []** ，并在嵌套循环中遍历数组 **setArray [] [HTG7 从 **j = 0 到 log（MAX_INTEGER）**，然后将 **ans** 递增 **map [setArray [j] – arr [i]]** 其中 **ans [** 存储所需对的总数。**
+
 *   由于存在重复计数，因为**（a，b）**和**（b，a）**被计数了两次。 因此，打印 **ans / 2** 的值以获得所需的计数。
 
 下面是上述方法的实现：
@@ -555,6 +559,7 @@ if __name__ == "__main__":
 ```
 
 ***时间复杂度**：O（N * 32），其中 N 是给定数组的大小。*
+
 ***辅助空间**：O（N）*
 
 

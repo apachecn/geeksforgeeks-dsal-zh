@@ -20,7 +20,9 @@
 **方法**：可以使用 [Floodfill 算法](https://www.geeksforgeeks.org/flood-fill-algorithm-implement-fill-paint/)解决此问题。 步骤如下：
 
 1.  对第一组连接的孤岛使用 Floodfill 算法，使所有孤岛都已访问，并将坐标存储在[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)中（例如 **hash1** ）。
+
 2.  对第二组连接的孤岛使用 Floodfill 算法，使所有孤岛都已访问，并将坐标存储在第二个哈希中（例如 **hash2** ）。
+
 3.  存储在两个哈希中的坐标之间的最小差是必需的结果。
 
 下面是上述方法的实现：

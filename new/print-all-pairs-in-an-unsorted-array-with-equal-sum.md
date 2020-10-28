@@ -1,7 +1,9 @@
 # 以相等的总和在未排序的数组中打印所有对
 
 给定一个未排序的数组 A []。 任务是以相等的总和打印未排序数组中的所有**个唯一对**。
+
 **注意**：以以下示例所示的格式打印结果。
+
 **范例**：[
 
 ```
@@ -24,8 +26,11 @@ Pairs : ( 4, 86) ( 23, 67) have sum : 90
 这个想法是在 C++ STL 中使用[映射，以避免重复的元素对。](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 
 
 *   创建一个键，键为整数的[对](https://www.geeksforgeeks.org/pair-in-cpp-stl/)，值的整数作为整数，以存储所有唯一的元素对及其对应的总和。
+
 *   遍历数组并生成所有可能的对，并将这些对及其对应的和存储在第一张地图上。
+
 *   创建第二个映射，键为整数，值作为对的[向量，以存储所有具有相应总和的元素对的列表。](https://www.geeksforgeeks.org/sorting-vector-of-pairs-in-c-set-1-sort-by-first-and-second/)
+
 *   最后，遍历第二张地图，对于具有多于一对的和，请打印所有对，然后按上述示例所示的格式打印相应的和。
 
 下面是上述方法的实现：

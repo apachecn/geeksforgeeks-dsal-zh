@@ -16,7 +16,9 @@
 **方法**：可通过为 **X** -坐标和**生成从 **0** 到 **L** 范围内的所有整数来解决该问题。 ] **Y** 的 0** 至 **W** -使用 [rand（）](https://www.geeksforgeeks.org/rand-and-srand-in-ccpp/)函数的坐标。 请按照以下步骤解决问题：
 
 1.  创建一组[对](https://www.geeksforgeeks.org/sets-of-pairs-in-c/)，以存储矩形内的所有坐标（X，Y）。
+
 2.  使用等式 **rand（）％L** 生成介于 **0** 至 **L** 和 **rand（）％W** 之间的所有整数 位于 **0** 至 **W** 之间的所有整数。
+
 3.  打印矩形内所有可能的 **L×W** 坐标（X，Y）。
 
 下面是上述方法的实现：
@@ -254,6 +256,7 @@ public static void Main(string[] args)
 ```
 
 ***时间复杂度**：O（L * W）*
+
 ***辅助空间**：O（L * W）*
 
 

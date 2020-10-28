@@ -15,13 +15,19 @@
 > **输出**：3
 
 **方法**：[
+
 ]请按照以下步骤解决问题：
 
 *   找到可能的对数，以使一个元素是给定数组中另一个元素的 K 倍
+
 *   [按元素的**递增顺序**对](https://www.geeksforgeeks.org/sort-c-stl/)数组进行排序。
+
 *   遍历数组并将数组元素的频率索引存储在[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
+
 *   初始化访问了的数组**，以标记每个索引，无论该元素是否包含在子集中 **0** ）（ **1** ）。**
+
 *   再次遍历数组，对于 **vis [i] = 0** 的每个索引，检查 **Map** 中是否存在 **arr [i] * K** 。 如果找到，则增加对对的**计数，并设置 **vis [mp [arr [i] * K]] = 1** 。**
+
 *   最后，打印 **N –对数**作为答案。
 
 下面是上述方法的实现：
@@ -328,6 +334,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

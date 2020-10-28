@@ -16,8 +16,11 @@
 [**散列**](http://www.geeksforgeeks.org/hashing-data-structure/) **方法**：[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)找出[所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)的最小元素并将其计数存储在 [映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 请按照以下步骤解决问题：
 
 1.  创建一个[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，以存储每个元素的[子数组](https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/)的数量。
+
 2.  遍历所有可能的子数组，找到子数组中的最小元素。
+
 3.  在**映射**中获得的最小元素的**计数**。
+
 4.  最后，为每个数组元素打印在 **Map** 中获得的频率。
 
 下面是上述方法的实现：
@@ -132,18 +135,27 @@ if __name__ == '__main__':
 ```
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（1）*
 
 **有效方法**：此方法基于[下一个较大元素](https://www.geeksforgeeks.org/next-greater-element/)和[前一个较大元素](https://www.geeksforgeeks.org/previous-greater-element/)的概念。 请按照以下步骤解决问题：
 
 1.  为了找到元素的最小值，首先找到 **x** 和 **y** ，其中 **x** 是在左边的严格大于数字的长度。 **arr [i]** 和 **y** 是 **arr [i]** 右边较大数字的长度。
+
 2.  因此， **x * y** 是其中 **arr [i]** 最小的子阵列的总数。
+
 3.  要查找 **x** 和**和**，请使用[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)，其概念为[下一个更大的元素](http://www.geeksforgeeks.org/next-greater-element/)和[上一个更大的元素](https://www.geeksforgeeks.org/previous-greater-element/)。
+
 4.  对于[下一个更大的元素](http://www.geeksforgeeks.org/next-greater-element/)，创建对对的堆栈，并将第一个数组元素和一个计数器压入以将子数组成对计数到堆栈中。
+
 5.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并一个接一个地选取数组元素：
+
     *   如果当前数组元素大于堆栈 的 [**顶部元素，则对于**堆栈**中的顶部元素，当前元素为**。 下一个更大的元素**。 因此，**](https://www.geeksforgeeks.org/stack-top-c-stl/)**[从堆栈](https://www.geeksforgeeks.org/stack-pop-method-in-java/)的[顶部元素弹出](https://www.geeksforgeeks.org/stack-top-c-stl/)，然后将计数器的值递增到堆栈**的**顶部的计数器值，然后增加下一个顶部堆栈元素 与当前数组元素进行比较，依此类推。**
+
     *   否则，将带有计数器的当前数组元素推入堆栈，然后将计数器插入结果数组。
+
 6.  对上一个更大的元素重复步骤 4、5。
+
 7.  最后，打印结果。
 
 下面是上述方法的实现：
@@ -295,6 +307,7 @@ if __name__ == "__main__":
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

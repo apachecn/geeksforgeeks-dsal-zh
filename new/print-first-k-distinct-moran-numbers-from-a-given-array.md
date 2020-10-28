@@ -22,8 +22,11 @@
 **方法**：请按照以下步骤解决问题：
 
 1.  [对数组进行排序](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)
+
 2.  [遍历排序后的数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，对于每个元素，[检查其是否为莫兰数](https://www.geeksforgeeks.org/check-whether-given-number-n-is-a-moran-number-or-not/)
+
 3.  如果确定为真，则将元素插入[设置](https://www.geeksforgeeks.org/set-in-cpp-stl/)中，并递增**计数器**直到达到 **K** 。
+
 4.  当组的[大小等于 **K** 时，打印**组**中的元素。](https://www.geeksforgeeks.org/setsize-c-stl/)
 
 下面是上述方法的实现：
@@ -553,6 +556,7 @@ public static void Main()
 ```
 
 ***时间复杂度**：O（N <sup>3/2</sup> ）*
+
 ***辅助空间**：O（N）*
 
 

@@ -5,8 +5,11 @@
 与[先前的文章](https://www.geeksforgeeks.org/java-util-hashmap-in-java)中一样，HashMap 包含一个 Node 数组，并且 Node 可以表示具有以下对象的类：
 
 1.  整数哈希
+
 2.  K 键
+
 3.  V 值
+
 4.  下一个节点
 
 现在，我们将了解其工作原理。 首先，我们将看到哈希过程。
@@ -46,11 +49,13 @@ class Key
 **[hashCode（）方法](https://www.geeksforgeeks.org/equals-hashcode-methods-java/)**
 
 hashCode（）方法用于获取对象的哈希码。 对象类的 hashCode（）方法以整数形式返回对象的内存引用。 hashCode（）方法的定义是公共的本地 hashCode（）。 它表明 hashCode（）的实现是本机的，因为 java 中没有任何直接方法来获取对象的引用。 可以提供您自己的 hashCode（）实现。
+
 在 HashMap 中，hashCode（）用于计算存储区，并因此计算索引。
 
 **[equals（）方法](https://www.geeksforgeeks.org/equals-hashcode-methods-java/)**
 
 equals 方法用于检查 2 个对象是否相等。 此方法由 Object 类提供。 您可以在您的类中重写此方法以提供您自己的实现。
+
 HashMap 使用 equals（）比较密钥是否相等。 如果 equals（）方法返回 true，则它们相等，否则不相等。
 
 **桶**
@@ -93,7 +98,9 @@ index = hashCode(key) & (n-1).
     **步骤**：
 
     1.  计算密钥{“ vishal”}的哈希码。 它将生成为 118。
+
     2.  使用索引方法计算索引将为 6。
+
     3.  创建一个节点对象为：
 
         ```
@@ -123,7 +130,9 @@ index = hashCode(key) & (n-1).
     **步骤**：
 
     1.  计算密钥{“ sachin”}的 hashCode。 它将生成为 115。
+
     2.  使用索引方法计算索引将为 3。
+
     3.  创建一个节点对象为：
 
         ```
@@ -136,6 +145,7 @@ index = hashCode(key) & (n-1).
         ```
 
     如果没有其他对象，则将该对象放置在索引 3 处。
+
     现在 HashMap 变为： [![2_hasharray](img/bbe2368957ded4573b3f6fed015ecb69.png)](https://media.geeksforgeeks.org/wp-content/uploads/Hashmap_working_2.jpg)
 
 *   **发生碰撞时**：现在，放入另一对，
@@ -148,7 +158,9 @@ index = hashCode(key) & (n-1).
     **步骤**：
 
     1.  计算密钥{“ vaibhav”}的哈希码。 它将生成为 118。
+
     2.  使用索引方法计算索引将为 6。
+
     3.  创建一个节点对象为：
 
         ```
@@ -161,10 +173,15 @@ index = hashCode(key) & (n-1).
         ```
 
     4.  如果此处没有其他对象，则将该对象放置在索引 6 处。
+
     5.  在这种情况下，在索引 6 处找到**的节点对象–这是冲突的情况。**
+
     6.  在这种情况下，请通过 hashCode（）和 equals（）方法检查两个键是否相同。
+
     7.  如果键相同，则用当前值替换该值。
+
     8.  否则，通过链接列表将此节点对象连接到先前的节点对象，并且两者都存储在索引 6 中。
+
         现在 HashMap 变为： [![3_hasharray](img/c19b9fdc75a001c6676edbb8ab8bd40f.png)](https://media.geeksforgeeks.org/wp-content/uploads/Hashmap_working_3.jpg)
 
 **使用 get method（）**
@@ -181,9 +198,13 @@ index = hashCode(key) & (n-1).
     **步骤**：
 
     1.  计算密钥{“ sachin”}的哈希码。 它将生成为 115。
+
     2.  使用索引方法计算索引将为 3。
+
     3.  转到数组的索引 3，然后将第一个元素的键与给定的键进行比较。 如果两者相等，则返回该值，否则检查下一个元素是否存在。
+
     4.  在我们的例子中，它是第一个元素，返回值为 30。
+
 *   Fetch the data for key vaibahv:
 
     ```
@@ -194,10 +215,15 @@ index = hashCode(key) & (n-1).
     **步骤**：
 
     1.  计算密钥{“ vaibhav”}的哈希码。 它将生成为 118。
+
     2.  使用索引方法计算索引将为 6。
+
     3.  转到数组的索引 6，然后将第一个元素的键与给定的键进行比较。 如果两者相等，则返回该值，否则检查下一个元素是否存在。
+
     4.  在我们的情况下，找不到它作为第一个元素，而节点对象的下一个也不为空。
+
     5.  如果节点的下一个为 null，则返回 null。
+
     6.  如果节点的 next 不为空，则遍历第二个元素并重复过程 3，直到找不到键或 next 不为空。
 
 ```
@@ -257,14 +283,19 @@ Value for key vaibhav: 40
 **Java 8 中的 HashMap 更改**
 
 现在我们知道，在发生哈希冲突的情况下，条目对象作为节点存储在[链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)中，并且 equals（）方法用于比较键。 在链表中查找正确密钥的比较是线性操作，因此在最坏的情况下，复杂度变为 O（n）。
+
 为了解决此问题，Java 8 哈希元素在达到特定阈值后使用平衡树而不是链接列表。 这意味着 HashMap 首先在链表中存储 Entry 对象，但是在哈希中的项数大于某个阈值之后，哈希将从使用链表变为平衡树，这将改善 O 的最坏情况性能 （n）至 O（log n）。
 
 **要点**
 
 1.  放置和获取方法的时间复杂度几乎是恒定的，直到没有完成重新哈希。
+
 2.  在发生冲突的情况下，即两个或多个节点的索引相同，节点通过链接列表连接在一起，即第二个节点由第一个节点引用，第三个由第二个节点引用，依此类推。
+
 3.  如果给定的键已经存在于 HashMap 中，则将该值替换为新值。
+
 4.  空键的哈希码为 0。
+
 5.  当获取具有其键的对象时，将遍历链接列表，直到键匹配或在下一个字段中找到 null 为止。
 
 本文由 **Vishal Garg** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

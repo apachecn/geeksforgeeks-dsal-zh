@@ -15,7 +15,9 @@
 **方法**：请按照以下步骤解决问题：
 
 1.  创建 [**无序集**](https://www.geeksforgeeks.org/unordered_set-in-cpp-stl/) ，并存储矩阵每一行的[最小元素。](https://www.geeksforgeeks.org/minimum-element-of-each-row-and-each-column-in-a-matrix/)
+
 2.  [遍历矩阵](https://www.geeksforgeeks.org/traverse-a-given-matrix-using-recursion/)并找到每列的**最大元素**。 对于每一列，检查获得的最大值是否已经存在于 [unordered_set](http://www.geeksforgeeks.org/unorderd_set-stl-uses/) 中。
+
 3.  如果发现是真的，请打印该号码。 如果找不到这样的矩阵元素，则打印 **-1** 。
 
 下面是上述方法的实现：
@@ -341,6 +343,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（M * N）*
+
 ***辅助空间**：O（M + N）*
 
 

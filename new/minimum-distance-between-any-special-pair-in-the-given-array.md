@@ -23,14 +23,19 @@
 **天真的方法**：最简单的方法是考虑[数组](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)的每对元素，并检查它们是否形成特殊的对。 如果发现是正确的，则在所有形成的线对之间打印最小距离。
 
 ***时间复杂度**：O（N <sup>3</sup> ）*
+
 ***辅助空间**：O（1）*
 
 **高效方法**：为了优化上述方法，我们的想法是观察到我们仅需考虑排序数组中相邻元素的位置之间的距离，因为那对元素将没有任何值 **X** 之间。 步骤如下：
 
 1.  将数组元素的初始索引存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
+
 2.  [对给定数组 arr []](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/) 进行排序。
+
 3.  现在，使用 **Map** 找到排序数组的相邻元素的索引之间的距离。
+
 4.  在上述步骤中，为每对相邻元素保持最小距离。
+
 5.  完成上述步骤后，打印形成的最小距离。
 
 下面是上述方法的实现：
@@ -254,6 +259,7 @@ if __name__ == "__main__":
 ```
 
 ***时间复杂度**：O（N * log N）*
+
 ***辅助空间**：O（N）*
 
 

@@ -18,12 +18,15 @@
 **天真的方法**：解决该问题的最简单方法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并为每个子数组检查其总和是否等于 **K** 。 打印所有此类子数组的最小长度。
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（1）*
 
 **有效方法**：可以使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)技术和 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 进一步优化上述方法。 请按照以下步骤解决问题：
 
 1.  计算每个索引的前缀总和，并将其（索引，前缀总和）存储为映射中的键值对。
+
 2.  遍历前缀总和数组，并计算前缀总和与所需总和之间的差。
+
 3.  如果 HashMap 中存在差异值，则意味着存在一个总和等于 **K** 的子数组，然后将子数组的长度与获得的最小长度进行比较，并相应地更新最小长度。
 
 下面是上述方法的实现：
@@ -358,6 +361,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（NlogN）*
+
 ***辅助空间**：O（N）*
 
 

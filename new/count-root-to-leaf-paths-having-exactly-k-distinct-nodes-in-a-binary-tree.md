@@ -25,17 +25,25 @@
 > 因此，答案是 2。
 
 **天真的方法**：最简单的方法是[生成从根到叶节点](https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/)的所有可能路径，并针对每个路径检查其是否包含 **K** 个不同的节点或 不。 最后，打印此类路径的计数。
+
 ***时间复杂度**：O（N * H <sup>2</sup> ），其中 H 表示树的高度。*
+
 ***辅助空间**：O（N）；*
 
 **高效方法**：的想法是使用[前置遍历](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)和[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来计算从根到当前节点的路径中的不同节点。 请按照以下步骤解决问题：
 
 *   初始化变量 **distinct_nodes** 为 **0** ，以存储从根到当前节点的不同节点的计数，而将 **ans** 初始化为 0，以将总的不同根存储到 具有 **K** 个不同节点的叶路径。
+
 *   在给定的二叉树中执行[前置遍历](http://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)，并将从根到当前节点的不同节点的计数存储在映射 **M** 中。
+
 *   每当节点首次出现在路径上时，将不同节点的数量增加 **1** 。
+
 *   如果路径上不同节点的数量大于 **K** ，则返回当前节点的父节点。
+
 *   否则，继续访问当前节点的子节点，使当前节点值的频率增加 **1** 。
+
 *   在上述步骤中，如果从根到叶的路径上不同节点的计数正好等于 **K** ，则将**和**递增 **1** 。
+
 *   完成上述步骤后，将**和**的值打印为结果计数。
 
 下面是上述方法的实现：
@@ -312,6 +320,7 @@ public static void main(String[] args)
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

@@ -24,10 +24,15 @@ All shifted strings are grouped together.
 ```
 
 我们可以看到一组字符串之间的模式，字符串中所有字符的连续字符之间的差是相等的。 如上例所示，取 acd，dfg 和拖把
+
 acd-> 2 1
+
 dfg-> 2 1
+
 mop-> 2 1
+
 ，我们可以使用它来识别属于同一组的字符串。 想法是形成一串差异作为关键。 如果找到具有相同差异字符串的字符串，则该字符串也属于同一组。 例如，上述三个字符串具有相同的差异字符串，即“ 21”。
+
 在以下实现中，我们为每个差异添加“ a”，并将 21 存储为“ ba”。
 
 ## C++
@@ -175,5 +180,6 @@ bdfh moqs
 ```
 
 本文由 **Utkarsh Trivedi** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者您​​想分享有关上述主题的更多信息，请发表评论。
 

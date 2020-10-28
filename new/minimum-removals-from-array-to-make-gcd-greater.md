@@ -15,11 +15,17 @@
 请按照以下步骤解决上述问题：
 
 1.  最初使用[欧几里德算法](https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/)找到 N 个数字的 gcd。
+
 2.  将所有数字除以获得的 gcd。
+
 3.  使用质数分解的多重查询方法，找到 O（log N）中每个数字的质数分解。 该方法可以在此处读取[。](https://www.geeksforgeeks.org/prime-factorization-using-sieve-olog-n-multiple-queries/)
+
 4.  将所有素因子插入集合中，以删除使用此方法获得的重复项。
+
 5.  使用哈希图，计算每个第 i 个元素中主要因子的频率。
+
 6.  一旦数字分解完成，并且计数已存储在频率表中，请在哈希图中进行迭代，找出出现最大次数的素数。 它不能为 N，因为我们已经将数组元素初始除以 N 个数字的初始 gcd。
+
 7.  如果在初始 gcd 划分之后有任何此类因素，则移除次数将始终为 n-（hash [prime_factor]）。
 
 下面是上述方法的实现。
@@ -276,6 +282,7 @@ print(minimumRemovals(a, n))
 ```
 
  **时间复杂度**：O（log log N）用于筛分的预先计算，O（N * log N）用于计算。
+
 **辅助空间**：O（N）
 
 

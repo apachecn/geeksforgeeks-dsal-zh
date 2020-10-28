@@ -1,16 +1,23 @@
 # Java 中的 HashSet 与 TreeSet
 
 *   **Speed and internal implementation**
+
     [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) : For operations like search, insert and delete. It takes constant time for these operations on average. HashSet is faster than TreeSet. HashSet is Implemented using a [hash table](https://www.geeksforgeeks.org/hashing-set-1-introduction/).
 
     [TreeSet](https://www.geeksforgeeks.org/treeset-in-java-with-examples/) ：TreeSet 以 O（Log n）进行搜索，插入和删除，它高于 HashSet。 但是 TreeSet 保留排序的数据。 此外，它支持诸如 high（）（返回最小的更高元素），floor（），ceiling（）等操作。这些操作在 TreeSet 中也是 O（Log n），在 HashSet 中不受支持。 使用自平衡二进制搜索树（[红黑树](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)）实现 TreeSet。 TreeSet 由 Java 中的 TreeMap 支持。
 
 *   **排序**
+
     HashSet 中的元素未排序。 TreeSet 按照 Java 中的 Comparable 或 Comparator 方法定义的排序顺序维护对象。 默认情况下，TreeSet 元素以升序排序。 它提供了多种方法来处理有序集，例如 first（），last（），headSet（），tailSet（）等。
+
 *   **空对象**
+
     HashSet 允许空对象。 TreeSet 不允许使用 null Object 并引发 NullPointerException，为什么，因为 TreeSet 使用 compareTo（）方法比较键，而 compareTo（）会引发 java.lang.NullPointerException。
+
 *   **比较**
+
     HashSet 使用 [equals（）](https://www.geeksforgeeks.org/overriding-equals-method-in-java/)方法比较 Set 中的两个对象并检测重复项。 TreeSet 使用 compareTo（）方法实现相同目的。
+
     如果 equals（）和 compareTo（）不一致，即，对于两个相等的对象，equals 应该返回 true，而 compareTo（）应该返回零，这将打破 Set 接口的协定，并允许在 Set 实现中重复，如 TreeSet
 
 如果要排序的 Set，最好将元素添加到 HashSet，然后将其转换为 TreeSet，而不是创建 TreeSet 并向其中添加元素。

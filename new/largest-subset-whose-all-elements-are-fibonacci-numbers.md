@@ -24,7 +24,9 @@ Output : subset[] = {0, 2, 8, 5, 2, 1,
 以下是基于哈希的**有效解决方案**。
 
 1.  在数组中查找最大值
+
 2.  生成斐波那契数直至最大值，并将其存储在哈希表中。
+
 3.  如果哈希表中存在该数字，则再次遍历数组，然后将其添加到结果中。
 
 ## C++
@@ -234,6 +236,7 @@ class GFG
 ```
 
 **参考**：
+
 [https://www.careercup.com/question?id=5154130839470080](https://www.careercup.com/question?id=5154130839470080)
 
 本文由 **DANISH_RAZA** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

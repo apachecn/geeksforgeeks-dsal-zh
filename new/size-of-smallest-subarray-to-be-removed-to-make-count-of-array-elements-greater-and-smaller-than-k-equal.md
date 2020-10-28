@@ -17,18 +17,23 @@
 **天真的方法**：解决问题的最简单方法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并且[遍历其余数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，以保留严格限制的数组元素的数量 大于和小于整数 **K** 。 然后，选择最小的子数组，该子数组的删除将给出具有相等数量的较小和较大元素的数组。
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（N <sup>2</sup> ）*
 
 **高效方法**：的想法是使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)，并对数组进行一些修改以在 **O（N）**时间内解决该问题。 给定的数组可以具有 3 种类型的元素：
 
 *   **元素= K** ：将元素更改为 0（因为我们需要**严格大于 **K** 或小于 **K** 的元素）**
+
 *   **元素> K** ：将元素更改为 1
+
 *   **元素< K** ：将元素更改为-1
 
 现在，[计算所有数组元素](https://www.geeksforgeeks.org/program-find-sum-elements-given-array/)的总和，并将其存储在变量中，例如 *total_sum* 。 现在，total_sum 可以具有三个可能的值范围：
 
 *   **如果 total_sum = 0** ：所有 1 都被-1 抵消。 因此，已经存在相等数量的 **K** 元素。 不需要删除操作。 因此，**打印 0** 作为所需答案。
+
 *   **如果 total_sum > 0** ：一些 1s 不能取消-1s。 即数组比 **K** 具有更多的大元素，而比 **K** 具有更少的小元素。 因此，找到 **sum = total_sum** 的最小子数组，因为它是要删除的最小子数组。
+
 *   **如果 total_sum < 0**：一些-1s 不能取消 1s。 即数组比 k 具有更多的较小元素，并且比 **K** 具有更少的较大元素。 因此，找到 **sum = total_sum** 的最小子数组，因为它是要删除的最小子数组。
 
 下面是上述方法的实现：
@@ -485,6 +490,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

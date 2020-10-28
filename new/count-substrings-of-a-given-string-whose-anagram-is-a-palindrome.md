@@ -13,14 +13,19 @@
 > **输出**：3
 
 **天真的方法**：的想法是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有子字符串，并为每个子字符串检查其[字谜](http://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/)是否是回文。 不断增加发现上述条件成立的子字符串的数量。 最后，打印所有这些子字符串的计数。
+
 ***时间复杂度**：O（N <sup>3</sup> ）*
+
 ***辅助空间**：O（N）*
 
 [**位掩码**](https://www.geeksforgeeks.org/bit-tricks-competitive-programming/) **方法**：想法是生成 **26 位**数字的掩码，因为 **26** 字符。 另外，请注意，如果某个字符串的字谜是回文，则其字符的[频率必须最多为偶数。
+
 请按照以下步骤解决问题：](https://www.geeksforgeeks.org/print-the-frequency-of-each-character-in-alphabetical-order/)
 
 *   [遍历字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)，并在每个索引处初始化变量 **X = 0** 。
+
 *   从每个 **i <sup>到</sup>** 索引，在索引范围 **[i，N – 1]** 上遍历字符串，并对每个字符 **S [j ]** ，计算 **X** 和 **2 <sup>（S [j] –'a'）</sup>** 的[按位异或](http://www.geeksforgeeks.org/calculate-xor-1-n/)，其中 **0 <sup>第</sup>位**表示 **a 的频率是否为奇数**， **1 <sup>st</sup> 位**表示**的频率 ] b 是奇数**，依此类推。
+
 *   然后，检查 **X &（X – 1）**是否等于 **0** 。 如果发现是真的，则将**计数**递增 **1** 。
 
 > **插图**：
@@ -232,14 +237,19 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（N）*
 
 **高效方法**：为了优化上述[位屏蔽技术](https://www.geeksforgeeks.org/bit-tricks-competitive-programming/)，其想法是使用[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 请按照以下步骤解决问题：
 
 1.  初始化地图以存储模板的频率。 初始化变量 **X = 0** 。
+
 2.  [遍历字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)，对于第 i 个<sup>第</sup>个索引，计算 **X** 和 **2 <sup>的[按位异或](http://www.geeksforgeeks.org/calculate-xor-1-n/)（S [ j] –'a'）</sup>** 并通过在映射中添加 **X** 当前值的频率来更新**答案**，因为如果**中有任何子字符串 0** 至 **j** 具有与 **X** 相同的掩码，这是 **0** 至 **i** 子串的掩码， 那么子字符串 **S [j + 1，i]** 将具有偶数频率，其中 **j < i** 。
+
 3.  还要加上掩码 **X xor 2 <sup>k</sup>** 的频率，其中 **0≤k < 26** 。 之后，将 **X** 的频率增加 **1** 的频率。
+
 4.  对给定字符串的每个索引重复上述步骤。
+
 5.  遍历给定的字符串后，打印所需的**答案**。
 
 下面是上述方法的实现：
@@ -483,6 +493,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

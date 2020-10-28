@@ -15,7 +15,9 @@
 > 删除 1 个出现的字符 只会有一个不会重复的字符。
 
 **天真的方法**：天真的想法是删除给定字符串中所有可能的 **K** 个字符，然后在所有形成的字符串中找到非重复字符。 打印所有非重复字符中的最大值。
+
 ***时间复杂度**：O（N！），其中 N 是给定字符串的长度。*
+
 ***辅助空间**：O（N-K）*
 
 **有效方法**：为了优化上述方法，
@@ -25,9 +27,13 @@
 步骤如下：
 
 1.  创建一个[哈希表](https://www.geeksforgeeks.org/hashing-data-structure/)至[，以存储每个元素](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的频率。
+
 2.  将每个元素的[频率插入向量](https://www.geeksforgeeks.org/program-to-find-frequency-of-each-element-in-a-vector-using-map-in-c/) **V** 和[中，以向量](https://www.geeksforgeeks.org/sorting-a-vector-in-c/)升序对向量 **V** 进行排序。
+
 3.  对于向量 **V** 的每个元素（例如 **currentElement** ），在 **K** 和 **currentElement – 1** 中找到最小值，并同时降低 **K** 和 **V [i]** 两者中的最小值。
+
 4.  重复上述步骤，直到 **K** 不为零。
+
 5.  向量 **V** 中 **1s** 的计数给出了删除 **K** 个字符后的最大非重复字符数。
 
 下面是上述方法的实现：
@@ -395,6 +401,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（26）*
 
 

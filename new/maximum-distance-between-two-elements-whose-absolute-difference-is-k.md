@@ -17,13 +17,17 @@
 **天真的方法**：的想法是一个接一个地选取每个元素（例如 **arr [i]** ），搜索前一个元素**（arr [i] – K）[** 和下一个元素**（arr [i] + K）**。 如果存在两个元素中的任何一个，则找到当前元素与其下一个或上一个元素之间的最大距离。
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（1）*
 
 **高效方法**：为了优化上述方法，其想法是使用[**哈希图**](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 。 步骤如下：
 
 1.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并将第一次出现的索引存储在 HashMap 中。
+
 2.  现在，对于数组 **arr []** 中的每个元素，检查哈希图中是否存在 **arr [i] + K** 和 **arr [i] – K** 或不。
+
 3.  如果存在，则使用 **arr [i]** 更新两个元素之间的距离，并检查下一个元素。
+
 4.  打印完成上述步骤后获得的最大距离。
 
 下面是上述方法的实现：
@@ -330,6 +334,7 @@ public static void Main(String []args)
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

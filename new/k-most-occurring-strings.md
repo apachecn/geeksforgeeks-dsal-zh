@@ -1,6 +1,7 @@
 # K 个出现次数最多的字符串
 
 给定 **N** 个字符串的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 和一个整数 **K** ，任务是打印 **K** 在 **arr []** 中出现次数最多的字符串。 如果两个或两个以上的字符串具有相同的频率，请打印[依词典顺序最小的字符串](https://www.geeksforgeeks.org/lexicographically-smallest-string-obtained-concatenating-array/)。
+
 **注意**：**K** 的值始终小于或等于数组中不同元素的数量。
 
 **示例**：
@@ -25,9 +26,13 @@
 **方法**：
 
 1.  计算数组中每个字符串的频率，并将其存储在 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中，其中字符串是键，而频率是值。
+
 2.  现在，按照**升序**的频率对这些键进行排序，这样做是为了将频率最低的键保持在顶部。
+
 3.  频率相等的字符串按字母顺序优先，即**的字母顺序更高的字符串具有更高的优先级**。
+
 4.  从 HashMap 中删除顶部的 **N – K** 个键值对。 这样，容器将以，**最高频率的 **K 键保持相反的顺序。****
+
 5.  打印存储在 HashMap 中的字符串。
 
 下面是上述方法的实现：
@@ -139,6 +144,7 @@ bus
 ```
 
 **时间复杂度**：*O（N * log <sub>2</sub> N）*
+
 **辅助空间**：*O（N）*
 
 

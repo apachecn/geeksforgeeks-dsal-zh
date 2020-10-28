@@ -1,6 +1,7 @@
 # 检查字符串的任何字谜是否回文
 
 我们给出了一个字谜字符串，我们必须检查它是否可以做成回文。
+
 **示例**：
 
 ```
@@ -17,8 +18,11 @@ given string. For example kgeesseegk
 ```
 
 此问题基本上与[相同。检查给定字符串的字符是否可以重新排列以形成回文](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)。 我们可以使用 count 数组在 O（n）时间内完成此操作。 以下是详细步骤。
+
 1）创建一个字母大小的计数数组，通常为 256。将计数数组的所有值初始化为 0。
+
 2）遍历给定的字符串并递增每个字符的计数。
+
 3）遍历计数数组，如果计数数组有多个奇数，则返回 false。 否则，返回 true。
 
 ## C++
@@ -234,5 +238,6 @@ Yes
 ```
 
 本文由 **Rishabh Jain** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者您​​想分享有关上述主题的更多信息，请发表评论。
 

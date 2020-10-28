@@ -19,27 +19,39 @@
 **天真的方法**：最简单的想法是[生成给定字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，并检查哪个词典上最小的字符串最多满足 **K** 交换的条件。 打印该字符串。
 
 **时间复杂度**：*O（N！），其中 N 是给定字符串的*长度。
+
 **辅助空间**：*O（1）*
 
 **更好的方法**：更好的方法是使用[贪婪方法](https://www.geeksforgeeks.org/greedy-algorithms/)。 步骤如下：
 
 1.  如果给定数字中存在前导零，则将其删除。
+
 2.  当 **K** 较小时，从字符串 str [考虑 **str [k]** 中选择最小的元素，否则 **N** ]。
+
 3.  将所有这些元素右移 1 个位置后，将最小的元素放置在**第 0 个**位置。
+
 4.  在上述步骤中，从 **K** 减去交换的数量。
+
 5.  如果仍然剩下 **K > 0** ，那么我们从下一个起始位置开始应用相同的程序，即 **str [2，…N]，**，然后 将其放置在**第一**位置。
+
 6.  因此，我们继续应用相同的过程，直到 **K 变为 0** 为止。
 
 **时间复杂度**：*O（N <sup>2</sup> ），其中 N 是给定字符串的*长度。
+
 **辅助空间**：*O（1）*
 
 **有效方法**：的想法是使用 [**细分树**](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/) 和 [**散列**](http://www.geeksforgeeks.org/hashing-data-structure/) 。 步骤如下：
 
 1.  如果给定数字中存在前导零，则将其删除。
+
 2.  将数字的原始位置存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，并找到最适合每个移位小于 **K** 的索引的数字。
+
 3.  使用地图查找数字的原始位置。
+
 4.  找到当前位置正对的数字位数，为此，在段树中标记其位置从 **[0…N-1]** 移位。
+
 5.  段树的每个节点都包含已移位的位置数。 现在的任务是查找在 **[current_index，N-1]** 范围内移动了多少个位置，因为这只会影响原始位置。
+
 6.  要移动的新位置将为**（原始位置** **+ number_of_right – element_shifted – i），即**，即元素的原始位置被添加到刚移动的段树中。
 
 下面是上述方法的程序：
@@ -251,6 +263,7 @@ int main()
 ```
 
 ***时间复杂度**：O（N * log N），其中 N 是字符串的长度。*
+
 ***辅助空间**：O（N）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

@@ -19,13 +19,17 @@
 > **输出**：否
 
 [哈希](http://www.geeksforgeeks.org/hashing-data-structure/)方法：有关基于[`Hashmap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)的方法，请参考[先前的文章](https://www.geeksforgeeks.org/check-if-two-given-strings-are-isomorphic-to-each-other/)。
+
 ***时间复杂度**：`O(N)`
+
 **辅助空间**：`O(256)`
 
 [基于 ASCII 值](https://en.wikipedia.org/wiki/ASCII#Character_order)的方法：该想法与上述方法类似。 请按照以下步骤解决问题：
 
 1.  初始化大小为 256 的两个数组。
+
 2.  [遍历给定字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)的字符，并在`i`位置递增等于该字符的 ASCII 值的索引。
+
 3.  如果在字符映射中没有冲突，则打印`Yes`。 否则，打印`No`。
 
 下面是上述方法的实现：
@@ -94,6 +98,7 @@ Yes
 ```
 
 ***时间复杂度**：`O(N)`
+
 **辅助空间**：`O(256)`
 
 

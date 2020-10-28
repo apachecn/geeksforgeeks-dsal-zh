@@ -1,6 +1,7 @@
 # 打印数组 A []中的所有字符串，并将数组 B []中的所有字符串作为子序列
 
 给定两个由字符串组成的数组 **A []** 和 **B []** ，任务是从数组 **A []** 中打印所有字符串都位于 B [ ]作为子序列。
+
 **范例**：
 
 > **输入**：A [] = {“ geeksforgeeks”，“ mapple”，“ twitter”，“ table”，“ Linkedin”}，B [] = {“ e”，“ l”}
@@ -12,25 +13,33 @@
 > **说明**：B []，{“ geek”，“ ee”}中的每个字符串仅出现在“ geeksforgeeks”中。
 
 **天真的方法**：
+
 解决该问题的最简单方法是遍历数组 A []，对于每个字符串，检查数组 B []中的所有字符串是否都以[的形式存在 子序列](https://www.geeksforgeeks.org/given-two-strings-find-first-string-subsequence-second/)与否。
 
 ***时间复杂度**：O（N <sup>2</sup> * L），其中 length 表示数组 A []中字符串的最大长度*
+
 *[ **辅助空间**：O（1）*
 
 **有效方法**：
+
 要优化上述方法，请按照以下步骤操作：
 
 *   初始化矩阵 **A_fre [] []** ，其中 **A_fre [i]** 将每个字符的频率存储在第<sup>个</sup>字符串中。
+
 *   初始化 **B_fre []** ，以将所有字符的频率存储在数组 **B []** 中。
+
 *   Traverse over array **A[]** and for every string, check if a character has more frequency in the strings of array **B[]** than in **i<sup>th</sup>** string in A[], i.e. 
 
     > if A_fre [i] [j] < B_fre[j], where 
+
     > **A_fre [i] [j]** ： **i 中具有 ASCII 值（**'a'+ j** ）的字符的频率 **A []** 中的<sup>字符串</sup>。
+
     > **B_fre [j]** ：B []字符串中具有 ASCII 值（**'a'+ j** ）的字符的频率。**
 
     那么该字符串在 **B []** 中至少有一个字符串，而不是其子序列。
 
 *   如果 **A []** 中的任何字符串的所有字符都不满足上述条件，请将该字符串打印为答案。
+
 *   在检查了 A []中的所有字符串后，如果没有发现将 B []中的所有字符串作为其适当子集的字符串，请打印 **-1** 。
 
 下面是上述方法的实现：
@@ -495,6 +504,7 @@ geeksforgeeks
 ```
 
 ***时间复杂度**：O（N * * L），其中 length 表示数组 A []中字符串的最大长度。*
+
 ***辅助空间**：O（N）*
 
 

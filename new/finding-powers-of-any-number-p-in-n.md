@@ -1,7 +1,9 @@
 # 寻找 N 中任意数量 P 的幂！
 
 前提条件：[打印所有素数及其幂](http://Print all prime factors and their powers)
+
 给定自然数 **N** 和 **P** ，任务是找到 **P [ **N！** 。
+
 **范例****
 
 > **输入**：N = 4，P = 2
@@ -12,13 +14,19 @@
 > **输出**：11
 
 **天真的方法**：这个想法是为从 **1 到 N** 的每个数字找到 **P** 的幂，并在相乘幂时将它们相加。
+
 **时间复杂度**：O（N * P）
+
 **有效方法**：
+
 求 N 中 **P 的幂！** 执行以下操作：
 
 1.  通过使用本文章[中讨论的方法，找到所有 **P** 的](https://www.geeksforgeeks.org/print-all-prime-factors-and-their-powers/)[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)及其频率。 将[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)及其频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
+
 2.  在 **N 的因式分解中找到 **P** 的每个[质因数](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)的幂！** 通过使用本文中讨论的方法。
+
 3.  将上述步骤中获得的每个功率除以[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中的相应频率。
+
 4.  将上述步骤的结果存储在[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)中，这些元素中的最少者将在分解 N！时赋予 **P** 的功效。
 
 下面是上述方法的实现：

@@ -20,16 +20,23 @@
 > **输出**：0 1 2 3 4
 
 **天真的方法**：解决该问题的最简单方法是遍历数组，对于每个数组元素，向左遍历，并将每个元素与当前元素进行比较。 最后，为每个数组元素在其左侧打印更多元素的计数。
+
 ***时间复杂度**：O（N <sup>2</sup> ）
+
 **辅助空间**：O（1）*
 
 **有效方法**：可以使用 [Set](https://www.geeksforgeeks.org/set-in-cpp-stl/) 容器解决此问题，这些容器由 [自平衡二进制搜索树](https://www.geeksforgeeks.org/self-balancing-binary-search-trees-comparisons/) 实现。 请按照以下步骤解决问题。
 
 1.  创建一个空的[设置](https://www.geeksforgeeks.org/set-in-cpp-stl/)， **St** 。
+
 2.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并将每个元素一一插入 **St** 中。
+
 3.  使用 [upper_bound](https://www.geeksforgeeks.org/set-upper_bound-function-in-c-stl/) 函数查找 **arr [i]** 的前一个较大元素。
+
 4.  使用 [distance](https://www.geeksforgeeks.org/stddistance-in-c/) 函数查找集合中的上一个较大元素与最后一个元素之间的距离。
+
 5.  将距离存储在数组 **countLeftGreater []** 中。
+
 6.  打印数组。
 
 下面是上述方法的实现：
@@ -103,7 +110,9 @@ int main()
 ```
 
 ***时间复杂度**：O（N <sup>2</sup> ），因为距离函数取 **O（N）**，但上述实现非常简单，并且比朴素的方法效果更好 一般情况下的算法。
+
 **辅助空间**：O（N）*
+
 **注意**：上述方法适用于唯一元素，但对于重复元素，只需将[替换为](https://www.geeksforgeeks.org/set-in-cpp-stl/) [](https://www.geeksforgeeks.org/set-in-cpp-stl/) [多组。](https://www.geeksforgeeks.org/multiset-in-cpp-stl/)
 
 

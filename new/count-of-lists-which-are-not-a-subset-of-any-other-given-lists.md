@@ -14,11 +14,15 @@
 > **说明：[** 这两个列表都包含相同的字符串集。
 
 **方法**
+
 请按照以下步骤解决问题：
 
 1.  首先，列举所有向量中所有可能的字符串，即为它们分配一个整数。
+
 2.  然后，对所有单个列表使用[位集](https://www.geeksforgeeks.org/c-bitset-and-its-application/)来存储其中存在的字符串。
+
 3.  比较位集。 如果其中一个位集是另一个位集的子集，请忽略该列表。 否则，将该列表的索引插入集合中。
+
 4.  打印集中的所有索引。
 
 下面的代码是上述方法的实现：
@@ -118,6 +122,7 @@ signed main()
 ```
 
 ***时间复杂度**：O（N * M）*
+
 ***辅助空间**：O（N * M）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

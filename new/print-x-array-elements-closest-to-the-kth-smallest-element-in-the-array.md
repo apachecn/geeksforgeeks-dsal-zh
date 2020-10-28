@@ -15,16 +15,23 @@
 > **输出**：1 2 3 4 5
 
 **天真的方法**：解决此问题的最简单方法是[对数组](https://www.geeksforgeeks.org/sorting-algorithms/)排序，并打印 **X** 最接近 **K <sup>th</sup>** 使用[两指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)的给定数组的最小元素。
+
 ***时间复杂度**：O（N * log N）*
+
 ***辅助空间**：O（1）*
 
 **有效方法**：为了优化上述方法，其思想是使用[中值来有效计算给定阵列的 **K <sup>th</sup>** 最小元素的值 选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)。 请按照以下步骤解决问题：
 
 *   使用[中值选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)计算给定数组的最小 Kth，即 **KthElem** 。
+
 *   初始化一个数组，例如说 **diff []** ，以存储 **arr [i]** 和 **KthElem** 的绝对差。
+
 *   创建一个[映射](https://www.geeksforgeeks.org/defaultdict-in-python/)，例如说**映射**以将数组的每个元素映射到当前元素和 **KthElem** 的绝对差。
+
 *   遍历给定数组，并将 **arr [i]** 附加到**映射[abs（KthElem – arr [i]）]** 。
+
 *   使用[中值选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)计算 **X <sup>第</sup>** 个最小元素，例如 **diff []** 数组的 **XthElem** X 个最接近的项目。
+
 *   最后，遍历 **diff []** 数组，并检查 **XthElem** 是否小于或等于 **diff [i]** 。 如果确定为 true，则在**映射**的帮助下打印数组的元素。
 
 下面是上述方法的实现：
@@ -232,6 +239,7 @@ if __name__ == '__main__':
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

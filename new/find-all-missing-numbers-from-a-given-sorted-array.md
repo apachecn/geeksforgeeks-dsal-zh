@@ -18,10 +18,15 @@
 **天真的方法**：天真的想法是遍历连续对元素之间的[差异，并打印该范围内的所有数字（如果差异非零）。 步骤如下：](https://www.geeksforgeeks.org/calculate-the-difference-between-consecutive-pair-of-elements-of-a-vector-in-r-programming-diff-function/)
 
 1.  初始化变量 **diff** ，该变量等于 **arr [0] – 0** 。
+
 2.  现在[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，看看 **arr [i] – i** 与 **diff** 之间的差是否为零。
+
 3.  如果上述步骤中的差不等于零，则找到丢失的元素。
+
 4.  要查找多个丢失的元素，请在其中运行一个循环，然后查看 **diff** 是否小于 **arr [i] – i** ，然后打印缺少的元素，即 **i + diff** 。
+
 5.  现在，随着差值的增加，增加 **diff** 。
+
 6.  从步骤 2 重复，直到找不到所有缺少的数字。
 
 下面是上述方法的实现：
@@ -226,13 +231,17 @@ static void Main()
 ```
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（1）*
 
 **高效方法**：的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)优化上述方法。 创建一个布尔数组（例如 **b []** ），其大小等于数组中的最大元素，并仅标记数组 b []中存在于给定数组中的那些位置。 打印数组 **b []** 中所有未标记的索引。
+
 以下是步骤：
 
 1.  初始化一个布尔数组 **b []** ，其大小为零，等于数组的[最大元素。](https://www.geeksforgeeks.org/c-program-find-largest-element-array/)
+
 2.  [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并为给定数组中的每个元素标记，将索引在数组 **b []** 中设为 true。
+
 3.  现在从索引 **arr [0]** 中遍历给定数组 **b []** 并打印那些值为假的索引，因为它们是给定数组中缺少的元素。
 
 下面是上述方法的实现：
@@ -450,6 +459,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（M），其中 M 是数组的最大元素。*
+
 ***辅助空间**：O（M）*
 
 

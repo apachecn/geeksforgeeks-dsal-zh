@@ -145,14 +145,19 @@ class GFG {
 ```
 
 ***时间复杂度**：O（K * log（N）），其中 N 是给定数组的长度，K 是给定的操作数。*
+
 ***辅助空间**：O（N）*
 
 **有效方法**：的想法是通过[使用](https://www.geeksforgeeks.org/count-frequencies-elements-array-o1-extra-space-time/)[散列](https://www.geeksforgeeks.org/hashing-data-structure/)概念，存储给定数组的每个元素的频率。 请按照以下步骤解决问题：
 
 *   创建大小为 **M +1** 的 **freq []** ，其中 **M** 是给定数组中存在的最大元素，并存储一个变量 **max_sum** **arr []** 每个元素的频率和最大可能和。
+
 *   [从右到左遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/) **freq []** ，即从 **i = M** 到 **0** 。
+
 *   将 **max_sum** 增加 **freq [i] * i** ，将 **K** 减少 **freq [i]** 并增加 **freq [i – 1，如果 **K≥freq [i]** ，则**为 **freq [i]** 。
+
 *   否则将 **max_sum** 递增 **i * K** ，并中断循环，因为 **K** 变为 **0** 。
+
 *   返回 **max_sum** 作为最大可能和。
 
 下面是上述方法的实现：
@@ -231,6 +236,7 @@ class GFG {
 ```
 
 ***时间复杂度**：O（N），其中 N 是给定数组的长度。*
+
 ***辅助空间**：O（N）*
 
 

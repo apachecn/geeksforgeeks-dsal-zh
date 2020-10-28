@@ -1,6 +1,7 @@
 # 如何在数据库中存储密码？
 
 大多数 Web 应用程序要求其用户通过询问用户名和密码来对自己进行身份验证。 他们将用户提供的凭据与存储在其数据库中的数据进行比较，如果凭据匹配，则授予用户访问权限。 听起来不错！ 但是，如果网站存储密码的数据库遭到破坏，将会发生什么？
+
 本文介绍了在数据库中存储密码的各种技术。
 
 根据[裸露安全性](https://nakedsecurity.sophos.com/2013/04/23/users-same-password-most-websites/)，大多数网站中有 55％的网络用户使用相同的密码！ 这意味着，如果以纯文本形式存储您的密码的网站遭到破坏，黑客不仅可以访问该网站上的帐户，还可以访问您使用相同密码的所有社交媒体，电子邮件，论坛等帐户！
@@ -26,7 +27,9 @@
 不要失去希望！ 开发人员仍然可以采取一些措施来防止您的密码被黑客窃取。 加入一些盐使密码更美味！ 是的，对..！ 加入[盐](https://en.wikipedia.org/wiki/Salt_(cryptography))。 盐是随机数据，在将其作为哈希函数的输入发送之前，已与您的密码连接在一起。
 
 **例如**：
+
 如果您的密码是 *abc* ，并且盐是*！ZaP0＃8* ，则**的结果 *hashFunction（'abc！ZaP0＃8'）*** 将存储在数据库中，而不是 ***hashFunction（'abc'）*** 中。
+
 因此，彩虹表攻击现在将不再有效，因为彩虹表包含*'abc！ZaP0＃8'*的哈希值的可能性很小（因为通常彩虹表是由常用词，字典构成的 单词等）。 Salt 不存储在数据库中，而仅存在于外部用户无法访问的应用程序配置文件中。 获得对源文件的访问比获得对数据库的访问困难。
 
 上述盐化方法是静态的。 我们为所有密码设置了一个固定的位数。 要验证用户身份，请先将固定盐连接到用户提供的输入（密码），然后将值传递给哈希函数，然后将其与数据库中存储的值进行比较。 但是，这种方法仍然容易受到暴力攻击，如果攻击者能够获得静态盐，则可以通过将盐串联在每个单词中来使用旧的攻击方法。
@@ -38,6 +41,7 @@
 上面的方法很好地降低了黑客的速度。 但是，建议使用 *bcrypt* 和 *scrypt* 之类的算法代替 MD5 / SHA1。 Bcrypt 是基于 Blowfish 的哈希算法。 它要求您指定成本/工作系数。 工作因子使整个过程变慢，因此生成哈希表所需的时间将增加多次。
 
 **参考**：
+
 [https://nakedsecurity.sophos.com/2013/11/20/serious-security-how-to-store-your-users- 安全密码/](https://nakedsecurity.sophos.com/2013/11/20/serious-security-how-to-store-your-users-passwords-safely/)
 
 本文由 **[Saket Kumar](https://www.facebook.com/saketkumar95)** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

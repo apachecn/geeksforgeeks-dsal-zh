@@ -1,6 +1,7 @@
 # 为每个查询找到映射到给定组合键的值
 
 给定三个数组 **firstkey []** ， **secondkey []** 和 **value []** 其中元素 **firstkey [i]** 和 **secondkey [ i]** 表示组合键，其值为 **value [i]** ，任务是回答 **Q** 个查询，每个查询都有两个元素代表复合键，其对应 值需要打印。
+
 **范例**：
 
 > **输入**：firstkey [] = {4，4，5}
@@ -19,6 +20,7 @@
 > 因此，相应的值为 value [2] = 6
 
 **方法**：的想法是使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，其中映射的键是 C++中两个整数的[对，它们是 python](https://www.geeksforgeeks.org/pair-in-cpp-stl/) 中的两个整数。 表示 **firstkey []** 和 **secondkey []** 的各个元素，它们映射到相应的 **value []** 元素。 这使我们能够在 **O（1）**时间内回答每个查询。
+
 **例如**：
 
 ```

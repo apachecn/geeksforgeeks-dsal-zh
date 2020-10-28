@@ -28,6 +28,7 @@ all the nodes of both the lists.
 ```
 
 在[帖子](https://www.geeksforgeeks.org/union-and-intersection-of-two-linked-lists/)中讨论了三种方法，并实现了方法 1。
+
 在本文中，我们将看到方法 2 的实现，即使用[合并排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)。
 
 ```
@@ -45,11 +46,17 @@ Following are the steps to be followed to get union and intersection lists.
 **算法**：
 
 1.  [使用合并排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)对两个链表进行排序。
+
 2.  线性扫描两个排序列表以获取并集和交集。
+
 3.  对两个链表执行合并操作，保持指向最初指向两个链表第一个节点的指针。
+
 4.  比较两个节点，直到和除非两个指针都不为空。
+
     1.  如果相等，则将其添加到相交列表和并集列表，然后移至两个指针的下一个节点
+
     2.  如果不相等，则将较小的指针值插入联合列表，然后移至下一个节点
+
 5.  如果指针之一为空，则遍历另一个列表及其所有节点以合并列表。
 
 **与方法 1 一样，此方法还假定列表中有不同的元素。**
@@ -286,8 +293,11 @@ Union list is
 **复杂度分析**：
 
 *   **时间复杂度**：O（m Log m + n Log n）。
+
     对列表进行排序所需的时间为 n log n 和 m log m，以及查找并集和交点线性时间。
+
 *   **辅助空间**：O（m + n）。
+
     如果存储了输出，则需要 O（m + n）空间。
 
 在下一篇文章中，将讨论方法 3，即使用散列。

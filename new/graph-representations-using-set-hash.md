@@ -5,9 +5,11 @@
 集合在两个方面不同于向量：它以排序的方式存储元素，并且不允许重复的元素。 因此，该方法不能用于包含平行边的图形。 由于集合在内部实现为二进制搜索树，因此**可以在 O（logV）时间**中搜索两个顶点之间的边，其中 V 是图中顶点的数量。
 
 以下是具有 5 个顶点的无向图和无权图的示例。
+
 ![8](img/1ef79a5320e6115e8c3ada572164793e.png)
 
 以下是使用[集](https://www.geeksforgeeks.org/set-in-cpp-stl/)的数组的该图的邻接表表示。
+
 ![9](img/31ac6919c21cd0a1137f19937ea23758.png)
 
 以下是使用集的无向图的邻接表表示的代码：
@@ -122,9 +124,11 @@ Edge from 0 to 3 not found.
 *缺点*：
 
 *   与矢量实现中的 O（1）相比，添加边需要 O（log V）。
+
 *   包含平行边的图形无法通过此方法实现。
 
 **使用 unordered_set（或散列）的边缘搜索操作的进一步优化**：
+
 可以使用内部使用散列的 [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/) 将边缘搜索操作进一步优化为 O（1）。
 
 ```
@@ -236,11 +240,13 @@ Edge from 0 to 3 not found.
 *优点*：
 
 *   可以在 O（1）中进行查询，例如是否存在从顶点 u 到顶点 v 的边。
+
 *   加边需要 O（1）。
 
 *缺点*：
 
 *   包含平行边的图形无法通过此方法实现。
+
 *   边缘不以任何顺序存储。
 
 **注意**：**[邻接矩阵表示](https://www.geeksforgeeks.org/graph-and-its-representations/)** 对于边缘搜索是最优化的，但是对于大的稀疏图，邻接矩阵的空间要求相对较高。 此外，邻接矩阵还有其他缺点，例如 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 和 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 变得昂贵，因为我们无法快速获取节点的所有相邻节点。

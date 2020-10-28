@@ -15,18 +15,27 @@
 > **输出**：4
 
 **天真的方法**：
+
 解决该问题的最简单方法是[生成给定数组的所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)并检查哪个子数组总和大于或等于 **K** 。 在满足条件的所有此类子阵列中，打印具有最小长度的子阵列。
+
 ***时间复杂度**：O（N <sup>2</sup> ）
+
 **辅助空间**：O（1）*
 
 **有效方法**：
+
 可以使用[前缀和数组](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[二进制搜索](http://www.geeksforgeeks.org/binary-search/)进一步优化上述方法。 请按照以下步骤操作：
 
 *   初始化数组以存储原始数组的**前缀和**。
+
 *   [使用](https://www.geeksforgeeks.org/hashing-data-structure/)[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)将前缀和数组与索引混合在一起。
+
 *   如果已经找到具有较小索引的*较大的和，则没有哈希值小于到目前为止所获得的最大前缀和的前缀和的点。 因此，请对前缀和的*递增顺序*进行哈希处理。*
+
 *   遍历数组，如果有任何元素大于或等于 **K** ，则返回 1 作为答案。
+
 *   否则，对于每个元素，对**前缀和数组**中的索引**（i，n-1）**进行**二进制搜索**，以找到总和为第一个索引 至少 **K** 。
+
 *   返回从上述步骤获得的最小长度子数组。
 
 下面是上述方法的实现：
@@ -151,6 +160,7 @@ int main()
 ```
 
 ***时间复杂度**：*O（NlogN）*
+
 **辅助空间**：*O（N）**
 
 

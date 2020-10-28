@@ -1,6 +1,7 @@
 # 最小子矩阵，XOR 最大为 Kth
 
 给定尺寸为 **N×M** 的[矩阵](https://www.geeksforgeeks.org/matrix/) **m [] []** 和整数 **K** ，计算 **XOR（i， j）对于矩阵的每个索引，它等于从索引**（1，1）到（i，j））**的子矩阵所有元素的[按位 Xor 或](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/) 。 任务是找到具有 **K** <sup>th</sup> 最大 **XOR（i ，j）**值。 如果存在多个此类子矩阵，则打印最小的子矩阵。
+
 ***注意**：考虑（1，1）中矩阵的起始索引。***
 
 **示例**：
@@ -20,8 +21,11 @@
 **方法**：的想法是使用[动态编程](https://www.geeksforgeeks.org/dynamic-programming/)查找 XOR（i，j）。
 
 *   按 xor [i] [j] = xor [i-1] [j] ^ xor [i] [j-1] ^ xor [i-1] [j-1] ^计算按位 XOR（i，j） m [i] [j]。
+
 *   将针对各个索引**（i，j）**获得的 **XOR（i，j）**值存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
+
 *   使用大小为 **K** 的[最小堆](https://www.geeksforgeeks.org/min-heap-in-java/)，找到所有 XOR（i，j）值的第 K <sup>个第</sup>个最大值。
+
 *   查找最小索引**（i，j）**，对于该索引， **XOR（i，j）**等于 **K** <sup>th</sup> 最大值。 以上步骤使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。
 
 下面是上述方法的实现：
@@ -128,6 +132,7 @@ class GFG {
 ```
 
 ***时间复杂度**：O（N * M * log K）*
+
 ***辅助空间**：O（N * M）*
 
 

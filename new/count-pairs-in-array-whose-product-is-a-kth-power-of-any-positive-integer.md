@@ -24,6 +24,7 @@
 **方法**：该问题的关键观察在于以 Z <sup>K</sup> 的形式表示任何数字，然后该数字的素因式分解的幂必须是 K 的倍数。下图是 步骤：
 
 *   Compute the prime factorization of each number of the array and store the prime factors in the form of key-value pair in a hash-map, where the key will be a prime factor of that element and value will be the power raised to that prime factor modulus K, in the prime factorization of that number.
+
     **For Example:**
 
     ```

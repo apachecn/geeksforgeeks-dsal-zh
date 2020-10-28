@@ -1,6 +1,7 @@
 # 最小删除操作，以使数组的所有元素相同
 
 给定 n 个元素的数组，以便元素可以重复。 我们可以从数组中删除任意数量的元素。 任务是找到要从数组中删除的元素的最小数量，以使其相等。
+
 **范例**：
 
 ```
@@ -226,5 +227,6 @@ class GFG {
 **<u>注意：</u>** 在这里，我们可以优化多余的空间以将每个元素的频率计数为 O（1），但是为此，我们必须修改原始数组。 请参阅[此](https://www.geeksforgeeks.org/count-frequencies-elements-array-o1-extra-space-time/)文章。
 
 本文由 [**Shashank Mishra（Gullu）**](https://www.facebook.com/shashank.mishra.92167) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

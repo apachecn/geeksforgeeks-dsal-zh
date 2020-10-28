@@ -1,7 +1,9 @@
 # 一对具有给定总和和最小绝对差的斐波那契数
 
 给定整数 **N** （小于 10 ^ 6），任务是找到一对[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，其总和等于给定的 **N** ， 所选对之间的绝对差最小。
+
 如果没有解决方法，请打印 **-1** 。
+
 **范例**：
 
 > **输入**：N = 199
@@ -14,10 +16,13 @@
 > 1830 可以表示为总和 233 和 1597，其中 具有最小的差异。
 
 **方法**：的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契节点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)直到最大值，以使检查变得容易和高效（在 O（1）中 时间）。
+
 预计算了[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)之后：
 
 1.  从（N / 2）到 1 开始循环（以最小化绝对差），并检查循环计数器“ i”和“ N – i”是否均为斐波那契。
+
 2.  如果它们是斐波那契，那么我们将打印它们并退出循环。
+
 3.  如果数字 **N** 不能表示为两个斐波纳契数之和，则我们将打印-1。
 
 下面是上述方法的实现：

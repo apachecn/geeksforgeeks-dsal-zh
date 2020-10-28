@@ -3,7 +3,9 @@
 给定两个[字符串](https://www.geeksforgeeks.org/string-data-structure/) **str1** 和 **str2** ，任务是对两个字符串之一进行以下三种类型的最小操作数计数 使 **str1** 和 **str2** 彼此置换：
 
 1.  在字符串中插入一个字符。
+
 2.  从字符串中删除一个字符。
+
 3.  用字符串中的另一个字符替换一个字符。
 
 ***注意**：所有上述操作费用相同。*
@@ -34,9 +36,13 @@
 请按照以下步骤解决问题：
 
 1.  初始化两个数组，例如 **freq1 []** 和 **freq2 []** ，以存储 **str1** 和**的所有字符的[频率。 str2](https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/)** 。
+
 2.  [遍历两个字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)，并将两个字符串的每个字符的频率分别存储在数组 **freq1 []** 和 **freq2 []** 中。
+
 3.  [遍历两个数组](https://www.geeksforgeeks.org/iterating-arrays-java/) **freq1 []** 和 **freq2 []** 。
+
 4.  对于第[i] <sup>个字符，如果 **freq1 [i]超过 freq2 [i]** ，则将 **freq1 [i]** 替换为 **freq1 [i] – freq2 [i]** 并设置 **freq2 [i] = 0** ，反之亦然。</sup>
+
 5.  最后，计算数组 **freq1 []** 和 **freq2 []** 的[总和，并打印它们之间的](https://www.geeksforgeeks.org/program-find-sum-elements-given-array/)[最大值](https://www.geeksforgeeks.org/maximum-of-two-numbers-in-python/)作为答案
 
 下面是实现上述方法的方法：
@@ -362,6 +368,7 @@ public static void Main()
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（1）*
 
 

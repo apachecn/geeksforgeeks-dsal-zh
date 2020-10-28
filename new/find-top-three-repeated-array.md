@@ -3,7 +3,9 @@
 中重复的前三名
 
 给定大小为 N 的重复数字数组，您必须找到前三个重复数字。
+
 注意：如果 Number 出现相同的次数，那么我们的输出将是
+
 数组中第一个出现的示例：
 
 > 输入：arr [] = {3，4，2，3，16，3，15，16，15，15，16，2，3}
@@ -16,6 +18,7 @@
 **在**中问： [Zoho](https://www.geeksforgeeks.org/zoho-interview-experience-set-34-off-campus/)
 
 首先，我们必须在哈希表 **freq** 中找到每个元素的频率。 现在我们的任务是[在哈希表中查找前 3 个元素](https://www.geeksforgeeks.org/find-the-largest-three-elements-in-an-array/)，要找到它，我们只使用三个对类型变量（假设 x，y，z），其中第一个存储频率，第二个存储实际数字 。
+
 **算法**
 
 ```
@@ -255,6 +258,7 @@ Three largest elements are 3 15 16
 ```
 
 **时间复杂度**：O（n）
+
 **辅助空间**：O（n）
 
 

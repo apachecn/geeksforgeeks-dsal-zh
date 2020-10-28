@@ -15,10 +15,15 @@
 **方法**：可以使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)解决问题。 想法是[遍历给定字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)的字符，并存储给定字符串的每个不同字符的[频率。 如果给定字符串具有奇数频率的不同字符数小于或等于**（K +1）**，则打印**是**。 否则，打印**否**。 请按照以下步骤解决问题：](https://www.geeksforgeeks.org/print-characters-frequencies-order-occurrence/)
 
 *   初始化[数组](https://www.geeksforgeeks.org/array-data-structure/)，例如说 **cntFreq []** ，以存储 **str** 的每个字符的频率。
+
 *   [遍历给定的字符串](https://www.geeksforgeeks.org/strings-in-c-2/)，并将字符串 **str** 的每个不同字符的[频率存储在 **cntFreq []** 数组中。](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/)
+
 *   初始化一个变量，例如说 **cntOddFreq** ，以存储给定字符串的不同字符的计数，其频率为奇数。
+
 *   [遍历 cntFreq []数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并检查 **cntFreq [i]％2 == 1** ，然后将 **cntOddFreq** 的值增加 **1** 。
+
 *   最后，检查 **cntOddFreq≤（K +1）**，然后打印 **True** 。
+
 *   否则，打印**假**。
 
 下面是上述方法的实现：
@@ -194,6 +199,7 @@ Yes
 ```
 
 ***时间复杂度**：O（N + 256），其中 N 是给定字符串的长度。*
+
 ***辅助空间**：O（256）*
 
 

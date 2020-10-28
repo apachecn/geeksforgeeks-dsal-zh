@@ -59,77 +59,121 @@
 ```cpp
 
 // C++ Program to implement 
+
 // the above approach 
 
 #include <bits/stdc++.h> 
+
 using namespace std; 
 
 // Stores if a pair exists or not 
+
 bool pairFound = false; 
 
 // Struct binary tree node 
+
 struct Node { 
+
     int data; 
+
     Node *left, *right; 
+
 }; 
 
 // Creates a new node 
+
 Node* newNode(int data) 
+
 { 
+
     Node* temp = new Node(); 
+
     temp->data = data; 
+
     temp->left = temp->right = NULL; 
+
     return temp; 
+
 } 
 
 // Function to check if a pair of leaf 
+
 // nodes exists with sum K 
+
 void pairSum(Node* root, int target, 
+
              unordered_set<int>& S) 
+
 { 
+
     // checks if root is NULL 
+
     if (!root) 
+
         return; 
 
     // Checks if the current node is a leaf node 
+
     if (!root->left and !root->right) { 
 
         // Checks for a valid pair of leaf nodes 
+
         if (S.count(target - root->data)) { 
 
             cout << target - root->data << " "
+
                  << root->data; 
 
             pairFound = true; 
+
             return; 
+
         } 
 
         // Insert value of current node 
+
         // into the set 
+
         else
+
             S.insert(root->data); 
+
     } 
 
     // Traverse left and right subtree 
+
     pairSum(root->left, target, S); 
+
     pairSum(root->right, target, S); 
+
 } 
 
 // Driver Code 
+
 int main() 
+
 { 
+
     // Construct binary tree 
+
     Node* root = newNode(1); 
+
     root->left = newNode(2); 
+
     root->left->left = newNode(4); 
+
     root->left->right = newNode(5); 
+
     root->right = newNode(3); 
+
     root->right->left = newNode(6); 
+
     root->right->right = newNode(7); 
 
     root->right->right->right = newNode(8); 
 
     // Stores the leaf nodes 
+
     unordered_set<int> S; 
 
     int K = 13; 
@@ -137,9 +181,11 @@ int main()
     pairSum(root, K, S); 
 
     if (pairFound == false) 
+
         cout << "-1"; 
 
     return 0; 
+
 } 
 
 ```
@@ -149,79 +195,127 @@ int main()
 ```java
 
 // Java program to implement 
+
 // the above approach 
+
 import java.util.*; 
 
 class GFG{ 
 
 // Stores if a pair exists or not 
+
 static boolean pairFound = false; 
 
 // Struct binary tree node 
+
 static class Node  
+
 { 
+
     int data; 
+
     Node left, right; 
+
 }; 
 
 // Creates a new node 
+
 static Node newNode(int data) 
+
 { 
+
     Node temp = new Node(); 
+
     temp.data = data; 
+
     temp.left = temp.right = null; 
+
     return temp; 
+
 } 
 
 // Function to check if a pair of leaf 
+
 // nodes exists with sum K 
+
 static void pairSum(Node root, int target, 
+
                     HashSet<Integer> S) 
+
 { 
 
     // Checks if root is null 
+
     if (root == null) 
+
         return; 
 
     // Checks if the current node is a leaf node 
+
     if (root.left == null && root.right == null) 
+
     { 
 
         // Checks for a valid pair of leaf nodes 
+
         if (S.contains(target - root.data))  
+
         { 
+
             System.out.print(target - root.data +  
+
                                 " " + root.data); 
+
             pairFound = true; 
+
             return; 
+
         } 
 
         // Insert value of current node 
+
         // into the set 
+
         else
+
             S.add(root.data); 
+
     } 
 
     // Traverse left and right subtree 
+
     pairSum(root.left, target, S); 
+
     pairSum(root.right, target, S); 
+
 } 
 
 // Driver Code 
+
 public static void main(String[] args) 
+
 { 
 
     // Construct binary tree  
+
     Node root = newNode(1); 
+
     root.left = newNode(2); 
+
     root.left.left = newNode(4); 
+
     root.left.right = newNode(5); 
+
     root.right = newNode(3); 
+
     root.right.left = newNode(6); 
+
     root.right.right = newNode(7); 
+
     root.right.right.right = newNode(8); 
 
     // Stores the leaf nodes 
+
     HashSet<Integer> S = new HashSet<Integer>(); 
 
     int K = 13; 
@@ -229,8 +323,11 @@ public static void main(String[] args)
     pairSum(root, K, S); 
 
     if (pairFound == false) 
+
         System.out.print("-1"); 
+
 } 
+
 } 
 
 // This code is contributed by 29AjayKumar 
@@ -242,80 +339,129 @@ public static void main(String[] args)
 ```cs
 
 // C# program to implement 
+
 // the above approach 
+
 using System; 
+
 using System.Collections.Generic; 
 
 class GFG{ 
 
 // Stores if a pair exists or not 
+
 static bool pairFound = false; 
 
 // Struct binary tree node 
+
 class Node  
+
 { 
+
     public int data; 
+
     public Node left, right; 
+
 }; 
 
 // Creates a new node 
+
 static Node newNode(int data) 
+
 { 
+
     Node temp = new Node(); 
+
     temp.data = data; 
+
     temp.left = temp.right = null; 
+
     return temp; 
+
 } 
 
 // Function to check if a pair of leaf 
+
 // nodes exists with sum K 
+
 static void pairSum(Node root, int target, 
+
                     HashSet<int> S) 
+
 { 
 
     // Checks if root is null 
+
     if (root == null) 
+
         return; 
 
     // Checks if the current node is a leaf node 
+
     if (root.left == null && root.right == null) 
+
     { 
 
         // Checks for a valid pair of leaf nodes 
+
         if (S.Contains(target - root.data))  
+
         { 
+
             Console.Write(target - root.data +  
+
                              " " + root.data); 
+
             pairFound = true; 
+
             return; 
+
         } 
 
         // Insert value of current node 
+
         // into the set 
+
         else
+
             S.Add(root.data); 
+
     } 
 
     // Traverse left and right subtree 
+
     pairSum(root.left, target, S); 
+
     pairSum(root.right, target, S); 
+
 } 
 
 // Driver Code 
+
 public static void Main(String[] args) 
+
 { 
 
     // Construct binary tree  
+
     Node root = newNode(1); 
+
     root.left = newNode(2); 
+
     root.left.left = newNode(4); 
+
     root.left.right = newNode(5); 
+
     root.right = newNode(3); 
+
     root.right.left = newNode(6); 
+
     root.right.right = newNode(7); 
+
     root.right.right.right = newNode(8); 
 
     // Stores the leaf nodes 
+
     HashSet<int> S = new HashSet<int>(); 
 
     int K = 13; 
@@ -323,8 +469,11 @@ public static void Main(String[] args)
     pairSum(root, K, S); 
 
     if (pairFound == false) 
+
         Console.Write("-1"); 
+
 } 
+
 } 
 
 // This code is contributed by 29AjayKumar 
@@ -334,11 +483,13 @@ public static void Main(String[] args)
 **Output:** 
 
 ```
+
 5 8
 
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

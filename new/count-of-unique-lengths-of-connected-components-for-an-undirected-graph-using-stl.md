@@ -7,6 +7,7 @@
 ![](img/04b31f134d4b95d9099a2af641344cf3.png)
 
 如上所述，与连接的组件关联的计数（连接的组件的大小）为 2、3 和 2。现在，组件的**唯一**计数为 2 和 3。因此，预期结果 是**计数= 2**
+
 **示例**：
 
 ```
@@ -38,12 +39,17 @@ Output: 1 Count = 1
 ```
 
 **先决条件**：[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
+
 **方法**：
+
 基本思想是利用深度优先搜索遍历方法来跟踪连接的对象 无向图中的组件。 STL 容器[集](http://www.geeksforgeeks.org/set-in-cpp-stl/)用于存储所有此类组件的唯一计数，因为已知集合具有以排序方式存储唯一元素的属性。 最后，提取 Set 的大小将为我们提供必要的结果。 分步实现如下：
 
 1.  初始化一个哈希容器（Set），以存储所连接组件的唯一计数。
+
 2.  递归调用深度优先搜索遍历。
+
 3.  对于访问的每个顶点，将计数存储在设置的容器中。
+
 4.  Set 的最终大小是必需的结果。
 
 下面是上述方法的实现：
@@ -482,7 +488,9 @@ Unique Counts of connected components: 2
 ```
 
 **时间复杂度**：
+
 从上述实现中可以明显看出，使用深度优先搜索算法遍历了图形。 使用 Set 容器存储单个计数，其中插入操作花费 O（1）时间。 总体复杂度仅基于 DFS 算法递归运行所花费的时间。 因此，程序的时间复杂度为 **O（E + V）**，其中 E 是边的数量，V 是图形的顶点数量。
+
 **辅助空间**：*O（N）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

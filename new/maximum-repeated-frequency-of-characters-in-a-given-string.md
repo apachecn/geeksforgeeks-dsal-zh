@@ -23,6 +23,7 @@
 **有效方法**：
 
 *   这个想法是首先将字符串的字符频率存储在大小为 26 的数组中。由于字符串的所有字符都在 26 个小写英文字母之间，因此我们可以将字符的频率存储在大小为 26 的数组中。
+
 *   创建一个哈希图，以存储字符的频率计数并返回出现次数最多的频率。
 
 下面是上述方法的实现：
@@ -283,6 +284,7 @@ Frequency 2 is repeated 3 times
 **效果分析**：
 
 *   **时间复杂度**：O（N）
+
 *   **辅助空间**：O（N）
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

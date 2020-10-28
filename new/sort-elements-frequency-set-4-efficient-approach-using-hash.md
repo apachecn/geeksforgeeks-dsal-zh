@@ -1,6 +1,7 @@
 # 按频率对元素进行排序| 第 4 组（使用哈希的有效方法）
 
 如果 2 个数字具有相同的频率，则以递减的频率打印数组的元素，然后打印第一个出现的频率。
+
 **示例**：[
 
 ```
@@ -13,14 +14,21 @@ Output : arr[] = {8, 8, 8, 2, 2, 5, 5, 6, -1, 9999999}
 ```
 
 我们在以下帖子中讨论了不同的方法：
+
 [按频率对元素进行排序| 设置 1](https://www.geeksforgeeks.org/sort-elements-by-frequency/)
+
 [按频率对元素进行排序| 集 2](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-2/)
+
 [按频率对数组元素进行排序| 集合 3（使用 STL）](http://Sorting Array Elements By Frequency | Set 3 (Using STL))
+
 以上所有方法均在 O（n Log n）时间内工作，其中 n 是元素总数。 在这篇文章中，讨论了一种在 **O（n + m Log m）**时间中工作的新方法，其中 n 是元素总数，m 是不同元素总数。
+
 这个想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)。
 
 1.  我们将所有元素及其计数插入哈希中。 此步骤花费 O（n）时间，其中 n 是元素数。
+
 2.  我们将哈希的内容复制到数组（或向量）中，并按计数对其进行排序。 此步骤花费 O（m Log m）时间，其中 m 是不同元素的总数。
+
 3.  为了在频率相同的情况下保持元素的顺序，我们使用另一个散列，该散列的键为数组的元素，而值为索引。 如果两个元素的频率相同，则根据索引对元素进行排序。
 
 下图是上述方法的模拟：
@@ -112,6 +120,8 @@ int main()
 ```
 
 时间复杂度：O（n）+ O（m Log m）其中，n 是元素总数，m 是不同元素的总数。
+
 本文由贡献。 ]和**被** [**Ankur Goel**](https://auth.geeksforgeeks.org/user/AnkurGoel) 改进。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者您​​想分享有关上述主题的更多信息，请发表评论。
 

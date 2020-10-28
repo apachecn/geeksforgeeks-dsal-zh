@@ -19,7 +19,9 @@
 **方法**：的想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)存储每个数组元素最后一次出现的索引。 请按照以下步骤解决问题：
 
 1.  初始化一个数组，说 **hash []** 到[存储每个数组元素](https://www.geeksforgeeks.org/print-the-last-occurrence-of-elements-in-array-in-relative-order/)的最后一次出现的索引。
+
 2.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并检查当前子数组的所有先前元素的最后一次出现的最大索引是否小于或等于当前索引，然后将**计数**加 1 。
+
 3.  最后，打印 **count** 的值。
 
 下面是上述方法的实现：
@@ -268,6 +270,7 @@ public static void Main(String[] args)
 ```
 
 **时间复杂度**：O（N）
+
 **辅助空间**：O（X）其中 X 是给定数组中的最大元素。
 
 

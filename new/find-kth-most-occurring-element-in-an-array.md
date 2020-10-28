@@ -3,6 +3,7 @@
 中第 K 个最常出现的元素
 
 给定大小为 **N** 的整数 **arr []** 和数字 **K** 的数组，任务是找到第个 **K <sup>]</sup>** 此数组中最常出现的元素。
+
 **注意**：如果数组中有多个具有相同频率的数字，则认为这两个数字的发生级别相同。 因此，请同时打印两个数字。
 
 **示例**：
@@ -25,8 +26,11 @@
 **方法**：这个想法是使用两个[字典数据结构](https://www.geeksforgeeks.org/python-dictionary/)来存储元素的所有频率。
 
 *   [迭代给定数组](https://www.geeksforgeeks.org/iterating-arrays-java/)。
+
 *   [查找所有元素的频率](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)并将其存储在字典中，以便键是数字，值是频率。
+
 *   初始化另一个字典，以将键存储为频率，并将值存储为具有该频率的所有元素。
+
 *   最后，由于对字典进行了排序，因此在字典中[M-K] 位置找到数组，其中 M 是数组中唯一元素的数量。
 
 下面是上述方法的实现：

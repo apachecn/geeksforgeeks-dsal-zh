@@ -17,6 +17,7 @@ Output : 9
 ```
 
 **来源**：[高盛面试集 46](https://www.geeksforgeeks.org/goldman-sachs-interview-experience-set-46-experienced/)
+
 的想法是从 l 到 r 循环运行，以生成范围内的所有数字，并将每个此类数字 n 转换为 q，即使用 [to_string（）](https://www.geeksforgeeks.org/stdto_string-in-cpp/)方法对字符串进行 n * q，然后使用基本字符串哈希检查 string2 中是否存在 string2 中的任何字符。
 
 下面是上述方法的实现：

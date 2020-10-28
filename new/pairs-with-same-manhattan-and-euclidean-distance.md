@@ -3,6 +3,7 @@
 在给定的笛卡尔平面中，有 N 个点。 任务是找到点对数（A，B）使得
 
 *   点 A 和点 B 不重合。
+
 *   点之间的曼哈顿距离和欧几里得距离应相等。
 
 **注意**：2 点对（A，B）被认为与 2 点对（B，A）相同。
@@ -35,13 +36,19 @@
 我们得到 **x2 = x1 或 y2 = y1。**
 
 考虑 3 个映射，
+
 1）映射 X，其中 X [x <sub>i</sub> ]存储其 x 坐标等于 x <sub>i</sub>
+
 的点的数量 2）映射 Y，其中 Y [y <sub>i</sub> ]存储其 y 坐标等于 y <sub>i</sub>
+
 的点数 3）映射 XY，其中 XY [（X <sub>i</sub> ，Y <sub>i</sub> ）]存储与点重合的点数（x <sub>i</sub> y <sub>i</sub> ）
 
 现在，对于所有不同的 x <sub>i，
+
 令 Xans 为具有相同 X 坐标的对数= <sup>X [x <sub>i</sub> ]</sup> <sub>2</sub></sub> =
+
 设 Yans 为具有相同 Y 坐标的对数= <sup>Y [x <sub>i</sub> ]</sup> <sub>2</sub> 对于所有不同的 y <sub>i</sub>
+
 令 XYans 为重合点数= <sup>XY [{x <sub>i</sub> ，y <sub>i</sub> }]</sup> <sub>2</sub> 用于所有不同点（x <sub>i</sub> ，y <sub>i</sub> ）
 
 因此，所需答案= **Xans + Yans – XYans**
@@ -225,6 +232,7 @@ if __name__ == "__main__":
 ```
 
 **时间复杂度**：O（NlogN），其中 N 是点数
+
 **空间复杂度**：O（N）
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

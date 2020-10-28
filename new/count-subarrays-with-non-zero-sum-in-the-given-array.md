@@ -3,6 +3,7 @@
 中对总和非零的子数组进行计数
 
 给定大小为 N 的**数组 arr []** ，任务是计算给定数组 arr []的子数组的总数，该子数组具有非零和。
+
 **范例**：
 
 > **输入**：arr [] = {-2，2，-3}
@@ -15,6 +16,7 @@
 > 给定数组{1，3，-2，4，-1}有 15 个子数组，它们的总和不为零。
 
 **方法**：
+
 解决上述问题的主要思想是使用[前缀和数组](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[映射数据结构](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。
 
 *   首先，构建给定数组的**前缀和数组**，并使用以下公式检查子数组是否具有 0 个元素和。
@@ -23,6 +25,7 @@
 > ，则 Prefix [R] – Prefix [L – 1] =0。因此，Prefix [R] = Prefix [L – 1]。
 
 *   现在，从 1 迭代到 N，并保留一个**哈希表**，用于存储元素的上一次出现的索引和一个变量，假设*位于最后一个*，并将其初始化为 0。
+
 *   检查 Prefix [i]是否已存在于哈希中。 如果是，则最后更新为 **last = max（last，hash [Prefix [i]] + 1）**。 否则，在答案中添加 **i –最后一个**并更新哈希表。
 
 下面是上述方法的实现：

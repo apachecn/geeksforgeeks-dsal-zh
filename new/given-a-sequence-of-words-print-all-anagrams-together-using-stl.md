@@ -3,6 +3,7 @@
 将所有字谜一起打印
 
 给定一组单词，将所有字谜一起打印。
+
 **例如，**
 
 ```
@@ -21,12 +22,15 @@ Explanation: There are no anagrams in the array.
 这些帖子将在此处讨论其他方法：
 
 *   [一起给单词顺序打印所有字谜](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
+
 *   [给定单词顺序，将所有字母组合在一起打印集 2](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-set-2/)
 
 **<u>方法：</u>** 这是使用 C++标准模板库的 HashMap 解决方案，该库存储键值对。 在哈希图中，键将是字符的排序集合，值将是输出字符串。 当两个字谜的字符排序时，它们将相似。 现在
 
 1.  将矢量元素存储在 HashMap 中，其中 key 为已排序的字符串。
+
 2.  如果键相同，则将字符串添加到 HashMap（字符串向量）的值中。
+
 3.  遍历 HashMap 并打印字谜字符串。
 
 ## CPP
@@ -124,6 +128,7 @@ int main()
 ```
 
 ***注意**：使用 g ++中的-std = C++ 11 标志编译以上程序*
+
 **输出**：
 
 ```
@@ -136,10 +141,14 @@ geeksquiz zuiqkeegs
 **复杂度分析**：，
 
 *   **时间复杂度**：O（n * m（log m）），其中 m 是单词的长度。
+
     需要对数组进行一次遍历。
+
 *   **空间复杂度**：O（n）。
+
     字符串中有 n 个单词。 该映射需要 O（n）空间来存储字符串。
 
 本文由 [**Mandeep Singh**](https://github.com/msdeep14) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

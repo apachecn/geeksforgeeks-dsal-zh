@@ -34,74 +34,113 @@
 ```cpp
 
 // C++ implementation of the approach 
+
 #include<bits/stdc++.h> 
+
 using namespace std; 
 
 // freqMap is to map element to its frequency 
+
 map<int, int> freqMap; 
 
 // setMap is to map frequency to the 
+
 // element list with this frequency 
+
 map<int, stack<int> > setMap; 
 
 // Variable which stores maximum frequency 
+
 // of the stack element 
+
 int maxfreq = 0; 
 
 // Function to insert x in the stack 
+
 void push(int x) 
+
 { 
 
     // Frequency of x 
+
     int freq = freqMap[x] + 1; 
 
     // Mapping of x with its frequency 
+
     freqMap[x]= freq; 
 
     // Update maxfreq variable 
+
     if (freq > maxfreq) 
+
         maxfreq = freq; 
 
     // Map element to its frequency list 
+
     // If given frequency list doesn't exist 
+
     // make a new list of the required frequency 
+
     setMap[freq].push(x); 
+
 } 
 
 // Function to remove maximum frequency element 
+
 int pop() 
+
 { 
 
     // Remove element from setMap 
+
     // from maximum frequency list 
+
     int top = setMap[maxfreq].top(); 
+
     setMap[maxfreq].pop(); 
 
     // Decrement the frequency of the popped element 
+
     freqMap[top]--; 
 
     // If whole list is poppped 
+
     // then decrement the maxfreq 
+
     if (setMap[maxfreq].size() == 0) 
+
         maxfreq--; 
+
     return top; 
+
 } 
 
 // Driver code 
+
 int main() 
+
 { 
 
     // Push elements to the stack 
+
     push(4); 
+
     push(6); 
+
     push(7); 
+
     push(6); 
+
     push(8); 
 
     // Pop elements 
+
     cout << (pop()) << "\n" ; 
+
     cout << (pop()); 
+
     return 0; 
+
 } 
 
 // This code is contributed by Arnab Kundu 
@@ -113,74 +152,111 @@ int main()
 ```java
 
 // Java implementation of the approach 
+
 import java.util.*; 
 
 public class freqStack { 
 
     // freqMap is to map element to its frequency 
+
     static Map<Integer, Integer> freqMap = new HashMap<>(); 
 
     // setMap is to map frequency to the 
+
     // element list with this frequency 
+
     static Map<Integer, Stack<Integer> > setMap = new HashMap<>(); 
 
     // Variable which stores maximum frequency 
+
     // of the stack element 
+
     static int maxfreq = 0; 
 
     // Function to insert x in the stack 
+
     public static void push(int x) 
+
     { 
 
         // Frequency of x 
+
         int freq = freqMap.getOrDefault(x, 0) + 1; 
 
         // Mapping of x with its frequency 
+
         freqMap.put(x, freq); 
 
         // Update maxfreq variable 
+
         if (freq > maxfreq) 
+
             maxfreq = freq; 
 
         // Map element to its frequency list 
+
         // If given frequency list doesn't exist 
+
         // make a new list of the required frequency 
+
         setMap.computeIfAbsent(freq, z -> new Stack()).push(x); 
+
     } 
 
     // Function to remove maximum frequency element 
+
     public static int pop() 
+
     { 
 
         // Remove element from setMap 
+
         // from maximum frequency list 
+
         int top = setMap.get(maxfreq).pop(); 
 
         // Decrement the frequency of the popped element 
+
         freqMap.put(top, freqMap.get(top) - 1); 
 
         // If whole list is poppped 
+
         // then decrement the maxfreq 
+
         if (setMap.get(maxfreq).size() == 0) 
+
             maxfreq--; 
+
         return top; 
+
     } 
 
     // Driver code 
+
     public static void main(String[] args) 
+
     { 
 
         // Push elements to the stack 
+
         push(4); 
+
         push(6); 
+
         push(7); 
+
         push(6); 
+
         push(8); 
 
         // Pop elements 
+
         System.out.println(pop()); 
+
         System.out.println(pop()); 
+
     } 
+
 } 
 
 ```
@@ -192,73 +268,107 @@ public class freqStack {
 # Python3 implementation of the approach  
 
 # freqMap is to map element to its frequency  
+
 freqMap = {};  
 
 # setMap is to map frequency to the  
+
 # element list with this frequency  
+
 setMap = {};  
 
 # Variable which stores maximum frequency  
+
 # of the stack element  
+
 maxfreq = 0;  
 
 # Function to insert x in the stack  
+
 def push(x) : 
+
     global maxfreq; 
+
     if x not in freqMap : 
+
         freqMap[x] = 0
 
     # Frequency of x 
+
     freq = freqMap[x] + 1; 
 
     # Mapping of x with its Frequency 
+
     freqMap[x]= freq 
 
     # Update maxfreq Variable 
+
     if (freq > maxfreq) : 
+
         maxfreq = freq 
 
     # Map element to its frequency list 
+
     # If given frequency list doesn't exist 
+
     # make a new list of the required frequency 
+
     if freq not in setMap : 
+
         setMap[freq] = [] 
 
     setMap[freq].append(x);  
 
 # Function to remove maximum frequency element  
+
 def pop() : 
 
     global maxfreq 
 
     # Remove element from setMap 
+
     # from maximum frequency list 
+
     top = setMap[maxfreq][-1]; 
+
     setMap[maxfreq].pop(); 
 
     # Decrement the frequency 
+
     # of the popped element 
+
     freqMap[top] -= 1; 
 
     # If whole list is poppped 
+
     # then decrement the maxfreq 
+
     if (len(setMap[maxfreq]) == 0) : 
+
         maxfreq -= 1; 
 
     return top;  
 
 # Driver code  
+
 if __name__ == "__main__" :  
 
     # Push elements to the stack  
+
     push(4);  
+
     push(6);  
+
     push(7);  
+
     push(6);  
+
     push(8);  
 
     # Pop elements  
+
     print(pop()) ;  
+
     print(pop());  
 
 # This code is contributed by AnkitRai01  
@@ -268,7 +378,9 @@ if __name__ == "__main__" : 
 **Output:**
 
 ```
+
 6
+
 8
 
 ```

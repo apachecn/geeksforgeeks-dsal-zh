@@ -27,14 +27,19 @@ Deletion time   | log(n) + Rebalance  | Same as search
 **设置为**时使用
 
 *   我们需要有序的数据。
+
 *   我们将不得不打印/访问数据（按排序顺序）。
+
 *   我们需要元素的前任/后继。
+
 *   由于 set 是有序的，因此我们可以在 set 元素上使用 [binary_search（），lower_bound（）和 upper_bound（）](https://www.geeksforgeeks.org/binary-search-functions-in-c-stl-binary_search-lower_bound-and-upper_bound/)之类的函数。 这些函数不能在 unordered_set（）上使用。
+
 *   有关更多情况，请参见 BST 相对于哈希表 e 的[优势。](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/)
 
 **当**时使用 unordered_set
 
 *   我们需要保留一组不同的元素，并且不需要排序。
+
 *   我们需要单元素访问，即无遍历。
 
 例子：
@@ -109,6 +114,7 @@ Elements of unordered_set:
 ```
 
 ***集合中的前任/后继者*** ：
+
 可以修改集合以查找前任或后继者，而 Unordered_set 不允许查找前任/后继者。
 
 ```

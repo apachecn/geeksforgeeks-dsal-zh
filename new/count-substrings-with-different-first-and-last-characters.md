@@ -269,16 +269,23 @@ public static void Main(string[] args)
 ```
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（1）*
 
 **高效方法**：可以使用[通过](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/)[映射](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/)来优化上述方法，以存储字符串字符的频率。 请按照以下步骤解决问题：
 
 1.  初始化**两个**变量，一个用于为每次迭代计数不同的字符（例如 **cur** ），另一个用于存储子字符串的最终计数（例如 **an** ）。
+
 2.  初始化映射 **M** 以在其中存储所有字符的频率。
+
 3.  [遍历给定的字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)，对于每个字符，请按照以下步骤操作：
+
     *   迭代映射 **M** 。
+
     *   如果地图的第一个元素（即**键**）与当前字符不同，则继续操作。
+
     *   否则，添加与当前字符对应的值。
+
 4.  遍历**映射**后，将 **cur** 添加到最终结果，即 **ans + = cur** 。
 
 下面是上述方法的实现：
@@ -536,6 +543,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N * 26）*
+
 ***辅助空间**：O（N）*
 
 

@@ -21,9 +21,13 @@ Output: 2 2 2 2 1 1 3 3 4 4 5 6 7
 ```
 
 以下帖子中讨论了不同的方法：
+
 [按频率对元素进行排序| 设置 1](https://www.geeksforgeeks.org/sort-elements-by-frequency/)
+
 [按频率对元素进行排序| Set 2](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-2/)
+
 [按频率对数组元素进行排序| 集合 3（使用 STL）](https://www.geeksforgeeks.org/sorting-array-elements-frequency-set-3-using-stl/)
+
 [按频率对元素进行排序| 第 4 组（使用哈希的有效方法）](https://www.geeksforgeeks.org/sort-elements-frequency-set-4-efficient-approach-using-hash/)
 
 **方法**：
@@ -35,8 +39,11 @@ Output: 2 2 2 2 1 1 3 3 4 4 5 6 7
 **在以下程序中**：
 
 *   在地图中获取元素及其计数
+
 *   通过使用比较器接口，比较给定列表中元素的频率。
+
 *   使用此比较器可以通过实现 [Collections.sort（）](https://www.geeksforgeeks.org/collections-sort-java-examples/)方法对列表进行排序。
+
 *   打印排序列表。
 
 **程序**：

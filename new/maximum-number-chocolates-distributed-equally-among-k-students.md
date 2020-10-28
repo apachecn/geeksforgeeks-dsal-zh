@@ -24,13 +24,17 @@ with indexes {1, 2, 3, 4}.
 **方法 2（有效方法）**：创建数组 **sum []** ，其中 **sum [i]** 存储 **sum（arr [0] + .. arr [i]）**。 创建一个具有作为**（ele，idx）**的元组的哈希表，其中 ele 表示**（sum [i]％k）**的元素，而 **idx** 表示元素的 从左到右遍历数组 **sum []** 时第一次出现的索引。 现在，从[i] 0 遍历 **sum []** 到 n，然后执行以下步骤。
 
 1.  计算当前余数为 **curr_rem** = sum [i]％k。
+
 2.  如果 curr_rem == 0，则检查 maxSum < sum[i], update **maxSum** = sum [i]。
+
 3.  否则，如果哈希表中没有 **curr_rem** ，则在哈希表中创建元组**（curr_rem，i）**。
+
 4.  否则，获取与哈希表中的 **curr_rem** 相关的值。 使其为 **idx** 。 现在，如果 maxSum <（sum [i] – sum [idx]），则更新 **maxSum** = sum [i] – sum [idx]。
 
 最后，返回**（maxSum / k）**。
 
 **解释**：
+
 如果（sum [i]％k）==（sum [j]％k），其中 sum [i] = sum（arr [0] + .. + arr [i ]）和 sum [j] = sum（arr [0] + .. + arr [j]）且'i'小于'j'，则 sum（arr [i + 1] + .. + arr [j ]）必须被'k'整除。
 
 ## C++
@@ -340,6 +344,7 @@ Maximum number of chocolates: 6
 ```
 
 **时间复杂度**：O（n）。
+
 **辅助空间**：O（n）。
 
 

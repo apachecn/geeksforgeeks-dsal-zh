@@ -20,7 +20,9 @@ Dist(n1, n2) = Level[n1] + Level[n2] - 2*Level[lca]
 此问题可以分解为：
 
 1.  查找每个节点的级别
+
 2.  寻找二叉树的欧拉之旅
+
 3.  为 LCA 建立稀疏表。
 
 这些步骤说明如下：
@@ -736,6 +738,7 @@ Dist(8, 5) = 5
 ```
 
 **时间复杂度**：O（1）
+
 **空间复杂度**：O（N log N）
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

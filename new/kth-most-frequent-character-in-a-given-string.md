@@ -20,6 +20,7 @@
 **方法**
 
 *   这个想法是在 [Hashmap](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 中使用字符作为键，并将它们的[出现存储在字符串](https://www.geeksforgeeks.org/program-count-occurrence-given-character-string/)中。
+
 *   [对哈希图](https://www.geeksforgeeks.org/sorting-hashmap-according-key-value-java/)排序并找到第 K 个字符。
 
 下面是上述方法的实现。
@@ -91,6 +92,7 @@ r
 ```
 
 **时间复杂度**：*O（NlogN）*请注意，这是时间复杂度的上限。 如果我们认为字母大小为常数（例如小写英文字母大小为 26），则可以说时间复杂度为 O（N）。 矢量大小永远不会超过字母大小。
+
 **辅助空间**：*O（N）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

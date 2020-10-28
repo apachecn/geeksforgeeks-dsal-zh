@@ -7,6 +7,7 @@
 **方法**：制作矢量的数组，以获得每个哈希索引的动态（可调整大小）数组，而不是[，使用链接列表执行相同的](https://www.geeksforgeeks.org/c-program-hashing-chaining/)。 现在，无需使用链表就可以更轻松地处理数据集。 这个简单的技巧更容易实现，效率更高。 在这种方法中：
 
 1.  哈希的大小由类的构造函数初始化。
+
 2.  The elements are inserted in the Hash according to the expression:
 
     ```
@@ -25,14 +26,23 @@
     **<u>算法：</u>** 该方法的算法如下：
 
     1.  初始化向量的大小（例如 **n** ）。
+
     2.  添加元素时，请执行以下步骤：
+
         1.  获得 x =” [value] MOD **n** ”的值。
+
         2.  在 v [x]中推回该元素的值。
+
     3.  对于删除，我们按照以下步骤操作：
+
         1.  获得 x =” [value] MOD **n** ”的值。
+
         2.  扫描要在 v [x]中删除的元素。
+
         3.  如果找到，请使用 [delete（）](https://www.geeksforgeeks.org/vector-erase-and-clear-in-cpp/)方法删除该元素。
+
         4.  如果找不到要删除的元素，则打印“找不到元素！”。
+
     4.  打印哈希。
 
     **<u>实现</u>**
@@ -171,8 +181,11 @@
     **使用此方法的优势**：
 
     1.  我们不需要像访问链接列表那样遍历条目。
+
     2.  简化代码调试。
+
     3.  由于传统方法具有标记具有较小逻辑错误的分段错误的机会，因此更易于实现。
+
     4.  在数据上应用 STL 方法的强大功能在竞争性编程中提供了优势。
 
     注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

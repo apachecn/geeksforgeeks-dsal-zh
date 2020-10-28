@@ -21,14 +21,19 @@
 **朴素方法**：朴素方法是[从阵列中从左到右生成所有子阵列](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并检查这些子阵列中的任何一个是否具有负和。 如果是，则打印该子数组的开始和结束索引。
 
 ***时间复杂度**：O（N <sup>2</sup> ）
+
 **辅助空间**：O（1）*
 
 **有效方法**：的想法是使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)解决问题。 步骤如下：
 
 1.  计算数组的 **[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)** 并将其存储到 **[HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)** 中。
+
 2.  遍历数组，对于第 i 个<sup>索引（其中 i 的范围为 **[0，N – 1]** ），检查第 i 个<sup>索引</sup>的元素是否为 否定的。 如果是这样，则 arr [i]是必需的子数组。</sup>
+
 3.  否则，找到一个从 i +1 开始的索引，其中前缀和小于前缀和，直到 **i** 。
+
 4.  如果在上述步骤中找到任何这样的**索引**，则来自索引 **{i，index}** 的子数组将给出第一个负子数组。
+
 5.  如果找不到这样的子数组，则打印**“ -1”** 。 否则，打印获得的子数组。
 
 下面是上述方法的实现：
@@ -163,6 +168,7 @@ int main()
 ```
 
 **时间复杂度**：*O（N * log N）*
+
 **辅助空间**：*O（N）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

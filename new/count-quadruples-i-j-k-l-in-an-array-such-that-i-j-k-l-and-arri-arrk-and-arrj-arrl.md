@@ -18,14 +18,19 @@
 **天真的方法**：最简单的方法是生成所有可能的四倍体，并检查给定条件是否成立。 如果发现是真的，则增加最终计数。 打印获得的最终计数。
 
 ***时间复杂度**：O（N <sup>4</sup> ）*
+
 ***辅助空间**：O（1）*
 
 **高效方法**：为了优化上述方法，其思想是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。 步骤如下：
 
 1.  对于每个索引 **j** 重复查找一对索引**（j，l）**，使得 **arr [j] = arr [l]** 和 **j < l** 。
+
 2.  使用[哈希表](https://www.geeksforgeeks.org/hash-table-vs-stl-map/)保留索引 **[0，j – 1]** 中存在的所有数组元素的[频率计数。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
+
 3.  在遍历索引 **j** 到 **l** 时，只需将 **j** 和 **l** 之间的每个元素的频率相加即可。
+
 4.  对每个这样可能的索引对**（j，l）**重复此过程。
+
 5.  完成上述步骤后，打印四倍的总数。
 
 下面是上述方法的实现：
@@ -308,6 +313,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（N）*
 
 

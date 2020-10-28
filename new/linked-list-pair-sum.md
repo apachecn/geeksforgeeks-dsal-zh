@@ -16,6 +16,7 @@ Output : NO PAIR EXIST
 ```
 
 **方法（蛮力）**
+
 反复检查它们是否存在一对
 
 ## C++
@@ -373,8 +374,11 @@ public static void Main(String[] args)
 时间复杂度：O（n * n）
 
 **方法 2（使用散列）**
+
 1.取一个散列表并将所有元素标记为零
+
 2.迭代地将散列表中存在于链表
+
 中的所有元素标记为 1。 。迭代查找链表的 sum-current 元素是否存在于哈希表中
 
 ## C++
@@ -650,6 +654,7 @@ public static void Main(String[] args) 
 ```
 
 时间复杂度：O（n）
+
 辅助空间：O（n）
 
 

@@ -24,13 +24,17 @@
 **天真的方法**：天真的方法是查找每个元素的等级为 **1 +** [**数组**](https://www.geeksforgeeks.org/count-smaller-equal-elements-sorted-array/) 中较小元素的数量 当前元素。
 
  ***时间复杂度**：O（N <sup>2</sup> ）
+
 ***辅助空间**：O（1）*
 
 **高效方法**：要优化上述幼稚方法，请找到元素的等级，然后将等级分配给元素。 步骤如下：
 
 1.  要计算元素的等级，请首先制作给定 **arr []** 的副本，然后以升序对复制的数组进行排序。
+
 2.  然后遍历复制的数组，并通过获取等级变量将其等级放入 **HashMap** 中。
+
 3.  如果元素已经存在于 HashMap 中，则不要更新等级，否则更新[，HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中元素的等级以及递增等级变量。
+
 4.  遍历给定数组 **arr []** ，使用存储在 HashMap 中的等级分配每个元素的等级。
 
 下面是上述方法的实现：
@@ -315,6 +319,7 @@ public static void Main(string[] args) 
 ```
 
 **时间复杂度**：*O（N * log N）*
+
 **辅助空间**：*O（N）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

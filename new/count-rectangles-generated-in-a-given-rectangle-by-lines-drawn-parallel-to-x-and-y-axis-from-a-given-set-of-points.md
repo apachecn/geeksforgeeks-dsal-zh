@@ -40,65 +40,99 @@
 ```cpp
 
 // C++ program to implement
+
 // the above approach
 
 #include <bits/stdc++.h>
+
 using namespace std;
 
 // Function to get the count 
+
 // of ractangles 
+
 int cntRect(int points[][2], int N,
+
              int rectangle[][2])
+
 {
+
     // Store distinct
+
     // horizontal lines
+
     unordered_set<int> cntHor;   
 
     // Store distinct
+
     // Vertical lines
+
     unordered_set<int> cntVer;   
 
     // Insert horizontal line
+
     // passing through 0
+
     cntHor.insert(0);
 
     // Insert vertical line
+
     // passing through 0.
+
     cntVer.insert(0);
 
     // Insert horizontal line
+
     // passing through rectangle[3][0]
+
     cntHor.insert(rectangle[3][0]);
 
     // Insert vertical line
+
     // passing through rectangle[3][1]
+
     cntVer.insert(rectangle[3][1]);
 
     // Insert all horizontal and 
+
     // vertical lines passing through
+
     // the given array
+
     for (int i = 0; i < N; i++) {
 
         // Insert all horizontal lines
+
         cntHor.insert(points[i][0]);
 
         // Insert all vertical lines
+
         cntVer.insert(points[i][1]);
+
     }
 
     return (cntHor.size() - 1) * 
+
               (cntVer.size() - 1);
+
 }
 
 // Driver Code
+
 int main()
+
 {
+
     int rectangle[][2] = {{0, 0}, {0, 5},
+
                           {5, 0}, {5, 5}};
+
     int points[][2] = {{1, 2}, {3, 4}};
 
     int N = sizeof(points) / sizeof(points[0]);
+
     cout<<cntRect(points, N, rectangle);
+
 }
 
 ```
@@ -108,70 +142,107 @@ int main()
 ```java
 
 // Java program to implement
+
 // the above approach
+
 import java.io.*;
+
 import java.util.*;
 
 class GFG{
 
 // Function to get the count
+
 // of ractangles
+
 public static int cntRect(int points[][], int N,
+
                           int rectangle[][])
+
 {
 
     // Store distinct
+
     // horizontal lines
+
     HashSet<Integer> cntHor = new HashSet<>();
 
     // Store distinct
+
     // Vertical lines
+
     HashSet<Integer> cntVer = new HashSet<>();
 
     // Insert horizontal line
+
     // passing through 0
+
     cntHor.add(0);
 
     // Insert vertical line
+
     // passing through 0.
+
     cntVer.add(0);
 
     // Insert horizontal line
+
     // passing through rectangle[3][0]
+
     cntHor.add(rectangle[3][0]);
 
     // Insert vertical line
+
     // passing through rectangle[3][1]
+
     cntVer.add(rectangle[3][1]);
 
     // Insert all horizontal and
+
     // vertical lines passing through
+
     // the given array
+
     for(int i = 0; i < N; i++)
+
     {
 
         // Insert all horizontal lines
+
         cntHor.add(points[i][0]);
 
         // Insert all vertical lines
+
         cntVer.add(points[i][1]);
+
     }
+
     return (cntHor.size() - 1) *
+
            (cntVer.size() - 1);
+
 }
 
 // Driver Code
+
 public static void main(String args[])
+
 {
+
     int rectangle[][] = { { 0, 0 }, { 0, 5 },
+
                           { 5, 0 }, { 5, 5 } };
+
     int points[][] = { { 1, 2 }, { 3, 4 } };
 
     int N = points.length;
 
     System.out.println(cntRect(points, N, 
+
                                rectangle));
+
 }
+
 }
 
 // This code is contributed by hemanth gadarla
@@ -183,58 +254,85 @@ public static void main(String args[])
 ```py
 
 # Python3 program to implement
+
 # the above approach
 
 # Function to get the count 
+
 # of ractangles 
+
 def cntRect(points, N,
+
             rectangle):
 
     # Store distinct
+
     # horizontal lines
+
     cntHor = set([])  
 
     # Store distinct
+
     # Vertical lines
+
     cntVer = set([])
 
     # Insert horizontal line
+
     # passing through 0
+
     cntHor.add(0)
 
     # Insert vertical line
+
     # passing through 0.
+
     cntVer.add(0)
 
     # Insert horizontal line
+
     # passing through rectangle[3][0]
+
     cntHor.add(rectangle[3][0])
 
     # Insert vertical line
+
     # passing through rectangle[3][1]
+
     cntVer.add(rectangle[3][1])
 
     # Insert all horizontal and 
+
     # vertical lines passing through
+
     # the given array
+
     for i in range (N):
 
         # Insert all horizontal lines
+
         cntHor.add(points[i][0])
 
         # Insert all vertical lines
+
         cntVer.add(points[i][1])
 
     return ((len(cntHor) - 1) *
+
             (len(cntVer) - 1))
 
 # Driver Code
+
 if __name__ == "__main__":
 
     rectangle = [[0, 0], [0, 5],
+
                  [5, 0], [5, 5]]
+
     points = [[1, 2], [3, 4]]    
+
     N = len(points)
+
     print (cntRect(points, N, rectangle))
 
 # This code is contributed by Chitranayal
@@ -246,65 +344,107 @@ if __name__ == "__main__":
 ```cs
 
 // C# program to implement
+
 // the above approach
+
 using System;
+
 using System.Collections.Generic;
+
 class GFG{
 
 // Function to get the count
+
 // of ractangles
+
 public static int cntRect(int [,]points, 
+
                           int N, int [,]rectangle)
+
 {
+
   // Store distinct
+
   // horizontal lines
+
   HashSet<int> cntHor = new HashSet<int>();
 
   // Store distinct
+
   // Vertical lines
+
   HashSet<int> cntVer = new HashSet<int>();
 
   // Insert horizontal line
+
   // passing through 0
+
   cntHor.Add(0);
 
   // Insert vertical line
+
   // passing through 0.
+
   cntVer.Add(0);
 
   // Insert horizontal line
+
   // passing through rectangle[3,0]
+
   cntHor.Add(rectangle[3, 0]);
 
   // Insert vertical line
+
   // passing through rectangle[3,1]
+
   cntVer.Add(rectangle[3, 1]);
 
   // Insert all horizontal and
+
   // vertical lines passing through
+
   // the given array
+
   for(int i = 0; i < N; i++)
+
   {
+
     // Insert all horizontal lines
+
     cntHor.Add(points[i, 0]);
 
     // Insert all vertical lines
+
     cntVer.Add(points[i, 1]);
+
   }
+
   return (cntHor.Count - 1) *
+
          (cntVer.Count - 1);
+
 }
 
 // Driver Code
+
 public static void Main(String []args)
+
 {
+
   int [,]rectangle = {{0, 0}, {0, 5},
+
                       {5, 0}, {5, 5}};
+
   int [,]points = {{1, 2}, {3, 4}};
+
   int N = points.GetLength(0);
+
   Console.WriteLine(cntRect(points, N, 
+
                             rectangle));
+
 }
+
 }
 
 // This code is contributed by 29AjayKumar
@@ -314,11 +454,13 @@ public static void Main(String []args)
 **Output:** 
 
 ```
+
 9
 
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

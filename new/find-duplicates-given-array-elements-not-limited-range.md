@@ -1,6 +1,7 @@
 # 当元素不限于范围时，查找给定数组中的重复项
 
 给定 n 个整数数组。 任务是在给定数组中打印重复项。 如果没有重复，则打印-1。
+
 **范例**：
 
 ```
@@ -97,6 +98,7 @@ public class GFG {
 ```
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（N）*
 
 **有效方法**：使用 [unordered_map](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 进行哈希处理。 打印每个元素的出现频率和频率大于 1 的元素。 **unordered_map** 因为整数范围未知而被使用。 对于 Python，使用字典将数字存储为键，将频率存储为值。 字典可以用作整数范围是未知的。
@@ -304,14 +306,20 @@ class GFG
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 **相关文章**：
+
 [打印给定整数数组的所有不同元素](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)
+
 [查找 O（n）时间和 O（1）多余空间中的重复项| 设置 1](https://www.geeksforgeeks.org/find-duplicates-in-on-time-and-constant-extra-space/)
+
 [在 O（n）中的数组中重复并通过使用 O（1）多余空间| Set-2](https://www.geeksforgeeks.org/duplicates-array-using-o1-extra-space-set-2/)
+
 [打印输入字符串](https://www.geeksforgeeks.org/print-all-the-duplicates-in-the-input-string/)中的所有重复项
 
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者您​​想分享有关上述主题的更多信息，请发表评论。
 

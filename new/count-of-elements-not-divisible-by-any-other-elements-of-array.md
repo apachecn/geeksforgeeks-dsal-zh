@@ -3,6 +3,7 @@
 的任何其他元素不能除的元素数
 
 给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是确定数组元素的数量，该数量不能被给定数组中的任何其他元素整除。
+
 **范例**：
 
 > **输入**：arr [] = {86，45，18，4，8，28，19，33，2}
@@ -260,14 +261,19 @@ public static void Main(String[] args)
 ```
 
 **时间复杂度**：*O（N <sup>2</sup> ）*。
+
 **辅助空间**：*O（1）*
 
 **有效方法**：为优化上述方法，我们将使用[硅酮筛网](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)的概念。 步骤如下：
 
 1.  初始化一个布尔数组（例如 **v []** ），其大小等于数组中存在的最大元素+ 1，并且每个索引的**为**。
+
 2.  遍历给定数组 **arr []** ，并将当前元素的多个索引处的值更改为数组 **v []** 中的 **false** 。
+
 3.  创建一个[哈希图](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)，并在其中存储每个元素的频率。
+
 4.  对于数组中的每个元素（例如 **current_element** ），如果 **v [current_element]** 为 true，则该元素不能被给定数组中的任何其他元素整除，并增加该数组的计数 当前元素。
+
 5.  完成上述步骤后，打印**计数**的最终值。
 
 下面是上述方法的实现：
@@ -467,6 +473,7 @@ public static void main(String[] args)
 ```
 
 **时间复杂度**：*O（N * log（M））*其中 N 是给定数组中元素的数量，M 是给定数组中的最大元素。
+
 **辅助空间**：*O（M + N）*其中 N 是给定数组中元素的数量，M 是给定数组中的最大元素。
 
 

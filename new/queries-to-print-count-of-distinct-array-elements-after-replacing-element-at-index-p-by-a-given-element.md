@@ -173,14 +173,19 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（Q * N）*
+
 ***辅助空间**：O（N）*
 
 **高效方法**：为了优化上述方法，其思想是将每个数组元素的[频率存储在](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，然后遍历每个查询并打印大小 每次更新后的地图。 请按照以下步骤解决问题：
 
 *   [将每个元素](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) **M** 中。
+
 *   对于每个查询 **{p，x}** ，执行以下步骤：
+
     *   在 **Map M** 中将 **arr [p]** 的频率降低 **1** 的频率。 如果其频率降低到 **0** ，请从 **Map 中删除该元素。**
+
     *   更新 **arr [p] = x** ，并在**映射**中将 **x** 的频率增加 **1** 。 否则，在**映射**中添加元素 **x** ，将其频率设置为 **1** 。
+
 *   对于上述步骤中的每个查询，将**映射**的大小打印为不同数组元素的[计数。](https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/)
 
 下面是上述方法的实现：
@@ -298,6 +303,7 @@ class GFG {
 ```
 
 ***时间复杂度**：O（N + Q）*
+
 ***辅助空间**：O（N）*
 
 

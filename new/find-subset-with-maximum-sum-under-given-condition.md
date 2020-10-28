@@ -28,7 +28,9 @@ Output: 29
 **方法**：的想法是使用 [Multimap](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/) 和 [Hashmap](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 解决此问题。
 
 *   我们将所有值和相应的标签成对存储在 Multimap 中。
+
 *   在 Multimap 中，{values，labels}对按升序排序。 因此，我们将反向遍历 Multimap 以获得降序对。
+
 *   现在，我们将在答案中添加值，并将每个标签的出现次数存储在 Hashmap 中，以检查出现次数是否小于或等于限制。
 
 下面是上述方法的实现：

@@ -18,15 +18,21 @@
 **天真的方法**：最简单的方法是[遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/) **arr []** ，对于每个元素， **arr [i]** 进行检查 如果列表中存在任何数组，则该数组是否从 **arr [i]** 开始。 如果发现为真，则增加 **i** ，同时发现数组中存在的元素等于 **arr [i]** 。 如果它们不相等，则打印**否**。 重复上述步骤，直到 **i < N** 为止。 遍历给定数组的元素后，打印**是**。
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（N）*
 
 **高效方法**：这个想法是通过使用 [Map 存储给定数组 **arr []** 中存在的元素的索引来使用](https://www.geeksforgeeks.org/map-interface-java-examples/)[散列](http://www.geeksforgeeks.org/hashing-data-structure/)的概念 数据结构。 请按照以下步骤解决问题：
 
 1.  创建一个 [**映射**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) ，以存储给定数组 **arr []** 的元素的索引。
+
 2.  [遍历列表中存在的每个数组](https://www.geeksforgeeks.org/iterating-arrays-java/)，对于每个数组，请执行以下步骤：
+
     *   从**映射**中找到数组 **arr []** 中其第一个元素的索引。
+
     *   检查获取的数组是否为数组 **arr []** 的子数组，或者是否不是从之前找到的索引开始。
+
 3.  如果子数组与找到的数组不相等，则打印**否**。
+
 4.  否则，在[遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)之后，打印**是**。
 
 下面是上述方法的实现：
@@ -470,6 +476,7 @@ Yes
 ```
 
 ***时间复杂度**：O（N * log N）其中 N 是给定数组的长度。*
+
 ***辅助空间**：O（N）*
 
 

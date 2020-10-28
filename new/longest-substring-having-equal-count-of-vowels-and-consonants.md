@@ -11,7 +11,9 @@
 > 子字符串“ wertyuio”由 4 个元音组成 和 4 个辅音
 
 **天真的方法**：最简单的解决方案是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有子字符串，并针对每个子字符串检查元音和辅音的数量是否相等。 最后，打印获得的具有相等数量的元音和辅音的子串的最大长度。
+
 ***时间复杂度**：O（N <sup>3</sup> ）*
+
 ***辅助空间**：O（1）*
 
 **有效方法**：的想法是考虑一个长度等于给定字符串长度的数组，分别存储与元音和辅音对应的 **1** 和 **-1** 使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 打印最长[子数组的长度，其总和等于 0](https://www.geeksforgeeks.org/find-subarray-with-given-sum-in-array-of-integers/) 。
@@ -330,6 +332,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（NlogN）*
+
 ***辅助空间**：O（N）*
 
 

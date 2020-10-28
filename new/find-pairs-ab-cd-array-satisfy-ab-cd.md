@@ -298,6 +298,7 @@ class GFG 
 **时间复杂度**：O（n <sup>2</sup> ）假设哈希搜索和插入操作花费 O（1）时间。
 
 **相关文章**：
+
 [在数组中找到四个元素 a，b，c 和 d，使得 a + b = c + d](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
 
 本文由 [DANISH_RAZA](https://www.facebook.com/danish.raza.98096721) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

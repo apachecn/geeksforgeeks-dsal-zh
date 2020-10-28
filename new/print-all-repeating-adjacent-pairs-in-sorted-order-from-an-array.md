@@ -24,8 +24,11 @@
 **方法**：最简单的方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并将每个相邻对存储在 [Map](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 中。 打印频率大于 **1** 的所有此类对。 请按照以下步骤解决问题：
 
 1.  创建一个映射 **M** 以将所有相邻对存储在数组中。
+
 2.  [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并将每个相邻对存储在 Map **M** 中。
+
 3.  完成上述步骤后，[遍历图](https://www.geeksforgeeks.org/traversing-a-map-or-unordered_map-in-cpp-stl/)，如果任意一对频率至少为一个，则将其插入向量 **V** 中。
+
 4.  [以升序](https://www.geeksforgeeks.org/sorting-a-vector-in-c/)对向量 **v** 进行排序，并打印存储在其中的所有对。
 
 下面是上述方法的实现：
@@ -118,6 +121,7 @@ int main()
 ```
 
 ***时间复杂度**：O（N * log N）*
+
 ***辅助空间**：O（N）*
 
 

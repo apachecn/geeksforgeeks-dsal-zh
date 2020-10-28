@@ -17,17 +17,27 @@
 > **说明**：HTG22]唯一有效的三元组是（A [0]，A [1]，A [2]）=（1、1、1）。
 
 **天真的方法**：
+
 解决该问题的最简单方法是生成所有可能的三元组，并为每个三元组检查是否满足所需条件。 如果发现是真的，则增加三胞胎的**计数**。 在完成数组遍历并生成所有可能的三元组之后，打印最终的**计数**。
+
 ***时间复杂度**：O（N <sup>3</sup> ）*
+
 ***辅助空间**：O（1）*
+
 **有效方法**：
+
 可以使用[两个指针](https://www.geeksforgeeks.org/two-pointers-technique/)和 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 优化上述方法。
+
 请按照以下步骤解决问题：
 
 *   初始化[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)以存储阵列元素的频率。
+
 *   反向迭代数组，即使用 **[N – 2、1]** 范围内的变量 **j** 循环。
+
 *   对于每个 **j** ，增加图中的 **A [j + 1]** 的数量。 使用变量 **i** 迭代 **[0，j – 1]** 范围，并检查**中是否存在 **A [i] * A [j]** ]是否映射**。
+
 *   如果在地图中找到 **A [i] * A [j]** ，则按照地图中存储的 **A [i] * A [j]** 的频率增加三元组的数量 。
+
 *   遍历数组后，打印最终的**计数**。
 
 下面是上述方法的实现：
@@ -268,6 +278,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（N）*
 
 

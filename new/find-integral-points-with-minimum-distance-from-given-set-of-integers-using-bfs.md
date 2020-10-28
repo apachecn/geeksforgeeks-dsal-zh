@@ -27,7 +27,9 @@
 **方法**：我们将使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)的概念来解决此问题。
 
 1.  我们首先将给定的整数集作为根元素，并将其推送到[队列](http://www.geeksforgeeks.org/queue-data-structure/)和[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)中。
+
 2.  然后对于任何说 X 的元素，我们将仅使用哈希图检查是否遇到（X-1）或（X + 1）。 如果到目前为止还没有遇到任何问题，那么我们将该元素推送到答案数组中，并同时进行队列和哈希处理。
+
 3.  重复此过程，直到遇到 K 个新元素。
 
 下面是上述方法的实现。

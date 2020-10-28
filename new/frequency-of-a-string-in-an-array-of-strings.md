@@ -1,6 +1,7 @@
 # 字符串数组中字符串的频率
 
 您会得到一个字符串集合和一个查询列表。 对于每个查询，都有一个字符串。 我们需要打印给定字符串在字符串集合中出现的次数。
+
 **范例**：
 
 ```
@@ -238,6 +239,7 @@ answerQueries($arr, $q);
 #### **方法 2（使用 Trie）**
 
 [Trie](https://www.geeksforgeeks.org/trie-insert-and-search/) 一种有效的数据结构，用于增强和检索类似字符串的数据。 搜索复杂度是最佳的密钥长度。
+
 在此解决方案中，我们将字符串集合插入到 Trie 数据结构中，以便将它们存储在其中。 一件重要的事情是，我们要统计叶节点中的出现次数。 然后，在 Trie 中搜索给定的查询字符串，并检查 Trie 中是否存在该字符串。
 
 ## CPP
@@ -346,7 +348,10 @@ int main()
 #### **方法 3（哈希）**
 
 我们可以使用[哈希图](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)并将所有给定的字符串插入其中。 对于每个查询字符串，我们只需要在哈希图中进行查找即可。
+
 请参考[字典的数据结构](https://www.geeksforgeeks.org/data-structure-dictionary-spell-checker/)，以比较基于哈希和基于 Trie 的解决方案。
+
 本文由 **Pranav** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，您还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想共享有关上述主题的更多信息，请发表评论。
 

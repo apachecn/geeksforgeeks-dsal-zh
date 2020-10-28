@@ -23,9 +23,13 @@
 **方法**：
 
 *   初始化[哈希图](https://www.geeksforgeeks.org/hashing-data-structure/)以存储字符的频率。
+
 *   遍历字符串，并增加哈希图中字符的频率。
+
 *   查找字符串中出现的最小字符，以及出现频率最小的此类字符的计数。
+
 *   初始化另一个哈希图，以存储可能的前缀字符串的字符的频率。
+
 *   最后，从头开始遍历字符串，并增加字符计数，直到任何字符的频率不大于最小频率的计数。
 
 下面是上述方法的实现：
@@ -207,6 +211,7 @@ aabcd
 **效果分析**：
 
 *   **时间复杂度**：在上述方法中，有一个循环来查找字符串中每个字符的频率，在最坏的情况下需要 O（N）时间。 因此，该方法的时间复杂度将为 **O（N）**。
+
 *   **空间复杂度**：在上述方法中，有多余的空间用于存储字符的频率。 因此，上述方法的空间复杂度将为 **O（N）**
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

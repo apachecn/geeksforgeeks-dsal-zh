@@ -16,6 +16,7 @@
 **方法**：可以看出，方程**（arr [i] + arr [j]）*（arr [i] – arr [j]）= 0** 可简化为 **arr [i] <sup>2</sup> = arr [j] <sup>2</sup>** 。 因此，任务减少到对具有[绝对值](https://www.geeksforgeeks.org/abs-labs-llabs-functions-cc/)相等的对进行计数。 请按照以下步骤解决问题：
 
 *   初始化数组 **hash []** ，以存储每个数组元素的绝对值的频率。
+
 *   通过为每个数组不同的绝对值相加**（hash [x] *（hash [x] – 1））/ 2 2** ，计算对数。
 
 下面是上述方法的实现：
@@ -246,6 +247,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

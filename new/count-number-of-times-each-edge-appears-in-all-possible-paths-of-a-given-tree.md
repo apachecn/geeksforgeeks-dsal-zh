@@ -25,7 +25,9 @@
 > 边缘 4 出现在路径{（1、5），（2、5），（3、5），（4、5）}中。 因此，边缘的频率为 4
 
 **天真的方法**：最简单的方法是从给定图的每个节点生成所有可能的路径，并通过 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 存储在这些路径中出现的边数。 最后，打印每个边的频率。
+
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（N）*
 
 **有效方法**：为了优化上述方法，需要进行以下观察：
@@ -38,8 +40,11 @@
 请按照以下步骤解决问题：
 
 *   将树根在任意随机顶点处，例如 1。
+
 *   在根目录下执行 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 。 使用 DFS 计算连接到边缘的子树大小。
+
 *   连接到子树的每个边的频率为**（子树大小）*（N –子树大小）**。
+
 *   将上面为每个节点计算的值存储在 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中。 最后，完成树的遍历后，遍历 **HashMap** 以打印结果。
 
 下面是上述方法的实现：
@@ -454,6 +459,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

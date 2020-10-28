@@ -141,7 +141,9 @@ GfG 3
 ```
 
 **<u>方法 3 –使用[多重映射](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/)</u>**
+
 多重映射类似于映射，不同之处在于多个元素可以具有相同的键。 在这种情况下，键值和映射值对必须是唯一的，而不是每个元素都是唯一的。
+
 的想法是使用原始地图的值作为多地图中的键，并将原始地图的键值作为多地图中的值，将给定地图中的所有对插入多地图中。
 
 下面是上述方法的实现：

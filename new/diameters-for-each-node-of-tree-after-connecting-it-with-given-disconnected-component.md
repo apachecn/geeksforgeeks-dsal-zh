@@ -41,8 +41,11 @@
 请根据以下观察结果，按照以下步骤解决问题：
 
 1.  执行给定树的 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 遍历。
+
 2.  遍历时，请记录所经过的最远距离和最远的节点。
+
 3.  现在，从通过上述步骤获得的最远节点执行 **DFS** ，并跟踪距该节点最远的节点。
+
 4.  现在，执行 **DFS** ，并继续在 [Map](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 中添加节点，这些节点距离通过上述步骤获得的两个节点最远。
 
 下面是上述方法的实现：
@@ -551,6 +554,7 @@ class GFG {
 ```
 
 ***时间复杂度**：O（V + E）*，其中 V 是图中的顶点数，E 是图中的边数。
+
 ***辅助空间**：O（V）*
 
 

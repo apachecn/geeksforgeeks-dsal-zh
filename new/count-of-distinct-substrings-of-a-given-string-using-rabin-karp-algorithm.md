@@ -22,6 +22,7 @@ Total number of distinct substring are 10 - "a", "ab", "abc", "abcd", "b", "bc",
 **前提条件**：[用于模式搜索的 Rabin-Karp 算法](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/)
 
 计算当前字符的当前哈希值，并将
+
 存储在字典/映射中，以避免重复。
 
 要按照 Rabin-Karp 算法计算哈希值（滚动哈希值），请执行以下操作：
@@ -31,9 +32,13 @@ Rabin 和 Karp 建议的哈希函数计算一个整数值。 字符串的整数�
 *hash（txt [s + 1 .. s + m]）=（d（hash（txt [s .. s + m-1]-txt [s] * h）+ txt [s + m] ）mod q*
 
 *hash（txt [s .. s + m-1]）*：移位 *s* 时的哈希值。
+
 *hash（txt [s + 1 .. s + m]）*：下一个移位（或移位 *s* +1）
+
 *d* ：字母中的字符数
+
 *q* ：质数
+
 *h：d ^（m-1）*
 
 当我们评估数学表达式时，这个想法是相似的。 例如，我们有一个字符串“ 1234”，我们计算出子字符串“ 12”的值是 12，我们想计算出子字符串“ 123”的值，可以计算为（（12）* 10 + 3 ）= 123，此处应用类似的逻辑。

@@ -1,6 +1,7 @@
 # 具有完全 K 个完美平方数的子数组的计数
 
 给定未排序的整数数组 **arr []** 和整数 **K** 。 任务是使用正整数 K [完美平方数](https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/)来计数子数组的数量。
+
 **范例**：
 
 > **输入**：arr [] = {2，4，9，3}，K = 2
@@ -17,14 +18,19 @@
 > **输出**：0
 
 **简单方法**：
+
 如果计数等于 K，则生成所有子数组并计算给定子数组中的完美数数量，并增加 ans 变量的数量。
+
 ***时间复杂度**：O（N <sup>2</sup> ）*
 
 **有效方法**：
 
 1.  遍历给定的数组 arr []并检查元素是否为[完美正方形](https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/)。
+
 2.  如果当前元素是 Perfect Square，则将该索引处的 array 值更改为 1，否则将该索引处的值更改为 0。
+
 3.  现在，给定的数组将转换为二进制数组。
+
 4.  现在，使用本文[中讨论的方法，在上述二进制数组中找到总和等于 K 的子数组的计数。](https://www.geeksforgeeks.org/number-subarrays-sum-exactly-equal-k/)
 
 下面是上述方法的实现。
@@ -476,6 +482,7 @@ public static void Main(string[] args)
 ```
 
 ***时间复杂度**：O（N）
+
 **空间复杂度**：O（N）*
 
 

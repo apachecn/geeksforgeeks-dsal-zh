@@ -23,8 +23,11 @@
 **高效方法**：将 [unordered_map](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 用于散列，因为范围未知。 脚步：
 
 1.  从左到右遍历数组元素。
+
 2.  遍历时，它们在哈希表中的计数增加。
+
 3.  再次从左到右遍历数组，并检查哪个元素的计数等于 k。 打印该元素并停止。
+
 4.  如果没有元素的计数等于 k，则打印-1。
 
 以下是上述方法的模拟：

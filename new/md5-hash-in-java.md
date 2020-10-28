@@ -5,8 +5,11 @@
 要在 Java 中计算加密哈希值，请使用 **MessageDigest** 类，位于包 java.security 下。
 
 MessageDigest 类提供以下加密哈希函数来查找文本的哈希值，它们是：
+
 1\. MD5
+
 2\. SHA-1
+
 3\. SHA-256
 
 该算法在名为 **getInstance（）**的静态方法中初始化。 选择算法后，它将计算**摘要**值，并以字节数组返回结果。

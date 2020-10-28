@@ -15,13 +15,17 @@
 **天真的方法**：解决问题的最简单方法是[从给定数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)生成所有子数组，并使用 [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) 检查它是否包含任何重复项。 查找满足条件的最长子数组。
 
  ***时间复杂度**：O（N <sup>3</sup> logN）
+
 ***辅助空间**：O（N）*
 
 **有效方法**：可以使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 优化上述方法。 请按照以下步骤解决问题：
 
 1.  初始化变量 **j** ，以存储索引的最大值，以使索引 **i 和 j** 之间没有重复的元素
+
 2.  遍历数组，并根据存储在 HashMap 中的 a [i []的先前出现，继续更新 **j** 。
+
 3.  在更新 **j** 之后，相应地更新**和**以存储所需子阵列的最大长度。
+
 4.  遍历完成后，打印**和**。
 
 下面是上述方法的实现：
@@ -238,6 +242,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（NlogN）*
+
 ***辅助空间**：O（N）*
 
 

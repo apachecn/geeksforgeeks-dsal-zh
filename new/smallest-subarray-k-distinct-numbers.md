@@ -1,6 +1,7 @@
 # 具有 k 个不同数字的最小子数组
 
 给定一个由 n 个整数和一个整数 k 组成的数组。 我们需要在数组[l，r]中找到最小范围（l 和 r 都包括在内），以便恰好有 k 个不同的数字。
+
 **示例**：
 
 ```
@@ -302,6 +303,7 @@ public static void Main(string[] args)
 ```
 
 **时间复杂度**：O（n <sup>2</sup> ）
+
 **通过上述简单解决方案的优化**。 我们的想法是在找到 k 个不同的元素后删除左侧的重复项。
 
 ## C++
@@ -706,6 +708,8 @@ public static void Main(String[] args)
 ```
 
 该解决方案的时间复杂度为 O（n）。 在每个嵌套迭代中，我们要么添加一个元素，要么删除一个元素。 每个元素最多只能插入和删除一次。
+
 本文由 [**Pawan Asipu**](https://www.facebook.com/pawan.asipu.5) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

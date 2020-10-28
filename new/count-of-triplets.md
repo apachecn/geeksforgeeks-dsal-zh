@@ -1,6 +1,7 @@
 # 三胞胎计数
 
 给定 **N** 指向平面中呈 2D [数组](https://www.geeksforgeeks.org/introduction-to-arrays/)形式的点，以使每一行都包含两个整数 **L** 和 **R** L 属于 x 坐标， **R** 属于 y 坐标。 任务是计算点的三元组（例如 **a，b & c）**，以使 **a & b** 之间的距离等于 **a 之间的距离 & c** 。
+
 **注意**：三胞胎的顺序很重要。
 
 **示例**：，
@@ -18,8 +19,11 @@
 **方法**：
 
 1.  为每个点计算到其他所有点的距离。
+
 2.  在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中存储点到其他点的中间距离（例如 **d** ）。
+
 3.  如果 Map 已经具有相同的距离，则三胞胎的数量是 Map 中为 **d** 存储的值的两倍。
+
 4.  更新地图中当前距离的计数。
 
 下面是上述的实现：

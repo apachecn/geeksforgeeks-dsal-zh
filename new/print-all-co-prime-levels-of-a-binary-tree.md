@@ -46,8 +46,11 @@ are co-prime levels.
 **方法**：为了检查某个级别是否为同等级别，
 
 *   首先，我们必须使用 Eratosthenes 筛子[来存储所有素数。](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)
+
 *   然后，我们必须对二叉树进行[级顺序遍历，并且必须将该级的所有元素保存到向量中。](https://www.geeksforgeeks.org/print-level-order-traversal-line-line/)
+
 *   此向量用于在执行级别顺序遍历时存储树的级别。
+
 *   然后，对于每个级别，检查元素的 GCD 是否等于 1。 如果是，则此级别不是“同等优先”，否则打印该级别的所有元素。
 
 下面是上述方法的实现：

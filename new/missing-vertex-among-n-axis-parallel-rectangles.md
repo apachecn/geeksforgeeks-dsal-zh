@@ -11,10 +11,13 @@
 > **输出**：{1、2}
 
 **方法**：[
+
 ]请按照以下步骤解决问题：
 
 *   将频率 **x 坐标**和 **y 坐标**存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
+
 *   在地图上进行迭代，以找到两个坐标的频率都为奇数的元素。
+
 *   最后，以奇数频率打印 x 和 y 坐标。
 
 下面是上述方法的实现：
@@ -326,6 +329,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

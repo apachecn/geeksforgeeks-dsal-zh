@@ -11,7 +11,9 @@
 > 卡通-> POON – > POIN – > POIE – > PLIE – > PLEE – > PLEA
 
 **方法**：可以使用标准 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 方法（如[在此处](https://www.geeksforgeeks.org/word-ladder-length-of-shortest-chain-to-reach-a-target-word/)中讨论的方法）解决，但可以通过使用双向 BFS 来提高其性能。
+
 双向 BFS 不会降低解决方案的时间复杂度，但是在许多情况下，它无疑可以优化性能。 这种方法还可以用于许多其他最短寻路问题中，在这些问题中，我们可以获得有关源节点和目标节点的足够信息。 双向 BFS 涉及的基本思想是从路径的两端开始搜索。
+
 因此，需要维护两个队列和两个访问数组来跟踪两条路径。 因此，只要源队列中存在一个节点（例如 A）遇到目标队列中存在的一个节点（例如 B），我们就可以通过将 A 到源的距离与 B 的距离相加来计算答案 从目标减 1 开始（一个节点是公共的）。 这样，与标准 BFS 方法相比，我们可以在一半时间内计算出答案。 此方法也称为中间相遇 BFS 方法。
 
 下面是上述方法的实现：

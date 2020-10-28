@@ -14,10 +14,15 @@
 **方法**：请按照以下步骤解决问题：
 
 *   初始化[设置](https://www.geeksforgeeks.org/set-in-cpp-stl/)，并将给定数组中的每个字符串插入**设置**中。
+
 *   初始化两个[向量](https://www.geeksforgeeks.org/vector-in-cpp-stl/) **left_ans** 和 **right_ans** ，以跟踪获得的[回文串](https://www.geeksforgeeks.org/string-palindrome/)。
+
 *   现在，[遍历字符串数组](https://www.geeksforgeeks.org/iterating-arrays-java/)，并检查在 **Set** 中是否存在相反的内容。
+
 *   如果发现是正确的，则将其中一个字符串插入 **left_ans** ，将另一个字符串插入 **right_ans** 和[，从 **Set** 中擦除两个字符串。 避免重复。](https://www.geeksforgeeks.org/unordered_set-erase-function-in-c-stl/)
+
 *   [如果字符串是回文](https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/)，并且在[设置](https://www.geeksforgeeks.org/set-in-java/)中不存在该字符串对，则需要将该字符串附加到结果字符串的中间。
+
 *   打印结果字符串。
 
 下面是上述方法的实现：
@@ -444,6 +449,7 @@ omgbbbgmo
 ```
 
 ***时间复杂度**：O（N * M）*
+
 ***辅助空间**：O（N * M）*
 
 

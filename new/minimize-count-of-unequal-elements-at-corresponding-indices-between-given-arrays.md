@@ -18,8 +18,11 @@
 **方法**：由于可以在对对列表中指定的数组 A []的元素进行任意次数的交换，因此可以将这些元素视为已连接的[集](https://www.geeksforgeeks.org/union-find/)，并且在其内部进行交换 允许的元素。 以下是实现此方法的步骤：
 
 1.  [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/) A []并创建一组[连接的组件](http://www.geeksforgeeks.org/strongly-connected-components/)，可以使用[不交集](https://www.geeksforgeeks.org/disjoint-set-data-structures/)轻松完成。
+
 2.  对于 **B []** 中的每个元素，查找 **A []** **（A [i]，B [i]）**中的相应元素是否属于同一连接 组件与否。
+
 3.  如果是，则使 A [i] = B [i]并继续。 否则，增加不匹配对的数量。
+
 4.  完成上述所有步骤后，打印不匹配对的计数。
 
 下面是上述方法的实现：
@@ -536,6 +539,7 @@ class GFG{
 ```
 
 ***时间复杂度**：O（N + M）*
+
 ***辅助空间**：O（N）*
 
 

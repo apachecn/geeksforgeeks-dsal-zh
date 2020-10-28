@@ -18,8 +18,11 @@
 **方法**：可以使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)解决此问题。 请按照以下步骤解决问题：
 
 *   初始化一个变量，例如 **smNonNeg** ，以在给定数组的起始索引和当前索引之间存储[最小丢失的非负整数](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/)。
+
 *   初始化一个数组，例如说 **hash [N]** ，以检查在起始索引和当前索引之间是否存在 **smNonNeg** 。
+
 *   [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并检查 **hash [smNonNeg]** 是否等于 **0** 。 如果发现是真的，则打印 **smNonNeg** 的值。
+
 *   否则，增加 **smNonNeg** 的值，而 **hash [smNonNeg]** 不等于 **0** 。
 
 下面是上述方法的实现：
@@ -278,6 +281,7 @@ public static void Main ()
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

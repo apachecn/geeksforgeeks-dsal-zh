@@ -36,7 +36,9 @@
 因此，请按照以下步骤解决问题：
 
 *   从根节点开始在树上执行深度优先搜索遍历。
+
 *   对于每个节点，将节点数存储在其子树（包括该节点）中。
+
 *   遍历每个查询（U，V）并计算：
 
 > min（subtreeSize（U），subtreeSize（V））*（N – min（subtreeSize（U），subtreeSize（V）））
@@ -424,6 +426,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N + M + Q）*
+
 ***辅助空间**：O（N）*
 
 

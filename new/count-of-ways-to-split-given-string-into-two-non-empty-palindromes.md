@@ -1,6 +1,7 @@
 # 将给定字符串拆分为两个非空回文的方法的数量
 
 给定字符串 **S** ，任务是找到将给定字符串 **S** 分为两个非空回文字符串的方法。
+
 **范例**：
 
 > **输入**：S =“ aaaaa”
@@ -311,7 +312,9 @@ public static void Main(string []args)
 **有效方法**：可以使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)和 [Rabin-Karp 算法](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/)来存储字符串的**前缀和后缀哈希**，从而优化上述方法 。 请按照以下步骤解决问题：
 
 *   计算给定字符串的前缀和后缀哈希。
+
 *   对于[1，N – 1]范围内的每个索引 i，检查两个子字符串[0，i – 1]和[i，N – 1]是否为回文。
+
 *   要检查子字符串[l，r]是否是回文，只需检查：
 
     ```
@@ -320,6 +323,7 @@ public static void Main(string []args)
     ```
 
 *   对于每个发现有两个子串都是回文的索引 i，增加**计数**。
+
 *   打印**计数**的最终值。
 
 下面是上述方法的实现：
@@ -499,6 +503,7 @@ int main()
 ```
 
 ***时间复杂度**：O（N * log（10 <sup>9</sup> ）））*
+
 ***空间复杂度**：O（N）*
 
 

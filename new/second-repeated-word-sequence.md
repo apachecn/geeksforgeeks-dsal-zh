@@ -20,7 +20,9 @@ Output : for
 在询问：亚马逊
 
 1.  将所有单词存储在地图中，将单词的出现作为关键字并将其出现作为值。
+
 2.  在地图上找到第二个最大值。
+
 3.  再次遍历该映射，并返回出现值等于第二个最大值的单词。
 
 ## C++
@@ -220,6 +222,7 @@ ccc
 ```c
 
 **参考**：
+
 [https://www.careercup.com/question?id=5748104113422336](https://www.careercup.com/question?id=5748104113422336)
 
 本文由 **[Sahil Chhabra](https://www.facebook.com/sahil.chhabra.965)** 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

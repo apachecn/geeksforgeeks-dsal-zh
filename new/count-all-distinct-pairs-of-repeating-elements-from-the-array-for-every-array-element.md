@@ -19,15 +19,21 @@
 > 由于所有元素都是不同的，因此不存在具有相等值的对。
 
 **天真的方法**：天真的想法是[遍历给定的数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，对于每个元素，从数组中排除当前元素，并使用其余的数组元素找到所有可能的对**（ i，j）**使得 **arr [i]等于 arr [j]** 和 **i < j** 。 打印每个元素的对数。
+
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（N）*
 
 **高效方法**：的想法是[存储每个元素](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的频率，并在给定条件下计算所有可能的对（例如 **cnt** ）。 对每个元素执行上述步骤后，从总计数 cnt 中删除相等的可能对的计数并打印该值。 请按照以下步骤解决问题：
 
 1.  将每个元素的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
+
 2.  创建一个变量来存储每个元素的贡献。
+
 3.  可以用 **freq [x] *（freq [x] – 1）除以 2** 来计算 **x** 的贡献，其中 **freq [x]** 为 **x** 的频率。
+
 4.  遍历给定的数组，并从总数中除去每个元素的贡献，并将其存储在 **ans []** 中。
+
 5.  打印存储在 **ans []** 中的所有元素。
 
 下面是上述方法的实现：
@@ -294,6 +300,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（NlogN）*
+
 ***辅助空间**：O（N）*
 
 

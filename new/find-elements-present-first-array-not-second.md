@@ -1,6 +1,7 @@
 # 查找出现在第一个数组而不是第二个数组中的元素
 
 给定两个数组，任务是我们找到第一个数组中存在但第二个数组中不存在的数字。
+
 **范例**：
 
 ```
@@ -17,6 +18,7 @@ Output : 5
 ```
 
 **方法 1（简单）**
+
 天真的方法是使用两个循环和检查第二个数组中不存在的元素。
 
 ## C++
@@ -232,6 +234,7 @@ findMissing($a, $b, $n, $m);
 ```
 
 **方法 2（使用哈希）**
+
 在此方法中，我们将第二个数组的所有元素存储在哈希表中（ [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/) ）。 逐一检查第一个数组的所有元素，并打印散列表中不存在的所有那些元素。
 
 ## C++
@@ -407,6 +410,7 @@ class GfG
 ```
 
 **时间复杂度**：O（n）
+
 **辅助空间**：O（n）
 
 本文由 **DANISH_RAZA** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

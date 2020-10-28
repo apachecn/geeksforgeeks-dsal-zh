@@ -34,8 +34,11 @@
 **方法**：
 
 1.  将 **arr []** 的元素的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)说 **map1** 中，并以 **arr []** 的元素作为它们的频率 频率作为值。
+
 2.  现在，将 **map1** 的元素频率存储在其他地图中，例如 **map2** 。
+
 3.  遍历 **map2** 获得最高元素。
+
 4.  如果存在多个最高元素，则打印出具有较低值的元素。
 
 下面是上述方法的实现：
@@ -274,6 +277,7 @@ if __name__ == '__main__':
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

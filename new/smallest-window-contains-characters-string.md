@@ -25,6 +25,7 @@ the distinct characters of given string.
 ```
 
 **解决方案**：上述问题指出，即使最小的字符串包含重复元素，我们也必须找到包含给定字符串的所有不同字符的最小窗口。
+
 例如，在“ aabcbcdb”中，包含所有字符的最小字符串是“ abcbcd”。
 
 <u>**方法 1**</u> ：这是使用 HashMap 解决问题的蛮力方法。
@@ -34,14 +35,23 @@ the distinct characters of given string.
     *[HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) ：* HashMap 自 Java 1.2 以来就是 Java 集合的一部分。 它提供了 Java Map 接口的基本实现。 它以（键，值）对存储数据。 要访问一个值，必须知道其键。 HashMap 被称为 HashMap，因为它使用了一种称为 Hashing 的技术。 散列是一种将大字符串转换为代表相同字符串的小字符串的技术。 较短的值有助于索引编制和更快的搜索。 HashSet 还内部使用 HashMap。 它在内部使用链接列表来存储已在 HashSet 中详细解释的键值对以及其他文章。
 
 *   **Algorithm :**
+
     1.  将给定字符串的所有不同字符存储在 hash_map 中。
+
     2.  进行变量计数并将其初始化为值 0。
+
     3.  使用两个指针生成子字符串。
+
     4.  **现在检查生成的子字符串是否有效-**：
+
         1.  一旦我们发现之前从未遇到过生成的子字符串的字符，则以 **1** 递增计数。
+
         2.  我们可以使用 **max_chars** 大小的访问数组来查找当前字符是否曾经遇到过。
+
         3.  如果 count 等于 hash_map 的大小，则生成的子字符串有效
+
         4.  如果它是有效的子字符串，请将其与已生成的最小长度的子字符串进行比较。
+
 *   **Pseudo Code:**
 
     ```
@@ -134,24 +144,39 @@ the distinct characters of given string.
     ```
 
 *   **Complexiy Analysis:**
+
     *   **时间复杂度**：O（N ^ 2）。
+
         需要这段时间来生成长度为“ N”的字符串的所有可能的子字符串。
+
     *   **空间复杂度**：O（N）。
+
         作为大小为 N 的 **hash_map** 。
 
 <u>**方法 2**</u> ：这里我们使用了[滑动窗口](https://www.geeksforgeeks.org/window-sliding-technique/)技术来得出解决方案。 该技术说明了如何将很少出现问题的嵌套 for 循环转换为单个 for 循环，从而降低时间复杂度。
 
 *   **Approach:** Basically a window of characters is maintained by using two pointers namely **start** and **end**. These **start** and **end** pointers can be used to shrink and increase the size of window respectively. Whenever the window contains all characters of given string, the window is shrinked from left side to remove extra characters and then its length is compared with the smallest window found so far.
+
     If in the present window, no more characters can be deleted then we start increasing the size of the window using the **end** until all the distinct characters present in the string are also there in the window. Finally, find the minimum size of each window.
+
     [![](img/8d89dd2f1f7ac2f866276591e81e1222.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200408143729/Sliding-window-simulation2.png)
+
 *   **Algorithm :**
+
     1.  维护一个数组**（已访问）**，该数组最多包含可能的字符（256 个字符），一旦我们在字符串中找到任何字符，就在数组**中标记该索引（这是为了计算字符串中所有不同的字符） 串）。**
+
     2.  取两个指针**开始**和**结束**，它们将标记窗口的开始和结束。
+
     3.  取一个**计数器= 0** ，该计数器将用于计算窗口中的不同字符。
+
     4.  现在开始读取给定字符串的字符，如果遇到尚未访问的字符，则将计数器增加 **1** 。
+
     5.  如果**计数器**等于不同字符的总数，请尝试缩小窗口。
+
     6.  **用于缩小窗口-**：
+
         1.  如果开始指针处字符的**频率**大于**大于 1** ，则增加指针，因为它是多余的。
+
         2.  现在将当前窗口的长度与最小窗口长度进行比较。
 
 *   **实现**：
@@ -488,14 +513,19 @@ the distinct characters of given string.
     ```
 
 *   **Complexiy Analysis:**
+
     *   **时间复杂度**：O（N）。
+
         由于仅使用两个指针遍历字符串一次。
+
     *   **空间复杂度**：O（N）。
+
         作为大小为 N 的 **hash_map** 被使用。
 
 **相关文章**：
 
 1.  [包含最大不同字符的最小子字符串的长度](https://www.geeksforgeeks.org/length-smallest-sub-string-consisting-maximum-distinct-characters/)
+
 2.  [https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string- contains-all-characters-of-another-string /](https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/)
 
 本文由 **[Sahil Chhabra](https://www.facebook.com/sahil.chhabra.965)** 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

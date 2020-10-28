@@ -1,10 +1,13 @@
 # 使字符串 K 变为周期性所需的最小交换次数
 
 给定长度为 **N** 的字符串 **S** 以及由小写字母组成的数组 **A** 。 还给出一个正整数 **K** 。 任务是找到使字符串 **S** **K** 成为周期性所需的最小交换次数（在 S 和 A 之间）。
+
 **注意**：
 
 *   如果对于字符串 **S [i] = S [i + K]** 中的每个位置 i，则该字符串都称为 K 周期。
+
 *   一口气只能将 S 的一个字符替换为 A 的字符。
+
 *   A 中的字符可以多次使用。
 
 **示例**：
@@ -27,11 +30,17 @@
 **方法**：可以借助[频率计数](https://www.geeksforgeeks.org/tag/frequency-counting/)和[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)解决此问题。
 
 1.  为了解决上述问题，我们使用二维数组 **freq [K] [26]** 将所有![0 \le j < N ](img/5e132a15f8b500725556c362f0d51cd5.png "Rendered by QuickLaTeX.com")的字符频率存储在 **j％K** 位置。
+
 2.  使用**布尔数组标记数组 A 中存在的所有字符**。
+
 3.  对于 0 到 K 范围内的所有字符，将有 **N / K** 或**（N / K + 1）**字符，它们应该相同。
+
 4.  因此，对于所有这些字符，我们检查哪个字符在位置 i 处具有**最大频率**，并且也出现在数组 A 中。
+
 5.  将其添加到答案中，即![(N / K - maxfrequency) ](img/da5484b1773e8bae48c284a96e8919af.png "Rendered by QuickLaTeX.com")。
+
 6.  如果![i % K < N % K ](img/cbaf37d4f5f6d8e8f1c8e9f9587759ef.png "Rendered by QuickLaTeX.com")，我们还将在答案中加 1
+
 7.  因为所有此类字符都会有 **N / K + 1** 个字符 i。
 
 下面是上述方法的实现：

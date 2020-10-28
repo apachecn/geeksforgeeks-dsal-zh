@@ -18,8 +18,11 @@
 **方法**：
 
 1.  [根据字符串的长度按降序对](https://www.geeksforgeeks.org/sort-c-stl/)进行排序。
+
 2.  现在，从最长的字符串开始。 检查字符串的所有可能前缀是否存在于给定数组中以及字符串的其余部分，然后递归检查它是否可以由数组中的其他字符串组成。
+
 3.  [映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)可用于检查数组中是否存在字符串。 满足上述条件的第一个字符串就是答案。
+
 4.  如果不存在这样的字符串，则打印-1。
 
 下面是上述方法的实现：

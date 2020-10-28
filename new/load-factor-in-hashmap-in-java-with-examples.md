@@ -5,6 +5,7 @@
 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 是一个类，用于实现 [Java Collections](https://www.geeksforgeeks.org/collections-in-java-2/) 框架的 [Map](https://www.geeksforgeeks.org/map-interface-java-examples/) 接口。 HashMap 的最重要特征是，对于**检索**和**插入**，它具有恒定的时间性能。 决定 HashMap 性能的两个因素是：
 
 *   初始容量
+
 *   负载系数
 
 在我们解释什么是 HashMap 的负载因子之前，必须了解其结构。
@@ -42,6 +43,7 @@ HashMap 的结构示意图
 ### 负载系数
 
 负载因子是一个阈值，如果当前元素与初始容量的比率超过此阈值，则容量会增加，因此 HashMap 的操作复杂度保持为 O（1）。 O（1）的操作复杂度的含义意味着检索和插入操作需要固定的时间。
+
 *HashMap 的默认加载因子为 **0.75f** 。*
 
 #### *我们如何确定何时增加容量？*

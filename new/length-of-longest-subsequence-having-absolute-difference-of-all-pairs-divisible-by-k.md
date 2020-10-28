@@ -16,6 +16,7 @@
 **天真的方法**：解决此问题的最简单方法是[生成给定数组的所有可能的子序列](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/)，并打印最长的子序列的长度，每对子序列的绝对差值可乘以[ **K** 。
 
 ***时间复杂度**：O（2 <sup>N</sup> ）*
+
 ***辅助空间**：O（N）*
 
 **高效方法**：为了优化上述方法，其思想是基于以下观察结果使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)：
@@ -29,7 +30,9 @@
 请按照以下步骤解决问题：
 
 *   初始化一个数组，例如说 **hash [K]** ，以存储 **arr [i]％K** 的频率。
+
 *   [遍历 **hash []** 数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)和[在 **hash []** 数组](https://www.geeksforgeeks.org/c-program-find-largest-element-array/)中找到最大元素。
+
 *   最后，打印 **hash []** 数组的最大元素。
 
 下面是上述方法的实现：
@@ -257,6 +260,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（K）*
 
 

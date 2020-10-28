@@ -14,7 +14,9 @@
 **方法**：
 
 *   使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)存储每个数组元素的所有因子的计数。 我们可以[找出 O（sqrt N）中](https://www.geeksforgeeks.org/find-divisors-natural-number-set-1/)的所有因子。
+
 *   遍历所有因素，并找到除以数字的最大数组元素的数量。
+
 *   再次重新遍历所有因子，并打印出现次数最多的因子。
 
 下面是上述方法的实现。

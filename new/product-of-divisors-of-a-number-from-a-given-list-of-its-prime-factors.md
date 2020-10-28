@@ -1,7 +1,9 @@
 # 从给定的主要因子列表中得出的数的除数
 
 给定表示给定数字素数列表的数组 **arr []** ，任务是找到该数字除数的乘积。
+
 **注意**：由于产品可以打印得很大，因此答案模版 10 <sup>9</sup> +7。
+
 **示例**：
 
 > **输入**：arr [] = {2，2，3}
@@ -15,20 +17,27 @@
 > **输出**：1331
 
 **天真的方法**：
+
 从其主要因子列表生成数字 **N** ，然后以 O（√N）计算复杂度找到其所有除数，并继续计算其乘积。 打印获得的最终产品。
+
 ***时间复杂度**：O（N <sup>3/2</sup> ）*
+
 ***辅助空间**：O（1）*
 
 **高效方法**：
+
 要解决此问题，需要考虑以下几点：
 
 1.  根据[费马小定理](https://www.geeksforgeeks.org/fermats-little-theorem/)， **a <sup>（m – 1）</sup> = 1（mod m）**可以进一步扩展为 **a <sup>x</sup> = a <sup>x％（m – 1）</sup>（mod m）**
+
 2.  对于素数 **p** 升至幂 **a** ， **f（p <sup>a</sup> ）= p <sup>（a *（a + 1）/ 2））</sup>** 。
+
 3.  因此， **f（a * b）= f（a）<sup>（d（b））</sup> * f（b）<sup>（d（a））</sup>** ， d（a），d（b）分别表示 a 和 b 中的除数。
 
 请按照以下步骤解决问题：
 
 *   在给定列表中找到每个素数的频率（使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) / [Dictionary](https://www.geeksforgeeks.org/python-dictionary/) ）。
+
 *   Using the second observation, for every i <sup>th</sup> prime, calculate: 
 
     > fp = power（p [i]，（cnt [i] +1）* cnt [i] / 2），其中 cnt [i]表示该素数的频率
@@ -359,6 +368,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

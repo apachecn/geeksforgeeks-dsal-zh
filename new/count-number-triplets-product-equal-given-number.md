@@ -1,6 +1,7 @@
 # 产品数量等于给定数量的三胞胎数量
 
 给定一组不同的整数（仅包含正数）和数字“ m”，请找出乘积等于“ m”的三元组数。
+
 **示例**：
 
 ```
@@ -210,14 +211,21 @@ function countTriplets($arr, $n, $m)
 ```
 
 时间复杂度：O（n <sup>3</sup> ）
+
 一种有效的**方法**使用散列。
 
 1.  将所有元素及其索引存储在 hash_map 中。
+
 2.  考虑所有对（i，j）并检查以下各项：
+
     *   如果（arr [i] * arr [j]！= 0 &&（m％arr [i] * arr [j]）== 0），如果是，则搜索（m /（arr [i] * arr [ j]）。
+
     *   还要检查 m /（arr [i] * arr [j]）不等于 arr [i]和 arr [j]。
+
     *   另外，通过使用映射中存储的索引，检查当前三元组是否未在前面进行计数。
+
     *   如果满足以上所有条件，则增加计数。
+
 3.  返回计数。
 
 ## C++
@@ -473,7 +481,10 @@ static void Main()
 ```
 
 时间复杂度：O（n <sup>2</sup> ）
+
 辅助空间：O（n）
+
 本文由 [**Sahil Chhabra**](https://www.facebook.com/sahil.chhabra.965) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，您还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想共享有关上述主题的更多信息，请发表评论。
 

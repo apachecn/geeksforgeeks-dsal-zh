@@ -16,6 +16,7 @@
 **天真的方法**：最简单的方法是[生成给定数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)的所有子数组，并对每个数组元素 **arr [i]** 计数其中的子数组数 它是最小的元素。
 
 ***时间复杂度**：O（N <sup>3</sup> ）*
+
 ***辅助空间**：O（N）*
 
 **高效方法**：为了优化上述方法，其思想是找到每个元素的边界索引，直到它是最小的元素。 对于每个元素，令 **L** 和 **R** 分别为左侧和右侧的边界索引，直到 arr [i]最小。 因此，可以通过以下方式计算所有子数组的数量：
@@ -25,10 +26,15 @@
 请按照以下步骤解决问题：
 
 1.  将数组元素的所有索引存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
+
 2.  [以升序对数组进行排序](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)。
+
 3.  初始化数组 **boundary []** 。
+
 4.  [遍历排序后的数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/) **arr []** ，然后使用 [Binary Search](http://www.geeksforgeeks.org/binary-search/) 插入该元素的索引。 假设它插入到索引 **i** ，则其左边界为 **boundary [i – 1]** ，其右边界为 **boundary [i +1]** 。
+
 5.  现在，使用上面的公式，找到子数组的数量，并在结果数组中跟踪该计数。
+
 6.  完成上述步骤后，打印存储在结果数组中的所有计数。
 
 下面是上述方法的实现：
@@ -436,6 +442,7 @@ public static void Main(string[] args) 
 ```
 
 ***时间复杂度**：O（N log N）*
+
 ***辅助空间**：O（N）*
 
 

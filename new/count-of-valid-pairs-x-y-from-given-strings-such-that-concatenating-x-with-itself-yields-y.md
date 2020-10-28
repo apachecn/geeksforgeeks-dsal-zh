@@ -18,13 +18,17 @@
 **天真的方法**：的想法是[生成所有可能的对](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)，并根据给定条件检查是否有任何对形成有效对。 如果是，则计算该对并检查下一对。 完成上述步骤后，打印计数值。
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（1）*
 
 **高效方法**：的想法是将排序后的字符串及其计数存储在 [Hashmap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中，并遍历数组中的每个字符串，将其自身连接起来并在 **Hashmap 中找到其计数** 将其添加到对数中。 步骤如下：
 
 1.  创建一个哈希图。
+
 2.  对数组中给定的字符串进行排序，并将其计数存储在哈希图中。
+
 3.  再次遍历所有字符串，并将每个字符串与其自身连接[，对字符串](https://www.geeksforgeeks.org/sort-string-characters/)和[进行排序，然后在 Hashmap](https://www.geeksforgeeks.org/java-program-to-count-the-occurrence-of-each-character-in-a-string-using-hashmap/) 中找到其计数。
+
 4.  在上述步骤中更新最终计数，并在上述所有步骤之后打印最终计数。
 
 下面是上述方法的实现：
@@ -348,6 +352,7 @@ public static void Main(string []args)
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

@@ -30,8 +30,11 @@ Output : 9
 一种有效的方法**是使用滑动窗口在一次迭代中计算所有不同的元素。**
 
 1.  查找整个数组中不同元素的数量。 令该数字为 **k < = N** 。 初始化 Left = 0，Right = 0 和 window = 0。
+
 2.  将**向右**递增，直到 **[左= 0，右]** 范围内的不同元素的数量等于 **k** （或窗口大小不等于 k），让 这个权利是 **R <sub>1</sub>** 。 现在，由于子阵列 **[左= 0，R <sub>1</sub> ]** 具有 **k** 个不同的元素，因此所有从**开始的子阵列 Left = 0** 和在 **R <sub>1</sub>** 之后结束的元素也将具有 **k** 不同的元素。 因此，将 **NR <sub>1</sub> +1** 添加到答案中，因为 **[左.R <sub>1</sub> ]，[左.R <sub>1</sub> +1]，[左 R <sub>1</sub> +2]…[左 N-1]** 包含所有不同的数字。
+
 3.  现在保持 **R <sub>1</sub>** 不变，向左递增**。 降低前一个元素的频率，即 **arr [0]，**，如果其频率变为 0，则减小窗口大小。 现在，子数组为 **[左= 1，右= R <sub>1</sub> ]** 。**
+
 4.  从步骤 2 开始，对 Left 和 Right 的其他值重复相同的过程，直到 **Left < N** 为止。
 
 ## C++
@@ -329,6 +332,7 @@ class Test
 ```
 
 **时间复杂度**：O（n）
+
 **辅助空间**：O（n）
 
 本文由 [Shubham Bansal](https://www.quora.com/profile/Shubham-Bansal-209) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

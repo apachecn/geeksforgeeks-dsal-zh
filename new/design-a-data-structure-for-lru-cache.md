@@ -65,6 +65,7 @@ this .timeStamp = currentTimeStamp;
 **2.优化方法**：
 
 解决此问题的关键是使用双链表，该链表使我们能够快速移动节点。
+
 LRU 缓存是键和双链接节点的哈希图。 哈希图使 get（）的时间为 O（1）。 双向链接节点列表使节点添加/删除操作为 O（1）。
 
 **使用双链表和 HashMap 的 Java 代码**：
@@ -207,6 +208,7 @@ Value for the key: 4 is 40
 ```
 
 **Java 中使用 LinkedHashMap 的另一种实现**：
+
 **removeEldestEntry** （）被重写，以强加一个在大小超出容量时删除旧映射的策略。
 
 ```

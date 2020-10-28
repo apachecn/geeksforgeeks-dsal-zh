@@ -3,6 +3,7 @@
 中最小索引处出现的第一个字符串中的字符
 
 给定一个字符串 **str** 和另一个字符串 **patt** 。 在 **patt** 中找到出现在 **str** 中最小索引处的字符。 如果 **str** 中没有 **patt** 字符，则打印“无字符”。
+
 **范例**：
 
 > **输入**：str =“ geeksforgeeks”，patt =“ set” 在 **str** 和
@@ -248,17 +249,23 @@ Minimum Index Character = e
 ```
 
 **时间复杂度**：O（mn），其中 **m** 和 **n** 是两个字符串的长度。
+
 **辅助空间**：O（1）
 
 **方法 2 有效方法（散列）**：
 
 *   用**（键，值）**元组表示为**（字符，索引）**元组创建哈希表。
+
 *   将 **str** 的每个字符的第一个索引存储在哈希表中。
+
 *   现在，对于 **patt** 的每个字符，检查其是否在哈希表中。
+
     *   如果存在，则从哈希表中获取其索引，并更新 **minIndex** （到目前为止遇到的最小索引）。
+
     *   对于不匹配的字符，请打印“不存在字符”。
 
 哈希表是使用 C++ 中的 [unordered_set 实现的。
+
 下图是上述方法的模拟：](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)
 
 ![](img/3e573678674decc4ea707509c440194d.png)
@@ -526,7 +533,10 @@ Minimum Index Character = e
 ```
 
 **时间复杂度**：O（m + n），其中 **m** 和 **n** 是两个字符串的长度。
+
 **辅助空间**：O（d），其中 **d** 是哈希表的大小，它是 **str** 中不同字符的计数。
+
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，也可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

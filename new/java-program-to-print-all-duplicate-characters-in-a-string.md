@@ -18,8 +18,11 @@
 **方法**：的想法是使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 进行[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
 
 *   创建类型为 **{char，int}** 的 hashMap。
+
 *   遍历字符串，检查 **hashMap** 是否已包含遍历的字符。
+
 *   如果存在，则增加计数或在频率为 1 的哈希图中插入字符。
+
 *   现在，遍历哈希图并查找频率大于 1 的字符。以它们各自的频率打印这些字符。
 
 下面是上述方法的实现：
@@ -108,6 +111,7 @@ k : 2
 ```
 
 **时间复杂度**：*O（N）*
+
 **辅助空间**：*O（1）*
 
 

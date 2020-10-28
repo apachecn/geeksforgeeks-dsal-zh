@@ -28,6 +28,7 @@
 **方法**：的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契结点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)到最大值，并将其存储在[设置](https://www.geeksforgeeks.org/set-in-java/)中，以 使检查变得容易和高效（在 O（1）时间内）。
 
 1.  遍历整个数组并获得列表中的最大值。
+
 2.  现在，构建一个[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于数组最大值的 Fibonacci 节点。
 
 完成上述预计算后，遍历数组并将所有斐波那契数都插入两个[堆](https://www.geeksforgeeks.org/binary-heap/)，*最小堆和最大堆*中。

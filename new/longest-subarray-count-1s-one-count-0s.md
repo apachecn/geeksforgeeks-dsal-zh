@@ -17,13 +17,21 @@ Output : 1
 **方法**：以下是步骤：
 
 1.  将数组中的所有 0 都视为“ -1”。
+
 2.  初始化**总和** = 0 和 **maxLen** = 0。
+
 3.  创建具有**（总和，索引）**元组的哈希表。
+
 4.  对于 i = 0 到 n-1，执行以下步骤：
+
     1.  如果 arr [i]为'0'，则将'-1'累加至**和**，否则将'1'则累加至**总和**。
+
     2.  如果 sum == 1，则更新 **maxLen** = i + 1。
+
     3.  否则检查哈希表中是否存在**和**。 如果不存在，则将其作为**（和，i）**对添加到哈希表中。
+
     4.  检查哈希表中是否存在**（sum-1）**。 如果存在，则从哈希表中获取**（sum-1）**的索引作为**索引**。 现在检查 maxLen 是否小于（i-index），然后更新 **maxLen** =（i-index）。
+
 5.  返回 maxLen。
 
 ## C++
@@ -292,6 +300,7 @@ Length = 5
 ```
 
 **时间复杂度**：O（n）
+
 **辅助空间**：O（n）
 
 本文由 [**Ayush Jauhari**](https://auth.geeksforgeeks.org/profile.php?user=ayushjauhari14) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

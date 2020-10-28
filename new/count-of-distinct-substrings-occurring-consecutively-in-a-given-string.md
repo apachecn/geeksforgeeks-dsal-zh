@@ -18,22 +18,33 @@
 > 字符串中仅连续出现一个子字符串{“ e”}。
 
 **天真的方法**：
+
 最简单的方法是[生成给定字符串的所有可能的子字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)，并为每个子字符串找到子字符串中的**计数** 给定在字符串中连续出现。 最后，打印**计数。**
 
 ***时间复杂度**：O（N <sup>3</sup> ）*
+
 ***辅助空间**：O（N）*
 
 **有效方法**：
+
 为了优化上述方法，其想法是使用[动态编程](http://www.geeksforgeeks.org/dynamic-programming/)。
+
 请按照以下步骤解决问题：
 
 1.  如果字符串的长度确实**不超过 1** ，则不可能找到任何这样连续放置的相似子字符串。 因此**返回 0** 作为**计数**。
+
 2.  否则，初始化尺寸为**（N + 1 * N + 1）**的备注表 **dp []** ，该表被初始化为 **0** 。
+
 3.  初始化 [**unordered_set**](http://www.geeksforgeeks.org/unorderd_set-stl-uses/) ，以存储连续放置的不同子字符串。
+
 4.  从字符串末尾进行迭代。
+
 5.  在遍历字符串时，如果发现任何**重复字符**，则将考虑先前计算的 dp 值来确定 **dp [i] [j]** ，即直到**的相同子字符串的数量 ] dp [i + 1] [j + 1]** 个字符，包括当前字符。
+
 6.  如果字符不相似，则 **dp [i] [j]** 将填充 0。
+
 7.  相似的子字符串连续放置在一起，没有任何其他字符，并且最多**（j – i）**个字符相同。 因此，对于有效的子字符串， **dp [i] [j]值必须大于（j – i）**。 将那些子字符串存储在 **unordered_set** 中，该字符连续出现最大次数。
+
 8.  最后，返回 **unordered_set** 的[大小](https://www.geeksforgeeks.org/setsize-c-stl/)作为连续放置的不同子字符串的计数。
 
 下面是上述方法的实现：
@@ -266,6 +277,7 @@ print(distinctSimilarSubstrings(str))
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

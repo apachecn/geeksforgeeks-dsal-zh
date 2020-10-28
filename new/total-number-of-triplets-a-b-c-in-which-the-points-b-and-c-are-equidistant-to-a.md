@@ -21,8 +21,11 @@
 **方法**：为了解决上述问题，我们知道一个三重态物质的阶数，因此**可能存在不止一个同一个三重态**满足等距对条件的排列 点。
 
 *   首先，我们将[计算其中具有等距点的三元组](https://www.geeksforgeeks.org/python-all-possible-permutations-of-n-lists/)的所有排列。
+
 *   对列表中每个不同的三元组点重复相同的过程。 为了计算距离，我们将使用各个坐标之间的距离的[平方。](https://www.geeksforgeeks.org/program-distance-two-points-earth/)
+
 *   使用 **[哈希图](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)** 存储单个三元组的各种等距点对。
+
 *   一旦我们计算了对的总数，就会计算出所需的排列。 我们对所有不同的三元组重复此过程，并将所有排列添加到结果中。
 
 **以下是上述方法的实现**：

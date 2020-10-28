@@ -77,6 +77,7 @@ return v.size() - i;
 **2.空间优化解决方案**：
 
 我们可以使用队列存储命中并删除队列中没有用的条目。 它将节省我们的空间。
+
 我们正在从队列中删除多余的元素。
 
 ```
@@ -110,17 +111,23 @@ return q.size();
 由于没有排序数据就无法使用队列方法，因此这次需要使用数组来存储每个时间单位的点击计数。
 
 如果我们以过去的 5 分钟（即 300 秒）为单位跟踪点击，则创建 2 个大小为 300 的数组。
+
 int [] hits = new int [300];
 
 TimeStamp [] times = new TimeStamp [300]; //最后计数的匹配
+
 的时间戳给定传入的时间戳，将其时间戳修改 300，以查看其在 hits 数组中的位置。
 
 int idx =时间戳％300; => hits [idx]保持点击计数在这一秒内发生
 
 但是，在我们将 idx 的点击次数增加 1 之前，时间戳确实属于 hits [idx]正在跟踪的秒数。
+
 timestamp [i]存储最后一次计数的命中的时间戳。
+
 如果使用时间戳记[i] >时间戳记，则此匹配应该被丢弃，因为它在过去 5 分钟内没有发生。
+
 如果 timestamp [i] ==时间戳，则 hits [i]增加 1。
+
 如果 timestamp [i] currentTime – 300。
 
 ```
@@ -177,6 +184,7 @@ return res;
 为了计算数量，每台机器都独立工作以计算过去一分钟内自己的用户。 当我们请求全局编号时，我们只需要将所有计数器加在一起即可。
 
 **参考**：我最初是在此处发布它的。
+
 https://aonecode.com/getArticle/211
 
 [![design-pattern-img](img/14db468c0f00e6c64bfe591457d1b437.png)](https://practice.geeksforgeeks.org/courses/design-patterns-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_ooddpl)
