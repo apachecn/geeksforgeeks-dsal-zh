@@ -498,7 +498,7 @@ public static void Main(String[] args) 
 
 ```
 
-**时间复杂度**：*O（N * log（N））*，其中 N 是数组的大小。
+**时间复杂度**：*`O(N * log(N))`*，其中 N 是数组的大小。
 
 
 

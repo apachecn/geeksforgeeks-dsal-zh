@@ -1,29 +1,30 @@
-# 检查数组是否可以分成对，其和可被 k 整除
+# 检查数组是否可以分成对，其和可被`K`整除
 
 > 原文：[https://www.geeksforgeeks.org/check-if-an-array-can-be-divided-into-pairs-whose-sum-is-divisible-by-k/](https://www.geeksforgeeks.org/check-if-an-array-can-be-divided-into-pairs-whose-sum-is-divisible-by-k/)
 
-给定一个整数数组和一个数字 k，编写一个函数，如果给定的数组可以分成几对，则每对之和可被 k 整除，则该函数返回 true。
+给定一个整数数组和一个数字`K`，编写一个函数，如果给定的数组可以分成几对，则每对之和可被`K`整除，则该函数返回`true`。
 
 **示例**：
 
-> **输入**：arr [] = {9，7，5，3}，
-> k = 6
-> **输出**：True
-> 我们可以将数组分为（9 ，3）和
-> （7，5）。 这两个对的总和
-> 是 6 的倍数。
-> **输入**：arr [] = {92，75，65，48，45，35}，
-> k = 10
-> **输出**：是
-> 我们可以将数组分为（92，48），（75，65）
-> 和（45，35）。 所有这些对的总和是
-> 的 10 的倍数。
-> **输入**：arr [] = {91，74，66，48}，k = 10
-> **输出[** ：错误
+> **输入**：`arr[] = {9, 7, 5, 3}, k = 6`
+>
+> **输出**：`True`
+>
+> 我们可以将数组分为`(9, 3)`和`(7, 5)`。 这两个对的总和是 6 的倍数。
+>
+> **输入**：`arr[] = {92, 75, 65, 48, 45, 35}, k = 10`
+>
+> **输出**：`Yes`
+>
+> 我们可以将数组分为`(92, 48)`，`(75, 65)`和`(45, 35)`。 所有这些对的总和是的 10 的倍数。
+>
+> **输入**：`arr[] = {91, 74, 66, 48}, k = 10`
+>
+> **输出**：`No`
 
-**简单解决方案**遍历每个元素 arr [i]。 查找是否还有另一个尚未访问的元素，其剩余为**（k-arr [i]％k）**。 如果没有这样的元素，则返回 false。 如果找到一对，则将两个元素都标记为已访问。
+**简单解决方案**遍历每个元素`arr[i]`。 查找是否还有另一个尚未访问的元素，其剩余为`k - arr [i] % k`。 如果没有这样的元素，则返回`false`。 如果找到一对，则将两个元素都标记为已访问。
 
-此解决方案的时间复杂度为 O（n <sup>2</sup> ，并且需要`O(n)`额外空间。
+此解决方案的时间复杂度为`O(n ^ 2)`，并且需要`O(n)`额外空间。
 
 **有效解决方案**将使用哈希。
 
@@ -46,7 +47,7 @@
 
 ```
 
-**有效方法**是使用散列（Java 中的 [unordered_map 在 C++](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 和 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中）。
+**有效方法**是使用散列（C++ 中的[`unordered_map`](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)和 Java 中的[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)）。
 
 下图是上述方法的模拟：
 
