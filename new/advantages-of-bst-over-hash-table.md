@@ -4,11 +4,11 @@
 
 [哈希表](http://geeksquiz.com/hashing-set-1-introduction/)支持`Θ(1)`时间的以下操作。
 
-1）搜索
+1.  搜索
 
-2）插入
+2.  插入
 
-3）删除
+3.  删除
 
 自平衡[二叉搜索树（BST）](http://geeksquiz.com/binary-search-tree-set-1-search-and-insertion/)（如[红黑树](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)， [AVL 树](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/)和 [Splay 树](https://www.geeksforgeeks.org/splay-tree-set-1-insert/)）中上述操作的时间复杂度 等）是`O(Logn)`。
 

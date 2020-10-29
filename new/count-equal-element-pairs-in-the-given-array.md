@@ -237,11 +237,11 @@ class GFG {
 
 **高效方法**，
 
-1）创建一个空哈希表（C++中的 unordered_map，Java 中的 HashMap，Python 中的 Dictionary）
+1.  创建一个空哈希表（C++中的 unordered_map，Java 中的 HashMap，Python 中的 Dictionary）
 
-2）存储所有元素的频率。
+2.  存储所有元素的频率。
 
-3）遍历哈希表。 对于每个元素，找到其频率。 对于每个元素，将结果按频率/ 2 递增，
+3.  遍历哈希表。 对于每个元素，找到其频率。 对于每个元素，将结果按频率/ 2 递增，
 
 
 

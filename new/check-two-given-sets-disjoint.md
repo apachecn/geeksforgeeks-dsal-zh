@@ -240,9 +240,9 @@ Yes
 
 **方法 2（使用排序和合并）**，
 
-1）对第一和第二组进行排序。
+1.  对第一和第二组进行排序。
 
-2）使用合并等过程来比较元素。
+2.  使用合并等过程来比较元素。
 
 以下是上述想法的实现。
 
@@ -450,31 +450,31 @@ Yes
 
 与方法 1 相似。我们使用[二进制搜索](http://geeksquiz.com/binary-search/)代替线性搜索。
 
-1）排序第一组。
+1.  排序第一组。
 
-2）遍历第二组的每个元素，并使用二进制搜索来搜索第一组的每个元素。 如果找到一个元素，则将其返回。
+2.  遍历第二组的每个元素，并使用二进制搜索来搜索第一组的每个元素。 如果找到一个元素，则将其返回。
 
 此方法的时间复杂度为 O（mLogm + nLogm）
 
 **方法 4（使用二进制搜索树）**。
 
-1）创建自平衡二进制搜索树（ [第一组中所有元素的红色黑色](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)， [AVL](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/) ， [Splay](https://www.geeksforgeeks.org/splay-tree-set-1-insert/) 等）。
+1.  创建自平衡二进制搜索树（ [第一组中所有元素的红色黑色](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)， [AVL](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/) ， [Splay](https://www.geeksforgeeks.org/splay-tree-set-1-insert/) 等）。
 
-2）遍历第二组的所有元素，并在上述构造的二进制搜索树中搜索每个元素。 如果找到该元素，则返回 false。
+2.  遍历第二组的所有元素，并在上述构造的二进制搜索树中搜索每个元素。 如果找到该元素，则返回 false。
 
-3）如果所有元素都不存在，则返回 true。
+3.  如果所有元素都不存在，则返回 true。
 
 此方法的时间复杂度为 O（mLogm + nLogm）。
 
 **方法 5（使用散列）**
 
-1）创建一个空散列表。
+1.  创建一个空散列表。
 
-2）遍历第一组并将每个元素存储在哈希表中。
+2.  遍历第一组并将每个元素存储在哈希表中。
 
-3）遍历第二组并检查哈希表中是否存在任何元素。 如果存在，则返回 false，否则忽略该元素。
+3.  遍历第二组并检查哈希表中是否存在任何元素。 如果存在，则返回 false，否则忽略该元素。
 
-4）如果哈希表中不存在第二组的所有元素，则返回 true。
+4.  如果哈希表中不存在第二组的所有元素，则返回 true。
 
 以下是此方法的实现。
 

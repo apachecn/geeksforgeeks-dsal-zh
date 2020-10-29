@@ -39,7 +39,7 @@
 
 考虑 3 个映射，
 
-1）映射 X，其中 X [x <sub>i</sub> ]存储其 x 坐标等于 x <sub>i</sub>
+1.  映射 X，其中 X [x <sub>i</sub> ]存储其 x 坐标等于 x <sub>i</sub>
 
 的点的数量 2）映射 Y，其中 Y [y <sub>i</sub> ]存储其 y 坐标等于 y <sub>i</sub>
 
