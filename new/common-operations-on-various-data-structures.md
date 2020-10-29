@@ -645,7 +645,7 @@
 
 *   **Deletion:** It is the operation which we apply on all the data-structures. Deletion means to delete an element in the given data structure. The operation of deletion is successful when the required element is deleted from the data structure. The deletion has the same name as a deletion in the data-structure as an array, linked-list, graph, tree, etc. In stack, this operation is called Pop. In Queue this operation is called Dequeue.
 
-    下面是说明 Queue 中出队的程序：
+    下面是说明队列中出队的程序：
 
     ## 叠放
 

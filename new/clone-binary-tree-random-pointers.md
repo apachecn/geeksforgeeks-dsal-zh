@@ -11,13 +11,13 @@ struct node {
 } 
 ```
 
-随机指针指向二进制树的任何随机节点，甚至可以指向 NULL，克隆给定的二进制树。
+随机指针指向二进制树的任何随机节点，甚至可以指向`NULL`，克隆给定的二进制树。
 
 **方法 1（使用散列）**
 
 这个想法是将给定树节点的映射存储到哈希表中的克隆树节点。 以下是详细步骤。
 
-1.  递归遍历给定的 Binary 并复制键值，左指针和右指针以克隆树。 复制时，将给定树节点到克隆树节点的映射存储在哈希表中。 在以下伪代码中，“ cloneNode”是克隆树的当前访问节点，而“ treeNode”是给定树的当前访问节点。
+1.  递归遍历给定的二叉树并复制键值，左指针和右指针以克隆树。 复制时，将给定树节点到克隆树节点的映射存储在哈希表中。 在以下伪代码中，`cloneNode`是克隆树的当前访问节点，而·treeNode是给定树的当前访问节点。
 
 ```
    cloneNode->key  = treeNode->key
@@ -32,7 +32,7 @@ struct node {
    cloneNode->random = map[treeNode->random] 
 ```
 
-以下是上述想法的 C++实现。 以下实现使用来自 C++ ST L 的 [unordered_map。请注意，映射未实现哈希表，它实际上基于自平衡二进制搜索树。](https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/)
+以下是上述想法的 C++ 实现。 以下实现使用来自 C++ STL 的[`unordered_map`](https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/)。请注意，映射未实现哈希表，它实际上基于自平衡二进制搜索树。
 
 ```
 // A hashmap based C++ program to clone a binary
@@ -154,17 +154,17 @@ Inorder traversal of cloned binary tree is:
 
 **1\.** 在克隆树中创建新节点，并将每个新节点插入原始树中相应树的相应节点的左指针边缘之间（请参见下图）。
 
-，即如果当前节点是 A，并且其左子节点是 B（A — > > B），则将创建具有密钥 A 的新克隆节点（例如 cA），并将其放置为 A — [ > > cA-> > B（B 可以是 NULL 或非 NULL 左孩子）。 将正确设置右子指针，即，如果对于当前节点 A，右子在原始树中是 C（A — > > C），则对应的克隆节点 cA 和 cC 将像 cA --- > > 抄送
+即，如果当前节点是`A`，并且其左子节点是`B`（`A —>> B`），则将创建具有键`A`的新克隆节点（例如`cA`），并将其放置为 `A —>> cA ->> B`（`B`可以是`NULL`或非`NULL`左孩子）。 将正确设置右子指针，即，如果对于当前节点`A`，右子在原始树中是`C`（`A —>> C`），则对应的克隆节点`cA`和`cC`将像`cA --->> cC`。
 
-[![Binary_Tree(1)](img/dd107df84ab9ba61c70f318c43edbacb.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/cloneBinaryTree.jpg)
+![Binary_Tree(1)](img/dd107df84ab9ba61c70f318c43edbacb.png)
 
 **2\.** 根据原始树
 
-在克隆树中设置随机指针，即，如果节点 A 的随机指针指向节点 B，则在克隆树中，cA 将指向 cB（cA 和 cB 是树中的新节点） 与原始树中的节点 A 和 B 对应的克隆树）
+在克隆树中设置随机指针，即，如果节点`A`的随机指针指向节点`B`，则在克隆树中，`cA`将指向`cB`（`cA`和`cB`是树中的新节点） 与原始树中的节点`A`和`B`对应的克隆树）
 
 **3\.** 在原始树和克隆树中正确还原左指针
 
-以下是上述算法的 C++实现。
+以下是上述算法的 C++ 实现。
 
 ```
 #include <iostream>
