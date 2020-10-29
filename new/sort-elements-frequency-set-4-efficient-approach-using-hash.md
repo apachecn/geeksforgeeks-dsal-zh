@@ -17,13 +17,13 @@ Output : arr[] = {8, 8, 8, 2, 2, 5, 5, 6, -1, 9999999}
 
 我们在以下帖子中讨论了不同的方法：
 
-[按频率对元素进行排序| 设置 1](https://www.geeksforgeeks.org/sort-elements-by-frequency/)
+[按频率对元素进行排序 | 系列 1](https://www.geeksforgeeks.org/sort-elements-by-frequency/)
 
-[按频率对元素进行排序| 集 2](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-2/)
+[按频率对元素进行排序 | 系列 2](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-2/)
 
-[按频率对数组元素进行排序| 集合 3（使用 STL）](http://Sorting Array Elements By Frequency | Set 3 (Using STL))
+[按频率对数组元素进行排序 | 系列 3（使用 STL）](http://Sorting Array Elements By Frequency | Set 3 (Using STL))
 
-以上所有方法均在 O（n Log n）时间内工作，其中 n 是元素总数。 在这篇文章中，讨论了一种在 **O（n + m Log m）**时间中工作的新方法，其中 n 是元素总数，m 是不同元素总数。
+以上所有方法均在`O(n Log n)`时间内工作，其中 n 是元素总数。 在这篇文章中，讨论了一种在 **O（n + m Log m）**时间中工作的新方法，其中 n 是元素总数，m 是不同元素总数。
 
 这个想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)。
 

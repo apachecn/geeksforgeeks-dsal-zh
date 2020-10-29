@@ -1,4 +1,4 @@
-# 查找相同级别的叶子数据总和的乘积| 设置 2
+# 查找相同级别的叶子数据总和的乘积 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/find-product-of-sums-of-data-of-leaves-at-same-levels-set-2/](https://www.geeksforgeeks.org/find-product-of-sums-of-data-of-leaves-at-same-levels-set-2/)
 

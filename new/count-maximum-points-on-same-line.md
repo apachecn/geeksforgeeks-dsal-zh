@@ -22,7 +22,7 @@ line are 4, those point are {0, 0}, {1, 1}, {2, 2},
 
 1.  如果两个点分别是（x1，y1）和（x2，y2），则它们的斜率将是（y2 – y1）/（x2 – x1），可以是双精度值 并可能导致精度问题。 为了消除精度问题，我们将斜率视为对（（y2 – y1），（x2 – x1））而不是比率，并在插入映射之前将其对的 gcd 减小。 在下面的代码中，垂直或重复的代码点将单独处理。
 
-2.  如果我们使用 C++ 中的 [unordered_map 或 Java](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 中的 [HashMap 来存储斜率对，则解的总时间复杂度将为 O（n ^ 2）](https://www.geeksforgeeks.org/hashmap-treemap-java/)
+2.  如果我们使用 C++ 中的 [unordered_map 或 Java](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 中的 [HashMap 来存储斜率对，则解的总时间复杂度将为`O(N ^ 2)`](https://www.geeksforgeeks.org/hashmap-treemap-java/)
 
 ## C++
 

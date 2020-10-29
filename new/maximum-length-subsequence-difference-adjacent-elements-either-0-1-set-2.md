@@ -1,4 +1,4 @@
-# 最大长度子序列，相邻元素之间的差为 0 或 1 | 设置 2
+# 最大长度子序列，相邻元素之间的差为 0 或 1 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/)
 

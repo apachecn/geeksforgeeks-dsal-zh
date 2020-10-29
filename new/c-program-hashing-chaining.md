@@ -16,7 +16,7 @@
 
 ![](img/9f7240401363f22b94eb01c1c94738d1.png)
 
-请参考[哈希 | 设置 2（单独链接）](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)以获得详细信息。
+请参考[哈希 | 系列 2（单独链接）](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)以获得详细信息。
 
 我们在 C++ 中使用[列表](https://www.geeksforgeeks.org/list-cpp-stl/)，该列表在内部实现为链接列表（更快的插入和删除）。
 

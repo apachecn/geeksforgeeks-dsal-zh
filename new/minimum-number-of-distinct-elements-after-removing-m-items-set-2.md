@@ -1,4 +1,4 @@
-# 删除 M 个项目后，不同元素的最小数量| 设置 2
+# 删除 M 个项目后，不同元素的最小数量 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/](https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items-set-2/)
 

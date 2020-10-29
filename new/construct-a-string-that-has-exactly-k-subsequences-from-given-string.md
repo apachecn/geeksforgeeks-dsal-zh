@@ -2,39 +2,50 @@
 
 > 原文：[https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/](https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/)
 
-构造一个具有完全 K 个子序列的字符串
+构造一个具有完全`K`个子序列的字符串
 
-给定字符串 **str** 和整数 **K** ，任务是找到字符串 **S** ，使其具有给定的 **K** 子序列 字符串 **str** 。
+给定字符串`str`和整数`K`，任务是找到字符串`S`，使其具有给定的`K`子序列 字符串`str`。
 
 **范例**：
 
-> **输入**：str =“ gfg”，K = 10
-> **输出**：gggggffg
+> **输入**：`str = "gfg", K = 10`
+>
+> **输出**：`gggggffg`
+>
 > **说明**：。
-> 可能有 10 个子序列 给定字符串“ gggggffg”。 它们是：
-> 1\. **g** gggg **f** f **g** 2\. [g **g** ggg **f [** f **g** 3\. [gg **g** gg **f** f **g**
-> 4\. ggg **g** g **f** f **g** 5 [gggg **gf** f **g**
-> 6\. **g** ggggf **fg** [
-> 7\. g **g** gggf **fg**
-> 8\. g ]
-> 9\. ggg **g** gf **fg**
-> 10\. ggggg **g** f **fg** 。
-> **输入**：str =“代码”，K = 20
-> **输出**：cccccoodde
+>
+> 可能有 10 个子序列 给定字符串`"gggggffg"`。 它们是：
+>
+> 1.  𝐠gggg𝐟f𝐠 
+> 2.  g𝐠ggg𝐟f𝐠 
+> 3.  gg𝐠gg𝐟f𝐠
+> 4.  ggg𝐠g𝐟f𝐠 
+> 5.  gggg𝐠𝐟f𝐠
+> 6.  𝐠ggggf𝐟𝐠
+> 7.  g𝐠gggf𝐟𝐠
+> 8.  gg𝐠ggf𝐟𝐠
+> 9.  ggg𝐠gf𝐟𝐠
+> 0.  ggggg𝐠f𝐟𝐠
+>
+> **输入**：`str = "code", K = 20`
+>
+> **输出**：`cccccoodde`
+>
 > **说明**：
-> 有 20 种可能 字符串“ cccccoodde”的子序列。
+>
+> 字符串`"cccccoodde"`有 20 种可能的子序列。
 
 **方法**：
 
 要解决上述问题，我们必须遵循以下步骤：
 
-*   这个想法是找到 K 的[主要因子](https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)并存储这些主要因子（例如 ***因素*** ）。
+*   这个想法是找到`K`的[主要因子](https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)并存储这些主要因子（例如`factor`）。
 
-*   创建给定字符串大小的空数组 ***计数*** ，以将每个字符的计数存储在结果字符串 **s** 中。 用 1 初始化数组。
+*   创建给定字符串大小的空数组`count`，以将每个字符的计数存储在结果字符串`s`中。 用 1 初始化数组。
 
-*   现在，从列表*中弹出元素*，并以循环的方式乘以数组的每个位置，直到列表为空。 最后，我们获得了数组中 str 每个字符的数量。
+*   现在，从列表中弹出元素，并以循环的方式乘以数组的每个位置，直到列表为空。 最后，我们获得了数组中`str`每个字符的数量。
 
-*   在数组 ***count []*** 中进行迭代，并将每个字符 **ch** 的字符数附加到结果字符串 **s** 中。
+*   在数组`count[]`中进行迭代，并将每个字符`ch`的字符数附加到结果字符串`s`中。
 
 下面是上述方法的实现：
 
@@ -383,9 +394,9 @@ cccccoodde
 
 ```
 
-**时间复杂度**：*O（N * log <sub>2</sub> （log <sub>2</sub> （N）））*
+**时间复杂度**：`O(N * log2(log2(N)))`
 
-**辅助空间**：**`O(K)`**
+**辅助空间**：`O(K)`
 
 
 

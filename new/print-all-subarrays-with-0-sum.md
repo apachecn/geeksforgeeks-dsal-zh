@@ -20,7 +20,7 @@ Subarray found from Index 0 to 10
 
 相关文章：[查找是否存在一个总和为 0 的子数组](https://www.geeksforgeeks.org/find-subarray-with-given-sum/)
 
-一个简单的解决方案是一一考虑所有子数组，并检查每个子数组的总和是否等于 0。 该解决方案的复杂度为 O（n ^ 2）。
+一个简单的解决方案是一一考虑所有子数组，并检查每个子数组的总和是否等于 0。 该解决方案的复杂度为`O(N ^ 2)`。
 
 更好的方法是使用哈希。
 

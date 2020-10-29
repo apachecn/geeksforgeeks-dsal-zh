@@ -1,8 +1,8 @@
-# 将数组转换为简化形式| 设置 1（简单和哈希）
+# 将数组转换为简化形式 | 系列 1（简单和哈希）
 
 > 原文：[https://www.geeksforgeeks.org/convert-an-array-to-reduced-form-set-1-simple-and-hashing/](https://www.geeksforgeeks.org/convert-an-array-to-reduced-form-set-1-simple-and-hashing/)
 
-给定具有 n 个不同元素的数组，请将给定数组转换为所有元素都在 0 到 n-1 范围内的形式。 元素的顺序相同，即，0 代替最小元素，1 代表第二个最小元素，…n-1 代表最大元素。
+给定具有`n`个不同元素的数组，请将给定数组转换为所有元素都在 0 到`n-1`范围内的形式。 元素的顺序相同，即，0 代替最小元素，1 代表第二个最小元素，`n-1`代表最大元素。
 
 ```
 Input:  arr[] = {10, 40, 20}
@@ -13,9 +13,9 @@ Output: arr[] = {0, 1, 4, 3, 2}
 
 ```
 
-预期时间复杂度为 O（n Log n）。
+预期时间复杂度为`O(n Log n)`。
 
-## [我们强烈建议您单击此处并进行实践，然后再继续解决方案。](https://practice.geeksforgeeks.org/problem-page.php?pid=608)
+
 
 **方法 1（简单）**
 
@@ -25,17 +25,17 @@ Output: arr[] = {0, 1, 4, 3, 2}
 
 这个想法是使用哈希和排序。 以下是步骤。
 
-1.  创建一个临时数组并将给定数组的内容复制到 temp []。 这需要`O(n)`时间。
+1.  创建一个临时数组并将给定数组的内容复制到`temp[]`。 这需要`O(n)`时间。
 
-2.  以升序对 temp []进行排序。 这需要 O（n Log n）时间。
+2.  以升序对`temp[]`进行排序。 这需要`O(n Log n)`时间。
 
 3.  创建一个空的哈希表。 这需要`O(1)`时间。
 
-4.  从左到右遍历 temp []并将数字及其值的映射（在转换后的数组中）存储在哈希表中。 这平均需要`O(n)`时间。
+4.  从左到右遍历`temp[]`并将数字及其值的映射（在转换后的数组中）存储在哈希表中。 这平均需要`O(n)`时间。
 
 5.  遍历给定的数组，并使用哈希表将元素更改为其位置。 这平均需要`O(n)`时间。
 
-该解决方案的总时间复杂度为 O（n Log n）。
+该解决方案的总时间复杂度为`O(n Log n)`。
 
 以下是上述想法的实现。
 
@@ -290,7 +290,7 @@ Converted Array is
 
 ```
 
-[**将数组转换为简化形式| 集 2（使用向量对）**](https://www.geeksforgeeks.org/convert-array-reduced-form-set-2-using-vector-pairs/)
+[**将数组转换为简化形式 | 系列 2（使用向量对）**](https://www.geeksforgeeks.org/convert-array-reduced-form-set-2-using-vector-pairs/)
 
 本文由 **Dheeraj Gupta** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 

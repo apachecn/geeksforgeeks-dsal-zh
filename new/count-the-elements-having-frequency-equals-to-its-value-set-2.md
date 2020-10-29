@@ -1,4 +1,4 @@
-# 计算频率等于其值的元素| 设置 2
+# 计算频率等于其值的元素 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/)
 

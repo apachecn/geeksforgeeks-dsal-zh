@@ -1,4 +1,4 @@
-# 两个链表的并集和相交| 设置 2（使用合并排序）
+# 两个链表的并集和相交 | 系列 2（使用合并排序）
 
 > 原文：[https://www.geeksforgeeks.org/union-intersection-two-linked-lists-set-2-using-merge-sort/](https://www.geeksforgeeks.org/union-intersection-two-linked-lists-set-2-using-merge-sort/)
 

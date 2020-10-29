@@ -23,7 +23,7 @@ Explanation : 11/2 = 5.5
 
 ```
 
-## [我们强烈建议您单击此处并进行实践，然后再继续解决方案。](https://practice.geeksforgeeks.org/problem-page.php?pid=514)
+
 
 **小数部分何时重复？**
 

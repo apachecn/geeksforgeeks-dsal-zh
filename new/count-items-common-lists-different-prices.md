@@ -17,7 +17,7 @@ lists but with different prices.
 
 ```
 
-**来源**：[认知访谈经验| 设置 5。](https://www.geeksforgeeks.org/cognizant-interview-experience-set-5-campus-associate/)
+**来源**：[认知访谈经验 | 系列 5。](https://www.geeksforgeeks.org/cognizant-interview-experience-set-5-campus-associate/)
 
 **方法 1（朴素方法）**：使用两个嵌套循环将 **list1** 的每个项目与 **list2** 的所有项目进行比较。 如果找到价格不同的匹配项，则增加**计数**。
 

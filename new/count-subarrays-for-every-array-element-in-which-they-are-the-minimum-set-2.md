@@ -1,4 +1,4 @@
-# 为每个最小的数组元素计数子数组| 设置 2
+# 为每个最小的数组元素计数子数组 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 

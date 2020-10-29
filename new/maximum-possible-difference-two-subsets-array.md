@@ -317,7 +317,7 @@ Maximum Difference = 20
 
 ```
 
-**时间复杂度为 O（n log n）的算法**：
+**时间复杂度为`O(n Log n)`的算法**：
 
 ```
 -> sort the array

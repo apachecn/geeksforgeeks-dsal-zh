@@ -1,4 +1,4 @@
-# 给定一个单词序列，一起打印所有异序词| 设置 1
+# 给定一个单词序列，一起打印所有异序词 | 系列 1
 
 > 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
 

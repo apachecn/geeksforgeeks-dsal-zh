@@ -315,7 +315,7 @@ class GFG
 
 [打印给定整数数组的所有不同元素](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)
 
-[查找`O(n)`时间和`O(1)`多余空间中的重复项| 设置 1](https://www.geeksforgeeks.org/find-duplicates-in-on-time-and-constant-extra-space/)
+[查找`O(n)`时间和`O(1)`多余空间中的重复项 | 系列 1](https://www.geeksforgeeks.org/find-duplicates-in-on-time-and-constant-extra-space/)
 
 [在`O(n)`中的数组中重复并通过使用`O(1)`多余空间| Set-2](https://www.geeksforgeeks.org/duplicates-array-using-o1-extra-space-set-2/)
 

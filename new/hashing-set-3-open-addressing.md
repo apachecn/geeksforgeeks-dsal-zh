@@ -1,10 +1,10 @@
-# 哈希| 设置 3（开放地址）
+# 哈希 | 系列 3（开放地址）
 
 > 原文：[https://www.geeksforgeeks.org/hashing-set-3-open-addressing/](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)
 
 我们强烈建议您在下面的帖子中提及该内容。
 
-[哈希| 设置 1（简介）](http://quiz.geeksforgeeks.org/hashing-set-1-introduction/)，
+[哈希 | 系列 1（简介）](http://quiz.geeksforgeeks.org/hashing-set-1-introduction/)，
 
 [哈希| 第 2 组（单独链接）](http://quiz.geeksforgeeks.org/hashing-set-2-separate-chaining/)
 

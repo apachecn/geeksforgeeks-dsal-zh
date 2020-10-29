@@ -1,4 +1,4 @@
-# 螺母&螺栓问题（锁定&钥匙问题）| 设置 2（哈希映射）
+# 螺母&螺栓问题（锁定&钥匙问题） | 系列 2（哈希映射）
 
 > 原文：[https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem-set-2-hashmap/](https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem-set-2-hashmap/)
 
@@ -21,7 +21,7 @@ Output : Matched nuts and bolts are-
 
 我们在下面的文章中讨论了基于排序的解决方案。
 
-[螺母&螺栓问题（锁定&钥匙问题）| 设置 1](https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem/)
+[螺母&螺栓问题（锁定&钥匙问题） | 系列 1](https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem/)
 
 在这篇文章中，讨论了基于哈希映射的方法。
 

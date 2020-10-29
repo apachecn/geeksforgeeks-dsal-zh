@@ -1,4 +1,4 @@
-# Zoho 在校园大道上| 设置 24（软件开发人员）
+# Zoho 在校园大道上 | 系列 24（软件开发人员）
 
 > 原文：[https://www.geeksforgeeks.org/zoho-campus-drive-set-24-software-developer/](https://www.geeksforgeeks.org/zoho-campus-drive-set-24-software-developer/)
 

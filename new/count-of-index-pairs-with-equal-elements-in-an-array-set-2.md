@@ -1,4 +1,4 @@
-# 数组中具有相等元素的索引对的计数| 设置 2
+# 数组中具有相等元素的索引对的计数 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/count-of-index-pairs-with-equal-elements-in-an-array-set-2/](https://www.geeksforgeeks.org/count-of-index-pairs-with-equal-elements-in-an-array-set-2/)
 

@@ -1,4 +1,4 @@
-# DBMS 中的文件组织| 设置 2
+# DBMS 中的文件组织 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/file-organization-in-dbms-set-4/](https://www.geeksforgeeks.org/file-organization-in-dbms-set-4/)
 

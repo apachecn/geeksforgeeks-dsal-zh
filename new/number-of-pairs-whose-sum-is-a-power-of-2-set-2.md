@@ -1,4 +1,4 @@
-# 对的总数为 2 的幂| 设置 2
+# 对的总数为 2 的幂 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2-set-2/](https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2-set-2/)
 

@@ -1,4 +1,4 @@
-# 以垂直顺序打印二叉树| 设置 2（基于映射的方法）
+# 以垂直顺序打印二叉树 | 系列 2（基于映射的方法）
 
 > 原文：[https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
 
@@ -317,7 +317,7 @@ Vertical order traversal is
 
 请参阅以下帖子，以了解基于级别订单遍历的解决方案。 下面的帖子确保垂直线节点的打印顺序与树中出现的顺序相同。
 
-[以垂直顺序打印二叉树| 设置 3（使用级别顺序遍历）](https://www.geeksforgeeks.org/print-a-binary-tree-in-vertical-order-set-3-using-level-order-traversal/)
+[以垂直顺序打印二叉树 | 系列 3（使用级别顺序遍历）](https://www.geeksforgeeks.org/print-a-binary-tree-in-vertical-order-set-3-using-level-order-traversal/)
 
 **另一种使用** **computeIfAbsent 方法的方法**：
 

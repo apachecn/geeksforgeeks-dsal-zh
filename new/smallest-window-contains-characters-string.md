@@ -147,7 +147,7 @@ the distinct characters of given string.
 
 *   **Complexiy Analysis:**
 
-    *   **时间复杂度**：O（N ^ 2）。
+    *   **时间复杂度**：`O(N ^ 2)`。
 
         需要这段时间来生成长度为“ N”的字符串的所有可能的子字符串。
 

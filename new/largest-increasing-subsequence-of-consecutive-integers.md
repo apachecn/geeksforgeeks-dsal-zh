@@ -19,7 +19,7 @@ Output : Size of LIS = 2
 
 ```
 
-通过 [LIS](https://www.geeksforgeeks.org/longest-increasing-subsequence/) 的概念可以轻松解决此问题，其中每个下一个更大的元素与以前的元素之间的差为 1。但这将花费 O（n ^ 2）的时间复杂度。
+通过 [LIS](https://www.geeksforgeeks.org/longest-increasing-subsequence/) 的概念可以轻松解决此问题，其中每个下一个更大的元素与以前的元素之间的差为 1。但这将花费`O(N ^ 2)`的时间复杂度。
 
 通过使用散列，我们可以找到时间连续性为`O(n)`且具有连续整数的最长递增序列的大小。
 
