@@ -19,7 +19,7 @@ Output: arr[] = {0, 1, 4, 3, 2}
 
 **方法 1（简单）**
 
-一个简单的解决方案是首先找到最小元素，将其替换为 0，考虑剩余数组，在剩余数组中找到最小值，然后将其替换为 1，依此类推。 该解决方案的时间复杂度为 O（n <sup>2</sup> ）
+一个简单的解决方案是首先找到最小元素，将其替换为 0，考虑剩余数组，在剩余数组中找到最小值，然后将其替换为 1，依此类推。 该解决方案的时间复杂度为`O(N ^ 2)`
 
 **方法 2（高效）**
 
@@ -290,7 +290,7 @@ Converted Array is
 
 ```
 
-**[将数组转换为简化形式| 集 2（使用向量对）](https://www.geeksforgeeks.org/convert-array-reduced-form-set-2-using-vector-pairs/)**
+[**将数组转换为简化形式| 集 2（使用向量对）**](https://www.geeksforgeeks.org/convert-array-reduced-form-set-2-using-vector-pairs/)
 
 本文由 **Dheeraj Gupta** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 

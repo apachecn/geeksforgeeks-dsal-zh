@@ -181,7 +181,7 @@ findSmallestArray(A, n)
 
 ```
 
-**时间复杂度**：*O（N <sup>2</sup> ）*
+**时间复杂度**：*`O(N ^ 2)`*
 
 
 

@@ -195,7 +195,7 @@ public static void Main(string []arg)
 
 ```
 
-**时间复杂度**：上述实现的时间复杂度为 O（n <sup>2</sup> Log n）。 我们可以使用 [unordered_set 和用户定义的哈希函数](https://www.geeksforgeeks.org/how-to-create-an-unordered_set-of-user-defined-class-or-struct-in-c/)将其优化为 O（n <sup>2</sup> ）。
+**时间复杂度**：上述实现的时间复杂度为 O（n <sup>2</sup> Log n）。 我们可以使用 [unordered_set 和用户定义的哈希函数](https://www.geeksforgeeks.org/how-to-create-an-unordered_set-of-user-defined-class-or-struct-in-c/)将其优化为`O(N ^ 2)`。
 
 **高效方法**：首先找出数组中唯一元素的数量。 令唯一元素的数量为 **x** 。 那么，唯一对的数量将是 **x <sup>2</sup>** 。 这是因为每个唯一元素都可以与其他每个唯一元素（包括自身）形成一对。
 

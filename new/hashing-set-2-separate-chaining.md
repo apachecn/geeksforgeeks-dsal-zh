@@ -32,7 +32,7 @@
 
 [![hashChaining](img/87b2f4b25bdb1c562607a6c32a013a07.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2015/07/hashChaining1.png)
 
-**[C++程序，用于通过链接进行哈希](https://www.geeksforgeeks.org/c-program-hashing-chaining/)**
+[**C++程序，用于通过链接进行哈希**](https://www.geeksforgeeks.org/c-program-hashing-chaining/)
 
 **优点**：
 

@@ -15,13 +15,13 @@
 
 **朴素的方法**：解决该问题的最简单方法是[从给定数组](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)生成所有可能的对，并且对于每对，[检查该对的和是否是幂 是否为 2](https://www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/) 。
 
-***时间复杂度**：O（N <sup>2</sup> ）
+***时间复杂度**：`O(N ^ 2)`
 
 **辅助空间**：`O(1)`*
 
 **有效方法**：可以使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 优化上述方法。 请按照以下步骤解决问题：
 
-*   创建 **[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)** ，以存储数组 **arr []** 的每个元素的[频率。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
+*   创建 [**映射**](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) ，以存储数组 **arr []** 的每个元素的[频率。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
 
 *   初始化变量**和**以存储总和等于 2 的任何**幂的对的计数。**
 

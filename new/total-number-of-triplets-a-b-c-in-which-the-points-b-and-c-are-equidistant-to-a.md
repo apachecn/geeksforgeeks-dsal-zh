@@ -26,7 +26,7 @@
 
 *   对列表中每个不同的三元组点重复相同的过程。 为了计算距离，我们将使用各个坐标之间的距离的[平方。](https://www.geeksforgeeks.org/program-distance-two-points-earth/)
 
-*   使用 **[哈希图](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)** 存储单个三元组的各种等距点对。
+*   使用 [**哈希图**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 存储单个三元组的各种等距点对。
 
 *   一旦我们计算了对的总数，就会计算出所需的排列。 我们对所有不同的三元组重复此过程，并将所有排列添加到结果中。
 
@@ -85,7 +85,7 @@ return 0;
 
 ```
 
-**时间复杂度**：O（N <sup>2</sup> ）
+**时间复杂度**：`O(N ^ 2)`
 
 
 

@@ -19,7 +19,7 @@
 
 **朴素的方法**：解决该问题的最简单方法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并为每个子数组检查其总和是否等于 **K** 。 打印所有此类子数组的最小长度。
 
-**时间复杂度**：O（N <sup>2</sup> ）
+**时间复杂度**：`O(N ^ 2)`
 
 **辅助空间**：`O(1)`
 

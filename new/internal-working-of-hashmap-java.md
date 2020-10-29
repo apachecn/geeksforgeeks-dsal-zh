@@ -48,13 +48,13 @@ class Key
 
 在这里，覆盖的 hashCode（）方法返回第一个字符的 ASCII 值作为哈希码。 因此，只要 key 的第一个字符相同，哈希码就会相同。 您不应在程序中达到此标准。 它仅用于演示目的。 由于 HashMap 还允许使用 null 键，因此 null 的哈希码将始终为 0。
 
-**[hashCode（）方法](https://www.geeksforgeeks.org/equals-hashcode-methods-java/)**
+[**hashCode（）方法**](https://www.geeksforgeeks.org/equals-hashcode-methods-java/)
 
 hashCode（）方法用于获取对象的哈希码。 对象类的 hashCode（）方法以整数形式返回对象的内存引用。 hashCode（）方法的定义是公共的本地 hashCode（）。 它表明 hashCode（）的实现是本机的，因为 java 中没有任何直接方法来获取对象的引用。 可以提供您自己的 hashCode（）实现。
 
 在 HashMap 中，hashCode（）用于计算存储区，并因此计算索引。
 
-**[equals（）方法](https://www.geeksforgeeks.org/equals-hashcode-methods-java/)**
+[**equals（）方法**](https://www.geeksforgeeks.org/equals-hashcode-methods-java/)
 
 equals 方法用于检查 2 个对象是否相等。 此方法由 Object 类提供。 您可以在您的类中重写此方法以提供您自己的实现。
 

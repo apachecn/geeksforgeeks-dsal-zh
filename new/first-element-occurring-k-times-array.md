@@ -20,7 +20,7 @@
 
 **简单方法**：通过使用两个循环，计算数字在数组中出现的次数。
 
-**时间复杂度**：O（n <sup>2</sup> ）。
+**时间复杂度**：`O(N ^ 2)`。
 
 **高效方法**：将 [unordered_map](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 用于散列，因为范围未知。 脚步：
 

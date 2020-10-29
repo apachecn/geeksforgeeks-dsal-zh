@@ -24,7 +24,7 @@
 
 **辅助空间**：O（X）
 
-**高效方法**：想法是找到字符串中所有字符的 **[频率](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/)** 。 计算可以放在特定位置的字符的不同数量，并将计数数量减少 2，因为回文字符串的位置**（i）和（X – i）**相同。 如果 X 的长度为奇数，则我们必须在该位置 X / 2 处放置唯一的一个字符。
+**高效方法**：想法是找到字符串中所有字符的 [**频率**](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/) 。 计算可以放在特定位置的字符的不同数量，并将计数数量减少 2，因为回文字符串的位置**（i）和（X – i）**相同。 如果 X 的长度为奇数，则我们必须在该位置 X / 2 处放置唯一的一个字符。
 
 下面是上述方法的实现：
 

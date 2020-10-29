@@ -26,7 +26,7 @@ Output : NO
 
 [找出四个总和为给定值的元素| 集合 2（O（n ^ 2Logn）解决方案）](https://www.geeksforgeeks.org/find-four-elements-that-sum-to-a-given-value-set-2/)
 
-在这篇文章中，讨论了一种优化的解决方案，该解决方案平均可以在 O（n <sup>2</sup> ）中工作。
+在这篇文章中，讨论了一种优化的解决方案，该解决方案平均可以在`O(N ^ 2)`中工作。
 
 这个想法是创建一个散列图来存储对和。
 

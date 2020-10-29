@@ -197,7 +197,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度**：O（n <sup>2</sup> ）
+**时间复杂度**：`O(N ^ 2)`
 
 **注意**：请使用离线 IDE 编译以上代码。 在线编译器可能不支持 JavaFX。
 

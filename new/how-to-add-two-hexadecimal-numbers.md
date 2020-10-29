@@ -4,7 +4,7 @@
 
 给定两个十六进制数字 **str1** 和 **str2** ，任务是将两个十六进制数相加。
 
-> **[十六进制数字](https://www.geeksforgeeks.org/arithmetic-operations-of-hexadecimal-numbers/)** 系统通常缩写为“十六进制”，它是由 16 个符号组成的数字系统。 它使用十进制数字系统中的 10 个符号（由 0-9 表示）和六个额外的符号 A-F（代表十进制 10-15）。
+> [**十六进制数字**](https://www.geeksforgeeks.org/arithmetic-operations-of-hexadecimal-numbers/) 系统通常缩写为“十六进制”，它是由 16 个符号组成的数字系统。 它使用十进制数字系统中的 10 个符号（由 0-9 表示）和六个额外的符号 A-F（代表十进制 10-15）。
 
 **示例**：
 

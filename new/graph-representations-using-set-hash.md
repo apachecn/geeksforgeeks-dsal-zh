@@ -251,7 +251,7 @@ Edge from 0 to 3 not found.
 
 *   边缘不以任何顺序存储。
 
-**注意**：**[邻接矩阵表示](https://www.geeksforgeeks.org/graph-and-its-representations/)** 对于边缘搜索是最优化的，但是对于大的稀疏图，邻接矩阵的空间要求相对较高。 此外，邻接矩阵还有其他缺点，例如 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 和 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 变得昂贵，因为我们无法快速获取节点的所有相邻节点。
+**注意**：[**邻接矩阵表示**](https://www.geeksforgeeks.org/graph-and-its-representations/) 对于边缘搜索是最优化的，但是对于大的稀疏图，邻接矩阵的空间要求相对较高。 此外，邻接矩阵还有其他缺点，例如 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 和 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 变得昂贵，因为我们无法快速获取节点的所有相邻节点。
 
 本文由 [**vaibhav29498**](https://auth.geeksforgeeks.org/profile.php?user=vaibhav29498) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

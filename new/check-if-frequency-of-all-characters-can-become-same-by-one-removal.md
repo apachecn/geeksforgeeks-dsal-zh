@@ -6,23 +6,23 @@
 
 **示例**：
 
-> **输入**：str =“ xyyz”
-> **输出**：是
-> 我们可以从
-> 字符串上方删除字符 y，以使每个
-> 的频率 性格相同。
+> **输入**：`str = "xyyz"`
+>
+> **输出**：`Yes`
+>
+> 我们可以从字符串上方删除字符`y`，以使每个字段的频率相同。
 > 
-> **输入**：str =“ xyyzz”
-> **输出**：是
-> 我们可以从
-> 字符串上方删除字符“ x”以使每个
-> 的频率 性格相同。
+> **输入**：`str = "xyyzz"`
+>
+> **输出**：`Yes`
+>
+> 我们可以从字符串上方删除字符`x`以使每个字符的频率相同。
 > 
-> **输入**：str =“ xxxxyyzz”
-> **输出**：否
-> 仅通过最移开
-> 不可能使
-> 的每个字符的频率相同 字符串上方一个字符。
+> **输入**：`str = "xxxxyyzz"`
+>
+> **输出**：`No`
+>
+> 仅通过删除字符串上方一个字符，不可能使的每个字符的频率相同。
 
 **方法**：可以使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)的概念解决问题。 在此问题中要观察的主要问题是，此处的字符位置无关紧要，因此我们将计算字符的出现频率，如果所有字符都相同，那么我们就完成了操作，无需删除任何字符来产生频率 相同的字符，否则我们可以一遍遍地遍历所有字符，并将它们的频率降低一遍，如果所有频率都相同，那么我们将标记为最多可以去除一个字符并且如果频率不匹配，可以使字符频率相同 那么我们将再次增加该频率并循环其他字符。
 
@@ -490,7 +490,7 @@ Yes
 
 **时间复杂度**：`O(n)`假设字母大小恒定。
 
-本文由 **[Utkarsh Trivedi](https://in.linkedin.com/in/utkarsh-trivedi-253069a7)** 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由 [**Utkarsh Trivedi**](https://in.linkedin.com/in/utkarsh-trivedi-253069a7) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

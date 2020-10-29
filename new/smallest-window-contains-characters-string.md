@@ -32,7 +32,7 @@ the distinct characters of given string.
 
 <u>**方法 1**</u> ：这是使用 HashMap 解决问题的蛮力方法。
 
-*   **Approach :** For solving the problem we first have to find out all the distinct characters present in the string. This can be done using a **[HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)**. The next thing is to generate all the possible substrings. This follows by checking whether a substring generated has all the required characters(stored in the hash_map) or not. If yes, then compare its length with the minimum substring length which follows the above constraints, found till now.
+*   **Approach :** For solving the problem we first have to find out all the distinct characters present in the string. This can be done using a [**HashMap**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/). The next thing is to generate all the possible substrings. This follows by checking whether a substring generated has all the required characters(stored in the hash_map) or not. If yes, then compare its length with the minimum substring length which follows the above constraints, found till now.
 
     *[HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) ：* HashMap 自 Java 1.2 以来就是 Java 集合的一部分。 它提供了 Java Map 接口的基本实现。 它以（键，值）对存储数据。 要访问一个值，必须知道其键。 HashMap 被称为 HashMap，因为它使用了一种称为 Hashing 的技术。 散列是一种将大字符串转换为代表相同字符串的小字符串的技术。 较短的值有助于索引编制和更快的搜索。 HashSet 还内部使用 HashMap。 它在内部使用链接列表来存储已在 HashSet 中详细解释的键值对以及其他文章。
 
@@ -530,7 +530,7 @@ the distinct characters of given string.
 
 2.  [https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string- contains-all-characters-of-another-string /](https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/)
 
-本文由 **[Sahil Chhabra](https://www.facebook.com/sahil.chhabra.965)** 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由 [**Sahil Chhabra**](https://www.facebook.com/sahil.chhabra.965) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

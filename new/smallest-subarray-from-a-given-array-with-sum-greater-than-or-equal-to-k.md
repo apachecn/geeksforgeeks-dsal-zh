@@ -20,7 +20,7 @@
 
 解决该问题的最简单方法是[生成给定数组的所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)并检查哪个子数组总和大于或等于 **K** 。 在满足条件的所有此类子阵列中，打印具有最小长度的子阵列。
 
-***时间复杂度**：O（N <sup>2</sup> ）
+***时间复杂度**：`O(N ^ 2)`
 
 **辅助空间**：`O(1)`*
 

@@ -28,7 +28,7 @@ Output : 20
 
 ```
 
-一种简单的**解决方案**是考虑所有子阵列，并针对每个[子阵列检查其是否具有不同的元素或不使用哈希](http://quiz.geeksforgeeks.org/print-distinct-elements-given-integer-array/)。 并添加具有不同元素的所有子数组的长度。 如果我们使用哈希查找不同的元素，则在哈希搜索和插入操作花费`O(1)`时间的假设下，此方法花费 O（n <sup>2</sup> ）时间。
+一种简单的**解决方案**是考虑所有子阵列，并针对每个[子阵列检查其是否具有不同的元素或不使用哈希](http://quiz.geeksforgeeks.org/print-distinct-elements-given-integer-array/)。 并添加具有不同元素的所有子数组的长度。 如果我们使用哈希查找不同的元素，则在哈希搜索和插入操作花费`O(1)`时间的假设下，此方法花费`O(N ^ 2)`时间。
 
 **有效解决方案**基于以下事实：如果我们知道子数组 arr [i..j]中的所有元素都是不同的，则此子数组中不同元素子数组的所有长度之和为（（j- i + 1）*（j-i + 2））/ 2。 怎么样？ 子数组的可能长度为 1、2、3，……，j – i +1。 因此，总和为（（j – i +1）*（j – i +2））/ 2。
 
@@ -262,7 +262,7 @@ public class geeks
 
 该解决方案的时间复杂度为`O(n)`。 请注意，当 j 在所有外部循环中从 0 变为 n 时，内部循环总共运行 n 次。 因此，我们执行与`O(n)`相同的 O（2n）操作。
 
-本文由 **[Anuj Chauhan（anuj0503）](https://web.facebook.com/anuj0503)** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由 [**Anuj Chauhan（anuj0503）**](https://web.facebook.com/anuj0503) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

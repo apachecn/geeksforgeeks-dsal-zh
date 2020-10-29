@@ -22,13 +22,13 @@
 
 **朴素方法**：朴素方法是[从阵列中从左到右生成所有子阵列](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并检查这些子阵列中的任何一个是否具有负和。 如果是，则打印该子数组的开始和结束索引。
 
-***时间复杂度**：O（N <sup>2</sup> ）
+***时间复杂度**：`O(N ^ 2)`
 
 **辅助空间**：`O(1)`*
 
 **有效方法**：的想法是使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)解决问题。 步骤如下：
 
-1.  计算数组的 **[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)** 并将其存储到 **[HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)** 中。
+1.  计算数组的 [**前缀总和**](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/) 并将其存储到 [**HashMap**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中。
 
 2.  遍历数组，对于第 i 个<sup>索引（其中 i 的范围为 **[0，N – 1]** ），检查第 i 个<sup>索引</sup>的元素是否为 否定的。 如果是这样，则 arr [i]是必需的子数组。</sup>
 

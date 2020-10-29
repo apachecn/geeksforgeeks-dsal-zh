@@ -71,7 +71,7 @@
 
         ```
 
-        其中在标准库 *math.h* 中可用的函数 **[floor（x）](https://www.geeksforgeeks.org/ceil-floor-functions-cpp/)** 产生实数 x 的整数部分，而 **frac（ x）**产生小数部分。 **[frac（x）= x – floor（x）]**
+        其中在标准库 *math.h* 中可用的函数 [**floor（x）**](https://www.geeksforgeeks.org/ceil-floor-functions-cpp/) 产生实数 x 的整数部分，而 **frac（ x）**产生小数部分。 **[frac（x）= x – floor（x）]**
 
     *   乘法方法的优点是 *m 的值不是关键*，我们通常选择它为 2 的幂（ **m = 2 <sup>p</sup>** 一些整数 **p** ），因为我们随后可以轻松地在大多数计算机上实现该功能
 

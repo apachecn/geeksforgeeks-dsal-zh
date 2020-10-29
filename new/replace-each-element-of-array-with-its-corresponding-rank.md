@@ -25,7 +25,7 @@
 
 **朴素的方法**：朴素的方法是查找每个元素的等级为 **1 +** [**数组**](https://www.geeksforgeeks.org/count-smaller-equal-elements-sorted-array/) 中较小元素的数量 当前元素。
 
- ***时间复杂度**：O（N <sup>2</sup> ）
+ ***时间复杂度**：`O(N ^ 2)`
 
 **辅助空间**：`O(1)`
 

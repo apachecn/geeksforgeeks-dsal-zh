@@ -18,7 +18,7 @@ Output : 5
 
 ```
 
-**简单解决方案**遍历 str 的所有子串，并检查它们是否包含等于 0、1、2 的值。 str 的子字符串总数为 O（n <sup>2</sup> ），检查每个子字符串的计数需要`O(n)`次，因此解决此问题所需的总时间为 O（n <sup>3</sup> ） 时间用蛮力方法。
+**简单解决方案**遍历 str 的所有子串，并检查它们是否包含等于 0、1、2 的值。 str 的子字符串总数为`O(N ^ 2)`，检查每个子字符串的计数需要`O(n)`次，因此解决此问题所需的总时间为 O（n <sup>3</sup> ） 时间用蛮力方法。
 
 一种有效的**解决方案**是跟踪计数 0、1 和 2。
 
@@ -176,7 +176,7 @@ Output:
 
 ```
 
-本文由 **[Utkarsh Trivedi](https://in.linkedin.com/in/utkarsh-trivedi-253069a7)** 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由 [**Utkarsh Trivedi**](https://in.linkedin.com/in/utkarsh-trivedi-253069a7) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

@@ -22,7 +22,7 @@
 
 **朴素的方法**：朴素的方法是将[不同元素存储在给定数组](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)中的数组 **temp []** 中，并打印出最大和最小元素差 数组 **temp []** 。
 
-**时间复杂度**：O（N <sup>2</sup> ）
+**时间复杂度**：`O(N ^ 2)`
 
 **辅助空间**：`O(n)`
 

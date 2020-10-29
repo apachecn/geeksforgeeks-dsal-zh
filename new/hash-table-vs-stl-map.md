@@ -26,7 +26,7 @@
 
 3.  我们可能还希望实现一些方法来根据容量动态增加或减少哈希表的大小。 例如，当元素数与表大小的比率超过某个阈值时，我们可能希望增加哈希表的大小。 这将意味着创建一个新的哈希表，并将条目从旧表转移到新表。 因为这是一项昂贵的操作，所以我们要注意不要经常这样做。
 
-**[STL 映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)**
+[**STL 映射**](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)
 
 容器映射是 C++ 的[标准库中包含的关联容器。 此类的定义位于名称空间 std 的头文件“ map”中。](https://www.geeksforgeeks.org/stack-in-cpp-stl/)
 

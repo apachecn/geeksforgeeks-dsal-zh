@@ -389,5 +389,5 @@ Reading r from stream
 First non-repeating character so far is a
 ```
 
-本文由 **[Amit Jain](http://in.linkedin.com/in/amitjainju)** 贡献。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
+本文由 [**Amit Jain**](http://in.linkedin.com/in/amitjainju) 贡献。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

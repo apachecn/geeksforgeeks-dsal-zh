@@ -67,7 +67,7 @@ world                 doc1, doc2
 
 *   大的存储开销和更新，删除和插入的高维护成本。
 
- **[反向索引与正向索引之间的差异](https://www.geeksforgeeks.org/difference-inverted-index-forward-index/)**
+ [**反向索引与正向索引之间的差异**](https://www.geeksforgeeks.org/difference-inverted-index-forward-index/)
 
 
 
