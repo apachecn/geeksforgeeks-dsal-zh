@@ -493,7 +493,7 @@ Unique Counts of connected components: 2
 
 从上述实现中可以明显看出，使用深度优先搜索算法遍历了图形。 使用 Set 容器存储单个计数，其中插入操作花费 O（1）时间。 总体复杂度仅基于 DFS 算法递归运行所花费的时间。 因此，程序的时间复杂度为 **O（E + V）**，其中 E 是边的数量，V 是图形的顶点数量。
 
-**辅助空间**：*O（N）*
+**辅助空间**：*`O(n)`*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

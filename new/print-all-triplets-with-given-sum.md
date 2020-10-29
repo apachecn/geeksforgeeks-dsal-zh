@@ -473,7 +473,7 @@ public class GFG {
 
     使用嵌套的 for 循环将时间复杂度提高到 n <sup>2</sup> 。
 
-*   **辅助空间**：O（n）。
+*   **辅助空间**：`O(n)`。
 
     由于 unordered_set 数据结构已用于存储值。
 

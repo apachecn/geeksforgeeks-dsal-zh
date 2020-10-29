@@ -318,9 +318,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：O（N）*
+***时间复杂度**：`O(n)`*
 
-***辅助空间**：O（N）*
+***辅助空间**：`O(n)`*
 
 
 

@@ -235,7 +235,7 @@ if __name__ == "__main__":
 
 **时间复杂度**：O（NlogN），其中 N 是点数
 
-**空间复杂度**：O（N）
+**空间复杂度**：`O(n)`
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

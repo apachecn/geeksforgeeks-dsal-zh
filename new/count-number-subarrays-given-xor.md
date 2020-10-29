@@ -312,7 +312,7 @@ Number of subarrays having given XOR is 4
 
 上述解决方案的时间复杂度为 O（n <sup>2</sup> ）。
 
-有效的**解决方案**在 O（n）时间内解决了上述问题。 让我们将[i + 1，j]范围内的所有元素的 XOR 称为 A，将[0，i]范围内的所有元素称为 B，将[0，j]范围内的所有元素称为 C。 在 C 的情况下，B 和 C 中[0，i]中的重叠元素为零，并且我们得到[i + 1，j]范围内所有元素的 XOR，即 A。由于 A = B XOR C，我们得到 B = A XORC。现在，如果我们知道 C 的值并将 A 的值取为 m，我们将 A 的计数作为所有满足该关系的 B 的计数。 本质上，我们获得每个 C 的 XOR-sum m 的所有子数组的计数。当我们将这个计数的总和作为 C 时，我们得到了答案。
+有效的**解决方案**在`O(n)`时间内解决了上述问题。 让我们将[i + 1，j]范围内的所有元素的 XOR 称为 A，将[0，i]范围内的所有元素称为 B，将[0，j]范围内的所有元素称为 C。 在 C 的情况下，B 和 C 中[0，i]中的重叠元素为零，并且我们得到[i + 1，j]范围内所有元素的 XOR，即 A。由于 A = B XOR C，我们得到 B = A XORC。现在，如果我们知道 C 的值并将 A 的值取为 m，我们将 A 的计数作为所有满足该关系的 B 的计数。 本质上，我们获得每个 C 的 XOR-sum m 的所有子数组的计数。当我们将这个计数的总和作为 C 时，我们得到了答案。
 
 ```
 1) Initialize ans as 0.
@@ -634,7 +634,7 @@ Number of subarrays having given XOR is 4
 
 ```
 
-**时间复杂度**：O（n）
+**时间复杂度**：`O(n)`
 
 **替代方法**：使用 Python 词典存储前缀 XOR
 
@@ -677,9 +677,9 @@ if __name__ == '__main__':
 Number of subarrays having given XOR is 4
 ```
 
-**时间复杂度**：O（n）
+**时间复杂度**：`O(n)`
 
-**空间复杂度**：O（n）
+**空间复杂度**：`O(n)`
 
 本文由 **Anmol Ratnam** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

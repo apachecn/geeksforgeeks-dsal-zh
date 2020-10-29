@@ -21,7 +21,7 @@
 
 One by one we go through all the substrings of the queries and check whether the substring under consideration is a palindrome or not.
 
-由于存在 Q 个查询，每个查询可能需要 O（N）个最坏情况的时间来回答，因此此方法在最坏情况下需要 O（Q.N）个时间。 尽管这是一种就地/空间高效的算法，但仍有一种更有效的方法可以做到这一点。
+由于存在 Q 个查询，每个查询可能需要`O(n)`个最坏情况的时间来回答，因此此方法在最坏情况下需要 O（Q.N）个时间。 尽管这是一种就地/空间高效的算法，但仍有一种更有效的方法可以做到这一点。
 
 <center>**Method 2 (Cumulative Hash)**</center>
 

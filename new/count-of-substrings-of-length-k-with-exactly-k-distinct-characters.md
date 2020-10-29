@@ -26,7 +26,7 @@
 
 **天真的方法**：
 
-这个想法是生成所有长度为 **K** 的子字符串，并为每个子字符串计数不同字符。 如果字符串的长度为 **N** ，则可以有 **N – K + 1** 个子字符串，长度为 **K** 。 生成这些子字符串将需要 **O（N）**复杂度，而检查每个子字符串将需要 **O（K）**复杂度，因此将整体复杂度设为 **O（N * K） 。**
+这个想法是生成所有长度为 **K** 的子字符串，并为每个子字符串计数不同字符。 如果字符串的长度为 **N** ，则可以有 **N – K + 1** 个子字符串，长度为 **K** 。 生成这些子字符串将需要 **`O(n)`**复杂度，而检查每个子字符串将需要 **O（K）**复杂度，因此将整体复杂度设为 **O（N * K） 。**
 
 **高效方法**：
 
@@ -434,7 +434,7 @@ public static void Main(string[] args) 
 
 ```
 
-**时间复杂度**：O（N）
+**时间复杂度**：`O(n)`
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

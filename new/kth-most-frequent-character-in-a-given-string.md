@@ -93,9 +93,9 @@ r
 
 ```
 
-**时间复杂度**：*O（NlogN）*请注意，这是时间复杂度的上限。 如果我们认为字母大小为常数（例如小写英文字母大小为 26），则可以说时间复杂度为 O（N）。 矢量大小永远不会超过字母大小。
+**时间复杂度**：*O（NlogN）*请注意，这是时间复杂度的上限。 如果我们认为字母大小为常数（例如小写英文字母大小为 26），则可以说时间复杂度为`O(n)`。 矢量大小永远不会超过字母大小。
 
-**辅助空间**：*O（N）*
+**辅助空间**：*`O(n)`*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

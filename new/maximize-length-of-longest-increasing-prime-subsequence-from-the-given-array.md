@@ -27,7 +27,7 @@
 
 ***时间复杂度**：O（2 <sup>N</sup> ）*
 
-***辅助空间**：O（N）*
+***辅助空间**：`O(n)`*
 
 **高效方法**：的想法是使用[动态编程](https://www.geeksforgeeks.org/dynamic-programming/)方法来优化上述方法。 此问题是[最长增加质数子序列（LIPS）问题](https://www.geeksforgeeks.org/length-of-longest-increasing-prime-subsequence-from-a-given-array/)的基本变体。 请按照以下步骤解决问题。
 
@@ -209,7 +209,7 @@ public class Main {
 
 ***时间复杂度**：O（N <sup>2</sup> logN）*
 
-***辅助空间**：O（N）*
+***辅助空间**：`O(n)`*
 
 
 

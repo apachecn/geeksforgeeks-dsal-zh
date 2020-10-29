@@ -255,9 +255,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：O（N）*
+***时间复杂度**：`O(n)`*
 
-***辅助空间**：O（N）*
+***辅助空间**：`O(n)`*
 
 有关 **O（N * log（N））**方法，请参阅[先前的文章](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/)。
 

@@ -21,7 +21,7 @@
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
 
-***辅助空间**：O（N）*
+***辅助空间**：`O(n)`*
 
 **高效方法**：这个想法是通过使用 [Map 存储给定数组 **arr []** 中存在的元素的索引来使用](https://www.geeksforgeeks.org/map-interface-java-examples/)[散列](http://www.geeksforgeeks.org/hashing-data-structure/)的概念 数据结构。 请按照以下步骤解决问题：
 
@@ -479,7 +479,7 @@ Yes
 
 ***时间复杂度**：O（N * log N）其中 N 是给定数组的长度。*
 
-***辅助空间**：O（N）*
+***辅助空间**：`O(n)`*
 
 
 

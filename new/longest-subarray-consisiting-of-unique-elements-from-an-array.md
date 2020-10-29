@@ -18,7 +18,7 @@
 
  ***时间复杂度**：O（N <sup>3</sup> logN）
 
-***辅助空间**：O（N）*
+***辅助空间**：`O(n)`*
 
 **有效方法**：可以使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 优化上述方法。 请按照以下步骤解决问题：
 
@@ -245,7 +245,7 @@ public static void Main(String[] args)
 
 ***时间复杂度**：O（NlogN）*
 
-***辅助空间**：O（N）*
+***辅助空间**：`O(n)`*
 
 
 

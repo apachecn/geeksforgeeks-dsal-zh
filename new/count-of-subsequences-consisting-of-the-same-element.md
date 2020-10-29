@@ -249,7 +249,7 @@ public static void Main()
 
 ***时间复杂度**：O（NlogN）*
 
-***辅助空间**：O（N）*
+***辅助空间**：`O(n)`*
 
 
 

@@ -30,7 +30,7 @@
 
 ***时间复杂度**：O（N * H <sup>2</sup> ），其中 H 表示树的高度。*
 
-***辅助空间**：O（N）；*
+***辅助空间**：`O(n)`；*
 
 **高效方法**：的想法是使用[前置遍历](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)和[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来计算从根到当前节点的路径中的不同节点。 请按照以下步骤解决问题：
 
@@ -321,9 +321,9 @@ public static void main(String[] args)
 
 ```
 
-***时间复杂度**：O（N）*
+***时间复杂度**：`O(n)`*
 
-***辅助空间**：O（N）*
+***辅助空间**：`O(n)`*
 
 
 

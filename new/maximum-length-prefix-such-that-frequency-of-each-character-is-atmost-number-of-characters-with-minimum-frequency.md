@@ -212,9 +212,9 @@ aabcd
 
 **效果分析**：
 
-*   **时间复杂度**：在上述方法中，有一个循环来查找字符串中每个字符的频率，在最坏的情况下需要 O（N）时间。 因此，该方法的时间复杂度将为 **O（N）**。
+*   **时间复杂度**：在上述方法中，有一个循环来查找字符串中每个字符的频率，在最坏的情况下需要`O(n)`时间。 因此，该方法的时间复杂度将为 **`O(n)`**。
 
-*   **空间复杂度**：在上述方法中，有多余的空间用于存储字符的频率。 因此，上述方法的空间复杂度将为 **O（N）**
+*   **空间复杂度**：在上述方法中，有多余的空间用于存储字符的频率。 因此，上述方法的空间复杂度将为 **`O(n)`**
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

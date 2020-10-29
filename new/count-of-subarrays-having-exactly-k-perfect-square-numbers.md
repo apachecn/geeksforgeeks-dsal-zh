@@ -483,9 +483,9 @@ public static void Main(string[] args)
 
 ```
 
-***时间复杂度**：O（N）
+***时间复杂度**：`O(n)`
 
-**空间复杂度**：O（N）*
+**空间复杂度**：`O(n)`*
 
 
 

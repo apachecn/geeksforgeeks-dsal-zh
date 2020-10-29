@@ -392,7 +392,7 @@ public static void Main(string[] args)
 
 ```
 
-**时间复杂度**：O（n），其中 n 是字符串的长度。
+**时间复杂度**：`O(n)`，其中 n 是字符串的长度。
 
 
 

@@ -111,9 +111,9 @@ int main()
 
 ```
 
-***时间复杂度**：O（N <sup>2</sup> ），因为距离函数取 **O（N）**，但上述实现非常简单，并且比朴素的方法效果更好 一般情况下的算法。
+***时间复杂度**：O（N <sup>2</sup> ），因为距离函数取 **`O(n)`**，但上述实现非常简单，并且比朴素的方法效果更好 一般情况下的算法。
 
-**辅助空间**：O（N）*
+**辅助空间**：`O(n)`*
 
 **注意**：上述方法适用于唯一元素，但对于重复元素，只需将[替换为](https://www.geeksforgeeks.org/set-in-cpp-stl/) [](https://www.geeksforgeeks.org/set-in-cpp-stl/) [多组。](https://www.geeksforgeeks.org/multiset-in-cpp-stl/)
 

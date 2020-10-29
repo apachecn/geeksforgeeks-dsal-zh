@@ -260,7 +260,7 @@ public class geeks
 
 ```
 
-该解决方案的时间复杂度为 O（n）。 请注意，当 j 在所有外部循环中从 0 变为 n 时，内部循环总共运行 n 次。 因此，我们执行与 O（n）相同的 O（2n）操作。
+该解决方案的时间复杂度为`O(n)`。 请注意，当 j 在所有外部循环中从 0 变为 n 时，内部循环总共运行 n 次。 因此，我们执行与`O(n)`相同的 O（2n）操作。
 
 本文由 **[Anuj Chauhan（anuj0503）](https://web.facebook.com/anuj0503)** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

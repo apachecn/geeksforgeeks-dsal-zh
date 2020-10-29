@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1-set-2/)
 
-给定 **n** 个整数的数组。 问题在于找到子序列的最大长度，且子序列中相邻元素之间的差为 0 或 1。需要 O（n）的时间复杂度。
+给定 **n** 个整数的数组。 问题在于找到子序列的最大长度，且子序列中相邻元素之间的差为 0 或 1。需要`O(n)`的时间复杂度。
 
 **示例**：
 
@@ -238,9 +238,9 @@ Maximum length subsequence = 5
 
 ```
 
-**时间复杂度**：O（n）
+**时间复杂度**：`O(n)`
 
-**辅助空间**：O（n）
+**辅助空间**：`O(n)`
 
 感谢 **Neeraj** 在此帖子的[评论中提出了上述解决方案。](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1/)
 

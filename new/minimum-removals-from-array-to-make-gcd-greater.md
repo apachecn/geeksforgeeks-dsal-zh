@@ -285,7 +285,7 @@ print(minimumRemovals(a, n))
 
  **时间复杂度**：O（log log N）用于筛分的预先计算，O（N * log N）用于计算。
 
-**辅助空间**：O（N）
+**辅助空间**：`O(n)`
 
 
 

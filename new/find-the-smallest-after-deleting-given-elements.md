@@ -315,7 +315,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度** – O（N）
+**时间复杂度** –`O(n)`
 
 
 

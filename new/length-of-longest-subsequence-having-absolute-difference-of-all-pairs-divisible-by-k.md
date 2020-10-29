@@ -19,7 +19,7 @@
 
 ***时间复杂度**：O（2 <sup>N</sup> ）*
 
-***辅助空间**：O（N）*
+***辅助空间**：`O(n)`*
 
 **高效方法**：为了优化上述方法，其思想是基于以下观察结果使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)：
 
@@ -261,7 +261,7 @@ public static void Main(String[] args)
 3
 ```
 
-***时间复杂度**：O（N）*
+***时间复杂度**：`O(n)`*
 
 ***辅助空间**：O（K）*
 

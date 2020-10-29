@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/](https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/)
 
-给定大小为 **n** 的数组。 任务是找到最长的子序列，以使相邻序列之间的差异为 1。 需要 O（n）的时间复杂度。
+给定大小为 **n** 的数组。 任务是找到最长的子序列，以使相邻序列之间的差异为 1。 需要`O(n)`的时间复杂度。
 
 **示例**：
 
@@ -296,9 +296,9 @@ Longest length subsequence = 6
 
 ```
 
-**时间复杂度**：O（n）。
+**时间复杂度**：`O(n)`。
 
-**辅助空间**：O（n）。
+**辅助空间**：`O(n)`。
 
 本文由 [**Ayush Jauhari**](https://auth.geeksforgeeks.org/profile.php?user=ayushjauhari14) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

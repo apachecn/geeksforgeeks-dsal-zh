@@ -151,7 +151,7 @@ the distinct characters of given string.
 
         需要这段时间来生成长度为“ N”的字符串的所有可能的子字符串。
 
-    *   **空间复杂度**：O（N）。
+    *   **空间复杂度**：`O(n)`。
 
         作为大小为 N 的 **hash_map** 。
 
@@ -516,11 +516,11 @@ the distinct characters of given string.
 
 *   **Complexiy Analysis:**
 
-    *   **时间复杂度**：O（N）。
+    *   **时间复杂度**：`O(n)`。
 
         由于仅使用两个指针遍历字符串一次。
 
-    *   **空间复杂度**：O（N）。
+    *   **空间复杂度**：`O(n)`。
 
         作为大小为 N 的 **hash_map** 被使用。
 

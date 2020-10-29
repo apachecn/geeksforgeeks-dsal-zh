@@ -574,7 +574,7 @@ Maximum Difference = 20
 
 ```
 
-时间复杂度为 O（n）的算法：
+时间复杂度为`O(n)`的算法：
 
 ```
 make hash table for positive elements:

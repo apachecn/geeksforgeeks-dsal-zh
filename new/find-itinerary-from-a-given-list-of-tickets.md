@@ -19,7 +19,7 @@ Bombay->Delhi, Delhi->Goa, Goa->Chennai, Chennai->Banglore,
 
 可以假设输入的票证清单不是周期性的，并且每个城市（最终目的地除外）都有一张票证。
 
-一种解决方案是构建图形并对该图形进行[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。 该解决方案的时间复杂度为 O（n）。
+一种解决方案是构建图形并对该图形进行[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。 该解决方案的时间复杂度为`O(n)`。
 
 我们还可以使用[散列](http://geeksquiz.com/hashing-set-1-introduction/)来避免构建图形。 这个想法是首先找到起点。 起点永远不会在票证的“靠”一侧。 一旦找到起点，我们就可以简单地遍历给定的地图以按顺序打印行程。 以下是步骤。
 
@@ -47,7 +47,7 @@ Bombay->Delhi, Delhi->Goa, Goa->Chennai, Chennai->Banglore,
 
 ```
 
-以上所有步骤都需要 O（n）时间，因此总时间复杂度为 O（n）。
+以上所有步骤都需要`O(n)`时间，因此总时间复杂度为`O(n)`。
 
 以下是上述想法的 Java 实现。
 

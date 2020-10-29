@@ -416,7 +416,7 @@ GM = 4.24
 
 **复杂度分析**：
 
-上面程序的整体时间复杂度基于用户定义输入处数组元素的初始迭代。 与 Set 关联的查找操作都是 O（1）恒定时间操作。 因此，程序的复杂度为 **O（N）**，其中 N 是数组的大小。
+上面程序的整体时间复杂度基于用户定义输入处数组元素的初始迭代。 与 Set 关联的查找操作都是 O（1）恒定时间操作。 因此，程序的复杂度为 **`O(n)`**，其中 N 是数组的大小。
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

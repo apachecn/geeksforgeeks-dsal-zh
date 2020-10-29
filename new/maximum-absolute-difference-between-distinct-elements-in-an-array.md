@@ -24,7 +24,7 @@
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
 
-***辅助空间**：O（N）*
+***辅助空间**：`O(n)`*
 
 **有效方法**：可以使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)来优化上述幼稚方法。 步骤如下：
 
@@ -319,9 +319,9 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度**：*O（N）*；
+**时间复杂度**：*`O(n)`*；
 
-**辅助空间**：*O（N）*
+**辅助空间**：*`O(n)`*
 
 
 

@@ -33,7 +33,7 @@
 
 ***时间复杂度**：O（N ^ 2）
 
-**辅助空间**：O（N）*
+**辅助空间**：`O(n)`*
 
 **高效方法**：可以使用[分段树](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)和[哈希优化上述方法。](https://www.geeksforgeeks.org/hashing-data-structure/) 请按照以下步骤解决问题：
 
@@ -180,7 +180,7 @@ int main()
 
 ***时间复杂度**：O（N log N）*
 
-***辅助空间**：O（N）*
+***辅助空间**：`O(n)`*
 
 
 

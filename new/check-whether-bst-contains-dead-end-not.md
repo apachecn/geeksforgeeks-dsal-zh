@@ -155,7 +155,7 @@ Yes
 
 ```
 
-时间复杂度：O（n）
+时间复杂度：`O(n)`
 
 [简单递归解决方案，用于检查 BST 是否包含死端](https://www.geeksforgeeks.org/simple-recursive-solution-check-whether-bst-contains-dead-end/)
 

@@ -223,9 +223,9 @@ if __name__ == '__main__':
 
 ```
 
-***时间复杂度**：O（N）*
+***时间复杂度**：`O(n)`*
 
-***空间复杂度**：O（N）*
+***空间复杂度**：`O(n)`*
 
 [**<u>动态编程</u>**](http://www.geeksforgeeks.org/dynamic-programming/) **<u>使用自顶向下方法</u>**：与上述方法一样，[有很多重叠 每个递归调用的子问题](https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/)。 因此，为了优化上述方法，其思想是使用辅助空间[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来存储在每个递归调用中计算出的值并返回重复的存储状态。 步骤如下：
 

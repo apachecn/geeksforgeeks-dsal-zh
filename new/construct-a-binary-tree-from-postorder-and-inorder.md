@@ -623,7 +623,7 @@ Preorder of the constructed tree :
 1 2 4 8 5 3 6 7 
 ```
 
-**时间复杂度**：O（n）
+**时间复杂度**：`O(n)`
 
 **另一种方法**：
 

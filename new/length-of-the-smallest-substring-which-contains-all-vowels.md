@@ -484,9 +484,9 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度**：*O（N）*；
+**时间复杂度**：*`O(n)`*；
 
-**辅助空间**：*O（N）*
+**辅助空间**：*`O(n)`*
 
 [**滑动窗口方法**](https://www.geeksforgeeks.org/window-sliding-technique/) ：
 
@@ -907,7 +907,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度**：*O（N）*
+**时间复杂度**：*`O(n)`*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 
