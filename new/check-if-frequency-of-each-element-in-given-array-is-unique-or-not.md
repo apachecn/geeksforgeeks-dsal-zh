@@ -2,37 +2,47 @@
 
 > 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-each-element-in-given-array-is-unique-or-not/](https://www.geeksforgeeks.org/check-if-frequency-of-each-element-in-given-array-is-unique-or-not/)
 
-给定 **N** 个正整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，其中整数在 **1 到 N** 范围内。 检查数组中元素的[频率是否唯一。 如果所有频率都是唯一的，则打印**“是”** ，否则打印**“否”** 。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
+给定`N`个正整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，其中整数在 1 到`N`范围内。 检查数组中元素的[频率是否唯一](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)。 如果所有频率都是唯一的，则打印`Yes`，否则打印`No`。
 
 **示例**：
 
-> **输入**：N = 5，arr [] = {1，1，2，5，5}
-> **输出**：否
+> **输入**：`N = 5, arr[] = {1, 1, 2, 5, 5}`
+>
+> **输出**：`No`
+>
 > **说明**：
-> 该数组包含 2（1's），1（2's）和 2（5's），因为 1 和 5 的频率数相同，即 2 倍。 因此，该数组不满足该条件。
+>
+> 该数组包含 2（1 个），1（2 个）和 2（5 个），因为 1 和 5 的频率数相同，即 2 倍。 因此，该数组不满足该条件。
 > 
-> **输入**：N = 10，arr [] = {2，2，5，10，1，2，10，5，10，2}
-> **输出**：是
+> **输入**：`N = 10, arr[] = {2, 2, 5, 10, 1, 2, 10, 5, 10, 2}`
+>
+> **输出**：`Yes`
+>
 > **解释**：
-> 1 的数目-> 1
-> 2 的数目-> 4
-> 5 的数目-> 2
-> 10 的数目- > 3\.
+>
+> 1 的数目 -> 1
+>
+> 2 的数目 -> 4
+>
+> 5 的数目 -> 2
+>
+> 10 的数目 -> 3
+>
 > 由于，数组中存在的元素的出现次数是唯一的。 因此，该数组不满足该条件。
 
-**朴素的方法**：的想法是检查从 **1 到 N** 的每个数字是否存在于数组中。 如果是，则计算该元素在阵列中的频率，并将该频率存储在阵列中。 最后，只需检查数组中是否有重复的元素，并相应地打印输出即可。
+**朴素的方法**：的想法是检查从 1 到`N`的每个数字是否存在于数组中。 如果是，则计算该元素在阵列中的频率，并将该频率存储在阵列中。 最后，只需检查数组中是否有重复的元素，并相应地打印输出即可。
 
-**时间复杂度**：*`O(N ^ 2)`*
+**时间复杂度**：`O(N ^ 2)`
 
-**辅助空间**：*`O(n)`*
+**辅助空间**：`O(n)`
 
 **高效方法**：的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。 步骤如下：
 
-1.  遍历给定数组 **arr []** 并将每个元素的频率存储在 [Map](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 中。
+1.  遍历给定数组`arr[]`并将每个元素的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
 
 2.  现在遍历映射，检查是否有任何元素的计数多次发生。
 
-3.  如果上述步骤中任何元素的数量大于一个，则打印“ **否”** ，否则打印**“是”** 。
+3.  如果上述步骤中任何元素的数量大于一个，则打印`No`，否则打印`Yes`。
 
 下面是上述方法的实现：
 
@@ -316,9 +326,9 @@ No
 
 ```
 
-**时间复杂度**：*`O(n)`，其中 N 是数组中元素的数量。*
+**时间复杂度**：`O(n)`，其中`N`是数组中元素的数量。
 
-**辅助空间**：*`O(n)`*
+**辅助空间**：`O(n)`
 
 
 
