@@ -18,7 +18,7 @@
 
 1.  遍历字符串并计算零的总数并将其存储在变量中，例如 **total_count** 。
 
-2.  使用[哈希图](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)（例如**映射**）存储累计总和 0s 的频率。
+2.  使用[哈希映射](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)（例如**映射**）存储累计总和 0s 的频率。
 
 3.  用 **total_count / 3** 初始化变量 **k** ，该变量表示每个分区所需的 **0** 数。
 

@@ -30,11 +30,11 @@ Explanation : We can't insert any element at
 
 ```
 
-如果我们仔细研究问题，我们可以注意到，我们基本上需要检查是否存在值 x 的叶节点，使得 x = 1 时 BST 中存在 x + 1 和 x-1。对于 x = 1， 我们不能插入 0，因为问题陈述说 BST 仅包含正整数。
+如果我们仔细研究问题，我们可以注意到，我们基本上需要检查是否存在值`x`的叶节点，使得`x = 1`时 BST 中存在`x + 1`和`x-1`。对于`x = 1`， 我们不能插入 0，因为问题陈述说 BST 仅包含正整数。
 
-为了实现上述想法，我们首先遍历整个 BST 并将所有节点存储在 hash_map 中。 我们还将所有叶子存储在单独的哈希中，以避免重新遍历 BST。 最后，我们检查每个叶节点 x，是否在 hash_map 中存在 x-1 和 x + 1。
+为了实现上述想法，我们首先遍历整个 BST 并将所有节点存储在哈希映射中。 我们还将所有叶子存储在单独的哈希中，以避免重新遍历 BST。 最后，我们检查每个叶节点`x`，是否在哈希映射中存在`x-1`和`x + 1`。
 
-下面是上述思想的 C++实现。
+下面是上述思想的 C++ 实现。
 
 ```
 // C++ program check weather BST contains
@@ -159,7 +159,7 @@ Yes
 
 [简单递归解决方案，用于检查 BST 是否包含死端](https://www.geeksforgeeks.org/simple-recursive-solution-check-whether-bst-contains-dead-end/)
 
-本文由 [**Nishant_Singh（Pintu）**](https://practice.geeksforgeeks.org/user-profile.php?user=_code) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由 [**Nishant_Singh（Pintu）**](https://practice.geeksforgeeks.org/user-profile.php?user=_code)提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

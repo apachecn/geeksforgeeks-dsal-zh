@@ -23,7 +23,7 @@
 
 *   这个想法是在 [Hashmap](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 中使用字符作为键，并将它们的[出现存储在字符串](https://www.geeksforgeeks.org/program-count-occurrence-given-character-string/)中。
 
-*   [对哈希图](https://www.geeksforgeeks.org/sorting-hashmap-according-key-value-java/)排序并找到第 K 个字符。
+*   [对哈希映射](https://www.geeksforgeeks.org/sorting-hashmap-according-key-value-java/)排序并找到第 K 个字符。
 
 下面是上述方法的实现。
 

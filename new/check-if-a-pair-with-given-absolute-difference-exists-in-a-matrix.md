@@ -25,9 +25,9 @@ Output: NO
 
 **方法**：
 
-*   初始化[哈希图](https://www.geeksforgeeks.org/hashing-data-structure/)，以跟踪矩阵中已访问的元素。
+*   初始化[哈希映射](https://www.geeksforgeeks.org/hashing-data-structure/)，以跟踪矩阵中已访问的元素。
 
-*   遍历矩阵，并检查当前元素与`K`的差是否已存在于哈希图中。 如果是，则当前元素以及该元素与`K`的差为所需对。
+*   遍历矩阵，并检查当前元素与`K`的差是否已存在于哈希映射中。 如果是，则当前元素以及该元素与`K`的差为所需对。
 
 *   否则，将当前元素添加到映射中。
 

@@ -48,7 +48,7 @@
 
 **相关文章**
 
-*   [BST 优于哈希图](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/)
+*   [BST 优于哈希映射](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/)
 
 *   [Java 中 HashMap 和 HashTable 之间的区别](https://www.geeksforgeeks.org/differences-between-hashmap-and-hashtable-in-java/)
 

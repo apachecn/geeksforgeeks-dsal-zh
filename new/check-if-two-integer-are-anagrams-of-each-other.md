@@ -1,18 +1,18 @@
-# 检查两个 Integer 是否彼此为字谜
+# 检查两个整数是否彼此为异序词
 
 > 原文：[https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
 
-给定两个整数 **A** 和 **B** ，任务是检查给定的数字是否彼此为[字谜](https://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/)。 就像字符串一样，如果仅通过对数字进行改组就可以使该数字等于其他数字，则该数字被称为其他数字的类似物。
+给定两个整数`A`和`B`，任务是检查给定的数字是否彼此为[异序词](https://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/)。 就像字符串一样，如果仅通过对数字进行改组就可以使该数字等于其他数字，则该数字被称为其他数字的类似物。
 
 **示例**：
 
-> **输入**：A = 204，B = 240
-> **输出**：是
+> **输入**：`A = 204, B = 240`
+> **输出**：`Yes`
 > 
-> **输入**：A = 23，B = 959
-> **输出**：否
+> **输入**：`A = 23, B = 959`
+> **输出**：`No`
 
-**方法**：创建两个数组 **freqA []** 和 **freqB []** 其中 **freqA [i]** 和 **freqB [i] [** 将在 **a** 和 **b** 中分别存储数字 **i** 的频率。 现在遍历频率阵列，如果 **freqA [i]！= freqB [i]** ，则对于任何数字 **i** ，数字均不是彼此的字谜。
+**方法**：创建两个数组`freqA[]`和`freqB[]`其中`freqA[i]`和`freqB[i]`将分别存储`a`和`b`中数字`i`的频率。 现在遍历频率阵列，如果`freqA[i] != freqB[i]`，则对于任何数字`i`，数字均不是彼此的异序词。
 
 下面是上述方法的实现：
 

@@ -2,9 +2,9 @@
 
 > 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-using-stl/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-using-stl/)
 
-将所有字谜一起打印
+将所有异序词一起打印
 
-给定一组单词，将所有字谜一起打印。
+给定一组单词，将所有异序词一起打印。
 
 **例如，**
 
@@ -23,17 +23,17 @@ Explanation: There are no anagrams in the array.
 
 这些帖子将在此处讨论其他方法：
 
-*   [一起给单词顺序打印所有字谜](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
+*   [一起给单词顺序打印所有异序词](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
 
 *   [给定单词顺序，将所有字母组合在一起打印集 2](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-set-2/)
 
-**<u>方法：</u>** 这是使用 C++标准模板库的 HashMap 解决方案，该库存储键值对。 在哈希图中，键将是字符的排序集合，值将是输出字符串。 当两个字谜的字符排序时，它们将相似。 现在
+**<u>方法：</u>** 这是使用 C++标准模板库的 HashMap 解决方案，该库存储键值对。 在哈希映射中，键将是字符的排序集合，值将是输出字符串。 当两个异序词的字符排序时，它们将相似。 现在
 
 1.  将矢量元素存储在 HashMap 中，其中 key 为已排序的字符串。
 
 2.  如果键相同，则将字符串添加到 HashMap（字符串向量）的值中。
 
-3.  遍历 HashMap 并打印字谜字符串。
+3.  遍历 HashMap 并打印异序词字符串。
 
 ## CPP
 

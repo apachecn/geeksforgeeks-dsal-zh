@@ -1,8 +1,8 @@
-# 检查字符串的任何字谜是否回文
+# 检查字符串的任何异序词是否回文
 
 > 原文：[https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/](https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/)
 
-我们给出了一个字谜字符串，我们必须检查它是否可以做成回文。
+我们给出了一个异序词字符串，我们必须检查它是否可以做成回文。
 
 **示例**：
 

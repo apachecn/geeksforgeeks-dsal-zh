@@ -26,7 +26,7 @@
 
 请按照以下步骤解决问题：
 
-*   遍历数组并将每个数组元素的频率存储在[哈希图](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中
+*   遍历数组并将每个数组元素的频率存储在[哈希映射](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中
 
 *   现在，遍历 HashMap 以找到数组中元素的最大频率。
 

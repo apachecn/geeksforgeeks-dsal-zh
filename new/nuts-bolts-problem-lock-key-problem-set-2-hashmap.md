@@ -1,4 +1,4 @@
-# 螺母&螺栓问题（锁定&钥匙问题）| 设置 2（哈希图）
+# 螺母&螺栓问题（锁定&钥匙问题）| 设置 2（哈希映射）
 
 > 原文：[https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem-set-2-hashmap/](https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem-set-2-hashmap/)
 
@@ -23,13 +23,13 @@ Output : Matched nuts and bolts are-
 
 [螺母&螺栓问题（锁定&钥匙问题）| 设置 1](https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem/)
 
-在这篇文章中，讨论了基于哈希图的方法。
+在这篇文章中，讨论了基于哈希映射的方法。
 
 1.  遍历坚果数组并创建一个哈希表
 
 2.  遍历 bolts 数组并在 hashmap 中搜索。
 
-3.  如果在螺母的哈希图中找到它，则意味着该螺母存在螺栓。
+3.  如果在螺母的哈希映射中找到它，则意味着该螺母存在螺栓。
 
 ```
 // Hashmap based solution to solve

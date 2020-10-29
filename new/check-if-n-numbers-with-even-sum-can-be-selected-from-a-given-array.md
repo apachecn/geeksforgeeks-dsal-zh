@@ -1,33 +1,31 @@
-# 检查是否可以从给定数组
+# 检查是否可以从给定数组中选择`N`个具有偶数和的数字
 
 > 原文：[https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/](https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/)
 
-中选择 N 个偶数和的数字
-
-给定[数组](https://www.geeksforgeeks.org/array-data-structure/) ***arr []*** 和奇数 ***N*** ，任务是检查[HTG10 可以从具有**甚至** ***和*** 的阵列中选择 **N 个** 号。 如果可能，打印 ***是*** 。 否则打印 ***否*** 。
+给定[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`和奇数`N`，任务是检查可以从阵列中选择`N`个具有偶数和的数字。 如果可能，打印`Yes`。 否则打印`No`。
 
 **示例**：
 
-> **输入**：arr [] = {9，2，3，4，1，8，7，7，6}，N = 5
-> **输出**：是
-> **说明**：{9、3、1、7、6}是具有偶数和的 N 个元素
+> **输入**：`arr[] = {9, 2, 3, 4, 1, 8, 7, 7, 6}, N = 5`
+> **输出**：`Yes`
+> **说明**：`{9, 3, 1, 7, 6}`是具有偶数和的`N`个元素
 > 
-> **输入**：arr [] = {1，3，7，9，3}，N = 3
-> **输出**：否
+> **输入**：`arr[] = {1, 3, 7, 9, 3}, N = 3`
+> **输出**：`No`
 
 **方法**：请按照以下步骤解决问题：
 
-1.  计算偶数和奇数整数并将其分别存储在 **even_freq** 和**奇数[frg]** 中。
+1.  计算偶数和奇数整数并将其分别存储在`even_freq`和`odd_freq_`中。
 
-2.  如果 **even_freq** 超过 **N** ，则取所有偶数，它们的和将为偶数。 因此，打印“是”。
+2.  如果`even_freq`超过`N`，则取所有偶数，它们的和将为偶数。 因此，打印`Yes`。
 
-3.  否则，检查 **odd_freq** 。
+3.  否则，检查`odd_freq`。
 
-4.  如果**奇数**为*奇数*，则检查**（odd_freq + even_freq – 1）**是否≥ **N** 。 如果发现是真的，则打印“ **是**”。
+4.  如果`odd_freq`为*奇数*，则检查`odd_freq + even_freq – 1`是否`≥ N`。 如果发现是真的，则打印`Yes`。
 
-5.  如果**奇数频率**为*甚至*，则检查**（odd_freq + even_freq）**是否≥ **N** 。 如果发现是真的，则打印“ **是**”。
+5.  如果`odd_freq`为偶数，则检查`odd_freq + even_freq`是否`≥ N`。 如果发现是真的，则打印`Yes`。
 
-6.  如果以上条件都不满足，请打印“否”。
+6.  如果以上条件都不满足，请打印`No`。
 
 下面是上述方法的实现：
 

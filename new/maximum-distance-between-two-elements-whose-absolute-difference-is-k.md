@@ -22,11 +22,11 @@
 
 **辅助空间**：`O(1)`
 
-**高效方法**：为了优化上述方法，其想法是使用[**哈希图**](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 。 步骤如下：
+**高效方法**：为了优化上述方法，其想法是使用[**哈希映射**](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 。 步骤如下：
 
 1.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并将第一次出现的索引存储在 HashMap 中。
 
-2.  现在，对于数组 **arr []** 中的每个元素，检查哈希图中是否存在 **arr [i] + K** 和 **arr [i] – K** 或不。
+2.  现在，对于数组 **arr []** 中的每个元素，检查哈希映射中是否存在 **arr [i] + K** 和 **arr [i] – K** 或不。
 
 3.  如果存在，则使用 **arr [i]** 更新两个元素之间的距离，并检查下一个元素。
 

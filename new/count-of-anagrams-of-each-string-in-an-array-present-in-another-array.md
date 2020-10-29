@@ -1,4 +1,4 @@
-# 另一个数组中存在的数组中每个字符串的字谜计数
+# 另一个数组中存在的数组中每个字符串的异序词计数
 
 > 原文：[https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/](https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/)
 
@@ -16,13 +16,13 @@
 > **输入**：arr1 [] = [“代码”，“至”，“增长”，“奇数”]，arr2 [] = [“ edoc”，“ wgor”，“ ot”]
 > **输出**：2 1 1
 > **说明**：
-> arr1“ code”和“ odce”中 arr2 [0]（“ edoc”）的字谜。
-> arr1“增长”中 arr2 [1]（“ wgor”）的字谜。
+> arr1“ code”和“ odce”中 arr2 [0]（“ edoc”）的异序词。
+> arr1“增长”中 arr2 [1]（“ wgor”）的异序词。
 > arr1“至”中 arr2 [2]（“ ot”）的组合
 
 **方法**：
 
-为了解决该问题，想法是在 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 的帮助下使用[频率计数](https://www.geeksforgeeks.org/basic/frequency-counting/)。 将每个字符串的频率以其排序形式存储在哈希图中的 arr1 []中。 遍历 arr2 []，在 arr2 []中对字符串进行排序，然后在 HashMap 中打印它们各自的频率。
+为了解决该问题，想法是在 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 的帮助下使用[频率计数](https://www.geeksforgeeks.org/basic/frequency-counting/)。 将每个字符串的频率以其排序形式存储在哈希映射中的 arr1 []中。 遍历 arr2 []，在 arr2 []中对字符串进行排序，然后在 HashMap 中打印它们各自的频率。
 
 下面是上述方法的实现：
 

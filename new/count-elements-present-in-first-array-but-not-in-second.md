@@ -271,7 +271,7 @@ public static void Main(string[] args)
 
 ```
 
-**时间复杂度**：O（m + n）
+**时间复杂度**：`O(m + n)`
 
 
 

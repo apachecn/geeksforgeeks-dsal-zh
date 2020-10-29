@@ -1,18 +1,18 @@
-# 在给定的句子中查找字谜最多的单词
+# 在给定的句子中查找异序词最多的单词
 
 > 原文：[https://www.geeksforgeeks.org/find-the-word-with-most-anagrams-in-a-given-sentence/](https://www.geeksforgeeks.org/find-the-word-with-most-anagrams-in-a-given-sentence/)
 
-给定句子形式的字符串 **S** ，任务是从文本中查找具有 [**字谜**](https://www.geeksforgeeks.org/tag/anagram/) 出现在给定句子中。
+给定句子形式的字符串 **S** ，任务是从文本中查找具有 [**异序词**](https://www.geeksforgeeks.org/tag/anagram/) 出现在给定句子中。
 
 **例如**：[
 
-> **输入**：S =“请保持沉默，听听教授的话” 单词“ **沉默**”的句子中带有一个字谜（**听**）。
+> **输入**：S =“请保持沉默，听听教授的话” 单词“ **沉默**”的句子中带有一个异序词（**听**）。
 > **输入**：S =“当政府采取行动时，猫不是狗，没有剑，所以什么是 TAC？”
 > **输出**：猫
 > **解释**：
-> 单词“ **cat** ”在句子中有两个字谜（“ act”，“ tac”）。
-> 单词“ **单词**”在句子中带有一个字谜（“剑”）。
-> 因此，带有最大字谜的单词是**“猫”** 。
+> 单词“ **cat** ”在句子中有两个异序词（“ act”，“ tac”）。
+> 单词“ **单词**”在句子中带有一个异序词（“剑”）。
+> 因此，带有最大异序词的单词是**“猫”** 。
 
 **方法**：
 
@@ -28,7 +28,7 @@
 
 *   计算分配给单词字符的质数乘积，并将其存储在 [**HashMap**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中。
 
-*   在 **HashMap** 中找到频率最高的产品，并打印相应的字谜之一作为答案。
+*   在 **HashMap** 中找到频率最高的产品，并打印相应的异序词之一作为答案。
 
 下面是上述方法的实现：
 

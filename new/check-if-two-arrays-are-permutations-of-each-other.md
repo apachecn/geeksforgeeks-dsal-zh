@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/](https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/)
 
-给定两个相同大小的未排序数组，编写一个函数，如果两个数组彼此置换，则返回 true，否则返回 false。
+给定两个相同大小的未排序数组，编写一个函数，如果两个数组彼此置换，则返回`true`，否则返回`false`。
 
 示例：
 
@@ -23,11 +23,11 @@ Output: No
 
 。**更好的解决方案**是使用[哈希](http://quiz.geeksforgeeks.org/hashing-set-1-introduction/)。
 
-1.  为 arr1 []的所有元素创建一个哈希映射，以使数组元素为键，其计数为值。
+1.  为`arr1[]`的所有元素创建一个哈希映射，以使数组元素为键，其计数为值。
 
-2.  遍历 arr2 []并在 Hash Map 中搜索 arr2 []的每个元素。 如果找到一个元素，则在哈希图中减少其计数。 如果找不到，则返回 false。
+2.  遍历`arr2[]`并在哈希映射中搜索`arr2[]`的每个元素。 如果找到一个元素，则在哈希映射中减少其计数。 如果找不到，则返回`false`。
 
-3.  如果找到了所有元素，则返回 true。
+3.  如果找到了所有元素，则返回`true`。
 
 以下是此方法的实现。
 

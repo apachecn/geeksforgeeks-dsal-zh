@@ -23,17 +23,17 @@
 > **输入**：A [] = {0，1，6，4，4，0，4，2，2，4，7}，B [] = {0，1，6，4，0，2 ，4，2，4，7}
 > **输出**：1 2 7 6 2 4 null 4 null null
 
-**方法**：的想法是使用[树集数据结构](https://www.geeksforgeeks.org/treeset-in-java-with-examples/)。 但是由于树集不支持重复值，因此[哈希图](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)用于存储元素的频率。
+**方法**：的想法是使用[树集数据结构](https://www.geeksforgeeks.org/treeset-in-java-with-examples/)。 但是由于树集不支持重复值，因此[哈希映射](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)用于存储元素的频率。
 
 *   [遍历数组 A []](https://www.geeksforgeeks.org/iterating-arrays-java/) 。
 
 *   将数组 A []中的元素添加到树集中。
 
-*   在哈希图中更新其[频率](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)。
+*   在哈希映射中更新其[频率](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)。
 
 *   现在，对于数组 B []中的每个元素，通过使用树集的 **upper（）**函数，找到严格大于当前值的值。
 
-*   现在，将哈希图中此数字的频率减少 1。
+*   现在，将哈希映射中此数字的频率减少 1。
 
 *   继续重复上述两个步骤，直到数字的频率变为 0。如果为 0，则该元素的所有出现次数都用光了。 因此，从树集中删除该元素。
 

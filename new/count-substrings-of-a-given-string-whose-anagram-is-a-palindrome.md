@@ -1,8 +1,8 @@
-# 计算给定字符串（其字谜是回文）的子字符串
+# 计算给定字符串（其异序词是回文）的子字符串
 
 > 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 
-给定长度为 **N** 的仅包含小写字母的字符串 **S** ，任务是打印给定的[字符串，其字谜是回文](https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/)。
+给定长度为 **N** 的仅包含小写字母的字符串 **S** ，任务是打印给定的[字符串，其异序词是回文](https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/)。
 
 **示例**：
 
@@ -14,13 +14,13 @@
 > **输入**：S =“ abc”
 > **输出**：3
 
-**朴素的方法**：的想法是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有子字符串，并为每个子字符串检查其[字谜](http://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/)是否是回文。 不断增加发现上述条件成立的子字符串的数量。 最后，打印所有这些子字符串的计数。
+**朴素的方法**：的想法是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有子字符串，并为每个子字符串检查其[异序词](http://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/)是否是回文。 不断增加发现上述条件成立的子字符串的数量。 最后，打印所有这些子字符串的计数。
 
 **时间复杂度**：O（N <sup>3</sup> ）
 
 **辅助空间**：`O(n)`
 
-[**位掩码**](https://www.geeksforgeeks.org/bit-tricks-competitive-programming/) **方法**：想法是生成 **26 位**数字的掩码，因为 **26** 字符。 另外，请注意，如果某个字符串的字谜是回文，则其字符的[频率必须最多为偶数。
+[**位掩码**](https://www.geeksforgeeks.org/bit-tricks-competitive-programming/) **方法**：想法是生成 **26 位**数字的掩码，因为 **26** 字符。 另外，请注意，如果某个字符串的异序词是回文，则其字符的[频率必须最多为偶数。
 
 请按照以下步骤解决问题：](https://www.geeksforgeeks.org/print-the-frequency-of-each-character-in-alphabetical-order/)
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/check-if-the-frequency-of-all-the-digits-in-a-number-is-same/](https://www.geeksforgeeks.org/check-if-the-frequency-of-all-the-digits-in-a-number-is-same/)
 
-给定正数“ N”，任务是查找“ N”是否平衡。 如果“ N”是一个平衡数字，则输出“ YES”，否则为“ NO”。
+给定正数`N`，任务是查找`N`是否平衡。 如果`N`是一个平衡数字，则输出`YES`，否则为`NO`。
 
 > 如果数字中所有数字的频率相同，即所有数字出现相同的次数，则该数字是平衡的。
 
@@ -21,11 +21,11 @@ Output: NO
 
 **方法**：
 
-*   创建一个大小为 10 的数组 freq []，该数组会将每个数字的频率存储在“ N”中。
+*   创建一个大小为 10 的数组`freq[]`，该数组会将每个数字的频率存储在`N`中。
 
-*   然后，检查“ N”的所有数字的频率是否相同。
+*   然后，检查`N`的所有数字的频率是否相同。
 
-*   如果是，则打印“是”或“否”。
+*   如果是，则打印`Yes`或`No`。
 
 下面是上述方法的实现：
 
@@ -345,7 +345,7 @@ class Program
         {
             // if freq[i] is not
             // equal to freq[i + 1] at
-            // any index ‘i’ then set
+            // any index 'i' then set
             // isBalanced to false
             if (freq[i] != freq[i + 1])
                 isBalanced = false;

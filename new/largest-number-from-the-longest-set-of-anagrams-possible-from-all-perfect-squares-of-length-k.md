@@ -1,8 +1,8 @@
-# 在长度为 K 的所有完美平方中，可能是最长的字谜集中最大的数字。
+# 在长度为 K 的所有完美平方中，可能是最长的异序词集中最大的数字。
 
 > 原文：[https://www.geeksforgeeks.org/largest-number-from-the-longest-set-of-anagrams-possible-from-all-perfect-squares-of-length-k/](https://www.geeksforgeeks.org/largest-number-from-the-longest-set-of-anagrams-possible-from-all-perfect-squares-of-length-k/)
 
-给定整数 **K** ，使得存在一组所有可能的[完美平方](https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/)，每个长度为 **K** 。 从这组完美的正方形中，形成一组具有尽可能多的长度的集合，其长度彼此为[字谜。 任务是打印在生成的字谜集中存在的最大元素。
+给定整数 **K** ，使得存在一组所有可能的[完美平方](https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/)，每个长度为 **K** 。 从这组完美的正方形中，形成一组具有尽可能多的长度的集合，其长度彼此为[异序词。 任务是打印在生成的异序词集中存在的最大元素。
 
 **注意**：如果一组以上最大长度，则打印其中最大的一组。](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
 
@@ -14,7 +14,7 @@
 > **输出**：81
 > **说明**：
 > 长度 K = 2 的所有可能平方为{16，25 ，36，49，64，81}。
-> 可能的字谜集为[16]，[25]，[36]，[49]，[64]，[81]。
+> 可能的异序词集为[16]，[25]，[36]，[49]，[64]，[81]。
 > 因此，每个集合的大小相同，即 1。
 > 在这种情况下，打印包含最大元素的集合，即 81。
 > 
@@ -27,9 +27,9 @@
 
 **辅助空间**：`O(n)`*
 
-**高效方法**：该想法基于以下观察结果：对完美正方形的数字进行排序后，字谜数字的顺序变得相等。 步骤如下：
+**高效方法**：该想法基于以下观察结果：对完美正方形的数字进行排序后，异序词数字的顺序变得相等。 步骤如下：
 
-1.  初始化[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，以存储与数字按顺序排列的数字相对应的所有字谜数字。
+1.  初始化[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，以存储与数字按顺序排列的数字相对应的所有异序词数字。
 
 2.  [生成长度为 **K** 的所有完全平方](https://www.geeksforgeeks.org/print-all-perfect-squares-from-the-given-range/)。
 

@@ -1,23 +1,29 @@
-# 检查数组
+# 检查数组中是否存在元素的`K`倍
 
 > 原文：[https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/](https://www.geeksforgeeks.org/check-whether-k-times-of-a-element-is-present-in-array/)
 
-中是否存在元素的 K 次
 
-给定数组 **arr []** 和整数 **K** ，任务是检查数组中是否还存在 K 次任何元素。
+给定数组`arr[]`和整数`K`，任务是检查数组中是否还存在`K`倍任何元素。
 
 **范例**：
 
-> **输入**：arr [] = {10，14，8，13，5}，K = 2
-> **输出**：是
+> **输入**：`arr[] = {10, 14, 8, 13, 5}, K = 2`
+>
+> **输出**：`Yes`
+>
 > **说明**：
-> K 的 5 倍也出现在数组中，即 10。
-> **输入**：arr [] = {7，8，5，9，11}，K = 3
-> **输出**：否
+>
+> `K`的 5 倍也出现在数组中，即 10。
+>
+> **输入**：`arr[] = {7, 8, 5, 9, 11}, K = 3`
+>
+> **输出**：`No`
+>
 > **说明**：
-> 数组中不存在任何元素的 K 次
+>
+> 数组中不存在任何元素的`K`倍。
 
-**朴素的方法**：一个简单的解决方案是运行两个嵌套的[循环](https://www.geeksforgeeks.org/loops-in-c-and-cpp/)，并检查每个元素在数组中是否也存在该元素的 K 倍。
+**朴素的方法**：一个简单的解决方案是运行两个嵌套的[循环](https://www.geeksforgeeks.org/loops-in-c-and-cpp/)，并检查每个元素在数组中是否也存在该元素的`K`倍。
 
 以下是上述方法的实现：
 
@@ -226,7 +232,7 @@ Yes
 
 ```
 
-**高效方法**：的想法是将所有元素存储在[哈希图中](https://www.geeksforgeeks.org/hashing-data-structure/)，并针对每个元素检查该哈希图中是否存在该元素的 K 次。 如果它存在于哈希图中，则返回 True，否则返回 False。
+**高效方法**：的想法是将所有元素存储在[哈希映射中](https://www.geeksforgeeks.org/hashing-data-structure/)，并针对每个元素检查该哈希映射中是否存在该元素的`K`倍。 如果它存在于哈希映射中，则返回`True`，否则返回`False`。
 
 以下是上述方法的实现：
 

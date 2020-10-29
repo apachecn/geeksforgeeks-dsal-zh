@@ -349,7 +349,7 @@ int main()
 
 #### **方法 3（哈希）**
 
-我们可以使用[哈希图](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)并将所有给定的字符串插入其中。 对于每个查询字符串，我们只需要在哈希图中进行查找即可。
+我们可以使用[哈希映射](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)并将所有给定的字符串插入其中。 对于每个查询字符串，我们只需要在哈希映射中进行查找即可。
 
 请参考[字典的数据结构](https://www.geeksforgeeks.org/data-structure-dictionary-spell-checker/)，以比较基于哈希和基于 Trie 的解决方案。
 

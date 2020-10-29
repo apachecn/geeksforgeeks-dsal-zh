@@ -346,7 +346,7 @@ public static void Main(String[] args)
 
 **时间复杂度**：O（M * N）
 
-**辅助空间**：O（M + N）
+**辅助空间**：`O(m + n)`
 
 
 

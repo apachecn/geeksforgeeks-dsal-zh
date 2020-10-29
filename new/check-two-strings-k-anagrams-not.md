@@ -1,14 +1,16 @@
-# 检查两个字符串是否为 k-anagrams
+# 检查两个字符串是否为`K`异序词
+
 
 > 原文：[https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/](https://www.geeksforgeeks.org/check-two-strings-k-anagrams-not/)
 
-给定两个字符串的小写字母和一个值 k，任务是查找两个字符串是否彼此为 K-anagram。
+给定两个字符串的小写字母和一个值`K`，任务是查找两个字符串是否彼此为`K`异序词;
+。
 
-如果满足以下两个条件，则两个字符串称为 **k-anagrams** 。
+如果满足以下两个条件，则两个字符串称为`K`异序词。
 
 1.  两者具有相同的字符数。
 
-2.  通过改变一个字符串中最多 k 个字符，两个字符串可以变成字谜。
+2.  通过改变一个字符串中最多`K`个字符，两个字符串可以变成异序词。
 
 **示例**：
 
@@ -29,13 +31,13 @@ i.e. g and f in str 2.
 
 **方法 1**：
 
-下面是一种检查两个字符串是否彼此为 k-anagram 的解决方案。
+下面是一种检查两个字符串是否彼此为`k`异序词的解决方案。
 
 1.  将两个字符串的所有字符的出现都存储在单独的计数数组中。
 
-2.  计算两个字符串中不同字符的数量（在这种情况下，如果一个字符串有 4 个 a，而第二个字符串有 3 个“ a”，则也将被计数。
+2.  计算两个字符串中不同字符的数量（在这种情况下，如果一个字符串有 4 个`a`，而第二个字符串有 3 个`a`，则也将被计数。
 
-3.  如果不同字符的数量小于或等于 k，则返回 true，否则返回 false。
+3.  如果不同字符的数量小于或等于`k`，则返回`true`，否则返回`false`。
 
 ## C++
 
@@ -338,7 +340,7 @@ Yes
 
 **方法 2**：
 
-我们可以优化上述解决方案。 在这里，我们仅使用一个 count 数组来存储 str1 中的字符计数。 我们遍历 str2 并减少出现在 str2 中的 count 数组中每个字符的出现。 如果在 str1 中找到一个不存在的字符，则增加不同字符的计数。 如果不同字符的数量大于 k，则返回 false。
+我们可以优化上述解决方案。 在这里，我们仅使用一个`count`数组来存储`str1`中的字符计数。 我们遍历`str2`并减少出现在`str2`中的`count`数组中每个字符的出现。 如果在`str1`中找到一个不存在的字符，则增加不同字符的计数。 如果不同字符的数量大于`k`，则返回`false`。
 
 ## C++
 
@@ -660,11 +662,11 @@ Yes
 
 **方法 3**：
 
-*   在这种方法中，其思想是初始化一个数组或一个列表，而基本情况将是检查字符串，如果它们的长度不同，则它们不能构成一个字谜。
+*   在这种方法中，其思想是初始化一个数组或一个列表，而基本情况将是检查字符串，如果它们的长度不同，则它们不能构成一个异序词。
 
 *   否则，将字符串转换为字符数组并对其进行排序。
 
-*   然后迭代直到字符串的长度，如果字符不相等，则将其添加到列表中，并检查列表大小是否小于等于 K，则有可能形成 K 字形符号，否则就不能形成。
+*   然后迭代直到字符串的长度，如果字符不相等，则将其添加到列表中，并检查列表大小是否小于等于`K`，则有可能形成`K`字形符号，否则就不能形成。
 
 下面是上述方法的实现：
 
@@ -753,7 +755,7 @@ Yes
 
 ```
 
-本文由 [**Sahil Chhabra（akku）**](https://practice.geeksforgeeks.org/user-profile.php?user=sahil_coder) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由 [**Sahil Chhabra（akku）**](https://practice.geeksforgeeks.org/user-profile.php?user=sahil_coder)贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 
