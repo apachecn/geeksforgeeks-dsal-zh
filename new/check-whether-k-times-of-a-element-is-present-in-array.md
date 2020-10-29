@@ -17,7 +17,7 @@
 > **说明**：
 > 数组中不存在任何元素的 K 次
 
-**天真的方法**：一个简单的解决方案是运行两个嵌套的[循环](https://www.geeksforgeeks.org/loops-in-c-and-cpp/)，并检查每个元素在数组中是否也存在该元素的 K 倍。
+**朴素的方法**：一个简单的解决方案是运行两个嵌套的[循环](https://www.geeksforgeeks.org/loops-in-c-and-cpp/)，并检查每个元素在数组中是否也存在该元素的 K 倍。
 
 以下是上述方法的实现：
 

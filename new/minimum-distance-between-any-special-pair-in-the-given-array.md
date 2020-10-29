@@ -22,7 +22,7 @@
 > **输入**：arr [] = {3，3}
 > **输出**：1
 
-**天真的方法**：最简单的方法是考虑[数组](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)的每对元素，并检查它们是否形成特殊的对。 如果发现是正确的，则在所有形成的线对之间打印最小距离。
+**朴素的方法**：最简单的方法是考虑[数组](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)的每对元素，并检查它们是否形成特殊的对。 如果发现是正确的，则在所有形成的线对之间打印最小距离。
 
 **时间复杂度**：O（N <sup>3</sup> ）
 

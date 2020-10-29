@@ -12,7 +12,7 @@
 > **输入**：str =“ IPL20”
 > **输出**：I2P0L
 
-**天真的方法**：最简单的方法是[生成给定字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，并针对每个排列检查是否满足给定条件。 如果对任何排列均正确，则打印该排列。 如果不存在这样的排列，则打印***-1*** 。
+**朴素的方法**：最简单的方法是[生成给定字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，并针对每个排列检查是否满足给定条件。 如果对任何排列均正确，则打印该排列。 如果不存在这样的排列，则打印***-1*** 。
 
 **时间复杂度**：O（2 <sup>N</sup> ）
 

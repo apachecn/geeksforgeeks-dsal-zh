@@ -12,7 +12,7 @@
 > **说明**：
 > 子字符串“ wertyuio”由 4 个元音组成 和 4 个辅音
 
-**天真的方法**：最简单的解决方案是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有子字符串，并针对每个子字符串检查元音和辅音的数量是否相等。 最后，打印获得的具有相等数量的元音和辅音的子串的最大长度。
+**朴素的方法**：最简单的解决方案是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有子字符串，并针对每个子字符串检查元音和辅音的数量是否相等。 最后，打印获得的具有相等数量的元音和辅音的子串的最大长度。
 
 **时间复杂度**：O（N <sup>3</sup> ）
 

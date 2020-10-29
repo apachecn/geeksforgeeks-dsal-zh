@@ -15,7 +15,7 @@
 > **输入**：arr [] = {1、2、3、4、5}
 > **输出**：{5、4、3、2、1}
 
-**天真的方法**：最简单的方法是[生成给定数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)的所有子数组，并对每个数组元素 **arr [i]** 计数其中的子数组数 它是最小的元素。
+**朴素的方法**：最简单的方法是[生成给定数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)的所有子数组，并对每个数组元素 **arr [i]** 计数其中的子数组数 它是最小的元素。
 
 **时间复杂度**：O（N <sup>3</sup> ）
 

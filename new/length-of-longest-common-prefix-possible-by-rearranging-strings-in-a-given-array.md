@@ -16,7 +16,7 @@
 > **说明**：重新排列字符 给定数组的每个字符串的大小，以使该数组成为{“ dfcaeb”，“ dfgase”，“ dffhd”}。
 > 因此，给定数组的所有字符串的最长公共前缀是长度等于 2 的“ df”。
 
-**天真的方法**：解决此问题的最简单方法是[生成给定数组的每个字符串的所有可能排列](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)，并找到所有字符串中最长的[通用前缀 ]。 最后，打印最长的公共前缀的长度。
+**朴素的方法**：解决此问题的最简单方法是[生成给定数组的每个字符串的所有可能排列](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)，并找到所有字符串中最长的[通用前缀 ]。 最后，打印最长的公共前缀的长度。
 
 ***时间复杂度**：O（N * log M *（M！） <sup>N</sup> ）
 

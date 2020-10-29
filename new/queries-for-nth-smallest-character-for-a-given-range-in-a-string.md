@@ -20,7 +20,7 @@
 > 3 <sup>rd</sup> 范围[3，7]或子字符串“ eksfo”中的最小字符是'k'
 > 4 <sup>th</sup> 范围中的最小字符[ 4，13]或在子字符串“ sforgeeks”中为“ g”
 
-**天真的方法**：天真的方法是运行从 **L** 到 **R** 的循环，并生成此范围内的子字符串。 找到子字符串后，[对子字符串](https://www.geeksforgeeks.org/sort-string-characters/)进行排序，以在排序的字符串中找到第 N <sup>个</sup>字符。
+**朴素的方法**：朴素的方法是运行从 **L** 到 **R** 的循环，并生成此范围内的子字符串。 找到子字符串后，[对子字符串](https://www.geeksforgeeks.org/sort-string-characters/)进行排序，以在排序的字符串中找到第 N <sup>个</sup>字符。
 
 **时间复杂度分析**：
 

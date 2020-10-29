@@ -14,7 +14,7 @@
 > **输出**：否
 > 说明：由于没有字符出现 N 次，因此无法生成字符串 N 给定字符串的字符次数。
 
-**天真的方法**：解决问题的最简单方法是[生成给定字符串所有可能长度的所有可能排列](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)，并检查是否发生任何排列 **N** 次 或不。 如果发现是真的，则打印“ **是”** 。 否则，打印“ **否”**
+**朴素的方法**：解决问题的最简单方法是[生成给定字符串所有可能长度的所有可能排列](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)，并检查是否发生任何排列 **N** 次 或不。 如果发现是真的，则打印“ **是”** 。 否则，打印“ **否”**
 
 **时间复杂度**：O（N * L！），其中 L 是给定字符串的长度。
 

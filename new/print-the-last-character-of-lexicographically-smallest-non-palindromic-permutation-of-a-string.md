@@ -16,7 +16,7 @@
 > **说明**：字符串“ aaabbxyz”是按字典顺序排列的最小排列，并非 回文。
 > 因此，最后一个字符是 **z** 。
 
-**天真的方法**：解决该问题的最简单方法是[生成给定字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，并针对每个排列检查它是否是回文集。 在所有获得的非回文排列中，按字典顺序打印最小的排列的最后一个字符。 请按照以下步骤操作：
+**朴素的方法**：解决该问题的最简单方法是[生成给定字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，并针对每个排列检查它是否是回文集。 在所有获得的非回文排列中，按字典顺序打印最小的排列的最后一个字符。 请按照以下步骤操作：
 
 1.  [对给定的字符串](https://www.geeksforgeeks.org/sort-string-characters/) **str** 进行排序。
 

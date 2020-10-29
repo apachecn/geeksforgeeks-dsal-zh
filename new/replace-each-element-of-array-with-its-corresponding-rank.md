@@ -23,7 +23,7 @@
 > **说明：[
 > 2 的排名是 1，70 是 2，100 是 3。**
 
-**天真的方法**：天真的方法是查找每个元素的等级为 **1 +** [**数组**](https://www.geeksforgeeks.org/count-smaller-equal-elements-sorted-array/) 中较小元素的数量 当前元素。
+**朴素的方法**：朴素的方法是查找每个元素的等级为 **1 +** [**数组**](https://www.geeksforgeeks.org/count-smaller-equal-elements-sorted-array/) 中较小元素的数量 当前元素。
 
  ***时间复杂度**：O（N <sup>2</sup> ）
 

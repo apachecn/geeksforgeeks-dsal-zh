@@ -16,7 +16,7 @@
 > **输入**：arr [] = {1、9、8、2、7、3、6、4、5、10、13、12、16、14、11、15}，K = 3， X = 5
 > **输出**：1 2 3 4 5
 
-**天真的方法**：解决此问题的最简单方法是[对数组](https://www.geeksforgeeks.org/sorting-algorithms/)排序，并打印 **X** 最接近 **K <sup>th</sup>** 使用[两指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)的给定数组的最小元素。
+**朴素的方法**：解决此问题的最简单方法是[对数组](https://www.geeksforgeeks.org/sorting-algorithms/)排序，并打印 **X** 最接近 **K <sup>th</sup>** 使用[两指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)的给定数组的最小元素。
 
 **时间复杂度**：O（N * log N）
 

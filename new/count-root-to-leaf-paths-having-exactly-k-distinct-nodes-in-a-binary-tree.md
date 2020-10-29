@@ -26,7 +26,7 @@
 > 2）路径 1-> 3-> 7
 > 因此，答案是 2。
 
-**天真的方法**：最简单的方法是[生成从根到叶节点](https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/)的所有可能路径，并针对每个路径检查其是否包含 **K** 个不同的节点或 不。 最后，打印此类路径的计数。
+**朴素的方法**：最简单的方法是[生成从根到叶节点](https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/)的所有可能路径，并针对每个路径检查其是否包含 **K** 个不同的节点或 不。 最后，打印此类路径的计数。
 
 **时间复杂度**：O（N * H <sup>2</sup> ），其中 H 表示树的高度。
 

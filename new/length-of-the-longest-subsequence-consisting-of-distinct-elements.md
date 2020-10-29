@@ -13,7 +13,7 @@
 > **输入**：arr [] = {1，2，3，3，4，5，5，5}
 > **输出**：5
 
-**天真的方法**：最简单的方法是[生成数组](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/)的所有子序列，并检查它是否仅由不同的元素组成。 不断更新获得的此类子序列的最大长度。 最后，打印获得的最大长度。
+**朴素的方法**：最简单的方法是[生成数组](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/)的所有子序列，并检查它是否仅由不同的元素组成。 不断更新获得的此类子序列的最大长度。 最后，打印获得的最大长度。
 
 **时间复杂度**：O（2 <sup>N</sup> ）
 

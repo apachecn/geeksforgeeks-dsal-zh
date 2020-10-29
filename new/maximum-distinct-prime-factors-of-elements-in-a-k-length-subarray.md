@@ -18,7 +18,7 @@
 > **说明**：
 > 长度为 3 的子数组，其最大素因数最大为 2、6、10，素因数为 2、3、5。
 
-**天真的方法**：最简单的方法是[生成长度为 **K** 的所有可能的子阵列](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并遍历每个子阵列并计算不同的[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/) 它的元素。 最后，打印为任何子阵列获得的独特素数的最大数量。
+**朴素的方法**：最简单的方法是[生成长度为 **K** 的所有可能的子阵列](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并遍历每个子阵列并计算不同的[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/) 它的元素。 最后，打印为任何子阵列获得的独特素数的最大数量。
 
 **时间复杂度**：O（N <sup>2</sup> log N）
 

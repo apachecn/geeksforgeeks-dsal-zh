@@ -30,7 +30,7 @@ First window is {4, 4}, count of distinct numbers is 1
 
 **来源**：[Microsoft 面试问题中已出现此问题。](http://qa.geeksforgeeks.org/1137/counting-factorial-numbers-in-c)
 
-**<u>天真的方法：</u>** 天真的解决方案是遍历给定数组，考虑其中的每个窗口，并对窗口的不同元素进行计数。
+**<u>朴素的方法：</u>** 朴素的解决方案是遍历给定数组，考虑其中的每个窗口，并对窗口的不同元素进行计数。
 
 *   **Algorithm:**
 

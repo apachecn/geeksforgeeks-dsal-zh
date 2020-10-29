@@ -23,7 +23,7 @@
 > 查询 1 ：p = 2 且 x =2。因此，arr [2] = 2 且 arr []变为{1,2,1,1}。 因此，不同的元素=2。
 > 查询 2：p = 3 且 x =3。因此，arr [3] = 3 且 arr []变为{1,2,3,1}。 因此，不同的元素= 3。
 
-**天真的方法**：最简单的方法是为每个查询更新给定的数组，然后[将更新后的数组的所有元素插入](https://www.geeksforgeeks.org/set-insert-function-in-c-stl/)到 [Set](https://www.geeksforgeeks.org/set-in-java/) 中。 将集合的[大小打印为不同数组元素](https://www.geeksforgeeks.org/setsize-c-stl/)的[个计数。](https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/)
+**朴素的方法**：最简单的方法是为每个查询更新给定的数组，然后[将更新后的数组的所有元素插入](https://www.geeksforgeeks.org/set-insert-function-in-c-stl/)到 [Set](https://www.geeksforgeeks.org/set-in-java/) 中。 将集合的[大小打印为不同数组元素](https://www.geeksforgeeks.org/setsize-c-stl/)的[个计数。](https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/)
 
 下面是上述方法的实现：
 

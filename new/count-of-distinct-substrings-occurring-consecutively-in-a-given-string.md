@@ -19,7 +19,7 @@
 > **输入**：s =“ geeksforgeeks” HTG13] {“ e”，“ e”}
 > 字符串中仅连续出现一个子字符串{“ e”}。
 
-**天真的方法**：
+**朴素的方法**：
 
 最简单的方法是[生成给定字符串的所有可能的子字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)，并为每个子字符串找到子字符串中的**计数** 给定在字符串中连续出现。 最后，打印**计数。**
 

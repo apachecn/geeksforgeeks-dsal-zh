@@ -18,7 +18,7 @@
 > **说明**：
 > 0345989723478563548 是字典上最小的数字 。
 
-**天真的方法**：最简单的想法是[生成给定字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，并检查哪个词典上最小的字符串最多满足 **K** 交换的条件。 打印该字符串。
+**朴素的方法**：最简单的想法是[生成给定字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，并检查哪个词典上最小的字符串最多满足 **K** 交换的条件。 打印该字符串。
 
 **时间复杂度**：*O（N！），其中 N 是给定字符串的*长度。
 

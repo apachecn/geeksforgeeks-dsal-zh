@@ -16,7 +16,7 @@
 > **说明**：为了使最大的合成数组{12，16}满足给定条件，需要删除的
 > 最大的子数组{12，13，10}。
 
-**天真的方法**：解决问题的最简单方法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并且[遍历其余数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，以保留严格限制的数组元素的数量 大于和小于整数 **K** 。 然后，选择最小的子数组，该子数组的删除将给出具有相等数量的较小和较大元素的数组。
+**朴素的方法**：解决问题的最简单方法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并且[遍历其余数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，以保留严格限制的数组元素的数量 大于和小于整数 **K** 。 然后，选择最小的子数组，该子数组的删除将给出具有相等数量的较小和较大元素的数组。
 
 **时间复杂度**：O（N <sup>2</sup> ）
 

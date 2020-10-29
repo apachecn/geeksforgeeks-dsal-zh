@@ -23,7 +23,7 @@
 > *   （2，5）：2 + 5 = 7（111）所有位均以二进制表示形式 7 设置。
 > *   （5，10）：5 + 10 = 15（1111）所有位均以 15 的二进制表示形式设置。
 
-**天真的方法**：的想法是[生成所有可能的对](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)并检查其[总和是否设置了所有位](https://www.geeksforgeeks.org/check-bits-number-set/)。 如果发现是真的，则在结果计数中计算该对。 检查所有对后，打印计数。
+**朴素的方法**：的想法是[生成所有可能的对](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)并检查其[总和是否设置了所有位](https://www.geeksforgeeks.org/check-bits-number-set/)。 如果发现是真的，则在结果计数中计算该对。 检查所有对后，打印计数。
 
 下面是上述方法的实现：
 

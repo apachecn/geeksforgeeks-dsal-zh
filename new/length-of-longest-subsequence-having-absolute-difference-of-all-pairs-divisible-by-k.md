@@ -15,7 +15,7 @@
 > **输入**：arr [] = {12，3，13，5，21，11}，K = 3
 > **输出**：3
 
-**天真的方法**：解决此问题的最简单方法是[生成给定数组的所有可能的子序列](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/)，并打印最长的子序列的长度，每对子序列的绝对差值可乘以[ **K** 。
+**朴素的方法**：解决此问题的最简单方法是[生成给定数组的所有可能的子序列](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/)，并打印最长的子序列的长度，每对子序列的绝对差值可乘以[ **K** 。
 
 **时间复杂度**：O（2 <sup>N</sup> ）
 

@@ -13,7 +13,7 @@
 > **输入**：arr [] = {1，1，1}
 > **输出**：6
 
-**天真的方法**：解决该问题的最简单方法是[从给定数组](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)生成所有可能的对，并且对于每对，[检查该对的和是否是幂 是否为 2](https://www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/) 。
+**朴素的方法**：解决该问题的最简单方法是[从给定数组](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)生成所有可能的对，并且对于每对，[检查该对的和是否是幂 是否为 2](https://www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/) 。
 
 ***时间复杂度**：O（N <sup>2</sup> ）
 

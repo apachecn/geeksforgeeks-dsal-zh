@@ -14,7 +14,7 @@
 > **输出**：geeksforgeeks
 > **说明**：B []，{“ geek”，“ ee”}中的每个字符串仅出现在“ geeksforgeeks”中。
 
-**天真的方法**：
+**朴素的方法**：
 
 解决该问题的最简单方法是遍历数组 A []，对于每个字符串，检查数组 B []中的所有字符串是否都以[的形式存在 子序列](https://www.geeksforgeeks.org/given-two-strings-find-first-string-subsequence-second/)与否。
 

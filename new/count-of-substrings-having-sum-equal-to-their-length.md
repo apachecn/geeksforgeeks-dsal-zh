@@ -10,7 +10,7 @@
 > **输入**：str =“ 1101112”。
 > **输出**：12
 
-**天真的方法**：最简单的解决方案是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有子字符串，并为每个子字符串检查其总和是否等于其长度。 对于发现为真的每个子字符串，增加计数。
+**朴素的方法**：最简单的解决方案是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有子字符串，并为每个子字符串检查其总和是否等于其长度。 对于发现为真的每个子字符串，增加计数。
 
 **时间复杂度**：O（N <sup>3</sup> ）
 

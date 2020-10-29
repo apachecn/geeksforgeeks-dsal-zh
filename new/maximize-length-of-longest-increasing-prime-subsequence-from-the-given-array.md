@@ -23,7 +23,7 @@
 > **输入**：arr [] = {27，38，43，68，83，12，69，12}
 > **输出**：5
 
-**天真的方法**：最简单的方法是将给定数组的所有元素更新为最接近的较小素数或最接近的较大素数，然后[生成给定数组的所有可能子序列](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/) 排列并按升序打印由[质数](https://www.geeksforgeeks.org/prime-numbers/)组成的最长子序列的长度。
+**朴素的方法**：最简单的方法是将给定数组的所有元素更新为最接近的较小素数或最接近的较大素数，然后[生成给定数组的所有可能子序列](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/) 排列并按升序打印由[质数](https://www.geeksforgeeks.org/prime-numbers/)组成的最长子序列的长度。
 
 **时间复杂度**：O（2 <sup>N</sup> ）
 

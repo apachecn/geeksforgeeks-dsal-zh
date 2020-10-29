@@ -17,7 +17,7 @@
 > ***输入**：arr [] = {1、2、4、6}*
 > ***输出**：3 5*
 
-**天真的方法**：天真的想法是遍历连续对元素之间的[差异，并打印该范围内的所有数字（如果差异非零）。 步骤如下：](https://www.geeksforgeeks.org/calculate-the-difference-between-consecutive-pair-of-elements-of-a-vector-in-r-programming-diff-function/)
+**朴素的方法**：朴素的想法是遍历连续对元素之间的[差异，并打印该范围内的所有数字（如果差异非零）。 步骤如下：](https://www.geeksforgeeks.org/calculate-the-difference-between-consecutive-pair-of-elements-of-a-vector-in-r-programming-diff-function/)
 
 1.  初始化变量 **diff** ，该变量等于 **arr [0] – 0** 。
 

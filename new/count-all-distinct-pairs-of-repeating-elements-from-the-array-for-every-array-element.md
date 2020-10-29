@@ -20,7 +20,7 @@
 > **说明**：
 > 由于所有元素都是不同的，因此不存在具有相等值的对。
 
-**天真的方法**：天真的想法是[遍历给定的数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，对于每个元素，从数组中排除当前元素，并使用其余的数组元素找到所有可能的对**（ i，j）**使得 **arr [i]等于 arr [j]** 和 **i < j** 。 打印每个元素的对数。
+**朴素的方法**：朴素的想法是[遍历给定的数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，对于每个元素，从数组中排除当前元素，并使用其余的数组元素找到所有可能的对**（ i，j）**使得 **arr [i]等于 arr [j]** 和 **i < j** 。 打印每个元素的对数。
 
 **时间复杂度**：O（N <sup>2</sup> ）
 

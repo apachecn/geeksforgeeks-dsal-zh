@@ -27,7 +27,7 @@
 > **说明**：
 > 给定的字符串已经包含重复 长度为 K 的子字符串“ abc”
 
-**天真的方法**：最简单的方法是[生成所有长度为 **K** 的可能排列](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)并找出转换给定字符串以使其具有重复模式的成本 长度 **K** 。 然后，打印其中的最低成本。
+**朴素的方法**：最简单的方法是[生成所有长度为 **K** 的可能排列](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)并找出转换给定字符串以使其具有重复模式的成本 长度 **K** 。 然后，打印其中的最低成本。
 
 **时间复杂度**：O（N * K <sup>26</sup> ），其中 N 是给定字符串的长度，K 是给定整数。
 

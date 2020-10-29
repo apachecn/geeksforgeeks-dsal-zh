@@ -20,7 +20,7 @@
 > 给定数组的不同元素是 2、3，-2。
 > 因此，它们之间的最大绝对差为（3 –（-2））=5。
 
-**天真的方法**：天真的方法是将[不同元素存储在给定数组](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)中的数组 **temp []** 中，并打印出最大和最小元素差 数组 **temp []** 。
+**朴素的方法**：朴素的方法是将[不同元素存储在给定数组](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)中的数组 **temp []** 中，并打印出最大和最小元素差 数组 **temp []** 。
 
 **时间复杂度**：O（N <sup>2</sup> ）
 

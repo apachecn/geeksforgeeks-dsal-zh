@@ -24,7 +24,7 @@
 > 操作 2：选择 9，然后减小它，以便新阵列变成{2，8，4，4，8}。
 > 因此，最大和为 10 + 9 = 19。
 
-**天真的方法**：最简单的方法是每次使用[最大堆](https://www.geeksforgeeks.org/max-heap-in-java/)选择最大元素。 将最大元素加到总和，然后将其从[最大堆](https://www.geeksforgeeks.org/max-heap-in-java/)中删除，然后添加**（最大元素– 1）**。 执行此操作 **K** 并打印总和。
+**朴素的方法**：最简单的方法是每次使用[最大堆](https://www.geeksforgeeks.org/max-heap-in-java/)选择最大元素。 将最大元素加到总和，然后将其从[最大堆](https://www.geeksforgeeks.org/max-heap-in-java/)中删除，然后添加**（最大元素– 1）**。 执行此操作 **K** 并打印总和。
 
 下面是上述方法的实现：
 

@@ -25,7 +25,7 @@
 > {aa，bb} = abba
 > 因此，总可能的对= 1
 
-**天真的方法**：
+**朴素的方法**：
 
 解决此问题的最简单方法是从给定数组生成所有可能的对，并将这些对合并以生成新的字符串。 对于每个合并的字符串，[都会生成字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，对于每个排列，请检查其是否为回文字符串，并相应地增加计数。
 

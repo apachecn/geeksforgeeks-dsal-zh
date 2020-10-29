@@ -28,7 +28,7 @@
 >
 > 大小为 6 的子数组：`{1, 2, 3, 1, 2, 3}`不包含唯一元素。 因此，打印`No`。
 
-**天真的方法**：最简单的方法是[生成所有子数组](https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/)，并对每个子数组使用 [HashMap](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 来存储该子阵列每个元素的[频率。 如果任何子数组没有至少一个唯一元素，则打印**“否”** 。 否则，打印**“是”** 。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
+**朴素的方法**：最简单的方法是[生成所有子数组](https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/)，并对每个子数组使用 [HashMap](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 来存储该子阵列每个元素的[频率。 如果任何子数组没有至少一个唯一元素，则打印**“否”** 。 否则，打印**“是”** 。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
 
 下面是上述方法的实现：
 
