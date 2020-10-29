@@ -558,7 +558,7 @@ Following are nodes in top view of Binary Tree
 
 此方法由 [Akash Debnath](https://auth.geeksforgeeks.org/user/akashdebnath/profile) 贡献
 
-以上实现的时间复杂度为 O（nlogn），其中 n 是给定二叉树中的节点数，Map 中的每个插入操作都需要 O（log <sub>2</sub> n）复杂度。
+以上实现的时间复杂度为`O(NlogN)`，其中 n 是给定二叉树中的节点数，Map 中的每个插入操作都需要 O（log <sub>2</sub> n）复杂度。
 
 本文由 **Rohan** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

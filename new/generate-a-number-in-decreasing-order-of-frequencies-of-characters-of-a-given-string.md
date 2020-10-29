@@ -231,7 +231,7 @@ print(formString(Str))
 
 ```
 
-***时间复杂度**：O（NlogN）*
+***时间复杂度**：`O(NlogN)`*
 
 ***辅助空间**：`O(n)`*
 

@@ -2,13 +2,13 @@
 
 > 原文：[https://www.geeksforgeeks.org/check-if-a-binary-tree-consists-of-a-pair-of-leaf-nodes-with-sum-k/](https://www.geeksforgeeks.org/check-if-a-binary-tree-consists-of-a-pair-of-leaf-nodes-with-sum-k/)
 
-给定 [**二叉树**](https://www.geeksforgeeks.org/binary-tree-data-structure/) 和整数 **K** ，任务是检查树是否由一对叶节点组成，它们的总和为 **K [** 。 如果有多对，则打印其中任何一对。 否则打印-1。
+给定 [**二叉树**](https://www.geeksforgeeks.org/binary-tree-data-structure/) 和整数`K`，任务是检查树是否由一对叶节点组成，它们的总和为`K`。 如果有多对，则打印其中任何一对。 否则打印 -1。
 
 **注意**：假定给定的二叉树将始终具有多个 1 个叶节点。
 
 **示例**：
 
-> **输入**：X = 13
+> **输入**：`X = 13`
 > 
 > ```
 >              1
@@ -21,12 +21,15 @@
 > 
 > ```
 > 
-> **输出**：[5，8]
+> **输出**：`[5, 8]`
+> 
 > **说明**：
-> 给定的二叉树由 4 个叶节点[4、5、6、8]组成。
+> 
+> 给定的二叉树由 4 个叶节点`[4, 5, 6, 8]`组成。
+>
 > 这对值 5 和 8 的节点对之和为 13。
 > 
-> **输入**：X = 6
+> **输入**：`X = 6`
 > 
 > ```
 >            -1        
@@ -37,20 +40,26 @@
 > 
 > ```
 > 
-> **输出**：[-1]
+> **输出**：`[-1]`
+> 
 > **说明**：
-> 给定的二叉树由 3 个叶节点[4、5、3]组成。
+>
+> 给定的二叉树由 3 个叶节点`[4, 5, 3]`组成。
+>
 > 不存在其值之和等于 6 的有效节点对。
-> 因此，打印-1。
+>
+> 因此，打印 -1。
 
 **天真的方法**：解决该问题的最简单方法是[遍历树](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)并将所有叶节点存储在一个数组中。 然后[对数组](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)进行排序，并使用[两个指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)查找是否存在所需的对。
-***时间复杂度**：O（NlogN）*
-***辅助空间**：`O(n)`*
+
+**时间复杂度**：`O(NlogN)`
+
+**辅助空间**：`O(n)`
 
 **有效方法**：可以使用 [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) 优化上述方法。 请按照以下步骤解决问题：
 
 *   创建[设置](https://www.geeksforgeeks.org/set-in-cpp-stl/)以存储叶节点的值。
-*   [遍历树](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)，对于每个叶子节点，检查**（叶子节点的 K 值）**是否存在于[无序集合](https://www.geeksforgeeks.org/unordered_set-in-cpp-stl/)中。
+*   [遍历树](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)，对于每个叶子节点，检查**叶子节点的`K`值**是否存在于[无序集合](https://www.geeksforgeeks.org/unordered_set-in-cpp-stl/)中。
 *   如果发现为真，则打印所有节点值。
 *   否则，将当前节点的值存储到无序集中。
 

@@ -23,7 +23,7 @@ Output :No Unique Elements
 
 请注意，此方法不会保留元素的原始顺序。
 
-时间复杂度：O（NLogN）
+时间复杂度：`O(NlogN)`
 
 **方法 3（哈希）**
 

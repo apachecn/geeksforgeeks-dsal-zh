@@ -2,30 +2,39 @@
 
 > 原文：[https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/](https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/)
 
-给定两个字符串 **str1** 和 **str2，**，每个字符串的长度 **N** ，并且仅由小写英文字母组成，任务是检查字符串 **str1** 通过多次执行以下操作，可以将]转换为字符串 **str2** 。
+给定两个字符串`str1`和`str2`，每个字符串的长度`N`，并且仅由小写英文字母组成，任务是检查字符串`str1`通过多次执行以下操作，可以将]转换为字符串`str2`。
 
-*   在 **str1** 和[中选择一个非空的子字符串，按字典顺序](https://www.geeksforgeeks.org/sort-string-characters/)就地排序，以不降序排列子字符串的字符。
+*   在`str1`中[选择一个非空的子字符串](https://www.geeksforgeeks.org/sort-string-characters/)，按字典顺序就地排序，以不降序排列子字符串的字符。
 
 **示例**：
 
-> **输入**：str1 =“ hdecb”，str2 =“ cdheb” str1 中的“”将字符串修改为“ hdceb”。
-> 对 str1 中的子字符串“ hdc”进行排序将字符串修改为“ cdheb”。
-> 由于修改后的字符串与 str2 相同，因此答案为是。
+> **输入**：`str1 = "hdecb", str2 = "cdheb"`
+>
+> **输出**：`Yes`
 > 
-> **输入**：str1 =“ abcdef”，str2 =“ dacbfe”
-> **输出**：否
+> **解释**：
+>
+> 在`str1`中对子字符串`"ec"`进行排序会将字符串修改为`hdceb`，
+>
+> 在`str1`中对子字符串`"hdc"`进行排序会将字符串修改为`"cdheb"`。
+>
+> 由于修改后的字符串与`str2`相同，因此答案为是。
+>
+> **输入**：`str1 = "abcdef", str2 = "dacbfe"`
+>
+> **输出**：`No`
 
 **方法**：请按照以下步骤解决问题：
 
-*   请注意，在字符串 **str1** 中，如果有两个字符 **str1 [i]** 和 **str2 [j]** 使得 **str1 [i] < str1 [j]** ，则可以交换这些字符。
+*   请注意，在字符串`str1`中，如果有两个字符`str1[i]`和`str2[j]`使得`str1[i] < str1[j]`，则可以交换这些字符。
 
-*   换句话说，可以将字符自由地向左移动，直到遇到较小的字符。 例如，“ acdb”可以转换为“ **acbd** ”，“ **abcd** ”，因为“ **b** ”可以向左自由移动，直到“ [ ''发生。
+*   换句话说，可以将字符自由地向左移动，直到遇到较小的字符。 例如，`"acdb"`可以转换为`"acbd"`，`"abcd"`，因为`"b"`可以向左自由移动，直到`"a"`出现。
 
-*   因此，检查是否可以将所需字符向左移动到字符串 **str2** 中的相应位置。
+*   因此，检查是否可以将所需字符向左移动到字符串`str2`中的相应位置。
 
-*   将字符串 **str1** 的每个字符的索引存储在数组中。
+*   将字符串`str1`的每个字符的索引存储在数组中。
 
-*   [遍历字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/) **str2，**，对于每个字符，检查 **str1** 中的相同字符是否可以移到该位置。
+*   [遍历字符串`str2`](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)，对于每个字符，检查`str1`中的相同字符是否可以移到该位置。
 
 下面是上述方法的实现：
 

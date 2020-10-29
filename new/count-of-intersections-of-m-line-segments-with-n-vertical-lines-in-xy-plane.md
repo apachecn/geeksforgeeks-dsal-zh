@@ -28,7 +28,7 @@
 
 最简单的方法是，对于每个查询，检查垂直线是否落在两点的 ***x 坐标*** 之间。 因此，每个段将具有`O(n)`个计算复杂度。
 
-***时间复杂度**：O（N * M）*
+***时间复杂度**：`O(N * M)`*
 
 **方法 2**：这个想法是使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)来 有效地解决这个问题。 请按照以下步骤解决问题：
 

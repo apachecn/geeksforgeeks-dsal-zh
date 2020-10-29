@@ -135,9 +135,9 @@ Length of the Longest contiguous subsequence is 4
 
 **复杂度分析**：
 
-*   **时间复杂度**：O（nLogn）。
+*   **时间复杂度**：`O(NlogN)`。
 
-    对数组进行排序的时间为 O（nlogn）。
+    对数组进行排序的时间为`O(NlogN)`。
 
 *   **辅助空间**：O（1）。
 
