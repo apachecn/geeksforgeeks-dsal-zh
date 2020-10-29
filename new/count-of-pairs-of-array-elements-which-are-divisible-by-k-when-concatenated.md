@@ -44,7 +44,7 @@
 
 *   为了应用上述公式，对于从 **1** 到 **10** 的每个长度，维持一个[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。
 
-*   将{ **len [a [i]]** ， **a [i]％k** }存储在地图中。
+*   将{ **len [a [i]]** ， **a [i]％k** }存储在映射中。
 
 *   为了对数进行计数，对于 **[1，10]** 中的每个 **j** ，将**计数**增加**的频率（k –（（ar i] * 10 ^ j）％k））以 **{j，k –（（arr [i] * 10 ^ j）％k）}** 形式存储在 **Map** 中的** ]映射。
 

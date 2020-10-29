@@ -22,7 +22,7 @@
 
 **朴素的方法**：朴素的方法是将第一句的每个单词都包含在所有行中，然后将其与其余行进行比较，然后增加计数。
 
-**有效方法**：对于第一个句子的所有单词，我们可以使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来恒定时间检查它是否也存在于所有其他句子中。 将第一个句子的所有单词存储在地图中，并检查所有其他句子中有多少个存储的单词。
+**有效方法**：对于第一个句子的所有单词，我们可以使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来恒定时间检查它是否也存在于所有其他句子中。 将第一个句子的所有单词存储在映射中，并检查所有其他句子中有多少个存储的单词。
 
 ## C++
 

@@ -41,7 +41,7 @@ leaves 1, 11, 4 and 10\. Therefore result is
 
 在[先前的文章](https://www.geeksforgeeks.org/find-multiplication-of-sums-of-data-of-all-leaves-at-sane-levels/)中，我们看到了使用[等级顺序遍历](http://www.geeksforgeeks.org/level-order-tree-traversal/)的基于[队列](http://www.geeksforgeeks.org/queue-data-structure/)的解决方案。
 
-在这里，我们只是在对二叉树进行[预遍历，并且在 C++ STL](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/) 中使用了 [unordered_map 在相同级别存储叶节点的总和。 然后，在一次遍历地图的过程中，我们计算了级别总和的最终乘积。](https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/)
+在这里，我们只是在对二叉树进行[预遍历，并且在 C++ STL](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/) 中使用了 [unordered_map 在相同级别存储叶节点的总和。 然后，在一次遍历映射的过程中，我们计算了级别总和的最终乘积。](https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/)
 
 下面是上述方法的实现：
 

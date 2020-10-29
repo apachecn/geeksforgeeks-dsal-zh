@@ -1,10 +1,10 @@
-# 按 C++ STL 中的值对地图排序
+# 按 C++ STL 中的值对映射排序
 
 > 原文：[https://www.geeksforgeeks.org/sorting-a-map-by-value-in-c-stl/](https://www.geeksforgeeks.org/sorting-a-map-by-value-in-c-stl/)
 
 [映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)是以映射方式存储元素的关联容器。 每个元素都有一个键值和一个映射值。 任何两个映射值都不能具有相等的键值。 默认情况下， [C++](http://www.geeksforgeeks.org/c-plus-plus/) 中的 Map 根据其键以升序排序。 下面是实现此目的的各种方法：
 
-**<u>方法 1 –使用[对的](https://www.geeksforgeeks.org/pair-in-cpp-stl/)[向量](http://www.geeksforgeeks.org/vector-in-cpp-stl/)</u>** 的想法是将地图中的所有内容复制到[的对应向量中 对](https://www.geeksforgeeks.org/pair-in-cpp-stl/)和[使用下面给出的](https://www.geeksforgeeks.org/sorting-vector-of-pairs-in-c-set-1-sort-by-first-and-second/) [lambda 函数](https://www.geeksforgeeks.org/lambda-expression-in-c/)根据第二值对对向量进行排序：
+**<u>方法 1 –使用[对的](https://www.geeksforgeeks.org/pair-in-cpp-stl/)[向量](http://www.geeksforgeeks.org/vector-in-cpp-stl/)</u>** 的想法是将映射中的所有内容复制到[的对应向量中 对](https://www.geeksforgeeks.org/pair-in-cpp-stl/)和[使用下面给出的](https://www.geeksforgeeks.org/sorting-vector-of-pairs-in-c-set-1-sort-by-first-and-second/) [lambda 函数](https://www.geeksforgeeks.org/lambda-expression-in-c/)根据第二值对对向量进行排序：
 
 ```
 bool cmp(pair<T1, T2>& a,
@@ -146,7 +146,7 @@ GfG 3
 
 多重映射类似于映射，不同之处在于多个元素可以具有相同的键。 在这种情况下，键值和映射值对必须是唯一的，而不是每个元素都是唯一的。
 
-的想法是使用原始地图的值作为多地图中的键，并将原始地图的键值作为多地图中的值，将给定地图中的所有对插入多地图中。
+的想法是使用原始映射的值作为多映射中的键，并将原始映射的键值作为多映射中的值，将给定映射中的所有对插入多映射中。
 
 下面是上述方法的实现：
 

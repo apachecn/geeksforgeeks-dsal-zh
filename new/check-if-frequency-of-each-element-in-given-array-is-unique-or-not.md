@@ -30,7 +30,7 @@
 
 1.  遍历给定数组 **arr []** 并将每个元素的频率存储在 [Map](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 中。
 
-2.  现在遍历地图，检查是否有任何元素的计数多次发生。
+2.  现在遍历映射，检查是否有任何元素的计数多次发生。
 
 3.  如果上述步骤中任何元素的数量大于一个，则打印“ **否”** ，否则打印**“是”** 。
 

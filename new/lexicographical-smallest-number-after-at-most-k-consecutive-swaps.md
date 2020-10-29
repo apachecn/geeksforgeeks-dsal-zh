@@ -48,7 +48,7 @@
 
 2.  将数字的原始位置存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，并找到最适合每个移位小于 **K** 的索引的数字。
 
-3.  使用地图查找数字的原始位置。
+3.  使用映射查找数字的原始位置。
 
 4.  找到当前位置正对的数字位数，为此，在段树中标记其位置从 **[0…N-1]** 移位。
 

@@ -28,13 +28,13 @@
 
 *   现在，创建一个无序映射，该遍历可用于存储当前 prefixSum 的频率，同时遍历 **prefixSum 数组**。
 
-*   用值 1 初始化地图的第 0 个键索引，因为 0 是一个完美的正方形。
+*   用值 1 初始化映射的第 0 个键索引，因为 0 是一个完美的正方形。
 
 *   用嵌套循环遍历 **prefixSum 数组**。
 
-*   对于每个 prefixSum 元素，嵌套循环将查找 **mapKey =（prefixSum [i] – j * j）**（如果在地图索引中可用）。
+*   对于每个 prefixSum 元素，嵌套循环将查找 **mapKey =（prefixSum [i] – j * j）**（如果在映射索引中可用）。
 
-*   如果**（prefixSum [i] – j * j）**在地图中已经可用，我们将使用**（prefixSum [i] – j * j）**的索引值更新计数器。
+*   如果**（prefixSum [i] – j * j）**在映射中已经可用，我们将使用**（prefixSum [i] – j * j）**的索引值更新计数器。
 
 *   这个想法是用所有平方（j * j）检查**当前 prefixSum 值**，直到差达到 **prefixMin** 为止。
 

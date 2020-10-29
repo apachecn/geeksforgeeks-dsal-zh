@@ -1,4 +1,4 @@
-# 以垂直顺序打印二叉树| 设置 2（基于地图的方法）
+# 以垂直顺序打印二叉树| 设置 2（基于映射的方法）
 
 > 原文：[https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
 

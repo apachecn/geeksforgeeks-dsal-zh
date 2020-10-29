@@ -244,7 +244,7 @@ public static void Main(String[] args)
 
 **高效方法**：为了优化上述[位屏蔽技术](https://www.geeksforgeeks.org/bit-tricks-competitive-programming/)，其想法是使用[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 请按照以下步骤解决问题：
 
-1.  初始化地图以存储模板的频率。 初始化变量 **X = 0** 。
+1.  初始化映射以存储模板的频率。 初始化变量 **X = 0** 。
 
 2.  [遍历字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)，对于第 i 个<sup>第</sup>个索引，计算 **X** 和 **2 <sup>的[按位异或](http://www.geeksforgeeks.org/calculate-xor-1-n/)（S [ j] –'a'）</sup>** 并通过在映射中添加 **X** 当前值的频率来更新**答案**，因为如果**中有任何子字符串 0** 至 **j** 具有与 **X** 相同的掩码，这是 **0** 至 **i** 子串的掩码， 那么子字符串 **S [j + 1，i]** 将具有偶数频率，其中 **j < i** 。
 

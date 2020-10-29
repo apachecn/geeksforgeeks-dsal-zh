@@ -22,7 +22,7 @@ is alphabetically smaller, we print it.
 
 **简单解决方案**是运行两个循环并计算每个单词的出现次数。 该解决方案的时间复杂度为 O（n * n * MAX_WORD_LEN）。
 
-**有效解决方案**是使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)。 我们将所有选票插入哈希图中，并跟踪不同名称的计数。 最后，我们遍历地图并打印出最高票数的人。
+**有效解决方案**是使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)。 我们将所有选票插入哈希图中，并跟踪不同名称的计数。 最后，我们遍历映射并打印出最高票数的人。
 
 ## CPP
 

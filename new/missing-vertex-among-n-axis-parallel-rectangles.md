@@ -18,7 +18,7 @@
 
 *   将频率 **x 坐标**和 **y 坐标**存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
 
-*   在地图上进行迭代，以找到两个坐标的频率都为奇数的元素。
+*   在映射上进行迭代，以找到两个坐标的频率都为奇数的元素。
 
 *   最后，以奇数频率打印 x 和 y 坐标。
 

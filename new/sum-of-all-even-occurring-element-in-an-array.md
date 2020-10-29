@@ -25,7 +25,7 @@ Sum = 40.
 
 *   遍历数组，并在 C++ 中使用 [unordered_map 存储数组元素的频率，以使 map 的键为数组元素，值为数组中的频率。](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)
 
-*   然后，遍历地图以查找元素的频率，并检查其是否为偶数，是否为偶数，然后将该元素相加。
+*   然后，遍历映射以查找元素的频率，并检查其是否为偶数，是否为偶数，然后将该元素相加。
 
 下面是上述方法的实现：
 

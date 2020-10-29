@@ -515,9 +515,9 @@ public static void Main(String[] args)
 
 **方法 3**：为了优化上述方法，我们可以使用 [Map Data 结构](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)采用节省空间的方法。 请按照以下步骤解决问题：
 
-*   我们可以制作一个地图来存储到目前为止的出现次数，与第一种方法的不同之处在于，我们仅插入具有垂直线的坐标。
+*   我们可以制作一个映射来存储到目前为止的出现次数，与第一种方法的不同之处在于，我们仅插入具有垂直线的坐标。
 
-*   当我们要搜索从 x1 到 x2 的交点数时，我们可以从地图的 upper_bound（x2-1）中减去 lower_bound（x1 + 1）。
+*   当我们要搜索从 x1 到 x2 的交点数时，我们可以从映射的 upper_bound（x2-1）中减去 lower_bound（x1 + 1）。
 
 下面是上述方法的实现。
 
