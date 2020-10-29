@@ -19,13 +19,13 @@
 
 对于每个查询，将 arr [i]替换为 K，遍历整个数组并计算每个数组元素的频率并打印最频繁的元素。
 
-***时间复杂度**：O（N * Q）*
+**时间复杂度**：O（N * Q）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 **高效方法**：
 
-可以通过预先计算每个阵列元素的频率并将频率阵列元素配对保持在一组中以获得 O（1）中最频繁的元素来优化上述方法。 请按照以下步骤解决问题：
+可以通过预先计算每个阵列元素的频率并将频率阵列元素配对保持在一组中以获得`O(1)`中最频繁的元素来优化上述方法。 请按照以下步骤解决问题：
 
 1.  初始化[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)以存储所有阵列元素的频率，并初始化[对](https://www.geeksforgeeks.org/set-in-cpp-stl/)[对](https://www.geeksforgeeks.org/pair-in-cpp-stl/)的集以存储频率元素对。 在集合中，将频率存储为负数。 这确保了存储在集合开头的第一对，即 [s.begin（），](https://www.geeksforgeeks.org/setbegin-setend-c-stl/)是 **{-（最大频率），最频繁元素}** 配对。
 
@@ -309,9 +309,9 @@ public static void main(String []args)
 3 2 2 
 ```
 
-***时间复杂度**：O（N +（Q * LogN））*
+**时间复杂度**：O（N +（Q * LogN））
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

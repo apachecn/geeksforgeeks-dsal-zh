@@ -508,7 +508,7 @@ Array has two elements with the given sum
 
     *   如果使用快速排序，则在最坏的情况下为 O（n ^ 2）。
 
-*   **辅助空间**：这也取决于排序算法。 辅助空间是用于合并排序的`O(n)`和用于堆排序的 O（1）。
+*   **辅助空间**：这也取决于排序算法。 辅助空间是用于合并排序的`O(n)`和用于堆排序的`O(1)`。
 
 **<u>方法 2</u> **：[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
 

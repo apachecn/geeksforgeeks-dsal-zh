@@ -139,7 +139,7 @@ Length of the Longest contiguous subsequence is 4
 
     对数组进行排序的时间为`O(NlogN)`。
 
-*   **辅助空间**：O（1）。
+*   **辅助空间**：`O(1)`。
 
     由于不需要额外的空间。
 
@@ -391,7 +391,7 @@ Length of the Longest contiguous subsequence is 4
 
 *   **时间复杂度**：`O(n)`。
 
-    在散列插入和搜索花费 O（1）时间的假设下，仅需要一个遍历，时间复杂度为`O(n)`。
+    在散列插入和搜索花费`O(1)`时间的假设下，仅需要一个遍历，时间复杂度为`O(n)`。
 
 *   **辅助空间**：`O(n)`。
 

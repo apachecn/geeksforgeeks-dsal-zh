@@ -18,9 +18,9 @@ Output : Yes
 
 ```
 
-一种**简单解决方案**是使用两个嵌套循环。 对于每个元素，请检查是否重复。 如果任何元素重复，则返回 false。 如果没有元素重复，则返回 false。
+一种**简单解决方案**是使用两个嵌套循环。 对于每个元素，请检查是否重复。 如果任何元素重复，则返回`false`。 如果没有元素重复，则返回`false`。
 
-**有效解决方案**是哈希。 我们将所有数组元素放入 [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) 中。 如果 HashSet 的大小与数组大小相同，则返回 true。
+**有效解决方案**是哈希。 我们将所有数组元素放入[`HashSet`](http://www.geeksforgeeks.org/hashset-in-java/)中。 如果`HashSet`的大小与数组大小相同，则返回`true`。
 
 ## C++
 

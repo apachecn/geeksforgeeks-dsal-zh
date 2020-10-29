@@ -181,9 +181,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：O（2 <sup>N</sup> ）*
+**时间复杂度**：O（2 <sup>N</sup> ）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 **有效方法**：为了优化上述方法，其想法是使用[动态编程](http://www.geeksforgeeks.org/dynamic-programming/)。 每个数组元素都有两个可能的选项：
 
@@ -274,9 +274,9 @@ class GFG {
 
 ```
 
-***时间复杂度**：O（N * K），其中 N 是给定数组的大小，K 是极限。*
+**时间复杂度**：O（N * K），其中 N 是给定数组的大小，K 是极限。
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

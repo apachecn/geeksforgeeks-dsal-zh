@@ -264,7 +264,7 @@ public static void Main(String[] args)
 
 **时间复杂度**：*O（N <sup>2</sup> ）*。
 
-**辅助空间**：*O（1）*
+**辅助空间**：*`O(1)`*
 
 **有效方法**：为优化上述方法，我们将使用[硅酮筛网](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)的概念。 步骤如下：
 

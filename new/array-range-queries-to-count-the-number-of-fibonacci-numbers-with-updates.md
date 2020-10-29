@@ -23,7 +23,7 @@
 
 **方法**：为了处理点更新和范围查询，为此目的，[段树](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)是最佳的。
 
-为了检查[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，我们可以使用[动态编程](http://www.geeksforgeeks.org/dynamic-programming/)来构建[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于最大值 arr [ <sub>i</sub> 。 我们可以采用 MAX 来测试 O（1）时间复杂度的数字。
+为了检查[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，我们可以使用[动态编程](http://www.geeksforgeeks.org/dynamic-programming/)来构建[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于最大值 arr [ <sub>i</sub> 。 我们可以采用 MAX 来测试`O(1)`时间复杂度的数字。
 
 **构建细分树**：
 

@@ -23,9 +23,9 @@
 
 最简单的方法是[生成给定字符串的所有可能的子字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)，并为每个子字符串找到子字符串中的**计数** 给定在字符串中连续出现。 最后，打印**计数。**
 
-***时间复杂度**：O（N <sup>3</sup> ）*
+**时间复杂度**：O（N <sup>3</sup> ）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 **有效方法**：
 
@@ -278,9 +278,9 @@ print(distinctSimilarSubstrings(str))
 
 ```
 
-***时间复杂度**：`O(n)`*
+**时间复杂度**：`O(n)`
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

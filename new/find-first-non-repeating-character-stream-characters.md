@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-first-non-repeating-character-stream-characters/](https://www.geeksforgeeks.org/find-first-non-repeating-character-stream-characters/)
 
-给定字符流，请从流中找到第一个非重复字符。 您需要随时告诉 O（1）时间中的第一个非重复字符。
+给定字符流，请从流中找到第一个非重复字符。 您需要随时告诉`O(1)`时间中的第一个非重复字符。
 
 如果我们遵循此处讨论的第一种方法[，那么我们需要存储该流，以便我们可以再遍历该流以随时找到第一个非重复字符。 如果我们使用在](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)[相同文章](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)中讨论的扩展方法，则每次查询第一个非重复元素时，我们都需要遍历 count 数组。 我们可以随时从流中找到第一个非重复字符，而无需遍历任何数组。
 
@@ -24,7 +24,7 @@
 
     *   如果 repeated [x]为 false 并且 inDLL [x]不为 NULL（第二次看到 x）。 使用 inDLL [x]获取 x 的 DLL 节点并删除该节点。 同样，将 inDLL [x]标记为 NULL，并将重复[x]标记为 true。
 
-请注意，如果我们维护尾指针，则向 DLL 附加新节点是 **O（1）**操作。 从 DLL 中删除节点也是 **O（1）**。 因此，添加新字符和找到第一个非重复字符这两项操作都需要 **O（1）**时间。
+请注意，如果我们维护尾指针，则向 DLL 附加新节点是 **`O(1)`**操作。 从 DLL 中删除节点也是 **`O(1)`**。 因此，添加新字符和找到第一个非重复字符这两项操作都需要 **`O(1)`**时间。
 
 下图是上述方法的模拟：
 

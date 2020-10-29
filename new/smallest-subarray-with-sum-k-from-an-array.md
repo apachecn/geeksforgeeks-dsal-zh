@@ -19,9 +19,9 @@
 
 **天真的方法**：解决该问题的最简单方法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并为每个子数组检查其总和是否等于 **K** 。 打印所有此类子数组的最小长度。
 
-***时间复杂度**：O（N <sup>2</sup> ）*
+**时间复杂度**：O（N <sup>2</sup> ）
 
-***辅助空间**：O（1）*
+**辅助空间**：`O(1)`
 
 **有效方法**：可以使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)技术和 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 进一步优化上述方法。 请按照以下步骤解决问题：
 
@@ -362,9 +362,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：`O(NlogN)`*
+**时间复杂度**：`O(NlogN)`
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

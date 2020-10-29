@@ -22,9 +22,9 @@
 
 **天真的方法**：天真的想法是[遍历给定的数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，对于每个元素，从数组中排除当前元素，并使用其余的数组元素找到所有可能的对**（ i，j）**使得 **arr [i]等于 arr [j]** 和 **i < j** 。 打印每个元素的对数。
 
-***时间复杂度**：O（N <sup>2</sup> ）*
+**时间复杂度**：O（N <sup>2</sup> ）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 **高效方法**：的想法是[存储每个元素](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的频率，并在给定条件下计算所有可能的对（例如 **cnt** ）。 对每个元素执行上述步骤后，从总计数 cnt 中删除相等的可能对的计数并打印该值。 请按照以下步骤解决问题：
 
@@ -301,9 +301,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：`O(NlogN)`*
+**时间复杂度**：`O(NlogN)`
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

@@ -395,9 +395,9 @@ public static void Main()
 
 ```
 
-***时间复杂度**：O（N <sup>2</sup> ）*
+**时间复杂度**：O（N <sup>2</sup> ）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

@@ -6,7 +6,7 @@
 
 **HashTable**：
 
-[Hashtable](https://www.geeksforgeeks.org/hashing-set-1-introduction/) 设计为使用一种称为 Hash 函数的特殊函数，该函数用于使用特定键映射给定值，以更快地访问元素。 它用于需要快速查找的地方。（在合理的假设下，哈希表中元素查找的平均时间为 O（1））。 Python 中的字典是使用 HashTables 实现的。 Java 还实现了 [HashTable](https://www.geeksforgeeks.org/hashtable-in-java/) 类。
+[Hashtable](https://www.geeksforgeeks.org/hashing-set-1-introduction/) 设计为使用一种称为 Hash 函数的特殊函数，该函数用于使用特定键映射给定值，以更快地访问元素。 它用于需要快速查找的地方。（在合理的假设下，哈希表中元素查找的平均时间为`O(1)`）。 Python 中的字典是使用 HashTables 实现的。 Java 还实现了 [HashTable](https://www.geeksforgeeks.org/hashtable-in-java/) 类。
 
 可以在中找到一些哈希应用。
 

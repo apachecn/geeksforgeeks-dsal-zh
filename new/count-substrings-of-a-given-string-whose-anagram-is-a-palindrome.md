@@ -16,9 +16,9 @@
 
 **天真的方法**：的想法是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有子字符串，并为每个子字符串检查其[字谜](http://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/)是否是回文。 不断增加发现上述条件成立的子字符串的数量。 最后，打印所有这些子字符串的计数。
 
-***时间复杂度**：O（N <sup>3</sup> ）*
+**时间复杂度**：O（N <sup>3</sup> ）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 [**位掩码**](https://www.geeksforgeeks.org/bit-tricks-competitive-programming/) **方法**：想法是生成 **26 位**数字的掩码，因为 **26** 字符。 另外，请注意，如果某个字符串的字谜是回文，则其字符的[频率必须最多为偶数。
 
@@ -238,9 +238,9 @@ public static void Main(String[] args)
 6
 ```
 
-***时间复杂度**：O（N <sup>2</sup> ）*
+**时间复杂度**：O（N <sup>2</sup> ）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 **高效方法**：为了优化上述[位屏蔽技术](https://www.geeksforgeeks.org/bit-tricks-competitive-programming/)，其想法是使用[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 请按照以下步骤解决问题：
 
@@ -494,9 +494,9 @@ public static void Main(String[] args)
 7
 ```
 
-***时间复杂度**：`O(n)`*
+**时间复杂度**：`O(n)`
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

@@ -400,9 +400,9 @@ public static void Main(String[] args)
 v 
 ```
 
-***时间复杂度**：O（N * N！）*
+**时间复杂度**：O（N * N！）
 
-***辅助空间**：O（1）*
+**辅助空间**：`O(1)`
 
 **有效方法**：为了优化上述方法，其思想是存储给定字符串 **str** 的每个字符的[频率。 如果所有字符都相同，则打印**“ -1”** 。 否则，打印给定字符串 **str** 的最大字符。](https://www.geeksforgeeks.org/print-characters-frequencies-order-occurrence/)
 
@@ -509,9 +509,9 @@ if __name__ == '__main__':
 v
 ```
 
-***时间复杂度**：`O(n)`*
+**时间复杂度**：`O(n)`
 
-***辅助空间**：O（26）*
+**辅助空间**：O（26）
 
 
 

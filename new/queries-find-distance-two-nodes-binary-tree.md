@@ -6,7 +6,7 @@
 
 给定一个二叉树，任务是找到一棵二叉树中两个键之间的距离，没有给出父指针。 两个节点之间的距离是要遍历以到达另一个节点的最小边数。
 
-我们已经讨论了[方法](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)，该方法使用段树将查询时间减少到 O（logn），这里的任务是通过将空间复杂度降低到`O(NlogN)`来减少查询时间到 O（1）。 。 在这篇文章中，我们将使用**稀疏表**而不是分段树来查找给定范围内的最小值，它使用动态编程和位操作来实现 O（1）查询时间。
+我们已经讨论了[方法](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)，该方法使用段树将查询时间减少到 O（logn），这里的任务是通过将空间复杂度降低到`O(NlogN)`来减少查询时间到`O(1)`。 。 在这篇文章中，我们将使用**稀疏表**而不是分段树来查找给定范围内的最小值，它使用动态编程和位操作来实现`O(1)`查询时间。
 
 ![](img/e98cf3d60cdbfebbe7118d29e43d5fed.png)
 
@@ -739,7 +739,7 @@ Dist(8, 5) = 5
 
 ```
 
-**时间复杂度**：O（1）
+**时间复杂度**：`O(1)`
 
 **空间复杂度**：O（N log N）
 

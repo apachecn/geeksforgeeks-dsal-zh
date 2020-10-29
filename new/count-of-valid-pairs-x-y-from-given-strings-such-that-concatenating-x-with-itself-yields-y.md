@@ -19,9 +19,9 @@
 
 **天真的方法**：的想法是[生成所有可能的对](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)，并根据给定条件检查是否有任何对形成有效对。 如果是，则计算该对并检查下一对。 完成上述步骤后，打印计数值。
 
-***时间复杂度**：O（N <sup>2</sup> ）*
+**时间复杂度**：O（N <sup>2</sup> ）
 
-***辅助空间**：O（1）*
+**辅助空间**：`O(1)`
 
 **高效方法**：的想法是将排序后的字符串及其计数存储在 [Hashmap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中，并遍历数组中的每个字符串，将其自身连接起来并在 **Hashmap 中找到其计数** 将其添加到对数中。 步骤如下：
 
@@ -353,9 +353,9 @@ public static void Main(string []args)
 
 ```
 
-***时间复杂度**：`O(n)`*
+**时间复杂度**：`O(n)`
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

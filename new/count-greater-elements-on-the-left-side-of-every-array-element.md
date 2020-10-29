@@ -25,7 +25,7 @@
 
 ***时间复杂度**：O（N <sup>2</sup> ）
 
-**辅助空间**：O（1）*
+**辅助空间**：`O(1)`*
 
 **有效方法**：可以使用 [Set](https://www.geeksforgeeks.org/set-in-cpp-stl/) 容器解决此问题，这些容器由 [自平衡二进制搜索树](https://www.geeksforgeeks.org/self-balancing-binary-search-trees-comparisons/) 实现。 请按照以下步骤解决问题。
 

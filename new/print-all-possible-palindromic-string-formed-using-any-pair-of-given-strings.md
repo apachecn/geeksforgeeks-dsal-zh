@@ -24,7 +24,7 @@
 
  ***时间复杂度**：*O（N <sup>2</sup> ）*
 
-**辅助空间**：*O（1）*
+**辅助空间**：*`O(1)`*
 
 **有效方法**：可以使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)优化上述方法。 步骤如下：
 

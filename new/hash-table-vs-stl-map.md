@@ -10,7 +10,7 @@
 
 *   值未按排序顺序存储。
 
-*   此外，由于哈希表使用键来查找将存储该值的索引，因此可以在摊销的 O（1）时间（假设哈希表中几乎没有冲突）中进行插入或查找。
+*   此外，由于哈希表使用键来查找将存储该值的索引，因此可以在摊销的`O(1)`时间（假设哈希表中几乎没有冲突）中进行插入或查找。
 
 *   在哈希表中，还必须处理潜在的冲突。 通常，这是通过[链接](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)来完成的，这意味着要创建所有键映射到特定索引的所有值的链表。
 
@@ -32,7 +32,7 @@
 
 **STL Map 内部实现**：
 
-它是作为自平衡红黑树实现的。 可能最常见的两种自平衡树是[红黑树](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)和 [AVL 树](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/)。 为了在插入/更新之后平衡树，两种算法都使用旋转的概念，在该概念中，树的节点被旋转以执行重新平衡。 在两种算法中，插入/删除操作均为 O（log n），在红黑树重新平衡旋转的情况下为 O（1）操作，而对于 AVL，这是 O（log n）操作，因此 RB 树在这方面的重新平衡鼠尾草效率更高，并且是更常用的可能原因之一。
+它是作为自平衡红黑树实现的。 可能最常见的两种自平衡树是[红黑树](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)和 [AVL 树](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/)。 为了在插入/更新之后平衡树，两种算法都使用旋转的概念，在该概念中，树的节点被旋转以执行重新平衡。 在两种算法中，插入/删除操作均为 O（log n），在红黑树重新平衡旋转的情况下为`O(1)`操作，而对于 AVL，这是 O（log n）操作，因此 RB 树在这方面的重新平衡鼠尾草效率更高，并且是更常用的可能原因之一。
 
 **哈希表和 STL 映射**之间的区别
 

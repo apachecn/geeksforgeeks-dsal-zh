@@ -350,7 +350,7 @@ Yes
 
 ```
 
-**时间复杂度**：`O(n)`假定 unordered_map find（）和 insert（）操作在 O（1）时间内工作。
+**时间复杂度**：`O(n)`假定 unordered_map find（）和 insert（）操作在`O(1)`时间内工作。
 
 
 

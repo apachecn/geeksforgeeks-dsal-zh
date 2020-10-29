@@ -29,7 +29,7 @@
 
 **天真的方法**：的想法是针对 L 到 R 之间的每个查询进行迭代，并在给定的数组上执行所需的操作。
 
-***时间复杂度**：O（Q * N *（O（sqrt（max（arr [i]）））*
+**时间复杂度**：O（Q * N *（O（sqrt（max（arr [i]）））
 
 **方法**：要优化问题，请使用[细分树](https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)和[筛网筛网。](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)
 
@@ -513,9 +513,9 @@ print(getSum(st, n, 1, 3))
 
 ```
 
-***时间复杂度**：O（Q * log N）*
+**时间复杂度**：O（Q * log N）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

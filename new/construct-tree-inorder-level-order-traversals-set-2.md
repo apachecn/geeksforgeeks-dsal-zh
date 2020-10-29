@@ -24,7 +24,7 @@ Output: Construct the tree represented
 
 [的解决方案。 设置 1](https://www.geeksforgeeks.org/construct-tree-inorder-level-order-traversals/)
 
-**方法**：以下算法使用 O（N ^ 2）时间复杂度来解决上述问题，它使用 C++中的 [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/) 数据结构（基本上是创建哈希表）来放入 当前根的左子树以及以后的子树，我们将检查 O（1）的复杂度，以确定当前的 levelOrder 节点是否是左子树的一部分。
+**方法**：以下算法使用 O（N ^ 2）时间复杂度来解决上述问题，它使用 C++中的 [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/) 数据结构（基本上是创建哈希表）来放入 当前根的左子树以及以后的子树，我们将检查`O(1)`的复杂度，以确定当前的 levelOrder 节点是否是左子树的一部分。
 
 如果它是左侧子树的一部分，则为左侧添加一个 lLevel 数组，否则将其添加到右侧子树的 rLevel 数组中。
 

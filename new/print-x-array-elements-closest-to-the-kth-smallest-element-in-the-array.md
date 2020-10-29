@@ -18,9 +18,9 @@
 
 **天真的方法**：解决此问题的最简单方法是[对数组](https://www.geeksforgeeks.org/sorting-algorithms/)排序，并打印 **X** 最接近 **K <sup>th</sup>** 使用[两指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)的给定数组的最小元素。
 
-***时间复杂度**：O（N * log N）*
+**时间复杂度**：O（N * log N）
 
-***辅助空间**：O（1）*
+**辅助空间**：`O(1)`
 
 **有效方法**：为了优化上述方法，其思想是使用[中值来有效计算给定阵列的 **K <sup>th</sup>** 最小元素的值 选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)。 请按照以下步骤解决问题：
 
@@ -240,9 +240,9 @@ if __name__ == '__main__':
 
 ```
 
-***时间复杂度**：`O(n)`*
+**时间复杂度**：`O(n)`
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

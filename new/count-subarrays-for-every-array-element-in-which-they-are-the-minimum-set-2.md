@@ -136,9 +136,9 @@ if __name__ == '__main__':
 
 ```
 
-***时间复杂度**：O（N <sup>2</sup> ）*
+**时间复杂度**：O（N <sup>2</sup> ）
 
-***辅助空间**：O（1）*
+**辅助空间**：`O(1)`
 
 **有效方法**：此方法基于[下一个较大元素](https://www.geeksforgeeks.org/next-greater-element/)和[前一个较大元素](https://www.geeksforgeeks.org/previous-greater-element/)的概念。 请按照以下步骤解决问题：
 
@@ -308,9 +308,9 @@ if __name__ == "__main__":
 
 ```
 
-***时间复杂度**：`O(n)`*
+**时间复杂度**：`O(n)`
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

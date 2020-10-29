@@ -18,9 +18,9 @@
 
 **天真的方法**：解决该问题的最简单方法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并为每个子数组检查其所有元素是否唯一。 在这些子数组中找到最大和并打印出来。
 
-***时间复杂度**：O（N <sup>3</sup> ）*
+**时间复杂度**：O（N <sup>3</sup> ）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 **高效方法**：要优化上述方法，其思想是使用[两指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)。 请按照以下步骤解决该方法：
 
@@ -345,9 +345,9 @@ class GFG{
 
 ```
 
-***时间复杂度**：`O(n)`*
+**时间复杂度**：`O(n)`
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

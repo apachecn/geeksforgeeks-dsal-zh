@@ -24,7 +24,7 @@
 > **说明**：
 > 在上述示例中，有 3 个这样的数字{2，2，5}
 
-**方法**：这个想法是使用[哈希图](https://www.geeksforgeeks.org/hashing-data-structure/)检查元素是否在 O（1）时间出现在哈希图中。 然后，遍历数组的元素，并针对每个元素检查数组中是否存在![arr[i] - X](img/6481a6ffc9c0d160f8f6f17e3edfb950.png "Rendered by QuickLaTeX.com")或![arr[i] + X](img/e8db3b0f5854bd8b73da0cf3e3d4ef2a.png "Rendered by QuickLaTeX.com")。 如果是，则将此类元素的计数加 1。
+**方法**：这个想法是使用[哈希图](https://www.geeksforgeeks.org/hashing-data-structure/)检查元素是否在`O(1)`时间出现在哈希图中。 然后，遍历数组的元素，并针对每个元素检查数组中是否存在![arr[i] - X](img/6481a6ffc9c0d160f8f6f17e3edfb950.png "Rendered by QuickLaTeX.com")或![arr[i] + X](img/e8db3b0f5854bd8b73da0cf3e3d4ef2a.png "Rendered by QuickLaTeX.com")。 如果是，则将此类元素的计数加 1。
 
 下面是上述方法的实现：
 

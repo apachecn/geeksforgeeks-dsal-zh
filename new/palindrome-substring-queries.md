@@ -44,7 +44,7 @@ The idea is similar to [Rabin Karp string matching](https://www.geeksforgeeks.or
 > …………………………
 > 前缀[11] = 97 + 98 * 101 + 97 * 101 <sup>2</sup> +…….. + 97 * 101 <sup>10</sup>
 
-现在以这种方式进行存储的原因是，我们可以轻松地在 O（1）时间中找到任何子字符串的哈希值-
+现在以这种方式进行存储的原因是，我们可以轻松地在`O(1)`时间中找到任何子字符串的哈希值-
 
 ```
  hash(L, R) = prefix[R+1] – prefix[L]
@@ -68,7 +68,7 @@ The idea is similar to [Rabin Karp string matching](https://www.geeksforgeeks.or
 > …………………………后缀
 > 后缀[11] = 97 + 98 * 101 + 97 * 101 <sup>2</sup> +…….. + 97 * 101 <sup>10</sup>
 > 
-> 现在以这种方式存储的原因是，我们可以使用 O（1）时间轻松找到任何子字符串的反向哈希值
+> 现在以这种方式存储的原因是，我们可以使用`O(1)`时间轻松找到任何子字符串的反向哈希值
 > 
 > ```
 > reverse_hash(L, R) = hash (R, L) = suffix[n-L] – suffix[n-R-1] 

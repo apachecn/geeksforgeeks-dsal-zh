@@ -270,9 +270,9 @@ public static void Main(string[] args)
 
 ```
 
-***时间复杂度**：O（N <sup>2</sup> ）*
+**时间复杂度**：O（N <sup>2</sup> ）
 
-***辅助空间**：O（1）*
+**辅助空间**：`O(1)`
 
 **高效方法**：可以使用[通过](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/)[映射](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/)来优化上述方法，以存储字符串字符的频率。 请按照以下步骤解决问题：
 
@@ -544,9 +544,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：O（N * 26）*
+**时间复杂度**：O（N * 26）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

@@ -24,7 +24,7 @@
 
 ***时间复杂度**：O（N <sup>2</sup> ）
 
-**辅助空间**：O（1）*
+**辅助空间**：`O(1)`*
 
 **有效方法**：的想法是使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)解决问题。 步骤如下：
 

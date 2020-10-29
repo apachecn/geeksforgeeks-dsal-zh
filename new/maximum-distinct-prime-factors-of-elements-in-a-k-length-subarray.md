@@ -20,9 +20,9 @@
 
 **天真的方法**：最简单的方法是[生成长度为 **K** 的所有可能的子阵列](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并遍历每个子阵列并计算不同的[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/) 它的元素。 最后，打印为任何子阵列获得的独特素数的最大数量。
 
-***时间复杂度**：O（N <sup>2</sup> log N）*
+**时间复杂度**：O（N <sup>2</sup> log N）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 **高效方法**：的想法是使用[滑动窗口技术](https://www.geeksforgeeks.org/window-sliding-technique/)解决此问题。 请按照以下步骤操作：
 
@@ -563,9 +563,9 @@ public class GFG {
 
 ```
 
-***时间复杂度**：O（N * log N）*
+**时间复杂度**：O（N * log N）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

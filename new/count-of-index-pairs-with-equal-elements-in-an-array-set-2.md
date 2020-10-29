@@ -240,9 +240,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：O（N * log N）*
+**时间复杂度**：O（N * log N）
 
-***辅助空间**：O（1）*
+**辅助空间**：`O(1)`
 
 **高效方法–使用单个遍历**：的想法是使用 [**散列**](https://www.geeksforgeeks.org/hashing-data-structure/) 并更新频率大于 1 的每对的计数。以下是步骤：
 
@@ -426,9 +426,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：`O(n)`*
+**时间复杂度**：`O(n)`
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

@@ -125,13 +125,13 @@ Edge from 0 to 3 not found.
 
 *缺点*：
 
-*   与矢量实现中的 O（1）相比，添加边需要 O（log V）。
+*   与矢量实现中的`O(1)`相比，添加边需要 O（log V）。
 
 *   包含平行边的图形无法通过此方法实现。
 
 **使用 unordered_set（或散列）的边缘搜索操作的进一步优化**：
 
-可以使用内部使用散列的 [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/) 将边缘搜索操作进一步优化为 O（1）。
+可以使用内部使用散列的 [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/) 将边缘搜索操作进一步优化为`O(1)`。
 
 ```
 // A C++ program to demonstrate adjacency list
@@ -241,9 +241,9 @@ Edge from 0 to 3 not found.
 
 *优点*：
 
-*   可以在 O（1）中进行查询，例如是否存在从顶点 u 到顶点 v 的边。
+*   可以在`O(1)`中进行查询，例如是否存在从顶点 u 到顶点 v 的边。
 
-*   加边需要 O（1）。
+*   加边需要`O(1)`。
 
 *缺点*：
 

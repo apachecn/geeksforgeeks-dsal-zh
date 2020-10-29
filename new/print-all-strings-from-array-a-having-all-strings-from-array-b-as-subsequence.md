@@ -18,9 +18,9 @@
 
 解决该问题的最简单方法是遍历数组 A []，对于每个字符串，检查数组 B []中的所有字符串是否都以[的形式存在 子序列](https://www.geeksforgeeks.org/given-two-strings-find-first-string-subsequence-second/)与否。
 
-***时间复杂度**：O（N <sup>2</sup> * L），其中 length 表示数组 A []中字符串的最大长度*
+**时间复杂度**：O（N <sup>2</sup> * L），其中 length 表示数组 A []中字符串的最大长度
 
-*[ **辅助空间**：O（1）*
+*[ **辅助空间**：`O(1)`*
 
 **有效方法**：
 
@@ -505,9 +505,9 @@ geeksforgeeks
 
 ```
 
-***时间复杂度**：O（N * * L），其中 length 表示数组 A []中字符串的最大长度。*
+**时间复杂度**：O（N * * L），其中 length 表示数组 A []中字符串的最大长度。
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

@@ -220,7 +220,7 @@ findPairs($arr1, $arr2, 
 
 **时间复杂度**：O（n ^ 2）
 
-**辅助空间**：O（1）
+**辅助空间**：`O(1)`
 
 此问题的**有效解决方案**是[哈希处理](http://www.geeksforgeeks.org/hashing-data-structure/)。 哈希表是使用 C++ 中的 [unordered_set 实现的。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
 

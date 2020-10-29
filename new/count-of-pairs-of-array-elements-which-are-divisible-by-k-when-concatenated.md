@@ -34,9 +34,9 @@
 
 *   打印**计数**的最终值。
 
-***时间复杂度**：O（N <sup>2</sup> * len（maxm），其中 maxm 表示数组中的最大元素，len（maxm）表示 maxm 的位数。*
+**时间复杂度**：O（N <sup>2</sup> * len（maxm），其中 maxm 表示数组中的最大元素，len（maxm）表示 maxm 的位数。
 
-***辅助空间**：O（1）*
+**辅助空间**：`O(1)`
 
 **有效方法**：
 
@@ -370,9 +370,9 @@ public static void Main(string[] args)
 
 ```
 
-***时间复杂度**：O（N * len（maxm））*
+**时间复杂度**：O（N * len（maxm））
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

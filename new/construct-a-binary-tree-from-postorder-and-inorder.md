@@ -506,7 +506,7 @@ Preorder of the constructed tree :
 
 **时间复杂度**：O（n <sup>2</sup> ）
 
-**优化的方法**：我们可以使用哈希（C++中的 unordered_map 或 Java 中的 HashMap）优化上述解决方案。 我们将有序遍历的索引存储在哈希表中。 这样就可以完成 O（1）次搜索。
+**优化的方法**：我们可以使用哈希（C++中的 unordered_map 或 Java 中的 HashMap）优化上述解决方案。 我们将有序遍历的索引存储在哈希表中。 这样就可以完成`O(1)`次搜索。
 
 ## C++
 

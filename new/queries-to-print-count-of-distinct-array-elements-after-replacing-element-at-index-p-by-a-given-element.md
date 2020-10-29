@@ -174,9 +174,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：O（Q * N）*
+**时间复杂度**：O（Q * N）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 **高效方法**：为了优化上述方法，其思想是将每个数组元素的[频率存储在](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，然后遍历每个查询并打印大小 每次更新后的地图。 请按照以下步骤解决问题：
 
@@ -304,9 +304,9 @@ class GFG {
 
 ```
 
-***时间复杂度**：O（N + Q）*
+**时间复杂度**：O（N + Q）
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

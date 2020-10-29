@@ -299,7 +299,7 @@ class GFG
 
 ```
 
-请注意，上述代码中的以下操作可以使用[中讨论的最后一种方法，在 O（1）时间内完成。最小幂 2 大于或等于 n](https://www.geeksforgeeks.org/smallest-power-of-2-greater-than-or-equal-to-n/)
+请注意，上述代码中的以下操作可以使用[中讨论的最后一种方法，在`O(1)`时间内完成。最小幂 2 大于或等于 n](https://www.geeksforgeeks.org/smallest-power-of-2-greater-than-or-equal-to-n/)
 
 ```
 // Find the number which is greater than
