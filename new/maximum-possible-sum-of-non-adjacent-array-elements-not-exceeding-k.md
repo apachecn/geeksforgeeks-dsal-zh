@@ -185,7 +185,7 @@ public static void Main(String[] args)
 
 **辅助空间**：`O(n)`
 
-**有效方法**：为了优化上述方法，其想法是使用[动态编程](http://www.geeksforgeeks.org/dynamic-programming/)。 每个数组元素都有两个可能的选项：
+**有效方法**：为了优化上述方法，其想法是使用[动态规划](http://www.geeksforgeeks.org/dynamic-programming/)。 每个数组元素都有两个可能的选项：
 
 1.  要么跳过当前元素，然后继续下一个元素。
 

@@ -39,7 +39,7 @@
 
 **辅助空间**：`O(1)`
 
-[**<u>动态编程</u>**](http://www.geeksforgeeks.org/dynamic-programming/) **<u>使用自下而上的方法</u>**：上面的递归调用也可以使用 辅助数组 **dp []** ，并以自下而上的方式计算每个状态的值。 步骤如下：
+[**<u>动态规划</u>**](http://www.geeksforgeeks.org/dynamic-programming/) **<u>使用自下而上的方法</u>**：上面的递归调用也可以使用 辅助数组 **dp []** ，并以自下而上的方式计算每个状态的值。 步骤如下：
 
 *   创建大小为 **N** 的辅助数组 **dp []** 。
 
@@ -227,7 +227,7 @@ if __name__ == '__main__':
 
 ***空间复杂度**：`O(n)`*
 
-[**<u>动态编程</u>**](http://www.geeksforgeeks.org/dynamic-programming/) **<u>使用自顶向下方法</u>**：与上述方法一样，[有很多重叠 每个递归调用的子问题](https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/)。 因此，为了优化上述方法，其思想是使用辅助空间[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来存储在每个递归调用中计算出的值并返回重复的存储状态。 步骤如下：
+[**<u>动态规划</u>**](http://www.geeksforgeeks.org/dynamic-programming/) **<u>使用自顶向下方法</u>**：与上述方法一样，[有很多重叠 每个递归调用的子问题](https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/)。 因此，为了优化上述方法，其思想是使用辅助空间[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来存储在每个递归调用中计算出的值并返回重复的存储状态。 步骤如下：
 
 *   初始化映射**映射**，以存储在每个递归调用中计算的值。
 

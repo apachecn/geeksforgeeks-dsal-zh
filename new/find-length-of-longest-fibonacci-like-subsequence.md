@@ -262,7 +262,7 @@ class GFG
 
 **时间复杂度**：O（N <sup>2</sup> * log（M）），其中 N 是数组的长度，M 是 max（A）。
 
-**高效方法**：为了优化上述方法，该想法是实现[动态编程](https://www.geeksforgeeks.org/dynamic-programming/)。 初始化代表斐波那契序列长度的 dp 表 dp [a，b]以（a，b）结尾。 然后将表更新为 dp [a，b] =（dp [b – a，a] + 1）或 2
+**高效方法**：为了优化上述方法，该想法是实现[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)。 初始化代表斐波那契序列长度的 dp 表 dp [a，b]以（a，b）结尾。 然后将表更新为 dp [a，b] =（dp [b – a，a] + 1）或 2
 
 下面是上述方法的实现：
 

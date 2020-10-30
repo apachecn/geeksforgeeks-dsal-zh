@@ -20,7 +20,7 @@
 > **输入**：m [] [] = {{1，2，3}，{2，2，1}，{2，4，2}}，k = 1
 > **输出 **：3 2
 
-**方法**：的想法是使用[动态编程](https://www.geeksforgeeks.org/dynamic-programming/)查找 XOR（i，j）。
+**方法**：的想法是使用[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)查找 XOR（i，j）。
 
 *   按 xor [i] [j] = xor [i-1] [j] ^ xor [i] [j-1] ^ xor [i-1] [j-1] ^计算按位 XOR（i，j） m [i] [j]。
 

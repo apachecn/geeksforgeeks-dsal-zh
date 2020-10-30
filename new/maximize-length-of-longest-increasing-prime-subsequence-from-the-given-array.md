@@ -29,7 +29,7 @@
 
 **辅助空间**：`O(n)`
 
-**高效方法**：的想法是使用[动态编程](https://www.geeksforgeeks.org/dynamic-programming/)方法来优化上述方法。 此问题是[最长增加质数子序列（LIPS）问题](https://www.geeksforgeeks.org/length-of-longest-increasing-prime-subsequence-from-a-given-array/)的基本变体。 请按照以下步骤解决问题。
+**高效方法**：的想法是使用[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)方法来优化上述方法。 此问题是[最长增加质数子序列（LIPS）问题](https://www.geeksforgeeks.org/length-of-longest-increasing-prime-subsequence-from-a-given-array/)的基本变体。 请按照以下步骤解决问题。
 
 1.  初始化[二维](https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/)数组，例如 **dp [] []** ，大小为 **N * 2** ，其中 **dp [i] [0]** 通过选择小于 **i <sup>th</sup>** 索引和 **dp []的 **arr [i]** 的最接近素数来存储最长增长素数子序列的长度。 i] [1]** 通过选择大于或等于 **i <sup>th</sup>** 索引处的 arr [i]的最接近质数来存储最长递增质数子序列的长度。 下面是递归关系：
 
