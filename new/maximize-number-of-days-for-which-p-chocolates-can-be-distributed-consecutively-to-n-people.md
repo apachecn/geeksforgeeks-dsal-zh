@@ -35,7 +35,7 @@
 
 *   对于所有这样的 X，找到最大值。
 
-*   现在，使用[二进制搜索](https://www.geeksforgeeks.org/binary-search/)检查范围 0 到 P 中的所有数字。
+*   现在，使用[二分搜索](https://www.geeksforgeeks.org/binary-search/)检查范围 0 到 P 中的所有数字。
 
 下面是上述方法的实现：
 

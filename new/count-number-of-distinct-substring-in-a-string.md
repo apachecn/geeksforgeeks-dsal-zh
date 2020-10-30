@@ -20,7 +20,7 @@ All elements are not Distinct
 
 先决条件：[打印给定数组](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的子数组
 
-这个想法是使用哈希表（Java 中为 [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) ）来存储所有生成的子字符串。 最后，我们返回 HashSet 的大小。
+这个想法是使用哈希表（Java 中为[`HashSet`](http://www.geeksforgeeks.org/hashset-in-java/)）来存储所有生成的子字符串。 最后，我们返回`HashSet`的大小。
 
 ## C++
 
@@ -370,7 +370,7 @@ aaaa
 
 **优化**：
 
-我们可以进一步优化上面的代码。 substr（）函数以线性时间工作。 我们可以使用将当前字符追加到前一个子字符串来获取当前子字符串。
+我们可以进一步优化上面的代码。 `substr()`函数以线性时间工作。 我们可以使用将当前字符追加到前一个子字符串来获取当前子字符串。
 
 ## C++
 

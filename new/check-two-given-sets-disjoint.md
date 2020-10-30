@@ -446,21 +446,21 @@ Yes
 
 上面的解决方案首先对两个集合进行排序，然后花费`O(m + n)`的时间找到交点。 如果我们给输入集排序，那么这种方法是最好的。
 
-**方法 3（使用排序和二进制搜索）**
+**方法 3（使用排序和二分搜索）**
 
-与方法 1 相似。我们使用[二进制搜索](http://geeksquiz.com/binary-search/)代替线性搜索。
+与方法 1 相似。我们使用[二分搜索](http://geeksquiz.com/binary-search/)代替线性搜索。
 
 1.  排序第一组。
 
-2.  遍历第二组的每个元素，并使用二进制搜索来搜索第一组的每个元素。 如果找到一个元素，则将其返回。
+2.  遍历第二组的每个元素，并使用二分搜索来搜索第一组的每个元素。 如果找到一个元素，则将其返回。
 
 此方法的时间复杂度为`O(mLogm + nLogm)`
 
-**方法 4（使用二进制搜索树）**。
+**方法 4（使用二分搜索树）**。
 
-1.  创建自平衡二进制搜索树（ [第一组中所有元素的红色黑色](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)， [AVL](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/) ， [Splay](https://www.geeksforgeeks.org/splay-tree-set-1-insert/) 等）。
+1.  创建自平衡二分搜索树（ [第一组中所有元素的红色黑色](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)， [AVL](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/) ， [Splay](https://www.geeksforgeeks.org/splay-tree-set-1-insert/) 等）。
 
-2.  遍历第二组的所有元素，并在上述构造的二进制搜索树中搜索每个元素。 如果找到该元素，则返回`false`。
+2.  遍历第二组的所有元素，并在上述构造的二分搜索树中搜索每个元素。 如果找到该元素，则返回`false`。
 
 3.  如果所有元素都不存在，则返回`true`。
 

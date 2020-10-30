@@ -6,7 +6,7 @@
 
     [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) : For operations like search, insert and delete. It takes constant time for these operations on average. HashSet is faster than TreeSet. HashSet is Implemented using a [hash table](https://www.geeksforgeeks.org/hashing-set-1-introduction/).
 
-    [TreeSet](https://www.geeksforgeeks.org/treeset-in-java-with-examples/) ：TreeSet 以 O（Log n）进行搜索，插入和删除，它高于 HashSet。 但是 TreeSet 保留排序的数据。 此外，它支持诸如 high（）（返回最小的更高元素），floor（），ceiling（）等操作。这些操作在 TreeSet 中也是 O（Log n），在 HashSet 中不受支持。 使用自平衡二进制搜索树（[红黑树](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)）实现 TreeSet。 TreeSet 由 Java 中的 TreeMap 支持。
+    [TreeSet](https://www.geeksforgeeks.org/treeset-in-java-with-examples/) ：TreeSet 以 O（Log n）进行搜索，插入和删除，它高于 HashSet。 但是 TreeSet 保留排序的数据。 此外，它支持诸如 high（）（返回最小的更高元素），floor（），ceiling（）等操作。这些操作在 TreeSet 中也是 O（Log n），在 HashSet 中不受支持。 使用自平衡二分搜索树（[红黑树](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)）实现 TreeSet。 TreeSet 由 Java 中的 TreeMap 支持。
 
 *   **排序**
 

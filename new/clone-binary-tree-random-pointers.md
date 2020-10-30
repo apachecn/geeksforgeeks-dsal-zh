@@ -32,7 +32,7 @@ struct node {
    cloneNode->random = map[treeNode->random] 
 ```
 
-以下是上述想法的 C++ 实现。 以下实现使用来自 C++ STL 的[`unordered_map`](https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/)。请注意，映射未实现哈希表，它实际上基于自平衡二进制搜索树。
+以下是上述想法的 C++ 实现。 以下实现使用来自 C++ STL 的[`unordered_map`](https://www.geeksforgeeks.org/unordered_map-in-cpp-stl/)。请注意，映射未实现哈希表，它实际上基于自平衡二分搜索树。
 
 ```
 // A hashmap based C++ program to clone a binary

@@ -26,7 +26,7 @@
 
 **有效方法**：
 
-可以使用[前缀和数组](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[二进制搜索](http://www.geeksforgeeks.org/binary-search/)进一步优化上述方法。 请按照以下步骤操作：
+可以使用[前缀和数组](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[二分搜索](http://www.geeksforgeeks.org/binary-search/)进一步优化上述方法。 请按照以下步骤操作：
 
 *   初始化数组以存储原始数组的**前缀和**。
 
@@ -36,7 +36,7 @@
 
 *   遍历数组，如果有任何元素大于或等于 **K** ，则返回 1 作为答案。
 
-*   否则，对于每个元素，对**前缀和数组**中的索引**（i，n-1）**进行**二进制搜索**，以找到总和为第一个索引 至少 **K** 。
+*   否则，对于每个元素，对**前缀和数组**中的索引**（i，n-1）**进行**二分搜索**，以找到总和为第一个索引 至少 **K** 。
 
 *   返回从上述步骤获得的最小长度子数组。
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/check-whether-bst-contains-dead-end-not/](https://www.geeksforgeeks.org/check-whether-bst-contains-dead-end-not/)
 
-给定[二进制搜索树](http://quiz.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)，其中包含大于 0 的正整数值。任务是检查 BST 是否包含死角。 此处的“死角”意味着，我们无法在该节点之后插入任何元素。
+给定[二分搜索树](http://quiz.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)，其中包含大于 0 的正整数值。任务是检查 BST 是否包含死角。 此处的“死角”意味着，我们无法在该节点之后插入任何元素。
 
 例子：
 
