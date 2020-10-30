@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/check-given-permutation-valid-dfs-graph/](https://www.geeksforgeeks.org/check-given-permutation-valid-dfs-graph/)
 
-给定一个图，该图具有从 1 到`N`的`N`个节点和`M`个边缘的数字，以及从 1 到`N`的数字数组。请检查是否有可能通过在给定图上应用 DFS（深度优先遍历）来获得数组的任何排列。
+给定一个图，该图具有从 1 到`N`的`N`个节点和`M`个边的数字，以及从 1 到`N`的数字数组。请检查是否有可能通过在给定图上应用 DFS（深度优先遍历）来获得数组的任何排列。
 
 **先决条件**：[DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) | CPP 中的[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)
 

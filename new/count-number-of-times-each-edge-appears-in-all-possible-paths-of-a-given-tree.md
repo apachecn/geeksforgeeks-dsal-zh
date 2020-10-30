@@ -1,30 +1,40 @@
-# 计算每个边缘在给定树的所有可能路径中出现的次数
+# 计算每个边在给定树的所有可能路径中出现的次数
 
 > 原文：[https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/](https://www.geeksforgeeks.org/count-number-of-times-each-edge-appears-in-all-possible-paths-of-a-given-tree/)
 
-给定一个 [**无向连通图**](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/) ，形式为 [**树**](https://www.geeksforgeeks.org/binary-tree-data-structure/) ，该树由 **N 个**节点和**组成（ N – 1）**边，每个边的任务是计算它在树中所有可能路径上出现的次数。
+给定一个[**无向连通图**](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)，形式为[**树**](https://www.geeksforgeeks.org/binary-tree-data-structure/)，该树由`N`个**节点**和`N – 1`个边组成，每个边的任务是计算它在树中所有可能路径上出现的次数。
 
 **示例**：
 
 > **输入**：
 > 
-> [![](img/106cfac1750d1bf817f0fe41e7613f80.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200824053939/Example1Graph.jpg)
+> ![](img/106cfac1750d1bf817f0fe41e7613f80.png)
 > 
-> **输出**：3 4 3
-> **说明**：），（2、3），（2、4），（3、4）}。
-> 边缘 1 出现在路径{（1、2），（1、3），（1、4）}中。 因此，边缘的频率为 3\.
-> 边缘 2 出现在路径{（1、3），（1、4），（2、3），（2、4）}中。 因此，边缘的频率为 4。
-> 边缘 3 出现在路径{（1、4），（2、4），（3、4）}中。 因此，边沿的频率为 3。
+> **输出**：`3 4 3`
+> 
+> **说明**：给定树的所有路径为`{(1, 2), (1, 3), (1, 4), (2, 3), (2, 4), (3, 4)}`。
+> 
+> 边 1 出现在路径`{(1, 2), (1, 3), (1, 4)}`中。 因此，边的频率为 3。
+> 
+> 边 2 出现在路径`{(1, 3), (1, 4), (2, 3), (2, 4)}`中。 因此，边的频率为 4。
+> 
+> 边 3 出现在路径`{(1, 4), (2, 4), (3, 4)}`中。 因此，边的频率为 3。
+> 
 > **输入**：
 > 
-> [![](img/3c9cf8446076b0558573ddc66a2f2f62.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200824054414/Example2Graph.jpg)
+> ![](img/3c9cf8446076b0558573ddc66a2f2f62.png)
 > 
-> **输出**：4 6 4 4
+> **输出**：`4 6 4 4`
+> 
 > **说明**：
-> 边缘 1 出现在路径{（1、2），（1、3），（1、4）中 ，（1，5）}。 因此，边缘的频率为 4。
-> 边缘 2 出现在路径{（1、3），（1、4），（1、5），（2、3），（2、4），（ 2、5）}。 因此，边缘的频率为 6
-> 边缘 3 出现在路径{（1、4），（2、4），（3、4），（4、5）}中。 因此，边缘的频率为 4。
-> 边缘 4 出现在路径{（1、5），（2、5），（3、5），（4、5）}中。 因此，边缘的频率为 4
+> 
+> 边 1 出现在路径`{(1, 2), (1, 3), (1, 4), (1, 5)}`。 因此，边的频率为 4。
+> 
+> 边 2 出现在路径`{(1, 3), (1, 4), (1, 5), (2, 3), (2, 4), (2, 5)}`。 因此，边的频率为 6。
+> 
+> 边 3 出现在路径`{(1, 4), (2, 4), (3, 4), (4, 5)}`中。 因此，边的频率为 4。
+> 
+> 边 4 出现在路径`{(1, 5), (2, 5), (3, 5), (4, 5)}`中。 因此，边的频率为 4。
 
 **朴素的方法**：最简单的方法是从给定图的每个节点生成所有可能的路径，并通过 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 存储在这些路径中出现的边数。 最后，打印每个边的频率。
 
@@ -36,18 +46,18 @@
 
 > [![](img/7a6be6b76c27e8846d4210613617bf7e.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200824055300/ApproachGraph.jpg)
 > 
-> **绿色边缘**将出现在**的所有路径**中，这些路径将左侧子树的任何顶点连接到右侧子树的任何顶点。
-> 因此，发生边缘的路径数=两个子树中节点数的乘积= 5 * 3 = 15。
+> **绿色边**将出现在**的所有路径**中，这些路径将左侧子树的任何顶点连接到右侧子树的任何顶点。
+> 因此，发生边的路径数=两个子树中节点数的乘积`= 5 * 3 = 15`。
 
 请按照以下步骤解决问题：
 
 *   将树根在任意随机顶点处，例如 1。
 
-*   在根目录下执行 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 。 使用 DFS 计算连接到边缘的子树大小。
+*   在根目录下执行 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)。 使用 DFS 计算连接到边的子树大小。
 
-*   连接到子树的每个边的频率为**（子树大小）*（N –子树大小）**。
+*   连接到子树的每个边的频率为`子树大小 * (N – 子树大小)`。
 
-*   将上面为每个节点计算的值存储在 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中。 最后，完成树的遍历后，遍历 **HashMap** 以打印结果。
+*   将上面为每个节点计算的值存储在[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中。 最后，完成树的遍历后，遍历`HashMap`以打印结果。
 
 下面是上述方法的实现：
 

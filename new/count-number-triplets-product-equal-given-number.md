@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/](https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/)
 
-给定一组不同的整数（仅包含正数）和数字“ m”，请找出乘积等于“ m”的三元组数。
+给定一组不同的整数（仅包含正数）和数字`m`，请找出乘积等于`m`的三元组数。
 
 **示例**：
 
@@ -20,7 +20,7 @@ Output : 0
 
 在询问：[微软](https://www.geeksforgeeks.org/microsoft-interview-experience-set-116-on-campus/)
 
-**朴素的方法**是将每个三元组一一考虑，并计算它们的乘积是否等于 m。
+**朴素的方法**是将每个三元组一一考虑，并计算它们的乘积是否等于`m`。
 
 ## C++
 
@@ -212,17 +212,17 @@ function countTriplets($arr, $n, $m)
 
 ```
 
-时间复杂度：O（n <sup>3</sup> ）
+时间复杂度：`O(n ^ 3)`
 
 一种有效的**方法**使用散列。
 
-1.  将所有元素及其索引存储在 hash_map 中。
+1.  将所有元素及其索引存储在哈希映射中。
 
-2.  考虑所有对（i，j）并检查以下各项：
+2.  考虑所有对`(i, j)`并检查以下各项：
 
-    *   如果（arr [i] * arr [j]！= 0 &&（m％arr [i] * arr [j]）== 0），如果是，则搜索（m /（arr [i] * arr [ j]）。
+    *   如果`arr[i] * arr[j] != 0 && m % (arr[i] * arr[j]) == 0`，则搜索`m / (arr[i] * arr[j]`。
 
-    *   还要检查 m /（arr [i] * arr [j]）不等于 arr [i]和 arr [j]。
+    *   还要检查`m / (arr[i] * arr[j])`不等于`arr[i]`和`arr[j]`。
 
     *   另外，通过使用映射中存储的索引，检查当前三元组是否未在前面进行计数。
 
