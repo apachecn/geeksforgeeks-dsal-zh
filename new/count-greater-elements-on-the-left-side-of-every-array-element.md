@@ -8,36 +8,45 @@
 
 **示例**：
 
-> **输入**：arr [] = {12，1，2，3，0，}
-> **输出**：0 1 1 1 4
+> **输入**：`arr[] = {12, 1, 2, 3, 0}`
+>
+> **输出**：`0 1 1 1 4`
+>
 > **说明**：
+>
 > 对于索引 0，左侧不存在更大的元素。
-> 对于索引 1，{12}是左侧的较大元素。
-> 对于索引 2，{12}是左侧的较大元素。
-> 对于索引 3，{12}是左侧的较大元素。
-> 对于索引 4，{12，1，2，3}是左侧的较大元素。
-> 因此，输出为 0 1 1 1 4。
+>
+> 对于索引 1，`{12}`是左侧的较大元素。
+>
+> 对于索引 2，`{12}`是左侧的较大元素。
+>
+> 对于索引 3，`{12}`是左侧的较大元素。
+>
+> 对于索引 4，`{12, 1, 2, 3}`是左侧的较大元素。
+>
+> 因此，输出为`0 1 1 1 4`。
 > 
-> **输入**：arr [] = {5，4，3，2，1}
-> **输出**：0 1 2 3 4
+> **输入**：`arr[] = {5, 4, 3, 2, 1}`
+>
+> **输出**：`0 1 2 3 4`
 
 **朴素的方法**：解决该问题的最简单方法是遍历数组，对于每个数组元素，向左遍历，并将每个元素与当前元素进行比较。 最后，为每个数组元素在其左侧打印更多元素的计数。
 
-***时间复杂度**：`O(N ^ 2)`
+**时间复杂度**：`O(N ^ 2)`
 
-**辅助空间**：`O(1)`*
+**辅助空间**：`O(1)`
 
-**有效方法**：可以使用 [Set](https://www.geeksforgeeks.org/set-in-cpp-stl/) 容器解决此问题，这些容器由 [自平衡二进制搜索树](https://www.geeksforgeeks.org/self-balancing-binary-search-trees-comparisons/) 实现。 请按照以下步骤解决问题。
+**有效方法**：可以使用[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)容器解决此问题，这些容器由[自平衡二进制搜索树](https://www.geeksforgeeks.org/self-balancing-binary-search-trees-comparisons/)实现。 请按照以下步骤解决问题。
 
-1.  创建一个空的[设置](https://www.geeksforgeeks.org/set-in-cpp-stl/)， **St** 。
+1.  创建一个空的[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)`St`。
 
-2.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并将每个元素一一插入 **St** 中。
+2.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并将每个元素一一插入`St`中。
 
-3.  使用 [upper_bound](https://www.geeksforgeeks.org/set-upper_bound-function-in-c-stl/) 函数查找 **arr [i]** 的前一个较大元素。
+3.  使用[`upper_bound`](https://www.geeksforgeeks.org/set-upper_bound-function-in-c-stl/)函数查找`arr[i]`的前一个较大元素。
 
-4.  使用 [distance](https://www.geeksforgeeks.org/stddistance-in-c/) 函数查找集合中的上一个较大元素与最后一个元素之间的距离。
+4.  使用[`distance`](https://www.geeksforgeeks.org/stddistance-in-c/)函数查找集合中的上一个较大元素与最后一个元素之间的距离。
 
-5.  将距离存储在数组 **countLeftGreater []** 中。
+5.  将距离存储在数组`countLeftGreater[]`中。
 
 6.  打印数组。
 
