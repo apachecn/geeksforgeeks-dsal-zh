@@ -1,4 +1,4 @@
-# 计数可被 K |整除的数组中的对数 设置 2
+# 计数可被`K`整除的数组中的对数 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/](https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/)
 
@@ -6,12 +6,14 @@
 
 **示例**：
 
-> **输入**：A [] = {2，2，1，7，5，5}，K = 4
+> **输入**：`A[] = {2, 2, 1, 7, 5, 5}, K = 4`
+>
 > **输出**：5
-> 可能有五对 sum
-> 可被'4'整除，即（2，2），
-> （1、7），（7、5），（1、3）和（5、3）
-> **输入**：A [] = {5，9，36，74，52，31，42}，K = 3
+>
+> 可能有五对和可被 4 整除，即`(2, 2)`，`(1, 7)`，`(7, 5)`，`(1, 3)`和`(5, 3)`
+>
+> **输入**：`A[] = {5, 9, 36, 74, 52, 31, 42}, K = 3`
+>
 > **输出**：7
 
 **方法**：在先前的[文章](https://www.geeksforgeeks.org/count-pairs-in-array-whose-sum-is-divisible-by-k/)中，讨论了一种使用哈希的方法。 在本文中，讨论了使用哈希的另一种方法。
