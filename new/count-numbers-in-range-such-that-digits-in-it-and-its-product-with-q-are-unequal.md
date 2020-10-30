@@ -1,8 +1,8 @@
-# 计算范围内的数字，以使其与 q 的乘积不相等
+# 计算范围内的数字，以使其与`q`的乘积不相等
 
 > 原文：[https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/](https://www.geeksforgeeks.org/count-numbers-in-range-such-that-digits-in-it-and-its-product-with-q-are-unequal/)
 
-给定一系列数字[l，r]和一个整数 q。 任务是对给定范围内的所有此类数字进行计数，以使该数字的任何数字与产品中具有给定数字 q 的任何数字都不匹配。
+给定一系列数字`[l, r]`和一个整数`q`。 任务是对给定范围内的所有此类数字进行计数，以使该数字的任何数字与产品中具有给定数字`q`的任何数字都不匹配。
 
 **范例**：
 
@@ -20,7 +20,7 @@ Output : 9
 
 **来源**：[高盛面试集 46](https://www.geeksforgeeks.org/goldman-sachs-interview-experience-set-46-experienced/)
 
-的想法是从 l 到 r 循环运行，以生成范围内的所有数字，并将每个此类数字 n 转换为 q，即使用 [to_string（）](https://www.geeksforgeeks.org/stdto_string-in-cpp/)方法对字符串进行 n * q，然后使用基本字符串哈希检查 string2 中是否存在 string2 中的任何字符。
+的想法是从`l`到`r`循环运行，以生成范围内的所有数字，并将每个此类数字`n`转换为`q`，即使用[`to_string()`](https://www.geeksforgeeks.org/stdto_string-in-cpp/)方法对字符串进行`n * q`，然后使用基本字符串哈希检查`string2`中是否存在`string2`中的任何字符。
 
 下面是上述方法的实现：
 
