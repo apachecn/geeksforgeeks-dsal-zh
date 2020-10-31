@@ -301,7 +301,7 @@ Number of Fibonacci numbers in subarray from 0 to 4 = 5
 
 **时间复杂度**：每个查询和更新的时间复杂度为 **O（log n）**，构建段树的时间复杂度为 **`O(n)`**
 
-[![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
+
 
 * * *
 

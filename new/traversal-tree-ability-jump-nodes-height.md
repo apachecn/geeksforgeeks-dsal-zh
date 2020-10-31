@@ -174,7 +174,7 @@ return 0;
 
 **时间复杂度**：O（n * n * k）（最坏的情况，例如：2 层树，其根具有 n-1 个子节点）
 
-[![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
+
 
 * * *
 
