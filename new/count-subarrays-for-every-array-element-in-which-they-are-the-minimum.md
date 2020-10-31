@@ -17,7 +17,7 @@
 
 **朴素的方法**：最简单的方法是[生成给定数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)的所有子数组，并对每个数组元素 **arr [i]** 计数其中的子数组数 它是最小的元素。
 
-**时间复杂度**：O（N <sup>3</sup> ）
+**时间复杂度**：`O(N ^ 3)`
 
 **辅助空间**：`O(n)`
 

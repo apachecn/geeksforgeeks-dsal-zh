@@ -2,17 +2,25 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/](https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/)
 
-给定数字字符串 **str** ，任务是计算数字总和等于其长度的子字符串的数量。
+给定数字字符串`str`，任务是计算数字总和等于其长度的子字符串的数量。
 
 **示例**：
 
-> **输入**：str =“ 112112” ”，“ 1”，“ 1”，“ 11”满足给定条件。
-> **输入**：str =“ 1101112”。
+> **输入**：`str = "112112"`
+>
+> **输出**：6
+>
+> **解释**：
+>
+> 子串`"1", "1", "11"`满足给定条件。
+>
+> **输入**：`str = "1101112"`
+>
 > **输出**：12
 
 **朴素的方法**：最简单的解决方案是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有子字符串，并为每个子字符串检查其总和是否等于其长度。 对于发现为真的每个子字符串，增加计数。
 
-**时间复杂度**：O（N <sup>3</sup> ）
+**时间复杂度**：`O(N ^ 3)`
 
 **辅助空间**：`O(1)`
 

@@ -25,7 +25,7 @@ achieved by the following quadruple {1, 2, 3, 4} as a<sub>1</sub>a<sub>2</sub>a<
 
 ```
 
-**蛮力：O（n <sup>4</sup> ）**生成
+**蛮力：`O(N ^ 4)`**生成
 
 并计算所有可能的四倍数，从而得到最大乘积
 

@@ -18,7 +18,7 @@
 
 **朴素的方法**：解决该问题的最简单方法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并为每个子数组检查其所有元素是否唯一。 在这些子数组中找到最大和并打印出来。
 
-**时间复杂度**：O（N <sup>3</sup> ）
+**时间复杂度**：`O(N ^ 3)`
 
 **辅助空间**：`O(n)`
 

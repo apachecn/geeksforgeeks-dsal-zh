@@ -16,7 +16,7 @@
 
 **朴素的方法**：解决此问题的最简单方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)和[生成给定数组的所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，对于每个子数组，检查是否全部 子数组中的元素至少发生两次或没有。 如果发现为真，则增加计数。 最后，打印获得的**计数**。
 
-**时间复杂度**：O（N <sup>3</sup> ）
+**时间复杂度**：`O(N ^ 3)`
 
 **辅助空间**：`O(n)`
 
