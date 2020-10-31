@@ -1,8 +1,8 @@
-# 和为完美平方的子数组的数量
+# 和为完全平方的子数组的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/](https://www.geeksforgeeks.org/count-of-subarrays-whose-sum-is-a-perfect-square/)
 
-给定具有正负元素的数组 **arr []** ，任务是对所有和为完美平方的子数组进行计数。
+给定具有正负元素的数组 **arr []** ，任务是对所有和为完全平方的子数组进行计数。
 
 **范例**：
 
@@ -16,7 +16,7 @@
 
 **朴素的方法**：
 
-一个简单的解决方案是生成所有可能的子数组。 遍历时，请跟踪子数组总和。 记录所有和为完美平方的子数组。
+一个简单的解决方案是生成所有可能的子数组。 遍历时，请跟踪子数组总和。 记录所有和为完全平方的子数组。
 
 **高效解决方案**：的想法是使用[前缀和数组](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)解决给定的问题。
 

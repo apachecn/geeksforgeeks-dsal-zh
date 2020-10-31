@@ -1,8 +1,8 @@
-# 在长度为 K 的所有完美平方中，可能是最长的异序词集中最大的数字。
+# 在长度为 K 的所有完全平方中，可能是最长的异序词集中最大的数字。
 
 > 原文：[https://www.geeksforgeeks.org/largest-number-from-the-longest-set-of-anagrams-possible-from-all-perfect-squares-of-length-k/](https://www.geeksforgeeks.org/largest-number-from-the-longest-set-of-anagrams-possible-from-all-perfect-squares-of-length-k/)
 
-给定整数 **K** ，使得存在一组所有可能的[完美平方](https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/)，每个长度为 **K** 。 从这组完美的正方形中，形成一组具有尽可能多的长度的集合，其长度彼此为[异序词。 任务是打印在生成的异序词集中存在的最大元素。
+给定整数 **K** ，使得存在一组所有可能的[完全平方](https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/)，每个长度为 **K** 。 从这组完美的正方形中，形成一组具有尽可能多的长度的集合，其长度彼此为[异序词。 任务是打印在生成的异序词集中存在的最大元素。
 
 **注意**：如果一组以上最大长度，则打印其中最大的一组。](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)
 
@@ -21,7 +21,7 @@
 > **输入**：K = 5
 > **输出**：96100
 
-**朴素的方法**：最简单的方法是存储所有可能的 **K** 个长度的完美平方，并使用[递归](http://www.geeksforgeeks.org/recursion/)形成有效的七字组。 然后，找到最长长度集中存在的最大元素。
+**朴素的方法**：最简单的方法是存储所有可能的 **K** 个长度的完全平方，并使用[递归](http://www.geeksforgeeks.org/recursion/)形成有效的七字组。 然后，找到最长长度集中存在的最大元素。
 
 ***时间复杂度**：`O(N ^ 2)`
 
@@ -33,7 +33,7 @@
 
 2.  [生成长度为 **K** 的所有完全平方](https://www.geeksforgeeks.org/print-all-perfect-squares-from-the-given-range/)。
 
-3.  对于生成的每个完美平方，在**映射**中插入对应于其数字以升序排列的数字的数字。
+3.  对于生成的每个完全平方，在**映射**中插入对应于其数字以升序排列的数字的数字。
 
 4.  遍历**映射**并从最大长度集中打印最大的数字。
 
