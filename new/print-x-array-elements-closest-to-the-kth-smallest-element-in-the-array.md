@@ -18,7 +18,7 @@
 
 **朴素的方法**：解决此问题的最简单方法是[对数组](https://www.geeksforgeeks.org/sorting-algorithms/)排序，并打印 **X** 最接近 **K <sup>th</sup>** 使用[两指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)的给定数组的最小元素。
 
-**时间复杂度**：O（N * log N）
+**时间复杂度**：`O(N * log N)`
 
 **辅助空间**：`O(1)`
 

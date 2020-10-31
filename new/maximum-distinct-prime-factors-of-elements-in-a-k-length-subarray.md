@@ -563,7 +563,7 @@ public class GFG {
 
 ```
 
-**时间复杂度**：O（N * log N）
+**时间复杂度**：`O(N * log N)`
 
 **辅助空间**：`O(n)`
 

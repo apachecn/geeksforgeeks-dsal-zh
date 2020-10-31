@@ -1,20 +1,23 @@
-# 对于 Q 查询，给定子树中具有奇数除数的节点数
+# 对于`Q`查询，给定子树中具有奇数除数的节点数
 
 > 原文：[https://www.geeksforgeeks.org/count-of-nodes-having-odd-divisors-in-the-given-subtree-for-q-queries/](https://www.geeksforgeeks.org/count-of-nodes-having-odd-divisors-in-the-given-subtree-for-q-queries/)
 
-给定 [N 元树](https://www.geeksforgeeks.org/generic-treesn-array-trees/)和 **Q** 查询，其中每个查询包含 N 元树的一个节点，任务是计算除数为奇数的节点数 在子树中进行 Q 查询。
+给定[`N`元树](https://www.geeksforgeeks.org/generic-treesn-array-trees/)和`Q`查询，其中每个查询包含`N`元树的一个节点，任务是计算除数为奇数的节点数 在子树中进行`Q`查询。
 
 **示例**：
 
 > **输入**：
 > 
-> [![](img/91c19f8043342eb1c8eb1dea797a5086.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200520193134/some.jpg)
+> ![](img/91c19f8043342eb1c8eb1dea797a5086.png)
 > 
-> **输出**：1 3 0 1
+> **输出**：`1 3 0 1`
 > 
-> **解释**：，
-> **查询 1**：在以节点 100 为根的子树中，只有一个节点 100，它有 9 个除数{1、2、4、5、10 ，20、25、50、100}。 因此，只有一个节点具有奇数个除数。
-> **查询 2**：在以节点 4 为根的子树中，有 5 个节点，其中 3 个节点具有奇数个除数。 即{4，9，100}
+> **解释**：
+>
+> **查询 1**：在以节点 100 为根的子树中，只有一个节点 100，它有 9 个除数`{1, 2, 4, 5, 10 , 20, 25, 50, 100}`。 因此，只有一个节点具有奇数个除数。
+>
+> **查询 2**：在以节点 4 为根的子树中，有 5 个节点，其中 3 个节点具有奇数个除数。 即`{4, 9, 100}`。
+>
 > **查询 3**：在以节点 5 为根的子树中，只有一个节点 5，它有两个除数。 因此，零个节点的除数为奇数。
 
 **朴素的方法**：一个简单的解决方案是遍历每个查询的子树并找到具有奇数个除数的节点数。

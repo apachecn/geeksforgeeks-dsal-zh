@@ -294,7 +294,7 @@ print(lengthOfLongestSubarray(a, n, k))
 
 ```
 
-时间复杂度：O（N * log N）
+时间复杂度：`O(N * log N)`
 
 
 

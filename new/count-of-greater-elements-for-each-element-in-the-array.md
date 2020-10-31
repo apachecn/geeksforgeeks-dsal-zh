@@ -4,15 +4,17 @@
 
 中每个元素的较大元素计数
 
-给定大小为 **N** 的整数的数组 **arr** ，任务是为每个元素查找大于它的元素数量。
+给定大小为`N`的整数的数组`arr`，任务是为每个元素查找大于它的元素数量。
 
 **示例**：
 
-> **输入**：arr [] = {4，6，2，1，8，7}
-> **输出**：{3，2，4，5，0，1}
+> **输入**：`arr[] = {4, 6, 2, 1, 8, 7}`
+>
+> **输出**：`{3, 2, 4, 5, 0, 1}`
 > 
-> **输入**：arr [] = {2，3，4，5，6，7，8}
-> **输出**：{6，5，4，4，3，2，1 ，0}
+> **输入**：`arr[] = {2, 3, 4, 5, 6, 7, 8}`
+>
+> **输出**：`{6, 5, 4, 4, 3, 2, 1 , 0}`
 
 **方法**：使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)存储每个数组元素的[频率。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/) [反向迭代映射](https://www.geeksforgeeks.org/how-to-traverse-a-stl-map-in-reverse-direction/)，并为每个元素存储所有先前遍历的元素（即大于它的元素）的频率之和。
 

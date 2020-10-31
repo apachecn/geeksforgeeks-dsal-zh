@@ -2,21 +2,29 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-of-index-pairs-with-equal-elements-in-an-array-set-2/](https://www.geeksforgeeks.org/count-of-index-pairs-with-equal-elements-in-an-array-set-2/)
 
-给定 **N** 个元素的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 。 任务是计算索引**（i，j）**的总数，以使 **arr [i] = arr [j]** 和 **i！= j**
+给定`N`个元素的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`。 任务是计算索引`(i, j)`的总数，以使`arr[i] = arr[j]`和`i != j`。
 
 **示例**：
 
-> **输入**：arr [] = {1、2、1、1} ​​
+> **输入**：`arr[] = {1, 2, 1, 1} `​​
+>
 > **输出**：3
+>
 > **说明**：
-> 在数组中 arr [0] = arr [2] = arr [3]
-> 有效对为（0，2），（0，3）和（2，3）
+>
+> 在数组中 `arr[0] = arr[2] = arr [3]`
+>
+> 有效对为`（0, 2)`, `(0, 3)`和`(2, 3)`
 > 
-> **输入**：arr [] = {2，2，3，2，3}
+> **输入**：`arr[] = {2, 2, 3, 2, 3}`
+>
 > **输出**：4
+>
 > **说明**：
-> 输入 数组 arr [0] = arr [1] = arr [3]和 arr [2] = arr [4]
-> 所以有效对是（0，1），（0，3），（1，3） ，（2，4）
+>
+> 在数组中`arr[0] = arr[1] = arr[3]`和`arr[2] = arr[4]`
+>
+> 所以有效对是`(0, 1)`，`(0, 3)`，`(1, 3)`，`(2, 4)`
 
 对于朴素和有效的方法，请参阅本文的[先前文章](https://www.geeksforgeeks.org/count-index-pairs-equal-elements-array/)。
 
@@ -240,7 +248,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度**：O（N * log N）
+**时间复杂度**：`O(N * log N)`
 
 **辅助空间**：`O(1)`
 

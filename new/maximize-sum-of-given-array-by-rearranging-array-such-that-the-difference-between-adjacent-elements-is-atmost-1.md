@@ -22,7 +22,7 @@
 
 **朴素的方法**：最简单的方法是[对给定的数组进行排序](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)，然后遍历已排序的数组并减少不满足给定条件的元素。
 
-**时间复杂度**：O（N * log N），其中 N 是给定数组的大小。
+**时间复杂度**：`O(N * log N)`，其中 N 是给定数组的大小。
 
 **辅助空间**：`O(n)`
 

@@ -18,7 +18,7 @@
 > 完全卸下 2 和 4。
 > 因此，剩下的 1、3 和 5，即 3 个元素。
 
-对于 **O（N * log N）**方法，请参考[先前的文章](https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items/)。
+对于 **`O(N * log N)`**方法，请参考[先前的文章](https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items/)。
 
 **高效方法**：这个想法是将每个元素的出现存储在[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)中，然后再次计算每个频率在哈希中的出现。 步骤如下：
 
