@@ -1,20 +1,20 @@
-# 具有至少 K 个成对区分字符且具有相同频率的子字符串的计数
+# 具有至少`K`个成对区分字符且具有相同频率的子字符串的计数
 
 > 原文：[https://www.geeksforgeeks.org/count-of-substrings-with-at-least-k-pairwise-distinct-characters-having-same-frequency/](https://www.geeksforgeeks.org/count-of-substrings-with-at-least-k-pairwise-distinct-characters-having-same-frequency/)
 
-给定字符串 **S** 和整数 **K** ，任务是找到至少由 **K** 成对的具有相同频率的成对字符组成的子串数。
+给定字符串`S`和整数`K`，任务是找到至少由`K`个具有相同频率的成对的不同字符组成的子串数。
 
 **示例**：
 
-> **输入**：S =“ abasa”，K = 2
+> **输入**：`S = "abasa", K = 2`
 > **输出**：5
 > **说明**：
-> 中的子字符串具有成对的两个成对的 具有相同频率的字符为{“ ab”，“ ba”，“ as”，“ sa”，“ bas”}。
+> 具有相同频率的 2 个成对的不同字符组成的子串为`{"ab"，"ba"，"as"，"sa"，"bas"}`。
 > 
-> **输入**：S =“ abhay”，K = 3
+> **输入**：`S = "abhay", K = 3`
 > **输出**：4
 > **说明**：
-> 子字符串具有 3 个成对的不同字符 频率相同的是{“ abh”，“ bha”，“ hay”，“ bhay”}。
+> 具有相同频率的 3 个成对的不同字符组成的子串为`{"abh"，"bha"，"hay"，"bhay"}`。
 
 **朴素的方法**：解决此问题的最简单方法是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有可能的子字符串，并检查两个条件是否都满足。 如果发现是真的，请增加**计数**。 最后，打印**计数**。
 

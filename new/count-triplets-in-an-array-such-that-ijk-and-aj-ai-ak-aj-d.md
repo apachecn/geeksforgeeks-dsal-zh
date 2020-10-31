@@ -1,4 +1,4 @@
-# 对数组中的三胞胎进行计数，使得 i
+# 对数组中的三元组进行计数，使得 i
 
 > 原文：[https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/](https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/)
 
