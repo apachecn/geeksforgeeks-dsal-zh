@@ -317,11 +317,11 @@ Count = 2
 
 ```
 
-**时间复杂度**：O（n1 * n2）
+**时间复杂度**：`O(n1 * n2)`
 
 **辅助空间**：`O(1)`
 
-**方法 2（排序）**：使用合并排序技术以升序对第一个链接列表和降序排列第二个[列表。 现在，按照以下方式从左到右遍历两个列表：](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
+**方法 2（排序）**：使用合并排序技术以升序对第一个链接列表和降序排列第二个[列表](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)。 现在，按照以下方式从左到右遍历两个列表：
 
 **算法**：
 
@@ -342,7 +342,7 @@ countPairs(list1, list2, x)
 
 ```
 
-为简单起见，下面给出的实现假定 list1 以升序排序，list2 以降序排序。
+为简单起见，下面给出的实现假定`list1`以升序排序，`list2`以降序排序。
 
 ## C / C++
 
@@ -537,13 +537,13 @@ Count = 2
 
 ```
 
-**时间复杂度**：O（n1 * logn1）+ O（n2 * logn2）
+**时间复杂度**：`O(n1 * logn1) + O(n2 * logn2)`
 
 **辅助空间**：`O(1)`
 
 排序将更改节点的顺序。 如果顺序很重要，则可以创建和使用链接列表的副本。
 
-**方法 3（哈希）**：哈希表是使用 C++ 中的 [unordered_set 实现的。 我们将所有第一个链接列表元素存储在哈希表中。 对于第二个链表的元素，我们从 **x** 中减去每个元素，然后在哈希表中检查结果。 如果结果存在，我们将增加**计数**。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
+**方法 3（哈希）**：哈希表是使用 C++ 中的[`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)实现的。 我们将所有第一个链接列表元素存储在哈希表中。 对于第二个链表的元素，我们从`x`中减去每个元素，然后在哈希表中检查结果。 如果结果存在，我们将增加**计数**。
 
 ## C++
 
@@ -779,9 +779,9 @@ Count = 2
 
 ```
 
-**时间复杂度**：O（n1 + n2）
+**时间复杂度**：`O(n1 + n2)`
 
-**辅助空间**：O（n1），应为较小的数组创建哈希表，以降低空间复杂度 。
+**辅助空间**：`O(n1)`，应为较小的数组创建哈希表，以降低空间复杂度。
 
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
