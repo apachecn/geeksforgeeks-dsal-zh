@@ -2,24 +2,28 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/](https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/)
 
-给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，任务是计算可能的成对数组元素**（arr [i]，arr [j ]）**，使得**（arr [i] + arr [j]）*（arr [i] – arr [j]）**为 **0** 。
+给定大小为`N`的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是计算可能的成对数组元素`arr[i], arr[j]`，使得`(arr[i] + arr[j])(arr[i] - arr[j])`为 **0**。
 
 **示例**：
 
-> **输入**：arr [] = {2，-2，1，1}
+> **输入**：`arr[] = {2, -2, 1, 1}`
 > **输出**：2
 > **说明**：
-> （arr [0] + arr [1]）*（arr [0] – arr [1]）= 0
-> （arr [3] + arr [4]）*（arr [3] – arr [4]）= 0
+>
+> ```
+> (arr [0] + arr [1]) * (arr [0] – arr [1]) = 0
+> (arr [3] + arr [4]) * (arr [3] – arr [4]) = 0
+> ```
 > 
-> **输入**：arr [] = {5，9，-9，-9}
+> **输入**：`arr[] = {5, 9, -9, -9}`
+> 
 > **输出**：3
 
-**方法**：可以看出，方程**（arr [i] + arr [j]）*（arr [i] – arr [j]）= 0** 可简化为 **arr [i] <sup>2</sup> = arr [j] <sup>2</sup>** 。 因此，任务减少到对具有[绝对值](https://www.geeksforgeeks.org/abs-labs-llabs-functions-cc/)相等的对进行计数。 请按照以下步骤解决问题：
+**方法**：可以看出，方程`(arr[i] + arr[j])(arr[i] - arr[j]) = 0`可简化为`arr[i] ^ 2 = arr[j] ^ 2`。 因此，任务减少到对具有[绝对值](https://www.geeksforgeeks.org/abs-labs-llabs-functions-cc/)相等的对进行计数。 请按照以下步骤解决问题：
 
-*   初始化数组 **hash []** ，以存储每个数组元素的绝对值的频率。
+*   初始化数组`hash[]`，以存储每个数组元素的绝对值的频率。
 
-*   通过为每个数组不同的绝对值相加**（hash [x] *（hash [x] – 1））/ 2 2** ，计算对数。
+*   通过为每个数组不同的绝对值相加`(hash[x] * (hash[x] – 1)) / 2`，计算对数。
 
 下面是上述方法的实现：
 

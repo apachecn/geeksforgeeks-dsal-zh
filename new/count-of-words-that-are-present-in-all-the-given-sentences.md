@@ -2,23 +2,36 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/](https://www.geeksforgeeks.org/count-of-words-that-are-present-in-all-the-given-sentences/)
 
-给定 **n** 个句子。 任务是计算所有这些句子中出现的单词数。 **请注意，**每个单词仅由小写英文字母组成。
+给定`n`个句子。 任务是计算所有这些句子中出现的单词数。 **请注意**，每个单词仅由小写英文字母组成。
 
 **示例**：
 
-> **输入**：arr [] = {
-> “有一头牛”，
-> “牛是我们的母亲”，
-> “牛给我们牛奶，牛奶是甜的”，
-> “有一个爱牛的男孩”}
-> **输出**：2
-> 在所有句子中只有单词“ is”和“ cow”出现。
+> **输入**：
+>
+> ```
+> arr[] = {
+>   "there is a cow",
+>   "cow is our mother",
+>   "cow gives us milk and milk is sweet",
+>   "there is a boy who loves cow"
+> }
+> ```
 > 
-> **输入**：arr [] = {
-> “ abc aac abcd ccc”，
-> “ ac aa abc cca”，
-> “ abca aaac abcd ccc”}
-> **输出 **：0
+> **输出**：2
+>
+> 在所有句子中只有单词`"is"`和`"cow"`出现。
+> 
+> **输入**：
+> 
+> ```
+> arr [] = {
+>   "abc aac abcd ccc",
+>   "ac aa abc cca",
+>   "abca aaac abcd ccc"
+> }
+> ```
+>
+> **输出**：0
 
 **朴素的方法**：朴素的方法是将第一句的每个单词都包含在所有行中，然后将其与其余行进行比较，然后增加计数。
 
