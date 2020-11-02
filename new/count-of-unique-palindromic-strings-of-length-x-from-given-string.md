@@ -1,30 +1,28 @@
-# 给定字符串
+# 给定字符串中长度为`X`的唯一回文字符串的计数
 
 > 原文：[https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/](https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/)
 
-中长度为 X 的唯一回文字符串的计数
-
-给定**字符串 s** 和**整数 X** ，我们的任务是从给定字符串中找到长度为 X 的不同回文字符串的数量。
+给定字符串`s`和整数`X`，我们的任务是从给定字符串中找到长度为`X`的不同回文字符串的数量。
 
 **示例**：
 
-> **输入**：s =“ aaa”，X = 2
+> **输入**：`s = "aaa", X = 2`
 > **输出**：1
 > **说明**：
-> 这里的字符串的所有字符 是相同的，因此我们只能制作一个长度为 2 的不同字符串{aa}。
+> 这里的字符串的所有字符 是相同的，因此我们只能制作一个长度为 2 的不同字符串`{aa}`。
 > 
-> **输入**：s =“ aabaabbc”，X = 3
+> **输入**：`s = "aabaabbc", X = 3`
 > **输出**：6
 > **说明**：
-> 制作长度为回文的字符串 3 我们有 6 个可能的字符串 aaa，aba，aca，bab，bcb，bbb。
+> 制作长度为回文的字符串 3 我们有 6 个可能的字符串`aaa, aba, aca, bab, bcb, bbb`。
 
-**朴素的方法**：朴素的方法是生成长度 X 的所有可能子序列，然后检查该子序列是否形成回文。
+**朴素的方法**：朴素的方法是生成长度`X`的所有可能子序列，然后检查该子序列是否形成回文。
 
-**时间复杂度**：O（2 <sup>N</sup> ）
+**时间复杂度**：`O(2 ^ N）`
 
-**辅助空间**：O（X）
+**辅助空间**：`O(X)`
 
-**高效方法**：想法是找到字符串中所有字符的 [**频率**](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/) 。 计算可以放在特定位置的字符的不同数量，并将计数数量减少 2，因为回文字符串的位置**（i）和（X – i）**相同。 如果 X 的长度为奇数，则我们必须在该位置 X / 2 处放置唯一的一个字符。
+**高效方法**：想法是找到字符串中所有字符的[**频率**](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/)。 计算可以放在特定位置的字符的不同数量，并将计数数量减少 2，因为回文字符串的位置`i`和`X – i`相同。 如果`X`的长度为奇数，则我们必须在该位置`X / 2`处放置唯一的一个字符。
 
 下面是上述方法的实现：
 
@@ -229,7 +227,7 @@ if __name__ == '__main__':
 
 ```
 
-**时间复杂度**：O（N + 26 * X）
+**时间复杂度**：`O(N + 26 * X)`
 
 
 

@@ -1,21 +1,28 @@
-# 来自给定字符串的有效对（X，Y）的计数，以使 X 与自身连接产生 Y
+# 来自给定字符串的有效对`(X, Y)`的计数，以使`X`与自身连接产生`Y`
 
 > 原文：[https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/](https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/)
 
-给定 **N** 个字符串的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 。 假设 **X** 和 **Y** 为两个字符串，如果重排，则 **X** 和 **Y** 是有效的对。 从 **X** 与 **X** （**，即 X** + **X** ）串联得到的字符串的结果为 **Y** 。 任务是计算此类有效对的数量。
+给定`N`个字符串的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`。 假设`X`和`Y`为两个字符串，如果重排，则`X`和`Y`是有效的对。 从`X`与`X`串联（即`X + X`）得到的字符串的结果为`Y`。 任务是计算此类有效对的数量。
 
 **示例**：
 
-> **输入**：N = 4，arr [] = {“ hacker”，“ ackerhackerh”，“ int”，“ iittnn”，“ long”}
+> **输入**：`N = 4, arr[] = {"hacker", "ackerhackerh", "int", "iittnn", "long"}`
+>
 > **输出**：2
+>
 > **说明**：
-> 对{“ hacker”，“ ackerhackerh”}“ hacker”与“ hacker”并置后，会在重新排列后给出“ ackerhackerh”。
-> 对{“ int”，“ iittnn”}“ int”与“ int”串联时，在重新排列后会给出“ iittnn”。
+>
+> 连接`{"hacker", "ackerhackerh"}`的`"hacker"`与`"hacker"}`后，会在重新排列后给出`"ackerhackerh"`。
+>
+> 连接`{"int", "iittnn"}`的`"int"`与`"int"`时，在重新排列后会给出`"iittnn"`。
 > 
-> **输入**：N = 3，arr [] = {“ easy”，“ yeasseay”，“ medium”}
+> **输入**：`N = 3, arr[] = {"easy", "yeasseay", "medium"}`
+>
 > **输出**：1
-> **说明：[**
-> 对{“ easy”，“ yeasseay”}“ easy”与“ easy”结合使用时，在重新排列后会得到“ yeasseay”。
+>
+> **说明**：
+>
+> 连接`{"easy", "yeasseay"}`的`"easy"`与`"easy"`时，在重新排列后会得到`"yeasseay"`。
 
 **朴素的方法**：的想法是[生成所有可能的对](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)，并根据给定条件检查是否有任何对形成有效对。 如果是，则计算该对并检查下一对。 完成上述步骤后，打印计数值。
 
@@ -23,13 +30,13 @@
 
 **辅助空间**：`O(1)`
 
-**高效方法**：的想法是将排序后的字符串及其计数存储在 [Hashmap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中，并遍历数组中的每个字符串，将其自身连接起来并在 **Hashmap 中找到其计数** 将其添加到对数中。 步骤如下：
+**高效方法**：的想法是将排序后的字符串及其计数存储在[`Hashmap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中，并遍历数组中的每个字符串，将其自身连接起来并在`Hashmap`中找到其计数将其添加到对数中。 步骤如下：
 
 1.  创建一个哈希映射。
 
 2.  对数组中给定的字符串进行排序，并将其计数存储在哈希映射中。
 
-3.  再次遍历所有字符串，并将每个字符串与其自身连接[，对字符串](https://www.geeksforgeeks.org/sort-string-characters/)和[进行排序，然后在 Hashmap](https://www.geeksforgeeks.org/java-program-to-count-the-occurrence-of-each-character-in-a-string-using-hashmap/) 中找到其计数。
+3.  再次遍历所有字符串，并将每个字符串与其自身连接，[对字符串进行排序](https://www.geeksforgeeks.org/sort-string-characters/)，然后在[`Hashmap`](https://www.geeksforgeeks.org/java-program-to-count-the-occurrence-of-each-character-in-a-string-using-hashmap/)中找到其计数。
 
 4.  在上述步骤中更新最终计数，并在上述所有步骤之后打印最终计数。
 
