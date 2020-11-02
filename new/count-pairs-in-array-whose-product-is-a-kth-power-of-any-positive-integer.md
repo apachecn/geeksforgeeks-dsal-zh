@@ -1,29 +1,38 @@
-# 数组中的乘积对，乘积为任何正整数的 Kth 幂
+# 数组中的乘积对，乘积为任何正整数的`K`次幂
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-in-array-whose-product-is-a-kth-power-of-any-positive-integer/](https://www.geeksforgeeks.org/count-pairs-in-array-whose-product-is-a-kth-power-of-any-positive-integer/)
 
-给定长度为 **N** 的数组 **arr []** 和整数 **K** ，任务是对乘积为 **Kth** 的数组中的对进行计数 ]正整数的幂，即
+给定长度为`N`的数组`arr[]`和整数`K`，任务是数组中的对进行计数，乘积为正整数的`K`次幂，即：
 
-> 对于任何正整数 Z，A [i] * A [j] = Z <sup>K</sup> 。
+> 对于任何正整数`Z`，`A[i] * A[j] = Z ^ K`。
 
 **示例**：
 
-> **输入**：arr [] = {1、3、9、8、24、1}，K = 3
+> **输入**：`arr[] = {1, 3, 9, 8, 24, 1}, K = 3`
+>
 > **输出**：5
-> **说明：[**
-> 有 5 对，可以表示为 Z <sup>3</sup> –
-> A [0] * A [3] = 1 * 8 = 2 ^ 3
-> A [ 0] * A [5] = 1 * 1 = 1 ^ 3
-> A [1] * A [2] = 3 * 9 = 3 ^ 3
-> A [2] * A [4] = 9 * 24 = 6 ^ 3
-> A [3] * A [5] = 8 * 1 = 2 ^ 3
-> 
-> **输入**：arr [] = {7、4、10、9、2、8、8、7、3、7}，K = 2
-> **输出**：7 [
+>
 > **说明**：
-> 共有 7 对，可以表示为 Z <sup>2</sup>
+>
+> 有 5 对，可以表示为`Z ^ 3`：
+>
+> ```
+> A[0] * A[3] = 1 * 8  = 2 ^ 3
+> A[0] * A[5] = 1 * 1  = 1 ^ 3
+> A[1] * A[2] = 3 * 9  = 3 ^ 3
+> A[2] * A[4] = 9 * 24 = 6 ^ 3
+> A[3] * A[5] = 8 * 1  = 2 ^ 3
+> ```
+>
+> **输入**：`arr[] = {7, 4, 10, 9, 2, 8, 8, 7, 3, 7}, K = 2`
+>
+> **输出**：7
+>
+> **说明**：
+>
+> 共有 7 对，可以表示为`Z ^ 2`。
 
-**方法**：该问题的关键观察在于以 Z <sup>K</sup> 的形式表示任何数字，然后该数字的素因式分解的幂必须是 K 的倍数。下图是 步骤：
+**方法**：该问题的关键观察在于以`Z ^ K`的形式表示任何数字，然后该数字的素因式分解的幂必须是`K`的倍数。下面是步骤：
 
 *   Compute the prime factorization of each number of the array and store the prime factors in the form of key-value pair in a hash-map, where the key will be a prime factor of that element and value will be the power raised to that prime factor modulus K, in the prime factorization of that number.
 
@@ -223,7 +232,7 @@ int main()
 
 ```
 
-**时间复杂度**：O（N *对数 <sup>2</sup> N）
+**时间复杂度**：`O(N log N)`
 
 
 
