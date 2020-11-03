@@ -16,13 +16,13 @@
 > **说明**：
 > subarrary = {1，1，1，1，1}的每个元素的频率为 5。
 
-**方法**：的想法是[生成所有可能的子阵列](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)并检查每个子阵列是否有任何子阵列具有所有元素的频率。 步骤如下：
+**方法**：的想法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)并检查每个子数组是否有任何子数组具有所有元素的频率。 步骤如下：
 
 1.  生成所有可能的子数组。
 
-2.  对于每个子阵列，取两个[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，一个映射存储每个元素的频率，第二个映射存储给定频率的元素数量。
+2.  对于每个子数组，取两个[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，一个映射存储每个元素的频率，第二个映射存储给定频率的元素数量。
 
-3.  如果对于任何子阵列，第二个图的大小等于 **1** ，则意味着每个元素在子阵列中的频率相同。
+3.  如果对于任何子数组，第二个图的大小等于 **1** ，则意味着每个元素在子数组中的频率相同。
 
 4.  返回所有此类子数组的最大大小。
 

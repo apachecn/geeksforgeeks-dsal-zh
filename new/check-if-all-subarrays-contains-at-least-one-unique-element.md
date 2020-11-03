@@ -12,7 +12,7 @@
 >
 > **说明**：
 >
-> 对于大小为 1 的子阵列 ：`{1}, {2}, {1}`，条件将始终为`true`。
+> 对于大小为 1 的子数组 ：`{1}, {2}, {1}`，条件将始终为`true`。
 >
 > 对于大小为 2 的子数组：`{1, 2}, {2, 1}`，每个子数组至少具有一个唯一元素。
 >
@@ -28,7 +28,7 @@
 >
 > 大小为 6 的子数组：`{1, 2, 3, 1, 2, 3}`不包含唯一元素。 因此，打印`No`。
 
-**朴素的方法**：最简单的方法是[生成所有子数组](https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/)，并对每个子数组使用 [HashMap](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 来存储该子阵列每个元素的[频率。 如果任何子数组没有至少一个唯一元素，则打印**“否”** 。 否则，打印**“是”** 。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
+**朴素的方法**：最简单的方法是[生成所有子数组](https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/)，并对每个子数组使用 [HashMap](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 来存储该子数组每个元素的[频率。 如果任何子数组没有至少一个唯一元素，则打印**“否”** 。 否则，打印**“是”** 。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
 
 下面是上述方法的实现：
 
@@ -120,7 +120,7 @@ Yes
 
 **高效方法**：请按照以下步骤优化上述方法：
 
-*   在`[0, N – 1]`范围内循环循环，并创建和[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，以存储当前子阵列中每个字符的频率。
+*   在`[0, N – 1]`范围内循环循环，并创建和[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，以存储当前子数组中每个字符的频率。
 
 *   创建一个变量`count`，以检查子数组是否具有至少一个频率为 **1** 的元素。
 

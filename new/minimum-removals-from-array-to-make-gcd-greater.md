@@ -1,4 +1,4 @@
-# 从阵列中移除的最少数量，以使 GCD 更大
+# 从数组中移除的最少数量，以使 GCD 更大
 
 > 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 

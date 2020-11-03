@@ -36,7 +36,7 @@
 
 请按照以下步骤解决问题：
 
-*   初始化[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)以存储阵列元素的频率。
+*   初始化[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)以存储数组元素的频率。
 
 *   反向迭代数组，即在`[N – 2, 1]`范围内循环变量`j`。
 

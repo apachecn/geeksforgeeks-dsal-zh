@@ -77,7 +77,7 @@
 
 **方法**：这个想法是使用[最小优先级队列](https://www.geeksforgeeks.org/implement-min-heap-using-stl/)和[集](https://www.geeksforgeeks.org/set-in-cpp-stl/)。 [优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)保留繁忙服务器的计数，并在空闲时帮助释放它们。 [设置](https://www.geeksforgeeks.org/set-in-java/)用于维护可用服务器的数据，以将它们分配给传入的请求。 步骤如下：
 
-*   初始化辅助阵列`loadOnServer[]`，该阵列将在每个服务器上存储负载。
+*   初始化辅助数组`loadOnServer[]`，该数组将在每个服务器上存储负载。
 
 *   通过对每个请求添加**到达时间**和**处理时间**，遍历传入的请求并找到每个请求的结束时间。
 

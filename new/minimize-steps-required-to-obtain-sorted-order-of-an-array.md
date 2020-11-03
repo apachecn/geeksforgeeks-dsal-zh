@@ -1,4 +1,4 @@
-# 最小化获得阵列的排序顺序所需的步骤
+# 最小化获得数组的排序顺序所需的步骤
 
 > 原文：[https://www.geeksforgeeks.org/minimize-steps-required-to-obtain-sorted-order-of-an-array/](https://www.geeksforgeeks.org/minimize-steps-required-to-obtain-sorted-order-of-an-array/)
 

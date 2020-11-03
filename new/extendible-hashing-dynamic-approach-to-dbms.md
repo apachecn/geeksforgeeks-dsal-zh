@@ -176,7 +176,7 @@
 
 1.  [B +树](https://www.geeksforgeeks.org/data-structure-gq/b-and-b-trees-gq/)
 
-2.  [阵列](https://www.geeksforgeeks.org/array-data-structure/)
+2.  [数组](https://www.geeksforgeeks.org/array-data-structure/)
 
 3.  [链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)
 

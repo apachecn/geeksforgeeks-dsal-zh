@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/most-frequent-element-in-array-after-replacing-given-index-by-k-for-q-queries/](https://www.geeksforgeeks.org/most-frequent-element-in-array-after-replacing-given-index-by-k-for-q-queries/)
 
-给定大小为 **N** 的数组 **arr []** ，并以 **{i，k}** 的形式查询 **Q** 在**用 k** 替换 arr [i]之后，将在阵列中打印**最频繁元素**。
+给定大小为 **N** 的数组 **arr []** ，并以 **{i，k}** 的形式查询 **Q** 在**用 k** 替换 arr [i]之后，将在数组中打印**最频繁元素**。
 
 **范例**：
 
@@ -25,9 +25,9 @@
 
 **高效方法**：
 
-可以通过预先计算每个阵列元素的频率并将频率阵列元素配对保持在一组中以获得`O(1)`中最频繁的元素来优化上述方法。 请按照以下步骤解决问题：
+可以通过预先计算每个数组元素的频率并将频率数组元素配对保持在一组中以获得`O(1)`中最频繁的元素来优化上述方法。 请按照以下步骤解决问题：
 
-1.  初始化[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)以存储所有阵列元素的频率，并初始化[对](https://www.geeksforgeeks.org/set-in-cpp-stl/)[对](https://www.geeksforgeeks.org/pair-in-cpp-stl/)的集以存储频率元素对。 在集合中，将频率存储为负数。 这确保了存储在集合开头的第一对，即 [s.begin（），](https://www.geeksforgeeks.org/setbegin-setend-c-stl/)是 **{-（最大频率），最频繁元素}** 配对。
+1.  初始化[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)以存储所有数组元素的频率，并初始化[对](https://www.geeksforgeeks.org/set-in-cpp-stl/)[对](https://www.geeksforgeeks.org/pair-in-cpp-stl/)的集以存储频率元素对。 在集合中，将频率存储为负数。 这确保了存储在集合开头的第一对，即 [s.begin（），](https://www.geeksforgeeks.org/setbegin-setend-c-stl/)是 **{-（最大频率），最频繁元素}** 配对。
 
 2.  对于每个查询，在删除第<sup>个第</sup>索引处的数组元素的同时，执行以下任务：
 

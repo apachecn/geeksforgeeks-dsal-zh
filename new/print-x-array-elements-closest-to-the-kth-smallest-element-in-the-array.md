@@ -22,7 +22,7 @@
 
 **辅助空间**：`O(1)`
 
-**有效方法**：为了优化上述方法，其思想是使用[中值来有效计算给定阵列的 **K <sup>th</sup>** 最小元素的值 选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)。 请按照以下步骤解决问题：
+**有效方法**：为了优化上述方法，其思想是使用[中值来有效计算给定数组的 **K <sup>th</sup>** 最小元素的值 选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)。 请按照以下步骤解决问题：
 
 *   使用[中值选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)计算给定数组的最小 Kth，即 **KthElem** 。
 

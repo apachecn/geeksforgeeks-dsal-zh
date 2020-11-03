@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/](https://www.geeksforgeeks.org/check-if-n-numbers-with-even-sum-can-be-selected-from-a-given-array/)
 
-给定[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`和奇数`N`，任务是检查可以从阵列中选择`N`个具有偶数和的数字。 如果可能，打印`Yes`。 否则打印`No`。
+给定[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`和奇数`N`，任务是检查可以从数组中选择`N`个具有偶数和的数字。 如果可能，打印`Yes`。 否则打印`No`。
 
 **示例**：
 

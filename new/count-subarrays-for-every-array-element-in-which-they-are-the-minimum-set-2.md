@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 
-给定一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个整数组成，任务是创建大小为**的数组 **brr []** N** 其中 **brr [i]** 代表其中 **arr [i]** 是最小元素的子阵列的数量。
+给定一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个整数组成，任务是创建大小为**的数组 **brr []** N** 其中 **brr [i]** 代表其中 **arr [i]** 是最小元素的子数组的数量。
 
 **示例**：
 
@@ -149,7 +149,7 @@ if __name__ == '__main__':
 
 1.  为了找到元素的最小值，首先找到 **x** 和 **y** ，其中 **x** 是在左边的严格大于数字的长度。 **arr [i]** 和 **y** 是 **arr [i]** 右边较大数字的长度。
 
-2.  因此， **x * y** 是其中 **arr [i]** 最小的子阵列的总数。
+2.  因此， **x * y** 是其中 **arr [i]** 最小的子数组的总数。
 
 3.  要查找 **x** 和**和**，请使用[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)，其概念为[下一个更大的元素](http://www.geeksforgeeks.org/next-greater-element/)和[上一个更大的元素](https://www.geeksforgeeks.org/previous-greater-element/)。
 

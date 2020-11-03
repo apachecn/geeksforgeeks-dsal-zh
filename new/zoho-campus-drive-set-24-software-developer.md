@@ -32,7 +32,7 @@ Zoho 曾访问我们的大学以招募软件开发人员。 有两种类型的�
 
 [给定 IP 地址，请根据给定条件对其进行验证。](https://practice.geeksforgeeks.org/problems/validate-an-ip-address/1)
 
-[使用峰值分别对阵列的各个部分进行排序。](https://practice.geeksforgeeks.org/problems/wave-array/0)
+[使用峰值分别对数组的各个部分进行排序。](https://practice.geeksforgeeks.org/problems/wave-array/0)
 
 *有些挑战：*
 

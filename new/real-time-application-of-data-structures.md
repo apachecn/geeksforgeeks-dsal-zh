@@ -4,7 +4,7 @@
 
 [数据结构](https://www.geeksforgeeks.org/data-structures/)是在计算机中组织数据的一种特殊方式，因此可以有效地使用它。 本文讨论了所有数据结构的实时应用。
 
-### [阵列](https://www.geeksforgeeks.org/array-data-structure/)的应用：
+### [数组](https://www.geeksforgeeks.org/array-data-structure/)的应用：
 
 数组是存储相同数据类型的项的最简单的数据结构。 数组的基本应用可以以表格格式存储数据。 例如，如果我们希望将联系人存储在手机上，则该软件将简单地将所有联系人放置在一个数组中。
 
@@ -16,7 +16,7 @@
 
 2.  一个简单的问题论文是一系列编号问题，每个问题都分配有一些分数。
 
-3.  [2D 阵列](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/)（通常称为矩阵）用于图像处理。
+3.  [2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/)（通常称为矩阵）用于图像处理。
 
 4.  它也用于语音处理，其中每个语音信号是一个数组。
 

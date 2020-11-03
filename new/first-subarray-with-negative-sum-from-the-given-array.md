@@ -18,9 +18,9 @@
 > **输入**：arr [] = {1、2、3、10}。
 > **输出**：-1
 > **说明**：
-> 不存在负和的子阵列。
+> 不存在负和的子数组。
 
-**朴素方法**：朴素方法是[从阵列中从左到右生成所有子阵列](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并检查这些子阵列中的任何一个是否具有负和。 如果是，则打印该子数组的开始和结束索引。
+**朴素方法**：朴素方法是[从数组中从左到右生成所有子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并检查这些子数组中的任何一个是否具有负和。 如果是，则打印该子数组的开始和结束索引。
 
 ***时间复杂度**：`O(N ^ 2)`
 

@@ -1,4 +1,4 @@
-# 阵列产品
+# 数组产品
 
 > 原文：[https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/](https://www.geeksforgeeks.org/distinct-prime-factors-of-array-product/)
 

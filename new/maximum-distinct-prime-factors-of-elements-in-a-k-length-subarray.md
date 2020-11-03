@@ -4,7 +4,7 @@
 
 中元素的最大不同素因数
 
-给定 **N** 个正整数的数组 **arr []** 和一个整数 **K** ，任务是在 长度为 **K** 的[子阵列](https://www.geeksforgeeks.org/tag/subarray/)。
+给定 **N** 个正整数的数组 **arr []** 和一个整数 **K** ，任务是在 长度为 **K** 的[子数组](https://www.geeksforgeeks.org/tag/subarray/)。
 
 **示例**：
 
@@ -18,7 +18,7 @@
 > **说明**：
 > 长度为 3 的子数组，其最大素因数最大为 2、6、10，素因数为 2、3、5。
 
-**朴素的方法**：最简单的方法是[生成长度为 **K** 的所有可能的子阵列](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并遍历每个子阵列并计算不同的[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/) 它的元素。 最后，打印为任何子阵列获得的独特素数的最大数量。
+**朴素的方法**：最简单的方法是[生成长度为 **K** 的所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并遍历每个子数组并计算不同的[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/) 它的元素。 最后，打印为任何子数组获得的独特素数的最大数量。
 
 **时间复杂度**：O（N <sup>2</sup> log N）
 
@@ -34,7 +34,7 @@
 
 4.  找到新添加的元素到子数组的所有主要因子，并将其存储在 **Map** 中。 从**映射**中减去删除元素的质数因子的频率。
 
-5.  对整个阵列完成上述操作后，打印为任何子阵列获得的最大[映射大小](https://www.geeksforgeeks.org/mapsize-c-stl/)作为答案。
+5.  对整个数组完成上述操作后，打印为任何子数组获得的最大[映射大小](https://www.geeksforgeeks.org/mapsize-c-stl/)作为答案。
 
 下面是上述方法的实现：
 
