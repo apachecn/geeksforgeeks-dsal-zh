@@ -2,19 +2,26 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value-set-2/)
 
-给定一个大小为 **N** 的整数 **arr []** 数组，任务是对频率等于其值的频率的所有元素进行计数。
+给定一个大小为`N`的整数`arr[]`数组，任务是对频率等于其值的频率的所有元素进行计数。
 
 **范例**：
 
-> **输入**：arr [] = {3，2，2，3，4，3}
+> **输入**：`arr[] = {3, 2, 2, 3, 4, 3}`
+>
 > **输出**：2
+>
 > **说明**：
+>
 > 元素 2 的频率为 2
+>
 > 元素 3 的频率为 3
+>
 > 元素 4 的频率为 1
+>
 > 2 和 3 是具有与其值相同频率的元素
 > 
-> **输入**：arr [] = {1、2、3、4、5、6}
+> **输入**：`arr[] = {1, 2, 3, 4, 5, 6}`
+>
 > **输出**：1
 
 **方法**：遵循以下步骤解决问题：
