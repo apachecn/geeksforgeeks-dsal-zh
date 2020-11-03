@@ -1,46 +1,34 @@
-# Bloom 过滤器与哈希表
+# 布隆过滤器与哈希表之间的区别
 
 > 原文：[https://www.geeksforgeeks.org/difference-between-bloom-filters-and-hashtable/](https://www.geeksforgeeks.org/difference-between-bloom-filters-and-hashtable/)
 
-之间的区别
+**哈希表**：
 
-**HashTable**：
-
-[Hashtable](https://www.geeksforgeeks.org/hashing-set-1-introduction/) 设计为使用一种称为 Hash 函数的特殊函数，该函数用于使用特定键映射给定值，以更快地访问元素。 它用于需要快速查找的地方。（在合理的假设下，哈希表中元素查找的平均时间为`O(1)`）。 Python 中的字典是使用 HashTables 实现的。 Java 还实现了 [HashTable](https://www.geeksforgeeks.org/hashtable-in-java/) 类。
+[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)设计为使用一种称为哈希函数的特殊函数，该函数用于使用特定键映射给定值，以更快地访问元素。 它用于需要快速查找的地方。（在合理的假设下，哈希表中元素查找的平均时间为`O(1)`）。 Python 中的字典是使用哈希表实现的。 Java 还实现了[`HashTable`](https://www.geeksforgeeks.org/hashtable-in-java/)类。
 
 可以在中找到一些哈希应用。
 
 **布隆过滤器**：
 
-[布隆过滤器](https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/)是一种节省空间的概率数据结构，用于测试元素是否为集合的成员。 它用于只需要知道元素是否属于对象的地方。 Bloom 筛选器使用 k 个哈希函数和 n 位数组，其中数组位设置为 0，表示元素不存在，而 1 表示存在该元素。 布隆过滤器的一些应用是：
+[布隆过滤器](https://www.geeksforgeeks.org/bloom-filters-introduction-and-python-implementation/)是一种节省空间的概率数据结构，用于测试元素是否为集合的成员。 它用于只需要知道元素是否属于对象的地方。 布隆过滤器使用`k`个哈希函数和`n`位数组，其中数组位设置为 0，表示元素不存在，而 1 表示存在该元素。 布隆过滤器的一些应用是：
 
-*   Google Bigtable，Apache HBase，Apache Cassandra 和 PostgreSQL 使用 Bloom 过滤器来减少对不存在的行或列的磁盘查找。 避免进行昂贵的磁盘查找，可大大提高数据库查询操作的性能。
+*   Google Bigtable，Apache HBase，Apache Cassandra 和 PostgreSQL 使用布隆过滤器来减少对不存在的行或列的磁盘查找。 避免进行昂贵的磁盘查找，可大大提高数据库查询操作的性能。
 
-*   Google Chrome 浏览器曾经使用布隆过滤器来识别恶意网址。 首先会针对本地 Bloom 过滤器检查所有 URL，只有在 Bloom 过滤器返回肯定结果的情况下，才对执行的 URL 进行全面检查（如果该结果也返回肯定结果，则用户会发出警告）。
+*   Google Chrome 浏览器曾经使用布隆过滤器来识别恶意网址。 首先会针对本地布隆过滤器检查所有 URL，只有在布隆过滤器返回肯定结果的情况下，才对执行的 URL 进行全面检查（如果该结果也返回肯定结果，则用户会发出警告）。
 
-让我们看看哈希表和 Bloom 过滤器之间的区别：
+让我们看看哈希表和布隆过滤器之间的区别：
 
-<figure class="table">
 
-| S 号 | 哈希表 | 布隆过滤器 |
-
+| 序号 | 哈希表 | 布隆过滤器 |
 | --- | --- | --- |
-
-| 1 | 在哈希表中，对象被存储到哈希函数映射到的存储桶（哈希表中的索引位置）。 | Bloom 过滤器不存储关联的对象。 它只是告诉它是否在 bloom 过滤器中。 |
-
+| 1 | 在哈希表中，对象被存储到哈希函数映射到的存储桶（哈希表中的索引位置）。 | 布隆过滤器不存储关联的对象。 它只是告诉它是否在布隆过滤器中。 |
 | 2 | 哈希表空间效率较低。 | 布隆过滤器更节省空间。 它的大小甚至小于它正在映射的关联对象。 |
-
 | 3 | 支持删除。 | 无法从布隆过滤器中删除元素。 |
-
 | 4 | 哈希表给出准确的结果。 | 布隆过滤器的误报率很小。 （误报表示它可能在布隆过滤器中，但实际上不是。） |
-
 | 5 | 在哈希表中，我们应该实现多个哈希函数，或者具有强大的哈希函数以最大程度地减少冲突。 | 布隆过滤器使用许多哈希函数。 无需处理冲突。 |
-
 | 6 | 哈希表用于编译器操作，编程语言（基于哈希表的数据结构），密码验证等。 | 布隆过滤器可在网络路由器，Web 浏览器（以检测恶意网址），密码检查器（以防止设置弱密码或可猜测密码或禁止密码列表）中找到应用程序。 |
 
-</figure>
-
-HashTables 和 Bloom 筛选器彼此密切相关，因此，比较这两个数据结构并根据您的应用程序/需求明智地使用它们是明智的。
+哈希表和布隆过滤器彼此密切相关，因此，比较这两个数据结构并根据您的应用程序/需求明智地使用它们是明智的。
 
 
 

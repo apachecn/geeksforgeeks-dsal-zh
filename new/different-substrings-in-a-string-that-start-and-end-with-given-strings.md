@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/](https://www.geeksforgeeks.org/different-substrings-in-a-string-that-start-and-end-with-given-strings/)
 
-给定一个字符串 s 和其他两个字符串的开头和结尾，请找到该字符串中以给定的 begin 和 end 字符串开头和结尾的不同子字符串的数量。
+给定一个字符串`s`和其他两个字符串的开头和结尾，请找到该字符串中以给定的`begin`和`end`字符串开头和结尾的不同子字符串的数量。
 
 **示例**：
 
