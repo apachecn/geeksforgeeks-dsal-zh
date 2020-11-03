@@ -1,15 +1,18 @@
-# 计算从给定点集中平行于 X 和 Y 轴绘制的线在给定矩形中生成的矩形
+# 计算从给定点集中平行于`X`和`Y`轴绘制的线在给定矩形中生成的矩形
 
 > 原文：[https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/](https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/)
 
-给定 [2D 数组](https://www.geeksforgeeks.org/dynamically-allocate-2d-array-c/) [矩形[] []](https://www.geeksforgeeks.org/check-given-four-integers-sides-make-rectangle/) 表示矩形{（0，0），（L，0），（0，B），（L，B）的顶点 }的尺寸为 **L * B** ，而另一个 [2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/)的大小为 **N** ，的大小为，在直角坐标系中 。 从给定数组的每个点绘制平行于 **X 轴**的水平线和平行于 **Y 轴**的垂直线。 任务是计算给定矩形内存在的所有可能的矩形。
+给定 [2D 数组](https://www.geeksforgeeks.org/dynamically-allocate-2d-array-c/)`rect[][]`表示顶点为`{(0, 0), (L, 0), (0, B), (L, B)}`的的矩形, 尺寸为`L * B`，而另一个 [2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/)`points[][]`的大小为`N`，在直角坐标系中。 从给定数组的每个点绘制平行于`X`轴的水平线和平行于`Y`轴的垂直线。 任务是计算给定矩形内存在的所有可能的矩形。
 
 **范例**：
 
-> **输入**：矩形[] [] = {{0，0}，{5，0}，{0，5}，{5，5}}，points [] [] = {{1， 2}，{3，4}}
+> **输入**：`rect[] [] = {{0, 0}, {5, 0}, {0, 5}, {5, 5}}, points[][] = {{1,  2}, {3, 4}}`
+>
 > **输出**：9
+>
 > **说明**：
-> 在点{1、2}上绘制一条水平线和一条垂直线 和点{3,4}。
+>
+> 在点`{1, 2}`和点`{3, 4}`上绘制一条水平线和一条垂直线。
 > 
 > ```
 >   _ _ _ _ _ 
@@ -24,16 +27,17 @@
 > 
 > 因此，所需的输出为 9。
 > 
-> **输入**：矩形[] [] = {{0，0}，{4，0}，{0，5}，{4，5}}，points [] [] = {{1， 3}，{2、3}，{3、3}}。
+> **输入**：`rect[][] = {{0, 0}, {4, 0}, {0, 5}, {4, 5}}, points[][] = {{1, 3}, {2, 3}, {3, 3}}`
+>
 > **输出**：12
 
-**方法**：想法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并计算通过给定点[] []数组的所有不同水平和垂直线。 最后，返回**的乘积值（不同水平线的数量– 1）*（垂直线的数量– 1）**。 请按照以下步骤解决问题：
+**方法**：想法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并计算通过给定点[] []数组的所有不同水平和垂直线。 最后，返回`(不同水平线的数量 – 1) * (垂直线的数量 – 1)`的乘积值。 请按照以下步骤解决问题：
 
-*   创建两个[集](https://www.geeksforgeeks.org/set-in-cpp-stl/)，例如 **cntHor** ， **cntVer** ，以存储通过**点[] [] []** 数组的所有不同的水平线和垂直线 。
-*   遍历 points [] []数组。
-*   使用 **cntHor** 中的元素计数来计数所有不同的水平线。
-*   使用 **cntVer** 中的元素计数来计数所有不同的垂直线。
-*   最后，打印**的值（cntHor – 1 中的元素数）*（cntVer – 1 中的元素数）**。
+*   创建两个[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)，例如`cntHor`， `cntVer`，以存储通过`points[][]`数组的所有不同的水平线和垂直线 。
+*   遍历`points[][]`数组。
+*   使用`cntHor`中的元素计数来计数所有不同的水平线。
+*   使用`cntVer`中的元素计数来计数所有不同的垂直线。
+*   最后，打印`(cntHor.length - 1) * (cntVer.length - 1)`的值。
 
 下面是上述方法的实现：
 
