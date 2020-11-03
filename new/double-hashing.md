@@ -2,17 +2,19 @@
 
 > 原文：[https://www.geeksforgeeks.org/double-hashing/](https://www.geeksforgeeks.org/double-hashing/)
 
-**双散列**是 [**开放式**哈希表](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)中的冲突解决技术。 双重哈希使用在冲突发生时对密钥应用第二个哈希函数的想法。
+**双散列**是[**开放式**哈希表](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)中的冲突解决技术。 双重哈希使用在冲突发生时对密钥应用第二个哈希函数的想法。
 
 > 可以使用以下方式完成双哈希处理：
-> **（hash1（key）+ i * hash2（key））％TABLE_SIZE**
-> 这里的 hash1（）和 hash2（）是哈希函数，而 TABLE_SIZE
-> 是哈希表的大小。
-> （发生碰撞时，我们通过增加 i 来重复）
+>
+> `(hash1(key) + i * hash2(key)) % TABLE_SIZE`
+>
+> 这里的`hash1()`和`hash2()`是哈希函数，而`TABLE_SIZE`是哈希表的大小。
+>
+> （发生碰撞时，我们通过增加`i`来重复）
 
-第一个哈希函数通常是 hash1（key）= key％TABLE_SIZE
+第一个哈希函数通常是`hash1(key) = key % TABLE_SIZE`
 
-流行的第二个哈希函数是： **hash2（key）= PRIME –（密钥％PRIME）**其中 PRIME 是小于 TABLE_SIZE 的质数。
+流行的第二个哈希函数是： `hash2(key) = PRIME – (key % PRIME)`，其中`PRIME`是小于`TABLE_SIZE`的质数。
 
 一个好的第二个哈希函数是：
 
