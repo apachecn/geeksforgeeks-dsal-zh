@@ -1,32 +1,32 @@
-# 设计一个支持恒定时间插入，删除，搜索和 getRandom 的数据结构
+# 设计一个支持恒定时间插入，删除，搜索和`getRandom`的数据结构
 
 > 原文：[https://www.geeksforgeeks.org/design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time/](https://www.geeksforgeeks.org/design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time/)
 
-设计一个数据结构，以支持在Θ（1）时间内进行以下操作。
+设计一个数据结构，以支持在`Θ(1)`时间内进行以下操作。
 
-insert（x）：将 x 插入数据结构（如果尚不存在）。
+`insert(x)`：将`x`插入数据结构（如果尚不存在）。
 
-remove（x）：从数据结构中删除项 x（如果存在）。
+`remove(x)`：从数据结构中删除项`x`（如果存在）。
 
-search（x）：在数据结构中搜索项目 x。
+`search(x)`：在数据结构中搜索项目`x`。
 
-getRandom（）：从当前元素集中返回一个随机元素
+`getRandom()`：从当前元素集中返回一个随机元素
 
-我们可以使用[散列](https://www.geeksforgeeks.org/tag/hashing/)支持Θ（1）时间内的前 3 个运算。 怎么做第四次手术？ 这个想法是将可调整大小的数组（Java 中为 ArrayList，C 中为 vector）与哈希一起使用。 [可调整大小的数组支持在Θ（1）摊销时间复杂度](https://www.geeksforgeeks.org/analysis-algorithm-set-5-amortized-analysis-introduction/)中插入。 为了实现 getRandom（），我们可以简单地选择一个从 0 到 size-1 的随机数（size 是当前元素的数量）并返回该索引处的元素。 哈希映射将数组值存储为键，并将数组索引存储为值。
+我们可以使用[散列](https://www.geeksforgeeks.org/tag/hashing/)支持`Θ(1)`时间内的前 3 个运算。 怎么做第四次操作？ 这个想法是将可调整大小的数组（Java 中为`ArrayList`，C 中为`vector`）与哈希一起使用。 [可调整大小的数组支持在`Θ(1)`摊销时间复杂度](https://www.geeksforgeeks.org/analysis-algorithm-set-5-amortized-analysis-introduction/)中插入。 为了实现`getRandom()`，我们可以简单地选择一个从 0 到`size-1`的随机数（`size`是当前元素的数量）并返回该索引处的元素。 哈希映射将数组值存储为键，并将数组索引存储为值。
 
 以下是详细的操作。
 
-***insert（x）***
+`insert(x)`
 
-1.  通过进行哈希映射查找来检查 x 是否已经存在。
+1.  通过进行哈希映射查找来检查`x`是否已经存在。
 
 2.  如果不存在，则将其插入数组的末尾。
 
-3.  同样在哈希表中添加 x 作为键，最后一个数组索引作为索引。
+3.  同样在哈希表中添加`x`作为键，最后一个数组索引作为索引。
 
-***remove（x）***
+`remove(x)`
 
-1.  通过执行哈希映射查找来检查 x 是否存在。
+1.  通过执行哈希映射查找来检查`x`是否存在。
 
 2.  如果存在，请找到其索引并将其从哈希映射中删除。
 
@@ -36,15 +36,15 @@ getRandom（）：从当前元素集中返回一个随机元素
 
 4.  更新哈希映射中最后一个元素的索引。
 
-***getRandom（）***
+`getRandom()`
 
 1.  生成一个从 0 到最后一个索引的随机数。
 
 2.  将数组元素返回到随机生成的索引处。
 
-***搜索（x）***
+`search(x)`
 
-在哈希映射中查找 x。
+在哈希映射中查找`x`。
 
 下面是数据结构的实现。
 

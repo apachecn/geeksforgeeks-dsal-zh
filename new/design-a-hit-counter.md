@@ -8,13 +8,13 @@
 
 最近，包括 Dropbox 在内的许多公司都提出了“设计命中计数器”问题，这个问题比看起来要困难的多。 它包括几个主题，例如基本数据结构设计，各种优化，并发和分布式计数器。
 
-它应该支持以下两个操作**：命中**和 **getHits** 。
+它应该支持以下两个操作：`hit`和`getHit`。
 
-**hit（timestamp）** –显示给定时间戳的匹配。
+`hit(timestamp)` – 显示给定时间戳的匹配。
 
-**getHits（timestamp）**-返回过去 5 分钟（300 秒）（从 currentTimestamp）收到的命中数。
+`getHits(timestamp)` - 返回过去 5 分钟（300 秒）（从`currentTimestamp`）收到的命中数。
 
-每个函数都接受一个 timestamp 参数（以秒为单位），并且您可以假定按时间顺序对系统进行了调用（即时间戳是单调递增的）。 您可以假定最早的时间戳记从 1 开始。
+每个函数都接受一个`timestamp`参数（以秒为单位），并且您可以假定按时间顺序对系统进行了调用（即时间戳是单调递增的）。 您可以假定最早的时间戳记从 1 开始。
 
 例子：
 
@@ -52,28 +52,39 @@ counter.getHits(301);
 我们可以使用向量来存储所有匹配。 这两个功能是自我解释。
 
 ```
-vector< int > v;
-/* Record a hit.
-@param timestamp - The current timestamp (in
-seconds granularity).  */
-void hit( int timestamp)
-{
-v.push_back(timestamp);
-}
-// Time Complexity : O(1)
-@param timestamp - The current timestamp (in
-seconds granularity). */
-int getHits( int timestamp)
-{
-int i, j;
-for (i = 0; i < v.size(); ++i) {
-if (v[i] > timestamp - 300) {
-break ;
-}
-}
-return v.size() - i;
-}
-// Time Complexity : O(n)
+_none
+edit
+play_arrow
+
+brightness_4
+vector<int> v; 
+  
+/* Record a hit. 
+   @param timestamp - The current timestamp (in  
+                      seconds granularity).  */
+  
+void hit(int timestamp) 
+{ 
+    v.push_back(timestamp); 
+} 
+  
+// Time Complexity : O(1) 
+  
+/** Return the number of hits in the past 5 minutes. 
+    @param timestamp - The current timestamp (in 
+    seconds granularity). */
+int getHits(int timestamp) 
+{ 
+    int i, j; 
+    for (i = 0; i < v.size(); ++i) { 
+        if (v[i] > timestamp - 300) { 
+            break; 
+        } 
+    } 
+    return v.size() - i; 
+} 
+  
+// Time Complexity : O(n) 
 ```
 
 **2.空间优化解决方案**：
@@ -83,27 +94,34 @@ return v.size() - i;
 我们正在从队列中删除多余的元素。
 
 ```
-queue< int > q;
-/** Record a hit.
-@param timestamp - The current timestamp
-(in seconds granularity). */
-void hit( int timestamp)
-{
-q.push(timestamp);
-}
-// Time Complexity : O(1)
-/** Return the number of hits in the past 5 minutes.
-@param timestamp - The current timestamp (in seconds
-granularity). */
-int getHits( int timestamp)
-{
-while (!q.empty() && timestamp - q.front() >= 300) {
-q.pop();
-}
-return q.size();
-[
-}
-// Time Complexity : O(n)
+none
+edit
+play_arrow
+
+brightness_4
+queue<int> q; 
+  
+/** Record a hit. 
+    @param timestamp - The current timestamp  
+                   (in seconds granularity). */
+void hit(int timestamp) 
+{ 
+    q.push(timestamp); 
+} 
+  
+// Time Complexity : O(1) 
+  
+/** Return the number of hits in the past 5 minutes. 
+   @param timestamp - The current timestamp (in seconds 
+   granularity). */
+int getHits(int timestamp) 
+{ 
+    while (!q.empty() && timestamp - q.front() >= 300) { 
+        q.pop(); 
+    } 
+    return q.size(); 
+} 
+// Time Complexity : O(n) 
 ```
 
 **3.最优化的解决方案**：
@@ -114,23 +132,29 @@ return q.size();
 
 如果我们以过去的 5 分钟（即 300 秒）为单位跟踪点击，则创建 2 个大小为 300 的数组。
 
-int [] hits = new int [300];
+```
+int[] hits = new int[300];
+TimeStamp[] times = new TimeStamp[300]; //最后计数的匹配的时间戳
+```
 
-TimeStamp [] times = new TimeStamp [300]; //最后计数的匹配
+给定传入的时间戳，将其时间戳修改 300，以查看其在`hits`数组中的位置。
 
-的时间戳给定传入的时间戳，将其时间戳修改 300，以查看其在 hits 数组中的位置。
+```
+int idx = timestamp % 300; 
+```
 
-int idx =时间戳％300; => hits [idx]保持点击计数在这一秒内发生
+`hits [idx]`保存在这一秒内发生的点击计数
 
-但是，在我们将 idx 的点击次数增加 1 之前，时间戳确实属于 hits [idx]正在跟踪的秒数。
 
-timestamp [i]存储最后一次计数的命中的时间戳。
+但是，在我们将`idx`的点击次数增加 1 之前，时间戳确实属于`hits[idx]`正在跟踪的秒数。
 
-如果使用时间戳记[i] >时间戳记，则此匹配应该被丢弃，因为它在过去 5 分钟内没有发生。
+`timestamp[i]`存储最后一次计数的命中的时间戳。
 
-如果 timestamp [i] ==时间戳，则 hits [i]增加 1。
+如果`timestamp[i] > timestamp`，则此匹配应该被丢弃，因为它在过去 5 分钟内没有发生。
 
-如果 timestamp [i] currentTime – 300。
+如果`timestamp[i] == timestamp`，则`hits[i]`增加 1。
+
+如果`timestamp[i] currentTime – 300`。
 
 ```
 vector< int > times, hits;

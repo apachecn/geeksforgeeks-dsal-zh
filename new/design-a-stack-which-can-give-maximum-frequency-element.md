@@ -26,8 +26,8 @@
 
 `FrequencyStack`具有 2 个功能：
 
-1.  **push（int x）**：使用频率 HashMap 映射元素（x）并更新 maxfreq 变量（即，直到现在都保持最大频率）。 **setMap** 维护一个堆栈，其中包含所有具有相同频率的元素。
-2.  **pop（）**：首先从 setMap 中获取 maxfreq 元素，然后降低弹出元素的频率。 弹出后，如果堆栈变空，则减小 maxfreq。
+1.  `push(int x)`：使用频率`HashMap`映射元素`x`并更新`maxfreq`变量（即，直到现在都保持最大频率）。 `setMap`维护一个堆栈，其中包含所有具有相同频率的元素。
+2.  `pop()`：首先从`setMap`中获取`maxfreq`元素，然后降低弹出元素的频率。 弹出后，如果堆栈变空，则减小`maxfreq`。
 
 下面是上述方法的实现：
 
