@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
 
-给定一个由 N 个正元素组成的数组，可以找到四倍的（i，j，k，m）数，使得 i < j < k < m such that the product **a <sub>i</sub> a <sub>j</sub> a <sub>k [</sub> a <sub>m</sub>** 是最大可能值
+给定一个由`N`个正元素组成的数组，可以找到四倍的`(i, j, k, m)`数，使得`i < j < k < m`，并且`a[i], a[j], a[k], a[m]`的乘积是最大可能值。
 
 **示例**：
 
@@ -33,9 +33,9 @@ achieved by the following quadruple {1, 2, 3, 4} as a<sub>1</sub>a<sub>2</sub>a<
 
 很容易看出，四个最大数字的乘积将最大。 因此，现在可以将问题减少到找到选择四个最大元素的方式数量。 为此，请维护一个频率数组，该数组存储该数组每个元素的频率。
 
-假定最大元素是频率为 F <sub>X</sub> 的 X，则如果该元素的频率为> = 4，则最适合选择四个元素 X，X，X 作为 给定最大乘积，并且实现方法的数量为 <sup>F</sup> <sub><sup>X</sup></sub> C <sub>4</sub>
+假定最大元素是频率为`F[X]`的`X`，则如果该元素的频率`>= 4`，则最适合选择四个元素`X, X, X`作为给定最大乘积，并且实现方法的数量为`C(F[X], 4)`。
 
-，如果频率为 小于 4 时，选择它的方式数为 1，现在所需的元素数为 4 – F <sub>X</sub> 。 对于第二个元素，说 Y，方法的数量为： <sup>F</sup> <sub><sup>X</sup></sub> C <sub>剩余的选择</sub>。 剩余的选择表示选择第一个元素后需要选择的其他元素的数量。 如果在任何时候剩余的选择= 0，则表示选择了四倍，因此我们可以停止算法。
+如果频率小于 4 时，选择它的方式数为 1，现在所需的元素数为`4 – F[X]`。 对于第二个元素，假设`Y`，方法的数量为： `C(F[X], remaining_choices)`。 `remaining_choices`表示选择第一个元素后需要选择的其他元素的数量。 如果在任何时候剩余的选择`= 0`，则表示选择了四倍，因此我们可以停止算法。
 
 ## C++
 
@@ -303,7 +303,7 @@ if __name__ == "__main__":
 
 ```
 
-**时间复杂度**：`O(NlogN)`，其中 N 是数组的大小
+**时间复杂度**：`O(NlogN)`，其中`N`是数组的大小
 
 
 
