@@ -20,11 +20,11 @@ aBX32gTf
 
 *   将所有可能的字母存储到字符串中。
 
-*   生成从 0 到字符串 length-1 的随机索引。
+*   生成从 0 到字符串`length-1`的随机索引。
 
 *   在该索引处打印字母。
 
-*   执行此步骤 n 次（其中 n 是所需字符串的长度）。
+*   执行此步骤`n`次（其中`n`是所需字符串的长度）。
 
 **程序**：
 
@@ -60,13 +60,13 @@ lipHh
 
 **方法 2：使用哈希函数**
 
-PHP 具有一些函数，如 md5（），sha1（）和 hash（），可用于基于某些算法（例如“ sha1”）对字符串进行哈希处理， “ sha256”，“ md5”等。所有这些函数都将字符串作为参数并输出字母数字哈希字符串。
+PHP 具有一些函数，如`md5()`，`sha1()`和`hash()`，可用于基于某些算法（例如`sha1`，`sha256`，`md5`等）对字符串进行哈希处理。所有这些函数都将字符串作为参数并输出字母数字哈希字符串。
 
-要了解有关这些功能[的更多信息，请单击此处。](https://www.geeksforgeeks.org/php-md5-sha1-hash-functions/)
+要了解有关这些功能更多信息，[请单击此处](https://www.geeksforgeeks.org/php-md5-sha1-hash-functions/)。
 
 一旦我们了解了如何利用这些功能，我们的任务就会变得非常简单。
 
-*   使用 rand（）函数生成一个随机数。
+*   使用`rand()`函数生成一个随机数。
 
 *   使用以上功能之一对其进行哈希处理。
 
@@ -144,9 +144,9 @@ echo $result ;
 
 **注意**：上述所有函数都是哈希函数，因此生成的字符串的长度将始终取决于所使用的算法，但对于算法，它将始终保持恒定。 因此，如果要生成固定长度的字符串，则可以根据需要截断生成的字符串或与另一个字符串连接。
 
-**方法 3：使用 uniqid（）函数。**
+**方法 3**：使用`uniqid()`函数。
 
-PHP 中的 [uniqid（）](https://www.geeksforgeeks.org/php-uniqid-function/)函数是一个内置函数，用于基于微秒（微秒）的当前时间生成唯一 ID。 默认情况下，它返回一个 13 个字符长的唯一字符串。
+PHP 中的[`uniqid()`](https://www.geeksforgeeks.org/php-uniqid-function/)函数是一个内置函数，用于基于微秒（微秒）的当前时间生成唯一 ID。 默认情况下，它返回一个 13 个字符长的唯一字符串。
 
 **程序**：
 
@@ -162,7 +162,7 @@ echo $result ;
 ```
 5bdd0b74e9a6c 
 
-```c
+```
 
 输出 2：
 
@@ -171,11 +171,11 @@ echo $result ;
 
 ```
 
-**注意**：所有上述方法都是基于 rand（）和 uniqid（）函数构建的。 这些函数不是加密安全的随机生成器。 因此建议，如果随机性程度影响应用程序的安全性，则应避免使用这些方法。
+**注意**：所有上述方法都是基于`rand()`和`uniqid()`函数构建的。 这些函数不是加密安全的随机生成器。 因此建议，如果随机性程度影响应用程序的安全性，则应避免使用这些方法。
 
-**方法 4：使用 random_bytes（）函数。 （加密安全）**
+**方法 4**：使用`random_bytes()`函数。 （加密安全）
 
-[random_bytes（）](https://www.geeksforgeeks.org/php-random_bytes-function/)函数生成加密安全的伪随机字节，稍后可使用 [bin2hex（）](https://www.geeksforgeeks.org/php-bin2hex-function/)函数将其转换为十六进制格式。
+[`random_bytes()`](https://www.geeksforgeeks.org/php-random_bytes-function/)函数生成加密安全的伪随机字节，稍后可使用[`bin2hex()`](https://www.geeksforgeeks.org/php-bin2hex-function/)函数将其转换为十六进制格式。
 
 **程序**：
 

@@ -4,7 +4,7 @@
 
 给定两个字符串 **A** 和 **B** ，任务是从字典上找到字符串 **B** 的最小排列，以使其包含字符串 **A 中的每个子字符串** 作为其[子字符串](https://www.geeksforgeeks.org/length-of-the-longest-valid-substring/)。 如果无法进行有效的排列，请打印“ **-1”** 。
 
-**范例**：
+**示例**：
 
 > **输入**：A =“ aa”，B =“ ababab”
 > **输出**：aaabbb

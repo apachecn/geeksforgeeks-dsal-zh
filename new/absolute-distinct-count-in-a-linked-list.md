@@ -6,7 +6,7 @@
 
 给定由整数组成的[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是打印链表中存在的不同绝对值的数量。
 
-**范例**：
+**示例**：
 
 > **输入**：`-1 -> -2 -> 0 -> 4 -> 5 -> 8`
 > 

@@ -4,7 +4,7 @@
 
 给定大小为`N`的字符串`S`和整数`K`，任务是确定是否可以安排字符串的字符以同时显示`K`个[回文字符串](https://www.geeksforgeeks.org/string-palindrome/)。
 
-**范例**：
+**示例**：
 
 > **输入**：`S = "annabelle", K = 2`
 >

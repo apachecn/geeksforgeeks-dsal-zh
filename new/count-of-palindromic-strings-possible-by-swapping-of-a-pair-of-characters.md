@@ -4,7 +4,7 @@
 
 给定[回文字符串](https://www.geeksforgeeks.org/string-palindrome/) **S** ，任务是通过一次交换一对字符来查找回文字符串的数量。
 
-**范例**：
+**示例**：
 
 > **输入**：`s = "abba"`
 >

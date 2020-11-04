@@ -4,7 +4,7 @@
 
 给定未排序的整数数组`arr[]`和整数`K`。 任务是计数具有正好`K`个[完全平方数](https://www.geeksforgeeks.org/check-if-given-number-is-perfect-square-in-cpp/)的子数组的数量。
 
-**范例**：
+**示例**：
 
 > **输入**：`arr[] = {2, 4, 9, 3}, K = 2`
 >

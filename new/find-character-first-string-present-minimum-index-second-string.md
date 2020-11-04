@@ -6,7 +6,7 @@
 
 给定一个字符串`str`和另一个字符串`patt`。 在`patt`中找到出现在`str`中最小索引处的字符。 如果`str`中没有`patt`字符，则打印`"No character present"`。
 
-**范例**：
+**示例**：
 
 > **输入**：`str = "geeksforgeeks", patt = "set"`
 >

@@ -4,7 +4,7 @@
 
 给定 [2D 数组](https://www.geeksforgeeks.org/dynamically-allocate-2d-array-c/)`rect[][]`表示顶点为`{(0, 0), (L, 0), (0, B), (L, B)}`的的矩形, 尺寸为`L * B`，而另一个 [2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/)`points[][]`的大小为`N`，在直角坐标系中。 从给定数组的每个点绘制平行于`X`轴的水平线和平行于`Y`轴的垂直线。 任务是计算给定矩形内存在的所有可能的矩形。
 
-**范例**：
+**示例**：
 
 > **输入**：`rect[] [] = {{0, 0}, {5, 0}, {0, 5}, {5, 5}}, points[][] = {{1,  2}, {3, 4}}`
 >

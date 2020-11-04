@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
 
-给定一组单词，将所有异序词一起打印。 例如，如果给定的数组是{“ cat”，“ dog”，“ tac”，“ god”，“ act”}，则输出可能是“ cat tac act dog god”。
+给定一组单词，将所有异序词一起打印。 例如，如果给定的数组是`{"cat", "dog", "tac", "god", "act"}`，则输出可能是`"cat tac act dog god"`。
 
 **简单方法**是创建哈希表。 以所有异序词都具有相同哈希值的方式计算每个单词的哈希值。 用这些哈希值填充哈希表。 最后，将这些单词与相同的哈希值一起打印。 一个简单的哈希机制可以是所有字符的模和。 使用模和，两个非异序词单词可能具有相同的哈希值。 这可以通过匹配单个字符来处理。
 

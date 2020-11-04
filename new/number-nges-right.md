@@ -6,7 +6,7 @@
 
 给定 n 个整数数组和 q 个查询，在给定索引元素的右边打印[的下一个更大元素](https://www.geeksforgeeks.org/next-greater-element/)的数量。
 
-**范例**：
+**示例**：
 
 ```
 Input: a[] = {3, 4, 2, 7, 5, 8, 10, 6}  

@@ -8,7 +8,7 @@
 
 *   返回所有总和的乘积。
 
-**范例**：
+**示例**：
 
 ```
 Input: Root of below tree

@@ -1,21 +1,19 @@
-# 给定一系列单词，请使用 STL
+# 给定一系列单词，请使用 STL 将所有异序词一起打印
 
 > 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-using-stl/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-using-stl/)
-
-将所有异序词一起打印
 
 给定一组单词，将所有异序词一起打印。
 
 **例如，**
 
 ```
-Input: array = {“cat”, “dog”, “tac”, “god”, “act”}
+Input: array = {"cat", "dog", "tac", "god", "act"}
 output: cat tac act, dog god
 Explanation: cat tac and act are anagrams 
 and dog and god are anagrams as 
 they have the same set of characters.
 
-Input: array = {“abc”, “def”, “ghi”}
+Input: array = {"abc", "def", "ghi"}
 output: abc, def, ghi
 Explanation: There are no anagrams in the array.
 
@@ -25,15 +23,15 @@ Explanation: There are no anagrams in the array.
 
 *   [一起给单词顺序打印所有异序词](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together/)
 
-*   [给定单词顺序，将所有字母组合在一起打印集 2](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-set-2/)
+*   [给定单词顺序，将所有字母组合在一起打印 | 系列 2](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-set-2/)
 
-**方法：** 这是使用 C++标准模板库的 HashMap 解决方案，该库存储键值对。 在哈希映射中，键将是字符的排序集合，值将是输出字符串。 当两个异序词的字符排序时，它们将相似。 现在
+**方法：** 这是使用 C++ 标准模板库的`HashMap`解决方案，该库存储键值对。 在哈希映射中，键将是字符的排序集合，值将是输出字符串。 当两个异序词的字符排序时，它们将相似。 现在
 
-1.  将矢量元素存储在 HashMap 中，其中 key 为已排序的字符串。
+1.  将矢量元素存储在`HashMap`中，其中键为已排序的字符串。
 
-2.  如果键相同，则将字符串添加到 HashMap（字符串向量）的值中。
+2.  如果键相同，则将字符串添加到`HashMap`（字符串向量）的值中。
 
-3.  遍历 HashMap 并打印异序词字符串。
+3.  遍历`HashMap`并打印异序词字符串。
 
 ## CPP
 
@@ -129,7 +127,7 @@ int main()
 
 ```
 
-***注意**：使用 g ++中的-std = C++ 11 标志编译以上程序*
+**注意**：使用 g++ 中的`--std=C++11`标志编译以上程序
 
 **输出**：
 
@@ -142,13 +140,13 @@ geeksquiz zuiqkeegs
 
 **复杂度分析**：，
 
-*   **时间复杂度**：O（n * m（log m）），其中 m 是单词的长度。
+*   **时间复杂度**：`O(n * m(log m))`，其中`m`是单词的长度。
 
     需要对数组进行一次遍历。
 
 *   **空间复杂度**：`O(n)`。
 
-    字符串中有 n 个单词。 该映射需要`O(n)`空间来存储字符串。
+    字符串中有`n`个单词。 该映射需要`O(n)`空间来存储字符串。
 
 本文由 [**Mandeep Singh**](https://github.com/msdeep14) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
