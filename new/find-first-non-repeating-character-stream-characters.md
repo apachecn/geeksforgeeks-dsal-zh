@@ -4,27 +4,27 @@
 
 给定字符流，请从流中找到第一个非重复字符。 您需要随时告诉`O(1)`时间中的第一个非重复字符。
 
-如果我们遵循此处讨论的第一种方法[，那么我们需要存储该流，以便我们可以再遍历该流以随时找到第一个非重复字符。 如果我们使用在](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)[相同文章](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)中讨论的扩展方法，则每次查询第一个非重复元素时，我们都需要遍历 count 数组。 我们可以随时从流中找到第一个非重复字符，而无需遍历任何数组。
+如果我们遵循此处讨论的第一种方法，[那么我们需要存储该流](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)，以便我们可以再遍历该流以随时找到第一个非重复字符。 如果我们使用在[相同文章](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)中讨论的扩展方法，则每次查询第一个非重复元素时，我们都需要遍历计数数组。 我们可以随时从流中找到第一个非重复字符，而无需遍历任何数组。
 
-这个想法是使用 [DLL](https://www.geeksforgeeks.org/doubly-linked-list/) （ **D** 整体 **L** 涂有 **L** ist）有效地从 a 中获得第一个非重复字符 流。 DLL 按顺序包含所有非重复字符，即 DLL 的头包含第一个非重复字符，第二个节点包含第二个非重复字符，依此类推。
+这个想法是使用[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)（DoublyLinkedList）有效地从流中获得第一个非重复字符流。 双链表按顺序包含所有非重复字符，即双链表的头包含第一个非重复字符，第二个节点包含第二个非重复字符，依此类推。
 
-我们还维护两个数组：一个数组用于维护已被访问两次或两次以上的字符，我们将其称为 repeat []，另一个数组是指向链接列表节点的指针的数组，我们将其称为 inDLL []。 。 两个数组的大小等于字母大小，通常为 256。
+我们还维护两个数组：一个数组用于维护已被访问两次或两次以上的字符，我们将其称为`repeat[]`，另一个数组是指向链接列表节点的指针的数组，我们将其称为`inDLL[]`。 两个数组的大小等于字母大小，通常为 256。
 
-1.  创建一个空的 DLL。 还要创建两个数组 inDLL []和重复的[]，其大小为 256。inDLL 是指向 DLL 节点的指针的数组。 repeat []是一个布尔数组，如果 x 重复两次或两次以上，则 repeat [x]为 true，否则为 false。 如果 DLL 中存在字符 x，则 inDLL [x]包含指向 DLL 节点的指针，否则为 NULL。
+1.  创建一个空的双链表。 还要创建两个数组`inDLL[]`和`repeat[]`，其大小为 256。`inDLL`是指向双链表节点的指针的数组。 `repeat[]`是一个布尔数组，如果`x`重复两次或两次以上，则`repeat[x]`为`true`，否则为`false`。 如果双链表中存在字符`x`，则`inDLL[x]`包含指向双链表节点的指针，否则为`NULL`。
 
-2.  将 inDLL []的所有条目初始化为 NULL，并将重复的[]初始化为 false。
+2.  将`inDLL[]`的所有条目初始化为`NULL`，并将`repeat[]`初始化为`false`。
 
-3.  若要获取第一个非重复字符，请返回 DLL 开头的字符。
+3.  若要获取第一个非重复字符，请返回双链表开头的字符。
 
-4.  以下是在流中处理新字符“ x”的步骤。
+4.  以下是在流中处理新字符`x`的步骤。
 
-    *   如果 repeated [x]为 true，请忽略此字符（x 已在流中重复两次或更多次）
+    *   如果`repeated[x]`为`true`，请忽略此字符（`x`已在流中重复两次或更多次）
 
-    *   如果 repeated [x]为 false，并且 inDLL [x]为 NULL（x 首次出现）。 将 x 附加到 DLL 并将新 DLL 节点的地址存储在 inDLL [x]中。
+    *   如果`repeated[x]`为`false`，并且`inDLL[x]`为`NULL`（`x`首次出现）。 将`x`附加到双链表并将双链表新节点的地址存储在`inDLL[x]`中。
 
-    *   如果 repeated [x]为 false 并且 inDLL [x]不为 NULL（第二次看到 x）。 使用 inDLL [x]获取 x 的 DLL 节点并删除该节点。 同样，将 inDLL [x]标记为 NULL，并将重复[x]标记为 true。
+    *   如果`repeated[x]`为`false`并且`inDLL[x]`不为`NULL`（第二次看到`x`）。 使用 `inDLL[x]`获取`x`的双链表节点并删除该节点。 同样，将`inDLL[x]`标记为`NULL`，并将`repeated[x]`标记为`true`。
 
-请注意，如果我们维护尾指针，则向 DLL 附加新节点是 **`O(1)`**操作。 从 DLL 中删除节点也是 **`O(1)`**。 因此，添加新字符和找到第一个非重复字符这两项操作都需要 **`O(1)`**时间。
+请注意，如果我们维护尾指针，则向双链表附加新节点是`O(1)`操作。 从双链表中删除节点也是 `O(1)`。 因此，添加新字符和找到第一个非重复字符这两项操作都需要`O(1)`时间。
 
 下图是上述方法的模拟：
 

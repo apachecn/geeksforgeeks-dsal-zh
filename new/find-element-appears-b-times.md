@@ -1,8 +1,8 @@
-# 查找出现 b 次的唯一元素
+# 查找出现`b`次的唯一元素
 
 > 原文：[https://www.geeksforgeeks.org/find-element-appears-b-times/](https://www.geeksforgeeks.org/find-element-appears-b-times/)
 
-给定一个数组，其中每个元素出现一次，除了一个元素出现 b（a> b）次。 找到发生 b 次的元素。
+给定一个数组，其中每个元素出现一次，除了一个元素出现`b`（`a > b`）次。 找到发生`b`次的元素。
 
 **示例**：
 
@@ -13,7 +13,7 @@ Output : 1
 
 ```
 
-将每个数字相加一次，然后将总和乘以 a，我们将得到数组每个元素之和的乘积。 将其存储为 a_sum。 从 a_sum 中减去整个数组的总和，然后将结果除以（a-b）。 我们得到的数字是必需的数字（在数组中出现 b 次）。
+将每个数字相加一次，然后将总和乘以`a`，我们将得到数组每个元素之和的乘积。 将其存储为`a_sum`。 从`a_sum`中减去整个数组的总和，然后将结果除以`a - b`。 我们得到的数字是必需的数字（在数组中出现`b`次）。
 
 ## C++
 
@@ -192,7 +192,7 @@ public static void Main(String[] args) 
 
 请参考下面的文章以了解更多方法。
 
-[查找出现 k 次的唯一元素。](https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/)
+[查找出现`k`次的唯一元素](https://www.geeksforgeeks.org/find-unique-element-element-occurs-k-times-except-one/)。
 
 
 

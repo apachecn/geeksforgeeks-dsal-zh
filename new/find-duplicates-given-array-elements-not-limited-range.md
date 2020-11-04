@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/](https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/)
 
-给定 n 个整数数组。 任务是在给定数组中打印重复项。 如果没有重复，则打印-1。
+给定`n`个整数数组。 任务是在给定数组中打印重复项。 如果没有重复，则打印 -1。
 
 **范例**：
 
@@ -103,7 +103,7 @@ public class GFG {
 
 **辅助空间**：`O(n)`
 
-**有效方法**：使用 [unordered_map](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 进行哈希处理。 打印每个元素的出现频率和频率大于 1 的元素。 **unordered_map** 因为整数范围未知而被使用。 对于 Python，使用字典将数字存储为键，将频率存储为值。 字典可以用作整数范围是未知的。
+**有效方法**：使用[`unordered_map`](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)进行哈希处理。 打印每个元素的出现频率和频率大于 1 的元素。 `unordered_map`因为整数范围未知而被使用。 对于 Python，使用字典将数字存储为键，将频率存储为值。 字典可以用作整数范围是未知的。
 
 下面是上述方法的实现：
 
