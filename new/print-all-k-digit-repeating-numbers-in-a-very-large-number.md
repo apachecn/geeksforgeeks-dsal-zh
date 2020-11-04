@@ -275,7 +275,7 @@ public static void Main(string[] args)
 
 ```
 
-**时间复杂度**：*O（N * K）*
+**时间复杂度**：*`O(N * K)`*
 
 
 

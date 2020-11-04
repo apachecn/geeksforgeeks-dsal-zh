@@ -4,14 +4,19 @@
 
 中最小索引处出现的第一个字符串中的字符
 
-给定一个字符串 **str** 和另一个字符串 **patt** 。 在 **patt** 中找到出现在 **str** 中最小索引处的字符。 如果 **str** 中没有 **patt** 字符，则打印“无字符”。
+给定一个字符串`str`和另一个字符串`patt`。 在`patt`中找到出现在`str`中最小索引处的字符。 如果`str`中没有`patt`字符，则打印`"No character present"`。
 
 **范例**：
 
-> **输入**：str =“ geeksforgeeks”，patt =“ set” 在 **str** 和
-> 中存在 patt，但是 **e** 的最小索引为 **1** 。
-> **输入**：str =“ adcffaet”，patt =“ onkl”。
-> **输出**：无字符
+> **输入**：`str = "geeksforgeeks", patt = "set"`
+>
+> **输出**：`e`
+>
+> `patt`的`e`和`s`都出现在`str`中，但是`e`的索引最小，为 **1**。
+>
+> **输入**：`str = "adcffaet", patt = "onkl"`
+>
+> **输出**：`"No character present"`
 
 **来源**：[OLA 面试经验 | 系列 12](https://www.geeksforgeeks.org/ola-interview-experience-set-12/) 。
 
@@ -266,9 +271,9 @@ Minimum Index Character = e
 
     *   对于不匹配的字符，请打印“不存在字符”。
 
-哈希表是使用 C++ 中的 [unordered_set 实现的。
+哈希表是使用 C++ 中的[`unordered_set`](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)实现的。
 
-下图是上述方法的模拟：](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)
+下图是上述方法的模拟：
 
 ![](img/3e573678674decc4ea707509c440194d.png)
 
@@ -534,9 +539,9 @@ Minimum Index Character = e
 
 ```
 
-**时间复杂度**：`O(m + n)`，其中 **m** 和 **n** 是两个字符串的长度。
+**时间复杂度**：`O(m + n)`，其中`m`和`n`是两个字符串的长度。
 
-**辅助空间**：O（d），其中 **d** 是哈希表的大小，它是 **str** 中不同字符的计数。
+**辅助空间**：`O(d)`，其中`d`是哈希表的大小，它是`str`中不同字符的计数。
 
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，也可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

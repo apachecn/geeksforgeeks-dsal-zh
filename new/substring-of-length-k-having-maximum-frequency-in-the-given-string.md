@@ -27,7 +27,7 @@
 
  ***时间复杂度**：O（N *（K + log K））
 
-**辅助空间**：O（N * K）
+**辅助空间**：`O(N * K)`
 
 **有效方法**：为了优化上述方法，其想法是使用[滑动窗口技术](http://www.geeksforgeeks.org/window-sliding-technique/)。 考虑一个大小为
 

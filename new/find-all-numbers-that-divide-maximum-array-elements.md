@@ -2,20 +2,23 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/](https://www.geeksforgeeks.org/find-all-numbers-that-divide-maximum-array-elements/)
 
-给定一个由 N 个数字组成的数组，任务是打印所有大于 1 的数字，这些数字除以数组元素的最大值。
+给定一个由`N`个数字组成的数组，任务是打印所有大于 1 的数字，这些数字除以数组元素的最大值。
 
 **范例**：
 
-> **输入**：a [] = {6，6，12，12，18，13}
-> **输出**：2 3 6
-> 所有数字均除以数组元素的最大值，即 ，4
+> **输入**：`a[] = {6, 6, 12, 12, 18, 13}`
+>
+> **输出**：`2 3 6`
+>
+> 所有数字均除以数组元素的最大值，即 4
 > 
-> **输入**：a [] = {12、15、27、20、40}
-> **输出**：2 3 4 5
+> **输入**：`a[] = {12, 15, 27, 20, 40}`
+>
+> **输出**：`2 3 4 5`
 
 **方法**：
 
-*   使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)存储每个数组元素的所有因子的计数。 我们可以[找出 O（sqrt N）中](https://www.geeksforgeeks.org/find-divisors-natural-number-set-1/)的所有因子。
+*   使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)存储每个数组元素的所有因子的计数。 我们可以[在`O(sqrt N)`中找出](https://www.geeksforgeeks.org/find-divisors-natural-number-set-1/)的所有因子。
 
 *   遍历所有因素，并找到除以数字的最大数组元素的数量。
 
@@ -332,7 +335,7 @@ public static void Main(String[] args) 
 
 ```
 
-**时间复杂度**：O（N * [sqrt](https://www.geeksforgeeks.org/sqrt-sqrtl-sqrtf-cpp/) （[最大](https://www.geeksforgeeks.org/stdmax-in-cpp/)（数组元素）））
+**时间复杂度**：`O(N * sqrt(max(arr)))`
 
 
 

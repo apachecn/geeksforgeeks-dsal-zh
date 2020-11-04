@@ -24,7 +24,7 @@
 
 **朴素的方法**：最简单的方法是[遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并对每个数组元素 **arr [i]** [反转子串 **{s [arr [i]]，…s [N – arr [i] + 1]}**](https://www.geeksforgeeks.org/reverse-the-substrings-of-the-given-string-according-to-the-given-array-of-indices/) 并打印非常更新后获得的结果字符串。
 
-**时间复杂度**：O（N * K），其中 N 是字符串的长度，K 是反转的子字符串的最大长度。
+**时间复杂度**：`O(N * K)`，其中 N 是字符串的长度，K 是反转的子字符串的最大长度。
 
 **辅助空间**：`O(1)`
 

@@ -428,7 +428,7 @@ which contains element from all the three arrays.
 
 *   **Complexity Analysis:**
 
-    *   **时间复杂度**：O（n * k <sup>2</sup> ），要找到长度为 k 的数组中的最大值和最小值，所需时间为`O(K)`，并遍历所有 k 长度为 n 的数组（在最坏的情况下），时间复杂度为 O（n * k），则总时间复杂度为 O（n * k <sup>2</sup> ）。
+    *   **时间复杂度**：O（n * k <sup>2</sup> ），要找到长度为 k 的数组中的最大值和最小值，所需时间为`O(K)`，并遍历所有 k 长度为 n 的数组（在最坏的情况下），时间复杂度为`O(N * K)`，则总时间复杂度为 O（n * k <sup>2</sup> ）。
 
     *   **空间复杂度**：`O(K)`，需要一个长度为 k 的额外数组，因此空间复杂度为`O(K)`
 
@@ -1017,7 +1017,7 @@ which contains element from all the three arrays.
 
     *   **时间复杂度**：O（n * k * log k）。
 
-        为了找到长度为 k 的最小堆中的最大值和最小值，所需时间为 O（log k），并遍历所有长度为 n 的 k 个数组（在最坏的情况下），时间复杂度为 O（n * k），则总时间复杂度为 O（n * k * log k）。
+        为了找到长度为 k 的最小堆中的最大值和最小值，所需时间为 O（log k），并遍历所有长度为 n 的 k 个数组（在最坏的情况下），时间复杂度为`O(N * K)`，则总时间复杂度为 O（n * k * log k）。
 
     *   **空间复杂度**：`O(K)`。
 
