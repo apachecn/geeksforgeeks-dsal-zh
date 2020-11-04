@@ -15,7 +15,7 @@
 
 ```
 
-1.  创建两个辅助数组 index []和 word []。 将所有给定的单词复制到 words []并将原始索引存储在 index []中
+1.  创建两个辅助数组`index[]`和`word[]`。 将所有给定的单词复制到`words[]`并将原始索引存储在`index[]`中
 
 ```
 index[]:  0   1   2   3   4
@@ -31,7 +31,7 @@ words[]:  act  dgo  act  dgo  act
 
 ```
 
-3.  对单词数组进行排序。 使用 strcmp（）比较单个单词进行排序
+3.  对单词数组进行排序。 使用`strcmp()`比较单个单词进行排序
 
 ```
 index:     0    2    4    1    3
@@ -46,7 +46,7 @@ words[]:  act  act  act  dgo  dgo
 
 ```
 
-以下是上述算法的实现。 在下面的程序中，结构“ Word”的数组用于存储索引和单词数组。 DupArray 是另一个存储结构“ Word”的数组的结构。
+以下是上述算法的实现。 在下面的程序中，结构`Word`的数组用于存储索引和单词数组。 `DupArray`是另一个存储结构`Word`的数组的结构。
 
 ## C++
 
@@ -389,9 +389,9 @@ cat tac act dog god
 
 ```
 
-***时间复杂度**：* 假设有 N 个单词，每个单词最多包含 M 个字符。 上限为 O（NMLogM + MNLogN）。
+**时间复杂度**：假设有`N`个单词，每个单词最多包含`M`个字符。 上限为`O(NMLogM + MNLogN)`。
 
-步骤 2 需要 O（NMLogM）时间。 排序单词最多需要 O（MLogM）时间。 因此，对 N 个单词进行排序需要 O（NMLogM）时间。 步骤 3 使用 O（MNLogN）单词排序数组进行 NLogN 比较。 比较可能需要最多 O（M）时间。 因此，对单词数组进行排序的时间为 O（MNLogN）。
+步骤 2 需要`O(NMLogM)`时间。 排序单词最多需要 `O(MLogM)`时间。 因此，对`N`个单词进行排序需要`O(NMLogM)`时间。 步骤 3 使用`O(MNLogN)`单词排序数组进行`NLogN`比较。 比较可能需要最多`O(M)`时间。 因此，对单词数组进行排序的时间为`O(MNLogN)`。
 
 **使用哈希映射**
 
@@ -579,11 +579,11 @@ class GFG {
 
 ```
 
-**带有 O（NM）解决方案的 HashMap**
+**使用`HashMap`的`O(NM)`解决方案**
 
 在先前的方法中，我们对每个字符串进行排序以维护相似的键，但是这种方法花费额外的时间将利用另一个哈希映射来 保持字符的频率，将为具有相同字符频率的不同字符串生成相同的哈希函数。
 
-在这里，我们将使用 HashMap < HashMap，ArrayList >，内部的 hashmap 将计算每个字符串的字符的频率，外部的 HashMap 将检查该 hashmap 是否存在（如果存在），然后它将 将该字符串添加到相应的列表中。
+在这里，我们将使用`HashMap<HashMap, ArrayList>`，内部的`hashmap`将计算每个字符串的字符的频率，外部的`HashMap`将检查该`hashmap`是否存在（如果存在），然后它将 将该字符串添加到相应的列表中。
 
 ## C++
 
@@ -757,11 +757,11 @@ public class FindAnagrams {
 
 ```
 
-***时间复杂度**：* 假设有 N 个单词，每个单词最多包含 M 个字符。 上限为 O（NM）。
+**时间复杂度**：假设有`N`个单词，每个单词最多包含`M`个字符。 上限为`O(NM)`。
 
-***空间复杂度**：* 假设有 N 个单词，每个单词最多包含 M 个字符。 上限为 O（N + M）。
+**空间复杂度**：假设有`N`个单词，每个单词最多包含`M`个字符。 上限为`O(N + M)`。
 
-[**给定一个单词序列，一起打印所有异序词| 第 2 组**](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-set-2/)
+[**给定一个单词序列，一起打印所有异序词 | 系列 2**](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-set-2/)
 
 如果发现不正确的内容，或者想共享有关上述主题的更多信息，请写评论。
 

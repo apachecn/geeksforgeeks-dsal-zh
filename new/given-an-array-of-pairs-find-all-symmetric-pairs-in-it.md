@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/](https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/)
 
-如果 c 等于 b 且 a 等于 d，则认为两对（a，b）和（c，d）是对称的。 例如，（10，20）和（20，10）是对称的。 给定成对的数组，找到其中的所有对称对。
+如果`c`等于`b`且`a`等于`d`，则认为两对`(a, b)`和`(c, d)`是对称的。 例如，`(10, 20)`和`(20, 10)`是对称的。 给定成对的数组，找到其中的所有对称对。
 
 可以假设所有对中的第一个元素都是不同的。
 
