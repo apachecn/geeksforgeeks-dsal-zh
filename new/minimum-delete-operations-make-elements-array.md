@@ -226,7 +226,7 @@ class GFG {
 
 **时间复杂度**：`O(n)`
 
-**<u>注意：</u>** 在这里，我们可以优化多余的空间以将每个元素的频率计数为`O(1)`，但是为此，我们必须修改原始数组。 请参阅[此](https://www.geeksforgeeks.org/count-frequencies-elements-array-o1-extra-space-time/)文章。
+**注意：** 在这里，我们可以优化多余的空间以将每个元素的频率计数为`O(1)`，但是为此，我们必须修改原始数组。 请参阅[此](https://www.geeksforgeeks.org/count-frequencies-elements-array-o1-extra-space-time/)文章。
 
 本文由 [**Shashank Mishra（Gullu）**](https://www.facebook.com/shashank.mishra.92167) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

@@ -16,7 +16,7 @@
 > **输入**：arr [] = {5、7、6、4、4、2}
 > **输出**：3
 
-## [推荐：请先在“ ***<u>实践</u>*** ”上解决它，然后再继续进行解决。](https://practice.geeksforgeeks.org/problems/longest-consecutive-subsequence/0)
+## [推荐：请先在“ ***实践*** ”上解决它，然后再继续进行解决。](https://practice.geeksforgeeks.org/problems/longest-consecutive-subsequence/0)
 
 **方法**：
 

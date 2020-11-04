@@ -30,7 +30,7 @@ the distinct characters of given string.
 
 例如，在“ aabcbcdb”中，包含所有字符的最小字符串是“ abcbcd”。
 
-<u>**方法 1**</u> ：这是使用 HashMap 解决问题的蛮力方法。
+**方法 1** ：这是使用 HashMap 解决问题的蛮力方法。
 
 *   **Approach :** For solving the problem we first have to find out all the distinct characters present in the string. This can be done using a [**HashMap**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/). The next thing is to generate all the possible substrings. This follows by checking whether a substring generated has all the required characters(stored in the hash_map) or not. If yes, then compare its length with the minimum substring length which follows the above constraints, found till now.
 
@@ -155,7 +155,7 @@ the distinct characters of given string.
 
         作为大小为 N 的 **hash_map** 。
 
-<u>**方法 2**</u> ：这里我们使用了[滑动窗口](https://www.geeksforgeeks.org/window-sliding-technique/)技术来得出解决方案。 该技术说明了如何将很少出现问题的嵌套 for 循环转换为单个 for 循环，从而降低时间复杂度。
+**方法 2** ：这里我们使用了[滑动窗口](https://www.geeksforgeeks.org/window-sliding-technique/)技术来得出解决方案。 该技术说明了如何将很少出现问题的嵌套 for 循环转换为单个 for 循环，从而降低时间复杂度。
 
 *   **Approach:** Basically a window of characters is maintained by using two pointers namely **start** and **end**. These **start** and **end** pointers can be used to shrink and increase the size of window respectively. Whenever the window contains all characters of given string, the window is shrinked from left side to remove extra characters and then its length is compared with the smallest window found so far.
 

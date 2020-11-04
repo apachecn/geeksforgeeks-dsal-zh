@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/](https://www.geeksforgeeks.org/efficiently-find-first-repeated-character-string-without-using-additional-data-structure-one-traversal/)
 
-实现节省空间的算法，以检查字符串中的第一个重复字符，而无需在一次遍历中使用任何其他数据结构。 不允许使用其他数据结构，例如 count 数组，hash 等。
+实现节省空间的算法，以检查字符串中的第一个重复字符，而无需在一次遍历中使用任何其他数据结构。 不允许使用其他数据结构，例如计数数组，哈希等。
 
 **示例**：
 

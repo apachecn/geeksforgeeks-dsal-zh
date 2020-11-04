@@ -20,7 +20,7 @@ No valid pair exists.
 
 ```
 
-**<u>方法 1</u> **：排序和两指针技术。
+**方法 1 **：排序和两指针技术。
 
 **方法**：解决此问题的棘手方法可以是使用两指针技术。 但是对于使用两个指针技术，必须对数组进行排序。 一旦对数组排序，就可以采用两个指针分别标记数​​组的开始和结束。 如果**的总和比这两个元素的总和大**，请向左移动指针以增加所需总和的值；如果**的总和比所需值小**，则向右移动 减小值的指针。 让我们通过一个例子来理解这一点。
 
@@ -510,7 +510,7 @@ Array has two elements with the given sum
 
 *   **辅助空间**：这也取决于排序算法。 辅助空间是用于合并排序的`O(n)`和用于堆排序的`O(1)`。
 
-**<u>方法 2</u> **：[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
+**方法 2 **：[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
 
 **方法**：通过使用哈希技术可以有效解决此问题。 使用 **hash_map** 检查当前数组值 **x（let）**，如果存在值 **target_sum-x** ，则将其添加到前者后得出 **] target_sum** 。 这可以在恒定时间内完成。 让我们看下面的例子。
 
@@ -766,7 +766,7 @@ Pair with given sum 16 is (10, 6)
 
 https://www.youtube.com/watch?v=I7Nz1XzzPYc
 
-**<u>方法 3</u> **：使用小于 x 的元素的余数。
+**方法 3 **：使用小于 x 的元素的余数。
 
 **方法**：
 

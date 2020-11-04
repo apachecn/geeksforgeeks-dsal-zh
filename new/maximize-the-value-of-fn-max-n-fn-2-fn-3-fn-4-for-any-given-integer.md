@@ -33,13 +33,13 @@
 > F（12）= max（12，13）
 > 因此，F（12）的最大值是 13。
 
-**<u>朴素的方法</u>**：最简单的方法是使用[递归](https://www.geeksforgeeks.org/recursion/)计算 **F（N）**的值。 在每个步骤中，分别对值 **N / 2** ， **N / 3** 和 **N / 4** 分别调用三个递归调用，然后返回每个递归调用 **N** 的最大值与这些递归调用返回的值之和。 在所有递归调用结束后，将值打印为结果。
+**朴素的方法**：最简单的方法是使用[递归](https://www.geeksforgeeks.org/recursion/)计算 **F（N）**的值。 在每个步骤中，分别对值 **N / 2** ， **N / 3** 和 **N / 4** 分别调用三个递归调用，然后返回每个递归调用 **N** 的最大值与这些递归调用返回的值之和。 在所有递归调用结束后，将值打印为结果。
 
 **时间复杂度**：O（3 <sup>N</sup> ）
 
 **辅助空间**：`O(1)`
 
-[**<u>动态规划</u>**](http://www.geeksforgeeks.org/dynamic-programming/) **<u>使用自下而上的方法</u>**：上面的递归调用也可以使用 辅助数组 **dp []** ，并以自下而上的方式计算每个状态的值。 步骤如下：
+[**动态规划**](http://www.geeksforgeeks.org/dynamic-programming/) **使用自下而上的方法**：上面的递归调用也可以使用 辅助数组 **dp []** ，并以自下而上的方式计算每个状态的值。 步骤如下：
 
 *   创建大小为 **N** 的辅助数组 **dp []** 。
 
@@ -227,11 +227,11 @@ if __name__ == '__main__':
 
 ***空间复杂度**：`O(n)`*
 
-[**<u>动态规划</u>**](http://www.geeksforgeeks.org/dynamic-programming/) **<u>使用自顶向下方法</u>**：与上述方法一样，[有很多重叠 每个递归调用的子问题](https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/)。 因此，为了优化上述方法，其思想是使用辅助空间[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来存储在每个递归调用中计算出的值并返回重复的存储状态。 步骤如下：
+[**动态规划**](http://www.geeksforgeeks.org/dynamic-programming/) **使用自顶向下方法**：与上述方法一样，[有很多重叠 每个递归调用的子问题](https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/)。 因此，为了优化上述方法，其思想是使用辅助空间[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来存储在每个递归调用中计算出的值并返回重复的存储状态。 步骤如下：
 
 *   初始化映射**映射**，以存储在每个递归调用中计算的值。
 
-*   **<u>基本情况</u>**：如果 **N** 的值为 **0** 或 **1** ，则结果为 **0** 和 **1** 。 同样，如果存在任何先前计算的状态，则将该值返回为：
+*   **基本情况**：如果 **N** 的值为 **0** 或 **1** ，则结果为 **0** 和 **1** 。 同样，如果存在任何先前计算的状态，则将该值返回为：
 
 > >基本情况：
 > if（N < = 1）{
@@ -242,11 +242,11 @@ if __name__ == '__main__':
 > 返回 Map [N];
 > }
 
-*   **<u>递归调用</u>**：如果不满足基本条件，则通过递归调用每个状态来找到当前状态的值，如下所示：
+*   **递归调用**：如果不满足基本条件，则通过递归调用每个状态来找到当前状态的值，如下所示：
 
 > 结果= max（N，递归函数（N / 2）+递归函数（N / 3）+递归函数（N / 4））
 
-*   **<u>返回语句</u>**：在每个递归调用中（基本情况除外），将在上一步中计算出的当前状态存储在映射中，并返回计算出的值作为当前状态的结果 。
+*   **返回语句**：在每个递归调用中（基本情况除外），将在上一步中计算出的当前状态存储在映射中，并返回计算出的值作为当前状态的结果 。
 
 > Map [N] =结果；
 > 返回结果；
