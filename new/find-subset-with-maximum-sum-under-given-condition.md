@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-subset-with-maximum-sum-under-given-condition/](https://www.geeksforgeeks.org/find-subset-with-maximum-sum-under-given-condition/)
 
-给定 n 个项目的**值[]** 和**标签[]** 和正整数**限制**，我们需要选择这些项目的子集 以这样的方式，子集中相同类型标签的数量应为< =极限，并且在所有可能的子集中选择中，值的总和最大。
+给定`n`个项目的`values[]`和`labels[]`和正整数`limit`，我们需要选择这些项目的子集 以这样的方式，子集中相同类型标签的数量应小于等于极限，并且在所有可能的子集中选择中，值的总和最大。
 
 **范例**：
 
@@ -27,13 +27,13 @@ Output: 29
 
 ```
 
-**方法**：的想法是使用 [Multimap](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/) 和 [Hashmap](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 解决此问题。
+**方法**：的想法是使用[`Multimap`](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/)和[`Hashmap`](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)解决此问题。
 
-*   我们将所有值和相应的标签成对存储在 Multimap 中。
+*   我们将所有值和相应的标签成对存储在`Multimap`中。
 
-*   在 Multimap 中，{values，labels}对按升序排序。 因此，我们将反向遍历 Multimap 以获得降序对。
+*   在`Multimap`中，`{values, labels}`对按升序排序。 因此，我们将反向遍历`Multimap`以获得降序对。
 
-*   现在，我们将在答案中添加值，并将每个标签的出现次数存储在 Hashmap 中，以检查出现次数是否小于或等于限制。
+*   现在，我们将在答案中添加值，并将每个标签的出现次数存储在`Hashmap`中，以检查出现次数是否小于或等于限制。
 
 下面是上述方法的实现：
 
@@ -96,7 +96,7 @@ return 0;
 
 ```
 
-**时间复杂度**：`O(n)`，其中 N 是数组的长度。
+**时间复杂度**：`O(n)`，其中`N`是数组的长度。
 
 
 
