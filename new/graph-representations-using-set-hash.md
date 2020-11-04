@@ -2,15 +2,15 @@
 
 > 原文：[https://www.geeksforgeeks.org/graph-representations-using-set-hash/](https://www.geeksforgeeks.org/graph-representations-using-set-hash/)
 
-在[中，我们介绍了使用向量数组的 Graph 实现。 设置 1](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-1-dfs-of-unweighted-and-undirected/) 。 在这篇文章中，使用了一种不同的实现，该实现可用于使用[集](https://www.geeksforgeeks.org/set-in-cpp-stl/)实现图。 该实现是针对图的[邻接表表示。](https://www.geeksforgeeks.org/graph-and-its-representations/)
+在[系列 1 ](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-1-dfs-of-unweighted-and-undirected/)中，我们介绍了使用向量数组的图的实现。 在这篇文章中，使用了一种不同的实现，该实现可用于使用[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)实现图。 该实现是针对图的[邻接表表示](https://www.geeksforgeeks.org/graph-and-its-representations/)。
 
-集合在两个方面不同于向量：它以排序的方式存储元素，并且不允许重复的元素。 因此，该方法不能用于包含平行边的图形。 由于集合在内部实现为二分搜索树，因此**可以在 O（logV）时间**中搜索两个顶点之间的边，其中 V 是图中顶点的数量。
+集合在两个方面不同于向量：它以排序的方式存储元素，并且不允许重复的元素。 因此，该方法不能用于包含平行边的图形。 由于集合在内部实现为二分搜索树，因此**可以在`O(logV)`时间**中搜索两个顶点之间的边，其中`V`是图中顶点的数量。
 
 以下是具有 5 个顶点的无向图和无权图的示例。
 
 ![8](img/1ef79a5320e6115e8c3ada572164793e.png)
 
-以下是使用[集](https://www.geeksforgeeks.org/set-in-cpp-stl/)的数组的该图的邻接表表示。
+以下是使用[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)的数组的该图的邻接表表示。
 
 ![9](img/31ac6919c21cd0a1137f19937ea23758.png)
 
@@ -121,17 +121,17 @@ Edge from 0 to 3 not found.
 
 ```
 
-*优点*：可以在 O（log V）中进行诸如从顶点 u 到顶点 v 是否存在边之类的查询。
+*优点*：可以在`O(log V)`中进行诸如从顶点`u`到顶点`v`是否存在边之类的查询。
 
 *缺点*：
 
-*   与矢量实现中的`O(1)`相比，添加边需要 O（log V）。
+*   与矢量实现中的`O(1)`相比，添加边需要`O(log V)`。
 
 *   包含平行边的图形无法通过此方法实现。
 
-**使用 unordered_set（或散列）的边搜索操作的进一步优化**：
+**使用`unordered_set`（或散列）的边搜索操作的进一步优化**：
 
-可以使用内部使用散列的 [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/) 将边搜索操作进一步优化为`O(1)`。
+可以使用内部使用散列的[`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)将边搜索操作进一步优化为`O(1)`。
 
 ```
 // A C++ program to demonstrate adjacency list
@@ -241,7 +241,7 @@ Edge from 0 to 3 not found.
 
 *优点*：
 
-*   可以在`O(1)`中进行查询，例如是否存在从顶点 u 到顶点 v 的边。
+*   可以在`O(1)`中进行查询，例如是否存在从顶点`u`到顶点`v`的边。
 
 *   加边需要`O(1)`。
 

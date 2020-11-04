@@ -1,8 +1,8 @@
-# 给定两个未排序的数组，找到总和为 x 的所有对。
+# 给定两个未排序的数组，找到总和为`x`的所有对。
 
 > 原文：[https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 
-给定两个不同元素的未排序数组，任务是从两个数组中找到总和等于 **X** 的所有对。
+给定两个不同元素的未排序数组，任务是从两个数组中找到总和等于`x`的所有对。
 
 **示例**：
 
@@ -22,9 +22,9 @@ Output : 1 8
 
 ```
 
-**在**中问：[亚马逊](https://www.geeksforgeeks.org/tag/amazon/)
+在[亚马逊](https://www.geeksforgeeks.org/tag/amazon/)中询问。
 
-**朴素的方法**是简单地运行两个循环并从两个数组中选择元素。 逐一检查两个元素的总和是否等于给定值 x。
+**朴素的方法**是简单地运行两个循环并从两个数组中选择元素。 逐一检查两个元素的总和是否等于给定值`x`。
 
 ## C++
 
@@ -222,11 +222,11 @@ findPairs($arr1, $arr2, 
 
 **辅助空间**：`O(1)`
 
-此问题的**有效解决方案**是[哈希处理](http://www.geeksforgeeks.org/hashing-data-structure/)。 哈希表是使用 C++ 中的 [unordered_set 实现的。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
+此问题的**有效解决方案**是[哈希处理](http://www.geeksforgeeks.org/hashing-data-structure/)。 哈希表是使用 C++ 中的[`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)实现的。
 
 *   我们将所有第一个数组元素存储在哈希表中。
 
-*   对于第二个数组的元素，我们从 x 中减去每个元素，然后在哈希表中检查结果。
+*   对于第二个数组的元素，我们从`x`中减去每个元素，然后在哈希表中检查结果。
 
 *   如果存在结果，则将元素和键打印在哈希（这是第一个数组的元素）中。
 
@@ -421,7 +421,7 @@ class GFG {
 
 ```
 
-**时间复杂度**：O（max（n，m））
+**时间复杂度**：`O(max(n, m))`
 
 **辅助空间**：`O(n)`
 
