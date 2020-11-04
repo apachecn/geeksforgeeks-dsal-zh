@@ -1,8 +1,8 @@
-# 查找满足 ab = cd 的所有对（a，b）和（c，d）对
+# 查找满足`ab = cd`的所有`(a, b)`和`(c, d)`偶对
 
 > 原文：[https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
 
-给定一个由不同整数组成的数组，任务是找到两对（a，b）和（c，d），使得 ab = cd，其中 a，b，c 和 d 是不同元素。
+给定一个由不同整数组成的数组，任务是找到两对`(a, b)`和`(c, d)`，使得`ab = cd`，其中`a, b, c, d`是不同元素。
 
 **示例**：
 
@@ -17,7 +17,7 @@ Output : 6 3 and 9 2
 
 ```
 
-**简单解决方案**是运行四个循环以生成数组元素的所有可能的四倍。 对于每个四元组（a，b，c，d），检查 a * b = c * d。 该解决方案的时间复杂度为`O(N ^ 4)`。
+**简单解决方案**是运行四个循环以生成数组元素的所有可能的四倍。 对于每个四元组`(a, b, c, d)`，检查`a * b = c * d`。 该解决方案的时间复杂度为`O(N ^ 4)`。
 
 此问题的**有效解决方案**是使用哈希。 我们在哈希表中将乘积用作键，将对用作值。
 
@@ -301,7 +301,7 @@ class GFG 
 
 **相关文章**：
 
-[在数组中找到四个元素 a，b，c 和 d，使得 a + b = c + d](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
+[在数组中找到四个元素`a, b, c, d`，使得`a + b = c + d`](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
 
 本文由 [DANISH_RAZA](https://www.facebook.com/danish.raza.98096721) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
