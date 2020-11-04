@@ -1,8 +1,8 @@
-# 在数组中找到四个元素 a，b，c 和 d，使得 a + b = c + d
+# 在数组中找到四个元素`a, b, c, d`，使得`a + b = c + d`
 
 > 原文：[https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
 
-给定一个由不同整数组成的数组，请查找是否有两对（a，b）和（c，d），使得 a + b = c + d，而 a，b，c 和 d 是不同的元素。 如果有多个答案，请打印其中的任何一个。
+给定一个由不同整数组成的数组，请查找是否有两对`(a, b)`和`(c, d)`，使得`a + b = c + d`，而`a, b, c, d`是不同的元素。 如果有多个答案，请打印其中的任何一个。
 
 例：
 
@@ -22,9 +22,9 @@ Output:  No pairs found
 
 预期时间复杂度：`O(N ^ 2)`
 
-**简单解决方案**是运行四个循环以生成所有可能的四倍数组元素。 对于每四个（a，b，c，d），检查（a + b）=（c + d）。 该解决方案的时间复杂度为`O(N ^ 4)`。
+**简单解决方案**是运行四个循环以生成所有可能的四倍数组元素。 对于每四个`(a, b, c, d)`，检查`a + b = c + d`。 该解决方案的时间复杂度为`O(N ^ 4)`。
 
-有效的**解决方案**可以在`O(N ^ 2)`时间内解决此问题。 这个想法是使用[哈希](http://geeksquiz.com/hashing-set-1-introduction/)。 在哈希表中，我们将 sum 作为键，将 pair 作为值。
+有效的**解决方案**可以在`O(N ^ 2)`时间内解决此问题。 这个想法是使用[哈希](http://geeksquiz.com/hashing-set-1-introduction/)。 在哈希表中，我们将总和作为键，将偶对作为值。
 
 ```
 Loop i = 0 to n-1 :
@@ -39,9 +39,9 @@ EndLoop;
 
 ```
 
-以下是上述想法的实现。 在下面的实现中，使用 map 代替哈希。 映射插入和搜索的时间复杂度实际上是 O（Log n）而不是`O(1)`。 因此，下面的实现是 O（n <sup>2</sup> Log n）。
+以下是上述想法的实现。 在下面的实现中，使用（有序）映射代替哈希。 映射插入和搜索的时间复杂度实际上是 `O(Log n)`而不是`O(1)`。 因此，下面的实现是`O(n ^ 2 Log n)`。
 
-## C / C++
+## C/C++
 
 ```cpp
 
@@ -307,7 +307,7 @@ S1 is lexicographically smaller than S2 iff
 
 **相关文章**：
 
-[查找满足 ab = cd 的所有对（a，b）和（c，d）对](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
+[查找满足`ab = cd`的所有对`(a, b)`和`(c, d)`对](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 

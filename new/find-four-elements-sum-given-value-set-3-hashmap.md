@@ -1,10 +1,10 @@
-# 找到四个元素的总和为给定值| 组合 3（哈希映射）
+# 找到四个元素的总和为给定值 | 系列 3（哈希映射）
 
 > 原文：[https://www.geeksforgeeks.org/find-four-elements-sum-given-value-set-3-hashmap/](https://www.geeksforgeeks.org/find-four-elements-sum-given-value-set-3-hashmap/)
 
-给定一个整数数组，请检查数组中不同索引处是否存在四个元素的总和等于给定值 k。
+给定一个整数数组，请检查数组中不同索引处是否存在四个元素的总和等于给定值`k`。
 
-例如，如果给定的数组为{1 5 1 0 6 0}且 k = 7，则您的函数应将“是”打印为（1 + 5 + 1 + 0 = 7）。
+例如，如果给定的数组为`{1 5 1 0 6 0}`且`k = 7`，则您的函数应打印`Yes`（`1 + 5 + 1 + 0 = 7`）。
 
 例子：
 
@@ -22,9 +22,9 @@ Output : NO
 
 我们在以下两组中讨论了不同的解决方案。
 
-[找出四个总和为给定值的元素 | 系列 1（n ^ 3 个解）](https://www.geeksforgeeks.org/find-four-numbers-with-sum-equal-to-given-sum/)
+[找出四个总和为给定值的元素 | 系列 1（`O(n ^ 3)`的解）](https://www.geeksforgeeks.org/find-four-numbers-with-sum-equal-to-given-sum/)
 
-[找出四个总和为给定值的元素 | 系列 2（O（n ^ 2Logn）解决方案）](https://www.geeksforgeeks.org/find-four-elements-that-sum-to-a-given-value-set-2/)
+[找出四个总和为给定值的元素 | 系列 2（`O(n ^ 2 Logn)`解决方案）](https://www.geeksforgeeks.org/find-four-elements-that-sum-to-a-given-value-set-2/)
 
 在这篇文章中，讨论了一种优化的解决方案，该解决方案平均可以在`O(N ^ 2)`中工作。
 

@@ -26,7 +26,7 @@ Output: Following pairs have symmetric pairs
 
 以下是该想法的实现。
 
-## C / C++
+## C/C++
 
 ```cpp
 
