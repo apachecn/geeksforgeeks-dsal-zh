@@ -1,10 +1,8 @@
-# 连续整数
+# 连续整数的最大递增子序列
 
 > 原文：[https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/](https://www.geeksforgeeks.org/largest-increasing-subsequence-of-consecutive-integers/)
 
-的最大递增子序列
-
-给定 n 个正整数数组。 我们需要找到连续正整数的最大递增序列。
+给定`n`个正整数数组。 我们需要找到连续正整数的最大递增序列。
 
 **示例**：
 
@@ -23,7 +21,7 @@ Output : Size of LIS = 2
 
 通过使用散列，我们可以找到时间连续性为`O(n)`且具有连续整数的最长递增序列的大小。
 
-我们创建一个哈希表。现在，对于每个元素 arr [i]，我们执行 hash [arr [i]] = hash [arr [i] – 1] +1。因此，对于每个元素，我们知道最长的连续递增子序列结尾 用它。 最后，我们从哈希表中返回最大值。
+我们创建一个哈希表。现在，对于每个元素`arr[i]`，我们执行`hash[arr[i]] = hash[arr[i] – 1] + 1`。因此，对于每个元素，我们知道最长的连续递增子序列结尾 用它。 最后，我们从哈希表中返回最大值。
 
 ## C++
 
