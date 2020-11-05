@@ -1,10 +1,10 @@
-# 哈希| 第 2 组（单独链接）
+# 哈希 | 系列 2（单独链接）
 
 > 原文：[https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)
 
 我们强烈建议您在下面的帖子中提及此内容。
 
-[哈希| 第 1 组（简介）](https://www.geeksforgeeks.org/hashing-set-1-introduction/)
+[哈希 | 系列 1（简介）](https://www.geeksforgeeks.org/hashing-set-1-introduction/)
 
 **什么是碰撞？**
 
@@ -12,7 +12,7 @@
 
 **与大桌子相撞的机会是什么？**
 
-即使我们有大桌子来存储密钥，冲突也很可能发生。 一个重要的发现是[生日悖论](https://www.geeksforgeeks.org/birthday-paradox/)。 只有 23 个人，两个人有相同生日的概率为 50％。
+即使我们有大桌子来存储密钥，冲突也很可能发生。 一个重要的发现是[生日悖论](https://www.geeksforgeeks.org/birthday-paradox/)。 只有 23 个人，两个人有相同生日的概率为 50%。
 
 **如何处理碰撞？**
 
@@ -28,7 +28,7 @@
 
 这个想法是使哈希表的每个单元指向具有相同哈希函数值的记录的链接列表。
 
-让我们将一个简单的哈希函数视为“ **key mod 7** ”，并将密钥序列设为 50、700、76、85、92、73、101。
+让我们将一个简单的哈希函数视为`key mod 7`，并将密钥序列设为 50、700、76、85、92、73、101。
 
 [![hashChaining](img/87b2f4b25bdb1c562607a6c32a013a07.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2015/07/hashChaining1.png)
 

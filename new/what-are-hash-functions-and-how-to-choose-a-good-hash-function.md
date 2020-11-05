@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/](https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/)
 
-**先决条件**：[哈希| 第 1 组（简介）](https://www.geeksforgeeks.org/hashing-set-1-introduction/) 
+**先决条件**：[哈希 | 系列 1（简介）](https://www.geeksforgeeks.org/hashing-set-1-introduction/) 
 
 **什么是哈希函数？**
 

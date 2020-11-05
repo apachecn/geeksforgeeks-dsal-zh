@@ -4,11 +4,11 @@
 
 在[散列](http://www.geeksforgeeks.org/hashing-data-structure/)中，存在一个散列函数，可将键映射到某些值。 但是这些哈希函数可能会导致将两个或更多键映射到相同值的冲突。 **链哈希**避免了冲突。 这个想法是使哈希表的每个单元指向具有相同哈希函数值的记录的链接列表。
 
-让我们创建一个哈希函数，使我们的哈希表具有“ N”个存储桶。
+让我们创建一个哈希函数，使我们的哈希表具有`N`个存储桶。
 
 要将节点插入哈希表，我们需要找到给定键的哈希索引。 并且可以使用哈希函数进行计算。
 
-**示例：hashIndex =键％noOfBuckets**
+示例：`hashIndex = key % noOfBuckets`
 
 **插入**：移至对应于上述计算得出的哈希索引的存储桶，并将新节点插入列表的末尾。
 
@@ -20,7 +20,7 @@
 
 ### 在 Java 中实现哈希的方法
 
-***   借助 [HashTable](https://www.geeksforgeeks.org/java-util-hashtable-class-java/) （哈希的同步实现）
+*   借助[`HashTable`](https://www.geeksforgeeks.org/java-util-hashtable-class-java/)（哈希的同步实现）
 
 ```
 // Java program to demonstrate working of HashTable
@@ -50,7 +50,7 @@ System.out.println(hm);
 
 ```
 
-***   借助 [HashMap](https://www.geeksforgeeks.org/hashmap-treemap-java/) （哈希的非同步更快实现）
+*   借助[`HashMap`](https://www.geeksforgeeks.org/hashmap-treemap-java/)（哈希的非同步更快实现）
 
     ```
     // Java program to create HashMap from an array
@@ -98,7 +98,7 @@ System.out.println(hm);
 
     ```
 
-    ***   借助 [LinkedHashMap](https://www.geeksforgeeks.org/hashmap-treemap-java/) （类似于 HashMap，但保留元素顺序）
+    *   借助[`LinkedHashMap`](https://www.geeksforgeeks.org/hashmap-treemap-java/)（类似于`HashMap`，但保留元素顺序）
 
     ```
     // Java program to demonstrate working of LinkedHashMap
@@ -194,7 +194,7 @@ System.out.println(hm);
 
     ```
 
-    *   **借助 [HashSet](https://www.geeksforgeeks.org/hashset-in-java/) （类似于 HashMap，但仅维护密钥，不配对）
+    *   借助[`HashSet`](https://www.geeksforgeeks.org/hashset-in-java/)（类似于`HashMap`，但仅维护密钥，不配对）
 
     ```
     // Java program to demonstrate working of HashSet
@@ -249,7 +249,9 @@ System.out.println(hm);
     South Africa
     India
 
-    ```** *****   借助 [LinkedHashSet](https://www.geeksforgeeks.org/linkedhashset-class-in-java-with-examples/) （类似于 LinkedHashMap，但仅维护密钥，不配对）
+    ```
+    
+    *   借助[`LinkedHashSet`](https://www.geeksforgeeks.org/linkedhashset-class-in-java-with-examples/)（类似于`LinkedHashMap`，但仅维护密钥，不配对）
 
     ```
     // Java program to demonstrate working of LinkedHashSet
@@ -341,9 +343,8 @@ System.out.println(hm);
     B
     C
 
-    ```************ 
+    ```
 
- ****注意读者！ 现在不要停止学习。 通过 [**Java 和 Java Collections 基础课程**](https://practice.geeksforgeeks.org/courses/Java-Collections?vC=1) 以对学生方便的价格掌握所有重要的 Java 和 Collections 概念，并为行业做好准备。
 
 * * *
 

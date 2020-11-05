@@ -1,4 +1,4 @@
-# 多数元素| 第 2 组（哈希）
+# 多数元素 | 系列 2（哈希）
 
 > 原文：[https://www.geeksforgeeks.org/majority-element-set-2-hashing/](https://www.geeksforgeeks.org/majority-element-set-2-hashing/)
 

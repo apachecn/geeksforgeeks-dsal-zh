@@ -1,4 +1,4 @@
-# 两个链表的并集和相交| 第 3 组（哈希）
+# 两个链表的并集和相交 | 系列 3（哈希）
 
 > 原文：[https://www.geeksforgeeks.org/union-intersection-two-linked-lists-set-3-hashing/](https://www.geeksforgeeks.org/union-intersection-two-linked-lists-set-3-hashing/)
 

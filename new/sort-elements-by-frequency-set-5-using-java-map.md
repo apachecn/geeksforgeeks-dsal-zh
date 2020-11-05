@@ -1,4 +1,4 @@
-# 按频率对元素进行排序| 第 5 组（使用 Java Map）
+# 按频率对元素进行排序 | 系列 5（使用 Java Map）
 
 > 原文：[https://www.geeksforgeeks.org/sort-elements-by-frequency-set-5-using-java-map/](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-5-using-java-map/)
 
@@ -30,7 +30,7 @@ Output: 2 2 2 2 1 1 3 3 4 4 5 6 7
 
 [按频率对数组元素进行排序 | 系列 3（使用 STL）](https://www.geeksforgeeks.org/sorting-array-elements-frequency-set-3-using-stl/)
 
-[按频率对元素进行排序| 第 4 组（使用哈希的有效方法）](https://www.geeksforgeeks.org/sort-elements-frequency-set-4-efficient-approach-using-hash/)
+[按频率对元素进行排序 | 系列 4（使用哈希的有效方法）](https://www.geeksforgeeks.org/sort-elements-frequency-set-4-efficient-approach-using-hash/)
 
 **方法**：
 

@@ -1,4 +1,4 @@
-# 按频率对元素进行排序| 第 4 组（使用哈希的有效方法）
+# 按频率对元素进行排序 | 系列 4（使用哈希的有效方法）
 
 > 原文：[https://www.geeksforgeeks.org/sort-elements-frequency-set-4-efficient-approach-using-hash/](https://www.geeksforgeeks.org/sort-elements-frequency-set-4-efficient-approach-using-hash/)
 

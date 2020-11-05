@@ -1,4 +1,4 @@
-# 数据结构概述| 第 2 组（二叉树，BST，堆和哈希）
+# 数据结构概述 | 系列 2（二叉树，BST，堆和哈希）
 
 > 原文：[https://www.geeksforgeeks.org/overview-of-data-structures-set-2-binary-tree-bst-heap-and-hash/](https://www.geeksforgeeks.org/overview-of-data-structures-set-2-binary-tree-bst-heap-and-hash/)
 

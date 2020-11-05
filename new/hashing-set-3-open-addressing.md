@@ -6,25 +6,25 @@
 
 [哈希 | 系列 1（简介）](http://quiz.geeksforgeeks.org/hashing-set-1-introduction/)，
 
-[哈希| 第 2 组（单独链接）](http://quiz.geeksforgeeks.org/hashing-set-2-separate-chaining/)
+[哈希 | 系列 2（单独链接）](http://quiz.geeksforgeeks.org/hashing-set-2-separate-chaining/)
 
 **开放式寻址**，
 
 与单独的链接一样，开放式寻址是一种处理冲突的方法。 在开放式寻址中，所有元素都存储在哈希表本身中。 因此，表的大小在任何时候都必须大于或等于键的总数（请注意，如果需要，我们可以通过复制旧数据来增加表的大小）。
 
-插入（k）：继续探测，直到找到一个空插槽。 找到空插槽后，插入 k。
+`insert(k)`：继续探测，直到找到一个空插槽。 找到空插槽后，插入`k`。
 
-搜索（k）：继续探测，直到插槽的钥匙不等于 k 或到达空插槽为止。
+`search(k)`：继续探测，直到插槽的钥匙不等于`k`或到达空插槽为止。
 
-Delete（k）： ***删除操作很有趣*** 。 如果我们只是删除一个键，则搜索可能会失败。 因此，已删除密钥的插槽特别标记为“已删除”。
+`delete(k)`： **删除操作很有趣**。 如果我们只是删除一个键，则搜索可能会失败。 因此，已删除密钥的插槽特别标记为“已删除”。
 
 插入内容可以在删除的广告位中插入项目，但搜索不会在删除的广告位中停止。
 
 通过以下方式完成打开寻址：
 
-***a）线性探测**：* 在线性探测中，我们线性探测下一个插槽。 例如，两个探针之间的典型间隙也为 1，如以下示例所示。
+a）**线性探测**：在线性探测中，我们线性探测下一个插槽。 例如，两个探针之间的典型间隙也为 1，如以下示例所示。
 
-令 **hash（x）**为使用哈希函数计算的插槽索引， **S** 为表大小。
+令`hash(x)`为使用哈希函数计算的插槽索引，`S`为表大小。
 
 ```
 If slot hash(x) % S is full, then we try (hash(x) + 1) % S
@@ -35,7 +35,7 @@ If (hash(x) + 2) % S is also full, then we try (hash(x) + 3) % S
 
 ```
 
-让我们将一个简单的哈希函数视为“ key mod 7”，并将密钥序列设为 50、700、76、85、92、73、101。
+让我们将一个简单的哈希函数视为`key mod 7`，并将密钥序列设为 50、700、76、85、92、73、101。
 
 [![openAddressing](img/f5adc14136054ed4c92caa705dde91ad.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2015/08/openAddressing1.png)
 
@@ -43,9 +43,9 @@ If (hash(x) + 2) % S is also full, then we try (hash(x) + 3) % S
 
 1.  **主群集**：线性探测的问题之一是主群集，许多连续的元素形成组，并且开始花费时间来寻找空闲插槽或搜索元素。 ***，***
 
-2.  **次要聚类** *****：* 次要聚类不太严重，如果两个记录的初始位置相同，则它们仅具有相同的碰撞链（探针序列）。
+2.  **次要群集**：次要群集不太严重，如果两个记录的初始位置相同，则它们仅具有相同的碰撞链（探针序列）。
 
-***b）二次探测*** 我们在第 i 个迭代中寻找 i <sup>2</sup> '插槽。
+b）**二次探测**我们在第`i`个迭代中寻找`i ^ 2`插槽。
 
 ```
 let hash(x) be the slot index computed using hash function.  
@@ -57,7 +57,7 @@ If (hash(x) + 2*2) % S is also full, then we try (hash(x) + 3*3) % S
 
 ```
 
-**c）** [**双重哈希处理**](https://www.geeksforgeeks.org/double-hashing/) 我们使用另一个哈希函数 hash2（x）并在第 i 个旋转中查找 i * hash2（x）插槽。
+c）[**双重哈希处理**](https://www.geeksforgeeks.org/double-hashing/) 我们使用另一个哈希函数`hash2(x)`并在第`i`个旋转中查找`i * hash2(x)`插槽。
 
 ```
 let hash(x) be the slot index computed using hash function.  
@@ -123,7 +123,7 @@ https://youtu.be/Dk57JonwKNk 
 
 [http://courses.csail.mit.edu/6.006/fall11/lectures/lecture10.pdf](http://courses.csail.mit.edu/6.006/fall11/lectures/lecture10.pdf)
 
-[https://www.cse.cuhk.edu。 hk / irwin.king / _media / teaching / csc2100b / tu6.pdf](https://www.cse.cuhk.edu.hk/irwin.king/_media/teaching/csc2100b/tu6.pdf)
+[https://www.cse.cuhk.edu.hk/irwin.king/_media/teaching/csc2100b/tu6.pdf](https://www.cse.cuhk.edu.hk/irwin.king/_media/teaching/csc2100b/tu6.pdf)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

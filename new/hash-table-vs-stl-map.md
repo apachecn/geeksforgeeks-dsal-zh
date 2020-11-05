@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/hash-table-vs-stl-map/](https://www.geeksforgeeks.org/hash-table-vs-stl-map/)
 
-本文重点讨论：比较和对比 Hash 表和 STL Map。 哈希表如何实现？ 如果输入数量很少，那么可以使用哪些数据结构选项代替哈希表？
+本文重点讨论：比较和对比哈希表和 STL 映射。 哈希表如何实现？ 如果输入数量很少，那么可以使用哪些数据结构选项代替哈希表？
 
 **哈希表**
 
@@ -28,11 +28,11 @@
 
 [**STL 映射**](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)
 
-容器映射是 C++ 的[标准库中包含的关联容器。 此类的定义位于名称空间 std 的头文件“ map”中。](https://www.geeksforgeeks.org/stack-in-cpp-stl/)
+容器映射是 C++ 的[标准库中包含的关联容器。 此类的定义位于名称空间`std`的`map`头文件中。](https://www.geeksforgeeks.org/stack-in-cpp-stl/)
 
 **STL Map 内部实现**：
 
-它是作为自平衡红黑树实现的。 可能最常见的两种自平衡树是[红黑树](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)和 [AVL 树](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/)。 为了在插入/更新之后平衡树，两种算法都使用旋转的概念，在该概念中，树的节点被旋转以执行重新平衡。 在两种算法中，插入/删除操作均为 O（log n），在红黑树重新平衡旋转的情况下为`O(1)`操作，而对于 AVL，这是 O（log n）操作，因此 RB 树在这方面的重新平衡鼠尾草效率更高，并且是更常用的可能原因之一。
+它是作为自平衡红黑树实现的。 可能最常见的两种自平衡树是[红黑树](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)和 [AVL 树](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/)。 为了在插入/更新之后平衡树，两种算法都使用旋转的概念，在该概念中，树的节点被旋转以执行重新平衡。 在两种算法中，插入/删除操作均为`O(log n)`，在红黑树重新平衡旋转的情况下为`O(1)`操作，而对于 AVL，这是`O(log n)`操作，因此 RB 树在这方面的重新平衡鼠尾草效率更高，并且是更常用的可能原因之一。
 
 **哈希表和 STL 映射**之间的区别
 
@@ -44,13 +44,13 @@
 
 4.  **值顺序**：在 STL 映射中，值按排序顺序存储，而在哈希表中，值不按排序顺序存储
 
-5.  **搜索时间**：对于较小的数据，您可以使用 STL 映射或二叉树（尽管花费 O（log n）时间，但输入的数量可能小到可以忽略该时间），并且对于 数据，哈希表是首选。
+5.  **搜索时间**：对于较小的数据，您可以使用 STL 映射或二叉树（尽管花费`O(log n)`时间，但输入的数量可能小到可以忽略该时间），并且对于 数据，哈希表是首选。
 
 **相关文章**
 
 *   [BST 优于哈希映射](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/)
 
-*   [Java 中 HashMap 和 HashTable 之间的区别](https://www.geeksforgeeks.org/differences-between-hashmap-and-hashtable-in-java/)
+*   [Java 中`HashMap`和`HashTable`之间的区别](https://www.geeksforgeeks.org/differences-between-hashmap-and-hashtable-in-java/)
 
 本文由 **Brahmani Sai** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
