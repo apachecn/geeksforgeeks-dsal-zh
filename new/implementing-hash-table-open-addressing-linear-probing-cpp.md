@@ -1,18 +1,18 @@
-# 在 C++中使用开放式寻址线性探测实现自己的哈希表
+# 在 C++ 中使用开放式寻址线性探测实现自己的哈希表
 
 > 原文：[https://www.geeksforgeeks.org/implementing-hash-table-open-addressing-linear-probing-cpp/](https://www.geeksforgeeks.org/implementing-hash-table-open-addressing-linear-probing-cpp/)
 
-**先决条件–** [散列简介](https://www.geeksforgeeks.org/hashing-set-1-introduction/)和[用 Java 中的单独链接实现我们自己的散列表](https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/)
+**先决条件**：[散列简介](https://www.geeksforgeeks.org/hashing-set-1-introduction/)和[用 Java 中的单独链接实现我们自己的散列表](https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/)
 
 在开放式寻址中，所有元素都存储在哈希表本身中。 因此，表的大小在任何时候都必须大于或等于键的总数（请注意，如果需要，我们可以通过复制旧数据来增加表的大小）。
 
-*   **插入（k）–** 继续探测，直到找到一个空插槽。 找到空插槽后，插入 k。
+*   `insert(k)`：继续探测，直到找到一个空插槽。 找到空插槽后，插入`k`。
 
-*   **搜索（k）–** 继续探测，直到插槽的密钥不等于 k 或到达空插槽为止。
+*   `search(k)`：继续探测，直到插槽的密钥不等于`k`或到达空插槽为止。
 
-*   **Delete（k）–** 删除操作很有趣。 如果我们只是删除一个键，则搜索可能会失败。 因此，已删除密钥的插槽特别标记为“已删除”。
+*   `delete(k)`：删除操作很有趣。 如果我们只是删除一个键，则搜索可能会失败。 因此，已删除密钥的插槽特别标记为“已删除”。
 
-在这里，为了标记已删除的节点，我们使用了**虚拟节点**，其键和值为-1。
+在这里，为了标记已删除的节点，我们使用了**虚拟节点**，其键和值为 -1。
 
 插入可以在已删除的广告位中插入项目，但搜索不会在已删除的广告位中停止。
 
