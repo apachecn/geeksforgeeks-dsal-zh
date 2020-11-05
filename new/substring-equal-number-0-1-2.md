@@ -34,7 +34,7 @@ z[i] – t[i] = z[j-1] – t[j-1]
 
 ```
 
-可以在循环执行字符串时跟踪上述关系，在每个索引处，我们将计算该差异对，并检查该差异对之前发生了多少次，并将该计数添加到结果中以保持跟踪 在下面的代码中，我们使用了[映射](http://quiz.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 考虑到[映射操作](http://quiz.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)（例如搜索和插入）花费 O（Log n）时间这一事实，该解决方案的总时间复杂度为`O(n Log n)`。
+可以在循环执行字符串时跟踪上述关系，在每个索引处，我们将计算该差异对，并检查该差异对之前发生了多少次，并将该计数添加到结果中以保持跟踪 在下面的代码中，我们使用了[映射](http://quiz.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 考虑到[映射操作](http://quiz.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)（例如搜索和插入）花费`O(log n)`时间这一事实，该解决方案的总时间复杂度为`O(n Log n)`。
 
 ## C++
 

@@ -27,7 +27,7 @@
 
 *   将两个指针 front 和 end 初始化为 0，然后将一个**访问数组**标记为已访问索引。
 
-*   我们需要一个[设置](http://www.geeksforgeeks.org/set-in-cpp-stl/)容器，以便我们可以在 O（log N）中任何范围前端的第二大元素和一个 [unordered_map](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 来计算数组中元素的频率 决定从集合中删除。
+*   我们需要一个[设置](http://www.geeksforgeeks.org/set-in-cpp-stl/)容器，以便我们可以在`O(log n)`中任何范围前端的第二大元素和一个 [unordered_map](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 来计算数组中元素的频率 决定从集合中删除。
 
 *   最初检查是否存在大于 K 的元素，如果不存在这样的元素，则子数组是不可能的。
 

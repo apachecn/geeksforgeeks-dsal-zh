@@ -20,7 +20,7 @@
 
 2.  将所有数字除以获得的 gcd。
 
-3.  使用质数分解的多重查询方法，找到 O（log N）中每个数字的质数分解。 该方法可以在此处读取[。](https://www.geeksforgeeks.org/prime-factorization-using-sieve-olog-n-multiple-queries/)
+3.  使用质数分解的多重查询方法，找到`O(log n)`中每个数字的质数分解。 该方法可以在此处读取[。](https://www.geeksforgeeks.org/prime-factorization-using-sieve-olog-n-multiple-queries/)
 
 4.  将所有素因子插入集合中，以删除使用此方法获得的重复项。
 
