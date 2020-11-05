@@ -2,19 +2,27 @@
 
 > 原文：[https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray-having-unique-elements/)
 
-给定 **N** 个正整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是在所有具有唯一元素的子数组中找到具有最大和的子数组并打印其和。
+给定`N`个正整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是在所有具有唯一元素的子数组中找到具有最大和的子数组并打印其和。
 
-> **输入** arr [] = {1、2、3、3、4、5、2、1}
+> **输入** `arr[] = {1, 2, 3, 3, 4, 5, 2, 1}`
+>
 > **输出**：15
-> **说明：[HTG7
-> 具有最大和且具有不同元素的子数组是{3，4，5，2，1，1}。
-> 因此，总和为= 3 + 4 + 5 + 2 + 1 = 15**
-> 
-> **输入**：arr [] = {1,2,3,1,5}
-> **输出**：11
+>
 > **说明**：
-> 具有最大和且具有不同元素的子数组为{2，3，1，5}。
-> 因此，总和为= 2 + 3 + 1 + 5 = 11。
+>
+> 具有最大和且具有不同元素的子数组是`{3, 4, 5, 2, 1, 1}`。
+>
+> 因此，总和为`3 + 4 + 5 + 2 + 1 = 15`
+> 
+> **输入**：`arr[] = {1, 2, 3, 1, 5}`
+>
+> **输出**：11
+>
+> **说明**：
+>
+> 具有最大和且具有不同元素的子数组为`{2, 3, 1, 5}`。
+>
+> 因此，总和为`2 + 3 + 1 + 5 = 11`。
 
 **朴素的方法**：解决该问题的最简单方法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并为每个子数组检查其所有元素是否唯一。 在这些子数组中找到最大和并打印出来。
 

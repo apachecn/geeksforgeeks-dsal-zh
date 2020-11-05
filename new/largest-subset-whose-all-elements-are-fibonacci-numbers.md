@@ -4,7 +4,7 @@
 
 给定一个具有正数的数组，任务是我们从数组中找到包含[斐波纳契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)的元素的最大子集。
 
-在 Facebook 问
+在 Facebook 询问。
 
 **示例**：
 
