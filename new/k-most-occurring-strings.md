@@ -1,29 +1,41 @@
-# K 个出现次数最多的字符串
+# `K`个出现次数最多的字符串
 
 > 原文：[https://www.geeksforgeeks.org/k-most-occurring-strings/](https://www.geeksforgeeks.org/k-most-occurring-strings/)
 
-给定 **N** 个字符串的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 和一个整数 **K** ，任务是打印 **K** 在 **arr []** 中出现次数最多的字符串。 如果两个或两个以上的字符串具有相同的频率，请打印[依词典顺序最小的字符串](https://www.geeksforgeeks.org/lexicographically-smallest-string-obtained-concatenating-array/)。
+给定`N`个字符串的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`和一个整数`K`，任务是打印`K`在`arr[]`中出现次数最多的字符串。 如果两个或两个以上的字符串具有相同的频率，请打印[词典序最小的字符串](https://www.geeksforgeeks.org/lexicographically-smallest-string-obtained-concatenating-array/)。
 
-**注意**：**K** 的值始终小于或等于数组中不同元素的数量。
+**注意**：`K`的值始终小于或等于数组中不同元素的数量。
 
 **示例**：
 
-> **输入**：str [] = {“极客”，“ geeksforgeeks”，“极客”，“文章”}，K = 1
-> **输出**：“极客”
+> **输入**：`str[] = {"geeks", "geeksforgeeks", "geeks", "article"}, K = 1 `
+>
+> **输出**：`"geeks"`
+>
 > **解释**：
-> “怪胎” – > 2
-> “ geeksforgeeks” – > 1
-> “文章” – > 1
-> 因此，出现次数最多的字符串 是“怪胎”
+>
+> ```
+> "geeks" –> 2 
+> "geeksforgeeks" –> 1 
+> "article" –> 1 
+> ```
 > 
-> **输入**：str [] = {“汽车”，“公共汽车”，“汽车”，“自行车”，“汽车”，“公共汽车”，“自行车”，“自行车”}}，K = 2 [
-> **输出**：“汽车”，“公共汽车”
+> 因此，出现次数最多的字符串是`"geeks"`。
+> 
+> **输入**：`str[] = {"car", "bus", "car", "bike", "car", "bus", "bike", "cycle"}, K = 2` 
+>
+> **输出**：`"car", "bus"`
+>
 > **说明**：
-> “汽车” – > 3
-> “公共汽车” – > 2
-> “自行车” – > 2
-> “循环” – > 1
-> 字符串“ car”的频率最高，字符串“ bus”和“ bike”的频率均次高，但字符串“ 总线”在字典上很小，因为它的长度较短。
+> 
+> ```
+> "car" –> 3 
+> "bus" –> 2 
+> "bike" –> 2 
+> "cycle" –> 1 
+> ```
+>
+> 字符串`"car"`的频率最高，字符串`"bus"`和`"bike"`的频率均次高，但字符串`"bus"`在字典上很小，因为它的长度较短。
 
 **方法**：
 
@@ -33,9 +45,9 @@
 
 3.  频率相等的字符串按字母顺序优先，即**的字母顺序更高的字符串具有更高的优先级**。
 
-4.  从 HashMap 中删除顶部的 **N – K** 个键值对。 这样，容器将以，**最高频率的 **K 键保持相反的顺序。****
+4.  从`HashMap`中删除顶部的`N – K`个键值对。 这样，容器将以，**最高频率的 `K`个键保持相反的顺序**。
 
-5.  打印存储在 HashMap 中的字符串。
+5.  打印存储在`HashMap`中的字符串。
 
 下面是上述方法的实现：
 
@@ -145,9 +157,9 @@ bus
 
 ```
 
-**时间复杂度**：*O（N * log <sub>2</sub> N）*
+**时间复杂度**：`O（N * log2(N))`
 
-**辅助空间**：*`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

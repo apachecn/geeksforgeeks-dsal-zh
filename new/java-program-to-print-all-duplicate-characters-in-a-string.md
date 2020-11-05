@@ -6,22 +6,30 @@
 
 **示例**：
 
-> **输入**：str =“ geeksforgeeks”
+> **输入**：`str = "geeksforgeeks"`
+>
 > **输出**：
-> s：2
-> e：4
-> g：2
-> k：2
+>
+> ```
+> s: 2
+> e: 4
+> g: 2
+> k: 2
+> ```
 > 
-> **输入**：str =“ java”
+> **输入**：`str = "java"`
+>
 > **输出**：
-> a：2
+>
+> ```
+> a: 2
+> ```
 
-**方法**：的想法是使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 进行[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
+**方法**：想法是使用[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)进行[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
 
-*   创建类型为 **{char，int}** 的 hashMap。
+*   创建类型为`{char, int}`的`hashMap`。
 
-*   遍历字符串，检查 **hashMap** 是否已包含遍历的字符。
+*   遍历字符串，检查`hashMap`是否已包含遍历的字符。
 
 *   如果存在，则增加计数或在频率为 1 的哈希映射中插入字符。
 

@@ -1,8 +1,8 @@
-# 使用 MultiMaps 联接表
+# 使用`MultiMap`连接表
 
 > 原文：[https://www.geeksforgeeks.org/joining-tables-using-multimaps/](https://www.geeksforgeeks.org/joining-tables-using-multimaps/)
 
-可以使用嵌套的[循环](https://www.geeksforgeeks.org/loops-in-c-and-cpp/)将两个不同的表连接到它们的匹配列上，但是更有效和可扩展的方法是使用[多图](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/)。 我们的想法是从我们要联接到包含它的所有行的每个列值中映射 [](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) ，以从两个表中的一个表生成一个多图。
+可以使用嵌套的[循环](https://www.geeksforgeeks.org/loops-in-c-and-cpp/)将两个不同的表连接到它们的匹配列上，但是更有效和可扩展的方法是使用[多图](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/)。 我们的想法是从我们要连接到包含它的所有行的每个列值中映射 [](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) ，以从两个表中的一个表生成一个多图。
 
 生成的多图必须基于哈希。 [散列](http://www.geeksforgeeks.org/hashing-data-structure/)本质上是一种将大元素转换为代表相同元素的小元素的技术。 因此，为较小的表生成多图，从而减少其生成时间和内存大小。
 
@@ -14,9 +14,9 @@
 
 *   创建两个表。
 
-*   现在，获得两个表中列的 **ID** 。
+*   现在，获得两个表中列的 **ID**。
 
-*   然后创建并实现一个[多重映射](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/)以映射到表 B 的各个行。
+*   然后创建并实现一个[多重映射](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/)以映射到表`B`的各个行。
 
 *   完成上述步骤后，打印结果。
 

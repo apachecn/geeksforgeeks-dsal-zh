@@ -1,29 +1,34 @@
-# 给定字符串
+# 给定字符串中第`K`个最常见的字符
 
 > 原文：[https://www.geeksforgeeks.org/kth-most-frequent-character-in-a-given-string/](https://www.geeksforgeeks.org/kth-most-frequent-character-in-a-given-string/)
 
-中第 K 个最常见的字符
-
-给定字符串 **str** 和整数 **K** ，任务是找到字符串中第 K 个最频繁出现的字符。 如果有多个字符可以解释为第 K 个最常见的字符，则打印其中的任何一个。
+给定字符串`str`和整数`K`，任务是找到字符串中第`K`个最频繁出现的字符。 如果有多个字符可以解释为第`K`个最常见的字符，则打印其中的任何一个。
 
 **示例**：
 
-> **输入**：str =“ GeeksforGeeks”，K = 3
-> **输出**：f
+> **输入**：`str = "GeeksforGeeks", K = 3`
+>
+> **输出**：`f`
+>
 > **说明**：
-> K = 3，此处为'e '出现 4 次
-> &'g'，'k'，'s'出现 2 次
-> &'o'，'f'，'r'出现 1 次。
-> 来自“ o”（或）“ f”（或“ r”）的任何输出都是正确的。
+>
+> `K = 3`，此处`e`出现 4 次
+>
+> `'g', 'k', 's'`出现 2 次
+>
+> `'o', 'f', 'r'`出现 1 次。
+>
+> 来自`o`（或）`f`（或`r`）的任何输出都是正确的。
 > 
-> **输入**：str =“毛滴虫病”，K = 2
-> **输出**：l
+> **输入**：`str = "trichotillomania", K = 2`
+>
+> **输出**：`l`
 
 **方法**
 
 *   这个想法是在 [Hashmap](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 中使用字符作为键，并将它们的[出现存储在字符串](https://www.geeksforgeeks.org/program-count-occurrence-given-character-string/)中。
 
-*   [对哈希映射](https://www.geeksforgeeks.org/sorting-hashmap-according-key-value-java/)排序并找到第 K 个字符。
+*   [对哈希映射](https://www.geeksforgeeks.org/sorting-hashmap-according-key-value-java/)排序并找到第`K`个字符。
 
 下面是上述方法的实现。
 
@@ -93,9 +98,9 @@ r
 
 ```
 
-**时间复杂度**：*`O(NlogN)`*请注意，这是时间复杂度的上限。 如果我们认为字母大小为常数（例如小写英文字母大小为 26），则可以说时间复杂度为`O(n)`。 矢量大小永远不会超过字母大小。
+**时间复杂度**：`O(NlogN)`请注意，这是时间复杂度的上限。 如果我们认为字母大小为常数（例如小写英文字母大小为 26），则可以说时间复杂度为`O(n)`。 矢量大小永远不会超过字母大小。
 
-**辅助空间**：*`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

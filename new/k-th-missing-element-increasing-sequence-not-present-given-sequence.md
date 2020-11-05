@@ -1,8 +1,8 @@
-# 以递增顺序排列的第 k 个丢失元素，在给定序列中不存在
+# 以递增顺序排列的第`k`个丢失元素，在给定序列中不存在
 
 > 原文：[https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/](https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/)
 
-给定两个序列，一个是递增序列 **a []** ，另一个是正常序列 **b []** ，在递增序列中找到第 K 个缺失元素，该元素在给定序列中不存在 顺序。 如果没有第 k 个缺失元素，则输出-1
+给定两个序列，一个是递增序列`a[]`，另一个是正常序列`b[]`，在递增序列中找到第`K`个缺失元素，该元素在给定序列中不存在 顺序。 如果没有第`k`个缺失元素，则输出 -1。
 
 **示例**：
 
@@ -17,17 +17,17 @@ The 3rd missing number is 14.
 
 ```
 
-**n1** 递增序列 a []上的元素数。
+`n1`为递增序列`a[]`上的元素数。
 
-**n2** 给定序列 b []中的元素数。
+`n2`为给定序列`b[]`中的元素数。
 
-**朴素的方法**会针对递增序列中的每个元素进行迭代，并检查它是否存在于给定序列中，并保留不存在元素的计数器，并打印第 k 个不存在元素 。 这将不够高效，因为它有两个嵌套的 for 循环，这些循环将占用 O（n2）。
+**朴素的方法**会针对递增序列中的每个元素进行迭代，并检查它是否存在于给定序列中，并保留不存在元素的计数器，并打印第`k`个不存在元素 。 这将不够高效，因为它有两个嵌套的`for`循环，这些循环将占用`O(n2)`。
 
-时间复杂度：O（n1 * n2）
+时间复杂度：`O(n1 * n2)`
 
 辅助空间：`O(1)`
 
-**有效方法**是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)。 我们将给定序列的所有元素存储在哈希表中。 然后，我们迭代增加顺序的所有元素。 对于每个元素，我们都在哈希表中对其进行搜索。 如果元素存在于非哈希表中，则我们增加缺少元素的数量。 如果 count 变为 k，则返回缺少的元素。
+**有效方法**是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)。 我们将给定序列的所有元素存储在哈希表中。 然后，我们迭代增加顺序的所有元素。 对于每个元素，我们都在哈希表中对其进行搜索。 如果元素存在于非哈希表中，则我们增加缺少元素的数量。 如果`count`变为`k`，则返回缺少的元素。
 
 下面是上述方法的实现
 
@@ -227,9 +227,9 @@ public static void Main(String[] args) 
 
 ```
 
-**时间复杂度**：O（n1 + n2）
+**时间复杂度**：`O(n1 + n2)`
 
-**辅助空间**：O（n2）
+**辅助空间**：`O(n2)`
 
 本文由 [**Raja Vikramaditya**](https://www.facebook.com/raja.vikramaditya.7) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
