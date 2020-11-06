@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/](https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/)
 
-给定由 **N** 个正整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是最大化数组元素的总和，以使数组的第一个元素为 **1** ，执行以下操作后，数组相邻元素之间的差最大为 **1** ：
+给定由`N`个正整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是最大化数组元素的总和，以使数组的第一个元素为 **1**，执行以下操作后，数组相邻元素之间的差最大为 **1**：
 
 *   以任何方式重新排列数组元素。
 
@@ -10,39 +10,45 @@
 
 **示例**：
 
-> **输入**：arr [] = {3，5，1}
+> **输入**：`arr[] = {3, 5, 1}`
+>
 > **输出**：6
+>
 > **说明**：
-> 一种可能的安排是{ 1，2，3}具有最大可能的和 6。
+>
+> 一种可能的排列`{1, 2, 3}`具有最大可能的和 6。
 > 
-> **输入**：arr [] = {1、2、2、2、3、4、5}
+> **输入**：`arr[] = {1, 2, 2, 2, 3, 4, 5}`
+>
 > **输出**：19
+>
 > **说明**：
-> 一种可能的安排是{1、2、2、2、3、4、5}，其最大和为 19。
+>
+> 一种可能的安排是`{1, 2, 2, 2, 3, 4, 5}`，其最大和为 19。
 
 **朴素的方法**：最简单的方法是[对给定的数组进行排序](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)，然后遍历已排序的数组并减少不满足给定条件的元素。
 
-**时间复杂度**：`O(N * log N)`，其中 N 是给定数组的大小。
+**时间复杂度**：`O(N * log N)`，其中`N`是给定数组的大小。
 
 **辅助空间**：`O(n)`
 
 **高效方法**：的想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)概念来存储给定数组元素的频率。 请按照以下步骤解决问题：
 
-*   创建大小为**（N + 1）**的辅助数组 **count []** ，以存储 **arr [i]** 的频率。
+*   创建大小为`N + 1`的辅助数组`count[]`，以存储`arr[i]`的频率。
 
-*   将频率存储在 **count []** 中，并且如果 **arr [i]** 大于 **N** ，则增加 **count [N]** 。
+*   将频率存储在`count[]`中，并且如果`arr[i]`大于`N`，则增加`count[N]`。
 
-*   将**大小**和**和**初始化为 **0** ，它们分别存储先前选择的整数和最大可能和。
+*   将`size`和`sum`初始化为 **0**，它们分别存储先前选择的整数和最大可能和。
 
-*   [使用变量 **K** 遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/) **count []** 数组，然后执行以下操作：
+*   [使用变量`K`遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`count[]`数组，然后执行以下操作：
 
-    *   每个 **K** 循环循环，直到 **count [K] > 0** 和**大小< K** 。
+    *   对每个`K`执行循环，直到`count[K] > 0`和`size < K`。
 
-    *   将**大小**增大 **1** ，将**和**增大**大小**，将**计数[K]** 减小 **1 [** 内部 while 循环。
+    *   在`while`循环中将`size`增大 **1**，将`sum`增大`size`，将`count[k]`减小 **1**。
 
-    *   在 while 循环结束后，以 **K * count [K]** 递增**和**。
+    *   在`while`循环结束后，以`K * count[K]`递增`sum`。
 
-*   完成上述步骤后，将**和**的值打印为最大可能值。
+*   完成上述步骤后，将`sum`的值打印为最大可能值。
 
 下面是上述方法的实现：
 
@@ -311,7 +317,7 @@ public static void Main()
 
 ```
 
-**时间复杂度**：`O(n)`，其中 N 是给定数组的大小。
+**时间复杂度**：`O(n)`，其中`N`是给定数组的大小。
 
 **辅助空间**：`O(n)`
 
