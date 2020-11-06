@@ -6,13 +6,18 @@
 
 **示例**：
 
-> **输入**：A =“ abcdefababaef”，B =“ abf”
+> **输入**：`A = "abcdefababaef", B = "abf"`
+>
 > **输出**：5
+>
 > **说明**：
-> A 的最小子串 B 作为子序列是 abcdef。
+>
+> `A`的最小子串`B`作为子序列是`abcdef`。
+>
 > 因此，所需长度为 5。
 > 
-> **输入**：A =“ abcdefababaef”，B =“ aef”
+> **输入**：`A = "abcdefababaef", B = "aef"`
+>
 > **输出**：3
 
 **方法**：请按照以下步骤解决问题：
