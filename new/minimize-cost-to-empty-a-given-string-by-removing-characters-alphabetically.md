@@ -2,22 +2,32 @@
 
 > 原文：[https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/](https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/)
 
-给定字符串 **str** ，任务是最小化以[字母顺序](https://www.geeksforgeeks.org/check-if-the-characters-of-a-given-string-are-in-alphabetical-order/)从字符串中删除所有字符的总成本。
+给定字符串`str`，任务是最小化以[字母顺序](https://www.geeksforgeeks.org/check-if-the-characters-of-a-given-string-are-in-alphabetical-order/)从字符串中删除所有字符的总成本。
 
-> 从字符串中删除第<sup>个第</sup>个索引处的任何字符的成本为 **i** 。 索引基于 1。
+> 从字符串中删除第`i`个索引处的任何字符的成本为`i`。 索引基于 1。
 
 **示例**：
 
-> **输入**：str =“ abcab”
+> **输入**：`str = "abcab"`
+>
 > **输出**：8
+>
 > **说明**：
-> 删除索引 1 的第一个字符'a'， str []变为“ bcab”，
-> 然后删除索引为 3 的 char'a'，str []变为“ bcb”。
-> 在删除索引为 1 的 char'b'之后，str []变为“ cb ”，
-> 然后删除索引为 2 的 char'b'，str []变为“ c”，
-> 最后，删除 char'c'。
-> 总分= 1 + 3 +1 + 2 + 1 =8。
-> **输入**：str =“ def”
+>
+> 删除索引 1 的第一个字符`a`， `str[]`变为`"bcab"`，
+>
+> 然后删除索引为 3 的字符`a`，`str[]`变为`"bcb"`。
+>
+> 在删除索引为 1 的字符`b`之后，`str[]`变为`"cb"`，
+>
+> 然后删除索引为 2 的字符`b`，`str[]`变为`"c"`，
+>
+> 最后，删除字符`c`。
+>
+> 总分为`1 + 3 + 1 + 2 + 1 = 8`。
+>
+> **输入**：`str = "def"`
+>
 > **输出**：3
 
 **朴素的方法**：最简单的方法是在每一步中删除字符串中具有较小索引的最小字符，并继续将成本添加到总成本中。 执行此操作后，打印最终成本。
@@ -305,7 +315,7 @@ public static void Main()
 
 **时间复杂度**：`O(n)`
 
-**辅助空间**：O（26）
+**辅助空间**：`O(26)`
 
 
 
