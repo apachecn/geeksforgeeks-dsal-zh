@@ -2,24 +2,36 @@
 
 > 原文：[https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/](https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/)
 
-给定字符串 **S** ，任务是找到具有最大可能长度的字符串 **S** 的前缀，以使前缀中每个字符的频率最多为 S 中的字符数 以最小的频率。
+给定字符串`S`，任务是找到具有最大可能长度的字符串`S`的前缀，以使前缀中每个字符的频率最多为`S`中的字符数 以最小的频率。
 
 **示例**：
 
-> **输入**：S ='aabcdaab'
-> **输出**：aabcd
+> **输入**：`S = 'aabcdaab'`
+>
+> **输出**：`aabcd`
+>
 > **说明**：
-> 给定字符串中字符的频率–
-> {a：4，b：2，c：1，d：1}
+>
+> 给定字符串中字符的频率：
+>
+> `{a: 4, b: 2, c: 1, d: 1}`
+>
 > 最小频率为 1，最小频率的计数为 2。
+>
 > 因此前缀中每个字符的频率最多为 2。
 > 
-> **输入**：S ='aaabc'
-> **输出**：aa
+> **输入**：`S = 'aaabc'`
+>
+> **输出**：`aa`
+>
 > **说明**：
-> 给定字符串中字符的频率–
-> {a：3，b：1，c：1}。
+>
+> 给定字符串中字符的频率：
+>
+> `{a: 3, b: 1, c: 1}`
+>
 > 最小频率为 1，最小频率计数为 2。
+>
 > 因此前缀中每个字符的频率最多为 2。
 
 **方法**：

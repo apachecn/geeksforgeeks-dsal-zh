@@ -1,42 +1,42 @@
-# 删除 K 个字符后的最大非重复字符数
+# 删除`K`个字符后的最大非重复字符数
 
 > 原文：[https://www.geeksforgeeks.org/maximum-non-repeating-characters-after-removing-k-characters/](https://www.geeksforgeeks.org/maximum-non-repeating-characters-after-removing-k-characters/)
 
-给定一个字符串 **S** ，其中包含长度为 **N** 的小写英语字母和一个整数 **K** ，使得 **K≤N** 。 任务是从字符串中删除 **K** 个字符后，找到最大数目的非重复字符。
+给定一个字符串`S`，其中包含长度为`N`的小写英语字母和一个整数`K`，使得`K ≤ N`。 任务是从字符串中删除`K`个字符后，找到最大数目的非重复字符。
 
 **示例**：
 
-> **输入**：S =“ geeksforgeeks”，K = 3
+> **输入**：`S = "geeksforgeeks", K = 3`
 > **输出**：6
 > **说明**：
-> 删除每个 g 出现 1 次， k 和 s，因此最终字符串为“ geeksforee”，而 6 个不同的元素为 **g，k，s，f，o 和 r**
+> 删除每个`g`出现 1 次，`k`和`s`，因此最终字符串为`"geeksforee`，而 6 个不同的元素为`g, k, s, f, o, r`
 > 
-> **输入**：S =“ aabbccddeeffgghh”，k = 1
+> **输入**：`S = "aabbccddeeffgghh", k = 1`
 > **输出**：1
 > **说明**：
 > 删除 1 个出现的字符 只会有一个不会重复的字符。
 
-**朴素的方法**：朴素的想法是删除给定字符串中所有可能的 **K** 个字符，然后在所有形成的字符串中找到非重复字符。 打印所有非重复字符中的最大值。
+**朴素的方法**：朴素的想法是删除给定字符串中所有可能的`K`个字符，然后在所有形成的字符串中找到非重复字符。 打印所有非重复字符中的最大值。
 
-**时间复杂度**：O（N！），其中 N 是给定字符串的长度。
+**时间复杂度**：`O(N!)`，其中`N`是给定字符串的长度。
 
-**辅助空间**：O（N-K）
+**辅助空间**：`O(N - K)`
 
 **有效方法**：为了优化上述方法，
 
-> 这个想法是按照频率的递增顺序删除 **K** [个字符，该频率至少为 2，以获得最大非重复字符数。](https://www.geeksforgeeks.org/sort-a-string-according-to-the-frequency-of-characters/)
+> [这个想法是按照频率的递增顺序删除`K`个字符，该频率至少为 2，以获得最大非重复字符数](https://www.geeksforgeeks.org/sort-a-string-according-to-the-frequency-of-characters/)。
 
 步骤如下：
 
 1.  创建一个[哈希表](https://www.geeksforgeeks.org/hashing-data-structure/)至[，以存储每个元素](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的频率。
 
-2.  将每个元素的[频率插入向量](https://www.geeksforgeeks.org/program-to-find-frequency-of-each-element-in-a-vector-using-map-in-c/) **V** 和[中，以向量](https://www.geeksforgeeks.org/sorting-a-vector-in-c/)升序对向量 **V** 进行排序。
+2.  将每个元素的[频率插入向量](https://www.geeksforgeeks.org/program-to-find-frequency-of-each-element-in-a-vector-using-map-in-c/)`V`和[中，以向量](https://www.geeksforgeeks.org/sorting-a-vector-in-c/)升序对向量`V`进行排序。
 
-3.  对于向量 **V** 的每个元素（例如 **currentElement** ），在 **K** 和 **currentElement – 1** 中找到最小值，并同时降低 **K** 和 **V [i]** 两者中的最小值。
+3.  对于向量`V`的每个元素（例如`currentElement`），在`K`和`currentElement - 1`中找到最小值，并同时降低`K`和`V[i]`两者中的最小值。
 
-4.  重复上述步骤，直到 **K** 不为零。
+4.  重复上述步骤，直到`K`不为零。
 
-5.  向量 **V** 中 **1s** 的计数给出了删除 **K** 个字符后的最大非重复字符数。
+5.  向量`V`中 **1s** 的计数给出了删除`K`个字符后的最大非重复字符数。
 
 下面是上述方法的实现：
 
@@ -404,7 +404,7 @@ public static void Main(String[] args)
 
 **时间复杂度**：`O(n)`
 
-**辅助空间**：O（26）
+**辅助空间**：`O(26)`
 
 
 
