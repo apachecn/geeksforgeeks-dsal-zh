@@ -2,19 +2,26 @@
 
 > 原文：[https://www.geeksforgeeks.org/maximize-length-of-the-string-by-concatenating-characters-from-an-array-of-strings/](https://www.geeksforgeeks.org/maximize-length-of-the-string-by-concatenating-characters-from-an-array-of-strings/)
 
-给定字符串数组 **arr []** ，任务是找到可以通过连接给定数组的子序列而生成的不同字符字符串的最大可能长度。
+给定字符串数组`arr[]`，任务是找到可以通过连接给定数组的子序列而生成的不同字符字符串的最大可能长度。
 
 **示例**：
 
-> **输入**：arr [] = {“ ab”，“ cd”，“ ab”}
+> **输入**：`arr [] = {"ab", "cd", "ab"}`
+>
 > **输出**：4
-> **说明**：]所有可能的组合为{“”，“ ab”，“ cd”，“ abcd”，“ cdab”}。
+>
+> **说明**：所有可能的组合为`{"", "ab", "cd", "abcd", "cdab"}`。
+>
 > 因此，最大长度可能是 4。
 > 
-> **输入**：arr [] = {“ abcdefgh”}
+> **输入**：`arr [] = {"abcdefgh"}`
+>
 > **输出**：8
+>
 > **说明**：
-> 所有可能的组合是：“” ，“ abcdefgh”。
+>
+> 所有可能的组合是：`"" , "abcdefgh"`。
+>
 > 因此，最大长度为 8。
 
 **方法**：的想法是使用[递归](https://www.geeksforgeeks.org/recursion/)。
@@ -321,9 +328,9 @@ public static void Main(string[] args)
 
 ```
 
-**时间复杂度**：O（2 <sup>N</sup> ）
+**时间复杂度**：`O(2 ^ N)`
 
-**辅助空间**：O（N * 2 <sup>N</sup> ）
+**辅助空间**：`O(N * 2 ^ N)`
 
 
 
