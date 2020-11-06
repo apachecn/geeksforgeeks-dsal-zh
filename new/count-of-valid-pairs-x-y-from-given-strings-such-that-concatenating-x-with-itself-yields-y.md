@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/](https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/)
 
-给定`N`个字符串的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`。 假设`X`和`Y`为两个字符串，如果重排，则`X`和`Y`是有效的对。 从`X`与`X`串联（即`X + X`）得到的字符串的结果为`Y`。 任务是计算此类有效对的数量。
+给定`N`个字符串的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`。 假设`X`和`Y`为两个字符串，如果重排，则`X`和`Y`是有效的对。 从`X`与`X`连接（即`X + X`）得到的字符串的结果为`Y`。 任务是计算此类有效对的数量。
 
 **示例**：
 

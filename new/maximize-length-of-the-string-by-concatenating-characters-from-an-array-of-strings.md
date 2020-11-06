@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/maximize-length-of-the-string-by-concatenating-characters-from-an-array-of-strings/](https://www.geeksforgeeks.org/maximize-length-of-the-string-by-concatenating-characters-from-an-array-of-strings/)
 
-给定字符串数组 **arr []** ，任务是找到可以通过串联给定数组的子序列而生成的不同字符字符串的最大可能长度。
+给定字符串数组 **arr []** ，任务是找到可以通过连接给定数组的子序列而生成的不同字符字符串的最大可能长度。
 
 **示例**：
 

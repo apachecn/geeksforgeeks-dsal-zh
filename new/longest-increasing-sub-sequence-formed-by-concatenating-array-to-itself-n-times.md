@@ -1,8 +1,8 @@
-# 通过将数组与其自身串联`N`次而形成的最长递增子序列
+# 通过将数组与其自身连接`N`次而形成的最长递增子序列
 
 > 原文：[https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/](https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/)
 
-给定大小为`N`的数组`arr[]`，任务是找到由`arr`串联`N`次而成的数组中[最长递增子序列](https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/)的长度。
+给定大小为`N`的数组`arr[]`，任务是找到由`arr`连接`N`次而成的数组中[最长递增子序列](https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/)的长度。
 
 **示例**：
 
@@ -12,7 +12,7 @@
 >
 > **解释**：
 >
-> 由串联形成的数组：
+> 由连接形成的数组：
 >
 > `{3, 2, 1, 3, 2, 1, 1, 3, 2, 1}`
 >
@@ -22,7 +22,7 @@
 >
 > **输出**：
 >
-> **说明**：通过串联：
+> **说明**：通过连接：
 >
 > `{3, 1, 4, 3, 1, 4, 3, 1, 4}`
 >

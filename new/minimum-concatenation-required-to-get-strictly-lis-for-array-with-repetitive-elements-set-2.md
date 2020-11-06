@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/](https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/)
 
-给定大小为 n 的**数组 A []** ，其中数组中可以包含重复元素。 我们必须找到序列 A 所需的最小串联，才能严格得到最长增长子序列。 对于数组 A []，我们遵循基于 1 的索引。
+给定大小为 n 的**数组 A []** ，其中数组中可以包含重复元素。 我们必须找到序列 A 所需的最小连接，才能严格得到最长增长子序列。 对于数组 A []，我们遵循基于 1 的索引。
 
 **示例**：
 
@@ -13,7 +13,7 @@
 > ****：A = {1、3、2、1、2}
 > **输出**：2
 > **说明**：
-> 我们可以将 A 两次串联为[1、3、2、1、2、1、1、3、2、1、2 ]，然后输出索引 1、3、7，其子序列为 1-> 2-> 3。
+> 我们可以将 A 两次连接为[1、3、2、1、2、1、1、3、2、1、2 ]，然后输出索引 1、3、7，其子序列为 1-> 2-> 3。
 
 **方法**：
 

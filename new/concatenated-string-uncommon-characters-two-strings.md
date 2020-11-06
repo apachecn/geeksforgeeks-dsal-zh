@@ -1,4 +1,4 @@
-# 包含两个字符串中不常见字符的串联字符串
+# 包含两个字符串中不常见字符的连接字符串
 
 > 原文：[https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/concatenated-string-uncommon-characters-two-strings/)
 

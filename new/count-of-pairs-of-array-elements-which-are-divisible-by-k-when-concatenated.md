@@ -1,8 +1,8 @@
-# 串联时可被`K`整除的数组元素对的数量
+# 连接时可被`K`整除的数组元素对的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/](https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/)
 
-给定数组`arr[]`和整数`K`，任务是对索引对`(i, j)`进行计数，以使`i != j`，并且`a[i]`和`a[j]`的串联可被`K`整除。
+给定数组`arr[]`和整数`K`，任务是对索引对`(i, j)`进行计数，以使`i != j`，并且`a[i]`和`a[j]`的连接可被`K`整除。
 
 **示例**：
 
@@ -30,7 +30,7 @@
 
 *   对于每个`i != j`，通过等式将`arr[i]`和`arr[j]`连接起来：
 
-> `arr[i]`和`arr[j]`的串联`= (arr [i] * 10 ^ lenj) + arr[j]`，其中`lenj`是数字`arr[j]`中的位数
+> `arr[i]`和`arr[j]`的连接`= (arr [i] * 10 ^ lenj) + arr[j]`，其中`lenj`是数字`arr[j]`中的位数
 
 *   通过`K`检查连接数的**除数**。
 
