@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/](https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/)
 
-给定 n 个元素的数组，以便元素可以重复。 我们可以从数组中删除任意数量的元素。 任务是找到要从数组中删除的元素的最小数量，以使其相等。
+给定`n`个元素的数组，以便元素可以重复。 我们可以从数组中删除任意数量的元素。 任务是找到要从数组中删除的元素的最小数量，以使其相等。
 
 **示例**：
 
@@ -18,7 +18,7 @@ We can delete any four elements from array.
 
 ```
 
-在这个问题上，我们需要最小化删除操作。 该方法很简单，我们计算数组中每个元素的频率，然后在**计数数组**中找到最频繁的元素的频率。 将此频率设为 max_freq。 要获取要从数组中删除的最小元质数，请计算 **n – max_freq** ，其中 n 是给定数组中的元质数。
+在这个问题上，我们需要最小化删除操作。 该方法很简单，我们计算数组中每个元素的频率，然后在**计数数组**中找到最频繁的元素的频率。 将此频率设为`max_freq`。 要获取要从数组中删除的最小元质数，请计算`n – max_freq`，其中`n`是给定数组中的元质数。
 
 ## C++
 
