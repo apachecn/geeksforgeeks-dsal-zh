@@ -2,18 +2,23 @@
 
 > 原文：[https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/](https://www.geeksforgeeks.org/longest-sub-array-of-prime-numbers-using-segmented-sieve/)
 
-给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是找到最长的子数组，其中该子数组中的所有数字均为质数。
+给定`N`个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是找到最长的子数组，其中该子数组中的所有数字均为质数。
 
 **示例**：
 
-> **输入**：arr [] = {3，5，2，66，7，11，8}
+> **输入**：`arr[] = {3, 5, 2, 66, 7, 11, 8}`
+>
 > **输出**：3
+>
 > **说明**：
-> 最大连续素数序列为{2，3，5}
+>
+> 最大连续素数序列为`{2, 3, 5}`
 > 
-> **输入**：arr [] = {1,2,11,32,8,9}
+> **输入**：`arr[] = {1,2,11,32,8,9}`
+>
 > **输出**：2
-> **说明**：]最大连续素数序列为{2，11}
+>
+> **说明**：最大连续素数序列为`{2, 11}`
 
 **方法**：
 
@@ -27,13 +32,13 @@
 
 2.  在计算出[范围之间的素数](https://www.geeksforgeeks.org/prime-numbers/)之后。 可以使用 [Kadane 算法](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)来计算具有[质数](https://www.geeksforgeeks.org/prime-numbers/)的最长子数组。 步骤如下：
 
-    *   使用名为 **current_max** 和 **max_so_far** 的两个变量遍历给定数组 **arr []** 。
+    *   使用名为`current_max`和`max_so_far`的两个变量遍历给定数组`arr[]`。
 
-    *   如果找到素数，则增加 **current_max** 并将其与 **max_so_far** 进行比较。
+    *   如果找到素数，则增加`current_max`并将其与`max_so_far`进行比较。
 
-    *   如果 **current_max** 大于 **max_so_far** ，则将 max_so_far 更新为 **current_max** 。
+    *   如果`current_max`大于`max_so_far`，则将`max_so_far`更新为`current_max`。
 
-    *   如果有任何元素不是主要元素，则将 **current_max** 重置为 0。
+    *   如果有任何元素不是主要元素，则将`current_max`重置为 0。
 
 下面是上述方法的实现：
 
@@ -483,9 +488,9 @@ public static void Main(string[] args)
 
 ```
 
-**时间复杂度**：`O(n)`，其中 N 是数组的长度。
+**时间复杂度**：`O(n)`，其中`N`是数组的长度。
 
-**辅助空间**：`O(n)`，其中 N 是数组的长度。
+**辅助空间**：`O(n)`，其中`N`是数组的长度。
 
 
 

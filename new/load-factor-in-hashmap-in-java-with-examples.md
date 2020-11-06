@@ -4,33 +4,33 @@
 
 # Java HashMap 中的负载因子
 
-[HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 是一个类，用于实现 [Java Collections](https://www.geeksforgeeks.org/collections-in-java-2/) 框架的 [Map](https://www.geeksforgeeks.org/map-interface-java-examples/) 接口。 HashMap 的最重要特征是，对于**检索**和**插入**，它具有恒定的时间性能。 决定 HashMap 性能的两个因素是：
+[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)是一个类，用于实现 [Java 集合](https://www.geeksforgeeks.org/collections-in-java-2/)框架的[`Map`](https://www.geeksforgeeks.org/map-interface-java-examples/)接口。 `HashMap`的最重要特征是，对于**检索**和**插入**，它具有恒定的时间性能。 决定`HashMap`性能的两个因素是：
 
 *   初始容量
 
 *   负载系数
 
-在我们解释什么是 HashMap 的负载因子之前，必须了解其结构。
+在我们解释什么是`HashMap`的负载因子之前，必须了解其结构。
 
-HashMap 具有包含键值对的节点，就像 Map 中的节点一样。 HashMap 的存储桶包含节点，一个存储桶可能包含多个节点。 HashMap 的基本结构如下：
+`HashMap`具有包含键值对的节点，就像`Map`中的节点一样。 `HashMap`的存储桶包含节点，一个存储桶可能包含多个节点。 `HashMap`的基本结构如下：
 
 ![](img/4df90025256ed5d6298299813e948569.png)
 
-HashMap 的结构示意图
+`HashMap`的结构示意图
 
 **索引**：它是对键的哈希值和数组大小减一执行按位与运算后获得的整数值。
 
-> 索引=哈希码（键）＆（ArraySize – 1）
+> `index = hashCode(key) & (ArraySize – 1)`
 
-其中 hashcode 是一个预定义函数，该函数返回键的哈希值的整数值，而 ArraySize 是 HashMap 中的存储桶数。
+其中`hashcode`是一个预定义函数，该函数返回键的哈希值的整数值，而`ArraySize`是`HashMap`中的存储桶数。
 
-**存储桶**：它是节点的 LinkedList 结构。
+**存储桶**：它是节点的`LinkedList`结构。
 
-**节点**：它是 HashMap 的基本单位。 它包含键值对和到下一个节点的链接。
+**节点**：它是`HashMap`的基本单位。 它包含键值对和到下一个节点的链接。
 
-声明 HashMap 对象的语法如下：
+声明`HashMap`对象的语法如下：
 
-> HashMap objectName = new HashMap（int initialCapacity，float loadFactor）
+> `HashMap objectName = new HashMap(int initialCapacity, float loadFactor)`
 
 ### 初始容量
 
