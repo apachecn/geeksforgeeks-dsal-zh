@@ -1,10 +1,10 @@
-# 移除 k 个元素后的最大不同元素
+# 移除`K`个元素后的最大不同元素
 
 > 原文：[https://www.geeksforgeeks.org/maximum-distinct-elements-removing-k-elements/](https://www.geeksforgeeks.org/maximum-distinct-elements-removing-k-elements/)
 
-给定包含 **n** 个元素的数组 **arr []** 。 问题是从数组中删除 **k** 个元素后，找到最大数量的非重复元素（非重复）。
+给定包含`n`个元素的数组`arr[]`。 问题是从数组中删除`K`个元素后，找到最大数量的非重复元素（非重复）。
 
-**注意**：1 < = k < = n。
+**注意**：`1 < = k < = n`。
 
 **示例**：
 
@@ -26,11 +26,11 @@ Output : 1
 
 1.  建立频率图
 
-2.  将所有与 freq = 1 的 no 相加得到结果，并将其他推入 min-Heap。
+2.  将所有`freq = 1`的数字相加得到结果，并将其他推入最小堆。
 
-3.  当 K> 0 时，如果将 freq == 1 添加到结果中，则选择顶部以减少 1。
+3.  当`K > 0`时，如果将`freq == 1`添加到结果中，则选择顶部以减少 1。
 
-4.  否则，-k 并将 top-1 推入 min-heap。
+4.  否则，减少`k`并将顶部的那个推入最小堆。
 
 ## C++
 
@@ -203,7 +203,7 @@ Maximum distinct elements = 4
 
 ```
 
-**时间复杂度**：O（k * logd），其中 **d** 是给定数组中不同元素的数量。
+**时间复杂度**：`O(k * logd)`，其中`d`是给定数组中不同元素的数量。
 
 
 
