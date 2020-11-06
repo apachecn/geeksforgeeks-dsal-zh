@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/)
 
-的 K 个最小素数和复合数的 XOR
+的 K 个最小质数和复合数的 XOR
 
 给定 **N** 个非零正整数的数组 **arr []** 和一个整数 **K** ，任务是找到 **K [XOR]。** 最大质数和复合数。
 
@@ -12,7 +12,7 @@
 > **输出**：
 > 原始 XOR = 10
 > 复合 XOR = 8
-> 2，5 和 13 是给定数组中的三个最大素数
+> 2，5 和 13 是给定数组中的三个最大质数
 > ，2 ^ 5 ^ 13 =10。
 > 数组中只有 2 个复合素，即 4 和 12。
 > 和 4 ^ 12 = 8

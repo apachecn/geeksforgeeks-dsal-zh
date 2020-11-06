@@ -47,7 +47,7 @@ are co-prime levels.
 
 **方法**：为了检查某个级别是否为同等级别，
 
-*   首先，我们必须使用 Eratosthenes 筛子[来存储所有素数。](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)
+*   首先，我们必须使用 Eratosthenes 筛子[来存储所有质数。](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)
 
 *   然后，我们必须对二叉树进行[级顺序遍历，并且必须将该级的所有元素保存到向量中。](https://www.geeksforgeeks.org/print-level-order-traversal-line-line/)
 

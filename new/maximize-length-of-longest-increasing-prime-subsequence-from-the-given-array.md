@@ -4,54 +4,59 @@
 
 中最长增加的素子序列的长度
 
-给定大小为 **N** 的数组 **arr []** ，任务是通过执行以下操作来找到[最长增加素数子序列](https://www.geeksforgeeks.org/length-of-longest-prime-subsequence-in-an-array/)的长度。
+给定大小为`N`的数组`arr[]`，任务是通过执行以下操作来找到[最长增加质数子序列](https://www.geeksforgeeks.org/length-of-longest-prime-subsequence-in-an-array/)的长度。
 
-*   如果 **arr [i]** 已经是[质数](https://www.geeksforgeeks.org/prime-numbers/)，则无需更新 **arr [i]** 。
+*   如果`arr[i]`已经是[质数](https://www.geeksforgeeks.org/prime-numbers/)，则无需更新`arr[i]`。
 
-*   将非质数 **arr [i]** 更新为小于 **arr [i]** 的最接近质数。
+*   将非质数`arr[i]`更新为小于`arr[i]`的最接近质数。
 
-*   将非素数 **arr [i]** 更新为大于 **arr [i]** 的最接近素数。
+*   将非质数`arr[i]`更新为大于`arr[i]`的最接近质数。
 
 **示例**：
 
-> **输入**：arr [] = {8，6，9，2，5}
+> **输入**：`arr[] = {8, 6, 9, 2, 5}`
+>
 > **输出**：2
+>
 > **说明**：
-> 可能 数组的重排为：{{7，5，2，5}，{7，7，2，5}，{11，5，2，5}，{1，7，2，5}}。
-> 因此，最长递增的主要子序列的长度= 2。
+>
+> 可能的数组的重排为：`{{7, 5, 2, 5}, {7, 7, 2, 5}, {11, 5, 2, 5}, {1, 7, 2, 5}}`。
+>
+> 因此，最长递增的质数子序列的长度为 2。
 > 
-> **输入**：arr [] = {27，38，43，68，83，12，69，12}
+> **输入**：`arr[] = {27, 38, 43, 68, 83, 12, 69, 12}`
+>
 > **输出**：5
 
-**朴素的方法**：最简单的方法是将给定数组的所有元素更新为最接近的较小素数或最接近的较大素数，然后[生成给定数组的所有可能子序列](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/) 排列并按升序打印由[质数](https://www.geeksforgeeks.org/prime-numbers/)组成的最长子序列的长度。
+**朴素的方法**：最简单的方法是将给定数组的所有元素更新为最接近的较小质数或最接近的较大质数，然后[生成给定数组的所有可能子序列](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/)排列并按升序打印由[质数](https://www.geeksforgeeks.org/prime-numbers/)组成的最长子序列的长度。
 
-**时间复杂度**：O（2 <sup>N</sup> ）
+**时间复杂度**：`O(2 ^ N)`
 
 **辅助空间**：`O(n)`
 
 **高效方法**：的想法是使用[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)方法来优化上述方法。 此问题是[最长增加质数子序列（LIPS）问题](https://www.geeksforgeeks.org/length-of-longest-increasing-prime-subsequence-from-a-given-array/)的基本变体。 请按照以下步骤解决问题。
 
-1.  初始化[二维](https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/)数组，例如 **dp [] []** ，大小为 **N * 2** ，其中 **dp [i] [0]** 通过选择小于 **i <sup>th</sup>** 索引和 **dp []的 **arr [i]** 的最接近素数来存储最长增长素数子序列的长度。 i] [1]** 通过选择大于或等于 **i <sup>th</sup>** 索引处的 arr [i]的最接近质数来存储最长递增质数子序列的长度。 下面是递归关系：
+1.  初始化[二维](https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/)数组，例如`dp[][]`，大小为`N * 2`，其中通过选择小于索引`i`处的`arr[i]`的最接近质数，`dp[i][0]`存储最长增长质数子序列的长度。 通过选择大于或等于索引`i`处的`arr[i]`的最接近质数，`dp[i][1]`存储最长递增质数子序列的长度。 下面是递归关系：
 
-    > *   如果最接近较小的素数与 arr [j] <最接近较小的素数与 arr [i]：dp [i] [0] = 1 + dp [j] [0]
+    > *   如果最接近`arr[j]`的较小的质数小于最接近`arr[i]`的较小的质数：`dp[i][0] = 1 + dp[j][0]`
 
-    > *   如果最接近素数的值大于或等于 arr [j] <最接近素数的值最接近 arr [i]：dp [i] [0] = max（ dp [i] [0]，1 + dp [j] [1]）
+    > *   如果最接近`arr[j]`的较大或相等的质数小于最接近`arr[i]`的较大或相等的质数：`dp[i][0] = max(dp[i][0], 1 + dp[j][1])`
 
-    > *   如果最接近较小的素数与 arr [j] <最接近较小的素数与 arr [i]：dp [i ] [1] = 1 + dp [j] [0]
+    > *   如果最接近`arr[j]`的较小的质数小于最接近`arr[i]`的较小的质数：`dp[i][1] = 1 + dp[j][0]`
 
-    > *   如果最接近或等于素数的素数等于 arr [j] <最接近或等于素数的素数，等于或等于 arr [i]：dp [ i] [1] = max（dp [i] [1]，1 + dp [j] [1]）
+    > *   如果最接近`arr[j]`的较大或相等的质数小于最接近`arr[i]`的较大或相等的质数：`dp[i][1] = max(dp[i][1], 1 + dp[j][1])`
 
     > 
 
-    > 这里 j 的值= 0，1，…，（i-1 ）
+    > 这里`j`的值为`0, 1, …, i - 1`
 
-2.  使用 Eratosthenes 的[筛网有效地计算](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)[素数](https://www.geeksforgeeks.org/prime-numbers/)。
+2.  使用 [Eratosthenes 筛子](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)有效地计算[质数](https://www.geeksforgeeks.org/prime-numbers/)。
 
-3.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/) **arr []** ，对于每个索引 **i** ，将 **arr [i]** 更新为最接近**的质数 ] arr [i]** 。
+3.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`arr[]`，对于每个索引`i`，将`arr[i]`更新为最接近`arr[i]`的质数。
 
-4.  对于每个索引 **i** ，最佳地找到以 **i** 结尾的最长递增质数子序列的长度。
+4.  对于每个索引`i`，最佳地找到以`i`结尾的最长递增质数子序列的长度。
 
-5.  最后，返回最长的素数子序列的长度。
+5.  最后，返回最长的质数子序列的长度。
 
 下面是上述方法的实现：
 
@@ -207,7 +212,7 @@ public class Main {
 
 ```
 
-**时间复杂度**：O（N <sup>2</sup> logN）
+**时间复杂度**：`O(N ^ 2 logN)`
 
 **辅助空间**：`O(n)`
 

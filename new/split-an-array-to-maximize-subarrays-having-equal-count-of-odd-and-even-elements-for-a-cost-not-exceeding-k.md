@@ -1,4 +1,4 @@
-# 分割一个数组以使子数组最大化，而子数组的奇数和偶数元素数量相等，而成本不超过 K
+# 分割一个数组以使子数组最大化，而子数组的奇数和偶数元质数量相等，而成本不超过 K
 
 > 原文：[https://www.geeksforgeeks.org/split-an-array-to-maximize-subarrays-having-equal-count-of-odd-and-even-elements-for-a-cost-not-exceeding-k/](https://www.geeksforgeeks.org/split-an-array-to-maximize-subarrays-having-equal-count-of-odd-and-even-elements-for-a-cost-not-exceeding-k/)
 

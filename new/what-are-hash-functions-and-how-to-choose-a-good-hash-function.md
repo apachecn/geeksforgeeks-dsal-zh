@@ -36,7 +36,7 @@
 
     *   使用除法时，我们通常避免 table_size 之类的某些值，例如 table_size 不应为 **r** 的幂，因为 ***table_size = r ^ p*** ，则 h（key）只是 key 的 p 个最低位。 除非我们知道所有低阶 p 位模式均等可能，否则最好将散列函数设计为依赖于密钥的所有位。
 
-    *   已经发现，当表大小为素数时，使用分割方法可获得最佳结果。 但是，即使 table_size 是质数，也需要附加限制。 如果 **r** 是计算机上可能的字符代码数，并且如果 **table_size** 是质数，则 r％table_size 等于 1，则哈希函数 **h（key）= 键％table_size** 只是键 mod table_size 中字符的二进制表示形式的*和。*
+    *   已经发现，当表大小为质数时，使用分割方法可获得最佳结果。 但是，即使 table_size 是质数，也需要附加限制。 如果 **r** 是计算机上可能的字符代码数，并且如果 **table_size** 是质数，则 r％table_size 等于 1，则哈希函数 **h（key）= 键％table_size** 只是键 mod table_size 中字符的二进制表示形式的*和。*
 
     **示例**：
 
@@ -56,7 +56,7 @@
 
     *   因此，可以看出，通过该哈希函数，许多键可以具有相同的哈希。 这称为[碰撞](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)。
 
-    *   不太接近 2 的幂的素数通常是 table_size 的不错选择。
+    *   不太接近 2 的幂的质数通常是 table_size 的不错选择。
 
 2.  **The multiplication method:**
 

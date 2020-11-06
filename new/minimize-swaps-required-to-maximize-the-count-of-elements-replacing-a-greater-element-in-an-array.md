@@ -1,4 +1,4 @@
-# 最小化交换以最大化替换数组中较大元素的元素数
+# 最小化交换以最大化替换数组中较大元素的元质数
 
 > 原文：[https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/](https://www.geeksforgeeks.org/minimize-swaps-required-to-maximize-the-count-of-elements-replacing-a-greater-element-in-an-array/)
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/](https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/)
 
-给定一个整数 **K** 和一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个整数组成，任务是找到以下子数组的长度： 要删除的最小可能长度，以使其余数组中小于和大于 **K** 的数组元素数相等。
+给定一个整数 **K** 和一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个整数组成，任务是找到以下子数组的长度： 要删除的最小可能长度，以使其余数组中小于和大于 **K** 的数组元质数相等。
 
 **示例**：
 

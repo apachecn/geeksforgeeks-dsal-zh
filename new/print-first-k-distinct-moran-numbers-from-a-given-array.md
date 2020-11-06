@@ -4,7 +4,7 @@
 
 给定[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，其中包含 **N** 个不同的正整数，任务是打印第一个 **K** 个不同的 [Moran 给定数组中的数字](https://www.geeksforgeeks.org/check-whether-given-number-n-is-a-moran-number-or-not/)。
 
-> *数字 **N** 是 **Moran 数**，如果 **N** 除以其位数* [*的总和*](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/) *给出* [***素数***](https://www.geeksforgeeks.org/prime-numbers/) *。*
+> *数字 **N** 是 **Moran 数**，如果 **N** 除以其位数* [*的总和*](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/) *给出* [***质数***](https://www.geeksforgeeks.org/prime-numbers/) *。*
 > ***示例**：18、21、27、42、45*
 
 **示例**：

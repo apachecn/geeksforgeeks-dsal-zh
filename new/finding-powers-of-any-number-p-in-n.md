@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 
-前提条件：[打印所有素数及其幂](http://Print all prime factors and their powers)
+前提条件：[打印所有质数及其幂](http://Print all prime factors and their powers)
 
 给定自然数`N`和`P`，任务是在`N!`的因数中找到`P`的幂。
 

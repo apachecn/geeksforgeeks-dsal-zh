@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/](https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/)
 
-给定表示给定数字素数列表的数组 **arr []** ，任务是找到该数字除数的乘积。
+给定表示给定数字质数列表的数组 **arr []** ，任务是找到该数字除数的乘积。
 
 **注意**：由于产品可以打印得很大，因此答案模版 10 <sup>9</sup> +7。
 
@@ -32,21 +32,21 @@
 
 1.  根据[费马小定理](https://www.geeksforgeeks.org/fermats-little-theorem/)， **a <sup>（m – 1）</sup> = 1（mod m）**可以进一步扩展为 **a <sup>x</sup> = a <sup>x％（m – 1）</sup>（mod m）**
 
-2.  对于素数 **p** 升至幂 **a** ， **f（p <sup>a</sup> ）= p <sup>（a *（a + 1）/ 2））</sup>** 。
+2.  对于质数 **p** 升至幂 **a** ， **f（p <sup>a</sup> ）= p <sup>（a *（a + 1）/ 2））</sup>** 。
 
 3.  因此， **f（a * b）= f（a）<sup>（d（b））</sup> * f（b）<sup>（d（a））</sup>** ， d（a），d（b）分别表示 a 和 b 中的除数。
 
 请按照以下步骤解决问题：
 
-*   在给定列表中找到每个素数的频率（使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) / [Dictionary](https://www.geeksforgeeks.org/python-dictionary/) ）。
+*   在给定列表中找到每个质数的频率（使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) / [Dictionary](https://www.geeksforgeeks.org/python-dictionary/) ）。
 
 *   Using the second observation, for every i <sup>th</sup> prime, calculate: 
 
-    > fp = power（p [i]，（cnt [i] +1）* cnt [i] / 2），其中 cnt [i]表示该素数的频率
+    > fp = power（p [i]，（cnt [i] +1）* cnt [i] / 2），其中 cnt [i]表示该质数的频率
 
 *   Using the third observation, update the required product: 
 
-    > ans = power（ans，（cnt [i] + 1））* power（fp，d）％MOD，其中 d 是除以 **（i – 1） <sup>th</sup> 素数的除数**
+    > ans = power（ans，（cnt [i] + 1））* power（fp，d）％MOD，其中 d 是除以 **（i – 1） <sup>th</sup> 质数的除数**
 
 *   使用费马小定理更新除数 **d** 的数量：
 

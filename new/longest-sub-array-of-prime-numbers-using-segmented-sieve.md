@@ -12,13 +12,13 @@
 >
 > **说明**：
 >
-> 最大连续素数序列为`{2, 3, 5}`
+> 最大连续质数序列为`{2, 3, 5}`
 > 
 > **输入**：`arr[] = {1,2,11,32,8,9}`
 >
 > **输出**：2
 >
-> **说明**：最大连续素数序列为`{2, 11}`
+> **说明**：最大连续质数序列为`{2, 11}`
 
 **方法**：
 
@@ -30,11 +30,11 @@
 
 1.  使用本文中讨论的方法，在数组的最小元素和最大元素的范围之间找到[质数](https://www.geeksforgeeks.org/prime-numbers/)。
 
-2.  在计算出[范围之间的素数](https://www.geeksforgeeks.org/prime-numbers/)之后。 可以使用 [Kadane 算法](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)来计算具有[质数](https://www.geeksforgeeks.org/prime-numbers/)的最长子数组。 步骤如下：
+2.  在计算出[范围之间的质数](https://www.geeksforgeeks.org/prime-numbers/)之后。 可以使用 [Kadane 算法](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)来计算具有[质数](https://www.geeksforgeeks.org/prime-numbers/)的最长子数组。 步骤如下：
 
     *   使用名为`current_max`和`max_so_far`的两个变量遍历给定数组`arr[]`。
 
-    *   如果找到素数，则增加`current_max`并将其与`max_so_far`进行比较。
+    *   如果找到质数，则增加`current_max`并将其与`max_so_far`进行比较。
 
     *   如果`current_max`大于`max_so_far`，则将`max_so_far`更新为`current_max`。
 
