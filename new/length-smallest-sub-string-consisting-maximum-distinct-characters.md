@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/length-smallest-sub-string-consisting-maximum-distinct-characters/](https://www.geeksforgeeks.org/length-smallest-sub-string-consisting-maximum-distinct-characters/)
 
-给定一个长度为 N 的字符串，找到由最大不同字符组成的最小子字符串的长度。 注意：我们的输出可以具有相同的字符。
+给定一个长度为`N`的字符串，找到由最大不同字符组成的最小子字符串的长度。 注意：我们的输出可以具有相同的字符。
 
 ![](img/56dd44ceb89660fa05f6a6b05fa3cda3.png)
 
@@ -30,7 +30,7 @@ Explanation : Sub-string -> "GEEKSFOR"
 
 2.子字符串的长度应最小。
 
-**时间复杂度**：O（n ^ 3）
+**时间复杂度**：`O(n ^ 3)`
 
 ## C++
 

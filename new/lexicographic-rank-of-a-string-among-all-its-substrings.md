@@ -2,37 +2,45 @@
 
 > 原文：[https://www.geeksforgeeks.org/lexicographic-rank-of-a-string-among-all-its-substrings/](https://www.geeksforgeeks.org/lexicographic-rank-of-a-string-among-all-its-substrings/)
 
-给定字符串 **str** ，任务是在字典编排的所有[子字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)中找到给定字符串的等级。
+给定字符串`str`，任务是在字典编排的所有[子字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)中找到给定字符串的等级。
 
 **示例**：
 
-> **输入**：S =“ enren”
+> **输入**：`S = "enren"`
+>
 > **输出**：7
+>
 > **说明**：
-> 排序后所有可能的子字符串均为{“ e”，“ e”，“ en”，“ en”，“ enr”，“ enre”，“ enren”，“ n”，“ n”，“ nr”，“ nre”，“ nren”，“ r” ，“ re”，“ ren”}。
-> 因此，给定字符串“ enren”的等级为 7。
+>
+> 排序后所有可能的子字符串均为`{"e", "e", "en", "en", "enr", "enre", "enren", "n", "n", "nr", "nre", "nren", "r", "re", "ren"}`。
+>
+> 因此，给定字符串`"enren"`的等级为 7。
 > 
-> **输入**：S =“怪胎”
+> **输入**：`S = "geeks"`
+>
 > **输出**：12
+>
 > **说明**：
-> 排序后所有可能的子串均为{“ e ”，“ e”，“ ee”，“ eek”，“ eeks”，“ ek”，“ eks”，“ g”，“ ge”，“ gee”，“ geek”，“ geeks”，“ k”， “ ks”，“ s”}。
-> 因此，给定字符串“ geeks”的等级为 12。
+>
+> 排序后所有可能的子串均为{"e", "e", "ee", "eek", "eeks", "ek", "eks", "g", "ge", "gee", "geek", "geeks", "k",  "ks", "s"}。
+>
+> 因此，给定字符串`"geeks"`的等级为 12。
 
 **方法**：请按照以下步骤解决问题：
 
-1.  初始化长度为 **26** 的向量的数组 **arr []** ，以将字符串中存在的字符的索引和**等级**的存储为 0。
+1.  初始化长度为 **26** 的向量的数组`arr[]`，以将字符串中存在的字符的索引和`rank`的存储为 0。
 
-2.  存储每个字符的索引。 **a** 的索引将存储在 **arr [0]** 中，对于 **b** ， **arr [1]** 将存储其所有索引，因此 上。
+2.  存储每个字符的索引。 `a`的索引将存储在`arr[0]`中，对于`b`，`arr[1]`将存储其所有索引，因此 上。
 
-3.  遍历[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 中存储的每个索引，直到小于字符串 **S** 的第一个字符的字符。
+3.  遍历[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`中存储的每个索引，直到小于字符串`S`的第一个字符的字符。
 
-4.  对于每个索引 **i** ，从该索引开始的总子串为 **N – i** 。 将 **N – i** 添加到**等级**，因为具有这些索引的所有字符都较小。
+4.  对于每个索引`i`，从该索引开始的总子串为`N – i`。 将`N – i`添加到`rank`，因为具有这些索引的所有字符都较小。
 
-5.  现在，遍历之后，存储从 **S** 的第一个字符开始的所有子字符串，并按字典顺序对这些子字符串进行排序。
+5.  现在，遍历之后，存储从`S`的第一个字符开始的所有子字符串，并按字典顺序对这些子字符串进行排序。
 
-6.  遍历排序的子字符串，并将每个子字符串与字符串 **S** 比较，并增加**等级**，直到找到等于 **S** 的子字符串。
+6.  遍历排序的子字符串，并将每个子字符串与字符串`S`比较，并增加`rank`，直到找到等于`S`的子字符串。
 
-7.  打印 **rank + 1** 的值以获得给定字符串的排名。
+7.  打印`rank + 1`的值以获得给定字符串的排名。
 
 下面是上述方法的实现：
 
