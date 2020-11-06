@@ -2,18 +2,24 @@
 
 > 原文：[https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/](https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/)
 
-给定数组 **arr []** ，任务是找到给定数组的元素的[频率的](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)[模式](https://www.geeksforgeeks.org/mode/)。
+给定数组`arr[]`，任务是找到给定数组的元素的[频率的](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)[模式](https://www.geeksforgeeks.org/mode/)。
 
 **示例**：
 
-> **输入**：arr [] = {6，10，3，10，8，3，6，4}，N = 8
+> **输入**：`arr[] = {6, 10, 3, 10, 8, 3, 6, 4}, N = 8`
+>
 > **输出**：2
+>
 > **说明**：
+>
 > 此处（3、10 和 6）具有频率 2，而（4 和 8）具有频率 1。
+>
 > 三个数字具有频率 2，而两个数字具有频率 1。
+>
 > 因此，频率的模式为 2。
 > 
-> **输入**：arr [] = {5、9、2、9、7、2、5、3、1}，N = 9
+> **输入**：`arr[] = {5, 9, 2, 9, 7, 2, 5, 3, 1}, N = 9`
+>
 > **输出**：1
 
 **方法**：想法是找到所有数组元素的频率。 最后，计算频率的[模式。](https://www.geeksforgeeks.org/mode/)
