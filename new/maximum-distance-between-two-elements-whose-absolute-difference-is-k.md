@@ -1,22 +1,28 @@
-# 绝对差为 K 的两个元素之间的最大距离
+# 绝对差为`K`的两个元素之间的最大距离
 
 > 原文：[https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/](https://www.geeksforgeeks.org/maximum-distance-between-two-elements-whose-absolute-difference-is-k/)
 
-给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 和数字 **K** ，任务是找到两个绝对差为 **K** 的元素之间的最大距离。 。 如果找不到最大距离，则打印**“ -1”** 。
+给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`和数字`K`，任务是找到两个绝对差为`K`的元素之间的最大距离。如果找不到最大距离，则打印 -1。
 
 **示例**：
 
-> **输入**：arr [] = {3，5，1，4，2，2}
+> **输入**：`arr[] = {3, 5, 1, 4, 2, 2}`
+>
 > **输出**：5
+>
 > **解释**：
-> 在索引 0 和 5 处的两个元素（3，2）之间的最大距离是 5。
+>
+> 在索引 0 和 5 处的两个元素`(3, 2)`之间的最大距离是 5。
 > 
-> **输入**：arr [] = {11，2，3，8，5，2}
+> **输入**：`arr[] = {11, 2, 3, 8, 5, 2}`
+>
 > **输出**：3
+>
 > **解释**：
-> 在索引 2 和 5 处的两个元素（3，2）之间的最大距离是 3。
+>
+> 在索引 2 和 5 处的两个元素`(3, 2)`之间的最大距离是 3。
 
-**朴素的方法**：的想法是一个接一个地选取每个元素（例如 **arr [i]** ），搜索前一个元素**（arr [i] – K）[** 和下一个元素**（arr [i] + K）**。 如果存在两个元素中的任何一个，则找到当前元素与其下一个或上一个元素之间的最大距离。
+**朴素的方法**：的想法是一个接一个地选取每个元素（例如`arr[i]`），搜索前一个元素`arr[i] – K`和下一个元素`arr[i] + K`。 如果存在两个元素中的任何一个，则找到当前元素与其下一个或上一个元素之间的最大距离。
 
 **时间复杂度**：`O(N ^ 2)`
 
@@ -24,11 +30,11 @@
 
 **高效方法**：为了优化上述方法，其想法是使用[**哈希映射**](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 。 步骤如下：
 
-1.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并将第一次出现的索引存储在 HashMap 中。
+1.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并将第一次出现的索引存储在`HashMap`中。
 
-2.  现在，对于数组 **arr []** 中的每个元素，检查哈希映射中是否存在 **arr [i] + K** 和 **arr [i] – K** 或不。
+2.  现在，对于数组`arr[]`中的每个元素，检查哈希映射中是否存在`arr[i] + K`和`arr[i] – K`。
 
-3.  如果存在，则使用 **arr [i]** 更新两个元素之间的距离，并检查下一个元素。
+3.  如果存在，则使用`arr[i]`更新两个元素之间的距离，并检查下一个元素。
 
 4.  打印完成上述步骤后获得的最大距离。
 
