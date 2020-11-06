@@ -74,7 +74,7 @@ ArrayList<HashNode<K, V>> bucket = new ArrayList<>();
 
 *   如果要删除的密钥位于链接列表的开头
 
-*   如果要删除的钥匙不在头部，而是在其他地方
+*   如果要删除的键不在头部，而是在其他地方
 
 **add（）**
 

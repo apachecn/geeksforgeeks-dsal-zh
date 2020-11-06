@@ -2,15 +2,25 @@
 
 > 原文：[https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/](https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/)
 
-给定由小写英文字母组成的字符串 **S** ，任务是从给定的字符串中找到具有相等数量的元音和辅音的最长子字符串的长度。
+给定由小写英文字母组成的字符串`S`，任务是从给定的字符串中找到具有相等数量的元音和辅音的最长子字符串的长度。
 
 **示例**：
 
-> **输入**：S =“ geeksforgeeks” 。 剩下的字符只是辅音。 因此，任何更长的子串都不会具有相等数量的元音和辅音。
-> **输入**：S =“ qwertyuiop”
-> **输出**：8
+> **输入**：`S = "geeksforgeeks"` 
+>
+> **输出**：10
+>
 > **说明**：
-> 子字符串“ wertyuio”由 4 个元音组成 和 4 个辅音
+>
+> 子字符串`"eeksforgee"`包含 5 个元音和 5 个辅音。剩下的字符只是辅音。 因此，任何更长的子串都不会具有相等数量的元音和辅音。
+>
+> **输入**：`S = "qwertyuiop"`
+>
+> **输出**：8
+>
+> **说明**：
+>
+> 子字符串`"wertyuio"`由 4 个元音和 4 个辅音组成
 
 **朴素的方法**：最简单的解决方案是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有子字符串，并针对每个子字符串检查元音和辅音的数量是否相等。 最后，打印获得的具有相等数量的元音和辅音的子串的最大长度。
 
@@ -18,7 +28,7 @@
 
 **辅助空间**：`O(1)`
 
-**有效方法**：的想法是考虑一个长度等于给定字符串长度的数组，分别存储与元音和辅音对应的 **1** 和 **-1** 使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 打印最长[子数组的长度，其总和等于 0](https://www.geeksforgeeks.org/find-subarray-with-given-sum-in-array-of-integers/) 。
+**有效方法**：的想法是考虑一个长度等于给定字符串长度的数组，分别存储与元音和辅音对应的 **1** 和 **-1** 使用[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)打印[最长子数组的长度](https://www.geeksforgeeks.org/find-subarray-with-given-sum-in-array-of-integers/)，其总和等于 0。
 
 下面是上述方法的实现：
 

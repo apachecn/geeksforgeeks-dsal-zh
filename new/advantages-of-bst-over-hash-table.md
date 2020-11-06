@@ -16,7 +16,7 @@
 
 1.  只需执行 BST 的有序遍历，就可以按排序顺序获得所有键。 这不是哈希表中的自然操作，需要额外的努力。
 
-2.  使用 BST 可以轻松进行[订单统计](https://www.geeksforgeeks.org/find-k-th-smallest-element-in-bst-order-statistics-in-bst/)，[查找最接近的上下元素](https://www.geeksforgeeks.org/floor-and-ceil-from-a-bst/)，[进行范围查询](https://www.geeksforgeeks.org/print-bst-keys-in-the-given-range/)。 像排序一样，这些操作对于哈希表也不是自然的操作。
+2.  使用 BST 可以轻松进行[顺序统计](https://www.geeksforgeeks.org/find-k-th-smallest-element-in-bst-order-statistics-in-bst/)，[查找最接近的上下元素](https://www.geeksforgeeks.org/floor-and-ceil-from-a-bst/)，[进行范围查询](https://www.geeksforgeeks.org/print-bst-keys-in-the-given-range/)。 像排序一样，这些操作对于哈希表也不是自然的操作。
 
 3.  与散列相比，BST 易于实现，我们可以轻松实现自己的自定义 BST。 为了实现散列，我们通常依赖于编程语言提供的库。
 

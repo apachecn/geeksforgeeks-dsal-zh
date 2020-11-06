@@ -1,4 +1,4 @@
-# 螺母&螺栓问题（锁定&钥匙问题） | 系列 2（哈希映射）
+# 螺母&螺栓问题（锁定&键问题） | 系列 2（哈希映射）
 
 > 原文：[https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem-set-2-hashmap/](https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem-set-2-hashmap/)
 
@@ -17,11 +17,11 @@ Output : Matched nuts and bolts are-
 
 ```
 
-提出此问题的另一种方法是，给定一个带有锁和钥匙的盒子，在其中可以用盒子中的一个钥匙打开一个锁。 我们需要配对。
+提出此问题的另一种方法是，给定一个带有锁和键的盒子，在其中可以用盒子中的一个键打开一个锁。 我们需要配对。
 
 我们在下面的文章中讨论了基于排序的解决方案。
 
-[螺母&螺栓问题（锁定&钥匙问题） | 系列 1](https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem/)
+[螺母&螺栓问题（锁定&键问题） | 系列 1](https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem/)
 
 在这篇文章中，讨论了基于哈希映射的方法。
 

@@ -2,16 +2,18 @@
 
 > 原文：[https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/](https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/)
 
-给定一个字符串数组 **arr []** ，任务是找到该数组的最长子序列，并且在所有字符串中至少出现一个字符。 **请注意，**所有字符串仅包含小写英文字母。
+给定一个字符串数组`arr[]`，任务是找到该数组的最长子序列，并且在所有字符串中至少出现一个字符。 **请注意**，所有字符串仅包含小写英文字母。
 
 **示例**：
 
-> **输入**：str = {“ ab”，“ bc”，“ de”}
+> **输入**：`str = {"ab", "bc", "de"}`
+>
 > **输出**：2
-> {“ ab”，“ bc”}是必需的 子序列
-> ，带有'b'作为公共字符。
+>
+> `{"ab", "bc"}`是必需的子序列，带有`'b'`作为公共字符。
 > 
-> **输入**：str = {“ a”，“ b”，“ c”}
+> **输入**：`str = {"a", "b", "c"}`
+>
 > **输出**：1
 
 **方法**：创建一个 **count []** 数组，以便 **count [0]** 将存储包含**'a'**的字符串数， **count [1]** 将存储包含**'b'**等的字符串的数量…

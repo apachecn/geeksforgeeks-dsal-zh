@@ -315,7 +315,7 @@ Vertical order traversal is
 
 ```
 
-请参阅以下帖子，以了解基于级别订单遍历的解决方案。 下面的帖子确保垂直线节点的打印顺序与树中出现的顺序相同。
+请参阅以下帖子，以了解基于级别顺序遍历的解决方案。 下面的帖子确保垂直线节点的打印顺序与树中出现的顺序相同。
 
 [以垂直顺序打印二叉树 | 系列 3（使用级别顺序遍历）](https://www.geeksforgeeks.org/print-a-binary-tree-in-vertical-order-set-3-using-level-order-traversal/)
 
