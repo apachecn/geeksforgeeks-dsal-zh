@@ -1,8 +1,8 @@
-# 删除 m 个项目后的最小不同元质数
+# 删除`m`个项目后的最小不同元质数
 
 > 原文：[https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items/](https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items/)
 
-给定一个项目数组，第 i 个索引元素表示该项目 ID，给定数字 m，任务是删除 m 个元素，以使剩余的唯一 ID 最少。打印不同 ID 的数量。
+给定一个项目数组，第`i`个索引元素表示该项目 ID，给定数字`m`，任务是删除`m`个元素，以使剩余的唯一 ID 最少。打印不同 ID 的数量。
 
 例子：
 
@@ -23,13 +23,13 @@ are 1, 3 and 5 i.e. 3
 
 询问：摩根士丹利
 
-1-计算元素的出现并存储在哈希中。
+1.  计算元素的出现并存储在哈希中。
 
-2-对哈希进行排序。
+2.  对哈希进行排序。
 
-3-开始从哈希中删除元素。
+3.  开始从哈希中删除元素。
 
-4-返回哈希中剩余的值数。
+4.  返回哈希中剩余的值数。
 
 ## C++
 
