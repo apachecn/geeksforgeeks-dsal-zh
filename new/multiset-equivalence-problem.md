@@ -2,11 +2,11 @@
 
 > 原文：[https://www.geeksforgeeks.org/multiset-equivalence-problem/](https://www.geeksforgeeks.org/multiset-equivalence-problem/)
 
-与集合不同，多重集可能包含相同编号的多次出现。 *多集*等价问题指出要检查两个给定的多集是否相等。 例如，令 **A** = {1,2,3}， **B** = {1,2,3,3}。 此处设置了 **A** ，但未设置 **B** （B 中出现两次），而 **A** 和 **B** 都是多集。 更正式地说，“对于两个给定的多集，定义为![ \(A' = \{ (a, frequency(a)) | a \in \mathbf{A} \}\) ](img/76708f2dcbd3dea50b7dba1f12a212a1.png "Rendered by QuickLaTeX.com")的对的*集*是否相等？”
+与集合不同，多重集可能包含相同数字的多次出现。 *多集*等价问题指出要检查两个给定的多集是否相等。 例如，令`A = {1,2,3}`，`B = {1,2,3,3}`。 此处设置了`A`，但未设置`B`（`B`中出现两次），而`A`和`B`都是多集。 更正式地说，“对于两个给定的多集，定义为`A' = {(a, freq(a)) | a ∈ A}`的偶对集合是否相等？”
 
-给定两个多重集 A 和 B，编写一个程序来检查两个多重集是否相等。
+给定两个多重集`A`和`B`，编写一个程序来检查两个多重集是否相等。
 
-**注意**：多集中的元素可以为 10 <sup>9</sup>
+**注意**：多集中的元素可以为`10 ^ 9`个。
 
 **示例**：
 
@@ -21,7 +21,7 @@ Output : No
 
 ```
 
-由于元素大至 10 ^ 9，因此我们无法使用[直接索引表](https://www.geeksforgeeks.org/direct-address-table/)。
+由于元素大至`10 ^ 9`，因此我们无法使用[直接索引表](https://www.geeksforgeeks.org/direct-address-table/)。
 
 一种解决方案是对两个多集进行排序并一一比较。
 
@@ -160,7 +160,7 @@ No
 
 ```
 
-更好的解决方案是使用哈希。 我们创建了两个空的哈希表（使用 C++ 中的 [unordered_map 实现）。 我们首先在第一个表中插入第一个多图的所有项目，然后在第二个表中插入第二个多集的所有项目。 现在我们检查两个哈希表是否包含相同的项目和频率。](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)
+更好的解决方案是使用哈希。 我们创建了两个空的哈希表（使用 C++ 中的[`unordered_map`](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)实现）。 我们首先在第一个表中插入第一个多图的所有项目，然后在第二个表中插入第二个多集的所有项目。 现在我们检查两个哈希表是否包含相同的项目和频率。
 
 ## C++
 
@@ -350,7 +350,7 @@ Yes
 
 ```
 
-**时间复杂度**：`O(n)`假定 unordered_map find（）和 insert（）操作在`O(1)`时间内工作。
+**时间复杂度**：`O(n)`假定`unordered_map`的`find()`和`insert()`操作在`O(1)`时间内工作。
 
 
 
