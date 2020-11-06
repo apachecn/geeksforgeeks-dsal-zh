@@ -1,27 +1,30 @@
-# 最大化总和为 K 的非重叠子数组的数量
+# 最大化总和为`K`的非重叠子数组的数量
 
 > 原文：[https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/](https://www.geeksforgeeks.org/maximize-count-of-non-overlapping-subarrays-with-sum-k/)
 
-给定数组 **arr []** 和整数 **K** ，任务是打印与 **K** 之和的非重叠子数组的最大数量。
+给定数组`arr[]`和整数`K`，任务是打印与`K`之和的非重叠子数组的最大数量。
 
 **示例**：
 
-> **输入**：arr [] = {-2，6，6，3，5，4，1，2，8}，K = 10
+> **输入**：`arr[] = {-2, 6, 6, 3, 5, 4, 1, 2, 8}, K = 10`
+>
 > **输出**：3
-> **解释**：所有和为 K（= 10）的不重叠子数组都是{-2，6，6}，{5，4，1}，{2，8}。 因此，所需的计数为 3。
+>
+> **解释**：所有和为`K = 10`的不重叠子数组都是`{-2, 6, 6}`，`{5, 4, 1}`，`{2, 8}`。 因此，所需的计数为 3。
 > 
-> **输入**：arr [] = {1，1，1}，K = 2
+> **输入**：`arr[] = {1, 1, 1}, K = 2`
+>
 > **输出**：1
 
 **方法**：可以使用[前缀和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)的概念解决此问题。 请按照以下步骤解决问题：
 
-1.  初始化[集](https://www.geeksforgeeks.org/set-in-cpp-stl/)以存储直到当前元素为止获得的所有前缀和。
+1.  初始化[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)以存储直到当前元素为止获得的所有前缀和。
 
-2.  初始化变量 **prefixSum** 和 **res** ，以存储当前子数组的前缀和和分别等于 **K** 的子数组的数量。
+2.  初始化变量`prefixSum`和`res`，以存储当前子数组的前缀和和分别等于`K`的子数组的数量。
 
-3.  遍历数组，并为每个数组元素添加当前元素，以更新 **prefixSum** 。 现在，检查**集**中是否已经存在 **prefixSum – K** 值。 如果确定为真，则将 **res** 递增，清除**设置**，然后重置 **prefixSum** 的值。
+3.  遍历数组，并为每个数组元素添加当前元素，以更新`prefixSum`。 现在，检查**集合**中是否已经存在`prefixSum – K`值。 如果确定为真，则将`res`递增，清除**集合**，然后重置`prefixSum`的值。
 
-4.  重复上述步骤，直到遍历整个数组。 最后，打印 **res 的值。**
+4.  重复上述步骤，直到遍历整个数组。 最后，打印`res`的值。
 
 ## C++ 14
 

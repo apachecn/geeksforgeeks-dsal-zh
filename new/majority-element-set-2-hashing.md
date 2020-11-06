@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/majority-element-set-2-hashing/](https://www.geeksforgeeks.org/majority-element-set-2-hashing/)
 
-给定大小为 N 的数组，找到多数元素。 多数元素是在给定数组中出现![\floor{\frac{n}{2}}](img/6b97b83019d889e5a31cda3e150a83d9.png "Rendered by QuickLaTeX.com")次以上的元素。
+给定大小为`N`的数组，找到多数元素。 多数元素是在给定数组中出现`floor(n / 2)`次以上的元素。
 
 **示例**：
 
@@ -15,7 +15,7 @@ Output: 2
 
 ```
 
-在先前的[帖子](https://www.geeksforgeeks.org/majority-element/)中，使用 4 种不同的方法解决了该问题。 在这篇文章中，实现了基于哈希的解决方案。 我们计算所有元素的出现。 如果任何元素的计数大于 n / 2，我们将其返回。
+在先前的[帖子](https://www.geeksforgeeks.org/majority-element/)中，使用 4 种不同的方法解决了该问题。 在这篇文章中，实现了基于哈希的解决方案。 我们计算所有元素的出现。 如果任何元素的计数大于`n / 2`，我们将其返回。
 
 因此，如果存在多数元素，那么它将是键的值。
 
