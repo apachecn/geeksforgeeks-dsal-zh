@@ -1,8 +1,8 @@
-# 在 k 名学生中平均分配的最大巧克力数量
+# 在`K`名学生中平均分配的最大巧克力数量
 
 > 原文：[https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/](https://www.geeksforgeeks.org/maximum-number-chocolates-distributed-equally-among-k-students/)
 
-给定 **n** 个盒子，其中装有一些排成一行的巧克力。 学生人数 **k** 。 问题是，通过从给定批次中选择连续的盒子序列，在 **k** 学生中平均分配最大数量的巧克力。 考虑将盒子排列成从左到右从 1 到 n 的数字。 我们必须选择一组连续的盒子，它们可以为所有 **k** 学生平均提供最大数量的巧克力。 给出数组 **arr []** 来表示框的行排列，而 arr [i]表示该框中位置“ i”的巧克力数量。
+给定`n`个盒子，其中装有一些排成一行的巧克力。 学生人数`k`。 问题是，通过从给定批次中选择连续的盒子序列，在`k`学生中平均分配最大数量的巧克力。 考虑将盒子排列成从左到右从 1 到`n`的数字。 我们必须选择一组连续的盒子，它们可以为所有`k`学生平均提供最大数量的巧克力。 给出数组`arr[]`来表示框的行排列，而`arr[i]`表示该框中位置`i`的巧克力数量。
 
 **示例**：
 
@@ -19,25 +19,25 @@ with indexes {1, 2, 3, 4}.
 
 **来源**：在亚马逊问。
 
-问题是找到可被 k 整除的最大和子数组，然后返回（sum / k）。
+问题是找到可被`k`整除的最大和子数组，然后返回`sum / k`。
 
-**方法 1（朴素方法）**：考虑所有子数组的总和。 选择最大和。 使其为 **maxSum** 。 返回**（maxSum / k）**。 时间复杂度为`O(N ^ 2)`。
+**方法 1（朴素方法）**：考虑所有子数组的总和。 选择最大和。 使其为`maxSum`。 返回`maxSum / k`。 时间复杂度为`O(N ^ 2)`。
 
-**方法 2（有效方法）**：创建数组 **sum []** ，其中 **sum [i]** 存储 **sum（arr [0] + .. arr [i]）**。 创建一个具有作为**（ele，idx）**的元组的哈希表，其中 ele 表示**（sum [i]％k）**的元素，而 **idx** 表示元素的 从左到右遍历数组 **sum []** 时第一次出现的索引。 现在，从[i] 0 遍历 **sum []** 到 n，然后执行以下步骤。
+**方法 2（有效方法）**：创建数组`sum[]`，其中`sum[i]`存储`sum(arr[0] + .. arr[i])`。 创建一个具有作为`ele, idx`的元组的哈希表，其中`ele`表示`sum[i] % k`的元素，而`idx`表示元素的 从左到右遍历数组`sum[]`时第一次出现的索引。 现在，从 0 到`n`遍历`sum[i]`，然后执行以下步骤。
 
-1.  计算当前余数为 **curr_rem** = sum [i]％k。
+1.  计算当前余数为`curr_rem = sum[i] % k`。
 
-2.  如果 curr_rem == 0，则检查 maxSum < sum[i], update **maxSum** = sum [i]。
+2.  如果`curr_rem == 0`，则检查`maxSum < sum[i]`，更新`maxSum = sum[i]`。
 
-3.  否则，如果哈希表中没有 **curr_rem** ，则在哈希表中创建元组**（curr_rem，i）**。
+3.  否则，如果哈希表中没有`curr_rem`，则在哈希表中创建元组`curr_rem, i`。
 
-4.  否则，获取与哈希表中的 **curr_rem** 相关的值。 使其为 **idx** 。 现在，如果 maxSum <（sum [i] – sum [idx]），则更新 **maxSum** = sum [i] – sum [idx]。
+4.  否则，获取与哈希表中的`curr_rem`相关的值。 使其为`idx`。 现在，如果`maxSum < (sum[i] – sum[idx])`，则更新`maxSum = sum[i] – sum[idx]`。
 
-最后，返回**（maxSum / k）**。
+最后，返回`maxSum / k`。
 
 **解释**：
 
-如果（sum [i]％k）==（sum [j]％k），其中 sum [i] = sum（arr [0] + .. + arr [i ]）和 sum [j] = sum（arr [0] + .. + arr [j]）且'i'小于'j'，则 sum（arr [i + 1] + .. + arr [j ]）必须被'k'整除。
+如果`sum [i] % k == sum[j] % k`，其中`sum[i] = sum(arr[0] + .. + arr[i])`和`sum[j] = sum(arr[0] + .. + arr[j])`且`i`小于`j`，则`sum(arr[i + 1] + .. + arr[j])`必须被`k`整除。
 
 ## C++
 
