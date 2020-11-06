@@ -2,22 +2,31 @@
 
 > 原文：[https://www.geeksforgeeks.org/minimum-common-element-in-subarrays-of-all-possible-lengths/](https://www.geeksforgeeks.org/minimum-common-element-in-subarrays-of-all-possible-lengths/)
 
-给定[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，该数组由 **[1，N]** 范围内的 **N** 个整数组成（允许*重复 ]），任务是为每个可能的[子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)长度找到最小的公共元素。 如果对于任何特定长度的子数组不存在此类元素，则打印 **-1** 。*
+给定[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，该数组由`[1, N]`范围内的`N`个整数组成（允许重复），任务是为每个可能的[子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)长度找到最小的公共元素。 如果对于任何特定长度的子数组不存在此类元素，则打印 **-1**。
 
 **示例**：
 
-> **输入**：arr [] = {1、3、4、5、6、7}
-> **输出**：-1 -1 -1 4 3 1
+> **输入**：`arr[] = {1, 3, 4, 5, 6, 7}`
+>
+> **输出**：`-1 -1 -1 4 3 1`
+>
 > **说明**：
-> K = 1：不存在公共元素。 因此，打印-1。
-> K = 2：不存在公共元素。 因此，打印-1。
-> K = 3：不存在公共元素。 因此，打印-1。
-> K = 4：由于在大小为 4 的所有子数组中共有 4，因此打印为 4。
-> K = 5：由于在大小为 5 的所有子数组中共有 3 和 4，所以将其最小打印为 3。
-> K = 6：打印 1，因为它是数组中的最小元素。
+>
+> `K = 1`：不存在公共元素。 因此，打印 -1。
+>
+> `K = 2`：不存在公共元素。 因此，打印 -1。
+>
+> `K = 3`：不存在公共元素。 因此，打印 -1。
+>
+> `K = 4`：由于在大小为 4 的所有子数组中共有 4，因此打印为 4。
+>
+> `K = 5`：由于在大小为 5 的所有子数组中共有 3 和 4，所以将其最小打印为 3。
+>
+> `K = 6`：打印 1，因为它是数组中的最小元素。
 > 
-> **输入**：arr []：{1、2、2、2、1}
-> **输出**：-1 2 2 1 1
+> **输入**：`arr[] = {1, 2, 2, 2, 1}`
+>
+> **输出**：`-1 2 2 1 1`
 
 **方法**：请按照以下步骤解决问题：
 
