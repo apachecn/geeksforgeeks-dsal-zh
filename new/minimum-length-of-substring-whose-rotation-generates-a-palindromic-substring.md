@@ -2,17 +2,21 @@
 
 > 原文：[https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/](https://www.geeksforgeeks.org/minimum-length-of-substring-whose-rotation-generates-a-palindromic-substring/)
 
-给定字符串 **str** ，任务是找到旋转所需的子字符串的最小长度，以从给定字符串生成回文子字符串。
+给定字符串`str`，任务是找到旋转所需的子字符串的最小长度，以从给定字符串生成回文子字符串。
 
 **示例**：
 
-> **输入**：str =“ abcbd”
+> **输入**：`str = "abcbd"`
+>
 > **输出**：0
-> **说明**：无法生成回文子字符串，字符串中没有重复字符 。
+>
+> **说明**：无法生成回文子字符串，字符串中没有重复字符。
 > 
-> **输入**：str =“ abcdeba”
+> **输入**：`str = "abcdeba"`
+>
 > **输出**：3
-> **说明**：旋转子字符串“ deb”将给定的字符串转换为 **bcb** eda，回文子串为“ bcb”。
+>
+> **说明**：旋转子字符串`deb`将给定的字符串转换为`bcbeda`，回文子串为`bcb`。
 
 **方法**：
 
@@ -20,7 +24,7 @@
 
 *   对于每个重复字符，请检查其先前出现的索引是否在当前索引的一两个索引内。 如果是这样，则回文子串已经存在。
 
-*   否则，计算**的长度（当前索引–先前出现的索引– 1）**。
+*   否则，计算`当前索引 – 先前出现的索引 – 1`的长度。
 
 *   返回所有此类长度中的最小值作为答案
 
