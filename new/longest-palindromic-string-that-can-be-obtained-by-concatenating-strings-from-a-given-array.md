@@ -6,12 +6,15 @@
 
 **示例**：
 
-> **输入**：N = 4，M = 3，S [] = {“ omg”，“ bbb”，“ ffd”，“ gmo”}
-> **输出**：omgbbbgmo [
-> **说明**：字符串“ omg”和“ gmo”彼此相反，而“ bbb”本身就是回文。 因此，连接“ omg” +“ bbb” +“ gmo”会生成最长回文字符串“ omgbbbgmo”。
+> **输入**：`N = 4, M = 3, S[] = {"omg", "bbb", "ffd", "gmo"}`
+>
+> **输出**：`omgbbbgmo`
+>
+> **说明**：字符串`"omg"`和`"gmo"`彼此相反，而`"bbb"`本身就是回文。 因此，连接`"omg" + "bbb" + "gmo"`会生成最长回文字符串`"omgbbbgmo"`。
 > 
-> **输入**：N = 4，M = 3，s [] = {“ poy”，“ fgh”，“ hgf”，“ yop”}
-> **输出**：poyfghhgfyop
+> **输入**：`N = 4, M = 3, S[] = {"poy", "fgh", "hgf", "yop"}`
+>
+> **输出**：`poyfghhgfyop`
 
 **方法**：请按照以下步骤解决问题：
 
