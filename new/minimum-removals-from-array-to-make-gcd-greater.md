@@ -2,21 +2,25 @@
 
 > 原文：[https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/](https://www.geeksforgeeks.org/minimum-removals-from-array-to-make-gcd-greater/)
 
-给定 N 个数字，任务是找到最小的数字去除率，以使剩余数字的 GCD 大于 N 个数字的初始 GCD。 如果无法增加 GCD，请打印“否”。
+给定`N`个数字，任务是找到最小的数字移除量，以使剩余数字的 GCD 大于`N`个数字的初始 GCD。 如果无法增加 GCD，请打印`No`。
 
 **示例**：
 
-> 输入：a [] = {1,2,4}
+> 输入：`a[] = {1,2,4}`
+>
 > 输出：1
+>
 > 删除第一个元素，然后新的 GCD 为 2，大于初始的 GCD 即 1。
 > 
-> 输入：a [] = {6，9，15，30}
+> 输入：`a[] = {6, 9, 15, 30}`
+>
 > 输出：2
+>
 > 初始 gcd 为 3，删除 6 和 9，以获得大于 3 的 15 gcd。您也可以删除 9 和 15 得到 gcd 为 6。
 
 请按照以下步骤解决上述问题：
 
-1.  最初使用[欧几里德算法](https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/)找到 N 个数字的 gcd。
+1.  最初使用[欧几里德算法](https://www.geeksforgeeks.org/euclidean-algorithms-basic-and-extended/)找到`N`个数字的 gcd。
 
 2.  将所有数字除以获得的 gcd。
 
@@ -24,11 +28,11 @@
 
 4.  将所有素因子插入集合中，以删除使用此方法获得的重复项。
 
-5.  使用哈希映射，计算每个第 i 个元素中主要因子的频率。
+5.  使用哈希映射，计算每个第`i`个元素中主要因子的频率。
 
-6.  一旦数字分解完成，并且计数已存储在频率表中，请在哈希映射中进行迭代，找出出现最大次数的质数。 它不能为 N，因为我们已经将数组元素初始除以 N 个数字的初始 gcd。
+6.  一旦数字分解完成，并且计数已存储在频率表中，请在哈希映射中进行迭代，找出出现最大次数的质数。 它不能为`N`，因为我们已经将数组元素初始除以`N`个数字的初始 gcd。
 
-7.  如果在初始 gcd 划分之后有任何此类因素，则移除次数将始终为 n-（hash [prime_factor]）。
+7.  如果在初始 gcd 划分之后有任何此类因素，则移除次数将始终为`n - hash[prime_factor]`。
 
 下面是上述方法的实现。
 
@@ -283,7 +287,7 @@ print(minimumRemovals(a, n))
 
 ```
 
- **时间复杂度**：O（log log N）用于筛分的预先计算，`O(N * log N)`用于计算。
+ **时间复杂度**：`O(log log N)`用于筛分的预先计算，`O(N * log N)`用于计算。
 
 **辅助空间**：`O(n)`
 

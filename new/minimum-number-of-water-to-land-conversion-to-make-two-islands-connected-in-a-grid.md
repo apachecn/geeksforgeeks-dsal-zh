@@ -2,28 +2,28 @@
 
 > 原文：[https://www.geeksforgeeks.org/minimum-number-of-water-to-land-conversion-to-make-two-islands-connected-in-a-grid/](https://www.geeksforgeeks.org/minimum-number-of-water-to-land-conversion-to-make-two-islands-connected-in-a-grid/)
 
-给定 2D 网格**'W'**和**'L'**的 **arr [] []** ，其中**'W'**表示水，**'L'**表示土地，任务是找到必须更改为土地成分**'L'**的最小水分量**'W'**，以便有两个岛屿 连接。
+给定`W`和`L`的 2D 网格`arr[][]`，其中`W`表示水，`L`表示土地，任务是找到必须更改为土地`L`的最小水量`W`，以便有两个连通岛屿。
 
-> **岛**是已连接的**'L'**的集合。
+> **岛**是连通的`L`的集合。
 
 **注意**：只能有两个不相交的岛。
 
 **示例**：
 
-> **输入**：arr [] [] = {{'W'，'L'}，{'L'，'W'}};
+> **输入**：`arr [] [] = {{'W', 'L'}, {'L', 'W'}}`
 > **输出**：1
 > **说明**：
-> 对于给定的孤岛，如果将 arr [1] [1]更改为“ W”，则将 所有岛屿均已连接。
-> 因此，必须将“ W”的最小数目更改为“ L”为 1。
+> 对于给定的孤岛，如果将`arr[1][1]`更改为`W`，则将 所有岛屿均已连接。
+> 因此，必须将`W`更改为`L`的最小数目为 1。
 > 
-> **输入**：arr [] [] = {{'W'，'L'，'W'}，{'W'，'W'，'W'}，{'W'，'W '，'L'}}
+> **输入**：`arr[][] = {{'W', 'L', 'W'}, {'W', 'W', 'W'}, {'W', 'W ', 'L'}}`
 > **输出**：2
 
 **方法**：可以使用 [Floodfill 算法](https://www.geeksforgeeks.org/flood-fill-algorithm-implement-fill-paint/)解决此问题。 步骤如下：
 
-1.  对第一组连接的孤岛使用 Floodfill 算法，使所有孤岛都已访问，并将坐标存储在[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)中（例如 **hash1** ）。
+1.  对第一组连接的孤岛使用 Floodfill 算法，使所有孤岛都已访问，并将坐标存储在[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)中（例如`hash1`）。
 
-2.  对第二组连接的孤岛使用 Floodfill 算法，使所有孤岛都已访问，并将坐标存储在第二个哈希中（例如 **hash2** ）。
+2.  对第二组连接的孤岛使用 Floodfill 算法，使所有孤岛都已访问，并将坐标存储在第二个哈希中（例如`hash2`）。
 
 3.  存储在两个哈希中的坐标之间的最小差是必需的结果。
 
