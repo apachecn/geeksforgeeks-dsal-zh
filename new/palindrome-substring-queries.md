@@ -6,22 +6,25 @@
 
 **示例**：
 
-> 假设我们的输入字符串为“ abaaabaaaba”，并且查询为[0，10]，[5，8]，[2，5]，[5，9]
+> 假设我们的输入字符串为`"abaaabaaaba"`，并且查询为`[0, 10], [5, 8], [2, 5], [5, 9]`
 > 
 > 我们必须告诉我们，具有上述开始和结束索引的子字符串是否是回文。
 > 
-> [0，10]→子字符串是回文“ abaaabaaaba”。
-> [5，8]→子字符串是“ baaa”，不是回文。
-> [2，5]→子字符串是“ aaab”，不是回文。
-> [5，9]→子串是回文的“ baaab”。
+> `[0, 10]`子字符串`"abaaabaaaba"`是回文。
+>
+> `[5, 8]`子字符串是`"baaa"`，不是回文。
+>
+> `[2, 5]`子字符串是`"aaab"`，不是回文。
+>
+> `[5, 9]`子串`"baaab"`是回文。
 
-让我们假设有 Q 个这样的查询要回答，N 是我们输入字符串的长度。 有以下两种方式来回答这些查询
+让我们假设有`Q`个这样的查询要回答，`N`是我们输入字符串的长度。 有以下两种方式来回答这些查询
 
 <center>**Method 1 (Naive)**</center>
 
 One by one we go through all the substrings of the queries and check whether the substring under consideration is a palindrome or not.
 
-由于存在 Q 个查询，每个查询可能需要`O(n)`个最坏情况的时间来回答，因此此方法在最坏情况下需要 O（Q.N）个时间。 尽管这是一种就地/空间高效的算法，但仍有一种更有效的方法可以做到这一点。
+由于存在`Q`个查询，每个查询可能需要`O(n)`个最坏情况的时间来回答，因此此方法在最坏情况下需要`O(QN)`时间。 尽管这是一种就地/空间高效的算法，但仍有一种更有效的方法可以做到这一点。
 
 <center>**Method 2 (Cumulative Hash)**</center>
 
@@ -29,20 +32,23 @@ The idea is similar to [Rabin Karp string matching](https://www.geeksforgeeks.or
 
 如何计算累积哈希值？
 
-假设我们的字符串是 str []，则填充我们使用的 prefix []数组的累积哈希函数为-
+假设我们的字符串是`str[]`，则填充我们使用的`prefix[]`数组的累积哈希函数为-
 
-> prefix [0] = 0
-> prefix [i] = str [0] + str [1] * 101 + str [2] * 101 <sup>2</sup> +……+ str [i-1] * 101 <sup>i-1</sup>
+> `prefix[0] = 0`
 > 
-> 例如，使用字符串“ abaaabxyaba”
+> `prefix[i] = str[0] + str[1] * 101 + str[2] * 101 ^ 2 + …… + str[i-1] * 101 ^ (i-1)`
 > 
-> prefix [0] = 0
-> prefix [1] = 97（“ a”的 ASCII 值为 97）
-> prefix [2] = 97 + 98 * 101
-> prefix [3] = 97 + 98 * 101 + 97 * 101 <sup>2</sup>
-> …………………………
-> …………………………
-> 前缀[11] = 97 + 98 * 101 + 97 * 101 <sup>2</sup> +…….. + 97 * 101 <sup>10</sup>
+> 例如，使用字符串`"abaaabxyaba"`
+> 
+> `prefix[0] = 0`
+> 
+> `prefix[1] = 97`（`a`的 ASCII 值为 97）
+> 
+> `prefix[2] = 97 + 98 * 101`
+> 
+> `prefix[3] = 97 + 98 * 101 + 97 * 101 <sup>2</sup>`
+> 
+> `prefix[11] = 97 + 98 * 101 + 97 * 101 ^ 2 + …… + 97 * 101 ^ 10`
 
 现在以这种方式进行存储的原因是，我们可以轻松地在`O(1)`时间中找到任何子字符串的哈希值-
 
@@ -711,5 +717,3 @@ The idea is similar to [Rabin Karp string matching](https://www.geeksforgeeks.or
 > 本文由 **Rachit Belwariar** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，那么您也可以写一篇文章，并将您的文章邮寄到 contribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 > 
 > 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
-> 
-> 注意读者！ 现在不要停止学习。 通过 [**DSA 自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的 DSA 概念，并为行业做好准备。

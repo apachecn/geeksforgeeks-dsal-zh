@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/](https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/)
 
-的任何其他元素不能除的元质数
+的任何其他元素不能除的元素数
 
 给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是确定数组元素的数量，该数量不能被给定数组中的任何其他元素整除。
 
@@ -20,7 +20,7 @@
 >
 > **输出**：0
 
-**朴素的方法**：朴素的方法是遍历整个数组并计算给定数组中任何其他元素不能整除的元质数并打印计数。
+**朴素的方法**：朴素的方法是遍历整个数组并计算给定数组中任何其他元素不能整除的元素数并打印计数。
 
 下面是上述方法的实现：
 

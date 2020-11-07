@@ -1,4 +1,4 @@
-# 删除`m`个项目后的最小不同元质数
+# 删除`m`个项目后的最小不同元素数
 
 > 原文：[https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items/](https://www.geeksforgeeks.org/minimum-number-of-distinct-elements-after-removing-m-items/)
 

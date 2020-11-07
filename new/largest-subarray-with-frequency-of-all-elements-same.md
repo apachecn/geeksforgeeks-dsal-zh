@@ -26,7 +26,7 @@
 
 1.  生成所有可能的子数组。
 
-2.  对于每个子数组，取两个[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，一个映射存储每个元素的频率，第二个映射存储给定频率的元质数量。
+2.  对于每个子数组，取两个[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，一个映射存储每个元素的频率，第二个映射存储给定频率的元素数量。
 
 3.  如果对于任何子数组，第二个图的大小等于 **1** ，则意味着每个元素在子数组中的频率相同。
 
