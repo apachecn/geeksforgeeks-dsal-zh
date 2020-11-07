@@ -1,25 +1,29 @@
-# 打印给定数组中的前 K 个不同的 Moran 编号
+# 打印给定数组中的前`K`个不同的 Moran 数字
 
 > 原文：[https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/](https://www.geeksforgeeks.org/print-first-k-distinct-moran-numbers-from-a-given-array/)
 
-给定[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，其中包含 **N** 个不同的正整数，任务是打印第一个 **K** 个不同的 [Moran 给定数组中的数字](https://www.geeksforgeeks.org/check-whether-given-number-n-is-a-moran-number-or-not/)。
+给定[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，其中包含`N`个不同的正整数，任务是打印给定数组中的前`K`个不同的 [Moran 数字](https://www.geeksforgeeks.org/check-whether-given-number-n-is-a-moran-number-or-not/)。
 
-> *数字 **N** 是 **Moran 数**，如果 **N** 除以其位数* [*的总和*](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/) *给出* [***质数***](https://www.geeksforgeeks.org/prime-numbers/) *。*
-> ***示例**：18、21、27、42、45*
+> 数字`N`是 **Moran 数**，如果`N`除以其[位数总和](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/)是[质数](https://www.geeksforgeeks.org/prime-numbers/)。
+>
+> **示例**：18、21、27、42、45
 
 **示例**：
 
-> **输入**：arr [] = {192、21、18、138、27、42、45}，K = 4
-> **输出**：21、27、42、45 [
+> **输入**：`arr[] = {192, 21, 18, 138, 27, 42, 45}, K = 4`
+>
+> **输出**：`21, 27, 42, 45`
+>
 > **说明**：
 > 
-> *   整数 21 的位数之和为 2 +1 =3。因此，将 21 除以其位数之和= 21/3 = 7，这是质数。
-> *   整数 27 的位数之和为 2 + 7 =9。因此，将 27 除以其位数之和得出 27/9 = 3，这是质数。
-> *   整数 42 的位数之和为 4 + 2 =6。因此，将 42 除以其位数之和得出 42/6 = 7，这是质数。
-> *   整数 45 的位数之和为 4 + 5 =9。因此，将 45 除以其位数之和得出 45/9 = 5，这是质数。
+> *   整数 21 的位数之和为`2 + 1 = 3`。因此，将 21 除以其位数之和得出`21/3 = 7`，这是质数。
+> *   整数 27 的位数之和为`2 + 7 = 9`。因此，将 27 除以其位数之和得出`27/9 = 3`，这是质数。
+> *   整数 42 的位数之和为`4 + 2 = 6`。因此，将 42 除以其位数之和得出`42/6 = 7`，这是质数。
+> *   整数 45 的位数之和为`4 + 5 = 9`。因此，将 45 除以其位数之和得出`45/9 = 5`，这是质数。
 > 
-> **输入**：arr [] = {127，186，198，63，27，91}，K = 3
-> **输出**：27，63，198
+> **输入**：`arr[] = {127, 186, 198, 63, 27, 91}, K = 3`
+>
+> **输出**：`27, 63, 198`
 
 **方法**：请按照以下步骤解决问题：
 
@@ -27,9 +31,9 @@
 
 2.  [遍历排序后的数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，对于每个元素，[检查其是否为莫兰数](https://www.geeksforgeeks.org/check-whether-given-number-n-is-a-moran-number-or-not/)
 
-3.  如果确定为真，则将元素插入[设置](https://www.geeksforgeeks.org/set-in-cpp-stl/)中，并递增**计数器**直到达到 **K** 。
+3.  如果确定为真，则将元素插入[设置](https://www.geeksforgeeks.org/set-in-cpp-stl/)中，并递增**计数器**直到达到`K`。
 
-4.  当组的[大小等于 **K** 时，打印**组**中的元素。](https://www.geeksforgeeks.org/setsize-c-stl/)
+4.  当组的[大小等于`K`](https://www.geeksforgeeks.org/setsize-c-stl/)时，打印**组**中的元素。
 
 下面是上述方法的实现：
 
@@ -557,7 +561,7 @@ public static void Main()
 
 ```
 
-**时间复杂度**：O（N <sup>3/2</sup> ）
+**时间复杂度**：`O(N ^(3/2))`
 
 **辅助空间**：`O(n)`
 
