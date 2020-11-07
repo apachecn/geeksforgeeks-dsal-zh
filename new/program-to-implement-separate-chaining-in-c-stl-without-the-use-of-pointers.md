@@ -1,10 +1,10 @@
-# 程序，无需使用指针即可在 C++ STL 中实现单独链接
+# 不使用指针在 C++ STL 中实现单独链接的程序
 
 > 原文：[https://www.geeksforgeeks.org/program-to-implement-separate-chaining-in-c-stl-without-the-use-of-pointers/](https://www.geeksforgeeks.org/program-to-implement-separate-chaining-in-c-stl-without-the-use-of-pointers/)
 
 **先决条件**：[独立链接](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)和 [STL in C++](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/)
 
-本文借助 C++中的 STL 实现了哈希中的单独链接，而无需使用[指针](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)。
+本文借助 C++ 中的 STL 实现了哈希中的单独链接，而无需使用[指针](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)。
 
 **方法**：制作矢量的数组，以获得每个哈希索引的动态（可调整大小）数组，而不是[，使用链接列表执行相同的](https://www.geeksforgeeks.org/c-program-hashing-chaining/)。 现在，无需使用链表就可以更轻松地处理数据集。 这个简单的技巧更容易实现，效率更高。 在这种方法中：
 
@@ -25,25 +25,25 @@
 
     使用 STL 的单独链接
 
-    **算法：** 该方法的算法如下：
+    **算法**：该方法的算法如下：
 
-    1.  初始化向量的大小（例如 **n** ）。
+    1.  初始化向量的大小（例如`n`）。
 
     2.  添加元素时，请执行以下步骤：
 
-        1.  获得 x =” [value] MOD **n** ”的值。
+        1.  获得`x = [value] MOD n`的值。
 
-        2.  在 v [x]中推回该元素的值。
+        2.  在`v[x]`中推回该元素的值。
 
     3.  对于删除，我们按照以下步骤操作：
 
-        1.  获得 x =” [value] MOD **n** ”的值。
+        1.  获得`x = [value] MOD n`的值。
 
-        2.  扫描要在 v [x]中删除的元素。
+        2.  扫描要在`v[x]`中删除的元素。
 
-        3.  如果找到，请使用 [delete（）](https://www.geeksforgeeks.org/vector-erase-and-clear-in-cpp/)方法删除该元素。
+        3.  如果找到，请使用[`delete()`](https://www.geeksforgeeks.org/vector-erase-and-clear-in-cpp/)方法删除该元素。
 
-        4.  如果找不到要删除的元素，则打印“找不到元素！”。
+        4.  如果找不到要删除的元素，则打印`No Element Found!`。
 
     4.  打印哈希。
 

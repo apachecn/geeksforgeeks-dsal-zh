@@ -24,15 +24,21 @@ F0 = 0 and F1 = 1
 
 **示例**：
 
-> **输入**：N = 9
+> **输入**：`N = 9`
+>
 > **输出**：34
+>
 > **说明**：
-> 9 <sup>在斐波那契数列中的第</sup>个数字 是 34。
+>
+> 在斐波那契数列中的第 9 个数字是 34。
 > 
-> **输入**：N = 2
+> **输入**：`N = 2`
+>
 > **输出**：1
+>
 > **说明**：
-> 2 <sup>和</sup>编号在斐波那契数列中 是 1。
+>
+> 在斐波那契数列中的第 2 个数字是 1。
 
 下面是朴素方法的实现：
 
@@ -63,7 +69,7 @@ print (Fibonacci( 9 ))
 
 显然，以上方法具有指数时间复杂度。 为了存储先前计算的结果，让我们使用 python 的[字典](https://www.geeksforgeeks.org/python-dictionary/)类。
 
-**方法**：的想法是自定义词典类的 *__missing__* 方法。 当用户尝试访问不在词典中的键时，将执行此方法。 我们将使用自己的函数定义来重写此方法。
+**方法**：的想法是自定义词典类的`__missing__`方法。 当用户尝试访问不在词典中的键时，将执行此方法。 我们将使用自己的函数定义来重写此方法。
 
 下面是上述方法的实现：
 
@@ -104,7 +110,7 @@ print (N)
 
 上述方法也可以通过在 python 中使用[装饰器](https://www.geeksforgeeks.org/decorators-in-python/)来实现。
 
-[Decorator](https://www.geeksforgeeks.org/function-decorators-in-python-set-1-introduction/) 是 Python 中非常强大且有用的工具，因为它允许程序员修改函数或类的行为。 装饰器允许我们包装另一个函数以扩展包装函数的行为，而无需对其进行永久性修改。 这里，[备注](https://www.geeksforgeeks.org/memoization-using-decorators-in-python/?ref=rp)用于实现装饰器。
+[装饰器](https://www.geeksforgeeks.org/function-decorators-in-python-set-1-introduction/)是 Python 中非常强大且有用的工具，因为它允许程序员修改函数或类的行为。 装饰器允许我们包装另一个函数以扩展包装函数的行为，而无需对其进行永久性修改。 这里，[注解](https://www.geeksforgeeks.org/memoization-using-decorators-in-python/?ref=rp)用于实现装饰器。
 
 下面是上述方法的实现：
 
