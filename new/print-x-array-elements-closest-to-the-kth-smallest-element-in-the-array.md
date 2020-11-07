@@ -1,22 +1,22 @@
-# 打印最接近数组
+# 打印最接近数组中第`K`个最小元素的`X`个数组元素
 
 > 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 
-中第 K 个最小元素的 X 个数组元素
 
-给定两个整数 **K** ， **X** 和一个[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，它们由 **N** 个不同的元素组成， 任务是从给定数组中找到最接近 [**K <sup>K</sup>** 个最小元素的 **X** 元素。](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/)
+
+给定两个整数`K`， `X`和一个[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，它们由`N`个不同的元素组成， 任务是从给定数组中找到最接近[第`K`个最小元素](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/)的`X`个元素。
 
 **示例**：
 
-> **输入**：arr [] = {1、2、3、4、10}，K = 3，X = 2
-> **输出**：2 3
-> **说明：给定数组中存在的** K <sup>个第</sup>个最小元素是 3，最接近 X 的 X（= 2）数组元素是{2，3}或{3，4}。
-> 因此，所需的输出为 2 3。
+> **输入**：`arr[] = {1, 2, 3, 4, 10}, K = 3, X = 2`
+> **输出**：`2 3`
+> **说明**：给定数组中存在的第`K`个最小元素是 3，最接近`X = 2`的数组元素是`{2, 3}`或`{3, 4}`。
+> 因此，所需的输出为`2 3`。
 > 
-> **输入**：arr [] = {1、9、8、2、7、3、6、4、5、10、13、12、16、14、11、15}，K = 3， X = 5
-> **输出**：1 2 3 4 5
+> **输入**：`arr[] = {1, 9, 8, 2, 7, 3, 6, 4, 5, 10, 13, 12, 16, 14, 11, 15}, K = 3,  X = 5`
+> **输出**：`1 2 3 4 5`
 
-**朴素的方法**：解决此问题的最简单方法是[对数组](https://www.geeksforgeeks.org/sorting-algorithms/)排序，并打印 **X** 最接近 **K <sup>th</sup>** 使用[两指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)的给定数组的最小元素。
+**朴素的方法**：解决此问题的最简单方法是[对数组](https://www.geeksforgeeks.org/sorting-algorithms/)排序，并使用[两指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)，打印最接近给定数组的第`K`个最小元素的`X`。
 
 **时间复杂度**：`O(N * log N)`
 
@@ -24,17 +24,17 @@
 
 **有效方法**：为了优化上述方法，其思想是使用[中值来有效计算给定数组的 **K <sup>th</sup>** 最小元素的值 选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)。 请按照以下步骤解决问题：
 
-*   使用[中值选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)计算给定数组的最小 Kth，即 **KthElem** 。
+*   使用[中值选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)计算给定数组的第`K`小，即`KthElem`。
 
-*   初始化一个数组，例如说 **diff []** ，以存储 **arr [i]** 和 **KthElem** 的绝对差。
+*   初始化一个数组，例如说`diff[]`，以存储`arr[i]`和`KthElem`的绝对差。
 
-*   创建一个[映射](https://www.geeksforgeeks.org/defaultdict-in-python/)，例如说**映射**以将数组的每个元素映射到当前元素和 **KthElem** 的绝对差。
+*   创建一个[映射](https://www.geeksforgeeks.org/defaultdict-in-python/)，例如说**映射**以将数组的每个元素映射到当前元素和`KthElem`的绝对差。
 
-*   遍历给定数组，并将 **arr [i]** 附加到**映射[abs（KthElem – arr [i]）]** 。
+*   遍历给定数组，并将`arr[i]`附加到`map[abs(KthElem – arr[i])]`。
 
-*   使用[中值选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)计算 **X <sup>第</sup>** 个最小元素，例如 **diff []** 数组的 **XthElem** X 个最接近的项目。
+*   使用[中值选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)计算`diff[]`数组的第`X`个最小元素，例如`XthElem`，来打印`X`个最接近的项目。
 
-*   最后，遍历 **diff []** 数组，并检查 **XthElem** 是否小于或等于 **diff [i]** 。 如果确定为 true，则在**映射**的帮助下打印数组的元素。
+*   最后，遍历`diff[]`数组，并检查`XthElem`是否小于或等于`diff[i]`。 如果确定为`true`，则在**映射**的帮助下打印数组的元素。
 
 下面是上述方法的实现：
 

@@ -2,27 +2,33 @@
 
 > 原文：[https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/](https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/)
 
-给定表示给定数字质数列表的数组 **arr []** ，任务是找到该数字除数的乘积。
+给定表示给定数字质数列表的数组`arr[]`，任务是找到该数字除数的乘积。
 
-**注意**：由于产品可以打印得很大，因此答案模版 10 <sup>9</sup> +7。
+**注意**：由于产品可以打印得很大，因此答案模`10 ^ 9 + 7`。
 
 **示例**：
 
-> **输入**：arr [] = {2，2，3}
+> **输入**：`arr[] = {2, 2, 3}`
+>
 > **输出**：1728
+>
 > **说明**：
-> 因数= 2 * 2 * 3 =12。
-> 除数 12 为{1,2,3,4,6,12}。
+>
+> 因数`2 * 2 * 3 = 12`。
+>
+> 12 的除数为`{1,2,3,4,6,12}`。
+>
 > 因此，除数的乘积为 1728。
 > 
-> **输入**：arr [] = {11，11}。
+> **输入**：`arr[] = {11, 11}`
+>
 > **输出**：1331
 
 **朴素的方法**：
 
-从其主要因子列表生成数字 **N** ，然后以 O（√N）计算复杂度找到其所有除数，并继续计算其乘积。 打印获得的最终产品。
+从其主要因子列表生成数字`N`，然后以`O(√n)`计算复杂度找到其所有除数，并继续计算其乘积。 打印获得的最终产品。
 
-**时间复杂度**：O（N <sup>3/2</sup> ）
+**时间复杂度**：`O(N ^ (3/2))`
 
 **辅助空间**：`O(1)`
 
@@ -30,11 +36,11 @@
 
 要解决此问题，需要考虑以下几点：
 
-1.  根据[费马小定理](https://www.geeksforgeeks.org/fermats-little-theorem/)， **a <sup>（m – 1）</sup> = 1（mod m）**可以进一步扩展为 **a <sup>x</sup> = a <sup>x％（m – 1）</sup>（mod m）**
+1.  根据[费马小定理](https://www.geeksforgeeks.org/fermats-little-theorem/)， `a ^ (m - 1) = 1 (mod m)`可以进一步扩展为`a ^ x = a ^ (x % (m - 1)) (mod m)`
 
-2.  对于质数 **p** 升至幂 **a** ， **f（p <sup>a</sup> ）= p <sup>（a *（a + 1）/ 2））</sup>** 。
+2.  对于质数`p`的`a`次幂，`f(p ^ a) = p ^ (a * (a + 1) / 2)`。
 
-3.  因此， **f（a * b）= f（a）<sup>（d（b））</sup> * f（b）<sup>（d（a））</sup>** ， d（a），d（b）分别表示 a 和 b 中的除数。
+3.  因此，`f(a * b) = f(a) ^ d(b) * f(b) ^ d(a)`， `d(a)`，`d(b)`分别表示`a`和`b`中的除数。
 
 请按照以下步骤解决问题：
 
@@ -42,15 +48,15 @@
 
 *   Using the second observation, for every i <sup>th</sup> prime, calculate: 
 
-    > fp = power（p [i]，（cnt [i] +1）* cnt [i] / 2），其中 cnt [i]表示该质数的频率
+    > `fp = power(p[i]，(cnt[i] + 1) * cnt[i] / 2)`，其中`cnt[i]`表示该质数的频率
 
 *   Using the third observation, update the required product: 
 
-    > ans = power（ans，（cnt [i] + 1））* power（fp，d）％MOD，其中 d 是除以 **（i – 1） <sup>th</sup> 质数的除数**
+    > `ans = power(ans, (cnt[i] + 1)) * power(fp, d) % MOD`，其中`d`是直到第`i - 1`个质数的除数数量
 
-*   使用费马小定理更新除数 **d** 的数量：
+*   使用费马小定理更新除数的数量`d`：
 
-    > d = d *（cnt [i] + 1）％（MOD – 1）
+    > `d = d * (cnt[i] + 1) % (MOD – 1)`
 
 下面是上述方法的实现：
 
