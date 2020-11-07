@@ -30,7 +30,7 @@ The output of print this tree vertically will be:
 
 [以垂直顺序打印二叉树 | 系列 2（基于哈希映射的方法）](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
 
-上述解决方案使用预遍历和 Hashmap 来根据水平距离存储节点。 由于上述方法使用了预先遍历，因此垂直线中的节点可能无法按照它们在树中出现的顺序进行排序。 例如，上述解决方案在下面的树中的 9 之前打印 12。 请参阅[和](https://ide.geeksforgeeks.org/TPyOLR)以获取示例运行。
+上述解决方案使用预遍历和`Hashmap`来根据水平距离存储节点。 由于上述方法使用了预先遍历，因此垂直线中的节点可能无法按照它们在树中出现的顺序进行排序。 例如，上述解决方案在下面的树中的 9 之前打印 12。 请参阅[这里](https://ide.geeksforgeeks.org/TPyOLR)以获取示例运行。
 
 ```
              1
@@ -394,7 +394,7 @@ Vertical order traversal is
 
 上述实现的时间复杂度为`O(n Log n)`。 请注意，以上实现使用的映射是通过自平衡 BST 实现的。
 
-我们可以使用 unordered_map 将时间复杂度降低到`O(n)`。 为了以期望的顺序打印节点，我们可以有 2 个变量，分别表示最小和最大水平距离。 我们可以简单地从最小到最大水平距离进行迭代，并从 Map 中获取相应的值。 就是`O(n)`
+我们可以使用`unordered_map`将时间复杂度降低到`O(n)`。 为了以期望的顺序打印节点，我们可以有 2 个变量，分别表示最小和最大水平距离。 我们可以简单地从最小到最大水平距离进行迭代，并从`Map`中获取相应的值。 就是`O(n)`
 
 辅助空间：`O(n)`
 

@@ -1,27 +1,39 @@
-# 以很大的数字打印所有 K 位重复数字
+# 以很大的数字打印所有`K`位重复数字
 
 > 原文：[https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/](https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/)
 
-给定非常大的字符串形式的 **N** 和数字 **K** ，任务是打印所有 **K 数字**重复频率大于 1\.
+给定非常大的字符串形式的`N`和数字`K`，任务是打印所有重复频率大于 1 的`K`位数字。
 
 **示例**：
 
-> **输入**：str =“ 123412345123456”，K = 4
-> **输出**：。
+> **输入**：`str = "123412345123456", K = 4`
+>
+> **输出**：
+>
+> ```
 > 1234 – 3
 > 2345 – 2
+> ```
+> 
 > **说明**：
+>
 > 频率大于 1 的 4 位数字是 1234 和 2345。
 > 
-> **输入**：N = 1432543214325432，K = 5
+> **输入**：`N = 1432543214325432, K = 5`
+>
 > **输出**：
+>
+> ```
 > 14325 – 2
 > 32543 – 2
 > 43254 – 2
+> ```
+>
 > **说明**：
+>
 > 频率大于 1 的 5 位数字是 14325、32543 和 43254。
 
-**方法**：由于数字是以字符串形式给出的，因此，想法是将大小为 **K** 的所有子字符串及其频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中 。 现在，在迭代 Map 时，仅打印那些频率大于 1 的子字符串及其出现的次数。
+**方法**：由于数字是以字符串形式给出的，因此，想法是将大小为`K`的所有子字符串及其频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中 。 现在，在迭代映射时，仅打印那些频率大于 1 的子字符串及其出现的次数。
 
 下面是上述方法的实现：
 
