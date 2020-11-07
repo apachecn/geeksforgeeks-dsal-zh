@@ -1,8 +1,8 @@
-# 质数大于或等于 k 的数字
+# 质数大于或等于`k`的数字
 
 > 原文：[https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/](https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/)
 
-给定一个数组，找到出现在最小 k 频率（频率> = k）中的质数次的元素。
+给定一个数组，找到出现在最小`k`频率（频率`>= k`）中的质数次的元素。
 
 **示例**：
 

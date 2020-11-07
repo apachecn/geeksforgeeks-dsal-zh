@@ -1,8 +1,8 @@
-# 螺母&螺栓问题（锁定&键问题） | 系列 2（哈希映射）
+# 螺母&螺栓问题（钥匙和锁问题） | 系列 2（哈希映射）
 
 > 原文：[https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem-set-2-hashmap/](https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem-set-2-hashmap/)
 
-给定一组 n 个不同尺寸的螺母和 n 个不同尺寸的螺栓。 螺母和螺栓之间存在一对一的映射。 有效地匹配螺母和螺栓。
+给定一组`n`个不同尺寸的螺母和`n`个不同尺寸的螺栓。 螺母和螺栓之间存在一对一的映射。 有效地匹配螺母和螺栓。
 
 **约束**：不允许将螺母与另一个螺母或一个螺栓与另一个螺栓进行比较。 这意味着只能将螺母与螺栓进行比较，而只能将螺栓与螺母进行比较以查看哪个更大或更小。
 
@@ -21,13 +21,13 @@ Output : Matched nuts and bolts are-
 
 我们在下面的文章中讨论了基于排序的解决方案。
 
-[螺母&螺栓问题（锁定&键问题） | 系列 1](https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem/)
+[螺母&螺栓问题（钥匙和锁问题） | 系列 1](https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem/)
 
 在这篇文章中，讨论了基于哈希映射的方法。
 
 1.  遍历坚果数组并创建一个哈希表
 
-2.  遍历 bolts 数组并在 hashmap 中搜索。
+2.  遍历`bolts`数组并在`hashmap`中搜索。
 
 3.  如果在螺母的哈希映射中找到它，则意味着该螺母存在螺栓。
 

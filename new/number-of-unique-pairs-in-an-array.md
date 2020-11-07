@@ -1,18 +1,21 @@
-# 数组
+# 数组中的唯一偶对数量
 
 > 原文：[https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/](https://www.geeksforgeeks.org/number-of-unique-pairs-in-an-array/)
 
-中的唯一对数
 
-给定 N 个元素的数组，任务是找到可以使用给定数组的元素形成的所有唯一对。
+
+给定`N`个元素的数组，任务是找到可以使用给定数组的元素形成的所有唯一对。
 
 **示例**：
 
-> **输入**：arr [] = {1、1、2}
+> **输入**：`arr[] = {1, 1, 2}`
+>
 > **输出**：4
-> （1、1），（1、2），（2、1 ），（2，2）是唯一可能的对。
+>
+> `(1, 1), (1, 2), (2, 1), (2, 2)`是唯一可能的对。
 > 
-> **输入**：arr [] = {1、2、3}
+> **输入**：`arr[] = {1, 2, 3}`
+>
 > **输出**：9
 
 **朴素的方法**：简单的解决方案是遍历每个可能的对，并将它们添加到集合中，然后找出集合的大小。
@@ -195,9 +198,9 @@ public static void Main(string []arg)
 
 ```
 
-**时间复杂度**：上述实现的时间复杂度为 O（n <sup>2</sup> Log n）。 我们可以使用 [unordered_set 和用户定义的哈希函数](https://www.geeksforgeeks.org/how-to-create-an-unordered_set-of-user-defined-class-or-struct-in-c/)将其优化为`O(N ^ 2)`。
+**时间复杂度**：上述实现的时间复杂度为`O(n ^ 2 Log n)`。 我们可以使用[`unordered_set`](https://www.geeksforgeeks.org/how-to-create-an-unordered_set-of-user-defined-class-or-struct-in-c/)和用户定义的哈希函数将其优化为`O(N ^ 2)`。
 
-**高效方法**：首先找出数组中唯一元素的数量。 令唯一元素的数量为 **x** 。 那么，唯一对的数量将是 **x <sup>2</sup>** 。 这是因为每个唯一元素都可以与其他每个唯一元素（包括自身）形成一对。
+**高效方法**：首先找出数组中唯一元素的数量。 令唯一元素的数量为`x`。 那么，唯一对的数量将是`x ^ 2`。 这是因为每个唯一元素都可以与其他每个唯一元素（包括自身）形成一对。
 
 下面是上述方法的实现：
 
