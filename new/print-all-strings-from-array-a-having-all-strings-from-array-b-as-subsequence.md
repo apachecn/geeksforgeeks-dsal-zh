@@ -1,26 +1,30 @@
-# 打印数组 A []中的所有字符串，并将数组 B []中的所有字符串作为子序列
+# 打印数组`A[]`中的所有字符串，并将数组`B[]`中的所有字符串作为子序列
 
 > 原文：[https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/](https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/)
 
-给定两个由字符串组成的数组 **A []** 和 **B []** ，任务是从数组 **A []** 中打印所有字符串都位于 B [ ]作为子序列。
+给定两个由字符串组成的数组`A[]`和`B[]`，任务是从数组`A[]`中打印所有字符串都位于`B[]`作为子序列。
 
 **示例**：
 
-> **输入**：A [] = {“ geeksforgeeks”，“ mapple”，“ twitter”，“ table”，“ Linkedin”}，B [] = {“ e”，“ l”}
-> **输出**：maplet tablelinkedin
-> **说明**：字符串“ e”和“ l”都是“ mapple”，“ table”，“ linkedin”中的子集。
+> **输入**：`A[] = {"geeksforgeeks", "mapple", "twitter", "table", "Linkedin"}, B [] = {"e", "l"}`
+>
+> **输出**：`maplet tablelinkedin`
+>
+> **说明**：字符串`e`和`l`都是`"mapple"`，`"table"`，`"linkedin"`中的子集。
 > 
-> **输入**：A [] = {“ geeksforgeeks”，“ topcoder”，“ leetcode”}，B [] = {“ geek”，“ ee”}
-> **输出**：geeksforgeeks
-> **说明**：B []，{“ geek”，“ ee”}中的每个字符串仅出现在“ geeksforgeeks”中。
+> **输入**：`A[] = {"geeksforgeeks", "topcoder", "leetcode"}, B [] = {"geek", "ee"}`
+>
+> **输出**：`geeksforgeeks`
+>
+> **说明**：`B[] = {"geek", "ee"}`中的每个字符串仅出现在`"geeksforgeeks"`。
 
 **朴素的方法**：
 
-解决该问题的最简单方法是遍历数组 A []，对于每个字符串，检查数组 B []中的所有字符串是否都以[的形式存在 子序列](https://www.geeksforgeeks.org/given-two-strings-find-first-string-subsequence-second/)与否。
+解决该问题的最简单方法是遍历数组`A[]`，对于每个字符串，检查数组`B[]`中的所有字符串是否都以[的形式存在 子序列](https://www.geeksforgeeks.org/given-two-strings-find-first-string-subsequence-second/)与否。
 
-**时间复杂度**：O（N <sup>2</sup> * L），其中 length 表示数组 A []中字符串的最大长度
+**时间复杂度**：`O(N ^ 2 * L)`，其中`length`表示数组`A[]`中字符串的最大长度
 
-*[ **辅助空间**：`O(1)`*
+**辅助空间**：`O(1)`
 
 **有效方法**：
 
@@ -34,15 +38,15 @@
 
     > if A_fre [i] [j] < B_fre[j], where 
 
-    > **A_fre [i] [j]** ： **i 中具有 ASCII 值（**'a'+ j** ）的字符的频率 **A []** 中的<sup>字符串</sup>。
+    > `A_fre[i][j]`：`A[i]`中 ASCII 值为（`'a' + j`）的字符的频率。
 
-    > **B_fre [j]** ：B []字符串中具有 ASCII 值（**'a'+ j** ）的字符的频率。**
+    > `B_fre[i][j]`：`B[i]`中 ASCII 值为（`'a' + j`）的字符的频率。
 
-    那么该字符串在 **B []** 中至少有一个字符串，而不是其子序列。
+    那么该字符串在`B[]`中至少有一个字符串，而不是其子序列。
 
-*   如果 **A []** 中的任何字符串的所有字符都不满足上述条件，请将该字符串打印为答案。
+*   如果`A[]`中的任何字符串的所有字符都不满足上述条件，请将该字符串打印为答案。
 
-*   在检查了 A []中的所有字符串后，如果没有发现将 B []中的所有字符串作为其适当子集的字符串，请打印 **-1** 。
+*   在检查了`A[]`中的所有字符串后，如果没有发现将`B[]`中的所有字符串作为其适当子集的字符串，请打印 **-1**。
 
 下面是上述方法的实现：
 
@@ -505,7 +509,7 @@ geeksforgeeks
 
 ```
 
-**时间复杂度**：O（N * * L），其中 length 表示数组 A []中字符串的最大长度。
+**时间复杂度**：`O(N * L)`，其中`length`表示数组`A[]`中字符串的最大长度。
 
 **辅助空间**：`O(n)`
 

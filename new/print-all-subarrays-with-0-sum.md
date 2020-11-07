@@ -32,7 +32,7 @@ Subarray found from Index 0 to 10
 
 3.  检查哈希表中是否存在当前总和。
 
-4.  如果哈希表中已经存在当前总和，则表明该总和是某些子数组元素 arr [0]…arr [i]的总和，现在对于当前子数组 arr [0]获得相同的总和 …arr [j]表示子数组 arr [i + 1]…arr [j]的总和必须为 0。
+4.  如果哈希表中已经存在当前总和，则表明该总和是某些子数组元素`arr[0] … arr[i]`的总和，现在对于当前子数组`arr[0] … arr[j]`获得相同的总和，表示子数组`arr[i + 1] … arr[j]`的总和必须为 0。
 
 5.  将当前总和插入哈希表
 
@@ -110,8 +110,8 @@ int main()
 
     vector<pair<int, int> > out = findSubArrays(arr, n); 
 
-    // if we didn’t find any subarray with 0 sum, 
-    // then subarray doesn’t exists 
+    // if we didn't find any subarray with 0 sum, 
+    // then subarray doesn't exists 
     if (out.size() == 0) 
         cout << "No subarray exists"; 
     else
