@@ -2,19 +2,25 @@
 
 > 原文：[https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/](https://www.geeksforgeeks.org/print-the-last-character-of-lexicographically-smallest-non-palindromic-permutation-of-a-string/)
 
-给定[字符串](https://www.geeksforgeeks.org/string-data-structure/) **str** ，任务是打印给定字符串的字典最小的[非回文排列的最后一个字符。 如果不存在这样的排列，请打印**“ -1”** 。](https://www.geeksforgeeks.org/make-the-string-lexicographically-smallest-non-palindromic-by-replacing-exactly-one-character/)
-
+给定[字符串](https://www.geeksforgeeks.org/string-data-structure/)`str`，任务是打印给定字符串的字典最小的[非回文排列](https://www.geeksforgeeks.org/make-the-string-lexicographically-smallest-non-palindromic-by-replacing-exactly-one-character/)
+的最后一个字符。 如果不存在这样的排列，请打印 -1。
 **示例**：
 
-> **输入**：str =“ deepqvu”
-> **输出**：v
-> **说明**：字符串“ deepquv”是字典上最小的排列，并非 回文。
-> 因此，最后一个字符是 **v** 。
+> **输入**：`str = "deepqvu"`
+>
+> **输出**：`v`
+>
+> **说明**：字符串`"deepqvu"`是字典顺序的非回文最小排列。
+>
+> 因此，最后一个字符是`v`。
 > 
-> **输入**：str =“ zyxaaabb”
-> **输出**：z
-> **说明**：字符串“ aaabbxyz”是按字典顺序排列的最小排列，并非 回文。
-> 因此，最后一个字符是 **z** 。
+> **输入**：`str = "zyxaaabb"`
+>
+> **输出**：`z`
+>
+> **说明**：字符串`"zyxaaabb"`是按字典顺序的非回文最小排列。
+>
+> 因此，最后一个字符是`z`。
 
 **朴素的方法**：解决该问题的最简单方法是[生成给定字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，并针对每个排列检查它是否是回文集。 在所有获得的非回文排列中，按字典顺序打印最小的排列的最后一个字符。 请按照以下步骤操作：
 
@@ -400,11 +406,11 @@ public static void Main(String[] args)
 v 
 ```
 
-**时间复杂度**：O（N * N！）
+**时间复杂度**：`O(N * N!）`
 
 **辅助空间**：`O(1)`
 
-**有效方法**：为了优化上述方法，其思想是存储给定字符串 **str** 的每个字符的[频率。 如果所有字符都相同，则打印**“ -1”** 。 否则，打印给定字符串 **str** 的最大字符。](https://www.geeksforgeeks.org/print-characters-frequencies-order-occurrence/)
+**有效方法**：为了优化上述方法，其思想是存储给定字符串`str`的每个字符的[频率](https://www.geeksforgeeks.org/print-characters-frequencies-order-occurrence/)。 如果所有字符都相同，则打印 -1。 否则，打印给定字符串`str`的最大字符。
 
 下面是上述方法的实现：
 
@@ -511,7 +517,7 @@ v
 
 **时间复杂度**：`O(n)`
 
-**辅助空间**：O（26）
+**辅助空间**：`O(26)`
 
 
 
