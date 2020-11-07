@@ -1,8 +1,8 @@
-# Java 程序的输出| 第 55 集（Java 集合框架）
+# Java 程序的输出 | 系列 55（Java 集合框架）
 
 > 原文：[https://www.geeksforgeeks.org/output-of-java-programs-set-55-java-collections-framework/](https://www.geeksforgeeks.org/output-of-java-programs-set-55-java-collections-framework/)
 
-**先决条件**：[Java Collection Framework](https://www.geeksforgeeks.org/java-collection-tutorial/) 。
+**先决条件**：[Java 集合框架](https://www.geeksforgeeks.org/java-collection-tutorial/)。
 
 > **1.以下 Java 程序的输出是什么？**
 
@@ -35,7 +35,7 @@ System.out.print(arr.get(i) + " " );
 Answer: C.
 ```
 
-**说明**：[ArrayList.remove（）](https://www.geeksforgeeks.org/arraylist-linkedlist-remove-methods-java-examples/)方法采用索引或 Integer 类对象。 在这里，它获取索引并删除该索引处的元素。 因此，当我们使用 *new Integer（7）*时，它将从 [ArrayList](https://www.geeksforgeeks.org/arraylist-in-java/) 中删除值 7。
+**说明**：[`ArrayList.remove()`](https://www.geeksforgeeks.org/arraylist-linkedlist-remove-methods-java-examples/)方法采用索引或`Integer`类对象。 在这里，它获取索引并删除该索引处的元素。 因此，当我们使用`new Integer(7)`时，它将从[`ArrayList`](https://www.geeksforgeeks.org/arraylist-in-java/)中删除值 7。
 
 > **2.以下 Java 程序的输出是什么？**
 
@@ -225,31 +225,39 @@ entry.getKey()
 
 **答**：
 
-> Karan 1
-> Ayan 4
-> Deepak 2
-> Aman 3
+```
+Karan 1
+Ayan 4
+Deepak 2
+Aman 3
+```
 
 **B.**
 
-> Karan 1
-> 迪帕克 2
-> Aman 3
-> Ayan 4
+```
+Karan 1
+Deepak 2
+Aman 3
+Ayan 4
+```
 
 **C.**
 
-> Karan 1
-> 迪帕克 2
-> Ayan 4
-> Aman 3
+```
+Karan 1
+Deepak 2
+Ayan 4
+Aman 3
+```
 
 **D.**
 
-> 阿曼 3
-> 阿扬 4
-> 迪帕克 2
-> 卡兰 1
+```
+Aman 3
+Ayan 4
+Deepak 2
+Karan 1
+```
 
 ```
 Answer: D.
@@ -287,7 +295,7 @@ System.out.print(q.peek());
 Answer: D.
 ```
 
-**说明**：由于未在[队列](https://www.geeksforgeeks.org/queue-interface-java/)内放置任何值，因此 while 循环的条件为 false。
+**说明**：由于未在[队列](https://www.geeksforgeeks.org/queue-interface-java/)内放置任何值，因此`while`循环的条件为`false`。
 
 > **8.以下 Java 程序的输出是什么？**
 
@@ -323,7 +331,7 @@ D. 5 6 3 2 0 7 4
 Answer: C.
 ```
 
-**说明**：[HashSet](http://www.geeksforgeeks.org/hashset-in-java/) 不包含任何重复值。 因此 2 和 4 仅存储一次。 调用 remove 函数时，它将删除作为参数传递给该函数的值。
+**说明**：[`HashSet`](http://www.geeksforgeeks.org/hashset-in-java/)不包含任何重复值。 因此 2 和 4 仅存储一次。 调用`remove`函数时，它将删除作为参数传递给该函数的值。
 
 > **9.以下 Java 程序的输出是什么？**
 
