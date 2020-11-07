@@ -1,12 +1,12 @@
-# 以相等的总和在未排序的数组中打印所有对
+# 打印未排序的数组中所有总和相等的偶对
 
 > 原文：[https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/](https://www.geeksforgeeks.org/print-all-pairs-in-an-unsorted-array-with-equal-sum/)
 
-给定一个未排序的数组 A []。 任务是以相等的总和打印未排序数组中的所有**个唯一对**。
+给定一个未排序的数组`A[]`。 任务是打印未排序数组中的所有总和相等的**唯一对**。
 
 **注意**：以以下示例所示的格式打印结果。
 
-**示例**：[
+**示例**：
 
 ```
 Input: A[] = { 6, 4, 12, 10, 22, 54, 32, 42, 21, 11}

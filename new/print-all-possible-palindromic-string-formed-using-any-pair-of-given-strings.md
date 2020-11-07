@@ -6,19 +6,26 @@
 
 **示例**：
 
-> **输入**：arr [] = [“ geekf”，“ geeks”，“ or”，“ keeg”，“ abc”，“ ba”]
-> **输出**：[“ **，**
+> **输入**：`arr[] = ["geekf", "geeks", "or", "keeg", "abc", "ba"]`
+>
+> **输出**：`["geekfkeeg", "geekskeeg", "abcba"]`
+>
 > **解释**：
+>
 > 以下对构成组合中的回文字符串：
-> 1.“ geekf” +“ keeg” =“ geekfkeeg”
-> 2.“ geeks” +“ keeg” =“ geekskeeg”
-> 3.“ abc” +“ ba” =“ abcba”
+>
+> 1.  `"geekf" + "keeg" = "geekfkeeg"`
+> 2.  `"geeks" + "keeg" = "geekskeeg"`
+> 3.  `"abc" + "ba" = "abcba"`
 > 
-> **输入**：arr [] = [“ dcb”，“ yz”，“ xy”，“ efg”，“ yx”]
-> **输出**： [“ xyyx”，“ yxxy”]
+> **输入**：`arr[] = ["dcb", "yz", "xy", "efg", "yx"]`
+>
+> **输出**： `["xyyx", "yxxy"]`
+>
 > **说明**：
-> 1.“ xy” +“ yz” =“ xyyz”
-> 2.“ yx” +“ xy” =“ yxxy”
+>
+> 1.  `"xy"+"yz"="xyyz"`
+> 2.  `"yx"+"xy"="yxxy"`
 
 **朴素的方法**：朴素的方法是迭代[给定字符串数组](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)中的所有可能对，并检查字符串的连接是否形成回文。 如果是，则打印该对并检查下一对。
 
@@ -28,15 +35,15 @@
 
 **有效方法**：可以使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)优化上述方法。 步骤如下：
 
-1.  将所有单词存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，其中**单词**作为**键**和**索引**作为**值。**
+1.  将所有单词存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，其中**单词**作为**键**和**索引**作为**值**。
 
-2.  对于 **arr []** 中的每个单词（例如 **str** ），将字符串分成字符串 **s1** 和 **s2** ，这样 **s1 + s2 ＝ str** 。
+2.  对于`arr[]`中的每个单词（例如`str`），将字符串分成字符串`s1`和`s2`，这样`s1 + s2 = str`。
 
 3.  完成上述步骤后，出现两种情况：
 
-    *   **情况 1**：如果 **s1** 是回文字符串，并且 **s2** 的反向出现在哈希映射中，则我们得到所需的对（**反向 s2** + **当前单词**的形式）。
+    *   **情况 1**：如果`s1`是回文字符串，并且`s2`的反向出现在哈希映射中，则我们得到所需的对（`s2`的反向加**当前单词**的形式）。
 
-    *   **情况 2**：如果 **s2** 是回文字符串，并且如果哈希映射中存在反向 **s1** ，那么我们得到一个对（**当前字词** + s1 的反向**）。**
+    *   **情况 2**：如果`s2`是回文字符串，并且如果哈希映射中存在反向`s1`，那么我们得到一个对（**当前字词**加`s1`的反向）。
 
 4.  对数组中的所有字符串重复上述步骤。
 

@@ -2,32 +2,41 @@
 
 > 原文：[https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/](https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/)
 
-给定[字符串](https://www.geeksforgeeks.org/string-data-structure/)， **str** ，任务是查找给定字符串的索引，以使该索引左侧和右侧的按字典顺序排列的较小字符数相等且非 -零。
+给定[字符串](https://www.geeksforgeeks.org/string-data-structure/)`str`，任务是查找给定字符串的索引，以使该索引左侧和右侧的按字典顺序排列的较小字符数相等且非零。
 
 **示例**：
 
-> **输入**：str =“ aabacdabbb” 2 是 2，索引 2 的右侧也是 2。
-> 索引 4 左侧的小字符计数是 4，索引 4 的右侧也是 4 。
+> **输入**：`str = "aabacdabbb"`
+>
+> **输出**：2 4
+>
+> 索引 2 左侧的小字符计数是 2，索引 2 的右侧也是 2。
+>
+> 索引 4 左侧的小字符计数是 4，索引 4 的右侧也是 4。
 > 
-> **输入**：“ geeksforgeeks”
+> **输入**：`"geeksforgeeks"`
+>
 > **输出**：5
+>
 > **说明**：
+>
 > 索引 5 左侧较小字符的计数为 2 并且索引 5 的右侧也为 2。
+>
 > 因此，所需的输出为 5。
 
 **朴素的方法**：解决此问题的最简单方法是[遍历给定的字符串](https://www.geeksforgeeks.org/strings-in-c-2/)并计算给定字符串每个索引左侧和右侧的按字典顺序排列的较小字符数 。 对于每个索引，请检查当前索引左侧和右侧在字典上较小的字符数是否相等。 如果发现为真，则打印当前索引。
 
-***时间复杂度**：（N <sup>2</sup> ）*Â
+**时间复杂度**：`O(N ^ 2)`
 
 **辅助空间**：`O(1)`
 
 **高效方法**：要优化上述方法，其思想是使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)。 请按照以下步骤解决问题：
 
-*   初始化一个数组，例如说 **cntFre []** ，以存储给定字符串的每个字符的频率
+*   初始化一个数组，例如说`cntFre[]`，以存储给定字符串的每个字符的频率
 
 *   [遍历给定的字符串](https://www.geeksforgeeks.org/strings-in-c-2/)，并存储给定字符串的每个字符的频率。
 
-*   初始化一个数组，例如说 **cntLeftFreq []** ，以存储出现在给定字符串当前索引左侧的所有字符的频率。
+*   初始化一个数组，例如说`cntLeftFreq[]`，以存储出现在给定字符串当前索引左侧的所有字符的频率。
 
 *   [遍历给定的字符串](https://www.geeksforgeeks.org/strings-in-c-2/)，并存储出现在当前索引左侧的所有按字典顺序排列的较小字符的频率。
 
@@ -201,9 +210,9 @@ if __name__ == '__main__':
 
 ```
 
-**时间复杂度**：O（N * 256）
+**时间复杂度**：`O(N * 256)`
 
-**辅助空间**：O（256）
+**辅助空间**：`O(256)`
 
 
 

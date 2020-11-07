@@ -8,30 +8,42 @@
 
 **示例**：
 
-> **输入**：arr [] = {1、2、5、1、2}
+> **输入**：`arr[] = {1, 2, 5, 1, 2}`
+>
 > **输出**：
+>
+> ```
 > 1 2
-> **说明**：
-> 1 2 是数组中唯一重复的整数对。
+> ```
 > 
-> **输入**：arr [] = {1、2、3、4、1、2、3、4、1、2}
+> **说明**：
+>
+> `1 2`是数组中唯一重复的整数对。
+> 
+> **输入**：`arr[] = {1, 2, 3, 4, 1, 2, 3, 4, 1, 2}`
+>
 > **输出**：
+>
+> ```
 > 1 2
 > 2 3
 > 3 4
 > 4 1
+> ```
+> 
 > **说明**：
+>
 > 由于数组具有多个重复对，因此所有对均按排序顺序打印。
 
-**方法**：最简单的方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并将每个相邻对存储在 [Map](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 中。 打印频率大于 **1** 的所有此类对。 请按照以下步骤解决问题：
+**方法**：最简单的方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并将每个相邻对存储在[`Map`](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。 打印频率大于 **1** 的所有此类对。 请按照以下步骤解决问题：
 
-1.  创建一个映射 **M** 以将所有相邻对存储在数组中。
+1.  创建一个映射`M`以将所有相邻对存储在数组中。
 
-2.  [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并将每个相邻对存储在 Map **M** 中。
+2.  [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并将每个相邻对存储在`Map M`中。
 
-3.  完成上述步骤后，[遍历图](https://www.geeksforgeeks.org/traversing-a-map-or-unordered_map-in-cpp-stl/)，如果任意一对频率至少为一个，则将其插入向量 **V** 中。
+3.  完成上述步骤后，[遍历图](https://www.geeksforgeeks.org/traversing-a-map-or-unordered_map-in-cpp-stl/)，如果任意一对频率至少为一个，则将其插入向量`V`中。
 
-4.  [以升序](https://www.geeksforgeeks.org/sorting-a-vector-in-c/)对向量 **v** 进行排序，并打印存储在其中的所有对。
+4.  [以升序](https://www.geeksforgeeks.org/sorting-a-vector-in-c/)对向量`V`进行排序，并打印存储在其中的所有对。
 
 下面是上述方法的实现：
 
