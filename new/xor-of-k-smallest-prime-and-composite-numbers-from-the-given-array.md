@@ -1,32 +1,38 @@
-# 来自给定数组
+# 来自给定数组的`K`个最小质数和合数的 XOR
 
 > 原文：[https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/](https://www.geeksforgeeks.org/xor-of-k-smallest-prime-and-composite-numbers-from-the-given-array/)
 
-的 K 个最小质数和复合数的 XOR
 
-给定 **N** 个非零正整数的数组`arr[]`和一个整数 **K** ，任务是找到 **K [XOR]。** 最大质数和复合数。
+
+给定`N`个非零正整数的数组`arr[]`和一个整数`K`，任务是找到`K`个最大质数和合数的 XOR。
 
 **示例**：
 
-> **输入**：arr [] = {4、2、12、13、5、19}，K = 3
+> **输入**：`arr[] = {4, 2, 12, 13, 5, 19}, K = 3`
+>
 > **输出**：
-> 原始 XOR = 10
-> 复合 XOR = 8
-> 2，5 和 13 是给定数组中的三个最大质数
-> ，2 ^ 5 ^ 13 =10。
-> 数组中只有 2 个复合素，即 4 和 12。
-> 和 4 ^ 12 = 8
+>
+> 质数`XOR = 10`
+>
+> 合数`XOR = 8`
+>
+> 2，5 和 13 是给定数组中的三个最大质数，`2 XOR 5 XOR 13 = 10`。
+>
+> 数组中只有 2 个复合素，即 4 和 12，`4 XOR 12 = 8`
 > 
-> **输入**：arr [] = {1、2、3、4、5、6、7}，K = 1
+> **输入**：`arr[] = {1, 2, 3, 4, 5, 6, 7}, K = 1`
+>
 > **输出**：
-> 主 XOR = 2 [
-> 复合 XOR = 4
+>
+> 质数`XOR = 2`
+>
+> 合数`XOR = 4`
 
-**方法**：使用 [Eratosthenes 筛网](http://www.geeksforgeeks.org/sieve-of-eratosthenes/)生成一个布尔向量，该布尔向量达到数组中最大元素的大小，该布尔向量可用于检查数字是否为质数。
+**方法**：使用 [Eratosthenes 筛子](http://www.geeksforgeeks.org/sieve-of-eratosthenes/)生成一个布尔向量，该布尔向量达到数组中最大元素的大小，该布尔向量可用于检查数字是否为质数。
 
-现在遍历数组，并在 min 堆 **minHeapPrime** 中插入所有质数，并在 min 堆 **minHeapNonPrime** 中插入所有组合数字。
+现在遍历数组，并在最小堆`minHeapPrime`中插入所有质数，并在最小堆`minHeapNonPrime`中插入所有组合数字。
 
-现在，从两个最小堆中弹出顶部的 **K** 个元素，并对这些元素进行异或。
+现在，从两个最小堆中弹出顶部的`K`个元素，并对这些元素进行异或。
 
 下面是上述方法的实现：
 
