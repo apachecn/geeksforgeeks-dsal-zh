@@ -15,7 +15,7 @@ Output : ab, aab
 
 ```
 
-问题来源： [Yatra.com 采访经历 | 系列 7](https://www.geeksforgeeks.org/yatra-com-interview-experience-set-7/)
+问题来源： [Yatra.com 面试经历 | 系列 7](https://www.geeksforgeeks.org/yatra-com-interview-experience-set-7/)
 
 **算法说明**：
 

@@ -58,7 +58,7 @@ Zoho 曾访问我们的大学以招募软件开发人员。 有两种类型的�
 
 **面试**：
 
-随后进行了一些采访。 其中一些只是为了了解您。 一次采访有一些困惑。 其中一个是对 Zoho 首席人力资源官的正式采访
+随后进行了一些面试。 其中一些只是为了了解您。 一次面试有一些困惑。 其中一个是对 Zoho 首席人力资源官的正式面试
 
 Those who did really well got the higher package and those who just missed it also got the job with a lower package.
 

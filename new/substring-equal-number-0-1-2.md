@@ -7,10 +7,10 @@
 **示例**：
 
 ```
-Input  :  str = “0102010”
+Input  :  str = "0102010"
 Output :  2
-Explanation : Substring str[2, 4] = “102” and 
-              substring str[4, 6] = “201” has 
+Explanation : Substring str[2, 4] = "102" and 
+              substring str[4, 6] = "201" has 
               equal number of 0, 1 and 2
 
 Input : str = "102100211"
@@ -18,7 +18,7 @@ Output : 5
 
 ```
 
-**简单解决方案**遍历 str 的所有子串，并检查它们是否包含等于 0、1、2 的值。 str 的子字符串总数为`O(N ^ 2)`，检查每个子字符串的计数需要`O(n)`次，因此解决此问题所需的总时间为`O(N ^ 3)` 时间用蛮力方法。
+**简单解决方案**遍历`str`的所有子串，并检查它们是否包含等于 0、1、2 的值。 `str`的子字符串总数为`O(N ^ 2)`，检查每个子字符串的计数需要`O(n)`次，因此解决此问题所需的总时间为`O(N ^ 3)`时间用蛮力方法。
 
 一种有效的**解决方案**是跟踪计数 0、1 和 2。
 
