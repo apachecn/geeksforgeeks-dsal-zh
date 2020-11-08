@@ -1,4 +1,4 @@
-# 两个链表的并集和相交 | 系列 3（哈希）
+# 两个链表的并集和交集 | 系列 3（哈希）
 
 > 原文：[https://www.geeksforgeeks.org/union-intersection-two-linked-lists-set-3-hashing/](https://www.geeksforgeeks.org/union-intersection-two-linked-lists-set-3-hashing/)
 
@@ -46,7 +46,7 @@ Implementation:
 
 ```
 
-以下是上述步骤的 C++实现。
+以下是上述步骤的 C++ 实现。
 
 ```
 // C++ program to find union and intersection of
@@ -190,19 +190,19 @@ Union list is
 
 ```
 
-我们还可以通过为两个列表维护单独的 Hash 来处理重复项。
+我们还可以通过为两个列表维护单独的哈希来处理重复项。
 
 **复杂度分析**：
 
 *   **时间复杂度**：`O(m + n)`。
 
-    这里的“ m”和“ n”分别是第一和第二列表中存在的元素数。
+    这里的`m`和`n`分别是第一和第二列表中存在的元素数。
 
     **原因**：
 
-    对于联合：遍历两个列表，将元素存储在哈希映射中并更新各自的计数。
+    对于并集：遍历两个列表，将元素存储在哈希映射中并更新各自的计数。
 
-    对于路口：检查哈希映射中元素的计数是否为“ 2”。
+    对于交集：检查哈希映射中元素的计数是否为 2。
 
 *   **辅助空间**：`O(m + n)`。
 
