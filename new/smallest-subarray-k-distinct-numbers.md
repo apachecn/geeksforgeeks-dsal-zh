@@ -1,8 +1,8 @@
-# 具有 k 个不同数字的最小子数组
+# 具有`k`个不同数字的最小子数组
 
 > 原文：[https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/](https://www.geeksforgeeks.org/smallest-subarray-k-distinct-numbers/)
 
-给定一个由 n 个整数和一个整数 k 组成的数组。 我们需要在数组[l，r]中找到最小范围（l 和 r 都包括在内），以便恰好有 k 个不同的数字。
+给定一个由`n`个整数和一个整数`k`组成的数组。 我们需要在数组`[l, r]`中找到最小范围（`l`和`r`都包括在内），以便恰好有`k`个不同的数字。
 
 **示例**：
 
@@ -306,7 +306,7 @@ public static void Main(string[] args)
 
 **时间复杂度**：`O(N ^ 2)`
 
-**通过上述简单解决方案的优化**。 我们的想法是在找到 k 个不同的元素后删除左侧的重复项。
+**通过上述简单解决方案的优化**。 我们的想法是在找到`k`个不同的元素后删除左侧的重复项。
 
 ## C++
 
