@@ -1,31 +1,42 @@
-# 在给定字符串
+# 在给定字符串中具有最大频率的长度为`K`的子字符串
 
 > 原文：[https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/](https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/)
 
-中具有最大频率的长度为 K 的子字符串
 
-给定字符串 **str** ，任务是找到长度为 **K** 的[子字符串](https://www.geeksforgeeks.org/substring-in-cpp/)，出现次数最多。 如果最多出现多次字符串，请打印按字典顺序最小的子字符串。
+
+给定字符串`str`，任务是找到长度为`K`的[子字符串](https://www.geeksforgeeks.org/substring-in-cpp/)，出现次数最多。 如果最多出现多次字符串，请打印按字典顺序最小的子字符串。
 
 **示例**：
 
-> **输入**：str =“ bbbbbaaaaabbabababa”，K = 5
-> **输出**：ababa
+> **输入**：`str = "bbbbbaaaaabbabababa", K = 5`
+>
+> **输出**：`ababa`
+>
 > **说明**：
-> 长度为 5 的子字符串 上面的字符串是{bbbbb，bbbba，bbbaa，bbaaa，baaaa，aaaaa，aaaab，aaabb，aabba，abbab，bbaba，babab，ababa，babab，ababa}。
-> 在所有字符串中，子字符串{ababa，babab}占最大次数（= 2）。
-> 从{ababa，babab}开始的词典上最小的字符串是 ababa。
-> 因此，“ ababa”是必需的答案。
+>
+> 长度为 5 的子字符串 上面的字符串是`{bbbbb, bbbba, bbbaa, bbaaa, baaaa, aaaaa, aaaab, aaabb, aabba, abbab, bbaba, babab, ababa, babab, ababa}`。
+>
+> 在所有字符串中，子字符串`{ababa, babab}`占最大次数（为 2）。
+>
+> 从`{ababa, babab}`开始的词典上最小的字符串是`ababa`。
+>
+> 因此，`"ababa"`是所需答案。
 > 
-> **输入**：str =“ heisagoodboy”，K = 5
-> **输出**：agood
+> **输入**：`str = "heisagoodboy", K = 5`
+>
+> **输出**：`agood`
+>
 > **说明**：
-> 长度为 5 的子字符串 上面的字符串是{heisa，eisag，isago，sagoo，agood，goodb，oodbo，odboy}。
-> 所有这些仅发生一次。 但是，按字典顺序，最小的字符串是“好”。
-> 因此，“ agood”是必需的答案。
+>
+> 长度为 5 的子字符串 上面的字符串是`{heisa, eisag, isago, sagoo, agood, goodb, oodbo, odboy}`。
+>
+> 所有这些仅发生一次。 但是，按字典顺序，最小的字符串是`"agood"`。
+>
+> 因此，`"agood"`是必需的答案。
 
 **朴素的方法**：解决问题的最简单方法是[从给定的字符串中生成大小为 **K** 的所有子字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)，并将每个子字符串的频率存储在一个 [映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 然后，遍历**映射**并找到出现次数最多的字典上最小的子字符串并将其打印出来。
 
- ***时间复杂度**：O（N *（K + log K））
+ ***时间复杂度**：`O(N *(K + log K))`
 
 **辅助空间**：`O(N * K)`
 
@@ -211,9 +222,9 @@ ababa
 
 ```
 
-**时间复杂度**：O（（N-K）* log（N-K））
+**时间复杂度**：`O((N - K)* log(N - K))`
 
-**辅助空间**：O（N-K ）
+**辅助空间**：`O(N - K)`
 
 
 
