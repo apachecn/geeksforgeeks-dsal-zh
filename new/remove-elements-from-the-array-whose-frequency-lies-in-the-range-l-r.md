@@ -1,19 +1,20 @@
-# 从频率为[l，r]范围的数组中删除元素
+# 从频率为`[l, r]`范围的数组中删除元素
 
 > 原文：[https://www.geeksforgeeks.org/remove-elements-from-the-array-whose-frequency-lies-in-the-range-l-r/](https://www.geeksforgeeks.org/remove-elements-from-the-array-whose-frequency-lies-in-the-range-l-r/)
 
-给定一个整数数组，请从该数组中删除其频率在[l，r]范围内的元素。
+给定一个整数数组，请从该数组中删除其频率在`[l, r]`范围内的元素。
 
 **示例**：
 
-> 输入：arr [] = {1，2，3，3，2，2，5}
-> l = 2，r = 3
-> 输出：1 5
-> 我们从 2 中删除所有具有频率的元素 至 5。
+> 输入：`arr[] = {1, 2, 3, 3, 2, 2, 5}, l = 2, r = 3`
+>
+> 输出：`1 5`
+>
+> 我们删除所有频率从 2 至 5 的元素 。
 > 
-> 输入：arr [] = {1，2，3，3，3，3}
-> l = 2，r = 3
-> 输出：3 3 3 3
+> 输入：`arr[] = {1, 2, 3, 3, 3, 3}, l = 2, r = 3`
+>
+> 输出：`3 3 3 3`
 
 **方法**：
 
@@ -21,7 +22,7 @@
 
 *   现在，再次遍历。
 
-*   删除频率在[l，r]之间的元素。
+*   删除频率在`[l, r]`之间的元素。
 
 *   否则，打印它。
 
