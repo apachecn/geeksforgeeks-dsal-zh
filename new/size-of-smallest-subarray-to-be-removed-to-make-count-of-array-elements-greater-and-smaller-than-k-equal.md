@@ -1,20 +1,24 @@
-# 要删除的最小子数组的大小，以使数组元素的数量大于或小于 K
+# 要删除的最小子数组的大小，以使数组元素的数量大于或小于`K`
 
 > 原文：[https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/](https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/)
 
-给定一个整数 **K** 和一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个整数组成，任务是找到以下子数组的长度： 要删除的最小可能长度，以使其余数组中小于和大于 **K** 的数组元素数相等。
+给定一个整数`K`和一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) `arr[]`，该数组由`N`个整数组成，任务是找到以下子数组的长度： 要删除的最小可能长度，以使其余数组中小于和大于`K`的数组元素数相等。
 
 **示例**：
 
-> **输入**：arr [] = {5，7，2，8，7，4，5，9}，K = 5
+> **输入**：`arr[] = {5, 7, 2, 8, 7, 4, 5, 9}, K = 5`
+>
 > **输出**：2
+>
 > **解释**：
-> 需要删除的最小子数组是{8，7}，以使最大的结果数组{5、7、2、4、5、9}满足给定条件。
+>
+> 需要删除的最小子数组是`{8, 7}`，以使最大的结果数组`{5, 7, 2, 4, 5, 9}`满足给定条件。
 > 
-> **输入**：arr [] = {12，16，12，13，10}，K = 13
+> **输入**：`arr[] = {12, 16, 12, 13, 10}, K = 13`
+>
 > **输出**：3
-> **说明**：为了使最大的合成数组{12，16}满足给定条件，需要删除的
-> 最大的子数组{12，13，10}。
+>
+> **说明**：为了使最大的合成数组`{12, 16}`满足给定条件，需要删除的最大的子数组`{12, 13, 10}`。
 
 **朴素的方法**：解决问题的最简单方法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并且[遍历其余数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，以保留严格限制的数组元素的数量 大于和小于整数 **K** 。 然后，选择最小的子数组，该子数组的删除将给出具有相等数量的较小和较大元素的数组。
 
@@ -24,19 +28,19 @@
 
 **高效方法**：的想法是使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)，并对数组进行一些修改以在`O(n)`时间内解决该问题。 给定的数组可以具有 3 种类型的元素：
 
-*   **元素= K** ：将元素更改为 0（因为我们需要**严格大于 **K** 或小于 **K** 的元素）**
+*   `elem = K`：将元素更改为 0（因为我们需要**严格大于`K`或小于`K`的元素**）
 
-*   **元素> K** ：将元素更改为 1
+*   `elem > K`：将元素更改为 1
 
-*   **元素< K** ：将元素更改为-1
+*   `elem < K`：将元素更改为-1
 
-现在，[计算所有数组元素](https://www.geeksforgeeks.org/program-find-sum-elements-given-array/)的总和，并将其存储在变量中，例如 *total_sum* 。 现在，total_sum 可以具有三个可能的值范围：
+现在，[计算所有数组元素](https://www.geeksforgeeks.org/program-find-sum-elements-given-array/)的总和，并将其存储在变量中，例如`total_sum`。 现在，total_sum 可以具有三个可能的值范围：
 
-*   **如果 total_sum = 0** ：所有 1 都被-1 抵消。 因此，已经存在相等数量的 **K** 元素。 不需要删除操作。 因此，**打印 0** 作为所需答案。
+*   如果`total_sum = 0`：所有 1 都被 -1 抵消。 因此，已经存在相等数量的`K`元素。 不需要删除操作。 因此，**打印 0** 作为所需答案。
 
-*   **如果 total_sum > 0** ：一些 1s 不能取消-1s。 即数组比 **K** 具有更多的大元素，而比 **K** 具有更少的小元素。 因此，找到 **sum = total_sum** 的最小子数组，因为它是要删除的最小子数组。
+*   如果`total_sum > 0`：一些 1s 不能抵消 -1s。 即数组比`K`具有更多的大元素，而比`K`具有更少的小元素。 因此，找到`sum = total_sum`的最小子数组，因为它是要删除的最小子数组。
 
-*   **如果 total_sum < 0**：一些-1s 不能取消 1s。 即数组比 k 具有更多的较小元素，并且比 **K** 具有更少的较大元素。 因此，找到 **sum = total_sum** 的最小子数组，因为它是要删除的最小子数组。
+*   如果`total_sum < 0`：一些 -1s 不能抵消 1s。 即数组比`K`具有更多的较小元素，并且比`K`具有更少的较大元素。 因此，找到`sum = total_sum`的最小子数组，因为它是要删除的最小子数组。
 
 下面是上述方法的实现：
 

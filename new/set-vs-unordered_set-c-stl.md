@@ -1,10 +1,8 @@
-# C++ STL 中的
+# C++ STL 中的`set` VS `unordered_set`
 
 > 原文：[https://www.geeksforgeeks.org/set-vs-unordered_set-c-stl/](https://www.geeksforgeeks.org/set-vs-unordered_set-c-stl/)
 
-# set vs unordered_set
-
-先决条件：在 C++中设置 [](https://www.geeksforgeeks.org/set-in-cpp-stl/) ，在 C++中设置 [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
+先决条件：[C++ 中的`set`](https://www.geeksforgeeks.org/set-in-cpp-stl/)，[ C++ 中的`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
 
 **差异**：
 
@@ -26,7 +24,7 @@ Deletion time   | log(n) + Rebalance  | Same as search
 
 ```
 
-**设置为**时使用
+什么时候使用`set`
 
 *   我们需要有序的数据。
 
@@ -34,11 +32,11 @@ Deletion time   | log(n) + Rebalance  | Same as search
 
 *   我们需要元素的前任/后继。
 
-*   由于 set 是有序的，因此我们可以在 set 元素上使用 [binary_search（），lower_bound（）和 upper_bound（）](https://www.geeksforgeeks.org/binary-search-functions-in-c-stl-binary_search-lower_bound-and-upper_bound/)之类的函数。 这些函数不能在 unordered_set（）上使用。
+*   由于`set`是有序的，因此我们可以在`set`元素上使用[`binary_search()`，`lower_bound()`和`upper_bound()`](https://www.geeksforgeeks.org/binary-search-functions-in-c-stl-binary_search-lower_bound-and-upper_bound/)之类的函数。 这些函数不能在`nordered_set()`上使用。
 
-*   有关更多情况，请参见 BST 相对于哈希表 e 的[优势。](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/)
+*   有关更多情况，请参见 [BST 相对于哈希表的优势](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/)。
 
-**当**时使用 unordered_set
+什么时候使用`unordered_set`
 
 *   我们需要保留一组不同的元素，并且不需要排序。
 
@@ -57,7 +55,7 @@ Output : 9 3 1 8 2 5
 
 ```
 
-如果要查看 C++ STL 中 set 和 unordered_set 的实现细节，请参见 [Set Vs Map](https://www.geeksforgeeks.org/set-vs-map-c-stl/) 。 Set 允许按排序顺序遍历元素，而 Unordered_set 不允许按排序顺序遍历元素。
+如果要查看 C++ STL 中`set`和`unordered_set`的实现细节，请参见[集合 Vs 映射](https://www.geeksforgeeks.org/set-vs-map-c-stl/) 。 `Set`允许按排序顺序遍历元素，而`Unordered_set`不允许按排序顺序遍历元素。
 
 ```
 // Program to print elements of set
@@ -117,7 +115,7 @@ Elements of unordered_set:
 
 ***集合中的前任/后继者*** ：
 
-可以修改集合以查找前任或后继者，而 Unordered_set 不允许查找前任/后继者。
+可以修改集合以查找前任或后继者，而`Unordered_set`不允许查找前任/后继者。
 
 ```
 // Program to print inorder predecessor and inorder successor
