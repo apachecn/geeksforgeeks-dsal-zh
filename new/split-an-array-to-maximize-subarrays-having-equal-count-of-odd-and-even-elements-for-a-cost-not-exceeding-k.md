@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/split-an-array-to-maximize-subarrays-having-equal-count-of-odd-and-even-elements-for-a-cost-not-exceeding-k/](https://www.geeksforgeeks.org/split-an-array-to-maximize-subarrays-having-equal-count-of-odd-and-even-elements-for-a-cost-not-exceeding-k/)
 
-给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 和整数 **K** ，任务是将给定数组拆分为最大可能的子数组 具有偶数和奇数元素的[计数相等，从而拆分数组的成本不超过 **K** 。](https://www.geeksforgeeks.org/count-subarrays-with-same-even-and-odd-elements/)
+给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`和整数 **K** ，任务是将给定数组拆分为最大可能的子数组 具有偶数和奇数元素的[计数相等，从而拆分数组的成本不超过 **K** 。](https://www.geeksforgeeks.org/count-subarrays-with-same-even-and-odd-elements/)
 
 > 将数组拆分为子数组的成本分别是子数组的最后一个元素与第一个元素之间的差。
 
@@ -39,7 +39,7 @@
 
 1.  初始化一个数组（例如 **poss []** ），该数组存储所有可能的拆分成本。
 
-2.  遍历数组 **arr []** 。 对于每个索引，检查直到该索引的子数组和从下一个索引开始的子数组的奇数和偶数元素计数是否相等。
+2.  遍历数组`arr[]`。 对于每个索引，检查直到该索引的子数组和从下一个索引开始的子数组的奇数和偶数元素计数是否相等。
 
 3.  如果满足以上条件，则可以拆分。 将与此拆分相关的成本存储在 **poss []** 中。
 

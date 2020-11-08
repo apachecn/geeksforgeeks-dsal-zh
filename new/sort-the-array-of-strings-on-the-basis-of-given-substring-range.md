@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/sort-the-array-of-strings-on-the-basis-of-given-substring-range/](https://www.geeksforgeeks.org/sort-the-array-of-strings-on-the-basis-of-given-substring-range/)
 
-给定两个正整数 **I** 和 **X** 以及字符串 **arr []** 的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)，任务是[对给定的字符串进行排序 从大小为 **X** 的索引 **I** 开始的怀疑字符串基础上的字符串数组](https://www.geeksforgeeks.org/c-program-sort-array-names-strings/)。
+给定两个正整数 **I** 和 **X** 以及字符串`arr[]`的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)，任务是[对给定的字符串进行排序 从大小为 **X** 的索引 **I** 开始的怀疑字符串基础上的字符串数组](https://www.geeksforgeeks.org/c-program-sort-array-names-strings/)。
 
 **示例**：
 

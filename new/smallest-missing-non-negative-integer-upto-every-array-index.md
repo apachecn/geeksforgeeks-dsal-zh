@@ -2,30 +2,30 @@
 
 > 原文：[https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/](https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/)
 
-给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，对于每个数组索引，任务是找到[最小的丢失的非负整数](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/) ]直到给定数组的索引。
+给定大小为`N`的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，对于每个数组索引，任务是找到[最小的丢失的非负整数](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/) ]直到给定数组的索引。
 
 **示例**：
 
-> **输入**：arr [] = {1、3、0、2}
-> **输出**：0 0 2 4
+> **输入**：`arr[] = {1, 3, 0, 2}`
+> **输出**：`0 0 2 4`
 > **说明**：
 > 从索引 0 到 0 的最小丢失的非负整数是 0。
 > 从索引 0 到 1 的最小丢失的非负整数是 0。
 > 从索引 0 到 2 的最小丢失的非负整数是 2。
 > 从索引 0 到 3 的最小丢失的非负整数是 4。
 > 
-> **输入**：arr [] = {0，1，2，3，5}
-> **输出**：1 2 3 4 4
+> **输入**：`arr [] = {0, 1, 2, 3, 5}`
+> **输出**：`1 2 3 4 4`
 
 **方法**：可以使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)解决此问题。 请按照以下步骤解决问题：
 
-*   初始化一个变量，例如 **smNonNeg** ，以在给定数组的起始索引和当前索引之间存储[最小丢失的非负整数](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/)。
+*   初始化一个变量，例如`smNonNeg`，以在给定数组的起始索引和当前索引之间存储[最小丢失的非负整数](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/)。
 
-*   初始化一个数组，例如说 **hash [N]** ，以检查在起始索引和当前索引之间是否存在 **smNonNeg** 。
+*   初始化一个数组，例如说`hash[N]`，以检查在起始索引和当前索引之间是否存在`smNonNeg`。
 
-*   [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并检查 **hash [smNonNeg]** 是否等于 **0** 。 如果发现是真的，则打印 **smNonNeg** 的值。
+*   [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并检查`hash[smNonNeg]`是否等于 **0**。 如果发现是真的，则打印`smNonNeg`的值。
 
-*   否则，增加 **smNonNeg** 的值，而 **hash [smNonNeg]** 不等于 **0** 。
+*   否则，增加`smNonNeg`的值，而`hash[smNonNeg]`不等于 **0**。
 
 下面是上述方法的实现：
 

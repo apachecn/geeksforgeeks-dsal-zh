@@ -4,7 +4,7 @@
 
 中查找频率最高的元素
 
-给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** 。 任务是创建给定数组 **arr []** 的频率数组 **freq []** ，并找到频率数组的最大元素。 如果数组 **freq []** 中两个元素的频率相同，则返回值较小的元素。
+给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`。 任务是创建给定数组`arr[]`的频率数组 **freq []** ，并找到频率数组的最大元素。 如果数组 **freq []** 中两个元素的频率相同，则返回值较小的元素。
 
 **示例**：
 

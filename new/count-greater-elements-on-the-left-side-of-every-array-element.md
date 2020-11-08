@@ -4,7 +4,7 @@
 
 的左侧计数更大的元素
 
-给定大小为 **N** 的不同整数的[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr []** ，任务是在每个数组元素的左侧打印较大元素的计数。
+给定大小为 **N** 的不同整数的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是在每个数组元素的左侧打印较大元素的计数。
 
 **示例**：
 

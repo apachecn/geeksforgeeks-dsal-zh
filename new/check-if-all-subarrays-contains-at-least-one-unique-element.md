@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/check-if-all-subarrays-contains-at-least-one-unique-element/](https://www.geeksforgeeks.org/check-if-all-subarrays-contains-at-least-one-unique-element/)
 
-给定一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，该数组由 **N** 个整数组成，任务是检查该数组的所有[个子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)是否至少具有一个 是否包含唯一元素。 如果发现是真的，则打印**“是”** 。 否则，打印**“否”** 。
+给定一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，该数组由 **N** 个整数组成，任务是检查该数组的所有[个子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)是否至少具有一个 是否包含唯一元素。 如果发现是真的，则打印**“是”** 。 否则，打印**“否”** 。
 
 **示例**：
 
@@ -124,7 +124,7 @@ Yes
 
 *   创建一个变量`count`，以检查子数组是否具有至少一个频率为 **1** 的元素。
 
-*   [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/) **arr []** ，并更新映射中每个元素的频率，并将计数更新为：
+*   [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`arr[]`，并更新映射中每个元素的频率，并将计数更新为：
 
     *   如果元素的频率为 **1**，则增加`count`。
 

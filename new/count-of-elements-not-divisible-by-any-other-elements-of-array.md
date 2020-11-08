@@ -4,7 +4,7 @@
 
 的任何其他元素不能除的元素数
 
-给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是确定数组元素的数量，该数量不能被给定数组中的任何其他元素整除。
+给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是确定数组元素的数量，该数量不能被给定数组中的任何其他元素整除。
 
 **示例**：
 
