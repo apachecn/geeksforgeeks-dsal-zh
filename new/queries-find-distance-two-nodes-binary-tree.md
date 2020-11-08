@@ -6,11 +6,11 @@
 
 给定一个二叉树，任务是找到一棵二叉树中两个键之间的距离，没有给出父指针。 两个节点之间的距离是要遍历以到达另一个节点的最小边数。
 
-我们已经讨论了[方法](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)，该方法使用段树将查询时间减少到 O（logn），这里的任务是通过将空间复杂度降低到`O(NlogN)`来减少查询时间到`O(1)`。 。 在这篇文章中，我们将使用**稀疏表**而不是分段树来查找给定范围内的最小值，它使用动态规划和位操作来实现`O(1)`查询时间。
+我们已经讨论了[方法](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)，该方法使用段树将查询时间减少到`O(logn)`，这里的任务是通过将空间复杂度降低到`O(NlogN)`来减少查询时间到`O(1)`。在这篇文章中，我们将使用**稀疏表**而不是分段树来查找给定范围内的最小值，它使用动态规划和位操作来实现`O(1)`查询时间。
 
 ![](img/e98cf3d60cdbfebbe7118d29e43d5fed.png)
 
-稀疏表将预处理 Nlogn 空间中 L 数组给定范围的最小值，即每个节点将包含 log（i）长度值的链，其中 i 是 L 数组中第 i 个节点的索引。 稀疏表中的每个条目都说 M [i] [j]将代表子数组中从长度 2 ^ j 的 i 开始的最小值的索引。
+稀疏表将预处理`Nlogn`空间中`L`数组给定范围的最小值，即每个节点将包含`log(i)`长度值的链，其中`i`是`L`数组中第`i`个节点的索引。 稀疏表中的每个条目都说`M[i][j]`将代表子数组中从长度`2 ^ j`的`i`开始的最小值的索引。
 
 两个节点之间的距离可以根据最低的共同祖先获得。
 
@@ -33,7 +33,7 @@ Dist(n1, n2) = Level[n1] + Level[n2] - 2*Level[lca]
 > 2.  Find the LCA of two nodes in binary tree in O(logn) by Storing [Euler tour of Binary tree](https://www.geeksforgeeks.org/euler-tour-binary-tree/) in array and computing two other arrays with the help of levels of each node and Euler tour.
 >     These steps are shown below:
 >     
->     （I）首先，找到 [二叉树](https://www.geeksforgeeks.org/euler-tour-binary-tree/) 的 Euler Tour。
+>     （I）首先，找到[二叉树](https://www.geeksforgeeks.org/euler-tour-binary-tree/) 的 Euler 游程。
 >     ![](img/2708b1df3a48f61766a2991e20a9827a.png)
 >     
 >     
@@ -43,15 +43,15 @@ Dist(n1, n2) = Level[n1] + Level[n2] - 2*Level[lca]
 >     
 >     
 >     
->     （III）然后，将二叉树所有节点的第一个匹配项存储在 Euler 数组中。 H 存储来自 Euler 数组的节点的索引，因此可以最小化查找最小值的查询范围，并且可以通过进一步优化查询时间来最小化它们的查找范围。
+>     （III）然后，将二叉树所有节点的第一个匹配项存储在 Euler 数组中。 `H`存储来自 Euler 数组的节点的索引，因此可以最小化查找最小值的查询范围，并且可以通过进一步优化查询时间来最小化它们的查找范围。
 >     ![](img/df28d4f97f3049a97ec62a66b102db30.png)
 >     
 >     
 > 3.  Then **build sparse table on L array** and find the minimum value say X in range ( **H[A] to H[B]** ). Then, **we use the index of value X as an index to Euler array to get LCA** , i.e. Euler[index(X)].
 >     
->     设 A ＝ 8，B ＝ 5。
->     （I）H [8] = 1 和 H [5] = 2
->     （II）当 X = 0，index = 7 时，L 数组中的最小值在 1 和 2 之间[III] 然后，LCA ＝ Euler [7]，即 LCA ＝ 1。
+>     设`A = 8`，`B = 5`。
+>     （I）`H[8] = 1`和`H[5] = 2`
+>     （II）当`X = 0`，`index = 7`时，`L`数组中的最小值在 1 和 2 之间，然后，`LCA = Euler[7]`，即`LCA = 1`。
 >     
 >     
 > 4.  最后，应用上面讨论的距离公式来获得两个节点之间的距离。

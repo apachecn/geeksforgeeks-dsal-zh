@@ -1,10 +1,10 @@
-# 查询以查找二叉树的两个节点之间的距离-O（logn）方法
+# 查询以查找二叉树的两个节点之间的距离`O(logn)`方法
 
 > 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 
 给定一个二叉树，任务是找到一棵二叉树中两个键之间的距离，没有给出父指针。 两个节点之间的距离是要遍历才能到达另一个节点的最小边数。
 
-这个问题已经在[先前的文章](https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/)中进行了讨论，但是它使用**二叉树的三个遍历**，一个遍历用于查找两个节点的最低公共祖先（LCA）（let A 和 B），然后进行两次遍历以查找 LCA 与 A 之间的距离以及 LCA 与 B 之间的时间复杂度为`O(n)`。 在这篇文章中，将讨论一种方法，该方法需要 **O（log（n））**时间来找到两个节点的 LCA。
+这个问题已经在[先前的文章](https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/)中进行了讨论，但是它使用**二叉树的三个遍历**，一个遍历用于查找两个节点的最低公共祖先（LCA）（假设`A`和`B`），然后进行两次遍历以查找 LCA 与`A`之间的距离以及 LCA 与`B`之间的时间复杂度为`O(n)`。 在这篇文章中，将讨论一种方法，该方法需要`O(logn)`时间来找到两个节点的 LCA。
 
 ![](img/e98cf3d60cdbfebbe7118d29e43d5fed.png)
 
@@ -37,9 +37,9 @@ Dist(n1, n2) = Level[n1] + Level[n2] - 2*Level[lca]
 这些步骤说明如下：
 
 > 1.  通过应用[级别顺序遍历](https://www.geeksforgeeks.org/print-levels-nodes-binary-tree/)来找到每个节点的级别。
-> 2.  通过将[二叉树](https://www.geeksforgeeks.org/euler-tour-binary-tree/)的 Euler 游标存储在数组中，并借助每个节点的级别和 Euler 游程来计算另外两个数组，从而在 O（logn）中找到二叉树中两个节点的 LCA。
+> 2.  通过将[二叉树](https://www.geeksforgeeks.org/euler-tour-binary-tree/)的 Euler 游标存储在数组中，并借助每个节点的级别和 Euler 游程来计算另外两个数组，从而在`O(logn)`中找到二叉树中两个节点的 LCA。
 >     这些步骤如下所示：
->     （I）首先，找到二叉树的 Euler Tour。
+>     （I）首先，找到二叉树的 Euler 游程。
 >     
 > 
 > ![](img/2708b1df3a48f61766a2991e20a9827a.png)
@@ -51,15 +51,15 @@ Dist(n1, n2) = Level[n1] + Level[n2] - 2*Level[lca]
 > 
 > ![](img/46c3681a944153e098ee85c4a7d527ff.png)
 > 
-> 1.  （III）然后，将二叉树所有节点的第一个匹配项存储在 Euler 数组中。 H 存储来自 Euler 数组的节点的索引，因此可以最小化查找最小值的查询范围，并且可以通过进一步优化查询时间来最小化它们的查找范围。
+> 1.  （III）然后，将二叉树所有节点的第一个匹配项存储在 Euler 数组中。`H`存储来自 Euler 数组的节点的索引，因此可以最小化查找最小值的查询范围，并且可以通过进一步优化查询时间来最小化它们的查找范围。
 >     
 > 
 > ![](img/df28d4f97f3049a97ec62a66b102db30.png)
 > 
-> 1.  然后 ***在 L 数组*** 上构建段树，并从 H 数组中获取低值和高值，这将使我们得出两个节点（A 和 B）的首次出现。 然后，*我们查询段树以找到范围内 X 的最小值*（ **H [A]至 H [B]** ）。 然后**我们使用值 X 的索引作为 Euler 数组的索引，以获得** ***LCA*** ，即 Euler [index（X）]。
->     设 A = 8 且 B =5。
->     （I）H [8] = 1 且 H [5] = 2
->     （II）查询段树，得到 L 数组中的最小值 当 X = 0，index = 7 时在 1 和 2 之间。
+> 1.  然后**在`L`数组**上构建段树，并从`H`数组中获取低值和高值，这将使我们得出两个节点（`A`和`B`）的首次出现。 然后，我们查询段树以找到范围内`X`的最小值（`H[A]`至`H[B]`）。 然后**我们使用值`X`的索引作为 Euler 数组的索引**，以获得 LCA，即`Euler[index(X)]`。
+>     设`A = 8`且`B = 5`。
+>     （I）`H[8] = 1` 且`H[5] = 2`。
+>     （II）查询段树，当`X = 0`，`index = 7`时，在 1 和 2 之间得到`L`数组中的最小值。
 > 2.  最后，我们应用上面讨论的距离公式来获得两个节点之间的距离。
 
 ## C++
@@ -1128,7 +1128,7 @@ Dist(8, 5) = 5
 
 **空间复杂度**：`O(n)`
 
-[查询以查找二叉树的两个节点之间的距离– O（ 1）方法](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
+[查询以查找二叉树的两个节点之间的距离：`O(1)`方法](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 
 
 
