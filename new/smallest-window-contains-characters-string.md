@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/smallest-window-contains-characters-string/](https://www.geeksforgeeks.org/smallest-window-contains-characters-string/)
 
-给定一个字符串，找到具有给定字符串的所有不同字符的最小窗口长度。 例如。 str =“ aabcbcdbca”，则结果将是 4，因为最小的窗口将是“ dbca”。
+给定一个字符串，找到具有给定字符串的所有不同字符的最小窗口长度。 例如。 `str = "aabcbcdbca"`，则结果将是 4，因为最小的窗口将是`"dbca"`。
 
 **示例**：
 
@@ -28,33 +28,33 @@ the distinct characters of given string.
 
 **解决方案**：上述问题指出，即使最小的字符串包含重复元素，我们也必须找到包含给定字符串的所有不同字符的最小窗口。
 
-例如，在“ aabcbcdb”中，包含所有字符的最小字符串是“ abcbcd”。
+例如，在`"aabcbcdb"`中，包含所有字符的最小字符串是`"abcbcd"`。
 
-**方法 1** ：这是使用 HashMap 解决问题的蛮力方法。
+**方法 1** ：这是使用`HashMap`解决问题的蛮力方法。
 
 *   **Approach :** For solving the problem we first have to find out all the distinct characters present in the string. This can be done using a [**HashMap**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/). The next thing is to generate all the possible substrings. This follows by checking whether a substring generated has all the required characters(stored in the hash_map) or not. If yes, then compare its length with the minimum substring length which follows the above constraints, found till now.
 
-    *[HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) ：* HashMap 自 Java 1.2 以来就是 Java 集合的一部分。 它提供了 Java Map 接口的基本实现。 它以（键，值）对存储数据。 要访问一个值，必须知道其键。 HashMap 被称为 HashMap，因为它使用了一种称为 Hashing 的技术。 散列是一种将大字符串转换为代表相同字符串的小字符串的技术。 较短的值有助于索引编制和更快的搜索。 HashSet 还内部使用 HashMap。 它在内部使用链接列表来存储已在 HashSet 中详细解释的键值对以及其他文章。
+    [`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)：`HashMap`自 Java 1.2 以来就是 Java 集合的一部分。 它提供了 Java `Map`接口的基本实现。 它以（键，值）对存储数据。 要访问一个值，必须知道其键。 `HashMap`被称为`HashMap`，因为它使用了一种称为哈希的技术。 散列是一种将大字符串转换为代表相同字符串的小字符串的技术。 较短的值有助于索引编制和更快的搜索。 `HashSet`还内部使用`HashMap`。 它在内部使用链接列表来存储已在`HashSet`中详细解释的键值对以及其他文章。
 
-*   **Algorithm :**
+*   **算法**：
 
-    1.  将给定字符串的所有不同字符存储在 hash_map 中。
+    1.  将给定字符串的所有不同字符存储在`hash_map`中。
 
     2.  进行变量计数并将其初始化为值 0。
 
     3.  使用两个指针生成子字符串。
 
-    4.  **现在检查生成的子字符串是否有效-**：
+    4.  **现在检查生成的子字符串是否有效**：
 
         1.  一旦我们发现之前从未遇到过生成的子字符串的字符，则以 **1** 递增计数。
 
-        2.  我们可以使用 **max_chars** 大小的访问数组来查找当前字符是否曾经遇到过。
+        2.  我们可以使用`max_chars`大小的访问数组来查找当前字符是否曾经遇到过。
 
-        3.  如果 count 等于 hash_map 的大小，则生成的子字符串有效
+        3.  如果`count`等于`hash_map`的大小，则生成的子字符串有效
 
         4.  如果它是有效的子字符串，请将其与已生成的最小长度的子字符串进行比较。
 
-*   **Pseudo Code:**
+*   **伪代码**：
 
     ```
     maphash_map;
@@ -149,13 +149,13 @@ the distinct characters of given string.
 
     *   **时间复杂度**：`O(N ^ 2)`。
 
-        需要这段时间来生成长度为“ N”的字符串的所有可能的子字符串。
+        需要这段时间来生成长度为`N`的字符串的所有可能的子字符串。
 
     *   **空间复杂度**：`O(n)`。
 
-        作为大小为 N 的 **hash_map** 。
+        由于大小为`N`的`hash_map`。
 
-**方法 2** ：这里我们使用了[滑动窗口](https://www.geeksforgeeks.org/window-sliding-technique/)技术来得出解决方案。 该技术说明了如何将很少出现问题的嵌套 for 循环转换为单个 for 循环，从而降低时间复杂度。
+**方法 2** ：这里我们使用了[滑动窗口](https://www.geeksforgeeks.org/window-sliding-technique/)技术来得出解决方案。 该技术说明了如何将很少出现问题的嵌套`for`循环转换为单个`for`循环，从而降低时间复杂度。
 
 *   **Approach:** Basically a window of characters is maintained by using two pointers namely **start** and **end**. These **start** and **end** pointers can be used to shrink and increase the size of window respectively. Whenever the window contains all characters of given string, the window is shrinked from left side to remove extra characters and then its length is compared with the smallest window found so far.
 
@@ -165,19 +165,19 @@ the distinct characters of given string.
 
 *   **Algorithm :**
 
-    1.  维护一个数组**（已访问）**，该数组最多包含可能的字符（256 个字符），一旦我们在字符串中找到任何字符，就在数组**中标记该索引（这是为了计算字符串中所有不同的字符） 串）。**
+    1.  维护一个数组（已访问），该数组最多包含可能的字符（256 个字符），一旦我们在字符串中找到任何字符，就在数组中标记该索引（这是为了计算字符串中所有不同的字符）
 
-    2.  取两个指针**开始**和**结束**，它们将标记窗口的开始和结束。
+    2.  取两个指针`start`和`end`，它们将标记窗口的开始和结束。
 
-    3.  取一个**计数器= 0** ，该计数器将用于计算窗口中的不同字符。
+    3.  取一个计数器`count = 0`，该计数器将用于计算窗口中的不同字符。
 
-    4.  现在开始读取给定字符串的字符，如果遇到尚未访问的字符，则将计数器增加 **1** 。
+    4.  现在开始读取给定字符串的字符，如果遇到尚未访问的字符，则将计数器增加 **1**。
 
-    5.  如果**计数器**等于不同字符的总数，请尝试缩小窗口。
+    5.  如果`count`等于不同字符的总数，请尝试缩小窗口。
 
-    6.  **用于缩小窗口-**：
+    6.  **用于缩小窗口**：
 
-        1.  如果开始指针处字符的**频率**大于**大于 1** ，则增加指针，因为它是多余的。
+        1.  如果开始指针处字符的**频率**大于 1，则增加指针，因为它是多余的。
 
         2.  现在将当前窗口的长度与最小窗口长度进行比较。
 
@@ -422,7 +422,7 @@ the distinct characters of given string.
 
     ```
 
-    ## C ＃
+    ## C#
 
     ```
 
@@ -522,7 +522,7 @@ the distinct characters of given string.
 
     *   **空间复杂度**：`O(n)`。
 
-        作为大小为 N 的 **hash_map** 被使用。
+        作为大小为`N`的`hash_map`被使用。
 
 **相关文章**：
 

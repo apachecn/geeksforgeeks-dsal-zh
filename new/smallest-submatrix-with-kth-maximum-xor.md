@@ -1,34 +1,41 @@
-# 最小子矩阵，XOR 最大为 Kth
+# 具有第`K`大 XOR 的最小子矩阵
 
 > 原文：[https://www.geeksforgeeks.org/smallest-submatrix-with-kth-maximum-xor/](https://www.geeksforgeeks.org/smallest-submatrix-with-kth-maximum-xor/)
 
-给定尺寸为 **N×M** 的[矩阵](https://www.geeksforgeeks.org/matrix/) **m [] []** 和整数 **K** ，计算 **XOR（i， j）对于矩阵的每个索引，它等于从索引**（1，1）到（i，j））**的子矩阵所有元素的[按位 Xor 或](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/) 。 任务是找到具有 **K** <sup>th</sup> 最大 **XOR（i ，j）**值。 如果存在多个此类子矩阵，则打印最小的子矩阵。
+给定尺寸为`N×M`的[矩阵](https://www.geeksforgeeks.org/matrix/)`m[][]`和整数`K`， 对于矩阵的每个索引计算`XOR(i, j)`，它等于从索引`(1, 1)`到`(i, j)`的子矩阵所有元素的[按位 XOR](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/) 。 任务是找到具有第`K`大`XOR(i, j)`值的子矩阵。 如果存在多个此类子矩阵，则打印最小的子矩阵。
 
-***注意**：考虑（1，1）中矩阵的起始索引。***
+**注意**：矩阵的起始索引是`(1, 1)`。
 
 **示例**：
 
-> **输入**：m [] [] = {{1，2}，{2，3}}，K = 2
-> **输出**：1 2
+> **输入**：`m[][] = {{1, 2}, {2, 3}}, K = 2`
+>
+> **输出**：`1 2`
+>
 > **说明**：
-> XOR（1，1）：m [1] [1] = 1
-> XOR（1，2）：m [1] [1] xor m [1] [2] = 3
-> XOR（2，1）：m [1] [1] xor m [2] [1] = 3
-> XOR（2，2）：m [1] [1] xor m [1] [2] xor m [2] [1] xor m [2] [2] = 2
-> 因此，第二个最大值在位置[1，2]为 3。
+>
+> ```
+> XOR(1, 1): m[1][1] = 1
+> XOR(1, 2): m[1][1] xor m[1][2] = 3
+> XOR(2, 1): m[1][1] xor m[2][1] = 3
+> XOR(2, 2): m[1][1] xor m[1][2] xor m[2][1] xor m[2][2] = 2
+> ```
 > 
-> **输入**：m [] [] = {{1，2，3}，{2，2，1}，{2，4，2}}，k = 1
-> **输出 **：3 2
+> 因此，第二个最大值在位置`[1, 2]`为 3。
+> 
+> **输入**：`m[][] = {{1, 2, 3}, {2, 2, 1}, {2, 4, 2}}, k = 1`
+>
+> **输出**：`3 2`
 
-**方法**：的想法是使用[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)查找 XOR（i，j）。
+**方法**：的想法是使用[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)查找`XOR(i, j)`。
 
-*   按 xor [i] [j] = xor [i-1] [j] ^ xor [i] [j-1] ^ xor [i-1] [j-1] ^计算按位 XOR（i，j） m [i] [j]。
+*   根据`xor[i][j] = xor[i-1][j] ^ xor[i][j-1] ^ xor[i-1][j-1] ^ m[i][j]`，计算按位`XOR(i, j)`。
 
-*   将针对各个索引**（i，j）**获得的 **XOR（i，j）**值存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
+*   将针对各个索引`(i, j)`获得的`XOR(i, j)`值存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
 
-*   使用大小为 **K** 的[最小堆](https://www.geeksforgeeks.org/min-heap-in-java/)，找到所有 XOR（i，j）值的第 K <sup>个第</sup>个最大值。
+*   使用大小为`K`的[最小堆](https://www.geeksforgeeks.org/min-heap-in-java/)，找到所有`XOR(i, j)`值的第`K`个最大值。
 
-*   查找最小索引**（i，j）**，对于该索引， **XOR（i，j）**等于 **K** <sup>th</sup> 最大值。 以上步骤使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。
+*   查找最小索引`(i, j)`，对于该索引， `XOR(i, j)`等于第`K`个最大值。 以上步骤使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。
 
 下面是上述方法的实现：
 
@@ -133,7 +140,7 @@ class GFG {
 
 ```
 
-**时间复杂度**：O（N * M * log K）
+**时间复杂度**：`O(N * M * log K)`
 
 **辅助空间**：`O(N * M)`
 
