@@ -1,43 +1,48 @@
-# 将 Array 的每个元素替换为其相应的等级
+# 将数组的每个元素替换为其相应的排名
 
 > 原文：[https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/](https://www.geeksforgeeks.org/replace-each-element-of-array-with-its-corresponding-rank/)
 
-给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是用数组中的[等级替换 Array 的每个元素。](https://www.geeksforgeeks.org/rank-elements-array/)
+给定`N`个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是用数组中的[排名](https://www.geeksforgeeks.org/rank-elements-array/)替换数组的每个元素。
 
-> 元素的**等级定义为当数组以升序排列时，元素与数组的第一个元素之间的距离。 如果数组中两个或两个以上相同，则它们的排名也将与元素首次出现的排名相同。
-> **例如**：假设给定数组 arr [] = {2，2，1，6}，则元素的等级由下式给出：
+> 元素的排名定义为当数组以升序排列时，元素与数组的第一个元素之间的距离。 如果数组中两个或两个以上相同，则它们的排名也将与元素首次出现的排名相同。
+>
+> **例如**：假设给定数组`arr[] = {2，2，1，6}`，则元素的排名由下式给出：
+>
 > 排序后的数组为：
-> arr [ ] = {1、2、2、6}
-> 等级（1）= 1（在索引 0） 索引 2）
-> 排名（6）= 4（在索引 3 处）**
+>
+> `arr[] = {1, 2, 2, 6}`
+>
+> `rank(1) = 1`（在索引 0 处）
+>
+> `rank(6) = 4`（在索引 3 处）
 
 **示例**：
 
-> **输入**：arr [] = [100，5，70，2]
-> **输出**：[4，2，3，1]
-> **说明：[
-> 2 的排名是 1、5 是 2、70 是 3 和 100 是 4。**
+> **输入**：`arr[] = [100, 5, 70, 2]`
+> **输出**：`[4, 2, 3, 1]`
+> **说明**：
+> 2 的排名是 1，5 的排名是 2，70 的排名是 3，100 的排名是 4。
 > 
-> **输入**：arr [] = [100，2，70，2]
-> **输出**：[3，1，2，1]
-> **说明：[
-> 2 的排名是 1，70 是 2，100 是 3。**
+> **输入**：`arr[] = [100, 2, 70, 2]`
+> **输出**：`[3, 1, 2, 1]`
+> **说明**：
+> 2 的排名是 1，70 的排名是 2，100 的排名是 3。
 
-**朴素的方法**：朴素的方法是查找每个元素的等级为 **1 +** [**数组**](https://www.geeksforgeeks.org/count-smaller-equal-elements-sorted-array/) 中较小元素的数量 当前元素。
+**朴素的方法**：朴素的方法是查找每个元素的排名为`1 +`[**数组中比当前元素小的元素的数量**](https://www.geeksforgeeks.org/count-smaller-equal-elements-sorted-array/)。
 
  ***时间复杂度**：`O(N ^ 2)`
 
 **辅助空间**：`O(1)`
 
-**高效方法**：要优化上述幼稚方法，请找到元素的等级，然后将等级分配给元素。 步骤如下：
+**高效方法**：要优化上述幼稚方法，请找到元素的排名，然后将排名分配给元素。 步骤如下：
 
-1.  要计算元素的等级，请首先制作给定 **arr []** 的副本，然后以升序对复制的数组进行排序。
+1.  要计算元素的排名，请首先制作给定`arr[]`的副本，然后以升序对复制的数组进行排序。
 
-2.  然后遍历复制的数组，并通过获取等级变量将其等级放入 **HashMap** 中。
+2.  然后遍历复制的数组，并通过获取排名变量将其排名放入`HashMap`中。
 
-3.  如果元素已经存在于 HashMap 中，则不要更新等级，否则更新[，HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中元素的等级以及递增等级变量。
+3.  如果元素已经存在于`HashMap`中，则不要更新排名，否则更新[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中元素的排名以及递增排名变量。
 
-4.  遍历给定数组 **arr []** ，使用存储在 HashMap 中的等级分配每个元素的等级。
+4.  遍历给定数组`arr[]`，使用存储在`HashMap`中的排名分配每个元素的排名。
 
 下面是上述方法的实现：
 
