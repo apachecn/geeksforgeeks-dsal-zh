@@ -74,7 +74,7 @@
 
 图的一些应用是：
 
-1.  Facebook 的 Graph API 使用 Graphs 的结构。
+1.  Facebook 的图 API 使用图的结构。
 
 2.  Google 的知识图还必须与图做一些事情。
 
@@ -126,7 +126,7 @@
 
 2.  堆用于实现[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)，其中优先级基于创建的堆的顺序。
 
-3.  与安全相关的系统和嵌入式系统（例如 Linux Kernel）由于使用 O（n log（n））而使用堆排序。
+3.  与安全相关的系统和嵌入式系统（例如 Linux 内核）由于使用`O(n log(n))`而使用堆排序。
 
 4.  如果我们在寻找 [K <sup>数</sup>的最小（或最大）值](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/)时陷入困境，那么堆可以轻松快捷地解决问题。
 
