@@ -2,31 +2,31 @@
 
 > 原文：[https://www.geeksforgeeks.org/split-array-into-two-equal-length-subsets-such-that-all-repetitions-of-a-number-lies-in-a-single-subset/](https://www.geeksforgeeks.org/split-array-into-two-equal-length-subsets-such-that-all-repetitions-of-a-number-lies-in-a-single-subset/)
 
-给定由 **N** 个整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是检查是否有可能将整数分成两个等长的子集，以便所有 任何数组元素的重复都属于同一子集。 如果发现是真的，则打印**“是”** 。 否则，打印**“否”** 。
+给定由 `N`个整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是检查是否有可能将整数分成两个等长的子集，以便所有 任何数组元素的重复都属于同一子集。 如果发现是真的，则打印`Yes`。 否则，打印`No`。
 
 **示例**：
 
-> **输入**：arr [] = {2，1，2，3}
-> **输出**：是
+> **输入**：`arr[] = {2, 1, 2, 3}`
+> **输出**：`Yes`
 > **说明**：
-> 一种可能的方式 数组的除法是{1，3}和{2，2}
+> 一种可能的方式 数组的除法是`{1, 3}`和`{2, 2}`
 > 
-> **输入**：arr [] = {1，1，1，1}
-> **输出**：否
+> **输入**：`arr [] = {1, 1, 1, 1}`
+> **输出**：`No`
 
-**朴素的方法**：解决该问题的最简单方法是尝试将数组分为两个相等子集的所有可能组合。 对于每个组合，检查每个重复是否仅属于两个集合之一。 如果发现是真的，则打印**“是”** 。 否则，打印**“否”** 。
+**朴素的方法**：解决该问题的最简单方法是尝试将数组分为两个相等子集的所有可能组合。 对于每个组合，检查每个重复是否仅属于两个集合之一。 如果发现是真的，则打印`Yes`。 否则，打印`No`。
 
-**时间复杂度**：O（2 <sup>N</sup> ），其中 N 是给定整数的大小。
+**时间复杂度**：`O(2 ^ N`，其中`N`是给定整数的大小。
 
 **辅助空间**：`O(n)`
 
-**有效方法**：可以通过[将给定数组](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的所有元素的频率存储在数组 **freq []** 中来优化上述方法。 为了将元素分为两个相等的集合，每个集合中必须存在 **N / 2** 个元素。 因此，要将给定数组`arr[]`分为 **2** 个相等的部分， **freq []** 中必须有一些整数子集 总和为 **N / 2** 。 请按照以下步骤解决问题：
+**有效方法**：可以通过[将给定数组](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的所有元素的频率存储在数组`freq[]`中来优化上述方法。 为了将元素分为两个相等的集合，每个集合中必须存在`N / 2`个元素。 因此，要将给定数组`arr[]`分为 **2** 个相等的部分，`freq[]`中必须有一些整数子集 总和为`N / 2`。 请按照以下步骤解决问题：
 
-1.  将每个元素的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) **M** 中。
+1.  将每个元素的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) `M`中。
 
-2.  现在，创建一个辅助数组 **aux []** 并将所有从 **Map** 存储的频率插入其中。
+2.  现在，创建一个辅助数组`aux[]`并将所有从`Map`存储的频率插入其中。
 
-3.  给定的问题简化为[在数组 **aux []** 中找到具有给定总和 **N / 2**](https://www.geeksforgeeks.org/subset-sum-problem-dp-25/) 的子集。
+3.  给定的问题简化为[在数组`aux[]`中找到具有给定总和 **N / 2**](https://www.geeksforgeeks.org/subset-sum-problem-dp-25/) 的子集。
 
 4.  如果在上述步骤中存在任何此类子集，请打印**“是”** 。 否则，打印**“否”** 。
 
@@ -164,7 +164,7 @@ Yes
 
 ```
 
-**时间复杂度**：`O(N * M)`，其中 N 是数组的大小，M 是给定数组中不同元素的总数。
+**时间复杂度**：`O(N * M)`，其中`N`是数组的大小，`M`是给定数组中不同元素的总数。
 
 **辅助空间**：`O(n)`
 

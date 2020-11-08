@@ -2,20 +2,28 @@
 
 > 原文：[https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/](https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/)
 
-给定[数组](https://www.geeksforgeeks.org/array-data-structure/)，`arr[]`的大小为 **N** ，任务是[将数组](https://www.geeksforgeeks.org/split-array-two-equal-sum-subarrays/)拆分为最大数量 [子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，这样[的第一个和最后一个出现的](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)，所有不同的数组元素都位于单个子数组中。
+给定[数组](https://www.geeksforgeeks.org/array-data-structure/)，`arr[]`的大小为`N`，任务是[将数组](https://www.geeksforgeeks.org/split-array-two-equal-sum-subarrays/)拆分为最大数量 [子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，这样[的第一个和最后一个出现的](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)，所有不同的数组元素都位于单个子数组中。
 
 **示例**：
 
-> **输入**：arr [] = {1、1、2、2}
+> **输入**：`arr[] = {1, 1, 2, 2}`
+>
 > **输出**：2
+>
 > **说明**：
-> 拆分数组 分成子数组{1，1}和{2，2}。
+>
+> 拆分数组为子数组`{1, 1}`和`{2, 2}`。
+>
 > 因此，所需的输出为 2。
 > 
-> **输入**：arr [] = {1、2、4、1、4、7、7、8}
+> **输入**：`arr[] = {1, 2, 4, 1, 4, 7, 7, 8}`
+>
 > **输出**：3
-> **说明：[**
-> 将数组拆分为子数组{1、2、4、1、4}，{7、7}和{8}。
+>
+> **说明**：
+>
+> 将数组拆分为子数组`{1, 2, 4, 1, 4}`, `{7, 7}`和`{8}`。
+>
 > 因此，所需的输出为 3。
 
 **方法**：的想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)存储每个数组元素最后一次出现的索引。 请按照以下步骤解决问题：
@@ -273,7 +281,7 @@ public static void Main(String[] args)
 
 **时间复杂度**：`O(n)`
 
-**辅助空间**：O（X）其中 X 是给定数组中的最大元素。
+**辅助空间**：`O(X)`其中`X`是给定数组中的最大元素。
 
 
 
