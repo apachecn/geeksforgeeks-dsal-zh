@@ -25,7 +25,7 @@
 
 为了检查[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，我们可以使用[动态规划](http://www.geeksforgeeks.org/dynamic-programming/)来构建[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于最大值 arr [ <sub>i</sub> 。 我们可以采用 MAX 来测试`O(1)`时间复杂度的数字。
 
-**构建细分树**：
+**构建分段树**：
 
 *   现在，使用段树问题将问题简化为[子数组总和。](https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-indices-of-characters-removed-to-obtain-an-empty-string-based-on-given-conditions/](https://www.geeksforgeeks.org/sum-of-indices-of-characters-removed-to-obtain-an-empty-string-based-on-given-conditions/)
 
-给定由小写英文字母组成的字符串 **str** ，任务是通过以下操作来计算所删除字符的索引总和（从 1 开始的索引），以获得空字符串：
+给定由小写英文字母组成的字符串`str`，任务是通过以下操作来计算所删除字符的索引总和（从 1 开始的索引），以获得空字符串：
 
 *   删除字符串中最小的字母。
 
@@ -12,13 +12,18 @@
 
 **示例**：
 
-> **输入**：str =“ aba”
+> **输入**：`str = "aba"`
+>
 > **输出**：4
-> **说明**：aba”->“ ba”，总和= 1
-> “ b **a** ”->“ b”，总和= 1 + 2 = 3
-> “ b”->“”，总和= 3 +1 = 4
+>
+> **说明**：`"aba" -> "ba"`，总和为 1
+>
+> `"ba" -> "b"`，总和为`1 + 2 = 3`
+>
+> `"b" -> ""`，总和为`3 + 1 = 4`
 > 
-> **输入**：str =“ geeksforgeeks”
+> **输入**：`str = "geeksforgeeks"`
+>
 > **输出**：41
 
 **朴素的方法**：
@@ -41,13 +46,13 @@
 
 *   将字符的索引存储在 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中
 
-*   处理 HashMap 中的字符。
+*   处理`HashMap`中的字符。
 
 *   使用段树，找到留在字符当前索引中的元素数，这些元素已从字符串中删除。
 
-*   提取已删除字符的索引，并在分段树中的 **[0，提取元素的索引]** 范围内搜索，并在分段树中存在的范围内找到索引的**计数** 。
+*   提取已删除字符的索引，并在分段树中的`[0, 提取元素的索引]`范围内搜索，并在分段树中存在的范围内找到索引的**计数**。
 
-*   将已提取元素的**索引添加到答案中–将**计数，然后将当前已删除元素的索引插入到细分树中。
+*   将已提取元素的**索引添加到答案中–将**计数，然后将当前已删除元素的索引插入到分段树中。
 
 *   重复上述步骤，直到字符串为空。
 

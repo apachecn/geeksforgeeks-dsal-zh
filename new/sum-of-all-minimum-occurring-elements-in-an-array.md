@@ -24,7 +24,7 @@ Their sum = 10 + 20 + 30 = 60.
 
 **方法**：
 
-*   遍历数组，并在 C++ 中使用 [unordered_map 存储数组元素的频率，以使 map 的键为数组元素，值为数组中的频率。](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)
+*   遍历数组，并在 C++ 中使用[`unordered_map`](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)存储数组元素的频率，`map`的键为数组元素，值为数组中的频率。
 
 *   然后，遍历该图以查找出现最少的元素的频率。
 
@@ -267,7 +267,7 @@ static void Main()
 
 ```
 
-**时间复杂度**：`O(n)`，其中 N 是数组中元素的数量。
+**时间复杂度**：`O(n)`，其中`N`是数组中元素的数量。
 
 
 
