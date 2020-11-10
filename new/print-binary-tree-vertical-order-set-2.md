@@ -319,7 +319,7 @@ Vertical order traversal is
 
 [以垂直顺序打印二叉树 | 系列 3（使用级别顺序遍历）](https://www.geeksforgeeks.org/print-a-binary-tree-in-vertical-order-set-3-using-level-order-traversal/)
 
-**另一种使用`computeIfAbsent`方法的方法**：
+**另一种使用`computeIfAbsent`的方法**：
 
 通过使用 Java 中的`computeIfAbsent`方法和 Java 中的映射，以及使用基于自然排序的树形图，我们可以更简洁地用编写代码 在键上。
 

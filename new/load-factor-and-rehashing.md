@@ -48,7 +48,7 @@
 
 *   然后遍历旧的`bucketArray`中的每个元素，并为每个元素调用`insert()`，以将其插入新的更大的`bucket`数组中。
 
-### 实施重新哈希处理的程序：
+### 实现重新哈希处理的程序：
 
 ```
 // Java program to implement Rehashing

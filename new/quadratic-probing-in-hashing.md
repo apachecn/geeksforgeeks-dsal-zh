@@ -4,7 +4,7 @@
 
 [哈希](https://www.geeksforgeeks.org/hashing-set-1-introduction/)是对[直接访问表](https://www.geeksforgeeks.org/direct-address-table/)的改进。 该想法是使用[哈希函数](https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/)，该函数将给定的电话号码或任何其他键转换为较小的数字，并将该较小的数字用作称为[哈希表](https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/)的表中的索引。
 
-[**哈希函数**](https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/) ****：一个将给定的大数字转换为小的实际整数值的函数。 映射的整数值用作哈希表中的索引。 简而言之，哈希函数将一个较大的数字或字符串映射为一个较小的整数，可用作哈希表中的索引。
+[**哈希函数**](https://www.geeksforgeeks.org/what-are-hash-functions-and-how-to-choose-a-good-hash-function/)：一个将给定的大数字转换为小的实际整数值的函数。 映射的整数值用作哈希表中的索引。 简而言之，哈希函数将一个较大的数字或字符串映射为一个较小的整数，可用作哈希表中的索引。
 
 本文讨论了[碰撞技术](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)，**二次探测**。
 

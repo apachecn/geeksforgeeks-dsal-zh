@@ -31,9 +31,9 @@
 
 2.  [遍历排序后的数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，对于每个元素，[检查其是否为莫兰数](https://www.geeksforgeeks.org/check-whether-given-number-n-is-a-moran-number-or-not/)
 
-3.  如果确定为真，则将元素插入[设置](https://www.geeksforgeeks.org/set-in-cpp-stl/)中，并递增**计数器**直到达到`K`。
+3.  如果确定为真，则将元素插入[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)中，并递增**计数器**直到达到`K`。
 
-4.  当组的[大小等于`K`](https://www.geeksforgeeks.org/setsize-c-stl/)时，打印**组**中的元素。
+4.  当集合的[大小等于`K`](https://www.geeksforgeeks.org/setsize-c-stl/)时，打印**集合**中的元素。
 
 下面是上述方法的实现：
 

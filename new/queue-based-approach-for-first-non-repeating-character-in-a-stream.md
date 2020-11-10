@@ -17,7 +17,7 @@ Output : a -1 c
 
 我们已经在[先前的文章](https://www.geeksforgeeks.org/find-first-non-repeating-character-stream-characters/)中讨论了基于双链表的方法。
 
-**方法-**
+**方法**：
 
 1.  创建一个大小为 26 的计数数组（假定仅存在小写字符），并将其初始化为零。
 

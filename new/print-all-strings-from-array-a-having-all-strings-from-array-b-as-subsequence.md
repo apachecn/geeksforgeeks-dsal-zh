@@ -30,13 +30,13 @@
 
 要优化上述方法，请按照以下步骤操作：
 
-*   初始化矩阵 **A_fre [] []** ，其中 **A_fre [i]** 将每个字符的频率存储在第<sup>个</sup>字符串中。
+*   初始化矩阵`A_fre[][]`，其中`A_fre[i]`将存储第`i`个字符串中的每个字符的频率。
 
-*   初始化 **B_fre []** ，以将所有字符的频率存储在数组 **B []** 中。
+*   初始化`B_fre[]`，以将所有字符的频率存储在数组`B[]`中。
 
-*   Traverse over array **A[]** and for every string, check if a character has more frequency in the strings of array **B[]** than in **i<sup>th</sup>** string in A[], i.e. 
+*   Traverse over array `A[]` and for every string, check if a character has more frequency in the strings of array `B[]` than in `i` string in A[], i.e. 
 
-    > if A_fre [i] [j] < B_fre[j], where 
+    > 如果`A_fre[i][j] < B_fre[j]`，其中：
 
     > `A_fre[i][j]`：`A[i]`中 ASCII 值为（`'a' + j`）的字符的频率。
 
