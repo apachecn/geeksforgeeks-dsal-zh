@@ -423,7 +423,7 @@ if __name__ == "__main__":
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Prime XOR = 27

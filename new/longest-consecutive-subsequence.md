@@ -126,7 +126,7 @@ public static void main (String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Length of the Longest contiguous subsequence is 4
@@ -380,7 +380,7 @@ public class ArrayElements {
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Length of the Longest contiguous subsequence is 4

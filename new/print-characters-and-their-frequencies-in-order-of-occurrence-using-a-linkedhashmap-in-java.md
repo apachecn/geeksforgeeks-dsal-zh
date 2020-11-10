@@ -50,7 +50,7 @@ printCharWithFreq(str, n);
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 g2 e4 k2 s2 f1 o1 r1

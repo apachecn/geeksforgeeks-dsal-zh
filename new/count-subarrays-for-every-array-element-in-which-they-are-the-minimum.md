@@ -441,7 +441,7 @@ public static void Main(string[] args) 
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 [1, 4, 1, 8, 1]

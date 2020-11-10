@@ -173,7 +173,7 @@ int main(void)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 C8

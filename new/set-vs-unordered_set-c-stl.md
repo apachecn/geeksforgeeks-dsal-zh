@@ -77,7 +77,7 @@ return 0;
 [ }
 ```
 
-**Output:**
+**输出**：
 
 ```
 Elements of set in sorted order: 
@@ -105,7 +105,7 @@ return 0;
 [ }
 ```
 
-**Output:**
+**输出**：
 
 ```
 Elements of unordered_set: 
@@ -177,7 +177,7 @@ return ] 0;
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 predecessor of 5 is=2

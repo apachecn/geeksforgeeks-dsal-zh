@@ -172,7 +172,7 @@ for row in hashJoin(table1, 1, table2, 0):
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Table A: 

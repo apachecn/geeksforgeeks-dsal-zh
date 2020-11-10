@@ -278,7 +278,7 @@ removeChars($str, $k);
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 for

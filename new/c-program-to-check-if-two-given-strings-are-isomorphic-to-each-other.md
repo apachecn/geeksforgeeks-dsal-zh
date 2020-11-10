@@ -92,7 +92,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Yes

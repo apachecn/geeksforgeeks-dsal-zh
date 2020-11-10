@@ -308,7 +308,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 b c l p r

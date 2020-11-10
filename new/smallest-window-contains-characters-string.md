@@ -137,7 +137,7 @@ the distinct characters of given string.
     }
     ```
 
-    **Output:**
+    **输出**：
 
     ```
     Smallest window containing all 

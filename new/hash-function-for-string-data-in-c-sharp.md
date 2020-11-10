@@ -59,7 +59,7 @@ return total % array.GetUpperBound(0);
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 11 Tallypoints
@@ -118,7 +118,7 @@ return ( int )total;
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 6 C#

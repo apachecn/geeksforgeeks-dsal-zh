@@ -194,7 +194,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 14
@@ -504,7 +504,7 @@ class GFG
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 14

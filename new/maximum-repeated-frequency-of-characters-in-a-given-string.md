@@ -284,7 +284,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Frequency 2 is repeated 3 times

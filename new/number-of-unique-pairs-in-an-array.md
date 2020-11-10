@@ -191,7 +191,7 @@ public static void Main(string []arg)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 25
@@ -346,7 +346,7 @@ class GFG
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 25

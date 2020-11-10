@@ -131,7 +131,7 @@ addressCalculationSort(arr)
 print ( "\nSorted array: " + " " .join([ str (x) for x in arr]))
 ```
 
-**Output:**
+**输出**：
 
 ```
 Input array: 29 23 14 5 15 10 3 18 1

@@ -286,7 +286,7 @@ print(distinctSimilarSubstrings(str))
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 2

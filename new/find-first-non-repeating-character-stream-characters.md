@@ -328,7 +328,7 @@ public class NonReapeatingC {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Reading g from stream

@@ -541,7 +541,7 @@ solveQuery($n, $q, $qi, $qj);
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 YES

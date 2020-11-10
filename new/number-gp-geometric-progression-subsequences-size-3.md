@@ -331,7 +331,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 6
@@ -543,7 +543,7 @@ if __name__ == "__main__":
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 6

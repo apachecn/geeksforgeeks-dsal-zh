@@ -289,7 +289,7 @@ static void Main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Longest length subsequence = 6

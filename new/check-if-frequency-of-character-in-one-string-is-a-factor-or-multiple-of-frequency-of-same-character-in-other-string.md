@@ -302,7 +302,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 YES

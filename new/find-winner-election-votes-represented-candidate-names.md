@@ -218,7 +218,7 @@ public class ElectoralVotingBallot
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 John

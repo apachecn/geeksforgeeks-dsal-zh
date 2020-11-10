@@ -151,7 +151,7 @@ return count;
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 result = {A=0, B=0, C=2, D=0, E=1, F=5}

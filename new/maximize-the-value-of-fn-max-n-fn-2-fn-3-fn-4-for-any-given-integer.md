@@ -224,7 +224,7 @@ if __name__ == '__main__':
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 13
@@ -396,7 +396,7 @@ public static void main (String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 13

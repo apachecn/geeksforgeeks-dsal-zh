@@ -238,7 +238,7 @@ print(countSubseq(arr, n))
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 6

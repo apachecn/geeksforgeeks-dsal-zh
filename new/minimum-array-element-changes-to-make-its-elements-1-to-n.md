@@ -224,7 +224,7 @@ echo countChanges($arr, $n);
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 3

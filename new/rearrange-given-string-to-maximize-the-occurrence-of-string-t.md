@@ -165,7 +165,7 @@ dt[i]= dt[i]+1
 print(Rearranged(ds, dt))
 ```
 
-**Output:**
+**输出**：
 
 ```
 10101000

@@ -115,7 +115,7 @@ return 0;
 [ }
 ```
 
-**Output:**
+**输出**：
 
 ```
 Cache block 1 inserted.

@@ -209,7 +209,7 @@ if __name__ == "__main__":
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Pattern found at ( 1 ,  1 )

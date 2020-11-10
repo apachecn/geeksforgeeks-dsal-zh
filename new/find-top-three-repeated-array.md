@@ -255,7 +255,7 @@ class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Three largest elements are 3 15 16

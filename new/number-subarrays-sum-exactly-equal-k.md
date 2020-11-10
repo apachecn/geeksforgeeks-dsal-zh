@@ -97,7 +97,7 @@ class Solution {
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 3
@@ -369,7 +369,7 @@ class GFG {
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 3

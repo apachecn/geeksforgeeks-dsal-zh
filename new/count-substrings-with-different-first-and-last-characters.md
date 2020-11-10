@@ -269,7 +269,7 @@ public static void Main(string[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 8
@@ -543,7 +543,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 8

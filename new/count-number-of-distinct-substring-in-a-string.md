@@ -171,7 +171,7 @@ class DistinctSubstring 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 4
@@ -357,7 +357,7 @@ class GFG
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Distinct Substrings are: 
@@ -559,7 +559,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 bc b abc ab aabc aa aaa c a aaab aab aaabc

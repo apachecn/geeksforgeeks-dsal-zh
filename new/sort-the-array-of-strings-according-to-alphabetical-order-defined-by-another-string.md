@@ -155,7 +155,7 @@ sortStringArray(s, a, n)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 for geeksforgeeks best is learning place the

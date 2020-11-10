@@ -394,7 +394,7 @@ class GfG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Longest length strict bitonic subsequence = 6

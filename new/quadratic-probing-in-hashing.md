@@ -351,7 +351,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 700 50 85 73 101 92 76

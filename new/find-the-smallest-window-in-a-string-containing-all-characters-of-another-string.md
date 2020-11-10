@@ -550,7 +550,7 @@ echo "Smallest window is : \n" .
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Smallest window is : 

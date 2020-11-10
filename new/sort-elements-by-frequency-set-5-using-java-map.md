@@ -104,7 +104,7 @@ return freqCompare;
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 2 2 2 2 1 1 3 3 4 4 5 6 7

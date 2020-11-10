@@ -105,7 +105,7 @@ getCount(str);
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given molecule: Fe2H3OH

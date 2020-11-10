@@ -367,7 +367,7 @@ echo "Max occurring digit is " . 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Max occurring digit is 5

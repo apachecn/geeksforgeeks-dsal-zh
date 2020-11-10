@@ -479,7 +479,7 @@ echo minimumOperations($P, $n);
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 2

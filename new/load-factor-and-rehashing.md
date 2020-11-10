@@ -204,7 +204,7 @@ map.printMap();
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 HashMap created

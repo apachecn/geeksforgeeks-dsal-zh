@@ -193,7 +193,7 @@ public static void main(String args[])
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Yes

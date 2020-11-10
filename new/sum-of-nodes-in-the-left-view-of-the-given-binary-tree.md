@@ -286,7 +286,7 @@ public class BinaryTree {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 47

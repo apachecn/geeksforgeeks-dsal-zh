@@ -226,7 +226,7 @@ public class SymmetricPairs 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Following pairs have symmetric pairs

@@ -173,7 +173,7 @@ print(findSum(arr, N))
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 120

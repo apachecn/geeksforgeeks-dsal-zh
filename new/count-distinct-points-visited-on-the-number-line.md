@@ -441,7 +441,7 @@ echo getDistinctPoints($current_pos, $path); 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 4

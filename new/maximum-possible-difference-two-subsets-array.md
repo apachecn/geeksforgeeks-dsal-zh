@@ -310,7 +310,7 @@ function maxDiff($arr, $n)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Maximum Difference = 20
@@ -567,7 +567,7 @@ function maxDiff( $arr, $n)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Maximum Difference = 20
@@ -794,7 +794,7 @@ print("Maximum Difference =", maxDiff(arr, n))
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Maximum Difference = 20

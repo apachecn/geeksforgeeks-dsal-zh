@@ -310,7 +310,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Count = 2
@@ -530,7 +530,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Count = 2
@@ -772,7 +772,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Count = 2

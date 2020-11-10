@@ -554,7 +554,7 @@ public static void Main()
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 42, 45, 63, 198,

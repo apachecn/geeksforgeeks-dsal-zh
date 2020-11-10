@@ -291,7 +291,7 @@ return 0;
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 Number of Fibonacci numbers in subarray from 0 to 4 = 4

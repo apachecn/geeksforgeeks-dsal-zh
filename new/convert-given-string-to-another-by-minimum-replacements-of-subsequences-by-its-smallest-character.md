@@ -460,7 +460,7 @@ transformString(A, B)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 2

@@ -154,7 +154,7 @@ print(*findElementsAfterDel(array, m, dell, n, k))
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 33 20 12

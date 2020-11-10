@@ -275,7 +275,7 @@ class Subsequence
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 [ef, ab, ac, aef, abc, abf, af, acf, abcef, abcf, acef, abef]

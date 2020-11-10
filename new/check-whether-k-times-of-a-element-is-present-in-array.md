@@ -225,7 +225,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Yes
@@ -434,7 +434,7 @@ static public void Main ()
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Yes

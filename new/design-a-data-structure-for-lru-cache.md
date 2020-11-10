@@ -202,7 +202,7 @@ public class TestLRUCache {
 } 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Going to test the LRU  Cache Implementation
@@ -300,7 +300,7 @@ public class TestLRUCacheWithLinkedHashMap {
 } 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Going to test the LRU  Cache Implementation

@@ -156,7 +156,7 @@ return 0;
 [HTG4 95] }
 ```
 
-**Output:**
+**输出**：
 
 ```
 Sum of K-minimum fibonacci numbers is 7

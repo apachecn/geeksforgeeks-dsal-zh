@@ -50,7 +50,7 @@ System.out.println(temp);
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 HashSet contains: 
@@ -88,7 +88,7 @@ System.out.println(temp);
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 TreeSet contains: 

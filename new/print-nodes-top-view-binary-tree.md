@@ -322,7 +322,7 @@ if __name__ == '__main__':
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Following are nodes in top view of Binary Tree
@@ -549,7 +549,7 @@ topView(root)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Following are nodes in top view of Binary Tree

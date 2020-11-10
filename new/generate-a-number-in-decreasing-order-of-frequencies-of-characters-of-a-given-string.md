@@ -230,7 +230,7 @@ print(formString(Str))
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 611

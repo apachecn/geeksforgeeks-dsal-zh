@@ -225,7 +225,7 @@ public class ReplaceDuplicateWithGreaterThanPreviousDuplicate 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1 2 5 7 8 9 10

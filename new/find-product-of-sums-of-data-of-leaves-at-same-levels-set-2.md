@@ -127,7 +127,7 @@ return 0;
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 Final product is = 208

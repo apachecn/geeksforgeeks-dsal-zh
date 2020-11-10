@@ -43,7 +43,7 @@ System.out.println(hm);
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 {15=A computer, 3=Portal, 12=forGeeks, 1=Geeks}
@@ -91,7 +91,7 @@ System.out.println(hm);
     }
     ```
 
-    **Output:**
+    **输出**：
 
     ```
     {34=1, 3=1, 5=2, 10=3}
@@ -132,7 +132,7 @@ System.out.println(hm);
     }
     ```
 
-    **Output:**
+    **输出**：
 
     ```
     {one=practice.geeksforgeeks.org, two=code.geeksforgeeks.org, four=quiz.geeksforgeeks.org}
@@ -181,7 +181,7 @@ System.out.println(hm);
     }
     ```
 
-    **Output:**
+    **输出**：
 
     ```
     ConcurentHashMap: {100=Hello, 101=Geeks, 102=Geeks}
@@ -236,7 +236,7 @@ System.out.println(hm);
     }
     ```
 
-    **Output:**
+    **输出**：
 
     ```
     [South Africa, Australia, India]
@@ -284,7 +284,7 @@ System.out.println(hm);
     }
     ```
 
-    **Output:**
+    **输出**：
 
     ```
     Size of LinkedHashSet = 5

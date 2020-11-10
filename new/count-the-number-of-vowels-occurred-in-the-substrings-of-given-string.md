@@ -290,7 +290,7 @@ echo(vowel_calc($s));
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 16

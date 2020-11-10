@@ -425,7 +425,7 @@ public class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 xyy abb
@@ -567,7 +567,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 xyy abb

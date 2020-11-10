@@ -219,7 +219,7 @@ static public void Main() 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1 3 3 4

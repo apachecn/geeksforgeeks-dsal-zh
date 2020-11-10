@@ -253,7 +253,7 @@ public static void Main(string[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 (0, 0) (0, 1) (1, 0) (1, 1) (2, 0) (2, 1)

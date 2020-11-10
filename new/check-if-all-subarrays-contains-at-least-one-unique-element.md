@@ -107,7 +107,7 @@ class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Yes
@@ -202,7 +202,7 @@ class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Yes

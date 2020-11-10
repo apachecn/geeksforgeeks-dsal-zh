@@ -78,7 +78,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 abbatyo bbbacztr bbbdaaa aacaap zacaeaz baqwer aaqzzaa

@@ -264,7 +264,7 @@ public class NonReapatingCQueue
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 a -1 b b

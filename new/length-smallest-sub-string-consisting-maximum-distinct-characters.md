@@ -425,7 +425,7 @@ function smallesteSubstr_maxDistictChar($str)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
  The length of the smallest substring consisting

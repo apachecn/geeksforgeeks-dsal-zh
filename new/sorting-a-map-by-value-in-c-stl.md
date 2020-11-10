@@ -70,7 +70,7 @@ return 0;
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 Welcome 1
@@ -133,7 +133,7 @@ return 0;
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 Welcome 1
@@ -188,7 +188,7 @@ return 0;
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 Welcome 1

@@ -205,7 +205,7 @@ public class Main {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 3

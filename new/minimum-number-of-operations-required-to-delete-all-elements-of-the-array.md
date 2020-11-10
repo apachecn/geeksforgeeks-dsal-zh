@@ -278,7 +278,7 @@ echo minOperations($arr, $n);
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 2

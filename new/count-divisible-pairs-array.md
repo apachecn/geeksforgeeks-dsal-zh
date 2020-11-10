@@ -199,7 +199,7 @@ echo (countDivisibles($a, $n));
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 4

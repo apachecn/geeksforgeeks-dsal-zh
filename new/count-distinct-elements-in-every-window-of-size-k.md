@@ -244,7 +244,7 @@ First window is {4, 4}, count of distinct numbers is 1
 
     ```
 
-*   **Output:**
+*   **输出**：
 
     ```
     3

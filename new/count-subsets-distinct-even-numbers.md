@@ -195,7 +195,7 @@ public static void Main(String[] args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Number of subsets = 7

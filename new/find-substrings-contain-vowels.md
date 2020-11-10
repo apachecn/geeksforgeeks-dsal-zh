@@ -253,7 +253,7 @@ public static void Main(string[] args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 aeiou aeiouu
@@ -484,7 +484,7 @@ public class GFG
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 aeiou aeiouu

@@ -149,7 +149,7 @@ class FrequentWords {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 car 

@@ -294,7 +294,7 @@ print(lengthOfLongestSubarray(a, n, k))
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 4

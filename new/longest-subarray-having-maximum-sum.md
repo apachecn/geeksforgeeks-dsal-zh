@@ -376,7 +376,7 @@ public class GFG{ 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Length of longest subarray having maximum sum = 4

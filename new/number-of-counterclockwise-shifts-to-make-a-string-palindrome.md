@@ -338,7 +338,7 @@ class GFG
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 2
@@ -852,7 +852,7 @@ static int CyclicShifts(string str)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 2

@@ -176,7 +176,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 6 6 5
@@ -306,7 +306,7 @@ class GFG {
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 6 6 5

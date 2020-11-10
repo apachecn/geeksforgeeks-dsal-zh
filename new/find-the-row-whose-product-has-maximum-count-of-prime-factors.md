@@ -510,7 +510,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 7 8 9 15 45

@@ -135,7 +135,7 @@ operations(n, A, B);
 ]
 ```
 
-**Output:**
+**输出**：
 
 ```
 2 77 77 77 89 89 5 100 null null 4 9

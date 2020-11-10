@@ -166,7 +166,7 @@ public class DistinctElements 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Not all Elements are Distinct

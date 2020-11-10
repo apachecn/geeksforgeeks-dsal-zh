@@ -278,7 +278,7 @@ public class ArrayElements
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 (3, 8) and (4, 7)

@@ -77,7 +77,7 @@ findSuccessIpCount(log);
 }
 ```
 
-**Output:**
+**输出**：
 
 ```
 123.123.123.126 1

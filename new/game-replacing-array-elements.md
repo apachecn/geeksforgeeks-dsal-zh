@@ -171,7 +171,7 @@ public class GameOfReplacingArrayElements 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Player 1 Wins

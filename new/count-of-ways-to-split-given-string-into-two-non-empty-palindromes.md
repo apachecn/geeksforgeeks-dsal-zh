@@ -308,7 +308,7 @@ public static void Main(string []args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 4
@@ -503,7 +503,7 @@ int main()
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 4

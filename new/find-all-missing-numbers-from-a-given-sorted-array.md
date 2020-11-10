@@ -230,7 +230,7 @@ static void Main()
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 8 9 12
@@ -458,7 +458,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 8 9 12

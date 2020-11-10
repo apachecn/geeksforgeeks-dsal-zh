@@ -725,7 +725,7 @@ class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 The Substring [0 10] is a palindrome

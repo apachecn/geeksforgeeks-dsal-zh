@@ -231,7 +231,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 [[0, 1, 0], [0, 1, 0]]
@@ -318,7 +318,7 @@ print(matrix)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 [[0, 1, 0], [0, 1, 0]]

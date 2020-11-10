@@ -275,7 +275,7 @@ public static void Main ()
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 1 2 3 4 4

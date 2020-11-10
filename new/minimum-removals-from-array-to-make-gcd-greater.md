@@ -280,7 +280,7 @@ print(minimumRemovals(a, n))
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 2

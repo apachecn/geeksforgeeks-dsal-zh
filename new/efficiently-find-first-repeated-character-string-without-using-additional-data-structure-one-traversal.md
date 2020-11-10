@@ -255,7 +255,7 @@ else
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Char = a   and Index = 6

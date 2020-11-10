@@ -263,7 +263,7 @@ echo firstRepeating($str);
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 e

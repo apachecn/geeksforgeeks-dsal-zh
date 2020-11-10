@@ -253,7 +253,7 @@ public class geeks
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 20

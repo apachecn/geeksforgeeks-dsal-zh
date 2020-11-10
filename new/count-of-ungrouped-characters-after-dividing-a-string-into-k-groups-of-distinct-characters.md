@@ -265,7 +265,7 @@ public static void Main(String []srgs)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 6

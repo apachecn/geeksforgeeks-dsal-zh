@@ -149,7 +149,7 @@
     }
     ```
 
-    **Output:**
+    **输出**：
 
     ```
     Initial Hash:

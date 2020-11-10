@@ -105,7 +105,7 @@ print(cache.cache)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 OrderedDict([(1, 1)])

@@ -60,7 +60,7 @@ return Fibonacci(n - 1 ) + Fibonacci(n - 2 )
 print (Fibonacci( 9 ))
 ```
 
-**Output:**
+**输出**：
 
 ```
 34
@@ -101,7 +101,7 @@ N = Fib[ 9 ]
 print (N)
 ```
 
-**Output:**
+**输出**：
 
 ```
 34
@@ -159,7 +159,7 @@ if __name__ = = "__main__" :
 print (Fibonacci( 9 ))
 ```
 
-**Output:**
+**输出**：
 
 ```
 34

@@ -377,7 +377,7 @@ echo get_unordered_pairs($arr, $n); 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 2

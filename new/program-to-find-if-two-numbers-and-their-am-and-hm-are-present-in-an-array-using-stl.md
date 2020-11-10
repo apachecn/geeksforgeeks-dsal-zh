@@ -407,7 +407,7 @@ public static void Main() 
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 GM = 4.24

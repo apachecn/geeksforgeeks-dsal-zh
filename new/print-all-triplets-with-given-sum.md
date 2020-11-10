@@ -459,7 +459,7 @@ public class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 -3 0 1
@@ -818,7 +818,7 @@ findTriplets($arr, $n, $sum);
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 -3 -1 2

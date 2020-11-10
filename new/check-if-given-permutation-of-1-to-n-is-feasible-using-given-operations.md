@@ -402,7 +402,7 @@ static public void Main()
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 YES
