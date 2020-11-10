@@ -240,7 +240,7 @@ answerQueries($arr, $q);
 
 #### **方法 2（使用 Trie）**
 
-[Trie](https://www.geeksforgeeks.org/trie-insert-and-search/) 一种有效的数据结构，用于增强和检索类似字符串的数据。 搜索复杂度是最佳的密钥长度。
+[Trie](https://www.geeksforgeeks.org/trie-insert-and-search/) 一种有效的数据结构，用于增强和检索类似字符串的数据。 搜索复杂度是最佳的键长度。
 
 在此解决方案中，我们将字符串集合插入到 Trie 数据结构中，以便将它们存储在其中。 一件重要的事情是，我们要统计叶节点中的出现次数。 然后，在 Trie 中搜索给定的查询字符串，并检查 Trie 中是否存在该字符串。
 

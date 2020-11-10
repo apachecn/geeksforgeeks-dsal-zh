@@ -26,7 +26,7 @@
 > 2 3 1
 > ```
 
-**方法**：想法是使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，其密钥为`(x[i], y[i]))`对，映射值为同一点的频率。 键值将存储一对坐标，而映射值将存储其各自的频率。
+**方法**：想法是使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，其键为`(x[i], y[i]))`对，映射值为同一点的频率。 键值将存储一对坐标，而映射值将存储其各自的频率。
 
 以下是上述方法的实现：
 

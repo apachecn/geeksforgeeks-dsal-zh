@@ -4,7 +4,7 @@
 
 **先决条件**：[Java 集合框架](https://www.geeksforgeeks.org/java-collection-tutorial/)。
 
-> **1.以下 Java 程序的输出是什么？**
+> **1\. 以下 Java 程序的输出是什么？**
 
 ```
 import java.util.*;
@@ -37,7 +37,7 @@ Answer: C.
 
 **说明**：[`ArrayList.remove()`](https://www.geeksforgeeks.org/arraylist-linkedlist-remove-methods-java-examples/)方法采用索引或`Integer`类对象。 在这里，它获取索引并删除该索引处的元素。 因此，当我们使用`new Integer(7)`时，它将从[`ArrayList`](https://www.geeksforgeeks.org/arraylist-in-java/)中删除值 7。
 
-> **2.以下 Java 程序的输出是什么？**
+> **2\. 以下 Java 程序的输出是什么？**
 
 ```
 import java.util.*;
@@ -105,7 +105,7 @@ Answer: C.
 
 **说明**：[设置](https://www.geeksforgeeks.org/set-in-java/)不存储重复值。 [TreeSet](https://www.geeksforgeeks.org/treeset-in-java-with-examples/) 以排序顺序（即升序）存储数据，但是在这里，我们使用 [Collections.reverseOrder（）](https://www.geeksforgeeks.org/collections-reverseorder-java-examples/)使其明确地以降序存储数据。
 
-> **4.以下 Java 程序的输出是什么？**
+> **4\. 以下 Java 程序的输出是什么？**
 
 ```
 import java.util.*;
@@ -140,7 +140,7 @@ Answer: B.
 
 **说明**：[LinkedHashSet](https://www.geeksforgeeks.org/linkedhashset-in-java-with-examples/) 不存储任何重复值，而是按原始插入顺序存储数据。 另外，[堆栈](https://www.geeksforgeeks.org/stack-class-in-java/)是 [LIFO 数据结构](https://www.geeksforgeeks.org/lifo-last-in-first-out-approach-in-programming/)。 因此，弹出在堆栈中的最新插入的值。
 
-> **5.以下 Java 程序的输出是什么？**
+> **5\. 以下 Java 程序的输出是什么？**
 
 ```
 import java.util.*;
@@ -162,7 +162,7 @@ e.getKey() + " "
 }
 ```
 
-**答**：
+**A.**
 
 ```
    Ray 4
@@ -196,9 +196,9 @@ e.getKey() + " "
 Answer: B.
 ```
 
-**说明**：[LinkedHashMap](https://www.geeksforgeeks.org/linkedhashmap-class-java-examples/) 按插入顺序存储数据。
+**说明**：[`LinkedHashMap`](https://www.geeksforgeeks.org/linkedhashmap-class-java-examples/)按插入顺序存储数据。
 
-> **6.以下 Java 程序的输出是什么？**
+> **6\. 以下 Java 程序的输出是什么？**
 
 ```
 import java.util.*;
@@ -223,7 +223,7 @@ entry.getKey()
 }
 ```
 
-**答**：
+**A.**
 
 ```
 Karan 1
@@ -265,7 +265,7 @@ Answer: D.
 
 **说明**：[TreeMap](https://www.geeksforgeeks.org/treemap-in-java/) 以键值的排序顺序存储数据。
 
-> **7.以下 Java 程序的输出是什么？**
+> **7\. 以下 Java 程序的输出是什么？**
 
 ```
 import java.util.*;
@@ -297,7 +297,7 @@ Answer: D.
 
 **说明**：由于未在[队列](https://www.geeksforgeeks.org/queue-interface-java/)内放置任何值，因此`while`循环的条件为`false`。
 
-> **8.以下 Java 程序的输出是什么？**
+> **8\. 以下 Java 程序的输出是什么？**
 
 ```
 import java.util.*;
@@ -333,7 +333,7 @@ Answer: C.
 
 **说明**：[`HashSet`](http://www.geeksforgeeks.org/hashset-in-java/)不包含任何重复值。 因此 2 和 4 仅存储一次。 调用`remove`函数时，它将删除作为参数传递给该函数的值。
 
-> **9.以下 Java 程序的输出是什么？**
+> **9\. 以下 Java 程序的输出是什么？**
 
 ```
 import java.util.*;
@@ -366,7 +366,7 @@ Answer: C.
 
 **说明**：[TreeSet](https://www.geeksforgeeks.org/treeset-in-java-with-examples/) 以排序顺序（升序）存储值。 同样， [TreeSet.first（）](https://www.geeksforgeeks.org/treeset-first-method-in-java/)返回最小值， [TreeSet.last（）](https://www.geeksforgeeks.org/treeset-last-method-in-java/)返回该集中存在的最大值。
 
-> **10.以下 Java 程序的输出是什么？**
+> **10\. 以下 Java 程序的输出是什么？**
 
 ```
 import java.util.*;

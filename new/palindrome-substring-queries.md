@@ -20,13 +20,13 @@
 
 让我们假设有`Q`个这样的查询要回答，`N`是我们输入字符串的长度。 有以下两种方式来回答这些查询
 
-<center>**Method 1 (Naive)**</center>
+**Method 1 (Naive)**
 
 One by one we go through all the substrings of the queries and check whether the substring under consideration is a palindrome or not.
 
 由于存在`Q`个查询，每个查询可能需要`O(n)`个最坏情况的时间来回答，因此此方法在最坏情况下需要`O(QN)`时间。 尽管这是一种就地/空间高效的算法，但仍有一种更有效的方法可以做到这一点。
 
-<center>**Method 2 (Cumulative Hash)**</center>
+**Method 2 (Cumulative Hash)**
 
 The idea is similar to [Rabin Karp string matching](https://www.geeksforgeeks.org/searching-for-patterns-set-3-rabin-karp-algorithm/). We use string hashing. What we do is that we calculate cumulative hash values of the string in the original string as well as the reversed string in two arrays- prefix[] and suffix[].
 
@@ -123,7 +123,7 @@ hash("baaab") = suffix[11-1] – suffix[11-5-1] = suffix[10] – suffix[5] = 98 
 
 下面列出了程序中广泛使用的基本模运算。
 
-**1）添加**：
+**1）加法**：
 
 ```
 (a + b) % M = (a % M + b % M) % M
@@ -154,7 +154,7 @@ hash("baaab") = suffix[11-1] – suffix[11-5-1] = suffix[10] – suffix[5] = 98 
 (a – b) % M = (a % M – b % M) % M 【错误】
 ```
 
-**5）分区**：
+**5）除法**：
 
 ```
 (a / b) % M = (a * MMI(b)) % M

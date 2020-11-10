@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/print-all-possible-palindromic-string-formed-using-any-pair-of-given-strings/](https://www.geeksforgeeks.org/print-all-possible-palindromic-string-formed-using-any-pair-of-given-strings/)
 
-给定[字符串](https://www.geeksforgeeks.org/introduction-to-arrays/)字符串`arr[]`包含 **N** 个字的数组，任务是通过组合给定数组中的任何两个字符串来打印所有可能的回文字符串。
+给定[字符串](https://www.geeksforgeeks.org/introduction-to-arrays/)字符串`arr[]`包含`N`个单词的数组，任务是通过组合给定数组中的任何两个字符串来打印所有可能的回文字符串。
 
 **示例**：
 
@@ -29,9 +29,9 @@
 
 **朴素的方法**：朴素的方法是迭代[给定字符串数组](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)中的所有可能对，并检查字符串的连接是否形成回文。 如果是，则打印该对并检查下一对。
 
- ***时间复杂度**：*`O(N ^ 2)`*
+**时间复杂度**：`O(N ^ 2)`
 
-**辅助空间**：*`O(1)`*
+**辅助空间**：`O(1)`
 
 **有效方法**：可以使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)优化上述方法。 步骤如下：
 
@@ -41,9 +41,9 @@
 
 3.  完成上述步骤后，出现两种情况：
 
-    *   **情况 1**：如果`s1`是回文字符串，并且`s2`的反向出现在哈希映射中，则我们得到所需的对（`s2`的反向加**当前单词**的形式）。
+    *   **情况 1**：如果`s1`是回文字符串，并且`s2`的反向出现在哈希映射中，则我们得到所需的对（反向的`s2`加**当前单词**的形式）。
 
-    *   **情况 2**：如果`s2`是回文字符串，并且如果哈希映射中存在反向`s1`，那么我们得到一个对（**当前字词**加`s1`的反向）。
+    *   **情况 2**：如果`s2`是回文字符串，并且如果哈希映射中存在反向`s1`，那么我们得到一个对（**当前字词**加反向的`s1`）。
 
 4.  对数组中的所有字符串重复上述步骤。
 
@@ -213,9 +213,9 @@ abcba
 
 ```
 
-**时间复杂度**：*`O(n)`*
+**时间复杂度**：`O(n)`
 
-**辅助空间**：*`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

@@ -100,7 +100,7 @@
 
 ### [哈希表](https://www.geeksforgeeks.org/applications-of-hashing/)的应用：
 
-哈希表以键值对的形式存储数据。 它仅存储具有关联的密钥的数据。 使用哈希表时，插入和搜索操作易于管理。
+哈希表以键值对的形式存储数据。 它仅存储具有关联的键的数据。 使用哈希表时，插入和搜索操作易于管理。
 
 [![](img/40d018ac9eb9690b6bfd26cea6906fb8.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200609180838/HashingDataStructure-min.png)
 
@@ -122,7 +122,7 @@
 
 堆的一些应用程序是：
 
-1.  在[堆排序算法](https://www.geeksforgeeks.org/heap-sort/)中，该算法可对[最小堆](https://www.geeksforgeeks.org/min-heap-in-java/)（父项的密钥小于或等于其子项的密钥）或[最大堆中的元素进行排序](https://www.geeksforgeeks.org/max-heap-in-java/) （父项的密钥大于或等于其子项的密钥），[排序](http://www.geeksforgeeks.org/sorting-algorithms/)是通过创建堆来完成的。
+1.  在[堆排序算法](https://www.geeksforgeeks.org/heap-sort/)中，该算法可对[最小堆](https://www.geeksforgeeks.org/min-heap-in-java/)（父项的键小于或等于其子项的键）或[最大堆中的元素进行排序](https://www.geeksforgeeks.org/max-heap-in-java/) （父项的键大于或等于其子项的键），[排序](http://www.geeksforgeeks.org/sorting-algorithms/)是通过创建堆来完成的。
 
 2.  堆用于实现[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)，其中优先级基于创建的堆的顺序。
 

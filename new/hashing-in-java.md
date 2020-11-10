@@ -12,7 +12,7 @@
 
 **插入**：移至对应于上述计算得出的哈希索引的存储桶，并将新节点插入列表的末尾。
 
-**删除**：要从哈希表中删除节点，请计算密钥的哈希索引，移动到与计算出的哈希索引相对应的存储桶中，在当前存储桶中搜索列表以查找并删除节点 给定密钥（如果找到）。
+**删除**：要从哈希表中删除节点，请计算键的哈希索引，移动到与计算出的哈希索引相对应的存储桶中，在当前存储桶中搜索列表以查找并删除节点 给定键（如果找到）。
 
 ![](img/9f7240401363f22b94eb01c1c94738d1.png)
 
@@ -194,7 +194,7 @@ System.out.println(hm);
 
     ```
 
-    *   借助[`HashSet`](https://www.geeksforgeeks.org/hashset-in-java/)（类似于`HashMap`，但仅维护密钥，不配对）
+    *   借助[`HashSet`](https://www.geeksforgeeks.org/hashset-in-java/)（类似于`HashMap`，但仅维护键，不配对）
 
     ```
     // Java program to demonstrate working of HashSet
@@ -251,7 +251,7 @@ System.out.println(hm);
 
     ```
     
-    *   借助[`LinkedHashSet`](https://www.geeksforgeeks.org/linkedhashset-class-in-java-with-examples/)（类似于`LinkedHashMap`，但仅维护密钥，不配对）
+    *   借助[`LinkedHashSet`](https://www.geeksforgeeks.org/linkedhashset-class-in-java-with-examples/)（类似于`LinkedHashMap`，但仅维护键，不配对）
 
     ```
     // Java program to demonstrate working of LinkedHashSet

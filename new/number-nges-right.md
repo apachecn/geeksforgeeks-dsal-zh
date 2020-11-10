@@ -445,7 +445,7 @@ public static void Main(String []args)
 
 **辅助空间**：`O(n)`
 
-**替代性更短实现**
+**替代的更短实现**：
 
 ## C++
 

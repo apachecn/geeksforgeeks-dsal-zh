@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/double-hashing/](https://www.geeksforgeeks.org/double-hashing/)
 
-**双散列**是[**开放式**哈希表](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)中的冲突解决技术。 双重哈希使用在冲突发生时对密钥应用第二个哈希函数的想法。
+**双散列**是[**开放式**哈希表](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)中的冲突解决技术。 双重哈希使用在冲突发生时对键应用第二个哈希函数的想法。
 
 > 可以使用以下方式完成双哈希处理：
 >
