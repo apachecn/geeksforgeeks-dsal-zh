@@ -21,7 +21,6 @@
 >
 > **输出**：3
 
-## [推荐：请先在“ ***实践*** ”上解决它，然后再继续进行解决。](https://practice.geeksforgeeks.org/problems/longest-consecutive-subsequence/0)
 
 **方法**：
 

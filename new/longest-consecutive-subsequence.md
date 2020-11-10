@@ -397,7 +397,7 @@ Length of the Longest contiguous subsequence is 4
 
     要将每个元素存储在哈希映射中，需要`O(n)`空间。
 
-*感谢* [*Gaurav Ahirwar*](http://qa.geeksforgeeks.org/user/Mr.Lazy) *为上述解决方案。*
+感谢 [*Gaurav Ahirwar*](http://qa.geeksforgeeks.org/user/Mr.Lazy) 提出上述解决方案。
 
 如果发现任何不正确的内容，或者想共享有关上述主题的更多信息，请发表评论。
 

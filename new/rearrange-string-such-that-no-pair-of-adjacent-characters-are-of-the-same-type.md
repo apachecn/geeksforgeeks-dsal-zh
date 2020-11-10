@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/](https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/)
 
-给定字母数字字符串`str`，任务是重新排列字符串，以使两个相邻字符都不属于同一类型，即，两个相邻字符不能为字母或数字。 如果没有这种安排，请打印 **-1**。
+给定字母数字字符串`str`，任务是重新排列字符串，以使两个相邻字符都不属于同一类型，即，两个相邻字符不能为字母或数字。 如果没有这种安排，请打印`-1`。
 
 **示例**：
 
@@ -14,13 +14,13 @@
 >
 > **输出**：`I2P0L`
 
-**朴素的方法**：最简单的方法是[生成给定字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，并针对每个排列检查是否满足给定条件。 如果对任何排列均正确，则打印该排列。 如果不存在这样的排列，则打印***-1*** 。
+**朴素的方法**：最简单的方法是[生成给定字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，并针对每个排列检查是否满足给定条件。 如果对任何排列均正确，则打印该排列。 如果不存在这样的排列，则打印*`-1`* 。
 
 **时间复杂度**：`O(2 ^ N)`
 
 **辅助空间**：`O(1)`
 
-**高效方法**：为了优化上述方法，其思想是将所有字母和数字分开存储，并通过将它们交替放置在结果字符串中来重新排列它们。 如果字母和数字的位数相差大于 1，则打印 **-1**，因为可能的排列不可行。
+**高效方法**：为了优化上述方法，其思想是将所有字母和数字分开存储，并通过将它们交替放置在结果字符串中来重新排列它们。 如果字母和数字的位数相差大于 1，则打印`-1`，因为可能的排列不可行。
 
 下面是上述方法的实现：
 

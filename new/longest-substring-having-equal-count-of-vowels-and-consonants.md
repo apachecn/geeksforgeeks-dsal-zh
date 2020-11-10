@@ -28,7 +28,7 @@
 
 **辅助空间**：`O(1)`
 
-**有效方法**：想法是考虑一个长度等于给定字符串长度的数组，分别存储与元音和辅音对应的`1`和 **-1** 使用[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)打印[最长子数组的长度](https://www.geeksforgeeks.org/find-subarray-with-given-sum-in-array-of-integers/)，其总和等于 0。
+**有效方法**：想法是考虑一个长度等于给定字符串长度的数组，分别存储与元音和辅音对应的`1`和`-1`使用[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)打印[最长子数组的长度](https://www.geeksforgeeks.org/find-subarray-with-given-sum-in-array-of-integers/)，其总和等于 0。
 
 下面是上述方法的实现：
 

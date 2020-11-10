@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/](https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/)
 
-给定大小为`M * N`的矩阵`mat[][]`，任务是找到所有矩阵元素，这些矩阵元素在其各自的行中最小，在其各自的列中最大。 如果不存在此类元素，则打印 **-1**。
+给定大小为`M * N`的矩阵`mat[][]`，任务是找到所有矩阵元素，这些矩阵元素在其各自的行中最小，在其各自的列中最大。 如果不存在此类元素，则打印`-1`。
 
 **示例**：
 
@@ -24,7 +24,7 @@
 
 2.  [遍历矩阵](https://www.geeksforgeeks.org/traverse-a-given-matrix-using-recursion/)并找到每列的**最大元素**。 对于每一列，检查获得的最大值是否已经存在于 [unordered_set](http://www.geeksforgeeks.org/unorderd_set-stl-uses/) 中。
 
-3.  如果发现是真的，请打印该号码。 如果找不到这样的矩阵元素，则打印 **-1**。
+3.  如果发现是真的，请打印该号码。 如果找不到这样的矩阵元素，则打印`-1`。
 
 下面是上述方法的实现：
 

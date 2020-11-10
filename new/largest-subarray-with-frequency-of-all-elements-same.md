@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/largest-subarray-with-frequency-of-all-elements-same/](https://www.geeksforgeeks.org/largest-subarray-with-frequency-of-all-elements-same/)
 
-给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是找到所有子元素的频率相同的最大子数组的大小。
+给定`N`个整数的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是找到所有子元素的频率相同的最大子数组的大小。
 
 **示例**：
 
@@ -138,9 +138,9 @@ int main()
 
 ```
 
-**时间复杂度**：*`O(N ^ 2)`*
+**时间复杂度**：`O(N ^ 2)`
 
-**辅助空间**：*`O(1)`*
+**辅助空间**：`O(1)`
 
 
 

@@ -441,7 +441,7 @@ function smallesteSubstr_maxDistictChar($str)
 
 请参考[包含字符串本身的所有字符的最小窗口](https://www.geeksforgeeks.org/smallest-window-contains-characters-string/)，以获取实现和更多详细信息。
 
-**提问人：DailyHunt**
+**提问者：DailyHunt**
 
 本文由 **Harshit Agrawal** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

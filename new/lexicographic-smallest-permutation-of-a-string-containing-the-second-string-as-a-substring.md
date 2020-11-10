@@ -20,7 +20,7 @@
 
 **方法**：可以使用[频率计数](https://www.geeksforgeeks.org/print-characters-frequencies-order-occurrence/)技术的概念来解决此问题。 请按照以下步骤解决此问题。
 
-1.  存储字符串 **str1** 和 **str2** 的所有字符的频率。
+1.  存储字符串`str1`和`str2`的所有字符的频率。
 
 2.  用子字符串初始化结果字符串。
 

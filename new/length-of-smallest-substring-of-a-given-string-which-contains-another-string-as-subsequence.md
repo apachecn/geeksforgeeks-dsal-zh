@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/](https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/)
 
-给定两个[字符串](https://www.geeksforgeeks.org/category/data-structures/c-strings/) **A** 和 **B** ，任务是找到具有**的 **A** 中最小的[子字符串](https://www.geeksforgeeks.org/substring-in-java/) ] B** 作为[子序列](https://www.geeksforgeeks.org/tag/subsequence/)。
+给定两个[字符串](https://www.geeksforgeeks.org/category/data-structures/c-strings/)`A`和`B`，任务是找到具有`B`作为[子序列](https://www.geeksforgeeks.org/tag/subsequence/)的`A`中最小的[子字符串](https://www.geeksforgeeks.org/substring-in-java/)。
 
 **示例**：
 
@@ -22,21 +22,21 @@
 
 **方法**：请按照以下步骤解决问题：
 
-*   将 **A** 的字符的所有索引存储在 [Map](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) **CharacterIndex** 中的 **B** 中。
+*   将出现在的`B`中的`A`的字符的所有索引存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)`CharacterIndex`中。
 
-*   [遍历字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/) **B** 的所有字符。
+*   [遍历字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)`B`的所有字符。
 
-*   检查字符串 **A** 中是否存在字符串 **B** 的第一个字符：
+*   检查字符串`A`中是否存在字符串`B`的第一个字符：
 
-    1.  如果发现为真，则使用字符串 **A 中第一次出现的 **B [0]** 的索引初始化两个变量 **firstVar** 和 **lastVar**** 。
+    1.  如果发现为真，则使用字符串`A`中第一次出现的`B[0]`的索引初始化两个变量`firstVar`和`lastVar`。
 
-    2.  更新值后，从[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) **CharacterIndex** 中删除该字符。
+    2.  更新值后，从[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)`CharacterIndex`中删除该字符。
 
     3.  否则，将无法再有其他子字符串。
 
-*   对于 **B** 的其余字符，请检查字符串 **A** 中是否存在该字符。 如果发现是真的，则遍历字符串 **A** 中该字符的所有出现，并且如果字符串 **A** 中该字符的索引超过 **lastVar** ， 然后使用该索引更新 **lastVar** 。 否则，将无法再有其他子字符串。
+*   对于`B`的其余字符，请检查字符串`A`中是否存在该字符。 如果发现是真的，则遍历字符串`A`中该字符的所有出现，并且如果字符串`A`中该字符的索引超过`lastVar`， 然后使用该索引更新`lastVar`。 否则，将无法再有其他子字符串。
 
-*   如果 **B** 被完全遍历，则用 **firstVar** 和 **lastVar 之间的差异更新答案。**
+*   如果`B`被完全遍历，则用`firstVar`和`lastVar`之间的差异更新答案。
 
 *   打印最终的最小化答案。
 

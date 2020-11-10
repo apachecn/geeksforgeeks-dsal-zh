@@ -6,7 +6,7 @@
 
 **注意**：[如果一组以上最大长度，则打印其中最大的一组](https://www.geeksforgeeks.org/check-if-two-integer-are-anagrams-of-each-other/)。
 
-> 字符串的**字形图**是另一个包含相同字符的字符串，只是字符顺序不同。
+> 字符串的**异序词**是另一个包含相同字符的字符串，只是字符顺序不同。
 
 **示例**：
 
@@ -38,7 +38,7 @@
 
 1.  初始化[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，以存储与数字按顺序排列的数字相对应的所有异序词数字。
 
-2.  [生成长度为 **K** 的所有完全平方](https://www.geeksforgeeks.org/print-all-perfect-squares-from-the-given-range/)。
+2.  [生成长度为`K`的所有完全平方](https://www.geeksforgeeks.org/print-all-perfect-squares-from-the-given-range/)。
 
 3.  对于生成的每个完全平方，在**映射**中插入对应于其数字以升序排列的数字的数字。
 
@@ -166,9 +166,9 @@ int main()
 
 ```
 
-***时间复杂度**：`O(n)`
+**时间复杂度**：`O(n)`
 
-**辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

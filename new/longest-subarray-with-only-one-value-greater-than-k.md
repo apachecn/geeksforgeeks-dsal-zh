@@ -32,7 +32,7 @@
 
 一种有效的解决方案是使用[双指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)解决上述问题。 以下是解决上述问题的算法。
 
-*   将两个指针`front`和`end`初始化为 0，然后将一个**访问数组**标记为已访问索引。
+*   将两个指针`front`和`end`初始化为 0，然后使用一个**访问数组**来标记已访问的索引。
 
 *   我们需要一个[集合](http://www.geeksforgeeks.org/set-in-cpp-stl/)容器，以便我们可以在`O(log n)`中，决定从集合中删除的任何`end - front`范围的第二大元素，和一个[`unordered_map`](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)来计算数组中元素的频率。
 
@@ -40,7 +40,7 @@
 
 *   将元素插入集合中的`a[end]`，如果以前没有访问过索引末端，则在映射中增加其频率，以避免多次插入相同的索引。
 
-*   如果该集合仅包含一个元素，则由于我们只有元素，并且由于我们知道至少存在一个**元素> k** ，因此可以插入`K`，因此我们对其进行计数并向前移动结束指针。
+*   如果该集合仅包含一个元素，则由于我们只有元素，并且由于我们知道至少存在一个大于`k`的**元素** ，因此可以插入`K`，因此我们对其进行计数并向前移动结束指针。
 
 *   如果集合中包含一个以上的元素，则[`s.end()`](https://www.geeksforgeeks.org/setbegin-setend-c-stl/)指针指向最后一个元素，因此将其减少两次将向我们提供`end - front`范围的第二大元素。
 
