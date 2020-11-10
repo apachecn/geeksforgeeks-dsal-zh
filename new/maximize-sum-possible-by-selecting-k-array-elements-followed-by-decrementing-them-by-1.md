@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/maximize-sum-possible-by-selecting-k-array-elements-followed-by-decrementing-them-by-1/](https://www.geeksforgeeks.org/maximize-sum-possible-by-selecting-k-array-elements-followed-by-decrementing-them-by-1/)
 
-给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，该数组由`N`个正整数和一个整数`K`组成。 在一个操作中，选择一个数组元素，将其添加到总和中，然后将其递减 **1**。 任务是打印通过执行`K`次操作可获得的最大和。
+给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，该数组由`N`个正整数和一个整数`K`组成。 在一个操作中，选择一个数组元素，将其添加到总和中，然后将其递减`1`。 任务是打印通过执行`K`次操作可获得的最大和。
 
 **示例**：
 
@@ -168,11 +168,11 @@ class GFG {
 
 *   创建大小为`M + 1`的`freq[]`，其中`M`是给定数组中存在的最大元素，并存储`arr[]`每个元素的频率和最大可能和到`max_sum`中。
 
-*   [从右到左遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`freq[]` ，即从`i = M`到 **0**。
+*   [从右到左遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`freq[]` ，即从`i = M`到`0`。
 
 *   如果`K ≥ freq [i]`，将`max_sum`增加`freq[i] * i`，将`K`减少`freq[i]`，并将`freq[i – 1]`增加`freq[i]`。
 
-*   否则将`max_sum`递增`i * K`，并中断循环，因为`K`变为 **0**。
+*   否则将`max_sum`递增`i * K`，并中断循环，因为`K`变为`0`。
 
 *   返回`max_sum`作为最大可能和。
 

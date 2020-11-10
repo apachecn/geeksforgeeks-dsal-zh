@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/](https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/)
 
-给定大小为`N`的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是计算可能的成对数组元素`arr[i], arr[j]`，使得`(arr[i] + arr[j])(arr[i] - arr[j])`为 **0**。
+给定大小为`N`的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是计算可能的成对数组元素`arr[i], arr[j]`，使得`(arr[i] + arr[j])(arr[i] - arr[j])`为`0`。
 
 **示例**：
 

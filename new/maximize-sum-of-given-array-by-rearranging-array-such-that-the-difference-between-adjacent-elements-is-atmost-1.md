@@ -2,11 +2,11 @@
 
 > 原文：[https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/](https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/)
 
-给定由`N`个正整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是最大化数组元素的总和，以使数组的第一个元素为 **1**，执行以下操作后，数组相邻元素之间的差最大为 **1**：
+给定由`N`个正整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是最大化数组元素的总和，以使数组的第一个元素为`1`，执行以下操作后，数组相邻元素之间的差最大为`1`：
 
 *   以任何方式重新排列数组元素。
 
-*   将任何元素减少为至少 **1** 的任何数字。
+*   将任何元素减少为至少`1`的任何数字。
 
 **示例**：
 
@@ -38,13 +38,13 @@
 
 *   将频率存储在`count[]`中，并且如果`arr[i]`大于`N`，则增加`count[N]`。
 
-*   将`size`和`sum`初始化为 **0**，它们分别存储先前选择的整数和最大可能和。
+*   将`size`和`sum`初始化为`0`，它们分别存储先前选择的整数和最大可能和。
 
 *   [使用变量`K`遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`count[]`数组，然后执行以下操作：
 
     *   对每个`K`执行循环，直到`count[K] > 0`和`size < K`。
 
-    *   在`while`循环中将`size`增大 **1**，将`sum`增大`size`，将`count[k]`减小 **1**。
+    *   在`while`循环中将`size`增大`1`，将`sum`增大`size`，将`count[k]`减小`1`。
 
     *   在`while`循环结束后，以`K * count[K]`递增`sum`。
 

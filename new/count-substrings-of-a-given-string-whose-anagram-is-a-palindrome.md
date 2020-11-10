@@ -23,7 +23,7 @@
 
 **辅助空间**：`O(n)`
 
-[**位掩码**](https://www.geeksforgeeks.org/bit-tricks-competitive-programming/) **方法**：想法是生成 **26 位**数字的掩码，因为 **26** 字符。 另外，请注意，如果某个字符串的异序词是回文，则其字符的频率必须最多为偶数。
+[**位掩码**](https://www.geeksforgeeks.org/bit-tricks-competitive-programming/) **方法**：想法是生成 **26 位**数字的掩码，因为`26`字符。 另外，请注意，如果某个字符串的异序词是回文，则其字符的频率必须最多为偶数。
 
 [请按照以下步骤解决问题](https://www.geeksforgeeks.org/print-the-frequency-of-each-character-in-alphabetical-order/)：
 
@@ -31,7 +31,7 @@
 
 *   从每个索引`i`，在索引范围`[i， N – 1]`上遍历字符串，并对每个字符`S[j]`，计算`X`和`2 ^ (S[j] – 'a')`的[按位异或](http://www.geeksforgeeks.org/calculate-xor-1-n/)，其中第 0 位表示`a`的频率是否为奇数， 第 1 位表示`b`的频率是否奇数，依此类推。
 
-*   然后，检查`X & (X - 1)`是否等于 **0**。 如果发现是真的，则将**计数**递增 **1**。
+*   然后，检查`X & (X - 1)`是否等于`0`。 如果发现是真的，则将**计数**递增`1`。
 
 > **解释**：假设`X = 0b0001000`，`X – 1`将表示为`0b0000111`。因此，`X & (X - 1) = 0`
 
@@ -246,9 +246,9 @@ public static void Main(String[] args)
 
 1.  初始化映射以存储模板的频率。 初始化变量`X = 0`。
 
-2.  [遍历字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)，对于第`i`个索引，计算`X`和`2 ^ (S[j] – 'a')`的[按位异或](http://www.geeksforgeeks.org/calculate-xor-1-n/)并通过添加`X`映射中的当前值的频率来更新`and`，因为如果 0 至`j`中的任何子字符串具有与`X`相同的掩码，这是 **0** 至`i`的子串的掩码， 那么子字符串`S[j + 1, i]`将具有偶数频率，其中`j < i`。
+2.  [遍历字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)，对于第`i`个索引，计算`X`和`2 ^ (S[j] – 'a')`的[按位异或](http://www.geeksforgeeks.org/calculate-xor-1-n/)并通过添加`X`映射中的当前值的频率来更新`and`，因为如果 0 至`j`中的任何子字符串具有与`X`相同的掩码，这是`0`至`i`的子串的掩码， 那么子字符串`S[j + 1, i]`将具有偶数频率，其中`j < i`。
 
-3.  还要加上掩码`X xor 2 ^ k`的频率，其中`0 ≤ k < 26`。 之后，将`X`的频率增加 **1**。
+3.  还要加上掩码`X xor 2 ^ k`的频率，其中`0 ≤ k < 26`。 之后，将`X`的频率增加`1`。
 
 4.  对给定字符串的每个索引重复上述步骤。
 

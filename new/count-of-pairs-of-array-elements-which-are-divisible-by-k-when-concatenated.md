@@ -34,7 +34,7 @@
 
 *   通过`K`检查连接数的**除数**。
 
-> 当且仅当`arr[j] % k`和`(arr [i] * 10 ^ lenj) % k`为 **0**。
+> 当且仅当`arr[j] % k`和`(arr [i] * 10 ^ lenj) % k`为`0`。
 
 *   对于所有此类偶对`(arr[i], arr[j])`，增加**计数**。
 
@@ -48,13 +48,13 @@
 
 要优化上述方法，请按照以下步骤操作：
 
-*   为了应用上述公式，对于从 **1** 到 **10** 的每个长度，维持一个[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。
+*   为了应用上述公式，对于从`1`到`10`的每个长度，维持一个[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。
 
 *   将`{len[a[i]], a[i] % k}`存储在映射中。
 
 *   为了对数进行计数，对于`[1, 10]`中的每个`j`，将**计数**增加`(k – ((arr[i] * 10^j) % k))`的频率，它储存在映射中，作为`{j, k – ((arr[i] * 10^j) % k)}`偶对。
 
-*   如果计数了偶对`(arr[i], arr[i])`，则将**计数**减少 **1**。
+*   如果计数了偶对`(arr[i], arr[i])`，则将**计数**减少`1`。
 
 *   遍历数组后，打印最终的**计数**。
 

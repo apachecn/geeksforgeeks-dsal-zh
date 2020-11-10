@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/](https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/)
 
-给定正整数数组`arr[]`，任务是计算对数`arr[i], arr[j]`的最大可能数目，以使`arr[i] + arr[j]`是 **2** 的幂。
+给定正整数数组`arr[]`，任务是计算对数`arr[i], arr[j]`的最大可能数目，以使`arr[i] + arr[j]`是`2`的幂。
 
 **注意**：一个元素最多可以使用一次以形成一对。
 

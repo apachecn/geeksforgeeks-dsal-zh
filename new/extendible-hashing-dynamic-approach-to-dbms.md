@@ -40,7 +40,7 @@
 
 *   **步骤 4 – 识别目录**：考虑二进制数中 LSB 的“全局深度”数，并将其与目录 ID 匹配。
 
-    例如 获得的二进制为：110001，全局深度为 3。因此，哈希函数将返回 3 个 LSB，即 110 **001** 即。 001。
+    例如 获得的二进制为：110001，全局深度为 3。因此，哈希函数将返回 3 个 LSB，即 110`001`即。 001。
 
 *   **步骤 5 – 遍历**：现在，导航到目录 ID 为 001 的目录所指向的存储桶。
 
@@ -112,7 +112,7 @@
 
     [![](img/c989240e80a05da8a43686c4674ca027.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190803221039/hash42.png)
 
-*   As directed by **Step 7-Case 1**, Since Local Depth = Global Depth, the bucket splits and directory expansion takes place. Also, rehashing of numbers present in the overflowing bucket takes place after the split. And, since the global depth is incremented by 1, now,the global depth is 2\. Hence, 16,4,6,22 are now rehashed w.r.t 2 LSBs.[ 16(100**00**),4(1**00**),6(1**10**),22(101**10**) ]
+*   As directed by **Step 7-Case 1**, Since Local Depth = Global Depth, the bucket splits and directory expansion takes place. Also, rehashing of numbers present in the overflowing bucket takes place after the split. And, since the global depth is incremented by 1, now,the global depth is 2\. Hence, 16,4,6,22 are now rehashed w.r.t 2 LSBs.[ 16(100`00`),4(1`00`),6(1`10`),22(101`10`) ]
 
     [![](img/17303cc35bb9aa9d097c297b0eaa7810.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190803221040/hash52.png)
 

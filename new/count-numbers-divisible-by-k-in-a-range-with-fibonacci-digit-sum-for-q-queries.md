@@ -28,7 +28,7 @@
 
 **方法**：想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契结点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，直到给定范围内的最大值，从而使检查变得容易和高效 （在`O(1)`时间内）。
 
-*   预计算后，标记从 **1** 到`maxVal`的所有整数，这些整数可以被`K`整除并且是斐波那契。
+*   预计算后，标记从`1`到`maxVal`的所有整数，这些整数可以被`K`整除并且是斐波那契。
 
 *   查找标记数组的[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)。
 

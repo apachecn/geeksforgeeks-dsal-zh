@@ -42,7 +42,7 @@
 
 1.  首先，将每个数组元素的索引存储在[**映射**](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 中。
 
-2.  将下一个元素的位置存储在`next`中。 最初，由于数组为空，因此`next`包含 **1** 的位置。
+2.  将下一个元素的位置存储在`next`中。 最初，由于数组为空，因此`next`包含`1`的位置。
 
 3.  遍历`[1, N]`并检查当前元素是否存在于下一个索引处。 如果不是，则返回 -1。
 

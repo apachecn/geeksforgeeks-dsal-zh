@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-root-to-leaf-paths-having-exactly-k-distinct-nodes-in-a-binary-tree/](https://www.geeksforgeeks.org/count-root-to-leaf-paths-having-exactly-k-distinct-nodes-in-a-binary-tree/)
 
-给定一个[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，该树由`N`个节点组成，以 **1** 为根，整数`K`和数组`arr[]`，由分配给每个节点的值组成，任务是计算给定二叉树中具有`K`个不同节点的根到叶子的路径的[数量](https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/)。
+给定一个[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，该树由`N`个节点组成，以`1`为根，整数`K`和数组`arr[]`，由分配给每个节点的值组成，任务是计算给定二叉树中具有`K`个不同节点的根到叶子的路径的[数量](https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/)。
 
 **示例**：
 
@@ -42,17 +42,17 @@
 
 **高效方法**：想法是使用[前置遍历](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)和[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来计算从根到当前节点的路径中的不同节点。 请按照以下步骤解决问题：
 
-*   初始化变量`distinct_nodes`为 **0**，以存储从根到当前节点的不同节点的计数，而将`ans`初始化为 0，以将总的不同根存储到 具有`K`个不同节点的叶路径。
+*   初始化变量`distinct_nodes`为`0`，以存储从根到当前节点的不同节点的计数，而将`ans`初始化为 0，以将总的不同根存储到 具有`K`个不同节点的叶路径。
 
 *   在给定的二叉树中执行[前置遍历](http://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)，并将从根到当前节点的不同节点的计数存储在映射`M`中。
 
-*   每当节点首次出现在路径上时，将不同节点的数量增加 **1**。
+*   每当节点首次出现在路径上时，将不同节点的数量增加`1`。
 
 *   如果路径上不同节点的数量大于`K`，则返回当前节点的父节点。
 
-*   否则，继续访问当前节点的子节点，使当前节点值的频率增加 **1**。
+*   否则，继续访问当前节点的子节点，使当前节点值的频率增加`1`。
 
-*   在上述步骤中，如果从根到叶的路径上不同节点的计数正好等于`K`，则将`ans`递增 **1**。
+*   在上述步骤中，如果从根到叶的路径上不同节点的计数正好等于`K`，则将`ans`递增`1`。
 
 *   完成上述步骤后，将`ans`的值打印为结果计数。
 

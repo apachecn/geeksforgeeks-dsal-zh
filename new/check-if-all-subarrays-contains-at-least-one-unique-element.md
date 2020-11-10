@@ -122,15 +122,15 @@ Yes
 
 *   在`[0, N – 1]`范围内循环循环，并创建和[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，以存储当前子数组中每个字符的频率。
 
-*   创建一个变量`count`，以检查子数组是否具有至少一个频率为 **1** 的元素。
+*   创建一个变量`count`，以检查子数组是否具有至少一个频率为`1`的元素。
 
 *   [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`arr[]`，并更新映射中每个元素的频率，并将计数更新为：
 
-    *   如果元素的频率为 **1**，则增加`count`。
+    *   如果元素的频率为`1`，则增加`count`。
 
-    *   如果元素的频率为 **2**，则递减`count`。
+    *   如果元素的频率为`2`，则递减`count`。
 
-*   在上述步骤中，如果`count`的值为 **0**，则打印`No`，因为存在一个子数组，该子数组中没有任何唯一元素。
+*   在上述步骤中，如果`count`的值为`0`，则打印`No`，因为存在一个子数组，该子数组中没有任何唯一元素。
 
 *   在所有迭代之后，如果`count`的值始终为正，则打印`Yes`。
 

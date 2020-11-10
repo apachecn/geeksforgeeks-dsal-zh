@@ -32,7 +32,7 @@
 
 **高效方法**：要优化上述方法，其思想是使用[两指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)。 请按照以下步骤解决该方法：
 
-1.  将两个指针 **i** 和 **j** 分别初始化为 **0** 和 **1** ，以存储所得子数组的开始和结束索引。
+1.  将两个指针 **i** 和 **j** 分别初始化为`0`和`1`，以存储所得子数组的开始和结束索引。
 
 2.  初始化 [**HashSet**](http://www.geeksforgeeks.org/hashset-in-java/) 以存储数组元素。
 

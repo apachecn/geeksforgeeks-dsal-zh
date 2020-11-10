@@ -38,7 +38,7 @@
 
 1.  将数组`arr[]`的每个元素的频率存储在[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中。
 
-2.  现在，使用上面创建的`HashMap`找到频率为 **1** 的数组的最大值和最小值。
+2.  现在，使用上面创建的`HashMap`找到频率为`1`的数组的最大值和最小值。
 
 3.  打印上一步中获得的最大值和最小值之间的差。
 

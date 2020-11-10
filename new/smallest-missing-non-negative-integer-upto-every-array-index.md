@@ -23,9 +23,9 @@
 
 *   初始化一个数组，例如说`hash[N]`，以检查在起始索引和当前索引之间是否存在`smNonNeg`。
 
-*   [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并检查`hash[smNonNeg]`是否等于 **0**。 如果发现是真的，则打印`smNonNeg`的值。
+*   [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并检查`hash[smNonNeg]`是否等于`0`。 如果发现是真的，则打印`smNonNeg`的值。
 
-*   否则，增加`smNonNeg`的值，而`hash[smNonNeg]`不等于 **0**。
+*   否则，增加`smNonNeg`的值，而`hash[smNonNeg]`不等于`0`。
 
 下面是上述方法的实现：
 

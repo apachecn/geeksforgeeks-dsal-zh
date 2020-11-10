@@ -26,7 +26,7 @@
 
 **方法**：在本文中，我们将讨论使用[分而治之](https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/)技术和[递归](https://www.geeksforgeeks.org/recursion/)的方法。 步骤如下：
 
-1.  将给定字符串的每个字符的[频率存储在大小为 **26** 的频率数组中。](https://www.geeksforgeeks.org/print-the-frequency-of-each-character-in-alphabetical-order/)
+1.  将给定字符串的每个字符的[频率存储在大小为`26`的频率数组中。](https://www.geeksforgeeks.org/print-the-frequency-of-each-character-in-alphabetical-order/)
 
 2.  初始化两个变量，`start = 0`，`end`是字符串`str`的长度。
 

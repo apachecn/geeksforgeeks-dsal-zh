@@ -35,7 +35,7 @@
 >
 > 由于数组具有多个重复对，因此所有对均按排序顺序打印。
 
-**方法**：最简单的方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并将每个相邻对存储在[`Map`](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。 打印频率大于 **1** 的所有此类对。 请按照以下步骤解决问题：
+**方法**：最简单的方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并将每个相邻对存储在[`Map`](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。 打印频率大于`1`的所有此类对。 请按照以下步骤解决问题：
 
 1.  创建一个映射`M`以将所有相邻对存储在数组中。
 

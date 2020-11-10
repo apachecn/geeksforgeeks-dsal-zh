@@ -22,7 +22,7 @@
 
 *   初始化一个变量，例如说`cntOddFreq`，以存储给定字符串的不同字符的计数，其频率为奇数。
 
-*   [遍历`cntFreq[]`数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并检查`cntFreq[i] % 2 == 1`，然后将`cntOddFreq`的值增加 **1**。
+*   [遍历`cntFreq[]`数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并检查`cntFreq[i] % 2 == 1`，然后将`cntOddFreq`的值增加`1`。
 
 *   最后，检查`cntOddFreq ≤ (K + 1)`，然后打印`True`。
 
