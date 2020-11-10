@@ -426,7 +426,7 @@ which contains element from all the three arrays.
     The smallest range is [6 8]
     ```
 
-*   **Complexity Analysis:**
+*   **复杂度分析**：
 
     *   **时间复杂度**：`O(n * k ^ 2)`，要找到长度为`k`的数组中的最大值和最小值，所需时间为`O(K)`，并遍历所有`k`长度为`n`的数组（在最坏的情况下），时间复杂度为`O(N * K)`，则总时间复杂度为`O(n * k ^ 2)`。
 
@@ -1013,7 +1013,7 @@ which contains element from all the three arrays.
     The smallest range is [6 8]
     ```
 
-*   **Complexity Analysis:**
+*   **复杂度分析**：
 
     *   **时间复杂度**：`O(n * k * log k)`。
 

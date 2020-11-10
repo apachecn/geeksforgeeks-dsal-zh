@@ -266,9 +266,9 @@ public static void Main(String[] args)
 4
 ```
 
-**时间复杂度**：*`O(N ^ 2)`*。
+**时间复杂度**：`O(N ^ 2)`。
 
-**辅助空间**：*`O(1)`*
+**辅助空间**：`O(1)`
 
 **有效方法**：为优化上述方法，我们将使用 [eratosthenes 筛子](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)的概念。 步骤如下：
 

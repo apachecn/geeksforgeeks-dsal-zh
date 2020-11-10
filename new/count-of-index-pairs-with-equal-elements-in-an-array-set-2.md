@@ -28,17 +28,17 @@
 
 对于朴素和有效的方法，请参阅本文的[先前文章](https://www.geeksforgeeks.org/count-index-pairs-equal-elements-array/)。
 
-**更好的方法-使用两个指针**：这个想法是[对给定的数组和具有相同元素的索引差进行](https://www.geeksforgeeks.org/sorting-algorithms/)排序。 步骤如下：
+**更好的方法 - 使用两个指针**：这个想法是[对给定的数组和具有相同元素的索引差进行](https://www.geeksforgeeks.org/sorting-algorithms/)排序。 步骤如下：
 
 1.  排序给定的数组。
 
-2.  将两个指针**左侧**和**右侧**分别初始化为 0 和 1。
+2.  将两个指针`left`和`right`分别初始化为 0 和 1。
 
-3.  现在直到右边小于 **N** ，执行以下操作：
+3.  现在直到`right`小于`N`，执行以下操作：
 
-    *   如果元素索引的左侧和右侧相同，则增加右侧指针并将右侧指针和左侧指针的**差加到最终计数中。**
+    *   如果索引`left`和`right`的元素相同，则增加`right`指针并将`right`指针和`left`指针的**差**加到最终计数中。
 
-    *   否则更新从左到右的值。
+    *   否则将`right`值更新到`left`。
 
 4.  完成上述步骤后，打印计数值。
 
@@ -252,11 +252,11 @@ public static void Main(String[] args)
 
 **辅助空间**：`O(1)`
 
-**高效方法–使用单个遍历**：的想法是使用 [**散列**](https://www.geeksforgeeks.org/hashing-data-structure/) 并更新频率大于 1 的每对的计数。以下是步骤：
+**高效方法 – 使用单个遍历**：的想法是使用 [**散列**](https://www.geeksforgeeks.org/hashing-data-structure/) 并更新频率大于 1 的每对的计数。以下是步骤：
 
-1.  创建一个 [unordered_map](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) **M** ，以将每个元素的[频率存储在数组](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)中。
+1.  创建一个 [unordered_map](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)`M`，以将每个元素的[频率存储在数组](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)中。
 
-2.  遍历给定的数组，并继续更新 **M** 中每个元素的频率。
+2.  遍历给定的数组，并继续更新`M`中每个元素的频率。
 
 3.  在上述步骤中更新频率时，如果任何元素的频率大于 0，则将该频率计数为最终计数。
 

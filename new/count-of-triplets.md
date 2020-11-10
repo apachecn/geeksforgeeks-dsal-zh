@@ -28,7 +28,7 @@
 
 1.  为每个点计算到其他所有点的距离。
 
-2.  在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中存储点到其他点的中间距离（例如 **d** ）。
+2.  在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中存储点到其他点的中间距离（例如`d`）。
 
 3.  如果映射已经具有相同的距离，则三元组的数量是映射中为`d`存储的值的两倍。
 

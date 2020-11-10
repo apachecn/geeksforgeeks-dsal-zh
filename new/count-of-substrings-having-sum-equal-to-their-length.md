@@ -24,7 +24,7 @@
 
 **辅助空间**：`O(1)`
 
-**高效方法**：可以使用 [Hashmap](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 优化上述方法，并不断更新 **Hashmap** 中的子字符串计数，并在最后打印所需的计数。
+**高效方法**：可以使用 [Hashmap](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 优化上述方法，并不断更新`Hashmap`中的子字符串计数，并在最后打印所需的计数。
 
 下面是上述方法的实现：
 

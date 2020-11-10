@@ -1,10 +1,10 @@
-# 在每个数组元素
+# 计算每个数组元素的左侧更大的元素的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-greater-elements-on-the-left-side-of-every-array-element/](https://www.geeksforgeeks.org/count-greater-elements-on-the-left-side-of-every-array-element/)
 
-的左侧计数更大的元素
 
-给定大小为 **N** 的不同整数的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是在每个数组元素的左侧打印较大元素的计数。
+
+给定大小为`N`的不同整数的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是在每个数组元素的左侧打印较大元素的计数。
 
 **示例**：
 
@@ -120,9 +120,9 @@ int main()
 
 ```
 
-***时间复杂度**：`O(N ^ 2)`，因为距离函数取`O(n)`，但上述实现非常简单，并且比朴素的方法效果更好 一般情况下的算法。
+**时间复杂度**：`O(N ^ 2)`，因为距离函数取`O(n)`，但上述实现非常简单，并且比朴素的方法效果更好 一般情况下的算法。
 
-**辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 **注意**：上述方法适用于唯一元素，但对于重复元素，只需将[替换为](https://www.geeksforgeeks.org/set-in-cpp-stl/) [](https://www.geeksforgeeks.org/set-in-cpp-stl/) [多组。](https://www.geeksforgeeks.org/multiset-in-cpp-stl/)
 

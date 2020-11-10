@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-items-common-lists-different-prices/](https://www.geeksforgeeks.org/count-items-common-lists-different-prices/)
 
-给定两个列表，分别包含 **m** 和 **n** 个项目的 **list1** 和 **list2** 。 每个项目都与两个字段关联：名称和价格。 问题是要计算两个列表中价格不同的商品。
+给定两个列表，分别包含`m`和`n`个项目的`list1`和`list2`。 每个项目都与两个字段关联：名称和价格。 问题是要计算两个列表中价格不同的商品。
 
 **示例**：
 

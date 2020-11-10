@@ -570,7 +570,7 @@ First window is {4, 4}, count of distinct numbers is 1
 
     ```
 
-*   **Complexity Analysis:**
+*   **复杂度分析**：
 
     *   **时间复杂度**`O(n)`。 由于需要单遍遍数组。
 

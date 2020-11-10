@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/](https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/)
 
-给定两个链表（可以排序或不排序），它们的大小分别为 **n1** 和 **n2** 。 给定值 **x** 。 问题是要计算两个列表中总和等于给定值 **x** 的所有对。
+给定两个链表（可以排序或不排序），它们的大小分别为`n1`和`n2`。 给定值`x`。 问题是要计算两个列表中总和等于给定值`x`的所有对。
 
 **注意**：该对具有每个链接列表中的元素。
 

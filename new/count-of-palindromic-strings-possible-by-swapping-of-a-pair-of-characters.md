@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/](https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/)
 
-给定[回文字符串](https://www.geeksforgeeks.org/string-palindrome/) **S** ，任务是通过一次交换一对字符来查找回文字符串的数量。
+给定[回文字符串](https://www.geeksforgeeks.org/string-palindrome/)`S`，任务是通过一次交换一对字符来查找回文字符串的数量。
 
 **示例**：
 
@@ -26,7 +26,7 @@
 
 **朴素的方法**：
 
-解决该问题的最简单方法是[从给定的字符串中生成所有可能的](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)个字符对，如果每对字符交换，它们是否会生成回文字符串 。 如果发现是真的，则增加**计数**。 最后，打印 **count** 的值。
+解决该问题的最简单方法是[从给定的字符串中生成所有可能的](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)个字符对，如果每对字符交换，它们是否会生成回文字符串 。 如果发现是真的，则增加`count`。 最后，打印`count`的值。
 
 **时间复杂度**：`P(N ^ 3)`
 
@@ -40,11 +40,11 @@
 
 *   遍历字符串。
 
-*   对于第<sup>个第</sup>个字符，请以该字符的当前频率增加**个计数**。 这增加了当前角色与其之前出现的交换次数。
+*   对于第`i`个字符，请以该字符的当前频率增加**计数**。 这增加了当前角色与其之前出现的交换次数。
 
-*   增加 **i <sup>第</sup>个字符**的频率。
+*   增加第`i`个字符的频率。
 
-*   最后，在完全遍历字符串之后，打印 **count** 。
+*   最后，在完全遍历字符串之后，打印`count`。
 
 下面是上述方法的实现：
 

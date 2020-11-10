@@ -34,7 +34,7 @@
 >
 > 即`2 * 8 = 16`、`2 * 16 = 36`和`8 * 18 = 144`。
 
-**方法**：由于我们需要检查所有数字的素因数，所以我们的想法是首先预先计算所有数字的[唯一素因数](https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)并将其存储在[哈希映射中](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/) 。 然后，我们创建一个变量来存储[主因子](https://www.geeksforgeeks.org/prime-factor/)在数组的每个元素中出现的次数。 我们还需要观察到，我们需要找到转换数组的最小步骤数。 因此，我们计算向量中的奇数个数和偶数质数的个数，取最小者为准。 可以计算以下步骤来找到答案：
+**方法**：由于我们需要检查所有数字的素因数，所以我们的想法是首先预先计算所有数字的[唯一素因数](https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)并将其存储在[哈希映射中](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/)。 然后，我们创建一个变量来存储[主因子](https://www.geeksforgeeks.org/prime-factor/)在数组的每个元素中出现的次数。 我们还需要观察到，我们需要找到转换数组的最小步骤数。 因此，我们计算向量中的奇数个数和偶数质数的个数，取最小者为准。 可以计算以下步骤来找到答案：
 
 1.  我们首先需要计算`spf[]`数组。 这是存储所有元素的最小素因数的数组。
 
