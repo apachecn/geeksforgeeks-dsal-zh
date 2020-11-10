@@ -325,9 +325,9 @@ public static void Main(string[] args) 
 [3, 1, 2, 1]
 ```
 
-**时间复杂度**：*`O(N * log N)`*
+**时间复杂度**：`O(N * log N)`
 
-**辅助空间**：*`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

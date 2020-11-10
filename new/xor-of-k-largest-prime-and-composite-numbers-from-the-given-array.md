@@ -30,9 +30,9 @@
 
 **方法**：使用 [Eratosthenes 筛网](http://www.geeksforgeeks.org/sieve-of-eratosthenes/)生成一个布尔向量，该布尔向量达到数组中最大元素的大小，该布尔向量可用于检查数字是否为质数。
 
-现在遍历数组，并在最大堆 **maxHeapPrime** 中插入所有质数，并在最大堆 **maxHeapNonPrime** 中插入所有组合数。
+现在遍历数组，并在最大堆`maxHeapPrime`中插入所有质数，并在最大堆`maxHeapNonPrime`中插入所有组合数。
 
-现在，从两个最大堆中弹出顶部的 **K** 个元素，并对这些元素进行异或。
+现在，从两个最大堆中弹出顶部的`K`个元素，并对这些元素进行异或。
 
 下面是上述方法的实现：
 

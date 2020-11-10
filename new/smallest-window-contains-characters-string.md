@@ -32,7 +32,7 @@ the distinct characters of given string.
 
 **方法 1** ：这是使用`HashMap`解决问题的暴力方法。
 
-*   **Approach :** For solving the problem we first have to find out all the distinct characters present in the string. This can be done using a [**HashMap**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/). The next thing is to generate all the possible substrings. This follows by checking whether a substring generated has all the required characters(stored in the hash_map) or not. If yes, then compare its length with the minimum substring length which follows the above constraints, found till now.
+*   **Approach :** For solving the problem we first have to find out all the distinct characters present in the string. This can be done using a [`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/). The next thing is to generate all the possible substrings. This follows by checking whether a substring generated has all the required characters(stored in the hash_map) or not. If yes, then compare its length with the minimum substring length which follows the above constraints, found till now.
 
     [`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)：`HashMap`自 Java 1.2 以来就是 Java 集合的一部分。 它提供了 Java `Map`接口的基本实现。 它以（键，值）对存储数据。 要访问一个值，必须知道其键。 `HashMap`被称为`HashMap`，因为它使用了一种称为哈希的技术。 散列是一种将大字符串转换为代表相同字符串的小字符串的技术。 较短的值有助于索引编制和更快的搜索。 `HashSet`还内部使用`HashMap`。 它在内部使用链表来存储已在`HashSet`中详细解释的键值对以及其他文章。
 
@@ -82,7 +82,7 @@ the distinct characters of given string.
 
     ```
 
-*   **Implementation:**
+*   **实现**：
 
     ```
     // C++ program to find the smallest
@@ -145,7 +145,7 @@ the distinct characters of given string.
 
     ```
 
-*   **Complexiy Analysis:**
+*   **复杂度分析**：
 
     *   **时间复杂度**：`O(N ^ 2)`。
 
@@ -155,7 +155,7 @@ the distinct characters of given string.
 
         由于大小为`N`的`hash_map`。
 
-**方法 2** ：这里我们使用了[滑动窗口](https://www.geeksforgeeks.org/window-sliding-technique/)技术来得出解决方案。 该技术说明了如何将很少出现问题的嵌套`for`循环转换为单个`for`循环，从而降低时间复杂度。
+**方法 2**：这里我们使用了[滑动窗口](https://www.geeksforgeeks.org/window-sliding-technique/)技术来得出解决方案。 该技术说明了如何将很少出现问题的嵌套`for`循环转换为单个`for`循环，从而降低时间复杂度。
 
 *   **Approach:** Basically a window of characters is maintained by using two pointers namely **start** and **end**. These **start** and **end** pointers can be used to shrink and increase the size of window respectively. Whenever the window contains all characters of given string, the window is shrinked from left side to remove extra characters and then its length is compared with the smallest window found so far.
 
@@ -163,7 +163,7 @@ the distinct characters of given string.
 
     [![](img/8d89dd2f1f7ac2f866276591e81e1222.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200408143729/Sliding-window-simulation2.png)
 
-*   **Algorithm :**
+*   **算法**：
 
     1.  维护一个数组（已访问），该数组最多包含可能的字符（256 个字符），一旦我们在字符串中找到任何字符，就在数组中标记该索引（这是为了计算字符串中所有不同的字符）
 
@@ -175,7 +175,7 @@ the distinct characters of given string.
 
     5.  如果`count`等于不同字符的总数，请尝试缩小窗口。
 
-    6.  **用于缩小窗口**：
+    6.  **对于缩小窗口**：
 
         1.  如果开始指针处字符的**频率**大于 1，则增加指针，因为它是多余的。
 
@@ -514,7 +514,7 @@ the distinct characters of given string.
 
     ```
 
-*   **Complexiy Analysis:**
+*   **复杂度分析**：
 
     *   **时间复杂度**：`O(n)`。
 

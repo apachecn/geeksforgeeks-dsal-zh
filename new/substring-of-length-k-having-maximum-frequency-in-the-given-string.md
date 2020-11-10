@@ -36,13 +36,11 @@
 
 **朴素的方法**：解决问题的最简单方法是[从给定的字符串中生成大小为 **K** 的所有子字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)，并将每个子字符串的频率存储在一个 [映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 然后，遍历**映射**并找到出现次数最多的字典上最小的子字符串并将其打印出来。
 
- ***时间复杂度**：`O(N *(K + log K))`
+**时间复杂度**：`O(N *(K + log K))`
 
 **辅助空间**：`O(N * K)`
 
-**有效方法**：为了优化上述方法，其想法是使用[滑动窗口技术](http://www.geeksforgeeks.org/window-sliding-technique/)。 考虑一个大小为
-
-**K** 到[的窗口，生成长度为 **K** 的所有子串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)，[计算在](https://www.geeksforgeeks.org/frequency-substring-string/) [映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 遍历映射，找到出现次数最多的子字符串并打印。 如果它们中的几个存在，则按字典顺序打印[最小的子字符串。](https://www.geeksforgeeks.org/lexicographically-next-string/)
+**有效方法**：为了优化上述方法，其想法是使用[滑动窗口技术](http://www.geeksforgeeks.org/window-sliding-technique/)。 考虑一个大小为`K`的窗口，[来生成长度为`K`的所有子串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)，[计算在](https://www.geeksforgeeks.org/frequency-substring-string/) [映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 遍历映射，找到出现次数最多的子字符串并打印。 如果它们中的几个存在，则按字典顺序打印[最小的子字符串。](https://www.geeksforgeeks.org/lexicographically-next-string/)
 
 下面是上述方法的实现。
 
