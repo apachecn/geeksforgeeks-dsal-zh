@@ -22,7 +22,7 @@
 
 ![](img/62b1efaa86a55f91e638f1fd76d1a5d4.png)
 
-**代码–**
+**代码**：
 
 ```
 #include<bits/stdc++.h>
@@ -177,7 +177,7 @@ return 0;
 ]
 ```
 
-**输出–**
+**输出**：
 
 ```
 key = 1 value = 1

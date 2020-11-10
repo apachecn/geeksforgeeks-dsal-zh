@@ -6,15 +6,15 @@
 
 [散列](https://www.geeksforgeeks.org/hashing-set-1-introduction/)是一种使用键比较次数较少的技术，在最坏的情况下以`O(n)`时间搜索元素，而在一般情况下以`O(1)`时间搜索元素。
 
-2.  **create_record**
+2.  `create_record`
 
-3.  **display_record**
+3.  `display_record`
 
-4.  **delete_record**
+4.  `delete_record`
 
-5.  **search_record**
+5.  `search_record`
 
-6.  **update_record**
+6.  `update_record`
 
 以下数据将从客户端获取：
 

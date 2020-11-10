@@ -14,7 +14,7 @@
 
 *   创建两个表。
 
-*   现在，获得两个表中列的 **ID**。
+*   现在，获得两个表中的 **ID** 列。
 
 *   然后创建并实现一个[多重映射](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/)以映射到表`B`的各个行。
 
