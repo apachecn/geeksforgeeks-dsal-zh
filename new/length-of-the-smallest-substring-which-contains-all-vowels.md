@@ -18,7 +18,7 @@
 >
 > **说明**：找不到这样的子字符串。
 
-[**两指针方法**](https://www.geeksforgeeks.org/two-pointers-technique/) ：
+[**双指针方法**](https://www.geeksforgeeks.org/two-pointers-technique/) ：
 
 *   [存储每个元音的频率](https://www.geeksforgeeks.org/print-number-words-vowels-frequency-character/)和存在元音的索引。
 

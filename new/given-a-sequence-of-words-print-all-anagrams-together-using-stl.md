@@ -4,7 +4,7 @@
 
 给定一组单词，将所有异序词一起打印。
 
-**例如，**
+**例如**：
 
 ```
 Input: array = {"cat", "dog", "tac", "god", "act"}
@@ -25,7 +25,7 @@ Explanation: There are no anagrams in the array.
 
 *   [给定单词顺序，将所有字母组合在一起打印 | 系列 2](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-set-2/)
 
-**方法：** 这是使用 C++ 标准模板库的`HashMap`解决方案，该库存储键值对。 在哈希映射中，键将是字符的排序集合，值将是输出字符串。 当两个异序词的字符排序时，它们将相似。 现在
+**方法**：这是使用 C++ 标准模板库的`HashMap`解决方案，该库存储键值对。 在哈希映射中，键将是字符的排序集合，值将是输出字符串。 当两个异序词的字符排序时，它们将相似。 现在
 
 1.  将矢量元素存储在`HashMap`中，其中键为已排序的字符串。
 

@@ -30,7 +30,7 @@
 
 **时间复杂度**：`O(N ^ 2)`
 
-一种有效的解决方案是使用[两指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)解决上述问题。 以下是解决上述问题的算法。
+一种有效的解决方案是使用[双指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)解决上述问题。 以下是解决上述问题的算法。
 
 *   将两个指针`front`和`end`初始化为 0，然后将一个**访问数组**标记为已访问索引。
 
