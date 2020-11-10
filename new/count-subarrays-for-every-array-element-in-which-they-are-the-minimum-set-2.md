@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum-set-2/)
 
-给定一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，该数组由 **N** 个整数组成，任务是创建大小为**的数组 **brr []** N** 其中 **brr [i]** 代表其中 **arr [i]** 是最小元素的子数组的数量。
+给定一个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，该数组由`N`个整数组成，任务是创建大小为`N`的数组`brr[]`，其中`brr[i]`代表其中`arr[i]`是最小元素的子数组的数量。
 
 **示例**：
 
@@ -20,7 +20,7 @@
 >
 > **输出**：`{5, 4, 3, 2, 1}`
 
-[**散列**](http://www.geeksforgeeks.org/hashing-data-structure/) **方法**：[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)找出[所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)的最小元素并将其计数存储在 [映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 请按照以下步骤解决问题：
+[**散列方法**](http://www.geeksforgeeks.org/hashing-data-structure/)：[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)找出[所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)的最小元素并将其计数存储在 [映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 请按照以下步骤解决问题：
 
 1.  创建一个[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，以存储每个元素的[子数组](https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/)的数量。
 
@@ -147,17 +147,17 @@ if __name__ == '__main__':
 
 **有效方法**：此方法基于[下一个较大元素](https://www.geeksforgeeks.org/next-greater-element/)和[前一个较大元素](https://www.geeksforgeeks.org/previous-greater-element/)的概念。 请按照以下步骤解决问题：
 
-1.  为了找到元素的最小值，首先找到 **x** 和 **y** ，其中 **x** 是在左边的严格大于数字的长度。 **arr [i]** 和 **y** 是 **arr [i]** 右边较大数字的长度。
+1.  为了找到元素的最小值，首先找到`x`和`y`，其中`x`是在左边的严格大于数字的长度。 `arr[i]`和`y`是`arr[i]`右边较大数字的长度。
 
-2.  因此， **x * y** 是其中 **arr [i]** 最小的子数组的总数。
+2.  因此，`x * y`是其中`arr[i]`最小的子数组的总数。
 
-3.  要查找 **x** 和**和**，请使用[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)，其概念为[下一个更大的元素](http://www.geeksforgeeks.org/next-greater-element/)和[上一个更大的元素](https://www.geeksforgeeks.org/previous-greater-element/)。
+3.  要查找`x`和`sum`，请使用[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)，其概念为[下一个更大的元素](http://www.geeksforgeeks.org/next-greater-element/)和[上一个更大的元素](https://www.geeksforgeeks.org/previous-greater-element/)。
 
 4.  对于[下一个更大的元素](http://www.geeksforgeeks.org/next-greater-element/)，创建对对的堆栈，并将第一个数组元素和一个计数器压入以将子数组成对计数到堆栈中。
 
 5.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并一个接一个地选取数组元素：
 
-    *   如果当前数组元素大于堆栈 的 [**顶部元素，则对于**堆栈**中的顶部元素，当前元素为**。 下一个更大的元素**。 因此，**](https://www.geeksforgeeks.org/stack-top-c-stl/)**[从堆栈](https://www.geeksforgeeks.org/stack-pop-method-in-java/)的[顶部元素弹出](https://www.geeksforgeeks.org/stack-top-c-stl/)，然后将计数器的值递增到堆栈**的**顶部的计数器值，然后增加下一个顶部堆栈元素 与当前数组元素进行比较，依此类推。**
+    *   如果当前数组元素大于堆栈的**顶部元素**，[则对于堆栈中的顶部元素，当前元素为下一个更大的元素](https://www.geeksforgeeks.org/stack-top-c-stl/)。 因此，[弹出堆栈顶部元素](https://www.geeksforgeeks.org/stack-pop-method-in-java/)，然后将计数器的值增加堆栈顶部的计数器值，然后将下一个堆栈顶部元素与当前数组元素进行比较，依此类推。
 
     *   否则，将带有计数器的当前数组元素推入堆栈，然后将计数器插入结果数组。
 
