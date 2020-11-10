@@ -20,7 +20,7 @@
 
 4.  它也用于语音处理，其中每个语音信号是一个数组。
 
-### [链接列表的应用](https://www.geeksforgeeks.org/applications-of-linked-list-data-structure/)：
+### [链表的应用](https://www.geeksforgeeks.org/applications-of-linked-list-data-structure/)：
 
 [链表](http://www.geeksforgeeks.org/data-structures/linked-list/)是一种序列数据结构，它通过链接连接称为节点的元素。
 
@@ -28,13 +28,13 @@
 
 链表的其他一些应用程序是：
 
-1.  图像相互链接。 因此，图像查看器软件使用链接列表通过上一个和下一个按钮查看上一个和下一个图像。
+1.  图像相互链接。 因此，图像查看器软件使用链表通过上一个和下一个按钮查看上一个和下一个图像。
 
-2.  可以使用通过链接列表链接的上一个和下一个 URL 链接来访问网页。
+2.  可以使用通过链表链接的上一个和下一个 URL 链接来访问网页。
 
 3.  音乐播放器也使用相同的技术在音乐之间切换。
 
-4.  为了跟踪多人游戏中的回合，使用了[循环链接列表](https://www.geeksforgeeks.org/circular-linked-list/)。
+4.  为了跟踪多人游戏中的回合，使用了[循环链表](https://www.geeksforgeeks.org/circular-linked-list/)。
 
 ### [堆栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)的应用：
 

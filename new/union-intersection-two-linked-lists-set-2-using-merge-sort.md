@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/union-intersection-two-linked-lists-set-2-using-merge-sort/](https://www.geeksforgeeks.org/union-intersection-two-linked-lists-set-2-using-merge-sort/)
 
-给定两个链接列表，创建包含给定列表中元素的并集和交集的并集和交集列表。 输出列表中元素的顺序无关紧要。
+给定两个链表，创建包含给定列表中元素的并集和交集的并集和交集列表。 输出列表中元素的顺序无关紧要。
 
 **示例**：
 

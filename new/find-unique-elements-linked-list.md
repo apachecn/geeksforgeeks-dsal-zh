@@ -1,4 +1,4 @@
-# 在链接列表
+# 在链表
 
 > 原文：[https://www.geeksforgeeks.org/find-unique-elements-linked-list/](https://www.geeksforgeeks.org/find-unique-elements-linked-list/)
 
@@ -27,7 +27,7 @@ Output :No Unique Elements
 
 **方法 3（哈希）**
 
-我们使用哈希表的概念在这里，我们从头到尾遍历链接列表。 对于每个新遇到的元素，我们将其放在哈希表中，然后再次遍历列表并打印那些频率为 1 的元素。时间复杂度：`O(n)`
+我们使用哈希表的概念在这里，我们从头到尾遍历链表。 对于每个新遇到的元素，我们将其放在哈希表中，然后再次遍历列表并打印那些频率为 1 的元素。时间复杂度：`O(n)`
 
 下面是此实现
 

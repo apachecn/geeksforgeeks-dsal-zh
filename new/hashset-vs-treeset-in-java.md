@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/hashset-vs-treeset-in-java/](https://www.geeksforgeeks.org/hashset-vs-treeset-in-java/)
 
-*   **Speed and internal implementation**
+*   **速度和内部实现**：
 
     [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) : For operations like search, insert and delete. It takes constant time for these operations on average. HashSet is faster than TreeSet. HashSet is Implemented using a [hash table](https://www.geeksforgeeks.org/hashing-set-1-introduction/).
 

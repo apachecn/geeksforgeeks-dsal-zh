@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/hashing-in-java/](https://www.geeksforgeeks.org/hashing-in-java/)
 
-在[散列](http://www.geeksforgeeks.org/hashing-data-structure/)中，存在一个散列函数，可将键映射到某些值。 但是这些哈希函数可能会导致将两个或更多键映射到相同值的冲突。 **链哈希**避免了冲突。 这个想法是使哈希表的每个单元指向具有相同哈希函数值的记录的链接列表。
+在[散列](http://www.geeksforgeeks.org/hashing-data-structure/)中，存在一个散列函数，可将键映射到某些值。 但是这些哈希函数可能会导致将两个或更多键映射到相同值的冲突。 **链式哈希**避免了冲突。 这个想法是使哈希表的每个单元指向具有相同哈希函数值的记录的链表。
 
 让我们创建一个哈希函数，使我们的哈希表具有`N`个存储桶。
 
@@ -16,7 +16,7 @@
 
 ![](img/9f7240401363f22b94eb01c1c94738d1.png)
 
-请参考 [**哈希 | 系列 2（单独链接）**](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/) 以获得详细信息。
+请参考 [**哈希 | 系列 2（单链接）**](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/) 以获得详细信息。
 
 ### 在 Java 中实现哈希的方法
 

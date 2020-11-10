@@ -182,7 +182,7 @@
 
 2.  [数组](https://www.geeksforgeeks.org/array-data-structure/)
 
-3.  [链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)
+3.  [链表](http://www.geeksforgeeks.org/data-structures/linked-list/)
 
 
 
