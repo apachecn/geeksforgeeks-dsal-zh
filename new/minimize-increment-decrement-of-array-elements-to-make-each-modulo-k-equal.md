@@ -30,7 +30,7 @@
 >
 > 使每个数字的模相等所需的最小步数为 2。
 
-**方法**：的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)来保持已获取的每个模的数量。
+**方法**：想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)来保持已获取的每个模的数量。
 
 *   现在，针对范围`0 <= i`
 

@@ -30,7 +30,7 @@
 
 **辅助空间**：`O(n)`
 
-**高效方法**：的想法是使用[滑动窗口技术](https://www.geeksforgeeks.org/window-sliding-technique/)解决此问题。 请按照以下步骤操作：
+**高效方法**：想法是使用[滑动窗口技术](https://www.geeksforgeeks.org/window-sliding-technique/)解决此问题。 请按照以下步骤操作：
 
 1.  使用[筛选](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)生成并存储每个元素的[最小质数](https://www.geeksforgeeks.org/least-prime-factor-of-numbers-till-n/)。
 

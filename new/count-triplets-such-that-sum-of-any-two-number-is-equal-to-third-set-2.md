@@ -232,7 +232,7 @@ public static void Main(string[] args) 
 
 ```
 
-**效果分析**：
+**效率分析**：
 
 *   **时间复杂度**：`O(N ^ 2)`。
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/](https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/)
 
-给定字符串 **S** ，任务是打印给定字符串的子字符串计数，该字符串的首字符和尾字符不同。
+给定字符串`S`，任务是打印给定字符串的子字符串计数，该字符串的首字符和尾字符不同。
 
 **示例**：
 
@@ -22,7 +22,7 @@
 >
 > 有 2 个子字符串，其首尾字符不同`{ab, ba}`。
 
-**朴素的方法**：的想法是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有可能的子字符串，并为每个子字符串检查第一个和最后一个字符是否不同。 如果发现是真的，则将**计数**加 1，然后检查下一个子字符串。 遍历所有子字符串后打印计数。
+**朴素的方法**：想法是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有可能的子字符串，并为每个子字符串检查第一个和最后一个字符是否不同。 如果发现是真的，则将**计数**加 1，然后检查下一个子字符串。 遍历所有子字符串后打印计数。
 
 下面是上述方法的实现：
 
@@ -282,19 +282,19 @@ public static void Main(string[] args)
 
 **高效方法**：可以使用[通过](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/)[映射](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/)来优化上述方法，以存储字符串字符的频率。 请按照以下步骤解决问题：
 
-1.  初始化**两个**变量，一个用于为每次迭代计数不同的字符（例如 **cur** ），另一个用于存储子字符串的最终计数（例如 **an** ）。
+1.  初始化**两个**变量，一个用于为每次迭代计数不同的字符（例如`cur`），另一个用于存储子字符串的最终计数（例如`an`）。
 
-2.  初始化映射 **M** 以在其中存储所有字符的频率。
+2.  初始化映射`M`以在其中存储所有字符的频率。
 
 3.  [遍历给定的字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)，对于每个字符，请按照以下步骤操作：
 
-    *   迭代映射 **M** 。
+    *   迭代映射`M`。
 
     *   如果映射的第一个元素（即**键**）与当前字符不同，则继续操作。
 
     *   否则，添加与当前字符对应的值。
 
-4.  遍历**映射**后，将 **cur** 添加到最终结果，即 **ans + = cur** 。
+4.  遍历**映射**后，将`cur`添加到最终结果，即`ans += cur`。
 
 下面是上述方法的实现：
 

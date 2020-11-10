@@ -28,7 +28,7 @@
 
 **辅助空间**：`O(1)`
 
-**有效方法**：的想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)来存储数字的频率，然后以 **1** 的频率对数字进行计数。 请按照以下步骤解决问题：
+**有效方法**：想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)来存储数字的频率，然后以 **1** 的频率对数字进行计数。 请按照以下步骤解决问题：
 
 1.  为数字 0-9 创建一个大小为 10 的哈希表。 最初将每个索引存储为 0。
 

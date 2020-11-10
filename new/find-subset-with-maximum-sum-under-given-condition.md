@@ -27,7 +27,7 @@ Output: 29
 
 ```
 
-**方法**：的想法是使用[`Multimap`](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/)和[`Hashmap`](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)解决此问题。
+**方法**：想法是使用[`Multimap`](https://www.geeksforgeeks.org/multimap-associative-containers-the-c-standard-template-library-stl/)和[`Hashmap`](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)解决此问题。
 
 *   我们将所有值和相应的标签成对存储在`Multimap`中。
 

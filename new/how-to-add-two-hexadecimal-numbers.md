@@ -34,7 +34,7 @@
 >
 > `AD + 1B = C8`  
 
-**方法**：的想法是使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)模板来存储从**十六进制到十进制**和**十进制到十六进制**的映射值。
+**方法**：想法是使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)模板来存储从**十六进制到十进制**和**十进制到十六进制**的映射值。
 
 1.  迭代直到给定字符串之一达到其长度。
 

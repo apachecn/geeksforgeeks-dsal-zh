@@ -27,7 +27,7 @@
 >
 > **输出**：`3 2`
 
-**方法**：的想法是使用[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)查找`XOR(i, j)`。
+**方法**：想法是使用[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)查找`XOR(i, j)`。
 
 *   根据`xor[i][j] = xor[i-1][j] ^ xor[i][j-1] ^ xor[i-1][j-1] ^ m[i][j]`，计算按位`XOR(i, j)`。
 

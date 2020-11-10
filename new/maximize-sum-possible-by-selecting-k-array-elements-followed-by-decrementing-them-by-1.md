@@ -164,7 +164,7 @@ class GFG {
 
 **辅助空间**：`O(n)`
 
-**有效方法**：的想法是通过[使用](https://www.geeksforgeeks.org/count-frequencies-elements-array-o1-extra-space-time/)[散列](https://www.geeksforgeeks.org/hashing-data-structure/)概念，存储给定数组的每个元素的频率。 请按照以下步骤解决问题：
+**有效方法**：想法是通过[使用](https://www.geeksforgeeks.org/count-frequencies-elements-array-o1-extra-space-time/)[散列](https://www.geeksforgeeks.org/hashing-data-structure/)概念，存储给定数组的每个元素的频率。 请按照以下步骤解决问题：
 
 *   创建大小为`M + 1`的`freq[]`，其中`M`是给定数组中存在的最大元素，并存储`arr[]`每个元素的频率和最大可能和到`max_sum`中。
 

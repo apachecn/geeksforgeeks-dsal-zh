@@ -252,7 +252,7 @@ public static void Main(String[] args)
 
 **辅助空间**：`O(1)`
 
-**高效方法 – 使用单个遍历**：的想法是使用 [**散列**](https://www.geeksforgeeks.org/hashing-data-structure/) 并更新频率大于 1 的每对的计数。以下是步骤：
+**高效方法 – 使用单个遍历**：想法是使用 [**散列**](https://www.geeksforgeeks.org/hashing-data-structure/) 并更新频率大于 1 的每对的计数。以下是步骤：
 
 1.  创建一个 [unordered_map](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)`M`，以将每个元素的[频率存储在数组](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)中。
 

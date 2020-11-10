@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/](https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/)
 
-给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是计算给定数组中[子数组](https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/)的数量，从而 这些子数组中的每个不同元素至少出现两次。
+给定大小为`N`的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是计算给定数组中[子数组](https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/)的数量，从而 这些子数组中的每个不同元素至少出现两次。
 
 **示例**：
 
@@ -26,15 +26,15 @@
 
 **高效方法**：为了优化上述方法，我们的想法是使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)。 请按照以下步骤解决问题：
 
-*   初始化一个变量，例如说 **cntSub** ，以存储子数组的数量，以使子数组中的每个元素至少出现两次。
+*   初始化一个变量，例如说`cntSub`，以存储子数组的数量，以使子数组中的每个元素至少出现两次。
 
-*   创建一个[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，例如 **cntFreq** ，以存储每个子数组元素的频率。
+*   创建一个[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，例如`cntFreq`，以存储每个子数组元素的频率。
 
-*   初始化一个变量，例如 **cntUnique** ，以将元素计数存储在频率为 **1** 的子数组中。
+*   初始化一个变量，例如`cntUnique`，以将元素计数存储在频率为 **1** 的子数组中。
 
-*   [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)和[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)。 对于每个可能的子数组，存储数组每个元素的频率，并检查 **cntUnique** 的值是否为 **0** 。 如果发现为真，则增加 **cntSub** 的值。
+*   [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)和[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)。 对于每个可能的子数组，存储数组每个元素的频率，并检查`cntUnique`的值是否为 **0**。 如果发现为真，则增加`cntSub`的值。
 
-*   最后，打印 **cntSub** 的值。
+*   最后，打印`cntSub`的值。
 
 下面是上述方法的实现：
 

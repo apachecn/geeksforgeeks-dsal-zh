@@ -32,7 +32,7 @@
 
 **辅助空间**：`O(n)`
 
-**高效方法**：的想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)概念来存储给定数组元素的频率。 请按照以下步骤解决问题：
+**高效方法**：想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)概念来存储给定数组元素的频率。 请按照以下步骤解决问题：
 
 *   创建大小为`N + 1`的辅助数组`count[]`，以存储`arr[i]`的频率。
 

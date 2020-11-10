@@ -30,13 +30,13 @@
 >
 > 由于，数组中存在的元素的出现次数是唯一的。 因此，该数组不满足该条件。
 
-**朴素的方法**：的想法是检查从 1 到`N`的每个数字是否存在于数组中。 如果是，则计算该元素在数组中的频率，并将该频率存储在数组中。 最后，只需检查数组中是否有重复的元素，并相应地打印输出即可。
+**朴素的方法**：想法是检查从 1 到`N`的每个数字是否存在于数组中。 如果是，则计算该元素在数组中的频率，并将该频率存储在数组中。 最后，只需检查数组中是否有重复的元素，并相应地打印输出即可。
 
 **时间复杂度**：`O(N ^ 2)`
 
 **辅助空间**：`O(n)`
 
-**高效方法**：的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。 步骤如下：
+**高效方法**：想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。 步骤如下：
 
 1.  遍历给定数组`arr[]`并将每个元素的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 
-给定长度为 **N** 的仅包含小写字母的字符串 **S** ，任务是打印给定的[字符串，其异序词是回文](https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/)。
+给定长度为`N`的仅包含小写字母的字符串`S`，任务是打印给定的[字符串，其异序词是回文](https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/)。
 
 **示例**：
 
@@ -17,7 +17,7 @@
 >
 > **输出**：3
 
-**朴素的方法**：的想法是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有子字符串，并为每个子字符串检查其[异序词](http://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/)是否是回文。 不断增加发现上述条件成立的子字符串的数量。 最后，打印所有这些子字符串的计数。
+**朴素的方法**：想法是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有子字符串，并为每个子字符串检查其[异序词](http://www.geeksforgeeks.org/check-whether-two-strings-are-anagram-of-each-other/)是否是回文。 不断增加发现上述条件成立的子字符串的数量。 最后，打印所有这些子字符串的计数。
 
 **时间复杂度**：`O(N ^ 3)`
 
@@ -246,13 +246,13 @@ public static void Main(String[] args)
 
 1.  初始化映射以存储模板的频率。 初始化变量`X = 0`。
 
-2.  [遍历字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)，对于第`i`个索引，计算`X`和`2 ^ (S[j] – 'a')`的[按位异或](http://www.geeksforgeeks.org/calculate-xor-1-n/)并通过添加`X`映射中的当前值的频率来更新**答案**，因为如果 0 至`j`中的任何子字符串具有与`X`相同的掩码，这是 **0** 至`i`的子串的掩码， 那么子字符串`S[j + 1, i]`将具有偶数频率，其中`j < i`。
+2.  [遍历字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)，对于第`i`个索引，计算`X`和`2 ^ (S[j] – 'a')`的[按位异或](http://www.geeksforgeeks.org/calculate-xor-1-n/)并通过添加`X`映射中的当前值的频率来更新`and`，因为如果 0 至`j`中的任何子字符串具有与`X`相同的掩码，这是 **0** 至`i`的子串的掩码， 那么子字符串`S[j + 1, i]`将具有偶数频率，其中`j < i`。
 
-3.  还要加上掩码`X xor 2 ^ k`的频率，其中`0 ≤ k < 26`。 之后，将`X`的频率增加 **1** 的频率。
+3.  还要加上掩码`X xor 2 ^ k`的频率，其中`0 ≤ k < 26`。 之后，将`X`的频率增加 **1**。
 
 4.  对给定字符串的每个索引重复上述步骤。
 
-5.  遍历给定的字符串后，打印所需的**答案**。
+5.  遍历给定的字符串后，打印所需的`ans`。
 
 下面是上述方法的实现：
 

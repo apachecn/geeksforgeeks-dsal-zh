@@ -48,7 +48,7 @@
 
 **辅助空间**：`O(1)`
 
-**有效方法**：的想法是使用[**分段树**](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)和[**散列**](http://www.geeksforgeeks.org/hashing-data-structure/)。 步骤如下：
+**有效方法**：想法是使用[**分段树**](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)和[**散列**](http://www.geeksforgeeks.org/hashing-data-structure/)。 步骤如下：
 
 1.  如果给定数字中存在前导零，则将其删除。
 

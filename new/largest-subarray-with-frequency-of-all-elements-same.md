@@ -22,7 +22,7 @@
 >
 > `subarrary = {1, 1, 1, 1, 1}`的每个元素的频率为 5。
 
-**方法**：的想法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)并检查每个子数组是否有任何子数组具有所有元素的频率。 步骤如下：
+**方法**：想法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)并检查每个子数组是否有任何子数组具有所有元素的频率。 步骤如下：
 
 1.  生成所有可能的子数组。
 

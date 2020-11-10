@@ -22,7 +22,7 @@
 >
 > 元素 4、8、16 分别等于子数组`{1, 3}, {1, 3, 4}, {1, 3, 4, 8}`的总和
 
-**方法**：的想法是使用[前缀和数组](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)解决给定的问题。 创建一个 **prefix []** 数组，该数组为每个索引存储其所有先前元素的前缀和。 将所有子数组的总和存储在映射中，并搜索映射中是否存在任何数组元素。
+**方法**：想法是使用[前缀和数组](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)解决给定的问题。 创建一个 **prefix []** 数组，该数组为每个索引存储其所有先前元素的前缀和。 将所有子数组的总和存储在映射中，并搜索映射中是否存在任何数组元素。
 
 以下是上述方法的实现：
 

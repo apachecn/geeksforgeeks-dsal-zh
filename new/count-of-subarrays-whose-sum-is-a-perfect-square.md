@@ -24,7 +24,7 @@
 
 一个简单的解决方案是生成所有可能的子数组。 遍历时，请跟踪子数组总和。 记录所有和为完全平方的子数组。
 
-**高效解决方案**：的想法是使用[前缀和数组](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)解决给定的问题。
+**高效解决方案**：想法是使用[前缀和数组](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)解决给定的问题。
 
 ![](img/898d2dbbecd4844e828a8a10e1a96f8a.png)
 

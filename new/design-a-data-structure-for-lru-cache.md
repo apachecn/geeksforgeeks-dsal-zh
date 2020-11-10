@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/design-a-data-structure-for-lru-cache/](https://www.geeksforgeeks.org/design-a-data-structure-for-lru-cache/)
 
-为 [LRU 缓存](https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU)设计数据结构。 它应支持以下操作：**获取**和**设置**。
+为 [LRU 缓存](https://en.wikipedia.org/wiki/Cache_replacement_policies#LRU)设计数据结构。 它应支持以下操作：`get`和`set`。
 
 `get(key)` – 如果密钥存在于缓存中，则获取密钥的值（始终为正），否则返回 -1。
 
@@ -29,7 +29,7 @@ cache.get(4);     // 返回 40
 
 **解决方案**：
 
-**1.暴力破解方法**：
+**1\. 暴力破解方法**：
 
 我们将保留一个节点数组，每个节点将包含以下信息：
 
@@ -66,7 +66,7 @@ class Node {
 
 时间复杂度： `O(n)`
 
-**2.优化方法**：
+**2\. 优化方法**：
 
 解决此问题的关键是使用双链表，该链表使我们能够快速移动节点。
 

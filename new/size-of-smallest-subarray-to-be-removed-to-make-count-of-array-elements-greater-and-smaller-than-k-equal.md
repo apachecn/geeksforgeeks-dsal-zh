@@ -26,7 +26,7 @@
 
 **辅助空间**：`O(N ^ 2)`
 
-**高效方法**：的想法是使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)，并对数组进行一些修改以在`O(n)`时间内解决该问题。 给定的数组可以具有 3 种类型的元素：
+**高效方法**：想法是使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)，并对数组进行一些修改以在`O(n)`时间内解决该问题。 给定的数组可以具有 3 种类型的元素：
 
 *   `elem = K`：将元素更改为 0（因为我们需要**严格大于`K`或小于`K`的元素**）
 

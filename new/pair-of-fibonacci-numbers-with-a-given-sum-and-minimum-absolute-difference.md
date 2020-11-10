@@ -24,7 +24,7 @@
 >
 > 1830 可以表示为总和 233 和 1597，其中 具有最小的差异。
 
-**方法**：的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契节点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)直到最大值，以使检查变得容易和高效（在`O(1)`中 时间）。
+**方法**：想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契节点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)直到最大值，以使检查变得容易和高效（在`O(1)`中 时间）。
 
 预计算了[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)之后：
 

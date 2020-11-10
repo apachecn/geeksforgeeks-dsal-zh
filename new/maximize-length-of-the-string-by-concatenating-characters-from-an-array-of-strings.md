@@ -24,7 +24,7 @@
 >
 > 因此，最大长度为 8。
 
-**方法**：的想法是使用[递归](https://www.geeksforgeeks.org/recursion/)。
+**方法**：想法是使用[递归](https://www.geeksforgeeks.org/recursion/)。
 
 请按照以下步骤解决问题：
 

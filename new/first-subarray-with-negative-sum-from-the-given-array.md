@@ -32,7 +32,7 @@
 
 **辅助空间**：`O(1)`*
 
-**有效方法**：的想法是使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)解决问题。 步骤如下：
+**有效方法**：想法是使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)解决问题。 步骤如下：
 
 1.  计算数组的 [**前缀总和**](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/) 并将其存储到 [**HashMap**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中。
 

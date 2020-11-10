@@ -26,7 +26,7 @@
 >
 > 因此，所需的输出为 3。
 
-**方法**：的想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)存储每个数组元素最后一次出现的索引。 请按照以下步骤解决问题：
+**方法**：想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)存储每个数组元素最后一次出现的索引。 请按照以下步骤解决问题：
 
 1.  初始化一个数组，说 **hash []** 到[存储每个数组元素](https://www.geeksforgeeks.org/print-the-last-occurrence-of-elements-in-array-in-relative-order/)的最后一次出现的索引。
 

@@ -32,7 +32,7 @@
 >
 > **输出**：`1 2 7 6 2 4 null 4 null null`
 
-**方法**：的想法是使用[树集数据结构](https://www.geeksforgeeks.org/treeset-in-java-with-examples/)。 但是由于树集不支持重复值，因此[哈希映射](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)用于存储元素的频率。
+**方法**：想法是使用[树集数据结构](https://www.geeksforgeeks.org/treeset-in-java-with-examples/)。 但是由于树集不支持重复值，因此[哈希映射](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)用于存储元素的频率。
 
 *   [遍历数组`A[]`](https://www.geeksforgeeks.org/iterating-arrays-java/) 。
 

@@ -36,7 +36,7 @@
 
 **辅助空间**：`O(n)`
 
-**高效方法**：的想法是[存储每个元素](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的频率，并在给定条件下计算所有可能的对（例如`cnt`）。 对每个元素执行上述步骤后，从总计数`cnt`中删除相等的可能对的计数并打印该值。 请按照以下步骤解决问题：
+**高效方法**：想法是[存储每个元素](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的频率，并在给定条件下计算所有可能的对（例如`cnt`）。 对每个元素执行上述步骤后，从总计数`cnt`中删除相等的可能对的计数并打印该值。 请按照以下步骤解决问题：
 
 1.  将每个元素的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
 
