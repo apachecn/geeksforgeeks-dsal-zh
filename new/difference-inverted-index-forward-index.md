@@ -4,7 +4,7 @@
 
 之间的差异
 
-[**倒排索引**](https://www.geeksforgeeks.org/inverted-index/)
+[**反向索引**](https://www.geeksforgeeks.org/inverted-index/)
 
 1.  它是一种数据结构，用于存储从单词到文档或文档集的映射，即从单词到文档的指导。
 

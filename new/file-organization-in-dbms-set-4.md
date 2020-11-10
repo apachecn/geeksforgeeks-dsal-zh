@@ -10,7 +10,7 @@
 
 ### 哈希文件组织：
 
-*   **数据存储区**：数据存储区是存储记录的存储位置。 这些存储桶也被视为*存储单位*。
+*   **数据存储区**：数据存储区是存储记录的存储位置。 这些存储桶也被视为**存储单位**。
 
 *   **哈希函数**：哈希函数是一种映射函数，它将所有搜索键集映射到实际记录地址。 通常，哈希函数使用主键来生成哈希索引-数据块的地址。 哈希函数可以是简单的数学函数，也可以是任何复杂的数学函数。
 
@@ -46,7 +46,7 @@
 
 提供了几种方法来克服这种情况。 下面讨论了一些常用的方法：
 
-1.  **Open Hashing –**
+1.  **开放哈希**：
 
     In Open hashing method, next available data block is used to enter the new record, instead of overwriting older one. This method is also called  linear probing.
 
@@ -54,7 +54,7 @@
 
     ![](img/adf6d2f6a98551f4e563204e14783f97.png)
 
-2.  **Closed hashing –**
+2.  **封闭哈希**：
 
     In Closed hashing method, a new data bucket is allocated with same address and is linked it after the full data bucket. This method is also known as  overflow chaining.
 
@@ -82,7 +82,7 @@
 
 ![](img/3801d3784598f5b98143a8602798b839.png)
 
-**参考–**
+**参考**：
 
 [cse.iitb.ac.in](https://www.cse.iitb.ac.in/~sudarsha/db-book/slide-dir/ch12.pdf)
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-the-value-mapped-to-a-given-composite-key-for-every-query/](https://www.geeksforgeeks.org/find-the-value-mapped-to-a-given-composite-key-for-every-query/)
 
-给定三个数组 **firstkey []** ， **secondkey []** 和 **value []** 其中元素 **firstkey [i]** 和 **secondkey [ i]** 表示组合键，其值为 **value [i]** ，任务是回答 **Q** 个查询，每个查询都有两个元素代表复合键，其对应 值需要打印。
+给定三个数组`firstkey[]`，`secondkey[]`和`value[]`其中元素`firstkey[i]`和`secondkey[i]`表示组合键，其值为`value[i]`，任务是回答`Q`个查询，每个查询都有两个元素代表复合键，其对应 值需要打印。
 
 **示例**：
 

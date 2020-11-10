@@ -30,7 +30,7 @@ the distinct characters of given string.
 
 例如，在`"aabcbcdb"`中，包含所有字符的最小字符串是`"abcbcd"`。
 
-**方法 1** ：这是使用`HashMap`解决问题的蛮力方法。
+**方法 1** ：这是使用`HashMap`解决问题的暴力方法。
 
 *   **Approach :** For solving the problem we first have to find out all the distinct characters present in the string. This can be done using a [**HashMap**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/). The next thing is to generate all the possible substrings. This follows by checking whether a substring generated has all the required characters(stored in the hash_map) or not. If yes, then compare its length with the minimum substring length which follows the above constraints, found till now.
 

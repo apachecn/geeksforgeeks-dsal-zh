@@ -34,7 +34,7 @@
 
 **有效方法**：想法是使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)解决问题。 步骤如下：
 
-1.  计算数组的 [**前缀总和**](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/) 并将其存储到 [**HashMap**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中。
+1.  计算数组的[**前缀总和**](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)并将其存储到[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中。
 
 2.  遍历数组，对于第`i`个索引（其中`i`的范围为`[0, N – 1]`），检查第`i`个索引的元素是否为 否定的。 如果是这样，则`arr[i]`是必需的子数组。
 
@@ -175,9 +175,9 @@ int main()
 
 ```
 
-**时间复杂度**：*`O(N * log N)`*
+**时间复杂度**：`O(N * log N)`
 
-**辅助空间**：*`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

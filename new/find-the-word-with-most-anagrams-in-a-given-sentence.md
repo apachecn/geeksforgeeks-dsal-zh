@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-the-word-with-most-anagrams-in-a-given-sentence/](https://www.geeksforgeeks.org/find-the-word-with-most-anagrams-in-a-given-sentence/)
 
-给定句子形式的字符串 **S** ，任务是从文本中查找具有 [**异序词**](https://www.geeksforgeeks.org/tag/anagram/) 出现在给定句子中。
+给定句子形式的字符串`S`，任务是从文本中查找出现在给定句子中的[**异序词**](https://www.geeksforgeeks.org/tag/anagram/)。
 
 **例如**：
 
@@ -28,17 +28,17 @@
 
 需要观察以下问题才能解决程序：
 
-> [**质数的属性 **质数。****](https://www.geeksforgeeks.org/prime-numbers/)
+> [**质数的属性**](https://www.geeksforgeeks.org/prime-numbers/)
 
 请按照以下步骤解决问题：
 
 *   为每个字母分配一个不同的**质数**。
 
-*   对于给定字符串中的每个单词，计算分配给该单词字符的质数乘积，并将其存储在 **HashMap** 中。
+*   对于给定字符串中的每个单词，计算分配给该单词字符的质数乘积，并将其存储在`HashMap`中。
 
-*   计算分配给单词字符的质数乘积，并将其存储在 [**HashMap**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中。
+*   计算分配给单词字符的质数乘积，并将其存储在[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中。
 
-*   在 **HashMap** 中找到频率最高的产品，并打印相应的异序词之一作为答案。
+*   在`HashMap`中找到频率最高的产品，并打印相应的异序词之一作为答案。
 
 下面是上述方法的实现：
 

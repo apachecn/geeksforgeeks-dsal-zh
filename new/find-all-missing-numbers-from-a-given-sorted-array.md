@@ -24,15 +24,15 @@
 
 **朴素的方法**：朴素的想法是遍历连续对元素之间的[差异，并打印该范围内的所有数字（如果差异非零）。 步骤如下：](https://www.geeksforgeeks.org/calculate-the-difference-between-consecutive-pair-of-elements-of-a-vector-in-r-programming-diff-function/)
 
-1.  初始化变量 **diff** ，该变量等于 **arr [0] – 0** 。
+1.  初始化变量`diff`，该变量等于`arr[0] – 0`。
 
-2.  现在[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，看看 **arr [i] – i** 与 **diff** 之间的差是否为零。
+2.  现在[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，看看`arr[i] – i`与`diff`之间的差是否为零。
 
 3.  如果上述步骤中的差不等于零，则找到丢失的元素。
 
-4.  要查找多个丢失的元素，请在其中运行一个循环，然后查看 **diff** 是否小于 **arr [i] – i** ，然后打印缺少的元素，即 **i + diff** 。
+4.  要查找多个丢失的元素，请在其中运行一个循环，然后查看`diff`是否小于`arr[i] – i`，然后打印缺少的元素，即`i + diff`。
 
-5.  现在，随着差值的增加，增加 **diff** 。
+5.  现在，随着差值的增加，增加`diff`。
 
 6.  从步骤 2 重复，直到找不到所有缺少的数字。
 
