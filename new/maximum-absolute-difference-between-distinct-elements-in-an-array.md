@@ -1,10 +1,8 @@
-# 数组
+# 数组中不同元素之间的最大绝对差
 
 > 原文：[https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/](https://www.geeksforgeeks.org/maximum-absolute-difference-between-distinct-elements-in-an-array/)
 
-中不同元素之间的最大绝对差
-
-给定 **N** 个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是找到数组不同元素之间的最大绝对差。
+给定`N`个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是找到数组不同元素之间的最大绝对差。
 
 **示例**：
 
@@ -12,7 +10,7 @@
 >
 > **输出**：10
 >
-> **说明 **：
+> **说明**：
 >
 > 给定数组的不同元素是 12、9、2。
 >
@@ -327,9 +325,9 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度**：*`O(n)`*；
+**时间复杂度**：`O(n)`；
 
-**辅助空间**：*`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

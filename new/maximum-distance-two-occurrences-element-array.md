@@ -1,8 +1,6 @@
-# 数组
+# 数组中相同元素的两次出现之间的最大距离
 
 > 原文：[https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/](https://www.geeksforgeeks.org/maximum-distance-two-occurrences-element-array/)
-
-中两次出现相同元素之间的最大距离
 
 给定一个包含重复元素的数组，任务是找到元素两次出现的最大距离。
 
@@ -17,7 +15,7 @@ Output: 10
 
 ```
 
-针对此问题的**简单解决方案**是从数组中逐个拾取每个元素，并在数组中首先找到其**，然后在数组中找到**，最后找到，并求出第一个和最后一个的差 出现最大距离。 该方法的时间复杂度为`O(N ^ 2)`。
+针对此问题的**简单解决方案**是从数组中逐个拾取每个元素，并在数组中找到其`first`和`last`，，并求出第一个和最后一个出现的差作为最大距离。 该方法的时间复杂度为`O(N ^ 2)`。
 
 针对此问题的**有效解决方案**是使用哈希。 这个想法是遍历输入数组并将第一次出现的索引存储在哈希映射中。 对于其他所有出现的情况，找到索引与存储在哈希映射中的第一个索引之间的差异。 如果到目前为止，差异大于结果，则更新结果。
 
@@ -216,7 +214,7 @@ public static void Main(String []args)
 
 **时间复杂度**：假设`unordered_map`的搜索和插入操作需要`O(1)`时间，因此`O(n)`。
 
-本文由 [**Shashank Mishra（Gullu）**](https://www.facebook.com/shashank.mishra.92167)贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由 [**Shashank Mishra(Gullu)**](https://www.facebook.com/shashank.mishra.92167) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

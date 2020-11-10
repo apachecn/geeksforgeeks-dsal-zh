@@ -277,7 +277,7 @@ public static void Main(String[] args)
 
 **高效方法**：
 
-由于两个不相等元素之间的任何交换都会导致元素替换较高的元素，因此可以看出，所需的最小交换数为 ***N –（最大交换频率 数组元素）*** 。 因此，使用 [**HashMap**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 找到数组中最频繁的元素，然后打印结果。
+由于两个不相等元素之间的任何交换都会导致元素替换较高的元素，因此可以看出，所需的最小交换数为`N – (数组元素的最大交换频率)`。 因此，使用[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)找到数组中最频繁的元素，然后打印结果。
 
 以下是上述方法的实现：
 
