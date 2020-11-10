@@ -338,7 +338,7 @@ class GFG 
 
 ```
 
-**Output :**
+**输出**：
 
 ```
 Maximum number of chocolates: 6

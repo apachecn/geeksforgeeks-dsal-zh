@@ -30,7 +30,7 @@
 
 **辅助空间**：`O(1)`
 
-**更好的方法**：可以通过使用[集](https://www.geeksforgeeks.org/set-in-java/) [数据结构](https://www.geeksforgeeks.org/data-structures/)解决此问题。 自设置以来，不允许重复。 步骤如下：
+**更好的方法**：可以通过使用[集合](https://www.geeksforgeeks.org/set-in-java/) [数据结构](https://www.geeksforgeeks.org/data-structures/)解决此问题。 自设置以来，不允许重复。 步骤如下：
 
 1.  将数组的元素插入集合。
 
@@ -221,13 +221,13 @@ Yes
 
 **高效方法**：也可以在不使用任何额外空间的情况下解决此问题。 步骤如下：
 
-1.  假定数组的第一个元素是数组中唯一的[唯一元素，并将其值存储在变量中，例如 **X** 。](https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/)
+1.  假定数组的第一个元素是数组中唯一的[唯一元素，并将其值存储在变量中，例如`X`。](https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/)
 
-2.  然后遍历数组，并检查当前元素是否等于 **X** 。
+2.  然后遍历数组，并检查当前元素是否等于`X`。
 
-3.  如果发现为真，则继续检查所有数组元素。 如果没有发现元素与 **X** 不同，则打印“是”。
+3.  如果发现为真，则继续检查所有数组元素。 如果没有发现元素与`X`不同，则打印`Yes`。
 
-4.  否则，如果任何数组元素不等于 **X** ，则意味着该数组包含多个唯一元素。 因此，打印**为“否”** 。
+4.  否则，如果任何数组元素不等于`X`，则意味着该数组包含多个唯一元素。 因此，打印`No`。
 
 下面是上述方法的实现：
 

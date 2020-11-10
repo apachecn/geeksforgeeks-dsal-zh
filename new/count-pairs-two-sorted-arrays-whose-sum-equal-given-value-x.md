@@ -271,7 +271,7 @@ echo "Count = ", 
 
 ```
 
-**Output :**
+**输出**：
 
 ```
 Count = 2
@@ -650,7 +650,7 @@ function countPairs($arr1, $arr2,
 
 ```
 
-**Output :**
+**输出**：
 
 ```
 Count = 2
@@ -878,7 +878,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output :**
+**输出**：
 
 ```
 Count = 2
@@ -1241,7 +1241,7 @@ function  countPairs( $arr1,  $arr2, 
 
 ```
 
-**Output :**
+**输出**：
 
 ```
 Count = 2

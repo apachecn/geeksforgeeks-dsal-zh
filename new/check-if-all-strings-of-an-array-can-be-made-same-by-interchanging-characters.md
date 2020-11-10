@@ -2,9 +2,9 @@
 
 > 原文：[https://www.geeksforgeeks.org/check-if-all-strings-of-an-array-can-be-made-same-by-interchanging-characters/](https://www.geeksforgeeks.org/check-if-all-strings-of-an-array-can-be-made-same-by-interchanging-characters/)
 
-给定大小为 **N** 的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，该数组由相等长度的字符串组成，任务是检查是否可以使数组的所有字符串 通过将一个字符串的任何字符与同一字符串或另一字符串的任何字符交换来确定是否相等。
+给定大小为`N`的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，该数组由相等长度的字符串组成，任务是检查是否可以使数组的所有字符串 通过将一个字符串的任何字符与同一字符串或另一字符串的任何字符交换来确定是否相等。
 
-**注意**：执行 **0** 或以上次。
+**注意**：执行 **0** 或次以上。
 
 **示例**：
 

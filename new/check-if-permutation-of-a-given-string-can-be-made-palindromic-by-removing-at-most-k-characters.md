@@ -20,7 +20,7 @@
 
 *   [遍历给定的字符串](https://www.geeksforgeeks.org/strings-in-c-2/)，并将字符串`str`的每个不同字符的[频率](https://www.geeksforgeeks.org/frequency-of-each-character-in-a-string-using-unordered_map-in-c/)存储在`cntFreq[]`数组中。
 
-*   初始化一个变量，例如说 **cntOddFreq** ，以存储给定字符串的不同字符的计数，其频率为奇数。
+*   初始化一个变量，例如说`cntOddFreq`，以存储给定字符串的不同字符的计数，其频率为奇数。
 
 *   [遍历`cntFreq[]`数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并检查`cntFreq[i] % 2 == 1`，然后将`cntOddFreq`的值增加 **1**。
 

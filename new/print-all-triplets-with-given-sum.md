@@ -247,7 +247,7 @@ findTriplets($arr, $n, -2);
 
 ```
 
-**Output :**
+**输出**：
 
 ```
 0 -3 1

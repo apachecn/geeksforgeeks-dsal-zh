@@ -147,7 +147,7 @@ Length of the Longest contiguous subsequence is 4
 
 **有效解决方案**：
 
-可以使用**有效解决方案**在`O(n)`时间内解决此问题。 这个想法是使用[哈希](http://geeksquiz.com/hashing-set-1-introduction/)。 我们首先将所有元素插入[集](https://www.geeksforgeeks.org/set-in-cpp-stl/)中。 然后检查连续子序列的所有可能开始。
+可以使用**有效解决方案**在`O(n)`时间内解决此问题。 这个想法是使用[哈希](http://geeksquiz.com/hashing-set-1-introduction/)。 我们首先将所有元素插入[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)中。 然后检查连续子序列的所有可能开始。
 
 **算法**：
 

@@ -21,7 +21,7 @@
 
 3.  否则，检查`odd_freq`。
 
-4.  如果`odd_freq`为*奇数*，则检查`odd_freq + even_freq – 1`是否`≥ N`。 如果发现是真的，则打印`Yes`。
+4.  如果`odd_freq`为**奇数**，则检查`odd_freq + even_freq – 1`是否`≥ N`。 如果发现是真的，则打印`Yes`。
 
 5.  如果`odd_freq`为偶数，则检查`odd_freq + even_freq`是否`≥ N`。 如果发现是真的，则打印`Yes`。
 

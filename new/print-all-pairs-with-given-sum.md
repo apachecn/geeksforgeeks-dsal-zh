@@ -209,7 +209,7 @@ printPairs($arr, $n, $sum);
 
 ```
 
-**Output :** 
+**输出**： 
 
 ```
 (1, 5)
@@ -398,7 +398,7 @@ public static void Main(string[] args)
 
 ```
 
-**Output :** 
+**输出**： 
 
 ```
 (1, 5)
@@ -583,7 +583,7 @@ public class SumOfPairs
 
 ```
 
-**Output :** 
+**输出**： 
 
 ```
 The pair is : (-2, 8)

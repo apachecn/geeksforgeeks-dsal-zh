@@ -4,7 +4,7 @@
 
 计算服务器负载
 
-给定`M`个服务器，它们处理具有无限计算能力的多个请求，并且数组**到达时间[]** 和`processTime[]`的大小为`N`，以下列方式表示到达`N`个请求的时间和加载时间：
+给定`M`个服务器，它们处理具有无限计算能力的多个请求，并且数组`arriveTime[]`和`processTime[]`的大小为`N`，以下列方式表示到达`N`个请求的时间和加载时间：
 
 *   每个服务器的编号从 **0** 到`M – 1`，并且以严格的时间顺序给出请求。
 
@@ -75,7 +75,7 @@
 > | 3 | 6 | 4 | 10 | – | 1 | – |
 
 
-**方法**：这个想法是使用[最小优先级队列](https://www.geeksforgeeks.org/implement-min-heap-using-stl/)和[集](https://www.geeksforgeeks.org/set-in-cpp-stl/)。 [优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)保留繁忙服务器的计数，并在空闲时帮助释放它们。 [设置](https://www.geeksforgeeks.org/set-in-java/)用于维护可用服务器的数据，以将它们分配给传入的请求。 步骤如下：
+**方法**：这个想法是使用[最小优先级队列](https://www.geeksforgeeks.org/implement-min-heap-using-stl/)和[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)。 [优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)保留繁忙服务器的计数，并在空闲时帮助释放它们。 [设置](https://www.geeksforgeeks.org/set-in-java/)用于维护可用服务器的数据，以将它们分配给传入的请求。 步骤如下：
 
 *   初始化辅助数组`loadOnServer[]`，该数组将在每个服务器上存储负载。
 
