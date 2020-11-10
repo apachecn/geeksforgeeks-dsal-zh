@@ -1,10 +1,8 @@
-# 使用哈希
+# 使用哈希进行地址计算排序
 
 > 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 
-进行地址计算排序
-
-在此排序算法中，哈希函数 **f** 与**顺序保留函数**的属性一起使用，该函数声明是否为![ x <= y, f(x) <= f(y) ](img/5f9389d505cc011727b95eb952191496.png "Rendered by QuickLaTeX.com")。
+在此排序算法中，哈希函数`f`与**顺序保留函数**的属性一起使用，该函数声明是否为`x <= y, f(x) <= f(y)`。
 
 **哈希函数**：
 
