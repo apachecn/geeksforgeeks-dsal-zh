@@ -305,7 +305,7 @@ class GFG {
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Pairs : ( 6, 4) ( 8, 2)  have sum : 10
@@ -395,7 +395,7 @@ public void findPairs(int arr[]){
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Pairs:(4,12) (6,10)  have sum:16

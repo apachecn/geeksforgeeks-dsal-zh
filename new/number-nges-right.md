@@ -432,7 +432,7 @@ public static void Main(String []args)
 
 ```
 
-**Output**
+**输出**：
 
 ```
 2
@@ -515,7 +515,7 @@ int main()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 2

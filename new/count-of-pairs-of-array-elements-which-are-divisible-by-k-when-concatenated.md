@@ -369,7 +369,7 @@ public static void Main(string[] args)
 
 ```
 
-**Output**
+**输出**：
 
 ```
 4

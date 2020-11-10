@@ -217,7 +217,7 @@ public class Divisiblepair
 
 ```
 
-**Output**
+**输出**：
 
 ```
 True

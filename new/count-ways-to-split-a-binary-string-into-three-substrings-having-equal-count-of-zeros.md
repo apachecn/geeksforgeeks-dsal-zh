@@ -341,7 +341,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output**
+**输出**：
 
 ```
 4
@@ -721,7 +721,7 @@ public static void Main()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 The number of ways to split is 4

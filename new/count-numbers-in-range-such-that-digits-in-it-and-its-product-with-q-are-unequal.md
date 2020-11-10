@@ -380,7 +380,7 @@ echo countInRange($l, $r, $q);
 
 ```
 
-**Output**
+**输出**：
 
 ```
 1

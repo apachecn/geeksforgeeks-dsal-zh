@@ -497,7 +497,7 @@ public static void Main(string[] args)
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Preorder of the constructed tree : 
@@ -616,7 +616,7 @@ int main()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Preorder of the constructed tree : 
@@ -770,7 +770,7 @@ int main() 
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Preorder of the constructed tree : 
