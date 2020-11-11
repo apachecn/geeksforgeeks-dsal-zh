@@ -28,7 +28,7 @@
 
 [**STL 映射**](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)
 
-容器映射是 C++ 的[标准库中包含的关联容器。 此类的定义位于名称空间`std`的`map`头文件中。](https://www.geeksforgeeks.org/stack-in-cpp-stl/)
+映射容器是 C++ 的[标准库](https://www.geeksforgeeks.org/stack-in-cpp-stl/)中包含的关联容器。 此类的定义位于名称空间`std`的`map`头文件中。
 
 **STL `Map`内部实现**：
 

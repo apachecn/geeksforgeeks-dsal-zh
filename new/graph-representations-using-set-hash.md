@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/graph-representations-using-set-hash/](https://www.geeksforgeeks.org/graph-representations-using-set-hash/)
 
-在[系列 1 ](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-1-dfs-of-unweighted-and-undirected/)中，我们介绍了使用向量数组的图的实现。 在这篇文章中，使用了一种不同的实现，该实现可用于使用[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)实现图。 该实现是针对图的[邻接表表示](https://www.geeksforgeeks.org/graph-and-its-representations/)。
+在[系列 1](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-1-dfs-of-unweighted-and-undirected/) 中，我们介绍了使用向量数组的图的实现。 在这篇文章中，使用了一种不同的实现，该实现可用于使用[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)实现图。 该实现是针对图的[邻接表表示](https://www.geeksforgeeks.org/graph-and-its-representations/)。
 
 集合在两个方面不同于向量：它以排序的方式存储元素，并且不允许重复的元素。 因此，该方法不能用于包含平行边的图形。 由于集合在内部实现为二分搜索树，因此可以在`O(logV)`时间中搜索两个顶点之间的边，其中`V`是图中顶点的数量。
 

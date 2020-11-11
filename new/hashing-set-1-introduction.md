@@ -52,9 +52,9 @@
 
  **下一篇文章：
 
-[冲突处理的单链接](http://quiz.geeksforgeeks.org/hashing-set-2-separate-chaining/)
+[使用单链接的冲突处理](http://quiz.geeksforgeeks.org/hashing-set-2-separate-chaining/)
 
-[冲突处理的开放寻址](http://quiz.geeksforgeeks.org/hashing-set-3-open-addressing/)
+[使用开放寻址的冲突处理](http://quiz.geeksforgeeks.org/hashing-set-3-open-addressing/)
 
 **参考**：
 

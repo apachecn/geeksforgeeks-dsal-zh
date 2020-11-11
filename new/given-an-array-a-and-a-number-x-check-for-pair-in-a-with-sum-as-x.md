@@ -946,7 +946,7 @@ Yes
 
 *   [给定两个未排序的数组，找到总和为`x`的所有对](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/)
 
-*   [具有给定总和的计数对](https://www.geeksforgeeks.org/count-pairs-with-given-sum/)
+*   [计算具有给定总和的偶对数量](https://www.geeksforgeeks.org/count-pairs-with-given-sum/)
 
 *   [计算所有差值等于`k`的不重复对](https://www.geeksforgeeks.org/count-pairs-difference-equal-k/)
 

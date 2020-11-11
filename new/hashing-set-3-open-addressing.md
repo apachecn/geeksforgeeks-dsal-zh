@@ -69,7 +69,7 @@ If (hash(x) + 2*hash2(x)) % S is also full, then we try (hash(x) + 3*hash2(x)) %
 
 ```
 
-有关逐步图，请参见此的[。](https://www.cse.cuhk.edu.hk/irwin.king/_media/teaching/csc2100b/tu6.pdf)
+有关逐步图，请参见[这里](https://www.cse.cuhk.edu.hk/irwin.king/_media/teaching/csc2100b/tu6.pdf)。
 
 **上面三个的比较**：
 

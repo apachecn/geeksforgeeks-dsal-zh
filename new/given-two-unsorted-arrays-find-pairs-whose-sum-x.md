@@ -222,7 +222,7 @@ findPairs($arr1, $arr2, 
 
 **辅助空间**：`O(1)`
 
-此问题的**有效解决方案**是[哈希处理](http://www.geeksforgeeks.org/hashing-data-structure/)。 哈希表是使用 C++ 中的[`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)实现的。
+此问题的**有效解决方案**是[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)。 哈希表是使用 C++ 中的[`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)实现的。
 
 *   我们将所有第一个数组元素存储在哈希表中。
 
