@@ -25,13 +25,13 @@ Pairs : ( 4, 86) ( 23, 67) have sum : 90
 
 ```
 
-这个想法是在 C++ STL 中使用[映射，以避免重复的元素对。](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 
+这个想法是在 C++ STL 中使用[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，以避免重复的元素对。
 
-*   创建一个键，键为整数的[对](https://www.geeksforgeeks.org/pair-in-cpp-stl/)，值的整数作为整数，以存储所有唯一的元素对及其对应的总和。
+*   创建一个键，键为整数的[偶对](https://www.geeksforgeeks.org/pair-in-cpp-stl/)，值为整数，以存储所有唯一的元素对及其对应的总和。
 
 *   遍历数组并生成所有可能的对，并将这些对及其对应的和存储在第一张映射上。
 
-*   创建第二个映射，键为整数，值作为对的[向量，以存储所有具有相应总和的元素对的列表。](https://www.geeksforgeeks.org/sorting-vector-of-pairs-in-c-set-1-sort-by-first-and-second/)
+*   创建第二个映射，键为整数，值为偶对[向量](https://www.geeksforgeeks.org/sorting-vector-of-pairs-in-c-set-1-sort-by-first-and-second/)，以存储所有具有相应总和的元素对的列表。
 
 *   最后，遍历第二张映射，对于具有多于一对的和，请打印所有对，然后按上述示例所示的格式打印相应的和。
 

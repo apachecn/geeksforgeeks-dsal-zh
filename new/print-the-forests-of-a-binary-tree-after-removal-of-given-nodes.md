@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/print-the-forests-of-a-binary-tree-after-removal-of-given-nodes/](https://www.geeksforgeeks.org/print-the-forests-of-a-binary-tree-after-removal-of-given-nodes/)
 
-给定 [**二叉树**](https://www.geeksforgeeks.org/binary-tree-data-structure/) 和由要删除的节点值组成的数组`arr[]`，任务是打印[有序遍历](http://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/) 删除节点后的[森林](https://www.geeksforgeeks.org/count-number-trees-forest/)中的一个。
+给定[**二叉树**](https://www.geeksforgeeks.org/binary-tree-data-structure/)和由要删除的节点值组成的数组`arr[]`，任务是打印[有序遍历](http://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/) 删除节点后的[森林](https://www.geeksforgeeks.org/count-number-trees-forest/)中的一个。
 
 **示例**：
 
@@ -44,9 +44,9 @@
 
 **方法**：请按照以下步骤解决问题：
 
-1.  执行二叉树的[后置遍历](https://www.geeksforgeeks.org/iterative-postorder-traversal/)。
+1.  执行二叉树的[后序遍历](https://www.geeksforgeeks.org/iterative-postorder-traversal/)。
 2.  对于每个节点，检查它是否包含要删除的值。
-3.  如果发现是真的，则将其子级存储为森林的根。 通过[有序遍历](http://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)打印林。
+3.  如果发现是真的，则将其子级存储为森林的根。 通过[有序遍历](http://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)打印森林。
 
 下面是上述方法的实现：
 

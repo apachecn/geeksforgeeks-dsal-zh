@@ -1,4 +1,4 @@
-# 以垂直顺序打印二叉树 | 系列 3（使用级别顺序遍历）
+# 以垂直顺序打印二叉树 | 系列 3（使用层次顺序遍历）
 
 > 原文：[https://www.geeksforgeeks.org/print-a-binary-tree-in-vertical-order-set-3-using-level-order-traversal/](https://www.geeksforgeeks.org/print-a-binary-tree-in-vertical-order-set-3-using-level-order-traversal/)
 
@@ -46,7 +46,7 @@ The output of print this tree vertically will be:
                         12      
 ```
 
-如果我们使用[级别顺序遍历](https://www.geeksforgeeks.org/level-order-tree-traversal/)，则可以确保如果像 12 这样的节点在同一垂直线上位于下面，则将其打印在像 9 这样的节点在垂直线上位于上方。
+如果我们使用[层次顺序遍历](https://www.geeksforgeeks.org/level-order-tree-traversal/)，则可以确保如果像 12 这样的节点在同一垂直线上位于下面，则将其打印在像 9 这样的节点在垂直线上位于上方。
 
 ```
 1\. To maintain a hash for the branch of each node.

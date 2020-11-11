@@ -44,7 +44,7 @@
 
 请按照以下步骤解决问题：
 
-*   在给定列表中找到每个质数的频率（使用 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) / [Dictionary](https://www.geeksforgeeks.org/python-dictionary/) ）。
+*   在给定列表中找到每个质数的频率（使用[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)或[`Dictionary`](https://www.geeksforgeeks.org/python-dictionary/)）。
 
 *   Using the second observation, for every i <sup>th</sup> prime, calculate: 
 

@@ -16,13 +16,13 @@
 > **输入**：`arr[] = {1, 9, 8, 2, 7, 3, 6, 4, 5, 10, 13, 12, 16, 14, 11, 15}, K = 3,  X = 5`
 > **输出**：`1 2 3 4 5`
 
-**朴素的方法**：解决此问题的最简单方法是[对数组](https://www.geeksforgeeks.org/sorting-algorithms/)排序，并使用[双指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)，打印最接近给定数组的第`K`个最小元素的`X`。
+**朴素的方法**：解决此问题的最简单方法是[对数组排序](https://www.geeksforgeeks.org/sorting-algorithms/)，并使用[双指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)，打印最接近给定数组的第`K`个最小元素的`X`。
 
 **时间复杂度**：`O(N * log N)`
 
 **辅助空间**：`O(1)`
 
-**有效方法**：为了优化上述方法，其思想是使用[中值来有效计算给定数组的 **K <sup>th</sup>** 最小元素的值 选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)。 请按照以下步骤解决问题：
+**有效方法**：为了优化上述方法，其思想是使用[中值选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)来有效计算给定数组的第`K`个最小元素的值 。 请按照以下步骤解决问题：
 
 *   使用[中值选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)计算给定数组的第`K`小，即`KthElem`。
 

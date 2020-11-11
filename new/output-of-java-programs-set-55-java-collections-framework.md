@@ -68,7 +68,7 @@ System.out.print(it.next() + " " );
 Answer: B.
 ```
 
-**说明**：[双端队列](https://www.geeksforgeeks.org/deque-interface-java-example/)是双端队列，可以在其中插入数据以及从两端删除数据。 当我们使用 [escentingIterator（）](https://www.geeksforgeeks.org/deque-descendingiterator-method-in-java/)时，我们实际上以与存储数据相反的顺序获取输出。
+**说明**：[双端队列](https://www.geeksforgeeks.org/deque-interface-java-example/)是双端队列，可以在其中插入数据以及从两端删除数据。 当我们使用[`escentingIterator()`](https://www.geeksforgeeks.org/deque-descendingiterator-method-in-java/)时，我们实际上以与存储数据相反的顺序获取输出。
 
 > **3.以下 Java 程序的输出是什么？**
 
@@ -103,7 +103,7 @@ System.out.print(h + " " );
 Answer: C.
 ```
 
-**说明**：[集合](https://www.geeksforgeeks.org/set-in-java/)不存储重复值。 [TreeSet](https://www.geeksforgeeks.org/treeset-in-java-with-examples/) 以排序顺序（即升序）存储数据，但是在这里，我们使用 [Collections.reverseOrder（）](https://www.geeksforgeeks.org/collections-reverseorder-java-examples/)使其明确地以降序存储数据。
+**说明**：[集合](https://www.geeksforgeeks.org/set-in-java/)不存储重复值。 [`TreeSet`](https://www.geeksforgeeks.org/treeset-in-java-with-examples/)以排序顺序（即升序）存储数据，但是在这里，我们使用[`Collections.reverseOrder()`](https://www.geeksforgeeks.org/collections-reverseorder-java-examples/)使其明确地以降序存储数据。
 
 > **4\. 以下 Java 程序的输出是什么？**
 
@@ -138,7 +138,7 @@ System.out.print(s1.pop() + " " );
 Answer: B.
 ```
 
-**说明**：[LinkedHashSet](https://www.geeksforgeeks.org/linkedhashset-in-java-with-examples/) 不存储任何重复值，而是按原始插入顺序存储数据。 另外，[栈](https://www.geeksforgeeks.org/stack-class-in-java/)是 [LIFO 数据结构](https://www.geeksforgeeks.org/lifo-last-in-first-out-approach-in-programming/)。 因此，弹出在栈中的最新插入的值。
+**说明**：[`LinkedHashSet`](https://www.geeksforgeeks.org/linkedhashset-in-java-with-examples/)不存储任何重复值，而是按原始插入顺序存储数据。 另外，[栈](https://www.geeksforgeeks.org/stack-class-in-java/)是 [LIFO 数据结构](https://www.geeksforgeeks.org/lifo-last-in-first-out-approach-in-programming/)。 因此，弹出在栈中的最新插入的值。
 
 > **5\. 以下 Java 程序的输出是什么？**
 
@@ -263,7 +263,7 @@ Karan 1
 Answer: D.
 ```
 
-**说明**：[TreeMap](https://www.geeksforgeeks.org/treemap-in-java/) 以键值的排序顺序存储数据。
+**说明**：[`TreeMap`](https://www.geeksforgeeks.org/treemap-in-java/)以键值的排序顺序存储数据。
 
 > **7\. 以下 Java 程序的输出是什么？**
 
@@ -364,7 +364,7 @@ System.out.print(ts.first() + " " );
 Answer: C.
 ```
 
-**说明**：[TreeSet](https://www.geeksforgeeks.org/treeset-in-java-with-examples/) 以排序顺序（升序）存储值。 同样， [TreeSet.first（）](https://www.geeksforgeeks.org/treeset-first-method-in-java/)返回最小值， [TreeSet.last（）](https://www.geeksforgeeks.org/treeset-last-method-in-java/)返回该集中存在的最大值。
+**说明**：[`TreeSet`](https://www.geeksforgeeks.org/treeset-in-java-with-examples/)以排序顺序（升序）存储值。 同样， [`TreeSet.first()`](https://www.geeksforgeeks.org/treeset-first-method-in-java/)返回最小值， [`TreeSet.last()`](https://www.geeksforgeeks.org/treeset-last-method-in-java/)返回该集中存在的最大值。
 
 > **10\. 以下 Java 程序的输出是什么？**
 
@@ -401,7 +401,7 @@ System.out.print(s1.pop() + " " );
 Answer: C.
 ```
 
-**说明**：由于[双端队列](https://www.geeksforgeeks.org/deque-interface-java-example/)是[接口](https://www.geeksforgeeks.org/interfaces-in-java/)，因此可以在 [LinkedList 类](https://www.geeksforgeeks.org/linked-list-in-java/)的帮助下实例化它。
+**说明**：由于[双端队列](https://www.geeksforgeeks.org/deque-interface-java-example/)是[接口](https://www.geeksforgeeks.org/interfaces-in-java/)，因此可以在[`LinkedList`类](https://www.geeksforgeeks.org/linked-list-in-java/)的帮助下实例化它。
 
 
 

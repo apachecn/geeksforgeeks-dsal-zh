@@ -21,7 +21,7 @@ Output: Na 2
 
 **方法**：以下方法在 Java 编程语言中起作用：
 
-*   以 [LinkedHashMap](https://www.geeksforgeeks.org/linkedhashmap-class-java-examples/) 按插入顺序存储原子名称（键）和计数（值）。
+*   以[`LinkedHashMap`](https://www.geeksforgeeks.org/linkedhashmap-class-java-examples/)按插入顺序存储原子名称（键）和计数（值）。
 
 *   检查字符串字符是否为小写，然后添加到前一个大写的字符串字符。
 

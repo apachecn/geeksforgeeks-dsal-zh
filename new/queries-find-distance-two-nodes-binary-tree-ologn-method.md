@@ -36,7 +36,7 @@ Dist(n1, n2) = Level[n1] + Level[n2] - 2*Level[lca]
 
 这些步骤说明如下：
 
-> 1.  通过应用[级别顺序遍历](https://www.geeksforgeeks.org/print-levels-nodes-binary-tree/)来找到每个节点的级别。
+> 1.  通过应用[层次顺序遍历](https://www.geeksforgeeks.org/print-levels-nodes-binary-tree/)来找到每个节点的级别。
 > 2.  通过将[二叉树](https://www.geeksforgeeks.org/euler-tour-binary-tree/)的 Euler 游标存储在数组中，并借助每个节点的级别和 Euler 游程来计算另外两个数组，从而在`O(logn)`中找到二叉树中两个节点的 LCA。
 >     这些步骤如下所示：
 >     （I）首先，找到二叉树的 Euler 游程。

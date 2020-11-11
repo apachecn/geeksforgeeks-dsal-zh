@@ -35,7 +35,7 @@ Output : 17
 
 **方法**：想法是使用队列。
 
-1.  将树节点放入队列以进行[级别顺序遍历](https://www.geeksforgeeks.org/level-order-tree-traversal/)
+1.  将树节点放入队列以进行[层次顺序遍历](https://www.geeksforgeeks.org/level-order-tree-traversal/)
 
 2.  从根节点的水平距离（`hd`）0 开始，继续将左子节点与水平距离添加为`hd-1`，将右子节点添加为`hd + 1`。
 

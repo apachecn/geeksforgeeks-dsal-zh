@@ -43,7 +43,7 @@
 
 3.  完成上述步骤后，[遍历图](https://www.geeksforgeeks.org/traversing-a-map-or-unordered_map-in-cpp-stl/)，如果任意一对频率至少为一个，则将其插入向量`V`中。
 
-4.  [以升序](https://www.geeksforgeeks.org/sorting-a-vector-in-c/)对向量`V`进行排序，并打印存储在其中的所有对。
+4.  [以升序对向量`V`进行排序](https://www.geeksforgeeks.org/sorting-a-vector-in-c/)，并打印存储在其中的所有对。
 
 下面是上述方法的实现：
 

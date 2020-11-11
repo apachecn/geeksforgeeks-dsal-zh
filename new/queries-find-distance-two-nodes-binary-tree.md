@@ -29,7 +29,7 @@ Dist(n1, n2) = Level[n1] + Level[n2] - 2*Level[lca]
 
 这些步骤说明如下：
 
-> 1.  通过应用[级别顺序遍历](https://www.geeksforgeeks.org/print-levels-nodes-binary-tree/)来找到每个节点的级别。
+> 1.  通过应用[层次顺序遍历](https://www.geeksforgeeks.org/print-levels-nodes-binary-tree/)来找到每个节点的级别。
 > 2.  Find the LCA of two nodes in binary tree in O(logn) by Storing [Euler tour of Binary tree](https://www.geeksforgeeks.org/euler-tour-binary-tree/) in array and computing two other arrays with the help of levels of each node and Euler tour.
 >     These steps are shown below:
 >     
