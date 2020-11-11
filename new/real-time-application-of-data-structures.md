@@ -4,7 +4,7 @@
 
 [数据结构](https://www.geeksforgeeks.org/data-structures/)是在计算机中组织数据的一种特殊方式，因此可以有效地使用它。 本文讨论了所有数据结构的实时应用。
 
-### [数组](https://www.geeksforgeeks.org/array-data-structure/)的应用：
+### [数组的应用](https://www.geeksforgeeks.org/array-data-structure/)：
 
 数组是存储相同数据类型的项的最简单的数据结构。 数组的基本应用可以以表格格式存储数据。 例如，如果我们希望将联系人存储在手机上，则该软件将简单地将所有联系人放置在一个数组中。
 
@@ -52,7 +52,7 @@
 
 4.  它用于许多虚拟机，例如 [JVM](https://www.geeksforgeeks.org/jvm-works-jvm-architecture/) 。
 
-### [队列](https://www.geeksforgeeks.org/applications-of-queue-data-structure/)的应用：
+### [队列的应用](https://www.geeksforgeeks.org/applications-of-queue-data-structure/)：
 
 队列是使用 [FIFO 顺序](https://www.geeksforgeeks.org/fifo-first-in-first-out-approach-in-programming/)的数据结构。
 
@@ -66,7 +66,7 @@
 
 3.  通信中的数据包以队列格式排列。
 
-### [图形](https://www.geeksforgeeks.org/applications-of-graph-data-structure/)的应用：
+### [图的应用](https://www.geeksforgeeks.org/applications-of-graph-data-structure/)：
 
 [图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)是一种数据结构，其中数据存储在互连的顶点（节点）和边（路径）的集合中。
 
@@ -82,7 +82,7 @@
 
 4.  GPS 导航系统还使用最短路径 API。
 
-### [树](https://www.geeksforgeeks.org/applications-of-tree-data-structure/)的应用：
+### [树的应用](https://www.geeksforgeeks.org/applications-of-tree-data-structure/)：
 
 树是具有单个根节点的层次结构。
 
@@ -98,7 +98,7 @@
 
 4.  域名服务器（DNS）也使用树结构。
 
-### [哈希表](https://www.geeksforgeeks.org/applications-of-hashing/)的应用：
+### [哈希表的应用](https://www.geeksforgeeks.org/applications-of-hashing/)：
 
 哈希表以键值对的形式存储数据。 它仅存储具有关联的键的数据。 使用哈希表时，插入和搜索操作易于管理。
 
@@ -114,7 +114,7 @@
 
 4.  在我们的计算机中，我们存储了各种文件，每个文件都有两个非常关键的信息，即文件名和文件路径，以便在文件名与其对应的文件路径哈希表之间建立连接。
 
-### [堆](https://www.geeksforgeeks.org/applications-of-heap-data-structure/)的应用：
+### [堆的应用](https://www.geeksforgeeks.org/applications-of-heap-data-structure/)：
 
 堆是二叉树的一种特殊情况，其中将父节点与其子节点的值进行比较，并对其进行相应排列。
 
@@ -122,15 +122,15 @@
 
 堆的一些应用程序是：
 
-1.  在[堆排序算法](https://www.geeksforgeeks.org/heap-sort/)中，该算法可对[最小堆](https://www.geeksforgeeks.org/min-heap-in-java/)（父项的键小于或等于其子项的键）或[最大堆中的元素进行排序](https://www.geeksforgeeks.org/max-heap-in-java/) （父项的键大于或等于其子项的键），[排序](http://www.geeksforgeeks.org/sorting-algorithms/)是通过创建堆来完成的。
+1.  在[堆排序算法](https://www.geeksforgeeks.org/heap-sort/)中，该算法可对[最小堆](https://www.geeksforgeeks.org/min-heap-in-java/)（父项的键小于或等于其子项的键）或[最大堆](https://www.geeksforgeeks.org/max-heap-in-java/)（父项的键大于或等于其子项的键）中的元素进行排序，[排序](http://www.geeksforgeeks.org/sorting-algorithms/)是通过创建堆来完成的。
 
 2.  堆用于实现[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)，其中优先级基于创建的堆的顺序。
 
 3.  与安全相关的系统和嵌入式系统（例如 Linux 内核）由于使用`O(n log(n))`而使用堆排序。
 
-4.  如果我们在寻找 [K <sup>数</sup>的最小（或最大）值](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/)时陷入困境，那么堆可以轻松快捷地解决问题。
+4.  如果我们在寻找[`K`个最小（或最大）值](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/)时陷入困境，那么堆可以轻松快捷地解决问题。
 
-### [矩阵](https://www.geeksforgeeks.org/matrix/)的应用：
+### [矩阵的应用](https://www.geeksforgeeks.org/matrix/)：
 
 矩阵是元素的列和行的有序集合。 必须将矩阵的元素括在方括号内。
 

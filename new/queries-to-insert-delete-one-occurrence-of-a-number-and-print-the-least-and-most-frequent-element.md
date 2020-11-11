@@ -48,7 +48,7 @@
 
 **朴素的方法**是使用任何[数据结构（数组，向量等）](https://www.geeksforgeeks.org/data-structures/)并存储所有元素。 使用[哈希表](https://www.geeksforgeeks.org/hashing-data-structure/)，可以存储每个元素的频率。 在处理类型 2 的查询时，请从已存储元素的 DS 中删除该元素的一次出现。 类型 3 和类型 4 的查询可以通过遍历哈希表来回答。 每个查询的时间复杂度为`O(n)`，其中`N`是`DS`中直到那时的元素数。
 
-**有效方法**将使用[集合](http://www.geeksforgeeks.org/set-in-cpp-stl/)容器来回答每个查询。 使用两组哈希表，可以在每个查询的`O(log n)`中解决上述问题。 使用两组`s1`和`s2`，一组存储`{num, frequency}`，而另一组存储`{frequency, number}`。 使用散列图来存储每个数字的频率。 使用运算符重载设计集合`s2`，以使其按第一个元素的升序排序。 如果第一个元素看起来与一个或多个元素相同，则该集合将按第二个元素的降序排序。 用户定义的[操作重载](https://www.geeksforgeeks.org/operator-overloading-c/)功能将是：
+**有效方法**将使用[集合](http://www.geeksforgeeks.org/set-in-cpp-stl/)容器来回答每个查询。 使用两组哈希表，可以在每个查询的`O(log n)`中解决上述问题。 使用两组`s1`和`s2`，一组存储`{num, frequency}`，而另一组存储`{frequency, number}`。 使用散列图来存储每个数字的频率。 使用运算符重载设计集合`s2`，以使其按第一个元素的升序排序。 如果第一个元素看起来与一个或多个元素相同，则该集合将按第二个元素的降序排序。 用户定义的[运算符重载函数](https://www.geeksforgeeks.org/operator-overloading-c/)将是：
 
 ```
 bool operator b.second;          
@@ -61,7 +61,7 @@ data-types. *pr* is a struct which has first and second as two integers.
 
 以下是解决每种类型的查询的算法：
 
-*   **类型 1**：使用哈希表检查元素是否存在。 如果不存在，则在[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)中标记该数字。 使用[`insert()`](https://www.geeksforgeeks.org/set-insert-function-in-c-stl/)在集`s1`中插入`{num, 1}`并在集合 2中插入`{1, num}`。 如果以前存在，则从哈希表中获取频率，然后使用`[find()`](https://www.geeksforgeeks.org/set-find-function-in-c-stl/)从集合 1 中删除`{num, frequency}`，并从集合 2 中删除`{frequency，num}`和[`delete()`](https://www.geeksforgeeks.org/seterase-c-stl/)函数。 在集合 1中插入`{num， frequency + 1}`，在集合 2 中插入`{frequency + 1， num}`。 另外，增加哈希表中的计数。
+*   **类型 1**：使用哈希表检查元素是否存在。 如果不存在，则在[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)中标记该数字。 使用[`insert()`](https://www.geeksforgeeks.org/set-insert-function-in-c-stl/)在集`s1`中插入`{num, 1}`并在集合 2中插入`{1, num}`。 如果以前存在，则从哈希表中获取频率，然后使用[`find()`](https://www.geeksforgeeks.org/set-find-function-in-c-stl/)从集合 1 中删除`{num, frequency}`，并从集合 2 中删除`{frequency，num}`和[`delete()`](https://www.geeksforgeeks.org/seterase-c-stl/)函数。 在集合 1中插入`{num， frequency + 1}`，在集合 2 中插入`{frequency + 1， num}`。 另外，增加哈希表中的计数。
 
 *   **类型 2**：遵循与查询类型 1 相同的过程。 唯一的区别是减少哈希表中的计数，并在集合 1 中插入`{num, frequency-1}`，在集合 2 中插入`{frequency-1, num}`。
 

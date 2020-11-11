@@ -1128,7 +1128,7 @@ Dist(8, 5) = 5
 
 **空间复杂度**：`O(n)`
 
-[查询以查找二叉树的两个节点之间的距离：`O(1)`方法](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
+[查找二叉树的两个节点之间的距离的查询：`O(1)`方法](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
 
 
 

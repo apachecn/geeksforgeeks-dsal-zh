@@ -28,7 +28,7 @@
 > **说明**：
 > 2 的排名是 1，70 的排名是 2，100 的排名是 3。
 
-**朴素的方法**：朴素的方法是查找每个元素的排名为`1 +`[**数组中比当前元素小的元素的数量**](https://www.geeksforgeeks.org/count-smaller-equal-elements-sorted-array/)。
+**朴素的方法**：朴素的方法是查找每个元素的排名为[`1 +`数组中比当前元素小的元素的数量](https://www.geeksforgeeks.org/count-smaller-equal-elements-sorted-array/)。
 
  ***时间复杂度**：`O(N ^ 2)`
 

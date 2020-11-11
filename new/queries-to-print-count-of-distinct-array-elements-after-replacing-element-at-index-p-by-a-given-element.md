@@ -32,7 +32,7 @@
 >
 > 查询 2：`p = 3`且`x = 3`。因此，`arr[3] = 3`且`arr[]`变为`{1,2,3,1}`。 因此，不同的元素为 3。
 
-**朴素的方法**：最简单的方法是为每个查询更新给定的数组，然后[将更新后的数组的所有元素插入](https://www.geeksforgeeks.org/set-insert-function-in-c-stl/)到 [Set](https://www.geeksforgeeks.org/set-in-java/) 中。 将集合的[大小打印为不同数组元素](https://www.geeksforgeeks.org/setsize-c-stl/)的[个计数。](https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/)
+**朴素的方法**：最简单的方法是为每个查询更新给定的数组，然后[将更新后的数组的所有元素插入到](https://www.geeksforgeeks.org/set-insert-function-in-c-stl/)[集合](https://www.geeksforgeeks.org/set-in-java/)中。 将[集合的大小](https://www.geeksforgeeks.org/setsize-c-stl/)打印为不同数组元素的[计数](https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/)。
 
 下面是上述方法的实现：
 
@@ -187,9 +187,9 @@ public static void Main(String[] args)
 
 **辅助空间**：`O(n)`
 
-**高效方法**：为了优化上述方法，其思想是将每个数组元素的[频率存储在](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，然后遍历每个查询并打印大小 每次更新后的映射。 请按照以下步骤解决问题：
+**高效方法**：为了优化上述方法，其思想是将每个数组元素的[频率](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，然后遍历每个查询并打印大小 每次更新后的映射。 请按照以下步骤解决问题：
 
-*   [将每个元素](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)`M`中。
+*   将[每个元素](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)`M`中。
 
 *   对于每个查询`{p, x}`，执行以下步骤：
 
