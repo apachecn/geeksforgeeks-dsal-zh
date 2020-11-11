@@ -1,10 +1,10 @@
-# 不使用指针在 C++ STL 中实现单独链接的程序
+# 不使用指针在 C++ STL 中实现单链接的程序
 
 > 原文：[https://www.geeksforgeeks.org/program-to-implement-separate-chaining-in-c-stl-without-the-use-of-pointers/](https://www.geeksforgeeks.org/program-to-implement-separate-chaining-in-c-stl-without-the-use-of-pointers/)
 
 **先决条件**：[独立链接](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)和 [STL in C++](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/)
 
-本文借助 C++ 中的 STL 实现了哈希中的单独链接，而无需使用[指针](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)。
+本文借助 C++ 中的 STL 实现了哈希中的单链接，而无需使用[指针](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)。
 
 **方法**：制作矢量的数组，以获得每个哈希索引的动态（可调整大小）数组，而不是[，使用链表执行相同的](https://www.geeksforgeeks.org/c-program-hashing-chaining/)。 现在，无需使用链表就可以更轻松地处理数据集。 这个简单的技巧更容易实现，效率更高。 在这种方法中：
 
@@ -23,7 +23,7 @@
 
 [![](img/9bf222b917ac1f2a6903a3706d83f577.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200227131935/Separate-Chaining-without-pointers.png)
 
-使用 STL 的单独链接
+使用 STL 的单链接
 
 **算法**：该方法的算法如下：
 

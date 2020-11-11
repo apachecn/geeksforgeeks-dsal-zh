@@ -1,8 +1,8 @@
-# 设计一个可以提供最大频率元素的堆栈
+# 设计一个可以提供最大频率元素的栈
 
 > 原文：[https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/](https://www.geeksforgeeks.org/design-a-stack-which-can-give-maximum-frequency-element/)
 
-给定`N`个元素，任务是实现一个堆栈，该堆栈将在每次弹出操作中删除并返回最大频率元素。 如果频率相等，则将返回最高频率元素。
+给定`N`个元素，任务是实现一个栈，该栈将在每次弹出操作中删除并返回最大频率元素。 如果频率相等，则将返回最高频率元素。
 
 **示例**：
 
@@ -22,12 +22,12 @@
 > 
 > `pop()`返回 8（6 的频率也最高，但不是最高）
 
-**方法**：维护两个[`HashMap`](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)，一个是频率`HashMap`，它将元素映射到它们的频率，另一个是`setMap`，将所有具有相同频率的元素映射到一组（堆栈）。
+**方法**：维护两个[`HashMap`](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)，一个是频率`HashMap`，它将元素映射到它们的频率，另一个是`setMap`，将所有具有相同频率的元素映射到一组（栈）。
 
 `FrequencyStack`具有 2 个功能：
 
-1.  `push(int x)`：使用频率`HashMap`映射元素`x`并更新`maxfreq`变量（即，直到现在都保持最大频率）。 `setMap`维护一个堆栈，其中包含所有具有相同频率的元素。
-2.  `pop()`：首先从`setMap`中获取`maxfreq`元素，然后降低弹出元素的频率。 弹出后，如果堆栈变空，则减小`maxfreq`。
+1.  `push(int x)`：使用频率`HashMap`映射元素`x`并更新`maxfreq`变量（即，直到现在都保持最大频率）。 `setMap`维护一个栈，其中包含所有具有相同频率的元素。
+2.  `pop()`：首先从`setMap`中获取`maxfreq`元素，然后降低弹出元素的频率。 弹出后，如果栈变空，则减小`maxfreq`。
 
 下面是上述方法的实现：
 

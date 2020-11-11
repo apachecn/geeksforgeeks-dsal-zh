@@ -157,7 +157,7 @@ Yes
 
 时间复杂度：`O(n)`
 
-[简单递归解决方案，用于检查 BST 是否包含死端](https://www.geeksforgeeks.org/simple-recursive-solution-check-whether-bst-contains-dead-end/)
+[简单递归解决方案，用于检查 BST 是否包含死胡同](https://www.geeksforgeeks.org/simple-recursive-solution-check-whether-bst-contains-dead-end/)
 
 本文由 [**Nishant_Singh(Pintu)**](https://practice.geeksforgeeks.org/user-profile.php?user=_code) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

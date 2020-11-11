@@ -232,7 +232,7 @@ Yes
 
 ```
 
-**高效方法**：想法是将所有元素存储在[哈希映射中](https://www.geeksforgeeks.org/hashing-data-structure/)，并针对每个元素检查该哈希映射中是否存在该元素的`K`倍。 如果它存在于哈希映射中，则返回`True`，否则返回`False`。
+**高效方法**：想法是将所有元素存储在[哈希映射](https://www.geeksforgeeks.org/hashing-data-structure/)中，并针对每个元素检查该哈希映射中是否存在该元素的`K`倍。 如果它存在于哈希映射中，则返回`True`，否则返回`False`。
 
 以下是上述方法的实现：
 

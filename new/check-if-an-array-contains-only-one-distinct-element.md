@@ -24,13 +24,13 @@
 >
 > 因此，输出为`Yes`。
 
-**朴素的方法**：想法是[对给定的数组进行](https://www.geeksforgeeks.org/sort-c-stl/)排序，然后针对每个有效索引检查当前元素和下一个元素是否相同。 如果它们不相同，则表示该数组包含多个不同的元素，因此打印`No`，否则打印`Yes`。
+**朴素的方法**：想法是[对给定的数组进行排序](https://www.geeksforgeeks.org/sort-c-stl/)，然后针对每个有效索引检查当前元素和下一个元素是否相同。 如果它们不相同，则表示该数组包含多个不同的元素，因此打印`No`，否则打印`Yes`。
 
 **时间复杂度**：`O(N * logN)`
 
 **辅助空间**：`O(1)`
 
-**更好的方法**：可以通过使用[集合](https://www.geeksforgeeks.org/set-in-java/) [数据结构](https://www.geeksforgeeks.org/data-structures/)解决此问题。 自设置以来，不允许重复。 步骤如下：
+**更好的方法**：可以通过使用[集合](https://www.geeksforgeeks.org/set-in-java/)[数据结构](https://www.geeksforgeeks.org/data-structures/)解决此问题。 自设置以来，不允许重复。 步骤如下：
 
 1.  将数组的元素插入集合。
 
@@ -221,7 +221,7 @@ Yes
 
 **高效方法**：也可以在不使用任何额外空间的情况下解决此问题。 步骤如下：
 
-1.  假定数组的第一个元素是数组中唯一的[唯一元素，并将其值存储在变量中，例如`X`。](https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/)
+1.  假定数组的第一个元素是数组中唯一的[唯一元素](https://www.geeksforgeeks.org/count-distinct-elements-in-an-array/)，并将其值存储在变量中，例如`X`。
 
 2.  然后遍历数组，并检查当前元素是否等于`X`。
 

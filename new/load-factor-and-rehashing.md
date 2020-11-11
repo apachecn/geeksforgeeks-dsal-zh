@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/load-factor-and-rehashing/](https://www.geeksforgeeks.org/load-factor-and-rehashing/)
 
-先决条件：[哈希介绍](https://www.geeksforgeeks.org/hashing-set-1-introduction/)和[通过单独链接](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)的冲突处理
+先决条件：[哈希介绍](https://www.geeksforgeeks.org/hashing-set-1-introduction/)和[通过单链接](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)的冲突处理
 
 ### 哈希如何工作：
 
@@ -10,7 +10,7 @@
 
 1.  使用哈希函数将`K`转换为小整数（称为其哈希码）。
 
-2.  哈希码用于查找索引（`hashCode % arrSize`），并且首先在该索引处的整个链表（单独链接）中搜索`K`的存在。
+2.  哈希码用于查找索引（`hashCode % arrSize`），并且首先在该索引处的整个链表（单链接）中搜索`K`的存在。
 
 3.  如果找到，则会更新其值；如果未找到，则键值对将作为新节点存储在列表中。
 

@@ -50,13 +50,13 @@
 >
 > 因此，打印 -1。
 
-**朴素的方法**：解决该问题的最简单方法是[遍历树](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)并将所有叶节点存储在一个数组中。 然后[对数组](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)进行排序，并使用[两个指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)查找是否存在所需的对。
+**朴素的方法**：解决该问题的最简单方法是[遍历树](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)并将所有叶节点存储在一个数组中。 然后[对数组进行排序](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)，并使用[双指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)查找是否存在所需的对。
 
 **时间复杂度**：`O(NlogN)`
 
 **辅助空间**：`O(n)`
 
-**有效方法**：可以使用 [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) 优化上述方法。 请按照以下步骤解决问题：
+**有效方法**：可以使用[`HashSet`](http://www.geeksforgeeks.org/hashset-in-java/)优化上述方法。 请按照以下步骤解决问题：
 
 *   创建[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)以存储叶节点的值。
 *   [遍历树](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)，对于每个叶子节点，检查**叶子节点的`K`值**是否存在于[无序集合](https://www.geeksforgeeks.org/unordered_set-in-cpp-stl/)中。

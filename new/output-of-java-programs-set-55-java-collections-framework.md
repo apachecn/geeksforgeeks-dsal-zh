@@ -138,7 +138,7 @@ System.out.print(s1.pop() + " " );
 Answer: B.
 ```
 
-**说明**：[LinkedHashSet](https://www.geeksforgeeks.org/linkedhashset-in-java-with-examples/) 不存储任何重复值，而是按原始插入顺序存储数据。 另外，[堆栈](https://www.geeksforgeeks.org/stack-class-in-java/)是 [LIFO 数据结构](https://www.geeksforgeeks.org/lifo-last-in-first-out-approach-in-programming/)。 因此，弹出在堆栈中的最新插入的值。
+**说明**：[LinkedHashSet](https://www.geeksforgeeks.org/linkedhashset-in-java-with-examples/) 不存储任何重复值，而是按原始插入顺序存储数据。 另外，[栈](https://www.geeksforgeeks.org/stack-class-in-java/)是 [LIFO 数据结构](https://www.geeksforgeeks.org/lifo-last-in-first-out-approach-in-programming/)。 因此，弹出在栈中的最新插入的值。
 
 > **5\. 以下 Java 程序的输出是什么？**
 

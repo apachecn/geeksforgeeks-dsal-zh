@@ -1,8 +1,8 @@
-# 检查给定堆栈中是否存在所有数组元素
+# 检查给定栈中是否存在所有数组元素
 
 > 原文：[https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/](https://www.geeksforgeeks.org/check-if-all-array-elements-are-present-in-a-given-stack-or-not/)
 
-给定一个整数`S`的堆栈和一个整数`arr[]`的数组，任务是检查堆栈中是否存在所有数组元素。
+给定一个整数`S`的栈和一个整数`arr[]`的数组，任务是检查栈中是否存在所有数组元素。
 
 **示例**：
 
@@ -12,15 +12,15 @@
 > 
 > **说明**：
 > 
-> 元素 20 和 30 存在于堆栈中。
+> 元素 20 和 30 存在于栈中。
 > 
 > **输入**：`S = {50, 60}, arr[] = {60, 50}`
 > 
 > **输出**：是
 > 
-> **说明**：堆栈中存在元素 50 和 60。
+> **说明**：栈中存在元素 50 和 60。
 
-**方法**：这个想法是要维持[`Hashmap`](https://www.geeksforgeeks.org/hashing-data-structure/)中数组元素的频率。 现在，当堆栈不为空时，请继续从堆栈中弹出元素，并降低`Hashmap`中元素的频率。 最后，当堆栈为空时，检查哈希映射中每个元素的频率是否为零。 如果发现是真的，则打印是。 否则，打印编号
+**方法**：这个想法是要维持[`Hashmap`](https://www.geeksforgeeks.org/hashing-data-structure/)中数组元素的频率。 现在，当栈不为空时，请继续从栈中弹出元素，并降低`Hashmap`中元素的频率。 最后，当栈为空时，检查哈希映射中每个元素的频率是否为零。 如果发现是真的，则打印是。 否则，打印编号
 
 下面是上述方法的实现：
 

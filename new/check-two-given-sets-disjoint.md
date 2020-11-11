@@ -458,7 +458,7 @@ Yes
 
 **方法 4（使用二分搜索树）**。
 
-1.  创建自平衡二分搜索树（ [第一组中所有元素的红色黑色](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)， [AVL](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/) ， [Splay](https://www.geeksforgeeks.org/splay-tree-set-1-insert/) 等）。
+1.  创建自平衡二分搜索树（[红黑树](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)，[AVL 树](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/)，[伸展树](https://www.geeksforgeeks.org/splay-tree-set-1-insert/)等）。
 
 2.  遍历第二组的所有元素，并在上述构造的二分搜索树中搜索每个元素。 如果找到该元素，则返回`false`。
 

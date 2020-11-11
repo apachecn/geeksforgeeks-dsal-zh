@@ -6,7 +6,7 @@
 
 [哈希 | 系列 1（简介）](http://quiz.geeksforgeeks.org/hashing-set-1-introduction/)，
 
-[哈希 | 系列 2（单独链接）](http://quiz.geeksforgeeks.org/hashing-set-2-separate-chaining/)
+[哈希 | 系列 2（单链接）](http://quiz.geeksforgeeks.org/hashing-set-2-separate-chaining/)
 
 **开放式寻址**，
 

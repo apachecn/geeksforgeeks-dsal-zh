@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/practice-problems-on-hashing/](https://www.geeksforgeeks.org/practice-problems-on-hashing/)
 
-在本文中，我们将讨论基于哈希的问题类型。 在理解这一点之前，您应该对散列，散列函数，开放式寻址和链接技术有所了解（请参阅：[简介](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，[单独链接](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)，[开放式寻址](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)）。
+在本文中，我们将讨论基于哈希的问题类型。 在理解这一点之前，您应该对散列，散列函数，开放式寻址和链接技术有所了解（请参阅：[简介](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，[单链接](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/)，[开放式寻址](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)）。
 
 这些是散列中的一些关键点：
 

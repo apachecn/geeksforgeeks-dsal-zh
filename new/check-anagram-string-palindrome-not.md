@@ -19,7 +19,7 @@ given string. For example kgeesseegk
 
 ```
 
-此问题基本上与[相同。检查给定字符串的字符是否可以重新排列以形成回文](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)。 我们可以使用`count`数组在`O(n)`时间内完成此操作。 以下是详细步骤。
+此问题基本上与[“检查给定字符串的字符是否可以重新排列以形成回文”](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)相同。 我们可以使用`count`数组在`O(n)`时间内完成此操作。 以下是详细步骤。
 
 1.  创建一个字母大小的计数数组，通常为 256。将计数数组的所有值初始化为 0。
 

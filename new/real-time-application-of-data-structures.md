@@ -36,19 +36,19 @@
 
 4.  为了跟踪多人游戏中的回合，使用了[循环链表](https://www.geeksforgeeks.org/circular-linked-list/)。
 
-### [堆栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)的应用：
+### [栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)的应用：
 
-堆栈是一种使用 [LIFO 顺序](https://www.geeksforgeeks.org/lifo-last-in-first-out-approach-in-programming/)的数据结构。
+栈是一种使用 [LIFO 顺序](https://www.geeksforgeeks.org/lifo-last-in-first-out-approach-in-programming/)的数据结构。
 
 [![](img/ce0e58b227d8c4b90b20487151a9506a.png)](https://contribute.geeksforgeeks.org/wp-content/uploads/geek-stack.png)
 
-堆栈的一些应用程序是：
+栈的一些应用程序是：
 
 1.  将中缀转换为后缀表达式。
 
-2.  还可以通过堆栈执行撤消操作。
+2.  还可以通过栈执行撤消操作。
 
-3.  语言中的语法使用堆栈进行解析。
+3.  语言中的语法使用栈进行解析。
 
 4.  它用于许多虚拟机，例如 [JVM](https://www.geeksforgeeks.org/jvm-works-jvm-architecture/) 。
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/overview-of-data-structures-set-2-binary-tree-bst-heap-and-hash/](https://www.geeksforgeeks.org/overview-of-data-structures-set-2-binary-tree-bst-heap-and-hash/)
 
-我们已经讨论了[数组，链表，队列和堆栈的概述](https://www.geeksforgeeks.org/overview-of-data-structures-set-1-linear-data-structures/)。 在本文中，将讨论以下数据结构。
+我们已经讨论了[数组，链表，队列和栈的概述](https://www.geeksforgeeks.org/overview-of-data-structures-set-1-linear-data-structures/)。 在本文中，将讨论以下数据结构。
 
 +   二叉树
 
@@ -14,7 +14,7 @@
 
 **二叉树**
 
-与数组，链表，堆栈和队列（它们是线性数据结构）不同，树是分层数据结构。
+与数组，链表，栈和队列（它们是线性数据结构）不同，树是分层数据结构。
 
 二叉树是一种树数据结构，其中每个节点最多具有两个子节点，称为左子节点和右子节点。 它主要使用链接来实现。
 

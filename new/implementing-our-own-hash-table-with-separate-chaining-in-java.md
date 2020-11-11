@@ -1,4 +1,4 @@
-# 用 Java 中的单独链接实现自己的哈希表
+# 用 Java 中的单链接实现自己的哈希表
 
 > 原文：[https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/](https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/)
 
@@ -20,7 +20,7 @@
 
 因此，该过程很简单，用户将一组（键，值）对设置为输入，并根据哈希函数生成的值生成索引，以存储对应于特定键的值。 因此，每当我们需要获取与仅`O(1)`的键相对应的值时。
 
-当引入哈希冲突的概念时，这张照片就变得如此玫瑰色和完美。 想象一下，对于不同的键值，现在在哈希表的同一块中分配了与其他某个先前键对应的先前存储的值。 我们当然不能替代它。那将是灾难性的！ 为解决此问题，我们将使用单独的链接技术，请注意，还有其他开放式寻址技术，例如双哈希和线性探测，其效率与单独链接的效率几乎相同，您可以在[链接 1](http://geeksquiz.com/hashing-set-1-introduction/)、[链接 2](http://geeksquiz.com/hashing-set-2-separate-chaining/)、[链接 3](http://geeksquiz.com/hashing-set-3-open-addressing/)。
+当引入哈希冲突的概念时，这张照片就变得如此玫瑰色和完美。 想象一下，对于不同的键值，现在在哈希表的同一块中分配了与其他某个先前键对应的先前存储的值。 我们当然不能替代它。那将是灾难性的！ 为解决此问题，我们将使用单独的链接技术，请注意，还有其他开放式寻址技术，例如双哈希和线性探测，其效率与单链接的效率几乎相同，您可以在[链接 1](http://geeksquiz.com/hashing-set-1-introduction/)、[链接 2](http://geeksquiz.com/hashing-set-2-separate-chaining/)、[链接 3](http://geeksquiz.com/hashing-set-3-open-addressing/)。
 
 现在，我们要做的是创建一个与哈希表的特定存储桶相对应的链表，以容纳与映射到同一存储桶的不同键相对应的所有值。
 

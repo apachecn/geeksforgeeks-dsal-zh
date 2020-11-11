@@ -29,7 +29,7 @@
 
 **方法**：
 
-1.  将每个字符的[频率存储在 26 个](https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/)[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)中，以用于[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
+1.  将每个字符的[频率](https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/)存储在 26 个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)中，以用于[散列](http://www.geeksforgeeks.org/hashing-data-structure/)。
 
 2.  现在遍历哈希数组，并检查索引`i`处每个字符的频率是否等于`i + 1`。
 
