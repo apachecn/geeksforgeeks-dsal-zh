@@ -19,7 +19,7 @@ Output: 10
 
 针对此问题的**有效解决方案**是使用哈希。 这个想法是遍历输入数组并将第一次出现的索引存储在哈希映射中。 对于其他所有出现的情况，找到索引与存储在哈希映射中的第一个索引之间的差异。 如果到目前为止，差异大于结果，则更新结果。
 
-以下是该想法的实现。 该实现在中使用 [unordered_map。](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)
+以下是该想法的实现。 该实现在中使用[`unordered_map`](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)。
 
 ## C++
 

@@ -17,7 +17,7 @@
 > 为使不超过`K = 64`的总和最大化，请选择元素 20、17 和 9。
 > 因此，最大可能的总和为 46。
 
-**朴素的方法**：最简单的方法是[递归](https://www.geeksforgeeks.org/recursion/) [生成给定数组的所有可能子集](https://www.geeksforgeeks.org/backtracking-to-find-all-subsets/)，对于每个子集，检查是否不包含相邻元素并且和不超过`K`。 在满足上述条件的所有子集中，打印出任何子集获得的最大和。
+**朴素的方法**：最简单的方法是[递归](https://www.geeksforgeeks.org/recursion/)[生成给定数组的所有可能子集](https://www.geeksforgeeks.org/backtracking-to-find-all-subsets/)，对于每个子集，检查是否不包含相邻元素并且和不超过`K`。 在满足上述条件的所有子集中，打印出任何子集获得的最大和。
 
 下面是上述方法的实现：
 

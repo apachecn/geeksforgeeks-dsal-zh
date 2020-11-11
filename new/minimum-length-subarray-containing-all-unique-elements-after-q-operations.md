@@ -36,7 +36,7 @@
 >
 > 子数组`{3, 2, 0, 1}`是包含所有唯一元素的最小子数组。 因此，答案是 4。
 
-**方法**：这个想法是使用[前缀和数组](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[的概念。针对此问题的两个指针是](https://www.geeksforgeeks.org/two-pointers-technique/)。
+**方法**：这个想法是针对此问题使用[前缀和数组](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)和[双指针](https://www.geeksforgeeks.org/two-pointers-technique/)的概念。
 
 *   可以通过在索引`L`处将数组的值递增 1，并在索引`R + 1`处将值递减 1 来计算查询后的最终数组。
 
@@ -47,7 +47,7 @@ arr[R + 1] -= 1
 
 ```
 
-*   最后，计算数组的[前缀总和，以计算查询后的最终数组。 然后使用](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)[两个指针方法](https://www.geeksforgeeks.org/two-pointers-technique/)获得包含所有唯一元素的最小长度子数组。
+*   最后，计算数组的[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)，以计算查询后的最终数组。 然后使用[双指针方法](https://www.geeksforgeeks.org/two-pointers-technique/)获得包含所有唯一元素的最小长度子数组。
 
 下面是上述方法的实现：
 

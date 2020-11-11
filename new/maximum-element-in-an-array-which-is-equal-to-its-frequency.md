@@ -22,7 +22,7 @@
 >
 > **输出**：1
 
-**方法**：使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)存储数组的每个元素的[频率，最后找出那些频率等于其值的元素的最大值。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
+**方法**：使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)存储数组的每个元素的[频率](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)，最后找出那些频率等于其值的元素的最大值。
 
 下面是上述方法的实现：
 

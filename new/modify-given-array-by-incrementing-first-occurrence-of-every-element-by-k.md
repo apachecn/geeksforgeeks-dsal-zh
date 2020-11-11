@@ -56,7 +56,7 @@
 
 **辅助空间**：`O(1)`
 
-**有效方法**：可以使用 [**散列**](http://www.geeksforgeeks.org/hashing-data-structure/) 优化上述方法。 请按照以下步骤解决问题：
+**有效方法**：可以使用[**散列**](http://www.geeksforgeeks.org/hashing-data-structure/)优化上述方法。 请按照以下步骤解决问题：
 
 *   遍历数组并将每个数组元素的出现都存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，并按升序将其出现的索引配对。
 

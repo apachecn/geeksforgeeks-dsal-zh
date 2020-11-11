@@ -28,9 +28,9 @@
 
 步骤如下：
 
-1.  创建一个[哈希表](https://www.geeksforgeeks.org/hashing-data-structure/)至[，以存储每个元素](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的频率。
+1.  创建一个[哈希表](https://www.geeksforgeeks.org/hashing-data-structure/)来[存储每个元素的频率](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)。
 
-2.  将每个元素的[频率插入向量](https://www.geeksforgeeks.org/program-to-find-frequency-of-each-element-in-a-vector-using-map-in-c/)`V`和[中，以向量](https://www.geeksforgeeks.org/sorting-a-vector-in-c/)升序对向量`V`进行排序。
+2.  将每个元素的[频率](https://www.geeksforgeeks.org/program-to-find-frequency-of-each-element-in-a-vector-using-map-in-c/)插入向量`V`中，[以升序对向量`V`进行排序](https://www.geeksforgeeks.org/sorting-a-vector-in-c/)。
 
 3.  对于向量`V`的每个元素（例如`currentElement`），在`K`和`currentElement - 1`中找到最小值，并同时降低`K`和`V[i]`两者中的最小值。
 

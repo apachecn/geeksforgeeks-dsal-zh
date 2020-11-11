@@ -32,7 +32,7 @@
 >
 > 因此，可以在不更改数组`MEX`的情况下删除 4、6、7 和 12。 
 
-**朴素的方法**：最简单的方法是[对数组](https://www.geeksforgeeks.org/sorting-algorithms/)排序，然后[从`i = 0`遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，而`arr[i]`等于`i + 1`。 之后，将答案打印为`N – i`，这是在不更改其`MEX`的情况下可以从给定数组中删除的最大元素数。
+**朴素的方法**：最简单的方法是[对数组排序](https://www.geeksforgeeks.org/sorting-algorithms/)，然后[从`i = 0`遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，而`arr[i]`等于`i + 1`。 之后，将答案打印为`N – i`，这是在不更改其`MEX`的情况下可以从给定数组中删除的最大元素数。
 
 **时间复杂度**：`O(N * log N)`
 

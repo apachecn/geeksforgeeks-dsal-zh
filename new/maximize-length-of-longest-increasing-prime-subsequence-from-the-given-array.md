@@ -4,7 +4,7 @@
 
 中最长增加的素子序列的长度
 
-给定大小为`N`的数组`arr[]`，任务是通过执行以下操作来找到[最长增加质数子序列](https://www.geeksforgeeks.org/length-of-longest-prime-subsequence-in-an-array/)的长度。
+给定大小为`N`的数组`arr[]`，任务是通过执行以下操作来找到[最长递增质数子序列](https://www.geeksforgeeks.org/length-of-longest-prime-subsequence-in-an-array/)的长度。
 
 *   如果`arr[i]`已经是[质数](https://www.geeksforgeeks.org/prime-numbers/)，则无需更新`arr[i]`。
 
@@ -34,7 +34,7 @@
 
 **辅助空间**：`O(n)`
 
-**高效方法**：想法是使用[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)方法来优化上述方法。 此问题是[最长增加质数子序列（LIPS）问题](https://www.geeksforgeeks.org/length-of-longest-increasing-prime-subsequence-from-a-given-array/)的基本变体。 请按照以下步骤解决问题。
+**高效方法**：想法是使用[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)方法来优化上述方法。 此问题是[最长递增质数子序列（LIPS）问题](https://www.geeksforgeeks.org/length-of-longest-increasing-prime-subsequence-from-a-given-array/)的基本变体。 请按照以下步骤解决问题。
 
 1.  初始化[二维](https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/)数组，例如`dp[][]`，大小为`N * 2`，其中通过选择小于索引`i`处的`arr[i]`的最接近质数，`dp[i][0]`存储最长增长质数子序列的长度。 通过选择大于或等于索引`i`处的`arr[i]`的最接近质数，`dp[i][1]`存储最长递增质数子序列的长度。 下面是递归关系：
 

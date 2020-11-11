@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/minimize-characters-to-be-changed-to-make-the-left-and-right-rotation-of-a-string-same/](https://www.geeksforgeeks.org/minimize-characters-to-be-changed-to-make-the-left-and-right-rotation-of-a-string-same/)
 
-给定小写英文字母的字符串`S`，任务是找到要更改的最小字符数，以使字符串的[左右旋转相同。](https://www.geeksforgeeks.org/left-rotation-right-rotation-string-2/)
+给定小写英文字母的字符串`S`，任务是找到要更改的最小字符数，以使字符串的[左右旋转](https://www.geeksforgeeks.org/left-rotation-right-rotation-string-2/)相同。
 
 **示例**：
 
@@ -30,7 +30,7 @@
 >
 > 因此，左右旋转相等。
 
-**方法**：解决此问题的关键观察结果是，当字符串的[长度为偶数时，则偶数索引处的所有字符和奇数索引处的字符必须相同 左右旋转相同。 对于奇数长度的字符串，所有字符必须相等。 请按照以下步骤解决问题：](https://www.geeksforgeeks.org/c-program-to-find-the-length-of-a-string/)
+**方法**：解决此问题的关键观察结果是，当字符串的[长度为偶数](https://www.geeksforgeeks.org/c-program-to-find-the-length-of-a-string/)时，则偶数索引处的所有字符和奇数索引处的字符的左右旋转必须相同。 对于奇数长度的字符串，所有字符必须相等。 请按照以下步骤解决问题：
 
 *   检查字符串的长度是否为偶数，则要更改的最少字符数是字符串的长度，不包括偶数索引和奇数索引处最常出现的元素的频率。
 

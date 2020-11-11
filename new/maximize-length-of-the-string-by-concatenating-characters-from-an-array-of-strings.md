@@ -30,7 +30,7 @@
 
 *   从左到右迭代，并将每个字符串视为可能的起始子字符串。
 
-*   初始化 [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) ，以存储到目前为止遇到的不同字符。
+*   初始化[`HashSet`](http://www.geeksforgeeks.org/hashset-in-java/)，以存储到目前为止遇到的不同字符。
 
 *   一旦选择了一个字符串作为起始子字符串，请检查是否还有其余的字符串（如果它仅包含以前没有出现过的字符）。 将此字符串作为子字符串追加到正在生成的当前字符串中。
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/](https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/)
 
-给定数组`arr[]`，任务是找到给定数组的元素的[频率的](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)[模式](https://www.geeksforgeeks.org/mode/)。
+给定数组`arr[]`，任务是找到给定数组的元素的[频率](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的[众数](https://www.geeksforgeeks.org/mode/)。
 
 **示例**：
 
@@ -22,7 +22,7 @@
 >
 > **输出**：1
 
-**方法**：想法是找到所有数组元素的频率。 最后，计算频率的[模式。](https://www.geeksforgeeks.org/mode/)
+**方法**：想法是找到所有数组元素的频率。 最后，计算频率的[众数](https://www.geeksforgeeks.org/mode/)。
 
 下面是上述方法的实现：
 

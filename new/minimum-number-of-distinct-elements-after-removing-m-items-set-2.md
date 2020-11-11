@@ -30,7 +30,7 @@
 
 **高效方法**：这个想法是将每个元素的出现存储在[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)中，然后再次计算每个频率在哈希中的出现。 步骤如下：
 
-1.  遍历给定的数组元素，[对每个数字](https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-a-sorted-array/)的出现进行计数，并将其存储到[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)中。
+1.  遍历给定的数组元素，[对每个数字的出现进行计数](https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-a-sorted-array/)，并将其存储到[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)中。
 
 2.  现在，不对频率进行排序，而是将频率的出现计数到另一个数组中，例如`freq_arr[]`。
 

@@ -28,7 +28,7 @@
 
 **方法**：
 
-的想法是使用[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)解决该问题。 请按照以下步骤操作：
+想法是使用[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)解决该问题。 请按照以下步骤操作：
 
 *   维护`HashMap`来存储数组元素可能的子序列数，并维护`maxSubsequences`来计算可能子序列的总数。
 

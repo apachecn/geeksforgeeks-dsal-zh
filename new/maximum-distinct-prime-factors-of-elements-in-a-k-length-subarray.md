@@ -32,7 +32,7 @@
 
 **高效方法**：想法是使用[滑动窗口技术](https://www.geeksforgeeks.org/window-sliding-technique/)解决此问题。 请按照以下步骤操作：
 
-1.  使用[筛选](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)生成并存储每个元素的[最小质数](https://www.geeksforgeeks.org/least-prime-factor-of-numbers-till-n/)。
+1.  使用[筛子](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)生成并存储每个元素的[最小质数](https://www.geeksforgeeks.org/least-prime-factor-of-numbers-till-n/)。
 
 2.  将前`K`个数组元素的不同质数存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
 

@@ -53,7 +53,7 @@
 
 *   将`0`和`1`初始化为`dp[0] = 0`和`dp[1] = 1`。
 
-*   [在范围`[2, N]`范围内遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`dp[]`，并将每个状态更新为：
+*   [在范围`[2, N]`内遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`dp[]`，并将每个状态更新为：
 
 > `dp[i] = max(i, dp[i / 2] + dp[i / 3] + dp[i / 4])`
 
@@ -235,7 +235,7 @@ if __name__ == '__main__':
 
 **空间复杂度**：`O(n)`
 
-[**动态规划**](http://www.geeksforgeeks.org/dynamic-programming/)使用自顶向下方法：与上述方法一样，[有很多重叠 每个递归调用的子问题](https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/)。 因此，为了优化上述方法，其思想是使用辅助空间[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来存储在每个递归调用中计算出的值并返回重复的存储状态。 步骤如下：
+[**动态规划**](http://www.geeksforgeeks.org/dynamic-programming/)使用自顶向下方法：与上述方法一样，[每个递归调用的子问题有很多重叠](https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/)。 因此，为了优化上述方法，其思想是使用辅助空间[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来存储在每个递归调用中计算出的值并返回重复的存储状态。 步骤如下：
 
 *   初始化映射**映射**，以存储在每个递归调用中计算的值。
 

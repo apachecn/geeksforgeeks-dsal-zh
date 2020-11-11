@@ -32,7 +32,7 @@
 
 1.  将数组元素的初始索引存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
 
-2.  [对给定数组`arr []`进行排序](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)。
+2.  [对给定数组`arr[]`进行排序](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)。
 
 3.  现在，使用映射找到排序数组的相邻元素的索引之间的距离。
 

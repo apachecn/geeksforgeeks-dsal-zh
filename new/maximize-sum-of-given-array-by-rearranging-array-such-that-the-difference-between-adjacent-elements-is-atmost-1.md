@@ -40,7 +40,7 @@
 
 *   将`size`和`sum`初始化为`0`，它们分别存储先前选择的整数和最大可能和。
 
-*   [使用变量`K`遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`count[]`数组，然后执行以下操作：
+*   [使用变量`K`遍历`count[]`数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，然后执行以下操作：
 
     *   对每个`K`执行循环，直到`count[K] > 0`和`size < K`。
 

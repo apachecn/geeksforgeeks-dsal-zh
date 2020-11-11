@@ -17,7 +17,7 @@ The subsequence is {-2, -1, -1, 0}.
 
 ```
 
-**方法 1**：先前在的[中讨论了具有`O(N ^ 2)`时间复杂度的方法](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1/)。
+**方法 1**：[先前讨论了具有`O(N ^ 2)`时间复杂度的方法](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1/)。
 
 **方法 2（有效方法）**：想法是创建一个具有`ele, len`形式的元组的哈希映射，其中`len`表示长度 以元素`ele`结尾的最长子序列。 现在，对于每个元素`arr[i]`，我们可以找到哈希表中值`arr[i] - 1`，`arr[i]`和`arr[i] + 1`的长度，并考虑其中的最大值。 将该最大值设为`max`。 现在，以`arr[i]`结尾的最长子序列的长度为`max + 1`。 与哈希表中的元素`arr[i]`一起更新此长度。 最后，在哈希表中具有最大长度的元素给出最大长度子序列。
 
@@ -242,7 +242,7 @@ Maximum length subsequence = 5
 
 **辅助空间**：`O(n)`
 
-感谢 **Neeraj** 在此帖子的[评论中提出了上述解决方案。](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1/)
+感谢 **Neeraj** 在此帖子的[评论](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1/)中提出了上述解决方案。
 
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
