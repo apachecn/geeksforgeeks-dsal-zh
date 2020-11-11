@@ -356,7 +356,7 @@ class GFG
 > `s`为给定字符串
 > `mod = 10 ^ 9 + 7`
 
-使用上述哈希函数和[累积哈希技术，对所有子字符串进行迭代，并检查它是否是回文。](https://www.geeksforgeeks.org/palindrome-substring-queries/)
+使用上述哈希函数和[累积哈希技术](https://www.geeksforgeeks.org/palindrome-substring-queries/)，对所有子字符串进行迭代，并检查它是否是回文。
 
 下面是上述方法的实现：
 
