@@ -48,7 +48,7 @@
 
 3.  现在，从通过上述步骤获得的最远节点执行 **DFS** ，并跟踪距该节点最远的节点。
 
-4.  现在，执行 **DFS** ，并继续在 [Map](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 中添加节点，这些节点距离通过上述步骤获得的两个节点最远。
+4.  现在，执行 **DFS** ，并继续在[`Map`](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中添加节点，这些节点距离通过上述步骤获得的两个节点最远。
 
 下面是上述方法的实现：
 

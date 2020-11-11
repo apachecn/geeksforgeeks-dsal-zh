@@ -4,7 +4,7 @@
 
 设计一个点击计数器，计算过去 5 分钟内收到的点击次数。
 
-**来源**：[Microsoft 面试体验](https://www.geeksforgeeks.org/microsoft-interview-experience-set-109-2-years-experienced/)
+**来源**：[Microsoft 面试经历](https://www.geeksforgeeks.org/microsoft-interview-experience-set-109-2-years-experienced/)
 
 最近，包括 Dropbox 在内的许多公司都提出了“设计命中计数器”问题，这个问题比看起来要困难的多。 它包括几个主题，例如基本数据结构设计，各种优化，并发和分布式计数器。
 
