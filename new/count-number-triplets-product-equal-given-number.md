@@ -18,7 +18,7 @@ Output : 0
 
 ```
 
-在询问：[微软](https://www.geeksforgeeks.org/microsoft-interview-experience-set-116-on-campus/)
+被询问：[微软](https://www.geeksforgeeks.org/microsoft-interview-experience-set-116-on-campus/)
 
 **朴素的方法**是将每个三元组一一考虑，并计算它们的乘积是否等于`m`。
 

@@ -30,7 +30,7 @@
 
 让我们将一个简单的哈希函数视为`key mod 7`，并将键序列设为 50、700、76、85、92、73、101。
 
-[![hashChaining](img/87b2f4b25bdb1c562607a6c32a013a07.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2015/07/hashChaining1.png)
+![hashChaining](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2015/07/hashChaining1.png)
 
 [**链式哈希的 C++ 程序**](https://www.geeksforgeeks.org/c-program-hashing-chaining/)
 

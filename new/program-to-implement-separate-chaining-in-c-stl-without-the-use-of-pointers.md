@@ -21,7 +21,7 @@
 
     ```
 
-[![](img/9bf222b917ac1f2a6903a3706d83f577.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200227131935/Separate-Chaining-without-pointers.png)
+![](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200227131935/Separate-Chaining-without-pointers.png)
 
 使用 STL 的单链接
 

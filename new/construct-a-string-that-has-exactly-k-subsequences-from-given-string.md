@@ -39,7 +39,7 @@
 
 要解决上述问题，我们必须遵循以下步骤：
 
-*   这个想法是找到`K`的[主要因子](https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)并存储这些主要因子（例如`factor`）。
+*   这个想法是找到`K`的[质因子](https://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)并存储这些质因子（例如`factor`）。
 
 *   创建给定字符串大小的空数组`count`，以将每个字符的计数存储在结果字符串`s`中。 用 1 初始化数组。
 

@@ -18,7 +18,7 @@ Output : aaa aa a aa a a
 All elements are not Distinct
 ```
 
-先决条件：[打印给定数组](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的子数组
+先决条件：[打印给定数组的子数组](https://www.geeksforgeeks.org/program-print-substrings-given-string/)。
 
 这个想法是使用哈希表（Java 中为[`HashSet`](http://www.geeksforgeeks.org/hashset-in-java/)）来存储所有生成的子字符串。 最后，我们返回`HashSet`的大小。
 

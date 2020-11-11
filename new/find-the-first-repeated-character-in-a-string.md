@@ -6,7 +6,7 @@
 
 给定一个字符串，找到其中的第一个重复字符。 我们需要找到多次出现并且其**第二次出现**的索引最小的字符。 在中讨论了这个问题的一个变体。
 
-[![find first repeated character in a string](img/6e31e5e3a0b96a7e5578d6ceb6eeb146.png)](https://media.geeksforgeeks.org/wp-content/uploads/find-first-repeated-character-in-a-string.png)
+![find first repeated character in a string](https://media.geeksforgeeks.org/wp-content/uploads/find-first-repeated-character-in-a-string.png)
 
 **示例**：
 

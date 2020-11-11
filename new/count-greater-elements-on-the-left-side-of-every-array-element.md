@@ -124,7 +124,7 @@ int main()
 
 **辅助空间**：`O(n)`
 
-**注意**：上述方法适用于唯一元素，但对于重复元素，只需将[替换为](https://www.geeksforgeeks.org/set-in-cpp-stl/) [](https://www.geeksforgeeks.org/set-in-cpp-stl/) [多组。](https://www.geeksforgeeks.org/multiset-in-cpp-stl/)
+**注意**：上述方法适用于唯一元素，但对于重复元素，只需将[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)替换为[多重集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)。
 
 
 

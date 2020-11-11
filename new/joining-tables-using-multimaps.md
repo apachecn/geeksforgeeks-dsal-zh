@@ -8,7 +8,7 @@
 
 **示例**：
 
-[![](img/3bcb8881cc979aca5e01e2abf75912ed.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200803045046/t.png)
+![](https://media.geeksforgeeks.org/wp-content/uploads/20200803045046/t.png)
 
 **方法**：
 

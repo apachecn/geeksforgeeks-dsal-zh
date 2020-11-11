@@ -12,7 +12,7 @@
 
 **可扩展哈希的基本结构**：
 
-[![](img/2ddacce8dd070b49c48e6e5cb03d7d10.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190806160015/Basic-Structure-of-Extendible-Hashing.png)
+![](https://media.geeksforgeeks.org/wp-content/uploads/20190806160015/Basic-Structure-of-Extendible-Hashing.png)
 
 **可扩展哈希中的常用术语**：
 
@@ -30,7 +30,7 @@
 
 **可扩展哈希的基本工作**：
 
-[![](img/99c7e17ecbd22d9758b7a9dfa985858c.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190806160342/Basic-Working-of-Extendible-Hashing.png)
+![](https://media.geeksforgeeks.org/wp-content/uploads/20190806160342/Basic-Working-of-Extendible-Hashing.png)
 
 *   **步骤 1 – 分析数据元素**：数据元素可能以各种形式存在，例如。 整数，字符串，浮点数等。当前，让我们考虑整数类型的数据元素。 例如：49。
 
@@ -94,55 +94,55 @@
 
 *   最初，全局深度和局部深度始终为 1。因此，哈希帧如下所示：
 
-    [![](img/ab48540f6f00486b21af29bdfb501b02.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190803103835/hash11.png)
+    ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803103835/hash11.png)
 
 *   **插入 16**：
 
     二进制格式 16 为 10000，全局深度为 1。哈希函数返回 1 的 LSB 为 10000，即 0。因此，映射了 16 到`id = 0`的目录。
 
-    [![](img/9c1dccdee6a007cf753e0beacf018aa6.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190803221035/hash23.png)
+    ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803221035/hash23.png)
 
 *   **插入 4 和 6**：
 
     4（100）和 6（110）的 LSB 均为 0。 因此，它们的哈希如下：
 
-    [![](img/68a0c8d54271ba2593e36b7ee7a07292.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190803221037/hash32.png)
+    ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803221037/hash32.png)
 
 *   **插入 22**：22 的二进制形式是 10110。 其 LSB 为 0。目录 0 指向的存储桶已满。 因此，发生溢出。
 
-    [![](img/c989240e80a05da8a43686c4674ca027.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190803221039/hash42.png)
+    ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803221039/hash42.png)
 
 *   As directed by **Step 7-Case 1**, Since Local Depth = Global Depth, the bucket splits and directory expansion takes place. Also, rehashing of numbers present in the overflowing bucket takes place after the split. And, since the global depth is incremented by 1, now,the global depth is 2\. Hence, 16,4,6,22 are now rehashed w.r.t 2 LSBs.[ 16(100`00`),4(1`00`),6(1`10`),22(101`10`) ]
 
-    [![](img/17303cc35bb9aa9d097c297b0eaa7810.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190803221040/hash52.png)
+    ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803221040/hash52.png)
 
 *   请注意，下溢的水桶未受影响。 但是，由于目录数量增加了一倍，因此我们现在有 2 个目录 01 和 11 指向同一个存储桶。 这是因为存储区的本地深度保持为 1。并且，任何一个本地深度小于全局深度的存储区都由多个目录指向。
 
 *   **插入 24 和 10**：可以基于 ID 为 00 和 10 的目录对 24（11000）和 10（1010）进行哈希。 无溢出条件。
 
-    [![](img/b37f22037b666aa95ac5bce4934878c4.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190803221042/hash62.png)
+    ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803221042/hash62.png)
 
 *   **插入 31，7，9**：所有这些元素（31（11111），7（111），9（1001））的 LSB 中包含 01 或 11。 因此，它们映射到 01 和 11 所指向的存储桶上。在这里，我们不会遇到任何溢出情况。
 
-    [![](img/5e2c6187b1860b6e6021ebf34e7c1a39.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190803222615/hash73.png)
+    ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803222615/hash73.png)
 
 *   **插入 20**：插入数据元素 20（10100）将再次引起溢出问题。
 
-    [![](img/c6b5e96311ecbd03187e2642caea978c.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190803221043/hash7.12.png)
+    ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803221043/hash7.12.png)
 
 *   20 插入由 00 指向的存储桶中。按照**步骤 7 - 情况 1** 的指示，由于存储桶的**局部深度等于全局深度**，因此发生了目录扩展（加倍） 以及铲斗劈裂。 溢出的存储桶中存在的元素将使用新的全局深度进行重新填充。 现在，新的哈希表如下所示：
 
-    [![](img/08ca4c23e0121dfa17d855968f5ac128.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190803104120/hash81.png)
+    ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803104120/hash81.png)
 
 *   **插入 26**：全局深度为 3。因此，考虑 3 个 LSB 为 26（11010）。 因此，26 最适合目录 010 指出的存储桶。
 
-    [![](img/827d3969ab200e708842a109b293f928.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190803222301/hash93.png)
+    ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803222301/hash93.png)
 
 *   The bucket overflows, and, as directed by **Step 7-Case 2,** since the **local depth of bucket < Global depth (2<3)**, directories are not doubled but, only the bucket is split and elements are rehashed.
 
     Finally, the output of hashing the given list of numbers is obtained.
 
-    [![](img/b9ab5d0516fa4d713d7093504b5de490.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190803104123/hash101.png)
+    ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803104123/hash101.png)
 
 *   **这样就完成了 11 个数字的哈希**。
 

@@ -8,7 +8,7 @@
 
 数组是存储相同数据类型的项的最简单的数据结构。 数组的基本应用可以以表格格式存储数据。 例如，如果我们希望将联系人存储在手机上，则该软件将简单地将所有联系人放置在一个数组中。
 
-[![](img/aecc7cecd97599c4f58ec93fd3ba4c42.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190627130914/array-21.png)
+![](https://media.geeksforgeeks.org/wp-content/uploads/20190627130914/array-21.png)
 
 数组的其他一些应用是：
 
@@ -24,7 +24,7 @@
 
 [链表](http://www.geeksforgeeks.org/data-structures/linked-list/)是一种序列数据结构，它通过链接连接称为节点的元素。
 
-[![](img/47c9e3152ed6dac97adcc58d66590220.png)](https://contribute.geeksforgeeks.org/wp-content/uploads/singly-linkedlist.png)
+![](https://contribute.geeksforgeeks.org/wp-content/uploads/singly-linkedlist.png)
 
 链表的其他一些应用程序是：
 
@@ -40,7 +40,7 @@
 
 栈是一种使用 [LIFO 顺序](https://www.geeksforgeeks.org/lifo-last-in-first-out-approach-in-programming/)的数据结构。
 
-[![](img/ce0e58b227d8c4b90b20487151a9506a.png)](https://contribute.geeksforgeeks.org/wp-content/uploads/geek-stack.png)
+![](https://contribute.geeksforgeeks.org/wp-content/uploads/geek-stack.png)
 
 栈的一些应用程序是：
 
@@ -56,7 +56,7 @@
 
 队列是使用 [FIFO 顺序](https://www.geeksforgeeks.org/fifo-first-in-first-out-approach-in-programming/)的数据结构。
 
-[![](img/1d00087d4dc5bcbe1d9af8ee6fd4ba0c.png)](https://contribute.geeksforgeeks.org/wp-content/uploads/geek-queue.png)
+![](https://contribute.geeksforgeeks.org/wp-content/uploads/geek-queue.png)
 
 队列的一些应用程序是：
 
@@ -70,7 +70,7 @@
 
 [图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)是一种数据结构，其中数据存储在互连的顶点（节点）和边（路径）的集合中。
 
-[![](img/ca37007d5412dfc836c51211fe3a1647.png)](https://contribute.geeksforgeeks.org/wp-content/uploads/undirectedgraph.png)
+![](https://contribute.geeksforgeeks.org/wp-content/uploads/undirectedgraph.png)
 
 图的一些应用是：
 
@@ -86,7 +86,7 @@
 
 树是具有单个根节点的层次结构。
 
-[![](img/bcdff3e495037a6563c4752e61d444c7.png)](https://contribute.geeksforgeeks.org/wp-content/uploads/binary-tree-to-DLL.png)
+![](https://contribute.geeksforgeeks.org/wp-content/uploads/binary-tree-to-DLL.png)
 
 树的一些应用是：
 
@@ -102,7 +102,7 @@
 
 哈希表以键值对的形式存储数据。 它仅存储具有关联的键的数据。 使用哈希表时，插入和搜索操作易于管理。
 
-[![](img/40d018ac9eb9690b6bfd26cea6906fb8.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200609180838/HashingDataStructure-min.png)
+![](https://media.geeksforgeeks.org/wp-content/uploads/20200609180838/HashingDataStructure-min.png)
 
 哈希表的一些应用程序是：
 
@@ -118,7 +118,7 @@
 
 堆是二叉树的一种特殊情况，其中将父节点与其子节点的值进行比较，并对其进行相应排列。
 
-[![](img/37ad055fde79aba00acf187b722aaec7.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200609181239/MinHeapAndMaxHeap.png)
+![](https://media.geeksforgeeks.org/wp-content/uploads/20200609181239/MinHeapAndMaxHeap.png)
 
 堆的一些应用程序是：
 
@@ -134,7 +134,7 @@
 
 矩阵是元素的列和行的有序集合。 必须将矩阵的元素括在方括号内。
 
-[![](img/2c6fdbd787776d952d1d7ccd75e135f0.png)](https://contribute.geeksforgeeks.org/wp-content/uploads/matrix-9.png)
+![](https://contribute.geeksforgeeks.org/wp-content/uploads/matrix-9.png)
 
 矩阵的一些应用是：
 

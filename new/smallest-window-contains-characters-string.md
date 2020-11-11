@@ -161,7 +161,7 @@ the distinct characters of given string.
 
     If in the present window, no more characters can be deleted then we start increasing the size of the window using the **end** until all the distinct characters present in the string are also there in the window. Finally, find the minimum size of each window.
 
-    [![](img/8d89dd2f1f7ac2f866276591e81e1222.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200408143729/Sliding-window-simulation2.png)
+    ![](https://media.geeksforgeeks.org/wp-content/uploads/20200408143729/Sliding-window-simulation2.png)
 
 *   **算法**：
 

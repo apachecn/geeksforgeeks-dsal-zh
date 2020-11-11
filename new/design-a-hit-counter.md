@@ -213,7 +213,7 @@ return res;
 
 https://aonecode.com/getArticle/211
 
-[![design-pattern-img](img/14db468c0f00e6c64bfe591457d1b437.png)](https://practice.geeksforgeeks.org/courses/design-patterns-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_ooddpl)
+![design-pattern-img](https://practice.geeksforgeeks.org/courses/design-patterns-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_ooddpl)
 
 * * *
 

@@ -37,7 +37,7 @@ If (hash(x) + 2) % S is also full, then we try (hash(x) + 3) % S
 
 让我们将一个简单的哈希函数视为`key mod 7`，并将键序列设为 50、700、76、85、92、73、101。
 
-[![openAddressing](img/f5adc14136054ed4c92caa705dde91ad.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2015/08/openAddressing1.png)
+![openAddressing](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2015/08/openAddressing1.png)
 
 **线性探测中的挑战**：
 

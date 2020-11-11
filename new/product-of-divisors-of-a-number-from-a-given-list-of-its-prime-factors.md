@@ -1,4 +1,4 @@
-# 从给定的主要因子列表中得出的数的除数
+# 从给定的质因子列表中得出的数的除数
 
 > 原文：[https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/](https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/)
 
@@ -26,7 +26,7 @@
 
 **朴素的方法**：
 
-从其主要因子列表生成数字`N`，然后以`O(√n)`计算复杂度找到其所有除数，并继续计算其乘积。 打印获得的最终产品。
+从其质因子列表生成数字`N`，然后以`O(√n)`计算复杂度找到其所有除数，并继续计算其乘积。 打印获得的最终产品。
 
 **时间复杂度**：`O(N ^ (3/2))`
 

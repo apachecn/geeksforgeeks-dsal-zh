@@ -36,7 +36,7 @@
 > 
 > 边 4 出现在路径`{(1, 5), (2, 5), (3, 5), (4, 5)}`中。 因此，边的频率为 4。
 
-**朴素的方法**：最简单的方法是从给定图的每个节点生成所有可能的路径，并通过 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 存储在这些路径中出现的边数。 最后，打印每个边的频率。
+**朴素的方法**：最简单的方法是从给定图的每个节点生成所有可能的路径，并通过[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)存储在这些路径中出现的边数。 最后，打印每个边的频率。
 
 **时间复杂度**：`O(N ^ 2)`
 
@@ -44,7 +44,7 @@
 
 **有效方法**：为了优化上述方法，需要进行以下观察：
 
-> [![](img/7a6be6b76c27e8846d4210613617bf7e.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200824055300/ApproachGraph.jpg)
+> ![](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200824055300/ApproachGraph.jpg)
 > 
 > **绿色边**将出现在**所有路径**中，这些路径将左侧子树的任何顶点连接到右侧子树的任何顶点。
 > 因此，发生边的路径数等于两个子树中节点数的乘积`= 5 * 3 = 15`。
