@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/length-of-longest-common-prefix-possible-by-rearranging-strings-in-a-given-array/](https://www.geeksforgeeks.org/length-of-longest-common-prefix-possible-by-rearranging-strings-in-a-given-array/)
 
-给定[字符串](https://www.geeksforgeeks.org/string-data-structure/)`arr[]`的[数组](https://www.geeksforgeeks.org/array-data-structure/)，任务是通过重新排列以下字符来找到最长公共前缀的[长度 给定数组的每个字符串。](https://www.geeksforgeeks.org/longest-common-prefix-using-sorting/)
+给定[字符串](https://www.geeksforgeeks.org/string-data-structure/)`arr[]`的[数组](https://www.geeksforgeeks.org/array-data-structure/)，任务是通过重新排列以下字符来找到给定数组的每个字符串的[最长公共前缀的长度](https://www.geeksforgeeks.org/longest-common-prefix-using-sorting/)。
 
 **示例**：
 
@@ -22,7 +22,7 @@
 >
 > 因此，给定数组的所有字符串的最长公共前缀是长度等于 2 的`"df"`。
 
-**朴素的方法**：解决此问题的最简单方法是[生成给定数组的每个字符串的所有可能排列](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)，并找到所有字符串中最长的[通用前缀](https://www.geeksforgeeks.org/longest-common-prefix-using-binary-search/)。 最后，打印最长的公共前缀的长度。
+**朴素的方法**：解决此问题的最简单方法是[生成给定数组的每个字符串的所有可能排列](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)，并找到所有字符串中最长的[公共前缀](https://www.geeksforgeeks.org/longest-common-prefix-using-binary-search/)。 最后，打印最长的公共前缀的长度。
 
 ***时间复杂度**：`O(N * log M * (M!) ^ N)`
 

@@ -30,7 +30,7 @@
 >
 > 现在，`"aaaaadiklmrs"`是`B`在字典上的最小排列，其中包含`A`的所有子串。
 
-**朴素的方法**：最简单的方法是[生成字符串 **B**](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/) 的所有可能排列，然后从所有这些排列中，从字典上找到包含所有子串的最小排列`A`的组成。
+**朴素的方法**：最简单的方法是[生成字符串`B`的所有可能排列](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)，然后从所有这些排列中，从字典上找到包含所有子串的最小排列`A`的组成。
 
 **时间复杂度**：`O(N!)`
 

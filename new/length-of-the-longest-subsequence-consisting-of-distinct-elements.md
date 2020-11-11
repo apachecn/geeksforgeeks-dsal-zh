@@ -18,7 +18,7 @@
 >
 > **输出**：5
 
-**朴素的方法**：最简单的方法是[生成数组](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/)的所有子序列，并检查它是否仅由不同的元素组成。 不断更新获得的此类子序列的最大长度。 最后，打印获得的最大长度。
+**朴素的方法**：最简单的方法是[生成数组的所有子序列](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/)，并检查它是否仅由不同的元素组成。 不断更新获得的此类子序列的最大长度。 最后，打印获得的最大长度。
 
 **时间复杂度**：`O(2 ^ N)`
 
@@ -26,7 +26,7 @@
 
 **高效方法**：仅包含不同元素的最长子序列的长度将等于数组中不同元素的数量。 请按照以下步骤解决问题：
 
-1.  [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)继续在[哈希集](http://www.geeksforgeeks.org/hashset-in-java/)中插入遇到的元素。
+1.  [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，继续在[哈希集](http://www.geeksforgeeks.org/hashset-in-java/)中插入遇到的元素。
 
 2.  由于`HashSet`仅包含唯一元素，因此在完成遍历数组后，将`HashSet`的[大小](https://www.geeksforgeeks.org/hashset-size-method-in-java/)打印为所需答案。
 

@@ -18,7 +18,7 @@
 >
 > **说明**：仅可能的子数组为`{3, 4, 5, 6, 6, 7, 8, 1, 2 }`。
 
-**朴素的方法**：解决问题的最简单方法是[从给定数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)生成所有子数组，并使用 [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) 检查它是否包含任何重复项。 查找满足条件的最长子数组。
+**朴素的方法**：解决问题的最简单方法是[从给定数组生成所有子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并使用[`HashSet`](http://www.geeksforgeeks.org/hashset-in-java/)x检查它是否包含任何重复项。 查找满足条件的最长子数组。
 
  ***时间复杂度**：`O(N ^ 3 logN)`
 

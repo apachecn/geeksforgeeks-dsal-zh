@@ -24,7 +24,7 @@
 
 *   现在，[遍历字符串数组](https://www.geeksforgeeks.org/iterating-arrays-java/)，并检查在集合中是否存在相反的内容。
 
-*   如果发现是正确的，则将其中一个字符串插入`left_ans`，将另一个字符串插入`right_ans`和[，从集合中擦除两个字符串。 避免重复。](https://www.geeksforgeeks.org/unordered_set-erase-function-in-c-stl/)
+*   如果发现是正确的，则将其中一个字符串插入`left_ans`，将另一个字符串插入`right_ans`，[从集合中删除两个字符串](https://www.geeksforgeeks.org/unordered_set-erase-function-in-c-stl/)。 避免重复。
 
 *   [如果字符串是回文](https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/)，并且在[集合](https://www.geeksforgeeks.org/set-in-java/)中不存在该字符串对，则需要将该字符串附加到结果字符串的中间。
 

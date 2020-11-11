@@ -40,7 +40,7 @@
 
 *   初始化一个数组，例如说`hash[K]`，以存储`arr[i] % K`的频率。
 
-*   [遍历`hash[]`数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)和[在`hash[]`数组](https://www.geeksforgeeks.org/c-program-find-largest-element-array/)中找到最大元素。
+*   [遍历`hash[]`数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)和[在`hash[]`数组中找到最大元素](https://www.geeksforgeeks.org/c-program-find-largest-element-array/)。
 
 *   最后，打印`hash[]`数组的最大元素。
 

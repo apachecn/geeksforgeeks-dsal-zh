@@ -24,7 +24,7 @@ The subarray is {4, -1, -2, 1, 5}
 
 1.  找到[最大和连续子数组](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)。 令该和为`maxSum`。
 
-2.  找到总和等于`maxSum`的最长子数组的长度。 请参阅此帖子的[。](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
+2.  找到总和等于`maxSum`的最长子数组的长度。 请参阅[此帖子](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)。
 
 ## C++
 

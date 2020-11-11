@@ -22,9 +22,9 @@
 
 **方法**：
 
-对于按`10 ^ 6`顺序排列的数组元素，我们在[本文的](https://www.geeksforgeeks.org/maximum-no-of-contiguous-prime-numbers-in-an-array/)[中讨论了一种方法。
+对于按`10 ^ 6`顺序排列的数组元素，我们在[本文](https://www.geeksforgeeks.org/maximum-no-of-contiguous-prime-numbers-in-an-array/)中讨论了一种方法。
 
-对于按`10 ^ 9`顺序排列的数组元素，想法是使用](https://www.geeksforgeeks.org/maximum-no-of-contiguous-prime-numbers-in-an-array/)[分段筛](https://www.geeksforgeeks.org/segmented-sieve/)查找[质数](https://www.geeksforgeeks.org/prime-numbers/)值最高为`10 ^ 9`。
+对于按`10 ^ 9`顺序排列的数组元素，想法是使用[分段筛子](https://www.geeksforgeeks.org/segmented-sieve/)查找[值最高为`10 ^ 9`的质数](https://www.geeksforgeeks.org/prime-numbers/)。
 
 **步骤**：
 
