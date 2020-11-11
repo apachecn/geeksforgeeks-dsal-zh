@@ -34,7 +34,7 @@
 
 *   `elem < K`：将元素更改为-1
 
-现在，[计算所有数组元素](https://www.geeksforgeeks.org/program-find-sum-elements-given-array/)的总和，并将其存储在变量中，例如`total_sum`。 现在，total_sum 可以具有三个可能的值范围：
+现在，[计算所有数组元素的总和](https://www.geeksforgeeks.org/program-find-sum-elements-given-array/)，并将其存储在变量中，例如`total_sum`。 现在，total_sum 可以具有三个可能的值范围：
 
 *   如果`total_sum = 0`：所有 1 都被 -1 抵消。 因此，已经存在相等数量的`K`元素。 不需要删除操作。 因此，**打印 0** 作为所需答案。
 

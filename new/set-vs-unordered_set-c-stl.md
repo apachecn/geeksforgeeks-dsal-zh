@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/set-vs-unordered_set-c-stl/](https://www.geeksforgeeks.org/set-vs-unordered_set-c-stl/)
 
-先决条件：[C++ 中的`set`](https://www.geeksforgeeks.org/set-in-cpp-stl/)，[ C++ 中的`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
+先决条件：[C++ 中的`set`](https://www.geeksforgeeks.org/set-in-cpp-stl/)，[C++ 中的`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
 
 **差异**：
 

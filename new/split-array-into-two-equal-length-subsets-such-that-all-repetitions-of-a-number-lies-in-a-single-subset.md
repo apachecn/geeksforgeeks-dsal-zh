@@ -20,7 +20,7 @@
 
 **辅助空间**：`O(n)`
 
-**有效方法**：可以通过[将给定数组](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的所有元素的频率存储在数组`freq[]`中来优化上述方法。 为了将元素分为两个相等的集合，每个集合中必须存在`N / 2`个元素。 因此，要将给定数组`arr[]`分为`2`个相等的部分，`freq[]`中必须有一些整数子集 总和为`N / 2`。 请按照以下步骤解决问题：
+**有效方法**：可以通过将[给定数组](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的所有元素的频率存储在数组`freq[]`中来优化上述方法。 为了将元素分为两个相等的集合，每个集合中必须存在`N / 2`个元素。 因此，要将给定数组`arr[]`分为`2`个相等的部分，`freq[]`中必须有一些整数子集 总和为`N / 2`。 请按照以下步骤解决问题：
 
 1.  将每个元素的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) `M`中。
 

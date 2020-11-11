@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/](https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/)
 
-给定大小为`N`的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，对于每个数组索引，任务是找到[最小的丢失的非负整数](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/) ]直到给定数组的索引。
+给定大小为`N`的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，对于每个数组索引，任务是找到直到给定数组的索引的[缺失的最小的非负整数](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/)。
 
 **示例**：
 
@@ -19,7 +19,7 @@
 
 **方法**：可以使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)解决此问题。 请按照以下步骤解决问题：
 
-*   初始化一个变量，例如`smNonNeg`，以在给定数组的起始索引和当前索引之间存储[最小丢失的非负整数](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/)。
+*   初始化一个变量，例如`smNonNeg`，以在给定数组的起始索引和当前索引之间存储[缺失的最小非负整数](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/)。
 
 *   初始化一个数组，例如说`hash[N]`，以检查在起始索引和当前索引之间是否存在`smNonNeg`。
 

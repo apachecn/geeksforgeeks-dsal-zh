@@ -21,7 +21,7 @@
 
 **辅助空间**：`O(1)`
 
-**有效方法**：可以使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)技术和 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 进一步优化上述方法。 请按照以下步骤解决问题：
+**有效方法**：可以使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)技术和[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)进一步优化上述方法。 请按照以下步骤解决问题：
 
 1.  计算每个索引的前缀总和，并将其（索引，前缀总和）存储为映射中的键值对。
 

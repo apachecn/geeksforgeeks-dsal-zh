@@ -26,7 +26,7 @@ Output: 2 2 2 2 1 1 3 3 4 4 5 6 7
 
 [按频率对元素进行排序 | 系列 1](https://www.geeksforgeeks.org/sort-elements-by-frequency/)
 
-[按频率对元素进行排序| Set 2](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-2/)
+[按频率对元素进行排序 | 系列 2](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-2/)
 
 [按频率对数组元素进行排序 | 系列 3（使用 STL）](https://www.geeksforgeeks.org/sorting-array-elements-frequency-set-3-using-stl/)
 
@@ -44,7 +44,7 @@ Output: 2 2 2 2 1 1 3 3 4 4 5 6 7
 
 *   通过使用比较器接口，比较给定列表中元素的频率。
 
-*   使用此比较器可以通过实现 [Collections.sort（）](https://www.geeksforgeeks.org/collections-sort-java-examples/)方法对列表进行排序。
+*   使用此比较器可以通过实现[`Collections.sort()`](https://www.geeksforgeeks.org/collections-sort-java-examples/)方法对列表进行排序。
 
 *   打印排序列表。
 

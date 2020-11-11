@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/](https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/)
 
-给定[数组](https://www.geeksforgeeks.org/array-data-structure/)，`arr[]`的大小为`N`，任务是[将数组](https://www.geeksforgeeks.org/split-array-two-equal-sum-subarrays/)拆分为最大数量 [子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，这样[的第一个和最后一个出现的](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)，所有不同的数组元素都位于单个子数组中。
+给定[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`的大小为`N`，任务是将[数组](https://www.geeksforgeeks.org/split-array-two-equal-sum-subarrays/)拆分为最大数量的[子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，这样所有不同的数组元素的[第一个和最后一个出现](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)都位于单个子数组中。
 
 **示例**：
 

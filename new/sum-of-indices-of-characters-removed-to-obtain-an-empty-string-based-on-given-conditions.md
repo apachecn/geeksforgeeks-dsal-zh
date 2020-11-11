@@ -40,11 +40,11 @@
 
 **辅助空间**：`O(n)`*
 
-**高效方法**：可以使用[分段树](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)和[哈希优化上述方法。](https://www.geeksforgeeks.org/hashing-data-structure/) 请按照以下步骤解决问题：
+**高效方法**：可以使用[分段树](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)和[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)优化上述方法。请按照以下步骤解决问题：
 
 *   可以观察到，仅删除字符右侧的索引受到影响，也就是说，它们需要移动一个位置。
 
-*   将字符的索引存储在 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 中
+*   将字符的索引存储在[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中
 
 *   处理`HashMap`中的字符。
 

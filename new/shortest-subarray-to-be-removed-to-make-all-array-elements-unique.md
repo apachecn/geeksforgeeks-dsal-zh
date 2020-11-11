@@ -38,7 +38,7 @@
 
 *   我们可以使用[滑动窗口技术](http://www.geeksforgeeks.org/window-sliding-technique/)来做到这一点。
 
-*   使用[哈希映射](https://www.geeksforgeeks.org/hashing-data-structure/)将元素的[频率存储在前缀和后缀中，向前移动窗口时，前缀的最后一个元素的递增频率和后缀的第一个元素的递减频率 。](https://www.geeksforgeeks.org/count-frequencies-elements-array-o1-extra-space-time/)
+*   使用[哈希映射](https://www.geeksforgeeks.org/hashing-data-structure/)将元素的[频率](https://www.geeksforgeeks.org/count-frequencies-elements-array-o1-extra-space-time/)存储在前缀和后缀中，向前移动窗口时，前缀的最后一个元素的递增频率和后缀的第一个元素的递减频率 。
 
 下面是上述方法的实现：
 

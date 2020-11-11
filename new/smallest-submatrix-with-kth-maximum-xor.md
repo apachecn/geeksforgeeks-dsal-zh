@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/smallest-submatrix-with-kth-maximum-xor/](https://www.geeksforgeeks.org/smallest-submatrix-with-kth-maximum-xor/)
 
-给定尺寸为`N×M`的[矩阵](https://www.geeksforgeeks.org/matrix/)`m[][]`和整数`K`， 对于矩阵的每个索引计算`XOR(i, j)`，它等于从索引`(1, 1)`到`(i, j)`的子矩阵所有元素的[按位 XOR](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/) 。 任务是找到具有第`K`大`XOR(i, j)`值的子矩阵。 如果存在多个此类子矩阵，则打印最小的子矩阵。
+给定尺寸为`N×M`的[矩阵](https://www.geeksforgeeks.org/matrix/)`m[][]`和整数`K`， 对于矩阵的每个索引计算`XOR(i, j)`，它等于从索引`(1, 1)`到`(i, j)`的子矩阵所有元素的[按位 XOR](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/)。 任务是找到具有第`K`大`XOR(i, j)`值的子矩阵。 如果存在多个此类子矩阵，则打印最小的子矩阵。
 
 **注意**：矩阵的起始索引是`(1, 1)`。
 

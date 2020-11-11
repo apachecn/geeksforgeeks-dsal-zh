@@ -50,7 +50,7 @@
 
 3.  如果它等于`-1`，则遍历字符串`S`并将当前字符的第一次出现更新为当前索引。
 
-4.  [查找每个字符](https://www.geeksforgeeks.org/find-last-index-character-string/)的最后一次出现并将其存储在数组`last[]`中。
+4.  [查找每个字符最后一次出现](https://www.geeksforgeeks.org/find-last-index-character-string/)的并将其存储在数组`last[]`中。
 
 5.  [遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，如果两个索引都具有非负值，则更新在每个对应的索引处具有最小差异的索引。
 
