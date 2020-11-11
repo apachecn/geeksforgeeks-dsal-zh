@@ -23,7 +23,7 @@
 
 求`N!`中`P`的幂，执行以下操作：
 
-1.  通过使用[本文章中讨论的方法](https://www.geeksforgeeks.org/print-all-prime-factors-and-their-powers/)，找到所有`P`的[质因数](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)及其频率。 将[素因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)及其频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
+1.  通过使用[本文章中讨论的方法](https://www.geeksforgeeks.org/print-all-prime-factors-and-their-powers/)，找到所有`P`的[质因数](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)及其频率。 将[质因数](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)及其频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
 
 2.  在`N!`的因式分解中找到`P`的每个质因数的幂，[通过使用本文中讨论的方法](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)。
 

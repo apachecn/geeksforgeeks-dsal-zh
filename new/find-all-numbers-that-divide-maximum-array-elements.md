@@ -18,7 +18,7 @@
 
 **方法**：
 
-*   使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)存储每个数组元素的所有因子的计数。 我们可以[在`O(sqrt N)`中找出](https://www.geeksforgeeks.org/find-divisors-natural-number-set-1/)的所有因子。
+*   使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)存储每个数组元素的所有因子的计数。 我们可以[在`O(sqrt N)`中](https://www.geeksforgeeks.org/find-divisors-natural-number-set-1/)找出所有因子。
 
 *   遍历所有因素，并找到除以数字的最大数组元素的数量。
 

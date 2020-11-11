@@ -351,7 +351,7 @@ int main()
 
 我们可以使用[哈希映射](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)并将所有给定的字符串插入其中。 对于每个查询字符串，我们只需要在哈希映射中进行查找即可。
 
-请参考[字典的数据结构](https://www.geeksforgeeks.org/data-structure-dictionary-spell-checker/)，以比较基于哈希和基于 Trie 的解决方案。
+请参考[字典数据结构](https://www.geeksforgeeks.org/data-structure-dictionary-spell-checker/)，以比较基于哈希和基于 Trie 的解决方案。
 
 本文由 **Pranav** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，您还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

@@ -303,11 +303,11 @@ S1 is lexicographically smaller than S2 iff
   a1 = a2 AND b1 = b2 AND c1 = c2 AND d1 < d2 
 ```
 
-锻炼方法请参见[和](http://qa.geeksforgeeks.org/3921/find-index-values-that-satisfy-where-integers-values-array)。
+练习的方法请参见[这里](http://qa.geeksforgeeks.org/3921/find-index-values-that-satisfy-where-integers-values-array)。
 
 **相关文章**：
 
-[查找满足`ab = cd`的所有对`(a, b)`和`(c, d)`对](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
+[查找满足`ab = cd`的所有`(a, b)`和`(c, d)`对](https://www.geeksforgeeks.org/find-pairs-ab-cd-array-satisfy-ab-cd/)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 

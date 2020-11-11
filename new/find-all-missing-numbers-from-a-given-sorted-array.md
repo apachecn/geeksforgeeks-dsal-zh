@@ -22,7 +22,7 @@
 >
 > **输出**：`3 5`
 
-**朴素的方法**：朴素的想法是遍历连续对元素之间的[差异，并打印该范围内的所有数字（如果差异非零）。 步骤如下：](https://www.geeksforgeeks.org/calculate-the-difference-between-consecutive-pair-of-elements-of-a-vector-in-r-programming-diff-function/)
+**朴素的方法**：朴素的想法是遍历连续对元素之间的[差异](https://www.geeksforgeeks.org/calculate-the-difference-between-consecutive-pair-of-elements-of-a-vector-in-r-programming-diff-function/)，并打印该范围内的所有数字（如果差异非零）。 步骤如下：
 
 1.  初始化变量`diff`，该变量等于`arr[0] – 0`。
 
@@ -245,7 +245,7 @@ static void Main()
 
 以下是步骤：
 
-1.  初始化一个布尔数组`b[]`，其大小为零，等于数组的[最大元素。](https://www.geeksforgeeks.org/c-program-find-largest-element-array/)
+1.  初始化一个布尔数组`b[]`，其元素为零，大小等于数组的[最大元素](https://www.geeksforgeeks.org/c-program-find-largest-element-array/)。
 
 2.  [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并为给定数组中的每个元素标记，将索引在数组`b[]`中设为`true`。
 

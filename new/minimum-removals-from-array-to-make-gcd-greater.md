@@ -26,7 +26,7 @@
 
 3.  使用质数分解的多重查询方法，找到`O(log n)`中每个数字的质数分解。 该方法可以在此处读取[。](https://www.geeksforgeeks.org/prime-factorization-using-sieve-olog-n-multiple-queries/)
 
-4.  将所有素因子插入集合中，以删除使用此方法获得的重复项。
+4.  将所有质因数插入集合中，以删除使用此方法获得的重复项。
 
 5.  使用哈希映射，计算每个第`i`个元素中质因数的频率。
 

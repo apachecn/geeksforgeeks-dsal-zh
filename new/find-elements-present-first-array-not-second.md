@@ -237,7 +237,7 @@ findMissing($a, $b, $n, $m);
 
 **方法 2（使用哈希）**
 
-在此方法中，我们将第二个数组的所有元素存储在哈希表中（ [unordered_set](https://www.geeksforgeeks.org/unorderd_set-stl-uses/) ）。 逐一检查第一个数组的所有元素，并打印散列表中不存在的所有那些元素。
+在此方法中，我们将第二个数组的所有元素存储在哈希表中（[`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)）。 逐一检查第一个数组的所有元素，并打印散列表中不存在的所有那些元素。
 
 ## C++
 

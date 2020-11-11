@@ -22,9 +22,9 @@ Output : NO
 
 我们在以下两组中讨论了不同的解决方案。
 
-[找出四个总和为给定值的元素 | 系列 1（`O(n ^ 3)`的解）](https://www.geeksforgeeks.org/find-four-numbers-with-sum-equal-to-given-sum/)
+[找出总和为给定值的四个元素 | 系列 1（`O(n ^ 3)`的解）](https://www.geeksforgeeks.org/find-four-numbers-with-sum-equal-to-given-sum/)
 
-[找出四个总和为给定值的元素 | 系列 2（`O(n ^ 2 Logn)`解决方案）](https://www.geeksforgeeks.org/find-four-elements-that-sum-to-a-given-value-set-2/)
+[找出总和为给定值的四个元素 | 系列 2（`O(n ^ 2 Logn)`解决方案）](https://www.geeksforgeeks.org/find-four-elements-that-sum-to-a-given-value-set-2/)
 
 在这篇文章中，讨论了一种优化的解决方案，该解决方案平均可以在`O(N ^ 2)`中工作。
 

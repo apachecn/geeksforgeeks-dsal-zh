@@ -315,11 +315,11 @@ class GFG
 
 [打印给定整数数组的所有不同元素](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)
 
-[查找`O(n)`时间和`O(1)`多余空间中的重复项 | 系列 1](https://www.geeksforgeeks.org/find-duplicates-in-on-time-and-constant-extra-space/)
+[在`O(n)`时间和`O(1)`多余空间中查找重复项 | 系列 1](https://www.geeksforgeeks.org/find-duplicates-in-on-time-and-constant-extra-space/)
 
-[在`O(n)`中的数组中重复并通过使用`O(1)`多余空间| Set-2](https://www.geeksforgeeks.org/duplicates-array-using-o1-extra-space-set-2/)
+[在`O(n)`时间和`O(1)`多余空间中重复数组 | 系列 2](https://www.geeksforgeeks.org/duplicates-array-using-o1-extra-space-set-2/)
 
-[打印输入字符串](https://www.geeksforgeeks.org/print-all-the-duplicates-in-the-input-string/)中的所有重复项
+[打印输入字符串中的所有重复项](https://www.geeksforgeeks.org/print-all-the-duplicates-in-the-input-string/)
 
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

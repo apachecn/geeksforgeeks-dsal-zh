@@ -46,7 +46,7 @@
 
 **有效方法**：
 
-可以使用 [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) 解决问题。 请按照以下步骤解决问题：
+可以使用[`HashSet`](http://www.geeksforgeeks.org/hashset-in-java/)解决问题。 请按照以下步骤解决问题：
 
 *   将元素存储在`HashSet`中的数组中。
 

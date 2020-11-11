@@ -89,7 +89,7 @@ return 0;
 
 **进一步优化**：
 
-上述解决方案需要两次遍历链表。 如果我们有很多重复元素，则可以通过将位置也存储在哈希表中来保存一个遍历。 请参考[的最后一种方法。给定字符串，请查找其第一个非重复字符](http://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)。
+上述解决方案需要两次遍历链表。 如果我们有很多重复元素，则可以通过将位置也存储在哈希表中来保存一个遍历。 请参考[“给定字符串，请查找其第一个非重复字符”](http://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)的最后一种方法。
 
 
 
