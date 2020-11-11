@@ -28,11 +28,11 @@
 
 **方法**：为了解决上述问题，我们知道三元组的顺序很重要，因此可能存在**不止一个相同三元组的排列**，满足点的等距偶对的条件。
 
-*   首先，我们将[计算其中具有等距点的三元组](https://www.geeksforgeeks.org/python-all-possible-permutations-of-n-lists/)的所有排列。
+*   首先，我们将[计算其中具有等距点的三元组的所有排列](https://www.geeksforgeeks.org/python-all-possible-permutations-of-n-lists/)。
 
-*   对列表中每个不同的三元组点重复相同的过程。 为了计算距离，我们将使用各个坐标之间的距离的[平方。](https://www.geeksforgeeks.org/program-distance-two-points-earth/)
+*   对列表中每个不同的三元组点重复相同的过程。 为了计算距离，我们将使用各个坐标之间的距离的[平方](https://www.geeksforgeeks.org/program-distance-two-points-earth/)。
 
-*   使用 [**哈希映射**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 存储单个三元组的各种等距点对。
+*   使用[**哈希映射**](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)存储单个三元组的各种等距点对。
 
 *   一旦我们计算了对的总数，就会计算出所需的排列。 我们对所有不同的三元组重复此过程，并将所有排列添加到结果中。
 

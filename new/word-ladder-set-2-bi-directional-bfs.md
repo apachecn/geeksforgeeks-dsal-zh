@@ -16,7 +16,7 @@
 >
 > `TOON -> POON –> POIN –> POIE –> PLIE –> PLEE –> PLEA`
 
-**方法**：可以使用标准 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 方法（如[在此处](https://www.geeksforgeeks.org/word-ladder-length-of-shortest-chain-to-reach-a-target-word/)中讨论的方法）解决，但可以通过使用双向 BFS 来提高其性能。
+**方法**：可以使用标准 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 方法（如[在此处](https://www.geeksforgeeks.org/word-ladder-length-of-shortest-chain-to-reach-a-target-word/)讨论的方法）解决，但可以通过使用双向 BFS 来提高其性能。
 
 双向 BFS 不会降低解决方案的时间复杂度，但是在许多情况下，它无疑可以优化性能。 这种方法还可以用于许多其他最短寻路问题中，在这些问题中，我们可以获得有关源节点和目标节点的足够信息。 双向 BFS 涉及的基本思想是从路径的两端开始搜索。
 

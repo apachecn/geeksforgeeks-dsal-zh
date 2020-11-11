@@ -28,7 +28,7 @@
 >
 > 合数`XOR = 6`
 
-**方法**：使用 [Eratosthenes 筛网](http://www.geeksforgeeks.org/sieve-of-eratosthenes/)生成一个布尔向量，该布尔向量达到数组中最大元素的大小，该布尔向量可用于检查数字是否为质数。
+**方法**：使用 [Eratosthenes 筛子](http://www.geeksforgeeks.org/sieve-of-eratosthenes/)生成一个布尔向量，该布尔向量达到数组中最大元素的大小，该布尔向量可用于检查数字是否为质数。
 
 现在遍历数组，并在最大堆`maxHeapPrime`中插入所有质数，并在最大堆`maxHeapNonPrime`中插入所有组合数。
 
