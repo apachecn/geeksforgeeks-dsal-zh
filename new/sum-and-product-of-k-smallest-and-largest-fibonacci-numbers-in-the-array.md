@@ -40,7 +40,7 @@
 >
 > `K`个最小斐波那契数的乘积是 195
 
-**方法**：想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契结点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)到最大值，并将其存储在[设置](https://www.geeksforgeeks.org/set-in-java/)中，以 使检查变得容易和高效（在`O(1)`时间内）。
+**方法**：想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契结点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)到最大值，并将其存储在[集合](https://www.geeksforgeeks.org/set-in-java/)中，以 使检查变得容易和高效（在`O(1)`时间内）。
 
 1.  遍历整个数组并获得列表中的最大值。
 

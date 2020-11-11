@@ -260,7 +260,7 @@ public static void Main(String[] args)
 
 **辅助空间**：`O(1)`
 
-**有效方法**：可以使用[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)和[前缀和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)技术来优化上述方法。 标记每个查询中涉及的子矩阵的边界，然后计算矩阵中涉及的运算的**前缀总和**，并相应地更新矩阵。 请按照以下步骤解决问题：
+**有效方法**：可以使用[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)和[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)技术来优化上述方法。 标记每个查询中涉及的子矩阵的边界，然后计算矩阵中涉及的运算的**前缀总和**，并相应地更新矩阵。 请按照以下步骤解决问题：
 
 *   初始化 2D 状态空间表`dp[][]`，以将翻转计数存储在矩阵的各个索引处
 

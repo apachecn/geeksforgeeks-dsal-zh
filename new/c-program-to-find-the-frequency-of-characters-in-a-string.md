@@ -31,7 +31,7 @@
 
 **方法**：请按照以下步骤解决问题：
 
-1.  初始化数组`freq[]`，[将每个字母的频率存储在给定的字符串](https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/)中。 索引`0`存储字符`'a'`的频率，索引`1`存储字符`b`，依此类推。
+1.  初始化数组`freq[]`，[将每个字母的频率存储在给定的字符串中](https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/)。 索引`0`存储字符`'a'`的频率，索引`1`存储字符`b`，依此类推。
 
 2.  [迭代给定的字符串`S`](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)，并通过执行`freq[S[i] – 'a'] += 1`。 如果`S[i] ='a'`，则`S[i] –'a'`等于 0，因此`'a'`的频率在数组中增加。
 

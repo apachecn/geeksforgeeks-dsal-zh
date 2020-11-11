@@ -24,7 +24,7 @@
 > 
 > 不同的绝对节点值为`{0, 1}`。
 
-**方法**：为了解决此问题，我们需要[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)或 [HashSet](https://www.geeksforgeeks.org/hashset-in-java/)来存储链表中存在的不同绝对值。 [遍历整个链表](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)并在**集合**中插入每个节点的绝对值后，**集合** 的[大小给出了 链表中存在绝对不同的绝对值。](https://www.geeksforgeeks.org/setsize-c-stl/)
+**方法**：为了解决此问题，我们需要[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)或[`HashSet`](https://www.geeksforgeeks.org/hashset-in-java/)来存储链表中存在的不同绝对值。 [遍历整个链表](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)并在**集合**中插入每个节点的绝对值后，**集合**大小给出了[链表中存在的不同的绝对值](https://www.geeksforgeeks.org/setsize-c-stl/)。
 
 下面是该方法的实现：
 

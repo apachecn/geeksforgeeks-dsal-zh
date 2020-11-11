@@ -48,7 +48,7 @@
 
 **Rabin-Karp 算法**：
 
-哈希最著名的应用之一是 Rabin-Karp 算法。 这基本上是一个字符串搜索算法，它使用哈希来查找字符串中的任何一组模式。 该算法的实际应用是检测抄袭。 要了解有关 Rabin-Karp 算法的更多信息，请浏览[。 集合 3（Rabin-Karp 算法）](https://www.geeksforgeeks.org/searching-for-patterns-set-3-rabin-karp-algorithm/)。
+哈希最著名的应用之一是 Rabin-Karp 算法。 这基本上是一个字符串搜索算法，它使用哈希来查找字符串中的任何一组模式。 该算法的实际应用是检测抄袭。 要了解有关 Rabin-Karp 算法的更多信息，请浏览[系列 3（Rabin-Karp 算法）](https://www.geeksforgeeks.org/searching-for-patterns-set-3-rabin-karp-algorithm/)。
 
 **将文件名和路径链接在一起**：
 

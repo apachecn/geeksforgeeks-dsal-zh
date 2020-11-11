@@ -18,7 +18,7 @@
 
 **方法**：请按照以下步骤解决问题：
 
-*   初始化[设置](https://www.geeksforgeeks.org/set-in-cpp-stl/)，并将给定数组中的每个字符串插入**集合**中。
+*   初始化[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)，并将给定数组中的每个字符串插入**集合**中。
 
 *   初始化两个[向量](https://www.geeksforgeeks.org/vector-in-cpp-stl/)`left_ans`和`right_ans`，以跟踪获得的[回文串](https://www.geeksforgeeks.org/string-palindrome/)。
 

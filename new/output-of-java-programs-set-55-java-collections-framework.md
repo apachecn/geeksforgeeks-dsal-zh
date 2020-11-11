@@ -103,7 +103,7 @@ System.out.print(h + " " );
 Answer: C.
 ```
 
-**说明**：[设置](https://www.geeksforgeeks.org/set-in-java/)不存储重复值。 [TreeSet](https://www.geeksforgeeks.org/treeset-in-java-with-examples/) 以排序顺序（即升序）存储数据，但是在这里，我们使用 [Collections.reverseOrder（）](https://www.geeksforgeeks.org/collections-reverseorder-java-examples/)使其明确地以降序存储数据。
+**说明**：[集合](https://www.geeksforgeeks.org/set-in-java/)不存储重复值。 [TreeSet](https://www.geeksforgeeks.org/treeset-in-java-with-examples/) 以排序顺序（即升序）存储数据，但是在这里，我们使用 [Collections.reverseOrder（）](https://www.geeksforgeeks.org/collections-reverseorder-java-examples/)使其明确地以降序存储数据。
 
 > **4\. 以下 Java 程序的输出是什么？**
 

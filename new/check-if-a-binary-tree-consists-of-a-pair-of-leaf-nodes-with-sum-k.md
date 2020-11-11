@@ -58,7 +58,7 @@
 
 **有效方法**：可以使用 [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) 优化上述方法。 请按照以下步骤解决问题：
 
-*   创建[设置](https://www.geeksforgeeks.org/set-in-cpp-stl/)以存储叶节点的值。
+*   创建[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)以存储叶节点的值。
 *   [遍历树](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)，对于每个叶子节点，检查**叶子节点的`K`值**是否存在于[无序集合](https://www.geeksforgeeks.org/unordered_set-in-cpp-stl/)中。
 *   如果发现为真，则打印所有节点值。
 *   否则，将当前节点的值存储到无序集中。

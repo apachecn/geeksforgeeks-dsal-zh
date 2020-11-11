@@ -1,10 +1,10 @@
-# C++程序，用于检查字符串是否为 Pangram
+# C++ 程序，用于检查字符串是否为全字母短句
 
 > 原文：[https://www.geeksforgeeks.org/c-program-to-check-whether-a-string-is-a-pangram-or-not/](https://www.geeksforgeeks.org/c-program-to-check-whether-a-string-is-a-pangram-or-not/)
 
 给定字符串`str`，任务是检查在 C++ 中是否使用了字符串。
 
-> [如果字符串包含所有英语字母，则该字符串为 Pangram](https://www.geeksforgeeks.org/pangram-checking/)。
+> [如果字符串包含所有英语字母，则该字符串为全字母短句](https://www.geeksforgeeks.org/pangram-checking/)。
 
 **示例**：
 
