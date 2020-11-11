@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 
-给定长度为`N`的仅包含小写字母的字符串`S`，任务是打印给定的[字符串，其异序词是回文](https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/)。
+给定长度为`N`的仅包含小写字母的字符串`S`，任务是打印给定的[字符串](https://www.geeksforgeeks.org/check-anagram-string-palindrome-not/)，其异序词是回文。
 
 **示例**：
 
@@ -23,7 +23,7 @@
 
 **辅助空间**：`O(n)`
 
-[**位掩码**](https://www.geeksforgeeks.org/bit-tricks-competitive-programming/) **方法**：想法是生成 **26 位**数字的掩码，因为`26`字符。 另外，请注意，如果某个字符串的异序词是回文，则其字符的频率必须最多为偶数。
+[**位掩码方法**](https://www.geeksforgeeks.org/bit-tricks-competitive-programming/)：想法是生成 **26 位**数字的掩码，因为`26`字符。 另外，请注意，如果某个字符串的异序词是回文，则其字符的频率必须最多为偶数。
 
 [请按照以下步骤解决问题](https://www.geeksforgeeks.org/print-the-frequency-of-each-character-in-alphabetical-order/)：
 

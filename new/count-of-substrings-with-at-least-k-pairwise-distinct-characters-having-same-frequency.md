@@ -16,7 +16,7 @@
 > **说明**：
 > 具有相同频率的 3 个成对的不同字符组成的子串为`{"abh"，"bha"，"hay"，"bhay"}`。
 
-**朴素的方法**：解决此问题的最简单方法是[生成给定字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)的所有可能的子字符串，并检查两个条件是否都满足。 如果发现是真的，请增加**计数**。 最后，打印**计数**。
+**朴素的方法**：解决此问题的最简单方法是[生成给定字符串的所有可能的子字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)，并检查两个条件是否都满足。 如果发现是真的，请增加**计数**。 最后，打印**计数**。
 
 **时间复杂度**：`O(N ^ 3)`
 

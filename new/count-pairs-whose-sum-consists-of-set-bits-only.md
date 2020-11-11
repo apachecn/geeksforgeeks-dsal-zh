@@ -320,7 +320,7 @@ public static void Main(String[] args)
 
 *   将数组`arr[]`的所有元素映射到[映射数据结构](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，其中元素是键，其频率是值。
 
-*   [遍历范围为`[0, N – 1]`的给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`arr[]`，并在嵌套循环中，从`j = 0`到`log(MAX_INTEGER)`遍历数组`setArray[]`，然后将`ans`递增`map[setArray[j] – arr[i]]`，其中`ans`存储所需对的总数。
+*   [遍历范围为`[0, N – 1]`的给定数组`arr[]`](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并在嵌套循环中，从`j = 0`到`log(MAX_INTEGER)`遍历数组`setArray[]`，然后将`ans`递增`map[setArray[j] – arr[i]]`，其中`ans`存储所需对的总数。
 
 *   由于存在重复计数，因为`(a, b)`和`(b, a)`被计数了两次。 因此，打印`ans / 2`的值以获得所需的计数。
 

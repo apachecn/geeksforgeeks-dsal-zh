@@ -26,7 +26,7 @@
 
 **方法**：
 
-*   通过遍历所有元素并找到其质因子，可以找到整行中每个质因子的整体出现次数。 我们使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)进行计数。
+*   通过遍历所有元素并找到其质因数，可以找到整行中每个质因数的整体出现次数。 我们使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)进行计数。
 
 *   令质数出现的次数为`a1, a2, …aK`。 如果我们有`K`个不同的素因子，那么答案将是：
 

@@ -661,7 +661,7 @@ Count = 2
 
 **辅助空间**：`O(1)`
 
-**方法 3（哈希）**：哈希表是使用 C++ 中的 [`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)实现的。 我们将所有第一个数组元素存储在哈希表中。 对于第二个数组的元素，我们从`x`中减去每个元素，然后在哈希表中检查结果。 如果结果存在，我们将增加**计数**。
+**方法 3（哈希）**：哈希表是使用 C++ 中的[`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)实现的。 我们将所有第一个数组元素存储在哈希表中。 对于第二个数组的元素，我们从`x`中减去每个元素，然后在哈希表中检查结果。 如果结果存在，我们将增加**计数**。
 
 ## C++
 

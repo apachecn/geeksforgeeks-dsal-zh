@@ -20,7 +20,7 @@
 >
 > **输出**：`{5, 4, 3, 2, 1}`
 
-**朴素的方法**：最简单的方法是[生成给定数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)的所有子数组，并对每个数组元素`arr[i]`计数其中的子数组数 它是最小的元素。
+**朴素的方法**：最简单的方法是[生成给定数组的所有子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并对每个数组元素`arr[i]`计数其中的子数组数 它是最小的元素。
 
 **时间复杂度**：`O(N ^ 3)`
 
@@ -38,7 +38,7 @@
 
 3.  初始化数组`boundary[]`。
 
-4.  [遍历排序后的数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`arr[]`，然后使用[二分搜索](http://www.geeksforgeeks.org/binary-search/)插入该元素的索引。 假设它插入到索引`i`，则其左边界为`boundary[i – 1]`，其右边界为`boundary[i + 1]`。
+4.  [遍历排序后的数组`arr[]`](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，然后使用[二分搜索](http://www.geeksforgeeks.org/binary-search/)插入该元素的索引。 假设它插入到索引`i`，则其左边界为`boundary[i – 1]`，其右边界为`boundary[i + 1]`。
 
 5.  现在，使用上面的公式，找到子数组的数量，并在结果数组中跟踪该计数。
 

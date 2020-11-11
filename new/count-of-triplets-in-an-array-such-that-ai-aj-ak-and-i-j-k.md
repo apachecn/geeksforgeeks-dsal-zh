@@ -32,7 +32,7 @@
 
 **有效方法**：
 
-可以使用[两个指针](https://www.geeksforgeeks.org/two-pointers-technique/)和 [HashMap](http://www.geeksforgeeks.org/java-util-hashmap-in-java/) 优化上述方法。
+可以使用[两个指针](https://www.geeksforgeeks.org/two-pointers-technique/)和[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)优化上述方法。
 
 请按照以下步骤解决问题：
 

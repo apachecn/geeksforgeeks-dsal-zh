@@ -23,7 +23,7 @@
 > **输入**：`arr[] = {1, 2, 3, 4, 5, 6}`
 > **输出**：1
 
-**方法**：使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)存储数组的每个元素的[频率，最后计数频率等于其值的所有那些元素。](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)
+**方法**：使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)存储数组的每个元素的[频率](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)，最后计数频率等于其值的所有那些元素。
 
 下面是上述方法的实现：
 

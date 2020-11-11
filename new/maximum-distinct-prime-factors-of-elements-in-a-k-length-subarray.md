@@ -1,10 +1,10 @@
-# 长度`K`子数组中元素的最大不同素因数
+# 长度`K`子数组中元素的最大不同质因数
 
 > 原文：[https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/](https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/)
 
 
 
-给定`N`个正整数的数组`arr[]`和一个整数`K`，任务是在长度为`K`的[子数组](https://www.geeksforgeeks.org/tag/subarray/)中找到最大不同素因数。
+给定`N`个正整数的数组`arr[]`和一个整数`K`，任务是在长度为`K`的[子数组](https://www.geeksforgeeks.org/tag/subarray/)中找到最大不同质因数。
 
 **示例**：
 
@@ -14,7 +14,7 @@
 >
 > **说明**：
 >
-> 长度为 3 的子数组，具有最大不同的素因数为 6、10、77，素因数为 2、3、5、7、11。
+> 长度为 3 的子数组，具有最大不同的质因数为 6、10、77，质因数为 2、3、5、7、11。
 > 
 > **输入**：`arr[] = {4, 2, 6, 10}, K = 3`
 >
@@ -22,9 +22,9 @@
 >
 > **说明**：
 >
-> 长度为 3 的子数组，其最大素因数最大为 2、6、10，素因数为 2、3、5。
+> 长度为 3 的子数组，其最大质因数最大为 2、6、10，质因数为 2、3、5。
 
-**朴素的方法**：最简单的方法是[生成长度为`K`的所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并遍历每个子数组并计算不同的[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/) 它的元素。 最后，打印为任何子数组获得的独特质数的最大数量。
+**朴素的方法**：最简单的方法是[生成长度为`K`的所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并遍历每个子数组并计算不同的[质因数](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/) 它的元素。 最后，打印为任何子数组获得的独特质数的最大数量。
 
 **时间复杂度**：`O(N ^ 2 log N)`
 
@@ -38,7 +38,7 @@
 
 3.  通过将当前元素添加到前一个子数组并删除前一个子数组的第一个元素，遍历保留`K`长度窗口的剩余数组
 
-4.  找到新添加的元素到子数组的所有质因子，并将其存储在`Map`中。 从`Map`中减去删除元素的质数因子的频率。
+4.  找到新添加的元素到子数组的所有质因数，并将其存储在`Map`中。 从`Map`中减去删除元素的质数因子的频率。
 
 5.  对整个数组完成上述操作后，打印为任何子数组获得的最大[映射大小](https://www.geeksforgeeks.org/mapsize-c-stl/)作为答案。
 

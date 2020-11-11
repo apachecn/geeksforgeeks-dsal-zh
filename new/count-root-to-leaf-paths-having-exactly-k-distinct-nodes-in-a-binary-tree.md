@@ -34,17 +34,17 @@
 >
 > 因此，答案是 2。
 
-**朴素的方法**：最简单的方法是[生成从根到叶节点](https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/)的所有可能路径，并针对每个路径检查其是否包含`K`个不同的节点或 不。 最后，打印此类路径的计数。
+**朴素的方法**：最简单的方法是[生成从根到叶节点的所有可能路径](https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/)，并针对每个路径检查其是否包含`K`个不同的节点或 不。 最后，打印此类路径的计数。
 
 **时间复杂度**：`O(N * H ^ 2)`，其中`H`表示树的高度。
 
 **辅助空间**：`O(n)`；
 
-**高效方法**：想法是使用[前置遍历](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)和[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来计算从根到当前节点的路径中的不同节点。 请按照以下步骤解决问题：
+**高效方法**：想法是使用[前序遍历](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)和[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来计算从根到当前节点的路径中的不同节点。 请按照以下步骤解决问题：
 
 *   初始化变量`distinct_nodes`为`0`，以存储从根到当前节点的不同节点的计数，而将`ans`初始化为 0，以将总的不同根存储到 具有`K`个不同节点的叶路径。
 
-*   在给定的二叉树中执行[前置遍历](http://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)，并将从根到当前节点的不同节点的计数存储在映射`M`中。
+*   在给定的二叉树中执行[前序遍历](http://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)，并将从根到当前节点的不同节点的计数存储在映射`M`中。
 
 *   每当节点首次出现在路径上时，将不同节点的数量增加`1`。
 

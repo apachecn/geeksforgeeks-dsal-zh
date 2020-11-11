@@ -143,7 +143,7 @@ HASH2_VALUE: 53C77F310EEBCBDA585E9458BC87B89853B8FA7365
 
 ### 如何创建加密哈希密码
 
-正如我们已经看到如何立即生成哈希一样，让我们​​使用`Bcrypt`来哈希密码。 不要将散列的散列算法用于散列密码。 `Bcrypt`是基于 [Blowfish Cipher](https://www.geeksforgeeks.org/blowfish-algorithm-with-examples/) 的密码哈希功能。
+正如我们已经看到如何立即生成哈希一样，让我们​​使用`Bcrypt`来哈希密码。 不要将散列的散列算法用于散列密码。 `Bcrypt`是基于 [Blowfish](https://www.geeksforgeeks.org/blowfish-algorithm-with-examples/) 加密算法的密码哈希功能。
 
 **方法**：
 

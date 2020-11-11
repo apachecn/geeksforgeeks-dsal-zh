@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/](https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/)
 
-给定由`N`个字符串组成的数组`A[]`，任务是计算在合并后形成**回文字符串**或 重新排列以形成[回文字符串](https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/)。
+给定由`N`个字符串组成的数组`A[]`，任务是计算在合并或重新排列后形成的[回文字符串](https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/)的数量。
 
 **示例**：
 
@@ -39,7 +39,7 @@
 
 **朴素的方法**：
 
-解决此问题的最简单方法是从给定数组生成所有可能的对，并将这些对合并以生成新的字符串。 对于每个合并的字符串，[都会生成字符串](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)的所有可能排列，对于每个排列，请检查其是否为回文字符串，并相应地增加计数。
+解决此问题的最简单方法是从给定数组生成所有可能的对，并将这些对合并以生成新的字符串。 对于每个合并的字符串，[都会生成字符串的所有可能排列](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)，对于每个排列，请检查其是否为回文字符串，并相应地增加计数。
 
 **时间复杂度**：`O（N ^ 2 * L! * L）`，其中`L`是字符串的最大长度。
 

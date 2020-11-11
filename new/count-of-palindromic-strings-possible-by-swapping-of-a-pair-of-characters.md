@@ -26,7 +26,7 @@
 
 **朴素的方法**：
 
-解决该问题的最简单方法是[从给定的字符串中生成所有可能的](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)个字符对，如果每对字符交换，它们是否会生成回文字符串 。 如果发现是真的，则增加`count`。 最后，打印`count`的值。
+解决该问题的最简单方法是[从给定的字符串中生成所有可能的字符对](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)，如果每对字符交换，它们是否会生成回文字符串 。 如果发现是真的，则增加`count`。 最后，打印`count`的值。
 
 **时间复杂度**：`P(N ^ 3)`
 

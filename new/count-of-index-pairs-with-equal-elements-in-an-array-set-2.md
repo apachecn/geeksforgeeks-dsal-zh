@@ -28,7 +28,7 @@
 
 对于朴素和有效的方法，请参阅本文的[先前文章](https://www.geeksforgeeks.org/count-index-pairs-equal-elements-array/)。
 
-**更好的方法 - 使用两个指针**：这个想法是[对给定的数组和具有相同元素的索引差进行](https://www.geeksforgeeks.org/sorting-algorithms/)排序。 步骤如下：
+**更好的方法 - 使用两个指针**：这个想法是[对给定的数组进行排序](https://www.geeksforgeeks.org/sorting-algorithms/)，和具有相同元素的索引差。 步骤如下：
 
 1.  排序给定的数组。
 
@@ -254,7 +254,7 @@ public static void Main(String[] args)
 
 **高效方法 – 使用单个遍历**：想法是使用 [**散列**](https://www.geeksforgeeks.org/hashing-data-structure/) 并更新频率大于 1 的每对的计数。以下是步骤：
 
-1.  创建一个 [unordered_map](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)`M`，以将每个元素的[频率存储在数组](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)中。
+1.  创建一个[`unordered_map M`](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)，以将每个元素的[频率](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)存储在数组中。
 
 2.  遍历给定的数组，并继续更新`M`中每个元素的频率。
 
