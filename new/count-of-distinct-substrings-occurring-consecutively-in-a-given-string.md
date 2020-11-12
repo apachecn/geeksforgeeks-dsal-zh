@@ -1,8 +1,6 @@
-# 在给定字符串
+# 在给定字符串中连续出现的不同子字符串的计数
 
 > 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/](https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/)
-
-中连续出现的不同子字符串的计数
 
 给定字符串`str`，任务是查找在给定字符串中连续放置的**不同的子字符串**的数量。
 

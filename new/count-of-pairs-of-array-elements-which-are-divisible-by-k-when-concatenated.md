@@ -30,7 +30,7 @@
 
 *   对于每个`i != j`，通过等式将`arr[i]`和`arr[j]`连接起来：
 
-> `arr[i]`和`arr[j]`的连接`= (arr [i] * 10 ^ lenj) + arr[j]`，其中`lenj`是数字`arr[j]`中的位数
+> `arr[i]`和`arr[j]`的连接`= (arr [i] * 10 ^ lenj) + arr[j]`，其中`lenj`是数字`arr[j]`中的位数。
 
 *   通过`K`检查连接数的**除数**。
 

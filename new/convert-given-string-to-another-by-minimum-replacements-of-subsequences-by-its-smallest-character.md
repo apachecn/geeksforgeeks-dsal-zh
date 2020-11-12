@@ -1,8 +1,6 @@
-# 通过最小替换子序列的最小字符
+# 通过最小替换子序列的最小字符，将给定的字符串转换为另一个字符串
 
 > 原文：[https://www.geeksforgeeks.org/convert-given-string-to-another-by-minimum-replacements-of-subsequences-by-its-smallest-character/](https://www.geeksforgeeks.org/convert-given-string-to-another-by-minimum-replacements-of-subsequences-by-its-smallest-character/)
-
-将给定的字符串转换为另一个字符串
 
 给定两个字符串`A`和`B`，任务是计算将字符串`A`转换​​为`B`所需的最小操作数。 在一个操作中，从字符串`A`中选择一个子序列，并将该子序列的每个字符转换为其中的最小字符。 如果无法进行转换，则打印`"-1"`。
 
@@ -60,7 +58,7 @@
 
         1.  如果在`convertMap`中存在向量`v1`的第`j`个字母，则表示该字母已被转换或将在操作中转换为另一个字符。 如果已通过以前的操作之一进行了转换，则继续进行`v1`的下一次迭代。
 
-        2.  否则将此索引添加到集合中。 跳出循环
+        2.  否则将此索引添加到集合中。 跳出循环。
 
     *   如果在向量`v1`中找不到任何这样的索引`j`，则无法将字符串`A`转换​​为`B`。 因此打印`"-1"`。
 

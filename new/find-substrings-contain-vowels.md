@@ -1,8 +1,6 @@
-# 查找包含所有元音
+# 查找包含所有元音的子字符串
 
 > 原文：[https://www.geeksforgeeks.org/find-substrings-contain-vowels/](https://www.geeksforgeeks.org/find-substrings-contain-vowels/)
-
-的子字符串
 
 我们给了我们一个小写字母的字符串。 我们需要至少打印一次包含所有元音的子字符串，并且子字符串中不存在辅音（非元音字符）。
 

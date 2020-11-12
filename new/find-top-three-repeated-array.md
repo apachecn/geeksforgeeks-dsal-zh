@@ -1,14 +1,10 @@
-# 查找数组
+# 查找数组中前三个重复数字
 
 > 原文：[https://www.geeksforgeeks.org/find-top-three-repeated-array/](https://www.geeksforgeeks.org/find-top-three-repeated-array/)
 
-中重复的前三名
-
 给定大小为`N`的重复数字数组，您必须找到前三个重复数字。
 
-注意：如果数字出现相同的次数，那么我们的输出将是
-
-数组中第一个出现的示例：
+注意：如果数字出现相同的次数，那么我们的输出将是数组中第一个出现的示例：
 
 > 输入：`arr[] = {3, 4, 2, 3, 16, 3, 15, 16, 15, 15, 16, 2, 3}`
 >

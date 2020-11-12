@@ -1,8 +1,6 @@
-# 从给定的排序数组
+# 从给定的排序数组中查找所有缺失的数字
 
 > 原文：[https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/](https://www.geeksforgeeks.org/find-all-missing-numbers-from-a-given-sorted-array/)
-
-中查找所有缺失的数字
 
 给定`N`个整数的排序数组`arr[]`，任务是在范围`[arr[0], arr[N - 1]]`之间找到数组中的多个缺失元素。
 

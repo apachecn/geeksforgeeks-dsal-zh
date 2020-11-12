@@ -1,8 +1,6 @@
-# 数组
+# 不能被任何其他元素整除的数组元素数
 
 > 原文：[https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/](https://www.geeksforgeeks.org/count-of-elements-not-divisible-by-any-other-elements-of-array/)
-
-的任何其他元素不能除的元素数
 
 给定[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是确定数组元素的数量，该数量不能被给定数组中的任何其他元素整除。
 

@@ -1,8 +1,6 @@
-# 树的每个节点与给定的非连通组件
+# 树的每个节点与给定的非连通组件连接后的直径
 
 > 原文：[https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/](https://www.geeksforgeeks.org/diameters-for-each-node-of-tree-after-connecting-it-with-given-disconnected-component/)
-
-连接后的直径
 
 给定[**树**](https://www.geeksforgeeks.org/generic-treesn-array-trees/)，该树具有通过`N-1`边连接的`N`个节点和一个**非连通节点**，任务是在将给定树与给定的非连通组件连接后找到给定树的每个节点的直径。
 

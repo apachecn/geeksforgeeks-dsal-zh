@@ -1,8 +1,6 @@
-# 计算在给定字符串
+# 计算在给定字符串的所有子字符串中出现的元音数量
 
 > 原文：[https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/](https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/)
-
-的所有子字符串中出现的元音数量
 
 给定一个长度为`N`的包含 0 个或多个元音的小写字符的字符串，任务是查找在给定字符串的所有子字符串中出现的元音计数。
 

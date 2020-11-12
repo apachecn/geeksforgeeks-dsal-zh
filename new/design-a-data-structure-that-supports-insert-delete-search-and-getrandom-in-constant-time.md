@@ -10,7 +10,7 @@
 
 `search(x)`：在数据结构中搜索项目`x`。
 
-`getRandom()`：从当前元素集中返回一个随机元素
+`getRandom()`：从当前元素集中返回一个随机元素。
 
 我们可以使用[散列](https://www.geeksforgeeks.org/tag/hashing/)支持`Θ(1)`时间内的前 3 个运算。 怎么做第四次操作？ 这个想法是将可调整大小的数组（Java 中为`ArrayList`，C 中为`vector`）与哈希一起使用。 [可调整大小的数组](https://www.geeksforgeeks.org/analysis-algorithm-set-5-amortized-analysis-introduction/)支持在`Θ(1)`摊销时间复杂度中插入。 为了实现`getRandom()`，我们可以简单地选择一个从 0 到`size-1`的随机数（`size`是当前元素的数量）并返回该索引处的元素。 哈希映射将数组值存储为键，并将数组索引存储为值。
 

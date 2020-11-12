@@ -1,8 +1,6 @@
-# 查找分数
+# 查找重复序列的分数
 
 > 原文：[https://www.geeksforgeeks.org/find-recurring-sequence-fraction/](https://www.geeksforgeeks.org/find-recurring-sequence-fraction/)
-
-中的重复序列
 
 给定一个分数，找到一个数字的重复序列（如果存在），否则，打印`"No recurring sequence"`。
 
@@ -342,5 +340,5 @@ Recurring sequence is 27
 
 ```
 
-本文由 **Dhruv Mahajan** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请写评论
+本文由 **Dhruv Mahajan** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请写评论。
 

@@ -26,7 +26,7 @@
 
 请按照以下步骤解决问题：
 
-*   将所有数组元素的频率存储在[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中
+*   将所有数组元素的频率存储在[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中。
 
 *   遍历`HashMap`。
 

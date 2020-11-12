@@ -1,8 +1,6 @@
-# 在包含另一个字符串
+# 在包含另一个字符串的所有字符的字符串中找到最小的窗口
 
 > 原文：[https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/](https://www.geeksforgeeks.org/find-the-smallest-window-in-a-string-containing-all-characters-of-another-string/)
-
-的所有字符的字符串中找到最小的窗口
 
 给定两个字符串`string1`和`string2`，任务是在`string1`中找到包含`string2`的所有字符的最小子字符串。
 

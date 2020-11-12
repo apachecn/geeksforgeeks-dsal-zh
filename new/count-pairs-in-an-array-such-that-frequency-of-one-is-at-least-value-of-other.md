@@ -1,8 +1,6 @@
-# 对数组中的对进行计数，以使一个频率至少等于另一个
+# 对数组中的对进行计数，以使一个频率至少等于另一个的值
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/](https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/)
-
-的值
 
 给定整数数组`A[]`。 任务是找到正整数`(X, Y)`的有序对总数，以使`X`在`A[]`中至少发生`Y`次，而`Y`在`A`中至少发生`X`次。
 

@@ -134,7 +134,7 @@ int getHits(int timestamp)
 
 ```
 int[] hits = new int[300];
-TimeStamp[] times = new TimeStamp[300]; //最后计数的匹配的时间戳
+TimeStamp[] times = new TimeStamp[300]; // 最后计数的匹配的时间戳
 ```
 
 给定传入的时间戳，将其时间戳修改 300，以查看其在`hits`数组中的位置。
@@ -143,7 +143,7 @@ TimeStamp[] times = new TimeStamp[300]; //最后计数的匹配的时间戳
 int idx = timestamp % 300; 
 ```
 
-`hits [idx]`保存在这一秒内发生的点击计数
+`hits[idx]`保存在这一秒内发生的点击计数。
 
 
 但是，在我们将`idx`的点击次数增加 1 之前，时间戳确实属于`hits[idx]`正在跟踪的秒数。

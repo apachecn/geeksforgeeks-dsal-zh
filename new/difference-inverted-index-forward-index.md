@@ -1,8 +1,6 @@
-# 反向索引与正向索引
+# 反向索引与正向索引之间的差异
 
 > 原文：[https://www.geeksforgeeks.org/difference-inverted-index-forward-index/](https://www.geeksforgeeks.org/difference-inverted-index-forward-index/)
-
-之间的差异
 
 [**反向索引**](https://www.geeksforgeeks.org/inverted-index/)
 
@@ -38,7 +36,7 @@
 
     *   书后的索引。
 
-    *   反向查询
+    *   反向查询。
 
 **前向索引**：
 
@@ -50,7 +48,7 @@
 
     *   在此文档的索引条目中附加所有关键字。
 
-    *   对所有文档重复上述步骤
+    *   对所有文档重复上述步骤。
 
 3.  索引编制非常快，因为它向前移动时仅附加关键字。
 
@@ -72,7 +70,7 @@
 
     *   书中的目录。
 
-    *   DNS 查询
+    *   DNS 查询。
 
 **正向索引和反向索引之间的相似性**：
 

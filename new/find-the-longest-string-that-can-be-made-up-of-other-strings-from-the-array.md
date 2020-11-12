@@ -1,8 +1,6 @@
-# 从数组
+# 从数组中查找可以由其他字符串组成的最长字符串
 
 > 原文：[https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/](https://www.geeksforgeeks.org/find-the-longest-string-that-can-be-made-up-of-other-strings-from-the-array/)
-
-中查找可以由其他字符串组成的最长字符串
 
 给定一个字符串数组`arr[]`，任务是在将数组中的其他字符串相互连接后，从数组中找到最大的字符串。 如果不存在这样的字符串，则打印`-1`。
 

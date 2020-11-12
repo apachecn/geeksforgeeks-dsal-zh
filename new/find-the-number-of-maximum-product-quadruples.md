@@ -27,7 +27,7 @@ achieved by the following quadruple {1, 2, 3, 4} as a<sub>1</sub>a<sub>2</sub>a<
 
 **暴力生成**：`O(N ^ 4)`
 
-并计算所有可能的四倍数，从而得到最大乘积
+计算所有可能的四倍数，从而得到最大乘积。
 
 **优化的解决方案**：
 

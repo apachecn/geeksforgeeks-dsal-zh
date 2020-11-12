@@ -1,8 +1,6 @@
-# 根据给定的字符串
+# 根据给定的字符串构造一个具有正好`K`个子序列的字符串
 
 > 原文：[https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/](https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/)
-
-构造一个具有完全`K`个子序列的字符串
 
 给定字符串`str`和整数`K`，任务是找到字符串`S`，使其具有给定的`K`子序列 字符串`str`。
 

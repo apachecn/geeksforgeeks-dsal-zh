@@ -26,7 +26,7 @@ Output: Construct the tree represented
 
 如果它是左侧子树的一部分，则为左侧添加一个`lLevel`数组，否则将其添加到右侧子树的`rLevel`数组中。
 
-以下是具有上述想法的 C++ 实现
+以下是具有上述想法的 C++ 实现：
 
 ```
 /* program to construct tree using inorder

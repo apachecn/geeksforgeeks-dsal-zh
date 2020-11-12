@@ -1,8 +1,6 @@
-# 检查矩阵
+# 检查矩阵中是否存在具有给定绝对差的偶对
 
 > 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-absolute-difference-exists-in-a-matrix/)
-
-中是否存在具有给定绝对差的一对
 
 给定一个`N×M`矩阵和一个差`K`。 任务是检查矩阵中是否存在具有给定绝对差的一对。
 

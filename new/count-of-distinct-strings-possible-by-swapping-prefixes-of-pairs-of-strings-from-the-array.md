@@ -1,8 +1,6 @@
-# 通过交换数组
+# 通过交换数组中的字符串偶对的前缀可以实现不同字符串的计数
 
 > 原文：[https://www.geeksforgeeks.org/count-of-distinct-strings-possible-by-swapping-prefixes-of-pairs-of-strings-from-the-array/](https://www.geeksforgeeks.org/count-of-distinct-strings-possible-by-swapping-prefixes-of-pairs-of-strings-from-the-array/)
-
-中的成对字符串的前缀可以实现不同字符串的计数
 
 给定一个数组`string[]`，该数组由`N`个数字字符串，长度为`M`组成，任务是找到可以通过选择任意一个生成的不同字符串的数量 两个字符串，例如数组中的`i`和`j`，并在它们之间交换所有可能的前缀。
 

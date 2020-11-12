@@ -1,4 +1,4 @@
-# 检查二叉树是否包含一对总和为 K 的叶节点
+# 检查二叉树是否包含一对总和为`K`的叶节点
 
 > 原文：[https://www.geeksforgeeks.org/check-if-a-binary-tree-consists-of-a-pair-of-leaf-nodes-with-sum-k/](https://www.geeksforgeeks.org/check-if-a-binary-tree-consists-of-a-pair-of-leaf-nodes-with-sum-k/)
 
