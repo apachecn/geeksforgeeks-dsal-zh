@@ -10,7 +10,7 @@
 
 3.  删除
 
-自平衡[二叉搜索树（BST）](http://geeksquiz.com/binary-search-tree-set-1-search-and-insertion/)（如[红黑树](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)， [AVL 树](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/)和[伸展树](https://www.geeksforgeeks.org/splay-tree-set-1-insert/)）中上述操作的时间复杂度 等）是`O(Logn)`。
+自平衡[二叉搜索树（BST）](http://geeksquiz.com/binary-search-tree-set-1-search-and-insertion/)（如[红黑树](https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/)， [AVL 树](https://www.geeksforgeeks.org/avl-tree-set-1-insertion/)和[伸展树](https://www.geeksforgeeks.org/splay-tree-set-1-insert/)等）中上述操作的时间复杂度是`O(Logn)`。
 
 因此，哈希表似乎在所有常见操作中都击败了 BST。 什么时候我们应该比哈希表更喜欢 BST，有什么优势。 以下是支持 BST 的一些重要观点。
 
