@@ -1,8 +1,6 @@
-# 具有卢卡斯序列
+# 具有卢卡斯序列中的字符频率的字符串
 
 > 原文：[https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/](https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/)
-
-中字符频率的字符串
 
 给定包含小写英文字母的字符串`str`，任务是查找字符串字符的频率是否按 Lucas 顺序排列。 您可以随意安排频率编号，以形成卢卡斯序列。 如果可能，请打印`Yes`，否则打印`No`。
 

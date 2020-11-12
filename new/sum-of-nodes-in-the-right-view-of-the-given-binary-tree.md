@@ -1,8 +1,6 @@
-# 给定二叉树
+# 给定二叉树右侧视图中的节点总数
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-the-right-view-of-the-given-binary-tree/)
-
-右侧视图中的节点总数
 
 给定一个二叉树，任务是找到在右视图中可见的节点的总和。 二叉树的右视图是从右侧查看树时可见的节点集。
 

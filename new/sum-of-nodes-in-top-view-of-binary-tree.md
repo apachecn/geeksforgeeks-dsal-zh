@@ -1,8 +1,6 @@
-# 二叉树
+# 二叉树顶视图中的节点总数
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-top-view-of-binary-tree/](https://www.geeksforgeeks.org/sum-of-nodes-in-top-view-of-binary-tree/)
-
-顶视图中的节点总数
 
 二叉树的顶视图是从顶部查看树时可见的节点集。 给定一个二叉树，任务是在顶视图中打印节点总数。
 

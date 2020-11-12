@@ -44,7 +44,7 @@
 
 *   可以观察到，仅删除字符右侧的索引受到影响，也就是说，它们需要移动一个位置。
 
-*   将字符的索引存储在[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中
+*   将字符的索引存储在[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中。
 
 *   处理`HashMap`中的字符。
 

@@ -1,8 +1,6 @@
-# 数组
+# 数组中所有最少出现元素的总和
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/](https://www.geeksforgeeks.org/sum-of-all-minimum-occurring-elements-in-an-array/)
-
-中所有最小出现元素的总和
 
 给定包含重复元素的整数数组。 任务是找到给定数组中所有最少出现的元素的总和。 这是其频率在数组中最小的所有此类元素的总和。
 
