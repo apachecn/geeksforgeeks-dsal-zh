@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 
-给定一个整数数组和一个数字“和”，请打印该数组中所有总和等于“和”的对。
+给定一个整数数组和一个数字`sum`，请打印该数组中所有总和等于`sum`的对。
 
 ```
 Examples :

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/next-greater-frequency-element/](https://www.geeksforgeeks.org/next-greater-frequency-element/)
 
-给定一个数组，对于每个元素，找到最右边的元素的值，该元素的频率大于当前元素的频率。 如果不存在职位的答案，则将值设为“ -1”。
+给定一个数组，对于每个元素，找到最右边的元素的值，该元素的频率大于当前元素的频率。 如果不存在职位的答案，则将值设为`-1`。
 
 **示例**：
 

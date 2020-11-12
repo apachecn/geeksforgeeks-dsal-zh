@@ -6,7 +6,7 @@
 
 ![](img/244ab3390a4cb1b1c85d3d980b9bdc36.png)
 
-在第一个示例中，可能有两种解决方案：“世界在这里。 这是充满起伏和起伏的生活。 生活就是世界”。
+在第一个示例中，可能有两种解决方案：`"world is here. this is a life full of ups"`和`"ups and downs. life is world"`。
 
 1.  使用要求搜索的所有给定单词初始化`HashMap`并将其值分配为 -1。
 

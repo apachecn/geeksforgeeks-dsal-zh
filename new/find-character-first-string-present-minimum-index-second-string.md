@@ -20,7 +20,7 @@
 
 **来源**：[OLA 面试经验 | 系列 12](https://www.geeksforgeeks.org/ola-interview-experience-set-12/) 。
 
-**朴素的方法**：使用两个循环，在`str`中找到`patt`的每个字符的第一个索引。 打印具有最小索引的字符。 如果`str`中没有`patt`字符，则打印“无字符”。
+**朴素的方法**：使用两个循环，在`str`中找到`patt`的每个字符的第一个索引。 打印具有最小索引的字符。 如果`str`中没有`patt`字符，则打印`"No character present"`。
 
 ## C++
 
@@ -269,7 +269,7 @@ Minimum Index Character = e
 
     *   如果存在，则从哈希表中获取其索引，并更新`minIndex`（到目前为止遇到的最小索引）。
 
-    *   对于不匹配的字符，请打印“不存在字符”。
+    *   对于不匹配的字符，请打印`"No character present"`。
 
 哈希表是使用 C++ 中的[`unordered_set`](https://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)实现的。
 

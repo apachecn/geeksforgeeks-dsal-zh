@@ -16,7 +16,7 @@
 > 
 > `str1`中的 ASCII 值 101 的`'e'`映射为`str2`中的 ASCII 值 97 的`'a'`。`str1`中 ASCII 值 103 的`'g'`映射为`str2`中的 ASCII 值 100 的`'d'`。
 > 
-> **输入**：`str1 = “eggs”, str2 = “addd”`
+> **输入**：`str1 = "eggs", str2 = "addd"`
 > 
 > **输出**：`No`
 
