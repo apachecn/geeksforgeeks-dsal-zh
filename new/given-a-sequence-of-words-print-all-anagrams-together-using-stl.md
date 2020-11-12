@@ -25,7 +25,7 @@ Explanation: There are no anagrams in the array.
 
 *   [给定单词序列，一起打印所有异序词 | 系列 2](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-set-2/)
 
-**方法**：这是使用 C++ 标准模板库的`HashMap`解决方案，该库存储键值对。 在哈希映射中，键将是字符的排序集合，值将是输出字符串。 当两个异序词的字符排序时，它们将相似。 现在
+**方法**：这是使用 C++ 标准模板库的`HashMap`解决方案，该库存储键值对。 在哈希映射中，键将是字符的排序集合，值将是输出字符串。 当两个异序词的字符排序时，它们将相似。 现在：
 
 1.  将矢量元素存储在`HashMap`中，其中键为已排序的字符串。
 
@@ -127,7 +127,7 @@ int main()
 
 ```
 
-**注意**：使用 g++ 中的`--std=C++11`标志编译以上程序
+**注意**：使用 g++ 中的`--std=C++11`标志编译以上程序。
 
 **输出**：
 

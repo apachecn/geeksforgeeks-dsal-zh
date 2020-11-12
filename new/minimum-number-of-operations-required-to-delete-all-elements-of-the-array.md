@@ -1,8 +1,6 @@
-# 删除数组
+# 删除数组的所有元素所需的最小操作数
 
 > 原文：[https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/](https://www.geeksforgeeks.org/minimum-number-of-operations-required-to-delete-all-elements-of-the-array/)
-
-的所有元素所需的最小操作数
 
 给定一个整数数组`arr`，任务是打印删除该数组所有元素所需的最少操作数。
 
@@ -26,11 +24,11 @@
 
 **方法**：为获得最佳结果，应从其余元素中依次选择数组中最小的元素，直到删除数组中的所有元素。
 
-*   以升序对数组进行排序，并为出现的事件准备一个哈希。
+*   以升序对数组排序，并为出现的事件准备一个哈希。
 
 *   对于从开始处开始的每个未标记元素，标记所有可被选择的元素整除的元素，并增加结果计数器。
 
-下面是上述方法的实现
+下面是上述方法的实现：
 
 ## C++
 

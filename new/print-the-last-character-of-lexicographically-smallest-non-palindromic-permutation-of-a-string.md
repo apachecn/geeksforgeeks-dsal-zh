@@ -24,7 +24,7 @@
 
 **朴素的方法**：解决该问题的最简单方法是[生成给定字符串的所有可能排列](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)，并针对每个排列检查它是否是回文集。 在所有获得的非回文排列中，按字典顺序打印最小的排列的最后一个字符。 请按照以下步骤操作：
 
-1.  [对给定的字符串`str`进行排序](https://www.geeksforgeeks.org/sort-string-characters/)。
+1.  [对给定的字符串`str`排序](https://www.geeksforgeeks.org/sort-string-characters/)。
 
 2.  使用函数[`next_permutation()`](https://www.geeksforgeeks.org/stdnext_permutation-prev_permutation-c/)检查回文的字符串的所有后续排列。
 

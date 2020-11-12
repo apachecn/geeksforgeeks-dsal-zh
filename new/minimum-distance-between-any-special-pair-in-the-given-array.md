@@ -1,8 +1,6 @@
-# 给定数组
+# 给定数组中任何特殊对之间的最小距离
 
 > 原文：[https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/](https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/)
-
-中任何特殊对之间的最小距离
 
 给定`N`个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是找到特殊对的索引之间的最小可能绝对差。
 
@@ -32,7 +30,7 @@
 
 1.  将数组元素的初始索引存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
 
-2.  [对给定数组`arr[]`进行排序](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)。
+2.  [对给定数组`arr[]`排序](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)。
 
 3.  现在，使用映射找到排序数组的相邻元素的索引之间的距离。
 

@@ -32,7 +32,7 @@
 
 **高效方法**：要优化上述方法，其思想是使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)。 请按照以下步骤解决问题：
 
-*   初始化一个数组，例如说`cntFre[]`，以存储给定字符串的每个字符的频率
+*   初始化一个数组，例如说`cntFre[]`，以存储给定字符串的每个字符的频率。
 
 *   [遍历给定的字符串](https://www.geeksforgeeks.org/strings-in-c-2/)，并存储给定字符串的每个字符的频率。
 

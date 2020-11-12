@@ -1,8 +1,6 @@
-# 从给定路径
+# 来自给定路径的最少车站数
 
 > 原文：[https://www.geeksforgeeks.org/minimum-number-stops-given-path/](https://www.geeksforgeeks.org/minimum-number-stops-given-path/)
-
-停止的最少站数
 
 二维空间中有许多需要按特定顺序访问的点。 始终选择从一个点到另一个点的路径，因为路径的最短部分始终与网格线对齐。 现在我们获得了用于访问点的选择路径，我们需要告知生成给定路径所需的最小点数。
 

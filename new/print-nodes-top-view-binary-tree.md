@@ -1,8 +1,6 @@
-# 二叉树
+# 打印在二叉树顶视图中的节点
 
 > 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
-
-顶视图中的打印节点
 
 二叉树的顶视图是从顶部查看树时可见的节点集。 给定一棵二叉树，打印它的顶视图。 可以按任何顺序打印输出节点。
 
@@ -556,7 +554,7 @@ Following are nodes in top view of Binary Tree
 2 1 3 6
 ```
 
-此方法由 [Akash Debnath](https://auth.geeksforgeeks.org/user/akashdebnath/profile) 贡献
+此方法由 [Akash Debnath](https://auth.geeksforgeeks.org/user/akashdebnath/profile) 贡献。
 
 以上实现的时间复杂度为`O(NlogN)`，其中`n`是给定二叉树中的节点数，映射中的每个插入操作都需要`O(log n)`复杂度。
 

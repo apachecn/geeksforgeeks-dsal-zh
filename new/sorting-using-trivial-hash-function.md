@@ -1,8 +1,8 @@
-# 使用普通哈希函数进行排序
+# 使用普通哈希函数排序
 
 > 原文：[https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/](https://www.geeksforgeeks.org/sorting-using-trivial-hash-function/)
 
-使用[普通哈希](https://www.geeksforgeeks.org/index-mapping-or-trivial-hashing-with-negatives-allowed/)函数进行排序。
+使用[普通哈希](https://www.geeksforgeeks.org/index-mapping-or-trivial-hashing-with-negatives-allowed/)函数排序。
 
 **示例**：
 
@@ -14,7 +14,7 @@ Output : 3 4 5 8 9
 
 我们已经阅读了各种排序算法，例如[堆排序](https://www.geeksforgeeks.org/heap-sort/)，[冒泡排序](https://www.geeksforgeeks.org/bubble-sort/)，[合并排序](https://www.geeksforgeeks.org/merge-sort/)等。
 
-在这里，我们将看到如何使用哈希数组对`N`个元素进行排序。 但是该算法有局限性。 我们只能对元素的值不大（通常不超过`10 ^ 6`）的`N`个元素进行排序。
+在这里，我们将看到如何使用哈希数组对`N`个元素排序。 但是该算法有局限性。 我们只能对元素的值不大（通常不超过`10 ^ 6`）的`N`个元素排序。
 
 **使用哈希排序的说明**：
 
@@ -30,7 +30,7 @@ Output : 3 4 5 8 9
 
 如果要存储元素，请使用另一个数组以排序方式存储它们。
 
-如果要按降序对其进行排序，则只需从`max`遍历到 0 并重复相同的过程即可。
+如果要按降序对其排序，则只需从`max`遍历到 0 并重复相同的过程即可。
 
 **下面是上述方法的实现**：
 
@@ -275,7 +275,7 @@ public static void Main(String[] args)
 
 如果数组具有**负数**和**正数**，我们保留两个散列数组以跟踪正负元素。
 
-如果数组具有负数和正数，则使用散列进行排序的说明：
+如果数组具有负数和正数，则使用散列排序的说明：
 
 **步骤 1** ：创建两个哈希数组，一个用于正数，另一个用于负数
 
@@ -620,7 +620,7 @@ public static void Main(String[] args) 
 
 **局限性**：
 
-1.  只能对有限范围的数组元素进行排序（通常从`-10 ^ 6`到`10 ^ 6`）
+1.  只能对有限范围的数组元素排序（通常从`-10 ^ 6`到`10 ^ 6`）
 
 2.  在最坏的情况下，辅助空间为`O(max_element + min_element)`
 

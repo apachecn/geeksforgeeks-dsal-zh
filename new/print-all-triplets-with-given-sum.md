@@ -489,7 +489,7 @@ public class GFG {
 
 **算法**：
 
-1.  对数组进行排序，然后为每个元素`arr[i]`搜索其他两个元素`arr[l], arr[r]`，使得`arr[i] + arr[l] + arr[r] == target`。
+1.  对数组排序，然后为每个元素`arr[i]`搜索其他两个元素`arr[l], arr[r]`，使得`arr[i] + arr[l] + arr[r] == target`。
 
 2.  使用**双指针技术**可以有效地搜索其他两个元素，因为对数组进行了排序。
 

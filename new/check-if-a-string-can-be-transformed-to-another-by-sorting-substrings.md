@@ -1,4 +1,4 @@
-# 检查是否可以通过对子字符串进行排序将字符串转换为另一个字符串
+# 检查是否可以通过对子字符串排序将字符串转换为另一个字符串
 
 > 原文：[https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/](https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/)
 
@@ -14,9 +14,9 @@
 > 
 > **解释**：
 >
-> 在`str1`中对子字符串`"ec"`进行排序会将字符串修改为`hdceb`，
+> 在`str1`中对子字符串`"ec"`排序会将字符串修改为`hdceb`，
 >
-> 在`str1`中对子字符串`"hdc"`进行排序会将字符串修改为`"cdheb"`。
+> 在`str1`中对子字符串`"hdc"`排序会将字符串修改为`"cdheb"`。
 >
 > 由于修改后的字符串与`str2`相同，因此答案为是。
 >

@@ -1,8 +1,6 @@
-# 最大化给定数组
+# 最大化给定数组中最长递增质数子序列的长度
 
 > 原文：[https://www.geeksforgeeks.org/maximize-length-of-longest-increasing-prime-subsequence-from-the-given-array/](https://www.geeksforgeeks.org/maximize-length-of-longest-increasing-prime-subsequence-from-the-given-array/)
-
-中最长增加的素子序列的长度
 
 给定大小为`N`的数组`arr[]`，任务是通过执行以下操作来找到[最长递增质数子序列](https://www.geeksforgeeks.org/length-of-longest-prime-subsequence-in-an-array/)的长度。
 

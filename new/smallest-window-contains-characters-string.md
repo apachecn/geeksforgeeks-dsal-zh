@@ -50,7 +50,7 @@ the distinct characters of given string.
 
         2.  我们可以使用`max_chars`大小的访问数组来查找当前字符是否曾经遇到过。
 
-        3.  如果`count`等于`hash_map`的大小，则生成的子字符串有效
+        3.  如果`count`等于`hash_map`的大小，则生成的子字符串有效。
 
         4.  如果它是有效的子字符串，请将其与已生成的最小长度的子字符串进行比较。
 

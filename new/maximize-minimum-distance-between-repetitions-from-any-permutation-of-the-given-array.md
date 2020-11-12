@@ -1,8 +1,6 @@
-# 最大化给定数组
+# 最大化给定数组的任意排列所产生的重复之间的最小距离
 
 > 原文：[https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/](https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/)
-
-的任意排列所引起的重复之间的最小距离
 
 给定一个数组`arr[]`，该数组由`[1, N]`范围内的`N`个正整数组成，任务是找到任意一个之间的最大最小距离 从给定数组的任何排列中元素的连续重复。
 
@@ -26,7 +24,7 @@
 
 3.  计算具有最大频率的元素的出现次数，例如`maxFreqCount`。
 
-4.  通过公式`(N - maxFreqCount) / (maxFreqElement - 1))`计算所需距离
+4.  通过公式`(N - maxFreqCount) / (maxFreqElement - 1))`计算所需距离。
 
 下面是上述方法的实现。
 

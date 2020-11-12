@@ -23,7 +23,7 @@ Output : No
 
 由于元素大至`10 ^ 9`，因此我们无法使用[直接索引表](https://www.geeksforgeeks.org/direct-address-table/)。
 
-一种解决方案是对两个多集进行排序并一一比较。
+一种解决方案是对两个多集排序并一一比较。
 
 ## C++
 

@@ -56,7 +56,7 @@
 
 5.  可以通过`abs(arr[i + 1] – arr[i])`来获得索引`i`的分割成本。
 
-6.  现在，为了找到最大可能拆分的数量，[对包含每个可能拆分成本的数组`poss[]`进行排序](https://www.geeksforgeeks.org/sorting-algorithms/)。
+6.  现在，为了找到最大可能拆分的数量，[对包含每个可能拆分成本的数组`poss[]`排序](https://www.geeksforgeeks.org/sorting-algorithms/)。
 
 7.  现在，从总和小于或等于`K`的`poss[]`中选择所有最低成本。
 

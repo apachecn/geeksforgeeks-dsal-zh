@@ -33,11 +33,11 @@ in the order of given permutation.
 
 ```
 
-**方法**：我们假设输入图表示为[邻接表](https://www.geeksforgeeks.org/graph-and-its-representations/)。 想法是首先根据输入顺序对所有邻接表进行排序，然后从给定排列的第一个节点开始遍历给定图。 如果我们以相同顺序访问所有顶点，则给定的排列是有效的 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。
+**方法**：我们假设输入图表示为[邻接表](https://www.geeksforgeeks.org/graph-and-its-representations/)。 想法是首先根据输入顺序对所有邻接表排序，然后从给定排列的第一个节点开始遍历给定图。 如果我们以相同顺序访问所有顶点，则给定的排列是有效的 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。
 
 1.  将每个数字的索引存储在哈希映射中的给定排列中。
 
-2.  由于需要维护顺序，因此根据排列索引对每个邻接表进行排序。
+2.  由于需要维护顺序，因此根据排列索引对每个邻接表排序。
 
 3.  使用源节点作为给定排列的第一个数字执行深度优先遍历搜索。
 

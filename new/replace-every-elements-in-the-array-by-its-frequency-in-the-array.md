@@ -1,8 +1,6 @@
-# 用数组
+# 用数组中的频率替换数组中的每个元素
 
 > 原文：[https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/](https://www.geeksforgeeks.org/replace-every-elements-in-the-array-by-its-frequency-in-the-array/)
-
-中的频率替换数组中的每个元素
 
 给定一个整数数组，将每个元素替换为其在数组中的频率。
 

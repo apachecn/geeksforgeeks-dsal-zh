@@ -47,7 +47,7 @@ Following are the steps to be followed to get union and intersection lists.
 
 **算法**：
 
-1.  [使用合并排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)对两个链表进行排序。
+1.  [使用合并排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)对两个链表排序。
 
 2.  线性扫描两个排序列表以获取并集和交集。
 
@@ -296,7 +296,7 @@ Union list is
 
 *   **时间复杂度**：`O(m Log m + n Log n)`。
 
-    对列表进行排序所需的时间为`n log n`和`m log m`，以及查找并集和交点线性时间。
+    对列表排序所需的时间为`n log n`和`m log m`，以及查找并集和交点线性时间。
 
 *   **辅助空间**：`O(m + n)`。
 

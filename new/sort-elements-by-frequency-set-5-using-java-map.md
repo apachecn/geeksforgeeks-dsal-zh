@@ -1,8 +1,8 @@
-# 按频率对元素进行排序 | 系列 5（使用 Java `Map`）
+# 按频率对元素排序 | 系列 5（使用 Java `Map`）
 
 > 原文：[https://www.geeksforgeeks.org/sort-elements-by-frequency-set-5-using-java-map/](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-5-using-java-map/)
 
-给定一个整数数组，请按照元素的降序对数组进行排序，如果两个元素的频率相同，则按升序进行排序
+给定一个整数数组，请按照元素的降序对数组排序，如果两个元素的频率相同，则按升序排序
 
 **示例**：
 
@@ -24,13 +24,13 @@ Output: 2 2 2 2 1 1 3 3 4 4 5 6 7
 
 以下帖子中讨论了不同的方法：
 
-[按频率对元素进行排序 | 系列 1](https://www.geeksforgeeks.org/sort-elements-by-frequency/)
+[按频率对元素排序 | 系列 1](https://www.geeksforgeeks.org/sort-elements-by-frequency/)
 
-[按频率对元素进行排序 | 系列 2](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-2/)
+[按频率对元素排序 | 系列 2](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-2/)
 
-[按频率对数组元素进行排序 | 系列 3（使用 STL）](https://www.geeksforgeeks.org/sorting-array-elements-frequency-set-3-using-stl/)
+[按频率对数组元素排序 | 系列 3（使用 STL）](https://www.geeksforgeeks.org/sorting-array-elements-frequency-set-3-using-stl/)
 
-[按频率对元素进行排序 | 系列 4（使用哈希的有效方法）](https://www.geeksforgeeks.org/sort-elements-frequency-set-4-efficient-approach-using-hash/)
+[按频率对元素排序 | 系列 4（使用哈希的有效方法）](https://www.geeksforgeeks.org/sort-elements-frequency-set-4-efficient-approach-using-hash/)
 
 **方法**：
 
@@ -40,11 +40,11 @@ Output: 2 2 2 2 1 1 3 3 4 4 5 6 7
 
 **在以下程序中**：
 
-*   在映射中获取元素及其计数
+*   在映射中获取元素及其计数。
 
 *   通过使用比较器接口，比较给定列表中元素的频率。
 
-*   使用此比较器可以通过实现[`Collections.sort()`](https://www.geeksforgeeks.org/collections-sort-java-examples/)方法对列表进行排序。
+*   使用此比较器可以通过实现[`Collections.sort()`](https://www.geeksforgeeks.org/collections-sort-java-examples/)方法对列表排序。
 
 *   打印排序列表。
 

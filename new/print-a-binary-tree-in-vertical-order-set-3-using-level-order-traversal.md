@@ -30,7 +30,7 @@ The output of print this tree vertically will be:
 
 [以垂直顺序打印二叉树 | 系列 2（基于哈希映射的方法）](https://www.geeksforgeeks.org/print-binary-tree-vertical-order-set-2/)
 
-上述解决方案使用预遍历和`Hashmap`来根据水平距离存储节点。 由于上述方法使用了预先遍历，因此垂直线中的节点可能无法按照它们在树中出现的顺序进行排序。 例如，上述解决方案在下面的树中的 9 之前打印 12。 请参阅[这里](https://ide.geeksforgeeks.org/TPyOLR)以获取示例运行。
+上述解决方案使用预遍历和`Hashmap`来根据水平距离存储节点。 由于上述方法使用了预先遍历，因此垂直线中的节点可能无法按照它们在树中出现的顺序排序。 例如，上述解决方案在下面的树中的 9 之前打印 12。 请参阅[这里](https://ide.geeksforgeeks.org/TPyOLR)以获取示例运行。
 
 ```
              1

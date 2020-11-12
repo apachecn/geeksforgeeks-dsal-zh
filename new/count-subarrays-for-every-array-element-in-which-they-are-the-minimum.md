@@ -34,7 +34,7 @@
 
 1.  将数组元素的所有索引存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
 
-2.  [以升序对数组进行排序](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)。
+2.  [以升序对数组排序](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)。
 
 3.  初始化数组`boundary[]`。
 

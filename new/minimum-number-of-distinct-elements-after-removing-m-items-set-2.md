@@ -32,7 +32,7 @@
 
 1.  遍历给定的数组元素，[对每个数字的出现进行计数](https://www.geeksforgeeks.org/count-number-of-occurrences-or-frequency-in-a-sorted-array/)，并将其存储到[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)中。
 
-2.  现在，不对频率进行排序，而是将频率的出现计数到另一个数组中，例如`freq_arr[]`。
+2.  现在，不对频率排序，而是将频率的出现计数到另一个数组中，例如`freq_arr[]`。
 
 3.  计算不重复编号的总数（例如`ans`）。
 

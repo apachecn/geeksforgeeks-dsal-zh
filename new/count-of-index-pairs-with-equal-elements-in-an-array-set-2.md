@@ -28,7 +28,7 @@
 
 对于朴素和有效的方法，请参阅本文的[先前文章](https://www.geeksforgeeks.org/count-index-pairs-equal-elements-array/)。
 
-**更好的方法 - 使用两个指针**：这个想法是[对给定的数组进行排序](https://www.geeksforgeeks.org/sorting-algorithms/)，和具有相同元素的索引差。 步骤如下：
+**更好的方法 - 使用两个指针**：这个想法是[对给定的数组排序](https://www.geeksforgeeks.org/sorting-algorithms/)，和具有相同元素的索引差。 步骤如下：
 
 1.  排序给定的数组。
 

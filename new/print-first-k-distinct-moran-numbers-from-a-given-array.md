@@ -27,7 +27,7 @@
 
 **方法**：请按照以下步骤解决问题：
 
-1.  [对数组进行排序](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)
+1.  [对数组排序](https://www.geeksforgeeks.org/c-program-to-sort-an-array-in-ascending-order/)
 
 2.  [遍历排序后的数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，对于每个元素，[检查其是否为莫兰数](https://www.geeksforgeeks.org/check-whether-given-number-n-is-a-moran-number-or-not/)
 

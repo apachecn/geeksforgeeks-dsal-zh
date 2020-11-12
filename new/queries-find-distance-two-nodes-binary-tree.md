@@ -1,8 +1,6 @@
-# 查询以查找二叉树
+# 查找二叉树的两个节点之间的距离
 
 > 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree/)
-
-的两个节点之间的距离
 
 给定一个二叉树，任务是找到一棵二叉树中两个键之间的距离，没有给出父指针。 两个节点之间的距离是要遍历以到达另一个节点的最小边数。
 
@@ -21,9 +19,9 @@ Dist(n1, n2) = Level[n1] + Level[n2] - 2*Level[lca]
 
 此问题可以分解为：
 
-1.  查找每个节点的级别
+1.  查找每个节点的级别。
 
-2.  寻找二叉树的欧拉之旅
+2.  寻找二叉树的欧拉之旅。
 
 3.  为 LCA 建立稀疏表。
 

@@ -1,8 +1,6 @@
-# Python | 使用字典
+# Python | 使用字典实现动态规划
 
 > 原文：[https://www.geeksforgeeks.org/python-implementing-dynamic-programming-using-dictionary/](https://www.geeksforgeeks.org/python-implementing-dynamic-programming-using-dictionary/)
-
-实现动态规划
 
 [动态规划](http://www.geeksforgeeks.org/dynamic-programming/)是可以用作对[递归](http://www.geeksforgeeks.org/recursion/)进行优化的一种方式。 只要我们看到递归解决方案重复调用相同的输入，就可以使用动态规划对其进行优化。 这个想法只是简单地存储子问题的结果，这样我们以后就不必在需要时重新计算它们。 这种简单的优化降低了从指数到多项式的时间复杂度。 在本文中，已经讨论了使用 python 的[字典](https://www.geeksforgeeks.org/python-dictionary/)来实现动态规划的方法。
 

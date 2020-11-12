@@ -1,8 +1,6 @@
-# 从数组
+# 从数组中按排序顺序打印所有重复的相邻对
 
 > 原文：[https://www.geeksforgeeks.org/print-all-repeating-adjacent-pairs-in-sorted-order-from-an-array/](https://www.geeksforgeeks.org/print-all-repeating-adjacent-pairs-in-sorted-order-from-an-array/)
-
-中按排序顺序打印所有重复的相邻对
 
 给定一个[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，该数组由`N`个整数组成，任务是从该数组中打印出所有相邻的整数对，这些对在给定数组中出现多次 。 如果数组包含多个这样的对，请按排序顺序打印所有对。
 
@@ -43,7 +41,7 @@
 
 3.  完成上述步骤后，[遍历图](https://www.geeksforgeeks.org/traversing-a-map-or-unordered_map-in-cpp-stl/)，如果任意一对频率至少为一个，则将其插入向量`V`中。
 
-4.  [以升序对向量`V`进行排序](https://www.geeksforgeeks.org/sorting-a-vector-in-c/)，并打印存储在其中的所有对。
+4.  [以升序对向量`V`排序](https://www.geeksforgeeks.org/sorting-a-vector-in-c/)，并打印存储在其中的所有对。
 
 下面是上述方法的实现：
 

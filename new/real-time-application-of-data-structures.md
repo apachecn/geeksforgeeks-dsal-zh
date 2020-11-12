@@ -122,7 +122,7 @@
 
 堆的一些应用程序是：
 
-1.  在[堆排序算法](https://www.geeksforgeeks.org/heap-sort/)中，该算法可对[最小堆](https://www.geeksforgeeks.org/min-heap-in-java/)（父项的键小于或等于其子项的键）或[最大堆](https://www.geeksforgeeks.org/max-heap-in-java/)（父项的键大于或等于其子项的键）中的元素进行排序，[排序](http://www.geeksforgeeks.org/sorting-algorithms/)是通过创建堆来完成的。
+1.  在[堆排序算法](https://www.geeksforgeeks.org/heap-sort/)中，该算法可对[最小堆](https://www.geeksforgeeks.org/min-heap-in-java/)（父项的键小于或等于其子项的键）或[最大堆](https://www.geeksforgeeks.org/max-heap-in-java/)（父项的键大于或等于其子项的键）中的元素排序，[排序](http://www.geeksforgeeks.org/sorting-algorithms/)是通过创建堆来完成的。
 
 2.  堆用于实现[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)，其中优先级基于创建的堆的顺序。
 

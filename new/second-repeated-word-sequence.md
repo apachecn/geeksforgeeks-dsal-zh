@@ -1,8 +1,6 @@
-# 序列
+# 序列中第二个重复的单词
 
 > 原文：[https://www.geeksforgeeks.org/second-repeated-word-sequence/](https://www.geeksforgeeks.org/second-repeated-word-sequence/)
-
-中第二重复的单词
 
 给定一个字符串序列，任务是找出给定序列中倒数第二个（或频繁出现）的字符串（考虑到两个单词都不是倒数第二个，总是会有一个单词）。
 
@@ -19,7 +17,7 @@ Output : for
 
 ```
 
-在询问：亚马逊
+在亚马逊询问。
 
 1.  将所有单词存储在映射中，将单词的出现作为关键字并将其出现作为值。
 

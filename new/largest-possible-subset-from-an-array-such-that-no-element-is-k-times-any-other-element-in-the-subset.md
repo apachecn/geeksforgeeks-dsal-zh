@@ -26,9 +26,9 @@
     
 请按照以下步骤解决问题：
 
-*   找到可能的对数，以使一个元素是给定数组中另一个元素的`K`倍
+*   找到可能的对数，以使一个元素是给定数组中另一个元素的`K`倍。
 
-*   按元素的[**递增顺序**](https://www.geeksforgeeks.org/sort-c-stl/)对数组进行排序。
+*   按元素的[**递增顺序**](https://www.geeksforgeeks.org/sort-c-stl/)对数组排序。
 
 *   遍历数组并将数组元素的频率索引存储在[映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
 

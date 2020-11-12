@@ -1,10 +1,8 @@
-# 根据另一个字符串
+# 根据另一个字符串定义的字母顺序对字符串数组排序
 
 > 原文：[https://www.geeksforgeeks.org/sort-the-array-of-strings-according-to-alphabetical-order-defined-by-another-string/](https://www.geeksforgeeks.org/sort-the-array-of-strings-according-to-alphabetical-order-defined-by-another-string/)
 
-定义的字母顺序对字符串数组进行排序
-
-给定字符串`str`和字符串的数组`strArr[]`，任务是根据`str`定义的字母顺序对数组进行排序。
+给定字符串`str`和字符串的数组`strArr[]`，任务是根据`str`定义的字母顺序对数组排序。
 
 **注意**：`str`和`strArr[]`中的每个字符串仅由小写字母组成。
 

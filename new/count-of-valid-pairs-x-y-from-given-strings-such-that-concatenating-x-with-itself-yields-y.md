@@ -34,9 +34,9 @@
 
 1.  创建一个哈希映射。
 
-2.  对数组中给定的字符串进行排序，并将其计数存储在哈希映射中。
+2.  对数组中给定的字符串排序，并将其计数存储在哈希映射中。
 
-3.  再次遍历所有字符串，并将每个字符串与其自身连接，[对字符串进行排序](https://www.geeksforgeeks.org/sort-string-characters/)，然后在[`Hashmap`](https://www.geeksforgeeks.org/java-program-to-count-the-occurrence-of-each-character-in-a-string-using-hashmap/)中找到其计数。
+3.  再次遍历所有字符串，并将每个字符串与其自身连接，[对字符串排序](https://www.geeksforgeeks.org/sort-string-characters/)，然后在[`Hashmap`](https://www.geeksforgeeks.org/java-program-to-count-the-occurrence-of-each-character-in-a-string-using-hashmap/)中找到其计数。
 
 4.  在上述步骤中更新最终计数，并在上述所有步骤之后打印最终计数。
 

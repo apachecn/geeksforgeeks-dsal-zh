@@ -32,7 +32,7 @@
 
 **方法**：
 
-为了解决该问题，想法是在[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)的帮助下使用[频率计数](https://www.geeksforgeeks.org/basic/frequency-counting/)。 将每个字符串的频率以其排序形式存储在哈希映射中的`arr1[]`中。 遍历`arr2[]`，在`arr2[]`中对字符串进行排序，然后在`HashMap`中打印它们各自的频率。
+为了解决该问题，想法是在[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)的帮助下使用[频率计数](https://www.geeksforgeeks.org/basic/frequency-counting/)。 将每个字符串的频率以其排序形式存储在哈希映射中的`arr1[]`中。 遍历`arr2[]`，在`arr2[]`中对字符串排序，然后在`HashMap`中打印它们各自的频率。
 
 下面是上述方法的实现：
 

@@ -48,11 +48,11 @@
 
 *   Using the second observation, for every i <sup>th</sup> prime, calculate: 
 
-    > `fp = power(p[i]，(cnt[i] + 1) * cnt[i] / 2)`，其中`cnt[i]`表示该质数的频率
+    > `fp = power(p[i]，(cnt[i] + 1) * cnt[i] / 2)`，其中`cnt[i]`表示该质数的频率。
 
 *   Using the third observation, update the required product: 
 
-    > `ans = power(ans, (cnt[i] + 1)) * power(fp, d) % MOD`，其中`d`是直到第`i - 1`个质数的除数数量
+    > `ans = power(ans, (cnt[i] + 1)) * power(fp, d) % MOD`，其中`d`是直到第`i - 1`个质数的除数数量。
 
 *   使用费马小定理更新除数的数量`d`：
 

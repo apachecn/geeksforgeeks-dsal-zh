@@ -34,7 +34,7 @@
 
 *   [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)并将`arr[i][j]`的频率存储到`freq[i][arr[i][j]]`中。
 
-*   初始化一个变量，例如说`maxLen`，以存储最长公共前缀的长度
+*   初始化一个变量，例如说`maxLen`，以存储最长公共前缀的长度。
 
 *   遍历所有可能的字符并找到最小频率，例如在给定数组的所有字符串中当前字符的`minRowVal`，然后将`maxLen`的值增加`minRowVal`。
 

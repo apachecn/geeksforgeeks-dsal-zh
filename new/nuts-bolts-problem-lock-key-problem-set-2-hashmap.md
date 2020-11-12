@@ -25,7 +25,7 @@ Output : Matched nuts and bolts are-
 
 在这篇文章中，讨论了基于哈希映射的方法。
 
-1.  遍历坚果数组并创建一个哈希表
+1.  遍历`nuts`数组并创建一个哈希表。
 
 2.  遍历`bolts`数组并在`hashmap`中搜索。
 

@@ -352,8 +352,11 @@ class GFG
 **有效方法**：一种有效方法是使用[累积哈希](https://www.geeksforgeeks.org/palindrome-substring-queries/)。 根据上述方法对字符串进行循环移位，并将该字符串的哈希值与反向字符串的哈希值进行比较。 如果两个值相同，则当前移位的字符串是回文，否则字符串再次移位。 班次的计数在任何一步都是`i`。 要使用哈希函数计算两个字符串的值：
 
 > `H(s) = ∑(31 ^ i * (S[i] –'a')) % mod, 0 ≤ i ≤ (len(s) – 1)`
-> 其中， `H(x)`为哈希函数
-> `s`为给定字符串
+>
+> 其中， `H(x)`为哈希函数。
+>
+> `s`为给定字符串。
+>
 > `mod = 10 ^ 9 + 7`
 
 使用上述哈希函数和[累积哈希技术](https://www.geeksforgeeks.org/palindrome-substring-queries/)，对所有子字符串进行迭代，并检查它是否是回文。

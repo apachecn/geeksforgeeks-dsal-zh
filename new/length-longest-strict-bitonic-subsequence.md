@@ -1,8 +1,6 @@
-# 最长严格双子序列
+# 最长严格双子序列的长度
 
 > 原文：[https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/](https://www.geeksforgeeks.org/length-longest-strict-bitonic-subsequence/)
-
-的长度
 
 给定一个包含`n`个整数的数组`arr[]`。 问题是找到最长的严格双音子序列的长度。 如果子序列先增大然后减小，且条件是在递增和递减部分中相邻项之间的绝对差仅为 1，则该子序列称为**严格**双子序列。 按升序排序的序列被视为双子序列，而降序部分为空。 类似地，降序序列被视为双子序列，而升序部分为空。
 

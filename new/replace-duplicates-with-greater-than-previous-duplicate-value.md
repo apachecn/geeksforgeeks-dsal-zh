@@ -1,8 +1,6 @@
-# 用大于以前的重复值
+# 用大于以前的重复值替换重复项
 
 > 原文：[https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/](https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/)
-
-替换重复项
 
 给定一个元素数组，并以使该数组上的所有元素都不同的方式更改该数组。 如果要替换值，则替换值应大于先前的值，并且修改后元素的总和应尽可能小。
 

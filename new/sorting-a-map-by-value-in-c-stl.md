@@ -4,7 +4,7 @@
 
 [映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)是以映射方式存储元素的关联容器。 每个元素都有一个键值和一个映射值。 任何两个映射值都不能具有相等的键值。 默认情况下， [C++](http://www.geeksforgeeks.org/c-plus-plus/) 中的`Map`根据其键以升序排序。 下面是实现此目的的各种方法：
 
-**方法 1 - 使用[偶对向量](http://www.geeksforgeeks.org/vector-in-cpp-stl/)**：想法是将映射中的所有内容复制到[对应向量中](https://www.geeksforgeeks.org/pair-in-cpp-stl/)和[使用下面给出的](https://www.geeksforgeeks.org/sorting-vector-of-pairs-in-c-set-1-sort-by-first-and-second/) [lambda 函数](https://www.geeksforgeeks.org/lambda-expression-in-c/)根据第二值对对向量进行排序：
+**方法 1 - 使用[偶对向量](http://www.geeksforgeeks.org/vector-in-cpp-stl/)**：想法是将映射中的所有内容复制到[对应向量中](https://www.geeksforgeeks.org/pair-in-cpp-stl/)和[使用下面给出的](https://www.geeksforgeeks.org/sorting-vector-of-pairs-in-c-set-1-sort-by-first-and-second/) [lambda 函数](https://www.geeksforgeeks.org/lambda-expression-in-c/)根据第二值对对向量排序：
 
 ```
 bool cmp(pair<T1, T2>& a,
@@ -79,7 +79,7 @@ GfG 3
 
 ```
 
-**方法 2 – 使用偶对集合**：想法是将映射中的所有（键值）对插入可以使用比较器函数构造的成对的集合中 根据第二个值对对进行排序。
+**方法 2 – 使用偶对集合**：想法是将映射中的所有（键值）对插入可以使用比较器函数构造的成对的集合中 根据第二个值对对排序。
 
 下面是上述方法的实现：
 

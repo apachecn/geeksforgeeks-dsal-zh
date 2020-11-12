@@ -1,4 +1,4 @@
-# 按频率对元素进行排序 | 系列 4（使用哈希的有效方法）
+# 按频率对元素排序 | 系列 4（使用哈希的有效方法）
 
 > 原文：[https://www.geeksforgeeks.org/sort-elements-frequency-set-4-efficient-approach-using-hash/](https://www.geeksforgeeks.org/sort-elements-frequency-set-4-efficient-approach-using-hash/)
 
@@ -17,11 +17,11 @@ Output : arr[] = {8, 8, 8, 2, 2, 5, 5, 6, -1, 9999999}
 
 我们在以下帖子中讨论了不同的方法：
 
-[按频率对元素进行排序 | 系列 1](https://www.geeksforgeeks.org/sort-elements-by-frequency/)
+[按频率对元素排序 | 系列 1](https://www.geeksforgeeks.org/sort-elements-by-frequency/)
 
-[按频率对元素进行排序 | 系列 2](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-2/)
+[按频率对元素排序 | 系列 2](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-2/)
 
-[按频率对数组元素进行排序 | 系列 3（使用 STL）](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-3/)
+[按频率对数组元素排序 | 系列 3（使用 STL）](https://www.geeksforgeeks.org/sort-elements-by-frequency-set-3/)
 
 以上所有方法均在`O(n Log n)`时间内工作，其中`n`是元素总数。 在这篇文章中，讨论了一种在`O(n + m Log m)`时间中工作的新方法，其中`n`是元素总数，`m`是不同元素总数。
 
@@ -29,9 +29,9 @@ Output : arr[] = {8, 8, 8, 2, 2, 5, 5, 6, -1, 9999999}
 
 1.  我们将所有元素及其计数插入哈希中。 此步骤花费`O(n)`时间，其中`n`是元素数。
 
-2.  我们将哈希的内容复制到数组（或向量）中，并按计数对其进行排序。 此步骤花费`O(m Log m)`时间，其中`m`是不同元素的总数。
+2.  我们将哈希的内容复制到数组（或向量）中，并按计数对其排序。 此步骤花费`O(m Log m)`时间，其中`m`是不同元素的总数。
 
-3.  为了在频率相同的情况下保持元素的顺序，我们使用另一个散列，该散列的键为数组的元素，而值为索引。 如果两个元素的频率相同，则根据索引对元素进行排序。
+3.  为了在频率相同的情况下保持元素的顺序，我们使用另一个散列，该散列的键为数组的元素，而值为索引。 如果两个元素的频率相同，则根据索引对元素排序。
 
 下图是上述方法的模拟：
 
