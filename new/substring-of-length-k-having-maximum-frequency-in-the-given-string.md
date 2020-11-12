@@ -14,7 +14,7 @@
 >
 > **说明**：
 >
-> 长度为 5 的子字符串 上面的字符串是`{bbbbb, bbbba, bbbaa, bbaaa, baaaa, aaaaa, aaaab, aaabb, aabba, abbab, bbaba, babab, ababa, babab, ababa}`。
+> 上面的字符串的长度为 5 的子字符串是`{bbbbb, bbbba, bbbaa, bbaaa, baaaa, aaaaa, aaaab, aaabb, aabba, abbab, bbaba, babab, ababa, babab, ababa}`。
 >
 > 在所有字符串中，子字符串`{ababa, babab}`占最大次数（为 2）。
 >
@@ -28,7 +28,7 @@
 >
 > **说明**：
 >
-> 长度为 5 的子字符串 上面的字符串是`{heisa, eisag, isago, sagoo, agood, goodb, oodbo, odboy}`。
+> 上面的字符串的长度为 5 的子字符串是`{heisa, eisag, isago, sagoo, agood, goodb, oodbo, odboy}`。
 >
 > 所有这些仅发生一次。 但是，按字典顺序，最小的字符串是`"agood"`。
 >

@@ -2,14 +2,14 @@
 
 > 原文：[https://www.geeksforgeeks.org/split-array-into-two-equal-length-subsets-such-that-all-repetitions-of-a-number-lies-in-a-single-subset/](https://www.geeksforgeeks.org/split-array-into-two-equal-length-subsets-such-that-all-repetitions-of-a-number-lies-in-a-single-subset/)
 
-给定由 `N`个整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是检查是否有可能将整数分成两个等长的子集，以便所有 任何数组元素的重复都属于同一子集。 如果发现是真的，则打印`Yes`。 否则，打印`No`。
+给定由 `N`个整数组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是检查是否有可能将整数分成两个等长的子集，以便任何数组元素的重复都属于同一子集。 如果发现是真的，则打印`Yes`。 否则，打印`No`。
 
 **示例**：
 
 > **输入**：`arr[] = {2, 1, 2, 3}`
 > **输出**：`Yes`
 > **说明**：
-> 一种可能的方式 数组的除法是`{1, 3}`和`{2, 2}`
+> 一种数组分割的可能方式是`{1, 3}`和`{2, 2}`
 > 
 > **输入**：`arr [] = {1, 1, 1, 1}`
 > **输出**：`No`
@@ -20,7 +20,7 @@
 
 **辅助空间**：`O(n)`
 
-**有效方法**：可以通过将[给定数组](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的所有元素的频率存储在数组`freq[]`中来优化上述方法。 为了将元素分为两个相等的集合，每个集合中必须存在`N / 2`个元素。 因此，要将给定数组`arr[]`分为`2`个相等的部分，`freq[]`中必须有一些整数子集 总和为`N / 2`。 请按照以下步骤解决问题：
+**有效方法**：可以通过将[给定数组](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的所有元素的频率存储在数组`freq[]`中来优化上述方法。 为了将元素分为两个相等的集合，每个集合中必须存在`N / 2`个元素。 因此，要将给定数组`arr[]`分为`2`个相等的部分，`freq[]`中必须有一些总和为`N / 2`的整数子集。 请按照以下步骤解决问题：
 
 1.  将每个元素的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) `M`中。
 

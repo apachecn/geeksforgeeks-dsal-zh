@@ -14,7 +14,7 @@
 >
 > **输出**：
 >
-> `K`个最小斐波那契数的总和 是 7
+> `K`个最小斐波那契数的总和是 7
 >
 > `K`个最小斐波那契数的乘积是 10
 >
@@ -32,7 +32,7 @@
 >
 > **输出**：
 >
-> `K`个最小斐波那契数之和 是 10
+> `K`个最小斐波那契数的总和是 10
 >
 > `K`个最小斐波那契数的乘积是 30
 >
@@ -40,7 +40,7 @@
 >
 > `K`个最小斐波那契数的乘积是 195
 
-**方法**：想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契节点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)到最大值，并将其存储在[集合](https://www.geeksforgeeks.org/set-in-java/)中，以 使检查变得容易和高效（在`O(1)`时间内）。
+**方法**：想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契节点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)到最大值，并将其存储在[集合](https://www.geeksforgeeks.org/set-in-java/)中，使检查变得容易和高效（在`O(1)`时间内）。
 
 1.  遍历整个数组并获得列表中的最大值。
 
