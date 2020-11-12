@@ -46,91 +46,102 @@
 
 下面是上述方法的实现：
 
-```
-// Java program to find the values
-// strictly greater than the element
-// and present in the array
-import java.io.*;
-import java.util.*;
-public class GFG {
-// Function to find the values
-// strictly greater than the element
-// and present in the array
-public static void operations(
-int n, long A[], long B[])
-{
-// Treeset to store the
-// values of the array A
-TreeSet<Long> tree
-= new TreeSet<Long>();
-[
-// HashMap to store the frequencies
-// of the values in array A
-HashMap<Long, Integer> freqMap
-= new HashMap<Long, Integer>();
-// Iterating through the array
-// and add values in the treeset
-for ( int j = 0 ; j < n; j++) {
-long x = A[j];
-tree.add(x);
-// Updating the frequencies
-if (freqMap.containsKey(x)) {
-freqMap.put(x, freqMap.get(x) + 1 );
-}
-else {
-freqMap.put(x, 1 );
-}
-}
-// Finding the strictly greater value
-// in the array A[] using "higher()"
-// function and also reducing the
-// frequency of that value because it
-// has to be used only once
-[
-[HTG10 7] for ( int j = 0 ; j < n; j++) {
-long x = B[j];
-// If the higher value exists
-if (tree.higher(x) != null ) {
-System.out.print(tree.higher(x) + " " );
-[
-// If the frequency value is 1
-// then remove it from treeset
-// because it has been used
-// and its frequency becomes 0
-if (freqMap.get(tree.higher(x)) == 1 ) {
-tree.remove(tree.higher(x));
-}
-// Else, reducing the frequency
-// by 1
-else {
-freqMap.put(
-tree.higher(x),
-freqMap.get(tree.higher(x))
-[HTG16 2] 1 );
-}
-}
-// If the value is not present
-// then print null
-else {
-System.out.print( "null " );
-}
-}
-}
-// Driver code
-public static void main(String args[])
-{
-的
-int n = 12 ;
-long A[] = new long [] { 9 , 5 , 100 , 4 ,
-89 , 2 , 0 , 2 ,
-89 , 77 , 77 , 77 };
-long B[] = new long [] { 0 , 18 , 60 , 34 ,
-50 , 29 , 4 , 20 ,
-48 , 77 , 2 , 8 };
-operations(n, A, B);
-}
-}
-]
+```java
+// Java program to find the values 
+// strictly greater than the element 
+// and present in the array 
+  
+import java.io.*; 
+import java.util.*; 
+public class GFG { 
+  
+    // Function to find the values 
+    // strictly greater than the element 
+    // and present in the array 
+    public static void operations( 
+        int n, long A[], long B[]) 
+    { 
+  
+        // Treeset to store the 
+        // values of the array A 
+        TreeSet<Long> tree 
+            = new TreeSet<Long>(); 
+  
+        // HashMap to store the frequencies 
+        // of the values in array A 
+        HashMap<Long, Integer> freqMap 
+            = new HashMap<Long, Integer>(); 
+  
+        // Iterating through the array 
+        // and add values in the treeset 
+        for (int j = 0; j < n; j++) { 
+            long x = A[j]; 
+            tree.add(x); 
+  
+            // Updating the frequencies 
+            if (freqMap.containsKey(x)) { 
+  
+                freqMap.put(x, freqMap.get(x) + 1); 
+            } 
+            else { 
+  
+                freqMap.put(x, 1); 
+            } 
+        } 
+  
+        // Finding the strictly greater value 
+        // in the array A[] using "higher()" 
+        // function and also reducing the 
+        // frequency of that value because it 
+        // has to be used only once 
+        for (int j = 0; j < n; j++) { 
+            long x = B[j]; 
+  
+            // If the higher value exists 
+            if (tree.higher(x) != null) { 
+                System.out.print(tree.higher(x) + " "); 
+  
+                // If the frequency value is 1 
+                // then remove it from treeset 
+                // because it has been used 
+                // and its frequency becomes 0 
+                if (freqMap.get(tree.higher(x)) == 1) { 
+                    tree.remove(tree.higher(x)); 
+                } 
+  
+                // Else, reducing the frequency 
+                // by 1 
+                else { 
+                    freqMap.put( 
+                        tree.higher(x), 
+                        freqMap.get(tree.higher(x)) 
+                            - 1); 
+                } 
+            } 
+  
+            // If the value is not present 
+            // then print null 
+            else { 
+                System.out.print("null "); 
+            } 
+        } 
+    } 
+  
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+  
+        int n = 12; 
+        long A[] = new long[] { 9, 5, 100, 4, 
+                                89, 2, 0, 2, 
+                                89, 77, 77, 77 }; 
+        long B[] = new long[] { 0, 18, 60, 34, 
+                                50, 29, 4, 20, 
+                                48, 77, 2, 8 }; 
+  
+        operations(n, A, B); 
+    } 
+} 
 ```
 
 **输出**：

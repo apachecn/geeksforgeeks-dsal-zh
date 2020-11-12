@@ -45,86 +45,99 @@ leaves 1, 11, 4 and 10\. Therefore result is
 
 下面是上述方法的实现：
 
-```
-// C++ program to find product of sums
-// of data of leaves at same levels
-// using map in STL
-#include <bits/stdc++.h>
-using namespace std;
-// Binary Tree Node
-struct Node {
-int data;
-Node* left;
-Node* right;
-};
-// Utitlity function to create
-// a new Tree node
-Node* newNode( int data)
-{
-Node* temp = new Node;
-temp->data = data;
-temp->left = temp->right = NULL;
-return temp;
-}
-// Helper function to calculate sum of
-// leaf nodes at same level and store in
-// an unordered_map
-void productOfLevelSumUtil(Node* root,
-unordered_map< int , int >& level_sum,
-int level)
-{
-if (!root)
-return ;
-// Check if current node is a leaf node
-// If yes add it to sum of current level
-if (!root->left && !root->right)
-level_sum[level] += root->data;
-的
-// Traverse left subtree
-productOfLevelSumUtil(root->left, level_sum,
-level + 1);
-// Traverse right subtree
-productOfLevelSumUtil(root->right, level_sum,
-level + 1);
-}
-// Function to calculate product of level sums
-int productOfLevelSum(Node* root)
-{
-// Create a map to store sum of leaf
-// nodes at same levels.
-unordered_map< int , int > level_sum;
-// Call the helper function to
-// calculate level sums of leaf nodes
-productOfLevelSumUtil(root, level_sum, 0);
-// variable to store final product
-int prod = 1;
-]
-// Traverse the map to calculate product
-// of level sums
-for ( auto it = level_sum.begin();
-it != level_sum.end(); it++)
-prod *= it->second;
-// Return the result
-return prod;
-}
-// Driver Code
-int main()
-{
-// Creating Binary Tree
-Node* root = newNode(2);
-[H TG144] root->left = newNode(7);
-root->right = newNode(5);
-root->left->right = newNode(6);
-root->left->left = newNode(8);
-root->left->right->left = newNode(1);
-root->left->right->right = newNode(11);
-root->right->right = newNode(9);
-root->right->right->left = newNode(4);
-root->right->right->right = newNode(10); ]
-cout << "Final product is = "
-<< productOfLevelSum(root) << endl;
-return 0;
-}
+```cpp
+// C++ program to find product of sums 
+// of data of leaves at same levels 
+// using map in STL 
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+// Binary Tree Node 
+struct Node { 
+    int data; 
+    Node* left; 
+    Node* right; 
+}; 
+  
+// Utitlity function to create 
+// a new Tree node 
+Node* newNode(int data) 
+{ 
+    Node* temp = new Node; 
+    temp->data = data; 
+    temp->left = temp->right = NULL; 
+    return temp; 
+} 
+  
+// Helper function to calculate sum of 
+// leaf nodes at same level and store in 
+// an unordered_map 
+void productOfLevelSumUtil(Node* root, 
+       unordered_map<int, int>& level_sum, 
+                                int level) 
+{ 
+  
+    if (!root) 
+        return; 
+  
+    // Check if current node is a leaf node 
+    // If yes add it to sum of current level 
+    if (!root->left && !root->right) 
+        level_sum[level] += root->data; 
+  
+    // Traverse left subtree 
+    productOfLevelSumUtil(root->left, level_sum, 
+                          level + 1); 
+  
+    // Traverse right subtree 
+    productOfLevelSumUtil(root->right, level_sum, 
+                          level + 1); 
+} 
+  
+// Function to calculate product of level sums 
+int productOfLevelSum(Node* root) 
+{ 
+    // Create a map to store sum of leaf 
+    // nodes at same levels. 
+    unordered_map<int, int> level_sum; 
+  
+    // Call the helper function to 
+    // calculate level sums of leaf nodes 
+    productOfLevelSumUtil(root, level_sum, 0); 
+  
+    // variable to store final product 
+    int prod = 1; 
+  
+    // Traverse the map to calculate product 
+    // of level sums 
+    for (auto it = level_sum.begin();  
+                it != level_sum.end(); it++) 
+        prod *= it->second; 
+  
+    // Return the result 
+    return prod; 
+} 
+  
+// Driver Code 
+int main() 
+{ 
+    // Creating Binary Tree 
+    Node* root = newNode(2); 
+    root->left = newNode(7); 
+    root->right = newNode(5); 
+    root->left->right = newNode(6); 
+    root->left->left = newNode(8); 
+    root->left->right->left = newNode(1); 
+    root->left->right->right = newNode(11); 
+    root->right->right = newNode(9); 
+    root->right->right->left = newNode(4); 
+    root->right->right->right = newNode(10); 
+  
+    cout << "Final product is = "
+         << productOfLevelSum(root) << endl; 
+  
+    return 0; 
+} 
 ```
 
 **输出**：

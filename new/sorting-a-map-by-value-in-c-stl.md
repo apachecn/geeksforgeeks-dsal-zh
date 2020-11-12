@@ -22,52 +22,61 @@ same or different.
 
 下面是上述方法的实现：
 
-```
-// C++ program for the above approach
-#include <bits/stdc++.h>
-using namespace std;
-[
-// Comparator function to sort pairs
-// according to second value
-bool cmp(pair<string, int >& a,
-pair<string, int >& b)
-{
-return a.second < b.second;
-}
-// Function to sort the map according
-// to value in a (key-value) pairs
-void sort(map<string, int >& M)
-{
-// Declare vector of pairs
-vector<pair<string, int > > A;
-// Copy key-value pair from Map
-// to vector of pairs
-for ( auto & it : M) {
-A.push_back(it);
-[HT G50]
-// Sort using comparator function
-sort(A.begin(), A.end(), cmp);
-// Print the sorted value
-for ( auto & it : A) {
-cout << it.first << ' '
-<< it.second << endl;
-}
-}
-// Driver Code
-int main()
-{
-// Declare Map
-map<string, int > M;
-// Given Map
-M = { { "GfG" , 3 }, ]
-{ "To" , 2 },
-{ "Welcome" , 1 } };
-的
-[
-// Function Call
-sort(M);
-return 0;
-}
+```cpp
+// C++ program for the above approach 
+  
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+// Comparator function to sort pairs 
+// according to second value 
+bool cmp(pair<string, int>& a, 
+         pair<string, int>& b) 
+{ 
+    return a.second < b.second; 
+} 
+  
+// Function to sort the map according 
+// to value in a (key-value) pairs 
+void sort(map<string, int>& M) 
+{ 
+  
+    // Declare vector of pairs 
+    vector<pair<string, int> > A; 
+  
+    // Copy key-value pair from Map 
+    // to vector of pairs 
+    for (auto& it : M) { 
+        A.push_back(it); 
+    } 
+  
+    // Sort using comparator function 
+    sort(A.begin(), A.end(), cmp); 
+  
+    // Print the sorted value 
+    for (auto& it : A) { 
+  
+        cout << it.first << ' '
+             << it.second << endl; 
+    } 
+} 
+  
+// Driver Code 
+int main() 
+{ 
+  
+    // Declare Map 
+    map<string, int> M; 
+  
+    // Given Map 
+    M = { { "GfG", 3 }, 
+          { "To", 2 }, 
+          { "Welcome", 1 } }; 
+  
+    // Function Call 
+    sort(M); 
+    return 0; 
+} 
 ```
 
 **输出**：
@@ -83,54 +92,62 @@ GfG 3
 
 下面是上述方法的实现：
 
-```
-// C++ program for the above approach
-#include <bits/stdc++.h>
-using namespace std;
-// Comparison function for sorting the
-// set by increasing order of its pair's
-// second value
-struct comp {
-template < typename T>
-// Comparator function
-bool operator()( const T& l,
-const T& r) const
-{
-if (l.second != r.second) {
-return l.second < r.second;
-}
-return l.first < r.first;
-}
-};
-// Function to sort the map according
-// to value in a (key-value) pairs
-void sort(map<string, int >& M)
-{ [H TG167]
-// Declare set of pairs and insert
-// pairs according to the comparator
-// function comp()
-set<pair<string, int >, comp> S(M.begin(),
-M.end());
-// Print the sorted value
-for ( auto & it : S) {
-cout << it.first << ' '
-<< it.second << endl;
-}
-}
-// Driver Code
-int main()
-{
-// Declare Map
-map<string, int > M;
-[
-// Given Map
-M = { { "GfG" , 3 },
-{ "To" , 2 }, [
-{ "Welcome" , 1 } };
-// Function Call
-sort(M);
-return 0;
-}
+```cpp
+// C++ program for the above approach 
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+// Comparison function for sorting the 
+// set by increasing order of its pair's 
+// second value 
+struct comp { 
+    template <typename T> 
+  
+    // Comparator function 
+    bool operator()(const T& l, 
+                    const T& r) const
+    { 
+        if (l.second != r.second) { 
+            return l.second < r.second; 
+        } 
+        return l.first < r.first; 
+    } 
+}; 
+  
+// Function to sort the map according 
+// to value in a (key-value) pairs 
+void sort(map<string, int>& M) 
+{ 
+  
+    // Declare set of pairs and insert 
+    // pairs according to the comparator 
+    // function comp() 
+    set<pair<string, int>, comp> S(M.begin(), 
+                                   M.end()); 
+  
+    // Print the sorted value 
+    for (auto& it : S) { 
+        cout << it.first << ' '
+             << it.second << endl; 
+    } 
+} 
+  
+// Driver Code 
+int main() 
+{ 
+  
+    // Declare Map 
+    map<string, int> M; 
+  
+    // Given Map 
+    M = { { "GfG", 3 }, 
+          { "To", 2 }, 
+          { "Welcome", 1 } }; 
+  
+    // Function Call 
+    sort(M); 
+    return 0; 
+} 
 ```
 
 **输出**：
@@ -150,42 +167,49 @@ GfG 3
 
 下面是上述方法的实现：
 
-```
-// C++ program for the above approach
-#include <bits/stdc++.h>
-using namespace std;
-// Function to sort the map according
-// to value in a (key-value) pairs
-void sort(map<string, int >& M)
-{
-的
-// Declare a multimap
-multimap< int , string> MM;
-// Insert every (key-value) pairs from
-// map M to multimap MM as (value-key)
-// pairs
-for ( auto & it : M) {
-MM.insert({ it.second, it.first });
-}
-// Print the multimap
-for ( auto & it : MM) {
-cout << it.second << ' '
-<< it.first << endl;
-}
-}
-// Driver Code
-int main()
-{
-// Declare Map
-map<string, int > M;
-// Given Map
-M = { { "GfG" , 3 },
-{ "To" , 2 },
-{ "Welcome" , 1 } };
-// Function Call
-sort(M);
-return 0;
-}
+```cpp
+// C++ program for the above approach 
+#include <bits/stdc++.h> 
+using namespace std; 
+  
+// Function to sort the map according 
+// to value in a (key-value) pairs 
+void sort(map<string, int>& M) 
+{ 
+  
+    // Declare a multimap 
+    multimap<int, string> MM; 
+  
+    // Insert every (key-value) pairs from 
+    // map M to multimap MM as (value-key) 
+    // pairs 
+    for (auto& it : M) { 
+        MM.insert({ it.second, it.first }); 
+    } 
+  
+    // Print the multimap 
+    for (auto& it : MM) { 
+        cout << it.second << ' '
+             << it.first << endl; 
+    } 
+} 
+  
+// Driver Code 
+int main() 
+{ 
+  
+    // Declare Map 
+    map<string, int> M; 
+  
+    // Given Map 
+    M = { { "GfG", 3 }, 
+          { "To", 2 }, 
+          { "Welcome", 1 } }; 
+  
+    // Function Call 
+    sort(M); 
+    return 0; 
+} 
 ```
 
 **输出**：
