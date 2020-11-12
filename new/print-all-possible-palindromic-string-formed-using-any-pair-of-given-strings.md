@@ -29,9 +29,9 @@
 
 **朴素的方法**：朴素的方法是迭代[给定字符串数组](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)中的所有可能对，并检查字符串的连接是否形成回文。 如果是，则打印该对并检查下一对。
 
-**时间复杂度**：`O(N ^ 2)`
+**时间复杂度**：`O(N ^ 2)`。
 
-**辅助空间**：`O(1)`
+**辅助空间**：`O(1)`。
 
 **有效方法**：可以使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)优化上述方法。 步骤如下：
 
@@ -213,9 +213,9 @@ abcba
 
 ```
 
-**时间复杂度**：`O(n)`
+**时间复杂度**：`O(n)`。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 
 

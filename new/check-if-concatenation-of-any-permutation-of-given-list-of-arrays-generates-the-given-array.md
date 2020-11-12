@@ -26,9 +26,9 @@
 
 **朴素的方法**：最简单的方法是[遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`arr[]`，对于每个元素`arr[i]`，检查是否列表中存在任何从`arr[i]`开始的数组。 如果发现为真，则增加`i`，同时发现数组中存在的元素等于`arr[i]`。 如果它们不相等，则打印`No`。 重复上述步骤，直到`i < N`为止。 遍历给定数组的元素后，打印`Yes`。
 
-**时间复杂度**：`O(N ^ 2)`
+**时间复杂度**：`O(N ^ 2)`。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 **高效方法**：这个想法是通过使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)的概念，将给定数组`arr[]`中存在的元素的索引存储到[映射](https://www.geeksforgeeks.org/map-interface-java-examples/)数据结构。 请按照以下步骤解决问题：
 
@@ -486,7 +486,7 @@ Yes
 
 **时间复杂度**：`O(N * log N)`其中`N`是给定数组的长度。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 
 

@@ -315,7 +315,7 @@ public static void Main(string []args)
 
 ```
 
-**时间复杂度**：`O(N ^ 2)`
+**时间复杂度**：`O(N ^ 2)`。
 
 **有效方法**：可以使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)和 [Rabin-Karp 算法](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/)来存储字符串的**前缀和后缀哈希**，从而优化上述方法 。 请按照以下步骤解决问题：
 
@@ -510,7 +510,7 @@ int main()
 
 ```
 
-**时间复杂度**：`O(N * log(10 ^ 9))`
+**时间复杂度**：`O(N * log(10 ^ 9))`。
 
 **空间复杂度**：`O(n)`
 

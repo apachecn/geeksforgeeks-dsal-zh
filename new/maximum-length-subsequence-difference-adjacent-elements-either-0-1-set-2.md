@@ -238,9 +238,9 @@ Maximum length subsequence = 5
 
 ```
 
-**时间复杂度**：`O(n)`
+**时间复杂度**：`O(n)`。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 感谢 **Neeraj** 在此帖子的[评论](https://www.geeksforgeeks.org/maximum-length-subsequence-difference-adjacent-elements-either-0-1/)中提出了上述解决方案。
 

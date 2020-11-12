@@ -28,9 +28,9 @@
 
 **朴素的方法**：朴素的方法是[将不同元素存储在数组`temp[]`中](https://www.geeksforgeeks.org/print-distinct-elements-given-integer-array/)，并打印出数组`temp[]`的最大和最小元素差。
 
-**时间复杂度**：`O(N ^ 2)`
+**时间复杂度**：`O(N ^ 2)`。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 **有效方法**：可以使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)来优化上述幼稚方法。 步骤如下：
 
@@ -327,7 +327,7 @@ public static void Main(String[] args)
 
 **时间复杂度**：`O(n)`；
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 
 

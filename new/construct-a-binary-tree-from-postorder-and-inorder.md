@@ -504,7 +504,7 @@ Preorder of the constructed tree :
 1 2 4 8 5 3 6 7 
 ```
 
-**时间复杂度**：`O(N ^ 2)`
+**时间复杂度**：`O(N ^ 2)`。
 
 **优化的方法**：我们可以使用哈希（C++ 中的`unordered_map`或 Java 中的`HashMap`）优化上述解决方案。 我们将有序遍历的索引存储在哈希表中。 这样就可以完成`O(1)`搜索。
 
@@ -623,7 +623,7 @@ Preorder of the constructed tree :
 1 2 4 8 5 3 6 7 
 ```
 
-**时间复杂度**：`O(n)`
+**时间复杂度**：`O(n)`。
 
 **另一种方法**：
 

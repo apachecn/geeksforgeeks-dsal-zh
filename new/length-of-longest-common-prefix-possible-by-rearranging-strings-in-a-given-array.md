@@ -24,7 +24,7 @@
 
 **朴素的方法**：解决此问题的最简单方法是[生成给定数组的每个字符串的所有可能排列](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)，并找到所有字符串中最长的[公共前缀](https://www.geeksforgeeks.org/longest-common-prefix-using-binary-search/)。 最后，打印最长的公共前缀的长度。
 
-***时间复杂度**：`O(N * log M * (M!) ^ N)`
+***时间复杂度**：`O(N * log M * (M!) ^ N)`。
 
 **辅助空间**：`O(M)`，`N`是字符串数，`M`是最长字符串的长度。
 
@@ -132,9 +132,9 @@ int main()
 
 ```
 
-**时间复杂度**：`O(N * (M + 256))`
+**时间复杂度**：`O(N * (M + 256))`。
 
-**辅助空间**：`O(N * 256)`
+**辅助空间**：`O(N * 256)`。
 
 
 

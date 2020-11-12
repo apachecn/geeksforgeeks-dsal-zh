@@ -28,7 +28,7 @@
 
 **时间复杂度**：`O(N!)`，其中`N`是给定字符串的*长度。
 
-**辅助空间**：`O(1)`
+**辅助空间**：`O(1)`。
 
 **更好的方法**：更好的方法是使用[贪婪方法](https://www.geeksforgeeks.org/greedy-algorithms/)。 步骤如下：
 
@@ -46,7 +46,7 @@
 
 **时间复杂度**：`O(N ^ 2)`，其中`N`是给定字符串的长度。
 
-**辅助空间**：`O(1)`
+**辅助空间**：`O(1)`。
 
 **有效方法**：想法是使用[**分段树**](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)和[**散列**](http://www.geeksforgeeks.org/hashing-data-structure/)。 步骤如下：
 
@@ -272,7 +272,7 @@ int main()
 
 **时间复杂度**：`O(N * log N)`，其中`N`是字符串的长度。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 
 

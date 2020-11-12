@@ -486,7 +486,7 @@ echo minimumOperations($P, $n);
 
 ```
 
-**时间复杂度**：`O(N * LogN)`
+**时间复杂度**：`O(N * LogN)`。
 
 
 

@@ -260,9 +260,9 @@ public static void Main(string[] args)
 
 ```
 
-**时间复杂度**：`O(L * W)`
+**时间复杂度**：`O(L * W)`。
 
-**辅助空间**：`O(L * W)`
+**辅助空间**：`O(L * W)`。
 
 
 

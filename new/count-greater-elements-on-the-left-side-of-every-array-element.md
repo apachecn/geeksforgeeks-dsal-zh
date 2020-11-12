@@ -32,9 +32,9 @@
 
 **朴素的方法**：解决该问题的最简单方法是遍历数组，对于每个数组元素，向左遍历，并将每个元素与当前元素进行比较。 最后，为每个数组元素在其左侧打印更多元素的计数。
 
-**时间复杂度**：`O(N ^ 2)`
+**时间复杂度**：`O(N ^ 2)`。
 
-**辅助空间**：`O(1)`
+**辅助空间**：`O(1)`。
 
 **有效方法**：可以使用[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)容器解决此问题，这些容器由[自平衡二分搜索树](https://www.geeksforgeeks.org/self-balancing-binary-search-trees-comparisons/)实现。 请按照以下步骤解决问题。
 
@@ -122,7 +122,7 @@ int main()
 
 **时间复杂度**：`O(N ^ 2)`，因为距离函数取`O(n)`，但上述实现非常简单，并且比朴素的方法效果更好 一般情况下的算法。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 **注意**：上述方法适用于唯一元素，但对于重复元素，只需将[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)替换为[多重集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)。
 

@@ -30,7 +30,7 @@ Explanation : Sub-string -> "GEEKSFOR"
 
 2.  子字符串的长度应最小。
 
-**时间复杂度**：`O(n ^ 3)`
+**时间复杂度**：`O(n ^ 3)`。
 
 ## C++
 

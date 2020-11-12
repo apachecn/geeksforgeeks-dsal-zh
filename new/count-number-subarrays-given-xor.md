@@ -634,7 +634,7 @@ Number of subarrays having given XOR is 4
 
 ```
 
-**时间复杂度**：`O(n)`
+**时间复杂度**：`O(n)`。
 
 **替代方法**：使用 Python 词典存储前缀 XOR
 
@@ -677,7 +677,7 @@ if __name__ == '__main__':
 Number of subarrays having given XOR is 4
 ```
 
-**时间复杂度**：`O(n)`
+**时间复杂度**：`O(n)`。
 
 **空间复杂度**：`O(n)`
 

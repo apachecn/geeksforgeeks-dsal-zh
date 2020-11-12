@@ -22,9 +22,9 @@
 
 [哈希](http://www.geeksforgeeks.org/hashing-data-structure/)方法：有关基于[`Hashmap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)的方法，请参考[先前的文章](https://www.geeksforgeeks.org/check-if-two-given-strings-are-isomorphic-to-each-other/)。
 
-***时间复杂度**：`O(N)`
+**时间复杂度**：`O(N)`。
 
-**辅助空间**：`O(256)`
+**辅助空间**：`O(256)`。
 
 [基于 ASCII 值](https://en.wikipedia.org/wiki/ASCII#Character_order)的方法：该想法与上述方法类似。 请按照以下步骤解决问题：
 
@@ -99,9 +99,9 @@ Yes
 
 ```
 
-***时间复杂度**：`O(N)`
+***时间复杂度**：`O(N)`。
 
-**辅助空间**：`O(256)`
+**辅助空间**：`O(256)`。
 
 
 

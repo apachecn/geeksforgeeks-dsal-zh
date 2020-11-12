@@ -162,7 +162,7 @@ class GFG {
 
 **时间复杂度**：`O(K * log(N))`，其中`N`是给定数组的长度，`K`是给定的操作数。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 **有效方法**：想法是通过[使用](https://www.geeksforgeeks.org/count-frequencies-elements-array-o1-extra-space-time/)[散列](https://www.geeksforgeeks.org/hashing-data-structure/)概念，存储给定数组的每个元素的频率。 请按照以下步骤解决问题：
 
@@ -253,7 +253,7 @@ class GFG {
 
 **时间复杂度**：`O(n)`，其中`N`是给定数组的长度。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 
 

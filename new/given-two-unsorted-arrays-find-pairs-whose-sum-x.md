@@ -218,9 +218,9 @@ findPairs($arr1, $arr2, 
 
 ```
 
-**时间复杂度**：`O(N ^ 2)`
+**时间复杂度**：`O(N ^ 2)`。
 
-**辅助空间**：`O(1)`
+**辅助空间**：`O(1)`。
 
 此问题的**有效解决方案**是[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)。 哈希表是使用 C++ 中的[`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)实现的。
 
@@ -421,9 +421,9 @@ class GFG {
 
 ```
 
-**时间复杂度**：`O(max(n, m))`
+**时间复杂度**：`O(max(n, m))`。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 本文由 [DANISH_RAZA](https://www.facebook.com/danish.raza.98096721) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

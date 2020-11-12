@@ -20,9 +20,9 @@
 
 **朴素的方法**：解决问题的最简单方法是[从给定数组生成所有子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并使用[`HashSet`](http://www.geeksforgeeks.org/hashset-in-java/)x检查它是否包含任何重复项。 查找满足条件的最长子数组。
 
- ***时间复杂度**：`O(N ^ 3 logN)`
+ ***时间复杂度**：`O(N ^ 3 logN)`。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 **有效方法**：可以使用[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)优化上述方法。 请按照以下步骤解决问题：
 
@@ -247,9 +247,9 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度**：`O(NlogN)`
+**时间复杂度**：`O(NlogN)`。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 
 

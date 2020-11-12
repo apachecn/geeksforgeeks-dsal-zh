@@ -22,9 +22,9 @@
 
 **朴素的方法**：解决问题的最简单方法是[生成所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，并且[遍历其余数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，以保留严格限制的数组元素的数量 大于和小于整数`K`。 然后，选择最小的子数组，该子数组的删除将给出具有相等数量的较小和较大元素的数组。
 
-**时间复杂度**：`O(N ^ 2)`
+**时间复杂度**：`O(N ^ 2)`。
 
-**辅助空间**：`O(N ^ 2)`
+**辅助空间**：`O(N ^ 2)`。
 
 **高效方法**：想法是使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)，并对数组进行一些修改以在`O(n)`时间内解决该问题。 给定的数组可以具有 3 种类型的元素：
 
@@ -495,9 +495,9 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度**：`O(n)`
+**时间复杂度**：`O(n)`。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 
 

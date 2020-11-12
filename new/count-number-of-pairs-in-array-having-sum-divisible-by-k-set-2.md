@@ -249,9 +249,9 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度**：`O(n)`
+**时间复杂度**：`O(n)`。
 
-**辅助空间**：`O(K)`
+**辅助空间**：`O(K)`。
 
 
 

@@ -448,7 +448,7 @@ public static void Main(string[] args) 
 
 ```
 
-**时间复杂度**：`O(n)`
+**时间复杂度**：`O(n)`。
 
 
 

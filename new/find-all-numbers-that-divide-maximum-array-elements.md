@@ -335,7 +335,7 @@ public static void Main(String[] args) 
 
 ```
 
-**时间复杂度**：`O(N * sqrt(max(arr)))`
+**时间复杂度**：`O(N * sqrt(max(arr)))`。
 
 
 

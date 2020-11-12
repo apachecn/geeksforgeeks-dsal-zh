@@ -490,7 +490,7 @@ public static void Main(String[] args)
 
 **时间复杂度**：`O(n)`；
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 [**滑动窗口方法**](https://www.geeksforgeeks.org/window-sliding-technique/) ：
 
@@ -911,7 +911,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度**：`O(n)`
+**时间复杂度**：`O(n)`。
 
 
 

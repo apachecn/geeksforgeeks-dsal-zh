@@ -279,7 +279,7 @@ public static void Main(String[] args)
 3
 ```
 
-**时间复杂度**：`O(n)`
+**时间复杂度**：`O(n)`。
 
 **辅助空间**：`O(X)`其中`X`是给定数组中的最大元素。
 

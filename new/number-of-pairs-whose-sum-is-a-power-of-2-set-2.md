@@ -18,7 +18,7 @@
 
 **朴素的方法**：解决该问题的最简单方法是[从给定数组生成所有可能的对](https://www.geeksforgeeks.org/find-all-pairs-possible-from-the-given-array/)，并且对于每对，[检查该对的和是否是 2 的幂](https://www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/)。
 
-***时间复杂度**：`O(N ^ 2)`
+***时间复杂度**：`O(N ^ 2)`。
 
 **辅助空间**：`O(1)`*
 
@@ -175,9 +175,9 @@ class GFG {
 
 ```
 
-**时间复杂度**：`O(NlogN)`
+**时间复杂度**：`O(NlogN)`。
 
-**辅助空间**：`O(1)`
+**辅助空间**：`O(1)`。
 
 
 

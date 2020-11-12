@@ -304,7 +304,7 @@ public static void Main(string[] args)
 
 ```
 
-**时间复杂度**：`O(N * log2(N))`
+**时间复杂度**：`O(N * log2(N))`。
 
 
 

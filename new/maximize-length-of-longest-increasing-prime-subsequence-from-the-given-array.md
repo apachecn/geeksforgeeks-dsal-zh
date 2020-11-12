@@ -28,9 +28,9 @@
 
 **朴素的方法**：最简单的方法是将给定数组的所有元素更新为最接近的较小质数或最接近的较大质数，然后[生成给定数组的所有可能子序列](https://www.geeksforgeeks.org/generating-all-possible-subsequences-using-recursion/)排列并按升序打印由[质数](https://www.geeksforgeeks.org/prime-numbers/)组成的最长子序列的长度。
 
-**时间复杂度**：`O(2 ^ N)`
+**时间复杂度**：`O(2 ^ N)`。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 **高效方法**：想法是使用[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)方法来优化上述方法。 此问题是[最长递增质数子序列（LIPS）问题](https://www.geeksforgeeks.org/length-of-longest-increasing-prime-subsequence-from-a-given-array/)的基本变体。 请按照以下步骤解决问题。
 
@@ -210,9 +210,9 @@ public class Main {
 
 ```
 
-**时间复杂度**：`O(N ^ 2 logN)`
+**时间复杂度**：`O(N ^ 2 logN)`。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 
 

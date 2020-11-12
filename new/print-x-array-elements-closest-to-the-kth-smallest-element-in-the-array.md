@@ -18,9 +18,9 @@
 
 **朴素的方法**：解决此问题的最简单方法是[对数组排序](https://www.geeksforgeeks.org/sorting-algorithms/)，并使用[双指针技术](https://www.geeksforgeeks.org/two-pointers-technique/)，打印最接近给定数组的第`K`个最小元素的`X`。
 
-**时间复杂度**：`O(N * log N)`
+**时间复杂度**：`O(N * log N)`。
 
-**辅助空间**：`O(1)`
+**辅助空间**：`O(1)`。
 
 **有效方法**：为了优化上述方法，其思想是使用[中值选择算法](https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/)来有效计算给定数组的第`K`个最小元素的值 。 请按照以下步骤解决问题：
 
@@ -240,9 +240,9 @@ if __name__ == '__main__':
 
 ```
 
-**时间复杂度**：`O(n)`
+**时间复杂度**：`O(n)`。
 
-**辅助空间**：`O(n)`
+**辅助空间**：`O(n)`。
 
 
 
