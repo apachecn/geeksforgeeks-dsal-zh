@@ -104,9 +104,9 @@ public class disjoint1 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A Simple python 3 program to check 
 # if two sets are disjoint 
@@ -343,9 +343,9 @@ public class disjoint1 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A Simple Python 3 program to check 
 # if two sets are disjoint 

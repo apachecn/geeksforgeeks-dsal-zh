@@ -10,13 +10,13 @@
 
 > **输入**：`str = "We promptly judged antique ivory buckles for the next prize"`
 > 
-> **输出**：是
+> **输出**：`Yes`
 > 
 > **说明**：在上面的字符串中，`str`具有所有英语字母。
 > 
 > **输入**：`str = "We promptly judged antique ivory buckles for the prize"`
 > 
-> **输出**：否
+> **输出**：`No`
 
 **方法 1：不使用 STL**
 

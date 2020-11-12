@@ -350,7 +350,7 @@ the distinct characters of given string.
 
     ```
 
-    ## 蟒蛇
+    ## Python
 
     ```
 

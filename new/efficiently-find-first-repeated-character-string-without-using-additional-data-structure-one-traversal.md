@@ -110,9 +110,9 @@ public class First_Repeated_char {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Efficiently check First repeated character 
 # in Python  

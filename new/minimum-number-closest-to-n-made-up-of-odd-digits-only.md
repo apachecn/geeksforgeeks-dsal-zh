@@ -56,9 +56,9 @@
 
 下面是上述方法的实现：
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to implement 
 # the above approach 

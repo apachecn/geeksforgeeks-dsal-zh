@@ -276,9 +276,9 @@ class GFG {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to check for the sum 
 # condition to be satisified
@@ -689,9 +689,9 @@ class PairSum {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find if there are
 # two elements wtih given sum

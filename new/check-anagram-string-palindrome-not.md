@@ -125,9 +125,9 @@ public class GFG {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 NO_OF_CHARS = 256
 

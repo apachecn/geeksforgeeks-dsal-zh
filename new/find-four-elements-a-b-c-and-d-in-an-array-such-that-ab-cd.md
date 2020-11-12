@@ -163,9 +163,9 @@ class ArrayElements
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python Program to find four different elements a,b,c and d of 
 # array such that a+b = c+d 

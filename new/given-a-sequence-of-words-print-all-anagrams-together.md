@@ -328,9 +328,9 @@ public class GFG {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A Python program to print all anagarms together
 

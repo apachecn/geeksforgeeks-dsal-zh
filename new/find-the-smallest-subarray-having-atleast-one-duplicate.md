@@ -133,9 +133,9 @@ class GFG
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program for above approach 
 n = 7
@@ -332,9 +332,9 @@ class GFG 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program for above approach 
 

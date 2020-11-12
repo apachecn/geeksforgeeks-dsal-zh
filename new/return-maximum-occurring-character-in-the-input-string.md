@@ -116,9 +116,9 @@ public class GFG 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to return the maximum occurring character in the input string 
 ASCII_SIZE = 256

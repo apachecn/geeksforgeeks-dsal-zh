@@ -225,7 +225,7 @@ which contains element from all the three arrays.
 
     ```
 
-    ## 蟒蛇
+    ## Python
 
     ```
 

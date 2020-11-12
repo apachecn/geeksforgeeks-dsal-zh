@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 
-给定尺寸为`M x N`和`Q`尺寸为`[x1, y1, x2, y2]`的二进制矩阵`arr[][]`，其中`[x1, y1]`和`[x2, y2]`表示需要翻转的子矩阵的左上和右下索引（将 0s 转换为 1s 反之亦然）。 任务是打印执行给定的`Q`查询
+给定尺寸为`M x N`和`Q`尺寸为`[x1, y1, x2, y2]`的二进制矩阵`arr[][]`，其中`[x1, y1]`和`[x2, y2]`表示需要翻转的子矩阵的左上和右下索引（将 0s 转换为 1s 反之亦然）。 任务是打印执行给定的`Q`查询。
 
 **示例**：
 
@@ -262,7 +262,7 @@ public static void Main(String[] args)
 
 **有效方法**：可以使用[动态规划](https://www.geeksforgeeks.org/dynamic-programming/)和[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)技术来优化上述方法。 标记每个查询中涉及的子矩阵的边界，然后计算矩阵中涉及的运算的**前缀总和**，并相应地更新矩阵。 请按照以下步骤解决问题：
 
-*   初始化 2D 状态空间表`dp[][]`，以将翻转计数存储在矩阵的各个索引处
+*   初始化 2D 状态空间表`dp[][]`，以将翻转计数存储在矩阵的各个索引处。
 
 *   对于每个查询`{x1, y1, x2, y2, K}`，通过以下操作更新`dp[][]`矩阵：
 

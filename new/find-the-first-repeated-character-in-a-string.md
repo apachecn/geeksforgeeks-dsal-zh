@@ -138,9 +138,9 @@ class Main
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find the first 
 # repeated character in a string 

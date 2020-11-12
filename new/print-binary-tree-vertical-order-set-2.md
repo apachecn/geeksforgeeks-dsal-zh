@@ -213,9 +213,9 @@ public class VerticalOrderBtree
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program for printing vertical order of a given
 # binary tree

@@ -277,9 +277,9 @@ class ArrayElements {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find longest contiguous subsequence
 
