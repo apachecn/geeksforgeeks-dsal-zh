@@ -12,9 +12,9 @@
 >
 > 逆时针移动字符串 2 次，将使字符串为回文。
 >
-> 第一次：`aabbccbb`
+> 第一次：`aabbccbb`。
 >
-> 第二次：`abbccbba`
+> 第二次：`abbccbba`。
 > 
 > **输入**：`bbaabbcc`
 >
@@ -22,11 +22,11 @@
 >
 > 逆时针移动字符串 3 次将使字符串为回文。
 >
-> 第一次：`baabbccb`
+> 第一次：`baabbccb`。
 >
-> 第二次：`aabbccbb`
+> 第二次：`aabbccbb`。
 >
-> 第三次：`abbccbba`
+> 第三次：`abbccbba`。
 
 **朴素的方法**：朴素的方法是逆时针周期性地对给定的字符串逐个移位字符，并检查字符串是否是回文。
 
@@ -357,7 +357,7 @@ class GFG
 >
 > `s`为给定字符串。
 >
-> `mod = 10 ^ 9 + 7`
+> `mod = 10 ^ 9 + 7`。
 
 使用上述哈希函数和[累积哈希技术](https://www.geeksforgeeks.org/palindrome-substring-queries/)，对所有子字符串进行迭代，并检查它是否是回文。
 

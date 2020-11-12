@@ -36,7 +36,7 @@
 
 要解决此问题，需要考虑以下几点：
 
-1.  根据[费马小定理](https://www.geeksforgeeks.org/fermats-little-theorem/)， `a ^ (m - 1) = 1 (mod m)`可以进一步扩展为`a ^ x = a ^ (x % (m - 1)) (mod m)`
+1.  根据[费马小定理](https://www.geeksforgeeks.org/fermats-little-theorem/)， `a ^ (m - 1) = 1 (mod m)`可以进一步扩展为`a ^ x = a ^ (x % (m - 1)) (mod m)`。
 
 2.  对于质数`p`的`a`次幂，`f(p ^ a) = p ^ (a * (a + 1) / 2)`。
 

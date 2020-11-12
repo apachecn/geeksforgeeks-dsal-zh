@@ -39,7 +39,7 @@
 
 请按照以下步骤解决问题：
 
-*   初始化[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)`S`
+*   初始化[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)`S`。
 
 *   在`[1, K]`范围内迭代。
 

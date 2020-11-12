@@ -32,7 +32,7 @@
 > 
 > **数学证明**：
 >
-> 如果`arr[i] % K = arr[j] % K`
+> 如果`arr[i] % K = arr[j] % K`，
 >
 > `abs(arr[i] – arr[j]) % K`必须为 0。
 

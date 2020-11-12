@@ -8,7 +8,7 @@
 
 > **输入**：`I = 2, X = 2, arr[] = {"baqwer", "zacaeaz", "aaqzzaa", "aacaap", "abbatyo", "bbbacztr", "bbbdaaa"}`
 > **输出**：`abbatyo bbbacztr bbbdaaa aacaap zacaeaz baqwer aaqzzaa`。
-> **解释**：所有从`I = 2`起始长度为`X = 2`的子串为`{"qw", "ca", "qz", "ca", "ba", "ba", "bd"}`
+> **解释**：所有从`I = 2`起始长度为`X = 2`的子串为`{"qw", "ca", "qz", "ca", "ba", "ba", "bd"}`。
 > 按照字典顺序升序对它们排序，得到`{"ba", "ba", "bd", "ca", "ca", "qw", "qz"}`，然后按此顺序打印相应的原始字符串。
 > 
 > **输入**：`I = 1, X = 3, arr[] = {"submit", "source", "skills", "epidemic", "ample", "apple"}`

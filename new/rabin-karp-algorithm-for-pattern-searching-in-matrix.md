@@ -49,9 +49,9 @@ Pattern found at (1, 1)
 
 **查找哈希值**：为了使用滚动哈希在文本中查找大小为`N`的子字符串的哈希值，请执行以下步骤：
 
-1.  从字符串中删除第一个字符： `hash(txt[s: s + n-1]) - (radix ** (n-1) * txt[s]) % prime_number`
+1.  从字符串中删除第一个字符： `hash(txt[s: s + n-1]) - (radix ** (n-1) * txt[s]) % prime_number`。
 
-2.  将下一个字符添加到字符串中：`hash(txt[s: s + n-1]) * radix + txt[n]`
+2.  将下一个字符添加到字符串中：`hash(txt[s: s + n-1]) * radix + txt[n]`。
 
 下面是上述方法的实现：
 

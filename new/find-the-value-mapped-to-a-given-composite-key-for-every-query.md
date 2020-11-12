@@ -14,7 +14,7 @@
 >
 > 复合键位于 `firstkey[1]`（4）和 `secondkey[1]`（1）
 >
-> 因此，相应的值为`value[1] = 3`
+> 因此，相应的值为`value[1] = 3`。
 >
 > **输入**：`firstkey[] = {3, 4, 3}, secondkey[] = {7, 1, 3}, value[] = {2, 3, 6}, Q = {3, 3}`
 >
@@ -24,7 +24,7 @@
 >
 > 组合键位于`firstkey[2]`（3）和`secondkey[2]`（3）上。
 >
-> 因此，相应的值为`value[2] = 6`
+> 因此，相应的值为`value[2] = 6`。
 
 **方法**：想法是使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，其中映射的键是 C++ 中两个整数的[偶对](https://www.geeksforgeeks.org/pair-in-cpp-stl/)，它们是 python 中的两个整数。 表示`firstkey[]`和`secondkey[]`的各个元素，它们映射到相应的`value[]`元素。 这使我们能够在`O(1)`时间内回答每个查询。
 

@@ -8,13 +8,13 @@
 
 > **输入**：`string = "this is a test string", pattern = "tist"`
 >
-> **输出**：最小窗口为`"t stri"`
+> **输出**：最小窗口为`"t stri"`。
 >
 > **说明**：`"t stri"`包含模式的所有字符。
 > 
 > **输入**：`string = "geeksforgeeks", pattern = "ork"`
 >
-> **输出**：最小窗口为`"ksfor"`
+> **输出**：最小窗口为`"ksfor"`。
 
 **方法 1（暴力解）**
 

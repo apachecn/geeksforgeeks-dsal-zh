@@ -123,7 +123,7 @@ class SortComparator implements Comparator<Integer> {
 
 ```
 
-> 时间复杂度：`O(n Log n)`
+> 时间复杂度：`O(n Log n)`。
 
 
 

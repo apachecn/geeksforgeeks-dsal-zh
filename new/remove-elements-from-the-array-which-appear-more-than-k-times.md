@@ -226,7 +226,7 @@ static public void Main() 
 
 ```
 
-**时间复杂度** –`O(n)`
+**时间复杂度**：`O(n)`。
 
 
 

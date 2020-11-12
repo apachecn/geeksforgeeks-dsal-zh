@@ -20,7 +20,9 @@
 
 **索引**：它是对键的哈希值和数组大小减一执行按位与运算后获得的整数值。
 
-> `index = hashCode(key) & (ArraySize – 1)`
+```
+index = hashCode(key) & (ArraySize – 1)
+```
 
 其中`hashcode`是一个预定义函数，该函数返回键的哈希值的整数值，而`ArraySize`是`HashMap`中的存储桶数。
 
@@ -30,7 +32,9 @@
 
 声明`HashMap`对象的语法如下：
 
-> `HashMap objectName = new HashMap(int initialCapacity, float loadFactor)`
+```
+HashMap objectName = new HashMap(int initialCapacity, float loadFactor)
+```
 
 ### 初始容量
 

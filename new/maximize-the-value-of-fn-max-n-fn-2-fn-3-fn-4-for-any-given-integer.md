@@ -9,7 +9,9 @@
 **示例**：
 
 > **输入**：`N = 3`
+>
 > **输出**：3
+>
 > **说明**：
 >
 > ```
@@ -21,7 +23,9 @@
 > 因此，`F(3)`的最大值是 3。
 > 
 > **输入**：`N = 12`
+>
 > **输出**：13
+>
 > **说明**：
 >
 > ```
@@ -37,9 +41,10 @@
 > F(6) = max(6, 3 + 2 + 1) = 6
 > ```
 > 
-> 现在，`F(12) = max(12, 6 + 4 + 3)`
-> `F(12) = max(12, 13)`
-> 因此，`F(12)`的最大值是 13。
+> 现在，`F(12) = max(12, 6 + 4 + 3)`，
+>
+> `F(12) = max(12, 13)`，
+v> 因此，`F(12)`的最大值是 13。
 
 **朴素的方法**：最简单的方法是使用[递归](https://www.geeksforgeeks.org/recursion/)计算`F(N)`的值。 在每个步骤中，分别对值`N / 2`，`N / 3`和`N / 4`分别调用三个递归调用，然后返回每个递归调用`N`的最大值与这些递归调用返回的值之和。 在所有递归调用结束后，将值打印为结果。
 
@@ -233,7 +238,7 @@ if __name__ == '__main__':
 
 **时间复杂度**：`O(n)`。
 
-**空间复杂度**：`O(n)`
+**空间复杂度**：`O(n)`。
 
 [**动态规划**](http://www.geeksforgeeks.org/dynamic-programming/)使用自顶向下方法：与上述方法一样，[每个递归调用的子问题有很多重叠](https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/)。 因此，为了优化上述方法，其思想是使用辅助空间[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来存储在每个递归调用中计算出的值并返回重复的存储状态。 步骤如下：
 

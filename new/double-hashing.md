@@ -12,7 +12,7 @@
 >
 > （发生碰撞时，我们通过增加`i`来重复）
 
-第一个哈希函数通常是`hash1(key) = key % TABLE_SIZE`
+第一个哈希函数通常是`hash1(key) = key % TABLE_SIZE`。
 
 流行的第二个哈希函数是： `hash2(key) = PRIME – (key % PRIME)`，其中`PRIME`是小于`TABLE_SIZE`的质数。
 

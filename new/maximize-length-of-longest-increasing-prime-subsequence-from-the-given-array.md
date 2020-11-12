@@ -36,17 +36,12 @@
 
 1.  初始化[二维](https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/)数组，例如`dp[][]`，大小为`N * 2`，其中通过选择小于索引`i`处的`arr[i]`的最接近质数，`dp[i][0]`存储最长增长质数子序列的长度。 通过选择大于或等于索引`i`处的`arr[i]`的最接近质数，`dp[i][1]`存储最长递增质数子序列的长度。 下面是递归关系：
 
-    > *   如果最接近`arr[j]`的较小的质数小于最接近`arr[i]`的较小的质数：`dp[i][0] = 1 + dp[j][0]`
-
-    > *   如果最接近`arr[j]`的较大或相等的质数小于最接近`arr[i]`的较大或相等的质数：`dp[i][0] = max(dp[i][0], 1 + dp[j][1])`
-
-    > *   如果最接近`arr[j]`的较小的质数小于最接近`arr[i]`的较小的质数：`dp[i][1] = 1 + dp[j][0]`
-
-    > *   如果最接近`arr[j]`的较大或相等的质数小于最接近`arr[i]`的较大或相等的质数：`dp[i][1] = max(dp[i][1], 1 + dp[j][1])`
-
+    > *   如果最接近`arr[j]`的较小的质数小于最接近`arr[i]`的较小的质数：`dp[i][0] = 1 + dp[j][0]`。
+    > *   如果最接近`arr[j]`的较大或相等的质数小于最接近`arr[i]`的较大或相等的质数：`dp[i][0] = max(dp[i][0], 1 + dp[j][1])`。
+    > *   如果最接近`arr[j]`的较小的质数小于最接近`arr[i]`的较小的质数：`dp[i][1] = 1 + dp[j][0]`。
+    > *   如果最接近`arr[j]`的较大或相等的质数小于最接近`arr[i]`的较大或相等的质数：`dp[i][1] = max(dp[i][1], 1 + dp[j][1])`。
     > 
-
-    > 这里`j`的值为`0, 1, …, i - 1`
+    > 这里`j`的值为`0, 1, …, i - 1`。
 
 2.  使用 [Eratosthenes 筛子](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)有效地计算[质数](https://www.geeksforgeeks.org/prime-numbers/)。
 

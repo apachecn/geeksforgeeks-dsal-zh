@@ -1,6 +1,6 @@
 # 为每个数组元素计数数组中所有重复的元素对。
 
-> 原文：[https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/](https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/)`
+> 原文：[https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/](https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/)
 
 给定`N`个整数的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`。 对于数组中的每个元素，任务是计算可能的对`(i, j)`，不包括当前元素，以使`i < j`和`arr[i] = arr[j]`。
 
@@ -41,7 +41,7 @@
 1.  将每个元素的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
 
 2.  创建一个变量来存储每个元素的贡献。
-`
+
 3.  可以用`freq[x] * (freq[x] – 1) / 2`来计算`x`的贡献，其中`freq[x]`为`x`的频率。
 
 4.  遍历给定的数组，并从总数中除去每个元素的贡献，并将其存储在`ans[]`中。

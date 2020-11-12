@@ -48,7 +48,7 @@ Dist(n1, n2) = Level[n1] + Level[n2] - 2*Level[lca]
 > 3.  Then **build sparse table on L array** and find the minimum value say X in range ( **H[A] to H[B]** ). Then, **we use the index of value X as an index to Euler array to get LCA** , i.e. Euler[index(X)].
 >     
 >     设`A = 8`，`B = 5`。
->     （I）`H[8] = 1`和`H[5] = 2`
+>     （I）`H[8] = 1`和`H[5] = 2`。
 >     （II）当`X = 0`，`index = 7`时，`L`数组中的最小值在 1 和 2 之间，然后，`LCA = Euler[7]`，即`LCA = 1`。
 >     
 >     
@@ -739,7 +739,7 @@ Dist(8, 5) = 5
 
 **时间复杂度**：`O(1)`。
 
-**空间复杂度**：`O(n Log n)`
+**空间复杂度**：`O(n Log n)`。
 
 
 

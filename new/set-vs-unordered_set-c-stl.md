@@ -24,7 +24,7 @@ Deletion time   | log(n) + Rebalance  | Same as search
 
 ```
 
-什么时候使用`set`
+什么时候使用`set`？
 
 *   我们需要有序的数据。
 
@@ -36,7 +36,7 @@ Deletion time   | log(n) + Rebalance  | Same as search
 
 *   有关更多情况，请参见 [BST 相对于哈希表的优势](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/)。
 
-什么时候使用`unordered_set`
+什么时候使用`unordered_set`？
 
 *   我们需要保留一组不同的元素，并且不需要排序。
 

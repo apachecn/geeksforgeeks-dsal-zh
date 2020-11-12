@@ -120,7 +120,7 @@ OrderedDict([(3, 3), (4, 4)])
 
 ```
 
-时间复杂度：`O(1)`
+时间复杂度：`O(1)`。
 
 [LRU 的其他实现](https://www.geeksforgeeks.org/lru-cache-implementation/)。
 
