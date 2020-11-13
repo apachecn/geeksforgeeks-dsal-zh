@@ -46,9 +46,9 @@
 
 *   **步骤 6 – 插入和溢出检查**：插入元素并检查存储桶是否溢出。 如果遇到溢出，请转到**步骤 7**，然后转到**步骤 8**，否则，转到**步骤 9**。
 
-*   **Step 7 – Tackling Over Flow Condition during Data Insertion:** Many times, while inserting data in the buckets, it might happen that the Bucket overflows. In such cases, we need to follow an appropriate procedure to avoid mishandling of data.
+*   **步骤 7 – 在数据插入过程中解决溢出情况**：很多时候，将数据插入存储桶时，存储桶可能会溢出。 在这种情况下，我们需要遵循适当的程序以避免数据处理不当。
 
-    First, Check if the local depth is less than or equal to the global depth. Then choose one of the cases below. 
+    首先，检查局部深度是否小于或等于整体深度。 然后选择以下情况之一。
     
     *   情况 1：如果溢出的存储桶的局部深度等于全局深度，则需要执行目录扩展以及存储桶拆分。 然后将全局深度和局部深度值加 1。然后，分配适当的指针。
 
@@ -112,7 +112,7 @@
 
     ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803221039/hash42.png)
 
-*   As directed by **Step 7-Case 1**, Since Local Depth = Global Depth, the bucket splits and directory expansion takes place. Also, rehashing of numbers present in the overflowing bucket takes place after the split. And, since the global depth is incremented by 1, now,the global depth is 2\. Hence, 16,4,6,22 are now rehashed w.r.t 2 LSBs.[ 16(100`00`),4(1`00`),6(1`10`),22(101`10`) ]
+*   按照**步骤 7 - 情况 1**的指示，由于“本地深度等于全局深度”，存储桶将拆分并进行目录扩展。 同样，在拆分之后还会对存在于溢出桶中的数字进行重新哈希处理。 并且，由于全局深度现在增加 1，因此全局深度为 2。 因此，现在用 2 个 LSB 重新哈希了`16,4,6,22`。【16（10000），4（100），6（110），22（10110）】
 
     ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803221040/hash52.png)
 
@@ -138,9 +138,9 @@
 
     ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803222301/hash93.png)
 
-*   The bucket overflows, and, as directed by **Step 7-Case 2,** since the **local depth of bucket < Global depth (2<3)**, directories are not doubled but, only the bucket is split and elements are rehashed.
+*   存储桶溢出，并按照**步骤 7 - 情况 2** 的指示进行操作，因为存储桶的本地深度小于全局深度（`2 < 3`），因此目录不会加倍，而只会拆分存储桶并重新哈希元素。
 
-    Finally, the output of hashing the given list of numbers is obtained.
+    最后，获得哈希给定数字列表的输出。
 
     ![](https://media.geeksforgeeks.org/wp-content/uploads/20190803104123/hash101.png)
 

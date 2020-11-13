@@ -34,7 +34,7 @@
 
 **方法**：该问题的关键观察在于以`Z ^ K`的形式表示任何数字，然后该数字的素因式分解的幂必须是`K`的倍数。下面是步骤：
 
-*   Compute the prime factorization of each number of the array and store the prime factors in the form of key-value pair in a hash-map, where the key will be a prime factor of that element and value will be the power raised to that prime factor modulus K, in the prime factorization of that number.
+*   计算数组每个数字的质因数分解，并以键值对形式存储在哈希图中，其中键将是该元素的质因数，而值将是对该质因数的幂模`K`，在该数的质数分解中。
 
     **For Example:**
 
@@ -61,7 +61,7 @@
 
     ```
 
-*   Finally, Traverse for each element of the array and check required prime factors are present in hash-map or not. If yes, then there will be **F** number of possible pairs, where F is the frequency.
+*   最后，遍历数组的每个元素并检查所需的质因数是否在哈希映射中。 如果是，则将存在`F`个可能的对，其中`F`是频率。
 
     **示例**：
 

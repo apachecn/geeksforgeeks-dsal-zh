@@ -19,7 +19,7 @@ Output: 50, 52, 53, 54
 
 可以采用以下两种方法来解决该问题。
 
-1.  **Use Sorting :** Sort the array, then do binary search for ‘low’. Once location of low is find, start traversing array from that location and keep printing all missing numbers.
+1.  **使用排序**：对数组排序，然后对`low`进行二进制搜索。 一旦找到低位，就从该位置开始遍历数组并继续打印所有遗漏的数字。
 
     ## C++
 
@@ -325,7 +325,7 @@ Output: 50, 52, 53, 54
     2 6 7 8 9 10 
     ```
 
-2.  **Using Arrays :** Create a boolean array, where each index will represent wether the (i+low)th element is present in array or not. Mark all those elements which are in the given range and are present in the array. Once all array items, present in given range have been marked true in the array we traverse through the boolean array and print all elements whose value is false.
+2.  **使用数组**：创建一个布尔数组，其中每个索引将表示数组中是否存在第`i + low`个元素。 标记所有在给定范围内并且存在于数组中的元素。 一旦在给定范围内存在的所有数组项都在数组中标记为`true`，我们将遍历布尔数组并打印所有值为`false`的元素。
 
     ## C++
 
@@ -483,7 +483,7 @@ Output: 50, 52, 53, 54
     2 6 7 8 9 10 
     ```
 
-3.  **Use Hashing :** Create a hash table and insert all array items into the hash table. Once all items are in hash table, traverse through the range and print all missing elements.
+3.  **使用哈希**：创建哈希表并将所有数组项插入哈希表。 一旦所有项目都在哈希表中，遍历范围并打印所有缺少的元素。
 
     ## C++
 

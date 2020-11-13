@@ -207,7 +207,7 @@ class GFG {
 
 *   解决此问题的有效方法是使用映射存储（键，值）对，其中值将是键的计数。
 
-*   The idea is to traverse the array from`0`to `N` and do following:
+*   这个想法是从 0 到`N`遍历数组并执行以下操作：
 
     *   检查映射中是否存在`A[i] – D`和`A[i] – 2 * D`。
 

@@ -18,7 +18,7 @@
 
 4.  搜索非常快。
 
-5.  Example of Inverted index:
+5.  反向索引的示例：
 
     ```
     Word                              Documents
@@ -54,7 +54,7 @@
 
 4.  搜索非常困难，因为它必须查看索引的每个内容才能检索与单词相关的所有页面。
 
-5.  Example of forward index:
+5.  正向索引的示例：
 
     ```
     Document                          Keywords

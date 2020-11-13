@@ -296,7 +296,7 @@ System.out.println(hm);
 
     ```
 
-    *   **With the help of [TreeSet](https://www.geeksforgeeks.org/treeset-in-java-with-examples/) (Implements the SortedSet interface, Objects are stored in a sorted and ascending order).**
+    *   借助[`TreeSet`](https://www.geeksforgeeks.org/treeset-in-java-with-examples/)（实现了`SortedSet`接口，对象以升序存储）。
 
     ```
     // Java program to demonstrate working of TreeSet

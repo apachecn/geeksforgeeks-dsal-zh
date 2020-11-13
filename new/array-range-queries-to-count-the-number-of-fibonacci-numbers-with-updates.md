@@ -44,7 +44,7 @@
 
 *   每当我们收到从头到尾的查询时，我们都可以在段树中查询从头到尾的范围内的节点总数，这又表示从头到尾的范围内的斐波那契数。
 
-*   To perform a point update and to update the value at index i to x, we check for the following cases:
+*   为了执行点的更新并将索引`i`的值更新为`x`，我们检查以下情况：
 
     假设`arr[i]`的旧值为`y`，新值为`x`。
 

@@ -8,9 +8,9 @@
 
 对于每种数据结构中的数据操作，可以执行不同类型的操作。 一些操作的解释和说明如下：
 
-*   **Traversing:** Traversing a Data Structure means to visit the element stored in it. This can be done with any type of DS.
+*   **遍历**：遍历数据结构意味着访问存储在其中的元素。 可以使用任何类型的 DS 来完成。
 
-    Below is the program to illustrate traversal in an array:
+    下面是演示数组遍历的程序：
 
     ## 数组
 
@@ -202,7 +202,7 @@
 
     ```
 
-*   [**Searching**](https://www.geeksforgeeks.org/searching-algorithms/): Searching means to find a particular element in the given data-structure. It is considered as successful when the required element is found. Searching is the operation which we can performed on data-structures like array, linked-list, tree, graph, etc.
+*   [**搜索**](https://www.geeksforgeeks.org/searching-algorithms/)：搜索意味着在给定的数据结构中找到特定的元素。 找到所需元素后，它被认为是成功的。 搜索是我们可以对数据结构（如数组，链表，树，图等）执行的操作。
 
     下面是说明在数组中搜索元素的程序：
 
@@ -438,7 +438,7 @@
 
     ```
 
-*   **Insertion:** It is the operation which we apply on all the data-structures. Insertion means to add an element in the given data structure. The operation of insertion is successful when the required element is added to the required data-structure. It is unsuccessful in some cases when the size of the data structure is full and when there is no space in the data-structure to add any additional element. The insertion has the same name as an insertion in the data-structure as an array, linked-list, graph, tree. In stack, this operation is called Push. In the queue, this operation is called Enqueue.
+*   **插入**：这是我们应用于所有数据结构的操作。 插入是指在给定的数据结构中添加元素。 当将所需元素添加到所需数据结构中时，插入操作成功。 在某些情况下，如果数据结构的大小已满，并且数据结构中没有空间可添加任何其他元素，则此操作将不成功。 插入与数组，链表，图，树中的数据结构中的插入同名。 在栈中，此操作称为“推入”。 在队列中，此操作称为入队。
 
     下面是说明插入栈的程序：
 
@@ -641,7 +641,7 @@
 
     ```
 
-*   **Deletion:** It is the operation which we apply on all the data-structures. Deletion means to delete an element in the given data structure. The operation of deletion is successful when the required element is deleted from the data structure. The deletion has the same name as a deletion in the data-structure as an array, linked-list, graph, tree, etc. In stack, this operation is called Pop. In Queue this operation is called Dequeue.
+*   **删除**：这是我们应用于所有数据结构的操作。 删除意味着删除给定数据结构中的元素。 从数据结构中删除所需元素时，删除操作成功。 删除与数组，链接列表，图形，树等数据结构中的删除具有相同的名称。在栈中，此操作称为“弹出”。 在队列中，此操作称为出队。
 
     下面是说明队列中出队的程序：
 
