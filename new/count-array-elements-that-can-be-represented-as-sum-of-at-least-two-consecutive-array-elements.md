@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/](https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/)
 
-给定一个数组`A[]`，该数组由`[1, N]`范围内的`N`个整数组成，任务是计算数组元素的数量（非 可以表示为两个或多个连续数组元素的总和。
+给定一个数组`A[]`，该数组由`[1, N]`范围内的`N`个整数组成，任务是计算数组元素的数量（非唯一），它们可以表示为两个或多个连续数组元素的总和。
 
 **示例**：
 

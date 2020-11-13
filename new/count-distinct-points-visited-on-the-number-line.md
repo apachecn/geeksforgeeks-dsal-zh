@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/](https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/)
 
-给定某人的位置`current_pos`和二进制字符串`path`，即该人执行的移动，如果`path[i] ='0'`，则 人向左移动了一步，并且如果`path[i] ='1'`，那么人向右移动了一步。 任务是找到该人拜访的不同点的数量。
+给定某人的位置`current_pos`和二进制字符串`path`，即该人执行的移动，如果`path[i] ='0'`，则人向左移动了一步，并且如果`path[i] ='1'`，那么人向右移动了一步。 任务是找到该人拜访的不同点的数量。
 
 **示例**：
 

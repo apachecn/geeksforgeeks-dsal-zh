@@ -276,7 +276,7 @@ public static void Main(String[] args)
 
 3.  创建一个[哈希映射](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)，并在其中存储每个元素的频率。
 
-4.  对于数组中的每个元素（例如`current_element`），如果`v[current_element]`为`true`，则该元素不能被给定数组中的任何其他元素整除，并增加该数组的计数 当前元素。
+4.  对于数组中的每个元素（例如`current_element`），如果`v[current_element]`为`true`，则该元素不能被给定数组中的任何其他元素整除，并增加该数组的当前元素的计数。
 
 5.  完成上述步骤后，打印`count`的最终值。
 

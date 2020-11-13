@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/](https://www.geeksforgeeks.org/construct-a-string-that-has-exactly-k-subsequences-from-given-string/)
 
-给定字符串`str`和整数`K`，任务是找到字符串`S`，使其具有给定的`K`子序列 字符串`str`。
+给定字符串`str`和整数`K`，任务是构造字符串`S`，使其具有给定的`K`个子序列。
 
 **示例**：
 
@@ -12,7 +12,7 @@
 >
 > **说明**：。
 >
-> 可能有 10 个子序列 给定字符串`"gggggffg"`。 它们是：
+> 给定字符串`"gggggffg"`可能有 10 个子序列。 它们是：
 >
 > 1.  𝐠gggg𝐟f𝐠 
 > 2.  g𝐠ggg𝐟f𝐠 

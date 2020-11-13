@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-of-distinct-strings-possible-by-swapping-prefixes-of-pairs-of-strings-from-the-array/](https://www.geeksforgeeks.org/count-of-distinct-strings-possible-by-swapping-prefixes-of-pairs-of-strings-from-the-array/)
 
-给定一个数组`string[]`，该数组由`N`个数字字符串，长度为`M`组成，任务是找到可以通过选择任意一个生成的不同字符串的数量 两个字符串，例如数组中的`i`和`j`，并在它们之间交换所有可能的前缀。
+给定一个数组`string[]`，该数组由`N`个数字字符串，长度为`M`组成，任务是找到可以通过选择两个字符串的任意一个生成的不同字符串的数量，例如数组中的`i`和`j`，并在它们之间交换所有可能的前缀。
 
 **注意**：由于答案可能非常大，请计算 1000000007 的模。
 
