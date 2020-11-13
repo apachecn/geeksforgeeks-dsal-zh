@@ -62,7 +62,7 @@
 
     *   在乘法方法中，我们将键`k`与范围为`0 < c < 1`的常数实数`c`相乘，并提取`k * c`的小数部分。
 
-    *   Then we multiply this value by table_size **m** and take the floor of the result. It can be represented as
+    *   然后，我们将此值乘以`table_size m`并得出结果的下限。 它可以表示为：
 
         ```
         h(k) = floor (m * (k * c mod 1))
@@ -89,7 +89,7 @@
 
         ```
 
-    *   Although this method works with any value of the constant **c**, it works better with some values than the others.
+    *   尽管此方法适用于常数`c`的任何值，但某些值比其他值的效果更好。
 
         ```
         c ~ (sqrt (5) – 1) / 2 = 0.618033988 . . .

@@ -32,7 +32,7 @@ the distinct characters of given string.
 
 **方法 1** ：这是使用`HashMap`解决问题的暴力方法。
 
-*   **Approach :** For solving the problem we first have to find out all the distinct characters present in the string. This can be done using a [`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/). The next thing is to generate all the possible substrings. This follows by checking whether a substring generated has all the required characters(stored in the hash_map) or not. If yes, then compare its length with the minimum substring length which follows the above constraints, found till now.
+*   **方法**：为了解决问题，我们首先必须找出字符串中存在的所有不同字符。 可以使用[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)完成。 下一步是生成所有可能的子字符串。 然后检查生成的子字符串是否具有所有必需的字符（存储在`hash_map`中）。 如果是，则将其长度与遵循上述约束的最小子串长度进行比较，直到现在为止。
 
     [`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)：`HashMap`自 Java 1.2 以来就是 Java 集合的一部分。 它提供了 Java `Map`接口的基本实现。 它以（键，值）对存储数据。 要访问一个值，必须知道其键。 `HashMap`被称为`HashMap`，因为它使用了一种称为哈希的技术。 散列是一种将大字符串转换为代表相同字符串的小字符串的技术。 较短的值有助于索引编制和更快的搜索。 `HashSet`还内部使用`HashMap`。 它在内部使用链表来存储已在`HashSet`中详细解释的键值对以及其他文章。
 
@@ -157,9 +157,9 @@ the distinct characters of given string.
 
 **方法 2**：这里我们使用了[滑动窗口](https://www.geeksforgeeks.org/window-sliding-technique/)技术来得出解决方案。 该技术说明了如何将很少出现问题的嵌套`for`循环转换为单个`for`循环，从而降低时间复杂度。
 
-*   **Approach:** Basically a window of characters is maintained by using two pointers namely **start** and **end**. These **start** and **end** pointers can be used to shrink and increase the size of window respectively. Whenever the window contains all characters of given string, the window is shrinked from left side to remove extra characters and then its length is compared with the smallest window found so far.
+*   **方法**：基本上，通过使用两个指针（即`start`和`end`）来维护字符窗口。 这些`start`和`end`指针可分别用于缩小和增加窗口的大小。 只要窗口包含给定字符串的所有字符，就将窗口从左侧缩小以去除多余的字符，然后将其长度与迄今为止找到的最小窗口进行比较。
 
-    If in the present window, no more characters can be deleted then we start increasing the size of the window using the **end** until all the distinct characters present in the string are also there in the window. Finally, find the minimum size of each window.
+    如果在当前窗口中没有更多的字符可以删除，那么我们将使用`end`开始增加窗口的大小，直到字符串中存在的所有不同字符都在窗口中为止。 最后，找到每个窗口的最小尺寸。
 
     ![](https://media.geeksforgeeks.org/wp-content/uploads/20200408143729/Sliding-window-simulation2.png)
 

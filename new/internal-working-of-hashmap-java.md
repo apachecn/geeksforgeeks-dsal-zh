@@ -81,7 +81,7 @@ index = hashCode(key) & (n-1).
 
 其中`n`是存储桶数或数组大小。 在我们的示例中，我将`n`设置为默认大小 16。
 
-*   **Initially Empty hashMap:** Here, the hashmap is size is taken as 16.
+*   **初始化空的`HashMap`**：这里，哈希映射的大小为 16。
 
     ```
     HashMap map = new HashMap();
@@ -92,7 +92,7 @@ index = hashCode(key) & (n-1).
     
     ![empty_hasharray](img/8fc6a8d0c9bce7e4bb1356ff836f7d0f.png)
 
-*   **Inserting Key-Value Pair:** Putting one key-value pair in above HashMap
+*   **插入键值对**：在`HashMap`上方放置一个键值对。
 
     ```
     map.put(new Key("vishal"), 20);
@@ -126,7 +126,7 @@ index = hashCode(key) & (n-1).
     
     ![1_hasharray](img/3a68a9d0e59a92eb01347d9d550f1f04.png)
 
-*   **Inserting another Key-Value Pair:** Now, putting other pair that is,
+*   **插入另一个键值对**：现在，放入另一个对。
 
     ```
     map.put(new Key("sachin"), 30);
@@ -198,7 +198,7 @@ index = hashCode(key) & (n-1).
 
 现在让我们尝试一些`get`方法来获取值。 `get(K key)`方法用于通过其键获取值。 如果您不知道键，则无法获取值。
 
-*   **Fetch the data for key sachin:**
+*   **获取键`sachin`的数据**：
 
     ```
     map.get(new Key("sachin"));
@@ -215,7 +215,7 @@ index = hashCode(key) & (n-1).
 
     4.  在我们的例子中，它是第一个元素，返回值为 30。
 
-*   Fetch the data for key vaibahv:
+*   **获取键`vaibahv`的数据**：
 
     ```
     map.get(new Key("vaibhav"));

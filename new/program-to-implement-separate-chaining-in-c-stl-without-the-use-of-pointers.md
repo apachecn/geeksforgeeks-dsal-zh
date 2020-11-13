@@ -10,7 +10,7 @@
 
 1.  哈希的大小由类的构造函数初始化。
 
-2.  The elements are inserted in the Hash according to the expression:
+2.  根据以下表达式将元素插入到哈希中：
 
     ```
     Vector[i % n].push_back(i);

@@ -34,7 +34,7 @@
 
 *   初始化`B_fre[]`，以将所有字符的频率存储在数组`B[]`中。
 
-*   Traverse over array `A[]` and for every string, check if a character has more frequency in the strings of array `B[]` than in `i` string in A[], i.e. 
+*   遍历数组`A[]`，对于每个字符串，检查数组`B[]`的字符串中的字符是否比`A[]`中的字符串`i`的频率更高。
 
     > 如果`A_fre[i][j] < B_fre[j]`，其中：
 

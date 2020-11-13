@@ -46,11 +46,11 @@
 
 *   在给定列表中找到每个质数的频率（使用[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)或[`Dictionary`](https://www.geeksforgeeks.org/python-dictionary/)）。
 
-*   Using the second observation, for every i <sup>th</sup> prime, calculate: 
+*   使用第二个观察值，对于每个第`i`个质数，计算：
 
     > `fp = power(p[i]，(cnt[i] + 1) * cnt[i] / 2)`，其中`cnt[i]`表示该质数的频率。
 
-*   Using the third observation, update the required product: 
+*   使用第三个观察值，更新所需的乘积：
 
     > `ans = power(ans, (cnt[i] + 1)) * power(fp, d) % MOD`，其中`d`是直到第`i - 1`个质数的除数数量。
 
