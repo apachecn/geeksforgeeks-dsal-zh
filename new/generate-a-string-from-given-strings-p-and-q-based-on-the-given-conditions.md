@@ -36,7 +36,7 @@
 >
 > **说明**：
 >
-> 字符串`accegaphiillorx`满足上述要求 字符串`P`和`Q`的条件。
+> 字符串`accegaphiillorx`满足字符串`P`和`Q`的上述条件。
 
 **方法**：想法是找到`P`和`Q`中所有字符的[**频率**](https://www.geeksforgeeks.org/print-characters-frequencies-order-occurrence/)以解决问题。
 

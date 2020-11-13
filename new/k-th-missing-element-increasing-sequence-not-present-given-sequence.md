@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/](https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/)
 
-给定两个序列，一个是递增序列`a[]`，另一个是正常序列`b[]`，在递增序列中找到第`K`个缺失元素，该元素在给定序列中不存在 顺序。 如果没有第`k`个缺失元素，则输出 -1。
+给定两个序列，一个是递增序列`a[]`，另一个是正常序列`b[]`，在递增序列中找到第`K`个缺失元素，该元素在给定序列中不存在。 如果没有第`k`个缺失元素，则输出 -1。
 
 **示例**：
 

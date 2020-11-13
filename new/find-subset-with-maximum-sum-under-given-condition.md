@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-subset-with-maximum-sum-under-given-condition/](https://www.geeksforgeeks.org/find-subset-with-maximum-sum-under-given-condition/)
 
-给定`n`个项目的`values[]`和`labels[]`和正整数`limit`，我们需要选择这些项目的子集 以这样的方式，子集中相同类型标签的数量应小于等于极限，并且在所有可能的子集中选择中，值的总和最大。
+给定`n`个项目的`values[]`和`labels[]`和正整数`limit`，我们需要选择这些项目的子集。以这样的方式，子集中相同类型标签的数量应小于等于极限，并且在所有可能的子集中选择中，值的总和最大。
 
 **示例**：
 

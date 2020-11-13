@@ -47,7 +47,7 @@
 
 **方法**：
 
-1.  将`arr[]`的元素的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，假设`map1`中，并以 `arr[]`的元素作为它们的频率 频率作为值。
+1.  将`arr[]`的元素的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，假设`map1`中，并以 `arr[]`的元素作为键，它们的频率作为值。
 
 2.  现在，将`map1`的元素频率存储在其他映射中，例如`map2`。
 
