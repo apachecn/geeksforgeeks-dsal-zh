@@ -35,7 +35,7 @@ Pattern found at (1, 1)
 
 ```
 
-**方法**：为了使用 [Rabin-Karp 算法](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/)在二维数组中找到图案，请考虑输入矩阵`txt[m1][m2]`和 模式`pat[n1][n2]`。 这个想法是找到`mat[][]`和`pat[][]`每列的[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)并比较哈希值。 对于任何列，如果哈希值等于，则检查相应的行值。 步骤如下：
+**方法**：为了使用 [Rabin-Karp 算法](https://www.geeksforgeeks.org/rabin-karp-algorithm-for-pattern-searching/)在二维数组中找到图案，请考虑输入矩阵`txt[m1][m2]`和模式`pat[n1][n2]`。 这个想法是找到`mat[][]`和`pat[][]`每列的[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)并比较哈希值。 对于任何列，如果哈希值等于，则检查相应的行值。 步骤如下：
 
 1.  在`txt[][]`和`pat[][]`矩阵中找到前`N1`行的每一列的哈希值。
 

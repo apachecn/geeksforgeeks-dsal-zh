@@ -12,7 +12,7 @@
 >
 > **说明**：
 >
-> 每个查询之后的总不同元素（基于 索引）：
+> 每个查询之后的总不同元素（基于索引）：
 >
 > 查询 1：`p = 1`且`x = 7`。因此，`arr[1] = 7`且`arr []`变为`{7, 2, 5, 5, 4, 6, 3 }`。 因此，不同的元素为 6。
 >
@@ -187,7 +187,7 @@ public static void Main(String[] args)
 
 **辅助空间**：`O(n)`。
 
-**高效方法**：为了优化上述方法，其思想是将每个数组元素的[频率](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，然后遍历每个查询并打印大小 每次更新后的映射。 请按照以下步骤解决问题：
+**高效方法**：为了优化上述方法，其思想是将每个数组元素的[频率](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中，然后遍历每个查询并打印每次更新后的映射大小。 请按照以下步骤解决问题：
 
 *   将[每个元素](https://www.geeksforgeeks.org/counting-frequencies-of-array-elements/)的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)`M`中。
 
