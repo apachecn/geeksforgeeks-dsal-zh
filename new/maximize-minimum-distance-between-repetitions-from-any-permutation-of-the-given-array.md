@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/](https://www.geeksforgeeks.org/maximize-minimum-distance-between-repetitions-from-any-permutation-of-the-given-array/)
 
-给定一个数组`arr[]`，该数组由`[1, N]`范围内的`N`个正整数组成，任务是找到任意一个之间的最大最小距离 从给定数组的任何排列中元素的连续重复。
+给定一个数组`arr[]`，该数组由`[1, N]`范围内的`N`个正整数组成，任务是从给定数组的任何排列中，在任意一个元素的连续重复之间，找到最长的最小距离。
 
 **示例**：
 
@@ -10,7 +10,7 @@
 >
 > **输出**：3
 >
-> **说明**：之间的最大可能距离 重复是从排列`{1, 2, 3, 1}`或`{1, 3, 2, 1}`。
+> **说明**：重复之间的最大可能距离是 3，来自排列`{1, 2, 3, 1}`或`{1, 3, 2, 1}`。
 >
 > **输入**：`arr[] = {1, 2, 3, 4}`
 >

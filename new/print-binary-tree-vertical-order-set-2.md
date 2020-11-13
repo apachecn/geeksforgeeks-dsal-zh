@@ -321,7 +321,7 @@ Vertical order traversal is
 
 **另一种使用`computeIfAbsent`的方法**：
 
-通过使用 Java 中的`computeIfAbsent`方法和 Java 中的映射，以及使用基于自然排序的树形图，我们可以更简洁地用编写代码 在键上。
+通过使用 Java 中的`computeIfAbsent`方法和 Java 中的映射，以及使用基于键自然排序的树映射，我们可以更简洁地用编写代码。
 
 下面是上述方法的实现。
 
