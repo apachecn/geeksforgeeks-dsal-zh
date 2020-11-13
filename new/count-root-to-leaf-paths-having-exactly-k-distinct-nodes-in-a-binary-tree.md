@@ -42,7 +42,7 @@
 
 **高效方法**：想法是使用[前序遍历](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)和[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)来计算从根到当前节点的路径中的不同节点。 请按照以下步骤解决问题：
 
-*   初始化变量`distinct_nodes`为`0`，以存储从根到当前节点的不同节点的计数，而将`ans`初始化为 0，以将总的不同根存储到 具有`K`个不同节点的叶路径。
+*   初始化变量`distinct_nodes`为`0`，来存储从根到当前节点的不同节点的计数，而将`ans`初始化为 0，来存储具有`K`个不同节点的根到叶子的不同路径总数。
 
 *   在给定的二叉树中执行[前序遍历](http://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)，并将从根到当前节点的不同节点的计数存储在映射`M`中。
 

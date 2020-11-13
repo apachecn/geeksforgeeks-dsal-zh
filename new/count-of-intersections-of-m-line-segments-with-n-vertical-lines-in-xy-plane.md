@@ -32,7 +32,7 @@
 
 **时间复杂度**：`O(N * M)`。
 
-**方法 2**：这个想法是使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)来 有效地解决这个问题。 请按照以下步骤解决问题：
+**方法 2**：这个想法是使用[前缀总和](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)来有效地解决这个问题。 请按照以下步骤解决问题：
 
 *   我们可以进行的第一个观察是`y`坐标无关紧要。 此外，我们可以观察到仅触摸垂直线并不算作交集。
 

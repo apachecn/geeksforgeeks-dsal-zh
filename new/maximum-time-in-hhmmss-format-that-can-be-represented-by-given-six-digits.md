@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/](https://www.geeksforgeeks.org/maximum-time-in-hhmmss-format-that-can-be-represented-by-given-six-digits/)
 
-给定仅由六个整数组成的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是以 **24 小时格式**返回最大时间，可以使用 给定数组中的数字。
+给定仅由六个整数组成的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是以 **24 小时格式**返回最大时间，可以使用给定数组中的数字。
 
 **注意**：24 小时格式的最短时间为`00:00:00`，最大时间为`23:59:59`。 如果无法形成有效时间，请打印 -1。
 

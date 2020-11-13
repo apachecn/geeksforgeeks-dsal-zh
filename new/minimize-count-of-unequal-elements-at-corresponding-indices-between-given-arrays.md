@@ -24,7 +24,7 @@
 >
 > **输出**：2
 
-**方法**：由于可以在对对列表中指定的数组`A[]`的元素进行任意次数的交换，因此可以将这些元素视为已连接的[集合](https://www.geeksforgeeks.org/union-find/)，并且在其内部进行交换 允许的元素。 以下是实现此方法的步骤：
+**方法**：由于可以在对对列表中指定的数组`A[]`的元素进行任意次数的交换，因此可以将这些元素视为已连接的[集合](https://www.geeksforgeeks.org/union-find/)，并且在其内部交换允许的元素。 以下是实现此方法的步骤：
 
 1.  [遍历给定数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)`A[]`[并创建一组连通组件](http://www.geeksforgeeks.org/strongly-connected-components/)，可以使用[不相交集](https://www.geeksforgeeks.org/disjoint-set-data-structures/)轻松完成。
 
