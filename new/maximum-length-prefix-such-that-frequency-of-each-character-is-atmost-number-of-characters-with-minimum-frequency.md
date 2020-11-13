@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/](https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/)
 
-给定字符串`S`，任务是找到具有最大可能长度的字符串`S`的前缀，以使前缀中每个字符的频率最多为`S`中的字符数 以最小的频率。
+给定字符串`S`，任务是找到具有最大可能长度的字符串`S`的前缀，以使前缀中每个字符的频率最多为`S`中的频率最小的字符数。
 
 **示例**：
 

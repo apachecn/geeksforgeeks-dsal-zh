@@ -497,9 +497,9 @@ public class GFG {
 
 4.  现在进入一个`while`循环，直到`l < r`的值运行。
 
-5.  如果`arr[i] + arr[l] + arr[r] > target`，则将`r`减少`1`，因为所需总和小于 当前的总和减少值将是有需要的。
+5.  如果`arr[i] + arr[l] + arr[r] > target`，则将`r`减少`1`，因为所需总和大于当前的总和，减少值是必要的。
 
-6.  如果`arr[i] + arr[l] + arr[r] < target`，则将`l`增加`1`，因为所需总和小于 当前的总和并增加的价值将是有需要的。
+6.  如果`arr[i] + arr[l] + arr[r] < target`，则将`l`增加`1`，因为所需总和小于当前的总和，增加值将是必要的。
 
 7.  如果`arr[i] + arr[l] + arr[r] == target`，则打印值。
 

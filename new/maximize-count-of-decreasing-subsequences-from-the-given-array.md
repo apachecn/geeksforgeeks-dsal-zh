@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/](https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/)
 
-给定数组`arr[]`，任务是重新排列数组以生成**最大递减子序列**，并打印的最大 尽可能多的子序列，以使每个数组元素可以是单个子序列的一部分，并且子序列的长度需要最大化。
+给定数组`arr[]`，任务是重新排列数组以生成**最大递减子序列**，并打印可能的最大递减子序列的数量，以使每个数组元素可以是单个子序列的一部分，并且子序列的长度需要最大化。
 
 **示例**：
 
