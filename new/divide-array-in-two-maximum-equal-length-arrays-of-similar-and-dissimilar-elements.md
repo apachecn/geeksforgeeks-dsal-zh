@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/](https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/)
 
-给定一个自然数为`n`的数组`arr`，找到可以将数组`arr`划分为两个相等大小的数组的最大大小，这样 第一个数组包含所有相同的元素，而第二个数组包含所有不同的元素。
+给定一个自然数为`n`的数组`arr`，找到可以将数组`arr`划分为两个相等大小的数组的最大大小，这样第一个数组包含所有相同的元素，而第二个数组包含所有不同的元素。
 
 **示例**：
 

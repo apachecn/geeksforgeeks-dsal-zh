@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/](https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/)
 
-给定大小为`N`的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是计算给定数组中[子数组](https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/)的数量，从而 这些子数组中的每个不同元素至少出现两次。
+给定大小为`N`的[数组](https://www.geeksforgeeks.org/array-data-structure/)`arr[]`，任务是计算给定数组中[子数组](https://www.geeksforgeeks.org/subarraysubstring-vs-subsequence-and-programs-to-generate-them/)的数量，从而这些子数组中的每个不同元素至少出现两次。
 
 **示例**：
 
@@ -10,7 +10,7 @@
 >
 > **输出**：6
 >
-> **说明**：具有每个元素的子数组 至少发生两次的是：`{{1, 1}, {1, 1, 2, 2}, {1, 1, 2, 2, 2}, {2, 2}, {2, 2, 2}, {2, 2}}`。
+> **说明**：每个元素至少出现两次的子数组是：`{{1, 1}, {1, 1, 2, 2}, {1, 1, 2, 2, 2}, {2, 2}, {2, 2, 2}, {2, 2}}`。
 >
 > 因此，所需的输出为 6。
 > 
@@ -18,7 +18,7 @@
 >
 > **输出**：1
 
-**朴素的方法**：解决此问题的最简单方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)和[生成给定数组的所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，对于每个子数组，检查是否全部 子数组中的元素至少发生两次或没有。 如果发现为真，则增加计数。 最后，打印获得的**计数**。
+**朴素的方法**：解决此问题的最简单方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)和[生成给定数组的所有可能的子数组](https://www.geeksforgeeks.org/generating-subarrays-using-recursion/)，对于每个子数组，检查子数组中的全部元素是否至少出现两次。 如果发现为真，则增加计数。 最后，打印获得的**计数**。
 
 **时间复杂度**：`O(N ^ 3)`。
 

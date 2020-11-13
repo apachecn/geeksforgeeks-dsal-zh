@@ -6,7 +6,7 @@
 
 **示例**：
 
-> **输入**：`N = 3, Edges[][] = {{1, 2}, {1, 3}}, arr[] = {3, 3, 2}, K = 2`，下面是 给定的树：
+> **输入**：`N = 3, Edges[][] = {{1, 2}, {1, 3}}, arr[] = {3, 3, 2}, K = 2`，下面是给定的树：
 > 
 > ![](img/e2eb1bfe6a4036a79cd1fe4941d16880.png)
 > 
@@ -34,7 +34,7 @@
 >
 > 因此，答案是 2。
 
-**朴素的方法**：最简单的方法是[生成从根到叶节点的所有可能路径](https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/)，并针对每个路径检查其是否包含`K`个不同的节点或 不。 最后，打印此类路径的计数。
+**朴素的方法**：最简单的方法是[生成从根到叶节点的所有可能路径](https://www.geeksforgeeks.org/given-a-binary-tree-print-all-root-to-leaf-paths/)，并针对每个路径检查其是否包含`K`个不同的节点。 最后，打印此类路径的计数。
 
 **时间复杂度**：`O(N * H ^ 2)`，其中`H`表示树的高度。
 
