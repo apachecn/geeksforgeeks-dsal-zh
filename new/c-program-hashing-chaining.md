@@ -1,4 +1,4 @@
-# 用于通过链接进行哈希处理的 C++ 程序
+# 链式哈希的 C++ 程序
 
 > 原文：[https://www.geeksforgeeks.org/c-program-hashing-chaining/](https://www.geeksforgeeks.org/c-program-hashing-chaining/)
 

@@ -1,4 +1,4 @@
-# 检查是否可以通过对子字符串排序将字符串转换为另一个字符串
+# 检查是否可以通过对子字符串排序，将字符串转换为另一个字符串
 
 > 原文：[https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/](https://www.geeksforgeeks.org/check-if-a-string-can-be-transformed-to-another-by-sorting-substrings/)
 

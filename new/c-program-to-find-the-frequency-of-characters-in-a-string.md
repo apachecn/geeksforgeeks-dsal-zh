@@ -1,4 +1,4 @@
-# C 程序，用于查找字符串中的字符频率
+# C 程序：查找字符串中的字符频率
 
 > 原文：[https://www.geeksforgeeks.org/c-program-to-find-the-frequency-of-characters-in-a-string/](https://www.geeksforgeeks.org/c-program-to-find-the-frequency-of-characters-in-a-string/)
 

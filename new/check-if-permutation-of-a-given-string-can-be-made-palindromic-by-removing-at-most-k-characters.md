@@ -1,4 +1,4 @@
-# 检查是否可以通过删除最多`K`个字符来使给定字符串的排列回文
+# 检查是否可以通过删除最多`K`个字符来使给定字符串的排列为回文
 
 > 原文：[https://www.geeksforgeeks.org/check-if-permutation-of-a-given-string-can-be-made-palindromic-by-removing-at-most-k-characters/](https://www.geeksforgeeks.org/check-if-permutation-of-a-given-string-can-be-made-palindromic-by-removing-at-most-k-characters/)
 

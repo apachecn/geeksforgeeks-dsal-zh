@@ -1,4 +1,4 @@
-# 使用给定的操作检查给定的 1 到`N`的排列是否可行
+# 使用给定的操作检查给定的 1 到`N`的排列是否满足要求
 
 > 原文：[https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/](https://www.geeksforgeeks.org/check-if-given-permutation-of-1-to-n-is-feasible-using-given-operations/)
 

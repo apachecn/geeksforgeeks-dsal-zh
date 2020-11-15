@@ -1,4 +1,4 @@
-# 检查数组是否可以分成对，其和可被`K`整除
+# 检查数组是否可以分成偶对，其和可被`K`整除
 
 > 原文：[https://www.geeksforgeeks.org/check-if-an-array-can-be-divided-into-pairs-whose-sum-is-divisible-by-k/](https://www.geeksforgeeks.org/check-if-an-array-can-be-divided-into-pairs-whose-sum-is-divisible-by-k/)
 

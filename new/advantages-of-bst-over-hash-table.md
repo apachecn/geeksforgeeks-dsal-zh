@@ -1,4 +1,4 @@
-# BST 优于哈希表
+# BST 相对于哈希表的优势
 
 > 原文：[https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/](https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/)
 

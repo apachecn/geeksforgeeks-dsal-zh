@@ -1,4 +1,4 @@
-# 检查给定字符串的字符是否可以重新排列以形成回文
+# 检查给定字符串的字符是否可以重新排列来形成回文
 
 > 原文：[https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)
 

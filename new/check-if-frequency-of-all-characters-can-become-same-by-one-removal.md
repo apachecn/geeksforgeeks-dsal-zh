@@ -1,4 +1,4 @@
-# 检查一次删除后所有字符的频率是否可以相同
+# 检查在一次删除后所有字符的频率是否可以相同
 
 > 原文：[https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/](https://www.geeksforgeeks.org/check-if-frequency-of-all-characters-can-become-same-by-one-removal/)
 

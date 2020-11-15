@@ -1,4 +1,4 @@
-# 使用哈希进行地址计算排序
+# 使用哈希的地址计算排序
 
 > 原文：[https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/](https://www.geeksforgeeks.org/address-calculation-sort-using-hashing/)
 

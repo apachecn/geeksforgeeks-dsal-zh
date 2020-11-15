@@ -1,4 +1,4 @@
-# 检查两个数组是否彼此置换
+# 检查两个数组是否彼此为置换
 
 > 原文：[https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/](https://www.geeksforgeeks.org/check-if-two-arrays-are-permutations-of-each-other/)
 

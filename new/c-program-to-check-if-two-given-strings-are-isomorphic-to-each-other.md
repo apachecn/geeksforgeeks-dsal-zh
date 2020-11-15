@@ -1,4 +1,4 @@
-# C 程序，用于检查两个给定的字符串是否彼此同构
+# C 程序：检查两个给定的字符串是否彼此同构
 
 > 原文：[https://www.geeksforgeeks.org/c-program-to-check-if-two-given-strings-are-isomorphic-to-each-other/](https://www.geeksforgeeks.org/c-program-to-check-if-two-given-strings-are-isomorphic-to-each-other/)
 

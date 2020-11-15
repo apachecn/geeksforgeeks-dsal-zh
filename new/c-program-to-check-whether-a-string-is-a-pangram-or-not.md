@@ -1,4 +1,4 @@
-# C++ 程序，用于检查字符串是否为全字母短句
+# C++ 程序：检查字符串是否为全字母短句
 
 > 原文：[https://www.geeksforgeeks.org/c-program-to-check-whether-a-string-is-a-pangram-or-not/](https://www.geeksforgeeks.org/c-program-to-check-whether-a-string-is-a-pangram-or-not/)
 

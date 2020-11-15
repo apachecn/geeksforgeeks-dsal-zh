@@ -1,4 +1,4 @@
-# 检查`N`是否除以除以`K`以外的所有值的唯一余数
+# 检查`N`除以 1 到`K`的所有值是否具有唯一余数
 
 > 原文：[https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/](https://www.geeksforgeeks.org/check-if-n-leaves-only-distinct-remainders-on-division-by-all-values-up-to-k/)
 
