@@ -1,4 +1,4 @@
-# 计算数组中的偶对数量，满足一个频率至少等于另一个的值
+# 计算数组中的偶对数量，其中一个频率至少等于另一个的值
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/](https://www.geeksforgeeks.org/count-pairs-in-an-array-such-that-frequency-of-one-is-at-least-value-of-other/)
 

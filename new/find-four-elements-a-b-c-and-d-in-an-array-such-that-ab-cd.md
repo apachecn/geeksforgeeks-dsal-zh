@@ -1,4 +1,4 @@
-# 在数组中找到四个元素`a, b, c, d`，满足`a + b = c + d`
+# 在数组中找到四个元素`a, b, c, d`，其中`a + b = c + d`
 
 > 原文：[https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/](https://www.geeksforgeeks.org/find-four-elements-a-b-c-and-d-in-an-array-such-that-ab-cd/)
 

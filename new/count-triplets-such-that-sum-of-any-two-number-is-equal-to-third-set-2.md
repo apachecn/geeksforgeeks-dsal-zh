@@ -1,4 +1,4 @@
-# 计算三元组的数量，满足任何两个数的和等于三 | 系列 2
+# 计算三元组的数量，其中任何两个数的和等于第三个 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/](https://www.geeksforgeeks.org/count-triplets-such-that-sum-of-any-two-number-is-equal-to-third-set-2/)
 

@@ -1,4 +1,4 @@
-# 最长子序列，满足每对之间的绝对差最大为 1
+# 最长子序列，其中每对之间的绝对差最大为 1
 
 > 原文：[https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/](https://www.geeksforgeeks.org/longest-subsequence-such-that-absolute-difference-between-every-pair-is-atmost-1/)
 

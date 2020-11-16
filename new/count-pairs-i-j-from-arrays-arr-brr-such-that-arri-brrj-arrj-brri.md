@@ -1,4 +1,4 @@
-# 计算数组`arr[]`和`brr[]`中的偶对`(i, j)`的数量，满足`arr[i] – brr[j] = arr[j] – brr[i]`
+# 计算数组`arr[]`和`brr[]`中的偶对`(i, j)`的数量，其中`arr[i] – brr[j] = arr[j] – brr[i]`
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/](https://www.geeksforgeeks.org/count-pairs-i-j-from-arrays-arr-brr-such-that-arri-brrj-arrj-brri/)
 

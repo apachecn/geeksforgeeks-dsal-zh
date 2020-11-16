@@ -1,4 +1,4 @@
-# 来自给定字符串的有效对`(X, Y)`的数量，满足`X`与自身连接产生`Y`
+# 来自给定字符串的有效对`(X, Y)`的数量，其中`X`与自身连接产生`Y`
 
 > 原文：[https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/](https://www.geeksforgeeks.org/count-of-valid-pairs-x-y-from-given-strings-such-that-concatenating-x-with-itself-yields-y/)
 

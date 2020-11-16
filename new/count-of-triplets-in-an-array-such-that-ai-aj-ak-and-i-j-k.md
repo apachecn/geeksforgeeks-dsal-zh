@@ -1,4 +1,4 @@
-# 数组中三元组的数量，满足`A[i] * A[j] = A[k]`且`i < j < k`
+# 数组中三元组的数量，其中`A[i] * A[j] = A[k]`且`i < j < k`
 
 > 原文：[https://www.geeksforgeeks.org/count-of-triplets-in-an-array-such-that-ai-aj-ak-and-i-j-k/](https://www.geeksforgeeks.org/count-of-triplets-in-an-array-such-that-ai-aj-ak-and-i-j-k/)
 

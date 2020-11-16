@@ -1,4 +1,4 @@
-# 计数数组中的四元组`(i, j, k, l)`数量, 满足`i < j < k < l`和`arr[i] = arr[k]`和`arr[j] = arr[l]`
+# 计数数组中的四元组`(i, j, k, l)`数量, 其中`i < j < k < l`和`arr[i] = arr[k]`和`arr[j] = arr[l]`
 
 > 原文：[https://www.geeksforgeeks.org/count-quadruples-i-j-k-l-in-an-array-such-that-i-j-k-l-and-arri-arrk-and-arrj-arrl/](https://www.geeksforgeeks.org/count-quadruples-i-j-k-l-in-an-array-such-that-i-j-k-l-and-arri-arrk-and-arrj-arrl/)
 
