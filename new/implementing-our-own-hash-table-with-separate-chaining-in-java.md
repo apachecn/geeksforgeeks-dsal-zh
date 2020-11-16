@@ -1,4 +1,4 @@
-# 用 Java 中的单链接实现自己的哈希表
+# 在 Java 中用单链接实现自己的哈希表
 
 > 原文：[https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/](https://www.geeksforgeeks.org/implementing-our-own-hash-table-with-separate-chaining-in-java/)
 

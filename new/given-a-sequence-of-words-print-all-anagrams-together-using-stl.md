@@ -1,4 +1,4 @@
-# 给定一系列单词，请使用 STL 将所有异序词一起打印
+# 给定一系列单词，使用 STL 将所有异序词一起打印
 
 > 原文：[https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-using-stl/](https://www.geeksforgeeks.org/given-a-sequence-of-words-print-all-anagrams-together-using-stl/)
 

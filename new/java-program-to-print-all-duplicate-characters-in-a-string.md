@@ -1,4 +1,4 @@
-# Java 程序以字符串形式打印所有重复的字符
+# Java 程序：以字符串形式打印所有重复的字符
 
 > 原文：[https://www.geeksforgeeks.org/java-program-to-print-all-duplicate-characters-in-a-string/](https://www.geeksforgeeks.org/java-program-to-print-all-duplicate-characters-in-a-string/)
 

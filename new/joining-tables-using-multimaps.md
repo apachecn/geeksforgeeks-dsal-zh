@@ -1,4 +1,4 @@
-# 使用`MultiMap`连接表
+# 使用`MultiMap`来连接表
 
 > 原文：[https://www.geeksforgeeks.org/joining-tables-using-multimaps/](https://www.geeksforgeeks.org/joining-tables-using-multimaps/)
 

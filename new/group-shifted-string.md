@@ -1,4 +1,4 @@
-# 对移位的字符串分组
+# 分组移位的字符串
 
 > 原文：[https://www.geeksforgeeks.org/group-shifted-string/](https://www.geeksforgeeks.org/group-shifted-string/)
 

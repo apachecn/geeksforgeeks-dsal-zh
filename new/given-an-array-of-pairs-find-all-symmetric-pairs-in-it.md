@@ -1,4 +1,4 @@
-# 给定数组对，在其中找到所有对称对
+# 给定偶对数组，在其中找到所有对称的偶对
 
 > 原文：[https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/](https://www.geeksforgeeks.org/given-an-array-of-pairs-find-all-symmetric-pairs-in-it/)
 

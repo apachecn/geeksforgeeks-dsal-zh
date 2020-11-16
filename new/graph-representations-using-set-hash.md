@@ -1,4 +1,4 @@
-# 使用集合和哈希的图形表示
+# 使用集合和哈希的图表示
 
 > 原文：[https://www.geeksforgeeks.org/graph-representations-using-set-hash/](https://www.geeksforgeeks.org/graph-representations-using-set-hash/)
 

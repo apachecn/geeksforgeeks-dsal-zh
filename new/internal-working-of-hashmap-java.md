@@ -1,4 +1,4 @@
-# Java 中`HashMap`的内部工作
+# Java 中`HashMap`的内部原理
 
 > 原文：[https://www.geeksforgeeks.org/internal-working-of-hashmap-java/](https://www.geeksforgeeks.org/internal-working-of-hashmap-java/)
 

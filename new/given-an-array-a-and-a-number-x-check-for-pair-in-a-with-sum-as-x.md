@@ -1,4 +1,4 @@
-# 给定数组`A[]`和数字`x`，请检查`A[]`中的对，且总和为`x`
+# 给定数组`A[]`和数字`x`，检查`A[]`中的总和为`x`的偶对
 
 > 原文：[https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/](https://www.geeksforgeeks.org/given-an-array-a-and-a-number-x-check-for-pair-in-a-with-sum-as-x/)
 

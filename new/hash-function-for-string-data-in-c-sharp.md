@@ -1,4 +1,4 @@
-# C#中字符串数据的哈希函数
+# C# 中字符串数据的哈希函数
 
 > 原文：[https://www.geeksforgeeks.org/hash-function-for-string-data-in-c-sharp/](https://www.geeksforgeeks.org/hash-function-for-string-data-in-c-sharp/)
 

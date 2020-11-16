@@ -1,4 +1,4 @@
-# 以递增顺序排列的第`k`个丢失元素，在给定序列中不存在
+# 在给定递增序列中不存在的第`k`个缺失元素，
 
 > 原文：[https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/](https://www.geeksforgeeks.org/k-th-missing-element-increasing-sequence-not-present-given-sequence/)
 

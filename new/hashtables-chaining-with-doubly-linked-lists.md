@@ -1,4 +1,4 @@
-# 具有双链表的哈希表链接
+# 使用双链表的哈希表
 
 > 原文：[https://www.geeksforgeeks.org/hashtables-chaining-with-doubly-linked-lists/](https://www.geeksforgeeks.org/hashtables-chaining-with-doubly-linked-lists/)
 
