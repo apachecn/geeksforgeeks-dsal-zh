@@ -1,4 +1,4 @@
-# 按 C++ STL 中的值对映射排序
+# 在 C++ STL 中的按值对映射排序
 
 > 原文：[https://www.geeksforgeeks.org/sorting-a-map-by-value-in-c-stl/](https://www.geeksforgeeks.org/sorting-a-map-by-value-in-c-stl/)
 

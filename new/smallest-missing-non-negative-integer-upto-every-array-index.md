@@ -1,4 +1,4 @@
-# 丢失的最小非负整数，直到每个数组索引
+# 直到每个数组索引的缺失的最小非负整数
 
 > 原文：[https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/](https://www.geeksforgeeks.org/smallest-missing-non-negative-integer-upto-every-array-index/)
 

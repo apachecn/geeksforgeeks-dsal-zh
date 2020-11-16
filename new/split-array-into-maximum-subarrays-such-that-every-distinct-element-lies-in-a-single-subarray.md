@@ -1,4 +1,4 @@
-# 将数组拆分为最大子数组，以便每个不同的元素都位于单个子数组中
+# 将数组拆分为最大子数组，其中每个不同的元素都位于单个子数组中
 
 > 原文：[https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/](https://www.geeksforgeeks.org/split-array-into-maximum-subarrays-such-that-every-distinct-element-lies-in-a-single-subarray/)
 

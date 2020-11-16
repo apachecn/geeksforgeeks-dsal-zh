@@ -1,4 +1,4 @@
-# 给定数组中的最小子数组，总和大于或等于`K`
+# 给定数组中，总和大于或等于`K`的最小子数组
 
 > 原文：[https://www.geeksforgeeks.org/smallest-subarray-from-a-given-array-with-sum-greater-than-or-equal-to-k/](https://www.geeksforgeeks.org/smallest-subarray-from-a-given-array-with-sum-greater-than-or-equal-to-k/)
 

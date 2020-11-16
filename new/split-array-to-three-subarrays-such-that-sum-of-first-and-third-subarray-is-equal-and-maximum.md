@@ -1,4 +1,4 @@
-# 将数组拆分为三个子数组，以使第一和第三子数组的总和相等且最大值
+# 将数组拆分为三个子数组，其中第一和第三子数组的总和相等且最大
 
 > 原文：[https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/](https://www.geeksforgeeks.org/split-array-to-three-subarrays-such-that-sum-of-first-and-third-subarray-is-equal-and-maximum/)
 

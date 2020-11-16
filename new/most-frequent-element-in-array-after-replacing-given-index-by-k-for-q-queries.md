@@ -1,4 +1,4 @@
-# 在查询`Q`中用`K`替换给定索引后，数组中最频繁的元素
+# 对于`Q`个查询，用`K`替换给定索引后，数组中最频繁的元素
 
 > 原文：[https://www.geeksforgeeks.org/most-frequent-element-in-array-after-replacing-given-index-by-k-for-q-queries/](https://www.geeksforgeeks.org/most-frequent-element-in-array-after-replacing-given-index-by-k-for-q-queries/)
 

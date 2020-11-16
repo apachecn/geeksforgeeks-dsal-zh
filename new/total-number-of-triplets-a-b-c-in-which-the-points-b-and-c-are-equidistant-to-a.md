@@ -1,4 +1,4 @@
-# `B`和`C`点与`A`等距的三元组`(A, B, C)`总数
+# 三元组`(A, B, C)`总数，其中`B`和`C`点与`A`等距
 
 > 原文：[https://www.geeksforgeeks.org/total-number-of-triplets-a-b-c-in-which-the-points-b-and-c-are-equidistant-to-a/](https://www.geeksforgeeks.org/total-number-of-triplets-a-b-c-in-which-the-points-b-and-c-are-equidistant-to-a/)
 

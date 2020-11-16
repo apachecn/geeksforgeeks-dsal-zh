@@ -1,4 +1,4 @@
-# 在第一个数组模`M`中添加的最小数字，以使两个数组的频率相等
+# 在第一个数组模`M`中添加的最小数字，使两个数组的频率相等
 
 > 原文：[https://www.geeksforgeeks.org/smallest-number-to-be-added-in-first-array-modulo-m-to-make-frequencies-of-both-arrays-equal/](https://www.geeksforgeeks.org/smallest-number-to-be-added-in-first-array-modulo-m-to-make-frequencies-of-both-arrays-equal/)
 

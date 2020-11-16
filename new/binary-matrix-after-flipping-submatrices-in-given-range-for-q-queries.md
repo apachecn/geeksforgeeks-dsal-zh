@@ -1,4 +1,4 @@
-# 在查询`Q`的给定范围内翻转子矩阵后的最终矩阵
+# 对于`Q`个查询，翻转给定范围中的子矩阵后的最终矩阵
 
 > 原文：[https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/](https://www.geeksforgeeks.org/binary-matrix-after-flipping-submatrices-in-given-range-for-q-queries/)
 

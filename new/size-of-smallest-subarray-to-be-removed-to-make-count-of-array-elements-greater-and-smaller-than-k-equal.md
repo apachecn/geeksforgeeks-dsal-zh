@@ -1,4 +1,4 @@
-# 要删除的最小子数组的大小，以使数组元素的数量大于或小于`K`
+# 要删除的最小子数组的大小，使数组元素的数量大于或小于`K`
 
 > 原文：[https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/](https://www.geeksforgeeks.org/size-of-smallest-subarray-to-be-removed-to-make-count-of-array-elements-greater-and-smaller-than-k-equal/)
 

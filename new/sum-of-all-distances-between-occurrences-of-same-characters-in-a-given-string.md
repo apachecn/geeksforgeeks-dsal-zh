@@ -1,4 +1,4 @@
-# 给定字符串中出现相同字符之间的所有距离之和
+# 在给定字符串中出现的相同字符之间的所有距离之和
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/](https://www.geeksforgeeks.org/sum-of-all-distances-between-occurrences-of-same-characters-in-a-given-string/)
 

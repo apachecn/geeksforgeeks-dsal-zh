@@ -1,4 +1,4 @@
-# 计数具有相等数量的 0s，1s 和 2s 的子字符串
+# 计算子字符串的数量，它们具有相等数量的 0，1 和 2
 
 > 原文：[https://www.geeksforgeeks.org/substring-equal-number-0-1-2/](https://www.geeksforgeeks.org/substring-equal-number-0-1-2/)
 

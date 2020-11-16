@@ -1,4 +1,4 @@
-# 允许在相同高度的节点之间进行`k`次跳跃的树的遍历
+# 树的遍历，允许在相同高度的节点之间进行`k`次跳跃
 
 > 原文：[https://www.geeksforgeeks.org/traversal-tree-ability-jump-nodes-height/](https://www.geeksforgeeks.org/traversal-tree-ability-jump-nodes-height/)
 

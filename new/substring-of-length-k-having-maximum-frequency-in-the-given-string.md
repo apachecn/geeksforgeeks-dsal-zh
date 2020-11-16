@@ -1,4 +1,4 @@
-# 在给定字符串中具有最大频率的长度为`K`的子字符串
+# 给定字符串中具有最大频率的长度为`K`的子字符串
 
 > 原文：[https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/](https://www.geeksforgeeks.org/substring-of-length-k-having-maximum-frequency-in-the-given-string/)
 

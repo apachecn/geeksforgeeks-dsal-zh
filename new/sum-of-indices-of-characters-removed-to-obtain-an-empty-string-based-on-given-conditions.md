@@ -1,4 +1,4 @@
-# 根据给定条件删除的字符索引总和，以获得空字符串
+# 字符索引的总和，根据给定条件将其删除来获得空字符串
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-indices-of-characters-removed-to-obtain-an-empty-string-based-on-given-conditions/](https://www.geeksforgeeks.org/sum-of-indices-of-characters-removed-to-obtain-an-empty-string-based-on-given-conditions/)
 

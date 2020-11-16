@@ -1,4 +1,4 @@
-# Q 查询中给定数组在`[L, R]`范围内的质数之和
+# 对于`Q`个查询，给定数组在`[L, R]`范围中的质数之和
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/](https://www.geeksforgeeks.org/sum-of-prime-numbers-in-range-l-r-from-given-array-for-q-queries/)
 

@@ -1,4 +1,4 @@
-# 打印所有以元音开头和辅音结尾的字符串子序列。
+# 打印所有以元音开头和辅音结尾的字符串的子序列
 
 > 原文：[https://www.geeksforgeeks.org/subsequences-string-start-vowel-end-consonant/](https://www.geeksforgeeks.org/subsequences-string-start-vowel-end-consonant/)
 

@@ -1,4 +1,4 @@
-# 将数组拆分为两个相等长度的子集，以使一个数字的所有重复都位于单个子集中
+# 将数组拆分为两个相等长度的子集，其中一个数字的所有重复都位于单个子集中
 
 > 原文：[https://www.geeksforgeeks.org/split-array-into-two-equal-length-subsets-such-that-all-repetitions-of-a-number-lies-in-a-single-subset/](https://www.geeksforgeeks.org/split-array-into-two-equal-length-subsets-such-that-all-repetitions-of-a-number-lies-in-a-single-subset/)
 

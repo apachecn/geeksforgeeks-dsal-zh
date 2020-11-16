@@ -1,4 +1,4 @@
-# 要删除的最短子数组，以使所有数组元素唯一
+# 要删除最短的子数组，使所有数组元素唯一
 
 > 原文：[https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/](https://www.geeksforgeeks.org/shortest-subarray-to-be-removed-to-make-all-array-elements-unique/)
 

@@ -1,4 +1,4 @@
-# 字符串中的最小字符，连续重复之间的距离之和最小
+# 字符串中的最小字符，它的连续重复之间的距离之和最小
 
 > 原文：[https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/](https://www.geeksforgeeks.org/smallest-character-in-a-string-having-minimum-sum-of-distances-between-consecutive-repetitions/)
 
