@@ -1,4 +1,4 @@
-# 具有可被 K 整除的所有对的绝对差的最长子序列的长度
+# 具有可被`K`整除的所有偶对的绝对差的最长子序列的长度
 
 > 原文：[https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/](https://www.geeksforgeeks.org/length-of-longest-subsequence-having-absolute-difference-of-all-pairs-divisible-by-k/)
 

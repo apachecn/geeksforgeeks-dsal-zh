@@ -1,4 +1,4 @@
-# 最长和可被`K`整除的子数组
+# 总和可被`K`整除的最长子数组
 
 > 原文：[https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/](https://www.geeksforgeeks.org/longest-subarray-sum-divisible-k/)
 

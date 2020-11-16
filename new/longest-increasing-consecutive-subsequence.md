@@ -1,4 +1,4 @@
-# 最长的连续子序列
+# 最长连续递增子序列
 
 > 原文：[https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/](https://www.geeksforgeeks.org/longest-increasing-consecutive-subsequence/)
 

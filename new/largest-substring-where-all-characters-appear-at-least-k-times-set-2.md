@@ -1,4 +1,4 @@
-# 最大的子字符串，其中所有字符至少出现 K 次 | 系列 2
+# 所有字符至少出现`K`次的最大子字符串 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/](https://www.geeksforgeeks.org/largest-substring-where-all-characters-appear-at-least-k-times-set-2/)
 

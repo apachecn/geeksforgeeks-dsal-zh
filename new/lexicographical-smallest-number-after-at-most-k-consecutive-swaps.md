@@ -1,4 +1,4 @@
-# 最多`K`次连续互换后的词典最小数字
+# 最多`K`次连续互换后的最小词典数字
 
 > 原文：[https://www.geeksforgeeks.org/lexicographical-smallest-number-after-at-most-k-consecutive-swaps/](https://www.geeksforgeeks.org/lexicographical-smallest-number-after-at-most-k-consecutive-swaps/)
 

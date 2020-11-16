@@ -1,4 +1,4 @@
-# 带有相等数量的元音和辅音的最长子串
+# 带有数量相等数量的元音和辅音的最长子串
 
 > 原文：[https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/](https://www.geeksforgeeks.org/longest-substring-having-equal-count-of-vowels-and-consonants/)
 

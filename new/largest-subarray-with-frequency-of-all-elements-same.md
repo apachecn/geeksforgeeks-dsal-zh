@@ -1,4 +1,4 @@
-# 最大子数组，所有元素的频率相同
+# 所有元素的频率相同的最大子数组
 
 > 原文：[https://www.geeksforgeeks.org/largest-subarray-with-frequency-of-all-elements-same/](https://www.geeksforgeeks.org/largest-subarray-with-frequency-of-all-elements-same/)
 

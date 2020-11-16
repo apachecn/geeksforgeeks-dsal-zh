@@ -1,4 +1,4 @@
-# 最长子数组，不超过`K`个不同元素
+# 不同元素不超过`K`个的最长子数组
 
 > 原文：[https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/](https://www.geeksforgeeks.org/longest-subarray-not-k-distinct-elements/)
 

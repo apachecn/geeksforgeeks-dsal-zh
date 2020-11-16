@@ -1,4 +1,4 @@
-# 包含第二个字符串作为子字符串的字符串的词典编排最小排列
+# 字符串的最小词典排列，它包含第二个字符串作为子字符串
 
 > 原文：[https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/](https://www.geeksforgeeks.org/lexicographic-smallest-permutation-of-a-string-containing-the-second-string-as-a-substring/)
 

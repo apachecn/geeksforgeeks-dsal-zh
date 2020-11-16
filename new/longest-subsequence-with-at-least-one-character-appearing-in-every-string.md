@@ -1,4 +1,4 @@
-# 最长子序列，每个字符串中至少出现一个字符
+# 最长子序列，满足每个字符串中至少出现一个字符
 
 > 原文：[https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/](https://www.geeksforgeeks.org/longest-subsequence-with-at-least-one-character-appearing-in-every-string/)
 

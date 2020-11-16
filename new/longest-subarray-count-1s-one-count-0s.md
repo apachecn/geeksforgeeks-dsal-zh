@@ -1,4 +1,4 @@
-# 计数为 1s 的最长子数组比计数为 0s 的子数组多
+# 1 的数量比 0 多的最长子数组
 
 > 原文：[https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/](https://www.geeksforgeeks.org/longest-subarray-count-1s-one-count-0s/)
 

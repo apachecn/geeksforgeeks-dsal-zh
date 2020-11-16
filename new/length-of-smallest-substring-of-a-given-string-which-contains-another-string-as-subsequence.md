@@ -1,4 +1,4 @@
-# 给定字符串的最小子字符串的长度，该字符串包含另一个字符串作为子序列
+# 给定字符串的最小子字符串的长度，它包含另一个字符串作为子序列
 
 > 原文：[https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/](https://www.geeksforgeeks.org/length-of-smallest-substring-of-a-given-string-which-contains-another-string-as-subsequence/)
 

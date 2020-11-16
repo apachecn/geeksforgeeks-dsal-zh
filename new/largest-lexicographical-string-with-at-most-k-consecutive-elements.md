@@ -1,4 +1,4 @@
-# 最大的词典字符串，最多包含`K`个连续元素
+# 最多包含`K`个连续元素的最大的词典字符串
 
 > 原文：[https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/](https://www.geeksforgeeks.org/largest-lexicographical-string-with-at-most-k-consecutive-elements/)
 

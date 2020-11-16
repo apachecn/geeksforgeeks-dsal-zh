@@ -1,4 +1,4 @@
-# 最长为`k`的子数组
+# 和为`k`的最长子数组
 
 > 原文：[https://www.geeksforgeeks.org/longest-sub-array-sum-k/](https://www.geeksforgeeks.org/longest-sub-array-sum-k/)
 

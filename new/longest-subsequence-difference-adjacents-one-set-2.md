@@ -1,4 +1,4 @@
-# 最长的子序列，使得相邻元素之间的差为 1 | 系列 2
+# 最长的子序列，满足相邻元素之间的差为 1 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/](https://www.geeksforgeeks.org/longest-subsequence-difference-adjacents-one-set-2/)
 

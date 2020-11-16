@@ -1,4 +1,4 @@
-# 通过连接给定数组中的字符串，可以得到最长回文字符串
+# 通过连接给定数组中的字符串，可以得到的最长回文字符串
 
 > 原文：[https://www.geeksforgeeks.org/longest-palindromic-string-that-can-be-obtained-by-concatenating-strings-from-a-given-array/](https://www.geeksforgeeks.org/longest-palindromic-string-that-can-be-obtained-by-concatenating-strings-from-a-given-array/)
 

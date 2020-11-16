@@ -1,4 +1,4 @@
-# 在长度为`K`的所有完全平方中，可能是最长的异序词集中最大的数字。
+# 在长度为`K`的所有完全平方中，来自可能最长的异序词集合的最大数字
 
 > 原文：[https://www.geeksforgeeks.org/largest-number-from-the-longest-set-of-anagrams-possible-from-all-perfect-squares-of-length-k/](https://www.geeksforgeeks.org/largest-number-from-the-longest-set-of-anagrams-possible-from-all-perfect-squares-of-length-k/)
 

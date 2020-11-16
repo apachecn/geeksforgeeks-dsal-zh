@@ -1,8 +1,6 @@
-# 示例中的
+# Java `HashMap`中的负载因子示例
 
 > 原文：[https://www.geeksforgeeks.org/load-factor-in-hashmap-in-java-with-examples/](https://www.geeksforgeeks.org/load-factor-in-hashmap-in-java-with-examples/)
-
-# Java HashMap 中的负载因子
 
 [`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)是一个类，用于实现 [Java 集合](https://www.geeksforgeeks.org/collections-in-java-2/)框架的[`Map`](https://www.geeksforgeeks.org/map-interface-java-examples/)接口。 `HashMap`的最重要特征是，对于**检索**和**插入**，它具有恒定的时间性能。 决定`HashMap`性能的两个因素是：
 

@@ -1,4 +1,4 @@
-# 包含另一个字符串的所有子字符串的字符串的按字典顺序排列的最小排列
+# 字符串最小词典排列，它包含另一个字符串的所有子字符串
 
 > 原文：[https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/](https://www.geeksforgeeks.org/lexicographically-smallest-permutation-of-a-string-that-contains-all-substrings-of-another-string/)
 

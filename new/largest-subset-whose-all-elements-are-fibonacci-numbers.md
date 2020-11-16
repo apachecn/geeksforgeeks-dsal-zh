@@ -1,4 +1,4 @@
-# 最大子集，其所有元素均为斐波纳契数
+# 所有元素均为斐波纳契数的最大子集
 
 > 原文：[https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/](https://www.geeksforgeeks.org/largest-subset-whose-all-elements-are-fibonacci-numbers/)
 

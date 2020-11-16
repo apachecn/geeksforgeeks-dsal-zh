@@ -1,4 +1,4 @@
-# 最长的子数组，包含数组中的唯一元素
+# 包含数组中的唯一元素的最长子数组，
 
 > 原文：[https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/](https://www.geeksforgeeks.org/longest-subarray-consisiting-of-unique-elements-from-an-array/)
 

@@ -1,4 +1,4 @@
-# 具有最大和的最长子数组
+# 总和最大的最长子数组
 
 > 原文：[https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/](https://www.geeksforgeeks.org/longest-subarray-having-maximum-sum/)
 
