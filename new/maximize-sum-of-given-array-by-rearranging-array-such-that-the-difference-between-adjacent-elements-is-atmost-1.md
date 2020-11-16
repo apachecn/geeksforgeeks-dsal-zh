@@ -1,4 +1,4 @@
-# 通过重新排列数组来最大化给定数组的总和，满足相邻元素之间的差最大为 1
+# 通过重新排列数组来最大化给定数组的总和，其中相邻元素之间的差最大为 1
 
 > 原文：[https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/](https://www.geeksforgeeks.org/maximize-sum-of-given-array-by-rearranging-array-such-that-the-difference-between-adjacent-elements-is-atmost-1/)
 

@@ -1,4 +1,4 @@
-# 最小化将给定字符串转换为长度为`K`的相等子字符串的连接的成本
+# 最小化成本来将给定字符串转换为长度为`K`的相等子字符串的连接
 
 > 原文：[https://www.geeksforgeeks.org/minimize-cost-to-convert-given-string-into-concatenation-of-equal-substrings-of-length-k/](https://www.geeksforgeeks.org/minimize-cost-to-convert-given-string-into-concatenation-of-equal-substrings-of-length-k/)
 
