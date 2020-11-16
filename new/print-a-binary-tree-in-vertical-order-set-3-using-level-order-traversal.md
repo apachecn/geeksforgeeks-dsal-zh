@@ -1,4 +1,4 @@
-# 以垂直顺序打印二叉树 | 系列 3（使用层次顺序遍历）
+# 按垂直顺序打印二叉树 | 系列 3（使用层次顺序遍历）
 
 > 原文：[https://www.geeksforgeeks.org/print-a-binary-tree-in-vertical-order-set-3-using-level-order-traversal/](https://www.geeksforgeeks.org/print-a-binary-tree-in-vertical-order-set-3-using-level-order-traversal/)
 

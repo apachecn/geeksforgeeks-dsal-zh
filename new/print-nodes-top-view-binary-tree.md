@@ -1,4 +1,4 @@
-# 打印在二叉树顶视图中的节点
+# 打印二叉树顶视图中的节点
 
 > 原文：[https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 

@@ -1,4 +1,4 @@
-# 一对具有给定总和和最小绝对差的斐波那契数
+# 具有给定总和和最小绝对差的一对斐波那契数
 
 > 原文：[https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/](https://www.geeksforgeeks.org/pair-of-fibonacci-numbers-with-a-given-sum-and-minimum-absolute-difference/)
 

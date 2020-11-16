@@ -1,4 +1,4 @@
-# 哈希练习问题
+# 哈希练习题
 
 > 原文：[https://www.geeksforgeeks.org/practice-problems-on-hashing/](https://www.geeksforgeeks.org/practice-problems-on-hashing/)
 

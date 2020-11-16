@@ -1,4 +1,4 @@
-# 以很大的数字打印所有`K`位重复数字
+# 打印很大的数字中的所有`K`位重复数字
 
 > 原文：[https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/](https://www.geeksforgeeks.org/print-all-k-digit-repeating-numbers-in-a-very-large-number/)
 

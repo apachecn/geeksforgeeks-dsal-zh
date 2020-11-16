@@ -1,4 +1,4 @@
-# 按出现顺序打印具有奇数频率的字符
+# 按出现顺序打印奇数频率的字符
 
 > 原文：[https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/](https://www.geeksforgeeks.org/print-characters-having-odd-frequencies-in-order-of-occurrence/)
 

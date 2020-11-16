@@ -1,4 +1,4 @@
-# 从给定的质因数列表中得出的数的除数
+# 给定的质因数列表的乘积的除数的乘积
 
 > 原文：[https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/](https://www.geeksforgeeks.org/product-of-divisors-of-a-number-from-a-given-list-of-its-prime-factors/)
 

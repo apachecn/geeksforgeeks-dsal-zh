@@ -1,4 +1,4 @@
-# 从数组中按排序顺序打印所有重复的相邻对
+# 按排序顺序打印数组中所有重复的相邻对
 
 > 原文：[https://www.geeksforgeeks.org/print-all-repeating-adjacent-pairs-in-sorted-order-from-an-array/](https://www.geeksforgeeks.org/print-all-repeating-adjacent-pairs-in-sorted-order-from-an-array/)
 

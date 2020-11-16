@@ -1,4 +1,4 @@
-# 打印给定字符串的所有位置，该字符串的小写字符数在两侧均相等
+# 打印给定字符串的所有位置，它两侧的小写字符数量均相等
 
 > 原文：[https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/](https://www.geeksforgeeks.org/print-all-positions-of-a-given-string-having-count-of-smaller-characters-equal-on-both-sides/)
 

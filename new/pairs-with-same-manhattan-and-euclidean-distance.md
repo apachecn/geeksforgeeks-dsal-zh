@@ -1,4 +1,4 @@
-# 曼哈顿和欧几里得距离相同的对
+# 曼哈顿和欧几里得距离相同的偶对
 
 > 原文：[https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/](https://www.geeksforgeeks.org/pairs-with-same-manhattan-and-euclidean-distance/)
 

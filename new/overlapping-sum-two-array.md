@@ -1,4 +1,4 @@
-# 两组的不重叠总和
+# 两个集合的不重叠总和
 
 > 原文：[https://www.geeksforgeeks.org/overlapping-sum-two-array/](https://www.geeksforgeeks.org/overlapping-sum-two-array/)
 

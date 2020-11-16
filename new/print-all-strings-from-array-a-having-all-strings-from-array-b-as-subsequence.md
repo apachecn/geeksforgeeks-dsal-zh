@@ -1,4 +1,4 @@
-# 打印数组`A[]`中的所有字符串，并将数组`B[]`中的所有字符串作为子序列
+# 打印数组`A[]`中的所有字符串，数组`B[]`中的所有字符串都是它的子序列
 
 > 原文：[https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/](https://www.geeksforgeeks.org/print-all-strings-from-array-a-having-all-strings-from-array-b-as-subsequence/)
 

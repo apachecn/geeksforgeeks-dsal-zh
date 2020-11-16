@@ -1,4 +1,4 @@
-# 打印最接近数组中第`K`个最小元素的`X`个数组元素
+# 打印最接近数组中第`K`小元素的`X`个数组元素
 
 > 原文：[https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/](https://www.geeksforgeeks.org/print-x-array-elements-closest-to-the-kth-smallest-element-in-the-array/)
 

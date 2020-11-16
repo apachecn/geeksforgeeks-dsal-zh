@@ -1,4 +1,4 @@
-# 程序用于解析分子并获取原子数
+# 用于解析分子并获取原子数的程序
 
 > 原文：[https://www.geeksforgeeks.org/program-to-parse-the-molecules-and-get-the-atoms-count/](https://www.geeksforgeeks.org/program-to-parse-the-molecules-and-get-the-atoms-count/)
 

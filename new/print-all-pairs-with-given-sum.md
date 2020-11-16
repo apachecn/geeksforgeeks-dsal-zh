@@ -1,4 +1,4 @@
-# 打印具有给定总和的所有对
+# 打印具有给定总和的所有偶对
 
 > 原文：[https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/](https://www.geeksforgeeks.org/print-all-pairs-with-given-sum/)
 

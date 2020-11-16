@@ -1,4 +1,4 @@
-# 数组的排列，以使所有相邻元素的乘积均匀
+# 数组的排列，其中所有相邻元素的乘积是偶数
 
 > 原文：[https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/](https://www.geeksforgeeks.org/permutation-of-array-such-that-products-of-all-adjacent-elements-are-even/)
 

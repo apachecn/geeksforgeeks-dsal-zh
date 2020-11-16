@@ -1,4 +1,4 @@
-# 程序使用 STL 查找数组中是否存在两个数字及其 AM 和 HM
+# 使用 STL 检查数组中是否存在两个数字及其 AM 和 HM
 
 > 原文：[https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/](https://www.geeksforgeeks.org/program-to-find-if-two-numbers-and-their-am-and-hm-are-present-in-an-array-using-stl/)
 

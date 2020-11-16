@@ -1,10 +1,10 @@
-# 打印二叉树的所有副本级
+# 打印二叉树的所有互质层次
 
 > 原文：[https://www.geeksforgeeks.org/print-all-co-prime-levels-of-a-binary-tree/](https://www.geeksforgeeks.org/print-all-co-prime-levels-of-a-binary-tree/)
 
-给定[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，任务是打印该树的所有**互质级别**。
+给定[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，任务是打印该树的所有**互质层次**。
 
-> 如果此树的所有节点彼此都是[互质](https://www.geeksforgeeks.org/check-two-numbers-co-prime-not/)，则将二叉树的任何级别都称为**互质级别**。
+> 如果此树的所有节点彼此都是[互质](https://www.geeksforgeeks.org/check-two-numbers-co-prime-not/)，则将二叉树的任何层次都称为**互质层次**。
 
 **示例**：
 
@@ -45,15 +45,15 @@ are co-prime levels.
 
 ```
 
-**方法**：为了检查某个级别是否为同等级别，
+**方法**：为了检查某个层次是否为同等层次，
 
 *   首先，我们必须使用 Eratosthenes 筛子来[存储所有质数](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)。
 
 *   然后，我们必须对二叉树进行[分层顺序遍历](https://www.geeksforgeeks.org/print-level-order-traversal-line-line/)，并且必须将该级的所有元素保存到向量中。
 
-*   此向量用于在执行层次顺序遍历时存储树的级别。
+*   此向量用于在执行层次顺序遍历时存储树的层次。
 
-*   然后，对于每个级别，检查元素的 GCD 是否等于 1。 如果是，则此级别不是“同等优先”，否则打印该级别的所有元素。
+*   然后，对于每个层次，检查元素的 GCD 是否等于 1。 如果是，则此层次不是“同等优先”，否则打印该层次的所有元素。
 
 下面是上述方法的实现：
 

@@ -1,4 +1,4 @@
-# 在二叉树中打印第一个最短的根到叶路径
+# 打印二叉树中第一个最短的根到叶子的路径
 
 > 原文：[https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/](https://www.geeksforgeeks.org/print-the-first-shortest-root-to-leaf-path-in-a-binary-tree/)
 
