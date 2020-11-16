@@ -1,4 +1,4 @@
-# 查找最频繁的数字而不使用数组/字符串
+# 不使用数组/字符串来查找最频繁的数字
 
 > 原文：[https://www.geeksforgeeks.org/find-the-most-frequent-digit-without-using-arraystring/](https://www.geeksforgeeks.org/find-the-most-frequent-digit-without-using-arraystring/)
 

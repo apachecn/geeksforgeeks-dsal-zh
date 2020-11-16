@@ -1,4 +1,4 @@
-# 找到四个元素的总和为给定值 | 系列 3（哈希映射）
+# 找到总和为给定值的四个元素 | 系列 3（哈希映射）
 
 > 原文：[https://www.geeksforgeeks.org/find-four-elements-sum-given-value-set-3-hashmap/](https://www.geeksforgeeks.org/find-four-elements-sum-given-value-set-3-hashmap/)
 

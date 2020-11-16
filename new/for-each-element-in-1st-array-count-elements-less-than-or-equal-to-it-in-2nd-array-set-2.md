@@ -1,8 +1,8 @@
-# 对于第一个数组中的每个元素，计数小于或等于第二个数组中的元素 | 系列 2
+# 对于第一个数组中的每个元素，计算第二个数组中小于等于它的元素数量 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/for-each-element-in-1st-array-count-elements-less-than-or-equal-to-it-in-2nd-array-set-2/](https://www.geeksforgeeks.org/for-each-element-in-1st-array-count-elements-less-than-or-equal-to-it-in-2nd-array-set-2/)
 
-给定两个未排序的数组`arr1[]`和`arr2[]`。 它们可能包含重复项。 对于`arr1[]`中的每个元素，计数少于或等于数组`arr2[]`中的元素。
+给定两个未排序的数组`arr1[]`和`arr2[]`。 它们可能包含重复项。 对于`arr1[]`中的每个元素，计算数组`arr2[]`中少于或等于它的元素数量。
 
 **示例**：
 

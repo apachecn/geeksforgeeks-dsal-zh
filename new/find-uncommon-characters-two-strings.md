@@ -1,4 +1,4 @@
-# 查找两个字符串中不常见的字符
+# 在两个字符串中查找不常见的字符
 
 > 原文：[https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/](https://www.geeksforgeeks.org/find-uncommon-characters-two-strings/)
 

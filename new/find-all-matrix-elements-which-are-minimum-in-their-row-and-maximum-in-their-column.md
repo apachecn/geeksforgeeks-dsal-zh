@@ -1,4 +1,4 @@
-# 查找所有矩阵元素，这些元素在其行中的最小值在其列中的最大值
+# 查找所有矩阵元素，它们是行中的最小值和列中的最大值
 
 > 原文：[https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/](https://www.geeksforgeeks.org/find-all-matrix-elements-which-are-minimum-in-their-row-and-maximum-in-their-column/)
 

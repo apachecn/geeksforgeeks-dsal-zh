@@ -1,4 +1,4 @@
-# 找到一个数字`K`，以便数组包含至少 K 个大于或等于 K 的数字
+# 找到一个数字`K`，使数组包含至少`K`个大于或等于`K`的数字
 
 > 原文：[https://www.geeksforgeeks.org/find-a-number-k-such-that-array-contains-at-least-k-numbers-greater-than-or-equal-to-k/](https://www.geeksforgeeks.org/find-a-number-k-such-that-array-contains-at-least-k-numbers-greater-than-or-equal-to-k/)
 

@@ -1,4 +1,4 @@
-# 为 LRU 缓存设计的数据结构
+# 为 LRU 缓存设计数据结构
 
 > 原文：[https://www.geeksforgeeks.org/design-a-data-structure-for-lru-cache/](https://www.geeksforgeeks.org/design-a-data-structure-for-lru-cache/)
 

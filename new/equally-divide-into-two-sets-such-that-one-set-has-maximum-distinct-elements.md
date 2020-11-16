@@ -1,4 +1,4 @@
-# 平均分为两组，以便一组具有最大不同的元素
+# 平分两个集合，以便一个集合具有最大不同的元素
 
 > 原文：[https://www.geeksforgeeks.org/equally-divide-into-two-sets-such-that-one-set-has-maximum-distinct-elements/](https://www.geeksforgeeks.org/equally-divide-into-two-sets-such-that-one-set-has-maximum-distinct-elements/)
 

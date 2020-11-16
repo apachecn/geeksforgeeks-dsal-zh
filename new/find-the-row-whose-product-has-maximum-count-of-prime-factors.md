@@ -1,8 +1,8 @@
-# 查找其乘积具有最大质数的行
+# 查找其乘积的质数数量最大的行
 
 > 原文：[https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/](https://www.geeksforgeeks.org/find-the-row-whose-product-has-maximum-count-of-prime-factors/)
 
-给定大小为`N x M`的矩阵，任务是打印其乘积具有最大质数计数的行元素。
+给定大小为`N x M`的矩阵，任务是打印其乘积的质数数量最大的行元素。
 
 **示例**：
 

@@ -1,4 +1,4 @@
-# 查找可以通过重新排列第二个数组的元素形成的词典上最小的序列
+# 查找词典上最小的序列，可以通过重新排列第二个数组的元素形成
 
 > 原文：[https://www.geeksforgeeks.org/find-the-smallest-sequence-lexicographically-which-can-be-formed-by-re-arranging-elements-of-second-array/](https://www.geeksforgeeks.org/find-the-smallest-sequence-lexicographically-which-can-be-formed-by-re-arranging-elements-of-second-array/)
 

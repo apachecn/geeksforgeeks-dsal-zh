@@ -1,4 +1,4 @@
-# 从给定的门票列表中查找行程
+# 从给定的票证列表中查找行程
 
 > 原文：[https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/](https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/)
 

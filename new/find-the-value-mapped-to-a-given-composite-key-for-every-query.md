@@ -1,4 +1,4 @@
-# 为每个查询找到映射到给定组合键的值
+# 为每个查询查找映射到给定组合键的值
 
 > 原文：[https://www.geeksforgeeks.org/find-the-value-mapped-to-a-given-composite-key-for-every-query/](https://www.geeksforgeeks.org/find-the-value-mapped-to-a-given-composite-key-for-every-query/)
 

@@ -1,8 +1,8 @@
-# 查找最大乘积四倍的数量
+# 查找乘积最大的四元组的数量
 
 > 原文：[https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/](https://www.geeksforgeeks.org/find-the-number-of-maximum-product-quadruples/)
 
-给定一个由`N`个正元素组成的数组，可以找到四倍的`(i, j, k, m)`数，使得`i < j < k < m`，并且`a[i], a[j], a[k], a[m]`的乘积是最大可能值。
+给定一个由`N`个正元素组成的数组，可以找到数字的四元组`(i, j, k, m)`，使得`i < j < k < m`，并且`a[i], a[j], a[k], a[m]`的乘积是最大可能值。
 
 **示例**：
 
@@ -27,7 +27,7 @@ achieved by the following quadruple {1, 2, 3, 4} as a<sub>1</sub>a<sub>2</sub>a<
 
 **暴力生成**：`O(N ^ 4)`。
 
-计算所有可能的四倍数，从而得到最大乘积。
+计算所有可能的四元组，从而得到最大乘积。
 
 **优化的解决方案**：
 

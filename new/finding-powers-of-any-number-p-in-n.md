@@ -1,4 +1,4 @@
-# 寻找`N!`中任意数字`P`的幂
+# 在`N!`中寻找任意数字`P`的幂
 
 > 原文：[https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/](https://www.geeksforgeeks.org/finding-powers-of-any-number-p-in-n/)
 

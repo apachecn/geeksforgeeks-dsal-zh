@@ -1,4 +1,4 @@
-# 查找重复序列的分数
+# 查找分数的重复序列
 
 > 原文：[https://www.geeksforgeeks.org/find-recurring-sequence-fraction/](https://www.geeksforgeeks.org/find-recurring-sequence-fraction/)
 

@@ -1,4 +1,4 @@
-# 删除给定元素后，找出`k`个最大数字
+# 删除给定元素后，查找`k`个最大数字
 
 > 原文：[https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-k-largest-numbers-after-deleting-the-given-elements/)
 

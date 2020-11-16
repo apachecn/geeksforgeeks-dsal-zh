@@ -1,4 +1,4 @@
-# 查找线性时间中最频繁的`k`
+# 在线性时间中查找最频繁的`k`个元素
 
 > 原文：[https://www.geeksforgeeks.org/find-k-most-frequent-in-linear-time/](https://www.geeksforgeeks.org/find-k-most-frequent-in-linear-time/)
 

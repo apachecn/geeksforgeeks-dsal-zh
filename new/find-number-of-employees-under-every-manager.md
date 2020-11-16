@@ -1,4 +1,4 @@
-# 查找每个雇员下的雇员人数
+# 查找每个经理手下的雇员人数
 
 > 原文：[https://www.geeksforgeeks.org/find-number-of-employees-under-every-manager/](https://www.geeksforgeeks.org/find-number-of-employees-under-every-manager/)
 

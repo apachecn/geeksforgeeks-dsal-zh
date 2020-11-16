@@ -1,4 +1,4 @@
-# 查找给定数组的所有唯一子数组总和。
+# 查找给定数组的所有唯一子数组总和的总和
 
 > 原文：[https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/](https://www.geeksforgeeks.org/find-sum-unique-sub-array-sum-given-array/)
 

@@ -1,4 +1,4 @@
-# 查找第二个字符串中最小索引处出现的第一个字符串中的字符
+# 查找第一个字符串中的字符，它在第二个字符串的最小索引处出现
 
 > 原文：[https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/](https://www.geeksforgeeks.org/find-character-first-string-present-minimum-index-second-string/)
 

@@ -1,4 +1,4 @@
-# 当元素不限于范围时，查找给定数组中的重复项
+# 当元素的范围不限时，查找给定数组中的重复项
 
 > 原文：[https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/](https://www.geeksforgeeks.org/find-duplicates-given-array-elements-not-limited-range/)
 

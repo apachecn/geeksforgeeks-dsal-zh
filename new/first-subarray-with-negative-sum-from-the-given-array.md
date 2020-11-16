@@ -1,4 +1,4 @@
-# 来自给定数组的总和为负的第一个子数组
+# 来自给定数组的第一个总和为负的子数组
 
 > 原文：[https://www.geeksforgeeks.org/first-subarray-with-negative-sum-from-the-given-array/](https://www.geeksforgeeks.org/first-subarray-with-negative-sum-from-the-given-array/)
 

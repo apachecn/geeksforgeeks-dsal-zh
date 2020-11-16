@@ -1,4 +1,4 @@
-# 在给定条件下查找具有最大总和的子集
+# 在给定条件下查找总和最大的子集
 
 > 原文：[https://www.geeksforgeeks.org/find-subset-with-maximum-sum-under-given-condition/](https://www.geeksforgeeks.org/find-subset-with-maximum-sum-under-given-condition/)
 

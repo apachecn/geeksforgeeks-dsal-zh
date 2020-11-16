@@ -1,4 +1,4 @@
-# 删除指定的元素后，找出`k`个最小的数字
+# 删除指定的元素后，查找`k`个最小的数字
 
 > 原文：[https://www.geeksforgeeks.org/find-the-k-smallest-numbers-after-deleting-given-elements/](https://www.geeksforgeeks.org/find-the-k-smallest-numbers-after-deleting-given-elements/)
 

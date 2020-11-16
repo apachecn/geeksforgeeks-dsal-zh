@@ -1,4 +1,4 @@
-# 求和的总面积等于`k`的最大面积的矩形子矩阵
+# 查找总和等于`k`的面积最大的矩形子矩阵
 
 > 原文：[https://www.geeksforgeeks.org/find-the-largest-area-rectangular-sub-matrix-whose-sum-is-equal-to-k/](https://www.geeksforgeeks.org/find-the-largest-area-rectangular-sub-matrix-whose-sum-is-equal-to-k/)
 

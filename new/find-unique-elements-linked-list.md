@@ -1,4 +1,4 @@
-# 在链表中查找唯一的元素
+# 在链表中查找唯一元素
 
 > 原文：[https://www.geeksforgeeks.org/find-unique-elements-linked-list/](https://www.geeksforgeeks.org/find-unique-elements-linked-list/)
 

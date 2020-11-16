@@ -1,4 +1,4 @@
-# 使用 BFS 查找与给定整数集之间最小距离的积分点
+# 使用 BFS 查找与给定整数集之间距离最小的积分点
 
 > 原文：[https://www.geeksforgeeks.org/find-integral-points-with-minimum-distance-from-given-set-of-integers-using-bfs/](https://www.geeksforgeeks.org/find-integral-points-with-minimum-distance-from-given-set-of-integers-using-bfs/)
 

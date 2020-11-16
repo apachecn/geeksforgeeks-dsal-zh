@@ -1,4 +1,4 @@
-# 删除给定元素后找到最大的
+# 删除给定元素后查找最大元素
 
 > 原文：[https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/](https://www.geeksforgeeks.org/find-the-largest-after-deleting-the-given-elements/)
 

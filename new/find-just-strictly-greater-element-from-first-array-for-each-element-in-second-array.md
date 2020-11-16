@@ -1,4 +1,4 @@
-# 从第二个数组中的每个元素开始，在第一个数组中查找严格更大的元素
+# 对于第二个数组中的每个元素，在第一个数组中查找严格更大的元素
 
 > 原文：[https://www.geeksforgeeks.org/find-just-strictly-greater-element-from-first-array-for-each-element-in-second-array/](https://www.geeksforgeeks.org/find-just-strictly-greater-element-from-first-array-for-each-element-in-second-array/)
 

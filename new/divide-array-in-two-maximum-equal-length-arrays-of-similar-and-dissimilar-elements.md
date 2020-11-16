@@ -1,4 +1,4 @@
-# 将相似和不相似元素的两个最大等长数组划分为数组
+# 将数组划分为相似和不相似元素的两个最大等长数组
 
 > 原文：[https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/](https://www.geeksforgeeks.org/divide-array-in-two-maximum-equal-length-arrays-of-similar-and-dissimilar-elements/)
 

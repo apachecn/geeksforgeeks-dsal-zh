@@ -1,4 +1,4 @@
-# 查找以投票代表候选人姓名的选举的获胜者
+# 查找由候选人姓名代表的选举的获胜者
 
 > 原文：[https://www.geeksforgeeks.org/find-winner-election-votes-represented-candidate-names/](https://www.geeksforgeeks.org/find-winner-election-votes-represented-candidate-names/)
 

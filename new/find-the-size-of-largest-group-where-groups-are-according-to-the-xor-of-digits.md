@@ -1,8 +1,8 @@
-# 根据数字的异或找到最大组的大小。
+# 根据数字的异或找到最大组的大小
 
 > 原文：[https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/](https://www.geeksforgeeks.org/find-the-size-of-largest-group-where-groups-are-according-to-the-xor-of-digits/)
 
-给定整数`N`，任务是在 1 到`N`的范围内找到最大组的大小，其中，如果两个数字为`x`或`x`，则两个数字属于同一组。 相同。
+给定整数`N`，任务是在 1 到`N`的范围内找到最大组的大小，其中，如果两个数字的各位异或相等，则两个数字属于同一组。 
 
 **示例**：
 

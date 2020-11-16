@@ -1,4 +1,4 @@
-# 当一个人不能携带两个以上相同类型的物品时进行分配
+# 当一个人不能携带两个以上相同类型的物品时分配物品
 
 > 原文：[https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/](https://www.geeksforgeeks.org/distributing-items-person-cannot-take-two-items-type/)
 
