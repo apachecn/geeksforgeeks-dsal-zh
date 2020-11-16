@@ -1,4 +1,4 @@
-# 根据顺序和层次顺序遍历构造树 | 系列 2
+# 根据中序和层次顺序遍历构造树 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/construct-tree-inorder-level-order-traversals-set-2/](https://www.geeksforgeeks.org/construct-tree-inorder-level-order-traversals-set-2/)
 

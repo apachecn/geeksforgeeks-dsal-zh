@@ -1,4 +1,4 @@
-# 具有至少`K`个成对区分字符且具有相同频率的子字符串的计数
+# 子字符串的数量，具有至少`K`个成对不同字符且具有相同频率
 
 > 原文：[https://www.geeksforgeeks.org/count-of-substrings-with-at-least-k-pairwise-distinct-characters-having-same-frequency/](https://www.geeksforgeeks.org/count-of-substrings-with-at-least-k-pairwise-distinct-characters-having-same-frequency/)
 

@@ -1,4 +1,4 @@
-# 长度为`K`的子字符串的计数，其中恰好有`K`个不同的字符
+# 长度为`K`的子字符串的数量，它恰好有`K`个不同的字符
 
 > 原文：[https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/](https://www.geeksforgeeks.org/count-of-substrings-of-length-k-with-exactly-k-distinct-characters/)
 

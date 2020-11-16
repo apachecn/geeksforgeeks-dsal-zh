@@ -1,4 +1,4 @@
-# 计算在数字行上访问过的不同点
+# 计算在数字行上访问过的不同点的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/](https://www.geeksforgeeks.org/count-distinct-points-visited-on-the-number-line/)
 

@@ -1,4 +1,4 @@
-# 在给定字符串中连续出现的不同子字符串的计数
+# 在给定字符串中连续出现的不同子字符串的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/](https://www.geeksforgeeks.org/count-of-distinct-substrings-occurring-consecutively-in-a-given-string/)
 

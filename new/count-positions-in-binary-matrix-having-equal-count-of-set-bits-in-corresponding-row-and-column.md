@@ -1,4 +1,4 @@
-# 二进制矩阵中相应行和列中具有相等设置位计数的计数位置
+# 计算二进制矩阵中的位置数量，在相应行和列中具有相等的设置位
 
 > 原文：[https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/](https://www.geeksforgeeks.org/count-positions-in-binary-matrix-having-equal-count-of-set-bits-in-corresponding-row-and-column/)
 

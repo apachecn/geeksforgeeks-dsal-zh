@@ -1,4 +1,4 @@
-# 计数两个总和等于给定值`x`的排序数组对
+# 计算两个排序数组中的偶对的数量，总和等于给定值`x`
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-pairs-two-sorted-arrays-whose-sum-equal-given-value-x/)
 

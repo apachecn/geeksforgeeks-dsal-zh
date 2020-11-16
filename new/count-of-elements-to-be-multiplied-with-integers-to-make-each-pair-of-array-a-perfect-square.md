@@ -1,4 +1,4 @@
-# 要与整数相乘的元素计数，以使数组中的每对成为完全平方
+# 元素数量，它与整数相乘使数组中的每对成为完全平方
 
 > 原文：[https://www.geeksforgeeks.org/count-of-elements-to-be-multiplied-with-integers-to-make-each-pair-of-array-a-perfect-square/](https://www.geeksforgeeks.org/count-of-elements-to-be-multiplied-with-integers-to-make-each-pair-of-array-a-perfect-square/)
 

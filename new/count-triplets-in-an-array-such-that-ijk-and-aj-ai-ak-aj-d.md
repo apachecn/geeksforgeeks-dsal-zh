@@ -1,4 +1,4 @@
-# 对数组中的三元组进行计数，使得`i < j < k`和`a[j] – a[i] = a[k] – a[j] = D`
+# 计算数组中的三元组的数量，满足`i < j < k`和`a[j] – a[i] = a[k] – a[j] = D`
 
 > 原文：[https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/](https://www.geeksforgeeks.org/count-triplets-in-an-array-such-that-ijk-and-aj-ai-ak-aj-d/)
 

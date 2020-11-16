@@ -1,4 +1,4 @@
-# 对具有不同偶数的子集进行计数
+# 计算具有不同偶数的子集数量
 
 > 原文：[https://www.geeksforgeeks.org/count-subsets-distinct-even-numbers/](https://www.geeksforgeeks.org/count-subsets-distinct-even-numbers/)
 

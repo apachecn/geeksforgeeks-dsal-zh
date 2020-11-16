@@ -1,4 +1,4 @@
-# 来自其和与差之积等于 0 的数组的计数对
+# 计算数组的偶对数量，其和与差之积等于 0
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/](https://www.geeksforgeeks.org/count-pairs-from-an-array-having-product-of-their-sum-and-difference-equal-to-0/)
 

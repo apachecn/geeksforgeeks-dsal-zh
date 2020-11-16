@@ -1,4 +1,4 @@
-# `XY`平面中`M`条线段与`N`条垂直线的交点计数
+# `XY`平面中`M`条线段与`N`条垂直线的交点数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/](https://www.geeksforgeeks.org/count-of-intersections-of-m-line-segments-with-n-vertical-lines-in-xy-plane/)
 

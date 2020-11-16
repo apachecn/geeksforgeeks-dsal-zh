@@ -1,4 +1,4 @@
-# 总和等于其长度的子串的计数
+# 总和等于长度的子串的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/](https://www.geeksforgeeks.org/count-of-substrings-having-sum-equal-to-their-length/)
 

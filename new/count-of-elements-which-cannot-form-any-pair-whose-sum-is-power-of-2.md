@@ -1,4 +1,4 @@
-# 不能形成总和为 2 的幂的任何对的元素计数
+# 元素数量，它不能形成总和为 2 的幂任何对
 
 > 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
 

@@ -1,4 +1,4 @@
-# 通过交换一对字符可以计算回文字符串
+# 通过交换一对字符可以形成的回文字符串的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/](https://www.geeksforgeeks.org/count-of-palindromic-strings-possible-by-swapping-of-a-pair-of-characters/)
 

@@ -1,4 +1,4 @@
-# 来自两个链表的计数对，其总和等于给定值
+# 计算两个链表中的偶对数量，其总和等于给定值
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/](https://www.geeksforgeeks.org/count-pairs-two-linked-lists-whose-sum-equal-given-value/)
 

@@ -1,4 +1,4 @@
-# 连接形成回文字符串的字符串对的计数
+# 连接形成回文字符串的字符串对的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/](https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/)
 

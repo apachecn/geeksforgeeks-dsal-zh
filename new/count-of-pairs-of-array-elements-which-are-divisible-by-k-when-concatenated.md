@@ -1,4 +1,4 @@
-# 连接时可被`K`整除的数组元素对的数量
+# 连接后可被`K`整除的数组元素对的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/](https://www.geeksforgeeks.org/count-of-pairs-of-array-elements-which-are-divisible-by-k-when-concatenated/)
 

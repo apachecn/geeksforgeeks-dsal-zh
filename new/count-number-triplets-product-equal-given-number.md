@@ -1,4 +1,4 @@
-# 产品数量等于给定数量的三元组数量
+# 计算乘积等于给定数值的三元组数量
 
 > 原文：[https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/](https://www.geeksforgeeks.org/count-number-triplets-product-equal-given-number/)
 

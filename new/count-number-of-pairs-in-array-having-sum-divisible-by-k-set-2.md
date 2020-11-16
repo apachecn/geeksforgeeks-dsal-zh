@@ -1,4 +1,4 @@
-# 计数可被`K`整除的数组中的对数 | 系列 2
+# 计数数组中可被`K`整除的偶对数 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/](https://www.geeksforgeeks.org/count-number-of-pairs-in-array-having-sum-divisible-by-k-set-2/)
 

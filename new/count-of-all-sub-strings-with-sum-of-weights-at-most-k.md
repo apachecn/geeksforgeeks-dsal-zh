@@ -1,4 +1,4 @@
-# 所有子串的计数，权重总和最多为`K`
+# 所有子串的数量，权重总和最多为`K`
 
 > 原文：[https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/](https://www.geeksforgeeks.org/count-of-all-sub-strings-with-sum-of-weights-at-most-k/)
 

@@ -1,4 +1,4 @@
-# 通过最小替换子序列的最小字符，将给定的字符串转换为另一个字符串
+# 通过使用最小字符来最小替换子序列，将给定的字符串转换为另一个字符串
 
 > 原文：[https://www.geeksforgeeks.org/convert-given-string-to-another-by-minimum-replacements-of-subsequences-by-its-smallest-character/](https://www.geeksforgeeks.org/convert-given-string-to-another-by-minimum-replacements-of-subsequences-by-its-smallest-character/)
 

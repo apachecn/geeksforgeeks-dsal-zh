@@ -1,8 +1,8 @@
-# 使用 STL 的无向图的连接组件的唯一长度计数
+# 使用 STL 的无向图的连通组件的唯一长度数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/](https://www.geeksforgeeks.org/count-of-unique-lengths-of-connected-components-for-an-undirected-graph-using-stl/)
 
-给定一个无向图，任务是查找每个连接组件的大小并打印连接组件的唯一大小的数量。
+给定一个无向图，任务是查找每个连通组件的大小并打印连通组件的唯一大小的数量。
 
 ![](img/04b31f134d4b95d9099a2af641344cf3.png)
 
@@ -44,7 +44,7 @@ Output: 1 Count = 1
 
 基本思想是利用深度优先搜索遍历方法来跟踪无向图中的连通组件。 STL 容器[集合](http://www.geeksforgeeks.org/set-in-cpp-stl/)用于存储所有此类组件的唯一计数，因为已知集合具有以排序方式存储唯一元素的属性。 最后，提取集合的大小将为我们提供必要的结果。 分步实现如下：
 
-1.  初始化一个哈希容器（集合），以存储所连接组件的唯一计数。
+1.  初始化一个哈希容器（集合），以存储所连通组件的唯一计数。
 
 2.  递归调用深度优先搜索遍历。
 

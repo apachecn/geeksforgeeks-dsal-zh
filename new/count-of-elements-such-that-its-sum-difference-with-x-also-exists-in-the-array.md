@@ -1,4 +1,4 @@
-# 元素计数，以使其与`X`的和/差也存在于数组
+# 元素数量，它与`X`的和/差也存在于数组中
 
 > 原文：[https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/](https://www.geeksforgeeks.org/count-of-elements-such-that-its-sum-difference-with-x-also-exists-in-the-array/)
 

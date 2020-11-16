@@ -1,4 +1,4 @@
-# 对可以表示为至少两个连续数组元素之和的数组元素进行计数
+# 计算数组元素的数量，它可以表示为至少两个连续数组元素之和
 
 > 原文：[https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/](https://www.geeksforgeeks.org/count-array-elements-that-can-be-represented-as-sum-of-at-least-two-consecutive-array-elements/)
 

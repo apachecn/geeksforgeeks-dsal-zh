@@ -1,4 +1,4 @@
-# 计算从给定点集中平行于`X`和`Y`轴绘制的线在给定矩形中生成的矩形
+# 计算给定矩形中的矩形数量，由从给定点集绘制的平行于`X`和`Y`轴的直线生成
 
 > 原文：[https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/](https://www.geeksforgeeks.org/count-rectangles-generated-in-a-given-rectangle-by-lines-drawn-parallel-to-x-and-y-axis-from-a-given-set-of-points/)
 

@@ -1,4 +1,4 @@
-# 另一个数组中存在的数组中每个字符串的异序词计数
+# 另一个数组中存在的数组中每个字符串的异序词的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/](https://www.geeksforgeeks.org/count-of-anagrams-of-each-string-in-an-array-present-in-another-array/)
 

@@ -1,4 +1,4 @@
-# 计数对，其总和仅由设置的位组成
+# 计算偶对数量，其总和仅由设置位组成
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/](https://www.geeksforgeeks.org/count-pairs-whose-sum-consists-of-set-bits-only/)
 

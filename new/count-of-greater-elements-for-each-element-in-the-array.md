@@ -1,4 +1,4 @@
-# 数组中每个元素的较大元素计数
+# 数组中每个元素的较大元素数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-greater-elements-for-each-element-in-the-array/](https://www.geeksforgeeks.org/count-of-greater-elements-for-each-element-in-the-array/)
 

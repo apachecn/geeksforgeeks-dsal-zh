@@ -1,4 +1,4 @@
-# 根据数字乘积进行分组时最大组的数量
+# 根据数字乘积分组时的最大组的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/](https://www.geeksforgeeks.org/count-of-largest-sized-groups-while-grouping-according-to-product-of-digits/)
 

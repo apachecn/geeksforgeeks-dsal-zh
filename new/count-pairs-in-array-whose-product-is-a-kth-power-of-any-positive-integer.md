@@ -1,4 +1,4 @@
-# 数组中的乘积对，乘积为任何正整数的`K`次幂
+# 计算数组中的偶对数量，它的乘积为任何正整数的`K`次幂
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-in-array-whose-product-is-a-kth-power-of-any-positive-integer/](https://www.geeksforgeeks.org/count-pairs-in-array-whose-product-is-a-kth-power-of-any-positive-integer/)
 

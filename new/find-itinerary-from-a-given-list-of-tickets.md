@@ -1,4 +1,4 @@
-# 从给定的门票清单中查找行程
+# 从给定的门票列表中查找行程
 
 > 原文：[https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/](https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/)
 
@@ -17,7 +17,7 @@ Output:
 Bombay->Delhi, Delhi->Goa, Goa->Chennai, Chennai->Banglore,
 ```
 
-可以假设输入的票证清单不是周期性的，并且每个城市（最终目的地除外）都有一张票证。
+可以假设输入的票证列表不是周期性的，并且每个城市（最终目的地除外）都有一张票证。
 
 一种解决方案是构建图形并对该图形进行[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。 该解决方案的时间复杂度为`O(n)`。
 

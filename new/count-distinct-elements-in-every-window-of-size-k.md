@@ -1,4 +1,4 @@
-# 在每个大小为`k`的窗口中计数不同的元素
+# 在每个大小为`k`的窗口中计算不同元素的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-distinct-elements-in-every-window-of-size-k/](https://www.geeksforgeeks.org/count-distinct-elements-in-every-window-of-size-k/)
 

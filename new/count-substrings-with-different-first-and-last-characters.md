@@ -1,4 +1,4 @@
-# 计算具有不同首尾字符的子字符串
+# 计算具有不同首尾字符的子字符串数量
 
 > 原文：[https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/](https://www.geeksforgeeks.org/count-substrings-with-different-first-and-last-characters/)
 

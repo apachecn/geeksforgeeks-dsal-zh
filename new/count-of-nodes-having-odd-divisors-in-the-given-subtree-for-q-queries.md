@@ -1,4 +1,4 @@
-# 对于`Q`查询，给定子树中具有奇数除数的节点数
+# 对于`Q`查询，给定子树中具有奇数除数的节点数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-nodes-having-odd-divisors-in-the-given-subtree-for-q-queries/](https://www.geeksforgeeks.org/count-of-nodes-having-odd-divisors-in-the-given-subtree-for-q-queries/)
 

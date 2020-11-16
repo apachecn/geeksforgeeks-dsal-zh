@@ -1,4 +1,4 @@
-# 给定字符串中长度为`X`的唯一回文字符串的计数
+# 给定字符串中长度为`X`的唯一回文字符串的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/](https://www.geeksforgeeks.org/count-of-unique-palindromic-strings-of-length-x-from-given-string/)
 

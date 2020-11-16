@@ -1,4 +1,4 @@
-# 具有正好`K`个完全平方数的子数组的计数
+# 具有正好`K`个完全平方数的子数组的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/](https://www.geeksforgeeks.org/count-of-subarrays-having-exactly-k-perfect-square-numbers/)
 

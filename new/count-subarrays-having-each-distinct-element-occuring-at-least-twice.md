@@ -1,4 +1,4 @@
-# 计数具有每个不同元素至少出现两次的子数组
+# 计算子数组数量，它具有每个不同元素并至少出现两次
 
 > 原文：[https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/](https://www.geeksforgeeks.org/count-subarrays-having-each-distinct-element-occuring-at-least-twice/)
 

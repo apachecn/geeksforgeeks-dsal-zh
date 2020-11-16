@@ -1,4 +1,4 @@
-# 不是任何其他给定列表的子集的列表计数
+# 不是任何其他给定列表的子集的列表数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-lists-which-are-not-a-subset-of-any-other-given-lists/](https://www.geeksforgeeks.org/count-of-lists-which-are-not-a-subset-of-any-other-given-lists/)
 

@@ -1,4 +1,4 @@
-# 唯一对`(arr[i], arr[j])`的计数，使得`i < j`
+# 唯一对`(arr[i], arr[j])`的数量，满足`i < j`
 
 > 原文：[https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/](https://www.geeksforgeeks.org/count-of-unique-pairs-arri-arrj-such-that-i-j/)
 

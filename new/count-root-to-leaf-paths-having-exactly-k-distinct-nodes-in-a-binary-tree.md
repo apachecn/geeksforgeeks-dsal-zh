@@ -1,4 +1,4 @@
-# 在一棵二叉树中对具有完全`K`个不同节点的根到叶路径进行计数
+# 计算二叉树中具有正好`K`个不同节点的根到叶的路径的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-root-to-leaf-paths-having-exactly-k-distinct-nodes-in-a-binary-tree/](https://www.geeksforgeeks.org/count-root-to-leaf-paths-having-exactly-k-distinct-nodes-in-a-binary-tree/)
 

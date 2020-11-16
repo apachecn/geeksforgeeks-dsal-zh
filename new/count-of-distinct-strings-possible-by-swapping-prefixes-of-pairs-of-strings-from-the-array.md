@@ -1,4 +1,4 @@
-# 通过交换数组中的字符串偶对的前缀可以实现不同字符串的计数
+# 通过交换数组中的字符串偶对的前缀可以实现的不同字符串的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-distinct-strings-possible-by-swapping-prefixes-of-pairs-of-strings-from-the-array/](https://www.geeksforgeeks.org/count-of-distinct-strings-possible-by-swapping-prefixes-of-pairs-of-strings-from-the-array/)
 

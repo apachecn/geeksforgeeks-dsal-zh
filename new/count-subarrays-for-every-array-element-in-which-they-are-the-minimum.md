@@ -1,4 +1,4 @@
-# 为每个数组元素中最小的子数组计数
+# 为每个最小的数组元素计算子数组数量
 
 > 原文：[https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/](https://www.geeksforgeeks.org/count-subarrays-for-every-array-element-in-which-they-are-the-minimum/)
 

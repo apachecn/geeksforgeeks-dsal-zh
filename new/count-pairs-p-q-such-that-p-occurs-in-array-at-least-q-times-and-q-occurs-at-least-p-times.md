@@ -1,4 +1,4 @@
-# 对`(p, q)`进行计数，以使`p`在数组中至少出现`q`次，并且`q`出现至少`p`次
+# 计算`(p, q)`的数量，满足`p`在数组中至少出现`q`次，并且`q`出现至少`p`次
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/](https://www.geeksforgeeks.org/count-pairs-p-q-such-that-p-occurs-in-array-at-least-q-times-and-q-occurs-at-least-p-times/)
 

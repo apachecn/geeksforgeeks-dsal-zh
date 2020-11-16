@@ -1,4 +1,4 @@
-# 计算每个数组元素的左侧更大的元素的数量
+# 计算每个数组元素的左侧较大元素的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-greater-elements-on-the-left-side-of-every-array-element/](https://www.geeksforgeeks.org/count-greater-elements-on-the-left-side-of-every-array-element/)
 

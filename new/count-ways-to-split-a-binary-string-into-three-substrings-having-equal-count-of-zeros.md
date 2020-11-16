@@ -1,4 +1,4 @@
-# 数种方式将二进制字符串拆分为三个具有相等零计数的子字符串
+# 计算方法数量，将二进制字符串拆分为三个零的数量相等的子字符串
 
 > 原文：[https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/](https://www.geeksforgeeks.org/count-ways-to-split-a-binary-string-into-three-substrings-having-equal-count-of-zeros/)
 

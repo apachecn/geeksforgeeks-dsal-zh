@@ -1,4 +1,4 @@
-# 在第一个数组中存在元素, 但在第二个数组中不存在
+# 在第一个数组中存在, 但在第二个数组中不存在的元素数量
 
 > 原文：[https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/](https://www.geeksforgeeks.org/count-elements-present-in-first-array-but-not-in-second/)
 

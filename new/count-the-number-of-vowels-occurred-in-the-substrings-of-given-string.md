@@ -1,4 +1,4 @@
-# 计算在给定字符串的所有子字符串中出现的元音数量
+# 计算元音数量，它在给定字符串的所有子字符串中出现
 
 > 原文：[https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/](https://www.geeksforgeeks.org/count-the-number-of-vowels-occurred-in-the-substrings-of-given-string/)
 

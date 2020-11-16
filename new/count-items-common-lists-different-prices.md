@@ -1,4 +1,4 @@
-# 计算两个清单共有但价格不同的商品
+# 计算两个列表共有但价格不同的商品的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-items-common-lists-different-prices/](https://www.geeksforgeeks.org/count-items-common-lists-different-prices/)
 

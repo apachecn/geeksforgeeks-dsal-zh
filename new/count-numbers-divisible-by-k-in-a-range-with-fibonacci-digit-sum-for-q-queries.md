@@ -1,4 +1,4 @@
-# 对`Q`个查询用斐波那契数字总和的范围内的`K`可整除的计数
+# 对于`Q`个查询，在具有斐波那契数字总和的范围中，计算可被`K`整除的数字数量
 
 > 原文：[https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/](https://www.geeksforgeeks.org/count-numbers-divisible-by-k-in-a-range-with-fibonacci-digit-sum-for-q-queries/)
 

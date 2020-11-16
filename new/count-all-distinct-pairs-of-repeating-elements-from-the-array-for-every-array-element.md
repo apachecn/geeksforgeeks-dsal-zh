@@ -1,4 +1,4 @@
-# 为每个数组元素计数数组中所有重复的元素对。
+# 为每个数组元素计算数组中所有重复元素的不同偶对的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/](https://www.geeksforgeeks.org/count-all-distinct-pairs-of-repeating-elements-from-the-array-for-every-array-element/)
 

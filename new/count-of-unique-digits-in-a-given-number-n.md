@@ -1,4 +1,4 @@
-# 给定数字`N`中的唯一数字计数
+# 给定数字`N`中的唯一数字数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/](https://www.geeksforgeeks.org/count-of-unique-digits-in-a-given-number-n/)
 

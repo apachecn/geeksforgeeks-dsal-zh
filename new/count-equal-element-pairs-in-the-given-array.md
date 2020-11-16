@@ -1,4 +1,4 @@
-# 在给定数组中计算相等元素的数量
+# 计算数组中相等元素的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/](https://www.geeksforgeeks.org/count-equal-element-pairs-in-the-given-array/)
 

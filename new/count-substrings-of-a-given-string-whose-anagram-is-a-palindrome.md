@@ -1,4 +1,4 @@
-# 计算给定字符串（其异序词是回文）的子字符串
+# 计算给定字符串的子字符串数量，其异序词是回文
 
 > 原文：[https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/](https://www.geeksforgeeks.org/count-substrings-of-a-given-string-whose-anagram-is-a-palindrome/)
 

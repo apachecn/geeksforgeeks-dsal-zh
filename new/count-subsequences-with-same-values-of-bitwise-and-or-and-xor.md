@@ -1,4 +1,4 @@
-# 用相同的按位 AND，OR 和 XOR 值计数子序列
+# 计算具有相同的按位 AND，OR 和 XOR 值的子序列数量
 
 > 原文：[https://www.geeksforgeeks.org/count-subsequences-with-same-values-of-bitwise-and-or-and-xor/](https://www.geeksforgeeks.org/count-subsequences-with-same-values-of-bitwise-and-or-and-xor/)
 

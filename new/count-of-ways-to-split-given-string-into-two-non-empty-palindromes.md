@@ -1,4 +1,4 @@
-# 将给定字符串拆分为两个非空回文的方法的数量
+# 将给定字符串拆分为两个非空回文的方法数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/](https://www.geeksforgeeks.org/count-of-ways-to-split-given-string-into-two-non-empty-palindromes/)
 

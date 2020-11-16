@@ -1,4 +1,4 @@
-# 计数具有与原始数组相同的不同元素的子数组
+# 计数子数组数量，它具有与原始数组相同的不同元素
 
 > 原文：[https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/](https://www.geeksforgeeks.org/count-subarrays-total-distinct-elements-original-array/)
 

@@ -1,4 +1,4 @@
-# 计算频率等于其值的元素
+# 计算频率等于其值的元素数量
 
 > 原文：[https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/](https://www.geeksforgeeks.org/count-the-elements-having-frequency-equals-to-its-value/)
 

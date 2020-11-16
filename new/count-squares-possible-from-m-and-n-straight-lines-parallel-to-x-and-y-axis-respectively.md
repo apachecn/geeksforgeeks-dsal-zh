@@ -1,4 +1,4 @@
-# 分别可以从平行于`X`和`Y`轴的`M`和`N`直线计算平方数
+# 计算正方形数量，可以由平行于`X`和`Y`轴的`M`和`N`条直线分别生成
 
 > 原文：[https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/](https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/)
 

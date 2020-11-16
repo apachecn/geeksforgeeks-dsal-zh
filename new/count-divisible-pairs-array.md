@@ -1,4 +1,4 @@
-# 计数数组中的可分割对
+# 计算数组中的可分割对的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-divisible-pairs-array/](https://www.geeksforgeeks.org/count-divisible-pairs-array/)
 
