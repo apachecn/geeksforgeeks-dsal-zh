@@ -1,4 +1,4 @@
-# 使字符串`K`变为周期性所需的最小交换次数
+# 使字符串`K`变为周期性所需的最小交换数量
 
 > 原文：[https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/](https://www.geeksforgeeks.org/minimum-number-of-swaps-required-to-make-the-string-k-periodic/)
 

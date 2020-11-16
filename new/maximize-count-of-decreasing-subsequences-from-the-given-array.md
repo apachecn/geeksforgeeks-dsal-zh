@@ -1,4 +1,4 @@
-# 最大化来自给定数组的递减子序列数
+# 最大化给定数组的递减子序列数
 
 > 原文：[https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/](https://www.geeksforgeeks.org/maximize-count-of-decreasing-subsequences-from-the-given-array/)
 

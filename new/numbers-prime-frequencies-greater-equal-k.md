@@ -1,4 +1,4 @@
-# 质数大于或等于`k`的数字
+# 频率大于或等于`k`并且是质数的数字
 
 > 原文：[https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/](https://www.geeksforgeeks.org/numbers-prime-frequencies-greater-equal-k/)
 

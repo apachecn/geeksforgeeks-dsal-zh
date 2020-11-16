@@ -1,4 +1,4 @@
-# 最小化数组元素的增减，以使每个模`K`相等
+# 最小化数组元素的增减来使每个`K`的模相等
 
 > 原文：[https://www.geeksforgeeks.org/minimize-increment-decrement-of-array-elements-to-make-each-modulo-k-equal/](https://www.geeksforgeeks.org/minimize-increment-decrement-of-array-elements-to-make-each-modulo-k-equal/)
 

@@ -1,4 +1,4 @@
-# 允许以排列排列形成回文的最小插入量
+# 使用置换形成回文的最小插入量
 
 > 原文：[https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/](https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-with-permutations-allowed/)
 

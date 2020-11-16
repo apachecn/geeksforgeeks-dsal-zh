@@ -1,4 +1,4 @@
-# 通过选择`K`个数组元素，然后将它们减 1，可以使总和最大化。
+# 通过选择`K`个数组元素，然后将它们减 1，来最大化总和。
 
 > 原文：[https://www.geeksforgeeks.org/maximize-sum-possible-by-selecting-k-array-elements-followed-by-decrementing-them-by-1/](https://www.geeksforgeeks.org/maximize-sum-possible-by-selecting-k-array-elements-followed-by-decrementing-them-by-1/)
 

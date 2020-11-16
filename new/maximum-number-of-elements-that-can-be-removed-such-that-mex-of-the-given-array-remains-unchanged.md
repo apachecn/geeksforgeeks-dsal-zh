@@ -1,4 +1,4 @@
-# 可以删除的最大元素数，以使给定数组的 MEX 保持不变
+# 可以删除的最大元素数，使给定数组的 MEX 保持不变
 
 > 原文：[https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/](https://www.geeksforgeeks.org/maximum-number-of-elements-that-can-be-removed-such-that-mex-of-the-given-array-remains-unchanged/)
 

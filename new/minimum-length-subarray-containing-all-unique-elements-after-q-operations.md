@@ -1,4 +1,4 @@
-# `Q`操作后包含所有唯一元素的最小长度子数组
+# 操作`Q`后包含所有唯一元素的子数组最小长度
 
 > 原文：[https://www.geeksforgeeks.org/minimum-length-subarray-containing-all-unique-elements-after-q-operations/](https://www.geeksforgeeks.org/minimum-length-subarray-containing-all-unique-elements-after-q-operations/)
 

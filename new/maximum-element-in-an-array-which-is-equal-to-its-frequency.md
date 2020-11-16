@@ -1,4 +1,4 @@
-# 数组中的等于其频率的最大元素，
+# 数组中的其值等于频率的最大元素
 
 > 原文：[https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/](https://www.geeksforgeeks.org/maximum-element-in-an-array-which-is-equal-to-its-frequency/)
 

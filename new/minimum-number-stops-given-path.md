@@ -1,4 +1,4 @@
-# 来自给定路径的最少车站数
+# 给定路径中的最少车站数
 
 > 原文：[https://www.geeksforgeeks.org/minimum-number-stops-given-path/](https://www.geeksforgeeks.org/minimum-number-stops-given-path/)
 

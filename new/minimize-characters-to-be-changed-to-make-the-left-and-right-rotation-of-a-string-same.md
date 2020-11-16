@@ -1,4 +1,4 @@
-# 最小化要更改的字符以使字符串的左右旋转相同
+# 最小化要更改的字符来使字符串的左右旋转相同
 
 > 原文：[https://www.geeksforgeeks.org/minimize-characters-to-be-changed-to-make-the-left-and-right-rotation-of-a-string-same/](https://www.geeksforgeeks.org/minimize-characters-to-be-changed-to-make-the-left-and-right-rotation-of-a-string-same/)
 

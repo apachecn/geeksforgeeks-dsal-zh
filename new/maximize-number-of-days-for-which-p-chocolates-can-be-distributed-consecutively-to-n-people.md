@@ -1,4 +1,4 @@
-# 最大限度地增加`P`个巧克力可以连续分配给`N`个人的天数
+# 最大化`P`个巧克力可以连续分配给`N`个人的天数
 
 > 原文：[https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/](https://www.geeksforgeeks.org/maximize-number-of-days-for-which-p-chocolates-can-be-distributed-consecutively-to-n-people/)
 

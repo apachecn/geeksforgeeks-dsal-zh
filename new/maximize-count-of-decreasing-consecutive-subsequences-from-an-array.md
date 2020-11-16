@@ -1,4 +1,4 @@
-# 最大化数组中连续减少的子序列数
+# 最大化数组中的连续递减子序列数
 
 > 原文：[https://www.geeksforgeeks.org/maximize-count-of-decreasing-consecutive-subsequences-from-an-array/](https://www.geeksforgeeks.org/maximize-count-of-decreasing-consecutive-subsequences-from-an-array/)
 

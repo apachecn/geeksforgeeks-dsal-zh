@@ -1,4 +1,4 @@
-# 最小删除操作，以使数组的所有元素相同
+# 使数组的所有元素相同的最小删除操作
 
 > 原文：[https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/](https://www.geeksforgeeks.org/minimum-delete-operations-make-elements-array/)
 

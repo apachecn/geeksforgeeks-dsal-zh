@@ -1,4 +1,4 @@
-# 螺母&螺栓问题（钥匙和锁问题） | 系列 2（哈希映射）
+# 螺母和螺栓问题（钥匙和锁问题） | 系列 2（哈希映射）
 
 > 原文：[https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem-set-2-hashmap/](https://www.geeksforgeeks.org/nuts-bolts-problem-lock-key-problem-set-2-hashmap/)
 

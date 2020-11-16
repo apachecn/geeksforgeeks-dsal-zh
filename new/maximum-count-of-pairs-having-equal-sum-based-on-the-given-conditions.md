@@ -1,4 +1,4 @@
-# 基于给定条件的具有相等总和的对的最大计数
+# 基于给定条件的总和相等的偶对的最大数量
 
 > 原文：[https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/](https://www.geeksforgeeks.org/maximum-count-of-pairs-having-equal-sum-based-on-the-given-conditions/)
 

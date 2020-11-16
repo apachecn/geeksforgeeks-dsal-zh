@@ -1,4 +1,4 @@
-# 给定数组中任何特殊对之间的最小距离
+# 给定数组中任何特殊偶对之间的最小距离
 
 > 原文：[https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/](https://www.geeksforgeeks.org/minimum-distance-between-any-special-pair-in-the-given-array/)
 

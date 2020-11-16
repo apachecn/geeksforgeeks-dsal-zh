@@ -1,4 +1,4 @@
-# 来自两个给定数组的最大数组，它们保持顺序相同
+# 来自两个给定数组的最大数组，它保持相同顺序
 
 > 原文：[https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/](https://www.geeksforgeeks.org/maximum-array-from-two-given-arrays-keeping-order-same/)
 

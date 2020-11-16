@@ -1,4 +1,4 @@
-# 给定数组元素的频率模式
+# 给定数组元素的频率众数
 
 > 原文：[https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/](https://www.geeksforgeeks.org/mode-of-frequencies-of-given-array-elements/)
 

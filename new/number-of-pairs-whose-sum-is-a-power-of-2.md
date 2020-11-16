@@ -1,4 +1,4 @@
-# 和为 2 的幂的对的数量
+# 和为 2 的幂的偶对数量
 
 > 原文：[https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/](https://www.geeksforgeeks.org/number-of-pairs-whose-sum-is-a-power-of-2/)
 

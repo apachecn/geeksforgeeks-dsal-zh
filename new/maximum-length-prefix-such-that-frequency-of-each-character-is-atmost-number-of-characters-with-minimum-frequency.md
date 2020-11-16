@@ -1,4 +1,4 @@
-# 最大长度前缀，以使每个字符的频率最多为最小频率的字符数
+# 最大长度前缀，其中每个字符的频率最多为频率最小的字符数
 
 > 原文：[https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/](https://www.geeksforgeeks.org/maximum-length-prefix-such-that-frequency-of-each-character-is-atmost-number-of-characters-with-minimum-frequency/)
 

@@ -1,4 +1,4 @@
-# 最小数组元素更改以使其元素为 1 到`N`
+# 使元素为 1 到`N`的最小的数组元素更改
 
 > 原文：[https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/](https://www.geeksforgeeks.org/minimum-array-element-changes-to-make-its-elements-1-to-n/)
 

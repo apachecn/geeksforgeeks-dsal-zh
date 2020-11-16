@@ -1,4 +1,4 @@
-# N 个轴平行矩形之间缺少顶点
+# 平行于`N`个轴的矩形之间的缺失顶点
 
 > 原文：[https://www.geeksforgeeks.org/missing-vertex-among-n-axis-parallel-rectangles/](https://www.geeksforgeeks.org/missing-vertex-among-n-axis-parallel-rectangles/)
 

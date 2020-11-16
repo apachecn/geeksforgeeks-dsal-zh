@@ -1,4 +1,4 @@
-# 通过按字母顺序删除字符来最大程度地减少清空给定字符串的成本。
+# 通过按字母顺序删除字符来最小化清空给定字符串的成本
 
 > 原文：[https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/](https://www.geeksforgeeks.org/minimize-cost-to-empty-a-given-string-by-removing-characters-alphabetically/)
 

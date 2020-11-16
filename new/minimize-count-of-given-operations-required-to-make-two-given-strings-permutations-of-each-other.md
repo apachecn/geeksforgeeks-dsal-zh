@@ -1,4 +1,4 @@
-# 最小化使两个给定字符串彼此置换所需的给定操作数
+# 最小化使两个给定字符串互为置换所需的给定操作数
 
 > 原文：[https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/](https://www.geeksforgeeks.org/minimize-count-of-given-operations-required-to-make-two-given-strings-permutations-of-each-other/)
 

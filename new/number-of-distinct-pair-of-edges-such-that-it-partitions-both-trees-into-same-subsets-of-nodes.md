@@ -1,4 +1,4 @@
-# 不同对边的数量，以便将两棵树划分为相同的节点子集
+# 不同边的偶对数量，将两棵树划分为相同的节点子集
 
 > 原文：[https://www.geeksforgeeks.org/number-of-distinct-pair-of-edges-such-that-it-partitions-both-trees-into-same-subsets-of-nodes/](https://www.geeksforgeeks.org/number-of-distinct-pair-of-edges-such-that-it-partitions-both-trees-into-same-subsets-of-nodes/)
 

@@ -1,4 +1,4 @@
-# 不相邻的数组元素的最大可能总和，不超过`K`
+# 不相邻的数组元素的不超过`K`的最大可能总和
 
 > 原文：[https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/](https://www.geeksforgeeks.org/maximum-possible-sum-of-non-adjacent-array-elements-not-exceeding-k/)
 

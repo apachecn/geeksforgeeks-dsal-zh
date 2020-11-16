@@ -1,4 +1,4 @@
-# 进行字符串回文的逆时针移位数
+# 使字符串变为回文的逆时针移位数量
 
 > 原文：[https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/](https://www.geeksforgeeks.org/number-of-counterclockwise-shifts-to-make-a-string-palindrome/)
 

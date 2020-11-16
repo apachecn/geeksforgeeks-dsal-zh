@@ -1,4 +1,4 @@
-# 最小化包含另一个字符串`T`的所有字符的字符串`S`的前缀长度
+# 最小化字符串`S`的前缀长度，它包含另一个字符串`T`的所有字符
 
 > 原文：[https://www.geeksforgeeks.org/minimize-length-of-prefix-of-string-s-containing-all-characters-of-another-string-t/](https://www.geeksforgeeks.org/minimize-length-of-prefix-of-string-s-containing-all-characters-of-another-string-t/)
 

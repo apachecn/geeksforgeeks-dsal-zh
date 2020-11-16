@@ -1,4 +1,4 @@
-# 对于具有重复元素的数组，要严格获得 LIS 所需的最小连接 | 系列 2
+# 对于具有重复元素的数组，获得严格 LIS 所需的最小连接 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/](https://www.geeksforgeeks.org/minimum-concatenation-required-to-get-strictly-lis-for-array-with-repetitive-elements-set-2/)
 

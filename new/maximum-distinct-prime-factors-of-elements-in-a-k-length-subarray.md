@@ -1,4 +1,4 @@
-# 长度`K`子数组中元素的最大不同质因数
+# 长度为`K`的子数组中元素的最大不同质因数
 
 > 原文：[https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/](https://www.geeksforgeeks.org/maximum-distinct-prime-factors-of-elements-in-a-k-length-subarray/)
 

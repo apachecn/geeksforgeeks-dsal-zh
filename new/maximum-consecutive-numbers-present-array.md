@@ -1,8 +1,6 @@
-# 数组
+# 数组中存在的最大连续数字
 
 > 原文：[https://www.geeksforgeeks.org/maximum-consecutive-numbers-present-array/](https://www.geeksforgeeks.org/maximum-consecutive-numbers-present-array/)
-
-中存在的最大连续数
 
 查找在数组中混杂的最大连续数的长度。
 

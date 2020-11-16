@@ -1,8 +1,8 @@
-# 将排列转换为身份排列所需的最小给定操作数
+# 将排列转换为单位排列所需的最小给定操作数
 
 > 原文：[https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/](https://www.geeksforgeeks.org/minimum-number-of-given-operations-required-to-convert-a-permutation-into-an-identity-permutation/)
 
-给定第一个`n`个自然数的置换`P`（`P1, P2, P3, ……, Pn`）。 找到将其转换为身份置换的最小操作数，即`1, 2, 3, ..., n`，其中每个操作定义为：
+给定第一个`n`个自然数的置换`P`（`P1, P2, P3, ……, Pn`）。 找到将其转换为单位置换的最小操作数，即`1, 2, 3, ..., n`，其中每个操作定义为：
 
 对于从 1 到`n`的所有`i`，`P[i] = P[P[P[i]]]`（基于 1 的索引）。 如果无法转换，请打印`-1`。
 

@@ -1,4 +1,4 @@
-# 下一个更高的频率元素
+# 下一个频率更大的元素
 
 > 原文：[https://www.geeksforgeeks.org/next-greater-frequency-element/](https://www.geeksforgeeks.org/next-greater-frequency-element/)
 

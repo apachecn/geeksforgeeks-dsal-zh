@@ -1,4 +1,4 @@
-# 具有唯一（或不同）数字的数字
+# 具有唯一（或不同）数位的数字
 
 > 原文：[https://www.geeksforgeeks.org/numbers-unique-distinct-digits/](https://www.geeksforgeeks.org/numbers-unique-distinct-digits/)
 

@@ -1,4 +1,4 @@
-# 根据给定条件必须添加每个数组元素的最小值
+# 根据给定条件每个数组元素必须添加的最小值
 
 > 原文：[https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/](https://www.geeksforgeeks.org/minimum-value-by-which-each-array-element-must-be-added-as-per-given-conditions/)
 

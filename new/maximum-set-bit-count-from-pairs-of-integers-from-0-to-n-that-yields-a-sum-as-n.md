@@ -1,4 +1,4 @@
-# 从 0 到`N`的整数对的最大设置位计数，其总和为 N
+# 从 0 到`N`的整数偶对的总和为`N`的最大设置位数量
 
 > 原文：[https://www.geeksforgeeks.org/maximum-set-bit-count-from-pairs-of-integers-from-0-to-n-that-yields-a-sum-as-n/](https://www.geeksforgeeks.org/maximum-set-bit-count-from-pairs-of-integers-from-0-to-n-that-yields-a-sum-as-n/)
 

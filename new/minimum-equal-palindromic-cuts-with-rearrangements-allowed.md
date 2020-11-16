@@ -1,4 +1,4 @@
-# 允许进行重排的最小等回文切割
+# 允许重排的最小等回文切割
 
 > 原文：[https://www.geeksforgeeks.org/minimum-equal-palindromic-cuts-with-rearrangements-allowed/](https://www.geeksforgeeks.org/minimum-equal-palindromic-cuts-with-rearrangements-allowed/)
 
