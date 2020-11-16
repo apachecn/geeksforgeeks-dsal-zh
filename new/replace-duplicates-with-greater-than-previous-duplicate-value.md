@@ -1,4 +1,4 @@
-# 用大于以前的重复值替换重复项
+# 使用大于先前重复值的值替换重复项
 
 > 原文：[https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/](https://www.geeksforgeeks.org/replace-duplicates-with-greater-than-previous-duplicate-value/)
 

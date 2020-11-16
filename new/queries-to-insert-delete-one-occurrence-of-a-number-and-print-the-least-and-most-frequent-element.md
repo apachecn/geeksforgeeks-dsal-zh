@@ -1,4 +1,4 @@
-# 查询以插入，删除数字的一次出现并打印最少和最频繁的元素
+# 插入，删除数字的一次出现并打印最不频繁和最频繁的元素的查询
 
 > 原文：[https://www.geeksforgeeks.org/queries-to-insert-delete-one-occurrence-of-a-number-and-print-the-least-and-most-frequent-element/](https://www.geeksforgeeks.org/queries-to-insert-delete-one-occurrence-of-a-number-and-print-the-least-and-most-frequent-element/)
 

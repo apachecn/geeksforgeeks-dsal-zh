@@ -1,4 +1,4 @@
-# 重新排列给定的字符串以最大化出现字符串`t`
+# 重新排列给定的字符串来最大化字符串`t`的出现
 
 > 原文：[https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/](https://www.geeksforgeeks.org/rearrange-given-string-to-maximize-the-occurrence-of-string-t/)
 

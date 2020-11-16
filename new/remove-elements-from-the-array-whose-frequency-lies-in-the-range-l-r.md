@@ -1,4 +1,4 @@
-# 从频率为`[l, r]`范围的数组中删除元素
+# 从数组中删除频率在`[l, r]`范围中的元素
 
 > 原文：[https://www.geeksforgeeks.org/remove-elements-from-the-array-whose-frequency-lies-in-the-range-l-r/](https://www.geeksforgeeks.org/remove-elements-from-the-array-whose-frequency-lies-in-the-range-l-r/)
 

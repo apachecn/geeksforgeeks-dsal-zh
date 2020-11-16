@@ -1,4 +1,4 @@
-# 二叉树中具有相同长度的根到叶的路径
+# 二叉树中长度相同的根到叶子的路径
 
 > 原文：[https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/](https://www.geeksforgeeks.org/root-leaf-paths-equal-lengths-binary-tree/)
 

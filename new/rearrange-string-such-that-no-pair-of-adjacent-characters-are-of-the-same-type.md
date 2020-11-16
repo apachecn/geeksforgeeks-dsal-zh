@@ -1,4 +1,4 @@
-# 重新排列字符串，以使相邻的字符对都不属于同一类型
+# 重新排列字符串来使相邻的字符对都不属于同一类型
 
 > 原文：[https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/](https://www.geeksforgeeks.org/rearrange-string-such-that-no-pair-of-adjacent-characters-are-of-the-same-type/)
 

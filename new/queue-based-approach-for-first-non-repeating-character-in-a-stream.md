@@ -1,4 +1,4 @@
-# 用于流中第一个非重复字符的基于队列的方法
+# 获取流中第一个非重复字符的基于队列的方法
 
 > 原文：[https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/](https://www.geeksforgeeks.org/queue-based-approach-for-first-non-repeating-character-in-a-stream/)
 

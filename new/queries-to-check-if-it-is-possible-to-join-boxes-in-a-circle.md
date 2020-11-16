@@ -1,4 +1,4 @@
-# 查询以圆形是否可以合并框
+# 检查是否可以将框合并为圆形
 
 > 原文：[https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/](https://www.geeksforgeeks.org/queries-to-check-if-it-is-possible-to-join-boxes-in-a-circle/)
 

@@ -1,4 +1,4 @@
-# 查询以查找包含给定边的树中的最短路径数
+# 在包含给定边的树中查找最短路径数
 
 > 原文：[https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-shortest-paths-in-a-tree-that-contains-a-given-edge/)
 

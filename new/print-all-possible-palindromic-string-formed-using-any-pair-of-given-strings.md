@@ -1,4 +1,4 @@
-# 打印使用任意一对给定字符串形成的所有可能的回文字符串
+# 打印所有可能的回文字符串，它由任意一对给定字符串形成
 
 > 原文：[https://www.geeksforgeeks.org/print-all-possible-palindromic-string-formed-using-any-pair-of-given-strings/](https://www.geeksforgeeks.org/print-all-possible-palindromic-string-formed-using-any-pair-of-given-strings/)
 

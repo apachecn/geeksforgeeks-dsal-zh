@@ -1,4 +1,4 @@
-# 查询以查找二叉树的两个节点之间的距离`O(logn)`方法
+# 查找二叉树的两个节点之间的距离的`O(logn)`方法
 
 > 原文：[https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/](https://www.geeksforgeeks.org/queries-find-distance-two-nodes-binary-tree-ologn-method/)
 

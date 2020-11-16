@@ -1,4 +1,4 @@
-# 哈希中的二次探查
+# 哈希中的二次探测
 
 > 原文：[https://www.geeksforgeeks.org/quadratic-probing-in-hashing/](https://www.geeksforgeeks.org/quadratic-probing-in-hashing/)
 

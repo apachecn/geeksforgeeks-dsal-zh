@@ -1,4 +1,4 @@
-# 查询字符串中给定范围的第`N`个最小字符
+# 查询字符串中给定范围的第`N`小字符
 
 > 原文：[https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/](https://www.geeksforgeeks.org/queries-for-nth-smallest-character-for-a-given-range-in-a-string/)
 
