@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/](https://www.geeksforgeeks.org/string-with-frequency-of-characters-in-lucas-sequence/)
 
-给定包含小写英文字母的字符串`str`，任务是查找字符串字符的频率是否按 Lucas 顺序排列。 您可以随意安排频率编号，以生成卢卡斯序列。 如果可能，请打印`Yes`，否则打印`No`。
+给定包含小写英文字母的字符串`str`，任务是查找字符串字符的频率是否按 Lucas 顺序排列。 您可以随意排列频率编号，以生成卢卡斯序列。 如果可能，请打印`Yes`，否则打印`No`。
 
 [卢卡斯序列](https://www.geeksforgeeks.org/lucas-numbers/)。
 
@@ -20,7 +20,7 @@
 >
 > `'k'`的频率为 1
 >
-> 这些频率可以安排为生成卢卡斯序列的前 3 个项`{2, 1, 3}`。
+> 这些频率可以排列为生成卢卡斯序列的前 3 个项`{2, 1, 3}`。
 > 
 > **输入**：`str = "geeksforgeeks"`
 >
