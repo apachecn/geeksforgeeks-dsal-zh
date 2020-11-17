@@ -32,7 +32,7 @@
 
 *   `elem > K`：将元素更改为 1
 
-*   `elem < K`：将元素更改为-1
+*   `elem < K`：将元素更改为 -1
 
 现在，[计算所有数组元素的总和](https://www.geeksforgeeks.org/program-find-sum-elements-given-array/)，并将其存储在变量中，例如`total_sum`。 现在，total_sum 可以具有三个可能的值范围：
 

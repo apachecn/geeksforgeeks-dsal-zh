@@ -46,7 +46,7 @@ Output: 2 2 2 2 1 1 3 3 4 4 5 6 7
 
 *   使用此比较器可以通过实现[`Collections.sort()`](https://www.geeksforgeeks.org/collections-sort-java-examples/)方法对列表排序。
 
-*   打印排序列表。
+*   打印排序后的列表。
 
 **程序**：
 

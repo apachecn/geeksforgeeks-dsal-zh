@@ -40,7 +40,7 @@ the distinct characters of given string.
 
     1.  将给定字符串的所有不同字符存储在`hash_map`中。
 
-    2.  进行变量计数并将其初始化为值 0。
+    2.  创建计数器变量并将其初始化为值 0。
 
     3.  使用两个指针生成子字符串。
 

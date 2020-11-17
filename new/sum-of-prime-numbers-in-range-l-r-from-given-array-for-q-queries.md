@@ -40,7 +40,7 @@
 
 **方法**：要优化问题，请使用[分段树](https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)和[筛子](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)。
 
-*   首先，创建一个将标记质数的布尔数组。
+*   首先，创建一个用于标记质数的布尔数组。
 
 *   现在，在制作段树时，仅将这些数组元素添加为质数的叶节点。
 
