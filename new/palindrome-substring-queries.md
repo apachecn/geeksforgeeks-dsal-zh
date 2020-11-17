@@ -24,7 +24,7 @@
 
 One by one we go through all the substrings of the queries and check whether the substring under consideration is a palindrome or not.
 
-由于存在`Q`个查询，每个查询可能需要`O(n)`个最坏情况的时间来回答，因此此方法在最坏情况下需要`O(QN)`时间。 尽管这是一种就地/空间高效的算法，但仍有一种更有效的方法可以做到这一点。
+由于存在`Q`个查询，每个查询可能需要`O(n)`个最坏情况的时间来回答，因此此方法在最坏情况下需要`O(QN)`时间。 尽管这是一种原地/空间高效的算法，但仍有一种更有效的方法可以做到这一点。
 
 **Method 2 (Cumulative Hash)**
 
@@ -114,7 +114,7 @@ hash("baaab") = suffix[11-1] – suffix[11-5-1] = suffix[10] – suffix[5] = 98 
 
 其余部分只是实现。
 
-程序中的功能`computerPowers()`使用动态规划来计算 101 的幂。
+程序中的函数`computerPowers()`使用动态规划来计算 101 的幂。
 
 **溢出问题**：
 同样，我们可以看到，即使是很小的字符串，哈希值和反向哈希值也可能变得很大 –8。因为 C 和 C++ 不提供对此类哈希值的大量支持，因此将导致溢出。 为避免这种情况，我们将对质数取模（出于某些特定的数学原因选择质数）。 我们选择适合整数的最大可能质数。 最好的此类值为 1000000007。因此，所有运算都以 1000000007 为模。
@@ -160,7 +160,7 @@ hash("baaab") = suffix[11-1] – suffix[11-5-1] = suffix[10] – suffix[5] = 98 
 (a / b) % M = (a * MMI(b)) % M
 ```
 
-其中`MMI()`是用于计算[模乘逆](https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/)的函数。 在我们的程序中，这是通过功能`findMMI()`实现的。
+其中`MMI()`是用于计算[模乘逆](https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/)的函数。 在我们的程序中，这是通过函数`findMMI()`实现的。
 
 ## C++
 

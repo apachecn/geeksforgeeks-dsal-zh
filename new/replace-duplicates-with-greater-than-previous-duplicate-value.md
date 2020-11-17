@@ -22,7 +22,7 @@
 
 **来源**： [Paytm 面试经历 | 系列 30](https://www.geeksforgeeks.org/paytm-interview-experience-set-30/) 。
 
-此问题是本文的[的变体。 在上面的文章中，我们必须用迄今为止最大的价值替换重复项。 但是在这个问题中，我们必须用大于先前重复值的重复项替换元素。
+此问题是本文的[的变体。 在上面的文章中，我们必须用迄今为止最大的值替换重复项。 但是在这个问题中，我们必须用大于先前重复值的重复项替换元素。
 
 的想法是找到下一个要替换的更大的元素，以使总和最小化。 为了找到下一个更大的元素，我们必须从重复的元素进行迭代，直到找到`INT_MAX`，直到找到下一个更大的元素。](https://www.geeksforgeeks.org/replace-repeating-elements-with-greater-that-greatest-values/)
 

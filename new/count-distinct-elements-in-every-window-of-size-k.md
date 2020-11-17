@@ -257,7 +257,7 @@ First window is {4, 4}, count of distinct numbers is 1
 
     *   **时间复杂度**：`O(nk ^ 2)`。
 
-        通过使用排序修改`countWindowDistinct()`，可以将时间复杂度提高到`O(n * k * log k)`。 可以进一步优化该功能以使用[哈希](http://geeksquiz.com/print-distinct-elements-given-integer-array/)在窗口中查找不同的元素。 通过散列，时间复杂度变为`O(n * k)`。
+        通过使用排序修改`countWindowDistinct()`，可以将时间复杂度提高到`O(n * k * log k)`。 可以进一步优化该函数以使用[哈希](http://geeksquiz.com/print-distinct-elements-given-integer-array/)在窗口中查找不同的元素。 通过散列，时间复杂度变为`O(n * k)`。
 
     *   **空间复杂度**：`O(1)`，我们不需要任何额外的空间。
 

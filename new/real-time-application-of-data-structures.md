@@ -26,7 +26,7 @@
 
 ![](https://contribute.geeksforgeeks.org/wp-content/uploads/singly-linkedlist.png)
 
-链表的其他一些应用程序是：
+链表的其他一些应用是：
 
 1.  图像相互链接。 因此，图像查看器软件使用链表通过上一个和下一个按钮查看上一个和下一个图像。
 
@@ -42,7 +42,7 @@
 
 ![](https://contribute.geeksforgeeks.org/wp-content/uploads/geek-stack.png)
 
-栈的一些应用程序是：
+栈的一些应用是：
 
 1.  将中缀转换为后缀表达式。
 
@@ -58,7 +58,7 @@
 
 ![](https://contribute.geeksforgeeks.org/wp-content/uploads/geek-queue.png)
 
-队列的一些应用程序是：
+队列的一些应用是：
 
 1.  [操作系统](https://www.geeksforgeeks.org/types-of-operating-systems/)使用队列进行作业调度。
 
@@ -104,13 +104,13 @@
 
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20200609180838/HashingDataStructure-min.png)
 
-哈希表的一些应用程序是：
+哈希表的一些应用是：
 
 1.  存储在数据库中的数据通常是通过哈希表完成的键值格式。
 
 2.  每次我们在 Google chrome 或其他浏览器中键入要搜索的内容时，它都会根据哈希原理生成所需的输出。
 
-3.  Message Digest 是一种加密功能，它还使用散列以如下方式创建输出：从生成的输出到达原始输入几乎几乎是不可能的。
+3.  Message Digest 是一种加密函数，它还使用散列以如下方式创建输出：从生成的输出到达原始输入几乎几乎是不可能的。
 
 4.  在我们的计算机中，我们存储了各种文件，每个文件都有两个非常关键的信息，即文件名和文件路径，以便在文件名与其对应的文件路径哈希表之间建立连接。
 
@@ -120,7 +120,7 @@
 
 ![](https://media.geeksforgeeks.org/wp-content/uploads/20200609181239/MinHeapAndMaxHeap.png)
 
-堆的一些应用程序是：
+堆的一些应用是：
 
 1.  在[堆排序算法](https://www.geeksforgeeks.org/heap-sort/)中，该算法可对[最小堆](https://www.geeksforgeeks.org/min-heap-in-java/)（父项的键小于或等于其子项的键）或[最大堆](https://www.geeksforgeeks.org/max-heap-in-java/)（父项的键大于或等于其子项的键）中的元素排序，[排序](http://www.geeksforgeeks.org/sorting-algorithms/)是通过创建堆来完成的。
 

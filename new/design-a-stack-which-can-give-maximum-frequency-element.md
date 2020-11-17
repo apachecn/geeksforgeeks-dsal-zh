@@ -24,7 +24,7 @@
 
 **方法**：维护两个[`HashMap`](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)，一个是频率`HashMap`，它将元素映射到它们的频率，另一个是`setMap`，将所有具有相同频率的元素映射到一组（栈）。
 
-`FrequencyStack`具有 2 个功能：
+`FrequencyStack`具有 2 个函数：
 
 1.  `push(int x)`：使用频率`HashMap`映射元素`x`并更新`maxfreq`变量（即，直到现在都保持最大频率）。 `setMap`维护一个栈，其中包含所有具有相同频率的元素。
 2.  `pop()`：首先从`setMap`中获取`maxfreq`元素，然后降低弹出元素的频率。 弹出后，如果栈变空，则减小`maxfreq`。

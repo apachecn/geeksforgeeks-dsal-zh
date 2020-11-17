@@ -49,14 +49,9 @@ counter.getHits(301);
 
 **1.简单解决方案（暴力法）**：
 
-我们可以使用向量来存储所有匹配。 这两个功能是自我解释。
+我们可以使用向量来存储所有匹配。 这两个函数是自我解释的。
 
 ```
-_none
-edit
-play_arrow
-
-brightness_4
 vector<int> v; 
   
 /* Record a hit. 
