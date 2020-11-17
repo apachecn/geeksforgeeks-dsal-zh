@@ -7,11 +7,15 @@
 **示例**：
 
 > **输入**：`str = "geeksforgeeks", K = 2`
+>
 > **输出**：`Yes`
+>
 > **说明**：
+>
 > 移除给定字符串中的（`str[5]`，`str[6]`）使其余字符串`"geeksrgeeks"`为回文。 因此，所需的输出是`Yes`。
 > 
 > **输入**：`str = "coder", K = 1`
+>
 > **输出**：`No`
 
 **方法**：可以使用[哈希](https://www.geeksforgeeks.org/hashing-data-structure/)解决问题。 想法是[遍历给定字符串](https://www.geeksforgeeks.org/iterate-over-characters-of-a-string-in-python/)的字符，并存储给定字符串的每个不同字符的[频率](https://www.geeksforgeeks.org/print-characters-frequencies-order-occurrence/)。 如果给定字符串具有奇数频率的不同字符数小于或等于`K + 1`，则打印`Yes`。 否则，打印`No`。 请按照以下步骤解决问题：
