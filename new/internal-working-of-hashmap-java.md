@@ -56,7 +56,7 @@ class Key
 
 [`equals()`方法](https://www.geeksforgeeks.org/equals-hashcode-methods-java/)
 
-`equals`方法用于检查 2 个对象是否相等。 此方法由`Object`类提供。 您可以在您的类中重写此方法以提供您自己的实现。
+`equals`方法用于检查 2 个对象是否相等。 此方法由`Object`类提供。 您可以在您的类中覆盖此方法以提供您自己的实现。
 
 `HashMap`使用`equals()`比较键是否相等。 如果`equals()`方法返回`true`，则它们相等，否则不相等。
 

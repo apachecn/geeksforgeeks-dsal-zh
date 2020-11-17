@@ -28,7 +28,7 @@
 
 **方法**：
 
-*   使用 [STL 映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)将每个字符的频率存储在矢量中。 然后将向量排序。
+*   使用 [STL 映射](https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)将每个字符的频率存储在向量中。 然后将向量排序。
 
 *   由于卢卡斯序列的前两个数字为 2 和 1，因此将第一个向量的第一个和第二个元素分别更改为 2 和 1。 但是，只有在向量中存在 1 和 2 的情况下，才可以进行更改。 如果不存在，则频率永远不会处于卢卡斯序列中并输出`NO`。
 

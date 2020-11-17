@@ -225,7 +225,7 @@ Value for the key: 4 is 40
 
 **Java 中使用`LinkedHashMap`的另一种实现**：
 
-`removeEldestEntry()`被重写，以强加一个在大小超出容量时删除旧映射的策略。
+`removeEldestEntry()`被覆盖，以强加一个在大小超出容量时删除旧映射的策略。
 
 ```java
 import java.util.LinkedHashMap; 

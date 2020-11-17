@@ -42,7 +42,7 @@
 
     *   否则，在字符串`B`的第`i`个字符对应的索引处，将此索引`i`插入`convChar`数组中，并将字符串`B`中的第`i`个字符值插入`Hashmap convertMap`中，键为`i`。
 
-5.  初始化计算所需最小操作数的变量`ret`和矢量`retV`，来存储[操作集](https://www.geeksforgeeks.org/set-in-cpp-stl/)。
+5.  初始化计算所需最小操作数的变量`ret`和向量`retV`，来存储[操作集](https://www.geeksforgeeks.org/set-in-cpp-stl/)。
 
 6.  现在，以相反的顺序遍历所有字母。 在每个迭代中执行以下步骤：
 
