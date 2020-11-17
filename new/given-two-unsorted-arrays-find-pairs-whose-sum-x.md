@@ -224,7 +224,7 @@ findPairs($arr1, $arr2, 
 
 此问题的**有效解决方案**是[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)。 哈希表是使用 C++ 中的[`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)实现的。
 
-*   我们将所有第一个数组元素存储在哈希表中。
+*   我们将所有数组的第一个元素存储在哈希表中。
 
 *   对于第二个数组的元素，我们从`x`中减去每个元素，然后在哈希表中检查结果。
 

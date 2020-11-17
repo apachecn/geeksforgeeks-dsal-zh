@@ -51,7 +51,7 @@
 
 请按照以下步骤解决问题：
 
-*   将树根在任意随机顶点处，例如 1。
+*   将根设定在任意随机顶点处，例如 1。
 
 *   在根目录下执行 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)。 使用 DFS 计算连接到边的子树大小。
 

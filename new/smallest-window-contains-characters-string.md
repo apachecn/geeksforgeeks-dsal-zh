@@ -32,7 +32,7 @@ the distinct characters of given string.
 
 **方法 1** ：这是使用`HashMap`解决问题的暴力方法。
 
-*   **方法**：为了解决问题，我们首先必须找出字符串中存在的所有不同字符。 可以使用[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)完成。 下一步是生成所有可能的子字符串。 然后检查生成的子字符串是否具有所有必需的字符（存储在`hash_map`中）。 如果是，则将其长度与遵循上述约束的最小子串长度进行比较，直到现在为止。
+*   **方法**：为了解决问题，我们首先必须找出字符串中存在的所有不同字符。 可以使用[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)完成。 下一步是生成所有可能的子字符串。 然后检查生成的子字符串是否具有所有所需的字符（存储在`hash_map`中）。 如果是，则将其长度与遵循上述约束的最小子串长度进行比较，直到现在为止。
 
     [`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)：`HashMap`自 Java 1.2 以来就是 Java 集合的一部分。 它提供了 Java `Map`接口的基本实现。 它以（键，值）对存储数据。 要访问一个值，必须知道其键。 `HashMap`被称为`HashMap`，因为它使用了一种称为哈希的技术。 散列是一种将大字符串转换为代表相同字符串的小字符串的技术。 较短的值有助于索引编制和更快的搜索。 `HashSet`还内部使用`HashMap`。 它在内部使用链表来存储已在`HashSet`中详细解释的键值对以及其他文章。
 

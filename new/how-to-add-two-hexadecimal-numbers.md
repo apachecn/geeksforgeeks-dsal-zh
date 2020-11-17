@@ -36,7 +36,7 @@
 
 **方法**：想法是使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)模板来存储从**十六进制到十进制**和**十进制到十六进制**的映射值。
 
-1.  迭代直到给定字符串之一达到其长度。
+1.  迭代到给定字符串之一达到其长度。
 
 2.  从进位零开始，从末尾将两个数字（带有进位）相加，并在每次加法中更新进位。
 

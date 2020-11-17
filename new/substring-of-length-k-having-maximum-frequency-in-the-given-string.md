@@ -32,7 +32,7 @@
 >
 > 所有这些仅发生一次。 但是，按字典顺序，最小的字符串是`"agood"`。
 >
-> 因此，`"agood"`是必需的答案。
+> 因此，`"agood"`是所需的答案。
 
 **朴素的方法**：解决问题的最简单方法是[从给定的字符串中生成大小为 **K** 的所有子字符串](https://www.geeksforgeeks.org/program-print-substrings-given-string/)，并将每个子字符串的频率存储在一个[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)。 然后，遍历**映射**并找到出现次数最多的字典上最小的子字符串并将其打印出来。
 

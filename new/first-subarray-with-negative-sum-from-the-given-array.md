@@ -34,7 +34,7 @@
 
 1.  计算数组的[**前缀总和**](https://www.geeksforgeeks.org/prefix-sum-array-implementation-applications-competitive-programming/)并将其存储到[`HashMap`](http://www.geeksforgeeks.org/java-util-hashmap-in-java/)中。
 
-2.  遍历数组，对于第`i`个索引（其中`i`的范围为`[0, N – 1]`），检查第`i`个索引的元素是否为负。 如果是这样，则`arr[i]`是必需的子数组。
+2.  遍历数组，对于第`i`个索引（其中`i`的范围为`[0, N – 1]`），检查第`i`个索引的元素是否为负。 如果是这样，则`arr[i]`是所需的子数组。
 
 3.  否则，找到一个从`i + 1`开始的索引，其中前缀和小于前缀和，直到`i`。
 
