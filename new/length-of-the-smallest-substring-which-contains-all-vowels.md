@@ -22,7 +22,7 @@
 
 *   [存储每个元音的频率](https://www.geeksforgeeks.org/print-number-words-vowels-frequency-character/)和存在元音的索引。
 
-*   如果没有所有元音，请直接打印-1。
+*   如果没有所有元音，请直接打印 -1。
 
 *   在包含元音的第一个和最后一个索引处取两个指针`i`和`j`。
 

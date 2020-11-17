@@ -23,7 +23,7 @@ Explanation : {1, 2} appear more than one time.
 
 *   如果是，请继续遍历数组。
 
-*   其他打印元素。
+*   否则打印元素。
 
 ## C++
 

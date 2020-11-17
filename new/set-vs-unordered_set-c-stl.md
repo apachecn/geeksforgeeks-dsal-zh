@@ -30,7 +30,7 @@ Deletion time   | log(n) + Rebalance  | Same as search
 
 *   我们将不得不打印/访问数据（按排序顺序）。
 
-*   我们需要元素的前任/后继。
+*   我们需要元素的前驱/后继。
 
 *   由于`set`是有序的，因此我们可以在`set`元素上使用[`binary_search()`，`lower_bound()`和`upper_bound()`](https://www.geeksforgeeks.org/binary-search-functions-in-c-stl-binary_search-lower_bound-and-upper_bound/)之类的函数。 这些函数不能在`nordered_set()`上使用。
 
