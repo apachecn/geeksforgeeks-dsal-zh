@@ -1,9 +1,9 @@
-# 查找词典上最小的序列，可以通过重新排列第二个数组的元素形成
+# 查找词典上最小的序列，可以通过重新排列第二个数组的元素生成
 
 > 原文：[https://www.geeksforgeeks.org/find-the-smallest-sequence-lexicographically-which-can-be-formed-by-re-arranging-elements-of-second-array/](https://www.geeksforgeeks.org/find-the-smallest-sequence-lexicographically-which-can-be-formed-by-re-arranging-elements-of-second-array/)
 
 
-给定`N`个整数的两个数组`A`和`B`。 重新排列`B`元素本身的方式，使重新排列后`(A[i] + B[i]) % N`形成的序列在字典上最小。 该任务是按字典顺序打印**最小的**序列。
+给定`N`个整数的两个数组`A`和`B`。 重新排列`B`元素本身的方式，使重新排列后`(A[i] + B[i]) % N`生成的序列在字典上最小。 该任务是按字典顺序打印**最小的**序列。
 
 **注意**：数组元素在`[0, n)`范围内。
 

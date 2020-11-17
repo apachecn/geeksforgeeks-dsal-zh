@@ -1,4 +1,4 @@
-# 检查给定字符串的字符是否可用于形成`N`个相等的字符串
+# 检查给定字符串的字符是否可用于生成`N`个相等的字符串
 
 > 原文：[https://www.geeksforgeeks.org/check-if-characters-of-a-given-string-can-be-used-to-form-any-n-equal-strings/](https://www.geeksforgeeks.org/check-if-characters-of-a-given-string-can-be-used-to-form-any-n-equal-strings/)
 

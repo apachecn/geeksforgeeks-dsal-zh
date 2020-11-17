@@ -1,4 +1,4 @@
-# 通过将数组与其自身连接`N`次而形成的最长递增子序列
+# 通过将数组与其自身连接`N`次而生成的最长递增子序列
 
 > 原文：[https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/](https://www.geeksforgeeks.org/longest-increasing-sub-sequence-formed-by-concatenating-array-to-itself-n-times/)
 
@@ -12,11 +12,11 @@
 >
 > **解释**：
 >
-> 由连接形成的数组：
+> 由连接生成的数组：
 >
 > `{3, 2, 1, 3, 2, 1, 1, 3, 2, 1}`
 >
-> 该数组可以形成的最长递增子序列的长度为 3，即`{1, 2, 3}`。
+> 该数组可以生成的最长递增子序列的长度为 3，即`{1, 2, 3}`。
 > 
 > **输入**：`N = 3, arr[] = {3, 1, 4}`
 >
@@ -26,7 +26,7 @@
 >
 > `{3, 1, 4, 3, 1, 4, 3, 1, 4}`
 >
-> 该数组可形成的最长递增子序列的长度为 3，即`{1, 3, 4}`。
+> 该数组可生成的最长递增子序列的长度为 3，即`{1, 3, 4}`。
 
 **朴素的方法**：
 

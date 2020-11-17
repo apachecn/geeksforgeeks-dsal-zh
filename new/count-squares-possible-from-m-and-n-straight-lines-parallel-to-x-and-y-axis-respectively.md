@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/](https://www.geeksforgeeks.org/count-squares-possible-from-m-and-n-straight-lines-parallel-to-x-and-y-axis-respectively/)
 
-给定两个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`X[]`和`Y[]`，它们由`N`和`M`整数组成，表示平行于`y`轴的`N`条线和平行于`x`轴的`M`条线。 任务是找到在坐标平面上由这些线形成的正方形总数。
+给定两个[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`X[]`和`Y[]`，它们由`N`和`M`整数组成，表示平行于`y`轴的`N`条线和平行于`x`轴的`M`条线。 任务是找到在坐标平面上由这些线生成的正方形总数。
 
 > 数组`X[]`中的每个整数（例如`a`）表示具有等式`x = a`的线，平行于`y`轴。
 > 数组`Y[]`中的每个整数（例如`b`）表示具有等式`y = b`的线，平行于`x`轴。
@@ -39,7 +39,7 @@
 
 *   在`Y[]`数组中找到所有对之间的距离，并将计数存储在`Map M2`中。
 
-*   如果在`M2`中存在`M1`对的距离，则可以通过使用这两个对来形成正方形。
+*   如果在`M2`中存在`M1`对的距离，则可以通过使用这两个对来生成正方形。
 
 *   因此，可以通过将`M1`以及`M2`中存储的所有距离计数相加来计算平方总数。
 

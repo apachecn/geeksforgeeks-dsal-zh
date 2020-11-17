@@ -1,8 +1,8 @@
-# 连接形成回文字符串的字符串对的数量
+# 连接生成回文字符串的字符串对的数量
 
 > 原文：[https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/](https://www.geeksforgeeks.org/count-of-pairs-of-strings-whose-concatenation-forms-a-palindromic-string/)
 
-给定由`N`个字符串组成的数组`A[]`，任务是计算在合并或重新排列后形成的[回文字符串](https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/)的数量。
+给定由`N`个字符串组成的数组`A[]`，任务是计算在合并或重新排列后生成的[回文字符串](https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/)的数量。
 
 **示例**：
 
@@ -47,17 +47,17 @@
 
 **有效方法**：
 
-当**最多一个字符**具有**奇数**频率时，总是可以形成回文串，其余每个字符均出现一次。 由于允许重新排列合并字符串中的字符，因此我们只需要计算合并字符串中字符的频率，并检查其是否满足回文字符串。
+当**最多一个字符**具有**奇数**频率时，总是可以生成回文串，其余每个字符均出现一次。 由于允许重新排列合并字符串中的字符，因此我们只需要计算合并字符串中字符的频率，并检查其是否满足回文字符串。
 
 > **解释**：
 >
 > **1\. 每个字符都有偶数出现**
 >
-> 字符串`"aab"`和`"abcac"`可以合并并重新排列以形成回文字符串`"aababcac"`，每个字符具有偶数频率。
+> 字符串`"aab"`和`"abcac"`可以合并并重新排列以生成回文字符串`"aababcac"`，每个字符具有偶数频率。
 > 
 > **2\. 一个字符具有奇数出现**
 >
-> 字符串`"aab"`和`"aa"`可以合并形成回文字符串`"aabaa"`，字符`'b'`具有奇数频率，其余字符具有偶数频率。
+> 字符串`"aab"`和`"aa"`可以合并生成回文字符串`"aabaa"`，字符`'b'`具有奇数频率，其余字符具有偶数频率。
 
 因此，可以观察到可以将两对以下类型的字符串合并成回文字符串：
 

@@ -1,4 +1,4 @@
-# 检查是否可以从给定的字符串中形成`K`个回文字符串
+# 检查是否可以从给定的字符串中生成`K`个回文字符串
 
 > 原文：[https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/](https://www.geeksforgeeks.org/check-if-k-palindromic-strings-can-be-formed-from-a-given-string/)
 
@@ -24,7 +24,7 @@
 
 **方法**
 
-*   如果每个字符的[频率是偶数](https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/)，并且`K`在 1 和`N`之间，则总是有可能形成`K`个回文字符串。
+*   如果每个字符的[频率是偶数](https://www.geeksforgeeks.org/python-frequency-of-each-character-in-string/)，并且`K`在 1 和`N`之间，则总是有可能生成`K`个回文字符串。
 
 *   但是，如果有一些字符（例如**奇数计数**）具有奇数频率，则`K`必须位于奇数计数和`N`之间，以使`K`个回文字符串成为可能。
 

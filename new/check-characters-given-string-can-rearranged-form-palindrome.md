@@ -1,12 +1,12 @@
-# 检查给定字符串的字符是否可以重新排列来形成回文
+# 检查给定字符串的字符是否可以重新排列来生成回文
 
 > 原文：[https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/](https://www.geeksforgeeks.org/check-characters-given-string-can-rearranged-form-palindrome/)
 
-给定字符串，请检查给定字符串的字符是否可以重新排列以形成回文。
+给定字符串，请检查给定字符串的字符是否可以重新排列以生成回文。
 
-例如，可以重新排列`"geeksogeeks"`的字符以形成回文`"geeksoskeegeg“`，但是不能重新排列`"geeksforgeeks"`的字符以形成回文。
+例如，可以重新排列`"geeksogeeks"`的字符以生成回文`"geeksoskeegeg“`，但是不能重新排列`"geeksforgeeks"`的字符以生成回文。
 
-如果最多一个字符出现奇数次而所有字符出现偶数次，则一组字符可以形成回文。
+如果最多一个字符出现奇数次而所有字符出现偶数次，则一组字符可以生成回文。
 
 一个简单的解决方案是运行两个循环，外循环一个接一个地拾取所有字符，内循环计算被拾取字符的出现次数。 我们跟踪奇数。 该解决方案的时间复杂度为`O(n ^ 2)`。
 

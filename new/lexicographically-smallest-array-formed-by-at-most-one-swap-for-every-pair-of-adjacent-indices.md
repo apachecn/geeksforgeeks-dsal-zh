@@ -1,4 +1,4 @@
-# 由每对相邻索引的最多进行一次交换形成的最小词典数组
+# 由每对相邻索引的最多进行一次交换生成的最小词典数组
 
 > 原文：[https://www.geeksforgeeks.org/lexicographically-smallest-array-formed-by-at-most-one-swap-for-every-pair-of-adjacent-indices/](https://www.geeksforgeeks.org/lexicographically-smallest-array-formed-by-at-most-one-swap-for-every-pair-of-adjacent-indices/)
 

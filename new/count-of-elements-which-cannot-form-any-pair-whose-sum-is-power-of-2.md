@@ -1,4 +1,4 @@
-# 元素数量，它不能形成总和为 2 的幂任何对
+# 元素数量，它不能生成总和为 2 的幂任何对
 
 > 原文：[https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/](https://www.geeksforgeeks.org/count-of-elements-which-cannot-form-any-pair-whose-sum-is-power-of-2/)
 
@@ -12,7 +12,7 @@
 >
 > **说明**：
 >
-> 因为 6 和 2 可以形成总和 8（`= 2 ^ 3`）的偶对。 因此，仅 11 必须删除，因为它不构成 2 的幂的和。
+> 因为 6 和 2 可以生成总和 8（`= 2 ^ 3`）的偶对。 因此，仅 11 必须删除，因为它不构成 2 的幂的和。
 >
 > **输入**：`arr[] = [1, 1, 1, 1023]`
 >
@@ -44,7 +44,7 @@
 
     3.  如果以上两个条件都不满足，则由`a[i]`组成的对不可能和为`p`。
 
-*   如果上述两个条件对于当前`a[i]`的任何`p`不满足，则增加`count`，因为`a[i]`无法与任何其他数组元素形成 2 的幂的和。
+*   如果上述两个条件对于当前`a[i]`的任何`p`不满足，则增加`count`，因为`a[i]`无法与任何其他数组元素生成 2 的幂的和。
 
 *   打印`count`的最终值。
 
