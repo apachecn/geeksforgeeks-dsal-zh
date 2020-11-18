@@ -1,5 +1,7 @@
 # 使用链接列表
 
+> 原文：[https://www.geeksforgeeks.org/priority-queue-using-linked-list/](https://www.geeksforgeeks.org/priority-queue-using-linked-list/)
+
 的优先级队列
 
 使用链接列表实现优先级队列。

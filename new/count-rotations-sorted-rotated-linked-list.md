@@ -1,5 +1,7 @@
 # 在排序和旋转的链表
 
+> 原文：[https://www.geeksforgeeks.org/count-rotations-sorted-rotated-linked-list/](https://www.geeksforgeeks.org/count-rotations-sorted-rotated-linked-list/)
+
 中计算旋转次数
 
 给定 n 个节点的链表，该链表首先进行排序，然后旋转 k 个元素。 找出 k 的值。

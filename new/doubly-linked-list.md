@@ -1,5 +1,7 @@
 # 双链表| 第 1 组（简介和插入）
 
+> 原文：[https://www.geeksforgeeks.org/doubly-linked-list/](https://www.geeksforgeeks.org/doubly-linked-list/)
+
 我们强烈建议将以下帖子作为该帖子的先决条件。
 
 [链接列表简介](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)

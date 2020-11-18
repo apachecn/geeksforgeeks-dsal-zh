@@ -1,5 +1,7 @@
 # 在排序的双向链接列表中以排序的方式插入值
 
+> 原文：[https://www.geeksforgeeks.org/insert-value-sorted-way-sorted-doubly-linked-list/](https://www.geeksforgeeks.org/insert-value-sorted-way-sorted-doubly-linked-list/)
+
 给定一个排序的双链表和一个要插入的值，编写一个函数以排序的方式插入该值。
 
 初始双向链表

@@ -1,5 +1,7 @@
 # 使用双指针
 
+> 原文：[https://www.geeksforgeeks.org/delete-multiple-occurrences-of-key-in-linked-list-using-double-pointer/](https://www.geeksforgeeks.org/delete-multiple-occurrences-of-key-in-linked-list-using-double-pointer/)
+
 删除链接列表中多次出现的键
 
 给定一个单链表，请删除其中所有出现的给定键。 例如，考虑以下列表。

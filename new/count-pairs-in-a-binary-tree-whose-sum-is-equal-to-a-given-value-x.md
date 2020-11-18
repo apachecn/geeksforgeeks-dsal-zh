@@ -1,5 +1,7 @@
 # 在二叉树中计数对，其总和等于给定值 x
 
+> 原文：[https://www.geeksforgeeks.org/count-pairs-in-a-binary-tree-whose-sum-is-equal-to-a-given-value-x/](https://www.geeksforgeeks.org/count-pairs-in-a-binary-tree-whose-sum-is-equal-to-a-given-value-x/)
+
 给定一个包含 **n** 个不同数字和值 **x** 的二叉树。 问题在于在给定的二叉树中对它们的总和等于给定值 **x** 的对进行计数。
 
 **示例**：

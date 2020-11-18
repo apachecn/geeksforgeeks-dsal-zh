@@ -1,5 +1,7 @@
 # 打印由给定索引指定的给定链接列表的子列表
 
+> 原文：[https://www.geeksforgeeks.org/print-sublist-of-a-given-linked-list-specified-by-given-indices/](https://www.geeksforgeeks.org/print-sublist-of-a-given-linked-list-specified-by-given-indices/)
+
 给定[链表](https://www.geeksforgeeks.org/data-structures/linked list/)和两个索引 **A** 和 **B** ，任务是打印一个从 **A** 开始并在**结尾的子列表。 B** 。
 
 **示例**：

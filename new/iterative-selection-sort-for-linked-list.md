@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/iterative-selection-sort-for-linked-list/](https://www.geeksforgeeks.org/iterative-selection-sort-for-linked-list/)
+
 的迭代选择排序
 
 给定一个链表，任务是使用选择排序以升序对链表进行排序。

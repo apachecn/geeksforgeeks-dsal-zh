@@ -1,5 +1,7 @@
 # 从具有某些公共节点的两个排序链表中构造一个最大和链表
 
+> 原文：[https://www.geeksforgeeks.org/maximum-sum-linked-list-two-sorted-linked-lists-common-nodes/](https://www.geeksforgeeks.org/maximum-sum-linked-list-two-sorted-linked-lists-common-nodes/)
+
 给定两个排序的链表，构造一个链表，该链表包含从头到尾的最大求和路径。 结果列表可能包含两个输入列表中的节点。 构造结果列表时，我们可能仅在交点处切换到另一个输入列表（这意味着列表中具有相同值的两个节点）。 允许您使用`O(1)`多余的空间。
 
 ```

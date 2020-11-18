@@ -1,5 +1,7 @@
 # 将单链接列表转换为循环链接列表
 
+> 原文：[https://www.geeksforgeeks.org/convert-singly-linked-list-circular-linked-list/](https://www.geeksforgeeks.org/convert-singly-linked-list-circular-linked-list/)
+
 给定一个单链表，我们必须将其转换为循环链表。 例如，我们给了一个包含四个节点的单链表，我们想将此单链表转换为循环链表。
 
 ![Singly-Linked-List](img/293a6f402f56fa20b327cb9f7ab5903c.png)

@@ -1,5 +1,7 @@
 # 查找给定链接列表
 
+> 原文：[https://www.geeksforgeeks.org/find-the-product-of-last-n-nodes-of-the-given-linked-list/](https://www.geeksforgeeks.org/find-the-product-of-last-n-nodes-of-the-given-linked-list/)
+
 的最后 N 个节点的乘积
 
 给定一个链表和一个数字 N。找到链表的最后 n 个节点的乘积。

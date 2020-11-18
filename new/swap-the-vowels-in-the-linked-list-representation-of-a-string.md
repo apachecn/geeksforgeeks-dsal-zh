@@ -1,5 +1,7 @@
 # 交换字符串的链接列表表示中的元音
 
+> 原文：[https://www.geeksforgeeks.org/swap-the-vowels-in-the-linked-list-representation-of-a-string/](https://www.geeksforgeeks.org/swap-the-vowels-in-the-linked-list-representation-of-a-string/)
+
 给定字符串的链接列表表示形式，任务是交换字符串中的每个后续元音对，以生成结果链接列表。
 
 **范例**：

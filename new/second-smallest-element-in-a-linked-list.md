@@ -1,5 +1,7 @@
 # 链表中第二小的元素
 
+> 原文：[https://www.geeksforgeeks.org/second-smallest-element-in-a-linked-list/](https://www.geeksforgeeks.org/second-smallest-element-in-a-linked-list/)
+
 给定整数数据的链接列表。 任务是编写一个程序，以有效地找到链表中存在的第二个最小元素。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 单链接列表
 
+> 原文：[https://www.geeksforgeeks.org/sum-and-product-of-all-prime-nodes-of-a-singly-linked-list/](https://www.geeksforgeeks.org/sum-and-product-of-all-prime-nodes-of-a-singly-linked-list/)
+
 的所有主要节点的总和与乘积
 
 给定一个包含 N 个节点的单链接列表，任务是从列表中查找素数所有节点的总和与乘积。

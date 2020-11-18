@@ -1,5 +1,7 @@
 # 双链表中所有节点的和，可被给定数 K 整除
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-nodes-in-a-doubly-linked-list-divisible-by-a-given-number-k/](https://www.geeksforgeeks.org/sum-of-all-nodes-in-a-doubly-linked-list-divisible-by-a-given-number-k/)
+
 给定一个包含 N 个节点的双链表，并给定数字 K。任务是找到所有可被 K 整除的节点之和。
 
 **示例**：

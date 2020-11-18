@@ -1,5 +1,7 @@
 # 删除左侧
 
+> 原文：[https://www.geeksforgeeks.org/delete-linked-list-nodes-which-have-a-lesser-value-on-left-side/](https://www.geeksforgeeks.org/delete-linked-list-nodes-which-have-a-lesser-value-on-left-side/)
+
 值较小的链表节点
 
 给定一个单链列表，任务是删除左侧值较小的所有节点。

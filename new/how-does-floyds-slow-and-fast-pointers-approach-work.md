@@ -1,5 +1,7 @@
 # 弗洛伊德的慢速指针和快速指针方法是如何工作的？
 
+> 原文：[https://www.geeksforgeeks.org/how-does-floyds-slow-and-fast-pointers-approach-work/](https://www.geeksforgeeks.org/how-does-floyds-slow-and-fast-pointers-approach-work/)
+
 我们已经在[链表](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)中的检测循环中讨论了 Floyd 的快慢指针算法。
 
 [![](img/de522899e01a1322ab2808eeff1ad73e.png "Linked List Loop")](https://media.geeksforgeeks.org/wp-content/cdn-uploads/2009/04/Linked-List-Loop.gif)

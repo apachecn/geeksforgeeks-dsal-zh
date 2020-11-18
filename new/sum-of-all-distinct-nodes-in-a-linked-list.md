@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-distinct-nodes-in-a-linked-list/](https://www.geeksforgeeks.org/sum-of-all-distinct-nodes-in-a-linked-list/)
+
 中所有不同节点的总和
 
 给定一个链表，它可能包含重复的节点。 任务是找到非重复节点的总和。

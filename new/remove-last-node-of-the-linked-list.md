@@ -1,5 +1,7 @@
 # 删除链接列表
 
+> 原文：[https://www.geeksforgeeks.org/remove-last-node-of-the-linked-list/](https://www.geeksforgeeks.org/remove-last-node-of-the-linked-list/)
+
 的最后一个节点
 
 给定一个链表，任务是删除链表的最后一个节点并更新链表的头指针。

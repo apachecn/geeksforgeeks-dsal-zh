@@ -1,5 +1,7 @@
 # 运算符在链接列表类
 
+> 原文：[https://www.geeksforgeeks.org/operator-overloading-and-operator-in-a-linked-list-class/](https://www.geeksforgeeks.org/operator-overloading-and-operator-in-a-linked-list-class/)
+
 中重载了'< >运算符
 
 **先决条件：C++中的** [运算符重载](https://www.geeksforgeeks.org/operator-overloading-c/)和[在 C++中的链接列表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)

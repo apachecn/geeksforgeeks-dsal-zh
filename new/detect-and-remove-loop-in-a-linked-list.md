@@ -1,5 +1,7 @@
 # 检测并删除链接列表中的循环
 
+> 原文：[https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)
+
 编写一个函数 *detectAndRemoveLoop（）*，该函数检查给定的链表是否包含循环，如果存在循环，则删除该循环并返回 true。 如果列表不包含循环，则返回 false。 下图显示了带有循环的链表。 *detectAndRemoveLoop（）*必须将以下列表更改为 1- > 2- > 3- > 4- > 5- > NULL。
 
 ![](img/712a32386dfe621abfb081cc905aa457.png)

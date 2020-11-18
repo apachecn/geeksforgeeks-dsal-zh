@@ -1,5 +1,7 @@
 # 在三个链接列表中查找公共元素
 
+> 原文：[https://www.geeksforgeeks.org/find-common-elements-in-three-linked-lists/](https://www.geeksforgeeks.org/find-common-elements-in-three-linked-lists/)
+
 给定三个链表，在三个链表中找到所有共同的元素。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 在链表中查找频率至少为 N / 3 的元素
 
+> 原文：[https://www.geeksforgeeks.org/find-the-element-in-a-linked-list-with-frequency-at-least-n-3/](https://www.geeksforgeeks.org/find-the-element-in-a-linked-list-with-frequency-at-least-n-3/)
+
 给定大小为 **N** 的[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，其中包含字符串作为节点值，任务是查找频率大于 **[N / 3]** 的多数字符串 ]，在链接列表中。
 
 **注意**：确保只有一个多数字符串。

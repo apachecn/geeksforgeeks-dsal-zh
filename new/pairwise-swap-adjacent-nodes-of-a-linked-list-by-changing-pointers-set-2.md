@@ -1,5 +1,7 @@
 # 通过更改指针|配对交换链表的相邻节点 | 系列 2
 
+> 原文：[https://www.geeksforgeeks.org/pairwise-swap-adjacent-nodes-of-a-linked-list-by-changing-pointers-set-2/](https://www.geeksforgeeks.org/pairwise-swap-adjacent-nodes-of-a-linked-list-by-changing-pointers-set-2/)
+
 给定一个单链表，编写一个函数以成对交换元素。
 
 ```

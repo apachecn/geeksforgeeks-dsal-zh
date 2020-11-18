@@ -1,5 +1,7 @@
 # 将链表表示的数字加 1
 
+> 原文：[https://www.geeksforgeeks.org/add-1-number-represented-linked-list/](https://www.geeksforgeeks.org/add-1-number-represented-linked-list/)
+
 数字在链接列表中表示，因此每个数字都对应于链接列表中的一个节点。 加 1。 例如，1999 表示为（`1 -> 9 -> 9 -> 9`），将其添加 1 应该将其更改为（`2 -> 0 -> 0 -> 0`）
 
 步骤如下：

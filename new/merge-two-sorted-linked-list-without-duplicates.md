@@ -1,5 +1,7 @@
 # 合并两个没有重复的排序链表
 
+> 原文：[https://www.geeksforgeeks.org/merge-two-sorted-linked-list-without-duplicates/](https://www.geeksforgeeks.org/merge-two-sorted-linked-list-without-duplicates/)
+
 合并大小为 **n1** 和 **n2** 的两个排序链表。 在最终排序的链表中，两个链表中的重复项应仅出现一次。
 
 例子：

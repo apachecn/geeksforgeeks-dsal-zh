@@ -1,5 +1,7 @@
 # 当给出随机指针时，插入到已排序的循环链表中
 
+> 原文：[https://www.geeksforgeeks.org/insertion-in-a-sorted-circular-linked-list-when-a-random-pointer-is-given/](https://www.geeksforgeeks.org/insertion-in-a-sorted-circular-linked-list-when-a-random-pointer-is-given/)
+
 给定整数数组 **arr []** 和指向圆形排序链表（最初为空）的随机节点的指针，任务是插入 **arr []** 的所有元素 在循环链接列表中。
 
 **示例**：

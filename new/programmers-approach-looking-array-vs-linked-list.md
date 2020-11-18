@@ -1,5 +1,7 @@
 # 程序员查看数组与链接列表
 
+> 原文：[https://www.geeksforgeeks.org/programmers-approach-looking-array-vs-linked-list/](https://www.geeksforgeeks.org/programmers-approach-looking-array-vs-linked-list/)
+
 的方法
 
 通常，数组被认为是一种数据结构，其大小在编译时是固定的，并且数组存储器是从“数据”部分（例如，全局数组）或“堆栈”部分（例如，本地数组）中分配的。

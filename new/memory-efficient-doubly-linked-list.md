@@ -1,5 +1,7 @@
 # 高效内存双链表
 
+> 原文：[https://www.geeksforgeeks.org/memory-efficient-doubly-linked-list/](https://www.geeksforgeeks.org/memory-efficient-doubly-linked-list/)
+
 由 Varun Bhatia 询问。
 
 **问题**：

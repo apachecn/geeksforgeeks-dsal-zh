@@ -1,5 +1,7 @@
 # 将二叉树展平为链接列表
 
+> 原文：[https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list/](https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list/)
+
 给定一棵二叉树，将其平整就位到链表中。 不允许使用辅助数据结构。 展平后，每个节点的左侧应指向 NULL，右侧应包含按顺序排列的下一个节点。
 
 示例：

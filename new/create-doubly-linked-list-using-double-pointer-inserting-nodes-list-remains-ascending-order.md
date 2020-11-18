@@ -1,5 +1,7 @@
 # 具有头和尾指针的双向链接列表中的排序插入
 
+> 原文：[https://www.geeksforgeeks.org/create-doubly-linked-list-using-double-pointer-inserting-nodes-list-remains-ascending-order/](https://www.geeksforgeeks.org/create-doubly-linked-list-using-double-pointer-inserting-nodes-list-remains-ascending-order/)
+
 [双链表](https://www.geeksforgeeks.org/doubly-linked-list/)是由一组顺序链接的记录（称为节点）组成的链表。 每个节点包含两个字段，这些字段引用节点序列中的上一个节点和下一个节点。
 
 任务是通过插入节点来创建双向链接列表，以使列表在打印时从左到右保持升序。 同样，我们需要维护两个指针，头（指向第一个节点的点）和尾（指向最后一个节点的点）。

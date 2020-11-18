@@ -1,5 +1,7 @@
 # 以波形形式
 
+> 原文：[https://www.geeksforgeeks.org/sort-a-linked-list-in-wave-form/](https://www.geeksforgeeks.org/sort-a-linked-list-in-wave-form/)
+
 对链接列表进行排序
 
 给定未排序的整数链接列表。 任务是将“链表”分类为“线”之类的波形。 如果排序后的列表采用以下形式，则称链接列表按 Wave 形式排序：

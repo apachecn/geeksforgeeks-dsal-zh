@@ -1,5 +1,7 @@
 # 检查节点的元素之和是否等于给定的键值
 
+> 原文：[https://www.geeksforgeeks.org/check-whether-the-sum-of-element-of-a-node-is-equal-to-the-given-key-value/](https://www.geeksforgeeks.org/check-whether-the-sum-of-element-of-a-node-is-equal-to-the-given-key-value/)
+
 给定一个整数 **k** 和一个链表，链表的每个节点都由一对整数变量**首先**和**第二**来保存数据，以及一个指针指向 到列表中的下一个节点。 任务是查找任何节点的数据变量之和是否等于 **k** 。 如果是，则打印**是**，否则打印**否**。
 
 **示例**：

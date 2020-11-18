@@ -1,5 +1,7 @@
 # 将两个数字乘以链接列表
 
+> 原文：[https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists/](https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists/)
+
 给定两个由链表表示的数字，编写一个函数返回两个链表的乘积。
 
 **示例**：

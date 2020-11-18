@@ -1,5 +1,7 @@
 # 从排序的双向链接列表
 
+> 原文：[https://www.geeksforgeeks.org/remove-duplicates-sorted-doubly-linked-list/](https://www.geeksforgeeks.org/remove-duplicates-sorted-doubly-linked-list/)
+
 中删除重复项
 
 给定一个包含 **n** 个节点的排序的双链表。 问题是从给定列表中删除重复的节点。

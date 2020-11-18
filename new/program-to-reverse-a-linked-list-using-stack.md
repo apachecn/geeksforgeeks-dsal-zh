@@ -1,5 +1,7 @@
 # 程序使用堆栈
 
+> 原文：[https://www.geeksforgeeks.org/program-to-reverse-a-linked-list-using-stack/](https://www.geeksforgeeks.org/program-to-reverse-a-linked-list-using-stack/)
+
 来反向链接列表
 
 给定一个链表。 任务是使用辅助堆栈反转链表元素的顺序。

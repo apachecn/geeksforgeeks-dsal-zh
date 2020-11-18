@@ -1,5 +1,7 @@
 # 在保留旧节点的同时将起始 N 个节点拆分为新的循环链接列表
 
+> 原文：[https://www.geeksforgeeks.org/splitting-starting-n-nodes-into-new-circular-linked-list-while-preserving-the-old-nodes/](https://www.geeksforgeeks.org/splitting-starting-n-nodes-into-new-circular-linked-list-while-preserving-the-old-nodes/)
+
 给定一个具有 **N** 个节点和整数 **K** 的循环链表，其中 **0 < K < N** ，任务是拆分第一个 **将**个节点 K 放入一个新列表中，同时将其余的节点保留在原始循环链接列表中。
 
 **示例**：

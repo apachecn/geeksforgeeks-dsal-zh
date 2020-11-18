@@ -1,5 +1,7 @@
 # 在链接列表
 
+> 原文：[https://www.geeksforgeeks.org/find-the-first-duplicate-element-in-the-linked-list/](https://www.geeksforgeeks.org/find-the-first-duplicate-element-in-the-linked-list/)
+
 中找到第一个重复元素
 
 给定一个链表。 从左边找到第一个出现多次的元素。 如果所有元素都是唯一的，则打印-1。

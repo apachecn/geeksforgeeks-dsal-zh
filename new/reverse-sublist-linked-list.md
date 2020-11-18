@@ -1,5 +1,7 @@
 # 反向链接列表的子列表
 
+> 原文：[https://www.geeksforgeeks.org/reverse-sublist-linked-list/](https://www.geeksforgeeks.org/reverse-sublist-linked-list/)
+
 我们得到了一个链表以及位置 m 和 n。 我们需要将链接列表从位置 m 反向到 n。
 
 例子：

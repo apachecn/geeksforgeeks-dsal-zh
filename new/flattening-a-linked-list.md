@@ -1,5 +1,7 @@
 # 展平链接列表
 
+> 原文：[https://www.geeksforgeeks.org/flattening-a-linked-list/](https://www.geeksforgeeks.org/flattening-a-linked-list/)
+
 给定一个链表，其中每个节点代表一个链表，并包含两个其类型的指针：
 
 （i）指向主列表中下一个节点的指针（在下面的代码中我们称之为“正确”指针）

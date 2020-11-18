@@ -1,5 +1,7 @@
 # 子列表搜索（在另一个列表中搜索链接列表）
 
+> 原文：[https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list/](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list/)
+
 给定两个链接列表，任务是检查第一个列表是否存在于第二个列表中。
 
 **范例**：

@@ -1,5 +1,7 @@
 # 以给定大小的组反向链接列表 | 系列 1
 
+> 原文：[https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)
+
 给定一个链表，编写一个函数以反转每 k 个节点（其中 k 是该函数的输入）。
 
 **示例**：

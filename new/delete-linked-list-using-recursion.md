@@ -1,5 +1,7 @@
 # 使用递归
 
+> 原文：[https://www.geeksforgeeks.org/delete-linked-list-using-recursion/](https://www.geeksforgeeks.org/delete-linked-list-using-recursion/)
+
 删除链接列表
 
 使用递归删除给定的链表

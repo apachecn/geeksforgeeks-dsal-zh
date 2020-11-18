@@ -1,5 +1,7 @@
 # 将链接列表的每个节点替换为右侧的最大元素
 
+> 原文：[https://www.geeksforgeeks.org/replace-every-node-of-a-linked-list-with-the-greatest-element-on-right-side/](https://www.geeksforgeeks.org/replace-every-node-of-a-linked-list-with-the-greatest-element-on-right-side/)
+
 给定[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是为链表的每个节点查找[下一更大元素](https://www.geeksforgeeks.org/next-greater-element-in-same-order-as-input/)。
 
 **注意**：对于没有下一个更大元素的节点，将-1 存储在结果中。

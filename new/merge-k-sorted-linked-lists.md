@@ -1,5 +1,7 @@
 # 合并 K 个排序的链表 | 系列 1
 
+> 原文：[https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/)
+
 给定 K 个大小均为 N 的排序链表，将它们合并并打印排序后的输出。
 
 **示例**：

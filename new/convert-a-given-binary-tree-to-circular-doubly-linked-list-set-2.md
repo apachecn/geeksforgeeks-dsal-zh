@@ -1,5 +1,7 @@
 # 将给定的二叉树转换为循环双链表 | 系列 2
 
+> 原文：[https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-circular-doubly-linked-list-set-2/](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-circular-doubly-linked-list-set-2/)
+
 给定二叉树，将其转换为循环双链表。
 
 *   节点中的左指针和右指针将分别用作转换后的循环链表中的上一个指针和下一个指针。

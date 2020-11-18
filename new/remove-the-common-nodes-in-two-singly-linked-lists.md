@@ -1,5 +1,7 @@
 # 删除两个单链接列表中的公共节点
 
+> 原文：[https://www.geeksforgeeks.org/remove-the-common-nodes-in-two-singly-linked-lists/](https://www.geeksforgeeks.org/remove-the-common-nodes-in-two-singly-linked-lists/)
+
 给定两个[链表](https://www.geeksforgeeks.org/data-structures/linked-list/) **L1** 和 **L2** ，任务是从给定的两个链表中生成一个没有公共元素的新链表。
 
 **示例**：

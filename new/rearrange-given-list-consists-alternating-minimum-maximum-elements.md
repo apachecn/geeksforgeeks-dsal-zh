@@ -1,5 +1,7 @@
 # 重新排列给定列表，使其包含交替的最小最大元素
 
+> 原文：[https://www.geeksforgeeks.org/rearrange-given-list-consists-alternating-minimum-maximum-elements/](https://www.geeksforgeeks.org/rearrange-given-list-consists-alternating-minimum-maximum-elements/)
+
 给定一个整数列表，请重新排列该列表，使其仅使用列表操作由交替的最小最大元素**组成。 在列表中存在的所有元素中，列表的第一个元素应为最小值，第二个元素应为最大值。 同样，第三个元素将是下一个最小元素，第四个元素是下一个最大元素，依此类推。 不允许使用多余的空间。**
 
 例子：

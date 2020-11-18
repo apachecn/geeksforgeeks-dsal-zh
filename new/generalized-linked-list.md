@@ -1,5 +1,7 @@
 # 广义链接列表
 
+> 原文：[https://www.geeksforgeeks.org/generalized-linked-list/](https://www.geeksforgeeks.org/generalized-linked-list/)
+
 广义链表 L 定义为 n> = 0 个元素的有限序列，即[ <sub>1</sub> ，[ <sub>2]</sub> ，[ <sub>3</sub> ，l <sub>4</sub> ，…，l <sub>n</sub> ，使得 l <sub>i</sub> 是原子或原子列表。 因此
 
 **L =（l <sub>1</sub> ，l <sub>2</sub> ，l <sub>3</sub> ，l <sub>4</sub> ，…，l <sub>n</sub> ）**

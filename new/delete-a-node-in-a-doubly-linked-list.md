@@ -1,5 +1,7 @@
 # 删除双链表
 
+> 原文：[https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
+
 中的节点
 
 **先决条件**：[双链表集 1 | 简介和插入](http://quiz.geeksforgeeks.org/doubly-linked-list/)

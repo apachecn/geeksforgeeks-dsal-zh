@@ -1,5 +1,7 @@
 # 以 Zig-Zag 格式重新排列链接列表
 
+> 原文：[https://www.geeksforgeeks.org/linked-list-in-zig-zag-fashion/](https://www.geeksforgeeks.org/linked-list-in-zig-zag-fashion/)
+
 给定一个链表，重新排列它，以便转换后的链表的形式应为< b > c < d > e
 
 **示例**：

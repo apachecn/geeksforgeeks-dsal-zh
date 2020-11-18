@@ -1,5 +1,7 @@
 # 给定链接列表
 
+> 原文：[https://www.geeksforgeeks.org/bitonic-point-in-the-given-linked-list/](https://www.geeksforgeeks.org/bitonic-point-in-the-given-linked-list/)
+
 中的双音点
 
 给定具有不同元素的链表，任务是在给定链表中找到[双音点](https://www.geeksforgeeks.org/find-bitonic-point-given-bitonic-sequence/)。 如果没有该点，则打印 **-1** 。

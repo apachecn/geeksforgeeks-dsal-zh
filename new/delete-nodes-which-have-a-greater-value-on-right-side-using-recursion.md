@@ -1,5 +1,7 @@
 # 使用递归
 
+> 原文：[https://www.geeksforgeeks.org/delete-nodes-which-have-a-greater-value-on-right-side-using-recursion/](https://www.geeksforgeeks.org/delete-nodes-which-have-a-greater-value-on-right-side-using-recursion/)
+
 删除右侧值较大的节点
 
 给定一个单链列表，请删除右侧所有具有较大值的所有节点。

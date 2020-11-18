@@ -1,5 +1,7 @@
 # 从双向链表中删除所有大于给定值的节点
 
+> 原文：[https://www.geeksforgeeks.org/delete-all-the-nodes-from-the-doubly-linked-list-that-are-greater-than-a-given-value/](https://www.geeksforgeeks.org/delete-all-the-nodes-from-the-doubly-linked-list-that-are-greater-than-a-given-value/)
+
 给定一个包含 N 个节点和一个数字 X 的双向链表，任务是从列表中删除所有大于给定值 X 的节点。
 
 **示例**：

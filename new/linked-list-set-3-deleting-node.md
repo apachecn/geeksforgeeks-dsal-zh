@@ -1,5 +1,7 @@
 # 链表| 集合 3（删除节点）
 
+> 原文：[https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)
+
 在单个链接列表的先前帖子中，我们已经讨论了[链接列表简介](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)和[链接列表插入](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)。
 
 让我们制定问题陈述以了解删除过程。 *给定一个“键”，请在链接列表*中删除该键的第一个匹配项。

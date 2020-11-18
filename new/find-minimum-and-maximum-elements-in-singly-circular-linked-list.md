@@ -1,5 +1,7 @@
 # 在单个循环链接列表
 
+> 原文：[https://www.geeksforgeeks.org/find-minimum-and-maximum-elements-in-singly-circular-linked-list/](https://www.geeksforgeeks.org/find-minimum-and-maximum-elements-in-singly-circular-linked-list/)
+
 中查找最小和最大元素
 
 给定![N](img/19e409e13c1238e1f3ff3dbd06cdd45e.png "Rendered by QuickLaTeX.com")节点的单循环链接列表。 任务是在循环链表中找到最小和最大的元素。

@@ -1,5 +1,7 @@
 # 使用链表
 
+> 原文：[https://www.geeksforgeeks.org/multiplication-of-two-polynomials-using-linked-list/](https://www.geeksforgeeks.org/multiplication-of-two-polynomials-using-linked-list/)
+
 的两个多项式相乘
 
 给定两个多项式形式的链表。 任务是找到两个多项式的乘法。

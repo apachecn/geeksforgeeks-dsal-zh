@@ -1,5 +1,7 @@
 # 将给定的数字添加到链接列表中存储的数字中
 
+> 原文：[https://www.geeksforgeeks.org/add-the-given-digit-to-a-number-stored-in-a-linked-list/](https://www.geeksforgeeks.org/add-the-given-digit-to-a-number-stored-in-a-linked-list/)
+
 给定一个表示整数的链表，其中每个节点都是一个数字（如果表示整数）。 任务是将给定的数字 **N** 添加到表示的整数。
 
 **范例**：

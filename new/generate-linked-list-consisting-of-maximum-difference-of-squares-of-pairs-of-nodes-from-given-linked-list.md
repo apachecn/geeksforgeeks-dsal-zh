@@ -1,5 +1,7 @@
 # 生成链接列表，该列表由给定链接列表
 
+> 原文：[https://www.geeksforgeeks.org/generate-linked-list-consisting-of-maximum-difference-of-squares-of-pairs-of-nodes-from-given-linked-list/](https://www.geeksforgeeks.org/generate-linked-list-consisting-of-maximum-difference-of-squares-of-pairs-of-nodes-from-given-linked-list/)
+
 中节点对的平方的最大差值组成
 
 给定节点数为偶数的[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，任务是生成一个新的[链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)，使其包含节点值的平方的最大平方差[。 通过将每个节点包括在一对中来降低顺序。](https://www.geeksforgeeks.org/check-whether-number-can-represented-sum-two-squares/)

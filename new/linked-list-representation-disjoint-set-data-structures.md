@@ -1,5 +1,7 @@
 # 不相交集数据结构的链接列表表示形式
 
+> 原文：[https://www.geeksforgeeks.org/linked-list-representation-disjoint-set-data-structures/](https://www.geeksforgeeks.org/linked-list-representation-disjoint-set-data-structures/)
+
 先决条件：[联合查找（或不交集）](https://www.geeksforgeeks.org/union-find/)和[不交集数据结构（Java 实现）](https://www.geeksforgeeks.org/disjoint-set-data-structures-java-implementation/)
 
 ***脱节集数据结构*** 维护集合 S = {S <sub>1</sub> ，S <sub>2</sub> ....，S <sub>k</sub> }不相交的动态集。 我们通过 ***代表*** 来识别每个集合，这是集合的某个成员。 在某些应用中，使用哪个成员作为代表并不重要。 我们只关心如果我们两次请求动态集的代表而不修改请求之间的集，那么两次我们都会得到相同的答案。 其他应用程序可能需要用于选择代表的预定规则，例如选择集合中的最小成员。

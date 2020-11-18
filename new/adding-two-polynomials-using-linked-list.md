@@ -1,5 +1,7 @@
 # 使用链接列表
 
+> 原文：[https://www.geeksforgeeks.org/adding-two-polynomials-using-linked-list/](https://www.geeksforgeeks.org/adding-two-polynomials-using-linked-list/)
+
 添加两个多项式
 
 给定两个由链表表示的多项式。 编写一个添加这些列表的函数，意味着添加具有相同可变幂的系数。

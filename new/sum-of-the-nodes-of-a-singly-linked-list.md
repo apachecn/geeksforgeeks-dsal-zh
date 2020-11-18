@@ -1,5 +1,7 @@
 # 单链接列表
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-the-nodes-of-a-singly-linked-list/](https://www.geeksforgeeks.org/sum-of-the-nodes-of-a-singly-linked-list/)
+
 的节点总和
 
 给定一个单链表。 任务是找到给定链表的节点总数。

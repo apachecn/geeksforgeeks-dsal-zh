@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/clockwise-rotation-of-linked-list/](https://www.geeksforgeeks.org/clockwise-rotation-of-linked-list/)
+
 的顺时针旋转
 
 给定一个单链接列表和一个整数 **K** ，任务是将链接列表向右顺时针旋转 **K** 位置。

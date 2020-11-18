@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-factorials-of-prime-numbers-in-a-linked-list/](https://www.geeksforgeeks.org/sum-of-factorials-of-prime-numbers-in-a-linked-list/)
+
 中素数阶乘的和
 
 给定 **N** 个整数的[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是找到列表中每个素数元素的阶乘和。

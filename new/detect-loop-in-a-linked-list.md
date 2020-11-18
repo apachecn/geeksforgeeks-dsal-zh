@@ -1,5 +1,7 @@
 # 检测到链表
 
+> 原文：[https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)
+
 中的循环
 
 给定一个链表，检查链表是否有循环。 下图显示了带有循环的链表。

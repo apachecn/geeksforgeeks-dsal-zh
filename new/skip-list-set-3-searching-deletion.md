@@ -1,5 +1,7 @@
 # 跳过列表| 第 3 组（搜索和删除）
 
+> 原文：[https://www.geeksforgeeks.org/skip-list-set-3-searching-deletion/](https://www.geeksforgeeks.org/skip-list-set-3-searching-deletion/)
+
 在上一篇文章[中，跳过列表| 第 2 组（插入）](https://www.geeksforgeeks.org/skip-list-set-2-insertion/)我们讨论了跳过节点的结构以及如何在跳过列表中插入元素。 在本文中，我们将讨论如何在跳过列表中搜索和删除元素。
 
 **在跳过列表**中搜索元素

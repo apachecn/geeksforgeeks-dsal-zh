@@ -1,5 +1,7 @@
 # 将表示为链表的两个数字乘以第三个列表
 
+> 原文：[https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists-third-list/](https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists-third-list/)
+
 给定两个由链表表示的数字，编写一个函数，该函数返回新链表的开头，该头表示这些数字乘积的数字。
 
 示例：

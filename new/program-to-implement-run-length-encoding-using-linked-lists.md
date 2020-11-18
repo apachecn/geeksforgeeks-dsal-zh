@@ -1,5 +1,7 @@
 # 使用链接列表实现行程编码的程序
 
+> 原文：[https://www.geeksforgeeks.org/program-to-implement-run-length-encoding-using-linked-lists/](https://www.geeksforgeeks.org/program-to-implement-run-length-encoding-using-linked-lists/)
+
 给定链接列表作为输入。 任务是使用[游程长度编码](https://www.geeksforgeeks.org/run-length-encoding/)对给定的链表进行编码。 就是说，要用一个字符代替一个连续的字符，然后加上计数。
 
 例如，在游程编码中，“ a-> a-> a-> a-> a”将被替换为“ a-> 5”。

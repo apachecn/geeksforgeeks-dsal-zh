@@ -1,5 +1,7 @@
 # 在链表
 
+> 原文：[https://www.geeksforgeeks.org/find-sum-of-even-and-odd-nodes-in-a-linked-list/](https://www.geeksforgeeks.org/find-sum-of-even-and-odd-nodes-in-a-linked-list/)
+
 中查找偶数和奇数节点的总和
 
 给定一个链表，任务是在其中分别查找偶数和奇数节点的总和。

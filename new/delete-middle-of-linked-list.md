@@ -1,5 +1,7 @@
 # 删除链接列表的中间部分
 
+> 原文：[https://www.geeksforgeeks.org/delete-middle-of-linked-list/](https://www.geeksforgeeks.org/delete-middle-of-linked-list/)
+
 给定一个单链表，请删除链表的中间。 例如，如果给定的链表为 1-> 2-> 3-> 4-> 5，则链表应修改为 1-> 2-> 4-> 5
 
 如果有偶数节点，那么将有两个中间节点，我们需要删除第二个中间元素。 例如，如果给定的链表是 1-> 2-> 3-> 4-> 5-> 6，则应将其修改为 1-> 2-> 3-> 5-> 6。

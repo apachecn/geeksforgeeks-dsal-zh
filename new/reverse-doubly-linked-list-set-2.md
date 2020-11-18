@@ -1,5 +1,7 @@
 # 反转双链表| 第 2 组
 
+> 原文：[https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2/](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2/)
+
 编写一个程序来反转给定的双链表。
 
 例如，请参见下图。

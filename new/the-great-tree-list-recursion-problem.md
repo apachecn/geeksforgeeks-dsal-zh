@@ -1,5 +1,7 @@
 # 大树列表递归问题。
 
+> 原文：[https://www.geeksforgeeks.org/the-great-tree-list-recursion-problem/](https://www.geeksforgeeks.org/the-great-tree-list-recursion-problem/)
+
 由 Varun Bhatia 询问。
 
 **问题**：

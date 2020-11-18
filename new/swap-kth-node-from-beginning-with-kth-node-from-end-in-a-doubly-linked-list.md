@@ -1,5 +1,7 @@
 # 在双向链接列表
 
+> 原文：[https://www.geeksforgeeks.org/swap-kth-node-from-beginning-with-kth-node-from-end-in-a-doubly-linked-list/](https://www.geeksforgeeks.org/swap-kth-node-from-beginning-with-kth-node-from-end-in-a-doubly-linked-list/)
+
 中从第 K 个节点开始从第 K 个节点开始交换。
 
 先决条件：[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)

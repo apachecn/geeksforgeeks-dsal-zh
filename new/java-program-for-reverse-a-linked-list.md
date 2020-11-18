@@ -1,5 +1,7 @@
 # 反向链接列表的 Java 程序
 
+> 原文：[https://www.geeksforgeeks.org/java-program-for-reverse-a-linked-list/](https://www.geeksforgeeks.org/java-program-for-reverse-a-linked-list/)
+
 给定指向链表头节点的指针，任务是反转链表。 我们需要通过更改节点之间的链接来反转列表。
 
 例子：

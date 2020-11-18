@@ -1,5 +1,7 @@
 # 递归方法，从链接列表的末尾查找第 n 个节点
 
+> 原文：[https://www.geeksforgeeks.org/recursive-approach-to-find-nth-node-from-the-end-in-the-linked-list/](https://www.geeksforgeeks.org/recursive-approach-to-find-nth-node-from-the-end-in-the-linked-list/)
+
 使用递归方法从给定链表的末尾找到第 n 个节点。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 从单链接列表中选择一个随机节点
 
+> 原文：[https://www.geeksforgeeks.org/select-a-random-node-from-a-singly-linked-list/](https://www.geeksforgeeks.org/select-a-random-node-from-a-singly-linked-list/)
+
 给定一个单链列表，请从链列表中选择一个随机节点（如果列表中有 N 个节点，则选择一个节点的概率应为 1 / N）。 您将获得一个随机数生成器。
 
 以下是一个简单的解决方案

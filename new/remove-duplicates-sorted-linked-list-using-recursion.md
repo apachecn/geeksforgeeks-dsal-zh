@@ -1,5 +1,7 @@
 # 使用递归
 
+> 原文：[https://www.geeksforgeeks.org/remove-duplicates-sorted-linked-list-using-recursion/](https://www.geeksforgeeks.org/remove-duplicates-sorted-linked-list-using-recursion/)
+
 从排序的链表中删除重复项
 
 编写一个 removeDuplicates（）函数，该函数采用以非降序排序的列表，并从列表中删除所有重复的节点。 该列表仅应遍历一次。

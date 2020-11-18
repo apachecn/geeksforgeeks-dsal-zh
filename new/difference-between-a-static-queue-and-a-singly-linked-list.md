@@ -1,5 +1,7 @@
 # 静态队列和单链接列表
 
+> 原文：[https://www.geeksforgeeks.org/difference-between-a-static-queue-and-a-singly-linked-list/](https://www.geeksforgeeks.org/difference-between-a-static-queue-and-a-singly-linked-list/)
+
 之间的区别
 
 **[静态队列](https://www.geeksforgeeks.org/queue-data-structure/)**：[队列](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)是元素的有序列表。 它始终以先进先出（FIFO）的方式工作。 所有元素都插入在*后*处，并从队列的 *FRONT* 中删除。 在静态队列的实现中，将使用数组，因此队列的所有操作都是基于索引的，这使得除删除之外的所有操作都更快，因为删除需要将所有其余元素向前移动一个位置。

@@ -1,5 +1,7 @@
 # 通过在每个位置选择最大元素，从两个链表创建一个链表
 
+> 原文：[https://www.geeksforgeeks.org/create-a-linked-list-from-two-linked-lists-by-choosing-max-element-at-each-position/](https://www.geeksforgeeks.org/create-a-linked-list-from-two-linked-lists-by-choosing-max-element-at-each-position/)
+
 给定两个大小相等的链表，任务是使用这些链表创建新的链表，其中在每个步骤中，选择两个链表中两个元素的最大值，然后跳过另一个元素。
 
 **示例**：

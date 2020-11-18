@@ -1,5 +1,7 @@
 # 从双向链表中删除所有可被 K 整除的节点
 
+> 原文：[https://www.geeksforgeeks.org/delete-all-nodes-from-the-doubly-linked-list-which-are-divisible-by-k/](https://www.geeksforgeeks.org/delete-all-nodes-from-the-doubly-linked-list-which-are-divisible-by-k/)
+
 给定一个包含 N 个节点的双链表，任务是删除列表中所有可被 K 整除的节点。
 
 **示例**：

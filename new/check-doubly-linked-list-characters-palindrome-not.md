@@ -1,5 +1,7 @@
 # 检查双向链接的字符列表是否是回文
 
+> 原文：[https://www.geeksforgeeks.org/check-doubly-linked-list-characters-palindrome-not/](https://www.geeksforgeeks.org/check-doubly-linked-list-characters-palindrome-not/)
+
 给定字符双链表，编写一个函数，如果给定的双链表是回文，则返回 true，否则返回 false。
 
 [![Palindrom-Doubly-Linked-List](img/e40b6fe0085d04f1ee7224d6baf12667.png)](https://media.geeksforgeeks.org/wp-content/uploads/Palindrom-Doubly-Linked-List1.png)

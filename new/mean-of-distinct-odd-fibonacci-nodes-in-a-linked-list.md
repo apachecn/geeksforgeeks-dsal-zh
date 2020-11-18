@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/mean-of-distinct-odd-fibonacci-nodes-in-a-linked-list/](https://www.geeksforgeeks.org/mean-of-distinct-odd-fibonacci-nodes-in-a-linked-list/)
+
 中不同的奇斐波那契结点的平均值
 
 给定一个包含 **N 个**节点的[单链列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从该列表中找到其数据值为奇数[的所有不同节点的](https://www.geeksforgeeks.org/check-number-fibonacci-number/)[均值](https://www.geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/) 斐波那契数。

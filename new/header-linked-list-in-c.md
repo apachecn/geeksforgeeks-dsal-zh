@@ -1,5 +1,7 @@
 # C 中的
 
+> 原文：[https://www.geeksforgeeks.org/header-linked-list-in-c/](https://www.geeksforgeeks.org/header-linked-list-in-c/)
+
 # 标头链接列表
 
 **必备软件**：[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，[循环链表](https://www.geeksforgeeks.org/circular-linked-list/)

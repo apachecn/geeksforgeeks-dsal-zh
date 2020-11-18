@@ -1,5 +1,7 @@
 # 一种有趣的打印反向链接列表的方法
 
+> 原文：[https://www.geeksforgeeks.org/an-interesting-method-to-print-reverse-of-a-linked-list/](https://www.geeksforgeeks.org/an-interesting-method-to-print-reverse-of-a-linked-list/)
+
 我们得到了一个链表，我们需要以相反的顺序打印链表。
 
 例子：

@@ -1,5 +1,7 @@
 # 在没有额外空间的单链接中查找给定总和的对
 
+> 原文：[https://www.geeksforgeeks.org/find-pair-given-sum-sorted-singly-linked-without-extra-space/](https://www.geeksforgeeks.org/find-pair-given-sum-sorted-singly-linked-without-extra-space/)
+
 给定一个排序的单链列表和一个值 x，任务是找到总和等于 x 的对。 我们不允许使用任何额外的空间，并且预期的时间复杂度为`O(n)`。
 
 例子：

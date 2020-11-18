@@ -1,5 +1,7 @@
 # 从链接列表
 
+> 原文：[https://www.geeksforgeeks.org/remove-nth-node-from-end-of-the-linked-list/](https://www.geeksforgeeks.org/remove-nth-node-from-end-of-the-linked-list/)
+
 的末尾删除第 N 个节点
 
 给定一个链表。 任务是从链接列表的末尾删除第 **N 个**个节点。

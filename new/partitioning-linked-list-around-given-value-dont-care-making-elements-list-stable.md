@@ -1,5 +1,7 @@
 # 将链接列表划分为给定值，如果我们不在乎使列表的元素“稳定”，则
 
+> 原文：[https://www.geeksforgeeks.org/partitioning-linked-list-around-given-value-dont-care-making-elements-list-stable/](https://www.geeksforgeeks.org/partitioning-linked-list-around-given-value-dont-care-making-elements-list-stable/)
+
 给定一个链表和一个值 x，将一个链表划分为一个值 x，这样所有小于 x 的节点都在所有大于或等于 x 的节点之前。 如果 x 包含在列表中，则 x 的值仅需要在小于 x 的元素之后（请参见下文）。 分区元素 x 可以出现在“右分区”中的任何位置； 它不需要出现在左右分区之间。
 
 相似的问题：[将给定值周围的链表分区，并保持原始顺序](https://www.geeksforgeeks.org/partitioning-a-linked-list-around-a-given-value-and-keeping-the-original-order/)

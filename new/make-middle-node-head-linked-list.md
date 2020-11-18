@@ -1,5 +1,7 @@
 # 将中间节点放在链接列表中
 
+> 原文：[https://www.geeksforgeeks.org/make-middle-node-head-linked-list/](https://www.geeksforgeeks.org/make-middle-node-head-linked-list/)
+
 给定一个单链表，找到链表的中间，并在链表的开头设置链表的中间节点。
 
 **示例**：

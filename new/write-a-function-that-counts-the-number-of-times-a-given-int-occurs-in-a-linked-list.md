@@ -1,5 +1,7 @@
 # 编写一个函数，计算一个给定的 int 在链表
 
+> 原文：[https://www.geeksforgeeks.org/write-a-function-that-counts-the-number-of-times-a-given-int-occurs-in-a-linked-list/](https://www.geeksforgeeks.org/write-a-function-that-counts-the-number-of-times-a-given-int-occurs-in-a-linked-list/)
+
 中出现的次数
 
 给定一个单链表和一个键，计算给定键在链表中出现的次数。 例如，如果给定的链表为 1-> 2-> 1-> 2-> 1-> 3-> 1，且给定键为 1，则输出应为 4。

@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/sum-and-product-of-all-the-nodes-which-are-less-than-k-in-the-linked-list/](https://www.geeksforgeeks.org/sum-and-product-of-all-the-nodes-which-are-less-than-k-in-the-linked-list/)
+
 中所有小于 K 的节点的总和和积。
 
 给定一个链表和一个密钥 K。任务是计算总和并从列表中减去小于密钥 K 的所有节点。

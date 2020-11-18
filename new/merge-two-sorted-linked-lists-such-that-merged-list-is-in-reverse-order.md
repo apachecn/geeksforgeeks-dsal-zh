@@ -1,5 +1,7 @@
 # 合并两个排序的链接列表，以使合并列表的顺序相反
 
+> 原文：[https://www.geeksforgeeks.org/merge-two-sorted-linked-lists-such-that-merged-list-is-in-reverse-order/](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists-such-that-merged-list-is-in-reverse-order/)
+
 给定两个链表，以递增顺序排序。 合并它们，使结果列表按降序排列（反向排列）。
 
 例子：

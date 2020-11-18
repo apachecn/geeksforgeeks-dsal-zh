@@ -1,5 +1,7 @@
 # 展开的链接列表| 第 1 组（简介）
 
+> 原文：[https://www.geeksforgeeks.org/unrolled-linked-list-set-1-introduction/](https://www.geeksforgeeks.org/unrolled-linked-list-set-1-introduction/)
+
 与数组和链表一样，展开的链表也是线性数据结构，并且是链表的变体。 与简单的链表不同，它在每个节点上存储多个元素。 也就是说，展开的链表不是在节点上存储单个元素，而是在节点上存储元素数组。 展开的链表涵盖了数组和链表的优点，因为与简单链表相比，它通过在每个节点上存储多个元素来减少内存开销，并且还具有与链表一样快速插入和删除的优点。
 
 ![unrolledlinkedlist](img/270be18553104bfaa436144075e51947.png)

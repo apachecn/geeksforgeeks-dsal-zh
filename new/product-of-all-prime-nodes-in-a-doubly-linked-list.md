@@ -1,5 +1,7 @@
 # 双链表
 
+> 原文：[https://www.geeksforgeeks.org/product-of-all-prime-nodes-in-a-doubly-linked-list/](https://www.geeksforgeeks.org/product-of-all-prime-nodes-in-a-doubly-linked-list/)
+
 中所有主要节点的乘积
 
 给定一个包含 N 个节点的双链表。 任务是找到所有主要节点的乘积。

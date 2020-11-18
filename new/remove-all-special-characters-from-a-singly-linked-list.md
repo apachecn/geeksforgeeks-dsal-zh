@@ -1,5 +1,7 @@
 # 从单个链接列表
 
+> 原文：[https://www.geeksforgeeks.org/remove-all-special-characters-from-a-singly-linked-list/](https://www.geeksforgeeks.org/remove-all-special-characters-from-a-singly-linked-list/)
+
 中删除所有特殊字符
 
 给定一个单链表，其中每个节点代表一个包含特殊字符的字符，任务是从链表中删除所有出现的特殊字符，以便在链表中仅出现有效字符。

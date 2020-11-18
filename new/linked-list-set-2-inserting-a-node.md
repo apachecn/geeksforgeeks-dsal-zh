@@ -1,5 +1,7 @@
 # 链表 | 系列 2（插入节点）
 
+> 原文：[https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)
+
 我们在[先前的文章](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)中介绍了链接列表。 我们还创建了一个具有 3 个节点的简单链表，并讨论了链表遍历。
 
 本文中讨论的所有程序均考虑以下链表的表示形式。

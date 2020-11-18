@@ -1,5 +1,7 @@
 # 从三个链表中查找一个三元组，总和等于给定数字
 
+> 原文：[https://www.geeksforgeeks.org/find-a-triplet-from-three-linked-lists-with-sum-equal-to-a-given-number/](https://www.geeksforgeeks.org/find-a-triplet-from-three-linked-lists-with-sum-equal-to-a-given-number/)
+
 给定三个链接列表（例如，a，b 和 c），从每个列表中找到一个节点，以使节点的值之和等于给定数目。
 
 例如，如果三个链接列表是 12- > 6- > 29、23- > 5- > 8 和 90- > 20- > 59 ，给定数字为 101，输出应为三元组“ 6 5 90”。

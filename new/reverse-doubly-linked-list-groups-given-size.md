@@ -1,5 +1,7 @@
 # 将给定大小的组中的双向链接列表反向
 
+> 原文：[https://www.geeksforgeeks.org/reverse-doubly-linked-list-groups-given-size/](https://www.geeksforgeeks.org/reverse-doubly-linked-list-groups-given-size/)
+
 给定一个包含 **n** 个节点的双向链表。 问题是要反转列表中的每组 **k** 个节点。
 
 范例：

@@ -1,5 +1,7 @@
 # 从包含斐波那契数字
 
+> 原文：[https://www.geeksforgeeks.org/remove-all-nodes-from-a-doubly-linked-list-containing-fibonacci-numbers/](https://www.geeksforgeeks.org/remove-all-nodes-from-a-doubly-linked-list-containing-fibonacci-numbers/)
+
 的双链表中删除所有节点
 
 给定一个包含 **N 个**节点的[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)，任务是从包含[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)的列表中删除所有节点。

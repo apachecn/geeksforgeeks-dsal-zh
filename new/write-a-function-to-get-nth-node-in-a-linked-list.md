@@ -1,5 +1,7 @@
 # 编写函数以获取链表
 
+> 原文：[https://www.geeksforgeeks.org/write-a-function-to-get-nth-node-in-a-linked-list/](https://www.geeksforgeeks.org/write-a-function-to-get-nth-node-in-a-linked-list/)
+
 中的第 N 个节点
 
 编写一个 GetNth（）函数，该函数接受一个链表和一个整数索引，并返回存储在该索引位置的节点中的数据值。

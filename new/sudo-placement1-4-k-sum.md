@@ -1,5 +1,7 @@
 # 须藤放置[1.4] | K 和
 
+> 原文：[https://www.geeksforgeeks.org/sudo-placement1-4-k-sum/](https://www.geeksforgeeks.org/sudo-placement1-4-k-sum/)
+
 给定整数和整数 k 的链表的开头，您的任务是按如下方式修改链表：
 
 *   考虑大小为 k 的组中的节点。 在每个组中，将第一个节点的值替换为组和。

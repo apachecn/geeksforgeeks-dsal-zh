@@ -1,5 +1,7 @@
 # 从链接列表中删除没有头指针的节点
 
+> 原文：[https://www.geeksforgeeks.org/delete-a-node-from-linked-list-without-head-pointer/](https://www.geeksforgeeks.org/delete-a-node-from-linked-list-without-head-pointer/)
+
 您将获得一个单链表和一个指针，该列表和指针指向需要删除的节点。 没有提供有关头指针或任何其他节点的任何信息。 您需要编写一个函数以从链接列表中删除该节点。 您的函数将仅使用一个参数：指向要删除的节点的指针。
 
 示例：

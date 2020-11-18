@@ -1,5 +1,7 @@
 # 在链接列表
 
+> 原文：[https://www.geeksforgeeks.org/find-the-largest-and-second-largest-value-in-a-linked-list/](https://www.geeksforgeeks.org/find-the-largest-and-second-largest-value-in-a-linked-list/)
+
 中找到最大和第二大的值
 
 给定[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，任务是在链表中找到最大和第二大的值。

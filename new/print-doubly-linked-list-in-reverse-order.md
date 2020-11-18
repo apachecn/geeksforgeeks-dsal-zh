@@ -1,5 +1,7 @@
 # 以相反的顺序打印双向链接列表
 
+> 原文：[https://www.geeksforgeeks.org/print-doubly-linked-list-in-reverse-order/](https://www.geeksforgeeks.org/print-doubly-linked-list-in-reverse-order/)
+
 给定正整数的双链表。 任务是按照相反的顺序打印给定的双向链表数据。
 
 **范例**：

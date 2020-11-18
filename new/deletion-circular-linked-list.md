@@ -1,5 +1,7 @@
 # 从循环链表
 
+> 原文：[https://www.geeksforgeeks.org/deletion-circular-linked-list/](https://www.geeksforgeeks.org/deletion-circular-linked-list/)
+
 中删除
 
 我们已经在以下文章中讨论了循环链表和循环链表中的遍历：

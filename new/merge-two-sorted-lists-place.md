@@ -1,5 +1,7 @@
 # 合并两个已排序的列表（就地）
 
+> 原文：[https://www.geeksforgeeks.org/merge-two-sorted-lists-place/](https://www.geeksforgeeks.org/merge-two-sorted-lists-place/)
+
 给定两个排序列表，将它们合并，以生成组合的排序列表（不使用多余的空间）。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 删除链表
 
+> 原文：[https://www.geeksforgeeks.org/delete-n-nodes-after-m-nodes-of-a-linked-list/](https://www.geeksforgeeks.org/delete-n-nodes-after-m-nodes-of-a-linked-list/)
+
 的 M 个节点后的 N 个节点
 
 给定一个链表和两个整数 M 和 N。遍历链表，以便保留 M 个节点，然后删除下 N 个节点，继续相同操作，直到链表结束。

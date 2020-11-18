@@ -1,5 +1,7 @@
 # 在链接列表
 
+> 原文：[https://www.geeksforgeeks.org/find-a-peak-element-in-linked-list/](https://www.geeksforgeeks.org/find-a-peak-element-in-linked-list/)
+
 中查找峰元素
 
 给定一个整数链接列表。 任务是在其中找到一个峰值元素。 如果列表中的一个元素不小于其相邻元素，则称该元素为**峰**。 对于拐角元素，我们只需要考虑一个邻居。 例如：

@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-palindrome-numbers-present-in-a-linked-list/](https://www.geeksforgeeks.org/sum-of-all-palindrome-numbers-present-in-a-linked-list/)
+
 中存在的所有回文数的总和
 
 给定一个带有整数节点值的链表，任务是找到所有作为节点值出现的 [**回文数**](https://www.geeksforgeeks.org/check-if-a-number-is-palindrome/) 之和。

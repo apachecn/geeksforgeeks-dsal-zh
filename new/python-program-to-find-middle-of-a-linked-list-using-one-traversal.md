@@ -1,5 +1,7 @@
 # Python 程序使用一次遍历来查找链接列表的中间
 
+> 原文：[https://www.geeksforgeeks.org/python-program-to-find-middle-of-a-linked-list-using-one-traversal/](https://www.geeksforgeeks.org/python-program-to-find-middle-of-a-linked-list-using-one-traversal/)
+
 给定一个单链表，找到链表的中间。 给定一个单链表，找到链表的中间。 例如，如果给定的链表为 1-> 2-> 3-> 4-> 5，则输出应为 3。
 
 **方法 1**：

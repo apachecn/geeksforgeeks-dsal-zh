@@ -1,5 +1,7 @@
 # 程序展开折叠的链表
 
+> 原文：[https://www.geeksforgeeks.org/program-to-unfold-a-folded-linked-list/](https://www.geeksforgeeks.org/program-to-unfold-a-folded-linked-list/)
+
 链表 **L <sub>0</sub> -> L <sub>1</sub> -> L <sub>2</sub> ->…..-> L <sub>N</sub>** 可以折叠为 **L <sub>0</sub> -> L <sub>N</sub> -> L <sub>1</sub> - > L <sub>N – 1</sub> -> L <sub>2</sub> ->…..**
 
 给定一个折叠链表，任务是展开并 打印原始链表

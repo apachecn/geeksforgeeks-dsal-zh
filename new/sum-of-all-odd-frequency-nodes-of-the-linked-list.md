@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-odd-frequency-nodes-of-the-linked-list/](https://www.geeksforgeeks.org/sum-of-all-odd-frequency-nodes-of-the-linked-list/)
+
 中所有奇数频率节点的总和
 
 给定一个链表，任务是从给定的链表中找到所有奇数频率节点的总和。

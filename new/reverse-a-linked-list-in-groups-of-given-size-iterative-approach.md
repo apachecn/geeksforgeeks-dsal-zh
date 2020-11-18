@@ -1,5 +1,7 @@
 # 以给定大小的组反向链接列表（迭代方法）
 
+> 原文：[https://www.geeksforgeeks.org/reverse-a-linked-list-in-groups-of-given-size-iterative-approach/](https://www.geeksforgeeks.org/reverse-a-linked-list-in-groups-of-given-size-iterative-approach/)
+
 给定一个链表和一个整数 **K** ，任务是反转给定链表的每个 **K** 个节点。
 
 **示例**：

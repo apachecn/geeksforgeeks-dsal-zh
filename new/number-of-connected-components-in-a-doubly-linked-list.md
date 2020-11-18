@@ -1,5 +1,7 @@
 # 双链表
 
+> 原文：[https://www.geeksforgeeks.org/number-of-connected-components-in-a-doubly-linked-list/](https://www.geeksforgeeks.org/number-of-connected-components-in-a-doubly-linked-list/)
+
 中已连接组件的数量
 
 给定一个双向链接列表“ L”和一个指向双向链接列表“ L”的节点的引用数组“ refArr”。 数组'refArr'**不包含任何重复的引用**，并且这些引用不是 **ORDERED** 。

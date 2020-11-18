@@ -1,5 +1,7 @@
 # 交替合并链接列表的前半部分和后半部分
 
+> 原文：[https://www.geeksforgeeks.org/merge-first-half-and-reversed-second-half-of-the-linked-list-alternatively/](https://www.geeksforgeeks.org/merge-first-half-and-reversed-second-half-of-the-linked-list-alternatively/)
+
 给定一个链表，任务是按照以下方式重新排列链表：
 
 1.  反转给定链表的后半部分。

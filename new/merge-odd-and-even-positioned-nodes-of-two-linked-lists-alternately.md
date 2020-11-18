@@ -1,5 +1,7 @@
 # 交替合并两个链接列表的奇数和偶数节点
 
+> 原文：[https://www.geeksforgeeks.org/merge-odd-and-even-positioned-nodes-of-two-linked-lists-alternately/](https://www.geeksforgeeks.org/merge-odd-and-even-positioned-nodes-of-two-linked-lists-alternately/)
+
 给定两个[链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/) **L1** 和 **L2** ，任务是打印通过合并**的*奇数位置节点*而获得的新列表。 L1** 与*均匀放置在 **L2** 的节点*上。
 
 **示例**：

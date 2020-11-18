@@ -1,5 +1,7 @@
 # 重新排列链接列表以替换第一个和最后一个元素
 
+> 原文：[https://www.geeksforgeeks.org/rearrange-linked-list-alternate-first-last-element/](https://www.geeksforgeeks.org/rearrange-linked-list-alternate-first-last-element/)
+
 给定一个链表。 以交替的第一个和最后一个元素的方式排列链接列表。
 
 例子：

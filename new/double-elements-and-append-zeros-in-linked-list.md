@@ -1,5 +1,7 @@
 # 双元素并将零添加到链表
 
+> 原文：[https://www.geeksforgeeks.org/double-elements-and-append-zeros-in-linked-list/](https://www.geeksforgeeks.org/double-elements-and-append-zeros-in-linked-list/)
+
 给定一个链表，在零之前有两个相邻的重复节点，任务是将第一个加倍，然后使下一个 0。此后，将所有零附加到尾部。
 
 **先决条件**：[单链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/#singlyLinkedList)的实现基础

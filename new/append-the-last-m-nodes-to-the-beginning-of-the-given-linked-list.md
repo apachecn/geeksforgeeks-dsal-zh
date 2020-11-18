@@ -1,5 +1,7 @@
 # 将最后 M 个节点追加到给定链表
 
+> 原文：[https://www.geeksforgeeks.org/append-the-last-m-nodes-to-the-beginning-of-the-given-linked-list/](https://www.geeksforgeeks.org/append-the-last-m-nodes-to-the-beginning-of-the-given-linked-list/)
+
 的开头
 
 给定一个链表和一个整数 **M** ，任务是将链表的最后 **M** 个节点附加到最前面。

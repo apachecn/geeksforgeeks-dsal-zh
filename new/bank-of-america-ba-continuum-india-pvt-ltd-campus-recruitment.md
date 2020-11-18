@@ -1,5 +1,7 @@
 # 美国银行（BA Continuum India Pvt。Ltd.）校园招聘
 
+> 原文：[https://www.geeksforgeeks.org/bank-of-america-ba-continuum-india-pvt-ltd-campus-recruitment/](https://www.geeksforgeeks.org/bank-of-america-ba-continuum-india-pvt-ltd-campus-recruitment/)
+
 批准的报价。
 
 美国银行参观了我们学院进行校园招聘。 招募总共包括 4 轮。

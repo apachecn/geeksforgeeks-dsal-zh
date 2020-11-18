@@ -1,5 +1,7 @@
 # 给定单链表的交替拆分 | 系列 1
 
+> 原文：[https://www.geeksforgeeks.org/alternating-split-of-a-given-singly-linked-list/](https://www.geeksforgeeks.org/alternating-split-of-a-given-singly-linked-list/)
+
 编写一个函数 AlternatingSplit（），该函数接受一个列表并将其节点划分为两个较小的列表“ a”和“ b”。 子列表应由原始列表中的交替元素组成。 因此，如果原始列表为 0-> 1-> 0-> 1-> 0-> 1，则一个子列表应为 0-> 0-> 0，另一个子列表应为 1-> 1-> 1。
 
 **方法 1（简单）**

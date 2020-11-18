@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/product-of-the-alternate-nodes-of-linked-list/](https://www.geeksforgeeks.org/product-of-the-alternate-nodes-of-linked-list/)
+
 的备用节点的产品
 
 给定一个链表，任务是打印给定链表的备用节点的乘积。

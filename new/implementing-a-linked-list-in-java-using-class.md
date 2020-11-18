@@ -1,5 +1,7 @@
 # 使用类
 
+> 原文：[https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/](https://www.geeksforgeeks.org/implementing-a-linked-list-in-java-using-class/)
+
 在 Java 中实现链接列表
 
 **先决条件**：[链表数据结构](https://www.geeksforgeeks.org/data-structures/linked-list/)

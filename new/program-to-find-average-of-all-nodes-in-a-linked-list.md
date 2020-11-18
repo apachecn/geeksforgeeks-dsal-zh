@@ -1,5 +1,7 @@
 # 程序，用于查找链接列表
 
+> 原文：[https://www.geeksforgeeks.org/program-to-find-average-of-all-nodes-in-a-linked-list/](https://www.geeksforgeeks.org/program-to-find-average-of-all-nodes-in-a-linked-list/)
+
 中所有节点的平均值
 
 给定一个单链表。 任务是找到给定[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/)的所有节点的平均值。

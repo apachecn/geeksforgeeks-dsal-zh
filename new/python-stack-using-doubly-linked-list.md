@@ -1,5 +1,7 @@
 # Python | 使用双链表
 
+> 原文：[https://www.geeksforgeeks.org/python-stack-using-doubly-linked-list/](https://www.geeksforgeeks.org/python-stack-using-doubly-linked-list/)
+
 进行堆栈
 
 堆栈是使用后进先出原理（LIFO）插入和删除的对象的集合。 用户可以将元素插入堆栈，并且只能访问或删除堆栈顶部最近插入的对象。 在数组上使用 LinkedList 来实现堆栈的主要优点是**动态分配数据**，而在数组中，堆栈的大小受到限制，并且当堆栈的大小出现堆栈溢出错误的机会 超出最大大小。

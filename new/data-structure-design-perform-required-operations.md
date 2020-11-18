@@ -1,5 +1,7 @@
 # 执行所需操作的数据结构设计
 
+> 原文：[https://www.geeksforgeeks.org/data-structure-design-perform-required-operations/](https://www.geeksforgeeks.org/data-structure-design-perform-required-operations/)
+
 设计可以执行以下操作的数据结构
 
 1. `O(n)`中的 add（）

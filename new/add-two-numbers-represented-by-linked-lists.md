@@ -1,5 +1,7 @@
 # 添加两个由链表表示的数字 | 系列 1
 
+> 原文：[https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/](https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/)
+
 给定两个列表代表的两个数字，编写一个返回和列表的函数。 总和列表是两个输入数字相加的列表表示形式。
 
 **范例**：

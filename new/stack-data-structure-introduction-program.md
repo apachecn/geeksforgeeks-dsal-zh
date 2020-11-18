@@ -1,5 +1,7 @@
 # 堆栈数据结构（简介和程序）
 
+> 原文：[https://www.geeksforgeeks.org/stack-data-structure-introduction-program/](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
+
 堆栈是一种线性数据结构，遵循特定的操作顺序。 该订单可以是 LIFO（后进先出）或 FILO（后进先出）。
 
 主要在堆栈中执行以下三个基本操作：

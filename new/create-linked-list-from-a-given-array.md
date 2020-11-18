@@ -1,5 +1,7 @@
 # 从给定数组
 
+> 原文：[https://www.geeksforgeeks.org/create-linked-list-from-a-given-array/](https://www.geeksforgeeks.org/create-linked-list-from-a-given-array/)
+
 创建链接列表
 
 给定大小为 **N** 的数组 **arr []** 。 任务是从给定数组创建链接列表。

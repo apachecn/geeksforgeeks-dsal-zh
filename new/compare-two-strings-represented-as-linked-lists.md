@@ -1,5 +1,7 @@
 # 比较表示为链接列表的两个字符串
 
+> 原文：[https://www.geeksforgeeks.org/compare-two-strings-represented-as-linked-lists/](https://www.geeksforgeeks.org/compare-two-strings-represented-as-linked-lists/)
+
 给定两个字符串，表示为链接列表（每个字符都是链接列表中的一个节点）。 编写一个类似于 strcmp（）的函数 compare（），即，如果两个字符串相同，则返回 0；如果第一个链表的字典顺序较大，则返回 1；如果第二个字符串的字典顺序较大，则返回-1。
 
 **示例**：

@@ -1,5 +1,7 @@
 # Cantor 集
 
+> 原文：[https://www.geeksforgeeks.org/ternary-representation-of-cantor-set/](https://www.geeksforgeeks.org/ternary-representation-of-cantor-set/)
+
 的三进制表示
 
 给定三个整数 **A** ， **B** 和 **L** ，任务是打印范围从 **[A，B]** 到 **L** 水平。

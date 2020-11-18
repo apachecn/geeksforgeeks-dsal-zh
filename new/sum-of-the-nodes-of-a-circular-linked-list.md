@@ -1,5 +1,7 @@
 # 循环链表
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-the-nodes-of-a-circular-linked-list/](https://www.geeksforgeeks.org/sum-of-the-nodes-of-a-circular-linked-list/)
+
 的节点总和
 
 给定一个[循环链表](https://www.geeksforgeeks.org/circular-linked-list/)。 任务是找到给定链表的节点总数。

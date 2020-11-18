@@ -1,5 +1,7 @@
 # 合并 JavaScript
 
+> 原文：[https://www.geeksforgeeks.org/merge-sort-linked-lists-javascript/](https://www.geeksforgeeks.org/merge-sort-linked-lists-javascript/)
+
 中链表的排序
 
 先决条件：[合并链接列表的排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)

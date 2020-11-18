@@ -1,5 +1,7 @@
 # 在单链表
 
+> 原文：[https://www.geeksforgeeks.org/probability-of-finding-an-element-k-in-a-singly-linked-list/](https://www.geeksforgeeks.org/probability-of-finding-an-element-k-in-a-singly-linked-list/)
+
 中找到元素 K 的可能性
 
 给定一个大小为 **N** 的单链接列表和另一个键 **K** ，我们必须找到单链接列表中存在键 **K** 的可能性。

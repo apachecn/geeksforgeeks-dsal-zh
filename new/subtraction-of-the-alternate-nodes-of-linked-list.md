@@ -1,5 +1,7 @@
 # 减去链表
 
+> 原文：[https://www.geeksforgeeks.org/subtraction-of-the-alternate-nodes-of-linked-list/](https://www.geeksforgeeks.org/subtraction-of-the-alternate-nodes-of-linked-list/)
+
 的备用节点
 
 给定一个链表。 任务是打印第一个奇数位置的节点与所有其他奇数位置的节点之和之间的差。

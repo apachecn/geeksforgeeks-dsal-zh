@@ -1,5 +1,7 @@
 # 在单链列表中仅给定要删除节点的指针/引用，如何删除它？
 
+> 原文：[https://www.geeksforgeeks.org/given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/](https://www.geeksforgeeks.org/given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/)
+
 给定要删除的节点的指针，请删除该节点。 请注意，我们没有指向头节点的指针。
 
 **简单解决方案**是遍历链接列表，直到找到要删除的节点。 但是，此解决方案需要指向与问题陈述相矛盾的头节点的指针。

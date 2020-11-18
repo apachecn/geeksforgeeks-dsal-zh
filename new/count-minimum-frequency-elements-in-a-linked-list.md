@@ -1,5 +1,7 @@
 # 计算链接列表中的最小频率元素
 
+> 原文：[https://www.geeksforgeeks.org/count-minimum-frequency-elements-in-a-linked-list/](https://www.geeksforgeeks.org/count-minimum-frequency-elements-in-a-linked-list/)
+
 给定一个包含重复元素的链表。 任务是在给定的链表中查找所有最少出现的元素的数量。 这是矩阵中频率最小的所有此类元素的计数。
 
 **范例**：

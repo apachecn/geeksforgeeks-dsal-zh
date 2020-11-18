@@ -1,5 +1,7 @@
 # 链表| 第 1 组（简介）
 
+> 原文：[https://www.geeksforgeeks.org/linked-list-set-1-introduction/](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
+
 像数组一样，链表是线性数据结构。 与数组不同，链接列表元素不存储在连续位置； 元素使用指针链接。
 
 [![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)

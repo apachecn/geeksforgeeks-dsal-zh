@@ -1,5 +1,7 @@
 # 可被 K 整除的循环单链接列表的节点的总和和
 
+> 原文：[https://www.geeksforgeeks.org/sum-and-product-of-the-nodes-of-a-circular-singly-linked-list-which-are-divisible-by-k/](https://www.geeksforgeeks.org/sum-and-product-of-the-nodes-of-a-circular-singly-linked-list-which-are-divisible-by-k/)
+
 给定一个单循环链表。 任务是找到可被给定链表的 K 整除的节点的总和和乘积。
 
 **范例**：

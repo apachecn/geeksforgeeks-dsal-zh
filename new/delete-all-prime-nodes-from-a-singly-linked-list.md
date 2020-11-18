@@ -1,5 +1,7 @@
 # 从单个链接列表中删除所有主要节点
 
+> 原文：[https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-singly-linked-list/](https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-singly-linked-list/)
+
 给定一个包含 N 个节点的单链接列表，任务是从列表中删除所有素数的节点。
 
 **示例**：

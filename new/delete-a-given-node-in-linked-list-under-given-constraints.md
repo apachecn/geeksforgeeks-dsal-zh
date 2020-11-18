@@ -1,5 +1,7 @@
 # 在给定约束下删除链接列表中的给定节点
 
+> 原文：[https://www.geeksforgeeks.org/delete-a-given-node-in-linked-list-under-given-constraints/](https://www.geeksforgeeks.org/delete-a-given-node-in-linked-list-under-given-constraints/)
+
 给定一个单链列表，编写一个删除给定节点的函数。 您的函数必须遵循以下约束：
 
 1）它必须接受指向起始节点的指针作为第一个参数，并接受要删除的节点作为第二个参数，即，指向头节点的指针不是全局的。

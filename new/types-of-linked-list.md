@@ -1,5 +1,7 @@
 # 链接列表的类型
 
+> 原文：[https://www.geeksforgeeks.org/types-of-linked-list/](https://www.geeksforgeeks.org/types-of-linked-list/)
+
 [链表](http://www.geeksforgeeks.org/data-structures/linked-list/)是线性数据结构，其中元素不存储在连续的存储位置中。 链接列表中的元素使用[指针](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)链接。 简而言之，链接列表由节点组成，其中每个节点都包含一个数据字段和到列表中下一个节点的引用（链接）。
 
 ### <u>链接列表的类型</u>

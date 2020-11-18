@@ -1,5 +1,7 @@
 # 给定线段的链接列表，请删除中间点
 
+> 原文：[https://www.geeksforgeeks.org/given-linked-list-line-segments-remove-middle-points/](https://www.geeksforgeeks.org/given-linked-list-line-segments-remove-middle-points/)
+
 给定一个坐标的链表，其中相邻点形成垂直线或水平线。 从链接列表中删除水平或垂直线中间的点。
 
 例子：

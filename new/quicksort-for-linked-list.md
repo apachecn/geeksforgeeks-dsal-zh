@@ -1,5 +1,7 @@
 # 双链接列表
 
+> 原文：[https://www.geeksforgeeks.org/quicksort-for-linked-list/](https://www.geeksforgeeks.org/quicksort-for-linked-list/)
+
 上的快速排序
 
 以下是数组的 [QuickSort](http://en.wikipedia.org/wiki/Quicksort) 的典型递归实现。 该实现使用 last 元素作为枢轴。

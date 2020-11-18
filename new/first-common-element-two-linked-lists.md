@@ -1,5 +1,7 @@
 # 两个链接列表中的第一个公共元素
 
+> 原文：[https://www.geeksforgeeks.org/first-common-element-two-linked-lists/](https://www.geeksforgeeks.org/first-common-element-two-linked-lists/)
+
 给定两个链表，找到给定链表之间的第一个公共元素，即我们需要找到第一个链表的第一个节点，该节点也存在于第二个链表中。
 
 **范例**：

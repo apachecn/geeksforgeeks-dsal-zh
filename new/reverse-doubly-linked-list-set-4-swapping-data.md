@@ -1,5 +1,7 @@
 # 反转双链表 | 系列 4（交换数据）
 
+> 原文：[https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-4-swapping-data/](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-4-swapping-data/)
+
 给定一个双向链接列表，我们被要求在不使用任何额外空间的情况下就地反转该列表。
 
 **示例**：

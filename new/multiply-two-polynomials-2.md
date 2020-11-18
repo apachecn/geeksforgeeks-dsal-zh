@@ -1,5 +1,7 @@
 # 乘以两个多项式
 
+> 原文：[https://www.geeksforgeeks.org/multiply-two-polynomials-2/](https://www.geeksforgeeks.org/multiply-two-polynomials-2/)
+
 给定两个由两个数组表示的多项式，编写一个将给定两个多项式相乘的函数。
 
 **示例**：

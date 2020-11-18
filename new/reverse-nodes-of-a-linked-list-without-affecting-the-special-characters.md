@@ -1,5 +1,7 @@
 # 链表的反向节点而不影响特殊字符
 
+> 原文：[https://www.geeksforgeeks.org/reverse-nodes-of-a-linked-list-without-affecting-the-special-characters/](https://www.geeksforgeeks.org/reverse-nodes-of-a-linked-list-without-affecting-the-special-characters/)
+
 给定一个字母和特殊字符的链接列表。 反转给定的链表，而不会影响特殊字符的位置。
 
 **示例**：

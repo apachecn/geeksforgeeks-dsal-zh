@@ -1,5 +1,7 @@
 # 反转堆栈，而无需在`O(n)`中使用多余的空间
 
+> 原文：[https://www.geeksforgeeks.org/reverse-stack-without-using-extra-space/](https://www.geeksforgeeks.org/reverse-stack-without-using-extra-space/)
+
 在不使用递归和多余空间的情况下反转[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)。 甚至连功能堆栈都不允许。
 
 **示例**：

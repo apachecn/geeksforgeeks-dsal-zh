@@ -1,5 +1,7 @@
 # 查找给定链接列表
 
+> 原文：[https://www.geeksforgeeks.org/find-sum-last-n-nodes-given-linked-list/](https://www.geeksforgeeks.org/find-sum-last-n-nodes-given-linked-list/)
+
 的后 n 个节点的总和
 
 给定一个链表和一个数字 **n** 。 找到链表的最后 **n** 个节点的总和。

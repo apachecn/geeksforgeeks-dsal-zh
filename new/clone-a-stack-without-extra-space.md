@@ -1,5 +1,7 @@
 # 克隆堆栈而没有多余的空间
 
+> 原文：[https://www.geeksforgeeks.org/clone-a-stack-without-extra-space/](https://www.geeksforgeeks.org/clone-a-stack-without-extra-space/)
+
 在给定源堆栈的情况下，将源堆栈的内容复制到目标堆栈，并保持相同的顺序，而无需使用额外的空间。
 
 **示例**：

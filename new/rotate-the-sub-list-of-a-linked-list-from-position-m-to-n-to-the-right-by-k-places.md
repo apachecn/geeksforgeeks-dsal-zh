@@ -1,5 +1,7 @@
 # 将链接列表的子列表从位置 M 向右旋转 K 个位置
 
+> 原文：[https://www.geeksforgeeks.org/rotate-the-sub-list-of-a-linked-list-from-position-m-to-n-to-the-right-by-k-places/](https://www.geeksforgeeks.org/rotate-the-sub-list-of-a-linked-list-from-position-m-to-n-to-the-right-by-k-places/)
+
 给定一个链表和两个位置“ m”和“ n”。 任务是将子列表从位置 m 旋转到 n，向右旋转 k 个位置。
 
 **示例**：

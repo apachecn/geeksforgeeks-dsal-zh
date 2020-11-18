@@ -1,5 +1,7 @@
 # 合并链接列表的排序
 
+> 原文：[https://www.geeksforgeeks.org/merge-sort-for-linked-list/](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
+
 [合并排序](http://en.wikipedia.org/wiki/Merge_sort)通常是对链表进行排序的首选。 链表的随机访问性能较慢，使得其他一些算法（例如 quicksort）的性能较差，而其他算法（例如堆排序）则完全不可能。
 
 ![sorting image](img/cc3d3ac699ac03f5792746b3e3e54865.png)

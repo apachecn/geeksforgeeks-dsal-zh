@@ -1,5 +1,7 @@
 # 在链表
 
+> 原文：[https://www.geeksforgeeks.org/find-first-node-of-loop-in-a-linked-list/](https://www.geeksforgeeks.org/find-first-node-of-loop-in-a-linked-list/)
+
 中查找循环的第一个节点
 
 编写一个函数 *findFirstLoopNode（）*，该函数检查给定的链表是否包含循环。 如果存在循环，则它将点返回到循环的第一个节点。 否则返回 NULL。

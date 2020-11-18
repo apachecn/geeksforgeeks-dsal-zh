@@ -1,5 +1,7 @@
 # 交换链表中的节点而不交换数据
 
+> 原文：[https://www.geeksforgeeks.org/swap-nodes-in-a-linked-list-without-swapping-data/](https://www.geeksforgeeks.org/swap-nodes-in-a-linked-list-without-swapping-data/)
+
 给定一个链表和其中的两个键，将节点交换为两个给定的键。 应通过更改链接来交换节点。 当数据包含许多字段时，在许多情况下交换节点的数据可能会很昂贵。
 
 可以假定链接列表中的所有键都是不同的。

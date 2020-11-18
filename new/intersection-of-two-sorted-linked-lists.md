@@ -1,5 +1,7 @@
 # 两个排序链表的交叉
 
+> 原文：[https://www.geeksforgeeks.org/intersection-of-two-sorted-linked-lists/](https://www.geeksforgeeks.org/intersection-of-two-sorted-linked-lists/)
+
 给定两个按递增顺序排序的列表，请创建并返回一个新列表，该列表表示两个列表的交集。 新列表应使用自己的内存制作-原始列表不应更改。
 
 **例如**：

@@ -1,5 +1,7 @@
 # 如何编写可修改链表头指针的 C 函数？
 
+> 原文：[https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)
+
 考虑链表的简单表示（没有任何虚拟节点）。 在此类链接列表上运行的功能可以分为两类：
 
 **1）不修改头指针的功能**：此类功能的示例包括：打印链接列表，更新节点的数据成员（如将给定值添加到所有节点）或其他一些访问/更新操作 节点数据

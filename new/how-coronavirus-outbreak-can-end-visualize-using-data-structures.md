@@ -1,5 +1,7 @@
 # 冠状病毒爆发如何结束？ 使用数据结构进行可视化
 
+> 原文：[https://www.geeksforgeeks.org/how-coronavirus-outbreak-can-end-visualize-using-data-structures/](https://www.geeksforgeeks.org/how-coronavirus-outbreak-can-end-visualize-using-data-structures/)
+
 每个计算机科学的初学者都曾经想过为什么我们要在图中找到[最短路径，或者](https://www.geeksforgeeks.org/shortest-path-unweighted-graph/)[树](https://www.geeksforgeeks.org/binary-tree-data-structure/)的用途是什么，我们是否要使用圆环链接来玩 [josephus 圆 清单](https://www.geeksforgeeks.org/josephus-circle-using-circular-linked-list/)？
 
 因此，本文参考 [COVID-19](https://www.who.int/health-topics/coronavirus#tab=tab_1) 来讨论[数据结构和算法](https://www.geeksforgeeks.org/data-structures/)在现实世界中的重要性。

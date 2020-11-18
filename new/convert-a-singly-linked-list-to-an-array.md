@@ -1,5 +1,7 @@
 # 将单链接列表转换为数组
 
+> 原文：[https://www.geeksforgeeks.org/convert-a-singly-linked-list-to-an-array/](https://www.geeksforgeeks.org/convert-a-singly-linked-list-to-an-array/)
+
 给定一个单链表，任务是将其转换为数组。
 
 **示例**：

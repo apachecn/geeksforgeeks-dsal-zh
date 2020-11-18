@@ -1,5 +1,7 @@
 # 在双向链表
 
+> 原文：[https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)
+
 中查找具有给定总和的对
 
 给定一个排序的正相异元素的双链表，任务是在双链表中查找对，它们的总和等于给定值 x，而不使用任何多余的空间？

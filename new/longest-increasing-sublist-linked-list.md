@@ -1,5 +1,7 @@
 # 链表中最长的子列表
 
+> 原文：[https://www.geeksforgeeks.org/longest-increasing-sublist-linked-list/](https://www.geeksforgeeks.org/longest-increasing-sublist-linked-list/)
+
 给定一个单链表，我们要计算不断增加的元素并打印出不断增加的链表。
 
 **示例**：

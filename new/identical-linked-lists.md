@@ -1,5 +1,7 @@
 # 相同的链接列表
 
+> 原文：[https://www.geeksforgeeks.org/identical-linked-lists/](https://www.geeksforgeeks.org/identical-linked-lists/)
+
 当两个链表具有相同的数据并且数据的排列也相同时，它们是相同的。 例如，链接列表 a（1-> 2-> 3）和 b（1-> 2-> 3）相同。 。 编写一个函数来检查给定的两个链表是否相同。
 
 **方法 1（迭代）**

@@ -1,5 +1,7 @@
 # Coviam 软件开发人员实习经验
 
+> 原文：[https://www.geeksforgeeks.org/coviam-software-developer-internship-experience/](https://www.geeksforgeeks.org/coviam-software-developer-internship-experience/)
+
 通过员工推荐申请
 
 **第 1 轮：向我发送了 40 个多项选择题的链接，其中有 20 个才能问题，其余 20 个问题来自 Java 基础知识，糟糕，预期输出，基本数据结构问题。**

@@ -1,5 +1,7 @@
 # 将双向链表顺时针旋转 N 个位置
 
+> 原文：[https://www.geeksforgeeks.org/clockwise-rotation-of-doubly-linked-list-by-n-places/](https://www.geeksforgeeks.org/clockwise-rotation-of-doubly-linked-list-by-n-places/)
+
 给定双链表和整数 **N** ，任务是将链表顺时针旋转 **N** 个节点。
 
 **示例**：

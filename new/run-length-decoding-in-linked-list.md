@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/run-length-decoding-in-linked-list/](https://www.geeksforgeeks.org/run-length-decoding-in-linked-list/)
+
 中的游程长度解码
 
 给定已编码的链表，该链表使用[游程长度编码](https://www.geeksforgeeks.org/run-length-encoding/)算法进行了编码。 任务是解码给定的链表并生成输入字符串。

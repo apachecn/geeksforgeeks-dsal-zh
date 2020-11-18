@@ -1,5 +1,7 @@
 # 可被 K 整除的单个链接列表的节点的总和和
 
+> 原文：[https://www.geeksforgeeks.org/sum-and-product-of-the-nodes-of-a-singly-linked-list-which-are-divisible-by-k/](https://www.geeksforgeeks.org/sum-and-product-of-the-nodes-of-a-singly-linked-list-which-are-divisible-by-k/)
+
 给定一个单链表。 任务是找到给定链表的所有节点的和和乘积，这些节点可被给定数 k 整除。
 
 **范例**：

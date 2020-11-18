@@ -1,5 +1,7 @@
 # 将单链接列表转换为 XOR 链接列表
 
+> 原文：[https://www.geeksforgeeks.org/convert-singly-linked-list-to-xor-linked-list/](https://www.geeksforgeeks.org/convert-singly-linked-list-to-xor-linked-list/)
+
 **前提条件**：
 
 *   [XOR 链表–内存有效的双链表 | 系列 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)

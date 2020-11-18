@@ -1,5 +1,7 @@
 # 反转表示为链表
 
+> 原文：[https://www.geeksforgeeks.org/reverse-all-the-word-in-a-string-represented-as-a-linked-list/](https://www.geeksforgeeks.org/reverse-all-the-word-in-a-string-represented-as-a-linked-list/)
+
 的字符串中的所有单词
 
 给定一个表示句子 S 的链表，使得每个节点代表一个字母，任务是在不反转单个单词的情况下反转该句子。

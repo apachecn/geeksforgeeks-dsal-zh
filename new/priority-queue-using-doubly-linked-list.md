@@ -1,5 +1,7 @@
 # 使用双向链表
 
+> 原文：[https://www.geeksforgeeks.org/priority-queue-using-doubly-linked-list/](https://www.geeksforgeeks.org/priority-queue-using-doubly-linked-list/)
+
 的优先级队列
 
 给定具有优先级的节点，请使用双向链表实现优先级队列。

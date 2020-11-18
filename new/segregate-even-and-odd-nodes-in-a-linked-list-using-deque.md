@@ -1,5 +1,7 @@
 # 使用双端队列
 
+> 原文：[https://www.geeksforgeeks.org/segregate-even-and-odd-nodes-in-a-linked-list-using-deque/](https://www.geeksforgeeks.org/segregate-even-and-odd-nodes-in-a-linked-list-using-deque/)
+
 隔离链接列表中的偶数和奇数节点
 
 给定一个整数链接列表。 任务是编写一个程序来修改链表，以使所有偶数出现在修改后的链表中的所有奇数之前。 不需要保持偶数和奇数节点的顺序与原始列表的顺序相同，任务只是重新排列节点，以使所有偶数节点出现在奇数节点之前。

@@ -1,5 +1,7 @@
 # 给定一个已排序的链表，您将如何以已排序的方式插入
 
+> 原文：[https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/](https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/)
+
 给定排序的链表和要插入的值，编写一个函数以排序的方式插入值。
 
 初始链接列表

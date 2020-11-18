@@ -1,5 +1,7 @@
 # 在给定位置
 
+> 原文：[https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/](https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/)
+
 删除链接列表节点
 
 给定一个链表和一个位置，请删除给定位置的链表节点。

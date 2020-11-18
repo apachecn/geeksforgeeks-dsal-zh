@@ -1,5 +1,7 @@
 # 将最后一个元素移到给定链接列表
 
+> 原文：[https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list/](https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list/)
+
 的前面
 
 编写一个函数，将给定的单链列表中的最后一个元素移到最前面。 例如，如果给定的链接列表为 1-> 2-> 3-> 4-> 5，则该函数应将列表更改为 5-> 1-> 2-> 3-> 4。

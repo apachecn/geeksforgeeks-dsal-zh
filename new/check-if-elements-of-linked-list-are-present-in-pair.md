@@ -1,5 +1,7 @@
 # 检查链接列表中的元素是否成对存在
 
+> 原文：[https://www.geeksforgeeks.org/check-if-elements-of-linked-list-are-present-in-pair/](https://www.geeksforgeeks.org/check-if-elements-of-linked-list-are-present-in-pair/)
+
 给定一个整数的单链表。 任务是检查链接列表中的每个元素是否成对出现，即所有元素是否出现。 的时间。
 
 **示例**：

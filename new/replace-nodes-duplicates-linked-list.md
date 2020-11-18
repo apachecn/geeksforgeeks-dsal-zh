@@ -1,5 +1,7 @@
 # 用链接列表
 
+> 原文：[https://www.geeksforgeeks.org/replace-nodes-duplicates-linked-list/](https://www.geeksforgeeks.org/replace-nodes-duplicates-linked-list/)
+
 中的重复项替换节点
 
 给定一个链表，其中包含一些从 1 到 n 的随机整数，并且有很多重复项。 用值 n + 1，n + 2，n + 3 等替换链表中存在的每个重复元素（以给定链表中的从左到右开始）。

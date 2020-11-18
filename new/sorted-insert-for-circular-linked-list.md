@@ -1,5 +1,7 @@
 # 循环链表
 
+> 原文：[https://www.geeksforgeeks.org/sorted-insert-for-circular-linked-list/](https://www.geeksforgeeks.org/sorted-insert-for-circular-linked-list/)
+
 的排序插入
 
 **难度级别**：新秀

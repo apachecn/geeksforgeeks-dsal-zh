@@ -1,5 +1,7 @@
 # 使用地图
 
+> 原文：[https://www.geeksforgeeks.org/find-length-of-loop-in-a-linked-list-using-map/](https://www.geeksforgeeks.org/find-length-of-loop-in-a-linked-list-using-map/)
+
 查找链接列表中的循环长度
 
 编写一个程序，检查给定的链表是否包含循环，如果存在循环，则返回循环中的节点数。 例如，在下面链接的列表中存在一个循环，并且循环的长度为 4。如果不存在该循环，则该函数应返回 0。

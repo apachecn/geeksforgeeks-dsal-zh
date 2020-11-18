@@ -1,5 +1,7 @@
 # 将所有零移动到链接列表的前面
 
+> 原文：[https://www.geeksforgeeks.org/move-zeroes-front-linked-list/](https://www.geeksforgeeks.org/move-zeroes-front-linked-list/)
+
 给定一个链表。 任务是将全 0 移到链接列表的前面。 重新排列后，除 0 以外的所有其他元素的顺序应相同。
 
 **示例**：

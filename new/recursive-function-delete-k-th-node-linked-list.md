@@ -1,5 +1,7 @@
 # 递归函数，用于从链接列表中删除第 k 个节点
 
+> 原文：[https://www.geeksforgeeks.org/recursive-function-delete-k-th-node-linked-list/](https://www.geeksforgeeks.org/recursive-function-delete-k-th-node-linked-list/)
+
 给定一个单链列表，删除第 k 个位置的节点而不使用循环。
 
 **示例**：

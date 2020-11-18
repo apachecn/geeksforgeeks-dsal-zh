@@ -1,5 +1,7 @@
 # 链表中大于下一节点
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-a-linked-list-which-are-greater-than-next-node/](https://www.geeksforgeeks.org/sum-of-nodes-in-a-linked-list-which-are-greater-than-next-node/)
+
 的节点总数
 
 给定一个链表，任务是找到所有大于其旁边节点的节点之和。 **请注意**，对于链表的最后一个节点，该节点的旁边没有任何节点，它必须大于第一个节点，以使它有助于总和。

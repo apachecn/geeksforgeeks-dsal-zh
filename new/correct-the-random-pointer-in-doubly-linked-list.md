@@ -1,5 +1,7 @@
 # 纠正双链表
 
+> 原文：[https://www.geeksforgeeks.org/correct-the-random-pointer-in-doubly-linked-list/](https://www.geeksforgeeks.org/correct-the-random-pointer-in-doubly-linked-list/)
+
 中的随机指针
 
 给定一个双向链接列表，其中正好有一个节点指向列表中的随机节点，任务是纠正双向链接列表中的该随机指针，以使其指向预期节点。

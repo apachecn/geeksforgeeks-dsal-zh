@@ -1,5 +1,7 @@
 # 给定一个链表，反向替代节点并在末尾附加
 
+> 原文：[https://www.geeksforgeeks.org/given-linked-list-reverse-alternate-nodes-append-end/](https://www.geeksforgeeks.org/given-linked-list-reverse-alternate-nodes-append-end/)
+
 给定一个链表，反转备用节点并将其附加到列表末尾。 允许的额外空间为`O(1)`
 
 **示例**：

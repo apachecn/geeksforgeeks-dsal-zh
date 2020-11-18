@@ -1,5 +1,7 @@
 # 就地合并两个链接列表，而不更改第一个列表的链接
 
+> 原文：[https://www.geeksforgeeks.org/in-place-merge-two-linked-list-without-changing-links-of-first-list/](https://www.geeksforgeeks.org/in-place-merge-two-linked-list-without-changing-links-of-first-list/)
+
 给定两个分别具有 n 和 m 个元素的排序的单链接列表，请使用恒定空间合并它们。 两个列表中的前 n 个最小元素应成为第一个列表的一部分，其余元素应成为第二个列表的一部分。 应保持排序顺序。 我们不允许更改第一个链表的指针。
 
 例如，

@@ -1,5 +1,7 @@
 # 对 k 个排序的双链表进行排序
 
+> 原文：[https://www.geeksforgeeks.org/sort-k-sorted-doubly-linked-list/](https://www.geeksforgeeks.org/sort-k-sorted-doubly-linked-list/)
+
 给定一个包含 **n 个**节点的双向链表，其中每个节点距离其列表中的目标位置最多 **k** 。 问题是对给定的双向链表进行排序。
 
 例如，让我们考虑 **k** 为 2，在已排序的双向链表中位置 7 的节点可以在给定的双向链表中位置 5、6、7、8、9 。

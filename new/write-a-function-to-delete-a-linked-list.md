@@ -1,5 +1,7 @@
 # 编写删除链接列表的功能
 
+> 原文：[https://www.geeksforgeeks.org/write-a-function-to-delete-a-linked-list/](https://www.geeksforgeeks.org/write-a-function-to-delete-a-linked-list/)
+
 **用于 C / C++的算法**：遍历链接列表，并一一删除所有节点。 这里的要点是，如果删除了当前指针，则不要访问当前指针的下一个指针。
 
 在 **Java** 中，会发生自动垃圾收集，因此删除链接列表很容易。 我们只需要将 head 更改为 null。

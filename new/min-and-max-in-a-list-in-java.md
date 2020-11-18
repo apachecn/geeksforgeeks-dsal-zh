@@ -1,5 +1,7 @@
 # Java 列表中的最小值和最大值
 
+> 原文：[https://www.geeksforgeeks.org/min-and-max-in-a-list-in-java/](https://www.geeksforgeeks.org/min-and-max-in-a-list-in-java/)
+
 给定一个未排序的整数列表，请在其中找到最大值和最小值。
 
 ```

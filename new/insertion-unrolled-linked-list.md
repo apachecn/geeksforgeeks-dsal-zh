@@ -1,5 +1,7 @@
 # 插入展开的链接列表
 
+> 原文：[https://www.geeksforgeeks.org/insertion-unrolled-linked-list/](https://www.geeksforgeeks.org/insertion-unrolled-linked-list/)
+
 展开的链表是小数组的链表，它们的大小都相同，但每个数组的大小都很小，以至于插入或删除都很快，但又足够大以填充高速缓存行。 指向列表的迭代器既包含指向节点的指针，又包含指向包含数组的节点的索引。 它也是一种数据结构，是链表的另一种形式。 它与 B 树有关。 它可以在节点上存储元素数组，而不像普通链表在节点上存储单个元素。 它是数组和链表融合在一起的组合。 它提高了缓存性能，并减少了与存储元数据引用相关的内存开销。 其他主要优点和缺点已在上一篇文章中提到。
 
 **先决条件**：[展开的链表简介](https://www.geeksforgeeks.org/unrolled-linked-list-set-1-introduction/)

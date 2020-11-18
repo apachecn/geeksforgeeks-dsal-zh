@@ -1,5 +1,7 @@
 # 仅给出一个指向要在单链列表中删除的节点的指针，如何删除它？
 
+> 原文：[https://www.geeksforgeeks.org/in-a-linked-list-given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/](https://www.geeksforgeeks.org/in-a-linked-list-given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/)
+
 **简单解决方案**是遍历链接列表，直到找到要删除的节点。 但是此解决方案需要指向头节点的指针，该指针与问题陈述相矛盾。
 
 **快速解决方案**是将数据从下一个节点复制到要删除的节点，然后删除下一个节点。 像这样：

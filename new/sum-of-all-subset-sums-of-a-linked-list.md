@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-all-subset-sums-of-a-linked-list/](https://www.geeksforgeeks.org/sum-of-all-subset-sums-of-a-linked-list/)
+
 的所有子集总和
 
 给定一个链表，任务是找到链表所有子集的总和。

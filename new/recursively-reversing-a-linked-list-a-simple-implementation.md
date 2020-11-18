@@ -1,5 +1,7 @@
 # 以递归方式反向链接列表（简单实现）
 
+> 原文：[https://www.geeksforgeeks.org/recursively-reversing-a-linked-list-a-simple-implementation/](https://www.geeksforgeeks.org/recursively-reversing-a-linked-list-a-simple-implementation/)
+
 给定指向链接列表头节点的指针，任务是递归地反向链接列表。 我们需要通过更改节点之间的链接来反转列表。
 
 **示例**：

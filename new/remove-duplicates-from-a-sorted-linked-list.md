@@ -1,5 +1,7 @@
 # 从排序的链接列表中删除重复项
 
+> 原文：[https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)
+
 编写一个函数，该函数采用以非降序排列的列表，并从列表中删除所有重复的节点。 该列表仅应遍历一次。
 
 例如，如果链接列表是 11- > 11- > 11- > 21- > 43- > 43- > 60，则 removeDuplicates（）应该将列表转换为 11- > 21- > 43- > 60。

@@ -1,5 +1,7 @@
 # 递归插入和遍历链表
 
+> 原文：[https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)
+
 我们讨论了[链表插入](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)的不同方法。 如何递归地创建一个链表？
 
 **递归插入到最后**：

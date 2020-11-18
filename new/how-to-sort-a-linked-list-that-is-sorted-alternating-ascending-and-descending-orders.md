@@ -1,5 +1,7 @@
 # 对链接列表进行排序，该列表按升序和降序交替排序？
 
+> 原文：[https://www.geeksforgeeks.org/how-to-sort-a-linked-list-that-is-sorted-alternating-ascending-and-descending-orders/](https://www.geeksforgeeks.org/how-to-sort-a-linked-list-that-is-sorted-alternating-ascending-and-descending-orders/)
+
 给定一个链表。 链接列表按升序和降序排列。 有效地对列表进行排序。
 
 **示例**：

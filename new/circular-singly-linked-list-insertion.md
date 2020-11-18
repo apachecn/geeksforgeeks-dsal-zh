@@ -1,5 +1,7 @@
 # 循环单链接列表| 插入
 
+> 原文：[https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)
+
 我们在以下文章中讨论了单链和循环链表：
 
 [单链表](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)

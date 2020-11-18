@@ -1,5 +1,7 @@
 # Java 中的静态和动态数据结构以及示例
 
+> 原文：[https://www.geeksforgeeks.org/static-and-dynamic-data-structures-in-java-with-examples/](https://www.geeksforgeeks.org/static-and-dynamic-data-structures-in-java-with-examples/)
+
 [数据结构](https://www.geeksforgeeks.org/data-structures/)是一种有效地存储和组织数据的方式，这样就可以相对于时间和内存有效地执行对它们的所需操作。 简单来说，数据结构用于减少代码的复杂度（主要是时间复杂度）。
 
 数据结构可以有两种类型：

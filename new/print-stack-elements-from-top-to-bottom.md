@@ -1,5 +1,7 @@
 # 从顶部到底部打印堆栈元素
 
+> 原文：[https://www.geeksforgeeks.org/print-stack-elements-from-top-to-bottom/](https://www.geeksforgeeks.org/print-stack-elements-from-top-to-bottom/)
+
 给定[堆栈](http://www.geeksforgeeks.org/stack-data-structure/) **S** ，任务是[从上至下打印堆栈](https://www.geeksforgeeks.org/print-stack-elements-from-bottom-to-top/)的元素，以使元素仍然存在于堆栈中，而没有它们的顺序 被改变。
 
 **示例**：

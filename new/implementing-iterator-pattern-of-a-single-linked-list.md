@@ -1,5 +1,7 @@
 # 实现单个链接列表
 
+> 原文：[https://www.geeksforgeeks.org/implementing-iterator-pattern-of-a-single-linked-list/](https://www.geeksforgeeks.org/implementing-iterator-pattern-of-a-single-linked-list/)
+
 的迭代器模式
 
 STL 是 C++的支柱之一。 它使工作变得更加轻松，尤其是当您专注于解决问题并且不想花时间去实施已经可用的东西时，这可以保证可靠的解决方案。 软件工程的关键方面之一是避免重新发明轮子。 始终首选**为**的可重用性。****

@@ -1,5 +1,7 @@
 # 使用下一个随机指针克隆链接列表 | 系列 2
 
+> 原文：[https://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/](https://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/)
+
 我们已经讨论了两种克隆链表的不同方法。 在的[中，讨论了一种更简单的克隆链表的方法。](https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/)
 
 这个想法是使用哈希。 下面是算法。

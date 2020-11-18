@@ -1,5 +1,7 @@
 # 删除链接列表
 
+> 原文：[https://www.geeksforgeeks.org/delete-occurrences-given-key-linked-list/](https://www.geeksforgeeks.org/delete-occurrences-given-key-linked-list/)
+
 中所有出现的给定键
 
 给定一个单链表，请删除其中所有出现的给定键。 例如，考虑以下列表。

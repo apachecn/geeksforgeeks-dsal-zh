@@ -1,5 +1,7 @@
 # 数组在 C 语言中的优缺点
 
+> 原文：[https://www.geeksforgeeks.org/advantages-and-disadvantages-of-array-in-c/](https://www.geeksforgeeks.org/advantages-and-disadvantages-of-array-in-c/)
+
 [数组](https://www.geeksforgeeks.org/array-data-structure/)是相似类型元素的集合。 例如，整数数组保存 [int 类型](https://www.geeksforgeeks.org/c-data-types/)的元素，而字符数组保存 char 型的元素。 下面是数组的表示形式：
 
 [![](img/9dabba37ab2db2ed15c162ebc1659c82.png)](https://media.geeksforgeeks.org/wp-content/uploads/20201018234745/11.png)

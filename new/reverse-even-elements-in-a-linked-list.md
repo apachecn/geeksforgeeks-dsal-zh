@@ -1,5 +1,7 @@
 # 反向链接列表中的偶数元素
 
+> 原文：[https://www.geeksforgeeks.org/reverse-even-elements-in-a-linked-list/](https://www.geeksforgeeks.org/reverse-even-elements-in-a-linked-list/)
+
 给定一个链表，任务是反转连续的偶数元素并打印更新的链表。
 
 > **输入**：1-> 2-> 3-> 3-> 4-> 6-> 8-> 5-> NULL

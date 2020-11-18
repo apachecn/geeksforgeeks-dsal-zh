@@ -1,5 +1,7 @@
 # 合并两个未排序的链表以得到一个已排序的列表
 
+> 原文：[https://www.geeksforgeeks.org/merge-two-unsorted-linked-lists-to-get-a-sorted-list/](https://www.geeksforgeeks.org/merge-two-unsorted-linked-lists-to-get-a-sorted-list/)
+
 给定两个未排序的[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是将它们合并以获得一个已排序的[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)。
 
 **范例**：

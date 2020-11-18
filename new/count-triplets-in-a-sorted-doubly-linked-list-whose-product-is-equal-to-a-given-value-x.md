@@ -1,5 +1,7 @@
 # 计算一个乘积等于给定值 x 的双链表中的三胞胎
 
+> 原文：[https://www.geeksforgeeks.org/count-triplets-in-a-sorted-doubly-linked-list-whose-product-is-equal-to-a-given-value-x/](https://www.geeksforgeeks.org/count-triplets-in-a-sorted-doubly-linked-list-whose-product-is-equal-to-a-given-value-x/)
+
 给定一个不同节点的排序双链表（没有两个节点具有相同的数据）和一个值 x。 任务是对列表中的三元组进行计数，直到达到给定值 x。
 
 **示例**：

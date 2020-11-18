@@ -1,5 +1,7 @@
 # 将最后 m 个元素移到给定链接列表
 
+> 原文：[https://www.geeksforgeeks.org/move-last-m-elements-to-the-front-of-a-given-linked-list/](https://www.geeksforgeeks.org/move-last-m-elements-to-the-front-of-a-given-linked-list/)
+
 的前面
 
 给定[单链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)的**头**和值 **m** ，任务是将最后 m 个元素移到最前面。

@@ -1,5 +1,7 @@
 # 检查带有循环的链表是否为回文
 
+> 原文：[https://www.geeksforgeeks.org/check-linked-list-loop-palindrome-not/](https://www.geeksforgeeks.org/check-linked-list-loop-palindrome-not/)
+
 给定一个带有循环的链表，任务是查找它是否是回文。 您无权删除循环。
 
 ![](img/de522899e01a1322ab2808eeff1ad73e.png)

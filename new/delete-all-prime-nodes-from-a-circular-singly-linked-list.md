@@ -1,5 +1,7 @@
 # 从循环单链接列表
 
+> 原文：[https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-circular-singly-linked-list/](https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-circular-singly-linked-list/)
+
 中删除所有主要节点
 
 给定一个包含 N 个节点的循环单链接列表。 任务是从列表中删除所有主要节点。

@@ -1,5 +1,7 @@
 # 跳过列表 | 系列 2（插入）
 
+> 原文：[https://www.geeksforgeeks.org/skip-list-set-2-insertion/](https://www.geeksforgeeks.org/skip-list-set-2-insertion/)
+
 我们已经讨论了“跳过列表”的概念以及它们在[跳过列表中的工作方式。 设置 1（简介）](https://www.geeksforgeeks.org/skip-list/)。 在本文中，我们将讨论如何在“跳过列表”中插入元素。
 
 **决定节点级别**

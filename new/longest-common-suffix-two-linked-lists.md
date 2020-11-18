@@ -1,5 +1,7 @@
 # 两个链表的最长公共后缀
 
+> 原文：[https://www.geeksforgeeks.org/longest-common-suffix-two-linked-lists/](https://www.geeksforgeeks.org/longest-common-suffix-two-linked-lists/)
+
 给定两个单链表，找到两个链表的最长公共后缀。 如果没有后缀的公共字符，则返回两个链接列表的最小长度。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 将最后一个元素移到给定链接列表的前面 | 系列 2
 
+> 原文：[https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list-set-2/](https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list-set-2/)
+
 给定一个单链表和一个整数 **K** 。 任务是将链表的最后 **K** 个元素附加到前面。
 
 **示例**：

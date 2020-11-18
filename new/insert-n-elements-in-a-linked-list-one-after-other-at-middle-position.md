@@ -1,5 +1,7 @@
 # 在链接列表的中间位置一个接一个地插入 N 个元素
 
+> 原文：[https://www.geeksforgeeks.org/insert-n-elements-in-a-linked-list-one-after-other-at-middle-position/](https://www.geeksforgeeks.org/insert-n-elements-in-a-linked-list-one-after-other-at-middle-position/)
+
 给定 N 个元素的数组。 任务是将给定元素一个接一个地插入链表的中间位置。 每个插入操作应占用`O(1)`时间复杂度。
 
 **示例**：

@@ -1,5 +1,7 @@
 # 将所有出现的元素移到链表
 
+> 原文：[https://www.geeksforgeeks.org/move-occurrences-element-end-linked-list/](https://www.geeksforgeeks.org/move-occurrences-element-end-linked-list/)
+
 中
 
 给定一个链表和链表中的一个键，任务是将所有出现的给定键移动到链表的末尾，同时保持所有其他元素的顺序相同。

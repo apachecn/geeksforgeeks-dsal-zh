@@ -1,5 +1,7 @@
 # 从末尾
 
+> 原文：[https://www.geeksforgeeks.org/insert-node-n-th-node-end/](https://www.geeksforgeeks.org/insert-node-n-th-node-end/)
+
 的第 n 个节点后插入一个节点
 
 在给定的单链列表中从末尾的**第 n 个**节点之后插入节点 **x** 。 确保列表从末尾包含第**个第**个节点。 另外 1 < = n。

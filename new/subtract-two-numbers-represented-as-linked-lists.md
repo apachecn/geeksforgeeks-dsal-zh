@@ -1,5 +1,7 @@
 # 减去两个表示为链接列表的数字
 
+> 原文：[https://www.geeksforgeeks.org/subtract-two-numbers-represented-as-linked-lists/](https://www.geeksforgeeks.org/subtract-two-numbers-represented-as-linked-lists/)
+
 给定两个表示两个大正数的链表。 从较大的数字中减去较小的数字，然后将差值作为链表返回。 请注意，输入列表可以按任何顺序排列，但是我们始终需要从较大的列表中减去较小的列表。
 
 可以假设输入列表中没有多余的前导零。

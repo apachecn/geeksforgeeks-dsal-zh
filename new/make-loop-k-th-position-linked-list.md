@@ -1,5 +1,7 @@
 # 在链接列表中的第 k 个位置循环
 
+> 原文：[https://www.geeksforgeeks.org/make-loop-k-th-position-linked-list/](https://www.geeksforgeeks.org/make-loop-k-th-position-linked-list/)
+
 给定一个链表和位置 k。 在第 k 个位置循环
 
 **示例**：

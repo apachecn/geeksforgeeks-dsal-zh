@@ -1,5 +1,7 @@
 # 从循环链表
 
+> 原文：[https://www.geeksforgeeks.org/delete-all-odd-or-even-positioned-nodes-from-circular-linked-list/](https://www.geeksforgeeks.org/delete-all-odd-or-even-positioned-nodes-from-circular-linked-list/)
+
 中删除所有奇数或偶数定位的节点
 
 ### 从循环链表中删除所有奇数位置节点

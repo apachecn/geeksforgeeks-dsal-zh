@@ -1,5 +1,7 @@
 # 在排序的链接列表中查找中位数
 
+> 原文：[https://www.geeksforgeeks.org/finding-median-in-a-sorted-linked-list/](https://www.geeksforgeeks.org/finding-median-in-a-sorted-linked-list/)
+
 给定![N](img/19e409e13c1238e1f3ff3dbd06cdd45e.png "Rendered by QuickLaTeX.com")元素的排序链表。 任务是在给定的排序链表中找到中位数。
 
 我们知道排序数组中的**中位数**是中间元素。

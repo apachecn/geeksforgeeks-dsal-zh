@@ -1,5 +1,7 @@
 # 就地重新排列给定的链表。
 
+> 原文：[https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/](https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/)
+
 给定一个单链表 L <sub>0</sub> -> L <sub>1</sub> ->…-> L <sub>n-1</sub> -> L [ <sub>n</sub> 。 重新排列列表中的节点，以使新形成的列表为：L <sub>0</sub> -> L <sub>n</sub> -> L <sub>1</sub> -> L <sub>n-1</sub> -> L <sub>2</sub> -> L <sub>n-2</sub> …
 
 您需要就地执行此操作，而无需更改节点的值。

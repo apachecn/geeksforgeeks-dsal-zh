@@ -1,5 +1,7 @@
 # 从链接列表
 
+> 原文：[https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)
+
 末尾开始的第 n 个节点的程序
 
 给定一个链表和一个数字 n，编写一个函数，该函数从链表的末尾返回第 n 个节点的值。

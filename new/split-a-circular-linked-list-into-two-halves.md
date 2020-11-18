@@ -1,5 +1,7 @@
 # 将循环链表分为两半
 
+> 原文：[https://www.geeksforgeeks.org/split-a-circular-linked-list-into-two-halves/](https://www.geeksforgeeks.org/split-a-circular-linked-list-into-two-halves/)
+
 ![](img/379c0de15efa5a6852d3ac11017b3ad1.png "cll")
 
 ```

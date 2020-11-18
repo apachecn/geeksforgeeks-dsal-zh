@@ -1,5 +1,7 @@
 # 递归查找单链表的中间
 
+> 原文：[https://www.geeksforgeeks.org/find-middle-singly-linked-list-recursively/](https://www.geeksforgeeks.org/find-middle-singly-linked-list-recursively/)
+
 给定一个单链表，任务是找到链表的中间位置。
 
 **范例**：

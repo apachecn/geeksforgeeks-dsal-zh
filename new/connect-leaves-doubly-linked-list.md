@@ -1,5 +1,7 @@
 # 提取双链表
 
+> 原文：[https://www.geeksforgeeks.org/connect-leaves-doubly-linked-list/](https://www.geeksforgeeks.org/connect-leaves-doubly-linked-list/)
+
 中的二叉树的叶子
 
 给定一棵二叉树，将其所有叶子提取到 **L** ist（DLL）的 **D** 整体 **L** 中。 请注意，需要就地创建 DLL。 假设 DLL 和 Binary Tree 的节点结构相同，只是左右指针的含义不同。 在 DLL 中，左表示上一个指针，右表示下一个指针。

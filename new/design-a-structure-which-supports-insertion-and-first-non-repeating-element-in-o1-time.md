@@ -1,5 +1,7 @@
 # 设计一种在`O(1)`时间内支持插入和第一个非重复元素的结构
 
+> 原文：[https://www.geeksforgeeks.org/design-a-structure-which-supports-insertion-and-first-non-repeating-element-in-o1-time/](https://www.geeksforgeeks.org/design-a-structure-which-supports-insertion-and-first-non-repeating-element-in-o1-time/)
+
 设计一个[数据结构](https://www.geeksforgeeks.org/data-structures/)，该数据结构支持`O(1)`时间中的插入和第一个非重复元素。 数据结构支持的操作：
 
 *   **插入**：将元素插入数据结构。

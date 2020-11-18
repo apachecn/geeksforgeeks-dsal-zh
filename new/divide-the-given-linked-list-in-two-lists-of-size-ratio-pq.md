@@ -1,5 +1,7 @@
 # 将给定的链表分为两个比例为 p：q 的列表
 
+> 原文：[https://www.geeksforgeeks.org/divide-the-given-linked-list-in-two-lists-of-size-ratio-pq/](https://www.geeksforgeeks.org/divide-the-given-linked-list-in-two-lists-of-size-ratio-pq/)
+
 给定一个链表和两个整数 **p** 和 **q** ，任务是按 **p：q** 的比例划分链表，即第一个列表包含第一个[ **来自原始列表的 p 个**节点，第二个列表包含 **q** 个节点的其余部分。 如果无法按照给定的比例分割原始列表，请打印 **-1** 。
 
 **示例**：

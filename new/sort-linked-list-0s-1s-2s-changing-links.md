@@ -1,5 +1,7 @@
 # 通过更改链接对 0、1、2 和 2 的链接列表进行排序
 
+> 原文：[https://www.geeksforgeeks.org/sort-linked-list-0s-1s-2s-changing-links/](https://www.geeksforgeeks.org/sort-linked-list-0s-1s-2s-changing-links/)
+
 给定一个链接列表 0、1 和 2，对其进行排序。
 
 **示例**：

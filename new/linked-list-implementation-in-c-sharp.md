@@ -1,5 +1,7 @@
 # C#
 
+> 原文：[https://www.geeksforgeeks.org/linked-list-implementation-in-c-sharp/](https://www.geeksforgeeks.org/linked-list-implementation-in-c-sharp/)
+
 中的链表实现
 
 [**LinkedList**](https://www.geeksforgeeks.org/linked-list-set-1-introduction/) 是一种线性数据结构，将元素存储在非连续位置。 链接列表中的元素使用指针相互链接。 换句话说，LinkedList 由节点组成，其中每个节点包含一个数据字段和到列表中下一个节点的引用（链接）。

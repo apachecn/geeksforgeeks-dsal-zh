@@ -1,5 +1,7 @@
 # 无需额外的空间和修改即可反向打印链接列表
 
+> 原文：[https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/](https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/)
+
 给定[链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/)，以反向方式显示链接列表，而无需使用递归，堆栈或对给定列表的修改。
 
 **示例**：

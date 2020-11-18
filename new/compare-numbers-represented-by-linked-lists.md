@@ -1,5 +1,7 @@
 # 比较链接列表
 
+> 原文：[https://www.geeksforgeeks.org/compare-numbers-represented-by-linked-lists/](https://www.geeksforgeeks.org/compare-numbers-represented-by-linked-lists/)
+
 表示的数字
 
 给定指向两个链接列表的头节点的指针。 任务是比较链接列表表示的数字。 列表表示的数字可能包含前导零。

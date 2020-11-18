@@ -1,5 +1,7 @@
 # 在链接列表中找到第二大元素
 
+> 原文：[https://www.geeksforgeeks.org/find-the-second-largest-element-in-a-linked-list/](https://www.geeksforgeeks.org/find-the-second-largest-element-in-a-linked-list/)
+
 给定整数数据的链接列表。 任务是编写一个程序，以有效地找到链表中存在的第二大元素。
 
 **范例**：

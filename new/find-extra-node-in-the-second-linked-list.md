@@ -1,5 +1,7 @@
 # 在第二个链接列表
 
+> 原文：[https://www.geeksforgeeks.org/find-extra-node-in-the-second-linked-list/](https://www.geeksforgeeks.org/find-extra-node-in-the-second-linked-list/)
+
 中查找其他节点
 
 给定两个链表 L1 和 L2。 第二个列表 L2 包含 L1 的所有节点以及 1 个额外的节点。 任务是找到那个额外的节点。

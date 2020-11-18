@@ -1,5 +1,7 @@
 # 从双链表
 
+> 原文：[https://www.geeksforgeeks.org/remove-all-the-even-digit-sum-nodes-from-a-doubly-linked-list/](https://www.geeksforgeeks.org/remove-all-the-even-digit-sum-nodes-from-a-doubly-linked-list/)
+
 中删除所有偶数和节点
 
 给定一个包含 **N 个**节点的[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)，任务是从列表中删除所有节点，这些节点包含数字和为偶数的元素。

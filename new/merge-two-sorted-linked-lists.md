@@ -1,5 +1,7 @@
 # 合并两个排序的链接列表
 
+> 原文：[https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)
+
 编写一个 SortedMerge（）函数，该函数接受两个列表，每个列表按升序排序，然后将两个列表合并为一个列表，该列表按升序排序。 SortedMerge（）应该返回新列表。 应通过将前两个列表的节点拼接在一起来创建新列表。
 
 例如，如果第一个链表 a 为 5- > 10- > 15，而另一个链表 b 为 2- > 3- > 20，则 SortedMerge（）应该返回一个指针 到合并列表的头节点 2- > 3- > 5- > 10- > 15- >20。

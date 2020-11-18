@@ -1,5 +1,7 @@
 # 从 2D 矩阵
 
+> 原文：[https://www.geeksforgeeks.org/construct-linked-list-2d-matrix/](https://www.geeksforgeeks.org/construct-linked-list-2d-matrix/)
+
 构造一个链表
 
 给定一个矩阵。 将其转换为链接列表矩阵，以便每个节点都连接到其下一个右节点和下一个节点。

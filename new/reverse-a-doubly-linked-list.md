@@ -1,5 +1,7 @@
 # 反转双向链接列表
 
+> 原文：[https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/](https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/)
+
 编写 C 函数以反转给定的双链表
 
 例如，请参见下图。

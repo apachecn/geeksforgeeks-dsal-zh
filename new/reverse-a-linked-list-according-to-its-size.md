@@ -1,5 +1,7 @@
 # 根据其大小反向链接列表
 
+> 原文：[https://www.geeksforgeeks.org/reverse-a-linked-list-according-to-its-size/](https://www.geeksforgeeks.org/reverse-a-linked-list-according-to-its-size/)
+
 给定具有 n 个节点的链表，请按以下方式将其反向：
 
 1.  如果 n 为偶数，则将其反转为 n / 2 个节点。

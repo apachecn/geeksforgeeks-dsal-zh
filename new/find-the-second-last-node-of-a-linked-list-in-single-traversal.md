@@ -1,5 +1,7 @@
 # 在单遍历中查找链表的倒数第二个节点
 
+> 原文：[https://www.geeksforgeeks.org/find-the-second-last-node-of-a-linked-list-in-single-traversal/](https://www.geeksforgeeks.org/find-the-second-last-node-of-a-linked-list-in-single-traversal/)
+
 给定一个链表。 任务是仅使用单个遍历查找链表的倒数第二个节点。
 
 **示例**：

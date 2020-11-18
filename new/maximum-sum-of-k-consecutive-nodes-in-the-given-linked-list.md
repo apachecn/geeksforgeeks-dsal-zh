@@ -1,5 +1,7 @@
 # 给定链接列表
 
+> 原文：[https://www.geeksforgeeks.org/maximum-sum-of-k-consecutive-nodes-in-the-given-linked-list/](https://www.geeksforgeeks.org/maximum-sum-of-k-consecutive-nodes-in-the-given-linked-list/)
+
 中 K 个连续节点的最大和
 
 给定一个链表，任务是找到通过将链表的任何 k 个连续节点相加而获得的最大和。

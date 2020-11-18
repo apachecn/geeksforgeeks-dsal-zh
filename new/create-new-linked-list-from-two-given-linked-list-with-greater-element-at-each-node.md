@@ -1,5 +1,7 @@
 # 从两个给定的链表创建新的链表，每个链结在每个节点上都有更大的元素
 
+> 原文：[https://www.geeksforgeeks.org/create-new-linked-list-from-two-given-linked-list-with-greater-element-at-each-node/](https://www.geeksforgeeks.org/create-new-linked-list-from-two-given-linked-list-with-greater-element-at-each-node/)
+
 给定两个大小相同的链表，任务是使用这些链表创建一个新的链表。 条件是两个链接列表中的较大节点将被添加到新的喜欢列表中。
 
 **示例**：

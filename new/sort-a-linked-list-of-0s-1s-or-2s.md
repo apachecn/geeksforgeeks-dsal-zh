@@ -1,5 +1,7 @@
 # 对 0、1、2 和 2 的链接列表进行排序
 
+> 原文：[https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/](https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/)
+
 给定一个链接列表 0、1 和 2，对其进行排序。
 
 **范例**：

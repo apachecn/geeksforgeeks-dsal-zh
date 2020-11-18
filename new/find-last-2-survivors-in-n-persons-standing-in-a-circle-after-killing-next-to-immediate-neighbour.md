@@ -1,5 +1,7 @@
 # 在紧邻邻居的邻居中被杀后，在围成一个圈的 N 人中找到最后 2 个幸存者
 
+> 原文：[https://www.geeksforgeeks.org/find-last-2-survivors-in-n-persons-standing-in-a-circle-after-killing-next-to-immediate-neighbour/](https://www.geeksforgeeks.org/find-last-2-survivors-in-n-persons-standing-in-a-circle-after-killing-next-to-immediate-neighbour/)
+
 给定一个整数 **N** 代表一个圆圈中的 **N** 个人，任务是找到一个人在顺时针方向上杀死紧邻的邻居时剩下的最后 2 个人。
 
 **范例**：[

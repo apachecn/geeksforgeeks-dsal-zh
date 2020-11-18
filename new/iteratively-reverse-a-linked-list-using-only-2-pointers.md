@@ -1,5 +1,7 @@
 # 仅使用 2 个指针迭代反向链接列表（一种有趣的方法）
 
+> 原文：[https://www.geeksforgeeks.org/iteratively-reverse-a-linked-list-using-only-2-pointers/](https://www.geeksforgeeks.org/iteratively-reverse-a-linked-list-using-only-2-pointers/)
+
 给定指向链表头节点的指针，任务是反转链表。
 
 例子：

@@ -1,5 +1,7 @@
 # 两个最接近的完美平方到给定链表
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-distances-between-the-two-nearest-perfect-squares-to-all-the-nodes-of-the-given-linked-list/](https://www.geeksforgeeks.org/sum-of-distances-between-the-two-nearest-perfect-squares-to-all-the-nodes-of-the-given-linked-list/)
+
 的所有节点之间的距离总和
 
 给定一个链表，任务是为给定链表的所有节点找到两个最接近的完美平方之间的距离之和。

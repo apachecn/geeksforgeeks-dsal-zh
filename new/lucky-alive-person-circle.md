@@ -1,5 +1,7 @@
 # 幸存者围成一圈| 剑拼图的代码解决方案
 
+> 原文：[https://www.geeksforgeeks.org/lucky-alive-person-circle/](https://www.geeksforgeeks.org/lucky-alive-person-circle/)
+
 给定 n 个人站在第一个持剑的圈子中，找到圈子中最幸运的人，如果从第一个持剑的士兵中每个都必须杀死下一个士兵并将剑移交给下一个士兵，那么该士兵将 杀死相邻的士兵，并将剑移交给下一位士兵，以使一名士兵仍在这场战争中被任何人杀死。
 
 先决条件：[拼图 81 | 一圈有 100 人的枪谜游戏](https://www.geeksforgeeks.org/puzzle-100-people-in-a-circle-with-gun-puzzle/)

@@ -1,5 +1,7 @@
 # 用链接列表
 
+> 原文：[https://www.geeksforgeeks.org/replace-each-node-with-its-surpasser-count-in-linked-list/](https://www.geeksforgeeks.org/replace-each-node-with-its-surpasser-count-in-linked-list/)
+
 中的节点计数替换每个节点
 
 给定 LinkedList，将每个节点的值替换为其超越者计数。 那是对它的权利更大的要素的数量。

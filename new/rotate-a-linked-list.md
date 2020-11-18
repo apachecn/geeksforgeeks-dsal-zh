@@ -1,5 +1,7 @@
 # 旋转链接列表
 
+> 原文：[https://www.geeksforgeeks.org/rotate-a-linked-list/](https://www.geeksforgeeks.org/rotate-a-linked-list/)
+
 给定一个单链表，将链表逆时针旋转 k 个节点。 其中 k 是给定的正整数。 例如，如果给定的链表是 10-> 20-> 30-> 40-> 50-> 60 且 k 为 4，则该链表应修改为 50-> 60-> 10-> 20-> 30- > 40。 假设 k 小于链表中节点的数量。
 
 **<u>方法-1：</u>**

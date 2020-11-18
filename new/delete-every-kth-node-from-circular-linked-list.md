@@ -1,5 +1,7 @@
 # 从循环链表
 
+> 原文：[https://www.geeksforgeeks.org/delete-every-kth-node-from-circular-linked-list/](https://www.geeksforgeeks.org/delete-every-kth-node-from-circular-linked-list/)
+
 中删除每个第 K 个节点
 
 从循环链接列表中删除每个第 k 个节点，直到只剩下一个节点。 同时打印中间列表。

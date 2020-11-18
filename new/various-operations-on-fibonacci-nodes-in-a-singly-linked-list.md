@@ -1,5 +1,7 @@
 # 单链接列表
 
+> 原文：[https://www.geeksforgeeks.org/various-operations-on-fibonacci-nodes-in-a-singly-linked-list/](https://www.geeksforgeeks.org/various-operations-on-fibonacci-nodes-in-a-singly-linked-list/)
+
 中的斐波纳契节点上的各种操作
 
 给定包含 **N 个**节点的[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是对其中存在的斐波纳契节点执行以下操作：

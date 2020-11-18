@@ -1,5 +1,7 @@
 # 添加两个由链表表示的数字 | 系列 2
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-two-linked-lists/](https://www.geeksforgeeks.org/sum-of-two-linked-lists/)
+
 给定由两个链表表示的两个数字，编写一个返回求和表的函数。 求和列表是两个输入数字相加的链接列表表示。 不允许修改列表。 另外，不允许使用显式的额外空间（提示：使用递归）。
 
 **示例**：

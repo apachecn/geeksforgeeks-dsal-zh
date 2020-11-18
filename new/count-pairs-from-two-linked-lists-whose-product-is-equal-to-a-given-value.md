@@ -1,5 +1,7 @@
 # 来自两个链表的计数对，两个链表的乘积等于给定值
 
+> 原文：[https://www.geeksforgeeks.org/count-pairs-from-two-linked-lists-whose-product-is-equal-to-a-given-value/](https://www.geeksforgeeks.org/count-pairs-from-two-linked-lists-whose-product-is-equal-to-a-given-value/)
+
 给定两个链表（可以排序或不排序），它们的大小分别为 **n1** 和 **n2** 。 给定值 X。问题是要计算两个列表中乘积等于给定值 x 的所有对。
 
 **注意**：该对必须具有每个链接列表中的一个元素。

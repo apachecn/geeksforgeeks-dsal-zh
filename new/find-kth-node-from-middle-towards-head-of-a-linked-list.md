@@ -1,5 +1,7 @@
 # 从中间到链表
 
+> 原文：[https://www.geeksforgeeks.org/find-kth-node-from-middle-towards-head-of-a-linked-list/](https://www.geeksforgeeks.org/find-kth-node-from-middle-towards-head-of-a-linked-list/)
+
 的开头查找第 k 个节点
 
 给定链接列表和数字 K。任务是从列表的中间到开头打印第 K 个节点的值。 如果不存在这样的元素，则打印“ -1”。

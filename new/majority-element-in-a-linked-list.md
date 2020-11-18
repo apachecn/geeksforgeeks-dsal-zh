@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/majority-element-in-a-linked-list/](https://www.geeksforgeeks.org/majority-element-in-a-linked-list/)
+
 中的多数元素
 
 给定一个链表，找到多数元素。 如果一个元素出现**多数元素**，则它的出现次数大于或等于 **n / 2** 倍，其中 n 是链接列表中节点的总数。

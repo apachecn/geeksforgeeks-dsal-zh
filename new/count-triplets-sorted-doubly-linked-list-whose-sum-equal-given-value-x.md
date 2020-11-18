@@ -1,5 +1,7 @@
 # 计数一个排序的双向链表中的三元组，其总数等于给定值 x
 
+> 原文：[https://www.geeksforgeeks.org/count-triplets-sorted-doubly-linked-list-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-triplets-sorted-doubly-linked-list-whose-sum-equal-given-value-x/)
+
 给定一个不同节点的排序双链表（没有两个节点具有相同的数据），值 **x** 。 计算列表中的三元组，它们总计为给定值 **x** 。
 
 例子：

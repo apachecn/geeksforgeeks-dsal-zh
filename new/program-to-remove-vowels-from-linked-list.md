@@ -1,5 +1,7 @@
 # 程序从链接列表
 
+> 原文：[https://www.geeksforgeeks.org/program-to-remove-vowels-from-linked-list/](https://www.geeksforgeeks.org/program-to-remove-vowels-from-linked-list/)
+
 中删除元音
 
 给定[单链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从给定[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)中删除元音。

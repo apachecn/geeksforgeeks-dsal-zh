@@ -1,5 +1,7 @@
 # 在链接列表
 
+> 原文：[https://www.geeksforgeeks.org/swap-kth-node-from-beginning-with-kth-node-from-end-in-a-linked-list/](https://www.geeksforgeeks.org/swap-kth-node-from-beginning-with-kth-node-from-end-in-a-linked-list/)
+
 中从第 K 个节点开始，从末尾交换第 K 个节点。
 
 给定一个单链表，从第 k 个节点开始从第 k 个节点开始交换。 **不允许交换数据，只应更改指针。** 在链表数据部分很大的许多情况下（例如，学生详细信息行名称，RollNo，地址等），此要求可能是合乎逻辑的。 指针总是固定的（大多数编译器为 4 个字节）。

@@ -1,5 +1,7 @@
 # 从三叉树创建一个双向链接列表
 
+> 原文：[https://www.geeksforgeeks.org/create-doubly-linked-list-ternary-ree/](https://www.geeksforgeeks.org/create-doubly-linked-list-ternary-ree/)
+
 给定三元树，从中创建一个双向链表。 三叉树类似于二叉树，但是没有两个节点，而是具有三个节点，即左，中，右。
 
 双链列表应包含以下属性–

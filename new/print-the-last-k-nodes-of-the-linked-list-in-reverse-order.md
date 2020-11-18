@@ -1,5 +1,7 @@
 # 以相反的顺序打印链接列表的最后 k 个节点| 递归方法
 
+> 原文：[https://www.geeksforgeeks.org/print-the-last-k-nodes-of-the-linked-list-in-reverse-order/](https://www.geeksforgeeks.org/print-the-last-k-nodes-of-the-linked-list-in-reverse-order/)
+
 给定一个包含 **N 个**节点和正整数 **k** 的链表应小于或等于 N。任务是打印该节点的最后 **k** 个节点。 以相反的顺序列出。
 
 **示例**：

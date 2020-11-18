@@ -1,5 +1,7 @@
 # 旋转 N 个节点的双链表
 
+> 原文：[https://www.geeksforgeeks.org/rotate-doubly-linked-list-n-nodes/](https://www.geeksforgeeks.org/rotate-doubly-linked-list-n-nodes/)
+
 给定一个双向链表，将链表逆时针旋转 N 个节点。 N 是给定的正整数，小于链表中节点的数量。
 
 ![](img/fc98432b5902440dd1c419d10877e43e.png)

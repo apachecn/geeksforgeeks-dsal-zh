@@ -1,5 +1,7 @@
 # 单链接列表
 
+> 原文：[https://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/](https://www.geeksforgeeks.org/insertion-sort-for-singly-linked-list/)
+
 的插入排序
 
 我们已经讨论了[数组](http://quiz.geeksforgeeks.org/insertion-sort/)的插入排序。 在本文中，讨论了相同的链表。

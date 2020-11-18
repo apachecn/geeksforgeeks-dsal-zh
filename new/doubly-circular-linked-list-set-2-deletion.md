@@ -1,5 +1,7 @@
 # 双向循环链接列表 | 系列 2（删除）
 
+> 原文：[https://www.geeksforgeeks.org/doubly-circular-linked-list-set-2-deletion/](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-2-deletion/)
+
 我们已经讨论了[双循环链表介绍及其插入](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)。
 
 让我们制定问题陈述以了解删除过程。 给定*'密钥'*，请删除此密钥在循环双链表中的第一个匹配项。

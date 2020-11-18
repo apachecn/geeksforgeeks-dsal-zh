@@ -1,5 +1,7 @@
 # 从列表中删除所有大于 x 的节点
 
+> 原文：[https://www.geeksforgeeks.org/delete-nodes-list-greater-x/](https://www.geeksforgeeks.org/delete-nodes-list-greater-x/)
+
 给定一个链表，问题在于从列表中删除所有大于指定值 **x** 的节点。
 
 例子：

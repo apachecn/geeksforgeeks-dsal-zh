@@ -1,5 +1,7 @@
 # 找出两个链表的交点而没有找到长度
 
+> 原文：[https://www.geeksforgeeks.org/find-intersection-point-of-two-linked-lists-without-finding-the-length/](https://www.geeksforgeeks.org/find-intersection-point-of-two-linked-lists-without-finding-the-length/)
+
 系统中有两个单链表。 由于编程错误，链接列表之一的末端节点链接到第二个列表，从而形成了一个倒 Y 形列表。 编写一个程序，使两个链表合并。
 
 **示例**：

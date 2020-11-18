@@ -1,5 +1,7 @@
 # 使用递归
 
+> 原文：[https://www.geeksforgeeks.org/reverse-doubly-linked-list-using-recursion/](https://www.geeksforgeeks.org/reverse-doubly-linked-list-using-recursion/)
+
 反转双向链表
 
 给定一个双向链表。 使用递归将其反转。

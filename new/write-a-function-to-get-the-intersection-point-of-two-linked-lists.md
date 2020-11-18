@@ -1,5 +1,7 @@
 # 编写函数以获取两个链接列表的交点
 
+> 原文：[https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/](https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/)
+
 系统中有两个单链表。 由于编程错误，链接列表之一的末端节点链接到第二个列表，从而形成了一个倒 Y 形列表。 编写程序以获取两个链接列表合并的点。
 
 ![Y ShapedLinked List](img/ab40c195e60241fe31989a627ddf41fc.png)

@@ -1,5 +1,7 @@
 # 检查两个链接列表是否彼此置换
 
+> 原文：[https://www.geeksforgeeks.org/check-if-two-linked-lists-are-permutations-of-each-other/](https://www.geeksforgeeks.org/check-if-two-linked-lists-are-permutations-of-each-other/)
+
 给定两个单独链接的整数数据列表。 任务是编写一个程序，该程序可以有效地检查两个链接列表是否相互置换。
 
 **范例**：

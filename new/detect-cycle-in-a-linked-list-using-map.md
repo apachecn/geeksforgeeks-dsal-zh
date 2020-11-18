@@ -1,5 +1,7 @@
 # 使用地图
 
+> 原文：[https://www.geeksforgeeks.org/detect-cycle-in-a-linked-list-using-map/](https://www.geeksforgeeks.org/detect-cycle-in-a-linked-list-using-map/)
+
 检测链接列表中的周期
 
 给定[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)，检查链接列表是否具有循环。

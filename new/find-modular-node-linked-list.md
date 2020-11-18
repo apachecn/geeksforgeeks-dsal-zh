@@ -1,5 +1,7 @@
 # 在链表
 
+> 原文：[https://www.geeksforgeeks.org/find-modular-node-linked-list/](https://www.geeksforgeeks.org/find-modular-node-linked-list/)
+
 中查找模块化节点
 
 给定一个单链列表和一个数字 k，找到最后一个节点，其 n％k == 0，其中 n 是列表中的节点数。

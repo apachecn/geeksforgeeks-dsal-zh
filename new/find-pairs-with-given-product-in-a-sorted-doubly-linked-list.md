@@ -1,5 +1,7 @@
 # 在排序的双链表
 
+> 原文：[https://www.geeksforgeeks.org/find-pairs-with-given-product-in-a-sorted-doubly-linked-list/](https://www.geeksforgeeks.org/find-pairs-with-given-product-in-a-sorted-doubly-linked-list/)
+
 中查找与给定产品的对
 
 给定**个正相异元素**的排序的双链表，任务是在双链表中查找乘积等于给定值 x 的对，而不使用任何额外空间。

@@ -1,5 +1,7 @@
 # 合并 k 个排序的链表| 第 2 组（使用最小堆）
 
+> 原文：[https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/)
+
 给定 **k** 链接列表，每个链接列表的大小为 **n** ，并且每个列表以非降序排序，将它们合并为一个排序的（非降序）链接列表，并打印排序的链接 列出作为输出。
 
 **范例**：

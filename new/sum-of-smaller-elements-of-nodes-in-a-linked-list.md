@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/sum-of-smaller-elements-of-nodes-in-a-linked-list/](https://www.geeksforgeeks.org/sum-of-smaller-elements-of-nodes-in-a-linked-list/)
+
 中节点的较小元素的总和
 
 给定一个链表，链表的每个节点都由一对整数变量**首先**和**第二**来保存数据，以及一个指向列表中下一个节点的指针。 任务是为每个节点找到 **min（第一，第二）**的总和。

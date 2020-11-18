@@ -1,5 +1,7 @@
 # 使用`O(1)`空间中的下一个指针和随机指针克隆链接列表
 
+> 原文：[https://www.geeksforgeeks.org/clone-linked-list-next-random-pointer-o1-space/](https://www.geeksforgeeks.org/clone-linked-list-next-random-pointer-o1-space/)
+
 给定一个链表，每个节点中都有两个指针。 第一个指针指向列表的下一个节点，但是，另一个指针是随机的，可以指向列表的任何节点。 编写一个在`O(1)`空间中克隆给定列表的程序，即没有任何额外空间。
 
 **范例**：

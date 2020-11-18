@@ -1,5 +1,7 @@
 # 查找链接列表的长度（迭代和递归）
 
+> 原文：[https://www.geeksforgeeks.org/find-length-of-a-linked-list-iterative-and-recursive/](https://www.geeksforgeeks.org/find-length-of-a-linked-list-iterative-and-recursive/)
+
 编写一个函数以计算给定单链列表中的节点数。
 
 [![linkedlist_find_length](img/e38a7cce1aae90394ef3ebc5cd8323c1.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2015/03/Linkedlist_find_length.png)

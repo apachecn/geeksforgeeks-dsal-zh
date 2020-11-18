@@ -1,5 +1,7 @@
 # 展平链表 | 系列 2
 
+> 原文：[https://www.geeksforgeeks.org/flattening-a-linked-list-set-2/](https://www.geeksforgeeks.org/flattening-a-linked-list-set-2/)
+
 给定[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)，其中每个节点代表一个链接列表，并包含两个其类型的指针：
 
 *   指向主列表中下一个节点的指针（在下面的代码中我们称其为“正确”指针）

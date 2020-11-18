@@ -1,5 +1,7 @@
 # 使用`O(1)`额外空间的链表中最长回文列表的长度
 
+> 原文：[https://www.geeksforgeeks.org/length-longest-palindrome-list-linked-list-using-o1-extra-space/](https://www.geeksforgeeks.org/length-longest-palindrome-list-linked-list-using-o1-extra-space/)
+
 给定一个链表，找到该链表中存在的最长回文列表的长度。
 
 例子：

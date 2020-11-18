@@ -1,5 +1,7 @@
 # 使用合并排序的两个链接列表的差异
 
+> 原文：[https://www.geeksforgeeks.org/difference-of-two-linked-lists-using-merge-sort/](https://www.geeksforgeeks.org/difference-of-two-linked-lists-using-merge-sort/)
+
 给定两个链表，任务是创建一个链表来存储链表 1 与链表 2 的差异，即链表 1 中的元素而不是链表 2 中的元素。
 
 **示例**：

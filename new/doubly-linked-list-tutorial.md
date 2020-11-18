@@ -1,5 +1,7 @@
 # 双链表指南
 
+> 原文：[https://www.geeksforgeeks.org/doubly-linked-list-tutorial/](https://www.geeksforgeeks.org/doubly-linked-list-tutorial/)
+
 [双链接列表（DLL）](https://www.geeksforgeeks.org/doubly-linked-list/)包含一个额外的指针（通常称为前一个指针）以及在单个链接列表中的下一个指针和数据。
 
 [![](img/1fac4717827a04f080fae80f8fd57fe7.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png)

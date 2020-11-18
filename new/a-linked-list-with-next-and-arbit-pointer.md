@@ -1,5 +1,7 @@
 # 使用下一个随机指针克隆链接列表 | 系列 1
 
+> 原文：[https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/](https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/)
+
 您会得到一个双链接列表，每个节点的一个指针指向下一个节点，就像在单个链接列表中一样。 但是，第二个指针可以指向列表中的任何节点，而不仅仅是前一个节点。 现在以`O(n)`时间编写一个程序来复制此列表。 也就是说，编写一个程序来创建此列表的副本。
 
 让我们将第二个指针称为仲裁指针，因为它可以指向链表中的任意节点。

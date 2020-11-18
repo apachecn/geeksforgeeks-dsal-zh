@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/iterative-merge-sort-for-linked-list/](https://www.geeksforgeeks.org/iterative-merge-sort-for-linked-list/)
+
 的迭代合并排序
 
 给定一个整数的单链列表，任务是使用迭代合并排序对其进行排序。

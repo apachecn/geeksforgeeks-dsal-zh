@@ -1,5 +1,7 @@
 # 单链接列表
 
+> 原文：[https://www.geeksforgeeks.org/sum-and-product-of-all-fibonacci-nodes-of-a-singly-linked-list/](https://www.geeksforgeeks.org/sum-and-product-of-all-fibonacci-nodes-of-a-singly-linked-list/)
+
 的所有斐波那契节点的总和与乘积
 
 给定一个包含 **N 个**节点的[单链列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从列表中找到其数据值为斐波那契数的所有节点的和与积。

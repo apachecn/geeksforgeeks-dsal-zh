@@ -1,5 +1,7 @@
 # 检查字符串的链接列表是否形成回文
 
+> 原文：[https://www.geeksforgeeks.org/check-linked-list-strings-form-palindrome/](https://www.geeksforgeeks.org/check-linked-list-strings-form-palindrome/)
+
 给定一个处理字符串数据的链表，检查数据是否为回文？
 
 例如，

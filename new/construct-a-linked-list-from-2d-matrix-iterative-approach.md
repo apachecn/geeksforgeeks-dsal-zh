@@ -1,5 +1,7 @@
 # 从 2D 矩阵构造一个链表（迭代方法）
 
+> 原文：[https://www.geeksforgeeks.org/construct-a-linked-list-from-2d-matrix-iterative-approach/](https://www.geeksforgeeks.org/construct-a-linked-list-from-2d-matrix-iterative-approach/)
+
 给定一个矩阵，任务是构造一个链表列表矩阵，其中每个节点都连接到其右下节点。
 
 **示例**：

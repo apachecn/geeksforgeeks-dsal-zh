@@ -1,5 +1,7 @@
 # 已对绝对值进行排序的链接列表
 
+> 原文：[https://www.geeksforgeeks.org/sort-linked-list-already-sorted-absolute-values/](https://www.geeksforgeeks.org/sort-linked-list-already-sorted-absolute-values/)
+
 给定一个基于绝对值排序的链表。 根据实际值对列表进行排序。
 
 **示例**：

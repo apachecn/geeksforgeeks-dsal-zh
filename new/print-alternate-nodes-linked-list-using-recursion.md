@@ -1,5 +1,7 @@
 # 使用递归
 
+> 原文：[https://www.geeksforgeeks.org/print-alternate-nodes-linked-list-using-recursion/](https://www.geeksforgeeks.org/print-alternate-nodes-linked-list-using-recursion/)
+
 打印链表的备用节点
 
 给定一个链表，请打印此链表的备用节点。

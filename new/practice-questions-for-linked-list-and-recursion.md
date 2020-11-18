@@ -1,5 +1,7 @@
 # 链接列表和递归
 
+> 原文：[https://www.geeksforgeeks.org/practice-questions-for-linked-list-and-recursion/](https://www.geeksforgeeks.org/practice-questions-for-linked-list-and-recursion/)
+
 的练习题
 
 假定“链表”节点的结构如下。

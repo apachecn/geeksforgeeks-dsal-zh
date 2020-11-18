@@ -1,5 +1,7 @@
 # 在 C 和 Java 中查找给定链表的中间部分
 
+> 原文：[https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)
+
 给定一个单链表，找到链表的中间。 例如，如果给定的链表为 1-> 2-> 3-> 4-> 5，则输出应为 3。
 
 如果有偶数节点，则将有两个中间节点，我们需要打印第二个中间节点 元件。 例如，如果给定的链表是 1- > 2- > 3- > 4- > 5- > 6，则输出应为 4。

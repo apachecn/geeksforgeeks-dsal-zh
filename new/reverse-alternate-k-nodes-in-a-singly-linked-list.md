@@ -1,5 +1,7 @@
 # 反向链接单个链表
 
+> 原文：[https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list/](https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list/)
+
 中的 K 个节点
 
 给定一个链表，编写一个函数以有效的方式反转每个备用 k 节点（其中 k 是函数的输入）。 给出算法的复杂性。

@@ -1,5 +1,7 @@
 # 数据结构简介| 10 种最常用的数据结构
 
+> 原文：[https://www.geeksforgeeks.org/introduction-to-data-structures-10-most-commonly-used-data-structures/](https://www.geeksforgeeks.org/introduction-to-data-structures-10-most-commonly-used-data-structures/)
+
 [数据结构](https://www.geeksforgeeks.org/data-structures/)是在计算机中组织数据的一种特殊方式，因此可以有效地使用它。 这个想法是为了减少不同任务的时间和空间复杂度。
 
 以下是一些流行的数据结构的概述：

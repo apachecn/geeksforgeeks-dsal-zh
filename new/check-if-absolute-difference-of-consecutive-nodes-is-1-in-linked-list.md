@@ -1,5 +1,7 @@
 # 检查链接列表
 
+> 原文：[https://www.geeksforgeeks.org/check-if-absolute-difference-of-consecutive-nodes-is-1-in-linked-list/](https://www.geeksforgeeks.org/check-if-absolute-difference-of-consecutive-nodes-is-1-in-linked-list/)
+
 中连续节点的绝对差是否为 1
 
 给定一个单链表。 任务是检查链接列表中连续节点之间的绝对差是否为 1。

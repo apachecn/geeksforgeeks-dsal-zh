@@ -1,5 +1,7 @@
 # 链接列表
 
+> 原文：[https://www.geeksforgeeks.org/next-greater-element-in-the-linked-list/](https://www.geeksforgeeks.org/next-greater-element-in-the-linked-list/)
+
 中的下一个更大元素
 
 给定整数的[链表](http://www.geeksforgeeks.org/data-structures/linked-list/) **L** ，任务是返回整数的链表，以使其在给定链接的每个元素中都包含[下一个更大的元素](http://www.geeksforgeeks.org/next-greater-element/) 清单。 如果任何元素都没有更大的元素，请为其插入`0`。

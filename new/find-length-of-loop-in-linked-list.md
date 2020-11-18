@@ -1,5 +1,7 @@
 # 在链接列表
 
+> 原文：[https://www.geeksforgeeks.org/find-length-of-loop-in-linked-list/](https://www.geeksforgeeks.org/find-length-of-loop-in-linked-list/)
+
 中查找循环长度
 
 编写一个函数 *detectAndCountLoop（）*，该函数检查给定的链表是否包含循环，如果存在循环，则返回循环中的节点数。 例如，该循环存在于以下链接的列表中，并且循环的长度为 4。如果不存在该循环，则该函数应返回 0。

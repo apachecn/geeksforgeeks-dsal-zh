@@ -1,5 +1,7 @@
 # 循环链表
 
+> 原文：[https://www.geeksforgeeks.org/sum-and-product-of-nodes-with-value-as-even-digit-sum-in-circular-linked-list/](https://www.geeksforgeeks.org/sum-and-product-of-nodes-with-value-as-even-digit-sum-in-circular-linked-list/)
+
 中值为偶数和的节点的总和和乘积
 
 给定一个包含 **N** 个节点的循环单链接列表，任务是从列表中找到其数据值具有偶数和的所有节点的和与乘积。

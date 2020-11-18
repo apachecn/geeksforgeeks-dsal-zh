@@ -1,5 +1,7 @@
 # 从 2D 矩阵
 
+> 原文：[https://www.geeksforgeeks.org/construct-a-doubly-linked-linked-list-from-2d-matrix/](https://www.geeksforgeeks.org/construct-a-doubly-linked-linked-list-from-2d-matrix/)
+
 构造一个双向链接链表
 
 给定 2D [矩阵](https://www.geeksforgeeks.org/matrix/)，任务是将其转换为[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)，并使用四个指针分别指向下一个，上一个，上一个和下一个，该列表的每个节点应为 连接到其下一个，上一个，上和下节点。

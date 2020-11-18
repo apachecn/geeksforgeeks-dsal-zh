@@ -1,5 +1,7 @@
 # 交替拆分链表
 
+> 原文：[https://www.geeksforgeeks.org/recursive-approach-alternating-split-linked-list/](https://www.geeksforgeeks.org/recursive-approach-alternating-split-linked-list/)
+
 的递归方法
 
 给定一个链表，将链表分为两个备用节点。

@@ -1,5 +1,7 @@
 # 明智地旋转链接列表
 
+> 原文：[https://www.geeksforgeeks.org/rotate-linked-list-block-wise/](https://www.geeksforgeeks.org/rotate-linked-list-block-wise/)
+
 给定长度为 n 和块长度为**的链表，k** 循环向每个块右/左旋转 **d** 。 如果 **d** 为正，则向右旋转，否则向左旋转。
 
 **示例**：

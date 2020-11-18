@@ -1,5 +1,7 @@
 # 检查给定链表的长度是偶数还是奇数
 
+> 原文：[https://www.geeksforgeeks.org/check-whether-the-length-of-given-linked-list-is-even-or-odd/](https://www.geeksforgeeks.org/check-whether-the-length-of-given-linked-list-is-even-or-odd/)
+
 给定一个链表，任务是创建一个函数来检查链表的长度是偶数还是奇数。
 
 示例：

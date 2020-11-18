@@ -1,5 +1,7 @@
 # 程序从单链接列表
 
+> 原文：[https://www.geeksforgeeks.org/program-to-delete-all-even-nodes-from-a-singly-linked-list/](https://www.geeksforgeeks.org/program-to-delete-all-even-nodes-from-a-singly-linked-list/)
+
 中删除所有偶数节点
 
 给定一个 [**单链列表**](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/) 包含 **N** 个节点，任务是从列表中删除所有偶数节点。

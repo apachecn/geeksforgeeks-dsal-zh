@@ -1,5 +1,7 @@
 # 链表
 
+> 原文：[https://www.geeksforgeeks.org/squarerootnth-node-in-a-linked-list/](https://www.geeksforgeeks.org/squarerootnth-node-in-a-linked-list/)
+
 中的平方根（n）个节点
 
 给定一个链表，编写一个函数，该函数接受链表的头节点作为参数，并返回链表中第（floor（sqrt（n）））个位置上存在的节点的值，其中 n 是长度。 链接列表或列表中的节点总数。

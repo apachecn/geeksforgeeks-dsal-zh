@@ -1,5 +1,7 @@
 # 从列表中删除可被给定数字 K 整除的所有节点
 
+> 原文：[https://www.geeksforgeeks.org/delete-all-the-nodes-from-the-list-which-are-divisible-by-any-given-number-k/](https://www.geeksforgeeks.org/delete-all-the-nodes-from-the-list-which-are-divisible-by-any-given-number-k/)
+
 给定一个链表和一个密钥 K。任务是编写一个程序，删除列表中所有可被 K 整除的节点。
 
 **示例**：

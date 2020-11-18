@@ -1,5 +1,7 @@
 # 使用递归
 
+> 原文：[https://www.geeksforgeeks.org/create-a-circular-list-structure-for-given-value-k-using-recursion/](https://www.geeksforgeeks.org/create-a-circular-list-structure-for-given-value-k-using-recursion/)
+
 为给定值 K 创建循环列表结构
 
 给定数字 **K** ，任务是使用四个指针创建循环链接列表结构，四个指针分别是“使用递归”的下一个，上一个，上一个和下一个。

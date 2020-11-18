@@ -1,5 +1,7 @@
 # 使用链接列表
 
+> 原文：[https://www.geeksforgeeks.org/find-first-non-repeating-character-in-a-given-string-using-linked-list/](https://www.geeksforgeeks.org/find-first-non-repeating-character-in-a-given-string-using-linked-list/)
+
 查找给定字符串中的第一个非重复字符
 
 给定长度为 **L** 的字符串 **str** ，任务是查找字符串中第一个非重复字符。

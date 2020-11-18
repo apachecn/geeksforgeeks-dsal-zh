@@ -1,5 +1,7 @@
 # 在第 k 个位置将整个链表插入另一个
 
+> 原文：[https://www.geeksforgeeks.org/insert-whole-linked-list-k-th-position/](https://www.geeksforgeeks.org/insert-whole-linked-list-k-th-position/)
+
 给定两个链表和一个数字 k。 将第二个链接列表插入第 k 个第一个链接列表
 
 **示例**：

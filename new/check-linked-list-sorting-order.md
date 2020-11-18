@@ -1,5 +1,7 @@
 # 检查链接列表是否已排序（迭代和递归）
 
+> 原文：[https://www.geeksforgeeks.org/check-linked-list-sorting-order/](https://www.geeksforgeeks.org/check-linked-list-sorting-order/)
+
 给定一个链表，任务是检查链表是否以降序排序？
 
 **示例**：

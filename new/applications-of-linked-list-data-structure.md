@@ -1,5 +1,7 @@
 # 链表数据结构的应用
 
+> 原文：[https://www.geeksforgeeks.org/applications-of-linked-list-data-structure/](https://www.geeksforgeeks.org/applications-of-linked-list-data-structure/)
+
 链表是一种线性数据结构，其中的元素未存储在连续的内存位置。 链接列表中的元素使用指针链接，如下图所示：
 
 ![](img/d97a233bf3c89e80c46e6a3193e851d6.png)

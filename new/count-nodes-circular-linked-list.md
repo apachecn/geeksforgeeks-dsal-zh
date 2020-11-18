@@ -1,5 +1,7 @@
 # 循环链接列表
 
+> 原文：[https://www.geeksforgeeks.org/count-nodes-circular-linked-list/](https://www.geeksforgeeks.org/count-nodes-circular-linked-list/)
+
 中的节点计数
 
 给定一个循环链表，计算其中的节点数。 例如，以下列表的输出为 5。

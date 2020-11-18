@@ -1,5 +1,7 @@
 # 查找给定链接列表
 
+> 原文：[https://www.geeksforgeeks.org/find-the-product-of-first-k-nodes-of-the-given-linked-list/](https://www.geeksforgeeks.org/find-the-product-of-first-k-nodes-of-the-given-linked-list/)
+
 的前 k 个节点的乘积
 
 给定一个指向单链表头的指针和一个整数 **k** 。 任务是找到链表中第一个 **k** 个节点的乘积。

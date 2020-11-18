@@ -1,5 +1,7 @@
 # 查找通过链接链接列表
 
+> 原文：[https://www.geeksforgeeks.org/find-the-string-formed-by-joining-k-consecutive-nodes-of-linked-list/](https://www.geeksforgeeks.org/find-the-string-formed-by-joining-k-consecutive-nodes-of-linked-list/)
+
 的 k 个连续节点形成的字符串
 
 给定一个整数 **K** 和一个链表，其中每个节点都存储一个字符。 任务是加入链表的每个 **K** 个连续节点，以形成一个单词。 最后，打印通过连接这些单词获得的字符串（以空格分隔）。

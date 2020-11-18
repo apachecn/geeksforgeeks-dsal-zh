@@ -1,5 +1,7 @@
 # 自组织列表：转到最前面的方法
 
+> 原文：[https://www.geeksforgeeks.org/self-organizing-list-move-front-method/](https://www.geeksforgeeks.org/self-organizing-list-move-front-method/)
+
 [自组织列表](https://www.geeksforgeeks.org/self-organizing-list-set-1-introduction/)是重新组织或重新安排自身以获得更好性能的列表。 在一个简单列表中，以顺序方式查找要搜索的项目，该方式给出了`O(n)`的时间复杂度。 但是在实际情况下，并非所有项目都会被频繁搜索，并且在大多数情况下，只有很少的项目会被多次搜索。
 
 因此，自组织列表使用此属性（也称为参考的**局部性）将最常用的项目放在列表的顶部。 这增加了在列表的开头找到该项目的可能性，并且那些很少使用的元素被推到列表的后面。**

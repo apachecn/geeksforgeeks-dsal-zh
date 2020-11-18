@@ -1,5 +1,7 @@
 # 布伦特循环检测算法
 
+> 原文：[https://www.geeksforgeeks.org/brents-cycle-detection-algorithm/](https://www.geeksforgeeks.org/brents-cycle-detection-algorithm/)
+
 给定一个链表，请检查链表是否具有循环。 下图显示了带有循环的链表。
 
 [![](img/de522899e01a1322ab2808eeff1ad73e.png "Linked List Loop")](https://media.geeksforgeeks.org/wp-content/cdn-uploads/2009/04/Linked-List-Loop.gif)
