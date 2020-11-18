@@ -11,9 +11,9 @@
 
 在以下实现中，我们以有序方式遍历树。 我们在当前链接列表的开头添加节点，并使用指向head指针的指针更新列表的开头。 由于我们在开始时插入，因此我们需要以相反的顺序处理叶子。 对于逆序，我们首先在左子树之前遍历右子树。 即执行反向有序遍历。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to convert a given Binary Tree to Doubly Linked List 
 #include <bits/stdc++.h> 
@@ -103,9 +103,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to convert a given Binary Tree to Doubly Linked List 
 
@@ -198,7 +198,7 @@ class BinaryTree {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to convert a given Binary Tree to Doubly Linked List  
 class Node: 
@@ -272,9 +272,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to convert a given Binary Tree to Doubly Linked List 
 using System; 
@@ -378,4 +378,3 @@ Extracted Double Linked list is:
 
 本文由 **Aditya Goel** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

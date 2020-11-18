@@ -14,9 +14,9 @@
 
 以下是上述想法的实现。 所有合并排序功能均取自[这里](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)。 在此修改了采用的函数，以便它们在仲裁指针上工作，而不是在下一个指针上工作。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to populate arbit pointers  
 // to next higher value using merge sort  
@@ -207,7 +207,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to populate arbit pointers to next higher value 
 // using merge sort 
@@ -393,9 +393,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to populate arbit pointers  
 // to next higher value using merge sort 
@@ -554,9 +554,9 @@ class LinkedList
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to populate arbit pointers  
 // to next higher value using merge sort 
@@ -728,4 +728,3 @@ Traversal using Arbit Pointer
 
 本文由 **Saurabh Bansal** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

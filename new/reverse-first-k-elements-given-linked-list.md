@@ -30,9 +30,9 @@ Output :18->10->20->25->35->NULL
 
 ![](img/246bed7066049d1a1b9ea6d29c1a35b1.png)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for reversal of first k elements 
 // of given linked list 
@@ -132,9 +132,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for reversal of first k elements  
 // of given linked list  
@@ -336,9 +336,9 @@ printList(head) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for reversal of first k elements  
 // of given linked list  
@@ -458,7 +458,7 @@ Modified list
 
 **时间复杂度：** O（n）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

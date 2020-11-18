@@ -17,9 +17,9 @@ Output : 0->0->6->2->3
 
 我们递归地减少k的值。 当k达到1时，我们删除当前节点，然后将当前节点的下一个作为新节点返回。 当函数返回时，我们将返回的节点链接为上一个节点的下一个节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Recursive CPP program to delete k-th node  
 // of a linked list 
@@ -101,9 +101,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Recursive Java program to delete k-th node  
 // of a linked list  
@@ -189,7 +189,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Recursive Java program to delete k-th node  
 # of a linked list  
@@ -262,9 +262,9 @@ printList(head) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // Recursive C# program to delete k-th node  
 // of a linked list  
@@ -361,4 +361,3 @@ Modified Linked List: 12 15 11 5 6 2 3
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

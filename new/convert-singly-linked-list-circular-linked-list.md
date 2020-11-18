@@ -8,9 +8,9 @@
 
 **方法：**想法是遍历单链列表并检查该节点是否为最后一个节点。 如果该节点是最后一个节点，即指向NULL，则使其指向起始节点，即头节点。 下面是此方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Program for converting singly linked list 
 // into circular linked list. 
@@ -102,9 +102,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Program for converting  
 // singly linked list into 
@@ -210,7 +210,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 program for converting  
 # singly linked list into  
@@ -300,9 +300,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program for converting  
 // singly linked list into  
@@ -419,4 +419,3 @@ Display list:
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

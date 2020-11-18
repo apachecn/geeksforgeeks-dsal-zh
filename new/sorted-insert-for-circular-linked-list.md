@@ -38,9 +38,9 @@
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for sorted insert 
 // in circular linked list 
@@ -139,7 +139,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 #include<stdio.h> 
 #include<stdlib.h> 
@@ -232,9 +232,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for sorted insert in circular linked list 
 
@@ -429,9 +429,9 @@ start.printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for sorted insert  
 // in circular linked list  
@@ -575,4 +575,3 @@ else if (current->data >= new_node->data)
 
 如果您发现上述代码/算法有误，请写评论，或者找到其他解决相同问题的方法。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -25,9 +25,9 @@
 
 **方法：**的想法是使用[循环链表](https://www.geeksforgeeks.org/circular-linked-list/)。 根据士兵N的数量创建一个循环链表。根据规则，您必须杀死相邻的士兵并将剑移交给下一个士兵，而后者又会杀死其相邻​​的士兵并将剑移交给下一个士兵。 因此，在循环链表中，相邻的士兵被杀死，其余的士兵以循环的方式互相对抗，只有一名士兵被任何人杀害而幸存。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code to find the luckiest person 
 #include <bits/stdc++.h> 
@@ -101,9 +101,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to find the luckiest person  
 class GFG 
@@ -180,9 +180,9 @@ public static void main(String args[]) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to find the luckiest person  
 using System; 
@@ -268,7 +268,7 @@ public static void Main(String []args) 
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

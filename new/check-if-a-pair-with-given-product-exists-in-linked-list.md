@@ -21,9 +21,9 @@ Output : No Pair Exists
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code to find the pair with given product 
 #include <bits/stdc++.h> 
@@ -99,9 +99,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java code to find the pair 
 // with given product 
@@ -189,7 +189,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 code to find the pair with  
 # given product  
@@ -260,9 +260,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# code to find the pair 
 // with given product 
@@ -366,9 +366,9 @@ NO PAIR EXIST
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code to find the pair with given product 
 #include <bits/stdc++.h> 
@@ -447,9 +447,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to find the pair with given product 
 import java.util.*; 
@@ -535,7 +535,7 @@ class Solution {
 
 ## Python3
 
-```
+```py
 
 # Python3 code to find the pair with 
 # given product  
@@ -605,9 +605,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to find the pair with given product 
 using System; 
@@ -701,7 +701,7 @@ class GFG {
 **时间复杂度：** O（N）
 **辅助空间：** O（N）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

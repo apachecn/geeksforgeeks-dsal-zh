@@ -20,9 +20,9 @@ Output : 4
 2）遍历链表，并在第m个节点中逐个删除，直到剩下一个节点为止。
 3）返回唯一左节点的值。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find last man standing 
 #include<bits/stdc++.h> 
@@ -97,9 +97,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Code to find the last man Standing  
 public class GFG { 
@@ -167,9 +167,9 @@ public class GFG {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Code to find the last man Standing  
 using System; 
@@ -252,4 +252,3 @@ Last person left standing (Josephus Position) is 13
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

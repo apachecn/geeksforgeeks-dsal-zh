@@ -19,9 +19,9 @@
 
 这是一种用于反转双链表的简单方法。 我们需要做的就是交换所有节点的prev和next指针，更改head的prev（或start），最后更改head的指针。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ program to reverse a doubly linked list */
 #include <bits/stdc++.h>
@@ -126,7 +126,7 @@ int main()
 
 ## C
 
-```
+```c
 
 /* Program to reverse a doubly linked list */
 #include <stdio.h>
@@ -226,9 +226,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to reverse a doubly linked list
 
@@ -414,9 +414,9 @@ dll.printList(dll.head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to reverse a doubly linked list
 using System;
@@ -546,9 +546,9 @@ The reversed Linked List is
 1.  继续将节点的数据压入堆栈。 -> O（n）
 2.  不断弹出元素并更新双链表
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to reverse a doubly linked list
 import java.util.*;
@@ -668,4 +668,3 @@ The reversed Linked List is
 
 在这种方法中，我们一次遍历链表并将元素添加到堆栈中，然后再次遍历整个列表以更新所有元素。 整个过程耗时2n，即O（n）的时间复杂度。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

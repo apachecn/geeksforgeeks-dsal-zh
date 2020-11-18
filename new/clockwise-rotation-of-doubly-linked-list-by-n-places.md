@@ -19,9 +19,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to rotate a Doubly linked 
 // list clock wise by N times 
@@ -176,9 +176,9 @@ int main(void)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to rotate a Doubly linked 
 // list clock wise by N times 
@@ -345,7 +345,7 @@ public static void main(String []args) 
 
 ## Python3
 
-```
+```py
 
 # Node of a doubly linked list  
 class Node:  
@@ -488,9 +488,9 @@ if __name__ == "__main__": 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to rotate a Doubly linked 
 // list clock wise by N times 
@@ -665,11 +665,11 @@ a <=> b <=> c <=> d <=> e
 Rotated Linked list clockwise 
 d <=> e <=> a <=> b <=> c
 
-```
+```c
 
 **时间复杂度：** O（n），其中n是链接列表中的节点数。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

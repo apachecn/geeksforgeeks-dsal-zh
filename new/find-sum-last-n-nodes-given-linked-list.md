@@ -22,9 +22,9 @@ Output : 44
 **方法1 ：（使用系统调用堆栈的递归方法）**
 递归遍历链表直到最后。 现在，在从函数调用返回的过程中，将最后 **n个**节点加起来。 总和可以累积在通过引用传递给该函数的某个变量或某个全局变量中。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the sum of 
 // last 'n' nodes of the Linked List 
@@ -113,9 +113,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the sum of 
 // last 'n' nodes of the Linked List 
@@ -215,7 +215,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to find the sum of 
 # last 'n' nodes of the Linked List 
@@ -306,9 +306,9 @@ print("Sum of last " , n , 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the sum of 
 // last 'n' nodes of the Linked List 
@@ -419,9 +419,9 @@ Sum of last 2 nodes = 16
 **方法2（使用用户定义堆栈的迭代方法）**
 这是对**此**中**方法1** 解释的递归方法的迭代过程。 从左到右遍历节点。 遍历时将节点推送到用户定义的堆栈。 然后从堆栈中弹出顶部的 **n** 个值并将其添加。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the sum of last 
 // 'n' nodes of the Linked List 
@@ -502,9 +502,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the sum of last 
 // 'n' nodes of the Linked List 
@@ -595,7 +595,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to find the sum of  
 # last 'n' nodes of the Linked List  
@@ -677,9 +677,9 @@ print("Sum of last" , n , 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the sum of last 
 // 'n' nodes of the Linked List 
@@ -788,9 +788,9 @@ Sum of last 2 nodes = 16
 4.  将链接列表恢复为原始顺序。
 5.  返回相加的总和。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the sum of last 
 // 'n' nodes of the Linked List 
@@ -887,9 +887,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the sum of last 
 // 'n' nodes of the Linked List 
@@ -995,9 +995,9 @@ public static void main(String[] args) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the sum of last 
 // 'n' nodes of the Linked List 
@@ -1121,9 +1121,9 @@ Sum of last 2 nodes = 16
 3.  然后遍历其余的 **n个**节点，并在遍历时将它们添加。
 4.  返回相加的总和。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the sum of last 
 // 'n' nodes of the Linked List 
@@ -1212,9 +1212,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the sum of last  
 // 'n' nodes of the Linked List  
@@ -1312,9 +1312,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the sum of last  
 // 'n' nodes of the Linked List  
@@ -1426,9 +1426,9 @@ Sum of last 2 nodes = 16
 **方法5（使用两个指针需要单遍历）**
 维护两个指针–参考指针和主指针。 初始化引用和主指向head的指针。 首先将参考指针从头移到**个**节点，然后将累积的节点数据遍历到某个变量，例如 **sum** 。 现在，同时移动两个指针，直到参考指针到达列表的末尾，并在遍历时将所有节点的数据累加到**和由参考指针指向的**并将所有节点的数据累加到某个变量，例如 **temp [** ，由主指针指向。 现在，**（总和-温度）**是最后 **n个**节点的必需总和。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the sum of last 
 // 'n' nodes of the Linked List 
@@ -1519,9 +1519,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the sum of last 
 // 'n' nodes of the Linked List 
@@ -1631,9 +1631,9 @@ class GfG
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the sum of last  
 // 'n' nodes of the Linked List  
@@ -1759,4 +1759,3 @@ Sum of last 2 nodes = 16
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

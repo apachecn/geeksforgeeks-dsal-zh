@@ -23,9 +23,9 @@ Output :10 12 30 43 50 56
 3.  如果要插入的节点的值大于链接列表的最后一个节点的值，则从最后一个节点的下一个字段连接该节点。
 4.  如果要插入的节点的值在第一个节点与最后一个节点的值之间，则检查适当的位置并建立连接。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ program to insetail nodes in doubly  
 linked list such that list remains in  
@@ -134,7 +134,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 /* C program to insetail nodes in doubly 
 linked list such that list remains in 
@@ -238,9 +238,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Java program to insetail nodes in doubly  
 linked list such that list remains in  
@@ -440,9 +440,9 @@ printList(head) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* C# program to insetail nodes in doubly  
 linked list such that list remains in  
@@ -554,7 +554,7 @@ Doubly linked list on printing from left to right
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

@@ -19,9 +19,9 @@ Output : Linked list should be changed to,
 
 在文章[反向链接列表](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/)中，我们已经看到了如何反向链接列表。 在**迭代方法**中，我们使用了3个指针 **prev，cur** 和 **next** 。 下面是一种仅使用两个指针的有趣方法。 这个想法是使用XOR交换指针。
 
-## C / C ++
+## C / C++
 
-```
+```cpp
 
 // C++ program to reverse a linked list using two pointers. 
 #include <bits/stdc++.h> 
@@ -195,9 +195,9 @@ Reversed Linked list
 [http://discuss.joelonsoftware.com/default.asp?interview.11.564944.16](http://discuss.joelonsoftware.com/default.asp?interview.11.564944.16)
  **替代解决方案：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to reverse a linked list using two pointers. 
 #include <bits/stdc++.h> 
@@ -265,7 +265,7 @@ int main()
 
 ## Python3
 
-```
+```py
 
 # Python3 program to reverse a linked list using two pointers. 
 
@@ -341,4 +341,3 @@ Reversed Linked list
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -27,9 +27,9 @@
 
 **以下是静态队列**的实现：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to implement a queue using an array 
 class Queue { 
@@ -156,9 +156,9 @@ public class StaticQueueinjava {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to implement a queue using an array 
 using System;  
@@ -316,9 +316,9 @@ Front Element is: 40
 
 **下面是单链接列表**的实现：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to implement singly linked list 
 class SinglyLList { 
@@ -476,9 +476,9 @@ public class GFG {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to implement singly linked list  
 using System; 
@@ -664,7 +664,7 @@ after deleting node: second, first and last
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

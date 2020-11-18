@@ -30,9 +30,9 @@ Output: 27x^6 - 24x^5 + 75x^4 - 123x^3 + 114x^2 - 51x^1 - 18
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of the above approach
 #include <bits/stdc++.h>
@@ -196,9 +196,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of above approach 
 import java.util.*;
@@ -359,9 +359,9 @@ public static void main(String args[])
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of above approach 
 using System;
@@ -538,7 +538,7 @@ Resultant Polynomial:- 27x^6-24x^5+75x^4-123x^3+114x^2-51x^1-18
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

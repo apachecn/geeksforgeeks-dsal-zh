@@ -18,9 +18,9 @@
 
 **实施：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count occurrences in a linked list 
 #include <bits/stdc++.h> 
@@ -90,7 +90,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C program to count occurrences in a linked list 
 #include <stdio.h> 
@@ -155,9 +155,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count occurrences in a linked list 
 class LinkedList { 
@@ -283,9 +283,9 @@ print "count of 1 is % d" %(llist.count(1))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count occurrences in a linked list 
 using System; 
@@ -379,9 +379,9 @@ count(head->next, key)
 
 **实施：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count occurrences in 
 // a linked list using recursion 
@@ -447,9 +447,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count occurrences in 
 // a linked list using recursion 
@@ -527,7 +527,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python program to count the number of  
 # time a given int occurs in a linked list 
@@ -593,9 +593,9 @@ print ("count of 1 is", llist.count(llist.head, 1))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count occurrences in 
 // a linked list using recursion 
@@ -678,9 +678,9 @@ count of 1 is 3
 
 下面的方法可用于避免全局变量“ frequency”（在Python 3代码的情况下为反计数）。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // method can be used to avoid 
 // Global variable 'frequency' 
@@ -698,9 +698,9 @@ int count(struct Node* head, int key)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // method can be used to avoid 
 // Global variable 'frequency' 
@@ -720,9 +720,9 @@ int count(Node head, int key)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // method can be used to avoid 
 // Global variable 'frequency' 
@@ -745,7 +745,7 @@ static int count(Node head, int key) 
 
 ## Python3
 
-```
+```py
 
 def count(self, temp, key): 
 
@@ -789,4 +789,3 @@ int count(struct Node* head, int key)
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

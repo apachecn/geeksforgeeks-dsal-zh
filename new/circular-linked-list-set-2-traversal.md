@@ -30,9 +30,9 @@ void printList(struct Node *first)
 
 **演示遍历的完整程序。** 以下是演示遍历循环链表的完整程序。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to implement  
 // the above approach  
@@ -110,7 +110,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to implement 
 // the above approach 
@@ -181,9 +181,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to implement 
 // the above approach 
@@ -334,9 +334,9 @@ cllist.printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to implement  
 // the above approach  
@@ -434,4 +434,3 @@ Contents of Circular Linked List
 
 如果您发现上述代码/算法中的任何错误，或找到其他解决相同问题的方法，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

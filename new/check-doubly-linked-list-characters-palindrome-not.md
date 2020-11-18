@@ -8,9 +8,9 @@
 2.  在列表的开头向左初始化两个指针**，在列表的末尾初始化**的两个指针**。**
 3.  检查左节点的数据是否等于右节点的数据，如果相等，则向左递增，右递减直到列表的中间，如果在任何阶段不相等，则返回false。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check if doubly 
 // linked list is palindrome or not 
@@ -82,9 +82,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check if doubly 
 // linked list is palindrome or not 
@@ -160,7 +160,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 program to check if doubly  
 # linked list is a palindrome or not  
@@ -225,9 +225,9 @@ if __name__ == "__main__": 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to check if doubly 
 // linked list is palindrome or not 
@@ -322,4 +322,3 @@ It is Palindrome
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

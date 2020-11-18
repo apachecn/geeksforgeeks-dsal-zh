@@ -27,9 +27,9 @@
 *   如果字符与 **c** 相同，则增加计数。
 *   如果字符不同，则将计数添加到列表中，然后将下一个字符添加到列表中，将计数重置为 **1** 。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to encode a linked list 
 // using Run Length Encoding 
@@ -159,9 +159,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to encode a linked list 
 // using Run Length Encoding 
@@ -302,9 +302,9 @@ public static void main(String[] args) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to encode a linked list 
 // using Run Length Encoding 
@@ -560,7 +560,7 @@ a 3 b r 2
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

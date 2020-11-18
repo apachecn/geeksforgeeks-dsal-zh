@@ -18,9 +18,9 @@
 
 以下是上述算法的源代码。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program for in-place  
 // conversion of Binary Tree to DLL  
@@ -150,7 +150,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // A C program for in-place conversion of Binary Tree to DLL 
 #include <stdio.h> 
@@ -270,9 +270,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to convert binary tree to double linked list 
 
@@ -503,9 +503,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 using System; 
 
@@ -651,4 +651,3 @@ public class BinaryTree
 
 您可能还希望看到[将给定的二叉树转换为双链表| 设置2](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-2/) 为另一个简单有效的解决方案。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

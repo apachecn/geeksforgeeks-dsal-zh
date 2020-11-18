@@ -153,9 +153,9 @@ void DeleteAllEvenNode(struct Node** head)
 
 **删除偶数或奇数节点的程序**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to delete all even and odd position 
 // nodes from Singly Circular Linked list 
@@ -431,9 +431,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to delete all even and odd position 
 // nodes from Singly Circular Linked list 
@@ -738,9 +738,9 @@ public static void main(String args[])
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to delete all even and  
 // odd position nodes from  
@@ -1066,7 +1066,7 @@ After deletin even position nodes: 11 55
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

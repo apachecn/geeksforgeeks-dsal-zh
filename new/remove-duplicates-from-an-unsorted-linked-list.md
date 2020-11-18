@@ -7,9 +7,9 @@
 这是使用两个循环的简单方法。 外循环用于一个接一个地拾取元素，内循环将拾取的元素与其余元素进行比较。
 感谢Gaurav Saxena在编写此代码方面的帮助。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* Program to remove duplicates in an unsorted 
    linked list */
@@ -101,9 +101,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to remove duplicates from unsorted  
 // linked list 
@@ -182,9 +182,9 @@ class LinkedList {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to remove duplicates from unsorted  
 // linked list 
@@ -302,9 +302,9 @@ Linked list after removing duplicates:
 **方法3（使用散列）**
 我们从头到尾遍历链接列表。 对于每个新遇到的元素，我们检查它是否在哈希表中：如果是，则将其删除；否则，将其删除。 否则我们将其放在哈希表中。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* Program to remove duplicates in an unsorted 
    linked list */
@@ -392,9 +392,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to remove duplicates 
 // from unsorted linkedlist 
@@ -476,9 +476,9 @@ public class removeDuplicates 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to remove duplicates 
 // from unsorted linkedlist 
@@ -582,4 +582,3 @@ Linked list after removing duplicates:
 
 如果您发现上述任何解释/算法不正确，或者是解决同一问题的更好方法，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

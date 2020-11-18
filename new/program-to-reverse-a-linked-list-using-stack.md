@@ -22,9 +22,9 @@ Output : 2 -> 4 -> 7 -> 9
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C/C++ program to reverse linked list 
 // using stack 
@@ -110,9 +110,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to reverse linked list  
 // using stack  
@@ -204,7 +204,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 
 # Python3 program to reverse a linked 
 # list using stack  
@@ -279,9 +279,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to reverse linked list  
 // using stack  
@@ -384,7 +384,7 @@ public static void Main(String[] args) 
 
 我们可以使用O（1）辅助空间反转链表。 请参阅[更多方法来反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

@@ -23,7 +23,7 @@ Output : "ap"
 *   然后使用剩余的所有字符串一个接一个地循环访问链表，删除字符串用尽或链表用尽或字符不匹配之后的所有节点。
 *   链表中的其余数据是所需的最长公共前缀。
 
-下面是C ++中的实现
+下面是C++中的实现
 
 ```
 
@@ -169,7 +169,7 @@ The longest common prefix is gee
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

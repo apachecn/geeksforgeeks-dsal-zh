@@ -11,9 +11,9 @@
 
 **2）*固定右指针*：**上面的内容非常直观和简单。 如何更改指向DLL中下一个节点的右指针？ 这个想法是使用在步骤1中固定的左指针。我们从二叉树（BT）的最右边的节点开始。 最右边的节点是DLL中的最后一个节点。 由于左指针已更改为指向DLL中的上一个节点，因此我们可以使用这些指针线性遍历整个DLL。 遍历将是从最后一个节点到第一个节点。 在遍历DLL时，我们跟踪先前访问的节点，并更改指向先前节点的右指针。 请参见以下实现中的 *fixNextPtr（）*。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A simple inorder traversal based  
 // program to convert a Binary Tree to DLL  
@@ -142,7 +142,7 @@ int main(void) 
 
 ## C
 
-```
+```c
 
 // A simple inorder traversal based program to convert a Binary Tree to DLL 
 #include<stdio.h> 
@@ -256,9 +256,9 @@ int main(void)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to convert BTT to DLL using 
 // simple inorder traversal 
@@ -467,9 +467,9 @@ printList(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to convert BTT to DLL using  
 // simple inorder traversal  
@@ -610,4 +610,3 @@ public static void Main()
 
 本文由 **Bala** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

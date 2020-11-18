@@ -14,9 +14,9 @@
 
 以下是上述步骤的执行。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to point arbit pointers to highest 
 // value on its right 
@@ -122,9 +122,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to point arbit pointers to highest  
 // value on its right  
@@ -338,9 +338,9 @@ printNextArbitPointers(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to point arbit pointers   
 // to highest value on its right 
@@ -466,9 +466,9 @@ Node    Next Pointer    Arbit Pointer
 **递归解决方案：**
 我们可以递归到达最后一个节点并从末端遍历链表。 递归解决方案不需要反向链接列表。 我们还可以使用堆栈代替递归来临时保存节点。 感谢Santosh Kumar Mishra提供此解决方案。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to point arbit pointers to highest 
 // value on its right 
@@ -565,9 +565,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to point arbit pointers to highest 
 // value on its right 
@@ -669,7 +669,7 @@ class GfG
 
 ## Python3
 
-```
+```py
 
 # Python3 program to poarbit pointers to highest  
 # value on its right  
@@ -747,9 +747,9 @@ printNextArbitPointers(head) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to point arbit pointers to highest 
 // value on its right 
@@ -865,4 +865,3 @@ Node    Next Pointer    Arbit Pointer
 
 本文由 **Aditya Goel** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

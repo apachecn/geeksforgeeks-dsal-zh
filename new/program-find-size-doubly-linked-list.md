@@ -20,9 +20,9 @@
 ……b）size ++;
 4）返回大小。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A complete working C++ program to 
 // find size of doubly linked list. 
@@ -76,9 +76,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A complete working Java program to  
 // find size of doubly linked list.  
@@ -146,7 +146,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 
 # A complete working Python3 program to 
 # find size of doubly linked list. 
@@ -193,9 +193,9 @@ print(findSize(head))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A complete working C# program to  
 // find size of doubly linked list.  
@@ -267,7 +267,7 @@ class GFG 
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

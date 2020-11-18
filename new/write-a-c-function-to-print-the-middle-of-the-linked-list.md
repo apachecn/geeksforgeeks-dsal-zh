@@ -13,9 +13,9 @@
 
 ![](img/87a58a304325d77a9c1b2e53077246ea.png)
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include<bits/stdc++.h> 
 using namespace std; 
@@ -92,7 +92,7 @@ int main()
 
 ## C
 
-```
+```c
 
 #include<stdio.h> 
 #include<stdlib.h> 
@@ -167,9 +167,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find middle of linked list
 class LinkedList
@@ -271,9 +271,9 @@ The middle element is [3]
 将中间元素初始化为head，并将计数器初始化为0。从head遍历列表，同时遍历该计数器，并在计数器为奇数时将中间值更改为中间>。 。 因此，中部将仅移动列表总长度的一半。
 感谢Narendra Kangralkar提出了这种方法。
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -363,7 +363,7 @@ int main()
 
 ## C
 
-```
+```c
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -438,9 +438,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 class GFG{
 
@@ -549,4 +549,3 @@ https://www.youtube.com/watch?v=BrmGrIPGbgk 
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

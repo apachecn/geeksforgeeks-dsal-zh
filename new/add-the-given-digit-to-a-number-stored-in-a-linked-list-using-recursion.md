@@ -20,9 +20,9 @@
 
 下面是上述方法的实现：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the approach 
 
@@ -236,9 +236,9 @@ printList(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the approach  
 using System; 
@@ -367,7 +367,7 @@ class GFG
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**Java和Java Collections基础课程**](https://practice.geeksforgeeks.org/courses/Java-Collections?vC=1) 以对学生方便的价格掌握所有重要的Java和Collections概念，并为行业做好准备。
+
 
 * * *
 

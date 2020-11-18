@@ -10,9 +10,9 @@ i）将head作为第二个节点（* head_ref = first- >接下来）。
 ii）将first of next设置为NULL（first- > next = NULL）。
 iii）将倒数第二个设为第一（倒数->下一个=第一）
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ Program to move first element to end  
    in a given linked list */
@@ -103,9 +103,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Java Program to move first element to end  
 in a given linked list */
@@ -202,9 +202,9 @@ public static void main(String args[])
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* C# Program to move first element to end  
 in a given linked list */
@@ -305,7 +305,7 @@ public static void Main(String []args)
 
 ## Python3
 
-```
+```py
 
 # Python3 Program to move first element to end  
 # in a given linked list  
@@ -403,7 +403,7 @@ Linked list before moving first to end
 
 **时间复杂度：** O（n），其中n是给定链接列表中的节点数。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

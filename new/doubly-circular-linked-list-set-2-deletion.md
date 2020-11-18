@@ -26,9 +26,9 @@
 *   如果给定的*键*（说6）与列表的中间节点匹配（步骤6）：
     [![Delete_middle_node](img/a121670e94ed3cebfca957353bcfedbc.png)](https://media.geeksforgeeks.org/wp-content/uploads/Delete_middle_node.png)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to delete a given key from 
 // circular doubly linked list. 
@@ -191,9 +191,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to delete a given key from 
 // circular doubly linked list. 
@@ -356,7 +356,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to delete a given key from 
 # circular doubly linked list. 
@@ -516,9 +516,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to delete a given key from 
 // circular doubly linked list. 
@@ -698,4 +698,3 @@ List After Deleting 6: 5 7
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -17,9 +17,9 @@ Output : Modified linked list
 3）遍历链表直到最后
 4）将最后一个节点附加到第k个节点
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program for making loop at k-th index 
 // of given linked list 
@@ -119,9 +119,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for making loop at k-th index  
 // of given linked list  
@@ -229,7 +229,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 program for making loop at k-th index 
 # of given linked list 
@@ -319,9 +319,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for making loop at k-th index  
 // of given linked list  
@@ -439,7 +439,7 @@ Modified list
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

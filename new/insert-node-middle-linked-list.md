@@ -20,9 +20,9 @@ Output : 5->10->4->41->32->16
 **方法1（使用链接列表的长度）：**
 使用一个遍历查找节点数或链接的长度。 设为**等于**。 如果 **len** 是偶数，则计算 **c** =（len / 2），否则，如果 **len** ，则计算 **c** =（len + 1）/ 2 ]很奇怪。 再次遍历第一个 **c** 节点，并在第 **c** 个节点之后插入新节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to insert node at the middle 
 // of the linked list 
@@ -121,9 +121,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to insert node 
 // at the middle of the linked list 
@@ -226,7 +226,7 @@ class LinkedList
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to insert node 
 # at the middle of a linked list 
@@ -309,9 +309,9 @@ display(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to insert node  
 // at the middle of the linked list  
@@ -427,9 +427,9 @@ Linked list after insertion: 1 2 3 4 5
 **方法2（使用两个指针）：**
 基于乌龟和野兔算法，该算法使用两个指针，一个称为**慢速**，另一个称为**快速**。 该算法有助于找到链表的中间节点。 在此帖子的[正面和黑色拆分过程中对此进行了说明。 现在，您可以在通过上述过程获得的中间节点之后插入新节点。 这种方法只需要遍历列表。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to insert node at the middle 
 // of the linked list 
@@ -520,9 +520,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to insert node  
 // at the middle of the linked list 
@@ -621,7 +621,7 @@ class LinkedList
 
 ## Python3
 
-```
+```py
 
 # Python implementation to insert node  
 # at the middle of the linked list  
@@ -705,9 +705,9 @@ ll.display()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to insert node  
 // at the middle of the linked list 
@@ -819,4 +819,3 @@ Linked list after insertion: 1 2 3 4 5
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

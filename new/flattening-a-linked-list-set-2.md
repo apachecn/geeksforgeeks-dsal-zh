@@ -53,9 +53,9 @@ Output: 5->7->8->10->19->20->22->30->50
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for Flattening
 // a linked list using Heaps
@@ -198,9 +198,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for Flattening
 // a linked list using Heaps
@@ -380,7 +380,7 @@ class GFG {
 **时间复杂度：** *O（k * log k）+ O（（Nk）* log k）=* **O（N * log k）**，其中“ *k* '是最上面的水平链接列表中的节点数，' *N* '是所有链接列表中的节点总数。 ‘ *log k* ’占用最小堆时间。
 **辅助空间：[min-heap]的** **O（k）**，其中“ *k* ”是最顶部水平链表中的节点数。 最小堆在任何时候最多具有“ *k* ”个节点。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

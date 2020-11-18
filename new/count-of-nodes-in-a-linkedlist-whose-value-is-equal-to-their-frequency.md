@@ -22,9 +22,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* Link list node */
 #include <bits/stdc++.h>
@@ -97,9 +97,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Link list node */
 import java.util.*;
@@ -189,9 +189,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* Link list node */
 using System;
@@ -294,7 +294,7 @@ public static void Main(String[] args)
 **时间复杂度：**对于大小为 **n** 的给定链表，我们对其进行一次迭代。 因此，此解决方案的时间复杂度为 **O（n）**。
 **空间复杂度：**对于大小为 **n** 的给定链表，我们使用了一个额外的 映射最多可以具有n个键值，因此此解决方案的空间复杂度为 **O（n）**
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

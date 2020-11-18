@@ -3,9 +3,9 @@
 这篇文章解释了[这个](http://www.geeksforgeeks.org/given-linked-list-line-segments-remove-middle-points/)问题的迭代方法。
 我们维护两个指针：prev和temp。 如果这两个x或y相同，我们继续前进直到等式成立，并继续删除它们之间的节点。 从其开始相等的节点，我们调整该节点的下一个指针。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to remove intermediate  
 // points in a linked list that represents 
@@ -117,9 +117,9 @@ int main() {
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 class LinkedList 
 { 
@@ -249,7 +249,7 @@ class LinkedList
 
 ## Python3
 
-```
+```py
 
 # Python3 program to remove intermediate  
 # points in a linked list that represents 
@@ -351,9 +351,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to remove intermediate  
 // points in a linked list that represents 
@@ -497,7 +497,7 @@ Modified Linked List:
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

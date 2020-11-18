@@ -31,11 +31,11 @@ id [] = [1000，1010，1050，2000，2040]。
 1）数据
 2）指向下一个节点的指针（或引用）
 在C语言中，我们可以使用结构表示一个节点。 以下是带有整数数据的链表节点的示例。
-在Java或C＃中，LinkedList可以表示为一个类，而Node可以表示为单独的类。 LinkedList类包含Node类类型的引用。
+在Java或C#中，LinkedList可以表示为一个类，而Node可以表示为单独的类。 LinkedList类包含Node类类型的引用。
 
 ## C
 
-```
+```c
 
 // A linked list node 
 struct Node { 
@@ -45,9 +45,9 @@ struct Node {
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 class Node { 
 public: 
@@ -57,9 +57,9 @@ public:
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 class LinkedList { 
     Node head; // head of the list 
@@ -101,9 +101,9 @@ class LinkedList:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 class LinkedList { 
     // The first node(head) of the linked list 
@@ -123,9 +123,9 @@ class LinkedList {
 
 **C中的第一个简单链接列表**让我们创建一个包含3个节点的简单链接列表。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A simple CPP program to introduce 
 // a linked list 
@@ -230,7 +230,7 @@ anything yet */
 
 ## C
 
-```
+```c
 
 // A simple C program to introduce 
 // a linked list 
@@ -330,9 +330,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A simple Java program to introduce a linked list 
 class LinkedList { 
@@ -473,9 +473,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A simple C# program to introduce a linked list 
 using System; 
@@ -551,9 +551,9 @@ public class LinkedList {
 
 ## [我们强烈建议您单击此处并进行实践，然后再继续解决方案。](https://practice.geeksforgeeks.org/problem-page.php?pid=700004)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A simple C++ program for traversal of a linked list 
 #include <bits/stdc++.h> 
@@ -607,7 +607,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // A simple C program for traversal of a linked list 
 #include <stdio.h> 
@@ -655,9 +655,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A simple Java program for traversal of a linked list 
 class LinkedList { 
@@ -706,7 +706,7 @@ class LinkedList {
 
 ## Python3
 
-```
+```py
 
 # A simple Python program for traversal of a linked list 
 
@@ -750,9 +750,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A simple C# program for traversal of a linked list 
 using System; 
@@ -820,4 +820,3 @@ public class LinkedList {
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

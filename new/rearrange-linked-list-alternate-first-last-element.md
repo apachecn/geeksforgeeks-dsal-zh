@@ -22,9 +22,9 @@ Output :10->13->11->15
 2）将链接列表中的所有元素插入到双端队列
 3）将元素从双端队列重新插入到链表中 首先，然后最后，依此类推
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to rearrange a linked list in given manner 
 #include <bits/stdc++.h> 
@@ -115,9 +115,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to rearrange a linked list in given manner 
 import java.util.*; 
@@ -309,7 +309,7 @@ After rearrangement    1 5 2 4 3
 
 **时间复杂度：** O（n）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

@@ -23,9 +23,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to sort a linked list 0s, 1s or 2s  
 #include <bits/stdc++.h> 
@@ -134,7 +134,7 @@ int main(void) 
 
 ## C
 
-```
+```c
 
 // C Program to sort a linked list 0s, 1s or 2s 
 #include<stdio.h> 
@@ -239,9 +239,9 @@ int main(void)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to sort a linked list of 0, 1 and 2 
 class LinkedList 
@@ -446,9 +446,9 @@ llist.printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to sort a linked  
 // list of 0, 1 and 2 
@@ -583,4 +583,3 @@ Linked List After Sorting
 
 本文由 **Narendra Kangralkar** 编写。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

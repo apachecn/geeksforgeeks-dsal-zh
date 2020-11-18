@@ -42,9 +42,9 @@ Output: res: 20->3->2
 
 下面是上述解决方案的实现。
 
-## C / C ++
+## C / C++
 
-```
+```cpp
 
 /* Given two sorted non-empty linked lists. Merge them in 
    such a way that the result list will be in reverse 
@@ -179,9 +179,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to merge two sorted linked list such that merged  
 // list is in reverse order 
@@ -423,9 +423,9 @@ printList(res)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to merge two sorted  
 // linked list such that merged  
@@ -576,4 +576,3 @@ Merged Linked List is:
 
 本文由 [**Mohammed Raqeeb**](https://www.linkedin.com/in/mohammed-raqeeb-soudagar-951b345a) 贡献。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

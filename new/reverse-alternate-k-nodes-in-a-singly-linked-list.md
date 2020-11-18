@@ -26,9 +26,9 @@ kAltReverse(struct node *head, int k)
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to reverse alternate 
 // k nodes in a linked list 
@@ -142,7 +142,7 @@ int main(void) 
 
 ## C
 
-```
+```c
 
 #include<stdio.h> 
 #include<stdlib.h> 
@@ -249,9 +249,9 @@ int main(void)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to reverse alternate k nodes in a linked list 
 
@@ -346,7 +346,7 @@ class LinkedList {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to reverse alternate 
 # k nodes in a linked list 
@@ -443,9 +443,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to reverse alternate 
 // k nodes in a linked list  
@@ -582,9 +582,9 @@ _kAltReverse(struct node *head, int k, bool b)
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -714,7 +714,7 @@ int main(void) 
 
 ## C
 
-```
+```c
 
 #include<stdio.h> 
 #include<stdlib.h> 
@@ -837,9 +837,9 @@ int main(void)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to reverse alternate k nodes in a linked list 
 
@@ -1056,9 +1056,9 @@ printList(head) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program for converting  
 // singly linked list into  
@@ -1181,4 +1181,3 @@ Modified Linked list
 **时间复杂度：** O（n）
 如果您发现上述代码/算法不正确，或者找到其他解决同一问题的方法，请写注释。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

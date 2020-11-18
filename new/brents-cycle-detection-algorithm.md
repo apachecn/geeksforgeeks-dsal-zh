@@ -18,9 +18,9 @@
 1）在第一个循环检测循环本身中找到循环的长度。 不需要额外的工作。
 2）我们在每次迭代中只移动第二个，避免移动第一个（如果移动到下一个节点涉及评估函数，这可能会很昂贵）。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to implement Brent's cycle  
 // detection algorithm to detect cycle in 
@@ -140,7 +140,7 @@ int main()
 
 ## Python3
 
-```
+```py
 
 # Python program to implement 
 # Brent's cycle detection 
@@ -278,7 +278,7 @@ Loop is present at 15
 [https://en.wikipedia.org/wiki/Cycle_detection#Brent’s_algorithm](https://en.wikipedia.org/wiki/Cycle_detection#Brent's_algorithm)
 [github](https://github.com/alxli/Algorithm-Anthology/blob/master/Section-1-Elementary-Algorithms/1.4.2%20Cycle%20Detection%20(Brent's).cpp)
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

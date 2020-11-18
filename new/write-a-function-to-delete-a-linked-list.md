@@ -1,14 +1,14 @@
 # 编写删除链接列表的功能
 
-**用于C / C ++的算法：**遍历链接列表，并一一删除所有节点。 这里的要点是，如果删除了当前指针，则不要访问当前指针的下一个指针。
+**用于C / C++的算法：**遍历链接列表，并一一删除所有节点。 这里的要点是，如果删除了当前指针，则不要访问当前指针的下一个指针。
 
 在 **Java** 中，会发生自动垃圾收集，因此删除链接列表很容易。 我们只需要将head更改为null。
 
 **实施：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to delete a linked list  
 #include <bits/stdc++.h> 
@@ -86,7 +86,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to delete a linked list 
 #include<stdio.h> 
@@ -160,9 +160,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to delete a linked list 
 class LinkedList 
@@ -221,7 +221,7 @@ class LinkedList
 
 ## Python3
 
-```
+```py
 
 # Python3 program to delete all  
 # the nodes of singly linked list 
@@ -287,9 +287,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to delete a linked list 
 using System; 
@@ -365,4 +365,3 @@ public class LinkedList
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

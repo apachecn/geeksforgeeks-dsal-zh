@@ -48,9 +48,9 @@ Output :
     如果curr是最后一个节点。 设置prev-> next = head并通过free（curr）删除节点curr。
 *   要删除的节点既不是第一个节点，也不是最后一个节点，然后设置prev-> next = temp-> next并删除curr。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to delete every kth Node from 
 // circular linked list. 
@@ -187,9 +187,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to delete every kth Node from  
 // circular linked list.  
@@ -340,7 +340,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 program to delete every kth Node from 
 # circular linked list. 
@@ -461,9 +461,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to delete every kth Node from  
 // circular linked list. 
@@ -629,7 +629,7 @@ public static void Main(String []args)
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

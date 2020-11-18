@@ -13,7 +13,7 @@
 
 ## C
 
-```
+```c
 
 /* Node of a doubly linked list */
 struct Node { 
@@ -24,9 +24,9 @@ struct Node {
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Class for Doubly Linked List 
 public class DLL { 
@@ -48,7 +48,7 @@ public class DLL {
 
 ## Python3
 
-```
+```py
 
 # Node of a doubly linked list  
 class Node: 
@@ -87,7 +87,7 @@ class Node:
 
 ## C
 
-```
+```c
 
 /* Given a reference (pointer to pointer) to the head of a list 
    and an int, inserts a new node on the front of the list. */
@@ -113,9 +113,9 @@ void push(struct Node** head_ref, int new_data)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Adding a node at the front of the list 
 public void push(int new_data) 
@@ -140,7 +140,7 @@ public void push(int new_data)
 
 ## Python3
 
-```
+```py
 
 # Adding a node at the front of the list 
 def push(self, new_data): 
@@ -172,7 +172,7 @@ def push(self, new_data):
 
 ## C
 
-```
+```c
 
 /* Given a node as prev_node, insert a new node after the given node */
 void insertAfter(struct Node* prev_node, int new_data) 
@@ -205,9 +205,9 @@ void insertAfter(struct Node* prev_node, int new_data)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Given a node as prev_node, insert a new node after the given node */
 public void InsertAfter(Node prev_Node, int new_data) 
@@ -241,7 +241,7 @@ public void InsertAfter(Node prev_Node, int new_data)
 
 ## Python3
 
-```
+```py
 
 # Given a node as prev_node, insert 
 # a new node after the given node 
@@ -285,7 +285,7 @@ def insertAfter(self, prev_node, new_data):
 
 ## C
 
-```
+```c
 
 /* Given a reference (pointer to pointer) to the head 
    of a DLL and an int, appends a new node at the end  */
@@ -326,9 +326,9 @@ void append(struct Node** head_ref, int new_data)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Add a node at the end of the list 
 void append(int new_data) 
@@ -366,7 +366,7 @@ void append(int new_data)
 
 ## Python3
 
-```
+```py
 
 # Add a node at the end of the DLL 
 def append(self, new_data): 
@@ -419,9 +419,9 @@ def append(self, new_data):
 
 以下是上述方法的实现：
 
-## C / C ++
+## C / C++
 
-```
+```cpp
 
 // A complete working C program to demonstrate all  
 // insertion before a given node  
@@ -541,9 +541,9 @@ Traversal in reverse direction
 **测试上述功能的完整工作程序。**
 以下是测试上述功能的完整程序。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A complete working C++ program to  
 // demonstrate all insertion methods  
@@ -707,7 +707,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // A complete working C program to demonstrate all insertion methods 
 #include <stdio.h> 
@@ -856,9 +856,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A complete working Java program to demonstrate all 
 
@@ -1150,9 +1150,9 @@ llist.printList(llist.head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A complete working C# program to demonstrate all 
 using System;  
@@ -1327,4 +1327,3 @@ Traversal in reverse direction
 另请参阅：[在双链接列表](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
 中删除节点。如果发现任何错误，或者要共享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

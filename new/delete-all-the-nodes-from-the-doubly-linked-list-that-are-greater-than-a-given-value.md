@@ -12,9 +12,9 @@
 
 **方法：**遍历双向链表的节点，并获得数据值大于 **x** 的节点的指针。 遵循此[中使用的方法删除这些节点。](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to delete all 
 // the nodes from the doubly 
@@ -139,9 +139,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to delete all  
 // the nodes from the doubly  
@@ -394,9 +394,9 @@ printList(head) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to delete all  
 // the nodes from the doubly  
@@ -539,7 +539,7 @@ Modified List: 8 4 9
 
 **时间复杂度：** O（N）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

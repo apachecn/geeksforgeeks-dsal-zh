@@ -18,9 +18,9 @@ Output:  1 -> 8 -> 3 -> 7
 
 以下是上述想法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to delete all occurrences 
 // of a given key in linked list
@@ -124,7 +124,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C Program to delete all occurrences of a given key in
 // linked list
@@ -234,9 +234,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to delete all occurrences
 // of a given key in linked list
@@ -349,7 +349,7 @@ class LinkedList
 
 ## Python3
 
-```
+```py
 
 # Python3 program to delete all occurrences
 # of a given key in linked list
@@ -448,9 +448,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to delete all occurrences
 // of a given key in linked list
@@ -575,4 +575,3 @@ Linked List after Deletion is:
 
 本文由 **Saransh** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -30,9 +30,9 @@ Linked List: 1->3->5->7->9
 
 问题的主要部分是维护节点之间的正确链接，确保处理所有极端情况。 以下是函数skipMdeleteN（）的C实现，该函数跳过M个节点并删除N个节点，直到列表结尾。 假定M不能为0。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to delete N nodes 
 // after M nodes of a linked list  
@@ -147,7 +147,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to delete N nodes after M nodes of a linked list 
 #include <stdio.h> 
@@ -251,9 +251,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to delete N nodes  
 // after M nodes of a linked list  
@@ -458,9 +458,9 @@ llist.printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to delete N nodes  
 // after M nodes of a linked list  
@@ -590,4 +590,3 @@ Linked list after deletion is :
 
 本文由 **[Chandra Prakash](https://www.facebook.com/chandra.prakash.52643)** 贡献。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -11,9 +11,9 @@
 
 **方法：**该方法与[反转单个链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)中的方法相同。 只有在这里，我们才需要通过将反向列表的最后一个节点链接到第一个节点来进行更多调整。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to reverse 
 // a circular linked list 
@@ -101,9 +101,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to reverse  
 // a circular linked list  
@@ -198,7 +198,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to reverse 
 # a circular linked list 
@@ -288,9 +288,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to reverse  
 // a circular linked list  
@@ -399,4 +399,3 @@ Reversed circular linked list: 4 3 2 1
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

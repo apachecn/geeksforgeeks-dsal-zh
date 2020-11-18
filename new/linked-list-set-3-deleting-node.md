@@ -11,9 +11,9 @@
 
 由于链表的每个节点都是使用C语言中的malloc（）动态分配的，因此我们需要调用 [free（）](http://www.cplusplus.com/reference/cstdlib/free/)来释放为要删除的节点分配的内存。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A complete working C++ program to 
 // demonstrate deletion in singly  
@@ -121,7 +121,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // A complete working C program  
 // to demonstrate deletion in  
@@ -210,9 +210,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A complete working Java program to demonstrate deletion in singly 
 // linked list 
@@ -306,7 +306,7 @@ class LinkedList
 
 ## Python3
 
-```
+```py
 
 # A complete working Python3 program to 
 # demonstrate deletion in singly  
@@ -387,9 +387,9 @@ llist.printList() 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A complete working C# program  
 // to demonstrate deletion in  
@@ -508,4 +508,3 @@ Linked List after Deletion of 1:
 
 如果发现任何不正确的内容，或者您​​想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

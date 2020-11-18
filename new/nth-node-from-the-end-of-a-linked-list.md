@@ -14,7 +14,7 @@
 
 下面是上述方法的实现：
 
-## C ++ 14
+## C++ 14
 
 ```
 
@@ -89,9 +89,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Simple Java program to find n'th node from end of linked list 
 class LinkedList { 
@@ -166,7 +166,7 @@ class LinkedList {
 
 ## Python3
 
-```
+```py
 
 # Simple Python3 program to find 
 # n'th node from end 
@@ -218,9 +218,9 @@ llist.printNthFromLast(4)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find n'th node from end of linked list  
 using System; 
@@ -310,7 +310,7 @@ public class LinkedList
 
 ## C
 
-```
+```c
 
 void printNthFromLast(struct Node* head, int n) 
 { 
@@ -333,9 +333,9 @@ void printNthFromLast(struct Node* head, int n)
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Simple C++ program to  
 // find n'th node from end 
@@ -420,9 +420,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find n'th  
 // node from end using slow and 
@@ -587,9 +587,9 @@ llist.printNthFromLast(4)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find n'th node from end using slow and 
 // fast pointerspublic  
@@ -694,4 +694,3 @@ Node no. 4 from last is 35
 **时间复杂度：** O（n），其中n是链表的长度。
 如果您发现上述代码/算法不正确，或者找到其他解决同一问题的方法，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

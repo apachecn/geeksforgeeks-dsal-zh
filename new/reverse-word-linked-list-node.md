@@ -17,9 +17,9 @@ Output: hsilbuP ruoy nwo selcitra no skeegrofskeeg
 
 使用循环将列表迭代到null，然后从每个节点获取字符串并反转字符串。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to reverse each word 
 // in a linked list 
@@ -93,9 +93,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to reverse each word  
 // in a linked list  
@@ -180,7 +180,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 program to reverse each word  
 # in a linked list  
@@ -248,9 +248,9 @@ printList(head) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to reverse each word  
 // in a linked list 
@@ -346,7 +346,7 @@ skeegrofskeeG a retupmoc ecneics latrop rof skeeg
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

@@ -55,9 +55,9 @@ Output:
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to flatten the binary tree 
 // using previous node approach 
@@ -150,9 +150,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to flatten the binary tree 
 // using previous node approach 
@@ -327,9 +327,9 @@ PrintInorderBinaryTree(root)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to flatten the binary tree 
 // using previous node approach 
@@ -436,7 +436,7 @@ Flattened inorder traversal : 1 2 3 4 5 6
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

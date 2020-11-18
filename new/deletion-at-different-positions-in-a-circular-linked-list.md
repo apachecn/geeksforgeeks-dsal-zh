@@ -221,9 +221,9 @@ void DeleteAtPosition(struct Node** head, int index)
 
 ### 实现上述所有三个功能的程序
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to delete node at different 
 // poisitions from a circular linked list 
@@ -477,9 +477,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to delete node at different 
 // poisitions from a circular linked list 
@@ -1007,9 +1007,9 @@ Display(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to delete node at different  
 // positions from a circular linked list  
@@ -1303,7 +1303,7 @@ After Deleting last node: 11 22 33 55
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

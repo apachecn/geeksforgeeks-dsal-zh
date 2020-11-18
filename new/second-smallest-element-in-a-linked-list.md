@@ -19,9 +19,9 @@ Output : The second largest element is 10.
 
 更有效的**解决方案**是在单个遍历中查找第二小的元素。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print second smallest 
 // value in a linked list 
@@ -95,9 +95,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print second smallest 
 // value in a linked list 
@@ -177,7 +177,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 program to print second smallest 
 # value in a linked list 
@@ -244,9 +244,9 @@ print2smallest(start)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print second smallest 
 // value in a linked list 
@@ -337,7 +337,7 @@ The second smallest element is 10
 
 **时间复杂度：** O（n）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

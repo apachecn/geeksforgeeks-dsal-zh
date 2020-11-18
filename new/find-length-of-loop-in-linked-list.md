@@ -16,9 +16,9 @@
 3.  遍历链接列表，直到再次到达同一节点，并在移至下一个节点时增加计数。
 4.  将计数打印为循环长度
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count number of nodes  
 // in loop in a linked list if loop is  
@@ -102,7 +102,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to count number of nodes 
 // in loop in a linked list if loop is 
@@ -180,9 +180,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count number of nodes  
 // in loop in a linked list if loop is  
@@ -265,7 +265,7 @@ static Node newNode(int key) 
 
 ## Python3
 
-```
+```py
 
 # Python 3 program to find the number 
 # of nodes in looop in a linked list  
@@ -387,9 +387,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count number of nodes  
 // in loop in a linked list if loop is  
@@ -496,4 +496,3 @@ class GFG 
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

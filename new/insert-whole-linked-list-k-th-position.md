@@ -25,9 +25,9 @@ Output : 10->15->20->11->17->16->18->NULL
 3）遍历第二个链表直到
 结束4） 将第一个链表的第（k + 1）点添加到第二个链表的末尾
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to insert a linked list in 
 // to another linked list at position k 
@@ -131,9 +131,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to insert a linked list in 
 // to another linked list at position k 
@@ -241,7 +241,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # A Python3 program to insert a linked list in 
 # to another linked list at position k 
@@ -340,9 +340,9 @@ if __name__ == "__main__": 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to insert a linked list in 
 // to another linked list at position k 
@@ -459,7 +459,7 @@ Resulting linked list    1 2 7 8 9 10 11 3 4 5
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

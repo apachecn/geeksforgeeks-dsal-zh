@@ -36,9 +36,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of a structure 
 // which supports insertion, deletion 

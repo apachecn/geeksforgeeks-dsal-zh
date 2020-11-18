@@ -54,13 +54,13 @@ function merge(A, B) is
 
     return C
 
-```
+```c
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to merge K sorted doubly 
 // linked list in sorted order 
@@ -252,9 +252,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to merge K sorted doubly 
 // linked list in sorted order 
@@ -637,9 +637,9 @@ printList(finalList)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to merge K sorted doubly  
 // linked list in sorted order 
@@ -849,7 +849,7 @@ class GFG 
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

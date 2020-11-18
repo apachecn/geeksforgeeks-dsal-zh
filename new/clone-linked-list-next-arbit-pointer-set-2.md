@@ -9,9 +9,9 @@
 
 下面是上述方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to clone a linked list with 
 // random pointers 
@@ -159,9 +159,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to clone a linked list with random pointers 
 import java.util.HashMap; 
@@ -293,7 +293,7 @@ class Main
 
 ## Python3
 
-```
+```py
 
 # Python3 program to clone a linked list  
 # with random pointers  
@@ -424,9 +424,9 @@ print(clone)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to clone a linked list with random pointers 
 using System; 
@@ -584,4 +584,3 @@ Data = 5, Random data = 2
 
 本文由 **Kumar Gautam** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请写评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -37,9 +37,9 @@ G给出[循环链表](https://www.geeksforgeeks.org/circular-linked-list/)表示
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to implement 
 // the above approach 
@@ -627,7 +627,7 @@ Polynomial after addition
 ***时间复杂度：** O（M + N），其中M和N分别是第一列表和第二列表中的节点数。*
 ***辅助空间：** O（M + N）*
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

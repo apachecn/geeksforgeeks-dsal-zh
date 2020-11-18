@@ -37,9 +37,9 @@ Reverse the resulted linked list
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to Multiply two numbers  
 // represented as linked lists  
@@ -234,7 +234,7 @@ int main(void) 
 
 ## C
 
-```
+```c
 
 // C program to Multiply two numbers 
 // represented as linked lists 
@@ -427,7 +427,7 @@ int main(void)
 
 ## Python3
 
-```
+```py
 
 # Python3 program to multiply two numbers  
 # represented as linked lists  
@@ -653,7 +653,7 @@ Resultant list is: 9->9->7->9->5->9->8->0->1->8->1
 
 注意：我们可以照顾到结果结点，该结点在循环外可以有1位以上的数字，只需遍历结果列表并在反转之前将进位加到下一位数字即可。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

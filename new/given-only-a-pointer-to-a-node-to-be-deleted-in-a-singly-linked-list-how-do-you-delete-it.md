@@ -23,9 +23,9 @@
 
 **程序：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -111,7 +111,7 @@ int main()
 
 ## C
 
-```
+```c
 
 #include <assert.h> 
 #include <stdio.h> 
@@ -194,9 +194,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 class LinkedList { 
     Node head; // head of the list 
@@ -349,9 +349,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 using System; 
 
@@ -448,4 +448,3 @@ After deleting
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

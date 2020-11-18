@@ -25,9 +25,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to fine Sum of 
 // prime factorials in a Linked list 
@@ -130,9 +130,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find Sum of 
 // prime factorials in a Linked list 
@@ -244,7 +244,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python implementation of the approach  
 class Node:   
@@ -330,9 +330,9 @@ print(ans)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find Sum of 
 // prime factorials in a Linked list 
@@ -459,7 +459,7 @@ public static void Main(String []args)
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**Java和Java Collections基础课程**](https://practice.geeksforgeeks.org/courses/Java-Collections?vC=1) 以对学生方便的价格掌握所有重要的Java和Collections概念，并为行业做好准备。
+
 
 * * *
 

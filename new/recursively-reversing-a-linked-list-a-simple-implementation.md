@@ -30,9 +30,9 @@ Output : 1->NULL
 1.  我们将下一个节点的指针返回到他的上一个（当前）节点，然后使上一个节点成为返回节点的下一个节点，然后返回当前节点。
 2.  我们首先遍历最后一个节点，并使最后一个节点成为反向链表的头节点，然后以递归的方式应用上述过程。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Recursive C++ program to reverse 
 // a linked list 
@@ -112,9 +112,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Recursive Java program to reverse 
 // a linked list 
@@ -209,7 +209,7 @@ public class ReverseLinkedListRecursive {
 
 ## Python3
 
-```
+```py
 
 # Recursive Python3 program to reverse 
 # a linked list 
@@ -273,9 +273,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // Recursive C# program to reverse 
 // a linked list 
@@ -388,7 +388,7 @@ Reversed Linked list
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

@@ -56,9 +56,9 @@ if *del*.previousNode != *none*
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to delete a node from
 // Doubly Linked List
@@ -172,7 +172,7 @@ int main()
 
 ## C
 
-```
+```c
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -274,9 +274,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to delete a node from
 // Doubly Linked List
@@ -503,9 +503,9 @@ dll.printList(dll.head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to delete a node from
 // Doubly Linked List
@@ -656,4 +656,3 @@ Modified Linked list 8
 
 如果您发现以上任何代码/算法不正确，请写评论，或者找到解决同一问题的更好方法。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

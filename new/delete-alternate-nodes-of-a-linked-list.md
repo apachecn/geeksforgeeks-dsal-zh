@@ -7,9 +7,9 @@
 **方法1（迭代）**
 跟踪要删除的节点的先前节点。 首先更改上一个节点的下一个链接，然后释放为该节点分配的内存。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to remove alternate  
 // nodes of a linked list  
@@ -110,7 +110,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to remove alternate nodes of a linked list 
 #include<stdio.h> 
@@ -205,9 +205,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to delete alternate nodes of a linked list 
 class LinkedList 
@@ -300,7 +300,7 @@ class LinkedList
 
 ## Python3
 
-```
+```py
 
 # Python3 program to remove alternate  
 # nodes of a linked list  
@@ -386,9 +386,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to delete alternate 
 // nodes of a linked list 
@@ -505,9 +505,9 @@ List after calling deleteAlt()
 **方法2（递归）**
 递归代码使用与方法1相同的方法。递归代码很简单且简短，但是会导致O（n）递归函数调用大小为n的链表。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* deletes alternate nodes of a list starting with head */
 void deleteAlt(Node *head)  
@@ -536,7 +536,7 @@ void deleteAlt(Node *head) 
 
 ## C
 
-```
+```c
 
 /* deletes alternate nodes of a list starting with head */
 void deleteAlt(struct Node *head) 
@@ -561,9 +561,9 @@ void deleteAlt(struct Node *head)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* deletes alternate nodes of a list 
 starting with head */
@@ -590,7 +590,7 @@ static Node deleteAlt(Node head) 
 
 ## Python3
 
-```
+```py
 
 # deletes alternate nodes of a list starting with head  
 def deleteAlt(head):  
@@ -615,9 +615,9 @@ def deleteAlt(head): 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* deletes alternate nodes of a list 
 starting with head */
@@ -646,4 +646,3 @@ static Node deleteAlt(Node head) 
 
 如果您发现上述代码/算法有误，请写注释，或者找到解决同一问题的更好方法。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

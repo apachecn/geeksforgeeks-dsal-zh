@@ -141,7 +141,7 @@ Final Linked List after deletion of 15:
 
 本文由 [Jeet Jain](https://www.linkedin.com/in/jeetjain8/) 提供。 请参阅[在单链列表中仅给出指向要删除的节点的指针，如何删除它？](https://www.geeksforgeeks.org/in-a-linked-list-given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/) 了解更多详细信息并完成实施。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

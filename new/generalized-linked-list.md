@@ -60,7 +60,7 @@ typedef struct node {
 *   temp1 x temp2
 *   x <sup>4</sup> x 7y <sup>1</sup> = 7x <sup>4</sup> y <sup>1</sup> 值由上图表示
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

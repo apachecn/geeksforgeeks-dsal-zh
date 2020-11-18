@@ -26,9 +26,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to get intersection point of two linked list
 #include <bits/stdc++.h>
@@ -173,7 +173,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C program to get intersection point of two linked list
 #include <stdio.h>
@@ -299,9 +299,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to get intersection point of two linked list
 
@@ -403,9 +403,9 @@ class LinkedList {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to get intersection point of two linked list
 using System;
@@ -573,9 +573,9 @@ The node of intersection is 15
 2）遍历第一个链接列表，并将所有节点的地址插入哈希集中。
 3）遍历第二个列表。 对于每个节点，检查哈希集中是否存在该节点。 如果我们在哈希集中找到一个节点，则返回该节点。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to get intersection point of two linked list
 import java.util.*;
@@ -641,9 +641,9 @@ class LinkedListIntersect {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to get intersection point of two linked list
 using System;
@@ -743,9 +743,9 @@ public class LinkedListIntersect
 *   如果在任何节点上ptr1与ptr2相遇，则它是相交节点。
 *   在第二次迭代后，如果没有相交节点，则返回NULL。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to print intersection of lists
 #include <bits/stdc++.h>
@@ -877,4 +877,3 @@ INTERSEPOINT LIST :15->30
 
 如果您发现上述算法有任何错误，或者找到解决同一问题的更好方法，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

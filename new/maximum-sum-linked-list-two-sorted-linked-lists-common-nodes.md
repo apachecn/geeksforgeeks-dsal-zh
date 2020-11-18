@@ -23,9 +23,9 @@ we switch at 3 and 240 to get above maximum sum linked list
 这样，就可以在原地完成并保持恒定的额外空间。
 以下解决方案的时间复杂度为O（n）。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to construct the maximum sum linked 
 // list out of two given sorted lists 
@@ -172,9 +172,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to construct a Maximum Sum Linked List out of 
 // two Sorted Linked Lists having some Common nodes 
@@ -452,9 +452,9 @@ llist1.finalMaxSumList(llist1.head, llist2.head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to construct a Maximum 
 // Sum Linked List out of two Sorted  
@@ -635,4 +635,3 @@ public class LinkedList 
 
 本文由 **Kumar Gautam** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

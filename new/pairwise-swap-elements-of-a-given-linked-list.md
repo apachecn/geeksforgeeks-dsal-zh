@@ -20,9 +20,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to pairwise swap elements 
 // in a given linked list 
@@ -116,7 +116,7 @@ int main()
 
 ## C
 
-```
+```c
 
 /* C program to pairwise swap elements in a given linked list */
 #include <stdio.h> 
@@ -207,9 +207,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to pairwise swap elements of a linked list 
 class LinkedList { 
@@ -372,9 +372,9 @@ llist.printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to pairwise swap elements of a linked list 
 using System; 
@@ -504,4 +504,3 @@ void pairWiseSwap(struct node* head)
 
 如果您在上述代码/算法中发现任何错误，或者找到其他解决同一问题的方法，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

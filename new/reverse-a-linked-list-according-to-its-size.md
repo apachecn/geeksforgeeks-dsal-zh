@@ -18,9 +18,9 @@
 *   如果n为偶数，则将链表分为两部分，即前n / 2个元素和后n / 2个元素，并将这两个部分取反。
 *   如果n为奇数，则将链表分为三部分，即前n / 2个元素，第（n / 2 + 1）个元素和后n / 2个元素，并反转除第（n / 2 + 1）个元素之外的两个部分。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to reverse given 
 // linked list according to its size 
@@ -156,9 +156,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to reverse given  
 // linked list according to its size  
@@ -302,7 +302,7 @@ public static void main(String args[]) 
 
 ## Python3
 
-```
+```py
 
 # Python3 program to reverse given  
 # linked list according to its size  
@@ -419,9 +419,9 @@ if __name__ == "__main__": 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to reverse given  
 // linked list according to its size  
@@ -573,7 +573,7 @@ Reversed List : 4 3 2 1 5 9 8 7 6
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

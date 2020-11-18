@@ -19,9 +19,9 @@ Output : 8 2 12 9
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to print the last k nodes 
 // of linked list in reverse order 
@@ -94,9 +94,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to print the last k nodes 
 // of linked list in reverse order 
@@ -176,7 +176,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to print the last k nodes  
 # of linked list in reverse order 
@@ -238,9 +238,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to print the last k nodes 
 // of linked list in reverse order 
@@ -334,9 +334,9 @@ public static void Main(String[] args)
 
 以下是上述有效方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to print the last k nodes 
 // of linked list in reverse order 
@@ -425,9 +425,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to print  
 // the last k nodes of linked list 
@@ -607,9 +607,9 @@ printLastKRev(head, k)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to print  
 // the last k nodes of linked list 
@@ -725,9 +725,9 @@ public static void Main(String[] args)
 *   从数组末尾开始存储链接列表的节点值，即反向存储。
 *   从数组开始打印k个值。
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <iostream>  
 using namespace std;  
@@ -793,9 +793,9 @@ int main() 
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code implementation for above approach 
 class GFG  
@@ -869,9 +869,9 @@ public static void main(String[] args) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code implementation for above approach 
 using System; 
@@ -960,9 +960,9 @@ public static void Main(String[] args) 
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to print the last k nodes 
 // of linked list in reverse order 
@@ -1051,9 +1051,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to print the last k nodes 
 // of linked list in reverse order 
@@ -1146,9 +1146,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to print the last k nodes 
 // of linked list in reverse order 
@@ -1252,7 +1252,7 @@ public static void Main(String[] args)
 **时间复杂度：** O（N）
 **辅助空间：** O（1）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

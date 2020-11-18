@@ -29,9 +29,9 @@ Output :24->20->15->5->10->NULL
     Print i-th node using get n-th node function
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C/C++ program to print reverse of linked list 
 // without extra space and without modifications. 
@@ -110,9 +110,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print reverse of linked list 
 // without extra space and without modifications. 
@@ -193,9 +193,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print reverse of  
 // linked list without extra space 
@@ -287,7 +287,7 @@ public static void Main(String[] args)
 5 4 3 2 1
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

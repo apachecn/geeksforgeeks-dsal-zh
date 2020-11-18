@@ -21,9 +21,9 @@ Output : 1 5
 
 这个想法是从第一个节点和第二个节点开始的。 让我们将这些节点称为“ a”和“ b”。 我们重复
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code to split linked list 
 #include <bits/stdc++.h> 
@@ -108,9 +108,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to split linked list 
 class GFG 
@@ -280,9 +280,9 @@ display(b) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to split linked list 
 using System; 
@@ -381,7 +381,7 @@ b : 2 4 6
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

@@ -21,9 +21,9 @@ The pairs are (3, 7), (2, 8) and (4, 6).
 
 **1）天真的方法：**通过任何一种树遍历方法逐一获取二叉树的每个节点。 将节点 **temp** ，树的**根**和值 **x** 传递给另一个函数，例如 **findPair（）**。 在功能中，借助**根**指针再次遍历树。 将这些节点与 **temp** 逐一求和，并检查sum == x。 如果是这样，则递增**计数**。 计算计数=计数/ 2，因为通过上述方法已对一对进行了两次计数。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to count pairs in a binary tree 
 // whose sum is equal to given value x 
@@ -112,9 +112,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count pairs in a binary tree 
 // whose sum is equal to given value x 
@@ -212,7 +212,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to count pairs in a binary tree 
 # whose sum is equal to given value x 
@@ -282,9 +282,9 @@ print("Count =", count)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count pairs in a binary tree 
 // whose sum is equal to given value x 
@@ -396,9 +396,9 @@ Count = 3
 3.  计数对以加倍等于“ x”的双链排序。 请参阅此帖子的[。](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)
 4.  显示在步骤4中获得的计数。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to count pairs in a binary tree 
 // whose sum is equal to given value x 
@@ -584,9 +584,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count pairs  
 // in a binary tree whose sum is equal to 
@@ -788,9 +788,9 @@ class GFG 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count pairs  
 // in a binary tree whose sum is  
@@ -1082,7 +1082,7 @@ Count = 3
 时间复杂度：O（n）
 空间复杂度：O（n）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

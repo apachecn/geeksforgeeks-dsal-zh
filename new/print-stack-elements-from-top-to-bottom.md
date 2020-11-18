@@ -20,9 +20,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for the above approach
 #include <bits/stdc++.h>
@@ -74,9 +74,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for the above approach 
 import java.util.*;
@@ -133,7 +133,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 program for the 
 # above approach
@@ -185,9 +185,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for 
 // the above approach 
@@ -261,9 +261,9 @@ public static void Main(String[] args)
 
 下面是上述方法的实现：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for the above approach
 
@@ -396,9 +396,9 @@ public class GFG {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for the above approach
 using System;
@@ -557,9 +557,9 @@ public static void Main(String[] args)
 
 下面是上述方法的实现：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for the above approach
 
@@ -677,9 +677,9 @@ class Main {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for 
 // the above approach
@@ -818,7 +818,7 @@ public static void Main(String []args)
 ***时间复杂度：** O（N），其中N是给定堆栈中元素的数量。*
 ***辅助空间：** O（N）*
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

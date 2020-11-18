@@ -10,9 +10,9 @@
 
 在这篇文章中，我们使用合并排序的自底向上方法。 我们知道合并排序首先合并两个项目，然后合并四个项目，依此类推。 想法是使用整数变量存储间隙，以找到需要对链表进行排序的中点。 因此问题减少到合并在中讨论的两个排序的链表。 但是，我们不使用其他列表来保留合并列表。 相反，我们将列表合并到自身中。 间隔在每次迭代中按指数递增2，然后重复该过程。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Iterative C++ program to do merge sort on  
 // linked list 
@@ -196,9 +196,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Iterative Java program to do merge sort on  
 // linked list 
@@ -401,9 +401,9 @@ public static void main(String args[])
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // Iterative C# program to do merge sort on  
 // linked list 
@@ -618,7 +618,7 @@ public static void Main(String []args)
 **时间复杂度：** O（n Log n）
 **辅助空间：** O（1）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

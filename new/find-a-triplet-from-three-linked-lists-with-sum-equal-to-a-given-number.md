@@ -13,9 +13,9 @@
 
 以下代码仅实现步骤2。 通过在此处中讨论的合并排序代码，可以轻松地为未排序列表修改解决方案。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find a triplet  
 // from three linked lists with  
@@ -132,7 +132,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to find a triplet from three linked lists with 
 // sum equal to a given number 
@@ -243,9 +243,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find a triplet from three linked lists with 
 // sum equal to a given number 
@@ -453,9 +453,9 @@ isSumSorted (headA, headB, headC, givenNumber) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find a triplet  
 // from three linked lists with 
@@ -583,4 +583,3 @@ Triplet Found: 15 2 8
 
 本文由 **Abhinav Priyadarshi** 编写，并由GeeksforGeeks小组审阅。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

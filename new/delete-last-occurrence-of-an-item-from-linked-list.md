@@ -89,9 +89,9 @@ Output:  1->2->3->5->10
 
 这个想法是从头到尾遍历链表。 遍历时，请跟踪最后出现的关键字。 遍历完整列表后，通过复制下一个节点的数据并删除下一个节点来删除最后一个出现的节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to demonstrate deletion of last 
 // Node in singly linked list 
@@ -175,9 +175,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to demonstrate deletion of last  
 // Node in singly linked list  
@@ -270,7 +270,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 program to demonstrate deletion of  
 # last Node in singly linked list  
@@ -353,9 +353,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to demonstrate deletion of last  
 // Node in singly linked list  
@@ -461,9 +461,9 @@ Linked List after Deletion of 1:
 
 以下解决方案可处理所有情况。
 
-## C / C ++
+## C / C++
 
-```
+```cpp
 
 // A C program to demonstrate deletion of last 
 // Node in singly linked list 
@@ -551,9 +551,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to demonstrate deletion of last  
 // Node in singly linked list  
@@ -732,9 +732,9 @@ display(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to demonstrate deletion of last  
 // Node in singly linked list  
@@ -842,4 +842,3 @@ Linked List after Deletion of 1:
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

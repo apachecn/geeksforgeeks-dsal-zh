@@ -12,9 +12,9 @@ Output : 2->1->4->3->6->5
 
 已经讨论了一种解决方案 [set 1](https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list-by-changing-links/) 。 这里讨论一个更简单的解决方案。 我们显式地更改前两个节点的指针，然后修复其余的节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* This program swaps the nodes of linked list  
    rather than swapping the field from the nodes. 
@@ -110,9 +110,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* This program swaps the nodes of linked list  
 rather than swapping the field from the nodes.  
@@ -211,9 +211,9 @@ public static void main(String[] args) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* This program swaps the nodes of linked list  
 rather than swapping the field from the nodes.  
@@ -417,7 +417,7 @@ ModifiedLinked List:
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

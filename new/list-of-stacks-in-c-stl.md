@@ -1,4 +1,4 @@
-# C ++ STL中的堆栈列表
+# C++ STL中的堆栈列表
 
 **先决条件：** [列表](https://www.geeksforgeeks.org/list-cpp-stl/)，[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)
 
@@ -32,9 +32,9 @@
 
 **示例：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Loop to push element 
 // into a stack 
@@ -51,9 +51,9 @@ ls.push_back(s);
 
 **<u>遍历</u>：** [使用](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)[迭代器](https://www.geeksforgeeks.org/iterators-c-stl/)进行堆栈列表中的遍历。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Loop to iterate over list 
 for (iterator it = ls.begin(); 
@@ -75,9 +75,9 @@ for (iterator it = ls.begin();
 
 下面是说明堆栈列表中的插入和遍历的程序：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for implementation 
 // of the lists of stack 
@@ -153,7 +153,7 @@ List of stack is :
 
 ```
 
-被誉为业界最抢手的技能之一，拥有我们的 [**C ++ STL**](https://practice.geeksforgeeks.org/courses/cpp-stl?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=GFG_Article_Bottom_CPP_STL) 课程的编码基础，并通过严格的问题解决方法掌握了这些概念。
+被誉为业界最抢手的技能之一，拥有我们的 [**C++ STL**](https://practice.geeksforgeeks.org/courses/cpp-stl?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=GFG_Article_Bottom_CPP_STL) 课程的编码基础，并通过严格的问题解决方法掌握了这些概念。
 
 * * *
 

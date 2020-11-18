@@ -6,9 +6,9 @@
 
 在中已经讨论了这个问题。 那里提供的解决方案交换节点数据。 如果数据包含许多字段，将有许多交换操作。 因此，通常更改链接是一个更好的主意。 以下是一个C实现，它更改了链接而不是交换数据。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* This program swaps the nodes of 
 linked list rather than swapping the 
@@ -127,7 +127,7 @@ int main()
 
 ## C
 
-```
+```c
 
 /* This program swaps the nodes of linked list rather than swapping the
 field from the nodes.
@@ -231,9 +231,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to swap elements of linked list by changing links
 
@@ -327,9 +327,9 @@ class LinkedList {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to swap elements of
 // linked list by changing links
@@ -442,9 +442,9 @@ public class LinkedList {
 时间复杂度：上面程序的时间复杂度为O（n），其中n是给定链表中节点的数量。 while循环遍历给定的链表。
 以下是相同方法的**递归实现**。 我们更改前两个节点，然后重复其余列表。 感谢geek和omer salem提出了这种方法。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* This program swaps the nodes of linked list rather than swapping the 
 field from the nodes. 
@@ -543,7 +543,7 @@ int main()
 
 ## C
 
-```
+```c
 
 /* This program swaps the nodes of linked list rather than swapping the
 field from the nodes.
@@ -638,9 +638,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to swap elements of linked list by changing links
 
@@ -723,9 +723,9 @@ class LinkedList {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to swap elements
 // of linked list by changing links
@@ -825,4 +825,3 @@ public class LinkedList {
 [通过更改指针|配对交换链表的相邻节点| 第2组](https://www.geeksforgeeks.org/pairwise-swap-adjacent-nodes-of-a-linked-list-by-changing-pointers-set-2/)
 本文由 **Gautam Kumar** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请写评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

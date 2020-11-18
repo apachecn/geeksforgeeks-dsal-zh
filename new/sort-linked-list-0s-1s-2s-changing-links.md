@@ -25,9 +25,9 @@ The sorted Array is 0, 1, 2
 
 **方法：**迭代链接列表。 维护3个名为零的指针，一个和两个指针分别指向链接列表的当前结尾节点，该链接列表分别包含0、1和2。 对于每个遍历的节点，我们将其附加到其对应列表的末尾。 最后，我们链接所有三个列表。 为了避免许多空检查，我们使用三个伪指针zeroD，oneD和twoD作为三个列表的伪头。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP Program to sort a linked list 0s, 1s 
 // or 2s by changing links 
@@ -138,9 +138,9 @@ int main(void)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to sort a linked list 0s, 1s  
 // or 2s by changing links  
@@ -247,7 +247,7 @@ class Node
 
 ## Python3
 
-```
+```py
 
 # Python3 Program to sort a linked list  
 # 0s, 1s or 2s by changing links 
@@ -348,9 +348,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to sort a linked list 0s, 1s  
 // or 2s by changing links  
@@ -483,4 +483,3 @@ Linked List After Sorting
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

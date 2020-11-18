@@ -12,9 +12,9 @@
 **实现：**
 除了removeDuplicates（）以外的功能仅用于创建链接链表并测试removeDuplicates（）。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C Program to remove duplicates 
  from a sorted linked list */
@@ -98,9 +98,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Java Program to remove duplicates  
 from a sorted linked list */
@@ -266,9 +266,9 @@ printList(h) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* C# Program to remove duplicates  
 from a sorted linked list */
@@ -367,7 +367,7 @@ Linked list before duplicate removal 11 11 11 13 13 20
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

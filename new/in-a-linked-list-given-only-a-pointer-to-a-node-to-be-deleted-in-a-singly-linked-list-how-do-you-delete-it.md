@@ -14,9 +14,9 @@ free(temp);
 
 下面是上述代码的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to del the node 
 // in which only a single pointer 
@@ -110,7 +110,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C++ program to del the node 
 // in which only a single pointer 
@@ -198,9 +198,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to del the node in  
 // which only a single pointer is  
@@ -263,7 +263,7 @@ class LinkedList {
 
 ## Python3
 
-```
+```py
 
 # A python3 program to delete 
 # the node in which only a single pointer 
@@ -335,9 +335,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to del the node in 
 // which only a single pointer is 
@@ -411,4 +411,3 @@ After deleting
 为了使该解决方案有效，我们可以将末端节点标记为虚拟节点。 但是使用此功能的程序/功能也应进行修改。
 对于双向链接列表，请尝试解决此问题。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -28,9 +28,9 @@ delAllOccurOfGivenKey(head_ref, x)
 
 在此帖子的[中讨论了 **deleteNode（head_ref，current）**（使用指向该节点的指针删除该节点）的算法。](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ implementation to delete all occurrences  
    of a given key in a doubly linked list */
@@ -181,9 +181,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Java implementation to delete all occurrences  
 of a given key in a doubly linked list */
@@ -344,7 +344,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to delete all occurrences  
 # of a given key in a doubly linked list  
@@ -482,9 +482,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* C# implementation to delete all occurrences  
 of a given key in a doubly linked list */
@@ -659,4 +659,3 @@ Doubly linked list after deletion of 2:
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

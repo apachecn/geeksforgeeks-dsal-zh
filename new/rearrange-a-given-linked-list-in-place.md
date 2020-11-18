@@ -45,9 +45,9 @@ Output: 1 -> 5 -> 2 -> 4 -> 3
 
 下面是此方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to rearrange a linked list in-place 
 #include <bits/stdc++.h> 
@@ -159,9 +159,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to rearrange link list in place 
 
@@ -276,9 +276,9 @@ class LinkedList {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to rearrange link list in place 
 using System; 
@@ -415,9 +415,9 @@ public class LinkedList {
 之后，形成一个新的链表。
 下面是实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code to rearrange linked list in place 
 #include <bits/stdc++.h> 
@@ -498,9 +498,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to rearrange linked list in place 
 class Geeks 
@@ -713,4 +713,3 @@ int main()
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

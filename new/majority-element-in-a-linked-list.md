@@ -18,9 +18,9 @@ Output :NO majority element
 **方法1（简单）**
 从头开始运行两个循环，并迭代计算每个元素的频率。 打印其频率大于或等于n / 2的元素。 在这种方法中，时间复杂度将为 **O（n * n）**，其中n是链表中节点的数量。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find majority element in  
 // a linked list 
@@ -109,9 +109,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find majority element in  
 // a linked list 
@@ -214,7 +214,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find majority element in  
 # a linked list 
@@ -298,9 +298,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find majority element in  
 // a linked list 
@@ -404,9 +404,9 @@ Time Complexity O(n*n)
 
 **方法2** 使用哈希技术。 我们计算每个元素的频率，然后打印频率≥n / 2的元素；
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find majority element 
 // in the linked list using hashing 
@@ -488,9 +488,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // JAVA program to find majority element 
 // in the linked list using hashing 
@@ -581,9 +581,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find majority element 
 // in the linked list using hashing 
@@ -684,7 +684,7 @@ majority element is 1
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

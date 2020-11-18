@@ -16,9 +16,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of above approach 
 #include <bits/stdc++.h> 
@@ -129,9 +129,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of above approach 
 class GFG { 
@@ -245,7 +245,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation of above approach 
 
@@ -346,9 +346,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the approach 
 using System; 
@@ -478,9 +478,9 @@ Number of common node in both list is = 3
 **有效解决方案：**将链接列表A的所有节点插入unordered_set中，然后检查unordered_set中的链接列表B的每个节点。 如果找到，则增加计数并在最后返回计数。
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of above approach 
 #include <bits/stdc++.h> 
@@ -595,9 +595,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of above approach 
 import java.util.*; 
@@ -716,7 +716,7 @@ class solution {
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation of the approach 
 
@@ -816,9 +816,9 @@ print("\nNumber of common node in both list is = " , count)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of above approach 
 using System; 
@@ -957,7 +957,7 @@ Number of common node in both list is = 3
 **时间复杂度：** O（N）
 **空间复杂度：** O（N）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

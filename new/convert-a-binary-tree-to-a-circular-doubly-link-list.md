@@ -29,9 +29,9 @@
 
 以下是上述想法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to convert a Binary Tree 
 // to a Circular Doubly Linked List 
@@ -141,9 +141,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to convert a Binary Tree to a 
 // Circular Doubly Linked List 
@@ -269,7 +269,7 @@ class Main
 
 ## Python3
 
-```
+```py
 
 # Python3 Program to convert a Binary  
 # Tree to a Circular Doubly Linked List  
@@ -364,9 +364,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to convert a Binary Tree  
 // to a Circular Doubly Linked List  
@@ -514,4 +514,3 @@ Circular Linked List is :
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -20,9 +20,9 @@ MergeSort(headRef)
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code for linked list merged sort 
 #include <bits/stdc++.h> 
@@ -172,7 +172,7 @@ Created lists shall be a: 2->3->20->5->10->15 */
 
 ## C
 
-```
+```c
 
 // C code for linked list merged sort 
 #include <stdio.h> 
@@ -318,9 +318,9 @@ Created lists shall be a: 2->3->20->5->10->15 */
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to illustrate merge sorted 
 // of linkedList 
@@ -448,7 +448,7 @@ public class linkedList {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to merge sort of linked list 
 
@@ -572,9 +572,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to illustrate merge sorted 
 // of linkedList 
@@ -726,4 +726,3 @@ Sorted Linked List is:
 
 如果您发现上述代码/算法有误，请写注释，或者找到解决同一问题的更好方法。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

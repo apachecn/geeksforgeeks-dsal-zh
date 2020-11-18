@@ -29,9 +29,9 @@ Merge the lists
 **插图：**
 ![](img/321f30c641f46b52652264eeac4d9d89.png)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to reverse alternate 
 // nodes of a linked list and append 
@@ -142,7 +142,7 @@ int main()
 
 ## C
 
-```
+```c
 
 #include <stdio.h> 
 #include <stdlib.h> 
@@ -249,9 +249,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to reverse alternate 
 // nodes of a linked list and append 
@@ -458,9 +458,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to reverse alternate 
 // nodes of a linked list 
@@ -584,4 +584,3 @@ Linked list after calling  rearrange()  1 3 5 7 6 4 2
 
 本文由 **Aman Gupta** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

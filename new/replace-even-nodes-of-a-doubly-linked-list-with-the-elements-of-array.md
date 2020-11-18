@@ -20,9 +20,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to create 
 // odd doubly linked list 
@@ -114,9 +114,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to create  
 // odd doubly linked list  
@@ -223,7 +223,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to  
 # create odd doubly linked list  
@@ -311,9 +311,9 @@ if __name__ == "__main__": 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to create  
 // odd doubly linked list 
@@ -431,7 +431,7 @@ New odd List: 3 9 5 7 23
 
 **时间复杂度：O（N），**，其中N是节点总数。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

@@ -21,9 +21,9 @@ Output: 40  30  20  10
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to print doubly  
 // linked list in reverse order  
@@ -106,9 +106,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to print doubly  
 // linked list in reverse order  
@@ -198,7 +198,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 Program to print doubly  
 # linked list in reverse order  
@@ -275,9 +275,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to print doubly  
 // linked list in reverse order 
@@ -375,7 +375,7 @@ Linked List elements in reverse order :
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

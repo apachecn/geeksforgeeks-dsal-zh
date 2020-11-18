@@ -285,4 +285,3 @@ Geeks For Geeks
 | **[toArray（T [] a）](https://www.geeksforgeeks.org/linkedlist-toarray-method-in-java-with-example/)** | 此方法以正确的顺序（从第一个元素到最后一个元素）返回一个包含此列表中所有元素的数组。 返回数组的运行时类型是指定数组的运行时类型。 |
 | **toString（）** | 此方法返回一个字符串，该字符串按适当顺序（从第一个元素到最后一个元素）包含此列表中的所有元素，每个元素用逗号分隔，并且该字符串括在方括号中。 |
 
-注意读者！ 现在不要停止学习。 通过 [**Java和Java Collections基础课程**](https://practice.geeksforgeeks.org/courses/Java-Collections?vC=1) 以对学生方便的价格掌握所有重要的Java和Collections概念，并为行业做好准备。

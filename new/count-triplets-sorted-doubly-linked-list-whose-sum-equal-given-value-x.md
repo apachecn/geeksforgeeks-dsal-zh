@@ -9,9 +9,9 @@
 **方法1（朴素方法）：**
 使用三个嵌套循环生成所有三元组，并检查三元组中的元素总和是否为 **x** 。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to count triplets in a sorted doubly linked list 
 // whose sum is equal to a given value 'x' 
@@ -91,9 +91,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count triplets 
 // in a sorted doubly linked list  
@@ -186,7 +186,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to count triplets 
 # in a sorted doubly linked list 
@@ -268,9 +268,9 @@ print( "Count = ", countTriplets(head, x))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count triplets  
 // in a sorted doubly linked list  
@@ -373,9 +373,9 @@ Count = 2
 **方法2（哈希）：**
 创建一个哈希表，其中**（键，值）**元组表示为**（节点数据，节点指针）元组**。 遍历双向链表，并将每个节点的数据及其指针对（元组）存储在哈希表中。 现在，生成每个可能的节点对。 对于每对节点，计算 **p_sum** （两个节点中数据的总和），并检查哈希表中是否存在**（x-p_sum）**。 如果存在，则还要验证该对中的两个节点与与哈希表中的**（x-p_sum）**关联的节点不同，并最终使**计数**递增。 返回**（计数/ 3）**，因为在上述过程中每个三​​元组被计数了3次。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to count triplets in a sorted doubly linked list 
 // whose sum is equal to a given value 'x' 
@@ -468,9 +468,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count triplets in a sorted doubly linked list 
 // whose sum is equal to a given value 'x' 
@@ -571,9 +571,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count triplets in a sorted doubly linked list 
 // whose sum is equal to a given value 'x' 
@@ -693,9 +693,9 @@ Count = 2
 **方法3高效方法（使用两个指针）：**
 从左到右遍历双向链表。 对于遍历过程中的每个**当前**节点，最后插入两个指针**，第一个** =指向紧接**当前**节点的节点，最后**个指针** =指针 到列表的最后一个节点。 现在，计算列表中从**第一个**到**最后一个**指针的对，它们总计为值**（x –当前节点的数据）**（[中描述的算法](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/) 帖子）。 将此计数添加到三元组的 **total_count** 中。 指向**最后一个**节点的指针只能在开始处找到一次。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to count triplets in a sorted doubly linked list 
 // whose sum is equal to a given value 'x' 
@@ -823,9 +823,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to count triplets in a sorted doubly linked list 
 // whose sum is equal to a given value 'x' 
@@ -956,9 +956,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to count triplets  
 // in a sorted doubly linked list 
@@ -1106,4 +1106,3 @@ Count = 2
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

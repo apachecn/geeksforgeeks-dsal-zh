@@ -23,7 +23,7 @@
 
 ## C
 
-```
+```c
 
 // C program to illustrate that the 
 // array size is fixed 
@@ -68,7 +68,7 @@ Element at index 11 is -1176897384
 
 ## C
 
-```
+```c
 
 // C program to illustrate the use of 
 // array using Dynamic Memory Allocation 
@@ -118,7 +118,7 @@ The elements are: 1 2 3 4 5 6 7 8 9 10
 
 ## C
 
-```
+```c
 
 // C++ program to illustrate that 
 // the array is homogeneous 
@@ -155,7 +155,7 @@ Ram
 
 ## C
 
-```
+```c
 
 // C program to illustrate the use of 
 // structure to store heterogeneous 
@@ -218,7 +218,7 @@ Ram
 
 ## C
 
-```
+```c
 
 // C Program to insert an element at 
 // a specific position in an array 
@@ -291,7 +291,7 @@ Array after inserting 50 at position 5
 
 ## C
 
-```
+```c
 
 // C program to insert an element at 
 // a position using linked list 
@@ -424,7 +424,7 @@ Current Linked List is: 3 1 5 7
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

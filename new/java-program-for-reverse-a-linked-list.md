@@ -25,9 +25,9 @@ Output : 1->NULL
 
 **迭代方法**
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for reversing the linked list 
 
@@ -125,9 +125,9 @@ void recursiveReverse(struct Node** head_ref)
 
 **一种更简单且尾部递归的方法**
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for reversing the Linked list 
 
@@ -203,4 +203,3 @@ class LinkedList {
 
 请参阅[的完整文章反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，以了解更多详细信息！
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

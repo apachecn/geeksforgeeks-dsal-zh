@@ -48,9 +48,9 @@ void traverse(Node* head)
 **完整程序：**
 下面是完整的程序，用于演示插入和遍历链表的工作。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Recursive CPP program to recursively insert 
 // a node and recursively print the list. 
@@ -113,9 +113,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Recursive Java program to recursively insert  
 // a node and recursively print the list.  
@@ -185,7 +185,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Recursive Python3 program to  
 # recursively insert a node and 
@@ -243,9 +243,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // Recursive C# program to recursively insert  
 // a node and recursively print the list.  
@@ -325,4 +325,3 @@ public static void Main(String []args) 
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

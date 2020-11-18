@@ -23,7 +23,7 @@ Second List: 8->10->12
 
 这个想法是针对LL1的每个元素，我们将其与LL2的第一个元素进行比较。 如果LL1的元素大于LL2的第一个元素，则我们交换涉及的两个元素。 为了使LL2保持排序，我们需要将LL2的第一个元素放在其正确位置。 我们可以通过一次遍历LL2并更正指针来发现不匹配。
 
-以下是此想法的C ++实现。
+以下是此想法的C++实现。
 
 ```
 
@@ -153,4 +153,3 @@ Second List: 8->10->12->NULL
 
 本文由 **Aditya Goel** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

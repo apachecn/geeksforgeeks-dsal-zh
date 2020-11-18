@@ -60,9 +60,9 @@ Insert (ElementToBeInserted)
 
 以下是插入和显示操作的Java实现。 在下面的代码中，容量为5，并输入随机数。
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Java program to show the insertion operation 
 * of Unrolled Linked List */
@@ -181,9 +181,9 @@ class UnrolledLinkedList_Check {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* C# program to show the insertion operation 
 * of Unrolled Linked List */
@@ -386,7 +386,7 @@ Unrolled Linked List =
 *   在跳过列表中使用
 *   用于CDR编码
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

@@ -22,9 +22,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to reverse a linked list 
 // in groups of given size  
@@ -129,7 +129,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to reverse a linked list in groups of given size 
 #include<stdio.h> 
@@ -228,9 +228,9 @@ int main(void)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to reverse a linked list in groups of 
 // given size 
@@ -412,9 +412,9 @@ llist.printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to reverse a linked list  
 // in groups of given size  
@@ -541,4 +541,3 @@ Reversed list
 
 如果您发现上述代码/算法有误，请写评论，或者找到其他解决相同问题的方法。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -42,13 +42,13 @@ void quickSort(int A[], int l, int h)
 ```
 
 **我们可以对链表使用相同的算法吗？**
-以下是双向链表的C ++实现。 这个想法很简单，我们首先找出指向最后一个节点的指针。 一旦有了指向最后一个节点的指针，就可以使用指向链表的第一个和最后一个节点的指针对链表进行递归排序，类似于上面的递归函数，其中传递了第一个和最后一个数组元素的索引。 链表的分区功能也类似于数组的分区。 代替返回枢轴元素的索引，它返回指向枢轴元素的指针。 在以下实现中，quickSort（）只是一个包装函数，主要的递归函数是_quickSort（），类似于数组实现的quickSort（）。
+以下是双向链表的C++实现。 这个想法很简单，我们首先找出指向最后一个节点的指针。 一旦有了指向最后一个节点的指针，就可以使用指向链表的第一个和最后一个节点的指针对链表进行递归排序，类似于上面的递归函数，其中传递了第一个和最后一个数组元素的索引。 链表的分区功能也类似于数组的分区。 代替返回枢轴元素的索引，它返回指向枢轴元素的指针。 在以下实现中，quickSort（）只是一个包装函数，主要的递归函数是_quickSort（），类似于数组实现的quickSort（）。
 
 ![](img/907e6783a6130c711cfa83c52cb7210e.png)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to sort a linked list using Quicksort  
 #include <bits/stdc++.h> 
@@ -188,7 +188,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to sort a linked list using Quicksort 
 #include <stdio.h> 
@@ -320,9 +320,9 @@ int main(int argc, char **argv)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to sort a linked list using Quicksort 
 class QuickSort_using_Doubly_LinkedList{ 
@@ -454,9 +454,9 @@ class QuickSort_using_Doubly_LinkedList{
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to sort a linked list using Quicksort  
 using System;  
@@ -620,4 +620,3 @@ Linked List after sorting
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -18,9 +18,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find length of loop
 // in a linked list using Map
@@ -98,9 +98,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find length of loop
 // in a linked list using Map
@@ -198,7 +198,7 @@ public static void main (String[] args)
 **相似的文章：** [使用弗洛伊德循环检测算法](https://www.geeksforgeeks.org/find-length-of-loop-in-linked-list/)
 在“链表”中查找循环的长度
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

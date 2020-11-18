@@ -17,9 +17,9 @@ Output :0 0 0 1 1 2 3
 
 **有效解决方案**是从第二个节点遍历链表。 对于每个值为0的节点，我们将其与当前位置断开连接，然后将节点移到最前面。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to move all zeros 
 // to the end of the linked list. 
@@ -118,9 +118,9 @@ int main() {
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // JAVA program to move all zeros 
 // to the end of the linked list. 
@@ -233,9 +233,9 @@ class GFG
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to move all zeros 
 // to the end of the linked list. 
@@ -359,7 +359,7 @@ Linked list after rearrangement
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

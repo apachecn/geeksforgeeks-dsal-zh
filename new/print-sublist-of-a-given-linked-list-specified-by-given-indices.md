@@ -22,9 +22,9 @@
 
 下面的代码是上述方法的实现：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to find the 
 // subList in a linked list 
@@ -142,7 +142,7 @@ public class LinkedListSublist {
 ***时间复杂度：** O（N）*
 ***辅助空间：** O（1）*
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

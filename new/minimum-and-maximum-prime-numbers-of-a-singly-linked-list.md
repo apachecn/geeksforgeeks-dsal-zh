@@ -25,9 +25,9 @@ Output : Minimum : 2
 
 以下是上述想法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find minimum 
 // and maximum prime number of 
@@ -118,9 +118,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find minimum  
 // and maximum prime number of  
@@ -218,7 +218,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to find minimum  
 # and maximum prime number of  
@@ -304,9 +304,9 @@ minmaxPrimeNodes(head) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find minimum  
 // and maximum prime number of  
@@ -413,7 +413,7 @@ Maximum : 17
 
 **时间复杂度：** O（N），其中N是链​​表中节点的数量。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

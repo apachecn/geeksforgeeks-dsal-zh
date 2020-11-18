@@ -27,9 +27,9 @@ Output : e  f  g  h  a  b  c  d
 因此，我们需要掌握三个节点：第N个节点，第（N + 1）个节点和最后一个节点。 从头开始遍历列表，并在第N个节点处停止。 存储指向第N个节点的指针。 我们可以使用NthNode-> next获得第（N + 1）个节点。 继续遍历直到结束，并将指针也存储到最后一个节点。 最后，使用
 PrintList功能更改上述指针，并更改“ Last Print Rotated List”的指针。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to rotate a Doubly linked  
 // list counter clock wise by N times 
@@ -163,9 +163,9 @@ int main(void)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to rotate a Doubly linked  
 // list counter clock wise by N times  
@@ -304,7 +304,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 
 # Node of a doubly linked list  
 class Node:  
@@ -419,9 +419,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to rotate a Doubly linked  
 // list counter clock wise by N times  
@@ -571,7 +571,7 @@ c  d  e  a  b
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

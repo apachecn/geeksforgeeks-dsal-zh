@@ -5,9 +5,9 @@
 **方法1（迭代）**
 要确定两个列表是否相同，我们需要同时遍历两个列表，并且在遍历时需要比较数据。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // An iterative C++ program to check if  
 // two linked lists are identical or not 
@@ -93,7 +93,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // An iterative C program to check if two linked lists are 
 // identical or not 
@@ -172,9 +172,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // An iterative Java program to check if two linked lists 
 // are identical or not 
@@ -260,7 +260,7 @@ class LinkedList
 
 ## Python3
 
-```
+```py
 
 # An iterative Java program to check if  
 # two linked lists are identical or not  
@@ -336,9 +336,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // An iterative C# program to  
 // check if two linked lists 
@@ -440,9 +440,9 @@ Identical
 **方法2（递归）**
 递归解决方案代码比迭代代码干净得多。 不过，您可能不希望将递归版本用于生产代码，因为它会使用与列表长度成比例的堆栈空间
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A recursive C++ function to check if two linked  
 // lists are identical or not  
@@ -470,7 +470,7 @@ bool areIdentical(Node *a, Node *b) 
 
 ## C
 
-```
+```c
 
 // A recursive C function to check if two linked 
 // lists are identical or not 
@@ -494,9 +494,9 @@ bool areIdentical(struct Node *a, struct Node *b)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A recursive Java method to check if two linked 
 // lists are identical or not 
@@ -529,7 +529,7 @@ boolean areIdentical(LinkedList listb)
 
 ## Python3
 
-```
+```py
 
 # A recursive Python3 function to check  
 # if two linked lists are identical or not  
@@ -555,9 +555,9 @@ def areIdentical(a, b): 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A recursive C# method to  
 // check if two linked lists  
@@ -596,4 +596,3 @@ bool areIdentical(LinkedList listb) 
 
 如果您发现上述代码/算法有误，请写评论，或者找到解决同一问题的更好方法。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

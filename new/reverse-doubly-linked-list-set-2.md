@@ -20,9 +20,9 @@
 
 **方法：**在[上一篇文章](https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/)中，通过交换所有节点的上一个指针和下一个指针，更改头的prev（或开始），然后更改头的指针，来反转双向链表 到底。 在本文中，我们创建一个push函数，将给定节点添加到给定列表的开头。 我们遍历原始列表，然后将当前节点指针一一传递给push函数。 此过程将反转列表。 最后返回此反向列表的新标题。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to reverse 
 // a doubly linked list 
@@ -131,9 +131,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to reverse  
 // a doubly linked list  
@@ -251,7 +251,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to reverse 
 # a doubly linked list 
@@ -355,9 +355,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to reverse  
 // a doubly linked list  
@@ -485,7 +485,7 @@ Reversed list: 2 4 8 10
 
 **时间复杂度：** O（n）。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

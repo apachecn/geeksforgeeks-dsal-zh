@@ -8,9 +8,9 @@
 
 **方法：**在列表中找到小于前一个节点的第一个节点。 使其为**当前**。 如果不存在这样的节点，则列表已经排序。 其他将列表分为两个列表，**第一个**从**头**节点开始直到**当前的**先前节点，**第二个**从**当前开始** 节点直到列表的末尾。 颠倒**第二个**双链表。 请参阅此帖子。 现在合并**第一个**和**第二个**排序的双链表。 请参阅此帖子的[合并程序。 最终的合并列表是必需的排序的双链表。](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to sort the biotonic doubly linked list 
 #include <bits/stdc++.h> 
@@ -178,9 +178,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to sort the 
 // biotonic doubly linked list 
@@ -521,9 +521,9 @@ printList(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to sort the 
 // biotonic doubly linked list 
@@ -718,4 +718,3 @@ Doubly linked list after sorting:
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

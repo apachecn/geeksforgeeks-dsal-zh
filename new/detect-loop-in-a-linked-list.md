@@ -11,9 +11,9 @@
 **方法：**
 逐一遍历列表，并不断放入 哈希表中的节点地址。 在任何时候，如果达到NULL，则返回false，如果当前节点的下一个指向Hash中先前存储的任何节点，则返回true。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to detect loop in a linked list 
 #include <bits/stdc++.h> 
@@ -88,9 +88,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to detect loop in a linked list 
 import java.util.*; 
@@ -173,7 +173,7 @@ public class LinkedList {
 
 ## Python3
 
-```
+```py
 
 # Python program to detect loop 
 # in the linked list 
@@ -248,9 +248,9 @@ else :
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to detect loop in a linked list 
 using System; 
@@ -461,9 +461,9 @@ Loop Found
 
 Floyd的循环查找算法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to detect loop in a linked list 
 #include <bits/stdc++.h> 
@@ -531,7 +531,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C program to detect loop in a linked list 
 #include <stdio.h> 
@@ -595,9 +595,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to detect loop in a linked list 
 class LinkedList { 
@@ -726,9 +726,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to detect loop in a linked list 
 using System; 
@@ -825,9 +825,9 @@ Found Loop
 在这种方法中，将创建一个临时节点。 使遍历的每个节点的下一个指针指向该临时节点。 这样，我们将节点的下一个指针用作标志来指示该节点是否已遍历。 检查每个节点以查看下一个节点是否指向临时节点。 在循环的第一个节点的情况下，第二次遍历该条件将成立，因此我们发现该循环存在。 如果遇到一个指向null的节点，则循环不存在。
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to return first node of loop 
 #include <bits/stdc++.h> 
@@ -914,9 +914,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to return first node of loop 
 class GFG { 
@@ -1005,7 +1005,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to return first node of loop  
 
@@ -1078,9 +1078,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to return first node of loop 
 using System; 
@@ -1188,9 +1188,9 @@ Loop Found
 
 在此方法中，将创建两个指针，第一个（始终指向头）和最后一个指针。 每次最后一个指针移动时，我们都会计算第一个和最后一个之间的节点数，并检查当前节点数是否大于先前的节点数，如果是，我们通过移动最后一个指针进行操作，否则就意味着我们已经到达循环的终点， 我们相应地返回输出。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to return first node of loop 
 #include <bits/stdc++.h> 
@@ -1313,4 +1313,3 @@ Loop Found
 *   **辅助空间：** O（1）
     如果发现任何不正确的内容，或者想共享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -28,9 +28,9 @@ Output : 7 -> 3 -> 10 -> 6 -> 6 -> 6
 
 下面是此方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to move all occurrences of a 
 // given key to end. 
@@ -117,9 +117,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to move all occurrences of a 
 // given key to end. 
@@ -292,9 +292,9 @@ printList(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to move all occurrences of a 
 // given key to end. 
@@ -403,9 +403,9 @@ After moveToEnd(), the Linked list is
 2.现在，检查密钥和节点->数据是否相等，将节点移至倒数第二个，否则向前移
 。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code to remove key element to end of linked list 
 #include<bits/stdc++.h> 
@@ -519,9 +519,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to remove key element to end of linked list 
 import java.util.*; 
@@ -626,9 +626,9 @@ class gfg {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to remove key 
 // element to end of linked list 
@@ -755,4 +755,3 @@ Linked List after operations :
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -27,9 +27,9 @@ Output : 30
 3.  遍历时检查j的值是否等于sqrt（i）。 如果值相等，则将i和j和sqrtn都增加到指向sqrtn-> next，否则仅增加i。
 4.  现在，当我们到达列表的最后一个节点时，i将包含n值，j将包含sqrt（i）值，而sqrtn将指向第j个位置的节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find sqrt(n)'th node  
 // of a linked list  
@@ -125,7 +125,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to find sqrt(n)'th node  
 // of a linked list 
@@ -217,9 +217,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find sqrt(n)'th node  
 // of a linked list  
@@ -314,7 +314,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find sqrt(n)'th node  
 # of a linked list  
@@ -399,9 +399,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find sqrt(n)'th node  
 // of a linked list  
@@ -506,4 +506,3 @@ sqrt(n)th node is 20
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

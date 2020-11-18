@@ -14,9 +14,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ program to merge two sorted linked lists */
 #include <bits/stdc++.h> 
@@ -164,7 +164,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 /* C program to merge two sorted linked lists */
 #include<stdio.h> 
@@ -305,9 +305,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Java program to merge two 
    sorted linked lists */
@@ -447,7 +447,7 @@ Node sortedMerge(Node headA, Node headB)
 
 ## Python3
 
-```
+```py
 
 """ Python program to merge two 
 sorted linked lists """
@@ -544,9 +544,9 @@ by Debidutta Rath """
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* C# program to merge two  
 sorted linked lists */
@@ -697,9 +697,9 @@ Merged Linked List is:
 **方法2（使用本地引用）**
 此解决方案在结构上与上述非常相似，但避免使用虚拟节点。 相反，它维护一个struct node **指针lastPtrRef，该指针始终指向结果列表的最后一个指针。 这解决了虚拟节点所做的相同情况—在结果列表为空时处理结果列表。 如果您试图在列表尾部建立列表，则可以使用虚拟节点或结构节点**“引用”策略（有关详细信息，请参见第1节）。
 
-## C ++
+## C++
 
-```
+```cpp
 
 Node* SortedMerge(Node* a, Node* b)  
 {  
@@ -741,7 +741,7 @@ return(result); 
 
 ## C
 
-```
+```c
 
 struct Node* SortedMerge(struct Node* a, struct Node* b)  
 { 
@@ -782,9 +782,9 @@ struct Node* SortedMerge(struct Node* a, struct Node* b) 
 **方法3（使用递归）**
 合并是那些不错的递归问题之一，其中递归解决方案代码比迭代代码干净得多。 但是，您可能不希望将递归版本用于生产代码，因为它会使用与列表长度成比例的堆栈空间。
 
-## C ++
+## C++
 
-```
+```cpp
 
 Node* SortedMerge(Node* a, Node* b)  
 {  
@@ -816,7 +816,7 @@ Node* SortedMerge(Node* a, Node* b) 
 
 ## C
 
-```
+```c
 
 struct Node* SortedMerge(struct Node* a, struct Node* b)  
 { 
@@ -844,9 +844,9 @@ struct Node* SortedMerge(struct Node* a, struct Node* b) 
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 class GFG  
 { 
@@ -876,7 +876,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 
 # Python3 program merge two sorted linked 
 # in third linked list using recursive. 
@@ -987,9 +987,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 using System; 
 
@@ -1027,4 +1027,3 @@ public Node sortedMerge(Node A, Node B) 
 来源： [http://cslibrary.stanford.edu/ 105 / LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 如果您发现上述代码/算法不正确，或者找到解决相同问题的更好方法，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

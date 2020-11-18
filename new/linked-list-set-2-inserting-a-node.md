@@ -3,9 +3,9 @@
 我们在[先前的文章](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)中介绍了链接列表。 我们还创建了一个具有3个节点的简单链表，并讨论了链表遍历。
 本文中讨论的所有程序均考虑以下链表的表示形式。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A linked list node  
 class Node  
@@ -20,7 +20,7 @@ class Node 
 
 ## C
 
-```
+```c
 
 // A linked list node 
 struct Node 
@@ -31,9 +31,9 @@ struct Node
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Linked List Class 
 class LinkedList 
@@ -74,9 +74,9 @@ class LinkedList:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* Linked list Node*/
 public class Node 
@@ -100,9 +100,9 @@ public class Node
 
 以下是在最前面添加节点的4个步骤。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* Given a reference (pointer to pointer)  
 to the head of a list and an int,  
@@ -128,7 +128,7 @@ void push(Node** head_ref, int new_data) 
 
 ## C
 
-```
+```c
 
 /* Given a reference (pointer to pointer) to the head of a list 
    and an int,  inserts a new node on the front of the list. */
@@ -149,9 +149,9 @@ void push(struct Node** head_ref, int new_data)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* This function is in LinkedList class. Inserts a 
    new Node at front of the list. This method is  
@@ -191,9 +191,9 @@ def push(self, new_data):
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* Inserts a new Node at front of the list. */
 public void push(int new_data) 
@@ -217,9 +217,9 @@ push（）的时间复杂度为O（1），因为它要做的工作量是恒定�
 
 [![linkedlist_insert_middle](img/b6bf7ceee6de4eb0511ffb8bb649abfb.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_middle.png) 
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Given a node prev_node, insert a  
 // new node after the given   
@@ -255,7 +255,7 @@ void insertAfter(Node* prev_node, int new_data)  
 
 ## C
 
-```
+```c
 
 /* Given a node prev_node, insert a new node after the given  
 prev_node */
@@ -283,9 +283,9 @@ void insertAfter(struct Node* prev_node, int new_data) 
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* This function is in LinkedList class.  
 Inserts a new node after the given prev_node. This method is  
@@ -338,9 +338,9 @@ def insertAfter(self, prev_node, new_data): 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* Inserts a new node after the given prev_node. */
 public void insertAfter(Node prev_node,  
@@ -378,9 +378,9 @@ insertAfter（）的时间复杂度为O（1），因为它的工作量是恒定�
 
 以下是最后添加节点的6个步骤。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Given a reference (pointer to pointer) to the head   
 // of a list and an int, appends a new node at the end  
@@ -424,7 +424,7 @@ void append(Node** head_ref, int new_data)  
 
 ## C
 
-```
+```c
 
 /* Given a reference (pointer to pointer) to the head 
    of a list and an int, appends a new node at the end  */
@@ -460,9 +460,9 @@ void append(struct Node** head_ref, int new_data)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Appends a new node at the end.  This method is  
    defined inside LinkedList class shown above */
@@ -527,9 +527,9 @@ def append(self, new_data):
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* Appends a new node at the end. This method is  
 defined inside LinkedList class shown above */
@@ -568,9 +568,9 @@ append的时间复杂度为O（n），其中n是链表中节点的数量。 由�
 还可以通过保留指向链表尾部的额外指针/
 **，将该方法优化为在O（1）中工作，以下是使用上述所有方法创建链表的完整程序 。**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A complete working C++ program to demonstrate  
 //  all insertion methods on Linked List  
@@ -709,7 +709,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // A complete working C program to demonstrate all insertion methods 
 // on Linked List 
@@ -835,9 +835,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A complete working Java program to demonstrate all insertion methods 
 // on linked list 
@@ -1080,9 +1080,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A complete working C# program to demonstrate  
 // all insertion methods on linked list 
@@ -1224,4 +1224,3 @@ class GFG
 您可能想尝试 **[在链表](http://quiz.geeksforgeeks.org/data-structure/linked-list/)**
 上练习MCQ问题 。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

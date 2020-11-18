@@ -19,9 +19,9 @@ Output: 11->20->5->15->10
 
 一种需要O（n）时间的**有效方法**，是使用类似于冒泡排序的单次扫描，然后维护一个标志来表示当前的顺序（）。 如果当前的两个元素不按该顺序排列，则交换这些元素，否则不进行交换。 有关交换顺序的详细说明，请参考[和](http://geeksquiz.com/converting-an-array-of-integers-into-zig-zag-fashion/)。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to arrange linked 
 // list in zigzag fashion 
@@ -125,9 +125,9 @@ int main(void)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to arrange 
 // linked list in zigzag fashion 
@@ -341,9 +341,9 @@ display(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to arrange 
 // linked list in zigzag fashion 
@@ -480,4 +480,3 @@ Zig Zag Linked list
 
 本文由 [Utkarsh Trivedi](http://qa.geeksforgeeks.org/user/utkarsh111) 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -22,9 +22,9 @@ Output : 13 -> 9 -> 22 -> 45 -> 5 -> 6
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to delete all the nodes from the list 
 // that are divisible by  the specified value K 
@@ -122,9 +122,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to delete all the nodes from the list 
 // that are divisible by the specified value K 
@@ -232,7 +232,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 program to delete all the 
 # nodes from the list that are  
@@ -371,9 +371,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to delete all the nodes  
 // from the list that are divisible  
@@ -493,7 +493,7 @@ Final List: 11 5 7
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

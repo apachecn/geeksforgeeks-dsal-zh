@@ -23,9 +23,9 @@ Output : Linked list are:
 
 这个想法是在不等于NULL的情况下遍历链接列表，并将 **max** 和 **min** 变量分别初始化为 **INT_MIN** 和 **INT_MAX** 。 之后检查一个条件，如果最大值小于头值，则将头值分配给max或最小值，然后将头值分配给min，否则头值分配给min，否则头点指向下一个节点。 继续此过程，直到head不等于NULL。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to find smallest and largest 
 // elements in singly linked list. 
@@ -148,9 +148,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find smallest and largest  
 // elements in singly linked list.  
@@ -399,9 +399,9 @@ print(smallestElement(head),end="") 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find smallest and largest  
 // elements in singly linked list.  
@@ -547,4 +547,3 @@ Minimum element in linked list: 13
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

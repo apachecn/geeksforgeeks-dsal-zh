@@ -22,9 +22,9 @@ Output: Modified Linked List = 14 16 48
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of above approach 
 #include <bits/stdc++.h> 
@@ -112,9 +112,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of above approach  
 class GFG 
@@ -214,7 +214,7 @@ public static void main(String args[]) 
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation of above approach 
 import math  
@@ -296,9 +296,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the above approach:  
 using System; 
@@ -409,7 +409,7 @@ Modified Linked List
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

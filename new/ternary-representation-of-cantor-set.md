@@ -37,9 +37,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the cantor set 
 // for n levels and 
@@ -142,7 +142,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C implementation to find the cantor set 
 // for n levels and 
@@ -243,9 +243,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the cantor set 
 // for n levels and 
@@ -349,9 +349,9 @@ class GFG
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the cantor set 
 // for n levels and 
@@ -466,7 +466,7 @@ class GFG
 **参考：** [Cantor Set维基百科](https://en.wikipedia.org/wiki/Cantor_set)
 **相关文章：** [乔治·康托尔有理数集的第N个项](https://www.geeksforgeeks.org/n-th-term-of-george-cantor-set-of-rational-numbers/)
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

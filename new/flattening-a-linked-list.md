@@ -26,9 +26,9 @@
 
 以下是C和Java实现。
 
-## C / C ++
+## C / C++
 
-```
+```cpp
 
 // C program for flattening a linked list 
 #include <stdio.h> 
@@ -155,9 +155,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for flattening a Linked List 
 class LinkedList 
@@ -307,4 +307,3 @@ class LinkedList
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

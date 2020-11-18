@@ -14,7 +14,7 @@
 
 1.  ### [阵列](https://www.geeksforgeeks.org/arrays-in-java/)
 
-    数组是一个包含固定数量的单一类型值的容器对象。 创建数组时将确定数组的长度。 数组是一组由通用名称引用的相似类型的变量。 Java中的数组与C / C ++中的数组工作方式不同。
+    数组是一个包含固定数量的单一类型值的容器对象。 创建数组时将确定数组的长度。 数组是一组由通用名称引用的相似类型的变量。 Java中的数组与C / C++中的数组工作方式不同。
 
     **语法：**
 
@@ -636,7 +636,7 @@
 
     ```
 
-注意读者！ 现在不要停止学习。 通过 [**Java和Java Collections基础课程**](https://practice.geeksforgeeks.org/courses/Java-Collections?vC=1) 以对学生方便的价格掌握所有重要的Java和Collections概念，并为行业做好准备。
+
 
 * * *
 

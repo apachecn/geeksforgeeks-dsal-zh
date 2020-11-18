@@ -20,9 +20,9 @@ Output :p -> a -> r -> t -> y
 上述解决方案需要额外的空间。 我们可以通过首先对两个链表进行反向操作来节省空间。 反转后，我们可以轻松找到最长公共前缀的长度。 再次反转以恢复原始列表。
 这里重要的一点是元素的顺序。 我们需要从第n个节点打印到最后一个节点。 我们使用上述找到的计数并使用两个指针方法按要求的顺序打印节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the Longest Common 
 // suffix in linked lists 
@@ -158,9 +158,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the Longest Common 
 // suffix in linked lists 
@@ -301,9 +301,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find the Longest Common 
 // suffix in linked lists 
@@ -455,7 +455,7 @@ ing
 
 时间复杂度：O（N）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

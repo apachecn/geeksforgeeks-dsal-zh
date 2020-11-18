@@ -19,9 +19,9 @@ Output:
 **方法：**主要思想是为矩阵的每个元素构造一个新节点，然后递归地创建其上，下，上一个和下一个节点，并分别更改上一个和上一个指针的指针。
 **以下是上述方法的实现：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ programm to construct a Doubly
 // linked linked list from 2D Matrix
@@ -150,9 +150,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to construct a Doubly
 // linked linked list from 2D Matrix
@@ -277,7 +277,7 @@ class GFG{
 
 ## Python3
 
-```
+```py
 
 # Python3 programm to construct 
 # a Doubly linked linked list 
@@ -395,9 +395,9 @@ if __name__=="__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to construct a Doubly
 // linked linked list from 2D Matrix
@@ -526,7 +526,7 @@ class GFG{
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

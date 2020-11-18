@@ -26,9 +26,9 @@ Output : -8 -> 2 -> -4 -> 12 -> 7 -> 10
 4.  再次反转第二个列表。
 5.  将第二个列表连接回第一个列表的末尾。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to modify the contents of  
 // the linked list 
@@ -211,9 +211,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to modify the contents  
 // of the linked list 
@@ -588,9 +588,9 @@ printList(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to modify the  
 // contents of the linked list 
@@ -803,9 +803,9 @@ Modified List:
 
 下面是使用堆栈的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to modify the 
 // contents of the linked list 
@@ -929,9 +929,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to modify the 
 // contents of the linked list 
@@ -1061,9 +1061,9 @@ class GFG 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to modify the 
 // contents of the linked list 
@@ -1211,4 +1211,3 @@ Modified List:
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

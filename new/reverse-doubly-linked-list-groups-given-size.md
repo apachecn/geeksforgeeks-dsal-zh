@@ -9,9 +9,9 @@
 
 **方法：**创建一个递归函数，例如 **reverse（head，k）**。 该功能接收每组 **k** 节点的头或第一个节点。 通过应用[中讨论的方法，可以反转 **k** 个节点组。 设置2。](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2/) 反转 **k个**节点组后，该功能检查列表中是否存在下一组节点。 如果组存在，则使用下一个组的第一个节点对其自身进行递归调用，并使用该组的下一个和上一个链接进行必要的调整。 最后，它返回反转组的新头节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to reverse a doubly linked list 
 // in groups of given size 
@@ -129,9 +129,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to reverse a doubly linked list  
 // in groups of given size  
@@ -364,9 +364,9 @@ printList(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to reverse a doubly linked list  
 // in groups of given size  
@@ -498,7 +498,7 @@ Modified list: 8 10 2 4
 
 **时间复杂度：** O（n）。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

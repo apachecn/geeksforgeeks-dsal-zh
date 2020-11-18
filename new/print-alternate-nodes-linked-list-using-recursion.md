@@ -20,9 +20,9 @@ Output : 10
 2.如果标记为奇数，则打印节点
 3.将头和标记加1，然后递归返回下一个 节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code to print alternate nodes 
 // of a linked list using recursion 
@@ -84,9 +84,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to print alternate nodes  
 // of a linked list using recursion  
@@ -153,7 +153,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 code to print alternate nodes  
 # of a linked list using recursion  
@@ -212,9 +212,9 @@ printAlternate(head, True); 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to print alternate nodes  
 // of a linked list using recursion  
@@ -288,7 +288,7 @@ public static void Main(String []args)
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

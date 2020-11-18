@@ -26,9 +26,9 @@ Alternate nodes : 10 -> 33 -> 73
 
 以下是此方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code to print the product of Alternate Nodes 
 #include <bits/stdc++.h> 
@@ -96,7 +96,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C code to print the product of Alternate Nodes 
 #include <stdio.h> 
@@ -160,9 +160,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to print the product of Alternate Nodes  
 class GFG 
@@ -232,7 +232,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 code to print the  
 # product of Alternate Nodes 
@@ -294,9 +294,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to print the product of Alternate Nodes  
 using System; 
@@ -381,9 +381,9 @@ public static void Main(String []args) 
 
 以下是此方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code to print alternate nodes 
 // of a linked list using recursion 
@@ -447,9 +447,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to print alternate nodes 
 // of a linked list using recursion 
@@ -591,9 +591,9 @@ print (prod)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to print alternate nodes 
 // of a linked list using recursion 
@@ -671,7 +671,7 @@ public static void Main(String []args)
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

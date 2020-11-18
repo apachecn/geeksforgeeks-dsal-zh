@@ -17,9 +17,9 @@ Output : d
 **方法1：**
 迭代计算字符串中每个字符的频率，并返回出现次数最多的一个字符。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to count the maximum
 // occurring character in linked list
@@ -91,9 +91,9 @@ int main() {
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // JAVA program to count the
 // maximum occurring character 
@@ -190,9 +190,9 @@ e
 **方法2 ：（使用计数数组）**
 创建一个计数数组，并对每个字符频率进行计数，以返回最大出现的字符。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to count the maximum
 // occurring character in linked list
@@ -253,9 +253,9 @@ int main() {
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count the maximum
 // occurring character in linked list
@@ -331,9 +331,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count the maximum
 // occurring character in linked list
@@ -418,7 +418,7 @@ e
 
 **时间复杂度：**（否）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

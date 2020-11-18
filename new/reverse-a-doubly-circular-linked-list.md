@@ -44,9 +44,9 @@ reverse(head)
 
 **说明：** **insertEnd（）**的参数列表中的变量**头**是指针变量的指针。 **reverse（）**从**头**指针开始向后遍历双向循环链表，并一一获得遍历中的节点。 借助功能 **insertEnd（）**，将那些节点插入到以 **new_head** 指针开头的列表的末尾，最后返回 **new_head** 。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to revesre a 
 // doubly circular linked list 
@@ -179,9 +179,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to revesre a  
 // doubly circular linked list  
@@ -322,7 +322,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to revesre a 
 # doubly circular linked list 
@@ -447,9 +447,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to revesre a  
 // doubly circular linked list 
@@ -605,7 +605,7 @@ Backward direction: 1 2 3 4 5
 
 **时间复杂度：** O（n）。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

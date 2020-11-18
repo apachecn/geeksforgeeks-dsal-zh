@@ -23,9 +23,9 @@
 
 下面是上述方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to move last m elements 
 // to front in a given linked list 
@@ -151,7 +151,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C Program to move last m elements 
 // to front in a given linked list 
@@ -270,9 +270,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to move last m elements 
 // to front in a given linked list 
@@ -396,7 +396,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 
 # Python Program to move last m elements 
 # to front in a given linked list 
@@ -517,9 +517,9 @@ printList(start)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to move last m elements 
 // to front in a given linked list 
@@ -655,7 +655,7 @@ Initial Linked list
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

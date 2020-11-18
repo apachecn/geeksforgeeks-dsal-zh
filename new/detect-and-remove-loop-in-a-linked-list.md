@@ -146,7 +146,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C program to detect and remove loop in linked list
 #include <stdio.h>
@@ -266,9 +266,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to detect and remove loop in linked list
 
@@ -472,9 +472,9 @@ llist.printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to detect and remove loop in linked list
 using System;
@@ -729,7 +729,7 @@ int main()
 
 ## C
 
-```
+```c
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -849,9 +849,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to detect and remove loop in linked list
 
@@ -1064,9 +1064,9 @@ llist.printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to detect and remove loop in linked list
 using System;
@@ -1222,9 +1222,9 @@ i*n - k or (i-1)*n + n - k (cover the loop completely i-1 times and start from n
 
 因此，如果我们再次以**相同的速度**移动两个指针，以使一个指针（例如慢速）从链接列表的头节点开始，而另一个指针（例如快速）从会合点开始。 当慢速指针到达循环的起点（已进行m步）时，快速指针也将进行m步的移动，因为它们现在以相同的速度移动。 因为m + k是n的倍数，并且从k快速开始，所以它们将在开始时相遇。 他们还可以见面吗？ 否，因为慢指针在m步后第一次进入循环。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to detect and remove loop
 #include <bits/stdc++.h>
@@ -1325,9 +1325,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to detect 
 // and remove loop in linked list
@@ -1505,9 +1505,9 @@ llist.printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to detect and remove loop in linked list
 using System;
@@ -1608,9 +1608,9 @@ Linked List after removing loop
 **方法4散列：散列链表节点的地址**
 我们可以散列无序映射中链表节点的地址，仅检查元素是否已存在于映射中。 如果存在，则我们已经到达一个已经存在一个周期的节点，因此我们需要使最后一个节点的下一个指针为NULL。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to detect and remove loop
 #include <bits/stdc++.h>
@@ -1685,9 +1685,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to detect  and remove loop in a linked list
 import java.util.*;
@@ -1800,4 +1800,3 @@ https://www.youtube.com/watch?v=_BG9rjkAXj8 
 感谢Gaurav Ahirwar提供上述解决方案。
 如果您发现上述代码/算法不正确，或者找到其他解决同一问题的方法，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

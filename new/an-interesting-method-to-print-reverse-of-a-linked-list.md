@@ -23,9 +23,9 @@ Output : Reversed Linked list : 85
 **技巧：**以反向顺序打印列表而没有任何递归功能或循环的想法是使用[回车符](https://en.wikipedia.org/wiki/Carriage_return)（“ r”）。 为此，我们应该了解列表的长度。 现在，我们应该打印n-1个空白空间，然后打印第一个元素，然后打印“ r”，再打印n-2个空白空间，再打印第二个节点，然后打印“ r”，依此类推。
 **回车（ ”）：**它命令打印机（光标或系统控制台的显示屏）将光标的位置移至同一行的第一个位置。
 
-## C / C ++
+## C / C++
 
-```
+```cpp
 
 // C program to print reverse of list 
 #include <stdio.h> 
@@ -112,9 +112,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print reverse of list 
 import java.io.*; 
@@ -215,9 +215,9 @@ public class GFG 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print reverse of list 
 using System; 
@@ -317,7 +317,7 @@ public class GFG
 
 ## Python3
 
-```
+```py
 
 # Python3 program to print reverse of list 
 
@@ -429,4 +429,3 @@ Reversed Linked List:
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

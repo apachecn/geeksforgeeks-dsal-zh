@@ -15,9 +15,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of the approach 
 #include <iostream> 
@@ -107,9 +107,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the approach 
 class GFG 
@@ -208,7 +208,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation of the approach 
 
@@ -287,9 +287,9 @@ print( getIntersectionNode(head1, head2))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the approach 
 using System; 

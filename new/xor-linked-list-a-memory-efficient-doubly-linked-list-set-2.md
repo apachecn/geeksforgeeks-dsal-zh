@@ -8,9 +8,9 @@
 在以下代码中， *insert（）*函数在开始处插入一个新节点。 我们需要更改链表的头指针，这就是为什么要使用双指针的原因（请参见[此](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）。 让我们首先再次讨论[以前的帖子](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)中讨论过的几件事。 我们将下一个节点和上一个节点的XOR与每个节点存储在一起，我们将其称为npx，这是每个节点唯一的地址成员。 当我们在开始处插入新节点时，新节点的npx将始终为NULL与当前头的XOR。 并且当前头的npx必须更改为新节点与当前头旁边的节点的XOR。
 *printList（）*向前遍历列表。 它从每个节点打印数据值。 要遍历列表，我们需要在每个点都获得指向下一个节点的指针。 通过跟踪当前节点和上一个节点，我们可以获得下一个节点的地址。 如果对curr > npx和prev进行XOR，我们将获得下一个节点的地址。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ Implementation of Memory 
 efficient Doubly Linked List */
@@ -112,7 +112,7 @@ int main ()
 
 ## C
 
-```
+```c
 
 /* C Implementation of Memory 
    efficient Doubly Linked List */
@@ -214,7 +214,6 @@ Following are the nodes of Linked List:
 40 30 20 10 
 ```
 
-请注意，C / C ++标准未定义指针的XOR。 因此，上述实现可能无法在所有平台上都有效。
+请注意，C / C++标准未定义指针的XOR。 因此，上述实现可能无法在所有平台上都有效。
 如果发现任何不正确的内容，或者想共享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

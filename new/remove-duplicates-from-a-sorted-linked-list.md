@@ -9,9 +9,9 @@
 **实现：**
 除了removeDuplicates（）之外的其他功能仅用于创建链接链表并测试removeDuplicates（）。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ Program to remove duplicates from a sorted linked list */
 #include <bits/stdc++.h> 
@@ -116,7 +116,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 /* C Program to remove duplicates from a sorted linked list */
 #include<stdio.h> 
@@ -217,9 +217,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to remove duplicates from a sorted linked list 
 class LinkedList 
@@ -416,9 +416,9 @@ llist.printList() 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to remove duplicates 
 // from a sorted linked list 
@@ -533,9 +533,9 @@ Linked list after duplicate removal  11 13 20
 
 **递归方法：** [
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ Program to remove duplicates 
 from a sorted linked list */
@@ -647,7 +647,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 /* C recursive Program to remove duplicates from a sorted linked list */
 #include<stdio.h> 
@@ -739,9 +739,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to remove duplicates 
 // from a sorted linked list  
@@ -855,7 +855,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 Program to remove duplicates 
 # from a sorted linked list  
@@ -954,9 +954,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to remove duplicates 
 // from a sorted linked list  
@@ -1083,9 +1083,9 @@ Linked list after duplicate removal  11 13 20
 
 下面是上述方法的实现：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to remove duplicates 
 // from a sorted linked list 
@@ -1210,4 +1210,3 @@ List after removal of elements
 **参考：**
 [cslibrary.stanford.edu /105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

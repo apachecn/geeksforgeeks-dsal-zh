@@ -31,9 +31,9 @@ Output : Product = 75, Sum = 20
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to calculate sum and product from 
 // singly circular linked list nodes 
@@ -165,9 +165,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to calculate sum and product from  
 // singly circular linked list nodes  
@@ -303,7 +303,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
     # Python3 program to calculate sum and  
 # product from singly circular linked list  
@@ -435,9 +435,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to calculate sum and product from  
 // singly circular linked list nodes  
@@ -594,7 +594,7 @@ Sum = 22, Product = 121
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

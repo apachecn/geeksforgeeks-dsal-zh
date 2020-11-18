@@ -2,15 +2,15 @@
 
 上的快速排序
 
-[双链表](https://www.geeksforgeeks.org/quicksort-for-linked-list/)上的QuickSort在此处进行了讨论。 练习了单链接列表上的QuickSort。 以下是相同的C ++实现。 关于实现的重要事项是，它更改指针而不是交换数据，并且时间复杂度与“双链表”的实现相同。
+[双链表](https://www.geeksforgeeks.org/quicksort-for-linked-list/)上的QuickSort在此处进行了讨论。 练习了单链接列表上的QuickSort。 以下是相同的C++实现。 关于实现的重要事项是，它更改指针而不是交换数据，并且时间复杂度与“双链表”的实现相同。
 ![sorting image](img/cc3d3ac699ac03f5792746b3e3e54865.png)
 
 在 **partition（）**中，我们将最后一个元素视为枢纽。 我们遍历当前列表，如果节点的值大于枢轴，则将其移到尾部之后。 如果节点的值较小，我们将其保持在当前位置。
 在 **QuickSortRecur（）**中，我们首先调用partition（），它将枢轴放置在正确的位置并返回枢轴。 将透视图放置在正确的位置后，我们找到左侧的尾节点（透视图之前的列表）并递归到左侧列表。 最后，我们再次列出正确的清单。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for Quick Sort on Singly Linled List 
 #include <iostream> 
@@ -173,9 +173,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for Quick Sort on Singly Linled List 
 
@@ -315,9 +315,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for Quick Sort on  
 // Singly Linled List 
@@ -473,4 +473,3 @@ Linked List after sorting
 
 本文由 [**Balasubramanian.N**](http://in.linkedin.com/pub/balasubramanian-nagasundaram/3a/361/97b) 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

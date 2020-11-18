@@ -2,7 +2,7 @@
 
 中的通用链接列表
 
-与 [C ++](https://www.geeksforgeeks.org/c-plus-plus/) 和 [Java](https://www.geeksforgeeks.org/java/) 不同， [C](https://www.geeksforgeeks.org/c/) 不支持泛型。 如何在C中创建可用于任何数据类型的链表？ 在C语言中，我们可以使用[无效指针](http://geeksquiz.com/void-pointer-c/)和函数指针来实现相同的功能。 关于void指针的伟大之处在于它可以用于指向任何数据类型。 另外，所有类型的指针的大小始终是相同的，因此我们总是可以分配一个链表节点。 需要使用函数指针来处理存储在void指针指向的地址中的实际内容。
+与 [C++](https://www.geeksforgeeks.org/c-plus-plus/) 和 [Java](https://www.geeksforgeeks.org/java/) 不同， [C](https://www.geeksforgeeks.org/c/) 不支持泛型。 如何在C中创建可用于任何数据类型的链表？ 在C语言中，我们可以使用[无效指针](http://geeksquiz.com/void-pointer-c/)和函数指针来实现相同的功能。 关于void指针的伟大之处在于它可以用于指向任何数据类型。 另外，所有类型的指针的大小始终是相同的，因此我们总是可以分配一个链表节点。 需要使用函数指针来处理存储在void指针指向的地址中的实际内容。
 
 以下是示例C代码，以演示通用链表的工作。
 
@@ -105,4 +105,3 @@ Created float linked list is
 
 本文由 **Himanshu Gupta** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

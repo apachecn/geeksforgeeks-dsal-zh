@@ -18,7 +18,7 @@ Output:  4 -> 3
 2.如果某个节点不是“关键”节点，则将其地址->接下来的地址存储在pp中。
 3.如果稍后再找到“关键”节点，则更改pp（最终将节点- >接下来）指向当前节点->接下来。
 
-以下是相同的C ++实现。
+以下是相同的C++实现。
 
 ```
 
@@ -106,7 +106,7 @@ Linked List after Deletion of 2:
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

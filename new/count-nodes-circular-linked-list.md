@@ -8,9 +8,9 @@
 
 我们使用[循环链表|中的概念。 集合2（Traversal）](https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/)。 在遍历时，我们会跟踪节点数。
 
-## C / C ++
+## C / C++
 
-```
+```cpp
 
 // C program to count number of nodes in 
 // a circular linked list. 
@@ -77,9 +77,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count number of nodes in  
 // a circular linked list.  
@@ -154,7 +154,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 program to count number of nodes in 
 # a circular linked list. 
@@ -217,9 +217,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count number of nodes in  
 // a circular linked list.  
@@ -303,4 +303,3 @@ public static void Main(String []args) 
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

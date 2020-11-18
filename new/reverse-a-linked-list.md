@@ -38,9 +38,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Iterative C++ program to reverse
 // a linked list
@@ -126,7 +126,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // Iterative C program to reverse a linked list
 #include <stdio.h>
@@ -199,9 +199,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for reversing the linked list
 
@@ -332,9 +332,9 @@ llist.printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for reversing the linked list
 using System;
@@ -447,9 +447,9 @@ Reversed Linked list
 
 ![Linked List Rverse](img/c42997b58f1bb0fb445bc20c05d0a4d5.png)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Recursive C++ program to reverse
 // a linked list
@@ -531,9 +531,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Recursive Java program to reverse
 // a linked list
@@ -611,7 +611,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 """Python3 program to reverse linked list
 using recursive method"""
@@ -679,9 +679,9 @@ print(linkedList)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // Recursive C# program to 
 // reverse a linked list
@@ -780,9 +780,9 @@ Reversed Linked list
 
 下面是此方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A simple and tail recursive C++ program to reverse
 // a linked list
@@ -868,9 +868,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for reversing the Linked list
 
@@ -1040,9 +1040,9 @@ llist.printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for reversing the Linked list
 using System;
@@ -1144,9 +1144,9 @@ Reversed linked list
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for above approach
 #include <bits/stdc++.h>
@@ -1274,4 +1274,3 @@ Reversed linked list
 **参考：**
 [http://cslibrary.stanford.edu/105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

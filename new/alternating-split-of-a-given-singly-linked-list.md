@@ -5,9 +5,9 @@
 **方法1（简单）**
 最简单的方法是遍历源列表，将节点拉离源，然后将其交替放置在“ a”和“ b”的开头（或开头）。 唯一奇怪的部分是节点的顺序与它们在源列表中出现的顺序相反。 方法2通过跟踪子列表中的最后一个节点在最后插入该节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ Program to alternatively split 
 a linked list into two halves */
@@ -149,7 +149,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 /*Program to alternatively split a linked list into two halves */
 #include<stdio.h> 
@@ -418,9 +418,9 @@ Resultant Linked List 'b' : 5 3 1
 **方法2（使用虚拟节点）**
 这是一种替代方法，以与源列表相同的顺序构建子列表。 该代码在构建“ a”和“ b”列表时使用了临时的虚拟标头节点。 每个子列表都有一个“尾”指针，该指针指向其当前的最后一个节点-这样，新节点就可以轻松地附加到每个列表的末尾。 虚拟节点为尾部指针提供一些初始指向的指针。 在这种情况下，虚拟节点是有效的，因为它们是临时的并在堆栈中分配。 或者，可以使用局部“引用指针”（始终指向列表中的最后一个指针而不是最后一个节点）来避免虚拟节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 void AlternatingSplit(Node* source,  
                       Node** aRef, Node** bRef)  
@@ -457,7 +457,7 @@ void AlternatingSplit(Node* source, 
 
 ## C
 
-```
+```c
 
 void AlternatingSplit(struct Node* source, struct Node** aRef,  
                             struct Node** bRef)  
@@ -491,4 +491,3 @@ void AlternatingSplit(struct Node* source, struct Node** aRef, 
 
 如果您发现上述代码/算法有误，请写注释，或者找到解决同一问题的更好方法。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

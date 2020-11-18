@@ -47,9 +47,9 @@ is 67, so 67 is deleted.
 
 **实施：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to remove last node of 
 // linked list. 
@@ -120,9 +120,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to remove last node of 
 // linked list. 
@@ -192,7 +192,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to remove the last node of  
 # linked list. 
@@ -250,9 +250,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to remove last node of 
 // linked list. 
@@ -336,7 +336,7 @@ class GFG {
 *   **空间复杂度：** O（1）。
     不需要额外的空间，因此空间复杂度是恒定的
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

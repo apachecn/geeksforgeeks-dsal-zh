@@ -26,9 +26,9 @@ Output
 
 下图是上述方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ recursive program to add two linked lists
 #include <bits/stdc++.h>
@@ -231,7 +231,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // A recursive program to add two linked lists
 
@@ -455,9 +455,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to add two linked lists
 
@@ -675,9 +675,9 @@ public class linkedlistATN
 *   在每次迭代中，我们都会跟踪进位。
 *   最后，如果进位> 0，则意味着我们需要在结果列表的开头增加一个节点以容纳此进位。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Iterative program to add two linked lists  
 #include <bits/stdc++.h> 
@@ -797,4 +797,3 @@ int main() 
 相关文章：[添加两个由链表表示的数字| 设置1](https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/)
 如果发现不正确的内容，或者想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

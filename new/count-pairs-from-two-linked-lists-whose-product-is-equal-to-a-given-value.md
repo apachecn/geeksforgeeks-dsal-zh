@@ -25,9 +25,9 @@ The pair is: (3, 3)
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count all pairs from both the 
 // linked lists whose product is equal to 
@@ -110,9 +110,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count all pairs from both the 
 // linked lists whose product is equal to 
@@ -202,9 +202,9 @@ class GFG 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count all pairs from both the 
 // linked lists whose product is equal to 
@@ -304,7 +304,7 @@ Count = 1
 
 **时间复杂度：** O（N ^ 2）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

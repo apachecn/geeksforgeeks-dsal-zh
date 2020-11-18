@@ -17,9 +17,9 @@ Output:  New list = 5->8->9->4
 
 **方法：**我们同时遍历两个链表，并比较两个链表的节点。 其中更大的节点将被添加到新的链表中。 我们为每个节点执行此操作。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to create a new linked list 
 // from two given linked list 
@@ -126,9 +126,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to create a new linked list  
 // from two given linked list  
@@ -242,7 +242,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 program to create a  
 # new linked list from two given  
@@ -348,9 +348,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to create a new linked list  
 // from two given linked list  
@@ -474,7 +474,7 @@ New List:    5->7->4->8->
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

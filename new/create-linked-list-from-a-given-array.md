@@ -17,9 +17,9 @@ Output : 10->11->12->13->14
 
 **简单方法：**对于数组 **arr []** 的每个元素，我们在链接列表中创建一个节点，并将其插入到末尾。
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <iostream> 
 using namespace std; 
@@ -76,9 +76,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the approach 
 import java.util.*; 
@@ -145,7 +145,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation of the approach  
 import math 
@@ -193,9 +193,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the above approach  
 using System;  
@@ -272,9 +272,9 @@ public static void Main(String []args)
 
 **高效方法：**我们从结尾遍历数组，并将每个元素插入列表的开头。
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <iostream> 
 using namespace std; 
@@ -322,9 +322,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print level order traversal 
 // in spiral form using one queue and one stack. 
@@ -383,7 +383,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 program to prlevel order traversal  
 # in spiral form using one queue and one stack.  
@@ -424,9 +424,9 @@ if __name__ == '__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print level order traversal 
 // in spiral form using one queue and one stack. 
@@ -495,7 +495,7 @@ public static void Main(String[] args)
 
 替代有效解决方案是维护尾指针，从左到右遍历数组元素，在尾插入并在插入后更新尾。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

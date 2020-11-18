@@ -38,9 +38,9 @@ findNthFromLastUtil(head, n)
 
 **注意：**参数**计数**和 **nth_last** 将是 **findNthFromLast（）**中的指针变量。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to recursively find the nth node from 
 // the last of the linked list 
@@ -124,9 +124,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to recursively  
 // find the nth node from the last 
@@ -310,9 +310,9 @@ findNthFromLastUtil(head, n) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to recursively  
 // find the nth node from the last 
@@ -415,7 +415,7 @@ Nth node from last is: 5
 
 **时间复杂度：** O（n），其中“ n”是链接列表中的节点数。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

@@ -39,9 +39,9 @@ i = 2, probability of selecting second node =
 
 下面是上述算法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ program to randomly select a node from a singly 
 linked list */
@@ -147,7 +147,7 @@ int main()
 
 ## C
 
-```
+```c
 
 /* C program to randomly select a node from a singly 
    linked list */
@@ -243,9 +243,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to select a random node from singly linked list 
 
@@ -404,9 +404,9 @@ llist.printRandom()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to select a random node  
 // from singly linked list 
@@ -508,4 +508,3 @@ The probability that the second last node is result
 
 本文由 **Rajeev** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

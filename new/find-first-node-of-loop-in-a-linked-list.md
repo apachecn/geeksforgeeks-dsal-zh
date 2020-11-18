@@ -23,9 +23,9 @@ Output : Pointer to node 2
 2.一次将慢速指针和快速指针移动一个节点。
 3.它们相遇的点是循环的起点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to return first node of loop.
 #include <bits/stdc++.h>
@@ -117,9 +117,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to return 
 // first node of loop.
@@ -220,9 +220,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to return 
 // first node of loop.
@@ -374,9 +374,9 @@ Which means m+k is a multiple of n.
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to return first node of loop
 #include <bits/stdc++.h>
@@ -463,9 +463,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to return first node of loop
 import java.util.*;
@@ -560,9 +560,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to return first node of loop
 using System;
@@ -666,9 +666,9 @@ Loop starting node is 15
 ```
 
 **方法3：**
-我们也可以使用**哈希**的概念来检测循环的第一个节点。 这个想法很简单，只需遍历整个链表，然后将节点地址一个接一个地存储在集合（ **C ++ STL** ）中，同时将节点地址添加到集合中，检查是否已经包含该特定节点地址，如果 如果在集合中已经存在节点地址，则不添加它，则当前节点是循环的第一个节点。
+我们也可以使用**哈希**的概念来检测循环的第一个节点。 这个想法很简单，只需遍历整个链表，然后将节点地址一个接一个地存储在集合（ **C++ STL** ）中，同时将节点地址添加到集合中，检查是否已经包含该特定节点地址，如果 如果在集合中已经存在节点地址，则不添加它，则当前节点是循环的第一个节点。
 
-## C ++ 14
+## C++ 14
 
 ```
 
@@ -709,7 +709,7 @@ ListNode* detectCycle(ListNode* A)
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

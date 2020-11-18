@@ -27,9 +27,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print the difference  
 // of Alternate Nodes  
@@ -101,7 +101,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to print the difference  
 // of Alternate Nodes  
@@ -170,9 +170,9 @@ int main() 
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print the difference  
 // of Alternate Nodes  
@@ -253,7 +253,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 
 # Python3 program to print the difference  
 # of Alternate Nodes  
@@ -317,9 +317,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print the difference  
 // of Alternate Nodes  
@@ -415,9 +415,9 @@ public static void Main(String[] args) 
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code to print difference of alternate nodes 
 // of a linked list using recursion 
@@ -488,9 +488,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to print difference of  
 // alternate nodes of a linked list  
@@ -645,9 +645,9 @@ print( difference);
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to print difference of  
 // alternate nodes of a linked list  
@@ -732,7 +732,7 @@ public static void Main(String[] args) 
 -15
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

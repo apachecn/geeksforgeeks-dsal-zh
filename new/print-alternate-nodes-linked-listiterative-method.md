@@ -21,9 +21,9 @@ Alternate nodes : 10 -> 33 -> 73
 3.当计数为偶数时打印节点。
 4.访问下一个节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code to print Alternate Nodes  
 #include <iostream> 
@@ -92,7 +92,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C code to print Alternate Nodes 
 #include <stdio.h> 
@@ -155,9 +155,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to print Alternate Nodes  
 class GFG 
@@ -225,7 +225,7 @@ public static void main(String args[]) 
 
 ## Python3
 
-```
+```py
 
 # Python3 code to print Alternate Nodes 
 
@@ -268,9 +268,9 @@ node.printAlternateNode()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to print Alternate Nodes 
 using System; 
@@ -350,7 +350,7 @@ public static void Main(String []args) 
 
 **提问者：Govivace**
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

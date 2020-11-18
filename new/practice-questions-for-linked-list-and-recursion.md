@@ -18,9 +18,9 @@ struct Node
 
 **1.以下功能对给定的链表有什么作用？**
 
-## C ++
+## C++
 
-```
+```cpp
 
 void fun1(struct Node* head) 
 { 
@@ -37,7 +37,7 @@ cout << head->data << " ";
 
 ## C
 
-```
+```c
 
 void fun1(struct Node* head) 
 { 
@@ -50,9 +50,9 @@ void fun1(struct Node* head)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 static void fun1(Node head) 
 { 
@@ -83,9 +83,9 @@ def fun1(head):
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 static void fun1(Node head) 
 { 
@@ -106,9 +106,9 @@ fun1() prints the given Linked List in reverse manner. For Linked List 1->2->3->
 
 **2.以下功能对给定的链表有什么作用？**
 
-## C ++
+## C++
 
-```
+```cpp
 
 void fun2(struct Node* head) 
 { 
@@ -127,7 +127,7 @@ void fun2(struct Node* head)
 
 ## C
 
-```
+```c
 
 void fun2(struct Node* head) 
 { 
@@ -142,9 +142,9 @@ void fun2(struct Node* head)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 static void fun2(Node head) 
 { 
@@ -169,9 +169,9 @@ fun2() prints alternate nodes of the given Linked List, first from head to end, 
 
 以下是测试上述功能的完整运行程序。
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -255,7 +255,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 #include<stdio.h> 
 #include<stdlib.h> 
@@ -336,9 +336,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code implementation for above approach 
 class GFG  
@@ -430,7 +430,7 @@ class GFG 
 
 ## Python3
 
-```
+```py
 
 ''' A linked list node '''
 class Node:  
@@ -495,9 +495,9 @@ fun2(head) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code implementation for above approach 
 using System; 
@@ -600,4 +600,3 @@ Output of fun2() for list 1->2->3->4->5
 
 如果您发现任何答案/解释不正确，或者您想分享有关上述主题的更多信息，请写评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

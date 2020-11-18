@@ -17,9 +17,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to calculate 
 // the sum of all palindromic 
@@ -123,9 +123,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to calculate 
 // the sum of all palindromes 
@@ -230,7 +230,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to  
 # calculate the sum of all  
@@ -319,9 +319,9 @@ print(sumOfpal(head1))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to calculate 
 // the sum of all palindromes 
@@ -441,7 +441,7 @@ public static void Main(String []args)
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**Java和Java Collections基础课程**](https://practice.geeksforgeeks.org/courses/Java-Collections?vC=1) 以对学生方便的价格掌握所有重要的Java和Collections概念，并为行业做好准备。
+
 
 * * *
 

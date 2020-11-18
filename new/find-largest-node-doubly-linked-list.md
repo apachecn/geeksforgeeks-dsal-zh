@@ -24,9 +24,9 @@ Output :120
 3.如果temp的数据大于max的数据，则将max = temp。
 4.在下一个节点上移动。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ Program to find the largest  
 nodes in doubly linked list */
@@ -115,7 +115,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 /* Program to find the largest 
    nodes in doubly linked list */
@@ -196,9 +196,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to find the largest 
 // nodes in doubly linked list 
@@ -283,7 +283,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find largest  
 # node in doubly linked list 
@@ -397,9 +397,9 @@ if __name__ == "__main__": 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to find the largest 
 // nodes in doubly linked list 
@@ -495,7 +495,7 @@ class GFG {
 **时间复杂度：O（n）
 辅助空间：O（1）** 
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

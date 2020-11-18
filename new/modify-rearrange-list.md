@@ -32,9 +32,9 @@ Output : 4->2->12->8->0->0->0->0->0->0
 
 修改列表后，隔离有效（非零）和无效（零）元素。 它与[隔离链接列表](https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/)中的偶数和奇数节点相同。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to modify and 
 // rearrange list 
@@ -189,9 +189,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to modify and  
 // rearrange list  
@@ -507,9 +507,9 @@ printList(head) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to modify and  
 // rearrange list  
@@ -696,7 +696,7 @@ Modified List: 4 4 8 0 0 0
 
 **时间复杂度：** O（n）。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

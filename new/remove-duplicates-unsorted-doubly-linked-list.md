@@ -11,9 +11,9 @@
 **方法1（天真方法）：**
 这是使用两个循环的最简单方法。 外循环用于一个接一个地拾取元素，内循环将拾取的元素与其余元素进行比较。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to remove duplicates from an 
 // unsorted doubly linked list 
@@ -168,9 +168,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to remove duplicates  
 // from an unsorted doubly linked list 
@@ -471,9 +471,9 @@ printList(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to remove duplicates  
 // from an unsorted doubly linked list 
@@ -659,11 +659,11 @@ Doubly linked list after removing duplicates:
 请注意，此方法不会保留元素的原始顺序。
 
 **方法3高效方法（散列）：**
-我们从头到尾遍历双向链表。 对于每个新遇到的元素，我们检查它是否在哈希表中：如果是，则将其删除；否则，将其删除。 否则我们将其放在哈希表中。 哈希表是使用C ++ 中的 [unordered_set实现的。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
+我们从头到尾遍历双向链表。 对于每个新遇到的元素，我们检查它是否在哈希表中：如果是，则将其删除；否则，将其删除。 否则我们将其放在哈希表中。 哈希表是使用C++ 中的 [unordered_set实现的。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to remove duplicates from an 
 // unsorted doubly linked list 
@@ -819,9 +819,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java mplementation to remove duplicates  
 // from an unsorted doubly linked list 
@@ -986,7 +986,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to remove duplicates  
 # from an unsorted doubly linked list 
@@ -1131,9 +1131,9 @@ printList(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# mplementation to remove duplicates  
 // from an unsorted doubly linked list 
@@ -1314,4 +1314,3 @@ Doubly linked list after removing duplicates:
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

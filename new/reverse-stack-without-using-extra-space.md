@@ -21,9 +21,9 @@ Output : 4->5->6
 
 请注意，push（）和pop（）操作仍然需要O（1）时间。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to implement Stack  
 // using linked list so that reverse 
@@ -122,9 +122,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to implement Stack using linked 
 // list so that reverse can be done with O(1)  
@@ -211,9 +211,9 @@ public class reverseStackWithoutSpace {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to implement Stack using linked 
 // list so that reverse can be done with O(1)  
@@ -325,4 +325,3 @@ Reversed Stack
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

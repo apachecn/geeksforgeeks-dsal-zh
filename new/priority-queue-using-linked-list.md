@@ -42,9 +42,9 @@ PEEK（HEAD）：
 
 下面是该算法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code to implement Priority Queue 
 // using Linked List 
@@ -158,7 +158,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C code to implement Priority Queue 
 // using Linked List 
@@ -261,9 +261,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to implement Priority Queue  
 // using Linked List  
@@ -374,9 +374,9 @@ public static void main(String args[])
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to implement Priority Queue  
 // using Linked List  
@@ -508,7 +508,7 @@ Linked List |   O(1)      O(n)      O(1)
 Binary Heap |   O(1)    O(Log n)   O(Log n)
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

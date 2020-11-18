@@ -30,9 +30,9 @@ NULL NULL NULL
 
 这个想法是为矩阵的每个元素构造一个新节点，并递归地创建其下和右节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to construct a linked list 
 // from given 2D matrix 
@@ -106,9 +106,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to construct a linked list 
 // from given 2D matrix 
@@ -183,7 +183,7 @@ public class Linked_list_2D_Matrix {
 
 ## Python3
 
-```
+```py
 
     # Python3 program to construct a linked list 
 # from given 2D matrix 
@@ -250,9 +250,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to construct a linked list 
 // from given 2D matrix 
@@ -347,4 +347,3 @@ public class Linked_list_2D_Matrix
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

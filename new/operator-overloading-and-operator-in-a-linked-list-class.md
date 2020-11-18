@@ -2,10 +2,10 @@
 
 中重载了'< >运算符
 
-**先决条件：C ++中的** [运算符重载](https://www.geeksforgeeks.org/operator-overloading-c/)和[在C ++中的链接列表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
+**先决条件：C++中的** [运算符重载](https://www.geeksforgeeks.org/operator-overloading-c/)和[在C++中的链接列表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
 
-C ++附带的库提供了执行[输入和输出](https://www.geeksforgeeks.org/basic-input-output-c/)的方法。 在C ++中，输入和输出以字节序列（也称为流）的形式执行。 [输入和输出流](https://www.geeksforgeeks.org/basic-input-output-c/)由iostream库管理。 **cin** 和 **cout** 是输入流和输出流的标准对象。
-我们可以重载**'> >'**和**'< <'**运算符，以在[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)中输入 并在C ++中打印[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)中的元素。 它具有为运算符提供针对数据类型的特殊含义的能力，此功能称为[运算符重载](http://www.geeksforgeeks.org/operator-overloading-c/)。
+C++附带的库提供了执行[输入和输出](https://www.geeksforgeeks.org/basic-input-output-c/)的方法。 在C++中，输入和输出以字节序列（也称为流）的形式执行。 [输入和输出流](https://www.geeksforgeeks.org/basic-input-output-c/)由iostream库管理。 **cin** 和 **cout** 是输入流和输出流的标准对象。
+我们可以重载**'> >'**和**'< <'**运算符，以在[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)中输入 并在C++中打印[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)中的元素。 它具有为运算符提供针对数据类型的特殊含义的能力，此功能称为[运算符重载](http://www.geeksforgeeks.org/operator-overloading-c/)。
 重载运算符的语法为：
 
 ```
@@ -177,7 +177,7 @@ int main()
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

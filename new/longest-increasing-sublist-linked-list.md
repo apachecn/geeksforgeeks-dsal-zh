@@ -17,9 +17,9 @@ Output : Number of continuously increasing elements = 3
 
 这个想法是遍历单链表，并比较curr-> data和curr-> next-> data，其中curr是要遍历的当前节点。 如果curr-> data较小，则curr-> next-> data则curr指针指向curr-> next，并将长度（连续增加的元素）加1。 如果条件为假，则将长度与max进行比较，如果max小于len，则将len值分配给max。 继续此过程，直到head不等于NULL。 还要找到连续增加元素的起始指标。 接下来遍历链表，并在链表中显示连续增加的元素。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Program to count maximum number of continuous 
 // increasing element in linked list and display 
@@ -143,9 +143,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java Program to count maximum number  
 // of continuous increasing element in 
@@ -279,7 +279,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Program to count maximum number of continuous  
 # increasing element in linked list and display  
@@ -397,9 +397,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to count maximum number  
 // of continuous increasing element in 
@@ -547,4 +547,3 @@ Increasing linked list
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

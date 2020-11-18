@@ -14,9 +14,9 @@ Output : 4
 
 我们已经讨论了[迭代解决方案](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)。 本文讨论了迭代解决方案。 假定该值为n，则以递归方式计算列表中节点的总数，并进行一半的计算。 然后，对于每个调用，将递归n递减1。 返回n为零的节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for Recursive approach to find 
 // middle of singly linked list 
@@ -86,9 +86,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for Recursive approach to find  
 // middle of singly linked list  
@@ -166,7 +166,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 program for Recursive approach 
 # to find middle of singly linked list 
@@ -238,9 +238,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for Recursive approach to find  
 // middle of singly linked list  
@@ -323,7 +323,7 @@ public static void Main()
 3
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

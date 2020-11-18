@@ -30,9 +30,9 @@ Output : 8 -> 6 -> 5 -> 6 -> 0 -> 0 -> 0
 
 遍历链接列表，并且在0之前的节点上有两个相邻的相同数据（例如4-> 4-> 0），然后将第一个元素加倍，并将另一个设为0（例如8-> 0-> 0- >）。 最后，遍历链表并将所有零线性指向尾。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to modify linked list 
 import java.util.*; 
@@ -189,7 +189,7 @@ class GfG
 
 ## Python3
 
-```
+```py
 
 # Python3 code to modify linked list 
 
@@ -323,9 +323,9 @@ display(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to modify linked list  
 using System; 
@@ -494,7 +494,7 @@ Modified linked list :
 
 **时间复杂度：** O（n），其中n是链表的节点数。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

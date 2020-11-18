@@ -19,9 +19,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include<bits/stdc++.h>
 using namespace std; 
@@ -111,9 +111,9 @@ return 0;
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Java program to check if linked list is palindrome recursively */
 import java.util.*;
@@ -179,7 +179,7 @@ class Node {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to check if linked
 # list is palindrome using stack
@@ -259,9 +259,9 @@ print("isPalindrome:", result)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to check if linked list
 // is palindrome recursively 
@@ -359,7 +359,7 @@ class Node
 
 ## C
 
-```
+```c
 
 /* Program to check if a linked list is palindrome */
 #include <stdbool.h> 
@@ -513,9 +513,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Java program to check if linked list is palindrome */
 
@@ -681,7 +681,7 @@ class LinkedList {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to check if
 # linked list is palindrome
@@ -857,9 +857,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* C# program to check if linked list is palindrome */
 using System;
@@ -1066,9 +1066,9 @@ Is Palindrome
 但是，识别双指针的技巧。 传递单个指针与传递值一样好，我们将一次又一次传递相同的指针。 我们需要传递头部指针的地址以反映父递归调用中的更改。
 感谢 **Sharad Chandra** 提出了这种方法。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Recursive program to check if a given linked list is palindrome 
 #include <bits/stdc++.h> 
@@ -1157,7 +1157,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // Recursive program to check if a given linked list is palindrome 
 #include <stdbool.h> 
@@ -1244,9 +1244,9 @@ int main()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* C# program to check if linked list 
 is palindrome recursively */
@@ -1385,4 +1385,3 @@ Is Palindrome
 **时间复杂度：** O（n）
 **辅助空间：** O（n）（如果考虑函数调用堆栈大小），否则为O（1）。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

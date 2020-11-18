@@ -22,9 +22,9 @@ Output : 10->8->3->12->5->11->18
 **方法1（使用列表的长度）：**
 查找链接列表的长度，即列表中的节点数。 设为**等于**。 现在从头开始遍历列表，从第一个节点到第**（len-n + 1）个**节点，然后在该节点之后插入新节点。 此方法需要两次遍历列表。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to insert a node after 
 // the n-th node from the end 
@@ -113,9 +113,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to insert a node after  
 // the n-th node from the end  
@@ -296,9 +296,9 @@ printList(head) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to insert a node after  
 // the n-th node from the end  
@@ -406,9 +406,9 @@ Linked List After Insertion: 1 2 3 4 5
 **方法2（单遍历）：**
 该方法使用两个指针，一个是 **slow_ptr** ，另一个是 **fast_ptr** 。 首先从头开始将 **fast_ptr** 移到第**个第**个节点。 使 **slow_ptr** 指向列表的第一个节点。 现在，同时移动两个指针，直到 **fast_ptr** 指向最后一个节点。 此时， **slow_ptr** 将从末尾指向第**个第**个节点。 在该节点之后插入新节点。 此方法需要单遍遍列表。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to insert a node after the 
 // nth node from the end 
@@ -503,9 +503,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to  
 // insert a node after the  
@@ -606,9 +606,9 @@ public static void main(String[] args) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to  
 // insert a node after the  
@@ -724,4 +724,3 @@ Linked List After Insertion: 1 2 3 4 5
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

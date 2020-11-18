@@ -15,9 +15,9 @@ String "abcdba" is not palindrome.
 
 这个想法很简单。 从给定的链表中构造一个字符串，并检查构造的字符串是否是回文。
 
-## C / C ++
+## C / C++
 
-```
+```cpp
 
 // Program to check if a given linked list of strings 
 // form a palindrome 
@@ -99,9 +99,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to check if a given linked list of strings 
 // form a palindrome 
@@ -235,9 +235,9 @@ print "true" if llist.isPalindrome() else "false"
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to check if a given linked list  
 // of strings form a palindrome  
@@ -320,4 +320,3 @@ true
 
 本文由 **Aditya Goel** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

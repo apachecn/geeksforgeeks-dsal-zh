@@ -31,9 +31,9 @@ at even positions in the list
 > 步骤5：两个堆栈的大小将相同。 当两个堆栈都不为空时，交换两个堆栈顶部的节点，并从各自的堆栈弹出两个节点。
 > 步骤6：现在重新排列了列表。 停
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to rearrange nodes 
 // as alternate odd even nodes in 
@@ -140,9 +140,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to rearrange nodes  
 // as alternate odd even nodes in  
@@ -358,9 +358,9 @@ printList(head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to rearrange nodes  
 // as alternate odd even nodes in  
@@ -527,9 +527,9 @@ Step 9: End
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Cpp program to rearrange nodes 
 // as alternate odd even nodes in 
@@ -680,9 +680,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to rearrange nodes  
 // as alternate odd even nodes in  
@@ -847,7 +847,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 program to rearrange nodes  
 # as alternate odd even nodes in  
@@ -992,9 +992,9 @@ printList(head) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to rearrange nodes  
 // as alternate odd even nodes in  
@@ -1172,7 +1172,7 @@ Rearranged List
 **时间复杂度：** O（n）
 **辅助空间：** O（1）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

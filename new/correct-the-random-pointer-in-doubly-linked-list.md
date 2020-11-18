@@ -18,9 +18,9 @@
 **方法：**这可以通过简单地迭代列表并检查各个指针来实现。
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to Correct
 // the Random Pointer in Doubly Linked List
@@ -139,9 +139,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to Correct
 // the Random Pointer in Doubly Linked List
@@ -271,7 +271,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 program to Correct the
 # Random Pointer in Doubly Linked List
@@ -375,9 +375,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to Correct the 
 // Random Pointer in Doubly Linked List
@@ -514,7 +514,7 @@ Corrected Linked List: 1 (-1) 2 (1) 3 (2) 4 (3)
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

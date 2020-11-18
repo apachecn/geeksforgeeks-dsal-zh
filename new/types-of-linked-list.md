@@ -10,9 +10,9 @@
 
 *   **<u>单链表</u>的结构：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Node of a doubly linked list
 class Node {
@@ -27,9 +27,9 @@ public:
 
 *   **<u>单链接列表</u>的创建和遍历：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to illustrate creation
 // and traversal of Singly Linked List
@@ -92,9 +92,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to illustrate 
 // creation and traversal of 
@@ -161,9 +161,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to illustrate 
 // creation and traversal of 
@@ -247,9 +247,9 @@ public static void Main(String[] args)
 
 *   **<u>双链表</u>的结构：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Node of a doubly linked list
 struct Node {
@@ -266,9 +266,9 @@ struct Node {
 
 *   **<u>双链表</u>的创建和遍历：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to illustrate creation
 // and traversal of Doubly Linked List
@@ -360,9 +360,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to illustrate 
 // creation and traversal of 
@@ -467,9 +467,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to illustrate 
 // creation and traversal of 
@@ -597,9 +597,9 @@ Traversal in reverse direction
 
 *   **<u>循环链表</u>的结构：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Structure for a node
 class Node {
@@ -614,9 +614,9 @@ public:
 
 *   **<u>循环链表</u>的创建和遍历：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to illustrate creation
 // and traversal of Circular LL
@@ -706,9 +706,9 @@ Contents of Circular Linked List
 
 *   **<u>双循环链表</u>的结构：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Node of doubly circular linked list
 struct Node {
@@ -726,9 +726,9 @@ struct Node {
 
 *   **<u>双循环链接列表</u>的创建和遍历：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to illustrate creation
 // & traversal of Doubly Circular LL
@@ -851,9 +851,9 @@ Traversal in reverse direction
 
 *   **<u>接地标题链表</u>的结构：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Structure of the list
 struct link {
@@ -867,9 +867,9 @@ struct link {
 
 *   **<u>双循环链接列表</u>的创建和遍历：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to illustrate creation
 // and traversal of Header Linked List
@@ -975,7 +975,7 @@ List After inserting 2 more elements:
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

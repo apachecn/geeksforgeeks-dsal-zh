@@ -22,9 +22,9 @@
 7.  更新finalHead.prev = last_node和last_node.next = finalHead。
 8.  返回 **finalHead** 。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation for Sorted merge of two 
 // sorted doubly circular linked list 
@@ -172,9 +172,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation for Sorted merge of two  
 // sorted doubly circular linked list  
@@ -332,7 +332,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
     # Python3 implementation for Sorted merge  
 # of two sorted doubly circular linked list 
@@ -478,9 +478,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation for Sorted merge of two  
 // sorted doubly circular linked list  
@@ -647,7 +647,7 @@ Final Sorted List: 1 2 3 5 7 8 9 11
 
 **时间复杂度：** O（n1 + n2）。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

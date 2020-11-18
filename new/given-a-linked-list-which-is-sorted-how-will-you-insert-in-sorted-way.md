@@ -31,9 +31,9 @@ appropriate node (7).
 
 **实施：**
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* Program to insert in a sorted list */
 #include <bits/stdc++.h> 
@@ -132,7 +132,7 @@ int main()
 
 ## C
 
-```
+```c
 
 /* Program to insert in a sorted list */
 #include <stdio.h> 
@@ -226,9 +226,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to insert in a sorted list 
 class LinkedList { 
@@ -392,9 +392,9 @@ llist.printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to insert in a sorted list 
 using System; 
@@ -529,4 +529,3 @@ Created Linked List
 **时间复杂度：** O（n）
 **参考：** [http://cslibrary.stanford.edu/105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

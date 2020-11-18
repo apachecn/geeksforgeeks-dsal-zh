@@ -29,9 +29,9 @@ multiply(A[0..m-1], B[0..n01])
 
 以下是上述算法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Simple C++ program to multiply two polynomials 
 #include <iostream> 
@@ -101,9 +101,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to multiply two polynomials 
 class GFG 
@@ -188,7 +188,7 @@ class GFG
 
 ## Python3
 
-```
+```py
 
 # Simple Python3 program to multiply two polynomials 
 
@@ -248,9 +248,9 @@ printPoly(prod, m+n-1);
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to multiply two polynomials 
 using System; 
@@ -334,9 +334,9 @@ class GFG 
 
 ```
 
-## 的PHP
+## PHP
 
-```
+```php
 
 <?php 
 // Simple PHP program to multiply two polynomials 
@@ -486,4 +486,3 @@ A0B1 + A1B0 = X - Y - Z
 
 本文由Harsh贡献。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

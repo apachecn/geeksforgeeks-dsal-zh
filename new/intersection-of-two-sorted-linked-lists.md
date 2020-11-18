@@ -30,7 +30,7 @@ intersection list.
 
 ## C
 
-```
+```c
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -159,7 +159,7 @@ Linked list containing common items of a & b
 
 ## C
 
-```
+```c
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -293,7 +293,7 @@ Linked list containing common items of a & b
 
 ## C
 
-```
+```c
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -418,4 +418,3 @@ Linked list containing common items of a & b
 参考：
 [cslibrary.stanford.edu/105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

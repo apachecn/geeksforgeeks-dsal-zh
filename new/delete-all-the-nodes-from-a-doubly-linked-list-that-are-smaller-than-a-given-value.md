@@ -19,9 +19,9 @@ Output: 5 <=> 6 <=> 8 <=> 4 <=> 9
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to delete all 
 // the nodes from the doubly 
@@ -148,9 +148,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to delete all  
 // the nodes from the doubly  
@@ -285,7 +285,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to delete all 
 # the nodes from the doubly 
@@ -404,9 +404,9 @@ if __name__=='__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to delete all  
 // the nodes from the doubly  
@@ -551,7 +551,7 @@ Modified List: 15 16 10 17
 
 **时间复杂度：** O（N），其中N是节点总数。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

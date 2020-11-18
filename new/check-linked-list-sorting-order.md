@@ -18,9 +18,9 @@ Output : No
 
 **迭代方法：**从头到尾遍历链表。 对于每个新遇到的元素，检查**节点->数据>节点->接下来->数据**。 如果为True，则对每个节点执行相同操作，否则返回0并打印“ No”。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check Linked List is sorted 
 // in descending order or not 
@@ -73,9 +73,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check Linked List is sorted 
 // in descending order or not 
@@ -134,7 +134,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python program to check Linked List is sorted 
 # in descending order or not 
@@ -183,9 +183,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to check Linked List is sorted 
 // in descending order or not 
@@ -257,9 +257,9 @@ Yes
 **递归方法：**
 递归检查**节点->数据>节点->接下来->数据**，如果不是，则返回0 从递归中得出终止条件，否则为下一个节点递归调用Check_List函数。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to recursively check Linked List  
 // is sorted in descending order or not 
@@ -310,9 +310,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to recursively check Linked List  
 // is sorted in descending order or not  
@@ -364,9 +364,9 @@ public static void main(String[] args) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to recursively check Linked List  
 // is sorted in descending order or not  
@@ -431,7 +431,7 @@ Yes
 
 ```
 
-被誉为业界最抢手的技能之一，拥有我们的 [**C ++ STL**](https://practice.geeksforgeeks.org/courses/cpp-stl?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=GFG_Article_Bottom_CPP_STL) 课程的编码基础，并通过严格的问题解决方法掌握了这些概念。
+被誉为业界最抢手的技能之一，拥有我们的 [**C++ STL**](https://practice.geeksforgeeks.org/courses/cpp-stl?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=GFG_Article_Bottom_CPP_STL) 课程的编码基础，并通过严格的问题解决方法掌握了这些概念。
 
 * * *
 

@@ -17,9 +17,9 @@ Output : 4 -> 6 -> 8 -> 33 -> 67 -> NULL
 
 要删除第一个节点，我们需要将第二个节点设为头，并删除分配给第一个节点的内存。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to remove first node of 
 // linked list. 
@@ -80,9 +80,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to remove first node of 
 // linked list. 
@@ -144,7 +144,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to remove first node of   
 # linked list. 
@@ -201,9 +201,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to remove first node of 
 // linked list. 
@@ -276,7 +276,7 @@ class GFG 
 
 **时间复杂度：** O（1）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

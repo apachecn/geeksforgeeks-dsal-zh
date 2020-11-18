@@ -4,7 +4,7 @@
 
 循环双重链接列表具有双重链接列表和循环链接列表的属性，其中两个连续元素通过上一个指针和下一个指针链接或连接，最后一个节点通过下一个指针指向第一个节点，并且第一个节点通过下一个指针指向最后一个节点 前一个指针。
 
-以下是C / C ++中的循环双向链接列表节点的表示形式：
+以下是C / C++中的循环双向链接列表节点的表示形式：
 
 ```
 // Structure of the node 
@@ -131,9 +131,9 @@ struct node
 
 以下是一个完整的程序，该程序使用上述所有方法来创建循环双向链接列表。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to illustrate inserting a Node in 
 // a Cicular Doubly Linked list in begging, end 
@@ -285,9 +285,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to illustrate inserting a Node in  
 // a Cicular Doubly Linked list in begging, end  
@@ -446,7 +446,7 @@ public static void main(String[] args) 
 
 ## Python3
 
-```
+```py
 
 # Python3 program to illustrate inserting  
 # a Node in a Cicular Doubly Linked list  
@@ -594,9 +594,9 @@ if __name__ == '__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to illustrate inserting a Node in  
 // a Cicular Doubly Linked list in begging, end  
@@ -786,4 +786,3 @@ Traversal in reverse direction
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

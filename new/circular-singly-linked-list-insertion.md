@@ -40,9 +40,9 @@
 插入后，T是最后一个节点，因此指针*的最后一个*指向节点T。节点T是第一个和最后一个节点，因此T指向自身。
 用于将节点插入空列表的功能，
 
-## C ++
+## C++
 
-```
+```cpp
 
 struct Node *addToEmpty(struct Node *last, int data)
 {
@@ -80,9 +80,9 @@ struct Node *addToEmpty(struct Node *last, int data)
 
 将节点插入列表开头的功能，
 
-## C ++
+## C++
 
-```
+```cpp
 
 struct Node *addBegin(struct Node *last, int data)
 {
@@ -120,9 +120,9 @@ struct Node *addBegin(struct Node *last, int data)
 
 将节点插入列表末尾的功能，
 
-## C ++
+## C++
 
-```
+```cpp
 
 struct Node *addEnd(struct Node *last, int data)
 {
@@ -162,9 +162,9 @@ struct Node *addEnd(struct Node *last, int data)
 
 将节点插入列表末尾的功能，
 
-## C ++
+## C++
 
-```
+```cpp
 
 struct Node *addAfter(struct Node *last, int data, int item)
 {
@@ -208,9 +208,9 @@ struct Node *addAfter(struct Node *last, int data, int item)
 
 以下是一个完整的程序，该程序使用上述所有方法来创建循环单链接列表。
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -344,9 +344,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 class GFG 
 {
@@ -480,7 +480,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 class Node:
     def __init__(self, data):
@@ -581,9 +581,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 using System;
 
@@ -726,4 +726,3 @@ public static void Main(String[] args)
 本文由  提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

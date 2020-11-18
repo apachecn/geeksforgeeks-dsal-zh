@@ -28,9 +28,9 @@
 
 在下面的实现中，如果给定的循环链接列表中有奇数个节点，则第一个结果列表的节点多于第二个结果列表的节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Program to split a circular linked list 
 // into two halves  
@@ -162,7 +162,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 /* Program to split a circular linked list into two halves */
 #include<stdio.h>  
@@ -287,9 +287,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to delete a node from doubly linked list 
 
@@ -502,9 +502,9 @@ head2.printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to delete a node 
 // from doubly linked list 
@@ -633,4 +633,3 @@ Second Circular Linked List
 
 如果您发现上述代码/算法中的任何错误，或找到其他解决相同问题的方法，请发表评论
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

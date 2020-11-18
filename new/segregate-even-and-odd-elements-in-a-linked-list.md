@@ -35,9 +35,9 @@ Output: 1->3->5->7->NULL
 ……..b）更改头指针，使其指向第一个偶数节点。
 ……..b）考虑第一个偶数节点之后的所有奇数节点，并将它们移到末尾。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to segregate even and 
 //  odd nodes in a Linked List  
@@ -192,7 +192,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to segregate even and odd nodes in a 
 // Linked List 
@@ -337,9 +337,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to segregate even and odd nodes in a 
 // Linked List 
@@ -600,9 +600,9 @@ printList()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to segregate even and odd nodes in a 
 // Linked List 
@@ -759,9 +759,9 @@ public class LinkedList
 的想法是将链表分为两部分：一个包含所有偶数节点，另一个包含所有奇数节点。 最后在偶数节点链接列表之后附加奇数节点链接列表。
 要拆分链表，请遍历原始链表，然后将所有奇数节点移动到所有奇数节点的单独链表中。 在循环结束时，原始列表将具有所有偶数节点，奇数节点列表将具有所有奇数节点。 为了保持所有节点的顺序相同，我们必须在奇数节点列表的末尾插入所有奇数节点。 为了做到这一点，我们必须始终跟踪奇数节点列表中的最后一个指针。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to segregate even and odd nodes in a 
 // Linked List 
@@ -905,9 +905,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to segregate even and odd nodes in a 
 // Linked List 
@@ -1024,9 +1024,9 @@ class LinkedList {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to segregate even and odd nodes in a 
 // Linked List 
@@ -1161,7 +1161,7 @@ public class LinkedList
 
 ## Python3
 
-```
+```py
 
 # Python3 program to segregate even and odd nodes in a 
 # Linked List 
@@ -1299,4 +1299,3 @@ Modified Linked List
 
 如果您发现上述代码/算法有误，请写评论，或者找到其他解决相同问题的方法。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

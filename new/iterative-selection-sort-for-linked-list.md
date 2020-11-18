@@ -49,9 +49,9 @@ list = 64 25 12 22 11
 
 **实现方法1** ：以下是通过仅交换节点的数据部分来对链表进行排序的选择排序功能的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 void selectionSort(node* head) 
 { 
@@ -80,9 +80,9 @@ void selectionSort(node* head)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 void selectionSort(node head) 
 { 
@@ -113,9 +113,9 @@ void selectionSort(node head)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 static void selectionSort(node head) 
 { 
@@ -147,7 +147,7 @@ static void selectionSort(node head)
 
 ## Python3
 
-```
+```py
 
 def selectionSort(head): 
 
@@ -185,9 +185,9 @@ def selectionSort(head):
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of the approach 
 #include <bits/stdc++.h> 
@@ -368,9 +368,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the approach 
 class GFG { 
@@ -553,7 +553,7 @@ class GFG {
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation of the approach  
 
@@ -699,9 +699,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the approach 
 using System; 
@@ -891,7 +891,7 @@ class GFG {
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

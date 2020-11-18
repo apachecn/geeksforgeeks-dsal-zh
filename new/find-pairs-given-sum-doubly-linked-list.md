@@ -23,9 +23,9 @@ Output: (6, 1), (5,2)
 *   如果当前**首先**和**第二**的当前总和小于x，则我们将**首先**向前移动。 如果**第一个**和**第二个**元素的当前总和大于x，则我们将**第二个**向后移动。
 *   循环终止条件也与阵列不同。 当两个指针中的任何一个变为NULL或它们彼此交叉（第二个->下一个=第一个），或者它们变为相同（第一个==第二个）时，循环终止
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find a pair with given sum x. 
 #include<bits/stdc++.h> 
@@ -121,9 +121,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find a 
 // pair with given sum x. 
@@ -229,9 +229,9 @@ public static void main(String args[])
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find a  
 // pair with given sum x. 
@@ -355,4 +355,3 @@ class GFG 
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

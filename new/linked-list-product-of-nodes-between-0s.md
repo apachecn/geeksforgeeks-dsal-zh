@@ -23,9 +23,9 @@ Output : 1->2->3->4
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to in-place product linked list 
 // nodes between 0s 
@@ -123,9 +123,9 @@ struct Node 
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to in-place product linked list 
 // nodes between 0s 
@@ -217,7 +217,7 @@ public class inPlaceStoreLL {
 
 ## Python3
 
-```
+```py
 
 # Python3 program to in-place  
 # product linked list nodes between 0s 
@@ -293,9 +293,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to in-place product linked list  
 // nodes between 0s  
@@ -402,7 +402,7 @@ public class inPlaceStoreLL 
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

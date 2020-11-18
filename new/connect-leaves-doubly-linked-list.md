@@ -28,9 +28,9 @@ Modified Tree:
 
 我们需要遍历所有叶子，并通过更改它们的左右指针来连接它们。 我们还需要通过更改父节点中的左或右指针将它们从二叉树中删除。 有很多方法可以解决此问题。 在以下实现中，我们在当前链接列表的开头添加叶子，并使用指向head的指针更新列表的head。 由于我们在开始时插入，因此我们需要以相反的顺序处理叶子。 对于逆序，我们先遍历右侧子树，然后遍历左侧子树。 我们使用返回值来更新父节点中的左或右指针。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to extract leaves of  
 // a Binary Tree in a Doubly Linked List  
@@ -149,7 +149,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to extract leaves of a Binary Tree in a Doubly Linked List 
 #include <stdio.h> 
@@ -256,9 +256,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to extract leaf nodes from binary tree 
 // using double linked list 
@@ -449,9 +449,9 @@ printInorder(root)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to extract leaf  
 // nodes from binary tree 
@@ -572,4 +572,3 @@ Inorder traversal of modified tree is:
 
 本文由 **[Chandra Prakash](https://www.facebook.com/chandra.prakash.52643?fref=ts)** 贡献。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

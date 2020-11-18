@@ -18,9 +18,9 @@ Output : 1->2->3->4
 2.在temp.data！= 0时进行迭代，并将这些数据添加到变量“ sum”中。
 3.当遇到0作为该节点的数据时，请更改先前节点的指针。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to in-place add linked list  
 // nodes between 0s. 
@@ -121,7 +121,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // C program to in-place add linked list  
 // nodes between 0s. 
@@ -222,9 +222,9 @@ int main() 
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to in-place add linked list  
 // nodes between 0s. 
@@ -305,9 +305,9 @@ public class inPlaceStoreLL {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to in-place add linked list  
 // nodes between 0s.  
@@ -405,7 +405,7 @@ public class inPlaceStoreLL 
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

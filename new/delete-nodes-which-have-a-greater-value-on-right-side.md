@@ -22,9 +22,9 @@
 时间复杂度：O（n）
 感谢R.Srinivasan提供的以下代码。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to delete nodes 
 // which have a greater value on
@@ -163,7 +163,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C program to delete nodes which have a greater value on
 // right side
@@ -286,9 +286,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to delete nodes which have a greater value on
 // right side
@@ -444,9 +444,9 @@ Modified Linked List
 
 仅当当前节点>下一个节点时，才在列表中向前移动。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for above approach
 import java.io.*;
@@ -537,4 +537,3 @@ class GFG {
 
 如果您发现上述代码/算法有误，请写评论，或者找到其他解决相同问题的方法。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

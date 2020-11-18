@@ -1030,7 +1030,7 @@ LinkedList: 3 5 7 8
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**Java和Java Collections基础课程**](https://practice.geeksforgeeks.org/courses/Java-Collections?vC=1) 以对学生方便的价格掌握所有重要的Java和Collections概念，并为行业做好准备。
+
 
 * * *
 

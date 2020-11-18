@@ -19,9 +19,9 @@ Output : 3 8 14 17 20
 
 下面是上述算法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to sort the biotonic 
 // doubly linked list 
@@ -183,9 +183,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to sort the biotonic  
 // doubly linked list  
@@ -357,7 +357,7 @@ public static void main(String args[])
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation to sort  
 # the biotonic doubly linked list  
@@ -498,9 +498,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to sort the biotonic  
 // doubly linked list  
@@ -685,7 +685,7 @@ Doubly linked list after sorting:
 **时间复杂度：** O（n）
 **辅助空间：** O（1）
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

@@ -18,9 +18,9 @@ Output : empty List
 
 这个想法是要维护指向该节点的指针*（prev）*，该指针恰好在我们正在检查重复项的节点块之前。 在第一个示例中，当我们检查节点28的重复项时，指针 *prev* 将指向23。一旦到达最后一个具有值28的重复节点（将其命名为*当前*指针） ，我们可以将上一个节点的下一个字段作为当前字段的下一个字段，并更新 *current = current.next* 。 这将删除具有重复项的值为28的节点块。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to remove all  
 // occurrences of duplicates  
@@ -147,9 +147,9 @@ int main() 
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to remove all occurrences of 
 // duplicates from a sorted linked list  
@@ -267,7 +267,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 implementation for the above approach 
 
@@ -355,9 +355,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* C# program to remove all occurrences of 
 duplicates from a sorted linked list */
@@ -485,4 +485,3 @@ List after removal of duplicates
 本文由 **Saloni Baweja** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

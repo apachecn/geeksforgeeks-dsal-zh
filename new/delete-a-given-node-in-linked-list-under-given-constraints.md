@@ -12,9 +12,9 @@
 **解决方案**
 我们明确处理要删除的节点是第一个节点的情况，我们将下一个节点的数据复制到头部，然后删除下一个节点。 可以通过找到上一个节点并更改下一个下一个节点来正常处理被删除节点不是头节点的情况。 以下是实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to delete a given node 
 // in linked list under given constraints 
@@ -141,7 +141,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 #include <stdio.h> 
 #include <stdlib.h> 
@@ -340,9 +340,9 @@ llist.PrintList()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to delete a given node  
 // in linked list under given constraints 
@@ -454,9 +454,9 @@ class LinkedList {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to delete a given  
 // node in linked list under  
@@ -599,4 +599,3 @@ Modified Linked List: 15 11 5 6 2 3
 
 如果您发现上述代码/算法有误，请写评论，或者找到其他解决相同问题的方法。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

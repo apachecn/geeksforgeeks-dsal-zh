@@ -26,9 +26,9 @@
 **方法：**的想法是一个遍历循环单链列表的节点，对于每个节点，[通过遍历每个节点，找到节点中存在的值的数字总和](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/) 数字。 如果数字总和为偶数，则[然后删除节点](https://www.geeksforgeeks.org/deletion-circular-linked-list/)。 否则，继续。
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to remove all
 // the Even Digit Sum Nodes from a
@@ -175,9 +175,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to remove all
 // the Even Digit Sum Nodes from a
@@ -332,9 +332,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to remove all
 // the Even Digit Sum Nodes from a
@@ -496,7 +496,7 @@ public static void Main(String[] args)
 
 **时间复杂度：** *O（KN）*，其中N是链​​表的大小，K是链表的最大数目中的位数。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

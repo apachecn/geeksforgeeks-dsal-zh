@@ -24,9 +24,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the largest and 
 // second largest element in a Linked List 
@@ -121,9 +121,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the largest and 
 // second largest element in a Linked List 
@@ -220,7 +220,7 @@ public static void main(String[] args)
 
 ## Python3
 
-```
+```py
 
 # Python3 program to find the largest and 
 # second largest element in a Linked List 
@@ -328,9 +328,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find the largest and 
 // second largest element in a Linked List 
@@ -440,7 +440,7 @@ Second Largest = 15
 *   **时间复杂度**：在上述方法中，由于我们仅对链表进行一次迭代，因此时间复杂度为 **O（N）**。
 *   **辅助空间复杂度**：在上述方法中，除了几个恒定大小的变量之外，我们没有使用任何额外的空间，因此辅助空间复杂度为 **O（1）**。
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 

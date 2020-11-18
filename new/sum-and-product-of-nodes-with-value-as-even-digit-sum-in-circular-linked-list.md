@@ -37,9 +37,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the sum and 
 // product of all of the Even Digit sum nodes 
@@ -195,9 +195,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the sum and  
 // product of all of the Even Digit sum nodes  
@@ -325,9 +325,9 @@ public static void main(String args[]) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the sum and  
 // product of all of the Even Digit sum nodes  
@@ -466,7 +466,7 @@ Sum = 42, Product = 9360
 
 ```
 
-注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
 
 * * *
 
