@@ -336,9 +336,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to construct a Maximum Sum Linked List out of 
 # two Sorted Linked Lists having some Common nodes 

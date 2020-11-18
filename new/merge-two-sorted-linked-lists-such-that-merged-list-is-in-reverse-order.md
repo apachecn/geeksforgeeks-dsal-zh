@@ -303,9 +303,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Given two sorted non-empty linked lists. Merge them in 
 # such a way that the result list will be in reverse 

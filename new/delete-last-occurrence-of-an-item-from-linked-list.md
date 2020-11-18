@@ -649,9 +649,9 @@ public static void main(String[] args) 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A Python program to demonstrate deletion of last 
 # Node in singly linked list 

@@ -164,9 +164,9 @@ public static void main(String[] args) 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python implementation to print the last k nodes  
 # of linked list in reverse order  

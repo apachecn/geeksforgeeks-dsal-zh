@@ -236,9 +236,9 @@ public static void main(String[] args) 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python Program to point arbit pointers to highest 
 # value on its right 

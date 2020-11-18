@@ -245,9 +245,9 @@ public static void main(String args[])
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program for reversal of first k elements  
 # of given linked list  

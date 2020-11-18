@@ -682,9 +682,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to detect loop in the linked list 
 

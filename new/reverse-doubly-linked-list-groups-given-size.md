@@ -255,9 +255,9 @@ class GFG 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python implementation to reverse a doubly linked list 
 # in groups of given size 

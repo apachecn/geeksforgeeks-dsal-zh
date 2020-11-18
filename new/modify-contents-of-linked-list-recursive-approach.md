@@ -278,9 +278,9 @@ public static void main(String args[])
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to modify the contents  
 # of the linked list with recursion  

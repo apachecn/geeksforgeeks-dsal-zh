@@ -272,9 +272,9 @@ public static void main(String args[])
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python implementation to delete all 
 # the nodes from the doubly 

@@ -415,9 +415,9 @@ public static void Main(String[] args) 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 '''Python program to clone a linked list with next and arbitrary pointers'''
 '''Done in O(n) time with O(1) extra space'''

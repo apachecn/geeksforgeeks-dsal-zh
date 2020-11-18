@@ -324,9 +324,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to randomly select a node from singly 
 # linked list  

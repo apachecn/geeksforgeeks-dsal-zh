@@ -374,9 +374,9 @@ public class BinaryTreeToDLL 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A simple inorder traversal based program to convert a  
 # Binary Tree to DLL 

@@ -331,9 +331,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Program to reverse a doubly linked list
 

@@ -257,9 +257,9 @@ class GFG {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python3 program to delete all odd  
 # node from a Circular singly linked list  

@@ -377,9 +377,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to detect and remove loop in linked list
 
@@ -968,9 +968,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to detect and remove loop in linked list
 
@@ -1430,9 +1430,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to detect and remove loop
 

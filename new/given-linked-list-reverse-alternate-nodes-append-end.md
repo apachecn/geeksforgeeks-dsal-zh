@@ -360,9 +360,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to reverse alternate nodes and append 
 # at end 

@@ -943,9 +943,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python code for above algorithm 
 

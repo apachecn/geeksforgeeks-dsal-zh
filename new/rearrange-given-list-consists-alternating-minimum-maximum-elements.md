@@ -114,9 +114,9 @@ class AlternateSort
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to rearrange a given list such that it 
 # consists of alternating minimum maximum elements 

@@ -400,9 +400,9 @@ class BinaryTree 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to convert  
 # binary tree to doubly linked list 

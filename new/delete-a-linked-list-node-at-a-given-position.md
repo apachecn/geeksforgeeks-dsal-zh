@@ -222,9 +222,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to delete a node in a linked list 
 # at a given position 

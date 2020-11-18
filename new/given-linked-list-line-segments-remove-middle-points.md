@@ -429,9 +429,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to remove middle points in a linked list of 
 # line segments, 

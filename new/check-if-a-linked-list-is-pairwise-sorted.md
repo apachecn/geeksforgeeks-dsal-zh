@@ -182,9 +182,9 @@ public static void main(String[] args) 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to check if linked list is  
 # pairwise sorted  

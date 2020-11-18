@@ -334,9 +334,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to reverse a linked list in group of given size 
 

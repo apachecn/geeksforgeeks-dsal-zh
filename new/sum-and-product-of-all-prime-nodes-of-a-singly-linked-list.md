@@ -228,9 +228,9 @@ public static void main(String args[])
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python implementation to find sum and  
 # product of all of prime nodes of  

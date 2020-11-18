@@ -302,9 +302,9 @@ class Node
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python implementation to remove duplicates from a  
 # sorted doubly linked list  

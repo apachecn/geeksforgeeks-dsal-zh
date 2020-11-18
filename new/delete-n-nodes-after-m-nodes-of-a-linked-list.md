@@ -367,9 +367,9 @@ public static void main(String args[])
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to delete M nodes after N nodes 
 

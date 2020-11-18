@@ -406,9 +406,9 @@ public class DLL {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Program to delete a node in a doubly-linked list
 

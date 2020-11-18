@@ -390,9 +390,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to swap two given nodes of a linked list 
 class LinkedList(object): 

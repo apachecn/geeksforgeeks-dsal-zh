@@ -340,9 +340,9 @@ int main()
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python3 code for searching and deleting element in skip list 
 

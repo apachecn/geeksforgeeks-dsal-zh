@@ -294,9 +294,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to swap the elements of linked list pairwise 
 

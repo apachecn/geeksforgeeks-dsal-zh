@@ -224,9 +224,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to count the number of time a given 
 # int occurs in a linked list 

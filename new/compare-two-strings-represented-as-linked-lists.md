@@ -171,9 +171,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to compare two strings represented as 
 # linked lists 

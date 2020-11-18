@@ -1029,9 +1029,9 @@ public class DLL {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A complete working Python program to demonstrate all 
 # insertion methods 

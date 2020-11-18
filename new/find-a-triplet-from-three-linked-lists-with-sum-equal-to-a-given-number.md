@@ -351,9 +351,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find a triplet  
 # from three linked lists with  

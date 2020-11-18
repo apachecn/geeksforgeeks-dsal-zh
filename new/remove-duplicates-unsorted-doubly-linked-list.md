@@ -331,9 +331,9 @@ public static void main(String args[])
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python implementation to remove duplicates  
 # from an unsorted doubly linked list  

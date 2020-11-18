@@ -257,9 +257,9 @@ class BinarySearch
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python code to implement binary search  
 # on Singly Linked List  

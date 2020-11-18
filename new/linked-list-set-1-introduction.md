@@ -93,9 +93,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Node class 
 class Node: 
@@ -414,9 +414,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A simple Python program to introduce a linked list 
 

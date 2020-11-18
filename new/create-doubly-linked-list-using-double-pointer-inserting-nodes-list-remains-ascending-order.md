@@ -350,9 +350,9 @@ class GFG
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to insetail nodes in doubly  
 # linked list such that list remains in  

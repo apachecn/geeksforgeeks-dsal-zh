@@ -220,9 +220,9 @@ public static void main(String[] args) 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find longest palindrome  
 # sublist in a list in O(1) time.  

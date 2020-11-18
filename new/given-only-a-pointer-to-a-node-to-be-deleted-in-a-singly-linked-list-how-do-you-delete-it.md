@@ -271,9 +271,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # a class to define a node with  
 # data and next pointer 

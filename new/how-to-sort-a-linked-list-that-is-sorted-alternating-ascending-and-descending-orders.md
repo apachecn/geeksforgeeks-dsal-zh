@@ -345,9 +345,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to sort a linked list that is alternatively  
 # sorted in increasing and decreasing order 

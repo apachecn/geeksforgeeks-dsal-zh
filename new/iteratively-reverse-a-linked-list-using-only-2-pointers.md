@@ -108,9 +108,9 @@ int main()
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Iteratively Reverse a linked list using only 2 pointers (An Interesting Method) 
 # Python program to reverse a linked list  

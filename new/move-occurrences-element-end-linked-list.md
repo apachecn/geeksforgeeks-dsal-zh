@@ -210,9 +210,9 @@ class GFG {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to move all occurrences of a 
 # given key to end. 

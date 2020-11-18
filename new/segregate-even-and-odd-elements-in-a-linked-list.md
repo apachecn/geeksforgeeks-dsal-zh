@@ -481,9 +481,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to segregate even and odd nodes in a 
 # Linked List 

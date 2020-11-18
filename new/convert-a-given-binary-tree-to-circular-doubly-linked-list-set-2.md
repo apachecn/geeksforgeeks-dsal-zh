@@ -288,9 +288,9 @@ public static void main(String[] args)
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program for conversion 
 # of Binary Tree to CDLL 

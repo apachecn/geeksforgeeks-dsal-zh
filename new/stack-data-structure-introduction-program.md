@@ -280,9 +280,9 @@ class Main {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program for implementation of stack 
 
@@ -659,9 +659,9 @@ public class StackAsLinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program for linked list implementation of stack 
 

@@ -401,9 +401,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to subtract smaller valued list from 
 # larger valued list and return result as a list. 

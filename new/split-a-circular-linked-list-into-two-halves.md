@@ -391,9 +391,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to split circular linked list into two halves 
 

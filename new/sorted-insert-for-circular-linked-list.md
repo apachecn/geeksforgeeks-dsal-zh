@@ -343,9 +343,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Node class  
 class Node: 

@@ -191,9 +191,9 @@ public static void main(String args[]) 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python Program to remove duplicates  
 # from a sorted linked list  

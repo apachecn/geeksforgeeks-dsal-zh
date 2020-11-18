@@ -358,9 +358,9 @@ public static void main(String[] args) 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python3 program to check if a linked list 
 # with loop is palindrome or not. 

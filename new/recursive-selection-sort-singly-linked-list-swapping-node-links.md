@@ -323,9 +323,9 @@ public static void main(String args[])
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python implementation of recursive selection sort  
 # for singly linked list | Swapping node links  

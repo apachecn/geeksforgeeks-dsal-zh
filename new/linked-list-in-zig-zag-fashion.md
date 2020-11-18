@@ -242,9 +242,9 @@ class GfG {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python code to rearrange linked list in zig zac fashion 
 

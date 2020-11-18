@@ -403,9 +403,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Program for merge sort on doubly linked list 
 

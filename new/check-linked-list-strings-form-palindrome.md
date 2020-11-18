@@ -177,9 +177,9 @@ class LinkedList_Palindrome
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to check if given linked list of  
 # strings form a palindrome 

@@ -69,9 +69,9 @@ static void fun1(Node head)
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 def fun1(head): 
     if(head == None): 

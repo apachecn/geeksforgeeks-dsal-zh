@@ -249,9 +249,9 @@ int main()
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python3 code for inserting element in skip list 
 

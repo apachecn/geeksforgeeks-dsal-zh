@@ -525,9 +525,9 @@ class LinkedList 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find n'th node from end using slow 
 # and fast pointer 

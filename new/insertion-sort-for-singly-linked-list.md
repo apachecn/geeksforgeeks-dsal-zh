@@ -253,9 +253,9 @@ public class LinkedlistIS 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Pyhton implementation of above algorithm 
 

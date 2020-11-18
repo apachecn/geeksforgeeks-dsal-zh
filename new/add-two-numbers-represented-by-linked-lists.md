@@ -451,9 +451,9 @@ of resultant list */
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to add two numbers represented by linked list
 

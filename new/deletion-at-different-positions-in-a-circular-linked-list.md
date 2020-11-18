@@ -775,9 +775,9 @@ public static void main(String args[])
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to delete node at different 
 # positions from a circular linked list 

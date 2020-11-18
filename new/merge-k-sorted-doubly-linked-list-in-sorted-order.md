@@ -463,9 +463,9 @@ public static void main(String args[])
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to merge K sorted doubly 
 # linked list in sorted order 

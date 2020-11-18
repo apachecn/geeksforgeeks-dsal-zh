@@ -54,9 +54,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Node class 
 class Node: 
@@ -176,9 +176,9 @@ public void push(int new_data)
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # This function is in LinkedList class 
 # Function to insert a new node at the beginning 
@@ -319,9 +319,9 @@ public void insertAfter(Node prev_node, int new_data) 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # This function is in LinkedList class.  
 # Inserts a new node after the given prev_node. This method is  
@@ -507,9 +507,9 @@ public void append(int new_data)
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # This function is defined in Linked List class 
 # Appends a new node at the end.  This method is 
@@ -978,9 +978,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A complete working Python program to demonstrate all 
 # insertion methods of linked list 

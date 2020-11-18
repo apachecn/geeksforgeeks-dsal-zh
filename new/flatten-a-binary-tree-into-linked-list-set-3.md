@@ -252,9 +252,9 @@ public static void main(String args[])
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to flatten binary tree 
 # using previous node approach 

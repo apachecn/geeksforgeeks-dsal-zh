@@ -279,9 +279,9 @@ public static void main(String[] args) 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python3 program to find smallest and largest  
 # elements in singly linked list.  

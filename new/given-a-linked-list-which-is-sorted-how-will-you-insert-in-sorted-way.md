@@ -318,9 +318,9 @@ new_node in a list. */
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to insert in a sorted list 
 

@@ -235,9 +235,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Iterative Python program to search an element 
 # in linked list 
@@ -628,9 +628,9 @@ class LinkedList
 Yes
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Recursive Python program to  
 # search an element in linked list 

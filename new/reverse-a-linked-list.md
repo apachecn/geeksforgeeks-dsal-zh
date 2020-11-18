@@ -268,9 +268,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to reverse a linked list
 # Time Complexity : O(n)
@@ -957,9 +957,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Simple and tail recursive Python program to
 # reverse a linked list

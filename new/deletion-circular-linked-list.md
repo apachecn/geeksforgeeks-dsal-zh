@@ -452,9 +452,9 @@ circular linked list */
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to delete a given key from
 # linked list.

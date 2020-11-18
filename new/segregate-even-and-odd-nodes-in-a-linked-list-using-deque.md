@@ -254,9 +254,9 @@ public static void main(String[] args)
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to segregate even and
 # odd noeds in a linked list using deque

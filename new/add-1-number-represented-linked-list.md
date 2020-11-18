@@ -812,9 +812,9 @@ class GfG {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Recursive Python program to add 1 to a linked list 
 

@@ -224,9 +224,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A complete working Python program to find length of a 
 # Linked List iteratively 
@@ -510,9 +510,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A complete working Python program to find length of a 
 # Linked List recursively 

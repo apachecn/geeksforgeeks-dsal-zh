@@ -34,9 +34,9 @@
 
 下面是上述方法的实现。
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python implementation to create 
 # a difference Linked List of  

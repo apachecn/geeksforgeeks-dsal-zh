@@ -353,9 +353,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to sort a linked list of 0, 1 and 2 
 class LinkedList(object): 

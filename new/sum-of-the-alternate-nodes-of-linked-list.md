@@ -522,9 +522,9 @@ public static void main(String[] args) 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python code to print sum of alternate nodes 
 # of a linked list using recursion 

@@ -287,9 +287,9 @@ class LinkedList {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A complete working Python program to find n'th node
 # in a linked list

@@ -611,9 +611,9 @@ class GfG {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to merge two sorted linked lists 
 # in-place. 

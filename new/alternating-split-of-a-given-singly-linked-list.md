@@ -281,9 +281,9 @@ int main()
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to alternatively split  
 # a linked list into two halves  

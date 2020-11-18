@@ -209,9 +209,9 @@ class GFG
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to rearrange  
 # a linked list in given manner 

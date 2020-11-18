@@ -308,9 +308,9 @@ class LinkedList
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to merge a linked list into another at 
 # alternate positions 

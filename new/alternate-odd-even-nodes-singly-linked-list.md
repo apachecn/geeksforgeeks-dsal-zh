@@ -261,9 +261,9 @@ public static void main(String args[])
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to rearrange nodes 
 # as alternate odd even nodes in 
