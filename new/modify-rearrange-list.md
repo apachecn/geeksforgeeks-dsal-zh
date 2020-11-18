@@ -13,7 +13,7 @@ Output : 4->2->12->8->0->0->0->0->0->0
 
 ```
 
-**来源：** [Microsoft IDC 面试体验| 设置 156。](https://www.geeksforgeeks.org/microsoft-idc-interview-experience-set-156-off-campus-for-full-time/)
+**来源：** [Microsoft IDC 面试体验 | 系列 156。](https://www.geeksforgeeks.org/microsoft-idc-interview-experience-set-156-off-campus-for-full-time/)
 
 **方法：**首先按照上述说明修改链表，即，如果下一个有效数字与当前数字相同，则将其值加倍并将下一个数字替换为 0。
 
@@ -695,7 +695,7 @@ Modified List: 4 4 8 0 0 0
 
 ```
 
-**时间复杂度：** O（n）。
+**时间复杂度：**`O(n)`。
 
 
 

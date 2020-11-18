@@ -370,7 +370,7 @@ Count = 2
 
 **时间复杂度：** O（n <sup>3</sup> ）
 
-**辅助空间：** O（1）
+**辅助空间：**`O(1)`
 
 **方法 2（哈希）：**
 
@@ -692,7 +692,7 @@ Count = 2
 
 **时间复杂度：** O（n <sup>2</sup> ）
 
-**辅助空间：** O（n）
+**辅助空间：**`O(n)`
 
 **方法 3 高效方法（使用两个指针）：**
 
@@ -1106,7 +1106,7 @@ Count = 2
 
 **时间复杂度：** O（n <sup>2</sup> ）
 
-**辅助空间：** O（1）
+**辅助空间：**`O(1)`
 
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

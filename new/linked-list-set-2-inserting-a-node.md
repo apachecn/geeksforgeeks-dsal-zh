@@ -1,4 +1,4 @@
-# 链表| 设置 2（插入节点）
+# 链表 | 系列 2（插入节点）
 
 我们在[先前的文章](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)中介绍了链接列表。 我们还创建了一个具有 3 个节点的简单链表，并讨论了链表遍历。
 
@@ -216,7 +216,7 @@ public void push(int new_data)
 
 ```
 
-push（）的时间复杂度为 O（1），因为它要做的工作量是恒定的。
+push（）的时间复杂度为`O(1)`，因为它要做的工作量是恒定的。
 
 **在给定节点之后添加一个节点：（5 个步骤的过程）**
 
@@ -376,7 +376,7 @@ public void insertAfter(Node prev_node, 
 
 ```
 
-insertAfter（）的时间复杂度为 O（1），因为它的工作量是恒定的。
+insertAfter（）的时间复杂度为`O(1)`，因为它的工作量是恒定的。
 
 **在最后添加一个节点：（6 个步骤的过程）**
 
@@ -574,11 +574,11 @@ public void append(int new_data)
 
 ```
 
-append 的时间复杂度为 O（n），其中 n 是链表中节点的数量。 由于从头到尾都有一个循环，因此该函数可以执行 O（n）。
+append 的时间复杂度为`O(n)`，其中 n 是链表中节点的数量。 由于从头到尾都有一个循环，因此该函数可以执行`O(n)`。
 
 还可以通过保留指向链表尾部的额外指针/
 
-**，将该方法优化为在 O（1）中工作，以下是使用上述所有方法创建链表的完整程序 。**
+**，将该方法优化为在`O(1)`中工作，以下是使用上述所有方法创建链表的完整程序 。**
 
 ## C++
 
@@ -1233,7 +1233,7 @@ class GFG
 
 ```
 
-您可能想尝试 **[在链表](http://quiz.geeksforgeeks.org/data-structure/linked-list/)**
+您可能想尝试 [**在链表**](http://quiz.geeksforgeeks.org/data-structure/linked-list/)
 
 上练习 MCQ 问题 。
 

@@ -398,7 +398,7 @@ After moveToEnd(), the Linked list is
 
 ```
 
-**时间复杂度：** O（n）仅需要遍历列表。
+**时间复杂度：**`O(n)`仅需要遍历列表。
 
 **有效解决方案 2：**
 
@@ -754,7 +754,7 @@ Linked List after operations :
 
 感谢 **Ravinder Kumar** 提出了此方法。
 
-**高效解决方案 3：**将维护单独的密钥列表。 我们将此键列表初始化为空。 我们遍历给定的列表。 对于找到的每个密钥，我们将其从原始列表中删除，然后插入单独的密钥列表中。 最后，我们在剩余给定列表的末尾链接关键字列表。 该解决方案的时间复杂度也是 O（n），并且它只需要遍历 list。
+**高效解决方案 3：**将维护单独的密钥列表。 我们将此键列表初始化为空。 我们遍历给定的列表。 对于找到的每个密钥，我们将其从原始列表中删除，然后插入单独的密钥列表中。 最后，我们在剩余给定列表的末尾链接关键字列表。 该解决方案的时间复杂度也是`O(n)`，并且它只需要遍历 list。
 
 本文由 MAZHAR IMAM KHAN 撰写。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

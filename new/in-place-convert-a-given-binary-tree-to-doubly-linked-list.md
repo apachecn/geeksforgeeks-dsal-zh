@@ -1,4 +1,4 @@
-# 将给定的二叉树转换为双链表| 设置 1
+# 将给定的二叉树转换为双链表 | 系列 1
 
 给定一个二叉树（Bt），将其转换为双链表（DLL）。 节点中的左指针和右指针分别用作转换后的 DLL 中的上一个指针和下一个指针。 DLL 中节点的顺序必须与给定二叉树的顺序相同。 有序遍历的第一个节点（BT 中最左边的节点）必须是 DLL 的头节点。
 
@@ -657,5 +657,5 @@ public class BinaryTree
 
 本文由 **Ashish Mangla** 编写，并由 GeeksforGeeks 团队审阅。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-您可能还希望看到[将给定的二叉树转换为双链表| 设置 2](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-2/) 为另一个简单有效的解决方案。
+您可能还希望看到[将给定的二叉树转换为双链表 | 系列 2](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-2/) 为另一个简单有效的解决方案。
 

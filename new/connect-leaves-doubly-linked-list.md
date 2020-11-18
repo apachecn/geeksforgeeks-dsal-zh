@@ -568,7 +568,7 @@ Inorder traversal of modified tree is:
 4 2 1 3 6
 ```
 
-**时间复杂度：** O（n），该解决方案对给定的二叉树进行单个遍历。
+**时间复杂度：**`O(n)`，该解决方案对给定的二叉树进行单个遍历。
 
-本文由 **[Chandra Prakash](https://www.facebook.com/chandra.prakash.52643?fref=ts)** 贡献。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
+本文由 [**Chandra Prakash**](https://www.facebook.com/chandra.prakash.52643?fref=ts) 贡献。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

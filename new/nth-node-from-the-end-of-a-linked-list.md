@@ -328,7 +328,7 @@ void printNthFromLast(struct Node* head, int n)
 
 ```
 
-**时间复杂度：** O（n），其中 n 是链表的长度。
+**时间复杂度：**`O(n)`，其中 n 是链表的长度。
 
 **方法 2（使用两个指针）**
 
@@ -698,7 +698,7 @@ public class LinkedList
 Node no. 4 from last is 35 
 ```
 
-**时间复杂度：** O（n），其中 n 是链表的长度。
+**时间复杂度：**`O(n)`，其中 n 是链表的长度。
 
 如果您发现上述代码/算法不正确，或者找到其他解决同一问题的方法，请发表评论。
 

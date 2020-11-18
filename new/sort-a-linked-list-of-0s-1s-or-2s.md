@@ -10,7 +10,7 @@
 > **输入：** 1-> 1-> 2-> 1-> 0->空
 > **输出：** 0-> 1-> 1-> 1-> 2->空
 
-资料来源：[微软访谈| 设置 1](https://www.geeksforgeeks.org/microsoft-interview-set-1/)
+资料来源：[微软访谈 | 系列 1](https://www.geeksforgeeks.org/microsoft-interview-set-1/)
 
 可以使用以下步骤对给定的链表进行排序。
 
@@ -577,11 +577,11 @@ Linked List After Sorting
 0  0  1  1  1  1  2  2  2
 ```
 
-**时间复杂度：** O（n），其中 n 是链表中的节点数。
+**时间复杂度：**`O(n)`，其中 n 是链表中的节点数。
 
-**辅助空间：** O（1）
+**辅助空间：**`O(1)`
 
- **[通过更改链接对[0G]，[1S]和[2S]的链表进行排序](https://www.geeksforgeeks.org/sort-linked-list-0s-1s-2s-changing-links/)**
+ [**通过更改链接对[0G]，[1S]和[2S]的链表进行排序**](https://www.geeksforgeeks.org/sort-linked-list-0s-1s-2s-changing-links/)
 
 本文由 **Narendra Kangralkar** 编写。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

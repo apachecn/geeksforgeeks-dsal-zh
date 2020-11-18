@@ -6,7 +6,7 @@
 
 ![](img/f94b7d97202151446280399d423a7126.png)
 
-**先决条件：** [反向双向链表| 设置 2。](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2/)
+**先决条件：** [反向双向链表 | 系列 2。](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2/)
 
 **方法：**创建一个递归函数，例如 **reverse（head，k）**。 该功能接收每组 **k** 节点的头或第一个节点。 通过应用[中讨论的方法，可以反转 **k** 个节点组。 设置 2。](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2/) 反转 **k 个**节点组后，该功能检查列表中是否存在下一组节点。 如果组存在，则使用下一个组的第一个节点对其自身进行递归调用，并使用该组的下一个和上一个链接进行必要的调整。 最后，它返回反转组的新头节点。
 
@@ -497,7 +497,7 @@ Modified list: 8 10 2 4
 
 ```
 
-**时间复杂度：** O（n）。
+**时间复杂度：**`O(n)`。
 
 
 

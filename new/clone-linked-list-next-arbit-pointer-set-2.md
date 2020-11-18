@@ -1,4 +1,4 @@
-# 使用下一个随机指针克隆链接列表| 设置 2
+# 使用下一个随机指针克隆链接列表 | 系列 2
 
 我们已经讨论了两种克隆链表的不同方法。 在的[中，讨论了一种更简单的克隆链表的方法。](https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/)
 
@@ -582,9 +582,9 @@ Data = 4, Random data = -1
 Data = 5, Random data = 2
 ```
 
-时间复杂度：O（n）
+时间复杂度：`O(n)`
 
-辅助空间：O（n）
+辅助空间：`O(n)`
 
 本文由 **Kumar Gautam** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请写评论
 

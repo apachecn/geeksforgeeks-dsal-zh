@@ -327,9 +327,9 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** O（N）
+**时间复杂度：**`O(n)`
 
-**辅助空间：** O（N）
+**辅助空间：**`O(n)`
 
 **上述方法的辅助空间可以减小为 O（k）**。 这个想法是使用两个指针。 将第一个指针移到列表的开头，然后将第二个指针移到第 k 个节点。 然后使用本文讨论的方法从头开始查找第 k 个节点：[从链表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾查找第 k 个节点。 从末端找到第 k 个节点后，推入堆栈中的所有其余节点。 从堆栈中逐一弹出所有元素并进行打印。
 
@@ -716,7 +716,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** O（N）
+**时间复杂度：**`O(n)`
 
 **辅助空间：** O（k）
 
@@ -958,9 +958,9 @@ public static void Main(String[] args) 
 
 ```
 
-**时间复杂度：** O（N）
+**时间复杂度：**`O(n)`
 
-**辅助空间：** O（N）
+**辅助空间：**`O(n)`
 
 **方法 3：**的想法是首先迭代地反向链接列表，如以下文章所述：[反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)。 反转后，打印反转列表的前 k 个节点。 打印后，通过再次反转列表来恢复列表。
 
@@ -1255,9 +1255,9 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** O（N）
+**时间复杂度：**`O(n)`
 
-**辅助空间：** O（1）
+**辅助空间：**`O(1)`
 
 
 

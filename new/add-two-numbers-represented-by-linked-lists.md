@@ -1,4 +1,4 @@
-# 添加两个由链表表示的数字| 设置 1
+# 添加两个由链表表示的数字 | 系列 1
 
 给定两个列表代表的两个数字，编写一个返回和列表的函数。 总和列表是两个输入数字相加的列表表示形式。
 
@@ -711,7 +711,7 @@ Resultant list is 5 0 0 5 6
 
 https://www.youtube.com/watch?v=LLPuC5kWD8U 
 
-相关文章：[添加两个由链表表示的数字| 设置 2](https://www.geeksforgeeks.org/sum-of-two-linked-lists/)
+相关文章：[添加两个由链表表示的数字 | 系列 2](https://www.geeksforgeeks.org/sum-of-two-linked-lists/)
 
 如果您发现上述代码/算法有误，请写评论，或者找到其他解决相同问题的方法。
 

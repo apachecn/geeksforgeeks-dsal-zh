@@ -2,11 +2,11 @@
 
 设计可以执行以下操作的数据结构
 
-1.  O（n）中的 add（）
+1. `O(n)`中的 add（）
 
-2.  getMinimum（）到 O（1）
+2.  getMinimum（）到`O(1)`
 
-3.  O（1）中的 deleteMinimum（）
+3. `O(1)`中的 deleteMinimum（）
 
 **来源：** [MakeMyTrip 访谈。](https://www.geeksforgeeks.org/makemytrip-interview-experience-set-16/)
 

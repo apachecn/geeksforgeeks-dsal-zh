@@ -1,4 +1,4 @@
-# 给定单链表的交替拆分| 设置 1
+# 给定单链表的交替拆分 | 系列 1
 
 编写一个函数 AlternatingSplit（），该函数接受一个列表并将其节点划分为两个较小的列表“ a”和“ b”。 子列表应由原始列表中的交替元素组成。 因此，如果原始列表为 0-> 1-> 0-> 1-> 0-> 1，则一个子列表应为 0-> 0-> 0，另一个子列表应为 1-> 1-> 1。
 
@@ -414,7 +414,7 @@ Resultant Linked List 'a' : 4 2 0
 Resultant Linked List 'b' : 5 3 1 
 ```
 
-**时间复杂度：** O（n），其中 n 是给定链接列表中的节点数。
+**时间复杂度：**`O(n)`，其中 n 是给定链接列表中的节点数。
 
 **方法 2（使用虚拟节点）**
 
@@ -487,7 +487,7 @@ void AlternatingSplit(struct Node* source, struct Node** aRef, 
 
 ```
 
-时间复杂度：O（n），其中 n 是给定链表中节点的数量。
+时间复杂度：`O(n)`，其中 n 是给定链表中节点的数量。
 
 来源： [http://cslibrary.stanford.edu/105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 

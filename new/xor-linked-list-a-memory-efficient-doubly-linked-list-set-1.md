@@ -1,4 +1,4 @@
-# XOR 链表–内存有效的双链表| 设置 1
+# XOR 链表–内存有效的双链表 | 系列 1
 
 普通的双向链接列表需要两个地址字段的空间来存储上一个和下一个节点的地址。 可以仅对每个节点使用一个空间作为地址字段来创建内存高效版本的双链表。 这种高效的内存双链表称为 XOR 链表或内存高效，因为该表使用按位 XOR 操作来节省一个地址的空间。 在 XOR 链接列表中，每个节点不存储实际的内存地址，而是存储上一个和下一个节点的地址的 XOR。
 
@@ -50,7 +50,7 @@ npx = add（C）XOR 0 // C 和 0 的地址的按位 XOR
 
 在下面的文章中，我们将在 XOR 链接列表中介绍更多内容。
 
-[XOR 链表–内存有效的双链表| 设置 2](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
+[XOR 链表–内存有效的双链表 | 系列 2](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
 
 **参考：**
 

@@ -434,7 +434,7 @@ Reversed Linked List:
 
 [堆栈溢出/回车](https://stackoverflow.com/questions/7372918/whats-the-use-of-r-escape-sequence)
 
-本文由 **[Shivam Pradhan（anuj_charm）](https://www.facebook.com/anuj.charm)** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由 [**Shivam Pradhan（anuj_charm）**](https://www.facebook.com/anuj.charm) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

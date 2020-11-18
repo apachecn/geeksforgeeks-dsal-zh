@@ -319,7 +319,7 @@ public static void Main(String []args) 
 
 ```
 
-**时间复杂度：** O（n）。
+**时间复杂度：**`O(n)`。
 
 **迭代方法：**的想法是使用[堆栈数据结构](http://www.geeksforgeeks.org/stack-data-structure/)。
 
@@ -327,7 +327,7 @@ public static void Main(String []args) 
 
 2.  从堆栈中弹出 k 个节点并进行打印。
 
-**时间复杂度：** O（n）。
+**时间复杂度：**`O(n)`。
 
 **两指针方法**的想法类似于[从链接列表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾找到第 k 个节点。
 
@@ -339,7 +339,7 @@ public static void Main(String []args) 
 
 4.  最后使用第二个指针，打印最后 k 个节点。
 
-**时间复杂度：** O（n）。
+**时间复杂度：**`O(n)`。
 
 
 

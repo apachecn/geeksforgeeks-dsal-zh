@@ -773,7 +773,7 @@ Traversal in reverse direction
 
 *   列表可以从两个方向遍历，即从头到尾或从​​尾到头。
 
-*   从头到尾或从​​尾到头的跳跃是在恒定时间 O（1）中完成的。
+*   从头到尾或从​​尾到头的跳跃是在恒定时间`O(1)`中完成的。
 
 *   循环双链表用于实现高级数据结构，例如[斐波那契堆](https://en.wikipedia.org/wiki/Fibonacci_heap)。
 

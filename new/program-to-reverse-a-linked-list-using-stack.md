@@ -381,9 +381,9 @@ public static void Main(String[] args) 
 
 ```
 
-**时间复杂度：** O（n）
+**时间复杂度：**`O(n)`
 
-我们可以使用 O（1）辅助空间反转链表。 请参阅[更多方法来反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)。
+我们可以使用`O(1)`辅助空间反转链表。 请参阅[更多方法来反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)。
 
 
 

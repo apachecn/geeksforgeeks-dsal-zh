@@ -47,7 +47,7 @@ Output: 1 -> 5 -> 2 -> 4 -> 3
 4) Do alternate merge of first and second halves. 
 ```
 
-该解决方案的时间复杂度为 O（n）。
+该解决方案的时间复杂度为`O(n)`。
 
 下面是此方法的实现。
 
@@ -410,9 +410,9 @@ public class LinkedList {
 
 ```
 
-**时间复杂度：** O（n）
+**时间复杂度：**`O(n)`
 
-**辅助空间：** O（1）
+**辅助空间：**`O(1)`
 
 感谢 Gaurav Ahirwar 提出了上述方法。
 
@@ -614,9 +614,9 @@ public static void main(String args[])
 
 ```
 
-**时间复杂度：** O（n）
+**时间复杂度：**`O(n)`
 
-**辅助空间：** O（1）
+**辅助空间：**`O(1)`
 
 感谢 [Aditya](https://auth.geeksforgeeks.org/user/aditya1011/articles) 提出了这种方法。
 

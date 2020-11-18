@@ -8,7 +8,7 @@
 
 > 列表<类型> name_of_list；
 
-**[堆栈](http://www.geeksforgeeks.org/stack-data-structure/)** 是一种容器适配器，具有的 LIFO（后进先出）类型，其中有一个新元素 在一端添加，并且（顶部）仅从该端删除元素。
+[**堆栈**](http://www.geeksforgeeks.org/stack-data-structure/) 是一种容器适配器，具有的 LIFO（后进先出）类型，其中有一个新元素 在一端添加，并且（顶部）仅从该端删除元素。
 
 **语法：**
 

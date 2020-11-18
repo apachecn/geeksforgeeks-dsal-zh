@@ -6,7 +6,7 @@
 
 针对此问题讨论了以下两种不同的解决方案。
 
-[将给定的二叉树转换为双链表| 设置 1](https://www.geeksforgeeks.org/in-place-convert-a-given-binary-tree-to-doubly-linked-list/)
+[将给定的二叉树转换为双链表 | 系列 1](https://www.geeksforgeeks.org/in-place-convert-a-given-binary-tree-to-doubly-linked-list/)
 
 [将给定的二叉树转换为双链表| 组合 2](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-2/)
 
@@ -309,7 +309,7 @@ public static void Main(string[] args)
 
 请注意，不建议您像上面那样使用静态变量（为简单起见，我们使用了静态变量）。 想象一下，对于两棵或更多棵树调用相同功能的情况， *prev* 的旧值将在下一次对另一棵树的调用中使用。 为避免此类问题，我们可以使用双指针或引用指针。
 
-**时间复杂度：**上面的程序执行简单的有序遍历，因此时间复杂度为 O（n），其中 n 是给定二叉树中的节点数。
+**时间复杂度：**上面的程序执行简单的有序遍历，因此时间复杂度为`O(n)`，其中 n 是给定二叉树中的节点数。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

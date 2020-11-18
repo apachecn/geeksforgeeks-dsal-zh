@@ -253,9 +253,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N），其中 N 是给定堆栈中元素的数量。*
+***时间复杂度：**`O(n)`，其中 N 是给定堆栈中元素的数量。*
 
-***辅助空间：** O（N）*
+***辅助空间：**`O(n)`*
 
 [**单链列表堆栈**](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/) **方法：**此方法讨论解决[单链列表堆栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)表示法的问题的解决方案。 步骤如下：
 
@@ -553,9 +553,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N），其中 N 是给定堆栈中元素的数量。*
+***时间复杂度：**`O(n)`，其中 N 是给定堆栈中元素的数量。*
 
-***辅助空间：** O（N）*
+***辅助空间：**`O(n)`*
 
 [**阵列堆栈**](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) **方法：**此方法讨论[阵列堆栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)实现中问题的解决方案。 步骤如下：
 
@@ -827,9 +827,9 @@ public static void Main(String []args)
 
 ```
 
-***时间复杂度：** O（N），其中 N 是给定堆栈中元素的数量。*
+***时间复杂度：**`O(n)`，其中 N 是给定堆栈中元素的数量。*
 
-***辅助空间：** O（N）*
+***辅助空间：**`O(n)`*
 
 
 

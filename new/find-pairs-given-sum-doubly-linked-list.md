@@ -13,7 +13,7 @@ Output: (6, 1), (5,2)
 
 ```
 
-预期的时间复杂度为 O（n），辅助空间为 O（1）。
+预期的时间复杂度为`O(n)`，辅助空间为`O(1)`。
 
 解决此问题的一种简单方法**是，一个节点一个接一个地选取每个节点，并通过向前遍历在剩余列表中找到总和等于 x 的第二个元素。此问题的时间复杂度为 O（n ^ 2），n 是双向链表中节点的总数。**
 
@@ -350,13 +350,13 @@ class GFG 
 
 ```
 
-**时间复杂度：** O（n）
+**时间复杂度：**`O(n)`
 
-**辅助空间：** O（1）
+**辅助空间：**`O(1)`
 
 如果未对链接列表进行排序，那么我们可以将列表作为第一步进行排序。 但是在那种情况下，整体时间复杂度将变为 O（n Log n）。 如果没有多余的空间，我们可以在这种情况下使用哈希。 基于哈希的解决方案与方法 2 [在此处](https://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/)相同。
 
-本文由 **[Shashank Mishra（Gullu）](https://www.facebook.com/shashank.mishra.92167)** 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由 [**Shashank Mishra（Gullu）**](https://www.facebook.com/shashank.mishra.92167) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

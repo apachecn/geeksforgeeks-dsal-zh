@@ -501,11 +501,11 @@ Created Linked List
 
 **复杂度分析：**
 
-*   **时间复杂度：** O（n）。
+*   **时间复杂度：**`O(n)`。
 
     仅需要遍历列表之一。
 
-*   **辅助空间：** O（1）。
+*   **辅助空间：**`O(1)`。
 
     不需要多余的空间。
 
@@ -533,7 +533,7 @@ Created Linked List
 
 ```
 
-**时间复杂度：** O（n）
+**时间复杂度：**`O(n)`
 
 **参考：** [http://cslibrary.stanford.edu/105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 

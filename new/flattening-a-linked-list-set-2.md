@@ -1,4 +1,4 @@
-# 展平链表| 设置 2
+# 展平链表 | 系列 2
 
 给定[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)，其中每个节点代表一个链接列表，并包含两个其类型的指针：
 

@@ -301,7 +301,7 @@ Linked list after removing duplicates:
 
 1）使用合并排序对元素进行排序。 我们很快将写一篇有关对链表进行排序的文章。 O（nLogn）
 
-2）使用[算法在线性时间内删除重复项，该算法用于删除已排序的链表中的重复项。 O（n）](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)
+2）使用[算法在线性时间内删除重复项，该算法用于删除已排序的链表中的重复项。`O(n)`](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)
 
 请注意，此方法不会保留元素的原始顺序。
 
@@ -588,7 +588,7 @@ Linked list after removing duplicates:
 
 感谢 bearwang 建议这种方法。
 
-时间复杂度：平均为 O（n）（假设哈希表访问时间平均为 O（1））。
+时间复杂度：平均为`O(n)`（假设哈希表访问时间平均为`O(1)`）。
 
 如果您发现上述任何解释/算法不正确，或者是解决同一问题的更好方法，请写评论。
 

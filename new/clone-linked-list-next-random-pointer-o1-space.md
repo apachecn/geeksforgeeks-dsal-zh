@@ -1,6 +1,6 @@
-# 使用 O（1）空间中的下一个指针和随机指针克隆链接列表
+# 使用`O(1)`空间中的下一个指针和随机指针克隆链接列表
 
-给定一个链表，每个节点中都有两个指针。 第一个指针指向列表的下一个节点，但是，另一个指针是随机的，可以指向列表的任何节点。 编写一个在 O（1）空间中克隆给定列表的程序，即没有任何额外空间。
+给定一个链表，每个节点中都有两个指针。 第一个指针指向列表的下一个节点，但是，另一个指针是随机的，可以指向列表的任何节点。 编写一个在`O(1)`空间中克隆给定列表的程序，即没有任何额外空间。
 
 **范例：**
 
@@ -12,7 +12,7 @@ A new linked list identical to the original list.
 
 ```
 
-在先前的文章 [Set-1](https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/) 和 [Set-2](https://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/) 中，讨论了各种方法，并且 O（n）空间复杂度实现也可用。
+在先前的文章 [Set-1](https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/) 和 [Set-2](https://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/) 中，讨论了各种方法，并且`O(n)`空间复杂度实现也可用。
 
 在本文中，我们将实现一种算法，该算法不需要 Set-1 中讨论的额外空间。
 
@@ -525,7 +525,7 @@ Data = 5, Random  = 2
 
 ```
 
-This article is contributed by **[Ashutosh Kumar](https://in.linkedin.com/in/ashutosh-kumar-9527a7105)** 😀 If you like GeeksforGeeks and would like to contribute, you can also write an article using [contribute.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) or mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.
+This article is contributed by [**Ashutosh Kumar**](https://in.linkedin.com/in/ashutosh-kumar-9527a7105) 😀 If you like GeeksforGeeks and would like to contribute, you can also write an article using [contribute.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) or mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

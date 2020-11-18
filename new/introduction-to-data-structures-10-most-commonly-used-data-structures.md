@@ -50,7 +50,7 @@
     3\. Pointer to the right child
     ```
 
-6.  **[二进制搜索树](http://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/)** ：在二进制搜索树中是具有以下附加属性的二进制树：
+6.  [**二进制搜索树**](http://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) ：在二进制搜索树中是具有以下附加属性的二进制树：
 
     *   节点的左子树仅包含键小于节点键的节点。
 
@@ -66,7 +66,7 @@
 
     [![](img/ac0bc46083007c09b8f9b69ec3fe28bf.png)](https://www.geeksforgeeks.org/heap-data-structure/)
 
-8.  **[Hashing Data Structure](https://www.geeksforgeeks.org/hashing-data-structure/)**: Hashing is an important Data Structure which is designed to use a special function called the Hash function which is used to map a given value with a particular key for faster access of elements. The efficiency of mapping depends on the efficiency of the hash function used.
+8.  [**Hashing Data Structure**](https://www.geeksforgeeks.org/hashing-data-structure/): Hashing is an important Data Structure which is designed to use a special function called the Hash function which is used to map a given value with a particular key for faster access of elements. The efficiency of mapping depends on the efficiency of the hash function used.
 
     让哈希函数 H（x）将值 x 映射到数组中的索引 x％10 处。 例如，如果值列表为[11、12、13、14、15]，它将分别存储在数组或哈希表中的位置{1、2、3、4、5}。
 

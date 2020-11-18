@@ -469,7 +469,7 @@ Linked List after calling pairWiseSwap()
 2 1 4 3 5 
 ```
 
-**时间复杂度：** O（n）
+**时间复杂度：**`O(n)`
 
 **方法 2（递归）**
 
@@ -500,7 +500,7 @@ void pairWiseSwap(struct node* head)
 
 ```
 
-**时间复杂度：** O（n）
+**时间复杂度：**`O(n)`
 
 **那里提供的解决方案交换节点的数据。 如果数据包含许多字段，将有许多交换操作。 有关更改链接而不是交换数据的实现，请参见此的[。](https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list-by-changing-links/)**
 

@@ -1,4 +1,4 @@
-# 将给定的二叉树转换为双链表| 设置 4
+# 将给定的二叉树转换为双链表 | 系列 4
 
 给定二叉树（BT），将其转换为就地双链表（DLL）。 节点中的左指针和右指针分别用作转换后的 DLL 中的上一个指针和下一个指针。 DLL 中节点的顺序必须与给定二叉树的顺序相同。 有序遍历的第一个节点（BT 中最左边的节点）必须是 DLL 的头节点。
 
@@ -6,9 +6,9 @@
 
 下面针对此问题讨论了三种不同的解决方案。
 
-[将给定的二叉树转换为双链表| 设置 1](https://www.geeksforgeeks.org/in-place-convert-a-given-binary-tree-to-doubly-linked-list/)
+[将给定的二叉树转换为双链表 | 系列 1](https://www.geeksforgeeks.org/in-place-convert-a-given-binary-tree-to-doubly-linked-list/)
 
-[将给定的二叉树转换为双链表| 设置 2](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-2/)
+[将给定的二叉树转换为双链表 | 系列 2](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-2/)
 
 [将给定的二叉树转换为双链表| 套装 3](https://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/)
 
@@ -377,7 +377,7 @@ Extracted Double Linked list is:
 0 1 2 3 4 5 6 7 8 9
 ```
 
-**时间复杂度：** O（n），因为该解决方案只遍历给定的二叉树。
+**时间复杂度：**`O(n)`，因为该解决方案只遍历给定的二叉树。
 
 本文由 **Aditya Goel** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

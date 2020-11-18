@@ -22,7 +22,7 @@
 > 总和= 5 + 3 + 2 = 10
 > 乘积= 5 * 3 * 2 = 30
 
-**方法：**的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)来预先计算并存储[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，然后检查节点是否在 O（1）时间中包含斐波那契值 。
+**方法：**的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)来预先计算并存储[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，然后检查节点是否在`O(1)`时间中包含斐波那契值 。
 
 1.  遍历整个[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)，并获得列表中的最大值。
 
@@ -629,7 +629,7 @@ Product = 104
 
 ```
 
-***时间复杂度：** O（N）*，其中 N 是链​​表中节点的数量。
+***时间复杂度：**`O(n)`*，其中 N 是链​​表中节点的数量。
 
 
 

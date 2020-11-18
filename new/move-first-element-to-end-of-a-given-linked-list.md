@@ -405,7 +405,7 @@ Linked list before moving first to end
 
 ```
 
-**时间复杂度：** O（n），其中 n 是给定链接列表中的节点数。
+**时间复杂度：**`O(n)`，其中 n 是给定链接列表中的节点数。
 
 
 

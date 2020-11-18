@@ -457,7 +457,7 @@ public static void Main() 
 
 **时间复杂度**：O（N <sup>2</sup> ）其中 N 是链​​表中节点的数量。
 
-**辅助空间**：O（1）
+**辅助空间**：`O(1)`
 
 被誉为业界最抢手的技能之一，拥有我们的 [**C++ STL**](https://practice.geeksforgeeks.org/courses/cpp-stl?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=GFG_Article_Bottom_CPP_STL) 课程的编码基础，并通过严格的问题解决方法掌握了这些概念。
 

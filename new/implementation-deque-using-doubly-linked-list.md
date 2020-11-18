@@ -358,7 +358,7 @@ After deleting front element new front is: 5
 
 ```
 
-时间复杂度：诸如 insertFront（），insertRear（），deleteFront（），deleteRear（）之类的操作的时间复杂度为 O（1）。 Ease（）的时间复杂度为 O（n）。
+时间复杂度：诸如 insertFront（），insertRear（），deleteFront（），deleteRear（）之类的操作的时间复杂度为`O(1)`。 Ease（）的时间复杂度为`O(n)`。
 
 
 

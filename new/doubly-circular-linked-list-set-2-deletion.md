@@ -1,4 +1,4 @@
-# 双向循环链接列表| 设置 2（删除）
+# 双向循环链接列表 | 系列 2（删除）
 
 我们已经讨论了[双循环链表介绍及其插入](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)。
 

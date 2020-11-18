@@ -444,7 +444,7 @@ class LinkedList {
 Element at index 3 is 4
 ```
 
-**时间复杂度：** O（n）
+**时间复杂度：**`O(n)`
 
 **方法 2-递归**
 
@@ -759,7 +759,7 @@ class GFG {
 Element at index 3 is 4
 ```
 
-**时间复杂度：** O（n）
+**时间复杂度：**`O(n)`
 
 https://youtu.be/iyOh1IWXnq4
 
