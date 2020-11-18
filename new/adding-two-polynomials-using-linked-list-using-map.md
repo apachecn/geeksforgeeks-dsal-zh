@@ -4,14 +4,14 @@
 
 给定两个由链表表示的多项式。 编写函数以执行其代数和。
 
-**示例：**
+**示例**：
 
-> **输入：**
+> **输入**：
 > 第一个数字= 5x ^ 2 + 4x ^ 1 + 2x ^ 0
 > 第二个数字= 5x ^ 1 + 5x ^ 0
-> **输出：** 5x ^ 2 + 9x ^ 1 + 7x ^ 0
+> **输出**：5x ^ 2 + 9x ^ 1 + 7x ^ 0
 
-**方法：**该实现使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)数据结构，以便将具有相同幂值的所有系数加在一起并保存在映射内的键值对中。
+**方法**：该实现使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)数据结构，以便将具有相同幂值的所有系数加在一起并保存在映射内的键值对中。
 
 下面是上述方法的实现：
 
@@ -143,7 +143,7 @@ Added polynomial: 5x^2 + 9x^1 + 7x^0
 
 ```
 
-**时间复杂度：** O（（m + n）log（m + n）），其中 m 和 n 分别是第一和第二个列表中的节点数，我们正在使用映射将系数额外 log（ m + n）因子被添加。
+**时间复杂度**：O（（m + n）log（m + n）），其中 m 和 n 分别是第一和第二个列表中的节点数，我们正在使用映射将系数额外 log（ m + n）因子被添加。
 
 
 

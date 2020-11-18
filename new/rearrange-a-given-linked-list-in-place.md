@@ -4,7 +4,7 @@
 
 您需要就地执行此操作，而无需更改节点的值。
 
-**范例：**
+**范例**：
 
 ```
 Input:  1 -> 2 -> 3 -> 4
@@ -38,7 +38,7 @@ Output: 1 -> 5 -> 2 -> 4 -> 3
 
 感谢 Arushi Dhamija 提出了此方法。
 
-**高效解决方案：**
+**高效解决方案**：
 
 ```
 1) Find the middle point using tortoise and hare method.
@@ -410,13 +410,13 @@ public class LinkedList {
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
-**辅助空间：**`O(1)`
+**辅助空间**：`O(1)`
 
 感谢 Gaurav Ahirwar 提出了上述方法。
 
-**另一种方法：**
+**另一种方法**：
 
 1.取两个指针 prev 和 curr，它们分别保留 head 和 head 的地址->。
 
@@ -614,13 +614,13 @@ public static void main(String args[])
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
-**辅助空间：**`O(1)`
+**辅助空间**：`O(1)`
 
 感谢 [Aditya](https://auth.geeksforgeeks.org/user/aditya1011/articles) 提出了这种方法。
 
-**另一种方法：**（使用递归）
+**另一种方法**：（使用递归）
 
 1.  保持指向头节点的指针，并使用递归操作直到最后一个节点
 

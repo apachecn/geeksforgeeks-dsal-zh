@@ -4,7 +4,7 @@
 
 给定一个链表和一个位置，请删除给定位置的链表节点。
 
-**示例：**
+**示例**：
 
 ```
 Input: position = 1, Linked List = 8->2->3->1->7
@@ -435,7 +435,7 @@ public static void Main(String[] args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Created Linked List: 

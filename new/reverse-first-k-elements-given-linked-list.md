@@ -6,7 +6,7 @@
 
 也检查[链表的反向](https://www.geeksforgeeks.org/reverse-a-linked-list/)
 
-**示例：**
+**示例**：
 
 ```
 Input : 1->2->3->4->5->6->7->8->9->10->NULL
@@ -461,7 +461,7 @@ Modified list
 3 2 1 4 5 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
 
 

@@ -2,7 +2,7 @@
 
 给定一个单链列表，其中的数据成员按升序排序。 构造一个[平衡二进制搜索树](https://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced/)，该树的数据成员与给定的链接列表相同。
 
- **范例：**
+ **范例**：
 
 ```
 Input:  Linked List 1->2->3
@@ -892,7 +892,7 @@ Given Linked List 1 2 3 4 5 6 7
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

@@ -6,7 +6,7 @@
 
 （无需使用额外的内存）。
 
-**示例：**
+**示例**：
 
 ```
 Input : 10 -> 4 -> 5 -> 3 -> 6
@@ -19,7 +19,7 @@ Output : -8 -> 2 -> -4 -> 12 -> 7 -> 10
 
 在亚马逊采访中问
 
-**方法：**以下步骤是：
+**方法**：以下步骤是：
 
 1.  从中间拆分列表。 进行 [**前后拆分**](https://www.geeksforgeeks.org/merge-sort-for-linked-list/) 。 如果元素的数量为奇数，则多余的元素应放在第一（前）列表中。
 
@@ -798,9 +798,9 @@ Modified List:
 
 ```
 
-**时间复杂度：**`O(n)`，其中 **n** 的节点数。
+**时间复杂度**：`O(n)`，其中 **n** 的节点数。
 
-**另一种方法（使用堆栈）：**
+**另一种方法（使用堆栈）**：
 
 1.找到下半个链表的起点。
 
@@ -1211,11 +1211,11 @@ Modified List:
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
-**空间复杂度：** O（n / 2）
+**空间复杂度**：O（n / 2）
 
-**参考：** [https://www.careercup.com/question?id=5657550909341696](https://www.careercup.com/question?id=5657550909341696)
+**参考**：[https://www.careercup.com/question?id=5657550909341696](https://www.careercup.com/question?id=5657550909341696)
 
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

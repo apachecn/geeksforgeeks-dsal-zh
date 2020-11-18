@@ -6,7 +6,7 @@
 
 此次招聘是为 BO Continuum India Pvt Ltd.的 BOA 技术领域
 
-**第 1 轮：**
+**第 1 轮**：
 
 本轮考试是一般能力测验，英语水平，定量分析和逻辑问题。 这是每个时间段的特定时间。 尝试从 GFG，indiabix 和 careerride YouTube 视频进行练习。
 

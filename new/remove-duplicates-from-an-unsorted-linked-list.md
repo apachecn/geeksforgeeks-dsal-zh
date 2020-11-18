@@ -283,7 +283,7 @@ class List_{
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Linked list before removing duplicates:
@@ -576,7 +576,7 @@ public static void Main(String[] args) 
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Linked list before removing duplicates:

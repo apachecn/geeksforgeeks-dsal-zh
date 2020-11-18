@@ -4,7 +4,7 @@
 
 给定一个矩阵。 将其转换为链接列表矩阵，以便每个节点都连接到其下一个右节点和下一个节点。
 
-**示例：**
+**示例**：
 
 ```
 Input : 2D matrix 
@@ -26,7 +26,7 @@ NULL NULL NULL
 
 ```
 
-**问题来源：** [事实访谈经验 | 系列 9](https://www.geeksforgeeks.org/factset-interview-experience-set-9-campus-full-time/)
+**问题来源**：[事实访谈经验 | 系列 9](https://www.geeksforgeeks.org/factset-interview-experience-set-9-campus-full-time/)
 
 这个想法是为矩阵的每个元素构造一个新节点，并递归地创建其下和右节点。
 

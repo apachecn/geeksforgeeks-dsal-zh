@@ -756,7 +756,7 @@ public static void Main(String[] args) 
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Created circular doubly linked list is: 
@@ -769,7 +769,7 @@ Traversal in reverse direction
 
 以下是循环双链表的优缺点：
 
-**优点：**
+**优点**：
 
 *   列表可以从两个方向遍历，即从头到尾或从​​尾到头。
 

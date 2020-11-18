@@ -4,7 +4,7 @@
 
 编写一个 GetNth（）函数，该函数接受一个链表和一个整数索引，并返回存储在该索引位置的节点中的数据值。
 
-**示例：**
+**示例**：
 
 ```
 Input:  1->10->30->14,  index = 2
@@ -13,7 +13,7 @@ The node at index 2 is 30
 
 ```
 
-**算法：**
+**算法**：
 
 ```
 1\. Initialize count = 0
@@ -25,7 +25,7 @@ The node at index 2 is 30
 
 ```
 
-**实施：**
+**实施**：
 
 ## C++
 
@@ -444,13 +444,13 @@ class LinkedList {
 Element at index 3 is 4
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
 **方法 2-递归**
 
 此方法由 [MY_DOOM](https://auth.geeksforgeeks.org/user/MY_DOOM) 贡献。
 
-**算法：**
+**算法**：
 
 ```
 Algorithm
@@ -463,7 +463,7 @@ getnth(node,n)
 
 ```
 
-**实施：**
+**实施**：
 
 ## C++
 
@@ -759,7 +759,7 @@ class GFG {
 Element at index 3 is 4
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
 https://youtu.be/iyOh1IWXnq4
 

@@ -6,11 +6,11 @@
 
 为了执行基于分而治之算法的二进制搜索，确定中间元素非常重要。 对于数组，二进制搜索通常是快速而有效的，因为访问两个给定索引之间的中间索引既简单又快速（时间复杂度`O(1)`）。 但是，单链接列表的内存分配是动态且不连续的，这使得查找中间元素变得困难。 一种方法可能是使用[跳过列表](https://www.geeksforgeeks.org/skip-list/)，一种可能是使用一个指针遍历链接列表。
 
-**前提：** [在链表的中间找到。](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)
+**前提**：[在链表的中间找到。](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)
 
 **注意：以下提供的方法和实现旨在说明如何在链表上实现二进制搜索。 该实现需要`O(n)`时间。**
 
-**方法：**
+**方法**：
 
 *   在这里，给出了起始节点（设置为列表头）和最后一个节点（最初设置为 NULL）。
 
@@ -480,7 +480,7 @@ Present
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
 
 

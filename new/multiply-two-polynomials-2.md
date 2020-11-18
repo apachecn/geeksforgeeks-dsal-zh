@@ -2,7 +2,7 @@
 
 给定两个由两个数组表示的多项式，编写一个将给定两个多项式相乘的函数。
 
-**示例：**
+**示例**：
 
 ```
 Input:  A[] = {5, 0, 10, 6} 
@@ -485,7 +485,7 @@ A0B1 + A1B0 = X - Y - Z
 
 还有一种 O（nLogn）算法，该算法也使用快速傅立叶变换将两个多项式相乘（有关详细信息，请参阅[和](https://www.cs.iastate.edu/~cs577/handouts/polymultiply.pdf)[。）](http://www.cs.cmu.edu/afs/cs/academic/class/15451-s10/www/lectures/lect0423.txt)
 
-**来源：**
+**来源**：
 
 [http://www.cse.ust.hk/~dekai/271/notes/L03/L03.pdf](http://www.cse.ust.hk/~dekai/271/notes/L03/L03.pdf)
 

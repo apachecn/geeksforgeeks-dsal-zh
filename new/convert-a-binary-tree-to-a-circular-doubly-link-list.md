@@ -8,7 +8,7 @@
 
 *   有序遍历的第一个节点必须是循环列表的头节点。
 
-**示例：**
+**示例**：
 
 [![tree to list](img/ffff6388fae1f1744ce42cfe0451aa66.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/tree-to-list.png)
 

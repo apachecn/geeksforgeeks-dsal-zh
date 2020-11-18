@@ -2,21 +2,21 @@
 
 给定两个已排序的[双循环链表](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)，分别包含 **n1** 和 **n2** 个节点。 问题是合并两个列表，使结果列表也处于排序顺序。
 
-**示例：**
+**示例**：
 
-**列表 1：**
+**列表 1**：
 
 ![](img/f7f6c1deac20b98e7cd49bb8a7d435f9.png)
 
-**列表 2：**
+**列表 2**：
 
 ![](img/c6fafcc21f76ae4b74959206ce422c36.png)
 
-**最终列表：**
+**最终列表**：
 
 ![](img/319cd08fea739f4429fd83b84b2990b7.png)
 
-**方法：**以下是步骤：
+**方法**：以下是步骤：
 
 1.  如果 head1 == NULL，则返回 head2。
 
@@ -657,7 +657,7 @@ Final Sorted List: 1 2 3 5 7 8 9 11
 
 ```
 
-**时间复杂度：** O（n1 + n2）。
+**时间复杂度**：O（n1 + n2）。
 
 
 

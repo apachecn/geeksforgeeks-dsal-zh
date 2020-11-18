@@ -421,7 +421,7 @@ class LinkedList {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Given linked list
@@ -431,11 +431,11 @@ Reversed Linked list
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
-**空间复杂度：**`O(1)`
+**空间复杂度**：`O(1)`
 
-**递归方法：**
+**递归方法**：
 
 ```
    1) Divide the list in two parts - first node and 
@@ -764,7 +764,7 @@ public static void Main(String []args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Given linked list
@@ -774,9 +774,9 @@ Reversed Linked list
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
-**空间复杂度：**`O(1)`
+**空间复杂度**：`O(1)`
 
 **一种更简单且尾部递归的方法**
 
@@ -1137,7 +1137,7 @@ Reversed linked list
 
 ```
 
-**使用堆栈：**
+**使用堆栈**：
 
 *   将节点（值和地址）存储在堆栈中，直到输入所有值。
 
@@ -1278,7 +1278,7 @@ Reversed linked list
 
 [仅使用 2 个指针迭代反向链接的列表（一种有趣的方法）](https://www.geeksforgeeks.org/iteratively-reverse-a-linked-list-using-only-2-pointers/)
 
-**参考：**
+**参考**：
 
 [http://cslibrary.stanford.edu/105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 

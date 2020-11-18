@@ -14,13 +14,13 @@
 
 可以使用常见的数据结构（如数组，链接列表，堆和二叉树）来实现优先级队列。
 
-**先决条件：**
+**先决条件**：
 
 [链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)，[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
 
 这样创建列表，以使优先级最高的元素始终位于列表的开头。 该列表根据元素的优先级以降序排列。 这使我们可以删除`O(1)`时间中的最高优先级元素。 要插入元素，我们必须遍历列表并找到合适的位置插入节点，以便维护优先级队列的整体顺序。 这使 push（）操作花费`O(n)`时间。 pop（）和 peek（）操作在固定时间内执行。
 
-**算法：**
+**算法**：
 
 PUSH（HEAD，数据，优先级）
 
@@ -518,7 +518,7 @@ public static void Main(string[] args)
 
 ```
 
-**时间复杂度以及与[二元堆](https://www.geeksforgeeks.org/binary-heap/)：**的比较
+**时间复杂度以及与[二元堆](https://www.geeksforgeeks.org/binary-heap/)**：的比较
 
 ```
                peek()    push()    pop()

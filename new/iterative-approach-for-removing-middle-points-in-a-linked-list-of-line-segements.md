@@ -487,7 +487,7 @@ public class LinkedList
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 

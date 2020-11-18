@@ -6,7 +6,7 @@
 
 ![](img/71f8f1f7180d98a6b406bec3f4e70f97.png)
 
-**方法：**在本文中，我们将使用 [**映射**](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 的概念将[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中存在的节点的地址存储为 键及其位置作为值。
+**方法**：在本文中，我们将使用 [**映射**](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/) 的概念将[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中存在的节点的地址存储为 键及其位置作为值。
 
 以下是分步方法：
 
@@ -199,7 +199,7 @@ public static void main (String[] args)
 
 ```
 
-**相似的文章：** [使用弗洛伊德循环检测算法](https://www.geeksforgeeks.org/find-length-of-loop-in-linked-list/)
+**相似的文章**：[使用弗洛伊德循环检测算法](https://www.geeksforgeeks.org/find-length-of-loop-in-linked-list/)
 
 在“链表”中查找循环的长度
 

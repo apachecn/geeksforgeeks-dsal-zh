@@ -176,7 +176,7 @@ Added polynomial: 5x^2 + 9x^1 + 7x^0
 
 时间复杂度：O（m + n），其中 m 和 n 分别是第一列表和第二列表中的节点数。
 
-**相关文章：** [使用数组将两个多项式数相加](http://quiz.geeksforgeeks.org/program-add-two-polynomials/)
+**相关文章**：[使用数组将两个多项式数相加](http://quiz.geeksforgeeks.org/program-add-two-polynomials/)
 
 本文由 **Akash Gupta** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则也可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

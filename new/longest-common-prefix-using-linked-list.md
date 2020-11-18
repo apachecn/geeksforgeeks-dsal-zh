@@ -4,7 +4,7 @@
 
 给定一组字符串，找到最长的公共前缀。
 
-**示例：**
+**示例**：
 
 ```
 Input  : {“geeksforgeeks”, “geeks”, “geek”, “geezer”}
@@ -15,7 +15,7 @@ Output : "ap"
 
 ```
 
-**先前的方法：** [逐字匹配](https://www.geeksforgeeks.org/longest-common-prefix-set-1-word-by-word-matching/)，[逐字符匹配](https://www.geeksforgeeks.org/longest-common-prefix-set-2-character-by-character-matching/)，[分而治之](https://www.geeksforgeeks.org/longest-common-prefix-set-3-divide-and-conquer/)，[二进制搜索](https://www.geeksforgeeks.org/longest-common-prefix-set-4-binary-search/)， [使用 Trie 数据结构](https://www.geeksforgeeks.org/longest-common-prefix-set-5-using-trie/)
+**先前的方法**：[逐字匹配](https://www.geeksforgeeks.org/longest-common-prefix-set-1-word-by-word-matching/)，[逐字符匹配](https://www.geeksforgeeks.org/longest-common-prefix-set-2-character-by-character-matching/)，[分而治之](https://www.geeksforgeeks.org/longest-common-prefix-set-3-divide-and-conquer/)，[二进制搜索](https://www.geeksforgeeks.org/longest-common-prefix-set-4-binary-search/)， [使用 Trie 数据结构](https://www.geeksforgeeks.org/longest-common-prefix-set-5-using-trie/)
 
 以下是使用**链表**解决上述问题的算法。
 

@@ -2,7 +2,7 @@
 
 给定一个链表和位置 k。 在第 k 个位置循环
 
-**示例：**
+**示例**：
 
 ```
 Input : Given linked list

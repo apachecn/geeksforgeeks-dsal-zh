@@ -2,7 +2,7 @@
 
 给定两个链接列表，任务是检查第一个列表是否存在于第二个列表中。
 
-**范例：**
+**范例**：
 
 ```
 Input  : list1 =  10->20
@@ -518,7 +518,7 @@ public static void Main(String[] args) 
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 LIST FOUND
@@ -527,7 +527,7 @@ LIST FOUND
 
 时间复杂度：O（m * n），其中 m 是第二个列表中的节点数，而 n 是第一个列表中的节点数。
 
-**优化：**
+**优化**：
 
 上面的代码可以通过使用额外的空间进行优化，即将列表存储在两个字符串中并应用 [KMP 算法](https://www.geeksforgeeks.org/searching-for-patterns-set-2-kmp-algorithm/)。 请参阅 [https://ide.geeksforgeeks.org/3fXUaV](https://ide.geeksforgeeks.org/3fXUaV) 以获取 [**Nishant Singh**](https://practice.geeksforgeeks.org/user-profile.php?user=_code) 提供的实施方案。
 

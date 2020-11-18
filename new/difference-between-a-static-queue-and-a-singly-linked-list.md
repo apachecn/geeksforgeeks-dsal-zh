@@ -2,7 +2,7 @@
 
 之间的区别
 
-**[静态队列](https://www.geeksforgeeks.org/queue-data-structure/)：** [队列](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)是元素的有序列表。 它始终以先进先出（FIFO）的方式工作。 所有元素都插入在*后*处，并从队列的 *FRONT* 中删除。 在静态队列的实现中，将使用数组，因此队列的所有操作都是基于索引的，这使得除删除之外的所有操作都更快，因为删除需要将所有其余元素向前移动一个位置。
+**[静态队列](https://www.geeksforgeeks.org/queue-data-structure/)**：[队列](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)是元素的有序列表。 它始终以先进先出（FIFO）的方式工作。 所有元素都插入在*后*处，并从队列的 *FRONT* 中删除。 在静态队列的实现中，将使用数组，因此队列的所有操作都是基于索引的，这使得除删除之外的所有操作都更快，因为删除需要将所有其余元素向前移动一个位置。
 
 **静态队列**是使用数组实现的固定大小[的队列。](https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)
 
@@ -10,7 +10,7 @@
 
 ![](img/a82bb56d6474afd20d7a765fa656a569.png)
 
-**[单链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)：**链表也是元素的有序列表。 您可以在列表中的任何位置添加元素，在列表中的任何位置更改元素，或从列表中的任何位置删除元素。 列表中的每个节点都存储内容以及指向列表中下一个节点的指针或引用。 要存储单个链接列表，仅必须存储指向该列表中第一个节点的引用或指针。 单个链接列表中的最后一个节点指向无（或为空）。
+**[单链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)**：链表也是元素的有序列表。 您可以在列表中的任何位置添加元素，在列表中的任何位置更改元素，或从列表中的任何位置删除元素。 列表中的每个节点都存储内容以及指向列表中下一个节点的指针或引用。 要存储单个链接列表，仅必须存储指向该列表中第一个节点的引用或指针。 单个链接列表中的最后一个节点指向无（或为空）。
 
 ![](img/6506462bc8feac1c3bac44510804e930.png)
 

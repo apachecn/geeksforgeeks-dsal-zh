@@ -465,7 +465,7 @@ Node    Next Pointer    Arbit Pointer
 
 ```
 
-**递归解决方案：**
+**递归解决方案**：
 
 我们可以递归到达最后一个节点并从末端遍历链表。 递归解决方案不需要反向链接列表。 我们还可以使用堆栈代替递归来临时保存节点。 感谢 Santosh Kumar Mishra 提供此解决方案。
 
@@ -854,7 +854,7 @@ class GfG
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Resultant Linked List is: 

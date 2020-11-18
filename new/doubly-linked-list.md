@@ -417,7 +417,7 @@ def append(self, new_data):
 
 上述 7 个步骤中的 6 个与[相同，用于在单链表](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)中的给定节点之后插入的 6 个步骤。 需要一个额外的步骤来更改新节点的先前指针。
 
-**4）在给定节点之前添加一个节点：**
+**4）在给定节点之前添加一个节点**：
 
 **步骤**
 

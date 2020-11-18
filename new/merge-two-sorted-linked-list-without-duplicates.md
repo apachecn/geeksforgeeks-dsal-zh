@@ -11,9 +11,9 @@ Output : 1 2 4 5 7 9
 
 ```
 
-**来源：** [Microsoft 在校园布置和面试问题上的问题](https://www.geeksforgeeks.org/microsoft-on-campus-placement-and-interview-questions/)
+**来源**：[Microsoft 在校园布置和面试问题上的问题](https://www.geeksforgeeks.org/microsoft-on-campus-placement-and-interview-questions/)
 
-**方法：**以下是步骤：
+**方法**：以下是步骤：
 
 1.  以排序方式合并两个排序的链表。 请参阅此帖子的[递归方法。 令最终获得的列表为**头**。](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)
 
@@ -160,7 +160,7 @@ int main()
 
 辅助空间：`O(1)`。
 
-**练习：**获得最终排序的链表，一次遍历两个列表时没有重复项。
+**练习**：获得最终排序的链表，一次遍历两个列表时没有重复项。
 
 
 

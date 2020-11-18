@@ -1226,7 +1226,7 @@ class GFG
 
 ```
 
-**输出：**
+**输出**：
 
 ```
  Created Linked list is:  1  7  8  6  4

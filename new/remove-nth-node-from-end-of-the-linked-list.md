@@ -4,21 +4,21 @@
 
 给定一个链表。 任务是从链接列表的末尾删除第 **N 个**个节点。
 
-**示例：**
+**示例**：
 
-> **输入：** 1- > 2- > 3- > 4- > 5，N = 2
-> **输出：** 1- > 2 -> 3- > 5
+> **输入**：1- > 2- > 3- > 4- > 5，N = 2
+> **输出**：1- > 2 -> 3- > 5
 > 
-> **输入：** 7- > 8- > 4- > 3- > 2，N = 1
-> **输出：** 7- > 8 -> 4- > 3
+> **输入**：7- > 8- > 4- > 3- > 2，N = 1
+> **输出**：7- > 8 -> 4- > 3
 
-**先决条件：**
+**先决条件**：
 
 1\. [从链表中删除一个节点。](https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/)
 
 2\. [从链接列表的末尾找到第 n 个节点](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)
 
-**方法：**
+**方法**：
 
 从最后删除 Bth 节点与从开始删除（length-B + 1）基本相同。 在我们的方法中，我们首先评估链表的长度，然后检查
 
@@ -463,7 +463,7 @@ public static void Main(String[] args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Linked list before modification: 

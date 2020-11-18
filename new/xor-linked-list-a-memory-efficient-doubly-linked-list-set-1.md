@@ -6,7 +6,7 @@
 
 考虑上面的双链表。 以下是双链表的普通和 XOR（或内存有效）表示形式。
 
-**普通表示形式：**
+**普通表示形式**：
 
 节点 A：
 
@@ -24,7 +24,7 @@ prev = add（B），next = add（D）//上一个是 B 的地址，下一个是 D
 
 prev = add（C），next = NULL //前一个是 C 的地址，下一个是 NULL
 
-**XOR 列表表示形式：**
+**XOR 列表表示形式**：
 
 让我们以 XOR 表示形式 npx（下一个和上一个的 XOR）调用地址变量
 
@@ -44,7 +44,7 @@ npx = add（B）XOR add（D）// B 地址和 D 地址的按位 XOR
 
 npx = add（C）XOR 0 // C 和 0 的地址的按位 XOR
 
-**遍历 XOR 链接列表：**
+**遍历 XOR 链接列表**：
 
 我们可以在正反两个方向上遍历 XOR 列表。 在遍历列表时，我们需要记住先前访问的节点的地址，以便计算下一个节点的地址。 例如，当我们在节点 C 时，我们必须具有地址 B。add（B）和 C 的 *npx* 的 XOR 给我们 add（D）。 原因很简单：npx（C）是“ add（B）XOR add（D）”。 如果我们用 add（B）对 npx（C）进行异或，则得到的结果为“ add（B）XOR add（D）XOR add（B）”，即“ add（D）XOR 0”，即“ add” （D）”。 因此，我们有了下一个节点的地址。 同样，我们可以向后遍历列表。
 
@@ -52,7 +52,7 @@ npx = add（C）XOR 0 // C 和 0 的地址的按位 XOR
 
 [XOR 链表–内存有效的双链表 | 系列 2](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
 
-**参考：**
+**参考**：
 
 [http://en.wikipedia.org/wiki/XOR_linked_list](http://en.wikipedia.org/wiki/XOR_linked_list)
 

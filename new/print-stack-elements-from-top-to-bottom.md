@@ -2,15 +2,15 @@
 
 给定[堆栈](http://www.geeksforgeeks.org/stack-data-structure/) **S** ，任务是[从上至下打印堆栈](https://www.geeksforgeeks.org/print-stack-elements-from-bottom-to-top/)的元素，以使元素仍然存在于堆栈中，而没有它们的顺序 被改变。
 
-**示例：**
+**示例**：
 
-> **输入：** S = {2，3，4，5}
-> **输出：** 5 4 3 2
+> **输入**：S = {2，3，4，5}
+> **输出**：5 4 3 2
 > 
-> **输入：** S = {3，3，2，2}
-> **输出：** 2 2 3 3
+> **输入**：S = {3，3，2，2}
+> **输出**：2 2 3 3
 
-[**递归**](http://www.geeksforgeeks.org/recursion/) **方法：**请按照以下步骤解决问题：
+[**递归**](http://www.geeksforgeeks.org/recursion/) **方法**：请按照以下步骤解决问题：
 
 1.  创建一个具有[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)作为参数的递归函数。
 
@@ -253,11 +253,11 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：**`O(n)`，其中 N 是给定堆栈中元素的数量。*
+***时间复杂度**：`O(n)`，其中 N 是给定堆栈中元素的数量。*
 
-***辅助空间：**`O(n)`*
+***辅助空间**：`O(n)`*
 
-[**单链列表堆栈**](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/) **方法：**此方法讨论解决[单链列表堆栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)表示法的问题的解决方案。 步骤如下：
+[**单链列表堆栈**](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/) **方法**：此方法讨论解决[单链列表堆栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)表示法的问题的解决方案。 步骤如下：
 
 1.  将给定堆栈中的顶部元素推入[链表堆栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)。
 
@@ -553,11 +553,11 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：**`O(n)`，其中 N 是给定堆栈中元素的数量。*
+***时间复杂度**：`O(n)`，其中 N 是给定堆栈中元素的数量。*
 
-***辅助空间：**`O(n)`*
+***辅助空间**：`O(n)`*
 
-[**阵列堆栈**](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) **方法：**此方法讨论[阵列堆栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)实现中问题的解决方案。 步骤如下：
+[**阵列堆栈**](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) **方法**：此方法讨论[阵列堆栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)实现中问题的解决方案。 步骤如下：
 
 1.  将给定堆栈中的顶部元素推入[数组堆栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)。
 
@@ -827,9 +827,9 @@ public static void Main(String []args)
 
 ```
 
-***时间复杂度：**`O(n)`，其中 N 是给定堆栈中元素的数量。*
+***时间复杂度**：`O(n)`，其中 N 是给定堆栈中元素的数量。*
 
-***辅助空间：**`O(n)`*
+***辅助空间**：`O(n)`*
 
 
 

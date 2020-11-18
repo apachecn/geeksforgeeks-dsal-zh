@@ -4,7 +4,7 @@
 
 ![sorting image](img/cc3d3ac699ac03f5792746b3e3e54865.png)
 
-**示例：**
+**示例**：
 
 ```
 Input: 10->30->20->5
@@ -16,7 +16,7 @@ Output: 3->4->20
 
 [![](img/38fde8d2e59a1b2f1131482511318c3f.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190405123134/Sorting-a-Lisked-List.jpg)
 
-**方法：**
+**方法**：
 
 1.  获取要排序的链接列表
 

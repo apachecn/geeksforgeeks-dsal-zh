@@ -6,7 +6,7 @@
 
 ![](img/7efc45248c486bc9b5f4f83226b3af81.png)
 
-**示例：**
+**示例**：
 
 ```
 Input : 9->11->32->6->13->20 
@@ -19,7 +19,7 @@ List After delete prime node : 10 21 16 6
 
 ```
 
-**方法：**这个想法是一个遍历循环单链表的节点，并得到素数节点的指针。 通过按照帖子中使用的方法删除这些节点：[从循环链接列表](https://www.geeksforgeeks.org/deletion-circular-linked-list/)中删除一个节点。
+**方法**：这个想法是一个遍历循环单链表的节点，并得到素数节点的指针。 通过按照帖子中使用的方法删除这些节点：[从循环链接列表](https://www.geeksforgeeks.org/deletion-circular-linked-list/)中删除一个节点。
 
 以下是上述想法的实现：
 

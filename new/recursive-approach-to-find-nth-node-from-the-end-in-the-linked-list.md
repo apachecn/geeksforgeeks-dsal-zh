@@ -2,7 +2,7 @@
 
 使用递归方法从给定链表的末尾找到第 n 个节点。
 
-**示例：**
+**示例**：
 
 ```
 Input : list: 4->2->1->5->3
@@ -11,7 +11,7 @@ Output : 5
 
 ```
 
-**算法：**
+**算法**：
 
 ```
 findNthFromLast(head, n, count, nth_last)
@@ -36,7 +36,7 @@ findNthFromLastUtil(head, n)
 
 ```
 
-**注意：**参数**计数**和 **nth_last** 将是 **findNthFromLast（）**中的指针变量。
+**注意**：参数**计数**和 **nth_last** 将是 **findNthFromLast（）**中的指针变量。
 
 ## C++
 
@@ -413,7 +413,7 @@ Nth node from last is: 5
 
 ```
 
-**时间复杂度：**`O(n)`，其中“ n”是链接列表中的节点数。
+**时间复杂度**：`O(n)`，其中“ n”是链接列表中的节点数。
 
 
 

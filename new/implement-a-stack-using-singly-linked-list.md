@@ -14,17 +14,17 @@
 
 在数组上使用链接列表的主要优点是可以实现可根据需要缩小或增长的堆栈。 使用数组会限制数组的最大容量，这可能导致堆栈溢出。 在这里，每个新节点将被动态分配。 因此不可能发生溢出。
 
-**堆栈操作：**
+**堆栈操作**：
 
-1.  **[push（）](https://www.geeksforgeeks.org/stack-push-and-pop-in-c-stl/)：**将该元素插入到链表中，只是栈的顶部节点。
+1.  **[push（）](https://www.geeksforgeeks.org/stack-push-and-pop-in-c-stl/)**：将该元素插入到链表中，只是栈的顶部节点。
 
-2.  **[pop（）](https://www.geeksforgeeks.org/stack-push-and-pop-in-c-stl/)：**从堆栈中返回顶部元素，并将顶部指针移至链接列表或堆栈的第二个节点。
+2.  **[pop（）](https://www.geeksforgeeks.org/stack-push-and-pop-in-c-stl/)**：从堆栈中返回顶部元素，并将顶部指针移至链接列表或堆栈的第二个节点。
 
-3.  **[peek（）](https://www.geeksforgeeks.org/stack-peek-method-in-java/)：**返回顶部元素。
+3.  **[peek（）](https://www.geeksforgeeks.org/stack-peek-method-in-java/)**：返回顶部元素。
 
-4.  **display（）：**打印堆栈的所有元素。
+4.  **display（）**：打印堆栈的所有元素。
 
-**下面是上述方法的实现：**
+**下面是上述方法的实现**：
 
 ## C++
 

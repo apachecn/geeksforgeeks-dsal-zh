@@ -2,19 +2,19 @@
 
 给定两个未排序的[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是将它们合并以获得一个已排序的[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)。
 
-**范例：**
+**范例**：
 
-> **输入：**列表 1 = 3-> 1-> 5，列表 2 = 6- > 2-> 4
-> **输出：** 1- > 2-> 3-> 4-> 5-> 6
+> **输入**：列表 1 = 3-> 1-> 5，列表 2 = 6- > 2-> 4
+> **输出**：1- > 2-> 3-> 4-> 5-> 6
 > 
-> **输入：**列表 1 = 4-> 7-> 5，列表 2 = 2- > 1-> 8-> 1
-> **输出：** 1-> 1-> 2-> 4-> 5-> 7-> 8
+> **输入**：列表 1 = 4-> 7-> 5，列表 2 = 2- > 1-> 8-> 1
+> **输出**：1-> 1-> 2-> 4-> 5-> 7-> 8
 
-**朴素的方法：**朴素的方法是对给定的链表进行排序，然后[将两个排序的链表](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)按升序合并到一个列表中。
+**朴素的方法**：朴素的方法是对给定的链表进行排序，然后[将两个排序的链表](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)按升序合并到一个列表中。
 
 为了解决上述问题，朴素的方法是对两个链接列表进行单独排序，然后将两个链接列表合并为一个顺序递增的列表。
 
-**高效方法：**为了优化上述方法，我们将两个链表连接起来，然后使用任何排序算法对其进行排序。 步骤如下：
+**高效方法**：为了优化上述方法，我们将两个链表连接起来，然后使用任何排序算法对其进行排序。 步骤如下：
 
 1.  通过遍历第一个列表直到我们到达一个尾节点，然后将尾节点的下一个指向第二个列表的头节点，将两个列表连接起来。 将此串联列表存储在第一个列表中。
 
@@ -538,7 +538,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** *O（M * N）*其中 M 和 N 是两个给定链表的长度。
+**时间复杂度**：*O（M * N）*其中 M 和 N 是两个给定链表的长度。
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

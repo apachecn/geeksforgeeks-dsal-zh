@@ -302,7 +302,7 @@ printList(head)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Given linked list    1 2 3 4 5 
@@ -310,7 +310,7 @@ After rearrangement    1 5 2 4 3
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
 
 

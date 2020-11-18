@@ -305,18 +305,18 @@ public static void Main(String[] args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 It is Palindrome
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
-**辅助空间：**`O(1)`
+**辅助空间**：`O(1)`
 
-**相关文章：**
+**相关文章**：
 
 *   [用于检查单链表是否是回文](https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)的功能
 

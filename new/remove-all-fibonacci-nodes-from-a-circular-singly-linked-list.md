@@ -4,21 +4,21 @@
 
 给定一个包含 **N 个**节点的[循环单链列表](https://www.geeksforgeeks.org/circular-linked-list/)，任务是从包含[斐波那契](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)数据值的列表中删除所有节点。
 
-**示例：**
+**示例**：
 
-> **输入：** CLL = 9-> 11-> 34-> 6-> 13-> 20
-> **输出：** 9-> 11-> 6-> 20
-> **说明：**
+> **输入**：CLL = 9-> 11-> 34-> 6-> 13-> 20
+> **输出**：9-> 11-> 6-> 20
+> **说明**：
 > 该列表包含 2 个斐波那契数据值 32 和 13。
 > 因此，包含此数据的节点已被删除。 已删除
 > 
-> **输入：** 5-> 11-> 16-> 21-> 17-> 10
-> **输出：** 11-> 16-> 17-> 10
-> **说明：**
+> **输入**：5-> 11-> 16-> 21-> 17-> 10
+> **输出**：11-> 16-> 17-> 10
+> **说明**：
 > 该列表包含 2 个斐波那契数据值 5 和 21。
 > 因此，删除了包含此数据的节点
 
-**方法：**的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)来预先计算并存储[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，然后检查节点是否在`O(1)`时间中包含斐波那契值 。
+**方法**：的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)来预先计算并存储[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，然后检查节点是否在`O(1)`时间中包含斐波那契值 。
 
 1.  遍历整个圆形单链列表，并在列表中获得最大值。
 

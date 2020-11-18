@@ -12,25 +12,25 @@
 
 4.  从[单链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)中删除所有 Fibonacci 节点。
 
-**示例：**
+**示例**：
 
-> **输入：** LL = 15-> 16-> 8-> 6-> 13
-> **输出：**
+> **输入**：LL = 15-> 16-> 8-> 6-> 13
+> **输出**：
 > 斐波那契节点= 8， 13
 > 斐波那契节点数= 2
 > 列表中的最小斐波那契节点= 8
 > 列表中的最大斐波那契节点= 13
 > 删除斐波那契节点后的列表= 15-> 16-> 6
 > 
-> **输入：** LL = 5-> 3-> 4-> 2-> 9
-> **输出：**
+> **输入**：LL = 5-> 3-> 4-> 2-> 9
+> **输出**：
 > 斐波那契节点= 5， 3，2
 > 斐波那契节点数= 3
 > 列表中的最小斐波那契节点= 2
 > 列表中的最大斐波那契节点= 5
 > 删除斐波那契节点后的列表= 4-> 9
 
-**方法：**的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契节点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)到链表中的最大值，以使检查变得容易和高效（ 在`O(1)`时间内）。
+**方法**：的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契节点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)到链表中的最大值，以使检查变得容易和高效（ 在`O(1)`时间内）。
 
 1.  遍历整个单链列表，并在列表中获得最大值。
 
@@ -38,9 +38,9 @@
 
 完成上述预计算后，我们可以在固定时间内检查数字是否为斐波那契。 因此，为了执行上述操作，使用了以下方法：
 
-1.  **打印 Fibonacci 节点：**遍历链接列表，并检查数字是否为 Fibonacci 值。 如果是，则打印它。
+1.  **打印 Fibonacci 节点**：遍历链接列表，并检查数字是否为 Fibonacci 值。 如果是，则打印它。
 
-2.  **计算 Fibonacci 节点的数量：**要计算链接列表中的 Fibonacci 节点的数量，我们遍历链接列表并检查该数量是否为 Fibonacci 值。
+2.  **计算 Fibonacci 节点的数量**：要计算链接列表中的 Fibonacci 节点的数量，我们遍历链接列表并检查该数量是否为 Fibonacci 值。
 
 3.  **Find the minimum and the maximum Fibonacci nodes:** Traverse through the linked list and check if the value at a node is a Fibonacci or not. If yes:
 
@@ -50,7 +50,7 @@
 
     最后，max 和 min 变量包含链表中存在的最大和最小斐波那契节点。
 
-4.  **删除斐波那契节点：**为了删除斐波那契值，请遍历链接列表，如果数据为斐波那契，则使用[这种方法](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)删除包含数据的节点。
+4.  **删除斐波那契节点**：为了删除斐波那契值，请遍历链接列表，如果数据为斐波那契，则使用[这种方法](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)删除包含数据的节点。
 
 下面是上述方法的实现：
 
@@ -929,7 +929,7 @@ List after deletion: 15 16 6
 
 ```
 
-**时间复杂度：** *`O(n)`*，其中 N 是链​​表中节点的数量。
+**时间复杂度**：*`O(n)`*，其中 N 是链​​表中节点的数量。
 
 
 

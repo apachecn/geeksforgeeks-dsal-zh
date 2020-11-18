@@ -21,7 +21,7 @@
 
 ```
 
-**程序：**
+**程序**：
 
 ## C++
 
@@ -433,7 +433,7 @@ public class LinkedList 
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Before deleting 

@@ -6,7 +6,7 @@ STL 是 C++的支柱之一。 它使工作变得更加轻松，尤其是当您�
 
 尽管依赖库函数会直接影响我们的效率，但是如果对库的工作原理没有正确的了解，有时会失去我们一直在谈论的工程效率的含义。 错误选择的数据结构可能在将来的某个时候回来困扰我们。 解决方案很简单。 使用库方法，但要知道它如何在后台处理操作。
 
-说够了！ 今天，我们将研究如何实现单个链表的自己的**迭代器模式。 因此，这是链接列表的 STL 实现的样子：**
+说够了！ 今天，我们将研究如何实现单个链表的自己的**迭代器模式。 因此，这是链接列表的 STL 实现的样子**：
 
 ```
 
@@ -243,7 +243,7 @@ Traversing LinkedList through Iterator
 
 ```
 
-**练习：** 当我们只有一个数据时，上述实现效果很好。 扩展此代码以处理包装在类中的数据集。
+**练习**：当我们只有一个数据时，上述实现效果很好。 扩展此代码以处理包装在类中的数据集。
 
 本文由 [**Aashish Barnwal**](https://about.me/aashishbarnwal) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

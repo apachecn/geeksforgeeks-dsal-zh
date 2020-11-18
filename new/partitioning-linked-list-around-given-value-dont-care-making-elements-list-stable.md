@@ -4,7 +4,7 @@
 
 相似的问题：[将给定值周围的链表分区，并保持原始顺序](https://www.geeksforgeeks.org/partitioning-a-linked-list-around-a-given-value-and-keeping-the-original-order/)
 
-**示例：**
+**示例**：
 
 ```
 Input :  3 -> 5 -> 10 -> 2 -> 8 -> 2 -> 1 

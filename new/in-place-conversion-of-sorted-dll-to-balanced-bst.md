@@ -2,7 +2,7 @@
 
 给定一个双向链接列表，该列表具有按升序排序的数据成员。 构造一个[平衡二进制搜索树](https://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced/)，该树的数据成员与给定的双链表相同。 该树必须就地构建（不应为树转换分配新节点）
 
-**示例：**
+**示例**：
 
 ```
 Input:  Doubly Linked List 1  2  3

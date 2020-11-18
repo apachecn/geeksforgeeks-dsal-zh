@@ -407,11 +407,11 @@ Level 3: 12 17 25
 
 ```
 
-**注意：**节点的级别是随机决定的，因此输出可能会有所不同。
+**注意**：节点的级别是随机决定的，因此输出可能会有所不同。
 
-**时间复杂度（平均）：** ![O(log n)](img/faf744094bdbb5a5e71a14a9644af0c5.png "Rendered by QuickLaTeX.com")
+**时间复杂度（平均）**：![O(log n)](img/faf744094bdbb5a5e71a14a9644af0c5.png "Rendered by QuickLaTeX.com")
 
-**时间复杂度（最差）：** ![O(n)](img/d5229a9c6f59029cbbb0f53974c9a9de.png "Rendered by QuickLaTeX.com")
+**时间复杂度（最差）**：![O(n)](img/d5229a9c6f59029cbbb0f53974c9a9de.png "Rendered by QuickLaTeX.com")
 
 在下一篇文章中，我们将讨论跳过中的搜索和删除 清单。
 

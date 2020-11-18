@@ -692,7 +692,7 @@ using System;
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Merged Linked List is: 

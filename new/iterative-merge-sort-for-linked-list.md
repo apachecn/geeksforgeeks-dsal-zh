@@ -615,9 +615,9 @@ public static void Main(String []args)
 
 ```
 
-**时间复杂度：** O（n Log n）
+**时间复杂度**：O（n Log n）
 
-**辅助空间：**`O(1)`
+**辅助空间**：`O(1)`
 
 
 

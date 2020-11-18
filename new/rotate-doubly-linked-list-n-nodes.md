@@ -10,7 +10,7 @@ N = 2
 
 ![](img/1dc88401495c26072bae0563c47cdfa3.png)
 
-**示例：**
+**示例**：
 
 ```
 Input : a  b  c  d  e  N = 2

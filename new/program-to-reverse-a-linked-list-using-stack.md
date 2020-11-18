@@ -4,7 +4,7 @@
 
 给定一个链表。 任务是使用辅助堆栈反转链表元素的顺序。
 
-**示例：**
+**示例**：
 
 ```
 Input : List = 3 -> 2 -> 1
@@ -381,7 +381,7 @@ public static void Main(String[] args) 
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
 我们可以使用`O(1)`辅助空间反转链表。 请参阅[更多方法来反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)。
 

@@ -4,7 +4,7 @@
 
 给定具有优先级的节点，请使用双向链表实现优先级队列。
 
-**前提条件：** [优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
+**前提条件**：[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
 
 **Operations on Priority Queue :**
 
@@ -14,7 +14,7 @@
 
 *   peek（）/ top（）：此函数用于获取队列中优先级最低的元素，而不将其从队列中删除。
 
-**方法：**
+**方法**：
 
 1.创建一个双向链接列表，其中包含字段 info（保存节点的信息），优先级（保存节点的优先级），prev（指向上一个节点），next（ 指向下一个节点）。
 
@@ -384,11 +384,11 @@ public static void Main(string[] args)
 
 ```
 
-**相关文章：**
+**相关文章**：
 
 [使用单链接列表](https://www.geeksforgeeks.org/priority-queue-using-linked-list/)的优先级队列
 
-**时间复杂度以及与[二元堆](https://www.geeksforgeeks.org/binary-heap/)：**的比较
+**时间复杂度以及与[二元堆](https://www.geeksforgeeks.org/binary-heap/)**：的比较
 
 ```
                peek()    push()    pop()

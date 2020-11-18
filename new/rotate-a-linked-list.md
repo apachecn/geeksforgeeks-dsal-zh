@@ -591,7 +591,7 @@ public class LinkedList {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Given linked list

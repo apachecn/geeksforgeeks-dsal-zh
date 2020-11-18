@@ -4,7 +4,7 @@
 
 可以假定链接列表中的所有键都是不同的。
 
-**范例：**
+**范例**：
 
 ```
 Input:  10->15->12->13->20->14,  x = 12, y = 20
@@ -611,7 +611,7 @@ public class LinkedList 
 
 ```
 
-**输出：**
+**输出**：
 
 ```
  Linked list before calling swapNodes() 1 2 3 4 5 6 7
@@ -619,7 +619,7 @@ public class LinkedList 
 
 ```
 
-**优化：**可以优化以上代码以单遍遍搜索 x 和 y。 两个循环用于使程序保持简单。
+**优化**：可以优化以上代码以单遍遍搜索 x 和 y。 两个循环用于使程序保持简单。
 
 **更简单的方法–**
 
@@ -1069,7 +1069,7 @@ class GFG
 
 ```
 
-**输出：**
+**输出**：
 
 ```
  Linked list before calling swapNodes() 1 2 3 4 5 6 7

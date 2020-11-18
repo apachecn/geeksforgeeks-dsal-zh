@@ -2,15 +2,15 @@
 
 给定一个单链表和一个整数 **K** ，任务是反转给定链表的每个 **K** 个节点。
 
-**范例：**
+**范例**：
 
-> **输入：** 1-> 2-> 3-> 4-> 5-> 6-> 7-> 8-> NULL， K = 3
-> **输出：** 3 2 1 6 5 4 8 7
+> **输入**：1-> 2-> 3-> 4-> 5-> 6-> 7-> 8-> NULL， K = 3
+> **输出**：3 2 1 6 5 4 8 7
 > 
-> **输入：** 1-> 2-> 3-> 4-> 5-> 6-> 7-> 8-> NULL， K = 5
-> **输出：** 5 4 3 2 1 8 7 6
+> **输入**：1-> 2-> 3-> 4-> 5-> 6-> 7-> 8-> NULL， K = 5
+> **输出**：5 4 3 2 1 8 7 6
 
-**方法：**本文的 [Set 1](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/) 和 [Set 2](https://www.geeksforgeeks.org/reverse-linked-list-groups-given-size-set-2/) 中讨论了两种解决此问题的方法。 在本文中，将讨论基于 [deque](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/) 的方法。
+**方法**：本文的 [Set 1](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/) 和 [Set 2](https://www.geeksforgeeks.org/reverse-linked-list-groups-given-size-set-2/) 中讨论了两种解决此问题的方法。 在本文中，将讨论基于 [deque](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/) 的方法。
 
 1.  创建一个羽绒。
 

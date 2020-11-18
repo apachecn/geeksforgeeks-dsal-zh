@@ -19,7 +19,7 @@ Output : Odd
 
 **方法 2：一次步进 2 个节点**
 
-**方法：**
+**方法**：
 
 ```
 1\. Take a pointer and move that pointer two nodes at a time
@@ -417,16 +417,16 @@ public static void Main() 
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Odd
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
-**空间复杂度：**`O(1)`
+**空间复杂度**：`O(1)`
 
 本文由 [**Sahil Rajput**](https://www.linkedin.com/in/sahil-rajput-3ba2b3134/) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

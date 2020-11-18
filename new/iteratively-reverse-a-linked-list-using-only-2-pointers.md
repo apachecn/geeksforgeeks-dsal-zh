@@ -192,11 +192,11 @@ Reversed Linked list
 
 时间复杂度：`O(n)`
 
-<u>**参考：**</u>
+<u>**参考**：</u>
 
 [http://discuss.joelonsoftware.com/default.asp?interview.11.564944.16](http://discuss.joelonsoftware.com/default.asp?interview.11.564944.16)
 
- **替代解决方案：**
+ **替代解决方案**：
 
 ## C++
 

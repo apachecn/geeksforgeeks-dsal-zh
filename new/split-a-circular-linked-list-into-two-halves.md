@@ -621,7 +621,7 @@ class GFG
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Original Circular Linked List

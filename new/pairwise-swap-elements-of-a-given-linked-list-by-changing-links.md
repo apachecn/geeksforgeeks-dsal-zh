@@ -431,7 +431,7 @@ public class LinkedList {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
  Linked list before calling  pairWiseSwap() 1 2 3 4 5 6 7
@@ -815,7 +815,7 @@ public class LinkedList {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
  Linked list before calling  pairWiseSwap() 1 2 3 4 5 6 7

@@ -4,11 +4,11 @@
 
 给定一个[循环链表](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)交换第一个和最后一个节点。 该任务仅应在一个额外的节点上完成，您不能声明一个以上的额外节点，也不允许您声明任何其他临时变量。
 
-**注意：**额外节点表示需要一个节点来遍历列表。
+**注意**：额外节点表示需要一个节点来遍历列表。
 
 ![https://media.geeksforgeeks.org/wp-content/uploads/Capturehgh.png](img/cc9cbfc0a14fc45b0dc42199595751ea.png)
 
-**示例：**，
+**示例**：，
 
 ```
 Input : 5 4 3 2 1
@@ -491,7 +491,7 @@ public class GFG
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 List Before: 6 1 2 3 4 5 

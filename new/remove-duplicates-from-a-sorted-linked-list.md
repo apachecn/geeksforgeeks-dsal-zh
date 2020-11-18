@@ -4,11 +4,11 @@
 
 例如，如果链接列表是 11- > 11- > 11- > 21- > 43- > 43- > 60，则 removeDuplicates（）应该将列表转换为 11- > 21- > 43- > 60。
 
-**算法：**
+**算法**：
 
 从头（或起始）节点遍历列表。 遍历时，将每个节点与其下一个节点进行比较。 如果下一个节点的数据与当前节点相同，则删除下一个节点。 在删除节点之前，我们需要存储该节点的下一个指针
 
-**实现：**
+**实现**：
 
 除了 removeDuplicates（）之外的其他功能仅用于创建链接链表并测试 removeDuplicates（）。
 
@@ -532,9 +532,9 @@ Linked list after duplicate removal  11 13 20
 
 ```
 
-**时间复杂度：**`O(n)`，其中 n 是给定链接列表中的节点数。
+**时间复杂度**：`O(n)`，其中 n 是给定链接列表中的节点数。
 
-**递归方法：** [
+**递归方法**：[
 
 ## C++
 
@@ -1082,7 +1082,7 @@ Linked list after duplicate removal  11 13 20
 
 ```
 
-**另一种方法：**创建一个指向每个元素的第一个出现的指针和另一个将迭代到每个元素的 temp 指针，并且当前一个指针的值不等于 temp 指针时，我们将 将前一个指针的指针设置为另一个节点的第一个匹配项。
+**另一种方法**：创建一个指向每个元素的第一个出现的指针和另一个将迭代到每个元素的 temp 指针，并且当前一个指针的值不等于 temp 指针时，我们将 将前一个指针的指针设置为另一个节点的第一个匹配项。
 
 下面是上述方法的实现：
 
@@ -1208,11 +1208,11 @@ List after removal of elements
 
 ```
 
-**相关文章：**
+**相关文章**：
 
 [从排序的链接列表中删除所有重复项](https://www.geeksforgeeks.org/remove-occurrences-duplicates-sorted-linked-list/)
 
-**参考：**
+**参考**：
 
 [cslibrary.stanford.edu /105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 

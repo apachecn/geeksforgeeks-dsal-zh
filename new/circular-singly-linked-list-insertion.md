@@ -743,7 +743,7 @@ public static void Main(String[] args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 2 4 6 8 10 12 

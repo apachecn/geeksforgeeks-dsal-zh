@@ -4,7 +4,7 @@
 
 注意，问题仅在于打印反面。 要反转列表本身，请参阅[，](https://www.geeksforgeeks.org/reverse-a-linked-list/)，
 
-**难度级别：**新秀
+**难度级别**：新秀
 
 ![reverse-a-link-list](img/2887a61ccc887b8c68af722f22f72ab8.png)
 
@@ -17,7 +17,7 @@ printReverse(head)
 
 ```
 
-**实施：**
+**实施**：
 
 ## C++
 
@@ -334,14 +334,14 @@ public class LinkedList
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 4 3 2 1
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
 如果发现不正确的内容，或者想分享有关上述主题的更多信息，请写评论。
 

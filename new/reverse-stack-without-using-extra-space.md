@@ -2,7 +2,7 @@
 
 在不使用递归和多余空间的情况下反转[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)。 甚至连功能堆栈都不允许。
 
-**示例：**
+**示例**：
 
 ```
 Input : 1->2->3->4

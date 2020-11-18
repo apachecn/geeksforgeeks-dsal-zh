@@ -4,7 +4,7 @@
 
 给定一个已排序的链表，删除所有具有重复编号（所有出现次数）的节点，仅保留在原始列表中仅出现一次的编号。
 
-**范例：**
+**范例**：
 
 ```
 Input : 23->28->28->35->49->49->53->53
@@ -471,7 +471,7 @@ public class LinkedList
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 List before removal of duplicates
@@ -481,7 +481,7 @@ List after removal of duplicates
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
 本文由 **Saloni Baweja** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

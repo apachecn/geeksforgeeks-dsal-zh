@@ -585,7 +585,7 @@ public class LinkedList {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Linked List after removing loop 
@@ -1184,7 +1184,7 @@ public class LinkedList {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Linked List after removing loop 
@@ -1610,7 +1610,7 @@ public class LinkedList {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Linked List after removing loop 

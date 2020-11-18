@@ -4,15 +4,15 @@
 
 给定一个包含 N 个节点的双链表，任务是从列表中删除所有素数的节点。
 
-**示例：**
+**示例**：
 
-> **输入：**列表= 15 < = > 16 < = > 6 < = > 7 < = > 17
-> **输出 ：**最终列表= 15 < = > 16 < = > 6
+> **输入**：列表= 15 < = > 16 < = > 6 < = > 7 < = > 17
+> **输出 **：最终列表= 15 < = > 16 < = > 6
 > 
-> **输入：**列表= 5 < = > 3 < = > 4 < = > 2 < = > 9
-> **输出 ：**最终列表= 5 < = > 4 < = > 9
+> **输入**：列表= 5 < = > 3 < = > 4 < = > 2 < = > 9
+> **输出 **：最终列表= 5 < = > 4 < = > 9
 
-**方法：**想法是一次遍历双向链表的节点，并获得素数为的节点[的指针。 遵循](https://www.geeksforgeeks.org/primality-test-set-1-introduction-and-school-method/)此[中使用的方法删除那些节点。](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
+**方法**：想法是一次遍历双向链表的节点，并获得素数为的节点[的指针。 遵循](https://www.geeksforgeeks.org/primality-test-set-1-introduction-and-school-method/)此[中使用的方法删除那些节点。](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
 
 以下是上述想法的实现：
 
@@ -602,7 +602,7 @@ Modified List: 15 16 6
 
 ```
 
-**时间复杂度：**`O(n)`，其中 N 是节点总数。
+**时间复杂度**：`O(n)`，其中 N 是节点总数。
 
 
 

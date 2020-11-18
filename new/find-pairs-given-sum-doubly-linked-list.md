@@ -4,7 +4,7 @@
 
 给定一个排序的正相异元素的双链表，任务是在双链表中查找对，它们的总和等于给定值 x，而不使用任何多余的空间？
 
-**例如：**
+**例如**：
 
 ```
 Input : head : 1 <-> 2 <-> 4 <-> 5 <-> 6 <-> 8 <-> 9
@@ -350,9 +350,9 @@ class GFG 
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
-**辅助空间：**`O(1)`
+**辅助空间**：`O(1)`
 
 如果未对链接列表进行排序，那么我们可以将列表作为第一步进行排序。 但是在那种情况下，整体时间复杂度将变为 O（n Log n）。 如果没有多余的空间，我们可以在这种情况下使用哈希。 基于哈希的解决方案与方法 2 [在此处](https://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/)相同。
 

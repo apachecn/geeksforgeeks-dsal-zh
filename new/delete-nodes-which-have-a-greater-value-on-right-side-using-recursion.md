@@ -4,7 +4,7 @@
 
 给定一个单链列表，请删除右侧所有具有较大值的所有节点。
 
-**示例：**
+**示例**：
 
 **a）**列表 12- > 15- > 10- > 11- > 5- > 6- > 2- > 3- > NULL 应更改为 15- > 11- > 6- > 3- > NULL。 请注意，已删除 12、10、5 和 2，因为右侧的值更大。
 
@@ -18,7 +18,7 @@
 
 **c）**列表 60- > 50- > 40- > 30- > 20- > 10- > NULL 不应更改。
 
-**方法：**我们已经通过使用 2 个循环并反转帖子中的链接列表来解决此问题[删除右侧具有较大值的节点](https://www.geeksforgeeks.org/delete-nodes-which-have-a-greater-value-on-right-side/)
+**方法**：我们已经通过使用 2 个循环并反转帖子中的链接列表来解决此问题[删除右侧具有较大值的节点](https://www.geeksforgeeks.org/delete-nodes-which-have-a-greater-value-on-right-side/)
 
 在这里，我们将讨论解决方案，而无需反转列表。 我们将使用递归来解决此问题，其中基本情况是当头部指向 NULL 时。 否则，如果 currentNode-> data> currentMax，我们将递归调用下一个节点的函数并更新最大值。 这样，整个列表将被更新。
 

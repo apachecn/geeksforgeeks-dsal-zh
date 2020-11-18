@@ -586,7 +586,7 @@ Linked list after deletion is :
 1 2 6 7
 ```
 
-**时间复杂度：**`O(n)`，其中 n 是链表中的节点数。
+**时间复杂度**：`O(n)`，其中 n 是链表中的节点数。
 
 本文由 [**Chandra Prakash**](https://www.facebook.com/chandra.prakash.52643) 贡献。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

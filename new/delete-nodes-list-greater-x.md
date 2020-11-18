@@ -15,9 +15,9 @@ Output : 1->7->3->7
 
 ```
 
-**来源：** [Microsoft 面试经验| 设定 169。](https://www.geeksforgeeks.org/microsoft-interview-experience-set-169/)
+**来源**：[Microsoft 面试经验| 设定 169。](https://www.geeksforgeeks.org/microsoft-interview-experience-set-169/)
 
-**方法：**这主要是帖子的一种变体，其中[删除了首次出现的给定密钥。](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)
+**方法**：这主要是帖子的一种变体，其中[删除了首次出现的给定密钥。](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)
 
 我们需要首先检查头节点上所有大于“ x”的事件，将其删除并适当地更改头节点。 然后，我们需要检查循环中所有出现的事件，并将它们一一删除。
 

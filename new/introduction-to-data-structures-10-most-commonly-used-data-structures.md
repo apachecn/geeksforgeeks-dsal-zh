@@ -18,13 +18,13 @@
 
     主要在堆栈中执行以下三个基本操作：
 
-    *   **推入：**在堆栈中添加一个项目。 如果堆栈已满，则称其为溢出条件。
+    *   **推入**：在堆栈中添加一个项目。 如果堆栈已满，则称其为溢出条件。
 
-    *   **弹出：**从堆栈中删除一个项目。 这些项目以推入的相反顺序弹出。 如果堆栈为空，则称其为下溢条件。
+    *   **弹出**：从堆栈中删除一个项目。 这些项目以推入的相反顺序弹出。 如果堆栈为空，则称其为下溢条件。
 
-    *   **窥视或顶部：**返回堆栈的顶部元素。
+    *   **窥视或顶部**：返回堆栈的顶部元素。
 
-    *   **isEmpty：**如果堆栈为空，则返回 true，否则返回 false。
+    *   **isEmpty**：如果堆栈为空，则返回 true，否则返回 false。
 
 4.  **[Queue](http://www.geeksforgeeks.org/queue-data-structure/):** Like Stack, Queue is a linear structure which follows a particular order in which the operations are performed. The order is First In First Out (FIFO). A good example of the queue is any queue of consumers for a resource where the consumer that came first is served first. The difference between stacks and queues is in removing. In a stack we remove the item the most recently added; in a queue, we remove the item the least recently added.
 
@@ -32,13 +32,13 @@
 
     主要在队列上执行以下四个基本操作：
 
-    *   **排队：**将项目添加到队列。 如果队列已满，则称其为溢出条件。
+    *   **排队**：将项目添加到队列。 如果队列已满，则称其为溢出条件。
 
-    *   **出队：**从队列中删除项目。 这些项目会以与推送相同的顺序弹出。 如果队列为空，则称其为下溢条件。
+    *   **出队**：从队列中删除项目。 这些项目会以与推送相同的顺序弹出。 如果队列为空，则称其为下溢条件。
 
-    *   **前：**从队列中获取前一项。
+    *   **前**：从队列中获取前一项。
 
-    *   **背面：**从队列中获取最后一个项目。
+    *   **背面**：从队列中获取最后一个项目。
 
 5.  **[Binary Tree](https://www.geeksforgeeks.org/binary-tree-data-structure/):** Unlike Arrays, Linked Lists, Stack and queues, which are linear data structures, trees are hierarchical data structures. A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. It is implemented mainly using Links.
 
@@ -60,9 +60,9 @@
 
 7.  **[Heap](https://www.geeksforgeeks.org/heap-data-structure/):** A Heap is a special Tree-based data structure in which the tree is a complete binary tree. Generally, Heaps can be of two types:
 
-    *   **最大堆：**在最大堆中，根节点上存在的密钥必须在所有子节点上存在的密钥中最大。 对于该二叉树中的所有子树，相同的属性必须递归地为 true。
+    *   **最大堆**：在最大堆中，根节点上存在的密钥必须在所有子节点上存在的密钥中最大。 对于该二叉树中的所有子树，相同的属性必须递归地为 true。
 
-    *   **最小堆：**在最小堆中，根节点上存在的密钥必须在所有子节点上存在的密钥中最小。 对于该二叉树中的所有子树，相同的属性必须递归地为 true。
+    *   **最小堆**：在最小堆中，根节点上存在的密钥必须在所有子节点上存在的密钥中最小。 对于该二叉树中的所有子树，相同的属性必须递归地为 true。
 
     [![](img/ac0bc46083007c09b8f9b69ec3fe28bf.png)](https://www.geeksforgeeks.org/heap-data-structure/)
 

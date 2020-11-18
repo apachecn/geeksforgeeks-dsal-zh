@@ -580,7 +580,7 @@ bool isSumSorted(LinkedList la, LinkedList lb, 
 Triplet Found: 15 2 8
 ```
 
-**时间复杂度：**链接列表 b 和 c 可以使用合并排序以 O（nLogn）时间排序（请参阅[此](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)）。 步骤 2 花费 O（n * n）时间。 因此，总体时间复杂度为 O（nlogn）+ O（nlogn）+ O（n * n）= O（n * n）。
+**时间复杂度**：链接列表 b 和 c 可以使用合并排序以 O（nLogn）时间排序（请参阅[此](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)）。 步骤 2 花费 O（n * n）时间。 因此，总体时间复杂度为 O（nlogn）+ O（nlogn）+ O（n * n）= O（n * n）。
 
 在这种方法中，链接列表 b 和 c 首先被排序，因此它们的原始顺序将丢失。 如果我们要保留 b 和 c 的原始顺序，则可以创建 b 和 c 的副本。
 

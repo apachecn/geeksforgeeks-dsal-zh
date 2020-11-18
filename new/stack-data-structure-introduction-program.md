@@ -4,11 +4,11 @@
 
 主要在堆栈中执行以下三个基本操作：
 
-*   **推入：**在堆栈中添加一个项目。 如果堆栈已满，则称其为溢出条件。
+*   **推入**：在堆栈中添加一个项目。 如果堆栈已满，则称其为溢出条件。
 
-*   **弹出：**从堆栈中删除一个项目。 这些项目以推入的相反顺序弹出。 如果堆栈为空，则称其为下溢条件。
+*   **弹出**：从堆栈中删除一个项目。 这些项目以推入的相反顺序弹出。 如果堆栈为空，则称其为下溢条件。
 
-*   **窥视或顶部：**返回堆栈的顶部元素。
+*   **窥视或顶部**：返回堆栈的顶部元素。
 
 *   **isEmpty:** Returns true if stack is empty, else false.
 
@@ -18,11 +18,11 @@
 
 有很多现实生活中的例子。 考虑一下在食堂中相互堆叠的盘子的简单示例。 位于顶部的板是第一个要卸下的板，即已放置在最底部位置的板在堆栈中保留的时间最长。 因此，可以简单地看出它遵循 LIFO / FILO 命令。
 
-**堆栈上操作的时间复杂度：**
+**堆栈上操作的时间复杂度**：
 
 push（），pop（），isEmpty（）和 peek（）都需要`O(1)`时间。 在任何这些操作中，我们都不会运行任何循环。
 
-**堆栈的应用：**
+**堆栈的应用**：
 
 *   [符号平衡](https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/)
 
@@ -38,7 +38,7 @@ push（），pop（），isEmpty（）和 peek（）都需要`O(1)`时间。 在
 
 *   在图算法中，例如[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)和[强连接的组件](https://www.geeksforgeeks.org/strongly-connected-components/)
 
-**实现：**
+**实现**：
 
 有两种实现堆栈的方法：
 
@@ -412,11 +412,11 @@ class Program {
 
 ```
 
-**优点：**易于实现。 内存被保存，因为不涉及指针。
+**优点**：易于实现。 内存被保存，因为不涉及指针。
 
-**缺点：**它不是动态的。 它不会根据运行时的需要而增长和收缩。
+**缺点**：它不是动态的。 它不会根据运行时的需要而增长和收缩。
 
-**输出：**
+**输出**：
 
 ```
 10 pushed into stack
@@ -813,9 +813,9 @@ public class StackAsLinkedList {
 Top element is 20
 ```
 
-**优点：**堆栈的链表实现可以在运行时根据需要进行扩展和收缩。
+**优点**：堆栈的链表实现可以在运行时根据需要进行扩展和收缩。
 
-**缺点：**由于涉及指针，因此需要额外的内存。
+**缺点**：由于涉及指针，因此需要额外的内存。
 
 我们将在单独的文章中介绍 stack 应用程序的实现。
 
@@ -823,7 +823,7 @@ Top element is 20
 
 **测验**：[堆栈问题](http://quiz.geeksforgeeks.org/data-structure/stack/)
 
-**参考：**
+**参考**：
 
 [http://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29#Problem_Description](http://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29#Problem_Description)
 

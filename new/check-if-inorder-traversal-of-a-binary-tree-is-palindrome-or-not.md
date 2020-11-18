@@ -2,21 +2,21 @@
 
 给定[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)和任务，以检查其[有序序列](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)是否是回文。
 
-**示例：**
+**示例**：
 
-> **输入：**
+> **输入**：
 > ![](img/38794aac18f0127ecf2abcd9bdda2a98.png)
-> **输出：** True
-> **说明：**
+> **输出**：True
+> **说明**：
 > 树的顺序为“ bbaaabb” 这是回文字符串。
 > 
-> **输入：**
+> **输入**：
 > ![](img/787020686d40d89902c5e489a8572ccb.png)
-> **输出：**错误
-> **说明：**
+> **输出**：错误
+> **说明**：
 > 树的顺序为“ bbdaabb” 这不是回文字符串。
 
-**方法：**
+**方法**：
 
 要解决此问题，请参考以下步骤：
 
@@ -464,9 +464,9 @@ True
 
 ```
 
-***时间复杂度：**`O(n)`
+***时间复杂度**：`O(n)`
 
-**辅助空间：**`O(1)`*
+**辅助空间**：`O(1)`*
 
 
 

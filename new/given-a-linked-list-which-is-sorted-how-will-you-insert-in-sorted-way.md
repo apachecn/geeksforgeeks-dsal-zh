@@ -10,7 +10,7 @@
 
 ![UpdatedSortedLinked List](img/c431502d296d8d30fff5dfb1be090fc2.png "UpdatedSortedLinked List")后的链接列表
 
-**算法：**
+**算法**：
 
 让输入的链表按升序排序。
 
@@ -32,7 +32,7 @@ appropriate node (7).
 
 ```
 
-**实施：**
+**实施**：
 
 ## C++
 
@@ -499,17 +499,17 @@ Created Linked List
 1 3 5 7 9 10 
 ```
 
-**复杂度分析：**
+**复杂度分析**：
 
-*   **时间复杂度：**`O(n)`。
+*   **时间复杂度**：`O(n)`。
 
     仅需要遍历列表之一。
 
-*   **辅助空间：**`O(1)`。
+*   **辅助空间**：`O(1)`。
 
     不需要多余的空间。
 
-**使用双指针的更短实现：**
+**使用双指针的更短实现**：
 
 感谢 **Murat M Ozturk** 提供此解决方案。 有关完整的功能，请参见下面的 Murat M Ozturk 的评论。 该代码使用双指针来跟踪上一个节点的下一个指针（在该节点之后插入新节点）。
 
@@ -533,7 +533,7 @@ Created Linked List
 
 ```
 
-**时间复杂度：**`O(n)`
+**时间复杂度**：`O(n)`
 
-**参考：** [http://cslibrary.stanford.edu/105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
+**参考**：[http://cslibrary.stanford.edu/105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 

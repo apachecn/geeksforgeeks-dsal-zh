@@ -2,7 +2,7 @@
 
 n 人围成一圈等待执行。 计数从圆的某个点开始，然后沿固定的方向围绕圆进行。 在每个步骤中，将跳过一定数量的人员，然后执行下一个人员。 消灭在圈中进行（随着被处决者的撤离，圈越来越小），直到只有最后一个剩下的人被赋予了自由。 给定总人数 n 和人数 m，表示跳过 m-1 人，第 m 人被杀。 任务是选择初始圈子中的位置，以便您成为最后一个幸存者，从而生存下来。
 
-**示例：**
+**示例**：
 
 ```
 Input : Length of circle : n = 4
@@ -242,14 +242,14 @@ public class GFG { 
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Last person left standing (Josephus Position) is 13
 
 ```
 
-**时间复杂度：** O（m * n）
+**时间复杂度**：O（m * n）
 
 本文由 **Raghav Sharma** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

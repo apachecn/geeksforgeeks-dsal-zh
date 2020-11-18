@@ -1,36 +1,36 @@
 # C++ STL 中的堆栈列表
 
-**先决条件：** [列表](https://www.geeksforgeeks.org/list-cpp-stl/)，[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)
+**先决条件**：[列表](https://www.geeksforgeeks.org/list-cpp-stl/)，[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)
 
 **列表**是允许[非连续内存分配](https://www.geeksforgeeks.org/non-contiguous-allocation-in-operating-system/)的序列容器。 与[矢量](http://www.geeksforgeeks.org/vector-in-cpp-stl/)相比，列表的遍历速度较慢，但​​是一旦找到位置，插入和删除速度就会很快。
 
-**语法：**
+**语法**：
 
 > 列表<类型> name_of_list；
 
 [**堆栈**](http://www.geeksforgeeks.org/stack-data-structure/) 是一种容器适配器，具有的 LIFO（后进先出）类型，其中有一个新元素 在一端添加，并且（顶部）仅从该端删除元素。
 
-**语法：**
+**语法**：
 
 > 堆栈 <type>name_of_stack;</type>
 
 **堆栈列表**是具有一系列堆栈的容器的类型，这是一个二维容器，其中 **N** 行的列表和 **M** 列的堆栈 ，两个尺寸的大小都是不固定的。 可以使用 [迭代器](https://www.geeksforgeeks.org/iterators-c-stl/) 遍历和访问的。
 
-**语法：**
+**语法**：
 
 > 列表<stack>> name_of_container（size）;
 > ，尺寸可选</stack>
 
 [![](img/613ddcac41d3b7f794d44f0223b1d831.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200928102759/ListofStacks.jpg)
 
-**示例：**
+**示例**：
 
 > 列表<stack>> ls（10）;
 > 堆栈列表的大小为 10</stack>
 
-**<u>插入</u>：** [使用 **push（）**函数完成堆栈列表](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)的插入。
+**<u>插入</u>**：[使用 **push（）**函数完成堆栈列表](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)的插入。
 
-**示例：**
+**示例**：
 
 ## C++
 
@@ -49,7 +49,7 @@ ls.push_back(s);
 
 ```
 
-**<u>遍历</u>：** [使用](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)[迭代器](https://www.geeksforgeeks.org/iterators-c-stl/)进行堆栈列表中的遍历。
+**<u>遍历</u>**：[使用](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)[迭代器](https://www.geeksforgeeks.org/iterators-c-stl/)进行堆栈列表中的遍历。
 
 ## C++
 

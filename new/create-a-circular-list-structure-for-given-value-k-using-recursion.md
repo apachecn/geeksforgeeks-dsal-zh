@@ -10,7 +10,7 @@
 
 ![](img/b7b2f0b6093d41ddc7ff7b2e6c2fe9d7.png)
 
-**示例：**
+**示例**：
 
 ```
 Input: k = 3
@@ -22,7 +22,7 @@ The structure will look like below
 
 ```
 
-**方法：**
+**方法**：
 
 逐步执行以下步骤：
 

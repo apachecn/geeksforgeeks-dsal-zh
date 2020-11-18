@@ -2,7 +2,7 @@
 
 给定一个包含 **N 个**节点和正整数 **k** 的链表应小于或等于 N。任务是打印该节点的最后 **k** 个节点。 以相反的顺序列出。
 
-**示例：**
+**示例**：
 
 ```
 Input: list: 1->2->3->4->5, k = 2                       
@@ -13,9 +13,9 @@ Output: 8 2 12 9
 
 ```
 
-**来源：** [校园外 Amazon Interview Experience SDE](https://www.geeksforgeeks.org/amazon-interview-experience-sde-off-campus/) 。
+**来源**：[校园外 Amazon Interview Experience SDE](https://www.geeksforgeeks.org/amazon-interview-experience-sde-off-campus/) 。
 
-**递归方法：**递归遍历链表。 从每个递归调用返回时，请跟踪节点编号，将最后一个节点视为编号 1，将倒数第二个节点视为编号 2，依此类推。 可以借助全局变量或指针变量来跟踪此计数。 借助此 count 变量，打印节点号小于或等于 **k** 的节点。
+**递归方法**：递归遍历链表。 从每个递归调用返回时，请跟踪节点编号，将最后一个节点视为编号 1，将倒数第二个节点视为编号 2，依此类推。 可以借助全局变量或指针变量来跟踪此计数。 借助此 count 变量，打印节点号小于或等于 **k** 的节点。
 
 下面是上述方法的实现：
 
@@ -319,15 +319,15 @@ public static void Main(String []args) 
 
 ```
 
-**时间复杂度：**`O(n)`。
+**时间复杂度**：`O(n)`。
 
-**迭代方法：**的想法是使用[堆栈数据结构](http://www.geeksforgeeks.org/stack-data-structure/)。
+**迭代方法**：的想法是使用[堆栈数据结构](http://www.geeksforgeeks.org/stack-data-structure/)。
 
 1.  将所有链接列表节点推入堆栈。
 
 2.  从堆栈中弹出 k 个节点并进行打印。
 
-**时间复杂度：**`O(n)`。
+**时间复杂度**：`O(n)`。
 
 **两指针方法**的想法类似于[从链接列表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾找到第 k 个节点。
 
@@ -339,7 +339,7 @@ public static void Main(String []args) 
 
 4.  最后使用第二个指针，打印最后 k 个节点。
 
-**时间复杂度：**`O(n)`。
+**时间复杂度**：`O(n)`。
 
 
 

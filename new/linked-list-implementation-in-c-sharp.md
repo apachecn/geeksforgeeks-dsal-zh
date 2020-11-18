@@ -8,7 +8,7 @@
 
 ![](img/05832e37b51df18c4a56d5611293b648.png)
 
-**要点：**
+**要点**：
 
 *   LinkedList 类实现了 *ICollection < T >* ， *IEnumerable < T >* ， *IReadOnlyCollection < T >* ， *ICollection* ， *IEnumerable* ， *IDeserializationCallback* 和*可序列化*接口。
 
@@ -30,37 +30,37 @@
 
 LinkedList 类具有 3 个用于创建 LinkedList 的构造函数，如下所示：
 
-*   **LinkedList（）：**此构造函数用于创建为空的 LinkedList 类的实例。
+*   **LinkedList（）**：此构造函数用于创建为空的 LinkedList 类的实例。
 
-*   **LinkedList（IEnumerable）：**此构造函数用于创建 LinkedList 类的实例，该实例包含从指定 IEnumerable 复制的元素，并具有足够的容量来容纳复制的元素数量。
+*   **LinkedList（IEnumerable）**：此构造函数用于创建 LinkedList 类的实例，该实例包含从指定 IEnumerable 复制的元素，并具有足够的容量来容纳复制的元素数量。
 
-*   **LinkedList（SerializationInfo，StreamingContext）：**此构造函数用于创建 LinkedList 类的实例，该实例可使用指定的 SerializationInfo 和 StreamingContext 进行序列化。
+*   **LinkedList（SerializationInfo，StreamingContext）**：此构造函数用于创建 LinkedList 类的实例，该实例可使用指定的 SerializationInfo 和 StreamingContext 进行序列化。
 
 让我们看看如何使用 *LinkedList（）*构造函数创建 LinkedList：
 
-**步骤 1：**借助关键字，在*的帮助下在程序中包含 *System.Collections.Generic* 命名空间：*
+**步骤 1**：借助关键字，在*的帮助下在程序中包含 *System.Collections.Generic* 命名空间：*
 
 ```
 using System.Collections.Generic;
 ```
 
-**步骤 2：**使用 LinkedList 类创建一个 LinkedList，如下所示：
+**步骤 2**：使用 LinkedList 类创建一个 LinkedList，如下所示：
 
 > LinkedList <type_of_linkedlist>linkedlist_name = new LinkedList <type_of_linkedlist>（）;</type_of_linkedlist></type_of_linkedlist>
 
-**步骤 3：** LinkedList 提供 4 种不同的方法来添加节点，这些方法是：
+**步骤 3**：LinkedList 提供 4 种不同的方法来添加节点，这些方法是：
 
-*   **AddAfter：**此方法用于在 LinkedList 中的现有节点之后添加新节点或值。
+*   **AddAfter**：此方法用于在 LinkedList 中的现有节点之后添加新节点或值。
 
-*   **AddBefore：**此方法用于在 LinkedList 中的现有节点之前添加新节点或值。
+*   **AddBefore**：此方法用于在 LinkedList 中的现有节点之前添加新节点或值。
 
-*   **[AddFirst](https://www.geeksforgeeks.org/c-adding-new-node-or-value-at-the-start-of-linkedlistt/) ：**此方法用于在 LinkedList 的开始处添加新的节点或值。
+*   **[AddFirst](https://www.geeksforgeeks.org/c-adding-new-node-or-value-at-the-start-of-linkedlistt/) **：此方法用于在 LinkedList 的开始处添加新的节点或值。
 
-*   **[AddLast](https://www.geeksforgeeks.org/c-adding-new-node-or-value-at-the-end-of-linkedlistt/) ：**此方法用于在 LinkedList 的末尾添加新节点或值。
+*   **[AddLast](https://www.geeksforgeeks.org/c-adding-new-node-or-value-at-the-end-of-linkedlistt/) **：此方法用于在 LinkedList 的末尾添加新节点或值。
 
-**步骤 4：**使用 foreach 循环或使用 for 循环访问 LinkedList 的元素。 如下例所示。
+**步骤 4**：使用 foreach 循环或使用 for 循环访问 LinkedList 的元素。 如下例所示。
 
-**示例：**
+**示例**：
 
 ```
 
@@ -118,17 +118,17 @@ Zoya
 
 在 LinkedList 中，允许从 LinkedList 中删除元素。 LinkedList <t>类提供 5 种不同的方法来删除元素，这些方法是：</t>
 
-*   **[Clear（）](https://www.geeksforgeeks.org/c-removing-all-nodes-from-linkedlistt/)：**此方法用于从 LinkedList 中删除所有节点。
+*   **[Clear（）](https://www.geeksforgeeks.org/c-removing-all-nodes-from-linkedlistt/)**：此方法用于从 LinkedList 中删除所有节点。
 
-*   **[Remove（LinkedListNode）](https://www.geeksforgeeks.org/c-removing-the-specified-node-from-the-linkedlistt/)：**此方法用于从 LinkedList 中删除指定的节点。
+*   **[Remove（LinkedListNode）](https://www.geeksforgeeks.org/c-removing-the-specified-node-from-the-linkedlistt/)**：此方法用于从 LinkedList 中删除指定的节点。
 
-*   **[Remove（T）](https://www.geeksforgeeks.org/c-removing-first-occurrence-of-specified-value-from-linkedlistt/)：**此方法用于从 LinkedList 中删除第一次出现的指定值。
+*   **[Remove（T）](https://www.geeksforgeeks.org/c-removing-first-occurrence-of-specified-value-from-linkedlistt/)**：此方法用于从 LinkedList 中删除第一次出现的指定值。
 
-*   **[RemoveFirst（）](https://www.geeksforgeeks.org/c-removing-the-node-at-the-start-of-the-linkedlistt/)：**此方法用于删除 LinkedList 开始处的节点。
+*   **[RemoveFirst（）](https://www.geeksforgeeks.org/c-removing-the-node-at-the-start-of-the-linkedlistt/)**：此方法用于删除 LinkedList 开始处的节点。
 
-*   **[RemoveLast（）](https://www.geeksforgeeks.org/c-removing-the-node-at-the-start-of-the-linkedlistt/)：**此方法用于删除 LinkedList 末尾的节点。
+*   **[RemoveLast（）](https://www.geeksforgeeks.org/c-removing-the-node-at-the-start-of-the-linkedlistt/)**：此方法用于删除 LinkedList 末尾的节点。
 
-**示例：**
+**示例**：
 
 ```
 
@@ -257,7 +257,7 @@ Number of students: 0
 
 在 LinkedList 中，可以使用 [Contains（T）](https://www.geeksforgeeks.org/c-check-if-a-value-is-in-linkedlistt/)方法检查给定值是否存在。 此方法用于确定值是否在 LinkedList 中。
 
-**示例：**
+**示例**：
 
 ```
 

@@ -27,15 +27,15 @@ erase()    : Deletes all the elements from Deque.
 
 ![](img/4210693cb20e75e33f593bcd98f67900.png)
 
-**双端队列的双联列表表示形式：**
+**双端队列的双联列表表示形式**：
 
 为了实现双端队列，我们​​需要跟踪两个指针，即**前**和**后置**。 我们将**从队列的后端或前端放入（推送）**，将**从后端和前端从队列中弹出（弹出）**。
 
-**工作：**
+**工作**：
 
 声明类型为**节点**的两个指针**前**和**后**，其中**节点**代表结构 双链表的节点的名称。 用值 NULL 初始化它们两个。
 
-**插入前端：**
+**插入前端**：
 
 ```
 1\. Allocate space for a newNode of doubly linked list.
@@ -51,7 +51,7 @@ erase()    : Deletes all the elements from Deque.
 
 ```
 
-**插入后端：**
+**插入后端**：
 
 ```
 1\. Allocate space for a newNode of doubly linked list.
@@ -67,7 +67,7 @@ erase()    : Deletes all the elements from Deque.
 
 ```
 
-**从前端删除：**
+**从前端删除**：
 
 ```
 1\. IF front == NULL
@@ -83,7 +83,7 @@ erase()    : Deletes all the elements from Deque.
 
 ```
 
-**从后端删除：**
+**从后端删除**：
 
 ```
 1\. IF front == NULL

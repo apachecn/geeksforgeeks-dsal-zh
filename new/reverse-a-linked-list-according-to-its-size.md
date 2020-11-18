@@ -14,7 +14,7 @@
 > 输入：1 2 3 4 5 6 7（n 为奇数）
 > 输出：3 2 1 4 7 6 5
 
-**方法：**这个想法类似于[反转大小为 k 的组中的链表](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)，其中 k 为 n / 2。 只需要检查中间节点。
+**方法**：这个想法类似于[反转大小为 k 的组中的链表](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)，其中 k 为 n / 2。 只需要检查中间节点。
 
 *   如果 n 为偶数，则将链表分为两部分，即前 n / 2 个元素和后 n / 2 个元素，并将这两个部分取反。
 

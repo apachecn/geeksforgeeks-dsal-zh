@@ -10,7 +10,7 @@
 
 ![](img/ff7f30aebf5dc865587c7829dcf4233c.png "cll")
 
-**循环链表的优点：**
+**循环链表的优点**：
 
 **1）**任何节点都可以作为起点。 我们可以从任何点开始遍历整个列表。 当第一个访问的节点再次被访问时，我们只需要停止即可。
 
@@ -20,7 +20,7 @@
 
 **4）**循环双链表用于实现高级数据结构，例如[斐波那契堆](http://en.wikipedia.org/wiki/Fibonacci_heap)。
 
-**下一篇文章：**
+**下一篇文章**：
 
 [**通报链表| 第 2 组（遍历）**](https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/)
 

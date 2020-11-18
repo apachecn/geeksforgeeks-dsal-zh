@@ -719,7 +719,7 @@ Sorted Linked List is:
 
 ```
 
- **时间复杂度：** O（n Log n）
+ **时间复杂度**：O（n Log n）
 
 来源：
 

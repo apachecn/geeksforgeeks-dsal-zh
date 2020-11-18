@@ -2,7 +2,7 @@
 
 给定 K 个大小均为 N 的排序链表，将它们合并并打印排序后的输出。
 
-**示例：**
+**示例**：
 
 ```
 Input: k = 3, n =  4
@@ -29,7 +29,7 @@ than the previous element.
 
  <u>**方法 1（简单）**</u>
 
-**方法：**
+**方法**：
 
 一个简单的解决方案是将结果初始化为第一列表。 现在从第二个列表开始遍历所有列表。 以排序的方式将当前遍历列表的每个节点插入到结果中。
 
@@ -164,19 +164,19 @@ int main()
 
 ```
 
-**复杂度分析：**
+**复杂度分析**：
 
-*   **时间复杂度：** O（N <sup>2</sup> ），其中 N 是节点总数，即 N = kn。
+*   **时间复杂度**：O（N <sup>2</sup> ），其中 N 是节点总数，即 N = kn。
 
-*   **辅助空间：**`O(1)`。
+*   **辅助空间**：`O(1)`。
 
     由于不需要额外的空间。
 
- <u>**方法 2**</u> **：** [**最小堆**](https://www.geeksforgeeks.org/min-heap-in-java/) 。
+ <u>**方法 2**</u> ****：[**最小堆**](https://www.geeksforgeeks.org/min-heap-in-java/) 。
 
 更好的解决方案是使用基于 Min Heap 的解决方案，在此处讨论了基于阵列的解决方案。 该解决方案的时间复杂度为 **O（nk Log k）**
 
- <u>**方法 3**</u> **：** [**分而治之**](https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/) 。
+ <u>**方法 3**</u> ****：[**分而治之**](https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/) 。
 
 在这篇文章中，讨论了**分而治之**方法。 这种方法不需要额外的堆空间，可以在 O（nk Log k）中使用
 
@@ -553,13 +553,13 @@ public class Node {
 
 ```
 
-**复杂度分析：**
+**复杂度分析**：
 
-*   **时间复杂度：** O（nk logk）。
+*   **时间复杂度**：O（nk logk）。
 
     由于功能 mergeKLists（）中的外部 while 循环运行 k 次，每次处理 nk 个元素时，运行 log。
 
-*   **辅助空间：**`O(1)`。
+*   **辅助空间**：`O(1)`。
 
     由于不需要额外的空间。
 

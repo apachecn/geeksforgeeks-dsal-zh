@@ -10,7 +10,7 @@
 
 此时，计数器的值将等于循环的长度。
 
-**算法：**
+**算法**：
 
 1.  使用 [Floyd 的循环检测算法](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)查找循环中的公共点
 
@@ -484,17 +484,17 @@ class GFG 
 4
 ```
 
-**复杂度分析：**
+**复杂度分析**：
 
-*   **时间复杂度：**`O(n)`。
+*   **时间复杂度**：`O(n)`。
 
     只需遍历链接列表。
 
-*   **辅助空间：**`O(1)`。
+*   **辅助空间**：`O(1)`。
 
     由于不需要额外的空间。
 
-**相关文章：**
+**相关文章**：
 
 *   [检测到链表](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)中的循环
 

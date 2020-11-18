@@ -2,7 +2,7 @@
 
 给定一个链表，在零之前有两个相邻的重复节点，任务是将第一个加倍，然后使下一个 0。此后，将所有零附加到尾部。
 
-**先决条件：** [单链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/#singlyLinkedList)的实现基础
+**先决条件**：[单链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/#singlyLinkedList)的实现基础
 
 例子 ：
 
@@ -482,7 +482,7 @@ public class GfG 
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Original linked list :
@@ -492,7 +492,7 @@ Modified linked list :
 
 ```
 
-**时间复杂度：**`O(n)`，其中 n 是链表的节点数。
+**时间复杂度**：`O(n)`，其中 n 是链表的节点数。
 
 
 

@@ -4,17 +4,17 @@
 
 给定长度为 **L** 的字符串 **str** ，任务是查找字符串中第一个非重复字符。
 
-**范例：**
+**范例**：
 
-> **输入：** str =“ geeksforgeeks”
-> **输出：** f
+> **输入**：str =“ geeksforgeeks”
+> **输出**：f
 > 
-> **输入：** str =“编程器”
-> **输出：** p
+> **输入**：str =“编程器”
+> **输出**：p
 
-**注意：**请参考[本文](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)的 HashMap 方法，[本文](https://www.geeksforgeeks.org/first-non-repeating-character-using-one-traversal-of-string-set-2/)作为空间优化的方法。
+**注意**：请参考[本文](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)的 HashMap 方法，[本文](https://www.geeksforgeeks.org/first-non-repeating-character-using-one-traversal-of-string-set-2/)作为空间优化的方法。
 
-**链表方法：**的想法是使用[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)来跟踪字符串中的唯一元素。 下面是该方法的说明：
+**链表方法**：的想法是使用[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)来跟踪字符串中的唯一元素。 下面是该方法的说明：
 
 *   为字符串中的每个字符遍历字符串，并根据以下条件在链接列表中添加该字符：
 
@@ -123,11 +123,11 @@ f
 
 ```
 
-**效果分析：**
+**效果分析**：
 
-*   **时间复杂度：** O（N * 26）
+*   **时间复杂度**：O（N * 26）
 
-*   **辅助空间：**`O(n)`
+*   **辅助空间**：`O(n)`
 
 
 

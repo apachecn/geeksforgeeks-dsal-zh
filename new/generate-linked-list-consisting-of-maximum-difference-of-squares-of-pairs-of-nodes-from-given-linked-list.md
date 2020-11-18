@@ -4,26 +4,26 @@
 
 给定节点数为偶数的[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，任务是生成一个新的[链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)，使其包含节点值的平方的最大平方差[。 通过将每个节点包括在一对中来降低顺序。](https://www.geeksforgeeks.org/check-whether-number-can-represented-sum-two-squares/)
 
-**示例：**
+**示例**：
 
-> **输入：** 1-> 6-> 4-> 3-> 5-> 2
-> **输出：** 35-> 21-> 7
-> **说明：**
+> **输入**：1-> 6-> 4-> 3-> 5-> 2
+> **输出**：35-> 21-> 7
+> **说明**：
 > 6 和 1 的平方差形成值为 35 的第一个节点。
 > 5 和 2 的平方差​​构成第二个节点。 具有值 21 的
 > 4 和 3 的平方之差形成具有值 7 的第三个节点。
 > 因此，形成的 LL 为 35-> 21-> 7。
 > 
-> **输入：** 2-> 4-> 5-> 3-> 7-> 8-> 9-> 10
-> **输出：** 96-> 72-> 48-> 10
-> **说明：**
+> **输入**：2-> 4-> 5-> 3-> 7-> 8-> 9-> 10
+> **输出**：96-> 72-> 48-> 10
+> **说明**：
 > 10 和 2 的平方之差形成值为 96 的第一个节点 。
 > 9 和 3 的平方之差形成值为 72 的第二个节点。
 > 8 和 4 的平方之差形成值为 48 的第三个节点。
 > 7 和 5 的平方之差形成第四个节点。 节点的值为 10。
 > 因此，形成的 LL 为 96-> 72-> 48-> 10。
 
-**方法：**方法是找到节点的最大值，并始终使最大节点和最小节点之间的**差。** 因此，创建一个[双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/) 并在其中插入所有节点值，然后[对双端队列](https://www.geeksforgeeks.org/sorting-queue-without-extra-space/)进行排序。 现在，从两端访问最大值和最小值。 步骤如下：
+**方法**：方法是找到节点的最大值，并始终使最大节点和最小节点之间的**差。** 因此，创建一个[双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/) 并在其中插入所有节点值，然后[对双端队列](https://www.geeksforgeeks.org/sorting-queue-without-extra-space/)进行排序。 现在，从两端访问最大值和最小值。 步骤如下：
 
 *   创建**双端队列**，并将所有节点值插入双端队列。
 
@@ -500,9 +500,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N * log N）*
+***时间复杂度**：O（N * log N）*
 
-***辅助空间：**`O(n)`*
+***辅助空间**：`O(n)`*
 
 
 

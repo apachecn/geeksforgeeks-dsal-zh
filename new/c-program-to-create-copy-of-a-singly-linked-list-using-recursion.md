@@ -4,7 +4,7 @@
 
 给定指向[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)的**头**节点的指针，任务是创建 的副本。 [递归](http://www.geeksforgeeks.org/recursion/)使用链表。
 
-**示例：**：
+**示例**：：
 
 > ***输入**：以下链接列表的标题*
 > *1- > 2- > 3- > 4- >空*
@@ -18,9 +18,9 @@
 > *原始列表：1- > 2- > 3- > 4- > 5- > NULL，*
 > 重复的*列表：1- > 2- > 3- > 4- > 5- > NULL，*
 
-**方法：**请按照以下步骤解决问题：
+**方法**：请按照以下步骤解决问题：
 
-1.  **基本情况：**如果（ *head == NULL* ），则返回 ***NULL*** 。
+1.  **基本情况**：如果（ *head == NULL* ），则返回 ***NULL*** 。
 
 2.  使用 [malloc（）](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/) &设置其数据在[堆](https://www.geeksforgeeks.org/heap-data-structure/)中分配新节点。
 
@@ -166,9 +166,9 @@ Duplicate list: 1 -> 2 -> 3 -> 4 -> 5 -> NULL
 
 ```
 
-***时间复杂度：**`O(n)`*
+***时间复杂度**：`O(n)`*
 
-***辅助空间：**`O(n)`*
+***辅助空间**：`O(n)`*
 
 
 
