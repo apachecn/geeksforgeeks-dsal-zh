@@ -18,12 +18,15 @@ Output : 78 67 56 45 34 23 12
 下面是现在允许在此处使用的不同解决方案，因为我们不能使用额外的空间来修改列表。
 
 1.  [递归解决方案，以打印反向链接列表](https://www.geeksforgeeks.org/write-a-recursive-function-to-print-reverse-of-a-linked-list/)。 需要额外的空间。
+
 2.  [反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，然后打印。 这需要对原始列表进行修改。
+
 3.  [一种 O（n <sup>2</sup> ）解决方案，用于打印链表](https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/)的反向列表，该列表首先计数节点，然后从末尾打印第 k 个节点。
 
 在这篇文章中，讨论了有效的基于堆栈的解决方案。
 
 1.  首先，将所有元素插入堆栈
+
 2.  打印纸叠，直到纸叠不为空
 
 注意：不要将每个节点的数据插入堆栈，而是将节点的地址插入堆栈。 这是因为节点数据的大小通常会大于节点地址的大小。 因此，如果堆栈直接存储数据元素，则最终将需要更多的内存。 另外，如果每个节点包含多个数据成员，则我们无法将节点的数据插入堆栈。 因此，一种简单有效的解决方案是简单地插入节点的地址。

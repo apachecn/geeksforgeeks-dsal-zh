@@ -3,6 +3,7 @@
 **前提条件**：
 
 *   [XOR 链表–内存有效的双链表| 设置 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)
+
 *   [XOR 链表–内存有效的双链表| 设置 2](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
 
 **XOR 链接列表**是一种内存有效的双向链接列表，其中每个节点的下一个指针存储上一个和下一个节点的地址的 XOR。
@@ -19,6 +20,7 @@ current -> next = XOR(prev, current->next)
 ```
 
 **打印 XOR 链接列表**：
+
 在打印 XOR 链接列表时，我们每次必须找到下一个节点的确切地址。 正如我们在上面看到的，每个节点的下一个指针存储 prev 与下一个节点的地址的 XOR 值。 因此，可以通过在 XOR 链接列表中找到 prev 的 XOR 和当前节点的 next 指针来获得下一个节点的地址。
 
 因此，要打印 XOR 链接列表，请通过维护存储上一个节点地址的 prev 指针来遍历它，并找到下一个节点，计算 prev 与当前节点的下一个 XOR。

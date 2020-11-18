@@ -3,6 +3,7 @@
 中删除所有出现的重复项
 
 给定一个已排序的链表，删除所有具有重复编号（所有出现次数）的节点，仅保留在原始列表中仅出现一次的编号。
+
 **范例：**
 
 ```
@@ -483,5 +484,6 @@ List after removal of duplicates
 **时间复杂度：** O（n）
 
 本文由 **Saloni Baweja** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

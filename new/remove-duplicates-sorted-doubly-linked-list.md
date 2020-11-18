@@ -3,6 +3,7 @@
 中删除重复项
 
 给定一个包含 **n** 个节点的排序的双链表。 问题是从给定列表中删除重复的节点。
+
 范例：
 
 ![](img/181efe33bce5e24ea889657c966ce9a2.png)
@@ -594,6 +595,8 @@ Doubly linked list after removing duplicates:
 ```
 
 **时间复杂度：** O（n）
+
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，也可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄到 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者您​​想分享有关上述主题的更多信息，请发表评论。
 

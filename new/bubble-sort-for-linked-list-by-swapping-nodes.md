@@ -1,6 +1,7 @@
 # 通过交换节点对链接列表进行冒泡排序
 
 给定一个单链列表，通过交换节点使用[冒泡排序](http://www.geeksforgeeks.org/bubble-sort/)对它进行排序。
+
 ![sorting image](img/cc3d3ac699ac03f5792746b3e3e54865.png)
 
 **示例：**
@@ -18,7 +19,9 @@ Output: 3->4->20
 **方法：**
 
 1.  获取要排序的链接列表
+
 2.  将[冒泡排序](http://www.geeksforgeeks.org/bubble-sort/)应用于此[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)，其中，在比较两个相邻节点时，将交换实际节点，而不仅仅是交换数据。
+
 3.  打印排序列表
 
 下面是上述方法的实现：

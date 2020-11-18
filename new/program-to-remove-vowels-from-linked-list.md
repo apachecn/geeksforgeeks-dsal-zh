@@ -19,9 +19,11 @@
 > g-> k-> s-> f-> r-> g-> k-> s
 
 **方法：**
+
 在三种情况下，我们可以在给定的链表中找到元音：
 
 1.  <u>**At starting of the linked list**</u>: For removing vowels from the starting of the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/), move the **head Node** to the first consonant occurs in the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/).
+
     For Example:
 
     ```
@@ -33,6 +35,7 @@
     ```
 
 2.  <u>**In between of the linked list**</u>: For removing vowels from the between of the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/), the idea is to keep a marker of the last consonant found in the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/) before the **vowel Nodes** and change the next link of that Node with the next consonant Node found in the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/) after **vowel Nodes**.
+
     For Example:
 
     ```
@@ -46,6 +49,7 @@
     ```
 
 3.  <u>**At the end of the linked list**</u>: For removing vowels from the end of the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/), the idea is to keep a marker of the last consonant found in the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/) before the **vowel Nodes** and change the next link of that Node with NULL.
+
     For Example:
 
     ```

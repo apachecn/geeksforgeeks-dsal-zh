@@ -5,6 +5,7 @@
 [![](img/edcbce05d23f3327116de91a2c124f5e.png)](https://media.geeksforgeeks.org/wp-content/uploads/Circular-Linked-List-Diagram.png)
 
 空链表被认为是循环的。
+
 请注意，此问题与[周期检测问题](https://practice.geeksforgeeks.org/problem-page.php?pid=700099)不同，此处所有节点都必须是周期的一部分。
 
 这个想法是存储链表的头并遍历它。 如果达到 NULL，则链表不是循环的。 如果再次到达头部，则链表为圆形。
@@ -295,5 +296,6 @@ Yes
 ```
 
 本文由 **Shivam Gupta** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，那么您也可以写一篇文章，然后将您的文章邮寄到 contribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

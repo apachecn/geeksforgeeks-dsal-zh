@@ -1,6 +1,7 @@
 # 在链表中查找频率至少为 N / 3 的元素
 
 给定大小为 **N** 的[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，其中包含字符串作为节点值，任务是查找频率大于 **[N / 3]** 的多数字符串 ]，在链接列表中。
+
 **注意：**确保只有一个多数字符串。
 
 **示例：**
@@ -16,12 +17,17 @@
 > 链接列表中热字符串的频率为 4，大于[5/3]，即 1。
 
 **天真的方法：**
+
 将每个字符串的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。 遍历地图并查找频率为**≥N / 3** 的字符串。
+
 ***时间复杂度：** O（N）*
+
 ***辅助空间：** O（N）*
 
 **有效方法：**
+
 这个想法基于 [Moore 的投票算法](https://www.geeksforgeeks.org/majority-element/)。
+
 找到两个候选人，并检查这两个候选人中的任何一个是否实际上是多数派。
 
 下面是上述方法的实现：
@@ -285,6 +291,7 @@ geeks
 ```
 
 ***时间复杂度：** O（N）*
+
 ***辅助空间：** O（1）*
 
 

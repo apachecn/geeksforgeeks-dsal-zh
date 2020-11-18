@@ -19,8 +19,11 @@
 **方法：**要解决上述问题，请执行以下步骤：
 
 *   实现 [N 的阶乘](https://www.geeksforgeeks.org/program-for-factorial-of-a-number/)的函数 **factorial（n）**。
+
 *   初始化变量 **sum = 0** 。 现在，遍历给定列表，并为每个节点检查节点是否为[素数](https://www.geeksforgeeks.org/prime-numbers/)。
+
 *   如果节点是素数，则更新 **sum = sum + sumial（node）**，否则将节点移至下一个。
+
 *   最后打印计算出的**和**。
 
 下面是上述方法的实现：

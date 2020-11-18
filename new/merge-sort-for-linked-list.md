@@ -1,6 +1,7 @@
 # 合并链接列表的排序
 
 [合并排序](http://en.wikipedia.org/wiki/Merge_sort)通常是对链表进行排序的首选。 链表的随机访问性能较慢，使得其他一些算法（例如 quicksort）的性能较差，而其他算法（例如堆排序）则完全不可能。
+
 ![sorting image](img/cc3d3ac699ac03f5792746b3e3e54865.png)
 
 令 head 是要排序的链表的第一个节点，而 headRef 是指向 head 的指针。 请注意，我们需要在 MergeSort（）中引用 head，因为以下实现会更改下一个链接以对链接列表进行排序（而不是节点上的数据），因此，如果原始 head 上的数据不是最小的，则必须更改 head 节点。 链表中的值。
@@ -721,7 +722,9 @@ Sorted Linked List is:
  **时间复杂度：** O（n Log n）
 
 来源：
+
 [http://en.wikipedia.org/wiki/Merge_sort](http://en.wikipedia.org/wiki/Merge_sort)
+
 [http://cslibrary.stanford.edu/105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 
 如果您发现上述代码/算法有误，请写注释，或者找到解决同一问题的更好方法。

@@ -1,6 +1,7 @@
 # 对 k 个排序的双链表进行排序
 
 给定一个包含 **n 个**节点的双向链表，其中每个节点距离其列表中的目标位置最多 **k** 。 问题是对给定的双向链表进行排序。
+
 例如，让我们考虑 **k** 为 2，在已排序的双向链表中位置 7 的节点可以在给定的双向链表中位置 5、6、7、8、9 。
 
 例子：
@@ -10,6 +11,7 @@
 **天真的方法：**使用插入排序技术对给定的双向链表进行排序。
 
 时间复杂度：O（nk）
+
 辅助空间：O（1）
 
 **高效方法：**我们可以使用 MIN HEAP 数据结构对列表进行排序。 该方法已在[对几乎排序（或 K 排序）的数组排序](https://www.geeksforgeeks.org/nearly-sorted-algorithm/)中进行了解释。 在遍历输入的双链表并调整最终排序列表中的下一个和**上一个**链接所需的**链接时，我们只需要小心。**
@@ -182,6 +184,7 @@ Doubly linked list after sorting:
 ```
 
 时间复杂度：O（nLogk）
+
 辅助空间：O（k）
 
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

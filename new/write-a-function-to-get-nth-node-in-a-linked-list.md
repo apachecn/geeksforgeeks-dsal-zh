@@ -447,6 +447,7 @@ Element at index 3 is 4
 **时间复杂度：** O（n）
 
 **方法 2-递归**
+
 此方法由 [MY_DOOM](https://auth.geeksforgeeks.org/user/MY_DOOM) 贡献。
 
 **算法：**
@@ -759,6 +760,7 @@ Element at index 3 is 4
 ```
 
 **时间复杂度：** O（n）
+
 https://youtu.be/iyOh1IWXnq4
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。

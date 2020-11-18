@@ -3,12 +3,15 @@
 给定排序的链表和要插入的值，编写一个函数以排序的方式插入值。
 
 初始链接列表
+
 ![SortedLinked List](img/177b10005e6b234f6f3bf2456c71f8cd.png "SortedLinked List")
 
 插入 9
+
 ![UpdatedSortedLinked List](img/c431502d296d8d30fff5dfb1be090fc2.png "UpdatedSortedLinked List")后的链接列表
 
 **算法：**
+
 让输入的链表按升序排序。
 
 ```
@@ -499,11 +502,15 @@ Created Linked List
 **复杂度分析：**
 
 *   **时间复杂度：** O（n）。
+
     仅需要遍历列表之一。
+
 *   **辅助空间：** O（1）。
+
     不需要多余的空间。
 
 **使用双指针的更短实现：**
+
 感谢 **Murat M Ozturk** 提供此解决方案。 有关完整的功能，请参见下面的 Murat M Ozturk 的评论。 该代码使用双指针来跟踪上一个节点的下一个指针（在该节点之后插入新节点）。
 
 请注意，代码下面的行将*当前*更改为具有节点中下一个指针的地址。
@@ -527,5 +534,6 @@ Created Linked List
 ```
 
 **时间复杂度：** O（n）
+
 **参考：** [http://cslibrary.stanford.edu/105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 

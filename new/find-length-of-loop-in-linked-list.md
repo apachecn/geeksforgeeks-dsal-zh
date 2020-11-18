@@ -7,13 +7,17 @@
 [![](img/de522899e01a1322ab2808eeff1ad73e.png "Linked List Loop")](https://media.geeksforgeeks.org/wp-content/cdn-uploads/2009/04/Linked-List-Loop.gif)
 
 <u>**方法**</u> ：众所周知，当快速指针和慢速指针在同一点相遇时，[弗洛伊德循环检测算法](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)终止。 还已知该公共点是循环节点之一。 将此公共点的地址存储在指针变量 say（ptr）中。 然后用 1 初始化一个计数器，并从公共点开始，继续访问下一个节点并增加计数器，直到再次到达公共指针为止。
+
 此时，计数器的值将等于循环的长度。
 
 **算法：**
 
 1.  使用 [Floyd 的循环检测算法](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)查找循环中的公共点
+
 2.  将指针存储在一个临时变量中，并保持*计数= 0*
+
 3.  遍历链接列表，直到再次到达同一节点，并在移至下一个节点时增加计数。
+
 4.  将计数打印为循环长度
 
 ## C++
@@ -483,13 +487,17 @@ class GFG 
 **复杂度分析：**
 
 *   **时间复杂度：** O（n）。
+
     只需遍历链接列表。
+
 *   **辅助空间：** O（1）。
+
     由于不需要额外的空间。
 
 **相关文章：**
 
 *   [检测到链表](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)中的循环
+
 *   [检测并删除链接列表中的循环](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)
 
 本文由 **Shubham Gupta** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

@@ -21,9 +21,13 @@
 **方法：**请按照以下步骤解决问题：
 
 1.  **基本情况：**如果（ *head == NULL* ），则返回 ***NULL*** 。
+
 2.  使用 [malloc（）](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/) &设置其数据在[堆](https://www.geeksforgeeks.org/heap-data-structure/)中分配新节点。
+
 3.  通过重复其余节点的递归设置新节点的下一个指针。
+
 4.  返回重复节点的**头**指针。
+
 5.  最后，同时打印原始链表和重复链表。
 
 下面是上述方法的实现：
@@ -163,6 +167,7 @@ Duplicate list: 1 -> 2 -> 3 -> 4 -> 5 -> NULL
 ```
 
 ***时间复杂度：** O（N）*
+
 ***辅助空间：** O（N）*
 
 

@@ -3,23 +3,35 @@
 给定两个已排序的[双循环链表](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)，分别包含 **n1** 和 **n2** 个节点。 问题是合并两个列表，使结果列表也处于排序顺序。
 
 **示例：**
+
 **列表 1：**
+
 ![](img/f7f6c1deac20b98e7cd49bb8a7d435f9.png)
+
 **列表 2：**
+
 ![](img/c6fafcc21f76ae4b74959206ce422c36.png)
 
 **最终列表：**
+
 ![](img/319cd08fea739f4429fd83b84b2990b7.png)
 
 **方法：**以下是步骤：
 
 1.  如果 head1 == NULL，则返回 head2。
+
 2.  如果 head2 == NULL，则返回 head1。
+
 3.  令 **last1** 和 **last2** 分别是两个列表的最后一个节点。 可以在第一个节点的先前链接的帮助下获得它们。
+
 4.  获取指向该节点的指针，该节点将成为最终列表的最后一个节点。 如果 last1.data < last2.data, then **last_node** = last2，则其他 **last_node** = last1。
+
 5.  更新 last1.next = last2.next = NULL。
+
 6.  现在将两个列表合并为两个已排序的双向链接列表。 请参阅此帖子的**合并[的](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)**程序。 令最终列表的第一个节点为 **finalHead** 。
+
 7.  更新 finalHead.prev = last_node 和 last_node.next = finalHead。
+
 8.  返回 **finalHead** 。
 
 ## C++

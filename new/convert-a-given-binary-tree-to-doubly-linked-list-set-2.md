@@ -5,6 +5,7 @@
 [![TreeToList](img/1e6723c342ed8e5706a1c58b68241a4c.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/TreeToList.png)
 
 在的[中讨论了此问题的解决方案。
+
 在这篇文章中，讨论了另一个简单有效的解决方案。 这里讨论的解决方案有两个简单的步骤。](https://www.geeksforgeeks.org/in-place-convert-a-given-binary-tree-to-doubly-linked-list/)
 
 **1）*固定左指针*：**在此步骤中，我们将左指针更改为指向 DLL 中的先前节点。 想法很简单，我们对树进行有序遍历。 在有序遍历中，我们跟踪先前访问的节点，并将左指针更改为先前的节点。 请参见以下实现中的 *fixPrevPtr（）*。

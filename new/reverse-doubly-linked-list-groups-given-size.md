@@ -3,6 +3,7 @@
 给定一个包含 **n** 个节点的双向链表。 问题是要反转列表中的每组 **k** 个节点。
 
 范例：
+
 ![](img/f94b7d97202151446280399d423a7126.png)
 
 **先决条件：** [反向双向链表| 设置 2。](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2/)

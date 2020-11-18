@@ -324,6 +324,7 @@ public static void Main(String []args) 
 **迭代方法：**的想法是使用[堆栈数据结构](http://www.geeksforgeeks.org/stack-data-structure/)。
 
 1.  将所有链接列表节点推入堆栈。
+
 2.  从堆栈中弹出 k 个节点并进行打印。
 
 **时间复杂度：** O（n）。
@@ -331,8 +332,11 @@ public static void Main(String []args) 
 **两指针方法**的想法类似于[从链接列表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾找到第 k 个节点。
 
 1.  将第一个指针向前移动 k 个节点。
+
 2.  现在从头开始第二个指针。
+
 3.  当第一个指针到达末尾时，第二个指针指向第 k 个节点。
+
 4.  最后使用第二个指针，打印最后 k 个节点。
 
 **时间复杂度：** O（n）。

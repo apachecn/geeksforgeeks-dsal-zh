@@ -118,11 +118,15 @@ Linked List after deletion of middle
 **复杂度分析：**
 
 *   **时间复杂度：** O（n）。
+
     只需遍历链接列表
+
 *   **辅助空间：** O（1）。
+
     不需要多余的空间。
 
 <u>**有效解决方案：**</u>
+
 **方法：**上述解决方案需要对链表进行两次遍历。 中间节点可以使用一个遍历删除。 这个想法是使用两个指针，slow_ptr 和 fast_ptr。 两个指针都从列表的开头开始。 当 fast_ptr 到达末尾时，slow_ptr 到达中间。 此想法与帖子的[方法 2 中使用的想法相同。 这篇文章中的另一件事是跟踪中间节点的先前位置，以便可以删除中间节点。](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)
 
 下面是实现。
@@ -508,8 +512,11 @@ Linked List after deletion of middle
 **复杂度分析：**
 
 *   **时间复杂度：** O（n）。
+
     只需遍历链接列表
+
 *   **辅助空间：** O（1）。
+
     由于不需要额外的空间。
 
 本文由 **Piyush Gupta** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，那么您也可以写一篇文章，然后将您的文章邮寄到 contribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

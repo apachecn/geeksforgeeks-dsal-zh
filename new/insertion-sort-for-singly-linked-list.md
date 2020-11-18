@@ -15,6 +15,7 @@
 ```
 
 主要步骤是（2.a），已在下面的文章中介绍。
+
 [单链接列表的排序插入](https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/)
 
 下面是上述算法的实现

@@ -3,6 +3,7 @@
 中的第一个和最后一个节点
 
 给定一个[循环链表](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)交换第一个和最后一个节点。 该任务仅应在一个额外的节点上完成，您不能声明一个以上的额外节点，也不允许您声明任何其他临时变量。
+
 **注意：**额外节点表示需要一个节点来遍历列表。
 
 ![https://media.geeksforgeeks.org/wp-content/uploads/Capturehgh.png](img/cc9cbfc0a14fc45b0dc42199595751ea.png)
@@ -499,5 +500,6 @@ List After: 5 1 2 3 4 6
 ```
 
 本文由 **R_Raj** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

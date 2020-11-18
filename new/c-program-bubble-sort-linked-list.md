@@ -1,6 +1,7 @@
 # 用于在链接列表上进行冒泡排序的 C 程序
 
 给定一个单链列表，请使用[冒泡排序](http://www.geeksforgeeks.org/bubble-sort/)对其进行排序。
+
 ![sorting image](img/cc3d3ac699ac03f5792746b3e3e54865.png)
 
 ```

@@ -3,9 +3,13 @@
 问题是要反转给定的双循环链表。
 
 **示例：**
+
 输入：
+
 ![Doubly circular linked list](img/e9205c0a4dde022dc55ba81c17e751a4.png)
+
 输出：
+
 ![Reverse doubly circular linked list](img/6275cdd4ab5611b88981407ed1fc855b.png)
 
 **算法：**

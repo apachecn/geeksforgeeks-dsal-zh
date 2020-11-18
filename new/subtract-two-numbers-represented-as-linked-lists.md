@@ -24,9 +24,13 @@ the larger one.
 <u>**方法**</u> **：**以下是步骤。
 
 1.  计算给定两个链表的大小。
+
 2.  如果大小不相同，则将零添加到较小的链表中。
+
 3.  如果大小相同，请执行以下步骤：
+
     1.  找到价值较小的链表。
+
     2.  从较大的链表中逐一减去较小链表的节点。 减去时要跟踪借用。
 
 以下是上述方法的实现。
@@ -779,8 +783,11 @@ public class LinkedList {
 **复杂度分析：**
 
 *   **时间复杂度：** O（n）。
+
     由于不需要嵌套遍历链表。
+
 *   **辅助空间：** O（n）。
+
     如果考虑递归堆栈空间，则需要 O（n）空间。
 
 本文由 **Mu Ven** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

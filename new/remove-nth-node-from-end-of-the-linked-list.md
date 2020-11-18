@@ -13,13 +13,17 @@
 > **输出：** 7- > 8 -> 4- > 3
 
 **先决条件：**
+
 1\. [从链表中删除一个节点。](https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/)
+
 2\. [从链接列表的末尾找到第 n 个节点](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)
 
 **方法：**
+
 从最后删除 Bth 节点与从开始删除（length-B + 1）基本相同。 在我们的方法中，我们首先评估链表的长度，然后检查
 
 *   如果长度
+
 ***   如果 length = B，则返回 head-> next*   如果 length> B，则意味着我们必须删除中间节点，我们将删除此节点，并使它的上一个节点指向已删除节点的下一个节点。**
 
  **## C++

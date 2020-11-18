@@ -1,6 +1,7 @@
 # 检查带有循环的链表是否为回文
 
 给定一个带有循环的链表，任务是查找它是否是回文。 您无权删除循环。
+
 ![](img/de522899e01a1322ab2808eeff1ad73e.png)
 
 例子：
@@ -25,7 +26,9 @@ not palindrome.
 算法：
 
 1.  使用弗洛伊德循环检测算法检测环路。
+
 2.  然后按照[和](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)中的讨论找到循环的起始节点
+
 3.  如[和](https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)中所述，检查链表是否是回文
 
 下面是实现。

@@ -13,6 +13,7 @@ Output : a -> e -> o -> i -> b ->
 ```
 
 **解决方案：**
+
 这个想法是在遍历列表时保留我们发现的最新元音的标记。 如果找到另一个元音，则将其从链中取出并放在现有的最新元音之后。 示例：对于链表：
 
 ```
@@ -592,6 +593,7 @@ a -> e -> o -> i -> b -> c -> d -> x
 ```
 
 参考：
+
 [Stackoverflow](https://stackoverflow.com/questions/31489675/seperatiing-vowels-and-consonents-of-linked-list-in-java)
 
 本文由 **Gaurav Miglani** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

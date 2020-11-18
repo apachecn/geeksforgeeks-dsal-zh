@@ -5,7 +5,9 @@
 [![TreeToList](img/1e6723c342ed8e5706a1c58b68241a4c.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/TreeToList.png)
 
 针对此问题讨论了以下两种不同的解决方案。
+
 [将给定的二叉树转换为双链表| 设置 1](https://www.geeksforgeeks.org/in-place-convert-a-given-binary-tree-to-doubly-linked-list/)
+
 [将给定的二叉树转换为双链表| 组合 2](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-2/)
 
 在这篇文章中，讨论了第三个解决方案，这似乎是最简单的。 这个想法是对二叉树进行有序遍历。 在进行有序遍历时，请在变量 *prev* 中跟踪先前访问的节点。 对于每个访问的节点，将其作为 *prev* 的下一个，并将该节点的前一个作为 *prev* 的一个。

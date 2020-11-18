@@ -5,13 +5,17 @@
 主要在堆栈中执行以下三个基本操作：
 
 *   **推入：**在堆栈中添加一个项目。 如果堆栈已满，则称其为溢出条件。
+
 *   **弹出：**从堆栈中删除一个项目。 这些项目以推入的相反顺序弹出。 如果堆栈为空，则称其为下溢条件。
+
 *   **窥视或顶部：**返回堆栈的顶部元素。
+
 *   **isEmpty:** Returns true if stack is empty, else false.
 
 [![stack](img/91f929ba5f7179300fc713d1f8126678.png)](https://www.geeksforgeeks.org/wp-content/uploads/gq/2013/03/stack.png)
 
 **如何实际理解堆栈？**
+
 有很多现实生活中的例子。 考虑一下在食堂中相互堆叠的盘子的简单示例。 位于顶部的板是第一个要卸下的板，即已放置在最底部位置的板在堆栈中保留的时间最长。 因此，可以简单地看出它遵循 LIFO / FILO 命令。
 
 **堆栈上操作的时间复杂度：**
@@ -21,17 +25,25 @@ push（），pop（），isEmpty（）和 peek（）都需要 O（1）时间。 
 **堆栈的应用：**
 
 *   [符号平衡](https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/)
+
 *   [后缀](http://quiz.geeksforgeeks.org/stack-set-2-infix-to-postfix/) /前缀转换的前缀
+
 *   在许多地方（例如编辑器，photoshop）重做-撤消功能。
+
 *   Web 浏览器中的前进和后退功能
+
 *   用于许多算法中，例如[河内塔](https://www.geeksforgeeks.org/recursive-functions/) [树遍历](https://www.geeksforgeeks.org/618/)，[库存跨度问题](https://www.geeksforgeeks.org/the-stock-span-problem/)，[直方图问题](https://www.geeksforgeeks.org/largest-rectangular-area-in-a-histogram-set-1/)。
+
 *   其他应用包括回溯，[骑士旅行问题](https://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/)，[迷宫中的老鼠](https://www.geeksforgeeks.org/backttracking-set-2-rat-in-a-maze/)， [N 皇后问题](https://www.geeksforgeeks.org/backtracking-set-3-n-queen-problem/)和[数独解算器](https://www.geeksforgeeks.org/backtracking-set-7-suduku/)
+
 *   在图算法中，例如[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)和[强连接的组件](https://www.geeksforgeeks.org/strongly-connected-components/)
 
 **实现：**
+
 有两种实现堆栈的方法：
 
 *   使用数组
+
 *   使用链表
 
 **使用数组实现堆栈**
@@ -401,6 +413,7 @@ class Program {
 ```
 
 **优点：**易于实现。 内存被保存，因为不涉及指针。
+
 **缺点：**它不是动态的。 它不会根据运行时的需要而增长和收缩。
 
 **输出：**
@@ -801,6 +814,7 @@ Top element is 20
 ```
 
 **优点：**堆栈的链表实现可以在运行时根据需要进行扩展和收缩。
+
 **缺点：**由于涉及指针，因此需要额外的内存。
 
 我们将在单独的文章中介绍 stack 应用程序的实现。
@@ -810,6 +824,7 @@ Top element is 20
 **测验**：[堆栈问题](http://quiz.geeksforgeeks.org/data-structure/stack/)
 
 **参考：**
+
 [http://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29#Problem_Description](http://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29#Problem_Description)
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。

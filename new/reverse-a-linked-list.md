@@ -432,6 +432,7 @@ Reversed Linked list
 ```
 
 **时间复杂度：** O（n）
+
 **空间复杂度：** O（1）
 
 **递归方法：**
@@ -774,6 +775,7 @@ Reversed Linked list
 ```
 
 **时间复杂度：** O（n）
+
 **空间复杂度：** O（1）
 
 **一种更简单且尾部递归的方法**
@@ -1138,8 +1140,11 @@ Reversed linked list
 **使用堆栈：**
 
 *   将节点（值和地址）存储在堆栈中，直到输入所有值。
+
 *   完成所有输入后，将 Head 指针更新到最后一个位置（即最后一个值）。
+
 *   开始弹出节点（值和地址）并以相同顺序存储它们，直到堆栈为空。
+
 *   用 NULL 更新堆栈中最后一个节点的下一个指针。
 
 下面是上述方法的实现：
@@ -1268,9 +1273,12 @@ Reversed linked list
 ```
 
 感谢 Gaurav Ahirwar 提出了此解决方案。
+
 [递归地反向链接列表（一个简单的实现）](https://www.geeksforgeeks.org/recursively-reversing-a-linked-list-a-simple-implementation/)
+
 [仅使用 2 个指针迭代反向链接的列表（一种有趣的方法）](https://www.geeksforgeeks.org/iteratively-reverse-a-linked-list-using-only-2-pointers/)
 
 **参考：**
+
 [http://cslibrary.stanford.edu/105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 

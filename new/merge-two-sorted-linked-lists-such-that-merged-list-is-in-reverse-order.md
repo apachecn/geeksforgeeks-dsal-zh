@@ -16,8 +16,11 @@ Output: res: 20->3->2
 ```
 
 **简单解决方案**要执行以下操作。
+
 1）[反向列出第一个“ a”](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/) 。
+
 2）[倒数第二个列表'b'](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/)。
+
 3）[合并两个反向列表](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)。
 
 另一个简单的解决方案是首先合并两个列表，然后反转合并的列表。
@@ -25,6 +28,7 @@ Output: res: 20->3->2
 以上两种解决方案都需要两次遍历链表。
 
 **如何求解无反向 O（1）辅助空间（就地）并且仅遍历两个列表？**
+
 这个想法是遵循合并样式的过程。 将结果列表初始化为空。 从头到尾遍历两个列表。 比较两个列表的当前节点，并在结果列表的开头插入两个中较小的一个。
 
 ```

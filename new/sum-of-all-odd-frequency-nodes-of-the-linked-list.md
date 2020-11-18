@@ -20,7 +20,9 @@
 **方法：**此问题可以通过[散列](http://www.geeksforgeeks.org/hashing-data-structure/)解决，
 
 1.  创建一个散列来存储节点的频率。
+
 2.  遍历[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)并更新哈希变量中节点的频率。
+
 3.  现在，再次遍历链表，对出现奇数次的每个节点，将其值加到运行总和中。
 
 下面是上述方法的实现：

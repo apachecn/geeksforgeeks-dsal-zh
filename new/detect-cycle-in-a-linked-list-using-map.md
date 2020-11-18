@@ -21,10 +21,15 @@
 **方法：**
 
 1.  创建一个[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，它将被访问的节点存储在[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)中。
+
 2.  遍历[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)并执行以下操作：
+
     *   检查地图中是否存在当前节点。
+
     *   如果[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中不存在当前节点，则在映射中插入当前节点。
+
     *   如果节点存在于映射中，则检测到链表中的循环。
+
 3.  如果在遍历[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)时到达**空节点**，则给定的链表中没有循环。
 
 下面是上述方法的实现：
@@ -124,6 +129,7 @@ Loop detected.
 ```
 
 **时间复杂度：** O（N * log N）
+
 **辅助空间：** O（N）
 
 

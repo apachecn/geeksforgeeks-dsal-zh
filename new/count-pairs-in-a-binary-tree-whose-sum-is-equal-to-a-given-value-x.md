@@ -392,8 +392,11 @@ Count = 3
 **2）高效方法：**以下是步骤：
 
 1.  将给定的二叉树转换为双向链表。 请参阅此帖子的[。](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-4/)
+
 2.  对在步骤 1 中获得的双向链表进行排序。请参阅此帖子中的[。](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)
+
 3.  计数对以加倍等于“ x”的双链排序。 请参阅此帖子的[。](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)
+
 4.  显示在步骤 4 中获得的计数。
 
 ## C++
@@ -1008,7 +1011,9 @@ Count = 3
 **3）另一种有效的方法–无需转换为 DLL 和排序：**以下是步骤：
 
 1.  以任何顺序（前/后/中）遍历树。
+
 2.  创建一个空哈希，并继续在当前节点的值和 X 之间添加差异。
+
 3.  在每个节点上，检查其值是否在哈希中，如果是，则将计数增加 1，并且请勿在哈希中将该节点的值与 X 的差相加，以避免重复计算单个对。
 
 ```
@@ -1080,6 +1085,7 @@ Count = 3
 ```
 
 时间复杂度：O（n）
+
 空间复杂度：O（n）
 
 

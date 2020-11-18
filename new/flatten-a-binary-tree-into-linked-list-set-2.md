@@ -386,6 +386,7 @@ The Inorder traversal after flattening binary tree 1 2 3 4 5 6
 ```
 
 **时间复杂度：** O（N）
+
 **辅助空间：** O（Log N）
 
 

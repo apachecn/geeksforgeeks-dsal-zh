@@ -14,6 +14,7 @@ Output:  1 -> 8 -> 3 -> 7
 ```
 
 这主要是此帖子的[的扩展，该帖子删除了](http://quiz.geeksforgeeks.org/linked-list-set-3-deleting-node/)给定密钥的首次出现的[。
+
 我们需要首先检查头节点上的所有事件，并适当地更改头节点。 然后，我们需要检查循环中所有出现的事件，并将它们一一删除。](http://quiz.geeksforgeeks.org/linked-list-set-3-deleting-node/)
 
 以下是上述想法的实现：

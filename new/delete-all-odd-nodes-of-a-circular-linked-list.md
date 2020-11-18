@@ -18,6 +18,7 @@
 > **输出：** 32-> 6-> 20
 
 **方法：**
+
 想法是一个遍历循环单链表的节点，并获得具有奇数数据的节点的指针。 请按照中的[中使用的方法删除那些节点。](https://www.geeksforgeeks.org/deletion-circular-linked-list/)
 
 以下是上述想法的实现：

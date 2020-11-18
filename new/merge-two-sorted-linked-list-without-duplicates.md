@@ -16,6 +16,7 @@ Output : 1 2 4 5 7 9
 **方法：**以下是步骤：
 
 1.  以排序方式合并两个排序的链表。 请参阅此帖子的[递归方法。 令最终获得的列表为**头**。](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)
+
 2.  [从排序的链表](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/) **头**中删除重复项。
 
 ```
@@ -156,6 +157,7 @@ int main()
 ```
 
 时间复杂度：O（n1 + n2）。
+
 辅助空间：O（1）。
 
 **练习：**获得最终排序的链表，一次遍历两个列表时没有重复项。

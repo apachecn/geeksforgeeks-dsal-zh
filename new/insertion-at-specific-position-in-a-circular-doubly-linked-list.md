@@ -5,6 +5,7 @@
 **前提条件**：
 
 *   [插入元素圆形双链表](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)。
+
 *   [将数组转换为循环双链表。](https://www.geeksforgeeks.org/convert-array-to-circular-doubly-linked-list/)
 
 给定*起始*指针，该指针指向循环双链表的起点，*元素*和*位置*。 任务是将*元素*插入给定循环双链表中指定的*位置*。
@@ -16,11 +17,17 @@
 如果位置有效：
 
 1.  在内存中创建一个 newNode。
+
 2.  使用临时指针（ **temp** ）在列表中遍历，直到节点恰好在需要插入新节点的给定位置之前。
+
 3.  通过执行以下操作来插入新节点：
+
     *   分配 newNode-> next = temp-> next
+
     *   将 newNode-> prev 分配为 temp-> next
+
     *   将 temp-> next 分配为 newNode
+
     *   假设（temp-> next）-> prev as newNode-> next
 
 以下是上述想法的实现：

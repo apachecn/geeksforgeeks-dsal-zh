@@ -26,9 +26,13 @@
 **方法：**方法是找到节点的最大值，并始终使最大节点和最小节点之间的**差。** 因此，创建一个[双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/) 并在其中插入所有节点值，然后[对双端队列](https://www.geeksforgeeks.org/sorting-queue-without-extra-space/)进行排序。 现在，从两端访问最大值和最小值。 步骤如下：
 
 *   创建**双端队列**，并将所有节点值插入双端队列。
+
 *   **对**的双端队列进行排序，以在恒定时间内获得最大的节点值和最小的节点值。
+
 *   创建另一个**链接列表**，其值**分别与双端队列的后面和前面的平方和**的平方和之差最大。
+
 *   在每次迭代[之后，从双端队列弹出](https://www.geeksforgeeks.org/dequepop_front-dequepop_back-c-stl/)最小值和最大值。
+
 *   完成上述步骤后，打印形成的新链表的节点。
 
 下面是上述方法的实现：
@@ -497,6 +501,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度：** O（N * log N）*
+
 ***辅助空间：** O（N）*
 
 

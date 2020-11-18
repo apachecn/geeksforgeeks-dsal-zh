@@ -17,9 +17,11 @@
 > 树的顺序为“ bbdaabb” 这不是回文字符串。
 
 **方法：**
+
 要解决此问题，请参考以下步骤：
 
 *   [将给定的二叉树转换为双链表](https://www.geeksforgeeks.org/in-place-convert-a-given-binary-tree-to-doubly-linked-list/)。
+
 *   这将问题减少到[。检查字符的双向链接列表是否是回文](https://www.geeksforgeeks.org/check-doubly-linked-list-characters-palindrome-not/)。
 
 下面是上述方法的实现：
@@ -463,6 +465,7 @@ True
 ```
 
 ***时间复杂度：** O（N）
+
 **辅助空间：** O（1）*
 
 

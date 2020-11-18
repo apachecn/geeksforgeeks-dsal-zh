@@ -25,7 +25,9 @@
 **方法：**的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)来预先计算并存储[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，然后检查节点是否在 O（1）时间中包含斐波那契值 。
 
 1.  遍历整个[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)，并获得列表中的最大值。
+
 2.  现在，为了检查斐波那契数，建立一个[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于链接列表中最大值的斐波那契数。
+
 3.  最后，一个接一个地遍历链表中的节点，并检查该节点是否包含斐波那契数作为其数据值。 求出斐波那契节点的数据之和与乘积。
 
 下面是上述方法的实现：

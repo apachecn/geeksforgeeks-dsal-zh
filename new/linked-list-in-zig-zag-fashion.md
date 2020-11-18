@@ -474,8 +474,11 @@ Zig Zag Linked list
 **复杂度分析：**
 
 *   **时间复杂度：** O（n）。
+
     列表的遍历仅执行一次，并且包含“ n”个元素。
+
 *   **辅助空间：** O（1）。
+
     不使用额外的数据结构来存储值。
 
 本文由 [Utkarsh Trivedi](http://qa.geeksforgeeks.org/user/utkarsh111) 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论

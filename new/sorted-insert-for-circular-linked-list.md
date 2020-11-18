@@ -3,11 +3,13 @@
 的排序插入
 
 **难度级别：**新秀
+
 编写一个 C 函数，以在排序的循环链表（CLL）中插入新值。 例如，如果输入 CLL 在后面。
 
 [![](img/c3d969168cf85b5ef6ab86547789dfde.png "cll1")](https://media.geeksforgeeks.org/wp-content/uploads/sortedInsertionCircularLinkedList.jpg)
 
 **算法：**
+
 为新插入的节点分配内存，并将数据放入新分配的节点中。 让指向新节点的指针为 new_node。 分配内存后，以下是需要处理的三种情况。
 
 ```

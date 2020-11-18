@@ -1,12 +1,15 @@
 # 从排序的链接列表中删除重复项
 
 编写一个函数，该函数采用以非降序排列的列表，并从列表中删除所有重复的节点。 该列表仅应遍历一次。
+
 例如，如果链接列表是 11- > 11- > 11- > 21- > 43- > 43- > 60，则 removeDuplicates（）应该将列表转换为 11- > 21- > 43- > 60。
 
 **算法：**
+
 从头（或起始）节点遍历列表。 遍历时，将每个节点与其下一个节点进行比较。 如果下一个节点的数据与当前节点相同，则删除下一个节点。 在删除节点之前，我们需要存储该节点的下一个指针
 
 **实现：**
+
 除了 removeDuplicates（）之外的其他功能仅用于创建链接链表并测试 removeDuplicates（）。
 
 ## C++
@@ -1206,7 +1209,10 @@ List after removal of elements
 ```
 
 **相关文章：**
+
 [从排序的链接列表中删除所有重复项](https://www.geeksforgeeks.org/remove-occurrences-duplicates-sorted-linked-list/)
+
 **参考：**
+
 [cslibrary.stanford.edu /105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 

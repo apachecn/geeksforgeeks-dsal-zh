@@ -18,8 +18,11 @@ Output : 5->10->6->9->7->8
 **方法：**以下是步骤：
 
 1.  使用[合并排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)技术对链接列表进行排序。
+
 2.  将列表分为**前**和**后**列表。 请参阅此帖子的 **FrontBackProcedure** 。
+
 3.  现在，将**返回**列表。 请参阅此帖子的[。](https://www.geeksforgeeks.org/reverse-a-linked-list/)
+
 4.  最后，以交替顺序将**的节点首先**和**的列表合并回**列表。
 
 ```

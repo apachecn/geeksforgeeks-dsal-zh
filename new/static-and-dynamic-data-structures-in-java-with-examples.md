@@ -82,6 +82,7 @@
     ```
 
     *上面的数组实现存在问题：*
+
     创建数组后，我们无法更改数组的大小。 因此，数组的大小是不可更改的。
 
 ### 动态数据结构
@@ -437,8 +438,11 @@
     **相关文章：**
 
     *   [使用数组](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)的堆栈实现
+
     *   [使用单链接列表](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)的堆栈实现
+
     *   [使用队列](https://www.geeksforgeeks.org/implement-stack-using-queue/)的堆栈实现
+
 5.  ### [队列](https://www.geeksforgeeks.org/queue-interface-java/)
 
     Queue 接口在 java.util 包中可用，并且扩展了 Collection 接口。 队列集合用于保存要处理的元素，并提供各种操作，如插入，删除等。它是对象的有序列表，其使用仅限于在列表的末尾插入元素并从头开始删除元素 列表，即遵循先进先出或先进先出的原则。
@@ -502,17 +506,25 @@
     **相关文章：**
 
     *   [使用数组](https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)的队列实现
+
     *   [使用单链接列表](https://www.geeksforgeeks.org/queue-linked-list-implementation/)的队列实现
+
     *   [使用堆栈](https://www.geeksforgeeks.org/queue-using-stacks/)的队列实现
+
 6.  ### 树
 
     树是一种将值存储在称为**节点**的实体内部的数据结构。 节点通过称为**边缘**的线连接。 每个节点在其中存储一个值。
+
     **术语：**
 
     *   **根**是树的最高节点。
+
     *   **父级**是一个已附加一个或多个节点的节点。
+
     *   **边缘**是连接两个节点的链接。
+
     *   **子级**是具有父节点的节点
+
     *   **叶子**是一个未附加任何子节点的节点，它是树的最底节点。
 
     ```

@@ -3,11 +3,13 @@
 的双向链接列表节点
 
 给定双链表和位置 **n** 。 任务是从头开始删除给定位置 **n** 的节点。
+
 初始双向链表
 
 ![](img/33c499cd1e3711a2326ec13b386f7970.png)
 
 删除位置 **n** = 2
+
 处的节点后的双链表
 
 ![](img/c23ec0fbc3b7556ce8014b28482d17d8.png)
@@ -15,6 +17,7 @@
 **方法：**以下是步骤：
 
 1.  通过从双行遍历双向链接列表到第 **n 个**节点，获得指向位置 **n** 处的节点的指针。
+
 2.  使用在步骤 1 中获得的指针删除节点。请参阅这篇帖子[。](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
 
 ## C++
@@ -591,5 +594,6 @@ Doubly linked list after deletion:
 **时间复杂度：** O（n），在最坏的情况下，其中 n 是双向链表中的节点数。
 
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

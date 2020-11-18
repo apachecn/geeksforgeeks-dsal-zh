@@ -3,6 +3,7 @@
 中查找具有给定总和的对
 
 给定一个排序的正相异元素的双链表，任务是在双链表中查找对，它们的总和等于给定值 x，而不使用任何多余的空间？
+
 **例如：**
 
 ```
@@ -19,8 +20,11 @@ Output: (6, 1), (5,2)
 针对此问题的**有效解决方案**与该文章的[相同。 这是算法：](https://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/)
 
 *   初始化两个指针变量以在排序后的双向链表中查找候选元素。首先，从双向链表的开头初始化**。 **first = head** ，然后用双向链表的最后一个节点初始化**，然后初始化**；即， **second = last_node** 。**
+
 *   我们将**第一个**和**第二个**指针初始化为第一个和最后一个节点。 这里我们没有随机访问权限，因此要找到第二个指针，我们遍历列表以初始化第二个指针。
+
 *   如果当前**首先**和**第二**的当前总和小于 x，则我们将**首先**向前移动。 如果**第一个**和**第二个**元素的当前总和大于 x，则我们将**第二个**向后移动。
+
 *   循环终止条件也与阵列不同。 当两个指针中的任何一个变为 NULL 或它们彼此交叉（第二个->下一个=第一个），或者它们变为相同（第一个==第二个）时，循环终止
 
 ## C++
@@ -347,6 +351,7 @@ class GFG 
 ```
 
 **时间复杂度：** O（n）
+
 **辅助空间：** O（1）
 
 如果未对链接列表进行排序，那么我们可以将列表作为第一步进行排序。 但是在那种情况下，整体时间复杂度将变为 O（n Log n）。 如果没有多余的空间，我们可以在这种情况下使用哈希。 基于哈希的解决方案与方法 2 [在此处](https://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/)相同。

@@ -23,12 +23,17 @@
 > 因此，奇数斐波那契节点值=（55 + 5 + 3 + 89 + 233）/ 5 = 77
 
 **方法：**的想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储所有[斐波那契数](https://www.geeksforgeeks.org/check-number-fibonacci-number/)，直到链表中最大[个最大元素。 。
+
 请按照以下步骤解决问题：](https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/)
 
 1.  初始化两个变量，例如 **cnt** 和**总和**，分别存储奇数[斐波那契节点](https://www.geeksforgeeks.org/check-number-fibonacci-number/)的计数和所有奇数[斐波那契节点](https://www.geeksforgeeks.org/check-number-fibonacci-number/)的计数。
+
 2.  [遍历单个链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)并存储链表中最大的[元素，例如 **Max** 。](https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/)
+
 3.  创建一个[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)，例如说**哈希图**，以存储直到 **Max** 为止的所有斐波那契数。
+
 4.  [遍历链接列表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)，并检查当前节点是否为[奇数](https://www.geeksforgeeks.org/check-whether-given-number-even-odd/)和[斐波那契数](https://www.geeksforgeeks.org/check-number-fibonacci-number/)。 如果发现是真的，则增加 **cnt** 的值，并将当前节点的数据值加到**和**中，然后从 **Hashmap** 中删除该节点。
+
 5.  最后，将**（sum / cnt）**的值打印为所需答案。
 
 下面是上述方法的实现：
@@ -661,6 +666,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度：** O（N）*
+
 ***辅助空间：** O（N）*
 
 

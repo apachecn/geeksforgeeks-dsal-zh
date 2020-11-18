@@ -1,6 +1,7 @@
 # 子列表搜索（在另一个列表中搜索链接列表）
 
 给定两个链接列表，任务是检查第一个列表是否存在于第二个列表中。
+
 **范例：**
 
 ```
@@ -19,12 +20,19 @@ Output : LIST NOT FOUND
 ```
 
 算法：
+
 1-获取第二个列表的第一个节点。
+
 2-从第一个节点开始匹配第一个列表。
+
 3-如果整个列表匹配，则返回 true。
+
 4-否则，再次将第一个列表带到第一个节点。
+
 5-将第二个列表带到第二个节点。
+
 6-重复这些步骤，直到任何链接列表变为空。
+
 7-如果第一个列表为空，则找到列表，否则为否。
 
 下面是实现。
@@ -518,8 +526,12 @@ LIST FOUND
 ```
 
 时间复杂度：O（m * n），其中 m 是第二个列表中的节点数，而 n 是第一个列表中的节点数。
+
 **优化：**
+
 上面的代码可以通过使用额外的空间进行优化，即将列表存储在两个字符串中并应用 [KMP 算法](https://www.geeksforgeeks.org/searching-for-patterns-set-2-kmp-algorithm/)。 请参阅 [https://ide.geeksforgeeks.org/3fXUaV](https://ide.geeksforgeeks.org/3fXUaV) 以获取 [**Nishant Singh**](https://practice.geeksforgeeks.org/user-profile.php?user=_code) 提供的实施方案。
+
 本文由 [**Sahil Chhabra（akku）**](https://practice.geeksforgeeks.org/user-profile.php?user=sahil_coder) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则也可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想共享有关上述主题的更多信息，请发表评论。
 

@@ -22,6 +22,7 @@ struct node
 **插入循环双链表**
 
 1.  **Insertion at the end of list or in an empty list**
+
     *   **Empty List (start = NULL):** A node(Say N) is inserted with data = 5, so previous pointer of N points to N and next pointer of N also points to N. But now start pointer points to the first node the list.
 
         [![Insertion in empty list1](img/65b32f44143665810d0de3e9d287561d.png)](https://media.geeksforgeeks.org/wp-content/uploads/Insertion-in-empty-list1.png)
@@ -71,6 +72,7 @@ struct node
         ```
 
 2.  **Insertion at the beginning of the list:** To insert a node at the beginning of the list, create a node(Say T) with data = 5, T next pointer points to first node of the list, T previous pointer points to last node the list, last node’s next pointer points to this T node, first node’s previous pointer also points this T node and at last don’t forget to shift ‘Start’ pointer to this T node.
+
     [![Insertion at beginning of list](img/908f51fd4c7f6c6b4ccafc7334a49d7a.png)](https://media.geeksforgeeks.org/wp-content/uploads/Insertion-at-beginning-of-list.png)
 
     ```
@@ -766,20 +768,25 @@ Traversal in reverse direction
 ```
 
 以下是循环双链表的优缺点：
+
 **优点：**
 
 *   列表可以从两个方向遍历，即从头到尾或从​​尾到头。
+
 *   从头到尾或从​​尾到头的跳跃是在恒定时间 O（1）中完成的。
+
 *   循环双链表用于实现高级数据结构，例如[斐波那契堆](https://en.wikipedia.org/wiki/Fibonacci_heap)。
 
 **劣势**
 
 *   每个节点需要一点额外的内存来容纳先前的指针。
+
 *   在列表上实现或执行操作时涉及很多指针。 因此，应该小心处理指针，否则列表的数据可能会丢失。
 
 **循环双链表**的应用
 
 *   在媒体播放器应用程序中管理歌曲播放列表。
+
 *   在线购物中管理购物车。
 
 本文由 **Akash Gupta** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

@@ -1,10 +1,15 @@
 # 链表| 集合 3（删除节点）
 
 在单个链接列表的先前帖子中，我们已经讨论了[链接列表简介](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)和[链接列表插入](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)。
+
 让我们制定问题陈述以了解删除过程。 *给定一个“键”，请在链接列表*中删除该键的第一个匹配项。
+
 要从链接列表中删除节点，我们需要执行以下步骤。
+
 1）查找要删除的节点的上一个节点。
+
 2）更改上一个节点的下一个。
+
 3）待删除节点的可用内存。
 
 ![linkedlist_deletion](img/fe3a6a2699fb99ae5429afd588e89619.png)

@@ -18,8 +18,11 @@ Output :10->13->11->15
 在这篇文章中，讨论了一个不同的基于 [Deque](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/) 的解决方案。
 
 **方法**
+
 1）创建一个空双端队列
+
 2）将链接列表中的所有元素插入到双端队列
+
 3）将元素从双端队列重新插入到链表中 首先，然后最后，依此类推
 
 ## C++

@@ -21,7 +21,9 @@
 **方法：**这个想法是使用散列来存储和检查[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)。
 
 1.  遍历整个[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)，并获得列表中的最大值。
+
 2.  现在，为了检查斐波那契数，建立一个[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于链接列表中最大值的斐波那契数。
+
 3.  最后，一遍遍双向链表的节点，然后[删除包含斐波纳契数作为其数据值的节点](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)。
 
 下面是上述方法的实现：

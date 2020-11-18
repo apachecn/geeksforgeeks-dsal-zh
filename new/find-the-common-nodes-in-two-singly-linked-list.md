@@ -476,6 +476,7 @@ Number of common node in both list is = 3
 **时间复杂度：** O（M * N），其中 M 是列表 A 的长度，N 是列表 B 的长度
 
 **有效解决方案：**将链接列表 A 的所有节点插入 unordered_set 中，然后检查 unordered_set 中的链接列表 B 的每个节点。 如果找到，则增加计数并在最后返回计数。
+
 以下是上述方法的实现：
 
 ## C++
@@ -955,6 +956,7 @@ Number of common node in both list is = 3
 ```
 
 **时间复杂度：** O（N）
+
 **空间复杂度：** O（N）
 
 

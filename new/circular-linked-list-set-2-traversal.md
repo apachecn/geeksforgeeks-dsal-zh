@@ -427,7 +427,9 @@ Contents of Circular Linked List
 ```
 
 **您可能想在循环链表**
+
 [上将以下帖子分为两半](https://www.geeksforgeeks.org/split-a-circular-linked-list-into-two-halves/)
+
 [循环链表](https://www.geeksforgeeks.org/sorted-insert-for-circular-linked-list/)的插入内容
 
 我们将很快讨论循环链接列表的插入删除操作的实现。

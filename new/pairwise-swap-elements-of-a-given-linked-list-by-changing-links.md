@@ -440,6 +440,7 @@ public class LinkedList {
 ```
 
 时间复杂度：上面程序的时间复杂度为 O（n），其中 n 是给定链表中节点的数量。 while 循环遍历给定的链表。
+
 以下是相同方法的**递归实现**。 我们更改前两个节点，然后重复其余列表。 感谢 geek 和 omer salem 提出了这种方法。
 
 ## C++
@@ -823,5 +824,6 @@ public class LinkedList {
 ```
 
 [通过更改指针|配对交换链表的相邻节点| 第 2 组](https://www.geeksforgeeks.org/pairwise-swap-adjacent-nodes-of-a-linked-list-by-changing-pointers-set-2/)
+
 本文由 **Gautam Kumar** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请写评论
 

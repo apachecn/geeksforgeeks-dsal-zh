@@ -1,7 +1,9 @@
 # 将链接列表的每个节点替换为右侧的最大元素
 
 给定[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是为链表的每个节点查找[下一更大元素](https://www.geeksforgeeks.org/next-greater-element-in-same-order-as-input/)。
+
 **注意：**对于没有下一个更大元素的节点，将-1 存储在结果中。
+
 **范例：**
 
 > **输入：**链表= [2，1，5]
@@ -10,10 +12,13 @@
 > **输出：** [7，-1，5，5，-1]
 
 **方法：**
+
 要解决上述问题，主要思想是使用 [**堆栈数据结构**](https://www.geeksforgeeks.org/stack-data-structure/) 。
 
 *   遍历链表，并将链表元素的值和位置插入堆栈。
+
 *   为每个节点使用-1 初始化结果向量。
+
 *   当当前节点的值大于先前节点的值时，更新先前节点的值，并在更新后从堆栈中弹出该值。
 
 下面是上述方法的实现：
@@ -323,6 +328,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度：** O（N）*
+
 ***辅助空间复杂度：** O（N）*
 
 

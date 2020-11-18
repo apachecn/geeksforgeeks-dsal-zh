@@ -534,7 +534,9 @@ The reversed Linked List is
 ```
 
 **时间复杂度：** O（n）
+
 我们也可以交换数据而不是指针来反转双链表。 [用于反转数组](https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/)的方法可用于交换数据。 如果数据项的大小更大，则与指针相比，交换数据的成本可能更高。
+
 如果您发现上述任何代码/算法不正确，或者找到解决相同问题的更好方法，请发表评论。
 
 **方法 2：**
@@ -544,6 +546,7 @@ The reversed Linked List is
 脚步：
 
 1.  继续将节点的数据压入堆栈。 -> O（n）
+
 2.  不断弹出元素并更新双链表
 
 ## Java

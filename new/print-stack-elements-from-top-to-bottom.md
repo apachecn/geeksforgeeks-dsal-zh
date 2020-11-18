@@ -13,9 +13,13 @@
 [**递归**](http://www.geeksforgeeks.org/recursion/) **方法：**请按照以下步骤解决问题：
 
 1.  创建一个具有[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)作为参数的递归函数。
+
 2.  添加基本​​条件，如果**堆栈**为空，则从函数返回。
+
 3.  否则，将顶部元素存储在某个变量 **X** 中，然后将其删除。
+
 4.  打印 **X** ，调用递归函数并在其中传递相同的堆栈。
+
 5.  将存储的 **X** 推回堆栈。
 
 下面是上述方法的实现：
@@ -250,13 +254,17 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度：** O（N），其中 N 是给定堆栈中元素的数量。*
+
 ***辅助空间：** O（N）*
 
 [**单链列表堆栈**](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/) **方法：**此方法讨论解决[单链列表堆栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)表示法的问题的解决方案。 步骤如下：
 
 1.  将给定堆栈中的顶部元素推入[链表堆栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)。
+
 2.  打印[单链列表堆栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)的顶部元素。
+
 3.  从给定的主堆栈中弹出顶部元素。
+
 4.  按顺序重复上述步骤，直到给定的堆栈为空。
 
 下面是上述方法的实现：
@@ -546,13 +554,17 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度：** O（N），其中 N 是给定堆栈中元素的数量。*
+
 ***辅助空间：** O（N）*
 
 [**阵列堆栈**](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) **方法：**此方法讨论[阵列堆栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)实现中问题的解决方案。 步骤如下：
 
 1.  将给定堆栈中的顶部元素推入[数组堆栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)。
+
 2.  打印[数组堆栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)的顶部元素。
+
 3.  从给定的主堆栈中弹出顶部元素。
+
 4.  按顺序重复上述步骤，直到给定的堆栈为空。
 
 下面是上述方法的实现：
@@ -816,6 +828,7 @@ public static void Main(String []args)
 ```
 
 ***时间复杂度：** O（N），其中 N 是给定堆栈中元素的数量。*
+
 ***辅助空间：** O（N）*
 
 

@@ -1,17 +1,21 @@
 # 在排序的双向链接列表中以排序的方式插入值
 
 给定一个排序的双链表和一个要插入的值，编写一个函数以排序的方式插入该值。
+
 初始双向链表
 
 ![](img/8fc76a8b4a61b2a22d64c8e0f767b50e.png)
 
 插入 9
+
 后的双链表
 
 ![](img/bce6f0344a46b69e8906811eaf2918d8.png)
 
 **算法：**
+
 让输入的双向链表按升序排序。
+
 传递给函数的新节点包含数据部分中的数据，并且上一个和下一个链接设置为 NULL。
 
 ```
@@ -483,6 +487,8 @@ Created Doubly Linked List
 ```
 
 **时间复杂度：** O（n）
+
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，也可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄到 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者您​​想分享有关上述主题的更多信息，请发表评论。
 

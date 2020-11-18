@@ -3,13 +3,17 @@
 设计可以执行以下操作的数据结构
 
 1.  O（n）中的 add（）
+
 2.  getMinimum（）到 O（1）
+
 3.  O（1）中的 deleteMinimum（）
 
 **来源：** [MakeMyTrip 访谈。](https://www.geeksforgeeks.org/makemytrip-interview-experience-set-16/)
 
 1.  维护一个链表，其中的元素按升序排列。
+
 2.  删除最小操作时，将磁头移至下一个位置。
+
 3.  如果进行最小操作，则返回 First 元素。
 
 ```

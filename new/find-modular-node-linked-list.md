@@ -18,6 +18,7 @@ Output : 9
 ```
 
 1.取得一个指针 moduleNode 并将其初始化为 NULL。 遍历链接列表。
+
 2.对于每个 i％k = 0，更新 moduleNode。
 
 ## C++

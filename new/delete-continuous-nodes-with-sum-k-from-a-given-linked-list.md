@@ -22,9 +22,13 @@
 **方法：**
 
 1.  在链接列表的开头将 Node 的值附加为零。
+
 2.  [遍历给定的链表](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)。
+
 3.  在遍历期间，将节点值的总和存储到该节点，并以 [unordered_map](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 作为当前节点的参考。
+
 4.  如果在 **unordered_map** 中存在值**（sum – K）**的节点，则从节点中删除与存储的值**（sum – K）**对应的所有节点 映射到当前节点，并将和更新为 **0** 。
+
 5.  如果在 unordered_map 中不存在**（sum – K）**值的节点，则将当前总和与节点存储在映射中。
 
 下面是上述方法的实现：
@@ -170,6 +174,7 @@ int main()
 ```
 
 ***时间复杂度：** O（N）*，其中 N 是链​​接列表中 Node 的数目。
+
 ***辅助空间复杂度：** O（N）*，其中 N 是链​​接列表中 Node 的数目。
 
 

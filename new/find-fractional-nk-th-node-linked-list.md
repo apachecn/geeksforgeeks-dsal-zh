@@ -22,6 +22,7 @@ node which is 2nd node, i.e., 7.
 ```
 
 1.  取两个指针 temp 和 fractionalNode 并分别用 null 和 head 初始化它们。
+
 2.  对于临时指针的每 k 次跳转，对 fractionalNode 指针进行一次跳转。
 
 ## C++

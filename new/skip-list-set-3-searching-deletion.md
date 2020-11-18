@@ -7,9 +7,11 @@
 搜索元素与搜索要在跳过列表中插入元素的地点的方法非常相似。 基本想法是-
 
 1.  下一个节点的关键字小于搜索关键字，然后我们继续在相同级别上前进。
+
 2.  下一个节点的密钥大于要插入的密钥，然后在 **update [i]** 处存储指向当前节点 **i** 的指针，然后向下移动一级并继续搜索。
 
 在最低级别（0），如果最右边元素（update [0]）旁边的元素的键等于搜索键，则我们发现该键否则失败。
+
 以下是用于搜索元素的伪代码–
 
 ```
@@ -24,6 +26,7 @@ else return failure
 ```
 
 考虑这个示例，我们要在其中搜索键 17-
+
 ![searching key](img/2bdf7161cd0ad83c95317e02d2c93064.png)
 
 **从跳过列表中删除元素**
@@ -51,6 +54,7 @@ if x -> key = searchKey then
 ```
 
 考虑这个示例，我们要删除元素 6 –
+
 ![deletion](img/442ce94e4574ae8099bc5f659511daee.png)
 
 在第 3 层，删除元素 6 后没有元素（红色箭头）。因此，我们将跳过列表的层数减 1。
@@ -582,10 +586,13 @@ Level 2: 17 21
 ```
 
 搜索和删除的时间复杂度相同–
+
 **时间复杂度（平均）**：![O(log n)](img/faf744094bdbb5a5e71a14a9644af0c5.png "Rendered by QuickLaTeX.com")
+
 **时间复杂度（最差）：** ![O(n)](img/d5229a9c6f59029cbbb0f53974c9a9de.png "Rendered by QuickLaTeX.com")
 
 **参考**
+
 [ftp://ftp.cs.umd.edu/pub/skipLists/skiplists.pdf](ftp://ftp.cs.umd.edu/pub/skipLists/skiplists.pdf)
 
 本文由 [**Atul Kumar**](https://www.linkedin.com/in/atul-kumar-733b32136/) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

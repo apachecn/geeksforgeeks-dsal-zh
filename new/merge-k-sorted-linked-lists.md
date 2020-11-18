@@ -28,7 +28,9 @@ than the previous element.
 ```
 
  <u>**方法 1（简单）**</u>
+
 **方法：**
+
 一个简单的解决方案是将结果初始化为第一列表。 现在从第二个列表开始遍历所有列表。 以排序的方式将当前遍历列表的每个节点插入到结果中。
 
 ```
@@ -165,19 +167,25 @@ int main()
 **复杂度分析：**
 
 *   **时间复杂度：** O（N <sup>2</sup> ），其中 N 是节点总数，即 N = kn。
+
 *   **辅助空间：** O（1）。
+
     由于不需要额外的空间。
 
  <u>**方法 2**</u> **：** [**最小堆**](https://www.geeksforgeeks.org/min-heap-in-java/) 。
+
 更好的解决方案是使用基于 Min Heap 的解决方案，在此处讨论了基于阵列的解决方案。 该解决方案的时间复杂度为 **O（nk Log k）**
 
  <u>**方法 3**</u> **：** [**分而治之**](https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/) 。
+
 在这篇文章中，讨论了**分而治之**方法。 这种方法不需要额外的堆空间，可以在 O（nk Log k）中使用
 
 众所周知，可以在 O（n）时间和 O（1）空间（对于数组需要 O（n）空间）中完成两个链表的[合并。](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)
 
 1.  这个想法是将 K 个列表配对并使用 O（1）空间在线性时间内合并每对。
+
 2.  在第一个循环之后，剩下的 K / 2 个列表的大小均为 2 * N。 在第二个循环之后，剩下的 K / 4 个列表的大小均为 4 * N，依此类推。
+
 3.  重复该过程，直到只剩下一个列表。
 
 以下是上述想法的实现。
@@ -548,8 +556,11 @@ public class Node {
 **复杂度分析：**
 
 *   **时间复杂度：** O（nk logk）。
+
     由于功能 mergeKLists（）中的外部 while 循环运行 k 次，每次处理 nk 个元素时，运行 log。
+
 *   **辅助空间：** O（1）。
+
     由于不需要额外的空间。
 
 [合并 k 个排序的链表| 第 2 组（使用最小堆）](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/)

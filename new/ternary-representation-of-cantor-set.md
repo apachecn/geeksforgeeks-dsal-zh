@@ -29,10 +29,15 @@
 **方法：**
 
 1.  为集合的每个节点创建一个[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)数据结构，并具有开始值，结束值和指向下一个节点的指针。
+
 2.  使用给定的开始和结束值初始化列表。
+
 3.  对于下一个级别：
+
     *   创建一个新节点，其起始值和终止值之差为初始值的![ \frac{1}{3} rd](img/2d7977a1418cad348246eab7c332d6b6.png "Rendered by QuickLaTeX.com")，即起始值小于初始终止值的![ \frac{1}{3} rd](img/2d7977a1418cad348246eab7c332d6b6.png "Rendered by QuickLaTeX.com")。
+
     *   此外，修改原始节点，以使最终值比初始值高![ \frac{1}{3} rd](img/2d7977a1418cad348246eab7c332d6b6.png "Rendered by QuickLaTeX.com")。
+
     *   相应地，将指向新节点的指针放在原始节点之后
 
 下面是上述方法的实现：
@@ -464,6 +469,7 @@ class GFG
 > Level_2：[0.000000] — [1.000000] [2.000000] — [3.000000] [6.000000] -[7.000000] [8.000000]-[9.000000]
 
 **参考：** [Cantor Set 维基百科](https://en.wikipedia.org/wiki/Cantor_set)
+
 **相关文章：** [乔治·康托尔有理数集的第 N 个项](https://www.geeksforgeeks.org/n-th-term-of-george-cantor-set-of-rational-numbers/)
 
 

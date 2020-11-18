@@ -54,6 +54,7 @@ public class Test {
 **1.添加元素：**为了向 ArrayList 添加元素，我们可以使用 [add（）方法](https://www.geeksforgeeks.org/java-util-linkedlist-add-method-in-java/)。 重载此方法可以根据不同的参数执行多项操作。 他们是：
 
 *   **add（Object）：**此方法用于在 LinkedList 的末尾添加元素。
+
 *   **add（int index，Object）：**此方法用于在 LinkedList 中的特定索引处添加元素。
 
 ```
@@ -126,6 +127,7 @@ Updated LinkedList [Geeks, For, Geeks]
 **3.删除元素：**为了从 LinkedList 中删除元素，我们可以使用 [remove（）方法](https://www.geeksforgeeks.org/linkedlist-remove-method-in-java/)。 重载此方法可以根据不同的参数执行多项操作。 他们是：
 
 *   **remove（Object）：**此方法仅用于从 LinkedList 中删除对象。 如果存在多个这样的对象，那么将删除第一次出现的对象。
+
 *   **remove（int index）：**由于对 LinkedList 进行了索引，因此此方法采用一个整数值，该值简单地删除存在于 LinkedList 中该特定索引处的元素。 删除元素之后，所有元素都将移至左侧以填充空间，并且对象的索引将更新。
 
 ```
@@ -221,7 +223,9 @@ Geeks For Geeks
 在上图中， [AbstractList](https://www.geeksforgeeks.org/abstractlist-in-java-with-examples/) ， [CopyOnWriteArrayList](https://www.geeksforgeeks.org/copyonwritearraylist-in-java/) 和 [AbstractSequentialList](https://www.geeksforgeeks.org/abstractsequentiallist-in-java-with-examples/) 是实现列表接口的类。 在每个提到的类中实现了单独的功能。 他们是：
 
 1.  **AbstractList：**此类用于实现不可修改的列表，为此，只需扩展此 AbstractList 类并仅实现 get（）和 size（）方法。
+
 2.  **CopyOnWriteArrayList：**此类实现列表接口。 它是 ArrayList 的增强版本，其中的所有修改（添加，设置，删除等）都是通过制作列表的新副本来实现的。
+
 3.  **AbstractSequentialList：**此类实现 Collection 接口和 AbstractCollection 类。 此类用于实现不可修改的列表，对于该列表，只需扩展此 AbstractList 类并仅实现 get（）和 size（）方法。
 
 ### LinkedList 如何在内部工作？
@@ -243,45 +247,86 @@ Geeks For Geeks
 ### Java LinkedList 的方法
 
 | 方法 | 描述 |
+
 | **[add（int index，E element）](https://www.geeksforgeeks.org/java-util-linkedlist-add-method-in-java/)** | 此方法将指定的元素插入此列表中的指定位置。 |
+
 | **[add（E e）](https://www.geeksforgeeks.org/java-util-linkedlist-add-method-in-java/)** | 此方法将指定的元素追加到此列表的末尾。 |
+
 | **[addAll（int index，Collection < E > c）](https://www.geeksforgeeks.org/java-util-linkedlist-addall-method-in-java/)** | 此方法从指定位置开始将指定集合中的所有元素插入此列表。 |
+
 | **[addAll（Collection < E > c）](https://www.geeksforgeeks.org/java-util-linkedlist-addall-method-in-java/)** | 此方法按照指定集合的​​迭代器返回的顺序，将指定集合中的所有元素追加到此列表的末尾。 |
+
 | **[addFirst（E e）](https://www.geeksforgeeks.org/linkedlist-addfirst-method-in-java/)** | 此方法将指定的元素插入此列表的开头。 |
+
 | **[addLast（E e）](https://www.geeksforgeeks.org/linkedlist-addlast-method-in-java/)** | 此方法将指定的元素追加到此列表的末尾。 |
+
 | **[clear（）](https://www.geeksforgeeks.org/linkedlist-clear-method-in-java/)** | 此方法从此列表中删除所有元素。 |
+
 | **[clone（）](https://www.geeksforgeeks.org/linkedlist-clone-method-in-java/)** | 此方法返回此 LinkedList 的浅表副本。 |
+
 | **[包含（对象 o）](https://www.geeksforgeeks.org/linkedlist-contains-method-in-java/)** | 如果此列表包含指定的元素，则此方法返回 true。 |
+
 | **[endingIterator（）](https://www.geeksforgeeks.org/linkedlist-descendingiterator-method-in-java-with-examples/)** | 此方法以相反的顺序在此双端队列中返回元素的迭代器。 |
+
 | **[element（）](https://www.geeksforgeeks.org/linkedlist-element-method-in-java-with- examples/)** | 此方法检索但不删除此列表的头（第一个元素）。 |
+
 | **[get（int 索引）](https://www.geeksforgeeks.org/linkedlist-get-method-in-java/)** | 此方法返回此列表中指定位置的元素。 |
+
 | **[getFirst（）](https://www.geeksforgeeks.org/java-util-linkedlist-get-getfirst-getlast-java/)** | 此方法返回此列表中的第一个元素。 |
+
 | **[getLast（）](https://www.geeksforgeeks.org/linkedlist-getlast-method-in-java/)** | 此方法返回此列表中的最后一个元素。 |
+
 | **[indexOf（Object o）](https://www.geeksforgeeks.org/linkedlist-indexof-method-in-java/)** | 此方法返回此列表中指定元素的第一个匹配项的索引；如果此列表不包含该元素，则返回-1。 |
+
 | **[lastIndexOf（Object o）](https://www.geeksforgeeks.org/linkedlist-lastindexof-method-in-java/)** | 此方法返回此列表中指定元素的最后一次出现的索引；如果此列表不包含该元素，则返回-1。 |
+
 | **[listIterator（int index）](https://www.geeksforgeeks.org/linkedlist-listiterator-method-in-java/)** | 此方法从列表中的指定位置开始（按适当顺序）返回此列表中元素的列表迭代器。 |
+
 | **[报价（E e）](https://www.geeksforgeeks.org/java-util-linkedlist-offer-offerfirst-offerlast-java/)** | 此方法将指定的元素添加为此列表的尾部（最后一个元素）。 |
+
 | **[offerFirst（E e）](https://www.geeksforgeeks.org/java-util-linkedlist-offer-offerfirst-offerlast-java/)** | 此方法将指定的元素插入此列表的开头。 |
+
 | **[报价最后（E e）](https://www.geeksforgeeks.org/java-util-linkedlist-offer-offerfirst-offerlast-java/)** | 此方法将指定的元素插入此列表的末尾。 |
+
 | **[peek（）](https://www.geeksforgeeks.org/java-util-linkedlist-peek-peekfirst-peeklast-java/)** | 此方法检索但不删除此列表的头（第一个元素）。 |
+
 | **[peekFirst（）](https://www.geeksforgeeks.org/java-util-linkedlist-peek-peekfirst-peeklast-java/)** | 此方法检索但不删除此列表的第一个元素，如果此列表为空，则返回 null。 |
+
 | **[peekLast（）](https://www.geeksforgeeks.org/java-util-linkedlist-peek-peekfirst-peeklast-java/)** | 此方法检索但不删除此列表的最后一个元素，如果此列表为空，则返回 null。 |
+
 | **[poll（）](https://www.geeksforgeeks.org/java-util-linkedlist-poll-pollfirst-polllast- examples-java/)** | 此方法检索并删除此列表的头（第一个元素）。 |
+
 | **[pollFirst（）](https://www.geeksforgeeks.org/java-util-linkedlist-poll-pollfirst-polllast- examples-java/)** | 此方法检索并删除此列表的第一个元素，如果此列表为空，则返回 null。 |
+
 | **[pollLast（）](https://www.geeksforgeeks.org/java-util-linkedlist-poll-pollfirst-polllast- examples-java/)** | 此方法检索并删除此列表的最后一个元素，如果此列表为空，则返回 null。 |
+
 | **[pop（）](https://www.geeksforgeeks.org/linkedlist-pop-method-in-java/)** | 此方法从此列表表示的堆栈中弹出一个元素。 |
+
 | **[push（E e）](https://www.geeksforgeeks.org/linkedlist-push-method-in-java/)** | 此方法将元素压入此列表表示的堆栈。 |
+
 | **[remove（）](https://www.geeksforgeeks.org/linkedlist-remove-method-in-java/)** | 此方法检索并删除此列表的头（第一个元素）。 |
+
 | **[remove（int index）](https://www.geeksforgeeks.org/linkedlist-remove-method-in-java/)** | 此方法删除此列表中指定位置的元素。 |
+
 | **[移除（对象 o）](https://www.geeksforgeeks.org/linkedlist-remove-method-in-java/)** | 如果存在，此方法将从列表中删除第一次出现的指定元素。 |
+
 | **[removeFirst（）](https://www.geeksforgeeks.org/linkedlist-removefirst-method-in-java/)** | 此方法从此列表中删除并返回第一个元素。 |
+
 | **[removeFirstOccurrence（Object o）](https://www.geeksforgeeks.org/linkedlist-removefirstoccurrence-method-in- java/)** | 此方法删除指定元素在此列表中的首次出现（当从头到尾遍历列表时）。 |
+
 | **[removeLast（）](https://www.geeksforgeeks.org/linkedlist-removelast-method-in-java/)** | 此方法从列表中删除并返回最后一个元素。 |
+
 | **[removeLastOccurrence（Object o）](https://www.geeksforgeeks.org/linkedlist-removelastoccurrence-method-in-java-with-example/)** | 此方法删除该列表中最后一次出现的指定元素（当从头到尾遍历列表时）。 |
+
 | **[set（int index，E element）](https://www.geeksforgeeks.org/linkedlist-set-method-in-java/)** | 此方法用指定的元素替换此列表中指定位置的元素。 |
+
 | **[size（）](https://www.geeksforgeeks.org/linkedlist-size-method-in-java/)** | 此方法返回此列表中的元素数。 |
+
 | **[splitter（）](https://www.geeksforgeeks.org/linkedlist-spliterator-method-in-java/)** | 此方法在此列表中的元素上创建后绑定和故障快速的 Spliterator。 |
+
 | **[toArray（）](https://www.geeksforgeeks.org/linkedlist-toarray-method-in-java-with-example/)** | 此方法以正确的顺序（从第一个元素到最后一个元素）返回一个包含此列表中所有元素的数组。 |
+
 | **[toArray（T [] a）](https://www.geeksforgeeks.org/linkedlist-toarray-method-in-java-with-example/)** | 此方法以正确的顺序（从第一个元素到最后一个元素）返回一个包含此列表中所有元素的数组。 返回数组的运行时类型是指定数组的运行时类型。 |
+
 | **toString（）** | 此方法返回一个字符串，该字符串按适当顺序（从第一个元素到最后一个元素）包含此列表中的所有元素，每个元素用逗号分隔，并且该字符串括在方括号中。 |
 
