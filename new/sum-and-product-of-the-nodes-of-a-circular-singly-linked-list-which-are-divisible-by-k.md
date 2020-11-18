@@ -1,0 +1,49 @@
+# 可被K整除的循环单链接列表的节点的总和和
+
+给定一个单循环链表。 任务是找到可被给定链表的K整除的节点的总和和乘积。
+
+**范例**：
+
+```
+Input : List = 5->6->7->8->9->10->11->11
+             K = 11
+Output : Sum = 22, Product = 121
+
+Input : List = 15->7->3->9->11->5
+             K = 5
+Output : Product = 75, Sum = 20
+
+```
+
+![Sum And Product of Singly Circular Linked List Node](img/8795cc5795962963898fe645c6ba5260.png)
+
+单循环链表节点的总和与乘积
+
+**方法：**
+
+1.  用循环链表的开头初始化指针电流，并将和变量**和**设为0，并将乘积变量**积**设为1。
+2.  使用do while循环开始遍历链表，直到遍历所有节点。
+3.  如果当前节点数据可被给定键整除。
+    *   将当前节点的值添加到总和，即 **sum =总和+当前->数据**。
+    *   将当前节点的值乘以乘积，即**乘积=乘积*当前->数据**。
+    *   递增指向链表的下一个节点的指针，即 **temp = temp-> next** 。
+4.  打印总和和乘积。
+
+下面是上述方法的实现：
+
+## C ++
+
+*filter_none*
+
+*编辑*
+*关闭*
+
+*play_arrow*
+
+*链接*
+*亮度_4*
+*代码*
+
+| `// C++ program to calculate sum and product from``// singly circular linked list nodes``// which are divisible by given key``#include <bits/stdc++.h>``using` `namespace` `std;``// Circular list node``struct` `Node {` `int` `data;` `struct` `Node* next;``};``// Function to calculate sum and product``void` `sumProduct(` `struct` `Node* head,` `int` `key)``{` `struct` `Node* current = head;` `int` `sum = 0, product = 1;` `// if list is empty simply show message` `if` `(head == NULL) {` `printf` `(` `"\nDisplay List is empty\n"` `);` `return` `;` `}` `// traverse first to last node` `else` `{` `do` `{` `// check if current node's data is` `// divisible by key` `if` `((current->data) % key == 0) {` [ `// Calculate sum` `sum += current->data;` `// Calculate product` `product *= current->data;` `}` `current = current->next;` `}` `while` `(current != head);` `}` `cout <<` `"Sum = "` `<< sum <<` `", Product = "` `<< product;``}``// Function print the list``void` `displayList(` `struct` `Node* head)``{` `struct` `Node* current = head;` `// if list is empty simply show message` `if` `(head == NULL) {` `printf` `(` `"\nDisplay List is empty\n"` `);` `return` `;` `}` `// traverse first to last node` `else` `{` `do` `{` `printf` `(` `"%d "` `, current->data);` `current = current->next;` `}` `while` `(current != head);` `}``}``// Function to insert a node at the end of``// a Circular linked list``void` `InsertNode(` `struct` `Node** head,` `int` `data)``{` `struct` `Node* current = *head;` `// Create a new node` `struct` `Node* newNode =` `new` `Node;` `// check node is created or not` `if` `(!newNode) {` `printf` `(` `"\nMemory Error\n"` `);` `return` `;` `}` `// insert data into newly created node` `newNode->data = data;` `// check list is empty` `// if not have any node then` `// make first node it` `if` `(*head == NULL) {` `newNode->next = newNode;` `*head = newNode;` `return` `;` `}` [ `// if list have already some node` `else` `{` `// move firt node to last node` `while` `(current->next != *head) {` `current = current->next;` `}` `// put first or head node address in new node link` `newNode->next = *head;` `current->next = newNode;` `}``}``// Driver Code``int` `main()``{` `struct` `Node* head = NULL;` `InsertNode(&head, 5);` `InsertNode(&head, 6);` `InsertNode(&head, 7);` `InsertNode(&head, 8);` `InsertNode(&head, 9);` `InsertNode(&head, 10);` `InsertNode(&head, 11);` `InsertNode(&head, 11);`[HTG25 5] `cout <<` `"Initial List: "` `;` `displayList(head);` `cout << endl;` `sumProduct(head, 11);` `return` `0;` ​​`}`] |
+
+*chevron_right**filter_none*

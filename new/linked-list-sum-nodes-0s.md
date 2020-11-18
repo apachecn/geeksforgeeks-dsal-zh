@@ -1,0 +1,36 @@
+# 链接列表的节点总数为0之间
+
+给定一个链表，其中包含一系列用“ 0”分隔的数字。 添加它们并将它们存储在链接列表中。
+**注意：**输入中不会存在连续的零。
+
+例子：
+
+```
+Input  : 1->2->3->0->5->4->0->3->2->0
+Output : 6->9->5
+
+Input  : 1->2->3->4
+Output : 1->2->3->4
+
+```
+
+1.开始遍历链表的节点。
+2.在temp.data！= 0时进行迭代，并将这些数据添加到变量“ sum”中。
+3.当遇到0作为该节点的数据时，请更改先前节点的指针。
+
+## C ++
+
+*filter_none*
+
+*编辑*
+*关闭*
+
+*play_arrow*
+
+*链接*
+*亮度_4*
+*代码*
+
+| `// C++ program to in-place add linked list ``// nodes between 0s.``#include <bits/stdc++.h>``using` `namespace` `std;``#define NODE struct node``// Structure of a node``NODE``{` `int` `data;` `struct` `node *next;``};``// Function to create a node``NODE *getNode(` `int` `val)``{` `NODE *temp;` `temp = (NODE*)` `malloc` `(` `sizeof` `(NODE));` `temp->data = val;` `temp->next = NULL;` `return` `temp;``}``// Function to traverse and print Linked List ``void` `printList(NODE *head)``{` `while` `(head->next)` `{` `cout << head->data <<` `"-> "` `;` `head = head->next;` `}` `cout <<` `"->"` `<< head->data ;``}``void` `inPlaceStore(NODE *head)``{` `// Function to store numbers till 0 ` `if` `(head->data == 0)` `{` `head = head->next;` `}` `// To store modified list ` `NODE *res = head;` `// Traverse linked list and keep ` `// adding nodes between 0s. ` `NODE *temp = head;` `int` `sum = 0;` `while` `(temp)` [ `{` [ `// loop to sum the data of nodes till ` `// it encounters 0 ` `if` `(temp->data != 0)` `{` `sum += temp->data;` `temp = temp->next;` `}` `// If we encounters 0, we need ` `// to update next pointers ` `else`] `{` `res->data = sum;` `res->next = temp->next;` `temp = temp->next;` `res = temp;` `sum = 0;` `}` `}` `printList(head);``}` `main() ``{` `NODE *head;` `head = getNode(3);` `head->next = getNode(2);` `head->next->next = getNode(0);` `head->next->next->next = getNode(4);` `head->next->next->next->next = getNode(5);` `head->next->next->next->next->next = getNode(0);` `head->next->next->next->next->next->next = getNode(6);` `head->next->next->next->next->next->next->next = getNode(7);` `inPlaceStore(head);` `return` `0;``}``// This code is contributed by shivanisinghss2110` |
+
+*chevron_right**filter_none*

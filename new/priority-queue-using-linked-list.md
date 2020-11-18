@@ -1,0 +1,60 @@
+# 使用链接列表
+
+的优先级队列
+
+使用链接列表实现优先级队列。
+
+**Operations on Priority Queue :**
+
+*   push（）：此函数用于将新数据插入队列。
+*   pop（）：此函数从队列中删除优先级最高的元素。
+*   peek（）/ top（）：此函数用于获取队列中优先级最高的元素，而无需将其从队列中删除。
+
+可以使用常见的数据结构（如数组，链接列表，堆和二叉树）来实现优先级队列。
+
+**先决条件：**
+[链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)，[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
+
+这样创建列表，以使优先级最高的元素始终位于列表的开头。 该列表根据元素的优先级以降序排列。 这使我们可以删除O（1）时间中的最高优先级元素。 要插入元素，我们必须遍历列表并找到合适的位置插入节点，以便维护优先级队列的整体顺序。 这使push（）操作花费O（N）时间。 pop（）和peek（）操作在固定时间内执行。
+
+**算法：**
+PUSH（HEAD，数据，优先级）
+步骤1：使用DATA和PRIORITY创建新节点
+步骤2：检查HEAD是否具有较低的优先级。 如果是，请执行步骤3-4，然后结束。 否则，转到步骤5。
+步骤3：NEW-> NEXT = HEAD
+步骤4：HEAD = NEW
+步骤5：将TEMP设置为列表的标题
+步骤6：While TEMP- >下一个！= NULL和TEMP->下一个->优先级>优先级
+步骤7：TEMP = TEMP->下一个
+[循环结束]
+步骤8 ：新->下一个=温度->下一个
+步骤9：温度->下一个=新
+步骤10：结束
+
+POP（HEAD）
+步骤2：将列表的开头设置为列表中的下一个节点。 HEAD = HEAD-> NEXT。
+步骤3：释放列表顶部的节点
+步骤4：结束
+
+PEEK（HEAD）：
+步骤1：返回HEAD-> DATA
+步骤2：结束
+
+下面是该算法的实现：
+
+## C ++
+
+*filter_none*
+
+*编辑*
+*关闭*
+
+*play_arrow*
+
+*链接*
+*亮度_4*
+*代码*
+
+| `// C++ code to implement Priority Queue``// using Linked List``#include <bits/stdc++.h>``using` `namespace` `std;` [`// Node``typedef` `struct` `node``{` `int` `data;` `// Lower values indicate ` `// higher priority` `int` `priority;` `struct` `node* next;``} Node;``// Function to create a new node``Node* newNode(` `int` `d,` `int` `p)``{` `Node* temp = (Node*)` `malloc` `(` `sizeof` `(Node));` `temp->data = d;` `temp->priority = p;` `temp->next = NULL;` `return` `temp;``}``// Return the value at head``int` ] `peek(Node** head)``{` `return` `(*head)->data;``}`的`// Removes the element with the``// highest priority form the list`​​ `void` `pop(Node** head)``{` `Node* temp = *head;` `(*head) = (*head)->next;` `free` `(temp);``}``// Function to push according to priority``void` `push(Node** head,` `int` `d,` `int` `p)``{` `Node* start = (*head);` `// Create new Node` `Node* temp = newNode(d, p);` `// Special Case: The head of list has` [HTG30 1] `// lesser priority than new node. So ` `// insert newnode before head node ` `// and change head node.` `if` `((*head)->priority > p)` `{` `// Insert New Node before head` `temp->next = *head;` `(*head) = temp;` `}` `else` `{`[ `// Traverse the list and find a` `// position to insert new node` `while` `(start->next != NULL && ` `start->next->priority < p) ` `{` `start = start->next;` `}`] `// Either at the ends of the list` `// or at required position` `temp->next = start->next;` `start->next = temp;` `}``}``// Function to check is list is empty``int` `isEmpty(Node** head)``{` `return` `(*head) == NULL;``}``// Driver code``int` `main()``{` `// Create a Priority Queue` `// 7->4->5->6` `Node* pq = newNode(4, 1);` `push(&pq, 5, 2);` `push(&pq, 6, 3);` `push(&pq, 7, 0);` `while` `(!isEmpty(&pq)) ` `{` `cout <<` `" "` `<< peek(&pq);` `pop(&pq);` `}`[HTG4 02]  `return` `0;``}``// This code is contributed by shivanisinghss2110` |
+
+*chevron_right**filter_none*

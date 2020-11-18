@@ -1,0 +1,44 @@
+# 在双向链接列表
+
+中从第K个节点开始从第K个节点开始交换。
+
+先决条件：[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)
+给定[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)，任务是从头开始交换 **K <sup>个</sup>** 节点 从头开始的 **K <sup>个</sup>** 节点。
+
+**注意：**请注意，此处交换了节点，而不交换了节点中的数据。
+
+**示例：**
+
+> **输入：** DLL = 1 <-> 2 <-> 3 <-> 4 <-> 5 <-> 6，K = 3
+> **输出：** 1 2 4 3 5 6
+> **说明：**
+> 从头（3）开始的第三个节点与从 结局（4）。
+> 
+> **输入：** DLL = 1 <-> 2 <-> 3 <-> 4 <-> 5，K = 1
+> **输出：** 5 2 3 4 1
+
+**方法：**的想法是从头开始遍历 **K <sup>第</sup>** 个元素，从 **K <sup>第</sup>** 个节点 结束并更改上一个和下一个指针。 假设 **K1** 为从头开始的 **K <sup>个</sup>** 节点， **K2** 为第 **K <sup>个</sup>** 节点结束。 然后：
+
+*   **K2** 的先前节点必须更改为 **K1** 的先前节点。
+*   **K2** 的下一个节点必须更改为 **K1** 的下一个节点。
+*   **K1** 的先前节点必须更改为 **K2** 的先前节点。
+*   **K1** 的下一个节点必须更改为 **K2** 的下一个节点。
+
+下面是上述方法的实现：
+
+## 爪哇
+
+*filter_none*
+
+*编辑*
+*关闭*
+
+*play_arrow*
+
+*链接*
+*亮度_4*
+*代码*
+
+| `// Java implementation of the approach``public` `class` `GFG {``// Doubly Linked List implementation``private` `class` `Node {``private` `int` `data;``private` `Node next;``private` `Node previous;``public` `Node(``int` `data, Node next,``Node previous)``{``this``.data = data;``this``.next = next;``this``.previous = previous;``}``public` `int` `getData()``{``return` `data;``}``public` `void` `setData(``int` `data)``{``this``.data = data;``}``public` `Node getNext()``{``return` `next;``}``public` `void` `setNext(Node next)``{``this``.next = next;``}``public` `Node getPrevious()``{``return` `previous;``}``public` `void` `setPrevious(Node previous)``{``this``.previous = previous;``}``}``private` `Node head;``private` `Node tail;``public` `GFG()``{``this``.head =` `null``;``this``.tail =` `null``;``}``public` `Node getHead()``{``return` `head;``}``public` `void` `setHead(Node head)``{``this``.head = head;``}``public` `Node getTail()``{``return` `tail;``}``public` `void` `setTail(Node tail)``{``this``.tail = tail;``}``// Function to replace Kth node from``// beginning with Kth node from end``public` `void` `swapNode(Node headReference,``Node tailReference,` `int` `k)``{``// If K is 1, then the first node``// has to be swapped with the``// last node in the doubly linked list``if` `(k ==` `1``) {``swapFirstAndLast(headReference,``tailReference);``return``;``}``// If k is N, then the last node``// has to be swapped with the``// first node in the doubly linked list``int` `nodeCount = getCount(headReference);``if` `(k == nodeCount) {``swapFirstAndLast(headReference,``tailReference);``return``;``}``// If the K<sup>th</sup> node from``// the beginning and K<sup>th</sup> node``// from the ending are same``if` `(``2` `* k -` `1` `== nodeCount) {``return``;``}``// fNode represents K<sup>th</sup> node``// from the beginning``Node fNode = headReference;``for` `(``int` `i =` `1``; i < k; i++) {``fNode = fNode.getNext();``}``Node fNodePrevious = fNode.getPrevious();``Node fNodeNext = fNode.getNext();``// sNode represents K<sup>th</sup> node``// from the ending``Node sNode = tailReference;``for` `(``int` `i =` `1``; i < k; i++) {``sNode = sNode.getPrevious();``}``Node sNodePrevious = sNode.getPrevious();``Node sNodeNext = sNode.getNext();``// Checking if any of the pointers is null``// and interchanging the pointers``if` `(fNodePrevious !=` `null` `&& sNode !=` `null``) {``fNodePrevious.setNext(sNode);``sNode.setPrevious(fNodePrevious);``sNode.setNext(fNodeNext);``fNodeNext.setPrevious(sNode);``}``if` `(sNodePrevious !=` `null` `&& sNodeNext !=` `null``) {``sNodeNext.setPrevious(fNode);``fNode.setNext(sNodeNext);``sNodePrevious.setNext(fNode);``fNode.setPrevious(sNodePrevious);``}``}``// Function to swap the first and``// last node in the doubly linked list``private` `void` `swapFirstAndLast(``Node headReference,``Node tailReference)``{``Node headRef = headReference;``Node tailRef = tailReference;``headReference``= headReference.getNext();``tailReference``= tailReference.getPrevious();``tailReference.setNext(headRef);``headRef.setPrevious(tailReference);``headRef.setNext(``null``);``this``.setTail(tailReference.getNext());``headReference.setPrevious(tailRef);``tailRef.setNext(headReference);``tailRef.setPrevious(``null``);``this``.setHead(headReference``.getPrevious());``}``// Function to return the number of nodes``// in the linked list``private` `int` `getCount(Node headReference)``{``int` `nodeCount =` `0``;``while` `(headReference !=` `null``) {``nodeCount++;``headReference = headReference``.getNext();``}``return` `nodeCount;``}``// Function to print the Linked List``public` `void` `printList(Node headReference)``{``if` `(headReference ==` `null``) {``System.out.println(``"Doubly linked list is empty"``);``return``;``}``else` `{``while` `(headReference !=` `null``) {``System.out.print(``headReference.getData()``+` `" "``);``headReference``= headReference.getNext();``}``}``}``// Function to insert a node at``// the end of the doubly linked list``public` `void` `push(``int` `data)``{``Node newNode``=` `new` `Node(data,` `null``,` `null``);``if` `(head ==` `null``) {``head = tail = newNode;``}``else` `{``tail.setNext(newNode);``newNode.setPrevious(tail);``tail = newNode;``}``}``// Driver code``public` `static` `void` `main(String[] args)``{``// Creating an object for the class``GFG list =` `new` `GFG();``// Adding data to the linked list``list.push(``1``);``list.push(``2``);``list.push(``3``);``list.push(``4``);``list.push(``5``);``// Calling the function``int` `K =` `2``;``list.swapNode(list.getHead(),``list.getTail(), K);``list.printList(list.getHead());``}``}` |
+
+*chevron_right**filter_none*

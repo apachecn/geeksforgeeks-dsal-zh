@@ -1,0 +1,433 @@
+# 就地重新排列给定的链表。
+
+给定一个单链表L <sub>0</sub> -> L <sub>1</sub> ->…-> L <sub>n-1</sub> -> L [ <sub>n</sub> 。 重新排列列表中的节点，以使新形成的列表为：L <sub>0</sub> -> L <sub>n</sub> -> L <sub>1</sub> -> L <sub>n-1</sub> -> L <sub>2</sub> -> L <sub>n-2</sub> …
+
+您需要就地执行此操作，而无需更改节点的值。
+**范例：**
+
+```
+Input:  1 -> 2 -> 3 -> 4
+Output: 1 -> 4 -> 2 -> 3
+
+Input:  1 -> 2 -> 3 -> 4 -> 5
+Output: 1 -> 5 -> 2 -> 4 -> 3 
+```
+
+**简单解决方案**
+
+```
+1) Initialize current node as head.
+2) While next of current node is not null, do following
+    a) Find the last node, remove it from the end and insert it as next
+       of the current node.
+    b) Move current to next to next of current
+```
+
+上述简单解决方案的时间复杂度为O（n <sup>2</sup> ），其中n是链表中节点的数量。
+
+**更好的解决方案**
+1）将给定链表的内容复制到向量中。
+2）通过交换两端的节点来重新排列给定向量。
+3）将修改后的向量复制回链接列表。
+此方法的实现： [https://ide.geeksforgeeks.org/1eGSEy](https://ide.geeksforgeeks.org/1eGSEy)
+感谢Arushi Dhamija提出了此方法。
+
+**高效解决方案：**
+
+```
+1) Find the middle point using tortoise and hare method.
+2) Split the linked list into two halves using found middle point in step 1.
+3) Reverse the second half.
+4) Do alternate merge of first and second halves. 
+```
+
+该解决方案的时间复杂度为O（n）。
+
+下面是此方法的实现。
+
+## C ++
+
+```
+
+// C++ program to rearrange a linked list in-place 
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// Linkedlist Node structure 
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
+
+// Function to create newNode in a linkedlist 
+Node* newNode(int key) 
+{ 
+    Node* temp = new Node; 
+    temp->data = key; 
+    temp->next = NULL; 
+    return temp; 
+} 
+
+// Function to reverse the linked list 
+void reverselist(Node** head) 
+{ 
+    // Initialize prev and current pointers 
+    Node *prev = NULL, *curr = *head, *next; 
+
+    while (curr) { 
+        next = curr->next; 
+        curr->next = prev; 
+        prev = curr; 
+        curr = next; 
+    } 
+
+    *head = prev; 
+} 
+
+// Function to print the linked list 
+void printlist(Node* head) 
+{ 
+    while (head != NULL) { 
+        cout << head->data << " "; 
+        if (head->next) 
+            cout << "-> "; 
+        head = head->next; 
+    } 
+    cout << endl; 
+} 
+
+// Function to rearrange a linked list 
+void rearrange(Node** head) 
+{ 
+    // 1) Find the middle point using tortoise and hare method 
+    Node *slow = *head, *fast = slow->next; 
+    while (fast && fast->next) { 
+        slow = slow->next; 
+        fast = fast->next->next; 
+    } 
+
+    // 2) Split the linked list in two halves 
+    // head1, head of first half    1 -> 2 
+    // head2, head of second half   3 -> 4 
+    Node* head1 = *head; 
+    Node* head2 = slow->next; 
+    slow->next = NULL; 
+
+    // 3) Reverse the second half, i.e.,  4 -> 3 
+    reverselist(&head2); 
+
+    // 4) Merge alternate nodes 
+    *head = newNode(0); // Assign dummy Node 
+
+    // curr is the pointer to this dummy Node, which will 
+    // be used to form the new list 
+    Node* curr = *head; 
+    while (head1 || head2) { 
+        // First add the element from list 
+        if (head1) { 
+            curr->next = head1; 
+            curr = curr->next; 
+            head1 = head1->next; 
+        } 
+
+        // Then add the element from the second list 
+        if (head2) { 
+            curr->next = head2; 
+            curr = curr->next; 
+            head2 = head2->next; 
+        } 
+    } 
+
+    // Assign the head of the new list to head pointer 
+    *head = (*head)->next; 
+} 
+
+// Driver program 
+int main() 
+{ 
+    Node* head = newNode(1); 
+    head->next = newNode(2); 
+    head->next->next = newNode(3); 
+    head->next->next->next = newNode(4); 
+    head->next->next->next->next = newNode(5); 
+
+    printlist(head); // Print original list 
+    rearrange(&head); // Modify the list 
+    printlist(head); // Print modified list 
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to rearrange link list in place 
+
+// Linked List Class 
+class LinkedList { 
+
+    static Node head; // head of the list 
+
+    /* Node Class */
+    static class Node { 
+
+        int data; 
+        Node next; 
+
+        // Constructor to create a new node 
+        Node(int d) 
+        { 
+            data = d; 
+            next = null; 
+        } 
+    } 
+
+    void printlist(Node node) 
+    { 
+        if (node == null) { 
+            return; 
+        } 
+        while (node != null) { 
+            System.out.print(node.data + " -> "); 
+            node = node.next; 
+        } 
+    } 
+
+    Node reverselist(Node node) 
+    { 
+        Node prev = null, curr = node, next; 
+        while (curr != null) { 
+            next = curr.next; 
+            curr.next = prev; 
+            prev = curr; 
+            curr = next; 
+        } 
+        node = prev; 
+        return node; 
+    } 
+
+    void rearrange(Node node) 
+    { 
+
+        // 1) Find the middle point using tortoise and hare method 
+        Node slow = node, fast = slow.next; 
+        while (fast != null && fast.next != null) { 
+            slow = slow.next; 
+            fast = fast.next.next; 
+        } 
+
+        // 2) Split the linked list in two halves 
+        // node1, head of first half    1 -> 2 -> 3 
+        // node2, head of second half   4 -> 5 
+        Node node1 = node; 
+        Node node2 = slow.next; 
+        slow.next = null; 
+
+        // 3) Reverse the second half, i.e., 5 -> 4 
+        node2 = reverselist(node2); 
+
+        // 4) Merge alternate nodes 
+        node = new Node(0); // Assign dummy Node 
+
+        // curr is the pointer to this dummy Node, which will 
+        // be used to form the new list 
+        Node curr = node; 
+        while (node1 != null || node2 != null) { 
+
+            // First add the element from first list 
+            if (node1 != null) { 
+                curr.next = node1; 
+                curr = curr.next; 
+                node1 = node1.next; 
+            } 
+
+            // Then add the element from second list 
+            if (node2 != null) { 
+                curr.next = node2; 
+                curr = curr.next; 
+                node2 = node2.next; 
+            } 
+        } 
+
+        // Assign the head of the new list to head pointer 
+        node = node.next; 
+    } 
+
+    public static void main(String[] args) 
+    { 
+
+        LinkedList list = new LinkedList(); 
+        list.head = new Node(1); 
+        list.head.next = new Node(2); 
+        list.head.next.next = new Node(3); 
+        list.head.next.next.next = new Node(4); 
+        list.head.next.next.next.next = new Node(5); 
+
+        list.printlist(head); // print original list 
+        list.rearrange(head); // rearrange list as per ques 
+        System.out.println(""); 
+        list.printlist(head); // print modified list 
+    } 
+} 
+
+// This code has been contributed by Mayank Jaiswal 
+
+```
+
+## C＃
+
+```
+
+// C# program to rearrange link list in place 
+using System; 
+
+// Linked List Class 
+public class LinkedList { 
+
+    Node head; // head of the list 
+
+    /* Node Class */
+    class Node { 
+
+        public int data; 
+        public Node next; 
+
+        // Constructor to create a new node 
+        public Node(int d) 
+        { 
+            data = d; 
+            next = null; 
+        } 
+    } 
+
+    void printlist(Node node) 
+    { 
+        if (node == null) { 
+            return; 
+        } 
+        while (node != null) { 
+            Console.Write(node.data + " -> "); 
+            node = node.next; 
+        } 
+    } 
+
+    Node reverselist(Node node) 
+    { 
+        Node prev = null, curr = node, next; 
+        while (curr != null) { 
+            next = curr.next; 
+            curr.next = prev; 
+            prev = curr; 
+            curr = next; 
+        } 
+        node = prev; 
+        return node; 
+    } 
+
+    void rearrange(Node node) 
+    { 
+
+        // 1) Find the middle point using 
+        // tortoise and hare method 
+        Node slow = node, fast = slow.next; 
+        while (fast != null && fast.next != null) { 
+            slow = slow.next; 
+            fast = fast.next.next; 
+        } 
+
+        // 2) Split the linked list in two halves 
+        // node1, head of first half 1 -> 2 -> 3 
+        // node2, head of second half 4 -> 5 
+        Node node1 = node; 
+        Node node2 = slow.next; 
+        slow.next = null; 
+
+        // 3) Reverse the second half, i.e., 5 -> 4 
+        node2 = reverselist(node2); 
+
+        // 4) Merge alternate nodes 
+        node = new Node(0); // Assign dummy Node 
+
+        // curr is the pointer to this dummy Node, which will 
+        // be used to form the new list 
+        Node curr = node; 
+        while (node1 != null || node2 != null) { 
+
+            // First add the element from first list 
+            if (node1 != null) { 
+                curr.next = node1; 
+                curr = curr.next; 
+                node1 = node1.next; 
+            } 
+
+            // Then add the element from second list 
+            if (node2 != null) { 
+                curr.next = node2; 
+                curr = curr.next; 
+                node2 = node2.next; 
+            } 
+        } 
+
+        // Assign the head of the new list to head pointer 
+        node = node.next; 
+    } 
+
+    // Driver code 
+    public static void main(String[] args) 
+    { 
+
+        LinkedList list = new LinkedList(); 
+        list.head = new Node(1); 
+        list.head.next = new Node(2); 
+        list.head.next.next = new Node(3); 
+        list.head.next.next.next = new Node(4); 
+        list.head.next.next.next.next = new Node(5); 
+
+        list.printlist(list.head); // print original list 
+        list.rearrange(list.head); // rearrange list as per ques 
+        Console.WriteLine(""); 
+        list.printlist(list.head); // print modified list 
+    } 
+} 
+
+/* This code is contributed PrinciRaj1992 */
+
+```
+
+**Output:**
+
+```
+1 -> 2 -> 3 -> 4 -> 5 
+1 -> 5 -> 2 -> 4 -> 3
+
+```
+
+**时间复杂度：** O（n）
+**辅助空间：** O（1）
+
+感谢Gaurav Ahirwar提出了上述方法。
+
+**另一种方法：**
+1.取两个指针prev和curr，它们分别保留head和head的地址->。
+2.比较他们的数据并交换。
+之后，形成一个新的链表。
+下面是实现：
+
+## C ++
+
+*filter_none*
+
+*编辑*
+*关闭*
+
+*play_arrow*
+
+*链接*
+*亮度_4*
+*代码*
+
+| `// CPP code to rearrange linked list in place``#include <bits/stdc++.h>``using` `namespace` `std;` [`struct` `node {` `int` `data;` `struct` `node* next;``};``typedef` `struct` `node Node;``// function for rearranging a linked list with high and low value.``void` `rearrange(Node* head)``{` `if` `(head == NULL)` `// Base case.` `return` `;` `// two pointer variable.` `Node *prev = head, *curr = head->next;` `while` `(curr) {` `// swap function for swapping data.` `if` `(prev->data > curr->data)` `swap(prev->data, curr->data);` `// swap function for swapping data.` `if` `(curr->next && curr->next->data > curr->data)` `swap(curr->next->data, curr->data);` [ `prev = curr->next;` `if` `(!curr->next)` `break` `;` `curr = curr->next->next;` `}``}``// function to insert a node in the linked list at the beginning.``void` `push(Node** head,` `int` `k)``{` `Node* tem = (Node*)` `malloc` `(` `sizeof` `(Node));` `tem->data = k;` `tem->next = *head;` `*head = tem;``}``// function to display node of linked list.``void` `display(Node* head)``{` `Node* curr = head;` `while` `(curr != NULL) {` `printf` `(` `"%d "` `, curr->data);` `curr = curr->next;` `}``}``// driver code``int` `main()``{` ] `Node* head = NULL;` `// let create a linked list.`​​ `// 9 -> 6 -> 8 -> 3 -> 7` `push(&head, 7);` `push(&head, 3);` `push(&head, 8);` `push(&head, 6);` `push(&head, 9);` `rearrange(head);` `display(head);` [ `return` `0;``}` |
+
+*chevron_right**filter_none*

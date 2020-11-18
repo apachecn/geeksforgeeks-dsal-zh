@@ -1,0 +1,41 @@
+# 从循环单链接列表
+
+中删除所有主要节点
+
+给定一个包含N个节点的循环单链接列表。 任务是从列表中删除所有主要节点。
+
+![](img/7efc45248c486bc9b5f4f83226b3af81.png)
+
+**示例：**
+
+```
+Input : 9->11->32->6->13->20 
+Output : Given List : 9 11 32 6 13 20 
+List After delete prime node : 9 32 6 20 
+
+Input : 6->11->16->21->17->10 
+Output : Given List : 6 11 16 21 17 10
+List After delete prime node : 10 21 16 6 
+
+```
+
+**方法：**这个想法是一个遍历循环单链表的节点，并得到素数节点的指针。 通过按照帖子中使用的方法删除这些节点：[从循环链接列表](https://www.geeksforgeeks.org/deletion-circular-linked-list/)中删除一个节点。
+
+以下是上述想法的实现：
+
+## C ++
+
+*filter_none*
+
+*编辑*
+*关闭*
+
+*play_arrow*
+
+*链接*
+*亮度_4*
+*代码*
+
+| `// CPP program to delete all prime``// node from a Circular singly linked list``#include <bits/stdc++.h>``using` `namespace` `std;``// Structure for a node``struct` `Node {` `int` `data;` `struct` `Node* next;``};``// Function to insert a node at the beginning``// of a Circular linked list``void` `push(` `struct` `Node** head_ref,` `int` `data)``{` `struct` `Node* ptr1 = (` `struct` `Node*)` `malloc` `(` `sizeof` `(` `struct` `Node));` `struct` `Node* temp = *head_ref;` `ptr1->data = data;` `ptr1->next = *head_ref;` `// If linked list is not NULL then` `// set the next of last node` `if` `(*head_ref != NULL) {` [HT G341] `while` `(temp->next != *head_ref)` `temp = temp->next;` `temp->next = ptr1;` `}` `else` `ptr1->next = ptr1;` `// For the first node` `*head_ref = ptr1;``}``// Delete the node if it is prime``void` `deleteNode(Node* head_ref, Node* del)``{` `struct` `Node* temp = head_ref;` `// If node to be deleted is head node` `if` `(head_ref == del)` `head_ref = del->next;` `// traverse list till not found` `// delete node` ] `while` `(temp->next != del) {` `temp = temp->next;` `}` [ `// copy address of node` [HT G393] `temp->next = del->next;` `// Finally, free the memory` `// occupied by del` `free` `(del);` `return` `;``}``// Function to check if a number is prime``bool` `isPrime(` `int` `n)``{` `// Corner cases` `if` `(n <= 1)` `return` `false` `;` `if` `(n <= 3)` `return` `true` `;` `// This is checked so that we can skip`]  `// middle five numbers in below loop` `if` `(n % 2 == 0 &#124;&#124; n % 3 == 0)` `return` `false` `;` `for` `(` `int` `i = 5; i * i <= n; i = i + 6)` `if` `(n % i == 0 &#124;&#124; n % (i + 2) == 0)` `return` `false` `;`的 `return` `true` `;``}``// Function to delete all prime nodes``// from the singly circular linked list``void` `deletePrimeNodes(Node* head)``{`] `struct` `Node* ptr = head;` `struct` `Node* next;` `// traverse list till the endl` `// if node is prime then delete it` `do` `{` `// if node is prime` `if` `(isPrime(ptr->data))` `deleteNode(head, ptr);` `// point to next node` `next = ptr->next;` `ptr = next;` `}` `while` `(ptr != head);``}``// Function to print nodes in a``// given singly linked list``void` `printList(` `struct` `Node* head)``{` `struct` `Node* temp = head;` `if` `(head != NULL) {` `do` `{` `printf` `(` `"%d "` `, temp->data);` `temp = temp->next;` `}` `while` `(temp != head);` `}``}``// Driver code``int` `main()``{` `// Initialize lists as empty` [HT G533] `struct` `Node* head = NULL;` `// Created linked list will be` `// 9->11->32->6->13->20` `push(&head, 20);` `push(&head, 13);` `push(&head, 6);` `push(&head, 32);` `push(&head, 11);`​​ `push(&head, 9);` `cout <<` `"Given List : "` `;` `printList(head);` `cout <<` `"\nList After deleting prime nodes : "` `;` `deletePrimeNodes(head);` `printList(head);` `return` `0;``}` |
+
+*chevron_right**filter_none*

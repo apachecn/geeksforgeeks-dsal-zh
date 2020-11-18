@@ -1,0 +1,36 @@
+# 将给定的链表分为两个比例为p：q的列表
+
+给定一个链表和两个整数 **p** 和 **q** ，任务是按 **p：q** 的比例划分链表，即第一个列表包含第一个[ **来自原始列表的p个**节点，第二个列表包含 **q** 个节点的其余部分。 如果无法按照给定的比例分割原始列表，请打印 **-1** 。
+
+**示例：**
+
+> **输入：** 1-> 3-> 5-> 6-> 7-> 2-> NULL
+> p = 2，q = 4 [
+> **输出：**
+> 1 3
+> 5 6 7 2
+> 
+> **输入：** 1-> 2-> 4-> 9->空
+> p = 3，q = 2
+> **输出：** -1
+
+**方法：**首先找到链表的长度。 如果总和超过实际长度，则无法分割列表，因此打印 **-1** 。 如果可以划分列表，则只需遍历列表，直到长度为 **p** ，然后将其分解为 **p：q** 的比率即可。 下一个节点将成为第二个列表的头，然后打印两个列表。
+
+下面是上述方法的实现：
+
+## 爪哇
+
+*filter_none*
+
+*编辑*
+*关闭*
+
+*play_arrow*
+
+*链接*
+*亮度_4*
+*代码*
+
+| `// Java implementation of the approach``class` `GFG``{``// Node``static` `class` `Node``{` `int` `data;` `Node next;` `Node(` `int` `data)` `{` `this` `.data = data;` `}``}``// Function to split the given linked list ``// into ratio of p and q ``static` `void` `splitAndPrint(Node head,` `int` `p,` `int` `q)``{` `int` `n =` `0` `;` `Node temp;` `temp = head;` `// Find the length of the list` `while` `(temp!=` `null` `)` `{` `n +=` `1` `;` `temp = temp.next;` `}` `// If ration exceeds the actual length` `if` `(p + q > n)`] `{` `System.out.println(` `"-1"` `);` `return` `;`​​ `}` `temp = head;` `while` `(p >` `1` `)` `{` `temp = temp.next;` `p-=` `1` `;` `}` [ `// second head node after splitting` `Node head2 = temp.next;` `temp.next =` `null` `;` [[HTG2 95]  `// Print first linked list` `printList(head);` `System.out.println();` `// Print second linked list` `printList(head2);``}``// Function to print the nodes ``// of the linked list``static` `void` `printList(Node head)``{` `if` `( head ==` `null` `)` `return` `;` `System.out.print(head.data+` `" , "` `);` `printList(head.next);``}``// Driver code``public` `static` `void` `main(String args[])``{` `Node head =` `new` `Node(` `1` `);` `head.next =` `new` `Node(` `3` [HT G161] `head.next.next =` `new` `Node(` `5` `);` `head.next.next.next =` `new` `Node(` `6` `);` `head.next.next.next.next =` `new` `Node(` `7` `);` `head.next.next.next.next.next =` `new` `Node(` `2` `);` `int` `p =` `2` `,q=` `4` `;` `splitAndPrint(head, p, q);``}``}``// This code is contributed by Arnab Kundu` |
+
+*chevron_right**filter_none*
