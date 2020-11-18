@@ -6,7 +6,7 @@
 上面的单链接列表被转换为循环链接列表。
 ![Circular-Linked-List](img/edcbce05d23f3327116de91a2c124f5e.png)
 
-**方法：**想法是遍历单链列表并检查该节点是否为最后一个节点。 如果该节点是最后一个节点，即指向NULL，则使其指向起始节点，即头节点。 下面是此方法的实现。
+**方法：**想法是遍历单链列表并检查该节点是否为最后一个节点。 如果该节点是最后一个节点，即指向 NULL，则使其指向起始节点，即头节点。 下面是此方法的实现。
 
 ## C++
 
@@ -415,7 +415,7 @@ Display list:
 
 ```
 
-本文由 **Dharmendra kumar** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Dharmendra kumar** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

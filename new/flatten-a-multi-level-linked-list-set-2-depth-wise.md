@@ -1,4 +1,4 @@
-# 展平多级链接列表| 设置2（深度方式）
+# 展平多级链接列表| 设置 2（深度方式）
 
 我们已经讨论了多级链接列表的[扁平化，其中节点具有向下和向后两个指针。 在上一篇文章中，我们明智地扁平化了链接列表。 当我们总是需要在每个节点上的下一个指针之前处理指针时，如何展平链表。](https://www.geeksforgeeks.org/flatten-a-linked-list-with-next-and-child-pointers/)
 
@@ -27,14 +27,14 @@ right pointer)
 
 ```
 
-资料来源：Oracle专访
+资料来源：Oracle 专访
 
 如果仔细观察，我们会发现此问题类似于[树到链表的转换](https://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/)。 我们通过以下步骤递归地展平链表。
 
-**1）**如果节点为NULL，则返回NULL。
-**2）**存储当前节点的下一个节点（在步骤4中使用）。
+**1）**如果节点为 NULL，则返回 NULL。
+**2）**存储当前节点的下一个节点（在步骤 4 中使用）。
 **3）**递归拉平列表。 展平时，请跟踪上一个访问的节点，以便可以在其后链接下一个列表。
-**4）**递归展平下一个列表（我们从步骤2中存储的指针中获取下一个列表），并将其附加在上次访问的节点之后。
+**4）**递归展平下一个列表（我们从步骤 2 中存储的指针中获取下一个列表），并将其附加在上次访问的节点之后。
 
 以下是上述想法的实现。
 
@@ -391,7 +391,7 @@ Node* flattenList2(Node* head)
 
 ```
 
-本文由 **Mu Ven** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Mu Ven** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

@@ -18,7 +18,7 @@ Output : Product = 10395
 
 **算法**：
 
-1.  使用链接列表的开头初始化指针ptr，并使用1初始化产品变量。
+1.  使用链接列表的开头初始化指针 ptr，并使用 1 初始化产品变量。
 2.  使用循环开始遍历链表，直到遍历所有节点。
 3.  将当前节点的值乘以乘积，即**乘积* = ptr->数据**。
 4.  递增指向链表的下一个节点的指针，即 **ptr = ptr-> next** 。
@@ -326,7 +326,7 @@ Product = 1344
 
 ```
 
-**时间复杂度**：O（N），其中N是链​​表中节点的数量。
+**时间复杂度**：O（N），其中 N 是链​​表中节点的数量。
 
 
 
@@ -334,6 +334,6 @@ Product = 1344
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

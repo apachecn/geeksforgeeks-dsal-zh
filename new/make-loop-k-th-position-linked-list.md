@@ -1,6 +1,6 @@
-# 在链接列表中的第k个位置循环
+# 在链接列表中的第 k 个位置循环
 
-给定一个链表和位置k。 在第k个位置循环
+给定一个链表和位置 k。 在第 k 个位置循环
 
 **示例：**
 
@@ -12,10 +12,10 @@ Output : Modified linked list
 ```
 
 **算法**
-1）遍历第一个链表直到第k个点
-2）备份第k个节点
+1）遍历第一个链表直到第 k 个点
+2）备份第 k 个节点
 3）遍历链表直到最后
-4）将最后一个节点附加到第k个节点
+4）将最后一个节点附加到第 k 个节点
 
 ## C++
 
@@ -445,6 +445,6 @@ Modified list
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

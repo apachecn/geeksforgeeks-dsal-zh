@@ -76,7 +76,7 @@ void DeleteFirst(struct Node** head)
 
 ```
 
-### **删除循环Linekd列表**的最后一个节点
+### **删除循环 Linekd 列表**的最后一个节点
 
 **范例**：
 
@@ -155,7 +155,7 @@ Output : 99->11->33->44->55->66
 
 ```
 
-**注意**：列表考虑基于0的索引。
+**注意**：列表考虑基于 0 的索引。
 
 ![](img/0425f2faeb4c55c7c6503d3045d4e29c.png)
 
@@ -163,7 +163,7 @@ Output : 99->11->33->44->55->66
 
 1.  首先，找到列表的长度。 也就是说，列表中的节点数。
 2.  以先前和当前的两个指针来遍历列表。 这样前一个在当前节点之后一个位置。
-3.  将变量计数初始化为0，以跟踪遍历的节点数。
+3.  将变量计数初始化为 0，以跟踪遍历的节点数。
 4.  遍历列表，直到到达给定的索引。
 5.  一旦达到给定的索引，执行**上一个-> next =当前->下一个**。
 
@@ -1309,6 +1309,6 @@ After Deleting last node: 11 22 33 55
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

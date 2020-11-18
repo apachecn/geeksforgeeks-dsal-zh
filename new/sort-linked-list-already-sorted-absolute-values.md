@@ -21,11 +21,11 @@ output: 5 -> 10
 
 资料来源：[亚马逊访谈](https://www.geeksforgeeks.org/amazon-interview-experience-set-258-for-sde1/)
 
-一个简单的解决方案是从头到尾遍历链表。 对于每个访问的节点，请检查其是否有故障。 如果是，请将其从当前位置移除，然后插入正确的位置。 这是对链表的[插入排序的实现，此解决方案的时间复杂度为O（n * n）。](http://geeksquiz.com/insertion-sort-for-singly-linked-list/)
+一个简单的解决方案是从头到尾遍历链表。 对于每个访问的节点，请检查其是否有故障。 如果是，请将其从当前位置移除，然后插入正确的位置。 这是对链表的[插入排序的实现，此解决方案的时间复杂度为 O（n * n）。](http://geeksquiz.com/insertion-sort-for-singly-linked-list/)
 
-更好的解决方案是[使用合并排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)对链接列表进行排序。 该解决方案的时间复杂度为O（n Log n）。
+更好的解决方案是[使用合并排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)对链接列表进行排序。 该解决方案的时间复杂度为 O（n Log n）。
 
-一个有效的解决方案可以在O（n）时间内工作。 一个重要的观察结果是，所有负面因素都以相反的顺序出现。 因此，我们遍历列表，每当找到不规则的元素时，便将其移到链接列表的前面。
+一个有效的解决方案可以在 O（n）时间内工作。 一个重要的观察结果是，所有负面因素都以相反的顺序出现。 因此，我们遍历列表，每当找到不规则的元素时，便将其移到链接列表的前面。
 
 以下是上述想法的实现。
 

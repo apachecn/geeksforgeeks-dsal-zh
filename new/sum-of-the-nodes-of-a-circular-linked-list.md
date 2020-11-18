@@ -21,10 +21,10 @@ Output: Sum of Circular linked list is = 32
 
 **方法：**
 
-1.  使用链接列表的开头和0的sum变量初始化指针temp。
+1.  使用链接列表的开头和 0 的 sum 变量初始化指针 temp。
 2.  Start traversing the linked list using a loop until all the nodes get traversed.
     *   将当前节点的值添加到总和，即总和+ = temp->数据。
-    *   递增指向链接列表的下一个节点的指针，即temp = temp-> next。
+    *   递增指向链接列表的下一个节点的指针，即 temp = temp-> next。
 3.  返回总和。
 
 下面是上述方法的实现：
@@ -341,7 +341,7 @@ Sum of Circular linked list is = 81
 
 ```
 
-**时间复杂度**：O（N），其中N是链​​表中节点的数量。
+**时间复杂度**：O（N），其中 N 是链​​表中节点的数量。
 **辅助空间：** O（1）
 
 
@@ -350,6 +350,6 @@ Sum of Circular linked list is = 81
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

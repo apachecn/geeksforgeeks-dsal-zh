@@ -1,6 +1,6 @@
-# 使用O（1）空间中的下一个指针和随机指针克隆链接列表
+# 使用 O（1）空间中的下一个指针和随机指针克隆链接列表
 
-给定一个链表，每个节点中都有两个指针。 第一个指针指向列表的下一个节点，但是，另一个指针是随机的，可以指向列表的任何节点。 编写一个在O（1）空间中克隆给定列表的程序，即没有任何额外空间。
+给定一个链表，每个节点中都有两个指针。 第一个指针指向列表的下一个节点，但是，另一个指针是随机的，可以指向列表的任何节点。 编写一个在 O（1）空间中克隆给定列表的程序，即没有任何额外空间。
 **范例：**
 
 ```
@@ -11,13 +11,13 @@ A new linked list identical to the original list.
 
 ```
 
-在先前的文章 [Set-1](https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/) 和 [Set-2](https://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/) 中，讨论了各种方法，并且O（n）空间复杂度实现也可用。
+在先前的文章 [Set-1](https://www.geeksforgeeks.org/a-linked-list-with-next-and-arbit-pointer/) 和 [Set-2](https://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/) 中，讨论了各种方法，并且 O（n）空间复杂度实现也可用。
 
-在本文中，我们将实现一种算法，该算法不需要Set-1中讨论的额外空间。
+在本文中，我们将实现一种算法，该算法不需要 Set-1 中讨论的额外空间。
 
 下面是算法：
 
-*   创建节点1的副本并将其插入原始链接列表中的节点1和节点2之间，创建2的副本并将其插入2和3之间。以这种方式继续，在第N个节点之后添加N的副本
+*   创建节点 1 的副本并将其插入原始链接列表中的节点 1 和节点 2 之间，创建 2 的副本并将其插入 2 和 3 之间。以这种方式继续，在第 N 个节点之后添加 N 的副本
 
 ![](img/7e1496dcc505d9ae9e3bd8b6634aa1de.png)
 
@@ -29,7 +29,7 @@ A new linked list identical to the original list.
 
     ```
 
-    这是有效的，因为original-> next只是原始副本，而Original-> random-> next只是随机副本。
+    这是有效的，因为 original-> next 只是原始副本，而 Original-> random-> next 只是随机副本。
 
 ![](img/0f41bee66b12c9757ddf2f2a3dd16d83.png)
 
@@ -40,7 +40,7 @@ A new linked list identical to the original list.
          copy->next = copy->next->next;
     ```
 
-*   确保original-> next为NULL并返回克隆列表
+*   确保 original-> next 为 NULL 并返回克隆列表
 
 ![](img/abdbc119f4766eedcd31f8f5db4b08d6.png)
 下面是实现。

@@ -1,6 +1,6 @@
-# 以给定大小的组反向链接列表| 设置2
+# 以给定大小的组反向链接列表| 设置 2
 
-给定一个链表，编写一个函数以反转每k个节点（其中k是该函数的输入）。
+给定一个链表，编写一个函数以反转每 k 个节点（其中 k 是该函数的输入）。
 
 **示例：**
 
@@ -14,11 +14,11 @@ Output:  5->4->3->2->1->8->7->6->NULL.
 ```
 
 我们已经在下面的
-[中按给定大小的组反向链接列表了。 设置1](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)
+[中按给定大小的组反向链接列表了。 设置 1](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)
 
-在本文中，我们使用了一个堆栈，该堆栈将存储给定链接列表的节点。 首先，将链接列表的k个元素压入堆栈。 现在一一弹出元素，并跟踪先前弹出的节点。 将上一个节点的下一个指针指向堆栈的顶部元素。 重复此过程，直到达到NULL。
+在本文中，我们使用了一个堆栈，该堆栈将存储给定链接列表的节点。 首先，将链接列表的 k 个元素压入堆栈。 现在一一弹出元素，并跟踪先前弹出的节点。 将上一个节点的下一个指针指向堆栈的顶部元素。 重复此过程，直到达到 NULL。
 
-该算法使用O（k）额外空间。
+该算法使用 O（k）额外空间。
 
 ## C++
 
@@ -494,7 +494,7 @@ Reversed list
 
 ```
 
-本文由 **Jatin Goyal** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Jatin Goyal** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

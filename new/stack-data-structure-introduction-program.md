@@ -1,6 +1,6 @@
 # 堆栈数据结构（简介和程序）
 
-堆栈是一种线性数据结构，遵循特定的操作顺序。 该订单可以是LIFO（后进先出）或FILO（后进先出）。
+堆栈是一种线性数据结构，遵循特定的操作顺序。 该订单可以是 LIFO（后进先出）或 FILO（后进先出）。
 
 主要在堆栈中执行以下三个基本操作：
 
@@ -12,20 +12,20 @@
 [![stack](img/91f929ba5f7179300fc713d1f8126678.png)](https://www.geeksforgeeks.org/wp-content/uploads/gq/2013/03/stack.png)
 
 **如何实际理解堆栈？**
-有很多现实生活中的例子。 考虑一下在食堂中相互堆叠的盘子的简单示例。 位于顶部的板是第一个要卸下的板，即已放置在最底部位置的板在堆栈中保留的时间最长。 因此，可以简单地看出它遵循LIFO / FILO命令。
+有很多现实生活中的例子。 考虑一下在食堂中相互堆叠的盘子的简单示例。 位于顶部的板是第一个要卸下的板，即已放置在最底部位置的板在堆栈中保留的时间最长。 因此，可以简单地看出它遵循 LIFO / FILO 命令。
 
 **堆栈上操作的时间复杂度：**
 
-push（），pop（），isEmpty（）和peek（）都需要O（1）时间。 在任何这些操作中，我们都不会运行任何循环。
+push（），pop（），isEmpty（）和 peek（）都需要 O（1）时间。 在任何这些操作中，我们都不会运行任何循环。
 
 **堆栈的应用：**
 
 *   [符号平衡](https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/)
 *   [后缀](http://quiz.geeksforgeeks.org/stack-set-2-infix-to-postfix/) /前缀转换的前缀
 *   在许多地方（例如编辑器，photoshop）重做-撤消功能。
-*   Web浏览器中的前进和后退功能
+*   Web 浏览器中的前进和后退功能
 *   用于许多算法中，例如[河内塔](https://www.geeksforgeeks.org/recursive-functions/) [树遍历](https://www.geeksforgeeks.org/618/)，[库存跨度问题](https://www.geeksforgeeks.org/the-stock-span-problem/)，[直方图问题](https://www.geeksforgeeks.org/largest-rectangular-area-in-a-histogram-set-1/)。
-*   其他应用包括回溯，[骑士旅行问题](https://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/)，[迷宫中的老鼠](https://www.geeksforgeeks.org/backttracking-set-2-rat-in-a-maze/)， [N皇后问题](https://www.geeksforgeeks.org/backtracking-set-3-n-queen-problem/)和[数独解算器](https://www.geeksforgeeks.org/backtracking-set-7-suduku/)
+*   其他应用包括回溯，[骑士旅行问题](https://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/)，[迷宫中的老鼠](https://www.geeksforgeeks.org/backttracking-set-2-rat-in-a-maze/)， [N 皇后问题](https://www.geeksforgeeks.org/backtracking-set-3-n-queen-problem/)和[数独解算器](https://www.geeksforgeeks.org/backtracking-set-7-suduku/)
 *   在图算法中，例如[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)和[强连接的组件](https://www.geeksforgeeks.org/strongly-connected-components/)
 
 **实现：**
@@ -803,7 +803,7 @@ Top element is 20
 **优点：**堆栈的链表实现可以在运行时根据需要进行扩展和收缩。
 **缺点：**由于涉及指针，因此需要额外的内存。
 
-我们将在单独的文章中介绍stack应用程序的实现。
+我们将在单独的文章中介绍 stack 应用程序的实现。
 
 [堆栈集-2（后缀的中缀）](http://quiz.geeksforgeeks.org/stack-set-2-infix-to-postfix/)
 

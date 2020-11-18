@@ -409,9 +409,9 @@ public static void Main(String[] args) 
 
 **递归方法：**
 
-1.  初始化静态变量（例如flag）。
+1.  初始化静态变量（例如 flag）。
 2.  如果标志为奇数，则从差中减去节点。
-3.  将head和flag增加1，然后递归到下一个节点。
+3.  将 head 和 flag 增加 1，然后递归到下一个节点。
 
 下面是上述方法的实现：
 
@@ -738,6 +738,6 @@ public static void Main(String[] args) 
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

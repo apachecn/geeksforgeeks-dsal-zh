@@ -797,9 +797,9 @@ Modified List:
 
 **另一种方法（使用堆栈）：**
 1.找到下半个链表的起点。
-2.将后半列表的所有元素推入堆栈s中。
+2.将后半列表的所有元素推入堆栈 s 中。
 3.使用温度从头开始遍历列表，直到堆栈不为空
-，并通过减去每个节点的堆栈顶部元素来修改temp- >数据。
+，并通过减去每个节点的堆栈顶部元素来修改 temp- >数据。
 
 下面是使用堆栈的实现。
 
@@ -1207,7 +1207,7 @@ Modified List:
 
 **参考：** [https://www.careercup.com/question?id=5657550909341696](https://www.careercup.com/question?id=5657550909341696)
 
-本文由 **Ayush Jauhari** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

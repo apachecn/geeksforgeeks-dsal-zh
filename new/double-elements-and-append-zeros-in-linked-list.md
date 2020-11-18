@@ -1,6 +1,6 @@
 # 双元素并将零添加到链表
 
-给定一个链表，在零之前有两个相邻的重复节点，任务是将第一个加倍，然后使下一个0。此后，将所有零附加到尾部。
+给定一个链表，在零之前有两个相邻的重复节点，任务是将第一个加倍，然后使下一个 0。此后，将所有零附加到尾部。
 
 **先决条件：** [单链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/#singlyLinkedList)的实现基础
 
@@ -28,7 +28,7 @@ Output : 8 -> 6 -> 5 -> 6 -> 0 -> 0 -> 0
 
 ```
 
-遍历链接列表，并且在0之前的节点上有两个相邻的相同数据（例如4-> 4-> 0），然后将第一个元素加倍，并将另一个设为0（例如8-> 0-> 0- >）。 最后，遍历链表并将所有零线性指向尾。
+遍历链接列表，并且在 0 之前的节点上有两个相邻的相同数据（例如 4-> 4-> 0），然后将第一个元素加倍，并将另一个设为 0（例如 8-> 0-> 0- >）。 最后，遍历链表并将所有零线性指向尾。
 
 ## Java
 
@@ -492,7 +492,7 @@ Modified linked list :
 
 ```
 
-**时间复杂度：** O（n），其中n是链表的节点数。
+**时间复杂度：** O（n），其中 n 是链表的节点数。
 
 
 
@@ -500,6 +500,6 @@ Modified linked list :
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

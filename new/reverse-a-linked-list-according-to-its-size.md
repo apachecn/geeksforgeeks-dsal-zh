@@ -1,22 +1,22 @@
 # 根据其大小反向链接列表
 
-给定具有n个节点的链表，请按以下方式将其反向：
+给定具有 n 个节点的链表，请按以下方式将其反向：
 
-1.  如果n为偶数，则将其反转为n / 2个节点。
-2.  如果n为奇数，则保持中间节点不变，反转前n / 2个元素，反转后n / 2个元素。
+1.  如果 n 为偶数，则将其反转为 n / 2 个节点。
+2.  如果 n 为奇数，则保持中间节点不变，反转前 n / 2 个元素，反转后 n / 2 个元素。
 
 例子：
 
-> 输入：1 2 3 4 5 6（n为偶数）
+> 输入：1 2 3 4 5 6（n 为偶数）
 > 输出：3 2 1 6 5 4
 > 
-> 输入：1 2 3 4 5 6 7（n为奇数）
+> 输入：1 2 3 4 5 6 7（n 为奇数）
 > 输出：3 2 1 4 7 6 5
 
-**方法：**这个想法类似于[反转大小为k的组中的链表](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)，其中k为n / 2。 只需要检查中间节点。
+**方法：**这个想法类似于[反转大小为 k 的组中的链表](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)，其中 k 为 n / 2。 只需要检查中间节点。
 
-*   如果n为偶数，则将链表分为两部分，即前n / 2个元素和后n / 2个元素，并将这两个部分取反。
-*   如果n为奇数，则将链表分为三部分，即前n / 2个元素，第（n / 2 + 1）个元素和后n / 2个元素，并反转除第（n / 2 + 1）个元素之外的两个部分。
+*   如果 n 为偶数，则将链表分为两部分，即前 n / 2 个元素和后 n / 2 个元素，并将这两个部分取反。
+*   如果 n 为奇数，则将链表分为三部分，即前 n / 2 个元素，第（n / 2 + 1）个元素和后 n / 2 个元素，并反转除第（n / 2 + 1）个元素之外的两个部分。
 
 ## C++
 
@@ -579,6 +579,6 @@ Reversed List : 4 3 2 1 5 9 8 7 6
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

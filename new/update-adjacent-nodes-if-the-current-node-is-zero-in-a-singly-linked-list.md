@@ -2,7 +2,7 @@
 
 中的当前节点为零，则更新相邻节点。
 
-给定一个链表。 如果当前节点为0，则任务是将节点的上一个和下一个节点的值更改为0。
+给定一个链表。 如果当前节点为 0，则任务是将节点的上一个和下一个节点的值更改为 0。
 
 **示例：**
 
@@ -25,9 +25,9 @@ Output : 0->0->3->0->0->0->NULL
 3.  开始遍历列表中的节点。
     *   **如果**当前节点为 **0** ，变量 **temp** 为 **0** ，则
         *   将前一个节点设置为 **-1** 。
-        *   将temp变量设置为 **1** 。
+        *   将 temp 变量设置为 **1** 。
     *   **如果**的**温度**的值为 **1** ，并且当前节点数据不是 **1** ，则将当前节点设置为 **-1**
-4.  重复步骤3，直到到达列表的末尾。
+4.  重复步骤 3，直到到达列表的末尾。
 5.  浏览列表，并将值 **-1** 更改为 **0** 的节点。
 
 使用**临时**和 **-1** 的原因是，如果我们直接将下一个节点更改为 **0** ，则可能导致将下一个节点后的节点更改为 **0** 结果，整个列表可能会更改为 **0** 。
@@ -514,6 +514,6 @@ public static void Main(String[] args) 
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

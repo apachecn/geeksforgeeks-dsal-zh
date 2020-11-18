@@ -13,9 +13,9 @@ Output : The second largest element is 10.
 
 ```
 
-**简单解决方案**将是首先按升序对链表进行排序，然后从排序的链表中打印第二个元素。 该解决方案的时间复杂度为O（nlogn）。
+**简单解决方案**将是首先按升序对链表进行排序，然后从排序的链表中打印第二个元素。 该解决方案的时间复杂度为 O（nlogn）。
 
-**更好的解决方案**是遍历链接列表两次。 在第一个遍历中找到最小元素。 在第二遍历中找到比在第一遍历中获得的元素更大的最小元素。 该解决方案的时间复杂度为O（n）。
+**更好的解决方案**是遍历链接列表两次。 在第一个遍历中找到最小元素。 在第二遍历中找到比在第一遍历中获得的元素更大的最小元素。 该解决方案的时间复杂度为 O（n）。
 
 更有效的**解决方案**是在单个遍历中查找第二小的元素。
 
@@ -343,6 +343,6 @@ The second smallest element is 10
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

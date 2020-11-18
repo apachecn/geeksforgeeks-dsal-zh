@@ -15,7 +15,7 @@
 
 **方法：**在此中讨论了解决此问题的迭代方法。 在本文中，将讨论一种递归方法。
 
-这个想法是递归地遍历LinkedList，直到到达最后一个节点。 到达最后一个节点后，向其添加 **N** 的值。 添加后，如果该值大于9，则将进位和设置模式（数字％10）值保留为节点值，并将进位添加到先前的堆栈帧节点，并继续直到从堆栈中清除所有堆栈帧为止。
+这个想法是递归地遍历 LinkedList，直到到达最后一个节点。 到达最后一个节点后，向其添加 **N** 的值。 添加后，如果该值大于 9，则将进位和设置模式（数字％10）值保留为节点值，并将进位添加到先前的堆栈帧节点，并继续直到从堆栈中清除所有堆栈帧为止。
 如果在清除所有堆栈帧之后仍然有一个进位，则使用此值创建一个新节点，该节点将是链接列表的新头，指向前一个头。
 
 下面是上述方法的实现：
@@ -373,6 +373,6 @@ class GFG
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

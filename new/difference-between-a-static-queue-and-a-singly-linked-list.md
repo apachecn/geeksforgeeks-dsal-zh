@@ -19,11 +19,11 @@
 | 静态队列 | 单链表 |
 | 队列是一个或多个元素以连续方式排列在内存中的集合。 | 链表是一个或多个元素以不连续的方式排列在内存中的集合。 |
 | 静态队列始终是固定大小。 | 列表大小永远不会固定。 |
-| 在Queue中，仅存储一种和一种类型的信息，因为静态Queue实现是通过Array实现的。 | 列表还存储了下一个节点的地址及其内容。 |
+| 在 Queue 中，仅存储一种和一种类型的信息，因为静态 Queue 实现是通过 Array 实现的。 | 列表还存储了下一个节点的地址及其内容。 |
 | 静态队列基于索引。 | 单链表是基于参考的。 |
 | 始终可以在称为 *REAR* 的单端上执行插入操作，而可以在称为 *FRONT* 的另一端上执行删除操作。 | 列表中的任何位置都可以执行插入和删除操作。 |
-| 队列始终基于FIFO。 | 列表可以基于FIFI或LIFO等。 |
-| 队列有两个指针FRONT和REAR。 | List仅具有一个基本上称为HEAD的指针。 |
+| 队列始终基于 FIFO。 | 列表可以基于 FIFI 或 LIFO 等。 |
+| 队列有两个指针 FRONT 和 REAR。 | List 仅具有一个基本上称为 HEAD 的指针。 |
 
 **以下是静态队列**的实现：
 
@@ -670,6 +670,6 @@ after deleting node: second, first and last
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

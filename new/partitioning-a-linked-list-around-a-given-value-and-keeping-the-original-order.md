@@ -1,6 +1,6 @@
 # 根据给定值对链表进行分区，并保持原始顺序
 
-给定一个链表和一个值x，对它进行分区，以使所有小于x的节点排在最前面，然后是所有值等于x的节点，最后是值大于或等于x的节点。 三个分区中每个分区中节点的原始相对顺序都应保留。 分区必须就地工作。
+给定一个链表和一个值 x，对它进行分区，以使所有小于 x 的节点排在最前面，然后是所有值等于 x 的节点，最后是值大于或等于 x 的节点。 三个分区中每个分区中节点的原始相对顺序都应保留。 分区必须就地工作。
 
 例子：
 
@@ -23,11 +23,11 @@ Output: 3->10->4->20->10
 
 以下是解决此问题的算法：
 
-*   将以下三个链接列表的第一个和最后一个节点初始化为NULL。
-    1.  小于x的值的链接列表。
-    2.  链接的值列表等于x。
-    3.  大于x的值的链接列表。
-*   现在遍历原始链表。 如果节点的值小于x，则将其附加在较小列表的末尾。 如果值等于x，则在等于列表的末尾。 如果值更大，则在更大列表的末尾。
+*   将以下三个链接列表的第一个和最后一个节点初始化为 NULL。
+    1.  小于 x 的值的链接列表。
+    2.  链接的值列表等于 x。
+    3.  大于 x 的值的链接列表。
+*   现在遍历原始链表。 如果节点的值小于 x，则将其附加在较小列表的末尾。 如果值等于 x，则在等于列表的末尾。 如果值更大，则在更大列表的末尾。
 *   现在连接三个列表。
 
 以下是上述想法的实现。
@@ -601,7 +601,7 @@ public static void Main() 
 
 ```
 
-本文由 **[Shashank Mishra（Gullu）](https://www.facebook.com/shashank.mishra.92167)** 贡献。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **[Shashank Mishra（Gullu）](https://www.facebook.com/shashank.mishra.92167)** 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

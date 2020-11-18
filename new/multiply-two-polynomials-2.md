@@ -414,10 +414,10 @@ Product polynomial is
 5 + 10x^1 + 30x^2 + 26x^3 + 52x^4 + 24x^5
 ```
 
-上述解决方案的时间复杂度为O（mn）。 如果两个多项式的大小相同，则时间复杂度为O（n <sup>2</sup> ）。
+上述解决方案的时间复杂度为 O（mn）。 如果两个多项式的大小相同，则时间复杂度为 O（n <sup>2</sup> ）。
 
 **我们可以做得更好吗？**
-有一些方法可以比O（n <sup>2</sup> ）时间更快地进行乘法。 这些方法主要基于[分而治之](https://www.geeksforgeeks.org/divide-and-conquer-set-1-find-closest-pair-of-points/)。 以下是一种简单的方法，该方法将给定的多项式（次数为n）分为两个多项式，一个包含较低次项（小于n / 2），另一个包含较高次项（大于或等于n / 2）
+有一些方法可以比 O（n <sup>2</sup> ）时间更快地进行乘法。 这些方法主要基于[分而治之](https://www.geeksforgeeks.org/divide-and-conquer-set-1-find-closest-pair-of-points/)。 以下是一种简单的方法，该方法将给定的多项式（次数为 n）分为两个多项式，一个包含较低次项（小于 n / 2），另一个包含较高次项（大于或等于 n / 2）
 
 ```
 Let the two given polynomials be A and B.  
@@ -435,12 +435,12 @@ A * B  = (A0 + A1*xn/2) * (B0 + B1*xn/2)
        = A0*B0 + (A0*B1 + A1*B0)xn/2 + A1*B1*xn  
 ```
 
-因此，上述分治法需要4次乘法和O（n）时间才能将所有4个结果相加。 因此，时间复杂度为T（n）= 4T（n / 2）+ O（n）。 递归的解为O（n <sup>2</sup> ），与上述简单解相同。
+因此，上述分治法需要 4 次乘法和 O（n）时间才能将所有 4 个结果相加。 因此，时间复杂度为 T（n）= 4T（n / 2）+ O（n）。 递归的解为 O（n <sup>2</sup> ），与上述简单解相同。
 
-想法是将乘法次数减少到3，并使递归为T（n）= 3T（n / 2）+ O（n）
+想法是将乘法次数减少到 3，并使递归为 T（n）= 3T（n / 2）+ O（n）
 
 ***如何减少乘法次数？***
-这需要一点技巧，类似于 [Strassen的矩阵乘法。](https://www.geeksforgeeks.org/strassens-matrix-multiplication/) 我们进行以下3个乘法。
+这需要一点技巧，类似于 [Strassen 的矩阵乘法。](https://www.geeksforgeeks.org/strassens-matrix-multiplication/) 我们进行以下 3 个乘法。
 
 ```
 X = (A0 + A1)*(B0 + B1) // First Multiplication
@@ -453,7 +453,7 @@ A0B1 + A1B0 = X - Y - Z
 ```
 
 ***深入说明***
-常规多项式乘法使用4个系数乘法：
+常规多项式乘法使用 4 个系数乘法：
 
 ```
 (ax + b)(cx + d) = acx2 + (ad + bc)x + bd
@@ -474,15 +474,15 @@ A0B1 + A1B0 = X - Y - Z
 
 因此，后一个表达式只有三个乘法。
 
-因此，该算法花费的时间为T（n）= 3T（n / 2）+ O（n）
-上述重现的解决方案是O（n <sup>Lg3</sup> ），它比O（n n <sup>2</sup> ）。
+因此，该算法花费的时间为 T（n）= 3T（n / 2）+ O（n）
+上述重现的解决方案是 O（n <sup>Lg3</sup> ），它比 O（n n <sup>2</sup> ）。
 
 我们将很快讨论上述方法的实现。
 
-还有一种O（nLogn）算法，该算法也使用快速傅立叶变换将两个多项式相乘（有关详细信息，请参阅[和](https://www.cs.iastate.edu/~cs577/handouts/polymultiply.pdf)[。）](http://www.cs.cmu.edu/afs/cs/academic/class/15451-s10/www/lectures/lect0423.txt)
+还有一种 O（nLogn）算法，该算法也使用快速傅立叶变换将两个多项式相乘（有关详细信息，请参阅[和](https://www.cs.iastate.edu/~cs577/handouts/polymultiply.pdf)[。）](http://www.cs.cmu.edu/afs/cs/academic/class/15451-s10/www/lectures/lect0423.txt)
 
 **来源：**
 [http://www.cse.ust.hk/~dekai/271/notes/L03/L03.pdf](http://www.cse.ust.hk/~dekai/271/notes/L03/L03.pdf)
 
-本文由Harsh贡献。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
+本文由 Harsh 贡献。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

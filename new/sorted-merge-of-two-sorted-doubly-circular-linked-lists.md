@@ -3,9 +3,9 @@
 给定两个已排序的[双循环链表](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)，分别包含 **n1** 和 **n2** 个节点。 问题是合并两个列表，使结果列表也处于排序顺序。
 
 **示例：**
-**列表1：**
+**列表 1：**
 ![](img/f7f6c1deac20b98e7cd49bb8a7d435f9.png)
-**列表2：**
+**列表 2：**
 ![](img/c6fafcc21f76ae4b74959206ce422c36.png)
 
 **最终列表：**
@@ -13,13 +13,13 @@
 
 **方法：**以下是步骤：
 
-1.  如果head1 == NULL，则返回head2。
-2.  如果head2 == NULL，则返回head1。
+1.  如果 head1 == NULL，则返回 head2。
+2.  如果 head2 == NULL，则返回 head1。
 3.  令 **last1** 和 **last2** 分别是两个列表的最后一个节点。 可以在第一个节点的先前链接的帮助下获得它们。
-4.  获取指向该节点的指针，该节点将成为最终列表的最后一个节点。 如果last1.data < last2.data, then **last_node** = last2，则其他 **last_node** = last1。
-5.  更新last1.next = last2.next = NULL。
+4.  获取指向该节点的指针，该节点将成为最终列表的最后一个节点。 如果 last1.data < last2.data, then **last_node** = last2，则其他 **last_node** = last1。
+5.  更新 last1.next = last2.next = NULL。
 6.  现在将两个列表合并为两个已排序的双向链接列表。 请参阅此帖子的**合并[的](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)**程序。 令最终列表的第一个节点为 **finalHead** 。
-7.  更新finalHead.prev = last_node和last_node.next = finalHead。
+7.  更新 finalHead.prev = last_node 和 last_node.next = finalHead。
 8.  返回 **finalHead** 。
 
 ## C++
@@ -653,6 +653,6 @@ Final Sorted List: 1 2 3 5 7 8 9 11
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

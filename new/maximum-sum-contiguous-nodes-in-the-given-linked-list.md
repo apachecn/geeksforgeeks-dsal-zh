@@ -8,12 +8,12 @@
 
 > **输入：** -2-> -3-> 4-> -1-> -2-> 1-> 5-> -3- > NULL
 > **输出：** 7
-> 4-> -1-> -2-> 1-> 5是给定的子列表 和。
+> 4-> -1-> -2-> 1-> 5 是给定的子列表 和。
 > 
 > **输入：** 1-> 2-> 3-> 4->空
 > **输出：** 10
 
-**方法：[该](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)文章在[中讨论了Kadane的算法，该算法适用于数组以找到最大子数组总和，但也可以对其进行修改以适用于链表。 由于Kadane的算法不需要访问随机元素，因此它也可以线性时间应用于链表。](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)**
+**方法：[该](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)文章在[中讨论了 Kadane 的算法，该算法适用于数组以找到最大子数组总和，但也可以对其进行修改以适用于链表。 由于 Kadane 的算法不需要访问随机元素，因此它也可以线性时间应用于链表。](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)**
 
 下面是上述方法的实现：
 
@@ -390,6 +390,6 @@ public static void Main(String[] args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

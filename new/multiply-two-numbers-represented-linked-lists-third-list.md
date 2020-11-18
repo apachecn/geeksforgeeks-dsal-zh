@@ -651,7 +651,7 @@ Resultant list is: 9->9->7->9->5->9->8->0->1->8->1
 
 ```
 
-注意：我们可以照顾到结果结点，该结点在循环外可以有1位以上的数字，只需遍历结果列表并在反转之前将进位加到下一位数字即可。
+注意：我们可以照顾到结果结点，该结点在循环外可以有 1 位以上的数字，只需遍历结果列表并在反转之前将进位加到下一位数字即可。
 
 
 
@@ -659,6 +659,6 @@ Resultant list is: 9->9->7->9->5->9->8->0->1->8->1
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

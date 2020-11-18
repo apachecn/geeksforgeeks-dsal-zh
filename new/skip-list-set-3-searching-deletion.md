@@ -1,6 +1,6 @@
-# 跳过列表| 第3组（搜索和删除）
+# 跳过列表| 第 3 组（搜索和删除）
 
-在上一篇文章[中，跳过列表| 第2组（插入）](https://www.geeksforgeeks.org/skip-list-set-2-insertion/)我们讨论了跳过节点的结构以及如何在跳过列表中插入元素。 在本文中，我们将讨论如何在跳过列表中搜索和删除元素。
+在上一篇文章[中，跳过列表| 第 2 组（插入）](https://www.geeksforgeeks.org/skip-list-set-2-insertion/)我们讨论了跳过节点的结构以及如何在跳过列表中插入元素。 在本文中，我们将讨论如何在跳过列表中搜索和删除元素。
 
 **在跳过列表**中搜索元素
 
@@ -23,12 +23,12 @@ else return failure
 
 ```
 
-考虑这个示例，我们要在其中搜索键17-
+考虑这个示例，我们要在其中搜索键 17-
 ![searching key](img/2bdf7161cd0ad83c95317e02d2c93064.png)
 
 **从跳过列表中删除元素**
 
-在删除元素k之前，使用上述搜索算法在跳过列表中定位元素。 定位元素后，就像我们在单链列表中一样，完成了指针的重新排列以删除元素表单列表。 我们从最低级别开始进行重新排列，直到update [i]旁边的元素不是k。
+在删除元素 k 之前，使用上述搜索算法在跳过列表中定位元素。 定位元素后，就像我们在单链列表中一样，完成了指针的重新排列以删除元素表单列表。 我们从最低级别开始进行重新排列，直到 update [i]旁边的元素不是 k。
 
 删除元素后，可能会存在没有元素的级别，因此我们也将通过减少“跳过”列表的级别来删除这些级别。 以下是删除的伪代码–
 
@@ -50,10 +50,10 @@ if x -> key = searchKey then
 
 ```
 
-考虑这个示例，我们要删除元素6 –
+考虑这个示例，我们要删除元素 6 –
 ![deletion](img/442ce94e4574ae8099bc5f659511daee.png)
 
-在第3层，删除元素6后没有元素（红色箭头）。因此，我们将跳过列表的层数减1。
+在第 3 层，删除元素 6 后没有元素（红色箭头）。因此，我们将跳过列表的层数减 1。
 
 以下是用于从跳过列表中搜索和删除元素的代码–
 
@@ -588,7 +588,7 @@ Level 2: 17 21
 **参考**
 [ftp://ftp.cs.umd.edu/pub/skipLists/skiplists.pdf](ftp://ftp.cs.umd.edu/pub/skipLists/skiplists.pdf)
 
-本文由 [**Atul Kumar**](https://www.linkedin.com/in/atul-kumar-733b32136/) 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 [**Atul Kumar**](https://www.linkedin.com/in/atul-kumar-733b32136/) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

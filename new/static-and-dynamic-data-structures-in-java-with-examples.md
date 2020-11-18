@@ -1,4 +1,4 @@
-# Java中的静态和动态数据结构以及示例
+# Java 中的静态和动态数据结构以及示例
 
 [数据结构](https://www.geeksforgeeks.org/data-structures/)是一种有效地存储和组织数据的方式，这样就可以相对于时间和内存有效地执行对它们的所需操作。 简单来说，数据结构用于减少代码的复杂度（主要是时间复杂度）。
 
@@ -14,7 +14,7 @@
 
 1.  ### [阵列](https://www.geeksforgeeks.org/arrays-in-java/)
 
-    数组是一个包含固定数量的单一类型值的容器对象。 创建数组时将确定数组的长度。 数组是一组由通用名称引用的相似类型的变量。 Java中的数组与C / C++中的数组工作方式不同。
+    数组是一个包含固定数量的单一类型值的容器对象。 创建数组时将确定数组的长度。 数组是一组由通用名称引用的相似类型的变量。 Java 中的数组与 C / C++中的数组工作方式不同。
 
     **语法：**
 
@@ -358,7 +358,7 @@
 
 3.  ### [矢量](https://www.geeksforgeeks.org/java-util-vector-class-java/)
 
-    Vector类实现可增长的对象数组。 向量基本上属于传统类，但现在与集合完全兼容。 Vector实现了动态数组，这意味着它可以根据需要增长或收缩。 像数组一样，它包含可以使用整数索引访问的组件。
+    Vector 类实现可增长的对象数组。 向量基本上属于传统类，但现在与集合完全兼容。 Vector 实现了动态数组，这意味着它可以根据需要增长或收缩。 像数组一样，它包含可以使用整数索引访问的组件。
 
     ```
 
@@ -394,7 +394,7 @@
 
 4.  ### [堆栈](https://www.geeksforgeeks.org/stack-class-in-java/)
 
-    Java Collection框架提供了一个Stack类，该类可以建模和实现Stack数据结构。 该课程基于后进先出的基本原则。 除了基本的推入和弹出操作外，该类还提供了空，搜索和查看的三个功能。 也可以说该类是Vector的扩展，并将其视为具有五个提到的函数的堆栈。 该类也可以称为Vector的子类。
+    Java Collection 框架提供了一个 Stack 类，该类可以建模和实现 Stack 数据结构。 该课程基于后进先出的基本原则。 除了基本的推入和弹出操作外，该类还提供了空，搜索和查看的三个功能。 也可以说该类是 Vector 的扩展，并将其视为具有五个提到的函数的堆栈。 该类也可以称为 Vector 的子类。
 
     [![](img/65e1db85d6cbd7231fe141e47968bdc0.png)](https://www.geeksforgeeks.org/stack-class-in-java/)
 
@@ -441,7 +441,7 @@
     *   [使用队列](https://www.geeksforgeeks.org/implement-stack-using-queue/)的堆栈实现
 5.  ### [队列](https://www.geeksforgeeks.org/queue-interface-java/)
 
-    Queue接口在java.util包中可用，并且扩展了Collection接口。 队列集合用于保存要处理的元素，并提供各种操作，如插入，删除等。它是对象的有序列表，其使用仅限于在列表的末尾插入元素并从头开始删除元素 列表，即遵循先进先出或先进先出的原则。
+    Queue 接口在 java.util 包中可用，并且扩展了 Collection 接口。 队列集合用于保存要处理的元素，并提供各种操作，如插入，删除等。它是对象的有序列表，其使用仅限于在列表的末尾插入元素并从头开始删除元素 列表，即遵循先进先出或先进先出的原则。
 
     [![](img/c42036f3f74cce8827236640b7f21a49.png)](https://www.geeksforgeeks.org/queue-interface-java/)
 
@@ -642,6 +642,6 @@
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -18,7 +18,7 @@
     2.  **子流：**子列表的头
     3.  **子结尾：**子列表的尾部。
 
-*   遍历链表并初始化 **index_count** 变量，该变量在每次迭代后增加。*   当 **index_count** 的值等于A时，将**子流**设置为当前指向的节点。*   如果 **index_count** 等于B，则将**子端点**分配给当前引用的节点。 将 **subend.next** 指向 *NULL* ，表示子列表的末尾。*   从**子流**到**子端**打印列表内容。
+*   遍历链表并初始化 **index_count** 变量，该变量在每次迭代后增加。*   当 **index_count** 的值等于 A 时，将**子流**设置为当前指向的节点。*   如果 **index_count** 等于 B，则将**子端点**分配给当前引用的节点。 将 **subend.next** 指向 *NULL* ，表示子列表的末尾。*   从**子流**到**子端**打印列表内容。
 
 下面的代码是上述方法的实现：
 
@@ -148,6 +148,6 @@ public class LinkedListSublist {
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

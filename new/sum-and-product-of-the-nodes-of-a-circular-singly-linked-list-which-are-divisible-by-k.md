@@ -1,6 +1,6 @@
-# 可被K整除的循环单链接列表的节点的总和和
+# 可被 K 整除的循环单链接列表的节点的总和和
 
-给定一个单循环链表。 任务是找到可被给定链表的K整除的节点的总和和乘积。
+给定一个单循环链表。 任务是找到可被给定链表的 K 整除的节点的总和和乘积。
 
 **范例**：
 
@@ -21,8 +21,8 @@ Output : Product = 75, Sum = 20
 
 **方法：**
 
-1.  用循环链表的开头初始化指针电流，并将和变量**和**设为0，并将乘积变量**积**设为1。
-2.  使用do while循环开始遍历链表，直到遍历所有节点。
+1.  用循环链表的开头初始化指针电流，并将和变量**和**设为 0，并将乘积变量**积**设为 1。
+2.  使用 do while 循环开始遍历链表，直到遍历所有节点。
 3.  如果当前节点数据可被给定键整除。
     *   将当前节点的值添加到总和，即 **sum =总和+当前->数据**。
     *   将当前节点的值乘以乘积，即**乘积=乘积*当前->数据**。
@@ -600,6 +600,6 @@ Sum = 22, Product = 121
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

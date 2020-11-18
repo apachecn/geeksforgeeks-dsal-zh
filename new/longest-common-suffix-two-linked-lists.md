@@ -18,7 +18,7 @@ Output :p -> a -> r -> t -> y
 一个简单的解决方案是使用辅助数组存储链接列表。 然后打印两个数组的最长公共后缀。
 
 上述解决方案需要额外的空间。 我们可以通过首先对两个链表进行反向操作来节省空间。 反转后，我们可以轻松找到最长公共前缀的长度。 再次反转以恢复原始列表。
-这里重要的一点是元素的顺序。 我们需要从第n个节点打印到最后一个节点。 我们使用上述找到的计数并使用两个指针方法按要求的顺序打印节点。
+这里重要的一点是元素的顺序。 我们需要从第 n 个节点打印到最后一个节点。 我们使用上述找到的计数并使用两个指针方法按要求的顺序打印节点。
 
 ## C++
 
@@ -461,6 +461,6 @@ ing
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

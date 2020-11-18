@@ -3,7 +3,7 @@
 给定二叉树，将其转换为循环双链表（就地）。
 
 *   节点中的左指针和右指针将分别用作转换后的循环链表中的上一个指针和下一个指针。
-*   List中节点的顺序必须与给定二叉树的顺序相同。
+*   List 中节点的顺序必须与给定二叉树的顺序相同。
 *   有序遍历的第一个节点必须是循环列表的头节点。
 
 **示例：**
@@ -12,17 +12,17 @@
 可以使用以下步骤描述该想法。
 1）编写一个通用函数，该函数将两个给定的循环双链表连接起来（此函数在下面说明）。
 2）现在遍历给定的树
-….a）将左子树递归转换为循环DLL。 让转换后的列表为leftList。
-….a）将右子树递归转换为循环DLL。 让转换后的列表为rightList。
+….a）将左子树递归转换为循环 DLL。 让转换后的列表为 leftList。
+….a）将右子树递归转换为循环 DLL。 让转换后的列表为 rightList。
 ….c）制作树根的圆形链表，使树的左右两边指向其自身。
-….d）将leftList与单个根节点的列表连接在一起。
-….e）将步骤（d）中生成的列表与rightList连接起来。
+….d）将 leftList 与单个根节点的列表连接在一起。
+….e）将步骤（d）中生成的列表与 rightList 连接起来。
 
-请注意，以上代码以Postorder方式遍历树。 我们也可以有序地遍历。 我们可以先连接左子树和根，然后递归右子树，然后将结果与左根连接。
+请注意，以上代码以 Postorder 方式遍历树。 我们也可以有序地遍历。 我们可以先连接左子树和根，然后递归右子树，然后将结果与左根连接。
 
-**如何串联两个循环DLL？**
+**如何串联两个循环 DLL？**
 
-*   获取左侧列表的最后一个节点。 检索最后一个节点是O（1）操作，因为头部的prev指针指向列表的最后一个节点。
+*   获取左侧列表的最后一个节点。 检索最后一个节点是 O（1）操作，因为头部的 prev 指针指向列表的最后一个节点。
 *   将其与右侧列表的第一个节点连接
 *   获取第二个列表的最后一个节点
 *   将其与列表的开头连接。
@@ -510,7 +510,7 @@ Circular Linked List is :
 
 ```
 
-本文由 **Chirag Agarwal** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Chirag Agarwal** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

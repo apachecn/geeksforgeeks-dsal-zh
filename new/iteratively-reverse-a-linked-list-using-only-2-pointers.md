@@ -1,4 +1,4 @@
-# 仅使用2个指针迭代反向链接列表（一种有趣的方法）
+# 仅使用 2 个指针迭代反向链接列表（一种有趣的方法）
 
 给定指向链表头节点的指针，任务是反转链表。
 
@@ -17,7 +17,7 @@ Output : Linked list should be changed to,
 
 ```
 
-在文章[反向链接列表](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/)中，我们已经看到了如何反向链接列表。 在**迭代方法**中，我们使用了3个指针 **prev，cur** 和 **next** 。 下面是一种仅使用两个指针的有趣方法。 这个想法是使用XOR交换指针。
+在文章[反向链接列表](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/)中，我们已经看到了如何反向链接列表。 在**迭代方法**中，我们使用了 3 个指针 **prev，cur** 和 **next** 。 下面是一种仅使用两个指针的有趣方法。 这个想法是使用 XOR 交换指针。
 
 ## C / C++
 
@@ -337,7 +337,7 @@ Reversed Linked list
 
 感谢 **Abhay Yadav** 提出了这种方法。
 
-本文由 **[Shashank Mishra（Gullu）](https://www.facebook.com/shashank.mishra.92167)** 贡献。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **[Shashank Mishra（Gullu）](https://www.facebook.com/shashank.mishra.92167)** 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

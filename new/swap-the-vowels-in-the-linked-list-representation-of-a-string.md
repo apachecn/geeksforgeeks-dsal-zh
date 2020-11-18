@@ -15,7 +15,7 @@
 
 *   使用链接列表节点类型的两个指针来分别存储带有第一个元音的节点和遍历链接列表。
 *   开始遍历链接列表，直到最后。
-*   如果遇到元音，并且第一个指针的数据部分已经包含一个带有元音的节点，则交换当前节点和第一个节点的内容，并将第一个指针设置为NULL。
+*   如果遇到元音，并且第一个指针的数据部分已经包含一个带有元音的节点，则交换当前节点和第一个节点的内容，并将第一个指针设置为 NULL。
 *   如果遇到元音并且第一个指针不包含任何内容，请将第一个指针设置为指向此节点。
 *   如果未遇到元音，请继续遍历。
 
@@ -461,6 +461,6 @@ g -> e -> e -> k -> s -> NULL
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

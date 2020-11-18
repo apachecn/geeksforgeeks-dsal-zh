@@ -11,8 +11,8 @@
 > **输入：** 1-> 5-> 2-> 4-> 3
 > **输出：** 1 2 3 4 5
 
-**方法：**进行递归调用并将下一个节点存储在temp指针中，第一个节点将充当头节点，而存储在temp指针中的节点将充当列表的尾部。 到达基本状态后返回时，将头和尾分别链接到先前的头和​​尾。
-**基本条件：**如果节点数为偶数，则倒数第二个节点为head，最后一个节点为tail，如果节点数为奇数，则最后一个节点将同时充当head和tail 。
+**方法：**进行递归调用并将下一个节点存储在 temp 指针中，第一个节点将充当头节点，而存储在 temp 指针中的节点将充当列表的尾部。 到达基本状态后返回时，将头和尾分别链接到先前的头和​​尾。
+**基本条件：**如果节点数为偶数，则倒数第二个节点为 head，最后一个节点为 tail，如果节点数为奇数，则最后一个节点将同时充当 head 和 tail 。
 
 下面是上述方法的实现：
 
@@ -290,6 +290,6 @@ public class GFG {
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

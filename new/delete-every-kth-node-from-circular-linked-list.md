@@ -1,8 +1,8 @@
 # 从循环链表
 
-中删除每个第K个节点
+中删除每个第 K 个节点
 
-从循环链接列表中删除每个第k个节点，直到只剩下一个节点。 同时打印中间列表。
+从循环链接列表中删除每个第 k 个节点，直到只剩下一个节点。 同时打印中间列表。
 
 **示例：**
 
@@ -30,23 +30,23 @@ Output :
 
 **算法**
 重复以下步骤，直到列表中仅剩一个节点。
-**情况1** ：列表为空。
+**情况 1** ：列表为空。
 如果列表为空，只需返回即可。
 
-**情况2** ：列表只有一个节点。
+**情况 2** ：列表只有一个节点。
 如果列表仅剩一个节点，我们将打印列表并在达到目标时返回。
 
-**情况3** ：列表具有多个节点。
-定义两个指针curr和prev并使用头节点初始化指针curr。
-使用curr指针遍历列表k次，遍历列表。
+**情况 3** ：列表具有多个节点。
+定义两个指针 curr 和 prev 并使用头节点初始化指针 curr。
+使用 curr 指针遍历列表 k 次，遍历列表。
 
 *   要删除的节点是列表的第一个节点。
     要检查的条件（当前==头& &当前->接下来==头）。
-    如果是，则向前移动直到到达最后一个节点。 prev到达最后一个节点后，将head = head-next->设置为prev-> next = head。 删除curr。
+    如果是，则向前移动直到到达最后一个节点。 prev 到达最后一个节点后，将 head = head-next->设置为 prev-> next = head。 删除 curr。
 *   要删除的节点是列表中的最后一个节点。
     要检查的条件是（当前->下一个==头）。
-    如果curr是最后一个节点。 设置prev-> next = head并通过free（curr）删除节点curr。
-*   要删除的节点既不是第一个节点，也不是最后一个节点，然后设置prev-> next = temp-> next并删除curr。
+    如果 curr 是最后一个节点。 设置 prev-> next = head 并通过 free（curr）删除节点 curr。
+*   要删除的节点既不是第一个节点，也不是最后一个节点，然后设置 prev-> next = temp-> next 并删除 curr。
 
 ## C++
 
@@ -635,6 +635,6 @@ public static void Main(String []args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

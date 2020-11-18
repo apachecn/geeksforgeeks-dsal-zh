@@ -8,7 +8,7 @@
 
 ![](img/2dc04c02d3e8a66aea2f2c6c43213f4c.png)
 
-**方法1（天真方法）：**
+**方法 1（天真方法）：**
 这是使用两个循环的最简单方法。 外循环用于一个接一个地拾取元素，内循环将拾取的元素与其余元素进行比较。
 
 ## C++
@@ -648,7 +648,7 @@ Doubly linked list after removing duplicates:
 **时间复杂度：** O（n <sup>2</sup> ）
 **辅助空间：** O（1）
 
-**方法2（排序）：**以下是步骤：
+**方法 2（排序）：**以下是步骤：
 
 1.  使用合并排序对双向链表中的元素进行排序。 请参阅此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)
 2.  使用[算法在线性时间内删除重复项，以从排序的双向链表](https://www.geeksforgeeks.org/remove-duplicates-sorted-doubly-linked-list/)中删除重复项。
@@ -658,8 +658,8 @@ Doubly linked list after removing duplicates:
 
 请注意，此方法不会保留元素的原始顺序。
 
-**方法3高效方法（散列）：**
-我们从头到尾遍历双向链表。 对于每个新遇到的元素，我们检查它是否在哈希表中：如果是，则将其删除；否则，将其删除。 否则我们将其放在哈希表中。 哈希表是使用C++ 中的 [unordered_set实现的。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
+**方法 3 高效方法（散列）：**
+我们从头到尾遍历双向链表。 对于每个新遇到的元素，我们检查它是否在哈希表中：如果是，则将其删除；否则，将其删除。 否则我们将其放在哈希表中。 哈希表是使用 C++ 中的 [unordered_set 实现的。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
 
 ## C++
 
@@ -1310,7 +1310,7 @@ Doubly linked list after removing duplicates:
 **时间复杂度：** O（n）
 **辅助空间：** O（n）
 
-本文由 **Ayush Jauhari** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

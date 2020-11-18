@@ -1,16 +1,16 @@
-# 将给定的二叉树转换为双链表| 套装3
+# 将给定的二叉树转换为双链表| 套装 3
 
-给定二叉树（BT），将其转换为就地双链表（DLL）。 节点中的左指针和右指针分别用作转换后的DLL中的上一个指针和下一个指针。 DLL中节点的顺序必须与给定二叉树的顺序相同。 有序遍历的第一个节点（BT中最左边的节点）必须是DLL的头节点。
+给定二叉树（BT），将其转换为就地双链表（DLL）。 节点中的左指针和右指针分别用作转换后的 DLL 中的上一个指针和下一个指针。 DLL 中节点的顺序必须与给定二叉树的顺序相同。 有序遍历的第一个节点（BT 中最左边的节点）必须是 DLL 的头节点。
 
 [![TreeToList](img/1e6723c342ed8e5706a1c58b68241a4c.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/TreeToList.png)
 
 针对此问题讨论了以下两种不同的解决方案。
-[将给定的二叉树转换为双链表| 设置1](https://www.geeksforgeeks.org/in-place-convert-a-given-binary-tree-to-doubly-linked-list/)
-[将给定的二叉树转换为双链表| 组合2](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-2/)
+[将给定的二叉树转换为双链表| 设置 1](https://www.geeksforgeeks.org/in-place-convert-a-given-binary-tree-to-doubly-linked-list/)
+[将给定的二叉树转换为双链表| 组合 2](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-2/)
 
 在这篇文章中，讨论了第三个解决方案，这似乎是最简单的。 这个想法是对二叉树进行有序遍历。 在进行有序遍历时，请在变量 *prev* 中跟踪先前访问的节点。 对于每个访问的节点，将其作为 *prev* 的下一个，并将该节点的前一个作为 *prev* 的一个。
 
-感谢rahul，wishall和所有其他读者对以上两个帖子的有用评论。
+感谢 rahul，wishall 和所有其他读者对以上两个帖子的有用评论。
 
 以下是此解决方案的实现。
 
@@ -307,7 +307,7 @@ public static void Main(string[] args)
 
 请注意，不建议您像上面那样使用静态变量（为简单起见，我们使用了静态变量）。 想象一下，对于两棵或更多棵树调用相同功能的情况， *prev* 的旧值将在下一次对另一棵树的调用中使用。 为避免此类问题，我们可以使用双指针或引用指针。
 
-**时间复杂度：**上面的程序执行简单的有序遍历，因此时间复杂度为O（n），其中n是给定二叉树中的节点数。
+**时间复杂度：**上面的程序执行简单的有序遍历，因此时间复杂度为 O（n），其中 n 是给定二叉树中的节点数。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

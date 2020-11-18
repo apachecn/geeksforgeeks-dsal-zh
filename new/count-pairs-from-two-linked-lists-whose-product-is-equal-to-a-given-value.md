@@ -1,6 +1,6 @@
 # 来自两个链表的计数对，两个链表的乘积等于给定值
 
-给定两个链表（可以排序或不排序），它们的大小分别为 **n1** 和 **n2** 。 给定值X。问题是要计算两个列表中乘积等于给定值x的所有对。
+给定两个链表（可以排序或不排序），它们的大小分别为 **n1** 和 **n2** 。 给定值 X。问题是要计算两个列表中乘积等于给定值 x 的所有对。
 
 **注意：**该对必须具有每个链接列表中的一个元素。
 
@@ -21,7 +21,7 @@ The pair is: (3, 3)
 
 ```
 
-一种简单的方法是使用两个循环从两个链表中选择元素，并检查该对的乘积是否等于给定值X。 计算所有这样的对并打印结果。
+一种简单的方法是使用两个循环从两个链表中选择元素，并检查该对的乘积是否等于给定值 X。 计算所有这样的对并打印结果。
 
 下面是上述方法的实现：
 
@@ -310,6 +310,6 @@ Count = 1
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

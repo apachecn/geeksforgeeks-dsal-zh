@@ -1,8 +1,8 @@
 # 在链表
 
-中找到小数（或n / k – th）节点
+中找到小数（或 n / k – th）节点
 
-给定一个单链列表和一个数字k，编写一个函数以查找第（n / k）个元素，其中n是列表中元素的数量。 在小数的情况下，我们需要考虑ceil值。
+给定一个单链列表和一个数字 k，编写一个函数以查找第（n / k）个元素，其中 n 是列表中元素的数量。 在小数的情况下，我们需要考虑 ceil 值。
 
 **示例：**
 
@@ -21,8 +21,8 @@ node which is 2nd node, i.e., 7.
 
 ```
 
-1.  取两个指针temp和fractionalNode并分别用null和head初始化它们。
-2.  对于临时指针的每k次跳转，对fractionalNode指针进行一次跳转。
+1.  取两个指针 temp 和 fractionalNode 并分别用 null 和 head 初始化它们。
+2.  对于临时指针的每 k 次跳转，对 fractionalNode 指针进行一次跳转。
 
 ## C++
 
@@ -365,7 +365,7 @@ Fractional node is 3
 
 ```
 
-本文由 **Prakriti Gupta** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Prakriti Gupta** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

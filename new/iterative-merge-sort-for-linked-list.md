@@ -8,7 +8,7 @@
 
 合并排序通常是对链表进行排序的首选。 这里在中讨论[。 但是，上面讨论的方法使用堆栈来存储递归调用。 如果要排序的链表太大，可能会占用大量内存。 因此，本文讨论了一种用于合并排序的纯迭代方法，无需递归调用。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
-在这篇文章中，我们使用合并排序的自底向上方法。 我们知道合并排序首先合并两个项目，然后合并四个项目，依此类推。 想法是使用整数变量存储间隙，以找到需要对链表进行排序的中点。 因此问题减少到合并在中讨论的两个排序的链表。 但是，我们不使用其他列表来保留合并列表。 相反，我们将列表合并到自身中。 间隔在每次迭代中按指数递增2，然后重复该过程。
+在这篇文章中，我们使用合并排序的自底向上方法。 我们知道合并排序首先合并两个项目，然后合并四个项目，依此类推。 想法是使用整数变量存储间隙，以找到需要对链表进行排序的中点。 因此问题减少到合并在中讨论的两个排序的链表。 但是，我们不使用其他列表来保留合并列表。 相反，我们将列表合并到自身中。 间隔在每次迭代中按指数递增 2，然后重复该过程。
 
 ## C++
 
@@ -624,6 +624,6 @@ public static void Main(String []args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

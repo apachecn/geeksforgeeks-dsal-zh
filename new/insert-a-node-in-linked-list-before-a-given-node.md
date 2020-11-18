@@ -2,7 +2,7 @@
 
 之前的链接列表中插入一个节点
 
-给定[链表](https://www.geeksforgeeks.org/data-structures/linked-list/) **N** 的节点和值 **K，**的任务是在链表中插入值为 **K** 的节点 在给定**节点N** 之前。
+给定[链表](https://www.geeksforgeeks.org/data-structures/linked-list/) **N** 的节点和值 **K，**的任务是在链表中插入值为 **K** 的节点 在给定**节点 N** 之前。
 
 **<u>节点的结构：</u>**
 
@@ -161,6 +161,6 @@ int main()
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

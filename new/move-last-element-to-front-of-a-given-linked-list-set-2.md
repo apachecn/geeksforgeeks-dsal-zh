@@ -1,4 +1,4 @@
-# 将最后一个元素移到给定链接列表的前面| 设置2
+# 将最后一个元素移到给定链接列表的前面| 设置 2
 
 给定一个单链表和一个整数 **K** 。 任务是将链表的最后 **K** 个元素附加到前面。
 
@@ -14,7 +14,7 @@
 
 **方法：**
 
-*   循环（k％n）次，其中n是链接列表中元素的数量。
+*   循环（k％n）次，其中 n 是链接列表中元素的数量。
 *   每次，从链接列表的末尾删除一个节点。
 *   同时在链表的开头插入该已删除的节点。
 
@@ -155,6 +155,6 @@ Linked List after appending 7 elements: 6 1 2 3 4 5
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

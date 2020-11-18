@@ -2,7 +2,7 @@
 
 中查找最小和最大元素
 
-给定n个节点的单链列表，并在链列表中找到最小和最大的元素。
+给定 n 个节点的单链列表，并在链列表中找到最小和最大的元素。
 
 例子：
 
@@ -21,7 +21,7 @@ Output : Linked list are:
 
 ```
 
-这个想法是在不等于NULL的情况下遍历链接列表，并将 **max** 和 **min** 变量分别初始化为 **INT_MIN** 和 **INT_MAX** 。 之后检查一个条件，如果最大值小于头值，则将头值分配给max或最小值，然后将头值分配给min，否则头值分配给min，否则头点指向下一个节点。 继续此过程，直到head不等于NULL。
+这个想法是在不等于 NULL 的情况下遍历链接列表，并将 **max** 和 **min** 变量分别初始化为 **INT_MIN** 和 **INT_MAX** 。 之后检查一个条件，如果最大值小于头值，则将头值分配给 max 或最小值，然后将头值分配给 min，否则头值分配给 min，否则头点指向下一个节点。 继续此过程，直到 head 不等于 NULL。
 
 ## C++
 
@@ -543,7 +543,7 @@ Minimum element in linked list: 13
 
 ```
 
-本文由 **Dharmendra kumar** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Dharmendra kumar** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

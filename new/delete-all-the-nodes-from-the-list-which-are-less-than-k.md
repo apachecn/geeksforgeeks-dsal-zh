@@ -1,6 +1,6 @@
-# 从列表中删除所有小于K的节点
+# 从列表中删除所有小于 K 的节点
 
-给定一个链表和一个密钥K。任务是编写一个程序，从列表中删除所有小于密钥K的节点。
+给定一个链表和一个密钥 K。任务是编写一个程序，从列表中删除所有小于密钥 K 的节点。
 
 **示例：**
 
@@ -19,8 +19,8 @@ Output : 13 -> 16 -> 22 -> 45 -> 16
 
 有两种可能的情况：
 
-1.  头节点的值小于K：首先检查头节点上所有小于“ K”的事件，然后删除它们并适当地更改头节点。
-2.  一些中间节点的值小于k：从头开始遍历，检查当前节点的值是否小于K。如果是，则[删除该节点](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)并在列表中前进。
+1.  头节点的值小于 K：首先检查头节点上所有小于“ K”的事件，然后删除它们并适当地更改头节点。
+2.  一些中间节点的值小于 k：从头开始遍历，检查当前节点的值是否小于 K。如果是，则[删除该节点](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)并在列表中前进。
 
 下面是上述方法的实现：
 
@@ -138,6 +138,6 @@ Final List: 12 15 9 11
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

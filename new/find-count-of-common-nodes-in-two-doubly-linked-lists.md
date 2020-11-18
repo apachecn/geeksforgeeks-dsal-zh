@@ -19,7 +19,7 @@ Output : Number of common nodes: 1
 
 ```
 
-**方法：**使用两个嵌套循环遍历两个列表，直到列表的末尾。 对于列表1中的每个节点，检查它是否与列表2中的任何节点匹配。如果是，则增加公共节点的数量。 最后，打印计数。
+**方法：**使用两个嵌套循环遍历两个列表，直到列表的末尾。 对于列表 1 中的每个节点，检查它是否与列表 2 中的任何节点匹配。如果是，则增加公共节点的数量。 最后，打印计数。
 
 下面是上述方法的实现：
 
@@ -393,6 +393,6 @@ Number of common nodes:4
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

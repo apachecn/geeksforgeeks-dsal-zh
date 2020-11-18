@@ -1,6 +1,6 @@
 # 使用类
 
-在Java中实现链接列表
+在 Java 中实现链接列表
 
 **先决条件：** [链表数据结构](https://www.geeksforgeeks.org/data-structures/linked-list/)
 
@@ -8,7 +8,7 @@
 
 [![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
 
-在Java中，LinkedList可以表示为一个类，而Node可以表示为单独的类。 LinkedList类包含Node类类型的引用。
+在 Java 中，LinkedList 可以表示为一个类，而 Node 可以表示为单独的类。 LinkedList 类包含 Node 类类型的引用。
 
 ```
 
@@ -31,7 +31,7 @@ class LinkedList {
 
 ### 创建和插入
 
-在本文中，插入列表是在最后完成的，即在给定链接列表的最后一个节点之后添加新节点。 例如，如果给定的链接列表为5-> 10-> 15-> 20-> 25，并且要插入30，则链接列表将变为5-> 10-> 15-> 20-> 25-> 30 。
+在本文中，插入列表是在最后完成的，即在给定链接列表的最后一个节点之后添加新节点。 例如，如果给定的链接列表为 5-> 10-> 15-> 20-> 25，并且要插入 30，则链接列表将变为 5-> 10-> 15-> 20-> 25-> 30 。
 
 由于链接列表通常由其头指针表示，因此需要遍历列表直到最后一个节点，然后将最后一个节点的下一个更改为新节点。
 
@@ -144,7 +144,7 @@ LinkedList: 1 2 3 4 5 6 7 8
 
 ### 遍历
 
-对于遍历，下面是一个通用函数printList（），它通过将列表从头节点遍历到最后一个来打印任何给定的列表。
+对于遍历，下面是一个通用函数 printList（），它通过将列表从头节点遍历到最后一个来打印任何给定的列表。
 
 ```
 
@@ -253,7 +253,7 @@ LinkedList: 1 2 3 4 5 6 7 8
 
 ```
 
-### 按KEY删除
+### 按 KEY 删除
 
 删除过程可以理解如下：
 
@@ -265,14 +265,14 @@ LinkedList: 1 2 3 4 5 6 7 8
 
 1.  在列表中搜索该键的首次出现
 2.  现在，三个条件中的任何一个都可以存在：
-    *   **情况1：在**头找到钥匙
+    *   **情况 1：在**头找到钥匙
         1.  在这种情况下，将节点的头更改为当前头的下一个节点。
         2.  释放已替换头节点的内存。
-    *   **情况2：除了头**之外，该键位于中间或最后一个位置
+    *   **情况 2：除了头**之外，该键位于中间或最后一个位置
         1.  在这种情况下，查找要删除的节点的上一个节点。
         2.  将上一个节点的下一个更改为当前节点的下一个节点。
         3.  释放替换节点的内存。
-    *   **情况3：在列表**中找不到密钥
+    *   **情况 3：在列表**中找不到密钥
         1.  在这种情况下，无需执行任何操作。
 
 [![linkedlist_deletion](img/fe3a6a2699fb99ae5429afd588e89619.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/05/Linkedlist_deletion.png)
@@ -493,14 +493,14 @@ LinkedList: 2 3 5 6 7 8
 1.  通过计算节点索引遍历列表
 2.  对于每个索引，将索引与位置匹配
 3.  现在，三个条件中的任何一个都可以存在：
-    *   **情况1：位置为0，即要删除磁头**
+    *   **情况 1：位置为 0，即要删除磁头**
         1.  在这种情况下，将节点的头更改为当前头的下一个节点。
         2.  释放已替换头节点的内存。
-    *   **情况2：位置大于0但小于列表的大小，即居中或最后，但**头除外
+    *   **情况 2：位置大于 0 但小于列表的大小，即居中或最后，但**头除外
         1.  在这种情况下，查找要删除的节点的上一个节点。
         2.  将上一个节点的下一个更改为当前节点的下一个节点。
         3.  释放替换节点的内存。
-    *   **情况3：位置大于列表的大小，即列表中找不到位置**
+    *   **情况 3：位置大于列表的大小，即列表中找不到位置**
         1.  在这种情况下，无需执行任何操作。
 
 [![linkedlist_deletion](img/fe3a6a2699fb99ae5429afd588e89619.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/05/Linkedlist_deletion.png)
@@ -1036,6 +1036,6 @@ LinkedList: 3 5 7 8
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

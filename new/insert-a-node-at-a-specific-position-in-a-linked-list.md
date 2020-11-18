@@ -17,8 +17,8 @@ Output: 3->5->8->10->11
 
 **方法：**要在指定位置插入给定数据，请遵循以下算法：
 
-*   遍历链接列表直到*位置1* 节点。
-*   遍历所有*位置1* 节点后，将内存和给定数据分配给新节点。
+*   遍历链接列表直到*位置 1* 节点。
+*   遍历所有*位置 1* 节点后，将内存和给定数据分配给新节点。
 *   将新节点的下一个指针指向当前节点的下一个指针。
 *   将当前节点的下一个指针指向新节点。
 
@@ -368,6 +368,6 @@ namespace InsertIntoLinkedList
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

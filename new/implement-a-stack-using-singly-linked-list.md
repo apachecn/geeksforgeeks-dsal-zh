@@ -2,7 +2,7 @@
 
 实现堆栈
 
-使用单个链表概念实现[堆栈](http://www.geeksforgeeks.org/stack-data-structure/)。 所有单个[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)操作都是基于堆栈操作LIFO（后进先出）执行的，借助这一知识，我们将使用单个链表实现堆栈。 使用单个链表，所以在这里如何实现链表意味着我们以节点的形式存储信息，我们需要遵循堆栈规则，并且需要使用单个链表节点来实现，所以我们需要什么规则 在堆栈的实现中遵循一个简单的规则，即后进先出，我们应该在top变量的帮助下执行的所有操作仅在top变量的帮助下如何插入元素
+使用单个链表概念实现[堆栈](http://www.geeksforgeeks.org/stack-data-structure/)。 所有单个[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)操作都是基于堆栈操作 LIFO（后进先出）执行的，借助这一知识，我们将使用单个链表实现堆栈。 使用单个链表，所以在这里如何实现链表意味着我们以节点的形式存储信息，我们需要遵循堆栈规则，并且需要使用单个链表节点来实现，所以我们需要什么规则 在堆栈的实现中遵循一个简单的规则，即后进先出，我们应该在 top 变量的帮助下执行的所有操作仅在 top 变量的帮助下如何插入元素
 
 ![](img/2ff65df4659cd0868f221729a88fc111.png)
 
@@ -596,6 +596,6 @@ Top element is 22
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

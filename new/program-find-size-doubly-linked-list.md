@@ -2,20 +2,20 @@
 
 的大小
 
-给定[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)，任务是找到该双链表的大小。 例如，下面的链表的大小为4。
+给定[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)，任务是找到该双链表的大小。 例如，下面的链表的大小为 4。
 
 [![dll](img/1fac4717827a04f080fae80f8fd57fe7.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png)
 
 双链表是一种由一组顺序链接的记录（称为节点）组成的链接数据结构。 每个节点包含两个称为链接的字段，这些字段引用节点序列中的上一个节点和下一个节点。
 双向链表的遍历可以是任一方向。 实际上，如果需要，遍历的方向可以更改很多次。
 
-例如对于上面的双向链表函数应该返回3。
+例如对于上面的双向链表函数应该返回 3。
 
 ## 算法：
 
-1）初始化大小为0。
+1）初始化大小为 0。
 2）初始化节点指针，temp = head。
-3）在temp不为NULL时执行以下操作
+3）在 temp 不为 NULL 时执行以下操作
 ……a）temp = temp->接下来的
 ……b）size ++;
 4）返回大小。
@@ -273,6 +273,6 @@ class GFG 
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

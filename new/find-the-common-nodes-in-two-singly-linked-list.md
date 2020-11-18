@@ -6,13 +6,13 @@
 
 **示例：**
 
-> **输入：**列表A = 3-> 4-> 12-> 10-> 17，列表B = 10-> 4-> 8-> 575-> 34-> 12
+> **输入：**列表 A = 3-> 4-> 12-> 10-> 17，列表 B = 10-> 4-> 8-> 575-> 34-> 12
 > **输出：**两个列表中的公共节点数均为= 3
 > 
-> **输入：**列表A = 12-> 4-> 65-> 14-> 59，列表B = 14-> 15-> 23-> 17-> 41-> 54
+> **输入：**列表 A = 12-> 4-> 65-> 14-> 59，列表 B = 14-> 15-> 23-> 17-> 41-> 54
 > **输出：**两个列表中的公共节点数均为= 1
 
-**天真的方法：**将列表A的每个节点与列表B的每个节点进行比较。如果该节点匹配，则在比较所有节点后增加计数并返回计数。
+**天真的方法：**将列表 A 的每个节点与列表 B 的每个节点进行比较。如果该节点匹配，则在比较所有节点后增加计数并返回计数。
 
 下面是上述方法的实现：
 
@@ -473,9 +473,9 @@ Number of common node in both list is = 3
 
 ```
 
-**时间复杂度：** O（M * N），其中M是列表A的长度，N是列表B的长度
+**时间复杂度：** O（M * N），其中 M 是列表 A 的长度，N 是列表 B 的长度
 
-**有效解决方案：**将链接列表A的所有节点插入unordered_set中，然后检查unordered_set中的链接列表B的每个节点。 如果找到，则增加计数并在最后返回计数。
+**有效解决方案：**将链接列表 A 的所有节点插入 unordered_set 中，然后检查 unordered_set 中的链接列表 B 的每个节点。 如果找到，则增加计数并在最后返回计数。
 以下是上述方法的实现：
 
 ## C++
@@ -963,6 +963,6 @@ Number of common node in both list is = 3
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

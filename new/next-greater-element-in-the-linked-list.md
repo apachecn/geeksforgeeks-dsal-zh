@@ -18,10 +18,10 @@
 2.  一个接一个地选取其余节点，然后在循环中执行以下步骤：
     *   将当前节点标记为下一个节点。
     *   如果堆栈不为空，则将堆栈的顶部节点值与下一个节点值进行比较。
-    *   如果下一个节点的值大于顶部节点的值，则从堆栈中弹出顶部节点，而next是弹出节点的下一个更大的元素。
+    *   如果下一个节点的值大于顶部节点的值，则从堆栈中弹出顶部节点，而 next 是弹出节点的下一个更大的元素。
     *   当弹出的节点值小于下一个节点值时，请继续从堆栈中弹出节点。 下一个节点将成为所有此类弹出节点的下一个更大元素。
 3.  最后，推送堆栈中的下一个节点。
-4.  在**步骤2** 中的循环结束之后，从堆栈中弹出所有节点，并打印 **0** 作为它们的下一个元素。
+4.  在**步骤 2** 中的循环结束之后，从堆栈中弹出所有节点，并打印 **0** 作为它们的下一个元素。
 
 下面是上述方法的实现：
 
@@ -314,6 +314,6 @@ public class linkedList
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

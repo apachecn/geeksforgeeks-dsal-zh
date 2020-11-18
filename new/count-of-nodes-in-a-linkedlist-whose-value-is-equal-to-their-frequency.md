@@ -5,10 +5,10 @@
 
 > **输入：**链接列表= 2-> 3-> 3-> 3-> 4-> 2
 > **输出：** 2
-> 元素2的频率为2
-> 元素3的频率为3
-> 元素4的频率为1
-> 因此，2和3是具有与其值相同频率的元素
+> 元素 2 的频率为 2
+> 元素 3 的频率为 3
+> 元素 4 的频率为 1
+> 因此，2 和 3 是具有与其值相同频率的元素
 > **输入 ：**链接列表= 1-> 2-> 3-> 4-> 5-> 6
 > **输出：** 1
 
@@ -292,7 +292,7 @@ public static void Main(String[] args)
 
 **复杂度分析：**，
 **时间复杂度：**对于大小为 **n** 的给定链表，我们对其进行一次迭代。 因此，此解决方案的时间复杂度为 **O（n）**。
-**空间复杂度：**对于大小为 **n** 的给定链表，我们使用了一个额外的 映射最多可以具有n个键值，因此此解决方案的空间复杂度为 **O（n）**
+**空间复杂度：**对于大小为 **n** 的给定链表，我们使用了一个额外的 映射最多可以具有 n 个键值，因此此解决方案的空间复杂度为 **O（n）**
 
 
 
@@ -300,6 +300,6 @@ public static void Main(String[] args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

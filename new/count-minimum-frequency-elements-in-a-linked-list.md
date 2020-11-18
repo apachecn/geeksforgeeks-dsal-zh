@@ -18,7 +18,7 @@ Output : 1
 
 **方法**：
 
-*   遍历链表，并使用哈希表存储链表元素的频率，以使map的键为链表元素，值为链表中其频率。
+*   遍历链表，并使用哈希表存储链表元素的频率，以使 map 的键为链表元素，值为链表中其频率。
 *   然后遍历哈希表以找到最小频率。
 *   最后，遍历哈希表以查找元素的频率，并检查其是否与上一步中获得的最小频率匹配，如果是，则添加此频率以进行计数。
 
@@ -372,6 +372,6 @@ public static void Main()
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -1,4 +1,4 @@
-# 在链表中查找频率至少为N / 3的元素
+# 在链表中查找频率至少为 N / 3 的元素
 
 给定大小为 **N** 的[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，其中包含字符串作为节点值，任务是查找频率大于 **[N / 3]** 的多数字符串 ]，在链接列表中。
 **注意：**确保只有一个多数字符串。
@@ -8,12 +8,12 @@
 > **输入：**头->怪胎->怪胎-> abcd->游戏->骑士->怪胎->哈利。
 > **输出：**怪胎。
 > **说明：**
-> 链接列表中极客字符串的频率为3，大于[7/3]，即2。
+> 链接列表中极客字符串的频率为 3，大于[7/3]，即 2。
 > 
 > **输入：**头->热->热->冷->热->热
 > **输出：**热
 > [ **解释：**
-> 链接列表中热字符串的频率为4，大于[5/3]，即1。
+> 链接列表中热字符串的频率为 4，大于[5/3]，即 1。
 
 **天真的方法：**
 将每个字符串的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。 遍历地图并查找频率为**≥N / 3** 的字符串。
@@ -21,7 +21,7 @@
 ***辅助空间：** O（N）*
 
 **有效方法：**
-这个想法基于 [Moore的投票算法](https://www.geeksforgeeks.org/majority-element/)。
+这个想法基于 [Moore 的投票算法](https://www.geeksforgeeks.org/majority-element/)。
 找到两个候选人，并检查这两个候选人中的任何一个是否实际上是多数派。
 
 下面是上述方法的实现：
@@ -293,6 +293,6 @@ geeks
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

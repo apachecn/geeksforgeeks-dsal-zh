@@ -19,10 +19,10 @@ Output: 6
 
 **迭代解决方案：**
 
-1.  用链接列表的开头初始化一个指针ptr，并将sum变量初始化为0。
+1.  用链接列表的开头初始化一个指针 ptr，并将 sum 变量初始化为 0。
 2.  使用循环开始遍历链表，直到遍历所有节点。
 3.  将当前节点的值添加到总和，即总和+ = ptr-> data。
-4.  增加指向链接列表下一个节点的指针，即ptr = ptr-> next。
+4.  增加指向链接列表下一个节点的指针，即 ptr = ptr-> next。
 5.  将总和除以节点总数，然后返回平均值。
 
 下面是上述方法的实现：
@@ -336,7 +336,7 @@ Average of nodes = 5.2
 ```
 
 **时间复杂度：** O（n）
-其中n等于节点数。
+其中 n 等于节点数。
 
 
 
@@ -344,6 +344,6 @@ Average of nodes = 5.2
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

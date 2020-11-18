@@ -2,7 +2,7 @@
 
 中删除所有偶数和节点
 
-给定一个包含 **N个**节点的[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)，任务是从列表中删除所有节点，这些节点包含数字和为偶数的元素。
+给定一个包含 **N 个**节点的[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)，任务是从列表中删除所有节点，这些节点包含数字和为偶数的元素。
 
 **示例：**
 
@@ -15,13 +15,13 @@
 > 8-> 8
 > 9-> 9
 > 14-> 1 + 4 = 5
-> 在这里，包含15和8的节点的数字总和是偶数。
+> 在这里，包含 15 和 8 的节点的数字总和是偶数。
 > 因此，这些节点已删除。
 > 
 > **输入：** DLL = 5 < = > 3 < = > 4 < = > 2 < = > 9
 > **输出 ：** 5 < = > 3 < = > 9
 > **说明：**
-> 链表包含两个数字总和值4和2。
+> 链表包含两个数字总和值 4 和 2。
 > 因此，这些节点已被删除。
 
 **方法：**
@@ -636,7 +636,7 @@ Modified List: 18 9 14
 
 ```
 
-***时间复杂度：** O（N）*，其中N是节点总数。
+***时间复杂度：** O（N）*，其中 N 是节点总数。
 
 
 
@@ -644,6 +644,6 @@ Modified List: 18 9 14
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

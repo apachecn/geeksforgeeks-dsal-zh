@@ -1,4 +1,4 @@
-# 以给定大小的组反转单个链接列表| 套装3
+# 以给定大小的组反转单个链接列表| 套装 3
 
 给定一个单链表和一个整数 **K** ，任务是反转给定链表的每个 **K** 个节点。
 **范例：**
@@ -12,10 +12,10 @@
 **方法：**本文的 [Set 1](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/) 和 [Set 2](https://www.geeksforgeeks.org/reverse-linked-list-groups-given-size-set-2/) 中讨论了两种解决此问题的方法。 在本文中，将讨论基于 [deque](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/) 的方法。
 
 1.  创建一个羽绒。
-2.  将前k个节点的地址存储在双端队列中。
+2.  将前 k 个节点的地址存储在双端队列中。
 3.  从双端队列中弹出第一个和最后一个值，然后交换这些地址处的数据值。
-4.  重复步骤3，直到双端队列不为空。
-5.  对接下来的k个节点重复步骤2，直到未到达链表的末尾。
+4.  重复步骤 3，直到双端队列不为空。
+5.  对接下来的 k 个节点重复步骤 2，直到未到达链表的末尾。
 
 下面是上述方法的实现：
 
@@ -426,6 +426,6 @@ printList(head)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

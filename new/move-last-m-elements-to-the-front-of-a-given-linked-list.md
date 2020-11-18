@@ -1,8 +1,8 @@
-# 将最后m个元素移到给定链接列表
+# 将最后 m 个元素移到给定链接列表
 
 的前面
 
-给定[单链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)的**头**和值 **m** ，任务是将最后m个元素移到最前面。
+给定[单链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)的**头**和值 **m** ，任务是将最后 m 个元素移到最前面。
 
 **示例：**
 
@@ -15,11 +15,11 @@
 **算法：**
 
 1.  使用两个指针：一个用于存储最后一个节点的地址，另一个用于存储第一个节点的地址。
-2.  遍历列表，直到最后m个节点中的第一个节点。
-3.  保持两个指针p，q，即p作为最后m个节点的第一个节点，q保持在p的节点之前。
+2.  遍历列表，直到最后 m 个节点中的第一个节点。
+3.  保持两个指针 p，q，即 p 作为最后 m 个节点的第一个节点，q 保持在 p 的节点之前。
 4.  将最后一个节点作为原始列表的头。
-5.  将节点q的下一个设为NULL。
-6.  将p设置为头部。
+5.  将节点 q 的下一个设为 NULL。
+6.  将 p 设置为头部。
 
 下面是上述方法的实现。
 
@@ -661,6 +661,6 @@ Initial Linked list
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

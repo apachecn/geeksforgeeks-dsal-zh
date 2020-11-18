@@ -27,13 +27,13 @@ Tag    Block ID    Size
 
 [![](img/6987c624f5b654a88132d843c443d166.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200528192255/ahf.jpg)
 
-**方法：**这个想法是为每个存储块分配一个唯一的标签ID。 为每个大小不同的进程提供了块ID（表示它们属于哪个内存块），以及唯一的标记ID（用于删除特定进程以释放空间）。 创建一个给定的内存块大小的空闲列表和已分配的进程列表。
+**方法：**这个想法是为每个存储块分配一个唯一的标签 ID。 为每个大小不同的进程提供了块 ID（表示它们属于哪个内存块），以及唯一的标记 ID（用于删除特定进程以释放空间）。 创建一个给定的内存块大小的空闲列表和已分配的进程列表。
 
 **创建分配的列表：**
 通过找到最合适或最佳的内存块来分配内存，从而创建给定进程大小的分配列表。 如果找不到该内存块，则只需打印它即可。 否则，创建一个节点并将其添加到分配的链表中。
 
 **删除进程：**
-每个进程都有唯一的标签ID。 从分配的链表中删除流程节点，以释放一些空间供其他流程使用。 删除后，使用已删除节点的块ID来增加空闲列表中的内存块大小。
+每个进程都有唯一的标签 ID。 从分配的链表中删除流程节点，以释放一些空间供其他流程使用。 删除后，使用已删除节点的块 ID 来增加空闲列表中的内存块大小。
 
 下面是该方法的实现：
 
@@ -246,6 +246,6 @@ Tag    Block ID    Size
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

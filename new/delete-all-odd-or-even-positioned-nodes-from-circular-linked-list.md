@@ -6,7 +6,7 @@
 
 给定一个单循环链表，从第一个节点开始，删除其中的所有奇数位置节点。
 
-**注意**：链接列表被认为具有从1开始的索引。 也就是说，链表中的第一个元素位于位置1。
+**注意**：链接列表被认为具有从 1 开始的索引。 也就是说，链表中的第一个元素位于位置 1。
 
 **范例**：
 
@@ -21,7 +21,7 @@ Output : 10->30
 
 ![](img/1be26cac29796df604d009ee96c2a5fb.png)
 
-想法是开始使用count变量遍历循环链接列表，以跟踪当前节点的位置。 如果当前节点位于奇数位置，则使用[从循环链表](https://www.geeksforgeeks.org/deletion-circular-linked-list/)中删除节点中讨论的方法删除该节点。
+想法是开始使用 count 变量遍历循环链接列表，以跟踪当前节点的位置。 如果当前节点位于奇数位置，则使用[从循环链表](https://www.geeksforgeeks.org/deletion-circular-linked-list/)中删除节点中讨论的方法删除该节点。
 
 **删除所有奇数位置的节点的功能：**
 
@@ -93,11 +93,11 @@ Output : 90->20
 
 ```
 
-**注意**：链接列表被认为具有从1开始的索引。 也就是说，链表中的第一个元素位于位置1。
+**注意**：链接列表被认为具有从 1 开始的索引。 也就是说，链表中的第一个元素位于位置 1。
 
 ![](img/f10ece08e94520c3e790b9975e0ea50b.png)
 
-这个想法是使用count变量开始遍历循环链接列表，以跟踪当前节点的位置。 如果当前节点处于偶数位置，则使用[从循环链表](https://www.geeksforgeeks.org/deletion-circular-linked-list/)中删除节点中讨论的方法删除该节点。
+这个想法是使用 count 变量开始遍历循环链接列表，以跟踪当前节点的位置。 如果当前节点处于偶数位置，则使用[从循环链表](https://www.geeksforgeeks.org/deletion-circular-linked-list/)中删除节点中讨论的方法删除该节点。
 
 **用于删除甚至定位的节点的功能：**
 
@@ -1072,6 +1072,6 @@ After deletin even position nodes: 11 55
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

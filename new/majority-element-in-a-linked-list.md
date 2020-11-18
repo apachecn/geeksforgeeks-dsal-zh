@@ -2,7 +2,7 @@
 
 中的多数元素
 
-给定一个链表，找到多数元素。 如果一个元素出现**多数元素**，则它的出现次数大于或等于 **n / 2** 倍，其中n是链接列表中节点的总数。
+给定一个链表，找到多数元素。 如果一个元素出现**多数元素**，则它的出现次数大于或等于 **n / 2** 倍，其中 n 是链接列表中节点的总数。
 
 **示例：**
 
@@ -15,8 +15,8 @@ Output :NO majority element
 
 ```
 
-**方法1（简单）**
-从头开始运行两个循环，并迭代计算每个元素的频率。 打印其频率大于或等于n / 2的元素。 在这种方法中，时间复杂度将为 **O（n * n）**，其中n是链表中节点的数量。
+**方法 1（简单）**
+从头开始运行两个循环，并迭代计算每个元素的频率。 打印其频率大于或等于 n / 2 的元素。 在这种方法中，时间复杂度将为 **O（n * n）**，其中 n 是链表中节点的数量。
 
 ## C++
 
@@ -402,7 +402,7 @@ public static void Main(String[] args) 
 
 Time Complexity O(n*n)
 
-**方法2** 使用哈希技术。 我们计算每个元素的频率，然后打印频率≥n / 2的元素；
+**方法 2** 使用哈希技术。 我们计算每个元素的频率，然后打印频率≥n / 2 的元素；
 
 ## C++
 
@@ -690,6 +690,6 @@ majority element is 1
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

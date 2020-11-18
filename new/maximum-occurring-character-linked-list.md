@@ -14,7 +14,7 @@ Output : d
 
 ```
 
-**方法1：**
+**方法 1：**
 迭代计算字符串中每个字符的频率，并返回出现次数最多的一个字符。
 
 ## C++
@@ -187,7 +187,7 @@ e
 ```
 
 **时间复杂度：**（N * N）
-**方法2 ：（使用计数数组）**
+**方法 2 ：（使用计数数组）**
 创建一个计数数组，并对每个字符频率进行计数，以返回最大出现的字符。
 
 ## C++
@@ -424,6 +424,6 @@ e
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

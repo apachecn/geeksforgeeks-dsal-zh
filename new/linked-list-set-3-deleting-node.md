@@ -1,4 +1,4 @@
-# 链表| 集合3（删除节点）
+# 链表| 集合 3（删除节点）
 
 在单个链接列表的先前帖子中，我们已经讨论了[链接列表简介](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)和[链接列表插入](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)。
 让我们制定问题陈述以了解删除过程。 *给定一个“键”，请在链接列表*中删除该键的第一个匹配项。
@@ -9,7 +9,7 @@
 
 ![linkedlist_deletion](img/fe3a6a2699fb99ae5429afd588e89619.png)
 
-由于链表的每个节点都是使用C语言中的malloc（）动态分配的，因此我们需要调用 [free（）](http://www.cplusplus.com/reference/cstdlib/free/)来释放为要删除的节点分配的内存。
+由于链表的每个节点都是使用 C 语言中的 malloc（）动态分配的，因此我们需要调用 [free（）](http://www.cplusplus.com/reference/cstdlib/free/)来释放为要删除的节点分配的内存。
 
 ## C++
 

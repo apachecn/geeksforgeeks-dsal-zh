@@ -1,6 +1,6 @@
 # 修改和重新排列列表
 
-给定一个单链表，其中包含一些正数（有效数）和零（无效数）。 转换链接列表的方式是，如果下一个有效数字与当前数字相同，则将其值加倍并将下一个数字替换为0。修改后，重新排列链接列表，以使所有0都移到末尾。
+给定一个单链表，其中包含一些正数（有效数）和零（无效数）。 转换链接列表的方式是，如果下一个有效数字与当前数字相同，则将其值加倍并将下一个数字替换为 0。修改后，重新排列链接列表，以使所有 0 都移到末尾。
 
 **示例：**
 
@@ -13,9 +13,9 @@ Output : 4->2->12->8->0->0->0->0->0->0
 
 ```
 
-**来源：** [Microsoft IDC面试体验| 设置156。](https://www.geeksforgeeks.org/microsoft-idc-interview-experience-set-156-off-campus-for-full-time/)
+**来源：** [Microsoft IDC 面试体验| 设置 156。](https://www.geeksforgeeks.org/microsoft-idc-interview-experience-set-156-off-campus-for-full-time/)
 
-**方法：**首先按照上述说明修改链表，即，如果下一个有效数字与当前数字相同，则将其值加倍并将下一个数字替换为0。
+**方法：**首先按照上述说明修改链表，即，如果下一个有效数字与当前数字相同，则将其值加倍并将下一个数字替换为 0。
 **修改算法：**
 
 ```
@@ -702,6 +702,6 @@ Modified List: 4 4 8 0 0 0
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

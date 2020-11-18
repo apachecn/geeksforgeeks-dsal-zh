@@ -1,8 +1,8 @@
 # 从链接列表
 
-的末尾删除第N个节点
+的末尾删除第 N 个节点
 
-给定一个链表。 任务是从链接列表的末尾删除第 **N个**个节点。
+给定一个链表。 任务是从链接列表的末尾删除第 **N 个**个节点。
 
 **示例：**
 
@@ -14,13 +14,13 @@
 
 **先决条件：**
 1\. [从链表中删除一个节点。](https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/)
-2\. [从链接列表的末尾找到第n个节点](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)
+2\. [从链接列表的末尾找到第 n 个节点](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)
 
 **方法：**
-从最后删除Bth节点与从开始删除（length-B + 1）基本相同。 在我们的方法中，我们首先评估链表的长度，然后检查
+从最后删除 Bth 节点与从开始删除（length-B + 1）基本相同。 在我们的方法中，我们首先评估链表的长度，然后检查
 
 *   如果长度
-***   如果length = B，则返回head-> next*   如果length> B，则意味着我们必须删除中间节点，我们将删除此节点，并使它的上一个节点指向已删除节点的下一个节点。**
+***   如果 length = B，则返回 head-> next*   如果 length> B，则意味着我们必须删除中间节点，我们将删除此节点，并使它的上一个节点指向已删除节点的下一个节点。**
 
  **## C++
 
@@ -475,6 +475,6 @@ Linked list after modification:
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。**

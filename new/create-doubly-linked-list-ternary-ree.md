@@ -9,7 +9,7 @@
 3.  三叉树的右指针应充当双向链表的下一个指针。
 4.  三叉树的每个节点都在其子树之前插入到双向链表中，对于任何节点，将首先插入其左子节点，然后插入中子节点和右子节点（如果有）。
 
-对于上面的示例，为下面的树形成的链表应该为NULL 5 1 4 8 11 6 7 15 63 31 55 65-> NULL->->->->->->->->->-> ->->
+对于上面的示例，为下面的树形成的链表应该为 NULL 5 1 4 8 11 6 7 15 63 31 55 65-> NULL->->->->->->->->->-> ->->
 
 [![tree](img/fad0abc381126fee74d75ebf15e754c2.png)](https://media.geeksforgeeks.org/wp-content/uploads/llTernary.jpg)
 
@@ -412,7 +412,7 @@ Created Double Linked list is:
 
 ```
 
-本文由 **Aditya Goel** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，那么您也可以写一篇文章，然后将您的文章邮寄到contribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Aditya Goel** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，那么您也可以写一篇文章，然后将您的文章邮寄到 contribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

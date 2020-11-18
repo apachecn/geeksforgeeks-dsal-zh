@@ -2,7 +2,7 @@
 
 的字符串中的所有单词
 
-给定一个表示句子S的链表，使得每个节点代表一个字母，任务是在不反转单个单词的情况下反转该句子。
+给定一个表示句子 S 的链表，使得每个节点代表一个字母，任务是在不反转单个单词的情况下反转该句子。
 例如，对于给定的句子“我爱极客，极客”，[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)表示为：
 I- >-> l- > o -> v- > e- >-> G- > e- > e- > k- > s- >-> f- > o- > r- >-> G- > e- > e- > k- > s
 
@@ -14,7 +14,7 @@ I- >-> l- > o -> v- > e- >-> G- > e- > e- > k- > s- >-> f- > o- > r- >-> G- > e-
 > **输入：**练习使人完美
 > **输出：**完美练习器使人
 
-**方法：**的想法是从头开始导航链接列表。 每次遇到空格时，请将空格交换到该单词的开头。 重复此步骤，直到到达最后一个节点。 最后，将第一个单词的最后一个字母设置为指向null，它将成为最后一个节点，并不断更改指针。
+**方法：**的想法是从头开始导航链接列表。 每次遇到空格时，请将空格交换到该单词的开头。 重复此步骤，直到到达最后一个节点。 最后，将第一个单词的最后一个字母设置为指向 null，它将成为最后一个节点，并不断更改指针。
 
 下面是该方法的实现：
 
@@ -388,6 +388,6 @@ perfect man a makes practice
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -1,4 +1,4 @@
-# 使用O（1）额外空间的链表中最长回文列表的长度
+# 使用 O（1）额外空间的链表中最长回文列表的长度
 
 给定一个链表，找到该链表中存在的最长回文列表的长度。
 
@@ -428,7 +428,7 @@ public static void Main(String []args) 
 
 请注意，上面的代码修改了给定的链表，并且如果不允许对链表进行修改，则可能无法正常工作。 但是，我们最终可以再做一次反向操作，以恢复原始列表。
 
-本文由 **Niteesh kumar** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Niteesh kumar** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

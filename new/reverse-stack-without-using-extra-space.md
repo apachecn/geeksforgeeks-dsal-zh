@@ -1,4 +1,4 @@
-# 反转堆栈，而无需在O（n）中使用多余的空间
+# 反转堆栈，而无需在 O（n）中使用多余的空间
 
 在不使用递归和多余空间的情况下反转[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)。 甚至连功能堆栈都不允许。
 
@@ -17,9 +17,9 @@ Output : 4->5->6
 
 [使用递归](https://www.geeksforgeeks.org/reverse-a-stack-using-recursion/)反转堆栈
 
-上述解决方案需要O（n）额外空间。 如果我们内部将堆栈表示为链表，则可以在O（1）时间内反转字符串。 反转堆栈需要反转链表，这可以用O（n）时间和O（1）额外空间来完成。
+上述解决方案需要 O（n）额外空间。 如果我们内部将堆栈表示为链表，则可以在 O（1）时间内反转字符串。 反转堆栈需要反转链表，这可以用 O（n）时间和 O（1）额外空间来完成。
 
-请注意，push（）和pop（）操作仍然需要O（1）时间。
+请注意，push（）和 pop（）操作仍然需要 O（1）时间。
 
 ## C++
 
@@ -321,7 +321,7 @@ Reversed Stack
 
 ```
 
-本文由 **Niharika Sahai** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Niharika Sahai** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

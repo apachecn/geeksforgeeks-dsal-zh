@@ -1,6 +1,6 @@
 # 将二叉树展平为链接列表
 
-给定一棵二叉树，将其平整就位到链表中。 不允许使用辅助数据结构。 展平后，每个节点的左侧应指向NULL，右侧应包含按顺序排列的下一个节点。
+给定一棵二叉树，将其平整就位到链表中。 不允许使用辅助数据结构。 展平后，每个节点的左侧应指向 NULL，右侧应包含按顺序排列的下一个节点。
 示例：
 
 ```
@@ -45,8 +45,8 @@ Output :
 
 ```
 
-**简单方法：**一个简单的解决方案是使用“队列”使用[级别订单遍历。](https://www.geeksforgeeks.org/level-order-tree-traversal/) 在级别顺序遍历中，跟踪先前的节点。 将当前节点作为上一个节点的右子节点，将上一个节点的左节点作为NULL。 该解决方案需要队列，但问题要求解决而无需其他数据结构。
-**在没有附加数据结构的情况下有效**在左子树中递归查找没有孙子代且左子代和右子代的节点。 然后将节点->正确存储在温度中，并使节点->右=节点->左。 在node右侧的第一个节点NULL中，按node = node- >右侧插入temp。 重复直到将其转换为链接列表。
+**简单方法：**一个简单的解决方案是使用“队列”使用[级别订单遍历。](https://www.geeksforgeeks.org/level-order-tree-traversal/) 在级别顺序遍历中，跟踪先前的节点。 将当前节点作为上一个节点的右子节点，将上一个节点的左节点作为 NULL。 该解决方案需要队列，但问题要求解决而无需其他数据结构。
+**在没有附加数据结构的情况下有效**在左子树中递归查找没有孙子代且左子代和右子代的节点。 然后将节点->正确存储在温度中，并使节点->右=节点->左。 在 node 右侧的第一个节点 NULL 中，按 node = node- >右侧插入 temp。 重复直到将其转换为链接列表。
 例如
 
 ![Flatten Binary Tree Example](img/89abb8564789f935c8d774e65b8b29f7.png)
@@ -279,6 +279,6 @@ binary tree 1 2 3 4 5 6
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

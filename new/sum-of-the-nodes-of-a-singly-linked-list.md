@@ -6,7 +6,7 @@
 
 ![](img/d97a233bf3c89e80c46e6a3193e851d6.png)
 
-任务是做A + B + C +D。
+任务是做 A + B + C +D。
 
 **Examples:**
 
@@ -23,7 +23,7 @@ Output: 36
 
 **递归解决方案：**
 
-*   通过传递head和变量来存储总和来调用函数。
+*   通过传递 head 和变量来存储总和来调用函数。
     *   然后通过传递当前节点的下一个和求和变量来递归调用该函数。
         *   将当前节点的值加到总和上。
 
@@ -367,12 +367,12 @@ Sum of nodes = 26
 
 ```
 
-**时间复杂度：** O（N），N是链表中节点的数量。
+**时间复杂度：** O（N），N 是链表中节点的数量。
 **辅助空间：** O（N），仅当在递归调用期间考虑堆栈大小时。
 
 **迭代解决方案：**
 
-1.  用链接列表的开头初始化一个指针 ***ptr*** ，并将 ***和*** 变量设为0。
+1.  用链接列表的开头初始化一个指针 ***ptr*** ，并将 ***和*** 变量设为 0。
 2.  使用循环开始遍历链表，直到遍历所有节点。
     *   将当前节点的值添加到总和，即 ***sum + = ptr->数据*** 。
     *   递增指向链表的下一个节点的指针，即 ***ptr = ptr-> next*** 。
@@ -661,7 +661,7 @@ Sum of nodes = 26
 
 ```
 
-**时间复杂度：** O（N），N是链表中节点的数量。
+**时间复杂度：** O（N），N 是链表中节点的数量。
 **辅助空间：** O（1）
 
 
@@ -670,6 +670,6 @@ Sum of nodes = 26
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -2,7 +2,7 @@
 
 中删除所有偶数和节点
 
-给定一个包含 **N个**节点的[循环单链列表](https://www.geeksforgeeks.org/circular-linked-list/)，任务是从列表中删除所有节点，这些节点包含数字和为偶数的元素。
+给定一个包含 **N 个**节点的[循环单链列表](https://www.geeksforgeeks.org/circular-linked-list/)，任务是从列表中删除所有节点，这些节点包含数字和为偶数的元素。
 **范例：**
 
 > **输入：** CLL = 9-> 11-> 34-> 6-> 13-> 21
@@ -15,12 +15,12 @@
 > 6-> 6
 > 13-> 1 + 3 = 4
 > 21-> 2 +1 = 3 [
-> 这里，包含11、6和13的节点的数字总和为偶数。
+> 这里，包含 11、6 和 13 的节点的数字总和为偶数。
 > 因此，这些节点已删除。
 > **输入：** 5-> 11-> 16-> 21-> 17-> 10
 > **输出：** 5- > 16-> 21-> 10
 > **说明：**
-> 链表包含两位和值11和17。
+> 链表包含两位和值 11 和 17。
 > 因此，这些节点已删除 。
 
 **方法：**的想法是一个遍历循环单链列表的节点，对于每个节点，[通过遍历每个节点，找到节点中存在的值的数字总和](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/) 数字。 如果数字总和为偶数，则[然后删除节点](https://www.geeksforgeeks.org/deletion-circular-linked-list/)。 否则，继续。
@@ -494,7 +494,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** *O（KN）*，其中N是链​​表的大小，K是链表的最大数目中的位数。
+**时间复杂度：** *O（KN）*，其中 N 是链​​表的大小，K 是链表的最大数目中的位数。
 
 
 
@@ -502,6 +502,6 @@ public static void Main(String[] args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

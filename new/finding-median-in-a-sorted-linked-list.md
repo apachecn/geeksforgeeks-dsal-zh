@@ -4,7 +4,7 @@
 
 我们知道排序数组中的**中位数**是中间元素。
 
-**查找N个排序数字中位数**的过程：
+**查找 N 个排序数字中位数**的过程：
 
 ```
 if N is odd:
@@ -28,18 +28,18 @@ Output : 3.5
 **简单方法**
 
 1.  遍历链接列表并计算所有元素。
-2.  如果count是奇数，则再次遍历链接列表并找到第n / 2个元素。
-3.  如果count是偶数，则再次遍历链接列表并找到：
-    （第n / 2个元素+第（n / 2 + 1）个元素）/ 2
+2.  如果 count 是奇数，则再次遍历链接列表并找到第 n / 2 个元素。
+3.  如果 count 是偶数，则再次遍历链接列表并找到：
+    （第 n / 2 个元素+第（n / 2 + 1）个元素）/ 2
 
 **注意**：上述解决方案两次遍历链表。
 
-**有效方法**：一种有效方法是使用两个指针遍历列表以查找元素数。 [参见此帖子的方法2](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/) 。
+**有效方法**：一种有效方法是使用两个指针遍历列表以查找元素数。 [参见此帖子的方法 2](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/) 。
 
 我们可以使用上述算法来找到链表的中位数。 使用此算法，我们无需计算元素的数量：
 
-1.  如果 *fast_ptr* 不为NULL，则意味着链表包含奇数元素，我们仅打印 *slow_ptr* 的数据。
-2.  否则，如果 *fast_ptr* 达到NULL，则意味着链接列表包含偶数元素，我们创建了 *slow_ptr* 的前一个节点的备份并打印（lower_ptr + slow_ptr- >数据的前一个节点）/ 2
+1.  如果 *fast_ptr* 不为 NULL，则意味着链表包含奇数元素，我们仅打印 *slow_ptr* 的数据。
+2.  否则，如果 *fast_ptr* 达到 NULL，则意味着链接列表包含偶数元素，我们创建了 *slow_ptr* 的前一个节点的备份并打印（lower_ptr + slow_ptr- >数据的前一个节点）/ 2
 
 下面是上述方法的实现：
 
@@ -357,6 +357,6 @@ Median is : 3.5
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

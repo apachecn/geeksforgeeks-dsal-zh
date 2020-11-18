@@ -10,7 +10,7 @@
 > **输入：** 1-> 2-> 3-> 4-> 5-> 6-> 7-> 8-> NULL， K = 5
 > **输出：** 5 4 3 2 1 8 7 6
 
-**方法：**我们已经在帖子 [Set 1](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/) 和 [Set 2](https://www.geeksforgeeks.org/reverse-linked-list-groups-given-size-set-2/) 中讨论了递归解决方案。 在这篇文章中，我们将讨论上述问题的迭代解决方案。 与上述解决方案不同，我们不使用任何形式的堆栈来实现我们的解决方案。 我们反转链表的前k个节点。 反转时，我们使用join和tail指针跟踪k反转链表的第一个和最后一个节点。 反转链表的k个节点后，我们连接由尾指针指向的节点，并连接并更新它们。 我们重复此过程，直到所有节点组都被反转为止。
+**方法：**我们已经在帖子 [Set 1](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/) 和 [Set 2](https://www.geeksforgeeks.org/reverse-linked-list-groups-given-size-set-2/) 中讨论了递归解决方案。 在这篇文章中，我们将讨论上述问题的迭代解决方案。 与上述解决方案不同，我们不使用任何形式的堆栈来实现我们的解决方案。 我们反转链表的前 k 个节点。 反转时，我们使用 join 和 tail 指针跟踪 k 反转链表的第一个和最后一个节点。 反转链表的 k 个节点后，我们连接由尾指针指向的节点，并连接并更新它们。 我们重复此过程，直到所有节点组都被反转为止。
 
 下面是上述方法的实现：
 
@@ -505,7 +505,7 @@ Reversed Linked list
 
 ```
 
-**时间复杂度：** O（n），其中n是给定列表中的节点数。
+**时间复杂度：** O（n），其中 n 是给定列表中的节点数。
 **空间复杂度：** O（1）
 
 
@@ -514,6 +514,6 @@ Reversed Linked list
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

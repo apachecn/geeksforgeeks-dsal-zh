@@ -11,9 +11,9 @@
 > **输入：**列表= a- > 5- > b- > r- > 3- >空
 > **输出：**字符串=“ aaaaabrrr”
 > **说明：**
-> 在链接列表中，字符为**'a'**，其计数为 **5** ，因此该字符重复 **5倍**。
+> 在链接列表中，字符为**'a'**，其计数为 **5** ，因此该字符重复 **5 倍**。
 > 下一个字符是**'b'**，而下一个字符不是数字，因此字符**'b'**仅重复一次。
-> 下一个字符为**'r'**，计数为 **3** ，因此该字符被重复 **3次**。
+> 下一个字符为**'r'**，计数为 **3** ，因此该字符被重复 **3 次**。
 > 
 > **输入：**列表= a- > b- > r- > 3- > a- > 3- >空
 > **输出：**字符串=“ abrrraaa”
@@ -424,6 +424,6 @@ aaaaabr
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

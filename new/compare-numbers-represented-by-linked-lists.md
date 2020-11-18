@@ -20,7 +20,7 @@
 > List2 = 0-> 0 -> 0-> 4-> 2->空
 > **输出：** 1
 
-**方法：**由于数字可能包含前导零，因此请首先从链接列表的开头删除所有前导零。 在比较它们的长度之后，如果长度不相等，则意味着其中一个数字肯定更大，并根据长度更大而返回1或-1。 否则，同时遍历两个列表，并且遍历时，我们比较每个节点上的数字。 如果在任何时候数字不相等，则根据数字值返回1或-1。 如果到达链表的末尾，则链表是相同的，因此返回0。
+**方法：**由于数字可能包含前导零，因此请首先从链接列表的开头删除所有前导零。 在比较它们的长度之后，如果长度不相等，则意味着其中一个数字肯定更大，并根据长度更大而返回 1 或-1。 否则，同时遍历两个列表，并且遍历时，我们比较每个节点上的数字。 如果在任何时候数字不相等，则根据数字值返回 1 或-1。 如果到达链表的末尾，则链表是相同的，因此返回 0。
 
 下面是上述方法的实现：
 
@@ -414,7 +414,7 @@ public static void Main(String[] args) 
 
 ```
 
-**时间复杂度：** O（max（N，M）），其中N和M是链表的长度。
+**时间复杂度：** O（max（N，M）），其中 N 和 M 是链表的长度。
 
 
 
@@ -422,6 +422,6 @@ public static void Main(String[] args) 
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -20,7 +20,7 @@ a -> b -> c -> e -> d -> o -> x -> i
 
 ```
 
-说我们的最新Vowel参考引用了“ a”节点，并且我们目前已到达“ e”节点。 我们的确是：
+说我们的最新 Vowel 参考引用了“ a”节点，并且我们目前已到达“ e”节点。 我们的确是：
 
 ```
 a -> e -> b -> c -> d -> o -> x -> i
@@ -29,7 +29,7 @@ a -> e -> b -> c -> d -> o -> x -> i
 
 因此，删除“ a”节点之后的位置现在是“ e”节点之后的位置，并将“ a”直接链接到“ e”之后。
 
-要正确删除和添加链接，最好先使用要检查的节点。 因此，如果您有*信号*，则将检查节点-下一个节点的>，以查看它是否是元音。 如果是这样，我们需要将其添加到lastVowel节点之后，然后很容易地通过将其next分配给curr next来将其从链中删除。 另外，如果列表仅包含辅音，我们只需返回head。
+要正确删除和添加链接，最好先使用要检查的节点。 因此，如果您有*信号*，则将检查节点-下一个节点的>，以查看它是否是元音。 如果是这样，我们需要将其添加到 lastVowel 节点之后，然后很容易地通过将其 next 分配给 curr next 来将其从链中删除。 另外，如果列表仅包含辅音，我们只需返回 head。
 
 ## C++
 
@@ -594,7 +594,7 @@ a -> e -> o -> i -> b -> c -> d -> x
 参考：
 [Stackoverflow](https://stackoverflow.com/questions/31489675/seperatiing-vowels-and-consonents-of-linked-list-in-java)
 
-本文由 **Gaurav Miglani** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Gaurav Miglani** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

@@ -1,6 +1,6 @@
 # 将所有零移动到链接列表的前面
 
-给定一个链表。 任务是将全0移到链接列表的前面。 重新排列后，除0以外的所有其他元素的顺序应相同。
+给定一个链表。 任务是将全 0 移到链接列表的前面。 重新排列后，除 0 以外的所有其他元素的顺序应相同。
 
 **示例：**
 
@@ -15,7 +15,7 @@ Output :0 0 0 1 1 2 3
 
 **简单解决方案**是将所有链接列表元素存储在数组中。 然后将数组的所有元素移到开头。 最后，将数组元素复制回链接列表。
 
-**有效解决方案**是从第二个节点遍历链表。 对于每个值为0的节点，我们将其与当前位置断开连接，然后将节点移到最前面。
+**有效解决方案**是从第二个节点遍历链表。 对于每个值为 0 的节点，我们将其与当前位置断开连接，然后将节点移到最前面。
 
 ## C++
 
@@ -365,6 +365,6 @@ Linked list after rearrangement
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

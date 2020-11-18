@@ -19,7 +19,7 @@ Output : 78 67 56 45 34 23 12
 
 1.  [递归解决方案，以打印反向链接列表](https://www.geeksforgeeks.org/write-a-recursive-function-to-print-reverse-of-a-linked-list/)。 需要额外的空间。
 2.  [反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，然后打印。 这需要对原始列表进行修改。
-3.  [一种O（n <sup>2</sup> ）解决方案，用于打印链表](https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/)的反向列表，该列表首先计数节点，然后从末尾打印第k个节点。
+3.  [一种 O（n <sup>2</sup> ）解决方案，用于打印链表](https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/)的反向列表，该列表首先计数节点，然后从末尾打印第 k 个节点。
 
 在这篇文章中，讨论了有效的基于堆栈的解决方案。
 
@@ -404,6 +404,6 @@ class GFG {
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

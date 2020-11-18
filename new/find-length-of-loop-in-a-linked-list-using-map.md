@@ -2,7 +2,7 @@
 
 查找链接列表中的循环长度
 
-编写一个程序，检查给定的链表是否包含循环，如果存在循环，则返回循环中的节点数。 例如，在下面链接的列表中存在一个循环，并且循环的长度为4。如果不存在该循环，则该函数应返回0。
+编写一个程序，检查给定的链表是否包含循环，如果存在循环，则返回循环中的节点数。 例如，在下面链接的列表中存在一个循环，并且循环的长度为 4。如果不存在该循环，则该函数应返回 0。
 
 ![](img/71f8f1f7180d98a6b406bec3f4e70f97.png)
 
@@ -14,7 +14,7 @@
 2.  检查地图中是否存在该节点。
 3.  如果地图不包含该节点的地址，则将其及其位置插入地图。
 4.  如果地图已经包含该节点的地址，则返回其位置之间的差。
-5.  如果找不到这样的节点，则返回0。
+5.  如果找不到这样的节点，则返回 0。
 
 下面是上述方法的实现：
 
@@ -204,6 +204,6 @@ public static void main (String[] args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

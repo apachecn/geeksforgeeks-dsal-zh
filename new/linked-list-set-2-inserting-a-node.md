@@ -1,6 +1,6 @@
-# 链表| 设置2（插入节点）
+# 链表| 设置 2（插入节点）
 
-我们在[先前的文章](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)中介绍了链接列表。 我们还创建了一个具有3个节点的简单链表，并讨论了链表遍历。
+我们在[先前的文章](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)中介绍了链接列表。 我们还创建了一个具有 3 个节点的简单链表，并讨论了链表遍历。
 本文中讨论的所有程序均考虑以下链表的表示形式。
 
 ## C++
@@ -93,12 +93,12 @@ public class Node
 **2）**在给定节点之后。
 **3）**在链接列表的末尾。
 
-**在最前面添加一个节点：（4个步骤）**
-新节点总是添加在给定链接列表的开头之前。 新添加的节点成为链接列表的新头。 例如，如果给定的链接列表为10- > 15- > 20- > 25，而我们在前面添加了项目5，则链接列表将变为5- > 10- > 15 -> 20- > 25.让我们调用添加到列表前面的函数push（）。 push（）必须接收一个指向head指针的指针，因为push必须将head指针更改为指向新节点（请参见[此](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）。
+**在最前面添加一个节点：（4 个步骤）**
+新节点总是添加在给定链接列表的开头之前。 新添加的节点成为链接列表的新头。 例如，如果给定的链接列表为 10- > 15- > 20- > 25，而我们在前面添加了项目 5，则链接列表将变为 5- > 10- > 15 -> 20- > 25.让我们调用添加到列表前面的函数 push（）。 push（）必须接收一个指向 head 指针的指针，因为 push 必须将 head 指针更改为指向新节点（请参见[此](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）。
 
 [![linkedlist_insert_at_start](img/0fcc552ce260975b170428e6877939dc.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_at_start.png)
 
-以下是在最前面添加节点的4个步骤。
+以下是在最前面添加节点的 4 个步骤。
 
 ## C++
 
@@ -211,8 +211,8 @@ public void push(int new_data)
 
 ```
 
-push（）的时间复杂度为O（1），因为它要做的工作量是恒定的。
-**在给定节点之后添加一个节点：（5个步骤的过程）**
+push（）的时间复杂度为 O（1），因为它要做的工作量是恒定的。
+**在给定节点之后添加一个节点：（5 个步骤的过程）**
 我们得到指向节点的指针，并将新节点插入给定节点之后。
 
 [![linkedlist_insert_middle](img/b6bf7ceee6de4eb0511ffb8bb649abfb.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_middle.png) 
@@ -369,14 +369,14 @@ public void insertAfter(Node prev_node, 
 
 ```
 
-insertAfter（）的时间复杂度为O（1），因为它的工作量是恒定的。
-**在最后添加一个节点：（6个步骤的过程）**
-新节点总是添加在给定链接列表的最后一个节点之后。 例如，如果给定的链接列表为5- > 10- > 15- > 20- > 25，并且我们在末尾添加了项目30，则链接列表将变为5- > 10 -> 15- > 20- > 25- >30。
+insertAfter（）的时间复杂度为 O（1），因为它的工作量是恒定的。
+**在最后添加一个节点：（6 个步骤的过程）**
+新节点总是添加在给定链接列表的最后一个节点之后。 例如，如果给定的链接列表为 5- > 10- > 15- > 20- > 25，并且我们在末尾添加了项目 30，则链接列表将变为 5- > 10 -> 15- > 20- > 25- >30。
 由于链接列表通常由其开头表示，因此我们必须遍历该列表直到结尾，然后更改下一个 最后一个节点到新节点的数量。
 
 [![linkedlist_insert_last](img/428a5c975bfca4a1c08bc29cf2a6e78a.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_last.png)
 
-以下是最后添加节点的6个步骤。
+以下是最后添加节点的 6 个步骤。
 
 ## C++
 
@@ -564,9 +564,9 @@ public void append(int new_data)
 
 ```
 
-append的时间复杂度为O（n），其中n是链表中节点的数量。 由于从头到尾都有一个循环，因此该函数可以执行O（n）。
+append 的时间复杂度为 O（n），其中 n 是链表中节点的数量。 由于从头到尾都有一个循环，因此该函数可以执行 O（n）。
 还可以通过保留指向链表尾部的额外指针/
-**，将该方法优化为在O（1）中工作，以下是使用上述所有方法创建链表的完整程序 。**
+**，将该方法优化为在 O（1）中工作，以下是使用上述所有方法创建链表的完整程序 。**
 
 ## C++
 
@@ -1222,5 +1222,5 @@ class GFG
 ```
 
 您可能想尝试 **[在链表](http://quiz.geeksforgeeks.org/data-structure/linked-list/)**
-上练习MCQ问题 。
+上练习 MCQ 问题 。
 

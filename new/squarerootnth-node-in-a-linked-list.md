@@ -2,7 +2,7 @@
 
 中的平方根（n）个节点
 
-给定一个链表，编写一个函数，该函数接受链表的头节点作为参数，并返回链表中第（floor（sqrt（n）））个位置上存在的节点的值，其中n是长度。 链接列表或列表中的节点总数。
+给定一个链表，编写一个函数，该函数接受链表的头节点作为参数，并返回链表中第（floor（sqrt（n）））个位置上存在的节点的值，其中 n 是长度。 链接列表或列表中的节点总数。
 **范例：**
 
 ```
@@ -17,15 +17,15 @@ Output : 30
 
 ```
 
-**简单方法**：简单方法是首先找到链表中存在的节点总数，然后找到floor（squareroot（n））的值，其中n是节点总数。 然后从列表中的第一个节点遍历到该位置，并返回此位置的节点。
-此方法遍历链接列表2次。
+**简单方法**：简单方法是首先找到链表中存在的节点总数，然后找到 floor（squareroot（n））的值，其中 n 是节点总数。 然后从列表中的第一个节点遍历到该位置，并返回此位置的节点。
+此方法遍历链接列表 2 次。
 
 **优化方法**：在这种方法中，我们只需遍历链表一次即可获得所需的节点。 以下是此方法的分步算法。
 
-1.  将两个计数器i和j都初始化为1，并将指针sqrtn初始化为NULL，以遍历直到所需的位置。
+1.  将两个计数器 i 和 j 都初始化为 1，并将指针 sqrtn 初始化为 NULL，以遍历直到所需的位置。
 2.  使用头节点开始遍历列表，直到到达最后一个节点。
-3.  遍历时检查j的值是否等于sqrt（i）。 如果值相等，则将i和j和sqrtn都增加到指向sqrtn-> next，否则仅增加i。
-4.  现在，当我们到达列表的最后一个节点时，i将包含n值，j将包含sqrt（i）值，而sqrtn将指向第j个位置的节点。
+3.  遍历时检查 j 的值是否等于 sqrt（i）。 如果值相等，则将 i 和 j 和 sqrtn 都增加到指向 sqrtn-> next，否则仅增加 i。
+4.  现在，当我们到达列表的最后一个节点时，i 将包含 n 值，j 将包含 sqrt（i）值，而 sqrtn 将指向第 j 个位置的节点。
 
 ## C++
 
@@ -502,7 +502,7 @@ sqrt(n)th node is 20
 
 ```
 
-本文由 **Akshit Agarwal** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Akshit Agarwal** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

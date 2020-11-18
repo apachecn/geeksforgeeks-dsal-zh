@@ -1,7 +1,7 @@
 # 迭代方法，用于删除线段链接列表中的中点
 
 这篇文章解释了[这个](http://www.geeksforgeeks.org/given-linked-list-line-segments-remove-middle-points/)问题的迭代方法。
-我们维护两个指针：prev和temp。 如果这两个x或y相同，我们继续前进直到等式成立，并继续删除它们之间的节点。 从其开始相等的节点，我们调整该节点的下一个指针。
+我们维护两个指针：prev 和 temp。 如果这两个 x 或 y 相同，我们继续前进直到等式成立，并继续删除它们之间的节点。 从其开始相等的节点，我们调整该节点的下一个指针。
 
 ## C++
 
@@ -503,6 +503,6 @@ Modified Linked List:
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

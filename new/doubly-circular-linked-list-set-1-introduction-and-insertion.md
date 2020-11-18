@@ -1,10 +1,10 @@
-# 双向循环链接列表| 第1组（简介和插入）
+# 双向循环链接列表| 第 1 组（简介和插入）
 
 先决条件：[双链表，](http://quiz.geeksforgeeks.org/doubly-linked-list/) [循环链表](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)
 
 循环双重链接列表具有双重链接列表和循环链接列表的属性，其中两个连续元素通过上一个指针和下一个指针链接或连接，最后一个节点通过下一个指针指向第一个节点，并且第一个节点通过下一个指针指向最后一个节点 前一个指针。
 
-以下是C / C++中的循环双向链接列表节点的表示形式：
+以下是 C / C++中的循环双向链接列表节点的表示形式：
 
 ```
 // Structure of the node 
@@ -769,7 +769,7 @@ Traversal in reverse direction
 **优点：**
 
 *   列表可以从两个方向遍历，即从头到尾或从​​尾到头。
-*   从头到尾或从​​尾到头的跳跃是在恒定时间O（1）中完成的。
+*   从头到尾或从​​尾到头的跳跃是在恒定时间 O（1）中完成的。
 *   循环双链表用于实现高级数据结构，例如[斐波那契堆](https://en.wikipedia.org/wiki/Fibonacci_heap)。
 
 **劣势**
@@ -782,7 +782,7 @@ Traversal in reverse direction
 *   在媒体播放器应用程序中管理歌曲播放列表。
 *   在线购物中管理购物车。
 
-本文由 **Akash Gupta** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Akash Gupta** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

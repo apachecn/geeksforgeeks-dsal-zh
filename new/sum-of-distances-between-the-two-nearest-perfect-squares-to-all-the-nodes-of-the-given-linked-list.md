@@ -8,9 +8,9 @@
 
 > **输入：** 3-> 15-> 7-> NULL
 > **输出：** 15
-> 对于3：最接近的左侧完美平方为1，最接近 右4即4-1 = 3
-> 对于15：16 – 9 = 7
-> 对于7：9 – 4 = 5
+> 对于 3：最接近的左侧完美平方为 1，最接近 右 4 即 4-1 = 3
+> 对于 15：16 – 9 = 7
+> 对于 7：9 – 4 = 5
 > 3 + 7 + 5 = 15
 > 
 > **输入：** 1-> 5-> 10-> 78-> 23->空
@@ -87,6 +87,6 @@ if __name__=='__main__':
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

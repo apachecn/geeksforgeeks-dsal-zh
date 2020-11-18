@@ -7,7 +7,7 @@
 
 您可以假定“链接列表”永远不会为空。
 
-让函数名称为deleteNode（）。 在一个简单的实现中，当要删除的节点是第一个节点时，该函数需要修改头指针。 如[上一篇文章](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)所讨论的，当函数修改头指针时，该函数必须使用给定方法的[中的一种，此处我们无法使用任何一种方法。](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)
+让函数名称为 deleteNode（）。 在一个简单的实现中，当要删除的节点是第一个节点时，该函数需要修改头指针。 如[上一篇文章](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)所讨论的，当函数修改头指针时，该函数必须使用给定方法的[中的一种，此处我们无法使用任何一种方法。](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)
 
 **解决方案**
 我们明确处理要删除的节点是第一个节点的情况，我们将下一个节点的数据复制到头部，然后删除下一个节点。 可以通过找到上一个节点并更改下一个下一个节点来正常处理被删除节点不是头节点的情况。 以下是实现。

@@ -20,9 +20,9 @@ Output : 7 -> 3 -> 10 -> 6 -> 6 -> 6
 
 时间复杂度：O（n <sup>2</sup> ）
 
-**高效解决方案1：**保留两个指针：
+**高效解决方案 1：**保留两个指针：
 **pCrawl** = >用来遍历整个列表的指针。
-**pKey** = >如果找到了密钥，则指向发生密钥的指针。 其他与pCrawl相同。
+**pKey** = >如果找到了密钥，则指向发生密钥的指针。 其他与 pCrawl 相同。
 
 我们从链接列表的开头开始上述两个指针。 仅当 **pKey** 未指向键时，才移动 **pKey** 。 我们总是移动 **pCrawl** 。 因此，当 **pCrawl** 和 **pKey** 不相同时，我们必须找到一个位于 **pCrawl** 之前的密钥，因此我们交换 **pCrawl** 的数据 和 **pKey** ，然后将 **pKey** 移动到下一个位置。 循环不变是交换数据后，从 **pKey** 到 **pCrawl** 的所有元素都是键。
 
@@ -398,7 +398,7 @@ After moveToEnd(), the Linked list is
 
 **时间复杂度：** O（n）仅需要遍历列表。
 
-**有效解决方案2：**
+**有效解决方案 2：**
 1.遍历链接列表，并在末尾使用指针。
 2.现在，检查密钥和节点->数据是否相等，将节点移至倒数第二个，否则向前移
 。
@@ -749,9 +749,9 @@ Linked List after operations :
 
 感谢 **Ravinder Kumar** 提出了此方法。
 
-**高效解决方案3：**将维护单独的密钥列表。 我们将此键列表初始化为空。 我们遍历给定的列表。 对于找到的每个密钥，我们将其从原始列表中删除，然后插入单独的密钥列表中。 最后，我们在剩余给定列表的末尾链接关键字列表。 该解决方案的时间复杂度也是O（n），并且它只需要遍历list。
+**高效解决方案 3：**将维护单独的密钥列表。 我们将此键列表初始化为空。 我们遍历给定的列表。 对于找到的每个密钥，我们将其从原始列表中删除，然后插入单独的密钥列表中。 最后，我们在剩余给定列表的末尾链接关键字列表。 该解决方案的时间复杂度也是 O（n），并且它只需要遍历 list。
 
-本文由MAZHAR IMAM KHAN撰写。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 MAZHAR IMAM KHAN 撰写。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

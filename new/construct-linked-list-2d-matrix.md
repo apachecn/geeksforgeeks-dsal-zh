@@ -1,4 +1,4 @@
-# 从2D矩阵
+# 从 2D 矩阵
 
 构造一个链表
 
@@ -26,7 +26,7 @@ NULL NULL NULL
 
 ```
 
-**问题来源：** [事实访谈经验| 设置9](https://www.geeksforgeeks.org/factset-interview-experience-set-9-campus-full-time/)
+**问题来源：** [事实访谈经验| 设置 9](https://www.geeksforgeeks.org/factset-interview-experience-set-9-campus-full-time/)
 
 这个想法是为矩阵的每个元素构造一个新节点，并递归地创建其下和右节点。
 
@@ -343,7 +343,7 @@ public class Linked_list_2D_Matrix
 
 ```
 
-本文由 **[Mandeep Singh](https://github.com/msdeep14)** 贡献。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **[Mandeep Singh](https://github.com/msdeep14)** 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

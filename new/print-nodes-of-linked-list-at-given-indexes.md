@@ -1,6 +1,6 @@
 # 在给定索引处打印链接列表的节点
 
-给定一个按升序排序的单链表![l1](img/ef22f4f5e9e8d0d5bc762c4bd091359b.png "Rendered by QuickLaTeX.com")和另一个未排序的单链表![l2](img/cdb2756782724bb4ebc46f082a9e7ce9.png "Rendered by QuickLaTeX.com")。 任务是根据数据在第一链接列表的节点中指出的位置来打印第二链接列表的元素。 例如，如果第一个链表是 **1- > 2- > 5** ，则必须打印1 <sup>st</sup> ，2 <sup>nd</sup> 和 第二个链表的第5 <sup>个元素。</sup>
+给定一个按升序排序的单链表![l1](img/ef22f4f5e9e8d0d5bc762c4bd091359b.png "Rendered by QuickLaTeX.com")和另一个未排序的单链表![l2](img/cdb2756782724bb4ebc46f082a9e7ce9.png "Rendered by QuickLaTeX.com")。 任务是根据数据在第一链接列表的节点中指出的位置来打印第二链接列表的元素。 例如，如果第一个链表是 **1- > 2- > 5** ，则必须打印 1 <sup>st</sup> ，2 <sup>nd</sup> 和 第二个链表的第 5 <sup>个元素。</sup>
 
 **范例**：
 
@@ -371,6 +371,6 @@ public static void Main() 
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

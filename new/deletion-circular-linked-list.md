@@ -25,19 +25,19 @@ Output : 2->5->8->10->2(head node)
 ```
 
 **算法**
-**情况1** ：列表为空。
+**情况 1** ：列表为空。
 
 *   如果列表为空，我们将简单地返回。
 
-**情况2** ：列表不为空
+**情况 2** ：列表不为空
 
 *   如果列表不为空，那么我们定义两个指针 **curr** 和 **prev** ，并使用**头**节点初始化指针 **curr** 。
-*   使用 **curr** 遍历列表，找到要删除的节点，然后在将curr移至下一个节点之前，每次设置prev = curr。
-*   如果找到该节点，请检查它是否是列表中的唯一节点。 如果是，则设置head = NULL和free（curr）。
-*   如果列表具有多个节点，请检查它是否是列表的第一个节点。 检查条件（curr == head）。 如果是，则移动上一个，直到到达最后一个节点。 在prev到达最后一个节点后，设置head = head-> next和prev-> next = head。 删除curr。
-*   如果curr不是第一个节点，则检查它是否是列表中的最后一个节点。 检查的条件是（curr-> next == head）。
-*   如果curr是最后一个节点。 设置prev-> next = head并通过free（curr）删除节点curr。
-*   如果要删除的节点既不是第一个节点，也不是最后一个节点，则设置prev-> next = temp-> next并删除curr。
+*   使用 **curr** 遍历列表，找到要删除的节点，然后在将 curr 移至下一个节点之前，每次设置 prev = curr。
+*   如果找到该节点，请检查它是否是列表中的唯一节点。 如果是，则设置 head = NULL 和 free（curr）。
+*   如果列表具有多个节点，请检查它是否是列表的第一个节点。 检查条件（curr == head）。 如果是，则移动上一个，直到到达最后一个节点。 在 prev 到达最后一个节点后，设置 head = head-> next 和 prev-> next = head。 删除 curr。
+*   如果 curr 不是第一个节点，则检查它是否是列表中的最后一个节点。 检查的条件是（curr-> next == head）。
+*   如果 curr 是最后一个节点。 设置 prev-> next = head 并通过 free（curr）删除节点 curr。
+*   如果要删除的节点既不是第一个节点，也不是最后一个节点，则设置 prev-> next = temp-> next 并删除 curr。
 
 **完整程序，以在循环链接列表中演示删除：**
 
@@ -708,7 +708,7 @@ List After Deletion: 10 8 5 2
 
 ```
 
-本文由 [**Harsh Agarwal**](https://www.facebook.com/harsh.agarwal.16752) 贡献。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 [**Harsh Agarwal**](https://www.facebook.com/harsh.agarwal.16752) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

@@ -1,4 +1,4 @@
-# 双向循环链接列表| 设置2（删除）
+# 双向循环链接列表| 设置 2（删除）
 
 我们已经讨论了[双循环链表介绍及其插入](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)。
 
@@ -6,24 +6,24 @@
 
 **算法**
 
-**情况1：**空列表（开始= NULL）
+**情况 1：**空列表（开始= NULL）
 
 *   如果列表为空，只需返回即可。
 
-**情况2：**列表最初包含一些节点，起点指向列表的第一个节点
+**情况 2：**列表最初包含一些节点，起点指向列表的第一个节点
 
-1.  如果列表不为空，则我们定义两个指针 **curr** 和 **prev_1** ，并初始化指针 **curr** 指向列表的第一个节点，并且prev_1 = NULL。
+1.  如果列表不为空，则我们定义两个指针 **curr** 和 **prev_1** ，并初始化指针 **curr** 指向列表的第一个节点，并且 prev_1 = NULL。
 2.  每次设置 *prev_1 = curr* 时，使用 *curr* 指针遍历列表以查找要删除的节点，然后将 *curr* 移至下一个节点。
-3.  如果找到该节点，请检查它是否是列表中的唯一节点。 如果是，则设置start = NULL并释放 *curr* 指向的节点。
-4.  如果列表具有多个节点，请检查它是否是列表的第一个节点。 检查的条件是（curr ==开始）。 如果是，则将prev_1移至最后一个节点（prev_1 =开始-> prev）。 在prev_1到达最后一个节点后，设置start = start-> next和prev_1-> next = start and start-> prev = prev_1。 释放由curr指向的节点。
-5.  如果 *curr* 不是第一个节点，我们检查它是否是列表中的最后一个节点。 检查的条件是（curr-> next == start）。 如果是，则设置prev_1-> next =开始并开始-> prev = prev_1。 释放由curr指向的节点。
-6.  如果要删除的节点既不是第一个节点，也不是最后一个节点，则再声明一个指针 **temp** 并初始化指针 **temp** 指向 *curr* 指针的下一个指针 （临时= curr- >）。 现在设置，prev_1-> next = temp和temp-> prev = prev_1。 释放由curr指向的节点。
+3.  如果找到该节点，请检查它是否是列表中的唯一节点。 如果是，则设置 start = NULL 并释放 *curr* 指向的节点。
+4.  如果列表具有多个节点，请检查它是否是列表的第一个节点。 检查的条件是（curr ==开始）。 如果是，则将 prev_1 移至最后一个节点（prev_1 =开始-> prev）。 在 prev_1 到达最后一个节点后，设置 start = start-> next 和 prev_1-> next = start and start-> prev = prev_1。 释放由 curr 指向的节点。
+5.  如果 *curr* 不是第一个节点，我们检查它是否是列表中的最后一个节点。 检查的条件是（curr-> next == start）。 如果是，则设置 prev_1-> next =开始并开始-> prev = prev_1。 释放由 curr 指向的节点。
+6.  如果要删除的节点既不是第一个节点，也不是最后一个节点，则再声明一个指针 **temp** 并初始化指针 **temp** 指向 *curr* 指针的下一个指针 （临时= curr- >）。 现在设置，prev_1-> next = temp 和 temp-> prev = prev_1。 释放由 curr 指向的节点。
 
-*   如果给定的*键*（说4）与列表的第一个节点匹配（步骤4）：
+*   如果给定的*键*（说 4）与列表的第一个节点匹配（步骤 4）：
     [![Delete_first_node](img/885247acbdb517904d32df817259a588.png)](https://media.geeksforgeeks.org/wp-content/uploads/Delete_first_node.png)
-*   如果给定的*键*（说8）与列表的最后一个节点匹配（步骤5）：
+*   如果给定的*键*（说 8）与列表的最后一个节点匹配（步骤 5）：
     [![Delete_last_node](img/dec22affd2479b6ec8f63c4cbc90d8c7.png)](https://media.geeksforgeeks.org/wp-content/uploads/Delete_last_node.png)
-*   如果给定的*键*（说6）与列表的中间节点匹配（步骤6）：
+*   如果给定的*键*（说 6）与列表的中间节点匹配（步骤 6）：
     [![Delete_middle_node](img/a121670e94ed3cebfca957353bcfedbc.png)](https://media.geeksforgeeks.org/wp-content/uploads/Delete_middle_node.png)
 
 ## C++
@@ -694,7 +694,7 @@ List After Deleting 6: 5 7
 
 ```
 
-本文由 **Akash Gupta** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Akash Gupta** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

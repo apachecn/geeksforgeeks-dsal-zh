@@ -1,4 +1,4 @@
-# 在二叉树中计数对，其总和等于给定值x
+# 在二叉树中计数对，其总和等于给定值 x
 
 给定一个包含 **n** 个不同数字和值 **x** 的二叉树。 问题在于在给定的二叉树中对它们的总和等于给定值 **x** 的对进行计数。
 
@@ -19,7 +19,7 @@ The pairs are (3, 7), (2, 8) and (4, 6).
 
 ```
 
-**1）天真的方法：**通过任何一种树遍历方法逐一获取二叉树的每个节点。 将节点 **temp** ，树的**根**和值 **x** 传递给另一个函数，例如 **findPair（）**。 在功能中，借助**根**指针再次遍历树。 将这些节点与 **temp** 逐一求和，并检查sum == x。 如果是这样，则递增**计数**。 计算计数=计数/ 2，因为通过上述方法已对一对进行了两次计数。
+**1）天真的方法：**通过任何一种树遍历方法逐一获取二叉树的每个节点。 将节点 **temp** ，树的**根**和值 **x** 传递给另一个函数，例如 **findPair（）**。 在功能中，借助**根**指针再次遍历树。 将这些节点与 **temp** 逐一求和，并检查 sum == x。 如果是这样，则递增**计数**。 计算计数=计数/ 2，因为通过上述方法已对一对进行了两次计数。
 
 ## C++
 
@@ -392,9 +392,9 @@ Count = 3
 **2）高效方法：**以下是步骤：
 
 1.  将给定的二叉树转换为双向链表。 请参阅此帖子的[。](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-4/)
-2.  对在步骤1中获得的双向链表进行排序。请参阅此帖子中的[。](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)
+2.  对在步骤 1 中获得的双向链表进行排序。请参阅此帖子中的[。](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)
 3.  计数对以加倍等于“ x”的双链排序。 请参阅此帖子的[。](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)
-4.  显示在步骤4中获得的计数。
+4.  显示在步骤 4 中获得的计数。
 
 ## C++
 
@@ -1005,11 +1005,11 @@ Count = 3
 
 时间复杂度：O（nLog n）。
 
-**3）另一种有效的方法–无需转换为DLL和排序：**以下是步骤：
+**3）另一种有效的方法–无需转换为 DLL 和排序：**以下是步骤：
 
 1.  以任何顺序（前/后/中）遍历树。
-2.  创建一个空哈希，并继续在当前节点的值和X之间添加差异。
-3.  在每个节点上，检查其值是否在哈希中，如果是，则将计数增加1，并且请勿在哈希中将该节点的值与X的差相加，以避免重复计算单个对。
+2.  创建一个空哈希，并继续在当前节点的值和 X 之间添加差异。
+3.  在每个节点上，检查其值是否在哈希中，如果是，则将计数增加 1，并且请勿在哈希中将该节点的值与 X 的差相加，以避免重复计算单个对。
 
 ```
 
@@ -1088,6 +1088,6 @@ Count = 3
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

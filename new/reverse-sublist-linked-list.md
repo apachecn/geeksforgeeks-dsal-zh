@@ -1,6 +1,6 @@
 # 反向链接列表的子列表
 
-我们得到了一个链表以及位置m和n。 我们需要将链接列表从位置m反向到n。
+我们得到了一个链表以及位置 m 和 n。 我们需要将链接列表从位置 m 反向到 n。
 
 例子：
 
@@ -15,7 +15,7 @@ Output : 1->4->3->2->5->6->NULL
 
 ```
 
-要将链接列表从位置m反转为n，我们通过运行循环来找到链接列表的开始和结束位置的地址，然后将其与列表的其余部分取消链接，然后使用常规的[链接列表 反向功能](https://www.geeksforgeeks.org/reverse-a-linked-list/)，我们之前已使用它来反转完整的链表，并使用它来反转链表中需要反转的部分。 反转后，我们再次将反转的部分附加到主列表。
+要将链接列表从位置 m 反转为 n，我们通过运行循环来找到链接列表的开始和结束位置的地址，然后将其与列表的其余部分取消链接，然后使用常规的[链接列表 反向功能](https://www.geeksforgeeks.org/reverse-a-linked-list/)，我们之前已使用它来反转完整的链表，并使用它来反转链表中需要反转的部分。 反转后，我们再次将反转的部分附加到主列表。
 
 ```
 
@@ -141,7 +141,7 @@ int main()
 10 20 60 50 40 30 70 
 ```
 
-本文由 **Akshit Agarwal** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Akshit Agarwal** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

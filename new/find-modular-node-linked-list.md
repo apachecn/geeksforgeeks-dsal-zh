@@ -2,7 +2,7 @@
 
 中查找模块化节点
 
-给定一个单链列表和一个数字k，找到最后一个节点，其n％k == 0，其中n是列表中的节点数。
+给定一个单链列表和一个数字 k，找到最后一个节点，其 n％k == 0，其中 n 是列表中的节点数。
 
 **示例：**
 
@@ -17,8 +17,8 @@ Output : 9
 
 ```
 
-1.取得一个指针moduleNode并将其初始化为NULL。 遍历链接列表。
-2.对于每个i％k = 0，更新moduleNode。
+1.取得一个指针 moduleNode 并将其初始化为 NULL。 遍历链接列表。
+2.对于每个 i％k = 0，更新 moduleNode。
 
 ## C++
 
@@ -269,7 +269,7 @@ Modular node is 4
 
 ```
 
-本文由 **Prakriti Gupta** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Prakriti Gupta** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

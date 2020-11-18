@@ -1,6 +1,6 @@
-# 递归函数，用于从链接列表中删除第k个节点
+# 递归函数，用于从链接列表中删除第 k 个节点
 
-给定一个单链列表，删除第k个位置的节点而不使用循环。
+给定一个单链列表，删除第 k 个位置的节点而不使用循环。
 
 **示例：**
 
@@ -15,7 +15,7 @@ Output : 0->0->6->2->3
 
 ```
 
-我们递归地减少k的值。 当k达到1时，我们删除当前节点，然后将当前节点的下一个作为新节点返回。 当函数返回时，我们将返回的节点链接为上一个节点的下一个节点。
+我们递归地减少 k 的值。 当 k 达到 1 时，我们删除当前节点，然后将当前节点的下一个作为新节点返回。 当函数返回时，我们将返回的节点链接为上一个节点的下一个节点。
 
 ## C++
 
@@ -357,7 +357,7 @@ Modified Linked List: 12 15 11 5 6 2 3
 
 ```
 
-本文由 [**Mohd Saleem**](https://auth.geeksforgeeks.org/profile.php?user=Mohd%20%20Saleem) 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，也可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄到tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 [**Mohd Saleem**](https://auth.geeksforgeeks.org/profile.php?user=Mohd%20%20Saleem) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，也可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄到 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

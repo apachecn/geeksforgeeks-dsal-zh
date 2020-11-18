@@ -2,7 +2,7 @@
 
 进行堆栈
 
-堆栈是使用后进先出原理（LIFO）插入和删除的对象的集合。 用户可以将元素插入堆栈，并且只能访问或删除堆栈顶部最近插入的对象。 在数组上使用LinkedList来实现堆栈的主要优点是**动态分配数据**，而在数组中，堆栈的大小受到限制，并且当堆栈的大小出现堆栈溢出错误的机会 超出最大大小。
+堆栈是使用后进先出原理（LIFO）插入和删除的对象的集合。 用户可以将元素插入堆栈，并且只能访问或删除堆栈顶部最近插入的对象。 在数组上使用 LinkedList 来实现堆栈的主要优点是**动态分配数据**，而在数组中，堆栈的大小受到限制，并且当堆栈的大小出现堆栈溢出错误的机会 超出最大大小。
 
 ### 堆栈操作：
 
@@ -11,10 +11,10 @@
 > 第二个元素。
 > **3\. top（）：**返回顶部元素。
 > **4\. size（）：**返回堆栈的大小。
-> **5\. isEmpty（）：**如果堆栈为空，则返回True，否则返回False。
+> **5\. isEmpty（）：**如果堆栈为空，则返回 True，否则返回 False。
 > **6\. printstack（）：**打印堆栈中的所有元素。
 
-### 以下是在Python中使用Doubly LinkedList实现上述堆栈操作的方法：
+### 以下是在 Python 中使用 Doubly LinkedList 实现上述堆栈操作的方法：
 
 ```
 
@@ -154,7 +154,7 @@ stack is empty: False
 
 ```
 
-注意怪胎！ 通过 [**Python编程基础**](https://practice.geeksforgeeks.org/courses/Python-Foundation?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=GFG_Article_Bottom_Python_Foundation) 课程加强基础，并学习基础知识。
+注意怪胎！ 通过 [**Python 编程基础**](https://practice.geeksforgeeks.org/courses/Python-Foundation?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=GFG_Article_Bottom_Python_Foundation) 课程加强基础，并学习基础知识。
 
 首先，您的面试准备将通过 [**Python DS**](https://practice.geeksforgeeks.org/courses/Data-Structures-With-Python?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=GFG_Article_Bottom_Python_DS) 课程增强您的数据结构概念。
 
@@ -162,6 +162,6 @@ stack is empty: False
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -2,7 +2,7 @@
 
 中所有主要节点的乘积
 
-给定一个包含N个节点的双链表。 任务是找到所有主要节点的乘积。
+给定一个包含 N 个节点的双链表。 任务是找到所有主要节点的乘积。
 
 **示例：**
 
@@ -14,10 +14,10 @@
 
 **方法：**
 
-*   用链接列表的开头初始化一个指针temp，并用1初始化一个product变量。
+*   用链接列表的开头初始化一个指针 temp，并用 1 初始化一个 product 变量。
 *   使用循环开始遍历链表，直到遍历所有节点。
 *   如果节点值是质数，则将当前节点的值乘以乘积，即乘积* = current_node->数据。
-*   递增指向链接列表的下一个节点的指针，即temp = temp-> next。
+*   递增指向链接列表的下一个节点的指针，即 temp = temp-> next。
 *   退货。
 
 下面是上述方法的实现：
@@ -451,7 +451,7 @@ Product of Prime Nodes : 119
 
 ```
 
-**时间复杂度**：O（N），其中N是节点数。
+**时间复杂度**：O（N），其中 N 是节点数。
 
 
 
@@ -459,6 +459,6 @@ Product of Prime Nodes : 119
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

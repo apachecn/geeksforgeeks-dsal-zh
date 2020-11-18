@@ -1,6 +1,6 @@
-# 在保留旧节点的同时将起始N个节点拆分为新的循环链接列表
+# 在保留旧节点的同时将起始 N 个节点拆分为新的循环链接列表
 
-给定一个具有 **N** 个节点和整数 **K** 的循环链表，其中 **0 < K < N** ，任务是拆分第一个 **将**个节点K放入一个新列表中，同时将其余的节点保留在原始循环链接列表中。
+给定一个具有 **N** 个节点和整数 **K** 的循环链表，其中 **0 < K < N** ，任务是拆分第一个 **将**个节点 K 放入一个新列表中，同时将其余的节点保留在原始循环链接列表中。
 
 **示例：**
 
@@ -556,6 +556,6 @@ The new lists are:
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

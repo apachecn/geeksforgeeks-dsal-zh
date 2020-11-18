@@ -1,10 +1,10 @@
-# 须藤放置[1.4] | K和
+# 须藤放置[1.4] | K 和
 
-给定整数和整数k的链表的开头，您的任务是按如下方式修改链表：
+给定整数和整数 k 的链表的开头，您的任务是按如下方式修改链表：
 
-*   考虑大小为k的组中的节点。 在每个组中，将第一个节点的值替换为组和。
+*   考虑大小为 k 的组中的节点。 在每个组中，将第一个节点的值替换为组和。
 *   另外，删除组中除第一个节点以外的元素。
-*   在遍历期间，如果链表中的其余节点小于k，则也要考虑剩余节点，执行上述操作。
+*   在遍历期间，如果链表中的其余节点小于 k，则也要考虑剩余节点，执行上述操作。
 
 **示例：**
 
@@ -12,7 +12,7 @@
 > 1- > 2- > 3- > 4- > 5- > 6
 > **输出：** 3 7 11
 > 
-> 我们用（）表示对k个元素的分组。 （）中的元素相加。
+> 我们用（）表示对 k 个元素的分组。 （）中的元素相加。
 > 1-> 2-> 3-> 4-> 5-> 6->空
 > （1-> 2）-> 3 -> 4-> 5-> 6->空
 > （3）-> 3-> 4-> 5-> 6-> null
@@ -22,7 +22,7 @@
 > 3-> 7->（11） -> null
 > 3-> 7-> 11-> null
 
-**方法：**将给定的节点插入“链接”列表中。 插入方法已在的[中进行了讨论。 插入节点后，从列表的开头进行迭代。 将第一个节点标记为**临时**节点。 迭代接下来的k-1个节点，并在 **sum** 变量中求和。 如果节点数少于K，则将临时节点的数据替换为sum，并将temp指向NULL。 如果存在一个由K个节点组成的组，则用sum替换临时数据，并将temp移到K个节点之后的节点。 继续上述操作，直到temp指向NULL。 一旦temp到达末尾，则意味着遍历了所有大小为K的组，并且已用大小为K的节点总和替换了该节点。一旦完成了替换操作，就可以打印由此形成的链表。 在此](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)的[中已讨论了打印链接列表的方法。](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
+**方法：**将给定的节点插入“链接”列表中。 插入方法已在的[中进行了讨论。 插入节点后，从列表的开头进行迭代。 将第一个节点标记为**临时**节点。 迭代接下来的 k-1 个节点，并在 **sum** 变量中求和。 如果节点数少于 K，则将临时节点的数据替换为 sum，并将 temp 指向 NULL。 如果存在一个由 K 个节点组成的组，则用 sum 替换临时数据，并将 temp 移到 K 个节点之后的节点。 继续上述操作，直到 temp 指向 NULL。 一旦 temp 到达末尾，则意味着遍历了所有大小为 K 的组，并且已用大小为 K 的节点总和替换了该节点。一旦完成了替换操作，就可以打印由此形成的链表。 在此](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)的[中已讨论了打印链接列表的方法。](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
 
 下面是上述方法的实现：
 
@@ -506,6 +506,6 @@ public static void Main()
 
 被誉为业界最抢手的技能之一，拥有我们的 [**C++ STL**](https://practice.geeksforgeeks.org/courses/cpp-stl?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=GFG_Article_Bottom_CPP_STL) 课程的编码基础，并通过严格的问题解决方法掌握了这些概念。
 
-本文由 **Team Geeksforgeeks** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Team Geeksforgeeks** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

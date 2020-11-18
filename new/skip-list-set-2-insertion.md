@@ -1,6 +1,6 @@
-# 跳过列表| 设置2（插入）
+# 跳过列表| 设置 2（插入）
 
-我们已经讨论了“跳过列表”的概念以及它们在[跳过列表中的工作方式。 设置1（简介）](https://www.geeksforgeeks.org/skip-list/)。 在本文中，我们将讨论如何在“跳过列表”中插入元素。
+我们已经讨论了“跳过列表”的概念以及它们在[跳过列表中的工作方式。 设置 1（简介）](https://www.geeksforgeeks.org/skip-list/)。 在本文中，我们将讨论如何在“跳过列表”中插入元素。
 
 **决定节点级别**
 
@@ -16,11 +16,11 @@ return lvl
 
 ```
 
-**MaxLevel** 是跳过列表中级别数的上限。 可以确定为– ![L(N) = log_{p/2}{N}](img/36f27042b59a2cf429fac95507620e0b.png "Rendered by QuickLaTeX.com")。 上面的算法确保随机级别永远不会大于MaxLevel。 **p** 是具有 **i** 指针的节点的分数，也具有 **i + 1** 指针的指针，N是列表中节点的数量。
+**MaxLevel** 是跳过列表中级别数的上限。 可以确定为– ![L(N) = log_{p/2}{N}](img/36f27042b59a2cf429fac95507620e0b.png "Rendered by QuickLaTeX.com")。 上面的算法确保随机级别永远不会大于 MaxLevel。 **p** 是具有 **i** 指针的节点的分数，也具有 **i + 1** 指针的指针，N 是列表中节点的数量。
 
 **节点结构**
 
-每个节点携带一个密钥和一个**前向**数组，该数组携带指向不同级别节点的指针。 级别i节点携带索引为0到i的i个前向指针。
+每个节点携带一个密钥和一个**前向**数组，该数组携带指向不同级别节点的指针。 级别 i 节点携带索引为 0 到 i 的 i 个前向指针。
 ![Skip Node](img/c2495da158ed972fafcf20538bd8063b.png)
 
 **插入跳过列表**
@@ -30,7 +30,7 @@ return lvl
 1.  下一个节点的密钥小于要插入的密钥，然后我们继续在相同级别上前进
 2.  下一个节点的密钥大于要插入的密钥，然后在 **update [i]** 处存储指向当前节点 **i** 的指针，然后向下移动一级并继续搜索。
 
-在级别0，我们肯定会找到一个插入给定键的位置。 以下是插入算法的伪代码–
+在级别 0，我们肯定会找到一个插入给定键的位置。 以下是插入算法的伪代码–
 
 ```
 Insert(list, searchKey)
@@ -52,7 +52,7 @@ for i := 0 to level do
 
 ```
 
-在这里，update [i]保持指向级别 **i** 的节点的指针，从该指针我们向下移动至级别 **i-1** ，节点的指针指向级别0的插入位置。考虑此示例 我们要在其中插入密钥17的位置–
+在这里，update [i]保持指向级别 **i** 的节点的指针，从该指针我们向下移动至级别 **i-1** ，节点的指针指向级别 0 的插入位置。考虑此示例 我们要在其中插入密钥 17 的位置–
 ![Insert node ](img/72ea3fa503549efb8b2955630519d481.png)
 以下是在跳过列表中插入密钥的代码–
 
@@ -411,7 +411,7 @@ Level 3: 12 17 25
 
 *   [ftp://ftp.cs.umd.edu/pub/skipLists/skiplists.pdf](ftp://ftp.cs.umd.edu/pub/skipLists/skiplists.pdf)
 
-本文由 [**Atul Kumar**](https://www.linkedin.com/in/atul-kumar-733b32136/) 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 [**Atul Kumar**](https://www.linkedin.com/in/atul-kumar-733b32136/) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

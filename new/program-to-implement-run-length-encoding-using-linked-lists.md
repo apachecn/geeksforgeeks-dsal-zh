@@ -4,7 +4,7 @@
 
 例如，在游程编码中，“ a-> a-> a-> a-> a”将被替换为“ a-> 5”。
 
-**注意**：对于非重复节点，请勿附加计数1。例如，a- > b- > b将被替换为“ a- > b- >”。 2”而不是“ a- > 1- > b- > 2”。
+**注意**：对于非重复节点，请勿附加计数 1。例如，a- > b- > b 将被替换为“ a- > b- >”。 2”而不是“ a- > 1- > b- > 2”。
 
 **示例：**
 
@@ -460,7 +460,7 @@ a 3 b r 2
 
 1.  遍历列表。
 2.  比较当前字符和下一个字符。 如果相同，则增加计数值。
-3.  删除频率大于2的节点。
+3.  删除频率大于 2 的节点。
 4.  如果字符不同，则更新计数值。
 
 ```
@@ -566,6 +566,6 @@ a 3 b r 2
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

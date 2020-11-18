@@ -1,4 +1,4 @@
-# 从2D矩阵构造一个链表（迭代方法）
+# 从 2D 矩阵构造一个链表（迭代方法）
 
 给定一个矩阵，任务是构造一个链表列表矩阵，其中每个节点都连接到其右下节点。
 
@@ -25,8 +25,8 @@ NULL NULL NULL
 
 [帖子](https://www.geeksforgeeks.org/construct-linked-list-2d-matrix/)中已经讨论了针对此问题的递归解决方案。 下面是该问题的迭代方法：
 
-*   这个想法是创建m个链表（m =行数），其每个节点都存储其右节点。 每个m个链接列表的头指针都存储在节点数组中。
-*   然后，遍历m个列表，对于第（i + 1）个第<sup>个</sup>列表，将第i个<sup>第</sup>个列表的每个节点的向下指针设置为其（i + 1 ）<sup>列表。</sup>
+*   这个想法是创建 m 个链表（m =行数），其每个节点都存储其右节点。 每个 m 个链接列表的头指针都存储在节点数组中。
+*   然后，遍历 m 个列表，对于第（i + 1）个第<sup>个</sup>列表，将第 i 个<sup>第</sup>个列表的每个节点的向下指针设置为其（i + 1 ）<sup>列表。</sup>
 
 ![](img/fdbc61d5b4e7159680c8e27ecf04f5c4.png)
 
@@ -444,6 +444,6 @@ class GFG 
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

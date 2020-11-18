@@ -1,6 +1,6 @@
-# 排序的链表包含从1到N的值
+# 排序的链表包含从 1 到 N 的值
 
-给定大小为N的链接列表，其中包含从1到N的所有值。任务是按递增顺序对链接列表进行排序。
+给定大小为 N 的链接列表，其中包含从 1 到 N 的所有值。任务是按递增顺序对链接列表进行排序。
 
 **示例：**
 
@@ -13,9 +13,9 @@ Output : 1 -> 2 -> 3 -> 4 -> 5
 
 ```
 
-**天真的方法**：最简单的方法是使用任何类型的[排序方法](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)对该链表进行排序。 最少需要O（N * logN）个时间。
+**天真的方法**：最简单的方法是使用任何类型的[排序方法](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)对该链表进行排序。 最少需要 O（N * logN）个时间。
 
-**有效方法**：一种有效方法是观察链表包含总共N个元素，并且元素从1到N进行编号。遍历链表并将每个元素替换为其位置。
+**有效方法**：一种有效方法是观察链表包含总共 N 个元素，并且元素从 1 到 N 进行编号。遍历链表并将每个元素替换为其位置。
 
 以下是此方法的实现：
 
@@ -368,6 +368,6 @@ public static void Main(String[] args) 
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

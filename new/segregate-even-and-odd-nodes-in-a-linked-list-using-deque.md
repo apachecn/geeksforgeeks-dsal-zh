@@ -13,10 +13,10 @@
 
 这个想法是按照以下条件迭代地将链表的所有元素推入双端队列：
 
-*   开始遍历链表，如果元素是偶数，则将其推到Deque的前面，然后，
+*   开始遍历链表，如果元素是偶数，则将其推到 Deque 的前面，然后，
 *   如果元素是奇数，则将其推到双端队列的后面。
 
-最后，从第一个元素开始，用Deque元素替换链接列表中的所有元素。
+最后，从第一个元素开始，用 Deque 元素替换链接列表中的所有元素。
 以下是上述方法的实现：
 
 ## C++
@@ -485,7 +485,7 @@ After rearrangement: 10 8 6 4 2 1 3 5 7 9
 ```
 
 **时间复杂度**：O（N）
-**辅助空间**：O（N），其中N是链​​表中节点的总数。
+**辅助空间**：O（N），其中 N 是链​​表中节点的总数。
 
 
 
@@ -493,6 +493,6 @@ After rearrangement: 10 8 6 4 2 1 3 5 7 9
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

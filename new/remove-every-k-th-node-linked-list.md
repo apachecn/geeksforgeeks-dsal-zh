@@ -1,8 +1,8 @@
 # 删除链接列表
 
-的每个第k个节点
+的每个第 k 个节点
 
-给定一个单链表，您的任务是删除链表的第K个节点。 假定K始终小于或等于链接列表的长度。
+给定一个单链表，您的任务是删除链表的第 K 个节点。 假定 K 始终小于或等于链接列表的长度。
 
 **示例：**
 
@@ -24,7 +24,7 @@ All nodes need to be deleted
 
 ```
 
-这个想法是从头开始遍历列表，并跟踪上次删除后访问的节点。 每当计数变为k时，删除当前节点并将计数重置为0。
+这个想法是从头开始遍历列表，并跟踪上次删除后访问的节点。 每当计数变为 k 时，删除当前节点并将计数重置为 0。
 
 ```
 (1) Traverse list and do following
@@ -527,7 +527,7 @@ public static void Main(String []args)
 
 时间复杂度：O（n）
 
-本文由 **[Sahil Chhabra](https://www.facebook.com/sahil.chhabra.965)** 贡献。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **[Sahil Chhabra](https://www.facebook.com/sahil.chhabra.965)** 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

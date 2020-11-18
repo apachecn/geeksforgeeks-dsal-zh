@@ -1,6 +1,6 @@
-# 将给定的链表分为两个比例为p：q的列表
+# 将给定的链表分为两个比例为 p：q 的列表
 
-给定一个链表和两个整数 **p** 和 **q** ，任务是按 **p：q** 的比例划分链表，即第一个列表包含第一个[ **来自原始列表的p个**节点，第二个列表包含 **q** 个节点的其余部分。 如果无法按照给定的比例分割原始列表，请打印 **-1** 。
+给定一个链表和两个整数 **p** 和 **q** ，任务是按 **p：q** 的比例划分链表，即第一个列表包含第一个[ **来自原始列表的 p 个**节点，第二个列表包含 **q** 个节点的其余部分。 如果无法按照给定的比例分割原始列表，请打印 **-1** 。
 
 **示例：**
 
@@ -275,6 +275,6 @@ public static void Main(String []args) 
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

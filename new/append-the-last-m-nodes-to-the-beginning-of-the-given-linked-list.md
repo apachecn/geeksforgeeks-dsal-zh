@@ -1,4 +1,4 @@
-# 将最后M个节点追加到给定链表
+# 将最后 M 个节点追加到给定链表
 
 的开头
 
@@ -12,7 +12,7 @@
 > **输入：**列表= 8-> 7-> 0-> 4-> 1-> NULL，M = 2
 > **输出：** 4-> 1-> 8-> 7-> 0->空
 
-**方法：**在列表中找到最后M个节点的第一个节点，此节点将是新的头节点，因此将上一个节点的下一个指针设为NULL，然后将原始列表的最后一个节点指向 原始列表的标题。 最后，打印更新的列表。
+**方法：**在列表中找到最后 M 个节点的第一个节点，此节点将是新的头节点，因此将上一个节点的下一个指针设为 NULL，然后将原始列表的最后一个节点指向 原始列表的标题。 最后，打印更新的列表。
 
 下面是上述方法的实现：
 
@@ -333,6 +333,6 @@ class GFG
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

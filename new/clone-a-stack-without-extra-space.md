@@ -25,12 +25,12 @@ Output : Destination:- |a|
 
 **方法：**为了解决此问题而不使用额外的空间，我们首先反转源堆栈，然后**逐一弹出**源堆栈的顶部元素，然后**推入**将其放入目标堆栈。 我们按照以下步骤反转源堆栈：
 
-1.  将变量**计数**初始化为0。
+1.  将变量**计数**初始化为 0。
 2.  从源堆栈中弹出顶部元素，并将其存储在变量 **topVal** 中。
 3.  现在从源堆栈中弹出元素，并将其推入目标堆栈，直到源堆栈的长度等于 **count** 为止。
 4.  将 **topVal** 推入源堆栈，然后弹出目标堆栈中的所有元素，并将其推入源堆栈。
 5.  增加**计数**的值。
-6.  如果**计数**不等于源堆栈的长度– 1，则从步骤2开始重复该过程。
+6.  如果**计数**不等于源堆栈的长度– 1，则从步骤 2 开始重复该过程。
 
 下面是上述方法的实现：
 
@@ -218,6 +218,6 @@ Destination Stack:
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

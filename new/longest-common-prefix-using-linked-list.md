@@ -15,7 +15,7 @@ Output : "ap"
 
 ```
 
-**先前的方法：** [逐字匹配](https://www.geeksforgeeks.org/longest-common-prefix-set-1-word-by-word-matching/)，[逐字符匹配](https://www.geeksforgeeks.org/longest-common-prefix-set-2-character-by-character-matching/)，[分而治之](https://www.geeksforgeeks.org/longest-common-prefix-set-3-divide-and-conquer/)，[二进制搜索](https://www.geeksforgeeks.org/longest-common-prefix-set-4-binary-search/)， [使用Trie数据结构](https://www.geeksforgeeks.org/longest-common-prefix-set-5-using-trie/)
+**先前的方法：** [逐字匹配](https://www.geeksforgeeks.org/longest-common-prefix-set-1-word-by-word-matching/)，[逐字符匹配](https://www.geeksforgeeks.org/longest-common-prefix-set-2-character-by-character-matching/)，[分而治之](https://www.geeksforgeeks.org/longest-common-prefix-set-3-divide-and-conquer/)，[二进制搜索](https://www.geeksforgeeks.org/longest-common-prefix-set-4-binary-search/)， [使用 Trie 数据结构](https://www.geeksforgeeks.org/longest-common-prefix-set-5-using-trie/)
 
 以下是使用**链表**解决上述问题的算法。
 
@@ -23,7 +23,7 @@ Output : "ap"
 *   然后使用剩余的所有字符串一个接一个地循环访问链表，删除字符串用尽或链表用尽或字符不匹配之后的所有节点。
 *   链表中的其余数据是所需的最长公共前缀。
 
-下面是C++中的实现
+下面是 C++中的实现
 
 ```
 
@@ -175,6 +175,6 @@ The longest common prefix is gee
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

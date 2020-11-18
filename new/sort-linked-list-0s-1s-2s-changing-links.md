@@ -1,6 +1,6 @@
-# 通过更改链接对0、1、2和2的链接列表进行排序
+# 通过更改链接对 0、1、2 和 2 的链接列表进行排序
 
-给定一个链接列表0、1和2，对其进行排序。
+给定一个链接列表 0、1 和 2，对其进行排序。
 
 **示例：**
 
@@ -15,15 +15,15 @@ The sorted Array is 0, 1, 2
 
 ```
 
-<u>**方法1：**</u> 在下面的文章中讨论了一种解决方案，该解决方案通过更改节点的数据来工作。
-[对0、1、2和2的链接列表进行排序](https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/)
+<u>**方法 1：**</u> 在下面的文章中讨论了一种解决方案，该解决方案通过更改节点的数据来工作。
+[对 0、1、2 和 2 的链接列表进行排序](https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/)
 
 当这些值与它们相关联的数据时，上述解决方案不起作用。
 *例如，*这三个代表三种颜色以及与该颜色关联的不同类型的对象，并根据颜色对这些对象（与链接列表相连）进行排序。
 
-**<u>方法2</u> ：**在本文中，将讨论通过更改链接来工作的新解决方案。
+**<u>方法 2</u> ：**在本文中，将讨论通过更改链接来工作的新解决方案。
 
-**方法：**迭代链接列表。 维护3个名为零的指针，一个和两个指针分别指向链接列表的当前结尾节点，该链接列表分别包含0、1和2。 对于每个遍历的节点，我们将其附加到其对应列表的末尾。 最后，我们链接所有三个列表。 为了避免许多空检查，我们使用三个伪指针zeroD，oneD和twoD作为三个列表的伪头。
+**方法：**迭代链接列表。 维护 3 个名为零的指针，一个和两个指针分别指向链接列表的当前结尾节点，该链接列表分别包含 0、1 和 2。 对于每个遍历的节点，我们将其附加到其对应列表的末尾。 最后，我们链接所有三个列表。 为了避免许多空检查，我们使用三个伪指针 zeroD，oneD 和 twoD 作为三个列表的伪头。
 
 ## C++
 
@@ -472,14 +472,14 @@ Linked List After Sorting
 
 **复杂度分析：**
 
-*   **时间复杂度：** O（n），其中n是链表中的节点数。
+*   **时间复杂度：** O（n），其中 n 是链表中的节点数。
     只需遍历链接列表。
 *   **辅助空间：** O（1）。
     由于不需要额外的空间。
 
-感谢Musarrat_123在此处的评论[中建议上述解决方案。](https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/)
+感谢 Musarrat_123 在此处的评论[中建议上述解决方案。](https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/)
 
-本文由 **Bhaskar Kumar Mishra** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Bhaskar Kumar Mishra** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

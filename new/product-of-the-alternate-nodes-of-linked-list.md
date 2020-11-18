@@ -20,8 +20,8 @@ Alternate nodes : 10 -> 33 -> 73
 **迭代方法：**
 
 1.  遍历整个链表。
-2.  设置prod = 1并且count = 0。
-3.  当计数为偶数时，将节点的数据乘以prod。
+2.  设置 prod = 1 并且 count = 0。
+3.  当计数为偶数时，将节点的数据乘以 prod。
 4.  访问下一个节点。
 
 以下是此方法的实现：
@@ -375,9 +375,9 @@ public static void Main(String []args) 
 
 **递归方法**：
 
-1.  初始化静态变量（例如flag）。
+1.  初始化静态变量（例如 flag）。
 2.  如果标志为奇数，则将节点乘以乘积。
-3.  将head和flag增加1，然后递归到下一个节点。
+3.  将 head 和 flag 增加 1，然后递归到下一个节点。
 
 以下是此方法的实现：
 
@@ -677,6 +677,6 @@ public static void Main(String []args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

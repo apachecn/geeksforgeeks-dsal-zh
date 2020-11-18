@@ -13,7 +13,7 @@
 *   peek（）/ top（）：此函数用于获取队列中优先级最低的元素，而不将其从队列中删除。
 
 **方法：**
-1.创建一个双向链接列表，其中包含字段info（保存节点的信息），优先级（保存节点的优先级），prev（指向上一个节点），next（ 指向下一个节点）。
+1.创建一个双向链接列表，其中包含字段 info（保存节点的信息），优先级（保存节点的优先级），prev（指向上一个节点），next（ 指向下一个节点）。
 2.在节点中插入元素和优先级。
 3.按优先级的升序排列节点。
 
@@ -398,6 +398,6 @@ Binary Heap |   O(1)    O(Log n)   O(Log n)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

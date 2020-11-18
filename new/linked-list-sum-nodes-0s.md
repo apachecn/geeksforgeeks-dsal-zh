@@ -1,4 +1,4 @@
-# 链接列表的节点总数为0之间
+# 链接列表的节点总数为 0 之间
 
 给定一个链表，其中包含一系列用“ 0”分隔的数字。 添加它们并将它们存储在链接列表中。
 **注意：**输入中不会存在连续的零。
@@ -15,8 +15,8 @@ Output : 1->2->3->4
 ```
 
 1.开始遍历链表的节点。
-2.在temp.data！= 0时进行迭代，并将这些数据添加到变量“ sum”中。
-3.当遇到0作为该节点的数据时，请更改先前节点的指针。
+2.在 temp.data！= 0 时进行迭代，并将这些数据添加到变量“ sum”中。
+3.当遇到 0 作为该节点的数据时，请更改先前节点的指针。
 
 ## C++
 
@@ -411,6 +411,6 @@ public class inPlaceStoreLL 
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

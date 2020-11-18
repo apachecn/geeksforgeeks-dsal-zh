@@ -1,10 +1,10 @@
 # 从中间到链表
 
-的开头查找第k个节点
+的开头查找第 k 个节点
 
-给定链接列表和数字K。任务是从列表的中间到开头打印第K个节点的值。 如果不存在这样的元素，则打印“ -1”。
+给定链接列表和数字 K。任务是从列表的中间到开头打印第 K 个节点的值。 如果不存在这样的元素，则打印“ -1”。
 
-**注意**：中间节点的位置是：（n / 2）+1，其中n是列表中节点的总数。
+**注意**：中间节点的位置是：（n / 2）+1，其中 n 是列表中节点的总数。
 
 **范例**：
 
@@ -439,7 +439,7 @@ public class LinkedList
 
 ```
 
-**时间复杂度**：O（n），其中n是列表的长度。
+**时间复杂度**：O（n），其中 n 是列表的长度。
 **辅助空间**：O（1）
 
 
@@ -448,6 +448,6 @@ public class LinkedList
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

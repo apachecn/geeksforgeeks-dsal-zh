@@ -1,6 +1,6 @@
-# 旋转N个节点的双链表
+# 旋转 N 个节点的双链表
 
-给定一个双向链表，将链表逆时针旋转N个节点。 N是给定的正整数，小于链表中节点的数量。
+给定一个双向链表，将链表逆时针旋转 N 个节点。 N 是给定的正整数，小于链表中节点的数量。
 ![](img/fc98432b5902440dd1c419d10877e43e.png)
 
 N = 2
@@ -22,10 +22,10 @@ Output : e  f  g  h  a  b  c  d
 **在** [亚马逊](https://www.geeksforgeeks.org/amazon-interview-experience-set-424-sde-2/)
 中问
 
-要旋转双链表，我们需要将第N个节点的下一个更改为NULL，将最后一个节点的下一个更改为上一个头节点，将头节点的上一个更改为最后一个节点，最后将头更改为第（N + 1）个节点，然后将上一个更改为 将新的头节点设置为NULL（双向链接列表中的头节点的上一个为NULL）
+要旋转双链表，我们需要将第 N 个节点的下一个更改为 NULL，将最后一个节点的下一个更改为上一个头节点，将头节点的上一个更改为最后一个节点，最后将头更改为第（N + 1）个节点，然后将上一个更改为 将新的头节点设置为 NULL（双向链接列表中的头节点的上一个为 NULL）
 
-因此，我们需要掌握三个节点：第N个节点，第（N + 1）个节点和最后一个节点。 从头开始遍历列表，并在第N个节点处停止。 存储指向第N个节点的指针。 我们可以使用NthNode-> next获得第（N + 1）个节点。 继续遍历直到结束，并将指针也存储到最后一个节点。 最后，使用
-PrintList功能更改上述指针，并更改“ Last Print Rotated List”的指针。
+因此，我们需要掌握三个节点：第 N 个节点，第（N + 1）个节点和最后一个节点。 从头开始遍历列表，并在第 N 个节点处停止。 存储指向第 N 个节点的指针。 我们可以使用 NthNode-> next 获得第（N + 1）个节点。 继续遍历直到结束，并将指针也存储到最后一个节点。 最后，使用
+PrintList 功能更改上述指针，并更改“ Last Print Rotated List”的指针。
 
 ## C++
 
@@ -577,6 +577,6 @@ c  d  e  a  b
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -2,14 +2,14 @@
 
 的所有斐波那契节点的总和与乘积
 
-给定一个包含 **N个**节点的[单链列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从列表中找到其数据值为斐波那契数的所有节点的和与积。
+给定一个包含 **N 个**节点的[单链列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从列表中找到其数据值为斐波那契数的所有节点的和与积。
 
 **示例：**
 
 > **输入：** LL = 15-> 16-> 8-> 6-> 13
 > **输出：**总和= 21，乘积= 104
 > **说明：**
-> 该列表包含2个斐波那契数据值8和13。
+> 该列表包含 2 个斐波那契数据值 8 和 13。
 > 因此：
 > 总和= 8 + 13 = 21
 > 乘积= 8 * 13 = 104
@@ -17,12 +17,12 @@
 > **输入：** LL = 5-> 3-> 4-> 2-> 9
 > **输出：**总和= 10，乘积= 30
 > **说明：**
-> 该列表包含3个斐波那契数据值5、3和2。
+> 该列表包含 3 个斐波那契数据值 5、3 和 2。
 > 因此：
 > 总和= 5 + 3 + 2 = 10
 > 乘积= 5 * 3 * 2 = 30
 
-**方法：**的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)来预先计算并存储[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，然后检查节点是否在O（1）时间中包含斐波那契值 。
+**方法：**的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)来预先计算并存储[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，然后检查节点是否在 O（1）时间中包含斐波那契值 。
 
 1.  遍历整个[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)，并获得列表中的最大值。
 2.  现在，为了检查斐波那契数，建立一个[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于链接列表中最大值的斐波那契数。
@@ -627,7 +627,7 @@ Product = 104
 
 ```
 
-***时间复杂度：** O（N）*，其中N是链​​表中节点的数量。
+***时间复杂度：** O（N）*，其中 N 是链​​表中节点的数量。
 
 
 
@@ -635,6 +635,6 @@ Product = 104
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

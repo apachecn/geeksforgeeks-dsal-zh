@@ -2,7 +2,7 @@
 
 的所有偶数和节点的和与乘积
 
-给定一个包含 **N个**节点的[单链列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从列表中找到其数据值具有偶数数字和的所有节点的和与乘积。
+给定一个包含 **N 个**节点的[单链列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从列表中找到其数据值具有偶数数字和的所有节点的和与乘积。
 
 **示例：**
 
@@ -17,7 +17,7 @@
 > 8 = 8
 > 6 = 6
 > 13 = 1 + 3 = 4
-> 该列表包含4个偶数和数据值15、8、6和13。
+> 该列表包含 4 个偶数和数据值 15、8、6 和 13。
 > 和= 15 + 8 + 6 + 13 = 42
 > 乘积= 15 * 8 * 6 * 13 = 9360
 > 
@@ -26,11 +26,11 @@
 > 总和= 6
 > 产品 = 8
 > **说明：**
-> 该列表包含2个偶数总和数据值4和2。
+> 该列表包含 2 个偶数总和数据值 4 和 2。
 > 总和= 4 + 2 = 6
 > 乘积= 4 * 2 = 8
 
-**方法：**的想法是遍历给定的链表，并检查当前节点值的所有数字的[总和是否为偶数。 如果是，则将当前节点值包括到结果总和中，并将结果乘积Else检查下一个节点值。](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/)
+**方法：**的想法是遍历给定的链表，并检查当前节点值的所有数字的[总和是否为偶数。 如果是，则将当前节点值包括到结果总和中，并将结果乘积 Else 检查下一个节点值。](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/)
 
 下面是上述方法的实现：
 
@@ -357,7 +357,7 @@ Product = 9360
 
 ```
 
-***时间复杂度：** O（N）*，其中N是链​​表中节点的数量。
+***时间复杂度：** O（N）*，其中 N 是链​​表中节点的数量。
 
 
 
@@ -365,6 +365,6 @@ Product = 9360
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

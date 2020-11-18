@@ -12,7 +12,7 @@
 
 想法是按照以下方法遍历链表：
 
-1.  如果列表为空或包含少于2个元素，则返回false。
+1.  如果列表为空或包含少于 2 个元素，则返回 false。
 2.  否则，请检查当前节点是否为链表的倒数第二个节点。 也就是说，**如果（current_node- > next-next == NULL）**，则当前节点为倒数第二个节点。
 3.  如果当前节点是倒数第二个节点，请打印该节点，否则移至下一个节点。
 4.  重复上述两个步骤，直到到达倒数第二个节点。
@@ -330,6 +330,6 @@ public class LinkedList
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

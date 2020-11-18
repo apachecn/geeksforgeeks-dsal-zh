@@ -15,7 +15,7 @@ Output : Number of continuously increasing elements = 3
 
 ```
 
-这个想法是遍历单链表，并比较curr-> data和curr-> next-> data，其中curr是要遍历的当前节点。 如果curr-> data较小，则curr-> next-> data则curr指针指向curr-> next，并将长度（连续增加的元素）加1。 如果条件为假，则将长度与max进行比较，如果max小于len，则将len值分配给max。 继续此过程，直到head不等于NULL。 还要找到连续增加元素的起始指标。 接下来遍历链表，并在链表中显示连续增加的元素。
+这个想法是遍历单链表，并比较 curr-> data 和 curr-> next-> data，其中 curr 是要遍历的当前节点。 如果 curr-> data 较小，则 curr-> next-> data 则 curr 指针指向 curr-> next，并将长度（连续增加的元素）加 1。 如果条件为假，则将长度与 max 进行比较，如果 max 小于 len，则将 len 值分配给 max。 继续此过程，直到 head 不等于 NULL。 还要找到连续增加元素的起始指标。 接下来遍历链表，并在链表中显示连续增加的元素。
 
 ## C++
 
@@ -543,7 +543,7 @@ Increasing linked list
 
 ```
 
-本文由 [**Dharmendra kumar**](https://auth.geeksforgeeks.org/profile.php?user=dharammnnit&list=practice) 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 [**Dharmendra kumar**](https://auth.geeksforgeeks.org/profile.php?user=dharammnnit&list=practice) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

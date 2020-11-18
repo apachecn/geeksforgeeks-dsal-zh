@@ -16,7 +16,7 @@
 > 6-> 110，奇偶校验= 2
 > 13-> 1101，奇偶校验= 3
 > 21-[ > 10101，奇偶校验= 3
-> 这里，包含9、34和6的节点的奇偶校验为偶数。
+> 这里，包含 9、34 和 6 的节点的奇偶校验为偶数。
 > 因此，这些节点已删除。
 > 
 > **输入：** DLL = 18 < = > 15 < = > 8 < = > 9 < = > 14
@@ -28,7 +28,7 @@
 > 8-> 1000，奇偶校验= 1
 > 9-> 1001，奇偶校验= 2
 > 14-> 1110，奇偶校验= 3
-> 在这里，包含18、15和9的节点的奇偶校验是偶数。
+> 在这里，包含 18、15 和 9 的节点的奇偶校验是偶数。
 > 因此，这些节点已删除。
 
 **方法：**
@@ -781,7 +781,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** *O（K * N）*，其中N是链​​表的大小，K是链表中最大数目的位数。
+**时间复杂度：** *O（K * N）*，其中 N 是链​​表的大小，K 是链表中最大数目的位数。
 
 
 
@@ -789,6 +789,6 @@ public static void Main(String[] args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

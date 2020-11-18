@@ -1,6 +1,6 @@
-# 数组在C语言中的优缺点
+# 数组在 C 语言中的优缺点
 
-[数组](https://www.geeksforgeeks.org/array-data-structure/)是相似类型元素的集合。 例如，整数数组保存 [int类型](https://www.geeksforgeeks.org/c-data-types/)的元素，而字符数组保存char型的元素。 下面是数组的表示形式：
+[数组](https://www.geeksforgeeks.org/array-data-structure/)是相似类型元素的集合。 例如，整数数组保存 [int 类型](https://www.geeksforgeeks.org/c-data-types/)的元素，而字符数组保存 char 型的元素。 下面是数组的表示形式：
 
 [![](img/9dabba37ab2db2ed15c162ebc1659c82.png)](https://media.geeksforgeeks.org/wp-content/uploads/20201018234745/11.png)
 
@@ -12,8 +12,8 @@
 
 *   在数组中，使用索引号很容易访问元素。
 *   搜索过程可以轻松地应用于数组。
-*   2D数组用于表示矩阵。
-*   由于任何原因，用户希望存储相似类型的多个值，则可以有效地使用和利用Array。
+*   2D 数组用于表示矩阵。
+*   由于任何原因，用户希望存储相似类型的多个值，则可以有效地使用和利用 Array。
 
 ### **<u>阵列的缺点</u>**
 
@@ -62,7 +62,7 @@ Element at index 11 is -1176897384
 
 ```
 
-**<u>说明</u>：**在上述程序中，声明了大小为10的数组，并将该值分配给了特定的索引。 但是，当打印索引11处的值时，它会打印[垃圾值](https://www.geeksforgeeks.org/accessing-array-bounds-ccpp/)，因为已从绑定索引中访问了[数组。 在某些编译器中，它以**“数组索引超出范围”给出错误。** 。](https://www.geeksforgeeks.org/accessing-array-bounds-ccpp/)
+**<u>说明</u>：**在上述程序中，声明了大小为 10 的数组，并将该值分配给了特定的索引。 但是，当打印索引 11 处的值时，它会打印[垃圾值](https://www.geeksforgeeks.org/accessing-array-bounds-ccpp/)，因为已从绑定索引中访问了[数组。 在某些编译器中，它以**“数组索引超出范围”给出错误。** 。](https://www.geeksforgeeks.org/accessing-array-bounds-ccpp/)
 
 **<u>如何克服</u>：**要克服该问题，请使用[动态内存分配](https://www.geeksforgeeks.org/what-is-dynamic-memory-allocation/)，例如 [**malloc（）**和 **calloc（）**](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/) 。 它还有助于我们使用 [**free（）**](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/) 方法释放内存，该方法有助于通过释放内存来减少内存浪费。 下面是相同的程序：
 
@@ -114,7 +114,7 @@ The elements are: 1 2 3 4 5 6 7 8 9 10
 
 ```
 
-**<u>数组是同构的</u>：**数组是同构的，即，数组中只能存储一种类型的值。 例如，如果数组类型为[ **int** ”，则只能存储整数元素，而不能允许其他类型的元素，例如double，float，char等。 下面是相同的程序：
+**<u>数组是同构的</u>：**数组是同构的，即，数组中只能存储一种类型的值。 例如，如果数组类型为[ **int** ”，则只能存储整数元素，而不能允许其他类型的元素，例如 double，float，char 等。 下面是相同的程序：
 
 ## C
 
@@ -149,7 +149,7 @@ Ram
 
 ![](img/8cb555ca7cea85f526d6df8a8ae3902b.png)
 
-**<u>说明</u>：**上面的代码给出了“ [编译错误](https://www.geeksforgeeks.org/how-to-avoid-compile-error-while-defining-variables/)”，因为整数类型数组已为**字符串**和 **float赋值** 类型。
+**<u>说明</u>：**上面的代码给出了“ [编译错误](https://www.geeksforgeeks.org/how-to-avoid-compile-error-while-defining-variables/)”，因为整数类型数组已为**字符串**和 **float 赋值** 类型。
 
 **<u>如何克服</u>：**为了克服该问题，我们的想法是[结构](https://www.geeksforgeeks.org/structures-c/)，可以在其中存储非均匀（异构）值。 下面是相同的程序：
 
@@ -430,6 +430,6 @@ Current Linked List is: 3 1 5 7
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

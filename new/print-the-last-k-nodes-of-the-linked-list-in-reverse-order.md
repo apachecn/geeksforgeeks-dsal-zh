@@ -1,6 +1,6 @@
-# 以相反的顺序打印链接列表的最后k个节点| 递归方法
+# 以相反的顺序打印链接列表的最后 k 个节点| 递归方法
 
-给定一个包含 **N个**节点和正整数 **k** 的链表应小于或等于N。任务是打印该节点的最后 **k** 个节点。 以相反的顺序列出。
+给定一个包含 **N 个**节点和正整数 **k** 的链表应小于或等于 N。任务是打印该节点的最后 **k** 个节点。 以相反的顺序列出。
 
 **示例：**
 
@@ -13,9 +13,9 @@ Output: 8 2 12 9
 
 ```
 
-**来源：** [校园外Amazon Interview Experience SDE](https://www.geeksforgeeks.org/amazon-interview-experience-sde-off-campus/) 。
+**来源：** [校园外 Amazon Interview Experience SDE](https://www.geeksforgeeks.org/amazon-interview-experience-sde-off-campus/) 。
 
-**递归方法：**递归遍历链表。 从每个递归调用返回时，请跟踪节点编号，将最后一个节点视为编号1，将倒数第二个节点视为编号2，依此类推。 可以借助全局变量或指针变量来跟踪此计数。 借助此count变量，打印节点号小于或等于 **k** 的节点。
+**递归方法：**递归遍历链表。 从每个递归调用返回时，请跟踪节点编号，将最后一个节点视为编号 1，将倒数第二个节点视为编号 2，依此类推。 可以借助全局变量或指针变量来跟踪此计数。 借助此 count 变量，打印节点号小于或等于 **k** 的节点。
 
 下面是上述方法的实现：
 
@@ -324,16 +324,16 @@ public static void Main(String []args) 
 **迭代方法：**的想法是使用[堆栈数据结构](http://www.geeksforgeeks.org/stack-data-structure/)。
 
 1.  将所有链接列表节点推入堆栈。
-2.  从堆栈中弹出k个节点并进行打印。
+2.  从堆栈中弹出 k 个节点并进行打印。
 
 **时间复杂度：** O（n）。
 
-**两指针方法**的想法类似于[从链接列表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾找到第k个节点。
+**两指针方法**的想法类似于[从链接列表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾找到第 k 个节点。
 
-1.  将第一个指针向前移动k个节点。
+1.  将第一个指针向前移动 k 个节点。
 2.  现在从头开始第二个指针。
-3.  当第一个指针到达末尾时，第二个指针指向第k个节点。
-4.  最后使用第二个指针，打印最后k个节点。
+3.  当第一个指针到达末尾时，第二个指针指向第 k 个节点。
+4.  最后使用第二个指针，打印最后 k 个节点。
 
 **时间复杂度：** O（n）。
 
@@ -343,6 +343,6 @@ public static void Main(String []args) 
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

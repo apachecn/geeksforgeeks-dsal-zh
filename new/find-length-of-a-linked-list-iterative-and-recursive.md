@@ -4,7 +4,7 @@
 
 [![linkedlist_find_length](img/e38a7cce1aae90394ef3ebc5cd8323c1.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2015/03/Linkedlist_find_length.png)
 
-例如，对于链接列表1-> 3-> 1-> 2-> 1，该函数应返回5。
+例如，对于链接列表 1-> 3-> 1-> 2-> 1，该函数应返回 5。
 
 **迭代解决方案**
 

@@ -1,8 +1,8 @@
 # 链表
 
-中所有小于K的节点的总和和积。
+中所有小于 K 的节点的总和和积。
 
-给定一个链表和一个密钥K。任务是计算总和并从列表中减去小于密钥K的所有节点。
+给定一个链表和一个密钥 K。任务是计算总和并从列表中减去小于密钥 K 的所有节点。
 
 **示例：**
 
@@ -12,7 +12,7 @@
 > **输入：** 13-> 4-> 16-> 9-> 22-> 45-> 5-> 16-> 6， K = 10
 > **输出：**总和= 24，乘积= 1080
 
-**方法：**从头开始遍历，检查当前节点的值是否小于K。如果是，则将该节点加到总和上并乘以该节点乘积，然后在列表中向前移动。
+**方法：**从头开始遍历，检查当前节点的值是否小于 K。如果是，则将该节点加到总和上并乘以该节点乘积，然后在列表中向前移动。
 
 下面是上述方法的实现：
 
@@ -345,6 +345,6 @@ Product = 30
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

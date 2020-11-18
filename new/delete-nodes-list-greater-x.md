@@ -1,4 +1,4 @@
-# 从列表中删除所有大于x的节点
+# 从列表中删除所有大于 x 的节点
 
 给定一个链表，问题在于从列表中删除所有大于指定值 **x** 的节点。
 
@@ -15,7 +15,7 @@ Output : 1->7->3->7
 
 ```
 
-**来源：** [Microsoft面试经验| 设定169。](https://www.geeksforgeeks.org/microsoft-interview-experience-set-169/)
+**来源：** [Microsoft 面试经验| 设定 169。](https://www.geeksforgeeks.org/microsoft-interview-experience-set-169/)
 
 **方法：**这主要是帖子的一种变体，其中[删除了首次出现的给定密钥。](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)
 
@@ -135,6 +135,6 @@ Modified List: 3 4 5 1
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

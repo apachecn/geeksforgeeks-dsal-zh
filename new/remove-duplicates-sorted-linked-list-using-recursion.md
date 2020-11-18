@@ -2,15 +2,15 @@
 
 从排序的链表中删除重复项
 
-编写一个removeDuplicates（）函数，该函数采用以非降序排序的列表，并从列表中删除所有重复的节点。 该列表仅应遍历一次。
+编写一个 removeDuplicates（）函数，该函数采用以非降序排序的列表，并从列表中删除所有重复的节点。 该列表仅应遍历一次。
 
-例如，如果链接列表是11-> 11-> 11-> 21-> 43-> 43-> 60，则removeDuplicates（）应该将列表转换为11-> 21-> 43-> 60。
+例如，如果链接列表是 11-> 11-> 11-> 21-> 43-> 43-> 60，则 removeDuplicates（）应该将列表转换为 11-> 21-> 43-> 60。
 
 **算法：**
 从头（或头）递归遍历列表，在完成递归调用后，比较下一个节点（返回的节点）和当前节点（头）。 如果两个节点的数据相等，则返回下一个**（头为>），否则返回当前**节点（头）**。**
 
 **实现：**
-除了removeDuplicates（）以外的功能仅用于创建链接链表并测试removeDuplicates（）。
+除了 removeDuplicates（）以外的功能仅用于创建链接链表并测试 removeDuplicates（）。
 
 ## C++
 
@@ -373,6 +373,6 @@ Linked list before duplicate removal 11 11 11 13 13 20
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

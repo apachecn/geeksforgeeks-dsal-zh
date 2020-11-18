@@ -26,7 +26,7 @@ Output : B-->D-->E-->F
 
 这里的技巧是我们可以将下一个节点的数据复制到要删除的当前节点的数据字段中。 然后，我们可以向前迈出一步。 现在，我们的下一个节点已成为当前节点，而当前的节点已成为前一个节点。 现在，我们可以通过常规删除方法轻松删除当前节点。
 
-例如，假设我们需要删除C并给出一个指向C的指针。 如果我们有一个指向B的指针，我们可以很容易地删除C。 但是在这里，我们将D的数据字段复制到C的数据字段。然后，我们将继续前进。 现在我们在D处，并且有一个指向C的指针，即前一个指针。 因此，我们将删除D。这就是删除节点C的方式。
+例如，假设我们需要删除 C 并给出一个指向 C 的指针。 如果我们有一个指向 B 的指针，我们可以很容易地删除 C。 但是在这里，我们将 D 的数据字段复制到 C 的数据字段。然后，我们将继续前进。 现在我们在 D 处，并且有一个指向 C 的指针，即前一个指针。 因此，我们将删除 D。这就是删除节点 C 的方式。
 
 下图是上述方法的模拟：
 
@@ -147,6 +147,6 @@ Final Linked List after deletion of 15:
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

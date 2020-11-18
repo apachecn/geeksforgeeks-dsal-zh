@@ -16,7 +16,7 @@ Output : empty List
 
 请注意，这不同于[从链接列表](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)中删除重复项
 
-这个想法是要维护指向该节点的指针*（prev）*，该指针恰好在我们正在检查重复项的节点块之前。 在第一个示例中，当我们检查节点28的重复项时，指针 *prev* 将指向23。一旦到达最后一个具有值28的重复节点（将其命名为*当前*指针） ，我们可以将上一个节点的下一个字段作为当前字段的下一个字段，并更新 *current = current.next* 。 这将删除具有重复项的值为28的节点块。
+这个想法是要维护指向该节点的指针*（prev）*，该指针恰好在我们正在检查重复项的节点块之前。 在第一个示例中，当我们检查节点 28 的重复项时，指针 *prev* 将指向 23。一旦到达最后一个具有值 28 的重复节点（将其命名为*当前*指针） ，我们可以将上一个节点的下一个字段作为当前字段的下一个字段，并更新 *current = current.next* 。 这将删除具有重复项的值为 28 的节点块。
 
 ## C++
 
@@ -482,6 +482,6 @@ List after removal of duplicates
 
 **时间复杂度：** O（n）
 
-本文由 **Saloni Baweja** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Saloni Baweja** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

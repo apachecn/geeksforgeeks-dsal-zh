@@ -4,14 +4,14 @@
 
 [![](img/de522899e01a1322ab2808eeff1ad73e.png "Linked List Loop")](https://media.geeksforgeeks.org/wp-content/cdn-uploads/2009/04/Linked-List-Loop.gif)
 
-我们已经讨论了 [Floyd的算法来检测链表中的周期。](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)
+我们已经讨论了 [Floyd 的算法来检测链表中的周期。](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)
 
-**布伦特的周期检测算法**与 [floyd的算法](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)类似，因为它也使用了两种指针技术。 但是他们的方法有所不同。 在这里，我们使一个指针静止直到每次迭代，然后以两个的乘方将其传送到另一个指针**。 循环的开始由两个满足的**的最小功率确定。 通过减少调用次数，可以改善Floyd算法的常数因子。
+**布伦特的周期检测算法**与 [floyd 的算法](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)类似，因为它也使用了两种指针技术。 但是他们的方法有所不同。 在这里，我们使一个指针静止直到每次迭代，然后以两个的乘方将其传送到另一个指针**。 循环的开始由两个满足的**的最小功率确定。 通过减少调用次数，可以改善 Floyd 算法的常数因子。
 
-1.  以2的幂数移动快速指针（或second_pointer），直到找到循环。 每次通电后，我们将慢速指针（或first_pointer）重置为第二个指针的先前值。 每次通电后，将长度重置为0。
-2.  循环测试的条件是first_pointer和second_pointer变为相同。 如果second_pointer变为NULL，则不存在循环。
+1.  以 2 的幂数移动快速指针（或 second_pointer），直到找到循环。 每次通电后，我们将慢速指针（或 first_pointer）重置为第二个指针的先前值。 每次通电后，将长度重置为 0。
+2.  循环测试的条件是 first_pointer 和 second_pointer 变为相同。 如果 second_pointer 变为 NULL，则不存在循环。
 3.  当我们脱离循环时，我们就有循环的长度。
-4.  我们将first_pointer重置为head，将second_pointer重置为head + length位置的节点。
+4.  我们将 first_pointer 重置为 head，将 second_pointer 重置为 head + length 位置的节点。
 5.  现在，我们将两个指针一一移动以找到循环的起点。
 
 **与弗洛伊德（Floyd）算法的比较：**
@@ -284,6 +284,6 @@ Loop is present at 15
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

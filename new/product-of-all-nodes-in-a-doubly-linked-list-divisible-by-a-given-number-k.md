@@ -1,6 +1,6 @@
-# 双链表中所有节点的乘积，该整数可被给定数K整除
+# 双链表中所有节点的乘积，该整数可被给定数 K 整除
 
-给定一个包含N个节点的双链表，并给定数字K。任务是找到所有可被K整除的节点的乘积。
+给定一个包含 N 个节点的双链表，并给定数字 K。任务是找到所有可被 K 整除的节点的乘积。
 
 **范例**：
 
@@ -15,7 +15,7 @@ Output : Product = 384
 
 ```
 
-这个想法是遍历双向链表并一一检查节点。 如果某个节点的值可被K整除，则将该节点的值乘以到目前为止的乘积，并在未到达列表末尾的情况下继续此过程。
+这个想法是遍历双向链表并一一检查节点。 如果某个节点的值可被 K 整除，则将该节点的值乘以到目前为止的乘积，并在未到达列表末尾的情况下继续此过程。
 
 下面是上述方法的实现：
 
@@ -401,7 +401,7 @@ Product = 810
 
 ```
 
-**时间复杂度**：O（N），其中N是节点数。
+**时间复杂度**：O（N），其中 N 是节点数。
 
 
 
@@ -409,6 +409,6 @@ Product = 810
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

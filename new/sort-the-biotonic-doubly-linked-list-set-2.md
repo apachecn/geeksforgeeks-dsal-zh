@@ -1,4 +1,4 @@
-# 排序生物群落双链表| 第2组
+# 排序生物群落双链表| 第 2 组
 
 对给定的生物张力双链表进行排序。 双调双向链表是一个双向链表，它先增加然后减小。 严格增加或严格减少的列表也是生物群落双链表。
 
@@ -13,9 +13,9 @@ Output : 3 8 14 17 20
 
 ```
 
- [### 推荐：请首先在IDE上尝试您的方法，然后查看解决方案。](https://ide.geeksforgeeks.org) 
+ [### 推荐：请首先在 IDE 上尝试您的方法，然后查看解决方案。](https://ide.geeksforgeeks.org) 
 
-在[先前的帖子](https://www.geeksforgeeks.org/sort-biotonic-doubly-linked-list/)中，我们拆分了双音双链表，将后半部分反转，然后将两半合并。 在这篇文章中，讨论了另一种替代方法。 想法是维护两个指针，一个指针最初指向双向链接列表的head元素，另一个指向双向链接列表的最后一个元素。 比较这两个元素并添加较小的元素以得到一个列表。 该元素指向下一个相邻元素的前进指针。 重复此过程，直到输入双链表的所有元素都添加到列表中。
+在[先前的帖子](https://www.geeksforgeeks.org/sort-biotonic-doubly-linked-list/)中，我们拆分了双音双链表，将后半部分反转，然后将两半合并。 在这篇文章中，讨论了另一种替代方法。 想法是维护两个指针，一个指针最初指向双向链接列表的 head 元素，另一个指向双向链接列表的最后一个元素。 比较这两个元素并添加较小的元素以得到一个列表。 该元素指向下一个相邻元素的前进指针。 重复此过程，直到输入双链表的所有元素都添加到列表中。
 
 下面是上述算法的实现：
 
@@ -691,6 +691,6 @@ Doubly linked list after sorting:
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

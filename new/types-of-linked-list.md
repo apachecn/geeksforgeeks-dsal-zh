@@ -700,7 +700,7 @@ Contents of Circular Linked List
 
 ```
 
-*   [双循环链表：](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)双循环链表或循环双向链表是链表的一种更复杂的类型，它包含指向序列中的下一个节点和上一个节点的指针。 双向链表和循环链表之间的区别与单链表和循环链表之间的区别相同。 圆形双向链表在第一个节点的上一个字段中不包含null。 以下是相同的图片：
+*   [双循环链表：](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)双循环链表或循环双向链表是链表的一种更复杂的类型，它包含指向序列中的下一个节点和上一个节点的指针。 双向链表和循环链表之间的区别与单链表和循环链表之间的区别相同。 圆形双向链表在第一个节点的上一个字段中不包含 null。 以下是相同的图片：
 
 ![](img/d699e42fe4c414a8ad2cdf8ccaeaebce.png)
 
@@ -981,6 +981,6 @@ List After inserting 2 more elements:
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

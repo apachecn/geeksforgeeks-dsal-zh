@@ -1,6 +1,6 @@
-# 在第k个位置将整个链表插入另一个
+# 在第 k 个位置将整个链表插入另一个
 
-给定两个链表和一个数字k。 将第二个链接列表插入第k个第一个链接列表
+给定两个链表和一个数字 k。 将第二个链接列表插入第 k 个第一个链接列表
 
 **示例：**
 
@@ -20,10 +20,10 @@ Output : 10->15->20->11->17->16->18->NULL
 **问题的图形表示**
 ![](img/578b7819115c78a8f7af52d597f6a97f.png)
 
-1）遍历第一个链表直到第k个点
-2）将第二个链表头节点连接到第一个链表的第k个点
+1）遍历第一个链表直到第 k 个点
+2）将第二个链表头节点连接到第一个链表的第 k 个点
 3）遍历第二个链表直到
-结束4） 将第一个链表的第（k + 1）点添加到第二个链表的末尾
+结束 4） 将第一个链表的第（k + 1）点添加到第二个链表的末尾
 
 ## C++
 
@@ -465,6 +465,6 @@ Resulting linked list    1 2 7 8 9 10 11 3 4 5
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

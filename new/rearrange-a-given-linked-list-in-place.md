@@ -1,6 +1,6 @@
 # 就地重新排列给定的链表。
 
-给定一个单链表L <sub>0</sub> -> L <sub>1</sub> ->…-> L <sub>n-1</sub> -> L [ <sub>n</sub> 。 重新排列列表中的节点，以使新形成的列表为：L <sub>0</sub> -> L <sub>n</sub> -> L <sub>1</sub> -> L <sub>n-1</sub> -> L <sub>2</sub> -> L <sub>n-2</sub> …
+给定一个单链表 L <sub>0</sub> -> L <sub>1</sub> ->…-> L <sub>n-1</sub> -> L [ <sub>n</sub> 。 重新排列列表中的节点，以使新形成的列表为：L <sub>0</sub> -> L <sub>n</sub> -> L <sub>1</sub> -> L <sub>n-1</sub> -> L <sub>2</sub> -> L <sub>n-2</sub> …
 
 您需要就地执行此操作，而无需更改节点的值。
 **范例：**
@@ -23,14 +23,14 @@ Output: 1 -> 5 -> 2 -> 4 -> 3
     b) Move current to next to next of current
 ```
 
-上述简单解决方案的时间复杂度为O（n <sup>2</sup> ），其中n是链表中节点的数量。
+上述简单解决方案的时间复杂度为 O（n <sup>2</sup> ），其中 n 是链表中节点的数量。
 
 **更好的解决方案**
 1）将给定链表的内容复制到向量中。
 2）通过交换两端的节点来重新排列给定向量。
 3）将修改后的向量复制回链接列表。
 此方法的实现： [https://ide.geeksforgeeks.org/1eGSEy](https://ide.geeksforgeeks.org/1eGSEy)
-感谢Arushi Dhamija提出了此方法。
+感谢 Arushi Dhamija 提出了此方法。
 
 **高效解决方案：**
 
@@ -41,7 +41,7 @@ Output: 1 -> 5 -> 2 -> 4 -> 3
 4) Do alternate merge of first and second halves. 
 ```
 
-该解决方案的时间复杂度为O（n）。
+该解决方案的时间复杂度为 O（n）。
 
 下面是此方法的实现。
 
@@ -407,10 +407,10 @@ public class LinkedList {
 **时间复杂度：** O（n）
 **辅助空间：** O（1）
 
-感谢Gaurav Ahirwar提出了上述方法。
+感谢 Gaurav Ahirwar 提出了上述方法。
 
 **另一种方法：**
-1.取两个指针prev和curr，它们分别保留head和head的地址->。
+1.取两个指针 prev 和 curr，它们分别保留 head 和 head 的地址->。
 2.比较他们的数据并交换。
 之后，形成一个新的链表。
 下面是实现：

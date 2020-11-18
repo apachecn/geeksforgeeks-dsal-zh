@@ -2,12 +2,12 @@
 
 的末尾
 
-编写一个C函数，该函数将第一个元素移到给定的单链列表中。 例如，如果给定的链接列表为1-> 2-> 3-> 4-> 5，则该函数应将列表更改为2-> 3-> 4-> 5-> 1。
+编写一个 C 函数，该函数将第一个元素移到给定的单链列表中。 例如，如果给定的链接列表为 1-> 2-> 3-> 4-> 5，则该函数应将列表更改为 2-> 3-> 4-> 5-> 1。
 
 算法：
 遍历列表直到最后一个节点。 使用两个指针：一个用于存储最后一个节点（last）的地址，另一个用于存储第一个节点（first）的地址。 循环结束后，请执行以下操作。
-i）将head作为第二个节点（* head_ref = first- >接下来）。
-ii）将first of next设置为NULL（first- > next = NULL）。
+i）将 head 作为第二个节点（* head_ref = first- >接下来）。
+ii）将 first of next 设置为 NULL（first- > next = NULL）。
 iii）将倒数第二个设为第一（倒数->下一个=第一）
 
 ## C++
@@ -401,7 +401,7 @@ Linked list before moving first to end
 
 ```
 
-**时间复杂度：** O（n），其中n是给定链接列表中的节点数。
+**时间复杂度：** O（n），其中 n 是给定链接列表中的节点数。
 
 
 
@@ -409,6 +409,6 @@ Linked list before moving first to end
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

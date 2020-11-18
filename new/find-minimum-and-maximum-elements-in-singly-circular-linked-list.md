@@ -15,7 +15,7 @@ Output : Minimum = 6, Maximum = 125
 
 ```
 
-这个想法是在没有到达最后一个节点的情况下遍历循环链接列表，并将 **max** 和 **min** 变量初始化为 **INT_MIN** 和 **INT_MAX** 分别。 之后检查一个条件，如果最大值小于头值，则将头值分配给max或最小值，然后将头值分配给min，否则头值分配给min，否则头点指向下一个节点。 继续此过程，直到最后一个节点。
+这个想法是在没有到达最后一个节点的情况下遍历循环链接列表，并将 **max** 和 **min** 变量初始化为 **INT_MIN** 和 **INT_MAX** 分别。 之后检查一个条件，如果最大值小于头值，则将头值分配给 max 或最小值，然后将头值分配给 min，否则头值分配给 min，否则头点指向下一个节点。 继续此过程，直到最后一个节点。
 
 下面是上述方法的实现：
 
@@ -497,6 +497,6 @@ Minimum = 11, Maximum = 99
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

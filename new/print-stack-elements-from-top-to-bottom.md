@@ -249,7 +249,7 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N），其中N是给定堆栈中元素的数量。*
+***时间复杂度：** O（N），其中 N 是给定堆栈中元素的数量。*
 ***辅助空间：** O（N）*
 
 [**单链列表堆栈**](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/) **方法：**此方法讨论解决[单链列表堆栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)表示法的问题的解决方案。 步骤如下：
@@ -545,7 +545,7 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N），其中N是给定堆栈中元素的数量。*
+***时间复杂度：** O（N），其中 N 是给定堆栈中元素的数量。*
 ***辅助空间：** O（N）*
 
 [**阵列堆栈**](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) **方法：**此方法讨论[阵列堆栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)实现中问题的解决方案。 步骤如下：
@@ -815,7 +815,7 @@ public static void Main(String []args)
 
 ```
 
-***时间复杂度：** O（N），其中N是给定堆栈中元素的数量。*
+***时间复杂度：** O（N），其中 N 是给定堆栈中元素的数量。*
 ***辅助空间：** O（N）*
 
 
@@ -824,6 +824,6 @@ public static void Main(String []args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

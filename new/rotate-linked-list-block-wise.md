@@ -1,6 +1,6 @@
 # 明智地旋转链接列表
 
-给定长度为n和块长度为**的链表，k** 循环向每个块右/左旋转 **d** 。 如果 **d** 为正，则向右旋转，否则向左旋转。
+给定长度为 n 和块长度为**的链表，k** 循环向每个块右/左旋转 **d** 。 如果 **d** 为正，则向右旋转，否则向左旋转。
 
 **示例：**
 
@@ -28,7 +28,7 @@ Rotate those 3 nodes also by d.
 
 先决条件：[旋转链接列表](https://www.geeksforgeeks.org/rotate-a-linked-list/)
 
-这个想法是，如果d的绝对值大于k的值，则将链接列表旋转d％k次。 如果d为0，则根本不需要旋转链表。
+这个想法是，如果 d 的绝对值大于 k 的值，则将链接列表旋转 d％k 次。 如果 d 为 0，则根本不需要旋转链表。
 
 ## C++
 
@@ -307,7 +307,7 @@ Rotated by blocks Linked list
 
 ```
 
-本文由 **Chhavi** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Chhavi** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

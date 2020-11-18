@@ -19,33 +19,33 @@ Output : 1 2 4
 
 ```
 
-**方法1 ：（简单）**
+**方法 1 ：（简单）**
 使用三指针迭代给定的三个链表，如果有公共元素，则打印该元素。
-上述解决方案的时间复杂度为O（N * N * N）
+上述解决方案的时间复杂度为 O（N * N * N）
 
-**方法2 ：（使用合并排序）**
+**方法 2 ：（使用合并排序）**
 在此方法中，我们首先对三个列表进行排序，然后遍历排序后的列表以获取交集。
 
 以下是获取三个列表的交集要遵循的步骤：
 
-1）使用合并排序对第一个链表进行排序。 此步骤需要O（mLogm）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
+1）使用合并排序对第一个链表进行排序。 此步骤需要 O（mLogm）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
-2）使用合并排序对第二个链接列表进行排序。 此步骤需要O（nLogn）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
+2）使用合并排序对第二个链接列表进行排序。 此步骤需要 O（nLogn）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
-3）使用合并排序对第三个链表进行排序。 此步骤需要O（pLogp）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
+3）使用合并排序对第三个链表进行排序。 此步骤需要 O（pLogp）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
-3）线性扫描三个排序的列表以获得交集。 此步骤需要O（m + n + p）时间。 可以使用与此处中讨论的排序数组算法相同的算法来实现此步骤。
+3）线性扫描三个排序的列表以获得交集。 此步骤需要 O（m + n + p）时间。 可以使用与此处中讨论的排序数组算法相同的算法来实现此步骤。
 
-此方法的时间复杂度为O（mLogm + nLogn + plogp），优于方法1的时间复杂度。
+此方法的时间复杂度为 O（mLogm + nLogn + plogp），优于方法 1 的时间复杂度。
 
-**方法3 ：（散列）**
+**方法 3 ：（散列）**
 以下是使用散列获得三个列表的交点的步骤：
-1）创建一个空散列表。 遍历第一个链表，并在哈希表中将所有元素频率标记为1。 此步骤需要O（m）时间。
-2）遍历第二个链表，如果当前元素频率在哈希表中为1，则将其标记为2。此步骤需要O（n）时间。
-3）迭代第三个链表，如果当前元素频率在哈希表中为2，则将其标记为3。此步骤需要O（p）时间。
-4）现在再次迭代第一个链表以检查元素的频率。 如果哈希表中存在频率为3的元素，则它将出现在三个链表的交集中。 此步骤需要O（m）时间。
+1）创建一个空散列表。 遍历第一个链表，并在哈希表中将所有元素频率标记为 1。 此步骤需要 O（m）时间。
+2）遍历第二个链表，如果当前元素频率在哈希表中为 1，则将其标记为 2。此步骤需要 O（n）时间。
+3）迭代第三个链表，如果当前元素频率在哈希表中为 2，则将其标记为 3。此步骤需要 O（p）时间。
+4）现在再次迭代第一个链表以检查元素的频率。 如果哈希表中存在频率为 3 的元素，则它将出现在三个链表的交集中。 此步骤需要 O（m）时间。
 
-该方法的时间复杂度为O（m + n + p），优于方法1和2的时间复杂度。
+该方法的时间复杂度为 O（m + n + p），优于方法 1 和 2 的时间复杂度。
 
 以下是上述想法的实现。
 
@@ -414,6 +414,6 @@ public static void Main(String[] args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

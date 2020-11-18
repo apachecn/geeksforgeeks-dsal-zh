@@ -586,7 +586,7 @@ Modified Linked List
 
 ```
 
-本文由 **Harsh Parikh** 提供。请在此处查看[由 **Gautam Singh** 提供的另一个代码](https://ide.geeksforgeeks.org/vLDGJY)。 一篇文章，然后将您的文章邮寄到contribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Harsh Parikh** 提供。请在此处查看[由 **Gautam Singh** 提供的另一个代码](https://ide.geeksforgeeks.org/vLDGJY)。 一篇文章，然后将您的文章邮寄到 contribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

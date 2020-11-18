@@ -1,6 +1,6 @@
 # 单链接列表的最小和最大素数
 
-给定一个包含N个节点的单链列表，任务是查找最小和最大素数。
+给定一个包含 N 个节点的单链列表，任务是查找最小和最大素数。
 
 **示例：**
 
@@ -17,10 +17,10 @@ Output : Minimum : 2
 
 **方法：**
 
-1.  这个想法是将链表遍历到最后，并将max和min变量分别初始化为INT_MIN和INT_MAX。
+1.  这个想法是将链表遍历到最后，并将 max 和 min 变量分别初始化为 INT_MIN 和 INT_MAX。
 2.  检查当前节点是否为素数。 如是：
-    *   如果当前节点的值大于max，则将当前节点的值分配给max。
-    *   如果当前节点的值小于min，则将当前节点的值分配给min。
+    *   如果当前节点的值大于 max，则将当前节点的值分配给 max。
+    *   如果当前节点的值小于 min，则将当前节点的值分配给 min。
 3.  重复上述步骤，直到到达列表末尾。
 
 以下是上述想法的实现：
@@ -411,7 +411,7 @@ Maximum : 17
 
 ```
 
-**时间复杂度：** O（N），其中N是链​​表中节点的数量。
+**时间复杂度：** O（N），其中 N 是链​​表中节点的数量。
 
 
 
@@ -419,6 +419,6 @@ Maximum : 17
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

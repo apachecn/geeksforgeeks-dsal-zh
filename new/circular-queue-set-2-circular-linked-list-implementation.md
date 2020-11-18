@@ -1,9 +1,9 @@
-# 循环队列| 第2组（循环链表实现）
+# 循环队列| 第 2 组（循环链表实现）
 
 先决条件– [循环单链接列表](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)
 
-我们已经讨论了基础知识以及如何使用集合1中的数组实现循环队列。
-[第1组（简介和数组实现）](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/)
+我们已经讨论了基础知识以及如何使用集合 1 中的数组实现循环队列。
+[第 1 组（简介和数组实现）](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/)
 
 在这篇文章中，讨论了使用循环单链表的另一种循环队列实现方法。
 
@@ -15,14 +15,14 @@
     **Steps:**
 
     3.  动态创建一个新节点并将值插入其中。
-    4.  检查front == NULL，如果为true，则front = Rear =（新创建的节点）
-    5.  如果为false，则Rear =（新创建的节点），后节点始终包含前节点的地址。
+    4.  检查 front == NULL，如果为 true，则 front = Rear =（新创建的节点）
+    5.  如果为 false，则 Rear =（新创建的节点），后节点始终包含前节点的地址。
 *   **deQueue（）**此函数用于从循环队列中删除元素。 在队列中，元素始终从最前面删除。
     **Steps:**
 
-    3.  检查队列是否为空是否意味着front == NULL。
-    4.  如果为空，则显示队列为空。 如果队列不为空，则执行步骤3
-    5.  检查（front == rear）是否为真，然后设置front = Rear = NULL，否则将前列向前移动到队列中，更新front在后节点中的地址并返回元素。
+    3.  检查队列是否为空是否意味着 front == NULL。
+    4.  如果为空，则显示队列为空。 如果队列不为空，则执行步骤 3
+    5.  检查（front == rear）是否为真，然后设置 front = Rear = NULL，否则将前列向前移动到队列中，更新 front 在后节点中的地址并返回元素。
 
 [![Operations-on-Circular -Queue](img/7d91457c9e1293990d59501eb82a3c54.png)](https://media.geeksforgeeks.org/wp-content/uploads/Operations-on-Circular-Queue.png)
 
@@ -456,11 +456,11 @@ Elements in Circular Queue are: 6 9 20
 
 ```
 
-**时间复杂度：** enQueue（），deQueue（）操作的时间复杂度为O（1），因为任何操作中都没有循环。
+**时间复杂度：** enQueue（），deQueue（）操作的时间复杂度为 O（1），因为任何操作中都没有循环。
 
 **注意：**在执行链表的情况下，无需循环即可轻松实现队列。 但是，在数组实现的情况下，我们需要循环队列以节省空间。
 
-本文由 **Akash Gupta** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Akash Gupta** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

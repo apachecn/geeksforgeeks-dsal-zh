@@ -1,10 +1,10 @@
-# 循环链接列表| 第2组（Traversal）
+# 循环链接列表| 第 2 组（Traversal）
 
 我们在上一则关于循环链接列表的文章中讨论了[循环链接列表的介绍和应用，](http://quiz.geeksforgeeks.org/circular-linked-list/ "Permanent link to Circular Linked List | Set 1 (Introduction and Applications)") 。 在这篇文章中，讨论了遍历操作。
 
 ![](img/ff7f30aebf5dc865587c7829dcf4233c.png "cll")
 
-在常规的链表中，我们从头节点遍历该列表，并在到达NULL时停止遍历。 在循环链表中，当再次到达第一个节点时，我们将停止遍历。 以下是用于链表遍历的C代码。
+在常规的链表中，我们从头节点遍历该列表，并在到达 NULL 时停止遍历。 在循环链表中，当再次到达第一个节点时，我们将停止遍历。 以下是用于链表遍历的 C 代码。
 
 ```
 

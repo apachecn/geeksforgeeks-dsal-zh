@@ -2,7 +2,7 @@
 
 中的节点计数替换每个节点
 
-给定LinkedList，将每个节点的值替换为其超越者计数。 那是对它的权利更大的要素的数量。
+给定 LinkedList，将每个节点的值替换为其超越者计数。 那是对它的权利更大的要素的数量。
 
 **示例：**
 
@@ -20,12 +20,12 @@
 
 1.  取两个指针 **p** 和 **x** 。 指针 **p** 用于遍历列表， **x** 用于遍历每个节点的列表的右半部分。
 2.  初始化变量 *count* 以对大于当前节点的节点进行计数。
-3.  使用指针p遍历列表中的所有节点。
-    *   将计数初始化为0。
+3.  使用指针 p 遍历列表中的所有节点。
+    *   将计数初始化为 0。
     *   初始化指针 **x** 指向当前节点 **p** 。
     *   计算大于当前节点的节点数。
     *   用计数替换当前节点。
-4.  重复步骤4，直到列表完全遍历为止。
+4.  重复步骤 4，直到列表完全遍历为止。
 
 下面是上述方法的实现：
 
@@ -448,7 +448,7 @@ public static void Main() 
 
 ```
 
-**时间复杂度**：O（N <sup>2</sup> ）其中N是链​​表中节点的数量。
+**时间复杂度**：O（N <sup>2</sup> ）其中 N 是链​​表中节点的数量。
 **辅助空间**：O（1）
 
 被誉为业界最抢手的技能之一，拥有我们的 [**C++ STL**](https://practice.geeksforgeeks.org/courses/cpp-stl?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=GFG_Article_Bottom_CPP_STL) 课程的编码基础，并通过严格的问题解决方法掌握了这些概念。
@@ -457,6 +457,6 @@ public static void Main() 
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

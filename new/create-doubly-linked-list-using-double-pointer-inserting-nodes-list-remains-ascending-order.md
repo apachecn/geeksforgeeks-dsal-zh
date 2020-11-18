@@ -18,7 +18,7 @@ Output :10 12 30 43 50 56
 **算法：**
 该任务可以通过以下方式完成：
 
-1.  如果“链接列表”为空，则使左指针和右指针都指向要插入的节点，并使它的上一个和下一个字段指向NULL。
+1.  如果“链接列表”为空，则使左指针和右指针都指向要插入的节点，并使它的上一个和下一个字段指向 NULL。
 2.  如果要插入的节点的值小于链接列表的第一个节点的值，则从第一个节点的前一个字段连接该节点。
 3.  如果要插入的节点的值大于链接列表的最后一个节点的值，则从最后一个节点的下一个字段连接该节点。
 4.  如果要插入的节点的值在第一个节点与最后一个节点的值之间，则检查适当的位置并建立连接。
@@ -560,6 +560,6 @@ Doubly linked list on printing from left to right
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

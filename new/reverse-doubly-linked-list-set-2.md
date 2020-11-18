@@ -1,4 +1,4 @@
-# 反转双链表| 第2组
+# 反转双链表| 第 2 组
 
 编写一个程序来反转给定的双链表。
 
@@ -18,7 +18,7 @@
 
 ![](img/3f635770ddfc66b8d6c3ccb85b0d6616.png)
 
-**方法：**在[上一篇文章](https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/)中，通过交换所有节点的上一个指针和下一个指针，更改头的prev（或开始），然后更改头的指针，来反转双向链表 到底。 在本文中，我们创建一个push函数，将给定节点添加到给定列表的开头。 我们遍历原始列表，然后将当前节点指针一一传递给push函数。 此过程将反转列表。 最后返回此反向列表的新标题。
+**方法：**在[上一篇文章](https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/)中，通过交换所有节点的上一个指针和下一个指针，更改头的 prev（或开始），然后更改头的指针，来反转双向链表 到底。 在本文中，我们创建一个 push 函数，将给定节点添加到给定列表的开头。 我们遍历原始列表，然后将当前节点指针一一传递给 push 函数。 此过程将反转列表。 最后返回此反向列表的新标题。
 
 ## C++
 
@@ -491,6 +491,6 @@ Reversed list: 2 4 8 10
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

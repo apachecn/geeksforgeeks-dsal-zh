@@ -12,10 +12,10 @@
 
 | 单链表（SLL） | 双链表（DLL） |
 | --- | --- |
-| SLL的节点只有一个数据字段和下一个链接字段。 | DLL的节点具有数据字段，上一个链接字段和下一个链接字段。 |
+| SLL 的节点只有一个数据字段和下一个链接字段。 | DLL 的节点具有数据字段，上一个链接字段和下一个链接字段。 |
 | [![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png) | [![dll](img/1fac4717827a04f080fae80f8fd57fe7.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png) |
-| 在SLL中，只能使用下一个节点链接来进行遍历。 | In DLL, the traversal can be done using the previous node link or the next node link. |  |
-| 由于SLL只有2个字段，因此它比DLL占用更少的内存。 | DLL比SLL占用更多的内存，因为它具有3个字段。 |
+| 在 SLL 中，只能使用下一个节点链接来进行遍历。 | In DLL, the traversal can be done using the previous node link or the next node link. |  |
+| 由于 SLL 只有 2 个字段，因此它比 DLL 占用更少的内存。 | DLL 比 SLL 占用更多的内存，因为它具有 3 个字段。 |
 | 元素访问效率较低。 | 更有效地访问元素。 |
 
 
@@ -24,6 +24,6 @@
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

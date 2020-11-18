@@ -1,7 +1,7 @@
 # 将链接列表的每个节点替换为右侧的最大元素
 
 给定[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是为链表的每个节点查找[下一更大元素](https://www.geeksforgeeks.org/next-greater-element-in-same-order-as-input/)。
-**注意：**对于没有下一个更大元素的节点，将-1存储在结果中。
+**注意：**对于没有下一个更大元素的节点，将-1 存储在结果中。
 **范例：**
 
 > **输入：**链表= [2，1，5]
@@ -13,7 +13,7 @@
 要解决上述问题，主要思想是使用 [**堆栈数据结构**](https://www.geeksforgeeks.org/stack-data-structure/) 。
 
 *   遍历链表，并将链表元素的值和位置插入堆栈。
-*   为每个节点使用-1初始化结果向量。
+*   为每个节点使用-1 初始化结果向量。
 *   当当前节点的值大于先前节点的值时，更新先前节点的值，并在更新后从堆栈中弹出该值。
 
 下面是上述方法的实现：
@@ -331,6 +331,6 @@ public static void Main(String[] args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

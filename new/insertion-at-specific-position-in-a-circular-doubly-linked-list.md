@@ -15,12 +15,12 @@
 
 如果位置有效：
 
-1.  在内存中创建一个newNode。
+1.  在内存中创建一个 newNode。
 2.  使用临时指针（ **temp** ）在列表中遍历，直到节点恰好在需要插入新节点的给定位置之前。
 3.  通过执行以下操作来插入新节点：
-    *   分配newNode-> next = temp-> next
-    *   将newNode-> prev分配为temp-> next
-    *   将temp-> next分配为newNode
+    *   分配 newNode-> next = temp-> next
+    *   将 newNode-> prev 分配为 temp-> next
+    *   将 temp-> next 分配为 newNode
     *   假设（temp-> next）-> prev as newNode-> next
 
 以下是上述想法的实现：
@@ -796,7 +796,7 @@ The list is: 1 2 8 3 4 5 6
 
 ```
 
-**时间复杂度：** O（n）= >用于计数列表，O（n）= >插入元素。 因此，总复杂度为O（n + n）= O（n）
+**时间复杂度：** O（n）= >用于计数列表，O（n）= >插入元素。 因此，总复杂度为 O（n + n）= O（n）
 
 
 
@@ -804,6 +804,6 @@ The list is: 1 2 8 3 4 5 6
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

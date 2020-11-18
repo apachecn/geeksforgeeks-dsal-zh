@@ -1,6 +1,6 @@
-# 从双向链表中删除所有可被K整除的节点
+# 从双向链表中删除所有可被 K 整除的节点
 
-给定一个包含N个节点的双链表，任务是删除列表中所有可被K整除的节点。
+给定一个包含 N 个节点的双链表，任务是删除列表中所有可被 K 整除的节点。
 
 **示例：**
 
@@ -10,7 +10,7 @@
 > **输入：**列表= 5 < = > 3 < = > 4 < = > 2 < = > 9，K = 3
 > **输出：**最终列表= 5 < = > 4 < = > 2
 
-**方法：**的想法是一次遍历双向链表的节点，并获取可被K整除的节点的指针。请按照[中使用的方法删除这些节点[](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/) 发布。
+**方法：**的想法是一次遍历双向链表的节点，并获取可被 K 整除的节点的指针。请按照[中使用的方法删除这些节点[](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/) 发布。
 
 以下是上述想法的实现：
 
@@ -525,7 +525,7 @@ Modified List: 15 7 17
 
 ```
 
-**时间复杂度：** O（N），其中N是节点总数。
+**时间复杂度：** O（N），其中 N 是节点总数。
 
 
 
@@ -533,6 +533,6 @@ Modified List: 15 7 17
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

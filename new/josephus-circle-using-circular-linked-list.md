@@ -1,6 +1,6 @@
-# Josephus Circle使用循环链表
+# Josephus Circle 使用循环链表
 
-n人围成一圈等待执行。 计数从圆的某个点开始，然后沿固定的方向围绕圆进行。 在每个步骤中，将跳过一定数量的人员，然后执行下一个人员。 消灭在圈中进行（随着被处决者的撤离，圈越来越小），直到只有最后一个剩下的人被赋予了自由。 给定总人数n和人数m，表示跳过m-1人，第m人被杀。 任务是选择初始圈子中的位置，以便您成为最后一个幸存者，从而生存下来。
+n 人围成一圈等待执行。 计数从圆的某个点开始，然后沿固定的方向围绕圆进行。 在每个步骤中，将跳过一定数量的人员，然后执行下一个人员。 消灭在圈中进行（随着被处决者的撤离，圈越来越小），直到只有最后一个剩下的人被赋予了自由。 给定总人数 n 和人数 m，表示跳过 m-1 人，第 m 人被杀。 任务是选择初始圈子中的位置，以便您成为最后一个幸存者，从而生存下来。
 
 **示例：**
 
@@ -16,8 +16,8 @@ Output : 4
 ```
 
 我们讨论了此问题的不同解决方案（此处 [](https://www.geeksforgeeks.org/josephus-problem-set-1-a-on-solution/) 和 [](https://www.geeksforgeeks.org/josephus-problem-using-bit-magic/) ）。 在这篇文章中，讨论了一个简单的基于[循环链表](https://www.geeksforgeeks.org/circular-linked-list/)的解决方案。
-1）创建大小为n的循环链表。
-2）遍历链表，并在第m个节点中逐个删除，直到剩下一个节点为止。
+1）创建大小为 n 的循环链表。
+2）遍历链表，并在第 m 个节点中逐个删除，直到剩下一个节点为止。
 3）返回唯一左节点的值。
 
 ## C++
@@ -248,7 +248,7 @@ Last person left standing (Josephus Position) is 13
 
 **时间复杂度：** O（m * n）
 
-本文由 **Raghav Sharma** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Raghav Sharma** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

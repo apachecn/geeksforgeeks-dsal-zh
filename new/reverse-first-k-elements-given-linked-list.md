@@ -1,8 +1,8 @@
 # 反转给定链接列表
 
-的前K个元素
+的前 K 个元素
 
-给定指向链表的头节点和数字K的指针，任务是反转链表的前K个节点。 我们需要通过更改节点之间的链接来反转列表。
+给定指向链表的头节点和数字 K 的指针，任务是反转链表的前 K 个节点。 我们需要通过更改节点之间的链接来反转列表。
 也检查[链表的反向](https://www.geeksforgeeks.org/reverse-a-linked-list/)
 
 **示例：**
@@ -19,12 +19,12 @@ Output :18->10->20->25->35->NULL
 ```
 
 方法说明：
-假设链接列表为1- > 2- > 3- > 4- > 5- > NULL，并且k = 3
+假设链接列表为 1- > 2- > 3- > 4- > 5- > NULL，并且 k = 3
 
-1）遍历链表直到第K点。
-2）从第k个点将链接列表分成两部分。 分区后的链表看起来像1- > 2- > 3- > NULL & 4- > 5- > NULL
-3）[反转 链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)保留第二部分，即保留为3- > 2- > 1- > NULL和4- > 5- > NULL
-4）连接两个部分 链表，我们得到3- > 2- > 1- > 4- > 5- > NULL
+1）遍历链表直到第 K 点。
+2）从第 k 个点将链接列表分成两部分。 分区后的链表看起来像 1- > 2- > 3- > NULL & 4- > 5- > NULL
+3）[反转 链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)保留第二部分，即保留为 3- > 2- > 1- > NULL 和 4- > 5- > NULL
+4）连接两个部分 链表，我们得到 3- > 2- > 1- > 4- > 5- > NULL
 
 该算法如何工作的图形表示
 
@@ -464,6 +464,6 @@ Modified list
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

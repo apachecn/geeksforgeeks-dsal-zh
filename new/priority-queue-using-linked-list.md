@@ -15,30 +15,30 @@
 **先决条件：**
 [链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)，[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
 
-这样创建列表，以使优先级最高的元素始终位于列表的开头。 该列表根据元素的优先级以降序排列。 这使我们可以删除O（1）时间中的最高优先级元素。 要插入元素，我们必须遍历列表并找到合适的位置插入节点，以便维护优先级队列的整体顺序。 这使push（）操作花费O（N）时间。 pop（）和peek（）操作在固定时间内执行。
+这样创建列表，以使优先级最高的元素始终位于列表的开头。 该列表根据元素的优先级以降序排列。 这使我们可以删除 O（1）时间中的最高优先级元素。 要插入元素，我们必须遍历列表并找到合适的位置插入节点，以便维护优先级队列的整体顺序。 这使 push（）操作花费 O（N）时间。 pop（）和 peek（）操作在固定时间内执行。
 
 **算法：**
 PUSH（HEAD，数据，优先级）
-步骤1：使用DATA和PRIORITY创建新节点
-步骤2：检查HEAD是否具有较低的优先级。 如果是，请执行步骤3-4，然后结束。 否则，转到步骤5。
-步骤3：NEW-> NEXT = HEAD
-步骤4：HEAD = NEW
-步骤5：将TEMP设置为列表的标题
-步骤6：While TEMP- >下一个！= NULL和TEMP->下一个->优先级>优先级
-步骤7：TEMP = TEMP->下一个
+步骤 1：使用 DATA 和 PRIORITY 创建新节点
+步骤 2：检查 HEAD 是否具有较低的优先级。 如果是，请执行步骤 3-4，然后结束。 否则，转到步骤 5。
+步骤 3：NEW-> NEXT = HEAD
+步骤 4：HEAD = NEW
+步骤 5：将 TEMP 设置为列表的标题
+步骤 6：While TEMP- >下一个！= NULL 和 TEMP->下一个->优先级>优先级
+步骤 7：TEMP = TEMP->下一个
 [循环结束]
-步骤8 ：新->下一个=温度->下一个
-步骤9：温度->下一个=新
-步骤10：结束
+步骤 8 ：新->下一个=温度->下一个
+步骤 9：温度->下一个=新
+步骤 10：结束
 
 POP（HEAD）
-步骤2：将列表的开头设置为列表中的下一个节点。 HEAD = HEAD-> NEXT。
-步骤3：释放列表顶部的节点
-步骤4：结束
+步骤 2：将列表的开头设置为列表中的下一个节点。 HEAD = HEAD-> NEXT。
+步骤 3：释放列表顶部的节点
+步骤 4：结束
 
 PEEK（HEAD）：
-步骤1：返回HEAD-> DATA
-步骤2：结束
+步骤 1：返回 HEAD-> DATA
+步骤 2：结束
 
 下面是该算法的实现：
 
@@ -514,6 +514,6 @@ Binary Heap |   O(1)    O(Log n)   O(Log n)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -1,6 +1,6 @@
-# 以相反的顺序打印链接列表的最后k个节点| 迭代方法
+# 以相反的顺序打印链接列表的最后 k 个节点| 迭代方法
 
-给定一个包含N个节点和正整数K的链表，其中K应当小于或等于N。任务是按相反的顺序打印列表的最后K个节点。
+给定一个包含 N 个节点和正整数 K 的链表，其中 K 应当小于或等于 N。任务是按相反的顺序打印列表的最后 K 个节点。
 
 **示例：**
 
@@ -15,7 +15,7 @@ Output : 8 2 12 9
 
 [先前的文章](https://www.geeksforgeeks.org/print-the-last-k-nodes-of-the-linked-list-in-reverse-order/)中讨论的解决方案使用递归方法。 下面的文章讨论了解决上述问题的三种迭代方法。
 
-**方法1：**的想法是使用堆栈数据结构。 推送所有链接的列表节点数据值以堆叠并弹出前K个元素并打印它们。
+**方法 1：**的想法是使用堆栈数据结构。 推送所有链接的列表节点数据值以堆叠并弹出前 K 个元素并打印它们。
 
 下面是上述方法的实现：
 
@@ -330,7 +330,7 @@ public static void Main(String[] args)
 **时间复杂度：** O（N）
 **辅助空间：** O（N）
 
-**上述方法的辅助空间可以减小为O（k）**。 这个想法是使用两个指针。 将第一个指针移到列表的开头，然后将第二个指针移到第k个节点。 然后使用本文讨论的方法从头开始查找第k个节点：[从链表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾查找第k个节点。 从末端找到第k个节点后，推入堆栈中的所有其余节点。 从堆栈中逐一弹出所有元素并进行打印。
+**上述方法的辅助空间可以减小为 O（k）**。 这个想法是使用两个指针。 将第一个指针移到列表的开头，然后将第二个指针移到第 k 个节点。 然后使用本文讨论的方法从头开始查找第 k 个节点：[从链表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾查找第 k 个节点。 从末端找到第 k 个节点后，推入堆栈中的所有其余节点。 从堆栈中逐一弹出所有元素并进行打印。
 
 以下是上述有效方法的实现：
 
@@ -718,12 +718,12 @@ public static void Main(String[] args)
 **时间复杂度：** O（N）
 **辅助空间：** O（k）
 
-**方法2：**
+**方法 2：**
 
 *   计算链接列表中的节点数。
 *   声明一个数组，并以节点数作为其大小。
 *   从数组末尾开始存储链接列表的节点值，即反向存储。
-*   从数组开始打印k个值。
+*   从数组开始打印 k 个值。
 
 ## C++
 
@@ -956,7 +956,7 @@ public static void Main(String[] args) 
 **时间复杂度：** O（N）
 **辅助空间：** O（N）
 
-**方法3：**的想法是首先迭代地反向链接列表，如以下文章所述：[反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)。 反转后，打印反转列表的前k个节点。 打印后，通过再次反转列表来恢复列表。
+**方法 3：**的想法是首先迭代地反向链接列表，如以下文章所述：[反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)。 反转后，打印反转列表的前 k 个节点。 打印后，通过再次反转列表来恢复列表。
 
 下面是上述方法的实现：
 
@@ -1258,6 +1258,6 @@ public static void Main(String[] args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

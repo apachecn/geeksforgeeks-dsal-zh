@@ -1,4 +1,4 @@
-# 链表的最大和最小元素，该元素可被给定数k整除
+# 链表的最大和最小元素，该元素可被给定数 k 整除
 
 给定![N](img/19e409e13c1238e1f3ff3dbd06cdd45e.png "Rendered by QuickLaTeX.com")节点的单链接列表。 在链表中找到可被给定数字![K](img/36191961d5c0517749557e907a8f3817.png "Rendered by QuickLaTeX.com")整除的最小和最大元素。
 
@@ -7,20 +7,20 @@
 > **输入**：列表= 15-> 14-> 13-> 22-> 50
 > K = 5
 > **输出**：
-> 链表中可被K整除的最大元素：50
-> 链表中可被K整除的最小元素：5
+> 链表中可被 K 整除的最大元素：50
+> 链表中可被 K 整除的最小元素：5
 > 
 > **输入**：列表= 10-> 14-> 13-> 22-> 100
 > K = 10
 > **输出**：
-> 链表中可被K整除的最大元素：100
-> 链表中可被K整除的最小元素：10
+> 链表中可被 K 整除的最大元素：100
+> 链表中可被 K 整除的最小元素：10
 
 **方法**：
 
-*   这个想法是将链表遍历到最后，并将max和min变量分别初始化为INT_MIN和INT_MAX。
-*   然后检查一下条件，如果最大值小于当前节点的值并且可以被K整除，那么当前节点的值将分配给max。
-*   同样，检查当前节点的值是否小于最小值，并被k整除，然后将当前节点的值分配给min。 重复以上两个步骤，直到到达列表的末尾。
+*   这个想法是将链表遍历到最后，并将 max 和 min 变量分别初始化为 INT_MIN 和 INT_MAX。
+*   然后检查一下条件，如果最大值小于当前节点的值并且可以被 K 整除，那么当前节点的值将分配给 max。
+*   同样，检查当前节点的值是否小于最小值，并被 k 整除，然后将当前节点的值分配给 min。 重复以上两个步骤，直到到达列表的末尾。
 
 下面是上述方法的实现：
 
@@ -438,6 +438,6 @@ Min Element : 5
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

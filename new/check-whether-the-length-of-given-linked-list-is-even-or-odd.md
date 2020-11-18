@@ -12,10 +12,10 @@ Output : Odd
 
 ```
 
-**方法1：线性计算代码**
+**方法 1：线性计算代码**
 遍历整个链表，并继续计算节点数。 循环结束后，我们可以检查计数是偶数还是奇数。 您可以自己尝试。
 
-**方法2：一次步进2个节点**
+**方法 2：一次步进 2 个节点**
 **方法：**
 
 ```
@@ -424,7 +424,7 @@ Odd
 **时间复杂度：** O（n）
 **空间复杂度：** O（1）
 
-本文由 **[Sahil Rajput](https://www.linkedin.com/in/sahil-rajput-3ba2b3134/)** 贡献。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **[Sahil Rajput](https://www.linkedin.com/in/sahil-rajput-3ba2b3134/)** 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

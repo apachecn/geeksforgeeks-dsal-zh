@@ -1,6 +1,6 @@
 # 队列–链表实现
 
-在[之前的文章](http://quiz.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)中，我们介绍了Queue并讨论了数组实现。 在这篇文章中，讨论了链表的实现。 必须有效执行以下两个主要操作。
+在[之前的文章](http://quiz.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)中，我们介绍了 Queue 并讨论了数组实现。 在这篇文章中，讨论了链表的实现。 必须有效执行以下两个主要操作。
 
 在[队列数据结构](https://www.geeksforgeeks.org/queue-data-structure/)中，我们维护两个指针，即*前*和*后*。 *前*指向队列的第一项，*后*指向最后的队列。
 
@@ -438,7 +438,7 @@ Queue Rear : 50
 
 ```
 
-**时间复杂度：**两个操作enqueue（）和dequeue（）的时间复杂度均为O（1），因为我们在两个操作中仅更改了几个指针。 任何操作都没有循环。
+**时间复杂度：**两个操作 enqueue（）和 dequeue（）的时间复杂度均为 O（1），因为我们在两个操作中仅更改了几个指针。 任何操作都没有循环。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

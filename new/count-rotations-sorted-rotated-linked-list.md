@@ -2,11 +2,11 @@
 
 中计算旋转次数
 
-给定n个节点的链表，该链表首先进行排序，然后旋转k个元素。 找出k的值。
+给定 n 个节点的链表，该链表首先进行排序，然后旋转 k 个元素。 找出 k 的值。
 
 ![](img/ed860d112cdefec07c0ee0dcd93c5313.png)
 
-想法是遍历单链表以检查条件，当前节点值是否大于下一个节点的值。 如果给定条件为真，则中断循环。 否则增加计数器变量，并通过node-> next增加节点。 下面是此方法的实现。
+想法是遍历单链表以检查条件，当前节点值是否大于下一个节点的值。 如果给定条件为真，则中断循环。 否则增加计数器变量，并通过 node-> next 增加节点。 下面是此方法的实现。
 
 ```
 
@@ -110,7 +110,7 @@ Linked list rotated elements: 2
 
 ```
 
-本文由 **Dharmendra Kumar** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Dharmendra Kumar** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

@@ -1,4 +1,4 @@
-# 反转双链表| 设置4（交换数据）
+# 反转双链表| 设置 4（交换数据）
 
 给定一个双向链接列表，我们被要求在不使用任何额外空间的情况下就地反转该列表。
 
@@ -13,12 +13,12 @@ Output : 1 <--> 22 <--> 33 <--> 22 <--> 11
 
 ```
 
-我们已经讨论了三种方法来反向双向链表：[反向双向链表](https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/)，[反向双向链表（组2）](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2//)和[反向双向链表使用 递归](https://www.geeksforgeeks.org/reverse-doubly-linked-list-using-recursion/)。
+我们已经讨论了三种方法来反向双向链表：[反向双向链表](https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/)，[反向双向链表（组 2）](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2//)和[反向双向链表使用 递归](https://www.geeksforgeeks.org/reverse-doubly-linked-list-using-recursion/)。
 
-前两种方法的工作时间为O（n），并且不需要额外的空间。 第一种方法通过交换每个节点的下一个和上一个指针来工作。 第二种方法从列表中取出每个节点，并将其添加到列表的开头。
+前两种方法的工作时间为 O（n），并且不需要额外的空间。 第一种方法通过交换每个节点的下一个和上一个指针来工作。 第二种方法从列表中取出每个节点，并将其添加到列表的开头。
 
 还有另一种方法更直观，但也更昂贵。
-此方法类似于反转数组。 要反转数组，我们将两个指针放在一个位置：一个放在列表的开头，另一个放在列表的结尾。 然后，我们交换两个指针的数据，并使两个指针彼此相对。 当两个指针相遇或彼此交叉时，我们将停止。 我们恰好执行n / 2个交换，并且时间复杂度也是O（N）。
+此方法类似于反转数组。 要反转数组，我们将两个指针放在一个位置：一个放在列表的开头，另一个放在列表的结尾。 然后，我们交换两个指针的数据，并使两个指针彼此相对。 当两个指针相遇或彼此交叉时，我们将停止。 我们恰好执行 n / 2 个交换，并且时间复杂度也是 O（N）。
 
 双链表同时具有上一个指针和下一个指针，这意味着我们可以在列表中向前和向后移动。 因此，如果我们在列表的开头放置一个指针（例如，左指针），在列表的末尾放置另一个右指针，则可以通过使左指针前进和后退右指针来使这些指针彼此相对。
 
@@ -39,7 +39,7 @@ Step 7: End
 
 **关于三种方法**的比较效率的注释
 
-必须提到几件事。 此方法易于实现，但与指针交换方法相比，它的成本也更高。 这是因为我们交换数据而不是指针。 如果节点是具有多个数据成员的大型复杂数据类型，则交换数据的成本可能更高。 相反，指向节点的指针将始终是更简单的数据类型，并且为4或8个字节。
+必须提到几件事。 此方法易于实现，但与指针交换方法相比，它的成本也更高。 这是因为我们交换数据而不是指针。 如果节点是具有多个数据成员的大型复杂数据类型，则交换数据的成本可能更高。 相反，指向节点的指针将始终是更简单的数据类型，并且为 4 或 8 个字节。
 
 下面是该算法的实现。
 
@@ -411,6 +411,6 @@ List After Reversing
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

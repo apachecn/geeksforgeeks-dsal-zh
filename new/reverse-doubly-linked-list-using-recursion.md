@@ -21,8 +21,8 @@ Reversed Doubly linked list
 
 **算法**
 1）如果列表为空，则返回
-2）通过交换head- > prev和head- > next
-来反转head 3）如果prev = NULL，则 表示列表完全相反。 否则反转（标题->上一页）
+2）通过交换 head- > prev 和 head- > next
+来反转 head 3）如果 prev = NULL，则 表示列表完全相反。 否则反转（标题->上一页）
 
 ## C++
 
@@ -436,6 +436,6 @@ Reversed list: 2 4 8 10
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

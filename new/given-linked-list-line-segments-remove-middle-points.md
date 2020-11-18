@@ -23,9 +23,9 @@ There is only one vertical line, so all middle points are removed.
 
 ```
 
-资料来源： [Microsoft面试体验](https://www.geeksforgeeks.org/microsoft-interview-experience-set-41-campus/)
+资料来源： [Microsoft 面试体验](https://www.geeksforgeeks.org/microsoft-interview-experience-set-41-campus/)
 
-这个想法是跟踪当前节点，下一个节点和下一个下一个节点。 下一个节点与下一个下一个节点相同时，请继续删除下一个节点。 在这个完整的过程中，我们需要注意指针的移动并检查NULL值。
+这个想法是跟踪当前节点，下一个节点和下一个下一个节点。 下一个节点与下一个下一个节点相同时，请继续删除下一个节点。 在这个完整的过程中，我们需要注意指针的移动并检查 NULL 值。
 
 以下是上述想法的实现。
 
@@ -693,12 +693,12 @@ Modified Linked List:
 (0,10)-> (10,10)-> (10,5)-> (40,5)-> 
 ```
 
-上述解决方案的时间复杂度为O（n），其中n是给定链表中节点的数量。
+上述解决方案的时间复杂度为 O（n），其中 n 是给定链表中节点的数量。
 
 **练习：**
 上面的代码是递归的，针对相同的问题编写一个迭代代码。 请参阅下面的解决方案。
 
 [迭代方法，用于删除线段链接列表中的中点](https://www.geeksforgeeks.org/iterative-approach-for-removing-middle-points-in-a-linked-list-of-line-segements/)
 
-本文由Sanket Jain撰写。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
+本文由 Sanket Jain 撰写。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

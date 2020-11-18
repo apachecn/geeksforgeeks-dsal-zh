@@ -18,7 +18,7 @@ Output : 9 1 2 3 4 5 6 7 8 6
 
 ```
 
-我们首先找到指向最后一个节点的上一个指针。 令此节点为p。 现在，我们更改下一个链接，以便交换最后一个节点和第一个节点。
+我们首先找到指向最后一个节点的上一个指针。 令此节点为 p。 现在，我们更改下一个链接，以便交换最后一个节点和第一个节点。
 
 ## C++
 
@@ -498,6 +498,6 @@ List After: 5 1 2 3 4 6
 
 ```
 
-本文由 **R_Raj** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **R_Raj** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

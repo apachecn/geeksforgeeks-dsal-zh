@@ -2,7 +2,7 @@
 
 的元素
 
-给定一个双链表和一个只有奇数值的数组。 两者的大小均为N。任务是用Array元素从左到右替换所有具有偶数值的节点。
+给定一个双链表和一个只有奇数值的数组。 两者的大小均为 N。任务是用 Array 元素从左到右替换所有具有偶数值的节点。
 
 ![](img/979ce3b663eb8964ee25d87fe9c4a799.png)
 
@@ -429,7 +429,7 @@ New odd List: 3 9 5 7 23
 
 ```
 
-**时间复杂度：O（N），**，其中N是节点总数。
+**时间复杂度：O（N），**，其中 N 是节点总数。
 
 
 
@@ -437,6 +437,6 @@ New odd List: 3 9 5 7 23
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -11,7 +11,7 @@
 > **输入：** str =“编程器”
 > **输出：** p
 
-**注意：**请参考[本文](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)的HashMap方法，[本文](https://www.geeksforgeeks.org/first-non-repeating-character-using-one-traversal-of-string-set-2/)作为空间优化的方法。
+**注意：**请参考[本文](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)的 HashMap 方法，[本文](https://www.geeksforgeeks.org/first-non-repeating-character-using-one-traversal-of-string-set-2/)作为空间优化的方法。
 
 **链表方法：**的想法是使用[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)来跟踪字符串中的唯一元素。 下面是该方法的说明：
 
@@ -130,6 +130,6 @@ f
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

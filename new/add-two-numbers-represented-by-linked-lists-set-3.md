@@ -1,6 +1,6 @@
-# 添加两个由链接列表表示的数字| 套装3
+# 添加两个由链接列表表示的数字| 套装 3
 
-给定两个链接列表表示的两个数字，编写一个返回和列表的函数。 总计列表是两个输入数字相加的链接列表表示。 预期空间复杂度O（1）。
+给定两个链接列表表示的两个数字，编写一个返回和列表的函数。 总计列表是两个输入数字相加的链接列表表示。 预期空间复杂度 O（1）。
 
 **示例：**
 
@@ -14,7 +14,7 @@
 > L2 = 9-> 1->空
 > **输出：** 1-> 9-> 1-> NULL
 
-**方法：**我们在此处讨论了一种解决方案 [](https://www.geeksforgeeks.org/sum-of-two-linked-lists/) ，在该解决方案中，我们使用递归达到列表中的最小有效数字，但是由于堆栈的参与，解决方案的空间复杂性 变成O（N）
+**方法：**我们在此处讨论了一种解决方案 [](https://www.geeksforgeeks.org/sum-of-two-linked-lists/) ，在该解决方案中，我们使用递归达到列表中的最小有效数字，但是由于堆栈的参与，解决方案的空间复杂性 变成 O（N）
 
 这里的目标是就地求和，并返回修改后的和列表。
 
@@ -22,8 +22,8 @@
 
 步骤如下：
 
-1.  反向清单L1。
-2.  反向清单L2。
+1.  反向清单 L1。
+2.  反向清单 L2。
 3.  迭代添加两个列表的节点。
 4.  反转结果列表并返回其头部。
 
@@ -612,7 +612,7 @@ public class LinkedList
 
 ```
 
-**时间复杂度：** O（max（m，n）），其中m和n分别是列表l1和列表l2中的节点数。
+**时间复杂度：** O（max（m，n）），其中 m 和 n 分别是列表 l1 和列表 l2 中的节点数。
 **空间复杂度：** O（1）
 
 
@@ -621,6 +621,6 @@ public class LinkedList
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

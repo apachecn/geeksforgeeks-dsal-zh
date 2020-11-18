@@ -1,4 +1,4 @@
-# C++ STL中的堆栈列表
+# C++ STL 中的堆栈列表
 
 **先决条件：** [列表](https://www.geeksforgeeks.org/list-cpp-stl/)，[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)
 
@@ -8,7 +8,7 @@
 
 > 列表<类型> name_of_list；
 
-**[堆栈](http://www.geeksforgeeks.org/stack-data-structure/)** 是一种容器适配器，具有的LIFO（后进先出）类型，其中有一个新元素 在一端添加，并且（顶部）仅从该端删除元素。
+**[堆栈](http://www.geeksforgeeks.org/stack-data-structure/)** 是一种容器适配器，具有的 LIFO（后进先出）类型，其中有一个新元素 在一端添加，并且（顶部）仅从该端删除元素。
 
 **语法：**
 
@@ -26,7 +26,7 @@
 **示例：**
 
 > 列表<stack>> ls（10）;
-> 堆栈列表的大小为10</stack>
+> 堆栈列表的大小为 10</stack>
 
 **<u>插入</u>：** [使用 **push（）**函数完成堆栈列表](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)的插入。
 
@@ -159,6 +159,6 @@ List of stack is :
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

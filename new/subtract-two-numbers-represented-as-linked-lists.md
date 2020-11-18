@@ -781,9 +781,9 @@ public class LinkedList {
 *   **时间复杂度：** O（n）。
     由于不需要嵌套遍历链表。
 *   **辅助空间：** O（n）。
-    如果考虑递归堆栈空间，则需要O（n）空间。
+    如果考虑递归堆栈空间，则需要 O（n）空间。
 
-本文由 **Mu Ven** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Mu Ven** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

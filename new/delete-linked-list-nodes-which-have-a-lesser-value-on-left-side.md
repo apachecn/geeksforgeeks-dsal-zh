@@ -19,8 +19,8 @@ Output: Modified Linked List = 25 -> 15 -> 6 -> 5
 
 1.  用头节点初始化变量*最大值*。
 2.  遍历列表。
-3.  检查下一个节点是否小于max_node。 如果是，则移至下一个节点。
-4.  否则，则更新max_node的值并删除下一个节点。
+3.  检查下一个节点是否小于 max_node。 如果是，则移至下一个节点。
+4.  否则，则更新 max_node 的值并删除下一个节点。
 
 下面是上述方法的实现：
 
@@ -403,7 +403,7 @@ Modified Linked List: 12 10 5 2
 
 ```
 
-**时间复杂度：** O（N），其中N是节点总数。
+**时间复杂度：** O（N），其中 N 是节点总数。
 
 
 
@@ -411,6 +411,6 @@ Modified Linked List: 12 10 5 2
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

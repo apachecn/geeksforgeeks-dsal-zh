@@ -1,11 +1,11 @@
 # 使用递归
 
-为给定值K创建循环列表结构
+为给定值 K 创建循环列表结构
 
 给定数字 **K** ，任务是使用四个指针创建循环链接列表结构，四个指针分别是“使用递归”的下一个，上一个，上一个和下一个。
-**注意**：不允许使用任何指针数组或2D矩阵
+**注意**：不允许使用任何指针数组或 2D 矩阵
 
-参见此示例，了解K = 3
+参见此示例，了解 K = 3
 
 ![](img/b7b2f0b6093d41ddc7ff7b2e6c2fe9d7.png)
 
@@ -24,9 +24,9 @@ The structure will look like below
 **方法：**
 逐步执行以下步骤：
 
-*   首先创建与右指针连接的单个K列表
+*   首先创建与右指针连接的单个 K 列表
 *   每个列表的第一个节点应通过向下指针指向其下方节点
-*   现在，将K列表与向下的指针逐行合并
+*   现在，将 K 列表与向下的指针逐行合并
 *   然后在列表中按行和按列创建循环
 
 下面是上述方法的实现：
@@ -725,6 +725,6 @@ public static void Main(String[] args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

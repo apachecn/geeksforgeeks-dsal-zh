@@ -2,7 +2,7 @@
 
 的主要节点数
 
-给定一个包含N个节点的单链列表，任务是查找素数的总数。
+给定一个包含 N 个节点的单链列表，任务是查找素数的总数。
 
 **示例：**
 
@@ -17,7 +17,7 @@ Output: 3
 
 ```
 
-**方法：**的想法是将链表遍历到最后并检查当前节点是否为质数。 如果是，则将计数增加1并继续执行相同操作，直到遍历所有节点。
+**方法：**的想法是将链表遍历到最后并检查当前节点是否为质数。 如果是，则将计数增加 1 并继续执行相同操作，直到遍历所有节点。
 
 下面是上述方法的实现：
 
@@ -387,7 +387,7 @@ Count of prime nodes = 2
 
 ```
 
-**时间复杂度：** O（N * sqrt（P）），其中N是LinkedList的长度，P是列表中的最大元素
+**时间复杂度：** O（N * sqrt（P）），其中 N 是 LinkedList 的长度，P 是列表中的最大元素
 
 
 
@@ -395,6 +395,6 @@ Count of prime nodes = 2
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

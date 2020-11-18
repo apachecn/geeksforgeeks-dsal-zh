@@ -1,6 +1,6 @@
-# 设计一种在O（1）时间内支持插入和第一个非重复元素的结构
+# 设计一种在 O（1）时间内支持插入和第一个非重复元素的结构
 
-设计一个[数据结构](https://www.geeksforgeeks.org/data-structures/)，该数据结构支持O（1）时间中的插入和第一个非重复元素。 数据结构支持的操作：
+设计一个[数据结构](https://www.geeksforgeeks.org/data-structures/)，该数据结构支持 O（1）时间中的插入和第一个非重复元素。 数据结构支持的操作：
 
 *   **插入**：将元素插入数据结构。
 *   **第一个非重复元素**：数组中的第一个非重复元素。
@@ -31,7 +31,7 @@
 **此数据结构的缺点：**
 
 *   无法跟踪元素的顺序。
-*   自定义数据结构将需要自定义Hasp映射，以将元素存储到映射中。
+*   自定义数据结构将需要自定义 Hasp 映射，以将元素存储到映射中。
 *   内存不足
 
 下面是上述方法的实现：
@@ -198,6 +198,6 @@ int main()
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -22,7 +22,7 @@
 
 **迭代方法**
 
-> 1.  初始化三个指针，前一个为NULL，curr为头，下一个为NULL。
+> 1.  初始化三个指针，前一个为 NULL，curr 为头，下一个为 NULL。
 > 2.  迭代链接列表。 循环执行以下操作。
 >     //在更改当前下一个之前，
 >     //存储下一个节点
@@ -30,7 +30,7 @@
 >     //现在在当前下一个更改
 >     //这是实际可逆的地方 发生
 >     curr- > next =上一个
->     //将上一个和curr向前移动一个步骤。
+>     //将上一个和 curr 向前移动一个步骤。
 >     prev = curr
 >     curr =下一个
 
@@ -1138,9 +1138,9 @@ Reversed linked list
 **使用堆栈：**
 
 *   将节点（值和地址）存储在堆栈中，直到输入所有值。
-*   完成所有输入后，将Head指针更新到最后一个位置（即最后一个值）。
+*   完成所有输入后，将 Head 指针更新到最后一个位置（即最后一个值）。
 *   开始弹出节点（值和地址）并以相同顺序存储它们，直到堆栈为空。
-*   用NULL更新堆栈中最后一个节点的下一个指针。
+*   用 NULL 更新堆栈中最后一个节点的下一个指针。
 
 下面是上述方法的实现：
 
@@ -1267,9 +1267,9 @@ Reversed linked list
 4 3 2 1 
 ```
 
-感谢Gaurav Ahirwar提出了此解决方案。
+感谢 Gaurav Ahirwar 提出了此解决方案。
 [递归地反向链接列表（一个简单的实现）](https://www.geeksforgeeks.org/recursively-reversing-a-linked-list-a-simple-implementation/)
-[仅使用2个指针迭代反向链接的列表（一种有趣的方法）](https://www.geeksforgeeks.org/iteratively-reverse-a-linked-list-using-only-2-pointers/)
+[仅使用 2 个指针迭代反向链接的列表（一种有趣的方法）](https://www.geeksforgeeks.org/iteratively-reverse-a-linked-list-using-only-2-pointers/)
 
 **参考：**
 [http://cslibrary.stanford.edu/105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)

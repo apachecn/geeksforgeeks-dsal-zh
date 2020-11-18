@@ -4,7 +4,7 @@
 
 给定一个双向链表，编写一个函数使用合并排序以递增顺序对双向链表进行排序。
 
-例如，以下双向链接列表应更改为24810
+例如，以下双向链接列表应更改为 24810
 
 ![](img/61dcfe5f15a4317c70a1bea6d144f1b2.png)
 
@@ -672,9 +672,9 @@ Backward Traversal using prev pointer
 30 20 10 5 4 3
 ```
 
-感谢Goku在此处的注释[中提供了上述实现。](https://www.geeksforgeeks.org/quicksort-for-linked-list/)
+感谢 Goku 在此处的注释[中提供了上述实现。](https://www.geeksforgeeks.org/quicksort-for-linked-list/)
 
-**时间复杂度：**上述实现的时间复杂度与数组的 [MergeSort的时间复杂度相同。 这需要Θ（nLogn）时间。](http://geeksquiz.com/merge-sort/)
+**时间复杂度：**上述实现的时间复杂度与数组的 [MergeSort 的时间复杂度相同。 这需要Θ（nLogn）时间。](http://geeksquiz.com/merge-sort/)
 
 您可能还想看到[快速排序以获取双向链接列表](https://www.geeksforgeeks.org/quicksort-for-linked-list/)
 

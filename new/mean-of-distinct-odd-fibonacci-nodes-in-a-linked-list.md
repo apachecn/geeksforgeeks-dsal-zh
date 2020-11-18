@@ -2,7 +2,7 @@
 
 中不同的奇斐波那契结点的平均值
 
-给定一个包含 **N个**节点的[单链列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从该列表中找到其数据值为奇数[的所有不同节点的](https://www.geeksforgeeks.org/check-number-fibonacci-number/)[均值](https://www.geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/) 斐波那契数。
+给定一个包含 **N 个**节点的[单链列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从该列表中找到其数据值为奇数[的所有不同节点的](https://www.geeksforgeeks.org/check-number-fibonacci-number/)[均值](https://www.geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/) 斐波那契数。
 
 **示例：**
 
@@ -11,7 +11,7 @@
 > **说明：**
 > 链接列表中存在的斐波那契节点是{5、21、8、3、13、144}
 > 奇数斐波那契节点 列表是{5，21，3，13}
-> 奇数斐波那契结点数是4
+> 奇数斐波那契结点数是 4
 > 因此，奇数斐波那契结点值的平均值=（5 + 21 + 3 + 13）/ 4 = 10.5
 > 
 > **输入：** LL = 55-> 3-> 91-> 89─> 76-> 233-> 34-> 87-> 5-> 100
@@ -19,7 +19,7 @@
 > **说明：**
 > 链表中存在的斐波纳契结点是{55，3，89，233，34 ，5}
 > 链接列表中存在的奇数斐波那契节点是{55，3，89，233，5}
-> 奇数斐波那契节点数是5
+> 奇数斐波那契节点数是 5
 > 因此，奇数斐波那契节点值=（55 + 5 + 3 + 89 + 233）/ 5 = 77
 
 **方法：**的想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储所有[斐波那契数](https://www.geeksforgeeks.org/check-number-fibonacci-number/)，直到链表中最大[个最大元素。 。
@@ -669,6 +669,6 @@ public static void Main(String[] args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

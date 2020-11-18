@@ -13,7 +13,7 @@
 > 
 > ![](img/81c5c424cb60ada545f52d817c726b76.png)
 > 
-> **说明：** 2的下一个指针已更正为指向3。之前，它指向1，这是不正确的。
+> **说明：** 2 的下一个指针已更正为指向 3。之前，它指向 1，这是不正确的。
 
 **方法：**这可以通过简单地迭代列表并检查各个指针来实现。
 以下是上述方法的实现：
@@ -520,6 +520,6 @@ Corrected Linked List: 1 (-1) 2 (1) 3 (2) 4 (3)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

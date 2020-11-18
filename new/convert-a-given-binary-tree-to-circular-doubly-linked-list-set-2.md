@@ -1,9 +1,9 @@
-# 将给定的二叉树转换为循环双链表| 设置2
+# 将给定的二叉树转换为循环双链表| 设置 2
 
 给定二叉树，将其转换为循环双链表。
 
 *   节点中的左指针和右指针将分别用作转换后的循环链表中的上一个指针和下一个指针。
-*   List中节点的顺序必须与给定二叉树的顺序相同。
+*   List 中节点的顺序必须与给定二叉树的顺序相同。
 *   有序遍历的第一个节点必须是循环列表的头节点。
 
 **示例：**
@@ -11,7 +11,7 @@
 
 在[先前的文章中讨论了针对此问题的就地解决方案。](https://www.geeksforgeeks.org/convert-a-binary-tree-to-a-circular-doubly-link-list/)
 
-在这篇文章中，讨论了一个更简单的解决方案，但使用了额外的O（n）空间。
+在这篇文章中，讨论了一个更简单的解决方案，但使用了额外的 O（n）空间。
 
 在这种方法中，首先，我们将对给定的二叉树进行有序遍历，并将此遍历存储在向量中，并将其与树一起传递给函数。 现在，从向量的元素生成一个循环的双向链表。
 
@@ -23,7 +23,7 @@
 4.  使当前指针等于当前的右指针。
 5.  现在，最后使当前对象的左指针指向第一步中创建的临时指针。
 
-对所有元素执行此操作，并在完成遍历后，使current的向右（current现在指向向量的最后一个元素）指向列表的开头，并使head的左侧指向当前指针。 最后，返回头部。
+对所有元素执行此操作，并在完成遍历后，使 current 的向右（current 现在指向向量的最后一个元素）指向列表的开头，并使 head 的左侧指向当前指针。 最后，返回头部。
 
 下面是上述方法的实现：
 
@@ -539,7 +539,7 @@ Circular Doubly Linked List is :
 
 ```
 
-**时间复杂度**：O（N），其中N是二叉树中的节点数。
+**时间复杂度**：O（N），其中 N 是二叉树中的节点数。
 **辅助空间**：O（N）
 
 
@@ -548,6 +548,6 @@ Circular Doubly Linked List is :
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

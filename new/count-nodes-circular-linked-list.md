@@ -2,11 +2,11 @@
 
 中的节点计数
 
-给定一个循环链表，计算其中的节点数。 例如，以下列表的输出为5。
+给定一个循环链表，计算其中的节点数。 例如，以下列表的输出为 5。
 
 ![](img/703b24f6bea34bab0d870162e6b29efb.png "cll")
 
-我们使用[循环链表|中的概念。 集合2（Traversal）](https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/)。 在遍历时，我们会跟踪节点数。
+我们使用[循环链表|中的概念。 集合 2（Traversal）](https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/)。 在遍历时，我们会跟踪节点数。
 
 ## C / C++
 
@@ -299,7 +299,7 @@ public static void Main(String []args) 
 
 ```
 
-本文由 **Rishabh jain** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+本文由 **Rishabh jain** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

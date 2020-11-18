@@ -19,8 +19,8 @@
 1.  将前两个节点的最大值存储在变量 **max** 中。
 2.  将前两个节点的最小值存储在变量 **second_max** 中。
 3.  遍历其余的链表。 对于每个节点：
-    *   如果当前节点的值大于max，则将second_max设置为max，将max设置为当前节点的值。
-    *   否则，如果当前节点的值大于second_max，则将second_max设置为当前节点的值。
+    *   如果当前节点的值大于 max，则将 second_max 设置为 max，将 max 设置为当前节点的值。
+    *   否则，如果当前节点的值大于 second_max，则将 second_max 设置为当前节点的值。
 
 下面是上述方法的实现：
 
@@ -446,6 +446,6 @@ Second Largest = 15
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

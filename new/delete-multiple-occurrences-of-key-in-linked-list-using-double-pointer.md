@@ -11,14 +11,14 @@ Output:  4 -> 3
 
 ```
 
-这主要是[的替代方案，该帖子使用针对头节点和其余节点](https://www.geeksforgeeks.org/delete-occurrences-given-key-linked-list/)的单独条件循环来删除多次出现的给定键。 在这里，我们使用双指针方法来使用单个循环，而与元素的位置（头，尾或中间）无关。 Linus Torvalds在他的“ Linux 25周年” TED演讲中解释了从链接列表中删除节点而无需额外检查头部的原始方法。 本文使用该逻辑删除键的多次重复，而无需对头部进行额外检查。
+这主要是[的替代方案，该帖子使用针对头节点和其余节点](https://www.geeksforgeeks.org/delete-occurrences-given-key-linked-list/)的单独条件循环来删除多次出现的给定键。 在这里，我们使用双指针方法来使用单个循环，而与元素的位置（头，尾或中间）无关。 Linus Torvalds 在他的“ Linux 25 周年” TED 演讲中解释了从链接列表中删除节点而无需额外检查头部的原始方法。 本文使用该逻辑删除键的多次重复，而无需对头部进行额外检查。
 
 说明：
-1.将头的地址存储在双指针中，直到找到非“关键”节点。 这需要处理第一个while循环来处理头部的特殊情况。
-2.如果某个节点不是“关键”节点，则将其地址->接下来的地址存储在pp中。
-3.如果稍后再找到“关键”节点，则更改pp（最终将节点- >接下来）指向当前节点->接下来。
+1.将头的地址存储在双指针中，直到找到非“关键”节点。 这需要处理第一个 while 循环来处理头部的特殊情况。
+2.如果某个节点不是“关键”节点，则将其地址->接下来的地址存储在 pp 中。
+3.如果稍后再找到“关键”节点，则更改 pp（最终将节点- >接下来）指向当前节点->接下来。
 
-以下是相同的C++实现。
+以下是相同的 C++实现。
 
 ```
 
@@ -112,6 +112,6 @@ Linked List after Deletion of 2:
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -9,12 +9,12 @@
 > **输入：** L1 = 4-> 6-> 2-> 12-> 3
 > **输出：** 8
 > **说明 ：**
-> 质数是2和3，因此是2！ + 3！ = 2 + 6 = 8。
+> 质数是 2 和 3，因此是 2！ + 3！ = 2 + 6 = 8。
 > 
 > **输入：** L1 = 7-> 4-> 5
 > **输出：** 5160
 > **说明：**
-> 质数是 7和5，因此是7！ + 5！ = 5160。
+> 质数是 7 和 5，因此是 7！ + 5！ = 5160。
 
 **方法：**要解决上述问题，请执行以下步骤：
 
@@ -465,6 +465,6 @@ public static void Main(String []args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -2,7 +2,7 @@
 
 中的节点
 
-**先决条件：** [双链表集1 | 简介和插入](http://quiz.geeksforgeeks.org/doubly-linked-list/)
+**先决条件：** [双链表集 1 | 简介和插入](http://quiz.geeksforgeeks.org/doubly-linked-list/)
 
 编写函数以删除双向链表中的给定节点。
 **原始双向链接列表**

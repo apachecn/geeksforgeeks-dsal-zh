@@ -1,9 +1,9 @@
-# 编写函数以获取两个链表的交点| 设置2
+# 编写函数以获取两个链表的交点| 设置 2
 
-系统中有两个单链表。 由于编程错误，链接列表之一的末端节点链接到第二个列表，从而形成了一个倒Y形列表。 编写程序以获取两个链接列表合并的点。
+系统中有两个单链表。 由于编程错误，链接列表之一的末端节点链接到第二个列表，从而形成了一个倒 Y 形列表。 编写程序以获取两个链接列表合并的点。
 
 ![Y ShapedLinked List](img/ab40c195e60241fe31989a627ddf41fc.png "Y ShapedLinked List")
-上图显示了一个示例，其中两个链表的交点为15。
+上图显示了一个示例，其中两个链表的交点为 15。
 
 **方法：**可以观察到，遍历第一个链表然后从第二链表的头到交点的节点数等于遍历第二链表的节点数 然后从第一个列表的头到交点。 考虑上面给出的示例，开始分别使用两个指针 **curr1** 和 **curr2** 遍历两个链接列表，这两个指针分别指向给定链接列表的头部。
 
@@ -401,6 +401,6 @@ public static void Main(String[] args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

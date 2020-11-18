@@ -1,6 +1,6 @@
-# 双链表中所有节点的和，可被给定数K整除
+# 双链表中所有节点的和，可被给定数 K 整除
 
-给定一个包含N个节点的双链表，并给定数字K。任务是找到所有可被K整除的节点之和。
+给定一个包含 N 个节点的双链表，并给定数字 K。任务是找到所有可被 K 整除的节点之和。
 
 **示例：**
 
@@ -15,7 +15,7 @@ Output: Sum = 20
 
 ```
 
-**方法：**想法是遍历双向链表并逐个检查节点。 如果节点的值可被K整除，则将该节点值添加到![sum](img/6956acab453be147c8390f8833632c5e.png "Rendered by QuickLaTeX.com")，否则在未到达列表末尾的情况下继续此过程。
+**方法：**想法是遍历双向链表并逐个检查节点。 如果节点的值可被 K 整除，则将该节点值添加到![sum](img/6956acab453be147c8390f8833632c5e.png "Rendered by QuickLaTeX.com")，否则在未到达列表末尾的情况下继续此过程。
 
 下面是上述方法的实现：
 
@@ -387,6 +387,6 @@ Sum = 30
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

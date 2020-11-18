@@ -3,10 +3,10 @@
 给定两个未排序的[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是将它们合并以获得一个已排序的[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)。
 **范例：**
 
-> **输入：**列表1 = 3-> 1-> 5，列表2 = 6- > 2-> 4
+> **输入：**列表 1 = 3-> 1-> 5，列表 2 = 6- > 2-> 4
 > **输出：** 1- > 2-> 3-> 4-> 5-> 6
 > 
-> **输入：**列表1 = 4-> 7-> 5，列表2 = 2- > 1-> 8-> 1
+> **输入：**列表 1 = 4-> 7-> 5，列表 2 = 2- > 1-> 8-> 1
 > **输出：** 1-> 1-> 2-> 4-> 5-> 7-> 8
 
 **朴素的方法：**朴素的方法是对给定的链表进行排序，然后[将两个排序的链表](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)按升序合并到一个列表中。
@@ -15,7 +15,7 @@
 **高效方法：**为了优化上述方法，我们将两个链表连接起来，然后使用任何排序算法对其进行排序。 步骤如下：
 
 1.  通过遍历第一个列表直到我们到达一个尾节点，然后将尾节点的下一个指向第二个列表的头节点，将两个列表连接起来。 将此串联列表存储在第一个列表中。
-2.  对上面合并的链表进行排序。 在这里，我们将使用冒泡排序。 因此，如果node-> next-> data小于node-> data，则交换两个相邻节点的数据。
+2.  对上面合并的链表进行排序。 在这里，我们将使用冒泡排序。 因此，如果 node-> next-> data 小于 node-> data，则交换两个相邻节点的数据。
 
 下面是上述方法的实现：
 
@@ -535,10 +535,10 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** *O（M * N）*其中M和N是两个给定链表的长度。
+**时间复杂度：** *O（M * N）*其中 M 和 N 是两个给定链表的长度。
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

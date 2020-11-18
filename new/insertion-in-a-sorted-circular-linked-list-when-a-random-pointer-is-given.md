@@ -11,7 +11,7 @@
 > **输出：** 2 6 45 78200
 
 **方法：**我们得到了一个指向圆形链表中节点的随机指针，我们必须找到圆形链表的头，才能将该节点插入已排序的链表中。
-这篇文章介绍了当给出head时插入到排序的链表中。
+这篇文章介绍了当给出 head 时插入到排序的链表中。
 要查找循环排序链表的标题，请执行以下操作：
 
 *   找到链表的最后一个节点（最后一个节点将大于其后继节点，即第一个元素。
@@ -457,6 +457,6 @@ public static void Main(String []args) 
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

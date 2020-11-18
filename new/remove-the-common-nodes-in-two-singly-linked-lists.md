@@ -7,7 +7,7 @@
 > **输入：** L1 = 10-> 15-> 5-> 20，L2 = 8-> 5-> 20-> 10
 > **输出：** 8-> 15
 > **说明：**
-> 由于两个链表都有5、10和20的共同点。 因此，删除了这些元素，结果列表为8-> 15。
+> 由于两个链表都有 5、10 和 20 的共同点。 因此，删除了这些元素，结果列表为 8-> 15。
 > 
 > **输入：** L1 = 0-> 5-> 52-> 21，L2 = 21-> 5-> 0-> 52
 > **输出：** []
@@ -414,7 +414,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** O（M * N），其中M和N是两个给定链表的长度。
+**时间复杂度：** O（M * N），其中 M 和 N 是两个给定链表的长度。
 
 
 
@@ -422,6 +422,6 @@ public static void Main(String[] args)
 
 * * *
 
-如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
