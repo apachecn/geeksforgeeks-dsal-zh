@@ -28,17 +28,400 @@
 
 ## CPP
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program for the above approach 
 
-*play_arrow*
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*链接*
-*亮度_4*
-*代码*
+// Link list node 
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-| `// C++ program for the above approach``#include <bits/stdc++.h>``using` `namespace` `std;` [`// Link list node``struct` `Node {` `int` `data;` `struct` `Node* next;``};``// Function to print the element``// of the Linked List``void` `printList(` `struct` `Node* p)``{` `if` `(p == NULL) {`​​  `cout <<` `"[]"` `;` `}` `while` `(p != NULL) {` `cout << p->data <<` `" -> "` `;` `p = p->next;` `}``}``// Function to push the node at the``// beginning of the linked list``void` `push(` `struct` `Node** head_ref,` `int` `new_data)``{` `struct` `Node* new_node` `= (` `struct` `Node*)` `malloc` `(` `sizeof` `(` `struct` `Node));` `new_node->data = new_data;` `new_node->next = (*head_ref);` `(*head_ref) = new_node;``}``// Function to insert unique``// elements in the new LL``void` `traverse(` `struct` `Node** head3,` `struct` `Node* temp1,` `struct` `Node* temp2)``{` `// Traverse the first linked list` `while` `(temp1 != NULL) {` `// Value of current node` `int` `val = temp1->data;` `struct` `Node* t = temp2;` `int` `x = 0;` `// Traverse the second list` `while` `(t != NULL) {` `if` `(t->data == val) {` `x = 1;` `break` `;` `}` `t = t->next;` `}` `// If element is not common` `// then insert it in the` `// resultant linked list` `if` `(x == 0) {` `push(head3, temp1->data);` `}` [ `temp1 = temp1->next;` `}``}``// Function to remove the common nodes``// in two Singly Linked Lists``void` `removeCommonNodes(` `struct` `Node* head1,` `struct` `Node* head2)``{` `// Head pointer for the resultant` `// linked list` `struct` `Node* head3 = NULL;` `// Find the node common between` `// linked list taking head1 as` `// first linked list` `traverse(&head3, head1, head2);` `// Find the node common between` `// linked list taking head2 as` `// first linked list` `traverse(&head3, head2, head1);` `// Print the resultant linked list` `printList(head3);``}``// Driver code`[H TG436] `int` `main()``{` `// First list` `struct` `Node* head1 = NULL;` `push(&head1, 20);` `push(&head1, 5);` `push(&head1, 15);` `push(&head1, 10);`[HTG213 `// Second list` `struct` `Node* head2 = NULL;` `push(&head2, 10);` `push(&head2, 20);` `push(&head2, 15);` `push(&head2, 8);` `// Function call` `removeCommonNodes(head1, head2);` `return` `0;``}` |
+// Function to print the element 
+// of the Linked List 
+void printList(struct Node* p) 
+{ 
+    if (p == NULL) { 
+        cout << "[]"; 
+    } 
 
-*chevron_right**filter_none*
+    while (p != NULL) { 
+        cout << p->data << " -> "; 
+        p = p->next; 
+    } 
+} 
+
+// Function to push the node at the 
+// beginning of the linked list 
+void push(struct Node** head_ref, 
+          int new_data) 
+{ 
+    struct Node* new_node 
+        = (struct Node*)malloc( 
+            sizeof(struct Node)); 
+
+    new_node->data = new_data; 
+    new_node->next = (*head_ref); 
+    (*head_ref) = new_node; 
+} 
+
+// Function to insert unique 
+// elements in the new LL 
+void traverse(struct Node** head3, 
+              struct Node* temp1, 
+              struct Node* temp2) 
+{ 
+
+    // Traverse the first linked list 
+    while (temp1 != NULL) { 
+
+        // Value of current node 
+        int val = temp1->data; 
+        struct Node* t = temp2; 
+        int x = 0; 
+
+        // Traverse the second list 
+        while (t != NULL) { 
+            if (t->data == val) { 
+                x = 1; 
+                break; 
+            } 
+            t = t->next; 
+        } 
+
+        // If element is not common 
+        // then insert it in the 
+        // resultant linked list 
+        if (x == 0) { 
+            push(head3, temp1->data); 
+        } 
+
+        temp1 = temp1->next; 
+    } 
+} 
+
+// Function to remove the common nodes 
+// in two Singly Linked Lists 
+void removeCommonNodes(struct Node* head1, 
+                       struct Node* head2) 
+{ 
+
+    // Head pointer for the resultant 
+    // linked list 
+    struct Node* head3 = NULL; 
+
+    // Find the node common between 
+    // linked list taking head1 as 
+    // first linked list 
+    traverse(&head3, head1, head2); 
+
+    // Find the node common between 
+    // linked list taking head2 as 
+    // first linked list 
+    traverse(&head3, head2, head1); 
+
+    // Print the resultant linked list 
+    printList(head3); 
+} 
+
+// Driver code 
+int main() 
+{ 
+    // First list 
+    struct Node* head1 = NULL; 
+    push(&head1, 20); 
+    push(&head1, 5); 
+    push(&head1, 15); 
+    push(&head1, 10); 
+
+    // Second list 
+    struct Node* head2 = NULL; 
+    push(&head2, 10); 
+    push(&head2, 20); 
+    push(&head2, 15); 
+    push(&head2, 8); 
+
+    // Function call 
+    removeCommonNodes(head1, head2); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program for the above approach 
+class GFG{ 
+
+// Link list node 
+static class Node { 
+    int data; 
+    Node next; 
+}; 
+
+// Function to print the element 
+// of the Linked List 
+static void printList(Node p) 
+{ 
+    if (p == null) { 
+        System.out.print("[]"); 
+    } 
+
+    while (p != null) { 
+        System.out.print(p.data+ "->"); 
+        p = p.next; 
+    } 
+} 
+
+// Function to push the node at the 
+// beginning of the linked list 
+static Node push(Node head_ref, 
+          int new_data) 
+{ 
+    Node new_node = new Node(); 
+
+    new_node.data = new_data; 
+    new_node.next = head_ref; 
+    head_ref = new_node; 
+    return head_ref; 
+} 
+
+// Function to insert unique 
+// elements in the new LL 
+static Node traverse(Node head3, 
+              Node temp1, 
+              Node temp2) 
+{ 
+
+    // Traverse the first linked list 
+    while (temp1 != null) { 
+
+        // Value of current node 
+        int val = temp1.data; 
+        Node t = temp2; 
+        int x = 0; 
+
+        // Traverse the second list 
+        while (t != null) { 
+            if (t.data == val) { 
+                x = 1; 
+                break; 
+            } 
+            t = t.next; 
+        } 
+
+        // If element is not common 
+        // then insert it in the 
+        // resultant linked list 
+        if (x == 0) { 
+            head3 = push(head3, temp1.data); 
+        } 
+
+        temp1 = temp1.next; 
+    } 
+    return head3; 
+} 
+
+// Function to remove the common nodes 
+// in two Singly Linked Lists 
+static void removeCommonNodes(Node head1, 
+                       Node head2) 
+{ 
+
+    // Head pointer for the resultant 
+    // linked list 
+    Node head3 = null; 
+
+    // Find the node common between 
+    // linked list taking head1 as 
+    // first linked list 
+    head3 = traverse(head3, head1, head2); 
+
+    // Find the node common between 
+    // linked list taking head2 as 
+    // first linked list 
+    head3 = traverse(head3, head2, head1); 
+
+    // Print the resultant linked list 
+    printList(head3); 
+} 
+
+// Driver code 
+public static void main(String[] args) 
+{ 
+    // First list 
+    Node head1 = new Node(); 
+    head1 = push(head1, 20); 
+    head1 = push(head1, 5); 
+    head1 = push(head1, 15); 
+    head1 = push(head1, 10); 
+
+    // Second list 
+    Node head2 = new Node(); 
+    head2 = push(head2, 10); 
+    head2 = push(head2, 20); 
+    head2 = push(head2, 15); 
+    head2 = push(head2, 8); 
+
+    // Function call 
+    removeCommonNodes(head1, head2); 
+} 
+} 
+
+// This code is contributed by sapnasingh4991 
+
+```
+
+## C＃
+
+```
+
+// C# program for the above approach 
+using System; 
+
+class GFG{ 
+
+// Link list node 
+class Node { 
+    public int data; 
+    public Node next; 
+}; 
+
+// Function to print the element 
+// of the Linked List 
+static void printList(Node p) 
+{ 
+    if (p == null) { 
+        Console.Write("[]"); 
+    } 
+
+    while (p != null) { 
+        Console.Write(p.data+ "->"); 
+        p = p.next; 
+    } 
+} 
+
+// Function to push the node at the 
+// beginning of the linked list 
+static Node push(Node head_ref, 
+          int new_data) 
+{ 
+    Node new_node = new Node(); 
+
+    new_node.data = new_data; 
+    new_node.next = head_ref; 
+    head_ref = new_node; 
+    return head_ref; 
+} 
+
+// Function to insert unique 
+// elements in the new LL 
+static Node traverse(Node head3, 
+              Node temp1, 
+              Node temp2) 
+{ 
+
+    // Traverse the first linked list 
+    while (temp1 != null) { 
+
+        // Value of current node 
+        int val = temp1.data; 
+        Node t = temp2; 
+        int x = 0; 
+
+        // Traverse the second list 
+        while (t != null) { 
+            if (t.data == val) { 
+                x = 1; 
+                break; 
+            } 
+            t = t.next; 
+        } 
+
+        // If element is not common 
+        // then insert it in the 
+        // resultant linked list 
+        if (x == 0) { 
+            head3 = push(head3, temp1.data); 
+        } 
+
+        temp1 = temp1.next; 
+    } 
+    return head3; 
+} 
+
+// Function to remove the common nodes 
+// in two Singly Linked Lists 
+static void removeCommonNodes(Node head1, 
+                       Node head2) 
+{ 
+
+    // Head pointer for the resultant 
+    // linked list 
+    Node head3 = null; 
+
+    // Find the node common between 
+    // linked list taking head1 as 
+    // first linked list 
+    head3 = traverse(head3, head1, head2); 
+
+    // Find the node common between 
+    // linked list taking head2 as 
+    // first linked list 
+    head3 = traverse(head3, head2, head1); 
+
+    // Print the resultant linked list 
+    printList(head3); 
+} 
+
+// Driver code 
+public static void Main(String[] args) 
+{ 
+    // First list 
+    Node head1 = new Node(); 
+    head1 = push(head1, 20); 
+    head1 = push(head1, 5); 
+    head1 = push(head1, 15); 
+    head1 = push(head1, 10); 
+
+    // Second list 
+    Node head2 = new Node(); 
+    head2 = push(head2, 10); 
+    head2 = push(head2, 20); 
+    head2 = push(head2, 15); 
+    head2 = push(head2, 8); 
+
+    // Function call 
+    removeCommonNodes(head1, head2); 
+} 
+} 
+
+// This code is contributed by PrinciRaj1992 
+
+```
+
+**Output:**
+
+```
+8 -> 5 ->
+
+```
+
+**时间复杂度：** O（M * N），其中M和N是两个给定链表的长度。
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

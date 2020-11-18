@@ -10,17 +10,297 @@
 
 ## C / C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C program to count number of nodes in 
+// a circular linked list. 
+#include <stdio.h> 
+#include <stdlib.h> 
 
-*play_arrow*
+/* structure for a node */
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+/* Function to insert a node at the beginning 
+   of a Circular linked list */
+void push(struct Node** head_ref, int data) 
+{ 
+    struct Node* ptr1 = (struct Node*)malloc(sizeof(struct Node)); 
+    struct Node* temp = *head_ref; 
+    ptr1->data = data; 
+    ptr1->next = *head_ref; 
 
-| `// C program to count number of nodes in``// a circular linked list.``#include <stdio.h>``#include <stdlib.h>`的`/* structure for a node */``struct` `Node {` `int` `data;` `struct` `Node* next;`[`};``/* Function to insert a node at the beginning` `of a Circular linked list */``Node** head_ref,` `int` `data)``{` `struct` `Node* ptr1 = (` `struct` `Node*)` `malloc` `(` `sizeof` `(` `struct` `Node));` `struct` `Node* temp = *head_ref;` `ptr1->data = data;` `ptr1->next = *head_ref;` `/* If the linked list is not NULL then set` `the next of last node */` `if` `(*head_ref != NULL) {` `while` [HTG5 4] `temp = temp->next;` `temp->next = ptr1;` `}` `else` `ptr1->next = ptr1;` `/*For the first node */` `*head_ref = ptr1;``}``/* Function to print nodes in a given Circular` `linked list */``int` `countNodes(` `struct` `Node* head)``{` `struct` `Node* temp = head;` `int` `result = 0;` `if` `(head != NULL) {` `do` `{` `temp = temp->next;` `result++;` `}` `while` `(temp != head);` `}` [ `return` `result;``}``/* Driver program to test above functions */``int` `main()``{` `/* Initialize lists as empty */` `struct` `Node* head = NULL;` `push(&head, 12);` `push(&head, 56);` `push(&head, 2);` `push(&head, 11);` `printf` `(` `"%d"` `, countNodes(head));` `return` `0;``}` |
+    /* If the linked list is not NULL then set 
+       the next of last node */
+    if (*head_ref != NULL) { 
+        while (temp->next != *head_ref) 
+            temp = temp->next; 
+        temp->next = ptr1; 
+    } else
+        ptr1->next = ptr1; /*For the first node */
 
-*chevron_right**filter_none*
+    *head_ref = ptr1; 
+} 
+
+/* Function to print nodes in a given Circular 
+   linked list */
+int countNodes(struct Node* head) 
+{ 
+    struct Node* temp = head; 
+    int result = 0; 
+    if (head != NULL) { 
+        do { 
+            temp = temp->next; 
+            result++; 
+        } while (temp != head); 
+    } 
+
+    return result; 
+} 
+
+/* Driver program to test above functions */
+int main() 
+{ 
+    /* Initialize lists as empty */
+    struct Node* head = NULL; 
+    push(&head, 12); 
+    push(&head, 56); 
+    push(&head, 2); 
+    push(&head, 11); 
+
+    printf("%d", countNodes(head)); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to count number of nodes in  
+// a circular linked list.  
+class GFG 
+{ 
+
+/* ure for a node */
+static class Node 
+{  
+    int data;  
+    Node next;  
+};  
+
+/* Function to insert a node at the beginning  
+of a Circular linked list */
+static Node push( Node head_ref, int data)  
+{  
+    Node ptr1 = new Node();  
+    Node temp = head_ref;  
+    ptr1.data = data;  
+    ptr1.next = head_ref;  
+
+    /* If linked list is not null then set  
+    the next of last node */
+    if (head_ref != null) 
+    {  
+        while (temp.next != head_ref)  
+            temp = temp.next;  
+        temp.next = ptr1;  
+    } else
+        ptr1.next = ptr1; /*For the first node */
+
+    head_ref = ptr1; 
+    return head_ref; 
+}  
+
+/* Function to print nodes in a given Circular  
+linked list */
+static int countNodes( Node head)  
+{  
+    Node temp = head;  
+    int result = 0;  
+    if (head != null) 
+    {  
+        do 
+        {  
+            temp = temp.next;  
+            result++;  
+        } while (temp != head);  
+    }  
+
+    return result;  
+}  
+
+/* Driver program to test above functions */
+public static void main(String args[]) 
+{  
+    /* Initialize lists as empty */
+    Node head = null;  
+    head = push(head, 12);  
+    head = push(head, 56);  
+    head = push(head, 2);  
+    head = push(head, 11);  
+
+    System.out.printf("%d", countNodes(head));  
+} 
+}  
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+## Python3
+
+```
+
+# Python3 program to count number of nodes in 
+# a circular linked list. 
+
+# structure for a node 
+class Node:  
+    def __init__(self, data):  
+        self.data = data  
+        self.next = None
+
+# Function to insert a node at the beginning 
+# of a Circular linked list */ 
+def push(head_ref,data): 
+
+    ptr1 = Node(0) 
+    temp = head_ref 
+    ptr1.data = data 
+    ptr1.next = head_ref 
+
+    # If the linked list is not None then set 
+    # the next of last node  
+    if (head_ref != None) : 
+        while (temp.next != head_ref): 
+            temp = temp.next
+        temp.next = ptr1 
+    else: 
+        ptr1.next = ptr1 #For the first node */ 
+
+    head_ref = ptr1 
+    return head_ref 
+
+# Function to print nodes  
+# in a given Circular linked list  
+def countNodes(head): 
+
+    temp = head 
+    result = 0
+    if (head != None) : 
+        while True : 
+            temp = temp.next
+            result = result + 1
+            if (temp == head): 
+                break
+
+    return result 
+
+# Driver Code  
+if __name__=='__main__':  
+
+    # Initialize lists as empty */ 
+    head = None
+    head = push(head, 12) 
+    head = push(head, 56) 
+    head = push(head, 2) 
+    head = push(head, 11) 
+
+    print( countNodes(head)) 
+
+# This code is contributed by Arnab Kundu 
+
+```
+
+## C＃
+
+```
+
+// C# program to count number of nodes in  
+// a circular linked list.  
+using System; 
+
+class GFG  
+{  
+
+/* structure for a node */
+public class Node  
+{  
+    public int data;  
+    public Node next;  
+};  
+
+/* Function to insert a node at the beginning  
+of a Circular linked list */
+static Node push( Node head_ref, int data)  
+{  
+    Node ptr1 = new Node();  
+    Node temp = head_ref;  
+    ptr1.data = data;  
+    ptr1.next = head_ref;  
+
+    /* If linked list is not null then set  
+    the next of last node */
+    if (head_ref != null)  
+    {  
+        while (temp.next != head_ref)  
+            temp = temp.next;  
+        temp.next = ptr1;  
+    } else
+        ptr1.next = ptr1; /*For the first node */
+
+    head_ref = ptr1;  
+    return head_ref;  
+}  
+
+/* Function to print nodes in a given Circular  
+linked list */
+static int countNodes( Node head)  
+{  
+    Node temp = head;  
+    int result = 0;  
+    if (head != null)  
+    {  
+        do
+        {  
+            temp = temp.next;  
+            result++;  
+        } while (temp != head);  
+    }  
+
+    return result;  
+}  
+
+/* Driver code */
+public static void Main(String []args)  
+{  
+    /* Initialize lists as empty */
+    Node head = null;  
+    head = push(head, 12);  
+    head = push(head, 56);  
+    head = push(head, 2);  
+    head = push(head, 11);  
+
+    Console.Write( countNodes(head));  
+}  
+}  
+
+// This code is contributed by Arnab Kundu  
+
+```
+
+```
+4
+
+```
+
+本文由 **Rishabh jain** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

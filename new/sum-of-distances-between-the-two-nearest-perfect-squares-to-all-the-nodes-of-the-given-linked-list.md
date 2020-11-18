@@ -20,20 +20,59 @@
 
 下面是上述方法的实现：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+# Python3 implementation of the approach 
+import sys 
+import math 
 
-*play_arrow*
+# Structure for a node 
+class Node: 
+    def __init__(self, data): 
+        self.data = data 
+        self.next = None
 
-*链接*
-*亮度_4*
-*代码*
+# Function to find the total distance sum 
+def distanceSum(head): 
 
-| `# Python3 implementation of the approach``import` `sys``import` `math``# Structure for a node` ]`class` `Node:` `def` `__init__(` `self` `, data):` `self` `.data` `=` `data` `self` `.` `next` `=` `None``# Function to find the total distance sum``def` `distanceSum(head):` `# If head is null` `if` `not` `head:` `return` `# To store the required sum` `tsum` `=` `0` `temp` `=` `head` `(temp):` `sq_root` `=` `math.sqrt(temp.data)` `# If current node is not a perfect square ` `# then find left perfect square and ` `# right perfect square` `if` `sq_root<temp.data:` `left_ps` `=` `math.floor(sq_root)` `*` `*` `2` `right_ps` `=` `math.ceil(sq_root)` `*` `*` `2` `tsum` `+` `=` `(right_ps` `-` `left_ps)` `# Get to the next node` `temp` `=` `temp.` `next` `return` `tsum``# Driver code``if` `__name__` `=` `=` `'__main__'` `:` `head` `=` `Node(` `3` `)` `head.` `next` `=` `Node(` [ `15` `)` `head.` `next` `.` `next` `=` `Node(` `7` `)` `head.` `next` `.` `next` `.` `next` `=` `Node(` `40` `)` `head.` `next` `.` `next` `.` `next` `.` `next` `=` `Node(` `42` `)` `result` `=` `distanceSum(head)` `print` `(` `"{}"` `.` `format` `(result))` |
+    # If head is null 
+    if not head: 
+        return
 
-*chevron_right**filter_none***Output:**
+    # To store the required sum 
+    tsum = 0
+    temp = head 
+
+    # Traversing through all the nodes one by one 
+    while(temp): 
+        sq_root = math.sqrt(temp.data) 
+
+    # If current node is not a perfect square  
+    # then find left perfect square and  
+    # right perfect square 
+        if sq_root<temp.data: 
+            left_ps = math.floor(sq_root)**2
+            right_ps = math.ceil(sq_root)**2
+            tsum+=(right_ps - left_ps) 
+
+        # Get to the next node 
+        temp = temp.next
+    return tsum 
+
+# Driver code 
+if __name__=='__main__': 
+    head = Node(3) 
+    head.next = Node(15) 
+    head.next.next = Node(7) 
+    head.next.next.next = Node(40) 
+    head.next.next.next.next = Node(42) 
+
+    result = distanceSum(head) 
+    print("{}".format(result)) 
+
+```
+
+**Output:**
 
 ```
 41

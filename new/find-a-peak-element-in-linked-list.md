@@ -32,17 +32,347 @@ Output : 90
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation to find the peak 
+// element in the Linked List 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+/* A Linked list node */
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// function to insert a node at the 
+// beginning of the linked list 
+void push(struct Node** head_ref, int new_data) 
+{ 
+    struct Node* new_node = new Node; 
+    new_node->data = new_data; 
+    new_node->next = (*head_ref); 
+    (*head_ref) = new_node; 
+} 
 
-| `// C++ implementation to find the peak``// element in the Linked List``#include <bits/stdc++.h>``using` `namespace` `std;` [`/* A Linked list node */``struct` `Node {` `int` `data;` `struct` `Node* next;``};``// function to insert a node at the``// beginning of the linked list``void` `push(` `struct` `Node** head_ref,` `int` `new_data)``{` `struct` `Node* new_node =` `new` `Node;` `new_node->data = new_data;` `new_node->next = (*head_ref);` `(*head_ref) = new_node;``}``// Function to find the peak element``int` `findPeak(` `struct` `Node* head)``{` `// Return -1 to indicate that` `// peak does not exist` `if` `(head == NULL)` `return` `-1;` `// If there is only one node` `if` `(head->next == NULL)` `return` `head->data;` `// Traverse till last node (starting from` `// second node)` `int` `prev = head->data;` `Node *curr;` `for` `(curr = head->next; curr->next != NULL;` `curr = curr->next) {` `// check if current node is greater` `// than both neighbours` `if` `(curr->data > curr->next->data` `&& curr->data > prev)` `return` `curr->data;`[ `prev = curr->data;` `}` `// We reach here when curr is last node` `if` `(curr->data > prev)` `return` `curr->data;` `// Peak does not exists` `else` `return` `-1;``}``// Driver program``int` `main()``{`​​ `struct` `Node* head = NULL;` `// create linked list 1->6->8->4->12` `push(&head, 12);` `push(&head, 4);` `push(&head, 8);` `push(&head, 6);` `push(&head, 1);` `cout <<` `"Peak element is: "` `<< findPeak(head);` `return` `0;``}`[HTG2 99] |
+// Function to find the peak element 
+int findPeak(struct Node* head) 
+{ 
+    // Return -1 to indicate that 
+    // peak does not exist 
+    if (head == NULL) 
+        return -1; 
 
-*chevron_right**filter_none*
+    // If there is only one node 
+    if (head->next == NULL) 
+        return head->data; 
+
+    // Traverse till last node (starting from 
+    // second node) 
+    int prev = head->data; 
+    Node *curr; 
+    for (curr = head->next; curr->next != NULL; 
+         curr = curr->next) { 
+
+        // check if current node is greater 
+        // than both neighbours 
+        if (curr->data > curr->next->data 
+            && curr->data > prev) 
+            return curr->data; 
+
+        prev = curr->data; 
+    } 
+
+    // We reach here when curr is last node 
+    if (curr->data > prev) 
+        return curr->data; 
+
+    // Peak does not exists 
+    else
+        return -1; 
+} 
+
+// Driver program 
+int main() 
+{ 
+    struct Node* head = NULL; 
+
+    // create linked list 1->6->8->4->12 
+    push(&head, 12); 
+    push(&head, 4); 
+    push(&head, 8); 
+    push(&head, 6); 
+    push(&head, 1); 
+
+    cout << "Peak element is: "
+         << findPeak(head); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation to find the peak  
+// element in the Linked List  
+class GFG 
+{ 
+
+// A Linked list node / 
+static class Node  
+{  
+    int data;  
+    Node next;  
+};  
+
+// function to insert a node at the  
+// beginning of the linked list  
+static Node push( Node head_ref, int new_data)  
+{  
+    Node new_node = new Node();  
+    new_node.data = new_data;  
+    new_node.next = (head_ref);  
+    (head_ref) = new_node;  
+    return head_ref; 
+}  
+
+// Function to find the peak element  
+static int findPeak( Node head)  
+{  
+    // Return -1 to indicate that  
+    // peak does not exist  
+    if (head == null)  
+        return -1;  
+
+    // If there is only one node  
+    if (head.next == null)  
+        return head.data;  
+
+    // Traverse till last node (starting from  
+    // second node)  
+    int prev = head.data;  
+    Node curr;  
+    for (curr = head.next; curr.next != null;  
+        curr = curr.next) 
+    {  
+
+        // check if current node is greater  
+        // than both neighbours  
+        if (curr.data > curr.next.data  
+            && curr.data > prev)  
+            return curr.data;  
+
+        prev = curr.data;  
+    }  
+
+    // We reach here when curr is last node  
+    if (curr.data > prev)  
+        return curr.data;  
+
+    // Peak does not exists  
+    else
+        return -1;  
+}  
+
+// Driver program  
+public static void main(String args[]) 
+{  
+    Node head = null;  
+
+    // create linked list 1.6.8.4.12  
+    head=push(head, 12);  
+    head=push(head, 4);  
+    head=push(head, 8);  
+    head=push(head, 6);  
+    head=push(head, 1);  
+
+    System.out.print("Peak element is: "
+        + findPeak(head));  
+}  
+}  
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+## Python3
+
+```
+
+# Python3 implementation to find the peak  
+# element in the Linked List  
+
+# Link list node  
+class Node : 
+    def __init__(self): 
+        self.data = 0
+        self.next = None
+
+# function to insert a node at the  
+# beginning of the linked list  
+def push( head_ref, new_data) : 
+
+    new_node = Node()  
+    new_node.data = new_data  
+    new_node.next = (head_ref)  
+    (head_ref) = new_node  
+    return head_ref 
+
+# Function to find the peak element  
+def findPeak( head):  
+
+    # Return -1 to indicate that  
+    # peak does not exist  
+    if (head == None) : 
+        return -1
+
+    # If there is only one node  
+    if (head.next == None) : 
+        return head.data  
+
+    # Traverse till last node (starting from  
+    # second node)  
+    prev = head.data  
+    curr = head.next
+    while( curr.next != None ): 
+
+        # check if current node is greater  
+        # than both neighbours  
+        if (curr.data > curr.next.data and curr.data > prev) : 
+            return curr.data  
+
+        prev = curr.data  
+        curr = curr.next
+
+    # We reach here when curr is last node  
+    if (curr.data > prev) : 
+        return curr.data  
+
+    # Peak does not exists  
+    else: 
+        return -1
+
+# Driver program  
+
+head = None
+
+# create linked list 1.6.8.4.12  
+head = push(head, 12)  
+head = push(head, 4)  
+head = push(head, 8)  
+head = push(head, 6)  
+head = push(head, 1)  
+
+print("Peak element is: ", findPeak(head))  
+
+# This code is contributed by Arnab Kundu 
+
+```
+
+## C＃
+
+```
+
+// C# implementation to find the peak  
+// element in the Linked List 
+using System; 
+
+class GFG  
+{  
+
+// A Linked list node /  
+public class Node  
+{  
+    public int data;  
+    public Node next;  
+};  
+
+// function to insert a node at the  
+// beginning of the linked list  
+static Node push(Node head_ref, int new_data)  
+{  
+    Node new_node = new Node();  
+    new_node.data = new_data;  
+    new_node.next = (head_ref);  
+    (head_ref) = new_node;  
+    return head_ref;  
+}  
+
+// Function to find the peak element  
+static int findPeak(Node head)  
+{  
+    // Return -1 to indicate that  
+    // peak does not exist  
+    if (head == null)  
+        return -1;  
+
+    // If there is only one node  
+    if (head.next == null)  
+        return head.data;  
+
+    // Traverse till last node  
+    // (starting from second node)  
+    int prev = head.data;  
+    Node curr;  
+    for (curr = head.next; curr.next != null;  
+         curr = curr.next)  
+    {  
+
+        // check if current node is greater  
+        // than both neighbours  
+        if (curr.data > curr.next.data  
+            && curr.data > prev)  
+            return curr.data;  
+
+        prev = curr.data;  
+    }  
+
+    // We reach here when curr is last node  
+    if (curr.data > prev)  
+        return curr.data;  
+
+    // Peak does not exists  
+    else
+        return -1;  
+}  
+
+// Driver Code 
+public static void Main(String[] args)  
+{  
+    Node head = null;  
+
+    // create linked list 1.6.8.4.12  
+    head = push(head, 12);  
+    head = push(head, 4);  
+    head = push(head, 8);  
+    head = push(head, 6);  
+    head = push(head, 1);  
+
+    Console.Write("Peak element is: " +  
+                   findPeak(head));  
+}  
+}  
+
+// This code is contributed by Rajput-Ji 
+
+```
+
+**Output:**
+
+```
+Peak element is: 8
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

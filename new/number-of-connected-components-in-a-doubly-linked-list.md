@@ -53,20 +53,162 @@ m < =总编号 双向链表中的节点数，其中m =参考数组的大小。
 
 下面是上述方法的实现：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// A C++ program to find number  
+// of Connected Components in a doubly linked list. 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Node of the doubly linked list 
+struct Node { 
+    int data; 
+    struct Node* next; 
+    struct Node* prev; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Function to find number of connected 
+// components using a doubly linked list 
+// and a reference array 
+int func_connComp(struct Node** head_ref, 
+                  vector<struct Node*> refArr, int n) 
+{ 
+    // Base case when the doubly 
+    // linked list is empty 
+    if (head_ref == NULL) { 
+        return 0; 
+    } 
 
-| `// A C++ program to find number ``// of Connected Components in a doubly linked list.``#include <bits/stdc++.h>``using` `namespace` `std;` [`// Node of the doubly linked list``struct` `Node {` `int` `data;` `struct` `Node* next;` `struct` `Node* prev;``};``// Function to find number of connected``// components using a doubly linked list``// and a reference array``int` `func_connComp(` `struct` `Node** head_ref,` `vector<` `struct` `Node*> refArr,` `int` `n)``{` `// Base case when the doubly` `// linked list is empty` `if` `(head_ref == NULL) {` `return` `0;` `}` `// Initialise connectedComponents to zero` `int` `connectedComponents = 0;` `// Initialise an unordered set` `unordered_set<` `struct` `Node*> refSet;`， `// Push the first element of the` `// refArr in the refSet and` `// set the connectedComponents to 1` `refSet.insert(refArr[0]);` `connectedComponents++;` `// Loop over all the elements of the refArr` `for` `(` `int` `i = 1; i < n; i++) {` `// insert each reference node to the refSet` `refSet.insert(refArr[i]);` ] `// If the reference node is the head of the linked list` `if` `(refArr[i]->prev == NULL) {` `// when next sibling of the head node is` `// not in the refSet` `if` `(refSet.find(refArr[i]->next) == refSet.end()) {` `connectedComponents++;` `}`[H TG407]  `}` `// If the reference node is the` `// last node of the linked list*/` `else` `if` `(refArr[i]->next == NULL) {` `// when previous sibling of the` `// node is not in the refSet` ] `if` `(refSet.find(refArr[i]->next) == refSet.end()) {` `connectedComponents++;` `}` `}`[ `// the case when both previous and` `// next siblings of the current node` `// are in the refSet` `else` `if` `(refSet.find(refArr[i]->prev) != refSet.end()` `&& refSet.find(refArr[i]->next) != refSet.end()) {` `connectedComponents--;` `}` `/*the case when previous and next ` `// siblings of the current node ` `// are not in the refSet*/` `else` `if` `(refSet.find(refArr[i]->prev) == refSet.end()` `&& refSet.find(refArr[i]->next) == refSet.end()) {` `connectedComponents++;` `}` `}` `return` `connectedComponents;``}``// Function to insert a node at the``// beginging of the Doubly Linked List``Node* push(` `struct` `Node** head_ref,` `int` `new_data)``{` `/* allocate node */` `struct` `Node* new_node =` `new` `Node;` `struct` `Node* current_node = new_node;` `/* put in the data */` `new_node->data = new_data;` `/* since we are adding at the beginning, ` `prev is always NULL */` `new_node->prev = NULL;` `/* link the old list off the new node */` `new_node->next = (*head_ref);` `/* change prev of head node to new node */` `if` `((*head_ref) != NULL)` `(*head_ref)->prev = new_node;` `/* move the head to point to the new node */` `(*head_ref) = new_node;`]  `return` `current_node;``}` [`// Function to print nodes in a given``// doubly linked list``void` `printList(` `struct` `Node* node)``{` `while` `(node != NULL) {` `printf` `(` `"%d "` `, node->data);` `node = node->next;` `}``}``// Driver code``int` `main()``{` `// Start with the empty list` `struct` `Node* head = NULL;`]  `// Let us create a linked list to test` `// the functions so as to find number` `// of Connected Components Created a` `// doubly linked list: 1 <-> 7 <-> 10 <-> 5 <-> 4 <-> 2` `struct` `Node* ref_to_nodeN2 = push(&head, 2);` `struct` `Node* ref_to_nodeN4 = push(&head, 4);` `struct` `Node* ref_to_nodeN5 = push(&head, 5);` ​​ `struct` `Node* ref_to_nodeN10 = push(&head, 10);` `struct` `Node* ref_to_nodeN7 = push(&head, 7);` `struct` `Node* ref_to_nodeN1 = push(&head, 1);` `vector<` `struct` `Node*> refArr{ ref_to_nodeN5,` `ref_to_nodeN2, ref_to_nodeN7, ref_to_nodeN1 };` `// This function will return the number` `// of connected components of doubly linked list` `int` `connectedComponents = func_connComp(&head, refArr, 4);` `cout <<` `"Total number of connected components are "` `<< connectedComponents << endl;` `return` `0;``}` |
+    // Initialise connectedComponents to zero 
+    int connectedComponents = 0; 
 
-*chevron_right**filter_none***Output:**
+    // Initialise an unordered set 
+    unordered_set<struct Node*> refSet; 
+
+    // Push the first element of the 
+    // refArr in the refSet and 
+    // set the connectedComponents to 1 
+    refSet.insert(refArr[0]); 
+    connectedComponents++; 
+
+    // Loop over all the elements of the refArr 
+    for (int i = 1; i < n; i++) { 
+
+        // insert each reference node to the refSet 
+        refSet.insert(refArr[i]); 
+
+        // If the reference node is the head of the linked list 
+        if (refArr[i]->prev == NULL) { 
+
+            // when next sibling of the head node is 
+            // not in the refSet 
+            if (refSet.find(refArr[i]->next) == refSet.end()) { 
+                connectedComponents++; 
+            } 
+        } 
+
+        // If the reference node is the 
+        // last node of the linked list*/ 
+        else if (refArr[i]->next == NULL) { 
+
+            // when previous sibling of the 
+            // node is not in the refSet 
+            if (refSet.find(refArr[i]->next) == refSet.end()) { 
+                connectedComponents++; 
+            } 
+        } 
+
+        // the case when both previous and 
+        // next siblings of the current node 
+        // are in the refSet 
+        else if (refSet.find(refArr[i]->prev) != refSet.end() 
+                 && refSet.find(refArr[i]->next) != refSet.end()) { 
+            connectedComponents--; 
+        } 
+
+        /*the case when previous and next  
+        // siblings of the current node  
+        // are not in the refSet*/
+        else if (refSet.find(refArr[i]->prev) == refSet.end() 
+                 && refSet.find(refArr[i]->next) == refSet.end()) { 
+            connectedComponents++; 
+        } 
+    } 
+    return connectedComponents; 
+} 
+
+// Function to insert a node at the 
+// beginging of the Doubly Linked List 
+Node* push(struct Node** head_ref, int new_data) 
+{ 
+    /* allocate node */
+    struct Node* new_node = new Node; 
+
+    struct Node* current_node = new_node; 
+    /* put in the data */
+    new_node->data = new_data; 
+
+    /* since we are adding at the beginning,  
+    prev is always NULL */
+    new_node->prev = NULL; 
+
+    /* link the old list off the new node */
+    new_node->next = (*head_ref); 
+
+    /* change prev of head node to new node */
+    if ((*head_ref) != NULL) 
+        (*head_ref)->prev = new_node; 
+
+    /* move the head to point to the new node */
+    (*head_ref) = new_node; 
+
+    return current_node; 
+} 
+
+// Function to print nodes in a given 
+// doubly linked list 
+void printList(struct Node* node) 
+{ 
+    while (node != NULL) { 
+        printf("%d ", node->data); 
+        node = node->next; 
+    } 
+} 
+
+// Driver code 
+int main() 
+{ 
+
+    // Start with the empty list 
+    struct Node* head = NULL; 
+
+    // Let us create a linked list to test 
+    // the functions so as to find number 
+    // of Connected Components Created a 
+    // doubly linked list: 1 <-> 7 <-> 10 <-> 5 <-> 4 <-> 2 
+    struct Node* ref_to_nodeN2 = push(&head, 2); 
+    struct Node* ref_to_nodeN4 = push(&head, 4); 
+    struct Node* ref_to_nodeN5 = push(&head, 5); 
+    struct Node* ref_to_nodeN10 = push(&head, 10); 
+    struct Node* ref_to_nodeN7 = push(&head, 7); 
+    struct Node* ref_to_nodeN1 = push(&head, 1); 
+
+    vector<struct Node*> refArr{ ref_to_nodeN5, 
+                                         ref_to_nodeN2, ref_to_nodeN7, ref_to_nodeN1 }; 
+
+    // This function will return the number 
+    // of connected components of doubly linked list 
+    int connectedComponents = func_connComp(&head, refArr, 4); 
+
+    cout << "Total number of connected components are "
+         << connectedComponents << endl; 
+
+    return 0; 
+} 
+
+```
+
+**Output:**
 
 ```
 Total number of connected components are 3

@@ -21,17 +21,447 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation of the approach 
+#include <iostream> 
+using namespace std; 
 
-*play_arrow*
+// Structure of a node of the linked list 
+struct node { 
+    int data; 
+    struct node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Function to create a new node 
+struct node* newNode(int d) 
+{ 
+    struct node* newnode = new node(); 
+    newnode->data = d; 
+    newnode->next = NULL; 
+    return newnode; 
+} 
 
-| `// C++ implementation of the approach``#include <iostream>``using` `namespace` `std;``// Structure of a node of the linked list``struct` `node {` `int` `data;` `struct` `node* next;``};``// Function to create a new node``struct` `node* newNode(` `int` `d)``{` `struct` `node* newnode =` `new` `node();` `newnode->data = d;` `newnode->next = NULL;` `return` `newnode;``}``// Recursive function to reverse the consecutive``// even nodes of the linked list``struct` `node* reverse(` `struct` `node* head,` `struct` `node* prev)``{` `// Base case` `if` `(head == NULL)` `return` `NULL;` `struct` `node* temp;` `struct` `node* curr;` `curr = head;` `// Reversing nodes until curr node's value` `// turn odd or Linked list is fully traversed`​​  `while` `(curr != NULL && curr->data % 2 == 0) {` `temp = curr->next;` `curr->next = prev;` `prev = curr;` `curr = temp;` `}` `// If elements were reversed then head` `// pointer needs to be changed` `if` `(curr != head) {` `// Recur for the remaining linked list` `curr = reverse(curr, NULL);` `return` `prev;` `}` `// Simply iterate over the odd value nodes` `else` `{` `head->next = reverse(head->next, head);` `return` `head;` `}``}`的`// Utility function to print the``// contents of the linked list``void` `printLinkedList(` `struct` `node* head)``{` `while` `(head != NULL) {` `cout << head->data <<` `" "` `;` `head = head->next;` `}``}``// Driver code``int` `main()``{` `int` `arr[] = { 1, 2, 3, 3, 4, 6, 8, 5 };` `int` `n =` `sizeof` `(arr) /` `sizeof` [HTG15 1] `struct` `node* head = NULL;` `struct` `node* p;` `// Constructing linked list` `for` `(` `int` `i = 0; i < n; i++) {` ] `if` `(head == NULL) {` `p = newNode(arr[i]);` `head = p;` `continue` `;` `}` `p->next = newNode(arr[i]);` `p = p->next;` `}` `// Head of the updated linked list` `head = reverse(head, NULL);` `// Printing the reversed linked list` `printLinkedList(head);` `return` `0;``}` |
+// Recursive function to reverse the consecutive 
+// even nodes of the linked list 
+struct node* reverse(struct node* head, struct node* prev) 
+{ 
 
-*chevron_right**filter_none*
+    // Base case 
+    if (head == NULL) 
+        return NULL; 
+
+    struct node* temp; 
+    struct node* curr; 
+    curr = head; 
+
+    // Reversing nodes until curr node's value 
+    // turn odd or Linked list is fully traversed 
+    while (curr != NULL && curr->data % 2 == 0) { 
+        temp = curr->next; 
+        curr->next = prev; 
+        prev = curr; 
+        curr = temp; 
+    } 
+
+    // If elements were reversed then head 
+    // pointer needs to be changed 
+    if (curr != head) { 
+
+        head->next = curr; 
+
+        // Recur for the remaining linked list 
+        curr = reverse(curr, NULL); 
+        return prev; 
+    } 
+
+    // Simply iterate over the odd value nodes 
+    else { 
+        head->next = reverse(head->next, head); 
+        return head; 
+    } 
+} 
+
+// Utility function to print the 
+// contents of the linked list 
+void printLinkedList(struct node* head) 
+{ 
+    while (head != NULL) { 
+        cout << head->data << " "; 
+        head = head->next; 
+    } 
+} 
+
+// Driver code 
+int main() 
+{ 
+    int arr[] = { 1, 2, 3, 3, 4, 6, 8, 5 }; 
+    int n = sizeof(arr) / sizeof(arr[0]); 
+
+    struct node* head = NULL; 
+    struct node* p; 
+
+    // Constructing linked list 
+    for (int i = 0; i < n; i++) { 
+
+        if (head == NULL) { 
+            p = newNode(arr[i]); 
+            head = p; 
+            continue; 
+        } 
+        p->next = newNode(arr[i]); 
+        p = p->next; 
+    } 
+
+    // Head of the updated linked list 
+    head = reverse(head, NULL); 
+
+    // Printing the reversed linked list 
+    printLinkedList(head); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation of the approach  
+import java.util.*; 
+
+class GFG 
+{ 
+
+// Structure of a node of the linked list 
+static class node 
+{ 
+    int data; 
+    node next; 
+}; 
+
+// Function to create a new node 
+static node newNode(int d) 
+{ 
+    node newnode = new node(); 
+    newnode.data = d; 
+    newnode.next = null; 
+    return newnode; 
+} 
+
+// Recursive function to reverse the consecutive 
+// even nodes of the linked list 
+static node reverse(node head, node prev) 
+{ 
+
+    // Base case 
+    if (head == null) 
+        return null; 
+
+    node temp; 
+    node curr; 
+    curr = head; 
+
+    // Reversing nodes until curr node's value 
+    // turn odd or Linked list is fully traversed 
+    while (curr != null && curr.data % 2 == 0)  
+    { 
+        temp = curr.next; 
+        curr.next = prev; 
+        prev = curr; 
+        curr = temp; 
+    } 
+
+    // If elements were reversed then head 
+    // pointer needs to be changed 
+    if (curr != head)  
+    { 
+        head.next = curr; 
+
+        // Recur for the remaining linked list 
+        curr = reverse(curr, null); 
+        return prev; 
+    } 
+
+    // Simply iterate over the odd value nodes 
+    else
+    { 
+        head.next = reverse(head.next, head); 
+        return head; 
+    } 
+} 
+
+// Utility function to print the 
+// contents of the linked list 
+static void printLinkedList(node head) 
+{ 
+    while (head != null) 
+    { 
+        System.out.print(head.data + " "); 
+        head = head.next; 
+    } 
+} 
+
+// Driver code 
+public static void main(String[] args) 
+{ 
+    int arr[] = { 1, 2, 3, 3, 4, 6, 8, 5 }; 
+    int n = arr.length; 
+
+    node head = null; 
+    node p = new node(); 
+
+    // Constructing linked list 
+    for (int i = 0; i < n; i++) 
+    { 
+        if (head == null)  
+        { 
+            p = newNode(arr[i]); 
+            head = p; 
+            continue; 
+        } 
+        p.next = newNode(arr[i]); 
+        p = p.next; 
+    } 
+
+    // Head of the updated linked list 
+    head = reverse(head, null); 
+
+    // Printing the reversed linked list 
+    printLinkedList(head); 
+} 
+}  
+
+// This code is contributed by PrinciRaj1992 
+
+```
+
+## 蟒蛇
+
+```
+
+# Python implementation of the approach  
+
+# Node of a linked list  
+class Node:  
+    def __init__(self, next = None, data = None):  
+        self.next = next
+        self.data = data  
+
+# Function to create a new node 
+def newNode( d): 
+
+    newnode = Node() 
+    newnode.data = d 
+    newnode.next = None
+    return newnode 
+
+# Recursive function to reverse the consecutive 
+# even nodes of the linked list 
+def reverse(head, prev): 
+
+    # Base case 
+    if (head == None): 
+        return None
+
+    temp = None
+    curr = None
+    curr = head 
+
+    # Reversing nodes until curr node's value 
+    # turn odd or Linked list is fully traversed 
+    while (curr != None and curr.data % 2 == 0) : 
+        temp = curr.next
+        curr.next = prev 
+        prev = curr 
+        curr = temp 
+
+    # If elements were reversed then head 
+    # pointer needs to be changed 
+    if (curr != head) : 
+
+        head.next = curr 
+
+        # Recur for the remaining linked list 
+        curr = reverse(curr, None) 
+        return prev 
+
+    # Simply iterate over the odd value nodes 
+    else: 
+
+        head.next = reverse(head.next, head) 
+        return head 
+
+# Utility function to print the 
+# contents of the linked list 
+def printLinkedList(head): 
+
+    while (head != None): 
+
+        print(head.data ,end= " ") 
+        head = head.next
+
+# Driver code 
+arr = [ 1, 2, 3, 3, 4, 6, 8, 5 ] 
+n = len(arr) 
+
+head = None
+p = Node() 
+
+i = 0
+
+# Constructing linked list 
+while ( i < n ): 
+
+    if (head == None): 
+
+        p = newNode(arr[i]) 
+        head = p 
+    else: 
+        p.next = newNode(arr[i]) 
+        p = p.next
+    i = i + 1; 
+
+# Head of the updated linked list 
+head = reverse(head, None) 
+
+# Printing the reversed linked list 
+printLinkedList(head) 
+
+# This code is contributed by Arnab Kundu 
+
+```
+
+## C＃
+
+```
+
+// C# implementation of the above approach 
+using System; 
+
+class GFG 
+{ 
+
+// Structure of a node of the linked list 
+public class node 
+{ 
+    public int data; 
+    public node next; 
+}; 
+
+// Function to create a new node 
+static node newNode(int d) 
+{ 
+    node newnode = new node(); 
+    newnode.data = d; 
+    newnode.next = null; 
+    return newnode; 
+} 
+
+// Recursive function to reverse the consecutive 
+// even nodes of the linked list 
+static node reverse(node head, node prev) 
+{ 
+
+    // Base case 
+    if (head == null) 
+        return null; 
+
+    node temp; 
+    node curr; 
+    curr = head; 
+
+    // Reversing nodes until curr node's value 
+    // turn odd or Linked list is fully traversed 
+    while (curr != null && curr.data % 2 == 0)  
+    { 
+        temp = curr.next; 
+        curr.next = prev; 
+        prev = curr; 
+        curr = temp; 
+    } 
+
+    // If elements were reversed then head 
+    // pointer needs to be changed 
+    if (curr != head)  
+    { 
+        head.next = curr; 
+
+        // Recur for the remaining linked list 
+        curr = reverse(curr, null); 
+        return prev; 
+    } 
+
+    // Simply iterate over the odd value nodes 
+    else
+    { 
+        head.next = reverse(head.next, head); 
+        return head; 
+    } 
+} 
+
+// Utility function to print the 
+// contents of the linked list 
+static void printLinkedList(node head) 
+{ 
+    while (head != null) 
+    { 
+        Console.Write(head.data + " "); 
+        head = head.next; 
+    } 
+} 
+
+// Driver code 
+public static void Main(String[] args) 
+{ 
+    int []arr = { 1, 2, 3, 3, 4, 6, 8, 5 }; 
+    int n = arr.Length; 
+
+    node head = null; 
+    node p = new node(); 
+
+    // Constructing linked list 
+    for (int i = 0; i < n; i++) 
+    { 
+        if (head == null)  
+        { 
+            p = newNode(arr[i]); 
+            head = p; 
+            continue; 
+        } 
+        p.next = newNode(arr[i]); 
+        p = p.next; 
+    } 
+
+    // Head of the updated linked list 
+    head = reverse(head, null); 
+
+    // Printing the reversed linked list 
+    printLinkedList(head); 
+} 
+} 
+
+// This code is contributed by PrinciRaj1992 
+
+```
+
+**Output:**
+
+```
+1 2 3 3 8 6 4 5
+
+```
+
+**时间复杂度：** O（N）
+**空间复杂度：** O（1）
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

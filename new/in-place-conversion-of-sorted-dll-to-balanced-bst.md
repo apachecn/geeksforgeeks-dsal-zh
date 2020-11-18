@@ -61,17 +61,484 @@ Output: A Balanced BST
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+/* A Doubly Linked List node that 
+will also be used as a tree node */
+class Node  
+{  
+    public: 
+    int data;  
 
-*链接*
-*亮度_4*
-*代码*
+    // For tree, next pointer can be 
+    // used as right subtree pointer  
+    Node* next;  
 
-| `#include <bits/stdc++.h>``using` `namespace` `std;``/* A Doubly Linked List node that``will also be used as a tree node */``class` `Node ``{ ` `public` `:` `int` `data; ` `// For tree, next pointer can be` `// used as right subtree pointer ` `Node* next; ` `// For tree, prev pointer can be` `// used as left subtree pointer ` `Node* prev; ``}; ``// A utility function to count nodes in a Linked List ``int` `countNodes(Node *head); ``Node* sortedListToBSTRecur(Node **head_ref,` `int` `n); ``/* This function counts the number of ``nodes in Linked List and then calls ``sortedListToBSTRecur() to construct BST */``Node* sortedListToBST(Node *head) `[HT G339] `{ ` `/*Count the number of nodes in Linked List */` `int` `n = countNodes(head); ` `/* Construct BST */` `return` `sortedListToBSTRecur(&head, n); ``} ``/* The main function that constructs ``balanced BST and returns root of it. ``head_ref --> Pointer to pointer to``head node of Doubly linked list ``n --> No. of nodes in the Doubly Linked List */``Node* sortedListToBSTRecur(Node **head_ref,` `int` `n) ``{ ` `/* Base Case */` `if` `(n <= 0) ` `return` `NULL; ` `/* Recursively construct the left subtree */` `Node *left = sortedListToBSTRecur(head_ref, n/2); ` `/* head_ref now refers to middle node,` ] `make middle node as root of BST*/` `Node *root = *head_ref; ` `// Set pointer to left subtree `[H TG90] `root->prev = left; ` `/* Change head pointer of Linked List` `for parent recursive calls */` `*head_ref = (*head_ref)->next; ` `/* Recursively construct the right ` `subtree and link it with root ` `The number of nodes in right subtree`]  `is total nodes - nodes in ` `left subtree - 1 (for root) */` `root->next = sortedListToBSTRecur(head_ref, n-n/2-1); ` `return` `root; ``} ``/* UTILITY FUNCTIONS */``/* A utility function that returns ``count of nodes in a given Linked List */``int` `countNodes(Node *head) ``{ ` `int` `count = 0; ` `Node *temp = head; ` `while` `(temp) ` `{ ` `temp = temp->next; ` `count++; ` `} ` `return` `count; ``} ``/* Function to insert a node at ``the beginging of the Doubly Linked List */``void` `push(Node** head_ref,` `int` `new_data) ``{ ` `/* allocate node */` `Node* new_node =` `new` `Node();` `/* put in the data */` `new_node->data = new_data; ` `/* since we are adding at the beginning, ` `prev is always NULL */` ] `new_node->prev = NULL; ` [ `/* link the old list off the new node */` `new_node->next = (*head_ref); ` `/* change prev of head node to new node */` `if` `((*head_ref) != NULL) ` `(*head_ref)->prev = new_node ; `[HTG4 95]  `/* move the head to point to the new node */` `(*head_ref) = new_node; ``} `的`/* Function to print nodes in a given linked list */``void` `printList(Node *node) ``{ ` `while` `(node!=NULL) ` `{ ` `cout<<node->data<<` `" "` `; ` `node = node->next; ` `} `[`} ``/* A utility function to print``preorder traversal of BST */``void` `preOrder(Node* node) ``{ ` `if` `(node == NULL) ` `return` `; ` `cout<<node->data<<` `" "` `; ` `preOrder(node->prev); ` `preOrder(node->next); ``} `[HT G229]`/* Driver code*/``int` `main() ``{ ` `/* Start with the empty list */` `Node* head = NULL; ` `/* Let us create a sorted linked list to test the functions ` `Created linked list will be 7->6->5->4->3->2->1 */` `push(&head, 7); ` `push(&head, 6); ` `push(&head, 5); ` `push(&head, 4); ` `push(&head, 3); ` `push(&head, 2); ` `push(&head, 1); ` `cout<<` `"Given Linked List\n"` `; ` `printList(head); ` `/* Convert List to BST */` `Node *root = sortedListToBST(head); ` `cout<<`​​ `"\nPreOrder Traversal of constructed BST \n "` `; ` `preOrder(root); `[H TG276] `return` `0; ``} ``// This code is contributed by rathbhupendra` |
+    // For tree, prev pointer can be 
+    // used as left subtree pointer  
+    Node* prev;  
+};  
 
-*chevron_right**filter_none*
+// A utility function to count nodes in a Linked List  
+int countNodes(Node *head);  
+
+Node* sortedListToBSTRecur(Node **head_ref, int n);  
+
+/* This function counts the number of  
+nodes in Linked List and then calls  
+sortedListToBSTRecur() to construct BST */
+Node* sortedListToBST(Node *head)  
+{  
+    /*Count the number of nodes in Linked List */
+    int n = countNodes(head);  
+
+    /* Construct BST */
+    return sortedListToBSTRecur(&head, n);  
+}  
+
+/* The main function that constructs  
+balanced BST and returns root of it.  
+head_ref --> Pointer to pointer to 
+head node of Doubly linked list  
+n --> No. of nodes in the Doubly Linked List */
+Node* sortedListToBSTRecur(Node **head_ref, int n)  
+{  
+    /* Base Case */
+    if (n <= 0)  
+        return NULL;  
+
+    /* Recursively construct the left subtree */
+    Node *left = sortedListToBSTRecur(head_ref, n/2);  
+
+    /* head_ref now refers to middle node, 
+    make middle node as root of BST*/
+    Node *root = *head_ref;  
+
+    // Set pointer to left subtree  
+    root->prev = left;  
+
+    /* Change head pointer of Linked List 
+    for parent recursive calls */
+    *head_ref = (*head_ref)->next;  
+
+    /* Recursively construct the right  
+    subtree and link it with root  
+    The number of nodes in right subtree 
+    is total nodes - nodes in  
+    left subtree - 1 (for root) */
+    root->next = sortedListToBSTRecur(head_ref, n-n/2-1);  
+
+    return root;  
+}  
+
+/* UTILITY FUNCTIONS */
+/* A utility function that returns  
+count of nodes in a given Linked List */
+int countNodes(Node *head)  
+{  
+    int count = 0;  
+    Node *temp = head;  
+    while(temp)  
+    {  
+        temp = temp->next;  
+        count++;  
+    }  
+    return count;  
+}  
+
+/* Function to insert a node at  
+the beginging of the Doubly Linked List */
+void push(Node** head_ref, int new_data)  
+{  
+    /* allocate node */
+    Node* new_node = new Node(); 
+
+    /* put in the data */
+    new_node->data = new_data;  
+
+    /* since we are adding at the beginning,  
+    prev is always NULL */
+    new_node->prev = NULL;  
+
+    /* link the old list off the new node */
+    new_node->next = (*head_ref);  
+
+    /* change prev of head node to new node */
+    if((*head_ref) != NULL)  
+    (*head_ref)->prev = new_node ;  
+
+    /* move the head to point to the new node */
+    (*head_ref) = new_node;  
+}  
+
+/* Function to print nodes in a given linked list */
+void printList(Node *node)  
+{  
+    while (node!=NULL)  
+    {  
+        cout<<node->data<<" ";  
+        node = node->next;  
+    }  
+}  
+
+/* A utility function to print 
+preorder traversal of BST */
+void preOrder(Node* node)  
+{  
+    if (node == NULL)  
+        return;  
+    cout<<node->data<<" ";  
+    preOrder(node->prev);  
+    preOrder(node->next);  
+}  
+
+/* Driver code*/
+int main()  
+{  
+    /* Start with the empty list */
+    Node* head = NULL;  
+
+    /* Let us create a sorted linked list to test the functions  
+    Created linked list will be 7->6->5->4->3->2->1 */
+    push(&head, 7);  
+    push(&head, 6);  
+    push(&head, 5);  
+    push(&head, 4);  
+    push(&head, 3);  
+    push(&head, 2);  
+    push(&head, 1);  
+
+    cout<<"Given Linked List\n";  
+    printList(head);  
+
+    /* Convert List to BST */
+    Node *root = sortedListToBST(head);  
+    cout<<"\nPreOrder Traversal of constructed BST \n ";  
+    preOrder(root);  
+
+    return 0;  
+}  
+
+// This code is contributed by rathbhupendra 
+
+```
+
+## C
+
+```
+
+#include<stdio.h> 
+#include<stdlib.h> 
+
+/* A Doubly Linked List node that will also be used as a tree node */
+struct Node 
+{ 
+    int data; 
+
+    // For tree, next pointer can be used as right subtree pointer 
+    struct Node* next; 
+
+    // For tree, prev pointer can be used as left subtree pointer 
+    struct Node* prev; 
+}; 
+
+// A utility function to count nodes in a Linked List 
+int countNodes(struct Node *head); 
+
+struct Node* sortedListToBSTRecur(struct Node **head_ref, int n); 
+
+/* This function counts the number of nodes in Linked List and then calls 
+   sortedListToBSTRecur() to construct BST */
+struct Node* sortedListToBST(struct Node *head) 
+{ 
+    /*Count the number of nodes in Linked List */
+    int n = countNodes(head); 
+
+    /* Construct BST */
+    return sortedListToBSTRecur(&head, n); 
+} 
+
+/* The main function that constructs balanced BST and returns root of it. 
+       head_ref -->  Pointer to pointer to head node of Doubly linked list 
+       n  --> No. of nodes in the Doubly Linked List */
+struct Node* sortedListToBSTRecur(struct Node **head_ref, int n) 
+{ 
+    /* Base Case */
+    if (n <= 0) 
+        return NULL; 
+
+    /* Recursively construct the left subtree */
+    struct Node *left = sortedListToBSTRecur(head_ref, n/2); 
+
+    /* head_ref now refers to middle node, make middle node as root of BST*/
+    struct Node *root = *head_ref; 
+
+    // Set pointer to left subtree 
+    root->prev = left; 
+
+    /* Change head pointer of Linked List for parent recursive calls */
+    *head_ref = (*head_ref)->next; 
+
+    /* Recursively construct the right subtree and link it with root 
+      The number of nodes in right subtree  is total nodes - nodes in 
+      left subtree - 1 (for root) */
+    root->next = sortedListToBSTRecur(head_ref, n-n/2-1); 
+
+    return root; 
+} 
+
+/* UTILITY FUNCTIONS */
+/* A utility function that returns count of nodes in a given Linked List */
+int countNodes(struct Node *head) 
+{ 
+    int count = 0; 
+    struct Node *temp = head; 
+    while(temp) 
+    { 
+        temp = temp->next; 
+        count++; 
+    } 
+    return count; 
+} 
+
+/* Function to insert a node at the beginging of the Doubly Linked List */
+void push(struct Node** head_ref, int new_data) 
+{ 
+    /* allocate node */
+    struct Node* new_node = 
+            (struct Node*) malloc(sizeof(struct Node)); 
+
+    /* put in the data  */
+    new_node->data  = new_data; 
+
+    /* since we are adding at the beginning, 
+      prev is always NULL */
+    new_node->prev = NULL; 
+
+    /* link the old list off the new node */
+    new_node->next = (*head_ref); 
+
+    /* change prev of head node to new node */
+    if((*head_ref) !=  NULL) 
+      (*head_ref)->prev = new_node ; 
+
+    /* move the head to point to the new node */
+    (*head_ref)    = new_node; 
+} 
+
+/* Function to print nodes in a given linked list */
+void printList(struct Node *node) 
+{ 
+    while (node!=NULL) 
+    { 
+        printf("%d ", node->data); 
+        node = node->next; 
+    } 
+} 
+
+/* A utility function to print preorder traversal of BST */
+void preOrder(struct Node* node) 
+{ 
+    if (node == NULL) 
+        return; 
+    printf("%d ", node->data); 
+    preOrder(node->prev); 
+    preOrder(node->next); 
+} 
+
+/* Driver program to test above functions*/
+int main() 
+{ 
+    /* Start with the empty list */
+    struct Node* head = NULL; 
+
+    /* Let us create a sorted linked list to test the functions 
+     Created linked list will be 7->6->5->4->3->2->1 */
+    push(&head, 7); 
+    push(&head, 6); 
+    push(&head, 5); 
+    push(&head, 4); 
+    push(&head, 3); 
+    push(&head, 2); 
+    push(&head, 1); 
+
+    printf("Given Linked List\n"); 
+    printList(head); 
+
+    /* Convert List to BST */
+    struct Node *root = sortedListToBST(head); 
+    printf("\n PreOrder Traversal of constructed BST \n "); 
+    preOrder(root); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+class Node 
+{ 
+    int data; 
+    Node next, prev; 
+
+    Node(int d) 
+    { 
+        data = d; 
+        next = prev = null; 
+    } 
+} 
+
+class LinkedList 
+{ 
+    Node head; 
+
+    /* This function counts the number of nodes in Linked List 
+       and then calls sortedListToBSTRecur() to construct BST */
+    Node sortedListToBST() 
+    { 
+        /*Count the number of nodes in Linked List */
+        int n = countNodes(head); 
+
+        /* Construct BST */
+        return sortedListToBSTRecur(n); 
+    } 
+
+    /* The main function that constructs balanced BST and 
+       returns root of it. 
+       n  --> No. of nodes in the Doubly Linked List */
+    Node sortedListToBSTRecur(int n) 
+    { 
+        /* Base Case */
+        if (n <= 0) 
+            return null; 
+
+        /* Recursively construct the left subtree */
+        Node left = sortedListToBSTRecur(n / 2); 
+
+        /* head_ref now refers to middle node, 
+           make middle node as root of BST*/
+        Node root = head; 
+
+        // Set pointer to left subtree 
+        root.prev = left; 
+
+        /* Change head pointer of Linked List for parent 
+           recursive calls */
+        head = head.next; 
+
+        /* Recursively construct the right subtree and link it 
+           with root. The number of nodes in right subtree  is 
+           total nodes - nodes in left subtree - 1 (for root) */
+        root.next = sortedListToBSTRecur(n - n / 2 - 1); 
+
+        return root; 
+    } 
+
+    /* UTILITY FUNCTIONS */
+    /* A utility function that returns count of nodes in a 
+       given Linked List */
+    int countNodes(Node head) 
+    { 
+        int count = 0; 
+        Node temp = head; 
+        while (temp != null) 
+        { 
+            temp = temp.next; 
+            count++; 
+        } 
+        return count; 
+    } 
+
+    /* Function to insert a node at the beginging of 
+       the Doubly Linked List */
+    void push(int new_data) 
+    { 
+        /* allocate node */
+        Node new_node = new Node(new_data); 
+
+        /* since we are adding at the beginning, 
+           prev is always NULL */
+        new_node.prev = null; 
+
+        /* link the old list off the new node */
+        new_node.next = head; 
+
+        /* change prev of head node to new node */
+        if (head != null) 
+            head.prev = new_node; 
+
+        /* move the head to point to the new node */
+        head = new_node; 
+    } 
+
+    /* Function to print nodes in a given linked list */
+    void printList() 
+    { 
+        Node node = head; 
+        while (node != null) 
+        { 
+            System.out.print(node.data + " "); 
+            node = node.next; 
+        } 
+    } 
+
+    /* A utility function to print preorder traversal of BST */
+    void preOrder(Node node) 
+    { 
+        if (node == null) 
+            return; 
+        System.out.print(node.data + " "); 
+        preOrder(node.prev); 
+        preOrder(node.next); 
+    } 
+
+    /* Drier program to test above functions */
+    public static void main(String[] args) 
+    { 
+        LinkedList llist = new LinkedList(); 
+
+        /* Let us create a sorted linked list to test the functions 
+           Created linked list will be 7->6->5->4->3->2->1 */
+        llist.push(7); 
+        llist.push(6); 
+        llist.push(5); 
+        llist.push(4); 
+        llist.push(3); 
+        llist.push(2); 
+        llist.push(1); 
+
+        System.out.println("Given Linked List "); 
+        llist.printList(); 
+
+        /* Convert List to BST */
+        Node root = llist.sortedListToBST(); 
+        System.out.println(""); 
+        System.out.println("Pre-Order Traversal of constructed BST "); 
+        llist.preOrder(root); 
+    } 
+} 
+// This code has been contributed by Mayank Jaiswal(mayank_24) 
+
+```
+
+Output:
+
+```
+Given Linked List 
+1 2 3 4 5 6 7 
+Pre-Order Traversal of constructed BST 
+4 2 1 3 6 5 7 
+
+```
+
+时间复杂度：O（n）
+
+如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

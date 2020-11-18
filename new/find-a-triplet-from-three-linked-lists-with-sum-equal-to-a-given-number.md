@@ -15,17 +15,572 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to find a triplet  
+// from three linked lists with  
+// sum equal to a given number  
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+/* Link list node */
+class Node  
+{  
+    public: 
+    int data;  
+    Node* next;  
+};  
 
-*链接*
-*亮度_4*
-*代码*
+/* A utility function to insert  
+a node at the beginning of a  
+linked list*/
+void push (Node** head_ref, int new_data)  
+{  
+    /* allocate node */
+    Node* new_node = new Node(); 
 
-| `// C++ program to find a triplet ``// from three linked lists with ``// sum equal to a given number ``#include <bits/stdc++.h>``using` `namespace` `std;``/* Link list node */``class` `Node ``{ ` `public` `:` `int` `data; ` `Node* next; ``}; ``/* A utility function to insert ``a node at the beginning of a ``linked list*/``void` `push (Node** head_ref,` `int` `new_data) ``{ ` `/* allocate node */` `Node* new_node =` `new` `Node();` `/* put in the data */` `new_node->data = new_data; ` `/* link the old list off the new node */` `new_node->next = (*head_ref); ` [ `/* move the head to point to the new node */`​​ `(*head_ref) = new_node; ``} ``/* A function to check if there are three elements in a, b ``and c whose sum is equal to givenNumber. The function ``assumes that the list b is sorted in ascending order ``and c is sorted in descending order. */``bool` `isSumSorted(Node *headA, Node *headB, ` `Node *headC,` `int` `givenNumber) ``{ ` `Node *a = headA; ` ] `// Traverse through all nodes of a ` `while` `(a != NULL) ` `{ ` `Node *b = headB; ` `Node *c = headC; ` `// For every node of list a, prick two nodes ` `// from lists b abd c ` `while` `(b != NULL && c != NULL) ` `{ ` `// If this a triplet with given sum, print ` `// it and return true ` `int` `sum = a->data + b->data + c->data; ` `if` `(sum == givenNumber) ` `{ ` `cout <<` `"Triplet Found: "` `<< a->data <<` `" "` `<< ` `b->data <<` `" "` `<< c->data; ` `return` `true` `; ` `} ` `// If sum of this triplet is smaller, look for ` `// greater values in b ` `else` `if` `(sum < givenNumber) ` `b = b->next; ` `else` `// If sum is greater, look for smaller values in c ` `c = c->next; ` `} ` `a = a->next;` `// Move ahead in list a ` `} ` `cout <<` `"No such triplet"` `; ` `return` `false` `; ``} ` [HT G362] [`/* Driver code*/``int` `main() ``{ ` `/* Start with the empty list */` `Node* headA = NULL; ` `Node* headB = NULL; ` `Node* headC = NULL; ` `/*create a linked list 'a' 10->15->5->20 */` `push (&headA, 20); ` `push (&headA, 4); ` `push (&headA, 15); ` `push (&headA, 10); ` `/*create a sorted linked list 'b' 2->4->9->10 */` `push (&headB, 10); ` `push (&headB, 9); ` `push (&headB, 4); ` `push (&headB, 2); ` `/*create another sorted `]  `linked list 'c' 8->4->2->1 */` `push (&headC, 1); ` `push (&headC, 2); ` [H TG195] `push (&headC, 8); ` `int` `givenNumber = 25; ` `isSumSorted (headA, headB, headC, givenNumber); ` `return` `0; ``} ` ] [`// This code is contributed by rathbhupendra` |
+    /* put in the data */
+    new_node->data = new_data;  
 
-*chevron_right**filter_none*
+    /* link the old list off the new node */
+    new_node->next = (*head_ref);  
+
+    /* move the head to point to the new node */
+    (*head_ref) = new_node;  
+}  
+
+/* A function to check if there are three elements in a, b  
+and c whose sum is equal to givenNumber. The function  
+assumes that the list b is sorted in ascending order  
+and c is sorted in descending order. */
+bool isSumSorted(Node *headA, Node *headB,  
+                Node *headC, int givenNumber)  
+{  
+    Node *a = headA;  
+
+    // Traverse through all nodes of a  
+    while (a != NULL)  
+    {  
+        Node *b = headB;  
+        Node *c = headC;  
+
+        // For every node of list a, prick two nodes  
+        // from lists b abd c  
+        while (b != NULL && c != NULL)  
+        {  
+            // If this a triplet with given sum, print  
+            // it and return true  
+            int sum = a->data + b->data + c->data;  
+            if (sum == givenNumber)  
+            {  
+            cout << "Triplet Found: " << a->data << " " <<  
+                                b->data << " " << c->data;  
+            return true;  
+            }  
+
+            // If sum of this triplet is smaller, look for  
+            // greater values in b  
+            else if (sum < givenNumber)  
+                b = b->next;  
+            else // If sum is greater, look for smaller values in c  
+                c = c->next;  
+        }  
+        a = a->next; // Move ahead in list a  
+    }  
+
+    cout << "No such triplet";  
+    return false;  
+}  
+
+/* Driver code*/
+int main()  
+{  
+    /* Start with the empty list */
+    Node* headA = NULL;  
+    Node* headB = NULL;  
+    Node* headC = NULL;  
+
+    /*create a linked list 'a' 10->15->5->20 */
+    push (&headA, 20);  
+    push (&headA, 4);  
+    push (&headA, 15);  
+    push (&headA, 10);  
+
+    /*create a sorted linked list 'b' 2->4->9->10 */
+    push (&headB, 10);  
+    push (&headB, 9);  
+    push (&headB, 4);  
+    push (&headB, 2);  
+
+    /*create another sorted  
+    linked list 'c' 8->4->2->1 */
+    push (&headC, 1);  
+    push (&headC, 2);  
+    push (&headC, 4);  
+    push (&headC, 8);  
+
+    int givenNumber = 25;  
+
+    isSumSorted (headA, headB, headC, givenNumber);  
+
+    return 0;  
+}  
+
+// This code is contributed by rathbhupendra 
+
+```
+
+## C
+
+```
+
+// C program to find a triplet from three linked lists with 
+// sum equal to a given number 
+#include<stdio.h> 
+#include<stdlib.h> 
+#include<stdbool.h> 
+
+/* Link list node */
+struct Node 
+{ 
+    int data; 
+    struct Node* next; 
+}; 
+
+/* A utility function to insert a node at the beginning of a  
+   linked list*/
+void push (struct Node** head_ref, int new_data) 
+{ 
+    /* allocate node */
+    struct Node* new_node = 
+        (struct Node*) malloc(sizeof(struct Node)); 
+
+    /* put in the data */
+    new_node->data = new_data; 
+
+    /* link the old list off the new node */
+    new_node->next = (*head_ref); 
+
+    /* move the head to point to the new node */
+    (*head_ref) = new_node; 
+} 
+
+/* A function to chech if there are three elements in a, b  
+   and c whose sum is equal to givenNumber.  The function  
+   assumes that the list b is sorted in ascending order  
+   and c is sorted in descending order. */
+bool isSumSorted(struct Node *headA, struct Node *headB,  
+                 struct Node *headC, int givenNumber) 
+{ 
+    struct Node *a = headA; 
+
+    // Traverse through all nodes of a 
+    while (a != NULL) 
+    { 
+        struct Node *b = headB; 
+        struct Node *c = headC; 
+
+        // For every node of list a, prick two nodes 
+        // from lists b abd c 
+        while (b != NULL && c != NULL) 
+        { 
+            // If this a triplet with given sum, print 
+            // it and return true 
+            int sum = a->data + b->data + c->data; 
+            if (sum == givenNumber) 
+            { 
+               printf ("Triplet Found: %d %d %d ", a->data, 
+                                         b->data, c->data); 
+               return true; 
+            } 
+
+            // If sum of this triplet is smaller, look for 
+            // greater values in b 
+            else if (sum < givenNumber) 
+                b = b->next; 
+            else // If sum is greater, look for smaller values in c 
+                c = c->next; 
+        } 
+        a = a->next;  // Move ahead in list a 
+    } 
+
+    printf ("No such triplet"); 
+    return false; 
+} 
+
+/* Driver program to test above function*/
+int main() 
+{ 
+    /* Start with the empty list */
+    struct Node* headA = NULL; 
+    struct Node* headB = NULL; 
+    struct Node* headC = NULL; 
+
+    /*create a linked list 'a' 10->15->5->20 */
+    push (&headA, 20); 
+    push (&headA, 4); 
+    push (&headA, 15); 
+    push (&headA, 10); 
+
+    /*create a sorted linked list 'b' 2->4->9->10 */
+    push (&headB, 10); 
+    push (&headB, 9); 
+    push (&headB, 4); 
+    push (&headB, 2); 
+
+    /*create another sorted linked list 'c' 8->4->2->1 */
+    push (&headC, 1); 
+    push (&headC, 2); 
+    push (&headC, 4); 
+    push (&headC, 8); 
+
+    int givenNumber = 25; 
+
+    isSumSorted (headA, headB, headC, givenNumber); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to find a triplet from three linked lists with 
+// sum equal to a given number 
+class LinkedList 
+{ 
+    Node head;  // head of list 
+
+    /* Linked list Node*/
+    class Node 
+    { 
+        int data; 
+        Node next; 
+        Node(int d) {data = d; next = null; } 
+    } 
+
+    /* A function to chech if there are three elements in a, b 
+      and c whose sum is equal to givenNumber.  The function 
+      assumes that the list b is sorted in ascending order and 
+      c is sorted in descending order. */
+   boolean isSumSorted(LinkedList la, LinkedList lb, LinkedList lc, 
+                       int givenNumber) 
+   { 
+      Node a = la.head; 
+
+      // Traverse all nodes of la 
+      while (a != null) 
+      { 
+          Node b = lb.head; 
+          Node c = lc.head; 
+
+          // for every node in la pick 2 nodes from lb and lc 
+          while (b != null && c!=null) 
+          { 
+              int sum = a.data + b.data + c.data; 
+              if (sum == givenNumber) 
+              { 
+                 System.out.println("Triplet found " + a.data + 
+                                     " " + b.data + " " + c.data); 
+                 return true; 
+              } 
+
+              // If sum is smaller then look for greater value of b 
+              else if (sum < givenNumber) 
+                b = b.next; 
+
+              else
+                c = c.next; 
+          } 
+          a = a.next; 
+      } 
+      System.out.println("No Triplet found"); 
+      return false; 
+   } 
+
+    /*  Given a reference (pointer to pointer) to the head 
+       of a list and an int, push a new node on the front 
+       of the list. */
+    void push(int new_data) 
+    { 
+        /* 1 & 2: Allocate the Node & 
+                  Put in the data*/
+        Node new_node = new Node(new_data); 
+
+        /* 3\. Make next of new Node as head */
+        new_node.next = head; 
+
+        /* 4\. Move the head to point to new Node */
+        head = new_node; 
+    } 
+
+     /* Driver program to test above functions */
+    public static void main(String args[]) 
+    { 
+        LinkedList llist1 = new LinkedList(); 
+        LinkedList llist2 = new LinkedList(); 
+        LinkedList llist3 = new LinkedList(); 
+
+        /* Create Linked List llist1 100->15->5->20 */
+        llist1.push(20); 
+        llist1.push(5); 
+        llist1.push(15); 
+        llist1.push(100); 
+
+        /*create a sorted linked list 'b' 2->4->9->10 */
+        llist2.push(10); 
+        llist2.push(9); 
+        llist2.push(4); 
+        llist2.push(2); 
+
+        /*create another sorted linked list 'c' 8->4->2->1 */
+        llist3.push(1); 
+        llist3.push(2); 
+        llist3.push(4); 
+        llist3.push(8); 
+
+        int givenNumber = 25; 
+        llist1.isSumSorted(llist1,llist2,llist3,givenNumber); 
+    } 
+} /* This code is contributed by Rajat Mishra */
+
+```
+
+## 蟒蛇
+
+```
+
+# Python program to find a triplet  
+# from three linked lists with  
+# sum equal to a given number  
+
+# Link list node  
+class Node:  
+    def __init__(self, new_data):  
+        self.data = new_data  
+        self.next = None
+
+# A utility function to insert  
+# a node at the beginning of a  
+# linked list 
+def push ( head_ref, new_data) : 
+
+    # allocate node  
+    new_node = Node(0) 
+
+    # put in the data  
+    new_node.data = new_data  
+
+    # link the old list off the new node  
+    new_node.next = (head_ref)  
+
+    # move the head to point to the new node  
+    (head_ref) = new_node 
+
+    return head_ref; 
+
+# A function to check if there are three elements in a, b  
+# and c whose sum is equal to givenNumber. The function  
+# assumes that the list b is sorted in ascending order  
+# and c is sorted in descending order.  
+def isSumSorted(headA, headB,headC, givenNumber) : 
+
+    a = headA  
+
+    # Traverse through all nodes of a  
+    while (a != None) : 
+
+        b = headB  
+        c = headC  
+
+        # For every node of list a, prick two nodes  
+        # from lists b abd c  
+        while (b != None and c != None) : 
+
+            # If this a triplet with given sum, print  
+            # it and return true  
+            sum = a.data + b.data + c.data  
+            if (sum == givenNumber) : 
+
+                print "Triplet Found: " , a.data , " " , b.data , " " , c.data,  
+                return True
+
+            # If sum of this triplet is smaller, look for  
+            # greater values in b  
+            elif (sum < givenNumber):  
+                b = b.next
+            else :# If sum is greater, look for smaller values in c  
+                c = c.next
+
+        a = a.next # Move ahead in list a  
+
+    print("No such triplet")  
+    return False
+
+# Driver code 
+
+# Start with the empty list  
+headA = None
+headB = None
+headC = None
+
+# create a linked list 'a' 10.15.5.20  
+headA = push (headA, 20)  
+headA = push (headA, 4)  
+headA = push (headA, 15)  
+headA = push (headA, 10)  
+
+# create a sorted linked list 'b' 2.4.9.10  
+headB = push (headB, 10)  
+headB = push (headB, 9)  
+headB = push (headB, 4)  
+headB = push (headB, 2)  
+
+# create another sorted  
+# linked list 'c' 8.4.2.1  
+headC = push (headC, 1)  
+headC = push (headC, 2)  
+headC = push (headC, 4)  
+headC = push (headC, 8)  
+
+givenNumber = 25
+
+isSumSorted (headA, headB, headC, givenNumber)  
+
+# This code is contributed by Arnab Kundu 
+
+```
+
+## C＃
+
+```
+
+// C# program to find a triplet  
+// from three linked lists with 
+// sum equal to a given number 
+using System; 
+
+public class LinkedList 
+{ 
+    public Node head; // head of list 
+
+    /* Linked list Node*/
+    public class Node 
+    { 
+        public int data; 
+        public Node next; 
+        public Node(int d)  
+        { 
+            data = d; next = null; 
+        } 
+    } 
+
+    /* A function to chech if there  
+    are three elements in a, b 
+    and c whose sum is equal to  
+    givenNumber. The function 
+    assumes that the list b is  
+    sorted in ascending order and 
+    c is sorted in descending order. */
+bool isSumSorted(LinkedList la, LinkedList lb,  
+                LinkedList lc, int givenNumber) 
+{ 
+    Node a = la.head; 
+
+    // Traverse all nodes of la 
+    while (a != null) 
+    { 
+        Node b = lb.head; 
+        Node c = lc.head; 
+
+        // for every node in la pick  
+        // 2 nodes from lb and lc 
+        while (b != null && c!=null) 
+        { 
+            int sum = a.data + b.data + c.data; 
+            if (sum == givenNumber) 
+            { 
+                Console.WriteLine("Triplet found " + a.data + 
+                                    " " + b.data + " " + c.data); 
+                return true; 
+            } 
+
+            // If sum is smaller then  
+            // look for greater value of b 
+            else if (sum < givenNumber) 
+                b = b.next; 
+
+            else
+                c = c.next; 
+        } 
+        a = a.next; 
+    } 
+    Console.WriteLine("No Triplet found"); 
+    return false; 
+} 
+
+    /* Given a reference (pointer to pointer) to the head 
+    of a list and an int, push a new node on the front 
+    of the list. */
+    void push(int new_data) 
+    { 
+        /* 1 & 2: Allocate the Node & 
+                Put in the data*/
+        Node new_node = new Node(new_data); 
+
+        /* 3\. Make next of new Node as head */
+        new_node.next = head; 
+
+        /* 4\. Move the head to point to new Node */
+        head = new_node; 
+    } 
+
+    /* Driver code*/
+    public static void Main(String []args) 
+    { 
+        LinkedList llist1 = new LinkedList(); 
+        LinkedList llist2 = new LinkedList(); 
+        LinkedList llist3 = new LinkedList(); 
+
+        /* Create Linked List llist1 100->15->5->20 */
+        llist1.push(20); 
+        llist1.push(5); 
+        llist1.push(15); 
+        llist1.push(100); 
+
+        /*create a sorted linked list 'b' 2->4->9->10 */
+        llist2.push(10); 
+        llist2.push(9); 
+        llist2.push(4); 
+        llist2.push(2); 
+
+        /*create another sorted linked list 'c' 8->4->2->1 */
+        llist3.push(1); 
+        llist3.push(2); 
+        llist3.push(4); 
+        llist3.push(8); 
+
+        int givenNumber = 25; 
+        llist1.isSumSorted(llist1,llist2,llist3,givenNumber); 
+    } 
+} 
+
+// This code contributed by Rajput-Ji 
+
+```
+
+**Output:**
+
+```
+Triplet Found: 15 2 8
+```
+
+**时间复杂度：**链接列表b和c可以使用合并排序以O（nLogn）时间排序（请参阅[此](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)）。 步骤2花费O（n * n）时间。 因此，总体时间复杂度为O（nlogn）+ O（nlogn）+ O（n * n）= O（n * n）。
+
+在这种方法中，链接列表b和c首先被排序，因此它们的原始顺序将丢失。 如果我们要保留b和c的原始顺序，则可以创建b和c的副本。
+
+本文由 **Abhinav Priyadarshi** 编写，并由GeeksforGeeks小组审阅。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

@@ -32,17 +32,438 @@ Output :18->10->20->25->35->NULL
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program for reversal of first k elements 
+// of given linked list 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+/* Link list node */
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+/* Function to reverse first k elements of linked list */
+static void reverseKNodes(struct Node** head_ref, int k) 
+{ 
+    // traverse the linked list until break 
+    // point not meet 
+    struct Node* temp = *head_ref; 
+    int count = 1; 
+    while (count < k) { 
+        temp = temp->next; 
+        count++; 
+    } 
 
-| `// C++ program for reversal of first k elements``// of given linked list``#include <bits/stdc++.h>``using` `namespace` `std;` [`/* Link list node */``struct` `Node {` `int` `data;` `struct` `Node* next;``};``/* Function to reverse first k elements of linked list */``static` `void` `reverseKNodes(` `struct` `Node** head_ref,` `int` `k)``{` `// traverse the linked list until break` `// point not meet` `struct` `Node* temp = *head_ref;` `int` `count = 1;` `while` `(count < k) {` `temp = temp->next;` `count++;` `}` `// backup the joint point` `struct` `Node* joint_point = temp->next;` `temp->next = NULL;` `// break the list` `// reverse the list till break point` `struct` `Node* prev = NULL;` `struct` `Node* current = *head_ref;` `struct` `Node* next;` `while` `(current != NULL) {` `next = current->next;`​​ `current->next = prev;` `prev = current;` `current = next;` `}` `// join both parts of the linked list` `// traverse the list until NULL is not` `// found` `*head_ref = prev;` `current = *head_ref;` `while` `(current->next != NULL)` `current = current->next;` `// joint both part of the list` `current->next = joint_point;``}` [HTG3 04]`/* Function to push a node */``void` `push(` `struct` `Node** head_ref,` `int` `new_data)``{` `struct` `Node* new_node =` `(` `struct` `Node*)` `malloc` `(` `sizeof` `(` `struct` `Node));` `new_node->data = new_data;` `new_node->next = (*head_ref);` `(*head_ref) = new_node;``}``/* Function to print linked list */``void` `printList(` `struct` `Node* head)``{` `struct` `Node* temp = head;` `while` `(temp != NULL) {` `printf` `(` `"%d "` `, temp->data);` `temp = temp->next;` `}``}``/* Driver program to test above function*/`HTG156] `main()``{` `// Create a linked list 1->2->3->4->5` `struct` `Node* head = NULL;` `push(&head, 5);` `push(&head, 4);` `push(&head, 3);` `push(&head, 2);` `push(&head, 1);` `// k should be less than the` `// numbers of nodes` `int` `k = 3;` `cout <<` `"\nGiven list\n"` `;` `printList(head);` `reverseKNodes(&head, k);` `cout <<` `"\nModified list\n"` `;` `printList(head);` [ `return` `0;``}` |
+    // backup the joint point 
+    struct Node* joint_point = temp->next; 
+    temp->next = NULL; // break the list 
 
-*chevron_right**filter_none*
+    // reverse the list till break point 
+    struct Node* prev = NULL; 
+    struct Node* current = *head_ref; 
+    struct Node* next; 
+    while (current != NULL) { 
+        next = current->next; 
+        current->next = prev; 
+        prev = current; 
+        current = next; 
+    } 
+
+    // join both parts of the linked list 
+    // traverse the list until NULL is not 
+    // found 
+    *head_ref = prev; 
+    current = *head_ref; 
+    while (current->next != NULL) 
+        current = current->next; 
+
+    // joint both part of the list 
+    current->next = joint_point; 
+} 
+
+/* Function to push a node */
+void push(struct Node** head_ref, int new_data) 
+{ 
+    struct Node* new_node = 
+          (struct Node*)malloc(sizeof(struct Node)); 
+    new_node->data = new_data; 
+    new_node->next = (*head_ref); 
+    (*head_ref) = new_node; 
+} 
+
+/* Function to print linked list */
+void printList(struct Node* head) 
+{ 
+    struct Node* temp = head; 
+    while (temp != NULL) { 
+        printf("%d ", temp->data); 
+        temp = temp->next; 
+    } 
+} 
+
+/* Driver program to test above function*/
+int main() 
+{ 
+    // Create a linked list 1->2->3->4->5 
+    struct Node* head = NULL; 
+    push(&head, 5); 
+    push(&head, 4); 
+    push(&head, 3); 
+    push(&head, 2); 
+    push(&head, 1); 
+
+    // k should be less than the 
+    // numbers of nodes 
+    int k = 3; 
+
+    cout << "\nGiven list\n"; 
+    printList(head); 
+
+    reverseKNodes(&head, k); 
+
+    cout << "\nModified list\n"; 
+    printList(head); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program for reversal of first k elements  
+// of given linked list  
+class Sol 
+{ 
+
+// Link list node  
+static class Node 
+{  
+    int data;  
+    Node next;  
+};  
+
+// Function to reverse first k elements of linked list  
+static Node reverseKNodes( Node head_ref, int k)  
+{  
+    // traverse the linked list until break  
+    // point not meet  
+    Node temp = head_ref;  
+    int count = 1;  
+    while (count < k) 
+    {  
+        temp = temp.next;  
+        count++;  
+    }  
+
+    // backup the joint point  
+    Node joint_point = temp.next;  
+    temp.next = null; // break the list  
+
+    // reverse the list till break point  
+    Node prev = null;  
+    Node current = head_ref;  
+    Node next;  
+    while (current != null) 
+    {  
+        next = current.next;  
+        current.next = prev;  
+        prev = current;  
+        current = next;  
+    }  
+
+    // join both parts of the linked list  
+    // traverse the list until null is not  
+    // found  
+    head_ref = prev;  
+    current = head_ref;  
+    while (current.next != null)  
+        current = current.next;  
+
+    // joint both part of the list  
+    current.next = joint_point; 
+    return head_ref; 
+}  
+
+// Function to push a node  
+static Node push( Node head_ref, int new_data)  
+{  
+    Node new_node = new Node();  
+    new_node.data = new_data;  
+    new_node.next = (head_ref);  
+    (head_ref) = new_node;  
+    return head_ref; 
+}  
+
+// Function to print linked list  
+static void printList( Node head)  
+{  
+    Node temp = head;  
+    while (temp != null) 
+    {  
+        System.out.printf("%d ", temp.data);  
+        temp = temp.next;  
+    }  
+}  
+
+// Driver program to test above function 
+public static void main(String args[]) 
+{  
+    // Create a linked list 1.2.3.4.5  
+    Node head = null;  
+    head = push(head, 5);  
+    head = push(head, 4);  
+    head = push(head, 3);  
+    head = push(head, 2);  
+    head = push(head, 1);  
+
+    // k should be less than the  
+    // numbers of nodes  
+    int k = 3;  
+
+    System.out.print("\nGiven list\n");  
+    printList(head);  
+
+    head = reverseKNodes(head, k);  
+
+    System.out.print("\nModified list\n");  
+    printList(head);  
+} 
+} 
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+## 蟒蛇
+
+```
+
+# Python program for reversal of first k elements  
+# of given linked list  
+
+# Node of a linked list  
+class Node:  
+    def __init__(self, next = None, data = None):  
+        self.next = next
+        self.data = data  
+
+# Function to reverse first k elements of linked list  
+def reverseKNodes(head_ref, k) : 
+
+    # traverse the linked list until break  
+    # point not meet  
+    temp = head_ref  
+    count = 1
+    while (count < k): 
+
+        temp = temp.next
+        count = count + 1
+
+    # backup the joint point  
+    joint_point = temp.next
+    temp.next = None # break the list  
+
+    # reverse the list till break point  
+    prev = None
+    current = head_ref  
+    next = None
+    while (current != None): 
+
+        next = current.next
+        current.next = prev  
+        prev = current  
+        current = next
+
+    # join both parts of the linked list  
+    # traverse the list until None is not  
+    # found  
+    head_ref = prev  
+    current = head_ref  
+    while (current.next != None):  
+        current = current.next
+
+    # joint both part of the list  
+    current.next = joint_point 
+    return head_ref 
+
+# Function to push a node  
+def push(head_ref, new_data) : 
+
+    new_node = Node()  
+    new_node.data = new_data  
+    new_node.next = (head_ref)  
+    (head_ref) = new_node  
+    return head_ref 
+
+# Function to print linked list  
+def printList( head) : 
+
+    temp = head  
+    while (temp != None): 
+
+        print(temp.data, end = " ")  
+        temp = temp.next
+
+# Driver program to test above function 
+
+# Create a linked list 1.2.3.4.5  
+head = None
+head = push(head, 5)  
+head = push(head, 4)  
+head = push(head, 3)  
+head = push(head, 2)  
+head = push(head, 1)  
+
+# k should be less than the  
+# numbers of nodes  
+k = 3
+
+print("\nGiven list")  
+printList(head)  
+
+head = reverseKNodes(head, k)  
+
+print("\nModified list")  
+printList(head)  
+
+# This code is contributed by Arnab Kundu 
+
+```
+
+## C＃
+
+```
+
+// C# program for reversal of first k elements  
+// of given linked list  
+using System; 
+
+class GFG 
+{ 
+
+// Link list node  
+public class Node 
+{  
+    public int data;  
+    public Node next;  
+};  
+
+// Function to reverse first k elements of linked list  
+static Node reverseKNodes(Node head_ref, int k)  
+{  
+
+    // traverse the linked list until break  
+    // point not meet  
+    Node temp = head_ref;  
+    int count = 1;  
+    while (count < k) 
+    {  
+        temp = temp.next;  
+        count++;  
+    }  
+
+    // backup the joint point  
+    Node joint_point = temp.next;  
+    temp.next = null; // break the list  
+
+    // reverse the list till break point  
+    Node prev = null;  
+    Node current = head_ref;  
+    Node next;  
+    while (current != null) 
+    {  
+        next = current.next;  
+        current.next = prev;  
+        prev = current;  
+        current = next;  
+    }  
+
+    // join both parts of the linked list  
+    // traverse the list until null is not  
+    // found  
+    head_ref = prev;  
+    current = head_ref;  
+    while (current.next != null)  
+        current = current.next;  
+
+    // joint both part of the list  
+    current.next = joint_point; 
+    return head_ref; 
+}  
+
+// Function to push a node  
+static Node push( Node head_ref, int new_data)  
+{  
+    Node new_node = new Node();  
+    new_node.data = new_data;  
+    new_node.next = (head_ref);  
+    (head_ref) = new_node;  
+    return head_ref; 
+}  
+
+// Function to print linked list  
+static void printList( Node head)  
+{  
+    Node temp = head;  
+    while (temp != null) 
+    {  
+        Console.Write("{0} ", temp.data);  
+        temp = temp.next;  
+    }  
+}  
+
+// Driver Code 
+public static void Main(String []args) 
+{  
+    // Create a linked list 1.2.3.4.5  
+    Node head = null;  
+    head = push(head, 5);  
+    head = push(head, 4);  
+    head = push(head, 3);  
+    head = push(head, 2);  
+    head = push(head, 1);  
+
+    // k should be less than the  
+    // numbers of nodes  
+    int k = 3;  
+
+    Console.Write("Given list\n");  
+    printList(head);  
+
+    head = reverseKNodes(head, k);  
+
+    Console.Write("\nModified list\n");  
+    printList(head);  
+} 
+} 
+
+// This code is contributed by Princi Singh 
+
+```
+
+**Output:**
+
+```
+Given list
+1 2 3 4 5 
+Modified list
+3 2 1 4 5 
+```
+
+**时间复杂度：** O（n）
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

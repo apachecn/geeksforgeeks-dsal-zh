@@ -26,17 +26,451 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ Program to check if 
+// the Inorder sequence of a 
+// Binary Tree is a palindrome 
 
-*play_arrow*
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*链接*
-*亮度_4*
-*代码*
+// Define node of tree 
+struct node { 
+    char val; 
+    node* left; 
+    node* right; 
+}; 
 
-| `// C++ Program to check if``// the Inorder sequence of a``// Binary Tree is a palindrome``#include <bits/stdc++.h>``using` `namespace` `std;``// Define node of tree``struct` `node {` `char` `val;` `node* left;` `node* right;``};`的`// Function to create the node``node* newnode(` `char` `i)``{` `node* temp = NULL;` `temp =` `new` `node();` `temp->val = i;` `temp->left = NULL;` `temp->right = NULL;` `return` `temp;``}``// Function to convert the tree``// to the double linked list``node* conv_tree(node* root,` `node* shoot)``{` `if` `(root->left != NULL)` `shoot = conv_tree(root->left,` `shoot);` `root->left = shoot;` `if` `(shoot != NULL)` `shoot->right = root;`​​ `shoot = root;` ] `if` `(root->right != NULL)` `shoot = conv_tree(root->right,` `shoot);` `return` `shoot;``}``// Function for checking linked``// list is palindrom or not``int` `checkPalin(node* root)``{` `node* voot = root;` `// Count the nodes` ] `// form the back` `int` `j = 0;` `// Set the pointer at the` `// very first node of the` `// linklist and count the` `// length of the linklist` `while` `(voot->left != NULL) {` `j = j + 1;` `voot = voot->left;` `}` `int` `i = 0;` `while` `(i < j) {` `// Check if the value matches` `if` `(voot->val != root->val)` `return` `0;` `else` `{` `i = i + 1;` `j = j - 1;` `voot = voot->right;` `root = root->left;` `}` `}` `return` `1;``}` ]`// Driver Program``int` `main()``{` `node* root = newnode(` `'b'` `);` `root->left = newnode(` `'b'` `);` `root->right = newnode(` `'a'` `);` `root->left->right = newnode(` `'b'` `);` `root->left->left = newnode(` `'a'` `);` `node* shoot = conv_tree(root, NULL);` `if` `(checkPalin(shoot))` `cout <<` `"True"` `<< endl;` `else` `cout <<` `"False"` `<< endl;``}` |
+// Function to create the node 
+node* newnode(char i) 
+{ 
+    node* temp = NULL; 
+    temp = new node(); 
+    temp->val = i; 
+    temp->left = NULL; 
+    temp->right = NULL; 
+    return temp; 
+} 
 
-*chevron_right**filter_none*
+// Function to convert the tree 
+// to the double linked list 
+node* conv_tree(node* root, 
+                node* shoot) 
+{ 
+    if (root->left != NULL) 
+        shoot = conv_tree(root->left, 
+                          shoot); 
+
+    root->left = shoot; 
+
+    if (shoot != NULL) 
+        shoot->right = root; 
+
+    shoot = root; 
+
+    if (root->right != NULL) 
+        shoot = conv_tree(root->right, 
+                          shoot); 
+
+    return shoot; 
+} 
+
+// Function for checking linked 
+// list is palindrom or not 
+int checkPalin(node* root) 
+{ 
+    node* voot = root; 
+
+    // Count the nodes 
+    // form the back 
+    int j = 0; 
+
+    // Set the pointer at the 
+    // very first node of the 
+    // linklist and count the 
+    // length of the linklist 
+    while (voot->left != NULL) { 
+        j = j + 1; 
+        voot = voot->left; 
+    } 
+    int i = 0; 
+
+    while (i < j) { 
+        // Check if the value matches 
+        if (voot->val != root->val) 
+            return 0; 
+
+        else { 
+            i = i + 1; 
+            j = j - 1; 
+            voot = voot->right; 
+            root = root->left; 
+        } 
+    } 
+
+    return 1; 
+} 
+
+// Driver Program 
+int main() 
+{ 
+    node* root = newnode('b'); 
+    root->left = newnode('b'); 
+    root->right = newnode('a'); 
+    root->left->right = newnode('b'); 
+    root->left->left = newnode('a'); 
+
+    node* shoot = conv_tree(root, NULL); 
+
+    if (checkPalin(shoot)) 
+        cout << "True" << endl; 
+    else
+        cout << "False" << endl; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java Program to check if 
+// the Inorder sequence of a 
+// Binary Tree is a palindrome 
+import java.util.*; 
+class GFG{ 
+
+// Define node of tree 
+static class node 
+{ 
+    char val; 
+    node left; 
+    node right; 
+}; 
+
+// Function to create the node 
+static node newnode(char i) 
+{ 
+    node temp = null; 
+    temp = new node(); 
+    temp.val = i; 
+    temp.left = null; 
+    temp.right = null; 
+    return temp; 
+} 
+
+// Function to convert the tree 
+// to the double linked list 
+static node conv_tree(node root, 
+                      node shoot) 
+{ 
+    if (root.left != null) 
+        shoot = conv_tree(root.left, 
+                          shoot); 
+
+    root.left = shoot; 
+
+    if (shoot != null) 
+        shoot.right = root; 
+
+    shoot = root; 
+
+    if (root.right != null) 
+        shoot = conv_tree(root.right, 
+                          shoot); 
+
+    return shoot; 
+} 
+
+// Function for checking linked 
+// list is palindrom or not 
+static int checkPalin(node root) 
+{ 
+    node voot = root; 
+
+    // Count the nodes 
+    // form the back 
+    int j = 0; 
+
+    // Set the pointer at the 
+    // very first node of the 
+    // linklist and count the 
+    // length of the linklist 
+    while (voot.left != null) 
+    { 
+        j = j + 1; 
+        voot = voot.left; 
+    } 
+    int i = 0; 
+
+    while (i < j)  
+    { 
+        // Check if the value matches 
+        if (voot.val != root.val) 
+            return 0; 
+
+        else 
+        { 
+            i = i + 1; 
+            j = j - 1; 
+            voot = voot.right; 
+            root = root.left; 
+        } 
+    } 
+    return 1; 
+} 
+
+// Driver Code 
+public static void main(String[] args) 
+{ 
+    node root = newnode('b'); 
+    root.left = newnode('b'); 
+    root.right = newnode('a'); 
+    root.left.right = newnode('b'); 
+    root.left.left = newnode('a'); 
+
+    node shoot = conv_tree(root, null); 
+
+    if (checkPalin(shoot) == 1) 
+        System.out.print("True" + "\n"); 
+    else
+        System.out.print("False" + "\n"); 
+} 
+} 
+
+// This code is contributed by 29AjayKumar 
+
+```
+
+## Python3
+
+```
+
+# Python3 program to check if 
+# the Inorder sequence of a 
+# Binary Tree is a palindrome 
+
+# Define node of tree 
+class Node:  
+    def __init__(self,val):  
+
+        self.val = val  
+        self.left = None
+        self.right = None
+
+# Function to create the node 
+def newnode(i): 
+
+    #temp = None; 
+    temp = Node(i); 
+    temp.val = i; 
+    temp.left = None; 
+    temp.right = None; 
+    return temp; 
+
+# Function to convert the tree 
+# to the double linked list 
+def conv_tree(root, shoot): 
+
+    if (root.left != None): 
+        shoot = conv_tree(root.left, shoot); 
+
+    root.left = shoot; 
+
+    if (shoot != None): 
+        shoot.right = root; 
+
+    shoot = root; 
+
+    if (root.right != None): 
+        shoot = conv_tree(root.right, shoot); 
+
+    return shoot; 
+
+# Function for checking linked 
+# list is palindrom or not 
+def checkPalin(root): 
+
+    voot = root; 
+
+    # Count the nodes 
+    # form the back 
+    j = 0; 
+
+    # Set the pointer at the 
+    # very first node of the 
+    # linklist and count the 
+    # length of the linklist 
+    while (voot.left != None):  
+        j = j + 1; 
+        voot = voot.left; 
+
+    i = 0; 
+
+    while (i < j): 
+
+        # Check if the value matches 
+        if (voot.val != root.val): 
+            return 0; 
+        else: 
+            i = i + 1; 
+            j = j - 1; 
+            voot = voot.right; 
+            root = root.left; 
+
+    return 1; 
+
+# Driver code 
+if __name__=='__main__':  
+
+    root = newnode('b'); 
+    root.left = newnode('b'); 
+    root.right = newnode('a'); 
+    root.left.right = newnode('b'); 
+    root.left.left = newnode('a'); 
+
+    shoot = conv_tree(root, None); 
+
+    if (checkPalin(shoot)): 
+        print("True"); 
+    else: 
+        print("False"); 
+
+# This code is contributed by AbhiThakur 
+
+```
+
+## C＃
+
+```
+
+// C# program to check if the inorder   
+// sequence of a Binary Tree is a  
+// palindrome 
+using System; 
+
+class GFG{ 
+
+// Define node of tree 
+class node 
+{ 
+    public char val; 
+    public node left; 
+    public node right; 
+}; 
+
+// Function to create the node 
+static node newnode(char i) 
+{ 
+    node temp = null; 
+    temp = new node(); 
+    temp.val = i; 
+    temp.left = null; 
+    temp.right = null; 
+
+    return temp; 
+} 
+
+// Function to convert the tree 
+// to the double linked list 
+static node conv_tree(node root, 
+                      node shoot) 
+{ 
+    if (root.left != null) 
+        shoot = conv_tree(root.left, 
+                          shoot); 
+
+    root.left = shoot; 
+
+    if (shoot != null) 
+        shoot.right = root; 
+
+    shoot = root; 
+
+    if (root.right != null) 
+        shoot = conv_tree(root.right, 
+                          shoot); 
+
+    return shoot; 
+} 
+
+// Function for checking linked 
+// list is palindrom or not 
+static int checkPalin(node root) 
+{ 
+    node voot = root; 
+
+    // Count the nodes 
+    // form the back 
+    int j = 0; 
+
+    // Set the pointer at the 
+    // very first node of the 
+    // linklist and count the 
+    // length of the linklist 
+    while (voot.left != null) 
+    { 
+        j = j + 1; 
+        voot = voot.left; 
+    } 
+    int i = 0; 
+
+    while (i < j)  
+    { 
+
+        // Check if the value matches 
+        if (voot.val != root.val) 
+            return 0; 
+        else
+        { 
+            i = i + 1; 
+            j = j - 1; 
+            voot = voot.right; 
+            root = root.left; 
+        } 
+    } 
+    return 1; 
+} 
+
+// Driver Code 
+public static void Main(String[] args) 
+{ 
+    node root = newnode('b'); 
+    root.left = newnode('b'); 
+    root.right = newnode('a'); 
+    root.left.right = newnode('b'); 
+    root.left.left = newnode('a'); 
+
+    node shoot = conv_tree(root, null); 
+
+    if (checkPalin(shoot) == 1) 
+        Console.Write("True" + "\n"); 
+    else
+        Console.Write("False" + "\n"); 
+} 
+} 
+
+// This code is contributed by 29AjayKumar 
+
+```
+
+**Output:**
+
+```
+True
+
+```
+
+***时间复杂度：** O（N）
+**辅助空间：** O（1）*
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

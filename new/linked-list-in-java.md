@@ -6,20 +6,40 @@
 
 **示例：**以下实现演示了如何创建和使用链接列表。
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+import java.util.*; 
 
-*play_arrow*
+public class Test { 
 
-*链接*
-*亮度_4*
-*代码*
+    public static void main(String args[]) 
+    { 
+        // Creating object of the 
+        // class linked list 
+        LinkedList<String> ll 
+            = new LinkedList<String>(); 
 
-| `import` `java.util.*;``public` `class` `Test {`]  `public` `static` `void` `main(String args[])` `{` `// Creating object of the` `// class linked list` `LinkedList<String> ll` `=` `new` `LinkedList<String>();` `// Adding elements to the linked list` `ll.add(` `"A"` `);` `ll.add(` `"B"` `);` `ll.addLast(` `"C"` `);` `ll.addFirst(` `"D"` `);` `ll.add(` `2` `,` `"E"` `);` `System.out.println(ll);` `ll.remove(` `"B"` `);` `ll.remove(` `3` `);`[HTG1 16]  `ll.removeFirst();` `ll.removeLast();` `System.out.println(ll);` `}``}` |
+        // Adding elements to the linked list 
+        ll.add("A"); 
+        ll.add("B"); 
+        ll.addLast("C"); 
+        ll.addFirst("D"); 
+        ll.add(2, "E"); 
 
-*chevron_right**filter_none***Output:**
+        System.out.println(ll); 
+
+        ll.remove("B"); 
+        ll.remove(3); 
+        ll.removeFirst(); 
+        ll.removeLast(); 
+
+        System.out.println(ll); 
+    } 
+} 
+
+```
+
+**Output:**
 
 ```
 [D, A, E, B, C]
@@ -36,20 +56,30 @@
 *   **add（Object）：**此方法用于在LinkedList的末尾添加元素。
 *   **add（int index，Object）：**此方法用于在LinkedList中的特定索引处添加元素。
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Java program to add elements  
+// to a LinkedList 
 
-*play_arrow*
+import java.util.*;  
 
-*链接*
-*亮度_4*
-*代码*
+public class GFG {  
 
-| `// Java program to add elements ``// to a LinkedList``import` `java.util.*;` ]`public` `class` `GFG { ` `public` `static` `void` `main(String args[]) ` `{ ` `LinkedList<String> ll =` `new` `LinkedList<>(); ` `ll.add(` `"Geeks"` `); ` `ll.add(` `"Geeks"` `); ` `ll.add(` `1` `,` `"For"` `); ` [ `System.out.println(ll); ` `} ``} `] |
+    public static void main(String args[])  
+    {  
+        LinkedList<String> ll = new LinkedList<>();  
 
-*chevron_right**filter_none***Output:**
+        ll.add("Geeks");  
+        ll.add("Geeks");  
+        ll.add(1, "For");  
+
+        System.out.println(ll);  
+    }  
+}  
+
+```
+
+**Output:**
 
 ```
 [Geeks, For, Geeks]
@@ -58,20 +88,34 @@
 
 **2.更改元素：**添加元素之后，如果要更改元素，可以使用 [set（）方法](https://www.geeksforgeeks.org/linkedlist-set-method-in-java/)来完成。 由于LinkedList已建立索引，因此我们希望更改的元素由该元素的索引引用。 因此，此方法采用索引和需要在该索引处插入的更新元素。
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Java program to change elements  
+// in a LinkedList  
 
-*play_arrow*
+import java.util.*;  
 
-*链接*
-*亮度_4*
-*代码*
+public class GFG {  
 
-| `// Java program to change elements ``// in a LinkedList ``import` `java.util.*; ` ]`public` `class` `GFG { ` `public` `static` `void` `main(String args[]) ` `{ ` `LinkedList<String> ll =` `new` `LinkedList<>(); ` `ll.add(` `"Geeks"` `); ` `ll.add(` `"Geeks"` `); ` `ll.add(` `1` `,` `"Geeks"` `); ` `System.out.println(` `"Initial LinkedList "` `+ ll); ` `ll.set(` `1` `,` `"For"` `); ` `System.out.println(` `"Updated LinkedList "` `+ ll); ` `} ``} ` |
+    public static void main(String args[])  
+    {  
+        LinkedList<String> ll = new LinkedList<>();  
 
-*chevron_right**filter_none***Output:**
+        ll.add("Geeks");  
+        ll.add("Geeks");  
+        ll.add(1, "Geeks");  
+
+        System.out.println("Initial LinkedList " + ll);  
+
+        ll.set(1, "For");  
+
+        System.out.println("Updated LinkedList " + ll);  
+    }  
+}  
+
+```
+
+**Output:**
 
 ```
 Initial LinkedList [Geeks, Geeks, Geeks]
@@ -84,20 +128,41 @@ Updated LinkedList [Geeks, For, Geeks]
 *   **remove（Object）：**此方法仅用于从LinkedList中删除对象。 如果存在多个这样的对象，那么将删除第一次出现的对象。
 *   **remove（int index）：**由于对LinkedList进行了索引，因此此方法采用一个整数值，该值简单地删除存在于LinkedList中该特定索引处的元素。 删除元素之后，所有元素都将移至左侧以填充空间，并且对象的索引将更新。
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Java program to remove elements  
+// in a LinkedList 
 
-*play_arrow*
+import java.util.*;  
 
-*链接*
-*亮度_4*
-*代码*
+public class GFG {  
 
-| `// Java program to remove elements ``// in a LinkedList``import` `java.util.*;` ]`public` `class` `GFG { ` `public` `static` `void` `main(String args[]) ` `{ ` `LinkedList<String> ll =` `new` `LinkedList<>(); ` `ll.add(` `"Geeks"` `); ` `ll.add(` `"Geeks"` `); ` `ll.add(` `1` `,` `"For"` `); ` [ `System.out.println( ` `"Initial LinkedList "` `+ ll); ` `ll.remove(` `1` `); ` `System.out.println( ` `"After the Index Removal "` `+ ll); ` `ll.remove(` `"Geeks"` `); ` `System.out.println( ` `"After the Object Removal "` `+ ll); ` `} ``} ` |
+    public static void main(String args[])  
+    {  
+        LinkedList<String> ll = new LinkedList<>();  
 
-*chevron_right**filter_none***Output:**
+        ll.add("Geeks");  
+        ll.add("Geeks");  
+        ll.add(1, "For");  
+
+        System.out.println(  
+            "Initial LinkedList " + ll);  
+
+        ll.remove(1);  
+
+        System.out.println(  
+            "After the Index Removal " + ll);  
+
+        ll.remove("Geeks");  
+
+        System.out.println(  
+            "After the Object Removal " + ll);  
+    }  
+}  
+
+```
+
+**Output:**
 
 ```
 Initial LinkedList [Geeks, For, Geeks]
@@ -108,20 +173,42 @@ After the Object Removal [Geeks]
 
 **4.迭代LinkedList：**有多种方法可以迭代LinkedList。 最著名的方法是将基本的for循环与 [get（）方法](https://www.geeksforgeeks.org/linkedlist-get-method-in-java/)结合使用，以特定的索引获取元素，并使用高级的for循环。
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Java program to iterate the elements  
+// in an LinkedList 
 
-*play_arrow*
+import java.util.*;  
 
-*链接*
-*亮度_4*
-*代码*
+public class GFG {  
 
-| `// Java program to iterate the elements ``// in an LinkedList``import` `java.util.*; ` ]`public` `class` `GFG { ` `public` `static` `void` `main(String args[]) ` `{ ` `LinkedList<String> ll ` `=` `new` `LinkedList<>(); `  `ll.add(` `"Geeks"` `); ` `ll.add(` `"Geeks"` `); ` `ll.add(` `1` `,` `"For"` `); ` `// Using the Get method and the ` `// for loop ` `for` `(` `int` `i =` `0` `; i < ll.size(); i++) { ` `System.out.print(ll.get(i) +` `" "` `); ``} `，[HTG1 20]  `System.out.println(); ` [ `// Using the for each loop ` `for` `(String str : ll) ` `System.out.print(str +` `" "` `); ` `} ``} ` |
+    public static void main(String args[])  
+    {  
+        LinkedList<String> ll  
+            = new LinkedList<>();  
 
-*chevron_right**filter_none***Output:**
+        ll.add("Geeks");  
+        ll.add("Geeks");  
+        ll.add(1, "For");  
+
+        // Using the Get method and the  
+        // for loop  
+        for (int i = 0; i < ll.size(); i++) {  
+
+            System.out.print(ll.get(i) + " ");  
+        }  
+
+        System.out.println();  
+
+        // Using the for each loop  
+        for (String str : ll)  
+            System.out.print(str + " ");  
+    }  
+}  
+
+```
+
+**Output:**
 
 ```
 Geeks For Geeks 

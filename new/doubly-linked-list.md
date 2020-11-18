@@ -421,17 +421,910 @@ def append(self, new_data):
 
 ## C / C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// A complete working C program to demonstrate all  
+// insertion before a given node  
+#include <stdio.h>  
+#include <stdlib.h>  
 
-*play_arrow*
+// A linked list node  
+struct Node {  
+    int data;  
+    struct Node* next;  
+    struct Node* prev;  
+};  
 
-*链接*
-*亮度_4*
-*代码*
+/* Given a reference (pointer to pointer) to the head of a list  
+and an int, inserts a new node on the front of the list. */
+void push(struct Node** head_ref, int new_data)  
+{  
+    struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));  
 
-| `// A complete working C program to demonstrate all ``// insertion before a given node ``#include <stdio.h> ``#include <stdlib.h> ``// A linked list node ``struct` `Node { ` `int` `data; ` `struct` `Node* next; ` `struct` `Node* prev; ``}; ``/* Given a reference (pointer to pointer) to the head of a list ``and an int, inserts a new node on the front of the list. */``void` `push(` `struct` `Node** head_ref,` `int` `new_data) ``{ ` `struct` `Node* new_node = (` `struct` `Node*)` `malloc` `(` `sizeof` `(` `struct` `Node)); ` `new_node->data = new_data; ` HTG262] `new_node->next = (*head_ref); ` `new_node->prev = NULL; ` `if` `((*head_ref) != NULL) ` `(*head_ref)->prev = new_node; ` `(*head_ref) = new_node; ``} ``/* Given a node as next_node, insert a new node before the given node */``void` `insertBefore(` `struct` `Node** head_ref,` `struct` `Node* next_node,` `int` `new_data) ``{ ` `/*1\. check if the given next_node is NULL */` `if` `(next_node == NULL) { ` `printf` `(` `"the given next node cannot be NULL"` `); ` `return` `; ` `} ` `/* 2\. allocate new node */` `struct` `Node* new_node = (` `struct` `Node*)` `malloc` `(` `sizeof` `(` `struct` `Node)); ` `/* 3\. put in the data */` `new_node->data = new_data; ` [ `/* 4\. Make prev of new node as prev of next_node */` `new_node->prev = next_node->prev; ` HTG316] [H TG317]  `/* 5\. Make the prev of next_node as new_node */` `next_node->prev = new_node; ` `/* 6\. Make next_node as next of new_node */` `new_node->next = next_node; ` `/* 7\. Change next of new_node's previous node */` `if` `(new_node->prev != NULL) ` `new_node->prev->next = new_node; ` `/* 8\. If the prev of new_node is NULL, it will be` `the new head node */` `else` `(*head_ref) = new_node;``} ``// This function prints contents of linked list starting from the given node ``void` `printList(` `Node* node) ``{ ` `struct` `Node* last; ` `printf` `(` `"\nTraversal in forward direction \n"` `); ` `while` `(node != NULL) { ` `printf` `(` `" %d "` `, node->data); ` `last = node; ` `node = node->next; ` `} ` `printf` `(` `"\nTraversal in reverse direction \n"` `); ` `while` `(last != NULL) { ` `printf` `(` `" %d "` `, last->data); ` `last = last->prev; ` `} ``} ``/* Driver program to test above functions*/``int` `main() ``{ ` `/* Start with the empty list */` `struct` `Node* head = NULL; ` `push(&head, 7); ` `push(&head, 1); ` `push(&head, 4); `， `// Insert 8, before 1\. So linked list becomes 4->8->1->7->NULL ` `insertBefore(&head, head->next, 8); ` `printf` `(` `"Created DLL is: "` `); ` `printList(head); ` `getchar` `(); ` `return` `0; ``} ` |
+    new_node->data = new_data;  
 
-*chevron_right**filter_none*
+    new_node->next = (*head_ref);  
+    new_node->prev = NULL;  
+
+    if ((*head_ref) != NULL)  
+        (*head_ref)->prev = new_node;  
+
+    (*head_ref) = new_node;  
+}  
+
+/* Given a node as next_node, insert a new node before the given node */
+void insertBefore(struct Node** head_ref, struct Node* next_node, int new_data)  
+{  
+    /*1\. check if the given next_node is NULL */
+    if (next_node == NULL) {  
+        printf("the given next node cannot be NULL");  
+        return;  
+    }  
+
+    /* 2\. allocate new node */
+    struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));  
+
+    /* 3\. put in the data */
+    new_node->data = new_data;  
+
+    /* 4\. Make prev of new node as prev of next_node */
+    new_node->prev = next_node->prev;  
+
+    /* 5\. Make the prev of next_node as new_node */
+    next_node->prev = new_node;  
+
+    /* 6\. Make next_node as next of new_node */
+    new_node->next = next_node;  
+
+    /* 7\. Change next of new_node's previous node */
+    if (new_node->prev != NULL)  
+        new_node->prev->next = new_node;  
+    /* 8\. If the prev of new_node is NULL, it will be 
+       the new head node */
+    else
+        (*head_ref) = new_node; 
+
+}  
+
+// This function prints contents of linked list starting from the given node  
+void printList(struct Node* node)  
+{  
+    struct Node* last;  
+    printf("\nTraversal in forward direction \n");  
+    while (node != NULL) {  
+        printf(" %d ", node->data);  
+        last = node;  
+        node = node->next;  
+    }  
+
+    printf("\nTraversal in reverse direction \n");  
+    while (last != NULL) {  
+        printf(" %d ", last->data);  
+        last = last->prev;  
+    }  
+}  
+
+/* Driver program to test above functions*/
+int main()  
+{  
+    /* Start with the empty list */
+    struct Node* head = NULL;  
+    push(&head, 7);  
+
+    push(&head, 1);  
+
+    push(&head, 4);  
+
+    // Insert 8, before 1\. So linked list becomes 4->8->1->7->NULL  
+    insertBefore(&head, head->next, 8);  
+
+    printf("Created DLL is: ");  
+    printList(head);  
+
+    getchar();  
+    return 0;  
+}  
+
+```
+
+Output:
+
+```
+Created DLL is: 
+Traversal in forward direction 
+ 4  8  1  7 
+Traversal in reverse direction 
+ 7  1  8  4 
+
+```
+
+**测试上述功能的完整工作程序。**
+以下是测试上述功能的完整程序。
+
+## C ++
+
+```
+
+// A complete working C++ program to  
+// demonstrate all insertion methods  
+#include <bits/stdc++.h> 
+using namespace std; 
+
+// A linked list node  
+class Node  
+{  
+    public: 
+    int data;  
+    Node* next;  
+    Node* prev;  
+};  
+
+/* Given a reference (pointer to pointer) to the head of a list  
+and an int, inserts a new node on the front of the list. */
+void push(Node** head_ref, int new_data)  
+{  
+    /* 1\. allocate node */
+    Node* new_node = new Node();  
+
+    /* 2\. put in the data */
+    new_node->data = new_data;  
+
+    /* 3\. Make next of new node as head and previous as NULL */
+    new_node->next = (*head_ref);  
+    new_node->prev = NULL;  
+
+    /* 4\. change prev of head node to new node */
+    if ((*head_ref) != NULL)  
+        (*head_ref)->prev = new_node;  
+
+    /* 5\. move the head to point to the new node */
+    (*head_ref) = new_node;  
+}  
+
+/* Given a node as prev_node, insert a new node after the given node */
+void insertAfter(Node* prev_node, int new_data)  
+{  
+    /*1\. check if the given prev_node is NULL */
+    if (prev_node == NULL)  
+    {  
+        cout<<"the given previous node cannot be NULL";  
+        return;  
+    }  
+
+    /* 2\. allocate new node */
+    Node* new_node = new Node(); 
+
+    /* 3\. put in the data */
+    new_node->data = new_data;  
+
+    /* 4\. Make next of new node as next of prev_node */
+    new_node->next = prev_node->next;  
+
+    /* 5\. Make the next of prev_node as new_node */
+    prev_node->next = new_node;  
+
+    /* 6\. Make prev_node as previous of new_node */
+    new_node->prev = prev_node;  
+
+    /* 7\. Change previous of new_node's next node */
+    if (new_node->next != NULL)  
+        new_node->next->prev = new_node;  
+}  
+
+/* Given a reference (pointer to pointer) to the head  
+of a DLL and an int, appends a new node at the end */
+void append(Node** head_ref, int new_data)  
+{  
+    /* 1\. allocate node */
+    Node* new_node = new Node();  
+
+    Node* last = *head_ref; /* used in step 5*/
+
+    /* 2\. put in the data */
+    new_node->data = new_data;  
+
+    /* 3\. This new node is going to be the last node, so  
+        make next of it as NULL*/
+    new_node->next = NULL;  
+
+    /* 4\. If the Linked List is empty, then make the new  
+        node as head */
+    if (*head_ref == NULL) 
+    {  
+        new_node->prev = NULL;  
+        *head_ref = new_node;  
+        return;  
+    }  
+
+    /* 5\. Else traverse till the last node */
+    while (last->next != NULL)  
+        last = last->next;  
+
+    /* 6\. Change the next of last node */
+    last->next = new_node;  
+
+    /* 7\. Make last node as previous of new node */
+    new_node->prev = last;  
+
+    return;  
+}  
+
+// This function prints contents of  
+// linked list starting from the given node  
+void printList(Node* node)  
+{  
+    Node* last;  
+    cout<<"\nTraversal in forward direction \n";  
+    while (node != NULL)  
+    {  
+        cout<<" "<<node->data<<" ";  
+        last = node;  
+        node = node->next;  
+    }  
+
+    cout<<"\nTraversal in reverse direction \n";  
+    while (last != NULL)  
+    {  
+        cout<<" "<<last->data<<" ";  
+        last = last->prev;  
+    }  
+}  
+
+/* Driver program to test above functions*/
+int main()  
+{  
+    /* Start with the empty list */
+    Node* head = NULL;  
+
+    // Insert 6\. So linked list becomes 6->NULL  
+    append(&head, 6);  
+
+    // Insert 7 at the beginning. So  
+    // linked list becomes 7->6->NULL  
+    push(&head, 7);  
+
+    // Insert 1 at the beginning. So  
+    // linked list becomes 1->7->6->NULL  
+    push(&head, 1);  
+
+    // Insert 4 at the end. So linked  
+    // list becomes 1->7->6->4->NULL  
+    append(&head, 4);  
+
+    // Insert 8, after 7\. So linked  
+    // list becomes 1->7->8->6->4->NULL  
+    insertAfter(head->next, 8);  
+
+    cout << "Created DLL is: ";  
+    printList(head);  
+
+    return 0;  
+}  
+
+// This is code is contributed by rathbhupendra 
+
+```
+
+## C
+
+```
+
+// A complete working C program to demonstrate all insertion methods 
+#include <stdio.h> 
+#include <stdlib.h> 
+
+// A linked list node 
+struct Node { 
+    int data; 
+    struct Node* next; 
+    struct Node* prev; 
+}; 
+
+/* Given a reference (pointer to pointer) to the head of a list 
+   and an int, inserts a new node on the front of the list. */
+void push(struct Node** head_ref, int new_data) 
+{ 
+    /* 1\. allocate node */
+    struct Node* new_node = (struct Node*)malloc(sizeof(struct Node)); 
+
+    /* 2\. put in the data  */
+    new_node->data = new_data; 
+
+    /* 3\. Make next of new node as head and previous as NULL */
+    new_node->next = (*head_ref); 
+    new_node->prev = NULL; 
+
+    /* 4\. change prev of head node to new node */
+    if ((*head_ref) != NULL) 
+        (*head_ref)->prev = new_node; 
+
+    /* 5\. move the head to point to the new node */
+    (*head_ref) = new_node; 
+} 
+
+/* Given a node as prev_node, insert a new node after the given node */
+void insertAfter(struct Node* prev_node, int new_data) 
+{ 
+    /*1\. check if the given prev_node is NULL */
+    if (prev_node == NULL) { 
+        printf("the given previous node cannot be NULL"); 
+        return; 
+    } 
+
+    /* 2\. allocate new node */
+    struct Node* new_node = (struct Node*)malloc(sizeof(struct Node)); 
+
+    /* 3\. put in the data  */
+    new_node->data = new_data; 
+
+    /* 4\. Make next of new node as next of prev_node */
+    new_node->next = prev_node->next; 
+
+    /* 5\. Make the next of prev_node as new_node */
+    prev_node->next = new_node; 
+
+    /* 6\. Make prev_node as previous of new_node */
+    new_node->prev = prev_node; 
+
+    /* 7\. Change previous of new_node's next node */
+    if (new_node->next != NULL) 
+        new_node->next->prev = new_node; 
+} 
+
+/* Given a reference (pointer to pointer) to the head 
+   of a DLL and an int, appends a new node at the end  */
+void append(struct Node** head_ref, int new_data) 
+{ 
+    /* 1\. allocate node */
+    struct Node* new_node = (struct Node*)malloc(sizeof(struct Node)); 
+
+    struct Node* last = *head_ref; /* used in step 5*/
+
+    /* 2\. put in the data  */
+    new_node->data = new_data; 
+
+    /* 3\. This new node is going to be the last node, so 
+          make next of it as NULL*/
+    new_node->next = NULL; 
+
+    /* 4\. If the Linked List is empty, then make the new 
+          node as head */
+    if (*head_ref == NULL) { 
+        new_node->prev = NULL; 
+        *head_ref = new_node; 
+        return; 
+    } 
+
+    /* 5\. Else traverse till the last node */
+    while (last->next != NULL) 
+        last = last->next; 
+
+    /* 6\. Change the next of last node */
+    last->next = new_node; 
+
+    /* 7\. Make last node as previous of new node */
+    new_node->prev = last; 
+
+    return; 
+} 
+
+// This function prints contents of linked list starting from the given node 
+void printList(struct Node* node) 
+{ 
+    struct Node* last; 
+    printf("\nTraversal in forward direction \n"); 
+    while (node != NULL) { 
+        printf(" %d ", node->data); 
+        last = node; 
+        node = node->next; 
+    } 
+
+    printf("\nTraversal in reverse direction \n"); 
+    while (last != NULL) { 
+        printf(" %d ", last->data); 
+        last = last->prev; 
+    } 
+} 
+
+/* Driver program to test above functions*/
+int main() 
+{ 
+    /* Start with the empty list */
+    struct Node* head = NULL; 
+
+    // Insert 6.  So linked list becomes 6->NULL 
+    append(&head, 6); 
+
+    // Insert 7 at the beginning. So linked list becomes 7->6->NULL 
+    push(&head, 7); 
+
+    // Insert 1 at the beginning. So linked list becomes 1->7->6->NULL 
+    push(&head, 1); 
+
+    // Insert 4 at the end. So linked list becomes 1->7->6->4->NULL 
+    append(&head, 4); 
+
+    // Insert 8, after 7\. So linked list becomes 1->7->8->6->4->NULL 
+    insertAfter(head->next, 8); 
+
+    printf("Created DLL is: "); 
+    printList(head); 
+
+    getchar(); 
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// A complete working Java program to demonstrate all 
+
+// Class for Doubly Linked List 
+public class DLL { 
+    Node head; // head of list 
+
+    /* Doubly Linked list Node*/
+    class Node { 
+        int data; 
+        Node prev; 
+        Node next; 
+
+        // Constructor to create a new node 
+        // next and prev is by default initialized as null 
+        Node(int d) { data = d; } 
+    } 
+
+    // Adding a node at the front of the list 
+    public void push(int new_data) 
+    { 
+        /* 1\. allocate node  
+        * 2\. put in the data */
+        Node new_Node = new Node(new_data); 
+
+        /* 3\. Make next of new node as head and previous as NULL */
+        new_Node.next = head; 
+        new_Node.prev = null; 
+
+        /* 4\. change prev of head node to new node */
+        if (head != null) 
+            head.prev = new_Node; 
+
+        /* 5\. move the head to point to the new node */
+        head = new_Node; 
+    } 
+
+    /* Given a node as prev_node, insert a new node after the given node */
+    public void InsertAfter(Node prev_Node, int new_data) 
+    { 
+
+        /*1\. check if the given prev_node is NULL */
+        if (prev_Node == null) { 
+            System.out.println("The given previous node cannot be NULL "); 
+            return; 
+        } 
+
+        /* 2\. allocate node  
+        * 3\. put in the data */
+        Node new_node = new Node(new_data); 
+
+        /* 4\. Make next of new node as next of prev_node */
+        new_node.next = prev_Node.next; 
+
+        /* 5\. Make the next of prev_node as new_node */
+        prev_Node.next = new_node; 
+
+        /* 6\. Make prev_node as previous of new_node */
+        new_node.prev = prev_Node; 
+
+        /* 7\. Change previous of new_node's next node */
+        if (new_node.next != null) 
+            new_node.next.prev = new_node; 
+    } 
+
+    // Add a node at the end of the list 
+    void append(int new_data) 
+    { 
+        /* 1\. allocate node  
+        * 2\. put in the data */
+        Node new_node = new Node(new_data); 
+
+        Node last = head; /* used in step 5*/
+
+        /* 3\. This new node is going to be the last node, so 
+        * make next of it as NULL*/
+        new_node.next = null; 
+
+        /* 4\. If the Linked List is empty, then make the new 
+        * node as head */
+        if (head == null) { 
+            new_node.prev = null; 
+            head = new_node; 
+            return; 
+        } 
+
+        /* 5\. Else traverse till the last node */
+        while (last.next != null) 
+            last = last.next; 
+
+        /* 6\. Change the next of last node */
+        last.next = new_node; 
+
+        /* 7\. Make last node as previous of new node */
+        new_node.prev = last; 
+    } 
+
+    // This function prints contents of linked list starting from the given node 
+    public void printlist(Node node) 
+    { 
+        Node last = null; 
+        System.out.println("Traversal in forward Direction"); 
+        while (node != null) { 
+            System.out.print(node.data + " "); 
+            last = node; 
+            node = node.next; 
+        } 
+        System.out.println(); 
+        System.out.println("Traversal in reverse direction"); 
+        while (last != null) { 
+            System.out.print(last.data + " "); 
+            last = last.prev; 
+        } 
+    } 
+
+    /* Driver program to test above functions*/
+    public static void main(String[] args) 
+    { 
+        /* Start with the empty list */
+        DLL dll = new DLL(); 
+
+        // Insert 6\. So linked list becomes 6->NULL 
+        dll.append(6); 
+
+        // Insert 7 at the beginning. So linked list becomes 7->6->NULL 
+        dll.push(7); 
+
+        // Insert 1 at the beginning. So linked list becomes 1->7->6->NULL 
+        dll.push(1); 
+
+        // Insert 4 at the end. So linked list becomes 1->7->6->4->NULL 
+        dll.append(4); 
+
+        // Insert 8, after 7\. So linked list becomes 1->7->8->6->4->NULL 
+        dll.InsertAfter(dll.head.next, 8); 
+
+        System.out.println("Created DLL is: "); 
+        dll.printlist(dll.head); 
+    } 
+} 
+
+// This code is contributed by Sumit Ghosh 
+
+```
+
+## 蟒蛇
+
+```
+
+# A complete working Python program to demonstrate all 
+# insertion methods 
+
+# A linked list node 
+class Node: 
+
+    # Constructor to create a new node 
+    def __init__(self, data): 
+        self.data = data 
+        self.next = None
+        self.prev = None
+
+# Class to create a Doubly Linked List 
+class DoublyLinkedList: 
+
+    # Constructor for empty Doubly Linked List 
+    def __init__(self): 
+        self.head = None
+
+    # Given a reference to the head of a list and an 
+    # integer, inserts a new node on the front of list 
+    def push(self, new_data): 
+
+        # 1\. Allocates node 
+        # 2\. Put the data in it 
+        new_node = Node(new_data) 
+
+        # 3\. Make next of new node as head and 
+        # previous as None (already None) 
+        new_node.next = self.head 
+
+        # 4\. change prev of head node to new_node 
+        if self.head is not None: 
+            self.head.prev = new_node 
+
+        # 5\. move the head to point to the new node 
+        self.head = new_node 
+
+    # Given a node as prev_node, insert a new node after 
+    # the given node 
+    def insertAfter(self, prev_node, new_data): 
+
+        # 1\. Check if the given prev_node is None 
+        if prev_node is None: 
+            print "the given previous node cannot be NULL"
+            return 
+
+        # 2\. allocate new node 
+        # 3\. put in the data 
+        new_node = Node(new_data) 
+
+        # 4\. Make net of new node as next of prev node 
+        new_node.next = prev_node.next
+
+        # 5\. Make prev_node as previous of new_node 
+        prev_node.next = new_node 
+
+        # 6\. Make prev_node ass previous of new_node 
+        new_node.prev = prev_node 
+
+        # 7\. Change previous of new_nodes's next node 
+        if new_node.next is not None: 
+            new_node.next.prev = new_node 
+
+    # Given a reference to the head of DLL and integer, 
+    # appends a new node at the end 
+    def append(self, new_data): 
+
+        # 1\. Allocates node 
+        # 2\. Put in the data 
+        new_node = Node(new_data) 
+
+        # 3\. This new node is going to be the last node, 
+        # so make next of it as None 
+        new_node.next = None
+
+        # 4\. If the Linked List is empty, then make the 
+        # new node as head 
+        if self.head is None: 
+            new_node.prev = None
+            self.head = new_node 
+            return 
+
+        # 5\. Else traverse till the last node 
+        last = self.head 
+        while(last.next is not None): 
+            last = last.next
+
+        # 6\. Change the next of last node 
+        last.next = new_node 
+
+        # 7\. Make last node as previous of new node 
+        new_node.prev = last 
+
+        return
+
+    # This function prints contents of linked list 
+    # starting from the given node 
+    def printList(self, node): 
+
+        print "\nTraversal in forward direction"
+        while(node is not None): 
+            print " % d" %(node.data), 
+            last = node 
+            node = node.next
+
+        print "\nTraversal in reverse direction"
+        while(last is not None): 
+            print " % d" %(last.data), 
+            last = last.prev 
+
+# Driver program to test above functions 
+
+# Start with empty list 
+llist = DoublyLinkedList() 
+
+# Insert 6\. So the list becomes 6->None 
+llist.append(6) 
+
+# Insert 7 at the beginning. 
+# So linked list becomes 7->6->None 
+llist.push(7) 
+
+# Insert 1 at the beginning. 
+# So linked list becomes 1->7->6->None 
+llist.push(1) 
+
+# Insert 4 at the end. 
+# So linked list becomes 1->7->6->4->None 
+llist.append(4) 
+
+# Insert 8, after 7\. 
+# So linked list becomes 1->7->8->6->4->None 
+llist.insertAfter(llist.head.next, 8) 
+
+print "Created DLL is: ", 
+llist.printList(llist.head) 
+
+# This code is contributed by Nikhil Kumar Singh(nickzuck_007) 
+
+```
+
+## C＃
+
+```
+
+// A complete working C# program to demonstrate all 
+using System;  
+
+// Class for Doubly Linked List  
+public class DLL  
+{  
+    Node head; // head of list  
+
+    /* Doubly Linked list Node*/
+    public class Node  
+    {  
+        public int data;  
+        public Node prev;  
+        public Node next;  
+
+        // Constructor to create a new node  
+        // next and prev is by default initialized as null  
+        public Node(int d)  
+        {  
+            data = d; 
+        }  
+    }  
+
+    // Adding a node at the front of the list  
+    public void push(int new_data)  
+    {  
+        /* 1\. allocate node  
+        * 2\. put in the data */
+        Node new_Node = new Node(new_data);  
+
+        /* 3\. Make next of new node as 
+        head and previous as NULL */
+        new_Node.next = head;  
+        new_Node.prev = null;  
+
+        /* 4\. change prev of head node to new node */
+        if (head != null)  
+            head.prev = new_Node;  
+
+        /* 5\. move the head to point to the new node */
+        head = new_Node;  
+    }  
+
+    /* Given a node as prev_node, insert 
+    a new node after the given node */
+    public void InsertAfter(Node prev_Node, int new_data)  
+    {  
+
+        /*1\. check if the given prev_node is NULL */
+        if (prev_Node == null) 
+        {  
+            Console.WriteLine("The given previous node cannot be NULL ");  
+            return;  
+        }  
+
+        /* 2\. allocate node  
+        * 3\. put in the data */
+        Node new_node = new Node(new_data);  
+
+        /* 4\. Make next of new node as next of prev_node */
+        new_node.next = prev_Node.next;  
+
+        /* 5\. Make the next of prev_node as new_node */
+        prev_Node.next = new_node;  
+
+        /* 6\. Make prev_node as previous of new_node */
+        new_node.prev = prev_Node;  
+
+        /* 7\. Change previous of new_node's next node */
+        if (new_node.next != null)  
+            new_node.next.prev = new_node;  
+    }  
+
+    // Add a node at the end of the list  
+    void append(int new_data)  
+    {  
+        /* 1\. allocate node  
+        * 2\. put in the data */
+        Node new_node = new Node(new_data);  
+
+        Node last = head; /* used in step 5*/
+
+        /* 3\. This new node is going  
+            to be the last node, so  
+        * make next of it as NULL*/
+        new_node.next = null;  
+
+        /* 4\. If the Linked List is empty,  
+        then make the new * node as head */
+        if (head == null)  
+        {  
+            new_node.prev = null;  
+            head = new_node;  
+            return;  
+        }  
+
+        /* 5\. Else traverse till the last node */
+        while (last.next != null)  
+            last = last.next;  
+
+        /* 6\. Change the next of last node */
+        last.next = new_node;  
+
+        /* 7\. Make last node as previous of new node */
+        new_node.prev = last;  
+    }  
+
+    // This function prints contents of  
+    // linked list starting from the given node  
+    public void printlist(Node node)  
+    {  
+        Node last = null;  
+        Console.WriteLine("Traversal in forward Direction");  
+        while (node != null) {  
+            Console.Write(node.data + " ");  
+            last = node;  
+            node = node.next;  
+        }  
+        Console.WriteLine();  
+        Console.WriteLine("Traversal in reverse direction");  
+        while (last != null) {  
+            Console.Write(last.data + " ");  
+            last = last.prev;  
+        }  
+    }  
+
+    /* Driver code*/
+    public static void Main(String[] args)  
+    {  
+        /* Start with the empty list */
+        DLL dll = new DLL();  
+
+        // Insert 6\. So linked list becomes 6->NULL  
+        dll.append(6);  
+
+        // Insert 7 at the beginning.  
+        // So linked list becomes 7->6->NULL  
+        dll.push(7);  
+
+        // Insert 1 at the beginning.  
+        // So linked list becomes 1->7->6->NULL  
+        dll.push(1);  
+
+        // Insert 4 at the end. So linked list 
+        // becomes 1->7->6->4->NULL  
+        dll.append(4);  
+
+        // Insert 8, after 7\. So linked list  
+        // becomes 1->7->8->6->4->NULL  
+        dll.InsertAfter(dll.head.next, 8);  
+
+        Console.WriteLine("Created DLL is: ");  
+        dll.printlist(dll.head);  
+    }  
+}  
+
+// This code is contributed by 29AjayKumar 
+
+```
+
+**Output:**
+
+```
+ Created DLL is:
+Traversal in forward direction
+ 1  7  8  6  4
+Traversal in reverse direction
+ 4  6  8  7  1
+```
+
+另请参阅：[在双链接列表](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
+中删除节点。如果发现任何错误，或者要共享有关上述主题的更多信息，请发表评论。
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

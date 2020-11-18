@@ -49,17 +49,299 @@ is 67, so 67 is deleted.
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// CPP program to remove last node of 
+// linked list. 
+#include <iostream> 
+using namespace std; 
 
-*play_arrow*
+/* Link list node */
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+/* Function to remove the last node   
+   of the linked list */
+Node* removeLastNode(struct Node* head) 
+{ 
+    if (head == NULL) 
+        return NULL; 
 
-| `// CPP program to remove last node of``// linked list.``#include <iostream>``using` `namespace` `std;` [`/* Link list node */``struct` `Node {` `int` `data;` `struct` `Node* next;``};``/* Function to remove the last node  ` `of the linked list */``Node* removeLastNode(` `struct` `Node* head)``{` `if` `(head == NULL)` `return` `NULL;` [ `if` `(head->next == NULL) {` `delete` `head;` `return` `NULL;` `}` `// Find the second last node` `Node* second_last = head;` `while` `(second_last->next->next != NULL)` `second_last = second_last->next;` `// Delete last node` `delete` `(second_last->next);` `// Change next of second last` `second_last->next = NULL;` `return` `head;``}``// Function to push node at head``void` `push(` `struct` `Node** head_ref,` `int` `new_data)``{` `struct` `Node* new_node =` `new` `Node;` `new_node->data = new_data;` `new_node->next = (*head_ref);` `(*head_ref) = new_node;``}``// Driver code``int` `main()``{` `/* Start with the empty list */` `Node* head = NULL;` `/* Use push() function to construct   ` `the below list 8 -> 23 -> 11 -> 29 -> 12 */` `push(&head, 12);` `push(&head, 29);` `push(&head, 11);` `push(&head, 23);` `push(&head, 8);` `head = removeLastNode(head);` `for` `(Node* temp = head; temp != NULL; temp = temp->next)` `cout << temp->data <<` `" "` `;` `return` `0;``}` |
+    if (head->next == NULL) { 
+        delete head; 
+        return NULL; 
+    } 
 
-*chevron_right**filter_none*
+    // Find the second last node 
+    Node* second_last = head; 
+    while (second_last->next->next != NULL) 
+        second_last = second_last->next; 
+
+    // Delete last node 
+    delete (second_last->next); 
+
+    // Change next of second last 
+    second_last->next = NULL; 
+
+    return head; 
+} 
+
+// Function to push node at head 
+void push(struct Node** head_ref, int new_data) 
+{ 
+    struct Node* new_node = new Node; 
+    new_node->data = new_data; 
+    new_node->next = (*head_ref); 
+    (*head_ref) = new_node; 
+} 
+
+// Driver code 
+int main() 
+{ 
+    /* Start with the empty list */
+    Node* head = NULL; 
+
+    /* Use push() function to construct    
+       the below list 8 -> 23 -> 11 -> 29 -> 12 */
+    push(&head, 12); 
+    push(&head, 29); 
+    push(&head, 11); 
+    push(&head, 23); 
+    push(&head, 8); 
+
+    head = removeLastNode(head); 
+    for (Node* temp = head; temp != NULL; temp = temp->next) 
+        cout << temp->data << " "; 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to remove last node of 
+// linked list. 
+class GFG { 
+
+    // Link list node / 
+    static class Node { 
+        int data; 
+        Node next; 
+    }; 
+
+    // Function to remove the last node 
+    // of the linked list / 
+    static Node removeLastNode(Node head) 
+    { 
+        if (head == null) 
+            return null; 
+
+        if (head.next == null) { 
+            return null; 
+        } 
+
+        // Find the second last node 
+        Node second_last = head; 
+        while (second_last.next.next != null) 
+            second_last = second_last.next; 
+
+        // Change next of second last 
+        second_last.next = null; 
+
+        return head; 
+    } 
+
+    // Function to push node at head 
+    static Node push(Node head_ref, int new_data) 
+    { 
+        Node new_node = new Node(); 
+        new_node.data = new_data; 
+        new_node.next = (head_ref); 
+        (head_ref) = new_node; 
+        return head_ref; 
+    } 
+
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+        // Start with the empty list / 
+        Node head = null; 
+
+        // Use push() function to con 
+        // the below list 8 . 23 . 11 . 29 . 12 / 
+        head = push(head, 12); 
+        head = push(head, 29); 
+        head = push(head, 11); 
+        head = push(head, 23); 
+        head = push(head, 8); 
+
+        head = removeLastNode(head); 
+        for (Node temp = head; temp != null; temp = temp.next) 
+            System.out.print(temp.data + " "); 
+    } 
+} 
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+## Python3
+
+```
+
+# Python3 program to remove the last node of  
+# linked list. 
+import sys 
+import math 
+
+# Link list node 
+class Node: 
+    def __init__(self, data): 
+        self.data = data 
+        self.next = None
+
+# Function to push node at head  
+def push(head, data): 
+    if not head: 
+        return Node(data) 
+    temp = Node(data) 
+    temp.next = head 
+    head = temp 
+    return head 
+
+# Function to remove the last node  
+# of the linked list 
+def removeLastNode(head): 
+    if head == None: 
+        return None
+    if head.next == None: 
+        head = None
+        return None
+    second_last = head 
+    while(second_last.next.next): 
+        second_last = second_last.next
+    second_last.next = None
+    return head 
+
+# Driver code 
+if __name__=='__main__': 
+
+    # Start with the empty list 
+    head = None
+    # Use push() function to con  
+    # the below list 8 . 23 . 11 . 29 . 12  
+    head = push(head, 12) 
+    head = push(head, 29) 
+    head = push(head, 11) 
+    head = push(head, 23) 
+    head = push(head, 8) 
+
+    head = removeLastNode(head) 
+    while(head): 
+        print("{} ".format(head.data), end ="") 
+        head = head.next
+
+# This code is contributed by Vikash kumar 37 
+
+```
+
+## C＃
+
+```
+
+// C# program to remove last node of 
+// linked list. 
+using System; 
+
+class GFG { 
+
+    // Link list node / 
+    public class Node { 
+        public int data; 
+        public Node next; 
+    }; 
+
+    // Function to remove the last node 
+    // of the linked list / 
+    static Node removeLastNode(Node head) 
+    { 
+        if (head == null) 
+            return null; 
+
+        if (head.next == null) { 
+            return null; 
+        } 
+
+        // Find the second last node 
+        Node second_last = head; 
+        while (second_last.next.next != null) 
+            second_last = second_last.next; 
+
+        // Change next of second last 
+        second_last.next = null; 
+
+        return head; 
+    } 
+
+    // Function to push node at head 
+    static Node push(Node head_ref, int new_data) 
+    { 
+        Node new_node = new Node(); 
+        new_node.data = new_data; 
+        new_node.next = (head_ref); 
+        (head_ref) = new_node; 
+        return head_ref; 
+    } 
+
+    // Driver code 
+    public static void Main(String[] args) 
+    { 
+        // Start with the empty list / 
+        Node head = null; 
+
+        // Use push() function to con 
+        // the below list 8 . 23 . 11 . 29 . 12 / 
+        head = push(head, 12); 
+        head = push(head, 29); 
+        head = push(head, 11); 
+        head = push(head, 23); 
+        head = push(head, 8); 
+
+        head = removeLastNode(head); 
+        for (Node temp = head; temp != null; temp = temp.next) 
+            Console.Write(temp.data + " "); 
+    } 
+} 
+
+/* This code contributed by PrinciRaj1992 */
+
+```
+
+**Output:**
+
+```
+8 23 11 29
+
+```
+
+**复杂度分析：**
+
+*   **时间复杂度：** O（n）。
+    该算法涉及遍历链表直到其结束，因此所需的时间复杂度为 *O（n）*。
+*   **空间复杂度：** O（1）。
+    不需要额外的空间，因此空间复杂度是恒定的
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

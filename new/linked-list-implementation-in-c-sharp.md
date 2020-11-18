@@ -49,20 +49,46 @@ using System.Collections.Generic;
 
 **示例：**
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C# program to illustrate how  
+// to create a LinkedList 
+using System; 
+using System.Collections.Generic; 
 
-*play_arrow*
+class GFG { 
 
-*链接*
-*亮度_4*
-*代码*
+    // Main Method 
+    static public void Main() 
+    { 
 
-| `// C# program to illustrate how ``// to create a LinkedList``using` `System;``using` `System.Collections.Generic;``class` `GFG {` `// Main Method` `static` `public` `void` `Main()` `{` `// Creating a linkedlist` `// Using LinkedList class` `LinkedList<String> my_list =` `new` `LinkedList<String>();` `// Adding elements in the LinkedList` `// Using AddLast() method` ] `my_list.AddLast(` `"Zoya"` `);` `my_list.AddLast(` `"Shilpa"` `);` `my_list.AddLast(` `"Rohit"` `);` `my_list.AddLast(` `"Rohan"` `);` `my_list.AddLast(` `"Juhi"` `);` `my_list.AddLast(` `"Zoya"` `);` `Console.WriteLine(` `"Best students of XYZ university:"` `);` `// Accessing the elements of ` `// LinkedList Using foreach loop` `foreach` `(` `string` `str` `in` `my_list)` `{` `Console.WriteLine(str);` `}` `}``}` |
+        // Creating a linkedlist 
+        // Using LinkedList class 
+        LinkedList<String> my_list = new LinkedList<String>(); 
 
-*chevron_right**filter_none***Output:**
+        // Adding elements in the LinkedList 
+        // Using AddLast() method 
+        my_list.AddLast("Zoya"); 
+        my_list.AddLast("Shilpa"); 
+        my_list.AddLast("Rohit"); 
+        my_list.AddLast("Rohan"); 
+        my_list.AddLast("Juhi"); 
+        my_list.AddLast("Zoya"); 
+
+        Console.WriteLine("Best students of XYZ university:"); 
+
+        // Accessing the elements of  
+        // LinkedList Using foreach loop 
+        foreach(string str in my_list) 
+        { 
+            Console.WriteLine(str); 
+        } 
+    } 
+} 
+
+```
+
+**Output:**
 
 ```
 Best students of XYZ university:
@@ -87,20 +113,98 @@ Zoya
 
 **示例：**
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C# program to illustrate how to 
+// remove elements from LinkedList 
+using System; 
+using System.Collections.Generic; 
 
-*play_arrow*
+class GFG { 
 
-*链接*
-*亮度_4*
-*代码*
+    // Main Method 
+    static public void Main() 
+    { 
 
-| `// C# program to illustrate how to``// remove elements from LinkedList``using` `System;``using` `System.Collections.Generic;``class` `GFG {` `// Main Method` `static` `public` `void` `Main()` `{` `// Creating a linkedlist` `// Using LinkedList class` `LinkedList<String> my_list =` `new` `LinkedList<String>();` `// Adding elements in the LinkedList` `// Using AddLast() method` ] `my_list.AddLast(` `"Zoya"` `);` `my_list.AddLast(` `"Shilpa"` `);` `my_list.AddLast(` `"Rohit"` `);` `my_list.AddLast(` `"Rohan"` `);` `my_list.AddLast(` `"Juhi"` `);` `my_list.AddLast(` `"Zoya"` `);` [HT G257] `// Inital number of elements` `Console.WriteLine(` `"Best students of XYZ "` `+` `"university initially:"` `);` `// Accessing the elements of `​​  `// Linkedlist Using foreach loop` `foreach` `(` `string` `str` `in` `my_list)` `{` `Console.WriteLine(str);` `}` `// After using Remove(LinkedListNode)` `// method` `Console.WriteLine(` `"Best students of XYZ"` `+` `" university in 2000:"` `);` `my_list.Remove(my_list.First);`]  `foreach` `(` `string` `str` `in` `my_list)` `{` `Console.WriteLine(str);`[ `}`。 `// After using Remove(T) method` `Console.WriteLine(` `"Best students of XYZ"` `+` `" university in 2001:"` `);` `my_list.Remove(` `"Rohit"` `);`]  `foreach` `(` `string` `str` `in` `my_list)` `{` `Console.WriteLine(str);` `}` `// After using RemoveFirst() method` `Console.WriteLine(` `"Best students of XYZ"` `+` `" university in 2002:"` `);` `my_list.RemoveFirst();` `foreach` `(` `string` `str` `in` `my_list)` `{` [HT G167] `}` `// After using RemoveLast() method` `Console.WriteLine(` `"Best students of XYZ"` `+` `" university in 2003:"` `);` `my_list.RemoveLast();` ] `foreach` `(` `string` `str` `in` `my_list)` `{` `Console.WriteLine(str);` `}` `// After using Clear() method` `my_list.Clear();` `Console.WriteLine(` `"Number of students: {0}"` `,` `my_list.Count);` `}``}` |
+        // Creating a linkedlist 
+        // Using LinkedList class 
+        LinkedList<String> my_list = new LinkedList<String>(); 
 
-*chevron_right**filter_none***Output:**
+        // Adding elements in the LinkedList 
+        // Using AddLast() method 
+        my_list.AddLast("Zoya"); 
+        my_list.AddLast("Shilpa"); 
+        my_list.AddLast("Rohit"); 
+        my_list.AddLast("Rohan"); 
+        my_list.AddLast("Juhi"); 
+        my_list.AddLast("Zoya"); 
+
+        // Inital number of elements 
+        Console.WriteLine("Best students of XYZ "+ 
+                         "university initially:"); 
+
+        // Accessing the elements of  
+        // Linkedlist Using foreach loop 
+        foreach(string str in my_list) 
+        { 
+            Console.WriteLine(str); 
+        } 
+
+        // After using Remove(LinkedListNode) 
+        // method 
+        Console.WriteLine("Best students of XYZ"+ 
+                         " university in 2000:"); 
+
+        my_list.Remove(my_list.First); 
+
+        foreach(string str in my_list) 
+        { 
+            Console.WriteLine(str); 
+        } 
+
+        // After using Remove(T) method 
+        Console.WriteLine("Best students of XYZ"+ 
+                         " university in 2001:"); 
+
+        my_list.Remove("Rohit"); 
+
+        foreach(string str in my_list) 
+        { 
+            Console.WriteLine(str); 
+        } 
+
+        // After using RemoveFirst() method 
+        Console.WriteLine("Best students of XYZ"+ 
+                         " university in 2002:"); 
+
+        my_list.RemoveFirst(); 
+
+        foreach(string str in my_list) 
+        { 
+            Console.WriteLine(str); 
+        } 
+
+        // After using RemoveLast() method 
+        Console.WriteLine("Best students of XYZ"+ 
+                         " university in 2003:"); 
+
+        my_list.RemoveLast(); 
+
+        foreach(string str in my_list) 
+        { 
+            Console.WriteLine(str); 
+        } 
+
+        // After using Clear() method 
+        my_list.Clear(); 
+        Console.WriteLine("Number of students: {0}", 
+                                     my_list.Count); 
+    } 
+} 
+
+```
+
+**Output:**
 
 ```
 Best students of XYZ university initially:
@@ -138,20 +242,49 @@ Number of students: 0
 
 **示例：**
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C# program to illustrate how  
+// to check whether the given  
+// element is present or not  
+// in the LinkedList 
+using System; 
+using System.Collections.Generic; 
 
-*play_arrow*
+class GFG { 
 
-*链接*
-*亮度_4*
-*代码*
+    // Main Method 
+    static public void Main() 
+    { 
 
-| `// C# program to illustrate how ``// to check whether the given ``// element is present or not ``// in the LinkedList``using` `System;``using` `System.Collections.Generic;``class` `GFG {` `// Main Method` `static` `public` `void` `Main()` `{`的 `// Creating a linkedlist` `// Using LinkedList class` `LinkedList<String> my_list =` `new` `LinkedList<String>();`的]  `// Adding elements in the Linkedlist` `// Using AddLast() method` `my_list.AddLast(` `"Zoya"` `);` `my_list.AddLast(` `"Shilpa"` `);` `my_list.AddLast(` `"Rohit"` `);` `my_list.AddLast(` `"Rohan"` `);` `my_list.AddLast(` `"Juhi"` `);` `// Check if the given element` `// is available or not` `if` `(my_list.Contains(` `"Shilpa"` `) ==` `true` `) ` `{` `Console.WriteLine(` `"Element Found...!!"` `);` `}` `else` `{` `Console.WriteLine(` `"Element Not found...!!"` `);` `}` `}``}` |
+        // Creating a linkedlist 
+        // Using LinkedList class 
+        LinkedList<String> my_list = new LinkedList<String>(); 
 
-*chevron_right**filter_none***Output:**
+        // Adding elements in the Linkedlist 
+        // Using AddLast() method 
+        my_list.AddLast("Zoya"); 
+        my_list.AddLast("Shilpa"); 
+        my_list.AddLast("Rohit"); 
+        my_list.AddLast("Rohan"); 
+        my_list.AddLast("Juhi"); 
+
+        // Check if the given element 
+        // is available or not 
+        if (my_list.Contains("Shilpa") == true)  
+        { 
+            Console.WriteLine("Element Found...!!"); 
+        } 
+        else 
+        { 
+            Console.WriteLine("Element Not found...!!"); 
+        } 
+    } 
+} 
+
+```
+
+**Output:**
 
 ```
 Element Found...!!

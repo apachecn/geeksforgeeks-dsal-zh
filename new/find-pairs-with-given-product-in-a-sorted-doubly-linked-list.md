@@ -30,17 +30,415 @@ Output: (1, 6), (2, 3)
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to find a pair with 
+// given product x in sorted Doubly 
+// Linked List 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Doubly Linked List Node 
+struct Node { 
+    int data; 
+    struct Node *next, *prev; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Function to find pair whose product 
+// equal to given value x 
+void pairProduct(struct Node* head, int x) 
+{ 
+    // Set two pointers, 
+    // first to the beginning of DLL 
+    // and second to the end of DLL. 
+    struct Node* first = head; 
+    struct Node* second = head; 
+    while (second->next != NULL) 
+        second = second->next; 
 
-| `// C++ program to find a pair with``// given product x in sorted Doubly``// Linked List``#include <bits/stdc++.h>``using` `namespace` `std;``// Doubly Linked List Node``struct` `Node {` `int` `data;` `struct` `Node *next, *prev;``};``// Function to find pair whose product``// equal to given value x``void` `pairProduct(` `struct` `Node* head,` `int` `x)``{` `// Set two pointers,` `// first to the beginning of DLL` `// and second to the end of DLL.` `struct` `Node* first = head;` `struct` `Node* second = head;` `while` `(second->next != NULL)` `second = second->next;` `// To track if we find a pair or not` `bool` `found =` `false` `;` `// The loop terminates when either of two pointers` `// become NULL, or they cross each other (second->next` ] `// == first), or they become same (first == second)` `while` `(first != NULL && second != NULL && first != second` `&& second->next != first) {` `// pair found` `if` `((first->data * second->data) == x) {` `found =` `true` `;` `cout <<` `"("` `<< first->data <<` `", "` `<< second->data <<` `")"` `<< endl;`​​ `// move first in forward direction` `first = first->next;` `// move second in backward direction` `second = second->prev;` `}` `else` `{` `if` `((first->data * second->data) < x)` `first = first->next;` `else` `second = second->prev;` `}` `}` [ `// if pair is not present` `if` `(found ==` `false` `)` `cout <<` `"No pair found"` `;``}``// A utility function to insert a new node at the``// beginning of doubly linked list``void` `insert(` `struct` `Node** head,` `int` `data)``{` `struct` `Node* temp =` `new` `Node;` `temp->data = data;` `temp->next = temp->prev = NULL;` `if` `(!(*head))` `(*head) = temp;` `else` `{` `temp->next = *head;` `(*head)->prev = temp;` `(*head) = temp;` [HTG1 58]`}``// Driver Code``int` `main()``{` `// Create Doubly Linked List` `struct` `Node* head = NULL;` `insert(&head, 9);` `insert(&head, 8);` `insert(&head, 6);` `insert(&head, 5);` `insert(&head, 4);` `insert(&head, 2);` `insert(&head, 1);` `int` `x = 8;` `pairProduct(head, x);` `return` `0;``}` |
+    // To track if we find a pair or not 
+    bool found = false; 
 
-*chevron_right**filter_none*
+    // The loop terminates when either of two pointers 
+    // become NULL, or they cross each other (second->next 
+    // == first), or they become same (first == second) 
+    while (first != NULL && second != NULL && first != second 
+           && second->next != first) { 
+        // pair found 
+        if ((first->data * second->data) == x) { 
+            found = true; 
+            cout << "(" << first->data << ", "
+                 << second->data << ")" << endl; 
+
+            // move first in forward direction 
+            first = first->next; 
+
+            // move second in backward direction 
+            second = second->prev; 
+        } 
+        else { 
+            if ((first->data * second->data) < x) 
+                first = first->next; 
+            else
+                second = second->prev; 
+        } 
+    } 
+
+    // if pair is not present 
+    if (found == false) 
+        cout << "No pair found"; 
+} 
+
+// A utility function to insert a new node at the 
+// beginning of doubly linked list 
+void insert(struct Node** head, int data) 
+{ 
+    struct Node* temp = new Node; 
+    temp->data = data; 
+    temp->next = temp->prev = NULL; 
+    if (!(*head)) 
+        (*head) = temp; 
+    else { 
+        temp->next = *head; 
+        (*head)->prev = temp; 
+        (*head) = temp; 
+    } 
+} 
+
+// Driver Code 
+int main() 
+{ 
+    // Create Doubly Linked List 
+    struct Node* head = NULL; 
+    insert(&head, 9); 
+    insert(&head, 8); 
+    insert(&head, 6); 
+    insert(&head, 5); 
+    insert(&head, 4); 
+    insert(&head, 2); 
+    insert(&head, 1); 
+
+    int x = 8; 
+
+    pairProduct(head, x); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to find a pair with 
+// given product x in sorted Doubly 
+// Linked List 
+
+class GFG { 
+
+    // Doubly Linked List Node 
+    static class Node { 
+        int data; 
+        Node next, prev; 
+    }; 
+
+    // Function to find pair whose product 
+    // equal to given value x 
+    static void pairProduct(Node head, int x) 
+    { 
+        // Set two pointers, 
+        // first to the beginning of DLL 
+        // and second to the end of DLL. 
+        Node first = head; 
+        Node second = head; 
+        while (second.next != null) 
+            second = second.next; 
+
+        // To track if we find a pair or not 
+        boolean found = false; 
+
+        // The loop terminates when either of two pointers 
+        // become null, or they cross each other (second.next 
+        // == first), or they become same (first == second) 
+        while (first != null && second != null && first != second 
+               && second.next != first) { 
+            // pair found 
+            if ((first.data * second.data) == x) { 
+                found = true; 
+                System.out.println("(" + first.data + ", "
+                                   + second.data + ")"); 
+
+                // move first in forward direction 
+                first = first.next; 
+
+                // move second in backward direction 
+                second = second.prev; 
+            } 
+            else { 
+                if ((first.data * second.data) < x) 
+                    first = first.next; 
+                else
+                    second = second.prev; 
+            } 
+        } 
+
+        // if pair is not present 
+        if (found == false) 
+            System.out.println("No pair found"); 
+    } 
+
+    // A utility function to insert a new node at the 
+    // beginning of doubly linked list 
+    static Node insert(Node head, int data) 
+    { 
+        Node temp = new Node(); 
+        temp.data = data; 
+        temp.next = temp.prev = null; 
+        if ((head) == null) 
+            (head) = temp; 
+        else { 
+            temp.next = head; 
+            (head).prev = temp; 
+            (head) = temp; 
+        } 
+        return head; 
+    } 
+
+    // Driver Code 
+    public static void main(String args[]) 
+    { 
+        // Create Doubly Linked List 
+        Node head = null; 
+        head = insert(head, 9); 
+        head = insert(head, 8); 
+        head = insert(head, 6); 
+        head = insert(head, 5); 
+        head = insert(head, 4); 
+        head = insert(head, 2); 
+        head = insert(head, 1); 
+
+        int x = 8; 
+
+        pairProduct(head, x); 
+    } 
+} 
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+## Python3
+
+```
+
+# Python3 program to find a pair with 
+# given product x in sorted Doubly 
+# Linked List 
+
+# Node of the doubly linked list  
+class Node:  
+
+    def __init__(self, data):  
+        self.data = data  
+        self.prev = None
+        self.next = None
+
+# Function to find pair whose product 
+# equal to given value x 
+def pairProduct(head, x): 
+
+    # Set two pointers, 
+    # first to the beginning of DLL 
+    # and second to the end of DLL. 
+    first = head 
+    second = head 
+    while (second.next != None): 
+        second = second.next
+
+    # To track if we find a pair or not 
+    found = False
+
+    # The loop terminates when either of two pointers 
+    # become None, or they cross each other (second.next 
+    # == first), or they become same (first == second) 
+    while (first != None and second != None and 
+           first != second and second.next != first) : 
+        # pair found 
+        if ((first.data * second.data) == x) : 
+            found = True
+            print("(", first.data, ", ", second.data, ")") 
+
+            # move first in forward direction 
+            first = first.next
+
+            # move second in backward direction 
+            second = second.prev 
+
+        else : 
+            if ((first.data * second.data) < x): 
+                first = first.next
+            else: 
+                second = second.prev 
+
+    # if pair is not present 
+    if (found == False): 
+        print( "No pair found") 
+
+# A utility function to insert a new node at the 
+# beginning of doubly linked list 
+def insert(head, data): 
+
+    temp = Node(0) 
+    temp.data = data 
+    temp.next = temp.prev = None
+    if (head == None): 
+        (head) = temp 
+    else : 
+        temp.next = head 
+        (head).prev = temp 
+        (head) = temp 
+    return head 
+
+# Driver Code 
+if __name__ == "__main__":  
+
+    # Create Doubly Linked List 
+    head = None
+    head = insert(head, 9) 
+    head = insert(head, 8) 
+    head = insert(head, 6) 
+    head = insert(head, 5) 
+    head = insert(head, 4) 
+    head = insert(head, 2) 
+    head = insert(head, 1) 
+
+    x = 8
+
+    pairProduct(head, x) 
+
+# This code is contributed by Arnab Kundu 
+
+```
+
+## C＃
+
+```
+
+// C# program to find a pair with 
+// given product x in sorted Doubly 
+// Linked List 
+using System; 
+
+class GFG { 
+
+    // Doubly Linked List Node 
+    public class Node { 
+        public int data; 
+        public Node next, prev; 
+    }; 
+
+    // Function to find pair whose product 
+    // equal to given value x 
+    static void pairProduct(Node head, int x) 
+    { 
+        // Set two pointers, 
+        // first to the beginning of DLL 
+        // and second to the end of DLL. 
+        Node first = head; 
+        Node second = head; 
+        while (second.next != null) 
+            second = second.next; 
+
+        // To track if we find a pair or not 
+        bool found = false; 
+
+        // The loop terminates when either of two pointers 
+        // become null, or they cross each other (second.next 
+        // == first), or they become same (first == second) 
+        while (first != null && second != null && first != second 
+               && second.next != first) { 
+            // pair found 
+            if ((first.data * second.data) == x) { 
+                found = true; 
+                Console.WriteLine("(" + first.data + ", "
+                                  + second.data + ")"); 
+
+                // move first in forward direction 
+                first = first.next; 
+
+                // move second in backward direction 
+                second = second.prev; 
+            } 
+            else { 
+                if ((first.data * second.data) < x) 
+                    first = first.next; 
+                else
+                    second = second.prev; 
+            } 
+        } 
+
+        // if pair is not present 
+        if (found == false) 
+            Console.WriteLine("No pair found"); 
+    } 
+
+    // A utility function to insert a new node at the 
+    // beginning of doubly linked list 
+    static Node insert(Node head, int data) 
+    { 
+        Node temp = new Node(); 
+        temp.data = data; 
+        temp.next = temp.prev = null; 
+        if ((head) == null) 
+            (head) = temp; 
+        else { 
+            temp.next = head; 
+            (head).prev = temp; 
+            (head) = temp; 
+        } 
+        return head; 
+    } 
+
+    // Driver Code 
+    public static void Main(String[] args) 
+    { 
+        // Create Doubly Linked List 
+        Node head = null; 
+        head = insert(head, 9); 
+        head = insert(head, 8); 
+        head = insert(head, 6); 
+        head = insert(head, 5); 
+        head = insert(head, 4); 
+        head = insert(head, 2); 
+        head = insert(head, 1); 
+
+        int x = 8; 
+
+        pairProduct(head, x); 
+    } 
+} 
+
+// This code contributed by Rajput-Ji 
+
+```
+
+**Output:**
+
+```
+(1, 8)
+(2, 4)
+
+```
+
+**时间复杂度：** O（n）
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

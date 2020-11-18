@@ -417,17 +417,300 @@ public class LinkedList {
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// CPP code to rearrange linked list in place 
+#include <bits/stdc++.h> 
 
-*play_arrow*
+using namespace std; 
 
-*链接*
-*亮度_4*
-*代码*
+struct node { 
+    int data; 
+    struct node* next; 
+}; 
+typedef struct node Node; 
 
-| `// CPP code to rearrange linked list in place``#include <bits/stdc++.h>``using` `namespace` `std;` [`struct` `node {` `int` `data;` `struct` `node* next;``};``typedef` `struct` `node Node;``// function for rearranging a linked list with high and low value.``void` `rearrange(Node* head)``{` `if` `(head == NULL)` `// Base case.` `return` `;` `// two pointer variable.` `Node *prev = head, *curr = head->next;` `while` `(curr) {` `// swap function for swapping data.` `if` `(prev->data > curr->data)` `swap(prev->data, curr->data);` `// swap function for swapping data.` `if` `(curr->next && curr->next->data > curr->data)` `swap(curr->next->data, curr->data);` [ `prev = curr->next;` `if` `(!curr->next)` `break` `;` `curr = curr->next->next;` `}``}``// function to insert a node in the linked list at the beginning.``void` `push(Node** head,` `int` `k)``{` `Node* tem = (Node*)` `malloc` `(` `sizeof` `(Node));` `tem->data = k;` `tem->next = *head;` `*head = tem;``}``// function to display node of linked list.``void` `display(Node* head)``{` `Node* curr = head;` `while` `(curr != NULL) {` `printf` `(` `"%d "` `, curr->data);` `curr = curr->next;` `}``}``// driver code``int` `main()``{` ] `Node* head = NULL;` `// let create a linked list.`​​ `// 9 -> 6 -> 8 -> 3 -> 7` `push(&head, 7);` `push(&head, 3);` `push(&head, 8);` `push(&head, 6);` `push(&head, 9);` `rearrange(head);` `display(head);` [ `return` `0;``}` |
+// function for rearranging a linked list with high and low value. 
+void rearrange(Node* head) 
+{ 
+    if (head == NULL) // Base case. 
+        return; 
 
-*chevron_right**filter_none*
+    // two pointer variable. 
+    Node *prev = head, *curr = head->next; 
+
+    while (curr) { 
+        // swap function for swapping data. 
+        if (prev->data > curr->data) 
+            swap(prev->data, curr->data); 
+
+        // swap function for swapping data. 
+        if (curr->next && curr->next->data > curr->data) 
+            swap(curr->next->data, curr->data); 
+
+        prev = curr->next; 
+
+        if (!curr->next) 
+            break; 
+        curr = curr->next->next; 
+    } 
+} 
+
+// function to insert a node in the linked list at the beginning. 
+void push(Node** head, int k) 
+{ 
+    Node* tem = (Node*)malloc(sizeof(Node)); 
+    tem->data = k; 
+    tem->next = *head; 
+    *head = tem; 
+} 
+
+// function to display node of linked list. 
+void display(Node* head) 
+{ 
+    Node* curr = head; 
+    while (curr != NULL) { 
+        printf("%d ", curr->data); 
+        curr = curr->next; 
+    } 
+} 
+
+// driver code 
+int main() 
+{ 
+
+    Node* head = NULL; 
+
+    // let create a linked list. 
+    // 9 -> 6 -> 8 -> 3 -> 7 
+    push(&head, 7); 
+    push(&head, 3); 
+    push(&head, 8); 
+    push(&head, 6); 
+    push(&head, 9); 
+
+    rearrange(head); 
+
+    display(head); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java code to rearrange linked list in place 
+class Geeks 
+{ 
+
+static class Node  
+{ 
+    int data; 
+    Node next; 
+} 
+
+// function for rearranging a linked list 
+// with high and low value. 
+static Node rearrange(Node head) 
+{ 
+    if (head == null) // Base case. 
+        return null; 
+
+    // two pointer variable. 
+    Node prev = head, curr = head.next; 
+
+    while (curr != null)  
+    { 
+        // swap function for swapping data. 
+        if (prev.data > curr.data) 
+        { 
+            int t = prev.data; 
+            prev.data = curr.data; 
+            curr.data = t; 
+        } 
+
+        // swap function for swapping data. 
+        if (curr.next != null && curr.next.data > curr.data) 
+        { 
+            int t = curr.next.data; 
+            curr.next.data = curr.data; 
+            curr.data = t; 
+        } 
+
+        prev = curr.next; 
+
+        if (curr.next == null) 
+            break; 
+        curr = curr.next.next; 
+    } 
+    return head; 
+} 
+
+// function to insert a Node in  
+// the linked list at the beginning. 
+static Node push(Node head, int k) 
+{ 
+    Node tem = new Node(); 
+    tem.data = k; 
+    tem.next = head; 
+    head = tem; 
+    return head; 
+} 
+
+// function to display Node of linked list. 
+static void display(Node head) 
+{ 
+    Node curr = head; 
+    while (curr != null) 
+    { 
+        System.out.printf("%d ", curr.data); 
+        curr = curr.next; 
+    } 
+} 
+
+// Driver code 
+public static void main(String args[]) 
+{ 
+
+    Node head = null; 
+
+    // let create a linked list. 
+    // 9 . 6 . 8 . 3 . 7 
+    head = push(head, 7); 
+    head = push(head, 3); 
+    head = push(head, 8); 
+    head = push(head, 6); 
+    head = push(head, 9); 
+
+    head = rearrange(head); 
+
+    display(head); 
+
+} 
+} 
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+**Output:**
+
+```
+6 9 3 8 7
+
+```
+
+**时间复杂度：** O（n）
+**辅助空间：** O（1）
+感谢 [Aditya](https://auth.geeksforgeeks.org/user/aditya1011/articles) 提出了这种方法。
+
+**另一种方法：**（使用递归）
+
+1.  保持指向头节点的指针，并使用递归操作直到最后一个节点
+2.  到达最后一个节点后，开始将最后一个节点交换到根节点的下一个节点
+3.  将头指针移动到下一个节点
+4.  重复此过程，直到头节点和最后一个节点相遇或彼此相邻
+
+```
+
+// C/C++ implementation 
+#include <stdio.h> 
+#include <stdlib.h> 
+
+// Creating the structure for node 
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
+
+// Function to create newNode in a linkedlist 
+struct Node* newNode(int key) 
+{ 
+    struct Node* temp = malloc(sizeof(struct Node)); 
+    temp->data = key; 
+    temp->next = NULL; 
+    return temp; 
+} 
+
+// Function to print the list 
+void printlist(struct Node* head) 
+{ 
+    while (head) { 
+        printf("%d ", head->data); 
+        if (head->next) 
+            printf("->"); 
+        head = head->next; 
+    } 
+    printf("\n"); 
+} 
+
+// Function to rearrange 
+void rearrange(struct Node** head, struct Node* last) 
+{ 
+
+    if (!last) 
+        return; 
+
+    // Recursive call 
+    rearrange(head, last->next); 
+
+    // (*head)->next will be set to NULL 
+    // after rearrangement. 
+    // Need not do any operation further 
+    // Just return here to come out of recursion 
+    if (!(*head)->next) 
+        return; 
+
+    // Rearrange the list until both head 
+    // and last meet or next to each other. 
+    if ((*head) != last && (*head)->next != last) { 
+        struct Node* tmp = (*head)->next; 
+        (*head)->next = last; 
+        last->next = tmp; 
+        *head = tmp; 
+    } 
+    else { 
+        if ((*head) != last) 
+            *head = (*head)->next; 
+        (*head)->next = NULL; 
+    } 
+} 
+
+// Drivers Code 
+int main() 
+{ 
+    struct Node* head = newNode(1); 
+    head->next = newNode(2); 
+    head->next->next = newNode(3); 
+    head->next->next->next = newNode(4); 
+    head->next->next->next->next = newNode(5); 
+
+    // Print original list 
+    printlist(head); 
+
+    struct Node* tmp = head; 
+
+    // Modify the list 
+    rearrange(&tmp, head); 
+
+    // Print modified list 
+    printlist(head); 
+    return 0; 
+} 
+
+```
+
+**Output:**
+
+```
+1 ->2 ->3 ->4 ->5 
+1 ->5 ->2 ->4 ->3
+
+```
+
+如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

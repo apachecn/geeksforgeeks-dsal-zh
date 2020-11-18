@@ -12,20 +12,123 @@
 2.  删除最小操作时，将磁头移至下一个位置。
 3.  如果进行最小操作，则返回First元素。
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Java code for linked list to 
+// perform required operations 
+import java.util.*; 
 
-*play_arrow*
+// Node class 
+class Node 
+{ 
+    int data; 
+    Node next; 
 
-*链接*
-*亮度_4*
-*代码*
+    Node(int d) 
+    { 
+        data = d; 
+        next = null; 
+    } 
+} 
 
-| `// Java code for linked list to``// perform required operations``import` `java.util.*;``// Node class`]`class` `Node`​​`{` `int` `data;` `Node next;`[ `Node(` `int` `d)` `{` `next =` `null` `;` `}``}``// main class``class` `MinDS``{` `Node start;`的 `public` `MinDS()` `{` `start =` `null` `;` `}`[H TG311]  `// Function to add element` `void` `addElement(` `int` `d)` `{` `Node tmp =` `new` `Node(d);` `// If linked list is empty` `if` ] `(start ==` `null` `)` `{` `start = tmp;` `return` `;` `}` `// If head itself is greater` `if` `(d < start.data)` `{` `tmp.next = start;` `start = tmp;` `return` `;` `}` `// If need to insert somewhere in middle` `Node prev = start;`[  `Node ptr = start.next;` `while` `(ptr !=` `null` `)` `{` `if` `(d < ptr.data)` `{` `tmp.next = ptr;` `prev.next = tmp;` `return` `;` `}` `else` `{` `prev = ptr;` `ptr = ptr.next;` `}` `}` `prev.next = tmp;` `}` `// Function to get minimum` `int` `getMin()` ] `{` `return` `start.data;` `}` [H TG404] `// Function to delete minimum` `int` `delMin()` `{` `int` `min = start.data;` `start = start.next;` `return` `min;` `}` [ `// Function to print elements` `void` `print()` `{` `Node ptr = start;` `System.out.print(` `"Elements: "` `);` `while` `(ptr !=` `null` `)` `{` `System.out.print(ptr.data +` `", "` `);` `ptr = ptr.next;` `}` `System.out.println(` `"\n"` `);` `}`[HT G208] `// Driver code` `public` `static` `void` `main(String[] args)` `{` `MinDS x =` `new` `MinDS();` `x.addElement(` `10` `);` `x.addElement(` `20` `);` ] `x.addElement(` `5` `);` `x.addElement(` `15` `);` `x.print();` HTG466] `System.out.println(` `"Get Min: "` `+ x.getMin());` `System.out.println(` `"Del Min: "` `+ x.delMin());` `x.print();` `System.out.println(` `"Min: "` `+ x.getMin());` `}``}`] |
+// main class 
+class MinDS 
+{ 
+    Node start; 
 
-*chevron_right**filter_none***Output:**
+    public MinDS() 
+    { 
+        start = null; 
+    } 
+
+    // Function to add element 
+    void addElement(int d) 
+    { 
+        Node tmp = new Node(d); 
+
+        // If linked list is empty 
+        if (start == null) 
+        { 
+            start = tmp; 
+            return; 
+        } 
+
+        // If head itself is greater 
+        if (d < start.data) 
+        { 
+            tmp.next = start; 
+            start = tmp; 
+            return; 
+        } 
+
+        // If need to insert somewhere in middle 
+        Node prev = start; 
+        Node ptr = start.next; 
+        while (ptr != null) 
+        { 
+            if (d < ptr.data) 
+            { 
+                tmp.next = ptr; 
+                prev.next = tmp; 
+                return; 
+            } 
+            else
+            { 
+                prev = ptr; 
+                ptr = ptr.next; 
+            } 
+        } 
+        prev.next = tmp; 
+    } 
+
+    // Function to get minimum 
+    int getMin() 
+    { 
+        return start.data; 
+    } 
+
+    // Function to delete minimum 
+    int delMin() 
+    { 
+        int min = start.data; 
+        start = start.next; 
+        return min; 
+    } 
+
+    // Function to print elements 
+    void print() 
+    { 
+        Node ptr = start; 
+        System.out.print("Elements: "); 
+        while (ptr != null) 
+        { 
+            System.out.print(ptr.data + ", "); 
+            ptr = ptr.next; 
+        } 
+        System.out.println("\n"); 
+    } 
+
+    // Driver code 
+    public static void main(String[] args) 
+    { 
+        MinDS x = new MinDS(); 
+        x.addElement(10); 
+        x.addElement(20); 
+        x.addElement(5); 
+        x.addElement(15); 
+        x.print(); 
+
+        System.out.println("Get Min: " + x.getMin()); 
+        System.out.println("Del Min: " + x.delMin()); 
+        x.print(); 
+
+        System.out.println("Min: " + x.getMin()); 
+    } 
+} 
+
+```
+
+**Output:**
 
 ```
 Elements: 5, 10, 15, 20, 

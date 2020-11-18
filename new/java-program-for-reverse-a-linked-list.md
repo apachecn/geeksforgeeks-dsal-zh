@@ -27,36 +27,180 @@ Output : 1->NULL
 
 ## 爪哇
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Java program for reversing the linked list 
 
-*play_arrow*
+class LinkedList { 
 
-*链接*
-*亮度_4*
-*代码*
+    static Node head; 
 
-| `// Java program for reversing the linked list``class` `LinkedList {` `static` ] `Node head;` `static` `class` `Node {` `int` `data;` `Node next;` `Node(` `int` `d) {` `data = d;` `next =` `null` `;` `}` `}` `/* Function to reverse the linked list */` `Node reverse(Node node) {` `Node prev =` `null` `;` `Node current = node;` `Node next =` `null` `;` `while` `(current !=` `null` `) {` `next = current.next;` `current.next = prev;` `prev = current;` `current = next;` `}` `node = prev;` `return` `node;` `}`的 `// prints content of double linked list` `void` `printList(Node node) {` `while` `(node !=` `null` `) {` `System.out.print(node.data +` `" "` `);` `node = node.next;` `}` `}` `public` `static` `void` `main(String[] args) {` `LinkedList list =` `new` `LinkedList();` `list.head =` `new` `Node(` `85` `);` `list.head.next =` `new` `Node(` `15` `);` `list.head.next.next =` `new` `Node(` `4` `);` `list.head.next.next.next =` `new` `Node(` `20` `);` `System.out.println(` `"Given Linked list"` `);` `list.printList(head);` `head = list.reverse(head);` `System.out.println(` `""` `);` `System.out.println(` `"Reversed linked list "` `);` `list.printList(head);` `}``}``// This code has been contributed by Mayank Jaiswal` |
+    static class Node { 
 
-*chevron_right**filter_none*
+        int data; 
+        Node next; 
+
+        Node(int d) { 
+            data = d; 
+            next = null; 
+        } 
+    } 
+
+    /* Function to reverse the linked list */
+    Node reverse(Node node) { 
+        Node prev = null; 
+        Node current = node; 
+        Node next = null; 
+        while (current != null) { 
+            next = current.next; 
+            current.next = prev; 
+            prev = current; 
+            current = next; 
+        } 
+        node = prev; 
+        return node; 
+    } 
+
+    // prints content of double linked list 
+    void printList(Node node) { 
+        while (node != null) { 
+            System.out.print(node.data + " "); 
+            node = node.next; 
+        } 
+    } 
+
+    public static void main(String[] args) { 
+        LinkedList list = new LinkedList(); 
+        list.head = new Node(85); 
+        list.head.next = new Node(15); 
+        list.head.next.next = new Node(4); 
+        list.head.next.next.next = new Node(20); 
+
+        System.out.println("Given Linked list"); 
+        list.printList(head); 
+        head = list.reverse(head); 
+        System.out.println(""); 
+        System.out.println("Reversed linked list "); 
+        list.printList(head); 
+    } 
+} 
+
+// This code has been contributed by Mayank Jaiswal 
+
+```
 
 **递归方法：**
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+void recursiveReverse(struct Node** head_ref) 
+{ 
+    struct Node* first; 
+    struct Node* rest; 
 
-*play_arrow*
+    /* empty list */
+    if (*head_ref == NULL) 
+       return;    
 
-*链接*
-*亮度_4*
-*代码*
+    /* suppose first = {1, 2, 3}, rest = {2, 3} */
+    first = *head_ref;   
+    rest  = first->next; 
 
-| `void` `recursiveReverse(` `struct` `Node** head_ref)``{` `struct` `Node* first;` `struct` `Node* rest;` `/* empty list */` `if` `(*head_ref == NULL)` `return` `;   ` `/* suppose first = {1, 2, 3}, rest = {2, 3} */` `first = *head_ref;  ` `rest  = first->next;` `/* List has only one node */` `if` `(rest == NULL)` `return` `;   ` `/* reverse the rest list and put the first element at the end */` `recursiveReverse(&rest);` `first->next->next  = first;  ` `/* tricky step -- see the diagram */` `first->next  = NULL;          ` `/* fix the head pointer */` `*head_ref = rest;              ``}` |
+    /* List has only one node */
+    if (rest == NULL) 
+       return;    
 
-*chevron_right**filter_none*
+    /* reverse the rest list and put the first element at the end */
+    recursiveReverse(&rest); 
+    first->next->next  = first;   
+
+    /* tricky step -- see the diagram */
+    first->next  = NULL;           
+
+    /* fix the head pointer */
+    *head_ref = rest;               
+} 
+
+```
 
 **一种更简单且尾部递归的方法**
+
+## 爪哇
+
+```
+
+// Java program for reversing the Linked list 
+
+class LinkedList { 
+
+    static Node head; 
+
+    static class Node { 
+
+        int data; 
+        Node next; 
+
+        Node(int d) { 
+            data = d; 
+            next = null; 
+        } 
+    } 
+
+    // A simple and tail recursive function to reverse 
+    // a linked list.  prev is passed as NULL initially. 
+    Node reverseUtil(Node curr, Node prev) { 
+
+        /* If last node mark it head*/
+        if (curr.next == null) { 
+            head = curr; 
+
+            /* Update next to prev node */
+            curr.next = prev; 
+            return null; 
+        } 
+
+        /* Save curr->next node for recursive call */
+        Node next1 = curr.next; 
+
+        /* and update next ..*/
+        curr.next = prev; 
+
+        reverseUtil(next1, curr); 
+        return head; 
+    } 
+
+    // prints content of double linked list 
+    void printList(Node node) { 
+        while (node != null) { 
+            System.out.print(node.data + " "); 
+            node = node.next; 
+        } 
+    } 
+
+    public static void main(String[] args) { 
+        LinkedList list = new LinkedList(); 
+        list.head = new Node(1); 
+        list.head.next = new Node(2); 
+        list.head.next.next = new Node(3); 
+        list.head.next.next.next = new Node(4); 
+        list.head.next.next.next.next = new Node(5); 
+        list.head.next.next.next.next.next = new Node(6); 
+        list.head.next.next.next.next.next.next = new Node(7); 
+        list.head.next.next.next.next.next.next.next = new Node(8); 
+
+        System.out.println("Original Linked list "); 
+        list.printList(head); 
+        Node res = list.reverseUtil(head, null); 
+        System.out.println(""); 
+        System.out.println(""); 
+        System.out.println("Reversed linked list "); 
+        list.printList(res); 
+    } 
+} 
+// This code has been contributed by Mayank Jaiswal 
+
+```
+
+请参阅[的完整文章反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，以了解更多详细信息！
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

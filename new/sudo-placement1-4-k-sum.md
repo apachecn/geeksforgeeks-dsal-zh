@@ -28,17 +28,484 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program for 
+// SP - K Sum 
 
-*play_arrow*
+#include <iostream> 
+using namespace std; 
 
-*链接*
-*亮度_4*
-*代码*
+// structure for linked list 
+struct Node { 
+    long long data; 
+    Node* next; 
+}; 
 
-| `// C++ program for``// SP - K Sum``#include <iostream>``using` `namespace` `std;``// structure for linked list``struct` `Node {` `long` `long` `data;` `Node* next;``};``// allocated new node``Node* newNode(` `int` `key)``{` `Node* temp =` `new` `Node;` `temp->data = key;` `temp->next = NULL;` `return` `temp;``}` [`// function to insert node in a Linked List``Node* insertNode(Node* head,` `int` `key)``{` `if` `(head == NULL)` `head = newNode(key);` `else` `head->next = insertNode(head->next, key);` `return` `head;``}``// traverse the node``// to print it``void` `print(Node* head)``{` `// travere the linked list`​​ `while` `(head) {` `cout << head->data <<` `" "` `;` `head = head->next;` `}` `cout << endl;``}``// function to perform the following operation``void` `KSum(Node* head,` `int` `k)``{` `// initially pointing to start` `Node* temp = head;` `// iterate till end` `while` `(temp) {` ] `// dummy variable to store k` `long` `long` `count = k;` `// summation of nodes` `long` `long` `sum = 0;` `// currently at node from` `// which itearation is done` `Node* curr = temp;` `// till k nodes are visited and` `// last node is not visited` `while` `(count-- && curr) {` `// add to sum the node data` `sum = sum + curr->data;` `// move to the next node` `curr = curr->next;` `}` [ `// change pointer's data of temp to sum` `temp->data = sum;` `// move temp to next pointer`[HTG14 3] `temp->next = curr;` [ `// move temp to the next pointer` `temp = temp->next;` `}``}``// Driver Code``int` `main()``{` `Node* head = NULL;` `// inserts nodes in the linked list` `head = insertNode(head, 1);` `head = insertNode(head, 2);` `head = insertNode(head, 3);` `head = insertNode(head, 4);` `head = insertNode(head, 5);` `head = insertNode(head, 6);` `int` `k = 2;` `// Function call to perform the` `// given operations` `KSum(head, k);` [H TG188] `print(head);` `return` `0;``}` |
+// allocated new node 
+Node* newNode(int key) 
+{ 
+    Node* temp = new Node; 
+    temp->data = key; 
+    temp->next = NULL; 
+    return temp; 
+} 
 
-*chevron_right**filter_none*
+// function to insert node in a Linked List 
+Node* insertNode(Node* head, int key) 
+{ 
+    if (head == NULL) 
+        head = newNode(key); 
+    else
+        head->next = insertNode(head->next, key); 
+
+    return head; 
+} 
+
+// traverse the node 
+// to print it 
+void print(Node* head) 
+{ 
+    // travere the linked list 
+    while (head) { 
+        cout << head->data << " "; 
+        head = head->next; 
+    } 
+    cout << endl; 
+} 
+
+// function to perform the following operation 
+void KSum(Node* head, int k) 
+{ 
+    // initially pointing to start 
+    Node* temp = head; 
+
+    // iterate till end 
+    while (temp) { 
+
+        // dummy variable to store k 
+        long long count = k; 
+
+        // summation of nodes 
+        long long sum = 0; 
+
+        // currently at node from 
+        // which itearation is done 
+        Node* curr = temp; 
+
+        // till k nodes are visited and 
+        // last node is not visited 
+        while (count-- && curr) { 
+            // add to sum the node data 
+            sum = sum + curr->data; 
+
+            // move to the next node 
+            curr = curr->next; 
+        } 
+
+        // change pointer's data of temp to sum 
+        temp->data = sum; 
+
+        // move temp to next pointer 
+        temp->next = curr; 
+
+        // move temp to the next pointer 
+        temp = temp->next; 
+    } 
+} 
+
+// Driver Code 
+int main() 
+{ 
+
+    Node* head = NULL; 
+
+    // inserts nodes in the linked list 
+    head = insertNode(head, 1); 
+    head = insertNode(head, 2); 
+    head = insertNode(head, 3); 
+    head = insertNode(head, 4); 
+    head = insertNode(head, 5); 
+    head = insertNode(head, 6); 
+
+    int k = 2; 
+    // Function call to perform the 
+    // given operations 
+    KSum(head, k); 
+
+    // print the linked list 
+    print(head); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program for 
+// SP - K Sum 
+
+import java.io.*; 
+import java.util.*; 
+
+// structure for linked list 
+class Node  
+{ 
+    int data; 
+    Node next; 
+    Node(int key) 
+    { 
+        data = key; 
+        next = null; 
+    } 
+} 
+
+class GFG 
+{ 
+
+// allocated new node 
+static Node head; 
+
+// function to insert node 
+// in a Linked List 
+public static Node insertNode(Node head, int key) 
+{ 
+    if (head == null) 
+        head = new Node(key); 
+    else
+        head.next = insertNode(head.next, key); 
+
+    return head; 
+} 
+
+// traverse the node 
+// to print it 
+public static void print(Node head) 
+{ 
+    // travere the linked list 
+    while (head != null)  
+    { 
+        System.out.print(head.data + " "); 
+        head = head.next; 
+    } 
+    System.out.println(); 
+} 
+
+// function to perform  
+// the following operation 
+public static void KSum(Node head, int k) 
+{ 
+    // initially pointing 
+    // to start 
+    Node temp = head; 
+
+    // iterate till end 
+    while (temp != null)  
+    { 
+
+        // dummy variable 
+        // to store k 
+        int count = k; 
+
+        // summation of nodes 
+        int sum = 0; 
+
+        // currently at node from 
+        // which itearation is done 
+        Node curr = temp; 
+
+        // till k nodes are visited and 
+        // last node is not visited 
+        while (count > 0 && curr != null)  
+        { 
+            // add to sum the node data 
+            sum = sum + curr.data; 
+
+            // move to the next node 
+            curr = curr.next; 
+            count--; 
+        } 
+
+        // change pointer's data 
+        // of temp to sum 
+        temp.data = sum; 
+
+        // move temp to 
+        // next pointer 
+        temp.next = curr; 
+
+        // move temp to  
+        // the next pointer 
+        temp = temp.next; 
+    } 
+
+    //return temp; 
+} 
+
+// Driver Code 
+public static void main(String args[]) 
+{ 
+     head = null; 
+
+    // inserts nodes in 
+    // the linked list 
+    head = insertNode(head, 1); 
+    head = insertNode(head, 2); 
+    head = insertNode(head, 3); 
+    head = insertNode(head, 4); 
+    head = insertNode(head, 5); 
+    head = insertNode(head, 6); 
+
+    int k = 2; 
+
+    // Function call to perform  
+    // the given operations 
+     KSum(head, k); 
+
+    // print the linked list 
+    print(head); 
+} 
+} 
+
+```
+
+## Python3
+
+```
+
+# Python program for 
+# SP - K Sum 
+
+# structure for linked list 
+class Node: 
+    def __init__(self, key): 
+        self.data = key 
+        self.next = None
+
+# function to insert node in a Linked List 
+def insertNode(head: Node, key: int) -> Node: 
+    if head is None: 
+        head = Node(key) 
+    else: 
+        head.next = insertNode(head.next, key) 
+
+    return head 
+
+# traverse the node 
+# to print it 
+def Print(head: Node): 
+
+    # travere the linked list 
+    while head: 
+        print(head.data, end = " ") 
+        head = head.next
+    print() 
+
+# function to perform the following operation 
+def KSum(head: Node, k: int): 
+
+    # initially pointing to start 
+    temp = head 
+
+    # iterate till end 
+    while temp: 
+
+        # dummy variable to store k 
+        count = k 
+
+        # summation of nodes 
+        sum = 0
+
+        # currently at node from 
+        # which itearation is done 
+        curr = temp 
+
+        # till k nodes are visited and 
+        # last node is not visited 
+        while count and curr: 
+
+            # add to sum the node data 
+            sum = sum + curr.data 
+
+            # move to the next node 
+            curr = curr.next
+            count -= 1
+
+        # change pointer's data of temp to sum 
+        temp.data = sum
+
+        # move temp to next pointer 
+        temp.next = curr 
+
+        # move temp to the next pointer 
+        temp = temp.next
+
+# Driver Code 
+if __name__ == "__main__": 
+    head = None
+
+    # inserts nodes in the linked list 
+    head = insertNode(head, 1) 
+    head = insertNode(head, 2) 
+    head = insertNode(head, 3) 
+    head = insertNode(head, 4) 
+    head = insertNode(head, 5) 
+    head = insertNode(head, 6) 
+
+    k = 2
+
+    # Function call to perform the 
+    # given operations 
+    KSum(head, k) 
+
+    # print the linked list 
+    Print(head) 
+
+# This code is contributed by 
+# sanjeev2552 
+
+```
+
+## C＃
+
+```
+
+// C# program for SP - K Sum 
+using System; 
+
+// structure for linked list 
+public class Node  
+{ 
+    public int data; 
+    public Node next; 
+    public Node(int key) 
+    { 
+        data = key; 
+        next = null; 
+    } 
+} 
+
+public class GFG 
+{ 
+
+// allocated new node 
+static Node head; 
+
+// function to insert node 
+// in a Linked List 
+public static Node insertNode(Node head, int key) 
+{ 
+    if (head == null) 
+        head = new Node(key); 
+    else
+        head.next = insertNode(head.next, key); 
+
+    return head; 
+} 
+
+// traverse the node 
+// to print it 
+public static void print(Node head) 
+{ 
+    // travere the linked list 
+    while (head != null)  
+    { 
+        Console.Write(head.data + " "); 
+        head = head.next; 
+    } 
+    Console.WriteLine(); 
+} 
+
+// function to perform  
+// the following operation 
+public static void KSum(Node head, int k) 
+{ 
+    // initially pointing 
+    // to start 
+    Node temp = head; 
+
+    // iterate till end 
+    while (temp != null)  
+    { 
+
+        // dummy variable 
+        // to store k 
+        int count = k; 
+
+        // summation of nodes 
+        int sum = 0; 
+
+        // currently at node from 
+        // which itearation is done 
+        Node curr = temp; 
+
+        // till k nodes are visited and 
+        // last node is not visited 
+        while (count > 0 && curr != null)  
+        { 
+            // add to sum the node data 
+            sum = sum + curr.data; 
+
+            // move to the next node 
+            curr = curr.next; 
+            count--; 
+        } 
+
+        // change pointer's data 
+        // of temp to sum 
+        temp.data = sum; 
+
+        // move temp to 
+        // next pointer 
+        temp.next = curr; 
+
+        // move temp to  
+        // the next pointer 
+        temp = temp.next; 
+    } 
+    // return temp; 
+} 
+
+// Driver Code 
+public static void Main() 
+{ 
+    head = null; 
+
+    // inserts nodes in 
+    // the linked list 
+    head = insertNode(head, 1); 
+    head = insertNode(head, 2); 
+    head = insertNode(head, 3); 
+    head = insertNode(head, 4); 
+    head = insertNode(head, 5); 
+    head = insertNode(head, 6); 
+
+    int k = 2; 
+
+    // Function call to perform  
+    // the given operations 
+    KSum(head, k); 
+
+    // print the linked list 
+    print(head); 
+} 
+} 
+
+/* This code contributed by PrinciRaj1992 */
+
+```
+
+**输出：**
+
+```
+3 7 11
+```
+
+被誉为业界最抢手的技能之一，拥有我们的 [**C ++ STL**](https://practice.geeksforgeeks.org/courses/cpp-stl?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=GFG_Article_Bottom_CPP_STL) 课程的编码基础，并通过严格的问题解决方法掌握了这些概念。
+
+本文由 **Team Geeksforgeeks** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

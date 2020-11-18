@@ -463,20 +463,97 @@ a 3 b r 2
 3.  删除频率大于2的节点。
 4.  如果字符不同，则更新计数值。
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program implementing run length encoding 
+#include<stdio.h> 
+#include<stdlib.h> 
 
-*play_arrow*
+struct Node 
+{ 
+    char data; 
+    struct Node* next; 
+    Node(int x) 
+    { 
+        data = x; 
+        next = NULL; 
+    } 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Function to add node to the list 
+Node* insert (Node *head, int data) 
+{ 
+    if (head == NULL) 
+        return new Node(data); 
+    head->next = insert(head->next, data); 
+    return head; 
+} 
 
-| `// C++ program implementing run length encoding``#include<stdio.h>``#include<stdlib.h>``struct` `Node``{` `char` `data;` `struct` `Node* next;` `Node(` `int` `x)` `{` `data = x;` `next = NULL;` `}``};``// Function to add node to the list``Node* insert (Node *head,` `int` `data)``{` `if` `(head == NULL)` `return` `new` `Node(data);` `head->next = insert(head->next, data);` `return` `head;``}``// Function to print the list``void` `printList (Node* head)``{` `while` `(head != NULL)` `{` `printf` `(` `"%c "` `,head->data);` `head = head->next;` `}` `return` `;``}``void` `runLengthEncode (Node* head)``{`​​  `Node* temp = NULL;` `Node* ptr = NULL;` `int` `count = 0;` `//count the number of characters` `temp = head;` `while` `(temp != NULL)` `{` `ptr = temp;` `count = 1;` `//check if current data and next data is same.If same, then increment count` `while` `(temp->next != NULL &&` `temp->data == temp->next->data)` `{` `count++;` `if` `(count > 2)` `{` `// delete only when the node value is repeated more than` `// twice.` `ptr->next = temp->next;` `free` `(temp);` `temp = ptr;` `}` `temp = temp->next;` `}` [ `// update only when the node value is repeated more than one time.` `if` `(count > 1)` `temp->data = count +` `'0'` `;` `temp = temp->next;` `}` `return` `;``}``// Driver code``int` `main()``{` `// Creating the linked list` `Node* head =` `new` `Node(` `'a'` `);` `head->next =` `new` `Node(` `'a'` `);` `head->next->next =` ] `new` `Node(` `'a'` `);` `head->next->next->next =` `new` `Node(` `'b'` `);` `head->next->next->next->next =` `new` `Node(` `'r'` `);` `head->next->next->next->next->next =` `new` `Node(` `'r'` `);` `runLengthEncode (head);` `printList (head);` `return` `0;``}` |
+// Function to print the list 
+void printList (Node* head) 
+{ 
+    while (head != NULL) 
+    { 
+        printf ("%c ",head->data); 
+        head = head->next; 
+    } 
+    return; 
+} 
 
-*chevron_right**filter_none***Output:**
+void runLengthEncode (Node* head) 
+{ 
+    Node* temp = NULL; 
+    Node* ptr = NULL; 
+    int count = 0; //count the number of characters 
+
+    temp = head; 
+    while (temp != NULL) 
+    { 
+        ptr = temp; 
+        count = 1; 
+        //check if current data and next data is same.If same, then increment count 
+        while (temp->next != NULL && 
+                temp->data == temp->next->data) 
+        { 
+            count++; 
+            if (count > 2) 
+            { 
+                // delete only when the node value is repeated more than 
+                // twice. 
+                ptr->next = temp->next; 
+                free(temp); 
+                temp = ptr; 
+            } 
+            temp = temp->next; 
+        } 
+
+        // update only when the node value is repeated more than one time. 
+        if (count > 1) 
+            temp->data = count + '0'; 
+        temp = temp->next; 
+    } 
+    return; 
+} 
+
+// Driver code 
+int main() 
+{ 
+    // Creating the linked list 
+    Node* head = new Node('a'); 
+    head->next = new Node('a'); 
+    head->next->next = new Node('a'); 
+    head->next->next->next = new Node('b'); 
+    head->next->next->next->next = new Node('r'); 
+    head->next->next->next->next->next = new Node('r'); 
+
+    runLengthEncode (head); 
+    printList (head); 
+    return 0; 
+} 
+
+```
+
+**Output:**
 
 ```
 a 3 b r 2

@@ -17,17 +17,243 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation of the approach 
+#include <iostream> 
+using namespace std; 
 
-*play_arrow*
+// Represents node of the linked list 
+struct Node { 
+    int first; 
+    int second; 
+    Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Insertion in linked list 
+void insert(Node** head, int f, int s) 
+{ 
+    Node* ptr = *head; 
+    Node* temp = new Node(); 
+    temp->first = f; 
+    temp->second = s; 
+    temp->next = NULL; 
 
-| `// C++ implementation of the approach``#include <iostream>``using` `namespace` `std;``// Represents node of the linked list``struct` `Node {` `int` `first;` `int` `second;` `Node* next;``};``// Insertion in linked list``void` `insert(Node** head,` `int` `f,` `int` `s)``{` `Node* ptr = *head;` `Node* temp =` `new` `Node();` `temp->first = f;` `temp->second = s;` `temp->next = NULL;` `if` `(*head == NULL)` `*head = temp;` `else` `{` `while` `(ptr->next != NULL)` [H TG52] `ptr->next = temp;` `}``}``// Function that returns true``// if the sum of element in a node = k``bool` `checkK(Node* head,` `int` `k)``{` `// Check every node of the linked list` `while` `(head != NULL) {` `// If sum of the data of the current node = k` `if` `((head->first + head->second) == k)` `return` `true` `;` `// Get to next node in the list` `head = head->next;` `}` `// No matching node found` `return` `false` `;``}``// Driver code``int` `main()``{` `Node* head = NULL;` `insert(&head, 1, 2);` `insert(&head, 2, 3);` `insert(&head, 3, 4);` `insert(&head, 4, 5);` `int` `k = 5;` `if` `(checkK(head, k))` `cout <<` `"Yes"` `;` `else` `cout <<` `"No"` `;` `return` `0;``}` |
+    if (*head == NULL) 
+        *head = temp; 
+    else { 
+        while (ptr->next != NULL) 
+            ptr = ptr->next; 
 
-*chevron_right**filter_none*
+        ptr->next = temp; 
+    } 
+} 
+
+// Function that returns true 
+// if the sum of element in a node = k 
+bool checkK(Node* head, int k) 
+{ 
+
+    // Check every node of the linked list 
+    while (head != NULL) { 
+
+        // If sum of the data of the current node = k 
+        if ((head->first + head->second) == k) 
+            return true; 
+
+        // Get to next node in the list 
+        head = head->next; 
+    } 
+
+    // No matching node found 
+    return false; 
+} 
+// Driver code 
+int main() 
+{ 
+    Node* head = NULL; 
+    insert(&head, 1, 2); 
+    insert(&head, 2, 3); 
+    insert(&head, 3, 4); 
+    insert(&head, 4, 5); 
+    int k = 5; 
+
+    if (checkK(head, k)) 
+        cout << "Yes"; 
+    else
+        cout << "No"; 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation of the approach 
+class GfG { 
+
+    // Represents node of the linked list 
+    static class Node { 
+        int first; 
+        int second; 
+        Node next; 
+    } 
+    static Node head = null; 
+
+    // Insertion in linked list 
+    static void insert(int f, int s) 
+    { 
+        Node ptr = head; 
+        Node temp = new Node(); 
+        temp.first = f; 
+        temp.second = s; 
+        temp.next = null; 
+
+        if (head == null) 
+            head = temp; 
+        else { 
+            while (ptr.next != null) 
+                ptr = ptr.next; 
+
+            ptr.next = temp; 
+        } 
+    } 
+
+    // Function that returns true 
+    // if the sum of element in a node = k 
+    static boolean checkK(Node head, int k) 
+    { 
+
+        // Check every node of the linked list 
+        while (head != null) { 
+
+            // If sum of the data of the current node = k 
+            if ((head.first + head.second) == k) 
+                return true; 
+
+            // Get to next node in the list 
+            head = head.next; 
+        } 
+
+        // No matching node found 
+        return false; 
+    } 
+    // Driver code 
+    public static void main(String[] args) 
+    { 
+        // Node* head = NULL; 
+        insert(1, 2); 
+        insert(2, 3); 
+        insert(3, 4); 
+        insert(4, 5); 
+        int k = 5; 
+
+        if (checkK(head, k) == true) 
+            System.out.println("Yes"); 
+        else
+            System.out.println("No"); 
+    } 
+} 
+
+// This code is contributed by Prerna Saini 
+
+```
+
+## C＃
+
+```
+
+using System; 
+
+// c# implementation of the approach 
+public class GfG { 
+
+    // Represents node of the linked list 
+    public class Node { 
+        public int first; 
+        public int second; 
+        public Node next; 
+    } 
+    public static Node head = null; 
+
+    // Insertion in linked list 
+    public static void insert(int f, int s) 
+    { 
+        Node ptr = head; 
+        Node temp = new Node(); 
+        temp.first = f; 
+        temp.second = s; 
+        temp.next = null; 
+
+        if (head == null) { 
+            head = temp; 
+        } 
+        else { 
+            while (ptr.next != null) { 
+                ptr = ptr.next; 
+            } 
+
+            ptr.next = temp; 
+        } 
+    } 
+
+    // Function that returns true 
+    // if the sum of element in a node = k 
+    public static bool checkK(Node head, int k) 
+    { 
+
+        // Check every node of the linked list 
+        while (head != null) { 
+
+            // If sum of the data of the current node = k 
+            if ((head.first + head.second) == k) { 
+                return true; 
+            } 
+
+            // Get to next node in the list 
+            head = head.next; 
+        } 
+
+        // No matching node found 
+        return false; 
+    } 
+    // Driver code 
+    public static void Main(string[] args) 
+    { 
+        // Node* head = NULL; 
+        insert(1, 2); 
+        insert(2, 3); 
+        insert(3, 4); 
+        insert(4, 5); 
+        int k = 5; 
+
+        if (checkK(head, k) == true) { 
+            Console.WriteLine("Yes"); 
+        } 
+        else { 
+            Console.WriteLine("No"); 
+        } 
+    } 
+} 
+
+```
+
+**Output:**
+
+```
+Yes
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

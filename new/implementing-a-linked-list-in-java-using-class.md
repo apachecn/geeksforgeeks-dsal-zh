@@ -10,20 +10,24 @@
 
 在Java中，LinkedList可以表示为一个类，而Node可以表示为单独的类。 LinkedList类包含Node类类型的引用。
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+class LinkedList { 
+    Node head; // head of list 
 
-*play_arrow*
+    /* Linked list Node*/
+    class Node { 
+        int data; 
+        Node next; 
 
-*链接*
-*亮度_4*
-*代码*
+        // Constructor to create a new node 
+        // Next is by default initialized 
+        // as null 
+        Node(int d) { data = d; } 
+    } 
+}
 
-| `class` `LinkedList {` `Node head;` `// head of list` `/* Linked list Node*/` `class` `Node {` `int` `data;` `Node next;`的 `// Constructor to create a new node` `// Next is by default initialized` `// as null` `Node(` `int` `d) { data = d; }` `}``}` |
-
-*chevron_right**filter_none*
+```
 
 ### 创建和插入
 
@@ -33,20 +37,105 @@
 
 [![linkedlist_insert_last](img/428a5c975bfca4a1c08bc29cf2a6e78a.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_last.png)
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+import java.io.*; 
 
-*play_arrow*
+// Java program to implement 
+// a Singly Linked List 
+public class LinkedList { 
 
-*链接*
-*亮度_4*
-*代码*
+    Node head; // head of list 
 
-| `import` `java.io.*;``// Java program to implement``// a Singly Linked List``public` `class` `LinkedList {` `Node head;` `// head of list` `// Linked list Node.` `// This inner class is made static` `// so that main() can access it` `static` `class` `Node {` `int` `data;` `Node next;` `// Constructor` `Node(` `int` `d)` `{` `data = d;` `next =` `null` `;` `}` `}`​​ `// Method to insert a new node`[H TG273]  `public` `static` `LinkedList insert(LinkedList list,` `int` `data)` `{` `// Create a new node with given data` `Node new_node =` `new` `Node(data);` `new_node.next =` `null` `;` `// If the Linked List is empty,` `// then make the new node as head` `if` `(list.head ==` `null` `) {` `list.head = new_node;` `}` `else` `{` `// Else traverse till the last node` `// and insert the new_node there` `Node last = list.head;` `while` `(last.next !=` `null` `) {` `last = last.next;` `}` [ `// Insert the new_node at last node` `last.next = new_node;` `}` [ `// Return the list by head` `return` `list;` `}` [ `// Method to print the LinkedList.` `public` `static` `void` `printList(LinkedList list)` `{` `Node currNode = list.head;` `System.out.print(` `"LinkedList: "` `);` `// Traverse through the LinkedList` `while` `(currNode !=` `null` `) {` `// Print the data at current node` `System.out.print(currNode.data +` `" "` `);` `// Go to next node` `currNode = currNode.next;` `}` `}` `// Driver code`3]  `public` `static` `void` `main(String[] args)` `{` `/* Start with the empty list. */` `LinkedList list =` `new` `LinkedList();` `//` `// ******INSERTION******` `//` [ `// Insert the values` `list = insert(list,` `1` `);` `list = insert(list,` `2` `);` `list = insert(list,` `3` `);` `list = insert(list,` `4` `);` `list = insert(list,` `5` `);` `list = insert(list,` `6` `);` `list = insert(list,` `7` `);` `list = insert(list,` `8` `);` `printList(list);` `}``}` |
+    // Linked list Node. 
+    // This inner class is made static 
+    // so that main() can access it 
+    static class Node { 
 
-*chevron_right**filter_none***Output:**
+        int data; 
+        Node next; 
+
+        // Constructor 
+        Node(int d) 
+        { 
+            data = d; 
+            next = null; 
+        } 
+    } 
+
+    // Method to insert a new node 
+    public static LinkedList insert(LinkedList list, int data) 
+    { 
+        // Create a new node with given data 
+        Node new_node = new Node(data); 
+        new_node.next = null; 
+
+        // If the Linked List is empty, 
+        // then make the new node as head 
+        if (list.head == null) { 
+            list.head = new_node; 
+        } 
+        else { 
+            // Else traverse till the last node 
+            // and insert the new_node there 
+            Node last = list.head; 
+            while (last.next != null) { 
+                last = last.next; 
+            } 
+
+            // Insert the new_node at last node 
+            last.next = new_node; 
+        } 
+
+        // Return the list by head 
+        return list; 
+    } 
+
+    // Method to print the LinkedList. 
+    public static void printList(LinkedList list) 
+    { 
+        Node currNode = list.head; 
+
+        System.out.print("LinkedList: "); 
+
+        // Traverse through the LinkedList 
+        while (currNode != null) { 
+            // Print the data at current node 
+            System.out.print(currNode.data + " "); 
+
+            // Go to next node 
+            currNode = currNode.next; 
+        } 
+    } 
+
+    // Driver code 
+    public static void main(String[] args) 
+    { 
+        /* Start with the empty list. */
+        LinkedList list = new LinkedList(); 
+
+        // 
+        // ******INSERTION****** 
+        // 
+
+        // Insert the values 
+        list = insert(list, 1); 
+        list = insert(list, 2); 
+        list = insert(list, 3); 
+        list = insert(list, 4); 
+        list = insert(list, 5); 
+        list = insert(list, 6); 
+        list = insert(list, 7); 
+        list = insert(list, 8); 
+
+        // Print the LinkedList 
+        printList(list); 
+    } 
+} 
+
+```
+
+**Output:**
 
 ```
 LinkedList: 1 2 3 4 5 6 7 8
@@ -57,20 +146,107 @@ LinkedList: 1 2 3 4 5 6 7 8
 
 对于遍历，下面是一个通用函数printList（），它通过将列表从头节点遍历到最后一个来打印任何给定的列表。
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+import java.io.*; 
 
-*play_arrow*
+// Java program to implement 
+// a Singly Linked List 
+public class LinkedList { 
 
-*链接*
-*亮度_4*
-*代码*
+    Node head; // head of list 
 
-| `import` `java.io.*;``// Java program to implement``// a Singly Linked List``public` `class` `LinkedList {` `Node head;` `// head of list` `// Linked list Node.` `// This inner class is made static` `// so that main() can access it` `static` `class` `Node {` `int` `data;` `Node next;` `// Constructor` `Node(` `int` `d)` `{` `data = d;` `next =` `null` `;` `}`​​  `}` `// Method to insert a new node`[H TG276]  `public` `static` `LinkedList insert(LinkedList list,` `int` `data)` `{` `// Create a new node with given data` `Node new_node =` `new` `Node(data);` `new_node.next =` `null` `;` `// If the Linked List is empty,` ] `// then make the new node as head` `if` `(list.head ==` `null` `) {` `list.head = new_node;` `}` `else` `{` `// Else traverse till the last node` `// and insert the new_node there` `Node last = list.head;` `while` `(last.next !=` `null` `) {` `last = last.next;` `}` `// Insert the new_node at last node` `last.next = new_node;` `}` [ `// Return the list by head` `return` `list;` `}` [ `// Method to print the LinkedList.` `public` `static` `void` `printList(LinkedList list)` `{` `Node currNode = list.head;` `System.out.print(` `"LinkedList: "` `);` `// Traverse through the LinkedList` `while` `(currNode !=` `null` `) {` `// Print the data at current node` `System.out.print(currNode.data +` `" "` `);` [ `// Go to next node` `currNode = currNode.next;` `}` `}` `// **************MAIN METHOD**************`[HTG36 6]  [ `// method to create a Singly linked list with n nodes` `public` `static` `void` `main(String[] args)` `{` `/* Start with the empty list. */` `LinkedList list =` `new` `LinkedList();` `//` `// ******INSERTION******` `//` `// Insert the values` `list = insert(list,` `1` `);` `list = insert(list,` `2` `);` `list = insert(list,` `3` `);` `list = insert(list,` `4` `);` `list = insert(list,` `5` `);` `list = insert(list,` `6` `);` `list = insert(list,` `7` `);` `list = insert(list,` `8` `);` `// Print the LinkedList` `printList(list);` `}``}` |
+    // Linked list Node. 
+    // This inner class is made static 
+    // so that main() can access it 
+    static class Node { 
 
-*chevron_right**filter_none***Output:**
+        int data; 
+        Node next; 
+
+        // Constructor 
+        Node(int d) 
+        { 
+            data = d; 
+            next = null; 
+        } 
+    } 
+
+    // Method to insert a new node 
+    public static LinkedList insert(LinkedList list, int data) 
+    { 
+        // Create a new node with given data 
+        Node new_node = new Node(data); 
+        new_node.next = null; 
+
+        // If the Linked List is empty, 
+        // then make the new node as head 
+        if (list.head == null) { 
+            list.head = new_node; 
+        } 
+        else { 
+            // Else traverse till the last node 
+            // and insert the new_node there 
+            Node last = list.head; 
+            while (last.next != null) { 
+                last = last.next; 
+            } 
+
+            // Insert the new_node at last node 
+            last.next = new_node; 
+        } 
+
+        // Return the list by head 
+        return list; 
+    } 
+
+    // Method to print the LinkedList. 
+    public static void printList(LinkedList list) 
+    { 
+        Node currNode = list.head; 
+
+        System.out.print("LinkedList: "); 
+
+        // Traverse through the LinkedList 
+        while (currNode != null) { 
+            // Print the data at current node 
+            System.out.print(currNode.data + " "); 
+
+            // Go to next node 
+            currNode = currNode.next; 
+        } 
+    } 
+
+    // **************MAIN METHOD************** 
+
+    // method to create a Singly linked list with n nodes 
+    public static void main(String[] args) 
+    { 
+        /* Start with the empty list. */
+        LinkedList list = new LinkedList(); 
+
+        // 
+        // ******INSERTION****** 
+        // 
+
+        // Insert the values 
+        list = insert(list, 1); 
+        list = insert(list, 2); 
+        list = insert(list, 3); 
+        list = insert(list, 4); 
+        list = insert(list, 5); 
+        list = insert(list, 6); 
+        list = insert(list, 7); 
+        list = insert(list, 8); 
+
+        // Print the LinkedList 
+        printList(list); 
+    } 
+} 
+
+```
+
+**Output:**
 
 ```
 LinkedList: 1 2 3 4 5 6 7 8
@@ -101,20 +277,197 @@ LinkedList: 1 2 3 4 5 6 7 8
 
 [![linkedlist_deletion](img/fe3a6a2699fb99ae5429afd588e89619.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/05/Linkedlist_deletion.png)
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+import java.io.*; 
 
-*play_arrow*
+// Java program to implement 
+// a Singly Linked List 
+public class LinkedList { 
 
-*链接*
-*亮度_4*
-*代码*
+    Node head; // head of list 
 
-| `import` `java.io.*;``// Java program to implement``// a Singly Linked List``public` `class` `LinkedList {` `Node head;` `// head of list` `// Linked list Node.` `// This inner class is made static` `// so that main() can access it` `static` `class` `Node {` `int` `data;` `Node next;` `// Constructor` `Node(` `int` `d)` `{` `data = d;` `next =` `null` `;` `}` `}` `// Method to insert a new node`[H TG468]  `public` `static` `LinkedList insert(LinkedList list,` `int` `data)` `{` `// Create a new node with given data` `Node new_node =` `new` `Node(data);` `new_node.next =` `null` `;` `// If the Linked List is empty,` ] `// then make the new node as head` `if` `(list.head ==` `null` `) {` `list.head = new_node;` `}` `else` `{` `// Else traverse till the last node` `// and insert the new_node there` `Node last = list.head;` `while` `(last.next !=` `null` `) {` `last = last.next;` `}` `// Insert the new_node at last node` `last.next = new_node;` `}` [ `// Return the list by head` `return` `list;` `}`[HTG116 `// Method to print the LinkedList.` `public` `static` `void` `printList(LinkedList list)` `{` `Node currNode = list.head;` `System.out.print(` `"LinkedList: "` `);` `// Traverse through the LinkedList` `while` `(currNode !=` `null` `) {` `// Print the data at current node` `System.out.print(currNode.data +` `" "` `);` `// Go to next node` `currNode = currNode.next;` `}` `System.out.println();` `}`[HTG55 8] 〔HTG559〕〔HTG560〕〔HTG160〕〔HTG161〕〔HTG561〕〔HTG562〕〔HTG162〕〔HTG563〕〔HTG564〕〔HTG163〕〔HTG164〕〕 `static` `LinkedList deleteByKey(LinkedList list,` `int` `key)` `{` `// Store head node` `Node currNode = list.head, prev =` `null` `;` `//` `// CASE 1:` `// If head node itself holds the key to be deleted` `if` `(currNode !=` `null` `&& currNode.data == key) {` `list.head = currNode.next;` `// Changed head` `// Display the message` `System.out.println(key +` `" found and deleted"` `);` `// Return the updated List` `return` `list;` `}` HTG603] `//` `// CASE 2:` `// If the key is somewhere other than at head` `//` `// Search for the key to be deleted,` `// keep track of the previous node` `// as it is needed to change currNode.next` `while` `(currNode !=` `null` `&& currNode.data != key) {` `// If currNode does not hold key` `// continue to next node` `prev = currNode;` `currNode = currNode.next;` `}` `// If the key was present, it should be at currNode` `// Therefore the currNode shall not be null` `if` `(currNode !=` `null` `) {` `// Since the key is at currNode` `// Unlink currNode from linked list` `prev.next = currNode.next;` `// Display the message` `System.out.println(key +` `" found and deleted"` `);` `}` `//` `// CASE 3: The key is not present` ​​ `//` `// If key was not present in linked list` `// currNode should be null` ] `if` `(currNode ==` `null` `) {` `// Display the message` `System.out.println(key +` `" not found"` `);` `}` `// return the List` `return` `list;` `}` `// **************MAIN METHOD**************` `// method to create a Singly linked list with n nodes` `public` `static` `void` `main(String[] args)` `{` `/* Start with the empty list. */` `LinkedList list =` `new` `LinkedList();` `//` `// ******INSERTION******` `//` `// Insert the values` `list = insert(list,` `1` `);` `list = insert(list,` `2` `);` `list = insert(list,` `3` `);` `list = insert(list,` `4` `);` `list = insert(list,` `5` `);` `list = insert(list,` `6` `);` `list = insert(list,` `7` `);` `list = insert(list,` `8` `);` `// Print the LinkedList` `printList(list);` `//` [HT G737] `// ******DELETION BY KEY******` `//` `// Delete node with value 1` `// In this case the key is ***at head***` `deleteByKey(list,` `1` `);` `// Print the LinkedList`]  `printList(list);` `// Delete node with value 4` `// In this case the key is present ***in the middle***` `deleteByKey(list,` `4` `);` `// Print the LinkedList` `printList(list);` `// Delete node with value 10` `// In this case the key is ***not present***` `deleteByKey(list,` `10` `);` ] `// Print the LinkedList` `printList(list);` `}`[H TG786] `}` |
+    // Linked list Node. 
+    // This inner class is made static 
+    // so that main() can access it 
+    static class Node { 
 
-*chevron_right**filter_none***Output:**
+        int data; 
+        Node next; 
+
+        // Constructor 
+        Node(int d) 
+        { 
+            data = d; 
+            next = null; 
+        } 
+    } 
+
+    // Method to insert a new node 
+    public static LinkedList insert(LinkedList list, int data) 
+    { 
+        // Create a new node with given data 
+        Node new_node = new Node(data); 
+        new_node.next = null; 
+
+        // If the Linked List is empty, 
+        // then make the new node as head 
+        if (list.head == null) { 
+            list.head = new_node; 
+        } 
+        else { 
+            // Else traverse till the last node 
+            // and insert the new_node there 
+            Node last = list.head; 
+            while (last.next != null) { 
+                last = last.next; 
+            } 
+
+            // Insert the new_node at last node 
+            last.next = new_node; 
+        } 
+
+        // Return the list by head 
+        return list; 
+    } 
+
+    // Method to print the LinkedList. 
+    public static void printList(LinkedList list) 
+    { 
+        Node currNode = list.head; 
+
+        System.out.print("LinkedList: "); 
+
+        // Traverse through the LinkedList 
+        while (currNode != null) { 
+            // Print the data at current node 
+            System.out.print(currNode.data + " "); 
+
+            // Go to next node 
+            currNode = currNode.next; 
+        } 
+
+        System.out.println(); 
+    } 
+
+    // **************DELETION BY KEY************** 
+
+    // Method to delete a node in the LinkedList by KEY 
+    public static LinkedList deleteByKey(LinkedList list, int key) 
+    { 
+        // Store head node 
+        Node currNode = list.head, prev = null; 
+
+        // 
+        // CASE 1: 
+        // If head node itself holds the key to be deleted 
+
+        if (currNode != null && currNode.data == key) { 
+            list.head = currNode.next; // Changed head 
+
+            // Display the message 
+            System.out.println(key + " found and deleted"); 
+
+            // Return the updated List 
+            return list; 
+        } 
+
+        // 
+        // CASE 2: 
+        // If the key is somewhere other than at head 
+        // 
+
+        // Search for the key to be deleted, 
+        // keep track of the previous node 
+        // as it is needed to change currNode.next 
+        while (currNode != null && currNode.data != key) { 
+            // If currNode does not hold key 
+            // continue to next node 
+            prev = currNode; 
+            currNode = currNode.next; 
+        } 
+
+        // If the key was present, it should be at currNode 
+        // Therefore the currNode shall not be null 
+        if (currNode != null) { 
+            // Since the key is at currNode 
+            // Unlink currNode from linked list 
+            prev.next = currNode.next; 
+
+            // Display the message 
+            System.out.println(key + " found and deleted"); 
+        } 
+
+        // 
+        // CASE 3: The key is not present 
+        // 
+
+        // If key was not present in linked list 
+        // currNode should be null 
+        if (currNode == null) { 
+            // Display the message 
+            System.out.println(key + " not found"); 
+        } 
+
+        // return the List 
+        return list; 
+    } 
+
+    // **************MAIN METHOD************** 
+
+    // method to create a Singly linked list with n nodes 
+    public static void main(String[] args) 
+    { 
+        /* Start with the empty list. */
+        LinkedList list = new LinkedList(); 
+
+        // 
+        // ******INSERTION****** 
+        // 
+
+        // Insert the values 
+        list = insert(list, 1); 
+        list = insert(list, 2); 
+        list = insert(list, 3); 
+        list = insert(list, 4); 
+        list = insert(list, 5); 
+        list = insert(list, 6); 
+        list = insert(list, 7); 
+        list = insert(list, 8); 
+
+        // Print the LinkedList 
+        printList(list); 
+
+        // 
+        // ******DELETION BY KEY****** 
+        // 
+
+        // Delete node with value 1 
+        // In this case the key is ***at head*** 
+        deleteByKey(list, 1); 
+
+        // Print the LinkedList 
+        printList(list); 
+
+        // Delete node with value 4 
+        // In this case the key is present ***in the middle*** 
+        deleteByKey(list, 4); 
+
+        // Print the LinkedList 
+        printList(list); 
+
+        // Delete node with value 10 
+        // In this case the key is ***not present*** 
+        deleteByKey(list, 10); 
+
+        // Print the LinkedList 
+        printList(list); 
+    } 
+} 
+
+```
+
+**Output:**
 
 ```
 LinkedList: 1 2 3 4 5 6 7 8 
@@ -152,20 +505,199 @@ LinkedList: 2 3 5 6 7 8
 
 [![linkedlist_deletion](img/fe3a6a2699fb99ae5429afd588e89619.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/05/Linkedlist_deletion.png)
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+import java.io.*; 
 
-*play_arrow*
+// Java program to implement 
+// a Singly Linked List 
+public class LinkedList { 
 
-*链接*
-*亮度_4*
-*代码*
+    Node head; // head of list 
 
-| `import` `java.io.*;``// Java program to implement``// a Singly Linked List``public` `class` `LinkedList {` `Node head;` `// head of list` HTG446] `// This inner class is made static` `// so that main() can access it` `static` `class` `Node {` `int` `data;` `Node next;` `// Constructor` `Node(` `int` `d)` `{` `data = d;` `next =` `null` `;` `}` `}` `// Method to insert a new node`[H TG479]  `public` `static` `LinkedList insert(LinkedList list,` `int` `data)` `{` `// Create a new node with given data` `Node new_node =` `new` `Node(data);` `new_node.next =` `null` `;` `// If the Linked List is empty,` ] `// then make the new node as head` `if` `(list.head ==` `null` `) {` `list.head = new_node;` `}` `else` `{` `// Else traverse till the last node` `// and insert the new_node there` `Node last = list.head;` `while` `(last.next !=` `null` `) {` `last = last.next;` `}`〔 `// Insert the new_node at last node` `last.next = new_node;` `}` [ `// Return the list by head` `return` `list;` `}`[HTG116 `// Method to print the LinkedList.` `public` `static` `void` `printList(LinkedList list)` `{` `Node currNode = list.head;` `System.out.print(` `"LinkedList: "` `);` `// Traverse through the LinkedList` `while` `(currNode !=` `null` `) {` `// Print the data at current node` `System.out.print(currNode.data +` `" "` `);` `// Go to next node` `currNode = currNode.next;` `}` `System.out.println();` `}`[HTG56 9]  `// Method to delete a node in the LinkedList by POSITION` `public` `static` `LinkedList deleteAtPosition(LinkedList list,` `int` `index)` `{` `// Store head node` `Node currNode = list.head, prev =` `null` `;` `//` `// CASE 1:` `// If index is 0, then head node itself is to be deleted` [ `if` `(index ==` `0` `&& currNode !=` `null` `) {` `list.head = currNode.next;` `// Changed head` `// Display the message` `System.out.println(index +` `" position element deleted"` `);` `// Return the updated List` `return` ] `list;` `}` [ `//`[H TG613]  `// CASE 2:` `// If the index is greater than 0 but less than the size of LinkedList` `//` `// The counter` `int` `counter =` `0` `;`） `// Count for the index to be deleted,` `// keep track of the previous node` `// as it is needed to change currNode.next` `while` `(currNode !=` `null` `) {` `if` `(counter == index) {` `// Since the currNode is the required position` `// Unlink currNode from linked list` `prev.next = currNode.next;` `// Display the message` `System.out.println(index +` `" position element deleted"` `);` `break` `;` `}` `else` `{` `// If current position is not the index`[HT G264] `// continue to next node` `prev = currNode;` `currNode = currNode.next;`​​ `counter++;` `}` `}` `// If the position element was found, it should be at currNode` `// Therefore the currNode shall not be null`] `//` `// CASE 3: The index is greater than the size of the LinkedList` `//` `// In this case, the currNode should be null` `if` `(currNode ==` `null` `) {` `// Display the message` `System.out.println(index +` `" position element not found"` `);` `}` `// return the List` `return` `list;`]  `}` `// **************MAIN METHOD**************`[HT G705]  `// method to create a Singly linked list with n nodes` `public` `static` `void` `main(String[] args)` `{` `/* Start with the empty list. */` `LinkedList list =` `new` `LinkedList();` `//` `// ******INSERTION******` `//` `// Insert the values` `list = insert(list,` `1` `);` `list = insert(list,` `2` `);` `list = insert(list,` `3` `);` `list = insert(list,` `4` `);` `list = insert(list,` `5` `);` `list = insert(list,` `6` `);` `list = insert(list,` `7` `);` `list = insert(list,` `8` `);` `// Print the LinkedList` `printList(list);` `//` `// ******DELETION AT POSITION******` `//` `// Delete node at position 0` `// In this case the key is ***at head***` `deleteAtPosition(list,` `0` `);` `// Print the LinkedList` `printList(list);` ] `// Delete node at position 2` `// In this case the key is present ***in the middle***` `deleteAtPosition(list,` `2` `);` `// Print the LinkedList` `printList(list);` `// Delete node at position 10` `// In this case the key is ***not present***` `deleteAtPosition(list,` `10` `);`[HTG79 3]  `// Print the LinkedList` `printList(list);` `}``}` |
+    // Linked list Node. 
+    // This inner class is made static 
+    // so that main() can access it 
+    static class Node { 
 
-*chevron_right**filter_none***Output:**
+        int data; 
+        Node next; 
+
+        // Constructor 
+        Node(int d) 
+        { 
+            data = d; 
+            next = null; 
+        } 
+    } 
+
+    // Method to insert a new node 
+    public static LinkedList insert(LinkedList list, int data) 
+    { 
+        // Create a new node with given data 
+        Node new_node = new Node(data); 
+        new_node.next = null; 
+
+        // If the Linked List is empty, 
+        // then make the new node as head 
+        if (list.head == null) { 
+            list.head = new_node; 
+        } 
+        else { 
+            // Else traverse till the last node 
+            // and insert the new_node there 
+            Node last = list.head; 
+            while (last.next != null) { 
+                last = last.next; 
+            } 
+
+            // Insert the new_node at last node 
+            last.next = new_node; 
+        } 
+
+        // Return the list by head 
+        return list; 
+    } 
+
+    // Method to print the LinkedList. 
+    public static void printList(LinkedList list) 
+    { 
+        Node currNode = list.head; 
+
+        System.out.print("LinkedList: "); 
+
+        // Traverse through the LinkedList 
+        while (currNode != null) { 
+            // Print the data at current node 
+            System.out.print(currNode.data + " "); 
+
+            // Go to next node 
+            currNode = currNode.next; 
+        } 
+
+        System.out.println(); 
+    } 
+
+    // Method to delete a node in the LinkedList by POSITION 
+    public static LinkedList deleteAtPosition(LinkedList list, int index) 
+    { 
+        // Store head node 
+        Node currNode = list.head, prev = null; 
+
+        // 
+        // CASE 1: 
+        // If index is 0, then head node itself is to be deleted 
+
+        if (index == 0 && currNode != null) { 
+            list.head = currNode.next; // Changed head 
+
+            // Display the message 
+            System.out.println(index + " position element deleted"); 
+
+            // Return the updated List 
+            return list; 
+        } 
+
+        // 
+        // CASE 2: 
+        // If the index is greater than 0 but less than the size of LinkedList 
+        // 
+        // The counter 
+        int counter = 0; 
+
+        // Count for the index to be deleted, 
+        // keep track of the previous node 
+        // as it is needed to change currNode.next 
+        while (currNode != null) { 
+
+            if (counter == index) { 
+                // Since the currNode is the required position 
+                // Unlink currNode from linked list 
+                prev.next = currNode.next; 
+
+                // Display the message 
+                System.out.println(index + " position element deleted"); 
+                break; 
+            } 
+            else { 
+                // If current position is not the index 
+                // continue to next node 
+                prev = currNode; 
+                currNode = currNode.next; 
+                counter++; 
+            } 
+        } 
+
+        // If the position element was found, it should be at currNode 
+        // Therefore the currNode shall not be null 
+        // 
+        // CASE 3: The index is greater than the size of the LinkedList 
+        // 
+        // In this case, the currNode should be null 
+        if (currNode == null) { 
+            // Display the message 
+            System.out.println(index + " position element not found"); 
+        } 
+
+        // return the List 
+        return list; 
+    } 
+
+    // **************MAIN METHOD************** 
+
+    // method to create a Singly linked list with n nodes 
+    public static void main(String[] args) 
+    { 
+        /* Start with the empty list. */
+        LinkedList list = new LinkedList(); 
+
+        // 
+        // ******INSERTION****** 
+        // 
+
+        // Insert the values 
+        list = insert(list, 1); 
+        list = insert(list, 2); 
+        list = insert(list, 3); 
+        list = insert(list, 4); 
+        list = insert(list, 5); 
+        list = insert(list, 6); 
+        list = insert(list, 7); 
+        list = insert(list, 8); 
+
+        // Print the LinkedList 
+        printList(list); 
+
+        // 
+        // ******DELETION AT POSITION****** 
+        // 
+
+        // Delete node at position 0 
+        // In this case the key is ***at head*** 
+        deleteAtPosition(list, 0); 
+
+        // Print the LinkedList 
+        printList(list); 
+
+        // Delete node at position 2 
+        // In this case the key is present ***in the middle*** 
+        deleteAtPosition(list, 2); 
+
+        // Print the LinkedList 
+        printList(list); 
+
+        // Delete node at position 10 
+        // In this case the key is ***not present*** 
+        deleteAtPosition(list, 10); 
+
+        // Print the LinkedList 
+        printList(list); 
+    } 
+} 
+
+```
+
+**Output:**
 
 ```
 LinkedList: 1 2 3 4 5 6 7 8 
@@ -182,20 +714,292 @@ LinkedList: 2 3 5 6 7 8
 
 下面是将每个操作一起应用的完整程序：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+import java.io.*; 
 
-*play_arrow*
+// Java program to implement 
+// a Singly Linked List 
+public class LinkedList { 
 
-*链接*
-*亮度_4*
-*代码*
+    Node head; // head of list 
 
-| `import` `java.io.*;``// Java program to implement``// a Singly Linked List``public` `class` `LinkedList {``Node head;` `// head of list``// Linked list Node.``// This inner class is made static``// so that main() can access it``static` `class` `Node {``int` `data;``Node next;``// Constructor``Node(``int` `d)``{``data = d;``next =` `null``;``}``}``// **************INSERTION**************``// Method to insert a new node``public` `static` `LinkedList insert(LinkedList list,` `int` `data)``{``// Create a new node with given data``Node new_node =` `new` `Node(data);``new_node.next =` `null``;``// If the Linked List is empty,``// then make the new node as head``if` `(list.head ==` `null``) {``list.head = new_node;``}``else` `{``// Else traverse till the last node``// and insert the new_node there``Node last = list.head;``while` `(last.next !=` `null``) {``last = last.next;``}``// Insert the new_node at last node``last.next = new_node;``}``// Return the list by head``return` `list;``}``// **************TRAVERSAL**************``// Method to print the LinkedList.``public` `static` `void` `printList(LinkedList list)``{``Node currNode = list.head;``System.out.print(``"\nLinkedList: "``);``// Traverse through the LinkedList``while` `(currNode !=` `null``) {``// Print the data at current node``System.out.print(currNode.data +` `" "``);``// Go to next node``currNode = currNode.next;``}``System.out.println(``"\n"``);``}``// **************DELETION BY KEY**************``// Method to delete a node in the LinkedList by KEY``public` `static` `LinkedList deleteByKey(LinkedList list,` `int` `key)``{``// Store head node``Node currNode = list.head, prev =` `null``;``//``// CASE 1:``// If head node itself holds the key to be deleted``if` `(currNode !=` `null` `&& currNode.data == key) {``list.head = currNode.next;` `// Changed head``// Display the message``System.out.println(key +` `" found and deleted"``);``// Return the updated List``return` `list;``}``//``// CASE 2:``// If the key is somewhere other than at head``//``// Search for the key to be deleted,``// keep track of the previous node``// as it is needed to change currNode.next``while` `(currNode !=` `null` `&& currNode.data != key) {``// If currNode does not hold key``// continue to next node``prev = currNode;``currNode = currNode.next;``}``// If the key was present, it should be at currNode``// Therefore the currNode shall not be null``if` `(currNode !=` `null``) {``// Since the key is at currNode``// Unlink currNode from linked list``prev.next = currNode.next;``// Display the message``System.out.println(key +` `" found and deleted"``);``}``//``// CASE 3: The key is not present``//``// If key was not present in linked list``// currNode should be null``if` `(currNode ==` `null``) {``// Display the message``System.out.println(key +` `" not found"``);``}``// return the List``return` `list;``}``// **************DELETION AT A POSITION**************``// Method to delete a node in the LinkedList by POSITION``public` `static` `LinkedList deleteAtPosition(LinkedList list,` `int` `index)``{``// Store head node``Node currNode = list.head, prev =` `null``;``//``// CASE 1:``// If index is 0, then head node itself is to be deleted``if` `(index ==` `0` `&& currNode !=` `null``) {``list.head = currNode.next;` `// Changed head``// Display the message``System.out.println(index +` `" position element deleted"``);``// Return the updated List``return` `list;``}``//``// CASE 2:``// If the index is greater than 0 but less than the size of LinkedList``//``// The counter``int` `counter =` `0``;``// Count for the index to be deleted,``// keep track of the previous node``// as it is needed to change currNode.next``while` `(currNode !=` `null``) {``if` `(counter == index) {``// Since the currNode is the required position``// Unlink currNode from linked list``prev.next = currNode.next;``// Display the message``System.out.println(index +` `" position element deleted"``);``break``;``}``else` `{``// If current position is not the index``// continue to next node``prev = currNode;``currNode = currNode.next;``counter++;``}``}``// If the position element was found, it should be at currNode``// Therefore the currNode shall not be null``//``// CASE 3: The index is greater than the size of the LinkedList``//``// In this case, the currNode should be null``if` `(currNode ==` `null``) {``// Display the message``System.out.println(index +` `" position element not found"``);``}``// return the List``return` `list;``}``// **************MAIN METHOD**************``// method to create a Singly linked list with n nodes``public` `static` `void` `main(String[] args)``{``/* Start with the empty list. */``LinkedList list =` `new` `LinkedList();``//``// ******INSERTION******``//``// Insert the values``list = insert(list,` `1``);``list = insert(list,` `2``);``list = insert(list,` `3``);``list = insert(list,` `4``);``list = insert(list,` `5``);``list = insert(list,` `6``);``list = insert(list,` `7``);``list = insert(list,` `8``);``// Print the LinkedList``printList(list);``//``// ******DELETION BY KEY******``//``// Delete node with value 1``// In this case the key is ***at head***``deleteByKey(list,` `1``);``// Print the LinkedList``printList(list);``// Delete node with value 4``// In this case the key is present ***in the middle***``deleteByKey(list,` `4``);``// Print the LinkedList``printList(list);``// Delete node with value 10``// In this case the key is ***not present***``deleteByKey(list,` `10``);``// Print the LinkedList``printList(list);``//``// ******DELETION AT POSITION******``//``// Delete node at position 0``// In this case the key is ***at head***``deleteAtPosition(list,` `0``);``// Print the LinkedList``printList(list);``// Delete node at position 2``// In this case the key is present ***in the middle***``deleteAtPosition(list,` `2``);``// Print the LinkedList``printList(list);``// Delete node at position 10``// In this case the key is ***not present***``deleteAtPosition(list,` `10``);``// Print the LinkedList``printList(list);``}``}` |
+    // Linked list Node. 
+    // This inner class is made static 
+    // so that main() can access it 
+    static class Node { 
 
-*chevron_right**filter_none***Output:**
+        int data; 
+        Node next; 
+
+        // Constructor 
+        Node(int d) 
+        { 
+            data = d; 
+            next = null; 
+        } 
+    } 
+
+    // **************INSERTION************** 
+
+    // Method to insert a new node 
+    public static LinkedList insert(LinkedList list, int data) 
+    { 
+        // Create a new node with given data 
+        Node new_node = new Node(data); 
+        new_node.next = null; 
+
+        // If the Linked List is empty, 
+        // then make the new node as head 
+        if (list.head == null) { 
+            list.head = new_node; 
+        } 
+        else { 
+            // Else traverse till the last node 
+            // and insert the new_node there 
+            Node last = list.head; 
+            while (last.next != null) { 
+                last = last.next; 
+            } 
+
+            // Insert the new_node at last node 
+            last.next = new_node; 
+        } 
+
+        // Return the list by head 
+        return list; 
+    } 
+
+    // **************TRAVERSAL************** 
+
+    // Method to print the LinkedList. 
+    public static void printList(LinkedList list) 
+    { 
+        Node currNode = list.head; 
+
+        System.out.print("\nLinkedList: "); 
+
+        // Traverse through the LinkedList 
+        while (currNode != null) { 
+            // Print the data at current node 
+            System.out.print(currNode.data + " "); 
+
+            // Go to next node 
+            currNode = currNode.next; 
+        } 
+        System.out.println("\n"); 
+    } 
+
+    // **************DELETION BY KEY************** 
+
+    // Method to delete a node in the LinkedList by KEY 
+    public static LinkedList deleteByKey(LinkedList list, int key) 
+    { 
+        // Store head node 
+        Node currNode = list.head, prev = null; 
+
+        // 
+        // CASE 1: 
+        // If head node itself holds the key to be deleted 
+
+        if (currNode != null && currNode.data == key) { 
+            list.head = currNode.next; // Changed head 
+
+            // Display the message 
+            System.out.println(key + " found and deleted"); 
+
+            // Return the updated List 
+            return list; 
+        } 
+
+        // 
+        // CASE 2: 
+        // If the key is somewhere other than at head 
+        // 
+
+        // Search for the key to be deleted, 
+        // keep track of the previous node 
+        // as it is needed to change currNode.next 
+        while (currNode != null && currNode.data != key) { 
+            // If currNode does not hold key 
+            // continue to next node 
+            prev = currNode; 
+            currNode = currNode.next; 
+        } 
+
+        // If the key was present, it should be at currNode 
+        // Therefore the currNode shall not be null 
+        if (currNode != null) { 
+            // Since the key is at currNode 
+            // Unlink currNode from linked list 
+            prev.next = currNode.next; 
+
+            // Display the message 
+            System.out.println(key + " found and deleted"); 
+        } 
+
+        // 
+        // CASE 3: The key is not present 
+        // 
+
+        // If key was not present in linked list 
+        // currNode should be null 
+        if (currNode == null) { 
+            // Display the message 
+            System.out.println(key + " not found"); 
+        } 
+
+        // return the List 
+        return list; 
+    } 
+
+    // **************DELETION AT A POSITION************** 
+
+    // Method to delete a node in the LinkedList by POSITION 
+    public static LinkedList deleteAtPosition(LinkedList list, int index) 
+    { 
+        // Store head node 
+        Node currNode = list.head, prev = null; 
+
+        // 
+        // CASE 1: 
+        // If index is 0, then head node itself is to be deleted 
+
+        if (index == 0 && currNode != null) { 
+            list.head = currNode.next; // Changed head 
+
+            // Display the message 
+            System.out.println(index + " position element deleted"); 
+
+            // Return the updated List 
+            return list; 
+        } 
+
+        // 
+        // CASE 2: 
+        // If the index is greater than 0 but less than the size of LinkedList 
+        // 
+        // The counter 
+        int counter = 0; 
+
+        // Count for the index to be deleted, 
+        // keep track of the previous node 
+        // as it is needed to change currNode.next 
+        while (currNode != null) { 
+
+            if (counter == index) { 
+                // Since the currNode is the required position 
+                // Unlink currNode from linked list 
+                prev.next = currNode.next; 
+
+                // Display the message 
+                System.out.println(index + " position element deleted"); 
+                break; 
+            } 
+            else { 
+                // If current position is not the index 
+                // continue to next node 
+                prev = currNode; 
+                currNode = currNode.next; 
+                counter++; 
+            } 
+        } 
+
+        // If the position element was found, it should be at currNode 
+        // Therefore the currNode shall not be null 
+        // 
+        // CASE 3: The index is greater than the size of the LinkedList 
+        // 
+        // In this case, the currNode should be null 
+        if (currNode == null) { 
+            // Display the message 
+            System.out.println(index + " position element not found"); 
+        } 
+
+        // return the List 
+        return list; 
+    } 
+
+    // **************MAIN METHOD************** 
+
+    // method to create a Singly linked list with n nodes 
+    public static void main(String[] args) 
+    { 
+        /* Start with the empty list. */
+        LinkedList list = new LinkedList(); 
+
+        // 
+        // ******INSERTION****** 
+        // 
+
+        // Insert the values 
+        list = insert(list, 1); 
+        list = insert(list, 2); 
+        list = insert(list, 3); 
+        list = insert(list, 4); 
+        list = insert(list, 5); 
+        list = insert(list, 6); 
+        list = insert(list, 7); 
+        list = insert(list, 8); 
+
+        // Print the LinkedList 
+        printList(list); 
+
+        // 
+        // ******DELETION BY KEY****** 
+        // 
+
+        // Delete node with value 1 
+        // In this case the key is ***at head*** 
+        deleteByKey(list, 1); 
+
+        // Print the LinkedList 
+        printList(list); 
+
+        // Delete node with value 4 
+        // In this case the key is present ***in the middle*** 
+        deleteByKey(list, 4); 
+
+        // Print the LinkedList 
+        printList(list); 
+
+        // Delete node with value 10 
+        // In this case the key is ***not present*** 
+        deleteByKey(list, 10); 
+
+        // Print the LinkedList 
+        printList(list); 
+
+        // 
+        // ******DELETION AT POSITION****** 
+        // 
+
+        // Delete node at position 0 
+        // In this case the key is ***at head*** 
+        deleteAtPosition(list, 0); 
+
+        // Print the LinkedList 
+        printList(list); 
+
+        // Delete node at position 2 
+        // In this case the key is present ***in the middle*** 
+        deleteAtPosition(list, 2); 
+
+        // Print the LinkedList 
+        printList(list); 
+
+        // Delete node at position 10 
+        // In this case the key is ***not present*** 
+        deleteAtPosition(list, 10); 
+
+        // Print the LinkedList 
+        printList(list); 
+    } 
+} 
+
+```
+
+**Output:**
 
 ```
 LinkedList: 1 2 3 4 5 6 7 8 

@@ -20,17 +20,334 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation of the approach 
+#include <iostream> 
+using namespace std; 
 
-*play_arrow*
+// Represents node of the linked list 
+struct Node { 
+    int data; 
+    Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Function to insert a node at the 
+// end of the linked list 
+void insert(Node** root, int item) 
+{ 
+    Node *ptr = *root, *temp = new Node; 
+    temp->data = item; 
+    temp->next = NULL; 
 
-| `// C++ implementation of the approach``#include <iostream>``using` `namespace` `std;``// Represents node of the linked list``struct` `Node {` `int` `data;` `Node* next;``};`，`// Function to insert a node at the``// end of the linked list``void` `insert(Node** root,` `int` `item)``{` `Node *ptr = *root, *temp =` `new` `Node;` `temp->data = item;` `temp->next = NULL;` [ `if` `(*root == NULL)` `*root = temp;` `else` `{` `while` `(ptr->next != NULL)` `ptr = ptr->next;` `ptr->next = temp;` `}``}``// Function to return the sum of the nodes``// which are greater than the node next to them``int` `sum(Node* root)``{` `// If there are no nodes` `if` `(root == NULL)` `return` `0;` `int` `sm = 0;` `Node* ptr = root;` `while` `(ptr->next != NULL) {` `// If the node is greater than the next node` `if` `(ptr->data > ptr->next->data)` `sm += ptr->data;` `ptr = ptr->next;` `}` `// For the last node` ] `if` `(ptr->data > root->data)` `sm += ptr->data;` `// Return the sum` `return` `sm;``}``// Driver code``int` `main()``{` `Node* root = NULL;` `insert(&root, 9);` `insert(&root, 2);` `insert(&root, 3);` `insert(&root, 5);` `insert(&root, 4);` `insert(&root, 6);` `insert(&root, 8);` `cout << sum(root) << endl;` `return` `0;``}`​​ |
+    if (*root == NULL) 
+        *root = temp; 
+    else { 
+        while (ptr->next != NULL) 
+            ptr = ptr->next; 
+        ptr->next = temp; 
+    } 
+} 
 
-*chevron_right**filter_none*
+// Function to return the sum of the nodes 
+// which are greater than the node next to them 
+int sum(Node* root) 
+{ 
+
+    // If there are no nodes 
+    if (root == NULL) 
+        return 0; 
+
+    int sm = 0; 
+    Node* ptr = root; 
+    while (ptr->next != NULL) { 
+
+        // If the node is greater than the next node 
+        if (ptr->data > ptr->next->data) 
+            sm += ptr->data; 
+        ptr = ptr->next; 
+    } 
+
+    // For the last node 
+    if (ptr->data > root->data) 
+        sm += ptr->data; 
+
+    // Return the sum 
+    return sm; 
+} 
+
+// Driver code 
+int main() 
+{ 
+    Node* root = NULL; 
+
+    insert(&root, 9); 
+    insert(&root, 2); 
+    insert(&root, 3); 
+    insert(&root, 5); 
+    insert(&root, 4); 
+    insert(&root, 6); 
+    insert(&root, 8); 
+
+    cout << sum(root) << endl; 
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation of the approach  
+class GFG 
+{ 
+
+// Represents node of the linked list  
+static class Node  
+{  
+    int data;  
+    Node next;  
+};  
+
+// Function to insert a node at the  
+// end of the linked list  
+static Node insert(Node root, int item)  
+{  
+    Node ptr = root, temp = new Node();  
+    temp.data = item;  
+    temp.next = null;  
+
+    if (root == null)  
+        root = temp;  
+    else 
+    {  
+        while (ptr.next != null)  
+            ptr = ptr.next;  
+        ptr.next = temp;  
+    }  
+    return root; 
+}  
+
+// Function to return the sum of the nodes  
+// which are greater than the node next to them  
+static int sum(Node root)  
+{  
+
+    // If there are no nodes  
+    if (root == null)  
+        return 0;  
+
+    int sm = 0;  
+    Node ptr = root;  
+    while (ptr.next != null)  
+    {  
+
+        // If the node is greater than the next node  
+        if (ptr.data > ptr.next.data)  
+            sm += ptr.data;  
+        ptr = ptr.next;  
+    }  
+
+    // For the last node  
+    if (ptr.data > root.data)  
+        sm += ptr.data;  
+
+    // Return the sum  
+    return sm;  
+}  
+
+// Driver code  
+public static void main(String args[]) 
+{  
+    Node root = null;  
+
+    root=insert(root, 9);  
+    root=insert(root, 2);  
+    root=insert(root, 3);  
+    root=insert(root, 5);  
+    root=insert(root, 4);  
+    root=insert(root, 6);  
+    root=insert(root, 8);  
+
+    System.out.print( sum(root) ); 
+} 
+}  
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+## Python3
+
+```
+
+# Python3 implementation of the approach 
+import math 
+
+# Represents node of the linked list 
+class Node:  
+    def __init__(self, data):  
+        self.data = data  
+        self.next = None
+
+# Function to root=insert a node at the 
+# end of the linked list 
+def insert(root, item): 
+
+    ptr = root 
+    temp = Node(item); 
+    temp.data = item; 
+    temp.next = None; 
+
+    if (root == None): 
+        root = temp; 
+    else: 
+        while (ptr.next != None): 
+            ptr = ptr.next; 
+        ptr.next = temp; 
+
+    return root 
+
+# Function to return the sum of the nodes 
+# which are greater than the node next to them 
+def sum(root): 
+
+    # If there are no nodes 
+    if (root == None): 
+        return 0; 
+
+    sm = 0; 
+    ptr = root; 
+    while (ptr.next != None): 
+
+        # If the node is greater than the next node 
+        if (ptr.data > ptr.next.data): 
+            sm += ptr.data; 
+        ptr = ptr.next; 
+
+    # For the last node 
+    if (ptr.data > root.data): 
+        sm += ptr.data; 
+
+    # Return the sum 
+    return sm; 
+
+# Driver code 
+if __name__=='__main__':  
+    root = None; 
+    root = insert(root, 9); 
+    root = insert(root, 2); 
+    root = insert(root, 3); 
+    root = insert(root, 5); 
+    root = insert(root, 4); 
+    root = insert(root, 6); 
+    root = insert(root, 8); 
+
+    print(sum(root)) 
+
+# This code is contributed by Srathore 
+
+```
+
+## C＃
+
+```
+
+// C# implementation of the approach 
+using System; 
+
+class GFG 
+{ 
+
+// Represents node of the linked list  
+public class Node  
+{  
+    public int data;  
+    public Node next;  
+};  
+
+// Function to insert a node at the  
+// end of the linked list  
+static Node insert(Node root, int item)  
+{  
+    Node ptr = root, temp = new Node();  
+    temp.data = item;  
+    temp.next = null;  
+
+    if (root == null)  
+        root = temp;  
+    else
+    {  
+        while (ptr.next != null)  
+            ptr = ptr.next;  
+        ptr.next = temp;  
+    }  
+    return root; 
+}  
+
+// Function to return the sum of the nodes  
+// which are greater than the node next to them  
+static int sum(Node root)  
+{  
+
+    // If there are no nodes  
+    if (root == null)  
+        return 0;  
+
+    int sm = 0;  
+    Node ptr = root;  
+    while (ptr.next != null)  
+    {  
+
+        // If the node is greater than the next node  
+        if (ptr.data > ptr.next.data)  
+            sm += ptr.data;  
+        ptr = ptr.next;  
+    }  
+
+    // For the last node  
+    if (ptr.data > root.data)  
+        sm += ptr.data;  
+
+    // Return the sum  
+    return sm;  
+}  
+
+// Driver code  
+public static void Main(String []args) 
+{  
+    Node root = null;  
+
+    root = insert(root, 9);  
+    root = insert(root, 2);  
+    root = insert(root, 3);  
+    root = insert(root, 5);  
+    root = insert(root, 4);  
+    root = insert(root, 6);  
+    root = insert(root, 8);  
+
+    Console.Write( sum(root) ); 
+} 
+} 
+
+// This code contributed by Rajput-Ji 
+
+```
+
+**Output:**
+
+```
+14
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

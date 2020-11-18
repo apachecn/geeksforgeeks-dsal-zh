@@ -25,20 +25,123 @@ current -> next = XOR(prev, current->next)
 
 下面是上述方法的实现：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to Convert a Singly Linked 
+// List to XOR Linked List 
 
-*play_arrow*
+#include <bits/stdc++.h> 
 
-*链接*
-*亮度_4*
-*代码*
+using namespace std; 
 
-| `// C++ program to Convert a Singly Linked``// List to XOR Linked List``#include <bits/stdc++.h>``using` `namespace` `std;``// Linked List node``struct` `Node {` `int` `data;` `struct` `Node* next;``};``// Utiltity function to create new node``Node* newNode(` `int` `data)``{` `Node* temp =` `new` `Node;` `temp->data = data;` `temp->next = NULL;` `return` `temp;``}``// Print singly linked list before conversion``void` `print(Node* head)``{` `while` `(head) {`[H TG249] 〔 `// print current node` `cout << head->data <<` `" "` `;` `head = head->next;` `}` `cout << endl;``}``// Function to find XORed value of``// the node addresses`​​`Node* XOR(Node* a, Node* b)``{` `return` `(Node*)((` `uintptr_t` `)(a) ^ (` `uintptr_t` `)(b));``}``// Function to convert singly linked``// list to XOR linked list``void` `convert(Node* head)``{` `Node* curr = head;` `Node* prev = NULL;` `Node* next = curr->next;` `while` `(curr) {` [ `// store curr->next in next` [[HT G303]  `next = curr->next;` `// cahnge curr->next to XOR of prev and next` `curr->next = XOR(prev, next);` `// prev wil change to curr for next iteration` `prev = curr;` `// curr is now pointing to next for next iteration` `curr = next;` `}``}` [`// Function to print XORed liked list``void` `printXOR(Node* head)``{` `Node* curr = head;` `Node* prev = NULL;` `while` `(curr) {` `// print current node` `cout << curr->data <<` `" "` ] `;` `Node* temp = curr;` `/* compute curr as prev^curr->next as` `it is previously set as prev^curr->next so` `this time curr would be prev^prev^curr->next ` `which is curr->next */` `curr = XOR(prev, curr->next);` `prev = temp;` `}` `cout << endl;``}``// Driver Code``int` `main()``{` `// Create following singly linked list` `// 1->2->3->4` `Node* head = newNode(1);` `head->next = newNode(2);` `head->next->next = newNode(3);` `head->next->next->next = newNode(4);` `cout <<` `"Before Conversion : "` ] `<< endl;` `print(head);` HTG407]  `cout <<` `"After Conversion : "` `<< endl;` `printXOR(head);` `return` `0;``}` |
+// Linked List node 
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-*chevron_right**filter_none***Output:**
+// Utiltity function to create new node 
+Node* newNode(int data) 
+{ 
+    Node* temp = new Node; 
+    temp->data = data; 
+    temp->next = NULL; 
+
+    return temp; 
+} 
+
+// Print singly linked list before conversion 
+void print(Node* head) 
+{ 
+    while (head) { 
+
+        // print current node 
+        cout << head->data << " "; 
+        head = head->next; 
+    } 
+
+    cout << endl; 
+} 
+
+// Function to find XORed value of 
+// the node addresses 
+Node* XOR(Node* a, Node* b) 
+{ 
+    return (Node*)((uintptr_t)(a) ^ (uintptr_t)(b)); 
+} 
+
+// Function to convert singly linked 
+// list to XOR linked list 
+void convert(Node* head) 
+{ 
+    Node* curr = head; 
+    Node* prev = NULL; 
+    Node* next = curr->next; 
+
+    while (curr) { 
+
+        // store curr->next in next 
+        next = curr->next; 
+
+        // cahnge curr->next to XOR of prev and next 
+        curr->next = XOR(prev, next); 
+
+        // prev wil change to curr for next iteration 
+        prev = curr; 
+
+        // curr is now pointing to next for next iteration 
+        curr = next; 
+    } 
+} 
+
+// Function to print XORed liked list 
+void printXOR(Node* head) 
+{ 
+    Node* curr = head; 
+    Node* prev = NULL; 
+
+    while (curr) { 
+
+        // print current node 
+        cout << curr->data << " "; 
+
+        Node* temp = curr; 
+
+        /* compute curr as prev^curr->next as 
+           it is previously set as prev^curr->next so 
+           this time curr would be prev^prev^curr->next  
+           which is curr->next */
+        curr = XOR(prev, curr->next); 
+
+        prev = temp; 
+    } 
+
+    cout << endl; 
+} 
+
+// Driver Code 
+int main() 
+{ 
+    // Create following singly linked list 
+    // 1->2->3->4 
+    Node* head = newNode(1); 
+    head->next = newNode(2); 
+    head->next->next = newNode(3); 
+    head->next->next->next = newNode(4); 
+
+    cout << "Before Conversion : " << endl; 
+    print(head); 
+
+    convert(head); 
+    cout << "After Conversion : " << endl; 
+    printXOR(head); 
+
+    return 0; 
+} 
+
+```
+
+**Output:**
 
 ```
 Before Conversion : 

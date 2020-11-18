@@ -35,20 +35,46 @@ Output : 22->33->44->55->66
 
 **从单个循环链接列表**中删除第一个节点的功能：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Function to delete First node of 
+// Circular Linked List 
+void DeleteFirst(struct Node** head) 
+{ 
+    struct Node *previous = *head, *firstNode = *head; 
 
-*play_arrow*
+    // check if list doesn't have any node 
+    // if not then return 
+    if (*head == NULL) { 
+        printf("\nList is empty\n"); 
+        return; 
+    } 
 
-*链接*
-*亮度_4*
-*代码*
+    // check if list have single node 
+    // if yes then delete it and return 
+    if (previous->next == previous) { 
+        *head = NULL; 
+        return; 
+    } 
 
-| `// Function to delete First node of``// Circular Linked List``void` `DeleteFirst(` `struct` `Node** head)``{` `struct` `Node *previous = *head, *firstNode = *head;` `// check if list doesn't have any node` `// if not then return` `if` `(*head == NULL) {` `printf` `(` `"\nList is empty\n"` `);` `return` `;` `}` `// check if list have single node` `// if yes then delete it and return` `if` `(previous->next == previous) {` `*head = NULL;` `return` `;` `}`[ `// traverse second node to first` `while` `(previous->next != *head) {` `previous = previous->next;` `}`[HT G126]  `// now previous is last node and` `// first node(firstNode) link address` `// put in last node(previous) link` `previous->next = firstNode->next;` `// make second node as head node` `*head = previous->next;` `free` `(firstNode);` `return` `;``}` |
+    // traverse second node to first 
+    while (previous->next != *head) { 
 
-*chevron_right**filter_none*
+        previous = previous->next; 
+    } 
+
+    // now previous is last node and 
+    // first node(firstNode) link address 
+    // put in last node(previous) link 
+    previous->next = firstNode->next; 
+
+    // make second node as head node 
+    *head = previous->next; 
+    free(firstNode); 
+    return; 
+} 
+
+```
 
 ### **删除循环Linekd列表**的最后一个节点
 
@@ -77,20 +103,42 @@ Output : 99->11->22->33->44
 
 **用于从列表**中删除最后一个节点的功能：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Function delete last node of 
+// Circular Linked List 
+void DeleteLast(struct Node** head) 
+{ 
+    struct Node *current = *head, *temp = *head, *previous; 
 
-*play_arrow*
+    // check if list doesn't have any node 
+    // if not then return 
+    if (*head == NULL) { 
+        printf("\nList is empty\n"); 
+        return; 
+    } 
 
-*链接*
-*亮度_4*
-*代码*
+    // check if list have single node 
+    // if yes then delete it and return 
+    if (current->next == current) { 
+        *head = NULL; 
+        return; 
+    } 
 
-| `// Function delete last node of``// Circular Linked List``void` `DeleteLast(` `struct` `Node** head)``{` `struct` `Node *current = *head, *temp = *head, *previous;` `// check if list doesn't have any node` `// if not then return` `if` `(*head == NULL) {` `printf` `(` `"\nList is empty\n"` `);` `return` `;` `}` `// check if list have single node` ] `(current->next == current) {` `*head = NULL;` `return` `;` `}`[ `// move first node to last` `// previous` `while` `(current->next != *head) {` `previous = current;` `current = current->next;` `}` `previous->next = current->next;` `*head = previous->next;` `free` `(current);` `return` `;``}` |
+    // move first node to last 
+    // previous 
+    while (current->next != *head) { 
+        previous = current; 
+        current = current->next; 
+    } 
 
-*chevron_right**filter_none*
+    previous->next = current->next; 
+    *head = previous->next; 
+    free(current); 
+    return; 
+} 
+
+```
 
 ### **删除循环链接列表**中给定索引处的节点
 
@@ -121,20 +169,55 @@ Output : 99->11->33->44->55->66
 
 **用于从单循环链表**中删除给定索引或位置处的节点的功能：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Function to delete node at given index 
+// of Circular Linked List 
+void DeleteAtPosition(struct Node** head, int index) 
+{ 
+    // find length of list 
+    int len = Length(*head); 
+    int count = 1; 
+    struct Node *previous = *head, *next = *head; 
 
-*play_arrow*
+    // check if list doesn't have any node 
+    // if not then return 
+    if (*head == NULL) { 
+        printf("\nDelete Last List is empty\n"); 
+        return; 
+    } 
 
-*链接*
-*亮度_4*
-*代码*
+    // given index is in list or not 
+    if (index >= len || index < 0) { 
+        printf("\nIndex is not Found\n"); 
+        return; 
+    } 
 
-| `// Function to delete node at given index``// of Circular Linked List``void` `DeleteAtPosition(` `struct` `Node** head,` `int` `index)``{` `// find length of list` `int` `len = Length(*head);` `int` `count = 1;` `struct` `Node *previous = *head, *next = *head;` [ `// check if list doesn't have any node` `// if not then return` `if` `(*head == NULL) {` `printf` `(` `"\nDelete Last List is empty\n"` `);` `return` `;` `}` `// given index is in list or not` `if` `(index >= len &#124;&#124; index < 0) {` `printf` `(` `"\nIndex is not Found\n"` `);` `return` `;` `}`的 `// delete first node` [HT G150] `if` `(index == 0) {` `DeleteFirst(head);` `return` `;` `}` `// traverse first to last node` `while` `(len > 0) {` ] `// if index found delete that node` `if` `(index == count) {` `previous->next = next->next;` `free` `(next);` `return` `;` `}` `previous = previous->next;` `next = previous->next;` `len--;` `count++;` `}`] `return` `;``}` |
+    // delete first node 
+    if (index == 0) { 
+        DeleteFirst(head); 
+        return; 
+    } 
 
-*chevron_right**filter_none*
+    // traverse first to last node 
+    while (len > 0) { 
+
+        // if index found delete that node 
+        if (index == count) { 
+            previous->next = next->next; 
+            free(next); 
+            return; 
+        } 
+        previous = previous->next; 
+        next = previous->next; 
+        len--; 
+        count++; 
+    } 
+
+    return; 
+} 
+
+```
 
 ### 实现上述所有三个功能的程序
 

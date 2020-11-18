@@ -29,20 +29,140 @@
 
 下面是上述方法的实现：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program for the above approach 
 
-*play_arrow*
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*链接*
-*亮度_4*
-*代码*
+// A Linked List Node 
+struct ListNode { 
+    int val; 
+    ListNode* next; 
 
-| `// C++ program for the above approach``#include <bits/stdc++.h>``using` `namespace` `std;` ] [`// A Linked List Node``struct` `ListNode {` `int` `val;` `ListNode* next;` `// Contructor` `ListNode(` `int` `x)` `: val(x), next(NULL)`​​  `{` `}``};``// Function to create Node``ListNode* getNode(` `int` `data)``{` `ListNode* temp;` `temp = (ListNode*)` `malloc` `(` `sizeof` `(ListNode));` `temp->val = data;` `temp->next = NULL;` `return` `temp;`[HT G50]`// Function to print the Linked List``void` `printList(ListNode* head)``{` `while` `(head->next) {` `cout << head->val <<` `" -> "` `;` `head = head->next;` `}` `printf` `(` `"%d"` `, head->val);``}` [`// Function that removes continuos nodes``// whose sum is K``ListNode* removeZeroSum(ListNode* head,` `int` `K)``{` `// Root node initialise to 0` `ListNode* root =` `new` `ListNode(0);` `// Append at the front of the given` `// Linked List` `root->next = head;` `// Map to store the sum and reference` `// of the Node`[ `unordered_map<` `int` `, ListNode*> umap;` `umap[0] = root;` `// To store the sum while traversing` ] `int` `sum = 0;` [ `// Traversing the Linked List` `while` `(head != NULL) {` `// Find sum` `sum += head->val;` `// If found value with (sum - K)` `if` `(umap.find(sum - K) != umap.end()) {` `ListNode* prev = umap[sum - K];` `ListNode* start = prev;` `// Delete all the node` `// traverse till current node` `int` `aux = sum;` `// Traverse till current head` `while` `(prev != head) {` [H TG395] `prev = prev->next;` `aux += prev->val;` `if` `(prev != head) {` `umap.erase(aux);` `}` `}` `// Update the start value to` `// the next value of current head` `start->next = head->next;` `// Update sum to zero` `sum = 0;` `}` `// If (sum - K) value not found` `else` `{` `umap[sum] = head;` `}` `head = head->next;` `}` `// Return the value of updated` `// head node` `return` `root->next;``}``// Driver Code``int` `main()``{` `// head Node` `ListNode* head;` `// Create Linked List` `head = getNode(1);` `head->next = getNode(2);` `head->next->next = getNode(-3);` `head->next->next->next = getNode(3);` `head->next->next->next->next = getNode(1);` `// Given sum K` `int` `K = 5;` `// Function call to get head node` `// of the updated Linked List` `head = removeZeroSum(head, K);` `// Print the updated Linked List` `printList(head);`[HTG23 9] `return` `0;``}` |
+    // Contructor 
+    ListNode(int x) 
+        : val(x), next(NULL) 
+    { 
+    } 
+}; 
 
-*chevron_right**filter_none***Output:**
+// Function to create Node 
+ListNode* getNode(int data) 
+{ 
+    ListNode* temp; 
+    temp = (ListNode*)malloc(sizeof(ListNode)); 
+    temp->val = data; 
+    temp->next = NULL; 
+    return temp; 
+} 
+
+// Function to print the Linked List 
+void printList(ListNode* head) 
+{ 
+    while (head->next) { 
+        cout << head->val << " -> "; 
+        head = head->next; 
+    } 
+    printf("%d", head->val); 
+} 
+
+// Function that removes continuos nodes 
+// whose sum is K 
+ListNode* removeZeroSum(ListNode* head, 
+                        int K) 
+{ 
+    // Root node initialise to 0 
+    ListNode* root = new ListNode(0); 
+
+    // Append at the front of the given 
+    // Linked List 
+    root->next = head; 
+
+    // Map to store the sum and reference 
+    // of the Node 
+    unordered_map<int, ListNode*> umap; 
+
+    umap[0] = root; 
+
+    // To store the sum while traversing 
+    int sum = 0; 
+
+    // Traversing the Linked List 
+    while (head != NULL) { 
+
+        // Find sum 
+        sum += head->val; 
+
+        // If found value with (sum - K) 
+        if (umap.find(sum - K) != umap.end()) { 
+
+            ListNode* prev = umap[sum - K]; 
+            ListNode* start = prev; 
+
+            // Delete all the node 
+            // traverse till current node 
+            int aux = sum; 
+
+            // Traverse till current head 
+            while (prev != head) { 
+                prev = prev->next; 
+                aux += prev->val; 
+                if (prev != head) { 
+                    umap.erase(aux); 
+                } 
+            } 
+
+            // Update the start value to 
+            // the next value of current head 
+            start->next = head->next; 
+
+            // Update sum to zero 
+            sum = 0; 
+        } 
+
+        // If (sum - K) value not found 
+        else { 
+            umap[sum] = head; 
+        } 
+
+        head = head->next; 
+    } 
+
+    // Return the value of updated 
+    // head node 
+    return root->next; 
+} 
+
+// Driver Code 
+int main() 
+{ 
+    // head Node 
+    ListNode* head; 
+
+    // Create Linked List 
+    head = getNode(1); 
+    head->next = getNode(2); 
+    head->next->next = getNode(-3); 
+    head->next->next->next = getNode(3); 
+    head->next->next->next->next = getNode(1); 
+
+    // Given sum K 
+    int K = 5; 
+
+    // Function call to get head node 
+    // of the updated Linked List 
+    head = removeZeroSum(head, K); 
+
+    // Print the updated Linked List 
+    printList(head); 
+    return 0; 
+} 
+
+```
+
+**Output:**
 
 ```
 1 -> 2 -> -3 -> 3 -> 1

@@ -19,17 +19,305 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation of the approach 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Structure of a node 
+struct Node { 
+    int data; 
+    Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Function to create new node 
+Node* newNode(int data) 
+{ 
+    Node* node = new Node; 
+    node->next = NULL; 
+    node->data = data; 
+    return node; 
+} 
 
-| `// C++ implementation of the approach``#include <bits/stdc++.h>``using` `namespace` `std;``// Structure of a node``struct` `Node {` `int` `data;` `Node* next;``};``// Function to create new node``Node* newNode(` `int` `data)``{` `Node* node =` `new` `Node;` `node->next = NULL;` `node->data = data;` `return` `node;``}``// Function to return the maximum sum of``// k consecutive nodes`HTG39]`{` `// To store current window sum` `int` `sum = 0;` `// To store maximum sum` `int` `maxSum = 0;` `// Pointer to the start of window` `Node* start = head;` `// Pointer to the end of window` `Node* end = head;`  `int` `i;` `// Find the sum of first k nodes` `for` `(i = 0; i < k; i++) {` `sum += end->data;` `end = end->next;` `}` `maxSum = sum;` `// Move window by one step and` `// update sum. Node pointed by` `// start is excluded from current` `// window so subtract it. Node` `// pointed by end is added to` `// current window so add its value.` `while` `(end != NULL) {` `// Subtract the starting element` `// from previous window` `sum -= start->data;` `start = start->next;` ]​​ `// Add the element next to the end` `// of previous window` `sum += end->data;` `end = end->next;` `// Update the maximum sum so far` `maxSum = max(maxSum, sum);` `}` `return` `maxSum;``}``// Driver code``int` `main()``{` `Node* head = newNode(1);` `head->next = newNode(2);` `head->next->next = newNode(3);` `head->next->next->next = newNode(4);` `head->next->next->next->next = newNode(5);` `head->next->next->next->next->next = newNode(6);` `int` `k = 5;` `cout << findMaxSum(head, k);` ] `return` `0;``}` |
+// Function to return the maximum sum of 
+// k consecutive nodes 
+int findMaxSum(Node* head, int k) 
+{ 
+    // To store current window sum 
+    int sum = 0; 
 
-*chevron_right**filter_none*
+    // To store maximum sum 
+    int maxSum = 0; 
+
+    // Pointer to the start of window 
+    Node* start = head; 
+
+    // Pointer to the end of window 
+    Node* end = head; 
+
+    int i; 
+
+    // Find the sum of first k nodes 
+    for (i = 0; i < k; i++) { 
+        sum += end->data; 
+        end = end->next; 
+    } 
+
+    maxSum = sum; 
+
+    // Move window by one step and 
+    // update sum. Node pointed by 
+    // start is excluded from current 
+    // window so subtract it. Node 
+    // pointed by end is added to 
+    // current window so add its value. 
+    while (end != NULL) { 
+
+        // Subtract the starting element 
+        // from previous window 
+        sum -= start->data; 
+        start = start->next; 
+
+        // Add the element next to the end 
+        // of previous window 
+        sum += end->data; 
+        end = end->next; 
+
+        // Update the maximum sum so far 
+        maxSum = max(maxSum, sum); 
+    } 
+
+    return maxSum; 
+} 
+
+// Driver code 
+int main() 
+{ 
+    Node* head = newNode(1); 
+    head->next = newNode(2); 
+    head->next->next = newNode(3); 
+    head->next->next->next = newNode(4); 
+    head->next->next->next->next = newNode(5); 
+    head->next->next->next->next->next = newNode(6); 
+
+    int k = 5; 
+
+    cout << findMaxSum(head, k); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation of the approach 
+class GFG 
+{ 
+
+// Structure of a node 
+static class Node 
+{ 
+    int data; 
+    Node next; 
+}; 
+
+// Function to create new node 
+static Node newNode(int data) 
+{ 
+    Node node = new Node(); 
+    node.next = null; 
+    node.data = data; 
+    return node; 
+} 
+
+// Function to return the maximum sum of 
+// k consecutive nodes 
+static int findMaxSum(Node head, int k) 
+{ 
+    // To store current window sum 
+    int sum = 0; 
+
+    // To store maximum sum 
+    int maxSum = 0; 
+
+    // Pointer to the start of window 
+    Node start = head; 
+
+    // Pointer to the end of window 
+    Node end = head; 
+
+    int i; 
+
+    // Find the sum of first k nodes 
+    for (i = 0; i < k; i++)  
+    { 
+        sum += end.data; 
+        end = end.next; 
+    } 
+
+    maxSum = sum; 
+
+    // Move window by one step and 
+    // update sum. Node pointed by 
+    // start is excluded from current 
+    // window so subtract it. Node 
+    // pointed by end is added to 
+    // current window so add its value. 
+    while (end != null) 
+    { 
+
+        // Subtract the starting element 
+        // from previous window 
+        sum -= start.data; 
+        start = start.next; 
+
+        // Add the element next to the end 
+        // of previous window 
+        sum += end.data; 
+        end = end.next; 
+
+        // Update the maximum sum so far 
+        maxSum = Math.max(maxSum, sum); 
+    } 
+    return maxSum; 
+} 
+
+// Driver code 
+public static void main(String[] args) 
+{ 
+    Node head = newNode(1); 
+    head.next = newNode(2); 
+    head.next.next = newNode(3); 
+    head.next.next.next = newNode(4); 
+    head.next.next.next.next = newNode(5); 
+    head.next.next.next.next.next = newNode(6); 
+
+    int k = 5; 
+    System.out.print(findMaxSum(head, k)); 
+} 
+} 
+
+// This code is contributed by PrinciRaj1992 
+
+```
+
+## C＃
+
+```
+
+// C# implementation of the approach 
+using System; 
+
+class GFG 
+{ 
+
+// Structure of a node 
+public class Node 
+{ 
+    public int data; 
+    public Node next; 
+}; 
+
+// Function to create new node 
+static Node newNode(int data) 
+{ 
+    Node node = new Node(); 
+    node.next = null; 
+    node.data = data; 
+    return node; 
+} 
+
+// Function to return the maximum sum of 
+// k consecutive nodes 
+static int findMaxSum(Node head, int k) 
+{ 
+    // To store current window sum 
+    int sum = 0; 
+
+    // To store maximum sum 
+    int maxSum = 0; 
+
+    // Pointer to the start of window 
+    Node start = head; 
+
+    // Pointer to the end of window 
+    Node end = head; 
+
+    int i; 
+
+    // Find the sum of first k nodes 
+    for (i = 0; i < k; i++)  
+    { 
+        sum += end.data; 
+        end = end.next; 
+    } 
+
+    maxSum = sum; 
+
+    // Move window by one step and 
+    // update sum. Node pointed by 
+    // start is excluded from current 
+    // window so subtract it. Node 
+    // pointed by end is added to 
+    // current window so add its value. 
+    while (end != null) 
+    { 
+
+        // Subtract the starting element 
+        // from previous window 
+        sum -= start.data; 
+        start = start.next; 
+
+        // Add the element next to the end 
+        // of previous window 
+        sum += end.data; 
+        end = end.next; 
+
+        // Update the maximum sum so far 
+        maxSum = Math.Max(maxSum, sum); 
+    } 
+    return maxSum; 
+} 
+
+// Driver code 
+public static void Main(String[] args) 
+{ 
+    Node head = newNode(1); 
+    head.next = newNode(2); 
+    head.next.next = newNode(3); 
+    head.next.next.next = newNode(4); 
+    head.next.next.next.next = newNode(5); 
+    head.next.next.next.next.next = newNode(6); 
+
+    int k = 5; 
+    Console.Write(findMaxSum(head, k)); 
+} 
+} 
+
+// This code is contributed by Rajput-Ji 
+
+```
+
+**Output:**
+
+```
+20
+
+```
+
+**时间复杂度：** O（n）
+**辅助空间：** O（1）
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

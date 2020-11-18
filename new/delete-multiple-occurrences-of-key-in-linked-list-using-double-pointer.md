@@ -20,20 +20,82 @@ Output:  4 -> 3
 
 以下是相同的C ++实现。
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// CPP program to delete multiple 
+// occurrences of a key using single 
+// loop. 
+#include <iostream> 
+using namespace std; 
 
-*play_arrow*
+// A linked list node 
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+struct Node* head = NULL; 
 
-| `// CPP program to delete multiple``// occurrences of a key using single``// loop.``#include <iostream>``using` `namespace` `std;``// A linked list node``struct` `Node {` `int` `data;` `struct` `Node* next;``};``struct` `Node* head = NULL;``void` `printList(` `struct` `Node* node)``{` `while` `(node != NULL) {` `printf` `(` `" %d "` `, node->data);` `node = node->next;` `}``}``void` `push(` `int` `new_data)``{` `struct` `Node* new_node =` `new` `Node;` `new_node->data = new_data;` `new_node->next = (head);` `(head) = new_node;``}`[HTG58`void` `deleteEntry(` `int` `key)``{` `// Start from head` `struct` `Node** pp = &head;` `while` `(*pp) {` `struct` `Node* entry = *pp;` `// If key found, then put` `// next at the address of pp` `// delete entry.` `if` `(entry->data == key) {` `*pp = entry->next;` `delete` `(entry);` `}`[ `// Else move to next` `else` `pp = &(entry->next);` `}``}``int` `main()``{` `push(2);` `push(2);` `push(4);` `push(3);` `push(2);` `int` `key = 2;` `// key to delete`​​ `puts` `(` `"Created Linked List: "` `);` `printList(head);` `printf` `(` `"\n"` `);` `deleteEntry(key);` `printf` `(` `"\nLinked List after Deletion of 2: \n"` `);` `printList(head);` `return` `0;``}` |
+void printList(struct Node* node) 
+{ 
+    while (node != NULL) { 
+        printf(" %d ", node->data); 
+        node = node->next; 
+    } 
+} 
 
-*chevron_right**filter_none***Output:**
+void push(int new_data) 
+{ 
+    struct Node* new_node = new Node; 
+    new_node->data = new_data; 
+    new_node->next = (head); 
+    (head) = new_node; 
+} 
+
+void deleteEntry(int key) 
+{ 
+    // Start from head 
+    struct Node** pp = &head; 
+    while (*pp) { 
+
+        struct Node* entry = *pp; 
+
+        // If key found, then put 
+        // next at the address of pp 
+        // delete entry. 
+        if (entry->data == key) { 
+            *pp = entry->next; 
+            delete (entry); 
+        } 
+
+        // Else move to next 
+        else
+            pp = &(entry->next); 
+    } 
+} 
+
+int main() 
+{ 
+    push(2); 
+    push(2); 
+    push(4); 
+    push(3); 
+    push(2); 
+
+    int key = 2; // key to delete 
+
+    puts("Created Linked List: "); 
+    printList(head); 
+    printf("\n"); 
+    deleteEntry(key); 
+    printf("\nLinked List after Deletion of 2: \n"); 
+    printList(head); 
+    return 0; 
+} 
+
+```
+
+**Output:**
 
 ```
 Created Linked List: 

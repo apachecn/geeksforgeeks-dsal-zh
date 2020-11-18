@@ -805,17 +805,410 @@ Modified List:
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation to modify the 
+// contents of the linked list 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Linked list node 
+struct Node 
+{ 
+    int data; 
+    struct Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// function prototype for printing the list 
+void printList(struct Node*); 
 
-| `// C++ implementation to modify the``// contents of the linked list``#include <bits/stdc++.h>``using` `namespace` `std;` [`// Linked list node``struct` `Node``{` `int` `data;` `struct` `Node* next;``};``// function prototype for printing the list``void` `printList(` `struct` `Node*);``// Function to insert a node at the``// beginning of the linked list``void` `push(` `struct` `Node **head_ref,` `int` `new_data)``{``// allocate node``struct` `Node* new_node =` `(` `struct` `Node*)` `malloc` `(` `sizeof` `(` `struct` `Node));``// put in the data`[HTG26 2] `new_node->data = new_data;``// link the old list at the end of the new node``new_node->next = *head_ref; `​​ `// move the head to point to the new node``*head_ref = new_node;``} ``// function to print the linked list``void` `printList(` `struct` `Node *head)``{` `if` `(!head)` `return` `;`[ `while` `(head->next != NULL)` `{` `cout << head->data <<` `" -> "` `;` `head = head->next;` `}` `cout << head->data << endl;``}` [`// Function to middle node of list.``Node* find_mid(Node *head)``{` `Node *temp = head, *slow = head, *fast = head ;`的[[HT G318]  `while` `(fast && fast->next)` `{` `// Advance 'fast' two nodes, and ` `// advance 'slow' one node` `slow = slow->next ;` `fast = fast->next->next ;` `}` [ `// If number of nodes are odd then update slow` `// by slow->next;` `if` `(fast)` `slow = slow->next ;``return` `slow ;``}``void` `modifyTheList(` `struct` `Node *head,` `struct` `Node *slow)``{``// Create Stack. ``stack <` `int` `> s;``Node *temp = head ;` [`while` `(slow)``{` `s.push( slow->data ) ;` `slow = slow->next ;``}``// Traverse the list by using temp until stack is empty.``while` `( !s.empty() )``{` `temp->data = temp->data - s.top() ;` `temp = temp->next ;` `s.pop() ;``}``}` HTG397]`// Driver program to test above``int` `main()``{` `struct` `Node *head = NULL, *mid ;` `// creating the linked list` `push(&head, 10);` `push(&head, 7);` `push(&head, 12);` `push(&head, 8);` `push(&head, 9);` `push(&head, 2);` `// Call Function to Find the starting point of second half of list. ` `mid = find_mid(head) ;` `// Call function to modify the contents of the linked list.` `modifyTheList( head, mid);` `// print the modified linked list` ] `cout <<` `"Modified List:"` `<< endl;` `printList(head);` `return` `0;``} `[`// This is contributed by Mr. Gera` |
+// Function to insert a node at the 
+// beginning of the linked list 
+void push(struct Node **head_ref, int new_data) 
+{ 
 
-*chevron_right**filter_none*
+// allocate node 
+struct Node* new_node = 
+            (struct Node*) malloc(sizeof(struct Node)); 
+
+// put in the data 
+new_node->data = new_data; 
+
+// link the old list at the end of the new node 
+new_node->next = *head_ref;  
+
+// move the head to point to the new node 
+*head_ref = new_node; 
+}  
+
+// function to print the linked list 
+void printList(struct Node *head) 
+{ 
+    if (!head) 
+        return; 
+
+    while (head->next != NULL) 
+    { 
+        cout << head->data << " -> "; 
+        head = head->next; 
+    } 
+    cout << head->data << endl; 
+} 
+
+// Function to middle node of list. 
+Node* find_mid(Node *head) 
+{ 
+    Node *temp = head, *slow = head, *fast = head ; 
+
+    while(fast && fast->next) 
+    { 
+
+    // Advance 'fast' two nodes, and  
+    // advance 'slow' one node 
+    slow = slow->next ; 
+    fast = fast->next->next ; 
+    } 
+
+    // If number of nodes are odd then update slow 
+    // by slow->next; 
+    if(fast) 
+    slow = slow->next ; 
+
+return slow ; 
+} 
+
+// function to modify the contents of the linked list. 
+void modifyTheList(struct Node *head, struct Node *slow) 
+{ 
+// Create Stack.  
+stack <int> s; 
+Node *temp = head ; 
+
+while(slow) 
+{ 
+    s.push( slow->data ) ; 
+    slow = slow->next ; 
+} 
+
+// Traverse the list by using temp until stack is empty. 
+while( !s.empty() ) 
+{ 
+    temp->data = temp->data - s.top() ; 
+    temp = temp->next ; 
+    s.pop() ; 
+} 
+
+} 
+
+// Driver program to test above 
+int main() 
+{ 
+    struct Node *head = NULL, *mid ; 
+
+    // creating the linked list 
+    push(&head, 10); 
+    push(&head, 7); 
+    push(&head, 12); 
+    push(&head, 8); 
+    push(&head, 9); 
+    push(&head, 2); 
+
+    // Call Function to Find the starting point of second half of list.  
+    mid = find_mid(head) ; 
+
+    // Call function to modify the contents of the linked list. 
+    modifyTheList( head, mid); 
+
+    // print the modified linked list 
+    cout << "Modified List:" << endl; 
+    printList(head); 
+    return 0; 
+}  
+
+// This is contributed by Mr. Gera 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation to modify the 
+// contents of the linked list 
+import java.util.*; 
+
+class GFG  
+{ 
+
+    // Linked list node 
+    static class Node  
+    { 
+
+        int data; 
+        Node next; 
+    }; 
+
+    // Function to insert a node at the 
+    // beginning of the linked list 
+    static Node push(Node head_ref, int new_data)  
+    { 
+
+        // allocate node 
+        Node new_node = new Node(); 
+
+        // put in the data 
+        new_node.data = new_data; 
+
+        // link the old list at the end of the new node 
+        new_node.next = head_ref; 
+
+        // move the head to point to the new node 
+        head_ref = new_node; 
+        return head_ref; 
+    } 
+
+    // function to print the linked list 
+    static void printList(Node head)  
+    { 
+        if (head == null)  
+        { 
+            return; 
+        } 
+
+        while (head.next != null)  
+        { 
+            System.out.print(head.data + "->"); 
+            head = head.next; 
+        } 
+        System.out.print(head.data + "\n"); 
+    } 
+
+    // Function to middle node of list. 
+    static Node find_mid(Node head)  
+    { 
+        Node temp = head, slow = head, fast = head; 
+
+        while (fast != null && fast.next != null) 
+        { 
+
+            // Advance 'fast' two nodes, and  
+            // advance 'slow' one node 
+            slow = slow.next; 
+            fast = fast.next.next; 
+        } 
+
+        // If number of nodes are odd then update slow 
+        // by slow.next; 
+        if (fast != null)  
+        { 
+            slow = slow.next; 
+        } 
+
+        return slow; 
+    } 
+
+    // function to modify the contents of the linked list. 
+    static void modifyTheList(Node head, Node slow)  
+    { 
+        // Create Stack.  
+        Stack<Integer> s = new Stack<Integer>(); 
+        Node temp = head; 
+
+        while (slow != null)  
+        { 
+            s.add(slow.data); 
+            slow = slow.next; 
+        } 
+
+    // Traverse the list by using temp until stack is empty. 
+        while (!s.empty()) 
+        { 
+            temp.data = temp.data - s.peek(); 
+            temp = temp.next; 
+            s.pop(); 
+        } 
+
+    } 
+
+    // Driver program to test above 
+    public static void main(String[] args) 
+    { 
+        Node head = null, mid; 
+
+        // creating the linked list 
+        head = push(head, 10); 
+        head = push(head, 7); 
+        head = push(head, 12); 
+        head = push(head, 8); 
+        head = push(head, 9); 
+        head = push(head, 2); 
+
+        // Call Function to Find the starting 
+        // point of second half of list.  
+        mid = find_mid(head); 
+
+        // Call function to modify  
+        // the contents of the linked list. 
+        modifyTheList(head, mid); 
+
+        // print the modified linked list 
+        System.out.print("Modified List:" + "\n"); 
+        printList(head); 
+    } 
+} 
+
+// This code is contributed by Rajput-Ji 
+
+```
+
+## C＃
+
+```
+
+// C# implementation to modify the 
+// contents of the linked list 
+using System; 
+using System.Collections.Generic; 
+
+class GFG  
+{ 
+
+    // Linked list node 
+    public class Node  
+    { 
+
+        public int data; 
+        public Node next; 
+    }; 
+
+    // Function to insert a node at the 
+    // beginning of the linked list 
+    static Node push(Node head_ref, int new_data)  
+    { 
+
+        // allocate node 
+        Node new_node = new Node(); 
+
+        // put in the data 
+        new_node.data = new_data; 
+
+        // link the old list at the end of the new node 
+        new_node.next = head_ref; 
+
+        // move the head to point to the new node 
+        head_ref = new_node; 
+        return head_ref; 
+    } 
+
+    // function to print the linked list 
+    static void printList(Node head)  
+    { 
+        if (head == null)  
+        { 
+            return; 
+        } 
+
+        while (head.next != null)  
+        { 
+            Console.Write(head.data + "->"); 
+            head = head.next; 
+        } 
+        Console.Write(head.data + "\n"); 
+    } 
+
+    // Function to middle node of list. 
+    static Node find_mid(Node head)  
+    { 
+        Node temp = head, slow = head, fast = head; 
+
+        while (fast != null && fast.next != null) 
+        { 
+
+            // Advance 'fast' two nodes, and  
+            // advance 'slow' one node 
+            slow = slow.next; 
+            fast = fast.next.next; 
+        } 
+
+        // If number of nodes are odd then update slow 
+        // by slow.next; 
+        if (fast != null)  
+        { 
+            slow = slow.next; 
+        } 
+
+        return slow; 
+    } 
+
+    // function to modify the contents of the linked list. 
+    static void modifyTheList(Node head, Node slow)  
+    { 
+        // Create Stack.  
+        Stack<int> s = new Stack<int>(); 
+        Node temp = head; 
+
+        while (slow != null)  
+        { 
+            s.Push(slow.data); 
+            slow = slow.next; 
+        } 
+
+        // Traverse the list by using temp until stack is empty. 
+        while (s.Count != 0) 
+        { 
+            temp.data = temp.data - s.Peek(); 
+            temp = temp.next; 
+            s.Pop(); 
+        } 
+
+    } 
+
+    // Driver code 
+    public static void Main(String[] args) 
+    { 
+        Node head = null, mid; 
+
+        // creating the linked list 
+        head = push(head, 10); 
+        head = push(head, 7); 
+        head = push(head, 12); 
+        head = push(head, 8); 
+        head = push(head, 9); 
+        head = push(head, 2); 
+
+        // Call Function to Find the starting 
+        // point of second half of list.  
+        mid = find_mid(head); 
+
+        // Call function to modify  
+        // the contents of the linked list. 
+        modifyTheList(head, mid); 
+
+        // print the modified linked list 
+        Console.Write("Modified List:" + "\n"); 
+        printList(head); 
+    } 
+} 
+
+// This code is contributed by PrinciRaj1992 
+
+```
+
+**Output:**
+
+```
+Modified List:
+-8 -> 2 -> -4 -> 12 -> 7 -> 10
+
+```
+
+**时间复杂度：** O（n）
+**空间复杂度：** O（n / 2）
+
+**参考：** [https://www.careercup.com/question?id=5657550909341696](https://www.careercup.com/question?id=5657550909341696)
+
+本文由 **Ayush Jauhari** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

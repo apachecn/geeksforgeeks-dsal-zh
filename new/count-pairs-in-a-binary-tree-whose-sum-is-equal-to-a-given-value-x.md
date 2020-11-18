@@ -1011,20 +1011,66 @@ Count = 3
 2.  创建一个空哈希，并继续在当前节点的值和X之间添加差异。
 3.  在每个节点上，检查其值是否在哈希中，如果是，则将计数增加1，并且请勿在哈希中将该节点的值与X的差相加，以避免重复计算单个对。
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+# Python program to Count pairs  
+# in a binary tree whose sum is  
+# equal to a given value x 
 
-*play_arrow*
+# Node class to represent a 
+# node in the binary tree  
+# with value, left and right attributes 
+class Node(object): 
+    def __init__(self, value, left = None, right = None): 
+        self.value = value 
+        self.left = left 
+        self.right = right 
 
-*链接*
-*亮度_4*
-*代码*
+# To store count of pairs 
+count = 0
 
-| `# Python program to Count pairs ``# in a binary tree whose sum is ``# equal to a given value x``# Node class to represent a``# node in the binary tree ``# with value, left and right attributes``class` `Node(` `object` `):` `def` `__init__(` `self` `, value, left` `=` `None` `, right` `=` `None` `):` `self` `.value` `=` `value` `self` `.left` `=` `left` `self` `.right` `=` `right``# To store count of pairs``count` `=` `0``# To store difference between ``# current node's value and x,``# acts a lookup for counting pairs``hash_t` `=` `set` `()``# The input, we need to count ``# pairs whose sum is equal to x``x` `=` `10``# Function to count number of pairs``# Does a pre-order traversal of the tree``def` `count_pairs_w_sum(root):` `# global count` `if` `root:` `if` `root.value` `in` `hash_t:` `count` `+` `=` `1` `else` `:` `hash_t.add(x` `-` `root.value)` ［HTG220］ ［HTG221］ ［HTG84］ ［HTG85］ ［HTG222］ ［HTG223］ ［HTG86］ ［HTG87］ ［HTG224］ ［HTG225］ ［HTG88］ ［HTG226］ ［HTG227］ ［HTG89］ ［HTG228］ ［HTG229 ] `# binary tree and call the function ``# to get the count``if` `__name__` `=` `=` `'__main__'` `:` `root` `=` `Node(` `5` `)` `root.left` `=` `Node(` `3` `)` `root.right` `=` `Node(` `7` `)` `root.left.left` `=` `Node(` `2` `)` `root.left.right` `=` `Node(` `4` `)` `root.right.left` `=` `Node(` `6` `)` `root.right.right` `=` `Node(` `8` `)` ] `print` `count` |
+# To store difference between  
+# current node's value and x, 
+# acts a lookup for counting pairs 
+hash_t = set() 
 
-*chevron_right**filter_none*
+# The input, we need to count  
+# pairs whose sum is equal to x 
+x = 10
+
+# Function to count number of pairs 
+# Does a pre-order traversal of the tree 
+def count_pairs_w_sum(root): 
+    # global count 
+    if root: 
+        if root.value in hash_t: 
+            count += 1
+        else: 
+            hash_t.add(x-root.value) 
+
+        count_pairs_w_sum(root.left) 
+        count_pairs_w_sum(root.right) 
+
+# Entry point / Driver - Create a  
+# binary tree and call the function  
+# to get the count 
+if __name__ == '__main__': 
+    root = Node(5) 
+
+    root.left = Node(3) 
+    root.right = Node(7) 
+
+    root.left.left = Node(2) 
+    root.left.right = Node(4) 
+
+    root.right.left = Node(6) 
+    root.right.right = Node(8) 
+
+    count_pairs_w_sum(root) 
+
+    print count 
+
+```
 
 输出：
 

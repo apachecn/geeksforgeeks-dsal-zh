@@ -48,17 +48,887 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation to perform the 
+// operations on Fibonacci nodes 
+// of a Singly Linked list 
 
-*play_arrow*
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*链接*
-*亮度_4*
-*代码*
+set<int> hashmap; 
 
-| `// C++ implementation to perform the``// operations on Fibonacci nodes``// of a Singly Linked list``#include <bits/stdc++.h>``using` `namespace` `std;``set<``int``> hashmap;``// Node of the singly linked list``struct` `Node {``int` `data;``Node* next;``};``// Function to insert a node at the beginning``// of the singly Linked List``void` `push(Node** head_ref,` `int` `new_data)``{``// Allocate a new node``Node* new_node =` `new` `Node;``// Insert the data``new_node->data = new_data;``new_node->next = (*head_ref);``// Move the head to point the new node``(*head_ref) = new_node;``}``// Function to delete a node in a SLL``// head_ref --> pointer to head node pointer.``// del --> pointer to node to be deleted``void` `deleteNode(Node** head_ref, Node* del)``{``// Base case``struct` `Node* temp = *head_ref;``if` `(*head_ref == NULL &#124;&#124; del == NULL)``return``;``// If the node to be deleted is``// the head node``if` `(*head_ref == del)``*head_ref = del->next;``// Traverse list till not found``// delete node``while` `(temp->next != del) {``temp = temp->next;``}``// Copy address of node``temp->next = del->next;``// Finally, free the memory``// occupied by del``free``(del);``return``;``}``// Function that returns the largest element``// from the linked list.``int` `largestElement(``struct` `Node* head_ref)``{``// Declare a max variable and``// initialize it with INT_MIN value.``// INT_MIN is integer type and``// its value is -32767 or less.``int` `max = INT_MIN;``Node* head = head_ref;``// Loop to iterate the linked list``while` `(head != NULL) {``// If max is less than head->data then``// assign value of head->data to max``// otherwise node point to next node.``if` `(max < head->data)``max = head->data;``head = head->next;``}``return` `max;``}``// Function to create a hash table``// to check Fibonacci nodes``void` `createHash(``int` `maxElement)``{``// Insert the first two``// elements in the hash``int` `prev = 0, curr = 1;``hashmap.insert(prev);``hashmap.insert(curr);``// Add the elements until the max element``// by using the previous two numbers``while` `(curr <= maxElement) {``int` `temp = curr + prev;``hashmap.insert(temp);``prev = curr;``curr = temp;``}``}``// Function to print the Fibonacci``// nodes in a linked list``int` `printFibonacci(Node** head_ref)``{``int` `count = 0;``Node* ptr = *head_ref;``cout <<` `"Fibonacci nodes = "``;``while` `(ptr != NULL) {``// If current node is Fibonacci``if` `(hashmap.find(ptr->data)``!= hashmap.end()) {``// Update count``cout << ptr->data <<` `" "``;``}``ptr = ptr->next;``}``cout << endl;``return` `0;``}``// Function to find the count of Fibonacci``// nodes in a linked list``int` `countFibonacci(Node** head_ref)``{``int` `count = 0;``Node* ptr = *head_ref;``while` `(ptr != NULL) {``// If current node is Fibonacci``if` `(hashmap.find(ptr->data)``!= hashmap.end()) {``// Update count``count++;``}``ptr = ptr->next;``}``return` `count;``}``// Function to find maximum and minimum``// fibonacci nodes in a linked list``void` `minmaxFibonacciNodes(Node** head_ref)``{``// Find the largest node value``// in Singly Linked List``int` `maxEle = largestElement(*head_ref);``// Creating a set containing``// all the Fibonacci nodes``// upto the maximum data value``// in the Singly Linked List``// set<int> hash;``// createHash(hash, maxEle);``int` `minimum = INT_MAX;``int` `maximum = INT_MIN;``Node* ptr = *head_ref;``while` `(ptr != NULL) {``// If current node is fibonacci``if` `(hashmap.find(ptr->data)``!= hashmap.end()) {``// Update minimum``minimum``= min(minimum, ptr->data);``// Update maximum``maximum``= max(maximum, ptr->data);``}``ptr = ptr->next;``}``cout <<` `"Minimum Fibonacci node: "``<< minimum << endl;``cout <<` `"Maximum Fibonacci node: "``<< maximum << endl;``}``// Function to delete all the``// fibonacci nodes from the``// singly linked list``void` `deleteFibonacciNodes(Node** head_ref)``{``Node* ptr = *head_ref;``Node* next;``// Iterating through the linked list``while` `(ptr != NULL) {``next = ptr->next;``// If the node's data is fibonacci,``// delete node 'ptr'``if` `(hashmap.find(ptr->data) != hashmap.end())``deleteNode(head_ref, ptr);``ptr = next;``}``}``// Function to print nodes in a``// given singly linked list``void` `printList(Node* head)``{``while` `(head != NULL) {``cout << head->data <<` `" "``;``head = head->next;``}``}``void` `operations(``struct` `Node* head)``{``// Find the largest node value``// in Singly Linked List``int` `maxEle = largestElement(head);``// Creating a set containing``// all Fibonacci nodes``// upto the maximum data value``// in the Singly Linked List``createHash(maxEle);``// Print all Fibonacci nodes``printFibonacci(&head);``// Count of Fibonacci nodes``cout <<` `"Count of Fibonacci nodes = "``<< countFibonacci(&head) << endl;``// Minimum and maximum Fibonacci nodes``minmaxFibonacciNodes(&head);``// Delete Fibonacci nodes``deleteFibonacciNodes(&head);``cout <<` `"List after deletion: "``;``printList(head);``}``// Driver program``int` `main()``{``// Start with the empty list``Node* head = NULL;``// Create the linked list``// 15 -> 16 -> 8 -> 6 -> 13``push(&head, 13);``push(&head, 6);``push(&head, 8);``push(&head, 16);``push(&head, 15);``operations(head);``return` `0;``}` |
+// Node of the singly linked list 
+struct Node { 
+    int data; 
+    Node* next; 
+}; 
 
-*chevron_right**filter_none*
+// Function to insert a node at the beginning 
+// of the singly Linked List 
+void push(Node** head_ref, int new_data) 
+{ 
+    // Allocate a new node 
+    Node* new_node = new Node; 
+
+    // Insert the data 
+    new_node->data = new_data; 
+    new_node->next = (*head_ref); 
+
+    // Move the head to point the new node 
+    (*head_ref) = new_node; 
+} 
+
+// Function to delete a node in a SLL 
+// head_ref --> pointer to head node pointer. 
+// del --> pointer to node to be deleted 
+void deleteNode(Node** head_ref, Node* del) 
+{ 
+    // Base case 
+    struct Node* temp = *head_ref; 
+
+    if (*head_ref == NULL || del == NULL) 
+        return; 
+
+    // If the node to be deleted is 
+    // the head node 
+    if (*head_ref == del) 
+        *head_ref = del->next; 
+
+    // Traverse list till not found 
+    // delete node 
+    while (temp->next != del) { 
+        temp = temp->next; 
+    } 
+
+    // Copy address of node 
+    temp->next = del->next; 
+
+    // Finally, free the memory 
+    // occupied by del 
+    free(del); 
+
+    return; 
+} 
+
+// Function that returns the largest element 
+// from the linked list. 
+int largestElement(struct Node* head_ref) 
+{ 
+    // Declare a max variable and 
+    // initialize it with INT_MIN value. 
+    // INT_MIN is integer type and 
+    // its value is -32767 or less. 
+    int max = INT_MIN; 
+
+    Node* head = head_ref; 
+
+    // Loop to iterate the linked list 
+    while (head != NULL) { 
+
+        // If max is less than head->data then 
+        // assign value of head->data to max 
+        // otherwise node point to next node. 
+        if (max < head->data) 
+            max = head->data; 
+
+        head = head->next; 
+    } 
+    return max; 
+} 
+
+// Function to create a hash table 
+// to check Fibonacci nodes 
+void createHash(int maxElement) 
+{ 
+    // Insert the first two 
+    // elements in the hash 
+    int prev = 0, curr = 1; 
+    hashmap.insert(prev); 
+    hashmap.insert(curr); 
+
+    // Add the elements until the max element 
+    // by using the previous two numbers 
+    while (curr <= maxElement) { 
+        int temp = curr + prev; 
+        hashmap.insert(temp); 
+        prev = curr; 
+        curr = temp; 
+    } 
+} 
+
+// Function to print the Fibonacci 
+// nodes in a linked list 
+int printFibonacci(Node** head_ref) 
+{ 
+
+    int count = 0; 
+    Node* ptr = *head_ref; 
+
+    cout << "Fibonacci nodes = "; 
+
+    while (ptr != NULL) { 
+
+        // If current node is Fibonacci 
+        if (hashmap.find(ptr->data) 
+            != hashmap.end()) { 
+
+            // Update count 
+            cout << ptr->data << " "; 
+        } 
+
+        ptr = ptr->next; 
+    } 
+
+    cout << endl; 
+    return 0; 
+} 
+
+// Function to find the count of Fibonacci 
+// nodes in a linked list 
+int countFibonacci(Node** head_ref) 
+{ 
+
+    int count = 0; 
+    Node* ptr = *head_ref; 
+
+    while (ptr != NULL) { 
+
+        // If current node is Fibonacci 
+        if (hashmap.find(ptr->data) 
+            != hashmap.end()) { 
+
+            // Update count 
+            count++; 
+        } 
+
+        ptr = ptr->next; 
+    } 
+
+    return count; 
+} 
+
+// Function to find maximum and minimum 
+// fibonacci nodes in a linked list 
+void minmaxFibonacciNodes(Node** head_ref) 
+{ 
+    // Find the largest node value 
+    // in Singly Linked List 
+    int maxEle = largestElement(*head_ref); 
+
+    // Creating a set containing 
+    // all the Fibonacci nodes 
+    // upto the maximum data value 
+    // in the Singly Linked List 
+    // set<int> hash; 
+    // createHash(hash, maxEle); 
+
+    int minimum = INT_MAX; 
+    int maximum = INT_MIN; 
+    Node* ptr = *head_ref; 
+
+    while (ptr != NULL) { 
+
+        // If current node is fibonacci 
+        if (hashmap.find(ptr->data) 
+            != hashmap.end()) { 
+
+            // Update minimum 
+            minimum 
+                = min(minimum, ptr->data); 
+
+            // Update maximum 
+            maximum 
+                = max(maximum, ptr->data); 
+        } 
+        ptr = ptr->next; 
+    } 
+
+    cout << "Minimum Fibonacci node: "
+         << minimum << endl; 
+    cout << "Maximum Fibonacci node: "
+         << maximum << endl; 
+} 
+
+// Function to delete all the 
+// fibonacci nodes from the 
+// singly linked list 
+void deleteFibonacciNodes(Node** head_ref) 
+{ 
+
+    Node* ptr = *head_ref; 
+    Node* next; 
+
+    // Iterating through the linked list 
+    while (ptr != NULL) { 
+        next = ptr->next; 
+
+        // If the node's data is fibonacci, 
+        // delete node 'ptr' 
+        if (hashmap.find(ptr->data) != hashmap.end()) 
+            deleteNode(head_ref, ptr); 
+
+        ptr = next; 
+    } 
+} 
+
+// Function to print nodes in a 
+// given singly linked list 
+void printList(Node* head) 
+{ 
+    while (head != NULL) { 
+        cout << head->data << " "; 
+        head = head->next; 
+    } 
+} 
+
+void operations(struct Node* head) 
+{ 
+    // Find the largest node value 
+    // in Singly Linked List 
+    int maxEle = largestElement(head); 
+
+    // Creating a set containing 
+    // all Fibonacci nodes 
+    // upto the maximum data value 
+    // in the Singly Linked List 
+    createHash(maxEle); 
+
+    // Print all Fibonacci nodes 
+    printFibonacci(&head); 
+
+    // Count of Fibonacci nodes 
+    cout << "Count of Fibonacci nodes = "
+         << countFibonacci(&head) << endl; 
+
+    // Minimum and maximum Fibonacci nodes 
+    minmaxFibonacciNodes(&head); 
+
+    // Delete Fibonacci nodes 
+    deleteFibonacciNodes(&head); 
+
+    cout << "List after deletion: "; 
+    printList(head); 
+} 
+
+// Driver program 
+int main() 
+{ 
+    // Start with the empty list 
+    Node* head = NULL; 
+
+    // Create the linked list 
+    // 15 -> 16 -> 8 -> 6 -> 13 
+    push(&head, 13); 
+    push(&head, 6); 
+    push(&head, 8); 
+    push(&head, 16); 
+    push(&head, 15); 
+
+    operations(head); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation to perform the 
+// operations on Fibonacci nodes 
+// of a Singly Linked list 
+
+import java.util.*; 
+
+class GFG{ 
+
+static HashSet<Integer> hashmap = new HashSet<Integer>(); 
+
+// Node of the singly linked list 
+static class Node { 
+    int data; 
+    Node next; 
+}; 
+
+// Function to insert a node at the beginning 
+// of the singly Linked List 
+static Node push(Node head_ref, int new_data) 
+{ 
+    // Allocate a new node 
+    Node new_node = new Node(); 
+
+    // Insert the data 
+    new_node.data = new_data; 
+    new_node.next = head_ref; 
+
+    // Move the head to point the new node 
+    head_ref = new_node; 
+    return head_ref; 
+} 
+
+// Function to delete a node in a SLL 
+// head_ref -. pointer to head node pointer. 
+// del -. pointer to node to be deleted 
+static Node deleteNode(Node head_ref, Node del) 
+{ 
+    // Base case 
+    Node temp = head_ref; 
+
+    if (head_ref == null || del == null) 
+        return null; 
+
+    // If the node to be deleted is 
+    // the head node 
+    if (head_ref == del) 
+        head_ref = del.next; 
+
+    // Traverse list till not found 
+    // delete node 
+    while (temp.next != del) { 
+        temp = temp.next; 
+    } 
+
+    // Copy address of node 
+    temp.next = del.next; 
+
+    // Finally, free the memory 
+    // occupied by del 
+    del = null; 
+
+    return head_ref; 
+} 
+
+// Function that returns the largest element 
+// from the linked list. 
+static int largestElement(Node head_ref) 
+{ 
+    // Declare a max variable and 
+    // initialize it with Integer.MIN_VALUE value. 
+    // Integer.MIN_VALUE is integer type and 
+    // its value is -32767 or less. 
+    int max = Integer.MIN_VALUE; 
+
+    Node head = head_ref; 
+
+    // Loop to iterate the linked list 
+    while (head != null) { 
+
+        // If max is less than head.data then 
+        // assign value of head.data to max 
+        // otherwise node point to next node. 
+        if (max < head.data) 
+            max = head.data; 
+
+        head = head.next; 
+    } 
+    return max; 
+} 
+
+// Function to create a hash table 
+// to check Fibonacci nodes 
+static void createHash(int maxElement) 
+{ 
+    // Insert the first two 
+    // elements in the hash 
+    int prev = 0, curr = 1; 
+    hashmap.add(prev); 
+    hashmap.add(curr); 
+
+    // Add the elements until the max element 
+    // by using the previous two numbers 
+    while (curr <= maxElement) { 
+        int temp = curr + prev; 
+        hashmap.add(temp); 
+        prev = curr; 
+        curr = temp; 
+    } 
+} 
+
+// Function to print the Fibonacci 
+// nodes in a linked list 
+static int printFibonacci(Node head_ref) 
+{ 
+
+    int count = 0; 
+    Node ptr = head_ref; 
+
+    System.out.print("Fibonacci nodes = "); 
+
+    while (ptr != null) { 
+
+        // If current node is Fibonacci 
+        if (hashmap.contains(ptr.data)) { 
+
+            // Update count 
+            System.out.print(ptr.data+ " "); 
+        } 
+
+        ptr = ptr.next; 
+    } 
+
+    System.out.println(); 
+    return 0; 
+} 
+
+// Function to find the count of Fibonacci 
+// nodes in a linked list 
+static int countFibonacci(Node head_ref) 
+{ 
+
+    int count = 0; 
+    Node ptr = head_ref; 
+
+    while (ptr != null) { 
+
+        // If current node is Fibonacci 
+        if (hashmap.contains(ptr.data)) { 
+
+            // Update count 
+            count++; 
+        } 
+
+        ptr = ptr.next; 
+    } 
+
+    return count; 
+} 
+
+// Function to find maximum and minimum 
+// fibonacci nodes in a linked list 
+static void minmaxFibonacciNodes(Node head_ref) 
+{ 
+    // Find the largest node value 
+    // in Singly Linked List 
+    int maxEle = largestElement(head_ref); 
+
+    // Creating a set containing 
+    // all the Fibonacci nodes 
+    // upto the maximum data value 
+    // in the Singly Linked List 
+    // HashSet<Integer> hash; 
+    // createHash(hash, maxEle); 
+
+    int minimum = Integer.MAX_VALUE; 
+    int maximum = Integer.MIN_VALUE; 
+    Node ptr = head_ref; 
+
+    while (ptr != null) { 
+
+        // If current node is fibonacci 
+        if (hashmap.contains(ptr.data)) { 
+
+            // Update minimum 
+            minimum 
+                = Math.min(minimum, ptr.data); 
+
+            // Update maximum 
+            maximum 
+                = Math.max(maximum, ptr.data); 
+        } 
+        ptr = ptr.next; 
+    } 
+
+    System.out.print("Minimum Fibonacci node: "
+         + minimum +"\n"); 
+    System.out.print("Maximum Fibonacci node: "
+         + maximum +"\n"); 
+} 
+
+// Function to delete all the 
+// fibonacci nodes from the 
+// singly linked list 
+static Node deleteFibonacciNodes(Node head_ref) 
+{ 
+
+    Node ptr = head_ref; 
+    Node next; 
+
+    // Iterating through the linked list 
+    while (ptr != null) { 
+        next = ptr.next; 
+
+        // If the node's data is fibonacci, 
+        // delete node 'ptr' 
+        if (hashmap.contains(ptr.data)) 
+            deleteNode(head_ref, ptr); 
+
+        ptr = next; 
+    } 
+    return head_ref; 
+} 
+
+// Function to print nodes in a 
+// given singly linked list 
+static void printList(Node head) 
+{ 
+    while (head != null) { 
+        System.out.print(head.data+ " "); 
+        head = head.next; 
+    } 
+} 
+
+static void operations(Node head) 
+{ 
+    // Find the largest node value 
+    // in Singly Linked List 
+    int maxEle = largestElement(head); 
+
+    // Creating a set containing 
+    // all Fibonacci nodes 
+    // upto the maximum data value 
+    // in the Singly Linked List 
+    createHash(maxEle); 
+
+    // Print all Fibonacci nodes 
+    printFibonacci(head); 
+
+    // Count of Fibonacci nodes 
+    System.out.print("Count of Fibonacci nodes = "
+         + countFibonacci(head) +"\n"); 
+
+    // Minimum and maximum Fibonacci nodes 
+    minmaxFibonacciNodes(head); 
+
+    // Delete Fibonacci nodes 
+    head = deleteFibonacciNodes(head); 
+
+    System.out.print("List after deletion: "); 
+    printList(head); 
+} 
+
+// Driver program 
+public static void main(String[] args) 
+{ 
+    // Start with the empty list 
+    Node head = null; 
+
+    // Create the linked list 
+    // 15.16.8.6.13 
+    head = push(head, 13); 
+    head = push(head, 6); 
+    head = push(head, 8); 
+    head = push(head, 16); 
+    head = push(head, 15); 
+
+    operations(head); 
+
+} 
+} 
+
+// This code is contributed by Rajput-Ji 
+
+```
+
+## C＃
+
+```
+
+// C# implementation to perform the 
+// operations on Fibonacci nodes 
+// of a Singly Linked list 
+using System; 
+using System.Collections.Generic; 
+
+class GFG{ 
+
+static HashSet<int> hashmap = new HashSet<int>(); 
+
+// Node of the singly linked list 
+class Node { 
+    public int data; 
+    public Node next; 
+}; 
+
+// Function to insert a node at the beginning 
+// of the singly Linked List 
+static Node push(Node head_ref, int new_data) 
+{ 
+    // Allocate a new node 
+    Node new_node = new Node(); 
+
+    // Insert the data 
+    new_node.data = new_data; 
+    new_node.next = head_ref; 
+
+    // Move the head to point the new node 
+    head_ref = new_node; 
+    return head_ref; 
+} 
+
+// Function to delete a node in a SLL 
+// head_ref -. pointer to head node pointer. 
+// del -. pointer to node to be deleted 
+static Node deleteNode(Node head_ref, Node del) 
+{ 
+    // Base case 
+    Node temp = head_ref; 
+
+    if (head_ref == null || del == null) 
+        return null; 
+
+    // If the node to be deleted is 
+    // the head node 
+    if (head_ref == del) 
+        head_ref = del.next; 
+
+    // Traverse list till not found 
+    // delete node 
+    while (temp.next != del) { 
+        temp = temp.next; 
+    } 
+
+    // Copy address of node 
+    temp.next = del.next; 
+
+    // Finally, free the memory 
+    // occupied by del 
+    del = null; 
+
+    return head_ref; 
+} 
+
+// Function that returns the largest element 
+// from the linked list. 
+static int largestElement(Node head_ref) 
+{ 
+    // Declare a max variable and 
+    // initialize it with int.MinValue value. 
+    // int.MinValue is integer type and 
+    // its value is -32767 or less. 
+    int max = int.MinValue; 
+
+    Node head = head_ref; 
+
+    // Loop to iterate the linked list 
+    while (head != null) { 
+
+        // If max is less than head.data then 
+        // assign value of head.data to max 
+        // otherwise node point to next node. 
+        if (max < head.data) 
+            max = head.data; 
+
+        head = head.next; 
+    } 
+    return max; 
+} 
+
+// Function to create a hash table 
+// to check Fibonacci nodes 
+static void createHash(int maxElement) 
+{ 
+    // Insert the first two 
+    // elements in the hash 
+    int prev = 0, curr = 1; 
+    hashmap.Add(prev); 
+    hashmap.Add(curr); 
+
+    // Add the elements until the max element 
+    // by using the previous two numbers 
+    while (curr <= maxElement) { 
+        int temp = curr + prev; 
+        hashmap.Add(temp); 
+        prev = curr; 
+        curr = temp; 
+    } 
+} 
+
+// Function to print the Fibonacci 
+// nodes in a linked list 
+static int printFibonacci(Node head_ref) 
+{ 
+
+    Node ptr = head_ref; 
+
+    Console.Write("Fibonacci nodes = "); 
+
+    while (ptr != null) { 
+
+        // If current node is Fibonacci 
+        if (hashmap.Contains(ptr.data)) { 
+
+            // Update count 
+            Console.Write(ptr.data+ " "); 
+        } 
+
+        ptr = ptr.next; 
+    } 
+
+    Console.WriteLine(); 
+    return 0; 
+} 
+
+// Function to find the count of Fibonacci 
+// nodes in a linked list 
+static int countFibonacci(Node head_ref) 
+{ 
+
+    int count = 0; 
+    Node ptr = head_ref; 
+
+    while (ptr != null) { 
+
+        // If current node is Fibonacci 
+        if (hashmap.Contains(ptr.data)) { 
+
+            // Update count 
+            count++; 
+        } 
+
+        ptr = ptr.next; 
+    } 
+
+    return count; 
+} 
+
+// Function to find maximum and minimum 
+// fibonacci nodes in a linked list 
+static void minmaxFibonacciNodes(Node head_ref) 
+{ 
+    // Find the largest node value 
+    // in Singly Linked List 
+    int maxEle = largestElement(head_ref); 
+
+    // Creating a set containing 
+    // all the Fibonacci nodes 
+    // upto the maximum data value 
+    // in the Singly Linked List 
+    // HashSet<int> hash; 
+    // createHash(hash, maxEle); 
+
+    int minimum = int.MaxValue; 
+    int maximum = int.MinValue; 
+    Node ptr = head_ref; 
+
+    while (ptr != null) { 
+
+        // If current node is fibonacci 
+        if (hashmap.Contains(ptr.data)) { 
+
+            // Update minimum 
+            minimum 
+                = Math.Min(minimum, ptr.data); 
+
+            // Update maximum 
+            maximum 
+                = Math.Max(maximum, ptr.data); 
+        } 
+        ptr = ptr.next; 
+    } 
+
+    Console.Write("Minimum Fibonacci node: "
+         + minimum +"\n"); 
+    Console.Write("Maximum Fibonacci node: "
+         + maximum +"\n"); 
+} 
+
+// Function to delete all the 
+// fibonacci nodes from the 
+// singly linked list 
+static Node deleteFibonacciNodes(Node head_ref) 
+{ 
+
+    Node ptr = head_ref; 
+    Node next; 
+
+    // Iterating through the linked list 
+    while (ptr != null) { 
+        next = ptr.next; 
+
+        // If the node's data is fibonacci, 
+        // delete node 'ptr' 
+        if (hashmap.Contains(ptr.data)) 
+            deleteNode(head_ref, ptr); 
+
+        ptr = next; 
+    } 
+    return head_ref; 
+} 
+
+// Function to print nodes in a 
+// given singly linked list 
+static void printList(Node head) 
+{ 
+    while (head != null) { 
+        Console.Write(head.data+ " "); 
+        head = head.next; 
+    } 
+} 
+
+static void operations(Node head) 
+{ 
+    // Find the largest node value 
+    // in Singly Linked List 
+    int maxEle = largestElement(head); 
+
+    // Creating a set containing 
+    // all Fibonacci nodes 
+    // upto the maximum data value 
+    // in the Singly Linked List 
+    createHash(maxEle); 
+
+    // Print all Fibonacci nodes 
+    printFibonacci(head); 
+
+    // Count of Fibonacci nodes 
+    Console.Write("Count of Fibonacci nodes = "
+         + countFibonacci(head) +"\n"); 
+
+    // Minimum and maximum Fibonacci nodes 
+    minmaxFibonacciNodes(head); 
+
+    // Delete Fibonacci nodes 
+    head = deleteFibonacciNodes(head); 
+
+    Console.Write("List after deletion: "); 
+    printList(head); 
+} 
+
+// Driver program 
+public static void Main(String[] args) 
+{ 
+    // Start with the empty list 
+    Node head = null; 
+
+    // Create the linked list 
+    // 15.16.8.6.13 
+    head = push(head, 13); 
+    head = push(head, 6); 
+    head = push(head, 8); 
+    head = push(head, 16); 
+    head = push(head, 15); 
+
+    operations(head); 
+
+} 
+} 
+
+// This code is contributed by Princi Singh 
+
+```
+
+**Output:**
+
+```
+Fibonacci nodes = 8 13 
+Count of Fibonacci nodes = 2
+Minimum Fibonacci node: 8
+Maximum Fibonacci node: 13
+List after deletion: 15 16 6
+
+```
+
+**时间复杂度：** *O（N）*，其中N是链​​表中节点的数量。
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

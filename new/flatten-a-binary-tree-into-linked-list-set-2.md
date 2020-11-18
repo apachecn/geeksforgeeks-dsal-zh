@@ -52,17 +52,348 @@ Output:
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to flatten the linked  
+// list using stack | set-2  
+#include <iostream> 
+#include <stack> 
+using namespace std; 
 
-*play_arrow*
+struct Node { 
+    int key; 
+    Node *left, *right; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+/* utility that allocates a new Node  
+   with the given key  */
+Node* newNode(int key) 
+{ 
+    Node* node = new Node; 
+    node->key = key; 
+    node->left = node->right = NULL; 
+    return (node); 
+} 
 
-| `// C++ program to flatten the linked ``// list using stack &#124; set-2 ``#include <iostream>``#include <stack>``using` `namespace` `std;``struct` `Node {` `int` `key;` `Node *left, *right;``};``/* utility that allocates a new Node ` `with the given key  */``Node* newNode(` `int` `key)``{` `Node* node =` `new` `Node;` `node->key = key;` `node->left = node->right = NULL;` `return` `(node);``}` [`// To find the inorder traversal``void` `inorder(` `struct` `Node* root)``{` `// base condition` `if` `(root == NULL)` `return` `;` `inorder(root->left);` `cout << root->key <<` `" "` `;` `inorder(root->right);``}``// Function to convert binary tree into``// linked list by altering the right node``// and making left node point to NULL``Node* solution(Node* A)``{` `// Declare a stack` `stack<Node*> st;` `Node* ans = A;` `// Iterate till the stack is not empty` `// and till root is Null`​​ ] `while` `(A != NULL &#124;&#124; st.size() != 0) {` `// Check for NULL` `if` `(A->right != NULL) {` `st.push(A->right);` `}` `// Make the Right Left and` `// left NULL`[H TG289]  `A->right = A->left;` `A->left = NULL;` `// Check for NULL` `if` `(A->right == NULL && st.size() != 0) {` `A->right = st.top();` `st.pop();` `}` `// Iterate` `A = A->right;` `}` `return` `ans;``}``// Driver Code``int` `main()``{` `/*    1` `/   \` `2     5` `/ \     \` `3   4     6 */` `// Build the tree` `Node* root = newNode(1);` `root->left = newNode(2);` `root->right = newNode(5);` `root->left->left = newNode(3);` `root->left->right = newNode(4);` `root->right->right = newNode(6);` `// Call the function to` `// flatten the tree` `root = solution(root);`] `cout <<` `"The Inorder traversal after "` `"flattening binary tree "` `;` `// call the function to print` `// inorder after flatenning` `inorder(root);` `return` `0;` `return` `0;``}` |
+// To find the inorder traversal 
+void inorder(struct Node* root) 
+{ 
+    // base condition 
+    if (root == NULL) 
+        return; 
+    inorder(root->left); 
+    cout << root->key << " "; 
+    inorder(root->right); 
+} 
 
-*chevron_right**filter_none*
+// Function to convert binary tree into 
+// linked list by altering the right node 
+// and making left node point to NULL 
+Node* solution(Node* A) 
+{ 
+
+    // Declare a stack 
+    stack<Node*> st; 
+    Node* ans = A; 
+
+    // Iterate till the stack is not empty 
+    // and till root is Null 
+    while (A != NULL || st.size() != 0) { 
+
+        // Check for NULL 
+        if (A->right != NULL) { 
+            st.push(A->right); 
+        } 
+
+        // Make the Right Left and 
+        // left NULL 
+        A->right = A->left; 
+        A->left = NULL; 
+
+        // Check for NULL 
+        if (A->right == NULL && st.size() != 0) { 
+            A->right = st.top(); 
+            st.pop(); 
+        } 
+
+        // Iterate 
+        A = A->right; 
+    } 
+    return ans; 
+} 
+
+// Driver Code 
+int main() 
+{ 
+    /*    1 
+        /   \ 
+       2     5 
+      / \     \ 
+     3   4     6 */
+
+    // Build the tree 
+    Node* root = newNode(1); 
+    root->left = newNode(2); 
+    root->right = newNode(5); 
+    root->left->left = newNode(3); 
+    root->left->right = newNode(4); 
+    root->right->right = newNode(6); 
+
+    // Call the function to 
+    // flatten the tree 
+    root = solution(root); 
+
+    cout << "The Inorder traversal after "
+            "flattening binary tree "; 
+
+    // call the function to print 
+    // inorder after flatenning 
+    inorder(root); 
+    return 0; 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to flatten the linked  
+// list using stack | set-2  
+import java.util.Stack; 
+
+class GFG  
+{ 
+
+static class Node 
+{ 
+    int key; 
+    Node left, right; 
+} 
+
+/* utility that allocates a new Node  
+with the given key */
+static Node newNode(int key) 
+{ 
+    Node node = new Node(); 
+    node.key = key; 
+    node.left = node.right = null; 
+    return (node); 
+} 
+
+// To find the inorder traversal 
+static void inorder(Node root) 
+{ 
+    // base condition 
+    if (root == null) 
+        return; 
+    inorder(root.left); 
+    System.out.print(root.key + " "); 
+    inorder(root.right); 
+} 
+
+// Function to convert binary tree into 
+// linked list by altering the right node 
+// and making left node point to null 
+static Node solution(Node A) 
+{ 
+
+    // Declare a stack 
+    Stack<Node> st = new Stack<>(); 
+    Node ans = A; 
+
+    // Iterate till the stack is not empty 
+    // and till root is Null 
+    while (A != null || st.size() != 0)  
+    { 
+
+        // Check for null 
+        if (A.right != null)  
+        { 
+            st.push(A.right); 
+        } 
+
+        // Make the Right Left and 
+        // left null 
+        A.right = A.left; 
+        A.left = null; 
+
+        // Check for null 
+        if (A.right == null && st.size() != 0) 
+        { 
+            A.right = st.peek(); 
+            st.pop(); 
+        } 
+
+        // Iterate 
+        A = A.right; 
+    } 
+    return ans; 
+} 
+
+// Driver Code 
+public static void main(String[] args)  
+{ 
+    /* 1 
+        / \ 
+    2     5 
+    / \     \ 
+    3 4     6 */
+
+    // Build the tree 
+    Node root = newNode(1); 
+    root.left = newNode(2); 
+    root.right = newNode(5); 
+    root.left.left = newNode(3); 
+    root.left.right = newNode(4); 
+    root.right.right = newNode(6); 
+
+    // Call the function to 
+    // flatten the tree 
+    root = solution(root); 
+
+    System.out.print("The Inorder traversal after "
+            +"flattening binary tree "); 
+
+    // call the function to print 
+    // inorder after flatenning 
+    inorder(root); 
+} 
+} 
+
+// This code has been contributed by 29AjayKumar 
+
+```
+
+## C＃
+
+```
+
+// C# program to flatten the linked  
+// list using stack | set-2  
+using System; 
+using System.Collections.Generic; 
+
+class GFG  
+{ 
+    public class Node 
+    { 
+        public int key; 
+        public Node left, right; 
+    } 
+
+    /* utility that allocates a new Node  
+    with the given key */
+    static Node newNode(int key) 
+    { 
+        Node node = new Node(); 
+        node.key = key; 
+        node.left = node.right = null; 
+        return (node); 
+    } 
+
+    // To find the inorder traversal 
+    static void inorder(Node root) 
+    { 
+        // base condition 
+        if (root == null) 
+            return; 
+        inorder(root.left); 
+        Console.Write(root.key + " "); 
+        inorder(root.right); 
+    } 
+
+    // Function to convert binary tree into 
+    // linked list by altering the right node 
+    // and making left node point to null 
+    static Node solution(Node A) 
+    { 
+
+        // Declare a stack 
+        Stack<Node> st = new Stack<Node>(); 
+        Node ans = A; 
+
+        // Iterate till the stack is not empty 
+        // and till root is Null 
+        while (A != null || st.Count != 0)  
+        { 
+
+            // Check for null 
+            if (A.right != null)  
+            { 
+                st.Push(A.right); 
+            } 
+
+            // Make the Right Left and 
+            // left null 
+            A.right = A.left; 
+            A.left = null; 
+
+            // Check for null 
+            if (A.right == null && st.Count != 0) 
+            { 
+                A.right = st.Peek(); 
+                st.Pop(); 
+            } 
+
+            // Iterate 
+            A = A.right; 
+        } 
+        return ans; 
+    } 
+
+    // Driver Code 
+    public static void Main(String[] args)  
+    { 
+        /* 1 
+          / \ 
+         2     5 
+        / \     \ 
+        3 4     6 */
+
+        // Build the tree 
+        Node root = newNode(1); 
+        root.left = newNode(2); 
+        root.right = newNode(5); 
+        root.left.left = newNode(3); 
+        root.left.right = newNode(4); 
+        root.right.right = newNode(6); 
+
+        // Call the function to 
+        // flatten the tree 
+        root = solution(root); 
+
+        Console.Write("The Inorder traversal after "
+                +"flattening binary tree "); 
+
+        // call the function to print 
+        // inorder after flatenning 
+        inorder(root); 
+    } 
+} 
+
+// This code contributed by Rajput-Ji 
+
+```
+
+**Output:**
+
+```
+The Inorder traversal after flattening binary tree 1 2 3 4 5 6
+
+```
+
+**时间复杂度：** O（N）
+**辅助空间：** O（Log N）
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

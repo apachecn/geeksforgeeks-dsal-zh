@@ -27,17 +27,253 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// CPP code to find the luckiest person 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Node structure 
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+Node *newNode(int data) 
+{ 
+   Node *node = new Node; 
+   node->data = data; 
+   node->next = NULL; 
+   return node; 
+} 
 
-| `// CPP code to find the luckiest person``#include <bits/stdc++.h>``using` `namespace` `std;``// Node structure``struct` `Node {` `int` `data;` `struct` `Node* next;``};``Node *newNode(` `int` `data)``{` `Node *node =` `new` `Node;` `node->data = data;` `node->next = NULL;` `return` `node;``}``// Function to find the luckiest person``int` `alivesol(` `int` `Num)``{` `if` `(Num == 1)` `return` `1;` `// Create a single node circular` `// linked list.` `Node *last = newNode(1);` `last->next = last;` `for` `(` `int` `i = 2; i <= Num; i++) {` `Node *temp = newNode(i);` `temp->next = last->next;        ` `last->next = temp;` `last = temp;     ` `}` `// Starting from first soldier.` `Node *curr = last->next;` `// condition for evaluating the existence` `// of single soldier who is not killed.` `Node *temp;` `while` `(curr->next != curr) {` `temp = curr;` `curr = curr->next;` `temp->next = curr->next;` `// deleting soldier from the circular` `// list who is killed in the fight.` `delete` `curr;` [HTG1 01] `curr = temp;` `}` `// Returning the Luckiest soldier who` `// remains alive.` `int` `res = temp->data;` `delete` `temp;`的 `return` `res;``}``// Driver code``int` `main()``{` `int` `N = 100;` `cout << alivesol(N) << endl;`​​ `return` `0;``}` |
+// Function to find the luckiest person 
+int alivesol(int Num) 
+{ 
+    if (Num == 1) 
+        return 1; 
 
-*chevron_right**filter_none*
+    // Create a single node circular 
+    // linked list. 
+    Node *last = newNode(1); 
+    last->next = last; 
+
+    for (int i = 2; i <= Num; i++) { 
+        Node *temp = newNode(i); 
+        temp->next = last->next;         
+        last->next = temp; 
+        last = temp;      
+    } 
+
+    // Starting from first soldier. 
+    Node *curr = last->next; 
+
+    // condition for evaluating the existence 
+    // of single soldier who is not killed. 
+    Node *temp; 
+    while (curr->next != curr) { 
+        temp = curr; 
+        curr = curr->next; 
+        temp->next = curr->next; 
+
+        // deleting soldier from the circular 
+        // list who is killed in the fight. 
+        delete curr; 
+        temp = temp->next; 
+        curr = temp; 
+    } 
+
+    // Returning the Luckiest soldier who 
+    // remains alive. 
+    int res = temp->data; 
+    delete temp; 
+
+    return res; 
+} 
+
+// Driver code 
+int main() 
+{ 
+    int N = 100; 
+    cout << alivesol(N) << endl; 
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java code to find the luckiest person  
+class GFG 
+{ 
+
+// Node structure  
+static class Node  
+{  
+    int data;  
+    Node next;  
+};  
+
+static Node newNode(int data)  
+{  
+    Node node = new Node();  
+    node.data = data;  
+    node.next = null;  
+    return node;  
+}  
+
+// Function to find the luckiest person  
+static int alivesol(int Num)  
+{  
+    if (Num == 1)  
+        return 1;  
+
+    // Create a single node circular  
+    // linked list.  
+    Node last = newNode(1);  
+    last.next = last;  
+
+    for (int i = 2; i <= Num; i++)  
+    {  
+        Node temp = newNode(i);  
+        temp.next = last.next;      
+        last.next = temp;  
+        last = temp;      
+    }  
+
+    // Starting from first soldier.  
+    Node curr = last.next;  
+
+    // condition for evaluating the existence  
+    // of single soldier who is not killed.  
+    Node temp = new Node();  
+    while (curr.next != curr)  
+    {  
+        temp = curr;  
+        curr = curr.next;  
+        temp.next = curr.next;  
+
+        // deleting soldier from the circular  
+        // list who is killed in the fight.  
+        temp = temp.next;  
+        curr = temp;  
+    }  
+
+    // Returning the Luckiest soldier who  
+    // remains alive.  
+    int res = temp.data;  
+
+    return res;  
+}  
+
+// Driver code  
+public static void main(String args[])  
+{  
+    int N = 100;  
+    System.out.println( alivesol(N) );  
+}  
+} 
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+## C＃
+
+```
+
+// C# code to find the luckiest person  
+using System; 
+
+class GFG  
+{  
+
+// Node structure  
+public class Node  
+{  
+    public int data;  
+    public Node next;  
+};  
+
+static Node newNode(int data)  
+{  
+    Node node = new Node();  
+    node.data = data;  
+    node.next = null;  
+    return node;  
+}  
+
+// Function to find the luckiest person  
+static int alivesol(int Num)  
+{  
+    if (Num == 1)  
+        return 1;  
+
+    // Create a single node circular  
+    // linked list.  
+    Node last = newNode(1);  
+    last.next = last;  
+
+    for (int i = 2; i <= Num; i++)  
+    {  
+        Node tem = newNode(i);  
+        tem.next = last.next;  
+        last.next = tem;  
+        last = tem;  
+    }  
+
+    // Starting from first soldier.  
+    Node curr = last.next;  
+
+    // condition for evaluating the existence  
+    // of single soldier who is not killed.  
+    Node tem1 = new Node();  
+    while (curr.next != curr)  
+    {  
+        tem1 = curr;  
+        curr = curr.next;  
+        tem1.next = curr.next;  
+
+        // deleting soldier from the circular  
+        // list who is killed in the fight.  
+        tem1 = tem1.next;  
+        curr = tem1;  
+    }  
+
+    // Returning the Luckiest soldier who  
+    // remains alive.  
+    int res = tem1.data;  
+
+    return res;  
+}  
+
+// Driver code  
+public static void Main(String []args)  
+{  
+    int N = 100;  
+    Console.WriteLine( alivesol(N) );  
+}  
+}  
+
+// This code is contributed by Arnab Kundu  
+
+```
+
+**Output:**
+
+```
+73
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

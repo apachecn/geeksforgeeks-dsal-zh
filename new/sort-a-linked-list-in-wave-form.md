@@ -41,17 +41,270 @@ Output : 6 -> 3 -> 10 -> 5 -> 20 -> 7
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to sort linked list 
+// in wave form 
+#include <climits> 
+#include <iostream> 
 
-*play_arrow*
+using namespace std; 
 
-*链接*
-*亮度_4*
-*代码*
+// A linked list node 
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-| `// C++ program to sort linked list``// in wave form``#include <climits>``#include <iostream>``using` `namespace` `std;``// A linked list node``struct` `Node {` `int` `data;` `struct` `Node* next;``};``// Function to add a node at the``// beginning of Linked List``void` `push(` `struct` `Node** head_ref,` `int` `new_data)``{` `/* allocate node */` `struct` `Node* new_node = (` `struct` `Node*)` `malloc` `(` `sizeof` `(` `struct` `Node));`的​​ `/* put in the data */` `new_node->data = new_data;` `/* link the old list off the new node */` `new_node->next = (*head_ref);` `/* move the head to point to the new node */` `(*head_ref) = new_node;``}``// Function get size of the list``int` `listSize(` `struct` `Node* node)``{` `int` `c = 0;` `while` `(node != NULL) {` `c++;` `node = node->next;` `}` `return` `c;``}``// Function to print the list``void` `printList(` `struct` `Node* node)``{` `while` `(node != NULL) {` `cout << node->data <<` `" "` `;` [ `node = node->next;` `}``}``/* UTILITY FUNCTIONS */``/* Function to swap two integers */``void` `swap(` `int` `* a,` `int` `* b)``{` `int` `temp;` `temp = *a;` `*a = *b;` `*b = temp;``}``// Function to sort linked list in``// wave form``void` `sortInWave(` `struct` `Node* head)``{` `struct` `Node* current = head;` `struct` `Node* prev = NULL;` `// Variable to track even position`[ `int` `i = 0;` `// Size of list`[H TG147] `int` `n = listSize(head);` `// Traverse all even positioned nodes` `while` `(i < n) {` `if` `(i % 2 == 0) {` `// If current even element is` `// smaller than previous` `if` `(i > 0 && (prev->data > current->data))` `swap(&(current->data), &(prev->data));` `// If current even element is` `// smaller than next` `if` `(i < n - 1 && (current->data < current->next->data))` `swap(&(current->data), &(current->next->data));` `}` `i++;` `prev = current;` `current = current->next;` `}``}``// Driver program to test above function`[HTG43 1] `int` `main()``{` `struct` `Node* start = NULL;` `/* The constructed linked list is: ` `10, 90, 49, 2, 1, 5, 23*/` `push(&start, 23);` `push(&start, 5);` `push(&start, 1);` `push(&start, 2);` `push(&start, 49);` `push(&start, 90);` `push(&start, 10);` `sortInWave(start);` `printList(start);` `return` `0;``}` |
+// Function to add a node at the 
+// beginning of Linked List 
+void push(struct Node** head_ref, int new_data) 
+{ 
+    /* allocate node */
+    struct Node* new_node = (struct Node*)malloc(sizeof(struct Node)); 
 
-*chevron_right**filter_none*
+    /* put in the data */
+    new_node->data = new_data; 
+
+    /* link the old list off the new node */
+    new_node->next = (*head_ref); 
+
+    /* move the head to point to the new node */
+    (*head_ref) = new_node; 
+} 
+
+// Function get size of the list 
+int listSize(struct Node* node) 
+{ 
+    int c = 0; 
+
+    while (node != NULL) { 
+        c++; 
+
+        node = node->next; 
+    } 
+
+    return c; 
+} 
+
+// Function to print the list 
+void printList(struct Node* node) 
+{ 
+    while (node != NULL) { 
+        cout << node->data << " "; 
+
+        node = node->next; 
+    } 
+} 
+
+/* UTILITY FUNCTIONS */
+/* Function to swap two integers */
+void swap(int* a, int* b) 
+{ 
+    int temp; 
+    temp = *a; 
+    *a = *b; 
+    *b = temp; 
+} 
+
+// Function to sort linked list in 
+// wave form 
+void sortInWave(struct Node* head) 
+{ 
+    struct Node* current = head; 
+    struct Node* prev = NULL; 
+
+    // Variable to track even position 
+    int i = 0; 
+
+    // Size of list 
+    int n = listSize(head); 
+
+    // Traverse all even positioned nodes 
+    while (i < n) { 
+
+        if (i % 2 == 0) { 
+            // If current even element is 
+            // smaller than previous 
+            if (i > 0 && (prev->data > current->data)) 
+                swap(&(current->data), &(prev->data)); 
+
+            // If current even element is 
+            // smaller than next 
+            if (i < n - 1 && (current->data < current->next->data)) 
+                swap(&(current->data), &(current->next->data)); 
+        } 
+
+        i++; 
+
+        prev = current; 
+        current = current->next; 
+    } 
+} 
+
+// Driver program to test above function 
+int main() 
+{ 
+    struct Node* start = NULL; 
+
+    /* The constructed linked list is:  
+    10, 90, 49, 2, 1, 5, 23*/
+    push(&start, 23); 
+    push(&start, 5); 
+    push(&start, 1); 
+    push(&start, 2); 
+    push(&start, 49); 
+    push(&start, 90); 
+    push(&start, 10); 
+
+    sortInWave(start); 
+
+    printList(start); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to sort linked list 
+// in wave form 
+class GFG 
+{ 
+
+// A linked list node 
+static class Node  
+{ 
+    int data; 
+    Node next; 
+}; 
+
+// Function to add a node at the 
+// beginning of Linked List 
+static Node push(Node head_ref, int new_data) 
+{ 
+    /* allocate node */
+    Node new_node = new Node(); 
+
+    /* put in the data */
+    new_node.data = new_data; 
+
+    /* link the old list off the new node */
+    new_node.next = (head_ref); 
+
+    /* move the head to point to the new node */
+    (head_ref) = new_node; 
+    return head_ref; 
+} 
+
+// Function get size of the list 
+static int listSize( Node node) 
+{ 
+    int c = 0; 
+    while (node != null)  
+    { 
+        c++; 
+        node = node.next; 
+    } 
+    return c; 
+} 
+
+// Function to print the list 
+static void printList( Node node) 
+{ 
+    while (node != null)  
+    { 
+        System.out.print(node.data + " "); 
+        node = node.next; 
+    } 
+} 
+
+// Function to sort linked list in 
+// wave form 
+static Node sortInWave( Node head) 
+{ 
+    Node current = head; 
+    Node prev = null; 
+
+    // Variable to track even position 
+    int i = 0; 
+
+    // Size of list 
+    int n = listSize(head); 
+
+    // Traverse all even positioned nodes 
+    while (i < n)  
+    { 
+        if (i % 2 == 0) 
+        { 
+            // If current even element is 
+            // smaller than previous 
+            if (i > 0 && (prev.data > current.data)) 
+            { 
+                int t = prev.data; 
+                prev.data = current.data; 
+                current.data = t; 
+            } 
+
+            // If current even element is 
+            // smaller than next 
+            if (i < n - 1 && (current.data <  
+                              current.next.data)) 
+            { 
+                int t = current.next.data; 
+                current.next.data = current.data; 
+                current.data = t; 
+            } 
+        } 
+        i++; 
+
+        prev = current; 
+        current = current.next; 
+    } 
+    return head; 
+} 
+
+// Driver Code 
+public static void main(String args[]) 
+{ 
+    Node start = null; 
+
+    /* The constructed linked list is:  
+    10, 90, 49, 2, 1, 5, 23*/
+    start = push(start, 23); 
+    start = push(start, 5); 
+    start = push(start, 1); 
+    start = push(start, 2); 
+    start = push(start, 49); 
+    start = push(start, 90); 
+    start = push(start, 10); 
+
+    start = sortInWave(start); 
+
+    printList(start); 
+} 
+} 
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+**Output:**
+
+```
+90 10 49 1 5 2 23
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

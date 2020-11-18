@@ -21,17 +21,328 @@ Output: 8 2 12 9
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation to print the last k nodes 
+// of linked list in reverse order 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Structure of a node 
+struct Node { 
+    int data; 
+    Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Function to get a new node 
+Node* getNode(int data) 
+{ 
+    // allocate space 
+    Node* newNode = new Node; 
 
-| `// C++ implementation to print the last k nodes``// of linked list in reverse order``#include <bits/stdc++.h>``using` `namespace` `std;` [`// Structure of a node``struct` `Node {` `int` `data;` `Node* next;``};``// Function to get a new node``Node* getNode(` `int` `data)``{` `// allocate space` `Node* newNode =` `new` `Node;` `// put in data` ] `newNode->data = data;` `newNode->next = NULL;` `return` `newNode;``}``// Function to print the last k nodes``// of linked list in reverse order``void` `printLastKRev(Node* head,` `int` `& count,` `int` `k)``{` `// if list is empty` `if` `(!head)` `return` `;` [ `// Recursive call with the next node` `// of the list` `printLastKRev(head->next, count, k);` `// Count variable to keep track of` `// the last k nodes` `count++;` `// Print data` `if` `(count <= k)` `cout << head->data <<` `" "` `;``}``// Driver code``int` `main()``{` `// Create list: 1->2->3->4->5` `Node* head = getNode(1);` `head->next = getNode(2);` `head->next->next = getNode(3);` `head->next->next->next = getNode(4);` `head->next->next->next->next = getNode(5);` `int` `k = 4, count = 0;` `// print the last k nodes` `printLastKRev(head, count, k);` `return` `0;``}` |
+    // put in data 
+    newNode->data = data; 
+    newNode->next = NULL; 
+    return newNode; 
+} 
 
-*chevron_right**filter_none*
+// Function to print the last k nodes 
+// of linked list in reverse order 
+void printLastKRev(Node* head, 
+                     int& count, int k) 
+{ 
+    // if list is empty 
+    if (!head) 
+        return; 
+
+    // Recursive call with the next node 
+    // of the list 
+    printLastKRev(head->next, count, k); 
+
+    // Count variable to keep track of 
+    // the last k nodes 
+    count++; 
+
+    // Print data 
+    if (count <= k) 
+        cout << head->data << " "; 
+} 
+
+// Driver code 
+int main() 
+{ 
+    // Create list: 1->2->3->4->5 
+    Node* head = getNode(1); 
+    head->next = getNode(2); 
+    head->next->next = getNode(3); 
+    head->next->next->next = getNode(4); 
+    head->next->next->next->next = getNode(5); 
+
+    int k = 4, count = 0; 
+
+    // print the last k nodes 
+    printLastKRev(head, count, k); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation to print the last k nodes  
+// of linked list in reverse order  
+class GfG  
+{ 
+
+// Structure of a node  
+static class Node  
+{  
+    int data;  
+    Node next;  
+} 
+
+// Function to get a new node  
+static Node getNode(int data)  
+{  
+    // allocate space  
+    Node newNode = new Node();  
+
+    // put in data  
+    newNode.data = data;  
+    newNode.next = null;  
+    return newNode;  
+}  
+
+static class C 
+{ 
+    int count = 0; 
+} 
+
+// Function to print the last k nodes  
+// of linked list in reverse order  
+static void printLastKRev(Node head, C c, int k)  
+{  
+    // if list is empty  
+    if (head == null)  
+        return;  
+
+    // Recursive call with the next node  
+    // of the list  
+    printLastKRev(head.next, c, k);  
+
+    // Count variable to keep track of  
+    // the last k nodes  
+    c.count++;  
+
+    // Print data  
+    if (c.count <= k)  
+        System.out.print(head.data + " ");  
+}  
+
+// Driver code  
+public static void main(String[] args)  
+{  
+    // Create list: 1->2->3->4->5  
+    Node head = getNode(1);  
+    head.next = getNode(2);  
+    head.next.next = getNode(3);  
+    head.next.next.next = getNode(4);  
+    head.next.next.next.next = getNode(5);  
+
+    int k = 4; 
+    C c = new C(); 
+
+    // print the last k nodes  
+    printLastKRev(head, c, k);  
+} 
+}  
+
+// This code is contributed by prerna saini 
+
+```
+
+## 蟒蛇
+
+```
+
+# Python implementation to print the last k nodes  
+# of linked list in reverse order  
+
+# Node class  
+class Node:  
+
+    # Function to initialise the node object  
+    def __init__(self, data):  
+        self.data = data # Assign data  
+        self.next =None
+
+# Function to get a new node  
+def getNode(data):  
+
+    # allocate space  
+    newNode = Node(0)  
+
+    # put in data  
+    newNode.data = data  
+    newNode.next = None
+    return newNode  
+
+class C:  
+    def __init__(self, data):  
+        self.count = data  
+
+# Function to print the last k nodes  
+# of linked list in reverse order  
+def printLastKRev(head, c, k):  
+
+    # if list is empty  
+    if (head == None):  
+        return
+
+    # Recursive call with the next node  
+    # of the list  
+    printLastKRev(head.next, c, k)  
+
+    # Count variable to keep track of  
+    # the last k nodes  
+    c.count = c.count + 1
+
+    # Print data  
+    if (c.count <= k) : 
+        print(head.data, end = " ")  
+
+# Driver code  
+
+# Create list: 1->2->3->4->5  
+head = getNode(1)  
+head.next = getNode(2)  
+head.next.next = getNode(3)  
+head.next.next.next = getNode(4)  
+head.next.next.next.next = getNode(5)  
+
+k = 4
+c = C(0) 
+
+# print the last k nodes  
+printLastKRev(head, c, k)  
+
+# This code is contributed by Arnab Kundu 
+
+```
+
+## C＃
+
+```
+
+// C# implementation to print the last k   
+// nodes of linked list in reverse order 
+using System; 
+
+class GFG  
+{ 
+
+// Structure of a node  
+public class Node  
+{  
+    public int data;  
+    public Node next;  
+} 
+
+// Function to get a new node  
+static Node getNode(int data)  
+{  
+    // allocate space  
+    Node newNode = new Node();  
+
+    // put in data  
+    newNode.data = data;  
+    newNode.next = null;  
+    return newNode;  
+}  
+
+public class C 
+{ 
+    public int count = 0; 
+} 
+
+// Function to print the last k nodes  
+// of linked list in reverse order  
+static void printLastKRev(Node head, C c, int k)  
+{  
+    // if list is empty  
+    if (head == null)  
+        return;  
+
+    // Recursive call with the next  
+    // node of the list  
+    printLastKRev(head.next, c, k);  
+
+    // Count variable to keep track   
+    // of the last k nodes  
+    c.count++;  
+
+    // Print data  
+    if (c.count <= k)  
+        Console.Write(head.data + " ");  
+}  
+
+// Driver code  
+public static void Main(String []args)  
+{  
+
+    // Create list: 1->2->3->4->5  
+    Node head = getNode(1);  
+    head.next = getNode(2);  
+    head.next.next = getNode(3);  
+    head.next.next.next = getNode(4);  
+    head.next.next.next.next = getNode(5);  
+
+    int k = 4; 
+    C c = new C(); 
+
+    // print the last k nodes  
+    printLastKRev(head, c, k);  
+} 
+}  
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+**Output:**
+
+```
+5 4 3 2
+
+```
+
+**时间复杂度：** O（n）。
+
+**迭代方法：**的想法是使用[堆栈数据结构](http://www.geeksforgeeks.org/stack-data-structure/)。
+
+1.  将所有链接列表节点推入堆栈。
+2.  从堆栈中弹出k个节点并进行打印。
+
+**时间复杂度：** O（n）。
+
+**两指针方法**的想法类似于[从链接列表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾找到第k个节点。
+
+1.  将第一个指针向前移动k个节点。
+2.  现在从头开始第二个指针。
+3.  当第一个指针到达末尾时，第二个指针指向第k个节点。
+4.  最后使用第二个指针，打印最后k个节点。
+
+**时间复杂度：** O（n）。
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

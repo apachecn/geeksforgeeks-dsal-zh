@@ -17,20 +17,15 @@
 
 **通用链表**的典型“ C”结构
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+typedef struct node { 
+    char c;                    //Data 
+    int index;                 //Flag 
+    struct node *next, *down;   //Next & Down pointer 
+}GLL; 
 
-*play_arrow*
-
-*链接*
-*亮度_4*
-*代码*
-
-| `typedef` `struct` `node {` `char` `c;` `//Data` `int` `index;` `//Flag` `struct` `node *next, *down;` `//Next & Down pointer``}GLL;` |
-
-*chevron_right**filter_none*
+```
 
 **GLL的示例** {列表表示}
 *（a，（b，c），d）*

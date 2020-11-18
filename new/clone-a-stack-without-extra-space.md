@@ -34,20 +34,65 @@ Output : Destination:- |a|
 
 下面是上述方法的实现：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+# Python3 program to copy the contents from source stack 
+# into destination stack without using extra space 
 
-*play_arrow*
+# Define a class for Stack 
+class Stack(object): 
 
-*链接*
-*亮度_4*
-*代码*
+    def __init__(self): 
+        self.stack = [] 
 
-| `# Python3 program to copy the contents from source stack``# into destination stack without using extra space`] `):`。 `def` `__init__(` `self` `):` `self` `.stack` `=` `[]` `def` `push(` `self` `, value):` `self` `.stack.append(value)` `def` `pop(` `self` `):` `return` `self` `.stack.pop()` `def` `length(` `self` `):` `return` `len` `(` `self` `.stack)` `def` `display(` `self` `):` `for` `i` `in` `range` `(` `len` `(` `self` `.stack)` `-` `1` `,` `-` `1` `,` `-` `1` `):` `print` `(` `self` `.stack[i])` `print` `()``source` `=` `Stack()` `# Source Stack``dest` `=` `Stack()` `# Destination Stack``source.push(` `1` `)``source.push(` `2` `)``source.push(` `3` `)` [`print` `(` `"Source Stack:"` `)``source.display()``count` `=` `0``# Reverse the order of the values in source stack``while` `count !` `=` `source.length()` `-` `1` `:` `topVal` `=` `source.pop()` `while` `count !` `=` `source.length():` `dest.push(source.pop())` `source.push(topVal)` `while` `dest.length() !` `=` `0` `:` `source.push(dest.pop())` `count` `+` `=` `1``# Pop the values from source and push into destination stack``while` `source.length() !` `=` `0` `:` `dest.push(source.pop())`​​`print` `(` `"Destination Stack:"` `)``dest.display()` |
+    def push(self, value): 
+        self.stack.append(value) 
 
-*chevron_right**filter_none*
+    def pop(self): 
+        return self.stack.pop() 
+
+    def length(self): 
+        return len(self.stack) 
+
+    def display(self): 
+        for i in range(len(self.stack)-1, -1, -1): 
+            print(self.stack[i]) 
+
+        print() 
+
+source = Stack()     # Source Stack 
+dest = Stack()         # Destination Stack 
+
+source.push(1) 
+source.push(2) 
+source.push(3) 
+
+print("Source Stack:") 
+source.display() 
+
+count = 0
+
+# Reverse the order of the values in source stack 
+while count != source.length() - 1: 
+
+    topVal = source.pop() 
+    while count != source.length(): 
+        dest.push(source.pop()) 
+
+    source.push(topVal) 
+    while dest.length() != 0: 
+        source.push(dest.pop()) 
+
+    count += 1
+
+# Pop the values from source and push into destination stack 
+while source.length() != 0: 
+    dest.push(source.pop()) 
+
+print("Destination Stack:") 
+dest.display() 
+
+```
 
 **输出：**
 
@@ -70,20 +115,85 @@ Destination Stack:
 
 下面是上述方法的实现：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+# Python3 program to copy the contents from source stack 
+# into destination stack without using extra space  
+# in linear time using Linked List 
 
-*play_arrow*
+class StackNode(object): 
 
-*链接*
-*亮度_4*
-*代码*
+    def __init__(self, data): 
+        self.data = data 
+        self.next = None
 
-| `# Python3 program to copy the contents from source stack``# into destination stack without using extra space ``# in linear time using Linked List``class` `StackNode(` `object` `):` `def` `__init__(` `self` `, data):` `self` `.data` `=` `data` `self` `.` `next` `=` `None``# Class for Stack to represent it as Linked list``class` `Stack(` `object` `):` `def` `__init__(` `self` `):`]  `self` `.top` `=` `None` `def` `push(` `self` `, value):`​​  `newVal` `=` `StackNode(value)` `if` `self` `.top` `=` `=` `None` `:` `self` `.top` `=` `newVal` `else` `:` `newVal.` `next` `=` `self` `.top` `self` `.top` `=` `newVal ` `def` `pop(` `self` `):` `val` `=` `self` `.top.data` `self` `.top` `=` `self` `.top.` `next` `return` `val` `def` `display(` `self` `):` `current` `=` `self` `.top` `while` `current !` `=` `None` `:` `print` `(current.data)`[ HTG1 25] `current` `=` `current.` `next` `print` `()` `def` `reverse(` `self` `):` `current, temp, prev` `=` `self` `.top,` `None` ] `,` `None` `while` `current !` `=` `None` `:` `temp` `=` `current.` `next` `current.` `next` `=` `prev` `prev` `=` `current` `current` `=` `temp` `self` `.top` `=` `prev`]， `def` `isEmpty(` `self` `):` `return` `self` `.top` `=` `=` `None``source` `=` `Stack()` `# Source Stack``dest` `=` `Stack()` `# Destination Stack``source.push(` `1` `)``source.push(` `2` `)``source.push(` `3` `)``print` `(` `"Source Stack:"` `)``source.display()``source.reverse()``# Pop the values from source and push into destination stack``while` `source.isEmpty() !` `=` `True` `:` `dest.push(source.pop())``print` `(` `"Destination Stack:"` `)`[`dest.display()` |
+# Class for Stack to represent it as Linked list 
+class Stack(object): 
 
-*chevron_right**filter_none*
+    def __init__(self): 
+        self.top = None
+
+    def push(self, value): 
+
+        newVal = StackNode(value) 
+
+        if self.top == None: 
+            self.top = newVal 
+
+        else: 
+            newVal.next = self.top 
+            self.top = newVal  
+
+    def pop(self): 
+
+        val = self.top.data 
+        self.top = self.top.next
+        return val 
+
+    def display(self): 
+
+        current = self.top 
+        while current != None: 
+            print(current.data) 
+            current = current.next
+
+        print() 
+
+    def reverse(self): 
+
+        current, temp, prev = self.top, None, None
+
+        while current != None: 
+            temp = current.next
+            current.next = prev 
+            prev = current 
+            current = temp 
+
+        self.top = prev 
+
+    def isEmpty(self): 
+        return self.top == None
+
+source = Stack()        # Source Stack 
+dest = Stack()          # Destination Stack 
+
+source.push(1) 
+source.push(2) 
+source.push(3) 
+
+print("Source Stack:") 
+source.display() 
+
+source.reverse() 
+
+# Pop the values from source and push into destination stack 
+while source.isEmpty() != True: 
+    dest.push(source.pop()) 
+
+print("Destination Stack:") 
+dest.display() 
+
+```
 
 **输出：**
 

@@ -22,17 +22,539 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation of the above approach 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Definition of node of linkedlist 
+struct ListNode { 
+    int data; 
+    struct ListNode* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// This function take head pointer of list, start and 
+// end points of sublist that is to be rotated and the 
+// number k and rotate the sublist to right by k places. 
+void rotateSubList(ListNode* A, int m, int n, int k) 
+{ 
+    int size = n - m + 1; 
 
-| `// C++ implementation of the above approach``#include <bits/stdc++.h>``using` `namespace` `std;``// Definition of node of linkedlist` ]`struct` `ListNode {`​​  `int` `data;` `struct` `ListNode* next;``};``// This function take head pointer of list, start and``// end points of sublist that is to be rotated and the``// number k and rotate the sublist to right by k places.``void` `rotateSubList(ListNode* A,` `int` `m,` `int` `n,` `int` `k)``{` `int` `size = n - m + 1;` ] `// If k is greater than size of sublist then ` `// we will take its modulo with size of sublist` `if` `(k > size) {` `k = k % size;` `}` `// If k is zero or k is equal to size or k is` `// a multiple of size of sublist then list ` `// remains intact` `if` `(k == 0 &#124;&#124; k == size) {` `ListNode* head = A;` `while` `(head != NULL) {` `cout << head->data;` `head = head->next;` `}` `return` `;` `}` `ListNode* link = NULL;` `// m-th node` `if` `(m == 1) {` `link = A;` `}` `// This loop will traverse all node till` ] `// end node of sublist.    ` `ListNode* c = A;` `// Current traversed node` `int` `count = 0;` `// Count of traversed nodes` `ListNode* end = NULL;  ` `ListNode* pre = NULL;` `// Previous of m-th node` `while` `(c != NULL) {` `count++;` `// We will save (m-1)th node and later` `// make it point to (n-k+1)th node` `if` `(count == m - 1) {` `pre = c;` `link = c->next;` `}` `if` `(count == n - k) {` `if` `(m == 1) {` `end = c;` `A = c->next;` `}` `else` `{` `end = c;` `// That is how we bring (n-k+1)th` `// node to front of sublist.` `pre->next = c->next;` `}` `}` `// This keeps rest part of list intact.` `if` `(count == n) {` `ListNode* d = c->next;` `c->next = link;` `end->next = d;` `ListNode* head = A;` `while` `(head != NULL) {` `cout << head->data <<` `" "` `;` `head = head->next;` `}` `return` `;` `}` `c = c->next;` `}``}`[HTG180`// Function for creating and linking new nodes``void` `push(` `struct` `ListNode** head,` `int` `val)``{` `struct` `ListNode* new_node =` `new` `ListNode;` `new_node->data = val;` `new_node->next = (*head);` `(*head) = new_node;``}``// Driver code``int` `main()` [HTG4 49]`{` `struct` `ListNode* head = NULL;` `push(&head, 70);` `push(&head, 60);` `push(&head, 50);` `push(&head, 40);` `push(&head, 30);` `push(&head, 20);` `push(&head, 10);` `ListNode* tmp = head;` `cout <<` `"Given List: "` `;` `while` `(tmp != NULL) {` `cout << tmp->data <<` `" "` `;` `tmp = tmp->next;` `}` `cout << endl;` `int` `m = 3, n = 6, k = 2;` `cout <<` `"After rotation of sublist: "` `;` `rotateSubList(head, m, n, k);` `return` `0;`[HTG25 6] |
+    // If k is greater than size of sublist then  
+    // we will take its modulo with size of sublist 
+    if (k > size) { 
+        k = k % size; 
+    } 
 
-*chevron_right**filter_none*
+    // If k is zero or k is equal to size or k is 
+    // a multiple of size of sublist then list  
+    // remains intact 
+    if (k == 0 || k == size) { 
+        ListNode* head = A; 
+        while (head != NULL) { 
+            cout << head->data; 
+            head = head->next; 
+        } 
+        return; 
+    } 
+
+    ListNode* link = NULL;  // m-th node 
+    if (m == 1) { 
+        link = A; 
+    } 
+
+    // This loop will traverse all node till 
+    // end node of sublist.     
+    ListNode* c = A;  // Current traversed node 
+    int count = 0;  // Count of traversed nodes 
+    ListNode* end = NULL;   
+    ListNode* pre = NULL; // Previous of m-th node 
+    while (c != NULL) { 
+        count++; 
+
+        // We will save (m-1)th node and later 
+        // make it point to (n-k+1)th node 
+        if (count == m - 1) { 
+            pre = c; 
+            link = c->next; 
+        } 
+        if (count == n - k) { 
+            if (m == 1) { 
+                end = c; 
+                A = c->next; 
+            } 
+            else { 
+                end = c; 
+
+                // That is how we bring (n-k+1)th 
+                // node to front of sublist. 
+                pre->next = c->next; 
+            } 
+        } 
+
+        // This keeps rest part of list intact. 
+        if (count == n) { 
+            ListNode* d = c->next; 
+            c->next = link; 
+            end->next = d; 
+            ListNode* head = A; 
+            while (head != NULL) { 
+                cout << head->data << " "; 
+                head = head->next; 
+            } 
+            return; 
+        } 
+        c = c->next; 
+    } 
+} 
+
+// Function for creating and linking new nodes 
+void push(struct ListNode** head, int val) 
+{ 
+    struct ListNode* new_node = new ListNode; 
+    new_node->data = val; 
+    new_node->next = (*head); 
+    (*head) = new_node; 
+} 
+
+// Driver code 
+int main() 
+{ 
+    struct ListNode* head = NULL; 
+    push(&head, 70); 
+    push(&head, 60); 
+    push(&head, 50); 
+    push(&head, 40); 
+    push(&head, 30); 
+    push(&head, 20); 
+    push(&head, 10); 
+    ListNode* tmp = head; 
+    cout << "Given List: "; 
+    while (tmp != NULL) { 
+        cout << tmp->data << " "; 
+        tmp = tmp->next; 
+    } 
+    cout << endl; 
+
+    int m = 3, n = 6, k = 2; 
+    cout << "After rotation of sublist: "; 
+    rotateSubList(head, m, n, k); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation of the above approach  
+import java.util.*; 
+
+class Solution 
+{ 
+
+// Definition of node of linkedlist  
+static class ListNode {  
+    int data;  
+     ListNode next;  
+} 
+
+// This function take head pointer of list, start and  
+// end points of sublist that is to be rotated and the  
+// number k and rotate the sublist to right by k places.  
+static void rotateSubList(ListNode A, int m, int n, int k)  
+{  
+    int size = n - m + 1;  
+
+    // If k is greater than size of sublist then   
+    // we will take its modulo with size of sublist  
+    if (k > size) {  
+        k = k % size;  
+    }  
+
+    // If k is zero or k is equal to size or k is  
+    // a multiple of size of sublist then list   
+    // remains intact  
+    if (k == 0 || k == size) {  
+        ListNode head = A;  
+        while (head != null) {  
+            System.out.print( head.data);  
+            head = head.next;  
+        }  
+        return;  
+    }  
+
+    ListNode link = null;  // m-th node  
+    if (m == 1) {  
+        link = A;  
+    }  
+
+    // This loop will traverse all node till  
+    // end node of sublist.      
+    ListNode c = A;  // Current traversed node  
+    int count = 0;  // Count of traversed nodes  
+    ListNode end = null;    
+    ListNode pre = null; // Previous of m-th node  
+    while (c != null) {  
+        count++;  
+
+        // We will save (m-1)th node and later  
+        // make it point to (n-k+1)th node  
+        if (count == m - 1) {  
+            pre = c;  
+            link = c.next;  
+        }  
+        if (count == n - k) {  
+            if (m == 1) {  
+                end = c;  
+                A = c.next;  
+            }  
+            else {  
+                end = c;  
+
+                // That is how we bring (n-k+1)th  
+                // node to front of sublist.  
+                pre.next = c.next;  
+            }  
+        }  
+
+        // This keeps rest part of list intact.  
+        if (count == n) {  
+            ListNode d = c.next;  
+            c.next = link;  
+            end.next = d;  
+            ListNode head = A;  
+            while (head != null) {  
+                System.out.print( head.data+" ");  
+                head = head.next;  
+            }  
+            return;  
+        }  
+        c = c.next;  
+    }  
+}  
+
+// Function for creating and linking new nodes  
+static ListNode push( ListNode head, int val)  
+{  
+     ListNode new_node = new ListNode();  
+    new_node.data = val;  
+    new_node.next = (head);  
+    (head) = new_node;  
+    return head; 
+}  
+
+// Driver code  
+public static void main(String args[]) 
+{  
+     ListNode head = null;  
+    head =push(head, 70);  
+    head =push(head, 60);  
+    head =push(head, 50);  
+    head =push(head, 40);  
+    head =push(head, 30);  
+    head =push(head, 20);  
+    head =push(head, 10);  
+    ListNode tmp = head;  
+    System.out.print("Given List: ");  
+    while (tmp != null) {  
+        System.out.print( tmp.data + " ");  
+        tmp = tmp.next;  
+    }  
+    System.out.println(); 
+
+    int m = 3, n = 6, k = 2;  
+    System.out.print( "After rotation of sublist: ");  
+    rotateSubList(head, m, n, k);  
+
+}  
+} 
+
+// This code is contributed 
+// by Arnab Kundu 
+
+```
+
+## Python3
+
+```
+
+# Python3 implementation of the above approach 
+import math 
+
+# Definition of node of linkedlist 
+class Node:  
+    def __init__(self, data):  
+        self.data = data  
+        self.next = None
+
+# This function take head pointer of list,  
+# start and end points of sublist that is  
+# to be rotated and the number k and 
+# rotate the sublist to right by k places. 
+def rotateSubList(A, m, n, k): 
+    size = n - m + 1
+
+    # If k is greater than size of sublist then  
+    # we will take its modulo with size of sublist 
+    if (k > size): 
+        k = k % size 
+
+    # If k is zero or k is equal to size or k is 
+    # a multiple of size of sublist then list  
+    # remains intact 
+    if (k == 0 or k == size): 
+        head = A 
+        while (head != None): 
+            print(head.data) 
+            head = head.next
+
+        return
+
+    link = None # m-th node 
+    if (m == 1) : 
+        link = A 
+
+    # This loop will traverse all node till 
+    # end node of sublist.  
+    c = A # Current traversed node 
+    count = 0 # Count of traversed nodes 
+    end = None
+    pre = None # Previous of m-th node 
+    while (c != None) : 
+        count = count + 1
+
+        # We will save (m-1)th node and later 
+        # make it point to (n-k+1)th node 
+        if (count == m - 1) : 
+            pre = c 
+            link = c.next
+
+        if (count == n - k) : 
+            if (m == 1) : 
+                end = c 
+                A = c.next
+
+            else : 
+                end = c 
+
+                # That is how we bring (n-k+1)th 
+                # node to front of sublist. 
+                pre.next = c.next
+
+        # This keeps rest part of list intact. 
+        if (count == n) : 
+            d = c.next
+            c.next = link 
+            end.next = d 
+            head = A 
+            while (head != None) : 
+                print(head.data, end = " ") 
+                head = head.next
+
+            return
+
+        c = c.next
+
+# Function for creating and linking new nodes 
+def push(head, val): 
+    new_node = Node(val) 
+    new_node.data = val 
+    new_node.next = head 
+    head = new_node 
+    return head 
+
+# Driver code 
+if __name__=='__main__':  
+    head = None
+    head = push(head, 70) 
+    head = push(head, 60) 
+    head = push(head, 50) 
+    head = push(head, 40) 
+    head = push(head, 30) 
+    head = push(head, 20) 
+    head = push(head, 10) 
+    tmp = head 
+    print("Given List: ", end = "") 
+    while (tmp != None) : 
+        print(tmp.data, end = " ") 
+        tmp = tmp.next
+
+    print() 
+
+    m = 3
+    n = 6
+    k = 2 
+    print("After rotation of sublist: ", end = "") 
+    rotateSubList(head, m, n, k) 
+
+# This code is contributed by Srathore 
+
+```
+
+## C＃
+
+```
+
+// C# implementation of the above approach  
+using System; 
+
+class GFG 
+{ 
+
+// Definition of node of linkedlist  
+public class ListNode 
+{ 
+    public int data; 
+    public ListNode next; 
+} 
+
+// This function take head pointer of list,  
+// start and end points of sublist that is  
+// to be rotated and the number k and rotate  
+// the sublist to right by k places.  
+public static void rotateSubList(ListNode A, int m,  
+                                      int n, int k) 
+{ 
+    int size = n - m + 1; 
+
+    // If k is greater than size of sublist  
+    // then we will take its modulo with  
+    // size of sublist  
+    if (k > size) 
+    { 
+        k = k % size; 
+    } 
+
+    // If k is zero or k is equal to size  
+    // or k is a multiple of size of sublist  
+    // then list remains intact  
+    if (k == 0 || k == size) 
+    { 
+        ListNode head = A; 
+        while (head != null) 
+        { 
+            Console.Write(head.data); 
+            head = head.next; 
+        } 
+        return; 
+    } 
+
+    ListNode link = null; // m-th node 
+    if (m == 1) 
+    { 
+        link = A; 
+    } 
+
+    // This loop will traverse all node till  
+    // end node of sublist.      
+    ListNode c = A; // Current traversed node 
+    int count = 0;  // Count of traversed nodes 
+    ListNode end = null; 
+    ListNode pre = null; // Previous of m-th node 
+    while (c != null) 
+    { 
+        count++; 
+
+        // We will save (m-1)th node and later  
+        // make it point to (n-k+1)th node  
+        if (count == m - 1) 
+        { 
+            pre = c; 
+            link = c.next; 
+        } 
+        if (count == n - k) 
+        { 
+            if (m == 1) 
+            { 
+                end = c; 
+                A = c.next; 
+            } 
+            else
+            { 
+                end = c; 
+
+                // That is how we bring (n-k+1)th  
+                // node to front of sublist.  
+                pre.next = c.next; 
+            } 
+        } 
+
+        // This keeps rest part of list intact.  
+        if (count == n) 
+        { 
+            ListNode d = c.next; 
+            c.next = link; 
+            end.next = d; 
+            ListNode head = A; 
+            while (head != null) 
+            { 
+                Console.Write(head.data + " "); 
+                head = head.next; 
+            } 
+            return; 
+        } 
+        c = c.next; 
+    } 
+} 
+
+// Function for creating and linking new nodes  
+public static ListNode push(ListNode head, int val) 
+{ 
+    ListNode new_node = new ListNode(); 
+    new_node.data = val; 
+    new_node.next = (head); 
+    (head) = new_node; 
+    return head; 
+} 
+
+// Driver code  
+public static void Main(string[] args) 
+{ 
+    ListNode head = null; 
+    head = push(head, 70); 
+    head = push(head, 60); 
+    head = push(head, 50); 
+    head = push(head, 40); 
+    head = push(head, 30); 
+    head = push(head, 20); 
+    head = push(head, 10); 
+    ListNode tmp = head; 
+    Console.Write("Given List: "); 
+    while (tmp != null) 
+    { 
+        Console.Write(tmp.data + " "); 
+        tmp = tmp.next; 
+    } 
+    Console.WriteLine(); 
+
+    int m = 3, n = 6, k = 2; 
+    Console.Write("After rotation of sublist: "); 
+    rotateSubList(head, m, n, k); 
+} 
+} 
+
+// This code is contributed by Shrikant13 
+
+```
+
+**Output:**
+
+```
+Given List: 10 20 30 40 50 60 70 
+After rotation of sublist: 10 20 50 60 30 40 70
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

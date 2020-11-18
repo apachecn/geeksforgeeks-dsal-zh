@@ -558,20 +558,20 @@ class LinkedList 
 
 可以优化上述算法/代码的情况2。 为了实现建议的更改，我们需要将案例2修改为以下形式。
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Case 2 of the above algo 
+else if (current->data >= new_node->data) 
+{ 
+  // swap the data part of head node and new node 
+  // assuming that we have a function swap(int *, int *) 
+  swap(&(current->data), &(new_node->data));  
 
-*play_arrow*
+  new_node->next = (*head_ref)->next; 
+  (*head_ref)->next = new_node; 
+} 
 
-*链接*
-*亮度_4*
-*代码*
-
-| `// Case 2 of the above algo``else` `if` `(current->data >= new_node->data)``{` `// swap the data part of head node and new node` `// assuming that we have a function swap(int *, int *)` `swap(&(current->data), &(new_node->data)); `[ `new_node->next = (*head_ref)->next;` `(*head_ref)->next = new_node;` [`}` |
-
-*chevron_right**filter_none*
+```
 
 如果您发现上述代码/算法有误，请写评论，或者找到其他解决相同问题的方法。
 

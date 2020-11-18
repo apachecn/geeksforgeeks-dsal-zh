@@ -31,20 +31,46 @@
 
     **实施：**
 
-    *filter_none*
+    ```
 
-    *编辑*
-    *关闭*
+    // Java program to illustrate creating an array 
+    // of integers, puts some values in the array, 
+    // and prints each value to standard output. 
 
-    *play_arrow*
+    class GFG { 
+        public static void main(String[] args) 
+        { 
+            // declares an Array of integers. 
+            int[] arr; 
 
-    *链接*
-    *亮度_4*
-    *代码*
+            // allocating memory for 5 integers. 
+            arr = new int[5]; 
 
-    | `// Java program to illustrate creating an array``// of integers, puts some values in the array,``// and prints each value to standard output.``class` `GFG {` `public` `static` `void` `main(String[] args)` `{` `// declares an Array of integers.` `int` `[] arr;` `// allocating memory for 5 integers.` `arr =` `new` `int` `[` `5` `];` `// initialize the first` ] `0` `] =` `10` `;` `// initialize the second` `// element of the array` `arr[` `1` `] =` `20` `;` `// so on...` `arr[` `2` `] =` `30` `;` `arr[` `3` `] =` `40` `;` `arr[` `4` `] =` `50` `;` `// accessing the elements` `// of the specified array` `for` ] `i =` `0` `; i < arr.length; i++)` `System.out.println(` `"Element at index "` `+ i +` `" : "` `+ arr[i]);` `}``}` |
+            // initialize the first 
+            // element of the array 
+            arr[0] = 10; 
 
-    *chevron_right**filter_none***Output:**
+            // initialize the second 
+            // element of the array 
+            arr[1] = 20; 
+
+            // so on... 
+            arr[2] = 30; 
+            arr[3] = 40; 
+            arr[4] = 50; 
+
+            // accessing the elements 
+            // of the specified array 
+            for (int i = 0; i < arr.length; i++) 
+                System.out.println( 
+                    "Element at index "
+                    + i + " : " + arr[i]); 
+        } 
+    } 
+
+    ```
+
+    **Output:**
 
     ```
     Element at index 0 : 10
@@ -70,20 +96,69 @@
 
     链表是线性数据结构，其中元素未存储在连续的位置，并且每个元素都是具有数据部分和地址部分的单独对象。 元素使用指针和地址链接。 每个元素称为一个节点。 由于动态性以及插入和删除的简便性，它们比阵列更可取。
 
-    *filter_none*
+    ```
 
-    *编辑*
-    *关闭*
+    // Java code for Linked List implementation 
 
-    *play_arrow*
+    import java.util.*; 
 
-    *链接*
-    *亮度_4*
-    *代码*
+    public class Test { 
+        public static void main(String args[]) 
+        { 
+            // Creating object of class linked list 
+            LinkedList<String> object 
+                = new LinkedList<String>(); 
 
-    | `// Java code for Linked List implementation``import` `java.util.*;``public` `class` ] `Test {` `public` `static` `void` `main(String args[])` `{` `// Creating object of class linked list` `LinkedList<String> object` `=` `new` `LinkedList<String>();` `// Adding elements to the linked list` `object.add(` `"A"` `);` `object.add(` `"B"` `);` `object.addLast(` `"C"` `);` `object.addFirst(` `"D"` `);` `object.add(` `2` `,` `"E"` `);` `object.add(` `"F"` `);` `object.add(` `"G"` `);` `System.out.println(` `"Linked list : "` `+ object);` `// Removing elements from the linked list` `object.remove(` `"B"` `);` `object.remove(` `3` `);` `object.removeFirst();` `object.removeLast();` `System.out.println(` `"Linked list after deletion: "` `+ object);` `// Finding elements in the linked list` `boolean` `status = object.contains(` `"E"` `);` `if` `(status)` `System.out.println(` `"List contains the element 'E' "` `);` `else` `System.out.println(` `"List doesn't contain the element 'E'"` `);` [ `// Number of elements in the linked list` `int` `size = object.size();` `System.out.println(` `"Size of linked list = "` `+ size);` `// Get and set elements from linked list` `Object element = object.get(` `2` `);` `System.out.println(` `"Element returned by get() : "` `+ element);` `object.set(` `2` `,` `"Y"` `);` `System.out.println(` `"Linked list after change : "` `+ object);` `}``}` |
+            // Adding elements to the linked list 
+            object.add("A"); 
+            object.add("B"); 
+            object.addLast("C"); 
+            object.addFirst("D"); 
+            object.add(2, "E"); 
+            object.add("F"); 
+            object.add("G"); 
+            System.out.println("Linked list : "
+                               + object); 
 
-    *chevron_right**filter_none***Output:**
+            // Removing elements from the linked list 
+            object.remove("B"); 
+            object.remove(3); 
+            object.removeFirst(); 
+            object.removeLast(); 
+            System.out.println( 
+                "Linked list after deletion: "
+                + object); 
+
+            // Finding elements in the linked list 
+            boolean status = object.contains("E"); 
+
+            if (status) 
+                System.out.println( 
+                    "List contains the element 'E' "); 
+            else
+                System.out.println( 
+                    "List doesn't contain the element 'E'"); 
+
+            // Number of elements in the linked list 
+            int size = object.size(); 
+            System.out.println( 
+                "Size of linked list = " + size); 
+
+            // Get and set elements from linked list 
+            Object element = object.get(2); 
+            System.out.println( 
+                "Element returned by get() : "
+                + element); 
+            object.set(2, "Y"); 
+            System.out.println( 
+                "Linked list after change : "
+                + object); 
+        } 
+    } 
+
+    ```
+
+    **Output:**
 
     ```
     Linked list : [D, A, E, B, C, F, G]
@@ -101,20 +176,176 @@
 
     [![](img/1fac4717827a04f080fae80f8fd57fe7.png)](https://www.geeksforgeeks.org/doubly-linked-list/)
 
-    *filter_none*
+    ```
 
-    *编辑*
-    *关闭*
+    // Java program to demonstrate DLL 
 
-    *play_arrow*
+    // Class for Doubly Linked List 
+    public class DLL { 
+        Node head; // head of list 
 
-    *链接*
-    *亮度_4*
-    *代码*
+        /* Doubly Linked list Node*/
+        class Node { 
+            int data; 
+            Node prev; 
+            Node next; 
 
-    | `// Java program to demonstrate DLL``// Class for Doubly Linked List``public` `class` `DLL {` ] `Node head;` `// head of list` `/* Doubly Linked list Node*/` `class` `Node {` `int` `data;` `Node prev;` `Node next;` `// Constructor to create a new node` `// next and prev is by default` `// initialized as null` `Node(` `int` `d) { data = d; }` `}` `// Adding a node at the front of the list` `public` `void` `push(` `int` `new_data)` `{` `/* 1\. allocate node ` `* 2\. put in the data */` `Node new_Node =` `new` `Node(new_data);` `/* 3\. Make next of new node as head` `and previous as NULL */` `new_Node.next = head;` `new_Node.prev =` `null` `;` `/* 4\. change prev of head node to new node */` `if` `(head !=` `null` `)` `head.prev = new_Node;` `/* 5\. move the head to point to the new node */` `head = new_Node;` `}` `/* Given a node as prev_node, ` `insert a new node after the given node */` `public` `void` `InsertAfter(` `Node prev_Node,` `int` `new_data)` `{` `/*1\. check if the given` `prev_node is NULL */` `if` `(prev_Node ==` `null` `) {` `System.out.println(` `"The given previous node"` `+` `" cannot be NULL "` `);` `return` `;` `}` `/* 2\. allocate node ` `* 3\. put in the data */` `Node new_node =` `new` `Node(new_data);` `/* 4\. Make next of new node ` `as next of prev_node */` `new_node.next = prev_Node.next;` `/* 5\. Make the next of` `prev_node as new_node */` `prev_Node.next = new_node;` `/* 6\. Make prev_node as` `previous of new_node */` `new_node.prev = prev_Node;`[ [ `/* 7\. Change previous of ` `new_node's next node */` `if` `(new_node.next !=` `null` `)` `new_node.next.prev = new_node;` `}` `// Add a node at the end of the list` `void` `append(` `int` `new_data)` `{` `/* 1\. allocate node ` `* 2\. put in the data */` `Node new_node =` `new` `Node(new_data);` `Node last = head;` `/* used in step 5*/` `/* 3\. This new node is going` `to be the last node, so ` `* make next of it as NULL*/` `new_node.next =` `null` `;` `/* 4\. If the Linked List is empty,` `* then make the new ` `* node as head */` `if` `(head ==` `null` `) {` `new_node.prev =` `null` `;` `head = new_node;` `return` `;` `}` `/* 5\. Else traverse till` `the last node */` `while` `(last.next !=` `null` `)` `last = last.next;` `/* 6\. Change the next of last node */` `last.next = new_node;` `/* 7\. Make last node as` `previous of new node */` `new_node.prev = last;` ] `}` `// This function prints contents` `// of linked list starting` `// from the given node` `public` `void` `printlist(Node node)` `{` `Node last =` `null` `;` `System.out.println(` `"Traversal in forward Direction"` `);` `while` `(node !=` ​​ `null` `) {` `System.out.print(node.data +` `" "` `);` `last = node;` `node = node.next;` `}` `System.out.println();` `System.out.println(` `"Traversal in reverse direction"` `);` `while` `(last !=` `null` `) {` `System.out.print(last.data +` `" "` `);` `last = last.prev;` `}` `}` `/* Driver program to test above functions*/`[  `public` `static` `void` `main(String[] args)` `{` `/* Start with the empty list */` `DLL dll =` `new` `DLL();` `// Insert 6\. So linked list becomes 6->NULL` `dll.append(` `6` `);` `// Insert 7 at the beginning.` `// So linked list becomes 7->6->NULL` `dll.push(` `7` `);` `// Insert 1 at the beginning.` `// So linked list becomes 1->7->6->NULL` `dll.push(` `1` `);` `// Insert 4 at the end.` `// So linked list becomes` `// 1->7->6->4->NULL` `dll.append(` `4` `);` `// Insert 8, after 7\.` `// So linked list becomes` ] `// 1->7->8->6->4->NULL` `dll.InsertAfter(dll.head.next,` `8` `);` [H TG698] `System.out.println(` `"Created DLL is: "` `);` `dll.printlist(dll.head);` `}``}` |
+            // Constructor to create a new node 
+            // next and prev is by default 
+            // initialized as null 
+            Node(int d) { data = d; } 
+        } 
 
-    *chevron_right**filter_none***Output:**
+        // Adding a node at the front of the list 
+        public void push(int new_data) 
+        { 
+            /* 1\. allocate node  
+            * 2\. put in the data */
+            Node new_Node = new Node(new_data); 
+
+            /* 3\. Make next of new node as head 
+            and previous as NULL */
+            new_Node.next = head; 
+            new_Node.prev = null; 
+
+            /* 4\. change prev of head node to new node */
+            if (head != null) 
+                head.prev = new_Node; 
+
+            /* 5\. move the head to point to the new node */
+            head = new_Node; 
+        } 
+
+        /* Given a node as prev_node,  
+        insert a new node after the given node */
+        public void InsertAfter( 
+            Node prev_Node, int new_data) 
+        { 
+
+            /*1\. check if the given 
+            prev_node is NULL */
+            if (prev_Node == null) { 
+                System.out.println( 
+                    "The given previous node"
+                    + " cannot be NULL "); 
+                return; 
+            } 
+
+            /* 2\. allocate node  
+            * 3\. put in the data */
+            Node new_node = new Node(new_data); 
+
+            /* 4\. Make next of new node  
+            as next of prev_node */
+            new_node.next = prev_Node.next; 
+
+            /* 5\. Make the next of 
+            prev_node as new_node */
+            prev_Node.next = new_node; 
+
+            /* 6\. Make prev_node as 
+            previous of new_node */
+            new_node.prev = prev_Node; 
+
+            /* 7\. Change previous of  
+            new_node's next node */
+            if (new_node.next != null) 
+                new_node.next.prev = new_node; 
+        } 
+
+        // Add a node at the end of the list 
+        void append(int new_data) 
+        { 
+            /* 1\. allocate node  
+            * 2\. put in the data */
+            Node new_node = new Node(new_data); 
+
+            Node last = head; /* used in step 5*/
+
+            /* 3\. This new node is going 
+            to be the last node, so  
+            * make next of it as NULL*/
+            new_node.next = null; 
+
+            /* 4\. If the Linked List is empty, 
+            * then make the new  
+            * node as head */
+            if (head == null) { 
+                new_node.prev = null; 
+                head = new_node; 
+                return; 
+            } 
+
+            /* 5\. Else traverse till 
+            the last node */
+            while (last.next != null) 
+                last = last.next; 
+
+            /* 6\. Change the next of last node */
+            last.next = new_node; 
+
+            /* 7\. Make last node as 
+            previous of new node */
+            new_node.prev = last; 
+        } 
+
+        // This function prints contents 
+        // of linked list starting 
+        // from the given node 
+        public void printlist(Node node) 
+        { 
+            Node last = null; 
+            System.out.println( 
+                "Traversal in forward Direction"); 
+            while (node != null) { 
+                System.out.print(node.data + " "); 
+                last = node; 
+                node = node.next; 
+            } 
+            System.out.println(); 
+            System.out.println( 
+                "Traversal in reverse direction"); 
+            while (last != null) { 
+                System.out.print(last.data + " "); 
+                last = last.prev; 
+            } 
+        } 
+
+        /* Driver program to test above functions*/
+        public static void main(String[] args) 
+        { 
+            /* Start with the empty list */
+            DLL dll = new DLL(); 
+
+            // Insert 6\. So linked list becomes 6->NULL 
+            dll.append(6); 
+
+            // Insert 7 at the beginning. 
+            // So linked list becomes 7->6->NULL 
+            dll.push(7); 
+
+            // Insert 1 at the beginning. 
+            // So linked list becomes 1->7->6->NULL 
+            dll.push(1); 
+
+            // Insert 4 at the end. 
+            // So linked list becomes 
+            // 1->7->6->4->NULL 
+            dll.append(4); 
+
+            // Insert 8, after 7\. 
+            // So linked list becomes 
+            // 1->7->8->6->4->NULL 
+            dll.InsertAfter(dll.head.next, 8); 
+
+            System.out.println("Created DLL is: "); 
+            dll.printlist(dll.head); 
+        } 
+    } 
+
+    ```
+
+    **Output:**
 
     ```
     Created DLL is: 
@@ -129,20 +360,30 @@
 
     Vector类实现可增长的对象数组。 向量基本上属于传统类，但现在与集合完全兼容。 Vector实现了动态数组，这意味着它可以根据需要增长或收缩。 像数组一样，它包含可以使用整数索引访问的组件。
 
-    *filter_none*
+    ```
 
-    *编辑*
-    *关闭*
+    // Java code illustrating Vector data structure 
 
-    *play_arrow*
+    import java.util.*; 
 
-    *链接*
-    *亮度_4*
-    *代码*
+    class Vector_demo { 
+        public static void main(String[] arg) 
+        { 
 
-    | `// Java code illustrating Vector data structure``import` `java.util.*;``class` `Vector_demo {` `public` `static` `void` `main(String[] arg)` `{` `// Create default vector` `Vector v =` `new` `Vector();` `v.add(` `1` `);` `v.add(` `2` `);` `v.add(` `"geeks"` `);` `v.add(` `"forGeeks"` `);` `v.add(` `3` `);` `System.out.println(` `"Vector is "` `+ v);` `}``}` |
+            // Create default vector 
+            Vector v = new Vector(); 
 
-    *chevron_right**filter_none*
+            v.add(1); 
+            v.add(2); 
+            v.add("geeks"); 
+            v.add("forGeeks"); 
+            v.add(3); 
+
+            System.out.println("Vector is " + v); 
+        } 
+    } 
+
+    ```
 
     **输出：**
 
@@ -157,20 +398,33 @@
 
     [![](img/65e1db85d6cbd7231fe141e47968bdc0.png)](https://www.geeksforgeeks.org/stack-class-in-java/)
 
-    *filter_none*
+    ```
 
-    *编辑*
-    *关闭*
+    // Java code for stack implementation 
 
-    *play_arrow*
+    import java.io.*; 
+    import java.util.*; 
 
-    *链接*
-    *亮度_4*
-    *代码*
+    public class stack_implementation { 
+        public static void main(String a[]) 
+        { 
+            Stack<Integer> stack = new Stack<>(); 
+            stack.push(1); 
+            stack.push(2); 
+            stack.push(3); 
+            stack.push(4); 
 
-    | `// Java code for stack implementation``import` `java.io.*;``import` `java.util.*;` [`public` `class` `stack_implementation {` `public` `static` `void` `main(String a[])` `{` `Stack<Integer> stack =` `new` `Stack<>();` `stack.push(` `1` `);` `stack.push(` `2` `);` `stack.push(` `3` `);` `stack.push(` `4` `);`] `int` `n = stack.size();` `for` `(` `int` `i =` `0` `; i < n; i++) {` `System.out.println(stack.pop());` `}` `}``}` |
+            int n = stack.size(); 
 
-    *chevron_right**filter_none***Output:**
+            for (int i = 0; i < n; i++) { 
+                System.out.println(stack.pop()); 
+            } 
+        } 
+    } 
+
+    ```
+
+    **Output:**
 
     ```
     4
@@ -185,27 +439,56 @@
     *   [使用数组](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)的堆栈实现
     *   [使用单链接列表](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)的堆栈实现
     *   [使用队列](https://www.geeksforgeeks.org/implement-stack-using-queue/)的堆栈实现
-
 5.  ### [队列](https://www.geeksforgeeks.org/queue-interface-java/)
 
     Queue接口在java.util包中可用，并且扩展了Collection接口。 队列集合用于保存要处理的元素，并提供各种操作，如插入，删除等。它是对象的有序列表，其使用仅限于在列表的末尾插入元素并从头开始删除元素 列表，即遵循先进先出或先进先出的原则。
 
     [![](img/c42036f3f74cce8827236640b7f21a49.png)](https://www.geeksforgeeks.org/queue-interface-java/)
 
-    *filter_none*
+    ```
 
-    *编辑*
-    *关闭*
+    // Java orogram to demonstrate working 
+    // of Queue interface in Java 
 
-    *play_arrow*
+    import java.util.LinkedList; 
+    import java.util.Queue; 
 
-    *链接*
-    *亮度_4*
-    *代码*
+    public class QueueExample { 
+        public static void main(String[] args) 
+        { 
+            Queue<Integer> q = new LinkedList<>(); 
 
-    | `// Java orogram to demonstrate working``// of Queue interface in Java``import` `java.util.LinkedList;` ]`public` `class` `QueueExample {` `public` `static` `void` `main(String[] args)` `{` `Queue<Integer> q =` `new` `LinkedList<>();` `// Adds elements {0, 1, 2, 3, 4} to queue` `for` `(` `int` `i =` `0` `; i <` `5` `; i++)` `q.add(i);` [ `// Display contents of the queue.` `System.out.println(` `"Elements of queue-"` `+ q);` `// To remove the head of queue.` `int` `removedele = q.remove();` `System.out.println(` `"removed element-"` `+ removedele);` `System.out.println(q);` `// To view the head of queue` `int` `head = q.peek();` `System.out.println(` `"head of queue-"` `+ head);` `// Rest all methods of collection interface,` `// Like size and contains can be` `// used with this implementation.` `int` `size = q.size();` `System.out.println(` `"Size of queue-"` `+ size);` `}``}` |
+            // Adds elements {0, 1, 2, 3, 4} to queue 
+            for (int i = 0; i < 5; i++) 
+                q.add(i); 
 
-    *chevron_right**filter_none***Output:**
+            // Display contents of the queue. 
+            System.out.println("Elements of queue-" + q); 
+
+            // To remove the head of queue. 
+            int removedele = q.remove(); 
+            System.out.println("removed element-"
+                               + removedele); 
+
+            System.out.println(q); 
+
+            // To view the head of queue 
+            int head = q.peek(); 
+            System.out.println("head of queue-"
+                               + head); 
+
+            // Rest all methods of collection interface, 
+            // Like size and contains can be 
+            // used with this implementation. 
+            int size = q.size(); 
+            System.out.println("Size of queue-"
+                               + size); 
+        } 
+    } 
+
+    ```
+
+    **Output:**
 
     ```
     Elements of queue-[0, 1, 2, 3, 4]
@@ -221,7 +504,6 @@
     *   [使用数组](https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)的队列实现
     *   [使用单链接列表](https://www.geeksforgeeks.org/queue-linked-list-implementation/)的队列实现
     *   [使用堆栈](https://www.geeksforgeeks.org/queue-using-stacks/)的队列实现
-
 6.  ### 树
 
     树是一种将值存储在称为**节点**的实体内部的数据结构。 节点通过称为**边缘**的线连接。 每个节点在其中存储一个值。
@@ -231,20 +513,118 @@
     *   **父级**是一个已附加一个或多个节点的节点。
     *   **边缘**是连接两个节点的链接。
     *   **子级**是具有父节点的节点
-    *   **叶子**是一个未附加任何子节点的节点，它是树的最底节点。*filter_none*
+    *   **叶子**是一个未附加任何子节点的节点，它是树的最底节点。
 
-    *编辑*
-    *关闭*
+    ```
 
-    *play_arrow*
+    // Java program for different tree traversals 
 
-    *链接*
-    *亮度_4*
-    *代码*
+    /* Class containing left and right child of current  
+    node and key value*/
+    class Node { 
+        int key; 
+        Node left, right; 
 
-    | `// Java program for different tree traversals``/* Class containing left and right child of current ``node and key value*/``class` `Node {` `int` `key;` `Node left, right;` `public` `Node(` `int` `item)` `{` `key = item;` `left = right =` `null` `;` `}``}`​​`class` `BinaryTree {` `// Root of Binary Tree` ] `Node root;` `BinaryTree()` `{` `root =` `null` `;` `}` `/* Given a binary tree, print` `its nodes according to the ` `"bottom-up" postorder traversal. */` `void` `printPostorder(Node node)` `{` `if` `(node ==` `null` `)` `return` `;` `// first recur on left subtree` `printPostorder(node.left);` `// then recur on right subtree` `printPostorder(node.right);`[ `// now deal with the node` `System.out.print(node.key +` `" "` `);` `}` `/* Given a binary tree, ` `print its nodes in inorder*/` `void` `printInorder(Node node)` `{` `if` `(node ==` `null` `)` `return` `;`的[ `/* first recur on left child */` `printInorder(node.left);` `/* then print the data of node */` `System.out.print(node.key +` `" "` `);` `/* now recur on right child */` `printInorder(node.right);` `}` `/* Given a binary tree,` `print its nodes in preorder*/` `void` `printPreorder(Node node)` `{` `if` `(node ==` `null` `)` `return` `;` `/* first print data of node */` `System.out.print(node.key +` `" "` `);` `/* then recur on left sutree */` `printPreorder(node.left);` `printPreorder(node.right);` `}` `// Wrappers over above recursive functions` `void` `printPostorder() { printPostorder(root); }` `void` `printInorder() { printInorder(root); }` `void` `printPreorder() { printPreorder(root); }`的 `// Driver method` `public` `static` `void` `main(String[] args)` `{` `BinaryTree tree =` `new` `BinaryTree();` `tree.root =` `new` `Node(` `1` `);` `tree.root.left =` `new` `Node(` `2` `);` `tree.root.right =` `new` `Node(` `3` `);` `tree.root.left.left =` `new` `Node(` `4` `);` `tree.root.left.right =` `new` `Node(` `5` `);` `System.out.println(` `"Preorder traversal of binary tree is "` `);` `tree.printPreorder();` `System.out.println(` `"\nInorder traversal of binary tree is "` `);` `tree.printInorder();` `System.out.println(` `"\nPostorder traversal of binary tree is "` `);` `tree.printPostorder();` `}``}` |
+        public Node(int item) 
+        { 
+            key = item; 
+            left = right = null; 
+        } 
+    } 
 
-    *chevron_right**filter_none***Output:**
+    class BinaryTree { 
+        // Root of Binary Tree 
+        Node root; 
+
+        BinaryTree() 
+        { 
+            root = null; 
+        } 
+
+        /* Given a binary tree, print 
+        its nodes according to the  
+        "bottom-up" postorder traversal. */
+        void printPostorder(Node node) 
+        { 
+            if (node == null) 
+                return; 
+
+            // first recur on left subtree 
+            printPostorder(node.left); 
+
+            // then recur on right subtree 
+            printPostorder(node.right); 
+
+            // now deal with the node 
+            System.out.print(node.key + " "); 
+        } 
+
+        /* Given a binary tree,  
+        print its nodes in inorder*/
+        void printInorder(Node node) 
+        { 
+            if (node == null) 
+                return; 
+
+            /* first recur on left child */
+            printInorder(node.left); 
+
+            /* then print the data of node */
+            System.out.print(node.key + " "); 
+
+            /* now recur on right child */
+            printInorder(node.right); 
+        } 
+
+        /* Given a binary tree, 
+        print its nodes in preorder*/
+        void printPreorder(Node node) 
+        { 
+            if (node == null) 
+                return; 
+
+            /* first print data of node */
+            System.out.print(node.key + " "); 
+
+            /* then recur on left sutree */
+            printPreorder(node.left); 
+
+            /* now recur on right subtree */
+            printPreorder(node.right); 
+        } 
+
+        // Wrappers over above recursive functions 
+        void printPostorder() { printPostorder(root); } 
+        void printInorder() { printInorder(root); } 
+        void printPreorder() { printPreorder(root); } 
+
+        // Driver method 
+        public static void main(String[] args) 
+        { 
+            BinaryTree tree = new BinaryTree(); 
+            tree.root = new Node(1); 
+            tree.root.left = new Node(2); 
+            tree.root.right = new Node(3); 
+            tree.root.left.left = new Node(4); 
+            tree.root.left.right = new Node(5); 
+
+            System.out.println( 
+                "Preorder traversal of binary tree is "); 
+            tree.printPreorder(); 
+
+            System.out.println( 
+                "\nInorder traversal of binary tree is "); 
+            tree.printInorder(); 
+
+            System.out.println( 
+                "\nPostorder traversal of binary tree is "); 
+            tree.printPostorder(); 
+        } 
+    } 
+
+    ```
+
+    **Output:**
 
     ```
     Preorder traversal of binary tree is

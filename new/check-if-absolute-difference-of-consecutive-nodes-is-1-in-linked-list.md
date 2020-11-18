@@ -26,17 +26,337 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to check if absolute difference 
+// of consecutive nodes is 1 in Linked List 
 
-*play_arrow*
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*链接*
-*亮度_4*
-*代码*
+// A linked list node 
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-| `// C++ program to check if absolute difference``// of consecutive nodes is 1 in Linked List``#include <bits/stdc++.h>``using` `namespace` `std;``// A linked list node``struct` `Node {` `int` `data;` `struct` `Node* next;``};``// Utility function to create a new Node``Node* newNode(` `int` `data)``{` `Node* temp =` `new` `Node;` `temp->data = data;` `temp->next = NULL;` `return` `temp;``}``// Function to check if absolute difference``// of consecutive nodes is 1 in Linked List``bool` `isConsecutiveNodes(Node* head)``{` `// Create a temporary pointer`[HT G45] `// to traverse the list` `Node* temp = head;` `// Initialize a flag variable` `int` `f = 1;` `// Traverse through all the nodes` `// in the list` `while` `(temp) {` `if` `(!temp->next)` `break` `;` `// count the number of jumper sequence` `if` `(` `abs` `((temp->data) - (temp->next->data)) != 1) {` `f = 0;` `break` `;` `}` `temp = temp->next;` `}` `// return flag` `return` `f;``}` [`// Driver code``int` `main()``{` `// creating the linked list` `Node* head = newNode(2);` `head->next = newNode(3);` `head->next->next = newNode(4);` `head->next->next->next = newNode(5);` `head->next->next->next->next = newNode(4);` `head->next->next->next->next->next = newNode(3);` `head->next->next->next->next->next->next = newNode(2);` `head->next->next->next->next->next->next->next = newNode(1);`​​  `if` `(isConsecutiveNodes(head))` `cout <<` `"YES"` `;` `else` `cout <<` `"NO"` `;` `return` `0;``}`[ |
+// Utility function to create a new Node 
+Node* newNode(int data) 
+{ 
+    Node* temp = new Node; 
+    temp->data = data; 
+    temp->next = NULL; 
 
-*chevron_right**filter_none*
+    return temp; 
+} 
+
+// Function to check if absolute difference 
+// of consecutive nodes is 1 in Linked List 
+bool isConsecutiveNodes(Node* head) 
+{ 
+    // Create a temporary pointer 
+    // to traverse the list 
+    Node* temp = head; 
+
+    // Initialize a flag variable 
+    int f = 1; 
+
+    // Traverse through all the nodes 
+    // in the list 
+    while (temp) { 
+
+        if (!temp->next) 
+            break; 
+
+        // count the number of jumper sequence 
+        if (abs((temp->data) - (temp->next->data)) != 1) { 
+            f = 0; 
+            break; 
+        } 
+
+        temp = temp->next; 
+    } 
+
+    // return flag 
+    return f; 
+} 
+
+// Driver code 
+int main() 
+{ 
+    // creating the linked list 
+    Node* head = newNode(2); 
+    head->next = newNode(3); 
+    head->next->next = newNode(4); 
+    head->next->next->next = newNode(5); 
+    head->next->next->next->next = newNode(4); 
+    head->next->next->next->next->next = newNode(3); 
+    head->next->next->next->next->next->next = newNode(2); 
+    head->next->next->next->next->next->next->next = newNode(1); 
+
+    if (isConsecutiveNodes(head)) 
+        cout << "YES"; 
+    else
+        cout << "NO"; 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to check if absolute difference 
+// of consecutive nodes is 1 in Linked List 
+class GFG  
+{ 
+
+// A linked list node 
+static class Node  
+{ 
+    int data; 
+    Node next; 
+}; 
+
+// Utility function to create a new Node 
+static Node newNode(int data) 
+{ 
+    Node temp = new Node(); 
+    temp.data = data; 
+    temp.next = null; 
+
+    return temp; 
+} 
+
+// Function to check if absolute difference 
+// of consecutive nodes is 1 in Linked List 
+static int isConsecutiveNodes(Node head) 
+{ 
+    // Create a temporary pointer 
+    // to traverse the list 
+    Node temp = head; 
+
+    // Initialize a flag variable 
+    int f = 1; 
+
+    // Traverse through all the nodes 
+    // in the list 
+    while (temp != null)  
+    { 
+
+        if (temp.next == null) 
+            break; 
+
+        // count the number of jumper sequence 
+        if (Math.abs((temp.data) - (temp.next.data)) != 1) 
+        { 
+            f = 0; 
+            break; 
+        } 
+
+        temp = temp.next; 
+    } 
+
+    // return flag 
+    return f; 
+} 
+
+// Driver code 
+public static void main(String[] args)  
+{ 
+        // creating the linked list 
+    Node head = newNode(2); 
+    head.next = newNode(3); 
+    head.next.next = newNode(4); 
+    head.next.next.next = newNode(5); 
+    head.next.next.next.next = newNode(4); 
+    head.next.next.next.next.next = newNode(3); 
+    head.next.next.next.next.next.next = newNode(2); 
+    head.next.next.next.next.next.next.next = newNode(1); 
+
+    if (isConsecutiveNodes(head) == 1) 
+        System.out.println("YES"); 
+    else
+        System.out.println("NO"); 
+    } 
+} 
+
+// This code has been contributed by 29AjayKumar 
+
+```
+
+## Python3
+
+```
+
+# Python3 program to check if absolute difference 
+# of consecutive nodes is 1 in Linked List 
+import math 
+
+# A linked list node 
+class Node:  
+    def __init__(self, data):  
+        self.data = data  
+        self.next = None
+
+# Utility function to create a new Node 
+def newNode(data): 
+    temp = Node(data) 
+    temp.data = data 
+    temp.next = None
+    return temp 
+
+# Function to check if absolute difference 
+# of consecutive nodes is 1 in Linked List 
+def isConsecutiveNodes(head): 
+
+    # Create a temporary pointer 
+    # to traverse the list 
+    temp = head 
+
+    # Initialize a flag variable 
+    f = 1
+
+    # Traverse through all the nodes 
+    # in the list 
+    while (temp): 
+
+        if (temp.next == None): 
+            break
+
+        # count the number of jumper sequence 
+        if (abs((temp.data) -
+                (temp.next.data)) != 1) : 
+            f = 0
+            break
+
+        temp = temp.next
+
+    # return flag 
+    return f 
+
+# Driver code 
+if __name__=='__main__':  
+
+    # creating the linked list 
+    head = newNode(2) 
+    head.next = newNode(3) 
+    head.next.next = newNode(4) 
+    head.next.next.next = newNode(5) 
+    head.next.next.next.next = newNode(4) 
+    head.next.next.next.next.next = newNode(3) 
+    head.next.next.next.next.next.next = newNode(2) 
+    head.next.next.next.next.next.next.next = newNode(1) 
+
+    if (isConsecutiveNodes(head)): 
+        print("YES") 
+    else: 
+        print("NO") 
+
+# This code is contributed by Srathore 
+
+```
+
+## C＃
+
+```
+
+// C# program to check if absolute difference 
+// of consecutive nodes is 1 in Linked List 
+using System; 
+
+public class GFG  
+{ 
+
+// A linked list node 
+public class Node  
+{ 
+    public int data; 
+    public Node next; 
+}; 
+
+// Utility function to create a new Node 
+static Node newNode(int data) 
+{ 
+    Node temp = new Node(); 
+    temp.data = data; 
+    temp.next = null; 
+
+    return temp; 
+} 
+
+// Function to check if absolute difference 
+// of consecutive nodes is 1 in Linked List 
+static int isConsecutiveNodes(Node head) 
+{ 
+    // Create a temporary pointer 
+    // to traverse the list 
+    Node temp = head; 
+
+    // Initialize a flag variable 
+    int f = 1; 
+
+    // Traverse through all the nodes 
+    // in the list 
+    while (temp != null)  
+    { 
+
+        if (temp.next == null) 
+            break; 
+
+        // count the number of jumper sequence 
+        if (Math.Abs((temp.data) - (temp.next.data)) != 1) 
+        { 
+            f = 0; 
+            break; 
+        } 
+
+        temp = temp.next; 
+    } 
+
+    // return flag 
+    return f; 
+} 
+
+// Driver code 
+public static void Main(String[] args)  
+{ 
+        // creating the linked list 
+    Node head = newNode(2); 
+    head.next = newNode(3); 
+    head.next.next = newNode(4); 
+    head.next.next.next = newNode(5); 
+    head.next.next.next.next = newNode(4); 
+    head.next.next.next.next.next = newNode(3); 
+    head.next.next.next.next.next.next = newNode(2); 
+    head.next.next.next.next.next.next.next = newNode(1); 
+
+    if (isConsecutiveNodes(head) == 1) 
+        Console.WriteLine("YES"); 
+    else
+        Console.WriteLine("NO"); 
+    } 
+} 
+
+// This code contributed by Rajput-Ji 
+
+```
+
+**Output:**
+
+```
+YES
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

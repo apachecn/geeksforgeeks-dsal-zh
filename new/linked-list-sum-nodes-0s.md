@@ -20,17 +20,397 @@ Output : 1->2->3->4
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to in-place add linked list  
+// nodes between 0s. 
+#include <bits/stdc++.h> 
+using namespace std; 
+#define NODE struct node 
 
-*play_arrow*
+// Structure of a node 
+NODE 
+{ 
+    int data; 
+    struct node *next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Function to create a node 
+NODE *getNode(int val) 
+{ 
+    NODE *temp; 
+    temp = (NODE*)malloc(sizeof(NODE)); 
+    temp->data = val; 
+    temp->next = NULL; 
+    return temp; 
+} 
 
-| `// C++ program to in-place add linked list ``// nodes between 0s.``#include <bits/stdc++.h>``using` `namespace` `std;``#define NODE struct node``// Structure of a node``NODE``{` `int` `data;` `struct` `node *next;``};``// Function to create a node``NODE *getNode(` `int` `val)``{` `NODE *temp;` `temp = (NODE*)` `malloc` `(` `sizeof` `(NODE));` `temp->data = val;` `temp->next = NULL;` `return` `temp;``}``// Function to traverse and print Linked List ``void` `printList(NODE *head)``{` `while` `(head->next)` `{` `cout << head->data <<` `"-> "` `;` `head = head->next;` `}` `cout <<` `"->"` `<< head->data ;``}``void` `inPlaceStore(NODE *head)``{` `// Function to store numbers till 0 ` `if` `(head->data == 0)` `{` `head = head->next;` `}` `// To store modified list ` `NODE *res = head;` `// Traverse linked list and keep ` `// adding nodes between 0s. ` `NODE *temp = head;` `int` `sum = 0;` `while` `(temp)` [ `{` [ `// loop to sum the data of nodes till ` `// it encounters 0 ` `if` `(temp->data != 0)` `{` `sum += temp->data;` `temp = temp->next;` `}` `// If we encounters 0, we need ` `// to update next pointers ` `else`] `{` `res->data = sum;` `res->next = temp->next;` `temp = temp->next;` `res = temp;` `sum = 0;` `}` `}` `printList(head);``}` `main() ``{` `NODE *head;` `head = getNode(3);` `head->next = getNode(2);` `head->next->next = getNode(0);` `head->next->next->next = getNode(4);` `head->next->next->next->next = getNode(5);` `head->next->next->next->next->next = getNode(0);` `head->next->next->next->next->next->next = getNode(6);` `head->next->next->next->next->next->next->next = getNode(7);` `inPlaceStore(head);` `return` `0;``}``// This code is contributed by shivanisinghss2110` |
+// Function to traverse and print Linked List  
+void printList(NODE *head) 
+{ 
+    while(head->next) 
+    { 
+        cout << head->data << "-> "; 
+        head = head->next; 
+    } 
+    cout << "->" << head->data ; 
+} 
 
-*chevron_right**filter_none*
+void inPlaceStore(NODE *head) 
+{ 
+
+    // Function to store numbers till 0  
+    if(head->data == 0) 
+    { 
+        head = head->next; 
+    } 
+
+    // To store modified list  
+    NODE *res = head; 
+
+    // Traverse linked list and keep  
+    // adding nodes between 0s.  
+    NODE *temp = head; 
+    int sum = 0; 
+
+    while(temp) 
+    { 
+
+        // loop to sum the data of nodes till  
+        // it encounters 0  
+        if(temp->data != 0) 
+        { 
+            sum += temp->data; 
+            temp = temp->next; 
+        } 
+
+        // If we encounters 0, we need  
+        // to update next pointers  
+        else
+        { 
+            res->data = sum; 
+            res->next = temp->next; 
+            temp = temp->next; 
+            res = temp; 
+            sum = 0; 
+        } 
+    } 
+    printList(head); 
+} 
+
+// Driver Code 
+int main()  
+{ 
+
+    NODE *head; 
+    head = getNode(3); 
+    head->next = getNode(2); 
+    head->next->next = getNode(0); 
+    head->next->next->next = getNode(4); 
+    head->next->next->next->next = getNode(5); 
+    head->next->next->next->next->next = getNode(0); 
+    head->next->next->next->next->next->next = getNode(6); 
+    head->next->next->next->next->next->next->next = getNode(7); 
+    inPlaceStore(head); 
+    return 0; 
+} 
+
+// This code is contributed by shivanisinghss2110 
+
+```
+
+## C
+
+```
+
+// C program to in-place add linked list  
+// nodes between 0s. 
+#include <stdio.h> 
+#include<stdlib.h> 
+#define NODE struct node 
+
+// Structure of a node 
+NODE 
+{ 
+    int data; 
+    struct node *next; 
+}; 
+
+// Function to create a node 
+NODE *getNode(int val) 
+{ 
+    NODE *temp; 
+    temp = (NODE*)malloc(sizeof(NODE)); 
+    temp->data = val; 
+    temp->next = NULL; 
+    return temp; 
+} 
+
+// Function to traverse and print Linked List  
+void printList(NODE *head) 
+{ 
+    while(head->next) 
+    { 
+        printf("%d->",head->data); 
+        head = head->next; 
+    } 
+    printf("%d\n",head->data); 
+} 
+
+void inPlaceStore(NODE *head) 
+{ 
+
+    // Function to store numbers till 0  
+    if(head->data == 0) 
+    { 
+        head = head->next; 
+    } 
+
+    // To store modified list  
+    NODE *res = head; 
+
+    // Traverse linked list and keep  
+    // adding nodes between 0s.  
+    NODE *temp = head; 
+    int sum = 0; 
+
+    while(temp) 
+    { 
+
+        // loop to sum the data of nodes till  
+        // it encounters 0  
+        if(temp->data != 0) 
+        { 
+            sum+=temp->data; 
+            temp = temp->next; 
+        } 
+
+        // If we encounters 0, we need  
+        // to update next pointers  
+        else
+        { 
+
+            res->data = sum; 
+            res->next = temp->next; 
+            temp = temp->next; 
+            res = temp; 
+            sum = 0; 
+        } 
+    } 
+    printList(head); 
+} 
+
+// Driver Code 
+int main()  
+{ 
+
+    NODE *head; 
+    head = getNode(3); 
+    head->next = getNode(2); 
+    head->next->next = getNode(0); 
+    head->next->next->next = getNode(4); 
+    head->next->next->next->next = getNode(5); 
+    head->next->next->next->next->next = getNode(0); 
+    head->next->next->next->next->next->next = getNode(6); 
+    head->next->next->next->next->next->next->next = getNode(7); 
+    inPlaceStore(head); 
+    return 0; 
+} 
+
+// This code is contributed by  
+// Kaustav kumar Chanda 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to in-place add linked list  
+// nodes between 0s. 
+class Node { 
+    int data; 
+    Node next; 
+
+    public Node(int data) 
+    { 
+        this.data = data; 
+        this.next = null; 
+    } 
+} 
+
+public class inPlaceStoreLL { 
+
+    // Function to store numbers till 0 
+    static void inPlaceStore(Node head) 
+    {      
+        if(head.data == 0){  
+           head = head.next; 
+        } 
+
+        // To store modified list  
+        Node res = head; 
+
+        // Traverse linked list and keep 
+        // adding nodes between 0s. 
+        Node temp = head;  
+        int sum = 0; 
+        while (temp != null) { 
+
+            // loop to sum the data of nodes till  
+            // it encounters 0 
+            if (temp.data != 0) { 
+                sum += temp.data; 
+                temp = temp.next; 
+            } 
+
+            // If we encounters 0, we need  
+            // to update next pointers 
+            else { 
+                res.data = sum; 
+                res.next = temp.next; 
+                temp = res.next; 
+                res = res.next; 
+                sum = 0; 
+            } 
+        } 
+        printList(head); 
+    } 
+
+    // Function to traverse and print Linked List 
+    static void printList(Node head) 
+    { 
+        while (head.next != null) { 
+            System.out.print(head.data + "-> "); 
+            head = head.next; 
+        } 
+        System.out.println(head.data); 
+    } 
+
+    // Driver Code 
+    public static void main(String[] args) 
+    { 
+        Node head = new Node(3); 
+                head.next = new Node(2); 
+                head.next.next = new Node(0); 
+                head.next.next.next = new Node(4); 
+                head.next.next.next.next = new Node(5); 
+                head.next.next.next.next.next = new Node(0); 
+                head.next.next.next.next.next.next = new Node(6); 
+                head.next.next.next.next.next.next.next = new Node(7); 
+        inPlaceStore(head); 
+
+    } 
+} 
+
+```
+
+## C＃
+
+```
+
+// C# program to in-place add linked list  
+// nodes between 0s.  
+using System; 
+
+public class Node  
+{  
+    public int data;  
+    public Node next;  
+
+    public Node(int data)  
+    {  
+        this.data = data;  
+        this.next = null;  
+    }  
+}  
+
+public class inPlaceStoreLL  
+{  
+
+    // Function to store numbers till 0  
+    static void inPlaceStore(Node head)  
+    {  
+        if(head.data == 0) 
+        {  
+            head = head.next;  
+        }  
+
+        // To store modified list  
+        Node res = head;  
+
+        // Traverse linked list and keep  
+        // adding nodes between 0s.  
+        Node temp = head;  
+        int sum = 0;  
+        while (temp != null)  
+        {  
+
+            // loop to sum the data of nodes till  
+            // it encounters 0  
+            if (temp.data != 0) 
+            {  
+                sum += temp.data;  
+                temp = temp.next;  
+            }  
+
+            // If we encounters 0, we need  
+            // to update next pointers  
+            else
+            {  
+                res.data = sum;  
+                res.next = temp.next;  
+                temp = res.next;  
+                res = res.next;  
+                sum = 0;  
+            }  
+        }  
+        printList(head);  
+    }  
+
+    // Function to traverse and print Linked List  
+    static void printList(Node head)  
+    {  
+        while (head.next != null) 
+        {  
+            Console.Write(head.data + "-> ");  
+            head = head.next;  
+        }  
+        Console.WriteLine(head.data);  
+    }  
+
+    // Driver Code  
+    public static void Main()  
+    {  
+        Node head = new Node(3);  
+        head.next = new Node(2);  
+        head.next.next = new Node(0);  
+        head.next.next.next = new Node(4);  
+        head.next.next.next.next = new Node(5);  
+        head.next.next.next.next.next = new Node(0);  
+        head.next.next.next.next.next.next = new Node(6);  
+        head.next.next.next.next.next.next.next = new Node(7);  
+        inPlaceStore(head);  
+    }  
+}  
+
+/* This code is contributed PrinciRaj1992 */
+
+```
+
+**Output:**
+
+```
+5-> 9-> 6-> 7
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

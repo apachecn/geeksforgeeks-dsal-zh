@@ -34,17 +34,416 @@ NULL NULL NULL
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to construct a linked 
+// list from 2D matrix | Iterative Approach 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// struct node of linked list 
+struct node { 
+    int data; 
+    node *right, *down; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// utility function to create a new node with given data 
+node* newNode(int d) 
+{ 
+    node* temp = new node; 
+    temp->data = d; 
+    temp->right = temp->down = NULL; 
+    return temp; 
+} 
 
-| `// C++ program to construct a linked``// list from 2D matrix &#124; Iterative Approach``#include <bits/stdc++.h>``using` `namespace` `std;``// struct node of linked list``struct` `node {` `int` `data;` `node *right, *down;``};``// utility function to create a new node with given data``node* newNode(` `int` `d)``{` `node* temp =` `new` `node;` `temp->data = d;` `temp->right = temp->down = NULL;` `return` `temp;``}``// utility function to print the linked list pointed to by head pointer``void` `display(node* head)``{` `node *rp, *dp = head;` `// loop until the down pointer is not NULL` `while` `(dp) {` `rp = dp;`​​  `// loop until the right pointer is not NULL` `while` `(rp) {` `cout << rp->data <<` `" "` `;` `rp = rp->right;` `}` `cout << endl;` `dp = dp->down;` `}``}``// function which constructs the linked list` ]`// from the given matrix of size m * n``// and returns the head pointer of the linked list``node* constructLinkedMatrix(` `int` `mat[][3],` `int` `m,` `int` `n)``{` `// stores the head of the linked list` `node* mainhead = NULL;` `// stores the head of linked lists of each row` `node* head[m];` `node *righttemp, *newptr;` `// Firstly, we create m linked lists` [HT G97] `for` `(` `int` `i = 0; i < m; i++) {` `// initially set the head of ith row as NULL` `head[i] = NULL;` `for` `(` `int` `j = 0; j < n; j++) {` `newptr = newNode(mat[i][j]);`] `// stores the mat[0][0] node as` `// the mainhead of the linked list` `if` `(!mainhead)` `mainhead = newptr;` `if` `(!head[i])` `head[i] = newptr;` `else` `righttemp->right = newptr;` `righttemp = newptr;` `}` `}` `// Then, for every ith and (i+1)th list,` `// we set the down pointers of` `// every node of ith list` `// with its corresponding` `// node of (i+1)th list` `for` `(` `int` `i = 0; i < m - 1; i++) {` `node *temp1 = head[i], *temp2 = head[i + 1];` `while` `(temp1 && temp2) {`] `temp1->down = temp2;` `temp1 = temp1->right;` `temp2 = temp2->right;` `}` `}` `// return the mainhead pointer of the linked list` `return` `mainhead;``}``// Driver program to test the above function``int` `main()``{` ] `int` `m, n;` `// m = rows and n = columns` `m = 3, n = 3;`[HTG19 4] `// 2D matrix` `int` `mat[][3] = { { 1, 2, 3 },` `{ 4, 5, 6 },` `{ 7, 8, 9 } };` `node* head = constructLinkedMatrix(mat, m, n);` `display(head);` `return` `0;` ]`}` |
+// utility function to print the linked list pointed to by head pointer 
+void display(node* head) 
+{ 
+    node *rp, *dp = head; 
 
-*chevron_right**filter_none*
+    // loop until the down pointer is not NULL 
+    while (dp) { 
+        rp = dp; 
+
+        // loop until the right pointer is not NULL 
+        while (rp) { 
+            cout << rp->data << " "; 
+            rp = rp->right; 
+        } 
+        cout << endl; 
+        dp = dp->down; 
+    } 
+} 
+
+// function which constructs the linked list 
+// from the given matrix of size m * n 
+// and returns the head pointer of the linked list 
+node* constructLinkedMatrix(int mat[][3], int m, int n) 
+{ 
+    // stores the head of the linked list 
+    node* mainhead = NULL; 
+
+    // stores the head of linked lists of each row 
+    node* head[m]; 
+    node *righttemp, *newptr; 
+
+    // Firstly, we create m linked lists 
+    // by setting all the right nodes of every row 
+    for (int i = 0; i < m; i++) { 
+
+        // initially set the head of ith row as NULL 
+        head[i] = NULL; 
+        for (int j = 0; j < n; j++) { 
+            newptr = newNode(mat[i][j]); 
+
+            // stores the mat[0][0] node as 
+            // the mainhead of the linked list 
+            if (!mainhead) 
+                mainhead = newptr; 
+
+            if (!head[i]) 
+                head[i] = newptr; 
+            else
+                righttemp->right = newptr; 
+
+            righttemp = newptr; 
+        } 
+    } 
+
+    // Then, for every ith and (i+1)th list, 
+    // we set the down pointers of 
+    // every node of ith list 
+    // with its corresponding 
+    // node of (i+1)th list 
+    for (int i = 0; i < m - 1; i++) { 
+
+        node *temp1 = head[i], *temp2 = head[i + 1]; 
+
+        while (temp1 && temp2) { 
+
+            temp1->down = temp2; 
+            temp1 = temp1->right; 
+            temp2 = temp2->right; 
+        } 
+    } 
+
+    // return the mainhead pointer of the linked list 
+    return mainhead; 
+} 
+
+// Driver program to test the above function 
+int main() 
+{ 
+    int m, n; // m = rows and n = columns 
+    m = 3, n = 3; 
+    // 2D matrix 
+    int mat[][3] = { { 1, 2, 3 }, 
+                     { 4, 5, 6 }, 
+                     { 7, 8, 9 } }; 
+
+    node* head = constructLinkedMatrix(mat, m, n); 
+    display(head); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation for above approach 
+
+// Construct a Linked List from 2-D Matrix 
+class LinkedMatrix  
+{ 
+    class Node 
+    { 
+        int data; 
+        Node right, down; 
+
+        // Default Constructor 
+        Node() 
+        { 
+            this.right = null; 
+            this.down = null; 
+        } 
+
+        Node(int d) 
+        { 
+            this.data = d; 
+            this.right = null; 
+            this.down = null; 
+        } 
+    } 
+
+    /*  
+    A function to construct a Linked List  
+    from the given matrix of size m * n 
+    and returns the head pointer of the linked list 
+    */
+    Node constructLinkedMatrix(int[][] arr, 
+                               int m, int n) 
+    { 
+
+        // stores the head of the linked list 
+        Node mainHead = null; 
+
+        // stores the head of linked lists  
+        // of each row 
+        Node[] head = new Node[m]; 
+        Node rightTemp = new Node(), newptr; 
+
+        // Firstly, we create m linked lists 
+        // by setting all the right nodes of every row 
+        for(int i = 0; i < m; i++) 
+        { 
+
+            // initially set the head of  
+            // ith row as NULL 
+            head[i] = null; 
+
+            for(int j = 0; j < n; j++) 
+            { 
+                newptr = new Node(arr[i][j]); 
+
+                // stores the mat[0][0] node as 
+                // the mainhead of the linked list 
+                if(mainHead == null) 
+                    mainHead = newptr; 
+                if(head[i] == null) 
+                    head[i] = newptr; 
+                else
+                    rightTemp.right = newptr; 
+
+                rightTemp = newptr; 
+            } 
+        } 
+
+        // Then, for every ith and (i+1)th list, 
+        // we set the down pointers of 
+        // every node of ith list 
+        // with its corresponding 
+        // node of (i+1)th list 
+        for(int i = 0; i < m - 1; i++) 
+        { 
+            Node temp1 = head[i], temp2 = head[i + 1]; 
+
+            while(temp1 != null && temp2 != null) 
+            { 
+                temp1.down = temp2; 
+                temp1 = temp1.right; 
+                temp2 = temp2.right; 
+            } 
+        } 
+
+        // return the mainhead pointer  
+        // of the linked list 
+        return mainHead; 
+    } 
+
+    // utility function to print the  
+    // linked list pointed to by head pointer 
+    void display(Node head) 
+    { 
+        Node rp, dp = head; 
+
+        // loop until the down pointer  
+        // is not NULL 
+        while(dp != null) 
+        { 
+            rp = dp; 
+
+            // loop until the right pointer 
+            // is not NULL 
+            while(rp != null) 
+            { 
+                System.out.print(rp.data + " "); 
+                rp = rp.right; 
+            } 
+            System.out.println(); 
+            dp = dp.down; 
+        } 
+    } 
+
+    // Driver Code 
+    public static void main(String[] args) 
+    { 
+        LinkedMatrix Obj = new LinkedMatrix(); 
+        int m = 3, n = 3; // m = rows and n = columns 
+
+        // 2-D Matrix 
+        int[][] arr = {{ 1, 2, 3 },  
+                       { 4, 5, 6 }, 
+                       { 7, 8, 9 }}; 
+
+        Node head = Obj.constructLinkedMatrix(arr, m, n); 
+        Obj.display(head); 
+    } 
+} 
+
+// This code is contributed by Rhythem 
+
+```
+
+## C＃
+
+```
+
+// C# implementation for above approach 
+using System; 
+
+// Construct a Linked List from 2-D Matrix 
+class GFG  
+{ 
+    class Node 
+    { 
+        public int data; 
+        public Node right, down; 
+
+        // Default Constructor 
+        public Node() 
+        { 
+            this.right = null; 
+            this.down = null; 
+        } 
+
+        public Node(int d) 
+        { 
+            this.data = d; 
+            this.right = null; 
+            this.down = null; 
+        } 
+    } 
+
+    /*  
+    A function to construct a Linked List  
+    from the given matrix of size m * n 
+    and returns the head pointer of the linked list 
+    */
+    Node constructLinkedMatrix(int[,] arr, 
+                               int m, int n) 
+    { 
+
+        // stores the head of the linked list 
+        Node mainHead = null; 
+
+        // stores the head of linked lists  
+        // of each row 
+        Node[] head = new Node[m]; 
+        Node rightTemp = new Node(), newptr; 
+
+        // Firstly, we create m linked lists 
+        // by setting all the right nodes of every row 
+        for(int i = 0; i < m; i++) 
+        { 
+
+            // initially set the head of  
+            // ith row as NULL 
+            head[i] = null; 
+
+            for(int j = 0; j < n; j++) 
+            { 
+                newptr = new Node(arr[i, j]); 
+
+                // stores the mat[0][0] node as 
+                // the mainhead of the linked list 
+                if(mainHead == null) 
+                    mainHead = newptr; 
+                if(head[i] == null) 
+                    head[i] = newptr; 
+                else
+                    rightTemp.right = newptr; 
+
+                rightTemp = newptr; 
+            } 
+        } 
+
+        // Then, for every ith and (i+1)th list, 
+        // we set the down pointers of 
+        // every node of ith list 
+        // with its corresponding 
+        // node of (i+1)th list 
+        for(int i = 0; i < m - 1; i++) 
+        { 
+            Node temp1 = head[i], 
+                 temp2 = head[i + 1]; 
+
+            while(temp1 != null && temp2 != null) 
+            { 
+                temp1.down = temp2; 
+                temp1 = temp1.right; 
+                temp2 = temp2.right; 
+            } 
+        } 
+
+        // return the mainhead pointer  
+        // of the linked list 
+        return mainHead; 
+    } 
+
+    // utility function to print the  
+    // linked list pointed to by head pointer 
+    void display(Node head) 
+    { 
+        Node rp, dp = head; 
+
+        // loop until the down pointer  
+        // is not NULL 
+        while(dp != null) 
+        { 
+            rp = dp; 
+
+            // loop until the right pointer 
+            // is not NULL 
+            while(rp != null) 
+            { 
+                Console.Write(rp.data + " "); 
+                rp = rp.right; 
+            } 
+            Console.WriteLine(); 
+            dp = dp.down; 
+        } 
+    } 
+
+    // Driver Code 
+    public static void Main(String[] args) 
+    { 
+        GFG Obj = new GFG(); 
+        int m = 3, n = 3; // m = rows and n = columns 
+
+        // 2-D Matrix 
+        int[,] arr = {{ 1, 2, 3 },  
+                      { 4, 5, 6 }, 
+                      { 7, 8, 9 }}; 
+
+        Node head = Obj.constructLinkedMatrix(arr, m, n); 
+        Obj.display(head); 
+    } 
+} 
+
+// This code is contributed by PrinciRaj1992 
+
+```
+
+**Output:**
+
+```
+1 2 3 
+4 5 6 
+7 8 9
+
+```
+
+**时间复杂度：** O（M * N）
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

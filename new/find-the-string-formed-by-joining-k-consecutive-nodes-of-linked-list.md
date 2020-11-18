@@ -20,17 +20,319 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation of the approach 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Structure of a node 
+struct Node { 
+    char data; 
+    Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Function to get a new node 
+Node* getNode(char data) 
+{ 
+    // Allocate space 
+    Node* newNode = new Node; 
 
-| `// C++ implementation of the approach``#include <bits/stdc++.h>``using` `namespace` `std;``// Structure of a node``struct` `Node {` `char` `data;` `Node* next;``};``// Function to get a new node``Node* getNode(` `char` `data)``{` `// Allocate space` `Node* newNode =` `new` `Node;` `// Put in data` `newNode->data = data;` `newNode->next = NULL;` `return` `newNode;``}` HTG225]`// Function to find string formed by joining words``// obtained by joining k consecutive nodes of``// linked list.``string findKWordString(Node* head,` `int` `k)``{`[HTG23 6]  `// Stores the final string` `string ans =` `""` `;` `// Keep track of the number of` `// nodes traversed` `int` `cnt = 0;` `// Stores the word formed by k consecutive` `// nodes of the linked list` `string word =` `""` `;` `while` `(head) {` `// Check if k nodes are traversed` `// If yes then add the word obtained` `// to the result string` `if` `(cnt == k) {`​​  `if` `(ans !=` `""` `) {` `ans = ans +` `" "` `;` `}` `ans = ans + word;` `word =` `""` `;` [ `cnt = 0;` `}` `// Add the current character to the word` `// formed so far and increase the count` `word = word + string(1, head->data);` `cnt++;` `head = head->next;` `}` `// Add the final word to the result` `// Length of the final word can be less than k` `if` `(ans !=` `" "` `) {` `ans = ans +` `" "` `;` `}` `ans = ans + word;` `return` `ans;``}``// Driver code``int` `main()``{` `// Create list: a -> b -> c -> d -> e`[HTG3 32]  `Node* head = getNode(` `'a'` `);` `head->next = getNode(` `'b'` `);` `head->next->next = getNode(` `'c'` `);` `head->next->next->next = getNode(` `'d'` `);` `head->next->next->next->next = getNode(` `'e'` `);` `int` `k = 3;` `cout << findKWordString(head, k);` [ `return` `0;``}` |
+    // Put in data 
+    newNode->data = data; 
+    newNode->next = NULL; 
+    return newNode; 
+} 
 
-*chevron_right**filter_none*
+// Function to find string formed by joining words 
+// obtained by joining k consecutive nodes of 
+// linked list. 
+string findKWordString(Node* head, int k) 
+{ 
+    // Stores the final string 
+    string ans = ""; 
+
+    // Keep track of the number of 
+    // nodes traversed 
+    int cnt = 0; 
+
+    // Stores the word formed by k consecutive 
+    // nodes of the linked list 
+    string word = ""; 
+
+    while (head) { 
+
+        // Check if k nodes are traversed 
+        // If yes then add the word obtained 
+        // to the result string 
+        if (cnt == k) { 
+            if (ans != "") { 
+                ans = ans + " "; 
+            } 
+
+            ans = ans + word; 
+            word = ""; 
+            cnt = 0; 
+        } 
+
+        // Add the current character to the word 
+        // formed so far and increase the count 
+        word = word + string(1, head->data); 
+        cnt++; 
+        head = head->next; 
+    } 
+
+    // Add the final word to the result 
+    // Length of the final word can be less than k 
+    if (ans != " ") { 
+        ans = ans + " "; 
+    } 
+    ans = ans + word; 
+
+    return ans; 
+} 
+
+// Driver code 
+int main() 
+{ 
+
+    // Create list: a -> b -> c -> d -> e 
+    Node* head = getNode('a'); 
+    head->next = getNode('b'); 
+    head->next->next = getNode('c'); 
+    head->next->next->next = getNode('d'); 
+    head->next->next->next->next = getNode('e'); 
+
+    int k = 3; 
+
+    cout << findKWordString(head, k); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation of the approach 
+class GFG{ 
+
+// Class of a node 
+static class Node 
+{ 
+    char data; 
+    Node next; 
+}; 
+
+// Function to get a new node 
+static Node getNode(char data) 
+{ 
+
+    // Allocate space 
+    Node newNode = new Node(); 
+
+    // Put in data 
+    newNode.data = data; 
+    newNode.next = null; 
+    return newNode; 
+} 
+
+// Function to find string formed by  
+// joining words obtained by joining  
+// k consecutive nodes of linked list. 
+static String findKWordString(Node head, int k) 
+{ 
+
+    // Stores the final string 
+    String ans = ""; 
+
+    // Keep track of the number of 
+    // nodes traversed 
+    int cnt = 0; 
+
+    // Stores the word formed by k consecutive 
+    // nodes of the linked list 
+    String word = ""; 
+
+    while (head != null) 
+    { 
+
+        // Check if k nodes are traversed 
+        // if yes then add the word obtained 
+        // to the result String 
+        if (cnt == k) 
+        { 
+            if (ans != "")  
+            { 
+                ans = (ans + " "); 
+            } 
+
+            ans = ans + word; 
+            word = ""; 
+            cnt = 0; 
+        } 
+
+        // Add the current character to the word 
+        // formed so far and increase the count 
+        word = word + head.data; 
+        cnt++; 
+        head = head.next; 
+    } 
+
+    // Add the final word to the result 
+    // Length of the final word can be 
+    // less than k 
+    if (ans != " ") 
+    { 
+        ans = (ans + " "); 
+    } 
+    ans = ans + word; 
+    return ans; 
+} 
+
+// Driver code 
+public static void main(String[] args) 
+{ 
+
+    // Create list: a.b.c.d.e 
+    Node head = getNode('a'); 
+    head.next = getNode('b'); 
+    head.next.next = getNode('c'); 
+    head.next.next.next = getNode('d'); 
+    head.next.next.next.next = getNode('e'); 
+
+    int k = 3; 
+
+    System.out.print(findKWordString(head, k)); 
+} 
+} 
+
+// This code is contributed by GauravRajput1 
+
+```
+
+## C＃
+
+```
+
+// C# implementation of the approach 
+using System; 
+
+class GFG{ 
+
+// Class of a node 
+class Node 
+{ 
+    public char data; 
+    public Node next; 
+}; 
+
+// Function to get a new node 
+static Node getNode(char data) 
+{ 
+
+    // Allocate space 
+    Node newNode = new Node(); 
+
+    // Put in data 
+    newNode.data = data; 
+    newNode.next = null; 
+    return newNode; 
+} 
+
+// Function to find string formed by  
+// joining words obtained by joining  
+// k consecutive nodes of linked list. 
+static String findKWordString(Node head, int k) 
+{ 
+
+    // Stores the final string 
+    String ans = ""; 
+
+    // Keep track of the number  
+    // of nodes traversed 
+    int cnt = 0; 
+
+    // Stores the word formed by k  
+    // consecutive nodes of the  
+    // linked list 
+    String word = ""; 
+
+    while (head != null) 
+    { 
+
+        // Check if k nodes are traversed 
+        // if yes then add the word obtained 
+        // to the result String 
+        if (cnt == k) 
+        { 
+            if (ans != "")  
+            { 
+                ans = (ans + " "); 
+            } 
+
+            ans = ans + word; 
+            word = ""; 
+            cnt = 0; 
+        } 
+
+        // Add the current character to the word 
+        // formed so far and increase the count 
+        word = word + head.data; 
+        cnt++; 
+        head = head.next; 
+    } 
+
+    // Add the readonly word to the result 
+    // Length of the readonly word can be 
+    // less than k 
+    if (ans != " ") 
+    { 
+        ans = (ans + " "); 
+    } 
+    ans = ans + word; 
+    return ans; 
+} 
+
+// Driver code 
+public static void Main(String[] args) 
+{ 
+
+    // Create list: a.b.c.d.e 
+    Node head = getNode('a'); 
+    head.next = getNode('b'); 
+    head.next.next = getNode('c'); 
+    head.next.next.next = getNode('d'); 
+    head.next.next.next.next = getNode('e'); 
+
+    int k = 3; 
+
+    Console.Write(findKWordString(head, k)); 
+} 
+} 
+
+// This code is contributed by gauravrajput1 
+
+```
+
+**Output:**
+
+```
+abc de
+
+```
+
+**时间复杂度：** O（N）
+**辅助空间：** O（1）
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -45,17 +45,372 @@ Step 7: End
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Cpp Program to Reverse a List using Data Swapping 
 
-*play_arrow*
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*链接*
-*亮度_4*
-*代码*
+struct Node { 
+    int data; 
+    struct Node *prev, *next; 
+}; 
 
-| `// Cpp Program to Reverse a List using Data Swapping``#include <bits/stdc++.h>``using` `namespace` `std;` [`struct` `Node {` `int` `data;` `struct` `Node *prev, *next;``};``Node* newNode(` `int` `val)``{` `Node* temp =` `new` `Node;` `temp->data = val;` `temp->prev = temp->next = nullptr;` `return` `temp;``}``void` `printList(Node* head)``{` `while` `(head->next != nullptr) {` `cout << head->data <<` `" <--> "` `;` `head = head->next;` `}` `cout << head->data << endl;``}``// Insert a new node at the head of the list``void` `insert(Node** head,` `int` `val)``{` `Node* temp = newNode(val);` `temp->next = *head;` `(*head)->prev = temp;` `(*head) = temp;``}``// Function to reverse the list``void` `reverseList(Node** head)``{` `Node* left = *head, * right = *head;` `// Traverse the list and set right pointer to` `// end of list` `while` `(right->next != nullptr)` `right = right->next;` `// Swap data of left and right pointer and move` `// them towards each other until they meet or ` `// cross each other` `while` `(left != right && left->prev != right) {` `// Swap data of left and right pointer` `swap(left->data, right->data);` `// Advance left pointer` `left = left->next;` ] `// Advance right pointer` `right = right->prev;` `}``}`[`// Driver code`​​ `int` `main()``{` `Node* head = newNode(5);` `insert(&head, 4);` `insert(&head, 3);` `insert(&head, 2);` `insert(&head, 1);`[HTG127 `printList(head);` `cout <<` `"List After Reversing"` `<< endl;` `reverseList(&head);` `printList(head);` `return` `0;` |
+Node* newNode(int val) 
+{ 
+    Node* temp = new Node; 
+    temp->data = val; 
+    temp->prev = temp->next = nullptr; 
+    return temp; 
+} 
 
-*chevron_right**filter_none*
+void printList(Node* head) 
+{ 
+    while (head->next != nullptr) { 
+        cout << head->data << " <--> "; 
+        head = head->next; 
+    } 
+    cout << head->data << endl; 
+} 
+
+// Insert a new node at the head of the list 
+void insert(Node** head, int val) 
+{ 
+    Node* temp = newNode(val); 
+    temp->next = *head; 
+    (*head)->prev = temp; 
+    (*head) = temp; 
+} 
+
+// Function to reverse the list 
+void reverseList(Node** head) 
+{ 
+    Node* left = *head, * right = *head; 
+
+    // Traverse the list and set right pointer to 
+    // end of list 
+    while (right->next != nullptr) 
+        right = right->next; 
+
+    // Swap data of left and right pointer and move 
+    // them towards each other until they meet or  
+    // cross each other 
+    while (left != right && left->prev != right) { 
+
+        // Swap data of left and right pointer 
+        swap(left->data, right->data); 
+
+        // Advance left pointer 
+        left = left->next; 
+
+        // Advance right pointer 
+        right = right->prev; 
+    } 
+} 
+
+// Driver code 
+int main() 
+{ 
+    Node* head = newNode(5); 
+    insert(&head, 4); 
+    insert(&head, 3); 
+    insert(&head, 2); 
+    insert(&head, 1); 
+
+    printList(head); 
+    cout << "List After Reversing" << endl; 
+    reverseList(&head); 
+    printList(head); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java Program to Reverse a List using Data Swapping  
+class GFG 
+{ 
+static class Node 
+{  
+    int data;  
+    Node prev, next;  
+};  
+
+static Node newNode(int val)  
+{  
+    Node temp = new Node();  
+    temp.data = val;  
+    temp.prev = temp.next = null;  
+    return temp;  
+}  
+
+static void printList(Node head)  
+{  
+    while (head.next != null) 
+    {  
+        System.out.print(head.data+ " <-> ");  
+        head = head.next;  
+    }  
+    System.out.println( head.data );  
+}  
+
+// Insert a new node at the head of the list  
+static Node insert(Node head, int val)  
+{  
+    Node temp = newNode(val);  
+    temp.next = head;  
+    (head).prev = temp;  
+    (head) = temp; 
+    return head; 
+}  
+
+// Function to reverse the list  
+static Node reverseList(Node head)  
+{  
+    Node left = head, right = head;  
+
+    // Traverse the list and set right pointer to  
+    // end of list  
+    while (right.next != null)  
+        right = right.next;  
+
+    // Swap data of left and right pointer and move  
+    // them towards each other until they meet or  
+    // cross each other  
+    while (left != right && left.prev != right) 
+    {  
+
+        // Swap data of left and right pointer  
+        int t = left.data; 
+        left.data = right.data; 
+        right.data = t; 
+
+        // Advance left pointer  
+        left = left.next;  
+
+        // Advance right pointer  
+        right = right.prev;  
+    }  
+    return head; 
+}  
+
+// Driver code  
+public static void main(String args[]) 
+{  
+    Node head = newNode(5);  
+    head = insert(head, 4);  
+    head = insert(head, 3);  
+    head = insert(head, 2);  
+    head = insert(head, 1);  
+
+    printList(head);  
+    System.out.println("List After Reversing");  
+    head=reverseList(head);  
+    printList(head);  
+
+} 
+} 
+
+// This code is contributed by Arnab Kundu  
+
+```
+
+## Python3
+
+```
+
+# Python3 Program to Reverse a List  
+# using Data Swapping 
+import math 
+
+class Node:  
+    def __init__(self, data):  
+        self.data = data  
+        self.next = None
+
+def newNode(val): 
+    temp = Node(val) 
+    temp.data = val 
+    temp.prev =None
+    temp.next = None
+    return temp 
+
+def printList( head): 
+    while (head.next != None): 
+        print(head.data, end = "<-->") 
+        head = head.next
+
+    print(head.data) 
+
+# Insert a new node at the head of the list 
+def insert(head, val): 
+    temp = newNode(val) 
+    temp.next = head 
+    (head).prev = temp 
+    (head) = temp 
+    return head 
+
+# Function to reverse the list 
+def reverseList( head): 
+    left = head 
+    right = head 
+
+    # Traverse the list and set right  
+    # pointer to end of list 
+    while (right.next != None): 
+        right = right.next
+
+    # Swap data of left and right pointer  
+    # and move them towards each other  
+    # until they meet or cross each other 
+    while (left != right and left.prev != right): 
+
+        # Swap data of left and right pointer 
+        t = left.data 
+        left.data = right.data 
+        right.data = t 
+
+        # Advance left pointer 
+        left = left.next
+
+        # Advance right pointer 
+        right = right.prev 
+
+    return head 
+
+# Driver code 
+if __name__=='__main__':  
+
+    head = newNode(5) 
+    head = insert(head, 4) 
+    head = insert(head, 3) 
+    head = insert(head, 2) 
+    head = insert(head, 1) 
+
+    printList(head) 
+    print("List After Reversing") 
+    head = reverseList(head) 
+    printList(head) 
+
+# This code is contributed by AbhiThakur 
+
+```
+
+## C＃
+
+```
+
+// C# Program to Reverse a List using Data Swapping  
+using System; 
+
+class GFG 
+{ 
+
+    public class Node 
+    {  
+        public int data;  
+        public Node prev, next;  
+    };  
+
+    static Node newNode(int val)  
+    {  
+        Node temp = new Node();  
+        temp.data = val;  
+        temp.prev = temp.next = null;  
+        return temp;  
+    }  
+
+    static void printList(Node head)  
+    {  
+        while (head.next != null) 
+        {  
+            Console.Write(head.data+ " <-> ");  
+            head = head.next;  
+        }  
+        Console.WriteLine( head.data );  
+    }  
+
+    // Insert a new node at the head of the list  
+    static Node insert(Node head, int val)  
+    {  
+        Node temp = newNode(val);  
+        temp.next = head;  
+        (head).prev = temp;  
+        (head) = temp; 
+        return head; 
+    }  
+
+    // Function to reverse the list  
+    static Node reverseList(Node head)  
+    {  
+        Node left = head, right = head;  
+
+        // Traverse the list and set right pointer to  
+        // end of list  
+        while (right.next != null)  
+            right = right.next;  
+
+        // Swap data of left and right pointer and move  
+        // them towards each other until they meet or  
+        // cross each other  
+        while (left != right && left.prev != right) 
+        {  
+
+            // Swap data of left and right pointer  
+            int t = left.data; 
+            left.data = right.data; 
+            right.data = t; 
+
+            // Advance left pointer  
+            left = left.next;  
+
+            // Advance right pointer  
+            right = right.prev;  
+        }  
+        return head; 
+    }  
+
+    // Driver code  
+    public static void Main(String []args) 
+    {  
+        Node head = newNode(5);  
+        head = insert(head, 4);  
+        head = insert(head, 3);  
+        head = insert(head, 2);  
+        head = insert(head, 1);  
+
+        printList(head);  
+        Console.WriteLine("List After Reversing");  
+        head=reverseList(head);  
+        printList(head);  
+
+    } 
+} 
+
+// This code has been contributed by 29AjayKumar 
+
+```
+
+**Output:**
+
+```
+1 <--> 2 <--> 3 <--> 4 <--> 5
+List After Reversing
+5 <--> 4 <--> 3 <--> 2 <--> 1
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

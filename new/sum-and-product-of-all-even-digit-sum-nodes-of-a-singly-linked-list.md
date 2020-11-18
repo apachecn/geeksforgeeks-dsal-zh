@@ -36,17 +36,335 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program for the above approach 
 
-*play_arrow*
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*链接*
-*亮度_4*
-*代码*
+// Node of Linked List 
+struct Node { 
+    int data; 
+    Node* next; 
+}; 
 
-| `// C++ program for the above approach``#include <bits/stdc++.h>``using` `namespace` `std;` [`// Node of Linked List``struct` `Node {` `int` `data;` `Node* next;``};``// Function to insert a node at the``// beginning of the singly Linked List``void` `push(Node** head_ref,` `int` `new_data)``{` `// Allocate new node` `Node* new_node` `= (Node*)` `malloc` `(` `sizeof` `(` `struct` `Node));` `// Insert the data` `new_node->data = new_data;` `// Link old list to the new node` `new_node->next = (*head_ref);` `// Move head to point the new node` `(*head_ref) = new_node;``}``// Function to find the digit sum``// for a number``int` `digitSum(` `int` `num)``{` `int` `sum = 0;` `while` `(num) {` `sum += (num % 10);` `num /= 10;` `}` `// Return the sum` `return` `sum;``}`的`// Function to find the required``// sum and product``void` `sumAndProduct(Node* head_ref)`​​`{`的 `// Initialise the sum and product` `// to 0 and 1 respectively` `int` `prod = 1;` `int` `sum = 0;` `Node* ptr = head_ref;` `// Traverse the given linked list` `while` `(ptr != NULL) {` `// If current node has even` `// digit sum then include it in` `// resultant sum and product` `if` `(!(digitSum(ptr->data) & 1)) {` `// Find the sum and the product` `prod *= ptr->data;` `sum += ptr->data;` `}` `ptr = ptr->next;` `}` [ `// Print the final Sum and Product` `cout <<` `"Sum = "` `<< sum << endl;` `cout <<` `"Product = "` `<< prod;``}`[HTG14 3]`int` `main()``{` `// Head of the linked list` `Node* head = NULL;` `// Create the linked list` `// 15 -> 16 -> 8 -> 6 -> 13` `push(&head, 13);` `push(&head, 6);` `push(&head, 8);` `push(&head, 16);` `push(&head, 15);`的 `// Function call` `sumAndProduct(head);` `return` `0;``}` |
+// Function to insert a node at the 
+// beginning of the singly Linked List 
+void push(Node** head_ref, int new_data) 
+{ 
+    // Allocate new node 
+    Node* new_node 
+        = (Node*)malloc( 
+            sizeof(struct Node)); 
 
-*chevron_right**filter_none*
+    // Insert the data 
+    new_node->data = new_data; 
+
+    // Link old list to the new node 
+    new_node->next = (*head_ref); 
+
+    // Move head to point the new node 
+    (*head_ref) = new_node; 
+} 
+
+// Function to find the digit sum 
+// for a number 
+int digitSum(int num) 
+{ 
+    int sum = 0; 
+    while (num) { 
+        sum += (num % 10); 
+        num /= 10; 
+    } 
+
+    // Return the sum 
+    return sum; 
+} 
+
+// Function to find the required 
+// sum and product 
+void sumAndProduct(Node* head_ref) 
+{ 
+
+    // Initialise the sum and product 
+    // to 0 and 1 respectively 
+    int prod = 1; 
+    int sum = 0; 
+
+    Node* ptr = head_ref; 
+
+    // Traverse the given linked list 
+    while (ptr != NULL) { 
+
+        // If current node has even 
+        // digit sum then include it in 
+        // resultant sum and product 
+        if (!(digitSum(ptr->data) & 1)) { 
+
+            // Find the sum and the product 
+            prod *= ptr->data; 
+            sum += ptr->data; 
+        } 
+
+        ptr = ptr->next; 
+    } 
+
+    // Print the final Sum and Product 
+    cout << "Sum = " << sum << endl; 
+    cout << "Product = " << prod; 
+} 
+
+// Driver Code 
+int main() 
+{ 
+    // Head of the linked list 
+    Node* head = NULL; 
+
+    // Create the linked list 
+    // 15 -> 16 -> 8 -> 6 -> 13 
+    push(&head, 13); 
+    push(&head, 6); 
+    push(&head, 8); 
+    push(&head, 16); 
+    push(&head, 15); 
+
+    // Function call 
+    sumAndProduct(head); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program for the above approach 
+
+class GFG{ 
+
+// Node of Linked List 
+static class Node { 
+    int data; 
+    Node next; 
+}; 
+
+// Function to insert a node at the 
+// beginning of the singly Linked List 
+static Node push(Node head_ref, int new_data) 
+{ 
+    // Allocate new node 
+    Node new_node 
+        = new Node(); 
+
+    // Insert the data 
+    new_node.data = new_data; 
+
+    // Link old list to the new node 
+    new_node.next = head_ref; 
+
+    // Move head to point the new node 
+    head_ref = new_node; 
+    return head_ref; 
+} 
+
+// Function to find the digit sum 
+// for a number 
+static int digitSum(int num) 
+{ 
+    int sum = 0; 
+    while (num > 0) { 
+        sum += (num % 10); 
+        num /= 10; 
+    } 
+
+    // Return the sum 
+    return sum; 
+} 
+
+// Function to find the required 
+// sum and product 
+static void sumAndProduct(Node head_ref) 
+{ 
+
+    // Initialise the sum and product 
+    // to 0 and 1 respectively 
+    int prod = 1; 
+    int sum = 0; 
+
+    Node ptr = head_ref; 
+
+    // Traverse the given linked list 
+    while (ptr != null) { 
+
+        // If current node has even 
+        // digit sum then include it in 
+        // resultant sum and product 
+        if ((digitSum(ptr.data) %2 != 1)) { 
+
+            // Find the sum and the product 
+            prod *= ptr.data; 
+            sum += ptr.data; 
+        } 
+
+        ptr = ptr.next; 
+    } 
+
+    // Print the final Sum and Product 
+    System.out.print("Sum = " + sum +"\n"); 
+    System.out.print("Product = " + prod); 
+} 
+
+// Driver Code 
+public static void main(String[] args) 
+{ 
+    // Head of the linked list 
+    Node head = null; 
+
+    // Create the linked list 
+    // 15.16.8.6.13 
+    head = push(head, 13); 
+    head = push(head, 6); 
+    head = push(head, 8); 
+    head = push(head, 16); 
+    head = push(head, 15); 
+
+    // Function call 
+    sumAndProduct(head); 
+
+} 
+} 
+
+// This code is contributed by 29AjayKumar 
+
+```
+
+## C＃
+
+```
+
+// C# program for the above approach 
+using System; 
+
+class GFG{ 
+
+// Node of Linked List 
+class Node 
+{ 
+    public int data; 
+    public Node next; 
+}; 
+
+// Function to insert a node at the 
+// beginning of the singly Linked List 
+static Node push(Node head_ref, int new_data) 
+{ 
+    // Allocate new node 
+    Node new_node = new Node(); 
+
+    // Insert the data 
+    new_node.data = new_data; 
+
+    // Link old list to the new node 
+    new_node.next = head_ref; 
+
+    // Move head to point the new node 
+    head_ref = new_node; 
+    return head_ref; 
+} 
+
+// Function to find the digit sum 
+// for a number 
+static int digitSum(int num) 
+{ 
+    int sum = 0; 
+    while (num > 0)  
+    { 
+        sum += (num % 10); 
+        num /= 10; 
+    } 
+
+    // Return the sum 
+    return sum; 
+} 
+
+// Function to find the required 
+// sum and product 
+static void sumAndProduct(Node head_ref) 
+{ 
+
+    // Initialise the sum and product 
+    // to 0 and 1 respectively 
+    int prod = 1; 
+    int sum = 0; 
+
+    Node ptr = head_ref; 
+
+    // Traverse the given linked list 
+    while (ptr != null) 
+    { 
+
+        // If current node has even 
+        // digit sum then include it in 
+        // resultant sum and product 
+        if ((digitSum(ptr.data) % 2 != 1)) 
+        { 
+
+            // Find the sum and the product 
+            prod *= ptr.data; 
+            sum += ptr.data; 
+        } 
+
+        ptr = ptr.next; 
+    } 
+
+    // Print the readonly Sum and Product 
+    Console.Write("Sum = " + sum + "\n"); 
+    Console.Write("Product = " + prod); 
+} 
+
+// Driver Code 
+public static void Main(String[] args) 
+{ 
+    // Head of the linked list 
+    Node head = null; 
+
+    // Create the linked list 
+    // 15.16.8.6.13 
+    head = push(head, 13); 
+    head = push(head, 6); 
+    head = push(head, 8); 
+    head = push(head, 16); 
+    head = push(head, 15); 
+
+    // Function call 
+    sumAndProduct(head); 
+
+} 
+} 
+
+// This code is contributed by Rohit_ranjan 
+
+```
+
+**Output:**
+
+```
+Sum = 42
+Product = 9360
+
+```
+
+***时间复杂度：** O（N）*，其中N是链​​表中节点的数量。
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

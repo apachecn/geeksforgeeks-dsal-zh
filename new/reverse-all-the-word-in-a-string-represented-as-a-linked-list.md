@@ -20,17 +20,374 @@ I- >-> l- > o -> v- > e- >-> G- > e- > e- > k- > s- >-> f- > o- > r- >-> G- > e-
 
 ## 爪哇
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Linked List Implementation 
+public class Node { 
+    public Node(char data, Node next) 
+    { 
+        Data = data; 
+        Next = next; 
+    } 
+    public char Data; 
+    public Node Next; 
+} 
+class GFG { 
 
-*play_arrow*
+    // Function to create a linked list 
+    // from the given String 
+    private static Node CreateLinkedList(String s) 
+    { 
+        Node header = null; 
+        Node temp = null; 
+        // Generates characters from the given string 
+        for (int i = 0; i < s.length(); i++) { 
+            char c = s.charAt(i); 
+            Node node = new Node(c, null); 
 
-*链接*
-*亮度_4*
-*代码*
+            if (header == null) { 
+                header = node; 
+                temp = header; 
+            } 
+            else { 
+                temp.Next = node; 
+                temp = temp.Next; 
+            } 
+        } 
+        return header; 
+    } 
 
-| `// Linked List Implementation``public` `class` `Node {` `public` `Node(` `char` `data, Node next)` `{` `Data = data;` `Next = next;` `}` `public` `char` `Data;` `public` `Node Next;``}``class` `GFG {` `// Function to create a linked list` `// from the given String` `private` `static` `Node CreateLinkedList(String s)` `{` `Node header =` `null` `;` `Node temp =` `null` `;` `// Generates characters from the given string` `for` `(` `int` `i =` `0` `; i < s.length(); i++) {` `char` `c = s.charAt(i);` [HT G59] `new` `Node(c,` `null` `);` `if` `(header ==` `null` `) {` `header = node;` `temp = header;` `}` `else` `{` `temp.Next = node;` `temp = temp.Next;` `}` `}` `return` `header;` `}` `// Function to reverse the words` `// Assume str = "practice makes man perfect"` `// to understand proper understanding of the code` `private` `static` `Node Reverse(Node header)` `{` `if` `(header ==` `null` `)` `return` `header;` `Node wordStartPosition =` `null` `;` `Node endOfSentence =` `null` `;` `Node sentenceStartPosition =` `null` `;` `// Initialize wordStartPosition to header` `// ie. node 'p' first letter of the word 'practice'` `wordStartPosition = header;` `// Navigate the linked list until` `// a space(' ') is found or header is null` `//(this is for handing if there is` `// only one word in the given sentence)` `while` `(header !=` `null` `&& header.Data !=` `' '` `) {` `// Keep track the previous node.` `// This will become the` `// last node of the linked list` `endOfSentence = header;` `// Keep moving to the next node` `header = header.Next;` `}` `// After the above while loop,` `// endOfSentence points to` `// the last letter 'e'of word 'practice'` `// header points to the space(' ')` `// which is next to word 'practice'` `// If header is null then there is only` `// one word in the given sentance` `// so set header to the`]  `// first/wordStartPosition node and return.` `if` `(header ==` `null` `) {` `header = wordStartPosition;` `return` `header;` `}` `do` `{` `// Swapping the space ie.` `// convert 'practice<space>' to` `//'<space>practice'` `// store the node which is next to space(' ')` `// 'm' which is the first letter of the word 'make'` `Node temp = header.Next;` `header.Next = wordStartPosition;` `wordStartPosition = header;` `header = temp;` `Node prev =` `null` `;` `// Setting sentenceStartPosition to node 'm'` `//(first letter of the word 'make')` `sentenceStartPosition = header;` `// Again Navigate the linked list until` `// a space(' ') is found or` `// header == null end of the linked list` `while` `(header !=` `null` `&& header.Data !=` `' '` `) {` `prev = header;` `header = header.Next;` `}` `// When the next space is found,` `// change the pointer to point the previous space` `// ie. the word is being converted to` `// "m->a->k->e->s-> ->p->r->a->c->t->i->c->e"` `prev.Next = wordStartPosition;` `// Newly found space will point to` `//'m' first letter of the word 'make'` `wordStartPosition = sentenceStartPosition;`​​ `if` `(header ==` `null` `)` `break` `;` `// Repeat the loop until` `// the end of the linked list is reached` `}` `while` `(header !=` `null` `);` `header = sentenceStartPosition;` `// Set the last node's next to null` `// ie. ->m->a->k->e->s-> ->p->r->a->->c->t->i->c->e->null` `endOfSentence.Next =` `null` `;` `return` `header;` `}` `// Function to print the Linked List` `private` `static` `void` `PrintList(Node Header)` `{` `Node temp = Header;` `// Navigate till the end and print the data in each node` `while` `(temp !=` `null` `) {` `System.out.print(temp.Data);` `temp = temp.Next;` `}` `}` `// Driver code` `public` `static` `void` `main(String[] args)` `{` `String s =` `"practice makes a man perfect"` `;` `// Convert given string to a linked list` `// with character as data in each node` `Node header = CreateLinkedList(s);` `System.out.println(` `"Before:"` `);` `PrintList(header);` `header = Reverse(header);` `System.out.println(` `"\nAfter:"` `);` `PrintList(header);`]  `}``}` |
+    // Function to reverse the words 
+    // Assume str = "practice makes man perfect" 
+    // to understand proper understanding of the code 
+    private static Node Reverse(Node header) 
+    { 
+        if (header == null) 
+            return header; 
 
-*chevron_right**filter_none*
+        Node wordStartPosition = null; 
+        Node endOfSentence = null; 
+        Node sentenceStartPosition = null; 
+
+        // Initialize wordStartPosition to header 
+        // ie. node 'p' first letter of the word 'practice' 
+        wordStartPosition = header; 
+
+        // Navigate the linked list until 
+        // a space(' ') is found or header is null 
+        //(this is for handing if there is 
+        // only one word in the given sentence) 
+        while (header != null && header.Data != ' ') { 
+
+            // Keep track the previous node. 
+            // This will become the 
+            // last node of the linked list 
+            endOfSentence = header; 
+
+            // Keep moving to the next node 
+            header = header.Next; 
+        } 
+
+        // After the above while loop, 
+        // endOfSentence points to 
+        // the last letter 'e'of word 'practice' 
+        // header points to the space(' ') 
+        // which is next to word 'practice' 
+
+        // If header is null then there is only 
+        // one word in the given sentance 
+        // so set header to the 
+        // first/wordStartPosition node and return. 
+        if (header == null) { 
+            header = wordStartPosition; 
+            return header; 
+        } 
+
+        do { 
+
+            // Swapping the space ie. 
+            // convert 'practice<space>' to 
+            //'<space>practice' 
+
+            // store the node which is next to space(' ') 
+            // 'm' which is the first letter of the word 'make' 
+            Node temp = header.Next; 
+            header.Next = wordStartPosition; 
+            wordStartPosition = header; 
+            header = temp; 
+
+            Node prev = null; 
+            // Setting sentenceStartPosition to node 'm' 
+            //(first letter of the word 'make') 
+            sentenceStartPosition = header; 
+
+            // Again Navigate the linked list until 
+            // a space(' ') is found or 
+            // header == null end of the linked list 
+            while (header != null && header.Data != ' ') { 
+                prev = header; 
+                header = header.Next; 
+            } 
+
+            // When the next space is found, 
+            // change the pointer to point the previous space 
+            // ie. the word is being converted to 
+            // "m->a->k->e->s-> ->p->r->a->c->t->i->c->e" 
+            prev.Next = wordStartPosition; 
+
+            // Newly found space will point to 
+            //'m' first letter of the word 'make' 
+            wordStartPosition = sentenceStartPosition; 
+            if (header == null) 
+                break; 
+
+            // Repeat the loop until 
+            // the end of the linked list is reached 
+        } while (header != null); 
+
+        header = sentenceStartPosition; 
+
+        // Set the last node's next to null 
+        // ie. ->m->a->k->e->s-> ->p->r->a->->c->t->i->c->e->null 
+        endOfSentence.Next = null; 
+        return header; 
+    } 
+
+    // Function to print the Linked List 
+    private static void PrintList(Node Header) 
+    { 
+        Node temp = Header; 
+        // Navigate till the end and print the data in each node 
+        while (temp != null) { 
+            System.out.print(temp.Data); 
+            temp = temp.Next; 
+        } 
+    } 
+
+    // Driver code 
+    public static void main(String[] args) 
+    { 
+        String s = "practice makes a man perfect"; 
+
+        // Convert given string to a linked list 
+        // with character as data in each node 
+        Node header = CreateLinkedList(s); 
+
+        System.out.println("Before:"); 
+        PrintList(header); 
+
+        header = Reverse(header); 
+
+        System.out.println("\nAfter:"); 
+        PrintList(header); 
+    } 
+} 
+
+```
+
+## C＃
+
+```
+
+using System; 
+
+// Linked List Implementation 
+public class Node  
+{ 
+    public Node(char data, Node next) 
+    { 
+        Data = data; 
+        Next = next; 
+    } 
+    public char Data; 
+    public Node Next; 
+} 
+
+class GFG  
+{ 
+
+    // Function to create a linked list 
+    // from the given String 
+    private static Node CreateList(String s) 
+    { 
+        Node header = null; 
+        Node temp = null; 
+
+        // Generates characters from the given string 
+        for (int i = 0; i < s.Length; i++) 
+        { 
+            char c = s[i]; 
+            Node node = new Node(c, null); 
+
+            if (header == null)  
+            { 
+                header = node; 
+                temp = header; 
+            } 
+            else 
+            { 
+                temp.Next = node; 
+                temp = temp.Next; 
+            } 
+        } 
+        return header; 
+    } 
+
+    // Function to reverse the words 
+    // Assume str = "practice makes man perfect" 
+    // to understand proper understanding of the code 
+    private static Node Reverse(Node header) 
+    { 
+        if (header == null) 
+            return header; 
+
+        Node wordStartPosition = null; 
+        Node endOfSentence = null; 
+        Node sentenceStartPosition = null; 
+
+        // Initialize wordStartPosition to header 
+        // ie. node 'p' first letter of the word 'practice' 
+        wordStartPosition = header; 
+
+        // Navigate the linked list until 
+        // a space(' ') is found or header is null 
+        //(this is for handing if there is 
+        // only one word in the given sentence) 
+        while (header != null && header.Data != ' ') 
+        { 
+
+            // Keep track the previous node. 
+            // This will become the 
+            // last node of the linked list 
+            endOfSentence = header; 
+
+            // Keep moving to the next node 
+            header = header.Next; 
+        } 
+
+        // After the above while loop, 
+        // endOfSentence points to 
+        // the last letter 'e'of word 'practice' 
+        // header points to the space(' ') 
+        // which is next to word 'practice' 
+
+        // If header is null then there is only 
+        // one word in the given sentance 
+        // so set header to the 
+        // first/wordStartPosition node and return. 
+        if (header == null)  
+        { 
+            header = wordStartPosition; 
+            return header; 
+        } 
+
+        do 
+        { 
+
+            // Swapping the space ie. 
+            // convert 'practice<space>' to 
+            //'<space>practice' 
+
+            // store the node which is next to space(' ') 
+            // 'm' which is the first letter of the word 'make' 
+            Node temp = header.Next; 
+            header.Next = wordStartPosition; 
+            wordStartPosition = header; 
+            header = temp; 
+
+            Node prev = null; 
+
+            // Setting sentenceStartPosition to node 'm' 
+            //(first letter of the word 'make') 
+            sentenceStartPosition = header; 
+
+            // Again Navigate the linked list until 
+            // a space(' ') is found or 
+            // header == null end of the linked list 
+            while (header != null && header.Data != ' ')  
+            { 
+                prev = header; 
+                header = header.Next; 
+            } 
+
+            // When the next space is found, 
+            // change the pointer to point the previous space 
+            // ie. the word is being converted to 
+            // "m->a->k->e->s-> ->p->r->a->c->t->i->c->e" 
+            prev.Next = wordStartPosition; 
+
+            // Newly found space will point to 
+            //'m' first letter of the word 'make' 
+            wordStartPosition = sentenceStartPosition; 
+            if (header == null) 
+                break; 
+
+            // Repeat the loop until 
+            // the end of the linked list is reached 
+        } 
+
+        while (header != null); 
+        header = sentenceStartPosition; 
+
+        // Set the last node's next to null 
+        // ie. ->m->a->k->e->s-> ->p->r->a->->c->t->i->c->e->null 
+        endOfSentence.Next = null; 
+        return header; 
+    } 
+
+    // Function to print the Linked List 
+    private static void PrintList(Node Header) 
+    { 
+        Node temp = Header; 
+
+        // Navigate till the end and print  
+        // the data in each node 
+        while (temp != null) 
+        { 
+            Console.Write(temp.Data); 
+            temp = temp.Next; 
+        } 
+    } 
+
+    // Driver code 
+    public static void Main(String[] args) 
+    { 
+        String s = "practice makes a man perfect"; 
+
+        // Convert given string to a linked list 
+        // with character as data in each node 
+        Node header = CreateList(s); 
+
+        Console.WriteLine("Before:"); 
+        PrintList(header); 
+
+        header = Reverse(header); 
+
+        Console.WriteLine("\nAfter:"); 
+        PrintList(header); 
+    } 
+} 
+
+// This code is contributed by Rajput-Ji 
+
+```
+
+**Output:**
+
+```
+Before:
+practice makes a man perfect
+After:
+perfect man a makes practice
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

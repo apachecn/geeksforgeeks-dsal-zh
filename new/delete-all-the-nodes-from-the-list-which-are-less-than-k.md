@@ -24,20 +24,105 @@ Output : 13 -> 16 -> 22 -> 45 -> 16
 
 下面是上述方法的实现：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to delete all the nodes from the list 
+// that are lesser than the specified value K 
+#include <bits/stdc++.h> 
 
-*play_arrow*
+using namespace std; 
 
-*链接*
-*亮度_4*
-*代码*
+// structure of a node 
+struct Node { 
+    int data; 
+    Node* next; 
+}; 
 
-| `// C++ program to delete all the nodes from the list``// that are lesser than the specified value K``#include <bits/stdc++.h>``using` `namespace` `std;``// structure of a node``struct` `Node {` `int` `data;` `Node* next;``};``// function to get a new node``Node* getNode(` `int` `data)``{` `Node* newNode =` `new` `Node;` `newNode->data = data;` `newNode->next = NULL;` `return` `newNode;``}``// function to delete all the nodes from the list``// that are lesser than the specified value K``void` `deleteLesserNodes(Node** head_ref,` `int` `K)``{` `Node *temp = *head_ref, *prev;` `// If head node itself holds the value lessser than 'K'` `while` `(temp != NULL && temp->data < K) {` `*head_ref = temp->next;` `// Changed head` `free` `(temp);` `// free old head` `temp = *head_ref;` `// Change temp` `}` `// Delete occurrences other than head` `while` `(temp != NULL) {` `// Search for the node to be deleted,` `// keep track of the previous node as we` `// need to change 'prev->next'` `while` `(temp != NULL && temp->data >= K) {` `prev = temp;` `temp = temp->next;` `}` `// If required value node was not present`​​ `// in linked list` `if` `(temp == NULL)` `return` `;` `// Unlink the node from linked list` [[HTG9 9] `prev->next = temp->next;` `delete` `temp;` `// Free memory` `// Update Temp for next iteration of` `// outer loop` `temp = prev->next;` `}``}``// function to a print a linked list``void` `printList(Node* head)``{` `while` `(head) {` `cout << head->data <<` `" "` `;` `head = head->next;` `}``}``// Driver code``int` `main()``{` `// Create list: 12->15->9->11->5->6` `Node* head = getNode(12);` `head->next = getNode(15);` `head->next->next = getNode(9);` [HT G332] `head->next->next->next = getNode(11);` `head->next->next->next->next = getNode(5);` `head->next->next->next->next->next = getNode(6);` `int` `K = 9;` `cout <<` `"Initial List: "` `;` `printList(head);`] `deleteLesserNodes(&head, K);` `cout <<` `"\nFinal List: "` `;` `printList(head);` `return` `0;``}` |
+// function to get a new node 
+Node* getNode(int data) 
+{ 
+    Node* newNode = new Node; 
+    newNode->data = data; 
+    newNode->next = NULL; 
+    return newNode; 
+} 
 
-*chevron_right**filter_none***Output:**
+// function to delete all the nodes from the list 
+// that are lesser than the specified value K 
+void deleteLesserNodes(Node** head_ref, int K) 
+{ 
+    Node *temp = *head_ref, *prev; 
+
+    // If head node itself holds the value lessser than 'K' 
+    while (temp != NULL && temp->data < K) { 
+        *head_ref = temp->next; // Changed head 
+        free(temp); // free old head 
+        temp = *head_ref; // Change temp 
+    } 
+
+    // Delete occurrences other than head 
+    while (temp != NULL) { 
+
+        // Search for the node to be deleted, 
+        // keep track of the previous node as we 
+        // need to change 'prev->next' 
+        while (temp != NULL && temp->data >= K) { 
+            prev = temp; 
+            temp = temp->next; 
+        } 
+
+        // If required value node was not present 
+        // in linked list 
+        if (temp == NULL) 
+            return; 
+
+        // Unlink the node from linked list 
+        prev->next = temp->next; 
+
+        delete temp; // Free memory 
+
+        // Update Temp for next iteration of 
+        // outer loop 
+        temp = prev->next; 
+    } 
+} 
+
+// function to a print a linked list 
+void printList(Node* head) 
+{ 
+    while (head) { 
+        cout << head->data << " "; 
+        head = head->next; 
+    } 
+} 
+
+// Driver code 
+int main() 
+{ 
+    // Create list: 12->15->9->11->5->6 
+    Node* head = getNode(12); 
+    head->next = getNode(15); 
+    head->next->next = getNode(9); 
+    head->next->next->next = getNode(11); 
+    head->next->next->next->next = getNode(5); 
+    head->next->next->next->next->next = getNode(6); 
+
+    int K = 9; 
+
+    cout << "Initial List: "; 
+    printList(head); 
+
+    deleteLesserNodes(&head, K); 
+
+    cout << "\nFinal List: "; 
+    printList(head); 
+
+    return 0; 
+} 
+
+```
+
+**Output:**
 
 ```
 Initial List: 12 15 9 11 5 6 

@@ -22,17 +22,208 @@ Output: [1 6 2 5 3 4]
 
 ## C / C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to rearrange a given list such that it 
+// consists of alternating minimum maximum elements 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Function to rearrange a given list such that it 
+// consists of alternating minimum maximum elements 
+void alternateSort(list<int>& inp) 
+{ 
+    // sort the list in ascending order 
+    inp.sort(); 
 
-*链接*
-*亮度_4*
-*代码*
+    // get iterator to first element of the list 
+    list<int>::iterator it = inp.begin(); 
+    it++; 
 
-| `// C++ program to rearrange a given list such that it``// consists of alternating minimum maximum elements``#include <bits/stdc++.h>``using` `namespace` `std;` [`// Function to rearrange a given list such that it``// consists of alternating minimum maximum elements``void` `alternateSort(list<` `int` `>& inp)``{` `// sort the list in ascending order` `inp.sort();` `// get iterator to first element of the list` `list<` `int` `>::iterator it = inp.begin();` `it++;` `for` `(` `int` `i=1; i<(inp.size() + 1)/2; i++)` `{` `// pop last element (next greatest)` `int` `val = inp.back();` `inp.pop_back();` `// insert it after next minimum element` `inp.insert(it, val);`  `// increment the pointer for next pair` `++it;` `}``}``// Driver code``int` `main()``{` `// input list` `list<` `int` `> inp({ 1, 3, 8, 2, 7, 5, 6, 4 });` `// rearrange the given list` `alternateSort(inp);` `// print the modified list` `for` `(` `int` `i : inp)` `cout << i <<` `" "` `;` `return` `0;``}` |
+    for (int i=1; i<(inp.size() + 1)/2; i++) 
+    { 
+        // pop last element (next greatest) 
+        int val = inp.back(); 
+        inp.pop_back(); 
 
-*chevron_right**filter_none*
+        // insert it after next minimum element 
+        inp.insert(it, val); 
+
+        // increment the pointer for next pair 
+        ++it; 
+    } 
+} 
+
+// Driver code 
+int main() 
+{ 
+    // input list 
+    list<int> inp({ 1, 3, 8, 2, 7, 5, 6, 4 }); 
+
+    // rearrange the given list 
+    alternateSort(inp); 
+
+    // print the modified list 
+    for (int i : inp) 
+        cout << i << " "; 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to rearrange a given list such that it 
+// consists of alternating minimum maximum elements 
+import java.util.*; 
+
+class AlternateSort 
+{ 
+    // Function to rearrange a given list such that it 
+    // consists of alternating minimum maximum elements 
+    // using LinkedList 
+    public static void alternateSort(LinkedList<Integer> ll)  
+    { 
+        Collections.sort(ll); 
+
+        for (int i = 1; i < (ll.size() + 1)/2; i++) 
+        { 
+            Integer x = ll.getLast(); 
+            ll.removeLast(); 
+            ll.add(2*i - 1, x); 
+        } 
+
+        System.out.println(ll); 
+    } 
+
+    public static void main (String[] args) throws java.lang.Exception 
+    { 
+        // input list 
+        Integer arr[] = {1, 3, 8, 2, 7, 5, 6, 4}; 
+
+        // convert array to LinkedList 
+        LinkedList<Integer> ll = new LinkedList<Integer>(Arrays.asList(arr)); 
+
+        // rearrange the given list 
+        alternateSort(ll); 
+    } 
+} 
+
+```
+
+## 蟒蛇
+
+```
+
+# Python program to rearrange a given list such that it 
+# consists of alternating minimum maximum elements 
+inp = [] 
+
+# Function to rearrange a given list such that it 
+# consists of alternating minimum maximum elements 
+def alternateSort(): 
+
+    global inp 
+
+    # sort the list in ascending order 
+    inp.sort() 
+
+    # get index to first element of the list 
+    it = 0
+    it = it + 1
+
+    i = 1
+
+    while ( i < (len(inp) + 1)/2 ): 
+
+        i = i + 1
+
+        # pop last element (next greatest) 
+        val = inp[-1] 
+        inp.pop() 
+
+        # insert it after next minimum element 
+        inp.insert(it, val) 
+
+        # increment the pointer for next pair 
+        it = it + 2
+
+# Driver code 
+
+# input list 
+inp=[ 1, 3, 8, 2, 7, 5, 6, 4 ] 
+
+# rearrange the given list 
+alternateSort() 
+
+# print the modified list 
+print (inp)  
+
+# This code is contributed by Arnab Kundu 
+
+```
+
+## C＃
+
+```
+
+// C# program to rearrange a given list such that it 
+// consists of alternating minimum maximum elements  
+using System;  
+using System.Collections.Generic; 
+
+class GFG 
+{ 
+    // Function to rearrange a given list such that it 
+    // consists of alternating minimum maximum elements 
+    // using List 
+    public static void alternateSort(List<int> ll)  
+    { 
+        ll.Sort(); 
+
+        for (int i = 1; i < (ll.Count + 1)/2; i++) 
+        { 
+            int x = ll[ll.Count-1]; 
+            ll.RemoveAt(ll.Count-1); 
+            ll.Insert(2*i - 1, x); 
+        } 
+        foreach(int a in ll) 
+        { 
+            Console.Write(a+" "); 
+        } 
+
+    } 
+
+    // Driver code 
+    public static void Main (String[] args) 
+    { 
+        // input list 
+        int []arr = {1, 3, 8, 2, 7, 5, 6, 4}; 
+
+        // convert array to List 
+        List<int> ll = new List<int>(arr); 
+
+        // rearrange the given list 
+        alternateSort(ll); 
+    } 
+} 
+
+/* This code contributed by PrinciRaj1992 */
+
+```
+
+**Output:**
+
+```
+1 8 2 7 3 6 4 5
+
+```
+
+本文由 **Aditya Goel** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

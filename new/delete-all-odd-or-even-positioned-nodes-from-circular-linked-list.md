@@ -25,20 +25,58 @@ Output : 10->30
 
 **删除所有奇数位置的节点的功能：**
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Function to delete that all 
+// node whose index position is odd 
+void DeleteAllOddNode(struct Node** head) 
+{ 
+    int len = Length(*head); 
+    int count = 0; 
+    struct Node *previous = *head, *next = *head; 
 
-*play_arrow*
+    // check list have any node 
+    // if not then return 
+    if (*head == NULL) { 
+        printf("\nDelete Last List is empty\n"); 
+        return; 
+    } 
 
-*链接*
-*亮度_4*
-*代码*
+    // if list have single node means 
+    // odd position then delete it 
+    if (len == 1) { 
+        DeleteFirst(head); 
+        return; 
+    } 
 
-| `// Function to delete that all``// node whose index position is odd``void` `DeleteAllOddNode(` `struct` `Node** head)``{` `int` `len = Length(*head);` `int` `count = 0;` `struct` `Node *previous = *head, *next = *head;`的 `// check list have any node` `// if not then return` `if` `(*head == NULL) {` `printf` `(` `"\nDelete Last List is empty\n"` `);` `return` `;` `}` `// if list have single node means` `// odd position then delete it` `if` `(len == 1) {` `DeleteFirst(head);` `return` `;` `}` `// traverse first to last if` `// list have more than one node` `while` `(len > 0) {` `// delete first position node` `// which is odd position` `if` `(count == 0) {` `// Function to delete first node` `DeleteFirst(head);` `}` `// check position is odd or not` `// if yes then delete node` `if` `(count % 2 == 0 && count != 0) {` `deleteNode(*head, previous);` `}` `previous = previous->next;` `next = previous->next;` ] `len--;` `count++;` `}` `return` `;``}` |
+    // traverse first to last if 
+    // list have more than one node 
+    while (len > 0) { 
+        // delete first position node 
+        // which is odd position 
+        if (count == 0) { 
 
-*chevron_right**filter_none*
+            // Function to delete first node 
+            DeleteFirst(head); 
+        } 
+
+        // check position is odd or not 
+        // if yes then delete node 
+        if (count % 2 == 0 && count != 0) { 
+            deleteNode(*head, previous); 
+        } 
+
+        previous = previous->next; 
+        next = previous->next; 
+
+        len--; 
+        count++; 
+    } 
+
+    return; 
+} 
+
+```
 
 ### 从循环链表中删除所有偶数位置节点
 
@@ -63,36 +101,977 @@ Output : 90->20
 
 **用于删除甚至定位的节点的功能：**
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// Function to delete all even position nodes 
+void DeleteAllEvenNode(struct Node** head) 
+{ 
+    // Take size of list 
+    int len = Length(*head); 
 
-*play_arrow*
+    int count = 1; 
+    struct Node *previous = *head, *next = *head; 
 
-*链接*
-*亮度_4*
-*代码*
+    // Check list is empty 
+    // if empty simply return 
+    if (*head == NULL) { 
+        printf("\nList is empty\n"); 
+        return; 
+    } 
 
-| `// Function to delete all even position nodes``void` `DeleteAllEvenNode(` `struct` `Node** head)``{` `// Take size of list` `int` `len = Length(*head);` `int` `count = 1;` `struct` `Node *previous = *head, *next = *head;` `// Check list is empty` `// if empty simply return` `if` `(*head == NULL) {` `printf` `(` `"\nList is empty\n"` `);` `return` `;` `}` [ `// if list have single node` `// then return` `if` `(len < 2) {` `return` `;` `}` `// make first node is previous` `previous = *head;`[HT G144]  `// make second node is current` `next = previous->next;` `while` `(len > 0) {` `// check node number is even` `// if node is even then` `// delete that node` `if` `(count % 2 == 0) {` `previous->next = next->next;` `free` `(next);` `previous = next->next;` `next = previous->next;` `}` `len--;` `count++;` `}` `return` `;``}` |
+    // if list have single node 
+    // then return 
+    if (len < 2) { 
+        return; 
+    } 
 
-*chevron_right**filter_none*
+    // make first node is previous 
+    previous = *head; 
+
+    // make second node is current 
+    next = previous->next; 
+
+    while (len > 0) { 
+        // check node number is even 
+        // if node is even then 
+        // delete that node 
+        if (count % 2 == 0) { 
+            previous->next = next->next; 
+            free(next); 
+            previous = next->next; 
+            next = previous->next; 
+        } 
+
+        len--; 
+        count++; 
+    } 
+
+    return; 
+} 
+
+```
 
 **删除偶数或奇数节点的程序**：
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// CPP program to delete all even and odd position 
+// nodes from Singly Circular Linked list 
 
-*play_arrow*
+#include <bits/stdc++.h> 
 
-*链接*
-*亮度_4*
-*代码*
+// structure for a node 
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-| `// CPP program to delete all even and odd position``// nodes from Singly Circular Linked list``#include <bits/stdc++.h>``// structure for a node``struct` `Node {``int` `data;``struct` `Node* next;``};``// Function return number of nodes present in list``int` `Length(``struct` `Node* head)``{``struct` `Node* current = head;``int` `count = 0;``// if list is empty simply return length zero``if` `(head == NULL) {``return` `0;``}``// traverse forst to last node``else` `{``do` `{``current = current->next;``count++;``}` `while` `(current != head);``}``return` `count;``}``// Function print data of list``void` `Display(``struct` `Node* head)``{``struct` `Node* current = head;``// if list is empty simply show message``if` `(head == NULL) {``printf``(``"\nDisplay List is empty\n"``);``return``;``}``// traverse forst to last node``else` `{``do` `{``printf``(``"%d "``, current->data);``current = current->next;``}` `while` `(current != head);``}``}``/* Function to insert a node at the end of ``a Circular linked list */``void` `Insert(``struct` `Node** head,` `int` `data)``{``struct` `Node* current = *head;``// Create a new node``struct` `Node* newNode =` `new` `Node;``// check node is created or not``if` `(!newNode) {``printf``(``"\nMemory Error\n"``);``return``;``}``// insert data into newly created node``newNode->data = data;``// check list is empty``// if not have any node then``// make first node it``if` `(*head == NULL) {``newNode->next = newNode;``*head = newNode;``return``;``}` `// if list have already some node``else` `{``// move firt node to last node``while` `(current->next != *head) {``current = current->next;``}``// put first or head node address in new node link``newNode->next = *head;``// put new node address into last node link(next)``current->next = newNode;``}``}``// Utitlity function to delete a Node``void` `deleteNode(``struct` `Node* head_ref,` `struct` `Node* del)``{``struct` `Node* temp = head_ref;``// If node to be deleted is head node``if` `(head_ref == del) {``head_ref = del->next;``}``// traverse list till not found``// delete node``while` `(temp->next != del) {``temp = temp->next;``}``// copy address of node``temp->next = del->next;``// Finally, free the memory``// occupied by del``free``(del);``return``;``}``// Function to delete First node of``// Circular Linked List``void` `DeleteFirst(``struct` `Node** head)``{``struct` `Node *previous = *head, *next = *head;``// check list have any node``// if not then return``if` `(*head == NULL) {``printf``(``"\nList is empty\n"``);``return``;``}``// check list have single node``// if yes then delete it and return``if` `(previous->next == previous) {``*head = NULL;``return``;``}``// traverse second to first``while` `(previous->next != *head) {``previous = previous->next;``next = previous->next;``}``// now previous is last node and``// next is first node of list``// first node(next) link address``// put in last node(previous) link``previous->next = next->next;``// make second node as head node``*head = previous->next;``free``(next);``return``;``}``// Function to delete odd position nodes``void` `DeleteAllOddNode(``struct` `Node** head)``{``int` `len = Length(*head);``int` `count = 0;``struct` `Node *previous = *head, *next = *head;``// check list have any node``// if not then return``if` `(*head == NULL) {``printf``(``"\nDelete Last List is empty\n"``);``return``;``}``// if list have single node means``// odd position then delete it``if` `(len == 1) {``DeleteFirst(head);``return``;``}``// traverse first to last if``// list have more than one node``while` `(len > 0) {``// delete first position node``// which is odd position``if` `(count == 0) {``// Function to delete first node``DeleteFirst(head);``}``// check position is odd or not``// if yes then delete node``// Note: Considered 1 based indexing``if` `(count % 2 == 0 && count != 0) {``deleteNode(*head, previous);``}``previous = previous->next;``next = previous->next;``len--;``count++;``}``return``;``}``// Function to delete all even position nodes``void` `DeleteAllEvenNode(``struct` `Node** head)``{``// Take size of list``int` `len = Length(*head);``int` `count = 1;``struct` `Node *previous = *head, *next = *head;``// Check list is empty``// if empty simply return``if` `(*head == NULL) {``printf``(``"\nList is empty\n"``);``return``;``}``// if list have single node``// then return``if` `(len < 2) {``return``;``}``// make first node is previous``previous = *head;``// make second node is current``next = previous->next;``while` `(len > 0) {``// check node number is even``// if node is even then``// delete that node``if` `(count % 2 == 0) {``previous->next = next->next;``free``(next);``previous = next->next;``next = previous->next;``}``len--;``count++;``}``return``;``}``// Driver Code``int` `main()``{``struct` `Node* head = NULL;``Insert(&head, 99);``Insert(&head, 11);``Insert(&head, 22);``Insert(&head, 33);``Insert(&head, 44);``Insert(&head, 55);``Insert(&head, 66);``// Deleting Odd positioned nodes``printf``(``"Initial List: "``);``Display(head);``printf``(``"\nAfter deleting Odd position nodes: "``);``DeleteAllOddNode(&head);``Display(head);``// Deleting Even positioned nodes``printf``(``"\n\nInitial List: "``);``Display(head);``printf``(``"\nAfter deleting even position nodes: "``);``DeleteAllEvenNode(&head);``Display(head);``return` `0;``}` |
+// Function return number of nodes present in list 
+int Length(struct Node* head) 
+{ 
+    struct Node* current = head; 
+    int count = 0; 
+    // if list is empty simply return length zero 
+    if (head == NULL) { 
+        return 0; 
+    } 
+    // traverse forst to last node 
+    else { 
+        do { 
+            current = current->next; 
+            count++; 
+        } while (current != head); 
+    } 
+    return count; 
+} 
 
-*chevron_right**filter_none*
+// Function print data of list 
+void Display(struct Node* head) 
+{ 
+    struct Node* current = head; 
+
+    // if list is empty simply show message 
+    if (head == NULL) { 
+        printf("\nDisplay List is empty\n"); 
+        return; 
+    } 
+    // traverse forst to last node 
+    else { 
+        do { 
+            printf("%d ", current->data); 
+            current = current->next; 
+        } while (current != head); 
+    } 
+} 
+
+/* Function to insert a node at the end of  
+a Circular linked list */
+void Insert(struct Node** head, int data) 
+{ 
+    struct Node* current = *head; 
+    // Create a new node 
+    struct Node* newNode = new Node; 
+
+    // check node is created or not 
+    if (!newNode) { 
+        printf("\nMemory Error\n"); 
+        return; 
+    } 
+    // insert data into newly created node 
+    newNode->data = data; 
+
+    // check list is empty 
+    // if not have any node then 
+    // make first node it 
+    if (*head == NULL) { 
+        newNode->next = newNode; 
+        *head = newNode; 
+        return; 
+    } // if list have already some node 
+    else { 
+        // move firt node to last node 
+        while (current->next != *head) { 
+            current = current->next; 
+        } 
+        // put first or head node address in new node link 
+        newNode->next = *head; 
+        // put new node address into last node link(next) 
+        current->next = newNode; 
+    } 
+} 
+
+// Utitlity function to delete a Node 
+void deleteNode(struct Node* head_ref, struct Node* del) 
+{ 
+    struct Node* temp = head_ref; 
+    // If node to be deleted is head node 
+
+    if (head_ref == del) { 
+        head_ref = del->next; 
+    } 
+
+    // traverse list till not found 
+    // delete node 
+    while (temp->next != del) { 
+        temp = temp->next; 
+    } 
+
+    // copy address of node 
+    temp->next = del->next; 
+
+    // Finally, free the memory 
+    // occupied by del 
+    free(del); 
+
+    return; 
+} 
+
+// Function to delete First node of 
+// Circular Linked List 
+void DeleteFirst(struct Node** head) 
+{ 
+    struct Node *previous = *head, *next = *head; 
+    // check list have any node 
+    // if not then return 
+    if (*head == NULL) { 
+        printf("\nList is empty\n"); 
+        return; 
+    } 
+    // check list have single node 
+    // if yes then delete it and return 
+    if (previous->next == previous) { 
+        *head = NULL; 
+        return; 
+    } 
+    // traverse second to first 
+    while (previous->next != *head) { 
+
+        previous = previous->next; 
+        next = previous->next; 
+    } 
+    // now previous is last node and 
+    // next is first node of list 
+    // first node(next) link address 
+    // put in last node(previous) link 
+    previous->next = next->next; 
+
+    // make second node as head node 
+    *head = previous->next; 
+    free(next); 
+    return; 
+} 
+
+// Function to delete odd position nodes 
+void DeleteAllOddNode(struct Node** head) 
+{ 
+    int len = Length(*head); 
+    int count = 0; 
+    struct Node *previous = *head, *next = *head; 
+
+    // check list have any node 
+    // if not then return 
+    if (*head == NULL) { 
+        printf("\nDelete Last List is empty\n"); 
+        return; 
+    } 
+
+    // if list have single node means 
+    // odd position then delete it 
+    if (len == 1) { 
+        DeleteFirst(head); 
+        return; 
+    } 
+
+    // traverse first to last if 
+    // list have more than one node 
+    while (len > 0) { 
+        // delete first position node 
+        // which is odd position 
+        if (count == 0) { 
+
+            // Function to delete first node 
+            DeleteFirst(head); 
+        } 
+
+        // check position is odd or not 
+        // if yes then delete node 
+        // Note: Considered 1 based indexing 
+        if (count % 2 == 0 && count != 0) { 
+            deleteNode(*head, previous); 
+        } 
+
+        previous = previous->next; 
+        next = previous->next; 
+
+        len--; 
+        count++; 
+    } 
+
+    return; 
+} 
+
+// Function to delete all even position nodes 
+void DeleteAllEvenNode(struct Node** head) 
+{ 
+    // Take size of list 
+    int len = Length(*head); 
+
+    int count = 1; 
+    struct Node *previous = *head, *next = *head; 
+
+    // Check list is empty 
+    // if empty simply return 
+    if (*head == NULL) { 
+        printf("\nList is empty\n"); 
+        return; 
+    } 
+
+    // if list have single node 
+    // then return 
+    if (len < 2) { 
+        return; 
+    } 
+
+    // make first node is previous 
+    previous = *head; 
+
+    // make second node is current 
+    next = previous->next; 
+
+    while (len > 0) { 
+        // check node number is even 
+        // if node is even then 
+        // delete that node 
+        if (count % 2 == 0) { 
+            previous->next = next->next; 
+            free(next); 
+            previous = next->next; 
+            next = previous->next; 
+        } 
+
+        len--; 
+        count++; 
+    } 
+
+    return; 
+} 
+
+// Driver Code 
+int main() 
+{ 
+    struct Node* head = NULL; 
+    Insert(&head, 99); 
+    Insert(&head, 11); 
+    Insert(&head, 22); 
+    Insert(&head, 33); 
+    Insert(&head, 44); 
+    Insert(&head, 55); 
+    Insert(&head, 66); 
+
+    // Deleting Odd positioned nodes 
+    printf("Initial List: "); 
+    Display(head); 
+
+    printf("\nAfter deleting Odd position nodes: "); 
+    DeleteAllOddNode(&head); 
+    Display(head); 
+
+    // Deleting Even positioned nodes 
+    printf("\n\nInitial List: "); 
+    Display(head); 
+
+    printf("\nAfter deleting even position nodes: "); 
+    DeleteAllEvenNode(&head); 
+    Display(head); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to delete all even and odd position 
+// nodes from Singly Circular Linked list 
+class GFG 
+{ 
+
+// structure for a node 
+static class Node 
+{ 
+    int data; 
+    Node next; 
+}; 
+
+// Function return number of nodes present in list 
+static int Length(Node head) 
+{ 
+    Node current = head; 
+    int count = 0; 
+
+    // if list is empty simply return length zero 
+    if (head == null)  
+    { 
+        return 0; 
+    } 
+
+    // traverse forst to last node 
+    else
+    { 
+        do 
+        { 
+            current = current.next; 
+            count++; 
+        } while (current != head); 
+    } 
+    return count; 
+} 
+
+// Function print data of list 
+static void Display( Node head) 
+{ 
+    Node current = head; 
+
+    // if list is empty simply show message 
+    if (head == null)  
+    { 
+        System.out.printf("\nDisplay List is empty\n"); 
+        return; 
+    } 
+
+    // traverse forst to last node 
+    else 
+    { 
+        do 
+        { 
+            System.out.printf("%d ", current.data); 
+            current = current.next; 
+        } while (current != head); 
+    } 
+} 
+
+/* Function to insert a node at the end of  
+a Circular linked list */
+static Node Insert(Node head, int data) 
+{ 
+    Node current = head; 
+    // Create a new node 
+    Node newNode = new Node(); 
+
+    // check node is created or not 
+    if (newNode == null)  
+    { 
+        System.out.printf("\nMemory Error\n"); 
+        return null; 
+    } 
+
+    // insert data into newly created node 
+    newNode.data = data; 
+
+    // check list is empty 
+    // if not have any node then 
+    // make first node it 
+    if (head == null) 
+    { 
+        newNode.next = newNode; 
+        head = newNode; 
+        return head; 
+    }  
+
+    // if list have already some node 
+    else
+    { 
+        // move firt node to last node 
+        while (current.next != head) 
+        { 
+            current = current.next; 
+        } 
+
+        // put first or head node address in new node link 
+        newNode.next = head; 
+
+        // put new node address into last node link(next) 
+        current.next = newNode; 
+    } 
+    return head; 
+} 
+
+// Utitlity function to delete a Node 
+static Node deleteNode(Node head_ref, Node del) 
+{ 
+    Node temp = head_ref; 
+
+    // If node to be deleted is head node 
+    if (head_ref == del)  
+    { 
+        head_ref = del.next; 
+    } 
+
+    // traverse list till not found 
+    // delete node 
+    while (temp.next != del)  
+    { 
+        temp = temp.next; 
+    } 
+
+    // copy address of node 
+    temp.next = del.next; 
+    return head_ref; 
+} 
+
+// Function to delete First node of 
+// Circular Linked List 
+static Node DeleteFirst(Node head) 
+{ 
+    Node previous = head, next = head; 
+    // check list have any node 
+    // if not then return 
+    if (head == null)  
+    { 
+        System.out.printf("\nList is empty\n"); 
+        return head; 
+    } 
+
+    // check list have single node 
+    // if yes then delete it and return 
+    if (previous.next == previous) 
+    { 
+        head = null; 
+        return head; 
+    } 
+
+    // traverse second to first 
+    while (previous.next != head) 
+    { 
+        previous = previous.next; 
+        next = previous.next; 
+    } 
+
+    // now previous is last node and 
+    // next is first node of list 
+    // first node(next) link address 
+    // put in last node(previous) link 
+    previous.next = next.next; 
+
+    // make second node as head node 
+    head = previous.next; 
+    return head; 
+} 
+
+// Function to delete odd position nodes 
+static Node DeleteAllOddNode(Node head) 
+{ 
+    int len = Length(head); 
+    int count = 0; 
+    Node previous = head, next = head; 
+
+    // check list have any node 
+    // if not then return 
+    if (head == null)  
+    { 
+        System.out.printf("\nDelete Last List is empty\n"); 
+        return null; 
+    } 
+
+    // if list have single node means 
+    // odd position then delete it 
+    if (len == 1)  
+    { 
+        head = DeleteFirst(head); 
+        return head; 
+    } 
+
+    // traverse first to last if 
+    // list have more than one node 
+    while (len > 0)  
+    { 
+        // delete first position node 
+        // which is odd position 
+        if (count == 0)  
+        { 
+
+            // Function to delete first node 
+            head = DeleteFirst(head); 
+        } 
+
+        // check position is odd or not 
+        // if yes then delete node 
+        // Note: Considered 1 based indexing 
+        if (count % 2 == 0 && count != 0)  
+        { 
+            head = deleteNode(head, previous); 
+        } 
+
+        previous = previous.next; 
+        next = previous.next; 
+
+        len--; 
+        count++; 
+    } 
+    return head; 
+} 
+
+// Function to delete all even position nodes 
+static Node DeleteAllEvenNode( Node head) 
+{ 
+    // Take size of list 
+    int len = Length(head); 
+
+    int count = 1; 
+    Node previous = head, next = head; 
+
+    // Check list is empty 
+    // if empty simply return 
+    if (head == null) 
+    { 
+        System.out.printf("\nList is empty\n"); 
+        return null; 
+    } 
+
+    // if list have single node 
+    // then return 
+    if (len < 2)  
+    { 
+        return null; 
+    } 
+
+    // make first node is previous 
+    previous = head; 
+
+    // make second node is current 
+    next = previous.next; 
+
+    while (len > 0) 
+    { 
+
+        // check node number is even 
+        // if node is even then 
+        // delete that node 
+        if (count % 2 == 0) 
+        { 
+            previous.next = next.next; 
+            previous = next.next; 
+            next = previous.next; 
+        } 
+
+        len--; 
+        count++; 
+    } 
+    return head; 
+} 
+
+// Driver Code 
+public static void main(String args[]) 
+{ 
+    Node head = null; 
+    head = Insert(head, 99); 
+    head = Insert(head, 11); 
+    head = Insert(head, 22); 
+    head = Insert(head, 33); 
+    head = Insert(head, 44); 
+    head = Insert(head, 55); 
+    head = Insert(head, 66); 
+
+    // Deleting Odd positioned nodes 
+    System.out.printf("Initial List: "); 
+    Display(head); 
+
+    System.out.printf("\nAfter deleting Odd position nodes: "); 
+    head = DeleteAllOddNode(head); 
+    Display(head); 
+
+    // Deleting Even positioned nodes 
+    System.out.printf("\n\nInitial List: "); 
+    Display(head); 
+
+    System.out.printf("\nAfter deleting even position nodes: "); 
+    head = DeleteAllEvenNode(head); 
+    Display(head); 
+} 
+} 
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+## C＃
+
+```
+
+// C# program to delete all even and  
+// odd position nodes from  
+// Singly Circular Linked list 
+using System; 
+
+class GFG 
+{ 
+
+// structure for a node 
+class Node 
+{ 
+    public int data; 
+    public Node next; 
+}; 
+
+// Function return number of nodes 
+// present in list 
+static int Length(Node head) 
+{ 
+    Node current = head; 
+    int count = 0; 
+
+    // if list is empty simply return 
+    // length zero 
+    if (head == null)  
+    { 
+        return 0; 
+    } 
+
+    // traverse forst to last node 
+    else
+    { 
+        do
+        { 
+            current = current.next; 
+            count++; 
+        } while (current != head); 
+    } 
+    return count; 
+} 
+
+// Function print data of list 
+static void Display( Node head) 
+{ 
+    Node current = head; 
+
+    // if list is empty simply show message 
+    if (head == null)  
+    { 
+        Console.Write("\nDisplay List is empty\n"); 
+        return; 
+    } 
+
+    // traverse forst to last node 
+    else
+    { 
+        do
+        { 
+            Console.Write("{0} ", current.data); 
+            current = current.next; 
+        } while (current != head); 
+    } 
+} 
+
+/* Function to insert a node at the end of  
+a Circular linked list */
+static Node Insert(Node head, int data) 
+{ 
+    Node current = head; 
+
+    // Create a new node 
+    Node newNode = new Node(); 
+
+    // check node is created or not 
+    if (newNode == null)  
+    { 
+        Console.Write("\nMemory Error\n"); 
+        return null; 
+    } 
+
+    // insert data into newly created node 
+    newNode.data = data; 
+
+    // check list is empty 
+    // if not have any node then 
+    // make first node it 
+    if (head == null) 
+    { 
+        newNode.next = newNode; 
+        head = newNode; 
+        return head; 
+    }  
+
+    // if list have already some node 
+    else
+    { 
+        // move firt node to last node 
+        while (current.next != head) 
+        { 
+            current = current.next; 
+        } 
+
+        // put first or head node address 
+        // in new node link 
+        newNode.next = head; 
+
+        // put new node address into 
+        // last node link(next) 
+        current.next = newNode; 
+    } 
+    return head; 
+} 
+
+// Utitlity function to delete a Node 
+static Node deleteNode(Node head_ref, 
+                       Node del) 
+{ 
+    Node temp = head_ref; 
+
+    // If node to be deleted is head node 
+    if (head_ref == del)  
+    { 
+        head_ref = del.next; 
+    } 
+
+    // traverse list till not found 
+    // delete node 
+    while (temp.next != del)  
+    { 
+        temp = temp.next; 
+    } 
+
+    // copy address of node 
+    temp.next = del.next; 
+    return head_ref; 
+} 
+
+// Function to delete First node of 
+// Circular Linked List 
+static Node DeleteFirst(Node head) 
+{ 
+    Node previous = head, next = head; 
+
+    // check list have any node 
+    // if not then return 
+    if (head == null)  
+    { 
+        Console.Write("\nList is empty\n"); 
+        return head; 
+    } 
+
+    // check list have single node 
+    // if yes then delete it and return 
+    if (previous.next == previous) 
+    { 
+        head = null; 
+        return head; 
+    } 
+
+    // traverse second to first 
+    while (previous.next != head) 
+    { 
+        previous = previous.next; 
+        next = previous.next; 
+    } 
+
+    // now previous is last node and 
+    // next is first node of list 
+    // first node(next) link address 
+    // put in last node(previous) link 
+    previous.next = next.next; 
+
+    // make second node as head node 
+    head = previous.next; 
+    return head; 
+} 
+
+// Function to delete odd position nodes 
+static Node DeleteAllOddNode(Node head) 
+{ 
+    int len = Length(head); 
+    int count = 0; 
+    Node previous = head, next = head; 
+
+    // check list have any node 
+    // if not then return 
+    if (head == null)  
+    { 
+        Console.Write("\nDelete Last List is empty\n"); 
+        return null; 
+    } 
+
+    // if list have single node means 
+    // odd position then delete it 
+    if (len == 1)  
+    { 
+        head = DeleteFirst(head); 
+        return head; 
+    } 
+
+    // traverse first to last if 
+    // list have more than one node 
+    while (len > 0)  
+    { 
+        // delete first position node 
+        // which is odd position 
+        if (count == 0)  
+        { 
+
+            // Function to delete first node 
+            head = DeleteFirst(head); 
+        } 
+
+        // check position is odd or not 
+        // if yes then delete node 
+        // Note: Considered 1 based indexing 
+        if (count % 2 == 0 && count != 0)  
+        { 
+            head = deleteNode(head, previous); 
+        } 
+
+        previous = previous.next; 
+        next = previous.next; 
+
+        len--; 
+        count++; 
+    } 
+    return head; 
+} 
+
+// Function to delete all even position nodes 
+static Node DeleteAllEvenNode( Node head) 
+{ 
+    // Take size of list 
+    int len = Length(head); 
+
+    int count = 1; 
+    Node previous = head, next = head; 
+
+    // Check list is empty 
+    // if empty simply return 
+    if (head == null) 
+    { 
+        Console.Write("\nList is empty\n"); 
+        return null; 
+    } 
+
+    // if list have single node 
+    // then return 
+    if (len < 2)  
+    { 
+        return null; 
+    } 
+
+    // make first node is previous 
+    previous = head; 
+
+    // make second node is current 
+    next = previous.next; 
+
+    while (len > 0) 
+    { 
+
+        // check node number is even 
+        // if node is even then 
+        // delete that node 
+        if (count % 2 == 0) 
+        { 
+            previous.next = next.next; 
+            previous = next.next; 
+            next = previous.next; 
+        } 
+
+        len--; 
+        count++; 
+    } 
+    return head; 
+} 
+
+// Driver Code 
+public static void Main(String []args) 
+{ 
+    Node head = null; 
+    head = Insert(head, 99); 
+    head = Insert(head, 11); 
+    head = Insert(head, 22); 
+    head = Insert(head, 33); 
+    head = Insert(head, 44); 
+    head = Insert(head, 55); 
+    head = Insert(head, 66); 
+
+    // Deleting Odd positioned nodes 
+    Console.Write("Initial List: "); 
+    Display(head); 
+
+    Console.Write("\nAfter deleting Odd position nodes: "); 
+    head = DeleteAllOddNode(head); 
+    Display(head); 
+
+    // Deleting Even positioned nodes 
+    Console.Write("\n\nInitial List: "); 
+    Display(head); 
+
+    Console.Write("\nAfter deleting even position nodes: "); 
+    head = DeleteAllEvenNode(head); 
+    Display(head); 
+} 
+} 
+
+// This code is contributed by Rajput-Ji 
+
+```
+
+**Output:**
+
+```
+Initial List: 99 11 22 33 44 55 66 
+After deleting Odd position nodes: 11 33 55 
+
+Initial List: 11 33 55 
+After deletin even position nodes: 11 55
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

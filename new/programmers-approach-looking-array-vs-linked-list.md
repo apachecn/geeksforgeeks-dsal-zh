@@ -23,20 +23,17 @@
 
 由于数组的元素在内存中是连续的，因此我们可以使用索引（例如）随机访问任何元素。 intArr [3]将直接访问数组的第四个元素。 （对于新手，数组索引从0开始，这就是为什么第四个元素以3索引的原因）。 而且，由于用于阵列中连续元素的连续存储器，不需要在单独的元素中存储额外的信息，即，阵列中的元数据没有开销。 与此相反，链接列表节点在内存中不连续。 这意味着我们需要某种机制来遍历或访问链表节点。 为此，每个节点都存储下一个节点的位置，这形成了从一个节点到下一个节点的链接的基础。 因此，它称为“链接列表”。 尽管存储下一个节点的位置在链表中是开销，但这是必需的。 通常，我们看到链表节点声明如下：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+struct llNode 
+{ 
+  int dataInt; 
 
-*play_arrow*
+  /* nextNode is the pointer to next node in linked list*/
+  struct llNode * nextNode;     
+};
 
-*链接*
-*亮度_4*
-*代码*
-
-| `struct` `llNode``{` `int` `dataInt;`的]  `/* nextNode is the pointer to next node in linked list*/` `struct` `llNode * nextNode;    ``};` |
-
-*chevron_right**filter_none*
+```
 
 因此，数组元素在内存中是连续的，因此不需要任何元数据。 并且链接列表节点在内存中不连续，因此需要下一个节点的位置形式的元数据。 除了这种差异之外，我们可以看到该数组可能有几个未使用的元素，因为已经分配了内存。 但是链接列表将仅具有必需的编号。 数据项。 以上有关数组和链表的所有信息已在几本教科书中以不同的方式提及。
 
@@ -46,39 +43,30 @@ What if we need to allocate array memory from Heap section (i.e. at run time) an
 
 / *在运行时，假设我们知道整数数组所需的大小（例如，用户输入的大小）。 说，数组大小存储在变量arrSize中。 从堆中分配此数组，如下所示* /
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+int * dynArr = (int *)malloc(sizeof(int)*arrSize); 
 
-*play_arrow*
-
-*链接*
-*亮度_4*
-*代码*
-
-| `int` `* dynArr = (` `int` `*)` `malloc` `(` `sizeof` `(` `int` `)*arrSize);` |
-
-*chevron_right**filter_none*
+```
 
 尽管此数组的内存是从堆中分配的，但仍可以通过索引机制（例如 dynArr [i]。 基本上，基于编程问题，我们结合了数组的一项好处（即元素的随机访问）和链表的一项好处（即将内存分配延迟到运行时并从Heap分配内存）。 拥有这种类型的动态数组的另一个优点是，这种在运行时从堆中分配数组的方法可以减小代码大小（当然，这取决于某些其他因素，例如程序格式等）。
 
 现在考虑当我们需要将数据存储在链表中时的情况（因为链表中节点的数量将等于存储的实际数据项，即没有额外的空间，如数组），但是我们不允许从中获取此内存 为每个节点一次又一次地堆。 对于某些人来说，这可能是假设的情况，但在嵌入式系统中并不是很常见的要求。 基本上，在多个嵌入式程序中，由于多种原因，不允许通过malloc（）等分配内存。 一个明显的原因是性能，即通过malloc（）分配内存在时间复杂度上是昂贵的，因为大多数情况下要求嵌入式程序具有确定性。 另一个原因可能是特定于模块的内存管理，即嵌入式系统中的每个模块都有可能管理自己的内存。 简而言之，如果我们需要执行自己的内存管理，而不是依靠系统提供的malloc（）和free（）的API，我们可以选择使用数组模拟的链表。 我希望您有所了解，为什么我们可能需要使用数组来模拟链接列表。 现在，让我们首先看看如何做到这一点。 假设链表（即基础数组）中节点的类型声明如下：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+struct sllNode 
+{ 
+  int dataInt; 
 
-*play_arrow*
+ /*Here, note that nextIndex stores the location of next node in 
+  linked list*/
+  int nextIndex;  
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+struct sllNode arrayLL[5];
 
-| `struct` `sllNode``{` `int` `dataInt;` `/*Here, note that nextIndex stores the location of next node in` `linked list*/` `int` `nextIndex; ``};`的`struct` `sllNode arrayLL[5];` |
-
-*chevron_right**filter_none*
+```
 
 如果我们初始化此链表（实际上是一个数组），则它在内存中的外观如下：
 

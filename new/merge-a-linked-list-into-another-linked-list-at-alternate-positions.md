@@ -9,17 +9,525 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to merge a linked list into another at  
+// alternate positions  
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// A nexted list node  
+class Node  
+{  
+    public: 
+    int data;  
+    Node *next;  
+};  
 
-*链接*
-*亮度_4*
-*代码*
+/* Function to insert a node at the beginning */
+void push(Node ** head_ref, int new_data)  
+{  
+    Node* new_node = new Node(); 
+    new_node->data = new_data;  
+    new_node->next = (*head_ref);  
+    (*head_ref) = new_node;  
+}  
 
-| `// C++ program to merge a linked list into another at ``// alternate positions ``#include <bits/stdc++.h>``using` `namespace` `std;`[HTG6`// A nexted list node ``class` `Node ``{ ` `public` `:` `int` `data; ` `Node *next; ``}; ``/* Function to insert a node at the beginning */``void` `push(Node ** head_ref,` `int` `new_data) ``{ ` `Node* new_node =` `new` `Node();` `new_node->data = new_data; ` `new_node->next = (*head_ref); ` `(*head_ref) = new_node; ``} ` HTG214]`/* Utility function to print a singly linked list */``void` `printList(Node *head) ``{ ` `Node *temp = head; ` `while` `(temp != NULL) ` `{ ` `cout<<temp->data<<` `" "` `; ` `temp = temp->next; ` `} ` `cout<<endl;``} ``// Main function that inserts nodes of linked list q into p at ``// alternate positions. Since head of first list never changes ``// and head of second list may change, we need single pointer ``// for first list and double pointer for second list. ``void` `merge(Node *p, Node **q) ``{ ` `Node *p_curr = p, *q_curr = *q; ` `Node *p_next, *q_next; ` `// While therre are avialable positions in p ` `while` `(p_curr != NULL && q_curr != NULL) ` `{ ` `// Save next pointers ` `p_next = p_curr->next; ` `q_next = q_curr->next; `​​ `// Make q_curr as next of p_curr ` `q_curr->next = p_next;` `// Change next pointer of q_curr ` `p_curr->next = q_curr;` `// Change next pointer of p_curr `[HTG2 77]  `// Update current pointers for next iteration ` `p_curr = p_next; ` `q_curr = q_next; ` `} ` `*q = q_curr;` `// Update head pointer of second list ``} ``// Driver code ``int` `main() ``{ ` `Node *p = NULL, *q = NULL; ` `push(&p, 3); ` `push(&p, 2); ` `push(&p, 1); ` `cout<<` `"First Linked List:\n"` `; ` `printList(p); ` `push(&q, 8); ` `push(&q, 7); ` `push(&q, 6); ` `push(&q, 5); ` `push(&q, 4); ` `cout<<` `"Second Linked List:\n"` `; ` `printList(q); ` `merge(p, &q); ` `cout<<` ] `"Modified First Linked List:\n"` `; ` `printList(p); ` `cout<<` `"Modified Second Linked List:\n"` `; ` `printList(q); ` `return` `0; ``} ``// This code is contributed by rathbhupendra` |
+/* Utility function to print a singly linked list */
+void printList(Node *head)  
+{  
+    Node *temp = head;  
+    while (temp != NULL)  
+    {  
+        cout<<temp->data<<" ";  
+        temp = temp->next;  
+    }  
+    cout<<endl; 
+}  
 
-*chevron_right**filter_none*
+// Main function that inserts nodes of linked list q into p at  
+// alternate positions. Since head of first list never changes  
+// and head of second list may change, we need single pointer  
+// for first list and double pointer for second list.  
+void merge(Node *p, Node **q)  
+{  
+    Node *p_curr = p, *q_curr = *q;  
+    Node *p_next, *q_next;  
+
+    // While therre are avialable positions in p  
+    while (p_curr != NULL && q_curr != NULL)  
+    {  
+        // Save next pointers  
+        p_next = p_curr->next;  
+        q_next = q_curr->next;  
+
+        // Make q_curr as next of p_curr  
+        q_curr->next = p_next; // Change next pointer of q_curr  
+        p_curr->next = q_curr; // Change next pointer of p_curr  
+
+        // Update current pointers for next iteration  
+        p_curr = p_next;  
+        q_curr = q_next;  
+    }  
+
+    *q = q_curr; // Update head pointer of second list  
+}  
+
+// Driver code  
+int main()  
+{  
+    Node *p = NULL, *q = NULL;  
+    push(&p, 3);  
+    push(&p, 2);  
+    push(&p, 1);  
+    cout<<"First Linked List:\n";  
+    printList(p);  
+
+    push(&q, 8);  
+    push(&q, 7);  
+    push(&q, 6);  
+    push(&q, 5);  
+    push(&q, 4);  
+    cout<<"Second Linked List:\n";  
+    printList(q);  
+
+    merge(p, &q);  
+
+    cout<<"Modified First Linked List:\n";  
+    printList(p);  
+
+    cout<<"Modified Second Linked List:\n";  
+    printList(q);  
+
+    return 0;  
+}  
+
+// This code is contributed by rathbhupendra 
+
+```
+
+## C
+
+```
+
+// C program to merge a linked list into another at 
+// alternate positions 
+#include <stdio.h> 
+#include <stdlib.h> 
+
+// A nexted list node 
+struct Node 
+{ 
+    int data; 
+    struct Node *next; 
+}; 
+
+/* Function to insert a node at the beginning */
+void push(struct Node ** head_ref, int new_data) 
+{ 
+    struct Node* new_node =  
+           (struct Node*) malloc(sizeof(struct Node)); 
+    new_node->data  = new_data; 
+    new_node->next = (*head_ref); 
+    (*head_ref)  = new_node; 
+} 
+
+/* Utility function to print a singly linked list */
+void printList(struct Node *head) 
+{ 
+    struct Node *temp = head; 
+    while (temp != NULL) 
+    { 
+        printf("%d ", temp->data); 
+        temp = temp->next; 
+    } 
+    printf("\n"); 
+} 
+
+// Main function that inserts nodes of linked list q into p at  
+// alternate positions. Since head of first list never changes  
+// and head of second list  may change, we need single pointer 
+// for first list and double pointer for second list. 
+void merge(struct Node *p, struct Node **q) 
+{ 
+     struct Node *p_curr = p, *q_curr = *q; 
+     struct Node *p_next, *q_next; 
+
+     // While therre are avialable positions in p 
+     while (p_curr != NULL && q_curr != NULL) 
+     { 
+         // Save next pointers 
+         p_next = p_curr->next; 
+         q_next = q_curr->next; 
+
+         // Make q_curr as next of p_curr 
+         q_curr->next = p_next;  // Change next pointer of q_curr 
+         p_curr->next = q_curr;  // Change next pointer of p_curr 
+
+         // Update current pointers for next iteration 
+         p_curr = p_next; 
+         q_curr = q_next; 
+    } 
+
+    *q = q_curr; // Update head pointer of second list 
+} 
+
+// Driver program to test above functions 
+int main() 
+{ 
+     struct Node *p = NULL, *q = NULL; 
+     push(&p, 3); 
+     push(&p, 2); 
+     push(&p, 1); 
+     printf("First Linked List:\n"); 
+     printList(p); 
+
+     push(&q, 8); 
+     push(&q, 7); 
+     push(&q, 6); 
+     push(&q, 5); 
+     push(&q, 4); 
+     printf("Second Linked List:\n"); 
+     printList(q); 
+
+     merge(p, &q); 
+
+     printf("Modified First Linked List:\n"); 
+     printList(p); 
+
+     printf("Modified Second Linked List:\n"); 
+     printList(q); 
+
+     getchar(); 
+     return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to merge a linked list into another at 
+// alternate positions 
+class LinkedList 
+{ 
+    Node head;  // head of list 
+
+    /* Linked list Node*/
+    class Node 
+    { 
+        int data; 
+        Node next; 
+        Node(int d) {data = d; next = null; } 
+    } 
+
+    /* Inserts a new Node at front of the list. */
+    void push(int new_data) 
+    { 
+        /* 1 & 2: Allocate the Node & 
+                  Put in the data*/
+        Node new_node = new Node(new_data); 
+
+        /* 3\. Make next of new Node as head */
+        new_node.next = head; 
+
+        /* 4\. Move the head to point to new Node */
+        head = new_node; 
+    } 
+
+    // Main function that inserts nodes of linked list q into p at 
+    // alternate positions. Since head of first list never changes 
+    // and head of second list/ may change, we need single pointer 
+    // for first list and double pointer for second list. 
+    void merge(LinkedList q) 
+    { 
+        Node p_curr = head, q_curr = q.head; 
+        Node p_next, q_next; 
+
+        // While there are available positions in p; 
+        while (p_curr != null && q_curr != null) { 
+
+            // Save next pointers 
+            p_next = p_curr.next; 
+            q_next = q_curr.next; 
+
+            // make q_curr as next of p_curr 
+            q_curr.next = p_next; // change next pointer of q_curr 
+            p_curr.next = q_curr; // change next pointer of p_curr 
+
+            // update current pointers for next iteration 
+            p_curr = p_next; 
+            q_curr = q_next; 
+        } 
+        q.head = q_curr; 
+    } 
+
+    /* Function to print linked list */
+    void printList() 
+    { 
+        Node temp = head; 
+        while (temp != null) 
+        { 
+           System.out.print(temp.data+" "); 
+           temp = temp.next; 
+        } 
+        System.out.println(); 
+    } 
+
+    /* Driver program to test above functions */
+    public static void main(String args[]) 
+    { 
+        LinkedList llist1 = new LinkedList(); 
+        LinkedList llist2 = new LinkedList(); 
+        llist1.push(3); 
+        llist1.push(2); 
+        llist1.push(1); 
+
+        System.out.println("First Linked List:"); 
+        llist1.printList(); 
+
+        llist2.push(8); 
+        llist2.push(7); 
+        llist2.push(6); 
+        llist2.push(5); 
+        llist2.push(4); 
+
+        System.out.println("Second Linked List:"); 
+
+        llist1.merge(llist2); 
+
+        System.out.println("Modified first linked list:"); 
+        llist1.printList(); 
+
+        System.out.println("Modified second linked list:"); 
+        llist2.printList(); 
+    } 
+} /* This code is contributed by Rajat Mishra */
+
+```
+
+## 蟒蛇
+
+```
+
+# Python program to merge a linked list into another at 
+# alternate positions 
+class LinkedList(object): 
+    def __init__(self): 
+    # head of list 
+        self.head = None
+
+    # Linked list Node 
+    class Node(object): 
+        def __init__(self, d): 
+            self.data = d 
+            self.next = None
+
+    # Inserts a new Node at front of the list. 
+    def push(self, new_data): 
+
+        # 1 & 2: Allocate the Node & 
+        # Put in the data 
+        new_node = self.Node(new_data) 
+
+        # 3\. Make next of new Node as head 
+        new_node.next = self.head 
+
+        # 4\. Move the head to point to new Node 
+        self.head = new_node 
+
+    # Main function that inserts nodes of linked list q into p at 
+    # alternate positions. Since head of first list never changes 
+    # and head of second list/ may change, we need single pointer 
+    # for first list and double pointer for second list. 
+    def merge(self, q): 
+        p_curr = self.head 
+        q_curr = q.head 
+
+        # While there are available positions in p; 
+        while p_curr != None and q_curr != None: 
+
+            # Save next pointers 
+            p_next = p_curr.next
+            q_next = q_curr.next
+
+            # make q_curr as next of p_curr 
+            q_curr.next = p_next # change next pointer of q_curr 
+            p_curr.next = q_curr # change next pointer of p_curr 
+
+            # update current pointers for next iteration 
+            p_curr = p_next 
+            q_curr = q_next 
+        q.head = q_curr 
+
+    # Function to print linked list 
+    def printList(self): 
+        temp = self.head 
+        while temp != None: 
+            print str(temp.data), 
+            temp = temp.next
+        print '' 
+
+# Driver program to test above functions 
+llist1 = LinkedList() 
+llist2 = LinkedList() 
+llist1.push(3) 
+llist1.push(2) 
+llist1.push(1) 
+
+print "First Linked List:"
+llist1.printList() 
+
+llist2.push(8) 
+llist2.push(7) 
+llist2.push(6) 
+llist2.push(5) 
+llist2.push(4) 
+
+print "Second Linked List:"
+
+llist2.printList() 
+llist1.merge(llist2) 
+
+print "Modified first linked list:"
+llist1.printList() 
+
+print "Modified second linked list:"
+llist2.printList() 
+
+# This code is contributed by BHAVYA JAIN 
+
+```
+
+## C＃
+
+```
+
+// C# program to merge a linked list into 
+// another at alternate positions 
+using System; 
+
+public class LinkedList  
+{  
+    Node head; // head of list  
+
+    /* Linked list Node*/
+    public class Node  
+    {  
+        public int data;  
+        public Node next;  
+        public Node(int d)  
+        { 
+             data = d;  
+             next = null; 
+        }  
+    }  
+
+    /* Inserts a new Node at front of the list. */
+    void push(int new_data)  
+    {  
+        /* 1 & 2: Allocate the Node &  
+                Put in the data*/
+        Node new_node = new Node(new_data);  
+
+        /* 3\. Make next of new Node as head */
+        new_node.next = head;  
+
+        /* 4\. Move the head to point to new Node */
+        head = new_node;  
+    }  
+
+    // Main function that inserts nodes  
+    // of linked list q into p at alternate  
+    // positions. Since head of first list 
+    // never changes and head of second  
+    // list/ may change, we need single  
+    // pointer for first list and double  
+    // pointer for second list.  
+    void merge(LinkedList q)  
+    {  
+        Node p_curr = head, q_curr = q.head;  
+        Node p_next, q_next;  
+
+        // While there are available positions in p;  
+        while (p_curr != null && q_curr != null) 
+        {  
+
+            // Save next pointers  
+            p_next = p_curr.next;  
+            q_next = q_curr.next;  
+
+            // make q_curr as next of p_curr  
+            q_curr.next = p_next; // change next pointer of q_curr  
+            p_curr.next = q_curr; // change next pointer of p_curr  
+
+            // update current pointers for next iteration  
+            p_curr = p_next;  
+            q_curr = q_next;  
+        }  
+        q.head = q_curr;  
+    }  
+
+    /* Function to print linked list */
+    void printList()  
+    {  
+        Node temp = head;  
+        while (temp != null)  
+        {  
+            Console.Write(temp.data+" ");  
+            temp = temp.next;  
+        }  
+        Console.WriteLine();  
+    }  
+
+    /* Driver code*/
+    public static void Main()  
+    {  
+        LinkedList llist1 = new LinkedList();  
+        LinkedList llist2 = new LinkedList();  
+        llist1.push(3);  
+        llist1.push(2);  
+        llist1.push(1);  
+
+        Console.WriteLine("First Linked List:");  
+        llist1.printList();  
+
+        llist2.push(8);  
+        llist2.push(7);  
+        llist2.push(6);  
+        llist2.push(5);  
+        llist2.push(4);  
+
+        Console.WriteLine("Second Linked List:");  
+
+        llist1.merge(llist2);  
+
+        Console.WriteLine("Modified first linked list:");  
+        llist1.printList();  
+
+        Console.WriteLine("Modified second linked list:");  
+        llist2.printList();  
+    }  
+}  
+
+/* This code contributed by PrinciRaj1992 */
+
+```
+
+**Output:**
+
+```
+First Linked List:
+1 2 3
+Second Linked List:
+4 5 6 7 8
+Modified First Linked List:
+1 4 2 5 3 6
+Modified Second Linked List:
+7 8 
+```
+
+本文由 **[Chandra Prakash](https://www.facebook.com/chandra.prakash.52643?fref=ts)** 贡献。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

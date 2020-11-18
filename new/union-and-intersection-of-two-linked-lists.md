@@ -30,17 +30,548 @@ Output:
 
 ## C / C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C/C++ program to find union 
+// and intersection of two unsorted 
+// linked lists 
+#include <stdbool.h> 
+#include <stdio.h> 
+#include <stdlib.h> 
+/* Link list node */
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-*play_arrow*
+/* A utility function to insert a  
+   node at the beginning ofa linked list*/
+void push(struct Node** head_ref, int new_data); 
 
-*链接*
-*亮度_4*
-*代码*
+/* A utility function to check if  
+   given data is present in a list */
+bool isPresent(struct Node* head, int data); 
 
-| `// C/C++ program to find union``// and intersection of two unsorted``// linked lists``#include <stdbool.h>``#include <stdio.h>``#include <stdlib.h>``/* Link list node */``struct` `Node {` `int` `data;` `struct` `Node* next;``};``/* A utility function to insert a ` `node at the beginning ofa linked list*/``void` `push(` `struct` `Node** head_ref,` `int` `new_data);``/* A utility function to check if ` `given data is present in a list */``bool` `isPresent(` `struct` `Node* head,` `int` `data);``/* Function to get union of two ` `linked lists head1 and head2 */``struct` `Node* getUnion(` `struct` `Node* head1,` `struct` `Node* head2)``{` `struct` `Node* result = NULL;` `struct` `Node *t1 = head1, *t2 = head2;` `// Insert all elements of` `// list1 to the result list` `while` `(t1 != NULL) {` `push(&result, t1->data);` `t1 = t1->next;` `}` `// Insert those elements of list2` `// which are not present in result list` `while` `(t2 != NULL) {` `if` `(!isPresent(result, t2->data))` `push(&result, t2->data);` `t2 = t2->next;` `}` `return` `result;``}`[`/* Function to get intersection of ` `two linked lists head1 and head2 */``struct` `Node* getIntersection(` `struct` `Node* head1,` `struct` `Node* head2)``{` `struct` `Node* result = NULL;` `struct` `Node* t1 = head1;` `// Traverse list1 and search each element of it in` `// list2\. If the element is present in list 2, then` `// insert the element to result` `while` `(t1 != NULL) {` `if` `(isPresent(head2, t1->data))` `push(&result, t1->data);` `t1 = t1->next;` `}` `return` `result;``}``/* A utility function to insert a ` `node at the beginning of a linked list*/``void` `push(` `struct` `Node** head_ref,` `int` `new_data)``{` `/* allocate node */` `struct` `Node* new_node` `= (` [HTG15 1] `Node*)` `malloc` `(` `sizeof` `(` `struct` `Node));` `/* put in the data */` `new_node->data = new_data;` `/* link the old list off the new node */` `new_node->next = (*head_ref);` `/* move the head to point to the new node */` `(*head_ref) = new_node;``}``/* A utility function to print a linked list*/``void` `printList(` `struct` `Node* node)``{` `while` `(node != NULL) {` `printf` `(` `"%d "` `, node->data);` `node = node->next;` `}`] `}``/* A utility function that returns true if data is ` `present in linked list else return false */`[H TG200] `isPresent(` `struct` `Node* head,` `int` `data)``{` `struct` `Node* t = head;` `while` `(t != NULL) {` `if` `(t->data == data)` `return` `1;` `t = t->next;` `}` `return` `0;``}``/* Driver program to test above function*/``int` `main()``{` `/* Start with the empty list */` `struct` `Node* head1 = NULL;` `struct` `Node* head2 = NULL;` `struct` `Node* intersecn = NULL;` `struct` `Node* unin = NULL;` `/*create a linked lits 10->15->5->20 */` `push(&head1, 20);` [HTG2 52] `push(&head1, 15);` `push(&head1, 10);` `/*create a linked lits 8->4->2->10 */` `push(&head2, 10);` `push(&head2, 2);` `push(&head2, 4);` `push(&head2, 8);`]  `intersecn = getIntersection(head1, head2);` ​​ `unin = getUnion(head1, head2);` `printf` `(` `"\n First list is \n"` `);` `printList(head1);` `printf` `(` `"\n Second list is \n"` `);` `printList(head2);` `printf` `(` `"\n Intersection list is \n"` `);` ] `printList(intersecn);` `printf` `(` `"\n Union list is \n"` `);`[HTG30 3] `printList(unin);` `return` `0;``}` |
+/* Function to get union of two  
+   linked lists head1 and head2 */
+struct Node* getUnion( 
+    struct Node* head1, 
+    struct Node* head2) 
+{ 
+    struct Node* result = NULL; 
+    struct Node *t1 = head1, *t2 = head2; 
 
-*chevron_right**filter_none*
+    // Insert all elements of 
+    // list1 to the result list 
+    while (t1 != NULL) { 
+        push(&result, t1->data); 
+        t1 = t1->next; 
+    } 
+
+    // Insert those elements of list2 
+    // which are not present in result list 
+    while (t2 != NULL) { 
+        if (!isPresent(result, t2->data)) 
+            push(&result, t2->data); 
+        t2 = t2->next; 
+    } 
+
+    return result; 
+} 
+
+/* Function to get intersection of  
+  two linked lists head1 and head2 */
+struct Node* getIntersection(struct Node* head1, 
+                             struct Node* head2) 
+{ 
+    struct Node* result = NULL; 
+    struct Node* t1 = head1; 
+
+    // Traverse list1 and search each element of it in 
+    // list2\. If the element is present in list 2, then 
+    // insert the element to result 
+    while (t1 != NULL) { 
+        if (isPresent(head2, t1->data)) 
+            push(&result, t1->data); 
+        t1 = t1->next; 
+    } 
+
+    return result; 
+} 
+
+/* A utility function to insert a  
+   node at the beginning of a linked list*/
+void push(struct Node** head_ref, int new_data) 
+{ 
+    /* allocate node */
+    struct Node* new_node 
+        = (struct Node*)malloc( 
+            sizeof(struct Node)); 
+
+    /* put in the data */
+    new_node->data = new_data; 
+
+    /* link the old list off the new node */
+    new_node->next = (*head_ref); 
+
+    /* move the head to point to the new node */
+    (*head_ref) = new_node; 
+} 
+
+/* A utility function to print a linked list*/
+void printList(struct Node* node) 
+{ 
+    while (node != NULL) { 
+        printf("%d ", node->data); 
+        node = node->next; 
+    } 
+} 
+
+/* A utility function that returns true if data is  
+   present in linked list else return false */
+bool isPresent(struct Node* head, int data) 
+{ 
+    struct Node* t = head; 
+    while (t != NULL) { 
+        if (t->data == data) 
+            return 1; 
+        t = t->next; 
+    } 
+    return 0; 
+} 
+
+/* Driver program to test above function*/
+int main() 
+{ 
+    /* Start with the empty list */
+    struct Node* head1 = NULL; 
+    struct Node* head2 = NULL; 
+    struct Node* intersecn = NULL; 
+    struct Node* unin = NULL; 
+
+    /*create a linked lits 10->15->5->20 */
+    push(&head1, 20); 
+    push(&head1, 4); 
+    push(&head1, 15); 
+    push(&head1, 10); 
+
+    /*create a linked lits 8->4->2->10 */
+    push(&head2, 10); 
+    push(&head2, 2); 
+    push(&head2, 4); 
+    push(&head2, 8); 
+
+    intersecn = getIntersection(head1, head2); 
+    unin = getUnion(head1, head2); 
+
+    printf("\n First list is \n"); 
+    printList(head1); 
+
+    printf("\n Second list is \n"); 
+    printList(head2); 
+
+    printf("\n Intersection list is \n"); 
+    printList(intersecn); 
+
+    printf("\n Union list is \n"); 
+    printList(unin); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to find union and 
+// intersection of two unsorted 
+// linked lists 
+class LinkedList { 
+    Node head; // head of list 
+
+    /* Linked list Node*/
+    class Node { 
+        int data; 
+        Node next; 
+        Node(int d) 
+        { 
+            data = d; 
+            next = null; 
+        } 
+    } 
+
+    /* Function to get Union of 2 Linked Lists */
+    void getUnion(Node head1, Node head2) 
+    { 
+        Node t1 = head1, t2 = head2; 
+
+        // insert all elements of list1 in the result 
+        while (t1 != null) { 
+            push(t1.data); 
+            t1 = t1.next; 
+        } 
+
+        // insert those elements of list2 
+        // that are not present 
+        while (t2 != null) { 
+            if (!isPresent(head, t2.data)) 
+                push(t2.data); 
+            t2 = t2.next; 
+        } 
+    } 
+
+    void getIntersection(Node head1, Node head2) 
+    { 
+        Node result = null; 
+        Node t1 = head1; 
+
+        // Traverse list1 and search each 
+        // element of it in list2\. 
+        // If the element is present in 
+        // list 2, then insert the 
+        // element to result 
+        while (t1 != null) { 
+            if (isPresent(head2, t1.data)) 
+                push(t1.data); 
+            t1 = t1.next; 
+        } 
+    } 
+
+    /* Utility function to print list */
+    void printList() 
+    { 
+        Node temp = head; 
+        while (temp != null) { 
+            System.out.print(temp.data + " "); 
+            temp = temp.next; 
+        } 
+        System.out.println(); 
+    } 
+
+    /*  Inserts a node at start of linked list */
+    void push(int new_data) 
+    { 
+        /* 1 & 2: Allocate the Node & 
+                  Put in the data*/
+        Node new_node = new Node(new_data); 
+
+        /* 3\. Make next of new Node as head */
+        new_node.next = head; 
+
+        /* 4\. Move the head to point to new Node */
+        head = new_node; 
+    } 
+
+    /* A utilty function that returns true  
+       if data is present in linked list  
+       else return false */
+    boolean isPresent(Node head, int data) 
+    { 
+        Node t = head; 
+        while (t != null) { 
+            if (t.data == data) 
+                return true; 
+            t = t.next; 
+        } 
+        return false; 
+    } 
+
+    /* Driver program to test above functions */
+    public static void main(String args[]) 
+    { 
+        LinkedList llist1 = new LinkedList(); 
+        LinkedList llist2 = new LinkedList(); 
+        LinkedList unin = new LinkedList(); 
+        LinkedList intersecn = new LinkedList(); 
+
+        /*create a linked lits 10->15->5->20 */
+        llist1.push(20); 
+        llist1.push(4); 
+        llist1.push(15); 
+        llist1.push(10); 
+
+        /*create a linked lits 8->4->2->10 */
+        llist2.push(10); 
+        llist2.push(2); 
+        llist2.push(4); 
+        llist2.push(8); 
+
+        intersecn.getIntersection(llist1.head, llist2.head); 
+        unin.getUnion(llist1.head, llist2.head); 
+
+        System.out.println("First List is"); 
+        llist1.printList(); 
+
+        System.out.println("Second List is"); 
+        llist2.printList(); 
+
+        System.out.println("Intersection List is"); 
+        intersecn.printList(); 
+
+        System.out.println("Union List is"); 
+        unin.printList(); 
+    } 
+} /* This code is contributed by Rajat Mishra */
+
+```
+
+**Output:**
+
+```
+ First list is
+10 15 4 20
+ Second list is
+8 4 2 10
+ Intersection list is
+4 10
+ Union list is
+2 8 20 4 15 10
+
+```
+
+**复杂度分析：**
+
+*   **时间复杂度：** O（m * n）。
+    这里的“ m”和“ n”分别是第一和第二列表中存在的元素数。
+    **对于联合：**对于列表2中的每个元素，我们检查该元素是否已存在于使用列表1生成的结果列表中。
+    **对于交集：**对于列表1中的每个元素，我们检查该元素是否也存在于列表2中。
+*   **辅助空间：** O（1）。
+    不使用任何数据结构来存储值。
+
+**方法2（使用合并排序）**
+在此方法中，“联合”和“相交”算法非常相似。 首先，我们对给定的列表进行排序，然后遍历排序后的列表以获得并集和交集。
+以下是获取联合和相交列表的步骤。
+
+1.  使用合并排序对第一个链表进行排序。 此步骤需要O（mLogm）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/archives/7740)
+2.  使用合并排序对第二个链接列表进行排序。 此步骤需要O（nLogn）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/archives/7740)
+3.  线性扫描两个排序列表以获取并集和交集。 此步骤需要O（m + n）时间。 可以使用与此处中讨论的排序数组算法相同的算法来实现此步骤。
+
+此方法的时间复杂度为O（mLogm + nLogn），优于方法1的时间复杂度。
+
+**方法3（使用哈希）**
+*联合（列表1，列表2）*
+将结果列表初始化为NULL并创建一个空哈希表。 遍历这两个元素都一个一个地列出，对于每个要访问的元素，在哈希表中查找该元素。 如果不存在该元素，则将该元素插入结果列表。 如果存在该元素，则将其忽略。
+
+*交集（列表1，列表2）*
+将结果列表初始化为NULL并创建一个空的哈希表。 遍历列表1。 对于list1中要访问的每个元素，请将其插入哈希表。 遍历list2，对于list2中要访问的每个元素，在哈希表中查找该元素。 如果存在该元素，则将该元素插入结果列表。 如果该元素不存在，则将其忽略。
+
+以上两种方法均假定没有重复项。
+
+```
+
+// Java code for Union and Intersection of two 
+// Linked Lists 
+import java.util.HashMap; 
+import java.util.HashSet; 
+
+class LinkedList { 
+    Node head; // head of list 
+
+    /* Linked list Node*/
+    class Node { 
+        int data; 
+        Node next; 
+        Node(int d) 
+        { 
+            data = d; 
+            next = null; 
+        } 
+    } 
+
+    /* Utility function to print list */
+    void printList() 
+    { 
+        Node temp = head; 
+        while (temp != null) { 
+            System.out.print(temp.data + " "); 
+            temp = temp.next; 
+        } 
+        System.out.println(); 
+    } 
+
+    /* Inserts a node at start of linked list */
+    void push(int new_data) 
+    { 
+        /* 1 & 2: Allocate the Node & 
+        Put in the data*/
+        Node new_node = new Node(new_data); 
+
+        /* 3\. Make next of new Node as head */
+        new_node.next = head; 
+
+        /* 4\. Move the head to point to new Node */
+        head = new_node; 
+    } 
+
+    public void append(int new_data) 
+    { 
+        if (this.head == null) { 
+            Node n = new Node(new_data); 
+            this.head = n; 
+            return; 
+        } 
+        Node n1 = this.head; 
+        Node n2 = new Node(new_data); 
+        while (n1.next != null) { 
+            n1 = n1.next; 
+        } 
+
+        n1.next = n2; 
+        n2.next = null; 
+    } 
+
+    /* A utilty function that returns true if data is 
+    present in linked list else return false */
+    boolean isPresent(Node head, int data) 
+    { 
+        Node t = head; 
+        while (t != null) { 
+            if (t.data == data) 
+                return true; 
+            t = t.next; 
+        } 
+        return false; 
+    } 
+
+    LinkedList getIntersection(Node head1, Node head2) 
+    { 
+        HashSet<Integer> hset = new HashSet<>(); 
+        Node n1 = head1; 
+        Node n2 = head2; 
+        LinkedList result = new LinkedList(); 
+
+        // loop stores all the elements of list1 in hset 
+        while (n1 != null) { 
+            if (hset.contains(n1.data)) { 
+                hset.add(n1.data); 
+            } 
+            else { 
+                hset.add(n1.data); 
+            } 
+            n1 = n1.next; 
+        } 
+
+        // For every element of list2 present in hset 
+        // loop inserts the element into the result 
+        while (n2 != null) { 
+            if (hset.contains(n2.data)) { 
+                result.push(n2.data); 
+            } 
+            n2 = n2.next; 
+        } 
+        return result; 
+    } 
+
+    LinkedList getUnion(Node head1, Node head2) 
+    { 
+        // HashMap that will store the 
+        // elements of the lists with their counts 
+        HashMap<Integer, Integer> hmap = new HashMap<>(); 
+        Node n1 = head1; 
+        Node n2 = head2; 
+        LinkedList result = new LinkedList(); 
+
+        // loop inserts the elements and the count of 
+        // that element of list1 into the hmap 
+        while (n1 != null) { 
+            if (hmap.containsKey(n1.data)) { 
+                int val = hmap.get(n1.data); 
+                hmap.put(n1.data, val + 1); 
+            } 
+            else { 
+                hmap.put(n1.data, 1); 
+            } 
+            n1 = n1.next; 
+        } 
+
+        // loop further adds the elements of list2 with 
+        // their counts into the hmap 
+        while (n2 != null) { 
+            if (hmap.containsKey(n2.data)) { 
+                int val = hmap.get(n2.data); 
+                hmap.put(n2.data, val + 1); 
+            } 
+            else { 
+                hmap.put(n2.data, 1); 
+            } 
+            n2 = n2.next; 
+        } 
+
+        // Eventually add all the elements 
+        // into the result that are present in the hmap 
+        for (int a : hmap.keySet()) { 
+            result.append(a); 
+        } 
+        return result; 
+    } 
+
+    /* Driver program to test above functions */
+    public static void main(String args[]) 
+    { 
+        LinkedList llist1 = new LinkedList(); 
+        LinkedList llist2 = new LinkedList(); 
+        LinkedList union = new LinkedList(); 
+        LinkedList intersection = new LinkedList(); 
+
+        /*create a linked list 10->15->4->20 */
+        llist1.push(20); 
+        llist1.push(4); 
+        llist1.push(15); 
+        llist1.push(10); 
+
+        /*create a linked list 8->4->2->10 */
+        llist2.push(10); 
+        llist2.push(2); 
+        llist2.push(4); 
+        llist2.push(8); 
+
+        intersection 
+            = intersection.getIntersection(llist1.head, 
+                                           llist2.head); 
+        union = union.getUnion(llist1.head, llist2.head); 
+
+        System.out.println("First List is"); 
+        llist1.printList(); 
+
+        System.out.println("Second List is"); 
+        llist2.printList(); 
+
+        System.out.println("Intersection List is"); 
+        intersection.printList(); 
+
+        System.out.println("Union List is"); 
+        union.printList(); 
+    } 
+} 
+// This code is contributed by Kamal Rawal 
+
+```
+
+**输出：**
+
+```
+First List is
+10 15 4 20 
+Second List is
+8 4 2 10 
+Intersection List is
+10 4 
+Union List is
+2 4 20 8 10 15 
+
+```
+
+**复杂度分析：**
+
+*   **时间复杂度：** O（m + n）。
+    这里的“ m”和“ n”分别是第一和第二列表中存在的元素数。
+    **对于联合：**遍历两个列表，将元素存储在哈希图中并更新相应的计数。
+    **对于交集：**首先遍历list-1，将其元素存储在Hash-map中，然后对于list-2中的每个元素，检查其是否已存在于地图中。 这需要O（1）时间。
+*   **辅助空间：** O（m + n）。
+    使用哈希图数据结构存储值。
+
+如果发现任何不正确的内容，或者您​​想分享有关上述主题的更多信息，请发表评论。
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

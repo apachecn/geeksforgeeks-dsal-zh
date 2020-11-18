@@ -31,17 +31,502 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation of the approach 
+#include <iostream> 
+using namespace std; 
 
-*play_arrow*
+// Node structure 
+struct Node { 
 
-*链接*
-*亮度_4*
-*代码*
+    int value; 
+    struct Node* next; 
+}; 
 
-| `// C++ implementation of the approach``#include <iostream>``using` `namespace` `std;``// Node structure``struct` `Node {` `int` `value;` `struct` `Node* next;``};``// Class to represent a node``// of the linked list``class` `LinkedList {``private` `:` `struct` `Node *head, *mid;` `int` `count;``public` `:` `LinkedList();`​​  `void` `insertAtMiddle(` `int` `);` `void` `show();``};``LinkedList::LinkedList()``{` `head = NULL;` `mid = NULL;` `count = 0;``}``// Function to insert a node in``// the middle of the linked list``void` `LinkedList::insertAtMiddle(` `int` `n)``{` `struct` `Node* temp =` `new` `struct` `Node();` `struct` `Node* temp1;` `temp->next = NULL;` `temp->value = n;` `// If the number of elements` `// already present are less than 2` `if` `(count < 2) {` `if` `(head == NULL) {` `head = temp;` `}` `else` `{` `temp1 = head;`[ `temp1->next = temp;` `}` `count++;` `// mid points to first element` `mid = head;` `}` `// If the number of elements already present` `// are greater than 2` `else` `{` `temp->next = mid->next;` `mid->next = temp;` `count++;` `// If number of elements after insertion` `// are odd` `if` `(count % 2 != 0) {` `// mid points to the newly` `// inserted node` `mid = mid->next;` `}` `}``}``// Function to print the nodes``// of the linked list``void` `LinkedList::show()``{` `struct` `Node* temp;` `temp = head;` `// Initializing temp to head` `// Iterating and printing till` `// The end of linked list` `// That is, till temp is null` `while` `(temp != NULL) {` `cout << temp->value <<` `" -> "` `;` `temp = temp->next;` `}` `cout <<` `"NULL"` `;` `cout << endl;``}``// Driver code``int` `main()``{` `// Elements to be inserted one after another` `int` `arr[] = { 1, 2, 3, 4, 5 };` `int` `n =` `sizeof` `(arr) /` `sizeof` `(arr[0]);` `LinkedList L1;` `// Insert the elements` ] `for` `(` `int` `i = 0; i < n; i++)` `L1.insertAtMiddle(arr[i]);` `// Print the nodes of the linked list` `L1.show();` `return` `0;``}` |
+// Class to represent a node 
+// of the linked list 
+class LinkedList { 
 
-*chevron_right**filter_none*
+private: 
+    struct Node *head, *mid; 
+    int count; 
+
+public: 
+    LinkedList(); 
+    void insertAtMiddle(int); 
+    void show(); 
+}; 
+
+LinkedList::LinkedList() 
+{ 
+    head = NULL; 
+    mid = NULL; 
+    count = 0; 
+} 
+
+// Function to insert a node in 
+// the middle of the linked list 
+void LinkedList::insertAtMiddle(int n) 
+{ 
+
+    struct Node* temp = new struct Node(); 
+    struct Node* temp1; 
+
+    temp->next = NULL; 
+    temp->value = n; 
+
+    // If the number of elements 
+    // already present are less than 2 
+    if (count < 2) { 
+        if (head == NULL) { 
+            head = temp; 
+        } 
+        else { 
+            temp1 = head; 
+            temp1->next = temp; 
+        } 
+        count++; 
+
+        // mid points to first element 
+        mid = head; 
+    } 
+
+    // If the number of elements already present 
+    // are greater than 2 
+    else { 
+
+        temp->next = mid->next; 
+        mid->next = temp; 
+        count++; 
+
+        // If number of elements after insertion 
+        // are odd 
+        if (count % 2 != 0) { 
+
+            // mid points to the newly 
+            // inserted node 
+            mid = mid->next; 
+        } 
+    } 
+} 
+
+// Function to print the nodes 
+// of the linked list 
+void LinkedList::show() 
+{ 
+
+    struct Node* temp; 
+
+    temp = head; 
+
+    // Initializing temp to head 
+    // Iterating and printing till 
+    // The end of linked list 
+    // That is, till temp is null 
+    while (temp != NULL) { 
+
+        cout << temp->value << " -> "; 
+        temp = temp->next; 
+    } 
+    cout << "NULL"; 
+    cout << endl; 
+} 
+
+// Driver code 
+int main() 
+{ 
+    // Elements to be inserted one after another 
+    int arr[] = { 1, 2, 3, 4, 5 }; 
+    int n = sizeof(arr) / sizeof(arr[0]); 
+
+    LinkedList L1; 
+
+    // Insert the elements 
+    for (int i = 0; i < n; i++) 
+        L1.insertAtMiddle(arr[i]); 
+
+    // Print the nodes of the linked list 
+    L1.show(); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation of the approach  
+class GFG 
+{ 
+
+// Node ure  
+static class Node  
+{  
+
+    int value;  
+    Node next;  
+};  
+
+// Class to represent a node  
+// of the linked list  
+static class LinkedList  
+{  
+    Node head, mid;  
+    int count;  
+
+LinkedList()  
+{  
+    head = null;  
+    mid = null;  
+    count = 0;  
+}  
+
+// Function to insert a node in  
+// the middle of the linked list  
+void insertAtMiddle(int n)  
+{  
+
+    Node temp = new Node();  
+    Node temp1;  
+
+    temp.next = null;  
+    temp.value = n;  
+
+    // If the number of elements  
+    // already present are less than 2  
+    if (count < 2)  
+    {  
+        if (head == null)  
+        {  
+            head = temp;  
+        }  
+        else 
+        {  
+            temp1 = head;  
+            temp1.next = temp;  
+        }  
+        count++;  
+
+        // mid points to first element  
+        mid = head;  
+    }  
+
+    // If the number of elements already present  
+    // are greater than 2  
+    else 
+    {  
+
+        temp.next = mid.next;  
+        mid.next = temp;  
+        count++;  
+
+        // If number of elements after insertion  
+        // are odd  
+        if (count % 2 != 0)  
+        {  
+
+            // mid points to the newly  
+            // inserted node  
+            mid = mid.next;  
+        }  
+    }  
+}  
+
+// Function to print the nodes  
+// of the linked list  
+void show()  
+{  
+
+    Node temp;  
+
+    temp = head;  
+
+    // Initializing temp to head  
+    // Iterating and printing till  
+    // The end of linked list  
+    // That is, till temp is null  
+    while (temp != null)  
+    {  
+
+        System.out.print( temp.value + " -> ");  
+        temp = temp.next;  
+    }  
+    System.out.print( "null");  
+    System.out.println(); 
+}  
+
+} 
+
+// Driver code  
+public static void main(String args[]) 
+{  
+    // Elements to be inserted one after another  
+    int arr[] = { 1, 2, 3, 4, 5 };  
+    int n = arr.length;  
+
+    LinkedList L1=new LinkedList();  
+
+    // Insert the elements  
+    for (int i = 0; i < n; i++)  
+        L1.insertAtMiddle(arr[i]);  
+
+    // Print the nodes of the linked list  
+    L1.show();  
+} 
+} 
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+## Python3
+
+```
+
+# Python3 implementation of the approach  
+
+# Node ure  
+class Node:  
+    def __init__(self): 
+        self.value = 0
+        self.next = None
+
+# Class to represent a node  
+# of the linked list  
+class LinkedList:  
+
+    def __init__(self) : 
+        self.head = None
+        self.mid = None
+        self.count = 0
+
+    # Function to insert a node in  
+    # the middle of the linked list  
+    def insertAtMiddle(self , n):  
+
+        temp = Node()  
+        temp1 = None
+
+        temp.next = None
+        temp.value = n  
+
+        # If the number of elements  
+        # already present are less than 2  
+        if (self.count < 2):  
+
+            if (self.head == None) : 
+
+                self.head = temp  
+
+            else: 
+
+                temp1 = self.head  
+                temp1.next = temp  
+
+            self.count = self.count + 1
+
+            # mid points to first element  
+            self.mid = self.head  
+
+        # If the number of elements already present  
+        # are greater than 2  
+        else: 
+
+            temp.next = self.mid.next
+            self.mid.next = temp  
+            self.count = self.count + 1
+
+            # If number of elements after insertion  
+            # are odd  
+            if (self.count % 2 != 0):  
+
+                # mid points to the newly  
+                # inserted node  
+                self.mid = self.mid.next
+
+    # Function to print the nodes  
+    # of the linked list  
+    def show(self):  
+        temp = None
+
+        temp = self.head  
+
+        # Initializing temp to self.head  
+        # Iterating and printing till  
+        # The end of linked list  
+        # That is, till temp is None  
+        while (temp != None) : 
+
+            print( temp.value, end = " -> ")  
+            temp = temp.next
+
+        print( "None")  
+
+# Driver code  
+
+# Elements to be inserted one after another  
+arr = [ 1, 2, 3, 4, 5]  
+n = len(arr)  
+
+L1 = LinkedList()  
+
+# Insert the elements  
+for i in range(n):  
+    L1.insertAtMiddle(arr[i])  
+
+# Print the nodes of the linked list  
+L1.show()  
+
+# This code is contributed by Arnab Kundu 
+
+```
+
+## C＃
+
+```
+
+// C# implementation of the approach  
+using System; 
+
+class GFG 
+{ 
+
+// Node ure  
+public class Node  
+{  
+
+    public int value;  
+    public Node next;  
+};  
+
+// Class to represent a node  
+// of the linked list  
+public class LinkedList  
+{  
+    public Node head, mid;  
+    public int count;  
+
+public LinkedList()  
+{  
+    head = null;  
+    mid = null;  
+    count = 0;  
+}  
+
+// Function to insert a node in  
+// the middle of the linked list  
+public void insertAtMiddle(int n)  
+{  
+
+    Node temp = new Node();  
+    Node temp1;  
+
+    temp.next = null;  
+    temp.value = n;  
+
+    // If the number of elements  
+    // already present are less than 2  
+    if (count < 2)  
+    {  
+        if (head == null)  
+        {  
+            head = temp;  
+        }  
+        else
+        {  
+            temp1 = head;  
+            temp1.next = temp;  
+        }  
+        count++;  
+
+        // mid points to first element  
+        mid = head;  
+    }  
+
+    // If the number of elements already present  
+    // are greater than 2  
+    else
+    {  
+
+        temp.next = mid.next;  
+        mid.next = temp;  
+        count++;  
+
+        // If number of elements after insertion  
+        // are odd  
+        if (count % 2 != 0)  
+        {  
+
+            // mid points to the newly  
+            // inserted node  
+            mid = mid.next;  
+        }  
+    }  
+}  
+
+// Function to print the nodes  
+// of the linked list  
+public void show()  
+{  
+
+    Node temp;  
+
+    temp = head;  
+
+    // Initializing temp to head  
+    // Iterating and printing till  
+    // The end of linked list  
+    // That is, till temp is null  
+    while (temp != null)  
+    {  
+
+        Console.Write( temp.value + " -> ");  
+        temp = temp.next;  
+    }  
+    Console.Write( "null");  
+    Console.WriteLine(); 
+}  
+
+} 
+
+// Driver code  
+public static void Main(String []args) 
+{  
+    // Elements to be inserted one after another  
+    int []arr = { 1, 2, 3, 4, 5 };  
+    int n = arr.Length;  
+
+    LinkedList L1=new LinkedList();  
+
+    // Insert the elements  
+    for (int i = 0; i < n; i++)  
+        L1.insertAtMiddle(arr[i]);  
+
+    // Print the nodes of the linked list  
+    L1.show();  
+} 
+} 
+
+// This code contributed by Rajput-Ji 
+
+```
+
+**Output:**
+
+```
+1 -> 3 -> 5 -> 4 -> 2 -> NULL
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

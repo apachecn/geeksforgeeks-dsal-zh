@@ -26,17 +26,348 @@ Output: No
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to check if linked lists 
+// are permutations of each other 
+#include <bits/stdc++.h> 
 
-*play_arrow*
+using namespace std; 
 
-*链接*
-*亮度_4*
-*代码*
+// A linked list node 
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-| `// C++ program to check if linked lists``// are permutations of each other``#include <bits/stdc++.h>``using` `namespace` `std;``// A linked list node``struct` `Node {` `int` `data;` `struct` `Node* next;``};``/*Function to check if two linked lists``* are permutations of each other``* first : reference to head of first linked list``* second : reference to head of second linked list``*/``bool` `isPermutation(` `struct` `Node* first,` `struct` `Node* second)``{` HTG37] `struct` `Node* temp1 = first;` `// Traversing through linked list` `// and calculating sum and multiply`[H TG245]  `while` `(temp1 != NULL) {` `sum1 += temp1->data;` `mul1 *= temp1->data;` `temp1 = temp1->next;` `}` `struct` `Node* temp2 = second;` ] `// Traversing through linked list` `// and calculating sum and multiply` `while` `(temp2 != NULL) {` `sum2 += temp2->data;` `mul2 *= temp2->data;`​​ `temp2 = temp2->next;` `}` `return` `((sum1 == sum2) && (mul1 == mul2));``}``// Function to add a node at the``// beginning of Linked List``void` `push(` `struct` `Node** head_ref,` `int` `new_data)``{` `/* allocate node */` `struct` `Node* new_node = (` [ `struct` `Node*)` `malloc` `(` `sizeof` `(` `struct` `Node));` `/* put in the data */` `new_node->data = new_data;` ] `/* link the old list off the new node */` `new_node->next = (*head_ref);` `/* move the head to point to the new node */` `(*head_ref) = new_node;``}``// Driver program to test above function``int` `main()``{` `struct` `Node* first = NULL;` `/* First constructed linked list is: ` `12 -> 35 -> 1 -> 10 -> 34 -> 1 */` `push(&first, 1);` `push(&first, 34);` `push(&first, 10);` `push(&first, 1);` `push(&first, 35);` `push(&first, 12);`[HTG34 3]  [ `struct` `Node* second = NULL;` `/* Second constructed linked list is: ` `35 -> 1 -> 12 -> 1 -> 10 -> 34 */` `push(&second, 35);` `push(&second, 1);` `push(&second, 12);` `push(&second, 1);` `push(&second, 10);` `push(&second, 34);` [ `if` `(isPermutation(first, second)) {` `cout <<` `"Yes"` `<< endl;` `}` `else` `{` `cout <<` `"No"` `<< endl;` `}` `return` `0;``}` |
+/*Function to check if two linked lists 
+* are permutations of each other 
+* first : reference to head of first linked list 
+* second : reference to head of second linked list 
+*/
+bool isPermutation(struct Node* first, struct Node* second) 
+{ 
 
-*chevron_right**filter_none*
+    // Variables to keep track of sum and multiplication 
+    int sum1 = 0, sum2 = 0, mul1 = 1, mul2 = 1; 
+
+    struct Node* temp1 = first; 
+
+    // Traversing through linked list 
+    // and calculating sum and multiply 
+    while (temp1 != NULL) { 
+        sum1 += temp1->data; 
+        mul1 *= temp1->data; 
+        temp1 = temp1->next; 
+    } 
+
+    struct Node* temp2 = second; 
+
+    // Traversing through linked list 
+    // and calculating sum and multiply 
+    while (temp2 != NULL) { 
+        sum2 += temp2->data; 
+        mul2 *= temp2->data; 
+        temp2 = temp2->next; 
+    } 
+
+    return ((sum1 == sum2) && (mul1 == mul2)); 
+} 
+
+// Function to add a node at the 
+// beginning of Linked List 
+void push(struct Node** head_ref, int new_data) 
+{ 
+    /* allocate node */
+    struct Node* new_node = (struct Node*)malloc(sizeof(struct Node)); 
+
+    /* put in the data */
+    new_node->data = new_data; 
+
+    /* link the old list off the new node */
+    new_node->next = (*head_ref); 
+
+    /* move the head to point to the new node */
+    (*head_ref) = new_node; 
+} 
+
+// Driver program to test above function 
+int main() 
+{ 
+    struct Node* first = NULL; 
+
+    /* First constructed linked list is:  
+    12 -> 35 -> 1 -> 10 -> 34 -> 1 */
+    push(&first, 1); 
+    push(&first, 34); 
+    push(&first, 10); 
+    push(&first, 1); 
+    push(&first, 35); 
+    push(&first, 12); 
+
+    struct Node* second = NULL; 
+    /* Second constructed linked list is:  
+    35 -> 1 -> 12 -> 1 -> 10 -> 34 */
+    push(&second, 35); 
+    push(&second, 1); 
+    push(&second, 12); 
+    push(&second, 1); 
+    push(&second, 10); 
+    push(&second, 34); 
+
+    if (isPermutation(first, second)) { 
+        cout << "Yes" << endl; 
+    } 
+    else { 
+        cout << "No" << endl; 
+    } 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to check if linked lists 
+// are permutations of each other 
+import java.util.*; 
+
+class GFG  
+{ 
+static class Node  
+{ 
+    int data; 
+    Node next; 
+}; 
+
+/*Function to check if two linked lists 
+* are permutations of each other 
+* first : reference to head of first linked list 
+* second : reference to head of second linked list 
+*/
+static boolean isPermutation(Node first,  
+                             Node second) 
+{ 
+
+    // Variables to keep track of 
+    // sum and multiplication 
+    int sum1 = 0, sum2 = 0,  
+        mul1 = 1, mul2 = 1; 
+
+    Node temp1 = first; 
+
+    // Traversing through linked list 
+    // and calculating sum and multiply 
+    while (temp1 != null)  
+    { 
+        sum1 += temp1.data; 
+        mul1 *= temp1.data; 
+        temp1 = temp1.next; 
+    } 
+
+    Node temp2 = second; 
+
+    // Traversing through linked list 
+    // and calculating sum and multiply 
+    while (temp2 != null) 
+    { 
+        sum2 += temp2.data; 
+        mul2 *= temp2.data; 
+        temp2 = temp2.next; 
+    } 
+
+    return ((sum1 == sum2) &&  
+            (mul1 == mul2)); 
+} 
+
+// Function to add a node at the 
+// beginning of Linked List 
+static Node push(Node head_ref, int new_data) 
+{ 
+    /* allocate node */
+    Node new_node = new Node(); 
+
+    /* put in the data */
+    new_node.data = new_data; 
+
+    /* link the old list off the new node */
+    new_node.next = head_ref; 
+
+    /* move the head to point to the new node */
+    head_ref = new_node; 
+    return head_ref; 
+} 
+
+// Driver Code 
+public static void main(String[] args)  
+{ 
+    Node first = null; 
+
+    /* First constructed linked list is:  
+    12 . 35 . 1 . 10 . 34 . 1 */
+    first = push(first, 1); 
+    first = push(first, 34); 
+    first = push(first, 10); 
+    first = push(first, 1); 
+    first = push(first, 35); 
+    first = push(first, 12); 
+
+    Node second = null; 
+
+    /* Second constructed linked list is:  
+    35 . 1 . 12 . 1 . 10 . 34 */
+    second = push(second, 35); 
+    second = push(second, 1); 
+    second = push(second, 12); 
+    second = push(second, 1); 
+    second = push(second, 10); 
+    second = push(second, 34); 
+
+    if (isPermutation(first, second)) 
+    { 
+        System.out.print("Yes"); 
+    } 
+    else 
+    { 
+        System.out.print("No"); 
+    } 
+} 
+}  
+
+// This code is contributed by 29AjayKumar 
+
+```
+
+## C＃
+
+```
+
+// C# program to check if linked lists 
+// are permutations of each other 
+using System; 
+
+class GFG  
+{ 
+public class Node  
+{ 
+    public int data; 
+    public Node next; 
+}; 
+
+/*Function to check if two linked lists 
+* are permutations of each other 
+* first : reference to head of first linked list 
+* second : reference to head of second linked list 
+*/
+static bool isPermutation(Node first,  
+                          Node second) 
+{ 
+
+    // Variables to keep track of 
+    // sum and multiplication 
+    int sum1 = 0, sum2 = 0,  
+        mul1 = 1, mul2 = 1; 
+
+    Node temp1 = first; 
+
+    // Traversing through linked list 
+    // and calculating sum and multiply 
+    while (temp1 != null)  
+    { 
+        sum1 += temp1.data; 
+        mul1 *= temp1.data; 
+        temp1 = temp1.next; 
+    } 
+
+    Node temp2 = second; 
+
+    // Traversing through linked list 
+    // and calculating sum and multiply 
+    while (temp2 != null) 
+    { 
+        sum2 += temp2.data; 
+        mul2 *= temp2.data; 
+        temp2 = temp2.next; 
+    } 
+
+    return ((sum1 == sum2) &&  
+            (mul1 == mul2)); 
+} 
+
+// Function to add a node at the 
+// beginning of Linked List 
+static Node push(Node head_ref, int new_data) 
+{ 
+    /* allocate node */
+    Node new_node = new Node(); 
+
+    /* put in the data */
+    new_node.data = new_data; 
+
+    /* link the old list off the new node */
+    new_node.next = head_ref; 
+
+    /* move the head to point to the new node */
+    head_ref = new_node; 
+    return head_ref; 
+} 
+
+// Driver Code 
+public static void Main(String[] args)  
+{ 
+    Node first = null; 
+
+    /* First constructed linked list is:  
+    12 . 35 . 1 . 10 . 34 . 1 */
+    first = push(first, 1); 
+    first = push(first, 34); 
+    first = push(first, 10); 
+    first = push(first, 1); 
+    first = push(first, 35); 
+    first = push(first, 12); 
+
+    Node second = null; 
+
+    /* Second constructed linked list is:  
+    35 . 1 . 12 . 1 . 10 . 34 */
+    second = push(second, 35); 
+    second = push(second, 1); 
+    second = push(second, 12); 
+    second = push(second, 1); 
+    second = push(second, 10); 
+    second = push(second, 34); 
+
+    if (isPermutation(first, second)) 
+    { 
+        Console.Write("Yes"); 
+    } 
+    else
+    { 
+        Console.Write("No"); 
+    } 
+} 
+} 
+
+// This code is contributed by PrinciRaj1992 
+
+```
+
+**Output:**
+
+```
+Yes
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

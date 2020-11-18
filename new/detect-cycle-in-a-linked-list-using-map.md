@@ -29,20 +29,94 @@
 
 下面是上述方法的实现：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to detect loop in 
+// given linked list using map 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Structure for a node in Linked List 
+struct Node { 
+    int data; 
+    Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Function to create Linked List 
+// Node 
+Node* newNode(int d) 
+{ 
+    Node* temp = new Node; 
+    temp->data = d; 
+    temp->next = NULL; 
+    return temp; 
+} 
 
-| `// C++ program to detect loop in``// given linked list using map``#include <bits/stdc++.h>``using` `namespace` `std;` [`// Structure for a node in Linked List``struct` `Node {` `int` `data;` `Node* next;``};``// Function to create Linked List``// Node``Node* newNode(` `int` `d)``{` `Node* temp =` `new` `Node;` `temp->data = d;` `temp->next = NULL;` `return` `temp;``}``// Declaration of Map to keep``// mark of visited Node``map<Node*,` `bool` `> vis;``bool` `flag = 0;``// Function to check cycle in Linked`[HTG4 5]`void` `check(Node* head)``{` `// If head is NULL return ;` `if` `(head == NULL) {` `flag = 0;` `return` `;` `}` `// Mark the incoming Node as` `// visited if it is not visited yet` `if` `(!vis[head]) {` `vis[head] =` `true` `;` `check(head->next);` `}` `// If a visited Node is found` `// Update the flag value to 1` `// and return ;` `else` `{` `flag = 1;` `return` `;` `}``}`的[`// Driver Code` [HTG2 59]`int` `main()``{` `// Create a head Node` `Node* head = newNode(20);`​​  `// Inserting Node in Linked List` `head->next = newNode(4);` `head->next->next = newNode(5);` `head->next->next->next = newNode(10);` `// Just to make a cycle` `head->next->next->next->next = head;` `// Function that detect cycle in` `// Linked List` `check(head);` [ `// If flag is true, loop is found` `if` `(flag)` `cout <<` `"Loop detected."` `;` `// If flag is false, No Loop` `// detected` `else` `cout <<` [HTG14 4] `;` `cout << endl;` [ `return` `0;``}` |
+// Declaration of Map to keep 
+// mark of visited Node 
+map<Node*, bool> vis; 
+bool flag = 0; 
 
-*chevron_right**filter_none***Output:**
+// Function to check cycle in Linked 
+// List 
+void check(Node* head) 
+{ 
+    // If head is NULL return ; 
+    if (head == NULL) { 
+        flag = 0; 
+        return; 
+    } 
+
+    // Mark the incoming Node as 
+    // visited if it is not visited yet 
+    if (!vis[head]) { 
+        vis[head] = true; 
+        check(head->next); 
+    } 
+
+    // If a visited Node is found 
+    // Update the flag value to 1 
+    // and return ; 
+    else { 
+        flag = 1; 
+        return; 
+    } 
+} 
+
+// Driver Code 
+int main() 
+{ 
+    // Create a head Node 
+    Node* head = newNode(20); 
+
+    // Inserting Node in Linked List 
+    head->next = newNode(4); 
+    head->next->next = newNode(5); 
+    head->next->next->next = newNode(10); 
+
+    // Just to make a cycle 
+    head->next->next->next->next = head; 
+
+    // Function that detect cycle in 
+    // Linked List 
+    check(head); 
+
+    // If flag is true, loop is found 
+    if (flag) 
+        cout << "Loop detected."; 
+
+    // If flag is false, No Loop 
+    // detected 
+    else
+        cout << "No Loop Found."; 
+    cout << endl; 
+
+    return 0; 
+} 
+
+```
+
+**Output:**
 
 ```
 Loop detected.

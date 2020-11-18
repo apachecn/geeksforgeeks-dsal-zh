@@ -44,17 +44,476 @@ PEEK（HEAD）：
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ code to implement Priority Queue 
+// using Linked List 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Node 
+typedef struct node 
+{ 
+    int data; 
 
-*链接*
-*亮度_4*
-*代码*
+    // Lower values indicate  
+    // higher priority 
+    int priority; 
 
-| `// C++ code to implement Priority Queue``// using Linked List``#include <bits/stdc++.h>``using` `namespace` `std;` [`// Node``typedef` `struct` `node``{` `int` `data;` `// Lower values indicate ` `// higher priority` `int` `priority;` `struct` `node* next;``} Node;``// Function to create a new node``Node* newNode(` `int` `d,` `int` `p)``{` `Node* temp = (Node*)` `malloc` `(` `sizeof` `(Node));` `temp->data = d;` `temp->priority = p;` `temp->next = NULL;` `return` `temp;``}``// Return the value at head``int` ] `peek(Node** head)``{` `return` `(*head)->data;``}`的`// Removes the element with the``// highest priority form the list`​​ `void` `pop(Node** head)``{` `Node* temp = *head;` `(*head) = (*head)->next;` `free` `(temp);``}``// Function to push according to priority``void` `push(Node** head,` `int` `d,` `int` `p)``{` `Node* start = (*head);` `// Create new Node` `Node* temp = newNode(d, p);` `// Special Case: The head of list has` [HTG30 1] `// lesser priority than new node. So ` `// insert newnode before head node ` `// and change head node.` `if` `((*head)->priority > p)` `{` `// Insert New Node before head` `temp->next = *head;` `(*head) = temp;` `}` `else` `{`[ `// Traverse the list and find a` `// position to insert new node` `while` `(start->next != NULL && ` `start->next->priority < p) ` `{` `start = start->next;` `}`] `// Either at the ends of the list` `// or at required position` `temp->next = start->next;` `start->next = temp;` `}``}``// Function to check is list is empty``int` `isEmpty(Node** head)``{` `return` `(*head) == NULL;``}``// Driver code``int` `main()``{` `// Create a Priority Queue` `// 7->4->5->6` `Node* pq = newNode(4, 1);` `push(&pq, 5, 2);` `push(&pq, 6, 3);` `push(&pq, 7, 0);` `while` `(!isEmpty(&pq)) ` `{` `cout <<` `" "` `<< peek(&pq);` `pop(&pq);` `}`[HTG4 02]  `return` `0;``}``// This code is contributed by shivanisinghss2110` |
+    struct node* next; 
 
-*chevron_right**filter_none*
+} Node; 
+
+// Function to create a new node 
+Node* newNode(int d, int p) 
+{ 
+    Node* temp = (Node*)malloc(sizeof(Node)); 
+    temp->data = d; 
+    temp->priority = p; 
+    temp->next = NULL; 
+
+    return temp; 
+} 
+
+// Return the value at head 
+int peek(Node** head) 
+{ 
+    return (*head)->data; 
+} 
+
+// Removes the element with the 
+// highest priority form the list 
+void pop(Node** head) 
+{ 
+    Node* temp = *head; 
+    (*head) = (*head)->next; 
+    free(temp); 
+} 
+
+// Function to push according to priority 
+void push(Node** head, int d, int p) 
+{ 
+    Node* start = (*head); 
+
+    // Create new Node 
+    Node* temp = newNode(d, p); 
+
+    // Special Case: The head of list has  
+    // lesser priority than new node. So  
+    // insert newnode before head node  
+    // and change head node. 
+    if ((*head)->priority > p) 
+    { 
+
+        // Insert New Node before head 
+        temp->next = *head; 
+        (*head) = temp; 
+    } 
+    else
+    { 
+
+        // Traverse the list and find a 
+        // position to insert new node 
+        while (start->next != NULL &&  
+               start->next->priority < p)  
+        { 
+            start = start->next; 
+        } 
+
+        // Either at the ends of the list 
+        // or at required position 
+        temp->next = start->next; 
+        start->next = temp; 
+    } 
+} 
+
+// Function to check is list is empty 
+int isEmpty(Node** head) 
+{ 
+    return (*head) == NULL; 
+} 
+
+// Driver code 
+int main() 
+{ 
+
+    // Create a Priority Queue 
+    // 7->4->5->6 
+    Node* pq = newNode(4, 1); 
+    push(&pq, 5, 2); 
+    push(&pq, 6, 3); 
+    push(&pq, 7, 0); 
+
+    while (!isEmpty(&pq))  
+    { 
+        cout << " " << peek(&pq); 
+        pop(&pq); 
+    } 
+    return 0; 
+} 
+
+// This code is contributed by shivanisinghss2110 
+
+```
+
+## C
+
+```
+
+// C code to implement Priority Queue 
+// using Linked List 
+#include <stdio.h> 
+#include <stdlib.h> 
+
+// Node 
+typedef struct node { 
+    int data; 
+
+    // Lower values indicate higher priority 
+    int priority; 
+
+    struct node* next; 
+
+} Node; 
+
+// Function to Create A New Node 
+Node* newNode(int d, int p) 
+{ 
+    Node* temp = (Node*)malloc(sizeof(Node)); 
+    temp->data = d; 
+    temp->priority = p; 
+    temp->next = NULL; 
+
+    return temp; 
+} 
+
+// Return the value at head 
+int peek(Node** head) 
+{ 
+    return (*head)->data; 
+} 
+
+// Removes the element with the 
+// highest priority form the list 
+void pop(Node** head) 
+{ 
+    Node* temp = *head; 
+    (*head) = (*head)->next; 
+    free(temp); 
+} 
+
+// Function to push according to priority 
+void push(Node** head, int d, int p) 
+{ 
+    Node* start = (*head); 
+
+    // Create new Node 
+    Node* temp = newNode(d, p); 
+
+    // Special Case: The head of list has lesser 
+    // priority than new node. So insert new 
+    // node before head node and change head node. 
+    if ((*head)->priority > p) { 
+
+        // Insert New Node before head 
+        temp->next = *head; 
+        (*head) = temp; 
+    } 
+    else { 
+
+        // Traverse the list and find a 
+        // position to insert new node 
+        while (start->next != NULL && 
+               start->next->priority < p) { 
+            start = start->next; 
+        } 
+
+        // Either at the ends of the list 
+        // or at required position 
+        temp->next = start->next; 
+        start->next = temp; 
+    } 
+} 
+
+// Function to check is list is empty 
+int isEmpty(Node** head) 
+{ 
+    return (*head) == NULL; 
+} 
+
+// Driver code 
+int main() 
+{ 
+    // Create a Priority Queue 
+    // 7->4->5->6 
+    Node* pq = newNode(4, 1); 
+    push(&pq, 5, 2); 
+    push(&pq, 6, 3); 
+    push(&pq, 7, 0); 
+
+    while (!isEmpty(&pq)) { 
+        printf("%d ", peek(&pq)); 
+        pop(&pq); 
+    } 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java code to implement Priority Queue  
+// using Linked List  
+import java.util.* ; 
+
+class Solution 
+{ 
+
+// Node  
+ static class Node {  
+    int data;  
+
+    // Lower values indicate higher priority  
+    int priority;  
+
+     Node next;  
+
+} 
+
+static Node node = new Node(); 
+
+// Function to Create A New Node  
+static Node newNode(int d, int p)  
+{  
+    Node temp = new Node();  
+    temp.data = d;  
+    temp.priority = p;  
+    temp.next = null;  
+
+    return temp;  
+}  
+
+// Return the value at head  
+static int peek(Node head)  
+{  
+    return (head).data;  
+}  
+
+// Removes the element with the  
+// highest priority form the list  
+static Node pop(Node head)  
+{  
+    Node temp = head;  
+    (head)  = (head).next;  
+    return head; 
+}    
+
+// Function to push according to priority  
+static Node push(Node head, int d, int p)  
+{  
+    Node start = (head);  
+
+    // Create new Node  
+    Node temp = newNode(d, p);  
+
+    // Special Case: The head of list has lesser  
+    // priority than new node. So insert new  
+    // node before head node and change head node.  
+    if ((head).priority > p) {  
+
+        // Insert New Node before head  
+        temp.next = head;  
+        (head) = temp;  
+    }  
+    else {  
+
+        // Traverse the list and find a  
+        // position to insert new node  
+        while (start.next != null &&  
+               start.next.priority < p) {  
+            start = start.next;  
+        }  
+
+        // Either at the ends of the list  
+        // or at required position  
+        temp.next = start.next;  
+        start.next = temp;  
+    }  
+    return head; 
+}  
+
+// Function to check is list is empty  
+static int isEmpty(Node head)  
+{  
+    return ((head) == null)?1:0;  
+}  
+
+// Driver code  
+public static void main(String args[]) 
+{  
+    // Create a Priority Queue  
+    // 7.4.5.6  
+    Node pq = newNode(4, 1);  
+    pq =push(pq, 5, 2);  
+    pq =push(pq, 6, 3);  
+    pq =push(pq, 7, 0);  
+
+    while (isEmpty(pq)==0) {  
+        System.out.printf("%d ", peek(pq));  
+        pq=pop(pq);  
+    }  
+
+}  
+} 
+
+// This code is contributed 
+// by Arnab Kundu 
+
+```
+
+## C＃
+
+```
+
+// C# code to implement Priority Queue  
+// using Linked List  
+using System; 
+
+class GFG 
+{ 
+// Node  
+public class Node 
+{ 
+    public int data; 
+
+    // Lower values indicate  
+    // higher priority  
+    public int priority; 
+
+    public Node next; 
+} 
+
+public static Node node = new Node(); 
+
+// Function to Create A New Node  
+public static Node newNode(int d, int p) 
+{ 
+    Node temp = new Node(); 
+    temp.data = d; 
+    temp.priority = p; 
+    temp.next = null; 
+
+    return temp; 
+} 
+
+// Return the value at head  
+public static int peek(Node head) 
+{ 
+    return (head).data; 
+} 
+
+// Removes the element with the  
+// highest priority form the list  
+public static Node pop(Node head) 
+{ 
+    Node temp = head; 
+    (head) = (head).next; 
+    return head; 
+} 
+
+// Function to push according to priority  
+public static Node push(Node head,  
+                        int d, int p) 
+{ 
+    Node start = (head); 
+
+    // Create new Node  
+    Node temp = newNode(d, p); 
+
+    // Special Case: The head of list 
+    // has lesser priority than new node.  
+    // So insert new node before head node  
+    // and change head node.  
+    if ((head).priority > p) 
+    { 
+
+        // Insert New Node before head  
+        temp.next = head; 
+        (head) = temp; 
+    } 
+    else
+    { 
+
+        // Traverse the list and find a  
+        // position to insert new node  
+        while (start.next != null &&  
+               start.next.priority < p) 
+        { 
+            start = start.next; 
+        } 
+
+        // Either at the ends of the list  
+        // or at required position  
+        temp.next = start.next; 
+        start.next = temp; 
+    } 
+    return head; 
+} 
+
+// Function to check is list is empty  
+public static int isEmpty(Node head) 
+{ 
+    return ((head) == null) ? 1 : 0; 
+} 
+
+// Driver code  
+public static void Main(string[] args) 
+{ 
+    // Create a Priority Queue  
+    // 7.4.5.6  
+    Node pq = newNode(4, 1); 
+    pq = push(pq, 5, 2); 
+    pq = push(pq, 6, 3); 
+    pq = push(pq, 7, 0); 
+
+    while (isEmpty(pq) == 0) 
+    { 
+        Console.Write("{0:D} ", peek(pq)); 
+        pq = pop(pq); 
+    } 
+} 
+} 
+
+// This code is contributed by Shrikant13 
+
+```
+
+**Output:**
+
+```
+7 4 5 6 
+
+```
+
+**时间复杂度以及与[二元堆](https://www.geeksforgeeks.org/binary-heap/)：**的比较
+
+```
+               peek()    push()    pop()
+-----------------------------------------
+Linked List |   O(1)      O(n)      O(1)
+            |
+Binary Heap |   O(1)    O(Log n)   O(Log n)
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

@@ -406,17 +406,290 @@ Time Complexity O(n*n)
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// CPP program to find majority element 
+// in the linked list using hashing 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+/* Link list node */
+struct Node { 
+    int data; 
+    struct Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+/* Function to get the nth node from the last 
+ of a linked list*/
+int majority(struct Node* head) 
+{ 
+    struct Node* p = head; 
 
-| `// CPP program to find majority element``// in the linked list using hashing``#include <bits/stdc++.h>``using` `namespace` `std;` [`/* Link list node */``struct` `Node {` `int` `data;` `struct` `Node* next;``};``/* Function to get the nth node from the last` `of a linked list*/``int` `majority(` `struct` `Node* head)``{` `struct` `Node* p = head;` ] `// Storing elements and their frequencies` `// in a hash table.` `unordered_map<` `int` `,` `int` `> hash; `的 `int` `total_count = 0;` `while` `(p != NULL) {` `// frequency by 1` `hash[p->data]++;` `p = p->next;` ] `total_count++;` `}` `// Check if frequency of any element` `// is more than or equal to total_count/2` `for` `(` `auto` `x : hash)` `if` `(x.second >= total_count/2)` `return` `x.first;` `// If we reach here means no majority element` `// is present. We assume that all the element ` `// are positive` `return` `-1;``}``void` `push(` `struct` `Node** head_ref,` `int` `new_data)``{` `struct` `Node* new_node = ` `(` `struct` `Node*)` `malloc` `(` `sizeof` `(` `struct` `Node));` `new_node->data = new_data;` `new_node->next = (*head_ref);` `(*head_ref) = new_node;`​​`}``// Driver program to test above function``int` `main()``{`] [ `/* Start with the empty list */` `struct` `Node* head = NULL;` `push(&head, 1);` `push(&head, 1);` `push(&head, 1);` `push(&head, 5);` `push(&head, 4);` `push(&head, 3);` `push(&head, 2);` `push(&head, 1);` `int` `res = majority(head);`。 `if` `(res != (-1))` `cout <<` `"majority element is "` `<< res;` `else` `cout <<` `"NO majority elemenet"` `;` `return` `0;``}` |
+    // Storing elements and their frequencies 
+    // in a hash table. 
+    unordered_map<int, int> hash;  
 
-*chevron_right**filter_none*
+    int total_count = 0; 
+    while (p != NULL) { 
+
+        // increase every element 
+        // frequency by 1 
+        hash[p->data]++; 
+
+        p = p->next; 
+
+        total_count++; 
+    } 
+
+    // Check if frequency of any element 
+    // is more than or equal to total_count/2 
+    for (auto x : hash) 
+       if (x.second >= total_count/2) 
+           return x.first; 
+
+    // If we reach here means no majority element 
+    // is present. We assume that all the element  
+    // are positive 
+    return -1; 
+} 
+
+void push(struct Node** head_ref, int new_data) 
+{ 
+    struct Node* new_node =  
+       (struct Node*)malloc(sizeof(struct Node)); 
+    new_node->data = new_data; 
+    new_node->next = (*head_ref); 
+    (*head_ref) = new_node; 
+} 
+
+// Driver program to test above function 
+int main() 
+{ 
+
+    /* Start with the empty list */
+    struct Node* head = NULL; 
+    push(&head, 1); 
+    push(&head, 1); 
+    push(&head, 1); 
+    push(&head, 5); 
+    push(&head, 4); 
+    push(&head, 3); 
+    push(&head, 2); 
+    push(&head, 1); 
+
+    int res = majority(head); 
+
+    if (res != (-1)) 
+        cout << "majority element is " << res; 
+    else
+        cout << "NO majority elemenet"; 
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// JAVA program to find majority element 
+// in the linked list using hashing 
+import java.util.*; 
+
+class GFG 
+{ 
+
+/* Link list node */
+static class Node 
+{ 
+    int data; 
+    Node next; 
+}; 
+
+/* Function to get the nth node from the last 
+of a linked list*/
+static int majority(Node head) 
+{ 
+    Node p = head; 
+
+    // Storing elements and their frequencies 
+    // in a hash table. 
+    HashMap<Integer,Integer> hash = new HashMap<Integer,Integer>();  
+
+    int total_count = 0; 
+    while (p != null)  
+    { 
+
+        // increase every element 
+        // frequency by 1 
+        if(hash.containsKey(p.data)) 
+            hash.put(p.data, hash.get(p.data) + 1); 
+        else
+            hash.put(p.data, 1); 
+
+        p = p.next; 
+
+        total_count++; 
+    } 
+
+    // Check if frequency of any element 
+    // is more than or equal to total_count/2 
+    for (Map.Entry<Integer,Integer> x : hash.entrySet())  
+    if (x.getValue() >= total_count/2) 
+        return x.getKey(); 
+
+    // If we reach here means no majority element 
+    // is present. We assume that all the element  
+    // are positive 
+    return -1; 
+} 
+
+static Node push(Node head_ref, int new_data) 
+{ 
+    Node new_node = new Node(); 
+    new_node.data = new_data; 
+    new_node.next = head_ref; 
+    head_ref = new_node; 
+    return head_ref; 
+} 
+
+// Driver code 
+public static void main(String[] args) 
+{ 
+
+    /* Start with the empty list */
+    Node head = null; 
+    head = push(head, 1); 
+    head = push(head, 1); 
+    head = push(head, 1); 
+    head = push(head, 5); 
+    head = push(head, 4); 
+    head = push(head, 3); 
+    head = push(head, 2); 
+    head = push(head, 1); 
+
+    int res = majority(head); 
+
+    if (res != (-1)) 
+        System.out.print("majority element is " + res); 
+    else
+        System.out.print("NO majority elemenet"); 
+} 
+} 
+
+// This code is contributed by Rajput-Ji 
+
+```
+
+## C＃
+
+```
+
+// C# program to find majority element 
+// in the linked list using hashing 
+using System; 
+using System.Collections.Generic; 
+class GFG 
+{ 
+
+/* Link list node */
+public class Node 
+{ 
+    public int data; 
+    public Node next; 
+}; 
+
+/* Function to get the nth node 
+from the last of a linked list*/
+static int majority(Node head) 
+{ 
+    Node p = head; 
+
+    // Storing elements and their frequencies 
+    // in a hash table. 
+    Dictionary<int,  
+               int> hash = new Dictionary<int,  
+                                          int>();  
+
+    int total_count = 0; 
+    while (p != null)  
+    { 
+
+        // increase every element 
+        // frequency by 1 
+        if(hash.ContainsKey(p.data)) 
+            hash[p.data] = hash[p.data] + 1; 
+        else
+            hash.Add(p.data, 1); 
+
+        p = p.next; 
+
+        total_count++; 
+    } 
+
+    // Check if frequency of any element 
+    // is more than or equal to total_count/2 
+    foreach(KeyValuePair<int, int> x in hash) 
+    if (x.Value >= total_count/2) 
+        return x.Key; 
+
+    // If we reach here means no majority element 
+    // is present. We assume that all the element  
+    // are positive 
+    return -1; 
+} 
+
+static Node push(Node head_ref, int new_data) 
+{ 
+    Node new_node = new Node(); 
+    new_node.data = new_data; 
+    new_node.next = head_ref; 
+    head_ref = new_node; 
+    return head_ref; 
+} 
+
+// Driver code 
+public static void Main(String[] args) 
+{ 
+
+    /* Start with the empty list */
+    Node head = null; 
+    head = push(head, 1); 
+    head = push(head, 1); 
+    head = push(head, 1); 
+    head = push(head, 5); 
+    head = push(head, 4); 
+    head = push(head, 3); 
+    head = push(head, 2); 
+    head = push(head, 1); 
+
+    int res = majority(head); 
+
+    if (res != (-1)) 
+        Console.Write("majority element is " + res); 
+    else
+        Console.Write("NO majority elemenet"); 
+} 
+} 
+
+// This code is contributed by 29AjayKumar 
+
+```
+
+Time Complexity O(n)
+**Output :**
+
+```
+majority element is 1
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

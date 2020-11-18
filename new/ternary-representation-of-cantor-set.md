@@ -39,17 +39,439 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation to find the cantor set 
+// for n levels and 
+// for a given start_num and end_num 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// The Linked List Structure for the Cantor Set 
+typedef struct cantor { 
+    double start, end; 
+    struct cantor* next; 
+} Cantor; 
 
-*链接*
-*亮度_4*
-*代码*
+// Function to initialize the Cantor Set List 
+Cantor* startList(Cantor* head, 
+                double start_num, 
+                double end_num) 
+{ 
+    if (head == NULL) { 
+        head = new Cantor; 
+        head->start = start_num; 
+        head->end = end_num; 
+        head->next = NULL; 
+    } 
+    return head; 
+} 
 
-| `// C++ implementation to find the cantor set``// for n levels and``// for a given start_num and end_num``#include <bits/stdc++.h>``using` `namespace` `std;``// The Linked List Structure for the Cantor Set``typedef` `struct` `cantor {` `double` `start, end;` `struct` `cantor* next;``} Cantor;``// Function to initialize the Cantor Set List``Cantor* startList(Cantor* head,` `double` `start_num,` `double` `end_num)``{` `if` `(head == NULL) {` `head =` `new` `Cantor;` `head->start = start_num;` `head->end = end_num;` `head->next = NULL;` `}` `return` `head;``}``// Function to propogate the list``// by adding new nodes for the next levels``Cantor* propagate(Cantor* head)``{` `Cantor* temp = head;` [ `if` `(temp != NULL) {` `Cantor* newNode` `=` `new` `Cantor;` `double` `diff` `= (((temp->end) - (temp->start)) / 3);`​​  `// Modifying the start and end values` `// for the next level` `newNode->end = temp->end;` `temp->end = ((temp->start) + diff);` `newNode->start = (newNode->end) - diff;` [ `// Changing the pointers` `// to the next node` `newNode->next = temp->next;` `temp->next = newNode;` `// Recursively call the function` `// to generate the Cantor Set` `// for the entire level`[HT G97] `propagate(temp->next->next);` `}` [ `return` `head;``}``// Function to print a level of the Set``void` `print(Cantor* temp)``{` `while` `(temp != NULL) {` `printf` `(` `"[%lf] -- [%lf]\t"` `,` `temp->start, temp->end);` `temp = temp->next;` `}` `cout << endl;``}``// Function to build and display``// the Cantor Set for each level``void` `buildCantorSet(` `int` `A,` `int` `B,` `int` `L)``{` `Cantor* head = NULL;` `head = startList(head, A, B);` `for` `(` `int` `i = 0; i < L; i++) {` `cout <<` `"Level_"` `<< i<<` `" : "` `;` `print(head);` `propagate(head);` `}` `cout <<` `"Level_"` `<< L<<` `" : "` `;` `print(head);``}``// Driver code``int` `main()``{` `int` `A = 0;` `int` `B = 9;` `int` `L = 2;` `buildCantorSet(A, B, L);` `return` `0;``}``// This code is contributed by shivanisingh` |
+// Function to propogate the list 
+// by adding new nodes for the next levels 
+Cantor* propagate(Cantor* head) 
+{ 
+    Cantor* temp = head; 
 
-*chevron_right**filter_none*
+    if (temp != NULL) { 
+        Cantor* newNode 
+            = new Cantor; 
+        double diff 
+            = (((temp->end) - (temp->start)) / 3); 
+
+        // Modifying the start and end values 
+        // for the next level 
+        newNode->end = temp->end; 
+        temp->end = ((temp->start) + diff); 
+        newNode->start = (newNode->end) - diff; 
+
+        // Changing the pointers 
+        // to the next node 
+        newNode->next = temp->next; 
+        temp->next = newNode; 
+
+        // Recursively call the function 
+        // to generate the Cantor Set 
+        // for the entire level 
+        propagate(temp->next->next); 
+    } 
+
+    return head; 
+} 
+
+// Function to print a level of the Set 
+void print(Cantor* temp) 
+{ 
+    while (temp != NULL) { 
+        printf("[%lf] -- [%lf]\t", 
+            temp->start, temp->end); 
+        temp = temp->next; 
+    } 
+    cout << endl; 
+} 
+
+// Function to build and display 
+// the Cantor Set for each level 
+void buildCantorSet(int A, int B, int L) 
+{ 
+    Cantor* head = NULL; 
+    head = startList(head, A, B); 
+    for (int i = 0; i < L; i++) { 
+        cout <<"Level_"<< i<<" : "; 
+        print(head); 
+        propagate(head); 
+    } 
+    cout <<"Level_"<< L<<" : "; 
+    print(head); 
+} 
+
+// Driver code 
+int main() 
+{ 
+    int A = 0; 
+    int B = 9; 
+    int L = 2; 
+    buildCantorSet(A, B, L); 
+
+    return 0; 
+} 
+
+// This code is contributed by shivanisingh 
+
+```
+
+## C
+
+```
+
+// C implementation to find the cantor set 
+// for n levels and 
+// for a given start_num and end_num 
+
+#include <stdio.h> 
+#include <stdlib.h> 
+#include <string.h> 
+
+// The Linked List Structure for the Cantor Set 
+typedef struct cantor { 
+    double start, end; 
+    struct cantor* next; 
+} Cantor; 
+
+// Function to initialize the Cantor Set List 
+Cantor* startList(Cantor* head, 
+                  double start_num, 
+                  double end_num) 
+{ 
+    if (head == NULL) { 
+        head = (Cantor*)malloc(sizeof(Cantor)); 
+        head->start = start_num; 
+        head->end = end_num; 
+        head->next = NULL; 
+    } 
+    return head; 
+} 
+
+// Function to propogate the list 
+// by adding new nodes for the next levels 
+Cantor* propagate(Cantor* head) 
+{ 
+    Cantor* temp = head; 
+
+    if (temp != NULL) { 
+        Cantor* newNode 
+            = (Cantor*)malloc(sizeof(Cantor)); 
+        double diff 
+            = (((temp->end) - (temp->start)) / 3); 
+
+        // Modifying the start and end values 
+        // for the next level 
+        newNode->end = temp->end; 
+        temp->end = ((temp->start) + diff); 
+        newNode->start = (newNode->end) - diff; 
+
+        // Changing the pointers 
+        // to the next node 
+        newNode->next = temp->next; 
+        temp->next = newNode; 
+
+        // Recursively call the function 
+        // to generate the Cantor Set 
+        // for the entire level 
+        propagate(temp->next->next); 
+    } 
+
+    return head; 
+} 
+
+// Function to print a level of the Set 
+void print(Cantor* temp) 
+{ 
+    while (temp != NULL) { 
+        printf("[%lf] -- [%lf]\t", 
+               temp->start, temp->end); 
+        temp = temp->next; 
+    } 
+    printf("\n"); 
+} 
+
+// Function to build and display 
+// the Cantor Set for each level 
+void buildCantorSet(int A, int B, int L) 
+{ 
+    Cantor* head = NULL; 
+    head = startList(head, A, B); 
+    for (int i = 0; i < L; i++) { 
+        printf("Level_%d : ", i); 
+        print(head); 
+        propagate(head); 
+    } 
+    printf("Level_%d : ", L); 
+    print(head); 
+} 
+
+// Driver code 
+int main() 
+{ 
+    int A = 0; 
+    int B = 9; 
+    int L = 2; 
+    buildCantorSet(A, B, L); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation to find the cantor set 
+// for n levels and 
+// for a given start_num and end_num 
+
+class GFG 
+{ 
+
+    // The Linked List Structure for the Cantor Set 
+    static class Cantor 
+    { 
+        double start, end; 
+        Cantor next; 
+    }; 
+
+    static Cantor Cantor; 
+
+    // Function to initialize the Cantor Set List 
+    static Cantor startList(Cantor head, double start_num,  
+                            double end_num) 
+    { 
+        if (head == null)  
+        { 
+            head = new Cantor(); 
+            head.start = start_num; 
+            head.end = end_num; 
+            head.next = null; 
+        } 
+        return head; 
+    } 
+
+    // Function to propogate the list 
+    // by adding new nodes for the next levels 
+    static Cantor propagate(Cantor head)  
+    { 
+        Cantor temp = head; 
+
+        if (temp != null) 
+        { 
+            Cantor newNode = new Cantor(); 
+            double diff = (((temp.end) - (temp.start)) / 3); 
+
+            // Modifying the start and end values 
+            // for the next level 
+            newNode.end = temp.end; 
+            temp.end = ((temp.start) + diff); 
+            newNode.start = (newNode.end) - diff; 
+
+            // Changing the pointers 
+            // to the next node 
+            newNode.next = temp.next; 
+            temp.next = newNode; 
+
+            // Recursively call the function 
+            // to generate the Cantor Set 
+            // for the entire level 
+            propagate(temp.next.next); 
+        } 
+
+        return head; 
+    } 
+
+    // Function to print a level of the Set 
+    static void print(Cantor temp) 
+    { 
+        while (temp != null)  
+        { 
+            System.out.printf("[%f] -- [%f]", temp.start, temp.end); 
+            temp = temp.next; 
+        } 
+        System.out.printf("\n"); 
+    } 
+
+    // Function to build and display 
+    // the Cantor Set for each level 
+    static void buildCantorSet(int A, int B, int L) 
+    { 
+        Cantor head = null; 
+        head = startList(head, A, B); 
+        for (int i = 0; i < L; i++)  
+        { 
+            System.out.printf("Level_%d : ", i); 
+            print(head); 
+            propagate(head); 
+        } 
+        System.out.printf("Level_%d : ", L); 
+        print(head); 
+    } 
+
+    // Driver code 
+    public static void main(String[] args)  
+    { 
+        int A = 0; 
+        int B = 9; 
+        int L = 2; 
+        buildCantorSet(A, B, L); 
+    } 
+} 
+
+// This code is contributed by Rajput-Ji 
+
+```
+
+## C＃
+
+```
+
+// C# implementation to find the cantor set 
+// for n levels and 
+// for a given start_num and end_num 
+using System; 
+
+class GFG 
+{ 
+
+    // The Linked List Structure for the Cantor Set 
+    class Cantor 
+    { 
+        public double start, end; 
+        public Cantor next; 
+    }; 
+
+    static Cantor cantor; 
+
+    // Function to initialize the Cantor Set List 
+    static Cantor startList(Cantor head, double start_num,  
+                            double end_num) 
+    { 
+        if (head == null)  
+        { 
+            head = new Cantor(); 
+            head.start = start_num; 
+            head.end = end_num; 
+            head.next = null; 
+        } 
+        return head; 
+    } 
+
+    // Function to propogate the list 
+    // by adding new nodes for the next levels 
+    static Cantor propagate(Cantor head)  
+    { 
+        Cantor temp = head; 
+
+        if (temp != null) 
+        { 
+            Cantor newNode = new Cantor(); 
+            double diff = (((temp.end) - (temp.start)) / 3); 
+
+            // Modifying the start and end values 
+            // for the next level 
+            newNode.end = temp.end; 
+            temp.end = ((temp.start) + diff); 
+            newNode.start = (newNode.end) - diff; 
+
+            // Changing the pointers 
+            // to the next node 
+            newNode.next = temp.next; 
+            temp.next = newNode; 
+
+            // Recursively call the function 
+            // to generate the Cantor Set 
+            // for the entire level 
+            propagate(temp.next.next); 
+        } 
+
+        return head; 
+    } 
+
+    // Function to print a level of the Set 
+    static void print(Cantor temp) 
+    { 
+        while (temp != null)  
+        { 
+            Console.Write("[{0:F6}] -- [{1:F6}]",  
+                            temp.start, temp.end); 
+            temp = temp.next; 
+        } 
+        Console.Write("\n"); 
+    } 
+
+    // Function to build and display 
+    // the Cantor Set for each level 
+    static void buildCantorSet(int A, int B, int L) 
+    { 
+        Cantor head = null; 
+        head = startList(head, A, B); 
+        for (int i = 0; i < L; i++)  
+        { 
+            Console.Write("Level_{0} : ", i); 
+            print(head); 
+            propagate(head); 
+        } 
+        Console.Write("Level_{0} : ", L); 
+        print(head); 
+    } 
+
+    // Driver code 
+    public static void Main(String[] args)  
+    { 
+        int A = 0; 
+        int B = 9; 
+        int L = 2; 
+        buildCantorSet(A, B, L); 
+    } 
+} 
+
+// This code is contributed by Rajput-Ji 
+
+```
+
+**Output:**
+
+> Level_0：[0.000000] — [9.000000]
+> Level_1：[0.000000] — [3.000000] [6.000000] — [9.000000]
+> Level_2：[0.000000] — [1.000000] [2.000000] — [3.000000] [6.000000] -[7.000000] [8.000000]-[9.000000]
+
+**参考：** [Cantor Set维基百科](https://en.wikipedia.org/wiki/Cantor_set)
+**相关文章：** [乔治·康托尔有理数集的第N个项](https://www.geeksforgeeks.org/n-th-term-of-george-cantor-set-of-rational-numbers/)
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

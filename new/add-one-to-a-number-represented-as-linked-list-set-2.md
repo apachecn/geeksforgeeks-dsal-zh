@@ -27,17 +27,431 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation of the approach 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Node of the linked list 
+struct Node { 
+    int data; 
+    Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Function to create a new node 
+Node* create_Node(int data) 
+{ 
+    Node* temp = new Node(); 
+    temp->data = data; 
+    temp->next = NULL; 
+    return temp; 
+} 
 
-| `// C++ implementation of the approach``#include <bits/stdc++.h>``using` `namespace` `std;``// Node of the linked list``struct` `Node {` `int` `data;` `Node* next;``};``// Function to create a new node``Node* create_Node(` `int` `data)``{` `Node* temp =` `new` `Node();` `temp->data = data;` `temp->next = NULL;` `return` `temp;``}``// Function to print the linked list``void` `print(Node* head)``{` `Node* temp = head;` `while` `(temp != NULL) {` `cout << temp->data <<` `" "` `;` `temp = temp->next;` `}` `cout << endl;``}`]`// Function to add one to a number``// represented as linked list``Node* addOne(Node* head)``{` `// To store the last node in the linked` `// list which is not equal to 9` `Node* last = NULL;` `Node* cur = head;` `// Iterate till the last node` `while` `(cur->next != NULL) {`​​  `if` `(cur->data != 9) {` `last = cur;` `}` `cur = cur->next;` `}` `// If last node is not equal to 9` `// add 1 to it and return the head` `if` `(cur->data != 9) {` `cur->data++;` `return` `head;` `}` `// If list is of the type 9 -> 9 -> 9 ...` `if` `(last == NULL) {` `last =` `new` `Node();` `last->data = 0;` `last->next = head;` `head = last;` `}`的 `// For cases when the righmost node which` `// is not equal to 9 is not the last` `// node in the linked list` `last->data++;` `last = last->next;` `while` `(last != NULL) {` `last->data = 0;` `last = last->next;` `}` `return` `head;`[H TG336] `}` [`// Driver code``int` `main()``{` `Node* head = create_Node(1);` `head->next = create_Node(2);` `head->next->next = create_Node(9);` `head->next->next->next = create_Node(9);` `cout <<` `"Original list is : "` `;` `print(head);` `head = addOne(head);` `cout <<` `"Resultant list is : "` `;` `print(head);` `return` `0;``}` |
+// Function to print the linked list 
+void print(Node* head) 
+{ 
 
-*chevron_right**filter_none*
+    Node* temp = head; 
+    while (temp != NULL) { 
+        cout << temp->data << " "; 
+        temp = temp->next; 
+    } 
+    cout << endl; 
+} 
+
+// Function to add one to a number 
+// represented as linked list 
+Node* addOne(Node* head) 
+{ 
+
+    // To store the last node in the linked 
+    // list which is not equal to 9 
+    Node* last = NULL; 
+    Node* cur = head; 
+
+    // Iterate till the last node 
+    while (cur->next != NULL) { 
+
+        if (cur->data != 9) { 
+            last = cur; 
+        } 
+        cur = cur->next; 
+    } 
+
+    // If last node is not equal to 9 
+    // add 1 to it and return the head 
+    if (cur->data != 9) { 
+        cur->data++; 
+        return head; 
+    } 
+
+    // If list is of the type 9 -> 9 -> 9 ... 
+    if (last == NULL) { 
+        last = new Node(); 
+        last->data = 0; 
+        last->next = head; 
+        head = last; 
+    } 
+
+    // For cases when the righmost node which 
+    // is not equal to 9 is not the last 
+    // node in the linked list 
+    last->data++; 
+    last = last->next; 
+
+    while (last != NULL) { 
+        last->data = 0; 
+        last = last->next; 
+    } 
+
+    return head; 
+} 
+
+// Driver code 
+int main() 
+{ 
+    Node* head = create_Node(1); 
+    head->next = create_Node(2); 
+    head->next->next = create_Node(9); 
+    head->next->next->next = create_Node(9); 
+
+    cout << "Original list is : "; 
+    print(head); 
+
+    head = addOne(head); 
+
+    cout << "Resultant list is : "; 
+    print(head); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation of the approach 
+import java.util.*; 
+
+class GFG 
+{ 
+
+// Node of the linked list 
+static class Node  
+{ 
+    int data; 
+    Node next; 
+}; 
+
+// Function to create a new node 
+static Node create_Node(int data) 
+{ 
+    Node temp = new Node(); 
+    temp.data = data; 
+    temp.next = null; 
+    return temp; 
+} 
+
+// Function to print the linked list 
+static void print(Node head) 
+{ 
+    Node temp = head; 
+    while (temp != null)  
+    { 
+        System.out.print(temp.data + " "); 
+        temp = temp.next; 
+    } 
+    System.out.println(); 
+} 
+
+// Function to add one to a number 
+// represented as linked list 
+static Node addOne(Node head) 
+{ 
+
+    // To store the last node in the linked 
+    // list which is not equal to 9 
+    Node last = null; 
+    Node cur = head; 
+
+    // Iterate till the last node 
+    while (cur.next != null) 
+    { 
+        if (cur.data != 9) 
+        { 
+            last = cur; 
+        } 
+        cur = cur.next; 
+    } 
+
+    // If last node is not equal to 9 
+    // add 1 to it and return the head 
+    if (cur.data != 9) 
+    { 
+        cur.data++; 
+        return head; 
+    } 
+
+    // If list is of the type 9 . 9 . 9 ... 
+    if (last == null) 
+    { 
+        last = new Node(); 
+        last.data = 0; 
+        last.next = head; 
+        head = last; 
+    } 
+
+    // For cases when the righmost node which 
+    // is not equal to 9 is not the last 
+    // node in the linked list 
+    last.data++; 
+    last = last.next; 
+
+    while (last != null)  
+    { 
+        last.data = 0; 
+        last = last.next; 
+    } 
+    return head; 
+} 
+
+// Driver code 
+public static void main(String[] args)  
+{ 
+    Node head = create_Node(1); 
+    head.next = create_Node(2); 
+    head.next.next = create_Node(9); 
+    head.next.next.next = create_Node(9); 
+
+    System.out.print("Original list is : "); 
+    print(head); 
+
+    head = addOne(head); 
+
+    System.out.print("Resultant list is : "); 
+    print(head); 
+} 
+} 
+
+// This code is contributed  
+// by PrinciRaj1992 
+
+```
+
+## Python3
+
+```
+
+# A Python3 implementation of the approach 
+
+# Node of the linked list 
+class Node(): 
+    def __init__(self): 
+        self.data = None
+        self.next = None
+
+# Function to create a new node 
+def create_Node(data): 
+    temp = Node() 
+    temp.data = data 
+    temp.next = None
+    return temp 
+
+# Function to print the linked list 
+def printList(head): 
+    temp = head 
+    while (temp != None): 
+        print(temp.data, end = ' ') 
+        temp = temp.next
+    print() 
+
+# Function to add one to a number 
+# represented as linked list 
+def addOne(head): 
+
+    # To store the last node in the 
+    # linked list which is not equal to 9 
+    last = None
+    cur = head 
+
+    # Iterate till the last node 
+    while(cur.next != None): 
+        if(cur.data != 9): 
+            last = cur 
+        cur = cur.next
+
+    # If last node is not equal to 9 
+    # add 1 to it and return the head 
+    if(cur.data != 9): 
+        cur.data += 1
+        return head 
+
+    # If list is of the type 9 -> 9 -> 9 ... 
+    if(last == None): 
+        last = Node() 
+        last.data = 0
+        last.next = head 
+        head = last 
+
+    # For cases when the rightmost node which 
+    # is not equal to 9 is not the last 
+    # node in the linked list 
+    last.data += 1
+    last = last.next
+
+    while(last != None): 
+        last.data = 0
+        last = last.next
+
+    return head 
+
+# Driver code 
+if __name__=='__main__': 
+    head = create_Node(1) 
+    head.next = create_Node(2) 
+    head.next.next = create_Node(9) 
+    head.next.next.next = create_Node(9) 
+
+    print("Original list is : ", end = "") 
+    printList(head) 
+
+    head = addOne(head) 
+
+    print("Resultant list is : ", end = "") 
+    printList(head) 
+
+# This code is contributed by Yashyasvi Agarwal 
+
+```
+
+## C＃
+
+```
+
+// C# implementation of the approach 
+using System; 
+
+class GFG 
+{ 
+
+// Node of the linked list 
+public class Node  
+{ 
+    public int data; 
+    public Node next; 
+}; 
+
+// Function to create a new node 
+static Node create_Node(int data) 
+{ 
+    Node temp = new Node(); 
+    temp.data = data; 
+    temp.next = null; 
+    return temp; 
+} 
+
+// Function to print the linked list 
+static void print(Node head) 
+{ 
+    Node temp = head; 
+    while (temp != null)  
+    { 
+        Console.Write(temp.data + " "); 
+        temp = temp.next; 
+    } 
+    Console.WriteLine(); 
+} 
+
+// Function to add one to a number 
+// represented as linked list 
+static Node addOne(Node head) 
+{ 
+
+    // To store the last node in the linked 
+    // list which is not equal to 9 
+    Node last = null; 
+    Node cur = head; 
+
+    // Iterate till the last node 
+    while (cur.next != null) 
+    { 
+        if (cur.data != 9) 
+        { 
+            last = cur; 
+        } 
+        cur = cur.next; 
+    } 
+
+    // If last node is not equal to 9 
+    // add 1 to it and return the head 
+    if (cur.data != 9) 
+    { 
+        cur.data++; 
+        return head; 
+    } 
+
+    // If list is of the type 9 . 9 . 9 ... 
+    if (last == null) 
+    { 
+        last = new Node(); 
+        last.data = 0; 
+        last.next = head; 
+        head = last; 
+    } 
+
+    // For cases when the righmost node which 
+    // is not equal to 9 is not the last 
+    // node in the linked list 
+    last.data++; 
+    last = last.next; 
+
+    while (last != null)  
+    { 
+        last.data = 0; 
+        last = last.next; 
+    } 
+    return head; 
+} 
+
+// Driver code 
+public static void Main(String[] args)  
+{ 
+    Node head = create_Node(1); 
+    head.next = create_Node(2); 
+    head.next.next = create_Node(9); 
+    head.next.next.next = create_Node(9); 
+
+    Console.Write("Original list is : "); 
+    print(head); 
+
+    head = addOne(head); 
+
+    Console.Write("Resultant list is : "); 
+    print(head); 
+} 
+} 
+
+// This code is contributed by 29AjayKumar 
+
+```
+
+**Output:**
+
+```
+Original list is : 1 2 9 9 
+Resultant list is : 1 3 0 0
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

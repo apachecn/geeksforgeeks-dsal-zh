@@ -23,17 +23,306 @@ Output : 4->5->6
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// CPP program to implement Stack  
+// using linked list so that reverse 
+// can be done with O(1) extra space. 
+#include<bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+class StackNode { 
+    public: 
+    int data; 
+    StackNode *next; 
 
-*链接*
-*亮度_4*
-*代码*
+    StackNode(int data) 
+    { 
+        this->data = data; 
+        this->next = NULL; 
+    } 
+}; 
 
-| `// CPP program to implement Stack ``// using linked list so that reverse``// can be done with O(1) extra space.``#include<bits/stdc++.h>``using` `namespace` `std;``class` `StackNode {` `public` `:` `int` `data;` `StackNode *next;` `StackNode(` `int` `data)` `{` `this` `->data = data;` `this` `->next = NULL;` `}``};``class` `Stack {` `StackNode *top;` `public` `:` `// Push and pop operations` `void` `push(` `int` `data)` `{` `if` `(top == NULL) {` `top =` `new` `StackNode(data);` `return` `;` `}` `StackNode *s =` `new` `StackNode(data);` `s->next = top;` `top = s;` `}` `StackNode* pop()`​​  `{` `StackNode *s = top;` `top = top->next;` `return` `s;` `}` `// prints contents of stack` `void` `display()` `{` `StackNode *s = top;` `while` `(s != NULL) {` [ `cout << s->data <<` `" "` `;` `s = s->next;` `}` `cout << endl;` `}` `// Reverses the stack using simple` `// linked list reversal logic.` `void` `reverse()` `{` `StackNode *prev, *cur, *succ;` `cur = prev = top;` `cur = cur->next;` `prev->next = NULL;` `while` `(cur != NULL) {` `succ = cur->next;` `cur->next = prev;` `prev = cur;` `cur = succ;` `}` `top = prev;` `}``};``// driver code``int` `main()``{` `Stack *s =` `new` `Stack();` `s->push(1);` `s->push(2);` `s->push(3);` `s->push(4);` `cout <<` `"Original Stack"` `<< endl;;` `s->display();` `cout << endl;` `// reverse` `s->reverse();` `cout <<` `"Reversed Stack"` `<< endl;` ] `s->display();` `return` `0;``}``// This code is contribute by Chhavi.`[ |
+class Stack { 
 
-*chevron_right**filter_none*
+    StackNode *top; 
+
+    public: 
+
+    // Push and pop operations 
+    void push(int data) 
+    { 
+        if (top == NULL) { 
+            top = new StackNode(data); 
+            return; 
+        } 
+        StackNode *s = new StackNode(data); 
+        s->next = top; 
+        top = s; 
+    } 
+
+    StackNode* pop() 
+    { 
+        StackNode *s = top; 
+        top = top->next; 
+        return s; 
+    } 
+
+    // prints contents of stack 
+    void display() 
+    { 
+        StackNode *s = top; 
+        while (s != NULL) { 
+            cout << s->data << " "; 
+            s = s->next; 
+        } 
+        cout << endl; 
+    } 
+
+    // Reverses the stack using simple 
+    // linked list reversal logic. 
+    void reverse() 
+    { 
+        StackNode *prev, *cur, *succ; 
+        cur = prev = top; 
+        cur = cur->next; 
+        prev->next = NULL; 
+        while (cur != NULL) { 
+
+            succ = cur->next; 
+            cur->next = prev; 
+            prev = cur; 
+            cur = succ; 
+        } 
+        top = prev; 
+    } 
+}; 
+
+// driver code 
+int main() 
+{ 
+    Stack *s = new Stack(); 
+    s->push(1); 
+    s->push(2); 
+    s->push(3); 
+    s->push(4); 
+    cout << "Original Stack" << endl;; 
+    s->display(); 
+    cout << endl; 
+
+    // reverse 
+    s->reverse(); 
+
+    cout << "Reversed Stack" << endl; 
+    s->display(); 
+
+    return 0; 
+} 
+// This code is contribute by Chhavi. 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to implement Stack using linked 
+// list so that reverse can be done with O(1)  
+// extra space. 
+class StackNode { 
+    int data; 
+    StackNode next; 
+    public StackNode(int data) 
+    { 
+        this.data = data; 
+        this.next = null; 
+    } 
+} 
+
+class Stack { 
+    StackNode top; 
+
+    // Push and pop operations 
+    public void push(int data) 
+    { 
+        if (this.top == null) { 
+            top = new StackNode(data); 
+            return; 
+        } 
+        StackNode s = new StackNode(data); 
+        s.next = this.top; 
+        this.top = s; 
+    } 
+    public StackNode pop() 
+    { 
+        StackNode s = this.top; 
+        this.top = this.top.next; 
+        return s; 
+    } 
+
+    // prints contents of stack 
+    public void display() 
+    { 
+        StackNode s = this.top; 
+        while (s != null) { 
+            System.out.print(s.data + " "); 
+            s = s.next; 
+        } 
+        System.out.println(); 
+    } 
+
+    // Reverses the stack using simple 
+    // linked list reversal logic. 
+    public void reverse() 
+    { 
+        StackNode prev, cur, succ; 
+        cur = prev = this.top; 
+        cur = cur.next; 
+        prev.next = null; 
+        while (cur != null) { 
+
+            succ = cur.next; 
+            cur.next = prev; 
+            prev = cur; 
+            cur = succ; 
+        } 
+        this.top = prev; 
+    } 
+} 
+
+public class reverseStackWithoutSpace { 
+    public static void main(String[] args) 
+    { 
+        Stack s = new Stack(); 
+        s.push(1); 
+        s.push(2); 
+        s.push(3); 
+        s.push(4); 
+        System.out.println("Original Stack"); 
+        s.display(); 
+
+        // reverse 
+        s.reverse(); 
+
+        System.out.println("Reversed Stack"); 
+        s.display(); 
+    } 
+} 
+
+```
+
+## C＃
+
+```
+
+// C# program to implement Stack using linked 
+// list so that reverse can be done with O(1)  
+// extra space. 
+using System;  
+
+public class StackNode 
+{ 
+    public int data; 
+    public StackNode next; 
+    public StackNode(int data) 
+    { 
+        this.data = data; 
+        this.next = null; 
+    } 
+} 
+
+public class Stack  
+{ 
+    public StackNode top; 
+
+    // Push and pop operations 
+    public void push(int data) 
+    { 
+        if (this.top == null) 
+        { 
+            top = new StackNode(data); 
+            return; 
+        } 
+        StackNode s = new StackNode(data); 
+        s.next = this.top; 
+        this.top = s; 
+    } 
+
+    public StackNode pop() 
+    { 
+        StackNode s = this.top; 
+        this.top = this.top.next; 
+        return s; 
+    } 
+
+    // prints contents of stack 
+    public void display() 
+    { 
+        StackNode s = this.top; 
+        while (s != null)  
+        { 
+            Console.Write(s.data + " "); 
+            s = s.next; 
+        } 
+        Console.WriteLine(); 
+    } 
+
+    // Reverses the stack using simple 
+    // linked list reversal logic. 
+    public void reverse() 
+    { 
+        StackNode prev, cur, succ; 
+        cur = prev = this.top; 
+        cur = cur.next; 
+        prev.next = null; 
+        while (cur != null) 
+        { 
+            succ = cur.next; 
+            cur.next = prev; 
+            prev = cur; 
+            cur = succ; 
+        } 
+        this.top = prev; 
+    } 
+} 
+
+public class reverseStackWithoutSpace  
+{ 
+    // Driver code 
+    public static void Main(String []args) 
+    { 
+        Stack s = new Stack(); 
+        s.push(1); 
+        s.push(2); 
+        s.push(3); 
+        s.push(4); 
+        Console.WriteLine("Original Stack"); 
+        s.display(); 
+
+        // reverse 
+        s.reverse(); 
+
+        Console.WriteLine("Reversed Stack"); 
+        s.display(); 
+    } 
+} 
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+**Output:**
+
+```
+Original Stack 
+4 3 2 1
+Reversed Stack 
+1 2 3 4
+
+```
+
+本文由 **Niharika Sahai** 提供。 如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。

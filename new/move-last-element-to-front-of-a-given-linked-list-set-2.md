@@ -20,20 +20,128 @@
 
 下面是上述方法的实现：
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// CPP Program to move k last elements  
+// to front in a given linked list  
+#include<iostream> 
+using namespace std; 
 
-*play_arrow*
+// A linked list node  
+class Node 
+{ 
+    public: 
 
-*链接*
-*亮度_4*
-*代码*
+    int data; 
+    Node* next; 
+    Node(int d) { 
+        data = d; 
+        next = NULL; 
+    } 
+}; 
 
-| `// CPP Program to move k last elements ``// to front in a given linked list ``#include<iostream>``using` `namespace` `std;` [`// A linked list node ``class` `Node``{` `public` `:` `int` `data;` `Node* next;` `Node(` `int` `d) {` `data = d;` `next = NULL;` `}``};``// Function to add a new node at the``// end/tail of Linked List ``void` `insertAtTail(Node*& head, Node*& tail,` `int` `d ) {` `Node* newnode =` `new` `Node(d);` `if` `(tail == NULL) {` `tail = head = newnode;`​​  `return` `;`[HT G50] `}` `tail->next = newnode;` `tail = newnode;``}``// Function to add a node at the``// beginning of Linked List ``void` `insertAtHead(Node*& head, Node*& tail, ` `Node*& deletedNode) ``{` `if` `(head == NULL) {` `head = tail = deletedNode;` `return` `;` `}` `deletedNode->next = head;` `head = deletedNode;` `return` `;``}``// Function to add a node at the beginning of Linked List ``Node* deleteAtTail(Node*& head, Node*& tail) {` `Node* deleted = tail;` `Node* temp = head;` `while` `(temp->next->next != NULL) {` `temp = temp->next;`[ `}` `temp->next = NULL;` `tail = temp;` `return` `deleted;``}``// k can be more than n, so this function takes the modulus ``// of k with n and delete nodes from end k `HTG346] `void` `appendAtFront(Node*& head, Node*& tail,` `int` `n,` `int` `k) ``{` `k = k % n;` `while` `(k != 0) {` `Node* deleted = deleteAtTail(head, tail);` `insertAtHead(head, tail, deleted);` `k--;` `}``}``// Function to print nodes in a given linked list ``void` `printLinkedList(Node* head) {` `while` `(head != NULL) {` `cout << head->data <<` `" "` `;` `head = head->next;` `}` `cout << endl;``}``// Driver Code ``int` `main() ``{` `// Pointer to the start of the linked list` `Node* head = NULL;` `// Pointer to the end of the linked list` `Node* tail = NULL; ` `// Number of elements in the linked list` `int` `n = 6; ` `// Building linked list` `insertAtTail(head, tail, 1);` `insertAtTail(head, tail, 2);` `insertAtTail(head, tail, 3);` `insertAtTail(head, tail, 4);` `insertAtTail(head, tail, 5);` `insertAtTail(head, tail, 6);` 428]  `// appending the linked list` `cout <<` `"Linked List before appending: "` `;` `printLinkedList(head);` `// Number of elements to be appended` `int` `k = 7;` `// Function call` `appendAtFront(head, tail, n, k); ` `// Printing linked list after appending the list` `cout <<` `"Linked List after appending "` `<<k<<` `" elements: "` [ `;` `printLinkedList(head); ``}` |
+// Function to add a new node at the 
+// end/tail of Linked List  
+void insertAtTail(Node*& head, Node*& tail, int d ) { 
+    Node* newnode = new Node(d); 
+    if(tail == NULL) { 
+        tail = head = newnode; 
+        return; 
+    } 
 
-*chevron_right**filter_none***Output:**
+    tail->next = newnode; 
+    tail = newnode; 
+} 
+
+// Function to add a node at the 
+// beginning of Linked List  
+void insertAtHead(Node*& head, Node*& tail,  
+                           Node*& deletedNode)  
+{ 
+    if(head == NULL) { 
+        head = tail = deletedNode; 
+        return; 
+    } 
+    deletedNode->next = head; 
+    head = deletedNode; 
+    return; 
+} 
+
+// Function to add a node at the beginning of Linked List  
+Node* deleteAtTail(Node*& head, Node*& tail) { 
+    Node* deleted = tail; 
+    Node* temp = head; 
+
+    while(temp->next->next != NULL) { 
+        temp = temp->next; 
+    } 
+
+    temp->next = NULL; 
+    tail = temp; 
+    return deleted; 
+} 
+
+// k can be more than n, so this function takes the modulus  
+// of k with n and delete nodes from end k  
+// times and simultaneously insert it in front 
+void appendAtFront(Node*& head, Node*& tail, int n, int k)  
+{ 
+    k = k % n; 
+    while(k != 0) { 
+        Node* deleted = deleteAtTail(head, tail); 
+        insertAtHead(head, tail, deleted); 
+        k--; 
+    } 
+} 
+
+// Function to print nodes in a given linked list  
+void printLinkedList(Node* head) { 
+    while(head != NULL) { 
+        cout << head->data << " "; 
+        head = head->next; 
+    } 
+    cout << endl; 
+} 
+
+// Driver Code  
+int main()  
+{ 
+    // Pointer to the start of the linked list 
+    Node* head = NULL; 
+
+    // Pointer to the end of the linked list 
+    Node* tail = NULL;  
+
+    // Number of elements in the linked list 
+    int n = 6;  
+
+    // Building linked list 
+    insertAtTail(head, tail, 1); 
+    insertAtTail(head, tail, 2); 
+    insertAtTail(head, tail, 3); 
+    insertAtTail(head, tail, 4); 
+    insertAtTail(head, tail, 5); 
+    insertAtTail(head, tail, 6); 
+
+    // Printing linked list before  
+    // appending the linked list 
+    cout << "Linked List before appending: "; 
+    printLinkedList(head); 
+
+    // Number of elements to be appended 
+    int k = 7; 
+
+    // Function call 
+    appendAtFront(head, tail, n, k);  
+
+    // Printing linked list after appending the list 
+    cout << "Linked List after appending "<<k<<" elements: "; 
+    printLinkedList(head);  
+} 
+
+```
+
+**Output:**
 
 ```
 Linked List before appending: 1 2 3 4 5 6 

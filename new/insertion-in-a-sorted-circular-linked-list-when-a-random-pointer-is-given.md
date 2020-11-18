@@ -21,17 +21,442 @@
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation of the approach 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Node structure 
+struct Node { 
+    Node* next; 
+    int data; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Function to create a node 
+Node* create() 
+{ 
+    Node* new_node = (Node*)malloc(sizeof(Node)); 
+    new_node->next = NULL; 
 
-| `// C++ implementation of the approach``#include <bits/stdc++.h>``using` `namespace` `std;``// Node structure``struct` `Node {` `Node* next;` `int` `data;``};``// Function to create a node``Node* create()``{` `Node* new_node = (Node*)` `(` `sizeof` `(Node));` `new_node->next = NULL;` `return` `new_node;``}`​​`// Function to find and return the head``Node* find_head(Node* random)``{` `// If the list is empty` `if` `(random == NULL)` `return` `NULL;` `Node *head, *var = random;` `// Finding the last node of the linked list` `// the last node must have the highest value` `// if no such element is present then all the nodes`] `// of the linked list must be same` `while` `(!(var->data > var->next->data &#124;&#124; var->next == random)) {` `var = var->next;` `}`[ `// Return the head` `return` `var->next;``}`的`// Function to insert a new_node in the list in sorted fashion``// Note that this function expects a pointer to head node``// as this can modify the head of the input linked list``Node* sortedInsert(Node* head_ref, Node* new_node)``{` `Node* current = head_ref;` `// If the list is empty` `if` `(current == NULL) {` `new_node->next = new_node;` `head_ref = new_node;` `}` `// If the node to be inserted is the smallest` `// then it has to be the new head` `else` `if` `(current->data >= new_node->data) {` `// Find the last node of the list as it` `// will be pointing to the head` `while` `(current->next != head_ref)` `current = current->next;` `current->next = new_node;` `new_node->next = head_ref;` `head_ref = new_node;` `}` `else` `{` `// Locate the node before the point of insertion` `while` `(current->next != head_ref` `&& current->next->data < new_node->data) {` `current = current->next;` `}` `new_node->next = current->next;` `current->next = new_node;` `}` TG142] `return` `head_ref;``}``// Function to print the nodes of the linked list``void` `printList(Node* start)``{` `Node* temp;` `if` `(start != NULL) {`] `temp = start;` `do` `{` `cout << temp->data <<` `" "` `;` `temp = temp->next;` `}` `while` `(temp != start);` `}``}``// Driver code``int` `main()``{` `int` ] `int` `list_size, i;` `// Start with an empty linked list` [HTG4 40] `Node* start = NULL;` `Node* temp;` `// Create linked list from the given array` `for` `(i = 0; i < 6; i++) {` `// Move to a random node if it exists` `if` `(start != NULL)`]  `for` `(` `int` `j = 0; j < (` `rand` `() % 10); j++)` `start = start->next;` `temp = create();` `temp->data = arr[i];` `start = sortedInsert(find_head(start), temp);` `}` `// Print the contents of the created list` `printList(find_head(start));` `return` `0;``}` |
+    return new_node; 
+} 
 
-*chevron_right**filter_none*
+// Function to find and return the head 
+Node* find_head(Node* random) 
+{ 
+    // If the list is empty 
+    if (random == NULL) 
+        return NULL; 
+
+    Node *head, *var = random; 
+
+    // Finding the last node of the linked list 
+    // the last node must have the highest value 
+    // if no such element is present then all the nodes 
+    // of the linked list must be same 
+    while (!(var->data > var->next->data || var->next == random)) { 
+        var = var->next; 
+    } 
+
+    // Return the head 
+    return var->next; 
+} 
+
+// Function to insert a new_node in the list in sorted fashion 
+// Note that this function expects a pointer to head node 
+// as this can modify the head of the input linked list 
+Node* sortedInsert(Node* head_ref, Node* new_node) 
+{ 
+    Node* current = head_ref; 
+
+    // If the list is empty 
+    if (current == NULL) { 
+        new_node->next = new_node; 
+        head_ref = new_node; 
+    } 
+
+    // If the node to be inserted is the smallest 
+    // then it has to be the new head 
+    else if (current->data >= new_node->data) { 
+
+        // Find the last node of the list as it 
+        // will be pointing to the head 
+        while (current->next != head_ref) 
+            current = current->next; 
+        current->next = new_node; 
+        new_node->next = head_ref; 
+        head_ref = new_node; 
+    } 
+
+    else { 
+        // Locate the node before the point of insertion 
+        while (current->next != head_ref 
+               && current->next->data < new_node->data) { 
+            current = current->next; 
+        } 
+
+        new_node->next = current->next; 
+        current->next = new_node; 
+    } 
+
+    // Return the new head 
+    return head_ref; 
+} 
+
+// Function to print the nodes of the linked list 
+void printList(Node* start) 
+{ 
+    Node* temp; 
+
+    if (start != NULL) { 
+        temp = start; 
+        do { 
+            cout << temp->data << " "; 
+            temp = temp->next; 
+        } while (temp != start); 
+    } 
+} 
+
+// Driver code 
+int main() 
+{ 
+
+    int arr[] = { 12, 56, 2, 11, 1, 90 }; 
+    int list_size, i; 
+
+    // Start with an empty linked list 
+    Node* start = NULL; 
+    Node* temp; 
+
+    // Create linked list from the given array 
+    for (i = 0; i < 6; i++) { 
+
+        // Move to a random node if it exists 
+        if (start != NULL) 
+            for (int j = 0; j < (rand() % 10); j++) 
+                start = start->next; 
+
+        temp = create(); 
+        temp->data = arr[i]; 
+        start = sortedInsert(find_head(start), temp); 
+    } 
+
+    // Print the contents of the created list 
+    printList(find_head(start)); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation of the approach 
+import java.util.*; 
+import java.lang.*; 
+import java.io.*; 
+
+class GFG 
+{ 
+
+// Node structure 
+static class Node  
+{ 
+    Node next; 
+    int data; 
+}; 
+
+// Function to create a node 
+static Node create() 
+{ 
+    Node new_node = new Node(); 
+    new_node.next = null; 
+
+    return new_node; 
+} 
+
+// Function to find and return the head 
+static Node find_head(Node random) 
+{ 
+    // If the list is empty 
+    if (random == null) 
+        return null; 
+
+    Node head, var = random; 
+
+    // Finding the last node of the linked list 
+    // the last node must have the highest value 
+    // if no such element is present then all the nodes 
+    // of the linked list must be same 
+    while (!(var.data > var.next.data ||  
+                        var.next == random))  
+    { 
+        var = var.next; 
+    } 
+
+    // Return the head 
+    return var.next; 
+} 
+
+// Function to insert a new_node in the list  
+// in sorted fashion. Note that this function  
+// expects a pointer to head node as this can 
+// modify the head of the input linked list 
+static Node sortedInsert(Node head_ref,  
+                         Node new_node) 
+{ 
+    Node current = head_ref; 
+
+    // If the list is empty 
+    if (current == null)  
+    { 
+        new_node.next = new_node; 
+        head_ref = new_node; 
+    } 
+
+    // If the node to be inserted is the smallest 
+    // then it has to be the new head 
+    else if (current.data >= new_node.data) 
+    { 
+
+        // Find the last node of the list as it 
+        // will be pointing to the head 
+        while (current.next != head_ref) 
+            current = current.next; 
+        current.next = new_node; 
+        new_node.next = head_ref; 
+        head_ref = new_node; 
+    } 
+
+    else 
+    { 
+        // Locate the node before the point of insertion 
+        while (current.next != head_ref &&  
+               current.next.data < new_node.data)  
+        { 
+            current = current.next; 
+        } 
+        new_node.next = current.next; 
+        current.next = new_node; 
+    } 
+
+    // Return the new head 
+    return head_ref; 
+} 
+
+// Function to print the nodes of the linked list 
+static void printList(Node start) 
+{ 
+    Node temp; 
+
+    if (start != null)  
+    { 
+        temp = start; 
+        do 
+        { 
+            System.out.print(temp.data + " "); 
+            temp = temp.next; 
+        } while (temp != start); 
+    } 
+} 
+
+// Driver code 
+public static void main(String args[]) 
+{ 
+
+    int arr[] = { 12, 56, 2, 11, 1, 90 }; 
+    int list_size, i; 
+
+    // Start with an empty linked list 
+    Node start = null; 
+    Node temp; 
+
+    // Create linked list from the given array 
+    for (i = 0; i < 6; i++)  
+    { 
+
+        // Move to a random node if it exists 
+        if (start != null) 
+            for (int j = 0;  
+                     j < (Math.random() * 10); j++) 
+                start = start.next; 
+
+        temp = create(); 
+        temp.data = arr[i]; 
+        start = sortedInsert(find_head(start), temp); 
+    } 
+
+    // Print the contents of the created list 
+    printList(find_head(start)); 
+} 
+} 
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+## C＃
+
+```
+
+// C# implementation of the approach  
+using System; 
+
+class GFG  
+{  
+
+// Node structure  
+public class Node  
+{  
+    public Node next;  
+    public int data;  
+};  
+
+// Function to create a node  
+static Node create()  
+{  
+    Node new_node = new Node();  
+    new_node.next = null;  
+
+    return new_node;  
+}  
+
+// Function to find and return the head  
+static Node find_head(Node random)  
+{  
+    // If the list is empty  
+    if (random == null)  
+        return null;  
+
+    Node var = random;  
+
+    // Finding the last node of the linked list  
+    // the last node must have the highest value  
+    // if no such element is present then all the nodes  
+    // of the linked list must be same  
+    while (!(var.data > var.next.data ||  
+                        var.next == random))  
+    {  
+        var = var.next;  
+    }  
+
+    // Return the head  
+    return var.next;  
+}  
+
+// Function to insert a new_node in the list  
+// in sorted fashion. Note that this function  
+// expects a pointer to head node as this can  
+// modify the head of the input linked list  
+static Node sortedInsert(Node head_ref,  
+                        Node new_node)  
+{  
+    Node current = head_ref;  
+
+    // If the list is empty  
+    if (current == null)  
+    {  
+        new_node.next = new_node;  
+        head_ref = new_node;  
+    }  
+
+    // If the node to be inserted is the smallest  
+    // then it has to be the new head  
+    else if (current.data >= new_node.data)  
+    {  
+
+        // Find the last node of the list as it  
+        // will be pointing to the head  
+        while (current.next != head_ref)  
+            current = current.next;  
+        current.next = new_node;  
+        new_node.next = head_ref;  
+        head_ref = new_node;  
+    }  
+
+    else
+    {  
+        // Locate the node before the point of insertion  
+        while (current.next != head_ref &&  
+            current.next.data < new_node.data)  
+        {  
+            current = current.next;  
+        }  
+        new_node.next = current.next;  
+        current.next = new_node;  
+    }  
+
+    // Return the new head  
+    return head_ref;  
+}  
+
+// Function to print the nodes of the linked list  
+static void printList(Node start)  
+{  
+    Node temp;  
+
+    if (start != null)  
+    {  
+        temp = start;  
+        do
+        {  
+            Console.Write(temp.data + " ");  
+            temp = temp.next;  
+        } while (temp != start);  
+    }  
+}  
+
+// Driver code  
+public static void Main(String []args)  
+{  
+
+    int []arr = { 12, 56, 2, 11, 1, 90 };  
+    int i;  
+
+    // Start with an empty linked list  
+    Node start = null;  
+    Node temp;  
+
+    // Create linked list from the given array  
+    for (i = 0; i < 6; i++)  
+    {  
+
+        // Move to a random node if it exists  
+        if (start != null)  
+            for (int j = 0;  
+                    j < (new Random().Next() * 10); j++)  
+                start = start.next;  
+
+        temp = create();  
+        temp.data = arr[i];  
+        start = sortedInsert(find_head(start), temp);  
+    }  
+
+    // Print the contents of the created list  
+    printList(find_head(start));  
+}  
+} 
+
+// This code is contributed by PrinciRaj1992 
+
+```
+
+**Output:**
+
+```
+1 2 11 12 56 90
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

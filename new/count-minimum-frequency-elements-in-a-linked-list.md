@@ -26,17 +26,352 @@ Output : 1
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ program to find count of minimum 
+// frequqncy elements in Linked list 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+/* Link list node */
+struct Node { 
+    int key; 
+    struct Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+/* Given a reference (pointer to pointer) to the head  
+of a list and an int, push a new node on the front  
+of the list. */
+void push(struct Node** head_ref, int new_key) 
+{ 
+    struct Node* new_node = new Node; 
+    new_node->key = new_key; 
+    new_node->next = (*head_ref); 
+    (*head_ref) = new_node; 
+} 
 
-| `// C++ program to find count of minimum``// frequqncy elements in Linked list``#include <bits/stdc++.h>``using` `namespace` `std;` [`/* Link list node */``struct` `Node {` `int` `key;` `struct` `Node* next;``};``/* Given a reference (pointer to pointer) to the head ``of a list and an int, push a new node on the front ``of the list. */``void` `push(` `struct` `Node** head_ref,` `int` `new_key)``{` `struct` `Node* new_node =` `new` `Node;` `new_node->key = new_key;` `new_node->next = (*head_ref);` `(*head_ref) = new_node;``}``// Function to count minimum frequency elements``// in the linked list``int` `countMinimum(` `struct` `Node* head)``{`[HTG20 3]  `// Store frequencies of all nodes.` `unordered_map<` `int` `,` `int` `> mp;` `struct` `Node* current = head;` `while` `(current != NULL) {` `int` `data = current->key;` `mp[data]++;` `current = current->next;` `}` `// Find min frequency` `current = head;` `int` `min_frequency = INT_MAX, countMin = 0;` `for` `(` `auto` `it = mp.begin(); it != mp.end(); it++) {` `if` `(it->second <= min_frequency) {` `min_frequency = it->second;` `}` `}` `// Find count of min frequency elements` `for` `(` `auto` `it = mp.begin(); it != mp.end(); it++) {` `if` `(it->second == min_frequency) {` [ `countMin += (it->second);` `}` `}` `return` `countMin;``}``/* Driver program to test count function*/``int` `main()``{` `/* Start with the empty list */` `struct` `Node* head = NULL;` `int` `x = 21;`​​ `/* Use push() to construct below list ` `10->10->11->30->10 */` `push(&head, 10);` `push(&head, 30);` `push(&head, 11);` `push(&head, 10);` `push(&head, 10);` `cout << countMinimum(head) << endl;` `return` `0;``}` |
+// Function to count minimum frequency elements 
+// in the linked list 
+int countMinimum(struct Node* head) 
+{ 
+    // Store frequencies of all nodes. 
+    unordered_map<int, int> mp; 
+    struct Node* current = head; 
+    while (current != NULL) { 
+        int data = current->key; 
+        mp[data]++; 
+        current = current->next; 
+    } 
 
-*chevron_right**filter_none*
+    // Find min frequency 
+    current = head; 
+    int min_frequency = INT_MAX, countMin = 0; 
+    for (auto it = mp.begin(); it != mp.end(); it++) { 
+        if (it->second <= min_frequency) { 
+            min_frequency = it->second; 
+        } 
+    } 
+
+    // Find count of min frequency elements 
+    for (auto it = mp.begin(); it != mp.end(); it++) { 
+        if (it->second == min_frequency) { 
+            countMin += (it->second); 
+        } 
+    } 
+
+    return countMin; 
+} 
+
+/* Driver program to test count function*/
+int main() 
+{ 
+    /* Start with the empty list */
+    struct Node* head = NULL; 
+    int x = 21; 
+
+    /* Use push() to construct below list  
+    10->10->11->30->10 */
+    push(&head, 10); 
+    push(&head, 30); 
+    push(&head, 11); 
+    push(&head, 10); 
+    push(&head, 10); 
+
+    cout << countMinimum(head) << endl; 
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java program to find count of minimum 
+// frequqncy elements in Linked list 
+import java.util.*; 
+
+class GFG 
+{ 
+
+/* Link list node */
+static class Node { 
+    int key; 
+    Node next; 
+}; 
+
+/* Given a reference (pointer to pointer) to the head  
+of a list and an int, push a new node on the front  
+of the list. */
+static Node push(Node head_ref, int new_key) 
+{ 
+    Node new_node = new Node(); 
+    new_node.key = new_key; 
+    new_node.next = (head_ref); 
+    (head_ref) = new_node; 
+    return head_ref; 
+} 
+
+// Function to count minimum frequency elements 
+// in the linked list 
+static int countMinimum( Node head) 
+{ 
+    // Store frequencies of all nodes. 
+    HashMap<Integer,Integer> mp = new HashMap<Integer,Integer>(); 
+    Node current = head; 
+    while (current != null) 
+    { 
+        int data = current.key; 
+        mp.put(data, (mp.get(data) == null ? 1:mp.get(data) + 1)); 
+        current = current.next; 
+    } 
+
+    // Find min frequency 
+    current = head; 
+    int min_frequency = Integer.MAX_VALUE, countMin = 0; 
+    for (Map.Entry<Integer,Integer> it :mp.entrySet())  
+    { 
+        if (it.getValue() <= min_frequency) 
+        { 
+            min_frequency = it.getValue(); 
+        } 
+    } 
+
+    // Find count of min frequency elements 
+    for (Map.Entry<Integer,Integer> it :mp.entrySet())  
+    { 
+        if (it.getValue() == min_frequency) 
+        { 
+            countMin += (it.getValue()); 
+        } 
+    } 
+
+    return countMin; 
+} 
+
+/* Driver code*/
+public static void main(String args[]) 
+{ 
+    /* Start with the empty list */
+    Node head = null; 
+    int x = 21; 
+
+    /* Use push() to construct below list  
+    10.10.11.30.10 */
+    head = push(head, 10); 
+    head = push(head, 30); 
+    head = push(head, 11); 
+    head = push(head, 10); 
+    head = push(head, 10); 
+
+    System.out.println( countMinimum(head) ); 
+} 
+} 
+
+// This code is contributed by andrew1234 
+
+```
+
+## Python3
+
+```
+
+# Python3 program to find count of minimum  
+# frequqncy elements in Linked list  
+import sys 
+import math 
+
+# Link list node 
+class Node: 
+    def __init__(self,data): 
+        self.data = data 
+        self.next = None
+
+# Given a reference (pointer to pointer) to the head  
+# of a list and an int, push a new node on the front  
+# of the list.  
+def push(head,data): 
+    if not head: 
+        return Node(data) 
+    temp = Node(data) 
+    temp.next = head 
+    head = temp 
+    return head 
+
+# Function to count minimum frequency elements  
+# in the linked list  
+def countMinimun(head): 
+
+    # Store frequencies of all nodes.  
+    freq = {} 
+    temp = head 
+    while(temp): 
+        d = temp.data 
+        if d in freq: 
+            freq[d] = freq.get(d) + 1
+        else: 
+            freq[d] = 1
+        temp = temp.next
+
+    # Find min frequency 
+    minimum_freq = sys.maxsize 
+    for i in freq: 
+        minimum_freq = min(minimum_freq, freq.get(i)) 
+
+    # Find count of min frequency elements  
+    countMin = 0
+    for i in freq: 
+        if freq.get(i) == minimum_freq: 
+            countMin += 1
+    return countMin 
+
+# Driver program to test count function # 
+if __name__=='__main__': 
+
+    # Start with the empty list 
+    head = None
+
+    # Use push() to construct below list  
+    #10->10->11->30->10  
+    head = push(head,10) 
+    head = push(head,30) 
+    head = push(head,11) 
+    head = push(head,10) 
+    head = push(head,10) 
+
+    print(countMinimun(head)) 
+
+# This code is Contribute by Vikash Kumar 37 
+
+```
+
+## C＃
+
+```
+
+// C# program to find count of minimum 
+// frequqncy elements in Linked list 
+using System; 
+using System.Collections.Generic; 
+
+class GFG 
+{ 
+
+/* Link list node */
+public class Node { 
+    public int key; 
+    public Node next; 
+}; 
+
+/* Given a reference (pointer to pointer) to the head  
+of a list and an int, push a new node on the front  
+of the list. */
+static Node push(Node head_ref, int new_key) 
+{ 
+    Node new_node = new Node(); 
+    new_node.key = new_key; 
+    new_node.next = (head_ref); 
+    head_ref = new_node; 
+    return head_ref; 
+} 
+
+// Function to count minimum frequency elements 
+// in the linked list 
+static int countMinimum( Node head) 
+{ 
+    // Store frequencies of all nodes. 
+    IDictionary<int,int> mp = new Dictionary<int,int>(); 
+
+    Node current = head; 
+    while (current != null) 
+    { 
+        int data = current.key; 
+        int val = 0; 
+        mp[data] = (!mp.TryGetValue(data,out val)  ? 1:mp[data]+ 1); 
+        current = current.next; 
+    } 
+
+    // Find min frequency 
+    current = head; 
+    int min_frequency = int.MaxValue, countMin = 0; 
+    foreach (KeyValuePair<int, int> it in mp)  
+    { 
+        if (it.Value <= min_frequency) 
+        { 
+            min_frequency = it.Value; 
+        } 
+    } 
+
+    // Find count of min frequency elements 
+    foreach (KeyValuePair<int, int> it in mp)  
+    { 
+        if (it.Value == min_frequency) 
+        { 
+            countMin += (it.Value); 
+        } 
+    } 
+
+    return countMin; 
+} 
+
+/* Driver code*/
+public static void Main() 
+{ 
+    /* Start with the empty list */
+    Node head = null; 
+    int x = 21; 
+
+    /* Use push() to construct below list  
+    10.10.11.30.10 */
+    head = push(head, 10); 
+    head = push(head, 30); 
+    head = push(head, 11); 
+    head = push(head, 10); 
+    head = push(head, 10); 
+
+    Console.WriteLine( countMinimum(head) ); 
+} 
+} 
+
+// This code is contributed by SoumikMondal 
+
+```
+
+**Output:**
+
+```
+2
+
+```
+
+**时间复杂度：** O（n）
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

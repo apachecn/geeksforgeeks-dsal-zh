@@ -187,17 +187,716 @@ def selectionSort(head):
 
 ## C ++
 
-*filter_none*
+```
 
-*编辑*
-*关闭*
+// C++ implementation of the approach 
+#include <bits/stdc++.h> 
+using namespace std; 
 
-*play_arrow*
+// Linked List Node 
+struct Node { 
+    int data; 
+    Node* next; 
+}; 
 
-*链接*
-*亮度_4*
-*代码*
+// Utility function to create a 
+// new Linked List Node 
+Node* newNode(int val) 
+{ 
+    Node* temp = new Node; 
 
-| `// C++ implementation of the approach``#include <bits/stdc++.h>``using` `namespace` `std;``// Linked List Node``struct` `Node {` `int` `data;` `Node* next;``};``// Utility function to create a``// new Linked List Node``Node* newNode(` `int` `val)``{` `Node* temp =` `new` `Node;` `temp->data = val;`] `temp->next = NULL;` `return` `temp;``}`[`// Function to sort a linked list using selection``// sort algorithm by swapping the next pointers``Node* selectionSort(Node* head)``{` `Node *a, *b, *c, *d, *r;`[H TG368]  `a = b = head;` `// While b is not the last node` `while` `(b->next) {` `c = d = b->next;` `// While d is pointing to a valid node` `while` `(d) {` `if` `(b->data > d->data) {` `// If d appears immediately after b` `if` `(b->next == d) {` `// Case 1: b is the head of the linked list` `if` `(b == head) {` `// Move d before b` `b->next = d->next;` `d->next = b;` `// Swap b and d pointers` `r = b;` `b = d;`[ `d = r;` `c = d;` `// Update the head` `head = b;` `// Skip to the next element` `// as it is already in order` `d = d->next;` `}` `// Case 2: b is not the head of the linked list``{` `// Move d before b` `b->next = d->next;` `d->next = b;` `a->next = d;` `// Swap b and d pointers` `r = b;` `b = d;` `d = r;` `c = d;` `// Skip to the next element` `// as it is already in order` `d = d->next;` `}` `}` `// If b and d have some non-zero` `// number of nodes in between them`] `else` `{` `// Case 3: b is the head of the linked list` `if` `(b == head) {` `// Swap b->next and d->next` `r = b->next;` `b->next = d->next;` `d->next = r;` `c->next = b;` `// Swap b and d pointers` `r = b;` `b = d;` `d = r;` `c = d;` `// Skip to the next element` `// as it is already in order` `// Update the head` `head = b;` `}` `// Case 4: b is not the head of the linked list` `else` `{` `// Swap b->next and d->next` `r = b->next;` `b->next = d->next;` `d->next = r;` `c->next = b;` `a->next = d;` `// Swap b and d pointers` `r = b;`]  `b = d;` `d = r;` `c = d;` `// Skip to the next element` `// as it is already in order` `d = d->next;`]  `}` `}` `}` `else` `{` `// Update c and skip to the next element` `// as it is already in order` `c = d;` `d = d->next;` `}` `}` `a = b;`] `b = b->next;` `}` `return` `head;` ​​`}``// Function to print the list``void` `printList(Node* head)`24] `{` `while` `(head) {` `cout << head->data <<` `" "` `;` `head = head->next;` `}``}``// Driver Code``int` `main()``{` `Node* head = newNode(5);` `head->next = newNode(4);` `head->next->next = newNode(3);` `head = selectionSort(head);` `printList(head);` `return` `0;``}` |
+    temp->data = val; 
 
-*chevron_right**filter_none*
+    temp->next = NULL; 
+
+    return temp; 
+} 
+
+// Function to sort a linked list using selection 
+// sort algorithm by swapping the next pointers 
+Node* selectionSort(Node* head) 
+{ 
+    Node *a, *b, *c, *d, *r; 
+
+    a = b = head; 
+
+    // While b is not the last node 
+    while (b->next) { 
+
+        c = d = b->next; 
+
+        // While d is pointing to a valid node 
+        while (d) { 
+
+            if (b->data > d->data) { 
+
+                // If d appears immediately after b 
+                if (b->next == d) { 
+
+                    // Case 1: b is the head of the linked list 
+                    if (b == head) { 
+
+                        // Move d before b 
+                        b->next = d->next; 
+                        d->next = b; 
+
+                        // Swap b and d pointers 
+                        r = b; 
+                        b = d; 
+                        d = r; 
+
+                        c = d; 
+
+                        // Update the head 
+                        head = b; 
+
+                        // Skip to the next element 
+                        // as it is already in order 
+                        d = d->next; 
+                    } 
+
+                    // Case 2: b is not the head of the linked list 
+                    else { 
+
+                        // Move d before b 
+                        b->next = d->next; 
+                        d->next = b; 
+                        a->next = d; 
+
+                        // Swap b and d pointers 
+                        r = b; 
+                        b = d; 
+                        d = r; 
+
+                        c = d; 
+
+                        // Skip to the next element 
+                        // as it is already in order 
+                        d = d->next; 
+                    } 
+                } 
+
+                // If b and d have some non-zero 
+                // number of nodes in between them 
+                else { 
+
+                    // Case 3: b is the head of the linked list 
+                    if (b == head) { 
+
+                        // Swap b->next and d->next 
+                        r = b->next; 
+                        b->next = d->next; 
+                        d->next = r; 
+                        c->next = b; 
+
+                        // Swap b and d pointers 
+                        r = b; 
+                        b = d; 
+                        d = r; 
+
+                        c = d; 
+
+                        // Skip to the next element 
+                        // as it is already in order 
+                        d = d->next; 
+
+                        // Update the head 
+                        head = b; 
+                    } 
+
+                    // Case 4: b is not the head of the linked list 
+                    else { 
+
+                        // Swap b->next and d->next 
+                        r = b->next; 
+                        b->next = d->next; 
+                        d->next = r; 
+                        c->next = b; 
+                        a->next = d; 
+
+                        // Swap b and d pointers 
+                        r = b; 
+                        b = d; 
+                        d = r; 
+
+                        c = d; 
+
+                        // Skip to the next element 
+                        // as it is already in order 
+                        d = d->next; 
+                    } 
+                } 
+            } 
+            else { 
+
+                // Update c and skip to the next element 
+                // as it is already in order 
+                c = d; 
+                d = d->next; 
+            } 
+        } 
+
+        a = b; 
+        b = b->next; 
+    } 
+
+    return head; 
+} 
+
+// Function to print the list 
+void printList(Node* head) 
+{ 
+    while (head) { 
+        cout << head->data << " "; 
+        head = head->next; 
+    } 
+} 
+
+// Driver Code 
+int main() 
+{ 
+    Node* head = newNode(5); 
+    head->next = newNode(4); 
+    head->next->next = newNode(3); 
+
+    head = selectionSort(head); 
+
+    printList(head); 
+
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation of the approach 
+class GFG { 
+
+    // Linked List Node 
+    static class Node { 
+        int data; 
+        Node next; 
+    }; 
+
+    // Utility function to create a 
+    // new Linked List Node 
+    static Node newNode(int val) 
+    { 
+        Node temp = new Node(); 
+
+        temp.data = val; 
+
+        temp.next = null; 
+
+        return temp; 
+    } 
+
+    // Function to sort a linked list using selection 
+    // sort algorithm by swapping the next pointers 
+    static Node selectionSort(Node head) 
+    { 
+        Node a, b, c, d, r; 
+
+        a = b = head; 
+
+        // While b is not the last node 
+        while (b.next != null) { 
+
+            c = d = b.next; 
+
+            // While d is pointing to a valid node 
+            while (d != null) { 
+
+                if (b.data > d.data) { 
+
+                    // If d appears immediately after b 
+                    if (b.next == d) { 
+
+                        // Case 1: b is the head of the linked list 
+                        if (b == head) { 
+
+                            // Move d before b 
+                            b.next = d.next; 
+                            d.next = b; 
+
+                            // Swap b and d pointers 
+                            r = b; 
+                            b = d; 
+                            d = r; 
+
+                            c = d; 
+
+                            // Update the head 
+                            head = b; 
+
+                            // Skip to the next element 
+                            // as it is already in order 
+                            d = d.next; 
+                        } 
+
+                        // Case 2: b is not the head of the linked list 
+                        else { 
+
+                            // Move d before b 
+                            b.next = d.next; 
+                            d.next = b; 
+                            a.next = d; 
+
+                            // Swap b and d pointers 
+                            r = b; 
+                            b = d; 
+                            d = r; 
+
+                            c = d; 
+
+                            // Skip to the next element 
+                            // as it is already in order 
+                            d = d.next; 
+                        } 
+                    } 
+
+                    // If b and d have some non-zero 
+                    // number of nodes in between them 
+                    else { 
+
+                        // Case 3: b is the head of the linked list 
+                        if (b == head) { 
+
+                            // Swap b.next and d.next 
+                            r = b.next; 
+                            b.next = d.next; 
+                            d.next = r; 
+                            c.next = b; 
+
+                            // Swap b and d pointers 
+                            r = b; 
+                            b = d; 
+                            d = r; 
+
+                            c = d; 
+
+                            // Skip to the next element 
+                            // as it is already in order 
+                            d = d.next; 
+
+                            // Update the head 
+                            head = b; 
+                        } 
+
+                        // Case 4: b is not the head of the linked list 
+                        else { 
+
+                            // Swap b.next and d.next 
+                            r = b.next; 
+                            b.next = d.next; 
+                            d.next = r; 
+                            c.next = b; 
+                            a.next = d; 
+
+                            // Swap b and d pointers 
+                            r = b; 
+                            b = d; 
+                            d = r; 
+
+                            c = d; 
+
+                            // Skip to the next element 
+                            // as it is already in order 
+                            d = d.next; 
+                        } 
+                    } 
+                } 
+                else { 
+
+                    // Update c and skip to the next element 
+                    // as it is already in order 
+                    c = d; 
+                    d = d.next; 
+                } 
+            } 
+
+            a = b; 
+            b = b.next; 
+        } 
+
+        return head; 
+    } 
+
+    // Function to print the list 
+    static void printList(Node head) 
+    { 
+        while (head != null) { 
+            System.out.print(head.data + " "); 
+            head = head.next; 
+        } 
+    } 
+
+    // Driver Code 
+    public static void main(String args[]) 
+    { 
+        Node head = newNode(5); 
+        head.next = newNode(4); 
+        head.next.next = newNode(3); 
+
+        head = selectionSort(head); 
+
+        printList(head); 
+    } 
+} 
+
+// This code is contributed by Arnab Kundu 
+
+```
+
+## Python3
+
+```
+
+# Python3 implementation of the approach  
+
+# Linked List Node  
+class Node: 
+
+    def __init__(self, val): 
+        self.data = val 
+        self.next = None
+
+# Function to sort a linked list  
+# using selection sort algorithm 
+# by swapping the next pointers  
+def selectionSort(head):  
+
+    a = b = head  
+
+    # While b is not the last node  
+    while b.next:  
+
+        c = d = b.next
+
+        # While d is pointing to a valid node  
+        while d:  
+
+            if b.data > d.data:  
+
+                # If d appears immediately after b  
+                if b.next == d:  
+
+                    # Case 1: b is the head  
+                    # of the linked list  
+                    if b == head:  
+
+                        # Move d before b  
+                        b.next = d.next
+                        d.next = b  
+
+                        # Swap b and d pointers  
+                        b, d = d, b  
+                        c = d  
+
+                        # Update the head  
+                        head = b  
+
+                        # Skip to the next element  
+                        # as it is already in order  
+                        d = d.next
+
+                    # Case 2: b is not the head  
+                    # of the linked list  
+                    else:  
+
+                        # Move d before b  
+                        b.next = d.next
+                        d.next = b  
+                        a.next = d  
+
+                        # Swap b and d pointers  
+                        b, d = d, b  
+                        c = d  
+
+                        # Skip to the next element  
+                        # as it is already in order  
+                        d = d.next
+
+                # If b and d have some non-zero  
+                # number of nodes in between them  
+                else: 
+
+                    # Case 3: b is the head  
+                    # of the linked list  
+                    if b == head:  
+
+                        # Swap b.next and d.next  
+                        r = b.next
+                        b.next = d.next
+                        d.next = r  
+                        c.next = b  
+
+                        # Swap b and d pointers  
+                        b, d = d, b  
+                        c = d  
+
+                        # Skip to the next element  
+                        # as it is already in order  
+                        d = d.next
+
+                        # Update the head  
+                        head = b  
+
+                    # Case 4: b is not the head 
+                    # of the linked list  
+                    else:  
+
+                        # Swap b.next and d.next  
+                        r = b.next
+                        b.next = d.next
+                        d.next = r  
+                        c.next = b  
+                        a.next = d  
+
+                        # Swap b and d pointers  
+                        b, d = d, b  
+                        c = d  
+
+                        # Skip to the next element  
+                        # as it is already in order  
+                        d = d.next
+
+            else: 
+
+                # Update c and skip to the next element  
+                # as it is already in order  
+                c = d  
+                d = d.next
+
+        a = b  
+        b = b.next
+
+    return head  
+
+# Function to print the list  
+def printList(head):  
+
+    while head:  
+        print(head.data, end = " ")  
+        head = head.next
+
+# Driver Code  
+if __name__ == "__main__": 
+
+    head = Node(5)  
+    head.next = Node(4)  
+    head.next.next = Node(3)  
+
+    head = selectionSort(head)  
+
+    printList(head)  
+
+# This code is contributed  
+# by Rituraj Jain 
+
+```
+
+## C＃
+
+```
+
+// C# implementation of the approach 
+using System; 
+
+class GFG { 
+
+    // Linked List Node 
+    public class Node { 
+        public int data; 
+        public Node next; 
+    }; 
+
+    // Utility function to create a 
+    // new Linked List Node 
+    static Node newNode(int val) 
+    { 
+        Node temp = new Node(); 
+
+        temp.data = val; 
+
+        temp.next = null; 
+
+        return temp; 
+    } 
+
+    // Function to sort a linked list using selection 
+    // sort algorithm by swapping the next pointers 
+    static Node selectionSort(Node head) 
+    { 
+        Node a, b, c, d, r; 
+
+        a = b = head; 
+
+        // While b is not the last node 
+        while (b.next != null) { 
+
+            c = d = b.next; 
+
+            // While d is pointing to a valid node 
+            while (d != null) { 
+
+                if (b.data > d.data) { 
+
+                    // If d appears immediately after b 
+                    if (b.next == d) { 
+
+                        // Case 1: b is the head of the linked list 
+                        if (b == head) { 
+
+                            // Move d before b 
+                            b.next = d.next; 
+                            d.next = b; 
+
+                            // Swap b and d pointers 
+                            r = b; 
+                            b = d; 
+                            d = r; 
+
+                            c = d; 
+
+                            // Update the head 
+                            head = b; 
+
+                            // Skip to the next element 
+                            // as it is already in order 
+                            d = d.next; 
+                        } 
+
+                        // Case 2: b is not the head of the linked list 
+                        else { 
+
+                            // Move d before b 
+                            b.next = d.next; 
+                            d.next = b; 
+                            a.next = d; 
+
+                            // Swap b and d pointers 
+                            r = b; 
+                            b = d; 
+                            d = r; 
+
+                            c = d; 
+
+                            // Skip to the next element 
+                            // as it is already in order 
+                            d = d.next; 
+                        } 
+                    } 
+
+                    // If b and d have some non-zero 
+                    // number of nodes in between them 
+                    else { 
+
+                        // Case 3: b is the head of the linked list 
+                        if (b == head) { 
+
+                            // Swap b.next and d.next 
+                            r = b.next; 
+                            b.next = d.next; 
+                            d.next = r; 
+                            c.next = b; 
+
+                            // Swap b and d pointers 
+                            r = b; 
+                            b = d; 
+                            d = r; 
+
+                            c = d; 
+
+                            // Skip to the next element 
+                            // as it is already in order 
+                            d = d.next; 
+
+                            // Update the head 
+                            head = b; 
+                        } 
+
+                        // Case 4: b is not the head of the linked list 
+                        else { 
+
+                            // Swap b.next and d.next 
+                            r = b.next; 
+                            b.next = d.next; 
+                            d.next = r; 
+                            c.next = b; 
+                            a.next = d; 
+
+                            // Swap b and d pointers 
+                            r = b; 
+                            b = d; 
+                            d = r; 
+
+                            c = d; 
+
+                            // Skip to the next element 
+                            // as it is already in order 
+                            d = d.next; 
+                        } 
+                    } 
+                } 
+                else { 
+
+                    // Update c and skip to the next element 
+                    // as it is already in order 
+                    c = d; 
+                    d = d.next; 
+                } 
+            } 
+
+            a = b; 
+            b = b.next; 
+        } 
+
+        return head; 
+    } 
+
+    // Function to print the list 
+    static void printList(Node head) 
+    { 
+        while (head != null) { 
+            Console.Write(head.data + " "); 
+            head = head.next; 
+        } 
+    } 
+
+    // Driver Code 
+    public static void Main(String[] arg) 
+    { 
+        Node head = newNode(5); 
+        head.next = newNode(4); 
+        head.next.next = newNode(3); 
+
+        head = selectionSort(head); 
+
+        printList(head); 
+    } 
+} 
+
+// This code contributed by Rajput-Ji 
+
+```
+
+**Output:**
+
+```
+3 4 5
+
+```
+
+注意读者！ 现在不要停止学习。 通过 [**DSA自学课程**](https://practice.geeksforgeeks.org/courses/dsa-self-paced?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_dsa_content_bottom) 以对学生方便的价格掌握所有重要的DSA概念，并为行业做好准备。
+
+* * *
+
+* * *
+
+如果您喜欢GeeksforGeeks并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至tribution@geeksforgeeks.org。 查看您的文章出现在GeeksforGeeks主页上，并帮助其他Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
