@@ -4,7 +4,7 @@
 
 中删除总和为 K 的连续节点。
 
-给定[单链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)和整数 **K** ，任务是从给定的[链接中删除总和为 **K** 的所有连续节点集。 清单](http://www.geeksforgeeks.org/data-structures/linked-list/)。 删除后打印更新的链表。 如果无法进行此类删除，请打印原始的链接列表。
+给定[单链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)和整数 **K** ，任务是从给定的[链接中删除总和为 **K** 的所有连续节点集。 列表](http://www.geeksforgeeks.org/data-structures/linked-list/)。 删除后打印更新的链表。 如果无法进行此类删除，请打印原始的链接列表。
 
 **示例**：
 

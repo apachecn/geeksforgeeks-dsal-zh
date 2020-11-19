@@ -1,4 +1,4 @@
-# 将给定的二叉树转换为双链表| 套装 3
+# 将给定的二叉树转换为双链表 | 系列 3
 
 > 原文：[https://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/](https://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/)
 

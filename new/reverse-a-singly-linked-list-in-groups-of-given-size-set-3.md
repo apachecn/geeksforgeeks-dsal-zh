@@ -1,4 +1,4 @@
-# 以给定大小的组反转单个链接列表| 套装 3
+# 以给定大小的组反转单个链接列表 | 系列 3
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-singly-linked-list-in-groups-of-given-size-set-3/](https://www.geeksforgeeks.org/reverse-a-singly-linked-list-in-groups-of-given-size-set-3/)
 
