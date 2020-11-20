@@ -6,17 +6,17 @@
 
 ![](img/de522899e01a1322ab2808eeff1ad73e.png "Linked List Loop")
 
-我们已经讨论了 [Floyd 的算法来检测链表中的周期。](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)
+我们已经讨论了 [Floyd 的算法](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)来检测链表中的循环。
 
-**布伦特的周期检测算法**与 [floyd 的算法](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)类似，因为它也使用了两种指针技术。 但是他们的方法有所不同。 在这里，我们使一个指针静止直到每次迭代，然后以两个的乘方将其传送到另一个指针**。 循环的开始由两个满足的**的最小功率确定。 通过减少调用次数，可以改善 Floyd 算法的常数因子。
+**布伦特的循环检测算法**与 [floyd 的算法](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)类似，因为它也使用了两种指针技术。 但是他们的方法有所不同。 在这里，我们使一个指针静止直到每次迭代，然后以两个的乘方将其传送到另一个指针**。 循环的开始由两个满足的**的最小功率确定。 通过减少调用次数，可以改善 Floyd 算法的常数因子。
 
-1.  以 2 的幂数移动快速指针（或 second_pointer），直到找到循环。 每次通电后，我们将慢速指针（或 first_pointer）重置为第二个指针的先前值。 每次通电后，将长度重置为 0。
+1.  以 2 的幂数移动快速指针（或`second_pointer`），直到找到循环。 每次通电后，我们将慢速指针（或`first_pointer`）重置为第二个指针的先前值。 每次通电后，将长度重置为 0。
 
-2.  循环测试的条件是 first_pointer 和 second_pointer 变为相同。 如果 second_pointer 变为 NULL，则不存在循环。
+2.  循环测试的条件是`first_pointer`和`second_pointer`变为相同。 如果`second_pointer`变为`NULL`，则不存在循环。
 
 3.  当我们脱离循环时，我们就有循环的长度。
 
-4.  我们将 first_pointer 重置为 head，将 second_pointer 重置为 head + length 位置的节点。
+4.  我们将`first_pointer`重置为`head`，将`second_pointer`重置为`head + length`位置的节点。
 
 5.  现在，我们将两个指针一一移动以找到循环的起点。
 
@@ -279,13 +279,13 @@ Loop is present at 15
 
 ```
 
-***时间复杂度**：*`O(M + N)`，其中 **m** 是序列的最小索引，即周期的开始， **n [** 是循环的长度。
+***时间复杂度**：*`O(M + N)`，其中 **m** 是序列的最小索引，即循环的开始， **n [** 是循环的长度。
 
 ***辅助空间**：* – **`O(1)`**辅助空间
 
 **参考文献**：
 
-[https://en.wikipedia.org/wiki/Cycle_detection#Brent’s_algorithm](https://en.wikipedia.org/wiki/Cycle_detection#Brent's_algorithm)
+[https://en.wikipedia.org/wiki/Cycle_detection#Brent's_algorithm](https://en.wikipedia.org/wiki/Cycle_detection#Brent's_algorithm)
 
 [github](https://github.com/alxli/Algorithm-Anthology/blob/master/Section-1-Elementary-Algorithms/1.4.2%20Cycle%20Detection%20(Brent's).cpp)
 
