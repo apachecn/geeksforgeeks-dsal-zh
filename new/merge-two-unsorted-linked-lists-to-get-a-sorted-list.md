@@ -4,7 +4,7 @@
 
 给定两个未排序的[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是将它们合并以获得一个已排序的[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)。
 
-**范例**：
+**示例**：
 
 > **输入**：列表 1 = 3-> 1-> 5，列表 2 = 6- > 2-> 4
 > **输出**：1- > 2-> 3-> 4-> 5-> 6

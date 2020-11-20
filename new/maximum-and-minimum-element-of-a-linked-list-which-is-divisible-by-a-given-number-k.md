@@ -4,7 +4,7 @@
 
 给定![N](img/19e409e13c1238e1f3ff3dbd06cdd45e.png "Rendered by QuickLaTeX.com")节点的单链表。 在链表中找到可被给定数字![K](img/36191961d5c0517749557e907a8f3817.png "Rendered by QuickLaTeX.com")整除的最小和最大元素。
 
-**范例**：
+**示例**：
 
 > **输入**：列表= 15-> 14-> 13-> 22-> 50
 > K = 5

@@ -6,7 +6,7 @@
 
 给定整数的[链表](http://www.geeksforgeeks.org/data-structures/linked-list/) **L** ，任务是返回整数的链表，以使其在给定链接的每个元素中都包含[下一个更大的元素](http://www.geeksforgeeks.org/next-greater-element/) 列表。 如果任何元素都没有更大的元素，请为其插入`0`。
 
-**范例**：
+**示例**：
 
 > **输入**：2- > 1- > 3- > 0- > 5
 > **输出**：3- > 3- > 5- > 5- > 0

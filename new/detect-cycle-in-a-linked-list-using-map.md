@@ -8,7 +8,7 @@
 
 这里显示了各种方法：[链表](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)中的检测周期
 
-**范例**
+**示例**
 
 > **输入**：20- > 4- > 54- > 6- >空
 > **输出**：未检测到循环。

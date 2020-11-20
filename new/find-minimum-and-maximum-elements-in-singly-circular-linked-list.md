@@ -6,7 +6,7 @@
 
 给定![N](img/19e409e13c1238e1f3ff3dbd06cdd45e.png "Rendered by QuickLaTeX.com")节点的单循环链表。 任务是在循环链表中找到最小和最大的元素。
 
-**范例**：
+**示例**：
 
 ```
 Input : List = 99->11->22->33->44->55->66
