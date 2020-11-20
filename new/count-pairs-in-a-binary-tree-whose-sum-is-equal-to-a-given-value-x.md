@@ -1,8 +1,8 @@
-# 在二叉树中计数对，其总和等于给定值 x
+# 在二叉树中计算总和等于给定值`x`的偶对数量
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-in-a-binary-tree-whose-sum-is-equal-to-a-given-value-x/](https://www.geeksforgeeks.org/count-pairs-in-a-binary-tree-whose-sum-is-equal-to-a-given-value-x/)
 
-给定一个包含 **n** 个不同数字和值 **x** 的二叉树。 问题在于在给定的二叉树中对它们的总和等于给定值 **x** 的对进行计数。
+给定一个包含`n`个不同数字和值`x`的二叉树。 问题在于在给定的二叉树中对它们的总和等于给定值`x`的对进行计数。
 
 **示例**：
 
@@ -21,7 +21,7 @@ The pairs are (3, 7), (2, 8) and (4, 6).
 
 ```
 
-**1）天真的方法**：通过任何一种树遍历方法逐一获取二叉树的每个节点。 将节点 **temp** ，树的**根**和值 **x** 传递给另一个函数，例如 **findPair（）**。 在功能中，借助**根**指针再次遍历树。 将这些节点与 **temp** 逐一求和，并检查 sum == x。 如果是这样，则递增**计数**。 计算计数=计数/ 2，因为通过上述方法已对一对进行了两次计数。
+**1）朴素的方法**：通过任何一种树遍历方法逐一获取二叉树的每个节点。 将节点`temp`，树的**根**和值`x`传递给另一个函数，例如`findPair()`。 在功能中，借助**根**指针再次遍历树。 将这些节点与`temp`逐一求和，并检查`sum == x`。 如果是这样，则递增**计数**。 计算计数`/= 2`，因为通过上述方法已对一对进行了两次计数。
 
 ## C++
 
@@ -391,13 +391,15 @@ Count = 3
 
 时间复杂度：`O(N ^ 2)`。
 
-**2）高效方法**：以下是步骤：
+**2）高效方法**：
 
-1.  将给定的二叉树转换为双向链表。 请参阅此帖子的[。](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-4/)
+以下是步骤：
 
-2.  对在步骤 1 中获得的双向链表进行排序。请参阅此帖子中的[。](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)
+1.  将给定的二叉树转换为双向链表。 请参阅[此帖子](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-4/)。
 
-3.  计数对以加倍等于“ x”的双链排序。 请参阅此帖子的[。](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)
+2.  对在步骤 1 中获得的双向链表进行排序。请参阅[此帖子](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)。
+
+3.  在排序双链表中查找总和等于`x`的偶对计数。 请参阅[此帖子](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)。
 
 4.  显示在步骤 4 中获得的计数。
 
@@ -1008,15 +1010,17 @@ Count = 3
 
 ```
 
-时间复杂度：O（nLog n）。
+时间复杂度：`O(nLog n)`。
 
-**3）另一种有效的方法–无需转换为 DLL 和排序**：以下是步骤：
+**3）另一种有效的方法 – 无需转换为双链表和排序**：
+
+以下是步骤：
 
 1.  以任何顺序（前/后/中）遍历树。
 
-2.  创建一个空哈希，并继续在当前节点的值和 X 之间添加差异。
+2.  创建一个空哈希，并继续在当前节点的值和`X`之间添加差异。
 
-3.  在每个节点上，检查其值是否在哈希中，如果是，则将计数增加 1，并且请勿在哈希中将该节点的值与 X 的差相加，以避免重复计算单个对。
+3.  在每个节点上，检查其值是否在哈希中，如果是，则将计数增加 1，并且请勿在哈希中将该节点的值与`X`的差相加，以避免重复计算单个对。
 
 ```
 

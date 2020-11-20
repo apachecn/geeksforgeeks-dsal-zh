@@ -1,14 +1,12 @@
-# 在排序和旋转的链表
+# 在排序和旋转后的链表中计算旋转次数
 
 > 原文：[https://www.geeksforgeeks.org/count-rotations-sorted-rotated-linked-list/](https://www.geeksforgeeks.org/count-rotations-sorted-rotated-linked-list/)
 
-中计算旋转次数
-
-给定 n 个节点的链表，该链表首先进行排序，然后旋转 k 个元素。 找出 k 的值。
+给定`n`个节点的链表，该链表首先进行排序，然后旋转`k`个元素。 找出`k`的值。
 
 ![](img/ed860d112cdefec07c0ee0dcd93c5313.png)
 
-想法是遍历单链表以检查条件，当前节点值是否大于下一个节点的值。 如果给定条件为真，则中断循环。 否则增加计数器变量，并通过 node-> next 增加节点。 下面是此方法的实现。
+想法是遍历单链表以检查条件，当前节点值是否大于下一个节点的值。 如果给定条件为真，则中断循环。 否则增加计数器变量，并通过`node -> next`增加节点。 下面是此方法的实现。
 
 ```
 

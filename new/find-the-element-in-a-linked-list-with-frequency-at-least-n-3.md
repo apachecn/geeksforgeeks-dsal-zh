@@ -18,7 +18,7 @@
 > [ **解释**：
 > 链表中热字符串的频率为 4，大于[5/3]，即 1。
 
-**天真的方法**：
+**朴素的方法**：
 
 将每个字符串的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。 遍历地图并查找频率为**≥N / 3** 的字符串。
 
