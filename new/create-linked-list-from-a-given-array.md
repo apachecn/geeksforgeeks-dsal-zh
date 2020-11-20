@@ -270,7 +270,7 @@ public static void Main(String []args)
 
 ```
 
-时间复杂度：O（n * n）
+时间复杂度：`O(n * n)`
 
 **高效方法**：我们从结尾遍历数组，并将每个元素插入列表的开头。
 

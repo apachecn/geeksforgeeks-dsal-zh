@@ -2,13 +2,13 @@
 
 > 原文：[https://www.geeksforgeeks.org/create-a-circular-list-structure-for-given-value-k-using-recursion/](https://www.geeksforgeeks.org/create-a-circular-list-structure-for-given-value-k-using-recursion/)
 
-为给定值 K 创建循环列表结构
+为给定值`K`创建循环列表结构
 
-给定数字 **K** ，任务是使用四个指针创建循环链表结构，四个指针分别是“使用递归”的下一个，上一个，上一个和下一个。
+给定数字`K`，任务是使用四个指针创建循环链表结构，四个指针分别是“使用递归”的下一个，上一个，上一个和下一个。
 
 **注意**：不允许使用任何指针数组或 2D 矩阵
 
-参见此示例，了解 K = 3
+参见此示例，了解`K = 3`
 
 ![](img/b7b2f0b6093d41ddc7ff7b2e6c2fe9d7.png)
 
@@ -28,11 +28,11 @@ The structure will look like below
 
 逐步执行以下步骤：
 
-*   首先创建与右指针连接的单个 K 列表
+*   首先创建与右指针连接的单个`K`列表
 
 *   每个列表的第一个节点应通过向下指针指向其下方节点
 
-*   现在，将 K 列表与向下的指针逐行合并
+*   现在，将`K`列表与向下的指针逐行合并
 
 *   然后在列表中按行和按列创建循环
 
