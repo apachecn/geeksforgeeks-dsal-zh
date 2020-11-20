@@ -4,31 +4,31 @@
 
 
 
-给定指向[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)的**头**节点的指针，任务是创建 的副本。 [递归](http://www.geeksforgeeks.org/recursion/)使用链表。
+给定指向[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)的**头**节点的指针，任务是[递归](http://www.geeksforgeeks.org/recursion/)创建链表的副本。 
 
 **示例**：：
 
-> ***输入**：以下链表的标题*
-> *1- > 2- > 3- > 4- >空*
-> ***输出**：*
-> *O* 原始列表：1-> 2-> 3-> 4-> NULL
-> 重复列表：1-> 2-> 3-> 4->空
+> **输入**：以下链表的头部
+> `1 -> 2 -> 3 -> 4 -> NULL`
+> **输出**：
+> 原始列表：`1 -> 2 -> 3 -> 4 -> NULL`
+> 重复列表：`1 -> 2 -> 3 -> 4 -> NULL`
 > 
-> ***输入**：以下链表的标题*
-> *1- > 2- > 3- > 4- > 5- > NULL*
-> ***输出**：*
-> *原始列表：1- > 2- > 3- > 4- > 5- > NULL，*
-> 重复的*列表：1- > 2- > 3- > 4- > 5- > NULL，*
+> **输入**：以下链表的头部
+> `1 -> 2 -> 3 -> 4 -> 5 -> NULL`
+> **输出**：
+> 原始列表：`1 -> 2 -> 3 -> 4 -> 5 -> NULL`
+> 重复的列表：`1 -> 2 -> 3 -> 4 -> 5 -> NULL`
 
 **方法**：请按照以下步骤解决问题：
 
-1.  **基本情况**：如果（ *head == NULL* ），则返回 ***NULL*** 。
+1.  **基本情况**：如果`head == NULL`，则返回`NULL`。
 
-2.  使用 [malloc（）](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/) &设置其数据在[堆](https://www.geeksforgeeks.org/heap-data-structure/)中分配新节点。
+2.  使用[`malloc()`](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)在[堆](https://www.geeksforgeeks.org/heap-data-structure/)中分配新节点并设置其数据。
 
 3.  通过重复其余节点的递归设置新节点的下一个指针。
 
-4.  返回重复节点的**头**指针。
+4.  返回重复节点的`head`指针。
 
 5.  最后，同时打印原始链表和重复链表。
 

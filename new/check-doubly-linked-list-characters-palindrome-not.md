@@ -2,15 +2,15 @@
 
 > 原文：[https://www.geeksforgeeks.org/check-doubly-linked-list-characters-palindrome-not/](https://www.geeksforgeeks.org/check-doubly-linked-list-characters-palindrome-not/)
 
-给定字符双链表，编写一个函数，如果给定的双链表是回文，则返回 true，否则返回 false。
+给定字符双链表，编写一个函数，如果给定的双链表是回文，则返回`true`，否则返回`false`。
 
 ![Palindrom-Doubly-Linked-List](img/e40b6fe0085d04f1ee7224d6baf12667.png)
 
 1.  创建一个双向链表，其中每个节点仅包含一个字符串字符。
 
-2.  在列表的开头向左初始化两个指针**，在列表的末尾初始化**的两个指针**。**
+2.  初始化两个指针，`left`在列表的开头，`right`在列表的末尾。
 
-3.  检查左节点的数据是否等于右节点的数据，如果相等，则向左递增，右递减直到列表的中间，如果在任何阶段不相等，则返回 false。
+3.  检查`left`节点的数据是否等于`right`节点的数据，如果相等，则递增`left`，递减`right`直到列表的中间，如果在任何阶段不相等，则返回`false`。
 
 ## C++
 

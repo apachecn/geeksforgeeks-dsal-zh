@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/check-if-a-linked-list-is-circular-linked-list/](https://www.geeksforgeeks.org/check-if-a-linked-list-is-circular-linked-list/)
 
-给定单个链表，请查找链表是否为[圆形](http://geeksquiz.com/circular-linked-list/)。 如果链表不是以 NULL 结尾的，并且所有节点都以循环的形式连接，则称为循环表。 以下是循环链表的示例。
+给定单个链表，请查找链表是否为[循环](http://geeksquiz.com/circular-linked-list/)。 如果链表不是以`NULL`结尾的，并且所有节点都以循环的形式连接，则称为循环表。 以下是循环链表的示例。
 
 ![](img/edcbce05d23f3327116de91a2c124f5e.png)
 
@@ -10,7 +10,7 @@
 
 请注意，此问题与[周期检测问题](https://practice.geeksforgeeks.org/problem-page.php?pid=700099)不同，此处所有节点都必须是周期的一部分。
 
-这个想法是存储链表的头并遍历它。 如果达到 NULL，则链表不是循环的。 如果再次到达头部，则链表为圆形。
+这个想法是存储链表的头并遍历它。 如果达到`NULL`，则链表不是循环的。 如果再次到达头部，则链表为循环。
 
 ## C++
 
