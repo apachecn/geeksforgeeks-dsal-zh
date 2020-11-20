@@ -1,4 +1,4 @@
-# 反转双链表| 第 2 组
+# 反转双链表 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2/](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2/)
 

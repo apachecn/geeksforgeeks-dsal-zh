@@ -1,4 +1,4 @@
-# 循环链表| 第 2 组（Traversal）
+# 循环链表 | 系列 2（遍历）
 
 > 原文：[https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/](https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/)
 
@@ -6,7 +6,7 @@
 
 ![](img/ff7f30aebf5dc865587c7829dcf4233c.png "cll")
 
-在常规的链表中，我们从头节点遍历该列表，并在到达 NULL 时停止遍历。 在循环链表中，当再次到达第一个节点时，我们将停止遍历。 以下是用于链表遍历的 C 代码。
+在常规的链表中，我们从头节点遍历该列表，并在到达`NULL`时停止遍历。 在循环链表中，当再次到达第一个节点时，我们将停止遍历。 以下是用于链表遍历的 C 代码。
 
 ```
 

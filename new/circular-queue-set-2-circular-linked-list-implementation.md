@@ -1,4 +1,4 @@
-# 循环队列| 第 2 组（循环链表实现）
+# 循环队列 | 系列 2（循环链表实现）
 
 > 原文：[https://www.geeksforgeeks.org/circular-queue-set-2-circular-linked-list-implementation/](https://www.geeksforgeeks.org/circular-queue-set-2-circular-linked-list-implementation/)
 
@@ -6,7 +6,7 @@
 
 我们已经讨论了基础知识以及如何使用集合 1 中的数组实现循环队列。
 
-[第 1 组（简介和数组实现）](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/)
+[系列 1（简介和数组实现）](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/)
 
 在这篇文章中，讨论了使用循环单链表的另一种循环队列实现方法。
 

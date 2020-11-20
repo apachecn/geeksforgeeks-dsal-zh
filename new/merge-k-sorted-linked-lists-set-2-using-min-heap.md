@@ -1,4 +1,4 @@
-# 合并 k 个排序的链表| 第 2 组（使用最小堆）
+# 合并 k 个排序的链表 | 系列 2（使用最小堆）
 
 > 原文：[https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/)
 

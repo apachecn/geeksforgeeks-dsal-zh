@@ -565,7 +565,7 @@ public class Node {
 
     由于不需要额外的空间。
 
-[合并 k 个排序的链表| 第 2 组（使用最小堆）](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/)
+[合并 k 个排序的链表 | 系列 2（使用最小堆）](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/)
 
 本文由 **Aditya Goel** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，那么您也可以写一篇文章，然后将您的文章邮寄到 contribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

@@ -1,4 +1,4 @@
-# 双链表| 第 1 组（简介和插入）
+# 双链表 | 系列 1（简介和插入）
 
 > 原文：[https://www.geeksforgeeks.org/doubly-linked-list/](https://www.geeksforgeeks.org/doubly-linked-list/)
 
@@ -66,31 +66,31 @@ class Node:
 
 **比单链列表的优势**
 
-**1）** DLL 可以向前和向后移动。
+1.   DLL 可以向前和向后移动。
 
-**2）**如果给出了指向要删除节点的指针，则 DLL 中的删除操作效率更高。
+2.  如果给出了指向要删除节点的指针，则 DLL 中的删除操作效率更高。
 
-**3）**我们可以在给定节点之前快速插入新节点。
+3.  我们可以在给定节点之前快速插入新节点。
 
 在单链列表中，要删除节点，需要指向上一个节点的指针。 为了获得该先前节点，有时会遍历列表。 在 DLL 中，我们可以使用先前的指针获取先前的节点。
 
 **比单链表**
 
-**1）**的缺点 DLL 的每个节点都需要额外的空间才能存储先前的指针。 尽管可以用单个指针来实现 DLL（请参阅[和](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)[）。
+1.  的缺点 DLL 的每个节点都需要额外的空间才能存储先前的指针。 尽管可以用单个指针来实现 DLL（请参阅[和](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)[）。
 
-**2）**所有操作都需要事先维护一个额外的指针。 例如，在插入时，我们需要同时修改前一个指针和下一个指针。 例如，在以下用于在不同位置插入的函数中，我们需要 1 或 2 个额外的步骤来设置上一个指针。](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
+2.  所有操作都需要事先维护一个额外的指针。 例如，在插入时，我们需要同时修改前一个指针和下一个指针。 例如，在以下用于在不同位置插入的函数中，我们需要 1 或 2 个额外的步骤来设置上一个指针。](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
 
 **插入**
 
 可以通过四种方式添加节点
 
-**1）**在 DLL 的前面
+1.  在 DLL 的前面
 
-**2）**在给定节点之后 。
+2.  在给定节点之后 。
 
-**3）**在 DLL 的末尾
+3.  在 DLL 的末尾
 
-**4）**在给定节点之前。
+4.  在给定节点之前。
 
 **1）在前面添加一个节点：（一个 5 个步骤的过程）**
 

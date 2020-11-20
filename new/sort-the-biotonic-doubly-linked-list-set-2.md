@@ -1,4 +1,4 @@
-# 排序生物群落双链表| 第 2 组
+# 排序生物群落双链表 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/sort-the-biotonic-doubly-linked-list-set-2/](https://www.geeksforgeeks.org/sort-the-biotonic-doubly-linked-list-set-2/)
 

@@ -1,4 +1,4 @@
-# 以 Zig-Zag 格式重新排列链表| 第 2 组
+# 以 Zig-Zag 格式重新排列链表 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/rearrange-a-linked-list-in-zig-zag-fashion-set-2/](https://www.geeksforgeeks.org/rearrange-a-linked-list-in-zig-zag-fashion-set-2/)
 

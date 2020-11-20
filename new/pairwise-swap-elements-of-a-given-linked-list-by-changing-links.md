@@ -825,7 +825,7 @@ public class LinkedList {
 
 ```
 
-[通过更改指针|配对交换链表的相邻节点| 第 2 组](https://www.geeksforgeeks.org/pairwise-swap-adjacent-nodes-of-a-linked-list-by-changing-pointers-set-2/)
+[通过更改指针|配对交换链表的相邻节点 | 系列 2](https://www.geeksforgeeks.org/pairwise-swap-adjacent-nodes-of-a-linked-list-by-changing-pointers-set-2/)
 
 本文由 **Gautam Kumar** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请写评论
 

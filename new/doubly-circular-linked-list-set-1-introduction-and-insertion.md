@@ -1,4 +1,4 @@
-# 双向循环链表| 第 1 组（简介和插入）
+# 双向循环链表 | 系列 1（简介和插入）
 
 > 原文：[https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)
 
