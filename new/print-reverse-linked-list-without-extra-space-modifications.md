@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/](https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/)
 
-给定[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，以反向方式显示链表，而无需使用递归，堆栈或对给定列表的修改。
+给定[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，以反向方式显示链表，而无需使用递归，栈或对给定列表的修改。
 
 **示例**：
 
@@ -21,7 +21,7 @@ Output :24->20->15->5->10->NULL
 
 2.  [反向链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，然后打印。 这需要修改原始列表。
 
-3.  [基于堆栈的解决方案，用于打印反向链表](https://www.geeksforgeeks.org/print-reverse-linked-list-using-stack/)。 将所有节点一个一个地推入堆栈。 然后从堆栈中逐一弹出元素并进行打印。 这也需要额外的空间。
+3.  [基于栈的解决方案，用于打印反向链表](https://www.geeksforgeeks.org/print-reverse-linked-list-using-stack/)。 将所有节点一个一个地推入栈。 然后从栈中逐一弹出元素并进行打印。 这也需要额外的空间。
 
 算法：
 

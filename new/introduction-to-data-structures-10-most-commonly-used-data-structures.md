@@ -18,15 +18,15 @@
 
     ![](img/2871ce74a35b62e10b0225813eec54f9.png)
 
-    主要在堆栈中执行以下三个基本操作：
+    主要在栈中执行以下三个基本操作：
 
-    *   **推入**：在堆栈中添加一个项目。 如果堆栈已满，则称其为溢出条件。
+    *   **推入**：在栈中添加一个项目。 如果栈已满，则称其为溢出条件。
 
-    *   **弹出**：从堆栈中删除一个项目。 这些项目以推入的相反顺序弹出。 如果堆栈为空，则称其为下溢条件。
+    *   **弹出**：从栈中删除一个项目。 这些项目以推入的相反顺序弹出。 如果栈为空，则称其为下溢条件。
 
-    *   **窥视或顶部**：返回堆栈的顶部元素。
+    *   **窥视或顶部**：返回栈的顶部元素。
 
-    *   **isEmpty**：如果堆栈为空，则返回 true，否则返回 false。
+    *   **isEmpty**：如果栈为空，则返回 true，否则返回 false。
 
 4.  **[Queue](http://www.geeksforgeeks.org/queue-data-structure/):** Like Stack, Queue is a linear structure which follows a particular order in which the operations are performed. The order is First In First Out (FIFO). A good example of the queue is any queue of consumers for a resource where the consumer that came first is served first. The difference between stacks and queues is in removing. In a stack we remove the item the most recently added; in a queue, we remove the item the least recently added.
 

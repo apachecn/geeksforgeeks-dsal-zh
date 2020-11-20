@@ -1,10 +1,10 @@
-# 程序使用堆栈
+# 程序使用栈
 
 > 原文：[https://www.geeksforgeeks.org/program-to-reverse-a-linked-list-using-stack/](https://www.geeksforgeeks.org/program-to-reverse-a-linked-list-using-stack/)
 
 来反向链表
 
-给定一个链表。 任务是使用辅助堆栈反转链表元素的顺序。
+给定一个链表。 任务是使用辅助栈反转链表元素的顺序。
 
 **示例**：
 
@@ -19,9 +19,9 @@ Output : 2 -> 4 -> 7 -> 9
 
 **算法**：
 
-1.  遍历列表并将其所有节点压入堆栈。
+1.  遍历列表并将其所有节点压入栈。
 
-2.  再次遍历头节点的列表，并从堆栈顶部弹出一个值，然后以相反的顺序连接它们。
+2.  再次遍历头节点的列表，并从栈顶部弹出一个值，然后以相反的顺序连接它们。
 
 下面是上述方法的实现：
 

@@ -302,9 +302,9 @@ Geeks For Geeks
 
 | [**pollLast（）**](https://www.geeksforgeeks.org/java-util-linkedlist-poll-pollfirst-polllast- examples-java/) | 此方法检索并删除此列表的最后一个元素，如果此列表为空，则返回 null。 |
 
-| [**pop（）**](https://www.geeksforgeeks.org/linkedlist-pop-method-in-java/) | 此方法从此列表表示的堆栈中弹出一个元素。 |
+| [**pop（）**](https://www.geeksforgeeks.org/linkedlist-pop-method-in-java/) | 此方法从此列表表示的栈中弹出一个元素。 |
 
-| [**push（E e）**](https://www.geeksforgeeks.org/linkedlist-push-method-in-java/) | 此方法将元素压入此列表表示的堆栈。 |
+| [**push（E e）**](https://www.geeksforgeeks.org/linkedlist-push-method-in-java/) | 此方法将元素压入此列表表示的栈。 |
 
 | [**remove（）**](https://www.geeksforgeeks.org/linkedlist-remove-method-in-java/) | 此方法检索并删除此列表的头（第一个元素）。 |
 

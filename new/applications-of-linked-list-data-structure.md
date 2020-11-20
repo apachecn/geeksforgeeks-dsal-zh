@@ -8,7 +8,7 @@
 
 **链表在计算机科学中的应用** –
 
-1.  [堆栈](https://www.geeksforgeeks.org/stack-data-structure/)和[队列](https://www.geeksforgeeks.org/queue-data-structure/)的实现
+1.  [栈](https://www.geeksforgeeks.org/stack-data-structure/)和[队列](https://www.geeksforgeeks.org/queue-data-structure/)的实现
 
 2.  图的实现：[图的相邻列表表示法](https://www.geeksforgeeks.org/graph-and-its-representations/)最流行，它使用链表来存储相邻的顶点。
 

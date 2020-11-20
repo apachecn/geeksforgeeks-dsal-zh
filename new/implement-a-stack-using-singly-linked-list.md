@@ -2,9 +2,9 @@
 
 > 原文：[https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)
 
-实现堆栈
+实现栈
 
-使用单个链表概念实现[堆栈](http://www.geeksforgeeks.org/stack-data-structure/)。 所有单个[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)操作都是基于堆栈操作 LIFO（后进先出）执行的，借助这一知识，我们将使用单个链表实现堆栈。 使用单个链表，所以在这里如何实现链表意味着我们以节点的形式存储信息，我们需要遵循堆栈规则，并且需要使用单个链表节点来实现，所以我们需要什么规则 在堆栈的实现中遵循一个简单的规则，即后进先出，我们应该在 top 变量的帮助下执行的所有操作仅在 top 变量的帮助下如何插入元素
+使用单个链表概念实现[栈](http://www.geeksforgeeks.org/stack-data-structure/)。 所有单个[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)操作都是基于栈操作 LIFO（后进先出）执行的，借助这一知识，我们将使用单个链表实现栈。 使用单个链表，所以在这里如何实现链表意味着我们以节点的形式存储信息，我们需要遵循栈规则，并且需要使用单个链表节点来实现，所以我们需要什么规则 在栈的实现中遵循一个简单的规则，即后进先出，我们应该在 top 变量的帮助下执行的所有操作仅在 top 变量的帮助下如何插入元素
 
 ![](img/2ff65df4659cd0868f221729a88fc111.png)
 
@@ -12,19 +12,19 @@
 
 ![](img/bb9d68ec1e8e118b1f80c4a99642d325.png)
 
-通过链表可以轻松实现堆栈。 在堆栈实现中，堆栈包含顶部指针。 这是堆栈的“头”，其中推送和弹出项发生在列表的头。 第一个节点在链接字段中为空，第二个节点链接在链接字段中具有第一个节点地址，依此类推，最后一个节点地址在“ top”指针中。
+通过链表可以轻松实现栈。 在栈实现中，栈包含顶部指针。 这是栈的“头”，其中推送和弹出项发生在列表的头。 第一个节点在链接字段中为空，第二个节点链接在链接字段中具有第一个节点地址，依此类推，最后一个节点地址在“ top”指针中。
 
-在数组上使用链表的主要优点是可以实现可根据需要缩小或增长的堆栈。 使用数组会限制数组的最大容量，这可能导致堆栈溢出。 在这里，每个新节点将被动态分配。 因此不可能发生溢出。
+在数组上使用链表的主要优点是可以实现可根据需要缩小或增长的栈。 使用数组会限制数组的最大容量，这可能导致栈溢出。 在这里，每个新节点将被动态分配。 因此不可能发生溢出。
 
-**堆栈操作**：
+**栈操作**：
 
 1.  **[push（）](https://www.geeksforgeeks.org/stack-push-and-pop-in-c-stl/)**：将该元素插入到链表中，只是栈的顶部节点。
 
-2.  **[pop（）](https://www.geeksforgeeks.org/stack-push-and-pop-in-c-stl/)**：从堆栈中返回顶部元素，并将顶部指针移至链表或堆栈的第二个节点。
+2.  **[pop（）](https://www.geeksforgeeks.org/stack-push-and-pop-in-c-stl/)**：从栈中返回顶部元素，并将顶部指针移至链表或栈的第二个节点。
 
 3.  **[peek（）](https://www.geeksforgeeks.org/stack-peek-method-in-java/)**：返回顶部元素。
 
-4.  **display（）**：打印堆栈的所有元素。
+4.  **display（）**：打印栈的所有元素。
 
 **下面是上述方法的实现**：
 

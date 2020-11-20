@@ -395,9 +395,9 @@
 
     ```
 
-4.  ### [堆栈](https://www.geeksforgeeks.org/stack-class-in-java/)
+4.  ### [栈](https://www.geeksforgeeks.org/stack-class-in-java/)
 
-    Java Collection 框架提供了一个 Stack 类，该类可以建模和实现 Stack 数据结构。 该课程基于后进先出的基本原则。 除了基本的推入和弹出操作外，该类还提供了空，搜索和查看的三个功能。 也可以说该类是 Vector 的扩展，并将其视为具有五个提到的函数的堆栈。 该类也可以称为 Vector 的子类。
+    Java Collection 框架提供了一个 Stack 类，该类可以建模和实现 Stack 数据结构。 该课程基于后进先出的基本原则。 除了基本的推入和弹出操作外，该类还提供了空，搜索和查看的三个功能。 也可以说该类是 Vector 的扩展，并将其视为具有五个提到的函数的栈。 该类也可以称为 Vector 的子类。
 
     ![](img/65e1db85d6cbd7231fe141e47968bdc0.png)
 
@@ -439,11 +439,11 @@
 
     **相关文章**：
 
-    *   [使用数组](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)的堆栈实现
+    *   [使用数组](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)的栈实现
 
-    *   [使用单链表](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)的堆栈实现
+    *   [使用单链表](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)的栈实现
 
-    *   [使用队列](https://www.geeksforgeeks.org/implement-stack-using-queue/)的堆栈实现
+    *   [使用队列](https://www.geeksforgeeks.org/implement-stack-using-queue/)的栈实现
 
 5.  ### [队列](https://www.geeksforgeeks.org/queue-interface-java/)
 
@@ -511,7 +511,7 @@
 
     *   [使用单链表](https://www.geeksforgeeks.org/queue-linked-list-implementation/)的队列实现
 
-    *   [使用堆栈](https://www.geeksforgeeks.org/queue-using-stacks/)的队列实现
+    *   [使用栈](https://www.geeksforgeeks.org/queue-using-stacks/)的队列实现
 
 6.  ### 树
 

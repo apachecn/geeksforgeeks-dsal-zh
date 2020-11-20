@@ -1,8 +1,8 @@
-# C++ STL 中的堆栈列表
+# C++ STL 中的栈列表
 
 > 原文：[https://www.geeksforgeeks.org/list-of-stacks-in-c-stl/](https://www.geeksforgeeks.org/list-of-stacks-in-c-stl/)
 
-**先决条件**：[列表](https://www.geeksforgeeks.org/list-cpp-stl/)，[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)
+**先决条件**：[列表](https://www.geeksforgeeks.org/list-cpp-stl/)，[栈](https://www.geeksforgeeks.org/stack-data-structure/)
 
 **列表**是允许[非连续内存分配](https://www.geeksforgeeks.org/non-contiguous-allocation-in-operating-system/)的序列容器。 与[矢量](http://www.geeksforgeeks.org/vector-in-cpp-stl/)相比，列表的遍历速度较慢，但​​是一旦找到位置，插入和删除速度就会很快。
 
@@ -10,13 +10,13 @@
 
 > 列表<类型> name_of_list；
 
-[**堆栈**](http://www.geeksforgeeks.org/stack-data-structure/) 是一种容器适配器，具有的 LIFO（后进先出）类型，其中有一个新元素 在一端添加，并且（顶部）仅从该端删除元素。
+[**栈**](http://www.geeksforgeeks.org/stack-data-structure/) 是一种容器适配器，具有的 LIFO（后进先出）类型，其中有一个新元素 在一端添加，并且（顶部）仅从该端删除元素。
 
 **语法**：
 
-> 堆栈 <type>name_of_stack;</type>
+> 栈 <type>name_of_stack;</type>
 
-**堆栈列表**是具有一系列堆栈的容器的类型，这是一个二维容器，其中 **N** 行的列表和 **M** 列的堆栈 ，两个尺寸的大小都是不固定的。 可以使用 [迭代器](https://www.geeksforgeeks.org/iterators-c-stl/) 遍历和访问的。
+**栈列表**是具有一系列栈的容器的类型，这是一个二维容器，其中 **N** 行的列表和 **M** 列的栈 ，两个尺寸的大小都是不固定的。 可以使用 [迭代器](https://www.geeksforgeeks.org/iterators-c-stl/) 遍历和访问的。
 
 **语法**：
 
@@ -28,9 +28,9 @@
 **示例**：
 
 > 列表<stack>> ls（10）;
-> 堆栈列表的大小为 10</stack>
+> 栈列表的大小为 10</stack>
 
-**插入**：[使用 **push（）**函数完成堆栈列表](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)的插入。
+**插入**：[使用 **push（）**函数完成栈列表](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)的插入。
 
 **示例**：
 
@@ -51,7 +51,7 @@ ls.push_back(s);
 
 ```
 
-**遍历**：[使用](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)[迭代器](https://www.geeksforgeeks.org/iterators-c-stl/)进行堆栈列表中的遍历。
+**遍历**：[使用](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)[迭代器](https://www.geeksforgeeks.org/iterators-c-stl/)进行栈列表中的遍历。
 
 ## C++
 
@@ -73,9 +73,9 @@ for (iterator it = ls.begin();
 
 ```
 
-上面的代码使用开始迭代器 **ls.begin（）**和结束迭代器 **ls.end（）**在每个索引处遍历**列表< int > ls** 。 为了访问元素，它使用**（* it）**作为堆栈，而[指针](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)指向**列表中的元素<堆栈< int > > ls [** 。
+上面的代码使用开始迭代器 **ls.begin（）**和结束迭代器 **ls.end（）**在每个索引处遍历**列表< int > ls** 。 为了访问元素，它使用**（* it）**作为栈，而[指针](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)指向**列表中的元素<栈< int > > ls [** 。
 
-下面是说明堆栈列表中的插入和遍历的程序：
+下面是说明栈列表中的插入和遍历的程序：
 
 ## C++
 

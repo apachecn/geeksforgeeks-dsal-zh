@@ -2,9 +2,9 @@
 
 > 原文：[https://www.geeksforgeeks.org/circular-queue-set-2-circular-linked-list-implementation/](https://www.geeksforgeeks.org/circular-queue-set-2-circular-linked-list-implementation/)
 
-先决条件– [循环单链表](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)
+先决条件 – [循环单链表](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)
 
-我们已经讨论了基础知识以及如何使用集合 1 中的数组实现循环队列。
+我们已经在系列 1 中讨论了基础知识以及如何使用数组实现循环队列。
 
 [系列 1（简介和数组实现）](https://www.geeksforgeeks.org/circular-queue-set-1-introduction-array-implementation/)
 
@@ -12,29 +12,29 @@
 
 循环队列上的操作：
 
-*   **前端**：从队列中获取前端项目。
+*   `Front`：从队列中获取第一个项目。
 
-*   **背面**：从队列中获取最后一个项目。
+*   `Rear`：从队列中获取最后一个项目。
 
-*   **enQueue（value）**此功能用于将元素插入循环队列。 在循环队列中，新元素始终插入后方位置。
+*   `enQueue(value)`：此功能用于将元素插入循环队列。 在循环队列中，新元素始终插入后方位置。
 
-    **Steps:**
+    **步骤**：
 
     3.  动态创建一个新节点并将值插入其中。
 
-    4.  检查 front == NULL，如果为 true，则 front = Rear =（新创建的节点）
+    4.  检查`front == NULL`，如果为`true`，则`front = Rear =`新创建的节点
 
-    5.  如果为 false，则 Rear =（新创建的节点），后节点始终包含前节点的地址。
+    5.  如果为`false`，则`Rear =`新创建的节点，后节点始终包含前节点的地址。
 
-*   **deQueue（）**此函数用于从循环队列中删除元素。 在队列中，元素始终从最前面删除。
+*  `deQueue()`：此函数用于从循环队列中删除元素。 在队列中，元素始终从最前面删除。
 
-    **Steps:**
+    **步骤**：
 
-    3.  检查队列是否为空是否意味着 front == NULL。
+    3.  检查队列是否为空是否意味着`front == NULL`。
 
     4.  如果为空，则显示队列为空。 如果队列不为空，则执行步骤 3
 
-    5.  检查（front == rear）是否为真，然后设置 front = Rear = NULL，否则将前列向前移动到队列中，更新 front 在后节点中的地址并返回元素。
+    5.  检查`front == rear`是否为真，然后设置`front = Rear = NULL`，否则将前列向前移动到队列中，更新`front`在后节点中的地址并返回元素。
 
 ![Operations-on-Circular -Queue](img/7d91457c9e1293990d59501eb82a3c54.png)
 
@@ -468,7 +468,7 @@ Elements in Circular Queue are: 6 9 20
 
 ```
 
-**时间复杂度**：enQueue（），deQueue（）操作的时间复杂度为`O(1)`，因为任何操作中都没有循环。
+**时间复杂度**：`enQueue()`，`deQueue()`操作的时间复杂度为`O(1)`，因为任何操作中都没有循环。
 
 **注意**：在执行链表的情况下，无需循环即可轻松实现队列。 但是，在数组实现的情况下，我们需要循环队列以节省空间。
 
