@@ -301,9 +301,9 @@ Linked list after removing duplicates:
 
 通常，合并排序是最有效地对链表进行排序的最合适的排序算法。
 
-1）使用合并排序对元素进行排序。 我们很快将写一篇有关对链表进行排序的文章。 O（nLogn）
+1.  使用合并排序对元素进行排序。 我们很快将写一篇有关对链表进行排序的文章。 O（nLogn）
 
-2）使用[算法在线性时间内删除重复项，该算法用于删除已排序的链表中的重复项。`O(n)`](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)
+2.  使用[算法在线性时间内删除重复项，该算法用于删除已排序的链表中的重复项。`O(n)`](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)
 
 请注意，此方法不会保留元素的原始顺序。
 

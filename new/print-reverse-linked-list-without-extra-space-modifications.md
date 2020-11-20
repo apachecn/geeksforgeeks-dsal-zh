@@ -17,11 +17,11 @@ Output :24->20->15->5->10->NULL
 
 下面是现在允许在此处使用的不同解决方案，因为我们不能使用额外的空间并修改列表。
 
-1）[递归解决方案，以打印反向链接列表](https://www.geeksforgeeks.org/write-a-recursive-function-to-print-reverse-of-a-linked-list/)。 需要额外的空间。
+1.  [递归解决方案，以打印反向链接列表](https://www.geeksforgeeks.org/write-a-recursive-function-to-print-reverse-of-a-linked-list/)。 需要额外的空间。
 
-2）[反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，然后打印。 这需要修改原始列表。
+2.  [反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，然后打印。 这需要修改原始列表。
 
-3）[基于堆栈的解决方案，用于打印反向链接列表](https://www.geeksforgeeks.org/print-reverse-linked-list-using-stack/)。 将所有节点一个一个地推入堆栈。 然后从堆栈中逐一弹出元素并进行打印。 这也需要额外的空间。
+3.  [基于堆栈的解决方案，用于打印反向链接列表](https://www.geeksforgeeks.org/print-reverse-linked-list-using-stack/)。 将所有节点一个一个地推入堆栈。 然后从堆栈中逐一弹出元素并进行打印。 这也需要额外的空间。
 
 算法：
 

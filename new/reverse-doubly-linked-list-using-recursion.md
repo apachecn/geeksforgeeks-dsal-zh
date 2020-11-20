@@ -24,9 +24,9 @@ Reversed Doubly linked list
 
 **算法**
 
-1）如果列表为空，则返回
+1.  如果列表为空，则返回
 
-2）通过交换 head- > prev 和 head- > next
+2.  通过交换 head- > prev 和 head- > next
 
 来反转 head 3）如果 prev = NULL，则 表示列表完全相反。 否则反转（标题->上一页）
 

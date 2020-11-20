@@ -12,9 +12,9 @@
 
 有效的**解决方案**的工作时间为 O（nLogn）。 这个想法是对链接列表使用[合并排序。
 
-1）遍历输入列表，并将下一个指针复制到每个节点的仲裁指针。
+1.  遍历输入列表，并将下一个指针复制到每个节点的仲裁指针。
 
-2）对由仲裁指针形成的链表进行合并排序。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
+2.  对由仲裁指针形成的链表进行合并排序。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
 以下是上述想法的实现。 所有合并排序功能均取自[这里](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)。 在此修改了采用的函数，以便它们在仲裁指针上工作，而不是在下一个指针上工作。
 
