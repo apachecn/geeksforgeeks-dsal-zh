@@ -23,14 +23,14 @@
 > 列表<stack>> name_of_container（size）;
 > ，尺寸可选</stack>
 
-[![](img/613ddcac41d3b7f794d44f0223b1d831.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200928102759/ListofStacks.jpg)
+![](img/613ddcac41d3b7f794d44f0223b1d831.png)
 
 **示例**：
 
 > 列表<stack>> ls（10）;
 > 堆栈列表的大小为 10</stack>
 
-**<u>插入</u>**：[使用 **push（）**函数完成堆栈列表](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)的插入。
+**插入**：[使用 **push（）**函数完成堆栈列表](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)的插入。
 
 **示例**：
 
@@ -51,7 +51,7 @@ ls.push_back(s);
 
 ```
 
-**<u>遍历</u>**：[使用](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)[迭代器](https://www.geeksforgeeks.org/iterators-c-stl/)进行堆栈列表中的遍历。
+**遍历**：[使用](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)[迭代器](https://www.geeksforgeeks.org/iterators-c-stl/)进行堆栈列表中的遍历。
 
 ## C++
 

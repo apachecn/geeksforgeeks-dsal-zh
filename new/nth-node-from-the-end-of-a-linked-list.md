@@ -8,7 +8,7 @@
 
 例如，如果输入在列表下方且 n = 3，则输出为“ B”
 
-[![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
+![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)
 
 **方法 1（使用链表的长度）**，
 

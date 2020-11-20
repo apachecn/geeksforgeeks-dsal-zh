@@ -19,7 +19,7 @@ struct node
 
 ```
 
-[![Circular doubly linked list](img/3eaab2fe0d74b212474ab093365715db.png)](https://media.geeksforgeeks.org/wp-content/uploads/Circular-doubly-linked-list.png)
+![Circular doubly linked list](img/3eaab2fe0d74b212474ab093365715db.png)
 
 **插入循环双链表**
 
@@ -27,11 +27,11 @@ struct node
 
     *   **Empty List (start = NULL):** A node(Say N) is inserted with data = 5, so previous pointer of N points to N and next pointer of N also points to N. But now start pointer points to the first node the list.
 
-        [![Insertion in empty list1](img/65b32f44143665810d0de3e9d287561d.png)](https://media.geeksforgeeks.org/wp-content/uploads/Insertion-in-empty-list1.png)
+        ![Insertion in empty list1](img/65b32f44143665810d0de3e9d287561d.png)
 
     *   **List initially contain some nodes, start points to first node of the List:** A node(Say M) is inserted with data = 7, so previous pointer of M points to last node, next pointer of M points to first node and last node’s next pointer points to this M node and first node’s previous pointer points to this M node.
 
-        [![Insertion in a list](img/c3909488b0091bad1dd74462d030078a.png)](https://media.geeksforgeeks.org/wp-content/uploads/Insertion-in-a-list.png)
+        ![Insertion in a list](img/c3909488b0091bad1dd74462d030078a.png)
 
         ```
 
@@ -75,7 +75,7 @@ struct node
 
 2.  **Insertion at the beginning of the list:** To insert a node at the beginning of the list, create a node(Say T) with data = 5, T next pointer points to first node of the list, T previous pointer points to last node the list, last node’s next pointer points to this T node, first node’s previous pointer also points this T node and at last don’t forget to shift ‘Start’ pointer to this T node.
 
-    [![Insertion at beginning of list](img/908f51fd4c7f6c6b4ccafc7334a49d7a.png)](https://media.geeksforgeeks.org/wp-content/uploads/Insertion-at-beginning-of-list.png)
+    ![Insertion at beginning of list](img/908f51fd4c7f6c6b4ccafc7334a49d7a.png)
 
     ```
 
@@ -105,7 +105,7 @@ struct node
 
 3.  **Insertion in between the nodes of the list**: To insert a node in between the list, two data values are required one after which new node will be inserted and another is the data of the new node.
 
-    [![Insertion in between the list](img/05481d0eacb55d1429126b49ccb1fd25.png)](https://media.geeksforgeeks.org/wp-content/uploads/Insertion-in-between-the-list.png)
+    ![Insertion in between the list](img/05481d0eacb55d1429126b49ccb1fd25.png)
 
     ```
 

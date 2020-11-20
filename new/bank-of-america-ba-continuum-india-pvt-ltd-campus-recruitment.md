@@ -56,7 +56,7 @@
 
 </form>
 
-[![](img/de93775f66c975fef071da8580f16430.png)](https://practice.geeksforgeeks.org/courses/Amazon-Test-Series?utm_source=Coursepage&utm_medium=interviewexperience&utm_campaign=GFG_ATS_IE)
+![](img/de93775f66c975fef071da8580f16430.png)
 
 * * *
 

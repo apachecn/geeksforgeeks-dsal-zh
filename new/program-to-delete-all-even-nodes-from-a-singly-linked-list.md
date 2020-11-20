@@ -6,7 +6,7 @@
 
 给定一个 [**单链列表**](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/) 包含 **N** 个节点，任务是从列表中删除所有偶数节点。
 
-[![](img/e510510691cefe47cf733e6f2324c9db.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200508153521/Untitled-drawing-217.jpg)
+![](img/e510510691cefe47cf733e6f2324c9db.png)
 
 **示例**：
 

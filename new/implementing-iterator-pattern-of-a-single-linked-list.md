@@ -251,4 +251,4 @@ Traversing LinkedList through Iterator
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
-[![design-pattern-img](img/14db468c0f00e6c64bfe591457d1b437.png)](https://practice.geeksforgeeks.org/courses/design-patterns-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_ooddpl)
+![design-pattern-img](img/14db468c0f00e6c64bfe591457d1b437.png)

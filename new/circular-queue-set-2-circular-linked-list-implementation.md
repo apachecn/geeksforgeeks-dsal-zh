@@ -36,7 +36,7 @@
 
     5.  检查（front == rear）是否为真，然后设置 front = Rear = NULL，否则将前列向前移动到队列中，更新 front 在后节点中的地址并返回元素。
 
-[![Operations-on-Circular -Queue](img/7d91457c9e1293990d59501eb82a3c54.png)](https://media.geeksforgeeks.org/wp-content/uploads/Operations-on-Circular-Queue.png)
+![Operations-on-Circular -Queue](img/7d91457c9e1293990d59501eb82a3c54.png)
 
 下面是上述方法的实现：
 

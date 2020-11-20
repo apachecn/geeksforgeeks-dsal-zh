@@ -8,7 +8,7 @@
 
 像数组一样，链表是线性数据结构。 与数组不同，链接列表元素不存储在连续位置，而是使用指针链接元素，如下所示。
 
-[![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
+![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)
 
 在 Java 中，LinkedList 可以表示为一个类，而 Node 可以表示为单独的类。 LinkedList 类包含 Node 类类型的引用。
 
@@ -37,7 +37,7 @@ class LinkedList {
 
 由于链接列表通常由其头指针表示，因此需要遍历列表直到最后一个节点，然后将最后一个节点的下一个更改为新节点。
 
-[![linkedlist_insert_last](img/428a5c975bfca4a1c08bc29cf2a6e78a.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_last.png)
+![linkedlist_insert_last](img/428a5c975bfca4a1c08bc29cf2a6e78a.png)
 
 ```
 
@@ -289,7 +289,7 @@ LinkedList: 1 2 3 4 5 6 7 8
 
         1.  在这种情况下，无需执行任何操作。
 
-[![linkedlist_deletion](img/fe3a6a2699fb99ae5429afd588e89619.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/05/Linkedlist_deletion.png)
+![linkedlist_deletion](img/fe3a6a2699fb99ae5429afd588e89619.png)
 
 ```
 
@@ -530,7 +530,7 @@ LinkedList: 2 3 5 6 7 8
 
         1.  在这种情况下，无需执行任何操作。
 
-[![linkedlist_deletion](img/fe3a6a2699fb99ae5429afd588e89619.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/05/Linkedlist_deletion.png)
+![linkedlist_deletion](img/fe3a6a2699fb99ae5429afd588e89619.png)
 
 ```
 

@@ -17,7 +17,7 @@ struct List
 
 ```
 
-[![](img/55ec5b7c1827265a492de094d7906b79.png "flattenList")](https://media.geeksforgeeks.org/wp-content/cdn-uploads/flattenList.png)
+![](img/55ec5b7c1827265a492de094d7906b79.png "flattenList")
 
 **上面的列表应转换为 10- > 5- > 12- > 7- > 11- > 4- > 20- > 13- > 17- > 6- > 2- > 16- > 9- > 8- > 3- > 19- > 15** 
 

@@ -204,7 +204,7 @@ After sorting : 1 -> 2 -> 3 -> 10 -> 20
 
 ```
 
-[![full-stack-img](img/1e356a15f348bce3fafac1fccfa8fbd6.png)](https://practice.geeksforgeeks.org/courses/full-stack-node?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_fullstack)
+![full-stack-img](img/1e356a15f348bce3fafac1fccfa8fbd6.png)
 
 * * *
 

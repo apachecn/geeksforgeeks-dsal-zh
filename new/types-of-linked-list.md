@@ -4,13 +4,13 @@
 
 [链表](http://www.geeksforgeeks.org/data-structures/linked-list/)是线性数据结构，其中元素不存储在连续的存储位置中。 链接列表中的元素使用[指针](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)链接。 简而言之，链接列表由节点组成，其中每个节点都包含一个数据字段和到列表中下一个节点的引用（链接）。
 
-### <u>链接列表的类型</u>
+### 链接列表的类型
 
 *   [**单链表**：](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/) 这是链表的最简单类型，其中每个节点都包含一些数据和一个指向相同数据类型的下一个节点的指针。 该节点包含指向下一个节点的指针，这意味着该节点存储序列中下一个节点的地址。 单个链接列表仅允许以一种方式遍历数据。 以下是相同的图片：
 
 ![](img/0d367952fa89396cdfc63909b9271cb7.png)
 
-*   **<u>单链表</u>的结构**：
+*   **单链表的结构**：
 
 ## C++
 
@@ -27,7 +27,7 @@ public:
 
 ```
 
-*   **<u>单链接列表</u>的创建和遍历**：
+*   **单链接列表的创建和遍历**：
 
 ## C++
 
@@ -247,7 +247,7 @@ public static void Main(String[] args)
 
 ![](img/69b16aec47e61c0f7fafd8c31e54dfa8.png)
 
-*   **<u>双链表</u>的结构**：
+*   **双链表的结构**：
 
 ## C++
 
@@ -266,7 +266,7 @@ struct Node {
 
 ```
 
-*   **<u>双链表</u>的创建和遍历**：
+*   **双链表的创建和遍历**：
 
 ## C++
 
@@ -597,7 +597,7 @@ Traversal in reverse direction
 
 ![](img/53aeedd7ed272dbebddb686426da7ffa.png)
 
-*   **<u>循环链表</u>的结构**：
+*   **循环链表的结构**：
 
 ## C++
 
@@ -614,7 +614,7 @@ public:
 
 ```
 
-*   **<u>循环链表</u>的创建和遍历**：
+*   **循环链表的创建和遍历**：
 
 ## C++
 
@@ -706,7 +706,7 @@ Contents of Circular Linked List
 
 ![](img/d699e42fe4c414a8ad2cdf8ccaeaebce.png)
 
-*   **<u>双循环链表</u>的结构**：
+*   **双循环链表的结构**：
 
 ## C++
 
@@ -726,7 +726,7 @@ struct Node {
 
 ```
 
-*   **<u>双循环链接列表</u>的创建和遍历**：
+*   **双循环链接列表的创建和遍历**：
 
 ## C++
 
@@ -851,7 +851,7 @@ Traversal in reverse direction
 
 ![](img/4e1a40e0dc120431a994ca6006b8b5a7.png)
 
-*   **<u>接地标题链表</u>的结构**：
+*   **接地标题链表的结构**：
 
 ## C++
 
@@ -867,7 +867,7 @@ struct link {
 
 ```
 
-*   **<u>双循环链接列表</u>的创建和遍历**：
+*   **双循环链接列表的创建和遍历**：
 
 ## C++
 

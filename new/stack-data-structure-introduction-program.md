@@ -14,7 +14,7 @@
 
 *   **isEmpty:** Returns true if stack is empty, else false.
 
-[![stack](img/91f929ba5f7179300fc713d1f8126678.png)](https://www.geeksforgeeks.org/wp-content/uploads/gq/2013/03/stack.png)
+![stack](img/91f929ba5f7179300fc713d1f8126678.png)
 
 **如何实际理解堆栈？**
 

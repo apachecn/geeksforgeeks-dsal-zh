@@ -8,15 +8,15 @@
 
 1.  **[Array](https://www.geeksforgeeks.org/array-data-structure/):** An array is a collection of items stored at contiguous memory locations. The idea is to store multiple items of the same type together. This makes it easier to calculate the position of each element by simply adding an offset to a base value, i.e., the memory location of the first element of the array (generally denoted by the name of the array).
 
-    [![](img/06ae604a79a0646affeb3b79ae905dcd.png)](https://www.geeksforgeeks.org/array/)
+    ![](img/06ae604a79a0646affeb3b79ae905dcd.png)
 
 2.  **[Linked Lists](https://www.geeksforgeeks.org/data-structures/linked-list/):** Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at a contiguous location; the elements are linked using pointers.
 
-    [![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
+    ![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)
 
 3.  **[Stack](http://www.geeksforgeeks.org/stack-data-structure/):** Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
 
-    [![](img/2871ce74a35b62e10b0225813eec54f9.png)](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
+    ![](img/2871ce74a35b62e10b0225813eec54f9.png)
 
     主要在堆栈中执行以下三个基本操作：
 
@@ -30,7 +30,7 @@
 
 4.  **[Queue](http://www.geeksforgeeks.org/queue-data-structure/):** Like Stack, Queue is a linear structure which follows a particular order in which the operations are performed. The order is First In First Out (FIFO). A good example of the queue is any queue of consumers for a resource where the consumer that came first is served first. The difference between stacks and queues is in removing. In a stack we remove the item the most recently added; in a queue, we remove the item the least recently added.
 
-    [![](img/56797373df00c67ade0019b0c1a6886d.png)](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)
+    ![](img/56797373df00c67ade0019b0c1a6886d.png)
 
     主要在队列上执行以下四个基本操作：
 
@@ -66,23 +66,23 @@
 
     *   **最小堆**：在最小堆中，根节点上存在的密钥必须在所有子节点上存在的密钥中最小。 对于该二叉树中的所有子树，相同的属性必须递归地为 true。
 
-    [![](img/ac0bc46083007c09b8f9b69ec3fe28bf.png)](https://www.geeksforgeeks.org/heap-data-structure/)
+    ![](img/ac0bc46083007c09b8f9b69ec3fe28bf.png)
 
 8.  [**Hashing Data Structure**](https://www.geeksforgeeks.org/hashing-data-structure/): Hashing is an important Data Structure which is designed to use a special function called the Hash function which is used to map a given value with a particular key for faster access of elements. The efficiency of mapping depends on the efficiency of the hash function used.
 
     让哈希函数 H（x）将值 x 映射到数组中的索引 x％10 处。 例如，如果值列表为[11、12、13、14、15]，它将分别存储在数组或哈希表中的位置{1、2、3、4、5}。
 
-    [![](img/c21defe12ef3d99064e74c81e86e0fb2.png)](https://www.geeksforgeeks.org/hashing-data-structure/)
+    ![](img/c21defe12ef3d99064e74c81e86e0fb2.png)
 
 9.  **[Matrix](https://www.geeksforgeeks.org/matrix/):** A matrix represents a collection of numbers arranged in an order of rows and columns. It is necessary to enclose the elements of a matrix in parentheses or brackets.
 
     包含 9 个元素的矩阵如下所示。
 
-    [![](img/38845c099010299db97d342d8547f21c.png)](https://www.geeksforgeeks.org/matrix/)
+    ![](img/38845c099010299db97d342d8547f21c.png)
 
 10.  **[Trie](http://www.geeksforgeeks.org/trie-insert-and-search/):** Trie is an efficient information re*Trie*val data structure. Using Trie, search complexities can be brought to an optimal limit (key length). If we store keys in the binary search tree, a well-balanced BST will need time proportional to M * log N, where M is maximum string length and N is the number of keys in the tree. Using Trie, we can search the key in O(M) time. However, the penalty is on Trie storage requirements.
 
-    [![](img/a3733f8c32de781dd3b50b2cc7868cec.png)](https://www.geeksforgeeks.org/trie-insert-and-search/)
+    ![](img/a3733f8c32de781dd3b50b2cc7868cec.png)
 
 
 

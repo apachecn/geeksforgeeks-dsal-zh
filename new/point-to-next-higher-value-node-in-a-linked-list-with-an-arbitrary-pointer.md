@@ -4,7 +4,7 @@
 
 给定单链表，每个节点都有一个额外的“任意”指针，该指针当前指向 NULL。 需要使“任意”指针指向下一个较高值的节点。
 
-[![listwithArbit](img/8169f1fd5a3a7a6cf9da279cda5846a5.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/listwithArbit1.png)
+![listwithArbit](img/8169f1fd5a3a7a6cf9da279cda5846a5.png)
 
 **我们强烈建议您最小化您的浏览器，然后先尝试一下。**
 

@@ -27,7 +27,7 @@ Tag    Block ID    Size
 
 ```
 
-[![](img/6987c624f5b654a88132d843c443d166.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200528192255/ahf.jpg)
+![](img/6987c624f5b654a88132d843c443d166.png)
 
 **方法**：这个想法是为每个存储块分配一个唯一的标签 ID。 为每个大小不同的进程提供了块 ID（表示它们属于哪个内存块），以及唯一的标记 ID（用于删除特定进程以释放空间）。 创建一个给定的内存块大小的空闲列表和已分配的进程列表。
 

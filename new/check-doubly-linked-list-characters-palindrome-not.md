@@ -4,7 +4,7 @@
 
 给定字符双链表，编写一个函数，如果给定的双链表是回文，则返回 true，否则返回 false。
 
-[![Palindrom-Doubly-Linked-List](img/e40b6fe0085d04f1ee7224d6baf12667.png)](https://media.geeksforgeeks.org/wp-content/uploads/Palindrom-Doubly-Linked-List1.png)
+![Palindrom-Doubly-Linked-List](img/e40b6fe0085d04f1ee7224d6baf12667.png)
 
 1.  创建一个双向链接列表，其中每个节点仅包含一个字符串字符。
 

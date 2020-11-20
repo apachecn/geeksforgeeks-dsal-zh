@@ -6,7 +6,7 @@
 
 给定[链表](https://www.geeksforgeeks.org/data-structures/linked-list/) **N** 的节点和值 **K，**的任务是在链表中插入值为 **K** 的节点 在给定**节点 N** 之前。
 
-**<u>节点的结构：</u>**
+**节点的结构：**
 
 ## C++
 
@@ -39,17 +39,17 @@ struct Node {
 
 *   给定节点是除头之外的任何有效节点。
 
-### <u>当给定的节点是头节点</u>时：
+### 当给定的节点是头节点时：
 
 这个想法是用给定值 **K** 创建一个新节点。 然后，新节点的下一部分将使用指针头进行更新。 最后，将使用新节点的地址更新头部。 下面是相同的图像：
 
-[![](img/9a18678fcc6c9fc0dbf99eb7da8860c2.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200822120219/ibhll.jpg)
+![](img/9a18678fcc6c9fc0dbf99eb7da8860c2.png)
 
-### <u>当给定的节点是除头节点</u>之外的任何有效节点：
+### 当给定的节点是除头节点之外的任何有效节点：
 
 最简单的方法是[遍历给定的链表](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)，以搜索给定节点的前一个节点。 然后，使用给定值 **K** 创建新节点。现在，使用给定节点的地址更新新节点的下一部分，并使用新节点的地址更新前一个节点的下一部分 。 下面是借助图像说明该方法的示意图：
 
-[![](img/82b854b82d4bcd0104c2f5c6e7f896bd.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200822122044/ibhll.jpg)
+![](img/82b854b82d4bcd0104c2f5c6e7f896bd.png)
 
 下面是上述方法的实现：
 

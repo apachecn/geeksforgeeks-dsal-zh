@@ -14,7 +14,7 @@
 
 静态数据结构示例：
 
-1.  ### [阵列](https://www.geeksforgeeks.org/arrays-in-java/)
+1.  ### [数组](https://www.geeksforgeeks.org/arrays-in-java/)
 
     数组是一个包含固定数量的单一类型值的容器对象。 创建数组时将确定数组的长度。 数组是一组由通用名称引用的相似类型的变量。 Java 中的数组与 C / C++中的数组工作方式不同。
 
@@ -97,7 +97,7 @@
 
 1.  ### [单链接列表](https://www.geeksforgeeks.org/linked-list-in-java/)
 
-    链表是线性数据结构，其中元素未存储在连续的位置，并且每个元素都是具有数据部分和地址部分的单独对象。 元素使用指针和地址链接。 每个元素称为一个节点。 由于动态性以及插入和删除的简便性，它们比阵列更可取。
+    链表是线性数据结构，其中元素未存储在连续的位置，并且每个元素都是具有数据部分和地址部分的单独对象。 元素使用指针和地址链接。 每个元素称为一个节点。 由于动态性以及插入和删除的简便性，它们比数组更可取。
 
     ```
 
@@ -177,7 +177,7 @@
 
     双链表（DLL）包含一个额外的指针（通常称为**上一个指针**）以及在单个链接列表中的**下一个指针**和**数据** 。
 
-    [![](img/1fac4717827a04f080fae80f8fd57fe7.png)](https://www.geeksforgeeks.org/doubly-linked-list/)
+    ![](img/1fac4717827a04f080fae80f8fd57fe7.png)
 
     ```
 
@@ -399,7 +399,7 @@
 
     Java Collection 框架提供了一个 Stack 类，该类可以建模和实现 Stack 数据结构。 该课程基于后进先出的基本原则。 除了基本的推入和弹出操作外，该类还提供了空，搜索和查看的三个功能。 也可以说该类是 Vector 的扩展，并将其视为具有五个提到的函数的堆栈。 该类也可以称为 Vector 的子类。
 
-    [![](img/65e1db85d6cbd7231fe141e47968bdc0.png)](https://www.geeksforgeeks.org/stack-class-in-java/)
+    ![](img/65e1db85d6cbd7231fe141e47968bdc0.png)
 
     ```
 
@@ -449,7 +449,7 @@
 
     Queue 接口在 java.util 包中可用，并且扩展了 Collection 接口。 队列集合用于保存要处理的元素，并提供各种操作，如插入，删除等。它是对象的有序列表，其使用仅限于在列表的末尾插入元素并从头开始删除元素 列表，即遵循先进先出或先进先出的原则。
 
-    [![](img/c42036f3f74cce8827236640b7f21a49.png)](https://www.geeksforgeeks.org/queue-interface-java/)
+    ![](img/c42036f3f74cce8827236640b7f21a49.png)
 
     ```
 

@@ -103,7 +103,7 @@ public class Node
 
 新节点总是添加在给定链接列表的开头之前。 新添加的节点成为链接列表的新头。 例如，如果给定的链接列表为 10- > 15- > 20- > 25，而我们在前面添加了项目 5，则链接列表将变为 5- > 10- > 15 -> 20- > 25.让我们调用添加到列表前面的函数 push（）。 push（）必须接收一个指向 head 指针的指针，因为 push 必须将 head 指针更改为指向新节点（请参见[此](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）。
 
-[![linkedlist_insert_at_start](img/0fcc552ce260975b170428e6877939dc.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_at_start.png)
+![linkedlist_insert_at_start](img/0fcc552ce260975b170428e6877939dc.png)
 
 以下是在最前面添加节点的 4 个步骤。
 
@@ -224,7 +224,7 @@ push（）的时间复杂度为`O(1)`，因为它要做的工作量是恒定的�
 
 我们得到指向节点的指针，并将新节点插入给定节点之后。
 
-[![linkedlist_insert_middle](img/b6bf7ceee6de4eb0511ffb8bb649abfb.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_middle.png) 
+![linkedlist_insert_middle](img/b6bf7ceee6de4eb0511ffb8bb649abfb.png) 
 
 ## C++
 
@@ -386,7 +386,7 @@ insertAfter（）的时间复杂度为`O(1)`，因为它的工作量是恒定的
 
 由于链接列表通常由其开头表示，因此我们必须遍历该列表直到结尾，然后更改下一个 最后一个节点到新节点的数量。
 
-[![linkedlist_insert_last](img/428a5c975bfca4a1c08bc29cf2a6e78a.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist_insert_last.png)
+![linkedlist_insert_last](img/428a5c975bfca4a1c08bc29cf2a6e78a.png)
 
 以下是最后添加节点的 6 个步骤。
 

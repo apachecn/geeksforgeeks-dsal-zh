@@ -4,7 +4,7 @@
 
 给定单链表，每个节点都有一个额外的“任意”指针，该指针当前指向 NULL。 我们需要在右侧链表中使“任意”指针指向最大值节点。
 
-[![listwithArbit1](img/e37b455dc722e9b607243f9f28641891.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/listwithArbit12.png)
+![listwithArbit1](img/e37b455dc722e9b607243f9f28641891.png)
 
 **简单解决方案**是一个接一个地遍历所有节点。 对于每个节点，找到右侧最大的节点并更改下一个指针。 该解决方案的时间复杂度为 O（n <sup>2</sup> ）。
 

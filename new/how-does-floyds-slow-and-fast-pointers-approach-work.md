@@ -4,7 +4,7 @@
 
 我们已经在[链表](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)中的检测循环中讨论了 Floyd 的快慢指针算法。
 
-[![](img/de522899e01a1322ab2808eeff1ad73e.png "Linked List Loop")](https://media.geeksforgeeks.org/wp-content/cdn-uploads/2009/04/Linked-List-Loop.gif)
+![](img/de522899e01a1322ab2808eeff1ad73e.png "Linked List Loop")
 
 该算法是从链表的开头开始两个指针，分别是慢速和快速。 我们一次移动一个慢节点，一次快速移动两个节点。 如果有一个循环，那么他们一定会见面的。 此方法之所以有效，是因为以下事实。
 

@@ -194,7 +194,7 @@ Reversed Linked list
 
 时间复杂度：`O(n)`
 
-<u>**参考**：</u>
+**参考**：
 
 [http://discuss.joelonsoftware.com/default.asp?interview.11.564944.16](http://discuss.joelonsoftware.com/default.asp?interview.11.564944.16)
 

@@ -16,7 +16,7 @@
 
 对于上面的示例，为下面的树形成的链表应该为 NULL 5 1 4 8 11 6 7 15 63 31 55 65-> NULL->->->->->->->->->-> ->->
 
-[![tree](img/fad0abc381126fee74d75ebf15e754c2.png)](https://media.geeksforgeeks.org/wp-content/uploads/llTernary.jpg)
+![tree](img/fad0abc381126fee74d75ebf15e754c2.png)
 
 **我们强烈建议您最小化浏览器，然后自己尝试。**
 

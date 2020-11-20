@@ -10,15 +10,15 @@
 
 确定无向图的连接分量。 下图显示了具有四个连接组件的图形。
 
-[![Fig (a)](img/1fd4bc2556ab11c6ddb066638ceb1b16.png)](https://media.geeksforgeeks.org/wp-content/uploads/Linked_List_representation_of_Disjoint_Set_Data_Structures_1-1.jpg)
+![Fig (a)](img/1fd4bc2556ab11c6ddb066638ceb1b16.png)
 
 解决方案：随后的一个过程 X 使用不相交集运算来计算图形的连接分量。 一旦 X 对图形进行了预处理，过程 Y 将回答有关两个顶点是否在同一连接的组件中的查询。 下图显示了处理每个边后不相交集的集合。
 
-[![Fig (b)](img/82fd05e1d348566b677f07d1a956829d.png)](https://media.geeksforgeeks.org/wp-content/uploads/Linked_List_representation_of_Disjoint_Set_Data_Structures_2.jpg) 
+![Fig (b)](img/82fd05e1d348566b677f07d1a956829d.png) 
 
 参见[此处](https://www.geeksforgeeks.org/union-find/)，如上文所述。
 
-[![Fig 2](img/c6e927bc3f140061a31b202d3dafb812.png)](https://media.geeksforgeeks.org/wp-content/uploads/Linked_List_representation_of_Disjoint_Set_Data_Structures_3.jpg) 
+![Fig 2](img/c6e927bc3f140061a31b202d3dafb812.png) 
 
 **图（a）**两组链接列表表示。 集合 S1 包含成员 d，f 和 g，代表为 f，集合 S2 包含成员 b，c，e 和 h，代表为 c。 列表中的每个对象都包含一个 set 成员，一个指向列表中下一个对象的指针以及一个指向该 set 对象的指针。 每个设置的对象分别具有指向第一个和最后一个对象的头和尾的指针。 **（b）** UNION（e，g）的结果，它将包含 e 的链表附加到包含 g 的链表。 结果集的代表是 f。 e 列表的设置对象 S2 被销毁。
 

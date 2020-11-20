@@ -16,7 +16,7 @@ Input: 20->4->3
 Output: 3->4->20
 ```
 
-[![](img/38fde8d2e59a1b2f1131482511318c3f.png)](https://media.geeksforgeeks.org/wp-content/uploads/20190405123134/Sorting-a-Lisked-List.jpg)
+![](img/38fde8d2e59a1b2f1131482511318c3f.png)
 
 **方法**：
 

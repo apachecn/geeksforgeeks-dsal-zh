@@ -8,7 +8,7 @@
 
 **三元 Cantor 集**：三元 Cantor 集是通过将线段的中间部分（分为 3 部分）移除并在剩余的较短段上重复此过程而构建的。 以下是 Cantor 集的图示。
 
-[![Cantor Set](img/f0c1a1aa5e88e5397f6c1e7a470e02f0.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200211010710/Cantor-Set1.png)
+![Cantor Set](img/f0c1a1aa5e88e5397f6c1e7a470e02f0.png)
 
 三元康托集的插图
 

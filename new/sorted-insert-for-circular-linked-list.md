@@ -8,7 +8,7 @@
 
 编写一个 C 函数，以在排序的循环链表（CLL）中插入新值。 例如，如果输入 CLL 在后面。
 
-[![](img/c3d969168cf85b5ef6ab86547789dfde.png "cll1")](https://media.geeksforgeeks.org/wp-content/uploads/sortedInsertionCircularLinkedList.jpg)
+![](img/c3d969168cf85b5ef6ab86547789dfde.png "cll1")
 
 **算法**：
 

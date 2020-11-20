@@ -20,7 +20,7 @@
 
 这个想法是使用[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)和[哈希图](https://www.geeksforgeeks.org/java-util-hashmap-in-java-with-examples/)来维护数组元素的频率。 以下是此数据结构中的哈希映射和双链表的用例：
 
-*   **双链表**：跟踪阵列中的非重复元素。
+*   **双链表**：跟踪数组中的非重复元素。
 
 *   **哈希图**跟踪双链表中元素的出现以及非重复元素的地址
 
@@ -200,7 +200,7 @@ int main()
 
 ```
 
-[![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
+![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 
 * * *
 

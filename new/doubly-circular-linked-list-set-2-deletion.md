@@ -28,15 +28,15 @@
 
 *   如果给定的*键*（说 4）与列表的第一个节点匹配（步骤 4）：
 
-    [![Delete_first_node](img/885247acbdb517904d32df817259a588.png)](https://media.geeksforgeeks.org/wp-content/uploads/Delete_first_node.png)
+    ![Delete_first_node](img/885247acbdb517904d32df817259a588.png)
 
 *   如果给定的*键*（说 8）与列表的最后一个节点匹配（步骤 5）：
 
-    [![Delete_last_node](img/dec22affd2479b6ec8f63c4cbc90d8c7.png)](https://media.geeksforgeeks.org/wp-content/uploads/Delete_last_node.png)
+    ![Delete_last_node](img/dec22affd2479b6ec8f63c4cbc90d8c7.png)
 
 *   如果给定的*键*（说 6）与列表的中间节点匹配（步骤 6）：
 
-    [![Delete_middle_node](img/a121670e94ed3cebfca957353bcfedbc.png)](https://media.geeksforgeeks.org/wp-content/uploads/Delete_middle_node.png)
+    ![Delete_middle_node](img/a121670e94ed3cebfca957353bcfedbc.png)
 
 ## C++
 

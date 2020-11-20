@@ -12,7 +12,7 @@
 
 **示例**：
 
-[![tree to list](img/ffff6388fae1f1744ce42cfe0451aa66.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/tree-to-list.png)
+![tree to list](img/ffff6388fae1f1744ce42cfe0451aa66.png)
 
 可以使用以下步骤描述该想法。
 

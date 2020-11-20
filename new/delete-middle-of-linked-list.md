@@ -127,7 +127,7 @@ Linked List after deletion of middle
 
     不需要多余的空间。
 
-<u>**有效解决方案**：</u>
+**有效解决方案**：
 
 **方法**：上述解决方案需要对链表进行两次遍历。 中间节点可以使用一个遍历删除。 这个想法是使用两个指针，slow_ptr 和 fast_ptr。 两个指针都从列表的开头开始。 当 fast_ptr 到达末尾时，slow_ptr 到达中间。 此想法与帖子的[方法 2 中使用的想法相同。 这篇文章中的另一件事是跟踪中间节点的先前位置，以便可以删除中间节点。](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)
 

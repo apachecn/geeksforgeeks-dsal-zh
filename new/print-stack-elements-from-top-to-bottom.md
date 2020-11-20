@@ -559,7 +559,7 @@ public static void Main(String[] args)
 
 ***辅助空间**：`O(n)`*
 
-[**阵列堆栈**](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) **方法**：此方法讨论[阵列堆栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)实现中问题的解决方案。 步骤如下：
+[**数组堆栈**](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) **方法**：此方法讨论[数组堆栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)实现中问题的解决方案。 步骤如下：
 
 1.  将给定堆栈中的顶部元素推入[数组堆栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)。
 

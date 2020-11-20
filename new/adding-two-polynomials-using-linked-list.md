@@ -22,7 +22,7 @@ Output:
 
 ```
 
-[![Addition-of-two-polynomial](img/6d0f4987d2f0660d52407c0305d08971.png)](https://media.geeksforgeeks.org/wp-content/uploads/Addition-of-two-polynomial.png) 
+![Addition-of-two-polynomial](img/6d0f4987d2f0660d52407c0305d08971.png) 
 
 ```
 

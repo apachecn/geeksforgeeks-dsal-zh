@@ -6,7 +6,7 @@
 
 给定[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)，任务是找到该双链表的大小。 例如，下面的链表的大小为 4。
 
-[![dll](img/1fac4717827a04f080fae80f8fd57fe7.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png)
+![dll](img/1fac4717827a04f080fae80f8fd57fe7.png)
 
 双链表是一种由一组顺序链接的记录（称为节点）组成的链接数据结构。 每个节点包含两个称为链接的字段，这些字段引用节点序列中的上一个节点和下一个节点。
 

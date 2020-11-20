@@ -10,7 +10,7 @@
 
 **D** 整体 **L** 着墨 **L** ist（DLL）包含一个额外的指针，通常称为*前一个指针*，以及下一个指针和数据 在单链列表中。
 
-[![dll](img/1fac4717827a04f080fae80f8fd57fe7.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL1.png)
+![dll](img/1fac4717827a04f080fae80f8fd57fe7.png)
 
 以下是 C 语言中 DLL 节点的表示。
 
@@ -96,7 +96,7 @@ class Node:
 
 新节点总是添加在给定链接列表的开头之前。 新添加的节点成为 DLL 的新负责人。 例如，如果给定的链接列表为 10152025，并且我们在前面添加了项 5，则链接列表将变为 510152025。让我们将添加到列表前面的函数称为 push（）。 push（）必须接收一个指向 head 指针的指针，因为 push 必须将 head 指针更改为指向新节点（请参见[此](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）
 
-[![dll_add_front](img/dab559af89903b5bc676844fb02d24d2.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL_add_front1.png)
+![dll_add_front](img/dab559af89903b5bc676844fb02d24d2.png)
 
 以下是在最前面添加节点的 5 个步骤。
 
@@ -184,7 +184,7 @@ def push(self, new_data):
 
 我们获得了一个指向节点的指针作为 prev_node，并且在该给定节点之后插入了新节点。
 
-[![dll_add_middle](img/daad8225776aba03cdc04f3ae862498f.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL_add_middle1.png)
+![dll_add_middle](img/daad8225776aba03cdc04f3ae862498f.png)
 
 ## C
 
@@ -297,7 +297,7 @@ def insertAfter(self, prev_node, new_data):
 
 由于链接列表通常由其开头表示，因此我们必须遍历该列表直到结尾，然后 将最后一个节点的下一个更改为新节点。
 
-[![dll_add_end](img/9f08d4d15c29abf81080ea4f62c04e0d.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/03/DLL_add_end1.png)
+![dll_add_end](img/9f08d4d15c29abf81080ea4f62c04e0d.png)
 
 以下是最后添加节点的 7 个步骤。
 
