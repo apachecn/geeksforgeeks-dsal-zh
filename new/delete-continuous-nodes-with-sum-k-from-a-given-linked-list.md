@@ -4,26 +4,26 @@
 
 中删除总和为 K 的连续节点。
 
-给定[单链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)和整数 **K** ，任务是从给定的[链接中删除总和为 **K** 的所有连续节点集。 列表](http://www.geeksforgeeks.org/data-structures/linked-list/)。 删除后打印更新的链表。 如果无法进行此类删除，请打印原始的链接列表。
+给定[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)和整数 **K** ，任务是从给定的[链接中删除总和为 **K** 的所有连续节点集。 列表](http://www.geeksforgeeks.org/data-structures/linked-list/)。 删除后打印更新的链表。 如果无法进行此类删除，请打印原始的链表。
 
 **示例**：
 
-> **输入**：链接列表：1-> 2-> -3-> 3-> 1，K = 3
+> **输入**：链表：1-> 2-> -3-> 3-> 1，K = 3
 > **输出**：-3 -> 1
 > **解释**：
 > 连续和为 3 的节点为：
 > 1）1-> 2
 > 2）3
-> 因此， 删除这些节点链的链接列表将变为：-3- > 1
+> 因此， 删除这些节点链的链表将变为：-3- > 1
 > 
-> **输入**：链接列表：1-> 1-> -3-> -3-> -2，K = 5
+> **输入**：链表：1-> 1-> -3-> -3-> -2，K = 5
 > **输出**：1-> 1-> -3-> -3-> -2
 > **解释**：
 > 不存在总和为 K 的连续节点
 
 **方法**：
 
-1.  在链接列表的开头将 Node 的值附加为零。
+1.  在链表的开头将 Node 的值附加为零。
 
 2.  [遍历给定的链表](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)。
 

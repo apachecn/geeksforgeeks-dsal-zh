@@ -1,4 +1,4 @@
-# 使用链接列表
+# 使用链表
 
 > 原文：[https://www.geeksforgeeks.org/first-fit-algorithm-in-memory-management-using-linked-list/](https://www.geeksforgeeks.org/first-fit-algorithm-in-memory-management-using-linked-list/)
 

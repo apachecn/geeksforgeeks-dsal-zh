@@ -1,4 +1,4 @@
-# 将链接列表的子列表从位置 M 向右旋转 K 个位置
+# 将链表的子列表从位置 M 向右旋转 K 个位置
 
 > 原文：[https://www.geeksforgeeks.org/rotate-the-sub-list-of-a-linked-list-from-position-m-to-n-to-the-right-by-k-places/](https://www.geeksforgeeks.org/rotate-the-sub-list-of-a-linked-list-from-position-m-to-n-to-the-right-by-k-places/)
 

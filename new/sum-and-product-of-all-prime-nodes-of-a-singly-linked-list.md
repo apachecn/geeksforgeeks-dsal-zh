@@ -1,10 +1,10 @@
-# 单链接列表
+# 单链表
 
 > 原文：[https://www.geeksforgeeks.org/sum-and-product-of-all-prime-nodes-of-a-singly-linked-list/](https://www.geeksforgeeks.org/sum-and-product-of-all-prime-nodes-of-a-singly-linked-list/)
 
 的所有主要节点的总和与乘积
 
-给定一个包含 N 个节点的单链接列表，任务是从列表中查找素数所有节点的总和与乘积。
+给定一个包含 N 个节点的单链表，任务是从列表中查找素数所有节点的总和与乘积。
 
 **范例**：
 
@@ -18,7 +18,7 @@ Output : Product = 6, Sum = 5
 
 ```
 
-**方法**：的想法是逐个遍历单链接列表的节点，并检查当前节点是否为质数。 找到素数节点的数据之和和积。
+**方法**：的想法是逐个遍历单链表的节点，并检查当前节点是否为质数。 找到素数节点的数据之和和积。
 
 以下是上述想法的实现：
 

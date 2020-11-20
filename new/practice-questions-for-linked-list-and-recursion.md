@@ -1,4 +1,4 @@
-# 链接列表和递归
+# 链表和递归
 
 > 原文：[https://www.geeksforgeeks.org/practice-questions-for-linked-list-and-recursion/](https://www.geeksforgeeks.org/practice-questions-for-linked-list-and-recursion/)
 

@@ -1,4 +1,4 @@
-# 递归方法，从链接列表的末尾查找第 n 个节点
+# 递归方法，从链表的末尾查找第 n 个节点
 
 > 原文：[https://www.geeksforgeeks.org/recursive-approach-to-find-nth-node-from-the-end-in-the-linked-list/](https://www.geeksforgeeks.org/recursive-approach-to-find-nth-node-from-the-end-in-the-linked-list/)
 
@@ -415,7 +415,7 @@ Nth node from last is: 5
 
 ```
 
-**时间复杂度**：`O(n)`，其中“ n”是链接列表中的节点数。
+**时间复杂度**：`O(n)`，其中“ n”是链表中的节点数。
 
 
 

@@ -6,7 +6,7 @@
 
 ![Palindrom-Doubly-Linked-List](img/e40b6fe0085d04f1ee7224d6baf12667.png)
 
-1.  创建一个双向链接列表，其中每个节点仅包含一个字符串字符。
+1.  创建一个双向链表，其中每个节点仅包含一个字符串字符。
 
 2.  在列表的开头向左初始化两个指针**，在列表的末尾初始化**的两个指针**。**
 
@@ -322,7 +322,7 @@ It is Palindrome
 
 *   [用于检查单链表是否是回文](https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)的功能
 
-*   [检查字符串的链接列表是否形成回文](https://www.geeksforgeeks.org/check-linked-list-loop-palindrome-not/)
+*   [检查字符串的链表是否形成回文](https://www.geeksforgeeks.org/check-linked-list-loop-palindrome-not/)
 
 本文由 **Akash Gupta** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

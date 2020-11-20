@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/construct-linked-list-from-3d-matrix/](https://www.geeksforgeeks.org/construct-linked-list-from-3d-matrix/)
 
-构造链接列表
+构造链表
 
 给定大小为 **X * Y * Z** 的 3D 矩阵 **mat [] [] []** 。 任务是将该矩阵转换为完全连接的循环链表。 每个节点将具有 6 个指针，即**：左，右，上，下，前，后。**
 

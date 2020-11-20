@@ -1,8 +1,8 @@
-# 在链接列表中找到第二大元素
+# 在链表中找到第二大元素
 
 > 原文：[https://www.geeksforgeeks.org/find-the-second-largest-element-in-a-linked-list/](https://www.geeksforgeeks.org/find-the-second-largest-element-in-a-linked-list/)
 
-给定整数数据的链接列表。 任务是编写一个程序，以有效地找到链表中存在的第二大元素。
+给定整数数据的链表。 任务是编写一个程序，以有效地找到链表中存在的第二大元素。
 
 **范例**：
 
@@ -17,7 +17,7 @@ Output : The second largest element is 5.
 
 **简单解决方案**将首先[按降序对链表](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)排序，然后从排序的链表中打印第二个元素。 该解决方案的时间复杂度为 O（nlogn）。
 
-**更好的解决方案**是遍历链接列表两次。 在第一个遍历中找到最大元素。 在第二遍历中找到小于在第一遍历中获得的元素的最大元素。 该解决方案的时间复杂度为`O(n)`。
+**更好的解决方案**是遍历链表两次。 在第一个遍历中找到最大元素。 在第二遍历中找到小于在第一遍历中获得的元素的最大元素。 该解决方案的时间复杂度为`O(n)`。
 
 一种更有效的**解决方案**是在单个遍历中查找第二大元素。
 

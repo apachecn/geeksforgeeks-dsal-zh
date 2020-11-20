@@ -1,20 +1,20 @@
-# C 程序，使用递归
+# C 程序：使用递归创建单链表的副本
 
 > 原文：[https://www.geeksforgeeks.org/c-program-to-create-copy-of-a-singly-linked-list-using-recursion/](https://www.geeksforgeeks.org/c-program-to-create-copy-of-a-singly-linked-list-using-recursion/)
 
-创建单个链接列表的副本
+
 
 给定指向[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)的**头**节点的指针，任务是创建 的副本。 [递归](http://www.geeksforgeeks.org/recursion/)使用链表。
 
 **示例**：：
 
-> ***输入**：以下链接列表的标题*
+> ***输入**：以下链表的标题*
 > *1- > 2- > 3- > 4- >空*
 > ***输出**：*
 > *O* 原始列表：1-> 2-> 3-> 4-> NULL
 > 重复列表：1-> 2-> 3-> 4->空
 > 
-> ***输入**：以下链接列表的标题*
+> ***输入**：以下链表的标题*
 > *1- > 2- > 3- > 4- > 5- > NULL*
 > ***输出**：*
 > *原始列表：1- > 2- > 3- > 4- > 5- > NULL，*

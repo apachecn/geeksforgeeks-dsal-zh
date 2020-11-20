@@ -1,4 +1,4 @@
-# 搜索链接列表中的元素（迭代和递归）
+# 搜索链表中的元素（迭代和递归）
 
 > 原文：[https://www.geeksforgeeks.org/search-an-element-in-a-linked-list-iterative-and-recursive/](https://www.geeksforgeeks.org/search-an-element-in-a-linked-list-iterative-and-recursive/)
 
@@ -8,7 +8,7 @@
    bool search(Node *head, int x) 
 ```
 
-例如，如果要搜索的键是 15，链接列表是 14-> 21-> 11-> 30-> 10，则函数应返回 false。 如果要搜索的键为 14，则该函数应返回 true。
+例如，如果要搜索的键是 15，链表是 14-> 21-> 11-> 30-> 10，则函数应返回 false。 如果要搜索的键为 14，则该函数应返回 true。
 
 **迭代解决方案**
 

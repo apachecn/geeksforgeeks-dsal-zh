@@ -1,4 +1,4 @@
-# 在链接列表
+# 在链表
 
 > 原文：[https://www.geeksforgeeks.org/swap-kth-node-from-beginning-with-kth-node-from-end-in-a-linked-list/](https://www.geeksforgeeks.org/swap-kth-node-from-beginning-with-kth-node-from-end-in-a-linked-list/)
 
@@ -35,7 +35,7 @@ Explanation: The 5th node from 1st is 5 and
 
 3.  X 和 Y 相同
 
-4.  X 和 Y 不存在（k 大于链接列表中的节点数）
+4.  X 和 Y 不存在（k 大于链表中的节点数）
 
 下面是上述方法的实现。
 

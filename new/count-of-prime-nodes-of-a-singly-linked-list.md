@@ -1,4 +1,4 @@
-# 单链接列表
+# 单链表
 
 > 原文：[https://www.geeksforgeeks.org/count-of-prime-nodes-of-a-singly-linked-list/](https://www.geeksforgeeks.org/count-of-prime-nodes-of-a-singly-linked-list/)
 

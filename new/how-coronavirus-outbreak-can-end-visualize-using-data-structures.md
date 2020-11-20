@@ -28,13 +28,13 @@
 
 如果您对树木进行了任何深度的研究，您都会知道它会变得非常大，非常快。
 
-全世界卫生组织的早期目标是将 R <sub>0</sub> 降低到一个（或更少）。 如果 R <sub>0</sub> = 1，则树中的每个叶节点现在都成为链接列表的头。 每个人都以相同的方式感染另一个人，即一个（单个）链接的列表引用了该列表中的下一个节点。
+全世界卫生组织的早期目标是将 R <sub>0</sub> 降低到一个（或更少）。 如果 R <sub>0</sub> = 1，则树中的每个叶节点现在都成为链表的头。 每个人都以相同的方式感染另一个人，即一个（单个）链接的列表引用了该列表中的下一个节点。
 
 ![](img/c2fa4f4bfbd34dc4b1fe6b000a4e8951.png)
 
 如果 R <sub>0</sub> < 1，则在某个时候，一个人将不会再感染另一个人，并且（该叶子的）感染线被破坏了。 我们可以通过使节点指向空引用来在代码中进行建模，这意味着它是链表中的最终节点。
 
-解决冠状病毒情况的一种方法是更改​​病毒的行为，以便可以通过（最终是有限的）链接列表而不是树来对它进行建模。 [树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，[图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/) & [链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/)不仅用于 [**FAANG**](https://www.geeksforgeeks.org/tips-to-get-your-resume-shortlisted-for-top-tech-companies/) 采访中， 在建模和解决实际现象中非常有用。
+解决冠状病毒情况的一种方法是更改​​病毒的行为，以便可以通过（最终是有限的）链表而不是树来对它进行建模。 [树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，[图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/) & [链表](https://www.geeksforgeeks.org/data-structures/linked-list/)不仅用于 [**FAANG**](https://www.geeksforgeeks.org/tips-to-get-your-resume-shortlisted-for-top-tech-companies/) 采访中， 在建模和解决实际现象中非常有用。
 
 因此，请保持安全并留在内部，以打破日冕病毒的连锁。
 

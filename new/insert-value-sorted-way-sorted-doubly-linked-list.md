@@ -1,4 +1,4 @@
-# 在排序的双向链接列表中以排序的方式插入值
+# 在排序的双向链表中以排序的方式插入值
 
 > 原文：[https://www.geeksforgeeks.org/insert-value-sorted-way-sorted-doubly-linked-list/](https://www.geeksforgeeks.org/insert-value-sorted-way-sorted-doubly-linked-list/)
 

@@ -2,9 +2,9 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-a-triplet-from-three-linked-lists-with-sum-equal-to-a-given-number/](https://www.geeksforgeeks.org/find-a-triplet-from-three-linked-lists-with-sum-equal-to-a-given-number/)
 
-给定三个链接列表（例如，a，b 和 c），从每个列表中找到一个节点，以使节点的值之和等于给定数目。
+给定三个链表（例如，a，b 和 c），从每个列表中找到一个节点，以使节点的值之和等于给定数目。
 
-例如，如果三个链接列表是 12- > 6- > 29、23- > 5- > 8 和 90- > 20- > 59 ，给定数字为 101，输出应为三元组“ 6 5 90”。
+例如，如果三个链表是 12- > 6- > 29、23- > 5- > 8 和 90- > 20- > 59 ，给定数字为 101，输出应为三元组“ 6 5 90”。
 
 在以下解决方案中，为简化分析，假设所有三个链表的大小相同。 以下解决方案也适用于不同大小的链表。
 
@@ -582,9 +582,9 @@ bool isSumSorted(LinkedList la, LinkedList lb, 
 Triplet Found: 15 2 8
 ```
 
-**时间复杂度**：链接列表 b 和 c 可以使用合并排序以 O（nLogn）时间排序（请参阅[此](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)）。 步骤 2 花费 O（n * n）时间。 因此，总体时间复杂度为 O（nlogn）+ O（nlogn）+ O（n * n）= O（n * n）。
+**时间复杂度**：链表 b 和 c 可以使用合并排序以 O（nLogn）时间排序（请参阅[此](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)）。 步骤 2 花费 O（n * n）时间。 因此，总体时间复杂度为 O（nlogn）+ O（nlogn）+ O（n * n）= O（n * n）。
 
-在这种方法中，链接列表 b 和 c 首先被排序，因此它们的原始顺序将丢失。 如果我们要保留 b 和 c 的原始顺序，则可以创建 b 和 c 的副本。
+在这种方法中，链表 b 和 c 首先被排序，因此它们的原始顺序将丢失。 如果我们要保留 b 和 c 的原始顺序，则可以创建 b 和 c 的副本。
 
 本文由 **Abhinav Priyadarshi** 编写，并由 GeeksforGeeks 小组审阅。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

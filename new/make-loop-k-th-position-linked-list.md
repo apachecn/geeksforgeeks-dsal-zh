@@ -1,4 +1,4 @@
-# 在链接列表中的第 k 个位置循环
+# 在链表中的第 k 个位置循环
 
 > 原文：[https://www.geeksforgeeks.org/make-loop-k-th-position-linked-list/](https://www.geeksforgeeks.org/make-loop-k-th-position-linked-list/)
 

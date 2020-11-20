@@ -1,10 +1,10 @@
-# C 程序，用于反转单链表
+# C 程序：反转单链表
 
 > 原文：[https://www.geeksforgeeks.org/c-program-reverse-node-value-singly-linked-list/](https://www.geeksforgeeks.org/c-program-reverse-node-value-singly-linked-list/)
 
 中的每个节点值
 
-[链接列表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)是数据元素的线性集合，其中每个节点都指向下一个节点。 与数组不同，它没有上限，因此非常有用。
+[链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)是数据元素的线性集合，其中每个节点都指向下一个节点。 与数组不同，它没有上限，因此非常有用。
 
 任务是访问链表的每个节点的值并反转它们。
 

@@ -1,8 +1,8 @@
-# 重新排列链接列表以替换第一个和最后一个元素
+# 重新排列链表以替换第一个和最后一个元素
 
 > 原文：[https://www.geeksforgeeks.org/rearrange-linked-list-alternate-first-last-element/](https://www.geeksforgeeks.org/rearrange-linked-list-alternate-first-last-element/)
 
-给定一个链表。 以交替的第一个和最后一个元素的方式排列链接列表。
+给定一个链表。 以交替的第一个和最后一个元素的方式排列链表。
 
 例子：
 
@@ -23,7 +23,7 @@ Output :10->13->11->15
 
 1.  创建一个空双端队列
 
-2.  将链接列表中的所有元素插入到双端队列
+2.  将链表中的所有元素插入到双端队列
 
 3.  将元素从双端队列重新插入到链表中 首先，然后最后，依此类推
 

@@ -1,4 +1,4 @@
-# 合并两个排序的链接列表，以使合并列表的顺序相反
+# 合并两个排序的链表，以使合并列表的顺序相反
 
 > 原文：[https://www.geeksforgeeks.org/merge-two-sorted-linked-lists-such-that-merged-list-is-in-reverse-order/](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists-such-that-merged-list-is-in-reverse-order/)
 

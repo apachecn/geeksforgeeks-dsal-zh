@@ -1,4 +1,4 @@
-# 明智地旋转链接列表
+# 明智地旋转链表
 
 > 原文：[https://www.geeksforgeeks.org/rotate-linked-list-block-wise/](https://www.geeksforgeeks.org/rotate-linked-list-block-wise/)
 
@@ -28,9 +28,9 @@ Rotate those 3 nodes also by d.
 
 ```
 
-先决条件：[旋转链接列表](https://www.geeksforgeeks.org/rotate-a-linked-list/)
+先决条件：[旋转链表](https://www.geeksforgeeks.org/rotate-a-linked-list/)
 
-这个想法是，如果 d 的绝对值大于 k 的值，则将链接列表旋转 d％k 次。 如果 d 为 0，则根本不需要旋转链表。
+这个想法是，如果 d 的绝对值大于 k 的值，则将链表旋转 d％k 次。 如果 d 为 0，则根本不需要旋转链表。
 
 ## C++
 

@@ -1,4 +1,4 @@
-# 从排序的双向链接列表
+# 从排序的双向链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-duplicates-sorted-doubly-linked-list/](https://www.geeksforgeeks.org/remove-duplicates-sorted-doubly-linked-list/)
 

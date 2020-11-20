@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/sort-linked-list-containing-values-from-1-to-n/](https://www.geeksforgeeks.org/sort-linked-list-containing-values-from-1-to-n/)
 
-给定大小为 N 的链接列表，其中包含从 1 到 N 的所有值。任务是按递增顺序对链接列表进行排序。
+给定大小为 N 的链表，其中包含从 1 到 N 的所有值。任务是按递增顺序对链表进行排序。
 
 **示例**：
 

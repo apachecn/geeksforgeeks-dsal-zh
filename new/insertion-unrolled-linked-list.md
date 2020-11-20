@@ -1,4 +1,4 @@
-# 插入展开的链接列表
+# 插入展开的链表
 
 > 原文：[https://www.geeksforgeeks.org/insertion-unrolled-linked-list/](https://www.geeksforgeeks.org/insertion-unrolled-linked-list/)
 

@@ -1,4 +1,4 @@
-# 在给定约束下删除链接列表中的给定节点
+# 在给定约束下删除链表中的给定节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-a-given-node-in-linked-list-under-given-constraints/](https://www.geeksforgeeks.org/delete-a-given-node-in-linked-list-under-given-constraints/)
 
@@ -10,7 +10,7 @@
 
 3.  它不应接受指向头节点的指针。
 
-您可以假定“链接列表”永远不会为空。
+您可以假定“链表”永远不会为空。
 
 让函数名称为 deleteNode（）。 在一个简单的实现中，当要删除的节点是第一个节点时，该函数需要修改头指针。 如[上一篇文章](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)所讨论的，当函数修改头指针时，该函数必须使用给定方法的[中的一种，此处我们无法使用任何一种方法。](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)
 

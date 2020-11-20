@@ -2,15 +2,15 @@
 
 > 原文：[https://www.geeksforgeeks.org/applications-of-linked-list-data-structure/](https://www.geeksforgeeks.org/applications-of-linked-list-data-structure/)
 
-链表是一种线性数据结构，其中的元素未存储在连续的内存位置。 链接列表中的元素使用指针链接，如下图所示：
+链表是一种线性数据结构，其中的元素未存储在连续的内存位置。 链表中的元素使用指针链接，如下图所示：
 
 ![](img/d97a233bf3c89e80c46e6a3193e851d6.png)
 
-**链接列表在计算机科学中的应用** –
+**链表在计算机科学中的应用** –
 
 1.  [堆栈](https://www.geeksforgeeks.org/stack-data-structure/)和[队列](https://www.geeksforgeeks.org/queue-data-structure/)的实现
 
-2.  图的实现：[图的相邻列表表示法](https://www.geeksforgeeks.org/graph-and-its-representations/)最流行，它使用链接列表来存储相邻的顶点。
+2.  图的实现：[图的相邻列表表示法](https://www.geeksforgeeks.org/graph-and-its-representations/)最流行，它使用链表来存储相邻的顶点。
 
 3.  动态内存分配：我们使用空闲块的链表。
 
@@ -18,7 +18,7 @@
 
 5.  对长整数执行算术运算
 
-6.  通过将常数存储在链接列表的节点中来处理多项式
+6.  通过将常数存储在链表的节点中来处理多项式
 
 7.  代表稀疏矩阵
 
@@ -26,11 +26,11 @@
 
 1.  *图像查看器* – 上一个和下一个图像已链接，因此可以通过下一个和上一个按钮进行访问。
 
-2.  *Web 浏览器中的上一页和下一页* – 我们可以通过按`Back`和`Next`按钮访问在 Web 浏览器中搜索的上一个和下一个 URL，因为它们被链接为链接列表。
+2.  *Web 浏览器中的上一页和下一页* – 我们可以通过按`Back`和`Next`按钮访问在 Web 浏览器中搜索的上一个和下一个 URL，因为它们被链接为链表。
 
 3.  *音乐播放器* – 音乐播放器中的歌曲链接到上一首和下一首歌曲。 您可以从列表的开头或结尾播放歌曲。
 
-**循环链接列表的应用**：
+**循环链表的应用**：
 
 1.  对于实现队列很有用。 与[此](http://quiz.geeksforgeeks.org/queue-set-2-linked-list-implementation/)实现不同，如果我们使用循环链表，则不需要在前后都保留两个指针。 我们可以维护一个指向最后插入的节点的指针，并且始终可以将前一个作为倒数第二个。
 

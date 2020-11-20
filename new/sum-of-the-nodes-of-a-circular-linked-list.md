@@ -23,13 +23,13 @@ Output: Sum of Circular linked list is = 32
 
 **方法**：
 
-1.  使用链接列表的开头和 0 的 sum 变量初始化指针 temp。
+1.  使用链表的开头和 0 的 sum 变量初始化指针 temp。
 
 2.  Start traversing the linked list using a loop until all the nodes get traversed.
 
     *   将当前节点的值添加到总和，即总和+ = temp->数据。
 
-    *   递增指向链接列表的下一个节点的指针，即 temp = temp-> next。
+    *   递增指向链表的下一个节点的指针，即 temp = temp-> next。
 
 3.  返回总和。
 

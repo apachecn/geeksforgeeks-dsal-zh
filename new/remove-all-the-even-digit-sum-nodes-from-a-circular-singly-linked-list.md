@@ -1,4 +1,4 @@
-# 从循环单链接列表
+# 从循环单链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-all-the-even-digit-sum-nodes-from-a-circular-singly-linked-list/](https://www.geeksforgeeks.org/remove-all-the-even-digit-sum-nodes-from-a-circular-singly-linked-list/)
 

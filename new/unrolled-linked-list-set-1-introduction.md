@@ -1,4 +1,4 @@
-# 展开的链接列表| 第 1 组（简介）
+# 展开的链表| 第 1 组（简介）
 
 > 原文：[https://www.geeksforgeeks.org/unrolled-linked-list-set-1-introduction/](https://www.geeksforgeeks.org/unrolled-linked-list-set-1-introduction/)
 

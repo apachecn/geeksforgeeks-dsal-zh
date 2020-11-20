@@ -1,4 +1,4 @@
-# 检查字符串的链接列表是否形成回文
+# 检查字符串的链表是否形成回文
 
 > 原文：[https://www.geeksforgeeks.org/check-linked-list-strings-form-palindrome/](https://www.geeksforgeeks.org/check-linked-list-strings-form-palindrome/)
 

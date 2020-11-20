@@ -1,4 +1,4 @@
-# 查找给定链接列表
+# 查找给定链表
 
 > 原文：[https://www.geeksforgeeks.org/find-sum-last-n-nodes-given-linked-list/](https://www.geeksforgeeks.org/find-sum-last-n-nodes-given-linked-list/)
 
@@ -785,7 +785,7 @@ Sum of last 2 nodes = 16
 
 **辅助空间**：`O(n)`，堆栈大小
 
-**方法 3（反向链接列表）**
+**方法 3（反向链表）**
 
 以下是步骤：
 
@@ -795,7 +795,7 @@ Sum of last 2 nodes = 16
 
 3.  遍历时添加它们。
 
-4.  将链接列表恢复为原始顺序。
+4.  将链表恢复为原始顺序。
 
 5.  返回相加的总和。
 
@@ -1129,7 +1129,7 @@ Sum of last 2 nodes = 16
 
 以下是步骤：
 
-1.  计算给定链接列表的长度。 设为 **len** 。
+1.  计算给定链表的长度。 设为 **len** 。
 
 2.  首先从头开始遍历**（len – n）**节点。
 

@@ -1,4 +1,4 @@
-# 以相反的顺序打印双向链接列表
+# 以相反的顺序打印双向链表
 
 > 原文：[https://www.geeksforgeeks.org/print-doubly-linked-list-in-reverse-order/](https://www.geeksforgeeks.org/print-doubly-linked-list-in-reverse-order/)
 
@@ -19,7 +19,7 @@ Output: 40  30  20  10
 
 *   用指针指向双向链表的头部。
 
-*   现在，开始遍历链接列表，直到最后。
+*   现在，开始遍历链表，直到最后。
 
 *   到达最后一个节点后，开始向后移动并同时打印该节点->数据。
 

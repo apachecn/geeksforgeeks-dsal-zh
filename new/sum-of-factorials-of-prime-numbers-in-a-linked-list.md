@@ -4,7 +4,7 @@
 
 中素数阶乘的和
 
-给定 **N** 个整数的[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是找到列表中每个素数元素的阶乘和。
+给定 **N** 个整数的[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是找到列表中每个素数元素的阶乘和。
 
 **示例**：
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/delete-doubly-linked-list-node-given-position/](https://www.geeksforgeeks.org/delete-doubly-linked-list-node-given-position/)
 
-的双向链接列表节点
+的双向链表节点
 
 给定双链表和位置 **n** 。 任务是从头开始删除给定位置 **n** 的节点。
 
@@ -18,7 +18,7 @@
 
 **方法**：以下是步骤：
 
-1.  通过从双行遍历双向链接列表到第 **n 个**节点，获得指向位置 **n** 处的节点的指针。
+1.  通过从双行遍历双向链表到第 **n 个**节点，获得指向位置 **n** 处的节点的指针。
 
 2.  使用在步骤 1 中获得的指针删除节点。请参阅这篇帖子[。](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
 

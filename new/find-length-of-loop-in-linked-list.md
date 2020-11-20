@@ -1,4 +1,4 @@
-# 在链接列表
+# 在链表
 
 > 原文：[https://www.geeksforgeeks.org/find-length-of-loop-in-linked-list/](https://www.geeksforgeeks.org/find-length-of-loop-in-linked-list/)
 
@@ -18,7 +18,7 @@
 
 2.  将指针存储在一个临时变量中，并保持*计数= 0*
 
-3.  遍历链接列表，直到再次到达同一节点，并在移至下一个节点时增加计数。
+3.  遍历链表，直到再次到达同一节点，并在移至下一个节点时增加计数。
 
 4.  将计数打印为循环长度
 
@@ -490,7 +490,7 @@ class GFG 
 
 *   **时间复杂度**：`O(n)`。
 
-    只需遍历链接列表。
+    只需遍历链表。
 
 *   **辅助空间**：`O(1)`。
 
@@ -500,7 +500,7 @@ class GFG 
 
 *   [检测到链表](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)中的循环
 
-*   [检测并删除链接列表中的循环](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)
+*   [检测并删除链表中的循环](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)
 
 本文由 **Shubham Gupta** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

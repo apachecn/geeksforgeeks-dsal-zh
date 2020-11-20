@@ -1,10 +1,10 @@
-# 使用链接列表
+# 使用链表
 
 > 原文：[https://www.geeksforgeeks.org/priority-queue-using-linked-list/](https://www.geeksforgeeks.org/priority-queue-using-linked-list/)
 
 的优先级队列
 
-使用链接列表实现优先级队列。
+使用链表实现优先级队列。
 
 **Operations on Priority Queue :**
 
@@ -14,7 +14,7 @@
 
 *   peek（）/ top（）：此函数用于获取队列中优先级最高的元素，而无需将其从队列中删除。
 
-可以使用常见的数据结构（如数组，链接列表，堆和二叉树）来实现优先级队列。
+可以使用常见的数据结构（如数组，链表，堆和二叉树）来实现优先级队列。
 
 **先决条件**：
 

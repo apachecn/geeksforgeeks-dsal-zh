@@ -1,8 +1,8 @@
-# 给定线段的链接列表，请删除中间点
+# 给定线段的链表，请删除中间点
 
 > 原文：[https://www.geeksforgeeks.org/given-linked-list-line-segments-remove-middle-points/](https://www.geeksforgeeks.org/given-linked-list-line-segments-remove-middle-points/)
 
-给定一个坐标的链表，其中相邻点形成垂直线或水平线。 从链接列表中删除水平或垂直线中间的点。
+给定一个坐标的链表，其中相邻点形成垂直线或水平线。 从链表中删除水平或垂直线中间的点。
 
 例子：
 
@@ -701,7 +701,7 @@ Modified Linked List:
 
 上面的代码是递归的，针对相同的问题编写一个迭代代码。 请参阅下面的解决方案。
 
-[迭代方法，用于删除线段链接列表中的中点](https://www.geeksforgeeks.org/iterative-approach-for-removing-middle-points-in-a-linked-list-of-line-segements/)
+[迭代方法，用于删除线段链表中的中点](https://www.geeksforgeeks.org/iterative-approach-for-removing-middle-points-in-a-linked-list-of-line-segements/)
 
 本文由 Sanket Jain 撰写。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

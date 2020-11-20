@@ -1,4 +1,4 @@
-# 查找给定链接列表
+# 查找给定链表
 
 > 原文：[https://www.geeksforgeeks.org/find-the-product-of-last-n-nodes-of-the-given-linked-list/](https://www.geeksforgeeks.org/find-the-product-of-last-n-nodes-of-the-given-linked-list/)
 
@@ -778,7 +778,7 @@ public static void Main(String[] args)
 
 **时间复杂度**：`O(n)`
 
-**方法 3（反向链接列表）**：
+**方法 3（反向链表）**：
 
 1.  步骤如下：
 
@@ -788,7 +788,7 @@ public static void Main(String[] args)
 
 4.  遍历时将它们相乘。
 
-5.  将链接列表恢复为原始顺序。
+5.  将链表恢复为原始顺序。
 
 6.  退货。
 
@@ -1121,7 +1121,7 @@ public static void Main(String[] args)
 
 1.  步骤如下：
 
-2.  计算给定链接列表的长度。 让它成为 len。
+2.  计算给定链表的长度。 让它成为 len。
 
 3.  首先从头开始遍历（len – n）节点。
 

@@ -95,7 +95,7 @@
 
 动态数据结构示例：
 
-1.  ### [单链接列表](https://www.geeksforgeeks.org/linked-list-in-java/)
+1.  ### [单链表](https://www.geeksforgeeks.org/linked-list-in-java/)
 
     链表是线性数据结构，其中元素未存储在连续的位置，并且每个元素都是具有数据部分和地址部分的单独对象。 元素使用指针和地址链接。 每个元素称为一个节点。 由于动态性以及插入和删除的简便性，它们比数组更可取。
 
@@ -175,7 +175,7 @@
 
 2.  ### [双链表](https://www.geeksforgeeks.org/doubly-linked-list/)
 
-    双链表（DLL）包含一个额外的指针（通常称为**上一个指针**）以及在单个链接列表中的**下一个指针**和**数据** 。
+    双链表（DLL）包含一个额外的指针（通常称为**上一个指针**）以及在单个链表中的**下一个指针**和**数据** 。
 
     ![](img/1fac4717827a04f080fae80f8fd57fe7.png)
 
@@ -441,7 +441,7 @@
 
     *   [使用数组](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)的堆栈实现
 
-    *   [使用单链接列表](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)的堆栈实现
+    *   [使用单链表](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)的堆栈实现
 
     *   [使用队列](https://www.geeksforgeeks.org/implement-stack-using-queue/)的堆栈实现
 
@@ -509,7 +509,7 @@
 
     *   [使用数组](https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)的队列实现
 
-    *   [使用单链接列表](https://www.geeksforgeeks.org/queue-linked-list-implementation/)的队列实现
+    *   [使用单链表](https://www.geeksforgeeks.org/queue-linked-list-implementation/)的队列实现
 
     *   [使用堆栈](https://www.geeksforgeeks.org/queue-using-stacks/)的队列实现
 

@@ -4,7 +4,7 @@
 
 中的链表实现
 
-[**LinkedList**](https://www.geeksforgeeks.org/linked-list-set-1-introduction/) 是一种线性数据结构，将元素存储在非连续位置。 链接列表中的元素使用指针相互链接。 换句话说，LinkedList 由节点组成，其中每个节点包含一个数据字段和到列表中下一个节点的引用（链接）。
+[**LinkedList**](https://www.geeksforgeeks.org/linked-list-set-1-introduction/) 是一种线性数据结构，将元素存储在非连续位置。 链表中的元素使用指针相互链接。 换句话说，LinkedList 由节点组成，其中每个节点包含一个数据字段和到列表中下一个节点的引用（链接）。
 
 在 C#中，LinkedList 是集合的通用类型，它在 **System.Collections.Generic** 命名空间中定义。 它是一个*双链表*，因此，每个节点都指向下一个节点，并指向上一个节点。 它是一个动态集合，可以根据您的程序的需要进行扩展。 它还提供了快速的插入和删除元素。
 

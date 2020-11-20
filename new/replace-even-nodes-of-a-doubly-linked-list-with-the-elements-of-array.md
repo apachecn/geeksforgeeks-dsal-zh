@@ -1,4 +1,4 @@
-# 将双向链接列表的偶数节点替换为数组
+# 将双向链表的偶数节点替换为数组
 
 > 原文：[https://www.geeksforgeeks.org/replace-even-nodes-of-a-doubly-linked-list-with-the-elements-of-array/](https://www.geeksforgeeks.org/replace-even-nodes-of-a-doubly-linked-list-with-the-elements-of-array/)
 

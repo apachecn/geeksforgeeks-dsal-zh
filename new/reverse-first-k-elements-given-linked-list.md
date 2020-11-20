@@ -1,4 +1,4 @@
-# 反转给定链接列表
+# 反转给定链表
 
 > 原文：[https://www.geeksforgeeks.org/reverse-first-k-elements-given-linked-list/](https://www.geeksforgeeks.org/reverse-first-k-elements-given-linked-list/)
 
@@ -23,11 +23,11 @@ Output :18->10->20->25->35->NULL
 
 方法说明：
 
-假设链接列表为 1- > 2- > 3- > 4- > 5- > NULL，并且 k = 3
+假设链表为 1- > 2- > 3- > 4- > 5- > NULL，并且 k = 3
 
 1.  遍历链表直到第 K 点。
 
-2.  从第 k 个点将链接列表分成两部分。 分区后的链表看起来像 1- > 2- > 3- > NULL & 4- > 5- > NULL
+2.  从第 k 个点将链表分成两部分。 分区后的链表看起来像 1- > 2- > 3- > NULL & 4- > 5- > NULL
 
 3.  [反转 链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)保留第二部分，即保留为 3- > 2- > 1- > NULL 和 4- > 5- > NULL
 

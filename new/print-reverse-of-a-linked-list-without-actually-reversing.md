@@ -1,4 +1,4 @@
-# 反向打印链接列表，而不实际反转
+# 反向打印链表，而不实际反转
 
 > 原文：[https://www.geeksforgeeks.org/print-reverse-of-a-linked-list-without-actually-reversing/](https://www.geeksforgeeks.org/print-reverse-of-a-linked-list-without-actually-reversing/)
 

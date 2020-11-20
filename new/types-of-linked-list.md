@@ -1,12 +1,12 @@
-# 链接列表的类型
+# 链表的类型
 
 > 原文：[https://www.geeksforgeeks.org/types-of-linked-list/](https://www.geeksforgeeks.org/types-of-linked-list/)
 
-[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)是线性数据结构，其中元素不存储在连续的存储位置中。 链接列表中的元素使用[指针](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)链接。 简而言之，链接列表由节点组成，其中每个节点都包含一个数据字段和到列表中下一个节点的引用（链接）。
+[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)是线性数据结构，其中元素不存储在连续的存储位置中。 链表中的元素使用[指针](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)链接。 简而言之，链表由节点组成，其中每个节点都包含一个数据字段和到列表中下一个节点的引用（链接）。
 
-### 链接列表的类型
+### 链表的类型
 
-*   [**单链表**：](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/) 这是链表的最简单类型，其中每个节点都包含一些数据和一个指向相同数据类型的下一个节点的指针。 该节点包含指向下一个节点的指针，这意味着该节点存储序列中下一个节点的地址。 单个链接列表仅允许以一种方式遍历数据。 以下是相同的图片：
+*   [**单链表**：](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/) 这是链表的最简单类型，其中每个节点都包含一些数据和一个指向相同数据类型的下一个节点的指针。 该节点包含指向下一个节点的指针，这意味着该节点存储序列中下一个节点的地址。 单个链表仅允许以一种方式遍历数据。 以下是相同的图片：
 
 ![](img/0d367952fa89396cdfc63909b9271cb7.png)
 
@@ -27,7 +27,7 @@ public:
 
 ```
 
-*   **单链接列表的创建和遍历**：
+*   **单链表的创建和遍历**：
 
 ## C++
 
@@ -593,7 +593,7 @@ Traversal in reverse direction
 
 ```
 
-*   [**循环链接列表**：](https://www.geeksforgeeks.org/circular-linked-list/) 循环链接列表是最后一个节点包含指向列表第一个节点的指针的列表。 在遍历循环喜欢的列表时，我们可以从任何节点开始并以任何方向向前和向后遍历该列表，直到到达开始的相同节点。 因此，循环链表没有开始也没有结束。 以下是同一张图片：
+*   [**循环链表**：](https://www.geeksforgeeks.org/circular-linked-list/) 循环链表是最后一个节点包含指向列表第一个节点的指针的列表。 在遍历循环喜欢的列表时，我们可以从任何节点开始并以任何方向向前和向后遍历该列表，直到到达开始的相同节点。 因此，循环链表没有开始也没有结束。 以下是同一张图片：
 
 ![](img/53aeedd7ed272dbebddb686426da7ffa.png)
 
@@ -726,7 +726,7 @@ struct Node {
 
 ```
 
-*   **双循环链接列表的创建和遍历**：
+*   **双循环链表的创建和遍历**：
 
 ## C++
 
@@ -847,7 +847,7 @@ Traversal in reverse direction
 
 ```
 
-*   [标头链接列表：](https://www.geeksforgeeks.org/header-linked-list-in-c/)标头链接列表是一种特殊类型的链接列表，它在列表的开头包含一个标头节点。 因此，在标题链接列表中， **START** 不会指向列表的第一个节点，但是 **START** 将包含标题节点的地址。 以下是“接地页眉链接列表”的图像：
+*   [标头链表：](https://www.geeksforgeeks.org/header-linked-list-in-c/)标头链表是一种特殊类型的链表，它在列表的开头包含一个标头节点。 因此，在标题链表中， **START** 不会指向列表的第一个节点，但是 **START** 将包含标题节点的地址。 以下是“接地页眉链表”的图像：
 
 ![](img/4e1a40e0dc120431a994ca6006b8b5a7.png)
 
@@ -867,7 +867,7 @@ struct link {
 
 ```
 
-*   **双循环链接列表的创建和遍历**：
+*   **双循环链表的创建和遍历**：
 
 ## C++
 

@@ -4,13 +4,13 @@
 
 中链表的排序
 
-先决条件：[合并链接列表的排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
+先决条件：[合并链表的排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
 合并排序通常是对链表进行排序的首选。 链表的随机访问性能较慢，使得其他一些算法（例如 quicksort）的性能较差，而其他算法（例如堆排序）则完全不可能。
 
 ![sorting image](img/cc3d3ac699ac03f5792746b3e3e54865.png)
 
-在本文中，使用 JavaScript 实现了链接列表的合并排序。
+在本文中，使用 JavaScript 实现了链表的合并排序。
 
 例子：
 

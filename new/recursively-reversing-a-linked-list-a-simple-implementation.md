@@ -1,8 +1,8 @@
-# 以递归方式反向链接列表（简单实现）
+# 以递归方式反向链表（简单实现）
 
 > 原文：[https://www.geeksforgeeks.org/recursively-reversing-a-linked-list-a-simple-implementation/](https://www.geeksforgeeks.org/recursively-reversing-a-linked-list-a-simple-implementation/)
 
-给定指向链接列表头节点的指针，任务是递归地反向链接列表。 我们需要通过更改节点之间的链接来反转列表。
+给定指向链表头节点的指针，任务是递归地反向链表。 我们需要通过更改节点之间的链接来反转列表。
 
 **示例**：
 
@@ -25,7 +25,7 @@ Output : 1->NULL
 
 ```
 
-在上一篇关于反向链接列表的文章[中，我们讨论了一种迭代和两种递归方法。](https://www.geeksforgeeks.org/reverse-a-linked-list/)
+在上一篇关于反向链表的文章[中，我们讨论了一种迭代和两种递归方法。](https://www.geeksforgeeks.org/reverse-a-linked-list/)
 
 在通过传递单个指针来反转链表的方法中，我们试图做的是将当前节点的上一个节点作为其下一个节点来反转链表。
 

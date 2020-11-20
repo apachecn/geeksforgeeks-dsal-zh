@@ -1,8 +1,8 @@
-# 在给定索引处打印链接列表的节点
+# 在给定索引处打印链表的节点
 
 > 原文：[https://www.geeksforgeeks.org/print-nodes-of-linked-list-at-given-indexes/](https://www.geeksforgeeks.org/print-nodes-of-linked-list-at-given-indexes/)
 
-给定一个按升序排序的单链表![l1](img/ef22f4f5e9e8d0d5bc762c4bd091359b.png "Rendered by QuickLaTeX.com")和另一个未排序的单链表![l2](img/cdb2756782724bb4ebc46f082a9e7ce9.png "Rendered by QuickLaTeX.com")。 任务是根据数据在第一链接列表的节点中指出的位置来打印第二链接列表的元素。 例如，如果第一个链表是 **1- > 2- > 5** ，则必须打印 1 <sup>st</sup> ，2 <sup>nd</sup> 和 第二个链表的第 5 <sup>个元素。</sup>
+给定一个按升序排序的单链表![l1](img/ef22f4f5e9e8d0d5bc762c4bd091359b.png "Rendered by QuickLaTeX.com")和另一个未排序的单链表![l2](img/cdb2756782724bb4ebc46f082a9e7ce9.png "Rendered by QuickLaTeX.com")。 任务是根据数据在第一链表的节点中指出的位置来打印第二链表的元素。 例如，如果第一个链表是 **1- > 2- > 5** ，则必须打印 1 <sup>st</sup> ，2 <sup>nd</sup> 和 第二个链表的第 5 <sup>个元素。</sup>
 
 **范例**：
 
@@ -20,7 +20,7 @@ Output: 5->8
 
 ```
 
-用两个指针使用两个嵌套循环遍历两个链表。 外循环分别指向第一个列表的元素，内循环分别指向第二个列表的元素。 在外循环的第一次迭代中，指向第一个链表头的指针指向其根节点。 我们遍历第二个链接列表，直到到达第一个链接列表中节点数据所指出的位置。 到达所需位置后，打印第二个列表的数据并再次重复此过程，直到到达第一个链接列表的末尾。
+用两个指针使用两个嵌套循环遍历两个链表。 外循环分别指向第一个列表的元素，内循环分别指向第二个列表的元素。 在外循环的第一次迭代中，指向第一个链表头的指针指向其根节点。 我们遍历第二个链表，直到到达第一个链表中节点数据所指出的位置。 到达所需位置后，打印第二个列表的数据并再次重复此过程，直到到达第一个链表的末尾。
 
 下面是上述方法的实现：
 

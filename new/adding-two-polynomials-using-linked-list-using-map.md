@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/adding-two-polynomials-using-linked-list-using-map/](https://www.geeksforgeeks.org/adding-two-polynomials-using-linked-list-using-map/)
 
-使用链接列表添加两个多项式
+使用链表添加两个多项式
 
 给定两个由链表表示的多项式。 编写函数以执行其代数和。
 

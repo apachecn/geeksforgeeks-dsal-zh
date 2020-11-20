@@ -15,7 +15,7 @@
 > **输入**：19-> 22-> 141
 > **输出**：163
 
-**方法**：为了解决这个问题，我们使用一种类似的方法来计算数组中所有回文的[和。 遍历链接列表的所有节点，并检查当前节点值是否是回文。 如果是这样，则将值相加并存储和。 所有这些值的最终总和给出了所需的答案。](https://www.geeksforgeeks.org/sum-of-all-palindrome-numbers-present-in-an-array/)
+**方法**：为了解决这个问题，我们使用一种类似的方法来计算数组中所有回文的[和。 遍历链表的所有节点，并检查当前节点值是否是回文。 如果是这样，则将值相加并存储和。 所有这些值的最终总和给出了所需的答案。](https://www.geeksforgeeks.org/sum-of-all-palindrome-numbers-present-in-an-array/)
 
 下面是上述方法的实现：
 

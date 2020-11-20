@@ -2,13 +2,13 @@
 
 > 原文：[https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists-set-2/](https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists-set-2/)
 
-系统中有两个单链表。 由于编程错误，链接列表之一的末端节点链接到第二个列表，从而形成了一个倒 Y 形列表。 编写程序以获取两个链接列表合并的点。
+系统中有两个单链表。 由于编程错误，链表之一的末端节点链接到第二个列表，从而形成了一个倒 Y 形列表。 编写程序以获取两个链表合并的点。
 
 ![Y ShapedLinked List](img/ab40c195e60241fe31989a627ddf41fc.png "Y ShapedLinked List")
 
 上图显示了一个示例，其中两个链表的交点为 15。
 
-**方法**：可以观察到，遍历第一个链表然后从第二链表的头到交点的节点数等于遍历第二链表的节点数 然后从第一个列表的头到交点。 考虑上面给出的示例，开始分别使用两个指针 **curr1** 和 **curr2** 遍历两个链接列表，这两个指针分别指向给定链接列表的头部。
+**方法**：可以观察到，遍历第一个链表然后从第二链表的头到交点的节点数等于遍历第二链表的节点数 然后从第一个列表的头到交点。 考虑上面给出的示例，开始分别使用两个指针 **curr1** 和 **curr2** 遍历两个链表，这两个指针分别指向给定链表的头部。
 
 1.  如果 **curr1！= null** ，则将其更新为指向下一个节点，否则将其更新为指向第二个列表的第一个节点。
 

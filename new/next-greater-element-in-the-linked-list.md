@@ -1,4 +1,4 @@
-# 链接列表
+# 链表
 
 > 原文：[https://www.geeksforgeeks.org/next-greater-element-in-the-linked-list/](https://www.geeksforgeeks.org/next-greater-element-in-the-linked-list/)
 
@@ -17,7 +17,7 @@
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
 
-**高效方法**：可以通过保持上述天真的方法来优化 遍历元素的单调递减[堆栈](http://www.geeksforgeeks.org/stack-data-structure/)。 如果找到更大的元素，则将其附加到结果链接列表 **L'**上，否则将`0`附加。 步骤如下：
+**高效方法**：可以通过保持上述天真的方法来优化 遍历元素的单调递减[堆栈](http://www.geeksforgeeks.org/stack-data-structure/)。 如果找到更大的元素，则将其附加到结果链表 **L'**上，否则将`0`附加。 步骤如下：
 
 1.  将第一个节点压入堆栈。
 

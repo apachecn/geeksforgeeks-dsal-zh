@@ -6,7 +6,7 @@
 
 给定一个双向链表，编写一个函数使用合并排序以递增顺序对双向链表进行排序。
 
-例如，以下双向链接列表应更改为 24810
+例如，以下双向链表应更改为 24810
 
 ![](img/61dcfe5f15a4317c70a1bea6d144f1b2.png)
 
@@ -678,7 +678,7 @@ Backward Traversal using prev pointer
 
 **时间复杂度**：上述实现的时间复杂度与数组的 [MergeSort 的时间复杂度相同。 这需要Θ（nLogn）时间。](http://geeksquiz.com/merge-sort/)
 
-您可能还想看到[快速排序以获取双向链接列表](https://www.geeksforgeeks.org/quicksort-for-linked-list/)
+您可能还想看到[快速排序以获取双向链表](https://www.geeksforgeeks.org/quicksort-for-linked-list/)
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

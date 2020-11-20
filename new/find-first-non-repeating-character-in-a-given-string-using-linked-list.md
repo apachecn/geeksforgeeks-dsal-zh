@@ -1,4 +1,4 @@
-# 使用链接列表
+# 使用链表
 
 > 原文：[https://www.geeksforgeeks.org/find-first-non-repeating-character-in-a-given-string-using-linked-list/](https://www.geeksforgeeks.org/find-first-non-repeating-character-in-a-given-string-using-linked-list/)
 
@@ -18,13 +18,13 @@
 
 **链表方法**：的想法是使用[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)来跟踪字符串中的唯一元素。 下面是该方法的说明：
 
-*   为字符串中的每个字符遍历字符串，并根据以下条件在链接列表中添加该字符：
+*   为字符串中的每个字符遍历字符串，并根据以下条件在链表中添加该字符：
 
-    *   如果链接列表中已经存在该字符，则从链接列表中删除现有的字符节点。
+    *   如果链表中已经存在该字符，则从链表中删除现有的字符节点。
 
-    *   否则，将字符添加到链接列表中。
+    *   否则，将字符添加到链表中。
 
-*   最后，链接列表的第一个节点处的字符是字符串的第一个非重复字符。
+*   最后，链表的第一个节点处的字符是字符串的第一个非重复字符。
 
 下面是上述方法的实现：
 

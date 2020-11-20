@@ -1,4 +1,4 @@
-# 在链接列表的中间位置一个接一个地插入 N 个元素
+# 在链表的中间位置一个接一个地插入 N 个元素
 
 > 原文：[https://www.geeksforgeeks.org/insert-n-elements-in-a-linked-list-one-after-other-at-middle-position/](https://www.geeksforgeeks.org/insert-n-elements-in-a-linked-list-one-after-other-at-middle-position/)
 
@@ -31,7 +31,7 @@
 
 如果链表中已经存在的元素少于 2 个，那么 Middle 总是指向第一个位置，我们在当前中间位置之后插入新节点。
 
-如果链接列表中已经存在的元素大于 2，则我们在当前中间位置旁边插入新节点并增加计数器。
+如果链表中已经存在的元素大于 2，则我们在当前中间位置旁边插入新节点并增加计数器。
 
 如果插入后元素的数量为奇数，则中间点指向新插入的节点，否则中间指针没有变化。
 

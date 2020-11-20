@@ -1,4 +1,4 @@
-# 合并两个排序的链接列表
+# 合并两个排序的链表
 
 > 原文：[https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)
 

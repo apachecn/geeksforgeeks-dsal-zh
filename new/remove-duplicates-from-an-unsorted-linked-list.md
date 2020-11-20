@@ -1,10 +1,10 @@
-# 从未排序的链接列表中删除重复项
+# 从未排序的链表中删除重复项
 
 > 原文：[https://www.geeksforgeeks.org/remove-duplicates-from-an-unsorted-linked-list/](https://www.geeksforgeeks.org/remove-duplicates-from-an-unsorted-linked-list/)
 
 编写一个 removeDuplicates（）函数，该函数获取一个列表并从列表中删除所有重复的节点。 该列表未排序。
 
-例如，如果链接列表是 12- > 11- > 12- > 21- > 41- > 43- > 21，则 removeDuplicates（）应该将列表转换为 12- > 11- > 21- > 41- > 43。
+例如，如果链表是 12- > 11- > 12- > 21- > 41- > 43- > 21，则 removeDuplicates（）应该将列表转换为 12- > 11- > 21- > 41- > 43。
 
 **方法 1（使用两个循环）**
 
@@ -311,7 +311,7 @@ Linked list after removing duplicates:
 
 **方法 3（使用散列）**
 
-我们从头到尾遍历链接列表。 对于每个新遇到的元素，我们检查它是否在哈希表中：如果是，则将其删除；否则，将其删除。 否则我们将其放在哈希表中。
+我们从头到尾遍历链表。 对于每个新遇到的元素，我们检查它是否在哈希表中：如果是，则将其删除；否则，将其删除。 否则我们将其放在哈希表中。
 
 ## C++
 

@@ -2,9 +2,9 @@
 
 > 原文：[https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)
 
-考虑链表的简单表示（没有任何虚拟节点）。 在此类链接列表上运行的功能可以分为两类：
+考虑链表的简单表示（没有任何虚拟节点）。 在此类链表上运行的功能可以分为两类：
 
-**1）不修改头指针的功能**：此类功能的示例包括：打印链接列表，更新节点的数据成员（如将给定值添加到所有节点）或其他一些访问/更新操作 节点数据
+**1）不修改头指针的功能**：此类功能的示例包括：打印链表，更新节点的数据成员（如将给定值添加到所有节点）或其他一些访问/更新操作 节点数据
 
 通常很容易确定此类功能的原型。 我们总是可以将头指针作为参数传递并遍历/更新列表。 例如，以下函数将 x 添加到所有节点的数据成员。
 
@@ -61,7 +61,7 @@ void deleteFirst()
 
 a）head 可以全局访问，因此可以在项目中的任何位置进行修改，并可能导致无法预测的结果。
 
-b）如果存在多个链接列表，则需要多个具有不同名称的全局头指针。
+b）如果存在多个链表，则需要多个具有不同名称的全局头指针。
 
 请参见[和](http://c2.com/cgi/wiki?GlobalVariablesAreBad)，以了解为什么我们应避免在项目中使用全局变量的所有原因。
 

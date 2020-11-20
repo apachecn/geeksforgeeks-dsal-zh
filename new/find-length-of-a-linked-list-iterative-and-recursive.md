@@ -1,4 +1,4 @@
-# 查找链接列表的长度（迭代和递归）
+# 查找链表的长度（迭代和递归）
 
 > 原文：[https://www.geeksforgeeks.org/find-length-of-a-linked-list-iterative-and-recursive/](https://www.geeksforgeeks.org/find-length-of-a-linked-list-iterative-and-recursive/)
 
@@ -6,7 +6,7 @@
 
 ![linkedlist_find_length](img/e38a7cce1aae90394ef3ebc5cd8323c1.png)
 
-例如，对于链接列表 1-> 3-> 1-> 2-> 1，该函数应返回 5。
+例如，对于链表 1-> 3-> 1-> 2-> 1，该函数应返回 5。
 
 **迭代解决方案**
 

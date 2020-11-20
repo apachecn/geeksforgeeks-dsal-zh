@@ -1,4 +1,4 @@
-# 循环单链接列表| 插入
+# 循环单链表| 插入
 
 > 原文：[https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)
 
@@ -8,7 +8,7 @@
 
 [链链表](http://quiz.geeksforgeeks.org/circular-linked-list/)
 
-**为什么要循环？** 在单链列表中，为了访问链列表的任何节点，我们从第一个节点开始遍历。 如果我们位于列表中间的任何节点，则不可能访问给定节点之前的节点。 这个问题可以通过稍微改变单链表的结构来解决。 在单链列表中，下一部分（指向下一个节点的指针）为 NULL，如果我们利用此链接指向第一个节点，则可以到达前一个节点。 有关循环链接列表的更多优点，请参考此的[。
+**为什么要循环？** 在单链列表中，为了访问链列表的任何节点，我们从第一个节点开始遍历。 如果我们位于列表中间的任何节点，则不可能访问给定节点之前的节点。 这个问题可以通过稍微改变单链表的结构来解决。 在单链列表中，下一部分（指向下一个节点的指针）为 NULL，如果我们利用此链接指向第一个节点，则可以到达前一个节点。 有关循环链表的更多优点，请参考此的[。
 
 这样形成的结构是圆形单链表，如下所示：](http://quiz.geeksforgeeks.org/circular-linked-list/)
 
@@ -235,7 +235,7 @@ struct Node *addAfter(struct Node *last, int data, int item)
 
 ```
 
-以下是一个完整的程序，该程序使用上述所有方法来创建循环单链接列表。
+以下是一个完整的程序，该程序使用上述所有方法来创建循环单链表。
 
 ## C++
 

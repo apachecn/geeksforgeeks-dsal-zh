@@ -1,4 +1,4 @@
-# 两个链接列表中的第一个公共元素
+# 两个链表中的第一个公共元素
 
 > 原文：[https://www.geeksforgeeks.org/first-common-element-two-linked-lists/](https://www.geeksforgeeks.org/first-common-element-two-linked-lists/)
 

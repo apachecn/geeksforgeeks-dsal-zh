@@ -1,4 +1,4 @@
-# 从循环单链接列表
+# 从循环单链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-all-fibonacci-nodes-from-a-circular-singly-linked-list/](https://www.geeksforgeeks.org/remove-all-fibonacci-nodes-from-a-circular-singly-linked-list/)
 
@@ -24,7 +24,7 @@
 
 1.  遍历整个圆形单链列表，并在列表中获得最大值。
 
-2.  现在，为了检查斐波那契数，建立一个[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于圆单链接列表中最大值的斐波那契数。
+2.  现在，为了检查斐波那契数，建立一个[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于圆单链表中最大值的斐波那契数。
 
 3.  最后，逐个遍历循环单链列表的节点，并检查该节点是否包含斐波那契数作为其数据值。 删除具有斐波那契值的节点。
 

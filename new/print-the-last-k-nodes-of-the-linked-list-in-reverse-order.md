@@ -1,4 +1,4 @@
-# 以相反的顺序打印链接列表的最后 k 个节点| 递归方法
+# 以相反的顺序打印链表的最后 k 个节点| 递归方法
 
 > 原文：[https://www.geeksforgeeks.org/print-the-last-k-nodes-of-the-linked-list-in-reverse-order/](https://www.geeksforgeeks.org/print-the-last-k-nodes-of-the-linked-list-in-reverse-order/)
 
@@ -325,13 +325,13 @@ public static void Main(String []args) 
 
 **迭代方法**：的想法是使用[堆栈数据结构](http://www.geeksforgeeks.org/stack-data-structure/)。
 
-1.  将所有链接列表节点推入堆栈。
+1.  将所有链表节点推入堆栈。
 
 2.  从堆栈中弹出 k 个节点并进行打印。
 
 **时间复杂度**：`O(n)`。
 
-**两指针方法**的想法类似于[从链接列表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾找到第 k 个节点。
+**两指针方法**的想法类似于[从链表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾找到第 k 个节点。
 
 1.  将第一个指针向前移动 k 个节点。
 

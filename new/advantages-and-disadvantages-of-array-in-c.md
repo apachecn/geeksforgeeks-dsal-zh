@@ -209,7 +209,7 @@ Ram
 
 ![](img/02d4e0c6e0635f4b2da7c08c21319e18.png)
 
-**如何克服：** 为了克服对数组的顺序访问，其思想是使用 [**链表**](https://www.geeksforgeeks.org/data-structures/linked-list/) 。 在**链接列表** *和*中，元素未存储在连续的存储位置中。 下面是相同的表示形式：
+**如何克服：** 为了克服对数组的顺序访问，其思想是使用 [**链表**](https://www.geeksforgeeks.org/data-structures/linked-list/) 。 在**链表** *和*中，元素未存储在连续的存储位置中。 下面是相同的表示形式：
 
 ![](img/2be22207912f676a4260c9816f307fba.png)
 

@@ -1,4 +1,4 @@
-# 修改链接列表
+# 修改链表
 
 > 原文：[https://www.geeksforgeeks.org/modify-contents-linked-list/](https://www.geeksforgeeks.org/modify-contents-linked-list/)
 

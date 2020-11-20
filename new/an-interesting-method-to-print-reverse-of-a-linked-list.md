@@ -1,4 +1,4 @@
-# 一种有趣的打印反向链接列表的方法
+# 一种有趣的打印反向链表的方法
 
 > 原文：[https://www.geeksforgeeks.org/an-interesting-method-to-print-reverse-of-a-linked-list/](https://www.geeksforgeeks.org/an-interesting-method-to-print-reverse-of-a-linked-list/)
 
@@ -20,7 +20,7 @@ Output : Reversed Linked list : 85
 
 对于以相反顺序打印列表，我们已经讨论了[反向迭代和递归](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/)的方法。
 
-在本文中，我们讨论了一种有趣的方法，该方法不需要递归，也不需要修改列表。 该功能也只访问链接列表的每个节点一次。
+在本文中，我们讨论了一种有趣的方法，该方法不需要递归，也不需要修改列表。 该功能也只访问链表的每个节点一次。
 
 **技巧**：以反向顺序打印列表而没有任何递归功能或循环的想法是使用[回车符](https://en.wikipedia.org/wiki/Carriage_return)（`"r"`）。 为此，我们应该了解列表的长度。 现在，我们应该打印`n-1`个空白字符，然后打印第一个元素，然后打印`"r"`，再打印`n-2`个空白字符，再打印第二个节点，然后打印`"r"`，依此类推。
 

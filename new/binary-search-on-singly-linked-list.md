@@ -1,4 +1,4 @@
-# 对单链接列表
+# 对单链表
 
 > 原文：[https://www.geeksforgeeks.org/binary-search-on-singly-linked-list/](https://www.geeksforgeeks.org/binary-search-on-singly-linked-list/)
 
@@ -6,7 +6,7 @@
 
 给定一个单链表和一个密钥，请使用[二进制搜索](https://www.geeksforgeeks.org/binary-search/)方法查找密钥。
 
-为了执行基于分而治之算法的二进制搜索，确定中间元素非常重要。 对于数组，二进制搜索通常是快速而有效的，因为访问两个给定索引之间的中间索引既简单又快速（时间复杂度`O(1)`）。 但是，单链接列表的内存分配是动态且不连续的，这使得查找中间元素变得困难。 一种方法可能是使用[跳过列表](https://www.geeksforgeeks.org/skip-list/)，一种可能是使用一个指针遍历链接列表。
+为了执行基于分而治之算法的二进制搜索，确定中间元素非常重要。 对于数组，二进制搜索通常是快速而有效的，因为访问两个给定索引之间的中间索引既简单又快速（时间复杂度`O(1)`）。 但是，单链表的内存分配是动态且不连续的，这使得查找中间元素变得困难。 一种方法可能是使用[跳过列表](https://www.geeksforgeeks.org/skip-list/)，一种可能是使用一个指针遍历链表。
 
 **前提**：[在链表的中间找到。](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)
 
@@ -26,7 +26,7 @@
 
 *   出现的条件是，找到元素或遍历整个列表。 当遍历整个列表时，`last`指向开始，即`last-> next == start`。
 
-在主函数中，函数`InsertAtHead`在链接列表的开头插入值。 插入这样的值（为简单起见），以便对创建的列表进行排序。
+在主函数中，函数`InsertAtHead`在链表的开头插入值。 插入这样的值（为简单起见），以便对创建的列表进行排序。
 
 例子 ：
 

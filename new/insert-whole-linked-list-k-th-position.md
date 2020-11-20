@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/insert-whole-linked-list-k-th-position/](https://www.geeksforgeeks.org/insert-whole-linked-list-k-th-position/)
 
-给定两个链表和一个数字 k。 将第二个链接列表插入第 k 个第一个链接列表
+给定两个链表和一个数字 k。 将第二个链表插入第 k 个第一个链表
 
 **示例**：
 

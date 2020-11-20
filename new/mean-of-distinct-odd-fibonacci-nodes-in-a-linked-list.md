@@ -11,7 +11,7 @@
 > **输入**：LL = 5-> 21-> 8-> 12- > 3-> 13-> 144-> 6
 > [ **输出** 10.5
 > **说明**：
-> 链接列表中存在的斐波那契节点是{5、21、8、3、13、144}
+> 链表中存在的斐波那契节点是{5、21、8、3、13、144}
 > 奇数斐波那契节点 列表是{5，21，3，13}
 > 奇数斐波那契结点数是 4
 > 因此，奇数斐波那契结点值的平均值=（5 + 21 + 3 + 13）/ 4 = 10.5
@@ -20,7 +20,7 @@
 > **输出**：77
 > **说明**：
 > 链表中存在的斐波纳契结点是{55，3，89，233，34 ，5}
-> 链接列表中存在的奇数斐波那契节点是{55，3，89，233，5}
+> 链表中存在的奇数斐波那契节点是{55，3，89，233，5}
 > 奇数斐波那契节点数是 5
 > 因此，奇数斐波那契节点值=（55 + 5 + 3 + 89 + 233）/ 5 = 77
 
@@ -34,7 +34,7 @@
 
 3.  创建一个[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)，例如说**哈希图**，以存储直到 **Max** 为止的所有斐波那契数。
 
-4.  [遍历链接列表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)，并检查当前节点是否为[奇数](https://www.geeksforgeeks.org/check-whether-given-number-even-odd/)和[斐波那契数](https://www.geeksforgeeks.org/check-number-fibonacci-number/)。 如果发现是真的，则增加 **cnt** 的值，并将当前节点的数据值加到**和**中，然后从 **Hashmap** 中删除该节点。
+4.  [遍历链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)，并检查当前节点是否为[奇数](https://www.geeksforgeeks.org/check-whether-given-number-even-odd/)和[斐波那契数](https://www.geeksforgeeks.org/check-number-fibonacci-number/)。 如果发现是真的，则增加 **cnt** 的值，并将当前节点的数据值加到**和**中，然后从 **Hashmap** 中删除该节点。
 
 5.  最后，将**（sum / cnt）**的值打印为所需答案。
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/print-reverse-linked-list-using-stack/](https://www.geeksforgeeks.org/print-reverse-linked-list-using-stack/)
 
-反向链接列表
+反向链表
 
 给定一个链表，在不修改链表的情况下将其打印出来。
 
@@ -19,9 +19,9 @@ Output : 78 67 56 45 34 23 12
 
 下面是现在允许在此处使用的不同解决方案，因为我们不能使用额外的空间来修改列表。
 
-1.  [递归解决方案，以打印反向链接列表](https://www.geeksforgeeks.org/write-a-recursive-function-to-print-reverse-of-a-linked-list/)。 需要额外的空间。
+1.  [递归解决方案，以打印反向链表](https://www.geeksforgeeks.org/write-a-recursive-function-to-print-reverse-of-a-linked-list/)。 需要额外的空间。
 
-2.  [反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，然后打印。 这需要对原始列表进行修改。
+2.  [反向链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，然后打印。 这需要对原始列表进行修改。
 
 3.  [一种 O（n <sup>2</sup> ）解决方案，用于打印链表](https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/)的反向列表，该列表首先计数节点，然后从末尾打印第 k 个节点。
 

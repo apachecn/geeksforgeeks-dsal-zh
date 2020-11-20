@@ -4,13 +4,13 @@
 
 给定排序的链表和要插入的值，编写一个函数以排序的方式插入值。
 
-初始链接列表
+初始链表
 
 ![SortedLinked List](img/177b10005e6b234f6f3bf2456c71f8cd.png "SortedLinked List")
 
 插入 9
 
-![UpdatedSortedLinked List](img/c431502d296d8d30fff5dfb1be090fc2.png "UpdatedSortedLinked List")后的链接列表
+![UpdatedSortedLinked List](img/c431502d296d8d30fff5dfb1be090fc2.png "UpdatedSortedLinked List")后的链表
 
 **算法**：
 

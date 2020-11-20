@@ -42,7 +42,7 @@
 
 **方法**：请按照以下步骤解决问题：
 
-1.  创建[两个循环链接列表](https://www.geeksforgeeks.org/circular-linked-list/)，其中每个节点将由系数，`x`的功效，`y`的功效以及指向下一个节点的指针组成。
+1.  创建[两个循环链表](https://www.geeksforgeeks.org/circular-linked-list/)，其中每个节点将由系数，`x`的功效，`y`的功效以及指向下一个节点的指针组成。
 
 2.  遍历两个多项式并检查以下条件：
 

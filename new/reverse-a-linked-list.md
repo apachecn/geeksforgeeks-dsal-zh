@@ -1,4 +1,4 @@
-# 反向链接列表
+# 反向链表
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-linked-list/](https://www.geeksforgeeks.org/reverse-a-linked-list/)
 
@@ -6,14 +6,14 @@
 
 **范例**：
 
-> **输入**：以下链接列表的开头。
+> **输入**：以下链表的开头。
 > 1- > 2- > 3- > 4- >空
-> **输出**：链接列表 应该更改为
+> **输出**：链表 应该更改为
 > 4- > 3- > 2- > 1- > NULL
 > 
-> **输入**：以下链接列表的标题。
+> **输入**：以下链表的标题。
 > 1- > 2- > 3- > 4- > 5- >空
-> **输出**：链接列表应更改为
+> **输出**：链表应更改为
 > 5- > 4- > 3- > 2- > 1- > NULL
 > 
 > **输入**：NULL
@@ -25,7 +25,7 @@
 **迭代方法**
 
 > 1.  初始化三个指针，前一个为 NULL，curr 为头，下一个为 NULL。
-> 2.  迭代链接列表。 循环执行以下操作。
+> 2.  迭代链表。 循环执行以下操作。
 >     //在更改当前下一个之前，
 >     //存储下一个节点
 >     next = curr- > next
@@ -1276,7 +1276,7 @@ Reversed linked list
 
 感谢 Gaurav Ahirwar 提出了此解决方案。
 
-[递归地反向链接列表（一个简单的实现）](https://www.geeksforgeeks.org/recursively-reversing-a-linked-list-a-simple-implementation/)
+[递归地反向链表（一个简单的实现）](https://www.geeksforgeeks.org/recursively-reversing-a-linked-list-a-simple-implementation/)
 
 [仅使用 2 个指针迭代反向链接的列表（一种有趣的方法）](https://www.geeksforgeeks.org/iteratively-reverse-a-linked-list-using-only-2-pointers/)
 

@@ -34,7 +34,7 @@ Output: 1 -> 5 -> 2 -> 4 -> 3
 
 2.  通过交换两端的节点来重新排列给定向量。
 
-3.  将修改后的向量复制回链接列表。
+3.  将修改后的向量复制回链表。
 
 此方法的实现： [https://ide.geeksforgeeks.org/1eGSEy](https://ide.geeksforgeeks.org/1eGSEy)
 

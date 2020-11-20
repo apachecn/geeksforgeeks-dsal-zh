@@ -1,4 +1,4 @@
-# 删除双向链接列表
+# 删除双向链表
 
 > 原文：[https://www.geeksforgeeks.org/delete-occurrences-given-key-doubly-linked-list/](https://www.geeksforgeeks.org/delete-occurrences-given-key-doubly-linked-list/)
 

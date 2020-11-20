@@ -1,4 +1,4 @@
-# 反转双向链接列表
+# 反转双向链表
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/](https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/)
 

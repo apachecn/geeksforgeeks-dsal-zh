@@ -1,4 +1,4 @@
-# 单链接列表
+# 单链表
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-the-nodes-of-a-singly-linked-list/](https://www.geeksforgeeks.org/sum-of-the-nodes-of-a-singly-linked-list/)
 
@@ -377,7 +377,7 @@ Sum of nodes = 26
 
 **迭代解决方案**：
 
-1.  用链接列表的开头初始化一个指针 ***ptr*** ，并将 ***和*** 变量设为 0。
+1.  用链表的开头初始化一个指针 ***ptr*** ，并将 ***和*** 变量设为 0。
 
 2.  使用循环开始遍历链表，直到遍历所有节点。
 

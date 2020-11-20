@@ -1,8 +1,8 @@
-# 子列表搜索（在另一个列表中搜索链接列表）
+# 子列表搜索（在另一个列表中搜索链表）
 
 > 原文：[https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list/](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list/)
 
-给定两个链接列表，任务是检查第一个列表是否存在于第二个列表中。
+给定两个链表，任务是检查第一个列表是否存在于第二个列表中。
 
 **范例**：
 
@@ -33,7 +33,7 @@ Output : LIST NOT FOUND
 
 5-将第二个列表带到第二个节点。
 
-6-重复这些步骤，直到任何链接列表变为空。
+6-重复这些步骤，直到任何链表变为空。
 
 7-如果第一个列表为空，则找到列表，否则为否。
 

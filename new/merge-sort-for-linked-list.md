@@ -1,4 +1,4 @@
-# 合并链接列表的排序
+# 合并链表的排序
 
 > 原文：[https://www.geeksforgeeks.org/merge-sort-for-linked-list/](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
@@ -6,7 +6,7 @@
 
 ![sorting image](img/cc3d3ac699ac03f5792746b3e3e54865.png)
 
-令 head 是要排序的链表的第一个节点，而 headRef 是指向 head 的指针。 请注意，我们需要在 MergeSort（）中引用 head，因为以下实现会更改下一个链接以对链接列表进行排序（而不是节点上的数据），因此，如果原始 head 上的数据不是最小的，则必须更改 head 节点。 链表中的值。
+令 head 是要排序的链表的第一个节点，而 headRef 是指向 head 的指针。 请注意，我们需要在 MergeSort（）中引用 head，因为以下实现会更改下一个链接以对链表进行排序（而不是节点上的数据），因此，如果原始 head 上的数据不是最小的，则必须更改 head 节点。 链表中的值。
 
 ```
 MergeSort(headRef)

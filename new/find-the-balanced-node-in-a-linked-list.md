@@ -1,4 +1,4 @@
-# 在链接列表
+# 在链表
 
 > 原文：[https://www.geeksforgeeks.org/find-the-balanced-node-in-a-linked-list/](https://www.geeksforgeeks.org/find-the-balanced-node-in-a-linked-list/)
 

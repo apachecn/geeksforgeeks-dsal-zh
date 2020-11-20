@@ -1,4 +1,4 @@
-# 双链接列表
+# 双链表
 
 > 原文：[https://www.geeksforgeeks.org/quicksort-for-linked-list/](https://www.geeksforgeeks.org/quicksort-for-linked-list/)
 
@@ -614,15 +614,15 @@ Linked List after sorting
 
 **时间复杂度**：上述实现的时间复杂度与数组的 QuickSort（）的时间复杂度相同。 在最坏的情况下需要 O（n ^ 2）时间，在平均和最好的情况下需要 O（nLogn）。 最坏的情况是链表已经排序。
 
-我们可以对链接列表实施随机快速排序吗？
+我们可以对链表实施随机快速排序吗？
 
-仅当我们可以选择一个固定点作为枢轴时（如上述实现中的最后一个元素），才能为链接列表实现 Quicksort。 通过选择随机数据透视表，不能有效地为链接列表实现随机 QuickSort。
+仅当我们可以选择一个固定点作为枢轴时（如上述实现中的最后一个元素），才能为链表实现 Quicksort。 通过选择随机数据透视表，不能有效地为链表实现随机 QuickSort。
 
 **练习**：
 
-上面的实现适用于双链表。 修改它为单链列表。 请注意，单链接列表中没有上一个指针。
+上面的实现适用于双链表。 修改它为单链列表。 请注意，单链表中没有上一个指针。
 
-请参阅单链接列表上的[快速排序。](https://www.geeksforgeeks.org/quicksort-on-singly-linked-list/)
+请参阅单链表上的[快速排序。](https://www.geeksforgeeks.org/quicksort-on-singly-linked-list/)
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

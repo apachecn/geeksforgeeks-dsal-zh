@@ -1,4 +1,4 @@
-# 在链接列表
+# 在链表
 
 > 原文：[https://www.geeksforgeeks.org/insert-a-node-at-a-specific-position-in-a-linked-list/](https://www.geeksforgeeks.org/insert-a-node-at-a-specific-position-in-a-linked-list/)
 
@@ -19,7 +19,7 @@ Output: 3->5->8->10->11
 
 **方法**：要在指定位置插入给定数据，请遵循以下算法：
 
-*   遍历链接列表直到*位置 1* 节点。
+*   遍历链表直到*位置 1* 节点。
 
 *   遍历所有*位置 1* 节点后，将内存和给定数据分配给新节点。
 

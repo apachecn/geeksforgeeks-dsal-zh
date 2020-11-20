@@ -2,9 +2,9 @@
 
 > 原文：[https://www.geeksforgeeks.org/create-linked-list-from-a-given-array/](https://www.geeksforgeeks.org/create-linked-list-from-a-given-array/)
 
-创建链接列表
+创建链表
 
-给定大小为 **N** 的数组 **arr []** 。 任务是从给定数组创建链接列表。
+给定大小为 **N** 的数组 **arr []** 。 任务是从给定数组创建链表。
 
 **示例**：
 
@@ -17,7 +17,7 @@ Output : 10->11->12->13->14
 
 ```
 
-**简单方法**：对于数组 **arr []** 的每个元素，我们在链接列表中创建一个节点，并将其插入到末尾。
+**简单方法**：对于数组 **arr []** 的每个元素，我们在链表中创建一个节点，并将其插入到末尾。
 
 ## C++
 

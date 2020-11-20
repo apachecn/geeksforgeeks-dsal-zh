@@ -17,7 +17,7 @@ Output: 5 <=> 6 <=> 8 <=> 4 <=> 9
 
 ```
 
-**方法**：遍历双向链接列表的节点，并获得数据值小于 **K** 的节点的指针。 请参阅[从双链表](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)中删除节点的文章以删除节点。
+**方法**：遍历双向链表的节点，并获得数据值小于 **K** 的节点的指针。 请参阅[从双链表](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)中删除节点的文章以删除节点。
 
 下面是上述方法的实现：
 

@@ -1,4 +1,4 @@
-# 递归函数，用于从链接列表中删除第 k 个节点
+# 递归函数，用于从链表中删除第 k 个节点
 
 > 原文：[https://www.geeksforgeeks.org/recursive-function-delete-k-th-node-linked-list/](https://www.geeksforgeeks.org/recursive-function-delete-k-th-node-linked-list/)
 

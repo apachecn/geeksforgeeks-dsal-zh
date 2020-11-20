@@ -1,4 +1,4 @@
-# 删除链接列表
+# 删除链表
 
 > 原文：[https://www.geeksforgeeks.org/delete-occurrences-given-key-linked-list/](https://www.geeksforgeeks.org/delete-occurrences-given-key-linked-list/)
 

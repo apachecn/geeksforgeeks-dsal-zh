@@ -1,4 +1,4 @@
-# 使用`O(1)`空间中的下一个指针和随机指针克隆链接列表
+# 使用`O(1)`空间中的下一个指针和随机指针克隆链表
 
 > 原文：[https://www.geeksforgeeks.org/clone-linked-list-next-random-pointer-o1-space/](https://www.geeksforgeeks.org/clone-linked-list-next-random-pointer-o1-space/)
 
@@ -20,7 +20,7 @@ A new linked list identical to the original list.
 
 下面是算法：
 
-*   创建节点 1 的副本并将其插入原始链接列表中的节点 1 和节点 2 之间，创建 2 的副本并将其插入 2 和 3 之间。以这种方式继续，在第 N 个节点之后添加 N 的副本
+*   创建节点 1 的副本并将其插入原始链表中的节点 1 和节点 2 之间，创建 2 的副本并将其插入 2 和 3 之间。以这种方式继续，在第 N 个节点之后添加 N 的副本
 
 ![](img/7e1496dcc505d9ae9e3bd8b6634aa1de.png)
 

@@ -1,8 +1,8 @@
-# 交替合并两个链接列表的奇数和偶数节点
+# 交替合并两个链表的奇数和偶数节点
 
 > 原文：[https://www.geeksforgeeks.org/merge-odd-and-even-positioned-nodes-of-two-linked-lists-alternately/](https://www.geeksforgeeks.org/merge-odd-and-even-positioned-nodes-of-two-linked-lists-alternately/)
 
-给定两个[链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/) **L1** 和 **L2** ，任务是打印通过合并**的*奇数位置节点*而获得的新列表。 L1** 与*均匀放置在 **L2** 的节点*上。
+给定两个[链表](https://www.geeksforgeeks.org/data-structures/linked-list/) **L1** 和 **L2** ，任务是打印通过合并**的*奇数位置节点*而获得的新列表。 L1** 与*均匀放置在 **L2** 的节点*上。
 
 **示例**：
 
@@ -10,13 +10,13 @@
 > **输出**：8- > 13- > 3- > 6- > 10- > NULL
 > **说明**：
 > L1 的奇数位置节点是{8、3、10}，偶数的节点 L2 是{13、6}。
-> 交替合并将生成链接列表 8- > 13- > 3- > 6- > 10- > NULL
+> 交替合并将生成链表 8- > 13- > 3- > 6- > 10- > NULL
 > 
 > **输入**：L1 = 1- > 5- > 10- > 12- > 13- > 19- > 6- > NULL，L2 = 2 -> 7- > 9- > NULL **[**
 > **输出**：1- > 7- > 10- > 13- > 6-> NULL
 > **说明**：
 > L1 的奇数位置节点为{1、10、13、6}，L2 的偶数位置节点为{7}。
-> 交替合并将生成链接列表 1- > 7- > 10- > 13- > 6- > NULL
+> 交替合并将生成链表 1- > 7- > 10- > 13- > 6- > NULL
 
 **方法**：请按照以下步骤解决问题：
 

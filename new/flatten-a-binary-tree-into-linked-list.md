@@ -1,4 +1,4 @@
-# 将二叉树展平为链接列表
+# 将二叉树展平为链表
 
 > 原文：[https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list/](https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list/)
 
@@ -50,7 +50,7 @@ Output :
 
 **简单方法**：一个简单的解决方案是使用“队列”使用[级别订单遍历。](https://www.geeksforgeeks.org/level-order-tree-traversal/) 在级别顺序遍历中，跟踪先前的节点。 将当前节点作为上一个节点的右子节点，将上一个节点的左节点作为 NULL。 该解决方案需要队列，但问题要求解决而无需其他数据结构。
 
-**在没有附加数据结构的情况下有效**在左子树中递归查找没有孙子代且左子代和右子代的节点。 然后将节点->正确存储在温度中，并使节点->右=节点->左。 在 node 右侧的第一个节点 NULL 中，按 node = node- >右侧插入 temp。 重复直到将其转换为链接列表。
+**在没有附加数据结构的情况下有效**在左子树中递归查找没有孙子代且左子代和右子代的节点。 然后将节点->正确存储在温度中，并使节点->右=节点->左。 在 node 右侧的第一个节点 NULL 中，按 node = node- >右侧插入 temp。 重复直到将其转换为链表。
 
 例如
 

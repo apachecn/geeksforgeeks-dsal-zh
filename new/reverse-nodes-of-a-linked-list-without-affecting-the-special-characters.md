@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/reverse-nodes-of-a-linked-list-without-affecting-the-special-characters/](https://www.geeksforgeeks.org/reverse-nodes-of-a-linked-list-without-affecting-the-special-characters/)
 
-给定一个字母和特殊字符的链接列表。 反转给定的链表，而不会影响特殊字符的位置。
+给定一个字母和特殊字符的链表。 反转给定的链表，而不会影响特殊字符的位置。
 
 **示例**：
 
@@ -10,15 +10,15 @@
 > **输出**：s-> @-> k->＃-> e-> $-> e-> g-> NULL
 > **解释**：在这里我们可以看到输出中特殊字符的位置不变，并且链表也相反。
 
-想法是遍历链接列表，并将不包括特殊字符的字符存储在临时数组中。 再次遍历链表，并以相反的方式将元素从数组复制到链表的节点。
+想法是遍历链表，并将不包括特殊字符的字符存储在临时数组中。 再次遍历链表，并以相反的方式将元素从数组复制到链表的节点。
 
 **以下是逐步算法**：
 
 1.  取一个临时数组 TEMP_ARR。
 
-2.  遍历链接列表并执行以下操作
+2.  遍历链表并执行以下操作
 
-    *   如果当前元素是字母，则将链接列表的该元素存储到 TEMP_ARR。
+    *   如果当前元素是字母，则将链表的该元素存储到 TEMP_ARR。
 
     *   否则，将节点指针增加一
 

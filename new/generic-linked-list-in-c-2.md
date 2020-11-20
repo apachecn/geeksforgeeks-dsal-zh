@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/generic-linked-list-in-c-2/](https://www.geeksforgeeks.org/generic-linked-list-in-c-2/)
 
-中的通用链接列表
+中的通用链表
 
 与 [C++](https://www.geeksforgeeks.org/c-plus-plus/) 和 [Java](https://www.geeksforgeeks.org/java/) 不同， [C](https://www.geeksforgeeks.org/c/) 不支持泛型。 如何在 C 中创建可用于任何数据类型的链表？ 在 C 语言中，我们可以使用[无效指针](http://geeksquiz.com/void-pointer-c/)和函数指针来实现相同的功能。 关于 void 指针的伟大之处在于它可以用于指向任何数据类型。 另外，所有类型的指针的大小始终是相同的，因此我们总是可以分配一个链表节点。 需要使用函数指针来处理存储在 void 指针指向的地址中的实际内容。
 

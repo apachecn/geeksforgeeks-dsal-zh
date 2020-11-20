@@ -1,8 +1,8 @@
-# 检查链接列表是否成对排序
+# 检查链表是否成对排序
 
 > 原文：[https://www.geeksforgeeks.org/check-if-a-linked-list-is-pairwise-sorted/](https://www.geeksforgeeks.org/check-if-a-linked-list-is-pairwise-sorted/)
 
-给定一个链表。 任务是检查链接列表是否成对排序。
+给定一个链表。 任务是检查链表是否成对排序。
 
 如果每个连续的数字对都按排序（非降序）顺序，则认为链表是成对排序的。 如果节点数为奇数，则忽略最后一个节点，并且结果基于剩余的偶数个节点。
 

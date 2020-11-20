@@ -1,4 +1,4 @@
-# 将单链接列表转换为循环链接列表
+# 将单链表转换为循环链表
 
 > 原文：[https://www.geeksforgeeks.org/convert-singly-linked-list-circular-linked-list/](https://www.geeksforgeeks.org/convert-singly-linked-list-circular-linked-list/)
 
@@ -6,7 +6,7 @@
 
 ![Singly-Linked-List](img/293a6f402f56fa20b327cb9f7ab5903c.png)
 
-上面的单链接列表被转换为循环链接列表。
+上面的单链表被转换为循环链表。
 
 ![Circular-Linked-List](img/edcbce05d23f3327116de91a2c124f5e.png)
 

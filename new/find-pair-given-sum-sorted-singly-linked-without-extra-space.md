@@ -24,9 +24,9 @@ Output: (6, 11), (7, 10), (8, 9)
 
 以下是步骤：
 
-*   首先，我们需要将单链列表转换为双链列表。 在这里，我们给出了单链列表结构节点，该节点仅具有**下一个**指针，而没有**上一页**指针，因此，为了将单链列表转换为双链列表，我们使用[内存高效双链 列表（异或链接列表）](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)。
+*   首先，我们需要将单链列表转换为双链列表。 在这里，我们给出了单链列表结构节点，该节点仅具有**下一个**指针，而没有**上一页**指针，因此，为了将单链列表转换为双链列表，我们使用[内存高效双链 列表（异或链表）](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)。
 
-*   在 XOR 链接列表中，单链接列表的每个**下一个**指针都包含**下一个**和 **prev** 指针的 XOR。
+*   在 XOR 链表中，单链表的每个**下一个**指针都包含**下一个**和 **prev** 指针的 XOR。
 
 *   将单链列表转换为双链列表后，我们初始化两个指针变量以在排序的双链列表中找到候选元素。 首先以双向链表的开头初始化；即 **first = head** ，然后用双向链表的最后一个节点初始化**第二**；即 **second = last_node** 。
 
@@ -219,7 +219,7 @@ int main()
 
 时间复杂度：`O(n)`
 
-如果未对链接列表进行排序，那么我们可以将列表作为第一步进行排序。 但是在那种情况下，整体时间复杂度将变为 O（n Log n）。 如果没有多余的空间，我们可以在这种情况下使用哈希。 基于哈希的解决方案与方法 2 [在此处](https://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/)相同。
+如果未对链表进行排序，那么我们可以将列表作为第一步进行排序。 但是在那种情况下，整体时间复杂度将变为 O（n Log n）。 如果没有多余的空间，我们可以在这种情况下使用哈希。 基于哈希的解决方案与方法 2 [在此处](https://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/)相同。
 
 本文由 [**Shashank Mishra（Gullu）**](https://www.facebook.com/shashank.mishra.92167) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

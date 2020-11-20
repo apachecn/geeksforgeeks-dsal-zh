@@ -1,4 +1,4 @@
-# 循环链接列表
+# 循环链表
 
 > 原文：[https://www.geeksforgeeks.org/count-nodes-circular-linked-list/](https://www.geeksforgeeks.org/count-nodes-circular-linked-list/)
 

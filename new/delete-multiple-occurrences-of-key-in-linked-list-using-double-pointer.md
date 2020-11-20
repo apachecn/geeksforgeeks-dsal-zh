@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/delete-multiple-occurrences-of-key-in-linked-list-using-double-pointer/](https://www.geeksforgeeks.org/delete-multiple-occurrences-of-key-in-linked-list-using-double-pointer/)
 
-删除链接列表中多次出现的键
+删除链表中多次出现的键
 
 给定一个单链表，请删除其中所有出现的给定键。 例如，考虑以下列表。
 
@@ -13,7 +13,7 @@ Output:  4 -> 3
 
 ```
 
-这主要是[的替代方案，该帖子使用针对头节点和其余节点](https://www.geeksforgeeks.org/delete-occurrences-given-key-linked-list/)的单独条件循环来删除多次出现的给定键。 在这里，我们使用双指针方法来使用单个循环，而与元素的位置（头，尾或中间）无关。 Linus Torvalds 在他的“ Linux 25 周年” TED 演讲中解释了从链接列表中删除节点而无需额外检查头部的原始方法。 本文使用该逻辑删除键的多次重复，而无需对头部进行额外检查。
+这主要是[的替代方案，该帖子使用针对头节点和其余节点](https://www.geeksforgeeks.org/delete-occurrences-given-key-linked-list/)的单独条件循环来删除多次出现的给定键。 在这里，我们使用双指针方法来使用单个循环，而与元素的位置（头，尾或中间）无关。 Linus Torvalds 在他的“ Linux 25 周年” TED 演讲中解释了从链表中删除节点而无需额外检查头部的原始方法。 本文使用该逻辑删除键的多次重复，而无需对头部进行额外检查。
 
 说明：
 

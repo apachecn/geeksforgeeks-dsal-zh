@@ -1,8 +1,8 @@
-# 反向链接列表的子列表
+# 反向链表的子列表
 
 > 原文：[https://www.geeksforgeeks.org/reverse-sublist-linked-list/](https://www.geeksforgeeks.org/reverse-sublist-linked-list/)
 
-我们得到了一个链表以及位置 m 和 n。 我们需要将链接列表从位置 m 反向到 n。
+我们得到了一个链表以及位置 m 和 n。 我们需要将链表从位置 m 反向到 n。
 
 例子：
 
@@ -17,7 +17,7 @@ Output : 1->4->3->2->5->6->NULL
 
 ```
 
-要将链接列表从位置 m 反转为 n，我们通过运行循环来找到链接列表的开始和结束位置的地址，然后将其与列表的其余部分取消链接，然后使用常规的[链接列表 反向功能](https://www.geeksforgeeks.org/reverse-a-linked-list/)，我们之前已使用它来反转完整的链表，并使用它来反转链表中需要反转的部分。 反转后，我们再次将反转的部分附加到主列表。
+要将链表从位置 m 反转为 n，我们通过运行循环来找到链表的开始和结束位置的地址，然后将其与列表的其余部分取消链接，然后使用常规的[链表 反向功能](https://www.geeksforgeeks.org/reverse-a-linked-list/)，我们之前已使用它来反转完整的链表，并使用它来反转链表中需要反转的部分。 反转后，我们再次将反转的部分附加到主列表。
 
 ```
 

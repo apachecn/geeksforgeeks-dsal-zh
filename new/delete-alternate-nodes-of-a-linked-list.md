@@ -1,4 +1,4 @@
-# 删除链接列表
+# 删除链表
 
 > 原文：[https://www.geeksforgeeks.org/delete-alternate-nodes-of-a-linked-list/](https://www.geeksforgeeks.org/delete-alternate-nodes-of-a-linked-list/)
 
@@ -503,7 +503,7 @@ List after calling deleteAlt()
 1 3 5 
 ```
 
-**时间复杂度**：`O(n)`，其中 n 是给定链接列表中节点的数量。
+**时间复杂度**：`O(n)`，其中 n 是给定链表中节点的数量。
 
 **方法 2（递归）**
 

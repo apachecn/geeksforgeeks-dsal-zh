@@ -1,4 +1,4 @@
-# 如果单链接列表
+# 如果单链表
 
 > 原文：[https://www.geeksforgeeks.org/update-adjacent-nodes-if-the-current-node-is-zero-in-a-singly-linked-list/](https://www.geeksforgeeks.org/update-adjacent-nodes-if-the-current-node-is-zero-in-a-singly-linked-list/)
 
@@ -21,7 +21,7 @@ Output : 0->0->3->0->0->0->NULL
 
 1.  第一步是创建两个指针 **prev** 和 **curr** 。
 
-    上一个**指向**的前一个节点**，**指向**到**当前节点**。 使用 **prev** 的原因是我们无法在单个链接列表中回溯。**
+    上一个**指向**的前一个节点**，**指向**到**当前节点**。 使用 **prev** 的原因是我们无法在单个链表中回溯。**
 
 2.  **如果**第一个节点是`0`，则检查下一个节点是否是`0`
 

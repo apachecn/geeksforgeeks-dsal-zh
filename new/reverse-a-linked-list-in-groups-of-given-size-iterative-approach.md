@@ -1,4 +1,4 @@
-# 以给定大小的组反向链接列表（迭代方法）
+# 以给定大小的组反向链表（迭代方法）
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-linked-list-in-groups-of-given-size-iterative-approach/](https://www.geeksforgeeks.org/reverse-a-linked-list-in-groups-of-given-size-iterative-approach/)
 

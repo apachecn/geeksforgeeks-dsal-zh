@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/insert-a-node-in-linked-list-before-a-given-node/](https://www.geeksforgeeks.org/insert-a-node-in-linked-list-before-a-given-node/)
 
-之前的链接列表中插入一个节点
+之前的链表中插入一个节点
 
 给定[链表](https://www.geeksforgeeks.org/data-structures/linked-list/) **N** 的节点和值 **K，**的任务是在链表中插入值为 **K** 的节点 在给定**节点 N** 之前。
 

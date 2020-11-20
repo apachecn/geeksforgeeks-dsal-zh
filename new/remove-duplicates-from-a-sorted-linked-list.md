@@ -1,10 +1,10 @@
-# 从排序的链接列表中删除重复项
+# 从排序的链表中删除重复项
 
 > 原文：[https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)
 
 编写一个函数，该函数采用以非降序排列的列表，并从列表中删除所有重复的节点。 该列表仅应遍历一次。
 
-例如，如果链接列表是 11- > 11- > 11- > 21- > 43- > 43- > 60，则 removeDuplicates（）应该将列表转换为 11- > 21- > 43- > 60。
+例如，如果链表是 11- > 11- > 11- > 21- > 43- > 43- > 60，则 removeDuplicates（）应该将列表转换为 11- > 21- > 43- > 60。
 
 **算法**：
 
@@ -534,7 +534,7 @@ Linked list after duplicate removal  11 13 20
 
 ```
 
-**时间复杂度**：`O(n)`，其中 n 是给定链接列表中的节点数。
+**时间复杂度**：`O(n)`，其中 n 是给定链表中的节点数。
 
 **递归方法**：[
 
@@ -1212,7 +1212,7 @@ List after removal of elements
 
 **相关文章**：
 
-[从排序的链接列表中删除所有重复项](https://www.geeksforgeeks.org/remove-occurrences-duplicates-sorted-linked-list/)
+[从排序的链表中删除所有重复项](https://www.geeksforgeeks.org/remove-occurrences-duplicates-sorted-linked-list/)
 
 **参考**：
 

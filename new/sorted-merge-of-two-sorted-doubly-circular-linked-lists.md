@@ -30,7 +30,7 @@
 
 5.  更新 last1.next = last2.next = NULL。
 
-6.  现在将两个列表合并为两个已排序的双向链接列表。 请参阅此帖子的**合并[的](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)**程序。 令最终列表的第一个节点为 **finalHead** 。
+6.  现在将两个列表合并为两个已排序的双向链表。 请参阅此帖子的**合并[的](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)**程序。 令最终列表的第一个节点为 **finalHead** 。
 
 7.  更新 finalHead.prev = last_node 和 last_node.next = finalHead。
 

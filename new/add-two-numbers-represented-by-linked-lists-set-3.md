@@ -1,8 +1,8 @@
-# 添加两个由链接列表表示的数字 | 系列 3
+# 添加两个由链表表示的数字 | 系列 3
 
 > 原文：[https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists-set-3/](https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists-set-3/)
 
-给定两个链接列表表示的两个数字，编写一个返回和列表的函数。 总计列表是两个输入数字相加的链接列表表示。 预期空间复杂度`O(1)`。
+给定两个链表表示的两个数字，编写一个返回和列表的函数。 总计列表是两个输入数字相加的链表表示。 预期空间复杂度`O(1)`。
 
 **示例**：
 

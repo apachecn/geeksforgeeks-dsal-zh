@@ -1,4 +1,4 @@
-# 实现单个链接列表
+# 实现单个链表
 
 > 原文：[https://www.geeksforgeeks.org/implementing-iterator-pattern-of-a-single-linked-list/](https://www.geeksforgeeks.org/implementing-iterator-pattern-of-a-single-linked-list/)
 
@@ -8,7 +8,7 @@ STL 是 C++的支柱之一。 它使工作变得更加轻松，尤其是当您�
 
 尽管依赖库函数会直接影响我们的效率，但是如果对库的工作原理没有正确的了解，有时会失去我们一直在谈论的工程效率的含义。 错误选择的数据结构可能在将来的某个时候回来困扰我们。 解决方案很简单。 使用库方法，但要知道它如何在后台处理操作。
 
-说够了！ 今天，我们将研究如何实现单个链表的自己的**迭代器模式。 因此，这是链接列表的 STL 实现的样子**：
+说够了！ 今天，我们将研究如何实现单个链表的自己的**迭代器模式。 因此，这是链表的 STL 实现的样子**：
 
 ```
 

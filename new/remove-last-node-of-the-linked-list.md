@@ -1,4 +1,4 @@
-# 删除链接列表
+# 删除链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-last-node-of-the-linked-list/](https://www.geeksforgeeks.org/remove-last-node-of-the-linked-list/)
 
@@ -38,7 +38,7 @@ is 67, so 67 is deleted.
 
     ```
 
-2.  创建一个额外的空间 *secondLast* ，并遍历链接列表，直到倒数第二个节点。
+2.  创建一个额外的空间 *secondLast* ，并遍历链表，直到倒数第二个节点。
 
     ```
     while *secondLast*.nextNode.nextNode != null 

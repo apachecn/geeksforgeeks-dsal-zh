@@ -1,4 +1,4 @@
-# 将链接列表划分为给定值，如果我们不在乎使列表的元素“稳定”，则
+# 将链表划分为给定值，如果我们不在乎使列表的元素“稳定”，则
 
 > 原文：[https://www.geeksforgeeks.org/partitioning-linked-list-around-given-value-dont-care-making-elements-list-stable/](https://www.geeksforgeeks.org/partitioning-linked-list-around-given-value-dont-care-making-elements-list-stable/)
 

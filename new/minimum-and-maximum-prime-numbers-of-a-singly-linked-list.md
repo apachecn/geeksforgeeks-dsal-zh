@@ -1,4 +1,4 @@
-# 单链接列表的最小和最大素数
+# 单链表的最小和最大素数
 
 > 原文：[https://www.geeksforgeeks.org/minimum-and-maximum-prime-numbers-of-a-singly-linked-list/](https://www.geeksforgeeks.org/minimum-and-maximum-prime-numbers-of-a-singly-linked-list/)
 

@@ -1,4 +1,4 @@
-# 在第二个链接列表
+# 在第二个链表
 
 > 原文：[https://www.geeksforgeeks.org/find-extra-node-in-the-second-linked-list/](https://www.geeksforgeeks.org/find-extra-node-in-the-second-linked-list/)
 

@@ -1,4 +1,4 @@
-# 重新排列链接列表，以便所有偶数和奇数定位的节点都在一起
+# 重新排列链表，以便所有偶数和奇数定位的节点都在一起
 
 > 原文：[https://www.geeksforgeeks.org/rearrange-a-linked-list-such-that-all-even-and-odd-positioned-nodes-are-together/](https://www.geeksforgeeks.org/rearrange-a-linked-list-such-that-all-even-and-odd-positioned-nodes-are-together/)
 
@@ -27,7 +27,7 @@ Output:  10->30->56->22->43->70
 
 5.  节点数为偶数的链表
 
-下面的程序将当前节点的两个指针“奇数”和“偶数”分别维持在奇数和偶数位置。 我们还存储偶数链接列表的第一个节点，以便在将所有奇数和偶数节点连接到两个不同的列表中之后，可以将偶数列表附加到奇数列表的末尾。
+下面的程序将当前节点的两个指针“奇数”和“偶数”分别维持在奇数和偶数位置。 我们还存储偶数链表的第一个节点，以便在将所有奇数和偶数节点连接到两个不同的列表中之后，可以将偶数列表附加到奇数列表的末尾。
 
 ## C++
 

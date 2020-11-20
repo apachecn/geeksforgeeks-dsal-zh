@@ -1,4 +1,4 @@
-# 以给定大小的组反向链接列表 | 系列 1
+# 以给定大小的组反向链表 | 系列 1
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)
 
@@ -14,7 +14,7 @@
 
 **算法**： *[反向](https://www.geeksforgeeks.org/reverse-a-linked-list/)（头，k）*
 
-*   反转大小为 k 的第一个子列表。 反转时，跟踪下一个节点和上一个节点。 令指向下一个节点的指针为，下一个，指向上一个节点的指针为 *prev* 。 有关反向链接列表的信息，请参见此帖子的[。](https://www.geeksforgeeks.org/reverse-a-linked-list/)
+*   反转大小为 k 的第一个子列表。 反转时，跟踪下一个节点和上一个节点。 令指向下一个节点的指针为，下一个，指向上一个节点的指针为 *prev* 。 有关反向链表的信息，请参见此帖子的[。](https://www.geeksforgeeks.org/reverse-a-linked-list/)
 
 *   *head- > next = reverse（next，k）*（递归调用其余列表并链接两个子列表）
 
@@ -544,7 +544,7 @@ Reversed list
 
 *   **辅助空间**：O（n / k）。
 
-    对于大小为 n 的每个链接列表，将在递归过程中进行 n / k 或（n / k）+1 调用。
+    对于大小为 n 的每个链表，将在递归过程中进行 n / k 或（n / k）+1 调用。
 
 如果您发现上述代码/算法有误，请写评论，或者找到其他解决相同问题的方法。
 

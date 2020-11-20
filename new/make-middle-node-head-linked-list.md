@@ -1,4 +1,4 @@
-# 将中间节点放在链接列表中
+# 将中间节点放在链表中
 
 > 原文：[https://www.geeksforgeeks.org/make-middle-node-head-linked-list/](https://www.geeksforgeeks.org/make-middle-node-head-linked-list/)
 

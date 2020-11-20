@@ -1,4 +1,4 @@
-# 循环链接列表
+# 循环链表
 
 > 原文：[https://www.geeksforgeeks.org/deletion-at-different-positions-in-a-circular-linked-list/](https://www.geeksforgeeks.org/deletion-at-different-positions-in-a-circular-linked-list/)
 
@@ -12,7 +12,7 @@
 
 *   在任何给定位置![i](img/2c0fdcc58b35808b7d0c28592907fe1a.png "Rendered by QuickLaTeX.com")。
 
-### **从单循环链接列表**中删除第一个节点
+### **从单循环链表**中删除第一个节点
 
 **范例**：
 
@@ -27,7 +27,7 @@ Output : 22->33->44->55->66
 
 ![CircularDeleteFirstNode](img/d41352d93497b4aa338dfef06494f11c.png)
 
-从循环链接列表中删除第一个节点
+从循环链表中删除第一个节点
 
 **方法**：
 
@@ -41,7 +41,7 @@ Output : 22->33->44->55->66
 
     *   头=上一个->下一个;
 
-**从单个循环链接列表**中删除第一个节点的功能：
+**从单个循环链表**中删除第一个节点的功能：
 
 ```
 
@@ -99,7 +99,7 @@ Output : 99->11->22->33->44
 
 ![CircularDeleteLastNode](img/79bc4e856621e1ad793d09d92a350986.png)
 
-从循环链接列表中删除最后一个节点
+从循环链表中删除最后一个节点
 
 **方法**：
 
@@ -152,7 +152,7 @@ void DeleteLast(struct Node** head)
 
 ```
 
-### **删除循环链接列表**中给定索引处的节点
+### **删除循环链表**中给定索引处的节点
 
 **范例**：
 

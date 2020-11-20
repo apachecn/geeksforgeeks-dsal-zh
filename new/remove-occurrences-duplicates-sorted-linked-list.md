@@ -1,4 +1,4 @@
-# 从排序的链接列表
+# 从排序的链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-occurrences-duplicates-sorted-linked-list/](https://www.geeksforgeeks.org/remove-occurrences-duplicates-sorted-linked-list/)
 
@@ -17,7 +17,7 @@ Output : empty List
 
 ```
 
-请注意，这不同于[从链接列表](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)中删除重复项
+请注意，这不同于[从链表](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)中删除重复项
 
 这个想法是要维护指向该节点的指针*（prev）*，该指针恰好在我们正在检查重复项的节点块之前。 在第一个示例中，当我们检查节点 28 的重复项时，指针 *prev* 将指向 23。一旦到达最后一个具有值 28 的重复节点（将其命名为*当前*指针） ，我们可以将上一个节点的下一个字段作为当前字段的下一个字段，并更新 *current = current.next* 。 这将删除具有重复项的值为 28 的节点块。
 

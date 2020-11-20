@@ -1,4 +1,4 @@
-# 用于在链接列表上进行冒泡排序的 C 程序
+# C 程序：在链表上进行冒泡排序
 
 > 原文：[https://www.geeksforgeeks.org/c-program-bubble-sort-linked-list/](https://www.geeksforgeeks.org/c-program-bubble-sort-linked-list/)
 

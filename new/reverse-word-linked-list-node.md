@@ -1,10 +1,10 @@
-# 反转链接列表节点
+# 反转链表节点
 
 > 原文：[https://www.geeksforgeeks.org/reverse-word-linked-list-node/](https://www.geeksforgeeks.org/reverse-word-linked-list-node/)
 
 中的每个单词
 
-给定一个字符串链接列表，我们需要反转给定链接列表中字符串的每个单词。
+给定一个字符串链表，我们需要反转给定链表中字符串的每个单词。
 
 例子：
 

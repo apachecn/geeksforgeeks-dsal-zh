@@ -1,4 +1,4 @@
-# 打印由给定索引指定的给定链接列表的子列表
+# 打印由给定索引指定的给定链表的子列表
 
 > 原文：[https://www.geeksforgeeks.org/print-sublist-of-a-given-linked-list-specified-by-given-indices/](https://www.geeksforgeeks.org/print-sublist-of-a-given-linked-list-specified-by-given-indices/)
 

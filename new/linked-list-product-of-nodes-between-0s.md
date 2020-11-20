@@ -1,8 +1,8 @@
-# 节点之间的链接列表乘积为 0
+# 节点之间的链表乘积为 0
 
 > 原文：[https://www.geeksforgeeks.org/linked-list-product-of-nodes-between-0s/](https://www.geeksforgeeks.org/linked-list-product-of-nodes-between-0s/)
 
-给定一个链表，其中包含一系列用“ 0”分隔的数字。 生产它们并就地存储在链接列表中。
+给定一个链表，其中包含一系列用“ 0”分隔的数字。 生产它们并就地存储在链表中。
 
 **注意**：输入中不会存在连续的零。
 

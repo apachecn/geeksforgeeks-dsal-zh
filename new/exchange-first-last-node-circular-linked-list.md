@@ -1,4 +1,4 @@
-# 交换循环链接列表
+# 交换循环链表
 
 > 原文：[https://www.geeksforgeeks.org/exchange-first-last-node-circular-linked-list/](https://www.geeksforgeeks.org/exchange-first-last-node-circular-linked-list/)
 

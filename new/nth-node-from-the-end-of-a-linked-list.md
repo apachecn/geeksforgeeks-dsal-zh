@@ -1,4 +1,4 @@
-# 从链接列表
+# 从链表
 
 > 原文：[https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)
 
@@ -14,7 +14,7 @@
 
 1.  计算链表的长度。 让长度为 len。
 
-2.  从链接列表的开头打印第（len – n + 1）个节点。
+2.  从链表的开头打印第（len – n + 1）个节点。
 
 **双指针概念**：第一个指针用于存储变量的地址，第二个指针用于存储第一个指针的地址。 如果希望通过函数更改变量的值，则将指针传递给它。 并且，如果我们希望改变指针的值（即，它应该开始指向其他东西），则将指针传递给指针。
 

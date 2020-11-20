@@ -21,13 +21,13 @@ Explanation: The output list is in sorted order.
 
  **以下文章中讨论了不同的解决方案。**
 
-[合并两个排序的链接列表](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)
+[合并两个排序的链表](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)
 
  **方法 1（递归）
 
 **方法**：如果对链表进行排序，则可以形成递归解决方案。
 
-1.  比较两个链接列表的标题。
+1.  比较两个链表的标题。
 
 2.  在两个头节点中找到较小的节点。 当前元素将是两个头节点中的较小节点。
 

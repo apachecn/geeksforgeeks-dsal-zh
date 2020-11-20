@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)
 
-我们在[先前的文章](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)中介绍了链接列表。 我们还创建了一个具有 3 个节点的简单链表，并讨论了链表遍历。
+我们在[先前的文章](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)中介绍了链表。 我们还创建了一个具有 3 个节点的简单链表，并讨论了链表遍历。
 
 本文中讨论的所有程序均考虑以下链表的表示形式。
 
@@ -97,11 +97,11 @@ public class Node
 
 **2）**在给定节点之后。
 
-**3）**在链接列表的末尾。
+**3）**在链表的末尾。
 
 **在最前面添加一个节点：（4 个步骤）**
 
-新节点总是添加在给定链接列表的开头之前。 新添加的节点成为链接列表的新头。 例如，如果给定的链接列表为 10- > 15- > 20- > 25，而我们在前面添加了项目 5，则链接列表将变为 5- > 10- > 15 -> 20- > 25.让我们调用添加到列表前面的函数 push（）。 push（）必须接收一个指向 head 指针的指针，因为 push 必须将 head 指针更改为指向新节点（请参见[此](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）。
+新节点总是添加在给定链表的开头之前。 新添加的节点成为链表的新头。 例如，如果给定的链表为 10- > 15- > 20- > 25，而我们在前面添加了项目 5，则链表将变为 5- > 10- > 15 -> 20- > 25.让我们调用添加到列表前面的函数 push（）。 push（）必须接收一个指向 head 指针的指针，因为 push 必须将 head 指针更改为指向新节点（请参见[此](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）。
 
 ![linkedlist_insert_at_start](img/0fcc552ce260975b170428e6877939dc.png)
 
@@ -382,9 +382,9 @@ insertAfter（）的时间复杂度为`O(1)`，因为它的工作量是恒定的
 
 **在最后添加一个节点：（6 个步骤的过程）**
 
-新节点总是添加在给定链接列表的最后一个节点之后。 例如，如果给定的链接列表为 5- > 10- > 15- > 20- > 25，并且我们在末尾添加了项目 30，则链接列表将变为 5- > 10 -> 15- > 20- > 25- >30。
+新节点总是添加在给定链表的最后一个节点之后。 例如，如果给定的链表为 5- > 10- > 15- > 20- > 25，并且我们在末尾添加了项目 30，则链表将变为 5- > 10 -> 15- > 20- > 25- >30。
 
-由于链接列表通常由其开头表示，因此我们必须遍历该列表直到结尾，然后更改下一个 最后一个节点到新节点的数量。
+由于链表通常由其开头表示，因此我们必须遍历该列表直到结尾，然后更改下一个 最后一个节点到新节点的数量。
 
 ![linkedlist_insert_last](img/428a5c975bfca4a1c08bc29cf2a6e78a.png)
 

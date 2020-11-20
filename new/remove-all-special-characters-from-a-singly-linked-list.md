@@ -1,4 +1,4 @@
-# 从单个链接列表
+# 从单个链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-all-special-characters-from-a-singly-linked-list/](https://www.geeksforgeeks.org/remove-all-special-characters-from-a-singly-linked-list/)
 

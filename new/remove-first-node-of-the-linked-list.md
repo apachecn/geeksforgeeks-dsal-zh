@@ -1,4 +1,4 @@
-# 删除链接列表
+# 删除链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-first-node-of-the-linked-list/](https://www.geeksforgeeks.org/remove-first-node-of-the-linked-list/)
 

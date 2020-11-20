@@ -1,4 +1,4 @@
-# 在链接列表中排列辅音和元音节点
+# 在链表中排列辅音和元音节点
 
 > 原文：[https://www.geeksforgeeks.org/arrange-consonants-vowels-nodes-linked-list/](https://www.geeksforgeeks.org/arrange-consonants-vowels-nodes-linked-list/)
 

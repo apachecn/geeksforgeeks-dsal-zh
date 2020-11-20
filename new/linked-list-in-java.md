@@ -6,7 +6,7 @@
 
 链表是 [java.util 包](https://www.geeksforgeeks.org/java-util-package-java/)中[集合框架](https://www.geeksforgeeks.org/collections-in-java-2/)的一部分。 此类是 [LinkedList 数据结构](https://www.geeksforgeeks.org/data-structures/linked-list/)的实现，该结构是一种线性数据结构，其中元素未存储在连续位置，并且每个元素都是具有数据部分和地址部分的单独对象。 元素使用指针和地址链接。 每个元素称为一个节点。 由于动态性以及插入和删除的简便性，它们比数组更可取。 它还有一些缺点，例如无法直接访问节点，而我们需要从头开始并通过链接到达要访问的节点。
 
-**示例**：以下实现演示了如何创建和使用链接列表。
+**示例**：以下实现演示了如何创建和使用链表。
 
 ```
 

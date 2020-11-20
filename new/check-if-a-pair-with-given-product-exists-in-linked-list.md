@@ -1,4 +1,4 @@
-# 检查链接列表
+# 检查链表
 
 > 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-product-exists-in-linked-list/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-product-exists-in-linked-list/)
 

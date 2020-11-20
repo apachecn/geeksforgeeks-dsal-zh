@@ -1,4 +1,4 @@
-# 可被 K 整除的循环单链接列表的节点的总和和
+# 可被 K 整除的循环单链表的节点的总和和
 
 > 原文：[https://www.geeksforgeeks.org/sum-and-product-of-the-nodes-of-a-circular-singly-linked-list-which-are-divisible-by-k/](https://www.geeksforgeeks.org/sum-and-product-of-the-nodes-of-a-circular-singly-linked-list-which-are-divisible-by-k/)
 

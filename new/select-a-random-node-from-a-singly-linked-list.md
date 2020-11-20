@@ -1,4 +1,4 @@
-# 从单链接列表中选择一个随机节点
+# 从单链表中选择一个随机节点
 
 > 原文：[https://www.geeksforgeeks.org/select-a-random-node-from-a-singly-linked-list/](https://www.geeksforgeeks.org/select-a-random-node-from-a-singly-linked-list/)
 
@@ -23,7 +23,7 @@ i = 2, probability of selecting second node =
 
 同样，其他选择其他节点的概率为 1 / N
 
-上述解决方案需要两次遍历链接列表。
+上述解决方案需要两次遍历链表。
 
 **如何选择只允许一个遍历的随机节点？**
 

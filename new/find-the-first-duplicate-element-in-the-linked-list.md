@@ -1,4 +1,4 @@
-# 在链接列表
+# 在链表
 
 > 原文：[https://www.geeksforgeeks.org/find-the-first-duplicate-element-in-the-linked-list/](https://www.geeksforgeeks.org/find-the-first-duplicate-element-in-the-linked-list/)
 
@@ -10,7 +10,7 @@
 
 > **输入**：1 2 3 4 3 2 1
 > **输出**：1
-> 在此链接列表中，元素 1 出现两次
+> 在此链表中，元素 1 出现两次
 > ，它是第一个元素 满足条件。
 > 答案为 1。
 > **输入**：1 2、3、4、5
@@ -19,7 +19,7 @@
 
 **方法**：
 
-*   使用地图计算链接列表中所有元素的出现频率。
+*   使用地图计算链表中所有元素的出现频率。
 
 *   现在，再次遍历链表，从左侧查找第一个元素，其频率大于 1。
 

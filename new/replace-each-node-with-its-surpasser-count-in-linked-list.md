@@ -1,4 +1,4 @@
-# 用链接列表
+# 用链表
 
 > 原文：[https://www.geeksforgeeks.org/replace-each-node-with-its-surpasser-count-in-linked-list/](https://www.geeksforgeeks.org/replace-each-node-with-its-surpasser-count-in-linked-list/)
 

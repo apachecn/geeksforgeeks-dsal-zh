@@ -1,4 +1,4 @@
-# 从双向单循环链接列表
+# 从双向单循环链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-all-even-parity-nodes-from-a-doubly-and-circular-singly-linked-list/](https://www.geeksforgeeks.org/remove-all-even-parity-nodes-from-a-doubly-and-circular-singly-linked-list/)
 
@@ -24,7 +24,7 @@
 > **输入**：DLL = 18 < = > 15 < = > 8 < = > 9 < = > 14
 > **输出 **：8 < = > 14
 > **说明**：
-> 链接列表包含：
+> 链表包含：
 > 18-> 10010，奇偶校验= 2
 > 15- > 1111，奇偶校验= 4
 > 8-> 1000，奇偶校验= 1
@@ -209,7 +209,7 @@ int main()
 
 ```
 
-### 循环单链接列表
+### 循环单链表
 
 下面是上述方法的实现：
 

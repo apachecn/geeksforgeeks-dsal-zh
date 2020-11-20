@@ -1,4 +1,4 @@
-# 在圆形双链接列表
+# 在圆形双链表
 
 > 原文：[https://www.geeksforgeeks.org/insertion-at-specific-position-in-a-circular-doubly-linked-list/](https://www.geeksforgeeks.org/insertion-at-specific-position-in-a-circular-doubly-linked-list/)
 

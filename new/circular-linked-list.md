@@ -1,4 +1,4 @@
-# 循环链接列表| 第 1 组（简介和应用）
+# 循环链表| 第 1 组（简介和应用）
 
 > 原文：[https://www.geeksforgeeks.org/circular-linked-list/](https://www.geeksforgeeks.org/circular-linked-list/)
 
@@ -26,7 +26,7 @@
 
 [**通报链表| 第 2 组（遍历）**](https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/)
 
-[**循环单链接列表| 插入**](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)
+[**循环单链表| 插入**](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)
 
 如果您发现上述代码/算法中的任何错误，或找到其他解决相同问题的方法，请发表评论
 

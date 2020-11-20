@@ -4,9 +4,9 @@
 
 我们强烈建议将以下帖子作为该帖子的先决条件。
 
-[链接列表简介](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)
+[链表简介](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)
 
-[在单链接列表](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)中插入节点
+[在单链表](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)中插入节点
 
 **D** 整体 **L** 着墨 **L** ist（DLL）包含一个额外的指针，通常称为*前一个指针*，以及下一个指针和数据 在单链列表中。
 
@@ -94,7 +94,7 @@ class Node:
 
 **1）在前面添加一个节点：（一个 5 个步骤的过程）**
 
-新节点总是添加在给定链接列表的开头之前。 新添加的节点成为 DLL 的新负责人。 例如，如果给定的链接列表为 10152025，并且我们在前面添加了项 5，则链接列表将变为 510152025。让我们将添加到列表前面的函数称为 push（）。 push（）必须接收一个指向 head 指针的指针，因为 push 必须将 head 指针更改为指向新节点（请参见[此](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）
+新节点总是添加在给定链表的开头之前。 新添加的节点成为 DLL 的新负责人。 例如，如果给定的链表为 10152025，并且我们在前面添加了项 5，则链表将变为 510152025。让我们将添加到列表前面的函数称为 push（）。 push（）必须接收一个指向 head 指针的指针，因为 push 必须将 head 指针更改为指向新节点（请参见[此](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）
 
 ![dll_add_front](img/dab559af89903b5bc676844fb02d24d2.png)
 
@@ -293,9 +293,9 @@ def insertAfter(self, prev_node, new_data):
 
 **3）在最后添加一个节点：（7 个步骤的过程）**
 
-新节点总是添加在给定链接列表的最后一个节点之后。 例如，如果给定的 DLL 是 510152025，而我们在末尾添加了第 30 个项目，则 DLL 变为 51015202530。
+新节点总是添加在给定链表的最后一个节点之后。 例如，如果给定的 DLL 是 510152025，而我们在末尾添加了第 30 个项目，则 DLL 变为 51015202530。
 
-由于链接列表通常由其开头表示，因此我们必须遍历该列表直到结尾，然后 将最后一个节点的下一个更改为新节点。
+由于链表通常由其开头表示，因此我们必须遍历该列表直到结尾，然后 将最后一个节点的下一个更改为新节点。
 
 ![dll_add_end](img/9f08d4d15c29abf81080ea4f62c04e0d.png)
 
@@ -1351,7 +1351,7 @@ Traversal in reverse direction
  4  6  8  7  1
 ```
 
-另请参阅：[在双链接列表](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
+另请参阅：[在双链表](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
 
 中删除节点。如果发现任何错误，或者要共享有关上述主题的更多信息，请发表评论。
 

@@ -1,4 +1,4 @@
-# 从双向链接列表
+# 从双向链表
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-doubly-linked-list/](https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-doubly-linked-list/)
 

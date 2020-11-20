@@ -1,4 +1,4 @@
-# 单链接列表
+# 单链表
 
 > 原文：[https://www.geeksforgeeks.org/product-of-the-nodes-of-a-singly-linked-list/](https://www.geeksforgeeks.org/product-of-the-nodes-of-a-singly-linked-list/)
 
@@ -20,7 +20,7 @@ Output : Product = 10395
 
 **算法**：
 
-1.  使用链接列表的开头初始化指针 ptr，并使用 1 初始化产品变量。
+1.  使用链表的开头初始化指针 ptr，并使用 1 初始化产品变量。
 
 2.  使用循环开始遍历链表，直到遍历所有节点。
 

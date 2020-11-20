@@ -1,4 +1,4 @@
-# 删除左侧具有较大值的链接列表节点
+# 删除左侧具有较大值的链表节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-linked-list-nodes-which-have-a-greater-value-on-left-side/](https://www.geeksforgeeks.org/delete-linked-list-nodes-which-have-a-greater-value-on-left-side/)
 

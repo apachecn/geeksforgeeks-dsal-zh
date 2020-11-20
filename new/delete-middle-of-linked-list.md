@@ -1,4 +1,4 @@
-# 删除链接列表的中间部分
+# 删除链表的中间部分
 
 > 原文：[https://www.geeksforgeeks.org/delete-middle-of-linked-list/](https://www.geeksforgeeks.org/delete-middle-of-linked-list/)
 
@@ -10,7 +10,7 @@
 
 如果输入的链表有 1 个节点，则应删除该节点并返回新的头。
 
-**简单解决方案**：这个想法是先计算链接列表中的节点数，然后使用简单的删除过程删除第 n / 2 个节点。
+**简单解决方案**：这个想法是先计算链表中的节点数，然后使用简单的删除过程删除第 n / 2 个节点。
 
 ```
 
@@ -121,7 +121,7 @@ Linked List after deletion of middle
 
 *   **时间复杂度**：`O(n)`。
 
-    只需遍历链接列表
+    只需遍历链表
 
 *   **辅助空间**：`O(1)`。
 
@@ -515,7 +515,7 @@ Linked List after deletion of middle
 
 *   **时间复杂度**：`O(n)`。
 
-    只需遍历链接列表
+    只需遍历链表
 
 *   **辅助空间**：`O(1)`。
 

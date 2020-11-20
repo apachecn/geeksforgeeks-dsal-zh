@@ -1,4 +1,4 @@
-# 广义链接列表
+# 广义链表
 
 > 原文：[https://www.geeksforgeeks.org/generalized-linked-list/](https://www.geeksforgeeks.org/generalized-linked-list/)
 

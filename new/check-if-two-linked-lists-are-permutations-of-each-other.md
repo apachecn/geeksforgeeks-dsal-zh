@@ -1,8 +1,8 @@
-# 检查两个链接列表是否彼此置换
+# 检查两个链表是否彼此置换
 
 > 原文：[https://www.geeksforgeeks.org/check-if-two-linked-lists-are-permutations-of-each-other/](https://www.geeksforgeeks.org/check-if-two-linked-lists-are-permutations-of-each-other/)
 
-给定两个单独链接的整数数据列表。 任务是编写一个程序，该程序可以有效地检查两个链接列表是否相互置换。
+给定两个单独链接的整数数据列表。 任务是编写一个程序，该程序可以有效地检查两个链表是否相互置换。
 
 **范例**：
 
@@ -19,7 +19,7 @@ Output: No
 
 **方法**：对两个链表执行以下操作：
 
-1.  以一个临时节点指向链接列表的开头。
+1.  以一个临时节点指向链表的开头。
 
 2.  开始遍历链表，并保留节点数据的总和和乘法。
 

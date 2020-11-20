@@ -4,7 +4,7 @@
 
 中存在的所有完美数字的总和
 
-给定[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)包含 **N** 个正整数，任务是从列表中查找所有[完美数](https://www.geeksforgeeks.org/perfect-number/)的和。
+给定[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)包含 **N** 个正整数，任务是从列表中查找所有[完美数](https://www.geeksforgeeks.org/perfect-number/)的和。
 
 > 如果数字等于其适当除数的总和，即其正除数的总和（不包括数字本身），则该数字是完美的。
 

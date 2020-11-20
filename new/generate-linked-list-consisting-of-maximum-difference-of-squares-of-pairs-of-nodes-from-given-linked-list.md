@@ -1,4 +1,4 @@
-# 生成链接列表，该列表由给定链接列表
+# 生成链表，该列表由给定链表
 
 > 原文：[https://www.geeksforgeeks.org/generate-linked-list-consisting-of-maximum-difference-of-squares-of-pairs-of-nodes-from-given-linked-list/](https://www.geeksforgeeks.org/generate-linked-list-consisting-of-maximum-difference-of-squares-of-pairs-of-nodes-from-given-linked-list/)
 
@@ -31,7 +31,7 @@
 
 *   **对**的双端队列进行排序，以在恒定时间内获得最大的节点值和最小的节点值。
 
-*   创建另一个**链接列表**，其值**分别与双端队列的后面和前面的平方和**的平方和之差最大。
+*   创建另一个**链表**，其值**分别与双端队列的后面和前面的平方和**的平方和之差最大。
 
 *   在每次迭代[之后，从双端队列弹出](https://www.geeksforgeeks.org/dequepop_front-dequepop_back-c-stl/)最小值和最大值。
 

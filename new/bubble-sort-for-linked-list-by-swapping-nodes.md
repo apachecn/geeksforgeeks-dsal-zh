@@ -1,4 +1,4 @@
-# 通过交换节点对链接列表进行冒泡排序
+# 通过交换节点对链表进行冒泡排序
 
 > 原文：[https://www.geeksforgeeks.org/bubble-sort-for-linked-list-by-swapping-nodes/](https://www.geeksforgeeks.org/bubble-sort-for-linked-list-by-swapping-nodes/)
 
@@ -20,9 +20,9 @@ Output: 3->4->20
 
 **方法**：
 
-1.  获取要排序的链接列表
+1.  获取要排序的链表
 
-2.  将[冒泡排序](http://www.geeksforgeeks.org/bubble-sort/)应用于此[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)，其中，在比较两个相邻节点时，将交换实际节点，而不仅仅是交换数据。
+2.  将[冒泡排序](http://www.geeksforgeeks.org/bubble-sort/)应用于此[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，其中，在比较两个相邻节点时，将交换实际节点，而不仅仅是交换数据。
 
 3.  打印排序列表
 

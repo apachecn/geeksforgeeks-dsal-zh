@@ -1,10 +1,10 @@
-# 将第一个元素移到给定链接列表
+# 将第一个元素移到给定链表
 
 > 原文：[https://www.geeksforgeeks.org/move-first-element-to-end-of-a-given-linked-list/](https://www.geeksforgeeks.org/move-first-element-to-end-of-a-given-linked-list/)
 
 的末尾
 
-编写一个 C 函数，该函数将第一个元素移到给定的单链列表中。 例如，如果给定的链接列表为 1-> 2-> 3-> 4-> 5，则该函数应将列表更改为 2-> 3-> 4-> 5-> 1。
+编写一个 C 函数，该函数将第一个元素移到给定的单链列表中。 例如，如果给定的链表为 1-> 2-> 3-> 4-> 5，则该函数应将列表更改为 2-> 3-> 4-> 5-> 1。
 
 算法：
 
@@ -407,7 +407,7 @@ Linked list before moving first to end
 
 ```
 
-**时间复杂度**：`O(n)`，其中 n 是给定链接列表中的节点数。
+**时间复杂度**：`O(n)`，其中 n 是给定链表中的节点数。
 
 
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/modify-rearrange-list/](https://www.geeksforgeeks.org/modify-rearrange-list/)
 
-给定一个单链表，其中包含一些正数（有效数）和零（无效数）。 转换链接列表的方式是，如果下一个有效数字与当前数字相同，则将其值加倍并将下一个数字替换为 0。修改后，重新排列链接列表，以使所有 0 都移到末尾。
+给定一个单链表，其中包含一些正数（有效数）和零（无效数）。 转换链表的方式是，如果下一个有效数字与当前数字相同，则将其值加倍并将下一个数字替换为 0。修改后，重新排列链表，以使所有 0 都移到末尾。
 
 **示例**：
 
@@ -33,7 +33,7 @@ Output : 4->2->12->8->0->0->0->0->0->0
 
 ```
 
-修改列表后，隔离有效（非零）和无效（零）元素。 它与[隔离链接列表](https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/)中的偶数和奇数节点相同。
+修改列表后，隔离有效（非零）和无效（零）元素。 它与[隔离链表](https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/)中的偶数和奇数节点相同。
 
 ## C++
 

@@ -1,10 +1,10 @@
-# 单链接列表
+# 单链表
 
 > 原文：[https://www.geeksforgeeks.org/quicksort-on-singly-linked-list/](https://www.geeksforgeeks.org/quicksort-on-singly-linked-list/)
 
 上的快速排序
 
-[双链表](https://www.geeksforgeeks.org/quicksort-for-linked-list/)上的 QuickSort 在此处进行了讨论。 练习了单链接列表上的 QuickSort。 以下是相同的 C++实现。 关于实现的重要事项是，它更改指针而不是交换数据，并且时间复杂度与“双链表”的实现相同。
+[双链表](https://www.geeksforgeeks.org/quicksort-for-linked-list/)上的 QuickSort 在此处进行了讨论。 练习了单链表上的 QuickSort。 以下是相同的 C++实现。 关于实现的重要事项是，它更改指针而不是交换数据，并且时间复杂度与“双链表”的实现相同。
 
 ![sorting image](img/cc3d3ac699ac03f5792746b3e3e54865.png)
 

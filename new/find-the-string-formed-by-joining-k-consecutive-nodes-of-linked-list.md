@@ -1,4 +1,4 @@
-# 查找通过链接链接列表
+# 查找通过链接链表
 
 > 原文：[https://www.geeksforgeeks.org/find-the-string-formed-by-joining-k-consecutive-nodes-of-linked-list/](https://www.geeksforgeeks.org/find-the-string-formed-by-joining-k-consecutive-nodes-of-linked-list/)
 

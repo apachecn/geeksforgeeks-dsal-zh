@@ -18,7 +18,7 @@
 
 **方法**：
 
-1.创建一个双向链接列表，其中包含字段 info（保存节点的信息），优先级（保存节点的优先级），prev（指向上一个节点），next（ 指向下一个节点）。
+1.创建一个双向链表，其中包含字段 info（保存节点的信息），优先级（保存节点的优先级），prev（指向上一个节点），next（ 指向下一个节点）。
 
 2.在节点中插入元素和优先级。
 
@@ -388,7 +388,7 @@ public static void Main(string[] args)
 
 **相关文章**：
 
-[使用单链接列表](https://www.geeksforgeeks.org/priority-queue-using-linked-list/)的优先级队列
+[使用单链表](https://www.geeksforgeeks.org/priority-queue-using-linked-list/)的优先级队列
 
 **时间复杂度以及与[二元堆](https://www.geeksforgeeks.org/binary-heap/)**：的比较
 

@@ -1,4 +1,4 @@
-# 在排序的链接列表中查找中位数
+# 在排序的链表中查找中位数
 
 > 原文：[https://www.geeksforgeeks.org/finding-median-in-a-sorted-linked-list/](https://www.geeksforgeeks.org/finding-median-in-a-sorted-linked-list/)
 
@@ -29,11 +29,11 @@ Output : 3.5
 
 **简单方法**
 
-1.  遍历链接列表并计算所有元素。
+1.  遍历链表并计算所有元素。
 
-2.  如果 count 是奇数，则再次遍历链接列表并找到第 n / 2 个元素。
+2.  如果 count 是奇数，则再次遍历链表并找到第 n / 2 个元素。
 
-3.  如果 count 是偶数，则再次遍历链接列表并找到：
+3.  如果 count 是偶数，则再次遍历链表并找到：
 
     （第 n / 2 个元素+第（n / 2 + 1）个元素）/ 2
 
@@ -45,7 +45,7 @@ Output : 3.5
 
 1.  如果 *fast_ptr* 不为 NULL，则意味着链表包含奇数元素，我们仅打印 *slow_ptr* 的数据。
 
-2.  否则，如果 *fast_ptr* 达到 NULL，则意味着链接列表包含偶数元素，我们创建了 *slow_ptr* 的前一个节点的备份并打印（lower_ptr + slow_ptr- >数据的前一个节点）/ 2
+2.  否则，如果 *fast_ptr* 达到 NULL，则意味着链表包含偶数元素，我们创建了 *slow_ptr* 的前一个节点的备份并打印（lower_ptr + slow_ptr- >数据的前一个节点）/ 2
 
 下面是上述方法的实现：
 

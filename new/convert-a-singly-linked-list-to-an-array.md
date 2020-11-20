@@ -1,4 +1,4 @@
-# 将单链接列表转换为数组
+# 将单链表转换为数组
 
 > 原文：[https://www.geeksforgeeks.org/convert-a-singly-linked-list-to-an-array/](https://www.geeksforgeeks.org/convert-a-singly-linked-list-to-an-array/)
 
@@ -12,7 +12,7 @@
 > **输入**：列表= 10-> 20-> 30-> 40-> 50->空
 > **输出**：10 20 30 40 50
 
-**方法**：在此文章的[中讨论了一种从给定数组创建链接列表的方法。 在这里，将讨论一种将给定的链表转换为数组的方法。](https://www.geeksforgeeks.org/create-linked-list-from-a-given-array/)
+**方法**：在此文章的[中讨论了一种从给定数组创建链表的方法。 在这里，将讨论一种将给定的链表转换为数组的方法。](https://www.geeksforgeeks.org/create-linked-list-from-a-given-array/)
 
 *   找到给定链表的长度，例如 **len** 。
 

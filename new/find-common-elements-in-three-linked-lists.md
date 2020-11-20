@@ -1,4 +1,4 @@
-# 在三个链接列表中查找公共元素
+# 在三个链表中查找公共元素
 
 > 原文：[https://www.geeksforgeeks.org/find-common-elements-in-three-linked-lists/](https://www.geeksforgeeks.org/find-common-elements-in-three-linked-lists/)
 
@@ -35,7 +35,7 @@ Output : 1 2 4
 
 1.  使用合并排序对第一个链表进行排序。 此步骤需要 O（mLogm）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
-2.  使用合并排序对第二个链接列表进行排序。 此步骤需要 O（nLogn）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
+2.  使用合并排序对第二个链表进行排序。 此步骤需要 O（nLogn）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
 3.  使用合并排序对第三个链表进行排序。 此步骤需要 O（pLogp）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 

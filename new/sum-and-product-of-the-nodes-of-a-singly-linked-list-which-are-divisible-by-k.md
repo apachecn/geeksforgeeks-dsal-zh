@@ -1,4 +1,4 @@
-# 可被 K 整除的单个链接列表的节点的总和和
+# 可被 K 整除的单个链表的节点的总和和
 
 > 原文：[https://www.geeksforgeeks.org/sum-and-product-of-the-nodes-of-a-singly-linked-list-which-are-divisible-by-k/](https://www.geeksforgeeks.org/sum-and-product-of-the-nodes-of-a-singly-linked-list-which-are-divisible-by-k/)
 
@@ -20,7 +20,7 @@ Output : Product = 75, Sum = 20
 
 **算法**：
 
-1.  用链接列表的开头初始化指针 **ptr** ，将**乘积**变量初始化为 1，将**和**变量初始化为 0。
+1.  用链表的开头初始化指针 **ptr** ，将**乘积**变量初始化为 1，将**和**变量初始化为 0。
 
 2.  使用循环开始遍历链表，直到遍历所有节点。
 
@@ -30,7 +30,7 @@ Output : Product = 75, Sum = 20
 
     *   如果当前节点可被 k 整除，则将当前节点的值加到总和上。
 
-4.  增加指向链接列表下一个节点的指针，即 ptr = ptr-> next。
+4.  增加指向链表下一个节点的指针，即 ptr = ptr-> next。
 
 5.  重复上述步骤，直到到达链表的末尾。
 

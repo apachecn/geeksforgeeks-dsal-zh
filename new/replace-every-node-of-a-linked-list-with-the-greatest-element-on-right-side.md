@@ -1,4 +1,4 @@
-# 将链接列表的每个节点替换为右侧的最大元素
+# 将链表的每个节点替换为右侧的最大元素
 
 > 原文：[https://www.geeksforgeeks.org/replace-every-node-of-a-linked-list-with-the-greatest-element-on-right-side/](https://www.geeksforgeeks.org/replace-every-node-of-a-linked-list-with-the-greatest-element-on-right-side/)
 

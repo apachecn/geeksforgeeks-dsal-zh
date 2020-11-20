@@ -1,4 +1,4 @@
-# 程序，用于查找链接列表
+# 程序，用于查找链表
 
 > 原文：[https://www.geeksforgeeks.org/program-to-find-average-of-all-nodes-in-a-linked-list/](https://www.geeksforgeeks.org/program-to-find-average-of-all-nodes-in-a-linked-list/)
 
@@ -21,13 +21,13 @@ Output: 6
 
 **迭代解决方案**：
 
-1.  用链接列表的开头初始化一个指针 ptr，并将 sum 变量初始化为 0。
+1.  用链表的开头初始化一个指针 ptr，并将 sum 变量初始化为 0。
 
 2.  使用循环开始遍历链表，直到遍历所有节点。
 
 3.  将当前节点的值添加到总和，即总和+ = ptr-> data。
 
-4.  增加指向链接列表下一个节点的指针，即 ptr = ptr-> next。
+4.  增加指向链表下一个节点的指针，即 ptr = ptr-> next。
 
 5.  将总和除以节点总数，然后返回平均值。
 

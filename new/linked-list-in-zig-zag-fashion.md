@@ -1,4 +1,4 @@
-# 以 Zig-Zag 格式重新排列链接列表
+# 以 Zig-Zag 格式重新排列链表
 
 > 原文：[https://www.geeksforgeeks.org/linked-list-in-zig-zag-fashion/](https://www.geeksforgeeks.org/linked-list-in-zig-zag-fashion/)
 

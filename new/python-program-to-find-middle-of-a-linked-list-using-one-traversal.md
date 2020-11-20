@@ -1,4 +1,4 @@
-# Python 程序使用一次遍历来查找链接列表的中间
+# Python 程序使用一次遍历来查找链表的中间
 
 > 原文：[https://www.geeksforgeeks.org/python-program-to-find-middle-of-a-linked-list-using-one-traversal/](https://www.geeksforgeeks.org/python-program-to-find-middle-of-a-linked-list-using-one-traversal/)
 

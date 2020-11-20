@@ -1,4 +1,4 @@
-# 以相反的顺序打印链接列表的最后 k 个节点| 迭代方法
+# 以相反的顺序打印链表的最后 k 个节点| 迭代方法
 
 > 原文：[https://www.geeksforgeeks.org/print-the-last-k-nodes-of-the-linked-list-in-reverse-order-iterative-approaches/](https://www.geeksforgeeks.org/print-the-last-k-nodes-of-the-linked-list-in-reverse-order-iterative-approaches/)
 
@@ -724,11 +724,11 @@ public static void Main(String[] args)
 
 **方法 2**：
 
-*   计算链接列表中的节点数。
+*   计算链表中的节点数。
 
 *   声明一个数组，并以节点数作为其大小。
 
-*   从数组末尾开始存储链接列表的节点值，即反向存储。
+*   从数组末尾开始存储链表的节点值，即反向存储。
 
 *   从数组开始打印 k 个值。
 
@@ -964,7 +964,7 @@ public static void Main(String[] args) 
 
 **辅助空间**：`O(n)`
 
-**方法 3**：的想法是首先迭代地反向链接列表，如以下文章所述：[反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)。 反转后，打印反转列表的前 k 个节点。 打印后，通过再次反转列表来恢复列表。
+**方法 3**：的想法是首先迭代地反向链表，如以下文章所述：[反向链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)。 反转后，打印反转列表的前 k 个节点。 打印后，通过再次反转列表来恢复列表。
 
 下面是上述方法的实现：
 

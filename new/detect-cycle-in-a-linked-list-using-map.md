@@ -2,29 +2,29 @@
 
 > 原文：[https://www.geeksforgeeks.org/detect-cycle-in-a-linked-list-using-map/](https://www.geeksforgeeks.org/detect-cycle-in-a-linked-list-using-map/)
 
-检测链接列表中的周期
+检测链表中的周期
 
-给定[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)，检查链接列表是否具有循环。
+给定[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，检查链表是否具有循环。
 
-这里显示了各种方法：[链接列表](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)中的检测周期
+这里显示了各种方法：[链表](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)中的检测周期
 
 **范例**
 
 > **输入**：20- > 4- > 54- > 6- >空
 > **输出**：未检测到循环。
 > **说明**：
-> 在遍历链接列表时，我们到达了链接列表的末尾。 因此，链表中没有循环。
+> 在遍历链表时，我们到达了链表的末尾。 因此，链表中没有循环。
 > 
 > **输入**：20- > 4- > 5- > 10- > 20
 > **输出**：检测到环路。
 > **说明**：
-> 在遍历链接列表时，我们到达值为 10 的节点与表示链接列表中循环的头节点链接。 因此，循环出现在链表中。
+> 在遍历链表时，我们到达值为 10 的节点与表示链表中循环的头节点链接。 因此，循环出现在链表中。
 
 **方法**：
 
-1.  创建一个[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，它将被访问的节点存储在[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)中。
+1.  创建一个[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)，它将被访问的节点存储在[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中。
 
-2.  遍历[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)并执行以下操作：
+2.  遍历[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)并执行以下操作：
 
     *   检查地图中是否存在当前节点。
 

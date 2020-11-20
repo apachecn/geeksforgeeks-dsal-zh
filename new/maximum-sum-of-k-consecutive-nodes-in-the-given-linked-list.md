@@ -1,4 +1,4 @@
-# 给定链接列表
+# 给定链表
 
 > 原文：[https://www.geeksforgeeks.org/maximum-sum-of-k-consecutive-nodes-in-the-given-linked-list/](https://www.geeksforgeeks.org/maximum-sum-of-k-consecutive-nodes-in-the-given-linked-list/)
 

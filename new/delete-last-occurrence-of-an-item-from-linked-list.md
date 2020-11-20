@@ -1,4 +1,4 @@
-# 从链接列表
+# 从链表
 
 > 原文：[https://www.geeksforgeeks.org/delete-last-occurrence-of-an-item-from-linked-list/](https://www.geeksforgeeks.org/delete-last-occurrence-of-an-item-from-linked-list/)
 

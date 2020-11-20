@@ -1,4 +1,4 @@
-# 打印链接列表的备用节点（迭代方法）
+# 打印链表的备用节点（迭代方法）
 
 > 原文：[https://www.geeksforgeeks.org/print-alternate-nodes-linked-listiterative-method/](https://www.geeksforgeeks.org/print-alternate-nodes-linked-listiterative-method/)
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/union-and-intersection-of-two-linked-lists/](https://www.geeksforgeeks.org/union-and-intersection-of-two-linked-lists/)
 
-给定两个链接列表，创建包含给定列表中元素的并集和交集的并集和交集列表。 输出列表中元素的顺序无关紧要。
+给定两个链表，创建包含给定列表中元素的并集和交集的并集和交集列表。 输出列表中元素的顺序无关紧要。
 
 **示例**：
 
@@ -359,7 +359,7 @@ class LinkedList {
 
 1.  使用合并排序对第一个链表进行排序。 此步骤需要 O（mLogm）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/archives/7740)
 
-2.  使用合并排序对第二个链接列表进行排序。 此步骤需要 O（nLogn）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/archives/7740)
+2.  使用合并排序对第二个链表进行排序。 此步骤需要 O（nLogn）时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/archives/7740)
 
 3.  线性扫描两个排序列表以获取并集和交集。 此步骤需要`O(M + N)`时间。 可以使用与此处中讨论的排序数组算法相同的算法来实现此步骤。
 

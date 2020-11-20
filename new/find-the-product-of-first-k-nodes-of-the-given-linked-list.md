@@ -1,4 +1,4 @@
-# 查找给定链接列表
+# 查找给定链表
 
 > 原文：[https://www.geeksforgeeks.org/find-the-product-of-first-k-nodes-of-the-given-linked-list/](https://www.geeksforgeeks.org/find-the-product-of-first-k-nodes-of-the-given-linked-list/)
 

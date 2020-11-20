@@ -1,10 +1,10 @@
-# 从链接列表
+# 从链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-nth-node-from-end-of-the-linked-list/](https://www.geeksforgeeks.org/remove-nth-node-from-end-of-the-linked-list/)
 
 的末尾删除第 N 个节点
 
-给定一个链表。 任务是从链接列表的末尾删除第 **N 个**个节点。
+给定一个链表。 任务是从链表的末尾删除第 **N 个**个节点。
 
 **示例**：
 
@@ -18,7 +18,7 @@
 
 1\. [从链表中删除一个节点。](https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/)
 
-2\. [从链接列表的末尾找到第 n 个节点](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)
+2\. [从链表的末尾找到第 n 个节点](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)
 
 **方法**：
 

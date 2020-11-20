@@ -1,8 +1,8 @@
-# 单链接列表和双链接列表之间的区别
+# 单链表和双链表之间的区别
 
 > 原文：[https://www.geeksforgeeks.org/difference-between-singly-linked-list-and-doubly-linked-list/](https://www.geeksforgeeks.org/difference-between-singly-linked-list-and-doubly-linked-list/)
 
-**单链接列表简介**：单链接列表是一组节点，其中每个节点都有两个字段“数据”和“链接”。 “数据”字段存储实际的一条信息，“链接”字段用于指向下一个节点。 基本上，“链接”字段只不过是地址。
+**单链表简介**：单链表是一组节点，其中每个节点都有两个字段“数据”和“链接”。 “数据”字段存储实际的一条信息，“链接”字段用于指向下一个节点。 基本上，“链接”字段只不过是地址。
 
 ![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)
 

@@ -1,8 +1,8 @@
-# 无需额外的空间和修改即可反向打印链接列表
+# 无需额外的空间和修改即可反向打印链表
 
 > 原文：[https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/](https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/)
 
-给定[链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/)，以反向方式显示链接列表，而无需使用递归，堆栈或对给定列表的修改。
+给定[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，以反向方式显示链表，而无需使用递归，堆栈或对给定列表的修改。
 
 **示例**：
 
@@ -17,11 +17,11 @@ Output :24->20->15->5->10->NULL
 
 下面是现在允许在此处使用的不同解决方案，因为我们不能使用额外的空间并修改列表。
 
-1.  [递归解决方案，以打印反向链接列表](https://www.geeksforgeeks.org/write-a-recursive-function-to-print-reverse-of-a-linked-list/)。 需要额外的空间。
+1.  [递归解决方案，以打印反向链表](https://www.geeksforgeeks.org/write-a-recursive-function-to-print-reverse-of-a-linked-list/)。 需要额外的空间。
 
-2.  [反向链接列表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，然后打印。 这需要修改原始列表。
+2.  [反向链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，然后打印。 这需要修改原始列表。
 
-3.  [基于堆栈的解决方案，用于打印反向链接列表](https://www.geeksforgeeks.org/print-reverse-linked-list-using-stack/)。 将所有节点一个一个地推入堆栈。 然后从堆栈中逐一弹出元素并进行打印。 这也需要额外的空间。
+3.  [基于堆栈的解决方案，用于打印反向链表](https://www.geeksforgeeks.org/print-reverse-linked-list-using-stack/)。 将所有节点一个一个地推入堆栈。 然后从堆栈中逐一弹出元素并进行打印。 这也需要额外的空间。
 
 算法：
 

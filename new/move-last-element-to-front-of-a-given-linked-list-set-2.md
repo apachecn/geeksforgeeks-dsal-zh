@@ -1,4 +1,4 @@
-# 将最后一个元素移到给定链接列表的前面 | 系列 2
+# 将最后一个元素移到给定链表的前面 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list-set-2/](https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list-set-2/)
 
@@ -12,13 +12,13 @@
 > **输入**：1-> 2-> 3-> 4-> 5-> 6，k = 7
 > **输出**：6 -> 1-> 2-> 3-> 4-> 5
 
-**先决条件**：[将最后一个元素移到给定链接列表](https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list/)的前面
+**先决条件**：[将最后一个元素移到给定链表](https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list/)的前面
 
 **方法**：
 
-*   循环（k％n）次，其中 n 是链接列表中元素的数量。
+*   循环（k％n）次，其中 n 是链表中元素的数量。
 
-*   每次，从链接列表的末尾删除一个节点。
+*   每次，从链表的末尾删除一个节点。
 
 *   同时在链表的开头插入该已删除的节点。
 

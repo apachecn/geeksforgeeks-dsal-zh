@@ -1,4 +1,4 @@
-# 从三叉树创建一个双向链接列表
+# 从三叉树创建一个双向链表
 
 > 原文：[https://www.geeksforgeeks.org/create-doubly-linked-list-ternary-ree/](https://www.geeksforgeeks.org/create-doubly-linked-list-ternary-ree/)
 

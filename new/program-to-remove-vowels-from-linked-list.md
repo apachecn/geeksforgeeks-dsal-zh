@@ -1,23 +1,23 @@
-# 程序从链接列表
+# 程序从链表
 
 > 原文：[https://www.geeksforgeeks.org/program-to-remove-vowels-from-linked-list/](https://www.geeksforgeeks.org/program-to-remove-vowels-from-linked-list/)
 
 中删除元音
 
-给定[单链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从给定[链接列表](http://www.geeksforgeeks.org/data-structures/linked-list/)中删除元音。
+给定[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从给定[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中删除元音。
 
 **示例**：
 
 > **输入**：g-> e-> e-> k-> s-> f-> o-> r-> g- > e-> e-> k-> s
 > **输出**：g-> k-> s-> f-> r-> g-> k-> s
 > **解释**：
-> 去除了元音{e，e}，{o}，{e，e}之后。 链接列表变为
+> 去除了元音{e，e}，{o}，{e，e}之后。 链表变为
 > g-> k-> s-> f-> r-> g-> k-> s
 > 
 > **输入**：a-> a-> a-> g-> e-> e-> k-> s-> i- > i-> i-> m
 > **输出**：g-> k-> s-> m
 > **说明：[**
-> 删除了元音{a，a，a}，{e，e}，{i，i，i}之后。 链接列表变为
+> 删除了元音{a，a，a}，{e，e}，{i，i，i}之后。 链表变为
 > g-> k-> s-> f-> r-> g-> k-> s
 
 **方法**：

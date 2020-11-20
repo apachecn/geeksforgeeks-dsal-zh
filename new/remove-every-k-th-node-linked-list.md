@@ -1,10 +1,10 @@
-# 删除链接列表
+# 删除链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-every-k-th-node-linked-list/](https://www.geeksforgeeks.org/remove-every-k-th-node-linked-list/)
 
 的每个第 k 个节点
 
-给定一个单链表，您的任务是删除链表的第 K 个节点。 假定 K 始终小于或等于链接列表的长度。
+给定一个单链表，您的任务是删除链表的第 K 个节点。 假定 K 始终小于或等于链表的长度。
 
 **示例**：
 

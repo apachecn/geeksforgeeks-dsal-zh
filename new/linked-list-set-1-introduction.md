@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/linked-list-set-1-introduction/](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)
 
-像数组一样，链表是线性数据结构。 与数组不同，链接列表元素不存储在连续位置； 元素使用指针链接。
+像数组一样，链表是线性数据结构。 与数组不同，链表元素不存储在连续位置； 元素使用指针链接。
 
 ![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)
 
@@ -30,15 +30,15 @@ id [] = [1000，1010，1050，2000，2040]。
 
 **缺点**：
 
-**1）**不允许随机访问。 我们必须从第一个节点开始顺序访问元素。 因此，我们无法使用默认实现对链接列表进行有效的二进制搜索。 在上阅读有关它的信息。
+**1）**不允许随机访问。 我们必须从第一个节点开始顺序访问元素。 因此，我们无法使用默认实现对链表进行有效的二进制搜索。 在上阅读有关它的信息。
 
 **2）**列表的每个元素都需要用于指针的额外存储空间。
 
-**3）**不适合缓存。 由于数组元素是连续的位置，因此存在引用位置，而在链接列表的情况下则不存在。
+**3）**不适合缓存。 由于数组元素是连续的位置，因此存在引用位置，而在链表的情况下则不存在。
 
 **表示形式**：
 
-链接列表由指向链接列表的第一个节点的指针表示。 第一个节点称为头。 如果链表为空，则 head 的值为 NULL。
+链表由指向链表的第一个节点的指针表示。 第一个节点称为头。 如果链表为空，则 head 的值为 NULL。
 
 列表中的每个节点至少包括两部分：
 
@@ -138,7 +138,7 @@ class LinkedList {
 
 ```
 
-**C 中的第一个简单链接列表**让我们创建一个包含 3 个节点的简单链接列表。
+**C 中的第一个简单链表**让我们创建一个包含 3 个节点的简单链表。
 
 ## C++
 
@@ -834,7 +834,7 @@ public class LinkedList {
 
 *   [在链表](http://quiz.geeksforgeeks.org/data-structure/linked-list/)上练习 MCQ 问题
 
-*   [链接列表数据结构页面](https://www.geeksforgeeks.org/data-structures/linked-list/)
+*   [链表数据结构页面](https://www.geeksforgeeks.org/data-structures/linked-list/)
 
 *   [链表上的编码实践问题。](https://practice.geeksforgeeks.org/topics/Linked%20List/)
 

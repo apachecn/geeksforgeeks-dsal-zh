@@ -1,4 +1,4 @@
-# 静态队列和单链接列表
+# 静态队列和单链表
 
 > 原文：[https://www.geeksforgeeks.org/difference-between-a-static-queue-and-a-singly-linked-list/](https://www.geeksforgeeks.org/difference-between-a-static-queue-and-a-singly-linked-list/)
 
@@ -12,11 +12,11 @@
 
 ![](img/a82bb56d6474afd20d7a765fa656a569.png)
 
-**[单链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)**：链表也是元素的有序列表。 您可以在列表中的任何位置添加元素，在列表中的任何位置更改元素，或从列表中的任何位置删除元素。 列表中的每个节点都存储内容以及指向列表中下一个节点的指针或引用。 要存储单个链接列表，仅必须存储指向该列表中第一个节点的引用或指针。 单个链接列表中的最后一个节点指向无（或为空）。
+**[单链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)**：链表也是元素的有序列表。 您可以在列表中的任何位置添加元素，在列表中的任何位置更改元素，或从列表中的任何位置删除元素。 列表中的每个节点都存储内容以及指向列表中下一个节点的指针或引用。 要存储单个链表，仅必须存储指向该列表中第一个节点的引用或指针。 单个链表中的最后一个节点指向无（或为空）。
 
 ![](img/6506462bc8feac1c3bac44510804e930.png)
 
-**以下是静态队列和单链接列表**之间的一些主要区别
+**以下是静态队列和单链表**之间的一些主要区别
 
 | 静态队列 | 单链表 |
 
@@ -323,7 +323,7 @@ Front Element is: 40
 
 ```
 
-**下面是单链接列表**的实现：
+**下面是单链表**的实现：
 
 ## Java
 

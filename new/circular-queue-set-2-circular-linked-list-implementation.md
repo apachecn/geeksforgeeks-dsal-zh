@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/circular-queue-set-2-circular-linked-list-implementation/](https://www.geeksforgeeks.org/circular-queue-set-2-circular-linked-list-implementation/)
 
-先决条件– [循环单链接列表](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)
+先决条件– [循环单链表](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)
 
 我们已经讨论了基础知识以及如何使用集合 1 中的数组实现循环队列。
 

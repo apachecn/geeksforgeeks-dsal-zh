@@ -1,4 +1,4 @@
-# 计算链接列表中的最小频率元素
+# 计算链表中的最小频率元素
 
 > 原文：[https://www.geeksforgeeks.org/count-minimum-frequency-elements-in-a-linked-list/](https://www.geeksforgeeks.org/count-minimum-frequency-elements-in-a-linked-list/)
 

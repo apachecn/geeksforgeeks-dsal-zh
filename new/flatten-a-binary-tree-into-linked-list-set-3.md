@@ -1,4 +1,4 @@
-# 将二叉树展平为链接列表| 第 3 组
+# 将二叉树展平为链表| 第 3 组
 
 > 原文：[https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list-set-3/](https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list-set-3/)
 
