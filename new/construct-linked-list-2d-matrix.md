@@ -28,7 +28,7 @@ NULL NULL NULL
 
 ```
 
-**问题来源**：[事实访谈经验 | 系列 9](https://www.geeksforgeeks.org/factset-interview-experience-set-9-campus-full-time/)
+**问题来源**：[事实面试经验 | 系列 9](https://www.geeksforgeeks.org/factset-interview-experience-set-9-campus-full-time/)
 
 这个想法是为矩阵的每个元素构造一个新节点，并递归地创建其下和右节点。
 

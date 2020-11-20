@@ -10,7 +10,7 @@
 
 3. `O(1)`中的 deleteMinimum（）
 
-**来源**：[MakeMyTrip 访谈。](https://www.geeksforgeeks.org/makemytrip-interview-experience-set-16/)
+**来源**：[MakeMyTrip 面试。](https://www.geeksforgeeks.org/makemytrip-interview-experience-set-16/)
 
 1.  维护一个链表，其中的元素按升序排列。
 

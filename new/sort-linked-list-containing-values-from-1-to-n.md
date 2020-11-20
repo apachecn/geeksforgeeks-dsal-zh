@@ -15,7 +15,7 @@ Output : 1 -> 2 -> 3 -> 4 -> 5
 
 ```
 
-**天真的方法**：最简单的方法是使用任何类型的[排序方法](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)对该链表进行排序。 最少需要 O（N * logN）个时间。
+**天真的方法**：最简单的方法是使用任何类型的[排序方法](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)对该链表进行排序。 最少需要`O(n * logn)`个时间。
 
 **有效方法**：一种有效方法是观察链表包含总共 N 个元素，并且元素从 1 到 N 进行编号。遍历链表并将每个元素替换为其位置。
 

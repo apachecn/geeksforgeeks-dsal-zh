@@ -237,7 +237,7 @@ Modified list: 5 10 6 9 7 8
 
 ```
 
-时间复杂度：O（n * logn）。
+时间复杂度：`O(n * logn)`。
 
 
 

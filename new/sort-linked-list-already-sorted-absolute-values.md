@@ -21,7 +21,7 @@ output: 5 -> 10
 
 ```
 
-资料来源：[亚马逊访谈](https://www.geeksforgeeks.org/amazon-interview-experience-set-258-for-sde1/)
+资料来源：[亚马逊面试](https://www.geeksforgeeks.org/amazon-interview-experience-set-258-for-sde1/)
 
 一个简单的解决方案是从头到尾遍历链表。 对于每个访问的节点，请检查其是否有故障。 如果是，请将其从当前位置移除，然后插入正确的位置。 这是对链表的[插入排序的实现，此解决方案的时间复杂度为 O（n * n）。](http://geeksquiz.com/insertion-sort-for-singly-linked-list/)
 

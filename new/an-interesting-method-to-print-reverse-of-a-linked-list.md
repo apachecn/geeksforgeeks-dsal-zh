@@ -20,9 +20,9 @@ Output : Reversed Linked list : 85
 
 对于以相反顺序打印列表，我们已经讨论了[反向迭代和递归](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/)的方法。
 
-在本文中，我们讨论了一种有趣的方法，该方法不需要递归，也不需要修改 list。 该功能也只访问链接列表的每个节点一次。
+在本文中，我们讨论了一种有趣的方法，该方法不需要递归，也不需要修改列表。 该功能也只访问链接列表的每个节点一次。
 
-**技巧**：以反向顺序打印列表而没有任何递归功能或循环的想法是使用[回车符](https://en.wikipedia.org/wiki/Carriage_return)（“ r”）。 为此，我们应该了解列表的长度。 现在，我们应该打印 n-1 个空白空间，然后打印第一个元素，然后打印“ r”，再打印 n-2 个空白空间，再打印第二个节点，然后打印“ r”，依此类推。
+**技巧**：以反向顺序打印列表而没有任何递归功能或循环的想法是使用[回车符](https://en.wikipedia.org/wiki/Carriage_return)（`"r"`）。 为此，我们应该了解列表的长度。 现在，我们应该打印`n-1`个空白字符，然后打印第一个元素，然后打印`"r"`，再打印`n-2`个空白字符，再打印第二个节点，然后打印`"r"`，依此类推。
 
 **回车（ ”）**：它命令打印机（光标或系统控制台的显示屏）将光标的位置移至同一行的第一个位置。
 
@@ -416,27 +416,23 @@ Reversed Linked List:
 
 **输入和输出图示**：
 
-**输入：6 5 4 3 2 1**
-
-**第一迭代 _ _ _ _ _ 6**
-
-**2nd 迭代 _ _ _ _ 5 6**
-
-**3rd 迭代 _ _ _ 4 5 6**
-
-**4th 迭代 _ _ _ 3 4 5 6**
-
-**第五次迭代 _ 2 3 4 5 6**
-
-**最终输出 1 2 3 4 5 6**
+```
+输入：     6 5 4 3 2 1
+第一次迭代：_ _ _ _ _ 6
+第二次迭代：_ _ _ _ 5 6
+第三次迭代：_ _ _ 4 5 6
+第四次迭代：_ _ 3 4 5 6
+第五次迭代：_ 2 3 4 5 6
+最终输出：  1 2 3 4 5 6
+```
 
 **注意**： 上面的程序可能无法在在线编译器上运行，因为它们不支持控制台上的回车之类的操作。
 
- **参考**：
+**参考**：
 
 [堆栈溢出/回车](https://stackoverflow.com/questions/7372918/whats-the-use-of-r-escape-sequence)
 
-本文由 [**Shivam Pradhan（anuj_charm）**](https://www.facebook.com/anuj.charm) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由 [**Shivam Pradhan(anuj_charm)**](https://www.facebook.com/anuj.charm) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

@@ -12,7 +12,7 @@
 > **输入**：1-> 1-> 2-> 1-> 0->空
 > **输出**：0-> 1-> 1-> 1-> 2->空
 
-资料来源：[微软访谈 | 系列 1](https://www.geeksforgeeks.org/microsoft-interview-set-1/)
+资料来源：[微软面试 | 系列 1](https://www.geeksforgeeks.org/microsoft-interview-set-1/)
 
 可以使用以下步骤对给定的链表进行排序。
 

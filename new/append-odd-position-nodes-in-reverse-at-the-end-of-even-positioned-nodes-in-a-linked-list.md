@@ -8,13 +8,15 @@
 
 **示例**：
 
-> **输入**：1-> 2-> 3-> 4-> 5-> 6->空
-> **输出**：1-> 3-> 5-> 6-> 4-> 2-> NULL
+> **输入**：`1 -> 2 -> 3 -> 4 -> 5 -> 6 -> NULL`
+>
+> **输出**：`1 -> 3 -> 5 -> 6 -> 4 -> 2 -> NULL`
 > 
-> **输入**：1-> 2-> 3-> 4-> 5->空
-> **输出**：1-> 3-> 5-> 4-> 2->空
+> **输入**：`1 -> 2 -> 3 -> 4 -> 5 -> NULL`
+>
+> **输出**：`1 -> 3 -> 5 -> 4 -> 2 -> NULL`
 
-**来源**：[微软访谈](https://www.geeksforgeeks.org/microsoft-interview-experience-set-133-campus-internship/)
+**来源**：[微软面试](https://www.geeksforgeeks.org/microsoft-interview-experience-set-133-campus-internship/)
 
 **方法**：在给定的[链接](https://www.geeksforgeeks.org/rearrange-a-linked-list-such-that-all-even-and-odd-positioned-nodes-are-together/)中讨论了类似的问题，但偶数部分未反转。 对于当前节点，分别在奇数和偶数位置维护两个指针**奇数**和**甚至**。 还存储偶数链接列表的第一个节点，以便在将所有奇数和偶数节点连接到两个不同的列表中之后，我们可以将偶数列表附加到奇数列表的末尾。 偶数列表分离后，我们只需要反转即可。 在此处可以找到反向链接列表。 一旦偶数列表反向，将其附加到奇数链接列表。
 
