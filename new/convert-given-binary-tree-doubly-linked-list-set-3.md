@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/](https://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/)
 
-给定二叉树（BT），将其转换为就地双链表（DLL）。 节点中的左指针和右指针分别用作转换后的 DLL 中的上一个指针和下一个指针。 DLL 中节点的顺序必须与给定二叉树的顺序相同。 有序遍历的第一个节点（BT 中最左边的节点）必须是 DLL 的头节点。
+给定二叉树（BT），将其转换为就地双链表（DLL）。 节点中的左指针和右指针分别用作转换后的双链表中的上一个指针和下一个指针。 双链表中节点的顺序必须与给定二叉树的顺序相同。 有序遍历的第一个节点（BT 中最左边的节点）必须是双链表的头节点。
 
 ![TreeToList](img/1e6723c342ed8e5706a1c58b68241a4c.png)
 
@@ -12,7 +12,7 @@
 
 [将给定的二叉树转换为双链表| 组合 2](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-2/)
 
-在这篇文章中，讨论了第三个解决方案，这似乎是最简单的。 这个想法是对二叉树进行有序遍历。 在进行有序遍历时，请在变量 *prev* 中跟踪先前访问的节点。 对于每个访问的节点，将其作为 *prev* 的下一个，并将该节点的前一个作为 *prev* 的一个。
+在这篇文章中，讨论了第三个解决方案，这似乎是最简单的。 这个想法是对二叉树进行有序遍历。 在进行有序遍历时，请在变量`prev`中跟踪先前访问的节点。 对于每个访问的节点，将其变为`prev`的下一个，并将该节点的前一个变为`prev`。
 
 感谢 rahul，wishall 和所有其他读者对以上两个帖子的有用评论。
 
