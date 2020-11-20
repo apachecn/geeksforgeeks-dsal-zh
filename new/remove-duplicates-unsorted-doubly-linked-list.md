@@ -648,7 +648,7 @@ Doubly linked list after removing duplicates:
 
 ```
 
-**时间复杂度**：O（n <sup>2</sup> ）
+**时间复杂度**：`O(N ^ 2)`
 
 **辅助空间**：`O(1)`
 

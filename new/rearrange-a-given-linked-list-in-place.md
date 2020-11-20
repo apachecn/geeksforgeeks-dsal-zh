@@ -26,7 +26,7 @@ Output: 1 -> 5 -> 2 -> 4 -> 3
     b) Move current to next to next of current
 ```
 
-上述简单解决方案的时间复杂度为 O（n <sup>2</sup> ），其中 n 是链表中节点的数量。
+上述简单解决方案的时间复杂度为`O(N ^ 2)`，其中 n 是链表中节点的数量。
 
 **更好的解决方案**
 

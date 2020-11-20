@@ -1,8 +1,6 @@
-# 检查链表
+# 检查链表中连续节点的绝对差是否为 1
 
 > 原文：[https://www.geeksforgeeks.org/check-if-absolute-difference-of-consecutive-nodes-is-1-in-linked-list/](https://www.geeksforgeeks.org/check-if-absolute-difference-of-consecutive-nodes-is-1-in-linked-list/)
-
-中连续节点的绝对差是否为 1
 
 给定一个单链表。 任务是检查链表中连续节点之间的绝对差是否为 1。
 
@@ -19,7 +17,7 @@
 
 1.  用一个临时指针遍历列表。
 
-2.  将标志变量初始化为 true，指示连续节点的绝对差为 1。
+2.  将标志变量初始化为`true`，指示连续节点的绝对差为 1。
 
 3.  开始遍历列表。
 
