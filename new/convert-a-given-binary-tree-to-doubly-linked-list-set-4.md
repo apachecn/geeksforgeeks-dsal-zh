@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-4/](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-4/)
 
-给定二叉树（BT），将其转换为就地双链表（DLL）。 节点中的左指针和右指针分别用作转换后的 DLL 中的上一个指针和下一个指针。 DLL 中节点的顺序必须与给定二叉树的顺序相同。 有序遍历的第一个节点（BT 中最左边的节点）必须是 DLL 的头节点。
+给定二叉树（BT），将其转换为就地双链表（DLL）。 节点中的左指针和右指针分别用作转换后的双链表中的上一个指针和下一个指针。 双链表中节点的顺序必须与给定二叉树的顺序相同。 有序遍历的第一个节点（BT 中最左边的节点）必须是双链表的头节点。
 
 ![TreeToList](img/1e6723c342ed8e5706a1c58b68241a4c.png)
 
@@ -14,7 +14,7 @@
 
 [将给定的二叉树转换为双链表 | 系列 3](https://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/)
 
-在以下实现中，我们以有序方式遍历树。 我们在当前链表的开头添加节点，并使用指向 head 指针的指针更新列表的开头。 由于我们在开始时插入，因此我们需要以相反的顺序处理叶子。 对于逆序，我们首先在左子树之前遍历右子树。 即执行反向有序遍历。
+在以下实现中，我们以有序方式遍历树。 我们在当前链表的开头添加节点，并使用指向头部指针的指针更新列表的开头。 由于我们在开始时插入，因此我们需要以相反的顺序处理叶子。 对于逆序，我们首先在左子树之前遍历右子树。 即执行反向有序遍历。
 
 ## C++
 
