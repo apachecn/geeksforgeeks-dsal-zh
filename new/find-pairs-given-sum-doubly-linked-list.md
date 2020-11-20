@@ -17,7 +17,7 @@ Output: (6, 1), (5,2)
 
 预期的时间复杂度为`O(n)`，辅助空间为`O(1)`。
 
-解决此问题的一种简单方法**是，一个节点一个接一个地选取每个节点，并通过向前遍历在剩余列表中找到总和等于 x 的第二个元素。此问题的时间复杂度为 O（n ^ 2），n 是双向链表中节点的总数。**
+解决此问题的一种简单方法**是，一个节点一个接一个地选取每个节点，并通过向前遍历在剩余列表中找到总和等于 x 的第二个元素。此问题的时间复杂度为`O(N ^ 2)`，n 是双向链表中节点的总数。**
 
 针对此问题的**有效解决方案**与该文章的[相同。 这是算法：](https://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/)
 

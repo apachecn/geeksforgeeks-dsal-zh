@@ -295,7 +295,7 @@ Linked list after removing duplicates:
 
 ```
 
-时间复杂度：O（n ^ 2）
+时间复杂度：`O(N ^ 2)`
 
 **方法 2（使用排序）**
 
