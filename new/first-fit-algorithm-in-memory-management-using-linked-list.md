@@ -1,8 +1,6 @@
-# 使用链表
+# 内存管理中的使用链表的 FirstFit 算法
 
 > 原文：[https://www.geeksforgeeks.org/first-fit-algorithm-in-memory-management-using-linked-list/](https://www.geeksforgeeks.org/first-fit-algorithm-in-memory-management-using-linked-list/)
-
-的内存管理中的 First Fit 算法
 
 **用于内存管理的首选算法**：分配了足以容纳该进程的第一内存分区。
 

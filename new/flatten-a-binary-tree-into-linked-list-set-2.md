@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list-set-2/](https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list-set-2/)
 
-给定一个二叉树，将其展平为一个链表。 展平后，每个节点的左侧应指向 NULL，右侧应按级别顺序包含下一个节点。
+给定一个二叉树，将其展平为一个链表。 展平后，每个节点的左侧应指向`NULL`，右侧应按级别顺序包含下一个节点。
 
 **示例**：
 
@@ -48,7 +48,7 @@ Output:
 
 ```
 
-**方法**：在先前的 [](https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list/) 中已经讨论了使用递归的方法。 这种方法暗示了使用栈对二叉树进行预遍历。 在此遍历中，每次将右子项推入栈时，都会使右子项等于左子项，并使左子项等于 NULL。 如果节点的右子节点变为 NULL，则会弹出栈，而右子节点将从栈中弹出。 重复上述步骤，直到栈的大小为零或根为 NULL。
+**方法**：在先前的[文章](https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list/)中已经讨论了使用递归的方法。 这种方法暗示了使用栈对二叉树进行预遍历。 在此遍历中，每次将右子项推入栈时，都会使右子项等于左子项，并使左子项等于`NULL`。 如果节点的右子节点变为`NULL`，则会弹出栈，而右子节点将从栈中弹出。 重复上述步骤，直到栈的大小为零或根为`NULL`。
 
 下面是上述方法的实现：
 
@@ -389,7 +389,7 @@ The Inorder traversal after flattening binary tree 1 2 3 4 5 6
 
 **时间复杂度**：`O(n)`
 
-**辅助空间**：O（Log N）
+**辅助空间**：`O(Log N)`
 
 
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list-set-3/](https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list-set-3/)
 
-给定一棵二叉树，将其平整就位到链表中。 不允许使用辅助数据结构。 展平后，每个节点的左侧应指向 NULL，右侧应按级别顺序包含下一个节点。
+给定一棵二叉树，将其平整就位到链表中。 不允许使用辅助数据结构。 展平后，每个节点的左侧应指向`NULL`，右侧应按级别顺序包含下一个节点。
 
 **示例**：
 
@@ -56,7 +56,7 @@ Output:
 
 *   如果父节点没有左子节点，则父节点是展平列表中的最后一个节点。
 
-*   如果 left child 不为 null，则左子树中的叶节点是扁平化列表中的最后一个节点。
+*   如果左子树不为`null`，则左子树中的叶节点是扁平化列表中的最后一个节点。
 
 下面是上述方法的实现：
 

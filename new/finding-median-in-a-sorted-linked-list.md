@@ -2,11 +2,11 @@
 
 > 原文：[https://www.geeksforgeeks.org/finding-median-in-a-sorted-linked-list/](https://www.geeksforgeeks.org/finding-median-in-a-sorted-linked-list/)
 
-给定![N](img/19e409e13c1238e1f3ff3dbd06cdd45e.png "Rendered by QuickLaTeX.com")元素的排序链表。 任务是在给定的排序链表中找到中位数。
+给定`N`元素的排序链表。 任务是在给定的排序链表中找到中位数。
 
 我们知道排序数组中的**中位数**是中间元素。
 
-**查找 N 个排序数字中位数**的过程：
+**查找`N`个排序数字中位数**的过程：
 
 ```
 if N is odd:
@@ -31,11 +31,11 @@ Output : 3.5
 
 1.  遍历链表并计算所有元素。
 
-2.  如果 count 是奇数，则再次遍历链表并找到第 n / 2 个元素。
+2.  如果`count`是奇数，则再次遍历链表并找到第`n / 2`个元素。
 
-3.  如果 count 是偶数，则再次遍历链表并找到：
+3.  如果`count`是偶数，则再次遍历链表并找到：
 
-    （第 n / 2 个元素+第（n / 2 + 1）个元素）/ 2
+    （第`n / 2`个元素`+`第`n / 2 + 1`个元素）`/ 2`
 
 **注意**：上述解决方案两次遍历链表。
 
@@ -43,9 +43,9 @@ Output : 3.5
 
 我们可以使用上述算法来找到链表的中位数。 使用此算法，我们无需计算元素的数量：
 
-1.  如果 *fast_ptr* 不为 NULL，则意味着链表包含奇数元素，我们仅打印 *slow_ptr* 的数据。
+1.  如果`fast_ptr`不为`NULL`，则意味着链表包含奇数元素，我们仅打印`slow_ptr`的数据。
 
-2.  否则，如果 *fast_ptr* 达到 NULL，则意味着链表包含偶数元素，我们创建了 *slow_ptr* 的前一个节点的备份并打印（lower_ptr + slow_ptr- >数据的前一个节点）/ 2
+2.  否则，如果`fast_ptr`达到`NULL`，则意味着链表包含偶数元素，我们创建了`slow_ptr`的前一个节点的备份并打印`(pre_of_slow->data + slow_ptr->data) / 2`
 
 下面是上述方法的实现：
 
