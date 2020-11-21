@@ -1,10 +1,8 @@
-# 在单链表
+# 在单链表中查找最小和最大元素
 
 > 原文：[https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/](https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/)
 
-中查找最小和最大元素
-
-给定 n 个节点的单链列表，并在链列表中找到最小和最大的元素。
+给定`n`个节点的单链列表，并在链列表中找到最小和最大的元素。
 
 例子：
 
@@ -23,7 +21,7 @@ Output : Linked list are:
 
 ```
 
-这个想法是在不等于 NULL 的情况下遍历链表，并将 **max** 和 **min** 变量分别初始化为 **INT_MIN** 和 **INT_MAX** 。 之后检查一个条件，如果最大值小于头值，则将头值分配给 max 或最小值，然后将头值分配给 min，否则头值分配给 min，否则头点指向下一个节点。 继续此过程，直到 head 不等于 NULL。
+这个想法是在不等于`NULL`的情况下遍历链表，并将`max`和`min`变量分别初始化为`INT_MIN`和`INT_MAX`。 之后检查一个条件，如果头部值大于`max`，则将头部值分配给`max`，如果头部值小于`min`，则将头部值分配给`min`，然后头部值指向下一个节点。 继续此过程，直到`head`不等于`NULL`。
 
 ## C++
 

@@ -15,7 +15,7 @@ Output : 4
 
 ```
 
-我们已经讨论了[迭代解决方案](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)。 本文讨论了迭代解决方案。 假定该值为 n，则以递归方式计算列表中节点的总数，并进行一半的计算。 然后，对于每个调用，将递归 n 递减 1。 返回 n 为零的节点。
+我们已经讨论了[迭代解决方案](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)。 本文讨论了迭代解决方案。 假定该值为`n`，则以递归方式计算列表中节点的总数，并进行一半的计算。 然后，对于每个调用，将递归`n`递减 1。 返回`n`为零的节点。
 
 ## C++
 

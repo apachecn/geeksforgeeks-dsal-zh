@@ -4,11 +4,11 @@
 
 中查找循环长度
 
-编写一个函数 *detectAndCountLoop（）*，该函数检查给定的链表是否包含循环，如果存在循环，则返回循环中的节点数。 例如，该循环存在于以下链接的列表中，并且循环的长度为 4。如果不存在该循环，则该函数应返回 0。
+编写一个函数`detectAndCountLoop()`，该函数检查给定的链表是否包含循环，如果存在循环，则返回循环中的节点数。 例如，该循环存在于以下链接的列表中，并且循环的长度为 4。如果不存在该循环，则该函数应返回 0。
 
 ![](img/de522899e01a1322ab2808eeff1ad73e.png "Linked List Loop")
 
-**方法** ：众所周知，当快速指针和慢速指针在同一点相遇时，[弗洛伊德循环检测算法](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)终止。 还已知该公共点是循环节点之一。 将此公共点的地址存储在指针变量 say（ptr）中。 然后用 1 初始化一个计数器，并从公共点开始，继续访问下一个节点并增加计数器，直到再次到达公共指针为止。
+**方法**：众所周知，当快速指针和慢速指针在同一点相遇时，[弗洛伊德循环检测算法](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)终止。 还已知该公共点是循环节点之一。 将此公共点的地址存储在指针变量`ptr`中。 然后用 1 初始化一个计数器，并从公共点开始，继续访问下一个节点并增加计数器，直到再次到达公共指针为止。
 
 此时，计数器的值将等于循环的长度。
 
@@ -340,7 +340,7 @@ class LinkedList:
         if self.head is None: 
             return 0
 
-        # Using Floyd’s Cycle-Finding  
+        # Using Floyd's Cycle-Finding  
         # Algorithm/ Slow-Fast Pointer Method 
         slow = self.head 
         fast = self.head 

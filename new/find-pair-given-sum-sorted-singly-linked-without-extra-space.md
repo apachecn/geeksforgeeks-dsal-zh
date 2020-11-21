@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-pair-given-sum-sorted-singly-linked-without-extra-space/](https://www.geeksforgeeks.org/find-pair-given-sum-sorted-singly-linked-without-extra-space/)
 
-给定一个排序的单链列表和一个值 x，任务是找到总和等于 x 的对。 我们不允许使用任何额外的空间，并且预期的时间复杂度为`O(n)`。
+给定一个排序的单链列表和一个值`x`，任务是找到总和等于`x`的对。 我们不允许使用任何额外的空间，并且预期的时间复杂度为`O(n)`。
 
 例子：
 
@@ -14,7 +14,7 @@ Output: (6, 11), (7, 10), (8, 9)
 
 提示：我们可以修改原始链表
 
-针对此问题的**简单解决方案**是一个个地取每个元素，并向前遍历其余列表以找到总和等于给定值 x 的第二个元素。 该方法的时间复杂度将为`O(N ^ 2)`。
+针对此问题的**简单解决方案**是一个个地取每个元素，并向前遍历其余列表以找到总和等于给定值`x`的第二个元素。 该方法的时间复杂度将为`O(N ^ 2)`。
 
 针对此问题的**有效解决方案**基于以下文章中讨论的思想。
 
@@ -24,17 +24,17 @@ Output: (6, 11), (7, 10), (8, 9)
 
 以下是步骤：
 
-*   首先，我们需要将单链列表转换为双链列表。 在这里，我们给出了单链列表结构节点，该节点仅具有**下一个**指针，而没有**上一页**指针，因此，为了将单链列表转换为双链列表，我们使用[内存高效双链 列表（异或链表）](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)。
+*   首先，我们需要将单链列表转换为双链列表。 在这里，我们给出了单链列表结构节点，该节点仅具有`next`指针，而没有`prev`指针，因此，为了将单链列表转换为双链列表，我们使用[内存高效双链 列表（异或链表）](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)。
 
-*   在 XOR 链表中，单链表的每个**下一个**指针都包含**下一个**和 **prev** 指针的 XOR。
+*   在 XOR 链表中，单链表的每个`next`指针都包含`next`和`prev`指针的 XOR。
 
-*   将单链列表转换为双链列表后，我们初始化两个指针变量以在排序的双链列表中找到候选元素。 首先以双向链表的开头初始化；即 **first = head** ，然后用双向链表的最后一个节点初始化**第二**；即 **second = last_node** 。
+*   将单链列表转换为双链列表后，我们初始化两个指针变量以在排序的双链列表中找到候选元素。 首先以双向链表的开头初始化；即`first = head`，然后用双向链表的最后一个节点初始化`second`；即`second = last_node`。
 
-*   这里我们没有随机访问权限，因此要初始化指针，我们遍历列表直到最后一个节点，并将最后一个节点分配给第二个。
+*   这里我们没有随机访问权限，因此要初始化指针，我们遍历列表直到最后一个节点，并将最后一个节点分配给`second`。
 
-*   如果当前**首先**和**第二**的当前总和小于 x，则我们将**首先**向前移动。 如果**第一个**和**第二个**元素的当前总和大于 x，则我们将**第二个**向后移动。
+*   如果当前`first`和`second`的当前总和小于`x`，则我们将`first`向前移动。 如果`first`和`second`元素的当前总和大于`x`，则我们将`second`向后移动。
 
-*   循环终止条件也与数组不同。 当两个指针中的任何一个变为 NULL 或它们彼此交叉（第一个= next_node），或者它们变为相同（第一个==第二个）时，循环终止。
+*   循环终止条件也与数组不同。 当两个指针中的任何一个变为`NULL`或它们彼此交叉（`first == next_node`），或者它们变为相同（`first == second`）时，循环终止。
 
 ```
 
@@ -219,9 +219,9 @@ int main()
 
 时间复杂度：`O(n)`
 
-如果未对链表进行排序，那么我们可以将列表作为第一步进行排序。 但是在那种情况下，整体时间复杂度将变为 O（n Log n）。 如果没有多余的空间，我们可以在这种情况下使用哈希。 基于哈希的解决方案与方法 2 [在此处](https://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/)相同。
+如果未对链表进行排序，那么我们可以将列表作为第一步进行排序。 但是在那种情况下，整体时间复杂度将变为`O(n Log n)`。 如果没有多余的空间，我们可以在这种情况下使用哈希。 基于哈希的解决方案与方法 2 [在此处](https://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/)相同。
 
-本文由 [**Shashank Mishra（Gullu）**](https://www.facebook.com/shashank.mishra.92167) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由 [**Shashank Mishra(Gullu)**](https://www.facebook.com/shashank.mishra.92167) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
