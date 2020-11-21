@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-non-prime-nodes-from-a-singly-linked-list/](https://www.geeksforgeeks.org/delete-all-non-prime-nodes-from-a-singly-linked-list/)
 
-给定一个包含 N 个节点的单链表，任务是从列表中删除不是素数的所有节点。
+给定一个包含`N`个节点的单链表，任务是从列表中删除不是素数的所有节点。
 
 **示例**：
 

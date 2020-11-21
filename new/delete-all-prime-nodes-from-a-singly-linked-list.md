@@ -2,15 +2,17 @@
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-singly-linked-list/](https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-singly-linked-list/)
 
-给定一个包含 N 个节点的单链表，任务是从列表中删除所有素数的节点。
+给定一个包含`N`个节点的单链表，任务是从列表中删除所有素数的节点。
 
 **示例**：
 
-> **输入**：列表= 15-> 16-> 6-> 7-> 17
-> **输出**：最终列表= 15-> 16-> 6
+> **输入**：`list = 15 -> 16 -> 6 -> 7 -> 17`
+>
+> **输出**：`finalList = 15 -> 16 -> 6`
 > 
-> **输入**：列表= 15-> 3-> 4-> 2-> 9
-> **输出**：最终列表= 15-> 4-> 9
+> **输入**：`list = 15 -> 3 -> 4 -> 2 -> 9`
+>
+> **输出**：`finalList = 15 -> 4 -> 9`
 
 **方法**：想法是逐个遍历单链表的节点并获得素数节点的指针。 通过遵循帖子中使用的方法删除那些节点：[从链表](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)中删除一个节点。
 
@@ -571,7 +573,7 @@ Modified List: 15 16 6
 
 ```
 
-**时间复杂度：`O(n)`**，其中 N 是节点总数。
+**时间复杂度**：`O(n)`，其中`N`是节点总数。
 
 
 
