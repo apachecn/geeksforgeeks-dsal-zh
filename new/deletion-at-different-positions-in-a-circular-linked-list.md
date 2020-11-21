@@ -84,7 +84,7 @@ void DeleteFirst(struct Node** head)
 
 ```
 
-### **删除循环 Linekd 列表**的最后一个节点
+### **删除循环链表的最后一个节点**
 
 **示例**：
 
