@@ -1,37 +1,44 @@
-# 从给定的链表
+# 从给定的链表中删除总和为`K`的连续节点。
 
 > 原文：[https://www.geeksforgeeks.org/delete-continuous-nodes-with-sum-k-from-a-given-linked-list/](https://www.geeksforgeeks.org/delete-continuous-nodes-with-sum-k-from-a-given-linked-list/)
 
-中删除总和为 K 的连续节点。
-
-给定[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)和整数 **K** ，任务是从给定的[链接中删除总和为 **K** 的所有连续节点集。 列表](http://www.geeksforgeeks.org/data-structures/linked-list/)。 删除后打印更新的链表。 如果无法进行此类删除，请打印原始的链表。
+给定[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)和整数`K`，任务是从给定的链表中[删除总和为`K`的所有连续节点集](http://www.geeksforgeeks.org/data-structures/linked-list/)。 删除后打印更新的链表。 如果无法进行此类删除，请打印原始的链表。
 
 **示例**：
 
-> **输入**：链表：1-> 2-> -3-> 3-> 1，K = 3
-> **输出**：-3 -> 1
+> **输入**：`linkedList = 1 -> 2 -> 3 -> 3 -> 1, K = 3`
+>
+> **输出**：`-3 -> 1`
+>
 > **解释**：
+>
 > 连续和为 3 的节点为：
-> 1）1-> 2
-> 2）3
-> 因此， 删除这些节点链的链表将变为：-3- > 1
+>
+> 1）`1 -> 2`
+>
+> 2）`3`
+>
+> 因此， 删除这些节点链的链表将变为：`-3 -> 1`
 > 
-> **输入**：链表：1-> 1-> -3-> -3-> -2，K = 5
-> **输出**：1-> 1-> -3-> -3-> -2
+> **输入**：`linkedList = 1 -> 1 -> -3 -> -3-> -2, K = 5`
+>
+> **输出**：`1 -> 1 -> -3 -> -3 -> -2`
+>
 > **解释**：
-> 不存在总和为 K 的连续节点
+>
+> 不存在总和为`K`的连续节点
 
 **方法**：
 
-1.  在链表的开头将 Node 的值附加为零。
+1.  在链表的开头将节点的值附加为零。
 
 2.  [遍历给定的链表](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)。
 
-3.  在遍历期间，将节点值的总和存储到该节点，并以 [unordered_map](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/) 作为当前节点的参考。
+3.  在遍历期间，将节点值的总和存储到该节点，并以[`unordered_map`](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)作为当前节点的参考。
 
-4.  如果在 **unordered_map** 中存在值**（sum – K）**的节点，则从节点中删除与存储的值**（sum – K）**对应的所有节点 映射到当前节点，并将和更新为`0`。
+4.  如果在`unordered_map`中存在值为`sum – K`的节点，则从节点中删除与存储的值`sum – K`对应的所有节点 映射到当前节点，并将和更新为`0`。
 
-5.  如果在 unordered_map 中不存在**（sum – K）**值的节点，则将当前总和与节点存储在映射中。
+5.  如果在`unordered_map`中不存在`sum – K`值的节点，则将当前总和与节点存储在映射中。
 
 下面是上述方法的实现：
 
@@ -175,9 +182,9 @@ int main()
 
 ```
 
-***时间复杂度**：`O(n)`*，其中 N 是链​​接列表中 Node 的数目。
+**时间复杂度**：`O(n)`，其中`N`是链表中节点的数目。
 
-***辅助空间复杂度**：`O(n)`*，其中 N 是链​​接列表中 Node 的数目。
+**辅助空间复杂度**：`O(n)`，其中`N`是链表中节点的数目。
 
 
 

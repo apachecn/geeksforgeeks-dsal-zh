@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-the-nodes-from-a-doubly-linked-list-that-are-smaller-than-a-given-value/](https://www.geeksforgeeks.org/delete-all-the-nodes-from-a-doubly-linked-list-that-are-smaller-than-a-given-value/)
 
-给定一个包含 N 个节点和数字 K 的双向链表，任务是从列表中删除所有小于给定值 K 的节点。
+给定一个包含`N`个节点和数字`K`的双向链表，任务是从列表中删除所有小于给定值`K`的节点。
 
 **示例**：
 
@@ -551,7 +551,7 @@ Modified List: 15 16 10 17
 
 ```
 
-**时间复杂度**：`O(n)`，其中 N 是节点总数。
+**时间复杂度**：`O(n)`，其中`N`是节点总数。
 
 
 

@@ -2,17 +2,19 @@
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-the-nodes-from-the-doubly-linked-list-that-are-greater-than-a-given-value/](https://www.geeksforgeeks.org/delete-all-the-nodes-from-the-doubly-linked-list-that-are-greater-than-a-given-value/)
 
-给定一个包含 N 个节点和一个数字 X 的双向链表，任务是从列表中删除所有大于给定值 X 的节点。
+给定一个包含`N`个节点和一个数字`X`的双向链表，任务是从列表中删除所有大于给定值`X`的节点。
 
 **示例**：
 
-> **输入**：10 8 4 11 9，X = 9
-> **输出**：8 4 9
+> **输入**：`10 8 4 11 9, X = 9`
+>
+> **输出**：`8 4 9`
 > 
-> **输入**：4 4 2 1 3 5，X = 2
-> **输出**：2 1
+> **输入**：`4 4 2 1 3 5, X = 2`
+>
+> **输出**：`2 1`
 
-**方法**：遍历双向链表的节点，并获得数据值大于 **x** 的节点的指针。 遵循此[中使用的方法删除这些节点。](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
+**方法**：遍历双向链表的节点，并获得数据值大于`x`的节点的指针。 遵循此[这篇文章](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)中使用的方法删除这些节点。
 
 ## C++
 
