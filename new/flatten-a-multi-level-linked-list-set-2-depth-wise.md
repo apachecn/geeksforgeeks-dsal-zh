@@ -29,11 +29,11 @@ right pointer)
 
 ```
 
-资料来源：Oracle 专访
+资料来源：Oracle 面试
 
 如果仔细观察，我们会发现此问题类似于[树到链表的转换](https://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/)。 我们通过以下步骤递归地展平链表。
 
-1.  如果节点为 NULL，则返回 NULL。
+1.  如果节点为`NULL`，则返回`NULL`。
 
 2.  存储当前节点的下一个节点（在步骤 4 中使用）。
 
