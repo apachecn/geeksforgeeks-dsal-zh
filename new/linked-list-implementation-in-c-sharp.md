@@ -120,15 +120,15 @@ Zoya
 
 在 LinkedList 中，允许从 LinkedList 中删除元素。 LinkedList <t>类提供 5 种不同的方法来删除元素，这些方法是：</t>
 
-*   **[Clear（）](https://www.geeksforgeeks.org/c-removing-all-nodes-from-linkedlistt/)**：此方法用于从 LinkedList 中删除所有节点。
+*   [**Clear（）**](https://www.geeksforgeeks.org/c-removing-all-nodes-from-linkedlistt/)：此方法用于从 LinkedList 中删除所有节点。
 
-*   **[Remove（LinkedListNode）](https://www.geeksforgeeks.org/c-removing-the-specified-node-from-the-linkedlistt/)**：此方法用于从 LinkedList 中删除指定的节点。
+*   [**Remove（LinkedListNode）**](https://www.geeksforgeeks.org/c-removing-the-specified-node-from-the-linkedlistt/)：此方法用于从 LinkedList 中删除指定的节点。
 
-*   **[Remove（T）](https://www.geeksforgeeks.org/c-removing-first-occurrence-of-specified-value-from-linkedlistt/)**：此方法用于从 LinkedList 中删除第一次出现的指定值。
+*   [**Remove（T）**](https://www.geeksforgeeks.org/c-removing-first-occurrence-of-specified-value-from-linkedlistt/)：此方法用于从 LinkedList 中删除第一次出现的指定值。
 
-*   **[RemoveFirst（）](https://www.geeksforgeeks.org/c-removing-the-node-at-the-start-of-the-linkedlistt/)**：此方法用于删除 LinkedList 开始处的节点。
+*   [**RemoveFirst（）**](https://www.geeksforgeeks.org/c-removing-the-node-at-the-start-of-the-linkedlistt/)：此方法用于删除 LinkedList 开始处的节点。
 
-*   **[RemoveLast（）](https://www.geeksforgeeks.org/c-removing-the-node-at-the-start-of-the-linkedlistt/)**：此方法用于删除 LinkedList 末尾的节点。
+*   [**RemoveLast（）**](https://www.geeksforgeeks.org/c-removing-the-node-at-the-start-of-the-linkedlistt/)：此方法用于删除 LinkedList 末尾的节点。
 
 **示例**：
 
