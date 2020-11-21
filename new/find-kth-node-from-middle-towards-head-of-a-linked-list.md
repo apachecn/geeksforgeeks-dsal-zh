@@ -1,12 +1,12 @@
-# 从中间到链表
+# 从中间到链表的开头查找第`k`个节点
 
 > 原文：[https://www.geeksforgeeks.org/find-kth-node-from-middle-towards-head-of-a-linked-list/](https://www.geeksforgeeks.org/find-kth-node-from-middle-towards-head-of-a-linked-list/)
 
-的开头查找第 k 个节点
 
-给定链表和数字 K。任务是从列表的中间到开头打印第 K 个节点的值。 如果不存在这样的元素，则打印“ -1”。
 
-**注意**：中间节点的位置是：（n / 2）+1，其中 n 是列表中节点的总数。
+给定链表和数字`K`。任务是从列表的中间到开头打印第`K`个节点的值。 如果不存在这样的元素，则打印`-1`。
+
+**注意**：中间节点的位置是：`(n / 2) + 1`，其中`n`是列表中节点的总数。
 
 **示例**：
 
@@ -21,7 +21,7 @@ Output : 7
 
 ```
 
-从头到尾遍历列表并计算节点总数。 现在，假设![n](img/42ce0a847b20a2f8a781c8a50bdab975.png "Rendered by QuickLaTeX.com")是列表中的节点总数。 因此，中间节点将位于位置（n / 2）+1。 现在，剩下的任务是从列表的开头打印位于[（n / 2 +1-k）位置的节点。](https://www.geeksforgeeks.org/write-a-function-to-get-nth-node-in-a-linked-list/)
+从头到尾遍历列表并计算节点总数。 现在，假设`n`是列表中的节点总数。 因此，中间节点将位于位置`(n / 2) + 1`。 现在，剩下的任务是[打印距离列表开头`n / 2 + 1 - k`位置的节点](https://www.geeksforgeeks.org/write-a-function-to-get-nth-node-in-a-linked-list/)。
 
 以下是上述想法的实现：
 
@@ -441,7 +441,7 @@ public class LinkedList
 
 ```
 
-**时间复杂度**：`O(n)`，其中 n 是列表的长度。
+**时间复杂度**：`O(n)`，其中`n`是列表的长度。
 
 **辅助空间**：`O(1)`
 

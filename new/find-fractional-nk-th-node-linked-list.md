@@ -1,10 +1,8 @@
-# 在链表
+# 在链表中找到小数（或第`n / k`个）节点
 
 > 原文：[https://www.geeksforgeeks.org/find-fractional-nk-th-node-linked-list/](https://www.geeksforgeeks.org/find-fractional-nk-th-node-linked-list/)
 
-中找到小数（或 n / k – th）节点
-
-给定一个单链列表和一个数字 k，编写一个函数以查找第（n / k）个元素，其中 n 是列表中元素的数量。 在小数的情况下，我们需要考虑 ceil 值。
+给定一个单链列表和一个数字`k`，编写一个函数以查找第`n / k`个元素，其中`n`是列表中元素的数量。 在小数的情况下，我们需要考虑对值向上取整。
 
 **示例**：
 
@@ -23,9 +21,9 @@ node which is 2nd node, i.e., 7.
 
 ```
 
-1.  取两个指针 temp 和 fractionalNode 并分别用 null 和 head 初始化它们。
+1.  取两个指针`temp`和`fractionalNode`并分别用`null`和`head`初始化它们。
 
-2.  对于临时指针的每 k 次跳转，对 fractionalNode 指针进行一次跳转。
+2.  对于`temp`指针的每`k`次跳转，对`fractionalNode`指针进行一次跳转。
 
 ## C++
 

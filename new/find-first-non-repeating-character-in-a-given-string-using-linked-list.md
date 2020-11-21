@@ -1,20 +1,20 @@
-# 使用链表
+# 使用链表查找给定字符串中的第一个非重复字符
 
 > 原文：[https://www.geeksforgeeks.org/find-first-non-repeating-character-in-a-given-string-using-linked-list/](https://www.geeksforgeeks.org/find-first-non-repeating-character-in-a-given-string-using-linked-list/)
 
-查找给定字符串中的第一个非重复字符
-
-给定长度为 **L** 的字符串 **str** ，任务是查找字符串中第一个非重复字符。
+给定长度为`L`的字符串`str`，任务是查找字符串中第一个非重复字符。
 
 **示例**：
 
-> **输入**：str =“ geeksforgeeks”
-> **输出**：f
+> **输入**：`str = "geeksforgeeks"`
+>
+> **输出**：`f`
 > 
-> **输入**：str =“编程器”
-> **输出**：p
+> **输入**：`str = "programmer"`
+>
+> **输出**：`p`
 
-**注意**：请参考[本文](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)的 HashMap 方法，[本文](https://www.geeksforgeeks.org/first-non-repeating-character-using-one-traversal-of-string-set-2/)作为空间优化的方法。
+**注意**：请参考[本文](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)的`HashMap`方法，[本文](https://www.geeksforgeeks.org/first-non-repeating-character-using-one-traversal-of-string-set-2/)作为空间优化的方法。
 
 **链表方法**：的想法是使用[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)来跟踪字符串中的唯一元素。 下面是该方法的说明：
 
@@ -127,7 +127,7 @@ f
 
 **效果分析**：
 
-*   **时间复杂度**：O（N * 26）
+*   **时间复杂度**：`O(N * 26)`
 
 *   **辅助空间**：`O(n)`
 
