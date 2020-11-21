@@ -459,7 +459,7 @@ public static void Main(String []args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 First List is: 9->4->6

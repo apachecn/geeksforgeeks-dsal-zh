@@ -633,7 +633,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Polynomial 1

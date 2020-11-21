@@ -322,7 +322,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 5 4 3 2
@@ -711,7 +711,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 5 4 3 2
@@ -953,7 +953,7 @@ public static void Main(String[] args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 10 5 4 3
@@ -1250,7 +1250,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 5 4 3 2

@@ -330,7 +330,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 The second smallest element is 10

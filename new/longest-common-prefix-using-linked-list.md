@@ -166,7 +166,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 The longest common prefix is gee

@@ -315,7 +315,7 @@ public class LinkedList_Palindrome 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 true

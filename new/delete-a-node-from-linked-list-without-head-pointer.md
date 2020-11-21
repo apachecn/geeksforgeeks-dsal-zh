@@ -131,7 +131,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Initial Linked List: 

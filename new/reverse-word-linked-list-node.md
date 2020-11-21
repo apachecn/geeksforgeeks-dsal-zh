@@ -337,7 +337,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 List before reverse: 

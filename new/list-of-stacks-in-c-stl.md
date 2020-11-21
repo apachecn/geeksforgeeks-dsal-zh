@@ -138,7 +138,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 List of stack is : 

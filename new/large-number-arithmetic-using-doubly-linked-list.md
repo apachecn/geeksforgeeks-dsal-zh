@@ -756,7 +756,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Product :

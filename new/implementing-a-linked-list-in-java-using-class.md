@@ -137,7 +137,7 @@ public class LinkedList {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 LinkedList: 1 2 3 4 5 6 7 8
@@ -248,7 +248,7 @@ public class LinkedList {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 LinkedList: 1 2 3 4 5 6 7 8
@@ -481,7 +481,7 @@ public class LinkedList {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 LinkedList: 1 2 3 4 5 6 7 8 
@@ -724,7 +724,7 @@ public class LinkedList {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 LinkedList: 1 2 3 4 5 6 7 8 
@@ -1026,7 +1026,7 @@ public class LinkedList {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 LinkedList: 1 2 3 4 5 6 7 8 

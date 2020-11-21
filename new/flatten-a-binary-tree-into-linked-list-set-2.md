@@ -380,7 +380,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 The Inorder traversal after flattening binary tree 1 2 3 4 5 6

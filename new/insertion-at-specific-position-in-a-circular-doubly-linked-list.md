@@ -797,7 +797,7 @@ public static void Main() 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 The list is: 1 2 3 4 5 6

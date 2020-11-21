@@ -425,7 +425,7 @@ public class LinkedList
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Created Linked list is:

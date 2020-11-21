@@ -420,7 +420,7 @@ static public void Main(String []args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Contents of Circular Linked List

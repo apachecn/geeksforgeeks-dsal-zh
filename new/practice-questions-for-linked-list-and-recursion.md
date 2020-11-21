@@ -591,7 +591,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
  Output of fun1() for list 1->2->3->4->5 

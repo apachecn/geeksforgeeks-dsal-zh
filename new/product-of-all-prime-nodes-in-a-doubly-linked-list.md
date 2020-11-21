@@ -450,7 +450,7 @@ class DLL 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Product of Prime Nodes : 119

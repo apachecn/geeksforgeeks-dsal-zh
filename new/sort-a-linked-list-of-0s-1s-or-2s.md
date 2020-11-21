@@ -570,7 +570,7 @@ public class LinkedList
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Linked List Before Sorting

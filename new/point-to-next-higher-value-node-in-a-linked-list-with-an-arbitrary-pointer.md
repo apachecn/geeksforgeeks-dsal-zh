@@ -720,7 +720,7 @@ public class LinkedList
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Result Linked List is:

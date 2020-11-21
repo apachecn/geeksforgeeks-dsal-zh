@@ -404,7 +404,7 @@ public class LinkedList {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1 -> 2 -> 3 -> 4 -> 5 
@@ -609,7 +609,7 @@ public static void main(String args[])
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 6 9 3 8 7
@@ -721,7 +721,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1 ->2 ->3 ->4 ->5 

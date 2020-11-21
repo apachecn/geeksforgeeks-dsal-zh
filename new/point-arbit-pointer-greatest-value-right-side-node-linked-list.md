@@ -455,7 +455,7 @@ class GfG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Resultant Linked List is: 

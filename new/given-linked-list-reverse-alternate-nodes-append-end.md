@@ -573,7 +573,7 @@ public class LinkedList {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Linked list before calling  rearrange() 1 2 3 4 5 6 7

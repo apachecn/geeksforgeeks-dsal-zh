@@ -408,7 +408,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Nth node from last is: 5

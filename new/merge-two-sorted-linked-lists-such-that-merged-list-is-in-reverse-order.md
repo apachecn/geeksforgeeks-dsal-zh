@@ -567,7 +567,7 @@ class LinkedList
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 List A before merge: 

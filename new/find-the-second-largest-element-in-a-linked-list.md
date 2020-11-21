@@ -473,7 +473,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 The second largest element is 34

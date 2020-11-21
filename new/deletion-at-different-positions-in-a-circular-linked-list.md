@@ -1305,7 +1305,7 @@ public static void Main(String []args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Initial List: 99 11 22 33 44 55 66 

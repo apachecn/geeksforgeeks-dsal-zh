@@ -824,7 +824,7 @@ public class LinkedList {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
  1  2  3

@@ -100,7 +100,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Created Linked List: 

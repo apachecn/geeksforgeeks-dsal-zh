@@ -8,7 +8,7 @@
 
 [在单链表](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)中插入节点
 
-**D** 整体 **L** 着墨 **L** ist（DLL）包含一个额外的指针，通常称为*前一个指针*，以及下一个指针和数据 在单链列表中。
+双链表（DLL）相比单链表包含一个额外的指针，通常称为*上一个指针*，以及`next`指针和数据。
 
 ![dll](img/1fac4717827a04f080fae80f8fd57fe7.png)
 
@@ -74,11 +74,11 @@ class Node:
 
 在单链列表中，要删除节点，需要指向上一个节点的指针。 为了获得该先前节点，有时会遍历列表。 在 DLL 中，我们可以使用先前的指针获取先前的节点。
 
-**比单链表**
+**与单链表相比**
 
-1.  的缺点 DLL 的每个节点都需要额外的空间才能存储先前的指针。 尽管可以用单个指针来实现 DLL（请参阅[和](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)[）。
+1.  DLL 的缺点是每个节点都需要额外的空间才能存储先前的指针。 尽管可以用单个指针来实现 DLL（请参阅[和](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)[）。
 
-2.  所有操作都需要事先维护一个额外的指针。 例如，在插入时，我们需要同时修改前一个指针和下一个指针。 例如，在以下用于在不同位置插入的函数中，我们需要 1 或 2 个额外的步骤来设置上一个指针。](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
+2.  所有操作都需要事先维护一个额外的指针。 例如，在插入时，我们需要同时修改`prev`指针和`next`指针。 例如，在以下用于在不同位置插入的函数中，我们需要 1 或 2 个额外的步骤来设置上一个指针。](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
 
 **插入**
 
@@ -94,7 +94,7 @@ class Node:
 
 **1）在前面添加一个节点：（一个 5 个步骤的过程）**
 
-新节点总是添加在给定链表的开头之前。 新添加的节点成为 DLL 的新负责人。 例如，如果给定的链表为 10152025，并且我们在前面添加了项 5，则链表将变为 510152025。让我们将添加到列表前面的函数称为 push（）。 push（）必须接收一个指向 head 指针的指针，因为 push 必须将 head 指针更改为指向新节点（请参见[此](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）
+新节点总是添加在给定链表的开头之前。 新添加的节点成为 DLL 的新头部。 例如，如果给定的链表为 10152025，并且我们在前面添加了项 5，则链表将变为 510152025。让我们将添加到列表前面的函数称为`push()`。 `push()`必须接收一个指向头部指针的指针，因为`push`必须将头部指针更改为指向新节点（请参见[这里](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）
 
 ![dll_add_front](img/dab559af89903b5bc676844fb02d24d2.png)
 
@@ -182,7 +182,7 @@ def push(self, new_data):
 
 **2）在给定节点之后添加一个节点：（一个 7 个步骤的过程）**
 
-我们获得了一个指向节点的指针作为 prev_node，并且在该给定节点之后插入了新节点。
+我们获得了一个指向节点的指针作为`prev_node`，并且在该给定节点之后插入了新节点。
 
 ![dll_add_middle](img/daad8225776aba03cdc04f3ae862498f.png)
 
@@ -293,7 +293,7 @@ def insertAfter(self, prev_node, new_data):
 
 **3）在最后添加一个节点：（7 个步骤的过程）**
 
-新节点总是添加在给定链表的最后一个节点之后。 例如，如果给定的 DLL 是 510152025，而我们在末尾添加了第 30 个项目，则 DLL 变为 51015202530。
+新节点总是添加在给定链表的最后一个节点之后。 例如，如果给定的 DLL 是`5 10 15 20 25`，而我们在末尾添加了第 30 个项目，则 DLL 变为`5 10 15 20 25 30`。
 
 由于链表通常由其开头表示，因此我们必须遍历该列表直到结尾，然后 将最后一个节点的下一个更改为新节点。
 
@@ -423,23 +423,23 @@ def append(self, new_data):
 
 **步骤**
 
-让指向此给定节点的指针为 next_node，并将要添加的新节点的数据作为 new_data。
+让指向此给定节点的指针为`next_node`，并将要添加的新节点的数据作为`new_data`。
 
-1.  检查 next_node 是否为 NULL。 如果为 NULL，则从函数返回，因为在 NULL 之前不能添加任何新节点
+1.  检查`next_node`是否为`NULL`。 如果为`NULL`，则从函数返回，因为在`NULL`之前不能添加任何新节点
 
-2.  为新节点分配内存，将其称为 new_node
+2.  为新节点分配内存，将其称为`new_node`
 
-3.  设置 new_node-> data = new_data
+3.  设置`new_node->data = new_data`
 
-4.  将此 new_node 的前一个指针设置为 next_node 的前一个节点，new_node-> prev = next_node-> prev
+4.  将此`new_node`的`prev`指针设置为`next_node`的前一个节点，`new_node->prev = next_node->prev`
 
-5.  将 next_node 的前一个指针设置为 new_node，next_node-> prev = new_node
+5.  将`next_node`的`prev`指针设置为`new_node`，`next_node->prev = new_node`
 
-6.  将此 new_node 的下一个指针设置为 next_node，new_node-> next = next_node;
+6.  将此`new_node`的`next`指针设置为`next_node`，`new_node->next = next_node`
 
-7.  如果 new_node 的前一个节点不为 NULL，则将此前一个节点的下一个指针设置为 new_node，new_node-> prev-> next = new_node
+7.  如果`new_node`的前一个节点不为`NULL`，则将此前一个节点的`next`指针设置为`new_node`，`new_node->prev->next = new_node`
 
-8.  否则，如果 new_node 的 prev 为 NULL，它将是新的头节点。 因此，使（* head_ref）= new_node。
+8.  否则，如果`new_node`的`prev`为`NULL`，它将是新的头节点。 因此，使`(*head_ref) = new_node`。
 
 ![](img/6ce69f9c3a8fb0f6c8180d85ec0d62fd.png)
 
@@ -1341,7 +1341,7 @@ public class DLL 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
  Created DLL is:

@@ -385,7 +385,7 @@ public static void Main(String[] args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1  2  2  3  5  8  10  

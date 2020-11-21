@@ -386,7 +386,7 @@ public class LinkedList
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Yes
@@ -783,7 +783,7 @@ public class LinkedList
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Yes

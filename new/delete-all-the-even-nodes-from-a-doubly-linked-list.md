@@ -513,7 +513,7 @@ public static void Main(String []args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original List: 15 16 7 6 17 

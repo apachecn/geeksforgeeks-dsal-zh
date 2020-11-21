@@ -265,7 +265,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Modular node is 4

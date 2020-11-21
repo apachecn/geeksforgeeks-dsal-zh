@@ -455,7 +455,7 @@ public static void Main() 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 a 3 b r 2
@@ -562,7 +562,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 a 3 b r 2

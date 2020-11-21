@@ -320,7 +320,7 @@ public static void Main(String []args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 6 8 10 12 14

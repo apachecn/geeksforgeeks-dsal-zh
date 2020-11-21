@@ -618,7 +618,7 @@ public class LinkedList
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1 -> 4 -> 0 -> 5 -> NULL

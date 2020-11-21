@@ -501,7 +501,7 @@ public static void Main(String[] args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given linked list is:10 20 30 40

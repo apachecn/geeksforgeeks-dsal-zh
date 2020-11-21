@@ -475,7 +475,7 @@ class BinarySearch
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Present

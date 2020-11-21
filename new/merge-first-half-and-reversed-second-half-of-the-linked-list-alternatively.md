@@ -492,7 +492,7 @@ public static void Main(String []args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Before Modifying: 1->2->3->4->5

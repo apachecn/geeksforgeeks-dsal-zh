@@ -72,8 +72,7 @@
 
     ```
 
-    **Output:**
-
+    **输出**：
     ```
     Element at index 0 : 10
     Element at index 1 : 20
@@ -161,8 +160,7 @@
 
     ```
 
-    **Output:**
-
+    **输出**：
     ```
     Linked list : [D, A, E, B, C, F, G]
     Linked list after deletion: [A, E, F]
@@ -348,8 +346,7 @@
 
     ```
 
-    **Output:**
-
+    **输出**：
     ```
     Created DLL is: 
     Traversal in forward Direction
@@ -427,8 +424,7 @@
 
     ```
 
-    **Output:**
-
+    **输出**：
     ```
     4
     3
@@ -494,8 +490,7 @@
 
     ```
 
-    **Output:**
-
+    **输出**：
     ```
     Elements of queue-[0, 1, 2, 3, 4]
     removed element-0
@@ -638,8 +633,7 @@
 
     ```
 
-    **Output:**
-
+    **输出**：
     ```
     Preorder traversal of binary tree is
     1 2 4 5 3 

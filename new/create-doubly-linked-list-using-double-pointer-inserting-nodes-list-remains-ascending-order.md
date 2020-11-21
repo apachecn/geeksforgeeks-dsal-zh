@@ -552,7 +552,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Doubly linked list on printing from left to right

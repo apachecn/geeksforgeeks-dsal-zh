@@ -601,7 +601,7 @@ public static void Main() 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 2 10 4 5 30 50

@@ -334,7 +334,7 @@ public static void Main(String []args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Average of nodes = 5.2

@@ -59,7 +59,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Element at index 0 is 5
@@ -112,7 +112,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 The elements are: 1 2 3 4 5 6 7 8 9 10
@@ -141,7 +141,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 100
@@ -196,7 +196,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 100
@@ -279,7 +279,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1 2 3 4 5 6 7 8 9 10 
@@ -420,7 +420,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Current Linked List is: 3 1 5 7 

@@ -313,7 +313,7 @@ public class reverseStackWithoutSpace 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original Stack 

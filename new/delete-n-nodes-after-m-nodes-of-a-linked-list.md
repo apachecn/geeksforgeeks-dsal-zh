@@ -575,7 +575,7 @@ public static void Main(String []args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 M = 2, N = 3

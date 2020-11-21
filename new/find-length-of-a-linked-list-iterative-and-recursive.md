@@ -358,7 +358,7 @@ public class LinkedList
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 count of nodes is 5
@@ -648,7 +648,7 @@ public class LinkedList 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 count of nodes is 5

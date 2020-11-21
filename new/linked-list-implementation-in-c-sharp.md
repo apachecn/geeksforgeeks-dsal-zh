@@ -103,7 +103,7 @@ class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Best students of XYZ university:
@@ -223,7 +223,7 @@ class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Best students of XYZ university initially:
@@ -303,7 +303,7 @@ class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Element Found...!!

@@ -41,7 +41,7 @@ public class Test {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 [D, A, E, B, C]
@@ -82,7 +82,7 @@ public class GFG { 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 [Geeks, For, Geeks]
@@ -118,7 +118,7 @@ public class GFG { 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Initial LinkedList [Geeks, Geeks, Geeks]
@@ -166,7 +166,7 @@ public class GFG { 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Initial LinkedList [Geeks, For, Geeks]
@@ -212,7 +212,7 @@ public class GFG { 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Geeks For Geeks 

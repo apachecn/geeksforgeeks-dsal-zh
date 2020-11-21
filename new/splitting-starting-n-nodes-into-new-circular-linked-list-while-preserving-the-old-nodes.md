@@ -543,7 +543,7 @@ public class CircularLinkedList
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original list:

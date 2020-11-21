@@ -423,7 +423,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original List: 6 9 8 7 4 

@@ -645,7 +645,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original Doubly linked list:

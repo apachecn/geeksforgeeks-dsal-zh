@@ -212,7 +212,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original List: 15 16 8 6 13 

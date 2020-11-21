@@ -492,7 +492,7 @@ public class LinkedlistIS 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Linked List before sorting

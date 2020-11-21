@@ -638,7 +638,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original Doubly linked list:

@@ -399,7 +399,7 @@ public static void Main(String []args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given Linked List: 12 15 10 11 5 6 2 3 

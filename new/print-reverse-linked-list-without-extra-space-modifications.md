@@ -283,7 +283,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 5 4 3 2 1

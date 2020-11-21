@@ -1173,7 +1173,7 @@ public class LinkedList
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given linked list

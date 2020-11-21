@@ -139,7 +139,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1st Number: 5x^2 + 4x^1 + 2x^0

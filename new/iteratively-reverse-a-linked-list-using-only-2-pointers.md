@@ -182,7 +182,7 @@ llist.printList()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given linked list
@@ -330,7 +330,7 @@ printList(head)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given linked list

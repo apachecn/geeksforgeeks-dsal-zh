@@ -496,7 +496,7 @@ public static void Main(String []args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 5 -> 7 -> 4 -> 8 -> NULL

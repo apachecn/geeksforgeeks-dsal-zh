@@ -464,7 +464,7 @@ class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given Linked List A: 
@@ -946,7 +946,7 @@ class GFG
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given Linked List A: 

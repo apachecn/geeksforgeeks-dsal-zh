@@ -543,7 +543,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 8 -> -2 -> 4 -> 12 -> 7 -> 10

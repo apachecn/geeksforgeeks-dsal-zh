@@ -134,7 +134,7 @@ class MinDS
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Elements: 5, 10, 15, 20, 

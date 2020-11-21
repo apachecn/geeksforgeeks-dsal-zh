@@ -583,7 +583,7 @@ class GfG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given Linked List

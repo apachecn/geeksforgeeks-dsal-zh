@@ -390,7 +390,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given circular linked list: 1 2 3 4

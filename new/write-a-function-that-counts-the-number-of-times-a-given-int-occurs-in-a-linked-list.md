@@ -356,7 +356,7 @@ class LinkedList {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 count of 1 is 3

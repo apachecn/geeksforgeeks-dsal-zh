@@ -621,7 +621,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Created Linked list is:  6-> 4-> 8-> 7-> 9-> 11-> 2

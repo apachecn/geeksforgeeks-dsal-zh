@@ -518,7 +518,7 @@ public class LinkedList 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 First Linked List:

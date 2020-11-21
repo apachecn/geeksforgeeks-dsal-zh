@@ -246,7 +246,7 @@ public class GfG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Yes

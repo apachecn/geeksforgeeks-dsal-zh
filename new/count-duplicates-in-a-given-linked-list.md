@@ -294,7 +294,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 2
@@ -572,7 +572,7 @@ public static void Main(String[] args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 2

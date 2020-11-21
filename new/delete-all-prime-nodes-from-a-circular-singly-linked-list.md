@@ -622,7 +622,7 @@ public static void Main() 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given List : 9 11 32 6 13 20 

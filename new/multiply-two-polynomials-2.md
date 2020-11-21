@@ -405,7 +405,7 @@ printPoly($prod, $m+$n-1);
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 First polynomial is

@@ -499,7 +499,7 @@ public static void Main(String []args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 List after deletion : 57 11 61

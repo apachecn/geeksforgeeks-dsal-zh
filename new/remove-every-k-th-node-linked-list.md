@@ -520,7 +520,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1 2 4 5 7 8

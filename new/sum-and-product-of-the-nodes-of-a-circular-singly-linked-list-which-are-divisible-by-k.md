@@ -594,7 +594,7 @@ class GFG
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Initial List: 5 6 7 8 9 10 11 11 

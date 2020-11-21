@@ -543,7 +543,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original List: 15 16 10 9 6 7 17 

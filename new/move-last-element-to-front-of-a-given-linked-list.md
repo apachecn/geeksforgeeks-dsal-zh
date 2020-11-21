@@ -499,7 +499,7 @@ class LinkedList 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
  Linked list before moving last to front 

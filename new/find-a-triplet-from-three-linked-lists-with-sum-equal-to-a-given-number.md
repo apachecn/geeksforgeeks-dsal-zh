@@ -576,7 +576,7 @@ bool isSumSorted(LinkedList la, LinkedList lb, 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Triplet Found: 15 2 8

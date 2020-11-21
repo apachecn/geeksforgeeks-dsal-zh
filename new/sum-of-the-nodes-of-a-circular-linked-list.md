@@ -340,7 +340,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Sum of Circular linked list is = 81

@@ -218,7 +218,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Total number of connected components are 3

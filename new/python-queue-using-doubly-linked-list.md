@@ -140,7 +140,7 @@ if __name__=='__main__': 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Queue operations using doubly linked list

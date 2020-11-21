@@ -323,7 +323,7 @@ class LinkedList {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
  First list is

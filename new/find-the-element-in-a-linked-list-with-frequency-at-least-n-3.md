@@ -285,7 +285,7 @@ print(Majority_in_linklist(head))
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 geeks

@@ -303,7 +303,7 @@ public class UnrolledLinkedList_Check {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Entered Element is 90

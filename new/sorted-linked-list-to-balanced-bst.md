@@ -886,7 +886,7 @@ public class LinkedList 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given Linked List 1 2 3 4 5 6 7 

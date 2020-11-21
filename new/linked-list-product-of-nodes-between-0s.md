@@ -399,7 +399,7 @@ public class inPlaceStoreLL 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 6-> 20-> 42

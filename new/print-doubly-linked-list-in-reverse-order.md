@@ -371,7 +371,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Linked List elements in reverse order : 

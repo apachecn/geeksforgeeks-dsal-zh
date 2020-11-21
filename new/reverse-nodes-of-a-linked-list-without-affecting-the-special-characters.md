@@ -442,7 +442,7 @@ class GFG
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given linked list: geek$sforg#@eek$s

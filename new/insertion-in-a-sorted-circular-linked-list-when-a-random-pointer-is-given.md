@@ -449,7 +449,7 @@ public static void Main(String []args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1 2 11 12 56 90

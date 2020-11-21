@@ -449,7 +449,7 @@ public static void Main(String[] args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original list is : 1 2 9 9 

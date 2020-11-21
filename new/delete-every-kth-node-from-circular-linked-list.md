@@ -626,7 +626,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1->2->3->4->5->6->7->8->9->1

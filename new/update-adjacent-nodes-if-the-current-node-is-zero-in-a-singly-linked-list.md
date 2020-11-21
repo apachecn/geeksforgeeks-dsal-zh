@@ -514,7 +514,7 @@ public static void Main(String[] args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 2 3 4 0 0 0 0 0

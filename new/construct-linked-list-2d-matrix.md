@@ -336,7 +336,7 @@ public class Linked_list_2D_Matrix
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1 2 3 

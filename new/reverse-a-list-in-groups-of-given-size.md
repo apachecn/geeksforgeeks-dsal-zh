@@ -527,7 +527,7 @@ public class LinkedList 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given Linked List

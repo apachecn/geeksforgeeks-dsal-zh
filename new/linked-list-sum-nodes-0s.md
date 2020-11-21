@@ -403,7 +403,7 @@ public class inPlaceStoreLL 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 5-> 9-> 6-> 7

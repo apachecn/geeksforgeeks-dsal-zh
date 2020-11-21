@@ -107,7 +107,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Gven Linked List
@@ -501,7 +501,7 @@ class GfG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Gven Linked List

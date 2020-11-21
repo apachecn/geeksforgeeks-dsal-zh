@@ -355,7 +355,7 @@ public class LinkedList
 
 ```
 
-**Output:**
+**输出**：
 
 ```
  Deleting linked list

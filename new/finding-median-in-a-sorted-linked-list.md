@@ -350,7 +350,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Median is : 3.5

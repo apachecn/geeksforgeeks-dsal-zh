@@ -256,7 +256,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Linked list before sorting

@@ -363,7 +363,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Linked list before duplicate removal 11 11 11 13 13 20 

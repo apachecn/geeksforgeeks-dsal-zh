@@ -396,7 +396,7 @@ public static void Main(String[] args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original Linked List: 1 3 4 5
@@ -714,7 +714,7 @@ class GfG
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original Linked List: 1 3 4 5

@@ -145,7 +145,7 @@ int main() 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Linked List before appending: 1 2 3 4 5 6 

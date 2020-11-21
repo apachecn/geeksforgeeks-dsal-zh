@@ -713,7 +713,7 @@ public class linkedList {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Sorted Linked List is: 

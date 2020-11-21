@@ -460,7 +460,7 @@ class GfG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given linked list 

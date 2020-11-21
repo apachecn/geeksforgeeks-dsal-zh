@@ -481,7 +481,7 @@ class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 List after deletion : 56 12 2

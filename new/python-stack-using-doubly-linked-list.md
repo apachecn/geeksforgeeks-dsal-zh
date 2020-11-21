@@ -142,7 +142,7 @@ if __name__=='__main__': 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Stack operations using Doubly LinkedList

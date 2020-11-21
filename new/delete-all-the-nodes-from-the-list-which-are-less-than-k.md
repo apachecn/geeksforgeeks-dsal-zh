@@ -125,7 +125,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Initial List: 12 15 9 11 5 6 

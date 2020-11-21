@@ -792,7 +792,7 @@ public static void Main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Modified List:
@@ -1205,7 +1205,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Modified List:

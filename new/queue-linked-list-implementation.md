@@ -432,7 +432,7 @@ public class Test {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Queue Front : 40

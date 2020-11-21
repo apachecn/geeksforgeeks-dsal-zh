@@ -545,7 +545,7 @@ public static void Main(string[] args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given List: 10 20 30 40 50 60 70 

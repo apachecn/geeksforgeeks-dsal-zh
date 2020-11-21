@@ -411,7 +411,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Display list:

@@ -280,7 +280,7 @@ public class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1 5 2 4 3 

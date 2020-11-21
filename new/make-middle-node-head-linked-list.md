@@ -523,7 +523,7 @@ public class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 list before: 1 2 3 4 5

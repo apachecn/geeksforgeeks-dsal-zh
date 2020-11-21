@@ -389,7 +389,7 @@ class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Before moveToEnd(), the Linked list is
@@ -745,7 +745,7 @@ class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Linked List before operations :

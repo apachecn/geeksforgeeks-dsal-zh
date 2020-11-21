@@ -457,7 +457,7 @@ public class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Elements in Circular Queue are: 14 22 6

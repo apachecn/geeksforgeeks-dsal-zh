@@ -508,7 +508,7 @@ print_dlist(cloned_list)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original list : 

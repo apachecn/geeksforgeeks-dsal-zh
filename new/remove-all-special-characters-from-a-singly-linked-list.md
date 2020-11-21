@@ -564,7 +564,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 G -> E -> E -> K -> S -> NULL

@@ -302,7 +302,7 @@ public class StaticQueueinjava 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Queue is Empty
@@ -654,7 +654,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1->2->3->

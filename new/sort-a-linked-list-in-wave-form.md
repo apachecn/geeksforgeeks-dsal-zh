@@ -295,7 +295,7 @@ public static void main(String args[])
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 90 10 49 1 5 2 23

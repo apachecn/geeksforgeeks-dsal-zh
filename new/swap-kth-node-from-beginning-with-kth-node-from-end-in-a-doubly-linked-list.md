@@ -534,7 +534,7 @@ public class GFG {
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 1 4 3 2 5

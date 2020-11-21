@@ -123,7 +123,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 List before reversing individual data item

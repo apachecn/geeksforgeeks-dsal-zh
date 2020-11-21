@@ -352,7 +352,7 @@ class GFG
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Modified Linked List: 12 15 11 5 6 2 3 

@@ -450,7 +450,7 @@ public static void Main() 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 6 5 5 2 3 0 2 0 0

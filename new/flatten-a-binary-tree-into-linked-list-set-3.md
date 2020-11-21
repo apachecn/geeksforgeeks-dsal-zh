@@ -433,7 +433,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original inorder traversal : 3 2 4 1 5 6 

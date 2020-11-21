@@ -598,7 +598,7 @@ public static void Main() 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original List: 15 16 7 6 17 

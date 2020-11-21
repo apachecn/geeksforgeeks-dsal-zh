@@ -477,7 +477,7 @@ public static void Main(String []args) 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original list: 10 8 4 2

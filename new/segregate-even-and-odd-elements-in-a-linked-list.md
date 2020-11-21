@@ -753,7 +753,7 @@ public class LinkedList
 
 ```
 
-**Output:**
+**输出**：
 
 ```
  Original Linked list 0 2 4 6 8 10 11
@@ -1295,7 +1295,7 @@ printList()
 
 ```
 
- **Output:**
+ **输出**：
 
 ```
 Origional Linked List

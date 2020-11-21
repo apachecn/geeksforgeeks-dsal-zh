@@ -498,7 +498,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original List: 15 16 6 7 17 

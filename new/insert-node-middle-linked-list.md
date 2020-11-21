@@ -417,7 +417,7 @@ public class LinkedList 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Linked list before insertion: 1 2 4 5
@@ -809,7 +809,7 @@ public class LinkedList
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Linked list before insertion: 1 2 4 5

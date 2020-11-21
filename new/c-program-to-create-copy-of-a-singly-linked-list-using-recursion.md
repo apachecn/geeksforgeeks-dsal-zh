@@ -160,7 +160,7 @@ int main(void)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original list: 1 -> 2 -> 3 -> 4 -> 5 -> NULL

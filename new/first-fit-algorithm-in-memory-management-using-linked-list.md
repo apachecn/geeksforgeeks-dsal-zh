@@ -216,7 +216,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Block of size 426 can't be allocated

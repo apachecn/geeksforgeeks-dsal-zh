@@ -638,7 +638,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 element    front    back    left    right    up    down

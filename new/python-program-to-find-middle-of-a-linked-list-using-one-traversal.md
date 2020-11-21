@@ -58,7 +58,7 @@ list1.printMiddle()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 The middle element is:  2
@@ -122,7 +122,7 @@ llist.printMiddle()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 100

@@ -373,7 +373,7 @@ class GFG 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Count = 1
@@ -482,7 +482,7 @@ int main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Count = 1
@@ -915,7 +915,7 @@ public static void Main(String []args)
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Count = 1

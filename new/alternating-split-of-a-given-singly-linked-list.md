@@ -408,7 +408,7 @@ if __name__ == "__main__":
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Original linked List: 0 1 2 3 4 5 

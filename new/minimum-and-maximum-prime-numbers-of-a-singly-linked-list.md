@@ -409,7 +409,7 @@ public static void Main()
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Minimum : 7

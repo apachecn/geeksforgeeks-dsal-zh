@@ -381,7 +381,7 @@ public class ReverseLinkedListRecursive 
 
 ```
 
-**Output:**
+**输出**：
 
 ```
 Given linked list
