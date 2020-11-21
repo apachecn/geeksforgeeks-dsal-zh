@@ -1,26 +1,32 @@
-# 在链表中查找频率至少为 N / 3 的元素
+# 在链表中查找频率至少为`N / 3`的元素
 
 > 原文：[https://www.geeksforgeeks.org/find-the-element-in-a-linked-list-with-frequency-at-least-n-3/](https://www.geeksforgeeks.org/find-the-element-in-a-linked-list-with-frequency-at-least-n-3/)
 
-给定大小为 **N** 的[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，其中包含字符串作为节点值，任务是查找频率大于 **[N / 3]** 的多数字符串 ]，在链表中。
+给定大小为`N`的[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，其中包含字符串作为节点值，任务是在链表中查找频率大`N / 3`的多数字符串。
 
 **注意**：确保只有一个多数字符串。
 
 **示例**：
 
-> **输入**：头->怪胎->怪胎-> abcd->游戏->骑士->怪胎->哈利。
-> **输出**：怪胎。
+> **输入**：`head -> geeks -> geeks -> abcd -> game -> knight -> geeks -> harry`
+>
+> **输出**：`geeks`
+>
 > **说明**：
-> 链表中极客字符串的频率为 3，大于[7/3]，即 2。
+>
+> 链表中`geeks`字符串的频率为 3，大于`7/3`，即 2。
 > 
-> **输入**：头->热->热->冷->热->热
-> **输出**：热
-> [ **解释**：
-> 链表中热字符串的频率为 4，大于[5/3]，即 1。
+> **输入**：`head -> hot -> hot -> cold -> hot -> hot`
+>
+> **输出**：`hot`
+>
+> **解释**：
+>
+> 链表中`hot`字符串的频率为 4，大于`5/3`，即 1。
 
 **朴素的方法**：
 
-将每个字符串的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。 遍历地图并查找频率为**≥N / 3** 的字符串。
+将每个字符串的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。 遍历地图并查找频率`≥ N / 3`的字符串。
 
 ***时间复杂度**：`O(n)`*
 
