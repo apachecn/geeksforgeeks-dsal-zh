@@ -445,7 +445,7 @@ def append(self, new_data):
 
 以下是上述方法的实现：
 
-## C / C++
+## C/C++ 
 
 ```cpp
 

@@ -34,7 +34,7 @@ Output:
 
 感谢 Shekhu 建议这种方法。 以下是此方法的 C 和 Java 实现。
 
-## C / C++
+## C/C++ 
 
 ```cpp
 

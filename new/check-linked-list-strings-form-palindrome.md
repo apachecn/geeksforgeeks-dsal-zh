@@ -18,7 +18,7 @@ String "abcdba" is not palindrome.
 
 这个想法很简单。 从给定的链表中构造一个字符串，并检查构造的字符串是否是回文。
 
-## C / C++
+## C/C++ 
 
 ```cpp
 

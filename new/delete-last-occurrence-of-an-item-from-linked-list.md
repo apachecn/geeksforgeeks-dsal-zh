@@ -463,7 +463,7 @@ Linked List after Deletion of 1:
 
 以下解决方案可处理所有情况。
 
-## C / C++
+## C/C++ 
 
 ```cpp
 

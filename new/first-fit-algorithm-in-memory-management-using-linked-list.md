@@ -41,7 +41,7 @@ Tag    Block ID    Size
 
 下面是该方法的实现：
 
-## C / C++
+## C/C++ 
 
 ```cpp
 

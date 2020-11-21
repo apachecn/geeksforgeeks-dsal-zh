@@ -10,7 +10,7 @@
 
 我们使用[循环链表 | 系列 2（遍历）](https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/)中的概念。 在遍历时，我们会跟踪节点数。
 
-## C / C++
+## C/C++ 
 
 ```cpp
 

@@ -6,7 +6,7 @@
 
 循环双重链表具有双重链表和循环链表的属性，其中两个连续元素通过上一个指针和下一个指针链接或连接，最后一个节点通过下一个指针指向第一个节点，并且第一个节点通过下一个指针指向最后一个节点 前一个指针。
 
-以下是 C / C++中的循环双向链表节点的表示形式：
+以下是 C/C++ 中的循环双向链表节点的表示形式：
 
 ```
 // Structure of the node 
@@ -29,7 +29,7 @@ struct node
 
         ![Insertion in empty list1](img/65b32f44143665810d0de3e9d287561d.png)
 
-    *   **List initially contain some nodes, start points to first node of the List:** A node(Say M) is inserted with data = 7, so previous pointer of M points to last node, next pointer of M points to first node and last node’s next pointer points to this M node and first node’s previous pointer points to this M node.
+    *   **List initially contain some nodes, start points to first node of the List:** A node(Say M) is inserted with data = 7, so previous pointer of M points to last node, next pointer of M points to first node and last node's next pointer points to this M node and first node's previous pointer points to this M node.
 
         ![Insertion in a list](img/c3909488b0091bad1dd74462d030078a.png)
 
@@ -73,7 +73,7 @@ struct node
 
         ```
 
-2.  **Insertion at the beginning of the list:** To insert a node at the beginning of the list, create a node(Say T) with data = 5, T next pointer points to first node of the list, T previous pointer points to last node the list, last node’s next pointer points to this T node, first node’s previous pointer also points this T node and at last don’t forget to shift ‘Start’ pointer to this T node.
+2.  **Insertion at the beginning of the list:** To insert a node at the beginning of the list, create a node(Say T) with data = 5, T next pointer points to first node of the list, T previous pointer points to last node the list, last node's next pointer points to this T node, first node's previous pointer also points this T node and at last don't forget to shift 'Start' pointer to this T node.
 
     ![Insertion at beginning of list](img/908f51fd4c7f6c6b4ccafc7334a49d7a.png)
 

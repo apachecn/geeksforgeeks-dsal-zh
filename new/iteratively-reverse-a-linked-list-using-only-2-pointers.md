@@ -21,7 +21,7 @@ Output : Linked list should be changed to,
 
 在文章[反向链表](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/)中，我们已经看到了如何反向链表。 在**迭代方法**中，我们使用了 3 个指针 **prev，cur** 和 **next** 。 下面是一种仅使用两个指针的有趣方法。 这个想法是使用 XOR 交换指针。
 
-## C / C++
+## C/C++ 
 
 ```cpp
 

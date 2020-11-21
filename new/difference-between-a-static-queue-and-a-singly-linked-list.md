@@ -4,9 +4,9 @@
 
 之间的区别
 
-[**静态队列**](https://www.geeksforgeeks.org/queue-data-structure/)：[队列](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)是元素的有序列表。 它始终以先进先出（FIFO）的方式工作。 所有元素都插入在*后*处，并从队列的 *FRONT* 中删除。 在静态队列的实现中，将使用数组，因此队列的所有操作都是基于索引的，这使得除删除之外的所有操作都更快，因为删除需要将所有其余元素向前移动一个位置。
+[**静态队列**](https://www.geeksforgeeks.org/queue-data-structure/)：[队列](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)是元素的有序列表。 它始终以先进先出（FIFO）的方式工作。 所有元素都插入在后面，并从队列的前面删除。 在静态队列的实现中，将使用数组，因此队列的所有操作都是基于索引的，这使得除删除之外的所有操作都更快，因为删除需要将所有其余元素向前移动一个位置。
 
-**静态队列**是使用数组实现的固定大小[的队列。](https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)
+**静态队列**是使用数组实现的[固定大小的队列](https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)。
 
 ![](img/82948d8d8cb7d62251ac84fd7509a4ae.png)
 
@@ -19,20 +19,14 @@
 **以下是静态队列和单链表**之间的一些主要区别
 
 | 静态队列 | 单链表 |
-
+| --- | --- |
 | 队列是一个或多个元素以连续方式排列在内存中的集合。 | 链表是一个或多个元素以不连续的方式排列在内存中的集合。 |
-
 | 静态队列始终是固定大小。 | 列表大小永远不会固定。 |
-
-| 在 Queue 中，仅存储一种和一种类型的信息，因为静态 Queue 实现是通过 Array 实现的。 | 列表还存储了下一个节点的地址及其内容。 |
-
+| 在队列中，仅存储一种和一种类型的信息，因为静态队列实现是通过数组实现的。 | 列表还存储了下一个节点的地址及其内容。 |
 | 静态队列基于索引。 | 单链表是基于参考的。 |
-
-| 始终可以在称为 *REAR* 的单端上执行插入操作，而可以在称为 *FRONT* 的另一端上执行删除操作。 | 列表中的任何位置都可以执行插入和删除操作。 |
-
-| 队列始终基于 FIFO。 | 列表可以基于 FIFI 或 LIFO 等。 |
-
-| 队列有两个指针 FRONT 和 REAR。 | List 仅具有一个基本上称为 HEAD 的指针。 |
+| 始终可以在称为尾部的单端上执行插入操作，而可以在称为头部的另一端上执行删除操作。 | 列表中的任何位置都可以执行插入和删除操作。 |
+| 队列始终基于 FIFO。 | 列表可以基于 FIFO 或 LIFO 等。 |
+| 队列有两个指针`FRONT`和`REAR`。 | 列表仅具有一个基本上称为`HEAD`的指针。 |
 
 **以下是静态队列**的实现：
 

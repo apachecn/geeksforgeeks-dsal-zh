@@ -10,20 +10,14 @@
 
 ![dll](img/1fac4717827a04f080fae80f8fd57fe7.png)
 
-<center>**Singly linked list vs Doubly linked list**</center>
+**Singly linked list vs Doubly linked list**
 
 | 单链表（SLL） | 双链表（DLL） |
-
 | --- | --- |
-
 | SLL 的节点只有一个数据字段和下一个链接字段。 | DLL 的节点具有数据字段，上一个链接字段和下一个链接字段。 |
-
 | ![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png) | ![dll](img/1fac4717827a04f080fae80f8fd57fe7.png) |
-
 | 在 SLL 中，只能使用下一个节点链接来进行遍历。 | In DLL, the traversal can be done using the previous node link or the next node link. |  |
-
 | 由于 SLL 只有 2 个字段，因此它比 DLL 占用更少的内存。 | DLL 比 SLL 占用更多的内存，因为它具有 3 个字段。 |
-
 | 元素访问效率较低。 | 更有效地访问元素。 |
 
 
