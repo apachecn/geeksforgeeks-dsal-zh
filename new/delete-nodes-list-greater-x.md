@@ -1,8 +1,8 @@
-# 从列表中删除所有大于 x 的节点
+# 从列表中删除所有大于`x`的节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-nodes-list-greater-x/](https://www.geeksforgeeks.org/delete-nodes-list-greater-x/)
 
-给定一个链表，问题在于从列表中删除所有大于指定值 **x** 的节点。
+给定一个链表，问题在于从列表中删除所有大于指定值`x`的节点。
 
 例子：
 
@@ -17,11 +17,11 @@ Output : 1->7->3->7
 
 ```
 
-**来源**：[Microsoft 面试经验| 设定 169。](https://www.geeksforgeeks.org/microsoft-interview-experience-set-169/)
+**来源**：[Microsoft 面试经验 | 系列 169](https://www.geeksforgeeks.org/microsoft-interview-experience-set-169/)。
 
-**方法**：这主要是帖子的一种变体，其中[删除了首次出现的给定密钥。](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)
+**方法**：这主要是帖子的一种变体，其中[删除了首次出现的给定键](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)。
 
-我们需要首先检查头节点上所有大于“ x”的事件，将其删除并适当地更改头节点。 然后，我们需要检查循环中所有出现的事件，并将它们一一删除。
+我们需要首先检查头节点上所有大于`x`的事件，将其删除并适当地更改头节点。 然后，我们需要检查循环中所有出现的事件，并将它们一一删除。
 
 ```
 

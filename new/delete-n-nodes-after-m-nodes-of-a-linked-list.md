@@ -1,10 +1,8 @@
-# 删除链表
+# 删除链表的`M`个节点后的`N`个节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-n-nodes-after-m-nodes-of-a-linked-list/](https://www.geeksforgeeks.org/delete-n-nodes-after-m-nodes-of-a-linked-list/)
 
-的 M 个节点后的 N 个节点
-
-给定一个链表和两个整数 M 和 N。遍历链表，以便保留 M 个节点，然后删除下 N 个节点，继续相同操作，直到链表结束。
+给定一个链表和两个整数`M`和`N`。遍历链表，以便保留`M`个节点，然后删除下`N`个节点，继续相同操作，直到链表结束。
 
 难度等级：菜鸟
 
@@ -30,7 +28,7 @@ Output:
 Linked List: 1->3->5->7->9
 ```
 
-问题的主要部分是维护节点之间的正确链接，确保处理所有极端情况。 以下是函数 skipMdeleteN（）的 C 实现，该函数跳过 M 个节点并删除 N 个节点，直到列表结尾。 假定 M 不能为 0。
+问题的主要部分是维护节点之间的正确链接，确保处理所有极端情况。 以下是函数`skipMdeleteN()`的 C 实现，该函数跳过`M`个节点并删除`N`个节点，直到列表结尾。 假定`M`不能为 0。
 
 ## C++
 
@@ -588,7 +586,7 @@ Linked list after deletion is :
 1 2 6 7
 ```
 
-**时间复杂度**：`O(n)`，其中 n 是链表中的节点数。
+**时间复杂度**：`O(n)`，其中`n`是链表中的节点数。
 
 本文由 [**Chandra Prakash**](https://www.facebook.com/chandra.prakash.52643) 贡献。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

@@ -21,7 +21,7 @@ Output: Modified Linked List = 14 16 48
 
 2.  遍历列表。
 
-3.  检查下一个节点是否大于 max_node，然后更新 max_node 的值并移动到下一个节点。
+3.  检查下一个节点是否大于`max_node`，然后更新`max_node`的值并移动到下一个节点。
 
 4.  否则删除下一个节点。
 

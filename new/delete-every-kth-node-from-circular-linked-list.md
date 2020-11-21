@@ -42,23 +42,23 @@ Output :
 
 **情况 3** ：列表具有多个节点。
 
-定义两个指针 curr 和 prev 并使用头节点初始化指针 curr。
+定义两个指针`curr`和`prev`并使用头节点初始化指针`curr`。
 
-使用 curr 指针遍历列表 k 次，遍历列表。
+使用`curr`指针遍历列表`k`次，遍历列表。
 
 *   要删除的节点是列表的第一个节点。
 
-    要检查的条件（当前==头& &当前->接下来==头）。
+    要检查的条件是`curr == head && curr->next == head`。
 
-    如果是，则向前移动直到到达最后一个节点。 prev 到达最后一个节点后，将 head = head-next->设置为 prev-> next = head。 删除 curr。
+    如果是，则移动`prev`直到到达最后一个节点。 到达最后一个节点后，设置`head = head->next`和`prev->next = head`。 删除`curr`。
 
 *   要删除的节点是列表中的最后一个节点。
 
-    要检查的条件是（当前->下一个==头）。
+    要检查的条件是`curr->next == head`。
 
-    如果 curr 是最后一个节点。 设置 prev-> next = head 并通过 free（curr）删除节点 curr。
+    如果`curr`是最后一个节点。 设置`prev->next = head`并通过`free(curr)`删除节点`curr`。
 
-*   要删除的节点既不是第一个节点，也不是最后一个节点，然后设置 prev-> next = temp-> next 并删除 curr。
+*   要删除的节点既不是第一个节点，也不是最后一个节点，然后设置`prev->next = temp->next` 并删除`curr`。
 
 ## C++
 
