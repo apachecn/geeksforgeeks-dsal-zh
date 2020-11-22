@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/convert-a-binary-tree-to-a-circular-doubly-link-list/](https://www.geeksforgeeks.org/convert-a-binary-tree-to-a-circular-doubly-link-list/)
 
-给定二叉树，将其转换为循环双链表（就地）。
+给定二叉树，将其转换为循环双链表（原地）。
 
 *   节点中的左指针和右指针将分别用作转换后的循环链表中的上一个指针和下一个指针。
 

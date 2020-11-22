@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/](https://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/)
 
-给定二叉树（BT），将其转换为就地双链表（DLL）。 节点中的左指针和右指针分别用作转换后的双链表中的上一个指针和下一个指针。 双链表中节点的顺序必须与给定二叉树的顺序相同。 有序遍历的第一个节点（BT 中最左边的节点）必须是双链表的头节点。
+给定二叉树（BT），将其转换为原地双链表（DLL）。 节点中的左指针和右指针分别用作转换后的双链表中的上一个指针和下一个指针。 双链表中节点的顺序必须与给定二叉树的顺序相同。 有序遍历的第一个节点（BT 中最左边的节点）必须是双链表的头节点。
 
 ![TreeToList](img/1e6723c342ed8e5706a1c58b68241a4c.png)
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/connect-leaves-doubly-linked-list/](https://www.geeksforgeeks.org/connect-leaves-doubly-linked-list/)
 
-给定一棵二叉树，将其所有叶子提取到双链表中。 请注意，需要就地创建双链表。 假设双链表和二叉树的节点结构相同，只是左右指针的含义不同。 在双链表中，左表示上一个指针，右表示下一个指针。
+给定一棵二叉树，将其所有叶子提取到双链表中。 请注意，需要原地创建双链表。 假设双链表和二叉树的节点结构相同，只是左右指针的含义不同。 在双链表中，左表示上一个指针，右表示下一个指针。
 
 ```
 Let the following be input binary tree

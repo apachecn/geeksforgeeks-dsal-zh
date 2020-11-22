@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-4-swapping-data/](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-4-swapping-data/)
 
-给定一个双向链表，我们被要求在不使用任何额外空间的情况下就地反转该列表。
+给定一个双向链表，我们被要求在不使用任何额外空间的情况下原地反转该列表。
 
 **示例**：
 

@@ -4,7 +4,7 @@
 
 实现双端队列
 
-[双端队列或双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/)是[队列数据结构](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)的通用版本，允许在两端插入和删除。 在[的先前文章](https://www.geeksforgeeks.org/implementation-deque-using-circular-array/)中，已经讨论了使用圆形数组实现 Deque 的方法。 现在，在这篇文章中，我们将了解如何使用[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)实现 Deque。
+[双端队列或双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/)是[队列数据结构](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)的通用版本，允许在两端插入和删除。 在[的先前文章](https://www.geeksforgeeks.org/implementation-deque-using-circular-array/)中，已经讨论了使用圆形数组实现`Deque`的方法。 现在，在这篇文章中，我们将了解如何使用[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)实现`Deque`。
 
 #### 计票操作；
 
@@ -35,7 +35,7 @@ erase()    : Deletes all the elements from Deque.
 
 **工作**：
 
-声明类型为**节点**的两个指针**前**和**后**，其中**节点**代表结构 双链表的节点的名称。 用值 NULL 初始化它们两个。
+声明类型为`Node`的两个指针`front`和`rear`，其中`Node`代表双链表节点的结构。 用值`NULL`初始化它们两个。
 
 **插入前端**：
 
@@ -360,7 +360,7 @@ After deleting front element new front is: 5
 
 ```
 
-时间复杂度：诸如 insertFront（），insertRear（），deleteFront（），deleteRear（）之类的操作的时间复杂度为`O(1)`。 Ease（）的时间复杂度为`O(n)`。
+时间复杂度：诸如`insertFront()`，`insertRear()`，`deleteFront()`，`deleteRear()`之类的操作的时间复杂度为`O(1)`。 `Ease()`的时间复杂度为`O(n)`。
 
 
 

@@ -1034,7 +1034,7 @@ public Node sortedMerge(Node A, Node B) 
 
 请参考以下帖子以了解更简单的实现：
 
-[**合并两个排序列表（就地）**](https://www.geeksforgeeks.org/merge-two-sorted-lists-place/)
+[**合并两个排序列表（原地）**](https://www.geeksforgeeks.org/merge-two-sorted-lists-place/)
 
 来源： [http://cslibrary.stanford.edu/ 105 / LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 

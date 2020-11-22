@@ -1,4 +1,4 @@
-# 合并两个已排序的列表（就地）
+# 合并两个已排序的列表（原地）
 
 > 原文：[https://www.geeksforgeeks.org/merge-two-sorted-lists-place/](https://www.geeksforgeeks.org/merge-two-sorted-lists-place/)
 

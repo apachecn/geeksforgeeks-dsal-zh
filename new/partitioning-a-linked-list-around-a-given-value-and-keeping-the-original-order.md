@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/partitioning-a-linked-list-around-a-given-value-and-keeping-the-original-order/](https://www.geeksforgeeks.org/partitioning-a-linked-list-around-a-given-value-and-keeping-the-original-order/)
 
-给定一个链表和一个值 x，对它进行分区，以使所有小于 x 的节点排在最前面，然后是所有值等于 x 的节点，最后是值大于或等于 x 的节点。 三个分区中每个分区中节点的原始相对顺序都应保留。 分区必须就地工作。
+给定一个链表和一个值 x，对它进行分区，以使所有小于 x 的节点排在最前面，然后是所有值等于 x 的节点，最后是值大于或等于 x 的节点。 三个分区中每个分区中节点的原始相对顺序都应保留。 分区必须原地工作。
 
 例子：
 
