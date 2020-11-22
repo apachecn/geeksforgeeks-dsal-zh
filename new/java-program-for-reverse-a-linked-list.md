@@ -1,4 +1,4 @@
-# 反向链表的 Java 程序
+# 反转链表的 Java 程序
 
 > 原文：[https://www.geeksforgeeks.org/java-program-for-reverse-a-linked-list/](https://www.geeksforgeeks.org/java-program-for-reverse-a-linked-list/)
 
