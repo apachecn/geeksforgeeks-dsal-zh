@@ -9,7 +9,7 @@
 **示例**：
 
 ```
-Input  : {“geeksforgeeks”, “geeks”, “geek”, “geezer”}
+Input  : {"geeksforgeeks", "geeks", "geek", "geezer"}
 Output : "gee"
 
 Input  : {"apple", "ape", "april"}
@@ -27,7 +27,7 @@ Output : "ap"
 
 *   链表中的其余数据是所需的最长公共前缀。
 
-下面是 C++中的实现
+下面是 C++ 中的实现
 
 ```
 

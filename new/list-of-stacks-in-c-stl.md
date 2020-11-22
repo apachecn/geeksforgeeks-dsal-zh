@@ -8,29 +8,39 @@
 
 **语法**：
 
-> 列表<类型> name_of_list；
+```
+list<Type> name_of_list;
+```
 
 [**栈**](http://www.geeksforgeeks.org/stack-data-structure/) 是一种容器适配器，具有的 LIFO（后进先出）类型，其中有一个新元素 在一端添加，并且（顶部）仅从该端删除元素。
 
 **语法**：
 
-> 栈 <type>name_of_stack;</type>
+```
+stack name_of_stack;
+```
 
-**栈列表**是具有一系列栈的容器的类型，这是一个二维容器，其中 **N** 行的列表和 **M** 列的栈 ，两个尺寸的大小都是不固定的。 可以使用 [迭代器](https://www.geeksforgeeks.org/iterators-c-stl/) 遍历和访问的。
+**栈列表**是具有一系列栈的容器的类型，这是一个二维容器，其中`N`行的列表和`M`列的栈 ，两个尺寸的大小都是不固定的。 可以使用[迭代器](https://www.geeksforgeeks.org/iterators-c-stl/) 遍历和访问的。
 
 **语法**：
 
-> 列表<stack>> name_of_container（size）;
-> ，尺寸可选</stack>
+```
+list<stack> name_of_container(size);
+```
+
+尺寸可选。
 
 ![](img/613ddcac41d3b7f794d44f0223b1d831.png)
 
 **示例**：
 
-> 列表<stack>> ls（10）;
-> 栈列表的大小为 10</stack>
+```
+list<stack> ls(10);
+```
 
-**插入**：[使用 **push（）**函数完成栈列表](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)的插入。
+栈列表的大小为 10。
+
+**插入**：[使用`push()`函数完成栈列表的插入](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)。
 
 **示例**：
 
@@ -73,7 +83,7 @@ for (iterator it = ls.begin();
 
 ```
 
-上面的代码使用开始迭代器 **ls.begin（）**和结束迭代器 **ls.end（）**在每个索引处遍历**列表< int > ls** 。 为了访问元素，它使用**（* it）**作为栈，而[指针](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)指向**列表中的元素<栈< int > > ls [** 。
+上面的代码使用开始迭代器`ls.begin()`和结束迭代器`ls.end()`在每个索引处遍历`list<stack<int>> ls`。 为了访问元素，它使用`*it`作为栈，而[指针](https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/)指向`list<stack<int>> ls`列表中的元素。
 
 下面是说明栈列表中的插入和遍历的程序：
 

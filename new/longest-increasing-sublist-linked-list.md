@@ -17,7 +17,7 @@ Output : Number of continuously increasing elements = 3
 
 ```
 
-这个想法是遍历单链表，并比较 curr-> data 和 curr-> next-> data，其中 curr 是要遍历的当前节点。 如果 curr-> data 较小，则 curr-> next-> data 则 curr 指针指向 curr-> next，并将长度（连续增加的元素）加 1。 如果条件为假，则将长度与 max 进行比较，如果 max 小于 len，则将 len 值分配给 max。 继续此过程，直到 head 不等于 NULL。 还要找到连续增加元素的起始指标。 接下来遍历链表，并在链表中显示连续增加的元素。
+这个想法是遍历单链表，并比较`curr->data`和`curr->next->data`，其中`curr`是要遍历的当前节点。 如果`curr->data`较小，则`curr`指针指向`curr->next`，并将长度（连续增加的元素）加 1。 如果条件为假，则将长度与`max`进行比较，如果`max`小于`len`，则将`len`值分配给`max`。 继续此过程，直到`head`不等于`NULL`。 还要找到连续增加元素的起始指标。 接下来遍历链表，并在链表中显示连续增加的元素。
 
 ## C++
 
