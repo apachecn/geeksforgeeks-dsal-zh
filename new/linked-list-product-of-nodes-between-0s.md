@@ -1,8 +1,8 @@
-# 节点之间的链表乘积为 0
+# 节点之间乘积为 0 的链表
 
 > 原文：[https://www.geeksforgeeks.org/linked-list-product-of-nodes-between-0s/](https://www.geeksforgeeks.org/linked-list-product-of-nodes-between-0s/)
 
-给定一个链表，其中包含一系列用“ 0”分隔的数字。 生产它们并原地存储在链表中。
+给定一个链表，其中包含一系列用 0 分隔的数字。 生产它们并原地存储在链表中。
 
 **注意**：输入中不会存在连续的零。
 
@@ -21,7 +21,7 @@ Output : 1->2->3->4
 
 1.  开始遍历链表的节点。
 
-2.  在 temp.data！= 0 时进行迭代，并将这些数据乘积为变量“ prod”。
+2.  在`temp.data != 0`时进行迭代，并将这些数据乘积为变量`prod`。
 
 3.  当您遇到 0 作为节点数据时，请更改先前节点的指针。
 

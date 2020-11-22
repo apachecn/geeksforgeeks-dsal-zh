@@ -16,7 +16,7 @@
 
 ![linkedlist_deletion](img/fe3a6a2699fb99ae5429afd588e89619.png)
 
-由于链表的每个节点都是使用 C 语言中的 malloc（）动态分配的，因此我们需要调用 [free（）](http://www.cplusplus.com/reference/cstdlib/free/)来释放为要删除的节点分配的内存。
+由于链表的每个节点都是使用 C 语言中的`malloc()`动态分配的，因此我们需要调用[`free()`](http://www.cplusplus.com/reference/cstdlib/free/)来释放为要删除的节点分配的内存。
 
 ## C++
 

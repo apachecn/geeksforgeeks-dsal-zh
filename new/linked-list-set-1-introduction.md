@@ -14,13 +14,15 @@
 
 2.  在元素数组中插入新元素非常昂贵，因为必须为新元素创建空间，并且必须移动现有元素来创建空间。
 
-例如，在系统中，如果我们在数组 id []中维护 ID 的排序列表。
+例如，在系统中，如果我们在数组`id[]`中维护 ID 的排序列表。
 
-id [] = [1000，1010，1050，2000，2040]。
+```
+id[] = [1000, 1010, 1050, 2000, 2040]
+```
 
 如果要插入新的 ID 1005，则要维持排序顺序，我们必须将所有元素都移到 1000（不包括 1000）之后。
 
-除非使用某些特殊技术，否则数组删除也很昂贵。 例如，要删除 id []中的 1010，必须移动 1010 之后的所有内容。
+除非使用某些特殊技术，否则数组删除也很昂贵。 例如，要删除`id[]`中的 1010，必须移动 1010 之后的所有内容。
 
 **优于数组**
 
@@ -38,7 +40,7 @@ id [] = [1000，1010，1050，2000，2040]。
 
 **表示形式**：
 
-链表由指向链表的第一个节点的指针表示。 第一个节点称为头。 如果链表为空，则 head 的值为 NULL。
+链表由指向链表的第一个节点的指针表示。 第一个节点称为`head`。 如果链表为空，则`head`的值为`NULL`。
 
 列表中的每个节点至少包括两部分：
 
@@ -48,7 +50,7 @@ id [] = [1000，1010，1050，2000，2040]。
 
 在 C 语言中，我们可以使用结构表示一个节点。 以下是带有整数数据的链表节点的示例。
 
-在 Java 或 C#中，LinkedList 可以表示为一个类，而 Node 可以表示为单独的类。 LinkedList 类包含 Node 类类型的引用。
+在 Java 或 C# 中，`LinkedList`可以表示为一个类，而`Node`可以表示为单独的类。`LinkedList`类包含`Node`类类型的引用。
 
 ## C
 
@@ -138,7 +140,7 @@ class LinkedList {
 
 ```
 
-**C 中的第一个简单链表**让我们创建一个包含 3 个节点的简单链表。
+**C 中的第一个简单链表**：让我们创建一个包含 3 个节点的简单链表。
 
 ## C++
 
@@ -179,7 +181,7 @@ int main()
     +---+-----+     +----+----+     +----+----+  
 
 # represents any random value.  
-Data is random because we haven’t assigned  
+Data is random because we haven't assigned  
 anything yet */
 
     head->data = 1; // assign data in first node 
@@ -283,7 +285,7 @@ int main()
     +---+-----+     +----+----+     +----+----+ 
 
    # represents any random value. 
-   Data is random because we haven’t assigned  
+   Data is random because we haven't assigned  
    anything yet  */
 
     head->data = 1; // assign data in first node 
@@ -565,9 +567,7 @@ public class LinkedList {
 
 **链表遍历**
 
-在上一个程序中，我们创建了一个包含三个节点的简单链表。 让我们遍历创建的列表并打印每个节点的数据。 为了遍历，让我们编写一个通用函数 printList（），该函数打印任何给定的列表。
-
-## [我们强烈建议您单击此处并进行实践，然后再继续解决方案。](https://practice.geeksforgeeks.org/problem-page.php?pid=700004)
+在上一个程序中，我们创建了一个包含三个节点的简单链表。 让我们遍历创建的列表并打印每个节点的数据。 为了遍历，让我们编写一个通用函数`printList()`，该函数打印任何给定的列表。
 
 ## C++
 
@@ -832,11 +832,11 @@ public class LinkedList {
 
 **重要链接**：
 
-*   [在链表](http://quiz.geeksforgeeks.org/data-structure/linked-list/)上练习 MCQ 问题
+*   [在链表上练习 MCQ 问题](http://quiz.geeksforgeeks.org/data-structure/linked-list/)
 
 *   [链表数据结构页面](https://www.geeksforgeeks.org/data-structures/linked-list/)
 
-*   [链表上的编码实践问题。](https://practice.geeksforgeeks.org/topics/Linked%20List/)
+*   [链表上的编码实践问题](https://practice.geeksforgeeks.org/topics/Linked%20List/)
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 
