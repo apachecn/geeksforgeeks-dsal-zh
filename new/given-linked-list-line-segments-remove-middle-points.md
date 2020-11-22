@@ -27,7 +27,7 @@ There is only one vertical line, so all middle points are removed.
 
 资料来源： [Microsoft 面试体验](https://www.geeksforgeeks.org/microsoft-interview-experience-set-41-campus/)
 
-这个想法是跟踪当前节点，下一个节点和下一个下一个节点。 下一个节点与下一个下一个节点相同时，请继续删除下一个节点。 在这个完整的过程中，我们需要注意指针的移动并检查 NULL 值。
+这个想法是跟踪当前节点，下一个节点和下一个下一个节点。 下一个节点与下一个下一个节点相同时，请继续删除下一个节点。 在这个完整的过程中，我们需要注意指针的移动并检查`NULL`值。
 
 以下是上述想法的实现。
 
@@ -695,7 +695,7 @@ Modified Linked List:
 (0,10)-> (10,10)-> (10,5)-> (40,5)-> 
 ```
 
-上述解决方案的时间复杂度为`O(n)`，其中 n 是给定链表中节点的数量。
+上述解决方案的时间复杂度为`O(n)`，其中`n`是给定链表中节点的数量。
 
 **练习**：
 
