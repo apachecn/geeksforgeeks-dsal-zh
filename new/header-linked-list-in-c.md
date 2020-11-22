@@ -1,8 +1,6 @@
-# C 中的
+# C 中的标头链表
 
-> 原文：[https://www.geeksforgeeks.org/header-linked-list-in-c/](https://www.geeksforgeeks.org/header-linked-list-in-c/)
-
-# 标头链表
+> 原文：[https://www.geeksforgeeks.org/header-linked-list-in-c/](https://www.geeksforgeeks.org/header-linked-list-in-c/) 
 
 **必备软件**：[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，[循环链表](https://www.geeksforgeeks.org/circular-linked-list/)
 
@@ -123,13 +121,13 @@ int main()
 
 *   假设我们有
 
-    **F（x）= 5x <sup>5</sup> – 3x <sup>3</sup> + 2x <sup>2</sup> + x <sup>1</sup> + 10x <sup>0</sup>**
+    `F(x) = 5x^5 – 3x^3 + 2x^2 + x^1 + 10x^0`
 
-*   从 F（x）表示的多项式可以清楚地看出，该多项式具有**系数**和**指数**两部分，其中 **x** 是**形式参数** 。 因此，我们可以说多项式是项的和，每个项都由一个系数和一个指数组成。
+*   从`F(x)`表示的多项式可以清楚地看出，该多项式具有**系数**和**指数**两部分，其中 **x** 是**形式参数** 。 因此，我们可以说多项式是项的和，每个项都由一个系数和一个指数组成。
 
 *   计算机实现要求将多项式实现为系数和指数对的*列表。 这些对中的每对都将构成一个结构，因此多项式将表示为结构列表。*
 
-*   如果要在链表的帮助下表示 F（x），则该表将包含 5 个节点。 当我们链接每个节点时，我们得到一个表示多项式 **F（x）**的链表结构。
+*   如果要在链表的帮助下表示`F(x)`，则该表将包含 5 个节点。 当我们链接每个节点时，我们得到一个表示多项式`F(x)`的链表结构。
 
 ![](img/e63324fcab864282717639a4d2a00458.png)
 
