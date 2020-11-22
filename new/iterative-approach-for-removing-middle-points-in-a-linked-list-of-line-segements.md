@@ -4,7 +4,7 @@
 
 这篇文章解释了[这个](http://www.geeksforgeeks.org/given-linked-list-line-segments-remove-middle-points/)问题的迭代方法。
 
-我们维护两个指针：prev 和 temp。 如果这两个 x 或 y 相同，我们继续前进直到等式成立，并继续删除它们之间的节点。 从其开始相等的节点，我们调整该节点的下一个指针。
+我们维护两个指针：`prev`和`temp`。 如果这两个`x`或`y`相同，我们继续前进直到等式成立，并继续删除它们之间的节点。 从其开始相等的节点，我们调整该节点的下一个指针。
 
 ## C++
 

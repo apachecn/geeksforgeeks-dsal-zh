@@ -18,7 +18,7 @@
 
 *   *head- > next = reverse（next，k）*（递归调用其余列表并链接两个子列表）
 
-*   返回*上一个*（*上一个*成为列表的新标题（请参见[的迭代方法图）](https://www.geeksforgeeks.org/reverse-a-linked-list/)）
+*   返回*上一个*（*上一个*成为列表的新头部（请参见[的迭代方法图）](https://www.geeksforgeeks.org/reverse-a-linked-list/)）
 
 下图显示了反向功能的工作原理：
 

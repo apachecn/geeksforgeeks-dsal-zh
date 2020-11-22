@@ -1,8 +1,6 @@
-# 链表
+# 链表的迭代式选择排序
 
 > 原文：[https://www.geeksforgeeks.org/iterative-selection-sort-for-linked-list/](https://www.geeksforgeeks.org/iterative-selection-sort-for-linked-list/)
-
-的迭代选择排序
 
 给定一个链表，任务是使用选择排序以升序对链表进行排序。
 
@@ -17,7 +15,7 @@ Output : 2->3->4->5
 
 ```
 
-**选择排序算法**：迭代给定列表 N 次，其中 N 是列表中元素的数量。 在选择排序的每次迭代中，都会从未排序的子数组中选取最小元素（考虑升序）并将其移至已排序的子数组。
+**选择排序算法**：迭代给定列表`N`次，其中`N`是列表中元素的数量。 在选择排序的每次迭代中，都会从未排序的子数组中选取最小元素（考虑升序）并将其移至已排序的子数组。
 
 **示例**：
 

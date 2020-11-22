@@ -18,19 +18,19 @@
 
 如果位置有效：
 
-1.  在内存中创建一个 newNode。
+1.  在内存中创建一个`newNode`。
 
-2.  使用临时指针（ **temp** ）在列表中遍历，直到节点恰好在需要插入新节点的给定位置之前。
+2.  使用临时指针（`temp`）在列表中遍历，直到节点恰好在需要插入新节点的给定位置之前。
 
 3.  通过执行以下操作来插入新节点：
 
-    *   分配 newNode-> next = temp-> next
+    *   赋值`newNode->next = temp->next`
 
-    *   将 newNode-> prev 分配为 temp-> next
+    *   将`newNode->prev`赋值为`temp->next`
 
-    *   将 temp-> next 分配为 newNode
+    *   将`temp->next`赋值为`newNode`
 
-    *   假设（temp-> next）-> prev as newNode-> next
+    *   赋值`temp->next->prev`赋值`newNode->next`
 
 以下是上述想法的实现：
 
@@ -805,7 +805,7 @@ The list is: 1 2 8 3 4 5 6
 
 ```
 
-**时间复杂度**：`O(n)`= >用于计数列表，`O(n)`= >插入元素。 因此，总复杂度为 O（n + n）=`O(n)`
+**时间复杂度**：`O(n)`用于计数列表，`O(n)`用于插入元素。 因此，总复杂度为`O(n + n) = O(n)`
 
 
 

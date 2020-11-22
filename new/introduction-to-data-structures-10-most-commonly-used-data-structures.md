@@ -1,4 +1,4 @@
-# 数据结构简介| 10 种最常用的数据结构
+# 数据结构简介 | 10 种最常用的数据结构
 
 > 原文：[https://www.geeksforgeeks.org/introduction-to-data-structures-10-most-commonly-used-data-structures/](https://www.geeksforgeeks.org/introduction-to-data-structures-10-most-commonly-used-data-structures/)
 
@@ -20,13 +20,13 @@
 
     主要在栈中执行以下三个基本操作：
 
-    *   **推入**：在栈中添加一个项目。 如果栈已满，则称其为溢出条件。
+    *   `push`：在栈中添加一个项目。 如果栈已满，则称其为溢出条件。
 
-    *   **弹出**：从栈中删除一个项目。 这些项目以推入的相反顺序弹出。 如果栈为空，则称其为下溢条件。
+    *   `pop`：从栈中删除一个项目。 这些项目以推入的相反顺序弹出。 如果栈为空，则称其为下溢条件。
 
-    *   **窥视或顶部**：返回栈的顶部元素。
+    *   `peek/top`：返回栈的顶部元素。
 
-    *   **isEmpty**：如果栈为空，则返回 true，否则返回 false。
+    *   `isEmpty`：如果栈为空，则返回`true`，否则返回`false`。
 
 4.  **[Queue](http://www.geeksforgeeks.org/queue-data-structure/):** Like Stack, Queue is a linear structure which follows a particular order in which the operations are performed. The order is First In First Out (FIFO). A good example of the queue is any queue of consumers for a resource where the consumer that came first is served first. The difference between stacks and queues is in removing. In a stack we remove the item the most recently added; in a queue, we remove the item the least recently added.
 
@@ -44,7 +44,7 @@
 
 5.  **[Binary Tree](https://www.geeksforgeeks.org/binary-tree-data-structure/):** Unlike Arrays, Linked Lists, Stack and queues, which are linear data structures, trees are hierarchical data structures. A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. It is implemented mainly using Links.
 
-    二叉树由指向树中最高节点的指针表示。 如果树为空，则 root 的值为 NULL。 二叉树节点包含以下部分。
+    二叉树由指向树中最高节点的指针表示。 如果树为空，则根的值为`NULL`。 二叉树节点包含以下部分。
 
     ```
     1\. Data
@@ -62,15 +62,15 @@
 
 7.  **[Heap](https://www.geeksforgeeks.org/heap-data-structure/):** A Heap is a special Tree-based data structure in which the tree is a complete binary tree. Generally, Heaps can be of two types:
 
-    *   **最大堆**：在最大堆中，根节点上存在的密钥必须在所有子节点上存在的密钥中最大。 对于该二叉树中的所有子树，相同的属性必须递归地为 true。
+    *   **最大堆**：在最大堆中，根节点上存在的密钥必须在所有子节点上存在的密钥中最大。 对于该二叉树中的所有子树，相同的属性必须递归地为`true`。
 
-    *   **最小堆**：在最小堆中，根节点上存在的密钥必须在所有子节点上存在的密钥中最小。 对于该二叉树中的所有子树，相同的属性必须递归地为 true。
+    *   **最小堆**：在最小堆中，根节点上存在的密钥必须在所有子节点上存在的密钥中最小。 对于该二叉树中的所有子树，相同的属性必须递归地为`true`。
 
     ![](img/ac0bc46083007c09b8f9b69ec3fe28bf.png)
 
 8.  [**Hashing Data Structure**](https://www.geeksforgeeks.org/hashing-data-structure/): Hashing is an important Data Structure which is designed to use a special function called the Hash function which is used to map a given value with a particular key for faster access of elements. The efficiency of mapping depends on the efficiency of the hash function used.
 
-    让哈希函数 H（x）将值 x 映射到数组中的索引 x％10 处。 例如，如果值列表为[11、12、13、14、15]，它将分别存储在数组或哈希表中的位置{1、2、3、4、5}。
+    让哈希函数`H(x)`将值`x`映射到数组中的索引`x % 10`处。 例如，如果值列表为`[11, 12, 13, 14, 15]`，它将分别存储在数组或哈希表中的位置`{1, 2, 3, 4, 5}`。
 
     ![](img/c21defe12ef3d99064e74c81e86e0fb2.png)
 

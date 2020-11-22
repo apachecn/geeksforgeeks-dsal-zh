@@ -34,7 +34,7 @@ PUSH（HEAD，数据，优先级）
 
 步骤 4：HEAD = NEW
 
-步骤 5：将 TEMP 设置为列表的标题
+步骤 5：将 TEMP 设置为列表的头部
 
 步骤 6：While TEMP- >下一个！= NULL 和 TEMP->下一个->优先级>优先级
 
