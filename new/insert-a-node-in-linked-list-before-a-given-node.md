@@ -4,7 +4,7 @@
 
 之前的链表中插入一个节点
 
-给定[链表](https://www.geeksforgeeks.org/data-structures/linked-list/) **N** 的节点和值 **K，**的任务是在链表中插入值为 **K** 的节点 在给定**节点 N** 之前。
+给定[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)的节点`N`和值`K`，任务是在链表中给定的节点`N`之前插入值为`K`的节点。
 
 **节点的结构：**
 
