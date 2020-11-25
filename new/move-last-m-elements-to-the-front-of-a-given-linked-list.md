@@ -1,32 +1,32 @@
-# 将最后 m 个元素移到给定链表
+# 将最后`m`个元素移到给定链表的前面
 
 > 原文：[https://www.geeksforgeeks.org/move-last-m-elements-to-the-front-of-a-given-linked-list/](https://www.geeksforgeeks.org/move-last-m-elements-to-the-front-of-a-given-linked-list/)
 
-的前面
-
-给定[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)的**头**和值 **m** ，任务是将最后 m 个元素移到最前面。
+给定[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)的头部和值`m`，任务是将最后`m`个元素移到最前面。
 
 **示例**：
 
-> **输入**：4- > 5- > 6- > 1- > 2- > 3； m = 3
-> **输出**：1- > 2- > 3- > 4- > 5- > 6
+> **输入**：`4 -> 5 -> 6 -> 1 -> 2 -> 3, m = 3`
+>
+> **输出**：`1 -> 2 -> 3 -> 4 -> 5 -> 6`
 > 
-> **输入**：0- > 1- > 2- > 3- > 4- > 5； m = 4
-> **输出**：2- > 3- > 4- > 5- > 0- > 1
+> **输入**：`0 -> 1 -> 2 -> 3 -> 4 -> 5, m = 4`
+>
+> **输出**：`2 -> 3 -> 4 -> 5 -> 0 -> 1`
 
 **算法**：
 
 1.  使用两个指针：一个用于存储最后一个节点的地址，另一个用于存储第一个节点的地址。
 
-2.  遍历列表，直到最后 m 个节点中的第一个节点。
+2.  遍历列表，直到最后`m`个节点中的第一个节点。
 
-3.  保持两个指针 p，q，即 p 作为最后 m 个节点的第一个节点，q 保持在 p 的节点之前。
+3.  保持两个指针`p, q`，即`p`作为最后`m`个节点的第一个节点，`q`保持在`p`的节点之前。
 
 4.  将最后一个节点作为原始列表的头。
 
-5.  将节点 q 的下一个设为 NULL。
+5.  将节点`q`的下一个设为`NULL`。
 
-6.  将 p 设置为头部。
+6.  将`p`设置为头部。
 
 下面是上述方法的实现。
 

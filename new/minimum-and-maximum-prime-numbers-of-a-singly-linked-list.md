@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/minimum-and-maximum-prime-numbers-of-a-singly-linked-list/](https://www.geeksforgeeks.org/minimum-and-maximum-prime-numbers-of-a-singly-linked-list/)
 
-给定一个包含 N 个节点的单链列表，任务是查找最小和最大素数。
+给定一个包含`N`个节点的单链列表，任务是查找最小和最大素数。
 
 **示例**：
 
@@ -19,13 +19,13 @@ Output : Minimum : 2
 
 **方法**：
 
-1.  这个想法是将链表遍历到最后，并将 max 和 min 变量分别初始化为 INT_MIN 和 INT_MAX。
+1.  这个想法是将链表遍历到最后，并将`max`和`min`变量分别初始化为`INT_MIN`和`INT_MAX`。
 
 2.  检查当前节点是否为素数。 如是：
 
-    *   如果当前节点的值大于 max，则将当前节点的值分配给 max。
+    *   如果当前节点的值大于`max`，则将当前节点的值分配给`max`。
 
-    *   如果当前节点的值小于 min，则将当前节点的值分配给 min。
+    *   如果当前节点的值小于`min`，则将当前节点的值分配给`min`。
 
 3.  重复上述步骤，直到到达列表末尾。
 
@@ -417,7 +417,7 @@ Maximum : 17
 
 ```
 
-**时间复杂度**：`O(n)`，其中 N 是链​​表中节点的数量。
+**时间复杂度**：`O(n)`，其中`N`是链​​表中节点的数量。
 
 
 

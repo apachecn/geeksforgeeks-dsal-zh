@@ -97,11 +97,11 @@ Min: 11
 Max: 44
 ```
 
- ****Collections.max（）** 
+`Collections.max()`
 
- **Collections.min（）方法返回指定集合中的最小元素，而 Collections.max（）返回指定集合中的最大元素（根据其元素的自然顺序）。**
+`Collections.min()`方法返回指定集合中的最小元素，而`Collections.max()`返回指定集合中的最大元素（根据其元素的自然顺序）。
 
- **```
+```
 
 // This java program find minimum and maximum value 
 // of an unsorted list of Integer by using Collection 
