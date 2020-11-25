@@ -2,15 +2,15 @@
 
 > 原文：[https://www.geeksforgeeks.org/point-to-next-higher-value-node-in-a-linked-list-with-an-arbitrary-pointer/](https://www.geeksforgeeks.org/point-to-next-higher-value-node-in-a-linked-list-with-an-arbitrary-pointer/)
 
-给定单链表，每个节点都有一个额外的“任意”指针，该指针当前指向 NULL。 需要使“任意”指针指向下一个较高值的节点。
+给定单链表，每个节点都有一个额外的“任意”指针，该指针当前指向`NULL`。 需要使“任意”指针指向下一个较高值的节点。
 
 ![listwithArbit](img/8169f1fd5a3a7a6cf9da279cda5846a5.png)
 
-**我们强烈建议您最小化您的浏览器，然后先尝试一下。**
+
 
 一种**简单解决方案**是一个遍历所有节点，对于每个节点，查找当前节点中具有下一个更大值的节点，并更改下一个指针。 该解决方案的时间复杂度为`O(N ^ 2)`。
 
-有效的**解决方案**的工作时间为 O（nLogn）。 这个想法是对链表使用[合并排序。
+有效的**解决方案**的工作时间为`O(nLogn)`。 这个想法是对链表使用[合并排序。
 
 1.  遍历输入列表，并将下一个指针复制到每个节点的仲裁指针。
 
