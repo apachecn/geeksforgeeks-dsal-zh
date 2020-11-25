@@ -1,12 +1,12 @@
-# 合并 JavaScript
+# JavaScript 中的链表的归并排序
 
 > 原文：[https://www.geeksforgeeks.org/merge-sort-linked-lists-javascript/](https://www.geeksforgeeks.org/merge-sort-linked-lists-javascript/)
 
-中链表的排序
 
-先决条件：[合并链表的排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
-合并排序通常是对链表进行排序的首选。 链表的随机访问性能较慢，使得其他一些算法（例如 quicksort）的性能较差，而其他算法（例如堆排序）则完全不可能。
+先决条件：[链表的归并排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
+
+合并排序通常是对链表进行排序的首选。 链表的随机访问性能较慢，使得其他一些算法（例如快速排序）的性能较差，而其他算法（例如堆排序）则完全不可能。
 
 ![sorting image](img/cc3d3ac699ac03f5792746b3e3e54865.png)
 
@@ -14,11 +14,13 @@
 
 例子：
 
-> 输入：5-> 4-> 3-> 2-> 1
-> 输出：1-> 2-> 3-> 4-> 5
+> 输入：`5 -> 4 -> 3 -> 2 -> 1`
+>
+> 输出：`1 -> 2 -> 3 -> 4 -> 5`
 > 
-> 输入：10-> 20-> 3-> 2-> 1
-> 输出：1-> 2-> 3-> 10-> 20
+> 输入：`10 -> 20 -> 3 -> 2 -> 1`
+>
+> 输出：`1 -> 2 -> 3 -> 10 -> 20`
 
 ```
 
@@ -54,7 +56,7 @@ LinkedList.prototype.insert = function(data) {
               } 
 
               // Now here list pointer points to last 
-              // node let’s insert out new node in it 
+              // node let's insert out new node in it 
               list.next = new Node(data) 
           } 
 } 
@@ -69,12 +71,12 @@ LinkedList.prototype.iterate = function() {
 
           // If linked list is not empty we will 
           // iterate from each Node and prints 
-          // it’s value store in “data” property 
+          // it's value store in "data" property 
 
           let list = this.head; 
 
           // we will iterate until our list variable 
-          // contains the “Next” value of the last Node 
+          // contains the "Next" value of the last Node 
           // i.e-> null 
           while (list) { 
               document.write(list.node)  

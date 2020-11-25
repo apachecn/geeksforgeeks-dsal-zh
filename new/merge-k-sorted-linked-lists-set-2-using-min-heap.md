@@ -1,8 +1,8 @@
-# 合并 k 个排序的链表 | 系列 2（使用最小堆）
+# 合并`k`个排序的链表 | 系列 2（使用最小堆）
 
 > 原文：[https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/)
 
-给定 **k** 链表，每个链表的大小为 **n** ，并且每个列表以非降序排序，将它们合并为一个排序的（非降序）链表，并打印排序的链接 列出作为输出。
+给定`k`链表，每个链表的大小为`n`，并且每个列表以非降序排序，将它们合并为一个排序的（非降序）链表，并打印排序的链接 列出作为输出。
 
 **示例**：
 
@@ -29,21 +29,21 @@ than the previous element.
 
 ```
 
-**来源**：[合并 K 个排序的链表| 方法 2](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/)
+**来源**：[合并`K`个排序的链表 | 方法 2](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/)
 
 此问题的有效解决方案已在此的**方法 3** 中讨论。
 
-**方法**：此解决方案基于 **MIN HEAP** 方法，用于解决“合并 k 个排序的数组”问题，此处在[中进行了讨论](https://www.geeksforgeeks.org/merge-k-sorted-arrays/)。
+**方法**：此解决方案基于最小堆方法，用于解决“合并`k`个排序的数组”问题，此处在[中进行了讨论](https://www.geeksforgeeks.org/merge-k-sorted-arrays/)。
 
-*MinHeap：* Min-Heap 是一个完整的二叉树，其中每个内部节点中的值小于或等于该节点的子级中的值。 将堆的元素映射到数组很简单：如果节点存储在索引 k 处，则其左子节点存储在索引 2k + 1 处，其右子节点存储在索引 2k + 2 处。
+**最小堆**：最小堆是一个完整的二叉树，其中每个内部节点中的值小于或等于该节点的子级中的值。 将堆的元素映射到数组很简单：如果节点存储在索引`k`处，则其左子节点存储在索引`2k + 1`处，其右子节点存储在索引`2k + 2`处。
 
-1.  创建一个最小堆，然后插入所有“ k”链表的第一个元素。
+1.  创建一个最小堆，然后插入所有`k`个链表的第一个元素。
 
-2.  只要 min-heap 不为空，请执行以下步骤：
+2.  只要最小堆不为空，请执行以下步骤：
 
-    1.  删除 min-heap 的顶部元素（这是 min-heap 中所有元素的当前最小值），并将其添加到结果列表中。
+    1.  删除最小堆的顶部元素（这是最小堆中所有元素的当前最小值），并将其添加到结果列表中。
 
-    2.  如果在上一步中弹出的元素旁边有一个元素（在同一链表中），则将其插入 min-heap 中。
+    2.  如果在上一步中弹出的元素旁边有一个元素（在同一链表中），则将其插入最小堆中。
 
 3.  返回合并列表的头节点地址。
 
@@ -319,13 +319,13 @@ class Node {
 
 **复杂度分析**：
 
-*   **时间复杂度**：O（N * k * log k），其中，“ N”是所有链表中元素的总数，而“ k”是列表总数。
+*   **时间复杂度**：`O(N * k * log k)`，其中，`N`是所有链表中元素的总数，而`k`是列表总数。
 
-    在最小堆中插入和删除需要 log k 时间。 因此，总体时间复杂度为 O（N * log k）。
+    在最小堆中插入和删除需要`log k`时间。 因此，总体时间复杂度为`O(N * log k)`。
 
-*   **辅助空间**：O（k）。
+*   **辅助空间**：`O(k)`。
 
-    优先级队列在任何时间点最多具有“ k”个元素，因此我们的算法所需的额外空间为 O（k）。
+    优先级队列在任何时间点最多具有`k`个元素，因此我们的算法所需的额外空间为`O(k)`。
 
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

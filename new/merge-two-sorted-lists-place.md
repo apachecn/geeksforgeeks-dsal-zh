@@ -23,7 +23,7 @@ Explanation: The output list is in sorted order.
 
 [合并两个排序的链表](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)
 
- **方法 1（递归）
+ **方法 1（递归）**
 
 **方法**：如果对链表进行排序，则可以形成递归解决方案。
 
@@ -35,11 +35,11 @@ Explanation: The output list is in sorted order.
 
 4.  现在运行带有参数，较小元素的下一个节点和另一个头的参数的递归函数。
 
-5.  递归函数将返回与其余已排序元素链接的下一个较小元素。 现在将当前元素的下一个指向该元素，即 *curr_ele- > next = recursivefunction（）*
+5.  递归函数将返回与其余已排序元素链接的下一个较小元素。 现在将当前元素的下一个指向该元素，即`curr_ele->next = recursivefunction()`
 
 6.  处理一些角落情况。
 
-    *   如果两个头都为 NULL，则返回 null。
+    *   如果两个头都为`NULL`，则返回`null`。
 
     *   如果一个头为空，则返回另一个。
 
@@ -357,7 +357,7 @@ class GFG {
 
     如果考虑了递归栈空间。
 
- **方法 2（迭代）
+ **方法 2（迭代）**
 
 **方法**：这种方法与上述递归方法非常相似。
 

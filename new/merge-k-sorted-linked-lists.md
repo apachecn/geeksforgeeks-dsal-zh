@@ -1,8 +1,8 @@
-# 合并 K 个排序的链表 | 系列 1
+# 合并`K`个排序的链表 | 系列 1
 
 > 原文：[https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/)
 
-给定 K 个大小均为 N 的排序链表，将它们合并并打印排序后的输出。
+给定`K`个大小均为`N`的排序链表，将它们合并并打印排序后的输出。
 
 **示例**：
 
@@ -168,25 +168,25 @@ int main()
 
 **复杂度分析**：
 
-*   **时间复杂度**：`O(N ^ 2)`，其中 N 是节点总数，即 N = kn。
+*   **时间复杂度**：`O(N ^ 2)`，其中`N`是节点总数，即`N = kn`。
 
 *   **辅助空间**：`O(1)`。
 
     由于不需要额外的空间。
 
- **方法 2** ****：[**最小堆**](https://www.geeksforgeeks.org/min-heap-in-java/) 。
+ **方法 2**：[**最小堆**](https://www.geeksforgeeks.org/min-heap-in-java/) 。
 
-更好的解决方案是使用基于 Min Heap 的解决方案，在此处讨论了基于数组的解决方案。 该解决方案的时间复杂度为 **O（nk Log k）**
+更好的解决方案是使用基于最小堆的解决方案，在此处讨论了基于数组的解决方案。 该解决方案的时间复杂度为`O(nk Log k)`
 
- **方法 3** ****：[**分而治之**](https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/) 。
+ **方法 3**：[**分而治之**](https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/) 。
 
-在这篇文章中，讨论了**分而治之**方法。 这种方法不需要额外的堆空间，可以在 O（nk Log k）中使用
+在这篇文章中，讨论了**分而治之**方法。 这种方法不需要额外的堆空间，可以在`O(nk Log k)`中使用
 
-众所周知，可以在`O(n)`时间和`O(1)`空间（对于数组需要`O(n)`空间）中完成两个链表的[合并。](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)
+众所周知，可以在`O(n)`时间和`O(1)`空间（对于数组需要`O(n)`空间）中完成[两个链表的合并](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)。
 
-1.  这个想法是将 K 个列表配对并使用`O(1)`空间在线性时间内合并每对。
+1.  这个想法是将`K`个列表配对并使用`O(1)`空间在线性时间内合并每对。
 
-2.  在第一个循环之后，剩下的 K / 2 个列表的大小均为 2 * N。 在第二个循环之后，剩下的 K / 4 个列表的大小均为 4 * N，依此类推。
+2.  在第一个循环之后，剩下的`K / 2`个列表的大小均为`2 * N`。 在第二个循环之后，剩下的`K / 4`个列表的大小均为`4 * N`，依此类推。
 
 3.  重复该过程，直到只剩下一个列表。
 
@@ -557,15 +557,15 @@ public class Node {
 
 **复杂度分析**：
 
-*   **时间复杂度**：O（nk logk）。
+*   **时间复杂度**：`O(nk logk)`。
 
-    由于功能 mergeKLists（）中的外部 while 循环运行 k 次，每次处理 nk 个元素时，运行 log。
+    由于功能`mergeKLists()`中的外部`while`循环运行`k`次，每次处理`nk`个元素时，运行`log`。
 
 *   **辅助空间**：`O(1)`。
 
     由于不需要额外的空间。
 
-[合并 k 个排序的链表 | 系列 2（使用最小堆）](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/)
+[合并`k`个排序的链表 | 系列 2（使用最小堆）](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/)
 
 本文由 **Aditya Goel** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，那么您也可以写一篇文章，然后将您的文章邮寄到 contribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

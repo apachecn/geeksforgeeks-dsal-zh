@@ -19,11 +19,11 @@ Output: res: 20->3->2
 
 **简单解决方案**要执行以下操作。
 
-1.  [反向列出第一个“ a”](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/) 。
+1.  [反转第一个列表`"a"`](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/) 。
 
-2.  [倒数第二个列表'b'](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/)。
+2.  [反转第二个列表`"b"`](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/)。
 
-3.  [合并两个反向列表](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)。
+3.  [合并两个反转列表](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)。
 
 另一个简单的解决方案是首先合并两个列表，然后反转合并的列表。
 
