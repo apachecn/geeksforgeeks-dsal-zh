@@ -1,8 +1,8 @@
-# 在链表中的第 k 个位置循环
+# 在链表中的第`k`个位置循环
 
 > 原文：[https://www.geeksforgeeks.org/make-loop-k-th-position-linked-list/](https://www.geeksforgeeks.org/make-loop-k-th-position-linked-list/)
 
-给定一个链表和位置 k。 在第 k 个位置循环
+给定一个链表和位置`k`。 在第`k`个位置循环
 
 **示例**：
 
@@ -15,13 +15,13 @@ Output : Modified linked list
 
 **算法**
 
-1.  遍历第一个链表直到第 k 个点
+1.  遍历第一个链表直到第`k`个点
 
-2.  备份第 k 个节点
+2.  备份第`k`个节点
 
 3.  遍历链表直到最后
 
-4.  将最后一个节点附加到第 k 个节点
+4.  将最后一个节点附加到第`k`个节点
 
 ## C++
 

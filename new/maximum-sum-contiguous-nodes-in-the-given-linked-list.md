@@ -8,14 +8,17 @@
 
 **示例**：
 
-> **输入**：-2-> -3-> 4-> -1-> -2-> 1-> 5-> -3- > NULL
+> **输入**：`-2 -> -3 -> 4 -> -1 -> -2 -> 1 -> 5 -> -3 -> NULL`
+>
 > **输出**：7
-> 4-> -1-> -2-> 1-> 5 是给定的子列表 和。
+>
+> `4 -> -1 -> -2 -> 1 -> 5`是给定的子列表。
 > 
-> **输入**：1-> 2-> 3-> 4->空
+> **输入**：`1 -> 2 -> 3 -> 4 -> NULL`
+>
 > **输出**：10
 
-**方法：[该](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)文章在[中讨论了 Kadane 的算法，该算法适用于数组以找到最大子数组总和，但也可以对其进行修改以适用于链表。 由于 Kadane 的算法不需要访问随机元素，因此它也可以线性时间应用于链表。](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)**
+**方法**：[该文章](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)讨论了 [Kadane 的算法](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)，该算法适用于数组以找到最大子数组总和，但也可以对其进行修改以适用于链表。 由于 Kadane 的算法不需要访问随机元素，因此它也可以线性时间应用于链表。
 
 下面是上述方法的实现：
 
