@@ -1,8 +1,8 @@
-# 以相反的顺序打印链表的最后 k 个节点| 递归方法
+# 以相反的顺序打印链表的最后`k`个节点| 递归方法
 
 > 原文：[https://www.geeksforgeeks.org/print-the-last-k-nodes-of-the-linked-list-in-reverse-order/](https://www.geeksforgeeks.org/print-the-last-k-nodes-of-the-linked-list-in-reverse-order/)
 
-给定一个包含 **N 个**节点和正整数 **k** 的链表应小于或等于 N。任务是打印该节点的最后 **k** 个节点。 以相反的顺序列出。
+给定一个包含`N`个节点和正整数`k`的链表应小于或等于`N`。任务是打印该节点的最后`k`个节点。 以相反的顺序列出。
 
 **示例**：
 
@@ -17,7 +17,7 @@ Output: 8 2 12 9
 
 **来源**：[校园外 Amazon Interview Experience SDE](https://www.geeksforgeeks.org/amazon-interview-experience-sde-off-campus/) 。
 
-**递归方法**：递归遍历链表。 从每个递归调用返回时，请跟踪节点编号，将最后一个节点视为编号 1，将倒数第二个节点视为编号 2，依此类推。 可以借助全局变量或指针变量来跟踪此计数。 借助此 count 变量，打印节点号小于或等于 **k** 的节点。
+**递归方法**：递归遍历链表。 从每个递归调用返回时，请跟踪节点编号，将最后一个节点视为编号 1，将倒数第二个节点视为编号 2，依此类推。 可以借助全局变量或指针变量来跟踪此计数。 借助此`count`变量，打印节点号小于或等于`k`的节点。
 
 下面是上述方法的实现：
 
@@ -327,19 +327,19 @@ public static void Main(String []args) 
 
 1.  将所有链表节点推入栈。
 
-2.  从栈中弹出 k 个节点并进行打印。
+2.  从栈中弹出`k`个节点并进行打印。
 
 **时间复杂度**：`O(n)`。
 
-**两指针方法**的想法类似于[从链表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾找到第 k 个节点。
+**两指针方法**的想法类似于[从链表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾找到第`k`个节点。
 
-1.  将第一个指针向前移动 k 个节点。
+1.  将第一个指针向前移动`k`个节点。
 
 2.  现在从头开始第二个指针。
 
-3.  当第一个指针到达末尾时，第二个指针指向第 k 个节点。
+3.  当第一个指针到达末尾时，第二个指针指向第`k`个节点。
 
-4.  最后使用第二个指针，打印最后 k 个节点。
+4.  最后使用第二个指针，打印最后`k`个节点。
 
 **时间复杂度**：`O(n)`。
 

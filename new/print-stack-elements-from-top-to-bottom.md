@@ -6,11 +6,13 @@
 
 **示例**：
 
-> **输入**：S = {2，3，4，5}
-> **输出**：5 4 3 2
+> **输入**：`S = {2, 3, 4, 5}`
+>
+> **输出**：`5 4 3 2`
 > 
-> **输入**：S = {3，3，2，2}
-> **输出**：2 2 3 3
+> **输入**：`S = {3, 3, 2, 2}`
+>
+> **输出**：`2 2 3 3`
 
 [**递归**](http://www.geeksforgeeks.org/recursion/) **方法**：请按照以下步骤解决问题：
 
@@ -255,9 +257,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：`O(n)`，其中 N 是给定栈中元素的数量。*
+**时间复杂度**：`O(n)`，其中`N`是给定栈中元素的数量。
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 [**单链列表栈**](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/) **方法**：此方法讨论解决[单链列表栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)表示法的问题的解决方案。 步骤如下：
 
@@ -555,9 +557,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：`O(n)`，其中 N 是给定栈中元素的数量。*
+**时间复杂度**：`O(n)`，其中`N`是给定栈中元素的数量。
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 [**数组栈**](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) **方法**：此方法讨论[数组栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)实现中问题的解决方案。 步骤如下：
 
@@ -829,9 +831,9 @@ public static void Main(String []args)
 
 ```
 
-***时间复杂度**：`O(n)`，其中 N 是给定栈中元素的数量。*
+**时间复杂度**：`O(n)`，其中`N`是给定栈中元素的数量。
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

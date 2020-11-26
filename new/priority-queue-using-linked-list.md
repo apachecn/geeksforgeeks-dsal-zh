@@ -8,11 +8,11 @@
 
 **Operations on Priority Queue :**
 
-*   push（）：此函数用于将新数据插入队列。
+*   `push()`：此函数用于将新数据插入队列。
 
-*   pop（）：此函数从队列中删除优先级最高的元素。
+*   `pop()`：此函数从队列中删除优先级最高的元素。
 
-*   peek（）/ top（）：此函数用于获取队列中优先级最高的元素，而无需将其从队列中删除。
+*   `peek()`/`top()`：此函数用于获取队列中优先级最高的元素，而无需将其从队列中删除。
 
 可以使用常见的数据结构（如数组，链表，堆和二叉树）来实现优先级队列。
 
@@ -20,45 +20,45 @@
 
 [链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)，[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
 
-这样创建列表，以使优先级最高的元素始终位于列表的开头。 该列表根据元素的优先级以降序排列。 这使我们可以删除`O(1)`时间中的最高优先级元素。 要插入元素，我们必须遍历列表并找到合适的位置插入节点，以便维护优先级队列的整体顺序。 这使 push（）操作花费`O(n)`时间。 pop（）和 peek（）操作在固定时间内执行。
+这样创建列表，以使优先级最高的元素始终位于列表的开头。 该列表根据元素的优先级以降序排列。 这使我们可以删除`O(1)`时间中的最高优先级元素。 要插入元素，我们必须遍历列表并找到合适的位置插入节点，以便维护优先级队列的整体顺序。 这使`push()`操作花费`O(n)`时间。 `pop()`和`peek()`操作在固定时间内执行。
 
 **算法**：
 
-PUSH（HEAD，数据，优先级）
+`PUSH(HEAD, DATA, PRIORITY)`
 
-步骤 1：使用 DATA 和 PRIORITY 创建新节点
+步骤 1：使用`DATA`和`PRIORITY`创建新节点
 
-步骤 2：检查 HEAD 是否具有较低的优先级。 如果是，请执行步骤 3-4，然后结束。 否则，转到步骤 5。
+步骤 2：检查`HEAD`是否具有较低的优先级。 如果是，请执行步骤 3-4，然后结束。 否则，转到步骤 5。
 
-步骤 3：NEW-> NEXT = HEAD
+步骤 3：`NEW->NEXT = HEAD`
 
-步骤 4：HEAD = NEW
+步骤 4：`HEAD = NEW`
 
-步骤 5：将 TEMP 设置为列表的头部
+步骤 5：将`TEMP`设置为列表的头部
 
-步骤 6：While TEMP- >下一个！= NULL 和 TEMP->下一个->优先级>优先级
+步骤 6：`While TEMP->NEXT != NULL`和`TEMP->NEXT->PRIORITY > PRIORITY`
 
-步骤 7：TEMP = TEMP->下一个
+步骤 7：`TEMP = TEMP->NEXT`
 
-[循环结束]
+【循环结束】
 
-步骤 8 ：新->下一个=温度->下一个
+步骤 8 ：`NEW->NEXT = TEMP->NEXT`
 
-步骤 9：温度->下一个=新
+步骤 9：`TEMP->NEXT = NEW`
 
 步骤 10：结束
 
-POP（HEAD）
+`POP(HEAD)`
 
-步骤 2：将列表的开头设置为列表中的下一个节点。 HEAD = HEAD-> NEXT。
+步骤 2：将列表的开头设置为列表中的下一个节点。 `HEAD = HEAD->NEXT`。
 
 步骤 3：释放列表顶部的节点
 
 步骤 4：结束
 
-PEEK（HEAD）：
+`PEEK(HEAD)`
 
-步骤 1：返回 HEAD-> DATA
+步骤 1：返回`HEAD->DATA`
 
 步骤 2：结束
 

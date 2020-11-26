@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/print-reverse-of-a-linked-list-without-actually-reversing/](https://www.geeksforgeeks.org/print-reverse-of-a-linked-list-without-actually-reversing/)
 
-给定一个链表，使用递归函数反向打印。 例如，如果给定的链表为 1-> 2-> 3-> 4，则输出应为 4-> 3-> 2-> 1。
+给定一个链表，使用递归函数反向打印。 例如，如果给定的链表为`1 -> 2 -> 3 -> 4`，则输出应为`4 -> 3 -> 2 -> 1`。
 
 注意，问题仅在于打印反面。 要反转列表本身，请参阅[，](https://www.geeksforgeeks.org/reverse-a-linked-list/)，
 

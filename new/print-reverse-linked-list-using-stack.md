@@ -23,7 +23,7 @@ Output : 78 67 56 45 34 23 12
 
 2.  [反向链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，然后打印。 这需要对原始列表进行修改。
 
-3.  [一种`O(N ^ 2)`解决方案，用于打印链表](https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/)的反向列表，该列表首先计数节点，然后从末尾打印第 k 个节点。
+3.  [一种`O(N ^ 2)`解决方案，用于打印链表](https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/)的反向列表，该列表首先计数节点，然后从末尾打印第`k`个节点。
 
 在这篇文章中，讨论了有效的基于栈的解决方案。
 

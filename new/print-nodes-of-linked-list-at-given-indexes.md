@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/print-nodes-of-linked-list-at-given-indexes/](https://www.geeksforgeeks.org/print-nodes-of-linked-list-at-given-indexes/)
 
-给定一个按升序排序的单链表![l1](img/ef22f4f5e9e8d0d5bc762c4bd091359b.png "Rendered by QuickLaTeX.com")和另一个未排序的单链表![l2](img/cdb2756782724bb4ebc46f082a9e7ce9.png "Rendered by QuickLaTeX.com")。 任务是根据数据在第一链表的节点中指出的位置来打印第二链表的元素。 例如，如果第一个链表是 **1- > 2- > 5** ，则必须打印 1 <sup>st</sup> ，2 <sup>nd</sup> 和 第二个链表的第 5 <sup>个元素。</sup>
+给定一个按升序排序的单链表`l1`和另一个未排序的单链表`l2`。 任务是根据数据在第一链表的节点中指出的位置来打印第二链表的元素。 例如，如果第一个链表是`1 -> 2 -> 5`，则必须打印第二个链表的第一、第二和第五个元素。
 
 **示例**：
 
