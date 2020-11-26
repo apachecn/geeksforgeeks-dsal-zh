@@ -21,7 +21,7 @@ Output : 1 5
 
 我们已经讨论了[链表的迭代拆分。](https://www.geeksforgeeks.org/alternating-split-of-a-given-singly-linked-list/)
 
-这个想法是从第一个节点和第二个节点开始的。 让我们将这些节点称为“ a”和“ b”。 我们重复
+这个想法是从第一个节点和第二个节点开始的。 让我们将这些节点称为`a`和`b`。 我们重复
 
 ## C++
 

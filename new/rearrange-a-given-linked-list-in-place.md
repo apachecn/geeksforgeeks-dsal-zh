@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/](https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/)
 
-给定一个单链表 L <sub>0</sub> -> L <sub>1</sub> ->…-> L <sub>n-1</sub> -> L [ <sub>n</sub> 。 重新排列列表中的节点，以使新形成的列表为：L <sub>0</sub> -> L <sub>n</sub> -> L <sub>1</sub> -> L <sub>n-1</sub> -> L <sub>2</sub> -> L <sub>n-2</sub> …
+给定一个单链表`L0, L1, ..., Ln`。 重新排列列表中的节点，以使新形成的列表为`L0, Ln, L1, L(n-1), L2, ...`
 
 您需要原地执行此操作，而无需更改节点的值。
 
@@ -26,7 +26,7 @@ Output: 1 -> 5 -> 2 -> 4 -> 3
     b) Move current to next to next of current
 ```
 
-上述简单解决方案的时间复杂度为`O(N ^ 2)`，其中 n 是链表中节点的数量。
+上述简单解决方案的时间复杂度为`O(N ^ 2)`，其中`n`是链表中节点的数量。
 
 **更好的解决方案**
 
@@ -420,9 +420,9 @@ public class LinkedList {
 
 **另一种方法**：
 
-1.取两个指针 prev 和 curr，它们分别保留 head 和 head 的地址->。
+1.  取两个指针`prev`和`curr`，它们分别保留`head`和`head->next`的地址。
 
-2.比较他们的数据并交换。
+2.  比较他们的数据并交换。
 
 之后，形成一个新的链表。
 
