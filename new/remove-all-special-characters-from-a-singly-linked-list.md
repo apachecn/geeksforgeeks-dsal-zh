@@ -1,18 +1,18 @@
-# 从单个链表
+# 从单个链表中删除所有特殊字符
 
 > 原文：[https://www.geeksforgeeks.org/remove-all-special-characters-from-a-singly-linked-list/](https://www.geeksforgeeks.org/remove-all-special-characters-from-a-singly-linked-list/)
-
-中删除所有特殊字符
 
 给定一个单链表，其中每个节点代表一个包含特殊字符的字符，任务是从链表中删除所有出现的特殊字符，以便在链表中仅出现有效字符。
 
 **示例**：
 
-> **输入**：列表=（--> G-> E-> E-> *-> K-> S-> *-> NULL
-> **输出**：G-> E-> E-> K-> S-> NULL
+> **输入**：`list = ( -> G -> E -> E -> * -> K -> S -> * -> NULL`
+>
+> **输出**：`G -> E -> E -> K -> S -> NULL`
 > 
-> **输入**：A-> B-> C-> *-> @->空
-> **输出**：A-> B-> C-> NULL
+> **输入**：`A -> B -> C -> * -> @ -> NULL`
+>
+> **输出**：`A -> B -> C -> NULL`
 
 **方法**：遍历链表，如果当前节点的数据是特殊字符，则使前一个节点的下一个指向当前节点的下一个。 对具有特殊字符的每个节点执行此操作，最后打印更新的列表。
 
