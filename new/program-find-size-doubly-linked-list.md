@@ -18,13 +18,13 @@
 
 1.  初始化大小为 0。
 
-2.  初始化节点指针，temp = head。
+2.  初始化节点指针，`temp = head`。
 
-3.  在 temp 不为 NULL 时执行以下操作
+3.  在`temp`不为`NULL`时执行以下操作
 
-……a）temp = temp->接下来的
+    +   `temp = temp->next`
 
-……b）size ++;
+    +   `size++`
 
 4.  返回大小。
 

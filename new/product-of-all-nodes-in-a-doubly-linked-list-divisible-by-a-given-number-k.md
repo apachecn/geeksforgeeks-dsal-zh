@@ -1,8 +1,8 @@
-# 双链表中所有节点的乘积，该整数可被给定数 K 整除
+# 双链表中所有节点的乘积，它们可被给定数`K`整除
 
 > 原文：[https://www.geeksforgeeks.org/product-of-all-nodes-in-a-doubly-linked-list-divisible-by-a-given-number-k/](https://www.geeksforgeeks.org/product-of-all-nodes-in-a-doubly-linked-list-divisible-by-a-given-number-k/)
 
-给定一个包含 N 个节点的双链表，并给定数字 K。任务是找到所有可被 K 整除的节点的乘积。
+给定一个包含`N`个节点的双链表，并给定数字`K`。任务是找到所有可被`K`整除的节点的乘积。
 
 **示例**：
 
@@ -17,7 +17,7 @@ Output : Product = 384
 
 ```
 
-这个想法是遍历双向链表并一一检查节点。 如果某个节点的值可被 K 整除，则将该节点的值乘以到目前为止的乘积，并在未到达列表末尾的情况下继续此过程。
+这个想法是遍历双向链表并一一检查节点。 如果某个节点的值可被`K`整除，则将该节点的值乘以到目前为止的乘积，并在未到达列表末尾的情况下继续此过程。
 
 下面是上述方法的实现：
 
@@ -403,7 +403,7 @@ Product = 810
 
 ```
 
-**时间复杂度**：`O(n)`，其中 N 是节点数。
+**时间复杂度**：`O(n)`，其中`N`是节点数。
 
 
 

@@ -788,7 +788,7 @@ public static void Main(String[] args)
 
 5.  将链表恢复为原始顺序。
 
-6.  退货。
+6.  返回。
 
 下面是上述方法的实现：
 
@@ -1125,7 +1125,7 @@ public static void Main(String[] args)
 
 4.  然后遍历其余的`n`个节点，并遍历它们的乘积。
 
-5.  退货。
+5.  返回。
 
 下面是上述方法的实现：
 
