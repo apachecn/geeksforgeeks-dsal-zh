@@ -1,12 +1,12 @@
-# Python 程序使用一次遍历来查找链表的中间
+# Python 程序：使用一次遍历来查找链表的中间
 
 > 原文：[https://www.geeksforgeeks.org/python-program-to-find-middle-of-a-linked-list-using-one-traversal/](https://www.geeksforgeeks.org/python-program-to-find-middle-of-a-linked-list-using-one-traversal/)
 
-给定一个单链表，找到链表的中间。 给定一个单链表，找到链表的中间。 例如，如果给定的链表为 1-> 2-> 3-> 4-> 5，则输出应为 3。
+给定一个单链表，找到链表的中间。 给定一个单链表，找到链表的中间。 例如，如果给定的链表为`1 -> 2 -> 3 -> 4 -> 5`，则输出应为 3。
 
 **方法 1**：
 
-遍历整个链表并计算编号。 节点。 现在再次遍历列表，直到 count / 2 并返回 count / 2 处的节点。
+遍历整个链表并计算节点数量。 现在再次遍历列表，直到`count / 2`并返回`count / 2`处的节点。
 
 **方法 2**：
 
@@ -67,11 +67,9 @@ The middle element is:  2
 
 **方法 3**：
 
-初始化临时变量为 head
+初始化临时变量为`head`，初始化计数为零。
 
-初始化计数为零
-
-循环执行，直到 head 变为 Null（即列表的末尾），并在 count 为时增加临时节点 仅奇数，以这种方式 temp 将遍历到元素的中部，并且 head 将遍历所有链表。 打印温度数据。
+循环执行，直到`head`变为`Null`（即列表的末尾），并在`count`为时增加临时节点 仅奇数，以这种方式`temp`将遍历到元素的中部，并且`head`将遍历所有链表。 打印临时数据。
 
 ```
 
