@@ -1,28 +1,40 @@
-# 单链表
+# 单链表的所有斐波那契节点的总和与乘积
 
 > 原文：[https://www.geeksforgeeks.org/sum-and-product-of-all-fibonacci-nodes-of-a-singly-linked-list/](https://www.geeksforgeeks.org/sum-and-product-of-all-fibonacci-nodes-of-a-singly-linked-list/)
 
-的所有斐波那契节点的总和与乘积
-
-给定一个包含 **N 个**节点的[单链列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从列表中找到其数据值为斐波那契数的所有节点的和与积。
+给定一个包含`N`个节点的[单链列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从列表中找到其数据值为斐波那契数的所有节点的和与积。
 
 **示例**：
 
-> **输入**：LL = 15-> 16-> 8-> 6-> 13
-> **输出**：总和= 21，乘积= 104
+> **输入**：`LL = 15 -> 16 -> 8 -> 6 -> 13`
+>
+> **输出**：`sum = 21, product = 104`
+>
 > **说明**：
+>
 > 该列表包含 2 个斐波那契数据值 8 和 13。
+>
 > 因此：
-> 总和= 8 + 13 = 21
-> 乘积= 8 * 13 = 104
+>
+> ```
+> sum = 8 + 13 = 21
+> product = 8 * 13 = 104
+> ```
 > 
-> **输入**：LL = 5-> 3-> 4-> 2-> 9
-> **输出**：总和= 10，乘积= 30
+> **输入**：`LL = 5 -> 3 -> 4 -> 2 -> 9`
+>
+> **输出**：`sum = 10, product = 30`
+>
 > **说明**：
+>
 > 该列表包含 3 个斐波那契数据值 5、3 和 2。
+>
 > 因此：
-> 总和= 5 + 3 + 2 = 10
-> 乘积= 5 * 3 * 2 = 30
+>
+> ```
+> sum = 5 + 3 + 2 = 10
+> product = 5 * 3 * 2 = 30
+> ```
 
 **方法**：的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)来预先计算并存储[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，然后检查节点是否在`O(1)`时间中包含斐波那契值 。
 
@@ -631,7 +643,7 @@ Product = 104
 
 ```
 
-***时间复杂度**：`O(n)`*，其中 N 是链​​表中节点的数量。
+**时间复杂度**：`O(n)`，其中`N`是链​​表中节点的数量。
 
 
 

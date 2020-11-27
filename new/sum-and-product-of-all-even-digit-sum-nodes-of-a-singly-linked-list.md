@@ -1,38 +1,58 @@
-# 单链表
+# 单链表的所有偶数和节点的和与乘积
 
 > 原文：[https://www.geeksforgeeks.org/sum-and-product-of-all-even-digit-sum-nodes-of-a-singly-linked-list/](https://www.geeksforgeeks.org/sum-and-product-of-all-even-digit-sum-nodes-of-a-singly-linked-list/)
 
-的所有偶数和节点的和与乘积
-
-给定一个包含 **N 个**节点的[单链列表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从列表中找到其数据值具有偶数数字和的所有节点的和与乘积。
+给定一个包含`N`个节点的[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从列表中找到其数据值具有偶数数字和的所有节点的和与乘积。
 
 **示例**：
 
-> **输入**：15-> 16-> 8-> 6-> 13
+> **输入**：`15 -> 16 -> 8 -> 6 -> 13`
+>
 > **输出**：
-> 总和= 42
-> 产品 = 9360
+>
+> ```
+> sum = 42
+> product = 9360
+> ```
+> 
 > **说明**：
+>
 > 链表中数字的所有位数的总和为：
+>
+> ```
 > 15 = 1 + 5 = 6
 > 16 = 1 + 6 = 7
 > 8 = 8
 > 6 = 6
 > 13 = 1 + 3 = 4
-> 该列表包含 4 个偶数和数据值 15、8、6 和 13。
-> 和= 15 + 8 + 6 + 13 = 42
-> 乘积= 15 * 8 * 6 * 13 = 9360
+> ```
 > 
-> **输入**：5-> 3-> 4-> 2-> 9
+> 该列表包含 4 个偶数和数据值 15、8、6 和 13。
+>
+> ```
+> sum = 15 + 8 + 6 + 13 = 42
+> product = 15 * 8 * 6 * 13 = 9360
+> ```
+>
+> **输入**：`5 -> 3 -> 4 -> 2 -> 9`
+>
 > **输出**：
-> 总和= 6
-> 产品 = 8
+>
+> ```
+> sum = 6
+> product = 8
+> ```
+> 
 > **说明**：
+>
 > 该列表包含 2 个偶数总和数据值 4 和 2。
-> 总和= 4 + 2 = 6
-> 乘积= 4 * 2 = 8
+>
+> ```
+> sum = 4 + 2 = 6
+> product = 4 * 2 = 8
+> ```
 
-**方法**：的想法是遍历给定的链表，并检查当前节点值的所有数字的[总和是否为偶数。 如果是，则将当前节点值包括到结果总和中，并将结果乘积 Else 检查下一个节点值。](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/)
+**方法**：的想法是遍历给定的链表，并检查当前节点值的所有数字的[总和是否为偶数](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/)。 如果是，则将当前节点值包括到结果总和以及结果乘积中，否则检查下一个节点值。
 
 下面是上述方法的实现：
 
@@ -359,7 +379,7 @@ Product = 9360
 
 ```
 
-***时间复杂度**：`O(n)`*，其中 N 是链​​表中节点的数量。
+**时间复杂度**：`O(n)`，其中`N`是链​​表中节点的数量。
 
 
 
