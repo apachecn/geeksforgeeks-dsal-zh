@@ -8,7 +8,7 @@
 
 ![](img/462afffb8d425a09fa443768f1676313.png)
 
-对于上述通告列表，sum = 2 + 5 + 7 + 8 + 10 = 32
+对于上述通告列表，`sum = 2 + 5 + 7 + 8 + 10 = 32`
 
 **示例**：
 
@@ -23,13 +23,13 @@ Output: Sum of Circular linked list is = 32
 
 **方法**：
 
-1.  使用链表的开头和 0 的 sum 变量初始化指针 temp。
+1.  使用链表的开头初始化指针`temp`并用 0 初始化`sum`变量。
 
 2.  Start traversing the linked list using a loop until all the nodes get traversed.
 
-    *   将当前节点的值添加到总和，即总和+ = temp->数据。
+    *   将当前节点的值添加到总和，即`sum += temp->data`。
 
-    *   递增指向链表的下一个节点的指针，即 temp = temp-> next。
+    *   递增指向链表的下一个节点的指针，即`temp = temp->next`。
 
 3.  返回总和。
 
@@ -347,7 +347,7 @@ Sum of Circular linked list is = 81
 
 ```
 
-**时间复杂度**：`O(n)`，其中 N 是链​​表中节点的数量。
+**时间复杂度**：`O(n)`，其中`N`是链​​表中节点的数量。
 
 **辅助空间**：`O(1)`
 
