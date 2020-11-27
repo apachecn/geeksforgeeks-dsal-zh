@@ -1,4 +1,4 @@
-# 使用地图
+# 使用映射
 
 > 原文：[https://www.geeksforgeeks.org/find-length-of-loop-in-a-linked-list-using-map/](https://www.geeksforgeeks.org/find-length-of-loop-in-a-linked-list-using-map/)
 
@@ -14,11 +14,11 @@
 
 1.  遍历链表的每个节点，并保持位置从一个开始。 在每个节点之后增加位置。
 
-2.  检查地图中是否存在该节点。
+2.  检查映射中是否存在该节点。
 
-3.  如果地图不包含该节点的地址，则将其及其位置插入地图。
+3.  如果映射不包含该节点的地址，则将其及其位置插入映射。
 
-4.  如果地图已经包含该节点的地址，则返回其位置之间的差。
+4.  如果映射已经包含该节点的地址，则返回其位置之间的差。
 
 5.  如果找不到这样的节点，则返回 0。
 

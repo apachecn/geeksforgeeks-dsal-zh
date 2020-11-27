@@ -1,4 +1,4 @@
-# 使用地图
+# 使用映射
 
 > 原文：[https://www.geeksforgeeks.org/detect-cycle-in-a-linked-list-using-map/](https://www.geeksforgeeks.org/detect-cycle-in-a-linked-list-using-map/)
 
@@ -32,7 +32,7 @@
 
 2.  遍历[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)并执行以下操作：
 
-    *   检查地图中是否存在当前节点。
+    *   检查映射中是否存在当前节点。
 
     *   如果[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中不存在当前节点，则在映射中插入当前节点。
 
