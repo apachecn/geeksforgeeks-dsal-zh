@@ -26,9 +26,9 @@ Reversed Doubly linked list
 
 1.  如果列表为空，则返回
 
-2.  通过交换 head- > prev 和 head- > next
+2.  通过交换`head->prev`和`head->next`来反转`head` 
 
-来反转 head 3）如果 prev = NULL，则 表示列表完全相反。 否则反转（头部->上一页）
+3.  如果`prev = NULL`，则表示列表完全反转。 否则反转`head->prev`
 
 ## C++
 

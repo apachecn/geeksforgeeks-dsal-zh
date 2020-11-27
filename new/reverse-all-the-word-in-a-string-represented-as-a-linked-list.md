@@ -1,24 +1,24 @@
-# 反转表示为链表
+# 反转表示为链表的字符串中的所有单词
 
 > 原文：[https://www.geeksforgeeks.org/reverse-all-the-word-in-a-string-represented-as-a-linked-list/](https://www.geeksforgeeks.org/reverse-all-the-word-in-a-string-represented-as-a-linked-list/)
 
-的字符串中的所有单词
+给定一个表示句子`S`的链表，使得每个节点代表一个字母，任务是在不反转单个单词的情况下反转该句子。
 
-给定一个表示句子 S 的链表，使得每个节点代表一个字母，任务是在不反转单个单词的情况下反转该句子。
+例如，对于给定的句子`I love Geeks for Geeks`，[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)表示为：
 
-例如，对于给定的句子“我爱极客，极客”，[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)表示为：
-
-I- >-> l- > o -> v- > e- >-> G- > e- > e- > k- > s- >-> f- > o- > r- >-> G- > e- > e- > k- > s
+`I -> -> l -> o  -> v -> e -> -> G -> e -> e -> k -> s -> -> f -> o -> r -> -> G -> e -> e -> k -> s`
 
 **示例**：
 
-> **输入**：我爱极客，极客
-> **输出**：极客，极客爱我
+> **输入**：`I love Geeks for Geeks`
+>
+> **输出**：`Geeks for Geeks love I`
 > 
-> **输入**：练习使人完美
-> **输出**：完美练习器使人
+> **输入**：`practice makes a man perfect`
+>
+> **输出**：`perfect man a makes practice`
 
-**方法**：的想法是从头开始导航链表。 每次遇到空格时，请将空格交换到该单词的开头。 重复此步骤，直到到达最后一个节点。 最后，将第一个单词的最后一个字母设置为指向 null，它将成为最后一个节点，并不断更改指针。
+**方法**：的想法是从头开始导航链表。 每次遇到空格时，请将空格交换到该单词的开头。 重复此步骤，直到到达最后一个节点。 最后，将第一个单词的最后一个字母设置为指向`null`，它将成为最后一个节点，并不断更改指针。
 
 下面是该方法的实现：
 

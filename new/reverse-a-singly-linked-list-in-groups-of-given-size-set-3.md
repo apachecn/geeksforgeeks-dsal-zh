@@ -2,27 +2,29 @@
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-singly-linked-list-in-groups-of-given-size-set-3/](https://www.geeksforgeeks.org/reverse-a-singly-linked-list-in-groups-of-given-size-set-3/)
 
-给定一个单链表和一个整数 **K** ，任务是反转给定链表的每个 **K** 个节点。
+给定一个单链表和一个整数`K`，任务是反转给定链表的每`K`个节点。
 
 **示例**：
 
-> **输入**：1-> 2-> 3-> 4-> 5-> 6-> 7-> 8-> NULL， K = 3
-> **输出**：3 2 1 6 5 4 8 7
+> **输入**：`1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> NULL, K = 3`
+>
+> **输出**：`3 2 1 6 5 4 8 7`
 > 
-> **输入**：1-> 2-> 3-> 4-> 5-> 6-> 7-> 8-> NULL， K = 5
-> **输出**：5 4 3 2 1 8 7 6
+> **输入**：`1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> NULL, K = 5`
+>
+> **输出**：`5 4 3 2 1 8 7 6`
 
-**方法**：本文的 [Set 1](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/) 和 [Set 2](https://www.geeksforgeeks.org/reverse-linked-list-groups-given-size-set-2/) 中讨论了两种解决此问题的方法。 在本文中，将讨论基于 [deque](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/) 的方法。
+**方法**：本文的[系列 1](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/) 和[系列 2](https://www.geeksforgeeks.org/reverse-linked-list-groups-given-size-set-2/) 中讨论了两种解决此问题的方法。 在本文中，将讨论基于[双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/)的方法。
 
-1.  创建一个羽绒。
+1.  创建一个双端队列。
 
-2.  将前 k 个节点的地址存储在双端队列中。
+2.  将前`k`个节点的地址存储在双端队列中。
 
 3.  从双端队列中弹出第一个和最后一个值，然后交换这些地址处的数据值。
 
 4.  重复步骤 3，直到双端队列不为空。
 
-5.  对接下来的 k 个节点重复步骤 2，直到未到达链表的末尾。
+5.  对接下来的`k`个节点重复步骤 2，直到未到达链表的末尾。
 
 下面是上述方法的实现：
 

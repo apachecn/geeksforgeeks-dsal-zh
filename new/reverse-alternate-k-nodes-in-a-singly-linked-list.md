@@ -1,10 +1,8 @@
-# 反向链接单个链表
+# 反向链接单个链表中的`K`个节点
 
 > 原文：[https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list/](https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list/)
 
-中的 K 个节点
-
-给定一个链表，编写一个函数以有效的方式反转每个备用 k 节点（其中 k 是函数的输入）。 给出算法的复杂性。
+给定一个链表，编写一个函数以有效的方式交替反转每`k`个节点（其中`k`是函数的输入）。 给出算法的复杂性。
 
 **示例**：
 
@@ -14,7 +12,7 @@ Output:   3->2->1->4->5->6->9->8->7->NULL.
 
 ```
 
-**方法 1（处理 2k 个节点并递归调用列表的其余部分）**
+**方法 1（处理`2k`个节点并递归调用列表的其余部分）**
 
 此方法基本上是[此](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)文章中讨论的方法的扩展。
 
@@ -571,11 +569,11 @@ Modified Linked list
 
 **时间复杂度**：`O(n)`
 
-**方法 2（处理 k 个节点并递归调用列表的其余部分）**
+**方法 2（处理`k`个节点并递归调用列表的其余部分）**
 
-方法 1 反转第一个 k 节点，然后将指针向前移动到 k 个节点。 因此，方法 1 使用两个 while 循环并在一个递归调用中处理 2k 个节点。
+方法 1 反转第一个`k`节点，然后将指针向前移动到`k`个节点。 因此，方法 1 使用两个`while` 循环并在一个递归调用中处理`2k`个节点。
 
-此方法在递归调用中仅处理 k 个节点。 它使用第三个布尔参数 b 来决定是反转 k 个元素还是简单地移动指针。
+此方法在递归调用中仅处理`k`个节点。 它使用第三个布尔参数`b`来决定是反转`k`个元素还是简单地移动指针。
 
 ```
 _kAltReverse(struct node *head, int k, bool b)
