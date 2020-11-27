@@ -18,11 +18,11 @@
 
 **如何实际理解栈？**
 
-有很多现实生活中的例子。 考虑一下在食堂中相互堆叠的盘子的简单示例。 位于顶部的板是第一个要卸下的板，即已放置在最底部位置的板在栈中保留的时间最长。 因此，可以简单地看出它遵循 LIFO / FILO 命令。
+有很多现实生活中的例子。 考虑一下在食堂中相互堆叠的盘子的简单示例。 位于顶部的板是第一个要卸下的板，即已放置在最底部位置的板在栈中保留的时间最长。 因此，可以简单地看出它遵循 LIFO/FILO 命令。
 
 **栈上操作的时间复杂度**：
 
-push（），pop（），isEmpty（）和 peek（）都需要`O(1)`时间。 在任何这些操作中，我们都不会运行任何循环。
+`push()`，`pop()`，`isEmpty()`和`peek()`都需要`O(1)`时间。 在任何这些操作中，我们都不会运行任何循环。
 
 **栈的应用**：
 
@@ -36,7 +36,7 @@ push（），pop（），isEmpty（）和 peek（）都需要`O(1)`时间。 在
 
 *   用于许多算法中，例如[河内塔](https://www.geeksforgeeks.org/recursive-functions/) [树遍历](https://www.geeksforgeeks.org/618/)，[库存跨度问题](https://www.geeksforgeeks.org/the-stock-span-problem/)，[直方图问题](https://www.geeksforgeeks.org/largest-rectangular-area-in-a-histogram-set-1/)。
 
-*   其他应用包括回溯，[骑士旅行问题](https://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/)，[迷宫中的老鼠](https://www.geeksforgeeks.org/backttracking-set-2-rat-in-a-maze/)， [N 皇后问题](https://www.geeksforgeeks.org/backtracking-set-3-n-queen-problem/)和[数独解算器](https://www.geeksforgeeks.org/backtracking-set-7-suduku/)
+*   其他应用包括回溯，[骑士旅行问题](https://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/)，[迷宫中的老鼠](https://www.geeksforgeeks.org/backttracking-set-2-rat-in-a-maze/)，[`N`皇后问题](https://www.geeksforgeeks.org/backtracking-set-3-n-queen-problem/)和[数独解算器](https://www.geeksforgeeks.org/backtracking-set-7-suduku/)
 
 *   在图算法中，例如[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)和[强连接的组件](https://www.geeksforgeeks.org/strongly-connected-components/)
 
@@ -819,9 +819,9 @@ Top element is 20
 
 **缺点**：由于涉及指针，因此需要额外的内存。
 
-我们将在单独的文章中介绍 stack 应用程序的实现。
+我们将在单独的文章中介绍栈应用程序的实现。
 
-[栈集-2（后缀的中缀）](http://quiz.geeksforgeeks.org/stack-set-2-infix-to-postfix/)
+[栈 | 系列 2（中缀转后缀）](http://quiz.geeksforgeeks.org/stack-set-2-infix-to-postfix/)
 
 **测验**：[栈问题](http://quiz.geeksforgeeks.org/data-structure/stack/)
 
