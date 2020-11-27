@@ -2,23 +2,25 @@
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)
 
-给定一个链表，编写一个函数以反转每 k 个节点（其中 k 是该函数的输入）。
+给定一个链表，编写一个函数以反转每`k`个节点（其中`k`是该函数的输入）。
 
 **示例**：
 
-> **输入**：1- > 2- > 3- > 4- > 5- > 6- > 7- > 8- > NULL， K = 3
-> **输出**：3- > 2- > 1- > 6- > 5- > 4- > 8- > 7 -> NULL
+> **输入**：`1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> NULL, K = 3`
+>
+> **输出**：`3 -> 2 -> 1 -> 6 -> 5 -> 4 -> 8 -> 7  -> NULL`
 > 
-> **输入**：1- > 2- > 3- > 4- > 5- > 6- > 7- > 8- > NULL， K = 5
-> **输出**：5- > 4- > 3- > 2- > 1- > 8- > 7- > 6 -> NULL
+> **输入**：`1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> NULL, K = 5`
+>
+> **输出**：`5 -> 4 -> 3 -> 2 -> 1 -> 8 -> 7 -> 6  -> NULL`
 
-**算法**： *[反向](https://www.geeksforgeeks.org/reverse-a-linked-list/)（头，k）*
+**算法**： `reverse(head, k)`
 
-*   反转大小为 k 的第一个子列表。 反转时，跟踪下一个节点和上一个节点。 令指向下一个节点的指针为，下一个，指向上一个节点的指针为 *prev* 。 有关反向链表的信息，请参见此帖子的[。](https://www.geeksforgeeks.org/reverse-a-linked-list/)
+*   反转大小为`k`的第一个子列表。 反转时，跟踪下一个节点和上一个节点。 令指向下一个节点的指针为`next`，指向上一个节点的指针为`prev`。 有关反向链表的信息，请参见[此帖子](https://www.geeksforgeeks.org/reverse-a-linked-list/)。
 
-*   *head- > next = reverse（next，k）*（递归调用其余列表并链接两个子列表）
+*   `head->next = reverse(next, k)`（递归调用其余列表并链接两个子列表）
 
-*   返回*上一个*（*上一个*成为列表的新头部（请参见[的迭代方法图）](https://www.geeksforgeeks.org/reverse-a-linked-list/)）
+*   返回`prev`（`prev`成为列表的新头部（请参见[迭代方法图解](https://www.geeksforgeeks.org/reverse-a-linked-list/)）。
 
 下图显示了反向功能的工作原理：
 
@@ -540,11 +542,11 @@ Reversed list
 
 *   **时间复杂度**：`O(n)`。
 
-    列表的遍历仅执行一次，并且包含“ n”个元素。
+    列表的遍历仅执行一次，并且包含`n`个元素。
 
-*   **辅助空间**：O（n / k）。
+*   **辅助空间**：`O(n / k)`。
 
-    对于大小为 n 的每个链表，将在递归过程中进行 n / k 或（n / k）+1 调用。
+    对于大小为`n`的每个链表，将在递归过程中进行`n / k`或`n / k + 1`个调用。
 
 如果您发现上述代码/算法有误，请写评论，或者找到其他解决相同问题的方法。
 

@@ -2,17 +2,19 @@
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-linked-list-in-groups-of-given-size-iterative-approach/](https://www.geeksforgeeks.org/reverse-a-linked-list-in-groups-of-given-size-iterative-approach/)
 
-给定一个链表和一个整数 **K** ，任务是反转给定链表的每个 **K** 个节点。
+给定一个链表和一个整数`K`，任务是反转给定链表的每`K`个节点。
 
 **示例**：
 
-> **输入**：1-> 2-> 3-> 4-> 5-> 6-> 7-> 8-> NULL， K = 3
-> **输出**：3 2 1 6 5 4 8 7
+> **输入**：`1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> NULL, K = 3`
+>
+> **输出**：`3 2 1 6 5 4 8 7`
 > 
-> **输入**：1-> 2-> 3-> 4-> 5-> 6-> 7-> 8-> NULL， K = 5
-> **输出**：5 4 3 2 1 8 7 6
+> **输入**：`1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> NULL, K = 5`
+>
+> **输出**：`5 4 3 2 1 8 7 6`
 
-**方法**：我们已经在帖子 [Set 1](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/) 和 [Set 2](https://www.geeksforgeeks.org/reverse-linked-list-groups-given-size-set-2/) 中讨论了递归解决方案。 在这篇文章中，我们将讨论上述问题的迭代解决方案。 与上述解决方案不同，我们不使用任何形式的栈来实现我们的解决方案。 我们反转链表的前 k 个节点。 反转时，我们使用 join 和 tail 指针跟踪 k 反转链表的第一个和最后一个节点。 反转链表的 k 个节点后，我们连接由尾指针指向的节点，并连接并更新它们。 我们重复此过程，直到所有节点组都被反转为止。
+**方法**：我们已经在帖子[系列 1](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/) 和[系列 2](https://www.geeksforgeeks.org/reverse-linked-list-groups-given-size-set-2/) 中讨论了递归解决方案。 在这篇文章中，我们将讨论上述问题的迭代解决方案。 与上述解决方案不同，我们不使用任何形式的栈来实现我们的解决方案。 我们反转链表的前`k`个节点。 反转时，我们使用连接和尾指针跟踪`k`反转链表的第一个和最后一个节点。 反转链表的`k`个节点后，我们连接由尾指针指向的节点，并连接并更新它们。 我们重复此过程，直到所有节点组都被反转为止。
 
 下面是上述方法的实现：
 
@@ -507,7 +509,7 @@ Reversed Linked list
 
 ```
 
-**时间复杂度**：`O(n)`，其中 n 是给定列表中的节点数。
+**时间复杂度**：`O(n)`，其中`n`是给定列表中的节点数。
 
 **空间复杂度**：`O(1)`
 
