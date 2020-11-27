@@ -1,8 +1,8 @@
-# 排序的链表包含从 1 到 N 的值
+# 排序的链表包含从 1 到`N`的值
 
 > 原文：[https://www.geeksforgeeks.org/sort-linked-list-containing-values-from-1-to-n/](https://www.geeksforgeeks.org/sort-linked-list-containing-values-from-1-to-n/)
 
-给定大小为 N 的链表，其中包含从 1 到 N 的所有值。任务是按递增顺序对链表进行排序。
+给定大小为`N`的链表，其中包含从 1 到`N`的所有值。任务是按递增顺序对链表进行排序。
 
 **示例**：
 
@@ -17,7 +17,7 @@ Output : 1 -> 2 -> 3 -> 4 -> 5
 
 **朴素的方法**：最简单的方法是使用任何类型的[排序方法](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)对该链表进行排序。 最少需要`O(n * logn)`个时间。
 
-**有效方法**：一种有效方法是观察链表包含总共 N 个元素，并且元素从 1 到 N 进行编号。遍历链表并将每个元素替换为其位置。
+**有效方法**：一种有效方法是观察链表包含总共`N`个元素，并且元素从 1 到`N`进行编号。遍历链表并将每个元素替换为其位置。
 
 以下是此方法的实现：
 

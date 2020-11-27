@@ -20,21 +20,21 @@
 
 **方法**：以下是步骤：
 
-1.  如果 head1 == NULL，则返回 head2。
+1.  如果`head1 == NULL`，则返回`head2`。
 
-2.  如果 head2 == NULL，则返回 head1。
+2.  如果`head2 == NULL`，则返回`head1`。
 
-3.  令 **last1** 和 **last2** 分别是两个列表的最后一个节点。 可以在第一个节点的先前链接的帮助下获得它们。
+3.  令`last1`和`last2`分别是两个列表的最后一个节点。 可以在第一个节点的先前链接的帮助下获得它们。
 
-4.  获取指向该节点的指针，该节点将成为最终列表的最后一个节点。 如果 last1.data < last2.data, then **last_node** = last2，则其他 **last_node** = last1。
+4.  获取指向该节点的指针，该节点将成为最终列表的最后一个节点。 如果`last1.data < last2.data`，则`last_node = last2`，否则`last_node = last1`。
 
-5.  更新 last1.next = last2.next = NULL。
+5.  更新`last1.next = last2.next = NULL`。
 
-6.  现在将两个列表合并为两个已排序的双向链表。 请参阅此帖子的**合并[的](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)**程序。 令最终列表的第一个节点为 **finalHead** 。
+6.  现在将两个列表合并为两个已排序的双向链表。 请参阅此帖子的[合并程序](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)。 令最终列表的第一个节点为`finalHead`。
 
-7.  更新 finalHead.prev = last_node 和 last_node.next = finalHead。
+7.  更新`finalHead.prev = last_node`和`last_node.next = finalHead`。
 
-8.  返回 **finalHead** 。
+8.  返回`finalHead`。
 
 ## C++
 
@@ -659,7 +659,7 @@ Final Sorted List: 1 2 3 5 7 8 9 11
 
 ```
 
-**时间复杂度**：O（n1 + n2）。
+**时间复杂度**：`O(n1 + n2)`。
 
 
 
