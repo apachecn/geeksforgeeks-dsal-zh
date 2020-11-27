@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/rotate-linked-list-block-wise/](https://www.geeksforgeeks.org/rotate-linked-list-block-wise/)
 
-给定长度为 n 和块长度为**的链表，k** 循环向每个块右/左旋转 **d** 。 如果 **d** 为正，则向右旋转，否则向左旋转。
+给定长度为`n`和块长度为`k`的链表，将每个块循环右/左旋转`d`。 如果`d`为正，则向右旋转，否则向左旋转。
 
 **示例**：
 
@@ -30,7 +30,7 @@ Rotate those 3 nodes also by d.
 
 先决条件：[旋转链表](https://www.geeksforgeeks.org/rotate-a-linked-list/)
 
-这个想法是，如果 d 的绝对值大于 k 的值，则将链表旋转 d％k 次。 如果 d 为 0，则根本不需要旋转链表。
+这个想法是，如果`d`的绝对值大于`k`的值，则将链表旋转`d % k`次。 如果`d`为 0，则根本不需要旋转链表。
 
 ## C++
 
