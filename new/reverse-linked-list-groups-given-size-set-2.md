@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/reverse-linked-list-groups-given-size-set-2/](https://www.geeksforgeeks.org/reverse-linked-list-groups-given-size-set-2/)
 
-给定一个链表，编写一个函数以反转每 k 个节点（其中 k 是该函数的输入）。
+给定一个链表，编写一个函数以反转每`k`个节点（其中`k`是该函数的输入）。
 
 **示例**：
 
@@ -15,13 +15,11 @@ Output:  5->4->3->2->1->8->7->6->NULL.
 
 ```
 
-我们已经在下面的
+我们已经在下面的[系列 1](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/) 中按给定大小的组反转链表。
 
-[中按给定大小的组反向链表了。 设置 1](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)
+在本文中，我们使用了一个栈，该栈将存储给定链表的节点。 首先，将链表的`k`个元素压入栈。 现在一一弹出元素，并跟踪先前弹出的节点。 将上一个节点的下一个指针指向栈的顶部元素。 重复此过程，直到达到`NULL`。
 
-在本文中，我们使用了一个栈，该栈将存储给定链表的节点。 首先，将链表的 k 个元素压入栈。 现在一一弹出元素，并跟踪先前弹出的节点。 将上一个节点的下一个指针指向栈的顶部元素。 重复此过程，直到达到 NULL。
-
-该算法使用 O（k）额外空间。
+该算法使用`O(k)`额外空间。
 
 ## C++
 

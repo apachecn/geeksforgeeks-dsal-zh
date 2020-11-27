@@ -1,10 +1,8 @@
-# 反转给定链表
+# 反转给定链表的前`K`个元素
 
 > 原文：[https://www.geeksforgeeks.org/reverse-first-k-elements-given-linked-list/](https://www.geeksforgeeks.org/reverse-first-k-elements-given-linked-list/)
 
-的前 K 个元素
-
-给定指向链表的头节点和数字 K 的指针，任务是反转链表的前 K 个节点。 我们需要通过更改节点之间的链接来反转列表。
+给定指向链表的头节点和数字`K`的指针，任务是反转链表的前`K`个节点。 我们需要通过更改节点之间的链接来反转列表。
 
 也检查[链表的反向](https://www.geeksforgeeks.org/reverse-a-linked-list/)
 
@@ -23,15 +21,15 @@ Output :18->10->20->25->35->NULL
 
 方法说明：
 
-假设链表为 1- > 2- > 3- > 4- > 5- > NULL，并且 k = 3
+假设链表为`1 -> 2 -> 3 -> 4 -> 5 -> NULL`，并且`k = 3`
 
-1.  遍历链表直到第 K 点。
+1.  遍历链表直到第`K`点。
 
-2.  从第 k 个点将链表分成两部分。 分区后的链表看起来像 1- > 2- > 3- > NULL & 4- > 5- > NULL
+2.  从第`k`个点将链表分成两部分。 分区后的链表看起来像`1 -> 2 -> 3 -> NULL`和`4 -> 5 -> NULL`
 
-3.  [反转 链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)保留第二部分，即保留为 3- > 2- > 1- > NULL 和 4- > 5- > NULL
+3.  [反转链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，保留第二部分，即保留为`3 -> 2 -> 1 -> NULL`和`4 -> 5 -> NULL`
 
-4.  连接两个部分 链表，我们得到 3- > 2- > 1- > 4- > 5- > NULL
+4.  连接两个部分 链表，我们得到`3 -> 2 -> 1 -> 4 -> 5 -> NULL`
 
 该算法如何工作的图形表示
 

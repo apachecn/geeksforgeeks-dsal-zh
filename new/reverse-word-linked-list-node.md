@@ -17,7 +17,7 @@ Output: hsilbuP ruoy nwo selcitra no skeegrofskeeg
 
 ```
 
-使用循环将列表迭代到 null，然后从每个节点获取字符串并反转字符串。
+使用循环将列表迭代到`null`，然后从每个节点获取字符串并反转字符串。
 
 ## C++
 
