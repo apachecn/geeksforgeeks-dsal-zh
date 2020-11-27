@@ -1,56 +1,66 @@
-# 单链表
+# 单链表中的斐波纳契节点上的各种操作
 
 > 原文：[https://www.geeksforgeeks.org/various-operations-on-fibonacci-nodes-in-a-singly-linked-list/](https://www.geeksforgeeks.org/various-operations-on-fibonacci-nodes-in-a-singly-linked-list/)
 
-中的斐波纳契节点上的各种操作
+给定包含`N`个节点的[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是对其中存在的斐波纳契节点执行以下操作：
 
-给定包含 **N 个**节点的[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是对其中存在的斐波纳契节点执行以下操作：
-
-1.  打印[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)中存在的所有 Fibonacci 节点。
+1.  打印[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)中存在的所有斐波纳契节点。
 
 2.  查找[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)中存在的斐波纳契节点总数。
 
 3.  找到最小和最大斐波那契节点。
 
-4.  从[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)中删除所有 Fibonacci 节点。
+4.  从[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)中删除所有斐波纳契节点。
 
 **示例**：
 
-> **输入**：LL = 15-> 16-> 8-> 6-> 13
+> **输入**：`LL = 15 -> 16 -> 8 -> 6 -> 13`
+>
 > **输出**：
-> 斐波那契节点= 8， 13
-> 斐波那契节点数= 2
-> 列表中的最小斐波那契节点= 8
-> 列表中的最大斐波那契节点= 13
-> 删除斐波那契节点后的列表= 15-> 16-> 6
+>
+> 斐波那契节点为 8，13
+>
+> 斐波那契节点数为 2
+>
+> 列表中的最小斐波那契节点为 8
+>
+> 列表中的最大斐波那契节点为 13
+>
+> 删除斐波那契节点后的列表`15 -> 16 -> 6`
 > 
-> **输入**：LL = 5-> 3-> 4-> 2-> 9
+> **输入**：`LL = 5 -> 3 -> 4 -> 2 -> 9`
+>
 > **输出**：
-> 斐波那契节点= 5， 3，2
-> 斐波那契节点数= 3
-> 列表中的最小斐波那契节点= 2
-> 列表中的最大斐波那契节点= 5
-> 删除斐波那契节点后的列表= 4-> 9
+>
+> 斐波那契节点为 5，3，2
+>
+> 斐波那契节点数为 3
+>
+> 列表中的最小斐波那契节点为 2
+>
+> 列表中的最大斐波那契节点为 5
+>
+> 删除斐波那契节点后的列表为`4 -> 9`
 
-**方法**：的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契节点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)到链表中的最大值，以使检查变得容易和高效（ 在`O(1)`时间内）。
+**方法**：想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契节点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)到链表中的最大值，以使检查变得容易和高效（ 在`O(1)`时间内）。
 
 1.  遍历整个单链列表，并在列表中获得最大值。
 
-2.  现在，构建一个[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于单链表中最大值的 Fibonacci 节点。
+2.  现在，构建一个[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于单链表中最大值的斐波那契节点。
 
 完成上述预计算后，我们可以在固定时间内检查数字是否为斐波那契。 因此，为了执行上述操作，使用了以下方法：
 
-1.  **打印 Fibonacci 节点**：遍历链表，并检查数字是否为 Fibonacci 值。 如果是，则打印它。
+1.  **打印斐波纳契节点**：遍历链表，并检查数字是否为斐波纳契值。 如果是，则打印它。
 
-2.  **计算 Fibonacci 节点的数量**：要计算链表中的 Fibonacci 节点的数量，我们遍历链表并检查该数量是否为 Fibonacci 值。
+2.  **计算斐波纳契节点的数量**：要计算链表中的斐波纳契节点的数量，我们遍历链表并检查该数量是否为斐波纳契值。
 
 3.  **Find the minimum and the maximum Fibonacci nodes:** Traverse through the linked list and check if the value at a node is a Fibonacci or not. If yes:
 
-    *   如果当前节点的值大于 **max** ，则将当前节点的值分配给 max。
+    *   如果当前节点的值大于`max`，则将当前节点的值分配给`max`。
 
-    *   如果当前节点的值小于 **min** ，则将当前节点的值分配给 min。
+    *   如果当前节点的值小于`min`，则将当前节点的值分配给`min`。
 
-    最后，max 和 min 变量包含链表中存在的最大和最小斐波那契节点。
+    最后，`max`和`min`变量包含链表中存在的最大和最小斐波那契节点。
 
 4.  **删除斐波那契节点**：为了删除斐波那契值，请遍历链表，如果数据为斐波那契，则使用[这种方法](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)删除包含数据的节点。
 
@@ -931,7 +941,7 @@ List after deletion: 15 16 6
 
 ```
 
-**时间复杂度**：*`O(n)`*，其中 N 是链​​表中节点的数量。
+**时间复杂度**：`O(n)`，其中`N`是链​​表中节点的数量。
 
 
 

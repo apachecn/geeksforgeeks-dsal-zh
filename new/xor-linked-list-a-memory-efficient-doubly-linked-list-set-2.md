@@ -8,9 +8,9 @@
 
 2.  向前遍历列表的功能。
 
-在以下代码中， *insert（）*函数在开始处插入一个新节点。 我们需要更改链表的头指针，这就是为什么要使用双指针的原因（请参见[此](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）。 让我们首先再次讨论[以前的帖子](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)中讨论过的几件事。 我们将下一个节点和上一个节点的 XOR 与每个节点存储在一起，我们将其称为 npx，这是每个节点唯一的地址成员。 当我们在开始处插入新节点时，新节点的 npx 将始终为 NULL 与当前头的 XOR。 并且当前头的 npx 必须更改为新节点与当前头旁边的节点的 XOR。
+在以下代码中， `insert()`函数在开始处插入一个新节点。 我们需要更改链表的头指针，这就是为什么要使用双指针的原因（请参见[此](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）。 让我们首先再次讨论[以前的帖子](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)中讨论过的几件事。 我们将下一个节点和上一个节点的 XOR 与每个节点存储在一起，我们将其称为`npx`，这是每个节点唯一的地址成员。 当我们在开始处插入新节点时，新节点的`npx`将始终为`NULL`与当前头的 XOR。 并且当前头的`npx`必须更改为新节点与当前头旁边的节点的 XOR。
 
-*printList（）*向前遍历列表。 它从每个节点打印数据值。 要遍历列表，我们需要在每个点都获得指向下一个节点的指针。 通过跟踪当前节点和上一个节点，我们可以获得下一个节点的地址。 如果对 curr > npx 和 prev 进行 XOR，我们将获得下一个节点的地址。
+`printList()`向前遍历列表。 它从每个节点打印数据值。 要遍历列表，我们需要在每个点都获得指向下一个节点的指针。 通过跟踪当前节点和上一个节点，我们可以获得下一个节点的地址。 如果对`curr->npx`和`prev`进行 XOR，我们将获得下一个节点的地址。
 
 ## C++
 

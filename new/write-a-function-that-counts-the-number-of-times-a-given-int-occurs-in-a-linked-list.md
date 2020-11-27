@@ -1,12 +1,12 @@
-# 编写一个函数，计算一个给定的 int 在链表
+# 编写一个函数，计算一个给定的整数在链表中出现的次数
 
 > 原文：[https://www.geeksforgeeks.org/write-a-function-that-counts-the-number-of-times-a-given-int-occurs-in-a-linked-list/](https://www.geeksforgeeks.org/write-a-function-that-counts-the-number-of-times-a-given-int-occurs-in-a-linked-list/)
 
-中出现的次数
 
-给定一个单链表和一个键，计算给定键在链表中出现的次数。 例如，如果给定的链表为 1-> 2-> 1-> 2-> 1-> 3-> 1，且给定键为 1，则输出应为 4。
 
-**方法 1-无递归**
+给定一个单链表和一个键，计算给定键在链表中出现的次数。 例如，如果给定的链表为`1 -> 2 -> 1 -> 2 -> 1 -> 3 -> 1`，且给定键为 1，则输出应为 4。
+
+**方法 1 - 无递归**
 
 **算法**：
 
@@ -366,7 +366,7 @@ count of 1 is 3
 
 **辅助空间**：`O(1)`
 
-**方法 2-递归**
+**方法 2 - 递归**
 
 此方法由 [MY_DOOM](https://auth.geeksforgeeks.org/user/MY_DOOM) 贡献。
 
@@ -682,7 +682,7 @@ class GFG {
 count of 1 is 3
 ```
 
-下面的方法可用于避免全局变量“ frequency”（在 Python 3 代码的情况下为反计数）。
+下面的方法可用于避免全局变量`frequency`（在 Python 3 代码的情况下为反计数）。
 
 ## C++
 

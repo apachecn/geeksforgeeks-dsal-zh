@@ -8,7 +8,7 @@
 
 **优势**：
 
-*   由于 Cache 行为，在展开的链表中线性搜索要快得多。
+*   由于缓存行为，在展开的链表中线性搜索要快得多。
 
 *   与普通链表相比，它需要更少的指针/引用存储空间。
 
@@ -378,7 +378,7 @@ public static void Main(String[] args)
 
 ```
 
-在本文中，我们介绍了展开列表及其优点。 我们还展示了如何遍历列表。 在下一篇文章中，我们将详细讨论 maxElements / numElements 的插入，删除和值。
+在本文中，我们介绍了展开列表及其优点。 我们还展示了如何遍历列表。 在下一篇文章中，我们将详细讨论`maxElements/numElements`的插入，删除和值。
 
 [在展开的链表中的插入](https://www.geeksforgeeks.org/insertion-unrolled-linked-list/)
 
