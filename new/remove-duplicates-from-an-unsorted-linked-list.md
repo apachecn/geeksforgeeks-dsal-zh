@@ -2,9 +2,9 @@
 
 > 原文：[https://www.geeksforgeeks.org/remove-duplicates-from-an-unsorted-linked-list/](https://www.geeksforgeeks.org/remove-duplicates-from-an-unsorted-linked-list/)
 
-编写一个 removeDuplicates（）函数，该函数获取一个列表并从列表中删除所有重复的节点。 该列表未排序。
+编写一个`removeDuplicates()`函数，该函数获取一个列表并从列表中删除所有重复的节点。 该列表未排序。
 
-例如，如果链表是 12- > 11- > 12- > 21- > 41- > 43- > 21，则 removeDuplicates（）应该将列表转换为 12- > 11- > 21- > 41- > 43。
+例如，如果链表是`12 -> 11 -> 12 -> 21 -> 41 -> 43 -> 21`，则`removeDuplicates()`应该将列表转换为`12 -> 11 -> 21 -> 41 -> 43`。
 
 **方法 1（使用两个循环）**
 
@@ -301,13 +301,13 @@ Linked list after removing duplicates:
 
 通常，合并排序是最有效地对链表进行排序的最合适的排序算法。
 
-1.  使用合并排序对元素进行排序。 我们很快将写一篇有关对链表进行排序的文章。 O（nLogn）
+1.  使用合并排序对元素进行排序。 我们很快将写一篇有关对链表进行排序的文章。 `O(nLogn)`
 
-2.  使用[算法在线性时间内删除重复项，该算法用于删除已排序的链表中的重复项。`O(n)`](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)
+2.  使用["删除已排序的链表中的重复项"中的算法](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)在线性时间内删除重复项。
 
 请注意，此方法不会保留元素的原始顺序。
 
-时间复杂度：O（nLogn）
+时间复杂度：`O(nLogn)`
 
 **方法 3（使用散列）**
 

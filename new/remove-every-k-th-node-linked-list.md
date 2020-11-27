@@ -1,10 +1,8 @@
-# 删除链表
+# 删除链表的每`k`个节点
 
 > 原文：[https://www.geeksforgeeks.org/remove-every-k-th-node-linked-list/](https://www.geeksforgeeks.org/remove-every-k-th-node-linked-list/)
 
-的每个第 k 个节点
-
-给定一个单链表，您的任务是删除链表的第 K 个节点。 假定 K 始终小于或等于链表的长度。
+给定一个单链表，您的任务是删除链表的每`K`个节点。 假定`K`始终小于或等于链表的长度。
 
 **示例**：
 
@@ -26,7 +24,7 @@ All nodes need to be deleted
 
 ```
 
-这个想法是从头开始遍历列表，并跟踪上次删除后访问的节点。 每当计数变为 k 时，删除当前节点并将计数重置为 0。
+这个想法是从头开始遍历列表，并跟踪上次删除后访问的节点。 每当计数变为`K`时，删除当前节点并将计数重置为 0。
 
 ```
 (1) Traverse list and do following

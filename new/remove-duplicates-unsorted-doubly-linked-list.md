@@ -658,7 +658,7 @@ Doubly linked list after removing duplicates:
 
 2.  使用[算法在线性时间内删除重复项，以从排序的双向链表](https://www.geeksforgeeks.org/remove-duplicates-sorted-doubly-linked-list/)中删除重复项。
 
-时间复杂度：O（nLogn）
+时间复杂度：`O(nLogn)`
 
 辅助空间：`O(1)`
 
@@ -666,7 +666,7 @@ Doubly linked list after removing duplicates:
 
 **方法 3 高效方法（散列）**：
 
-我们从头到尾遍历双向链表。 对于每个新遇到的元素，我们检查它是否在哈希表中：如果是，则将其删除；否则，将其删除。 否则我们将其放在哈希表中。 哈希表是使用 C++ 中的 [unordered_set 实现的。](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)
+我们从头到尾遍历双向链表。 对于每个新遇到的元素，我们检查它是否在哈希表中：如果是，则将其删除；否则，将其删除。 否则我们将其放在哈希表中。 哈希表是使用 C++ 中的[`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)实现的。
 
 ## C++
 

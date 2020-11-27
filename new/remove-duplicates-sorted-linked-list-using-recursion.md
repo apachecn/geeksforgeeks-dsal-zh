@@ -1,20 +1,18 @@
-# 使用递归
+# 使用递归从排序的链表中删除重复项
 
 > 原文：[https://www.geeksforgeeks.org/remove-duplicates-sorted-linked-list-using-recursion/](https://www.geeksforgeeks.org/remove-duplicates-sorted-linked-list-using-recursion/)
 
-从排序的链表中删除重复项
+编写一个`removeDuplicates()`函数，该函数采用以非降序排序的列表，并从列表中删除所有重复的节点。 该列表仅应遍历一次。
 
-编写一个 removeDuplicates（）函数，该函数采用以非降序排序的列表，并从列表中删除所有重复的节点。 该列表仅应遍历一次。
-
-例如，如果链表是 11-> 11-> 11-> 21-> 43-> 43-> 60，则 removeDuplicates（）应该将列表转换为 11-> 21-> 43-> 60。
+例如，如果链表是`11 -> 11 -> 11 -> 21 -> 43 -> 43 -> 60`，则`removeDuplicates()`应该将列表转换为`11 -> 21 -> 43 -> 60`。
 
 **算法**：
 
-从头（或头）递归遍历列表，在完成递归调用后，比较下一个节点（返回的节点）和当前节点（头）。 如果两个节点的数据相等，则返回下一个**（头为>），否则返回当前**节点（头）**。**
+从头（或头）递归遍历列表，在完成递归调用后，比较下一个节点（返回的节点）和当前节点（头）。 如果两个节点的数据相等，则返回头部的下一个，否则返回当前节点（头）。
 
 **实现**：
 
-除了 removeDuplicates（）以外的功能仅用于创建链接链表并测试 removeDuplicates（）。
+除了`removeDuplicates()`以外的功能仅用于创建链接链表并测试`removeDuplicates()`。
 
 ## C++
 

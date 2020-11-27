@@ -25,7 +25,7 @@ removeDuplicates(head_ref, x)
 
 ```
 
-在此帖子的[中讨论了 **deleteNode（head_ref，current）**（使用指向该节点的指针删除该节点）的算法。](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/) 
+在[此帖子](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/) 的中讨论了`deleteNode(head_ref, current)`（使用指向该节点的指针删除该节点）的算法。
 
 ## C++
 
