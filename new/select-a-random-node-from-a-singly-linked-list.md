@@ -2,13 +2,13 @@
 
 > 原文：[https://www.geeksforgeeks.org/select-a-random-node-from-a-singly-linked-list/](https://www.geeksforgeeks.org/select-a-random-node-from-a-singly-linked-list/)
 
-给定一个单链列表，请从链列表中选择一个随机节点（如果列表中有 N 个节点，则选择一个节点的概率应为 1 / N）。 您将获得一个随机数生成器。
+给定一个单链列表，请从链列表中选择一个随机节点（如果列表中有`N`个节点，则选择一个节点的概率应为`1 / N`）。 您将获得一个随机数生成器。
 
 以下是一个简单的解决方案
 
 1.  通过遍历列表来计算节点数。
 
-2.  再次遍历列表，并以 1 / N 的概率选择每个节点。 可以通过为第 i 个节点生成一个从 0 到 N-i 的随机数，然后仅在生成的数字等于 0（或从 0 到 N-i 的任何其他固定数）的情况下选择第 i 个节点来完成选择。
+2.  再次遍历列表，并以`1 / N`的概率选择每个节点。 可以通过为第`i`个节点生成一个从 0 到`N-i`的随机数，然后仅在生成的数字等于 0（或从 0 到`N-i`的任何其他固定数）的情况下选择第`i`个节点来完成选择。
 
 通过以上方案，我们得到了统一的概率。
 
@@ -21,13 +21,13 @@ i = 2, probability of selecting second node =
                   = 1/N  
 ```
 
-同样，其他选择其他节点的概率为 1 / N
+同样，其他选择其他节点的概率为`1 / N`
 
 上述解决方案需要两次遍历链表。
 
 **如何选择只允许一个遍历的随机节点？**
 
-这个想法是使用[储层采样](https://www.geeksforgeeks.org/reservoir-sampling/)。 以下是步骤。 这是[储层采样](https://www.geeksforgeeks.org/reservoir-sampling/)的简单版本，因为我们只需要选择一个键即可，而不是 k 个键。
+这个想法是使用[储层采样](https://www.geeksforgeeks.org/reservoir-sampling/)。 以下是步骤。 这是[储层采样](https://www.geeksforgeeks.org/reservoir-sampling/)的简单版本，因为我们只需要选择一个键即可，而不是`k`个键。
 
 ```
 (1) Initialize result as first node
@@ -496,11 +496,11 @@ public class LinkedList 
 
 **这是如何工作的？**
 
-列表中总共有 N 个节点。 从最后一个节点更容易理解。
+列表中总共有`N`个节点。 从最后一个节点更容易理解。
 
-最后一个节点仅是结果 1 / N 的概率[对于最后一个或第 N 个节点，我们生成一个介于 0 到 N-1 之间的随机数，如果生成的数目为 0（或任何其他固定数），则将最后一个节点作为结果
+最后一个节点仅是结果`1 / N`的概率[对于最后一个或第`N`个节点，我们生成一个介于 0 到`N-1`之间的随机数，如果生成的数目为 0（或任何其他固定数），则将最后一个节点作为结果
 
-倒数第二个节点为结果的概率也应为 1 / N。
+倒数第二个节点为结果的概率也应为`1 / N`。
 
 ```
 The probability that the second last node is result 
