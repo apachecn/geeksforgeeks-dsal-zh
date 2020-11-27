@@ -1,10 +1,10 @@
-# 链表中的游程长度解码
+# 链表中的路程长度解码
 
 > 原文：[https://www.geeksforgeeks.org/run-length-decoding-in-linked-list/](https://www.geeksforgeeks.org/run-length-decoding-in-linked-list/)
 
-给定已编码的链表，该链表使用[游程长度编码](https://www.geeksforgeeks.org/run-length-encoding/)算法进行了编码。 任务是解码给定的链表并生成输入字符串。
+给定已编码的链表，该链表使用[路程长度编码](https://www.geeksforgeeks.org/run-length-encoding/)算法进行了编码。 任务是解码给定的链表并生成输入字符串。
 
-**游程长度编码**：在游程长度编码中，通过将字符串中重复字符的子字符串替换为字符，再加上其计数，对输入字符串进行编码。 如果字符是单个字符且不重复，则不添加字符计数。 例如，如果输入字符串为`wwwwaaadexxxxxx`，则该函数应返回`w4a3dex6`
+**路程长度编码**：在路程长度编码中，通过将字符串中重复字符的子字符串替换为字符，再加上其计数，对输入字符串进行编码。 如果字符是单个字符且不重复，则不添加字符计数。 例如，如果输入字符串为`wwwwaaadexxxxxx`，则该函数应返回`w4a3dex6`
 
 **示例**：
 

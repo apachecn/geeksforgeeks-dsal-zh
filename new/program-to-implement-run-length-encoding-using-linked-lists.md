@@ -1,10 +1,10 @@
-# 使用链表实现游程编码的程序
+# 使用链表实现路程编码的程序
 
 > 原文：[https://www.geeksforgeeks.org/program-to-implement-run-length-encoding-using-linked-lists/](https://www.geeksforgeeks.org/program-to-implement-run-length-encoding-using-linked-lists/)
 
-给定链表作为输入。 任务是使用[游程长度编码](https://www.geeksforgeeks.org/run-length-encoding/)对给定的链表进行编码。 就是说，要用一个字符代替一个连续的字符，然后加上计数。
+给定链表作为输入。 任务是使用[路程长度编码](https://www.geeksforgeeks.org/run-length-encoding/)对给定的链表进行编码。 就是说，要用一个字符代替一个连续的字符，然后加上计数。
 
-例如，在游程编码中，`a -> a -> a -> a -> a`将被替换为`a -> 5`。
+例如，在路程编码中，`a -> a -> a -> a -> a`将被替换为`a -> 5`。
 
 **注意**：对于非重复节点，请勿附加计数 1。例如，`a -> b -> b` 将被替换为`a -> b -> 2`。而不是`a -> 1 -> b -> 2`。
 

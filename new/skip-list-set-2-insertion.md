@@ -1,8 +1,8 @@
-# 跳过列表 | 系列 2（插入）
+# 跳表 | 系列 2（插入）
 
 > 原文：[https://www.geeksforgeeks.org/skip-list-set-2-insertion/](https://www.geeksforgeeks.org/skip-list-set-2-insertion/)
 
-我们已经讨论了“跳过列表”的概念以及它们在[跳过列表中的工作方式。 设置 1（简介）](https://www.geeksforgeeks.org/skip-list/)。 在本文中，我们将讨论如何在“跳过列表”中插入元素。
+我们已经讨论了“跳表”的概念以及它们在[跳表中的工作方式。 设置 1（简介）](https://www.geeksforgeeks.org/skip-list/)。 在本文中，我们将讨论如何在“跳表”中插入元素。
 
 **决定节点级别**
 
@@ -18,7 +18,7 @@ return lvl
 
 ```
 
-**MaxLevel** 是跳过列表中级别数的上限。 可以确定为– ![L(N) = log_{p/2}{N}](img/36f27042b59a2cf429fac95507620e0b.png "Rendered by QuickLaTeX.com")。 上面的算法确保随机级别永远不会大于 MaxLevel。 **p** 是具有 **i** 指针的节点的分数，也具有 **i + 1** 指针的指针，N 是列表中节点的数量。
+**MaxLevel** 是跳表中级别数的上限。 可以确定为– ![L(N) = log_{p/2}{N}](img/36f27042b59a2cf429fac95507620e0b.png "Rendered by QuickLaTeX.com")。 上面的算法确保随机级别永远不会大于 MaxLevel。 **p** 是具有 **i** 指针的节点的分数，也具有 **i + 1** 指针的指针，N 是列表中节点的数量。
 
 **节点结构**
 
@@ -26,7 +26,7 @@ return lvl
 
 ![Skip Node](img/c2495da158ed972fafcf20538bd8063b.png)
 
-**插入跳过列表**
+**插入跳表**
 
 我们将从列表中的最高级别开始，将当前节点的下一个节点的密钥与要插入的密钥进行比较。 基本思想是-
 
@@ -60,7 +60,7 @@ for i := 0 to level do
 
 ![Insert node ](img/72ea3fa503549efb8b2955630519d481.png)
 
-以下是在跳过列表中插入密钥的代码–
+以下是在跳表中插入密钥的代码–
 
 ## C++
 
