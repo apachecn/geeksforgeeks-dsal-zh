@@ -1,10 +1,8 @@
-# 单链表
+# 单链表的所有质数节点的总和与乘积
 
 > 原文：[https://www.geeksforgeeks.org/sum-and-product-of-all-prime-nodes-of-a-singly-linked-list/](https://www.geeksforgeeks.org/sum-and-product-of-all-prime-nodes-of-a-singly-linked-list/)
 
-的所有主要节点的总和与乘积
-
-给定一个包含 N 个节点的单链表，任务是从列表中查找素数所有节点的总和与乘积。
+给定一个包含`N`个节点的单链表，任务是从列表中查找素数所有节点的总和与乘积。
 
 **示例**：
 
@@ -441,7 +439,7 @@ Product = 119
 
 ```
 
-**时间复杂度**：`O(n)`，其中 N 是链​​表中节点的数量。
+**时间复杂度**：`O(n)`，其中`N`是链​​表中节点的数量。
 
 
 

@@ -1,20 +1,20 @@
-# 链表
+# 链表中所有小于`K`的节点的总和和积
 
 > 原文：[https://www.geeksforgeeks.org/sum-and-product-of-all-the-nodes-which-are-less-than-k-in-the-linked-list/](https://www.geeksforgeeks.org/sum-and-product-of-all-the-nodes-which-are-less-than-k-in-the-linked-list/)
 
-中所有小于 K 的节点的总和和积。
-
-给定一个链表和一个密钥 K。任务是计算总和并从列表中减去小于密钥 K 的所有节点。
+给定一个链表和一个密钥`K`。任务是计算小于键`K`的所有节点的总和和乘积。
 
 **示例**：
 
-> **输入**：12-> 15-> 9-> 11-> 5-> 6，K = 9
-> **输出**：总和 = 11，乘积= 30
+> **输入**：`12 -> 15 -> 9 -> 11 -> 5 -> 6, K = 9`
+>
+> **输出**：`sum = 11, product = 30`
 > 
-> **输入**：13-> 4-> 16-> 9-> 22-> 45-> 5-> 16-> 6， K = 10
-> **输出**：总和= 24，乘积= 1080
+> **输入**：`13 -> 4 -> 16 -> 9 -> 22 -> 45 -> 5 -> 16 -> 6, K = 10`
+>
+> **输出**：`sum = 24, product = 1080`
 
-**方法**：从头开始遍历，检查当前节点的值是否小于 K。如果是，则将该节点加到总和上并乘以该节点乘积，然后在列表中向前移动。
+**方法**：从头开始遍历，检查当前节点的值是否小于`K`。如果是，则将该节点加到总和上并乘以该节点乘积，然后在列表中向前移动。
 
 下面是上述方法的实现：
 
@@ -41,7 +41,7 @@ Node* getNode(int data)
     newNode->data = data; 
     newNode->next = NULL; 
     return newNode; 
-} 
+
 
 // function to sum all the nodes from the list 
 // that are lesser than the specified value K 

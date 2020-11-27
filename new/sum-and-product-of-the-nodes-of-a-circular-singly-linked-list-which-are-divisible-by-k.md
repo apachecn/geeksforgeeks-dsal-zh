@@ -1,8 +1,8 @@
-# 可被 K 整除的循环单链表的节点的总和和
+# 循环单链表的可被`K`整除的节点的总和和乘积
 
 > 原文：[https://www.geeksforgeeks.org/sum-and-product-of-the-nodes-of-a-circular-singly-linked-list-which-are-divisible-by-k/](https://www.geeksforgeeks.org/sum-and-product-of-the-nodes-of-a-circular-singly-linked-list-which-are-divisible-by-k/)
 
-给定一个单循环链表。 任务是找到可被给定链表的 K 整除的节点的总和和乘积。
+给定一个单循环链表。 任务是找到可被给定链表的`K`整除的节点的总和和乘积。
 
 **示例**：
 
@@ -23,17 +23,17 @@ Output : Product = 75, Sum = 20
 
 **方法**：
 
-1.  用循环链表的开头初始化指针电流，并将和变量**和**设为 0，并将乘积变量**积**设为 1。
+1.  用循环链表的开头初始化当前指针，并将和变量`sum`设为 0，并将乘积变量`prod`设为 1。
 
-2.  使用 do while 循环开始遍历链表，直到遍历所有节点。
+2.  使用`do while`循环开始遍历链表，直到遍历所有节点。
 
 3.  如果当前节点数据可被给定键整除。
 
-    *   将当前节点的值添加到总和，即 **sum =总和+当前->数据**。
+    *   将当前节点的值添加到总和，即`sum = sum + curr->data`。
 
-    *   将当前节点的值乘以乘积，即**乘积=乘积*当前->数据**。
+    *   将当前节点的值乘以乘积，即`prod = prod * curr->data`。
 
-    *   递增指向链表的下一个节点的指针，即 **temp = temp-> next** 。
+    *   递增指向链表的下一个节点的指针，即`temp = temp->next`。
 
 4.  打印总和和乘积。
 
