@@ -1,18 +1,19 @@
-# 链表
+# 链表中存在的所有回文数的总和
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-all-palindrome-numbers-present-in-a-linked-list/](https://www.geeksforgeeks.org/sum-of-all-palindrome-numbers-present-in-a-linked-list/)
 
-中存在的所有回文数的总和
-
-给定一个带有整数节点值的链表，任务是找到所有作为节点值出现的 [**回文数**](https://www.geeksforgeeks.org/check-if-a-number-is-palindrome/) 之和。
+给定一个带有整数节点值的链表，任务是找到所有作为节点值出现的[**回文数**](https://www.geeksforgeeks.org/check-if-a-number-is-palindrome/)之和。
 
 **示例**：
 
-> **输入**：13-> 212-> 22-> 44-> 4-> 3
+> **输入**：`13 -> 212 -> 22 -> 44 -> 4 -> 3`
+>
 > **输出**：285
-> [ **说明**：回文数{22，212，44，4，3}的总和是 285
+>
+> **说明**：回文数`{22, 212, 44, 4, 3}`的总和是 285
 > 
-> **输入**：19-> 22-> 141
+> **输入**：`19 -> 22 -> 141`
+>
 > **输出**：163
 
 **方法**：为了解决这个问题，我们使用一种类似的方法来计算数组中所有回文的[和。 遍历链表的所有节点，并检查当前节点值是否是回文。 如果是这样，则将值相加并存储和。 所有这些值的最终总和给出了所需的答案。](https://www.geeksforgeeks.org/sum-of-all-palindrome-numbers-present-in-an-array/)

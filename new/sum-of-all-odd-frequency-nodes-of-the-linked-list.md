@@ -1,22 +1,26 @@
-# 链表
+# 链表中所有奇数频率节点的总和
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-all-odd-frequency-nodes-of-the-linked-list/](https://www.geeksforgeeks.org/sum-of-all-odd-frequency-nodes-of-the-linked-list/)
-
-中所有奇数频率节点的总和
 
 给定一个链表，任务是从给定的链表中找到所有奇数频率节点的总和。
 
 **示例**：
 
-> **输入**：8-> 8-> 1-> 4-> 1-> 2-> 8->空
+> **输入**：`8 -> 8 -> 1 -> 4 -> 1 -> 2 -> 8 -> NULL`
+>
 > **输出**：30
-> freq（8）= 3
-> freq（1）= 2
-> freq（4）= 1
-> freq（2）= 1
-> 8、4 和 2 出现奇数次（8 * 3）+（4 * 1）+（2 * 1）= 30
+>
+> ```
+> freq(8) = 3
+> freq(1) = 2
+> freq(4) = 1
+> freq(2) = 1
+> ```
 > 
-> **输入**：6-> 2-> 2-> 6-> 2-> 1->空
+> 8、4 和 2 出现奇数次`(8 * 3) + (4 * 1) + (2 * 1) = 30`
+> 
+> **输入**：`6 -> 2 -> 2 -> 6 -> 2 -> 1 -> NULL`
+>
 > **输出**：7
 
 **方法**：此问题可以通过[散列](http://www.geeksforgeeks.org/hashing-data-structure/)解决，

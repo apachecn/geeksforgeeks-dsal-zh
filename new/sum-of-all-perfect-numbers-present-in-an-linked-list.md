@@ -1,27 +1,30 @@
-# 链表
+# 链表中存在的所有完美数字的总和
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-all-perfect-numbers-present-in-an-linked-list/](https://www.geeksforgeeks.org/sum-of-all-perfect-numbers-present-in-an-linked-list/)
 
-中存在的所有完美数字的总和
-
-给定[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)包含 **N** 个正整数，任务是从列表中查找所有[完美数](https://www.geeksforgeeks.org/perfect-number/)的和。
+给定[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)包含`N`个正整数，任务是从列表中查找所有[完美数](https://www.geeksforgeeks.org/perfect-number/)的和。
 
 > 如果数字等于其适当除数的总和，即其正除数的总和（不包括数字本身），则该数字是完美的。
 
 **示例**：，
 
-> **输入**：L1 = 3-> 6-> 9
-> **输出：6**
-> 正确的因子之和为 3 = 1
-> ans = 0 [
-> ans = 6;
-> 适当的除数之和为 6 = 1 + 2 + 3 = 6。
-> 正确的因数总和为 9 = 1 + 3 = 4
-> ans = 6;
-> **输入**：L1 = 17-> 6-> 10-> 6-> 4
+> **输入**：`L1 = 3 -> 6 -> 9`
+>
+> **输出**：6
+>
+> 适当的除数之和为`3 = 1`
+>
+> 适当的除数之和为`6 = 1 + 2 + 3 = 6`
+>
+> 适当的除数总和为`9 = 1 + 3 = 4`
+>
+> `ans = 6`
+>
+>
+> **输入**：`L1 = 17 -> 6 -> 10 -> 6 -> 4`
 > **输出**：12
 
-**方法**：初始化 **sum = 0** ，对于列表的每个节点，找到其适当除数的总和，即 **sumFactors** 。 如果 **cur_node = sumFactors** ，则将结果总和更新为 **sum = sum + cur_node** 。 最后打印**总和**。
+**方法**：初始化`sum = 0`，对于列表的每个节点，找到其适当除数的总和，即`sumFactors`。 如果`cur_node = sumFactors`，则将结果总和更新为`sum = sum + cur_node`。 最后打印`sum`。
 
 以下是上述方法的实现：
 
