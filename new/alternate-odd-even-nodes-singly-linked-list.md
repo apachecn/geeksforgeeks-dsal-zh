@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/alternate-odd-even-nodes-singly-linked-list/](https://www.geeksforgeeks.org/alternate-odd-even-nodes-singly-linked-list/)
 
-给定一个单链列表，请重新排列该列表，以使偶数和奇数节点在列表中交替出现。
+给定一个单链表，请重新排列该列表，以使偶数和奇数节点在列表中交替出现。
 
 这种重新排列有两种可能的形式。 如果第一个数据为奇数，则第二个节点必须为偶数。 第三个节点必须是奇数，依此类推。 请注意，在第一个节点为偶数，第二个奇数，第三个偶数等的情况下，还有另一种安排。
 

@@ -14,7 +14,7 @@
 >
 > **输出**：`2 2 3 3`
 
-[**递归**](http://www.geeksforgeeks.org/recursion/) **方法**：请按照以下步骤解决问题：
+[**递归方法**](http://www.geeksforgeeks.org/recursion/)：请按照以下步骤解决问题：
 
 1.  创建一个具有[栈](https://www.geeksforgeeks.org/stack-data-structure/)作为参数的递归函数。
 
@@ -261,11 +261,11 @@ public static void Main(String[] args)
 
 **辅助空间**：`O(n)`
 
-[**单链列表栈**](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/) **方法**：此方法讨论解决[单链列表栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)表示法的问题的解决方案。 步骤如下：
+[**单链表栈方法**](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)：此方法讨论解决[单链表栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)表示法的问题的解决方案。 步骤如下：
 
 1.  将给定栈中的顶部元素推入[链表栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)。
 
-2.  打印[单链列表栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)的顶部元素。
+2.  打印[单链表栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)的顶部元素。
 
 3.  从给定的主栈中弹出顶部元素。
 
@@ -561,7 +561,7 @@ public static void Main(String[] args)
 
 **辅助空间**：`O(n)`
 
-[**数组栈**](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/) **方法**：此方法讨论[数组栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)实现中问题的解决方案。 步骤如下：
+[**数组栈方法**](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)：此方法讨论[数组栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)实现中问题的解决方案。 步骤如下：
 
 1.  将给定栈中的顶部元素推入[数组栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)。
 

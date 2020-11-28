@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-of-nodes-in-a-linkedlist-whose-value-is-equal-to-their-frequency/](https://www.geeksforgeeks.org/count-of-nodes-in-a-linkedlist-whose-value-is-equal-to-their-frequency/)
 
-给定一个单链列表，任务是计算其数据值等于其频率的节点数。
+给定一个单链表，任务是计算其数据值等于其频率的节点数。
 
 **示例**：
 

@@ -178,9 +178,9 @@ int main()
 
 更好的解决方案是使用基于最小堆的解决方案，在此处讨论了基于数组的解决方案。 该解决方案的时间复杂度为`O(nk Log k)`
 
- **方法 3**：[**分而治之**](https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/) 。
+ **方法 3**：[**分治**](https://www.geeksforgeeks.org/divide-and-conquer-algorithm-introduction/) 。
 
-在这篇文章中，讨论了**分而治之**方法。 这种方法不需要额外的堆空间，可以在`O(nk Log k)`中使用
+在这篇文章中，讨论了**分治**方法。 这种方法不需要额外的堆空间，可以在`O(nk Log k)`中使用
 
 众所周知，可以在`O(n)`时间和`O(1)`空间（对于数组需要`O(n)`空间）中完成[两个链表的合并](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)。
 

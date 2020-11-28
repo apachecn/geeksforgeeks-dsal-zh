@@ -6,7 +6,7 @@
 
 注意，问题仅在于打印反面。 要反转列表本身，请参阅[，](https://www.geeksforgeeks.org/reverse-a-linked-list/)，
 
-**难度级别**：新秀
+**难度级别**：菜鸟
 
 ![reverse-a-link-list](img/2887a61ccc887b8c68af722f22f72ab8.png)
 

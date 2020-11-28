@@ -25,7 +25,7 @@ Output : B-->D-->E-->F
 
 ```
 
-如果给出了头指针，那么从单链列表中将是一个简单的删除问题，因为要进行删除，您必须知道前一个节点，并且可以通过从头指针进行遍历轻松地到达那里。 如果不知道需要删除的节点的先前节点，则常规删除是不可能的。
+如果给出了头指针，那么从单链表中将是一个简单的删除问题，因为要进行删除，您必须知道前一个节点，并且可以通过从头指针进行遍历轻松地到达那里。 如果不知道需要删除的节点的先前节点，则常规删除是不可能的。
 
 这里的技巧是我们可以将下一个节点的数据复制到要删除的当前节点的数据字段中。 然后，我们可以向前迈出一步。 现在，我们的下一个节点已成为当前节点，而当前的节点已成为前一个节点。 现在，我们可以通过常规删除方法轻松删除当前节点。
 
@@ -142,7 +142,7 @@ Final Linked List after deletion of 15:
 
 ```
 
-本文由 [Jeet Jain](https://www.linkedin.com/in/jeetjain8/) 提供。 请参阅[在单链列表中仅给出指向要删除的节点的指针，如何删除它？](https://www.geeksforgeeks.org/in-a-linked-list-given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/) 了解更多详细信息并完成实现。
+本文由 [Jeet Jain](https://www.linkedin.com/in/jeetjain8/) 提供。 请参阅[在单链表中仅给出指向要删除的节点的指针，如何删除它？](https://www.geeksforgeeks.org/in-a-linked-list-given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/) 了解更多详细信息并完成实现。
 
 
 

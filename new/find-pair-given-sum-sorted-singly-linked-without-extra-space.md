@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-pair-given-sum-sorted-singly-linked-without-extra-space/](https://www.geeksforgeeks.org/find-pair-given-sum-sorted-singly-linked-without-extra-space/)
 
-给定一个排序的单链列表和一个值`x`，任务是找到总和等于`x`的对。 我们不允许使用任何额外的空间，并且预期的时间复杂度为`O(n)`。
+给定一个排序的单链表和一个值`x`，任务是找到总和等于`x`的对。 我们不允许使用任何额外的空间，并且预期的时间复杂度为`O(n)`。
 
 例子：
 
@@ -20,15 +20,15 @@ Output: (6, 11), (7, 10), (8, 9)
 
 [在双向链表中查找对：](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)我们使用从两端遍历链表的相同算法。
 
-[XOR 链表](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)：在单链表中，我们只能沿向前方向遍历列表。 我们使用 XOR 概念将单链列表转换为双链列表。
+[XOR 链表](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)：在单链表中，我们只能沿向前方向遍历列表。 我们使用 XOR 概念将单链表转换为双链表。
 
 以下是步骤：
 
-*   首先，我们需要将单链列表转换为双链列表。 在这里，我们给出了单链列表结构节点，该节点仅具有`next`指针，而没有`prev`指针，因此，为了将单链列表转换为双链列表，我们使用[内存高效双链 列表（异或链表）](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)。
+*   首先，我们需要将单链表转换为双链表。 在这里，我们给出了单链表结构节点，该节点仅具有`next`指针，而没有`prev`指针，因此，为了将单链表转换为双链表，我们使用[内存高效双链 列表（异或链表）](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)。
 
 *   在 XOR 链表中，单链表的每个`next`指针都包含`next`和`prev`指针的 XOR。
 
-*   将单链列表转换为双链列表后，我们初始化两个指针变量以在排序的双链列表中找到候选元素。 首先以双向链表的开头初始化；即`first = head`，然后用双向链表的最后一个节点初始化`second`；即`second = last_node`。
+*   将单链表转换为双链表后，我们初始化两个指针变量以在排序的双链表中找到候选元素。 首先以双向链表的开头初始化；即`first = head`，然后用双向链表的最后一个节点初始化`second`；即`second = last_node`。
 
 *   这里我们没有随机访问权限，因此要初始化指针，我们遍历列表直到最后一个节点，并将最后一个节点分配给`second`。
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/merge-two-sorted-linked-list-without-duplicates/](https://www.geeksforgeeks.org/merge-two-sorted-linked-list-without-duplicates/)
 
-合并大小为 **n1** 和 **n2** 的两个排序链表。 在最终排序的链表中，两个链表中的重复项应仅出现一次。
+合并大小为`n1`和`n2`的两个排序链表。 在最终排序的链表中，两个链表中的重复项应仅出现一次。
 
 例子：
 
@@ -19,7 +19,7 @@ Output : 1 2 4 5 7 9
 
 1.  以排序方式合并两个排序的链表。 请参阅此帖子的[递归方法。 令最终获得的列表为**头**。](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)
 
-2.  [从排序的链表](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/) **头**中删除重复项。
+2.  [从排序的链表中删除重复项](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)。
 
 ```
 

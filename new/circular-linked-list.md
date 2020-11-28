@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/circular-linked-list/](https://www.geeksforgeeks.org/circular-linked-list/)
 
-我们在以下帖子中讨论了单链和双链列表。
+我们在以下帖子中讨论了单链和双链表。
 
 [链表简介](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/) & [插入](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)
 

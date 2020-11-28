@@ -6,7 +6,7 @@
 
 给定两个非常大的字符串形式的数字。 您的任务是对这些字符串应用不同的算术运算。
 
-**前提**：[双链表。](https://www.geeksforgeeks.org/doubly-linked-list/)
+**前提**：[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)。
 
 例子：
 

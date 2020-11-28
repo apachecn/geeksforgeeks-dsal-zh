@@ -38,7 +38,7 @@
 
 *   其他应用包括回溯，[骑士旅行问题](https://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/)，[迷宫中的老鼠](https://www.geeksforgeeks.org/backttracking-set-2-rat-in-a-maze/)，[`N`皇后问题](https://www.geeksforgeeks.org/backtracking-set-3-n-queen-problem/)和[数独解算器](https://www.geeksforgeeks.org/backtracking-set-7-suduku/)
 
-*   在图算法中，例如[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)和[强连接的组件](https://www.geeksforgeeks.org/strongly-connected-components/)
+*   在图算法中，例如[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)和[强连通组件](https://www.geeksforgeeks.org/strongly-connected-components/)
 
 **实现**：
 

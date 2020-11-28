@@ -618,7 +618,7 @@ Linked List after sorting
 
 **练习**：
 
-上面的实现适用于双链表。 修改它为单链列表。 请注意，单链表中没有上一个指针。
+上面的实现适用于双链表。 修改它为单链表。 请注意，单链表中没有上一个指针。
 
 请参阅[单链表上的快速排序](https://www.geeksforgeeks.org/quicksort-on-singly-linked-list/)。
 

@@ -420,7 +420,7 @@ Product polynomial is
 
 **我们可以做得更好吗？**
 
-有一些方法可以比`O(N ^ 2)`时间更快地进行乘法。 这些方法主要基于[分而治之](https://www.geeksforgeeks.org/divide-and-conquer-set-1-find-closest-pair-of-points/)。 以下是一种简单的方法，该方法将给定的多项式（次数为`n`）分为两个多项式，一个包含较低次项（小于`n / 2`），另一个包含较高次项（大于或等于`n / 2`）
+有一些方法可以比`O(N ^ 2)`时间更快地进行乘法。 这些方法主要基于[分治](https://www.geeksforgeeks.org/divide-and-conquer-set-1-find-closest-pair-of-points/)。 以下是一种简单的方法，该方法将给定的多项式（次数为`n`）分为两个多项式，一个包含较低次项（小于`n / 2`），另一个包含较高次项（大于或等于`n / 2`）
 
 ```
 Let the two given polynomials be A and B.  

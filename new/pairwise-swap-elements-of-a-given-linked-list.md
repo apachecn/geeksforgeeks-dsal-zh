@@ -507,7 +507,7 @@ void pairWiseSwap(struct node* head)
 
 **时间复杂度**：`O(n)`
 
-**那里提供的解决方案交换节点的数据。 如果数据包含许多字段，将有许多交换操作。 有关更改链接而不是交换数据的实现，请参见此的[。](https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list-by-changing-links/)**
+**这里提供交换节点的数据的解决方案。 如果数据包含许多字段，将有许多交换操作。 有关更改链接而不是交换数据的实现，请参见[这里](https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list-by-changing-links/)。**
 
 如果您在上述代码/算法中发现任何错误，或者找到其他解决同一问题的方法，请写评论。
 

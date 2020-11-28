@@ -40,7 +40,7 @@
 
 1.  初始化两个变量，例如`cnt`和`sum`，分别存储奇数[斐波那契节点](https://www.geeksforgeeks.org/check-number-fibonacci-number/)的计数和所有奇数[斐波那契节点](https://www.geeksforgeeks.org/check-number-fibonacci-number/)的计数。
 
-2.  [遍历单个链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)并存储链表中最大的[元素，例如 **Max** 。](https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/)
+2.  [遍历单个链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)并存储链表中[最大的元素](https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/)，例如`Max`。
 
 3.  创建一个[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)，例如说`Hashmap`，以存储直到`Max`为止的所有斐波那契数。
 

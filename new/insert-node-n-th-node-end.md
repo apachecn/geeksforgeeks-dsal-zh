@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/insert-node-n-th-node-end/](https://www.geeksforgeeks.org/insert-node-n-th-node-end/)
 
-在给定的单链列表中在距离末尾的**第`n`个**节点之后插入节点`x`。 确保列表包含距离末尾的第`n`个节点。 另外`1 <= n`。
+在给定的单链表中在距离末尾的**第`n`个**节点之后插入节点`x`。 确保列表包含距离末尾的第`n`个节点。 另外`1 <= n`。
 
 例子：
 

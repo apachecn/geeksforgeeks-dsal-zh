@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/](https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/)
 
-给定`n`个节点的单链列表，并在链列表中找到最小和最大的元素。
+给定`n`个节点的单链表，并在链列表中找到最小和最大的元素。
 
 例子：
 

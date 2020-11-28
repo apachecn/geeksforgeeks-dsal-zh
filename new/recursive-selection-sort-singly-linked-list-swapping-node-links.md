@@ -1,8 +1,8 @@
-# 单链列表的递归选择排序| 交换节点链接
+# 单链表的递归选择排序| 交换节点链接
 
 > 原文：[https://www.geeksforgeeks.org/recursive-selection-sort-singly-linked-list-swapping-node-links/](https://www.geeksforgeeks.org/recursive-selection-sort-singly-linked-list-swapping-node-links/)
 
-给定一个包含`n`个节点的单链列表。 问题是使用递归选择排序技术对列表进行排序。 该方法应使其涉及交换节点链接而不是交换节点数据。
+给定一个包含`n`个节点的单链表。 问题是使用递归选择排序技术对列表进行排序。 该方法应使其涉及交换节点链接而不是交换节点数据。
 
 ![sorting image](img/30e3fe49cc11f92ab4b7277b9fee727d.png)
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/minimum-and-maximum-prime-numbers-of-a-singly-linked-list/](https://www.geeksforgeeks.org/minimum-and-maximum-prime-numbers-of-a-singly-linked-list/)
 
-给定一个包含`N`个节点的单链列表，任务是查找最小和最大素数。
+给定一个包含`N`个节点的单链表，任务是查找最小和最大素数。
 
 **示例**：
 
