@@ -28,7 +28,7 @@
 
 3.  找出第一个不平衡括号的位置？
 
-**第三轮：技术 2**
+**第 3 轮：技术 2**
 
 这是另一轮技术回合。 此回合基于高级编码。
 
@@ -49,12 +49,6 @@
 职位：美国银行
 
 高级技术顾问
-
-<form method="post" id="interview_experience_form" action="https://contribute.geeksforgeeks.org/wp-admin/post-new.php"><input value="" id="interview_experience" name="interview_experience" type="hidden">
-
-**或将其邮寄到 tribution@geeksforgeeks.org**
-
-</form>
 
 ![](img/de93775f66c975fef071da8580f16430.png)
 

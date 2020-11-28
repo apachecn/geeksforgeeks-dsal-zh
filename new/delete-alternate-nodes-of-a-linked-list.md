@@ -646,7 +646,7 @@ static Node deleteAlt(Node head) 
 
 ```
 
-**Time Complexity:** O(n)
+**时间复杂度**：`O(n)`
 
 如果您发现上述代码/算法有误，请写注释，或者找到解决同一问题的更好方法。
 

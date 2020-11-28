@@ -23,9 +23,9 @@ Output : 5->10->6->9->7->8
 
 2.  将列表分为**前**和**后**列表。 请参阅此帖子的`FrontBackProcedure`。
 
-3.  现在，将**返回**列表。 请参阅此帖子的[。](https://www.geeksforgeeks.org/reverse-a-linked-list/)
+3.  现在，反转**后**列表。 请参阅[此帖子](https://www.geeksforgeeks.org/reverse-a-linked-list/)。
 
-4.  最后，以交替顺序将**的节点首先**和**的列表合并回**列表。
+4.  最后，以交替顺序将**前**和**后**列表合并。
 
 ```
 

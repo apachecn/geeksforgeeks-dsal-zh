@@ -6,7 +6,7 @@
 
 ![](img/d97a233bf3c89e80c46e6a3193e851d6.png)
 
-**链表在计算机科学中的应用** –
+**链表在计算机科学中的应用**：
 
 1.  [栈](https://www.geeksforgeeks.org/stack-data-structure/)和[队列](https://www.geeksforgeeks.org/queue-data-structure/)的实现
 
@@ -22,7 +22,7 @@
 
 7.  代表稀疏矩阵
 
-**链表在现实世界中的应用-**
+**链表在现实世界中的应用**：
 
 1.  *图像查看器* – 上一个和下一个图像已链接，因此可以通过下一个和上一个按钮进行访问。
 

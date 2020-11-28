@@ -36,28 +36,28 @@
 
 **算法**
 
-*   令要删除的节点为 *del* 。
+*   令要删除的节点为`del`。
 
-*   如果要删除的节点是头节点，则将头指针更改为下一个当前头。
-
-```
-if *headnode* == *del* then
-      *headnode* =  *del*.nextNode
+*   如果要删除的节点是头节点，则将头指针更改为当前头的下一个。
 
 ```
-
-*   如果 *del* 之前存在 *del* 之前，则在 *del* 之前设置*。*
-
-```
-if *del*.nextNode != *none* 
-      *del*.nextNode.previousNode = *del*.previousNode 
-```
-
-*   如果 *del* 旁边存在 *prev* ，则在 *del* 旁边。
+if headnode == del then
+      headnode =  del.nextNode
 
 ```
-if *del*.previousNode != *none* 
-      *del*.previousNode.nextNode = *del*.next
+
+*   如果`del`的上一个存在，则设置`del`的上一个。
+
+```
+if del.nextNode != none 
+      del.nextNode.previousNode = del.previousNode 
+```
+
+*   如果`del`的下一个存在，则设置`del`的下一个。
+
+```
+if del.previousNode != none 
+      del.previousNode.nextNode = del.next
 
 ```
 

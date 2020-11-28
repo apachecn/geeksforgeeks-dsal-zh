@@ -6,7 +6,7 @@
 
 [链表简介](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/) & [插入](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)
 
-*[双链表简介和插入](http://quiz.geeksforgeeks.org/doubly-linked-list/ "Permanent link to Doubly Linked List  | Set 1 (Introduction and Insertion)")*
+[双链表简介和插入](http://quiz.geeksforgeeks.org/doubly-linked-list/)
 
 **循环链表**是链表，其中所有节点都连接在一起形成一个圆。 最后没有`NULL`。 循环链表可以是单循环链表或双循环链表。
 

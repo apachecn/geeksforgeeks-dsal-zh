@@ -428,11 +428,11 @@ Contents of Circular Linked List
 
 ```
 
-**您可能想在循环链表**
+您可能想要以下帖子：
 
-[上将以下帖子分为两半](https://www.geeksforgeeks.org/split-a-circular-linked-list-into-two-halves/)
+[将循环链表将分为两半](https://www.geeksforgeeks.org/split-a-circular-linked-list-into-two-halves/)
 
-[循环链表](https://www.geeksforgeeks.org/sorted-insert-for-circular-linked-list/)的插入内容
+[在循环链表中插入内容](https://www.geeksforgeeks.org/sorted-insert-for-circular-linked-list/)
 
 我们将很快讨论循环链表的插入删除操作的实现。
 
