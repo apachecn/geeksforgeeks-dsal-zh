@@ -465,7 +465,7 @@ public class Node
 
 ```
 
-**Output :**
+**输出**：
 
 ```
 Linked List Before Sorting

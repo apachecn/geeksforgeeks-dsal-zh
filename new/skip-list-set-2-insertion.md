@@ -401,7 +401,7 @@ Successfully Inserted key 26
 Successfully Inserted key 21
 Successfully Inserted key 25
 
-*****Skip List*****
+****Skip List****
 Level 0: 3 6 7 9 12 17 19 21 25 26 
 Level 1: 3 6 12 17 25 
 Level 2: 6 12 17 25 

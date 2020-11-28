@@ -58,7 +58,7 @@ typedef struct node {
 
 *   标志= 2 表示存在*系数*和*指数*
 
-***例如**：*
+**例如**：
 
 9x <sup>5</sup> + 7xy <sup>4</sup> + 10xz
 

@@ -1,10 +1,8 @@
-# 在排序的双链表
+# 在排序的双链表中查找具有给定乘积的偶对
 
 > 原文：[https://www.geeksforgeeks.org/find-pairs-with-given-product-in-a-sorted-doubly-linked-list/](https://www.geeksforgeeks.org/find-pairs-with-given-product-in-a-sorted-doubly-linked-list/)
 
-中查找具有给定乘积的偶对
-
-给定**个正相异元素**的排序的双链表，任务是在双链表中查找乘积等于给定值`x`的对，而不使用任何额外空间。
+给定**不同正元素**的排序的双链表，任务是在双链表中查找乘积等于给定值`x`的对，而不使用任何额外空间。
 
 **示例**：
 

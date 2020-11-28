@@ -573,14 +573,14 @@ Successfully Inserted key 26
 Successfully Inserted key 21
 Successfully Inserted key 25
 
-*****Skip List*****
+****Skip List****
 Level 0: 3 6 7 9 12 17 19 21 25 26 
 Level 1: 3 17 19 21 26 
 Level 2: 17 19 21 
 Found key: 19
 Successfully deleted key 19
 
-*****Skip List*****
+****Skip List****
 Level 0: 3 6 7 9 12 17 21 25 26 
 Level 1: 3 17 21 26 
 Level 2: 17 21 

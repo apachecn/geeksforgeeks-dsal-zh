@@ -442,7 +442,7 @@ A * B  = (A0 + A1*xn/2) * (B0 + B1*xn/2)
 
 想法是将乘法次数减少到 3，并使递归为`T(n) = 3T(n / 2) + O(n)`
 
-***如何减少乘法次数？***
+**如何减少乘法次数？**
 
 这需要一点技巧，类似于 [Strassen 的矩阵乘法。](https://www.geeksforgeeks.org/strassens-matrix-multiplication/) 我们进行以下 3 个乘法。
 
@@ -456,7 +456,7 @@ A1*B0)xn/2 + A1*B1*xn can obtained using below.
 A0B1 + A1B0 = X - Y - Z  
 ```
 
-***深入说明***
+**深入说明**
 
 常规多项式乘法使用 4 个系数乘法：
 
