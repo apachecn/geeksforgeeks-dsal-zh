@@ -28,9 +28,9 @@
 
 在三种情况下，我们可以在给定的链表中找到元音：
 
-1.  **At starting of the linked list**: For removing vowels from the starting of the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/), move the **head Node** to the first consonant occurs in the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/).
+1.  **在链表的开头**: 为了从[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)的开头删除元音，请移动**头节点**到[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)的第一个辅音。
 
-    For Example:
+    例如：
 
     ```
     For Linked List:
@@ -40,9 +40,9 @@
 
     ```
 
-2.  **In between of the linked list**: For removing vowels from the between of the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/), the idea is to keep a marker of the last consonant found in the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/) before the **vowel Nodes** and change the next link of that Node with the next consonant Node found in the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/) after **vowel Nodes**.
+2.  **在链表之间**： 为了从[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)之间去除元音，其思想是保留在[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中找到的，在元音之前的上一个辅音的标记。 然后将该节点的下一个链接更改为在[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中找到的，在元音节点之后的下一个辅音节点。 
 
-    For Example:
+    例如：
 
     ```
     For Linked List:
@@ -54,9 +54,9 @@
 
     ```
 
-3.  **At the end of the linked list**: For removing vowels from the end of the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/), the idea is to keep a marker of the last consonant found in the [linked list](http://www.geeksforgeeks.org/data-structures/linked-list/) before the **vowel Nodes** and change the next link of that Node with NULL.
+3.  **在链表的末尾**：为了从[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)的末尾删除元音，其想法是保留在[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中找到的，在**元音节点**之前的上一个辅音的标记，并使用`NULL`更改该节点的下一个链接。
 
-    For Example:
+    例如：
 
     ```
     For Linked List:

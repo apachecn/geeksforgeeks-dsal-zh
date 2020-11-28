@@ -24,7 +24,7 @@ A new linked list identical to the original list.
 
 ![](img/7e1496dcc505d9ae9e3bd8b6634aa1de.png)
 
-*   Now copy the random link in this fashion
+*   现在以这种方式复制随机链接：
 
     ```
      original->next->random= original->random->next;  /*TRAVERSE 

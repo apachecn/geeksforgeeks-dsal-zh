@@ -12,7 +12,7 @@
 
 *   **窥视或顶部**：返回栈的顶部元素。
 
-*   **isEmpty:** Returns true if stack is empty, else false.
+*   **isEmpty**：如果堆栈为空，则返回`true`，否则返回`false`。
 
 ![stack](img/91f929ba5f7179300fc713d1f8126678.png)
 

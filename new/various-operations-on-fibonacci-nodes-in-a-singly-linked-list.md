@@ -54,7 +54,7 @@
 
 2.  **计算斐波纳契节点的数量**：要计算链表中的斐波纳契节点的数量，我们遍历链表并检查该数量是否为斐波纳契值。
 
-3.  **Find the minimum and the maximum Fibonacci nodes:** Traverse through the linked list and check if the value at a node is a Fibonacci or not. If yes:
+3.  **查找最小和最大斐波那契节点**：遍历链表，并检查节点上的值是否为斐波那契。 如是：
 
     *   如果当前节点的值大于`max`，则将当前节点的值分配给`max`。
 

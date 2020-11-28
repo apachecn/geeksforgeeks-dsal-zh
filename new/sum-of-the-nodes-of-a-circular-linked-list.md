@@ -25,7 +25,7 @@ Output: Sum of Circular linked list is = 32
 
 1.  使用链表的开头初始化指针`temp`并用 0 初始化`sum`变量。
 
-2.  Start traversing the linked list using a loop until all the nodes get traversed.
+2.  使用循环开始遍历链表，直到遍历所有节点。
 
     *   将当前节点的值添加到总和，即`sum += temp->data`。
 
