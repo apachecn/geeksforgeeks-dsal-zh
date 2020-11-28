@@ -8,7 +8,7 @@
 
 *   [XOR 链表 – 内存有效的双链表 | 系列 2](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
 
-**XOR 链表**是一种内存有效的双向链表，其中每个节点的下一个指针存储上一个和下一个节点的地址的 XOR。
+**XOR 链表**是一种内存有效的双链表，其中每个节点的下一个指针存储上一个和下一个节点的地址的 XOR。
 
 给定一个单链表，任务是将给定的单链表转换为 XOR 链表。
 

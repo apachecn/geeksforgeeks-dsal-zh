@@ -25,7 +25,7 @@ Output : 1->NULL
 
 ```
 
-在上一篇关于反向链表的文章[中，我们讨论了一种迭代和两种递归方法。](https://www.geeksforgeeks.org/reverse-a-linked-list/)
+在上一篇[关于反向链表的文章](https://www.geeksforgeeks.org/reverse-a-linked-list/)中，我们讨论了一种迭代和两种递归方法。
 
 在通过传递单个指针来反转链表的方法中，我们试图做的是将当前节点的上一个节点作为其下一个节点来反转链表。
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/print-stack-elements-from-top-to-bottom/](https://www.geeksforgeeks.org/print-stack-elements-from-top-to-bottom/)
 
-给定[栈](http://www.geeksforgeeks.org/stack-data-structure/)`S`，任务是[从上至下打印栈](https://www.geeksforgeeks.org/print-stack-elements-from-bottom-to-top/)的元素，以使元素仍然存在于栈中，而没有它们的顺序 被改变。
+给定[栈](http://www.geeksforgeeks.org/stack-data-structure/)`S`，任务是[从上至下打印栈的元素](https://www.geeksforgeeks.org/print-stack-elements-from-bottom-to-top/)，以使元素仍然存在于栈中，而不改变它们的顺序。
 
 **示例**：
 

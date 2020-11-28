@@ -303,7 +303,7 @@ Linked list after removing duplicates:
 
 1.  使用归并排序对元素排序。 我们很快将写一篇有关对链表排序的文章。 `O(nLogn)`
 
-2.  使用["删除已排序的链表中的重复项"中的算法](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)在线性时间内删除重复项。
+2.  使用[“删除已排序的链表中的重复项”](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)中的算法在线性时间内删除重复项。
 
 请注意，此方法不会保留元素的原始顺序。
 

@@ -4,7 +4,7 @@
 
 给定指向链表的头节点和数字`K`的指针，任务是反转链表的前`K`个节点。 我们需要通过更改节点之间的链接来反转列表。
 
-也检查[链表的反向](https://www.geeksforgeeks.org/reverse-a-linked-list/)
+也检查[反转链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)
 
 **示例**：
 

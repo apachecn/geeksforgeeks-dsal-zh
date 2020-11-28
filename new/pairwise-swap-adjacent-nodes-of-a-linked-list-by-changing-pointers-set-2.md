@@ -12,7 +12,7 @@ Input : 1->2->3->4->5->6
 Output : 2->1->4->3->6->5
 ```
 
-已经讨论了一种解决方案 [set 1](https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list-by-changing-links/) 。 这里讨论一个更简单的解决方案。 我们显式地更改前两个节点的指针，然后修复其余的节点。
+已经讨论了一种解决方案[系列 1](https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list-by-changing-links/)。 这里讨论一个更简单的解决方案。 我们显式地更改前两个节点的指针，然后修复其余的节点。
 
 ## C++
 

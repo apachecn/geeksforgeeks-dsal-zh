@@ -1,4 +1,4 @@
-# 从排序的双向链表
+# 从排序的双链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-duplicates-sorted-doubly-linked-list/](https://www.geeksforgeeks.org/remove-duplicates-sorted-doubly-linked-list/)
 
@@ -25,7 +25,7 @@ removeDuplicates(head_ref, x)
 
 ```
 
-在[此帖子](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/) 的中讨论了`deleteNode(head_ref, current)`（使用指向该节点的指针删除该节点）的算法。
+在[此帖子](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)中讨论了`deleteNode(head_ref, current)`（使用指向该节点的指针删除该节点）的算法。
 
 ## C++
 

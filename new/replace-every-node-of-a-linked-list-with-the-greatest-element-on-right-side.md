@@ -18,7 +18,7 @@
 
 **方法**：
 
-要解决上述问题，主要思想是使用 [**栈数据结构**](https://www.geeksforgeeks.org/stack-data-structure/) 。
+要解决上述问题，主要思想是使用[**栈数据结构**](https://www.geeksforgeeks.org/stack-data-structure/)。
 
 *   遍历链表，并将链表元素的值和位置插入栈。
 

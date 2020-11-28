@@ -6,9 +6,9 @@
 
 **前提条件**：
 
-*   [插入元素圆形双链表](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)。
+*   [向循环双链表插入元素](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)。
 
-*   [将数组转换为循环双链表。](https://www.geeksforgeeks.org/convert-array-to-circular-doubly-linked-list/)
+*   [将数组转换为循环双链表](https://www.geeksforgeeks.org/convert-array-to-circular-doubly-linked-list/)。
 
 给定*起始*指针，该指针指向循环双链表的起点，*元素*和*位置*。 任务是将*元素*插入给定循环双链表中指定的*位置*。
 

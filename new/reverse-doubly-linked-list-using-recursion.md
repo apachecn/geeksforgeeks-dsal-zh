@@ -20,7 +20,7 @@ Reversed Doubly linked list
 
 我们已经讨论了
 
-[迭代解决方案，以反转双链表](https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/)
+[反转双链表的迭代解决方案](https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/)
 
 **算法**
 

@@ -15,7 +15,7 @@ Output: 11->20->5->15->10
 
 ```
 
-**一种简单的方法**就是通过归并排序对[排序链表](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)，然后交替交换，但这需要`O(n Log n)`时间复杂度。 这里`n`是链表中元素的数量。
+**一种简单的方法**就是通过归并排序[对链表排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)，然后交替交换，但这需要`O(n Log n)`时间复杂度。 这里`n`是链表中元素的数量。
 
 一种需要`O(n)`时间的**有效方法**，是使用类似于冒泡排序的单次扫描，然后维护一个标志来表示当前的顺序。 如果当前的两个元素不按该顺序排列，则交换这些元素，否则不进行交换。 有关交换顺序的详细说明，请参考[这里](http://geeksquiz.com/converting-an-array-of-integers-into-zig-zag-fashion/)。
 
@@ -469,7 +469,7 @@ Zig Zag Linked list
 
 ```
 
-在上面的代码中，`push`函数将节点推入链表的最前面，可以轻松修改代码以将节点推到链表的末尾。 要注意的另一件事是，为简单起见，两个节点之间的数据交换是通过按值交换而不是通过链接交换来完成的，有关通过链接交换的技术，请参见[此](https://www.geeksforgeeks.org/swap-nodes-in-a-linked-list-without-swapping-data/)。
+在上面的代码中，`push`函数将节点推入链表的最前面，可以轻松修改代码以将节点推到链表的末尾。 要注意的另一件事是，为简单起见，两个节点之间的数据交换是通过按值交换而不是通过链接交换来完成的，有关通过链接交换的技术，请参见[这里](https://www.geeksforgeeks.org/swap-nodes-in-a-linked-list-without-swapping-data/)。
 
 **复杂度分析**：
 

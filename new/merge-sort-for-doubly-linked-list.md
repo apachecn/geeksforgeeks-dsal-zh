@@ -4,15 +4,15 @@
 
 的排序
 
-给定一个双向链表，编写一个函数使用归并排序以递增顺序对双向链表排序。
+给定一个双链表，编写一个函数使用归并排序以递增顺序对双链表排序。
 
-例如，以下双向链表应更改为 24810
+例如，以下双链表应更改为 24810
 
 ![](img/61dcfe5f15a4317c70a1bea6d144f1b2.png)
 
 [单链表](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)的归并排序已经讨论过。 此处的重要更改是在合并两个列表时还要修改先前的指针。
 
-以下是双向链表的归并排序的实现。
+以下是双链表的归并排序的实现。
 
 ## C++
 
@@ -674,11 +674,11 @@ Backward Traversal using prev pointer
 30 20 10 5 4 3
 ```
 
-感谢 Goku 在此处的注释[中提供了上述实现。](https://www.geeksforgeeks.org/quicksort-for-linked-list/)
+感谢 Goku 在[此处的评论](https://www.geeksforgeeks.org/quicksort-for-linked-list/)中提供了上述实现。
 
-**时间复杂度**：上述实现的时间复杂度与数组的 [MergeSort 的时间复杂度相同。 这需要Θ（nLogn）时间。](http://geeksquiz.com/merge-sort/)
+**时间复杂度**：上述实现的时间复杂度与数组的[归并排序](http://geeksquiz.com/merge-sort/)的时间复杂度相同。 这需要`Θ(nLogn)`时间。
 
-您可能还想看到[快速排序以获取双向链表](https://www.geeksforgeeks.org/quicksort-for-linked-list/)
+您可能还想看到[双链表的快速排序](https://www.geeksforgeeks.org/quicksort-for-linked-list/)。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

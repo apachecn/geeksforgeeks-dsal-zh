@@ -1,4 +1,4 @@
-# 在双向链表中交换距离开头的第`K`个节点和距离末尾的第`K`个节点
+# 在双链表中交换距离开头的第`K`个节点和距离末尾的第`K`个节点
 
 > 原文：[https://www.geeksforgeeks.org/swap-kth-node-from-beginning-with-kth-node-from-end-in-a-doubly-linked-list/](https://www.geeksforgeeks.org/swap-kth-node-from-beginning-with-kth-node-from-end-in-a-doubly-linked-list/)
 

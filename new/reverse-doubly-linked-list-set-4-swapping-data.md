@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-4-swapping-data/](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-4-swapping-data/)
 
-给定一个双向链表，我们被要求在不使用任何额外空间的情况下原地反转该列表。
+给定一个双链表，我们被要求在不使用任何额外空间的情况下原地反转该列表。
 
 **示例**：
 
@@ -15,7 +15,7 @@ Output : 1 <--> 22 <--> 33 <--> 22 <--> 11
 
 ```
 
-我们已经讨论了三种方法来反向双向链表：[反向双向链表](https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/)，[反向双向链表（组 2）](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2//)和[反向双向链表使用 递归](https://www.geeksforgeeks.org/reverse-doubly-linked-list-using-recursion/)。
+我们已经讨论了三种方法来反向双链表：[反向双链表](https://www.geeksforgeeks.org/reverse-a-doubly-linked-list/)，[反向双链表（组 2）](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2//)和[使用递归反向双链表](https://www.geeksforgeeks.org/reverse-doubly-linked-list-using-recursion/)。
 
 前两种方法的工作时间为`O(n)`，并且不需要额外的空间。 第一种方法通过交换每个节点的下一个和上一个指针来工作。 第二种方法从列表中取出每个节点，并将其添加到列表的开头。
 

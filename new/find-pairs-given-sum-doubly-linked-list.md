@@ -1,4 +1,4 @@
-# 在双向链表中查找具有给定总和的对
+# 在双链表中查找具有给定总和的对
 
 > 原文：[https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)
 
@@ -15,11 +15,11 @@ Output: (6, 1), (5,2)
 
 预期的时间复杂度为`O(n)`，辅助空间为`O(1)`。
 
-解决此问题的一种**简单方法**是，一个节点一个接一个地选取每个节点，并通过向前遍历在剩余列表中找到总和等于`x`的第二个元素。此问题的时间复杂度为`O(N ^ 2)`，`n`是双向链表中节点的总数。
+解决此问题的一种**简单方法**是，一个节点一个接一个地选取每个节点，并通过向前遍历在剩余列表中找到总和等于`x`的第二个元素。此问题的时间复杂度为`O(N ^ 2)`，`n`是双链表中节点的总数。
 
 针对此问题的**有效解决方案**与[该文章](https://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/)相同。 这是算法：
 
-*   初始化两个指针变量以在排序后的双向链表中查找候选元素。首先，用双向链表的开头初始化`first`。 `first = head`，然后用双向链表的最后一个节点初始化`second`；即`second = last_node`。
+*   初始化两个指针变量以在排序后的双链表中查找候选元素。首先，用双链表的开头初始化`first`。 `first = head`，然后用双链表的最后一个节点初始化`second`；即`second = last_node`。
 
 *   我们将`first`和`second`指针初始化为第一个和最后一个节点。 这里我们没有随机访问权限，因此要找到第二个指针，我们遍历列表以初始化第二个指针。
 

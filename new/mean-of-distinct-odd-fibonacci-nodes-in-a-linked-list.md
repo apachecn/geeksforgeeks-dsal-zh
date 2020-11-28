@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/mean-of-distinct-odd-fibonacci-nodes-in-a-linked-list/](https://www.geeksforgeeks.org/mean-of-distinct-odd-fibonacci-nodes-in-a-linked-list/)
 
-给定一个包含`N`个节点的[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从该列表中找到其数据值为奇数[的所有不同节点的](https://www.geeksforgeeks.org/check-number-fibonacci-number/)[均值](https://www.geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/) 斐波那契数。
+给定一个包含`N`个节点的[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从该列表中找到其数据值为[奇数斐波那契数](https://www.geeksforgeeks.org/check-number-fibonacci-number/)的所有不同节点的[均值](https://www.geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/)。
 
 **示例**：
 
@@ -34,7 +34,7 @@
 >
 > 因此，奇数斐波那契节点值为`(55 + 5 + 3 + 89 + 233) / 5 = 77`
 
-**方法**：想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储所有[斐波那契数](https://www.geeksforgeeks.org/check-number-fibonacci-number/)，直到链表中最大[个最大元素。 。
+**方法**：想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储所有[斐波那契数](https://www.geeksforgeeks.org/check-number-fibonacci-number/)，直到链表中的最大元素。
 
 请按照以下步骤解决问题：](https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/)
 

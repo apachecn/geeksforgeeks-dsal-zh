@@ -444,7 +444,7 @@ A * B  = (A0 + A1*xn/2) * (B0 + B1*xn/2)
 
 **如何减少乘法次数？**
 
-这需要一点技巧，类似于 [Strassen 的矩阵乘法。](https://www.geeksforgeeks.org/strassens-matrix-multiplication/) 我们进行以下 3 个乘法。
+这需要一点技巧，类似于 [Strassen 的矩阵乘法](https://www.geeksforgeeks.org/strassens-matrix-multiplication/)。我们进行以下 3 个乘法。
 
 ```
 X = (A0 + A1)*(B0 + B1) // First Multiplication

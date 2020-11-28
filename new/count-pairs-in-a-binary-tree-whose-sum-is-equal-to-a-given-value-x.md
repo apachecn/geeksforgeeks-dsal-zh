@@ -395,9 +395,9 @@ Count = 3
 
 以下是步骤：
 
-1.  将给定的二叉树转换为双向链表。 请参阅[此帖子](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-4/)。
+1.  将给定的二叉树转换为双链表。 请参阅[此帖子](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-4/)。
 
-2.  对在步骤 1 中获得的双向链表排序。请参阅[此帖子](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)。
+2.  对在步骤 1 中获得的双链表排序。请参阅[此帖子](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)。
 
 3.  在排序双链表中查找总和等于`x`的偶对计数。 请参阅[此帖子](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)。
 

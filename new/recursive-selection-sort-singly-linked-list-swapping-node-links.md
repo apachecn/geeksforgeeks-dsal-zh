@@ -46,7 +46,7 @@ swapNodes(head_ref, currX, currY, prevY)
 
 ```
 
-`swapNodes(head_ref, currX, currY, prevY)`基于此处[讨论的方法](https://www.geeksforgeeks.org/swap-nodes-in-a-linked-list-without-swapping-data/)，但为实现此帖子而对其进行了相应的修改。
+`swapNodes(head_ref, currX, currY, prevY)`基于[此处讨论的方法](https://www.geeksforgeeks.org/swap-nodes-in-a-linked-list-without-swapping-data/)，但为实现此帖子而对其进行了相应的修改。
 
 ## C++
 

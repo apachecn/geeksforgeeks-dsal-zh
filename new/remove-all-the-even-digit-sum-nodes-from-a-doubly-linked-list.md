@@ -38,7 +38,7 @@
 
 **方法**：
 
-一种简单的方法是依次遍历双向链表的节点，并首先为每个节点遍历每个数字，找到该节点中存在的值的数字总和，然后 然后最后[删除数字和为偶数的节点](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)。
+一种简单的方法是依次遍历双链表的节点，并首先为每个节点遍历每个数字，找到该节点中存在的值的数字总和，然后 然后最后[删除数字和为偶数的节点](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)。
 
 下面是上述方法的实现：
 

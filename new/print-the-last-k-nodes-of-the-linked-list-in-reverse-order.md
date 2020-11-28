@@ -331,7 +331,7 @@ public static void Main(String []args) 
 
 **时间复杂度**：`O(n)`。
 
-**双指针方法**的想法类似于[从链表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾找到第`k`个节点。
+**双指针方法**的想法类似于从[链表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾找到第`k`个节点。
 
 1.  将第一个指针向前移动`k`个节点。
 

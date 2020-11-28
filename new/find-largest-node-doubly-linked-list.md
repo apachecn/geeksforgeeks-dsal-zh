@@ -1,10 +1,10 @@
-# 在双向链表
+# 在双链表
 
 > 原文：[https://www.geeksforgeeks.org/find-largest-node-doubly-linked-list/](https://www.geeksforgeeks.org/find-largest-node-doubly-linked-list/)
 
 中找到最大的节点
 
-给定双向链表，请在双向链表中找到最大的节点。
+给定双链表，请在双链表中找到最大的节点。
 
 **示例**：
 

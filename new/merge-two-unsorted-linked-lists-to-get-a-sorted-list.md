@@ -14,7 +14,7 @@
 >
 > **输出**：`1 -> 1 -> 2 -> 4 -> 5 -> 7 -> 8`
 
-**朴素的方法**：朴素的方法是对给定的链表排序，然后[将两个排序的链表](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)按升序合并到一个列表中。
+**朴素的方法**：朴素的方法是对给定的链表排序，然后[将两个排序的链表按升序合并到一个列表中](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)。
 
 为了解决上述问题，朴素的方法是对两个链表进行单独排序，然后将两个链表合并为一个顺序递增的列表。
 

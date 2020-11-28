@@ -19,7 +19,7 @@ Output : 9->9->7->9->5->9->8->0->1->8->1
 
 我们已经在下面的文章中讨论了一个解决方案。
 
-[乘以链表表示的两个数字](https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists/)
+[相乘由链表表示的两个数字](https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists/)
 
 上面讨论的解决方案将结果存储为整数。 她将结果存储在第三个列表中，以便可以处理大量数字。
 

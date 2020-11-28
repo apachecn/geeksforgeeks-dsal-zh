@@ -32,11 +32,11 @@
 >
 > `1 3 4 4 7 7 8 8 10 10 16 16 19 19 20 20 20 21 22 23 27`
 
-**先决条件**：[参考算法](https://en.wikipedia.org/wiki/Merge_algorithm)
+**先决条件**：[合并算法](https://en.wikipedia.org/wiki/Merge_algorithm)
 
 **方法**：
 
-1.  首先按排序顺序合并两个双向链表
+1.  首先按排序顺序合并两个双链表
 
 2.  然后按排序顺序将此列表与另一个列表合并
 

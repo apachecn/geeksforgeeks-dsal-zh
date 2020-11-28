@@ -33,7 +33,7 @@ Output : 4->2->12->8->0->0->0->0->0->0
 
 ```
 
-修改列表后，隔离有效（非零）和无效（零）元素。 它与[隔离链表](https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/)中的偶数和奇数节点相同。
+修改列表后，隔离有效（非零）和无效（零）元素。 它与[隔离链表中的偶数和奇数节点](https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/)相同。
 
 ## C++
 

@@ -17,7 +17,7 @@ Output : 4
 
 ```
 
-我们讨论了此问题的不同解决方案（此处 [](https://www.geeksforgeeks.org/josephus-problem-set-1-a-on-solution/) 和 [](https://www.geeksforgeeks.org/josephus-problem-using-bit-magic/) ）。 在这篇文章中，讨论了一个简单的基于[循环链表](https://www.geeksforgeeks.org/circular-linked-list/)的解决方案。
+我们讨论了此问题的不同解决方案（[这里](https://www.geeksforgeeks.org/josephus-problem-set-1-a-on-solution/)和[这里](https://www.geeksforgeeks.org/josephus-problem-using-bit-magic/)）。 在这篇文章中，讨论了一个简单的基于[循环链表](https://www.geeksforgeeks.org/circular-linked-list/)的解决方案。
 
 1.  创建大小为`n`的循环链表。
 

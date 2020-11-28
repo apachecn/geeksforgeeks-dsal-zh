@@ -17,7 +17,7 @@ Output : 4 1 2 3 5 6
 
 ![https://media.geeksforgeeks.org/wp-content/uploads/Capturedsdw.png](img/ebf5846858a076c34e437c9fea2d3986.png)
 
-这个想法是首先[使用两个指针](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)找到一个链表的中间，第一个指针一次移动一个，第二个指针一次移动两个。 当第二个指针到达终点时，第一个指针到达中间。 我们还跟踪第一个指针的前一个，以便我们可以从中间节点的当前位置删除中间节点并使它成为头部。
+这个想法是首先[使用两个指针找到一个链表的中间](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)，第一个指针一次移动一个，第二个指针一次移动两个。 当第二个指针到达终点时，第一个指针到达中间。 我们还跟踪第一个指针的前一个，以便我们可以从中间节点的当前位置删除中间节点并使它成为头部。
 
 ## C++
 

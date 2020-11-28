@@ -1,10 +1,10 @@
-# 从未排序的双向链表
+# 从未排序的双链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-duplicates-unsorted-doubly-linked-list/](https://www.geeksforgeeks.org/remove-duplicates-unsorted-doubly-linked-list/)
 
 中删除重复项
 
-给定一个包含`n`个节点的未排序双向链表。 问题是从给定列表中删除重复的节点。
+给定一个包含`n`个节点的未排序双链表。 问题是从给定列表中删除重复的节点。
 
 **示例**：
 
@@ -654,9 +654,9 @@ Doubly linked list after removing duplicates:
 
 **方法 2（排序）**：以下是步骤：
 
-1.  使用归并排序对双向链表中的元素排序。 请参阅此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)
+1.  使用归并排序对双链表中的元素排序。 请参阅[此帖子](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)。
 
-2.  使用[算法在线性时间内删除重复项，以从排序的双向链表](https://www.geeksforgeeks.org/remove-duplicates-sorted-doubly-linked-list/)中删除重复项。
+2.  使用[在线性时间内删除重复项](https://www.geeksforgeeks.org/remove-duplicates-sorted-doubly-linked-list/)的算法，以从排序的双链表中删除重复项。
 
 时间复杂度：`O(nLogn)`
 
@@ -666,7 +666,7 @@ Doubly linked list after removing duplicates:
 
 **方法 3 高效方法（散列）**：
 
-我们从头到尾遍历双向链表。 对于每个新遇到的元素，我们检查它是否在哈希表中：如果是，则将其删除；否则，将其删除。 否则我们将其放在哈希表中。 哈希表是使用 C++ 中的[`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)实现的。
+我们从头到尾遍历双链表。 对于每个新遇到的元素，我们检查它是否在哈希表中：如果是，则将其删除；否则，将其删除。 否则我们将其放在哈希表中。 哈希表是使用 C++ 中的[`unordered_set`](https://www.geeksforgeeks.org/unorderd_set-stl-uses/)实现的。
 
 ## C++
 

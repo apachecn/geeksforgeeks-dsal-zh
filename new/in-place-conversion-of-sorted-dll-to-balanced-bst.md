@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/in-place-conversion-of-sorted-dll-to-balanced-bst/](https://www.geeksforgeeks.org/in-place-conversion-of-sorted-dll-to-balanced-bst/)
 
-给定一个双向链表，该列表具有按升序排序的数据成员。 构造一个[平衡二叉搜索树](https://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced/)，该树的数据成员与给定的双链表相同。 该树必须原地构建（不应为树转换分配新节点）
+给定一个双链表，该列表具有按升序排序的数据成员。 构造一个[平衡二叉搜索树](https://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced/)，该树的数据成员与给定的双链表相同。 该树必须原地构建（不应为树转换分配新节点）
 
 **示例**：
 

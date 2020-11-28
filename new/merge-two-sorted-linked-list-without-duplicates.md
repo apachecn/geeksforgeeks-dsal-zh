@@ -17,7 +17,7 @@ Output : 1 2 4 5 7 9
 
 **方法**：以下是步骤：
 
-1.  以排序方式合并两个排序的链表。 请参阅此帖子的[递归方法。 令最终获得的列表为**头**。](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)
+1.  以排序方式合并两个排序的链表。 请参阅此帖子的[递归方法](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)。 令最终获得的列表为**头**。
 
 2.  [从排序的链表中删除重复项](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)。
 

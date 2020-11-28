@@ -14,7 +14,7 @@
 >
 > **输出**：`6  -> 1 -> 2 -> 3 -> 4 -> 5`
 
-**先决条件**：[将最后一个元素移到给定链表](https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list/)的前面
+**先决条件**：[将最后一个元素移到给定链表的前面](https://www.geeksforgeeks.org/move-last-element-to-front-of-a-given-linked-list/)
 
 **方法**：
 

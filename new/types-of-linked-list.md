@@ -243,7 +243,7 @@ public static void Main(String[] args)
 
 ```
 
-*   [**双链表**](https://www.geeksforgeeks.org/doubly-linked-list/)：双链表或双向链表是链表的一种更复杂的类型，它包含顺序指向下一个节点和上一个节点的指针 因此，它包含三部分：数据，指向下一个节点的指针和指向上一个节点的指针。 这也使我们能够向后遍历列表。 以下是相同的图片：
+*   [**双链表**](https://www.geeksforgeeks.org/doubly-linked-list/)：双链表或双链表是链表的一种更复杂的类型，它包含顺序指向下一个节点和上一个节点的指针 因此，它包含三部分：数据，指向下一个节点的指针和指向上一个节点的指针。 这也使我们能够向后遍历列表。 以下是相同的图片：
 
 ![](img/69b16aec47e61c0f7fafd8c31e54dfa8.png)
 
@@ -702,7 +702,7 @@ Contents of Circular Linked List
 
 ```
 
-*   [循环双链表](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)：循环双链表或循环双向链表是链表的一种更复杂的类型，它包含指向序列中的下一个节点和上一个节点的指针。 双向链表和循环链表之间的区别与单链表和循环链表之间的区别相同。 圆形双向链表在第一个节点的上一个字段中不包含`null`。 以下是相同的图片：
+*   [循环双链表](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)：循环双链表或循环双链表是链表的一种更复杂的类型，它包含指向序列中的下一个节点和上一个节点的指针。 双链表和循环链表之间的区别与单链表和循环链表之间的区别相同。 圆形双链表在第一个节点的上一个字段中不包含`null`。 以下是相同的图片：
 
 ![](img/d699e42fe4c414a8ad2cdf8ccaeaebce.png)
 

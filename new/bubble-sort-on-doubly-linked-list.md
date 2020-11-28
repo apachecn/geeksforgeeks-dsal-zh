@@ -4,7 +4,7 @@
 
 上排序
 
-使用[冒泡排序](http://www.geeksforgeeks.org/bubble-sort/)对给定的双向链表排序。
+使用[冒泡排序](http://www.geeksforgeeks.org/bubble-sort/)对给定的双链表排序。
 
 示例：
 

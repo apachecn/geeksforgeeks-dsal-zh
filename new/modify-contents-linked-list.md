@@ -23,7 +23,7 @@ Output : -8 -> 2 -> -4 -> 12 -> 7 -> 10
 
 **方法**：以下步骤是：
 
-1.  从中间拆分列表。 进行 [**前后拆分**](https://www.geeksforgeeks.org/merge-sort-for-linked-list/) 。 如果元素的数量为奇数，则多余的元素应放在第一（前）列表中。
+1.  从中间拆分列表。 进行[**前后拆分**](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)。 如果元素的数量为奇数，则多余的元素应放在第一（前）列表中。
 
 2.  [**反转第二个（后）列表**](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/) 。
 

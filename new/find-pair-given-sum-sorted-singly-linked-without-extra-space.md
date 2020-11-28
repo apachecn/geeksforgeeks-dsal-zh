@@ -18,17 +18,17 @@ Output: (6, 11), (7, 10), (8, 9)
 
 针对此问题的**有效解决方案**基于以下文章中讨论的思想。
 
-[在双向链表中查找对：](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)我们使用从两端遍历链表的相同算法。
+[在双链表中查找对](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)：我们使用从两端遍历链表的相同算法。
 
 [XOR 链表](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)：在单链表中，我们只能沿向前方向遍历列表。 我们使用 XOR 概念将单链表转换为双链表。
 
 以下是步骤：
 
-*   首先，我们需要将单链表转换为双链表。 在这里，我们给出了单链表结构节点，该节点仅具有`next`指针，而没有`prev`指针，因此，为了将单链表转换为双链表，我们使用[内存高效双链 列表（异或链表）](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)。
+*   首先，我们需要将单链表转换为双链表。 在这里，我们给出了单链表结构节点，该节点仅具有`next`指针，而没有`prev`指针，因此，为了将单链表转换为双链表，我们使用[内存高效双链表（异或链表）](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)。
 
 *   在 XOR 链表中，单链表的每个`next`指针都包含`next`和`prev`指针的 XOR。
 
-*   将单链表转换为双链表后，我们初始化两个指针变量以在排序的双链表中找到候选元素。 首先以双向链表的开头初始化；即`first = head`，然后用双向链表的最后一个节点初始化`second`；即`second = last_node`。
+*   将单链表转换为双链表后，我们初始化两个指针变量以在排序的双链表中找到候选元素。 首先以双链表的开头初始化；即`first = head`，然后用双链表的最后一个节点初始化`second`；即`second = last_node`。
 
 *   这里我们没有随机访问权限，因此要初始化指针，我们遍历列表直到最后一个节点，并将最后一个节点分配给`second`。
 
@@ -219,7 +219,7 @@ int main()
 
 时间复杂度：`O(n)`
 
-如果未对链表排序，那么我们可以将列表作为第一步排序。 但是在那种情况下，整体时间复杂度将变为`O(n Log n)`。 如果没有多余的空间，我们可以在这种情况下使用哈希。 基于哈希的解决方案与方法 2 [在此处](https://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/)相同。
+如果未对链表排序，那么我们可以将列表作为第一步排序。 但是在那种情况下，整体时间复杂度将变为`O(n Log n)`。 如果没有多余的空间，我们可以在这种情况下使用哈希。 基于哈希的解决方案与[此处的方法 2](https://www.geeksforgeeks.org/write-a-c-program-that-given-a-set-a-of-n-numbers-and-another-number-x-determines-whether-or-not-there-exist-two-elements-in-s-whose-sum-is-exactly-x/) 相同。
 
 本文由 [**Shashank Mishra(Gullu)**](https://www.facebook.com/shashank.mishra.92167) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

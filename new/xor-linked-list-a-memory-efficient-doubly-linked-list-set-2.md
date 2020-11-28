@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
 
-在[的上一篇文章](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)中，我们讨论了如何在每个节点的地址字段中仅使用一个空格来创建双向链接。 在这篇文章中，我们将讨论内存高效的双向链表的实现。 我们将主要讨论以下两个简单功能。
+在[的上一篇文章](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)中，我们讨论了如何在每个节点的地址字段中仅使用一个空格来创建双向链接。 在这篇文章中，我们将讨论内存高效的双链表的实现。 我们将主要讨论以下两个简单功能。
 
 1.  在开始处插入新节点的功能。
 

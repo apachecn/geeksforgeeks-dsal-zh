@@ -16,9 +16,9 @@
 
 **先决条件**：
 
-1.  [从链表中删除一个节点。](https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/)
+1.  [从链表中删除一个节点](https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/)。
 
-2.  [从链表的末尾找到第`n`个节点](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)
+2.  [从链表的末尾找到第`n`个节点](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)。
 
 **方法**：
 

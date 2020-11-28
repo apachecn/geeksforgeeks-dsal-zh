@@ -1,8 +1,8 @@
-# 从双向链表中删除所有小于给定值的节点
+# 从双链表中删除所有小于给定值的节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-the-nodes-from-a-doubly-linked-list-that-are-smaller-than-a-given-value/](https://www.geeksforgeeks.org/delete-all-the-nodes-from-a-doubly-linked-list-that-are-smaller-than-a-given-value/)
 
-给定一个包含`N`个节点和数字`K`的双向链表，任务是从列表中删除所有小于给定值`K`的节点。
+给定一个包含`N`个节点和数字`K`的双链表，任务是从列表中删除所有小于给定值`K`的节点。
 
 **示例**：
 
@@ -17,7 +17,7 @@ Output: 5 <=> 6 <=> 8 <=> 4 <=> 9
 
 ```
 
-**方法**：遍历双向链表的节点，并获得数据值小于`K`的节点的指针。 请参阅[从双链表中删除节点](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)的文章以删除节点。
+**方法**：遍历双链表的节点，并获得数据值小于`K`的节点的指针。 请参阅[从双链表中删除节点](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)的文章以删除节点。
 
 下面是上述方法的实现：
 

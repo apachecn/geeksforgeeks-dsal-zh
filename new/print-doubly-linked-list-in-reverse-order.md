@@ -1,8 +1,8 @@
-# 以相反的顺序打印双向链表
+# 以相反的顺序打印双链表
 
 > 原文：[https://www.geeksforgeeks.org/print-doubly-linked-list-in-reverse-order/](https://www.geeksforgeeks.org/print-doubly-linked-list-in-reverse-order/)
 
-给定正整数的双链表。 任务是按照相反的顺序打印给定的双向链表数据。
+给定正整数的双链表。 任务是按照相反的顺序打印给定的双链表数据。
 
 **示例**：
 
@@ -17,7 +17,7 @@ Output: 40  30  20  10
 
 **方法**：
 
-*   用指针指向双向链表的头部。
+*   用指针指向双链表的头部。
 
 *   现在，开始遍历链表，直到最后。
 

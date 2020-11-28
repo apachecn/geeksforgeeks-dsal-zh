@@ -15,9 +15,9 @@ Output :10->13->11->15
 
 ```
 
-我们在[中讨论了三种不同的解决方案，原地重新排列给定的链表。](https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/)
+我们在[“原地重新排列给定的链表”](https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/)中讨论了三种不同的解决方案。
 
-在这篇文章中，讨论了一个不同的基于 [Deque](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/) 的解决方案。
+在这篇文章中，讨论了一个基于[双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/)的不同的解决方案。
 
 **方法**
 

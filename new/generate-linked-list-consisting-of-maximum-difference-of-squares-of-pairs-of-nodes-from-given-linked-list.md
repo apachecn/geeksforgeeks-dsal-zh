@@ -4,7 +4,7 @@
 
 中节点对的平方的最大差值组成
 
-给定节点数为偶数的[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，任务是生成一个新的[链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)，使其包含节点值的平方的最大平方差[。 通过将每个节点包括在一对中来降低顺序。](https://www.geeksforgeeks.org/check-whether-number-can-represented-sum-two-squares/)
+给定节点数为偶数的[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，任务是生成一个新的[链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)，使其包含节点值的平方的最大平方差。 [通过将每个节点包括在一对中来降低顺序](https://www.geeksforgeeks.org/check-whether-number-can-represented-sum-two-squares/)。
 
 **示例**：
 
@@ -38,7 +38,7 @@
 >
 > 因此，形成的链表为`96 -> 72 -> 48 -> 10`。
 
-**方法**：方法是找到节点的最大值，并始终使最大节点和最小节点之间的**差**。 因此，创建一个[双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/) 并在其中插入所有节点值，然后[对双端队列](https://www.geeksforgeeks.org/sorting-queue-without-extra-space/)排序。 现在，从两端访问最大值和最小值。 步骤如下：
+**方法**：方法是找到节点的最大值，并始终使最大节点和最小节点之间的**差**。 因此，创建一个[双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/) 并在其中插入所有节点值，然后[对双端队列排序](https://www.geeksforgeeks.org/sorting-queue-without-extra-space/)。 现在，从两端访问最大值和最小值。 步骤如下：
 
 *   创建**双端队列**，并将所有节点值插入双端队列。
 
@@ -46,7 +46,7 @@
 
 *   创建另一个**链表**，其值与双端队列的后面和前面的平方和之差最大。
 
-*   在每次迭代[之后，从双端队列弹出](https://www.geeksforgeeks.org/dequepop_front-dequepop_back-c-stl/)最小值和最大值。
+*   在每次迭代之后，[从双端队列弹出最小值和最大值](https://www.geeksforgeeks.org/dequepop_front-dequepop_back-c-stl/)。
 
 *   完成上述步骤后，打印形成的新链表的节点。
 

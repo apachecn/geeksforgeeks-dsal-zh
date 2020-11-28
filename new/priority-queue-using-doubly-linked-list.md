@@ -1,10 +1,10 @@
-# 使用双向链表
+# 使用双链表
 
 > 原文：[https://www.geeksforgeeks.org/priority-queue-using-doubly-linked-list/](https://www.geeksforgeeks.org/priority-queue-using-doubly-linked-list/)
 
 的优先级队列
 
-给定具有优先级的节点，请使用双向链表实现优先级队列。
+给定具有优先级的节点，请使用双链表实现优先级队列。
 
 **前提条件**：[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
 
@@ -18,7 +18,7 @@
 
 **方法**：
 
-1.  创建一个双向链表，其中包含字段`info`（保存节点的信息），优先级（保存节点的优先级），`prev`（指向上一个节点），`next`（指向下一个节点）。
+1.  创建一个双链表，其中包含字段`info`（保存节点的信息），优先级（保存节点的优先级），`prev`（指向上一个节点），`next`（指向下一个节点）。
 
 2.  在节点中插入元素和优先级。
 
@@ -388,7 +388,7 @@ public static void Main(string[] args)
 
 **相关文章**：
 
-[使用单链表](https://www.geeksforgeeks.org/priority-queue-using-linked-list/)的优先级队列
+[使用单链表的优先级队列](https://www.geeksforgeeks.org/priority-queue-using-linked-list/)
 
 **时间复杂度以及与[二叉堆](https://www.geeksforgeeks.org/binary-heap/)的比较**：
 
