@@ -509,7 +509,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Incorrect Linked List: 1 (-1) 2 (1) 3 (1) 4 (3) 

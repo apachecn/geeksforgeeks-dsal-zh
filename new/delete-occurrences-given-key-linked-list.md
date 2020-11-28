@@ -566,7 +566,7 @@ class GFG
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Created Linked List: 

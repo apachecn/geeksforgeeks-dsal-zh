@@ -236,7 +236,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output**
+**输出**：
 
 ```
 1 2 3 
@@ -582,7 +582,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Created DLL is: 
@@ -694,7 +694,7 @@ int main()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Contents of Circular Linked List
@@ -836,7 +836,7 @@ int main()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Created circular doubly linked list is: 
@@ -967,7 +967,7 @@ int main()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 List After inserting 3 elements:

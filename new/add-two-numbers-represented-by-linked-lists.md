@@ -705,7 +705,7 @@ public class LinkedList {
 
 ```
 
-**Output**
+**输出**：
 
 ```
 First List is 7 5 9 4 6 

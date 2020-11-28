@@ -515,7 +515,7 @@ class LinkedList {
 
 ```
 
-**Output**
+**输出**：
 
 ```
 The node of intersection is 15
@@ -742,7 +742,7 @@ public class LinkedListIntersect
 
 ```
 
-**Output**
+**输出**：
 
 ```
 1  2  3  4  5  6  7  
@@ -893,7 +893,7 @@ int main()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 INTERSEPOINT LIST :15->30

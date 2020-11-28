@@ -644,7 +644,7 @@ public class DLL
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Original Linked list 10 8 4 2 

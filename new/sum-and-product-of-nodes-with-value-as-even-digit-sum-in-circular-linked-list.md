@@ -483,7 +483,7 @@ public static void Main(String []args) 
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Initial List: 13 6 8 15 16 

@@ -438,7 +438,7 @@ class LinkedList {
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Element at index 3 is 4
@@ -753,7 +753,7 @@ class GFG {
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Element at index 3 is 4

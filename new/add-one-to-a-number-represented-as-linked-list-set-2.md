@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/add-one-to-a-number-represented-as-linked-list-set-2/](https://www.geeksforgeeks.org/add-one-to-a-number-represented-as-linked-list-set-2/)
 
-给定一个表示一个数字的单链表，其中每个节点仅包含一个数字 **[0 – 9]** 。 任务是将`1`添加到给定链表表示的号码中，并打印新链表。
+给定一个表示一个数字的单链表，其中每个节点仅包含一个`[0 – 9]`的数字。 任务是将`1`添加到给定链表表示的号码中，并打印新链表。
 
 **示例**：
 

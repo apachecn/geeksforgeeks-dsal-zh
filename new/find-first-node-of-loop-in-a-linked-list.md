@@ -331,7 +331,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Loop starting node is 15
@@ -666,7 +666,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Loop starting node is 15

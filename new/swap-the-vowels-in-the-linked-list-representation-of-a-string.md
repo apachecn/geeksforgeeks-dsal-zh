@@ -459,7 +459,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 g -> e -> e -> k -> s -> NULL

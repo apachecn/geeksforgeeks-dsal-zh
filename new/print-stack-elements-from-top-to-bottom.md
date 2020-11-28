@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/print-stack-elements-from-top-to-bottom/](https://www.geeksforgeeks.org/print-stack-elements-from-top-to-bottom/)
 
-给定[栈](http://www.geeksforgeeks.org/stack-data-structure/) **S** ，任务是[从上至下打印栈](https://www.geeksforgeeks.org/print-stack-elements-from-bottom-to-top/)的元素，以使元素仍然存在于栈中，而没有它们的顺序 被改变。
+给定[栈](http://www.geeksforgeeks.org/stack-data-structure/)`S`，任务是[从上至下打印栈](https://www.geeksforgeeks.org/print-stack-elements-from-bottom-to-top/)的元素，以使元素仍然存在于栈中，而没有它们的顺序 被改变。
 
 **示例**：
 
@@ -20,11 +20,11 @@
 
 2.  添加基本​​条件，如果**栈**为空，则从函数返回。
 
-3.  否则，将顶部元素存储在某个变量 **X** 中，然后将其删除。
+3.  否则，将顶部元素存储在某个变量`X`中，然后将其删除。
 
-4.  打印 **X** ，调用递归函数并在其中传递相同的栈。
+4.  打印`X`，调用递归函数并在其中传递相同的栈。
 
-5.  将存储的 **X** 推回栈。
+5.  将存储的`X`推回栈。
 
 下面是上述方法的实现：
 
@@ -250,7 +250,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output**
+**输出**：
 
 ```
 4 3 2 1 
@@ -550,7 +550,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output**
+**输出**：
 
 ```
 4 3 2 1 
@@ -824,7 +824,7 @@ public static void Main(String []args)
 
 ```
 
-**Output**
+**输出**：
 
 ```
 4 3 2 1 

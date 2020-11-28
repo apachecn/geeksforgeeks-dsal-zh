@@ -660,7 +660,7 @@ class LinkedList {
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Original linked list 

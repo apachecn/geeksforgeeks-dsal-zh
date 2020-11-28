@@ -545,7 +545,7 @@ class List{
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Initial List:  1 ->  4 ->  3 ->  18 ->  19 -> 

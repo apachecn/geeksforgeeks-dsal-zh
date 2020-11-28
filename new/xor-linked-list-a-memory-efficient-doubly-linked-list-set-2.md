@@ -211,7 +211,7 @@ int main ()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Following are the nodes of Linked List: 

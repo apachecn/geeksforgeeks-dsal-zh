@@ -338,7 +338,7 @@ class LinkedList {
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Loop found
@@ -446,7 +446,7 @@ int main()
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Loop Found
@@ -818,7 +818,7 @@ public class LinkedList {
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Found Loop
@@ -1196,7 +1196,7 @@ public class GFG {
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Loop Found
@@ -1330,7 +1330,7 @@ int main()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Loop Found

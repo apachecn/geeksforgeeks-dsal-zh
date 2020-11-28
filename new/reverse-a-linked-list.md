@@ -1133,7 +1133,7 @@ public class LinkedList {
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Given linked list
@@ -1270,7 +1270,7 @@ int main()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Given linked list

@@ -533,7 +533,7 @@ public static void Main(String []args)
 
 ```
 
-**Output**
+**输出**：
 
 ```
 1st Polynomial:- 3x^3+6x^1-9

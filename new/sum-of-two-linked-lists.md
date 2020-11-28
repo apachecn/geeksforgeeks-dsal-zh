@@ -666,7 +666,7 @@ public class linkedlistATN
 
 ```
 
-**Output**
+**输出**：
 
 ```
 1 0 1 7 
@@ -801,7 +801,7 @@ int main() 
 
 ```
 
-**Output**
+**输出**：
 
 ```
 5 8 5 

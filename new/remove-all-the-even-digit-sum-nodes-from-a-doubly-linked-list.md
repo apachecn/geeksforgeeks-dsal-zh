@@ -641,7 +641,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Original List: 18 15 8 9 14 

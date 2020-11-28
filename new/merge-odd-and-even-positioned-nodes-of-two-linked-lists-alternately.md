@@ -647,7 +647,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 1 7 10 13 6
