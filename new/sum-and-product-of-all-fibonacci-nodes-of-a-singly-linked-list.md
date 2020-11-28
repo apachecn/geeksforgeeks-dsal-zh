@@ -36,7 +36,7 @@
 > product = 5 * 3 * 2 = 30
 > ```
 
-**方法**：的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)来预先计算并存储[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，然后检查节点是否在`O(1)`时间中包含斐波那契值 。
+**方法**：想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)来预先计算并存储[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，然后检查节点是否在`O(1)`时间中包含斐波那契值 。
 
 1.  遍历整个[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，并获得列表中的最大值。
 

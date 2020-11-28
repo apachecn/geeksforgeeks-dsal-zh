@@ -14,7 +14,7 @@
 
 ![](img/7bc396393c352396ff4bc6a0f968bfc2.png)
 
-在[先前的文章中讨论了针对此问题的原地解决方案。](https://www.geeksforgeeks.org/convert-a-binary-tree-to-a-circular-doubly-link-list/)
+在[先前的文章](https://www.geeksforgeeks.org/convert-a-binary-tree-to-a-circular-doubly-link-list/)中讨论了针对此问题的原地解决方案。
 
 在这篇文章中，讨论了一个更简单的解决方案，但使用了额外的`O(n)`空间。
 

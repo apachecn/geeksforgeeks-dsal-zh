@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/](https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/)
 
-我们在上一则关于循环链表的文章中讨论了[循环链表的介绍和应用，](http://quiz.geeksforgeeks.org/circular-linked-list/ "Permanent link to Circular Linked List | Set 1 (Introduction and Applications)") 。 在这篇文章中，讨论了遍历操作。
+我们在上一则关于循环链表的文章中讨论了[循环链表的介绍和应用](http://quiz.geeksforgeeks.org/circular-linked-list/ "Permanent link to Circular Linked List | Set 1 (Introduction and Applications)") 。 在这篇文章中，讨论了遍历操作。
 
 ![](img/ff7f30aebf5dc865587c7829dcf4233c.png "cll")
 

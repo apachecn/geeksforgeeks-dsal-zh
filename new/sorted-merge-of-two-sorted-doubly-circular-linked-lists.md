@@ -1,8 +1,8 @@
-# 两个排序的双循环链表的排序合并
+# 两个排序的循环双链表的排序合并
 
 > 原文：[https://www.geeksforgeeks.org/sorted-merge-of-two-sorted-doubly-circular-linked-lists/](https://www.geeksforgeeks.org/sorted-merge-of-two-sorted-doubly-circular-linked-lists/)
 
-给定两个已排序的[双循环链表](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)，分别包含`n1`和`n2`个节点。 问题是合并两个列表，使结果列表也处于排序顺序。
+给定两个已排序的[循环双链表](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)，分别包含`n1`和`n2`个节点。 问题是合并两个列表，使结果列表也处于排序顺序。
 
 **示例**：
 

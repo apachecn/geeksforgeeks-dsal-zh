@@ -323,7 +323,7 @@ public static void Main(String []args) 
 
 **时间复杂度**：`O(n)`。
 
-**迭代方法**：的想法是使用[栈数据结构](http://www.geeksforgeeks.org/stack-data-structure/)。
+**迭代方法**：想法是使用[栈数据结构](http://www.geeksforgeeks.org/stack-data-structure/)。
 
 1.  将所有链表节点推入栈。
 

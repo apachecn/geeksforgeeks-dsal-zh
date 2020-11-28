@@ -25,7 +25,7 @@ NULL NULL NULL
 
 ```
 
-[帖子](https://www.geeksforgeeks.org/construct-linked-list-2d-matrix/)中已经讨论了针对此问题的递归解决方案。 下面是该问题的迭代方法：
+[这篇文章](https://www.geeksforgeeks.org/construct-linked-list-2d-matrix/)中已经讨论了针对此问题的递归解决方案。 下面是该问题的迭代方法：
 
 *   这个想法是创建`m`个链表（`m`为行数），其每个节点都存储其右节点。 `m`个链表的每个的头指针都存储在节点数组中。
 

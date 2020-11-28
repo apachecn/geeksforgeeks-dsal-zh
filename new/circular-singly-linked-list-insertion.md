@@ -6,7 +6,7 @@
 
 [单链表](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)
 
-[链链表](http://quiz.geeksforgeeks.org/circular-linked-list/)
+[循环链表](http://quiz.geeksforgeeks.org/circular-linked-list/)
 
 **为什么要循环？** 在单链表中，为了访问链列表的任何节点，我们从第一个节点开始遍历。 如果我们位于列表中间的任何节点，则不可能访问给定节点之前的节点。 这个问题可以通过稍微改变单链表的结构来解决。 在单链表中，下一部分（指向下一个节点的指针）为`NULL`，如果我们利用此链接指向第一个节点，则可以到达前一个节点。 有关循环链表的更多优点，请参考此的[。
 

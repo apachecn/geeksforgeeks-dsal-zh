@@ -16,7 +16,7 @@
 
 **注意**：请参考[本文](https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/)的`HashMap`方法，[本文](https://www.geeksforgeeks.org/first-non-repeating-character-using-one-traversal-of-string-set-2/)作为空间优化的方法。
 
-**链表方法**：的想法是使用[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)来跟踪字符串中的唯一元素。 下面是该方法的说明：
+**链表方法**：想法是使用[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)来跟踪字符串中的唯一元素。 下面是该方法的说明：
 
 *   为字符串中的每个字符遍历字符串，并根据以下条件在链表中添加该字符：
 

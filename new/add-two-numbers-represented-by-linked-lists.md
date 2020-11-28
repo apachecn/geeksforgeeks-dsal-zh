@@ -726,7 +726,7 @@ Resultant list is 5 0 0 5 6
 
 https://www.youtube.com/watch?v=LLPuC5kWD8U 
 
-相关文章：[添加两个由链表表示的数字 | 系列 2](https://www.geeksforgeeks.org/sum-of-two-linked-lists/)
+相关文章：[相加两个由链表表示的数字 | 系列 2](https://www.geeksforgeeks.org/sum-of-two-linked-lists/)
 
 如果您发现上述代码/算法有误，请写评论，或者找到其他解决相同问题的方法。
 

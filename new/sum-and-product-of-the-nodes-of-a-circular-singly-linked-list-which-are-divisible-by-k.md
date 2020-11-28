@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/sum-and-product-of-the-nodes-of-a-circular-singly-linked-list-which-are-divisible-by-k/](https://www.geeksforgeeks.org/sum-and-product-of-the-nodes-of-a-circular-singly-linked-list-which-are-divisible-by-k/)
 
-给定一个单循环链表。 任务是找到可被给定链表的`K`整除的节点的总和和乘积。
+给定一个循环单链表。 任务是找到可被给定链表的`K`整除的节点的总和和乘积。
 
 **示例**：
 
@@ -19,7 +19,7 @@ Output : Product = 75, Sum = 20
 
 ![Sum And Product of Singly Circular Linked List Node](img/8795cc5795962963898fe645c6ba5260.png)
 
-单循环链表节点的总和与乘积
+循环单链表节点的总和与乘积
 
 **方法**：
 

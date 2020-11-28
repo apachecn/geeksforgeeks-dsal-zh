@@ -18,7 +18,7 @@
 >
 > **输出**：`finalList = 5 <=> 3 <=> 1 <=> 9`
 
-这个想法是一个遍历双向链表的节点，并得到具有数据的节点的指针。 请按照本帖子的[中使用的方法删除那些节点。](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
+这个想法是一个遍历双向链表的节点，并得到具有数据的节点的指针。 请按照[本帖子](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)中使用的方法删除那些节点。
 
 以下是上述想法的实现：
 

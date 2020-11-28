@@ -29,9 +29,9 @@ not palindrome.
 
 1.  使用弗洛伊德循环检测算法检测环路。
 
-2.  然后按照[和](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)中的讨论找到循环的起始节点
+2.  然后按照[这篇文章](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)中的讨论找到循环的起始节点
 
-3.  如[和](https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)中所述，检查链表是否是回文
+3.  如[这篇文章](https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)中所述，检查链表是否是回文
 
 下面是实现。
 

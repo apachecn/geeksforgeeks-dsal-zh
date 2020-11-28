@@ -39,7 +39,7 @@
 >
 > 因此，这些节点已删除。
 
-**方法**：的想法是一个遍历循环单链表的节点，对于每个节点，[通过遍历每个节点，找到节点中存在的值的数字总和](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/) 数字。 如果数字总和为偶数，则[然后删除节点](https://www.geeksforgeeks.org/deletion-circular-linked-list/)。 否则，继续。
+**方法**：想法是一个遍历循环单链表的节点，对于每个节点，[通过遍历每个节点，找到节点中存在的值的数字总和](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/) 数字。 如果数字总和为偶数，则[然后删除节点](https://www.geeksforgeeks.org/deletion-circular-linked-list/)。 否则，继续。
 
 以下是上述方法的实现：
 

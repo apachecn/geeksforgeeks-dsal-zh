@@ -17,7 +17,7 @@ Output : 13 -> 16 -> 22 -> 45 -> 16
 
 ```
 
-**方法**：该方法类似于[从列表中删除大于给定密钥](https://www.geeksforgeeks.org/delete-nodes-list-greater-x/)的所有节点。
+**方法**：该方法类似于[从列表中删除大于给定键的所有节点](https://www.geeksforgeeks.org/delete-nodes-list-greater-x/)。
 
 有两种可能的情况：
 

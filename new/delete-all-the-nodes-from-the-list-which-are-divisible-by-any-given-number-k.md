@@ -17,7 +17,7 @@ Output : 13 -> 9 -> 22 -> 45 -> 5 -> 6
 
 ```
 
-解决该问题的方法类似于[从列表中删除所有小于给定密钥](https://www.geeksforgeeks.org/delete-all-the-nodes-from-the-list-which-are-less-than-k/)的节点。
+解决该问题的方法类似于[从列表中删除所有小于给定键的节点](https://www.geeksforgeeks.org/delete-all-the-nodes-from-the-list-which-are-less-than-k/)。
 
 **有两种可能的情况**：
 

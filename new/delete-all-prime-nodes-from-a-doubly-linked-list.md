@@ -16,7 +16,7 @@
 >
 > **输出**：`finalList = 5 <=> 4 <=> 9`
 
-**方法**：想法是一次遍历双向链表的节点，并获得素数为的节点[的指针。 遵循](https://www.geeksforgeeks.org/primality-test-set-1-introduction-and-school-method/)此[中使用的方法删除那些节点。](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)
+**方法**：想法是一次遍历双向链表的节点，[并获得素数节点的指针](https://www.geeksforgeeks.org/primality-test-set-1-introduction-and-school-method/)。 遵循[这篇文章](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)中使用的方法删除那些节点。
 
 以下是上述想法的实现：
 

@@ -498,7 +498,7 @@ class GFG 
 
 **相关文章**：
 
-*   [检测到链表](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)中的循环
+*   [检测链表中的循环](https://www.geeksforgeeks.org/detect-loop-in-a-linked-list/)
 
 *   [检测并删除链表中的循环](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)
 

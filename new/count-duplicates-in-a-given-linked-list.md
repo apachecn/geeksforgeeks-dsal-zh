@@ -303,7 +303,7 @@ public static void Main(String []args)
 
 **时间复杂度**：`O(n * n)`
 
-**有效方法**：的想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)
+**有效方法**：想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)
 
 ## C++
 

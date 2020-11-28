@@ -47,7 +47,7 @@ Output: 5->7->8->10->19->20->22->30->50
 
 在本文中，我们将使用](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)[堆](https://www.geeksforgeeks.org/heap-data-structure/)解决该问题。
 
-**方法**：的想法是观察从每个顶部节点向下方向连接的`N`个节点，但观察到所有向下的节点都是按排序的顺序。 因此，任务是按升序（或降序）对整个事物排序。
+**方法**：想法是观察从每个顶部节点向下方向连接的`N`个节点，但观察到所有向下的节点都是按排序的顺序。 因此，任务是按升序（或降序）对整个事物排序。
 
 1.  在[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)中将所有链表的开头推入向下列表。
 

@@ -6,7 +6,7 @@
 
 [链表简介](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)
 
-[在单链表](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)中插入节点
+[在单链表中插入节点](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)
 
 双链表（DLL）相比单链表包含一个额外的指针，通常称为*上一个指针*，以及下一个指针和数据。
 
@@ -76,7 +76,7 @@ class Node:
 
 **与单链表相比的缺点**
 
-1.  DLL 的缺点是每个节点都需要额外的空间才能存储先前的指针。 尽管可以用单个指针来实现 DLL（请参阅[和](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)[）。
+1.  DLL 的缺点是每个节点都需要额外的空间才能存储先前的指针。 尽管可以用单个指针来实现 DLL（请参阅[这里](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)）。
 
 2.  所有操作都需要事先维护一个额外的指针。 例如，在插入时，我们需要同时修改`prev`指针和`next`指针。 例如，在以下用于在不同位置插入的函数中，我们需要 1 或 2 个额外的步骤来设置上一个指针。](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
 
@@ -178,7 +178,7 @@ def push(self, new_data):
 
 ```
 
-上述五个步骤中的四个步骤与[相同，用于在单链表](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)中的最前面插入的四个步骤。 唯一的额外步骤是更改先头。
+上述五个步骤中的四个步骤与[用于在单链表的最前面插入的四个步骤](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)相同。 唯一的额外步骤是更改头部。
 
 **2）在给定节点之后添加一个节点：（一个 7 个步骤的过程）**
 
@@ -289,7 +289,7 @@ def insertAfter(self, prev_node, new_data):
 
 ```
 
-以上步骤中的五个步骤与[相同，用于在单链表](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)中的给定节点之后插入的 5 个步骤。 需要两个额外的步骤来更改新节点的上一个指针和新节点的下一个节点的上一个指针。
+以上步骤中的五个步骤与[用于在单链表中的给定节点之后插入的 5 个步骤](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)相同。 需要两个额外的步骤来更改新节点的上一个指针和新节点的下一个节点的上一个指针。
 
 **3）在最后添加一个节点：（7 个步骤的过程）**
 
@@ -417,7 +417,7 @@ def append(self, new_data):
 
 ```
 
-上述 7 个步骤中的 6 个与[相同，用于在单链表](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)中的给定节点之后插入的 6 个步骤。 需要一个额外的步骤来更改新节点的先前指针。
+上述 7 个步骤中的 6 个与[用于在单链表中的给定节点之后插入的 6 个步骤](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)相同。 需要一个额外的步骤来更改新节点的先前指针。
 
 **4）在给定节点之前添加一个节点**：
 

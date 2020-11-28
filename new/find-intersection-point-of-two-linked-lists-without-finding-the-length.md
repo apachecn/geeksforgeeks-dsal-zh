@@ -21,7 +21,7 @@ Output: 14
 
 ```
 
-**先决条件**：[编写函数以获取两个链表的交点](https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/)
+**先决条件**：[编写函数来获取两个链表的交点](https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists/)
 
 **方法**：将两个指针指向两个链表的头部。 如果其中一个提前到达末尾，则通过将其移至另一列表的开头来使用它。 一旦它们都经过重新分配，它们将与碰撞点等距。
 

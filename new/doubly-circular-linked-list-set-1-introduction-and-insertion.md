@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)
 
-先决条件：[双链表，](http://quiz.geeksforgeeks.org/doubly-linked-list/) [循环链表](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)
+先决条件：[双链表](http://quiz.geeksforgeeks.org/doubly-linked-list/)，[循环链表](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)
 
 循环双重链表具有双重链表和循环链表的属性，其中两个连续元素通过上一个指针和下一个指针链接或连接，最后一个节点通过下一个指针指向第一个节点，并且第一个节点通过下一个指针指向最后一个节点 前一个指针。
 

@@ -4,7 +4,7 @@
 
 
 
-给出[循环链表](https://www.geeksforgeeks.org/circular-linked-list/)表示的两个多项式，任务是[通过添加同一变量的幂的系数来将这两个多项式](https://www.geeksforgeeks.org/adding-two-polynomials-using-linked-list/)相加。
+给出[循环链表](https://www.geeksforgeeks.org/circular-linked-list/)表示的两个多项式，任务是[通过相加同一变量的幂的系数来将这两个多项式相加](https://www.geeksforgeeks.org/adding-two-polynomials-using-linked-list/)。
 
 **注意**：在给定的多项式中，包含`x`的更高幂的项将首先出现。
 

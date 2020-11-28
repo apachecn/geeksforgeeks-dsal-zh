@@ -12,7 +12,7 @@
 
 您可以假定链表永远不会为空。
 
-让函数名称为`deleteNode()`。 在一个简单的实现中，当要删除的节点是第一个节点时，该函数需要修改头指针。 如[上一篇文章](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)所讨论的，当函数修改头指针时，该函数必须使用给定方法的[中的一种，此处我们无法使用任何一种方法。](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)
+让函数名称为`deleteNode()`。 在一个简单的实现中，当要删除的节点是第一个节点时，该函数需要修改头指针。 如[上一篇文章](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)所讨论的，当函数修改头指针时，该函数必须使用给定方法的中的一种，[此处我们无法使用任何一种方法](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)。
 
 **解决方案**
 
