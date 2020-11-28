@@ -365,7 +365,7 @@ namespace InsertIntoLinkedList
 
 ```
 
-**Time Complexity:** O(N)
+**时间复杂度**：`O(N)`
 
 
 

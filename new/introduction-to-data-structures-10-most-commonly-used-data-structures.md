@@ -34,13 +34,13 @@
 
     主要在队列上执行以下四个基本操作：
 
-    *   **排队**：将项目添加到队列。 如果队列已满，则称其为溢出条件。
+    *   `enqueue`：将项目添加到队列。 如果队列已满，则称其为溢出条件。
 
-    *   **出队**：从队列中删除项目。 这些项目会以与推送相同的顺序弹出。 如果队列为空，则称其为下溢条件。
+    *   `dequeue`：从队列中删除项目。 这些项目会以与推送相同的顺序弹出。 如果队列为空，则称其为下溢条件。
 
-    *   **前**：从队列中获取前一项。
+    *   `front`：从队列中获取前一项。
 
-    *   **背面**：从队列中获取最后一个项目。
+    *   `rear`：从队列中获取最后一个项目。
 
 5.  [**二叉树**](https://www.geeksforgeeks.org/binary-tree-data-structure/)：与数组，链表，堆栈和队列（它们是线性数据结构）不同，树是分层数据结构。 二叉树是一种树数据结构，其中每个节点最多具有两个子节点，称为左子节点和右子节点。 它主要使用链接来实现。
 
@@ -52,7 +52,7 @@
     3\. Pointer to the right child
     ```
 
-6.  [**二进制搜索树**](http://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) ：在二进制搜索树中是具有以下附加属性的二进制树：
+6.  [**二叉搜索树**](http://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) ：在二叉搜索树中是具有以下附加属性的二进制树：
 
     *   节点的左子树仅包含键小于节点键的节点。
 
@@ -80,7 +80,7 @@
 
     ![](img/38845c099010299db97d342d8547f21c.png)
 
-10.  [**Trie**](http://www.geeksforgeeks.org/trie-insert-and-search/)：Trie 是一种有效的信息检索数据结构。 使用 Trie，可以使搜索复杂度达到最佳极限（密钥长度）。 如果我们将密钥存储在二进制搜索树中，那么均衡的 BST 将需要与`M * log N`成比例的时间，其中`M`是最大字符串长度，`N`是树中密钥的数量。 使用 Trie，我们可以在`O(M)`时间中搜索的键。 但是，惩罚取决于 Trie 的存储要求。
+10.  [**Trie**](http://www.geeksforgeeks.org/trie-insert-and-search/)：Trie 是一种有效的信息检索数据结构。 使用 Trie，可以使搜索复杂度达到最佳极限（密钥长度）。 如果我们将密钥存储在二叉搜索树中，那么均衡的 BST 将需要与`M * log N`成比例的时间，其中`M`是最大字符串长度，`N`是树中密钥的数量。 使用 Trie，我们可以在`O(M)`时间中搜索的键。 但是，惩罚取决于 Trie 的存储要求。
 
     ![](img/a3733f8c32de781dd3b50b2cc7868cec.png)
 

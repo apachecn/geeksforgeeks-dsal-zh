@@ -142,7 +142,7 @@ Final Linked List after deletion of 15:
 
 ```
 
-本文由 [Jeet Jain](https://www.linkedin.com/in/jeetjain8/) 提供。 请参阅[在单链列表中仅给出指向要删除的节点的指针，如何删除它？](https://www.geeksforgeeks.org/in-a-linked-list-given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/) 了解更多详细信息并完成实施。
+本文由 [Jeet Jain](https://www.linkedin.com/in/jeetjain8/) 提供。 请参阅[在单链列表中仅给出指向要删除的节点的指针，如何删除它？](https://www.geeksforgeeks.org/in-a-linked-list-given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/) 了解更多详细信息并完成实现。
 
 
 

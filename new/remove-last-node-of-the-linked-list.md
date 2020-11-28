@@ -48,7 +48,7 @@ is 67, so 67 is deleted.
 
 3.  删除最后一个节点，即倒数第二个节点的下一个节点`delete(secondLast.nextNode)`，并将倒数第二个节点的`next`值设置为`null`。
 
-**实施**：
+**实现**：
 
 ## C++
 

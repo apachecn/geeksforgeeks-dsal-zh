@@ -21,7 +21,7 @@ Explanation: The 5th node from 1st is 5 and
 
 ```
 
-**插图**：
+**示意图**：
 
 ![](img/5020d2aa46de8a3c1749bd32b34a9e80.png)
 
