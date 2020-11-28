@@ -116,7 +116,7 @@ Destination Stack:
 
 ```
 
-**时间复杂度**：![O(n^2)](img/598be626cedc018633480e0f69670fd8.png "Rendered by QuickLaTeX.com")
+**时间复杂度**：`O(n^2)`
 
 **高效方法**：更好的方法是将栈表示为链表。 以与反转链表相同的方式反转源栈，**逐一弹出**源栈的顶部元素，然后**将其推入**到目标栈。
 
@@ -217,7 +217,7 @@ Destination Stack:
 
 ```
 
-**时间复杂度**：![O(n)](img/d5229a9c6f59029cbbb0f53974c9a9de.png "Rendered by QuickLaTeX.com")
+**时间复杂度**：`O(n)`
 
 
 

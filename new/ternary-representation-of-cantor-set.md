@@ -44,9 +44,9 @@
 
 3.  对于下一个级别：
 
-    *   创建一个新节点，其起始值和终止值之差为初始值的![ \frac{1}{3} rd](img/2d7977a1418cad348246eab7c332d6b6.png "Rendered by QuickLaTeX.com")，即起始值小于初始终止值的![ \frac{1}{3} rd](img/2d7977a1418cad348246eab7c332d6b6.png "Rendered by QuickLaTeX.com")。
+    *   创建一个新节点，其起始值和终止值之差为初始值的`1/3 rd`，即起始值小于初始终止值的`1/3 rd`。
 
-    *   此外，修改原始节点，以使最终值比初始值高![ \frac{1}{3} rd](img/2d7977a1418cad348246eab7c332d6b6.png "Rendered by QuickLaTeX.com")。
+    *   此外，修改原始节点，以使最终值比初始值高`1/3 rd`。
 
     *   相应地，将指向新节点的指针放在原始节点之后
 

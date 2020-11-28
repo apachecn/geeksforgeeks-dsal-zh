@@ -589,9 +589,9 @@ Level 2: 17 21
 
 搜索和删除的时间复杂度相同–
 
-**时间复杂度（平均）**：![O(log n)](img/faf744094bdbb5a5e71a14a9644af0c5.png "Rendered by QuickLaTeX.com")
+**时间复杂度（平均）**：`O(log n)`
 
-**时间复杂度（最差）**：![O(n)](img/d5229a9c6f59029cbbb0f53974c9a9de.png "Rendered by QuickLaTeX.com")
+**时间复杂度（最差）**：`O(n)`
 
 **参考**
 

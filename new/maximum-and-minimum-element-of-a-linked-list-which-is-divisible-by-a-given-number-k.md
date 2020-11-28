@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/maximum-and-minimum-element-of-a-linked-list-which-is-divisible-by-a-given-number-k/](https://www.geeksforgeeks.org/maximum-and-minimum-element-of-a-linked-list-which-is-divisible-by-a-given-number-k/)
 
-给定![N](img/19e409e13c1238e1f3ff3dbd06cdd45e.png "Rendered by QuickLaTeX.com")节点的单链表。 在链表中找到可被给定数字![K](img/36191961d5c0517749557e907a8f3817.png "Rendered by QuickLaTeX.com")整除的最小和最大元素。
+给定`N`个节点的单链表。 在链表中找到可被给定数字`K`整除的最小和最大元素。
 
 **示例**：
 
