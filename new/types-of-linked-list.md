@@ -847,7 +847,7 @@ Traversal in reverse direction
 
 ```
 
-*   [标头链表：](https://www.geeksforgeeks.org/header-linked-list-in-c/)标头链表是一种特殊类型的链表，它在列表的开头包含一个标头节点。 因此，在头部链表中， **START** 不会指向列表的第一个节点，但是 **START** 将包含头部节点的地址。 以下是“接地页眉链表”的图像：
+*   [标头链表](https://www.geeksforgeeks.org/header-linked-list-in-c/)：标头链表是一种特殊类型的链表，它在列表的开头包含一个标头节点。 因此，在头部链表中， `START`不会指向列表的第一个节点，但是`START`将包含头部节点的地址。 以下是标头链表的图像：
 
 ![](img/4e1a40e0dc120431a994ca6006b8b5a7.png)
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/sort-a-linked-list-in-wave-form/](https://www.geeksforgeeks.org/sort-a-linked-list-in-wave-form/)
 
-给定未排序的整数链表。 任务是将“链表”分类为“线”之类的波形。 如果排序后的列表采用以下形式，则称链表按波浪形式排序：
+给定未排序的整数链表。 任务是将链表分类为“线”之类的波形。 如果排序后的列表采用以下形式，则称链表按波浪形式排序：
 
 ```
 list[0] >= list[1] <= list[2] >= …..

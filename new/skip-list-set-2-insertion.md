@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/skip-list-set-2-insertion/](https://www.geeksforgeeks.org/skip-list-set-2-insertion/)
 
-我们已经在[系列 1（简介）](https://www.geeksforgeeks.org/skip-list/)中讨论了“跳表”的概念以及它们在跳表中的工作方式。在本文中，我们将讨论如何在“跳表”中插入元素。
+我们已经在[系列 1（简介）](https://www.geeksforgeeks.org/skip-list/)中讨论了跳表的概念以及它们在跳表中的工作方式。在本文中，我们将讨论如何在跳表中插入元素。
 
 **决定节点级别**
 

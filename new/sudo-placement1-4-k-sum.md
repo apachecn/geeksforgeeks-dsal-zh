@@ -29,7 +29,7 @@
 > 3 -> 7 -> 11 -> null
 > ```
 
-**方法**：将给定的节点插入“链接”列表中。 插入方法[已进行了讨论](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)。 插入节点后，从列表的开头进行迭代。 将第一个节点标记为`temp`节点。 迭代接下来的`k-1`个节点，并在`sum`变量中求和。 如果节点数少于`K`，则将临时节点的数据替换为`sum`，并将`temp`指向`NULL`。 如果存在一个由`K`个节点组成的组，则用`sum`替换临时数据，并将`temp`移到`K`个节点之后的节点。 继续上述操作，直到`temp`指向`NULL`。 一旦`temp`到达末尾，则意味着遍历了所有大小为`K`的组，并且已用大小为`K`的节点总和替换了该节点。一旦完成了替换操作，就可以打印由此形成的链表。 [在这里已讨论了打印链表的方法](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)。
+**方法**：将给定的节点插入链表中。 插入方法[已进行了讨论](https://www.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)。 插入节点后，从列表的开头进行迭代。 将第一个节点标记为`temp`节点。 迭代接下来的`k-1`个节点，并在`sum`变量中求和。 如果节点数少于`K`，则将临时节点的数据替换为`sum`，并将`temp`指向`NULL`。 如果存在一个由`K`个节点组成的组，则用`sum`替换临时数据，并将`temp`移到`K`个节点之后的节点。 继续上述操作，直到`temp`指向`NULL`。 一旦`temp`到达末尾，则意味着遍历了所有大小为`K`的组，并且已用大小为`K`的节点总和替换了该节点。一旦完成了替换操作，就可以打印由此形成的链表。 [在这里已讨论了打印链表的方法](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)。
 
 下面是上述方法的实现：
 

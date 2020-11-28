@@ -4,7 +4,7 @@
 
 在单个链表的先前帖子中，我们已经讨论了[链表简介](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)和[链表插入](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)。
 
-让我们制定问题陈述以了解删除过程。 *给定一个“键”，请在链表*中删除该键的第一个匹配项。
+让我们制定问题陈述以了解删除过程。 给定一个“键”，请在链表中删除该键的第一个匹配项。
 
 要从链表中删除节点，我们需要执行以下步骤。
 

@@ -203,7 +203,7 @@ public static void main (String[] args)
 
 **相似的文章**：[使用弗洛伊德循环检测算法](https://www.geeksforgeeks.org/find-length-of-loop-in-linked-list/)
 
-在“链表”中查找循环的长度
+在链表中查找循环的长度
 
 
 
