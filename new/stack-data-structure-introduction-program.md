@@ -34,7 +34,7 @@
 
 *   Web 浏览器中的前进和后退功能
 
-*   用于许多算法中，例如[河内塔](https://www.geeksforgeeks.org/recursive-functions/) [树遍历](https://www.geeksforgeeks.org/618/)，[库存跨度问题](https://www.geeksforgeeks.org/the-stock-span-problem/)，[直方图问题](https://www.geeksforgeeks.org/largest-rectangular-area-in-a-histogram-set-1/)。
+*   用于许多算法中，例如[汉内塔](https://www.geeksforgeeks.org/recursive-functions/) [树的遍历](https://www.geeksforgeeks.org/618/)，[股票跨度问题](https://www.geeksforgeeks.org/the-stock-span-problem/)，[直方图问题](https://www.geeksforgeeks.org/largest-rectangular-area-in-a-histogram-set-1/)。
 
 *   其他应用包括回溯，[骑士旅行问题](https://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/)，[迷宫中的老鼠](https://www.geeksforgeeks.org/backttracking-set-2-rat-in-a-maze/)，[`N`皇后问题](https://www.geeksforgeeks.org/backtracking-set-3-n-queen-problem/)和[数独解算器](https://www.geeksforgeeks.org/backtracking-set-7-suduku/)
 

@@ -435,11 +435,11 @@
 
     **相关文章**：
 
-    *   [使用数组](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)的栈实现
+    *   [使用数组的栈实现](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
 
-    *   [使用单链表](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)的栈实现
+    *   [使用单链表的栈实现](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)
 
-    *   [使用队列](https://www.geeksforgeeks.org/implement-stack-using-queue/)的栈实现
+    *   [使用队列的栈实现](https://www.geeksforgeeks.org/implement-stack-using-queue/)
 
 5.  ### [队列](https://www.geeksforgeeks.org/queue-interface-java/)
 
@@ -502,11 +502,11 @@
 
     **相关文章**：
 
-    *   [使用数组](https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)的队列实现
+    *   [使用数组的队列实现](https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)
 
-    *   [使用单链表](https://www.geeksforgeeks.org/queue-linked-list-implementation/)的队列实现
+    *   [使用单链表的队列实现](https://www.geeksforgeeks.org/queue-linked-list-implementation/)
 
-    *   [使用栈](https://www.geeksforgeeks.org/queue-using-stacks/)的队列实现
+    *   [使用栈的队列实现](https://www.geeksforgeeks.org/queue-using-stacks/)
 
 6.  ### 树
 

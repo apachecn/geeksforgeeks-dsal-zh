@@ -380,7 +380,7 @@ public static void Main(String[] args)
 
 在本文中，我们介绍了展开列表及其优点。 我们还展示了如何遍历列表。 在下一篇文章中，我们将详细讨论`maxElements/numElements`的插入，删除和值。
 
-[在展开的链表中的插入](https://www.geeksforgeeks.org/insertion-unrolled-linked-list/)
+[展开的链表中的插入](https://www.geeksforgeeks.org/insertion-unrolled-linked-list/)
 
 本文由 [**Harsh Agarwal**](https://www.facebook.com/harsh.agarwal.16752) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

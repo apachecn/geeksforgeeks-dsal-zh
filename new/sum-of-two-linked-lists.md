@@ -31,7 +31,7 @@ Output
 
     +   用较大列表的剩余左子列表计算进位总和（在上一步中计算）。 此和的节点将添加到上一步获得的和列表的开头。
 
-[以下是上述方法的模拟](https://www.geeksforgeeks.org/archives/15194) ：
+[以下是上述方法的模拟](https://www.geeksforgeeks.org/archives/15194)：
 
 ![](img/dee4d25298ae9b88a4fb4ed12da5149e.png)
 
@@ -808,7 +808,7 @@ int main() 
 
 ```
 
-相关文章：[添加两个由链表表示的数字 | 系列 1](https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/)
+相关文章：[相加两个由链表表示的数字 | 系列 1](https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/)
 
 如果发现不正确的内容，或者想分享有关上述主题的更多信息，请写评论。
 

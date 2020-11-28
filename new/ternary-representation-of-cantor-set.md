@@ -479,7 +479,7 @@ class GFG
 
 **参考**：[康托尔集维基百科](https://en.wikipedia.org/wiki/Cantor_set)
 
-**相关文章**：[乔治·康托尔有理数集的第`N`个项](https://www.geeksforgeeks.org/n-th-term-of-george-cantor-set-of-rational-numbers/)
+**相关文章**：[乔治·康托尔有理数集的第`N`项](https://www.geeksforgeeks.org/n-th-term-of-george-cantor-set-of-rational-numbers/)
 
 
 

@@ -42,7 +42,7 @@
 >
 > 删除斐波那契节点后的列表为`4 -> 9`
 
-**方法**：想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契节点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)到链表中的最大值，以使检查变得容易和高效（ 在`O(1)`时间内）。
+**方法**：想法是使用[散列](http://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储[斐波纳契节点](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)到链表中的最大值，以使检查变得容易和高效（在`O(1)`时间内）。
 
 1.  遍历整个单链表，并在列表中获得最大值。
 

@@ -357,9 +357,9 @@ class LinkedList {
 
 以下是获取并集和交集列表的步骤。
 
-1.  使用归并排序对第一个链表排序。 此步骤需要`O(mLogm)`时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/archives/7740)
+1.  使用归并排序对第一个链表排序。 此步骤需要`O(mLogm)`时间。 有关此步骤的详细信息，请参见[此帖子](https://www.geeksforgeeks.org/archives/7740)。
 
-2.  使用归并排序对第二个链表排序。 此步骤需要`O(nLogn)`时间。 有关此步骤的详细信息，请参见此帖子的[。](https://www.geeksforgeeks.org/archives/7740)
+2.  使用归并排序对第二个链表排序。 此步骤需要`O(nLogn)`时间。 有关此步骤的详细信息，请参见[此帖子](https://www.geeksforgeeks.org/archives/7740)。
 
 3.  线性扫描两个排序列表以获取并集和交集。 此步骤需要`O(M + N)`时间。 可以使用与此处中讨论的排序数组算法相同的算法来实现此步骤。
 
