@@ -6,15 +6,15 @@
 
 以下是一些流行的数据结构的概述：
 
-1.  **[Array](https://www.geeksforgeeks.org/array-data-structure/):** An array is a collection of items stored at contiguous memory locations. The idea is to store multiple items of the same type together. This makes it easier to calculate the position of each element by simply adding an offset to a base value, i.e., the memory location of the first element of the array (generally denoted by the name of the array).
+1.  [**数组**](https://www.geeksforgeeks.org/array-data-structure/)：数组是存储在连续内存位置的项目的集合。 想法是将相同类型的多个项目存储在一起。 通过简单地将偏移量添加到基本值（即数组的第一个元素的存储位置（通常由数组的名称表示），可以更轻松地计算每个元素的位置。
 
     ![](img/06ae604a79a0646affeb3b79ae905dcd.png)
 
-2.  **[Linked Lists](https://www.geeksforgeeks.org/data-structures/linked-list/):** Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at a contiguous location; the elements are linked using pointers.
+2.  [**链表**](https://www.geeksforgeeks.org/data-structures/linked-list/)：像数组一样，链表是线性数据结构。 与数组不同，链接列表元素不存储在连续的位置； 元素使用指针链接。
 
     ![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)
 
-3.  **[Stack](http://www.geeksforgeeks.org/stack-data-structure/):** Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).
+3.  [**栈**](http://www.geeksforgeeks.org/stack-data-structure/)：栈是遵循特定操作顺序的线性数据结构。 该顺序可以是 LIFO（后进先出）或 FILO（后进先出）。
 
     ![](img/2871ce74a35b62e10b0225813eec54f9.png)
 
@@ -28,7 +28,7 @@
 
     *   `isEmpty`：如果栈为空，则返回`true`，否则返回`false`。
 
-4.  **[Queue](http://www.geeksforgeeks.org/queue-data-structure/):** Like Stack, Queue is a linear structure which follows a particular order in which the operations are performed. The order is First In First Out (FIFO). A good example of the queue is any queue of consumers for a resource where the consumer that came first is served first. The difference between stacks and queues is in removing. In a stack we remove the item the most recently added; in a queue, we remove the item the least recently added.
+4.  [**队列**](http://www.geeksforgeeks.org/queue-data-structure/)：像栈一样，队列是一种线性结构，遵循执行操作的特定顺序。 顺序为先进先出（FIFO）。 队列的一个很好的例子是资源的任何使用者队列，其中首先服务于第一位的使用者。 栈和队列之间的区别在于删除。 在栈中，我们删除最近添加的项目； 在队列中，我们删除了最远添加的项目。
 
     ![](img/56797373df00c67ade0019b0c1a6886d.png)
 
@@ -42,7 +42,7 @@
 
     *   **背面**：从队列中获取最后一个项目。
 
-5.  **[Binary Tree](https://www.geeksforgeeks.org/binary-tree-data-structure/):** Unlike Arrays, Linked Lists, Stack and queues, which are linear data structures, trees are hierarchical data structures. A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. It is implemented mainly using Links.
+5.  [**二叉树**](https://www.geeksforgeeks.org/binary-tree-data-structure/)：与数组，链表，堆栈和队列（它们是线性数据结构）不同，树是分层数据结构。 二叉树是一种树数据结构，其中每个节点最多具有两个子节点，称为左子节点和右子节点。 它主要使用链接来实现。
 
     二叉树由指向树中最高节点的指针表示。 如果树为空，则根的值为`NULL`。 二叉树节点包含以下部分。
 
@@ -60,7 +60,7 @@
 
     *   左和右子树也都必须是二叉搜索树。
 
-7.  **[Heap](https://www.geeksforgeeks.org/heap-data-structure/):** A Heap is a special Tree-based data structure in which the tree is a complete binary tree. Generally, Heaps can be of two types:
+7.  [**堆**](https://www.geeksforgeeks.org/heap-data-structure/)：堆是一种特殊的基于树的数据结构，其中树是完整的二叉树。 通常，堆可以有两种类型：
 
     *   **最大堆**：在最大堆中，根节点上存在的密钥必须在所有子节点上存在的密钥中最大。 对于该二叉树中的所有子树，相同的属性必须递归地为`true`。
 
@@ -68,19 +68,19 @@
 
     ![](img/ac0bc46083007c09b8f9b69ec3fe28bf.png)
 
-8.  [**Hashing Data Structure**](https://www.geeksforgeeks.org/hashing-data-structure/): Hashing is an important Data Structure which is designed to use a special function called the Hash function which is used to map a given value with a particular key for faster access of elements. The efficiency of mapping depends on the efficiency of the hash function used.
+8.  [**散列数据结构**](https://www.geeksforgeeks.org/hashing-data-structure/)：散列是重要的数据结构，其设计为使用一种称为散列函数的特殊函数，该函数用于使用特定键映射给定值以更快地访问元素。 映射的效率取决于所使用的哈希函数的效率。
 
     让哈希函数`H(x)`将值`x`映射到数组中的索引`x % 10`处。 例如，如果值列表为`[11, 12, 13, 14, 15]`，它将分别存储在数组或哈希表中的位置`{1, 2, 3, 4, 5}`。
 
     ![](img/c21defe12ef3d99064e74c81e86e0fb2.png)
 
-9.  **[Matrix](https://www.geeksforgeeks.org/matrix/):** A matrix represents a collection of numbers arranged in an order of rows and columns. It is necessary to enclose the elements of a matrix in parentheses or brackets.
+9.  [**矩阵**](https://www.geeksforgeeks.org/matrix/)：矩阵表示按行和列顺序排列的数字的集合。 必须将矩阵的元素括在括号或方括号中。
 
     包含 9 个元素的矩阵如下所示。
 
     ![](img/38845c099010299db97d342d8547f21c.png)
 
-10.  **[Trie](http://www.geeksforgeeks.org/trie-insert-and-search/):** Trie is an efficient information re*Trie*val data structure. Using Trie, search complexities can be brought to an optimal limit (key length). If we store keys in the binary search tree, a well-balanced BST will need time proportional to M * log N, where M is maximum string length and N is the number of keys in the tree. Using Trie, we can search the key in O(M) time. However, the penalty is on Trie storage requirements.
+10.  [**Trie**](http://www.geeksforgeeks.org/trie-insert-and-search/)：Trie 是一种有效的信息检索数据结构。 使用 Trie，可以使搜索复杂度达到最佳极限（密钥长度）。 如果我们将密钥存储在二进制搜索树中，那么均衡的 BST 将需要与`M * log N`成比例的时间，其中`M`是最大字符串长度，`N`是树中密钥的数量。 使用 Trie，我们可以在`O(M)`时间中搜索的键。 但是，惩罚取决于 Trie 的存储要求。
 
     ![](img/a3733f8c32de781dd3b50b2cc7868cec.png)
 
