@@ -15,7 +15,7 @@ Output: 11->20->5->15->10
 
 ```
 
-**一种简单的方法**就是通过合并排序对[排序链表](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)，然后交替交换，但这需要`O(n Log n)`时间复杂度。 这里`n`是链表中元素的数量。
+**一种简单的方法**就是通过归并排序对[排序链表](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)，然后交替交换，但这需要`O(n Log n)`时间复杂度。 这里`n`是链表中元素的数量。
 
 一种需要`O(n)`时间的**有效方法**，是使用类似于冒泡排序的单次扫描，然后维护一个标志来表示当前的顺序。 如果当前的两个元素不按该顺序排列，则交换这些元素，否则不进行交换。 有关交换顺序的详细说明，请参考[这里](http://geeksquiz.com/converting-an-array-of-integers-into-zig-zag-fashion/)。
 

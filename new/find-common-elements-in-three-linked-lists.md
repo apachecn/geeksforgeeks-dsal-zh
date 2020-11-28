@@ -27,17 +27,17 @@ Output : 1 2 4
 
 上述解决方案的时间复杂度为`O(N * N * N)`
 
-**方法 2 ：（使用合并排序）**
+**方法 2 ：（使用归并排序）**
 
 在此方法中，我们首先对三个列表进行排序，然后遍历排序后的列表以获取交集。
 
 以下是获取三个列表的交集要遵循的步骤：
 
-1.  使用合并排序对第一个链表进行排序。 此步骤需要`O(mLogm)`时间。 有关此步骤的详细信息，请参见[此帖子](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)。
+1.  使用归并排序对第一个链表进行排序。 此步骤需要`O(mLogm)`时间。 有关此步骤的详细信息，请参见[此帖子](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)。
 
-2.  使用合并排序对第二个链表进行排序。 此步骤需要`O(nLogn)`时间。 有关此步骤的详细信息，请参见[此帖子](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)。
+2.  使用归并排序对第二个链表进行排序。 此步骤需要`O(nLogn)`时间。 有关此步骤的详细信息，请参见[此帖子](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)。
 
-3.  使用合并排序对第三个链表进行排序。 此步骤需要`O(pLogp)`时间。 有关此步骤的详细信息，请参见[此帖子](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)。
+3.  使用归并排序对第三个链表进行排序。 此步骤需要`O(pLogp)`时间。 有关此步骤的详细信息，请参见[此帖子](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)。
 
 3.  线性扫描三个排序的列表以获得交集。 此步骤需要`O(m + n + p)`时间。 可以使用与此处中讨论的排序数组算法相同的算法来实现此步骤。
 

@@ -779,7 +779,7 @@ Traversal in reverse direction
 
 *   循环双链表用于实现高级数据结构，例如[斐波那契堆](https://en.wikipedia.org/wiki/Fibonacci_heap)。
 
-**劣势**
+**缺点**
 
 *   每个节点需要一点额外的内存来容纳先前的指针。
 

@@ -1,4 +1,4 @@
-# 使用合并排序的两个链表的差异
+# 使用归并排序的两个链表的差异
 
 > 原文：[https://www.geeksforgeeks.org/difference-of-two-linked-lists-using-merge-sort/](https://www.geeksforgeeks.org/difference-of-two-linked-lists-using-merge-sort/)
 
@@ -32,7 +32,7 @@
 
 **方法**：
 
-*   使用合并排序对两个链表进行排序。
+*   使用归并排序对两个链表进行排序。
 
 *   线性扫描两个排序的列表以在`p1`和`p2`上使用两个指针来获得差异，并比较链表中节点的数据，并在以下三种情况下执行以下操作：
 

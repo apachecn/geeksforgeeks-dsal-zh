@@ -25,7 +25,7 @@ output: 5 -> 10
 
 一个简单的解决方案是从头到尾遍历链表。 对于每个访问的节点，请检查其是否有故障。 如果是，请将其从当前位置移除，然后插入正确的位置。 这是对链表的[插入排序的实现，此解决方案的时间复杂度为`O(n * n)`。](http://geeksquiz.com/insertion-sort-for-singly-linked-list/)
 
-更好的解决方案是[使用合并排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)对链表进行排序。 该解决方案的时间复杂度为`O(n Log n)`。
+更好的解决方案是[使用归并排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)对链表进行排序。 该解决方案的时间复杂度为`O(n Log n)`。
 
 一个有效的解决方案可以在`O(n)`时间内工作。 一个重要的观察结果是，所有负面因素都以相反的顺序出现。 因此，我们遍历列表，每当找到不规则的元素时，便将其移到链表的前面。
 

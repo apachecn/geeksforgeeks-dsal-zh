@@ -6,11 +6,11 @@
 
 ![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)
 
-**双链表简介**：一个**双链表**（DLL）包含一个额外的指针，通常称为*前一个指针*，以及那里的下一个指针和数据 在单链表中。
+**双链表简介**：一个**双链表**（DLL）包含一个额外的指针，通常称为*前一个指针*，以及下一个指针和数据。
 
 ![dll](img/1fac4717827a04f080fae80f8fd57fe7.png)
 
-**Singly linked list vs Doubly linked list**
+**单链表 VS 双链表**：
 
 | 单链表（SLL） | 双链表（DLL） |
 | --- | --- |

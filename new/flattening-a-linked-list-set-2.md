@@ -43,7 +43,7 @@ Output: 5->7->8->10->19->20->22->30->50
 
 ```
 
-在[之前的帖子](https://www.geeksforgeeks.org/flattening-a-linked-list/)中，我们必须对链表使用合并排序的`merge()`处理，以使链表平坦化。
+在[之前的帖子](https://www.geeksforgeeks.org/flattening-a-linked-list/)中，我们必须对链表使用归并排序的`merge()`处理，以使链表平坦化。
 
 在本文中，我们将使用](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)[堆](https://www.geeksforgeeks.org/heap-data-structure/)解决该问题。
 

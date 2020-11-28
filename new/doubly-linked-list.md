@@ -8,7 +8,7 @@
 
 [在单链表](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)中插入节点
 
-双链表（DLL）相比单链表包含一个额外的指针，通常称为*上一个指针*，以及`next`指针和数据。
+双链表（DLL）相比单链表包含一个额外的指针，通常称为*上一个指针*，以及下一个指针和数据。
 
 ![dll](img/1fac4717827a04f080fae80f8fd57fe7.png)
 
@@ -64,7 +64,7 @@ class Node:
 
 以下是双链表相对于单链表的优点/缺点。
 
-**比单链列表的优势**
+**与单链列表相比的优点**
 
 1.   DLL 可以向前和向后移动。
 
@@ -74,7 +74,7 @@ class Node:
 
 在单链列表中，要删除节点，需要指向上一个节点的指针。 为了获得该先前节点，有时会遍历列表。 在 DLL 中，我们可以使用先前的指针获取先前的节点。
 
-**与单链表相比**
+**与单链表相比的缺点**
 
 1.  DLL 的缺点是每个节点都需要额外的空间才能存储先前的指针。 尽管可以用单个指针来实现 DLL（请参阅[和](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)[）。
 
