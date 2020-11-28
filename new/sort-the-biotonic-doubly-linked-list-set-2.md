@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/sort-the-biotonic-doubly-linked-list-set-2/](https://www.geeksforgeeks.org/sort-the-biotonic-doubly-linked-list-set-2/)
 
-对给定的生物张力双链表进行排序。 双调双向链表是一个双向链表，它先增加然后减小。 严格增加或严格减少的列表也是生物群落双链表。
+对给定的生物张力双链表排序。 双调双向链表是一个双向链表，它先增加然后减小。 严格增加或严格减少的列表也是生物群落双链表。
 
 **示例**：
 

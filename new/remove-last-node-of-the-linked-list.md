@@ -29,20 +29,20 @@ is 67, so 67 is deleted.
 
 **算法**：
 
-1.  如果第一个节点为 *null* 或只有一个节点，则返回 *null*
+1.  如果第一个节点为`null`或只有一个节点，则返回`null`
 
     ```
-    if *headNode* == null then return null
-    if *headNode*.nextNode == null then free 
+    if headNode == null then return null
+    if headNode.nextNode == null then free 
     head and return null
 
     ```
 
-2.  创建一个额外的空间 *secondLast* ，并遍历链表，直到倒数第二个节点。
+2.  创建一个额外的空间`secondLast`，并遍历链表，直到倒数第二个节点。
 
     ```
-    while *secondLast*.nextNode.nextNode != null 
-          *secondLast* = *secondLast*.nextNode 
+    while secondLast.nextNode.nextNode != null 
+          secondLast = secondLast.nextNode 
 
     ```
 
@@ -336,7 +336,7 @@ class GFG {
 
 *   **时间复杂度**：`O(n)`。
 
-    该算法涉及遍历链表直到其结束，因此所需的时间复杂度为 *`O(n)`*。
+    该算法涉及遍历链表直到其结束，因此所需的时间复杂度为`O(n)`。
 
 *   **空间复杂度**：`O(1)`。
 

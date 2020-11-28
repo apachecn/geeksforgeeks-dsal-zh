@@ -8,7 +8,7 @@
 
 **前提条件**：[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)
 
-**Operations on Priority Queue :**
+**优先级队列上的操作**：
 
 *   `push()`：此函数用于将新数据插入队列。
 
@@ -390,7 +390,7 @@ public static void Main(string[] args)
 
 [使用单链表](https://www.geeksforgeeks.org/priority-queue-using-linked-list/)的优先级队列
 
-**时间复杂度以及与[二元堆](https://www.geeksforgeeks.org/binary-heap/)**：的比较
+**时间复杂度以及与[二叉堆](https://www.geeksforgeeks.org/binary-heap/)的比较**：
 
 ```
                peek()    push()    pop()

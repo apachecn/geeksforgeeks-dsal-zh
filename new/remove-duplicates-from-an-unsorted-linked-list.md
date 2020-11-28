@@ -299,9 +299,9 @@ Linked list after removing duplicates:
 
 **方法 2（使用排序）**
 
-通常，归并排序是最有效地对链表进行排序的最合适的排序算法。
+通常，归并排序是最有效地对链表排序的最合适的排序算法。
 
-1.  使用归并排序对元素进行排序。 我们很快将写一篇有关对链表进行排序的文章。 `O(nLogn)`
+1.  使用归并排序对元素排序。 我们很快将写一篇有关对链表排序的文章。 `O(nLogn)`
 
 2.  使用["删除已排序的链表中的重复项"中的算法](https://www.geeksforgeeks.org/remove-duplicates-from-a-sorted-linked-list/)在线性时间内删除重复项。
 

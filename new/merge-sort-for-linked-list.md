@@ -2,11 +2,11 @@
 
 > 原文：[https://www.geeksforgeeks.org/merge-sort-for-linked-list/](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
-[归并排序](http://en.wikipedia.org/wiki/Merge_sort)通常是对链表进行排序的首选。 链表的随机访问性能较慢，使得其他一些算法（例如快速排序）的性能较差，而其他算法（例如堆排序）则完全不可能。
+[归并排序](http://en.wikipedia.org/wiki/Merge_sort)通常是对链表排序的首选。 链表的随机访问性能较慢，使得其他一些算法（例如快速排序）的性能较差，而其他算法（例如堆排序）则完全不可能。
 
 ![sorting image](img/cc3d3ac699ac03f5792746b3e3e54865.png)
 
-令`head`是要排序的链表的第一个节点，而`headRef`是指向`head`的指针。 请注意，我们需要在`MergeSort()`中引用`head`，因为以下实现会更改下一个链接以对链表进行排序（而不是节点上的数据），因此，如果原始`head`上的数据不是最小的，则必须更改链表中`head`节点的值。
+令`head`是要排序的链表的第一个节点，而`headRef`是指向`head`的指针。 请注意，我们需要在`MergeSort()`中引用`head`，因为以下实现会更改下一个链接以对链表排序（而不是节点上的数据），因此，如果原始`head`上的数据不是最小的，则必须更改链表中`head`节点的值。
 
 ```
 MergeSort(headRef)

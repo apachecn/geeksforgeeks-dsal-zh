@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/merge-k-sorted-doubly-linked-list-in-sorted-order/](https://www.geeksforgeeks.org/merge-k-sorted-doubly-linked-list-in-sorted-order/)
 
-给定`K`排序的双链表。 任务是将所有排序的双链表合并到单个排序的双链表中，这意味着必须对最终列表进行排序。
+给定`K`排序的双链表。 任务是将所有排序的双链表合并到单个排序的双链表中，这意味着必须对最终列表排序。
 
 **示例**：
 

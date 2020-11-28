@@ -38,11 +38,11 @@
 >
 > 因此，形成的链表为`96 -> 72 -> 48 -> 10`。
 
-**方法**：方法是找到节点的最大值，并始终使最大节点和最小节点之间的**差**。 因此，创建一个[双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/) 并在其中插入所有节点值，然后[对双端队列](https://www.geeksforgeeks.org/sorting-queue-without-extra-space/)进行排序。 现在，从两端访问最大值和最小值。 步骤如下：
+**方法**：方法是找到节点的最大值，并始终使最大节点和最小节点之间的**差**。 因此，创建一个[双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/) 并在其中插入所有节点值，然后[对双端队列](https://www.geeksforgeeks.org/sorting-queue-without-extra-space/)排序。 现在，从两端访问最大值和最小值。 步骤如下：
 
 *   创建**双端队列**，并将所有节点值插入双端队列。
 
-*   对双端队列进行排序，以在恒定时间内获得最大的节点值和最小的节点值。
+*   对双端队列排序，以在恒定时间内获得最大的节点值和最小的节点值。
 
 *   创建另一个**链表**，其值与双端队列的后面和前面的平方和之差最大。
 

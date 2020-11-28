@@ -536,7 +536,7 @@ Linked list after duplicate removal  11 13 20
 
 **时间复杂度**：`O(n)`，其中`n`是给定链表中的节点数。
 
-**递归方法**：[
+**递归方法**：
 
 ## C++
 

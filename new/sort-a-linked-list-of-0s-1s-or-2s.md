@@ -1,8 +1,8 @@
-# 对 0、1、2 和 2 的链表进行排序
+# 对 0、1、2 和 2 的链表排序
 
 > 原文：[https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/](https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/)
 
-给定一个链表 0、1 和 2，对其进行排序。
+给定一个链表 0、1 和 2，对其排序。
 
 **示例**：
 
@@ -16,7 +16,7 @@
 
 资料来源：[微软面试 | 系列 1](https://www.geeksforgeeks.org/microsoft-interview-set-1/)
 
-可以使用以下步骤对给定的链表进行排序。
+可以使用以下步骤对给定的链表排序。
 
 *   遍历列表并计算 0、1 和 2 的数量。 设计数分别为`n1`，`n2`和`n3`。
 
@@ -585,7 +585,7 @@ Linked List After Sorting
 
 **辅助空间**：`O(1)`
 
- [**通过更改链接对[0G]，[1S]和[2S]的链表进行排序**](https://www.geeksforgeeks.org/sort-linked-list-0s-1s-2s-changing-links/)
+ [**通过更改链接对 0，1 和 2 的链表排序**](https://www.geeksforgeeks.org/sort-linked-list-0s-1s-2s-changing-links/)
 
 本文由 **Narendra Kangralkar** 编写。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

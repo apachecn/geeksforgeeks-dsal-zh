@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/iterative-selection-sort-for-linked-list/](https://www.geeksforgeeks.org/iterative-selection-sort-for-linked-list/)
 
-给定一个链表，任务是使用选择排序以升序对链表进行排序。
+给定一个链表，任务是使用选择排序以升序对链表排序。
 
 **示例**：
 
@@ -48,7 +48,7 @@ list = 64 25 12 22 11
 
 当列表的元素是某种记录时，通常使用第二种实现方式，因为在这种情况下，由于存在大量数据元素，数据交换变得乏味且昂贵。
 
-**实现方法 1** ：以下是通过仅交换节点的数据部分来对链表进行排序的选择排序功能的实现。
+**实现方法 1** ：以下是通过仅交换节点的数据部分来对链表排序的选择排序功能的实现。
 
 ## C++
 

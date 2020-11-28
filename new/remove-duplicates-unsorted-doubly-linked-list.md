@@ -654,7 +654,7 @@ Doubly linked list after removing duplicates:
 
 **方法 2（排序）**：以下是步骤：
 
-1.  使用归并排序对双向链表中的元素进行排序。 请参阅此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)
+1.  使用归并排序对双向链表中的元素排序。 请参阅此帖子的[。](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)
 
 2.  使用[算法在线性时间内删除重复项，以从排序的双向链表](https://www.geeksforgeeks.org/remove-duplicates-sorted-doubly-linked-list/)中删除重复项。
 

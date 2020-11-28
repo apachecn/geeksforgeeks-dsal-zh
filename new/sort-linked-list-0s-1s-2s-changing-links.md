@@ -1,8 +1,8 @@
-# 通过更改链接对 0、1、2 和 2 的链表进行排序
+# 通过更改链接对 0、1、2 和 2 的链表排序
 
 > 原文：[https://www.geeksforgeeks.org/sort-linked-list-0s-1s-2s-changing-links/](https://www.geeksforgeeks.org/sort-linked-list-0s-1s-2s-changing-links/)
 
-给定一个链表 0、1 和 2，对其进行排序。
+给定一个链表 0、1 和 2，对其排序。
 
 **示例**：
 
@@ -19,11 +19,11 @@ The sorted Array is 0, 1, 2
 
 **方法 1**： 在下面的文章中讨论了一种解决方案，该解决方案通过更改节点的数据来工作。
 
-[对 0、1、2 和 2 的链表进行排序](https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/)
+[对 0、1、2 和 2 的链表排序](https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/)
 
 当这些值与它们相关联的数据时，上述解决方案不起作用。
 
-**例如**，这三个代表三种颜色以及与该颜色关联的不同类型的对象，并根据颜色对这些对象（与链表相连）进行排序。
+**例如**，这三个代表三种颜色以及与该颜色关联的不同类型的对象，并根据颜色对这些对象（与链表相连）排序。
 
 **方法 2**：在本文中，将讨论通过更改链接来工作的新解决方案。
 

@@ -21,9 +21,9 @@ Output : e  f  g  h  a  b  c  d
 
 ```
 
-**在** [亚马逊](https://www.geeksforgeeks.org/amazon-interview-experience-set-424-sde-2/)
+在[亚马逊](https://www.geeksforgeeks.org/amazon-interview-experience-set-424-sde-2/)中询问。
 
-中问
+
 
 要旋转双链表，我们需要将第`N`个节点的下一个更改为`NULL`，将最后一个节点的下一个更改为上一个头节点，将头节点的上一个更改为最后一个节点，最后将头更改为第`N + 1`个节点，然后将上一个更改为 将新的头节点设置为`NULL`（双向链表中的头节点的上一个为`NULL`）
 
