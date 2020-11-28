@@ -23,13 +23,13 @@ struct node
 
 **插入循环双链表**
 
-1.  **Insertion at the end of list or in an empty list**
+1.  **在列表末尾或空列表中插入**：
 
-    *   **Empty List (start = NULL):** A node(Say N) is inserted with data = 5, so previous pointer of N points to N and next pointer of N also points to N. But now start pointer points to the first node the list.
+    *   **空列表（`start = NULL`）**：插入了一个节点（例如`N`），数据为 5，因此`N`的前一个指针指向`N`，`N`的下一个指针也指向`N`。但是现在`start`指针指向列表`N`的第一个节点。
 
         ![Insertion in empty list1](img/65b32f44143665810d0de3e9d287561d.png)
 
-    *   **List initially contain some nodes, start points to first node of the List:** A node(Say M) is inserted with data = 7, so previous pointer of M points to last node, next pointer of M points to first node and last node's next pointer points to this M node and first node's previous pointer points to this M node.
+    *   **列表最初包含一些节点，起点指向列表的第一个节点**：插入一个节点（例如`M`），数据为 7，因此`M`的前一个指针指向最后一个节点，`M`的下一个指针指向第一个节点，最后一个节点的下一个指针指向这个`M`节点，第一个节点的前一个指针指向这个`M`节点。
 
         ![Insertion in a list](img/c3909488b0091bad1dd74462d030078a.png)
 
@@ -73,7 +73,7 @@ struct node
 
         ```
 
-2.  **Insertion at the beginning of the list:** To insert a node at the beginning of the list, create a node(Say T) with data = 5, T next pointer points to first node of the list, T previous pointer points to last node the list, last node's next pointer points to this T node, first node's previous pointer also points this T node and at last don't forget to shift 'Start' pointer to this T node.
+2.  **插入列表的开头**：要在列表的开头插入节点，请创建一个节点（例如`T`），其数据为 5，`T`的下一个指针指向列表的第一个节点，`T`的上一个指针指向列表的最后一个节点，最后一个节点的下一个指针指向这个`T`节点，第一个节点的前一个指针也指向该`T`节点，最后不要忘记将`start`指针移到该`T`节点。
 
     ![Insertion at beginning of list](img/908f51fd4c7f6c6b4ccafc7334a49d7a.png)
 
@@ -103,7 +103,7 @@ struct node
 
     ```
 
-3.  **Insertion in between the nodes of the list**: To insert a node in between the list, two data values are required one after which new node will be inserted and another is the data of the new node.
+3.  **在列表的节点之间插入**：要在列表之间插入节点，需要两个数据值，一个是要插入的新节点之前的节点，另一个是新节点的数据。
 
     ![Insertion in between the list](img/05481d0eacb55d1429126b49ccb1fd25.png)
 
