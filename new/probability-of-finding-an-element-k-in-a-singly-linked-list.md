@@ -1,4 +1,4 @@
-# 在单链表中找到元素`K`的概率
+# 在单链表中查找元素`K`的概率
 
 > 原文：[https://www.geeksforgeeks.org/probability-of-finding-an-element-k-in-a-singly-linked-list/](https://www.geeksforgeeks.org/probability-of-finding-an-element-k-in-a-singly-linked-list/)
 

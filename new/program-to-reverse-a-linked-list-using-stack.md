@@ -1,8 +1,6 @@
-# 程序使用栈
+# 使用栈来反向链表的程序
 
 > 原文：[https://www.geeksforgeeks.org/program-to-reverse-a-linked-list-using-stack/](https://www.geeksforgeeks.org/program-to-reverse-a-linked-list-using-stack/)
-
-来反向链表
 
 给定一个链表。 任务是使用辅助栈反转链表元素的顺序。
 

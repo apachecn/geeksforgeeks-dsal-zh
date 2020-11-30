@@ -1,4 +1,4 @@
-# 无需额外的空间和修改即可反向打印链表
+# 反向打印链表，无需额外的空间和修改
 
 > 原文：[https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/](https://www.geeksforgeeks.org/print-reverse-linked-list-without-extra-space-modifications/)
 

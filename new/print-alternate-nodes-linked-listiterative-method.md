@@ -1,8 +1,8 @@
-# 打印链表的备用节点（迭代方法）
+# 交替打印链表节点（迭代方法）
 
 > 原文：[https://www.geeksforgeeks.org/print-alternate-nodes-linked-listiterative-method/](https://www.geeksforgeeks.org/print-alternate-nodes-linked-listiterative-method/)
 
-给定一个链表，打印链表的备用节点。
+给定一个链表，打印链表的交替节点。
 
 例子：
 

@@ -1,4 +1,4 @@
-# 链表的备用节点的差
+# 链表的交替节点的差
 
 > 原文：[https://www.geeksforgeeks.org/subtraction-of-the-alternate-nodes-of-linked-list/](https://www.geeksforgeeks.org/subtraction-of-the-alternate-nodes-of-linked-list/)
 
@@ -10,7 +10,7 @@
 >
 > **输出**：-48
 >
-> **备用节点**：`1 -> 3 -> 17 -> 29`
+> **交替节点**：`1 -> 3 -> 17 -> 29`
 >
 > `1 – (3 + 17 + 29) = -48`
 > 
@@ -18,7 +18,7 @@
 >
 > **输出**：-96
 >
-> **备用节点**：`10 -> 33 -> 73`
+> **交替节点**：`10 -> 33 -> 73`
 >
 > `10 – (33 + 73) = -96`
 

@@ -1,8 +1,8 @@
-# 单链表
+# 单链表的节点的乘积
 
 > 原文：[https://www.geeksforgeeks.org/product-of-the-nodes-of-a-singly-linked-list/](https://www.geeksforgeeks.org/product-of-the-nodes-of-a-singly-linked-list/)
 
-的节点的乘积
+
 
 给定一个单链表。 任务是找到给定链表所有节点的乘积。
 

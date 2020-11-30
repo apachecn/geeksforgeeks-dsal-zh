@@ -1,8 +1,6 @@
-# 使用链表
+# 使用链表的优先级队列
 
 > 原文：[https://www.geeksforgeeks.org/priority-queue-using-linked-list/](https://www.geeksforgeeks.org/priority-queue-using-linked-list/)
-
-的优先级队列
 
 使用链表实现优先级队列。
 

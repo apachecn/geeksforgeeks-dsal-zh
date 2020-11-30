@@ -1,10 +1,8 @@
-# 使用递归
+# 使用递归交替打印链表节点
 
 > 原文：[https://www.geeksforgeeks.org/print-alternate-nodes-linked-list-using-recursion/](https://www.geeksforgeeks.org/print-alternate-nodes-linked-list-using-recursion/)
 
-打印链表的备用节点
-
-给定一个链表，请打印此链表的备用节点。
+给定一个链表，请交替打印此链表节点。
 
 **示例**：
 
