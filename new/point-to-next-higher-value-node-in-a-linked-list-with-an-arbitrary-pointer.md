@@ -1,8 +1,8 @@
-# 使用任意指针指向链表中的下一个较高值的节点
+# 将任意指针指向链表中的下一个较大值的节点
 
 > 原文：[https://www.geeksforgeeks.org/point-to-next-higher-value-node-in-a-linked-list-with-an-arbitrary-pointer/](https://www.geeksforgeeks.org/point-to-next-higher-value-node-in-a-linked-list-with-an-arbitrary-pointer/)
 
-给定单链表，每个节点都有一个额外的“任意”指针，该指针当前指向`NULL`。 需要使“任意”指针指向下一个较高值的节点。
+给定单链表，每个节点都有一个额外的“任意”指针，该指针当前指向`NULL`。 需要使“任意”指针指向下一个较大值的节点。
 
 ![listwithArbit](img/8169f1fd5a3a7a6cf9da279cda5846a5.png)
 

@@ -1,4 +1,4 @@
-# 编写函数以获取两个链表的交点 | 系列 2
+# 编写函数来获取两个链表的交点 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists-set-2/](https://www.geeksforgeeks.org/write-a-function-to-get-the-intersection-point-of-two-linked-lists-set-2/)
 

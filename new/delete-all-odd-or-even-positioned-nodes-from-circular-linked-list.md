@@ -1,8 +1,6 @@
-# 从循环链表
+# 从循环链表中删除所有奇数或偶数位置的节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-odd-or-even-positioned-nodes-from-circular-linked-list/](https://www.geeksforgeeks.org/delete-all-odd-or-even-positioned-nodes-from-circular-linked-list/)
-
-中删除所有奇数或偶数定位的节点
 
 ### 从循环链表中删除所有奇数位置节点
 
@@ -82,7 +80,7 @@ void DeleteAllOddNode(struct Node** head)
 
 ### 从循环链表中删除所有偶数位置节点
 
-给出一个循环单链表。 任务是删除此列表中偶数位置的所有节点。 也就是从第二个节点开始，删除列表中的所有备用节点。
+给出一个循环单链表。 任务是删除此列表中偶数位置的所有节点。 也就是从第二个节点开始，交替删除列表中的所有节点。
 
 **示例**：
 

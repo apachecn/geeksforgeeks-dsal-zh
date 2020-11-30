@@ -1,4 +1,4 @@
-# 给定一个已排序的链表，您将如何以已排序的方式插入
+# 给定一个已排序的链表，如何以已排序的方式插入
 
 > 原文：[https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/](https://www.geeksforgeeks.org/given-a-linked-list-which-is-sorted-how-will-you-insert-in-sorted-way/)
 

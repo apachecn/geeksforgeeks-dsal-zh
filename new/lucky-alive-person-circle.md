@@ -1,4 +1,4 @@
-# 幸存者围成一圈 | 剑谜题的代码解决方案
+# 围成一圈的幸存者 | 剑谜题的代码解决方案
 
 > 原文：[https://www.geeksforgeeks.org/lucky-alive-person-circle/](https://www.geeksforgeeks.org/lucky-alive-person-circle/)
 

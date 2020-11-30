@@ -1,8 +1,6 @@
-# 链表
+# 链表中出现的最大字符
 
 > 原文：[https://www.geeksforgeeks.org/maximum-occurring-character-linked-list/](https://www.geeksforgeeks.org/maximum-occurring-character-linked-list/)
-
-中出现的最大字符
 
 给定一个字符链表。 任务是在链表中找到最大出现的字符。 如果有多个答案，则返回出现的第一个最大字符。
 

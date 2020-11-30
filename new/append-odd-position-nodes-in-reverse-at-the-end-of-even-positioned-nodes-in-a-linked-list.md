@@ -1,8 +1,6 @@
-# 在链表
+# 在链表中偶数位置节点的末尾反向附加奇数位置节点
 
 > 原文：[https://www.geeksforgeeks.org/append-odd-position-nodes-in-reverse-at-the-end-of-even-positioned-nodes-in-a-linked-list/](https://www.geeksforgeeks.org/append-odd-position-nodes-in-reverse-at-the-end-of-even-positioned-nodes-in-a-linked-list/)
-
-中偶数位置节点的末尾反向附加奇数位置节点
 
 给定一个链表。 任务是以这样一种方式隔离其偶数和奇数位置节点：奇数位置节点出现在偶数位置的节点之前，所有偶数位置的节点必须以相反的顺序出现。
 

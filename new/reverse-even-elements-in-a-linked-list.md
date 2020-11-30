@@ -1,4 +1,4 @@
-# 反向链表中的偶数元素
+# 反转链表中的偶数元素
 
 > 原文：[https://www.geeksforgeeks.org/reverse-even-elements-in-a-linked-list/](https://www.geeksforgeeks.org/reverse-even-elements-in-a-linked-list/)
 

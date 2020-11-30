@@ -1,8 +1,6 @@
-# 将节点插入到链表
+# 将节点插入到链表的中间
 
 > 原文：[https://www.geeksforgeeks.org/insert-node-middle-linked-list/](https://www.geeksforgeeks.org/insert-node-middle-linked-list/)
-
-的中间
 
 给定一个包含`n`个节点的链表。 问题是在列表中间插入一个新节点，其数据为`x`。 如果`n`是偶数，则在第`n / 2`个节点后插入新节点，否则在第`(n + 1) / 2`节点。
 

@@ -1,4 +1,4 @@
-# 链表的所有子集总和
+# 链表的所有子集的总和
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-all-subset-sums-of-a-linked-list/](https://www.geeksforgeeks.org/sum-of-all-subset-sums-of-a-linked-list/)
 

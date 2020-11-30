@@ -1,8 +1,8 @@
-# 检查二叉树的有序遍历是否是回文
+# 检查二叉树的中序遍历是否是回文
 
 > 原文：[https://www.geeksforgeeks.org/check-if-inorder-traversal-of-a-binary-tree-is-palindrome-or-not/](https://www.geeksforgeeks.org/check-if-inorder-traversal-of-a-binary-tree-is-palindrome-or-not/)
 
-给定[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)和任务，以检查其[有序序列](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)是否是回文。
+给定[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)和任务，以检查其[中序序列](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)是否是回文。
 
 **示例**：
 

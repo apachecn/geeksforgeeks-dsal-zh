@@ -1,8 +1,8 @@
-# 展平多级链表 | 系列 2（深度方式）
+# 展开多级链表 | 系列 2（深度方式）
 
 > 原文：[https://www.geeksforgeeks.org/flatten-a-multi-level-linked-list-set-2-depth-wise/](https://www.geeksforgeeks.org/flatten-a-multi-level-linked-list-set-2-depth-wise/)
 
-我们已经讨论了多级链表的[扁平化](https://www.geeksforgeeks.org/flatten-a-linked-list-with-next-and-child-pointers/)，其中节点具有向下和向后两个指针。 在上一篇文章中，我们明智地扁平化了链表。 当我们总是需要在每个节点上在下一个指针之前处理向下指针时，如何展平链表。
+我们已经讨论了多级链表的[扁平化](https://www.geeksforgeeks.org/flatten-a-linked-list-with-next-and-child-pointers/)，其中节点具有向下和向后两个指针。 在上一篇文章中，我们明智地扁平化了链表。 当我们总是需要在每个节点上在下一个指针之前处理向下指针时，如何展开链表。
 
 ```
 Input:  
@@ -31,15 +31,15 @@ right pointer)
 
 资料来源：Oracle 面试
 
-如果仔细观察，我们会发现此问题类似于[树到链表的转换](https://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/)。 我们通过以下步骤递归地展平链表。
+如果仔细观察，我们会发现此问题类似于[树到链表的转换](https://www.geeksforgeeks.org/convert-given-binary-tree-doubly-linked-list-set-3/)。 我们通过以下步骤递归地展开链表。
 
 1.  如果节点为`NULL`，则返回`NULL`。
 
 2.  存储当前节点的下一个节点（在步骤 4 中使用）。
 
-3.  递归拉平列表。 展平时，请跟踪上一个访问的节点，以便可以在其后链接下一个列表。
+3.  递归展开列表。 展开时，请跟踪上一个访问的节点，以便可以在其后链接下一个列表。
 
-4.  递归展平下一个列表（我们从步骤 2 中存储的指针中获取下一个列表），并将其附加在上次访问的节点之后。
+4.  递归展开下一个列表（我们从步骤 2 中存储的指针中获取下一个列表），并将其附加在上次访问的节点之后。
 
 以下是上述想法的实现。
 

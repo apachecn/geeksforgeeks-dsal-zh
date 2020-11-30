@@ -1,8 +1,6 @@
-# 将第一个元素移到给定链表
+# 将第一个元素移到给定链表的末尾
 
 > 原文：[https://www.geeksforgeeks.org/move-first-element-to-end-of-a-given-linked-list/](https://www.geeksforgeeks.org/move-first-element-to-end-of-a-given-linked-list/)
-
-的末尾
 
 编写一个 C 函数，该函数将第一个元素移到给定的单链表中。 例如，如果给定的链表为`1 -> 2 -> 3 -> 4 -> 5`，则该函数应将列表更改为`2 -> 3 -> 4 -> 5 -> 1`。
 

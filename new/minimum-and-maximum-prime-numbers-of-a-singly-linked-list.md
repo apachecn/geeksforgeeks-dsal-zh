@@ -1,8 +1,8 @@
-# 单链表的最小和最大素数
+# 单链表的最小和最大质数
 
 > 原文：[https://www.geeksforgeeks.org/minimum-and-maximum-prime-numbers-of-a-singly-linked-list/](https://www.geeksforgeeks.org/minimum-and-maximum-prime-numbers-of-a-singly-linked-list/)
 
-给定一个包含`N`个节点的单链表，任务是查找最小和最大素数。
+给定一个包含`N`个节点的单链表，任务是查找最小和最大质数。
 
 **示例**：
 
@@ -21,7 +21,7 @@ Output : Minimum : 2
 
 1.  这个想法是将链表遍历到最后，并将`max`和`min`变量分别初始化为`INT_MIN`和`INT_MAX`。
 
-2.  检查当前节点是否为素数。 如是：
+2.  检查当前节点是否为质数。 如是：
 
     *   如果当前节点的值大于`max`，则将当前节点的值分配给`max`。
 

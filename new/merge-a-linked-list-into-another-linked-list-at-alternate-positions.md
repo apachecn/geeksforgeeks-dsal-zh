@@ -1,8 +1,8 @@
-# 在另一个位置将链表合并到另一个链表中
+# 将链表合并到另一个链表的交替位置
 
 > 原文：[https://www.geeksforgeeks.org/merge-a-linked-list-into-another-linked-list-at-alternate-positions/](https://www.geeksforgeeks.org/merge-a-linked-list-into-another-linked-list-at-alternate-positions/)
 
-给定两个链表，将第二个列表的节点插入到第一个列表的第一个列表的备用位置。
+给定两个链表，将第二个列表的节点插入到第一个列表的交替位置。
 
 例如，如果第一个列表是`5 -> 7 -> 17 -> 13 -> 11`，第二个列表是`12 -> 10 -> 2 -> 4 -> 6`，第一个列表应变为`5 -> 12 -> 7 -> 10 -> 17 -> 2 -> 13 -> 4 -> 11 -> 6`和第二个列表应该为空。 仅在有可用位置时才插入第二个列表的节点。 例如，如果第一个列表是`1 -> 2 -> 3`，第二个列表是`4 -> 5 -> 6 -> 7 -> 8`，则第一个列表应变为`1 -> 4 -> 2 -> 5 -> 3 -> 6`，第二个是`7 -> 8`。
 

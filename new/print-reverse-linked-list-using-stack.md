@@ -1,8 +1,8 @@
-# 打印使用栈
+# 使用栈反向打印链表
 
 > 原文：[https://www.geeksforgeeks.org/print-reverse-linked-list-using-stack/](https://www.geeksforgeeks.org/print-reverse-linked-list-using-stack/)
 
-反向链表
+
 
 给定一个链表，在不修改链表的情况下将其打印出来。
 

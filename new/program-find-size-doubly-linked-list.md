@@ -1,8 +1,8 @@
-# 程序，用于查找双链表
+# 用于查找双链表的大小的程序
 
 > 原文：[https://www.geeksforgeeks.org/program-find-size-doubly-linked-list/](https://www.geeksforgeeks.org/program-find-size-doubly-linked-list/)
 
-的大小
+
 
 给定[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)，任务是找到该双链表的大小。 例如，下面的链表的大小为 4。
 

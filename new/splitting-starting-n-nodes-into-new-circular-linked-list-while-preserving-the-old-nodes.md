@@ -1,4 +1,4 @@
-# 在保留旧节点的同时将起始`N`个节点拆分为新的循环链表
+# 在保留旧节点的同时将`N`个起始节点拆分为新的循环链表
 
 > 原文：[https://www.geeksforgeeks.org/splitting-starting-n-nodes-into-new-circular-linked-list-while-preserving-the-old-nodes/](https://www.geeksforgeeks.org/splitting-starting-n-nodes-into-new-circular-linked-list-while-preserving-the-old-nodes/)
 

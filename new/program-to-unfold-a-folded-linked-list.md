@@ -1,4 +1,4 @@
-# 程序展开折叠的链表
+# 展开折叠链表的程序
 
 > 原文：[https://www.geeksforgeeks.org/program-to-unfold-a-folded-linked-list/](https://www.geeksforgeeks.org/program-to-unfold-a-folded-linked-list/)
 

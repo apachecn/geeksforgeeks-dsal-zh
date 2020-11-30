@@ -1,4 +1,4 @@
-# 大树列表递归问题。
+# 较大树列表的递归问题
 
 > 原文：[https://www.geeksforgeeks.org/the-great-tree-list-recursion-problem/](https://www.geeksforgeeks.org/the-great-tree-list-recursion-problem/)
 

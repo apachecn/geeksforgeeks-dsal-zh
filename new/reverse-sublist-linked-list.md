@@ -1,4 +1,4 @@
-# 反向链表的子列表
+# 反转链表的子列表
 
 > 原文：[https://www.geeksforgeeks.org/reverse-sublist-linked-list/](https://www.geeksforgeeks.org/reverse-sublist-linked-list/)
 

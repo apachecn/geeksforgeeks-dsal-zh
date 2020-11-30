@@ -1,4 +1,4 @@
-# 编写删除链表的功能
+# 编写删除链表的函数
 
 > 原文：[https://www.geeksforgeeks.org/write-a-function-to-delete-a-linked-list/](https://www.geeksforgeeks.org/write-a-function-to-delete-a-linked-list/)
 

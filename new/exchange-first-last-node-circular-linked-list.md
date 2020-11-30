@@ -1,8 +1,6 @@
-# 交换循环链表
+# 交换循环链表中的第一个和最后一个节点
 
 > 原文：[https://www.geeksforgeeks.org/exchange-first-last-node-circular-linked-list/](https://www.geeksforgeeks.org/exchange-first-last-node-circular-linked-list/)
-
-中的第一个和最后一个节点
 
 给定一个[循环链表](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)交换第一个和最后一个节点。 该任务仅应在一个额外的节点上完成，您不能声明一个以上的额外节点，也不允许您声明任何其他临时变量。
 

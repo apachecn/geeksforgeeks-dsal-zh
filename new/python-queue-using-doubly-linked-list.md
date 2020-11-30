@@ -1,8 +1,6 @@
-# Python | 使用双链表
+# Python | 使用双链表实现队列
 
 > 原文：[https://www.geeksforgeeks.org/python-queue-using-doubly-linked-list/](https://www.geeksforgeeks.org/python-queue-using-doubly-linked-list/)
-
-进行排队
 
 队列是使用先进先出原则（FIFO）插入和删除的对象的集合。 插入是在队列的尾部完成的，并且可以从队列中的第一个（头部）位置访问和删除元素。
 

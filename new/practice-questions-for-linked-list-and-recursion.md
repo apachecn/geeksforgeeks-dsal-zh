@@ -1,8 +1,6 @@
-# 链表和递归
+# 链表和递归的练习题
 
 > 原文：[https://www.geeksforgeeks.org/practice-questions-for-linked-list-and-recursion/](https://www.geeksforgeeks.org/practice-questions-for-linked-list-and-recursion/)
-
-的练习题
 
 假定链表节点的结构如下。
 

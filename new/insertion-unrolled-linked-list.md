@@ -1,4 +1,4 @@
-# 插入展开的链表
+# 展开的链表的插入
 
 > 原文：[https://www.geeksforgeeks.org/insertion-unrolled-linked-list/](https://www.geeksforgeeks.org/insertion-unrolled-linked-list/)
 

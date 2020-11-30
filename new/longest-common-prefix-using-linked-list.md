@@ -1,8 +1,6 @@
-# 使用链表
+# 链表的最长公共前缀
 
 > 原文：[https://www.geeksforgeeks.org/longest-common-prefix-using-linked-list/](https://www.geeksforgeeks.org/longest-common-prefix-using-linked-list/)
-
-的最长公共前缀
 
 给定一组字符串，找到最长的公共前缀。
 

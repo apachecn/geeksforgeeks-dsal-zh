@@ -1,4 +1,4 @@
-# 用链表中的节点计数替换每个节点
+# 用节点计数替换链表中的每个节点
 
 > 原文：[https://www.geeksforgeeks.org/replace-each-node-with-its-surpasser-count-in-linked-list/](https://www.geeksforgeeks.org/replace-each-node-with-its-surpasser-count-in-linked-list/)
 

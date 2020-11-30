@@ -1,4 +1,4 @@
-# 两个排序链表的交叉
+# 两个排序链表的交集
 
 > 原文：[https://www.geeksforgeeks.org/intersection-of-two-sorted-linked-lists/](https://www.geeksforgeeks.org/intersection-of-two-sorted-linked-lists/)
 

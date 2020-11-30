@@ -1,4 +1,4 @@
-# 合并链表的排序
+# 链表的归并排序
 
 > 原文：[https://www.geeksforgeeks.org/merge-sort-for-linked-list/](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 

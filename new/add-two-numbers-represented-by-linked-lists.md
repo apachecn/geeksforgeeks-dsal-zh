@@ -1,4 +1,4 @@
-# 添加两个由链表表示的数字 | 系列 1
+# 相加两个由链表表示的数字 | 系列 1
 
 > 原文：[https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/](https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/)
 

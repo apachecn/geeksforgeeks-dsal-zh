@@ -1,4 +1,4 @@
-# 从链表中删除没有头指针的节点
+# 不适用头指针从链表中删除节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-a-node-from-linked-list-without-head-pointer/](https://www.geeksforgeeks.org/delete-a-node-from-linked-list-without-head-pointer/)
 

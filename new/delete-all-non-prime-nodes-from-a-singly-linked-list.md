@@ -1,8 +1,8 @@
-# 从单链表中删除所有非主要节点
+# 从单链表中删除所有非质数节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-non-prime-nodes-from-a-singly-linked-list/](https://www.geeksforgeeks.org/delete-all-non-prime-nodes-from-a-singly-linked-list/)
 
-给定一个包含`N`个节点的单链表，任务是从列表中删除不是素数的所有节点。
+给定一个包含`N`个节点的单链表，任务是从列表中删除不是质数的所有节点。
 
 **示例**：
 
@@ -12,7 +12,7 @@
 > **输入**：列表= 15-> 3-> 4-> 2-> 9
 > **输出**：最终列表= 3-> 2
 
-**方法**：想法是一个遍历单链表的节点，并获得**不是素数**的节点的指针。 通过按照帖子中使用的方法删除这些节点：[从链表中删除一个节点](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)。
+**方法**：想法是一个遍历单链表的节点，并获得**不是质数**的节点的指针。 通过按照帖子中使用的方法删除这些节点：[从链表中删除一个节点](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)。
 
 以下是上述想法的实现：
 

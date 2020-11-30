@@ -1,4 +1,4 @@
-# 链表中不同的斐波那契奇数结点的平均值
+# 链表中不同的斐波那契奇数节点的平均值
 
 > 原文：[https://www.geeksforgeeks.org/mean-of-distinct-odd-fibonacci-nodes-in-a-linked-list/](https://www.geeksforgeeks.org/mean-of-distinct-odd-fibonacci-nodes-in-a-linked-list/)
 
@@ -16,9 +16,9 @@
 >
 > 奇数斐波那契节点 列表是`{5, 21, 3, 13}`
 >
-> 奇数斐波那契结点数是 4
+> 奇数斐波那契节点数是 4
 >
-> 因此，奇数斐波那契结点值的平均值为`(5 + 21 + 3 + 13) / 4 = 10.5`
+> 因此，奇数斐波那契节点值的平均值为`(5 + 21 + 3 + 13) / 4 = 10.5`
 > 
 > **输入**：`LL = 55 -> 3 -> 91 -> 89─> 76 -> 233 -> 34 -> 87 -> 5 -> 100`
 >
@@ -26,7 +26,7 @@
 >
 > **说明**：
 >
-> 链表中存在的斐波纳契结点是`{55, 3, 89, 233, 34 , 5}`
+> 链表中存在的斐波纳契节点是`{55, 3, 89, 233, 34 , 5}`
 >
 > 链表中存在的奇数斐波那契节点是`{55, 3, 89, 233, 5}`
 >
@@ -40,7 +40,7 @@
 
 1.  初始化两个变量，例如`cnt`和`sum`，分别存储奇数[斐波那契节点](https://www.geeksforgeeks.org/check-number-fibonacci-number/)的计数和所有奇数[斐波那契节点](https://www.geeksforgeeks.org/check-number-fibonacci-number/)的计数。
 
-2.  [遍历单个链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)并存储链表中[最大的元素](https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/)，例如`Max`。
+2.  [遍历单链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)并存储链表中[最大的元素](https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/)，例如`Max`。
 
 3.  创建一个[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)，例如说`Hashmap`，以存储直到`Max`为止的所有斐波那契数。
 

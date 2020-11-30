@@ -1,8 +1,8 @@
-# 在给定节点
+# 在链表的给定节点之前插入一个节点
 
 > 原文：[https://www.geeksforgeeks.org/insert-a-node-in-linked-list-before-a-given-node/](https://www.geeksforgeeks.org/insert-a-node-in-linked-list-before-a-given-node/)
 
-之前的链表中插入一个节点
+
 
 给定[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)的节点`N`和值`K`，任务是在链表中给定的节点`N`之前插入值为`K`的节点。
 

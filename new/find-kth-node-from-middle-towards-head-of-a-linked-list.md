@@ -1,4 +1,4 @@
-# 从中间到链表的开头查找第`k`个节点
+# 从链表的中间到开头查找第`k`个节点
 
 > 原文：[https://www.geeksforgeeks.org/find-kth-node-from-middle-towards-head-of-a-linked-list/](https://www.geeksforgeeks.org/find-kth-node-from-middle-towards-head-of-a-linked-list/)
 

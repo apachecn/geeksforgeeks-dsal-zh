@@ -1,4 +1,4 @@
-# 原地重新排列给定的链表。
+# 原地重新排列给定的链表
 
 > 原文：[https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/](https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/)
 

@@ -1,8 +1,6 @@
-# 在链表
+# 在链表中的特定位置插入节点
 
 > 原文：[https://www.geeksforgeeks.org/insert-a-node-at-a-specific-position-in-a-linked-list/](https://www.geeksforgeeks.org/insert-a-node-at-a-specific-position-in-a-linked-list/)
-
-中的特定位置插入节点
 
 给定一个单链表，一个位置和一个元素，任务是编写一个程序以将该元素插入到链表中的给定位置。
 

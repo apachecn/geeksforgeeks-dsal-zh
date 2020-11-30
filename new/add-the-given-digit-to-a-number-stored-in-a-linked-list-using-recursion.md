@@ -1,4 +1,4 @@
-# 使用递归
+# 使用递归将给定的数字与链表中存储的数字相加
 
 > 原文：[https://www.geeksforgeeks.org/add-the-given-digit-to-a-number-stored-in-a-linked-list-using-recursion/](https://www.geeksforgeeks.org/add-the-given-digit-to-a-number-stored-in-a-linked-list-using-recursion/)
 

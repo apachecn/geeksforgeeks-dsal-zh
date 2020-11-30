@@ -1,4 +1,4 @@
-# 使用递归从中间到左右顺序遍历链表
+# 使用递归从中间到左右遍历链表
 
 > 原文：[https://www.geeksforgeeks.org/traverse-linked-list-from-middle-to-left-right-order-using-recursion/](https://www.geeksforgeeks.org/traverse-linked-list-from-middle-to-left-right-order-using-recursion/)
 

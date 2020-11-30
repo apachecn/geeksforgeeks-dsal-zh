@@ -1,8 +1,8 @@
-# 反向链接单个链表中的`K`个节点–迭代解决方案
+# 交替反转单链表中的`K`个节点 – 迭代解决方案
 
 > 原文：[https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list-iterative-solution/](https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list-iterative-solution/)
 
-给定一个链表和一个整数`K`，任务是反转每个备用`K`节点。
+给定一个链表和一个整数`K`，任务是交替反转每`K`个节点。
 
 **示例**：
 

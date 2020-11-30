@@ -1,4 +1,4 @@
-# 重新排列给定列表，使其包含交替的最小最大元素
+# 重新排列给定列表，使其交替包含最小最大元素
 
 > 原文：[https://www.geeksforgeeks.org/rearrange-given-list-consists-alternating-minimum-maximum-elements/](https://www.geeksforgeeks.org/rearrange-given-list-consists-alternating-minimum-maximum-elements/)
 

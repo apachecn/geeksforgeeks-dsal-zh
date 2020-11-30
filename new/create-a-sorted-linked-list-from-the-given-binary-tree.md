@@ -1,8 +1,6 @@
-# 从给定的二叉树
+# 从给定的二叉树创建排序的链表
 
 > 原文：[https://www.geeksforgeeks.org/create-a-sorted-linked-list-from-the-given-binary-tree/](https://www.geeksforgeeks.org/create-a-sorted-linked-list-from-the-given-binary-tree/)
-
-创建排序的链表
 
 给定一个二叉树，任务是将其转换为排序的链表。
 

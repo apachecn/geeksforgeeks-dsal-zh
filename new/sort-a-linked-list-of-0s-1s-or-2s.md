@@ -1,4 +1,4 @@
-# 对 0、1、2 和 2 的链表排序
+# 对 0、1 和 2 的链表排序
 
 > 原文：[https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/](https://www.geeksforgeeks.org/sort-a-linked-list-of-0s-1s-or-2s/)
 

@@ -1,8 +1,6 @@
-# 对单链表
+# 对单链表进行二分搜索
 
 > 原文：[https://www.geeksforgeeks.org/binary-search-on-singly-linked-list/](https://www.geeksforgeeks.org/binary-search-on-singly-linked-list/)
-
-进行二分搜索
 
 给定一个单链表和一个密钥，请使用[二分搜索](https://www.geeksforgeeks.org/binary-search/)方法查找密钥。
 

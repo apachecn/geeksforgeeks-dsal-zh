@@ -1,8 +1,6 @@
-# 从循环单链表
+# 从循环单链表中删除所有斐波那契节点
 
 > 原文：[https://www.geeksforgeeks.org/remove-all-fibonacci-nodes-from-a-circular-singly-linked-list/](https://www.geeksforgeeks.org/remove-all-fibonacci-nodes-from-a-circular-singly-linked-list/)
-
-中删除所有斐波那契节点
 
 给定一个包含`N`个节点的[循环单链表](https://www.geeksforgeeks.org/circular-linked-list/)，任务是从包含[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)的列表中删除所有节点。
 

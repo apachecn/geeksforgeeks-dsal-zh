@@ -1,4 +1,4 @@
-# 减去两个表示为链表的数字
+# 相减两个表示为链表的数字
 
 > 原文：[https://www.geeksforgeeks.org/subtract-two-numbers-represented-as-linked-lists/](https://www.geeksforgeeks.org/subtract-two-numbers-represented-as-linked-lists/)
 

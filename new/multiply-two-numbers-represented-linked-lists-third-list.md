@@ -1,4 +1,4 @@
-# 将表示为链表的两个数字乘以第三个列表
+# 将表示为链表的两个数字相乘作为第三个列表
 
 > 原文：[https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists-third-list/](https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists-third-list/)
 
@@ -658,7 +658,7 @@ Resultant list is: 9->9->7->9->5->9->8->0->1->8->1
 
 ```
 
-注意：我们可以照顾到结果结点，该结点在循环外可以有 1 位以上的数字，只需遍历结果列表并在反转之前将进位加到下一位数字即可。
+注意：我们可以照顾到结果节点，该节点在循环外可以有 1 位以上的数字，只需遍历结果列表并在反转之前将进位加到下一位数字即可。
 
 
 

@@ -1,8 +1,6 @@
-# 从链表
+# 从链表中删除最后一次出现的项目
 
 > 原文：[https://www.geeksforgeeks.org/delete-last-occurrence-of-an-item-from-linked-list/](https://www.geeksforgeeks.org/delete-last-occurrence-of-an-item-from-linked-list/)
-
-中删除最后一次出现的项目
 
 遍历整个列表，并使用双指针跟踪包含最后出现节点地址的节点。
 

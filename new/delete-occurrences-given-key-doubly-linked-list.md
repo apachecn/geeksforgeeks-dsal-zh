@@ -1,8 +1,6 @@
-# 删除双链表
+# 删除双链表中所有出现的给定键
 
 > 原文：[https://www.geeksforgeeks.org/delete-occurrences-given-key-doubly-linked-list/](https://www.geeksforgeeks.org/delete-occurrences-given-key-doubly-linked-list/)
-
-中所有出现的给定键
 
 给定一个双链表和一个键`x`。 问题是从双链表中删除所有出现的给定密钥`x`。
 

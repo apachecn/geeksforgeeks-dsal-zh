@@ -1,4 +1,4 @@
-# 在没有额外空间的单链接中查找给定总和的对
+# 不使用额外空间在单链表中查找具有给定总和的偶对
 
 > 原文：[https://www.geeksforgeeks.org/find-pair-given-sum-sorted-singly-linked-without-extra-space/](https://www.geeksforgeeks.org/find-pair-given-sum-sorted-singly-linked-without-extra-space/)
 

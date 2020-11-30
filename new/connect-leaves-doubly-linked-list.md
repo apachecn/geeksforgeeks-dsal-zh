@@ -1,4 +1,4 @@
-# 提取双链表中的二叉树的叶子
+# 将二叉树的叶子提取到双链表中
 
 > 原文：[https://www.geeksforgeeks.org/connect-leaves-doubly-linked-list/](https://www.geeksforgeeks.org/connect-leaves-doubly-linked-list/)
 

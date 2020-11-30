@@ -1,4 +1,4 @@
-# 具有头和尾指针的双链表中的排序插入
+# 具有头和尾指针的双链表的排序插入
 
 > 原文：[https://www.geeksforgeeks.org/create-doubly-linked-list-using-double-pointer-inserting-nodes-list-remains-ascending-order/](https://www.geeksforgeeks.org/create-doubly-linked-list-using-double-pointer-inserting-nodes-list-remains-ascending-order/)
 

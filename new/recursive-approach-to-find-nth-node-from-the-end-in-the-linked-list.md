@@ -1,4 +1,4 @@
-# 递归方法，从链表的末尾查找第`n`个节点
+# 从链表的末尾查找第`n`个节点的递归方法
 
 > 原文：[https://www.geeksforgeeks.org/recursive-approach-to-find-nth-node-from-the-end-in-the-linked-list/](https://www.geeksforgeeks.org/recursive-approach-to-find-nth-node-from-the-end-in-the-linked-list/)
 

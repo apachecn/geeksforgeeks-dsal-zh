@@ -1,8 +1,6 @@
-# 在链表
+# 在链表中查找平衡节点
 
 > 原文：[https://www.geeksforgeeks.org/find-the-balanced-node-in-a-linked-list/](https://www.geeksforgeeks.org/find-the-balanced-node-in-a-linked-list/)
-
-中找到平衡的节点
 
 给定一个链表，任务是在链表中找到平衡节点。 平衡节点是这样一个节点，其左侧所有节点的总和等于右侧所有节点的总和，如果找不到这样的节点，则打印`-1`。
 

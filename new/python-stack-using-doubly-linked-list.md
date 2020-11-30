@@ -1,8 +1,6 @@
-# Python | 使用双链表
+# Python | 使用双链表实现栈
 
 > 原文：[https://www.geeksforgeeks.org/python-stack-using-doubly-linked-list/](https://www.geeksforgeeks.org/python-stack-using-doubly-linked-list/)
-
-进行栈
 
 栈是使用后进先出原理（LIFO）插入和删除的对象的集合。 用户可以将元素插入栈，并且只能访问或删除栈顶部最近插入的对象。 在数组上使用链表来实现栈的主要优点是**动态分配数据**，而在数组中，栈的大小受到限制，并且当栈的大小出现栈溢出错误的机会 超出最大大小。
 

@@ -1,8 +1,8 @@
-# 双链表指南
+# 双链表教程
 
 > 原文：[https://www.geeksforgeeks.org/doubly-linked-list-tutorial/](https://www.geeksforgeeks.org/doubly-linked-list-tutorial/)
 
-[双链表（DLL）](https://www.geeksforgeeks.org/doubly-linked-list/)包含一个额外的指针（通常称为前一个指针）以及在单个链表中的下一个指针和数据。
+[双链表（DLL）](https://www.geeksforgeeks.org/doubly-linked-list/)包含一个额外的指针（通常称为前一个指针）以及在单链表中的下一个指针和数据。
 
 ![](img/1fac4717827a04f080fae80f8fd57fe7.png)
 

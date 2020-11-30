@@ -1,8 +1,6 @@
-# 循环链表
+# 循环链表中不同位置的删除
 
 > 原文：[https://www.geeksforgeeks.org/deletion-at-different-positions-in-a-circular-linked-list/](https://www.geeksforgeeks.org/deletion-at-different-positions-in-a-circular-linked-list/)
-
-中不同位置的删除
 
 给定一个循环链表。 任务是编写程序以从存在于此的列表中删除节点：
 

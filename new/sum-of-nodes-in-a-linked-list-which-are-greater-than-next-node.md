@@ -1,4 +1,4 @@
-# 链表中大于下一节点的节点总数
+# 链表中大于下一节点的节点总和
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-nodes-in-a-linked-list-which-are-greater-than-next-node/](https://www.geeksforgeeks.org/sum-of-nodes-in-a-linked-list-which-are-greater-than-next-node/)
 

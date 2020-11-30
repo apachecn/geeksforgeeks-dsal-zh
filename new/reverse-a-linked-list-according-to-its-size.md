@@ -1,4 +1,4 @@
-# 根据其大小反向链表
+# 根据其大小反转链表
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-linked-list-according-to-its-size/](https://www.geeksforgeeks.org/reverse-a-linked-list-according-to-its-size/)
 

@@ -1,4 +1,4 @@
-# 在给定索引处打印链表的节点
+# 打印链表在给定索引处的节点
 
 > 原文：[https://www.geeksforgeeks.org/print-nodes-of-linked-list-at-given-indexes/](https://www.geeksforgeeks.org/print-nodes-of-linked-list-at-given-indexes/)
 

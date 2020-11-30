@@ -1,4 +1,4 @@
-# 给定线段的链表，请删除中间点
+# 给定线段的链表，删除中间点
 
 > 原文：[https://www.geeksforgeeks.org/given-linked-list-line-segments-remove-middle-points/](https://www.geeksforgeeks.org/given-linked-list-line-segments-remove-middle-points/)
 

@@ -1,8 +1,6 @@
-# 链表
+# 链表的交替排序
 
 > 原文：[https://www.geeksforgeeks.org/alternate-sorting-linked-list/](https://www.geeksforgeeks.org/alternate-sorting-linked-list/)
-
-的替代排序
 
 给定一个包含`n`个节点的链表。 问题是要重新排列列表中的节点，以使第一节点中的数据为第一最小值，第二节点为第一最大值，第三节点为第二最小值，第四节点为第二最大值，依此类推。
 

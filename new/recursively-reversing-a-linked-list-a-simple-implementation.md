@@ -1,4 +1,4 @@
-# 以递归方式反向链表（简单实现）
+# 以递归方式反转链表（简单实现）
 
 > 原文：[https://www.geeksforgeeks.org/recursively-reversing-a-linked-list-a-simple-implementation/](https://www.geeksforgeeks.org/recursively-reversing-a-linked-list-a-simple-implementation/)
 

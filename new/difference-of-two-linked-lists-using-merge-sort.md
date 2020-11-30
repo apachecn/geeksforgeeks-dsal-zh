@@ -1,4 +1,4 @@
-# 使用归并排序的两个链表的差异
+# 使用归并排序的两个链表的差
 
 > 原文：[https://www.geeksforgeeks.org/difference-of-two-linked-lists-using-merge-sort/](https://www.geeksforgeeks.org/difference-of-two-linked-lists-using-merge-sort/)
 

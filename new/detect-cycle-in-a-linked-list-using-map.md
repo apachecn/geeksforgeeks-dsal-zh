@@ -1,8 +1,6 @@
-# 使用映射
+# 使用映射检测链表中的循环
 
 > 原文：[https://www.geeksforgeeks.org/detect-cycle-in-a-linked-list-using-map/](https://www.geeksforgeeks.org/detect-cycle-in-a-linked-list-using-map/)
-
-检测链表中的周期
 
 给定[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，检查链表是否具有循环。
 

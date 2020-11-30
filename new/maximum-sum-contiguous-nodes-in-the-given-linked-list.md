@@ -1,8 +1,6 @@
-# 给定链表
+# 给定链表中的最大连续节点总和
 
 > 原文：[https://www.geeksforgeeks.org/maximum-sum-contiguous-nodes-in-the-given-linked-list/](https://www.geeksforgeeks.org/maximum-sum-contiguous-nodes-in-the-given-linked-list/)
-
-中的最大邻接节点数
 
 给定一个链表，任务是找到任何连续节点的最大和。
 

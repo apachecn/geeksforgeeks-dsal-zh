@@ -1,8 +1,8 @@
-# 将双链表的偶数节点替换为数组
+# 将双链表的偶数节点替换为数组元素
 
 > 原文：[https://www.geeksforgeeks.org/replace-even-nodes-of-a-doubly-linked-list-with-the-elements-of-array/](https://www.geeksforgeeks.org/replace-even-nodes-of-a-doubly-linked-list-with-the-elements-of-array/)
 
-的元素
+
 
 给定一个双链表和一个只有奇数值的数组。 两者的大小均为`N`。任务是用数组元素从左到右替换所有具有偶数值的节点。
 

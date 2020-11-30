@@ -1,4 +1,4 @@
-# 从两个给定的链表创建新的链表，每个链结在每个节点上都有更大的元素
+# 从两个给定的链表创建新的链表，每个节点上都有更大的元素
 
 > 原文：[https://www.geeksforgeeks.org/create-new-linked-list-from-two-given-linked-list-with-greater-element-at-each-node/](https://www.geeksforgeeks.org/create-new-linked-list-from-two-given-linked-list-with-greater-element-at-each-node/)
 

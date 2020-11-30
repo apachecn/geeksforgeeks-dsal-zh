@@ -1,4 +1,4 @@
-# 迭代方法，用于删除线段链表中的中点
+# 用于删除线段链表的中点的迭代方法
 
 > 原文：[https://www.geeksforgeeks.org/iterative-approach-for-removing-middle-points-in-a-linked-list-of-line-segements/](https://www.geeksforgeeks.org/iterative-approach-for-removing-middle-points-in-a-linked-list-of-line-segements/)
 

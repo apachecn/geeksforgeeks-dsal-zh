@@ -1,4 +1,4 @@
-# 将一个数字添加到一个表示为链表的数字 | 系列 2
+# 将链表表示的数字加一 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/add-one-to-a-number-represented-as-linked-list-set-2/](https://www.geeksforgeeks.org/add-one-to-a-number-represented-as-linked-list-set-2/)
 

@@ -1,8 +1,6 @@
-# 程序从单链表
+# 从单链表中删除所有偶数节点
 
 > 原文：[https://www.geeksforgeeks.org/program-to-delete-all-even-nodes-from-a-singly-linked-list/](https://www.geeksforgeeks.org/program-to-delete-all-even-nodes-from-a-singly-linked-list/)
-
-中删除所有偶数节点
 
 给定一个[**单链表**](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，包含`N`个节点，任务是从列表中删除所有偶数节点。
 
@@ -20,7 +18,7 @@
 
 **方法**：
 
-*   这个想法是一个遍历单个链表的节点，并获得具有偶数数据的节点的指针。 请按照[本帖子](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)中使用的方法删除那些节点。
+*   这个想法是一个遍历单链表的节点，并获得具有偶数数据的节点的指针。 请按照[本帖子](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)中使用的方法删除那些节点。
 
 以下是上述想法的实现：
 

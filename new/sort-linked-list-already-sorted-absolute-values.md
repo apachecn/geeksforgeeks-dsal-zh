@@ -1,4 +1,4 @@
-# 已对绝对值排序的链表
+# 对基于绝对值排序的链表排序
 
 > 原文：[https://www.geeksforgeeks.org/sort-linked-list-already-sorted-absolute-values/](https://www.geeksforgeeks.org/sort-linked-list-already-sorted-absolute-values/)
 

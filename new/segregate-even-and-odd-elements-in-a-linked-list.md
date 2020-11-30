@@ -1,8 +1,6 @@
-# 隔离链表
+# 隔离链表中的偶数和奇数节点
 
 > 原文：[https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/](https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/)
-
-中的偶数和奇数节点
 
 给定整数链表，编写一个函数来修改链表，以使所有偶数出现在修改后的链表中的所有奇数之前。 另外，请保持偶数和奇数的顺序相同。
 

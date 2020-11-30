@@ -1,4 +1,4 @@
-# 链表中其值等于其频率的节点数
+# 链表中其值等于频率的节点数
 
 > 原文：[https://www.geeksforgeeks.org/count-of-nodes-in-a-linkedlist-whose-value-is-equal-to-their-frequency/](https://www.geeksforgeeks.org/count-of-nodes-in-a-linkedlist-whose-value-is-equal-to-their-frequency/)
 

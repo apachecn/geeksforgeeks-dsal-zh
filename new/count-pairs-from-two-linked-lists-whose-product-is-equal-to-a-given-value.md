@@ -1,4 +1,4 @@
-# 来自两个链表的计数对，两个链表的乘积等于给定值
+# 来自两个链表的偶对数量，乘积等于给定值
 
 > 原文：[https://www.geeksforgeeks.org/count-pairs-from-two-linked-lists-whose-product-is-equal-to-a-given-value/](https://www.geeksforgeeks.org/count-pairs-from-two-linked-lists-whose-product-is-equal-to-a-given-value/)
 

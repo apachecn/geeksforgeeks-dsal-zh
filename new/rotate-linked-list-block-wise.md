@@ -1,4 +1,4 @@
-# 明智地旋转链表
+# 逐块旋转链表
 
 > 原文：[https://www.geeksforgeeks.org/rotate-linked-list-block-wise/](https://www.geeksforgeeks.org/rotate-linked-list-block-wise/)
 

@@ -1,4 +1,4 @@
-# 在单链表中仅给定要删除节点的指针/引用，如何删除它？
+# 在单链表中仅提供要删除节点的指针/引用，如何删除它？
 
 > 原文：[https://www.geeksforgeeks.org/given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/](https://www.geeksforgeeks.org/given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/)
 

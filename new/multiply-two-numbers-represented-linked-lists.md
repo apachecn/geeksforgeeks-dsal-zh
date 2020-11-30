@@ -1,4 +1,4 @@
-# 将两个数字乘以链表
+# 将两个由链表表示的数字相乘
 
 > 原文：[https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists/](https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists/)
 

@@ -1,8 +1,6 @@
-# 静态队列和单链表
+# 静态队列和单链表之间的区别
 
 > 原文：[https://www.geeksforgeeks.org/difference-between-a-static-queue-and-a-singly-linked-list/](https://www.geeksforgeeks.org/difference-between-a-static-queue-and-a-singly-linked-list/)
-
-之间的区别
 
 [**静态队列**](https://www.geeksforgeeks.org/queue-data-structure/)：[队列](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)是元素的有序列表。 它始终以先进先出（FIFO）的方式工作。 所有元素都插入在后面，并从队列的前面删除。 在静态队列的实现中，将使用数组，因此队列的所有操作都是基于索引的，这使得除删除之外的所有操作都更快，因为删除需要将所有其余元素向前移动一个位置。
 
@@ -12,7 +10,7 @@
 
 ![](img/a82bb56d6474afd20d7a765fa656a569.png)
 
-[**单链表**](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)：链表也是元素的有序列表。 您可以在列表中的任何位置添加元素，在列表中的任何位置更改元素，或从列表中的任何位置删除元素。 列表中的每个节点都存储内容以及指向列表中下一个节点的指针或引用。 要存储单个链表，仅必须存储指向该列表中第一个节点的引用或指针。 单个链表中的最后一个节点指向无（或为空）。
+[**单链表**](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)：链表也是元素的有序列表。 您可以在列表中的任何位置添加元素，在列表中的任何位置更改元素，或从列表中的任何位置删除元素。 列表中的每个节点都存储内容以及指向列表中下一个节点的指针或引用。 要存储单链表，仅必须存储指向该列表中第一个节点的引用或指针。 单链表中的最后一个节点指向无（或为空）。
 
 ![](img/6506462bc8feac1c3bac44510804e930.png)
 

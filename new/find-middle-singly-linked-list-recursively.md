@@ -1,4 +1,4 @@
-# 递归查找单链表的中间
+# 递归查找单链表的中间位置
 
 > 原文：[https://www.geeksforgeeks.org/find-middle-singly-linked-list-recursively/](https://www.geeksforgeeks.org/find-middle-singly-linked-list-recursively/)
 

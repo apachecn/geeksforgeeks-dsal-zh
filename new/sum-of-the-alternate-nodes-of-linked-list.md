@@ -1,10 +1,8 @@
-# 链表
+# 链表节点的交替总和
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-the-alternate-nodes-of-linked-list/](https://www.geeksforgeeks.org/sum-of-the-alternate-nodes-of-linked-list/)
 
-的备用节点总和
-
-给定一个链表，任务是打印链表的备用节点之和。
+给定一个链表，任务是打印链表节点的交替总和。
 
 **示例**：
 

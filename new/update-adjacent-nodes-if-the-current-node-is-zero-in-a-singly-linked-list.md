@@ -1,8 +1,6 @@
-# 如果单链表
+# 如果单链表中的当前节点为零，则更新相邻节点
 
 > 原文：[https://www.geeksforgeeks.org/update-adjacent-nodes-if-the-current-node-is-zero-in-a-singly-linked-list/](https://www.geeksforgeeks.org/update-adjacent-nodes-if-the-current-node-is-zero-in-a-singly-linked-list/)
-
-中的当前节点为零，则更新相邻节点。
 
 给定一个链表。 如果当前节点为 0，则任务是将节点的上一个和下一个节点的值更改为 0。
 

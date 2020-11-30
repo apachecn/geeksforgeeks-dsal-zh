@@ -1,8 +1,6 @@
-# 合并双链表
+# 双链表的归并排序
 
 > 原文：[https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)
-
-的排序
 
 给定一个双链表，编写一个函数使用归并排序以递增顺序对双链表排序。
 

@@ -1,4 +1,4 @@
-# 合并两个未排序的链表以得到一个已排序的列表
+# 合并两个未排序的链表来得到一个已排序的列表
 
 > 原文：[https://www.geeksforgeeks.org/merge-two-unsorted-linked-lists-to-get-a-sorted-list/](https://www.geeksforgeeks.org/merge-two-unsorted-linked-lists-to-get-a-sorted-list/)
 

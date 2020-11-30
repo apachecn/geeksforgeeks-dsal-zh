@@ -1,4 +1,4 @@
-# 反向双向循环链表
+# 反转循环双链表
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-doubly-circular-linked-list/](https://www.geeksforgeeks.org/reverse-a-doubly-circular-linked-list/)
 
@@ -48,7 +48,7 @@ reverse(head)
 
 ```
 
-**说明**：`insertEnd()`的参数列表中的变量`head`是指针变量的指针。 `reverse()`从`head`指针开始向后遍历双向循环链表，并一一获得遍历中的节点。 借助功能`insertEnd()`，将那些节点插入到以`new_head`指针开头的列表的末尾，最后返回`new_head`。
+**说明**：`insertEnd()`的参数列表中的变量`head`是指针变量的指针。 `reverse()`从`head`指针开始向后遍历循环双链表，并一一获得遍历中的节点。 借助功能`insertEnd()`，将那些节点插入到以`new_head`指针开头的列表的末尾，最后返回`new_head`。
 
 ## C++
 

@@ -1,4 +1,4 @@
-# 单链表中的备用奇偶节点
+# 单链表中的交替的奇偶节点
 
 > 原文：[https://www.geeksforgeeks.org/alternate-odd-even-nodes-singly-linked-list/](https://www.geeksforgeeks.org/alternate-odd-even-nodes-singly-linked-list/)
 

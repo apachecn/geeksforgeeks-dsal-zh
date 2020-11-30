@@ -1,8 +1,6 @@
-# 在两个双链表
+# 在两个双链表中查找公共节点的数量
 
 > 原文：[https://www.geeksforgeeks.org/find-count-of-common-nodes-in-two-doubly-linked-lists/](https://www.geeksforgeeks.org/find-count-of-common-nodes-in-two-doubly-linked-lists/)
-
-中查找公共节点的数量
 
 给定两个双链表。 任务是在两个双链表中找到公共节点的总数。
 

@@ -1,8 +1,6 @@
-# 使用双链表
+# 使用双链表的大数算数
 
 > 原文：[https://www.geeksforgeeks.org/large-number-arithmetic-using-doubly-linked-list/](https://www.geeksforgeeks.org/large-number-arithmetic-using-doubly-linked-list/)
-
-的大数算法
 
 给定两个非常大的字符串形式的数字。 您的任务是对这些字符串应用不同的算术运算。
 

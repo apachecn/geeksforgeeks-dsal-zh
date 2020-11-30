@@ -1,10 +1,8 @@
-# 从双链表
+# 从双链表中删除所有质数节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-doubly-linked-list/](https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-doubly-linked-list/)
 
-中删除所有主要节点
-
-给定一个包含`N`个节点的双链表，任务是从列表中删除所有素数的节点。
+给定一个包含`N`个节点的双链表，任务是从列表中删除所有质数节点。
 
 **示例**：
 
@@ -16,7 +14,7 @@
 >
 > **输出**：`finalList = 5 <=> 4 <=> 9`
 
-**方法**：想法是一次遍历双链表的节点，[并获得素数节点的指针](https://www.geeksforgeeks.org/primality-test-set-1-introduction-and-school-method/)。 遵循[这篇文章](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)中使用的方法删除那些节点。
+**方法**：想法是一次遍历双链表的节点，[并获得质数节点的指针](https://www.geeksforgeeks.org/primality-test-set-1-introduction-and-school-method/)。 遵循[这篇文章](https://www.geeksforgeeks.org/delete-a-node-in-a-doubly-linked-list/)中使用的方法删除那些节点。
 
 以下是上述想法的实现：
 

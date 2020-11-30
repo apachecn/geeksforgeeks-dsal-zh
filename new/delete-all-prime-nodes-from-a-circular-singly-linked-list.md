@@ -1,10 +1,8 @@
-# 从循环单链表
+# 从循环单链表中删除所有质数节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-circular-singly-linked-list/](https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-circular-singly-linked-list/)
 
-中删除所有主要节点
-
-给定一个包含`N`个节点的循环单链表。 任务是从列表中删除所有主要节点。
+给定一个包含`N`个节点的循环单链表。 任务是从列表中删除所有质数节点。
 
 ![](img/7efc45248c486bc9b5f4f83226b3af81.png)
 
@@ -21,7 +19,7 @@ List After delete prime node : 10 21 16 6
 
 ```
 
-**方法**：这个想法是一个遍历循环单链表的节点，并得到素数节点的指针。 通过按照帖子中使用的方法删除这些节点：[从循环链表](https://www.geeksforgeeks.org/deletion-circular-linked-list/)中删除一个节点。
+**方法**：这个想法是一个遍历循环单链表的节点，并得到质数节点的指针。 通过按照帖子中使用的方法删除这些节点：[从循环链表](https://www.geeksforgeeks.org/deletion-circular-linked-list/)中删除一个节点。
 
 以下是上述想法的实现：
 

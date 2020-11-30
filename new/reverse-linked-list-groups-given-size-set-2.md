@@ -1,4 +1,4 @@
-# 以给定大小的组反向链表 | 系列 2
+# 以给定大小的分组反转链表 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/reverse-linked-list-groups-given-size-set-2/](https://www.geeksforgeeks.org/reverse-linked-list-groups-given-size-set-2/)
 

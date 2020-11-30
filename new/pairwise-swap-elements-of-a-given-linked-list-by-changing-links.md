@@ -1,8 +1,8 @@
-# 通过更改链接
+# 通过更改链接成对交换链表元素
 
 > 原文：[https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list-by-changing-links/](https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list-by-changing-links/)
 
-成对链表的成对交换元素
+
 
 给定一个单链表，编写一个函数以成对交换元素。 例如，如果链表是`1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7`，则函数应将其更改为`2 -> 1 -> 4 -> 3 -> 6 -> 5  -> 7`，并且如果链表是`1 -> 2 -> 3 -> 4 -> 5 -> 6`，则该函数应将其更改为`2 -> 1 -> 4 -> 3 -> 6 -> 5`
 

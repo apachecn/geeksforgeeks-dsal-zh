@@ -1,4 +1,4 @@
-# 将给定大小的组中的双链表反向
+# 以给定大小的分组反转双链表
 
 > 原文：[https://www.geeksforgeeks.org/reverse-doubly-linked-list-groups-given-size/](https://www.geeksforgeeks.org/reverse-doubly-linked-list-groups-given-size/)
 

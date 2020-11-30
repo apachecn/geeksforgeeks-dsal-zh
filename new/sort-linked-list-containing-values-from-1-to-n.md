@@ -1,4 +1,4 @@
-# 排序的链表包含从 1 到`N`的值
+# 排序包含从 1 到`N`的值的链表
 
 > 原文：[https://www.geeksforgeeks.org/sort-linked-list-containing-values-from-1-to-n/](https://www.geeksforgeeks.org/sort-linked-list-containing-values-from-1-to-n/)
 

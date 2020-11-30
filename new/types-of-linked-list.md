@@ -6,7 +6,7 @@
 
 ### 链表的类型
 
-*   [**单链表**](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)：这是链表的最简单类型，其中每个节点都包含一些数据和一个指向相同数据类型的下一个节点的指针。 该节点包含指向下一个节点的指针，这意味着该节点存储序列中下一个节点的地址。 单个链表仅允许以一种方式遍历数据。 以下是相同的图片：
+*   [**单链表**](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)：这是链表的最简单类型，其中每个节点都包含一些数据和一个指向相同数据类型的下一个节点的指针。 该节点包含指向下一个节点的指针，这意味着该节点存储序列中下一个节点的地址。 单链表仅允许以一种方式遍历数据。 以下是相同的图片：
 
 ![](img/0d367952fa89396cdfc63909b9271cb7.png)
 

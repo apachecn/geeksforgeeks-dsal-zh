@@ -1,4 +1,4 @@
-# 使用`O(1)`空间中的下一个指针和随机指针克隆链表
+# 使用`O(1)`空间克隆带有下一个指针和随机指针的链表
 
 > 原文：[https://www.geeksforgeeks.org/clone-linked-list-next-random-pointer-o1-space/](https://www.geeksforgeeks.org/clone-linked-list-next-random-pointer-o1-space/)
 

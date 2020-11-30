@@ -1,8 +1,6 @@
-# 从未排序的双链表
+# 从未排序的双链表中删除重复项
 
 > 原文：[https://www.geeksforgeeks.org/remove-duplicates-unsorted-doubly-linked-list/](https://www.geeksforgeeks.org/remove-duplicates-unsorted-doubly-linked-list/)
-
-中删除重复项
 
 给定一个包含`n`个节点的未排序双链表。 问题是从给定列表中删除重复的节点。
 

@@ -1,4 +1,4 @@
-# 修改链表的内容-递归方法
+# 修改链表的内容 -- 递归方法
 
 > 原文：[https://www.geeksforgeeks.org/modify-contents-of-linked-list-recursive-approach/](https://www.geeksforgeeks.org/modify-contents-of-linked-list-recursive-approach/)
 

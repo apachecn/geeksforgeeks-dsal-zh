@@ -1,4 +1,4 @@
-# 链表的反向节点而不影响特殊字符
+# 反转链表节点而不影响特殊字符
 
 > 原文：[https://www.geeksforgeeks.org/reverse-nodes-of-a-linked-list-without-affecting-the-special-characters/](https://www.geeksforgeeks.org/reverse-nodes-of-a-linked-list-without-affecting-the-special-characters/)
 

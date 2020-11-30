@@ -1,4 +1,4 @@
-# 子列表搜索（在另一个列表中搜索链表）
+# 子列表搜索（在另一个链表中搜索链表）
 
 > 原文：[https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list/](https://www.geeksforgeeks.org/sublist-search-search-a-linked-list-in-another-list/)
 

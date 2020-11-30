@@ -1,8 +1,6 @@
-# 使用链表
+# 内存管理中使用链表的最佳拟合算法程序
 
 > 原文：[https://www.geeksforgeeks.org/program-for-best-fit-algorithm-in-memory-management-using-linked-list/](https://www.geeksforgeeks.org/program-for-best-fit-algorithm-in-memory-management-using-linked-list/)
-
-的内存管理中最佳拟合算法程序
 
 **用于内存管理的最佳拟合算法**：在分配过程中损失最小的内存分区是分配给该流程的最适合内存分区。
 
