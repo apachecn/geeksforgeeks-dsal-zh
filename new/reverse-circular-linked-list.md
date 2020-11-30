@@ -1,4 +1,4 @@
-# 反向循环链表
+# 反转循环链表
 
 > 原文：[https://www.geeksforgeeks.org/reverse-circular-linked-list/](https://www.geeksforgeeks.org/reverse-circular-linked-list/)
 

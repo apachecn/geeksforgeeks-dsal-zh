@@ -1,4 +1,4 @@
-# 编写函数以获取链表中的第`N`个节点
+# 编写函数来获取链表中的第`N`个节点
 
 > 原文：[https://www.geeksforgeeks.org/write-a-function-to-get-nth-node-in-a-linked-list/](https://www.geeksforgeeks.org/write-a-function-to-get-nth-node-in-a-linked-list/)
 

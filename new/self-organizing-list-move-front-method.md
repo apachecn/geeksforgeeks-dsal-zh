@@ -1,4 +1,4 @@
-# 自组织列表：转到最前面的方法
+# 自组织列表：移动到最前面的方法
 
 > 原文：[https://www.geeksforgeeks.org/self-organizing-list-move-front-method/](https://www.geeksforgeeks.org/self-organizing-list-move-front-method/)
 

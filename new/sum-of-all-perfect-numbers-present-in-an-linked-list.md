@@ -1,4 +1,4 @@
-# 链表中存在的所有完美数字的总和
+# 链表中存在的所有完美数的总和
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-all-perfect-numbers-present-in-an-linked-list/](https://www.geeksforgeeks.org/sum-of-all-perfect-numbers-present-in-an-linked-list/)
 

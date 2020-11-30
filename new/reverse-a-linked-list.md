@@ -1,4 +1,4 @@
-# 反向链表
+# 反转链表
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-linked-list/](https://www.geeksforgeeks.org/reverse-a-linked-list/)
 

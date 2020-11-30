@@ -1,4 +1,4 @@
-# 单链表的所有偶数和节点的和与乘积
+# 单链表的所有偶数和节点的总和与乘积
 
 > 原文：[https://www.geeksforgeeks.org/sum-and-product-of-all-even-digit-sum-nodes-of-a-singly-linked-list/](https://www.geeksforgeeks.org/sum-and-product-of-all-even-digit-sum-nodes-of-a-singly-linked-list/)
 

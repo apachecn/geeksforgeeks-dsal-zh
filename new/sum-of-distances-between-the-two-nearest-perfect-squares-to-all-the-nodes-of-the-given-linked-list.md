@@ -1,10 +1,10 @@
-# 两个最接近的完美平方到给定链表
+# 与给定链表所有节点最接近的两个完全平方之间的距离总和
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-distances-between-the-two-nearest-perfect-squares-to-all-the-nodes-of-the-given-linked-list/](https://www.geeksforgeeks.org/sum-of-distances-between-the-two-nearest-perfect-squares-to-all-the-nodes-of-the-given-linked-list/)
 
-的所有节点之间的距离总和
 
-给定一个链表，任务是为给定链表的所有节点找到两个最接近的完美平方之间的距离之和。
+
+给定一个链表，任务是为给定链表的所有节点找到两个最接近的完全平方之间的距离之和。
 
 **示例**：
 
@@ -12,7 +12,7 @@
 >
 > **输出**：15
 >
-> 对于 3：最接近的左侧完美平方为 1，最接近的右侧为 4，即`4 - 1 = 3`
+> 对于 3：最接近的左侧完全平方为 1，最接近的右侧为 4，即`4 - 1 = 3`
 >
 > 对于 15：`16 – 9 = 7`
 >
@@ -24,7 +24,7 @@
 >
 > **输出**：38
 
-**方法**：初始化`sum = 0`，对于每个节点，如果当前节点的值本身是一个理想平方，则左，右最接近的理想平方将成为该值本身，而距离为 0。否则，找到左和右最接近的完美平方，例如`leftPS`和`rightPS`，然后更新`sum = sum + (rightPS – leftPS)`。
+**方法**：初始化`sum = 0`，对于每个节点，如果当前节点的值本身是一个理想平方，则左，右最接近的理想平方将成为该值本身，而距离为 0。否则，找到左和右最接近的完全平方，例如`leftPS`和`rightPS`，然后更新`sum = sum + (rightPS – leftPS)`。
 
 下面是上述方法的实现：
 

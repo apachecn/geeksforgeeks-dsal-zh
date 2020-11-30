@@ -1,8 +1,6 @@
-# 从排序的链表
+# 从排序的链表中删除所有出现的重复项
 
 > 原文：[https://www.geeksforgeeks.org/remove-occurrences-duplicates-sorted-linked-list/](https://www.geeksforgeeks.org/remove-occurrences-duplicates-sorted-linked-list/)
-
-中删除所有出现的重复项
 
 给定一个已排序的链表，删除所有具有重复编号（所有出现次数）的节点，仅保留在原始列表中仅出现一次的编号。
 

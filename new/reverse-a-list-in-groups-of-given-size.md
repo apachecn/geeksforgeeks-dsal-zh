@@ -1,4 +1,4 @@
-# 以给定大小的组反向链表 | 系列 1
+# 以给定大小的分组反转链表 | 系列 1
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)
 

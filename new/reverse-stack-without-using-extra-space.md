@@ -1,4 +1,4 @@
-# 反转栈，而无需在`O(n)`中使用多余的空间
+# 反转栈而无需使用`O(n)`中多余的空间
 
 > 原文：[https://www.geeksforgeeks.org/reverse-stack-without-using-extra-space/](https://www.geeksforgeeks.org/reverse-stack-without-using-extra-space/)
 

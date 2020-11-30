@@ -1,4 +1,4 @@
-# 重新排列链表以替换第一个和最后一个元素
+# 重新排列链表来交替排列第一个和最后一个元素
 
 > 原文：[https://www.geeksforgeeks.org/rearrange-linked-list-alternate-first-last-element/](https://www.geeksforgeeks.org/rearrange-linked-list-alternate-first-last-element/)
 

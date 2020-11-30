@@ -1,4 +1,4 @@
-# 添加两个由链表表示的数字 | 系列 2
+# 相加两个由链表表示的数字 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-two-linked-lists/](https://www.geeksforgeeks.org/sum-of-two-linked-lists/)
 

@@ -1,4 +1,4 @@
-# 单链表的递归选择排序| 交换节点链接
+# 单链表的递归选择排序 | 交换节点链接
 
 > 原文：[https://www.geeksforgeeks.org/recursive-selection-sort-singly-linked-list-swapping-node-links/](https://www.geeksforgeeks.org/recursive-selection-sort-singly-linked-list-swapping-node-links/)
 

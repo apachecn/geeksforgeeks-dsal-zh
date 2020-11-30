@@ -1,4 +1,4 @@
-# 反向循环双链表
+# 反转循环双链表
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-doubly-circular-linked-list/](https://www.geeksforgeeks.org/reverse-a-doubly-circular-linked-list/)
 

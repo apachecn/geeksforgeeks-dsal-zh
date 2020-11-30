@@ -1,4 +1,4 @@
-# 队列–链表实现
+# 队列的链表实现
 
 > 原文：[https://www.geeksforgeeks.org/queue-linked-list-implementation/](https://www.geeksforgeeks.org/queue-linked-list-implementation/)
 

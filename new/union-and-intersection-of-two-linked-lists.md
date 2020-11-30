@@ -1,4 +1,4 @@
-# 两个链表的并集和交点
+# 两个链表的并集和交集
 
 > 原文：[https://www.geeksforgeeks.org/union-and-intersection-of-two-linked-lists/](https://www.geeksforgeeks.org/union-and-intersection-of-two-linked-lists/)
 

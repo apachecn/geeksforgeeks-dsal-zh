@@ -1,4 +1,4 @@
-# 链表中所有小于`K`的节点的总和和积
+# 链表中所有小于`K`的节点的总和与乘积
 
 > 原文：[https://www.geeksforgeeks.org/sum-and-product-of-all-the-nodes-which-are-less-than-k-in-the-linked-list/](https://www.geeksforgeeks.org/sum-and-product-of-all-the-nodes-which-are-less-than-k-in-the-linked-list/)
 

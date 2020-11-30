@@ -1,4 +1,4 @@
-# 重新排列链表，以便所有偶数和奇数定位的节点都在一起
+# 重新排列链表，以便所有偶数和奇数位置的节点都在一起
 
 > 原文：[https://www.geeksforgeeks.org/rearrange-a-linked-list-such-that-all-even-and-odd-positioned-nodes-are-together/](https://www.geeksforgeeks.org/rearrange-a-linked-list-such-that-all-even-and-odd-positioned-nodes-are-together/)
 

@@ -1,4 +1,4 @@
-# XOR 链表–内存有效的双链表 | 系列 2
+# XOR 链表 – 内存有效的双链表 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
 

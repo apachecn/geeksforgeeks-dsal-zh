@@ -1,4 +1,4 @@
-# 循环链表中偶数和的节点的总和和乘积
+# 循环链表中偶数和节点的总和和乘积
 
 > 原文：[https://www.geeksforgeeks.org/sum-and-product-of-nodes-with-value-as-even-digit-sum-in-circular-linked-list/](https://www.geeksforgeeks.org/sum-and-product-of-nodes-with-value-as-even-digit-sum-in-circular-linked-list/)
 

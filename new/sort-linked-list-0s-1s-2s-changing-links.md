@@ -1,4 +1,4 @@
-# 通过更改链接对 0、1、2 和 2 的链表排序
+# 通过更改链接对 0、1 和 2 的链表排序
 
 > 原文：[https://www.geeksforgeeks.org/sort-linked-list-0s-1s-2s-changing-links/](https://www.geeksforgeeks.org/sort-linked-list-0s-1s-2s-changing-links/)
 
