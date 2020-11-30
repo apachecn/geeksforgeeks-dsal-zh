@@ -1,4 +1,4 @@
-# 在链表中找到第二大元素
+# 在链表中查找第二大元素
 
 > 原文：[https://www.geeksforgeeks.org/find-the-second-largest-element-in-a-linked-list/](https://www.geeksforgeeks.org/find-the-second-largest-element-in-a-linked-list/)
 

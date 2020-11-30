@@ -1,4 +1,4 @@
-# 在双链表中查找具有给定总和的对
+# 在双链表中查找具有给定总和的偶对
 
 > 原文：[https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)
 

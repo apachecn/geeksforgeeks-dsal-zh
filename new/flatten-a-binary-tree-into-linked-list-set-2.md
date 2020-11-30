@@ -1,8 +1,8 @@
-# 将二叉树展平为链表 | 系列 2
+# 将二叉树展开为链表 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list-set-2/](https://www.geeksforgeeks.org/flatten-a-binary-tree-into-linked-list-set-2/)
 
-给定一个二叉树，将其展平为一个链表。 展平后，每个节点的左侧应指向`NULL`，右侧应按级别顺序包含下一个节点。
+给定一个二叉树，将其展开为一个链表。 展开后，每个节点的左侧应指向`NULL`，右侧应按级别顺序包含下一个节点。
 
 **示例**：
 

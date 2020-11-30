@@ -1,8 +1,6 @@
-# 在两个单链表
+# 在两个单链表中查找公共节点
 
 > 原文：[https://www.geeksforgeeks.org/find-the-common-nodes-in-two-singly-linked-list/](https://www.geeksforgeeks.org/find-the-common-nodes-in-two-singly-linked-list/)
-
-中找到公共节点
 
 给定两个链表，任务是在两个单链表中查找公共节点的数量。
 

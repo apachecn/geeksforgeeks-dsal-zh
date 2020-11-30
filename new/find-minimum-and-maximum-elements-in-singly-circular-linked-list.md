@@ -1,8 +1,6 @@
-# 在单个循环链表
+# 在循环单链表中查找最小和最大元素
 
 > 原文：[https://www.geeksforgeeks.org/find-minimum-and-maximum-elements-in-singly-circular-linked-list/](https://www.geeksforgeeks.org/find-minimum-and-maximum-elements-in-singly-circular-linked-list/)
-
-中查找最小和最大元素
 
 给定`N`个节点的循环单链表。 任务是在循环链表中找到最小和最大的元素。
 

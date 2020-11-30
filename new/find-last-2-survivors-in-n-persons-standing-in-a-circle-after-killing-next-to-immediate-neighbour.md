@@ -1,4 +1,4 @@
-# 在紧邻邻居的邻居中被杀后，在围成一个圈的`N`人中找到最后 2 个幸存者
+# 杀掉邻居的邻居后，在围成一个圈的`N`人中找到最后 2 个幸存者
 
 > 原文：[https://www.geeksforgeeks.org/find-last-2-survivors-in-n-persons-standing-in-a-circle-after-killing-next-to-immediate-neighbour/](https://www.geeksforgeeks.org/find-last-2-survivors-in-n-persons-standing-in-a-circle-after-killing-next-to-immediate-neighbour/)
 

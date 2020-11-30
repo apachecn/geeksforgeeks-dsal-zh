@@ -1,4 +1,4 @@
-# 找出两个链表的交点而没有找到长度
+# 不查找长度的情况下查找两个链表的交点
 
 > 原文：[https://www.geeksforgeeks.org/find-intersection-point-of-two-linked-lists-without-finding-the-length/](https://www.geeksforgeeks.org/find-intersection-point-of-two-linked-lists-without-finding-the-length/)
 

@@ -1,4 +1,4 @@
-# 展平链表 | 系列 2
+# 展开链表 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/flattening-a-linked-list-set-2/](https://www.geeksforgeeks.org/flattening-a-linked-list-set-2/)
 
