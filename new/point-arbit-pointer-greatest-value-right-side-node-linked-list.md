@@ -1,8 +1,8 @@
-# 将仲裁指针指向链表中的最大值右侧节点
+# 将任意指针指向链表中右侧的最大值节点
 
 > 原文：[https://www.geeksforgeeks.org/point-arbit-pointer-greatest-value-right-side-node-linked-list/](https://www.geeksforgeeks.org/point-arbit-pointer-greatest-value-right-side-node-linked-list/)
 
-给定单链表，每个节点都有一个额外的“任意”指针，该指针当前指向`NULL`。 我们需要在右侧链表中使“任意”指针指向最大值节点。
+给定单链表，每个节点都有一个额外的“任意”指针，该指针当前指向`NULL`。 我们需要使“任意”指针指向链表中右侧的最大值节点。
 
 ![listwithArbit1](img/e37b455dc722e9b607243f9f28641891.png)
 

@@ -1,4 +1,4 @@
-# 将表示为链表的两个数字乘以第三个列表
+# 将表示为链表的两个数字相乘作为第三个列表
 
 > 原文：[https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists-third-list/](https://www.geeksforgeeks.org/multiply-two-numbers-represented-linked-lists-third-list/)
 

@@ -1,4 +1,4 @@
-# 乘以两个多项式
+# 相乘两个多项式
 
 > 原文：[https://www.geeksforgeeks.org/multiply-two-polynomials-2/](https://www.geeksforgeeks.org/multiply-two-polynomials-2/)
 

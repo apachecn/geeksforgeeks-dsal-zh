@@ -1,8 +1,8 @@
-# 给定链表
+# 成对交换给定链表的元素
 
 > 原文：[https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list/](https://www.geeksforgeeks.org/pairwise-swap-elements-of-a-given-linked-list/)
 
-的成对交换元素
+
 
 给定一个单链表，编写一个函数以成对交换元素。
 
