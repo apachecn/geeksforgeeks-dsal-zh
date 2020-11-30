@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/insertion-in-a-sorted-circular-linked-list-when-a-random-pointer-is-given/](https://www.geeksforgeeks.org/insertion-in-a-sorted-circular-linked-list-when-a-random-pointer-is-given/)
 
-给定整数数组`arr[]`和指向圆形排序链表（最初为空）的随机节点的指针，任务是在循环链表中插入`arr[]`的所有元素。
+给定整数数组`arr[]`和指向循环排序链表（最初为空）的随机节点的指针，任务是在循环链表中插入`arr[]`的所有元素。
 
 **示例**：
 
@@ -14,7 +14,7 @@
 >
 > **输出**：`2 6 45 78200`
 
-**方法**：我们得到了一个指向圆形链表中节点的随机指针，我们必须找到圆形链表的头，才能将该节点插入已排序的链表中。
+**方法**：我们得到了一个指向循环链表中节点的随机指针，我们必须找到循环链表的头，才能将该节点插入已排序的链表中。
 
 这篇文章介绍了当给出`head`时插入到排序的链表中。
 

@@ -1,4 +1,4 @@
-# 链表| 集合 3（删除节点）
+# 链表 | 系列 3（删除节点）
 
 > 原文：[https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)
 

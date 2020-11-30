@@ -1,4 +1,4 @@
-# 高效内存双链表
+# 内存高效的双链表
 
 > 原文：[https://www.geeksforgeeks.org/memory-efficient-doubly-linked-list/](https://www.geeksforgeeks.org/memory-efficient-doubly-linked-list/)
 

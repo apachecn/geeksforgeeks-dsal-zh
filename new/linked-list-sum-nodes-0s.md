@@ -1,4 +1,4 @@
-# 0 之间的链表的节点总和
+# 链表的 0 之间的节点总和
 
 > 原文：[https://www.geeksforgeeks.org/linked-list-sum-nodes-0s/](https://www.geeksforgeeks.org/linked-list-sum-nodes-0s/)
 

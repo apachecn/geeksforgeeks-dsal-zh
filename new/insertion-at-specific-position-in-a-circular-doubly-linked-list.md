@@ -1,8 +1,6 @@
-# 在圆形双链表
+# 在循环双链表中的特定位置插入
 
 > 原文：[https://www.geeksforgeeks.org/insertion-at-specific-position-in-a-circular-doubly-linked-list/](https://www.geeksforgeeks.org/insertion-at-specific-position-in-a-circular-doubly-linked-list/)
-
-中的特定位置插入
 
 **前提条件**：
 

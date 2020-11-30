@@ -1,4 +1,4 @@
-# 从末尾的第`n`个节点后插入一个节点
+# 在末尾的第`n`个节点后插入一个节点
 
 > 原文：[https://www.geeksforgeeks.org/insert-node-n-th-node-end/](https://www.geeksforgeeks.org/insert-node-n-th-node-end/)
 
