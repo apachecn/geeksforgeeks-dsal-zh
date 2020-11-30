@@ -1,4 +1,4 @@
-# 从单链表中删除所有非主要节点
+# 从单链表中删除所有非质数节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-non-prime-nodes-from-a-singly-linked-list/](https://www.geeksforgeeks.org/delete-all-non-prime-nodes-from-a-singly-linked-list/)
 

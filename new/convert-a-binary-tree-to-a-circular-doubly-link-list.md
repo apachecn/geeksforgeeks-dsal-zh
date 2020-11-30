@@ -1,4 +1,4 @@
-# 将二叉树转换为圆形双链表
+# 将二叉树转换为循环双链表
 
 > 原文：[https://www.geeksforgeeks.org/convert-a-binary-tree-to-a-circular-doubly-link-list/](https://www.geeksforgeeks.org/convert-a-binary-tree-to-a-circular-doubly-link-list/)
 
@@ -24,7 +24,7 @@
 
     1.  将右子树递归转换为循环双链表。 让转换后的列表为`rightList`。
 
-    1.  制作树根的圆形链表，使树的左右两边指向其自身。
+    1.  制作树根的循环链表，使树的左右两边指向其自身。
 
     1.  将`leftList`与单个根节点的列表连接在一起。
 

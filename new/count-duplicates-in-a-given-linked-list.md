@@ -1,8 +1,6 @@
-# 计算给定链表
+# 计算给定链表中的重复项
 
 > 原文：[https://www.geeksforgeeks.org/count-duplicates-in-a-given-linked-list/](https://www.geeksforgeeks.org/count-duplicates-in-a-given-linked-list/)
-
-中的重复项
 
 给定一个链表。 任务是计算链表中重复节点的数量。
 

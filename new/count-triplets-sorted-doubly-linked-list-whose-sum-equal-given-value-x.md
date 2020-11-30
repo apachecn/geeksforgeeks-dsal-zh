@@ -1,4 +1,4 @@
-# 计数一个排序的双链表中的三元组，其总数等于给定值`x`
+# 计算排序双链表中的三元组数量，其总和等于给定值`x`
 
 > 原文：[https://www.geeksforgeeks.org/count-triplets-sorted-doubly-linked-list-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-triplets-sorted-doubly-linked-list-whose-sum-equal-given-value-x/)
 

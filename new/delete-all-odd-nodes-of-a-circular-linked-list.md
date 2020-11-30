@@ -1,8 +1,6 @@
-# 删除循环链表
+# 删除循环链表的所有奇数节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-odd-nodes-of-a-circular-linked-list/](https://www.geeksforgeeks.org/delete-all-odd-nodes-of-a-circular-linked-list/)
-
-的所有奇数节点
 
 **先决条件**：[删除循环链表](https://www.geeksforgeeks.org/delete-all-the-even-nodes-of-a-circular-linked-list/)的所有偶数节点
 

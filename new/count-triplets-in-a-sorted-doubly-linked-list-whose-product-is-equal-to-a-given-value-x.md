@@ -1,4 +1,4 @@
-# 计算一个乘积等于给定值`x`的双链表中的三胞胎
+# 计算双链表中的乘积等于给定值`x`的三元组数量
 
 > 原文：[https://www.geeksforgeeks.org/count-triplets-in-a-sorted-doubly-linked-list-whose-product-is-equal-to-a-given-value-x/](https://www.geeksforgeeks.org/count-triplets-in-a-sorted-doubly-linked-list-whose-product-is-equal-to-a-given-value-x/)
 

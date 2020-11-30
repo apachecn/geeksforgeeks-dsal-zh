@@ -1,8 +1,6 @@
-# 删除循环链表
+# 删除循环链表的所有偶数节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-the-even-nodes-of-a-circular-linked-list/](https://www.geeksforgeeks.org/delete-all-the-even-nodes-of-a-circular-linked-list/)
-
-的所有偶数节点
 
 给定一个包含`N`个节点的循环单链表，任务是从列表中删除所有偶数节点。
 

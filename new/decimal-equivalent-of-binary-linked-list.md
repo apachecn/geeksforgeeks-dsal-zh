@@ -1,8 +1,6 @@
-# 二进制链表
+# 二进制链表的十进制等效项
 
 > 原文：[https://www.geeksforgeeks.org/decimal-equivalent-of-binary-linked-list/](https://www.geeksforgeeks.org/decimal-equivalent-of-binary-linked-list/)
-
-的十进制等效项
 
 给定一个 0 和 1 的单链表，可以找到其十进制等效项。
 

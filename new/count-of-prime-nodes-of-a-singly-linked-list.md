@@ -1,8 +1,6 @@
-# 单链表
+# 单链表的质数节点数
 
 > 原文：[https://www.geeksforgeeks.org/count-of-prime-nodes-of-a-singly-linked-list/](https://www.geeksforgeeks.org/count-of-prime-nodes-of-a-singly-linked-list/)
-
-的主要节点数
 
 给定一个包含`N`个节点的单链表，任务是查找素数的总数。
 
