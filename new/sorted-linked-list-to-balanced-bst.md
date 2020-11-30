@@ -2,11 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/sorted-linked-list-to-balanced-bst/](https://www.geeksforgeeks.org/sorted-linked-list-to-balanced-bst/)
 
-<<<<<<< HEAD
-给定一个单链列表，其中的数据成员按升序排序。 构造一个[平衡二分搜索树](https://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced/)，该树的数据成员与给定的链表相同。
-=======
 给定一个单链表，其中的数据成员按升序排序。 构造一个[平衡二叉搜索树](https://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced/)，该树的数据成员与给定的链表相同。
->>>>>>> 67ea03ac9ece65f623a6b1a9a1311be605210497
 
  **示例**：
 

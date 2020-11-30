@@ -17,11 +17,7 @@ Output : "ap"
 
 ```
 
-<<<<<<< HEAD
-**先前的方法**：[逐字匹配](https://www.geeksforgeeks.org/longest-common-prefix-set-1-word-by-word-matching/)，[逐字符匹配](https://www.geeksforgeeks.org/longest-common-prefix-set-2-character-by-character-matching/)，[分而治之](https://www.geeksforgeeks.org/longest-common-prefix-set-3-divide-and-conquer/)，[二分搜索](https://www.geeksforgeeks.org/longest-common-prefix-set-4-binary-search/)， [使用 Trie 数据结构](https://www.geeksforgeeks.org/longest-common-prefix-set-5-using-trie/)
-=======
 **先前的方法**：[逐字匹配](https://www.geeksforgeeks.org/longest-common-prefix-set-1-word-by-word-matching/)，[逐字符匹配](https://www.geeksforgeeks.org/longest-common-prefix-set-2-character-by-character-matching/)，[分治](https://www.geeksforgeeks.org/longest-common-prefix-set-3-divide-and-conquer/)，[二分搜索](https://www.geeksforgeeks.org/longest-common-prefix-set-4-binary-search/)， [使用 Trie 数据结构](https://www.geeksforgeeks.org/longest-common-prefix-set-5-using-trie/)
->>>>>>> 67ea03ac9ece65f623a6b1a9a1311be605210497
 
 以下是使用**链表**解决上述问题的算法。
 

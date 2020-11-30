@@ -2,17 +2,9 @@
 
 > 原文：[https://www.geeksforgeeks.org/binary-search-on-singly-linked-list/](https://www.geeksforgeeks.org/binary-search-on-singly-linked-list/)
 
-<<<<<<< HEAD
-给定一个单链表和一个密钥，请使用[二分搜索](https://www.geeksforgeeks.org/binary-search/)方法查找密钥。
-
-为了执行基于分而治之算法的二分搜索，确定中间元素非常重要。 对于数组，二分搜索通常是快速而有效的，因为访问两个给定索引之间的中间索引既简单又快速（时间复杂度`O(1)`）。 但是，单链表的内存分配是动态且不连续的，这使得查找中间元素变得困难。 一种方法可能是使用[跳表](https://www.geeksforgeeks.org/skip-list/)，一种可能是使用一个指针遍历链表。
-=======
-进行二分搜索
-
 给定一个单链表和一个密钥，请使用[二分搜索](https://www.geeksforgeeks.org/binary-search/)方法查找密钥。
 
 为了执行基于分治算法的二分搜索，确定中间元素非常重要。 对于数组，二分搜索通常是快速而有效的，因为访问两个给定索引之间的中间索引既简单又快速（时间复杂度`O(1)`）。 但是，单链表的内存分配是动态且不连续的，这使得查找中间元素变得困难。 一种方法可能是使用[跳表](https://www.geeksforgeeks.org/skip-list/)，一种可能是使用一个指针遍历链表。
->>>>>>> 67ea03ac9ece65f623a6b1a9a1311be605210497
 
 **前提**：[打印链表的中间](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)。
 

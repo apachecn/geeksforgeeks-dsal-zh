@@ -52,11 +52,7 @@
     3\. Pointer to the right child
     ```
 
-<<<<<<< HEAD
-6.  [**二分搜索树**](http://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) ：在二分搜索树中是具有以下附加属性的二进制树：
-=======
 6.  [**二叉搜索树**](http://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/) ：在二叉搜索树中是具有以下附加属性的二进制树：
->>>>>>> 67ea03ac9ece65f623a6b1a9a1311be605210497
 
     *   节点的左子树仅包含键小于节点键的节点。
 
