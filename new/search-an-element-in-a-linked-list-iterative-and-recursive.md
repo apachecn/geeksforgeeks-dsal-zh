@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/search-an-element-in-a-linked-list-iterative-and-recursive/](https://www.geeksforgeeks.org/search-an-element-in-a-linked-list-iterative-and-recursive/)
 
-编写一个函数，在给定的单链列表中搜索给定的键`x`。 如果`x`在链表中，则该函数应返回`true`，否则返回`false`。
+编写一个函数，在给定的单链表中搜索给定的键`x`。 如果`x`在链表中，则该函数应返回`true`，否则返回`false`。
 
 ```
    bool search(Node *head, int x) 

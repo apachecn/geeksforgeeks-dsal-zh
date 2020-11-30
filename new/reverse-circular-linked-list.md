@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/reverse-circular-linked-list/](https://www.geeksforgeeks.org/reverse-circular-linked-list/)
 
-给定大小为 **n** 的循环链表。 问题是通过更改节点之间的链接来反转给定的循环链表。
+给定大小为`n`的循环链表。 问题是通过更改节点之间的链接来反转给定的循环链表。
 
 **示例**：
 

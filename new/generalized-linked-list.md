@@ -52,13 +52,13 @@ typedef struct node {
 
 ![](img/80c740a0bdf2dee04b8bbb9f55d2e20d.png)
 
-*   标志= 0 表示*变量*存在
+*   标志为 0 表示*变量*存在
 
-*   标志= 1 表示存在*下指针*
+*   标志为 1 表示存在*下指针*
 
-*   标志= 2 表示存在*系数*和*指数*
+*   标志为 2 表示存在*系数*和*指数*
 
-***例如**：*
+**例如**：
 
 9x <sup>5</sup> + 7xy <sup>4</sup> + 10xz
 
@@ -72,23 +72,21 @@ typedef struct node {
 
 ![](img/d8d96767a4428a23cf730df5298228aa.png)
 
-类似地，在上图中，节点 temp1 可以读取为 x <sup>4</sup> 。
+类似地，在上图中，节点`temp1`可以读取为`x ^ 4`。
 
 *   标志字段为 1 表示向下指针存在
 
-*   temp2 = y
+*   `temp2 = y`
 
-*   temp3 =系数= 7
+*   `temp3 = 7`
 
-*   指数= 1
+*   指数为 1
 
-*   flag = 2 表示节点包含系数和指数值。
+*   标志为 2 表示节点包含系数和指数值。
 
-*   temp2 连接到 temp3，这表示 7y <sub>1</sub> ，而 temp2 也连接到 temp1，表示
+*   `temp2`连接到`temp3`，这表示`7y ^ 1`，而`temp2`也连接到`temp1`，表示`temp1 x temp2`
 
-*   temp1 x temp2
-
-*   x <sup>4</sup> x 7y <sup>1</sup> = 7x <sup>4</sup> y <sup>1</sup> 值由上图表示
+*   `x^4 x 7y^1 = 7x^4 y^1`值由上图表示
 
 
 

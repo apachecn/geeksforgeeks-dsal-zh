@@ -17,7 +17,7 @@ Output : 8 2 12 9
 
 [先前的文章](https://www.geeksforgeeks.org/print-the-last-k-nodes-of-the-linked-list-in-reverse-order/)中讨论的解决方案使用递归方法。 下面的文章讨论了解决上述问题的三种迭代方法。
 
-**方法 1**：的想法是使用栈数据结构。 推送所有链接的列表节点数据值以堆叠并弹出前`K`个元素并打印它们。
+**方法 1**：想法是使用栈数据结构。 推送所有链接的列表节点数据值以堆叠并弹出前`K`个元素并打印它们。
 
 下面是上述方法的实现：
 
@@ -333,7 +333,7 @@ public static void Main(String[] args)
 
 **辅助空间**：`O(n)`
 
-**上述方法的辅助空间可以减小为`O(k)`**。 这个想法是使用两个指针。 将第一个指针移到列表的开头，然后将第二个指针移到第`k`个节点。 然后使用本文讨论的方法从头开始查找第`k`个节点：[从链表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾查找第`k`个节点。 从末端找到第`k`个节点后，推入栈中的所有其余节点。 从栈中逐一弹出所有元素并进行打印。
+**上述方法的辅助空间可以减小为`O(k)`**。 这个想法是使用两个指针。 将第一个指针移到列表的开头，然后将第二个指针移到第`k`个节点。 然后使用本文讨论的方法从头开始查找第`k`个节点：从[链表](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)的末尾查找第`k`个节点。 从末端找到第`k`个节点后，推入栈中的所有其余节点。 从栈中逐一弹出所有元素并进行打印。
 
 以下是上述有效方法的实现：
 
@@ -964,7 +964,7 @@ public static void Main(String[] args) 
 
 **辅助空间**：`O(n)`
 
-**方法 3**：的想法是首先迭代地反向链表，如以下文章所述：[反向链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)。 反转后，打印反转列表的前`k`个节点。 打印后，通过再次反转列表来恢复列表。
+**方法 3**：想法是首先迭代地反向链表，如以下文章所述：[反转链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)。 反转后，打印反转列表的前`k`个节点。 打印后，通过再次反转列表来恢复列表。
 
 下面是上述方法的实现：
 

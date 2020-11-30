@@ -1,32 +1,30 @@
-# 链表
+# 链表中素数的阶乘总和
 
 > 原文：[https://www.geeksforgeeks.org/sum-of-factorials-of-prime-numbers-in-a-linked-list/](https://www.geeksforgeeks.org/sum-of-factorials-of-prime-numbers-in-a-linked-list/)
 
-中素数阶乘的和
-
-给定 **N** 个整数的[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是找到列表中每个素数元素的阶乘和。
+给定`N`个整数的[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，任务是找到列表中每个素数元素的阶乘和。
 
 **示例**：
 
-> **输入**：L1 = 4-> 6-> 2-> 12-> 3
+> **输入**：`L1 = 4 -> 6 -> 2 -> 12 -> 3`
 > **输出**：8
-> **说明 **：
-> 质数是 2 和 3，因此是 2！ + 3！ = 2 + 6 = 8。
+> **说明**：
+> 质数是 2 和 3，因此`2! + 3! = 2 + 6 = 8`。
 > 
-> **输入**：L1 = 7-> 4-> 5
+> **输入**：`L1 = 7 -> 4 -> 5`
 > **输出**：5160
 > **说明**：
-> 质数是 7 和 5，因此是 7！ + 5！ = 5160。
+> 质数是 7 和 5，因此是`7! + 5! = 5160`。
 
 **方法**：要解决上述问题，请执行以下步骤：
 
-*   实现 [N 的阶乘](https://www.geeksforgeeks.org/program-for-factorial-of-a-number/)的函数 **factorial（n）**。
+*   实现[`N`的阶乘](https://www.geeksforgeeks.org/program-for-factorial-of-a-number/)的函数`factorial(n)`。
 
-*   初始化变量 **sum = 0** 。 现在，遍历给定列表，并为每个节点检查节点是否为[素数](https://www.geeksforgeeks.org/prime-numbers/)。
+*   初始化变量`sum = 0`。 现在，遍历给定列表，并为每个节点检查节点是否为[素数](https://www.geeksforgeeks.org/prime-numbers/)。
 
-*   如果节点是素数，则更新 **sum = sum + sumial（node）**，否则将节点移至下一个。
+*   如果节点是素数，则更新`sum = sum + sumial(node)`，否则将节点移至下一个。
 
-*   最后打印计算出的**和**。
+*   最后打印计算出的`sum`。
 
 下面是上述方法的实现：
 

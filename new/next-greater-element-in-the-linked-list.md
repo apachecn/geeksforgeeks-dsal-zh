@@ -311,7 +311,7 @@ public class linkedList
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 3 3 5 5 0

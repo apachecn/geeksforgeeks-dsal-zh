@@ -1,4 +1,4 @@
-# 仅给出一个指向要在单链列表中删除的节点的指针，如何删除它？
+# 仅给出一个指向要在单链表中删除的节点的指针，如何删除它？
 
 > 原文：[https://www.geeksforgeeks.org/in-a-linked-list-given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/](https://www.geeksforgeeks.org/in-a-linked-list-given-only-a-pointer-to-a-node-to-be-deleted-in-a-singly-linked-list-how-do-you-delete-it/)
 
@@ -401,7 +401,7 @@ public class LinkedList {
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Before deleting 
@@ -412,5 +412,5 @@ After deleting
 
 为了使该解决方案有效，我们可以将末端节点标记为虚拟节点。 但是使用此功能的程序/功能也应进行修改。
 
-对于双向链表，请尝试解决此问题。
+对于双链表，请尝试解决此问题。
 

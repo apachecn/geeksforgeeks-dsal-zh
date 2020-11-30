@@ -420,7 +420,7 @@ Product polynomial is
 
 **我们可以做得更好吗？**
 
-有一些方法可以比`O(N ^ 2)`时间更快地进行乘法。 这些方法主要基于[分而治之](https://www.geeksforgeeks.org/divide-and-conquer-set-1-find-closest-pair-of-points/)。 以下是一种简单的方法，该方法将给定的多项式（次数为`n`）分为两个多项式，一个包含较低次项（小于`n / 2`），另一个包含较高次项（大于或等于`n / 2`）
+有一些方法可以比`O(N ^ 2)`时间更快地进行乘法。 这些方法主要基于[分治](https://www.geeksforgeeks.org/divide-and-conquer-set-1-find-closest-pair-of-points/)。 以下是一种简单的方法，该方法将给定的多项式（次数为`n`）分为两个多项式，一个包含较低次项（小于`n / 2`），另一个包含较高次项（大于或等于`n / 2`）
 
 ```
 Let the two given polynomials be A and B.  
@@ -442,9 +442,9 @@ A * B  = (A0 + A1*xn/2) * (B0 + B1*xn/2)
 
 想法是将乘法次数减少到 3，并使递归为`T(n) = 3T(n / 2) + O(n)`
 
-***如何减少乘法次数？***
+**如何减少乘法次数？**
 
-这需要一点技巧，类似于 [Strassen 的矩阵乘法。](https://www.geeksforgeeks.org/strassens-matrix-multiplication/) 我们进行以下 3 个乘法。
+这需要一点技巧，类似于 [Strassen 的矩阵乘法](https://www.geeksforgeeks.org/strassens-matrix-multiplication/)。我们进行以下 3 个乘法。
 
 ```
 X = (A0 + A1)*(B0 + B1) // First Multiplication
@@ -456,7 +456,7 @@ A1*B0)xn/2 + A1*B1*xn can obtained using below.
 A0B1 + A1B0 = X - Y - Z  
 ```
 
-***深入说明***
+**深入说明**
 
 常规多项式乘法使用 4 个系数乘法：
 

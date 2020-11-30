@@ -20,7 +20,7 @@
 >
 > ![](img/787020686d40d89902c5e489a8572ccb.png)
 >
-> **输出**：错误
+> **输出**：`False`
 >
 > **说明**：
 >
@@ -32,7 +32,7 @@
 
 *   [将给定的二叉树转换为双链表](https://www.geeksforgeeks.org/in-place-convert-a-given-binary-tree-to-doubly-linked-list/)。
 
-*   这将问题减少到[。检查字符的双向链表是否是回文](https://www.geeksforgeeks.org/check-doubly-linked-list-characters-palindrome-not/)。
+*   这将问题归约到[检查字符的双链表是否是回文](https://www.geeksforgeeks.org/check-doubly-linked-list-characters-palindrome-not/)。
 
 下面是上述方法的实现：
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/select-a-random-node-from-a-singly-linked-list/](https://www.geeksforgeeks.org/select-a-random-node-from-a-singly-linked-list/)
 
-给定一个单链列表，请从链列表中选择一个随机节点（如果列表中有`N`个节点，则选择一个节点的概率应为`1 / N`）。 您将获得一个随机数生成器。
+给定一个单链表，请从链列表中选择一个随机节点（如果列表中有`N`个节点，则选择一个节点的概率应为`1 / N`）。 您将获得一个随机数生成器。
 
 以下是一个简单的解决方案
 
@@ -25,9 +25,9 @@ i = 2, probability of selecting second node =
 
 上述解决方案需要两次遍历链表。
 
-**如何选择只允许一个遍历的随机节点？**
+**如何在只允许一次遍历的情况下选择随机节点？**
 
-这个想法是使用[储层采样](https://www.geeksforgeeks.org/reservoir-sampling/)。 以下是步骤。 这是[储层采样](https://www.geeksforgeeks.org/reservoir-sampling/)的简单版本，因为我们只需要选择一个键即可，而不是`k`个键。
+这个想法是使用[分层采样](https://www.geeksforgeeks.org/reservoir-sampling/)。 以下是步骤。 这是[分层采样](https://www.geeksforgeeks.org/reservoir-sampling/)的简单版本，因为我们只需要选择一个键即可，而不是`k`个键。
 
 ```
 (1) Initialize result as first node

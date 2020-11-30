@@ -1,14 +1,14 @@
-# 将给定大小的组中的双向链表反向
+# 将给定大小的组中的双链表反向
 
 > 原文：[https://www.geeksforgeeks.org/reverse-doubly-linked-list-groups-given-size/](https://www.geeksforgeeks.org/reverse-doubly-linked-list-groups-given-size/)
 
-给定一个包含`n`个节点的双向链表。 问题是要反转列表中的每组`k`个节点。
+给定一个包含`n`个节点的双链表。 问题是要反转列表中的每组`k`个节点。
 
 示例：
 
 ![](img/f94b7d97202151446280399d423a7126.png)
 
-**先决条件**：[反向双向链表 | 系列 2](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2/)。
+**先决条件**：[反向双链表 | 系列 2](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2/)。
 
 **方法**：创建一个递归函数，例如`reverse(head, k)`。 该功能接收每组`k`节点的头或第一个节点。 通过应用[系列 2](https://www.geeksforgeeks.org/reverse-doubly-linked-list-set-2/) 中讨论的方法，可以反转一组`k`个节点。反转一组`k`个节点后，该功能检查列表中是否存在下一组节点。 如果组存在，则使用下一个组的第一个节点对其自身进行递归调用，并使用该组的下一个和上一个链接进行必要的调整。 最后，它返回反转组的新头节点。
 

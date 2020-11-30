@@ -12,11 +12,11 @@
 
 可以使用排序将时间复杂度降低到`O(n * n)`。 以下是详细步骤。
 
-1.  以升序对列表`b`进行排序，以降序对列表`c`进行排序。
+1.  以升序对列表`b`排序，以降序对列表`c`排序。
 
-2.  对`b`和`c`进行排序后，一个接一个地从列表`a`中选择一个元素，并同时遍历`b`和`c`来找到该对。 请参见以下代码中的`isSumSorted()`。 这个想法类似于[三和问题](http://en.wikipedia.org/wiki/3SUM)的二次算法。
+2.  对`b`和`c`排序后，一个接一个地从列表`a`中选择一个元素，并同时遍历`b`和`c`来找到该对。 请参见以下代码中的`isSumSorted()`。 这个想法类似于[三和问题](http://en.wikipedia.org/wiki/3SUM)的二次算法。
 
-以下代码仅实现步骤 2。 通过在此处中讨论的合并排序代码，可以轻松地为未排序列表修改解决方案。
+以下代码仅实现步骤 2。 通过在此处中讨论的归并排序代码，可以轻松地为未排序列表修改解决方案。
 
 ## C++
 
@@ -582,7 +582,7 @@ bool isSumSorted(LinkedList la, LinkedList lb, 
 Triplet Found: 15 2 8
 ```
 
-**时间复杂度**：链表`b`和`c`可以使用合并排序以`O(nLogn)`时间排序（请参阅[这里](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)）。 步骤 2 花费`O(n * n)`时间。 因此，总体时间复杂度为`O(nlogn) + O(nlogn) + O(n * n) = O(n * n)`。
+**时间复杂度**：链表`b`和`c`可以使用归并排序以`O(nLogn)`时间排序（请参阅[这里](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)）。 步骤 2 花费`O(n * n)`时间。 因此，总体时间复杂度为`O(nlogn) + O(nlogn) + O(n * n) = O(n * n)`。
 
 在这种方法中，链表`b`和`c`首先被排序，因此它们的原始顺序将丢失。 如果我们要保留`b`和`c`的原始顺序，则可以创建`b`和`c`的副本。
 

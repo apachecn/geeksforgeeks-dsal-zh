@@ -701,7 +701,7 @@ Modified Linked List:
 
 上面的代码是递归的，针对相同的问题编写一个迭代代码。 请参阅下面的解决方案。
 
-[迭代方法，用于删除线段链表中的中点](https://www.geeksforgeeks.org/iterative-approach-for-removing-middle-points-in-a-linked-list-of-line-segements/)
+[用于删除线段链表的中点的迭代方法](https://www.geeksforgeeks.org/iterative-approach-for-removing-middle-points-in-a-linked-list-of-line-segements/)
 
 本文由 Sanket Jain 撰写。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论
 

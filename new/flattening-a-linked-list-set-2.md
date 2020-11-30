@@ -4,7 +4,7 @@
 
 给定[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，其中每个节点代表一个链表，并包含两个其类型的指针：
 
-*   指向主列表中下一个节点的指针（在下面的代码中我们称其为“正确”指针）
+*   指向主列表中下一个节点的指针（在下面的代码中我们称其为“向右”指针）
 
 *   指向此节点位于头的链表的指针（在下面的代码中我们称之为“向下”指针）。
 
@@ -43,11 +43,11 @@ Output: 5->7->8->10->19->20->22->30->50
 
 ```
 
-在[之前的帖子](https://www.geeksforgeeks.org/flattening-a-linked-list/)中，我们必须对链表使用合并排序的`merge()`处理，以使链表平坦化。
+在[之前的帖子](https://www.geeksforgeeks.org/flattening-a-linked-list/)中，我们必须对链表使用归并排序的`merge()`处理，以使链表平坦化。
 
 在本文中，我们将使用](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)[堆](https://www.geeksforgeeks.org/heap-data-structure/)解决该问题。
 
-**方法**：的想法是观察从每个顶部节点向下方向连接的`N`个节点，但观察到所有向下的节点都是按排序的顺序。 因此，任务是按升序（或降序）对整个事物进行排序。
+**方法**：想法是观察从每个顶部节点向下方向连接的`N`个节点，但观察到所有向下的节点都是按排序的顺序。 因此，任务是按升序（或降序）对整个事物排序。
 
 1.  在[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)中将所有链表的开头推入向下列表。
 
@@ -381,7 +381,7 @@ class GFG {
 
 ```
 
-**Output**
+**输出**：
 
 ```
 5 7 8 10 19 20 20 22 30 35 40 45 50 

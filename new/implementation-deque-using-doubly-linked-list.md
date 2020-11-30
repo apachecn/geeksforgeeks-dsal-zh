@@ -4,7 +4,7 @@
 
 实现双端队列
 
-[双端队列或双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/)是[队列数据结构](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)的通用版本，允许在两端插入和删除。 在[的先前文章](https://www.geeksforgeeks.org/implementation-deque-using-circular-array/)中，已经讨论了使用圆形数组实现`Deque`的方法。 现在，在这篇文章中，我们将了解如何使用[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)实现`Deque`。
+[双端队列或双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/)是[队列数据结构](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)的通用版本，允许在两端插入和删除。 在[先前文章](https://www.geeksforgeeks.org/implementation-deque-using-circular-array/)中，已经讨论了使用圆形数组实现`Deque`的方法。 现在，在这篇文章中，我们将了解如何使用[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)实现`Deque`。
 
 #### 计票操作；
 
@@ -29,11 +29,11 @@ erase()    : Deletes all the elements from Deque.
 
 ![](img/4210693cb20e75e33f593bcd98f67900.png)
 
-**双端队列的双联列表表示形式**：
+**双端队列的双列表表示形式**：
 
-为了实现双端队列，我们​​需要跟踪两个指针，即**前**和**后置**。 我们将**从队列的后端或前端放入（推送）**，将**从后端和前端从队列中弹出（弹出）**。
+为了实现双端队列，我们​​需要跟踪两个指针，即**前**和**后**。 我们**从队列的后端或前端放入（推入）**，**从队列的后端和前端弹出（弹出）**。
 
-**工作**：
+**原理**：
 
 声明类型为`Node`的两个指针`front`和`rear`，其中`Node`代表双链表节点的结构。 用值`NULL`初始化它们两个。
 

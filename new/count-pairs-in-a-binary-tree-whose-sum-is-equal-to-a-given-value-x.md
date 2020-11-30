@@ -21,7 +21,7 @@ The pairs are (3, 7), (2, 8) and (4, 6).
 
 ```
 
-**1）朴素的方法**：通过任何一种树遍历方法逐一获取二叉树的每个节点。 将节点`temp`，树的**根**和值`x`传递给另一个函数，例如`findPair()`。 在功能中，借助**根**指针再次遍历树。 将这些节点与`temp`逐一求和，并检查`sum == x`。 如果是这样，则递增**计数**。 计算计数`/= 2`，因为通过上述方法已对一对进行了两次计数。
+**1）朴素的方法**：通过任何一种树遍历方法逐一获取二叉树的每个节点。 将节点`temp`，树的**根**和值`x`传递给另一个函数，例如`findPair()`。 在功能中，借助**根**指针再次遍历树。 将这些节点与`temp`逐一求和，并检查`sum == x`。 如果是这样，则递增`count`。 计算`count /= 2`，因为通过上述方法已对一对进行了两次计数。
 
 ## C++
 
@@ -395,9 +395,9 @@ Count = 3
 
 以下是步骤：
 
-1.  将给定的二叉树转换为双向链表。 请参阅[此帖子](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-4/)。
+1.  将给定的二叉树转换为双链表。 请参阅[此帖子](https://www.geeksforgeeks.org/convert-a-given-binary-tree-to-doubly-linked-list-set-4/)。
 
-2.  对在步骤 1 中获得的双向链表进行排序。请参阅[此帖子](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)。
+2.  对在步骤 1 中获得的双链表排序。请参阅[此帖子](https://www.geeksforgeeks.org/merge-sort-for-doubly-linked-list/)。
 
 3.  在排序双链表中查找总和等于`x`的偶对计数。 请参阅[此帖子](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)。
 

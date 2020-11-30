@@ -681,7 +681,7 @@ public static void Main(String[] args)
 
 Time Complexity O(n)
 
-**Output :**
+**输出**：
 
 ```
 majority element is 1

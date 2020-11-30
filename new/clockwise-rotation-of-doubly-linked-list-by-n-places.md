@@ -1,4 +1,4 @@
-# 将双向链表顺时针旋转`N`个位置
+# 将双链表顺时针旋转`N`个位置
 
 > 原文：[https://www.geeksforgeeks.org/clockwise-rotation-of-doubly-linked-list-by-n-places/](https://www.geeksforgeeks.org/clockwise-rotation-of-doubly-linked-list-by-n-places/)
 
@@ -14,7 +14,7 @@
 >
 > ![](img/b254a6db45ae1a90352e8ba0645ed044.png)
 
-**方法**：要旋转双向链表，请首先检查给定的`N`是否大于列表的长度。 如果`N`大于列表的大小，则通过对列表的长度取模，得出它在链表大小的范围内。 之后，从列表的长度中减去`N`的值。 现在，问题减少到双向链表的逆时针旋转`N`个位置。
+**方法**：要旋转双链表，请首先检查给定的`N`是否大于列表的长度。 如果`N`大于列表的大小，则通过对列表的长度取模，得出它在链表大小的范围内。 之后，从列表的长度中减去`N`的值。 现在，问题减少到双链表的逆时针旋转`N`个位置。
 
 *   更改最后一个节点的下一个以指向头节点。
 

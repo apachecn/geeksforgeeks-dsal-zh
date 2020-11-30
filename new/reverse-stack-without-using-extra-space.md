@@ -17,7 +17,7 @@ Output : 4->5->6
 
 我们在下面的文章中讨论了一种反转字符串的方法。
 
-[使用递归](https://www.geeksforgeeks.org/reverse-a-stack-using-recursion/)反转栈
+[使用递归反转栈](https://www.geeksforgeeks.org/reverse-a-stack-using-recursion/)
 
 上述解决方案需要`O(n)`额外空间。 如果我们内部将栈表示为链表，则可以在`O(1)`时间内反转字符串。 反转栈需要反转链表，这可以用`O(n)`时间和`O(1)`额外空间来完成。
 

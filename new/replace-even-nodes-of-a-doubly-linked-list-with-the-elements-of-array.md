@@ -1,4 +1,4 @@
-# 将双向链表的偶数节点替换为数组
+# 将双链表的偶数节点替换为数组
 
 > 原文：[https://www.geeksforgeeks.org/replace-even-nodes-of-a-doubly-linked-list-with-the-elements-of-array/](https://www.geeksforgeeks.org/replace-even-nodes-of-a-doubly-linked-list-with-the-elements-of-array/)
 
@@ -22,7 +22,7 @@
 >
 > **输出**：`list = 9 5 7 1 17 13`
 
-**方法**：的想法是一次遍历双向链表的节点，获取具有偶数数据的节点的指针，然后替换为数组的值，并递增数组的索引并移动 到链表中的下一个节点。
+**方法**：想法是一次遍历双链表的节点，获取具有偶数数据的节点的指针，然后替换为数组的值，并递增数组的索引并移动 到链表中的下一个节点。
 
 下面是上述方法的实现：
 

@@ -19,7 +19,7 @@ Output : 4->2->12->8->0->0->0->0->0->0
 
 **方法**：首先按照上述说明修改链表，即，如果下一个有效数字与当前数字相同，则将其值加倍并将下一个数字替换为 0。
 
-**修改算法**：
+**改进的算法**：
 
 ```
 1\. ptr = head
@@ -33,7 +33,7 @@ Output : 4->2->12->8->0->0->0->0->0->0
 
 ```
 
-修改列表后，隔离有效（非零）和无效（零）元素。 它与[隔离链表](https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/)中的偶数和奇数节点相同。
+修改列表后，隔离有效（非零）和无效（零）元素。 它与[隔离链表中的偶数和奇数节点](https://www.geeksforgeeks.org/segregate-even-and-odd-elements-in-a-linked-list/)相同。
 
 ## C++
 

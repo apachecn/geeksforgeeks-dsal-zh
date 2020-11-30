@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/delete-linked-list-nodes-which-have-a-greater-value-on-left-side/](https://www.geeksforgeeks.org/delete-linked-list-nodes-which-have-a-greater-value-on-left-side/)
 
-给定一个单链列表，任务是删除左侧所有具有较大值的所有节点。
+给定一个单链表，任务是删除左侧所有具有较大值的所有节点。
 
 **示例**：
 

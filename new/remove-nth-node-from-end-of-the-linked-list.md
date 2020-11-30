@@ -16,9 +16,9 @@
 
 **先决条件**：
 
-1.  [从链表中删除一个节点。](https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/)
+1.  [从链表中删除一个节点](https://www.geeksforgeeks.org/delete-a-linked-list-node-at-a-given-position/)。
 
-2.  [从链表的末尾找到第`n`个节点](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)
+2.  [从链表的末尾找到第`n`个节点](https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/)。
 
 **方法**：
 
@@ -483,4 +483,4 @@ Linked list after modification:
 
 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。**
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

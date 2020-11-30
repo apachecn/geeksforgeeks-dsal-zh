@@ -6,7 +6,7 @@
 
 ### 链表的类型
 
-*   [**单链表**：](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/) 这是链表的最简单类型，其中每个节点都包含一些数据和一个指向相同数据类型的下一个节点的指针。 该节点包含指向下一个节点的指针，这意味着该节点存储序列中下一个节点的地址。 单个链表仅允许以一种方式遍历数据。 以下是相同的图片：
+*   [**单链表**](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)：这是链表的最简单类型，其中每个节点都包含一些数据和一个指向相同数据类型的下一个节点的指针。 该节点包含指向下一个节点的指针，这意味着该节点存储序列中下一个节点的地址。 单个链表仅允许以一种方式遍历数据。 以下是相同的图片：
 
 ![](img/0d367952fa89396cdfc63909b9271cb7.png)
 
@@ -236,14 +236,14 @@ public static void Main(String[] args)
 
 ```
 
-**Output**
+**输出**：
 
 ```
 1 2 3 
 
 ```
 
-*   [**双链表**：](https://www.geeksforgeeks.org/doubly-linked-list/) 双链表或双向链表是链表的一种更复杂的类型，它包含顺序指向下一个节点和上一个节点的指针 因此，它包含三部分：数据，指向下一个节点的指针和指向上一个节点的指针。 这也使我们能够向后遍历列表。 以下是相同的图片：
+*   [**双链表**](https://www.geeksforgeeks.org/doubly-linked-list/)：双链表或双链表是链表的一种更复杂的类型，它包含顺序指向下一个节点和上一个节点的指针 因此，它包含三部分：数据，指向下一个节点的指针和指向上一个节点的指针。 这也使我们能够向后遍历列表。 以下是相同的图片：
 
 ![](img/69b16aec47e61c0f7fafd8c31e54dfa8.png)
 
@@ -582,7 +582,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Created DLL is: 
@@ -593,7 +593,7 @@ Traversal in reverse direction
 
 ```
 
-*   [**循环链表**：](https://www.geeksforgeeks.org/circular-linked-list/) 循环链表是最后一个节点包含指向列表第一个节点的指针的列表。 在遍历循环喜欢的列表时，我们可以从任何节点开始并以任何方向向前和向后遍历该列表，直到到达开始的相同节点。 因此，循环链表没有开始也没有结束。 以下是同一张图片：
+*   [**循环链表**](https://www.geeksforgeeks.org/circular-linked-list/)：循环链表是最后一个节点包含指向列表第一个节点的指针的列表。 在遍历循环喜欢的列表时，我们可以从任何节点开始并以任何方向向前和向后遍历该列表，直到到达开始的相同节点。 因此，循环链表没有开始也没有结束。 以下是同一张图片：
 
 ![](img/53aeedd7ed272dbebddb686426da7ffa.png)
 
@@ -694,7 +694,7 @@ int main()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Contents of Circular Linked List
@@ -702,11 +702,11 @@ Contents of Circular Linked List
 
 ```
 
-*   [双循环链表：](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)双循环链表或循环双向链表是链表的一种更复杂的类型，它包含指向序列中的下一个节点和上一个节点的指针。 双向链表和循环链表之间的区别与单链表和循环链表之间的区别相同。 圆形双向链表在第一个节点的上一个字段中不包含 null。 以下是相同的图片：
+*   [循环双链表](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)：循环双链表或循环双链表是链表的一种更复杂的类型，它包含指向序列中的下一个节点和上一个节点的指针。 双链表和循环链表之间的区别与单链表和循环链表之间的区别相同。 圆形双链表在第一个节点的上一个字段中不包含`null`。 以下是相同的图片：
 
 ![](img/d699e42fe4c414a8ad2cdf8ccaeaebce.png)
 
-*   **双循环链表的结构**：
+*   **循环双链表的结构**：
 
 ## C++
 
@@ -726,7 +726,7 @@ struct Node {
 
 ```
 
-*   **双循环链表的创建和遍历**：
+*   **循环双链表的创建和遍历**：
 
 ## C++
 
@@ -836,7 +836,7 @@ int main()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Created circular doubly linked list is: 
@@ -847,11 +847,11 @@ Traversal in reverse direction
 
 ```
 
-*   [标头链表：](https://www.geeksforgeeks.org/header-linked-list-in-c/)标头链表是一种特殊类型的链表，它在列表的开头包含一个标头节点。 因此，在头部链表中， **START** 不会指向列表的第一个节点，但是 **START** 将包含头部节点的地址。 以下是“接地页眉链表”的图像：
+*   [标头链表](https://www.geeksforgeeks.org/header-linked-list-in-c/)：标头链表是一种特殊类型的链表，它在列表的开头包含一个标头节点。 因此，在头部链表中， `START`不会指向列表的第一个节点，但是`START`将包含头部节点的地址。 以下是标头链表的图像：
 
 ![](img/4e1a40e0dc120431a994ca6006b8b5a7.png)
 
-*   **接地头部链表的结构**：
+*   **接地标头链表的结构**：
 
 ## C++
 
@@ -867,7 +867,7 @@ struct link {
 
 ```
 
-*   **双循环链表的创建和遍历**：
+*   **循环双链表的创建和遍历**：
 
 ## C++
 
@@ -967,7 +967,7 @@ int main()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 List After inserting 3 elements:

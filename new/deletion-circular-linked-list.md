@@ -6,9 +6,9 @@
 
 我们已经在以下文章中讨论了循环链表和循环链表中的遍历：
 
-[循环链表](http://quiz.geeksforgeeks.org/circular-linked-list/)简介
+[循环链表简介](http://quiz.geeksforgeeks.org/circular-linked-list/)
 
-[在循环链表](http://quiz.geeksforgeeks.org/circular-linked-list-set-2-traversal/)中遍历[
+[遍历循环链表](http://quiz.geeksforgeeks.org/circular-linked-list-set-2-traversal/)
 
 在本文中，我们将学习有关从特定链表中删除节点的信息。 考虑如下所示的链表：
 
@@ -37,7 +37,7 @@ Output : 2->5->8->10->2(head node)
 
 **情况 2** ：列表不为空
 
-*   如果列表不为空，那么我们定义两个指针 **curr** 和 **prev** ，并使用**头**节点初始化指针`curr`。
+*   如果列表不为空，那么我们定义两个指针`curr`和`prev`，并使用**头**节点初始化指针`curr`。
 
 *   使用`curr`遍历列表，找到要删除的节点，然后在将`curr`移至下一个节点之前，每次设置`prev = curr`。
 

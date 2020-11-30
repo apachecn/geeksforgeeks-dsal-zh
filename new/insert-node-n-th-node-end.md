@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/insert-node-n-th-node-end/](https://www.geeksforgeeks.org/insert-node-n-th-node-end/)
 
-在给定的单链列表中在距离末尾的**第`n`个**节点之后插入节点`x`。 确保列表包含距离末尾的第`n`个节点。 另外`1 <= n`。
+在给定的单链表中在距离末尾的**第`n`个**节点之后插入节点`x`。 确保列表包含距离末尾的第`n`个节点。 另外`1 <= n`。
 
 例子：
 
@@ -402,11 +402,11 @@ Linked List After Insertion: 1 2 3 4 5
 
 ```
 
-**时间复杂度**：`O(n)`，其中 **n** 是列表中节点的数量。
+**时间复杂度**：`O(n)`，其中`n`是列表中节点的数量。
 
 **方法 2（单遍历）**：
 
-该方法使用两个指针，一个是 **slow_ptr** ，另一个是 **fast_ptr** 。 首先从头开始将 **fast_ptr** 移到第**个第**个节点。 使 **slow_ptr** 指向列表的第一个节点。 现在，同时移动两个指针，直到 **fast_ptr** 指向最后一个节点。 此时， **slow_ptr** 将从末尾指向第**个第**个节点。 在该节点之后插入新节点。 此方法需要单遍遍列表。
+该方法使用两个指针，一个是`slow_ptr`，另一个是`fast_ptr`。 首先将`fast_ptr`移到从头开始的第`n`个节点。 使`slow_ptr`，指向列表的第一个节点。 现在，同时移动两个指针，直到`fast_ptr`指向最后一个节点。 此时，`slow_ptr`，将指向距离末尾的第`n`个节点。 在该节点之后插入新节点。 此方法需要单遍遍列表。
 
 ## C++
 
@@ -720,7 +720,7 @@ Linked List After Insertion: 1 2 3 4 5
 
 ```
 
-**时间复杂度**：`O(n)`，其中 **n** 是列表中节点的数量。
+**时间复杂度**：`O(n)`，其中`n`是列表中节点的数量。
 
 本文由 **Ayush Jauhari** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

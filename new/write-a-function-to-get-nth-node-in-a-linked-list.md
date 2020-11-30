@@ -1,10 +1,8 @@
-# 编写函数以获取链表
+# 编写函数以获取链表中的第`N`个节点
 
 > 原文：[https://www.geeksforgeeks.org/write-a-function-to-get-nth-node-in-a-linked-list/](https://www.geeksforgeeks.org/write-a-function-to-get-nth-node-in-a-linked-list/)
 
-中的第 N 个节点
-
-编写一个 GetNth（）函数，该函数接受一个链表和一个整数索引，并返回存储在该索引位置的节点中的数据值。
+编写一个`GetNth()`函数，该函数接受一个链表和一个整数索引，并返回存储在该索引位置的节点中的数据值。
 
 **示例**：
 
@@ -27,7 +25,7 @@ The node at index 2 is 30
 
 ```
 
-**实施**：
+**实现**：
 
 ## C++
 
@@ -440,7 +438,7 @@ class LinkedList {
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Element at index 3 is 4
@@ -448,7 +446,7 @@ Element at index 3 is 4
 
 **时间复杂度**：`O(n)`
 
-**方法 2-递归**
+**方法 2 - 递归**
 
 此方法由 [MY_DOOM](https://auth.geeksforgeeks.org/user/MY_DOOM) 贡献。
 
@@ -465,7 +463,7 @@ getnth(node,n)
 
 ```
 
-**实施**：
+**实现**：
 
 ## C++
 
@@ -755,7 +753,7 @@ class GFG {
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Element at index 3 is 4

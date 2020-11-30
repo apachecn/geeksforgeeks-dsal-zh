@@ -1,10 +1,10 @@
-# 从双向单循环链表
+# 从双向循环单链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-all-even-parity-nodes-from-a-doubly-and-circular-singly-linked-list/](https://www.geeksforgeeks.org/remove-all-even-parity-nodes-from-a-doubly-and-circular-singly-linked-list/)
 
 中删除所有偶数奇偶校验节点
 
-给定一个[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)和[循环单链表](https://www.geeksforgeeks.org/circular-linked-list/)包含 **N** 个节点，任务是从每个列表中删除所有奇偶校验为偶数的元素的节点 。
+给定一个[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)和[循环单链表](https://www.geeksforgeeks.org/circular-linked-list/)包含`N`个节点，任务是从每个列表中删除所有奇偶校验为偶数的元素的节点 。
 
 **示例**：
 
@@ -223,7 +223,7 @@ int main()
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 8 14
@@ -798,7 +798,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 11 13 21

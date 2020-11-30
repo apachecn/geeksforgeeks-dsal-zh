@@ -1,10 +1,8 @@
-# 在排序的双链表
+# 在排序的双链表中查找具有给定乘积的偶对
 
 > 原文：[https://www.geeksforgeeks.org/find-pairs-with-given-product-in-a-sorted-doubly-linked-list/](https://www.geeksforgeeks.org/find-pairs-with-given-product-in-a-sorted-doubly-linked-list/)
 
-中查找具有给定乘积的偶对
-
-给定**个正相异元素**的排序的双链表，任务是在双链表中查找乘积等于给定值`x`的对，而不使用任何额外空间。
+给定**不同正元素**的排序的双链表，任务是在双链表中查找乘积等于给定值`x`的对，而不使用任何额外空间。
 
 **示例**：
 
@@ -19,11 +17,11 @@ Output: (1, 6), (2, 3)
 
 ```
 
-解决此问题的一种**简单方法**是使用两个嵌套循环遍历链表，并找到所有对，并检查乘积等于`x`的对。 这个问题的时间复杂度将是`O(N ^ 2)`，`n`是双向链表中节点的总数。
+解决此问题的一种**简单方法**是使用两个嵌套循环遍历链表，并找到所有对，并检查乘积等于`x`的对。 这个问题的时间复杂度将是`O(N ^ 2)`，`n`是双链表中节点的总数。
 
 针对此问题的**有效解决方案**与[该文章](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)相同。 这是算法：
 
-*   初始化两个指针变量以在排序的双链表中找到候选元素。 首先以双向链表的开头初始化`first`；即`first = head`，然后用双向链表的最后一个节点初始化`second`；即`second = last_node`。
+*   初始化两个指针变量以在排序的双链表中找到候选元素。 首先以双链表的开头初始化`first`；即`first = head`，然后用双链表的最后一个节点初始化`second`；即`second = last_node`。
 
 *   我们将第一个和第二个指针初始化为第一个和最后一个节点。 这里我们没有随机访问权限，因此要找到第二个指针，我们遍历列表以初始化第二个指针。
 

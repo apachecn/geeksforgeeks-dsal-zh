@@ -14,7 +14,7 @@ Output:   3->2->1->4->5->6->9->8->7->NULL.
 
 **方法 1（处理`2k`个节点并递归调用列表的其余部分）**
 
-此方法基本上是[此](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)文章中讨论的方法的扩展。
+此方法基本上是[这篇文章](https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/)中讨论的方法的扩展。
 
 ```
 kAltReverse(struct node *head, int k)

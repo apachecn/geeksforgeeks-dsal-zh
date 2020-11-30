@@ -1,4 +1,4 @@
-# 计数一个排序的双向链表中的三元组，其总数等于给定值`x`
+# 计数一个排序的双链表中的三元组，其总数等于给定值`x`
 
 > 原文：[https://www.geeksforgeeks.org/count-triplets-sorted-doubly-linked-list-whose-sum-equal-given-value-x/](https://www.geeksforgeeks.org/count-triplets-sorted-doubly-linked-list-whose-sum-equal-given-value-x/)
 
@@ -376,7 +376,7 @@ Count = 2
 
 **方法 2（哈希）**：
 
-创建一个哈希表，其中（键，值）元组表示（节点数据，节点指针）元组。 遍历双向链表，并将每个节点的数据及其指针对（元组）存储在哈希表中。 现在，生成每个可能的节点对。 对于每对节点，计算`p_sum`（两个节点中数据的总和），并检查哈希表中是否存在`x-p_sum`。 如果存在，则还要验证该对中的两个节点与与哈希表中的`x-p_sum`关联的节点不同，并最终使**计数**递增。 返回（`计数 / 3`），因为在上述过程中每个三​​元组被计数了 3 次。
+创建一个哈希表，其中（键，值）元组表示（节点数据，节点指针）元组。 遍历双链表，并将每个节点的数据及其指针对（元组）存储在哈希表中。 现在，生成每个可能的节点对。 对于每对节点，计算`p_sum`（两个节点中数据的总和），并检查哈希表中是否存在`x-p_sum`。 如果存在，则还要验证该对中的两个节点与与哈希表中的`x-p_sum`关联的节点不同，并最终使`count`递增。 返回（`计数 / 3`），因为在上述过程中每个三​​元组被计数了 3 次。
 
 ## C++
 
@@ -698,7 +698,7 @@ Count = 2
 
 **方法 3 高效方法（使用两个指针）**：
 
-从左到右遍历双向链表。 对于遍历过程中的每个`curr`节点，初始化两个指针，`first`为指向`curr`节点的下一个节点的指针，`last`为指向列表的最后一个节点的指针。 现在，计算列表中从`first`到`last`指针的对，它们总计为值（`x –`当前节点的数据）（[帖子中描述的算法](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)）。 将此计数添加到三元组`total_count`中。 指向`last`节点的指针只能在开始处找到一次。
+从左到右遍历双链表。 对于遍历过程中的每个`curr`节点，初始化两个指针，`first`为指向`curr`节点的下一个节点的指针，`last`为指向列表的最后一个节点的指针。 现在，计算列表中从`first`到`last`指针的对，它们总计为值（`x –`当前节点的数据）（[帖子中描述的算法](https://www.geeksforgeeks.org/find-pairs-given-sum-doubly-linked-list/)）。 将此计数添加到三元组`total_count`中。 指向`last`节点的指针只能在开始处找到一次。
 
 ## C++
 

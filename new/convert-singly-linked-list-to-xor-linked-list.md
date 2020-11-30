@@ -4,15 +4,15 @@
 
 **前提条件**：
 
-*   [XOR 链表–内存有效的双链表 | 系列 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)
+*   [XOR 链表 – 内存有效的双链表 | 系列 1](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)
 
-*   [XOR 链表–内存有效的双链表 | 系列 2](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
+*   [XOR 链表 – 内存有效的双链表 | 系列 2](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
 
-**XOR 链表**是一种内存有效的双向链表，其中每个节点的下一个指针存储上一个和下一个节点的地址的 XOR。
+**XOR 链表**是一种内存有效的双链表，其中每个节点的下一个指针存储上一个和下一个节点的地址的 XOR。
 
 给定一个单链表，任务是将给定的单链表转换为 XOR 链表。
 
-**方法**：由于在 **XOR** 链表中，每个下一个指针都存储**上一个**的 **XOR** 和下一个节点的**。 因此，想法是遍历给定的单链表，并在指针 *prev* 中跟踪先前的节点。**
+**方法**：由于在 **XOR** 链表中，每个下一个指针都存储**上一个**和下一个节点的 **XOR**。 因此，想法是遍历给定的单链表，并在指针`prev`中跟踪先前的节点。
 
 现在，遍历列表时，将每个节点的下一个指针更改为：
 

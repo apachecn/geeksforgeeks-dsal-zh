@@ -38,7 +38,7 @@ findNthFromLastUtil(head, n)
 
 ```
 
-**注意**：参数**计数**和 **nth_last** 将是 **findNthFromLast（）**中的指针变量。
+**注意**：参数`count`和`nth_last`将是`findNthFromLast()`中的指针变量。
 
 ## C++
 

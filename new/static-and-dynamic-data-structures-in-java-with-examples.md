@@ -31,7 +31,7 @@
 
     ```
 
-    **实施**：
+    **实现**：
 
     ```
 
@@ -82,7 +82,7 @@
 
     ```
 
-    *上面的数组实现存在问题：*
+    *上面的数组实现存在问题*：
 
     创建数组后，我们无法更改数组的大小。 因此，数组的大小是不可更改的。
 
@@ -435,11 +435,11 @@
 
     **相关文章**：
 
-    *   [使用数组](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)的栈实现
+    *   [使用数组的栈实现](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
 
-    *   [使用单链表](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)的栈实现
+    *   [使用单链表的栈实现](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)
 
-    *   [使用队列](https://www.geeksforgeeks.org/implement-stack-using-queue/)的栈实现
+    *   [使用队列的栈实现](https://www.geeksforgeeks.org/implement-stack-using-queue/)
 
 5.  ### [队列](https://www.geeksforgeeks.org/queue-interface-java/)
 
@@ -502,15 +502,15 @@
 
     **相关文章**：
 
-    *   [使用数组](https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)的队列实现
+    *   [使用数组的队列实现](https://www.geeksforgeeks.org/array-implementation-of-queue-simple/)
 
-    *   [使用单链表](https://www.geeksforgeeks.org/queue-linked-list-implementation/)的队列实现
+    *   [使用单链表的队列实现](https://www.geeksforgeeks.org/queue-linked-list-implementation/)
 
-    *   [使用栈](https://www.geeksforgeeks.org/queue-using-stacks/)的队列实现
+    *   [使用栈的队列实现](https://www.geeksforgeeks.org/queue-using-stacks/)
 
 6.  ### 树
 
-    树是一种将值存储在称为**节点**的实体内部的数据结构。 节点通过称为**边缘**的线连接。 每个节点在其中存储一个值。
+    树是一种将值存储在称为**节点**的实体内部的数据结构。 节点通过称为**边**的线连接。 每个节点在其中存储一个值。
 
     **术语**：
 
@@ -518,7 +518,7 @@
 
     *   **父级**是一个已附加一个或多个节点的节点。
 
-    *   **边缘**是连接两个节点的链接。
+    *   **边**是连接两个节点的链接。
 
     *   **子级**是具有父节点的节点
 

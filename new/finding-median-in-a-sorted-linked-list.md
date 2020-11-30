@@ -39,7 +39,7 @@ Output : 3.5
 
 **注意**：上述解决方案两次遍历链表。
 
-**有效方法**：一种有效方法是使用两个指针遍历列表以查找元素数。 [参见此帖子的方法 2](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/) 。
+**有效方法**：一种有效方法是使用两个指针遍历列表以查找元素数。 [参见此帖子的方法 2](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)。
 
 我们可以使用上述算法来找到链表的中位数。 使用此算法，我们无需计算元素的数量：
 

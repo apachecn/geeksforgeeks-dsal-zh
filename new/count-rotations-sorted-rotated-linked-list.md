@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-rotations-sorted-rotated-linked-list/](https://www.geeksforgeeks.org/count-rotations-sorted-rotated-linked-list/)
 
-给定`n`个节点的链表，该链表首先进行排序，然后旋转`k`个元素。 找出`k`的值。
+给定`n`个节点的链表，该链表首先排序，然后旋转`k`个元素。 找出`k`的值。
 
 ![](img/ed860d112cdefec07c0ee0dcd93c5313.png)
 

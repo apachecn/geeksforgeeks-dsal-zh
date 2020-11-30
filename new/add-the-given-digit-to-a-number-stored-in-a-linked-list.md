@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/add-the-given-digit-to-a-number-stored-in-a-linked-list/](https://www.geeksforgeeks.org/add-the-given-digit-to-a-number-stored-in-a-linked-list/)
 
-给定一个表示整数的链表，其中每个节点都是一个数字（如果表示整数）。 任务是将给定的数字 **N** 添加到表示的整数。
+给定一个表示整数的链表，其中每个节点都是一个数字（如果表示整数）。 任务是将给定的数字`N`添加到表示的整数。
 
 **示例**：
 
@@ -490,7 +490,7 @@ public class List
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 1 -> 9 -> 9 -> NULL

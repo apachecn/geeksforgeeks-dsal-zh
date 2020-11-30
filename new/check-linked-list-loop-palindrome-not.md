@@ -29,9 +29,9 @@ not palindrome.
 
 1.  使用弗洛伊德循环检测算法检测环路。
 
-2.  然后按照[和](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)中的讨论找到循环的起始节点
+2.  然后按照[这篇文章](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)中的讨论找到循环的起始节点
 
-3.  如[和](https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)中所述，检查链表是否是回文
+3.  如[这篇文章](https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)中所述，检查链表是否是回文
 
 下面是实现。
 
@@ -691,7 +691,7 @@ Palindrome
 
 ```
 
-本文由 [**Sahil Chhabra（akku）**](https://practice.geeksforgeeks.org/user-profile.php?user=sahil_coder) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由 [**Sahil Chhabra(akku)**](https://practice.geeksforgeeks.org/user-profile.php?user=sahil_coder) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请发表评论。
 

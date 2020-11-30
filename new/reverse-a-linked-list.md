@@ -1133,7 +1133,7 @@ public class LinkedList {
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Given linked list
@@ -1270,7 +1270,7 @@ int main()
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Given linked list
@@ -1283,7 +1283,7 @@ Reversed linked list
 
 [递归地反向链表（一个简单的实现）](https://www.geeksforgeeks.org/recursively-reversing-a-linked-list-a-simple-implementation/)
 
-[仅使用 2 个指针迭代反向链接的列表（一种有趣的方法）](https://www.geeksforgeeks.org/iteratively-reverse-a-linked-list-using-only-2-pointers/)
+[仅使用 2 个指针迭代式反转链表（一种有趣的方法）](https://www.geeksforgeeks.org/iteratively-reverse-a-linked-list-using-only-2-pointers/)
 
 **参考**：
 

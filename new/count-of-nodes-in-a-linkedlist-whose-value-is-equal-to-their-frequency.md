@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/count-of-nodes-in-a-linkedlist-whose-value-is-equal-to-their-frequency/](https://www.geeksforgeeks.org/count-of-nodes-in-a-linkedlist-whose-value-is-equal-to-their-frequency/)
 
-给定一个单链列表，任务是计算其数据值等于其频率的节点数。
+给定一个单链表，任务是计算其数据值等于其频率的节点数。
 
 **示例**：
 
@@ -28,7 +28,7 @@
 
 *   遍历链表并使用映射存储数组每个元素的频率
 
-*   遍历地图并计算其频率等于其值的元素的数量
+*   遍历映射并计算其频率等于其值的元素的数量
 
 下面是上述方法的实现：
 

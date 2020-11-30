@@ -526,7 +526,7 @@ public class LinkedList
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Linked list before duplicate removal  11 11 11 13 13 20
@@ -536,7 +536,7 @@ Linked list after duplicate removal  11 13 20
 
 **时间复杂度**：`O(n)`，其中`n`是给定链表中的节点数。
 
-**递归方法**：[
+**递归方法**：
 
 ## C++
 
@@ -1076,7 +1076,7 @@ public static void Main(String []args)
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Linked list before duplicate removal  11 11 11 13 13 20
@@ -1200,7 +1200,7 @@ class LinkedList
 
 ```
 
-**Output**
+**输出**：
 
 ```
 List before removal of duplicates

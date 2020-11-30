@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/bubble-sort-for-linked-list-by-swapping-nodes/](https://www.geeksforgeeks.org/bubble-sort-for-linked-list-by-swapping-nodes/)
 
-给定一个单链列表，通过交换节点使用[冒泡排序](http://www.geeksforgeeks.org/bubble-sort/)对它进行排序。
+给定一个单链表，通过交换节点使用[冒泡排序](http://www.geeksforgeeks.org/bubble-sort/)对它排序。
 
 ![sorting image](img/cc3d3ac699ac03f5792746b3e3e54865.png)
 

@@ -14,7 +14,7 @@
 >
 > **输出**：`finalList = 15 -> 4 -> 9`
 
-**方法**：想法是逐个遍历单链表的节点并获得素数节点的指针。 通过遵循帖子中使用的方法删除那些节点：[从链表](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)中删除一个节点。
+**方法**：想法是逐个遍历单链表的节点并获得素数节点的指针。 通过遵循帖子中使用的方法删除那些节点：[从链表中删除一个节点](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)。
 
 以下是上述想法的实现：
 

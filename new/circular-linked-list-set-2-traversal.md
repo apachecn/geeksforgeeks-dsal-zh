@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/](https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/)
 
-我们在上一则关于循环链表的文章中讨论了[循环链表的介绍和应用，](http://quiz.geeksforgeeks.org/circular-linked-list/ "Permanent link to Circular Linked List | Set 1 (Introduction and Applications)") 。 在这篇文章中，讨论了遍历操作。
+我们在上一则关于循环链表的文章中讨论了[循环链表的介绍和应用](http://quiz.geeksforgeeks.org/circular-linked-list/ "Permanent link to Circular Linked List | Set 1 (Introduction and Applications)") 。 在这篇文章中，讨论了遍历操作。
 
 ![](img/ff7f30aebf5dc865587c7829dcf4233c.png "cll")
 
@@ -428,11 +428,11 @@ Contents of Circular Linked List
 
 ```
 
-**您可能想在循环链表**
+您可能想要以下帖子：
 
-[上将以下帖子分为两半](https://www.geeksforgeeks.org/split-a-circular-linked-list-into-two-halves/)
+[将循环链表将分为两半](https://www.geeksforgeeks.org/split-a-circular-linked-list-into-two-halves/)
 
-[循环链表](https://www.geeksforgeeks.org/sorted-insert-for-circular-linked-list/)的插入内容
+[在循环链表中插入内容](https://www.geeksforgeeks.org/sorted-insert-for-circular-linked-list/)
 
 我们将很快讨论循环链表的插入删除操作的实现。
 

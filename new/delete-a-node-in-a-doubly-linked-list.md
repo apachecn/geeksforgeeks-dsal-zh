@@ -6,13 +6,13 @@
 
 **先决条件**：[双链表系列 1 | 简介和插入](http://quiz.geeksforgeeks.org/doubly-linked-list/)
 
-编写函数以删除双向链表中的给定节点。
+编写函数以删除双链表中的给定节点。
 
-**原始双向链表**
+**原始双链表**
 
 ![](img/b9016fd69bcaae1bff3fbeb66cc6e586.png)
 
-**方法**：删除双向链表中的节点可以分为三个主要类别：
+**方法**：删除双链表中的节点可以分为三个主要类别：
 
 *   **删除头节点后。**
 
@@ -36,28 +36,28 @@
 
 **算法**
 
-*   令要删除的节点为 *del* 。
+*   令要删除的节点为`del`。
 
-*   如果要删除的节点是头节点，则将头指针更改为下一个当前头。
-
-```
-if *headnode* == *del* then
-      *headnode* =  *del*.nextNode
+*   如果要删除的节点是头节点，则将头指针更改为当前头的下一个。
 
 ```
-
-*   如果 *del* 之前存在 *del* 之前，则在 *del* 之前设置*。*
-
-```
-if *del*.nextNode != *none* 
-      *del*.nextNode.previousNode = *del*.previousNode 
-```
-
-*   如果 *del* 旁边存在 *prev* ，则在 *del* 旁边。
+if headnode == del then
+      headnode =  del.nextNode
 
 ```
-if *del*.previousNode != *none* 
-      *del*.previousNode.nextNode = *del*.next
+
+*   如果`del`的上一个存在，则设置`del`的上一个。
+
+```
+if del.nextNode != none 
+      del.nextNode.previousNode = del.previousNode 
+```
+
+*   如果`del`的下一个存在，则设置`del`的下一个。
+
+```
+if del.previousNode != none 
+      del.previousNode.nextNode = del.next
 
 ```
 
@@ -644,7 +644,7 @@ public class DLL
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 Original Linked list 10 8 4 2 

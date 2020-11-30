@@ -2,11 +2,19 @@
 
 > 原文：[https://www.geeksforgeeks.org/binary-search-on-singly-linked-list/](https://www.geeksforgeeks.org/binary-search-on-singly-linked-list/)
 
+<<<<<<< HEAD
 给定一个单链表和一个密钥，请使用[二分搜索](https://www.geeksforgeeks.org/binary-search/)方法查找密钥。
 
 为了执行基于分而治之算法的二分搜索，确定中间元素非常重要。 对于数组，二分搜索通常是快速而有效的，因为访问两个给定索引之间的中间索引既简单又快速（时间复杂度`O(1)`）。 但是，单链表的内存分配是动态且不连续的，这使得查找中间元素变得困难。 一种方法可能是使用[跳表](https://www.geeksforgeeks.org/skip-list/)，一种可能是使用一个指针遍历链表。
+=======
+进行二分搜索
 
-**前提**：[在链表的中间找到。](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)
+给定一个单链表和一个密钥，请使用[二分搜索](https://www.geeksforgeeks.org/binary-search/)方法查找密钥。
+
+为了执行基于分治算法的二分搜索，确定中间元素非常重要。 对于数组，二分搜索通常是快速而有效的，因为访问两个给定索引之间的中间索引既简单又快速（时间复杂度`O(1)`）。 但是，单链表的内存分配是动态且不连续的，这使得查找中间元素变得困难。 一种方法可能是使用[跳表](https://www.geeksforgeeks.org/skip-list/)，一种可能是使用一个指针遍历链表。
+>>>>>>> 67ea03ac9ece65f623a6b1a9a1311be605210497
+
+**前提**：[打印链表的中间](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)。
 
 **注意：以下提供的方法和实现旨在说明如何在链表上实现二分搜索。 该实现需要`O(n)`时间。**
 
@@ -24,7 +32,7 @@
 
 *   出现的条件是，找到元素或遍历整个列表。 当遍历整个列表时，`last`指向开始，即`last-> next == start`。
 
-在主函数中，函数`InsertAtHead`在链表的开头插入值。 插入这样的值（为简单起见），以便对创建的列表进行排序。
+在主函数中，函数`InsertAtHead`在链表的开头插入值。 插入这样的值（为简单起见），以便对创建的列表排序。
 
 例子 ：
 

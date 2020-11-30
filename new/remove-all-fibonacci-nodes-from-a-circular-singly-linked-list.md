@@ -4,7 +4,7 @@
 
 中删除所有斐波那契节点
 
-给定一个包含`N`个节点的[循环单链列表](https://www.geeksforgeeks.org/circular-linked-list/)，任务是从包含[斐波那契](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)数据值的列表中删除所有节点。
+给定一个包含`N`个节点的[循环单链表](https://www.geeksforgeeks.org/circular-linked-list/)，任务是从包含[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)的列表中删除所有节点。
 
 **示例**：
 
@@ -28,13 +28,13 @@
 >
 > 因此，删除了包含此数据的节点
 
-**方法**：的想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)来预先计算并存储[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，然后检查节点是否在`O(1)`时间中包含斐波那契值 。
+**方法**：想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)来预先计算并存储[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，然后检查节点是否在`O(1)`时间中包含斐波那契值 。
 
-1.  遍历整个圆形单链列表，并在列表中获得最大值。
+1.  遍历整个圆形单链表，并在列表中获得最大值。
 
 2.  现在，为了检查斐波那契数，建立一个[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于圆单链表中最大值的斐波那契数。
 
-3.  最后，逐个遍历循环单链列表的节点，并检查该节点是否包含斐波那契数作为其数据值。 删除具有斐波那契值的节点。
+3.  最后，逐个遍历循环单链表的节点，并检查该节点是否包含斐波那契数作为其数据值。 删除具有斐波那契值的节点。
 
 以下是上述想法的实现：
 

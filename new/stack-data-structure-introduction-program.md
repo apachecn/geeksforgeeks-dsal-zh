@@ -6,13 +6,13 @@
 
 主要在栈中执行以下三个基本操作：
 
-*   **推入**：在栈中添加一个项目。 如果栈已满，则称其为溢出条件。
+*   `push`：在栈中添加一个项目。 如果栈已满，则称其为溢出条件。
 
-*   **弹出**：从栈中删除一个项目。 这些项目以推入的相反顺序弹出。 如果栈为空，则称其为下溢条件。
+*   `pop`：从栈中删除一个项目。 这些项目以推入的相反顺序弹出。 如果栈为空，则称其为下溢条件。
 
-*   **窥视或顶部**：返回栈的顶部元素。
+*   `peek/top`：返回栈的顶部元素。
 
-*   **isEmpty:** Returns true if stack is empty, else false.
+*   `isEmpty`：如果堆栈为空，则返回`true`，否则返回`false`。
 
 ![stack](img/91f929ba5f7179300fc713d1f8126678.png)
 
@@ -34,11 +34,11 @@
 
 *   Web 浏览器中的前进和后退功能
 
-*   用于许多算法中，例如[河内塔](https://www.geeksforgeeks.org/recursive-functions/) [树遍历](https://www.geeksforgeeks.org/618/)，[库存跨度问题](https://www.geeksforgeeks.org/the-stock-span-problem/)，[直方图问题](https://www.geeksforgeeks.org/largest-rectangular-area-in-a-histogram-set-1/)。
+*   用于许多算法中，例如[汉内塔](https://www.geeksforgeeks.org/recursive-functions/) [树的遍历](https://www.geeksforgeeks.org/618/)，[股票跨度问题](https://www.geeksforgeeks.org/the-stock-span-problem/)，[直方图问题](https://www.geeksforgeeks.org/largest-rectangular-area-in-a-histogram-set-1/)。
 
 *   其他应用包括回溯，[骑士旅行问题](https://www.geeksforgeeks.org/backtracking-set-1-the-knights-tour-problem/)，[迷宫中的老鼠](https://www.geeksforgeeks.org/backttracking-set-2-rat-in-a-maze/)，[`N`皇后问题](https://www.geeksforgeeks.org/backtracking-set-3-n-queen-problem/)和[数独解算器](https://www.geeksforgeeks.org/backtracking-set-7-suduku/)
 
-*   在图算法中，例如[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)和[强连接的组件](https://www.geeksforgeeks.org/strongly-connected-components/)
+*   在图算法中，例如[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)和[强连通组件](https://www.geeksforgeeks.org/strongly-connected-components/)
 
 **实现**：
 
@@ -428,7 +428,7 @@ class Program {
 
 ```
 
-**使用链表**实现栈
+**使用链表实现栈**
 
 ## C++
 

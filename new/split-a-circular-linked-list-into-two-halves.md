@@ -20,7 +20,7 @@
                          Result Linked List 2  
 ```
 
-如果**个奇数节点**，则第一个列表应包含一个额外的节点。
+如果有**奇数个节点**，则第一个列表应包含一个额外的节点。
 
 感谢 [Geek4u](https://www.geeksforgeeks.org/forum/topic/splitting-a-circular-doubly-linked-list#post-335) 提出了该算法。
 
@@ -635,7 +635,7 @@ Second Circular Linked List
 
 ```
 
-时间复杂度： **`O(n)`**
+时间复杂度：`O(n)`
 
 如果您发现上述代码/算法中的任何错误，或找到其他解决相同问题的方法，请发表评论
 

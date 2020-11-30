@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/modify-contents-of-linked-list-recursive-approach/](https://www.geeksforgeeks.org/modify-contents-of-linked-list-recursive-approach/)
 
-给定一个包含`n`个节点的单链列表。 修改前半个节点的值，以使第一个节点的新值等于最后一个节点的值减去第一个节点的当前值，第二个节点的新值等于后一个节点的值减去第二个节点的当前值，对于前半个节点也是如此。 如果`n`为奇数，则中间节点的值保持不变。
+给定一个包含`n`个节点的单链表。 修改前半个节点的值，以使第一个节点的新值等于最后一个节点的值减去第一个节点的当前值，第二个节点的新值等于后一个节点的值减去第二个节点的当前值，对于前半个节点也是如此。 如果`n`为奇数，则中间节点的值保持不变。
 
 **示例**：
 

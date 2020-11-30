@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/reverse-a-doubly-circular-linked-list/](https://www.geeksforgeeks.org/reverse-a-doubly-circular-linked-list/)
 
-问题是要反转给定的双循环链表。
+问题是要反转给定的循环双链表。
 
 **示例**：
 

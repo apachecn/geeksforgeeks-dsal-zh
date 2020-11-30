@@ -304,7 +304,7 @@ public class LinkedList
 
 ```
 
-**Output**
+**输出**：
 
 ```
 35
@@ -692,7 +692,7 @@ public class LinkedList
 
 ```
 
-**Output**
+**输出**：
 
 ```
 Node no. 4 from last is 35 

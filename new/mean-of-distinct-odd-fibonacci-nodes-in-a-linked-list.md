@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/mean-of-distinct-odd-fibonacci-nodes-in-a-linked-list/](https://www.geeksforgeeks.org/mean-of-distinct-odd-fibonacci-nodes-in-a-linked-list/)
 
-给定一个包含`N`个节点的[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从该列表中找到其数据值为奇数[的所有不同节点的](https://www.geeksforgeeks.org/check-number-fibonacci-number/)[均值](https://www.geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/) 斐波那契数。
+给定一个包含`N`个节点的[单链表](https://www.geeksforgeeks.org/data-structures/linked-list/singly-linked-list/)，任务是从该列表中找到其数据值为[奇数斐波那契数](https://www.geeksforgeeks.org/check-number-fibonacci-number/)的所有不同节点的[均值](https://www.geeksforgeeks.org/program-for-mean-and-median-of-an-unsorted-array/)。
 
 **示例**：
 
@@ -34,13 +34,13 @@
 >
 > 因此，奇数斐波那契节点值为`(55 + 5 + 3 + 89 + 233) / 5 = 77`
 
-**方法**：的想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储所有[斐波那契数](https://www.geeksforgeeks.org/check-number-fibonacci-number/)，直到链表中最大[个最大元素。 。
+**方法**：想法是使用[散列](https://www.geeksforgeeks.org/hashing-data-structure/)预先计算并存储所有[斐波那契数](https://www.geeksforgeeks.org/check-number-fibonacci-number/)，直到链表中的最大元素。
 
 请按照以下步骤解决问题：](https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/)
 
 1.  初始化两个变量，例如`cnt`和`sum`，分别存储奇数[斐波那契节点](https://www.geeksforgeeks.org/check-number-fibonacci-number/)的计数和所有奇数[斐波那契节点](https://www.geeksforgeeks.org/check-number-fibonacci-number/)的计数。
 
-2.  [遍历单个链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)并存储链表中最大的[元素，例如 **Max** 。](https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/)
+2.  [遍历单个链表](https://www.geeksforgeeks.org/linked-list-set-1-introduction/)并存储链表中[最大的元素](https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/)，例如`Max`。
 
 3.  创建一个[集合](https://www.geeksforgeeks.org/set-in-cpp-stl/)，例如说`Hashmap`，以存储直到`Max`为止的所有斐波那契数。
 
@@ -670,16 +670,16 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 10.5
 
 ```
 
-***时间复杂度**：`O(n)`*
+**时间复杂度**：`O(n)`
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 
 

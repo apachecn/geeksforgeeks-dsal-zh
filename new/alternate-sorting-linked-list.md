@@ -2,6 +2,11 @@
 
 > 原文：[https://www.geeksforgeeks.org/alternate-sorting-linked-list/](https://www.geeksforgeeks.org/alternate-sorting-linked-list/)
 
+<<<<<<< HEAD
+=======
+的替代排序
+
+>>>>>>> 67ea03ac9ece65f623a6b1a9a1311be605210497
 给定一个包含`n`个节点的链表。 问题是要重新排列列表中的节点，以使第一节点中的数据为第一最小值，第二节点为第一最大值，第三节点为第二最小值，第四节点为第二最大值，依此类推。
 
 例子：
@@ -17,13 +22,13 @@ Output : 5->10->6->9->7->8
 
 **方法**：以下是步骤：
 
-1.  使用[合并排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)技术对链表进行排序。
+1.  使用[归并排序](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)技术对链表排序。
 
-2.  将列表分为**前**和**后**列表。 请参阅此帖子的 **FrontBackProcedure** 。
+2.  将列表分为**前**和**后**列表。 请参阅此帖子的`FrontBackProcedure`。
 
-3.  现在，将**返回**列表。 请参阅此帖子的[。](https://www.geeksforgeeks.org/reverse-a-linked-list/)
+3.  现在，反转**后**列表。 请参阅[此帖子](https://www.geeksforgeeks.org/reverse-a-linked-list/)。
 
-4.  最后，以交替顺序将**的节点首先**和**的列表合并回**列表。
+4.  最后，以交替顺序将**前**和**后**列表合并。
 
 ```
 

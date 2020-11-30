@@ -26,11 +26,11 @@
 
 **朴素的方法**：
 
-将每个字符串的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。 遍历地图并查找频率`≥ N / 3`的字符串。
+将每个字符串的频率存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。 遍历映射并查找频率`≥ N / 3`的字符串。
 
-***时间复杂度**：`O(n)`*
+**时间复杂度**：`O(n)`
 
-***辅助空间**：`O(n)`*
+**辅助空间**：`O(n)`
 
 **有效方法**：
 
@@ -298,9 +298,9 @@ geeks
 
 ```
 
-***时间复杂度**：`O(n)`*
+**时间复杂度**：`O(n)`
 
-***辅助空间**：`O(1)`*
+**辅助空间**：`O(1)`
 
 
 

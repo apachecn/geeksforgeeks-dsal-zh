@@ -18,7 +18,7 @@
 
 **方法**：
 
-要解决上述问题，主要思想是使用 [**栈数据结构**](https://www.geeksforgeeks.org/stack-data-structure/) 。
+要解决上述问题，主要思想是使用[**栈数据结构**](https://www.geeksforgeeks.org/stack-data-structure/)。
 
 *   遍历链表，并将链表元素的值和位置插入栈。
 
@@ -325,16 +325,16 @@ public static void Main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 7, -1, 5, 5, -1,
 
 ```
 
-***时间复杂度**：`O(n)`*
+**时间复杂度**：`O(n)`
 
-***辅助空间复杂度**：`O(n)`*
+**辅助空间复杂度**：`O(n)`
 
 
 

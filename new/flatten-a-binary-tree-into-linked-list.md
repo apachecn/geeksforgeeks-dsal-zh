@@ -50,7 +50,7 @@ Output :
 
 **简单方法**：一个简单的解决方案是使用“队列”使用[层次顺序遍历](https://www.geeksforgeeks.org/level-order-tree-traversal/)。在层次顺序遍历中，跟踪先前的节点。 将当前节点作为上一个节点的右子节点，将上一个节点的左节点作为`NULL`。 该解决方案需要队列，但问题要求解决而无需其他数据结构。
 
-**在没有附加数据结构的情况下有效**：在左子树中递归查找没有孙子代，且具有左子代或右子代的节点。 然后将`node->right`存储在`temp`中，并使`node->right = node->left`。 通过`node = node->right`，在`node`右侧的最后一个节点中插入`temp`。 重复直到将其转换为链表。
+**不使用附加数据结构的有效方法**：在左子树中递归查找没有孙子代，且具有左子代或右子代的节点。 然后将`node->right`存储在`temp`中，并使`node->right = node->left`。 通过`node = node->right`，在`node`右侧的最后一个节点中插入`temp`。 重复直到将其转换为链表。
 
 例如
 
@@ -270,7 +270,7 @@ public static void main(String[] args)
 
 ```
 
-**Output:** 
+**输出**： 
 
 ```
 The Inorder traversal after flattening 

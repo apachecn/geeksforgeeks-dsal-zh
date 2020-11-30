@@ -2,11 +2,11 @@
 
 > 原文：[https://www.geeksforgeeks.org/skip-list-set-2-insertion/](https://www.geeksforgeeks.org/skip-list-set-2-insertion/)
 
-我们已经在[系列 1（简介）](https://www.geeksforgeeks.org/skip-list/)中讨论了“跳表”的概念以及它们在跳表中的工作方式。在本文中，我们将讨论如何在“跳表”中插入元素。
+我们已经在[系列 1（简介）](https://www.geeksforgeeks.org/skip-list/)中讨论了跳表的概念以及它们在跳表中的工作方式。在本文中，我们将讨论如何在跳表中插入元素。
 
 **决定节点级别**
 
-列表中的每个元素都由一个节点表示，在插入列表时会随机选择节点的级别。 **级别不取决于节点中元素的数量。** 节点的级别由以下算法决定-
+列表中的每个元素都由一个节点表示，在插入列表时会随机选择节点的级别。 **级别不取决于节点中元素的数量。** 节点的级别由以下算法决定：
 
 ```
 randomLevel()
@@ -32,9 +32,9 @@ return lvl
 
 1.  下一个节点的键小于要插入的键，然后我们继续在相同级别上前进
 
-2.  下一个节点的键大于要插入的键，然后在 **update [i]** 处存储指向当前节点 **i** 的指针，然后向下移动一级并继续搜索。
+2.  下一个节点的键大于要插入的键，然后在`update[i]`处存储指向当前节点`i`的指针，然后向下移动一级并继续搜索。
 
-在级别 0，我们肯定会找到一个插入给定键的位置。 以下是插入算法的伪代码–
+在级别 0，我们肯定会找到一个插入给定键的位置。 以下是插入算法的伪代码：
 
 ```
 Insert(list, searchKey)
@@ -60,7 +60,7 @@ for i := 0 to level do
 
 ![Insert node ](img/72ea3fa503549efb8b2955630519d481.png)
 
-以下是在跳表中插入键的代码–
+以下是在跳表中插入键的代码：
 
 ## C++
 
@@ -401,7 +401,7 @@ Successfully Inserted key 26
 Successfully Inserted key 21
 Successfully Inserted key 25
 
-*****Skip List*****
+****Skip List****
 Level 0: 3 6 7 9 12 17 19 21 25 26 
 Level 1: 3 6 12 17 25 
 Level 2: 6 12 17 25 
@@ -411,9 +411,9 @@ Level 3: 12 17 25
 
 **注意**：节点的级别是随机决定的，因此输出可能会有所不同。
 
-**时间复杂度（平均）**：![O(log n)](img/faf744094bdbb5a5e71a14a9644af0c5.png "Rendered by QuickLaTeX.com")
+**时间复杂度（平均）**：`O(log n)`
 
-**时间复杂度（最差）**：![O(n)](img/d5229a9c6f59029cbbb0f53974c9a9de.png "Rendered by QuickLaTeX.com")
+**时间复杂度（最差）**：`O(n)`
 
 在下一篇文章中，我们将讨论跳过中的搜索和删除 列表。
 

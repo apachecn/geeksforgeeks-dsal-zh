@@ -1,8 +1,8 @@
-# 对链表进行排序，该列表按升序和降序交替排序？
+# 对链表排序，该列表按升序和降序交替排序？
 
 > 原文：[https://www.geeksforgeeks.org/how-to-sort-a-linked-list-that-is-sorted-alternating-ascending-and-descending-orders/](https://www.geeksforgeeks.org/how-to-sort-a-linked-list-that-is-sorted-alternating-ascending-and-descending-orders/)
 
-给定一个链表。 链表按升序和降序排列。 有效地对列表进行排序。
+给定一个链表。 链表按升序和降序排列。 有效地对列表排序。
 
 **示例**：
 
@@ -17,15 +17,15 @@ Output List: 1 -> 2 -> 3 -> 4 -> 5 -> NULL
 
 **简单解决方案**
 
-**方法**：基本思想是对链表应用合并排序。
+**方法**：基本思想是对链表应用归并排序。
 
 **本文讨论了该实现**：[合并链表](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)的排序。
 
 **复杂度分析**：
 
-*   **时间复杂度**：链表的合并种类花费`O(n log n)`时间。 在合并排序树中，高度为`log n`。 对每个级别进行排序将花费`O(n)`时间。 因此，时间复杂度为`O(n log n)`。
+*   **时间复杂度**：链表的合并种类花费`O(n log n)`时间。 在归并排序树中，高度为`log n`。 对每个级别排序将花费`O(n)`时间。 因此，时间复杂度为`O(n log n)`。
 
-*   **辅助空间**：`O(n log n)`，在合并排序树中，高度为`log n`。 存储每个级别将占用`O(n)`空间。 因此，空间复杂度为`O(n log n)`。
+*   **辅助空间**：`O(n log n)`，在归并排序树中，高度为`log n`。 存储每个级别将占用`O(n)`空间。 因此，空间复杂度为`O(n log n)`。
 
 **有效解决方案**
 

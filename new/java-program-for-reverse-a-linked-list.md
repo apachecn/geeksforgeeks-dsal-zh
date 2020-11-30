@@ -203,5 +203,5 @@ class LinkedList {
 
 ```
 
-请参阅[的完整文章反向链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)，以了解更多详细信息！
+请参阅[反转链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)的完整文章，以了解更多详细信息！
 

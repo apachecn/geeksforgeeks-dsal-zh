@@ -531,7 +531,7 @@ LIST FOUND
 
 **优化**：
 
-上面的代码可以通过使用额外的空间进行优化，即将列表存储在两个字符串中并应用 [KMP 算法](https://www.geeksforgeeks.org/searching-for-patterns-set-2-kmp-algorithm/)。 请参阅 [https://ide.geeksforgeeks.org/3fXUaV](https://ide.geeksforgeeks.org/3fXUaV) 以获取 [**Nishant Singh**](https://practice.geeksforgeeks.org/user-profile.php?user=_code) 提供的实施方案。
+上面的代码可以通过使用额外的空间进行优化，即将列表存储在两个字符串中并应用 [KMP 算法](https://www.geeksforgeeks.org/searching-for-patterns-set-2-kmp-algorithm/)。 请参阅 [https://ide.geeksforgeeks.org/3fXUaV](https://ide.geeksforgeeks.org/3fXUaV) 以获取 [**Nishant Singh**](https://practice.geeksforgeeks.org/user-profile.php?user=_code) 提供的实现方案。
 
 本文由 [**Sahil Chhabra(akku)**](https://practice.geeksforgeeks.org/user-profile.php?user=sahil_coder) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则也可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/arrange-consonants-vowels-nodes-linked-list/](https://www.geeksforgeeks.org/arrange-consonants-vowels-nodes-linked-list/)
 
-给定一个单链列表，我们需要以这样的方式排列它的辅音和元音节点：所有元音节点都在辅音之前出现，同时保持其到达的顺序。
+给定一个单链表，我们需要以这样的方式排列它的辅音和元音节点：所有元音节点都在辅音之前出现，同时保持其到达的顺序。
 
 例子：
 

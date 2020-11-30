@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/how-coronavirus-outbreak-can-end-visualize-using-data-structures/](https://www.geeksforgeeks.org/how-coronavirus-outbreak-can-end-visualize-using-data-structures/)
 
-每个计算机科学的初学者都曾经想过为什么我们要在图中找到[最短路径，或者](https://www.geeksforgeeks.org/shortest-path-unweighted-graph/)[树](https://www.geeksforgeeks.org/binary-tree-data-structure/)的用途是什么，我们是否要使用圆环链接来玩 [josephus 圆 列表](https://www.geeksforgeeks.org/josephus-circle-using-circular-linked-list/)？
+每个计算机科学的初学者都曾经想过为什么我们要在图中找到[最短路径](https://www.geeksforgeeks.org/shortest-path-unweighted-graph/)，或者[树](https://www.geeksforgeeks.org/binary-tree-data-structure/)的用途是什么，我们是否要使用圆环链接来玩[josephus 环形列表](https://www.geeksforgeeks.org/josephus-circle-using-circular-linked-list/)？
 
 因此，本文参考 [COVID-19](https://www.who.int/health-topics/coronavirus#tab=tab_1) 来讨论[数据结构和算法](https://www.geeksforgeeks.org/data-structures/)在现实世界中的重要性。
 
@@ -34,7 +34,7 @@
 
 如果`R0 < 1`，则在某个时候，一个人将不会再感染另一个人，并且（该叶子的）感染线被破坏了。 我们可以通过使节点指向空引用来在代码中进行建模，这意味着它是链表中的最终节点。
 
-解决冠状病毒情况的一种方法是更改​​病毒的行为，以便可以通过（最终是有限的）链表而不是树来对它进行建模。 [树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，[图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/) & [链表](https://www.geeksforgeeks.org/data-structures/linked-list/)不仅用于 [**FAANG**](https://www.geeksforgeeks.org/tips-to-get-your-resume-shortlisted-for-top-tech-companies/) 采访中， 在建模和解决实际现象中非常有用。
+解决冠状病毒情况的一种方法是更改​​病毒的行为，以便可以通过（最终是有限的）链表而不是树来对它进行建模。 [树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，[图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)和[链表](https://www.geeksforgeeks.org/data-structures/linked-list/)不仅用于 [**FAANG**](https://www.geeksforgeeks.org/tips-to-get-your-resume-shortlisted-for-top-tech-companies/) 面试中， 在建模和解决实际现象中非常有用。
 
 因此，请保持安全并留在内部，以打破日冕病毒的连锁。
 

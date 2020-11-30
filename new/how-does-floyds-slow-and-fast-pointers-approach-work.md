@@ -18,7 +18,7 @@
 
 **循环删除算法如何工作？**
 
-请参阅[检测和删除链表](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)中的循环的方法 3
+请参阅[检测和删除链表中的循环](https://www.geeksforgeeks.org/detect-and-remove-loop-in-a-linked-list/)的方法 3
 
 
 

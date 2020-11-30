@@ -4,9 +4,9 @@
 
 给定一个链表，使用递归函数反向打印。 例如，如果给定的链表为`1 -> 2 -> 3 -> 4`，则输出应为`4 -> 3 -> 2 -> 1`。
 
-注意，问题仅在于打印反面。 要反转列表本身，请参阅[，](https://www.geeksforgeeks.org/reverse-a-linked-list/)，
+注意，问题仅在于打印反面。 要反转列表本身，请参阅[这里](https://www.geeksforgeeks.org/reverse-a-linked-list/)。
 
-**难度级别**：新秀
+**难度级别**：菜鸟
 
 ![reverse-a-link-list](img/2887a61ccc887b8c68af722f22f72ab8.png)
 
@@ -19,7 +19,7 @@ printReverse(head)
 
 ```
 
-**实施**：
+**实现**：
 
 ## C++
 

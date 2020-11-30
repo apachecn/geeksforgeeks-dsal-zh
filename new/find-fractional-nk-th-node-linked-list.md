@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/find-fractional-nk-th-node-linked-list/](https://www.geeksforgeeks.org/find-fractional-nk-th-node-linked-list/)
 
-给定一个单链列表和一个数字`k`，编写一个函数以查找第`n / k`个元素，其中`n`是列表中元素的数量。 在小数的情况下，我们需要考虑对值向上取整。
+给定一个单链表和一个数字`k`，编写一个函数以查找第`n / k`个元素，其中`n`是列表中元素的数量。 在小数的情况下，我们需要考虑对值向上取整。
 
 **示例**：
 

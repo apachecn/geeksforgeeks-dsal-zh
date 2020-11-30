@@ -52,7 +52,7 @@
 > product = 4 * 2 = 8
 > ```
 
-**方法**：的想法是遍历给定的链表，并检查当前节点值的所有数字的[总和是否为偶数](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/)。 如果是，则将当前节点值包括到结果总和以及结果乘积中，否则检查下一个节点值。
+**方法**：想法是遍历给定的链表，并检查当前节点值的所有数字的[总和是否为偶数](https://www.geeksforgeeks.org/program-for-sum-of-the-digits-of-a-given-number/)。 如果是，则将当前节点值包括到结果总和以及结果乘积中，否则检查下一个节点值。
 
 下面是上述方法的实现：
 
