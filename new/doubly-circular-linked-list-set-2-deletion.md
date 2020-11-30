@@ -1,4 +1,4 @@
-# 双向循环链表 | 系列 2（删除）
+# 循环双链表 | 系列 2（删除）
 
 > 原文：[https://www.geeksforgeeks.org/doubly-circular-linked-list-set-2-deletion/](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-2-deletion/)
 

@@ -1,8 +1,8 @@
-# 从循环链表中删除每个第`K`个节点
+# 从循环链表中删除每`K`个节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-every-kth-node-from-circular-linked-list/](https://www.geeksforgeeks.org/delete-every-kth-node-from-circular-linked-list/)
 
-从循环链表中删除每个第`K`个节点，直到只剩下一个节点。 同时打印中间列表。
+从循环链表中删除每`K`个节点，直到只剩下一个节点。 同时打印中间列表。
 
 **示例**：
 

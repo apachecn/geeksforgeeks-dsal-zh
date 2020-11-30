@@ -1,4 +1,4 @@
-# 从双向循环单链表
+# 从循环双单链表
 
 > 原文：[https://www.geeksforgeeks.org/remove-all-even-parity-nodes-from-a-doubly-and-circular-singly-linked-list/](https://www.geeksforgeeks.org/remove-all-even-parity-nodes-from-a-doubly-and-circular-singly-linked-list/)
 

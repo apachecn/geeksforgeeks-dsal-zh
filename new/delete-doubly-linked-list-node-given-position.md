@@ -1,8 +1,6 @@
-# 删除给定位置
+# 删除给定位置的双链表节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-doubly-linked-list-node-given-position/](https://www.geeksforgeeks.org/delete-doubly-linked-list-node-given-position/)
-
-的双链表节点
 
 给定双链表和位置`n`。 任务是从头开始删除给定位置`n`的节点。
 

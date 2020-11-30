@@ -1,8 +1,6 @@
-# 删除右侧
+# 删除右侧具有较大值的节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-nodes-which-have-a-greater-value-on-right-side/](https://www.geeksforgeeks.org/delete-nodes-which-have-a-greater-value-on-right-side/)
-
-上具有较大值的节点
 
 给定一个单链表，请删除右侧所有具有较大值的所有节点。
 

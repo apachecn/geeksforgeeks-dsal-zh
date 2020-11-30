@@ -1,4 +1,4 @@
-# 双链表指南
+# 双链表教程
 
 > 原文：[https://www.geeksforgeeks.org/doubly-linked-list-tutorial/](https://www.geeksforgeeks.org/doubly-linked-list-tutorial/)
 

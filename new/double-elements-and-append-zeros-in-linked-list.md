@@ -1,4 +1,4 @@
-# 双元素并将零添加到链表
+# 加倍元素并将零添加到链表
 
 > 原文：[https://www.geeksforgeeks.org/double-elements-and-append-zeros-in-linked-list/](https://www.geeksforgeeks.org/double-elements-and-append-zeros-in-linked-list/)
 
