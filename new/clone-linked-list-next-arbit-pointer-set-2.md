@@ -1,4 +1,4 @@
-# 使用下一个随机指针克隆链表 | 系列 2
+# 克隆带有下一个随机指针的链表 | 系列 2
 
 > 原文：[https://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/](https://www.geeksforgeeks.org/clone-linked-list-next-arbit-pointer-set-2/)
 

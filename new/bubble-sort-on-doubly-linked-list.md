@@ -1,8 +1,8 @@
-# 气泡在双链表
+# 双链表的冒泡排序
 
 > 原文：[https://www.geeksforgeeks.org/bubble-sort-on-doubly-linked-list/](https://www.geeksforgeeks.org/bubble-sort-on-doubly-linked-list/)
 
-上排序
+
 
 使用[冒泡排序](http://www.geeksforgeeks.org/bubble-sort/)对给定的双链表排序。
 

@@ -1,4 +1,4 @@
-# 克隆栈而没有多余的空间
+# 不使用多余的空间来克隆栈
 
 > 原文：[https://www.geeksforgeeks.org/clone-a-stack-without-extra-space/](https://www.geeksforgeeks.org/clone-a-stack-without-extra-space/)
 

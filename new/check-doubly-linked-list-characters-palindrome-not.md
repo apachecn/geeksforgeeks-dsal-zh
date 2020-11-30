@@ -1,4 +1,4 @@
-# 检查双向链接的字符列表是否是回文
+# 检查字符的双链表是否是回文
 
 > 原文：[https://www.geeksforgeeks.org/check-doubly-linked-list-characters-palindrome-not/](https://www.geeksforgeeks.org/check-doubly-linked-list-characters-palindrome-not/)
 

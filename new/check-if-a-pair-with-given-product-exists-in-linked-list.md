@@ -1,8 +1,6 @@
-# 检查链表
+# 检查链表中是否存在带有给定乘积的对
 
 > 原文：[https://www.geeksforgeeks.org/check-if-a-pair-with-given-product-exists-in-linked-list/](https://www.geeksforgeeks.org/check-if-a-pair-with-given-product-exists-in-linked-list/)
-
-中是否存在与给定产品的对
 
 给定一个链表和一个乘积`K`。任务是检查链表中是否存在两个乘积等于给定数`K`的数字。如果存在两个数字，则打印它们。 如果有多个答案，请打印其中的任何一个。
 

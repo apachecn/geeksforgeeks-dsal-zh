@@ -1,4 +1,4 @@
-# 循环单链表| 插入
+# 循环单链表 | 插入
 
 > 原文：[https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/](https://www.geeksforgeeks.org/circular-singly-linked-list-insertion/)
 
