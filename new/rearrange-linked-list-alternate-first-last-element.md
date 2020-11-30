@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/rearrange-linked-list-alternate-first-last-element/](https://www.geeksforgeeks.org/rearrange-linked-list-alternate-first-last-element/)
 
-给定一个链表。 以交替的第一个和最后一个元素的方式排列链表。
+给定一个链表。 以第一个和最后一个元素的方式交替排列链表。
 
 例子：
 

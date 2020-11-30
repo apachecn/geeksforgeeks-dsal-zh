@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/print-alternate-nodes-linked-listiterative-method/](https://www.geeksforgeeks.org/print-alternate-nodes-linked-listiterative-method/)
 
-给定一个链表，打印链表的交替节点。
+给定一个链表，交替打印链表的节点。
 
 例子：
 

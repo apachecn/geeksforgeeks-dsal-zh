@@ -1,4 +1,4 @@
-# 链表的交替节点的差
+# 链表节点的交替差
 
 > 原文：[https://www.geeksforgeeks.org/subtraction-of-the-alternate-nodes-of-linked-list/](https://www.geeksforgeeks.org/subtraction-of-the-alternate-nodes-of-linked-list/)
 
