@@ -1,8 +1,6 @@
-# 用于检查单链表是否是回文
+# 用于检查单链表是否是回文的函数
 
 > 原文：[https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/](https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)
-
-的功能
 
 给定一个单字符列表，编写一个函数，如果给定列表是回文，则返回`true`，否则返回`false`。
 

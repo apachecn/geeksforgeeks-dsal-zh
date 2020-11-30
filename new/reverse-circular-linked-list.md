@@ -14,7 +14,7 @@
 
 ![OUTPUT:](img/5d99f7959d7e56b765c139b037f23775.png)
 
-**方法**：该方法与[反转单个链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)中的方法相同。 只有在这里，我们才需要通过将反向列表的最后一个节点链接到第一个节点来进行更多调整。
+**方法**：该方法与[反转单链表](https://www.geeksforgeeks.org/reverse-a-linked-list/)中的方法相同。 只有在这里，我们才需要通过将反向列表的最后一个节点链接到第一个节点来进行更多调整。
 
 ## C++
 

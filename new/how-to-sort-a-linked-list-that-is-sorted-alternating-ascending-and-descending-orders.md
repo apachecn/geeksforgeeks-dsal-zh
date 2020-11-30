@@ -1,4 +1,4 @@
-# 对链表排序，该列表按升序和降序交替排序？
+# 对链表排序，该列表按升序和降序交替排序
 
 > 原文：[https://www.geeksforgeeks.org/how-to-sort-a-linked-list-that-is-sorted-alternating-ascending-and-descending-orders/](https://www.geeksforgeeks.org/how-to-sort-a-linked-list-that-is-sorted-alternating-ascending-and-descending-orders/)
 

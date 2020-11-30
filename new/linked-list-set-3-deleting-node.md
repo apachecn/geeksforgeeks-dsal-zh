@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/](https://www.geeksforgeeks.org/linked-list-set-3-deleting-node/)
 
-在单个链表的先前帖子中，我们已经讨论了[链表简介](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)和[链表插入](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)。
+在单链表的先前帖子中，我们已经讨论了[链表简介](http://quiz.geeksforgeeks.org/linked-list-set-1-introduction/)和[链表插入](http://quiz.geeksforgeeks.org/linked-list-set-2-inserting-a-node/)。
 
 让我们制定问题陈述以了解删除过程。 给定一个“键”，请在链表中删除该键的第一个匹配项。
 

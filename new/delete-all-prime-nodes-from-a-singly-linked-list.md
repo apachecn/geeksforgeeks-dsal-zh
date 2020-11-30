@@ -1,4 +1,4 @@
-# 从单个链表中删除所有质数节点
+# 从单链表中删除所有质数节点
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-singly-linked-list/](https://www.geeksforgeeks.org/delete-all-prime-nodes-from-a-singly-linked-list/)
 

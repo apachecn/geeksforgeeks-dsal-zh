@@ -1,4 +1,4 @@
-# 反向链接单个链表中的`K`个节点–迭代解决方案
+# 反向链接单链表中的`K`个节点–迭代解决方案
 
 > 原文：[https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list-iterative-solution/](https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list-iterative-solution/)
 

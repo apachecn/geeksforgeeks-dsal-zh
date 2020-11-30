@@ -1,4 +1,4 @@
-# 反向链接单个链表中的`K`个节点
+# 反向链接单链表中的`K`个节点
 
 > 原文：[https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list/](https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list/)
 

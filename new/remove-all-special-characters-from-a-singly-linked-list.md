@@ -1,4 +1,4 @@
-# 从单个链表中删除所有特殊字符
+# 从单链表中删除所有特殊字符
 
 > 原文：[https://www.geeksforgeeks.org/remove-all-special-characters-from-a-singly-linked-list/](https://www.geeksforgeeks.org/remove-all-special-characters-from-a-singly-linked-list/)
 
