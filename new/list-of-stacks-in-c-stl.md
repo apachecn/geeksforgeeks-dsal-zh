@@ -12,7 +12,7 @@
 list<Type> name_of_list;
 ```
 
-[**栈**](http://www.geeksforgeeks.org/stack-data-structure/) 是一种容器适配器，具有的 LIFO（后进先出）类型，其中有一个新元素 在一端添加，并且（顶部）仅从该端删除元素。
+[**栈**](http://www.geeksforgeeks.org/stack-data-structure/) 是一种容器适配器，具有的 LIFO（后进先出）类型，其中在一端添加新元素，并且仅从该端（顶部）删除元素。
 
 **语法**：
 
