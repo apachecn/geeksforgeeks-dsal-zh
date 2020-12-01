@@ -30,7 +30,7 @@
 
 **方法**：
 
-1.  在链表的开头将节点的值附加为零。
+1.  在链表的开头附加值为零的节点。
 
 2.  [遍历给定的链表](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)。
 

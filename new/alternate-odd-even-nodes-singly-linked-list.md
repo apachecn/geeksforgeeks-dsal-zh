@@ -509,7 +509,7 @@ Linked List after Rearranging:
 
 2.  将列表分为两个列表，奇数和偶数。
 
-3.  将偶数列表合并为奇数列表
+3.  合并偶数列表和奇数列表
 
 ```
 REARRANGE (HEAD)

@@ -819,7 +819,7 @@ Top element is 20
 
 **缺点**：由于涉及指针，因此需要额外的内存。
 
-我们将在单独的文章中介绍栈应用程序的实现。
+我们将在单独的文章中介绍栈应用的实现。
 
 [栈 | 系列 2（中缀转后缀）](http://quiz.geeksforgeeks.org/stack-set-2-infix-to-postfix/)
 
