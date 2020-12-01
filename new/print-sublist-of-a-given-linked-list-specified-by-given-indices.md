@@ -22,7 +22,7 @@
 
     1.  `current`：给定链表的头部
 
-    2.  `subcurrent`：子列表的头
+    2.  `subcurrent`：子列表的头部
 
     3.  `subend`：子列表的尾部。
 

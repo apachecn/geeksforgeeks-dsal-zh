@@ -267,7 +267,7 @@ public static void Main(String[] args)
 
 2.  打印[单链表栈](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)的顶部元素。
 
-3.  从给定的主栈中弹出顶部元素。
+3.  从给定的栈中弹出顶部元素。
 
 4.  按顺序重复上述步骤，直到给定的栈为空。
 
@@ -567,7 +567,7 @@ public static void Main(String[] args)
 
 2.  打印[数组栈](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)的顶部元素。
 
-3.  从给定的主栈中弹出顶部元素。
+3.  从给定的栈中弹出顶部元素。
 
 4.  按顺序重复上述步骤，直到给定的栈为空。
 

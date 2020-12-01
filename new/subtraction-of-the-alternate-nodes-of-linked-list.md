@@ -420,7 +420,7 @@ public static void Main(String[] args) 
 
 1.  初始化静态变量（例如`flag`）。
 
-2.  如果标志为奇数，则从差中减去节点。
+2.  如果`flag`为奇数，则从差中减去节点。
 
 3.  将`head`和`flag`增加 1，然后递归到下一个节点。
 

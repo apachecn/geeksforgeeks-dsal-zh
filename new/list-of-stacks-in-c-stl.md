@@ -20,7 +20,7 @@ list<Type> name_of_list;
 stack name_of_stack;
 ```
 
-**栈列表**是具有一系列栈的容器的类型，这是一个二维容器，其中`N`行的列表和`M`列的栈 ，两个尺寸的大小都是不固定的。 可以使用[迭代器](https://www.geeksforgeeks.org/iterators-c-stl/) 遍历和访问的。
+**栈列表**是具有一系列栈的容器的类型，这是一个二维容器，其中`N`行的列表和`M`列的栈 ，两个大小的大小都是不固定的。 可以使用[迭代器](https://www.geeksforgeeks.org/iterators-c-stl/) 遍历和访问的。
 
 **语法**：
 
@@ -28,7 +28,7 @@ stack name_of_stack;
 list<stack> name_of_container(size);
 ```
 
-尺寸可选。
+大小可选。
 
 ![](img/613ddcac41d3b7f794d44f0223b1d831.png)
 

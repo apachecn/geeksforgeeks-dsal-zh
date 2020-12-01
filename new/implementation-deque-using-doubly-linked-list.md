@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/implementation-deque-using-doubly-linked-list/](https://www.geeksforgeeks.org/implementation-deque-using-doubly-linked-list/)
 
-[双端队列或双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/)是[队列数据结构](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)的通用版本，允许在两端插入和删除。 在[先前文章](https://www.geeksforgeeks.org/implementation-deque-using-circular-array/)中，已经讨论了使用圆形数组实现`Deque`的方法。 现在，在这篇文章中，我们将了解如何使用[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)实现`Deque`。
+[双端队列或双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/)是[队列数据结构](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)的通用版本，允许在两端插入和删除。 在[先前文章](https://www.geeksforgeeks.org/implementation-deque-using-circular-array/)中，已经讨论了使用循环数组实现`Deque`的方法。 现在，在这篇文章中，我们将了解如何使用[双链表](https://www.geeksforgeeks.org/doubly-linked-list/)实现`Deque`。
 
 #### 计票操作；
 

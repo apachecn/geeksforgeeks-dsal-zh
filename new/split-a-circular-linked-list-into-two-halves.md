@@ -24,11 +24,11 @@
 
 感谢 [Geek4u](https://www.geeksforgeeks.org/forum/topic/splitting-a-circular-doubly-linked-list#post-335) 提出了该算法。
 
-1.  使用乌龟和野兔算法存储循环链表的中间和最后一个指针。
+1.  使用龟兔算法存储循环链表的中间和最后一个指针。
 
-2.  将后半部分做成圆形。
+2.  将后半部分变成循环。
 
-3.  使前半部分变成圆形。
+3.  使前半部分变成循环。
 
 4.  设置两个链表的开头（或开始）指针。
 

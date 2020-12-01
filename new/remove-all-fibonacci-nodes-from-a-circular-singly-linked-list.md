@@ -28,7 +28,7 @@
 
 **方法**：想法是使用[哈希](http://www.geeksforgeeks.org/hashing-data-structure/)来预先计算并存储[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，然后检查节点是否在`O(1)`时间中包含斐波那契值 。
 
-1.  遍历整个圆形单链表，并在列表中获得最大值。
+1.  遍历整个循环单链表，并在列表中获得最大值。
 
 2.  现在，为了检查斐波那契数，建立一个[哈希表](https://www.geeksforgeeks.org/hashing-set-1-introduction/)，其中包含所有小于或等于圆单链表中最大值的斐波那契数。
 
