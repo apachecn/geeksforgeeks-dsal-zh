@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/](https://www.geeksforgeeks.org/implement-a-stack-using-singly-linked-list/)
 
-使用单链表概念实现[栈](http://www.geeksforgeeks.org/stack-data-structure/)。 所有单个[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)操作都是基于栈操作 LIFO（后进先出）执行的，借助这一知识，我们将使用单链表实现栈。 使用单链表，所以在这里如何实现链表意味着我们以节点的形式存储信息，我们需要遵循栈规则，并且需要使用单链表节点来实现，所以我们需要什么规则 在栈的实现中遵循一个简单的规则，即后进先出，我们应该在`top`变量的帮助下执行的所有操作仅在`top`变量的帮助下如何插入元素
+使用单链表概念实现[栈](http://www.geeksforgeeks.org/stack-data-structure/)。 所有单个[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)操作都是基于栈操作 LIFO（后进先出）执行的，借助这一知识，我们将使用单链表实现栈。 使用单链表，所以在这里如何实现链表意味着我们以节点的形式存储信息，我们需要遵循栈规则，并且需要使用单链表节点来实现，所以我们需要在栈的实现中遵循一个简单的规则，即后进先出，我们应该在`top`变量的帮助下执行的所有操作仅在`top`变量的帮助下如何插入元素
 
 ![](img/2ff65df4659cd0868f221729a88fc111.png)
 

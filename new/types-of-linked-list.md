@@ -243,7 +243,7 @@ public static void Main(String[] args)
 
 ```
 
-*   [**双链表**](https://www.geeksforgeeks.org/doubly-linked-list/)：双链表或双链表是链表的一种更复杂的类型，它包含顺序指向下一个节点和上一个节点的指针 因此，它包含三部分：数据，指向下一个节点的指针和指向上一个节点的指针。 这也使我们能够向后遍历列表。 以下是相同的图片：
+*   [**双链表**](https://www.geeksforgeeks.org/doubly-linked-list/)：双链表或双链表是链表的一种更复杂的类型，它包含顺序指向下一个节点和上一个节点的指针。因此，它包含三部分：数据，指向下一个节点的指针和指向上一个节点的指针。 这也使我们能够向后遍历列表。 以下是相同的图片：
 
 ![](img/69b16aec47e61c0f7fafd8c31e54dfa8.png)
 
