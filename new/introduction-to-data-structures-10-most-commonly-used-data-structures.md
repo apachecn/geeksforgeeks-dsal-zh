@@ -10,7 +10,7 @@
 
     ![](img/06ae604a79a0646affeb3b79ae905dcd.png)
 
-2.  [**链表**](https://www.geeksforgeeks.org/data-structures/linked-list/)：像数组一样，链表是线性数据结构。 与数组不同，链接列表元素不存储在连续的位置； 元素使用指针链接。
+2.  [**链表**](https://www.geeksforgeeks.org/data-structures/linked-list/)：像数组一样，链表是线性数据结构。 与数组不同，链表元素不存储在连续的位置； 元素使用指针链接。
 
     ![linkedlist](img/d97a233bf3c89e80c46e6a3193e851d6.png)
 
@@ -42,7 +42,7 @@
 
     *   `rear`：从队列中获取最后一个项目。
 
-5.  [**二叉树**](https://www.geeksforgeeks.org/binary-tree-data-structure/)：与数组，链表，堆栈和队列（它们是线性数据结构）不同，树是分层数据结构。 二叉树是一种树数据结构，其中每个节点最多具有两个子节点，称为左子节点和右子节点。 它主要使用链接来实现。
+5.  [**二叉树**](https://www.geeksforgeeks.org/binary-tree-data-structure/)：与数组，链表，栈和队列（它们是线性数据结构）不同，树是分层数据结构。 二叉树是一种树数据结构，其中每个节点最多具有两个子节点，称为左子节点和右子节点。 它主要使用链接来实现。
 
     二叉树由指向树中最高节点的指针表示。 如果树为空，则根的值为`NULL`。 二叉树节点包含以下部分。
 

@@ -493,5 +493,5 @@ void AlternatingSplit(struct Node* source, struct Node** aRef, 
 
 来源： [http://cslibrary.stanford.edu/105/LinkedListProblems.pdf](http://cslibrary.stanford.edu/105/LinkedListProblems.pdf)
 
-如果您发现上述代码/算法有误，请写注释，或者找到解决同一问题的更好方法。
+如果您发现上述代码/算法有误，请写评论，或者找到解决同一问题的更好方法。
 

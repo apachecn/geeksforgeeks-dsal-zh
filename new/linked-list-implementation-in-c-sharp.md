@@ -28,15 +28,15 @@
 
 #### 如何创建一个`LinkedList`？
 
-`LinkedList`类具有 3 个用于创建`LinkedList`的构造函数，如下所示：
+`LinkedList`类具有 3 个用于创建`LinkedList`的构造器，如下所示：
 
-*   `LinkedList()`：此构造函数用于创建为空的`LinkedList`类的实例。
+*   `LinkedList()`：此构造器用于创建为空的`LinkedList`类的实例。
 
-*   `LinkedList()`：此构造函数用于创建`LinkedList`类的实例，该实例包含从指定`IEnumerable`复制的元素，并具有足够的容量来容纳复制的元素数量。
+*   `LinkedList()`：此构造器用于创建`LinkedList`类的实例，该实例包含从指定`IEnumerable`复制的元素，并具有足够的容量来容纳复制的元素数量。
 
-*   `LinkedList(SerializationInfo, StreamingContext)`：此构造函数用于创建`LinkedList`类的实例，该实例可使用指定的`SerializationInfo`和`StreamingContext`进行序列化。
+*   `LinkedList(SerializationInfo, StreamingContext)`：此构造器用于创建`LinkedList`类的实例，该实例可使用指定的`SerializationInfo`和`StreamingContext`进行序列化。
 
-让我们看看如何使用`LinkedList()`构造函数创建`LinkedList`：
+让我们看看如何使用`LinkedList()`构造器创建`LinkedList`：
 
 **步骤 1**：借助关键字`using`在程序中包含`System.Collections.Generic`命名空间：
 

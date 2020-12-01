@@ -234,13 +234,13 @@ Geeks For Geeks
 
 ### `LinkedList`中的构造方法
 
-为了创建一个`LinkedList`，我们需要创建一个`LinkedList`类的对象。 `LinkedList`类由各种构造函数组成，这些构造函数允许创建列表。 以下是此类中可用的构造函数：
+为了创建一个`LinkedList`，我们需要创建一个`LinkedList`类的对象。 `LinkedList`类由各种构造器组成，这些构造器允许创建列表。 以下是此类中可用的构造器：
 
-1.  **`LinkedList()`**：此构造函数用于创建一个空的链表。 如果我们希望创建一个名称为`ll`的空`LinkedList`，则可以将其创建为：
+1.  **`LinkedList()`**：此构造器用于创建一个空的链表。 如果我们希望创建一个名称为`ll`的空`LinkedList`，则可以将其创建为：
 
     `LinkedList ll = new LinkedList();`
 
-2.  **`LinkedList(Collection C)`**：此构造函数用于创建一个有序列表，其中包含指定集合的​​所有元素，由集合的迭代器返回。 如果我们希望创建一个名称为`ll`的链表，则可以将其创建为：
+2.  **`LinkedList(Collection C)`**：此构造器用于创建一个有序列表，其中包含指定集合的​​所有元素，由集合的迭代器返回。 如果我们希望创建一个名称为`ll`的链表，则可以将其创建为：
 
     `LinkedList ll = new LinkedList(c);`
 

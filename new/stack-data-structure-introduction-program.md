@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/stack-data-structure-introduction-program/](https://www.geeksforgeeks.org/stack-data-structure-introduction-program/)
 
-栈是一种线性数据结构，遵循特定的操作顺序。 该订单可以是 LIFO（后进先出）或 FILO（后进先出）。
+栈是一种线性数据结构，遵循特定的操作顺序。 该顺序可以是 LIFO（后进先出）或 FILO（后进先出）。
 
 主要在栈中执行以下三个基本操作：
 
@@ -12,7 +12,7 @@
 
 *   `peek/top`：返回栈的顶部元素。
 
-*   `isEmpty`：如果堆栈为空，则返回`true`，否则返回`false`。
+*   `isEmpty`：如果栈为空，则返回`true`，否则返回`false`。
 
 ![stack](img/91f929ba5f7179300fc713d1f8126678.png)
 
