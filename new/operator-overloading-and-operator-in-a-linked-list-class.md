@@ -8,7 +8,7 @@
 
 C++附带的库提供了执行[输入和输出](https://www.geeksforgeeks.org/basic-input-output-c/)的方法。 在 C++ 中，输入和输出以字节序列（也称为流）的形式执行。 [输入和输出流](https://www.geeksforgeeks.org/basic-input-output-c/)由`iostream`库管理。 `cin`和`cout`是输入流和输出流的标准对象。
 
-我们可以重载`>>`和`<<`运算符，以在[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中输入，并在 C++ 中打印[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中的元素。 它具有为运算符提供针对数据类型的特殊含义的能力，此功能称为[运算符重载](http://www.geeksforgeeks.org/operator-overloading-c/)。
+我们可以重载`>>`和`<<`运算符，以在[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中输入，并在 C++ 中打印[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中的元素。 它具有为运算符提供针对数据类型的特殊含义的能力，此特性称为[运算符重载](http://www.geeksforgeeks.org/operator-overloading-c/)。
 
 重载运算符的语法为：
 
@@ -35,7 +35,7 @@ istream& operator>>(istream& is, node*& head)
 
 **说明**：
 
-上面函数的返回类型是对`istream`对象的引用。 在陈述中：`cin >> head`，`cin`是该功能的第一个参数，对头部的引用是第二个参数。 当执行任何这样的语句时，将调用上述函数。
+上面函数的返回类型是对`istream`对象的引用。 在语句中：`cin >> head`，`cin`是该函数的第一个参数，对头部的引用是第二个参数。 当执行任何这样的语句时，将调用上述函数。
 
 **重载`ostream`运算符`<<`**：
 
@@ -52,7 +52,7 @@ ostream& operator<<(ostream& os, node* head)
 
 **说明**：
 
-上面函数的返回类型是对`ostream`对象的引用。 在陈述中`cout << head`，`cout`是该功能的第一个参数，对`head`的引用是第二个参数。 当执行任何这样的语句时，将调用上述函数。
+上面函数的返回类型是对`ostream`对象的引用。 在语句中`cout << head`，`cout`是该函数的第一个参数，对`head`的引用是第二个参数。 当执行任何这样的语句时，将调用上述函数。
 
 **用于重载`<<`和`>>`运算符的代码**：
 

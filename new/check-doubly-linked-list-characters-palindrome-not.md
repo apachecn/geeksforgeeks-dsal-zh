@@ -320,7 +320,7 @@ It is Palindrome
 
 **相关文章**：
 
-*   [用于检查单链表是否是回文](https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)的功能
+*   [用于检查单链表是否是回文的函数](https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)
 
 *   [检查字符串的链表是否形成回文](https://www.geeksforgeeks.org/check-linked-list-loop-palindrome-not/)
 

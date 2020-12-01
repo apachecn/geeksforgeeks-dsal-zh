@@ -611,7 +611,7 @@ Linked List after removing loop
 
 感谢 WgpShashank 提出了这种方法。
 
-下图是代码中的“删除循环”功能的摘要：
+下图是代码中的“删除循环”函数的摘要：
 
 ![](img/ee131b0da82e5b8dfe20d2d06bef5469.png)
 

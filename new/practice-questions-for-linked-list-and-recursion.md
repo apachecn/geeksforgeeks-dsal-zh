@@ -14,9 +14,9 @@ struct Node
 
 ```
 
-解释以下 C 函数的功能。
+解释以下 C 函数的函数。
 
-**1、以下功能对给定的链表有什么作用？**
+**1、以下函数对给定的链表有什么作用？**
 
 ## C++
 
@@ -104,7 +104,7 @@ static void fun1(Node head)
 
 fun1() prints the given Linked List in reverse manner. For Linked List 1->2->3->4->5, fun1() prints 5->4->3->2->1.
 
-**2、以下功能对给定的链表有什么作用？**
+**2、以下函数对给定的链表有什么作用？**
 
 ## C++
 
@@ -167,7 +167,7 @@ static void fun2(Node head)
 
 fun2() prints alternate nodes of the given Linked List, first from head to end, and then from end to head. If Linked List has even number of nodes, then fun2() skips the last node. For Linked List 1->2->3->4->5, fun2() prints 1 3 5 5 3 1\. For Linked List 1->2->3->4->5->6, fun2() prints 1 3 5 5 3 1.
 
-以下是测试上述功能的完整运行程序。
+以下是测试上述函数的完整运行程序。
 
 ## C++
 

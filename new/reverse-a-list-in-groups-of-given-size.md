@@ -22,7 +22,7 @@
 
 *   返回`prev`（`prev`成为列表的新头部（请参见[迭代方法图解](https://www.geeksforgeeks.org/reverse-a-linked-list/)）。
 
-下图显示了反向功能的工作原理：
+下图显示了反转函数的工作原理：
 
 ![](img/3f1748b21788d25062bb837e8bbde98b.png)
 

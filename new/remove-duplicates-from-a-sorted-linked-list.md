@@ -12,7 +12,7 @@
 
 **实现**：
 
-除了`removeDuplicates()`之外的其他功能仅用于创建链接链表并测试`removeDuplicates()`。
+除了`removeDuplicates()`之外的其他函数仅用于创建链接链表并测试`removeDuplicates()`。
 
 ## C++
 

@@ -220,7 +220,7 @@ Geeks For Geeks
 
 ![List-ArrayList-in-Java-In-Depth-Study](img/9b5d4717a0bb9dd15d6dc598671940cb.png)
 
-在上图中，[`AbstractList`](https://www.geeksforgeeks.org/abstractlist-in-java-with-examples/)，[`CopyOnWriteArrayList`](https://www.geeksforgeeks.org/copyonwritearraylist-in-java/)和[`AbstractSequentialList`](https://www.geeksforgeeks.org/abstractsequentiallist-in-java-with-examples/)是实现列表接口的类。 在每个提到的类中实现了单独的功能。 他们是：
+在上图中，[`AbstractList`](https://www.geeksforgeeks.org/abstractlist-in-java-with-examples/)，[`CopyOnWriteArrayList`](https://www.geeksforgeeks.org/copyonwritearraylist-in-java/)和[`AbstractSequentialList`](https://www.geeksforgeeks.org/abstractsequentiallist-in-java-with-examples/)是实现列表接口的类。 在每个提到的类中实现了单独的函数。 他们是：
 
 1.  **`AbstractList`**：此类用于实现不可修改的列表，为此，只需扩展此`AbstractList`类并仅实现`get()`和`size()`方法。
 

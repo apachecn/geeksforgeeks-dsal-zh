@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/reverse-stack-without-using-extra-space/](https://www.geeksforgeeks.org/reverse-stack-without-using-extra-space/)
 
-在不使用递归和多余空间的情况下反转[栈](https://www.geeksforgeeks.org/stack-data-structure/)。 甚至连功能栈都不允许。
+在不使用递归和多余空间的情况下反转[栈](https://www.geeksforgeeks.org/stack-data-structure/)。 甚至连函数栈都不允许。
 
 **示例**：
 

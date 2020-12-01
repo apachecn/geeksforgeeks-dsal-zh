@@ -16,7 +16,7 @@
 
 2.  对由仲裁指针形成的链表进行归并排序。](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)
 
-以下是上述想法的实现。 所有归并排序功能均取自[这里](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)。 在此修改了采用的函数，以便它们在仲裁指针上工作，而不是在下一个指针上工作。
+以下是上述想法的实现。 所有归并排序函数均取自[这里](https://www.geeksforgeeks.org/merge-sort-for-linked-list/)。 在此修改了采用的函数，以便它们在仲裁指针上工作，而不是在下一个指针上工作。
 
 ## C++
 

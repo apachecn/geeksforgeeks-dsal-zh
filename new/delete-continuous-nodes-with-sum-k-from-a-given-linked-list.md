@@ -34,7 +34,7 @@
 
 2.  [遍历给定的链表](https://www.geeksforgeeks.org/recursive-insertion-and-traversal-linked-list/)。
 
-3.  在遍历期间，将节点值的总和存储到该节点，并以[`unordered_map`](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)作为当前节点的参考。
+3.  在遍历期间，将节点值的总和存储到该节点，并以[`unordered_map`](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)作为当前节点的引用。
 
 4.  如果在`unordered_map`中存在值为`sum – K`的节点，则删除映射中与存储的值`sum – K`对应的节点到当前节点的所有节点，并将和更新为`0`。
 

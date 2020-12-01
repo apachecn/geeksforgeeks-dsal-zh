@@ -559,7 +559,7 @@ public class Node {
 
 *   **时间复杂度**：`O(nk logk)`。
 
-    由于功能`mergeKLists()`中的外部`while`循环运行`k`次，每次处理`nk`个元素时，运行`log`。
+    由于函数`mergeKLists()`中的外部`while`循环运行`k`次，每次处理`nk`个元素时，运行`log`。
 
 *   **辅助空间**：`O(1)`。
 

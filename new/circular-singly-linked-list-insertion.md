@@ -52,7 +52,7 @@
 
 插入后，`T`是最后一个节点，因此指针`last`指向节点`T`。节点`T`是第一个和最后一个节点，因此`T`指向自身。
 
-用于将节点插入空列表的功能，
+用于将节点插入空列表的函数，
 
 ## C++
 
@@ -96,7 +96,7 @@ struct Node *addToEmpty(struct Node *last, int data)
 
 ![](img/dfdac12b3c9365b2e9043a4787f95460.png)
 
-将节点插入列表开头的功能，
+将节点插入列表开头的函数，
 
 ## C++
 
@@ -141,7 +141,7 @@ struct Node *addBegin(struct Node *last, int data)
 
 ![](img/aa9417e5e2e0b0567bae3e040931bf4f.png)
 
-将节点插入列表末尾的功能，
+将节点插入列表末尾的函数，
 
 ## C++
 
@@ -189,7 +189,7 @@ struct Node *addEnd(struct Node *last, int data)
 
 ![](img/d88b6f895d8e36bea9d3820ce9a46d6e.png)
 
-将节点插入列表末尾的功能，
+将节点插入列表末尾的函数，
 
 ## C++
 
