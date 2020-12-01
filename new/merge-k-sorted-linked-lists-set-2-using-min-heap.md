@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists-set-2-using-min-heap/)
 
-给定`k`链表，每个链表的大小为`n`，并且每个列表以非降序排序，将它们合并为一个排序的（非降序）链表，并打印排序的链接 列出作为输出。
+给定`k`链表，每个链表的大小为`n`，并且每个列表以非降序排序，将它们合并为一个排序的（非降序）链表，并打印排序的链表作为输出。
 
 **示例**：
 

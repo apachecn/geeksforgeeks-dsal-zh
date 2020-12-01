@@ -8,7 +8,7 @@
 
 C++附带的库提供了执行[输入和输出](https://www.geeksforgeeks.org/basic-input-output-c/)的方法。 在 C++ 中，输入和输出以字节序列（也称为流）的形式执行。 [输入和输出流](https://www.geeksforgeeks.org/basic-input-output-c/)由`iostream`库管理。 `cin`和`cout`是输入流和输出流的标准对象。
 
-我们可以重载`>>`和`<<`运算符，以在[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中输入 并在 C++ 中打印[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中的元素。 它具有为运算符提供针对数据类型的特殊含义的能力，此功能称为[运算符重载](http://www.geeksforgeeks.org/operator-overloading-c/)。
+我们可以重载`>>`和`<<`运算符，以在[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中输入，并在 C++ 中打印[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)中的元素。 它具有为运算符提供针对数据类型的特殊含义的能力，此功能称为[运算符重载](http://www.geeksforgeeks.org/operator-overloading-c/)。
 
 重载运算符的语法为：
 
@@ -56,7 +56,7 @@ ostream& operator<<(ostream& os, node* head)
 
 **用于重载`<<`和`>>`运算符的代码**：
 
-以下是`<<`和`>>`运算符的重载代码，其使用数字`N`作为 连续输入并在链表中插入数字`N`，直到`N = -1`。
+以下是`<<`和`>>`运算符的重载代码，其使用数字`N`作为连续输入并在链表中插入数字`N`，直到`N = -1`。
 
 ```
 

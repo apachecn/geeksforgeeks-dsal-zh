@@ -36,13 +36,13 @@
 
 3.  在遍历期间，将节点值的总和存储到该节点，并以[`unordered_map`](http://www.geeksforgeeks.org/unordered_map-in-stl-and-its-applications/)作为当前节点的参考。
 
-4.  如果在`unordered_map`中存在值为`sum – K`的节点，则从节点中删除与存储的值`sum – K`对应的所有节点 映射到当前节点，并将和更新为`0`。
+4.  如果在`unordered_map`中存在值为`sum – K`的节点，则删除映射中与存储的值`sum – K`对应的节点到当前节点的所有节点，并将和更新为`0`。
 
 5.  如果在`unordered_map`中不存在`sum – K`值的节点，则将当前总和与节点存储在映射中。
 
 下面是上述方法的实现：
 
-```
+```cpp
 
 // C++ program for the above approach 
 
