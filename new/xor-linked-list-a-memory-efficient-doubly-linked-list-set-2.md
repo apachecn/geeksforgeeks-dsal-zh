@@ -2,11 +2,11 @@
 
 > 原文：[https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-2/)
 
-在[上一篇文章](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)中，我们讨论了如何在每个节点的地址字段中仅使用一个空格来创建双向链接。 在这篇文章中，我们将讨论内存高效的双链表的实现。 我们将主要讨论以下两个简单功能。
+在[上一篇文章](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)中，我们讨论了如何在每个节点的地址字段中仅使用一个空格来创建双向链接。 在这篇文章中，我们将讨论内存高效的双链表的实现。 我们将主要讨论以下两个简单函数。
 
-1.  在开始处插入新节点的功能。
+1.  在开始处插入新节点的函数。
 
-2.  向前遍历列表的功能。
+2.  向前遍历列表的函数。
 
 在以下代码中， `insert()`函数在开始处插入一个新节点。 我们需要更改链表的头指针，这就是为什么要使用双指针的原因（请参见[这里](https://www.geeksforgeeks.org/how-to-write-functions-that-modify-the-head-pointer-of-a-linked-list/)）。 让我们首先再次讨论[以前的帖子](https://www.geeksforgeeks.org/xor-linked-list-a-memory-efficient-doubly-linked-list-set-1/)中讨论过的几件事。 我们将下一个节点和上一个节点的 XOR 与每个节点存储在一起，我们将其称为`npx`，这是每个节点唯一的地址成员。 当我们在开始处插入新节点时，新节点的`npx`将始终为`NULL`与当前头的 XOR。 并且当前头的`npx`必须更改为新节点与当前头旁边的节点的 XOR。
 
