@@ -37,11 +37,11 @@ Explanation: The output list is in sorted order.
 
 5.  递归函数将返回与其余已排序元素链接的下一个较小元素。 现在将当前元素的下一个指向该元素，即`curr_ele->next = recursivefunction()`
 
-6.  处理一些角落情况。
+6.  处理一些边界情况。
 
-    *   如果两个头都为`NULL`，则返回`null`。
+    *   如果两个头部都为`NULL`，则返回`null`。
 
-    *   如果一个头为空，则返回另一个。
+    *   如果一个头部为空，则返回另一个。
 
 ## C++
 

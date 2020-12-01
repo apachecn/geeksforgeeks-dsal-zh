@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/delete-all-the-nodes-from-the-list-which-are-less-than-k/](https://www.geeksforgeeks.org/delete-all-the-nodes-from-the-list-which-are-less-than-k/)
 
-给定一个链表和一个密钥`K`。任务是编写一个程序，从列表中删除所有小于密钥`K`的节点。
+给定一个链表和一个键`K`。任务是编写一个程序，从列表中删除所有小于键`K`的节点。
 
 **示例**：
 

@@ -4,7 +4,7 @@
 
 我们已经讨论了[循环双链表介绍及其插入](https://www.geeksforgeeks.org/doubly-circular-linked-list-set-1-introduction-and-insertion/)。
 
-让我们制定问题陈述以了解删除过程。 给定键，请删除此密钥在循环双链表中的第一个匹配项。
+让我们制定问题陈述以了解删除过程。 给定键，请删除此键在循环双链表中的第一个匹配项。
 
 **算法**
 

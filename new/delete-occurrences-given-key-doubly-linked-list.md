@@ -2,7 +2,7 @@
 
 > 原文：[https://www.geeksforgeeks.org/delete-occurrences-given-key-doubly-linked-list/](https://www.geeksforgeeks.org/delete-occurrences-given-key-doubly-linked-list/)
 
-给定一个双链表和一个键`x`。 问题是从双链表中删除所有出现的给定密钥`x`。
+给定一个双链表和一个键`x`。 问题是从双链表中删除所有出现的给定键`x`。
 
 例子：
 
