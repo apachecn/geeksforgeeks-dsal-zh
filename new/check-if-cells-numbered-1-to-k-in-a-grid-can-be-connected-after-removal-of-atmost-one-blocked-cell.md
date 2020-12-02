@@ -1,0 +1,559 @@
+# 移除至少一个阻塞的单元后，检查网格中编号为 1 到 K 的单元是否可以连接
+
+> 原文： [https://www.geeksforgeeks.org/check-if-cells-numbered-1-to-k-in-a-grid-can-be-connected-after-removal-of-atmost-one-blocked-cell/](https://www.geeksforgeeks.org/check-if-cells-numbered-1-to-k-in-a-grid-can-be-connected-after-removal-of-atmost-one-blocked-cell/)
+
+给定大小为 **N * M** 的网格 **A** ，该网格由 **K** 单元格组成，这些单元格由 **[1，K]** 范围内的值表示 “ HTG8]被阻塞的细胞由-1 表示，其余**未阻塞的细胞由 0** 表示，任务是检查是否有可能通过最多不阻塞**直接或间接连接那些 K 细胞 1 个**细胞。 只能移动到相邻的水平和垂直单元格。
+
+**范例**
+
+```
+Input:
+A = {{0, 5, 6, 0}, 
+     {3, -1, -1, 4}, 
+     {-1, 2, 1, -1}, 
+     {-1, -1, -1, -1}},
+K = 6
+Output: Yes
+Explanation: 
+Unblocking cell (2, 2) or (2, 3) or (3, 1) or
+(3, 4) would make all the K cells connected.
+
+Input:
+A = {{-1, -1, 3, -1}, 
+     {1, 0, -1, -1}, 
+     {-1, -1, -1, 0}, 
+     {-1, 0, 2, -1}},
+K = 3
+Output: No
+Explanation:
+Atleast two cells need to be unblocked.
+
+```
+
+**方法：**从编号为 **1 到 K** 的单元中执行 **[BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/)** ，并用它所属的组件标记每个单元。 检查是否有相邻单元属于不同组件的阻塞单元。 如果存在，则可以通过解锁该单元来进行连接。 否则，这是不可能的。
+
+**示例：**
+
+> 在执行 **BFS** 并通过其组件编号标记单元格后，数组显示如下：
+> A = {{{1，1，1，1}，{1，-1，-1， 1}，{-1、2、2，-1}，{-1，-1，-1，-1}}
+> 单元格（2、2）周围不同标签的数量为 2。
+> 因此，解除阻塞将连接 K 个单元。
+
+下面是上述方法的实现：
+
+## C ++
+
+```
+
+// C++ implementation of the above approach 
+
+#include <bits/stdc++.h> 
+using namespace std; 
+#define pairs pair<int, int> 
+
+void check(int k, vector<vector<int> > a, 
+           int n, int m) 
+{ 
+    int cells[k][2]; 
+    bool visited[n][m]; 
+    int count = 0; 
+    for (int i = 0; i < n; i++) { 
+        for (int j = 0; j < m; j++) { 
+
+            if (a[i][j] != 0 
+                && a[i][j] != -1) { 
+
+                cells[count][0] = i; 
+                cells[count][1] = j; 
+                count++; 
+            } 
+            visited[i][j] = false; 
+        } 
+    } 
+
+    // Arrays to make grid traversals easier 
+    int dx[] = { 0, 0, 1, -1 }; 
+    int dy[] = { 1, -1, 0, 0 }; 
+
+    // Store number of components 
+    int component = 0; 
+
+    // Perform BFS and maark every cell 
+    // by the component in which it belongs 
+    for (int i = 0; i < k; i++) { 
+
+        int x = cells[i][0], y = cells[i][1]; 
+
+        if (visited[x][y]) 
+            continue; 
+        component++; 
+        queue<pairs> cells; 
+        cells.push(make_pair(x, y)); 
+        visited[x][y] = true; 
+
+        while (!cells.empty()) { 
+
+            pairs z = cells.front(); 
+            cells.pop(); 
+            a[z.first][z.second] = component; 
+
+            for (int j = 0; j < 4; j++) { 
+
+                int new_x = z.first + dx[j]; 
+                int new_y = z.second + dy[j]; 
+                if (new_x < 0 || new_x >= n 
+                    || new_y < 0 || new_y >= m) 
+                    continue; 
+                if (visited[new_x][new_y] 
+                    || a[new_x][new_y] == -1) 
+                    continue; 
+
+                cells.push(make_pair(new_x, new_y)); 
+                visited[new_x][new_y] = true; 
+            } 
+        } 
+    } 
+
+    int maximum = 0; 
+    for (int i = 0; i < n; i++) { 
+        for (int j = 0; j < m; j++) { 
+
+            if (a[i][j] == -1) { 
+                unordered_set<int> set; 
+                for (int kk = 0; kk < 4; kk++) { 
+
+                    int xx = i + dx[kk]; 
+                    int yy = j + dy[kk]; 
+                    if (xx < 0 || xx >= n 
+                        || yy < 0 || yy >= m) 
+                        continue; 
+
+                    // if the cell doesn't 
+                    // belong to any component 
+                    if (a[xx][yy] <= 0) 
+                        continue; 
+                    set.insert(a[xx][yy]); 
+                } 
+                int s = set.size(); 
+                maximum = max(s, maximum); 
+            } 
+        } 
+    } 
+
+    if (maximum == component) { 
+        cout << "Yes\n"; 
+    } 
+    else { 
+        cout << "No\n"; 
+    } 
+} 
+int main() 
+{ 
+    int k = 6; 
+    int n = 4, m = 4; 
+    vector<vector<int> > a 
+        = { { 0, 5, 6, 0 }, 
+            { 3, -1, -1, 4 }, 
+            { -1, 2, 1, -1 }, 
+            { -1, -1, -1, -1 } }; 
+
+    check(k, a, n, m); 
+    return 0; 
+} 
+
+```
+
+## 爪哇
+
+```
+
+// Java implementation of the above approach 
+import java.util.*; 
+
+class GFG{ 
+    static class pair 
+    {  
+        int first, second;  
+        public pair(int first, int second)   
+        {  
+            this.first = first;  
+            this.second = second;  
+        }     
+    }  
+static void check(int k, int [][]a, 
+           int n, int m) 
+{ 
+    int [][]cell = new int[k][2]; 
+    boolean [][]visited = new boolean[n][m]; 
+    int count = 0; 
+    for (int i = 0; i < n; i++) { 
+        for (int j = 0; j < m; j++) { 
+
+            if (a[i][j] != 0
+                && a[i][j] != -1) { 
+
+                cell[count][0] = i; 
+                cell[count][1] = j; 
+                count++; 
+            } 
+            visited[i][j] = false; 
+        } 
+    } 
+
+    // Arrays to make grid traversals easier 
+    int dx[] = { 0, 0, 1, -1 }; 
+    int dy[] = { 1, -1, 0, 0 }; 
+
+    // Store number of components 
+    int component = 0; 
+
+    // Perform BFS and maark every cell 
+    // by the component in which it belongs 
+    for (int i = 0; i < k; i++) { 
+
+        int x = cell[i][0], y = cell[i][1]; 
+
+        if (visited[x][y]) 
+            continue; 
+        component++; 
+        Queue<pair> cells = new LinkedList<>(); 
+        cells.add(new pair(x, y)); 
+        visited[x][y] = true; 
+
+        while (!cells.isEmpty()) { 
+
+            pair z = cells.peek(); 
+            cells.remove(); 
+            a[z.first][z.second] = component; 
+
+            for (int j = 0; j < 4; j++) { 
+
+                int new_x = z.first + dx[j]; 
+                int new_y = z.second + dy[j]; 
+                if (new_x < 0 || new_x >= n 
+                    || new_y < 0 || new_y >= m) 
+                    continue; 
+                if (visited[new_x][new_y] 
+                    || a[new_x][new_y] == -1) 
+                    continue; 
+
+                cells.add(new pair(new_x, new_y)); 
+                visited[new_x][new_y] = true; 
+            } 
+        } 
+    } 
+
+    int maximum = 0; 
+    for (int i = 0; i < n; i++) { 
+        for (int j = 0; j < m; j++) { 
+
+            if (a[i][j] == -1) { 
+                HashSet<Integer> set = new HashSet<Integer>(); 
+                for (int kk = 0; kk < 4; kk++) { 
+
+                    int xx = i + dx[kk]; 
+                    int yy = j + dy[kk]; 
+                    if (xx < 0 || xx >= n 
+                        || yy < 0 || yy >= m) 
+                        continue; 
+
+                    // if the cell doesn't 
+                    // belong to any component 
+                    if (a[xx][yy] <= 0) 
+                        continue; 
+                    set.add(a[xx][yy]); 
+                } 
+                int s = set.size(); 
+                maximum = Math.max(s, maximum); 
+            } 
+        } 
+    } 
+
+    if (maximum == component) { 
+        System.out.print("Yes\n"); 
+    } 
+    else { 
+        System.out.print("No\n"); 
+    } 
+} 
+
+public static void main(String[] args) 
+{ 
+    int k = 6; 
+    int n = 4, m = 4; 
+    int [][]a 
+        = { { 0, 5, 6, 0 }, 
+            { 3, -1, -1, 4 }, 
+            { -1, 2, 1, -1 }, 
+            { -1, -1, -1, -1 } }; 
+
+    check(k, a, n, m); 
+} 
+} 
+
+// This code is contributed by 29AjayKumar 
+
+```
+
+## Python3
+
+```
+
+# Python3 implementation of the above approach 
+from collections import deque as queue 
+def check(k, a, n, m): 
+
+    cells = [[0 for i in range(2)] for i in range(k)] 
+    visited = [[0 for i in range(m)] for i in range(n)] 
+    count = 0
+    for i in range(n): 
+        for j in range(m): 
+
+            if (a[i][j] != 0
+                and a[i][j] != -1): 
+
+                cells[count][0] = i 
+                cells[count][1] = j 
+                count += 1
+
+            visited[i][j] = False
+
+    # Arrays to make grid traversals easier 
+    dx = [0, 0, 1, -1] 
+    dy = [1, -1, 0, 0] 
+
+    # Store number of components 
+    component = 0
+
+    # Perform BFS and maark every cell 
+    # by the component in which it belongs 
+    for i in range(k): 
+
+        x = cells[i][0] 
+        y = cells[i][1] 
+
+        if (visited[x][y]): 
+            continue
+        component += 1
+        cell = queue() 
+        cell.append([x, y]) 
+        visited[x][y] = True
+
+        while (len(cell) > 0): 
+
+            z = cell.popleft() 
+            a[z[0]][z[1]] = component 
+
+            for j in range(4): 
+
+                new_x = z[0] + dx[j] 
+                new_y = z[1] + dy[j] 
+                if (new_x < 0 or new_x >= n 
+                    or new_y < 0 or new_y >= m): 
+                    continue
+                if (visited[new_x][new_y] 
+                    or a[new_x][new_y] == -1): 
+                    continue
+
+                cell.append([new_x, new_y]) 
+                visited[new_x][new_y] = True
+
+    maximum = 0
+    for i in range(n): 
+        for j in range(m): 
+
+            if (a[i][j] == -1): 
+                se = dict() 
+                for kk in range(4): 
+
+                    xx = i + dx[kk] 
+                    yy = j + dy[kk] 
+                    if (xx < 0 or xx >= n 
+                        or yy < 0 or yy >= m): 
+                        continue
+
+                    # if the cell doesn't 
+                    # belong to any component 
+                    if (a[xx][yy] <= 0): 
+                        continue
+                    se[a[xx][yy]] = 1
+
+                s = len(se) 
+                maximum = max(s, maximum) 
+
+    if (maximum == component): 
+        print("Yes\n") 
+
+    else: 
+        print("No\n") 
+
+# Driver code 
+if __name__ == '__main__': 
+    k = 6
+    n = 4
+    m = 4
+    a=[[0, 5, 6, 0 ], 
+    [3, -1, -1, 4], 
+    [-1, 2, 1, -1], 
+    [-1, -1,-1,-1]] 
+
+    check(k, a, n, m) 
+
+# This code is contributed by mohit kumar 29 
+
+```
+
+## C＃
+
+```
+
+// C# implementation of the above approach 
+using System; 
+using System.Collections.Generic; 
+
+class GFG{ 
+    class pair 
+    {  
+        public int first, second;  
+        public pair(int first, int second)   
+        {  
+            this.first = first;  
+            this.second = second;  
+        }     
+    }  
+static void check(int k, int [,]a, 
+           int n, int m) 
+{ 
+    int [,]cell = new int[k,2]; 
+    bool [,]visited = new bool[n,m]; 
+    int count = 0; 
+    for (int i = 0; i < n; i++) { 
+        for (int j = 0; j < m; j++) { 
+
+            if (a[i, j] != 0 
+                && a[i, j] != -1) { 
+
+                cell[count, 0] = i; 
+                cell[count, 1] = j; 
+                count++; 
+            } 
+            visited[i, j] = false; 
+        } 
+    } 
+
+    // Arrays to make grid traversals easier 
+    int []dx = { 0, 0, 1, -1 }; 
+    int []dy = { 1, -1, 0, 0 }; 
+
+    // Store number of components 
+    int component = 0; 
+
+    // Perform BFS and maark every cell 
+    // by the component in which it belongs 
+    for (int i = 0; i < k; i++) { 
+
+        int x = cell[i, 0], y = cell[i, 1]; 
+
+        if (visited[x, y]) 
+            continue; 
+        component++; 
+        List<pair> cells = new List<pair>(); 
+        cells.Add(new pair(x, y)); 
+        visited[x, y] = true; 
+
+        while (cells.Count != 0) { 
+
+            pair z = cells[0]; 
+            cells.RemoveAt(0); 
+            a[z.first,z.second] = component; 
+
+            for (int j = 0; j < 4; j++) { 
+
+                int new_x = z.first + dx[j]; 
+                int new_y = z.second + dy[j]; 
+                if (new_x < 0 || new_x >= n 
+                    || new_y < 0 || new_y >= m) 
+                    continue; 
+                if (visited[new_x,new_y] 
+                    || a[new_x, new_y] == -1) 
+                    continue; 
+
+                cells.Add(new pair(new_x, new_y)); 
+                visited[new_x, new_y] = true; 
+            } 
+        } 
+    } 
+
+    int maximum = 0; 
+    for (int i = 0; i < n; i++) { 
+        for (int j = 0; j < m; j++) { 
+
+            if (a[i, j] == -1) { 
+                HashSet<int> set = new HashSet<int>(); 
+                for (int kk = 0; kk < 4; kk++) { 
+
+                    int xx = i + dx[kk]; 
+                    int yy = j + dy[kk]; 
+                    if (xx < 0 || xx >= n 
+                        || yy < 0 || yy >= m) 
+                        continue; 
+
+                    // if the cell doesn't 
+                    // belong to any component 
+                    if (a[xx, yy] <= 0) 
+                        continue; 
+                    set.Add(a[xx, yy]); 
+                } 
+                int s = set.Count; 
+                maximum = Math.Max(s, maximum); 
+            } 
+        } 
+    } 
+
+    if (maximum == component) { 
+        Console.Write("Yes\n"); 
+    } 
+    else { 
+        Console.Write("No\n"); 
+    } 
+} 
+
+public static void Main(String[] args) 
+{ 
+    int k = 6; 
+    int n = 4, m = 4; 
+    int [,]a 
+        = { { 0, 5, 6, 0 }, 
+            { 3, -1, -1, 4 }, 
+            { -1, 2, 1, -1 }, 
+            { -1, -1, -1, -1 } }; 
+
+    check(k, a, n, m); 
+} 
+} 
+
+// This code is contributed by 29AjayKumar 
+
+```
+
+**Output:**
+
+```
+Yes
+
+```
+
+**效果分析：**
+
+*   **时间复杂度：**在矩阵上执行 BFS 需要 O（N * M）时间，而 **O（N * M）**时间要检查每个阻塞的单元。 因此，总体时间复杂度将为 **O（N * M）**。
+*   **辅助空间复杂度：** O（N * M）
+
+[![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
+
+* * *
+
+* * *
+
+如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
+如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
