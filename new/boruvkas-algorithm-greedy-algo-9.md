@@ -29,9 +29,9 @@
 
 让我们通过以下示例来了解算法。
 
-[![](img/16aae8065a8aa7bda0a6d79e0df2b85a.png "Fig 0")](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Fig-0.jpg) 
+![](img/16aae8065a8aa7bda0a6d79e0df2b85a.png "Fig 0") 
 最初，MST 为空。 每个顶点都是单一成分，在下图中以蓝色突出显示。
-[![4](img/c50c8942a605ae42d229d2b5f3dbc6be.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/4.jpg)
+![4](img/c50c8942a605ae42d229d2b5f3dbc6be.png)
 
 对于每个组件，找到将其连接到其他组件的最便宜的边。
 
@@ -50,9 +50,9 @@ Component                Cheapest Edge that connects
 ```
 
 最便宜的边缘以绿色突出显示。 现在，MST 变为{0-1、2-8、2-3、3-4、5-6、6-7}。
-[![1](img/3ba7ab0a44789d7a8d95fa622f2e5522.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/13.jpg) 
+![1](img/3ba7ab0a44789d7a8d95fa622f2e5522.png) 
 在上述步骤之后，成分为{{0,1}，{2,3,4,8}，{5,6,7}}。 组件被蓝色包围。
-[![13](img/b4704e60efe313c13b963f758f47838e.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/131.jpg)
+![13](img/b4704e60efe313c13b963f758f47838e.png)
 
 我们再次重复该步骤，即对于每个组件，找到将其连接到其他组件的最便宜的边。
 
@@ -65,7 +65,7 @@ Component                Cheapest Edge that connects
 ```
 
 最便宜的边缘以绿色突出显示。 现在，MST 变为{0-1、2-8、2-3、3-4、5-6、6-7、1-2、2-5}
-[![14](img/ce464d804a2606766fe286ad19a92c4f.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/14.jpg)
+![14](img/ce464d804a2606766fe286ad19a92c4f.png)
 
 在这一阶段，只有一个具有全部边缘的分量{0、1、2、3、4、5、6、7、8}。 由于仅剩一个组件，因此我们停止并返回 MST。
 

@@ -7,7 +7,7 @@
 
 **示例**：
 
-[![Transpose graph](img/7e20e86f994adfb9304fdf474b8aa149.png)](https://media.geeksforgeeks.org/wp-content/uploads/transpose_both.png)
+![Transpose graph](img/7e20e86f994adfb9304fdf474b8aa149.png)
 
 转置图
 

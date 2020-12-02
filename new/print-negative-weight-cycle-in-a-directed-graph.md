@@ -7,13 +7,13 @@
 给定一个由`V`顶点和`E`边组成的加权有向图。 任务是打印权重之和为负的[循环路径](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)。 如果不存在这样的路径，则打印**“ -1”** 。
 
 > **输入**：V = 5，E = 5，下图是：
-> [![](img/b6a8be11d482e44be2545c89c47f5c22.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200709132634/Example11.png) 
+> ![](img/b6a8be11d482e44be2545c89c47f5c22.png) 
 > **输出**：1 2 3 4 1
 > **说明**：
 > 给定的图形包含一个负周期，（1- > 2- > 3- > 4- > 1）
 > 
 > **输入**：V = 5，E = 5，下图是：
-> [![](img/8221d6bef2b8a82b895db9bbc3cf0a0e.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200709132651/Example1-1.png) 
+> ![](img/8221d6bef2b8a82b895db9bbc3cf0a0e.png) 
 > **输出**：0 1 2 3 4 0
 > **说明**：
 > 给定的图形包含一个负周期，（0- > 1- > 2- > 3- > 4- > 0）

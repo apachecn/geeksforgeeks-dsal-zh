@@ -24,11 +24,11 @@
 > **说明**：
 > 插入边后的图形和相应的邻接矩阵：
 > 
-> [![](img/580ed075f2239e7f65e9cd0bb80ce7d0.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200604170814/add-and-remove-edge-in-adjacency-matrix-representation-initial1.jpg)
+> ![](img/580ed075f2239e7f65e9cd0bb80ce7d0.png)
 > 
 > 移除后的图形和移除顶点`X`和`Y`之间的边缘后的邻接矩阵：
 > 
-> [![](img/4a5227e1561475c95d93608fc1ed2a11.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200604170842/add-and-remove-edge-in-adjacency-matrix-representation-final2.jpg)
+> ![](img/4a5227e1561475c95d93608fc1ed2a11.png)
 > 
 > **输入**：N = 6，Edges [] = {{0，1}，{0，2}，{0，3}，{0，4}，{1，3}，{2， 3}，{2、4}，{2、5}，{3、5}}，X = 3，Y = 5
 > **输出**：

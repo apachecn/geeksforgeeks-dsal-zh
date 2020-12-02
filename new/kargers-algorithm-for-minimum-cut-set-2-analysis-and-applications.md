@@ -20,7 +20,7 @@
 
 **证明**：
 假设给定图形具有唯一的 Min-Cut，并且 Min-Cut 中存在 C 边，且边为{e <sub>1</sub> e e <sub>2</sub> ，e <sub>3</sub> ，.. e <sub>c</sub> }。 当且仅当集合{e <sub>1</sub> ，e <sub>2</sub> ，e <sub>3</sub> ，.. e 中的任何一个边都没有时，Karger 算法才会产生此 Min-Cut。 <sub>c</sub> }在上述算法的主 while 循环中被删除。
-[![KargerProbability](img/e8d8284397f976edd3dbeee36b304968.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/KargerProbability.png)
+![KargerProbability](img/e8d8284397f976edd3dbeee36b304968.png)
 
 ```
 c is number of edges in min-cut

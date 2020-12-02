@@ -7,13 +7,13 @@
 **示例**：
 
 > **输入**：下面是给定的图形
-> [![](img/bace73675a203556edf7b63c37c75f6b.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200621091308/Ex-1.png) 
+> ![](img/bace73675a203556edf7b63c37c75f6b.png) 
 > **输出**：3
 > **说明**：
-> [![](img/ea82c0f0de87005589019bd986cfccd7.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200621091638/Ex-1-solution1.png)
+> ![](img/ea82c0f0de87005589019bd986cfccd7.png)
 > 
 > **输入**：下面是给定的图形
-> [![](img/d5fe04585467c5d1468487cef0db6107.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200621091428/Ex-2.png) 
+> ![](img/d5fe04585467c5d1468487cef0db6107.png) 
 > **输出**：0
 
 **方法**：这个想法是对图形使用 [BFS 遍历。 步骤如下：](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)

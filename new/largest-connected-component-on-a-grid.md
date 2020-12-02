@@ -8,12 +8,12 @@
 
 > 输入：
 > 
-> [![](img/631a89744b54598d84a9fb43de217d96.png)](https://media.geeksforgeeks.org/wp-content/uploads/Example-grid.png)
+> ![](img/631a89744b54598d84a9fb43de217d96.png)
 > 
 > 不同颜色的网格
 > 
 > Output : 9
-> [![](img/2cb62c641baf062e36ffd0b103e6d240.png)](https://media.geeksforgeeks.org/wp-content/uploads/output-4.png)
+> ![](img/2cb62c641baf062e36ffd0b103e6d240.png)
 > 
 > 电网最大的连接组件
 
@@ -21,7 +21,7 @@
 该方法是将给定的网格可视化为一个图形，其中每个单元格代表图形的一个单独节点，每个节点连接到四个其他节点，这些节点将立即上下左右移动 和那个网格的右边。 现在，对图的每个节点进行 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 搜索，找到*与当前节点*具有相同颜色值的所有连接到当前节点的节点。
 这是上面示例的图形：
 
-[![](img/cbbe9dd59a4722c3b52347bc2e2e9ee1.png)](https://media.geeksforgeeks.org/wp-content/uploads/res.png)
+![](img/cbbe9dd59a4722c3b52347bc2e2e9ee1.png)
 
 网格的图形表示
 

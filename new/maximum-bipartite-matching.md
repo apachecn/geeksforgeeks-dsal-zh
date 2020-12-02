@@ -8,7 +8,7 @@
 有很多现实问题可以作为二分匹配来形成。 例如，考虑以下问题：
 *有 M 个求职者和 N 个工作。 每个申请人都有他/她感兴趣的一部分工作。每个职位空缺只能接受一个申请人，并且只能为一个工作指定一个职位申请人。 找到工作分配给申请人，以使尽可能多的申请人获得工作。*
 
-[![maximum_matching1](img/44206909b2aaf6aa999498c8f306829c.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/maximum_matching1.png)
+![maximum_matching1](img/44206909b2aaf6aa999498c8f306829c.png)
 
 强烈建议您先阅读以下内容。
 

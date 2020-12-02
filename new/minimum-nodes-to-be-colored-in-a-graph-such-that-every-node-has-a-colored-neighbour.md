@@ -8,15 +8,15 @@
 
 > **输入**：N = 4，
 > G：
-> [![](img/40b555952b40d362f7443c936477ebb9.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200624201103/Untitled-Diagram212.png) 
+> ![](img/40b555952b40d362f7443c936477ebb9.png) 
 > **输出**：1
-> [![](img/1b1dc0c238ad8e6c6529e7ef71b599a2.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200624201147/Untitled-Diagram312.png)
+> ![](img/1b1dc0c238ad8e6c6529e7ef71b599a2.png)
 > 
 > **输入**：N = 6，
 > G：
-> [![](img/9cf92a306c7cb45288a519b05d9ec48d.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200624201321/Untitled-Diagram146.png) 
+> ![](img/9cf92a306c7cb45288a519b05d9ec48d.png) 
 > **输出**：3
-> [![](img/be6a82cfa154900e7bdce6dc3846ecc8.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200624201433/Untitled-Diagram147.png)
+> ![](img/be6a82cfa154900e7bdce6dc3846ecc8.png)
 
 **方法**：可以使用 [**BFS**](https://en.wikipedia.org/wiki/Breadth-first_search) 遍历来解决。 请按照以下步骤解决问题：
 
@@ -30,7 +30,7 @@
 > **插图**：
 > 对于下面给出的图形 G，
 > 源节点 S = 1
-> [![](img/9cf92a306c7cb45288a519b05d9ec48d.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200624201321/Untitled-Diagram146.png)
+> ![](img/9cf92a306c7cb45288a519b05d9ec48d.png)
 > 
 > *   偶[] = {1、3、5}
 > *   奇数[] = {2，6，4}

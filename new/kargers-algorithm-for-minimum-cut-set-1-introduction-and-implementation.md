@@ -6,7 +6,7 @@
 输入图可能具有平行边。
 
 例如，考虑以下示例，最小的切割具有 2 条边。
-[![Kargerfirst](img/bb64a670c03f0b38c6cf837cc5547987.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Kargerfirst.png)
+![Kargerfirst](img/bb64a670c03f0b38c6cf837cc5547987.png)
 
 一个简单的解决方案使用[基于最大流量的](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/) [s-t 切割算法](https://www.geeksforgeeks.org/minimum-cut-in-a-directed-graph/)来找到最小切割。 将每对顶点视为源“ s”和宿“ t”，并调用最小 s-t 割算法以找到 s-t 割。 返回所有 s-t 削减的最小值。 该算法的最佳时间复杂度是图形的 O（V <sup>5</sup> ）。 [怎么样？ 总共有 V <sup>2</sup> 对，一对的 s-t cut 算法需要 O（V * E）时间，并且 E = O（V [V <sup>2</sup> ）]。
 
@@ -26,18 +26,18 @@
 让我们通过给出的例子来理解上述算法。
 
 假设第一个随机选择的顶点为连接顶点 0 和 1 的**和**。我们删除该边并收缩图形（合并顶点 0 和 1）。 我们得到下图。
-[![Karger2](img/54e16daac2bd73e9a2a589b49555c826.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Karger21.png)
+![Karger2](img/54e16daac2bd73e9a2a589b49555c826.png)
 
 让下一个随机选取的边缘为“ d”。 我们删除该边并合并顶点（0,1）和 3。
-[![Karger3](img/23c57a0319e902740a66b54a8eed6d0a.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Karger3.png) 
+![Karger3](img/23c57a0319e902740a66b54a8eed6d0a.png) 
 我们需要删除图中的自环。 因此，我们删除了边缘'c'
-[![Karger4](img/452e44e3bac2aee39ceeeee07bd0ccac.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Karger4.png)
+![Karger4](img/452e44e3bac2aee39ceeeee07bd0ccac.png)
 
 现在图有两个顶点，所以我们停下来。 结果图中的边数是由 Karger 算法产生的割线。
 
 ***Karger 算法是[蒙特卡洛算法](http://en.wikipedia.org/wiki/Monte_Carlo_algorithm)，由它产生的切割可能不是最小的。*** 例如，下图显示了不同顺序的随机边缘拾取产生大小为 3 的最小切割。
 
-[![Karger1](img/af87ad77e52cc6578d62038dab20cf19.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Karger11.png)
+![Karger1](img/af87ad77e52cc6578d62038dab20cf19.png)
 
 下面是上述算法的 C ++实现。 输入图表示为边的集合，[联合查找数据结构](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)用于跟踪组件。
 

@@ -7,7 +7,7 @@
 
 > **考虑以下图表**：[
 > 
-> [![](img/40ca76ea468053c881ac72e49e82f1e2.png)](https://media.geeksforgeeks.org/wp-content/uploads/bfs-5.png)
+> ![](img/40ca76ea468053c881ac72e49e82f1e2.png)
 > 
 > **输入**：（u，v）=（1，3）
 > **输出**：是

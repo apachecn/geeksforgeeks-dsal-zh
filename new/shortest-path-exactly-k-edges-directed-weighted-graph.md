@@ -10,7 +10,7 @@
 
 例如，考虑下图。 假设源‘u’是顶点 0，目标’v’是顶点 3，k 是 2。有两个长度为 2 的游程，游程为{0，2，3}和{0，1，3}。 两者中最短的是{0，2，3}，路径权重是 3 + 6 = 9。
 
-[![graph1](img/9e9e3feefaf8a349f55d519ec574bfca.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/graph11.png)
+![graph1](img/9e9e3feefaf8a349f55d519ec574bfca.png)
 
 这个想法是使用[先前文章](https://www.geeksforgeeks.org/count-possible-paths-source-destination-exactly-k-edges/)中讨论的方法浏览从 u 到 v 的所有长度为 k 的路径，并返回最短路径的权重。 **简单解决方案**是从 u 开始，转到所有相邻的顶点，然后对 k 为 k-1，源为相邻顶点，目标为 v 的相邻顶点递归。以下是此简单的 C ++和 Java 实现 解。
 

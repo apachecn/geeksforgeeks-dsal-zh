@@ -4,7 +4,7 @@
 
 如果所有对顶点之间都有路径，则有向图是牢固连接的。 有向图的强连接组件（ **SCC** ）是最大的强连接子图。 例如，下图中有 3 个 SCC。
 
-[![SCC](img/a84a5db26213f31dd7c54e3776c651d9.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/kosaraju.jpg)
+![SCC](img/a84a5db26213f31dd7c54e3776c651d9.png)
 
 我们已经讨论了 [Kosaraju 用于强连接组件](https://www.geeksforgeeks.org/strongly-connected-components/)的算法。 先前讨论的算法需要图的两个 DFS 遍历。 在这篇文章中，讨论了 [Tarjan 的算法](http://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm)，该算法仅需要遍历一个 DFS。
 
@@ -35,7 +35,7 @@ low [u] = min（low [u]，low [v]）;
 low [u] = min（low [u]，disc [v]）;
 在第二种情况下，我们可以取 low [v]代替 disc [v]吗？ 。 答案是**否**。 如果您认为答案为何为**否**，则您可能已经了解了低和碟片概念。
 
-[![edge-types](img/9cd8757e193da9fcca2443569d467807.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/tarjan.jpg) 
+![edge-types](img/9cd8757e193da9fcca2443569d467807.png) 
 相同的低和圆盘值有助于解决其他图形问题，例如[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)，[桥](https://www.geeksforgeeks.org/bridge-in-a-graph/)和[双向连接组件](https://www.geeksforgeeks.org/biconnectivity-in-a-graph/)。
 
 为了跟踪植根于头部的子树，我们可以使用堆栈（在访问时保持推送节点）。 找到头节点后，从堆栈中弹出所有节点，直到您离开堆栈为止。

@@ -6,7 +6,7 @@
 
 1.  **DFS** 首先遍历经过根的一个相邻节点，然后遍历下一个相邻节点。 这种方法的问题是，如果有一个节点靠近根，但在 DFS 探索的前几个子树中没有，那么 DFS 很晚到达该节点。 同样，DFS 可能找不到到节点的最短路径（就边缘数而言）。
 
-[![iddfs3](img/d6de95744e5fb4eafba90e772f537210.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/iddfs3.png)
+![iddfs3](img/d6de95744e5fb4eafba90e772f537210.png)
 
 3.  **BFS** 逐级移动，但是需要更多空间。 DFS 所需的空间为 O（d），其中 d 为树的深度，而 BFS 所需的空间为 O（n），其中 n 为树中的节点数（为什么？请注意，树的最后一层可以具有约 n / 2 个节点和倒数第二个 n / 4 个节点，在 BFS 中，我们需要将每个级别逐个排在队列中。
 

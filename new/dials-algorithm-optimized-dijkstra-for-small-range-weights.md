@@ -215,29 +215,29 @@ Vertex Distance from Source
 
 Below is step by step illustration taken from [here](http://ocw.mit.edu/courses/sloan-school-of-management/15-082j-network-optimization-fall-2010/animations/MIT15_082JF10_av07.pdf).
 
-[![step1](img/e04e3a03335a98b40bab11d1025ee5d4.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/step1.png)
+![step1](img/e04e3a03335a98b40bab11d1025ee5d4.png)
 
-[![step2](img/ef718998ebe06e5462a952c89d3f88e7.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/step2.png)
+![step2](img/ef718998ebe06e5462a952c89d3f88e7.png)
 
-[![step3](img/4aaac5bc7e8bdeb074ed17640998a466.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/step3.png)
+![step3](img/4aaac5bc7e8bdeb074ed17640998a466.png)
 
-[![step4](img/2ad0fd2add9fdfa18d32329748fe0d87.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/step4.png)
+![step4](img/2ad0fd2add9fdfa18d32329748fe0d87.png)
 
-[![step5](img/747f531be41692f088b58e4ea2f6eb9b.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/step5.png)
+![step5](img/747f531be41692f088b58e4ea2f6eb9b.png)
 
-[![step6](img/60b79c64f58afb83167f02a1d45676b2.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/step6.png)
+![step6](img/60b79c64f58afb83167f02a1d45676b2.png)
 
-[![step7](img/ec645b5d943ba0558715b65583edf96f.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/step7.png)
+![step7](img/ec645b5d943ba0558715b65583edf96f.png)
 
-[![step8](img/90677aecbe1c0a0d46a16006fad75c74.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/step8.png)
+![step8](img/90677aecbe1c0a0d46a16006fad75c74.png)
 
-[![step10](img/25711555ddbd8b3addc8d7f92e568093.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/step10.png)
+![step10](img/25711555ddbd8b3addc8d7f92e568093.png)
 
-[![step11](img/6fb6e5ab25ccc5472866e8d028cc769d.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/step11.png)
+![step11](img/6fb6e5ab25ccc5472866e8d028cc769d.png)
 
-[![step12](img/93a4634bd9af7e7e9a0e7664d72314ae.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/step12.png)
+![step12](img/93a4634bd9af7e7e9a0e7664d72314ae.png)
 
-[![step13](img/f3922c339caf058abd298e95da81ee86.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/step13.png) 
+![step13](img/f3922c339caf058abd298e95da81ee86.png) 
 
 本文由 Utkarsh Trivedi 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

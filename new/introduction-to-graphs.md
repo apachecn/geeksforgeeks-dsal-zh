@@ -11,7 +11,7 @@
 1.  **顶点**：顶点是图形的基本单位。 有时，顶点也称为顶点或节点。 每个节点/顶点都可以标记或不标记。
 2.  **边**：边是绘制的或用于连接图形的两个节点。 它可以是有向图中节点的有序对。 边缘可以任何可能的方式连接任何两个节点。 没有规则。 有时，边缘也称为圆弧。 每个边缘都可以贴标签/不贴标签。
 
-[![](img/464bd0b5c3c104b6f118d44aa6c2000d.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630111809/graph18.jpg)
+![](img/464bd0b5c3c104b6f118d44aa6c2000d.png)
 
 ## [图的类型](https://www.geeksforgeeks.org/graph-types-and-applications/)
 
@@ -19,7 +19,7 @@
 
     如果图中没有边，则该图称为空图。
 
-    [![](img/15367142031c4b95b29f669fcc72f9bc.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630113942/null_graph_trivial.jpg)
+    ![](img/15367142031c4b95b29f669fcc72f9bc.png)
 
 2.  #### 平凡图
 
@@ -29,7 +29,7 @@
 
     边没有任何方向的图形。 也就是说，在每个边缘的定义中，节点都是无序对。
 
-    [![](img/15ece0fc62756b8613813fc180c231ec.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630114438/directed.jpg)
+    ![](img/15ece0fc62756b8613813fc180c231ec.png)
 
 4.  #### 有向图
 
@@ -39,7 +39,7 @@
 
     从一个节点我们可以访问该图中任何其他节点的图称为连通图。
 
-    [![](img/7dcda0af277e13b1318c688e5f11abd1.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630121400/connected1.jpg)
+    ![](img/7dcda0af277e13b1318c688e5f11abd1.png)
 
 6.  #### 断开图
 
@@ -50,7 +50,7 @@
     每个顶点的度等于该图的其他顶点的图。
     假设每个顶点的度为`K`，则该图称为 **K-正则**。
 
-    [![](img/49252014abdd0bbd6827c617fe6ad554.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630122008/regular.jpg)
+    ![](img/49252014abdd0bbd6827c617fe6ad554.png)
 
 8.  #### 完整图
 
@@ -60,7 +60,7 @@
 
     该图本身是一个循环，每个顶点的度为 2。
 
-    [![](img/51202b8b31ced7240949832b679f8a50.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630122225/cyclic.jpg)
+    ![](img/51202b8b31ced7240949832b679f8a50.png)
 
 10.  #### 循环图
 
@@ -70,7 +70,7 @@
 
     不包含任何循环的有向图。
 
-    [![](img/cb2543e1120715acecfeb1c05e177ddb.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630122552/bipartite1.jpg)
+    ![](img/cb2543e1120715acecfeb1c05e177ddb.png)
 
 12.  #### [二分图](http://www.geeksforgeeks.org/bipartite-graph/)
 
@@ -80,7 +80,7 @@
 
 树是图形的受限类型，只是带有更多规则。 每棵树将始终是图，但并非所有图都将是树。
 [链表](https://www.geeksforgeeks.org/data-structures/linked-list/)，[树](https://www.geeksforgeeks.org/binary-tree-data-structure/)和[堆](https://www.geeksforgeeks.org/heap-data-structure/)都是图的特殊情况。
-[![](img/0ef52dfd5ddc5fbdd5e94d7c9c07771c.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630123458/tree_vs_graph.jpg)
+![](img/0ef52dfd5ddc5fbdd5e94d7c9c07771c.png)
 
 ## 图的表示
 
@@ -94,14 +94,14 @@
 在这种方法中，图形以 2D 矩阵的形式存储，其中行和列表示顶点。
 矩阵中的每个条目代表这些顶点之间的边缘权重。
 
-[![](img/187d8e87d5819648e44c15c79b653201.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630124726/adjacency_mat1.jpg)
+![](img/187d8e87d5819648e44c15c79b653201.png)
 
 #### 邻接表
 
 此图表示为链接列表的集合。
 有一个指针数组，指向与该顶点连接的边。
 
-[![](img/9c2129c1434fe2f337269132cbc77328.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630125356/adjacency_list.jpg)
+![](img/9c2129c1434fe2f337269132cbc77328.png)
 
 #### 他们之间的比较
 
@@ -139,7 +139,7 @@
 
 ## 图的实际应用
 
-[![](img/9438adb914948bf0b9b42c92c1719dae.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630130949/applications_graph.jpg)
+![](img/9438adb914948bf0b9b42c92c1719dae.png)
 
 **图的更多资源**：
 

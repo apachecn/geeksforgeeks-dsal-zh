@@ -548,7 +548,7 @@ Yes
 *   **时间复杂度**：在矩阵上执行 BFS 需要 O（N * M）时间，而 **O（N * M）**时间要检查每个阻塞的单元。 因此，总体时间复杂度将为 **O（N * M）**。
 *   **辅助空间复杂度**：O（N * M）
 
-[![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
+![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 
 * * *
 

@@ -31,21 +31,21 @@
 
 **例如**：
 最初，从源到其自身的距离将为 0，对于其他顶点，该距离将是无限的。
-[![](img/86ff7824094f16d92fed7e8f3d7c8f8b.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200213180911/Untitled-Diagram231.jpg) 
+![](img/86ff7824094f16d92fed7e8f3d7c8f8b.png) 
 现在，在这种情况下，对于源的每个相邻顶点`0`，[1，4]更新距离并将顶点标记为 的权重分别为 4 和 8。
-[![](img/583a22dda0542b90696a4e120cd43f4f.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200213181429/Untitled-Diagram241.jpg) 
+![](img/583a22dda0542b90696a4e120cd43f4f.png) 
 现在，从队列中取出顶点`4`，然后将相邻的顶点连接到顶点 4 –
 
 *   **顶点 1** -由于顶点 1 已经访问并且到达顶点 1 的权重为 4，因此当从源通过边 4_1 移到顶点 1 时，总权重将为 11，这会更大 比存储在距离数组中的权重。
 *   **顶点 3** –由于未访问顶点 3 且队列中也没有该顶点，因此顶点 3 的距离已更新为 9，并且也排入了队列的最前面。
 
-[![](img/78554d115fbfdf5120493235ee11842d.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200213192435/Untitled-Diagram251.jpg) 
+![](img/78554d115fbfdf5120493235ee11842d.png) 
 类似地，从队列中取出顶点 3，并更新相邻顶点的值。 顶点 3 的相邻顶点是顶点 4 和顶点 2。
 
 *   **顶点 4** –由于已经访问了顶点 4，并且权重已经很小，因此不会更新距离。
 *   **顶点 2** –由于未访问顶点 2 并且队列中也没有该顶点 2，因此，距离 3 的距离更新为 11，并且也排入了队列的最前面。
 
-[![](img/7ccf27b90eed34e27e1a3ec53b1c2ee2.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200213194415/Untitled-Diagram271.jpg)
+![](img/7ccf27b90eed34e27e1a3ec53b1c2ee2.png)
 
 下面是上述方法的实现。
 

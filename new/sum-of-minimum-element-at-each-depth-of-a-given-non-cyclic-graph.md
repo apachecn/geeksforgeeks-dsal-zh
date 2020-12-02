@@ -9,7 +9,7 @@
 
 > **输入**：S = 0，以下为给定图形。
 > 
-> [![](img/d837f5a52ecd6f82930ae007e0ca3557.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200623030949/graph.jpg)
+> ![](img/d837f5a52ecd6f82930ae007e0ca3557.png)
 > 
 > **输出**：5
 > **说明**：
@@ -20,7 +20,7 @@
 > 
 > **输入**：S = 2，下面是给定的图形。
 > 
-> [![](img/d837f5a52ecd6f82930ae007e0ca3557.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200623030949/graph.jpg)
+> ![](img/d837f5a52ecd6f82930ae007e0ca3557.png)
 > 
 > **输出**：8
 > **说明**：

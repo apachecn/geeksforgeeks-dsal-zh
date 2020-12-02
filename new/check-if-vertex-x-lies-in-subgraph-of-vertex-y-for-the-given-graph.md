@@ -7,7 +7,7 @@
 给定**无向图**以及两个**顶点 X 和 Y** ，我们的任务是检查顶点 X 是否位于顶点 Y 的子图中。
 **示例**：[
 
-> [![](img/5e63bc0d89b8ea6626336dfe8bc402fa.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200628152249/sub_graph.png)
+> ![](img/5e63bc0d89b8ea6626336dfe8bc402fa.png)
 > 
 > **输入**：X = 2，Y = 3
 > **输出**：否

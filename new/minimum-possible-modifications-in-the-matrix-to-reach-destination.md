@@ -352,7 +352,7 @@ int main()
 
 **时间复杂度**：![O(N * M)](img/d63fadc38ddb8d76cf05fdd3f20db2be.png "Rendered by QuickLaTeX.com")
 
-[![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
+![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 
 * * *
 

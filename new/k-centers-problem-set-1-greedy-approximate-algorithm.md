@@ -6,7 +6,7 @@
 
 例如，考虑以下四个城市，分别为 0、1、2 和 3，以及它们之间的距离，如何在这四个城市之间放置 2 个 ATM，以使城市到 ATM 的最大距离最小。
 
-[![kcenters1](img/31fdca6e93489553fc51d0cb77097c54.png)](https://www.geeksforgeeks.org/k-centers-problem-set-1-greedy-approximate-algorithm/kcenters1/)
+![kcenters1](img/31fdca6e93489553fc51d0cb77097c54.png)
 
 由于该问题是已知的 NP-Hard 问题，因此没有多项式时间解可用于该问题。 有一个多项式时间贪婪近似算法，贪婪算法提供的解决方案永远不会比最佳解决方案大两倍。 仅当城市之间的距离遵循[三角不等式](http://en.wikipedia.org/wiki/Triangle_inequality)（两个点之间的距离始终小于到第三点的距离之和）时，贪婪解决方案才有效。
 

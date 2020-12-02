@@ -9,7 +9,7 @@
 > **输入**：N = 4
 > **输出**：4
 > **说明**：
-> [![](img/492d1904741b98df75f4cd3567141462.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200227123317/Untitled-Diagram45.jpg)
+> ![](img/492d1904741b98df75f4cd3567141462.png)
 > 
 > **输入**：N = 3
 > **输出**：2
@@ -22,9 +22,9 @@
 对于任何[图](https://www.geeksforgeeks.org/graph-and-its-representations/)，这样该图是无三角形的，那么对于任何顶点 Z 只能连接到 x 和 y 中任一顶点，即对于 x 和 y 之间连接的任何边 y，d（x）+ d（y）≤N，其中 d（x）和 d（y）是顶点 x 和 y 的度数。
 
 *   然后，所有顶点的度–
-    [![](img/03a92baf62d8877e126c263ee2da8f21.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200227132722/CodeCogsEqn7.png)
+    ![](img/03a92baf62d8877e126c263ee2da8f21.png)
 *   由柯西·施瓦兹不等式–
-    [![](img/bfe0a0bd9d61e34ce7976009bc74280b.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200227133814/CodeCogsEqn17.png)
+    ![](img/bfe0a0bd9d61e34ce7976009bc74280b.png)
 *   因此，4m <sup>2</sup> / n≤mn，这意味着 m≤n <sup>2</sup> / 4
 
 下面是上述方法的实现：

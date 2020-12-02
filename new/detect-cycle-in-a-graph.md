@@ -31,7 +31,7 @@ The diagram clearly shows no cycle
 
 *   **Approach:** Depth First Traversal can be used to detect a cycle in a Graph. DFS for a connected graph produces a tree. There is a cycle in a graph only if there is a [back edge](http://en.wikipedia.org/wiki/Depth-first_search#Output_of_a_depth-first_search) present in the graph. A back edge is an edge that is from a node to itself (self-loop) or one of its ancestors in the tree produced by DFS. In the following graph, there are 3 back edges, marked with a cross sign. We can observe that these 3 back edges indicate 3 cycles present in the graph.
 
-    [![](img/967a572be36eddbe7ff30efe7b000415.png "DFS")](https://media.geeksforgeeks.org/wp-content/uploads/cycle.png)
+    ![](img/967a572be36eddbe7ff30efe7b000415.png "DFS")
 
     对于断开连接的图，获取 DFS 林作为输出。 要检测循环，请通过检查后边缘在单个树中检查循环。
 

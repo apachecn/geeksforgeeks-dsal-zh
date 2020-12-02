@@ -16,27 +16,27 @@
 
 让我们通过以下示例来理解：
 
-[![](img/f4164d3a1cad2c61fbd1ef4aab72ab7a.png)](https://www.geeksforgeeks.org/wp-content/uploads/Fig-11.jpg)
+![](img/f4164d3a1cad2c61fbd1ef4aab72ab7a.png)
 
 集合 *mstSet* 最初为空，分配给顶点的键为{0，INF，INF，INF，INF，INF，INF，INF}，其中 INF 表示无穷大。 现在选择具有最小键值的顶点。 选择顶点 0，将其包含在 *mstSet* 中。 因此 *mstSet* 变为{0}。 在包含到 *mstSet* 之后，更新相邻顶点的关键点值。 0 的相邻顶点是 1 和 7。1 和 7 的关键值更新为 4 和 8。下面的子图显示了顶点及其关键值，仅显示了具有有限关键值的顶点。 MST 中包含的顶点显示为绿色。
 
-[![](img/1dc515cdf61e19cfa8c73ea1ac12135d.png)](https://www.geeksforgeeks.org/wp-content/uploads/MST1.jpg)
+![](img/1dc515cdf61e19cfa8c73ea1ac12135d.png)
 
 选择具有最小键值且尚未包含在 MST 中的顶点（不在 mstSET 中）。 选择顶点 1 并将其添加到 mstSet。 因此，mstSet 现在变为{0，1}。 更新相邻顶点的键值 1。顶点 2 的键值变为 8。
 
-[![](img/282f826cb599f98cbd4d7de3b68eaeb0.png)](https://www.geeksforgeeks.org/wp-content/uploads/MST2.jpg)
+![](img/282f826cb599f98cbd4d7de3b68eaeb0.png)
 
 选择具有最小键值且尚未包含在 MST 中的顶点（不在 mstSET 中）。 我们可以选择顶点 7 或顶点 2，让顶点 7 被选择。 因此，mstSet 现在变为{0，1，7}。 更新相邻顶点 7 的关键值。顶点 6 和 8 的关键值变得有限（分别为 1 和 7）。
 
-[![](img/5b0180de55a947f0707e79ee89c09562.png)](https://www.geeksforgeeks.org/wp-content/uploads/MST3.jpg)
+![](img/5b0180de55a947f0707e79ee89c09562.png)
 
 选择具有最小键值且尚未包含在 MST 中的顶点（不在 mstSET 中）。 选择了顶点 6。 这样 mstSet 现在变为{0，1，7，6}。 更新相邻顶点 6 的关键点值。更新顶点 5 和 8 的关键点值。
 
-[![](img/324459e8bbafe5f5a6cffbd058ccf36d.png)](https://www.geeksforgeeks.org/wp-content/uploads/MST4.jpg)
+![](img/324459e8bbafe5f5a6cffbd058ccf36d.png)
 
 我们重复上述步骤，直到 *mstSet* 包含给定图形的所有顶点。 最后，我们得到下图。
 
-[![](img/ae64c938f36beae884d9dbc4af34383f.png)](https://www.geeksforgeeks.org/wp-content/uploads/MST5.jpg)
+![](img/ae64c938f36beae884d9dbc4af34383f.png)
 
 ***如何实现以上算法？***
 我们使用布尔数组 mstSet []表示 MST 中包含的一组顶点。 如果值 mstSet [v]为 true，则顶点 v 包含在 MST 中，否则不包含。 数组 key []用于存储所有顶点的键值。 另一个数组 parent []，用于在 MST 中存储父节点的索引。 父数组是用于显示构造的 MST 的输出数组。

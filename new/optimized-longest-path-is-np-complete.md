@@ -30,7 +30,7 @@
     2.  Let us assume the graph **G'(V, E, V<sub>s</sub>, V<sub>e</sub>, K)** has a Lpath of length`K`from V<sub>s</sub> to V<sub>e</sub>, which implies **G’** contains a simple path of length`K`from V<sub>s</sub> to V<sub>e</sub>.
         But, G contains K vertices, hence traverses all vertices starting at V<sub>s</sub> and ending at V<sub>e</sub> forming a hamiltonian path, **G'(V<sub>s</sub>, V<sub>e</sub>)**.
 
-        [![](img/3fb2cd740c16f9c057a0c39f8b73c492.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200922163129/ttyytft.jpg)
+        ![](img/3fb2cd740c16f9c057a0c39f8b73c492.png)
 
         令 V <sub>1</sub> B 和 V <sub>n</sub> D D
         现在，`G`具有无向哈密顿路径≡BCAD 为 **K = 4** 。

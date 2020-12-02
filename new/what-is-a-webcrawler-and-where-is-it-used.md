@@ -10,7 +10,7 @@ Webcrawler 是[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-s
 *   边缘->连接。
 
 **示例**：
-[![](img/baf808dcd460e2777e956fc619f71617.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200510235133/GeeksforGeeks19.jpg)
+![](img/baf808dcd460e2777e956fc619f71617.png)
 
 **方法**：该算法的工作原理是解析网站的原始 HTML，并在获取的数据中查找其他 URL。 如果存在 URL，则将其添加到[队列](http://www.geeksforgeeks.org/queue-data-structure/)，并以广度优先搜索的方式访问它们。
 

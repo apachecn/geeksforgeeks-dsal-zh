@@ -4,11 +4,11 @@
 
 给定一个有向图，请找出该图是否牢固连接。 如果在任意两对顶点之间存在路径，则有向图是牢固连接的。 例如，以下是一个强连接图。
 
-[![connectivity3](img/d0d71fbbcaf874fbe99af2c4ff951b07.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/connectivity3.png)
+![connectivity3](img/d0d71fbbcaf874fbe99af2c4ff951b07.png)
 
 **对于无向图**来说很容易，我们可以从任何顶点开始进行 BFS 和 DFS。 如果 BFS 或 DFS 访问所有顶点，则将连接给定的无向图。 这种方法不适用于有向图。 例如，考虑下图，它们之间没有牢固连接。 如果从顶点 0 开始 DFS（或 BFS），则可以到达所有顶点，但是如果从任何其他顶点开始，则不能到达所有顶点。
 
-[![connectivity1](img/78b464a173356f00209c38e12ee10b0c.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/connectivity1.png)
+![connectivity1](img/78b464a173356f00209c38e12ee10b0c.png)
 
 **有向图该怎么办？**
 

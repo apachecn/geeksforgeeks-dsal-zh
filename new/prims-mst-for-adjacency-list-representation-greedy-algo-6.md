@@ -18,16 +18,16 @@
 ….. **b）**对于 u 的每个相邻顶点 v，检查 v 是否在 Min Heap 中（尚未包含在 MST 中）。 如果 v 在“最小堆”中，并且其键值大于 u-v 的权重，则将 v 的键值更新为 u-v 的权重。
 
 让我们通过以下示例了解上述算法：
-[![](img/f4164d3a1cad2c61fbd1ef4aab72ab7a.png "Fig-1")](https://www.geeksforgeeks.org/wp-content/uploads/Fig-11.jpg) 
+![](img/f4164d3a1cad2c61fbd1ef4aab72ab7a.png "Fig-1") 
 最初，对于所有其他顶点，第一个顶点的关键值为 0，INF 为无穷大。 因此从最小堆中提取顶点 0，并更新与 0（1 和 7）相邻的顶点的键值。 最小堆包含顶点 0 以外的所有顶点。
 绿色的顶点是 MST 中包含的顶点。
-[![](img/1dc515cdf61e19cfa8c73ea1ac12135d.png "Fig-2")](https://www.geeksforgeeks.org/wp-content/uploads/MST1.jpg) 
+![](img/1dc515cdf61e19cfa8c73ea1ac12135d.png "Fig-2") 
 由于在 Min Heap 的所有节点中顶点 1 的键值最小，因此从 Min Heap 中提取它，并且更新了与 1 相邻的顶点的键值（更新了 Key （如果顶点在“最小堆”中，并且先前的键值大于 1 到相邻边缘的权重）。 最小堆包含除顶点 0 和 1 之外的所有顶点。 与 7 相邻的顶点的更新（如果顶点在 Min Heap 中并且先前的键值大于从 7 到相邻边缘的权重，则更新键）。 最小堆包含除顶点 0、1 和 7 之外的所有顶点。
-[![](img/5b0180de55a947f0707e79ee89c09562.png "Fig-4")](https://www.geeksforgeeks.org/wp-content/uploads/MST3.jpg) 
+![](img/5b0180de55a947f0707e79ee89c09562.png "Fig-4") 
 由于顶点 6 的键值在“最小堆”中的所有节点中最小，因此从“最小堆”和“最大堆”中提取 更新与 6 相邻的顶点的关键值（如果顶点在 Min Heap 中并且先前的关键值大于从 6 到相邻边缘的权重，则更新关键）。 “最小堆”包含除顶点 0、1、7 和 6 以外的所有顶点。
-[![](img/324459e8bbafe5f5a6cffbd058ccf36d.png "Fig-4")](https://www.geeksforgeeks.org/wp-content/uploads/MST4.jpg) 
+![](img/324459e8bbafe5f5a6cffbd058ccf36d.png "Fig-4") 
 对“最小堆”中的其余节点重复上述步骤，直到“最小堆”变为空
-] [![](img/ae64c938f36beae884d9dbc4af34383f.png "Fig-1")](https://www.geeksforgeeks.org/wp-content/uploads/MST5.jpg)
+] ![](img/ae64c938f36beae884d9dbc4af34383f.png "Fig-1")
 
 ## C++
 

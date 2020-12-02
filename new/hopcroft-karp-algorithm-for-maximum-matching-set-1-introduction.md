@@ -34,7 +34,7 @@ Hopcroft Karp 算法基于以下概念。
 
 下图显示了该算法的工作。
 
-[![HopcroftKarp](img/490698ef44d99035f19fee5c18d91ef1.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/HopcroftKarp1.png)
+![HopcroftKarp](img/490698ef44d99035f19fee5c18d91ef1.png)
 
 在初始图中，所有单个边都是增加路径，我们可以按任意顺序进行选择。 在中间阶段，只有一条扩展路径。 我们从 M 中删除此路径的匹配边，并添加不匹配边。 在最终匹配中，没有扩展路径，因此匹配最大。
 

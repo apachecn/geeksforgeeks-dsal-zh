@@ -6,11 +6,11 @@
 
 [欧拉路径](http://en.wikipedia.org/wiki/Eulerian_path)是图中的一条路径，该路径恰好访问每个边缘一次。 欧拉回路是一条始于和终止于同一顶点的欧拉路径。
 
-[![Euler1](img/96efba1dd5e6391fc6f06fe7b26f2c56.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Euler1.png)
+![Euler1](img/96efba1dd5e6391fc6f06fe7b26f2c56.png)
 
-[![Euler2](img/c2f53ce82251e4b3d70770723d342a87.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Euler2.png)
+![Euler2](img/c2f53ce82251e4b3d70770723d342a87.png)
 
-[![Euler3](img/45d2972d9e63a2839eaabe8ea520ef8f.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Euler3.png)
+![Euler3](img/45d2972d9e63a2839eaabe8ea520ef8f.png)
 
 **如何查找给定图是否为欧拉图？**
 问题与以下问题相同。 “是否有可能画出给定的图形而无需从纸上抬起铅笔，也不必多次描画任何边缘”。

@@ -12,10 +12,10 @@
 **b）**除 s 和 t 之外，每个顶点的流入流量等于流出流量。
 
 例如，请考虑以下 CLRS 书中的图表。
-[![ford_fulkerson1](img/568b1131326471bed1ddb97bf1399c90.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/ford_fulkerson11.png)
+![ford_fulkerson1](img/568b1131326471bed1ddb97bf1399c90.png)
 
 上图中的最大可能流量为 23。
-[![ford_fulkerson2](img/0cc230058968c39cad925949a53ee714.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/ford_fulkerson2.png)
+![ford_fulkerson2](img/0cc230058968c39cad925949a53ee714.png)
 
 ```
 Push-Relabel Algorithm 

@@ -7,7 +7,7 @@
 
 以下是一些示例图，其中的桥用红色突出显示。
 
-[![Bridge1](img/d3cbe238e5fd85cf5bf27779e6a25080.png) ](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Bridge1.png) [ ![Bridge2](img/0fe1908006c211a7e35358b1cdf0277b.png) ](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Bridge2.png) [ ![Bridge3](img/3c3e3a9f1d8302eab53de4ffde5f17ca.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Bridge3.png)
+![Bridge1](img/d3cbe238e5fd85cf5bf27779e6a25080.png) ](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Bridge1.png) [ ![Bridge2](img/0fe1908006c211a7e35358b1cdf0277b.png) ](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Bridge2.png) [ ![Bridge3](img/3c3e3a9f1d8302eab53de4ffde5f17ca.png)
 
 **如何找到给定图中的所有桥？**
 一种简单的方法是一个接一个地删除所有边，并查看是否去除边会导致图形断开。 以下是连接图的简单方法步骤。

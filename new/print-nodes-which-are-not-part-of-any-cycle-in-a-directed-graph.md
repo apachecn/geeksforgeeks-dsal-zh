@@ -11,7 +11,7 @@
 > **输入**：N = 4，E = 4，Edges [] [2] = {{0，2}，{0，1}，{2，3}，{3，0}}
 > **输出**：1
 > **说明**：
-> [![](img/05763e3c10b44e507101abddf59104bf.png)](https://media.geeksforgeeks.org/wp-content/uploads/20201014145048/UntitledDiagram1.jpg) 
+> ![](img/05763e3c10b44e507101abddf59104bf.png) 
 > 从上面的给定图中，节点 0-之间存在一个循环。 > 2-> 3->0。
 > 在任何周期内都没有出现的节点是 1。
 > 因此，打印 1。

@@ -36,7 +36,7 @@
 > 3.黑色边缘：后边缘
 > 4.红色边缘：交叉边缘
 > 下面是上述信息的给定图：
-> [![](img/4dfb732ef4fd5500aeb1c6a6abd4f031.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200515201450/Untitled-Diagram66-3.jpg)
+> ![](img/4dfb732ef4fd5500aeb1c6a6abd4f031.png)
 > 
 > **输入**：N = 5，M = 4，arr [] [] = {{1，2}，{1，3}，{3，4}，{1，4}}
 > **输出**：
@@ -50,7 +50,7 @@
 > 3。 黑色边缘：向后边缘
 > 4.红色边缘：交叉边缘
 > 下面是上述信息的给定图：
-> [![](img/b96823f5bec4299cec2621306c838334.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200515201618/Untitled-Diagram122.jpg)
+> ![](img/b96823f5bec4299cec2621306c838334.png)
 
 **方法**：
 

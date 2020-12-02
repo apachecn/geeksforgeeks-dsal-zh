@@ -8,7 +8,7 @@
 
 > **输入**：N = 10，K = 3，下图是：
 > 
-> [![](img/9af6c520ff6d1ee4a068fdac4f961c9f.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200722134450/rszscreenshot53.png)
+> ![](img/9af6c520ff6d1ee4a068fdac4f961c9f.png)
 > 
 > **输出**：
 > 删除的节点数：2
@@ -16,11 +16,11 @@
 > **说明**：
 > 删除节点 1 和 2 之后，此处没有 子树或树具有 3 个以上的节点。 下面是结果图：
 > 
-> [![](img/6ebff10491db2c7c752f91d169b2f539.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200722140935/rszscreenshot54.png)
+> ![](img/6ebff10491db2c7c752f91d169b2f539.png)
 > 
 > **输入**：N = 6，K = 3，下图是：
 > 
-> [![](img/d1423e02039108790fa6b01ba99d54bd.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200801132537/rsz1rsz1screenshot55.png)
+> ![](img/d1423e02039108790fa6b01ba99d54bd.png)
 > 
 > **输出**：
 > 删除的节点数：1
@@ -28,7 +28,7 @@
 > **说明**：
 > 删除节点 1 之后，此处没有子树或树 有 3 个以上的节点。 下面是结果图：
 > 
-> [![](img/e0a92287b7544fcba0dfd01c325553db.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200801132919/rsz2screenshot55.png)
+> ![](img/e0a92287b7544fcba0dfd01c325553db.png)
 
 **方法**：想法是观察节点 X 的子树中的节点数是其子节点和节点本身的子树中的节点数的**和**。 步骤如下：
 

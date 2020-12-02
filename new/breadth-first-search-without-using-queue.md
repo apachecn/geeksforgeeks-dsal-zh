@@ -8,7 +8,7 @@
 
 **示例**：
 
-> **输入**：[![](img/40ca76ea468053c881ac72e49e82f1e2.png)](https://media.geeksforgeeks.org/wp-content/uploads/bfs-5.png) 
+> **输入**：![](img/40ca76ea468053c881ac72e49e82f1e2.png) 
 > **输出**：BFS 遍历= 2、0、3、1
 > **说明**：[
 > 在下图中，我们从顶点 2 开始遍历。当到达顶点 0 时，我们将寻找它的所有相邻顶点。 2 也是 0 的相邻顶点。如果我们不标记访问的顶点，那么 2 将再次被处理，它将成为一个非终止过程。 因此，下图的广度优先遍历为 2、0、3、1。
@@ -120,7 +120,7 @@ int main()
 
 ```
 
-[![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
+![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 
 * * *
 

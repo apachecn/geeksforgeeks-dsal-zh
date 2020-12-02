@@ -9,10 +9,10 @@
 **b）**除 s 和 t 之外，每个顶点的流入流量等于流出流量。
 
 例如，请考虑以下 CLRS 书中的图表。
-[![ford_fulkerson1](img/568b1131326471bed1ddb97bf1399c90.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/ford_fulkerson11.png)
+![ford_fulkerson1](img/568b1131326471bed1ddb97bf1399c90.png)
 
 上图中的最大可能流量为 23。
-[![ford_fulkerson2](img/0cc230058968c39cad925949a53ee714.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/ford_fulkerson2.png)
+![ford_fulkerson2](img/0cc230058968c39cad925949a53ee714.png)
 
 我们已经讨论了 [Ford Fulkerson 算法](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)，该算法使用扩展路径来计算最大流量。
 
@@ -107,47 +107,47 @@ to one edge shown above.
 ```
 
 1.  初始给定流程图。
-    [![pushrelabel1](img/7e0967b8f18740c26d835c41c1f6601c.png)](https://media.geeksforgeeks.org/wp-content/uploads/push-rebel.png)
+    ![pushrelabel1](img/7e0967b8f18740c26d835c41c1f6601c.png)
 
 .
 
 3.  在 PreFlow 操作之后。 在残差图中，从 A 到 S 的边为容量 3，从 S 到 A 的边为无。
-    [![pushrelabel2](img/f2be4224279f4f1e0948c4207f3b7984.png)](https://media.geeksforgeeks.org/wp-content/uploads/push-rebel1.png)
+    ![pushrelabel2](img/f2be4224279f4f1e0948c4207f3b7984.png)
 
 .
 
 5.  高亮显示的顶点被重新标记（高度变为 1），因为它有过多的流量，并且没有相邻的顶点具有较小的高度。 新高度等于相邻高度的最小值加 1.在残差图中，顶点 A 有两个相邻，一个是 S，另一个是 B.S 的高度是 4，B 的高度是 0.这两个的最小值 heights 是 0。我们取最小值并加 1。
-    [![pushrelabel3](img/90e1509ccda298d51926c011f34afd4c.png)](https://media.geeksforgeeks.org/wp-content/uploads/push-rebel2.png)
+    ![pushrelabel3](img/90e1509ccda298d51926c011f34afd4c.png)
 
 .
 
 7.  突出显示的顶点有过多的流动，并且相邻的顶点的高度较低，因此发生 push（）。 顶点 A 的多余流量为 2，边（A，B）的容量为 1。因此，推动的流量为 1（两个值的最小值）。
-    [![pushrelabel4](img/6e833f3c48fefea399983543bd97e8d6.png)](https://media.geeksforgeeks.org/wp-content/uploads/push-rebel3.png)
+    ![pushrelabel4](img/6e833f3c48fefea399983543bd97e8d6.png)
 
 .
 
 11.  高亮显示的顶点被重新标记（高度变为 1），因为它有过多的流量，并且没有相邻的顶点具有较小的高度。
-    [![pushrelabel5](img/028c850291ece28559302a29140efa1d.png)](https://media.geeksforgeeks.org/wp-content/uploads/push-rebel4.png)
+    ![pushrelabel5](img/028c850291ece28559302a29140efa1d.png)
 
 .
 
 13.  高亮显示的顶点有多余的流量，并且相邻顶点的高度较低，因此 flow（）从 B 推到 T。
-    [![pushrelabel6](img/d3ee525186844735b0e8bd43418800bc.png)](https://media.geeksforgeeks.org/wp-content/uploads/push-rebel5.png)
+    ![pushrelabel6](img/d3ee525186844735b0e8bd43418800bc.png)
 
 .
 
 15.  高亮显示的顶点被重新标记（高度变为 5），因为它有过多的流量，并且没有相邻的顶点具有较小的高度。
-    [![pushrelabel7](img/1de69e111ae8fd01f1cfc68803c0df8c.png)](https://media.geeksforgeeks.org/wp-content/uploads/push-rebel6.png)
+    ![pushrelabel7](img/1de69e111ae8fd01f1cfc68803c0df8c.png)
 
 .
 
 17.  突出显示的顶点有过多的流动，并且相邻的顶点的高度较低，因此发生 push（）。
-    [![pushrelabel8](img/1312efa8fdcb4d4213f7c726dfc5dc60.png)](https://media.geeksforgeeks.org/wp-content/uploads/push-rebel7.png)
+    ![pushrelabel8](img/1312efa8fdcb4d4213f7c726dfc5dc60.png)
 
 .
 
 19.  高亮显示的顶点被重新标记（高度增加 1），因为它有过多的流量，并且没有相邻的顶点具有较小的高度。
-    [![pushrelabel9](img/0989522c81d8bdff9c2704a45c1e7c59.png)](https://media.geeksforgeeks.org/wp-content/uploads/push-rebel8.png)
+    ![pushrelabel9](img/0989522c81d8bdff9c2704a45c1e7c59.png)
 
 上面的示例取自[此处](http://melodi.ee.washington.edu/~bilmes/grg/pushrelabel1.ppt)。
 

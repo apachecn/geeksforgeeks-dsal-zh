@@ -9,7 +9,7 @@
 > **输入**：V = {1、2、3}，E = {（1、2），（2、3），（3、1）}
 > **输出**：2
 > 1 1 2
-> [![](img/da6ff0c82a8dee4176a96dc24126b9bf.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200317210537/Untitled-Diagram66-3.jpg) 
+> ![](img/da6ff0c82a8dee4176a96dc24126b9bf.png) 
 > **说明**：
 > 在上面给出的图中，它仅形成一个循环，即
 > ，即顶点 连接 1、2、3 形成一个循环

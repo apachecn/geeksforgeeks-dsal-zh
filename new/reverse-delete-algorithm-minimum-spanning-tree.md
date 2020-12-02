@@ -26,7 +26,7 @@
 
 **插图**：
 让我们用以下示例理解：
-[![](img/8dc4df6d86d36d8246549dc9f7b13def.png "Fig-1")](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Fig-11.jpg)
+![](img/8dc4df6d86d36d8246549dc9f7b13def.png "Fig-1")
 
 如果我们删除权重 14 的最高权重边，则图形不会断开连接，因此我们将其删除。
 ![reversedelete2](img/0f421a99d312f34017ab4d909d3286e6.png)

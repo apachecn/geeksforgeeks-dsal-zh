@@ -11,7 +11,7 @@
 
 ### 使用字典建立图
 
-[![](img/8ce2e0aa06f2a43ed582c49087df5166.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200617040109/cool.jpg)
+![](img/8ce2e0aa06f2a43ed582c49087df5166.png)
 
 **方法**：的想法是将邻接表存储到字典中，这有助于以任意格式存储图形，而不仅是整数形式。 在这里，我们将字符用作所有自定义对象也可以使用的地方的参考。
 

@@ -15,7 +15,7 @@
 **示例**：
 
 > **输入**：
-> [![](img/f144eb1cb17a15ceb777429631beb70f.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200522225042/graph.jpeg)
+> ![](img/f144eb1cb17a15ceb777429631beb70f.png)
 > 
 > **输出**：
 > 顶点 1 依赖性-> 2- > 3
@@ -28,7 +28,7 @@
 > 因此，所有顶点之间的最小依赖性为 2。
 > 
 > **输入**：
-> [![](img/04f29273cfdc8e9a194954280fdf827f.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200526220511/graph2.jpeg)
+> ![](img/04f29273cfdc8e9a194954280fdf827f.png)
 > 
 > **输出**：
 > 顶点 1 依赖性-> 2- > 3- > 4- > 5- > 6

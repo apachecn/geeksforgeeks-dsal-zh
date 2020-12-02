@@ -21,17 +21,17 @@
 
 这个想法是， ***“不要燃烧[桥](https://www.geeksforgeeks.org/bridge-in-a-graph/)“*** ，以便我们可以回到顶点并遍历其余边。 例如，让我们考虑下图。
 
-[![Euler1](img/ecd906f43e4ec8d4f7c5cbf18a42ab9c.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Euler11.png)
+![Euler1](img/ecd906f43e4ec8d4f7c5cbf18a42ab9c.png)
 
 有两个奇数度的顶点“ 2”和“ 3”，我们可以从任何一个开始。 让我们从顶点“ 2”开始浏览。
-[![Euler2](img/4eebbb4119a7db8edb6d6453d077f22d.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Euler21.png) 
+![Euler2](img/4eebbb4119a7db8edb6d6453d077f22d.png) 
 从顶点“ 2”伸出三个边，该选哪个？ 我们没有选择边缘“ 2-3”，因为那是一座桥梁（我们将无法回到“ 3”）。 我们可以选择其余两个边中的任意一个。 假设我们选择“ 2-0”。 我们删除该边并移至顶点“ 0”。
-[![Eule3](img/137bfbae133886b21c58f95b77a07568.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Eule3.png) 
+![Eule3](img/137bfbae133886b21c58f95b77a07568.png) 
 顶点“ 0”只有一个边，因此我们将其选中，将其删除，然后移至顶点“ 1”。 欧拉巡回赛成为“ 2-0 0-1”。
-[![Euler4](img/9f092238b28d00a2d0320d7fe1d8ef29.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Euler4.png)
+![Euler4](img/9f092238b28d00a2d0320d7fe1d8ef29.png)
 
 顶点“ 1”只有一个边，因此我们将其选中，将其删除，然后移至顶点“ 2”。 欧拉巡回演唱会变成“ 2-0 0-1 1-2”
-[![Euler5](img/ba4b4ad6af3818e777cb8f69347432fd.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Euler5.png)
+![Euler5](img/ba4b4ad6af3818e777cb8f69347432fd.png)
 
 同样，从顶点 2 开始只有一条边，因此我们将其选中，将其删除，然后移至顶点 3。 HTG3]
 

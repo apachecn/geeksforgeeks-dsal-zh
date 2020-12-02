@@ -13,17 +13,17 @@
 
 让我们考虑一个图，以了解邻接表和邻接矩阵表示。 令无向图为：
 
-[![](img/440058fb2066846217824b6d456cbd4e.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200609203724/graph.png)
+![](img/440058fb2066846217824b6d456cbd4e.png)
 
 下图在上述表示中表示为：
 
 1.  **Adjacency Matrix:** In the adjacency matrix representation, a graph is represented in the form of a two-dimensional array. The size of the array is **V x V**, where V is the set of vertices. The following image represents the adjacency matrix representation:
 
-    [![](img/c860527743242678c3e3622380e435d9.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200609204115/matrix.png)
+    ![](img/c860527743242678c3e3622380e435d9.png)
 
 2.  **Adjacency List:** In the adjacency list representation, a graph is represented as an array of linked list. The index of the array represents a vertex and each element in its linked list represents the  vertices that form an edge with the vertex. The following image represents the adjacency list representation:
 
-    [![](img/7f14815b98fbc1398b5f60906f87838b.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200609204414/linklist.png)
+    ![](img/7f14815b98fbc1398b5f60906f87838b.png)
 
 下表描述了邻接矩阵和邻接表之间的区别：
 

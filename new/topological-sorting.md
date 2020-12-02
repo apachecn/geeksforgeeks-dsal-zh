@@ -6,7 +6,7 @@
 
 例如，下图的拓扑排序是“ 5 4 2 3 1 0”。 一个图可以有多个拓扑排序。 例如，下图的另一拓扑排序是“ 4 5 2 3 1 0”。 拓扑排序中的第一个顶点始终是度数为 0 的顶点（没有输入边的顶点）。
 
-[![graph](img/7d0dd3600bc879e60d2864710a2aab68.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/graph.png)
+![graph](img/7d0dd3600bc879e60d2864710a2aab68.png)
 
 ***拓扑排序与深度优先遍历（DFS）*** ：
 

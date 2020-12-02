@@ -15,11 +15,11 @@
 > **解释**：
 > **原始图形**：
 > 
-> [![](img/522b2856f61edfe04e42b3163814a88d.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200701031811/GFG136.jpg)
+> ![](img/522b2856f61edfe04e42b3163814a88d.png)
 > 
 > **补图**：[
 > 
-> [![](img/339417245e6c943c68922ccb0bff1cfc.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200701032219/Untitled-drawing48-3.jpg)
+> ![](img/339417245e6c943c68922ccb0bff1cfc.png)
 > 
 > 从 1 到补图中每个节点的距离为：
 > 1 至 1 = 0，
@@ -337,7 +337,7 @@ public static void main(String[] args) 
 ***时间复杂度**：O（V + E）*
 ***辅助空间**：O（V）*
 
-[![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
+![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 
 * * *
 

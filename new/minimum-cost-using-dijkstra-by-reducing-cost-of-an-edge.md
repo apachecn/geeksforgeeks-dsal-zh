@@ -9,13 +9,13 @@
 > **输入**：N = 3，M = 4，边沿= {{1，2，3}，{2，3，1}，{1，3，7}，{2，1，5} }
 > **输出**：2
 > **说明**：
-> [![](img/20bbde33dd0a1efb472c43f8df4edd30.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200722215901/graphExample13.jpg) 
+> ![](img/20bbde33dd0a1efb472c43f8df4edd30.png) 
 > 从源节点 1 到目标节点 N 的最低成本为 = 3/2 +1 = 1 +1 = 2。
 > 
 > **输入**：N = 3，M = 3，边沿= {{{2，3，1}，{1，3，7}，{2，1，5}}
 > **输出 **：2
 > **说明**：
-> [![](img/352ace28dcfa1a7874ba9976f663aab7.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200722215926/graphExample2.jpg) 
+> ![](img/352ace28dcfa1a7874ba9976f663aab7.png) 
 > 从源节点 1 到目标节点 N 的最低成本为= 7/2 = 3。
 
 **方法**：的想法是考虑每个方面，并尝试通过降低成本来最大程度地降低总体成本。 主要思想是将源到目标的路径分解成源到任何顶点`u`的路径，即**路径（1 到 u）**以及从目标到任何顶点`v`，即所有 u 和 v 的**路径（从 n 到 v）**。以下是步骤：

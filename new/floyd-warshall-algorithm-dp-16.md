@@ -40,7 +40,7 @@ Shortest distance matrix
 
 下图显示了所有对最短路径问题中的上述最佳子结构属性。
 
-[![](img/957485506abad8275ceb037ee2a55849.png "Floyd Warshell")](https://media.geeksforgeeks.org/wp-content/uploads/dpFloyd-Warshall-.jpg)
+![](img/957485506abad8275ceb037ee2a55849.png "Floyd Warshell")
 
 以下是 Floyd Warshall 算法的实现。
 

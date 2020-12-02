@@ -12,7 +12,7 @@
 > **输出**：2
 > **说明**：
 > 下图是来自上述信息的图形：
-> [![](img/fc16f9c3fc5220964c13895ca1fa15e9.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200327091323/DFSTraversal.jpg) 
+> ![](img/fc16f9c3fc5220964c13895ca1fa15e9.png) 
 > 从上图可以看到，距顶点 0 最远的节点位于距离 3 处。通过对图中所有节点重复进行 DFS 遍历，我们可以得出从源节点到最远节点的最大 distance []为：
 > distance [ ] = {3，4，3，2，3，4}，距离的最小值是必需的结果。
 > 

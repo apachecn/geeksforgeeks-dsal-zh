@@ -38,7 +38,7 @@ Output : 0
 {4，9，3，0，7，1}，
 {7，7，7，7，0，7}，
 {8，9，6，1，7，0}}；
-[![graph1](img/6f4a90b486ebcac307761a4cb419ccb5.png)](https://media.geeksforgeeks.org/wp-content/uploads/kargest-subset-of-graph-vertices-with-edges-of-2-or-more-colors-2.png)
+![graph1](img/6f4a90b486ebcac307761a4cb419ccb5.png)
 
 <u>步骤 I：</u>首先，我们可以看到第 5 行（节点'e'）仅包含 7 个，表示节点'e'是通过颜色代码为 7 的边连接的，因此它不止一种颜色 边缘，所以我们必须从子集中删除 5。 现在，我们的图形将仅包含 5 个顶点，并且为：
 C [5] [5]：
@@ -47,7 +47,7 @@ C [5] [5]：
 {2，9，0，3，6}，
 {4，9，3，0，1}，
 {8，9，6，1，0}} ;
-[![graph2](img/2f6dcdddc08addf5a0b6086f99c737fc.png)](https://media.geeksforgeeks.org/wp-content/uploads/kargest-subset-of-graph-vertices-with-edges-of-2-or-more-colors-3.png)
+![graph2](img/2f6dcdddc08addf5a0b6086f99c737fc.png)
 
 <u>步骤 II：</u>此外，我们可以看到第 2 行（节点“ b”）也不包含超过 1 个颜色边，因此我们也应删除第 2 行和第 2 列。 结果在我们的新图中显示为：
 C [4] [4]：
@@ -55,7 +55,7 @@ C [4] [4]：
 {2，0，3，6}，
 { 4，3，0，1}，
 {8，6，1，0}};
-[![graph3](img/d7e3cd8c25989370a182a2720461e504.png)](https://media.geeksforgeeks.org/wp-content/uploads/kargest-subset-of-graph-vertices-with-edges-of-2-or-more-colors-4.png)
+![graph3](img/d7e3cd8c25989370a182a2720461e504.png)
 
 <u>步骤 III：</u>现在，我们可以看到每个顶点具有 1 个以上不同的颜色边缘。 因此，子集中的顶点总数为 4。
 

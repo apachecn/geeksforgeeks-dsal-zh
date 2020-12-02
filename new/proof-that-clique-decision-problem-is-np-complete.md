@@ -5,7 +5,7 @@
 **先决条件**：[NP 完整性](https://www.geeksforgeeks.org/np-completeness-set-1/)
 
 集团是图的子图，因此该子图中的所有顶点都相互连接，即子图是完整图。 最大派系问题是找到给定图 G 的最大尺寸派系，该图是一个完整图，它是 G 的子图，并且包含最大顶点数。 这是一个优化问题。 相应地，集团决策问题是要确定给定图中是否存在大小为 k 的集团。
-[![](img/c40f6619495bcda8f4ebf0add74643ac.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200613014930/abc11.jpg) 
+![](img/c40f6619495bcda8f4ebf0add74643ac.png) 
 为了证明问题是 NP-完全的，我们必须证明它同时属于 NP 和 NP-Hard 类。 （由于 NP-完全问题是 NP-Hard 问题，也属于 NP）
 
 **集团决策问题属于 NP** –如果问题属于 NP 类，则它应该具有多项式时间可验证性，即具有证书，我们应该能够在多项式时间内进行验证 解决问题的方法。
@@ -25,7 +25,7 @@
 1.  没有两个属于同一子句的顶点被连接。
 2.  没有变量与其补码连接。
 
-[![](img/f13b6d52bdce5fff467c345a4e4b6743.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200613014958/abc21.jpg)
+![](img/f13b6d52bdce5fff467c345a4e4b6743.png)
 
 因此，图 G（V，E）的构造使得– V = {[ 
 

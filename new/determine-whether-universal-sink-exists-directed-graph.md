@@ -53,7 +53,7 @@ the above as follows:
 查看 A [0] [1]。 在这里，我们遇到一个 1。因此，我们必须将 i 递增 1。A [1] [1]为 0，因此我们不断增加 j。 我们注意到 A [1] [2]，A [1] [3] ..等全为 0，因此 j 将超过
 顶点数（在此示例中为 6）。 现在，我们检查接收器属性的第 i 行和第 i 列。 第 i 行必须完全为 0，第 i 列必须完全为 1，但索引 A [i] [i]
 
-[![Adjacency Matrix](img/9a7701ac98e1f2d8c7a23230ee4b658f.png)](https://media.geeksforgeeks.org/wp-content/uploads/Adjacency_matrix_2.png)
+![Adjacency Matrix](img/9a7701ac98e1f2d8c7a23230ee4b658f.png)
 
 邻接矩阵
 
@@ -79,7 +79,7 @@ for the above as follows:
 在此示例中，我们观察到在第 1 行中，除最后一列外，每个元素均为 0。 因此我们将递增 j 直到达到 1。当达到 1 时，只要
 递增 A [i] [j]的值为 0。如果 i 超过了顶点数，则不可能 有一个接收器，在这种情况下，我将超过顶点数量。
 
-[![Adjacency Matrix](img/602b9c4a9b176629ca46c75e31e65bca.png)](https://media.geeksforgeeks.org/wp-content/uploads/Adjacency_matrix.png)
+![Adjacency Matrix](img/602b9c4a9b176629ca46c75e31e65bca.png)
 
 邻接矩阵
 

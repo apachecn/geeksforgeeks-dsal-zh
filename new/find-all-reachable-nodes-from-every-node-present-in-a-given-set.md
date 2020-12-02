@@ -7,7 +7,7 @@
 给定一个无向图和一组顶点，从给定集中存在的每个顶点中找到所有可到达的节点。
 
 考虑下面具有 2 个未连接组件的无向图。
-[![GraphEx1](img/7f4cdf40d66fc20a674b0c5b7ac379f8.png)](https://media.geeksforgeeks.org/wp-content/uploads/GraphEx1.png)
+![GraphEx1](img/7f4cdf40d66fc20a674b0c5b7ac379f8.png)
 
 ```
 arr[] = {1 , 2 , 5}
@@ -56,7 +56,7 @@ for i=1 to n
 ```
 
 对于示例中显示的图形，访问数组将是。
-[![VisitArray (2)](img/aca9d6f66af66522838c4b039b0860f8.png)](https://media.geeksforgeeks.org/wp-content/uploads/VisitArray-2.png) 
+![VisitArray (2)](img/aca9d6f66af66522838c4b039b0860f8.png) 
 对于节点 1、2、3 和 4，组件号为 1。对于节点 5、6 和 7，组件号为 2。
 
 以上想法的 C ++实现

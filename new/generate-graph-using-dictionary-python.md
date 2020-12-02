@@ -37,7 +37,7 @@ graph = { "a" : ["c"],
 
 **以上示例的图形表示**：[
 
-[![python](img/d9ad3ae8e0a8572d36c4e9825088daff.png)](https://media.geeksforgeeks.org/wp-content/uploads/python1.jpg)
+![python](img/d9ad3ae8e0a8572d36c4e9825088daff.png)
 
 [defaultdict](https://docs.python.org/2/library/collections.html#collections.defaultdict) ：通常，如果您尝试使用字典中当前不在的键来获取项，则 Python 字典会引发 KeyError。 defaultdict 允许如果在字典中找不到键，则创建新条目，而不是引发 KeyError。 此新条目的类型由 defaultdict 的参数给出。
 **Python 函数生成图形**：

@@ -8,7 +8,7 @@
 **的路径示例**：
 
 > **输入**：
-> [![](img/539aec57ab2a33508744f2375034ff6c.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/mother1.png) 
+> ![](img/539aec57ab2a33508744f2375034ff6c.png) 
 > **输出**：
 > 5
 

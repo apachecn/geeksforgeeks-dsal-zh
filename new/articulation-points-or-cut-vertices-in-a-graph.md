@@ -8,9 +8,9 @@
 对于断开的无向图，关节点是顶点移除，这增加了连接的组件数。
 
 以下是一些示例图，其中用红色包围了铰接点。
-[![ArticulationPoints](img/f1b197bb8b5729c62f4c541d89e6709f.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/ArticulationPoints.png) 
-[![ArticulationPoints1](img/7c944d4d5150205a8bc4d6aca844bacc.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/ArticulationPoints1.png) 
-[![ArticulationPoints2](img/89ed6835ec967248fb20636c277f3cdb.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/ArticulationPoints21.png) 
+![ArticulationPoints](img/f1b197bb8b5729c62f4c541d89e6709f.png) 
+![ArticulationPoints1](img/7c944d4d5150205a8bc4d6aca844bacc.png) 
+![ArticulationPoints2](img/89ed6835ec967248fb20636c277f3cdb.png) 
 
 **如何找到给定图中的所有关节点？**
 一种简单的方法是一个接一个地删除所有顶点，然后查看删除顶点是否会导致图形断开。 以下是连接图的简单方法步骤。

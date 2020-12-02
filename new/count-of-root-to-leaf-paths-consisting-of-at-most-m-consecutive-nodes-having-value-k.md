@@ -8,7 +8,7 @@
 
 > **输入**：arr [] = {1，0，1，0，0，1，0}，K = 1，M = 2
 > 
-> [![](img/d4f2e05c609cdaffe191a439229f5352.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200811021757/gfgimg1-660x495.png)
+> ![](img/d4f2e05c609cdaffe191a439229f5352.png)
 > 
 > **输出**：3
 > **说明**：

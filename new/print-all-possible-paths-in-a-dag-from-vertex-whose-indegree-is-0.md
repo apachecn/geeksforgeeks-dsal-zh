@@ -16,7 +16,7 @@
 > 5 2 3 1
 > **说明**：
 > 给定的图形可以表示为：
-> [![](img/7d0dd3600bc879e60d2864710a2aab68.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/graph.png) 
+> ![](img/7d0dd3600bc879e60d2864710a2aab68.png) 
 > 有两个顶点的度数分别为零，即顶点 5 和 4，在探索了这些顶点之后，我们得到了下降路径 ：
 > 4-> 0
 > 4-> 1

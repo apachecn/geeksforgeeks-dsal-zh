@@ -14,7 +14,7 @@
 
 让我们考虑以下示例。 第一张图是给定的图。 第二张图显示了以 1 为根构造的 MST。 MST 的预遍历为 1-2-4-3。 最后加 1 得到 1-2-4-3-1，这是该算法的输出。
 
-[![Euler1](img/f13c11b6b6abf6bde87d85db87cd09b6.png) ](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Euler12.png) [![MST_TSP](img/eebcbbdd09fc75538bbbb1fe6cf7a513.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/MST_TSP.png) 
+![Euler1](img/f13c11b6b6abf6bde87d85db87cd09b6.png) ](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Euler12.png) [![MST_TSP](img/eebcbbdd09fc75538bbbb1fe6cf7a513.png) 
 
 在这种情况下，近似算法会产生最佳行程，但可能不会在所有情况下都产生最佳行程。
 

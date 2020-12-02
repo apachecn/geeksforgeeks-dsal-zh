@@ -4,7 +4,7 @@
 
 给定一个未加权的图，一个源和一个目标，我们需要以最佳方式找到图中从源到目标的最短路径。
 
-[![unweighted graph](img/b3e34b954861ece5127b60ffd3a37874.png)](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/exampleFigure-1.png)
+![unweighted graph](img/b3e34b954861ece5127b60ffd3a37874.png)
 
 8 个顶点的未加权图
 

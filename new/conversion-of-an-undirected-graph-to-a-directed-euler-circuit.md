@@ -11,7 +11,7 @@
 **示例**：
 
 > **输入**：
-> [![](img/120e2b96fb0e6cad934ddda1856785cd.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200504214719/in3.jpg) 
+> ![](img/120e2b96fb0e6cad934ddda1856785cd.png) 
 > **输出**：
 > 1 2
 > 2 5
@@ -21,7 +21,7 @@
 > 3 2
 > **说明**：
 > 给定无向图的有向欧拉电路将为：
-> [![](img/a1be838ecd27d7d986d42b3ab13061bc.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200504214717/out7.jpg)
+> ![](img/a1be838ecd27d7d986d42b3ab13061bc.png)
 
 **方法**：
 

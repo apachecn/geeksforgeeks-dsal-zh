@@ -25,7 +25,7 @@
 <u>**解决方案**</u> 
 **方法**：深度优先遍历可用于检测图形中的循环。 连接图的 DFS 生成一棵树。 仅当图形中存在[后沿](http://en.wikipedia.org/wiki/Depth-first_search#Output_of_a_depth-first_search)时，图形中才会存在一个循环。 后边缘是指从节点到其自身（自环）或 DFS 生成的树中其祖先之一的边缘。 在下图中，有 3 个后边缘，标有十字符号。 可以观察到，这三个后边缘指示图中存在 3 个循环。
 
-[![](img/996d6c652b54a4e0592c68f5dafd1111.png "DFS")](https://media.geeksforgeeks.org/wp-content/uploads/detect-cycle.png)
+![](img/996d6c652b54a4e0592c68f5dafd1111.png "DFS")
 
 对于断开连接的图，我们将 DFS 林作为输出。 为了检测循环，我们可以通过检查后边缘来检查单个树中的循环。
 

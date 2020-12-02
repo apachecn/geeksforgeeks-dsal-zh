@@ -47,7 +47,7 @@ Output : No
 这个想法是创建所有字符的有向图，然后在图中确定它们是否为[欧拉回路](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)。
 
 下图给出了一些字符串数组的图形表示形式，
- [![](img/cc7e4fd0d126ef3a21f812d1cd54be44.png)](https://media.geeksforgeeks.org/wp-content/uploads/stringGraph.png)
+ ![](img/cc7e4fd0d126ef3a21f812d1cd54be44.png)
 
 如果存在[欧拉回路](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)，则可以形成链，否则就不会形成。
 请注意，只有在每个顶点的度和度相同且所有非零度顶点形成单个强连通分量的情况下，有向图才具有[欧拉回路](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)。

@@ -19,7 +19,7 @@ Output:  Following words of dictionary are present
          QUIZ
 ```
 
-[![Boggle](img/2567bb295383f5356055b2b394dc6675.png)](https://www.geeksforgeeks.org/wp-content/uploads/Boggle.png)
+![Boggle](img/2567bb295383f5356055b2b394dc6675.png)
 
 ### [我们强烈建议您单击此处并进行实践，然后再继续解决方案。](https://practice.geeksforgeeks.org/problem-page.php?pid=1653)
 

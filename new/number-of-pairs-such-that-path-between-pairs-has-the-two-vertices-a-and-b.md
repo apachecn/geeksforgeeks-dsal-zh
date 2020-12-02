@@ -11,7 +11,7 @@
 
 **示例**：
 
-> [![](img/bdbdea0602bfadd8e9c961552ffe1e05.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200319113941/Graph19.png) 
+> ![](img/bdbdea0602bfadd8e9c961552ffe1e05.png) 
 > 对于上图：
 > **输入**：A = 3，B = 5
 > **输出**：4
@@ -19,7 +19,7 @@
 > 有四对{X，Y}，因此从源 X 到目标 Y 的所有路径都包含顶点 A，B。它们是：
 > {1、6 }，{1，7}，{2，6}和{2，7}。
 > 
-> [![](img/12075121813f5f8c85a353f45ba9d3ef.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200319114520/Graph-Example-2.png) 
+> ![](img/12075121813f5f8c85a353f45ba9d3ef.png) 
 > 对于上图：
 > **输入**：A = 2，B = 1
 > **输出**：1
@@ -45,19 +45,19 @@
 如果在移除顶点`A`和`B`时，图形被转换为两个断开的分量，则出现三种情况：
 
 1.  当有一组互连的节点连接到顶点 A 时，一些独立的节点连接到 A 和 B，而顶点 B 是图的叶节点：
-    [![](img/983bde172a5fd7028122c4b0c1ad8fd5.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200319121718/Case-1.png) 
+    ![](img/983bde172a5fd7028122c4b0c1ad8fd5.png) 
     显然，在上图中，当从图中删除了顶点`A`和顶点`B`时，该图将转换为**两个不同的分量**。 并且，可以丢弃任何组件，因为一个组件的顶点可以不经过顶点`B`而到达任何其他组件的顶点。 所以不存在一对。
 2.  当存在一组互连的节点连接到顶点 B 时，一些独立的节点连接到 A 和 B，并且顶点 A 是图的叶节点：
-    [![](img/66933baa0af584a857fc017bdb264648.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200319122108/Case-21.png) 
+    ![](img/66933baa0af584a857fc017bdb264648.png) 
     显然，在上图中，从顶点`A`和顶点`B`中删除后，该图将转换为**两种不同的成分**。 并且，可以丢弃任何分量，因为一个分量的顶点可以不经过顶点`A`而到达任何其他分量的顶点。 所以不存在一对。
 3.  当顶点`A`和顶点`B`之间没有节点，并且顶点`A`和`B`都不是图的叶节点时 ：
-    [![](img/5101718c2b5c8accc557e0a8a402cd7b.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200319122635/Case-31.png) 
+    ![](img/5101718c2b5c8accc557e0a8a402cd7b.png) 
     显然，​​在上图中，当顶点`A`和顶点**时，图形被转换为**两个不同的分量** ] B** 从其中删除。 在此，一个组件的任意一个顶点可以与另一组件的任意一个顶点配对。 因此，该图中的对数成为组件 1 和组件 2 中互连节点数量的计数的**乘积**。
 
 如果在删除顶点 A 和 B 时，图形被转换为三个断开的分量，那么只会出现一种情况：
 
 1.  如果有一组互连的节点连接到顶点 A，顶点 B，并且在顶点 A 和顶点 B 之间还有另一组节点，则顶点 A 和 B 都不是叶节点：
-    [![](img/23a4ca6fe8bc44752c28e69edf384f72.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200319123457/Case-3-1.png) 
+    ![](img/23a4ca6fe8bc44752c28e69edf384f72.png) 
     在这种情况下，由于上述原因，可以丢弃顶点 A 和 B 之间的分量。 并且，一旦将其丢弃，它就是两分量图中的情况 3。 可以使用相同的概念来找到顶点数。
 
 因此，可以通过以下步骤实现上述想法：

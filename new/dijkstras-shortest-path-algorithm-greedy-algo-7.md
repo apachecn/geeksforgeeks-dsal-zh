@@ -16,26 +16,26 @@ Dijkstra 的算法与 [Prim 的最小生成树](https://www.geeksforgeeks.org/pr
 …。 **c）**更新 u 的所有相邻顶点的距离值。 要更新距离值，请遍历所有相邻的顶点。 对于每个相邻顶点 v，如果 u（来自源）的距离值和边缘 u-v 的权重之和小于 v 的距离值，则更新 v 的距离值。
 
 让我们通过以下示例来理解：
-[![](img/f4164d3a1cad2c61fbd1ef4aab72ab7a.png "Fig-1")](https://www.geeksforgeeks.org/wp-content/uploads/Fig-11.jpg)
+![](img/f4164d3a1cad2c61fbd1ef4aab72ab7a.png "Fig-1")
 
 集合 *sptSet* 最初为空，分配给顶点的距离为{0，INF，INF，INF，INF，INF，INF，INF}，其中 INF 表示无穷大。 现在选择距离最小的顶点。 选择顶点 0，将其包含在 *sptSet* 中。 因此 *sptSet* 变为{0}。 将 0 包含到 *sptSet* 之后，更新其相邻顶点的距离值。 0 的相邻顶点是 1 和 7。1 和 7 的距离值被更新为 4 和 8。下面的子图显示了顶点及其距离值，仅显示了具有有限距离值的顶点。 SPT 中包含的顶点显示为绿色。
 
-[![](img/1dc515cdf61e19cfa8c73ea1ac12135d.png "Fig-2")](https://www.geeksforgeeks.org/wp-content/uploads/MST1.jpg)
+![](img/1dc515cdf61e19cfa8c73ea1ac12135d.png "Fig-2")
 
 选择具有最小距离值且尚未包含在 SPT 中的顶点（不在 sptSET 中）。 选择顶点 1 并将其添加到 sptSet。 因此，sptSet 现在变为{0，1}。 更新相邻顶点的距离值 1。顶点 2 的距离值变为 12。
 
-[![](img/b5414de705db652467d78b08e80c5316.png "Fig-3")](https://www.geeksforgeeks.org/wp-content/uploads/DIJ2.jpg)
+![](img/b5414de705db652467d78b08e80c5316.png "Fig-3")
 
 选择具有最小距离值且尚未包含在 SPT 中的顶点（不在 sptSET 中）。 选择了顶点 7。 因此，sptSet 现在变为{0，1，7}。 更新相邻顶点 7 的距离值。顶点 6 和 8 的距离值变得有限（分别为 15 和 9）。
-[![](img/189357b96df2565745d9ac2871877ac9.png "Fig-4")](https://www.geeksforgeeks.org/wp-content/uploads/DIJ3.jpg)
+![](img/189357b96df2565745d9ac2871877ac9.png "Fig-4")
 
 选择具有最小距离值且尚未包含在 SPT 中的顶点（不在 sptSET 中）。 选择了顶点 6。 这样 sptSet 现在变成{0，1，7，6}。 更新相邻顶点 6 的距离值。更新顶点 5 和 8 的距离值。
 
-[![](img/ee1bfbe645cdbba19b6efe9ff841fd37.png "Fig-4")](https://www.geeksforgeeks.org/wp-content/uploads/DIJ4.jpg)
+![](img/ee1bfbe645cdbba19b6efe9ff841fd37.png "Fig-4")
 
 我们重复上述步骤，直到 *sptSet* 确实包含给定图的所有顶点。 最后，我们得到以下最短路径树（SPT）。
 
-[![](img/27e81882c6218fbc68b69457ed5c8404.png "Fig-1")](https://www.geeksforgeeks.org/wp-content/uploads/DIJ5.jpg)
+![](img/27e81882c6218fbc68b69457ed5c8404.png "Fig-1")
 
 ***如何实现以上算法？***
 

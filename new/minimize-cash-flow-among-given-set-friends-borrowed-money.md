@@ -6,10 +6,10 @@
 
 示例：
 下图显示了要清算的输入债务。
-[![cashFlow](img/783f83f7fdf679ba7ed9342213cc5585.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/cashFlow.png)
+![cashFlow](img/783f83f7fdf679ba7ed9342213cc5585.png)
 
 以上债务可以通过以下优化方式进行结算：
-[![cashFlow](img/7ed1f1ec282c7e51f8b2345932772779.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/cashFlow1.png)
+![cashFlow](img/7ed1f1ec282c7e51f8b2345932772779.png)
 
 这个想法是使用[贪婪算法](https://www.geeksforgeeks.org/tag/Greedy-Algorithm/)，其中每一步都要结清一个人的全部金额，然后对剩余的 n-1 个人重复进行。
 如何选择第一人称？ 要选择第一个人，请通过从所有贷项（要付的金额）中减去所有债务（要付的金额）来计算获得净额的每个人的净额。 一旦对每个人的净额进行了评估，就找到两个净额最大和最小的人。 这两个人是最大的债权人和债务人。 最少两个人是我们第一个被解决并从名单中删除的人。 设两个数量的最小值为 x。 我们从最高债务人向最高债权人支付“ x”金额，并结清一个人。 如果 x 等于最大借方，则清算最大债务人，否则清算最大债权人。

@@ -5,13 +5,13 @@
 我们已经了解了 Java 中的[通用类](https://www.geeksforgeeks.org/generics-in-java/)。 我们还可以使用它们为 Java 中的[图进行编码。 Graph 类是使用 Java](https://www.geeksforgeeks.org/graph-and-its-representations/) 中的 [HashMap 实现的。 我们知道 HashMap 包含一个键和一个值，我们将节点表示为键，并在图中的值中表示其邻接表。](https://www.geeksforgeeks.org/java-util-hashmap-in-java/)
 
 **示例**：具有 5 个顶点的无向和无权图。
-[![](img/30e8ea189197ba821470a315e1901675.png)](https://www.geeksforgeeks.org/graph-and-its-representations/)
+![](img/30e8ea189197ba821470a315e1901675.png)
 
 **邻接矩阵**：
-[![](img/bb131f35f3b5d91bbf0e21b108b63525.png)](https://www.geeksforgeeks.org/graph-and-its-representations/)
+![](img/bb131f35f3b5d91bbf0e21b108b63525.png)
 
 **邻接列表**：
-[![](img/367e2be9858f15556b5dc886d6fb46a6.png)](https://www.geeksforgeeks.org/graph-and-its-representations/)
+![](img/367e2be9858f15556b5dc886d6fb46a6.png)
 
 **方法**：
 像 C ++一样，我们使用< >在通用类创建中指定参数类型。 为了创建通用类的对象，我们使用以下语法。

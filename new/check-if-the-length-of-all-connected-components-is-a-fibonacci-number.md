@@ -692,7 +692,7 @@ Yes
 时间复杂度：O（V + E）
 此方法避免了较早的预先计算，并使用数学公式来检测各个长度是否为斐波那契数。 因此，可以在恒定时间 **O（1）**和恒定空间中实现计算，因为它避免了使用任何 HashSet 来存储斐波那契数。 因此，仅通过 DFS 遍历即可确定此方法中程序的整体复杂性。 因此，复杂度为 **O（E + V）**，其中 E 和 V 是无向图的边和顶点数。
 
-[![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
+![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 
 * * *
 

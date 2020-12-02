@@ -5,7 +5,7 @@
 **旅行商问题（TSP）**：给定一组城市以及每对城市之间的距离，问题在于找到最短的 p 条可行路线，该路线只对每个城市进行一次访问并返回起点 点。
 注意[哈密顿循环](https://www.geeksforgeeks.org/backtracking-set-7-hamiltonian-cycle/)和 TSP 之间的差异。 汉密尔顿循环问题是要找出是否存在一次游览每个城市一次的旅行。 在这里，我们知道存在汉密尔顿游历（因为该图是完整的），并且实际上存在许多此类游历，问题是找到最小权重的汉密尔顿环。
 
-[![Euler1](img/f13c11b6b6abf6bde87d85db87cd09b6.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Euler12.png)
+![Euler1](img/f13c11b6b6abf6bde87d85db87cd09b6.png)
 
 例如，考虑右侧图所示的图形。 图中的 TSP 巡视是 1-2-4-3-1。 游览费用为 10 + 25 + 30 + 15，即 80。
 

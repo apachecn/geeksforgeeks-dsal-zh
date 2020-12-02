@@ -7,7 +7,7 @@
 [图形的广度优先遍历（或搜索）](http://en.wikipedia.org/wiki/Breadth-first_search)类似于树的广度优先遍历（请参阅[的方法 2](https://www.geeksforgeeks.org/level-order-tree-traversal/) ）。 这里唯一要注意的是，与树不同，图可能包含循环，因此我们可能会再次来到同一节点。 为了避免多次处理节点，我们使用布尔访问数组。 为了简单起见，假设所有顶点都可以从起始顶点到达。
 例如，在下图中，我们从顶点 2 开始遍历。当到达顶点 0 时，我们将寻找它的所有相邻顶点。 2 也是 0 的相邻顶点。如果我们不标记访问的顶点，那么 2 将再次被处理，它将成为一个非终止过程。 下图的广度优先遍历为 2、0、3、1。
 
-[![](img/40ca76ea468053c881ac72e49e82f1e2.png "BFS")](https://media.geeksforgeeks.org/wp-content/uploads/bfs-5.png)
+![](img/40ca76ea468053c881ac72e49e82f1e2.png "BFS")
 
 以下是来自给定源的简单“广度优先遍历”的实现。
 

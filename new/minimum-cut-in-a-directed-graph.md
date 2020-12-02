@@ -7,7 +7,7 @@
 
 例如，在以下流网络中，示例性截割为{{0，1}，{0、2}}，{{0、2}，{1、2}，{1、3}}等。 最小 st 剪切为{{1，3}，{4，3}，{4 5}}，其容量为 12 + 7 + 4 = 23。
 
-[![minCut](img/a70bad793256b94e7d9f9609144cf682.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/minCut.png)
+![minCut](img/a70bad793256b94e7d9f9609144cf682.png)
 
 强烈建议您先阅读以下内容。
 [Ford-Fulkerson 算法，用于最大流量问题](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)

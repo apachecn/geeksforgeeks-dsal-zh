@@ -14,7 +14,7 @@
 让我们看看锡罐和兜售阵列如何帮助确定转换后的阵列的范围。
 让 N 元根树为：
 
-[![](img/485f5e2a20c020364767a4884ffb4f30.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200205130617/autodraw-2_3_20201.png)
+![](img/485f5e2a20c020364767a4884ffb4f30.png)
 
 ```
 real values on nodes:   1 2 2 1 4 3 6 

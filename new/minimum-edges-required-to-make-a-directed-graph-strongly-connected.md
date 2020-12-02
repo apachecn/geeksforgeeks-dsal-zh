@@ -13,7 +13,7 @@
 > 因此，所需的最小边数为 1。
 > 下面是上述示例的图示：
 > 
-> [![](img/95f8dac75e3bff0a169fdbb1a00ad425.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200719192620/graph7.PNG)
+> ![](img/95f8dac75e3bff0a169fdbb1a00ad425.png)
 > 
 > **输入**：N = 6，M = 5，source [] = {1，3，1，3，5}，destination [] = {2，2，3，5，6}
 > **输出**：3

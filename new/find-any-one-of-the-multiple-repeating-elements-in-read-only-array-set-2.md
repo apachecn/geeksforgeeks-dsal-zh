@@ -42,7 +42,7 @@
     > arr [0] =`2`– > arr [2] =`4`– > arr [4] =`3`– > arr [ 3] =`1`– > arr [1] =`6`– > arr [6] =`5`– > arr [5] =`1`。
 
     该序列形成循环，如下所示：
-    [![](img/06fb8040af33bab9c665b03adb32ee4b.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200616013601/Firefox_Screenshot_2020-06-15T20-05-04.185Z.png)
+    ![](img/06fb8040af33bab9c665b03adb32ee4b.png)
 
 5.  算法由两部分组成，并使用两个指针，通常称为**乌龟**和**野兔**。
     *   **兔子= arr [arr [兔子]]** 的速度是**乌龟= arr [草龟]** 的两倍。

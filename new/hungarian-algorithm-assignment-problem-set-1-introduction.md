@@ -6,17 +6,17 @@
 
 **示例**：您是一家芯片制造商的经理，目前您在与客户会面的路上有 3 个人。 您的销售人员在斋浦尔，浦那和班加罗尔，您希望他们飞往其他三个城市：德里，孟买和喀拉拉邦。 下表显示了城市之间以 INR 为单位的机票价格：
 
-[![hungarian1](img/ec790db6f64fbb6c5e14e6d292501698.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/hungarian1.png)
+![hungarian1](img/ec790db6f64fbb6c5e14e6d292501698.png)
 
 问题：您将把每个销售人员送到哪里以减少公平？
 
 可能的分配：费用= 11000 INR
 
-[![hungerain2](img/299f5bd9c9c1453c6a348ee622bd09ff.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/hungerain2.png)
+![hungerain2](img/299f5bd9c9c1453c6a348ee622bd09ff.png)
 
 其他可能的分配：成本= **9500** INR，这是 **3 中最好的！** 可能的分配。
 
-[![hungarian4](img/5824ba3bc484d4cfd0f586ee860ea427.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/hungarian4.png)
+![hungarian4](img/5824ba3bc484d4cfd0f586ee860ea427.png)
 
 **蛮力解**是要考虑每个可能的赋值，意味着**Ω（n！）**的复杂度。
 

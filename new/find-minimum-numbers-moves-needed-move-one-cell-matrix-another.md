@@ -26,7 +26,7 @@ Output : 4
 ```
 
 询问： [Adob​​e 访谈](https://www.geeksforgeeks.org/adobe-interview-experience-set-41-software-engineer/)
-。 [![minimum_move](img/0309f6e58e9c0be41d7d925357545272.png)](https://media.geeksforgeeks.org/wp-content/uploads/Untitled6.png) 
+。 ![minimum_move](img/0309f6e58e9c0be41d7d925357545272.png) 
 
 这个想法是使用 Level 图（广度优先遍历）。 将每个像元视为一个节点，并将任意两个相邻像元之间的每个边界作为一条边。 所以 Node 的总数是 N * N。
 

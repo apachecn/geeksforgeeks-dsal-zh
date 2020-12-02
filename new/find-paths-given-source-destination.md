@@ -7,7 +7,7 @@
 给定有向图，源顶点“ s”和目标顶点“ d”，打印从给定“ s”到“ d”的所有路径。
 考虑以下有向图。 令 s 为 2，d 为 3。从 2 到 3 有 4 条不同的路径。
 
-[![allPaths](img/3bae321fd72c187df30b2e6e2e308f87.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/allPaths.png)
+![allPaths](img/3bae321fd72c187df30b2e6e2e308f87.png)
 
 **方法**：
 

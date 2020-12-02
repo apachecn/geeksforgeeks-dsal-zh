@@ -4,11 +4,11 @@
 
 最大流量问题涉及通过最大单源单汇流网络找到可行流量。
 让我们拍张照片来解释以上定义要说的话。
-[![ford_fulkerson1](img/616f50eb9a2c6a8b7c60bb2d9c723da1.png)](https://www.geeksforgeeks.org/wp-content/uploads/ford_fulkerson11.png)
+![ford_fulkerson1](img/616f50eb9a2c6a8b7c60bb2d9c723da1.png)
 
 每个边缘都标有容量，即可以携带的最大物品数量。 目的是弄清楚可以从顶点 s（源）推送到顶点 t（sink）多少东西。
 
-。 [![ford_fulkerson2](img/b243b661d25fb511dfc9ffc8206d4d3c.png)](http://www.geeksforgeeks.org/wp-content/uploads/ford_fulkerson2.png) 
+。 ![ford_fulkerson2](img/b243b661d25fb511dfc9ffc8206d4d3c.png) 
 可能的最大流量为： **23**
 
 以下是解决问题的不同方法：
@@ -45,10 +45,10 @@ C(e) capacity of edge
 
 注意，路径搜索只需要确定在边 e 的子图中 f（e）
 
-[![image14](img/355ebe923ec1b8ca8e349f4227f569e6.png)](http://media.geeksforgeeks.org/wp-content/uploads/image141.png) 
+![image14](img/355ebe923ec1b8ca8e349f4227f569e6.png) 
 从源（s）到接收器（t）[s-> 1-> 2-> t]的路径为最大流量 3 单位（ 路径以蓝色显示）
-[![image](img/a1bd3d0b31efba276fc23ad42e3f7581.png)](http://media.geeksforgeeks.org/wp-content/uploads/image15.png) 
-[![image](img/80f730485b805b2aaa99e6db2cecbe60.png)](http://media.geeksforgeeks.org/wp-content/uploads/image16.png) 
+![image](img/a1bd3d0b31efba276fc23ad42e3f7581.png) 
+![image](img/80f730485b805b2aaa99e6db2cecbe60.png) 
 从图形中删除所有无用的边后，看起来像
 [[ ![maximum](img/ea4bd92246d666b4bd23c8408c63ffb9.png)](http://media.geeksforgeeks.org/wp-content/uploads/maximum.png) 
 对于上图，没有从源到接收器的路径，因此最大流量为 3 单位，但最大流量为 5 单位。 为了解决这个问题，我们使用残差图。
@@ -56,7 +56,7 @@ C(e) capacity of edge
 **2.残差图**
 
 这个想法是通过允许“撤消”操作来扩展幼稚贪婪算法。 例如，从该算法卡在上方图像的角度出发，我们想沿着边缘（s，2）路由另外两个流动单元，然后沿着边缘（1、2）向后路由，撤消两个 我们路由了 3 个单元，进行了先前的迭代，最后沿着边（1，t）
-[![maximum](img/3e8cb352e52bae2dedbe9e137ed675ad.png)](http://media.geeksforgeeks.org/wp-content/uploads/maximum1.png) 
+![maximum](img/3e8cb352e52bae2dedbe9e137ed675ad.png) 
 后边缘：（f（e））和前边缘：（C（e ）– f（e））
 
 我们需要一种正式指定允许的“撤消”操作的方法。 这激发了以下简单但重要的残差网络定义。 这个想法是，给定一个图 G 和其中的流 f，我们形成一个新的流网络 G <sub>f</sub> ，它具有相同的 G 顶点集，并且每个 G 边缘都有两个边。 边缘 e =（1,2）的 G 携带流量 f（e）且具有容量 C（e）（对于上图）产生容量为 C（e）的 G <sub>f</sub> 的“前缘” -f（e）（剩余的房间）和 G <sub>f</sub> 的“后边缘”（2,1），容量为 f（e）（可以撤消的先前路由的流量）。 通过纯朴素的贪婪算法搜索的所有边缘具有 f（e）< C（e）的源（s）-下沉（t）路径，对应于 G <sub>f [</sub> 仅包含前边缘。

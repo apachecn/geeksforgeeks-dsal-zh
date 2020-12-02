@@ -10,7 +10,7 @@
 
 > **输入**：N **=** 10，E = 13，如下图所示：
 > 
-> [![](img/8eb7b09a7a7f533669de0c59a52b5ecf.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200804212533/Semester1.png)
+> ![](img/8eb7b09a7a7f533669de0c59a52b5ecf.png)
 > 
 > **输出**：1 1 2 2 2 3 4 5 2 6 [
 > **说明**：
@@ -24,7 +24,7 @@
 > 
 > **输入**：N = 7，E = 7，如下图所示：
 > 
-> [![](img/7a181f9958b3a737cff0630f726eb5e8.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200808013603/Semester2.png)
+> ![](img/7a181f9958b3a737cff0630f726eb5e8.png)
 > 
 > **输出**：1 2 3 3 3 4 4 ??
 > **说明**：

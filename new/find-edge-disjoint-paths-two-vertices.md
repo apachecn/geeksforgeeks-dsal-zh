@@ -4,11 +4,11 @@
 
 给定一个有向图和其中两个顶点（源 s 和目标 t），找出从 s 到 t 的最大边不相交路径数。 如果两条路径不共享任何边，则它们被称为边不相交。
 
-[![edgedisjoint1](img/c7eb781c429956164f4cc9f2f63d8db3.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/edgedisjoint1.png)
+![edgedisjoint1](img/c7eb781c429956164f4cc9f2f63d8db3.png)
 
 在上图中，从源 0 到目标 7 最多可以有两条边缘不相交的路径。 两条边缘不相交的路径在下面以红色突出显示，蓝色分别为 0-2-6-7 和 0-3-6-5-7。
 
-[![edgedisjoint2](img/13729ae49238284ab354c2f3e295e7bf.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/edgedisjoint2.png)
+![edgedisjoint2](img/13729ae49238284ab354c2f3e295e7bf.png)
 
 请注意，路径可能不同，但最大数量相同。 例如，在上图中，另一组可能的路径分别是 0-1-2-6-7 和 0-3-6-5-7。
 

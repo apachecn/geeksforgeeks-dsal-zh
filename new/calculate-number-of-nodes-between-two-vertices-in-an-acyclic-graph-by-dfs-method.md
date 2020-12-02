@@ -12,7 +12,7 @@
 > 路径 在 7 和 8 之间的是 7-> 2-> 6-> 3->8。
 > 因此，在 7 和 8 之间的节点数是 3。
 > 
-> [![](img/f4160071d20eb16a4c9057b36676f7fc.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200908100034/acyclicGraph.jpg)
+> ![](img/f4160071d20eb16a4c9057b36676f7fc.png)
 > 
 > **输入**：V = 8，E = 7，src = 5，dest = 2，edge [] [] = {{1 4}，{4，5}，{4，2}，{2 ，6}，{6，3}，{2，7}，{3，8}}
 > **输出**：3

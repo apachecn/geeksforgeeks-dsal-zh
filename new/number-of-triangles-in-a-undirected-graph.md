@@ -6,7 +6,7 @@
 
 给定一个无向的简单图，我们需要找到它可以有多少个三角形。 例如下面的图表中有 2 个三角形。
 
-[![triangle2](img/209b6eb9a6bcd8e10fa5c628e376c9db.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/triangle21.png)
+![triangle2](img/209b6eb9a6bcd8e10fa5c628e376c9db.png)
 
 令 A [] []为图的邻接矩阵表示。 如果我们计算 A <sup>3</sup> ，则无向图中的三角形数等于 trace（A <sup>3</sup> ）/6。其中 trace（A）是元素上的元素之和。 矩阵 A 的主对角线。
 

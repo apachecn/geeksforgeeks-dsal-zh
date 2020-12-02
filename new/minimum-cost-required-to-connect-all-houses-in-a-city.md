@@ -12,7 +12,7 @@
 > **输出**：20
 > **说明**：
 > 
-> [![](img/a8ca126a35427e8276eeba3b021e1532.png)](https://media.geeksforgeeks.org/wp-content/uploads/20201027125012/UntitledDiagram5.jpg)
+> ![](img/a8ca126a35427e8276eeba3b021e1532.png)
 > 
 > 将成本= 4 的房屋 1（0，0）与房屋 2（2，2）连接起来
 > 将成本= 9 的房屋 2（2，2）与房屋 3（3，10）连接起来

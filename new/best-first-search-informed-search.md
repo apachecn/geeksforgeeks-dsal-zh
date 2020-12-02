@@ -32,7 +32,7 @@ End procedure
 
 让我们考虑以下示例。
 
-[![BFS](img/d9f8d4bd0c0b02c4e648e5afe6935159.png)](https://media.geeksforgeeks.org/wp-content/uploads/BFS2.png)
+![BFS](img/d9f8d4bd0c0b02c4e648e5afe6935159.png)
 
 ```
 We start from source "S" and search for

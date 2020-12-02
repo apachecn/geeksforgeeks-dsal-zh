@@ -16,7 +16,7 @@
 *   让我们假设图`G`包含哈密顿循环，遍历图的所有顶点 V。 现在，这些顶点与![cost = N](img/09734fc299eb3822a566a05457bdb22d.png "Rendered by QuickLaTeX.com")形成一个 TSP，因为它使用成本为 c（e）= 1 的原始图的所有边。 并且，由于这是一个循环，因此它返回到原始顶点。
 *   我们假设图形 G’包含成本为![K = N](img/aa04ec8580a82f5d6a6aba255beae14d.png "Rendered by QuickLaTeX.com")的 TSP。 TSP 遍历图的所有顶点，返回到原始顶点。 现在，由于没有一个顶点从图中排除，并且成本总和为 n，因此，必然要使用成本为 1 的`E`中存在的图形的所有边，从而形成[汉密尔顿 图`G`循环](https://www.geeksforgeeks.org/hamiltonian-cycle-backtracking-6/)。
 
-[![](img/193acfe4410481310df5bf4672444aa7.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200601165759/tsp1.jpg)
+![](img/193acfe4410481310df5bf4672444aa7.png)
 
 因此，如果图`G`包含哈密顿循环，则可以说图 **G'**包含 TSP。 因此，旅行商问题的任何情况都可以简化为汉密尔顿周期问题的情况。 因此，TSP 是 NP-Hard。
 

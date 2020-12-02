@@ -11,7 +11,7 @@
 **示例**：
 
 > **输入**：N = 5，边缘[] = {{1，2}，{2，3}，{3，1}，{4，3}，{4，5}，{5， 3}}
-> [![](img/c033c0b07a93e1431256b4aff3e6e671.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200511165345/Count-the-number-of-Prime-Cliques-in-an-undirected-graph.png) 
+> ![](img/c033c0b07a93e1431256b4aff3e6e671.png) 
 > **输出**：8
 > **说明**：
 > 在给定的无向图中，1- > 2- > 3 和 3- > 4- > 5 是两个完整的子图，两个子图均为素数 3。

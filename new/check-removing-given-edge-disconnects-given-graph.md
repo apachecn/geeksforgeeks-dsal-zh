@@ -6,7 +6,7 @@
 
 以下是一些示例图，其中的桥用红色突出显示。
 
-[![Bridge1](img/9b96ad4f3ba84ccea21701a8144a9b7c.png) ](https://www.geeksforgeeks.org/wp-content/uploads/Bridge1.png) [ ![Bridge2](img/e02a14c309771a7d2bfcad3c3cf19370.png) ](https://www.geeksforgeeks.org/wp-content/uploads/Bridge2.png) [ ![Bridge3](img/0e398ed2842367256c38e41388d4cc1e.png)](https://www.geeksforgeeks.org/wp-content/uploads/Bridge3.png)
+![Bridge1](img/9b96ad4f3ba84ccea21701a8144a9b7c.png) ](https://www.geeksforgeeks.org/wp-content/uploads/Bridge1.png) [ ![Bridge2](img/e02a14c309771a7d2bfcad3c3cf19370.png) ](https://www.geeksforgeeks.org/wp-content/uploads/Bridge2.png) [ ![Bridge3](img/0e398ed2842367256c38e41388d4cc1e.png)
 
 一种解决方案是[在给定图](https://www.geeksforgeeks.org/bridge-in-a-graph/)中找到所有桥，然后检查给定边是否为桥。
 

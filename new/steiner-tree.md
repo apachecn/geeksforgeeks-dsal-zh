@@ -8,7 +8,7 @@
 给定的顶点集称为 ***终端顶点*** ，而用于构造 Steiner 树的其他顶点称为 ***Steiner 顶点*** 。
  **斯坦纳树问题**是寻找成本最低的斯坦纳树。 参见以下示例。
 
-[![steiner](img/304ba7c024b1cd8f9362d64978cf3fde.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/steiner.png)
+![steiner](img/304ba7c024b1cd8f9362d64978cf3fde.png)
 
 **生成树与 Steiner 树**
 [最小生成树](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)是跨越**所有**顶点的最小权重树。

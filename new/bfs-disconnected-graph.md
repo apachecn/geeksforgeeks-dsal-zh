@@ -7,7 +7,7 @@
 ![](img/e0f654fe4d94e99a980e9a0c2ad21d29.png)
 所有顶点都是可到达的。 因此，对于以上图形，简单的 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 将起作用。
 
-[![graph](img/e82088dc94b9cda81be39cbf1511482f.png)](https://media.geeksforgeeks.org/wp-content/uploads/graph4.png) 
+![graph](img/e82088dc94b9cda81be39cbf1511482f.png) 
 如上图所示，顶点 1 不能从所有顶点到达，因此简单的 BFS 不适用于该顶点。
 
 ```

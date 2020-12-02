@@ -11,8 +11,8 @@
 我们将到所有顶点的距离初始化为无穷大，到源的距离初始化为 0，然后找到图的拓扑排序。 [图的拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)表示图的线性排序（请参见下面的图（b）是图（a）的线性表示）。 一旦我们有了拓扑顺序（或线性表示），我们便按拓扑顺序逐一处理所有顶点。 对于每个要处理的顶点，我们使用当前顶点的距离来更新其相邻的距离。
 
 下图取自此来源[。 它逐步显示了寻找最短路径的过程。
-](http://www.utdallas.edu/~sizheng/CS4349.d/l-notes.d/L17.pdf)[![TopologicalSort](img/5484e09ca249128ed680d4a37f56addd.png)](https://media.geeksforgeeks.org/wp-content/uploads/shortestpathstart.jpg) 
-[![TopologicalSort](img/7ff1cad953455777d03a3b4ca93a2cc2.png)](https://media.geeksforgeeks.org/wp-content/uploads/shortestpathsteps.png)
+](http://www.utdallas.edu/~sizheng/CS4349.d/l-notes.d/L17.pdf)![TopologicalSort](img/5484e09ca249128ed680d4a37f56addd.png) 
+![TopologicalSort](img/7ff1cad953455777d03a3b4ca93a2cc2.png)
 
 以下是找到最短距离的完整算法。
 **1）**初始化 dist [] = {INF，INF，…。}，并且 dist [s] = 0，其中 s 是源顶点。

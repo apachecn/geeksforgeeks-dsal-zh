@@ -9,17 +9,17 @@
 **示例**：
 
 > **输入**：N = 4，M = 3，K = 2，边线[] [] = {{1，2}，{2，3}，{3，4}}
-> [![](img/e4ed15f16980e5ceaea7e359e166c17d.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200915160148/del.png) 
+> ![](img/e4ed15f16980e5ceaea7e359e166c17d.png) 
 > **输出**：1
 > **说明**：
 > 一种可能的方法是删除边线[1、2]。 然后将有 2 个连接组件，如下所示：
-> [![](img/9279f0184ceb9aade8675b0a968814dc.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200916121743/del2.png)
+> ![](img/9279f0184ceb9aade8675b0a968814dc.png)
 > 
 > **输入**：N = 3，M = 3，K = 3，边线[] [] = {{1，2}，{2，3}，{3，1}}
-> [![](img/bf7cd05cd1268fc2ff3c049c04f2471f.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200915160405/del1.png) 
+> ![](img/bf7cd05cd1268fc2ff3c049c04f2471f.png) 
 > **输出**：3
 > **说明**：可以去除所有边缘以形成 3 个相连的组件，如下所示：
-> [![](img/81335323897c797dbe9c9630fc1a9c2a.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200916121606/cc.png)
+> ![](img/81335323897c797dbe9c9630fc1a9c2a.png)
 
 **方法**：为了解决给定的问题，[计算给定图形](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)中存在的连接组件的数量。 令计数为`C`。 观察到，如果`C`大于`K`，那么由于连接零件的数量只会增加，因此不可能去除边缘会产生`K`连接的零件。 否则，答案将始终存在。
 

@@ -33,12 +33,12 @@ that does two BFS traversals of graph:
 <center>**Example 1 :**</center>
 
 Given a directed to check if it is strongly connected or not.
-[![graph 1](img/64445ed5b2cb865cf075840c278ac365.png)](https://media.geeksforgeeks.org/wp-content/uploads/graph-1.jpg)
+![graph 1](img/64445ed5b2cb865cf075840c278ac365.png)
 
 步骤 1：从顶点 2 开始，获得的 BFS 为 2 3 4 0 1
 
 第 2 步：反转给定图后，我们得到了列出的图。
-[![graph 1](img/cf130974782093cdb0c722ace0f2aae2.png)](https://media.geeksforgeeks.org/wp-content/uploads/graph-12.jpg)
+![graph 1](img/cf130974782093cdb0c722ace0f2aae2.png)
 
 步骤 3：再次从顶点 2 开始，BFS 为 2 1 4 0 3
 
@@ -49,12 +49,12 @@ Given a directed to check if it is strongly connected or not.
 <center>**Example 2 :**</center>
 
 Given a directed to check if it is strongly connected or not.
-[![graph 2](img/56a919d9382e183deee188ff09e84a30.png)](https://media.geeksforgeeks.org/wp-content/uploads/graph-21.jpg)
+![graph 2](img/56a919d9382e183deee188ff09e84a30.png)
 
 步骤 1：从顶点 2 开始，获得的 BFS 为 2 3 4
 
 第 2 步：反转给定图后，我们得到了列出的图。
-[![graph 2](img/ed270ef0aa0e217d58fecaabd9725ca2.png)](https://media.geeksforgeeks.org/wp-content/uploads/graph-22.jpg)
+![graph 2](img/ed270ef0aa0e217d58fecaabd9725ca2.png)
 
 步骤 3：再次从顶点 2 开始，BFS 为 2 1 0
 
