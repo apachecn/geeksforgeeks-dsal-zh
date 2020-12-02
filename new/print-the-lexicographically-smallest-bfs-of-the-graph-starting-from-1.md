@@ -2,11 +2,11 @@
 
 > 原文： [https://www.geeksforgeeks.org/print-the-lexicographically-smallest-bfs-of-the-graph-starting-from-1/](https://www.geeksforgeeks.org/print-the-lexicographically-smallest-bfs-of-the-graph-starting-from-1/)
 
-给定一个具有 **N** 个顶点和 **M** 边的连通图。 任务是从 1 开始打印该图的按字典顺序最小的 BFS 遍历。
+给定一个具有`N`个顶点和`M`边的连通图。 任务是从 1 开始打印该图的按字典顺序最小的 BFS 遍历。
 
 **注意**：顶点的编号从 1 到 N。
 
-**示例：**
+**示例**：
 
 ```
 Input: N = 5, M = 5 
@@ -27,7 +27,7 @@ Output: 1 2 3
 
 ```
 
-**方法：**我们可以使用优先级队列（最小堆）代替简单的队列，而不必在图形上进行普通的 BFS 遍历。 当访问节点时，将其相邻节点添加到优先级队列中。 每次我们访问一个新节点时，它将是优先级队列中索引最小的节点。 每次访问时从 1 开始打印节点。
+**方法**：我们可以使用优先级队列（最小堆）代替简单的队列，而不必在图形上进行普通的 BFS 遍历。 当访问节点时，将其相邻节点添加到优先级队列中。 每次我们访问一个新节点时，它将是优先级队列中索引最小的节点。 每次访问时从 1 开始打印节点。
 
 下面是上述方法的实现：
 

@@ -2,30 +2,30 @@
 
 > 原文： [https://www.geeksforgeeks.org/count-of-node-sequences-of-length-k-consisting-of-at-least-one-black-edge/](https://www.geeksforgeeks.org/count-of-node-sequences-of-length-k-consisting-of-at-least-one-black-edge/)
 
-给定一棵树，该树由从 **[1，N]** 编号的 **N 个**节点组成，并被着色为**黑色（由 1 表示）或**绿色（由**表示） 0）**，任务是计算长度为 **K** [a <sub>1</sub> ， <sub>2</sub> ，.. a <sub>K 的序列数</sub> ，使得连续节点之间的路径最短，并且覆盖的边缘至少由一个黑色边缘组成。 由于答案可能很大，因此将其打印为 **10 <sup>9</sup> +7** 的模。
+给定一棵树，该树由从 **[1，N]** 编号的 **N 个**节点组成，并被着色为**黑色（由 1 表示）或**绿色（由**表示） 0）**，任务是计算长度为`K`[a <sub>1</sub> ， <sub>2</sub> ，.. a <sub>K 的序列数</sub> ，使得连续节点之间的路径最短，并且覆盖的边缘至少由一个黑色边缘组成。 由于答案可能很大，因此将其打印为 **10 <sup>9</sup> +7** 的模。
 
-> **输入：** N = 4，K = 4
+> **输入**：N = 4，K = 4
 > 1-2 0
 > 2-3 0
 > 2-4 0
-> **输出：** 0
-> **说明：**Â
+> **输出**：0
+> **说明**：Â
 > 由于树中没有黑边。 没有这样的序列。
 > 
-> **输入：** N = 3，K = 3
+> **输入**：N = 3，K = 3
 > 1-2 1
 > 2-3 1
-> **输出：** 24
+> **输出**：24
 > **说明：[**
 > 答案中包括除（1、1、1），（2、2、2）和（3、3、3）之外的所有 3 个 <sup>3</sup> 序列。
 
-**方法：**
-的想法是计算长度 **K** 的序列数，以便不覆盖任何黑色边缘。 令计数为 **temp** 。 然后**（N <sup>K</sup> ）–温度**是必需的答案。 **temp** 可以通过去除黑边，然后计算所得图形的不同成分的大小来轻松计算。
+**方法**：
+的想法是计算长度`K`的序列数，以便不覆盖任何黑色边缘。 令计数为 **temp** 。 然后**（N <sup>K</sup> ）–温度**是必需的答案。 **temp** 可以通过去除黑边，然后计算所得图形的不同成分的大小来轻松计算。
 
 请按照以下步骤操作：
 
 1.  将**和**的值初始化为 **N <sup>K</sup>** 。
-2.  通过仅添加绿色边来构造图 **G** 。
+2.  通过仅添加绿色边来构造图`G`。
 3.  执行图形的 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)，并从 **an** 减去**（大小 <sup>K</sup> ）**，其中**大小**为 图 G 的不同组成部分中的节点数。
 
 下面是上述方法的实现：
@@ -572,7 +572,7 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N），因为 DFS 遍历需要 O（Vertices + Edges）== O（N +（N-1））== O（N））复杂度。*
+***时间复杂度**：O（N），因为 DFS 遍历需要 O（Vertices + Edges）== O（N +（N-1））== O（N））复杂度。*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

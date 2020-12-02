@@ -69,7 +69,7 @@ Component                Cheapest Edge that connects
 
 在这一阶段，只有一个具有全部边缘的分量{0、1、2、3、4、5、6、7、8}。 由于仅剩一个组件，因此我们停止并返回 MST。
 
-**实现：**
+**实现**：
 下面是上述算法的实现。 输入图表示为边的集合，[联合查找数据结构](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)用于跟踪组件。
 
 ## C / C ++

@@ -85,7 +85,7 @@ int main()
 0 1 2 3 4
 ```
 
-**以下是相关文章：**
+**以下是相关文章**：
 [使用 STL 进行竞争性编程的图形实现| 集合 2（加权图）](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-2-weighted-graph/)
 [使用 STL 的 priority_queue 的 Dijkstra 最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/)
 [使用 STL 中的集的 Dijkstra 最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-set-in-stl/)

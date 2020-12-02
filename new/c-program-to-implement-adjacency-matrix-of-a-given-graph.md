@@ -4,25 +4,25 @@
 
 > 原文： [https://www.geeksforgeeks.org/c-program-to-implement-adjacency-matrix-of-a-given-graph/](https://www.geeksforgeeks.org/c-program-to-implement-adjacency-matrix-of-a-given-graph/)
 
-给定 **N** 顶点 1 至 **N** 和 **M** 顶点的无向[图](https://www.geeksforgeeks.org/graph-and-its-representations/)，其二维数组为[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **] arr [] []** ，每行由两个数字 **X** 和 **Y** 组成，这表示 X 和 Y 之间存在边沿，任务是编写 C 程序 创建给定图的[邻接矩阵。](https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/)
+给定`N`顶点 1 至`N`和`M`顶点的无向[图](https://www.geeksforgeeks.org/graph-and-its-representations/)，其二维数组为[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **] arr [] []** ，每行由两个数字`X`和`Y`组成，这表示 X 和 Y 之间存在边沿，任务是编写 C 程序 创建给定图的[邻接矩阵。](https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/)
 
-**示例：**
+**示例**：
 
-> **输入：** N = 5，M = 4，arr [] [] = {{1，2}，{2，3}，{4，5}，{1，5}}
-> **输出：**
+> **输入**：N = 5，M = 4，arr [] [] = {{1，2}，{2，3}，{4，5}，{1，5}}
+> **输出**：
 > 0 1 0 0 1
 > 1 0 1 0 0
 > 0 1 0 0 0
 > 0 0 0 0 1
 > 1 0 0 1 0
 > 
-> **输入：** N = 3，M = 4，arr [] [] = {{1，2}，{2，3}，{3，1}，{2，2}}
-> **输出：**
+> **输入**：N = 3，M = 4，arr [] [] = {{1，2}，{2，3}，{3，1}，{2，2}}
+> **输出**：
 > 0 1 1
 > 1 1 1
 > 1 1 0
 
-**方法：**这个想法是使用大小为 **NxN** 的方阵来创建邻接矩阵。 步骤如下：
+**方法**：这个想法是使用大小为 **NxN** 的方阵来创建邻接矩阵。 步骤如下：
 
 1.  创建大小为 NxN 的 2D 数组（例如 **Adj [N + 1] [N + 1]** ），并将该矩阵的所有值初始化为零。
 2.  对于 arr [] []（例如 **X 和 Y** ）中的每个边，更新 **Adj [X] [Y]** 和 **Adj [Y] [X]的值 HTG5]设为 1，表示 X 和 Y 之间有一条边。**
@@ -122,7 +122,7 @@ int main()
 
 ```
 
-***时间复杂度：** O（N <sup>2</sup> ）*，其中 N 是图形中顶点的数量。
+***时间复杂度**：O（N <sup>2</sup> ）*，其中 N 是图形中顶点的数量。
 
 
 

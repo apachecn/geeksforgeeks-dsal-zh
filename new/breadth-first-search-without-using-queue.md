@@ -6,21 +6,21 @@
 
 [广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)是一种图形遍历算法，它逐级遍历图形或树。 在本文中，使用[邻接表](https://www.geeksforgeeks.org/prims-mst-for-adjacency-list-representation-greedy-algo-6/)实现了图形的 [BFS，而不使用](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)[队列](http://www.geeksforgeeks.org/queue-data-structure/)。
 
-**示例：**
+**示例**：
 
-> **输入：** [![](img/40ca76ea468053c881ac72e49e82f1e2.png)](https://media.geeksforgeeks.org/wp-content/uploads/bfs-5.png) 
-> **输出：** BFS 遍历= 2、0、3、1
-> **说明：** [
+> **输入**：[![](img/40ca76ea468053c881ac72e49e82f1e2.png)](https://media.geeksforgeeks.org/wp-content/uploads/bfs-5.png) 
+> **输出**：BFS 遍历= 2、0、3、1
+> **说明**：[
 > 在下图中，我们从顶点 2 开始遍历。当到达顶点 0 时，我们将寻找它的所有相邻顶点。 2 也是 0 的相邻顶点。如果我们不标记访问的顶点，那么 2 将再次被处理，它将成为一个非终止过程。 因此，下图的广度优先遍历为 2、0、3、1。
 
-**方法：**可以使用来自给定源的简单的广度优先遍历来解决此问题。 该实现使用图 的 [**邻接表表示。**](https://www.geeksforgeeks.org/prims-mst-for-adjacency-list-representation-greedy-algo-6/)
+**方法**：可以使用来自给定源的简单的广度优先遍历来解决此问题。 该实现使用图 的 [**邻接表表示。**](https://www.geeksforgeeks.org/prims-mst-for-adjacency-list-representation-greedy-algo-6/)
 
 这里：
 
 *   [STL 向量容器](https://www.geeksforgeeks.org/vector-in-cpp-stl/)用于存储 BFS 遍历所需的相邻节点列表和节点队列。
 *   **[DP 阵列](https://www.geeksforgeeks.org/dynamic-programming/)** 用于存储节点到源的距离。 每次我们从一个节点移动到另一个节点时，距离都会增加 1。如果到达节点的距离小于以前的距离，我们将更新 DP [node]中存储的值。
 
-**下面是上述方法的实现：**
+**下面是上述方法的实现**：
 
 ```
 

@@ -2,37 +2,37 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-cost-path-in-a-directed-graph-via-given-set-of-intermediate-nodes/](https://www.geeksforgeeks.org/minimum-cost-path-in-a-directed-graph-via-given-set-of-intermediate-nodes/)
 
-给定一个加权有向图 **G** ，它是由顶点组成的数组 V []，任务是找到经过 **V 集的所有顶点的[最小成本路径](https://www.geeksforgeeks.org/min-cost-path-dp-6/) 从给定源 **S** 到目的地 **D** 的**。
+给定一个加权有向图`G`，它是由顶点组成的数组 V []，任务是找到经过 **V 集的所有顶点的[最小成本路径](https://www.geeksforgeeks.org/min-cost-path-dp-6/) 从给定源`S`到目的地`D`的**。
 
-**示例：**
+**示例**：
 
-> **输入：** V = {7}，S = 0，D = 6
+> **输入**：V = {7}，S = 0，D = 6
 > 
 > ![](img/46c12a05cb450814a6507dc6c8ed8cce.png)
 > 
-> **输出：** 11
-> **说明：**
+> **输出**：11
+> **说明**：
 > 最小路径 0- > 7- > 5- >6。
 > 因此， 路径= 3 + 6 + 2 = 11
 > 
-> **输入：** V = {7，4}，S = 0，D = 6
+> **输入**：V = {7，4}，S = 0，D = 6
 > 
 > ![](img/46c12a05cb450814a6507dc6c8ed8cce.png)
 > 
-> **输出：** 12
-> **说明：**
+> **输出**：12
+> **说明**：
 > 最小路径 0- > 7- > 4- > 6\.
 > 因此， 路径= 3 + 5 + 4 = 12
 
-**方法：**
+**方法**：
 要解决此问题，其想法是使用[广度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)遍历。 **BFS** 通常用于在图形中查找[最短路径，并且所有节点到源，中间节点和目标的最小距离可以通过](https://www.geeksforgeeks.org/shortest-path-unweighted-graph/) [BFS 计算[](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 。
 
 请按照以下步骤解决问题：
 
 *   将 **minSum** 初始化为 **INT_MAX** 。
-*   使用 **BFS** 从源节点 **S** 遍历图形。
+*   使用 **BFS** 从源节点`S`遍历图形。
 *   将源的每个相邻节点标记为新源，然后从该节点执行 **BFS** 。
-*   一旦遇到目标节点 **D** ，则检查是否访问了所有中间节点。
+*   一旦遇到目标节点`D`，则检查是否访问了所有中间节点。
 *   如果访问了所有中间节点，则更新 **minSum** 并返回最小值。
 *   如果未访问所有中间节点，则返回 **minSum** 。
 *   将来源标记为未访问。
@@ -315,8 +315,8 @@ public static void main(String[] args)
 
 ```
 
-***时间复杂度：** O（N + M）*
-***辅助空间：** O（N + M）*
+***时间复杂度**：O（N + M）*
+***辅助空间**：O（N + M）*
 
 
 

@@ -2,21 +2,21 @@
 
 > 原文： [https://www.geeksforgeeks.org/lexicographically-smallest-topological-ordering/](https://www.geeksforgeeks.org/lexicographically-smallest-topological-ordering/)
 
-给定一个有向图，该图的 **N** 个顶点和 **M** 的边可能包含循环，任务是找到该图在字典上最小的拓扑顺序，否则将打印 **-1** （如果图形具有循环）。
+给定一个有向图，该图的`N`个顶点和`M`的边可能包含循环，任务是找到该图在字典上最小的拓扑顺序，否则将打印 **-1** （如果图形具有循环）。
 从语法上最小的拓扑顺序是指，如果图形中的两个顶点没有任何传入边，则编号较小的顶点应在该顺序中首先出现。
 例如，在下面的图像中，许多拓扑排序都是可能的，例如 **5 2 3 4 0 1，5 0 2 4 3 1** 。
 但最小的顺序是 **4 5 0 2 3 1** 。
 
-**示例：**
+**示例**：
 
-> **输入：**
+> **输入**：
 > ![](img/f5310c221503609e7aaf34f0f690639b.png)
-> **输出：** 4 5 0 2 3 1
+> **输出**：4 5 0 2 3 1
 > 即使 5 4 0 2 3 1 也是有效的拓扑
 > 给定图的排序，但在字典上不是
 > 最小。
 
-**方法：**我们将使用 [Kahn 的算法](https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/)对拓扑进行修改。 我们将使用[多集](http://www.geeksforgeeks.org/multiset-in-cpp-stl/)而不是使用队列来存储顶点，以确保每次选择顶点时，顶点都是最小的。 总时间复杂度更改为![O(VlogV+E)](img/b4b6ba30aec1344806ba640ad8cbf85d.png "Rendered by QuickLaTeX.com")
+**方法**：我们将使用 [Kahn 的算法](https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/)对拓扑进行修改。 我们将使用[多集](http://www.geeksforgeeks.org/multiset-in-cpp-stl/)而不是使用队列来存储顶点，以确保每次选择顶点时，顶点都是最小的。 总时间复杂度更改为![O(VlogV+E)](img/b4b6ba30aec1344806ba640ad8cbf85d.png "Rendered by QuickLaTeX.com")
 
 下面是上述方法的实现：
 

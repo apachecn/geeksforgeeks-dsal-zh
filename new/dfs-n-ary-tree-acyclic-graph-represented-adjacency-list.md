@@ -6,7 +6,7 @@
 
 给出了一个由 n 个节点组成的树，我们需要打印其 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。
 
-**示例：**
+**示例**：
 
 ```
 Input : Edges of graph

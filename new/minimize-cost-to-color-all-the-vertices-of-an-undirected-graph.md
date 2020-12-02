@@ -4,26 +4,26 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimize-cost-to-color-all-the-vertices-of-an-undirected-graph/](https://www.geeksforgeeks.org/minimize-cost-to-color-all-the-vertices-of-an-undirected-graph/)
 
-给定一个[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，该图由 **N** 个顶点和 **M** 个边组成，其中节点值在 **[1，N]** 范围内，并且 数组 **colored []** 指定的顶点是有色的，任务是找到给定图的所有顶点的最小颜色。 着色顶点的成本由 **vCost** 决定，在两个顶点之间添加新边的成本由 **eCost** 决定。 如果顶点是有色的，那么从该顶点可以到达的所有顶点也将变为有色。
+给定一个[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，该图由`N`个顶点和`M`个边组成，其中节点值在 **[1，N]** 范围内，并且 数组 **colored []** 指定的顶点是有色的，任务是找到给定图的所有顶点的最小颜色。 着色顶点的成本由 **vCost** 决定，在两个顶点之间添加新边的成本由 **eCost** 决定。 如果顶点是有色的，那么从该顶点可以到达的所有顶点也将变为有色。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 3，M = 1，vCost = 3，eCost = 2，有色[] = {1}，source [] = {1} Destination [] = {2}
-> [ **输出：** 2
-> **说明：**
+> **输入**：N = 3，M = 1，vCost = 3，eCost = 2，有色[] = {1}，source [] = {1} Destination [] = {2}
+> [ **输出**：2
+> **说明**：
 > 顶点 1 着色，并且其边缘带有 2。
 > 因此，顶点 2 也着色。
 > 以 eCost 的代价在 2 和 3 之间添加一条边。 < vCost。
 > 因此，输出为 2。
 > 
-> **输入：** N = 4，M = 2，vCost = 3，eCost = 7，有色[] = {1，3}，source [] = {1，2} destination [] = {4， 3}
-> **输出：** 0
-> **说明：**
+> **输入**：N = 4，M = 2，vCost = 3，eCost = 7，有色[] = {1，3}，source [] = {1，2} destination [] = {4， 3}
+> **输出**：0
+> **说明**：
 > 顶点 1 着色，并且其边缘为 4。因此，顶点 4 也着色。
 > 顶点 2 已着色，并且其边缘带有 3。因此，顶点 3 也已着色。
 > 由于所有顶点均已着色，因此成本为 0。
 
-**方法：**
+**方法**：
 的想法是，**使用 [DFS 遍历](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)计算无色顶点的子图**的数量。
 为使未着色的**未着色** [**子图**](https://www.geeksforgeeks.org/find-all-cliques-of-size-k-in-an-undirected-graph/) 的着色成本降至最低，需要执行以下任一操作：
 
@@ -31,7 +31,7 @@
 *   在任何有色和无色顶点之间添加一条边。
 
 根据 ***eCost** 和 **vCost*** 的最小值，需要选择以上两个步骤之一。
-如果未着色子图的数量由 **X** 给出，则为所有顶点着色的总成本由 ***X×min（eCost，vCost）**给出 ]* 。
+如果未着色子图的数量由`X`给出，则为所有顶点着色的总成本由 ***X×min（eCost，vCost）**给出 ]* 。
 
 请按照以下步骤查找未着色子图的数量：
 
@@ -517,8 +517,8 @@ public static void Main(string[] args)
 2
 ```
 
-***时间复杂度：** O（N + M）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N + M）*
+***辅助空间**：O（N）*
 
 
 

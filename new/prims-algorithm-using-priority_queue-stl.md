@@ -225,7 +225,7 @@ int main()
 
 时间复杂度：O（E Log V））
 
-**使用权重图：**的矢量表示的[向量数组的更快实现](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-2-weighted-graph/)
+**使用权重图**：的矢量表示的[向量数组的更快实现](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-2-weighted-graph/)
 
 ```
 

@@ -2,19 +2,19 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-edges-to-be-added-in-a-directed-graph-so-that-any-node-can-be-reachable-from-a-given-node/](https://www.geeksforgeeks.org/minimum-edges-to-be-added-in-a-directed-graph-so-that-any-node-can-be-reachable-from-a-given-node/)
 
-给定一个有向图和一个节点 **X** 。 任务是找到必须添加到图中的最小边数，以便从给定节点可以到达任何节点。
+给定一个有向图和一个节点`X`。 任务是找到必须添加到图中的最小边数，以便从给定节点可以到达任何节点。
 
-**示例：**
+**示例**：
 
-> **输入：** X = 0
+> **输入**：X = 0
 > ![](img/6381ea00c2506876144e3504fd6daca5.png)
-> **输出：** 3
+> **输出**：3
 > 
-> **输入：** X = 4
+> **输入**：X = 4
 > ![](img/2b467e33641e608cc707f76053cfcd64.png)
-> **输出：** 1
+> **输出**：1
 
-**方法：**首先，使用简单的 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 将 **X** 可以到达的所有顶点标记为良好。 然后，对于每个坏顶点（无法从 X 到达的顶点）v，计算从 v 可以到达的坏顶点的数量（这也可以通过简单的 DFS 完成）。 将此数字设为 cnt <sub>v</sub> 。 现在，以 cnt <sub>v</sub> 的非递增顺序遍历所有坏顶点。 对于当前的不良顶点 v，如果仍未将其标记为好，请从其运行 DFS，将所有可到达的顶点标记为好，并将答案增加 1（实际上，我们隐含地添加了边（s，v ））。 可以证明该解决方案给出了最佳答案。
+**方法**：首先，使用简单的 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 将`X`可以到达的所有顶点标记为良好。 然后，对于每个坏顶点（无法从 X 到达的顶点）v，计算从 v 可以到达的坏顶点的数量（这也可以通过简单的 DFS 完成）。 将此数字设为 cnt <sub>v</sub> 。 现在，以 cnt <sub>v</sub> 的非递增顺序遍历所有坏顶点。 对于当前的不良顶点 v，如果仍未将其标记为好，请从其运行 DFS，将所有可到达的顶点标记为好，并将答案增加 1（实际上，我们隐含地添加了边（s，v ））。 可以证明该解决方案给出了最佳答案。
 
 下面是上述方法的实现：
 

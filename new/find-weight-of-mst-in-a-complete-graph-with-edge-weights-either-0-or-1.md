@@ -2,24 +2,24 @@
 
 > 原文： [https://www.geeksforgeeks.org/find-weight-of-mst-in-a-complete-graph-with-edge-weights-either-0-or-1/](https://www.geeksforgeeks.org/find-weight-of-mst-in-a-complete-graph-with-edge-weights-either-0-or-1/)
 
-给定 **N** 个顶点的无向加权完整[图](https://www.geeksforgeeks.org/graph-and-its-representations/)。 确切有**个 M** 边的权重为 1，其余所有可能的边的权重为 0。[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr [] []** 给出了一组权重的边 1.任务是计算此[图](https://www.geeksforgeeks.org/graph-and-its-representations/)的[最小生成树](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)的总权重。
-**范例：**
+给定`N`个顶点的无向加权完整[图](https://www.geeksforgeeks.org/graph-and-its-representations/)。 确切有**个 M** 边的权重为 1，其余所有可能的边的权重为 0。[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr [] []** 给出了一组权重的边 1.任务是计算此[图](https://www.geeksforgeeks.org/graph-and-its-representations/)的[最小生成树](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)的总权重。
+**范例**：
 
-> **输入：** N = 6，M = 11，arr [] [] = {（1 3），（1 4），（1 5），（1 6），（2 3），（2 4），（2 5），（2 6），（3 4），（3 5），（3 6）}
-> **输出：** 2
-> **说明：**
+> **输入**：N = 6，M = 11，arr [] [] = {（1 3），（1 4），（1 5），（1 6），（2 3），（2 4），（2 5），（2 6），（3 4），（3 5），（3 6）}
+> **输出**：2
+> **说明**：
 > 这是给定图的最小生成树：
 > 
 > ![](img/c776af8e62e3a9f63aa936834ac8bebe.png)
 > 
-> **输入：** N = 3，M = 0，arr [] [] {}
-> **输出：** 0
-> **说明：**
+> **输入**：N = 3，M = 0，arr [] [] {}
+> **输出**：0
+> **说明**：
 > 这 是给定图的最小生成树：
 > 
 > ![](img/77daeb31552860fe8fb9b7ec2fb3eaba.png)
 
-**方法：**
+**方法**：
 对于 **N 个**节点的给定[图](https://www.geeksforgeeks.org/graph-and-its-representations/)作为[连接组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)，我们需要 **N-1 **1 个权重**边缘的**边缘。 以下是步骤：
 
 1.  将权重为 1 的所有边的给定[图](https://www.geeksforgeeks.org/graph-and-its-representations/)存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
@@ -267,7 +267,7 @@ public static void main(String[] args)
 
 ```
 
-**时间复杂度：** O（N * log N + M），其中 N 是顶点数，M 是边数。
+**时间复杂度**：O（N * log N + M），其中 N 是顶点数，M 是边数。
 
 
 

@@ -9,7 +9,7 @@
 
 ![](img/e0fbf0b86cd4d64a04da0cf2b2bc3efb.png)
 
-**示例：**
+**示例**：
 
 ```
 Output of Given Graph:

@@ -8,8 +8,8 @@
 
 [图可以主要以两种方式表示](https://www.geeksforgeeks.org/graph-and-its-representations/)。 他们是：
 
-1.  **邻接列表：**邻接列表是由所有[链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/)的地址组成的数组。 链接列表的第一个节点表示顶点，连接到该节点的其余列表表示此节点连接到的顶点。 该表示也可以用于表示加权图。 可以稍微更改链表，甚至存储边缘的重量。
-2.  **邻接矩阵：**邻接矩阵是大小为 V x V 的 [2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/)，其中 V 是图形中的顶点数。 假设 2D 数组为 adj [] []，则槽 adj [i] [j] = 1 表示从顶点 i 到顶点 j 有一条边。 无向图的邻接矩阵始终是对称的。 邻接矩阵也用于表示加权图。 如果 adj [i] [j] = w，则从顶点 i 到顶点 j 的权重为 w 的边。
+1.  **邻接列表**：邻接列表是由所有[链接列表](https://www.geeksforgeeks.org/data-structures/linked-list/)的地址组成的数组。 链接列表的第一个节点表示顶点，连接到该节点的其余列表表示此节点连接到的顶点。 该表示也可以用于表示加权图。 可以稍微更改链表，甚至存储边缘的重量。
+2.  **邻接矩阵**：邻接矩阵是大小为 V x V 的 [2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/)，其中 V 是图形中的顶点数。 假设 2D 数组为 adj [] []，则槽 adj [i] [j] = 1 表示从顶点 i 到顶点 j 有一条边。 无向图的邻接矩阵始终是对称的。 邻接矩阵也用于表示加权图。 如果 adj [i] [j] = w，则从顶点 i 到顶点 j 的权重为 w 的边。
 
 让我们考虑一个图，以了解邻接表和邻接矩阵表示。 令无向图为：
 

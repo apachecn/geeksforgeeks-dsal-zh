@@ -4,7 +4,7 @@
 
 一棵树始终是[二分图](https://www.geeksforgeeks.org/bipartite-graph/)，因为我们总是可以分成两个具有交替级别的不相交集。 换句话说，我们总是用两种颜色对其进行着色，以使备用色阶具有相同的颜色。 任务是计算最大编号。 可以添加到树中的边的数量，以便保留为二部图。
 
-**示例：**
+**示例**：
 
 ```
 Input : Tree edges as vertex pairs 

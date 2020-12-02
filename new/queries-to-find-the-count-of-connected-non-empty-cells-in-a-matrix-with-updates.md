@@ -2,25 +2,25 @@
 
 > 原文： [https://www.geeksforgeeks.org/queries-to-find-the-count-of-connected-non-empty-cells-in-a-matrix-with-updates/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-connected-non-empty-cells-in-a-matrix-with-updates/)
 
-给定由 **N** 行和 **M** 列组成的布尔矩阵 **mat [] []** ，初始填充为 **0** ），整数 **K** 并查询类型{X，Y}的 **Q [] []** ，任务是替换 **mat [X] [Y] = 1** （非空单元），并计算给定矩阵中连接的非空单元的数量。
-**范例：**
+给定由`N`行和`M`列组成的布尔矩阵 **mat [] []** ，初始填充为`0`），整数`K`并查询类型{X，Y}的 **Q [] []** ，任务是替换 **mat [X] [Y] = 1** （非空单元），并计算给定矩阵中连接的非空单元的数量。
+**范例**：
 
-> **输入：** N = 3，M = 3，K = 4，Q [] [] = {{0，0}，{1，1}，{1，0}，{1，2} }
-> **输出：** 1 2 1 1
-> **说明：**
+> **输入**：N = 3，M = 3，K = 4，Q [] [] = {{0，0}，{1，1}，{1，0}，{1，2} }
+> **输出**：1 2 1 1
+> **说明**：
 > 最初，mat [] [] = {{0，0，0}，{0， 0，0}，{0，0，0}}。
 > 查询 1：mat [] [] = {{1，0，0}，{0，0，0}，{0，0，0}} ，Count = 1
 > 查询 1：mat [] [] = {{1，0，0}，{0，1，0}，{0，0，0}}，Count = 2
 > 查询 1 ：mat [] [] = {{1，0，0}，{1，1，0}，{0，0，0}}，计数=1。
 > 查询 1：mat [] [] = {{ 1，0，0}，{1，1，1}，{0，0，0}}，计数= 1
-> **输入：** N = 2，M = 2，K = 2， Q [] [] = {{0，0}，{0，1}}}
-> **输出：** 1 1
+> **输入**：N = 2，M = 2，K = 2， Q [] [] = {{0，0}，{0，1}}}
+> **输出**：1 1
 
-**方法：**
+**方法**：
 可以使用[不交集数据结构](https://www.geeksforgeeks.org/disjoint-set-data-structures/)解决该问题。 请按照以下步骤解决问题：
 
-*   由于最初矩阵中没有 **1** ，因此 **count = 0** 。
-*   通过执行线性映射 **index = X * M + Y** ，将二维问题转换为经典[联合查找](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)，其中 **M** 是列长 。
+*   由于最初矩阵中没有`1`，因此 **count = 0** 。
+*   通过执行线性映射 **index = X * M + Y** ，将二维问题转换为经典[联合查找](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)，其中`M`是列长 。
 *   在每个查询中设置**索引**后，增加**计数**。
 *   如果四个相邻单元格中的任何一个都存在非空单元格：
     *   对相邻单元格的当前**索引**和**进行联合操作（连接两个 Set）。**
@@ -667,8 +667,8 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N * M * sizeof（Q））*
-***辅助空间：** O（N * M）*
+***时间复杂度**：O（N * M * sizeof（Q））*
+***辅助空间**：O（N * M）*
 
 
 

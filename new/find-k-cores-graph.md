@@ -6,7 +6,7 @@
 
 给定一个图 G 和一个整数 K，该图的 K 核是在小于 k 的所有度数顶点都被删除之后剩下的连接组件（来源 [Wiki](https://en.wikipedia.org/wiki/Degeneracy_%28graph_theory%29) ）
 
-**示例：**
+**示例**：
 
 ```
 Input : Adjacency list representation of graph shown
@@ -709,7 +709,7 @@ public static void Main(String[] args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 K-Cores : 
@@ -726,11 +726,11 @@ K-Cores :
 
 **上述解决方案的时间复杂度**为 O（V + E），其中 V 为顶点数，E 为边数。
 
-**相关概念：**
+**相关概念**：
 简并性：图的简并性是最大值 k，因此图具有 k 核。 例如，上图显示的是 3 核，而没有 4 或更高的核。 因此，上图是 3 简并的。
 图的简并性用于衡量图的稀疏程度。
 
-**参考：**
+**参考**：
 [https://zh.wikipedia.org/wiki/Degeneracy_%28graph_theory%29](https://en.wikipedia.org/wiki/Degeneracy_%28graph_theory%29)
 本文由 **Rachit Belwariar** 提供 。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请写评论
 

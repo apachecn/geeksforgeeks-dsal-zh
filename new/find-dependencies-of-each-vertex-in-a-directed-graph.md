@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/find-dependencies-of-each-vertex-in-a-directed-graph/](https://www.geeksforgeeks.org/find-dependencies-of-each-vertex-in-a-directed-graph/)
 
-给定一个包含 **N** 个顶点和 **M** 边的有向图，任务是找到图中每个顶点的所有依赖关系以及具有最小依赖关系的顶点。
+给定一个包含`N`个顶点和`M`边的有向图，任务是找到图中每个顶点的所有依赖关系以及具有最小依赖关系的顶点。
 
 > 有向图（或有向图）是一组通过边连接的节点，其中边具有与之关联的方向。
 > 
@@ -12,25 +12,25 @@
 > 
 > 依赖关系是取决于当前顶点的不同顶点的连接数。
 
-**示例：**
+**示例**：
 
-> **输入：**
+> **输入**：
 > [![](img/f144eb1cb17a15ceb777429631beb70f.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200522225042/graph.jpeg)
 > 
-> **输出：**
+> **输出**：
 > 顶点 1 依赖性-> 2- > 3
 > 顶点 2 依赖性-> 3- > 1
 > 顶点 3 依赖性-> 1- > 2
 > 节点 1 的最小依赖性为 2。
-> **解释：**
+> **解释**：
 > 顶点 1 取决于 2 和 3。
 > 类似地，顶点 2 和 3 分别在（3，1）和（1，2）上。
 > 因此，所有顶点之间的最小依赖性为 2。
 > 
-> **输入：**
+> **输入**：
 > [![](img/04f29273cfdc8e9a194954280fdf827f.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200526220511/graph2.jpeg)
 > 
-> **输出：**
+> **输出**：
 > 顶点 1 依赖性-> 2- > 3- > 4- > 5- > 6
 > 顶点 2 依赖性-> 6
 > 顶点 3 依赖性-> 4- > 5- > 6
@@ -38,11 +38,11 @@
 > 顶点 5 依赖性-> 6
 > 顶点 6 不依赖于任何顶点。
 > 节点 6 的最小相关性为 0
-> **解释：**
+> **解释**：
 > 顶点 1 依赖于（3、4、5、6、7）。 类似地，顶点（2）上的顶点 2，顶点（4、5、6）上的顶点 3，顶点（5、6）上的顶点 4，顶点（6）上的顶点 5 和顶点 6 都不依赖于任何顶点。
 > 因此，所有顶点之间的最小依赖性为 0。
 
-**方法：**的想法是使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)（DFS）解决此问题。
+**方法**：的想法是使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)（DFS）解决此问题。
 
 *   获取有向图作为输入。
 *   在图上执行 DFS，并浏览图的所有节点。

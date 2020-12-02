@@ -15,7 +15,7 @@
 **IDDFS 如何工作？**
 IDDFS 从初始值开始为不同深度调用 DFS。 在每个呼叫中​​，都限制 DFS 超出给定深度。 因此，基本上，我们以 BFS 方式进行 DFS。
 
-**算法：**
+**算法**：
 
 ```
 // Returns true if target is reachable from

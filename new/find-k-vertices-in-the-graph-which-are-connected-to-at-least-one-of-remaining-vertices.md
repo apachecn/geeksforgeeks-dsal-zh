@@ -2,19 +2,19 @@
 
 > 原文： [https://www.geeksforgeeks.org/find-k-vertices-in-the-graph-which-are-connected-to-at-least-one-of-remaining-vertices/](https://www.geeksforgeeks.org/find-k-vertices-in-the-graph-which-are-connected-to-at-least-one-of-remaining-vertices/)
 
-给定一个 **N** 个顶点的连通图。 任务是从图中选择 k（k 必须小于或等于 n / 2，不一定是最小）个顶点，以使所有这些选择的顶点都连接到至少一个未选择的顶点。 如果有多个答案，请打印其中任何一个。
+给定一个`N`个顶点的连通图。 任务是从图中选择 k（k 必须小于或等于 n / 2，不一定是最小）个顶点，以使所有这些选择的顶点都连接到至少一个未选择的顶点。 如果有多个答案，请打印其中任何一个。
 
-**示例：**
+**示例**：
 
-> **输入：**
+> **输入**：
 > ![](img/61638ce9ad6ba6fe9595f0a5f9d8e65e.png)
-> **输出：** 1
+> **输出**：1
 > 顶点 1 连接到所有其他非选定顶点。
 > {1，2}，{2，3}，{3，4}，{1，3}，{1，4}，{2，4}也是有效答案
 > 
-> **输入：**
+> **输入**：
 > ![](img/fe6df588c7082482a4cfa19ba075ade5.png)
-> **输出：** 1 3
+> **输出**：1 3
 > 顶点 1、3 连接到所有其他非选定顶点。 {2，4}也是有效答案。
 
 **有效方法**：一种有效的方法是使用简单的 [dfs](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 或 [bfs](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 函数查找偶数级和奇数级的顶点。 然后，如果奇数级的顶点小于偶数级的顶点，则打印奇数级的顶点。 否则，打印偶数个水平顶点。

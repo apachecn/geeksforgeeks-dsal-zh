@@ -2,23 +2,23 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-if-every-vertex-triplet-in-graph-contains-two-vertices-connected-to-third-vertex/](https://www.geeksforgeeks.org/check-if-every-vertex-triplet-in-graph-contains-two-vertices-connected-to-third-vertex/)
 
-给定[无向图](https://www.geeksforgeeks.org/detect-cycle-undirected-graph/)，其中 **N** 个顶点且 **K** 个边，任务是检查图中三个顶点的每个组合是否存在两个顶点，其中 连接到第三顶点。 换句话说，对于每个顶点三元组**（a，b，c）**，如果在 **a** 和 **c** 之间存在一条路径，那么也应该存在一个 **b** 和 **c** 之间的路径。
+给定[无向图](https://www.geeksforgeeks.org/detect-cycle-undirected-graph/)，其中`N`个顶点且`K`个边，任务是检查图中三个顶点的每个组合是否存在两个顶点，其中 连接到第三顶点。 换句话说，对于每个顶点三元组**（a，b，c）**，如果在`a`和`c`之间存在一条路径，那么也应该存在一个`b`和`c`之间的路径。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 4，K = 3
+> **输入**：N = 4，K = 3
 > 边沿：1-> 2，2-> 3，3-> 4
-> [ **输出：**是
-> **说明：**
+> [ **输出**：是
+> **说明**：
 > 由于连接了整个图形，因此上述条件始终有效。
 > 
-> **输入：** N = 5，K = 3
+> **输入**：N = 5，K = 3
 > 边：1-> 3，3-> 4，2-> 5\.
-> **输出：**否
-> **解释：**
+> **输出**：否
+> **解释**：
 > 如果我们考虑三元组（1、2、3），则顶点 1 和 3 之间有一条路径，但顶点 2 和 3 之间没有任何路径。
 
-**方法：**请按照以下步骤解决问题–
+**方法**：请按照以下步骤解决问题–
 
 *   [通过](https://www.geeksforgeeks.org/algorithms-gq/graph-traversals-gq/) [DFS 遍历技术](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)从任何组件遍历图形，并维护两个变量以存储组件最小值和组件最大值。
 *   将每个分量的最大值和最小值存储在向量中。
@@ -374,8 +374,8 @@ Yes
 
 ```
 
-**时间复杂度：** O（N + E）
-**辅助空间：** O（N）
+**时间复杂度**：O（N + E）
+**辅助空间**：O（N）
 
 
 

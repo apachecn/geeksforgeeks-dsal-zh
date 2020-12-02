@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/print-the-path-between-any-two-nodes-of-a-tree-dfs/](https://www.geeksforgeeks.org/print-the-path-between-any-two-nodes-of-a-tree-dfs/)
 
-给定一棵具有 **N-1** 个边缘的节点 **N** 和一对节点 **P** 的树。 任务是使用 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 查找并打印树的两个给定节点之间的路径。
+给定一棵具有 **N-1** 个边缘的节点`N`和一对节点`P`的树。 任务是使用 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 查找并打印树的两个给定节点之间的路径。
 
 ```
 Input: N = 10
@@ -25,15 +25,15 @@ Output:  2 -> 1 -> 3
 
 ![](img/048973da0da003a46af40352b564a17a.png)
 
-**例如，上面树中的**在节点 **5** 和 **3** 之间的路径是 **5-> 2-> 1-> 3** 。
-节点 **4** 和 **8** 之间的路径是 **4-> 2-> 1-> 3-> 8** 。
+**例如，上面树中的**在节点`5`和`3`之间的路径是 **5-> 2-> 1-> 3** 。
+节点`4`和`8`之间的路径是 **4-> 2-> 1-> 3-> 8** 。
 
-**方法：**
+**方法**：
 
 *   想法是从源节点运行 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，并将遍历的节点推入[堆栈](http://www.geeksforgeeks.org/stack-data-structure/)，直到遍历目标节点。
 *   每当发生[回溯](http://wstackww.geeksforgeeks.org/backtracking-algorithms/)时，就从堆栈中弹出节点。
 
-**注意：**在给定的节点对之间应该有一条路径。
+**注意**：在给定的节点对之间应该有一条路径。
 
 下面是上述方法的实现：
 

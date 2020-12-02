@@ -5,7 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/height-generic-tree-parent-array/](https://www.geeksforgeeks.org/height-generic-tree-parent-array/)
 
 我们给了一个大小为 n 的树作为数组 parent [0..n-1]，其中 parent []中的每个索引 i 代表一个节点，i 处的值代表该节点的直接父节点。 对于根节点，值将为-1。 在给定父链接的情况下找到通用树的高度。
-**范例：**
+**范例**：
 
 ```
 Input : parent[] = {-1, 0, 0, 0, 3, 1, 1, 2}
@@ -25,10 +25,10 @@ Output : 4
 
 Here, a generic tree is sometimes also called an N-ary tree or N-way tree where N denotes the maximum number of child a node can have. In this problem, the array represents n number of nodes in the tree.
 
-**方法 1：**
+**方法 1**：
 一种解决方案是从节点上遍历树，直到达到节点值-1 的根节点为止。 而每个节点的遍历将存储最大路径长度。
 该解决方案的时间复杂度为 **O（n ^ 2）**。
-**方法 2：**
+**方法 2**：
 在 O（n）时间内为 N 元树生成图，并在 O（n）时间内将 BFS 应用于存储的图，同时执行 BFS 可以存储最大达到的级别。 该解决方案进行了两次迭代以找到 N 元树的高度。
 
 ## C ++
@@ -223,7 +223,7 @@ Height of N-ary Tree=4
 ```
 
 该解决方案的时间复杂度为 **O（2n）**，对于非常大的 n 收敛到 O（n）。
-**方法 3：**
+**方法 3**：
 我们仅需一次迭代即可找到 N 元树的高度。 我们迭代地访问从 0 到 n-1 的节点，如果未访问的祖先直到到达被访问的节点或到达根节点之前才被访问，则以递归方式标记它们。 如果在使用父链接遍历树时到达访问的节点，则我们将使用其高度，并且不会进一步递归。
 **示例 1 的说明：:**
 
@@ -583,7 +583,7 @@ Height of N-ary Tree = 2
 
 ```
 
-**时间复杂度：** O（n）
+**时间复杂度**：O（n）
 
 
 

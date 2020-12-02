@@ -2,24 +2,24 @@
 
 > 原文： [https://www.geeksforgeeks.org/maximal-independent-set-in-an-undirected-graph/](https://www.geeksforgeeks.org/maximal-independent-set-in-an-undirected-graph/)
 
-给定一个由顶点 **V** 和边 **E []** 定义的无向图，任务是在无向图中找到**最大独立顶点集**。
+给定一个由顶点`V`和边 **E []** 定义的无向图，任务是在无向图中找到**最大独立顶点集**。
 
-> **独立集：**图形中的独立集是一组顶点，它们之间不直接相互连接。
+> **独立集**：图形中的独立集是一组顶点，它们之间不直接相互连接。
 
-**注意：**假设至少有一种方法可以从图中的任何顶点遍历到另一个顶点，即图中具有一个[连接的组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)。
+**注意**：假设至少有一种方法可以从图中的任何顶点遍历到另一个顶点，即图中具有一个[连接的组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)。
 
-**示例：**
+**示例**：
 
-> **输入：** V = 3，E = {（1，2），（2，3）}
-> **输出：** {1，3}
-> **解释 ：**
+> **输入**：V = 3，E = {（1，2），（2，3）}
+> **输出**：{1，3}
+> **解释 **：
 > 由于 1 和 3 之间没有边，并且由于它是 1 的邻居，因此我们不能对其添加 2，因此这是最大独立集。
 > 
-> **输入：** V = 8，
+> **输入**：V = 8，
 > E = {（1、2），（1、3），（2、4），（5、6），（6、7），（4 ，8）}
-> **输出：** {2，3，5，7，8}
+> **输出**：{2，3，5，7，8}
 
-**方法：**
+**方法**：
 此问题是 [NP-硬问题](https://www.geeksforgeeks.org/np-completeness-set-1/)，只能在指数时间内解决（截至目前）。
 请按照以下步骤解决问题：
 
@@ -141,8 +141,8 @@ for i in maximalIndependentSet:
 
 ```
 
-***时间复杂度：** O（2 <sup>N</sup> ）
-**辅助空间：** O（N）*
+***时间复杂度**：O（2 <sup>N</sup> ）
+**辅助空间**：O（N）*
 
 
 

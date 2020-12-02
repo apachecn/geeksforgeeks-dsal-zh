@@ -4,10 +4,10 @@
 
 我们在[先前的帖子](https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/)中介绍了[旅行商问题](https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/)，并讨论了该问题的朴素和动态规划解决方案。 两种解决方案都不可行。 实际上，由于该问题是已知的 NP-Hard 问题，因此没有多项式时间解可用于该问题。 虽然有解决该问题的近似算法。 仅当问题实例满足 Triangle-Inequality 时，近似算法才有效。
 
-**三角不等式：**从 i 到达顶点 j 的最小距离始终是直接从 i 到达 j，而不是通过其他某个顶点 k（或多个顶点），即 dis（i，j） 始终小于或等于 dis（i，k）+ dist（k，j）。 三角不等式在许多实际情况下均成立。
-当成本函数满足三角不等式时，我们可以为 TSP 设计一种近似算法，该算法返回的成本不会超过最佳成本的两倍。 这个想法是使用 **M** 最少 **S** 平移 **T** ree（MST）。 以下是基于 MST 的算法。
+**三角不等式**：从 i 到达顶点 j 的最小距离始终是直接从 i 到达 j，而不是通过其他某个顶点 k（或多个顶点），即 dis（i，j） 始终小于或等于 dis（i，k）+ dist（k，j）。 三角不等式在许多实际情况下均成立。
+当成本函数满足三角不等式时，我们可以为 TSP 设计一种近似算法，该算法返回的成本不会超过最佳成本的两倍。 这个想法是使用`M`最少`S`平移`T`ree（MST）。 以下是基于 MST 的算法。
 
-**算法：**
+**算法**：
 **1）**令 1 为推销员的起点和终点。
 **2）**使用 [Prim 算法](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/)从 1 为根构建 MST。
 **3）**列出在构造的 MST 的预排序步中访问的顶点，并在末尾加 1。
@@ -29,7 +29,7 @@
 
 我们已经讨论了一个非常简单的 2 近似算法，用于旅行商问题。 对于该问题，还有其他更好的近似算法。 例如， [Christofides 算法](http://en.wikipedia.org/wiki/Christofides_algorithm)是 1.5 近似算法。 我们很快将在单独的文章中讨论这些算法。
 
-**参考：**
+**参考**：
 [Clifford Stein，Thomas H. Cormen，Charles E. Leiserson 和 Ronald L. Rivest 撰写的算法第三版](http://www.flipkart.com/introduction-algorithms-3/p/itmczynzhyhxv2gs?pid=9788120340077&affid=sandeepgfg)
 [http：// www.personal.kent.edu/~rmuhamma/Algorithms/MyAlgorithms/AproxAlgor/TSP/tsp.htm](http://www.personal.kent.edu/~rmuhamma/Algorithms/MyAlgorithms/AproxAlgor/TSP/tsp.htm) 
 

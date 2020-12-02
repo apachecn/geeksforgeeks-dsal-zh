@@ -3,7 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/0-1-bfs-shortest-path-binary-graph/](https://www.geeksforgeeks.org/0-1-bfs-shortest-path-binary-graph/)
 
 给定一个图，其中每个边的权重为 0 或 1。在图中还给出了源顶点。 查找从源顶点到其他每个顶点的最短路径。
-**例如：**
+**例如**：
 
 ```
 Input : Source Vertex = 0 and below graph 

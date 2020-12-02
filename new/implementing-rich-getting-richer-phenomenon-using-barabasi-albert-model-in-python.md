@@ -137,7 +137,7 @@ plot_deg_dist(g)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Enter the value of n: 10

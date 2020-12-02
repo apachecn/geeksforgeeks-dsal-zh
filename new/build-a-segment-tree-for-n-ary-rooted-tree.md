@@ -4,13 +4,13 @@
 
 > 原文： [https://www.geeksforgeeks.org/build-a-segment-tree-for-n-ary-rooted-tree/](https://www.geeksforgeeks.org/build-a-segment-tree-for-n-ary-rooted-tree/)
 
-**前提：** [分段树](https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)和[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)。
+**前提**：[分段树](https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)和[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)。
 在本文中，讨论了一种将 N 元根树（具有 2 个以上子代的树）转换为[段树](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)的方法，该方法用于执行范围更新查询。
 **当我们已经有了 n 元根树时，为什么需要一个段树？**
 很多情况下，必须在多个节点及其子树上执行相同的操作以及多次查询操作。
 假设我们必须在不同的子树上执行 N 次更新。 每个操作都需要花费 O（N）时间，因为它是一棵 N 元树，因此总体复杂度将为 O（N ^ 2），这太慢了，无法处理超过 10 ^ 3 个更新查询。 因此，我们必须走另一条路，我们将为其构建一个[段树](http://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/)。
 
-**方法：**执行[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)，以遍历所有节点，并使用两个数组来跟踪转换后的数组中每个节点的子树的索引和**吹捧**（这是进行更新和查询的范围）。 DFS 将执行[欧拉步行](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)。 这个想法是创建一个数组，并按照访问转换后的数组的顺序向其中添加节点。
+**方法**：执行[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)，以遍历所有节点，并使用两个数组来跟踪转换后的数组中每个节点的子树的索引和**吹捧**（这是进行更新和查询的范围）。 DFS 将执行[欧拉步行](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)。 这个想法是创建一个数组，并按照访问转换后的数组的顺序向其中添加节点。
 让我们看看锡罐和兜售阵列如何帮助确定转换后的阵列的范围。
 让 N 元根树为：
 

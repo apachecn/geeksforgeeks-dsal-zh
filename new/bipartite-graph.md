@@ -383,7 +383,7 @@ class GFG
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Yes
@@ -793,7 +793,7 @@ class GFG {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Yes
@@ -802,7 +802,7 @@ Yes
 
 上述方法的时间复杂度与广度优先搜索相同。 在上面的实现中是 O（V ^ 2），其中 V 是顶点数。 如果使用邻接表表示图，则复杂度变为 O（V + E）。
 
-**另一种观察方法：**
+**另一种观察方法**：
 
 从图的性质可以推断出，包含**个奇数循环**或**自环**的图是**不是二分的。**
 
@@ -863,7 +863,7 @@ Yes
 
 **上述方法的时间复杂度**与广度优先搜索相同。 在上面的实现中是 O（V ^ 2），其中 V 是顶点数。
 
-**练习：**，
+**练习**：，
 **1\.** 可以使用 DFS 算法检查图的二部性吗？ 如果是，怎么办？
 解决方案：
 
@@ -1130,7 +1130,7 @@ class GFG 
 Yes
 ```
 
-**参考：**
+**参考**：
 [http://en.wikipedia.org/wiki/Graph_coloring](http://en.wikipedia.org/wiki/Graph_coloring)
 [http://en.wikipedia.org/wiki/Bipartite_graph [](http://en.wikipedia.org/wiki/Bipartite_graph)
 本文由 [Aashish Barnwal](https://www.facebook.com/barnwal.aashish?fref=ts) 编译。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请写评论

@@ -2,21 +2,21 @@
 
 > 原文： [https://www.geeksforgeeks.org/length-of-longest-connected-1s-in-a-binary-grid/](https://www.geeksforgeeks.org/length-of-longest-connected-1s-in-a-binary-grid/)
 
-给定大小为 **N * M** 的网格仅由 **0** 和 **1** 组成，任务是找到最长连接的 **1s** 的长度。 在给定的网格中。 我们只能从网格的任何当前单元格向左，向右，向上或向下移动。
+给定大小为 **N * M** 的网格仅由`0`和`1`组成，任务是找到最长连接的 **1s** 的长度。 在给定的网格中。 我们只能从网格的任何当前单元格向左，向右，向上或向下移动。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 3，M = 3，grid [] [] = {{0，0，0}，{0，1，0}，{0，0，0}}
-> **输出：** 1
-> **说明：**
+> **输入**：N = 3，M = 3，grid [] [] = {{0，0，0}，{0，1，0}，{0，0，0}}
+> **输出**：1
+> **说明**：
 > 最长的路径是 1，因为从矩阵的（1，1）位置不能有任何移动。
 > 
-> **输入：** N = 6，M = 7，grid [] [] = {{0，0，0，0，0，0，0}，{0，1，0，1，0， 0，0}，{0，1，0，1，0，0，0}，{0，1，0，1，0，1，0}，{0，1，1，1，1，1， 0}，{0，0，0，0，0，0，0}}}
-> **输出：** 9
-> **说明：**
+> **输入**：N = 6，M = 7，grid [] [] = {{0，0，0，0，0，0，0}，{0，1，0，1，0， 0，0}，{0，1，0，1，0，0，0}，{0，1，0，1，0，1，0}，{0，1，1，1，1，1， 0}，{0，0，0，0，0，0，0}}}
+> **输出**：9
+> **说明**：
 > 最长的路线是 9 从（1，1）->（2，1）->（3，1）->（4，1）->（4，2）->（4 ，3）->（4，4）->（4，5）->（3，5）。
 
-**方法：**的想法是在当前单元格值为 **1** 的网格上进行 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)，然后递归调用当前单元格的所有四个方向 值是 **1** ，并更新了连接的 **1** 的最大长度。
+**方法**：的想法是在当前单元格值为`1`的网格上进行 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)，然后递归调用当前单元格的所有四个方向 值是`1`，并更新了连接的`1`的最大长度。
 
 下面是上述方法的实现：
 
@@ -513,7 +513,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** *O（行+列）*
+**时间复杂度**：*O（行+列）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

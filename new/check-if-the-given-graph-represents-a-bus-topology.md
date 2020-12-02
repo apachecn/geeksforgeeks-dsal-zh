@@ -2,12 +2,12 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-if-the-given-graph-represents-a-bus-topology/](https://www.geeksforgeeks.org/check-if-the-given-graph-represents-a-bus-topology/)
 
-给定图形 **G** ，检查其是否表示总线拓扑。
+给定图形`G`，检查其是否表示总线拓扑。
 
 下图显示了一种总线拓扑：
 ![](img/dcba898b8132ead7bd204436a3a4e787.png)
 
-**示例：**
+**示例**：
 
 ```
 Input: 

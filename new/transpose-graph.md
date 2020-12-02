@@ -5,7 +5,7 @@
 [有向图 G 的转置](https://en.wikipedia.org/wiki/transposeGraph)是同​​一组顶点上的另一个有向图，与 G 中相应边的方向相比，所有边都反转了。也就是说，如果 G 包含边（u， v），那么 G 的逆/转置/逆包含边（v，u），反之亦然。
 给定[图（表示为邻接表）](https://www.geeksforgeeks.org/graph-and-its-representations/)，我们需要找到另一个图，该图是给定图的转置。
 
-**示例：**
+**示例**：
 
 [![Transpose graph](img/7e20e86f994adfb9304fdf474b8aa149.png)](https://media.geeksforgeeks.org/wp-content/uploads/transpose_both.png)
 

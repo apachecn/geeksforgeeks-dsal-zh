@@ -2,23 +2,23 @@
 
 > 原文： [https://www.geeksforgeeks.org/min-steps-to-convert-n-digit-prime-number-into-another-by-replacing-a-digit-in-each-step/](https://www.geeksforgeeks.org/min-steps-to-convert-n-digit-prime-number-into-another-by-replacing-a-digit-in-each-step/)
 
-给定两个 **N** 位素数 **A** 和 **B** ，任务是找到将 A 转换为 A 的最小步骤数 B.转换的条件是当前质数只能修改 1 位，这样形成的新数字也是质数。 如果无法进行这种转换，请打印-1。
+给定两个`N`位素数`A`和`B`，任务是找到将 A 转换为 A 的最小步骤数 B.转换的条件是当前质数只能修改 1 位，这样形成的新数字也是质数。 如果无法进行这种转换，请打印-1。
 
-**注意：** N 的范围是[1，5]。
-**范例：**
+**注意**：N 的范围是[1，5]。
+**范例**：
 
-> **输入：** N = 4，A = 1033，B = 8179
-> **输出：** 6
-> **说明：**转换步骤为 1033-[ > 1733-> 3733-> 3739-> 3779-> 8779->8179。从 1033- > 1733 更改数字时，它们仅相差一个数字，并且发生相同的情况 用于后续步骤。
+> **输入**：N = 4，A = 1033，B = 8179
+> **输出**：6
+> **说明**：转换步骤为 1033-[ > 1733-> 3733-> 3739-> 3779-> 8779->8179。从 1033- > 1733 更改数字时，它们仅相差一个数字，并且发生相同的情况 用于后续步骤。
 > 
-> **输入：** N = 4，A = 1373，B = 8179
-> **输出：** 7
+> **输入**：N = 4，A = 1373，B = 8179
+> **输出**：7
 > 
-> **输入：** N = 2，A = 11，B = 37
-> **输出：** 2
-> **说明：**转换步骤为 11-> 17-> 37
+> **输入**：N = 2，A = 11，B = 37
+> **输出**：2
+> **说明**：转换步骤为 11-> 17-> 37
 
-**方法：**使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)算法
+**方法**：使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)算法
 
 1.  查找所有 N 位素数，并用这些数字作图。
 2.  将每个质数都视为图的一个节点，如果每个节点之间相差一个数字，则创建从一个节点到另一个节点的边。
@@ -179,8 +179,8 @@ int main()
 
 ```
 
-***时间复杂度：** O（10 <sup>2N</sup> ）
-**辅助空间复杂度：** O（10 <sup>5</sup> ）*
+***时间复杂度**：O（10 <sup>2N</sup> ）
+**辅助空间复杂度**：O（10 <sup>5</sup> ）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

@@ -2,17 +2,17 @@
 
 > 原文： [https://www.geeksforgeeks.org/count-the-number-of-nodes-at-a-given-level-in-a-tree-using-dfs/](https://www.geeksforgeeks.org/count-the-number-of-nodes-at-a-given-level-in-a-tree-using-dfs/)
 
-给定一个整数 **l** 和一棵树，该树表示为根于顶点 0 的无向图。任务是打印在 **l** 级存在的节点数。
+给定一个整数`l`和一棵树，该树表示为根于顶点 0 的无向图。任务是打印在`l`级存在的节点数。
 
-**示例：**
+**示例**：
 
-> **输入：** l = 2
+> **输入**：l = 2
 > ![](img/9887bae7d2c841a9ac4bcd72883129f8.png)
-> **输出：** 4
+> **输出**：4
 
 我们已经讨论了 [BFS](https://www.geeksforgeeks.org/count-number-nodes-given-level-using-bfs/) 方法，在本文中，我们将使用 DFS 解决它。
 
-**方法：**想法是以 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 方式遍历图形。 取两个变量，**计数**和 **curr_level** 。 每当 **curr_level = 1** 递增时，**计数**的值就会增加。
+**方法**：想法是以 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 方式遍历图形。 取两个变量，**计数**和 **curr_level** 。 每当 **curr_level = 1** 递增时，**计数**的值就会增加。
 
 下面是上述方法的实现：
 

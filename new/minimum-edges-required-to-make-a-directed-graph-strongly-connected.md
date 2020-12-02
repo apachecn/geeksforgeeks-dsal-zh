@@ -2,22 +2,22 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-edges-required-to-make-a-directed-graph-strongly-connected/](https://www.geeksforgeeks.org/minimum-edges-required-to-make-a-directed-graph-strongly-connected/)
 
-给定**定向** [**图**](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/) 的 **N** 顶点和 **M** 边，任务是找到最小的 制作给定图形 [**强连接的**](https://www.geeksforgeeks.org/strongly-connected-components/) 所需的边缘。
+给定**定向** [**图**](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/) 的`N`顶点和`M`边，任务是找到最小的 制作给定图形 [**强连接的**](https://www.geeksforgeeks.org/strongly-connected-components/) 所需的边缘。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 3，M = 3，源[] = {1,2,1}，目的地[] = {2，3，3}。
-> **输出：** 1
-> **说明：**
+> **输入**：N = 3，M = 3，源[] = {1,2,1}，目的地[] = {2，3，3}。
+> **输出**：1
+> **说明**：
 > 添加连接有一对顶点{3，1}的有向边可以使图形牢固连接。
 > 因此，所需的最小边数为 1。
 > 下面是上述示例的图示：
 > 
 > [![](img/95f8dac75e3bff0a169fdbb1a00ad425.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200719192620/graph7.PNG)
 > 
-> **输入：** N = 6，M = 5，source [] = {1，3，1，3，5}，destination [] = {2，2，3，5，6}
-> **输出：** 3
-> **说明：**
+> **输入**：N = 6，M = 5，source [] = {1，3，1，3，5}，destination [] = {2，2，3，5，6}
+> **输出**：3
+> **说明**：
 > 添加 3 个有向边以连接以下一对顶点将使图形牢固连接：
 > 
 > *   {2, 1}
@@ -26,8 +26,8 @@
 > 
 > 因此，所需的最小边数为 3。
 
-**方法：**
-对于[强连通图](https://www.geeksforgeeks.org/strongly-connected-components/)，每个顶点的[入度和出度](https://www.geeksforgeeks.org/finding-in-and-out-degrees-of-all-vertices-in-a-graph/)至少应为， ] ***1*** 。 因此，为了使图牢固连接，每个顶点必须具有输入边缘和输出边缘。 使图牢固连接所需的传入边缘和传出边缘的最大数量为使其牢固连接所需的最小边缘。
+**方法**：
+对于[强连通图](https://www.geeksforgeeks.org/strongly-connected-components/)，每个顶点的[入度和出度](https://www.geeksforgeeks.org/finding-in-and-out-degrees-of-all-vertices-in-a-graph/)至少应为， ] *`1`* 。 因此，为了使图牢固连接，每个顶点必须具有输入边缘和输出边缘。 使图牢固连接所需的传入边缘和传出边缘的最大数量为使其牢固连接所需的最小边缘。
 请按照以下步骤解决问题：
 
 *   使用 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 找出图的每个顶点的度数和度数。
@@ -489,8 +489,8 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** O（N + M）
-**辅助空间：** O（N）
+**时间复杂度**：O（N + M）
+**辅助空间**：O（N）
 
 
 

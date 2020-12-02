@@ -5,7 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/count-nodes-within-k-distance-from-all-nodes-in-a-set/](https://www.geeksforgeeks.org/count-nodes-within-k-distance-from-all-nodes-in-a-set/)
 
 给定一个带有一些标记节点且正数为 K 的无向树，我们需要打印与所有标记节点之间的距离小于 K 的所有此类节点的计数，这意味着与所有标记节点之间的距离小于 K 的每个节点都应 被计入结果。
-**示例：** [
+**示例**：[
 
 ![](img/869b2c19f6bb0d69b1f321331e29212d.png)
 
@@ -258,7 +258,7 @@ if __name__ == '__main__':
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 6

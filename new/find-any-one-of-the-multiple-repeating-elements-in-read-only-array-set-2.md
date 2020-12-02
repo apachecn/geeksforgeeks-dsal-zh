@@ -2,24 +2,24 @@
 
 > 原文： [https://www.geeksforgeeks.org/find-any-one-of-the-multiple-repeating-elements-in-read-only-array-set-2/](https://www.geeksforgeeks.org/find-any-one-of-the-multiple-repeating-elements-in-read-only-array-set-2/)
 
-给定一个大小为 **N + 1** 的只读[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，请找到该数组中多个重复元素之一，其中该数组仅包含介于 **1** 和 **N** 。
-**注意：**只读数组表示无法修改数组的内容。
+给定一个大小为 **N + 1** 的只读[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，请找到该数组中多个重复元素之一，其中该数组仅包含介于`1`和`N`。
+**注意**：只读数组表示无法修改数组的内容。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 5，arr [] = {1、1、2、3、5、4}
-> **输出：** 1
+> **输入**：N = 5，arr [] = {1、1、2、3、5、4}
+> **输出**：1
 > **说明：[**
 > 1 是阵列中唯一重复的数字。
 > 
-> **输入：** N = 10，arr [] = {10、1、2、3、5、4、9、8、5、6、4}
-> **输出：** 5
-> **说明：**
+> **输入**：N = 10，arr [] = {10、1、2、3、5、4、9、8、5、6、4}
+> **输出**：5
+> **说明**：
 > 5 是数组中重复的数字之一。
 
 在[先前的文章](https://www.geeksforgeeks.org/find-one-multiple-repeating-elements-read-array/)中，我们讨论了同一篇文章，但篇幅复杂 *O（N）和 O（sqrt（N））*。
 
-**方法：**此方法基于 [Floyd 的草龟与野兔算法](//www.geeksforgeeks.org/detect-loop-in-a-linked-list/)（**循环检测算法**）。
+**方法**：此方法基于 [Floyd 的草龟与野兔算法](//www.geeksforgeeks.org/detect-loop-in-a-linked-list/)（**循环检测算法**）。
 
 1.  使用函数 **f（x）= arr [x]** 构造序列：
 
@@ -39,7 +39,7 @@
 
     从索引 0 开始，遍历如下所示：
 
-    > arr [0] = **2** – > arr [2] = **4** – > arr [4] = **3** – > arr [ 3] = **1** – > arr [1] = **6** – > arr [6] = **5** – > arr [5] = **1** 。
+    > arr [0] =`2`– > arr [2] =`4`– > arr [4] =`3`– > arr [ 3] =`1`– > arr [1] =`6`– > arr [6] =`5`– > arr [5] =`1`。
 
     该序列形成循环，如下所示：
     [![](img/06fb8040af33bab9c665b03adb32ee4b.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200616013601/Firefox_Screenshot_2020-06-15T20-05-04.185Z.png)
@@ -294,8 +294,8 @@ public static void Main(String []args)
 
 ```
 
-**时间复杂度：** *O（N）*
-**辅助空间：** *O（1）*
+**时间复杂度**：*O（N）*
+**辅助空间**：*O（1）*
 
 
 

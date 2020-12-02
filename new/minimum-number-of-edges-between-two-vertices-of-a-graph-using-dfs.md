@@ -2,23 +2,23 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-number-of-edges-between-two-vertices-of-a-graph-using-dfs/](https://www.geeksforgeeks.org/minimum-number-of-edges-between-two-vertices-of-a-graph-using-dfs/)
 
-给定无向图 **G（V，E）**，其中 **N** 个顶点， **M** 边。 我们需要找到给定顶点对**（u，v）**之间的最小边数。
+给定无向图 **G（V，E）**，其中`N`个顶点，`M`边。 我们需要找到给定顶点对**（u，v）**之间的最小边数。
 我们已经使用 [BFS 方法](https://www.geeksforgeeks.org/minimum-number-of-edges-between-two-vertices-of-a-graph/)讨论了这个问题，这里我们将使用 DFS 方法。
 
-**示例：**
+**示例**：
 
-> **输入：**对于以下给定的图，找到顶点对（0，4）之间的最小边数。
+> **输入**：对于以下给定的图，找到顶点对（0，4）之间的最小边数。
 > 
 > ![](img/6f66b6e4cb161a70fac008a69a34cb48.png)
 > 
-> **输出：** 1
+> **输出**：1
 > 从 0 到 4 共有 3 条路径：
 > 0-> 1-> 2-> 4
 > 0-> 1- > 2-> 3-> 4
 > 0-> 4
 > 只有第三条路径才能使边的数量最少。
 
-**方法：**在这种方法中，我们将以 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 的方式遍历图形，从给定顶点开始，探索从该顶点到目标顶点的所有路径。
+**方法**：在这种方法中，我们将以 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 的方式遍历图形，从给定顶点开始，探索从该顶点到目标顶点的所有路径。
 
 我们将使用两个变量， **edge_count** 和 **min_num_of_edges** 。 在探索这些顶点之间的所有路径时， **edge_count** 将存储其中的边总数，如果边数小于最小边数，我们将更新 **min_num_of_edges** 。
 

@@ -2,17 +2,17 @@
 
 > 原文： [https://www.geeksforgeeks.org/number-of-trees-whose-sum-of-degrees-of-all-the-vertices-is-l/](https://www.geeksforgeeks.org/number-of-trees-whose-sum-of-degrees-of-all-the-vertices-is-l/)
 
-给定一个整数 **L** ，它是某棵树的所有顶点的度数之和。 任务是找到所有这些不同的树（标记为树）的计数。 如果两棵树至少具有一个不同的边缘，则它们是不同的。
+给定一个整数`L`，它是某棵树的所有顶点的度数之和。 任务是找到所有这些不同的树（标记为树）的计数。 如果两棵树至少具有一个不同的边缘，则它们是不同的。
 
-**示例：**
+**示例**：
 
-> **输入：** L = 2
-> **输出：** 1
+> **输入**：L = 2
+> **输出**：1
 > 
-> **输入：** L = 6
-> **输出：** 16
+> **输入**：L = 6
+> **输出**：16
 
-**简单解决方案**：一个简单的解决方案是找到树的节点数目，该树的所有顶点的度之和为 **L** 。 此类树中的节点数为 **n =（L / 2 + 1）**，如[此](https://www.geeksforgeeks.org/sum-of-degrees-of-all-nodes-of-a-undirected-graph/)文章中所述。
+**简单解决方案**：一个简单的解决方案是找到树的节点数目，该树的所有顶点的度之和为`L`。 此类树中的节点数为 **n =（L / 2 + 1）**，如[此](https://www.geeksforgeeks.org/sum-of-degrees-of-all-nodes-of-a-undirected-graph/)文章中所述。
 现在的解决方案是形成所有可以使用 n 个节点形成的标记树。 这种方法非常复杂，并且对于较大的 n 值，无法使用此过程找出树木的数量。
 
 **有效解决方案**：一种有效的解决方案是使用 [Cayley 公式](https://en.wikipedia.org/wiki/Cayley%27s_formula)查找节点数，该公式指出存在 **n <sup>（n – 2）</sup>** 带有 n 个标记顶点的树。 因此，现在代码的时间复杂度降低到 **O（n）**，可以使用模幂将其进一步降低到 **O（logn）**。

@@ -2,35 +2,35 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-number-of-nodes-to-be-removed-such-that-no-subtree-has-more-than-k-nodes/](https://www.geeksforgeeks.org/minimum-number-of-nodes-to-be-removed-such-that-no-subtree-has-more-than-k-nodes/)
 
-给定一棵树，其中 **N** 个节点的值从 **1** 到 **N** 和**（N – 1）**边，数字为 **K [** 的任务是从树中删除最少数量的节点，以便每个子树最多具有 **K** 个节点。 移除节点会将边缘从该节点移除到所有其他连接的节点。
+给定一棵树，其中`N`个节点的值从`1`到`N`和**（N – 1）**边，数字为 **K [** 的任务是从树中删除最少数量的节点，以便每个子树最多具有`K`个节点。 移除节点会将边缘从该节点移除到所有其他连接的节点。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 10，K = 3，下图是：
+> **输入**：N = 10，K = 3，下图是：
 > 
 > [![](img/9af6c520ff6d1ee4a068fdac4f961c9f.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200722134450/rszscreenshot53.png)
 > 
-> **输出：**
+> **输出**：
 > 删除的节点数：2
 > 删除的节点：2 1
-> **说明：**
+> **说明**：
 > 删除节点 1 和 2 之后，此处没有 子树或树具有 3 个以上的节点。 下面是结果图：
 > 
 > [![](img/6ebff10491db2c7c752f91d169b2f539.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200722140935/rszscreenshot54.png)
 > 
-> **输入：** N = 6，K = 3，下图是：
+> **输入**：N = 6，K = 3，下图是：
 > 
 > [![](img/d1423e02039108790fa6b01ba99d54bd.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200801132537/rsz1rsz1screenshot55.png)
 > 
-> **输出：**
+> **输出**：
 > 删除的节点数：1
 > 删除的节点：1
-> **说明：**
+> **说明**：
 > 删除节点 1 之后，此处没有子树或树 有 3 个以上的节点。 下面是结果图：
 > 
 > [![](img/e0a92287b7544fcba0dfd01c325553db.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200801132919/rsz2screenshot55.png)
 
-**方法：**想法是观察节点 X 的子树中的节点数是其子节点和节点本身的子树中的节点数的**和**。 步骤如下：
+**方法**：想法是观察节点 X 的子树中的节点数是其子节点和节点本身的子树中的节点数的**和**。 步骤如下：
 
 *   使用[动态编程](https://www.geeksforgeeks.org/dynamic-programming/)和 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 将节点的**计数**轻松存储在每个节点的子树中。
 *   现在，要使子树的节点数不超过 K 个节点，则其想法是在子树中的节点数超过 K 个节点时删除该节点，并将 0 传递给其父节点。
@@ -350,8 +350,8 @@ Removed Nodes: 1
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（N）*
 
 
 

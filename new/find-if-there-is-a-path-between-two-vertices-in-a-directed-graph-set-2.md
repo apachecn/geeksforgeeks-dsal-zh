@@ -3,25 +3,25 @@
 > 原文： [https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-directed-graph-set-2/](https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-directed-graph-set-2/)
 
 给定一个有向图和其中两个顶点，请检查是否存在从第一个给定顶点到第二个顶点的路径。
-**例如：** [
+**例如**：[
 
-> **考虑以下图表：** [
+> **考虑以下图表**：[
 > 
 > [![](img/40ca76ea468053c881ac72e49e82f1e2.png)](https://media.geeksforgeeks.org/wp-content/uploads/bfs-5.png)
 > 
-> **输入：**（u，v）=（1，3）
-> **输出：**是
-> **说明：** 1 至 3，1-> 2-> 3
+> **输入**：（u，v）=（1，3）
+> **输出**：是
+> **说明**：1 至 3，1-> 2-> 3
 > 
-> **输入：**（u，v）=（3，6）
-> **输出：**否
-> **说明：** 3 至 6
+> **输入**：（u，v）=（3，6）
+> **输出**：否
+> **说明**：3 至 6
 
 [这里讨论了](https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-given-graph/) [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 或 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 的解决方案。
-**方法：**在这里，我们将讨论使用 [Floyd Warshall 算法](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/)的基于[动态编程](https://www.geeksforgeeks.org/dynamic-programming/)的解决方案。
+**方法**：在这里，我们将讨论使用 [Floyd Warshall 算法](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/)的基于[动态编程](https://www.geeksforgeeks.org/dynamic-programming/)的解决方案。
 
-*   创建一个布尔 2D 矩阵 **mat** ，如果存在从顶点 **i** 到 **j** 的路径，则 **mat [i] [j]** 为真 ]。
-*   对于每个起始顶点 **i** 和结束顶点 **j** ，对所有中间顶点 **k** 进行迭代，并检查 **i** 是否存在到达 **j** 至 **k** ，然后将 **mat [i] [j]** 标记为 true。
+*   创建一个布尔 2D 矩阵 **mat** ，如果存在从顶点`i`到`j`的路径，则 **mat [i] [j]** 为真 ]。
+*   对于每个起始顶点`i`和结束顶点`j`，对所有中间顶点`k`进行迭代，并检查`i`是否存在到达`j`至`k`，然后将 **mat [i] [j]** 标记为 true。
 *   最后检查 **mat [u] [v]** 是否为 true，然后返回 true，否则返回 false。
 
 下面是上述方法的实现：
@@ -311,8 +311,8 @@ Yes
 
 ```
 
-***时间复杂度：** O（V <sup>3</sup>* ）
-***辅助空间：** O（V <sup>2</sup> ）*
+***时间复杂度**：O（V <sup>3</sup>* ）
+***辅助空间**：O（V <sup>2</sup> ）*
 
 
 

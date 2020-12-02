@@ -4,28 +4,28 @@
 
 > 原文： [https://www.geeksforgeeks.org/maximum-decimal-equivalent-possible-among-all-connected-components-of-a-binary-valued-graph/](https://www.geeksforgeeks.org/maximum-decimal-equivalent-possible-among-all-connected-components-of-a-binary-valued-graph/)
 
-给定**二进制值** [无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，并带有 **V** 顶点和 **E** 边，任务是在所有 图的连接组件。 可以将二进制值图视为仅将二进制数**（0 或 1）**作为顶点值。
+给定**二进制值** [无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，并带有`V`顶点和`E`边，任务是在所有 图的连接组件。 可以将二进制值图视为仅将二进制数**（0 或 1）**作为顶点值。
 
-**示例：**
+**示例**：
 
-> **输入：** E = 4，V = 7
+> **输入**：E = 4，V = 7
 > 
 > ![](img/fb50e4ce31778dd68a347b016976fde7.png)
 > 
-> **输出：** 3
-> **说明：**
+> **输出**：3
+> **说明**：
 > 所连接组件的十进制当量如下：
 > [0，1]：最大可能的十进制当量= 2 [（ 10） <sub>2</sub> ]
 > [0，0，0]：最大可能的十进制当量= 2
 > [1，1]：最大可能的十进制当量= 3
 > 因此，最大十进制当量 所有组件的总和= 3
 > 
-> **输入：** E = 6，V = 10
+> **输入**：E = 6，V = 10
 > 
 > ![](img/83927206790a724c02078daf19b731bf.png)
 > 
-> **输出：** 8
-> **说明：**
+> **输出**：8
+> **说明**：
 > 连接的组件和十进制等效项如下：
 > [1]：最大可能的十进制等效项= 2
 > [0 ，0，1，0]：最大可能的十进制等效值= 8 [（1000） <sub>2</sub> ]
@@ -33,7 +33,7 @@
 > [1，0 ]：最大可能的十进制等效值= 2
 > 因此，所有组件的最大十进制等效值= 8
 
-**方法：**
+**方法**：
 
 *   这个想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的连接组件，如[此](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)文章中所述。
 *   对于每个连接的组件，将存储二进制字符串并计算等效的十进制值。
@@ -608,8 +608,8 @@ if __name__ == "__main__":
 
 ```
 
-**复杂度分析：**
-**时间复杂度：** O（V <sup>2</sup> ）
+**复杂度分析**：
+**时间复杂度**：O（V <sup>2</sup> ）
 DFS 算法需要 O（V + E）时间来运行，其中 V，E 是无向图的顶点和边缘。 此外，在每次迭代中都会找到十进制等效项，这需要额外的 O（V）来计算并返回结果。 因此，整体复杂度为 **O（V <sup>2</sup> ）**
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

@@ -2,22 +2,22 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-string-such-that-every-adjacent-character-of-given-string-is-still-adjacent/](https://www.geeksforgeeks.org/minimum-string-such-that-every-adjacent-character-of-given-string-is-still-adjacent/)
 
-给定字符串 **S** ，任务是找到最小长度的字符串，以使字符串的每个相邻字符在最小长度的字符串中保持相邻。
+给定字符串`S`，任务是找到最小长度的字符串，以使字符串的每个相邻字符在最小长度的字符串中保持相邻。
 
-**示例：**
+**示例**：
 
-> **输入：** S =“ acabpba”
-> **输出：** pbac
-> **说明：**
+> **输入**：S =“ acabpba”
+> **输出**：pbac
+> **说明**：
 > 可以将给定的字符串转换为
 > 中的每个相邻字符都保持相邻。
 > 
-> **输入：** S =“ abcdea”
-> **输出：**不可能
-> **说明：**
+> **输入**：S =“ abcdea”
+> **输出**：不可能
+> **说明**：
 > 找不到这样的字符串。
 
-**方法：**想法是准备一个[图](https://www.geeksforgeeks.org/graph-and-its-representations/)类似的结构，其中图的每个相邻节点表示字符串的相邻字符。 在两种情况下，无法使用这种类型的字符串–
+**方法**：想法是准备一个[图](https://www.geeksforgeeks.org/graph-and-its-representations/)类似的结构，其中图的每个相邻节点表示字符串的相邻字符。 在两种情况下，无法使用这种类型的字符串–
 
 *   一个字符包含三个或更多相邻字符。
 *   如果两个字符不只有一个相邻字符，则长度为 1 的字符串除外。

@@ -2,15 +2,15 @@
 
 > 原文： [https://www.geeksforgeeks.org/detect-a-negative-cycle-in-a-graph-using-shortest-path-faster-algorithm/](https://www.geeksforgeeks.org/detect-a-negative-cycle-in-a-graph-using-shortest-path-faster-algorithm/)
 
-给定[图](https://www.geeksforgeeks.org/introduction-to-graphs/) **G** ，其中包含 **[0，N – 1]** 个节点，一个源 **S** 和一个数组 **类型为[ **u，v，w** }的 Edges [] [3]** ，表示节点 **u** 和 **v** 之间存在有向边 重量 **w** ，任务是检查给定来源是否存在[负循环](https://www.geeksforgeeks.org/detect-negative-cycle-graph-bellman-ford/)。 如果发现是真的，则打印**“是”** 。 否则，打印**“否”** 。
+给定[图](https://www.geeksforgeeks.org/introduction-to-graphs/)`G`，其中包含 **[0，N – 1]** 个节点，一个源`S`和一个数组 **类型为[ **u，v，w** }的 Edges [] [3]** ，表示节点`u`和`v`之间存在有向边 重量`w`，任务是检查给定来源是否存在[负循环](https://www.geeksforgeeks.org/detect-negative-cycle-graph-bellman-ford/)。 如果发现是真的，则打印**“是”** 。 否则，打印**“否”** 。
 
 > **负循环**是一个循环，其中该循环中其所有权重的总和为**负**。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 4，M = 4，Edges [] [] = {{0，1，1}，{1，2，-1}，{2，3，-1}，{ 3，0，-1}}，S = 0
-> **输出：**是
-> **说明：**
+> **输入**：N = 4，M = 4，Edges [] [] = {{0，1，1}，{1，2，-1}，{2，3，-1}，{ 3，0，-1}}，S = 0
+> **输出**：是
+> **说明**：
 > 
 > ![](img/63ccd7daab13844978f1f6ba6201088b.png)
 > 
@@ -18,9 +18,9 @@
 > 上述路径中的权重总和是 1 – 1 – 1 – 1 = -2。
 > 因此，该图包含负周期。
 > 
-> **输入：** N = 4，M = 5，Edges [] [] = {{0，2，-2}，{1，0，4}，{1，2，-3}，{ 2，3}，{3，1}}，W [] = {-2，4，-3，2，-1}，S = 1
-> **输出：**是
-> **说明：**
+> **输入**：N = 4，M = 5，Edges [] [] = {{0，2，-2}，{1，0，4}，{1，2，-3}，{ 2，3}，{3，1}}，W [] = {-2，4，-3，2，-1}，S = 1
+> **输出**：是
+> **说明**：
 > 
 > ![](img/e380566989f5a88db96715bd14752511.png)
 > 
@@ -28,15 +28,15 @@
 > 上述路径中的权重总和是-3 + 2 – 1 = -2。
 > 因此，该图包含负周期。
 
-**方法：**这个想法是使用[最短路径更快算法（SPFA）](https://www.geeksforgeeks.org/shortest-path-faster-algorithm/)查找是否存在负循环，并且该负循环可以从图中的源顶点到达。 请按照以下步骤解决问题：
+**方法**：这个想法是使用[最短路径更快算法（SPFA）](https://www.geeksforgeeks.org/shortest-path-faster-algorithm/)查找是否存在负循环，并且该负循环可以从图中的源顶点到达。 请按照以下步骤解决问题：
 
 *   将数组 **dis []** 初始化为大数值，将 **vis []** 初始化为 false，将 **cnt []** 初始化为存储顶点松弛次数的计数 。
 *   [使用](https://www.geeksforgeeks.org/algorithms-gq/graph-traversals-gq/) [SPFA 算法](https://www.geeksforgeeks.org/shortest-path-faster-algorithm/)遍历图形。
 *   每当顶点松弛时，增加每个顶点的计数。
 
-> 术语**松弛**表示如果通过包含通过顶点 **v** 的路径可以改善与顶点 **v** 连接的所有顶点的成本，则更新这些成本。
+> 术语**松弛**表示如果通过包含通过顶点`v`的路径可以改善与顶点`v`连接的所有顶点的成本，则更新这些成本。
 
-*   停止算法并在 **N <sup>th</sup>** 时间某个顶点放松后立即打印**是**，因为只有 **N** 顶点 即从 **0** 到 **N – 1** 。
+*   停止算法并在 **N <sup>th</sup>** 时间某个顶点放松后立即打印**是**，因为只有`N`顶点 即从`0`到 **N – 1** 。
 *   否则，打印**“否”** 。
 
 下面是上述方法的实现：
@@ -544,8 +544,8 @@ Yes
 
 ```
 
-***时间复杂度：** O（N * M），其中 N 是顶点数，M 是边数。*
-***辅助空间：** O（N + M）*
+***时间复杂度**：O（N * M），其中 N 是顶点数，M 是边数。*
+***辅助空间**：O（N + M）*
 
 
 

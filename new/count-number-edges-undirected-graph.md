@@ -8,7 +8,7 @@
 
 预期时间复杂度：O（V）
 
-**示例：**
+**示例**：
 
 ```
 Input : Adjacency list representation of

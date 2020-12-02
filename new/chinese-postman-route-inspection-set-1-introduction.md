@@ -44,7 +44,7 @@ step 8 : Print Euler Circuit of the modified graph.
 
 ```
 
-**插图：**
+**插图**：
 
 ```
                3
@@ -82,7 +82,7 @@ This route is Euler Circuit of the modified graph.
 
 ```
 
-**参考：**
+**参考**：
 [https://en.wikipedia.org/wiki/Route_inspection_problem](https://en.wikipedia.org/wiki/Route_inspection_problem)
 [http://www.suffolkmaths.co.uk/pages/ 数学％20Projects / Projects / Topology％20and％20Graph％20Theory / Chinese％20Postman％20Problem.pdf](http://www.suffolkmaths.co.uk/pages/Maths%20Projects/Projects/Topology%20and%20Graph%20Theory/Chinese%20Postman%20Problem.pdf)
 

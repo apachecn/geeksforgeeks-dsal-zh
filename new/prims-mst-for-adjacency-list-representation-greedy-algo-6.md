@@ -745,9 +745,9 @@ graph.PrimMST()
 2 - 8
 ```
 
-**时间复杂度：**上面的代码/算法的时间复杂度看起来为 O（V ^ 2），因为有两个嵌套的 while 循环。 如果仔细观察，可以发现内部循环中的语句执行了 O（V + E）次（类似于 BFS）。 内部循环具有 reduceKey（）操作，该操作需要 O（LogV）时间。 因此，总体时间复杂度为 O（E + V）* O（LogV），即 O（（E + V）* LogV）= O（ELogV）（对于连通图，V = O（E））
+**时间复杂度**：上面的代码/算法的时间复杂度看起来为 O（V ^ 2），因为有两个嵌套的 while 循环。 如果仔细观察，可以发现内部循环中的语句执行了 O（V + E）次（类似于 BFS）。 内部循环具有 reduceKey（）操作，该操作需要 O（LogV）时间。 因此，总体时间复杂度为 O（E + V）* O（LogV），即 O（（E + V）* LogV）= O（ELogV）（对于连通图，V = O（E））
 
-**参考：**
+**参考**：
 [Clifford Stein，Thomas H. Cormen，Charles E. Leiserson，Ronald L.](http://www.flipkart.com/introduction-algorithms-8120340078/p/itmczynzhyhxv2gs?pid=9788120340077&affid=sandeepgfg) 
 [的算法简介 http：// zh.wikipedia.org/wiki/Prim's_algorithm](http://en.wikipedia.org/wiki/Prim's_algorithm)
 

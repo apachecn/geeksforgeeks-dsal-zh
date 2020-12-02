@@ -680,11 +680,11 @@ graph has a Euler cycle
 
 时间复杂度：O（V + E）
 
-**下一篇文章：**
+**下一篇文章**：
 [有向图的欧拉路径和回路。](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)
 [Fleury 的算法可打印欧拉路径或电路吗？](https://www.geeksforgeeks.org/fleurys-algorithm-for-printing-eulerian-path/)
 
-**参考：**
+**参考**：
 [http://en.wikipedia.org/wiki/Eulerian_path](http://en.wikipedia.org/wiki/Eulerian_path)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。

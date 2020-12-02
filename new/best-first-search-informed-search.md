@@ -210,12 +210,12 @@ best_first_search(source, target, v)
 0 1 3 2 8 9 
 ```
 
-**分析：**
+**分析**：
 
 *   最佳优先搜索的最坏情况时间复杂度是 O（n * Log n），其中 n 是节点数。 最坏的情况是，在达到目标之前，我们可能必须访问所有节点。 请注意，优先级队列是使用最小（或最大）堆实现的，插入和删除操作需要 O（log n）时间。
 *   算法的性能取决于设计成本或评估功能的程度。
 
-**相关文章：**
+**相关文章**：
 [A *搜索算法](https://www.geeksforgeeks.org/a-search-algorithm/)
 本文由 **Shambhavi Singh** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

@@ -2,23 +2,23 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-nodes-to-be-colored-in-a-graph-such-that-every-node-has-a-colored-neighbour/](https://www.geeksforgeeks.org/minimum-nodes-to-be-colored-in-a-graph-such-that-every-node-has-a-colored-neighbour/)
 
-给定具有 **V** 节点和 **E** 边缘的图形 **G** ，任务是为不超过 **floor（V / 2）**节点着色 使得每个节点在至少 1 个单位的距离处具有*至少一个有色节点*。 图的任何两个连接节点之间的距离始终精确为 1 个单位。 打印需要着色的节点。
+给定具有`V`节点和`E`边缘的图形`G`，任务是为不超过 **floor（V / 2）**节点着色 使得每个节点在至少 1 个单位的距离处具有*至少一个有色节点*。 图的任何两个连接节点之间的距离始终精确为 1 个单位。 打印需要着色的节点。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 4，
+> **输入**：N = 4，
 > G：
 > [![](img/40b555952b40d362f7443c936477ebb9.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200624201103/Untitled-Diagram212.png) 
-> **输出：** 1
+> **输出**：1
 > [![](img/1b1dc0c238ad8e6c6529e7ef71b599a2.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200624201147/Untitled-Diagram312.png)
 > 
-> **输入：** N = 6，
+> **输入**：N = 6，
 > G：
 > [![](img/9cf92a306c7cb45288a519b05d9ec48d.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200624201321/Untitled-Diagram146.png) 
-> **输出：** 3
+> **输出**：3
 > [![](img/be6a82cfa154900e7bdce6dc3846ecc8.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200624201433/Untitled-Diagram147.png)
 
-**方法：**可以使用 [**BFS**](https://en.wikipedia.org/wiki/Breadth-first_search) 遍历来解决。 请按照以下步骤解决问题：
+**方法**：可以使用 [**BFS**](https://en.wikipedia.org/wiki/Breadth-first_search) 遍历来解决。 请按照以下步骤解决问题：
 
 *   初始化数组**奇数[]** 和**偶数[]** ，以存储与源分别处于奇数和偶数节点距离的节点。
 *   从源节点开始，以**距离**初始化为 0（表示距源节点的距离）执行 BFS 遍历。 根据 **distance** 的值，将所有节点存储在奇数[]或偶数[]中。
@@ -27,7 +27,7 @@
 *   由于奇数距离或偶数距离的节点数中的最小值不超过 **floor（V / 2）**，因此答案保持正确，因为奇数距离的每个节点都连接到偶数距离的节点，反之亦然。
 *   因此，如果到源的偶数距离处的节点数较少，则从 even []中打印节点。 否则，从奇数[]打印所有节点。
 
-> **插图：**
+> **插图**：
 > 对于下面给出的图形 G，
 > 源节点 S = 1
 > [![](img/9cf92a306c7cb45288a519b05d9ec48d.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200624201321/Untitled-Diagram146.png)
@@ -155,7 +155,7 @@ int main()
 
 ```
 
-***时间复杂度：** O（V + E）*
+***时间复杂度**：O（V + E）*
 
 
 

@@ -2,12 +2,12 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-if-the-given-graph-represents-a-star-topology/](https://www.geeksforgeeks.org/check-if-the-given-graph-represents-a-star-topology/)
 
-给定图形 **G** ，任务是检查它是否表示星形拓扑。
+给定图形`G`，任务是检查它是否表示星形拓扑。
 
 下图显示了一种星形拓扑：
 ![](img/af4c710b4bf25799c24899672d1adcc4.png)
 
-**示例：**
+**示例**：
 
 ```
 Input : Graph = 

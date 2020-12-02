@@ -21,7 +21,7 @@
 
 对于使用邻接表表示的图，上述方法的时间复杂度为 O（V *（V + E））。 我们可以做得更好吗？
 
-**一种 O（V + E）算法，用于查找所有 **A** 网格 **P** 软膏（AP）**
+**一种 O（V + E）算法，用于查找所有`A`网格`P`软膏（AP）**
 的想法是使用 DFS（深度优先搜索）。 在 DFS 中，我们遵循称为 DFS 树的树形式的顶点。 在 DFS 树中，如果 v 被 u 发现（显然 v 是图中 u 的相邻），则 u 是另一个顶点 v 的父级。 在 DFS 树中，如果满足以下两个条件之一，则顶点 u 是连接点。
 **1）** u 是 DFS 树的根，并且至少有两个子代。
 **2）** u 不是 DFS 树的根，并且它具有子 v，因此以 v 为根的子树中的任何顶点都不具有 u 的祖先之一（在 DFS 树中）的后边缘。
@@ -660,9 +660,9 @@ Articulation points in third graph
 1
 ```
 
-**时间复杂度：**上面的功能是带有附加数组的简单 DFS。 因此，时间复杂度与 DFS 相同，对于图的邻接表表示，它的时间复杂度为 O（V + E）。
+**时间复杂度**：上面的功能是带有附加数组的简单 DFS。 因此，时间复杂度与 DFS 相同，对于图的邻接表表示，它的时间复杂度为 O（V + E）。
 
-**参考：**
+**参考**：
 [https://www.cs.washington.edu/education/courses/421/04su/slides/artic.pdf](https://www.cs.washington.edu/education/courses/421/04su/slides/artic.pdf)
 [http： //www.slideshare.net/TraianRebedea/algorithm-design-and-complexity-course-8](http://www.slideshare.net/TraianRebedea/algorithm-design-and-complexity-course-8)
 [http://faculty.simpson.edu/lydia.sinapova/www/cmsc250/LN250_Weiss/ L25-Connectivity.htm](http://faculty.simpson.edu/lydia.sinapova/www/cmsc250/LN250_Weiss/L25-Connectivity.htm)

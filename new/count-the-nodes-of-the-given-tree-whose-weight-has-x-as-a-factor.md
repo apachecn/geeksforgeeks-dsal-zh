@@ -2,19 +2,19 @@
 
 > 原文： [https://www.geeksforgeeks.org/count-the-nodes-of-the-given-tree-whose-weight-has-x-as-a-factor/](https://www.geeksforgeeks.org/count-the-nodes-of-the-given-tree-whose-weight-has-x-as-a-factor/)
 
-给定一棵树，以及所有节点的权重，任务是计算权重可被 **x** 整除的节点。
+给定一棵树，以及所有节点的权重，任务是计算权重可被`x`整除的节点。
 
-**示例：**
+**示例**：
 
-> **输入：**
+> **输入**：
 > ![](img/c8d63a5a618701e1de407d9028376d6b.png)
 > x = 5
-> **输出：** 2
+> **输出**：2
 > 只有节点 1 和 2 的权重可被 5 整除。
 
-**方法：**在树上执行 [dfs](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，对于每个节点，检查其权重是否可被 x 整除。 如果是，则增加计数。
+**方法**：在树上执行 [dfs](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，对于每个节点，检查其权重是否可被 x 整除。 如果是，则增加计数。
 
-**实施：**
+**实施**：
 
 ## C ++
 

@@ -15,7 +15,7 @@
 [用于最大流量问题的 Ford-Fulkerson 算法](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)
 
 **最大二分匹配和最大流量问题**
-**M** 轴距 **B** ipartite **M** 附着（ **MBP** ）问题 可以通过将其转换为流动网络来解决（请参阅[此](http://www.youtube.com/watch?v=NlQqmEXuiC8)视频，以了解我们如何得出此结论）。 以下是步骤。
+`M`轴距`B`ipartite`M`附着（ **MBP** ）问题 可以通过将其转换为流动网络来解决（请参阅[此](http://www.youtube.com/watch?v=NlQqmEXuiC8)视频，以了解我们如何得出此结论）。 以下是步骤。
 
 [![maximum_matching2](img/9848259377187df035fa4007e289b9c8.png) ](https://media.geeksforgeeks.org/wp-content/cdn-uploads/maximum_matching2.png) *** 1）建立流网络*** 
 流网络中必须有源和汇。 因此，我们添加了一个来源，并向所有申请人添加了该来源的边。 同样，将所有作业的边添加到接收器。 每个边缘的容量标记为 1 个单位。
@@ -545,7 +545,7 @@ Maximum number of applicants that can get job is 5
 [Hopcroft–Karp 最大匹配算法| 设置 1（简介）](https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-1-introduction/)
 [Hopcroft–Karp 最大匹配算法| 第 2 组（实施）](https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-2-implementation/)
 
-**参考：**
+**参考**：
 [http://www.cs.cornell.edu/~wdtseng/icpc/notes/graph_part5.pdf](http://www.cs.cornell.edu/~wdtseng/icpc/notes/graph_part5.pdf)
 [http：// www .youtube.com / watch？v = NlQqmEXuiC8](http://www.youtube.com/watch?v=NlQqmEXuiC8)
 [http://en.wikipedia.org/wiki/Maximum_matching](http://en.wikipedia.org/wiki/Maximum_matching)

@@ -608,13 +608,13 @@ class Graph {
 Graph contains cycle
 ```
 
-**相关文章：**
+**相关文章**：
 [联合查找算法| 集合 1（无向图中的检测周期）](https://www.geeksforgeeks.org/union-find/)
 [脱节集数据结构（Java 实现）](https://www.geeksforgeeks.org/disjoint-set-data-structures-java-implementation/)
 [贪婪算法| 第 2 组（Kruskal 的最小生成树算法）](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)，
 [作业排序问题| 组 2（使用不交集）](https://www.geeksforgeeks.org/job-sequencing-using-disjoint-set-union/)
 
-**参考：**
+**参考**：
 [http://en.wikipedia.org/wiki/Disjoint-set_data_structure](http://en.wikipedia.org/wiki/Disjoint-set_data_structure)
 [IITD 视频讲座](http://www.youtube.com/watch?v=kajZRdXi6fA)
 请写评论 如果发现任何不正确的内容，或者想共享有关上述主题的更多信息。

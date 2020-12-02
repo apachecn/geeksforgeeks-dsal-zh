@@ -4,26 +4,26 @@
 
 > 原文： [https://www.geeksforgeeks.org/print-negative-weight-cycle-in-a-directed-graph/](https://www.geeksforgeeks.org/print-negative-weight-cycle-in-a-directed-graph/)
 
-给定一个由 **V** 顶点和 **E** 边组成的加权有向图。 任务是打印权重之和为负的[循环路径](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)。 如果不存在这样的路径，则打印**“ -1”** 。
+给定一个由`V`顶点和`E`边组成的加权有向图。 任务是打印权重之和为负的[循环路径](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)。 如果不存在这样的路径，则打印**“ -1”** 。
 
-> **输入：** V = 5，E = 5，下图是：
+> **输入**：V = 5，E = 5，下图是：
 > [![](img/b6a8be11d482e44be2545c89c47f5c22.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200709132634/Example11.png) 
-> **输出：** 1 2 3 4 1
-> **说明：**
+> **输出**：1 2 3 4 1
+> **说明**：
 > 给定的图形包含一个负周期，（1- > 2- > 3- > 4- > 1）
 > 
-> **输入：** V = 5，E = 5，下图是：
+> **输入**：V = 5，E = 5，下图是：
 > [![](img/8221d6bef2b8a82b895db9bbc3cf0a0e.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200709132651/Example1-1.png) 
-> **输出：** 0 1 2 3 4 0
-> **说明：**
+> **输出**：0 1 2 3 4 0
+> **说明**：
 > 给定的图形包含一个负周期，（0- > 1- > 2- > 3- > 4- > 0）
 
-**方法：**想法是使用 [Bellman-Ford 算法](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)，该算法用于[是否检测到负周期](https://www.geeksforgeeks.org/detect-negative-cycle-graph-bellman-ford/)。 要打印负周期，请执行 Bellman-Ford 的**第 N 次**迭代，并从该迭代中松弛的任何边中选取一个顶点。 使用此顶点及其祖先，可以打印负周期。 步骤如下：
+**方法**：想法是使用 [Bellman-Ford 算法](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)，该算法用于[是否检测到负周期](https://www.geeksforgeeks.org/detect-negative-cycle-graph-bellman-ford/)。 要打印负周期，请执行 Bellman-Ford 的**第 N 次**迭代，并从该迭代中松弛的任何边中选取一个顶点。 使用此顶点及其祖先，可以打印负周期。 步骤如下：
 
 *   执行 Bellman-Ford 算法的 **N-1** 次迭代，并放松每个边**（u，v）**。 跟踪每个顶点的父级，并将其存储在数组 **parent []** 中。
 *   现在，再进行一次迭代，如果在此**第 N 次迭代**中没有发生边缘松弛，则图中不存在负权重的循环。
-*   否则，取变量 **C** 并存储任意边**（u，v）**的顶点 **v** ，在第**次第**次迭代中将其放宽 。
-*   现在，从 **C** 顶点开始向其祖先移动，直到找到一个循环并最终打印出来。
+*   否则，取变量`C`并存储任意边**（u，v）**的顶点`v`，在第**次第**次迭代中将其放宽 。
+*   现在，从`C`顶点开始向其祖先移动，直到找到一个循环并最终打印出来。
 *   该周期将是负重量的期望周期。
 
 下面是上述方法的实现：
@@ -195,8 +195,8 @@ int main()
 
 ```
 
-**时间复杂度：** *O（V * E）*
-**辅助空间：** *O（V）*
+**时间复杂度**：*O（V * E）*
+**辅助空间**：*O（V）*
 
 
 

@@ -2,9 +2,9 @@
 
 > 原文： [https://www.geeksforgeeks.org/maximize-the-number-of-uncolored-vertices-appearing-along-the-path-from-root-vertex-and-the-colored-vertices/](https://www.geeksforgeeks.org/maximize-the-number-of-uncolored-vertices-appearing-along-the-path-from-root-vertex-and-the-colored-vertices/)
 
-给定一棵具有 **N 个**顶点的树，顶点 **1 作为根**顶点， **N – 1** 边。 我们必须精确着色 **k** 的顶点数，**计数根顶点与每个着色顶点之间的无色顶点**的数量。 如果未着色，则必须在计数中包括根顶点。 最大化从根顶点到着色顶点的路径之间出现的未着色顶点数量的任务。
+给定一棵具有 **N 个**顶点的树，顶点 **1 作为根**顶点， **N – 1** 边。 我们必须精确着色`k`的顶点数，**计数根顶点与每个着色顶点之间的无色顶点**的数量。 如果未着色，则必须在计数中包括根顶点。 最大化从根顶点到着色顶点的路径之间出现的未着色顶点数量的任务。
 
-**示例：**
+**示例**：
 
 ```
 Input :
@@ -39,7 +39,7 @@ Output : 2
 
 ```
 
-**方法：**
+**方法**：
 
 为了解决上述问题，我们观察到，如果选择一个顶点不着色，则必须选择其父对象不着色。 然后，我们可以计算出如果选择一条通往着色顶点的路径，我们将获得多少个未着色顶点。 只需计算每个顶点的根之间的顶点数量与当前顶点之下的顶点数量之间的差即可。 取所有差异中最大的 k 并计算总和。 使用 nth_element stl 获得 O（n）解。
 
@@ -163,7 +163,7 @@ int main()
 
 ```
 
-**时间复杂度：** O（N）
+**时间复杂度**：O（N）
 
 
 

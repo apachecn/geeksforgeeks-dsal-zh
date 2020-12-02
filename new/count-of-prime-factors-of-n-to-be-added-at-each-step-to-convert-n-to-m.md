@@ -2,25 +2,25 @@
 
 > 原文： [https://www.geeksforgeeks.org/count-of-prime-factors-of-n-to-be-added-at-each-step-to-convert-n-to-m/](https://www.geeksforgeeks.org/count-of-prime-factors-of-n-to-be-added-at-each-step-to-convert-n-to-m/)
 
-给定两个整数 **N** 和 **M** ，任务是找出将 **N** 转换​​为 **M** 所需的最小操作数。 每个操作都涉及将 **N** 当前值的[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)之一相加。 如果有可能获得 M，则打印操作数。 否则，打印 **-1** 。
+给定两个整数`N`和`M`，任务是找出将`N`转换​​为`M`所需的最小操作数。 每个操作都涉及将`N`当前值的[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)之一相加。 如果有可能获得 M，则打印操作数。 否则，打印 **-1** 。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 6，M = 10
-> **输出：** 2
-> **说明：**
+> **输入**：N = 6，M = 10
+> **输出**：2
+> **说明**：
 > 6 的质因子是[2，3 ]。
 > 将 N 加 2，得到 8。
 > 8 的素数是[2]。
 > 将 N 加 2，我们得到 10，这是期望的结果。
 > 因此，总步数= 2
 > 
-> **输入：** N = 2，M = 3
-> **输出：** -1
-> **说明：**
+> **输入**：N = 2，M = 3
+> **输出**：-1
+> **说明**：
 > 无法转换 N = 2 至 M = 3
 
-**方法：**
+**方法**：
 该问题可以通过使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 获得达到 M 的最小步长和[硅酮筛网](http://www.geeksforgeeks.org/sieve-of-eratosthenes/)来预先计算质数来解决。
 请按照以下步骤解决问题：
 
@@ -31,7 +31,7 @@
 *   在队列的每个级别，通过提取 [front（）](https://www.geeksforgeeks.org/queuefront-queueback-c-stl/)处的元素来逐个遍历所有元素，然后执行以下操作：
     1.  将 **q.front（）。first（）**存储在 **newNum** 中，将 **q.front（）。second（）**存储在**距离**中，其中 **newNum** 是当前值，**距离**是达到该值所需的操作次数。
     2.  将 **newNum** 的所有素因子存储在[集](https://www.geeksforgeeks.org/set-in-cpp-stl/)中。
-    3.  如果 **newNum** 等于 **M** ，则打印距离，因为它是所需的最小操作。
+    3.  如果 **newNum** 等于`M`，则打印距离，因为它是所需的最小操作。
     4.  如果 **newNum** 大于 M，则中断。
     5.  否则，newNum 小于 M。因此，通过逐个添加其主要因子 i 来更新 newNum，并将**（newNum + i，距离+ 1）**存储在队列中，并为下一级重复上述步骤 。
 *   如果搜索继续到队列变空的级别，则意味着无法从 N 获得 M。打印-1。
@@ -439,8 +439,8 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N * log（N））*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N * log（N））*
+***辅助空间**：O（N）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

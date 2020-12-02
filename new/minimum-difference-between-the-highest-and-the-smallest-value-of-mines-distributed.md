@@ -2,20 +2,20 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-difference-between-the-highest-and-the-smallest-value-of-mines-distributed/](https://www.geeksforgeeks.org/minimum-difference-between-the-highest-and-the-smallest-value-of-mines-distributed/)
 
-给定 **n 个**公司和 **m** 个油矿具有价值，任务是公平地在 **n** 个公司之间分配这些矿山。 那就是获得最高矿产价值的公司与获得最低矿产价值的公司之间的差异应该是最小的。 计算最小差异​​。 请注意，分配给每个公司的油矿应彼此相邻。 另外，![m >= n](img/8eeab87e75aadefb566f6d6ea58fbdfe.png "Rendered by QuickLaTeX.com")
+给定 **n 个**公司和`m`个油矿具有价值，任务是公平地在`n`个公司之间分配这些矿山。 那就是获得最高矿产价值的公司与获得最低矿产价值的公司之间的差异应该是最小的。 计算最小差异​​。 请注意，分配给每个公司的油矿应彼此相邻。 另外，![m >= n](img/8eeab87e75aadefb566f6d6ea58fbdfe.png "Rendered by QuickLaTeX.com")
 
-**示例：**
+**示例**：
 
-> **输入：** n = 2，m = 4 [地雷的 HTG2]值= [6、10、13、2]
-> **输出：** 1 – >地雷分配为 {（6，10），（13，2）}，因此输出为（6 + 10）–（13 + 2）= 1
+> **输入**：n = 2，m = 4 [地雷的 HTG2]值= [6、10、13、2]
+> **输出**：1 – >地雷分配为 {（6，10），（13，2）}，因此输出为（6 + 10）–（13 + 2）= 1
 > 
-> **输入：** n = 3，m = 4
+> **输入**：n = 3，m = 4
 > 地雷值= [6、10、13、2]
-> **输出：** 9 – >地雷分布为 {（6），（10），（13，2）}，因此输出为（13 + 2）–（6）= 9
+> **输出**：9 – >地雷分布为 {（6），（10），（13，2）}，因此输出为（13 + 2）–（6）= 9
 
-**来源：**三星 RnD 3 小时编码回合问题
+**来源**：三星 RnD 3 小时编码回合问题
 
-**方法：**
+**方法**：
 
 1.  构造一个数组，使每个索引处的值包含当前值与该数组中所有先前值的和。
 2.  在我们的解决方案数组中包括数组中的最后一个值。
@@ -101,8 +101,8 @@ print(func(solArr[:], arr, len(arr)-2, n-1))
 
 ```
 
-**时间复杂度：** ![O((n-1) * {m-1\choose n-1})](img/6eb1342bbccb10d1d771a98f85a6042c.png "Rendered by QuickLaTeX.com")
-**空间复杂度：** ![O(n)](img/d5229a9c6f59029cbbb0f53974c9a9de.png "Rendered by QuickLaTeX.com")
+**时间复杂度**：![O((n-1) * {m-1\choose n-1})](img/6eb1342bbccb10d1d771a98f85a6042c.png "Rendered by QuickLaTeX.com")
+**空间复杂度**：![O(n)](img/d5229a9c6f59029cbbb0f53974c9a9de.png "Rendered by QuickLaTeX.com")
 
 
 

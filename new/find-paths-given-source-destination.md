@@ -9,7 +9,7 @@
 
 [![allPaths](img/3bae321fd72c187df30b2e6e2e308f87.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/allPaths.png)
 
-**方法：**
+**方法**：
 
 1.  想法是对给定的有向图进行[深度优先遍历](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)。
 2.  从源开始 DFS 遍历。
@@ -468,7 +468,7 @@ public class Graph {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Following are all different paths from 2 to 3
@@ -478,11 +478,11 @@ Following are all different paths from 2 to 3
 
 ```
 
-**复杂度分析：**，
+**复杂度分析**：，
 
-*   **时间复杂度：** O（V ^ V）。
+*   **时间复杂度**：O（V ^ V）。
     时间复杂度是多项式。 从每个顶点可以从当前顶点访问 v 个顶点。
-*   **辅助空间：** O（V ^ V）。
+*   **辅助空间**：O（V ^ V）。
     要存储路径，需要 V ^ V 空间。
 
 本文由 **Shivam Gupta** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。

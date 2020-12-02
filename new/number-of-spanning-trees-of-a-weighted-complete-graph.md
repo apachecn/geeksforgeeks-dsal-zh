@@ -4,13 +4,13 @@
 
 > 原文： [https://www.geeksforgeeks.org/number-of-spanning-trees-of-a-weighted-complete-graph/](https://www.geeksforgeeks.org/number-of-spanning-trees-of-a-weighted-complete-graph/)
 
-**先决条件：** [图论基础](https://www.geeksforgeeks.org/mathematics-graph-theory-basics-set-1/)和[生成树。](https://en.wikipedia.org/wiki/Spanning_tree)
+**先决条件**：[图论基础](https://www.geeksforgeeks.org/mathematics-graph-theory-basics-set-1/)和[生成树。](https://en.wikipedia.org/wiki/Spanning_tree)
 
-**完全加权图：**其中一条边连接每对图顶点并且每个边具有与之相关联的权重的图称为完全加权图。
+**完全加权图**：其中一条边连接每对图顶点并且每个边具有与之相关联的权重的图称为完全加权图。
 
 具有 n 个顶点的完整加权图的生成树数为 **n <sup>（n-2）</sup>** 。
 
-**证明：**生成树是图 G 的子图，它包含图的所有顶点。 因此，完整加权图的生成树的数量与具有 n 个顶点的标记树的数量（不需要是二进制的）相同。
+**证明**：生成树是图 G 的子图，它包含图的所有顶点。 因此，完整加权图的生成树的数量与具有 n 个顶点的标记树的数量（不需要是二进制的）相同。
 
 带有 n 个顶点的标记树的 Prüfer 序列是与树相关的唯一长度（n-2）序列。 同样，对于标签 1 到 n 上给定长度（n-2）的 Prüfer 序列，存在具有给定 Prüfer 序列的唯一标记树。 因此，我们在具有 n 个顶点的**标记树的集合 A 和标签 1 到 n [n [** 。 这可以证明如下：
 

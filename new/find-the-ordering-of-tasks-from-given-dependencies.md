@@ -18,9 +18,9 @@
 > 输出：[0，1，2，3]或[0，2，1 ，3]
 > 说明：共有 4 个任务可供选择。 要选择任务 3，您应该同时完成任务 1 和 2。应该在完成任务 0 之后选择任务 1 和 2。因此，正确的任务顺序是[0，1，2，3]。 另一个正确的顺序是[0，2，1，3]。
 
-**询问：** Google，Twitter，亚马逊和更多公司。
+**询问**：Google，Twitter，亚马逊和更多公司。
 
-**解决方案：**我们可以将此问题视为一个图形问题（与[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)相关）。 所有任务都是图的节点，如果任务 u 是任务 v 的先决条件，我们将添加从节点 u 到节点 v 的有向边。现在，此问题等效于找到节点/任务的拓扑顺序（使用拓扑排序） ）在先决条件表示的图中。 如果图中有一个循环，则不可能完成所有任务（因为在这种情况下，没有任何任务的拓扑顺序）。 BFS 和 DFS 均可用于[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)来解决它。
+**解决方案**：我们可以将此问题视为一个图形问题（与[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)相关）。 所有任务都是图的节点，如果任务 u 是任务 v 的先决条件，我们将添加从节点 u 到节点 v 的有向边。现在，此问题等效于找到节点/任务的拓扑顺序（使用拓扑排序） ）在先决条件表示的图中。 如果图中有一个循环，则不可能完成所有任务（因为在这种情况下，没有任何任务的拓扑顺序）。 BFS 和 DFS 均可用于[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)来解决它。
 
 由于 pair 对实现图算法不方便，因此我们首先将其转换为图。 如果任务 u 是任务 v 的先决条件，我们将添加从节点 u 到节点 v 的有向边。
 
@@ -118,7 +118,7 @@ int main()
 
 ```
 
-**使用 DFS 进行拓扑排序：**
+**使用 DFS 进行拓扑排序**：
 在此实现中，我们使用[基于 DFS 的算法进行拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。
 
 ```
@@ -195,7 +195,7 @@ int main()
 
 ```
 
-**参考：** https://leetcode.com/problems/course-schedule-ii/
+**参考**：https://leetcode.com/problems/course-schedule-ii/
 
 
 

@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/implementation-of-erdos-renyi-model-on-social-networks/](https://www.geeksforgeeks.org/implementation-of-erdos-renyi-model-on-social-networks/)
 
-**先决条件：** [社交网络简介](https://www.geeksforgeeks.org/introduction-to-social-networks-using-networkx-in-python/)，[鄂尔多斯-仁伊模型](https://www.geeksforgeeks.org/erdos-renyl-model-generating-random-graphs/)
+**先决条件**：[社交网络简介](https://www.geeksforgeeks.org/introduction-to-social-networks-using-networkx-in-python/)，[鄂尔多斯-仁伊模型](https://www.geeksforgeeks.org/erdos-renyl-model-generating-random-graphs/)
 
 Erdos Renyi 模型用于在社交网络上创建随机网络或图形。 在 Erdos Reny 模型中，每个边缘都有固定的概率出现，而与网络中的边缘无关地不存在。
 
@@ -187,7 +187,7 @@ distribution_graph(g)
 
 ```
 
-**输出：**
+**输出**：
 
 > 输入节点数
 > 10
@@ -199,7 +199,7 @@ distribution_graph(g)
 
 在图中随机添加边
 
-**程度**在上述程序**中执行 Erdos-Renyi 模型的分布图：**
+**程度**在上述程序**中执行 Erdos-Renyi 模型的分布图**：
 
 ![](img/7bb48940a556f75666a63b7a1b5ffb27.png)
 

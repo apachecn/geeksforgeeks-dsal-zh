@@ -6,7 +6,7 @@
 
 给定一个图 G（V，E）作为[邻接矩阵表示](https://www.geeksforgeeks.org/graph-and-its-representations/)和一个顶点，请在图中找到顶点 v 的度。
 
-**示例：**
+**示例**：
 
 ```
 0-----1

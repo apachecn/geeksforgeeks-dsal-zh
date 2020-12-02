@@ -6,7 +6,7 @@
 
 您将获得一个具有 N 个顶点和 M 个边的无向图 G（V，E）。 我们需要找到给定的一对顶点（u，v）之间的最小边数。
 
-**示例：**
+**示例**：
 
 ```
 Input : For given graph G. Find minimum number
@@ -25,7 +25,7 @@ and 5.
 这个想法是从给定的输入顶点（u）之一执行 BFS。 在执行 BFS 时，请维护一个 distance [n]数组，并将其对所有顶点初始化为零。 现在，假设在 BFS 期间，顶点 x 从队列中弹出，并且我们将所有相邻的未访问顶点（i）推回队列，同时我们应该更新 **distance [i] = distance [x] + 1;** 。
 最后，distance [v]给出 u 和 v 之间的最小边数。
 
-**算法：**
+**算法**：
 
 ```
 int minEdgeBFS(int u, int v, int n)
@@ -417,7 +417,7 @@ public static void Main(string []args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 3

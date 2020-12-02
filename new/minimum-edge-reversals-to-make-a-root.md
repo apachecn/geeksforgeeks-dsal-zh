@@ -3,7 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/minimum-edge-reversals-to-make-a-root/](https://www.geeksforgeeks.org/minimum-edge-reversals-to-make-a-root/)
 
 给定具有 V 个顶点和 V-1 个边缘的有向树，我们需要选择这样的根（从我们可以到达的给定节点到每个其他节点），并且具有最少数量的边缘反转。
-**范例：**
+**范例**：
 
 ```
  ![](img/6d612879e776227f2b1bdb9ae9291259.png)

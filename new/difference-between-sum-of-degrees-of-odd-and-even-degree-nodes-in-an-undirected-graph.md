@@ -5,11 +5,11 @@
 > 原文： [https://www.geeksforgeeks.org/difference-between-sum-of-degrees-of-odd-and-even-degree-nodes-in-an-undirected-graph/](https://www.geeksforgeeks.org/difference-between-sum-of-degrees-of-odd-and-even-degree-nodes-in-an-undirected-graph/)
 
 给定[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，其中 **N 个**顶点且 **M 个**边，任务是找到奇数度节点和偶度度节点的度和之间的绝对差 在无向图中。
-**范例：**
+**范例**：
 
-> **输入：** N = 4，边缘[] [] = {{1，2}，{1，3}，{1，4}，{2，3}，{2，4}，{ 3，4}}
-> **输出：** 12
-> **说明：**
+> **输入**：N = 4，边缘[] [] = {{1，2}，{1，3}，{1，4}，{2，3}，{2，4}，{ 3，4}}
+> **输出**：12
+> **说明**：
 > 下图是上述信息的图形：
 > 
 > ![](img/86b8bf5ee84a0057344218ba88219df0.png)
@@ -22,10 +22,10 @@
 > 奇数度节点的总和= 3 + 3 + 3 + 3 = 12
 > 偶数度节点的总和= 0
 > 差= 12
-> **输入：** N = 5，edges [] [] = {{1，2 }，{1，3}，{2，4}，{2，5}}}
-> **输出：** 4
+> **输入**：N = 5，edges [] [] = {{1，2 }，{1，3}，{2，4}，{2，5}}}
+> **输出**：4
 
-**方法：**
+**方法**：
 
 1.  对于每个顶点，度可以通过给定图形在相应顶点处的 [](https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/) ，[邻接表](https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/)的长度来计算。
 2.  计算奇数度节点和偶数度节点的度数之和，然后打印出差异。

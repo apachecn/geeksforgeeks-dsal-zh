@@ -2,9 +2,9 @@
 
 > 原文： [https://www.geeksforgeeks.org/pair-with-a-given-sum-in-bst-set-2/](https://www.geeksforgeeks.org/pair-with-a-given-sum-in-bst-set-2/)
 
-给定一个二进制搜索树，以及一个整数 **X** ，任务是检查 BST 中是否存在一对总和等于 **X** 的不同节点。 如果是，则打印**是**，否则打印**否**。
+给定一个二进制搜索树，以及一个整数`X`，任务是检查 BST 中是否存在一对总和等于`X`的不同节点。 如果是，则打印**是**，否则打印**否**。
 
-**示例：**
+**示例**：
 
 ```
 Input: X = 5
@@ -30,7 +30,7 @@ Output: No
 
 ```
 
-**方法：**在此[文章](https://www.geeksforgeeks.org/find-a-pair-with-given-sum-in-bst/)中已经讨论了基于哈希的方法。 其空间复杂度为 O（N），其中 N 是 BST 中的节点数。
+**方法**：在此[文章](https://www.geeksforgeeks.org/find-a-pair-with-given-sum-in-bst/)中已经讨论了基于哈希的方法。 其空间复杂度为 O（N），其中 N 是 BST 中的节点数。
 
 在本文中，我们将通过节省空间的方法将空间复杂度降低到 O（H）（其中 H 是 BST 的高度）来使用空间高效的方法解决相同的问题。 为此，我们将在 BST 上使用两种指针技术。 因此，我们将维护一个向前和向后的迭代器，分别以有序遍历和反向有序遍历的顺序迭代 BST。 以下是解决问题的步骤：
 

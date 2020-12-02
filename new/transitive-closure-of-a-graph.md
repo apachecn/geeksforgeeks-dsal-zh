@@ -468,10 +468,10 @@ Following matrix is transitiveclosure of the given graph
 
 ```
 
-**时间复杂度：** O（V <sup>3</sup> ）其中 V 是给定图中顶点的数量。
+**时间复杂度**：O（V <sup>3</sup> ）其中 V 是给定图中顶点的数量。
 参见以下文章中的 O（V <sup>2</sup> ）解决方案。
 [使用 DFS 进行图的传递闭合](https://www.geeksforgeeks.org/transitive-closure-of-a-graph-using-dfs/)
-**参考文献：**
+**参考文献**：
 [Clifford Stein，Thomas H. Cormen，Charles E. Leiserson， Ronald L.](http://www.flipkart.com/introduction-algorithms-8120340078/p/itmczynzhyhxv2gs?pid=9788120340077&affid=sandeepgfg)
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请写评论。
 

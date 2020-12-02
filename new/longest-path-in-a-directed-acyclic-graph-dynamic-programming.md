@@ -2,28 +2,28 @@
 
 > 原文： [https://www.geeksforgeeks.org/longest-path-in-a-directed-acyclic-graph-dynamic-programming/](https://www.geeksforgeeks.org/longest-path-in-a-directed-acyclic-graph-dynamic-programming/)
 
-给定有向图 **G** ，其中 *N 个顶点*和 *M 个边缘*。 任务是在 Graph 中找到最长的有向路径的长度。
+给定有向图`G`，其中 *N 个顶点*和 *M 个边缘*。 任务是在 Graph 中找到最长的有向路径的长度。
 
-**注意：**定向路径的长度是其中的边数。
+**注意**：定向路径的长度是其中的边数。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 4，M = 5
+> **输入**：N = 4，M = 5
 > ![](img/ea4cbf1a86578ef8edb9e1d02a3ee707.png)
-> **输出：** 3
+> **输出**：3
 > 定向路径 1- > 3- > 2 -> 4
 > 
-> **输入：** N = 5，M = 8
+> **输入**：N = 5，M = 8
 > ![](img/3ab0d1f8a45f5a4bdaa8e06d1aed288d.png)
-> **输出：** 3
+> **输出**：3
 
-**简单方法：**天真的方法是使用 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 计算来自每个节点的最长路径的长度。
+**简单方法**：天真的方法是使用 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 计算来自每个节点的最长路径的长度。
 
 该方法的时间复杂度为 O（N <sup>2</sup> ）。
 
 **有效方法**：一种有效方法是一起使用[动态编程](http://www.geeksforgeeks.org/dynamic-programming/)和 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 在图中找到最长路径。
 
-令 **dp [i]** 为从节点 **i** 开始的最长路径的长度。 最初 dp 的所有位置均为 0。我们可以从每个节点调用 DFS 函数，并遍历其所有子节点。 递归公式将是：
+令 **dp [i]** 为从节点`i`开始的最长路径的长度。 最初 dp 的所有位置均为 0。我们可以从每个节点调用 DFS 函数，并遍历其所有子节点。 递归公式将是：
 
 > **dp [node] = max（dp [node]，1 + max（dp [child1]，dp [child2]，dp [child3 ...）））**
 
@@ -393,8 +393,8 @@ class GFG
 
 ```
 
-**时间复杂度：** O（N）
-**辅助空间：** O（N）
+**时间复杂度**：O（N）
+**辅助空间**：O（N）
 
 
 

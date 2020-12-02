@@ -6,7 +6,7 @@
 
 考虑一个具有行和列的矩阵，其中每个单元格包含“ 0”或“ 1”，而任何包含 1 的单元格都称为填充单元格。 如果两个单元在水平，垂直或对角线上彼此相邻，则称为已连接。 如果还连接了一个或多个填充单元，则它们将形成一个区域。 找到最大区域的长度。
 
-**示例：**
+**示例**：
 
 ```
 Input : M[][5] = { 0 0 1 1 0
@@ -33,7 +33,7 @@ other as 4\. So largest region: 4
 
 **<u>解决方案：</u>** 这个想法是基于问题或[在布尔 2D 矩阵中发现孤岛数](https://www.geeksforgeeks.org/find-number-of-islands/)
 
-**方法：**
+**方法**：
 
 1.  2D 矩阵中的一个单元最多可以连接 8 个邻居。
 2.  因此，在 DFS 中，对该单元的 8 个邻居进行递归调用。
@@ -450,11 +450,11 @@ class GFG
 6
 ```
 
-**复杂度分析：**
+**复杂度分析**：
 
-*   **时间复杂度：** O（ROW * COL）。
+*   **时间复杂度**：O（ROW * COL）。
     在最坏的情况下，将访问所有单元，因此时间复杂度为 O（ROW * COL）。
-*   **辅助空间：** O（ROW * COL）。
+*   **辅助空间**：O（ROW * COL）。
     要存储访问的节点，需要 O（ROW * COL）空间。
 
 本文由 [**Nishant Singh**](https://practice.geeksforgeeks.org/user-profile.php?user=_code) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

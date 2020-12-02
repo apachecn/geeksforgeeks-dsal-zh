@@ -4,7 +4,7 @@
 
 [Floyd Warshall 算法](http://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm)用于解决全对最短路径问题。 问题是在给定的边缘加权有向图中找到每对顶点之间的最短距离。
 
-**示例：**
+**示例**：
 
 ```
 Input:

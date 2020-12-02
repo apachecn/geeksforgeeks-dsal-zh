@@ -4,25 +4,25 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-value-of-distance-of-farthest-node-in-a-graph/](https://www.geeksforgeeks.org/minimum-value-of-distance-of-farthest-node-in-a-graph/)
 
-给定一个无环无向图，它具有 2D [数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr [] []** 形式的 **N 个**节点和 **N-1 个**边缘。 其每行由两个数字 **L 和 R** 组成，表示 **L 和 R** 之间的边缘。 对于树中的每个节点 **X** ，令 **dis（X）**表示从 **X** 到最远节点的边数。 任务是找到给定图的 **dis（x）**的最小值。
+给定一个无环无向图，它具有 2D [数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr [] []** 形式的 **N 个**节点和 **N-1 个**边缘。 其每行由两个数字 **L 和 R** 组成，表示 **L 和 R** 之间的边缘。 对于树中的每个节点`X`，令 **dis（X）**表示从`X`到最远节点的边数。 任务是找到给定图的 **dis（x）**的最小值。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 6，arr [] [] = {{1，4}，{2，3}，{3，4}，{4，5}，{5，6}}
-> **输出：** 2
-> **说明：**
+> **输入**：N = 6，arr [] [] = {{1，4}，{2，3}，{3，4}，{4，5}，{5，6}}
+> **输出**：2
+> **说明**：
 > 下图是来自上述信息的图形：
 > [![](img/fc16f9c3fc5220964c13895ca1fa15e9.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200327091323/DFSTraversal.jpg) 
 > 从上图可以看到，距顶点 0 最远的节点位于距离 3 处。通过对图中所有节点重复进行 DFS 遍历，我们可以得出从源节点到最远节点的最大 distance []为：
 > distance [ ] = {3，4，3，2，3，4}，距离的最小值是必需的结果。
 > 
-> **输入：** N = 6，arr [] [] = {{1，2}，{1，3}，{1，4}，{2，5}，{2，6}} [
-> **输出：** 2
-> **说明：**
+> **输入**：N = 6，arr [] [] = {{1，2}，{1，3}，{1，4}，{2，5}，{2，6}} [
+> **输出**：2
+> **说明**：
 > 上图从每个节点到最远节点的 distance []为：
 > distance [] = {3 ，4，3，2，3，4}，距离的最小值为 1。
 
-**方法：**
+**方法**：
 的想法是使用 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)解决此问题。 步骤如下：
 
 1.  对于任何节点（例如**或**），都使用 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)遍历图，节点自身的距离为 0。

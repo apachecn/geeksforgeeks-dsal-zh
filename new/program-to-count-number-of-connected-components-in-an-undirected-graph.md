@@ -4,19 +4,19 @@
 
 > 原文： [https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)
 
-给定无向图 **g** ，任务是打印图中的连接组件数。
+给定无向图`g`，任务是打印图中的连接组件数。
 
-**示例：**
+**示例**：
 
-> **输入：**
+> **输入**：
 > 
 > ![](img/2feb9cd1e65ab689e267091dda45f117.png)
 > 
-> **输出：** 3
+> **输出**：3
 > 连接了三个组件：
 > 1 – 5、0 – 2 – 4 和 3
 
-**方法：**的想法是使用变量**计数**存储连接的组件数，并执行以下步骤：
+**方法**：的想法是使用变量**计数**存储连接的组件数，并执行以下步骤：
 
 1.  将所有顶点初始化为未访问。
 2.  对于所有顶点，检查是否尚未访问顶点，然后在该顶点上执行 DFS，并将变量**计数**递增 1。

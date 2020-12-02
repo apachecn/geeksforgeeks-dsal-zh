@@ -2,28 +2,28 @@
 
 > 原文： [https://www.geeksforgeeks.org/conversion-of-an-undirected-graph-to-a-directed-euler-circuit/](https://www.geeksforgeeks.org/conversion-of-an-undirected-graph-to-a-directed-euler-circuit/)
 
-给定具有 **V** 个节点（例如，从 1 到 V 编号）和 **E** 边的无向图，任务是检查该图是否为[欧拉图](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)或 如果不是，则将其转换为定向欧拉电路。
+给定具有`V`个节点（例如，从 1 到 V 编号）和`E`边的无向图，任务是检查该图是否为[欧拉图](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)或 如果不是，则将其转换为定向欧拉电路。
 
 > **有向欧拉电路**是有向图，这样，如果您开始从任何节点遍历该图并精确地穿过每个边，那么您将最终到达起始节点。
 
-**注意：**在遍历欧拉电路时，每个边沿均精确遍历一次。 如果需要，可以多次遍历一个节点，但是不能多次遍历一条边。
+**注意**：在遍历欧拉电路时，每个边沿均精确遍历一次。 如果需要，可以多次遍历一个节点，但是不能多次遍历一条边。
 
-**示例：**
+**示例**：
 
-> **输入：**
+> **输入**：
 > [![](img/120e2b96fb0e6cad934ddda1856785cd.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200504214719/in3.jpg) 
-> **输出：**
+> **输出**：
 > 1 2
 > 2 5
 > 5 1
 > 2 4
 > 4 3
 > 3 2
-> **说明：**
+> **说明**：
 > 给定无向图的有向欧拉电路将为：
 > [![](img/a1be838ecd27d7d986d42b3ab13061bc.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200504214717/out7.jpg)
 
-**方法：**
+**方法**：
 
 1.  First, we need to make sure the [given Undirected Graph is Eulerian or not](https://www.geeksforgeeks.org/eulerian-path-and-circuit/). If the undirected graph is not Eulerian we cannot convert it to a Directed Eulerian Graph.
     *   要检查它，我们只需要计算每个节点的度数即可。 如果所有节点的**度**为**甚至**且不等于 0，则该图为欧拉式。
@@ -157,8 +157,8 @@ int main()
 
 ```
 
-***时间复杂度：** O（（V + E）* log（E））
-**空间复杂度：** O（max（V，E））*
+***时间复杂度**：O（（V + E）* log（E））
+**空间复杂度**：O（max（V，E））*
 
 
 

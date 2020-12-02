@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/traveling-salesman-problem-using-genetic-algorithm/](https://www.geeksforgeeks.org/traveling-salesman-problem-using-genetic-algorithm/)
 
-**先决条件：** [遗传算法](https://www.geeksforgeeks.org/genetic-algorithms/)，[旅行商问题](https://www.geeksforgeeks.org/traveling-salesman-problem-tsp-implementation/)
+**先决条件**：[遗传算法](https://www.geeksforgeeks.org/genetic-algorithms/)，[旅行商问题](https://www.geeksforgeeks.org/traveling-salesman-problem-tsp-implementation/)
 
 在本文中，提出了一种遗传算法来解决[旅行商问题](https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/)。
 
@@ -18,11 +18,11 @@
 
 可以实施这些算法来找到各种优化问题的解决方案。 这样的问题之一就是[旅行商问题](https://www.geeksforgeeks.org/traveling-salesman-problem-tsp-implementation/)。 问题是推销员得到了一组城市，他必须找到最短的路线，以至于只访问一次每个城市并返回起始城市。
 
-**方法：**在以下实现中，将城市作为基因，使用这些字符生成的字符串称为染色体，而将适合度得分等于所提到的所有城市的路径长度作为目标 人口。
+**方法**：在以下实现中，将城市作为基因，使用这些字符生成的字符串称为染色体，而将适合度得分等于所提到的所有城市的路径长度作为目标 人口。
 
 适合度得分定义为基因描述的路径的长度。 路径长度更合适的是基因。 基因库中所有基因的优胜劣汰在群体测试中幸存下来，并进行下一次迭代。 迭代次数取决于冷却变量的值。 冷却变量的值随着每次迭代而不断减小，并在一定数量的迭代后达到阈值。
 
-**算法：**
+**算法**：
 
 ```
 1\. Initialize the population randomly.

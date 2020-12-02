@@ -4,21 +4,21 @@
 
 > 原文： [https://www.geeksforgeeks.org/find-the-maximum-component-size-after-addition-of-each-edge-to-the-graph/](https://www.geeksforgeeks.org/find-the-maximum-component-size-after-addition-of-each-edge-to-the-graph/)
 
-给定一个数组 **arr [] []** ，该数组包含要用来构造具有 **N** 个节点的无向​​图 **G** 的图的边， 在构造图形时，在添加每个边后找到图形中的最大组件尺寸。
-**范例：**
+给定一个数组 **arr [] []** ，该数组包含要用来构造具有`N`个节点的无向​​图`G`的图的边， 在构造图形时，在添加每个边后找到图形中的最大组件尺寸。
+**范例**：
 
-> **输入：** N = 4，arr [] [] = {{1，2}，{3，4}，{2，3}}
-> **输出：** 2 2 4
-> **说明：**
+> **输入**：N = 4，arr [] [] = {{1，2}，{3，4}，{2，3}}
+> **输出**：2 2 4
+> **说明**：
 > 最初，图形具有 4 个单独的节点 1、2、3 和 4。
 > 添加第一个边后：1 – 2、3、4->最大组件大小= 2
 > 添加第二个边缘后：1 – 2，3 – 4->最大组件大小= 2
 > 添加第三个边缘后：1 – 2 – 3 – 4 ->最大组件大小= 4
 > 
-> **输入：** N = 4，arr [] [] = {{2，3}，{1，2}，{1，5}，{2，4}}
-> **输出 ：** 2 3 4 5
+> **输入**：N = 4，arr [] [] = {{2，3}，{1，2}，{1，5}，{2，4}}
+> **输出 **：2 3 4 5
 
-**朴素方法：**针对此问题的朴素方法是依次添加边缘，并在每个步骤应用[深度优先搜索算法以找到最大分量的大小。](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)
+**朴素方法**：针对此问题的朴素方法是依次添加边缘，并在每个步骤应用[深度优先搜索算法以找到最大分量的大小。](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)
 
 下面是上述方法的实现：
 
@@ -245,9 +245,9 @@ public static void Main(string[] args)
 
 ```
 
-**时间复杂度：** *O（| E | * N）*
+**时间复杂度**：*O（| E | * N）*
 
-**高效方法：**的想法是使用[不交集（按秩和路径压缩合并）](https://www.geeksforgeeks.org/disjoint-set-data-structures/)的概念来更有效地解决该问题。
+**高效方法**：的想法是使用[不交集（按秩和路径压缩合并）](https://www.geeksforgeeks.org/disjoint-set-data-structures/)的概念来更有效地解决该问题。
 
 *   每个节点最初在其内部都是不相交的集合。 随着边缘的添加，不相交的集合会合并在一起，形成更大的分量。 在不相交集合的实现中，我们将基于组件的大小来建立排名系统，即在执行两个组件的合并时，将较大的组件根作为合并操作之后的最终根。
 *   在每次添加边后找到最大大小分量的一种方法是遍历大小数组（size [i]表示节点'i'所属的分量的大小），但这在图中的节点数较少时效率很低 高。
@@ -398,7 +398,7 @@ int main()
 
 ```
 
-**时间复杂度：** *O（| E | * log（N））*
+**时间复杂度**：*O（| E | * log（N））*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

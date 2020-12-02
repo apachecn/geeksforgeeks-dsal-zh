@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/all-topological-sorts-of-a-directed-acyclic-graph/](https://www.geeksforgeeks.org/all-topological-sorts-of-a-directed-acyclic-graph/)
 
-对 **D** 相连的**的拓扑排序**循环 **G** raph（DAG）是顶点的线性排序，使得对于每个有向边 uv，顶点 u 都位于 v in 之前 订购。 如果图形不是 DAG，则无法对图形进行拓扑排序。
+对`D`相连的**的拓扑排序**循环`G`raph（DAG）是顶点的线性排序，使得对于每个有向边 uv，顶点 u 都位于 v in 之前 订购。 如果图形不是 DAG，则无法对图形进行拓扑排序。
 
 给定 DAG，打印图形的所有拓扑类型。
 

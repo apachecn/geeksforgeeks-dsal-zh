@@ -13,7 +13,7 @@
 1.  一条边被添加到图形中。
 2.  关于两个节点 x 和 y 的信息，无论它们是否在相同的连接组件中。
 
-**示例：**
+**示例**：
 
 ```
 Input : V = 7
@@ -497,11 +497,11 @@ Yes
 
 ```
 
-**时间复杂度：**
+**时间复杂度**：
 
 每个操作的摊销时间复杂度为 O（alpha（n）），其中 alpha 是[逆阿克曼函数](https://en.wikipedia.org/wiki/Ackermann_function#Inverse)，几乎是恒定的。
 
-**参考：**
+**参考**：
 [https://en.wikipedia.org/wiki/Dynamic_connectivity](https://en.wikipedia.org/wiki/Dynamic_connectivity)
 
 本文由 **Ayush Jha** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

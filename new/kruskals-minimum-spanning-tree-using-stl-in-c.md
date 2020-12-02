@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-using-stl-in-c/](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-using-stl-in-c/)
 
-给定一个无向，连通和加权的图，请使用 Kruskal 算法找到图的 **M** 最小 **S** 平移 **T** ree（MST）。
+给定一个无向，连通和加权的图，请使用 Kruskal 算法找到图的`M`最小`S`平移`T`ree（MST）。
 
 ```
 ![](img/576b7bbdf820c1b3c849c6d34f16d7b4.png "Fig-1")
@@ -48,7 +48,7 @@ Note :  There are two possible MSTs, the other
 2.  使用内置的 [std :: sort](https://www.geeksforgeeks.org/sort-c-stl/) 以非降序对边进行排序； 默认情况下，sort 函数以非降序排序。
 3.  我们使用[联合查找算法](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)来检查当前边是否已添加到当前 MST 中，它是否构成了一个循环。 如果是，则将其丢弃，否则将其包含（联合）。
 
-**伪代码：**
+**伪代码**：
 
 ```
 // Initialize result
@@ -252,10 +252,10 @@ int main()
           Weight of MST is 37
 ```
 
-**优化：**
+**优化**：
 上面的代码可以优化，以在所选边的数量变为 V-1 时停止 Kruskal 的主循环。 我们知道 MST 具有 V-1 边缘，并且在选择 V-1 边缘后没有点迭代。 我们没有添加此优化来使代码保持简单。
 
-**参考：**
+**参考**：
 [Cormen Leiserson Rivest and Stein（CLRS）3 的算法简介](http://www.amazon.in/Introduction-Algorithms-Thomas-H-Cormen/dp/8120340078/ref=sr_1_1?ie=UTF8&qid=1459619144&sr=8-1&keywords=clrs)
 
 时间复杂度和逐步说明已在[上一篇有关 Kruskal 算法的文章中进行了讨论。](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)

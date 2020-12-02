@@ -2,22 +2,22 @@
 
 > 原文： [https://www.geeksforgeeks.org/count-of-root-to-leaf-paths-consisting-of-at-most-m-consecutive-nodes-having-value-k/](https://www.geeksforgeeks.org/count-of-root-to-leaf-paths-consisting-of-at-most-m-consecutive-nodes-having-value-k/)
 
-以 [**二叉树**](https://www.geeksforgeeks.org/binary-tree-data-structure/) 的形式给出 [**无环无向图**](https://www.geeksforgeeks.org/detect-cycle-undirected-graph/) ，其根在顶点 **1** 和值 在每个由数组 **arr []** 表示的顶点 **[1，N]** 上，任务是找到根到叶路径的数量，这些路径最多包含 m 个连续节点，其值[ **K** 。
+以 [**二叉树**](https://www.geeksforgeeks.org/binary-tree-data-structure/) 的形式给出 [**无环无向图**](https://www.geeksforgeeks.org/detect-cycle-undirected-graph/) ，其根在顶点`1`和值 在每个由数组 **arr []** 表示的顶点 **[1，N]** 上，任务是找到根到叶路径的数量，这些路径最多包含 m 个连续节点，其值[`K`。
 
-**示例：**
+**示例**：
 
-> **输入：** arr [] = {1，0，1，0，0，1，0}，K = 1，M = 2
+> **输入**：arr [] = {1，0，1，0，0，1，0}，K = 1，M = 2
 > 
 > [![](img/d4f2e05c609cdaffe191a439229f5352.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200811021757/gfgimg1-660x495.png)
 > 
-> **输出：** 3
-> **说明：**
+> **输出**：3
+> **说明**：
 > 路径 1：1-> 2-> 4 包含最多 1 个连续的 K。
 > 路径 2-1：- > 2-> 5 包含最多 1 个连续的 K
 > 路径 3：1-> 3-> 6 包含最多 3 个连续的 K。
 > 路径 4：1-> 3-> 7 最多包含 2 个连续 K。
 > 由于 M 的给定值为 2，因此有 3 条路径包含最多 2 个连续 K。
-> **输入：** arr [] = {2， 1，3，2，1，2，1，4，4，3，5，2}，K = 2，M = 2
+> **输入**：arr [] = {2， 1，3，2，1，2，1，4，4，3，5，2}，K = 2，M = 2
 > 
 > ```
 >             2
@@ -30,15 +30,15 @@
 > 
 > ```
 > 
-> **输出：** 3
+> **输出**：3
 
-**方法：**
+**方法**：
 可以使用 [**深度优先搜索**](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 方法解决问题：
 
 *   深度优先搜索可用于从根顶点遍历所有路径。
-*   每当当前节点的值是 **K** 时，就增加**计数**。
-*   否则，将**计数**设置为 **0** 。
-*   如果**计数**超过 **M** ，则返回。
+*   每当当前节点的值是`K`时，就增加**计数**。
+*   否则，将**计数**设置为`0`。
+*   如果**计数**超过`M`，则返回。
 *   否则，遍历其相邻节点并重复上述步骤。
 *   最后，打印获得的**计数**的值。
 
@@ -443,8 +443,8 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（V + E）*
-***辅助空间：** O（V）*
+***时间复杂度**：O（V + E）*
+***辅助空间**：O（V）*
 
 
 

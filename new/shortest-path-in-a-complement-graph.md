@@ -8,16 +8,16 @@
 
 > **补图**是一个图形，它仅包含原始图形中不存在的那些边。
 
-**示例：**
+**示例**：
 
-> **输入：**无向边=（1、2），（1、3），（3、4），（3、5），开始= 1
-> **输出：** 0 2 3 1 1
-> **解释：**
-> **原始图形：**
+> **输入**：无向边=（1、2），（1、3），（3、4），（3、5），开始= 1
+> **输出**：0 2 3 1 1
+> **解释**：
+> **原始图形**：
 > 
 > [![](img/522b2856f61edfe04e42b3163814a88d.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200701031811/GFG136.jpg)
 > 
-> **补图：** [
+> **补图**：[
 > 
 > [![](img/339417245e6c943c68922ccb0bff1cfc.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200701032219/Untitled-drawing48-3.jpg)
 > 
@@ -28,11 +28,11 @@
 > 1 至 4 = 1，
 > 1 至 5 = 1
 
-**天真的方法：**一个简单的解决方案是创建补图，并在该图上使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)来查找到所有节点的距离。
+**天真的方法**：一个简单的解决方案是创建补图，并在该图上使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)来查找到所有节点的距离。
 
- ***时间复杂度：** O（n <sup>2</sup> ）用于创建补图，而 O（n + m）用于广度优先搜索。
+ ***时间复杂度**：O（n <sup>2</sup> ）用于创建补图，而 O（n + m）用于广度优先搜索。
 
-**高效方法：**的想法是使用**改进的广度优先搜索**来计算答案，然后无需构造补图。
+**高效方法**：的想法是使用**改进的广度优先搜索**来计算答案，然后无需构造补图。
 
 *   对于每个顶点或节点，减小顶点的距离，该距离是当前顶点的补充，尚未被发现。
 *   对于这个问题，我们必须观察到，如果图是稀疏的，那么未发现的节点将被非常快速地访问。
@@ -334,8 +334,8 @@ public static void main(String[] args) 
 
 ```
 
-***时间复杂度：** O（V + E）*
-***辅助空间：** O（V）*
+***时间复杂度**：O（V + E）*
+***辅助空间**：O（V）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

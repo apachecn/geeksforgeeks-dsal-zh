@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/add-and-remove-vertex-in-adjacency-list-representation-of-graph/](https://www.geeksforgeeks.org/add-and-remove-vertex-in-adjacency-list-representation-of-graph/)
 
-**先决条件：** [链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，[图形数据结构](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+**先决条件**：[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)，[图形数据结构](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
 
 在本文中，将以给定的邻接表表示形式讨论添加和删除顶点。
 
@@ -16,9 +16,9 @@
 
 [![](img/ea409aaf911e201e5a0681c4f239d8fe.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200205134219/Untitled-Diagram72.png)
 
-它是[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)表示形式，其中链表的头是图中的一个顶点，所有连接的节点都是第一个顶点所连接到的顶点。 例如，从图中可以清楚地看出，顶点 **0** 连接到顶点 **4** ， **3** 和 **1** 。 在邻接列表（或链接列表）表示中表示相同。
+它是[链表](http://www.geeksforgeeks.org/data-structures/linked-list/)表示形式，其中链表的头是图中的一个顶点，所有连接的节点都是第一个顶点所连接到的顶点。 例如，从图中可以清楚地看出，顶点`0`连接到顶点`4`，`3`和`1`。 在邻接列表（或链接列表）表示中表示相同。
 
-**方法：**
+**方法**：
 
 *   **Adding a Vertex in the Graph:** To add a vertex in the graph, the adjacency list can be iterated to the place where the insertion is required and the new node can be created using linked list implementation. For example, if 5 needs to be added between vertex 2 and vertex 3 such that vertex 3 points to vertex 5 and vertex 5 points to vertex 2, then a new edge is created between vertex 5 and vertex 3 and a new edge is created from vertex 5 and vertex 2\. After adding the vertex, the adjacency list changes to:
     [![](img/a41d00ebf877564af49f853196be553b.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200205134547/Untitled-Diagram-232.png)

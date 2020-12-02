@@ -280,18 +280,18 @@ function countwalks( $graph, $u, $v, $k)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 2
 
 ```
 
-**复杂度分析：**
+**复杂度分析**：
 
-*   **时间复杂度：** O（V <sup>k</sup> ）。
+*   **时间复杂度**：O（V <sup>k</sup> ）。
     上述函数的最坏情况下的时间复杂度是 O（V <sup>k</sup> ），其中 V 是给定图中顶点的数量。 我们可以通过绘制递归树来简单地分析时间复杂度。 最坏的情况发生在完整的图形上。 在最坏的情况下，递归树的每个内部节点将恰好具有 n 个子节点。
-*   **辅助空间：** O（V）。
+*   **辅助空间**：O（V）。
     要存储堆栈空间，需要访问数组 O（V）空间。
 
 **<u>有效方法：</u>** 可以使用 [**动态编程**](https://www.geeksforgeeks.org/dynamic-programming-set-1/) 优化解决方案。 这个想法是建立一个 3D 表，其中第一维是源，第二维是目标，第三维是从源到目标的边数，其值是走数。 像其他[动态编程问题](https://www.geeksforgeeks.org/tag/dynamic-programming/)一样，以自下而上的方式填充 3D 表。
@@ -574,18 +574,18 @@ class GFG {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 2
 
 ```
 
-**复杂度分析：**
+**复杂度分析**：
 
-*   **时间复杂度：** O（V <sup>3</sup> ）。
+*   **时间复杂度**：O（V <sup>3</sup> ）。
     需要三个嵌套循环来填充 DP 表，因此时间复杂度为 O（V <sup>3 / sup >）。</sup>
-*   **辅助空间：** O（V <sup>3</sup> ）。
+*   **辅助空间**：O（V <sup>3</sup> ）。
     要存储 DP 表，需要 O（V <sup>3</sup> ）空间。
 
 我们也可以使用 [**分而治之**](https://www.geeksforgeeks.org/divide-and-conquer-set-1-find-closest-pair-of-points/) 在 O（V <sup>3</sup> Logk）时间内解决上述问题。 从 u 到 v 的长度为 k 的步数是（graph [V] [V]） <sup>k</sup> 中的第[u] [v]个条目。 我们可以通过使用[分治法来计算 O [Logk）乘积来计算功率](https://www.geeksforgeeks.org/write-a-c-program-to-calculate-powxn/)。 两个大小为 V x V 的矩阵相乘需要 O（V [HT [G10] 3] ）时间。

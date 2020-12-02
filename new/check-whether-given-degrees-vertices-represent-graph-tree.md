@@ -4,7 +4,7 @@
 
 给定顶点数和每个顶点的阶数，其中顶点数为 1、2、3，... n。 任务是识别它是图还是树。 可以假定该图形已连接。
 
-**示例：**
+**示例**：
 
 ```
 Input : 5
@@ -36,7 +36,7 @@ Output : Graph
 2.  树没有 **n-1** 边，而图没有这种约束。
 3.  假设输入图已连接。 我们至少需要 n-1 个边来连接 n 个节点。
 
-如果我们取所有度的总和，则每个边将被计数两次。 因此，对于具有 **n** 个顶点和 **n – 1** 边的树，所有度数之和应为 **2 *（n – 1）**。 有关详细信息，请参考[握手引理](https://www.geeksforgeeks.org/handshaking-lemma-and-interesting-tree-properties/)。
+如果我们取所有度的总和，则每个边将被计数两次。 因此，对于具有`n`个顶点和 **n – 1** 边的树，所有度数之和应为 **2 *（n – 1）**。 有关详细信息，请参考[握手引理](https://www.geeksforgeeks.org/handshaking-lemma-and-interesting-tree-properties/)。
 
 因此，基本上我们需要检查所有度的和是否为 2 *（n-1）或否。
 

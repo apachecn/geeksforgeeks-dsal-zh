@@ -3,7 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/minimum-cost-path-left-right-bottom-moves-allowed/](https://www.geeksforgeeks.org/minimum-cost-path-left-right-bottom-moves-allowed/)
 
 给定一个二维网格，该网格的每个像元都包含整数成本，代表通过该像元所要经过的成本，我们需要找到一条从左上角像元到右下角像元的路径，从而使总成本最小。
-**注意：**假定在输入矩阵中不存在负成本周期。
+**注意**：假定在输入矩阵中不存在负成本周期。
 此问题是以下问题的扩展。
 [允许最小和最小移动的最小成本路径。](https://www.geeksforgeeks.org/dynamic-programming-set-6-min-cost-path/)
 在先前的问题中，只允许向右和向底部移动，但是在此问题中，我们被允许从底部，向上，向右和向左移动，即沿所有四个方向移动。
@@ -295,7 +295,7 @@ throws IOException
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 327

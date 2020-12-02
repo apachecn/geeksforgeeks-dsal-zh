@@ -4,25 +4,25 @@
 
 > 原文： [https://www.geeksforgeeks.org/construct-a-graph-which-does-not-contain-any-pair-of-adjacent-nodes-with-same-value/](https://www.geeksforgeeks.org/construct-a-graph-which-does-not-contain-any-pair-of-adjacent-nodes-with-same-value/)
 
-给定由 **N** 个字符组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是生成 **N** 的[图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/) 节点和**（N – 1）**边，使得每个节点 **i** 与字符 **arr [i]** 关联，并且没有两个相邻节点具有相同的值。 如果可以制作这样的图形，请打印**“可能”** 以及成对的边。 否则，打印**“不可能”** 。
+给定由`N`个字符组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是生成`N`的[图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/) 节点和**（N – 1）**边，使得每个节点`i`与字符 **arr [i]** 关联，并且没有两个相邻节点具有相同的值。 如果可以制作这样的图形，请打印**“可能”** 以及成对的边。 否则，打印**“不可能”** 。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 5，arr [] = {'a'，'b'，'a'，'b'，'c'}
-> **输出：**“可能 ”
+> **输入**：N = 5，arr [] = {'a'，'b'，'a'，'b'，'c'}
+> **输出**：“可能 ”
 > 1 – 2
 > 1 – 4
 > 1 – 5
 > 5 – 3
-> **说明：**
+> **说明**：
 > 可以构造为满足给定值的一种可能的图 条件如下：
 > 
 > ![](img/46aba9370c10c4a45a7ee135be648621.png)
 > 
-> **输入：** N = 3，arr [] = {“ z”，“ z”，“ z”}
-> **输出：**“不可能”
+> **输入**：N = 3，arr [] = {“ z”，“ z”，“ z”}
+> **输出**：“不可能”
 
-**方法：**要构造一个图，以使没有相邻节点具有相同的值，其想法是检查至少**两个唯一值**是否存在。 如果发现是真实的，则可以构造这样的图。 请按照以下步骤操作：
+**方法**：要构造一个图，以使没有相邻节点具有相同的值，其想法是检查至少**两个唯一值**是否存在。 如果发现是真实的，则可以构造这样的图。 请按照以下步骤操作：
 
 *   检查每个节点上是否存在所有值，并且如果所有节点值都与**相同**相同，则无法**来构建图形。**
 *   如果任何两个值**不同**，总会有一种方法来构造这样的图。
@@ -514,8 +514,8 @@ Possible
 
 ```
 
-***时间复杂度：** O（N）*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N）*
+***辅助空间**：O（N）*
 
 
 

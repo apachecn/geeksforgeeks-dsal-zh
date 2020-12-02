@@ -24,7 +24,7 @@ The following is simple idea of Ford-Fulkerson algorithm:
 3) Return flow.
 ```
 
-**时间复杂度：**上述算法的时间复杂度为 O（max_flow * E）。 我们在存在扩展路径的情况下运行循环。 在最坏的情况下，每次迭代可能会增加 1 个单位流。 因此，时间复杂度变为 O（max_flow * E）。
+**时间复杂度**：上述算法的时间复杂度为 O（max_flow * E）。 我们在存在扩展路径的情况下运行循环。 在最坏的情况下，每次迭代可能会增加 1 个单位流。 因此，时间复杂度变为 O（max_flow * E）。
 
 **如何实现以上简单算法？**
 让我们首先定义残差图的概念，这是理解实现所必需的。 流量网络的
@@ -534,10 +534,10 @@ The maximum possible flow is 23
 
 [Dinc 的最大流量算法。](https://www.geeksforgeeks.org/dinics-algorithm-maximum-flow/)
 
-**练习：**
+**练习**：
 修改以上实现，使其在 O（VE <sup>2</sup> ）时间内运行。
 
-**参考：**
+**参考**：
 [http://www.stanford.edu/class/cs97si/08-network-flow-problems.pdf](http://www.stanford.edu/class/cs97si/08-network-flow-problems.pdf)
 [算法导论 3 Clifford Stein，Thomas H. Cormen，Charles E. Leiserson 和 Ronald L. Rivest 撰写的版本](http://www.flipkart.com/introduction-algorithms-3rd/p/itmczynzhyhxv2gs?pid=9788120340077&affid=sandeepgfg)
 

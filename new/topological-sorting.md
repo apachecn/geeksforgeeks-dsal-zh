@@ -12,7 +12,7 @@
 
 在 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 中，我们打印一个顶点，然后递归调用其相邻顶点的 DFS。 在拓扑排序中，我们需要在相邻顶点之前打印顶点。 例如，在给定的图形中，顶点“ 5”应在顶点“ 0”之前打印，但与 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 不同，顶点“ 4”也应在顶点“ 0”之前打印。 因此拓扑排序不同于 DFS。 例如，所示图形的 DFS 为“ 5 2 3 1 0 4”，但这不是拓扑排序。
 
-**查找拓扑排序的算法：**
+**查找拓扑排序的算法**：
 
 我们建议首先查看 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 的实现。 我们可以修改 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 来找到图的拓扑排序。 在 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 中，我们从一个顶点开始，首先打印它，然后递归调用其相邻顶点的 DFS。 在拓扑排序中，我们使用临时堆栈。 我们不会立即打印顶点，而是先对其所有相邻顶点递归调用拓扑排序，然后将其推入堆栈。 最后，打印堆栈中的内容。 请注意，仅当顶点的所有相邻顶点（以及它们的相邻顶点等）已经在堆栈中时，才将其推入堆栈。
 
@@ -412,23 +412,23 @@ Following is a Topological Sort of the given graph
 
 ```
 
-**复杂度分析：**
+**复杂度分析**：
 
-*   **时间复杂度：** O（V + E）。
+*   **时间复杂度**：O（V + E）。
     上面的算法只是带有额外堆栈的 DFS。 因此，时间复杂度与 DFS 相同。
-*   **辅助空间：** O（V）。
+*   **辅助空间**：O（V）。
     堆栈需要额外的空间。
 
-**注意：**在这里，我们也可以使用向量代替堆栈。 如果使用矢量，则以相反顺序打印元素以进行拓扑排序。
+**注意**：在这里，我们也可以使用向量代替堆栈。 如果使用矢量，则以相反顺序打印元素以进行拓扑排序。
 
-**应用程序：**
+**应用程序**：
 拓扑排序主要用于根据作业之间的给定依赖性来调度作业。 在计算机科学中，这种类型的应用出现在指令调度，重新计算电子表格中的公式值时公式单元格评估的顺序，逻辑综合，确定要在 make 文件中执行的编译任务的顺序，数据序列化以及解析链接器中的符号依存关系[ [2](http://en.wikipedia.org/wiki/Topological_sorting) 。
 
-**相关文章：**
+**相关文章**：
 [Kahn 的拓扑排序算法](https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/)：另一种 O（V + E）算法。
 [有向无环图](https://www.geeksforgeeks.org/all-topological-sorts-of-a-directed-acyclic-graph/)的所有拓扑排序
 
-**参考：**
+**参考**：
 [http://www.personal.kent.edu/~rmuhamma/Algorithms/MyAlgorithms/GraphAlgor/topoSort.htm](http://www.personal.kent.edu/~rmuhamma/Algorithms/MyAlgorithms/GraphAlgor/topoSort.htm)
 [http：/ /en.wikipedia.org/wiki/Topological_sorting](http://en.wikipedia.org/wiki/Topological_sorting)
 如果发现不正确的内容，或者想分享有关上述主题的更多信息，请写评论

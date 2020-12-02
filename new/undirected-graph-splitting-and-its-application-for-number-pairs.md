@@ -35,7 +35,7 @@ int res = 1 + graph.GetAnswer();
 ```
 
 该解决方案受到近期相当艰难的“ [Germanium 2018 Codility Challenge](https://app.codility.com/programmers/task/max_not_present/) ”的启发，并获得了金牌。
-**主要思想：**
+**主要思想**：
 1.数字很大，但是我们需要从 1 到最后一个数字
 的连续序列，但是数字不能超过 10 万。 因此，最大可能实际上是 100 000，将其作为第一个假设
 2。基于相同的考虑，最大数不能大于 N（数量）

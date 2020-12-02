@@ -2,8 +2,8 @@
 
 > 原文： [https://www.geeksforgeeks.org/implementation-graph-javascript/](https://www.geeksforgeeks.org/implementation-graph-javascript/)
 
-在本文中，我们将在 JavaScript 中实现 [Graph 数据结构](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)。 图是一种非线性数据结构。 图 **G** 包含一组顶点 **V** 和一组边线 **E** 。 Graph 在计算机科学中有许多应用。
-**图基本上分为两大类：**
+在本文中，我们将在 JavaScript 中实现 [Graph 数据结构](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)。 图是一种非线性数据结构。 图`G`包含一组顶点`V`和一组边线`E`。 Graph 在计算机科学中有许多应用。
+**图基本上分为两大类**：
 
 *   **有向图（图）** –边缘具有方向的位置。
 *   **无向图** –边缘不代表任何有向图

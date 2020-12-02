@@ -2,9 +2,9 @@
 
 > 原文： [https://www.geeksforgeeks.org/maximum-difference-of-count-of-black-and-white-vertices-in-a-path-containing-vertex-v/](https://www.geeksforgeeks.org/maximum-difference-of-count-of-black-and-white-vertices-in-a-path-containing-vertex-v/)
 
-给定一棵具有 **N** 个顶点和 **N – 1** 边的树，其中顶点从 **0 到 N – 1** 编号，并且顶点 **V** 存在于树中。 假定树中的每个顶点具有分配给它的颜色，即**白色或黑色**，并且各个顶点的颜色由数组 **arr []** 表示。 任务是从包含给定顶点 **V** 的给定树的任何可能的子树中找到白色顶点数量和黑色顶点数量之间的最大差异。
+给定一棵具有`N`个顶点和 **N – 1** 边的树，其中顶点从 **0 到 N – 1** 编号，并且顶点`V`存在于树中。 假定树中的每个顶点具有分配给它的颜色，即**白色或黑色**，并且各个顶点的颜色由数组 **arr []** 表示。 任务是从包含给定顶点`V`的给定树的任何可能的子树中找到白色顶点数量和黑色顶点数量之间的最大差异。
 
-**示例：**
+**示例**：
 
 ```
 Input: V = 0,
@@ -45,7 +45,7 @@ Output: 1
 
 ```
 
-**方法：**的想法是使用[动态编程](http://www.geeksforgeeks.org/dynamic-programming/)的概念来解决此问题。
+**方法**：的想法是使用[动态编程](http://www.geeksforgeeks.org/dynamic-programming/)的概念来解决此问题。
 
 *   首先，为颜色阵列和白色创建向量，按 1，对于黑色，按-1。
 *   创建一个数组 dp []，以计算包含顶点 V 的某些子树中白色和黑色顶点数目之间的最大可能差。
@@ -479,7 +479,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** *O（N）*，其中 N 是树中的顶点数。
+**时间复杂度**：*O（N）*，其中 N 是树中的顶点数。
 
 
 

@@ -2,11 +2,11 @@
 
 > 原文： [https://www.geeksforgeeks.org/permutation-numbers-sum-two-consecutive-numbers-perfect-square/](https://www.geeksforgeeks.org/permutation-numbers-sum-two-consecutive-numbers-perfect-square/)
 
-**先决条件：** [哈密顿循环](https://www.geeksforgeeks.org/backtracking-set-7-hamiltonian-cycle/)
+**先决条件**：[哈密顿循环](https://www.geeksforgeeks.org/backtracking-set-7-hamiltonian-cycle/)
 
 给定一个整数 n（> = 2），找到一个从 1 到 n 的数字置换，使得该置换的两个连续数字之和是一个完美的平方。 如果无法进行这种排列，则打印“无解决方案”。
 
-**示例：**
+**示例**：
 
 ```
 Input : 17
@@ -22,12 +22,12 @@ Output : [2, 23, 13, 12, 24, 25, 11, 14, 22, 3, 1, 8,
 
 ```
 
-**方法：**
+**方法**：
 我们可以表示一个图，其中从 1 到 n 的数字是图的节点，并且如果（i + j）是理想正方形，则 ith 节点与第 j 个节点之间会有一条边。 然后我们可以搜索图中是否存在任何[哈密顿路径](https://www.geeksforgeeks.org/mathematics-euler-hamiltonian-paths/)。 如果存在至少一条路径，则我们打印一条路径，否则我们将打印“无解决方案”。
 
 ![square-sum](img/f650909de318656c59ff8a4c2324492e.png)
 
-**方法：**
+**方法**：
 
 ```
 1\. First list up all the perfect square numbers 
@@ -156,7 +156,7 @@ print(25, '->', hampath(25))
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 17 -> [16, 9, 7, 2, 14, 11, 5, 4, 12, 13, 3, 6, 10, 15, 1, 8, 17]
@@ -166,7 +166,7 @@ print(25, '->', hampath(25))
 
 ```
 
-**讨论：**
+**讨论**：
 这种回溯算法花费指数时间来找到哈密顿路径。 因此，该算法的时间复杂度是指数级的。
 在 hampath（n）函数的最后一部分中，如果我们只是打印路径而不是返回路径，则它将打印所有可能的汉密尔顿路径，即所有可能的表示形式。
 实际上，对于 n = 15，我们首先会得到这样的表示。对于 n < 15，没有表示。 对于 n = 18、19、20、21、22、24，也没有哈密顿路径。 对于其余的数字，效果很好。

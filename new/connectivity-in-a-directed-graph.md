@@ -392,15 +392,15 @@ Yes
 No
 ```
 
-**时间复杂度：**上述实现的时间复杂度与[深度优先搜索](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)相同，如果该图是使用邻接列表表示形式表示的，则为 O（V + E）。
+**时间复杂度**：上述实现的时间复杂度与[深度优先搜索](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)相同，如果该图是使用邻接列表表示形式表示的，则为 O（V + E）。
 
 **我们可以进一步改善吗？**
 上述方法需要两次遍历图。 我们可以使用 [Tarjan 的算法来查找图是否是强连通的，并使用](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/) [Tarjan 算法查找强连通的分量](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)。
 
-**练习：**
+**练习**：
 在上述算法中可以使用 BFS 代替 DFS 吗？ 参见[此](https://www.geeksforgeeks.org/check-given-directed-graph-strongly-connected-set-2-kosaraju-using-bfs/)。
 
-**参考：**
+**参考**：
 [http://www.ieor.berkeley.edu/~hochbaum/files/ieor266-2012.pdf](http://www.ieor.berkeley.edu/~hochbaum/files/ieor266-2012.pdf)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。

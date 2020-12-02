@@ -4,17 +4,17 @@
 
 > 原文： [https://www.geeksforgeeks.org/print-all-neigbour-nodes-within-distance-k/](https://www.geeksforgeeks.org/print-all-neigbour-nodes-within-distance-k/)
 
-给定一个 **N** 个节点， **E** 边缘，一个节点 **X** 和距离 **K** 的图形。 任务是打印距 **X** 距离 **K** 的所有节点。
+给定一个`N`个节点，`E`边缘，一个节点`X`和距离`K`的图形。 任务是打印距`X`距离`K`的所有节点。
 
-> **输入：**
+> **输入**：
 > ![](img/65b88bb626e719c2731da58538a65152.png)
 > 
-> **输出：** 4 5 2 7 3
+> **输出**：4 5 2 7 3
 > 
 > 节点 4 的距离 2 之内的 Neigbour 节点为：4 5 2 7 3
 
-**方法：**
-打印距离 **K** 或小于 **K** 的所有节点。 我们可以通过应用 [dfs](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 变体来做到这一点，该变体从必须打印距离的 K 节点直到距离 K。
+**方法**：
+打印距离`K`或小于`K`的所有节点。 我们可以通过应用 [dfs](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 变体来做到这一点，该变体从必须打印距离的 K 节点直到距离 K。
 
 ```
 dfs(K, node, -1, tree) 

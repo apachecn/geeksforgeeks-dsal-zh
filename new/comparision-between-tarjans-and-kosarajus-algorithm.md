@@ -4,9 +4,9 @@
 
 > 原文： [https://www.geeksforgeeks.org/comparision-between-tarjans-and-kosarajus-algorithm/](https://www.geeksforgeeks.org/comparision-between-tarjans-and-kosarajus-algorithm/)
 
-[**<u>Tarjan 算法</u>**](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/) **：** Tarjan 算法是一种有效的图形算法，可用于查找 [**强连接的组件 通过使用线性时间复杂度中仅使用一个**](https://www.geeksforgeeks.org/strongly-connected-components/) **[DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)的有向图中的** （ **SCC** ）。
+[**<u>Tarjan 算法</u>**](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/) ****：Tarjan 算法是一种有效的图形算法，可用于查找 [**强连接的组件 通过使用线性时间复杂度中仅使用一个**](https://www.geeksforgeeks.org/strongly-connected-components/) **[DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)的有向图中的** （ **SCC** ）。
 
-**工作：**
+**工作**：
 
 *   在节点上执行 DFS 遍历，以便在遇到强连接组件的子树时将其删除。
 *   然后分配两个值：
@@ -198,9 +198,9 @@ int main()
 
 ```
 
-[**<u>Kosaraju 的算法</u>**](https://www.geeksforgeeks.org/strongly-connected-components/) **：** Kosaraju 的算法也是[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 基于算法 用于在线性时间复杂度的有向图中找到 **SCC** 。 该算法的基本概念是，如果我们能够最初从顶点 **u** 开始到达顶点 **v** ，那么我们应该能够到达顶点 **u** ]从顶点 **v** ，开始，如果是这种情况，我们可以说并得出结论， **u** 和 **v** 的顶点是紧密相连的 ，它们位于紧密相连的子图中。
+[**<u>Kosaraju 的算法</u>**](https://www.geeksforgeeks.org/strongly-connected-components/) ****：Kosaraju 的算法也是[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 基于算法 用于在线性时间复杂度的有向图中找到 **SCC** 。 该算法的基本概念是，如果我们能够最初从顶点`u`开始到达顶点`v`，那么我们应该能够到达顶点`u`]从顶点`v`，开始，如果是这种情况，我们可以说并得出结论，`u`和`v`的顶点是紧密相连的 ，它们位于紧密相连的子图中。
 
-**工作：**
+**工作**：
 
 *   在给定的图形上执行 DFS 遍历，并跟踪每个节点的完成时间。 可以通过使用[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)来执行此过程。
 *   当在图形上运行 DFS 遍历的过程完成时，将源顶点放在堆栈上。 这样，完成时间最高的节点将位于堆栈的顶部。
@@ -397,10 +397,10 @@ int main()
 
 ```
 
-**<u>时间复杂度</u>：**
-Tarjan 算法和 Kosaraju 算法的时间复杂度为 **O（V + E）**，其中 **V** 表示一组顶点， **E** 表示图形的边集。 Tarjan 的算法的常数因子比 Kosaraju 的算法低得多。 在 Kosaraju 的算法中，图形的[遍历至少 2 次，因此常数因子可以是两倍。 在执行第二个 DFS 时，我们可以使用 Kosaraju 的算法打印正在进行的 **SCC** 。 在执行 Tarjan 算法时，找到 **SCC** 子树的头后，需要花费更多时间来打印 **SCC** 。](https://www.geeksforgeeks.org/algorithms-gq/graph-traversals-gq/)
+**<u>时间复杂度</u>**：
+Tarjan 算法和 Kosaraju 算法的时间复杂度为 **O（V + E）**，其中`V`表示一组顶点，`E`表示图形的边集。 Tarjan 的算法的常数因子比 Kosaraju 的算法低得多。 在 Kosaraju 的算法中，图形的[遍历至少 2 次，因此常数因子可以是两倍。 在执行第二个 DFS 时，我们可以使用 Kosaraju 的算法打印正在进行的 **SCC** 。 在执行 Tarjan 算法时，找到 **SCC** 子树的头后，需要花费更多时间来打印 **SCC** 。](https://www.geeksforgeeks.org/algorithms-gq/graph-traversals-gq/)
 
-**<u>总结</u>：**
+**<u>总结</u>**：
 两种方法具有相同的线性时间复杂度，但是 **SCC** 计算的技术或过程完全不同。 Tarjan 的方法仅取决于 **DFS** 中的节点记录来对图进行分区，而 Kosaraju 的方法在图上执行两个 DFS（如果要保持原始图不变，则执行 3 DFS），并且非常相似 查找图的拓扑排序的方法。
 
 

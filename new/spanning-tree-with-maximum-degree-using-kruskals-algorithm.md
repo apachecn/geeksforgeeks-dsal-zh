@@ -2,9 +2,9 @@
 
 > 原文： [https://www.geeksforgeeks.org/spanning-tree-with-maximum-degree-using-kruskals-algorithm/](https://www.geeksforgeeks.org/spanning-tree-with-maximum-degree-using-kruskals-algorithm/)
 
-给定由 **n** 个顶点和 **m** 边组成的无向非加权连通图。 任务是找到此图的任何生成树，以使所有顶点上的最大度数最大可能。 打印输出边的顺序无关紧要，边也可以反面打印，即（u，v）也可以打印为（v，u）。
+给定由`n`个顶点和`m`边组成的无向非加权连通图。 任务是找到此图的任何生成树，以使所有顶点上的最大度数最大可能。 打印输出边的顺序无关紧要，边也可以反面打印，即（u，v）也可以打印为（v，u）。
 
-**示例：**
+**示例**：
 
 ```
 Input:
@@ -40,9 +40,9 @@ Output:
 
 ```
 
-**先决条件：** [Kruskal 算法来查找最小生成树](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
+**先决条件**：[Kruskal 算法来查找最小生成树](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
 
-**方法：**可以使用 Kruskal 算法找到最小生成树来解决给定的问题。
+**方法**：可以使用 Kruskal 算法找到最小生成树来解决给定的问题。
 我们在图中找到了度数最大的顶点。 首先，我们将执行与该顶点有关的所有边的合并，然后执行普通的 Kruskal 算法。 这为我们提供了最佳的生成树。
 
 ## 爪哇

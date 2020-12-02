@@ -5,7 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/maximum-and-minimum-isolated-vertices-in-a-graph/](https://www.geeksforgeeks.org/maximum-and-minimum-isolated-vertices-in-a-graph/)
 
 给定图形的“ n”个顶点和“ m”个边。 找到图形中可能的孤立顶点的最小数量和最大数量。
-**范例：**
+**范例**：
 
 ```
 Input : 4 2

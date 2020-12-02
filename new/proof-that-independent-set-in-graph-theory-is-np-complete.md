@@ -2,12 +2,12 @@
 
 > 原文： [https://www.geeksforgeeks.org/proof-that-independent-set-in-graph-theory-is-np-complete/](https://www.geeksforgeeks.org/proof-that-independent-set-in-graph-theory-is-np-complete/)
 
-**前提：** [NP 完整性](https://www.geeksforgeeks.org/np-completeness-set-1/)和[独立集](https://en.wikipedia.org/wiki/Independent_set_(graph_theory))。
+**前提**：[NP 完整性](https://www.geeksforgeeks.org/np-completeness-set-1/)和[独立集](https://en.wikipedia.org/wiki/Independent_set_(graph_theory))。
 
-图 **G =（V，E）**的独立集 **S** 是一组顶点，使得 S 中没有两个顶点彼此相邻。 它由不相邻的顶点组成。
+图 **G =（V，E）**的独立集`S`是一组顶点，使得 S 中没有两个顶点彼此相邻。 它由不相邻的顶点组成。
 
-**问题：**给定一个图 G（V，E）和一个整数 k，问题是要确定该图是否包含大小为> = k 的一组独立顶点。
-**说明：**
+**问题**：给定一个图 G（V，E）和一个整数 k，问题是要确定该图是否包含大小为> = k 的一组独立顶点。
+**说明**：
 问题的一个实例是为此问题指定的输入。 独立集问题的一个实例是图 G（V，E）和一个正整数 k，问题是检查 G 中是否存在大小为 k 的独立集。由于 NP 完全问题的定义是 NP 和 NP 都难的问题，证明问题是 NP-Complete 的证明包括两部分：
 
 1.  问题本身在 NP 类中。
@@ -52,7 +52,7 @@
 ![](img/8b87a1b82133978cebe3a7faf8ad3ac4.png)
 因此，如果在 G’（互补图）中有大小为 k 的团簇，我们可以说在图形 G 中有一个独立的大小 k 集。 因此，独立集合问题的任何实例都可以简化为集团问题的实例。 因此，独立集合是 **NP-Hard。**
 
-**结论：**
+**结论**：
 *由于独立集问题既是 NP 又是 NP-Hard，因此它是一个 NP-完全问题。*
 
 

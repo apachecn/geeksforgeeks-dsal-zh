@@ -4,28 +4,28 @@
 
 > 原文： [https://www.geeksforgeeks.org/finding-shortest-path-between-any-two-nodes-using-floyd-warshall-algorithm/](https://www.geeksforgeeks.org/finding-shortest-path-between-any-two-nodes-using-floyd-warshall-algorithm/)
 
-给定**图**以及两个节点 **u** 和 **v** ，任务是使用 [Floyd Warshall 算法](http://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/)打印 u 和 v 之间的最短路径 ]。
+给定**图**以及两个节点`u`和`v`，任务是使用 [Floyd Warshall 算法](http://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/)打印 u 和 v 之间的最短路径 ]。
 
-**示例：**
+**示例**：
 
-> **输入：** u = 1，v = 3
+> **输入**：u = 1，v = 3
 > 
 > ![](img/d5ed1e28049e26e9af1d9f3d53692d97.png)
 > 
-> **输出：** 1-> 2-> 3
-> **说明：**
+> **输出**：1-> 2-> 3
+> **说明**：
 > 从 1 到 3 的最短路径是通过顶点 2，总成本为 3。
 > 第一边缘为 1-> 2，成本为 2，第二边缘为 2-> 3，成本为 1。
 > 
-> **输入：** u = 0，v = 2
+> **输入**：u = 0，v = 2
 > 
 > ![](img/d5ed1e28049e26e9af1d9f3d53692d97.png)
 > 
-> **输出：** 0-> 1-> 2
-> **说明：**
+> **输出**：0-> 1-> 2
+> **说明**：
 > 从 0 到 2 的最短路径是通过顶点 1，总成本= 5
 
-**方法：**
+**方法**：
 
 *   这里的主要思想是使用 matrix（2D array），如果最短路径对任何一对节点都发生更改，它将跟踪下一个要指向的节点。 最初，两个节点 u 和 v 之间的最短路径是 v（即 u-> v 的直接边）。
 *   Initialising the **Next** array
@@ -48,7 +48,7 @@
     }
 
     ```** 
-***   For constructing path using these nodes we’ll simply start looping through the node **u** while updating its value to next[u][v] until we reach node **v**.
+***   For constructing path using these nodes we’ll simply start looping through the node`u`while updating its value to next[u][v] until we reach node`v`.
 
     ```
     path = [u]

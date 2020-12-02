@@ -35,7 +35,7 @@
 
 上面的算法是近似的（2-2 / n），即对于给定的 n 个顶点图，它保证了该算法产生的解不超过优化解的比率。 还有更好的算法可以提供更好的比率。 有关更多详细信息，请参考以下参考。
 
-**参考：**
+**参考**：
 [www.cs.uu.nl/docs/vakken/an/teoud/an-steiner.ppt](http://www.cs.uu.nl/docs/vakken/an/teoud/an-steiner.ppt)
 
 本文由 **Shivam Gupta** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。

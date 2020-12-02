@@ -4,23 +4,23 @@
 
 给定一个无向，不加权的图，并以两个节点作为**源**和**目标**，任务是打印给定源与目标之间最短长度的所有路径。
 
-**示例：**
+**示例**：
 
-> **输入：**源= 0，目标= 5
+> **输入**：源= 0，目标= 5
 > [![](img/d2d0b41979bf3aec8fe8bdc821ca2b3d.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200623032006/ShortestPathEx-1.jpg) 
-> **输出：**
+> **输出**：
 > 0-> 1-> 3-> 5
 > 0-> 2-> 3-> 5
 > 0-> 1-> 4-> 5
-> **说明：**
+> **说明**：
 > 上述所有路径的长度均为 3，这是 0 到 5 之间的最短距离。
 > 
-> **输入：**源= 0，目标= 4
+> **输入**：源= 0，目标= 4
 > [![](img/55a397528bb33ac4c9accacc325c76a7.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200623032139/ShortestPathEx-2.jpg) 
-> **输出：**
+> **输出**：
 > 0-> 1-> 4
 
-**方法：**对图形执行[广度优先遍历（BFS）](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)。 步骤如下：
+**方法**：对图形执行[广度优先遍历（BFS）](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)。 步骤如下：
 
 1.  从源顶点开始 BFS 遍历。
 2.  在执行 BFS 时，存储到其他每个节点的最短距离，并为每个节点维护父向量。
@@ -188,8 +188,8 @@ int main()
 
 ```
 
-**时间复杂度：** *O（V + E）*其中 V 是顶点数，E 是边数。
-**辅助空间：** *O（V）*其中 V 是顶点数。
+**时间复杂度**：*O（V + E）*其中 V 是顶点数，E 是边数。
+**辅助空间**：*O（V）*其中 V 是顶点数。
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

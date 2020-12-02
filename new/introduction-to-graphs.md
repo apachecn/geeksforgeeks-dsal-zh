@@ -2,14 +2,14 @@
 
 > 原文： [https://www.geeksforgeeks.org/introduction-to-graphs/](https://www.geeksforgeeks.org/introduction-to-graphs/)
 
-[图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)由一组顶点（表示为 **V** ）和一组边缘（表示为 **E** ）组成。
+[图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)由一组顶点（表示为`V`）和一组边缘（表示为`E`）组成。
 
 > 该图由 G（E，V）表示。
 
 ## 图的组成
 
-1.  **顶点：**顶点是图形的基本单位。 有时，顶点也称为顶点或节点。 每个节点/顶点都可以标记或不标记。
-2.  **边：**边是绘制的或用于连接图形的两个节点。 它可以是有向图中节点的有序对。 边缘可以任何可能的方式连接任何两个节点。 没有规则。 有时，边缘也称为圆弧。 每个边缘都可以贴标签/不贴标签。
+1.  **顶点**：顶点是图形的基本单位。 有时，顶点也称为顶点或节点。 每个节点/顶点都可以标记或不标记。
+2.  **边**：边是绘制的或用于连接图形的两个节点。 它可以是有向图中节点的有序对。 边缘可以任何可能的方式连接任何两个节点。 没有规则。 有时，边缘也称为圆弧。 每个边缘都可以贴标签/不贴标签。
 
 [![](img/464bd0b5c3c104b6f118d44aa6c2000d.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630111809/graph18.jpg)
 
@@ -48,7 +48,7 @@
 7.  #### 正则图
 
     每个顶点的度等于该图的其他顶点的图。
-    假设每个顶点的度为 **K** ，则该图称为 **K-正则**。
+    假设每个顶点的度为`K`，则该图称为 **K-正则**。
 
     [![](img/49252014abdd0bbd6827c617fe6ad554.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630122008/regular.jpg)
 
@@ -141,7 +141,7 @@
 
 [![](img/9438adb914948bf0b9b42c92c1719dae.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200630130949/applications_graph.jpg)
 
-**图的更多资源：**
+**图的更多资源**：
 
 *   [关于图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)的最新文章
 *   [图](https://practice.geeksforgeeks.org/explore/?category%5B%5D=Graph&page=1)上的练习题

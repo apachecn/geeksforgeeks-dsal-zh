@@ -2,12 +2,12 @@
 
 > 原文： [https://www.geeksforgeeks.org/proof-that-dominant-set-of-a-graph-is-np-complete/](https://www.geeksforgeeks.org/proof-that-dominant-set-of-a-graph-is-np-complete/)
 
-**先决条件：** [图的支配集](https://www.geeksforgeeks.org/dominant-set-of-a-graph/)， [NP 完成](https://www.geeksforgeeks.org/np-completeness-set-1/)
+**先决条件**：[图的支配集](https://www.geeksforgeeks.org/dominant-set-of-a-graph/)， [NP 完成](https://www.geeksforgeeks.org/np-completeness-set-1/)
 
 > 图 **G =（V，E）**中的支配集是顶点 **V'**的子集，其条件是不属于 V'的顶点与 **V'**。
 
-**问题：**给定一个图 **G（V，E）**和一个整数 k，问题在于确定该图是否具有大小为 k 的支配集。
-**说明：**
+**问题**：给定一个图 **G（V，E）**和一个整数 k，问题在于确定该图是否具有大小为 k 的支配集。
+**说明**：
 问题的一个实例是为此问题指定的输入。 支配集问题的一个实例是图 G（V，E）和整数 k，问题是检查该图是否可以在 G 中具有支配集。由于 NP 完全问题的定义是 在 NP 和 NP 困难中都存在问题，证明问题是 NP 完全的陈述的证明包括两个部分：
 
 1.  **Dominating Set is NP Complete**

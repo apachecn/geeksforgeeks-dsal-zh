@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/building-an-undirected-graph-and-finding-shortest-path-using-dictionaries-in-python/](https://www.geeksforgeeks.org/building-an-undirected-graph-and-finding-shortest-path-using-dictionaries-in-python/)
 
-**先决条件：**
+**先决条件**：
 
 *   [图形的 BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 *   [Python 词典](https://www.geeksforgeeks.org/python-dictionary/)
@@ -13,7 +13,7 @@
 
 [![](img/8ce2e0aa06f2a43ed582c49087df5166.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200617040109/cool.jpg)
 
-**方法：**的想法是将邻接表存储到字典中，这有助于以任意格式存储图形，而不仅是整数形式。 在这里，我们将字符用作所有自定义对象也可以使用的地方的参考。
+**方法**：的想法是将邻接表存储到字典中，这有助于以任意格式存储图形，而不仅是整数形式。 在这里，我们将字符用作所有自定义对象也可以使用的地方的参考。
 
 下面是上述方法的实现：
 

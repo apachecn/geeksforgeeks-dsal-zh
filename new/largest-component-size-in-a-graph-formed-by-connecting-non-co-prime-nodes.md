@@ -3,7 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/largest-component-size-in-a-graph-formed-by-connecting-non-co-prime-nodes/](https://www.geeksforgeeks.org/largest-component-size-in-a-graph-formed-by-connecting-non-co-prime-nodes/)
 
 给定一个具有 N 个节点的图，它们的值在数组 A 中定义，任务是通过连接非互素节点在图中找到最大的组件大小。 如果两个节点 U 和 V 不互质，则它们之间的边为边，这意味着 A [U]和 A [V]的最大公约数应大于 1。
-**示例：**
+**示例**：
 
 ```
 Input : A = [4, 6, 15, 35]
@@ -22,7 +22,7 @@ Output : 8
 
 ```
 
-**天真的方法：**
+**天真的方法**：
 我们可以遍历所有节点对，并检查它们是否是互素的。 如果它们不是互质的，我们将它们连接起来。 创建图表后，我们将应用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来找到最大组件尺寸。
 以下是上述方法的实现：
 
@@ -326,7 +326,7 @@ public static void Main(String[] args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 8
@@ -788,14 +788,14 @@ public static void Main(String[] args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
  8
 
 ```
 
-**时间复杂度：** O（N * log（max（A）））
+**时间复杂度**：O（N * log（max（A）））
 
 
 

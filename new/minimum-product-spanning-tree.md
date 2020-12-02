@@ -627,7 +627,7 @@ class GFG {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Edge   Weight

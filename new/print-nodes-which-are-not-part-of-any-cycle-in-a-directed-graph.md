@@ -4,21 +4,21 @@
 
 > 原文： [https://www.geeksforgeeks.org/print-nodes-which-are-not-part-of-any-cycle-in-a-directed-graph/](https://www.geeksforgeeks.org/print-nodes-which-are-not-part-of-any-cycle-in-a-directed-graph/)
 
-给定有向[图](https://www.geeksforgeeks.org/introduction-to-graphs/) G **N** 个节点和 **E** 由值 **[0，N – 1]** 和[的节点组成的边 类型为[ **u** ， **v** }的 2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/) **Edges [] [2]** ，表示顶点之间的[定向边缘 和 **v** 。 任务是在给定图 **G** 中找到不属于任何周期的节点。](https://www.geeksforgeeks.org/minimum-number-of-edges-between-two-vertices-of-a-graph/)
+给定有向[图](https://www.geeksforgeeks.org/introduction-to-graphs/) G`N`个节点和`E`由值 **[0，N – 1]** 和[的节点组成的边 类型为[`u`，`v`}的 2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/) **Edges [] [2]** ，表示顶点之间的[定向边缘 和`v`。 任务是在给定图`G`中找到不属于任何周期的节点。](https://www.geeksforgeeks.org/minimum-number-of-edges-between-two-vertices-of-a-graph/)
 
-**示例：**
+**示例**：
 
-> **输入：** N = 4，E = 4，Edges [] [2] = {{0，2}，{0，1}，{2，3}，{3，0}}
-> **输出：** 1
-> **说明：**
+> **输入**：N = 4，E = 4，Edges [] [2] = {{0，2}，{0，1}，{2，3}，{3，0}}
+> **输出**：1
+> **说明**：
 > [![](img/05763e3c10b44e507101abddf59104bf.png)](https://media.geeksforgeeks.org/wp-content/uploads/20201014145048/UntitledDiagram1.jpg) 
 > 从上面的给定图中，节点 0-之间存在一个循环。 > 2-> 3->0。
 > 在任何周期内都没有出现的节点是 1。
 > 因此，打印 1。
 > 
-> **输入：** N = 6，E = 7，Edges [] [2] = {{0，1}，{0，2}，{1，3}，{2，1}，{2 ，5}，{3，0}，{4，5}}
-> **输出：** 4 5
-> **说明：**
+> **输入**：N = 6，E = 7，Edges [] [2] = {{0，1}，{0，2}，{1，3}，{2，1}，{2 ，5}，{3，0}，{4，5}}
+> **输出**：4 5
+> **说明**：
 > [![](img/ab490d759b83e56607641da5d3338540.png) [](https://media.geeksforgeeks.org/wp-content/uploads/20201014150654/UntitledDiagram2.jpg) 
 > 从上面的给定图中，节点之间存在一个循环：
 > 1）0-> 1-> 3->0。
@@ -26,14 +26,14 @@
 > 在任何周期内都没有出现的节点是 4 和 5。
 > 因此，打印 4 和 5。
 
-**天真的方法：**最简单的方法是[为给定图中的每个节点检测有向图](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)中的周期，并仅打印不属于给定周期中任何周期的那些节点 图形。
-***时间复杂度：** O（V *（V + E）），其中 V 是顶点数，E 是边数。*
-***辅助空间：** O（V）*
+**天真的方法**：最简单的方法是[为给定图中的每个节点检测有向图](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)中的周期，并仅打印不属于给定周期中任何周期的那些节点 图形。
+***时间复杂度**：O（V *（V + E）），其中 V 是顶点数，E 是边数。*
+***辅助空间**：O（V）*
 
-**高效方法：**为了优化上述方法，其思想是在给定图中的任何循环时，将中间节​​点存储为**访问循环节点**。 要实现此部分，请使用辅助数组 **cyclePart []** ，该数组将在执行 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)时存储中间循环节点。 步骤如下：
+**高效方法**：为了优化上述方法，其思想是在给定图中的任何循环时，将中间节​​点存储为**访问循环节点**。 要实现此部分，请使用辅助数组 **cyclePart []** ，该数组将在执行 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)时存储中间循环节点。 步骤如下：
 
-*   初始化大小为 **N** 的辅助数组 **cyclePart []** ，使得如果 **cyclePart [i] = 0** ，则 **i <sup>th</sup>** 节点在任何周期内都不存在。
-*   初始化大小为 **N** 的辅助数组 **recStack []** ，以便通过将访问的节点标记为 **true 将其存储在[递归](https://www.geeksforgeeks.org/recursion/)堆栈中。** 。
+*   初始化大小为`N`的辅助数组 **cyclePart []** ，使得如果 **cyclePart [i] = 0** ，则 **i <sup>th</sup>** 节点在任何周期内都不存在。
+*   初始化大小为`N`的辅助数组 **recStack []** ，以便通过将访问的节点标记为 **true 将其存储在[递归](https://www.geeksforgeeks.org/recursion/)堆栈中。** 。
 *   在给定的图形上对每个未访问的节点执行 DFS 遍历，然后执行以下操作：
     *   现在，在给定图中找到一个循环，只要找到一个循环，就将 **cyclePart []** 中的节点标记为 **true** ，因为该节点是循环的一部分。
     *   如果在[递归](https://www.geeksforgeeks.org/recursion/)调用中访问了任何**节点**并且为 **recStack [node]** 也为 true，则该节点是循环的一部分，然后将该节点标记为 **是**。
@@ -230,8 +230,8 @@ int main()
 
 ```
 
-***时间复杂度：** O（V + E）*
-***空间复杂度：** O（V）*
+***时间复杂度**：O（V + E）*
+***空间复杂度**：O（V）*
 
 
 

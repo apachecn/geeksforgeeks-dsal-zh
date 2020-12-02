@@ -3,7 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/networkx-python-software-package-study-complex-networks/](https://www.geeksforgeeks.org/networkx-python-software-package-study-complex-networks/)
 
 NetworkX 是一个 Python 语言软件包，用于创建，操纵和研究复杂网络的结构，动力学和功能。 它用于研究以节点和边的图表示的大型复杂网络。 使用 networkx，我们可以加载和存储复杂的网络。 我们可以生成许多类型的随机和经典网络，分析网络结构，构建网络模型，设计新的网络算法并绘制网络。
-**软件包的安装：**
+**软件包的安装**：
 
 ```
 pip install networkx
@@ -163,7 +163,7 @@ G.clear()
 ```
 
 在下一篇文章中，我们将讨论如何创建加权图，有向图，多图。 如何绘制图形。 在以后的文章中，我们将介绍如何使用内置函数，例如深度拳头搜索 aka dfs，广度优先搜索 aka BFS，dijkstra 的最短路径算法。
- **参考：** [Networxx at Github](https://networkx.github.io/documentation/networkx-1.10/overview.html)
+ **参考**：[Networxx at Github](https://networkx.github.io/documentation/networkx-1.10/overview.html)
 
 本文由 **[Pratik Chhajer](https://github.com/pratik-chhajer)** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

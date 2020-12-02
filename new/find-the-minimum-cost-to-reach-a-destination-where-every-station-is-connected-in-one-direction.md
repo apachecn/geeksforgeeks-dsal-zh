@@ -319,7 +319,7 @@ function  minCost($cost) 
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 The Minimum cost to reach station 4 is 65

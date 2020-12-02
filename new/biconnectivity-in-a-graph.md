@@ -747,7 +747,7 @@ public static void Main(String []args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Yes
@@ -758,9 +758,9 @@ Yes
 
 ```
 
-**时间复杂度：**上面的功能是带有附加数组的简单 DFS。 因此，时间复杂度与 DFS 相同，对于图的邻接表表示，它的时间复杂度为 O（V + E）。
+**时间复杂度**：上面的功能是带有附加数组的简单 DFS。 因此，时间复杂度与 DFS 相同，对于图的邻接表表示，它的时间复杂度为 O（V + E）。
 
-**参考：**
+**参考**：
 [http://www.cs.purdue.edu/homes/ayg/CS251/slides/chap9d.pdf](http://www.cs.purdue.edu/homes/ayg/CS251/slides/chap9d.pdf)
 如果发现任何内容，请写评论 错误，或者您想共享有关上述主题的更多信息。
 

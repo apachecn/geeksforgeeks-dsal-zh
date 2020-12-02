@@ -4,7 +4,7 @@
 
 检查给定图是否包含循环。
 
-**示例：**
+**示例**：
 
 ```
 Input: 
@@ -23,7 +23,7 @@ Output: Graph does not contain Cycle.
 
 请参考此链接以获取
 [联合发现](https://en.wikipedia.org/wiki/Proof_of_O(log*n)_time_complexity_of_union%E2%80%93find)
-**的 log *（n）复杂度证明。查找功能的解释：**
+**的 log *（n）复杂度证明。查找功能的解释**：
 以示例 1 理解查找功能：
 
 （1）首次为**调用 find（8），映射将如下所示：
@@ -46,7 +46,7 @@ Output: Graph does not contain Cycle.
 从节点 8，跳过了节点 5，节点 6，节点 7，节点 4，以及节点 2，达到了 节点 0。
 这就是它将特定映射到单个映射的路径收敛的方法。
 
-**示例 1 的说明：**
+**示例 1 的说明**：
 
 最初，数组大小和 Arr 看起来像：
 Arr [9] = {0，1，2，3，4，5，6，7，8}

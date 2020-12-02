@@ -28,7 +28,7 @@ that does two BFS traversals of graph:
 
 如果可以从一个顶点 v 到达每个节点，并且每个节点可以到达相同的顶点 v，则该图又很简单，则该图是牢固连接的。 在步骤 2 中，我们检查是否所有顶点都可以从 v 到达。在步骤 5 中，我们检查所有顶点是否都可以到达 v（在反向图中，如果所有顶点都可以从 v 到达，则所有顶点都可以在原始图中到达 v。）
 
-**举例说明：**
+**举例说明**：
 
 <center>**Example 1 :**</center>
 
@@ -224,7 +224,7 @@ No
 
 ```
 
-**时间复杂度：**如果使用邻接矩阵表示来表示图，则上述实现的时间复杂度与广度优先搜索相同，即为 O（V + E）。
+**时间复杂度**：如果使用邻接矩阵表示来表示图，则上述实现的时间复杂度与广度优先搜索相同，即为 O（V + E）。
 
 **我们可以进一步改善吗？**
 上述方法需要两次遍历图。 我们可以使用 [Tarjan 的算法来查找图是否是强连通的，并使用](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/) [Tarjan 算法查找强连通的分量](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)。

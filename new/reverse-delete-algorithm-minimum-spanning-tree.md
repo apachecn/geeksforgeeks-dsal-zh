@@ -24,7 +24,7 @@
        Else we delete the edge and continue. 
 ```
 
-**插图：**
+**插图**：
 让我们用以下示例理解：
 [![](img/8dc4df6d86d36d8246549dc9f7b13def.png "Fig-1")](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Fig-11.jpg)
 
@@ -54,7 +54,7 @@ Edges in MST
 (6, 7) 
 ```
 
- **注意：**在相同重量边缘的情况下，我们可以选择相同重量边缘的任何边缘。
+ **注意**：在相同重量边缘的情况下，我们可以选择相同重量边缘的任何边缘。
 
 以下是上述步骤的 C ++实现。
 

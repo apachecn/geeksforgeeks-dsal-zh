@@ -2,15 +2,15 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-cost-required-to-connect-all-houses-in-a-city/](https://www.geeksforgeeks.org/minimum-cost-required-to-connect-all-houses-in-a-city/)
 
-给定 [2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/) **房屋[] []** 由 **N** 2D 坐标 **{x，y}** 组成，其中每个坐标代表 每个房屋的任务是找到连接城市所有房屋的最低成本。
+给定 [2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/) **房屋[] []** 由`N`2D 坐标 **{x，y}** 组成，其中每个坐标代表 每个房屋的任务是找到连接城市所有房屋的最低成本。
 
 > 连接两所房屋的成本是两点之间的 [**曼哈顿距离**](https://www.geeksforgeeks.org/maximum-manhattan-distance-between-a-distinct-pair-from-n-coordinates/) （x <sub>i</sub> y <sub>i</sub> ）和（x <sub>j</sub> ，y <sub>j</sub> ），即 **| x <sub>i</sub> – x <sub>j</sub> | + | y <sub>i</sub> – y <sub>j</sub> |** ，其中| p | 表示 p 的[绝对值](https://www.geeksforgeeks.org/program-to-find-absolute-value-of-a-given-number/)。
 
-**示例：**
+**示例**：
 
-> **输入：**房子[] [] = [[0，0]，[2，2]，[3，10]，[5，2]，[7，0]]
-> **输出：** 20
-> **说明：**
+> **输入**：房子[] [] = [[0，0]，[2，2]，[3，10]，[5，2]，[7，0]]
+> **输出**：20
+> **说明**：
 > 
 > [![](img/a8ca126a35427e8276eeba3b021e1532.png)](https://media.geeksforgeeks.org/wp-content/uploads/20201027125012/UntitledDiagram5.jpg)
 > 
@@ -21,15 +21,15 @@
 > 所有房屋均已连接 现在。
 > 整体最低费用为 4 + 9 + 3 + 4 = 20。
 > 
-> **输入：**房屋[] [] = [[3，12]，[-2、5]，[-4、1]]
-> **输出：** 18
-> **说明：**
+> **输入**：房屋[] [] = [[3，12]，[-2、5]，[-4、1]]
+> **输出**：18
+> **说明**：
 > 以成本= 12 将房屋 1（3，12）与房屋 2（-2，5）连接
 > 将房屋 2（-2，5）与房屋 3（-4）连接 ，1）的成本= 6
 > 现在所有房屋都已连接。
 > 整体最低费用为 12 + 6 = 18。
 
-**方法：**的想法是根据给定的信息创建[加权图](https://www.geeksforgeeks.org/graph-and-its-representations/)，其中任意一对边之间的权重等于连接它们的成本，例如 **C <sub>i</sub>** ，即两个坐标之间的曼哈顿距离。 生成图形后，使用 [Kruskal 算法](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)使用[不交集](https://www.geeksforgeeks.org/disjoint-set-data-structures/)来找到图形的[最小生成树](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)。 最后，打印最低成本。
+**方法**：的想法是根据给定的信息创建[加权图](https://www.geeksforgeeks.org/graph-and-its-representations/)，其中任意一对边之间的权重等于连接它们的成本，例如 **C <sub>i</sub>** ，即两个坐标之间的曼哈顿距离。 生成图形后，使用 [Kruskal 算法](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)使用[不交集](https://www.geeksforgeeks.org/disjoint-set-data-structures/)来找到图形的[最小生成树](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)。 最后，打印最低成本。
 
 下面是上述方法的实现：
 
@@ -267,8 +267,8 @@ if __name__ == '__main__':
 
 ```
 
-***时间复杂度：** O（N <sup>2</sup> ）*
-***辅助空间：** O（N <sup>2</sup> ）*
+***时间复杂度**：O（N <sup>2</sup> ）*
+***辅助空间**：O（N <sup>2</sup> ）*
 
 
 

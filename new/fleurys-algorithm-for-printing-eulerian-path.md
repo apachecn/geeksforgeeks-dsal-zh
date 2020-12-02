@@ -701,11 +701,11 @@ class Graph
 
 请注意，上述代码会修改给定的图形，如果我们不希望修改给定的图形，则可以创建图形的副本。
 
-**时间复杂度：**上述实现的时间复杂度为 O（（V + E） <sup>2</sup> ）。 函数 printEulerUtil（）类似于 DFS，它调用 isValidNextEdge（），它也执行 DFS 两次。 DFS 用于邻接表表示的时间复杂度为 O（V + E）。 因此，总时间复杂度为 O（（V + E）*（V + E）），对于连接图，可以将其写为 O（E <sup>2</sup> ）。
+**时间复杂度**：上述实现的时间复杂度为 O（（V + E） <sup>2</sup> ）。 函数 printEulerUtil（）类似于 DFS，它调用 isValidNextEdge（），它也执行 DFS 两次。 DFS 用于邻接表表示的时间复杂度为 O（V + E）。 因此，总时间复杂度为 O（（V + E）*（V + E）），对于连接图，可以将其写为 O（E <sup>2</sup> ）。
 
 有更好的算法可以打印 Euler 游览， [Hierholzer 的算法](https://www.geeksforgeeks.org/hierholzers-algorithm-directed-graph/)可在 O（V + E）时间找到。
 
-**参考：**
+**参考**：
 [http://www.math.ku.edu/~jmartin/courses/math105-F11/Lectures/chapter5-part2.pdf](http://www.math.ku.edu/~jmartin/courses/math105-F11/Lectures/chapter5-part2.pdf)
 [http://en.wikipedia.org/wiki/Eulerian_path#Fleury.27s_algorithm](http://en.wikipedia.org/wiki/Eulerian_path#Fleury.27s_algorithm)
 

@@ -393,7 +393,7 @@ Following is Breadth First Traversal (starting from vertex 2)
 
 ```
 
-**插图：**
+**插图**：
 ![bfs1](img/2374f932bb1eeaa8af84105d8e3e0b02.png) ![bfs2](img/92eac379ec48d2cad3acc6a96a5ac66d.png)
 ![bfs3](img/da3e6f20ab79bb00338e1821679c4491.png) ![bfs4](img/d90e2f97f46f164547ee6a560f9e6e5a.png)
 ![bfs6](img/8cf3ab42764940f806dd368ffbe02bf2.png) ![bfs7](img/316708c5d85f91d40ff979e0570a32df.png)
@@ -404,7 +404,7 @@ Following is Breadth First Traversal (starting from vertex 2)
 
 时间复杂度：O（V + E），其中 V 是图形中顶点的数量，E 是图形中边的数量。
 
-**您可能还会喜欢以下内容：**
+**您可能还会喜欢以下内容**：
 
 *   [关于 BFS 的最新文章](https://www.geeksforgeeks.org/tag/bfs/)
 *   [深度优先遍历](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)

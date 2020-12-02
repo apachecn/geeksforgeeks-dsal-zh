@@ -27,7 +27,7 @@ assigned to the respective edges.
 边缘着色是几种不同类型的图形着色问题之一。 图表的上图显示了绿色和黑色为图表的边缘着色，其中没有相邻的边缘具有相同的颜色。
 
 以下是解决可能无法使用最佳颜色数量的边缘着色问题的算法：
-**算法：**
+**算法**：
 
 1.  使用 BFS 遍历开始遍历图形。
 2.  拾取任意一个顶点，并为其连接的所有边缘赋予不同的颜色，并将这些边缘标记为有色。
@@ -157,7 +157,7 @@ Edge 4 is of color 2
 
 ```
 
-**参考：** [https://en.wikipedia.org/wiki/Edge_coloring](https://en.wikipedia.org/wiki/Edge_coloring)
+**参考**：[https://en.wikipedia.org/wiki/Edge_coloring](https://en.wikipedia.org/wiki/Edge_coloring)
 
 
 

@@ -2,21 +2,21 @@
 
 > 原文： [https://www.geeksforgeeks.org/maximum-number-of-edges-that-n-vertex-graph-can-have-such-that-graph-is-triangle-free-mantels-theorem/](https://www.geeksforgeeks.org/maximum-number-of-edges-that-n-vertex-graph-can-have-such-that-graph-is-triangle-free-mantels-theorem/)
 
-给定数字 **N** ，它是图形中的节点数，任务是找到 N-顶点图形可以具有的最大边数，以使图形不包含[三角形](https://en.wikipedia.org/wiki/Triangle-free_graph) （这意味着图中不应存在任何三个边 A，B，C，以使 A 连接到 B，B 连接到 C，C 连接到 A）。 该图不能包含自环或多边。
+给定数字`N`，它是图形中的节点数，任务是找到 N-顶点图形可以具有的最大边数，以使图形不包含[三角形](https://en.wikipedia.org/wiki/Triangle-free_graph) （这意味着图中不应存在任何三个边 A，B，C，以使 A 连接到 B，B 连接到 C，C 连接到 A）。 该图不能包含自环或多边。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 4
-> **输出：** 4
-> **说明：**
+> **输入**：N = 4
+> **输出**：4
+> **说明**：
 > [![](img/492d1904741b98df75f4cd3567141462.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200227123317/Untitled-Diagram45.jpg)
 > 
-> **输入：** N = 3
-> **输出：** 2
-> **说明：**
+> **输入**：N = 3
+> **输出**：2
+> **说明**：
 > 如果 3 顶点图中有三个边，它将 有一个三角形。
 
-**方法：**可以使用[曼特尔定理](https://en.wikipedia.org/wiki/Tur%C3%A1n%27s_theorem#Mantel's_theorem)解决此问题，该定理指出图形中不包含任何三角形的最大边数是 floor（n <sup>2</sup> / 4 ）。 换句话说，必须删除几乎一半的边缘才能获得无三角形的图形。
+**方法**：可以使用[曼特尔定理](https://en.wikipedia.org/wiki/Tur%C3%A1n%27s_theorem#Mantel's_theorem)解决此问题，该定理指出图形中不包含任何三角形的最大边数是 floor（n <sup>2</sup> / 4 ）。 换句话说，必须删除几乎一半的边缘才能获得无三角形的图形。
 
 **Mantel 定理是如何工作的？**
 对于任何[图](https://www.geeksforgeeks.org/graph-and-its-representations/)，这样该图是无三角形的，那么对于任何顶点 Z 只能连接到 x 和 y 中任一顶点，即对于 x 和 y 之间连接的任何边 y，d（x）+ d（y）≤N，其中 d（x）和 d（y）是顶点 x 和 y 的度数。
@@ -165,7 +165,7 @@ if __name__ == '__main__':
 
 ```
 
-**时间复杂度：** O（1）
+**时间复杂度**：O（1）
 
 
 

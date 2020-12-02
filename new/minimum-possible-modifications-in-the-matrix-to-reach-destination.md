@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-possible-modifications-in-the-matrix-to-reach-destination/](https://www.geeksforgeeks.org/minimum-possible-modifications-in-the-matrix-to-reach-destination/)
 
-给定大小为 **N x M** 的矩阵，该矩阵由整数 **1、2、3** 和 **4** 组成。
+给定大小为 **N x M** 的矩阵，该矩阵由整数 **1、2、3** 和`4`组成。
 每个值代表该单元格可能发生的移动：
 
 ```
@@ -17,22 +17,22 @@
 
 任务是找到矩阵中所需的最小可能变化，以使存在从**（0，0）**到**（N-1，M-1）**的路径。
 
-**示例：**
+**示例**：
 
-> **输入：** mat [] [] = {{2，2，4}，
+> **输入**：mat [] [] = {{2，2，4}，
 > {1，1，1}，
 > {3，3，2}};
 > 
-> **输出：** 1
+> **输出**：1
 > 将 mat [1] [2]的值更改为 4。因此，移动顺序为
 > （0，0）->（0，1） ->（0，2）->（1，2）->（2，2）
 > 
-> **输入：** mat [] [] = {{2，2，1}，
+> **输入**：mat [] [] = {{2，2，1}，
 > {4，2，3}，
 > {4，3，2}}
-> **输出：** 2
+> **输出**：2
 
-**先决条件：**
+**先决条件**：
 1\. [Djikstra 的算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
 2\. [0-1 BFS](https://www.geeksforgeeks.org/0-1-bfs-shortest-path-binary-graph/)
 
@@ -207,7 +207,7 @@ int main()
 
 ```
 
-**时间复杂度：** ![O(N * M * log(N * M))](img/f11bb75c1e4c23de4e450c4b21a0492c.png "Rendered by QuickLaTeX.com")
+**时间复杂度**：![O(N * M * log(N * M))](img/f11bb75c1e4c23de4e450c4b21a0492c.png "Rendered by QuickLaTeX.com")
 
 **方法 2**
 此处，边缘权重为 0，仅 1，即 0-1 图。 使用 [0-1 BFS](https://www.geeksforgeeks.org/0-1-bfs-shortest-path-binary-graph/) 可找到此类图中的最短路径。
@@ -350,7 +350,7 @@ int main()
 
 ```
 
-**时间复杂度：** ![O(N * M)](img/d63fadc38ddb8d76cf05fdd3f20db2be.png "Rendered by QuickLaTeX.com")
+**时间复杂度**：![O(N * M)](img/d63fadc38ddb8d76cf05fdd3f20db2be.png "Rendered by QuickLaTeX.com")
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

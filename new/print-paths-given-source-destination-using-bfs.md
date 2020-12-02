@@ -12,7 +12,7 @@
 
 以下是基于 BFS 的解决方案。
 
-**算法：**
+**算法**：
 
 ```
 create a queue which will store path(s) of type vector

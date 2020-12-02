@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/k-shell-decomposition-on-social-networks/](https://www.geeksforgeeks.org/k-shell-decomposition-on-social-networks/)
 
-**先决条件：** [社交网络简介](https://www.geeksforgeeks.org/introduction-to-social-networks-using-networkx-in-python/)
+**先决条件**：[社交网络简介](https://www.geeksforgeeks.org/introduction-to-social-networks-using-networkx-in-python/)
 
 K-shell 分解是一种方法，其中我们可以根据节点的度数将节点划分为一个桶中的度数为 1 的节点。
 
@@ -83,7 +83,7 @@ plt.show()
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 [[2, 3, 4, 7, 8, 17, 16, 1, 6, 9], [11, 5, 10, 13, 12, 14, 15]]

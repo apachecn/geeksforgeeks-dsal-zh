@@ -322,7 +322,7 @@ class GFG {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 No
@@ -702,7 +702,7 @@ public static void main(String[] args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 No

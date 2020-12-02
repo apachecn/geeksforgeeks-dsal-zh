@@ -2,14 +2,14 @@
 
 > 原文： [https://www.geeksforgeeks.org/shortest-path-with-even-number-of-edges-from-source-to-destination/](https://www.geeksforgeeks.org/shortest-path-with-even-number-of-edges-from-source-to-destination/)
 
-给定无向图 **G** ，任务是找到偶数长度的最短路径，其中 **1** 作为源节点， **N** 作为目标节点。 路径长度是指路径中存在的边数（而不是路径成本）。
+给定无向图`G`，任务是找到偶数长度的最短路径，其中`1`作为源节点，`N`作为目标节点。 路径长度是指路径中存在的边数（而不是路径成本）。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 5，下面给出 G：
+> **输入**：N = 5，下面给出 G：
 > ![Input Graph](img/faf3a4391ecd11a85cd82e8caced3cd6.png)
-> **输出：** 10
-> **说明：**
+> **输出**：10
+> **说明**：
 > 全部 从 1（源节点）到 5（目标节点）的路径为：
 > 1- > 2- > 5
 > 成本：16 长度：2（偶数）
@@ -19,20 +19,20 @@
 > 费用 ：10 长度：4（偶数）
 > 最短路径是 1- > 2- > 3- > 5，总成本为 4，但它的路径长为奇数，因为我们感兴趣 仅偶数路径，具有偶数长度的最短路径是 1- > 2- > 3- > 4- > 5，总成本为 10。
 > 
-> **输入 2：** N = 4，G 给出如下：
+> **输入 2**：N = 4，G 给出如下：
 > ![Input Graph](img/849e93e7b68305b52434925b3a35c238.png)
-> **输出：** -1
+> **输出**：-1
 > 
-> **说明：**
+> **说明**：
 > 从 1（源节点）到 4（目标节点）没有偶数长度的路径。
 
-**方法：**
-创建一个新图形（ **G’**）。 对于初始图 **G** 中的每个节点 **V** ，创建两个新节点 **V_even** 和 **V_odd** 。
+**方法**：
+创建一个新图形（ **G’**）。 对于初始图`G`中的每个节点`V`，创建两个新节点 **V_even** 和 **V_odd** 。
 
 > 此处， **V_odd** 将表示为（（V * 10）+ 1）， **V_even** 将表示为（（V * 10）+ 2）。
-> 例如，如果节点 **V** = 4，则 **V_odd** = 41， **V_even** = 42。
+> 例如，如果节点`V`= 4，则 **V_odd** = 41， **V_even** = 42。
 
-现在，对于 **G** 中的每个边（ **U，V** ），在 **G'**，**（U_even，V_odd）**中添加两个新边 和**（U_odd，V_even）**。 最后，使用 [Dijkstra 最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)找到从**（source_even）**节点到**（destination_even）**节点的最短路径。
+现在，对于`G`中的每个边（ **U，V** ），在 **G'**，**（U_even，V_odd）**中添加两个新边 和**（U_odd，V_even）**。 最后，使用 [Dijkstra 最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)找到从**（source_even）**节点到**（destination_even）**节点的最短路径。
 
 对于输入 1（以上）中给出的图， **G'**可以表示为：
 ![Graph G'](img/30374498d27916be9bbe92bf95bc8541.png)
@@ -192,7 +192,7 @@ int main()
 
 ```
 
-***时间复杂度：**（E * log（V））*
+***时间复杂度**：（E * log（V））*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

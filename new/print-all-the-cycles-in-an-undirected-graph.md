@@ -3,17 +3,17 @@
 > 原文： [https://www.geeksforgeeks.org/print-all-the-cycles-in-an-undirected-graph/](https://www.geeksforgeeks.org/print-all-the-cycles-in-an-undirected-graph/)
 
 给定一个无向图，请打印在其中形成循环的所有顶点。
-**前提条件：** [使用颜色](https://www.geeksforgeeks.org/detect-cycle-direct-graph-using-colors/)，
+**前提条件**：[使用颜色](https://www.geeksforgeeks.org/detect-cycle-direct-graph-using-colors/)，
 在有向图中检测循环。
 
 ![](img/2a7a28e0e1677574cb31e8c7408c7af0.png)
 
 在上图中，循环已用深绿色标记。 上面的输出将是
 
-> **第一周期：** 3 5 4 6
-> **第二周期：** 11 12 13
+> **第一周期**：3 5 4 6
+> **第二周期**：11 12 13
 
-**方法：**使用[图形着色方法](https://www.geeksforgeeks.org/detect-cycle-direct-graph-using-colors/)，用唯一编号标记不同循环的所有顶点。 图形遍历完成后，将所有相似的标记数字推入邻接表，并相应地打印邻接表。 下面给出的是算法：
+**方法**：使用[图形着色方法](https://www.geeksforgeeks.org/detect-cycle-direct-graph-using-colors/)，用唯一编号标记不同循环的所有顶点。 图形遍历完成后，将所有相似的标记数字推入邻接表，并相应地打印邻接表。 下面给出的是算法：
 
 *   将边插入邻接表。
 *   调用 DFS 函数，该函数使用着色方法标记顶点。
@@ -591,7 +591,7 @@ public static void Main(String[] args)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Cycle Number 1: 3 4 5 6 
@@ -599,8 +599,8 @@ Cycle Number 2: 11 12 13
 
 ```
 
-**时间复杂度：** O（N + M），其中 N 是顶点数，M 是边数。
-**辅助空间：** O（N + M）
+**时间复杂度**：O（N + M），其中 N 是顶点数，M 是边数。
+**辅助空间**：O（N + M）
 
 
 

@@ -4,28 +4,28 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-if-longest-connected-component-forms-a-palindrome-in-undirected-graph/](https://www.geeksforgeeks.org/check-if-longest-connected-component-forms-a-palindrome-in-undirected-graph/)
 
-给定[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)并具有 **V** 顶点和 **E** 边，任务是检查图的[最大连通分量](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)是否形成 无向图中的回文。
-**范例：**
+给定[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)并具有`V`顶点和`E`边，任务是检查图的[最大连通分量](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)是否形成 无向图中的回文。
+**范例**：
 
-> **输入：**
+> **输入**：
 > 
 > ![](img/38fe7f7974b8fefc4a3e3aea3a91f3da.png)
 > 
-> **输出：**
+> **输出**：
 > 最长连接的组件是回文
-> **解释：**
+> **解释**：
 > 最长连接的组件是{5，15，5}
 > ，它通过值形成一个回文 。
-> **输入：** [
+> **输入**：[
 > 
 > ![](img/beabc5855ca715c86b194a754a8f3b8e.png)
 > 
-> **输出：**
+> **输出**：
 > 最长连接的组件不是回文
-> **解释：**
+> **解释**：
 > 最长的链是{2，3，4，5}，不是回文。
 
-**方法：**的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的连接组件。 在每次遍历时，如果连接的组件的当前长度大于连接的组件的全局长度的长度，则更新最长的连接的组件。 最后，检查最长的连接组件形成回文。
+**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的连接组件。 在每次遍历时，如果连接的组件的当前长度大于连接的组件的全局长度的长度，则更新最长的连接的组件。 最后，检查最长的连接组件形成回文。
 以下是上述方法的实现：
 
 ## C ++
@@ -468,7 +468,7 @@ Longest connected component is Palindrome
 
 ```
 
-**时间复杂度：** O（V + E）
+**时间复杂度**：O（V + E）
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

@@ -281,7 +281,7 @@ echo "No. of steps required to reach ",
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 No. of steps required to reach 11 is 5
@@ -289,7 +289,7 @@ No. of steps required to reach 11 is 5
 ```
 
 感谢 Arpit Thapar 提供上述算法和实现。
-**优化解决方案：** [找出在无限线上达到目标的最小移动量](https://www.geeksforgeeks.org/find-minimum-moves-reach-target-infinite-line/)
+**优化解决方案**：[找出在无限线上达到目标的最小移动量](https://www.geeksforgeeks.org/find-minimum-moves-reach-target-infinite-line/)
 
 本文由 Abhay 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

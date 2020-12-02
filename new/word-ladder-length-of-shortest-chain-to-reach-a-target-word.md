@@ -3,7 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/word-ladder-length-of-shortest-chain-to-reach-a-target-word/](https://www.geeksforgeeks.org/word-ladder-length-of-shortest-chain-to-reach-a-target-word/)
 
 给定一本字典，以及两个单词“开始”和“目标”（长度相同）。 查找从“开始”到“目标”的最小链的长度（如果存在），以使链中的相邻单词仅相差一个字符，并且链中的每个单词都是有效单词，即它存在于字典中。 可以假设词典中存在“目标”单词，并且所有词典单词的长度都相同。
-**例如：**
+**例如**：
 
 ```
 Input: Dictionary = {POON, PLEE, SAME, POIE, PLEA, PLIE, POIN}
@@ -21,7 +21,7 @@ ABCV - ABCD - EBCD - EBAD
 ```
 
 **<u>解决方案：</u>** 这个想法是使用 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 。
-**方法：**
+**方法**：
 
 1.  从给定的起始词开始。
 2.  将单词推入队列
@@ -388,14 +388,14 @@ Length of shortest chain is: 7
 
 ```
 
-**复杂度分析：**
+**复杂度分析**：
 
-*   **时间复杂度：** O（n²m），其中 m 是字典中最初的条目数，n 是字符串的大小。
+*   **时间复杂度**：O（n²m），其中 m 是字典中最初的条目数，n 是字符串的大小。
 
-*   **辅助空间：** O（m * n），其中 m 是存储在队列中的字符串。
+*   **辅助空间**：O（m * n），其中 m 是存储在队列中的字符串。
     因此，空间复杂度为 O（m * n）。
 
-**替代实现：（维护中间词和原始词的映射）：**
+**替代实现：（维护中间词和原始词的映射）**：
 
 下面是上述方法的替代实现。
 

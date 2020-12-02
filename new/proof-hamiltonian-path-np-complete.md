@@ -3,7 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/proof-hamiltonian-path-np-complete/](https://www.geeksforgeeks.org/proof-hamiltonian-path-np-complete/)
 
 先决条件： [NP 完整性](https://www.geeksforgeeks.org/np-completeness-set-1/)
-可以成为*的成员的语言类别决定*迅速属于 **P** 的类别和 可以通过*验证成员资格*迅速属于 **NP** 的类别（*代表多项式时间*中非确定性图灵机解决的问题）。
+可以成为*的成员的语言类别决定*迅速属于`P`的类别和 可以通过*验证成员资格*迅速属于 **NP** 的类别（*代表多项式时间*中非确定性图灵机解决的问题）。
 简而言之，每个 NP 问题都有其自己的多项式时间验证器。 语言 A 的验证者是算法 V，其中
 
 ```

@@ -2,17 +2,17 @@
 
 > 原文： [https://www.geeksforgeeks.org/single-source-shortest-path-between-two-cities/](https://www.geeksforgeeks.org/single-source-shortest-path-between-two-cities/)
 
-给定 **N** 个节点和 **E** 边的图，形式为 **{U，V，W}** ，这样在 **U 和 V 之间存在边** 的重量为 **W** 。 给您一个整数 **K** 以及源 **src** 和目标 **dst** 。 任务是找到从 **K** 停靠点到给定源到目的地的最便宜成本路径。
+给定`N`个节点和`E`边的图，形式为 **{U，V，W}** ，这样在 **U 和 V 之间存在边** 的重量为`W`。 给您一个整数`K`以及源 **src** 和目标 **dst** 。 任务是找到从`K`停靠点到给定源到目的地的最便宜成本路径。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 3，边线= [[0，1，100]，[1,2,100]，[0，2，500]]，src = 0，dst = 2，k = 1
-> **输出：** 200
-> **解释：**
+> **输入**：N = 3，边线= [[0，1，100]，[1,2,100]，[0，2，500]]，src = 0，dst = 2，k = 1
+> **输出**：200
+> **解释**：
 > 最便宜的价格是从城市 0 到城市 2。只需一站，它的价格为 200，这是我们的 输出。
 > 
-> **输入：** N = 3，边线= [[0，1，100]，[1,2,100]，[0，2，500]]，src = 0，dst = 2，k = 0
-> **输出：** 500
+> **输入**：N = 3，边线= [[0，1，100]，[1,2,100]，[0，2，500]]，src = 0，dst = 2，k = 0
+> **输出**：500
 
 **方法 1：使用** [**深度优先搜索**](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
 
@@ -159,8 +159,8 @@ int main()
 
 ```
 
-**时间复杂度：** O（V + E），其中 V 是节点数，E 是边缘。
-**辅助空间：** O（V）
+**时间复杂度**：O（V + E），其中 V 是节点数，E 是边缘。
+**辅助空间**：O（V）
 
 **方法 2：使用** [广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 
@@ -280,8 +280,8 @@ int main()
 
 ```
 
-**时间复杂度：** O（Stops * N * N），其中 N 是队列中城市和规模的乘积
-**辅助空间：** O（N）
+**时间复杂度**：O（Stops * N * N），其中 N 是队列中城市和规模的乘积
+**辅助空间**：O（N）
 
 **方法 3：使用** [Dijkstra 算法](https://www.geeksforgeeks.org/c-program-for-dijkstras-shortest-path-algorithm-greedy-algo-7/)
 
@@ -389,8 +389,8 @@ int main()
 
 ```
 
-**时间复杂度：** O（E + V log V）其中 V 是节点数，E 是边。
-**辅助空间：** O（V）
+**时间复杂度**：O（E + V log V）其中 V 是节点数，E 是边。
+**辅助空间**：O（V）
 
 **方法 4：使用** [Bellmon Ford](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)
 
@@ -477,8 +477,8 @@ int main()
 
 ```
 
-**时间复杂度：** O（E * V）其中 V 是节点数，E 是边。
-**辅助空间：** O（V）
+**时间复杂度**：O（E * V）其中 V 是节点数，E 是边。
+**辅助空间**：O（V）
 
 
 

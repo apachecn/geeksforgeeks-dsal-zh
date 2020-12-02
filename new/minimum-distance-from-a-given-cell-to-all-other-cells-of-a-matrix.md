@@ -2,30 +2,30 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-distance-from-a-given-cell-to-all-other-cells-of-a-matrix/](https://www.geeksforgeeks.org/minimum-distance-from-a-given-cell-to-all-other-cells-of-a-matrix/)
 
-给定两个整数 **R** 和 **C** ，表示矩阵中的行和列数，以及两个整数 **X** 和 **Y** ， 任务是找到从给定单元格到矩阵所有其他单元格的最小距离。
+给定两个整数`R`和`C`，表示矩阵中的行和列数，以及两个整数`X`和`Y`， 任务是找到从给定单元格到矩阵所有其他单元格的最小距离。
 
-**示例：**
+**示例**：
 
-> **输入：** R = 5，C = 5，X = 2，Y = 2
-> **输出：**
+> **输入**：R = 5，C = 5，X = 2，Y = 2
+> **输出**：
 > 2 2 2 2 2
 > 2 1 1 1 2
 > 2 1 0 1 2
 > 2 1 1 1 2 2
 > 2 2 2 2 2
 > 
-> **输入：** R = 5，C = 5，X = 1，Y = 1
-> **输出：**
+> **输入**：R = 5，C = 5，X = 1，Y = 1
+> **输出**：
 > 1 1 1 2 3
 > 1 0 1 2 3
 > 1 1 1 2 3
 > 2 2 2 2 3
 > 3 3 3 3 3
 
-**方法：**
+**方法**：
 请按照以下步骤解决问题：
 
-*   将初始像元的距离分配为 **0** 。
+*   将初始像元的距离分配为`0`。
 *   初始化[队列](http://www.geeksforgeeks.org/queue-data-structure/)，然后将 **{X，Y}** 对插入**队列**中。
 *   进行迭代，直到**队列**不为空，并为每个未访问的单元分配当前距离，然后使用[[G] [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 技术。
 *   在末尾打印每个单元格的距离。
@@ -419,8 +419,8 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（R * C）*
-***辅助空间：** O（R * C）*
+***时间复杂度**：O（R * C）*
+***辅助空间**：O（R * C）*
 
 
 

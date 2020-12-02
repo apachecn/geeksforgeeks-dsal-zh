@@ -6,7 +6,7 @@
 
 给定图中的[有向图](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)和**源顶点**，任务是在给定图中对边缘加权的非给定图中找到从源顶点到目标顶点的最短距离和路径。 否定），并从父顶点定向到源顶点。
 
-**方法：**
+**方法**：
 
 *   将所有顶点标记为不可见。 创建一组所有未访问的顶点。
 *   将零距离值分配给源顶点，将无限距离值分配给所有其他顶点。
@@ -201,9 +201,9 @@ int main()
 > 第 2 个顶点到源顶点 0 的距离为：3
 > 第 3 个顶点到源顶点 0 的距离 是：6
 
-**时间复杂度：** ![{\displaystyle \Theta ((|V|^{2})\log |V|)}](img/72fce0050b803ab4d702aea619568a1a.png "Rendered by QuickLaTeX.com")
+**时间复杂度**：![{\displaystyle \Theta ((|V|^{2})\log |V|)}](img/72fce0050b803ab4d702aea619568a1a.png "Rendered by QuickLaTeX.com")
 
-**相关文章：**我们已经在本文中讨论了使用拓扑排序的有向图中的最短路径； [有向无环图](https://www.geeksforgeeks.org/shortest-path-for-directed-acyclic-graphs/)中的最短路径
+**相关文章**：我们已经在本文中讨论了使用拓扑排序的有向图中的最短路径； [有向无环图](https://www.geeksforgeeks.org/shortest-path-for-directed-acyclic-graphs/)中的最短路径
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

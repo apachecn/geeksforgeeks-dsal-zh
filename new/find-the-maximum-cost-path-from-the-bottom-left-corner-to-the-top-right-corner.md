@@ -4,9 +4,9 @@
 
 给定一个二维网格，其每个像元包含整数成本，它代表穿越该像元的成本。 任务是找到从左下角到右上角的最大成本路径。
 
-**注意：**仅使用向上和向右移动
+**注意**：仅使用向上和向右移动
 
-**示例：**
+**示例**：
 
 ```
 Input : mat[][] = {{20, -10, 0}, 
@@ -23,9 +23,9 @@ Output : 24
 
 ```
 
-**先决条件：** [允许左，右，下和上移动的最小成本路径](https://www.geeksforgeeks.org/minimum-cost-path-left-right-bottom-moves-allowed/)
+**先决条件**：[允许左，右，下和上移动的最小成本路径](https://www.geeksforgeeks.org/minimum-cost-path-left-right-bottom-moves-allowed/)
 
-**方法：**的想法是使用[队列](http://www.geeksforgeeks.org/queue-data-structure/)维护一个单独的阵列，以存储所有单元的最大成本。 对于每个单元格，检查到达该单元格的当前成本是否大于先前的成本。 如果先前的成本最小，则使用当前成本更新单元格。
+**方法**：的想法是使用[队列](http://www.geeksforgeeks.org/queue-data-structure/)维护一个单独的阵列，以存储所有单元的最大成本。 对于每个单元格，检查到达该单元格的当前成本是否大于先前的成本。 如果先前的成本最小，则使用当前成本更新单元格。
 
 下面是上述方法的实现：
 

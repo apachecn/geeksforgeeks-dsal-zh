@@ -10,14 +10,14 @@ Johnson 算法的详细解释已经在[先前的文章](https://www.geeksforgeek
 
 本文着重介绍 Johnson 算法的实现。
 
-**算法：**
+**算法**：
 
 1.  假设给定的图为 G。向图中添加新的顶点 s，将新顶点的边添加至 G 的所有顶点。让修改后的图为 G’。
 2.  在 s 作为来源的 G’上运行 [Bellman-Ford 算法](https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/)。 令由 Bellman-Ford 计算的距离为 h [0]，h [1]，.. h [V-1]。 如果我们发现负体重循环，则返回。 请注意，负权重循环无法由新顶点 s 创建，因为 s 没有边。 所有边均来自。
 3.  重新加权原始图形的边缘。 对于每个边缘（u，v），将新权重分配为“原始权重+ h [u] – h [v]”。
 4.  删除添加的顶点，并为每个顶点运行 [Dijkstra 的算法](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)。
 
-**示例：**
+**示例**：
 让我们考虑下图。
 
 [![Johnson1](img/ae2b4ba8ab210e1d628b1bebf97da7d4.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Johnson1.png)
@@ -190,7 +190,7 @@ Vertex 3: 0
 
 ```
 
-**时间复杂度：**上述算法的时间复杂度为![O(V^3 + V*E)](img/55f33671be35d1b9117f0eba4d2a240f.png "Rendered by QuickLaTeX.com")，因为 Dijkstra 的算法将![O(n^2)](img/598be626cedc018633480e0f69670fd8.png "Rendered by QuickLaTeX.com")用于邻接矩阵。 注意，通过使用邻接表代替邻接矩阵来表示图，可以使上述算法更加有效。
+**时间复杂度**：上述算法的时间复杂度为![O(V^3 + V*E)](img/55f33671be35d1b9117f0eba4d2a240f.png "Rendered by QuickLaTeX.com")，因为 Dijkstra 的算法将![O(n^2)](img/598be626cedc018633480e0f69670fd8.png "Rendered by QuickLaTeX.com")用于邻接矩阵。 注意，通过使用邻接表代替邻接矩阵来表示图，可以使上述算法更加有效。
 
 
 

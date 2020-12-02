@@ -3,18 +3,18 @@
 > 原文： [https://www.geeksforgeeks.org/print-all-possible-shortest-chains-to-reach-a-target-word/](https://www.geeksforgeeks.org/print-all-possible-shortest-chains-to-reach-a-target-word/)
 
 给定两个字符串**开头**和**目标**（长度相同）和字符串 **str []** 列表，任务是打印所有可能的最小序列开头 从**开始从**到**目标**，如果序列中的相邻单词仅相差一个字符，并且序列中的每个单词都出现在给定列表中。
-**注意：**可以假设**目标**单词出现在列表中，并且所有单词的长度相同。 如果出现多个序列，请打印所有序列。
+**注意**：可以假设**目标**单词出现在列表中，并且所有单词的长度相同。 如果出现多个序列，请打印所有序列。
 
-**示例：**
+**示例**：
 
-> **输入：** str [] = {poon，plee，same，poie，plea，plie，poin}，开始=“卡通”，目标=“ plea”
-> **输出：** [[香椿，香椿，poin，poie，pee，恳求]]
-> **解释：**香椿→香椿→poin→poie→poie→plee→plea
+> **输入**：str [] = {poon，plee，same，poie，plea，plie，poin}，开始=“卡通”，目标=“ plea”
+> **输出**：[[香椿，香椿，poin，poie，pee，恳求]]
+> **解释**：香椿→香椿→poin→poie→poie→plee→plea
 > 
-> **输入：** str [] = {ted，tex，red，tax，tad，den，rex，pee}，start =“ red”，target =“ tax”
+> **输入**：str [] = {ted，tex，red，tax，tad，den，rex，pee}，start =“ red”，target =“ tax”
 > **输出** [[“ red”，“ ted”，“ tad”，“ tax”]，[“ red”，“ ted”，“ tex”，“ tax”]，[“ red”，“ rex”，“ tex” ，“税”]]
 
-**方法：**可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 解决问题。这里的棘手部分是执行路径的 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 而不是单词。 请按照以下步骤解决问题：
+**方法**：可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 解决问题。这里的棘手部分是执行路径的 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 而不是单词。 请按照以下步骤解决问题：
 
 1.  初始化变量，例如 **res** ，以存储所有可能的最短路径。
 2.  创建一个[设置](https://www.geeksforgeeks.org/set-in-cpp-stl/)将所有访问过的单词存储在当前路径中，当当前路径完成后，擦除所有访问过的单词。
@@ -161,9 +161,9 @@ int main()
 
 ```
 
-***时间复杂度：** O（N²* M），其中 **M** 是给定列表中的字符串数， **N** 是每个字符串的长度 。*
+***时间复杂度**：O（N²* M），其中`M`是给定列表中的字符串数，`N`是每个字符串的长度 。*
 
-***辅助空间：*** O（M * N）
+***辅助空间**：* O（M * N）
 
 
 

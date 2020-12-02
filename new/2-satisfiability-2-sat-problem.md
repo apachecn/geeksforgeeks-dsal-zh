@@ -6,10 +6,10 @@
 
 布尔可满足性或简单地 **SAT** 是确定布尔公式是否可满足或无法满足的问题。
 
-*   **可满足：**如果可以为布尔变量分配值，从而使公式变为 TRUE，则可以说该公式是可满足的。
-*   **无法满足：**如果无法分配此类值，那么我们说该公式无法满足。
+*   **可满足**：如果可以为布尔变量分配值，从而使公式变为 TRUE，则可以说该公式是可满足的。
+*   **无法满足**：如果无法分配此类值，那么我们说该公式无法满足。
 
-**示例：**
+**示例**：
 
 *   ![F = A \wedge \bar{B}](img/50c51e662a0fb2798ad3add9374154d2.png "Rendered by QuickLaTeX.com")是可满足的，因为 A = TRUE 而 B = FALSE 使 F = TRUE。
 *   ![G = A \wedge \bar{A}](img/411b9c148767992b00beb8f8151c77a3.png "Rendered by QuickLaTeX.com") , is unsatisfiable, because:
@@ -18,7 +18,7 @@
     | 真正 | 假 | 假 |
     | 假 | 真正 | 假 |
 
-**注意：**布尔可满足性问题是 [NP 完整](https://en.wikipedia.org/wiki/NP-completeness)（有关证明，请参考< a href =“ https://en.wikipedia.org/wiki/Cook%E2%80 ％93Levin_theorem“ target =” _ b ![](img/a3df0d612e936b5537c2c574fb95019b.png) lank“ > Cook's Theorem）。
+**注意**：布尔可满足性问题是 [NP 完整](https://en.wikipedia.org/wiki/NP-completeness)（有关证明，请参考< a href =“ https://en.wikipedia.org/wiki/Cook%E2%80 ％93Levin_theorem“ target =” _ b ![](img/a3df0d612e936b5537c2c574fb95019b.png) lank“ > Cook's Theorem）。
 
 ## 什么是 2-SAT 问题
 
@@ -26,11 +26,11 @@
 > 。
 
 为了更好地理解这一点，首先让我们看看什么是合取范式（CNF）或也称为和积（POS）。
-**CNF：** CNF 是子句的连接（AND），其中每个子句都是析取（OR）。
+**CNF**：CNF 是子句的连接（AND），其中每个子句都是析取（OR）。
 
 现在，2-SAT 将 SAT 问题限制为仅表示为 CNF 且每个子句仅具有 **2 项**（也称为 **2-CNF** ）的布尔公式。
 
-**示例：** ![F = (A_1 \vee  B_1) \wedge (A_2 \vee  B_2) \wedge (A_3 \vee  B_3) \wedge ....... \wedge (A_m \vee  B_m)](img/20189f67d281d57c1ddb975db7bc08b5.png "Rendered by QuickLaTeX.com")
+**示例**：![F = (A_1 \vee  B_1) \wedge (A_2 \vee  B_2) \wedge (A_3 \vee  B_3) \wedge ....... \wedge (A_m \vee  B_m)](img/20189f67d281d57c1ddb975db7bc08b5.png "Rendered by QuickLaTeX.com")
 
 因此，2 满足性问题可以表述为：
 
@@ -76,7 +76,7 @@ Output : The given expression is unsatisfiable.
 
 ![](img/65cd9961ac488bce964909fbcc63db4b.png)
 
-**注意：**的含义（如果是 A 则为 B）等同于它的对立含义（如果是![\bar{B}](img/2f94f6ffdd6d9b1b3e8a3388146fd120.png "Rendered by QuickLaTeX.com")则为![\bar{A}](img/996972300e2bf0ed25f5357e4ce5c403.png "Rendered by QuickLaTeX.com")）。
+**注意**：的含义（如果是 A 则为 B）等同于它的对立含义（如果是![\bar{B}](img/2f94f6ffdd6d9b1b3e8a3388146fd120.png "Rendered by QuickLaTeX.com")则为![\bar{A}](img/996972300e2bf0ed25f5357e4ce5c403.png "Rendered by QuickLaTeX.com")）。
 
 现在，考虑以下情况：
 
@@ -102,12 +102,12 @@ One edge requires X to be TRUE and the other one requires X to be FALSE.
 Thus, there is no possible assignment in such a case.
 ```
 
-**结论：**如果任意两个变量![X](img/59b7a374463461b94c69694c7948bf35.png "Rendered by QuickLaTeX.com")和![\bar{X}](img/4984e36db71f55a531274f258b6f7956.png "Rendered by QuickLaTeX.com")处于循环中，即![path(\bar{A} \rightarrow B) \& path({B} \rightarrow A)](img/48eef735295e78678f653988e9d3b681.png "Rendered by QuickLaTeX.com")都存在，则 CNF 不能满足要求。 否则，可能存在分配并且 CNF 是可满足的。
+**结论**：如果任意两个变量![X](img/59b7a374463461b94c69694c7948bf35.png "Rendered by QuickLaTeX.com")和![\bar{X}](img/4984e36db71f55a531274f258b6f7956.png "Rendered by QuickLaTeX.com")处于循环中，即![path(\bar{A} \rightarrow B) \& path({B} \rightarrow A)](img/48eef735295e78678f653988e9d3b681.png "Rendered by QuickLaTeX.com")都存在，则 CNF 不能满足要求。 否则，可能存在分配并且 CNF 是可满足的。
 请注意，由于以下隐含属性，我们使用路径：
 如果我们具有![(A \Rightarrow B) \& (B \Rightarrow C),  then  A \Rightarrow C](img/0684baa4a07e52f5396f5fe776cad8ce.png "Rendered by QuickLaTeX.com")
 因此，如果我们在隐含图中有路径，则与具有 直接边缘。
 
-**实施观点的结论：**
+**实施观点的结论**：
 如果 X 和![\bar{X}](img/4984e36db71f55a531274f258b6f7956.png "Rendered by QuickLaTeX.com")都位于同一 SCC（牢固连接的组件）中，则 CNF 不能满足要求。
 有向图的强连接组件具有节点，因此可以从该 SCC 中的每个其他节点到达每个节点。
 现在，如果 X 和![\bar{X}](img/4984e36db71f55a531274f258b6f7956.png "Rendered by QuickLaTeX.com")位于同一 SCC 上，则我们肯定会出现![path(\bar{A} \rightarrow B) \& path({B} \rightarrow A)](img/48eef735295e78678f653988e9d3b681.png "Rendered by QuickLaTeX.com")，因此得出结论。
@@ -304,7 +304,7 @@ The given expression is satisfiable.
 
 ```
 
- **更多测试用例：**
+ **更多测试用例**：
 
 ```
 Input : n = 2, m = 3

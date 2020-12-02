@@ -1024,7 +1024,7 @@ Minimum Cost Spanning Tree: 19
 
 ```
 
-**时间复杂度：** O（ElogE）或 O（ElogV）。 边缘排序需要 O（ELogE）时间。 排序后，我们遍历所有边缘并应用 find-union 算法。 查找和联合操作最多需要 O（LogV）时间。 因此，总体复杂度为 O（ELogE + ELogV）时间。 E 的值最多为 O（V <sup>2</sup> ），因此 O（LogV）等于 O（LogE）。 因此，总体时间复杂度为 O（ElogE）或 O（ElogV）
+**时间复杂度**：O（ElogE）或 O（ElogV）。 边缘排序需要 O（ELogE）时间。 排序后，我们遍历所有边缘并应用 find-union 算法。 查找和联合操作最多需要 O（LogV）时间。 因此，总体复杂度为 O（ELogE + ELogV）时间。 E 的值最多为 O（V <sup>2</sup> ），因此 O（LogV）等于 O（LogE）。 因此，总体时间复杂度为 O（ElogE）或 O（ElogV）
 
 参考文献：
 [http://www.ics.uci.edu/~eppstein/161/960206.html](http://www.ics.uci.edu/~eppstein/161/960206.html)

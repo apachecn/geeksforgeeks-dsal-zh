@@ -2,21 +2,21 @@
 
 > 原文： [https://www.geeksforgeeks.org/number-of-ways-to-select-a-node-from-each-connected-component/](https://www.geeksforgeeks.org/number-of-ways-to-select-a-node-from-each-connected-component/)
 
-给定一个具有 **N** 个节点和 **M** 个边的图。 任务是找到从给定图的每个连接组件中选择节点的方法。
+给定一个具有`N`个节点和`M`个边的图。 任务是找到从给定图的每个连接组件中选择节点的方法。
 
-**示例：**
+**示例**：
 
-> **输入：**
+> **输入**：
 > ![](img/2d48dcc28c566342e1e748cc4174f8db.png)
-> **输出：** 3
+> **输出**：3
 > （1、4），（2、4），（3、4）是可行的方式。
 > 
-> **输入：**
+> **输入**：
 > ![](img/27fca39eeadeb691de5b87e103e51061.png)
-> **输出：** 6
+> **输出**：6
 > （1、4、5），（2、4、5），（3、4 5），（1、4、6），（2、4、6），（3、4、6）是可能的方式。
 
-**方法：**每个连接组件中节点数的乘积是必需的答案。 运行一个简单的 [dfs](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) ，以查找每个连接的组件中的节点数。
+**方法**：每个连接组件中节点数的乘积是必需的答案。 运行一个简单的 [dfs](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) ，以查找每个连接的组件中的节点数。
 
 下面是上述方法的实现：
 

@@ -4,14 +4,14 @@
 
 给定一棵树，以及所有节点的权重，任务是计算权重为完美 Square 的节点数。
 
-**示例：**
+**示例**：
 
-> **输入：**
+> **输入**：
 > ![](img/a9d4a65898410e330e2c568271328ab9.png)
-> **输出：** 3
+> **输出**：3
 > 仅节点 1、4 和 5 的权重是完美平方。
 
-**方法：**在树上执行 [dfs](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，对于每个节点，检查其权重是否为理想平方。
+**方法**：在树上执行 [dfs](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，对于每个节点，检查其权重是否为理想平方。
 
 下面是上述方法的实现：
 

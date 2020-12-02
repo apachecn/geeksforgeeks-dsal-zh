@@ -2,9 +2,9 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-if-given-path-between-two-nodes-of-a-graph-represents-a-shortest-paths/](https://www.geeksforgeeks.org/check-if-given-path-between-two-nodes-of-a-graph-represents-a-shortest-paths/)
 
-给定一个未加权的有向图和由该图的两个节点之间的遍历序列组成的 **Q** 查询，任务是确定序列是否表示两个节点之间的最短路径之一。
+给定一个未加权的有向图和由该图的两个节点之间的遍历序列组成的`Q`查询，任务是确定序列是否表示两个节点之间的最短路径之一。
 
-**示例：**
+**示例**：
 
 ```
 Input: 1 2 3 4
@@ -22,7 +22,7 @@ Output: YES
 
 ```
 
-**方法：**
+**方法**：
 这个想法是使用 **Floyd Warshall 算法**存储所有成对顶点的长度。 如果序列的起点和终点之间的最短路径的长度比序列的长度小一，则给定的序列表示节点之间的最短路径之一。
 
 下面是上述方法的实现：

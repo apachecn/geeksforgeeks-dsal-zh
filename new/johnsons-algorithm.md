@@ -13,7 +13,7 @@ Johnson 算法的思想是为每个顶点分配权重。 令分配给顶点 u �
 
 我们如何计算 h []值？ [Bellman-Ford 算法](https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/)用于此目的。 以下是完整的算法。 新的顶点将添加到图中，并连接到所有现有的顶点。 从新顶点到所有现有顶点的最短距离值是 h []值。
 
-**算法：**
+**算法**：
 **1）**令给定图为 G。向图添加新顶点 s，将新顶点的边添加至 G 的所有顶点。让修改后的图 成为 G'。
 
 **2）**在 s 为源的 G’上运行 [Bellman-Ford 算法](https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/)。 令由 Bellman-Ford 计算的距离为 h [0]，h [1]，.. h [V-1]。 如果我们发现负体重循环，则返回。 请注意，负权重循环无法由新顶点 s 创建，因为 s 没有边。 所有边均来自。
@@ -36,9 +36,9 @@ Johnson 算法的思想是为每个顶点分配权重。 令分配给顶点 u �
 我们使用 Bellman-Ford 算法计算从 4 到所有其他顶点的最短距离。 从 4 到 0、1、2 和 3 的最短距离分别为 0，-5，-1 和 0，即 h [] = {0，-5，-1、0}。 一旦获得这些距离，就可以删除源顶点 4 并使用以下公式对边缘进行加权。  w（u，v）= w（u，v）+ h [u]-h [v]。
  [![Johnson3](img/97257f4232776f80eadfd9051f5a27ad.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Johnson3.png) 
 由于现在所有权重都为正，因此我们可以对每个顶点作为源运行 Dijkstra 的最短路径算法。
-**时间复杂度：**算法中的主要步骤是调用一次的 Bellman Ford 算法和调用 V 的 Dijkstra。  Bellman Ford 的时间复杂度为 O（VE），而 Dijkstra 的时间复杂度为 O（VLogV）。 因此，总体时间复杂度为 O（V <sup> 2 </sup> log V + VE）。  
+**时间复杂度**：算法中的主要步骤是调用一次的 Bellman Ford 算法和调用 V 的 Dijkstra。  Bellman Ford 的时间复杂度为 O（VE），而 Dijkstra 的时间复杂度为 O（VLogV）。 因此，总体时间复杂度为 O（V <sup> 2 </sup> log V + VE）。  
 图完成时，约翰逊算法的时间复杂度与 [Floyd Warshell](https://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/) 相同（对于完整图 E = O（V <sup>2</sup> ）。但是对于稀疏图，则 该算法的性能比 [Floyd Warshell](https://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/) 好得多。
-**参考：** 
+**参考**：
  [ Clifford Stein，Thomas H. Cormen，Charles E. Leiserson 和 Ronald L. Rivest 撰写的算法第三版](http://www.flipkart.com/introduction-algorithms-3/p/itmczynzhyhxv2gs?pid=9788120340077&affid=sandeepgfg) 
  [ http：//  www.youtube.com/watch?v=b6LOHvCzmkI ](http://www.youtube.com/watch?v=b6LOHvCzmkI) 
  [ http://www.youtube.com/watch?v=TV2Z6nbo1ic ](http://www.youtube.com/watch?v=TV2Z6nbo1ic) 

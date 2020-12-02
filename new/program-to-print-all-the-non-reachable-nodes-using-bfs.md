@@ -4,7 +4,7 @@
 
 给定[无向图](https://www.geeksforgeeks.org/graph-and-its-representations/)和**顶点集**，我们必须使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)打印给定头节点中的所有不可访问节点。
 
-**例如：**
+**例如**：
 
 > 考虑以下具有两个断开连接的组件的无向图：
 > 
@@ -12,7 +12,7 @@
 > 
 > 在此图中，如果我们将 0 视为头节点，则节点 0、1 和 2 是可到达的。 我们将所有可达节点标记为已访问。 所有未标记为已访问的节点，即节点 3 和 4 都是不可访问的节点。
 
-**示例：**
+**示例**：
 
 ```
 Input: 5
@@ -32,7 +32,7 @@ Input: 8
 Output: 3 4 5 6 7
 ```
 
-**方法：**
+**方法**：
 
 *   为此，我们可以使用 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 或 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。 [本文的设置 1](https://www.geeksforgeeks.org/count-number-non-reachable-nodes/) 实现了 DFS 方法。 在本文中，将使用 BFS 方法。
 *   我们从给定的来源进行 BFS。 由于给定的图是无向的，所以属于断开连接的组件的所有顶点都是不可访问的节点。 为此，我们使用访问数组，该数组用于跟踪 BFS 中未访问的顶点。

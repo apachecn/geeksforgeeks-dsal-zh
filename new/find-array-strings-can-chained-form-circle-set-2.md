@@ -3,7 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/find-array-strings-can-chained-form-circle-set-2/](https://www.geeksforgeeks.org/find-array-strings-can-chained-form-circle-set-2/)
 
 给定一个字符串数组，查找给定的字符串是否可以链接形成一个圆。 如果 X 的最后一个字符与 Y 的第一个字符相同，则可以将一个字符串 X 放在另一个字符串 Y 之前，放在一个圆圈中。
-**示例：**
+**示例**：
 
 ```
 Input: arr[] = {"geek", "king"}
@@ -279,7 +279,7 @@ else:
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Ordering is possible

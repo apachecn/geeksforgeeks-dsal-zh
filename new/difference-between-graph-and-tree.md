@@ -16,7 +16,7 @@
 
 G = {{V <sub>1</sub> ，V <sub>2</sub> ，V <sub>3</sub> ，V <sub>4</sub> ，V <sub>5</sub> ，V <sub>6</sub> }，{E <sub>1</sub> ，E <sub>2</sub> ，E <sub>3</sub> ，E <sub>4</sub> ，E <sub>5</sub> ，E <sub>6</sub> ，E <sub>7</sub> }}
 
-**[树](https://www.geeksforgeeks.org/binary-tree-data-structure/)：**
+**[树](https://www.geeksforgeeks.org/binary-tree-data-structure/)**：
 
 一棵树是一个或多个节点的有限集，使得–
 

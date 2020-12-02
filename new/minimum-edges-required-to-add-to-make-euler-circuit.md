@@ -4,9 +4,9 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-edges-required-to-add-to-make-euler-circuit/](https://www.geeksforgeeks.org/minimum-edges-required-to-add-to-make-euler-circuit/)
 
-给定 **n** 个节点和 **m** 边的无向图。 任务是在给定图中找到制造[欧拉电路](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)所需的最小边沿。
+给定`n`个节点和`m`边的无向图。 任务是在给定图中找到制造[欧拉电路](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)所需的最小边沿。
 
-**示例：**
+**示例**：
 
 ```
 Input : n = 3, 

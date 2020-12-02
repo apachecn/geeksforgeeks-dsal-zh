@@ -4,22 +4,22 @@
 
 > 原文： [https://www.geeksforgeeks.org/path-with-minimum-xor-sum-of-edges-in-a-directed-graph/](https://www.geeksforgeeks.org/path-with-minimum-xor-sum-of-edges-in-a-directed-graph/)
 
-给定一个有 **N** 个节点和 **E** 边的有向图，一个源 **S** 和一个目标 **D** 节点。 任务是找到从 **S** 到 **D** 具有最小边沿 XOR 之和的路径。 如果没有从 **S** 到 **D** 的路径，则打印 **-1** 。
+给定一个有`N`个节点和`E`边的有向图，一个源`S`和一个目标`D`节点。 任务是找到从`S`到`D`具有最小边沿 XOR 之和的路径。 如果没有从`S`到`D`的路径，则打印 **-1** 。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 3，E = 3，边线= {{{{1，2}，5}，{{1，3}，9}，{{2，3}，1}}， S = 1，D = 3
-> **输出：** 4
+> **输入**：N = 3，E = 3，边线= {{{{1，2}，5}，{{1，3}，9}，{{2，3}，1}}， S = 1，D = 3
+> **输出**：4
 > 边权重的最小 XOR 的路径为 1- > 2- > 3
 > ，XOR 和为 如 5 ^ 1 = 4。
 > 
-> **输入：** N = 3，E = 3，边线= {{{{3，2}，5}，{{3，3}，9}，{{3，3}，1}}， S = 1，D = 3
-> **输出：** -1
+> **输入**：N = 3，E = 3，边线= {{{{3，2}，5}，{{3，3}，9}，{{3，3}，1}}， S = 1，D = 3
+> **输出**：-1
 
-**方法：**这个想法是使用 [Dijkstra 的最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)并稍有变化。 下面是解决问题的分步方法：
+**方法**：这个想法是使用 [Dijkstra 的最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)并稍有变化。 下面是解决问题的分步方法：
 
-*   **基本情况：**如果源节点等于目的地，则返回 **0** 。
-*   使用源节点及其权重为 **0** 和访问的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)初始化[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)。
+*   **基本情况**：如果源节点等于目的地，则返回`0`。
+*   使用源节点及其权重为`0`和访问的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)初始化[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)。
 *   当优先级队列不为空时：
     1.  从优先级队列中弹出最上面的元素。 我们称其为当前节点。
     2.  在被访问数组的帮助下检查当前节点是否已被访问，如果是，则继续。
@@ -199,7 +199,7 @@ if __name__ == '__main__':
 
 ```
 
-***时间复杂度：** O（（E + V）logV）*
+***时间复杂度**：O（（E + V）logV）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

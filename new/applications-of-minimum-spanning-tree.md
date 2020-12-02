@@ -31,7 +31,7 @@ MST 是各种应用程序的基本问题。
 k 聚类问题可以看作是找到一个 MST 并删除了 k-1 个最昂贵的
 边缘。
 
-**来源：**
+**来源**：
 [http://www.cs.princeton.edu/courses/archive/spr07/cos226/lectures/mst.pdf](http://www.cs.princeton.edu/courses/archive/spr07/cos226/lectures/mst.pdf)
 [http： //www.ics.uci.edu/~eppstein/161/960206.html](http://www.ics.uci.edu/~eppstein/161/960206.html)
 

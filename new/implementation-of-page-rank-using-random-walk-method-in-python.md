@@ -2,13 +2,13 @@
 
 > 原文： [https://www.geeksforgeeks.org/implementation-of-page-rank-using-random-walk-method-in-python/](https://www.geeksforgeeks.org/implementation-of-page-rank-using-random-walk-method-in-python/)
 
-**先决条件：** [页面等级算法和实现](https://www.geeksforgeeks.org/page-rank-algorithm-implementation/)，[随机游走](https://www.geeksforgeeks.org/random-walk-implementation-python/)
+**先决条件**：[页面等级算法和实现](https://www.geeksforgeeks.org/page-rank-algorithm-implementation/)，[随机游走](https://www.geeksforgeeks.org/random-walk-implementation-python/)
 
 在社交网络中，页面排名是一个非常重要的主题。 基本上，页面排名不过是根据网页的重要性和搜索相关性对网页进行排名的方式。 所有搜索引擎都使用页面排名。 Google 是使用网页图表使用网页排名的最佳示例。
 
 **随机游动方法** –在随机游动方法中，我们将从图中均匀地随机选择 1 个节点。 选择节点后，我们将查看其邻居并随机地均匀选择一个邻居，并继续进行这些迭代，直到达到收敛为止。 在 N 次迭代之后，将出现一个点，之后每个节点的 In points 都将保持不变。 这种情况称为收敛。
 
-**算法：**以下是实现随机游走方法的步骤。
+**算法**：以下是实现随机游走方法的步骤。
 
 1.  创建具有 N 个节点的有向图。
 2.  现在执行随机行走。
@@ -90,7 +90,7 @@ for i in p_sort:
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 PageRank using Random Walk Method

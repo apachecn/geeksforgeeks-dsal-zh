@@ -2,9 +2,9 @@
 
 > 原文： [https://www.geeksforgeeks.org/number-pair-positions-matrix-not-accessible/](https://www.geeksforgeeks.org/number-pair-positions-matrix-not-accessible/)
 
-给定正整数 **N** 。 考虑 **N X N** 的矩阵。 除了（x1，y1），（x2，y2）形式的给定配对单元格外，其他任何单元格都无法访问任何单元格，即在（x2，y2）到（x1，y1）之间存在一条路径（可访问） 。 任务是找到对（a1，b1），（a2，b2）的计数，以使无法从（a1，b1）访问单元（a2，b2）。
+给定正整数`N`。 考虑 **N X N** 的矩阵。 除了（x1，y1），（x2，y2）形式的给定配对单元格外，其他任何单元格都无法访问任何单元格，即在（x2，y2）到（x1，y1）之间存在一条路径（可访问） 。 任务是找到对（a1，b1），（a2，b2）的计数，以使无法从（a1，b1）访问单元（a2，b2）。
 
-**示例：**
+**示例**：
 
 ```
 Input : N = 2

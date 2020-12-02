@@ -2,13 +2,13 @@
 
 > 原文： [https://www.geeksforgeeks.org/count-nodes-having-bitwise-xor-of-all-edges-in-their-path-from-the-root-equal-to-k/](https://www.geeksforgeeks.org/count-nodes-having-bitwise-xor-of-all-edges-in-their-path-from-the-root-equal-to-k/)
 
-给定[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，它由 **N** 个节点和两个整数 **R** 和 **K** 组成。 树的每个边缘都有一个与之关联的正整数，形式为 **{u，v，w}** ，其中边缘**（u，v）**的权重为 **w** 。 任务是计算从根 **R** 到 **S** 的路径中所有边的 [S 的所有边的 **S** 节点数 到 **K** 。](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/)
+给定[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，它由`N`个节点和两个整数`R`和`K`组成。 树的每个边缘都有一个与之关联的正整数，形式为 **{u，v，w}** ，其中边缘**（u，v）**的权重为`w`。 任务是计算从根`R`到`S`的路径中所有边的 [S 的所有边的`S`节点数 到`K`。](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/)
 
-**示例：**
+**示例**：
 
-> **输入：** R = 1，K = 0，N = 7，Edges [] [] = {{1,2,3}，{1，3，1}，{2，4，3} ，{2、5、4}，{3、6、1}，{3、7、2}}
-> **输出：** 2
-> **说明：** [HTG8 给定二叉树的表示形式：
+> **输入**：R = 1，K = 0，N = 7，Edges [] [] = {{1,2,3}，{1，3，1}，{2，4，3} ，{2、5、4}，{3、6、1}，{3、7、2}}
+> **输出**：2
+> **说明**：[HTG8 给定二叉树的表示形式：
 > 
 > ![](img/fab03d8ba91f1d13a13682aa14b48b62.png)
 > 
@@ -16,9 +16,9 @@
 > 对 1：（1，4）=（3 ^ 3）= 0
 > 对 2：（1，6）= （1 ^ 1）= 0
 > 
-> **输入：** R = 1，K = 0，N = 9，Edges [] [] = {{1,2,3}，{1，3，2}，{2，4，3} ，{2，5，4}，{3，6，1}，{3，7，2}，{6，8，3}，{6，9，7}}
-> **输出：** 3
-> **解释：**
+> **输入**：R = 1，K = 0，N = 9，Edges [] [] = {{1,2,3}，{1，3，2}，{2，4，3} ，{2，5，4}，{3，6，1}，{3，7，2}，{6，8，3}，{6，9，7}}
+> **输出**：3
+> **解释**：
 > 给定二叉树的表示如下：
 > 
 > ![](img/6dd83bc0b42f31d6cdbc35c5e54dfe89.png)
@@ -28,12 +28,12 @@
 > 对 2：（1，8）= （2 ^ 1 ^ 3）= 0
 > 对 3：（1，7）=（2 ^ 2）= 0
 
-**方法：**可以使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)方法解决该问题。 请按照以下步骤解决问题：
+**方法**：可以使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)方法解决该问题。 请按照以下步骤解决问题：
 
-1.  用 **0** 初始化变量**和**和 **xor** ，以存储对数和当前边的 [xor](http://www.geeksforgeeks.org/calculate-xor-1-n/) 。
-2.  [使用](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)从给定的根顶点 **R** 遍历给定的树。
-3.  对于每个节点 **u** ，请访问其相邻节点。
-4.  对于每个边 **{u，v}** ，如果 **xor** 等于 **K** ，则将**和**递增 **1** 。 否则，对于当前边沿 **{u，v，w}** ，将 **xor** 更新为 **xor =（xor ^ w）**，其中^是按位的 [XOR](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/) 。
+1.  用`0`初始化变量**和**和 **xor** ，以存储对数和当前边的 [xor](http://www.geeksforgeeks.org/calculate-xor-1-n/) 。
+2.  [使用](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)从给定的根顶点`R`遍历给定的树。
+3.  对于每个节点`u`，请访问其相邻节点。
+4.  对于每个边 **{u，v}** ，如果 **xor** 等于`K`，则将**和**递增`1`。 否则，对于当前边沿 **{u，v，w}** ，将 **xor** 更新为 **xor =（xor ^ w）**，其中^是按位的 [XOR](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/) 。
 5.  遍历后，将存储在计数器**和**中的值打印为对数。
 
 下面是上述方法的实现：
@@ -445,8 +445,8 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N），其中 **N** 是节点数。*
-***辅助空间：** O（N）*
+***时间复杂度**：O（N），其中`N`是节点数。*
+***辅助空间**：O（N）*
 
 
 

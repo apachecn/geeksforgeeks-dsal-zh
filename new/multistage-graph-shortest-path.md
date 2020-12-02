@@ -61,7 +61,7 @@ M(3, 4)  M(3, 5)  M(3, 4)  M(3, 5) M(3, 6)  M(3, 6)
 
 因此，在这里我们绘制了递归树的一小部分，并且我们已经可以看到重叠子问题。 我们可以使用动态编程大大减少 M（x，y）个评估的数量。
 
-**实现细节：**
+**实现细节**：
 以下实现假定从第一阶段（源）到最后阶段（目标）从 0 到 N-1 编号节点。 我们还假设输入图是多阶段的。
 
 ## C ++
@@ -358,7 +358,7 @@ class GFG 
 
 ```
 
-**时间复杂度：** O（n <sup>2</sup> ）
+**时间复杂度**：O（n <sup>2</sup> ）
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

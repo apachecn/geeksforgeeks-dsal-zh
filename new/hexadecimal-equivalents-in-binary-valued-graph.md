@@ -4,34 +4,34 @@
 
 > 原文： [https://www.geeksforgeeks.org/hexadecimal-equivalents-in-binary-valued-graph/](https://www.geeksforgeeks.org/hexadecimal-equivalents-in-binary-valued-graph/)
 
-给定具有 **V** 顶点和 **E** 边的二进制值[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，任务是找到所有连接组件的**十六进制等效项** 图的 可以将二进制值图视为仅将二进制数**（0 或 1）**作为顶点值。
+给定具有`V`顶点和`E`边的二进制值[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，任务是找到所有连接组件的**十六进制等效项** 图的 可以将二进制值图视为仅将二进制数**（0 或 1）**作为顶点值。
 
-**示例：**
+**示例**：
 
-> **输入：** E = 4，V = 7
+> **输入**：E = 4，V = 7
 > 
 > ![](img/fb50e4ce31778dd68a347b016976fde7.png)
 > 
-> **输出：**
+> **输出**：
 > 链= 0 1 十六进制当量= 1
 > 链= 0 0 0 十六进制当量= 0
 > 链= 1 1 十六进制当量= 3
-> **说明：**
+> **说明**：
 > 在第一个连接的组件的情况下，二进制链为[0，1]
 > 因此，二进制字符串=“ 01”且二进制数= 01
 > 因此，十六进制等效项= 1
 > 
-> **输入：** E = 6，V = 10
+> **输入**：E = 6，V = 10
 > 
 > ![](img/83927206790a724c02078daf19b731bf.png)
 > 
-> **输出：**
+> **输出**：
 > 链= 1 十六进制当量= 1
 > 链= 0 0 1 0 十六进制当量= 2
 > 链= 1 1 0 十六进制当量= 6
 > 链= 1 0 十六进制当量= 2
 
-**方法：**的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连接组件，如本文的[中所述。 对于每个连接的组件，将显示二进制字符串，并根据该](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[这篇](https://www.geeksforgeeks.org/convert-binary-number-hexadecimal-number/)文章中的说明从二进制值计算等效的十六进制值并进行打印。
+**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连接组件，如本文的[中所述。 对于每个连接的组件，将显示二进制字符串，并根据该](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[这篇](https://www.geeksforgeeks.org/convert-binary-number-hexadecimal-number/)文章中的说明从二进制值计算等效的十六进制值并进行打印。
 
 下面是上述方法的实现：
 
@@ -559,7 +559,7 @@ Chain = 1 1 0 1 1
 
 ```
 
-***时间复杂度：** O（V <sup>2</sup> ）*
+***时间复杂度**：O（V <sup>2</sup> ）*
 *DFS 算法要求 O（V + E）复杂度，其中 V，E 为 无向图的顶点和边缘。 此外，在每次迭代时都需要获得十六进制等效值，这需要额外的 O（V）复杂度才能进行计算。 因此，整体复杂度为 **O（V <sup>2</sup> ）**。*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)

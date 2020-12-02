@@ -4,30 +4,30 @@
 
 > 原文： [https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-an-undirected-graph/](https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-an-undirected-graph/)
 
-给定一个**无向图**，它具有 **N** 个顶点和 **E** 边以及该图中的两个顶点**（U，V）**， 检测两个顶点之间是否存在路径。 如果存在路径，则打印*为“是”* ，否则为*为“否”* 。
+给定一个**无向图**，它具有`N`个顶点和`E`边以及该图中的两个顶点**（U，V）**， 检测两个顶点之间是否存在路径。 如果存在路径，则打印*为“是”* ，否则为*为“否”* 。
 
-**示例：**
+**示例**：
 
 > ![](img/fbfbd47a09dd9db832129c27a4d723b5.png)
 > 
 > U = 1，V = 2
-> **输出：**否
-> **说明：**
+> **输出**：否
+> **说明**：
 > 两点之间没有边，因此无法从 2 到达 2 1。
 > 
-> **输入：**
+> **输入**：
 > 
 > ![](img/e702ad1cb17be9b5c95d5c5ee728c0ac.png)
 > 
 > U = 1，V = 3
-> **输出：**是
-> **说明：**顶点 3 从顶点 1 经由顶点 2 或 4。
+> **输出**：是
+> **说明**：顶点 3 从顶点 1 经由顶点 2 或 4。
 
-**天真的方法：**
+**天真的方法**：
 的想法是使用 [Floyd Warshall 算法](http://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/)。 为了解决该问题，我们需要尝试所有范围为 **[1，N]** 的中间顶点，然后检查：
 
 1.  如果两个节点之间已经存在直接边缘。
-2.  或者，我们具有从节点 **i** 到中间节点 **k** 的路径，以及从节点 **k** 到节点 **j** 的路径。
+2.  或者，我们具有从节点`i`到中间节点`k`的路径，以及从节点`k`到节点`j`的路径。
 
 下面是上述方法的实现：
 
@@ -229,8 +229,8 @@ if __name__=='__main__':
 Yes
 ```
 
-***时间复杂度：** O（V <sup>3</sup> ）*
-***辅助空间：** O（V <sup>2</sup> ）*
+***时间复杂度**：O（V <sup>3</sup> ）*
+***辅助空间**：O（V <sup>2</sup> ）*
 
 **高效解决方案**，
 我们可以使用 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 或 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 查找从 u 到 v 的路径。以下是基于 BFS 的解决方案
@@ -350,8 +350,8 @@ int main()
 There is a path from 1 to 3
 ```
 
-***时间复杂度：** O（V + E）*
-***辅助空间：** O（V）*
+***时间复杂度**：O（V + E）*
+***辅助空间**：O（V）*
 
 
 

@@ -466,7 +466,7 @@ Vertex   Distance from Source
 8                14
 ```
 
-**注意：**
+**注意**：
 **1）**该代码计算最短距离，但不计算路径信息。 我们可以创建一个父数组，在更新距离时更新父数组（例如 [prim 的实现](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)），并使用它显示从源到不同顶点的最短路径。
 
 **2）**该代码用于无向图，相同的 dijkstra 函数也可用于有向图。

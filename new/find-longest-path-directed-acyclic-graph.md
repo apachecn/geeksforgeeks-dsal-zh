@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/find-longest-path-directed-acyclic-graph/](https://www.geeksforgeeks.org/find-longest-path-directed-acyclic-graph/)
 
-给定一个加权的 **D** 关联的**一个**循环 **G** raph（DAG）及其源顶点 s，在其中找到从 s 到所有其他顶点的最长距离。 给定图。
+给定一个加权的`D`关联的**一个**循环`G`raph（DAG）及其源顶点 s，在其中找到从 s 到所有其他顶点的最长距离。 给定图。
 
 一般图的最长路径问题不像最短路径问题那么容易，因为最长路径问题没有[最佳子结构属性](https://www.geeksforgeeks.org/dynamic-programming-set-2-optimal-substructure-property/)。 实际上，[最长路径问题是一般图形](http://en.wikipedia.org/wiki/Longest_path_problem)的 NP-Hard。 但是，最长路径问题对于有向无环图具有线性时间解。 这个想法类似于[线性时间解，用于有向无环图中的最短路径。](https://www.geeksforgeeks.org/shortest-path-for-directed-acyclic-graphs/) ，我们使用[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。
 
@@ -199,9 +199,9 @@ Following are longest distances from source vertex 1
 INF 0 2 9 8 10
 ```
 
-**时间复杂度：**拓扑排序的时间复杂度为 O（V + E）。 找到拓扑顺序后，该算法将处理所有顶点，并且对于每个顶点，它将为所有相邻顶点运行一个循环。 图中的相邻顶点总数为 O（E）。 因此，内部循环运行 O（V + E）次。 因此，该算法的总时间复杂度为 O（V + E）。
+**时间复杂度**：拓扑排序的时间复杂度为 O（V + E）。 找到拓扑顺序后，该算法将处理所有顶点，并且对于每个顶点，它将为所有相邻顶点运行一个循环。 图中的相邻顶点总数为 O（E）。 因此，内部循环运行 O（V + E）次。 因此，该算法的总时间复杂度为 O（V + E）。
 
-**练习：**上述解决方案可以打印最长距离，也可以将代码扩展到打印路径。
+**练习**：上述解决方案可以打印最长距离，也可以将代码扩展到打印路径。
 
 Micro Focus
 

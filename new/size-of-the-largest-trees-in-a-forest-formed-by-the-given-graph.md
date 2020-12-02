@@ -4,15 +4,15 @@
 
 > 原文： [https://www.geeksforgeeks.org/size-of-the-largest-trees-in-a-forest-formed-by-the-given-graph/](https://www.geeksforgeeks.org/size-of-the-largest-trees-in-a-forest-formed-by-the-given-graph/)
 
-给定一个**无向无环图**，它具有 **N 个**节点和 **M** 个边，任务是找到该图所形成的森林中最大的树的大小。
+给定一个**无向无环图**，它具有 **N 个**节点和`M`个边，任务是找到该图所形成的森林中最大的树的大小。
 
 > 森林是不相交的树木的集合。 换句话说，我们也可以说森林是一个无环图的集合，该图没有连接。
 
-**示例：**
+**示例**：
 
-> **输入：** N = 5，边缘[] [] = {{0，1}，{0，2}，{3，4}}
-> **输出：** 3 [
-> **解释：**
+> **输入**：N = 5，边缘[] [] = {{0，1}，{0，2}，{3，4}}
+> **输出**：3 [
+> **解释**：
 > 有 2 棵树，每个树的大小分别为 3 和 2。
 > 
 > ```
@@ -33,11 +33,11 @@
 > 
 > 因此，最大树的大小为 3。
 > 
-> **输入：** N = 5，边缘[] [] = {{0，1}，{0，2}，{3，4}，{0，4}，{3，5}}
+> **输入**：N = 5，边缘[] [] = {{0，1}，{0，2}，{3，4}，{0，4}，{3，5}}
 > 
 > 输出： 6
 
-**方法：**的想法是首先[计算每个森林中可到达节点](https://www.geeksforgeeks.org/find-all-reachable-nodes-from-every-node-present-in-a-given-set/)的数量。 因此：
+**方法**：的想法是首先[计算每个森林中可到达节点](https://www.geeksforgeeks.org/find-all-reachable-nodes-from-every-node-present-in-a-given-set/)的数量。 因此：
 
 *   在每个节点上应用 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，获取由该节点形成的树的大小，并检查是否从一个源访问了每个连接的节点。
 *   如果当前树的大小大于答案，则将答案更新为当前树的大小。
@@ -362,7 +362,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** *O（V + E）*，其中 V 是顶点数，E 是边数。
+**时间复杂度**：*O（V + E）*，其中 V 是顶点数，E 是边数。
 
 
 

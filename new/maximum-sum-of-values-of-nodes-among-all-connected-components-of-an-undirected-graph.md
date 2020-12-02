@@ -4,29 +4,29 @@
 
 > 原文： [https://www.geeksforgeeks.org/maximum-sum-of-values-of-nodes-among-all-connected-components-of-an-undirected-graph/](https://www.geeksforgeeks.org/maximum-sum-of-values-of-nodes-among-all-connected-components-of-an-undirected-graph/)
 
-给定具有 **V** 顶点和 **E** 边的无向图。 每个节点都被分配了一个给定的值。 任务是在图中所有连接的组件中找到具有最大值总和的连接链。
-**范例：**
+给定具有`V`顶点和`E`边的无向图。 每个节点都被分配了一个给定的值。 任务是在图中所有连接的组件中找到具有最大值总和的连接链。
+**范例**：
 
-> **输入：** V = 7，E = 4
+> **输入**：V = 7，E = 4
 > 值= {10，25，5，15，5，20，0}
 > 
 > ![](img/9255bcb43473debac85556f66c0f8245.png)
 > 
-> **输出：**最大和值= 35
-> **说明：**
+> **输出**：最大和值= 35
+> **说明**：
 > 组件{1，2} –值{10，25}：sumValue = 10 + 25 = 35
 > 分量{3，4，5} –值{5，15，5}：sumValue = 5 + 15 + 5 = 25
 > 分量{6，7} –值{20，0}：sumValue = 20 + 0 = 20
 > 最大和值链为{1、2}，值为{10，25}，因此答案为 35。
 > 
-> **输入：** V = 10，E = 6
+> **输入**：V = 10，E = 6
 > 值= {5，10，15，20，25，30，35，40，45，50}
 > 
 > ![](img/beabc5855ca715c86b194a754a8f3b8e.png)
 > 
-> **输出：**最大总和= 105
+> **输出**：最大总和= 105
 
-**方法：**的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)方法来跟踪所有连接的组件。 临时变量用于汇总连接链的各个值的所有值。 在每次遍历连接的组件时，将迄今为止最大的值与当前值进行比较并相应地进行更新。 遍历所有连接的组件后，答案最大。
+**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)方法来跟踪所有连接的组件。 临时变量用于汇总连接链的各个值的所有值。 在每次遍历连接的组件时，将迄今为止最大的值与当前值进行比较并相应地进行更新。 遍历所有连接的组件后，答案最大。
 
 下面是上述方法的实现：
 

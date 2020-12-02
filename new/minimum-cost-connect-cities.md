@@ -5,7 +5,7 @@
 有 n 个城市，其中一些城市之间有道路。 不知何故，所有道路同时遭到破坏。 我们必须修整道路以再次连接城市。 维修特定道路需要一定的费用。 找出通过修路连接所有城市的最低成本。 输入采用矩阵（城市）形式，如果 city [i] [j] = 0，则城市 i 和 j 之间没有任何道路，如果 city [i] [j] = a> 0，则重建城市的成本 城市 i 和城市 j 之间的路径是 a。 打印出连接所有城市的最低成本。
 确保在道路损坏之前所有城市都已连接。
 
-**示例：**
+**示例**：
 
 ```
 Input : {{0, 1, 2, 3, 4},
@@ -30,9 +30,9 @@ Output : 106
 
 ```
 
-**方法：**在这里，我们必须通过成本最低的路径连接所有城市。 这样做的方法是找出城市地图的最小生成树（ [MST](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/) ）（即，每个城市都是该图的一个节点，并且城市之间的所有受损道路都是边缘）。 总成本是在最小生成树中添加路径边缘值。
+**方法**：在这里，我们必须通过成本最低的路径连接所有城市。 这样做的方法是找出城市地图的最小生成树（ [MST](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/) ）（即，每个城市都是该图的一个节点，并且城市之间的所有受损道路都是边缘）。 总成本是在最小生成树中添加路径边缘值。
 
-**先决条件：** [MST Prim 的算法](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/)
+**先决条件**：[MST Prim 的算法](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/)
 
 ## C ++
 
@@ -398,7 +398,7 @@ if __name__ == '__main__':
 
 ```
 
-**复杂度：**外层循环（即向 MST 添加新节点的循环）运行 n 次，并且在循环的每次迭代中，需要 O（n）时间才能找到最小节点，而 O（n）时间则需要 更新第 u 个节点的相邻节点。 因此，总体复杂度为 O（n <sup>2</sup> ）
+**复杂度**：外层循环（即向 MST 添加新节点的循环）运行 n 次，并且在循环的每次迭代中，需要 O（n）时间才能找到最小节点，而 O（n）时间则需要 更新第 u 个节点的相邻节点。 因此，总体复杂度为 O（n <sup>2</sup> ）
 
 
 

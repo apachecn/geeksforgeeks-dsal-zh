@@ -2,35 +2,35 @@
 
 > 原文： [https://www.geeksforgeeks.org/convert-undirected-connected-graph-to-strongly-connected-directed-graph/](https://www.geeksforgeeks.org/convert-undirected-connected-graph-to-strongly-connected-directed-graph/)
 
-给定 **N** 个顶点和 **M** 边的[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，任务是向给定的 M 边分配方向，以使图成为[强连通 组件](https://www.geeksforgeeks.org/strongly-connected-components/)。 如果图形无法转换为牢固连接的组件，则打印**“ -1”** 。
-**范例：**
+给定`N`个顶点和`M`边的[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，任务是向给定的 M 边分配方向，以使图成为[强连通 组件](https://www.geeksforgeeks.org/strongly-connected-components/)。 如果图形无法转换为牢固连接的组件，则打印**“ -1”** 。
+**范例**：
 
-> **输入：** N = 5，Edges [] [] = {{0，1}，{0，2}，{1，2}，{1，4}，{2，3}，{ 3，4}}
-> **输出：**
+> **输入**：N = 5，Edges [] [] = {{0，1}，{0，2}，{1，2}，{1，4}，{2，3}，{ 3，4}}
+> **输出**：
 > 0- > 1
 > 2- > 0
 > 4- > 1
 > 3- > 4
 > 2- > 3
 > 1- > 2
-> **说明：**
+> **说明**：
 > 下面是上述无向图的指定边：
 > 
 > ![](img/1043ce0074841e21237946918fceb88c.png)
 > 
-> **输入：** N = 5，Edges [] [] = {{0，1}，{0，2}，{1，3}，{2，3}，{3，4}} [
-> **输出：** -1
-> **说明：**
+> **输入**：N = 5，Edges [] [] = {{0，1}，{0，2}，{1，3}，{2，3}，{3，4}} [
+> **输出**：-1
+> **说明**：
 > 下图是上述信息的图表：
 > 
 > ![](img/f7c799fd21274bb7cbd75c16ea78aeeb.png)
 > 
 > 由于上面未定向的图中存在桥。 因此，该图无法转换为 SCC。
 
-**方法：**我们知道在任何有向图中，只要该图的所有顶点都是某个循环的一部分，就可以说它在**强连接组件（SCC）**中。 当且仅当[图中包含任何桥](https://www.geeksforgeeks.org/bridge-in-a-graph/)时，给定的无向图才构成 SCC。 步骤如下：
+**方法**：我们知道在任何有向图中，只要该图的所有顶点都是某个循环的一部分，就可以说它在**强连接组件（SCC）**中。 当且仅当[图中包含任何桥](https://www.geeksforgeeks.org/bridge-in-a-graph/)时，给定的无向图才构成 SCC。 步骤如下：
 
 *   我们将使用数组 **mark []** 来存储 DFS 遍历期间的访问节点， **order []** 来存储访问节点的索引号，以及 **bridge_detect [] [** 以存储给定图中存在的任何桥。
-*   从顶点 **1** 开始 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)。
+*   从顶点`1`开始 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)。
 *   遍历当前节点的[邻接列表](https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/)并执行以下操作：
     *   如果在调用 DFS 时再次遍历任何边，则忽略该边。
     *   如果子节点（**节点 u** ）的顺序大于父节点（**节点 v** ）的顺序，则忽略此当前边，就像 **Edges（v，u ）**已被处理。

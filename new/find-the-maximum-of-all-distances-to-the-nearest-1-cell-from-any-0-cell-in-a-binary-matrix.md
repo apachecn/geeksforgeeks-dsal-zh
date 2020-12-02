@@ -2,11 +2,11 @@
 
 > 原文： [https://www.geeksforgeeks.org/find-the-maximum-of-all-distances-to-the-nearest-1-cell-from-any-0-cell-in-a-binary-matrix/](https://www.geeksforgeeks.org/find-the-maximum-of-all-distances-to-the-nearest-1-cell-from-any-0-cell-in-a-binary-matrix/)
 
-给定大小为 **N * N** 的[矩阵](https://www.geeksforgeeks.org/matrix/)，其中填充了 **1** 和 **0** 的对象，任务是找到最大距离 从 0 单元到最近的 1 单元。 如果矩阵仅填充 0 或 1，则返回-1。
+给定大小为 **N * N** 的[矩阵](https://www.geeksforgeeks.org/matrix/)，其中填充了`1`和`0`的对象，任务是找到最大距离 从 0 单元到最近的 1 单元。 如果矩阵仅填充 0 或 1，则返回-1。
 
-**注意：**矩阵中仅允许水平和垂直移动。
+**注意**：矩阵中仅允许水平和垂直移动。
 
-**示例：**
+**示例**：
 
 ```
 Input: 
@@ -289,8 +289,8 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** *O（M * N * P）*，其中网格的大小为 **M * N** ， **P** 的计数为 1 -细胞。
-**辅助空间：** *O（P）*
+**时间复杂度**：*O（M * N * P）*，其中网格的大小为 **M * N** ，`P`的计数为 1 -细胞。
+**辅助空间**：*O（P）*
 
 **方法 2：使用** [**BFS**](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 。 我们可以找到的最大层数就是答案。
 
@@ -607,8 +607,8 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度：** *O（M * N）*
-**辅助空间：** *O（M * N）*
+**时间复杂度**：*O（M * N）*
+**辅助空间**：*O（M * N）*
 
 **方法 3：使用** [**动态编程**](http://www.geeksforgeeks.org/dynamic-programming/)
 
@@ -818,8 +818,8 @@ public static void main(String[] args)
 
 ```
 
-**时间复杂度：** *O（M * N）*
-**辅助空间：** *O（1）*
+**时间复杂度**：*O（M * N）*
+**辅助空间**：*O（1）*
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

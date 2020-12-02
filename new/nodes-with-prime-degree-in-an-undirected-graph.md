@@ -5,11 +5,11 @@
 > 原文： [https://www.geeksforgeeks.org/nodes-with-prime-degree-in-an-undirected-graph/](https://www.geeksforgeeks.org/nodes-with-prime-degree-in-an-undirected-graph/)
 
 给定[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，其中 **N 个**顶点且 **M 个**边，任务是打印给定图的度为[素数的所有节点](https://www.geeksforgeeks.org/prime-numbers/) 。
-**范例：**
+**范例**：
 
-> **输入：** N = 4，arr [] [] = {{1，2}，{1，3}，{1，4}，{2，3}，{2，4}，{ 3，4}}
-> **输出：** 1 2 3 4
-> **说明：**
+> **输入**：N = 4，arr [] [] = {{1，2}，{1，3}，{1，4}，{2，3}，{2，4}，{ 3，4}}
+> **输出**：1 2 3 4
+> **说明**：
 > 下图是上述信息的图形：
 > 
 > ![](img/86b8bf5ee84a0057344218ba88219df0.png)
@@ -21,10 +21,10 @@
 > 3-> 3
 > 4-> 3
 > 因此，素数为 1 2 3 4 的节点为
-> **输入：** N = 5，arr [] [] = {{1，2}，{ 1，3}，{2，4}，{2，5}} {
-> **输出：** 1
+> **输入**：N = 5，arr [] [] = {{1，2}，{ 1，3}，{2，4}，{2，5}} {
+> **输出**：1
 
-**方法：**
+**方法**：
 
 1.  使用 Eratosthenes 的[筛网](http://www.geeksforgeeks.org/sieve-of-eratosthenes/)计算最多 10 <sup>5</sup> 的质数。
 2.  对于每个顶点，度可以通过给定图在相应顶点处的[邻接表](https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/)的长度来计算。
@@ -399,7 +399,7 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（N + M）*，其中 N 是顶点数，M 是边数。
+***时间复杂度**：O（N + M）*，其中 N 是顶点数，M 是边数。
 
 [![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)](https://practice.geeksforgeeks.org/courses/competitive-programming-live?utm_source=geeksforgeeks&utm_medium=article&utm_campaign=gfg_article_cp)
 

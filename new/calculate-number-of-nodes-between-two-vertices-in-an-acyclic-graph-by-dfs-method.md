@@ -2,25 +2,25 @@
 
 > 原文： [https://www.geeksforgeeks.org/calculate-number-of-nodes-between-two-vertices-in-an-acyclic-graph-by-dfs-method/](https://www.geeksforgeeks.org/calculate-number-of-nodes-between-two-vertices-in-an-acyclic-graph-by-dfs-method/)
 
-给定一个由 **V** 顶点和 **E** 边组成的[非循环图](https://en.wikipedia.org/wiki/Directed_acyclic_graph)，源顶点 **src** 和目标顶点 **dest** ，任务是计算图中给定源顶点和目标顶点之间的顶点数。
+给定一个由`V`顶点和`E`边组成的[非循环图](https://en.wikipedia.org/wiki/Directed_acyclic_graph)，源顶点 **src** 和目标顶点 **dest** ，任务是计算图中给定源顶点和目标顶点之间的顶点数。
 
 **范例**：
 
-> **输入：** V = 8，E = 7，src = 7，dest = 8，边缘[] [] = {{1 4}，{4，5}，{4，2}，{2 ，6}，{6，3}，{2，7}，{3，8}}
-> **输出：** 3
-> **说明：**
+> **输入**：V = 8，E = 7，src = 7，dest = 8，边缘[] [] = {{1 4}，{4，5}，{4，2}，{2 ，6}，{6，3}，{2，7}，{3，8}}
+> **输出**：3
+> **说明**：
 > 路径 在 7 和 8 之间的是 7-> 2-> 6-> 3->8。
 > 因此，在 7 和 8 之间的节点数是 3。
 > 
 > [![](img/f4160071d20eb16a4c9057b36676f7fc.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200908100034/acyclicGraph.jpg)
 > 
-> **输入：** V = 8，E = 7，src = 5，dest = 2，edge [] [] = {{1 4}，{4，5}，{4，2}，{2 ，6}，{6，3}，{2，7}，{3，8}}
-> **输出：** 3
-> **说明：**
+> **输入**：V = 8，E = 7，src = 5，dest = 2，edge [] [] = {{1 4}，{4，5}，{4，2}，{2 ，6}，{6，3}，{2，7}，{3，8}}
+> **输出**：3
+> **说明**：
 > 路径 5 和 2 之间的节点数是 5-> 4->2。
 > 因此，5 和 2 之间的节点数是 1。
 
-**方法：**也可以使用[此](https://www.geeksforgeeks.org/number-nodes-two-vertices-acyclic-graph-disjoint-union-method/)文章中所述的[脱节联合](https://www.geeksforgeeks.org/union-find/)方法解决该问题。 解决此问题的另一种方法是使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)方法解决。 请按照以下步骤解决此问题：
+**方法**：也可以使用[此](https://www.geeksforgeeks.org/number-nodes-two-vertices-acyclic-graph-disjoint-union-method/)文章中所述的[脱节联合](https://www.geeksforgeeks.org/union-find/)方法解决该问题。 解决此问题的另一种方法是使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)方法解决。 请按照以下步骤解决此问题：
 
 *   初始化被访问数组**与[]** ，以标记已经访问过的节点。 将所有节点标记为 0，即未访问。
 *   执行 DFS 查找 ***src*** 和 ***dest 之间路径中存在的节点数。***
@@ -419,8 +419,8 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度：** O（V + E）*
-***辅助空间：** O（V）*
+***时间复杂度**：O（V + E）*
+***辅助空间**：O（V）*
 
 
 

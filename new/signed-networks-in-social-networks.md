@@ -2,13 +2,13 @@
 
 > 原文： [https://www.geeksforgeeks.org/signed-networks-in-social-networks/](https://www.geeksforgeeks.org/signed-networks-in-social-networks/)
 
-**先决条件：** [社交网络简介](https://www.geeksforgeeks.org/introduction-to-social-networks-using-networkx-in-python/)
+**先决条件**：[社交网络简介](https://www.geeksforgeeks.org/introduction-to-social-networks-using-networkx-in-python/)
 
 在社交网络中，网络有 2 种类型-未签名网络和已签名网络。 在未签名的网络中，任何节点之间都没有符号，而在签名的网络中，+或-的两个节点之间始终都存在一个符号。 “ +”号表示 2 个节点之间的友谊，“-”号表示 2 个节点之间的敌意。
 
 我们的任务是使用 python 语言在 N 个节点上创建一个签名网络。
 
-**方法：**
+**方法**：
 
 1.  创建图并向其添加节点。
 2.  添加所有可能的边并为其分配一个符号。
@@ -192,7 +192,7 @@ plt.show()
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 ['G', 'B', 'C', 'H']

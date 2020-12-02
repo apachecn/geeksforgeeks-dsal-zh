@@ -663,7 +663,7 @@ graph.dijkstra(0)
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Vertex   Distance from Source
@@ -679,9 +679,9 @@ Vertex   Distance from Source
 
 ```
 
-**时间复杂度：**上面的代码/算法的时间复杂度看起来为 O（V ^ 2），因为有两个嵌套的 while 循环。 如果仔细观察，可以发现内部循环中的语句执行了 O（V + E）次（类似于 BFS）。 内部循环具有 reduceKey（）操作，该操作需要 O（LogV）时间。 因此总体时间复杂度为 O（E + V）* O（LogV），即 O（（E + V）* LogV）= O（ELogV）。
+**时间复杂度**：上面的代码/算法的时间复杂度看起来为 O（V ^ 2），因为有两个嵌套的 while 循环。 如果仔细观察，可以发现内部循环中的语句执行了 O（V + E）次（类似于 BFS）。 内部循环具有 reduceKey（）操作，该操作需要 O（LogV）时间。 因此总体时间复杂度为 O（E + V）* O（LogV），即 O（（E + V）* LogV）= O（ELogV）。
 请注意，以上代码使用二进制堆实现优先级队列。 使用斐波那契堆可以将时间复杂度降低到 O（E + VLogV）。 原因是，斐波那契堆需要 O（1）时间来进行减键操作，而二进制堆需要 O（Logn）时间。
-**注意：**
+**注意**：
 
 1.  该代码计算出最短距离，但不计算路径信息。 我们可以创建一个父数组，在更新距离时更新父数组（例如 [prim 的实现](https://www.geeksforgeeks.org/prims-mst-for-adjacency-list-representation-greedy-algo-6/)），并使用它显示从源到不同顶点的最短路径。
 2.  该代码用于无向图，相同的 dijekstra 函数也可用于有向图。
@@ -690,7 +690,7 @@ Vertex   Distance from Source
     [Dijkstra 最短路径算法中的打印路径](https://www.geeksforgeeks.org/printing-paths-dijkstras-shortest-path-algorithm/)
     [Dijkstra 使用 STL 中设置的最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-set-in-stl/)
 
-**参考：**
+**参考**：
 [Clifford Stein，Thomas H. Cormen，Charles E. Leiserson，Ronald L.的算法简介](http://www.flipkart.com/introduction-algorithms-8120340078/p/itmczynzhyhxv2gs?pid=9788120340077&affid=sandeepgfg)
 [Sanjoy Dasgupta，Christos Papadimitriou 的算法 ，乌麦什·瓦济拉尼](http://www.flipkart.com/algorithms-0070636613/p/itmczynvb7p2zacz?pid=9780070636613&affid=sandeepgfg)
 

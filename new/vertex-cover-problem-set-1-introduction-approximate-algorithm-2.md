@@ -8,7 +8,7 @@
 ![VertexCover](img/87bd7bd460f0e2648534ae16a5fd4969.png)
 
 [顶点覆盖问题](http://en.wikipedia.org/wiki/Vertex_cover)是已知的 [NP 完全问题](https://www.geeksforgeeks.org/np-completeness-set-1/)，即，除非 P = NP，否则没有多项式时间解。 虽然有解决问题的近似多项式时间算法。 以下是从 [CLRS 书](http://www.flipkart.com/introduction-algorithms-english-3rd/p/itmdwxyrafdburzg?pid=9788120340077&affid=sandeepgfg)中改编的简单近似算法。
-**顶点覆盖的近似算法：** [
+**顶点覆盖的近似算法**：[
 
 ```
 1) Initialize the result as {}
@@ -26,7 +26,7 @@
 
 **以上算法的效果如何？**
 可以证明上述近似算法从未找到大小大于最小可能顶点覆盖范围大小两倍的顶点覆盖层（请参阅[此](http://www.personal.kent.edu/~rmuhamma/Algorithms/MyAlgorithms/AproxAlgor/vertexCover.htm)作为证明）
-[ **实现：**
+[ **实现**：
 以下是上述近似算法的 C ++和 Java 实现。
 
 ## C ++
@@ -420,7 +420,7 @@ public static void Main(String []args)
 ```
 
 上述算法的时间复杂度为 O（V + E）。
-**精确算法：**
+**精确算法**：
 尽管该问题是 NP 完全问题，但对于以下类型的图形，可以在多项式时间内解决。
 1）[二部图](https://www.geeksforgeeks.org/bipartite-graph/)，
 2）[树图](http://geeksquiz.com/check-given-graph-tree/)

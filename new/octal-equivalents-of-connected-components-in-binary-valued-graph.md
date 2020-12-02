@@ -4,34 +4,34 @@
 
 > 原文： [https://www.geeksforgeeks.org/octal-equivalents-of-connected-components-in-binary-valued-graph/](https://www.geeksforgeeks.org/octal-equivalents-of-connected-components-in-binary-valued-graph/)
 
-给定**二进制值** [无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，并带有 **V** 顶点和 **E** 边，任务是找到**八进制等效项** 图中所有已连接组件的]。 可以将二进制值图视为仅将二进制数**（0 或 1）**作为顶点值。
+给定**二进制值** [无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，并带有`V`顶点和`E`边，任务是找到**八进制等效项** 图中所有已连接组件的]。 可以将二进制值图视为仅将二进制数**（0 或 1）**作为顶点值。
 
-**示例：**
+**示例**：
 
-> **输入：** E = 4，V = 7
+> **输入**：E = 4，V = 7
 > 
 > ![](img/fb50e4ce31778dd68a347b016976fde7.png)
 > 
-> **输出：**
+> **输出**：
 > 链= 0 1 八进制等效值= 1
 > 链= 0 0 0 八进制等效值= 0
 > 链= 1 1 八进制等效值= 3
-> **说明：**
+> **说明**：
 > 在第一个连接的组件的情况下，二进制链为[0，1]
 > 因此，二进制字符串=“ 01”且二进制数= 01
 > 因此，八进制等效项为 1
 > 
-> **输入：** E = 6，V = 10
+> **输入**：E = 6，V = 10
 > 
 > ![](img/83927206790a724c02078daf19b731bf.png)
 > 
-> **输出：**
+> **输出**：
 > 链= 1 [八进制等效值] 1
 > 链= 0 0 1 0 八进制等效值= 2
 > 链= 1 1 0 八进制等效值= 6
 > 链= 1 0 八进制等效值= 2
 
-**方法：**的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连接组件，如本文的[中所述。 对于每个连接的组件，将显示二进制字符串，并根据二进制值（如](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[本文](https://www.geeksforgeeks.org/convert-binary-number-octal/)中所述）计算等效的八进制值并进行打印。
+**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连接组件，如本文的[中所述。 对于每个连接的组件，将显示二进制字符串，并根据二进制值（如](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[本文](https://www.geeksforgeeks.org/convert-binary-number-octal/)中所述）计算等效的八进制值并进行打印。
 
 下面是上述方法的实现：
 

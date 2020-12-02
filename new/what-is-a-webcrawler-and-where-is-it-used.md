@@ -9,12 +9,12 @@ Webcrawler 是[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-s
 *   与顶点->域/ URL /网站。
 *   边缘->连接。
 
-**示例：**
+**示例**：
 [![](img/baf808dcd460e2777e956fc619f71617.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200510235133/GeeksforGeeks19.jpg)
 
-**方法：**该算法的工作原理是解析网站的原始 HTML，并在获取的数据中查找其他 URL。 如果存在 URL，则将其添加到[队列](http://www.geeksforgeeks.org/queue-data-structure/)，并以广度优先搜索的方式访问它们。
+**方法**：该算法的工作原理是解析网站的原始 HTML，并在获取的数据中查找其他 URL。 如果存在 URL，则将其添加到[队列](http://www.geeksforgeeks.org/queue-data-structure/)，并以广度优先搜索的方式访问它们。
 
-> **注意：**由于代理问题，此代码在联机 IDE 上不起作用。 尝试在本地计算机上运行。
+> **注意**：由于代理问题，此代码在联机 IDE 上不起作用。 尝试在本地计算机上运行。
 
 ```
 
@@ -180,7 +180,7 @@ public class Main {
 
 ```
 
-**输出：**
+**输出**：
 
 ```
 Website found: https://www.google.com
@@ -191,7 +191,7 @@ Website found: https://www.apple.com
 
 ```
 
-**应用程序：**这种 Web 搜寻器用于获取 Web 的重要参数，例如：
+**应用程序**：这种 Web 搜寻器用于获取 Web 的重要参数，例如：
 
 1.  什么是经常访问的网站？
 2.  整个网络中哪些重要的网站？

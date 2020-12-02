@@ -2,14 +2,14 @@
 
 > 原文： [https://www.geeksforgeeks.org/find-the-root-of-the-sub-tree-whose-weighted-sum-xor-with-x-is-maximum/](https://www.geeksforgeeks.org/find-the-root-of-the-sub-tree-whose-weighted-sum-xor-with-x-is-maximum/)
 
-给定一棵树和所有节点的权重，任务是找到其给定整数 **X** 的加权和 XOR 最大的子树的根。
+给定一棵树和所有节点的权重，任务是找到其给定整数`X`的加权和 XOR 最大的子树的根。
 
-**示例：**
+**示例**：
 
-> **输入：**
+> **输入**：
 > ![](img/580b17fbe752fb3a04789f3c327eef8f.png)
 > X = 15
-> **输出：** 4
+> **输出**：4
 > 父级 1 的子树的权重=（（（-1）+ （5）+（-2）+（-1）+（3））XOR 15 = 4 XOR 15 = 11
 > 父级 2 的子树的权重=（（5）+（-1）+（3 ））XOR 15 = 7 XOR 15 = 8
 > 父级 3 的子树权重= -1 XOR 15 = -16
@@ -17,7 +17,7 @@
 > 权重 父级 5 的子树的总和= 2 XOR 15 = -15
 > 节点 4 给出了最大子树的加权和 XORX。
 
-**方法：**在树上执行 [dfs](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，然后为每个节点计算以当前节点为根的子树加权总和，然后找到该节点的最大值（XOR X）。
+**方法**：在树上执行 [dfs](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，然后为每个节点计算以当前节点为根的子树加权总和，然后找到该节点的最大值（XOR X）。
 
 下面是上述方法的实现：
 
@@ -340,9 +340,9 @@ class GFG
 
 **<u>复杂度分析：</u>**
 
-*   **时间复杂度：** O（N）。
+*   **时间复杂度**：O（N）。
     在 dfs 中，树的每个节点都处理一次，因此，如果树中总共有 N 个节点，则由于 dfs 而导致的复杂度为 O（N）。 因此，时间复杂度为 O（N）。
-*   **辅助空间：** O（n）。
+*   **辅助空间**：O（n）。
     递归堆栈。
 
 

@@ -6,7 +6,7 @@
 
 给定一个有向图和其中两个顶点，请检查是否存在从第一个给定顶点到第二个顶点的路径。
 
-**示例：**
+**示例**：
 
 ```
 Consider the following Graph:
@@ -22,9 +22,9 @@ Explanation: There is no path from 3 to 6
 
 ```
 
-**方法：** [广度优先搜索（BFS）](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)或[深度优先搜索（DFS）](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)均可用于查找两个顶点之间的路径。 将第一个顶点作为 BFS（或 DFS）中的源，遵循标准 BFS（或 DFS）。 如果在我们的遍历中找到第二个顶点，则返回 true，否则返回 false。
+**方法**：[广度优先搜索（BFS）](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)或[深度优先搜索（DFS）](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)均可用于查找两个顶点之间的路径。 将第一个顶点作为 BFS（或 DFS）中的源，遵循标准 BFS（或 DFS）。 如果在我们的遍历中找到第二个顶点，则返回 true，否则返回 false。
 
-**算法：**
+**算法**：
 
 1.  下面的实现使用 BFS。
 2.  创建一个队列和一个初始填充为 0 的访问数组，大小为 V，其中 V 是顶点数。
@@ -33,7 +33,7 @@ Explanation: There is no path from 3 to 6
 5.  使队列的前部元素出队。 迭代其所有相邻元素。 如果任何相邻元素是目标，则返回 true。 将队列中所有相邻的顶点和非可见顶点推入并标记为已访问。
 6.  由于在 BFS 中未到达目标，因此返回 false。
 
-**实现：**使用 BFS 从第一顶点查找第二顶点的可达性的 C ++，Java 和 Python 代码。
+**实现**：使用 BFS 从第一顶点查找第二顶点的可达性的 C ++，Java 和 Python 代码。
 
 ## C ++
 

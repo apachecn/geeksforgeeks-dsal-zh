@@ -4,7 +4,7 @@
 
 给定一棵树，以及所有节点的权重（以字符串的形式），任务是计算权重为回文的节点。
 
-**示例：**
+**示例**：
 
 ```
 Input: 
@@ -14,9 +14,9 @@ Only the weights of the nodes 2, 3 and 5 are palindromes.
 
 ```
 
-**方法：**在树上执行 [dfs](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，对于每个节点，检查其字符串是否为回文。 如果是，则增加计数。
+**方法**：在树上执行 [dfs](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，对于每个节点，检查其字符串是否为回文。 如果是，则增加计数。
 
-**实施：**
+**实施**：
 
 ## C ++
 

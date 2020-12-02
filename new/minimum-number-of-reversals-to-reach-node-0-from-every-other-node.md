@@ -2,21 +2,21 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-number-of-reversals-to-reach-node-0-from-every-other-node/](https://www.geeksforgeeks.org/minimum-number-of-reversals-to-reach-node-0-from-every-other-node/)
 
-给定一个 **N** 顶点值从 **0 到 N – 1** 和 **N – 1** 边的有向图，任务是计算必须颠倒的边数 因此，从每个节点到**节点 0** 总是存在一条路径。
+给定一个`N`顶点值从 **0 到 N – 1** 和 **N – 1** 边的有向图，任务是计算必须颠倒的边数 因此，从每个节点到**节点 0** 总是存在一条路径。
 
-**示例：**
+**示例**：
 
-> **输入：**下面是给定的图形
+> **输入**：下面是给定的图形
 > [![](img/bace73675a203556edf7b63c37c75f6b.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200621091308/Ex-1.png) 
-> **输出：** 3
-> **说明：**
+> **输出**：3
+> **说明**：
 > [![](img/ea82c0f0de87005589019bd986cfccd7.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200621091638/Ex-1-solution1.png)
 > 
-> **输入：**下面是给定的图形
+> **输入**：下面是给定的图形
 > [![](img/d5fe04585467c5d1468487cef0db6107.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200621091428/Ex-2.png) 
-> **输出：** 0
+> **输出**：0
 
-**方法：**这个想法是对图形使用 [BFS 遍历。 步骤如下：](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
+**方法**：这个想法是对图形使用 [BFS 遍历。 步骤如下：](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 
 1.  创建一个有向图，使给定图的边缘方向相反。
 2.  创建[队列](http://www.geeksforgeeks.org/queue-data-structure/)，并将**节点 0** 推送到队列中。
@@ -146,8 +146,8 @@ int main()
 
 ```
 
-**时间复杂度：** *O（V + E）*其中 V 是顶点数，E 是边数。
-**辅助空间：** *O（V）*其中 V 是顶点数。
+**时间复杂度**：*O（V + E）*其中 V 是顶点数，E 是边数。
+**辅助空间**：*O（V）*其中 V 是顶点数。
 
 
 

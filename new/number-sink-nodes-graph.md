@@ -4,9 +4,9 @@
 
 > 原文： [https://www.geeksforgeeks.org/number-sink-nodes-graph/](https://www.geeksforgeeks.org/number-sink-nodes-graph/)
 
-给定 **n** 个节点（编号从 1 到 n）和 **m 个**边缘的有向无环图。 任务是找到宿节点的数量。 宿节点是这样的节点，即没有边缘出现在该节点之外。
+给定`n`个节点（编号从 1 到 n）和 **m 个**边缘的有向无环图。 任务是找到宿节点的数量。 宿节点是这样的节点，即没有边缘出现在该节点之外。
 
-**示例：**
+**示例**：
 
 ```
 Input : n = 4, m = 2

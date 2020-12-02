@@ -4,15 +4,15 @@
 
 > 原文： [https://www.geeksforgeeks.org/find-a-mother-vertex-in-a-graph-using-bit-masking/](https://www.geeksforgeeks.org/find-a-mother-vertex-in-a-graph-using-bit-masking/)
 
-**图 G =（V，E）**中的[母顶点](https://www.geeksforgeeks.org/find-a-mother-vertex-in-a-graph/)是顶点 v，使得从 v 的路径可以通过 a 到达 **G** 中的所有其他顶点。 v。
-**的路径示例：**
+**图 G =（V，E）**中的[母顶点](https://www.geeksforgeeks.org/find-a-mother-vertex-in-a-graph/)是顶点 v，使得从 v 的路径可以通过 a 到达`G`中的所有其他顶点。 v。
+**的路径示例**：
 
-> **输入：**
+> **输入**：
 > [![](img/539aec57ab2a33508744f2375034ff6c.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/mother1.png) 
-> **输出：**
+> **输出**：
 > 5
 
-**方法：**
+**方法**：
 
 我们可以使用[深度优先搜索](https://www.geeksforgeeks.org/find-a-mother-vertex-in-a-graph/)方法解决此问题。 为了进一步优化我们的方法，我们将使用有效的解决方案。
 

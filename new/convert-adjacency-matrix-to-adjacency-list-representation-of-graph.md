@@ -4,18 +4,18 @@
 
 > 原文： [https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/](https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/)
 
-**先决条件：** [图及其表示](https://www.geeksforgeeks.org/graph-and-its-representations/)
+**先决条件**：[图及其表示](https://www.geeksforgeeks.org/graph-and-its-representations/)
 给定图的[邻接矩阵表示。 任务是将给定的邻接矩阵转换为邻接列表表示形式。
-**范例：**](https://www.geeksforgeeks.org/graph-and-its-representations/)
+**范例**：](https://www.geeksforgeeks.org/graph-and-its-representations/)
 
-> **输入：** arr [] [] = [[0，0，1]，[0，0，1]，[1，1，0]]
-> **输出：** 相邻列表为：
+> **输入**：arr [] [] = [[0，0，1]，[0，0，1]，[1，1，0]]
+> **输出**：相邻列表为：
 > 0-> 2
 > 1-> 2
 > 2-> 0-> 1
 > 
-> **输入：** arr [] [] = [[0，1，0，0，1]，[1，0，1，1，1]，[0，1，0，1，0] ，[0，1，1，0，1]，[1，1，0，1，0]]
-> **输出：**邻接表是：
+> **输入**：arr [] [] = [[0，1，0，0，1]，[1，0，1，1，1]，[0，1，0，1，0] ，[0，1，1，0，1]，[1，1，0，1，0]]
+> **输出**：邻接表是：
 > 0-> 1 -> 4
 > 1-> 0-> 2-> 3-> 4
 > 2-> 1-> 3
@@ -24,9 +24,9 @@
 
 **邻接矩阵**：邻接矩阵是大小为 V x V 的 2D 数组，其中 V 是图形中的顶点数。 假设 2D 数组为 adj [] []，则槽 adj [i] [j] = 1 表示从顶点 i 到顶点 j 有一条边。
 
-**邻接列表：**使用列表数组。 数组的大小等于顶点数。 令数组为 array []。 条目数组[i]表示与第 i 个顶点相邻的顶点的列表。
+**邻接列表**：使用列表数组。 数组的大小等于顶点数。 令数组为 array []。 条目数组[i]表示与第 i 个顶点相邻的顶点的列表。
 
-将邻接矩阵转换为邻接表。 创建一个列表数组并遍历邻接矩阵。 如果矩阵“ **mat [i] [j] = 1** ”中的任何单元格**（i，j）**，则表示从 **i 到 j** ，因此将 **j** 插入列表列表中**第 i** 个位置的列表中。
+将邻接矩阵转换为邻接表。 创建一个列表数组并遍历邻接矩阵。 如果矩阵“ **mat [i] [j] = 1** ”中的任何单元格**（i，j）**，则表示从 **i 到 j** ，因此将`j`插入列表列表中**第 i** 个位置的列表中。
 
 下面是上述方法的实现：
 

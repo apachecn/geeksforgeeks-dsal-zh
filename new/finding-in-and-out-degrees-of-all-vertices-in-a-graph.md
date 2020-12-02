@@ -3,7 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/finding-in-and-out-degrees-of-all-vertices-in-a-graph/](https://www.geeksforgeeks.org/finding-in-and-out-degrees-of-all-vertices-in-a-graph/)
 
 给定一个有向图，任务是计算图的每个顶点的内外度。
-**范例：**
+**范例**：
 
 ```
 Input:
@@ -20,7 +20,7 @@ Vertex    In    Out
 
 ```
 
-**方法：**遍历每个顶点，如果顶点 **i** 的邻接列表的大小为 **x** ，则 **i 的出界度 i = x [** 并从 **i** 递增具有传入边缘的每个顶点的度数。 对每个顶点重复上述步骤，并在最后打印所有顶点的进出度。
+**方法**：遍历每个顶点，如果顶点`i`的邻接列表的大小为`x`，则 **i 的出界度 i = x [** 并从`i`递增具有传入边缘的每个顶点的度数。 对每个顶点重复上述步骤，并在最后打印所有顶点的进出度。
 
 下面是上述方法的实现：
 

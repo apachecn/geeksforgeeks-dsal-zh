@@ -4,7 +4,7 @@
 
 给定 **N x M** 的二进制矩阵，至少包含一个值 1。该任务是为每个单元查找矩阵中最接近 1 的距离。 距离计算为 **| i <sub>1</sub> – i <sub>2</sub> | + | j <sub>1</sub> – j <sub>2</sub> |** ，其中 i <sub>1</sub> ，j <sub>1</sub> 是当前单元格的行号和列号，i <sub>2</sub> ，j <sub>2</sub> 是具有值 1 的最近单元格的行号和列号。
 
-**示例：**
+**示例**：
 
 ```
 Input : N = 3, M = 4
@@ -33,10 +33,10 @@ is 1\. Similarly, all the distance can be calculated.
 
 ```
 
-**<u>方法 1</u> ：**此方法使用简单的蛮力方法得出解决方案。
+**<u>方法 1</u> **：此方法使用简单的蛮力方法得出解决方案。
 
-*   **方法：**的想法是遍历每个像元的矩阵并找到最小距离，要找到最小距离遍历矩阵并找到包含 1 的像元并计算两个像元之间的距离并存储最小值 距离。
-*   **算法：**
+*   **方法**：的想法是遍历每个像元的矩阵并找到最小距离，要找到最小距离遍历矩阵并找到包含 1 的像元并计算两个像元之间的距离并存储最小值 距离。
+*   **算法**：
     1.  从头到尾遍历矩阵（使用两个嵌套循环）
     2.  对于每个元素，找到包含 1 的最接近元素。要找到最接近的元素，遍历矩阵并找到最小距离。
     3.  填写矩阵中的最小距离。
@@ -373,15 +373,15 @@ is 1\. Similarly, all the distance can be calculated.
     ```
 
 *   **Complexity Analysis:**
-    *   **时间复杂度：** O（N <sup>2</sup> * M <sup>2</sup> ）。
+    *   **时间复杂度**：O（N <sup>2</sup> * M <sup>2</sup> ）。
         对于矩阵中的每个元素，都要遍历矩阵，并且有 N * M 个元素，因此时间复杂度为 O（N <sup>2</sup> * M <sup>2</sup> ）。
-    *   **空间复杂度：** O（1）。
+    *   **空间复杂度**：O（1）。
         不需要多余的空间。
 
-<u>**方法 2：**</u> 此方法使用 [BFS 或广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)技术获得解决方案。
+<u>**方法 2**：</u> 此方法使用 [BFS 或广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)技术获得解决方案。
 
-*   **方法：**的想法是使用多源广度优先搜索。 将每个单元视为一个节点，并将任何两个相邻单元之间的每个边界作为一条边。 从 1 到 N * M 编号每个单元。 现在，将对应单元格值为 1 的所有节点推入队列中的矩阵。 使用此队列应用 BFS，以查找相邻节点的最小距离。
-*   **算法：**
+*   **方法**：的想法是使用多源广度优先搜索。 将每个单元视为一个节点，并将任何两个相邻单元之间的每个边界作为一条边。 从 1 到 N * M 编号每个单元。 现在，将对应单元格值为 1 的所有节点推入队列中的矩阵。 使用此队列应用 BFS，以查找相邻节点的最小距离。
+*   **算法**：
     1.  创建一个图形，其值从 1 到 M * N 分配给所有顶点。 目的是存储位置和邻近信息。
     2.  创建一个空队列。
     3.  遍历所有矩阵元素并将所有 1 的位置插入队列。
@@ -554,7 +554,7 @@ is 1\. Similarly, all the distance can be calculated.
 
     ```
 
-    **输出：**
+    **输出**：
 
     ```
     3 2 1 0 
@@ -564,9 +564,9 @@ is 1\. Similarly, all the distance can be calculated.
     ```
 
 *   **Complexity Analysis:**
-    *   **时间复杂度：** O（N * M）。
+    *   **时间复杂度**：O（N * M）。
         在 BFS 遍历中，每个元素仅被遍历一次，因此时间复杂度为 O（M * N）。
-    *   **空间复杂度：** O（M * N）。
+    *   **空间复杂度**：O（M * N）。
         要将每个元素存储在矩阵中，O（M * N）空间是必需的。
 
 本文由 **Anuj Chauhan** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

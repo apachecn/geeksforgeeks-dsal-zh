@@ -4,7 +4,7 @@
 
 给定有向欧拉图，打印[欧拉电路](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)。 欧拉电路是遍历图的每个边缘的路径，并且该路径在起始顶点处终止。
 
-**示例：**
+**示例**：
 
 ```
 Input : Adjacency list for the below graph
