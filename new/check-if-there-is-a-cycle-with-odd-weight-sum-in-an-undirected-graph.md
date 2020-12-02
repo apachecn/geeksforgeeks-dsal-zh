@@ -371,9 +371,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to check if there  
 # is a cycle of total odd weight  

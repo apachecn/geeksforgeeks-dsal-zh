@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/path-with-minimum-xor-sum-of-edges-in-a-directed-graph/](https://www.geeksforgeeks.org/path-with-minimum-xor-sum-of-edges-in-a-directed-graph/)
 
-给定一个有`N`个节点和`E`边的有向图，一个源`S`和一个目标`D`节点。 任务是找到从`S`到`D`具有最小边沿 XOR 之和的路径。 如果没有从`S`到`D`的路径，则打印 **-1** 。
+给定一个有`N`个节点和`E`边的有向图，一个源`S`和一个目标`D`节点。 任务是找到从`S`到`D`具有最小边沿 XOR 之和的路径。 如果没有从`S`到`D`的路径，则打印`-1`。
 
 **示例**：
 
@@ -114,9 +114,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 implementation of the approach 
 from collections import deque 

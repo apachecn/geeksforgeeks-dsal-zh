@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/kth-largest-node-among-all-directly-connected-nodes-to-the-given-node-in-an-undirected-graph/](https://www.geeksforgeeks.org/kth-largest-node-among-all-directly-connected-nodes-to-the-given-node-in-an-undirected-graph/)
 
-给定两个数组`u`和`v`，它们表示一个图，使得从 **u [i]** 到 **v [i]** （0≤v [i]，u [i] < N），并且每个节点都有一些值 **val [i]** （0≤i < N）。 对于每个节点，如果直接连接到其上的节点根据其值按降序排序（如果值相等，则根据其索引按升序排序），以 **k [** 位置。 如果总节点为 **< k** ，则打印 **-1** 。
+给定两个数组`u`和`v`，它们表示一个图，使得从 **u [i]** 到 **v [i]** （0≤v [i]，u [i] < N），并且每个节点都有一些值 **val [i]** （0≤i < N）。 对于每个节点，如果直接连接到其上的节点根据其值按降序排序（如果值相等，则根据其索引按升序排序），以 **k [** 位置。 如果总节点为 **< k** ，则打印`-1`。
 
 **示例**：
 
@@ -175,9 +175,9 @@ public static void main(String args[])
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 implementation of the approach  
 

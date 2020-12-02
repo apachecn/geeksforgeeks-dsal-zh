@@ -163,9 +163,9 @@ class GFG
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python to find whether  
 # given graph is star 

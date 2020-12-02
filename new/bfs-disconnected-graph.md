@@ -200,9 +200,9 @@ public static void bfs(int vertex)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 implementation of modified BFS  
 import queue 

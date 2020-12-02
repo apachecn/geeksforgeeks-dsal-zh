@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/shortest-path-from-source-to-destination-such-that-edge-weights-along-path-are-alternatively-increasing-and-decreasing/](https://www.geeksforgeeks.org/shortest-path-from-source-to-destination-such-that-edge-weights-along-path-are-alternatively-increasing-and-decreasing/)
 
-给定一个具有`N`个顶点和`M`边的连通图。 任务是找到从源到目标顶点的最短路径，以使最短路径中相邻边权重之间的差从正变负，反之亦然（权重（E1）>权重（E2）< （E3）…。）。 如果不存在这样的路径，则打印 **-1** 。
+给定一个具有`N`个顶点和`M`边的连通图。 任务是找到从源到目标顶点的最短路径，以使最短路径中相邻边权重之间的差从正变负，反之亦然（权重（E1）>权重（E2）< （E3）…。）。 如果不存在这样的路径，则打印`-1`。
 
 **示例**：
 

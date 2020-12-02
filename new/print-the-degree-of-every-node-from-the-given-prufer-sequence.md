@@ -126,9 +126,9 @@ class GFG 
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 implementation of the approach  
 

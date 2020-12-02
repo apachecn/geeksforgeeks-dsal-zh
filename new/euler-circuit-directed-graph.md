@@ -325,9 +325,9 @@ class Graph
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # A Python3 program to check if a given 
 # directed graph is Eulerian or not

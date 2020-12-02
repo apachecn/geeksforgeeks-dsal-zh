@@ -142,9 +142,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to detect if a path 
 # exists between any two vertices 

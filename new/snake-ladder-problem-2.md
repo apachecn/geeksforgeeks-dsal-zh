@@ -240,9 +240,9 @@ public class SnakesLadder 
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find minimum number 
 # of dice throws required to reach last 

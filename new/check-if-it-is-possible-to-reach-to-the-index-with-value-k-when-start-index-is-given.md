@@ -224,9 +224,9 @@ class GFG{
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program for the above approach 
 
@@ -590,9 +590,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program for the above approach 
 

@@ -31,9 +31,9 @@
 
 下面是上述方法的实现：
 
-## Python3
+## Python
 
-```
+```py
 
 # Python Program to implement 
 # the above approach 

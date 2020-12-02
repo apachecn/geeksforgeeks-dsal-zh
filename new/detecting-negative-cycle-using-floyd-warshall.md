@@ -235,9 +235,9 @@ class GFG
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python Program to check 
 # if there is a 

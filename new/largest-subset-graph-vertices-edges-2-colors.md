@@ -226,9 +226,9 @@ class GFG 
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find size of subset  
 # of graph vertex such that each vertex 

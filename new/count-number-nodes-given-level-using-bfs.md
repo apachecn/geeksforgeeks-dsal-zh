@@ -184,9 +184,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to print
 # count of nodes at given level.

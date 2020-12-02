@@ -10,9 +10,9 @@ Erdos Renyi 模型用于在社交网络上创建随机网络或图形。 在 Erd
 
 **步骤 1）**导入必要的模块，例如 [*networkx*](https://www.geeksforgeeks.org/networkx-python-software-package-study-complex-networks/) ， [*matplotlib.pyplot*](https://www.geeksforgeeks.org/pyplot-in-matplotlib/) 和 [*随机*](https://www.geeksforgeeks.org/random-random-function-in-python/) 模块。
 
-## Python3
+## Python
 
-```
+```py
 
 # Import Required modules 
 import networkx as nx 
@@ -23,9 +23,9 @@ import random
 
 **步骤 2）**为模型创建分布图。
 
-## Python3
+## Python
 
-```
+```py
 
 # Distribution graph for Erdos_Renyi model 
 def distribution_graph(g): 
@@ -48,9 +48,9 @@ def distribution_graph(g):
 
 **步骤 3）**取 *N* 个用户的节点数。
 
-## Python3
+## Python
 
-```
+```py
 
 # Take N number of nodes as input 
 print("Enter number of nodes") 
@@ -60,9 +60,9 @@ N = int(input())
 
 **步骤 4）**现在取 *P* ，即来自用户的边缘概率。
 
-## Python3
+## Python
 
-```
+```py
 
 # Take P probability value for edges 
 print("Enter value of probability of every node") 
@@ -72,9 +72,9 @@ P = float(input())
 
 **步骤 5）**创建一个具有 N 个节点且没有任何边的图形。
 
-## Python3
+## Python
 
-```
+```py
 
 # Create an empty graph object 
 g = nx.Graph() 
@@ -86,9 +86,9 @@ g.add_nodes_from(range(1, N + 1))
 
 **步骤 6）**将边随机添加到图中，获取一对节点，然后获得一个随机数 *R* 。 如果 *R < P* （概率），则添加一条边。 对所有可能的节点对重复步骤 5 和 6，然后显示形成的整个社交网络（图）。
 
-## Python3
+## Python
 
-```
+```py
 
 # Add edges to the graph randomly. 
 for i in g.nodes(): 
@@ -112,9 +112,9 @@ for i in g.nodes():
 
 **步骤 7）**显示连接节点。
 
-## Python3
+## Python
 
-```
+```py
 
 # Display connection between nodes     
 distribution_graph(g)
@@ -123,9 +123,9 @@ distribution_graph(g)
 
 ### 以下是上述逐步方法的完整程序：
 
-## Python3
+## Python
 
-```
+```py
 
 # Implementation of Erdos-Renyi Model on a Social Network 
 

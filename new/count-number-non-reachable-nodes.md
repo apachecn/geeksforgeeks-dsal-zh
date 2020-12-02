@@ -124,9 +124,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to count non-reachable  
 # nodes from a given source using DFS.  

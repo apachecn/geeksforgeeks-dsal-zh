@@ -125,9 +125,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program for the above approach
 

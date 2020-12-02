@@ -16,9 +16,9 @@ K-shell 分解是一种方法，其中我们可以根据节点的度数将节点
 
 以下是社交网络上 K-shell 分解的实现：
 
-## Python3
+## Python
 
-```
+```py
 
 # Import required modules 
 import networkx as nx 

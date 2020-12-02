@@ -193,9 +193,9 @@ class Path {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find 
 # path between two cell in matrix
@@ -797,9 +797,9 @@ class Graph {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find path between two 
 # cell in matrix 

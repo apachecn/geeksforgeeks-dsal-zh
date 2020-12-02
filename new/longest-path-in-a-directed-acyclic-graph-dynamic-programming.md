@@ -214,9 +214,9 @@ public class Main
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find the  
 # longest path in the DAG  

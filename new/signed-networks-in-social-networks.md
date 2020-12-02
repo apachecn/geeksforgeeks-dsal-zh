@@ -22,9 +22,9 @@
 
 下面是实现。
 
-## Python3
+## Python
 
-```
+```py
 
 import networkx as nx 
 import matplotlib.pyplot as plt 

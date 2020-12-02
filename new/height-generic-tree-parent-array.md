@@ -123,9 +123,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 code to find height 
 # of N-ary tree in O(n)
@@ -418,9 +418,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 code to find height of N-ary 
 # tree in O(n) (Efficient Approach) 

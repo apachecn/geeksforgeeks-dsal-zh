@@ -181,9 +181,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 from math import gcd 
 def dfs(u, adj, vis): 

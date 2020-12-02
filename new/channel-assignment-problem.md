@@ -226,9 +226,9 @@ public static void main(String[] args) 
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # A Depth First Search based recursive  
 # function that returns true if a matching 

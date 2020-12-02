@@ -235,9 +235,9 @@ class GFG 
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to count number of shortest 
 # paths from a given source to every other 

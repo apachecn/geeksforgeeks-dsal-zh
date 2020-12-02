@@ -245,9 +245,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 code for printing Minimum Cost
 # Simple Path between two given nodes

@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/shortest-path-in-a-graph-from-a-source-s-to-destination-d-with-exactly-k-edges-for-multiple-queries/](https://www.geeksforgeeks.org/shortest-path-in-a-graph-from-a-source-s-to-destination-d-with-exactly-k-edges-for-multiple-queries/)
 
-给定一个具有`N`个节点的图，节点`S`和`Q`分别查询由节点`D`和`K`，则任务是为每个查询找到从节点`S`到节点`D`的`K`个边的最短路径。 如果不存在这样的路径，则打印 **-1** 。
+给定一个具有`N`个节点的图，节点`S`和`Q`分别查询由节点`D`和`K`，则任务是为每个查询找到从节点`S`到节点`D`的`K`个边的最短路径。 如果不存在这样的路径，则打印`-1`。
 
 **注意**：`K`始终小于 **2 * N** 。
 
@@ -194,9 +194,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 implementation of the approach 
 import sys,numpy as np

@@ -252,9 +252,9 @@ public class ConnectedComponentCount
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program for above approach
 

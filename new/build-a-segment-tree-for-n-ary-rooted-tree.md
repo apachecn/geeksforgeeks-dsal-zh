@@ -357,9 +357,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 implementation of the above approach 
 N = 100005

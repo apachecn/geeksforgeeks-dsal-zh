@@ -50,9 +50,9 @@
 
 这是上述方法的实现：
 
-## Python3
+## Python
 
-```
+```py
 
 # Python program to print all 
 # possible paths in a DAG 

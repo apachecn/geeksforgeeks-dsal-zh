@@ -92,9 +92,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python implementation of the approach 
 

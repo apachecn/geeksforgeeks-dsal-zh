@@ -272,9 +272,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program for the above approach
 INF = 99999
@@ -609,9 +609,9 @@ class GFG {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program for the above approach
 

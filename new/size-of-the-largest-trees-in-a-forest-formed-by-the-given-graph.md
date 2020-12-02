@@ -202,9 +202,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find the size
 # of the largest tree in the forest

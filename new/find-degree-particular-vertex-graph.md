@@ -223,9 +223,9 @@ class DegreeOfVertex
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find degree of a vertex.
 

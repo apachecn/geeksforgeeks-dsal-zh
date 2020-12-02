@@ -114,9 +114,9 @@ class Graph {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # A Python3 Program to check whether a 
 # graph is Linear or not

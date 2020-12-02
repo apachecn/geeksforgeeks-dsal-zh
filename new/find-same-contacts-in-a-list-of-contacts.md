@@ -150,9 +150,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # A Python3 program to find same contacts
 # in a list of contacts 

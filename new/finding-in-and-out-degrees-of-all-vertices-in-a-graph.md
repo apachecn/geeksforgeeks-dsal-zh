@@ -223,9 +223,9 @@ class GFG {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find the in and out  
 # degrees of the vertices of the given graph  

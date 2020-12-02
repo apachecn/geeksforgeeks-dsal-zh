@@ -199,9 +199,9 @@ public class Sink
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find whether a  
 # universal sink exists in a directed graph 

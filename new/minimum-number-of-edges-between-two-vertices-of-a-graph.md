@@ -241,9 +241,9 @@ class Test
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find minimum edge 
 # between given two vertex of Graph

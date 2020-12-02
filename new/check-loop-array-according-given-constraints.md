@@ -182,9 +182,9 @@ class GFG 
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to check if a  
 # given array is cyclic or not  

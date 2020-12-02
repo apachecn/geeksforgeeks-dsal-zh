@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-if-there-exists-a-connected-graph-that-satisfies-the-given-conditions/](https://www.geeksforgeeks.org/check-if-there-exists-a-connected-graph-that-satisfies-the-given-conditions/)
 
-给定两个整数`N`和`K`。 任务是找到一个具有`N`个顶点的连通图，以使得精确地存在`K`对**（i，j）**对，其中它们之间的最短距离为`2`。 如果不存在这样的图形，则打印 **-1** 。
+给定两个整数`N`和`K`。 任务是找到一个具有`N`个顶点的连通图，以使得精确地存在`K`对**（i，j）**对，其中它们之间的最短距离为`2`。 如果不存在这样的图形，则打印`-1`。
 
 **注意**：
 

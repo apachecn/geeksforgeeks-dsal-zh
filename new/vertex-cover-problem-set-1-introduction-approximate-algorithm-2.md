@@ -221,9 +221,9 @@ class Graph
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to print Vertex Cover
 # of a given undirected graph 

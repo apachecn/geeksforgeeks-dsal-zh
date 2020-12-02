@@ -132,9 +132,9 @@ public static void main (String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python implementation of the approach 
 

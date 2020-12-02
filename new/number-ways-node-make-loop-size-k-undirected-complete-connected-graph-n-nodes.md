@@ -105,9 +105,9 @@ public class GFG {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # python Program to find number of  
 # cycles of length k in a graph  

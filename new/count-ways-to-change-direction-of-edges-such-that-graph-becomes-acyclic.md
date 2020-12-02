@@ -344,9 +344,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python 3 program to count the
 # number of ways to change

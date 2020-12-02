@@ -343,9 +343,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python 3 program to implement
 # the above approach

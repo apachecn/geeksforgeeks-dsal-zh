@@ -323,9 +323,9 @@ class GFG {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # A Python3 program for getting minimum
 # product spanning tree The program is 

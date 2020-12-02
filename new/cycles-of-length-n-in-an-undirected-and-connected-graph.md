@@ -203,9 +203,9 @@ public class Main {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python Program to count 
 # cycles of length n 

@@ -247,9 +247,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 code to check if a given graph
 # contains an independent set of size k

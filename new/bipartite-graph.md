@@ -810,9 +810,9 @@ Yes
 
 下面是上述观察的实现：
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find out whether a 
 # given graph is Bipartite or not 
@@ -999,9 +999,9 @@ class GFG 
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find out whether a given  
 # graph is Bipartite or not using recursion.  

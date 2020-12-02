@@ -140,9 +140,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find the Minimum Operations  
 # to modify values of all tree vertices to zero  

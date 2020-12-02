@@ -201,9 +201,9 @@ public class GeeksForGeeks
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find minimum number of  
 # steps needed to convert a number x into y  

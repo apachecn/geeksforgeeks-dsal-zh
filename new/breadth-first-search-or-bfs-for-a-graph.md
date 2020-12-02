@@ -204,9 +204,9 @@ class Graph
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 Program to print BFS traversal 
 # from a given source vertex. BFS(int s) 

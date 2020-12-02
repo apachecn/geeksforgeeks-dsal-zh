@@ -132,9 +132,9 @@ class GFG
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # python program to count number of
 # steps to reach a point

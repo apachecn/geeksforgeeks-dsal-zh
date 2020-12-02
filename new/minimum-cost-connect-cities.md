@@ -282,9 +282,9 @@ public static void main(String args[])
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 code to find out minimum cost 
 # path to connect all the cities 

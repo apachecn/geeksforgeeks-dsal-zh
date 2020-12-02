@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/lexicographically-smallest-topological-ordering/](https://www.geeksforgeeks.org/lexicographically-smallest-topological-ordering/)
 
-给定一个有向图，该图的`N`个顶点和`M`的边可能包含循环，任务是找到该图在字典上最小的拓扑顺序，否则将打印 **-1** （如果图形具有循环）。
+给定一个有向图，该图的`N`个顶点和`M`的边可能包含循环，任务是找到该图在字典上最小的拓扑顺序，否则将打印`-1`（如果图形具有循环）。
 从语法上最小的拓扑顺序是指，如果图形中的两个顶点没有任何传入边，则编号较小的顶点应在该顺序中首先出现。
 例如，在下面的图像中，许多拓扑排序都是可能的，例如 **5 2 3 4 0 1，5 0 2 4 3 1** 。
 但最小的顺序是 **4 5 0 2 3 1** 。

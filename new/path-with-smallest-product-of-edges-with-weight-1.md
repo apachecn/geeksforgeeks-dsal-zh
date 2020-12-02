@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/path-with-smallest-product-of-edges-with-weight-1/](https://www.geeksforgeeks.org/path-with-smallest-product-of-edges-with-weight-1/)
 
-给定一个有向图，其中有**个 N** 个节点和 **E 个**边缘，其中每个边缘的权重为 **> 1** ，还给出了源`S`和目的地`D`。 任务是找到从`S`到`D`的边的最小积的路径。 如果没有从`S`到`D`的路径，则打印 **-1** 。
+给定一个有向图，其中有**个 N** 个节点和 **E 个**边缘，其中每个边缘的权重为 **> 1** ，还给出了源`S`和目的地`D`。 任务是找到从`S`到`D`的边的最小积的路径。 如果没有从`S`到`D`的路径，则打印`-1`。
 
 **示例**：
 
@@ -26,7 +26,7 @@
     2.  如果**当前**已被访问，则继续。
     3.  如果**发生**等于`D`，则返回 **dist** 。
     4.  迭代与**相邻的所有节点 curr** 并压入 **pq** （next 和 dist + gr [nxt] .weight）
-*   返回 **-1** 。
+*   返回`-1`。
 
 下面是上述方法的实现：
 

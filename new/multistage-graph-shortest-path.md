@@ -212,9 +212,9 @@ class GFG 
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find shortest  
 # distance in a multistage graph.  

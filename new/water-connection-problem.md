@@ -275,9 +275,9 @@ class GFG {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find efficient 
 # solution for the network 

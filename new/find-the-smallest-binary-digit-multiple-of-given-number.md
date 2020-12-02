@@ -173,9 +173,9 @@ public static void main (String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 def getMinimumMultipleOfBinaryDigit(A):
 

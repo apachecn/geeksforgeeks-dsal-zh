@@ -49,9 +49,9 @@
 
 下面是上述方法的实现。
 
-## Python3
+## Python
 
-```
+```py
 
 # Python implementation for 
 # D'Esopo-Pape algorithm 

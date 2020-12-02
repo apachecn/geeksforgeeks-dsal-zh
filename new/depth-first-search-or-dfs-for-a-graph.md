@@ -221,9 +221,9 @@ class Graph {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to print DFS traversal
 # from a given given graph

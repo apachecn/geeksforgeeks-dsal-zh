@@ -17,9 +17,9 @@
 
 以下是用于实施积分分配算法的 python 代码。
 
-## Python3
+## Python
 
-```
+```py
 
 import networkx as nx 
 import random 

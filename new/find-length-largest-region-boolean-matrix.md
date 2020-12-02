@@ -253,9 +253,9 @@ class GFG {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find the length of the
 # largest region in boolean 2D-matrix

@@ -312,9 +312,9 @@ public static void main(String args[])
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to replace all of the O's in the matrix
 # with their shortest distance from a guard

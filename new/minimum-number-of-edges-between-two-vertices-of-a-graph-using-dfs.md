@@ -292,9 +292,9 @@ class GFG
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find minimum 
 # number of edges between any two 

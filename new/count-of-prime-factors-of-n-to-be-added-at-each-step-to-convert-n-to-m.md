@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/count-of-prime-factors-of-n-to-be-added-at-each-step-to-convert-n-to-m/](https://www.geeksforgeeks.org/count-of-prime-factors-of-n-to-be-added-at-each-step-to-convert-n-to-m/)
 
-给定两个整数`N`和`M`，任务是找出将`N`转换​​为`M`所需的最小操作数。 每个操作都涉及将`N`当前值的[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)之一相加。 如果有可能获得 M，则打印操作数。 否则，打印 **-1** 。
+给定两个整数`N`和`M`，任务是找出将`N`转换​​为`M`所需的最小操作数。 每个操作都涉及将`N`当前值的[主因子](http://www.geeksforgeeks.org/print-all-prime-factors-of-a-given-number/)之一相加。 如果有可能获得 M，则打印操作数。 否则，打印`-1`。
 
 **示例**：
 

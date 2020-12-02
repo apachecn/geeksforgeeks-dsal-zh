@@ -292,9 +292,9 @@ class GFG
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # A Python3 program to check if there is a cycle in  
 # directed graph using BFS. 

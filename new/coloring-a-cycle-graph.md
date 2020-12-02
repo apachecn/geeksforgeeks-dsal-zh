@@ -115,9 +115,9 @@ class GFG { 
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Naive Python3 Program to  
 # find the number of colors 

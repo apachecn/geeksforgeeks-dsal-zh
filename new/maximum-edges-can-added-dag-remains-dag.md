@@ -153,9 +153,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find maximum
 # edges after adding which graph 

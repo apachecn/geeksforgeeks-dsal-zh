@@ -251,9 +251,9 @@ public static void main(String args[])
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to implement traveling salesman 
 # problem using naive approach. 

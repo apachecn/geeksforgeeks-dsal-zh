@@ -250,9 +250,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to check if given  
 # pairs lie on same path or not. 

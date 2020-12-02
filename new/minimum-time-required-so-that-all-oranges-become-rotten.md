@@ -161,9 +161,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to rot all 
 # oranges when u can move

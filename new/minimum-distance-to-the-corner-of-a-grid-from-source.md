@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-distance-to-the-corner-of-a-grid-from-source/](https://www.geeksforgeeks.org/minimum-distance-to-the-corner-of-a-grid-from-source/)
 
-给定二阶网格 **r * c** 和初始位置。 任务是找到从源到网格任何角落的最小距离。 仅当 **grid [i] [j] = 0** 并且仅剩下，**时，才能移动到单元格 **grid [i] [j]** 允许向右**，**向上**和**向下**移动。 如果没有有效的路径，则打印 **-1** 。
+给定二阶网格 **r * c** 和初始位置。 任务是找到从源到网格任何角落的最小距离。 仅当 **grid [i] [j] = 0** 并且仅剩下，**时，才能移动到单元格 **grid [i] [j]** 允许向右**，**向上**和**向下**移动。 如果没有有效的路径，则打印`-1`。
 
 **示例**：
 

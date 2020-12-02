@@ -43,9 +43,9 @@ Output : [2, 23, 13, 12, 24, 25, 11, 14, 22, 3, 1, 8,
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program for Sum-square series using 
 # hamiltonian path concept and backtracking 

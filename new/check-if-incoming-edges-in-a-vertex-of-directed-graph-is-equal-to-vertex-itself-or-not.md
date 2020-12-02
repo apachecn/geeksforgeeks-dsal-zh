@@ -172,9 +172,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 implementation to check if the 
 # incoming edges in a vertex of directed 

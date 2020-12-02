@@ -182,9 +182,9 @@ int main(void)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 DFS solution to schedule chapters  
 # for reading in given days 

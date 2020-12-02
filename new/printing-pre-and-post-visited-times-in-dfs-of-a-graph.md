@@ -96,9 +96,9 @@ public class GFG {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Variable to keep track of time 
 time = 1

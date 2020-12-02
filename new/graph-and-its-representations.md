@@ -262,9 +262,9 @@ class Graph {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 """ 
 A Python program to demonstrate the adjacency 

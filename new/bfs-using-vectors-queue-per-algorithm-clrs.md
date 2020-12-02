@@ -160,9 +160,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to implement BFS as  
 # per CLRS algorithm.  

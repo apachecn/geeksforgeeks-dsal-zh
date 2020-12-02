@@ -34,7 +34,7 @@ Output: -1
 
 ```
 
-**方法**：此问题是 [Floyd-warshall 算法](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/)的变体，其中 i 和 j 之间有权重 1 的边，即 **mat [i] [j] == 1** ，否则它们没有边，我们可以像在 Floyd-Warshall 中一样将边指定为无穷大。 找到解矩阵，如果不是无限的，则返回 **dp [i] [j]** 。 如果它是无限的，则返回 **-1** ，这意味着它们之间没有路径。
+**方法**：此问题是 [Floyd-warshall 算法](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/)的变体，其中 i 和 j 之间有权重 1 的边，即 **mat [i] [j] == 1** ，否则它们没有边，我们可以像在 Floyd-Warshall 中一样将边指定为无穷大。 找到解矩阵，如果不是无限的，则返回 **dp [i] [j]** 。 如果它是无限的，则返回`-1`，这意味着它们之间没有路径。
 
 下面是上述方法的实现：
 

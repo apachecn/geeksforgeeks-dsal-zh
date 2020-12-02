@@ -141,9 +141,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to count nodes inside 
 # K distance range from marked nodes 

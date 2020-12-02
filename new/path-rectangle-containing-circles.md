@@ -195,9 +195,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find out path in
 # a rectangle containing circles.

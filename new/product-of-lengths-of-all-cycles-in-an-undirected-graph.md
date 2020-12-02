@@ -321,9 +321,9 @@ class GFG 
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find the 
 # product of lengths of cycle 

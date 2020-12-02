@@ -242,9 +242,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program for Bidirectional BFS 
 # Search to check path between two vertices

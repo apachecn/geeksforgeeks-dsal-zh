@@ -23,7 +23,7 @@
 
 *   [后边缘](https://www.geeksforgeeks.org/tree-back-edge-and-cross-edges-in-dfs-of-graph/)被称为不是构建的 DFS 树的一部分的边缘，并且是某个节点 v 与 v 的祖先之一之间的边缘。
 *   显然，图的所有那些不属于 DFS 树的边缘都是后边缘。
-*   如果图中没有后沿，则图中没有循环。 因此，在这种情况下，答案将是 **-1** 。
+*   如果图中没有后沿，则图中没有循环。 因此，在这种情况下，答案将是`-1`。
 
 如果图中有[个后边缘](https://www.geeksforgeeks.org/tree-back-edge-and-cross-edges-in-dfs-of-graph/)，则我们需要找到最小边缘。 为此，我们需要检查在从图形中删除特定边时是否删除了循环。 因此，让`v`是我们当前正在检查的顶点。 因此，必须在**以下条件之后加上顶点 v** ，以便在移除时不会导致循环：
 

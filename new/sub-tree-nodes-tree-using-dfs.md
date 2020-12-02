@@ -133,9 +133,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 code to print subtree of all nodes  
 

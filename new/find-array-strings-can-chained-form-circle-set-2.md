@@ -160,9 +160,9 @@ int main()
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 code to check if 
 # cyclic order is possible 

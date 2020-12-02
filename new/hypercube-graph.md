@@ -79,9 +79,9 @@ class GfG
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find vertices in a hypercube  
 #  graph of order n 

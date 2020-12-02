@@ -169,9 +169,9 @@ class Graph 
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to count number   
 # of trees in a forest. 

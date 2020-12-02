@@ -125,9 +125,9 @@ class ShortestPath
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to find shortest path  
 # with exactly k edges  
@@ -403,9 +403,9 @@ class ShortestPath
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Dynamic Programming based Python3  
 # program to find shortest path with 

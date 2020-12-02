@@ -114,9 +114,9 @@ class KPaths {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to count walks from
 # u to v with exactly k edges
@@ -427,9 +427,9 @@ class KPaths {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program to count walks from
 # u to v with exactly k edges

@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/detect-cycle-in-the-graph-using-degrees-of-nodes-of-graph/](https://www.geeksforgeeks.org/detect-cycle-in-the-graph-using-degrees-of-nodes-of-graph/)
 
-给定一个图形，任务是使用图形中节点的度数检测图形中的一个循环，并打印出任何循环中涉及的所有节点。 如果图形中没有循环，则打印 **-1** 。
+给定一个图形，任务是使用图形中节点的度数检测图形中的一个循环，并打印出任何循环中涉及的所有节点。 如果图形中没有循环，则打印`-1`。
 
 **示例**：
 
@@ -268,9 +268,9 @@ class GFG {
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 implementation of the approach
 

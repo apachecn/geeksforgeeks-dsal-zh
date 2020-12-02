@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/maximum-number-of-edges-to-be-removed-to-contain-exactly-k-connected-components-in-the-graph/](https://www.geeksforgeeks.org/maximum-number-of-edges-to-be-removed-to-contain-exactly-k-connected-components-in-the-graph/)
 
-给定[无向图](https://www.geeksforgeeks.org/graph-and-its-representations/)`G`，其中`N`个节点，`M`边和整数`K`， 找到可以去除的边缘的最大数量，以使去除边缘后剩下的`K`[连接的组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)完全相同。 如果图形不能包含`K`连接组件，请打印 **-1** 。
+给定[无向图](https://www.geeksforgeeks.org/graph-and-its-representations/)`G`，其中`N`个节点，`M`边和整数`K`， 找到可以去除的边缘的最大数量，以使去除边缘后剩下的`K`[连接的组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)完全相同。 如果图形不能包含`K`连接组件，请打印`-1`。
 
 **示例**：
 
@@ -37,14 +37,14 @@
 请按照以下步骤解决问题：
 
 1.  [计算给定图形](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)中存在的已连接组件的数量。 令计数为`C`。
-2.  如果`C`大于`K`，则打印 **-1** 。
+2.  如果`C`大于`K`，则打印`-1`。
 3.  其他打印 **M – N + K** ，其中`N`是节点数，`M`是边数，需要`K`连接的组件数。
 
 下面是上述方法的实现：
 
-## Python3
+## Python
 
-```
+```py
 
 # Python program for the above approach 
 

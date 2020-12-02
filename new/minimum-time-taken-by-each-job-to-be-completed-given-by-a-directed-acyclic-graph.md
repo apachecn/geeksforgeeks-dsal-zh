@@ -304,9 +304,9 @@ public static void main(String[] args)
 
 ```
 
-## Python3
+## Python
 
-```
+```py
 
 # Python3 program for the above approach
 from collections import defaultdict

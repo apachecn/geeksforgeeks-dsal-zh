@@ -26,9 +26,9 @@ Barabasi Albert 模型是特惠附件的实现。
 
 以下是 Barabasi Albert 模型的实现。
 
-## Python3
+## Python
 
-```
+```py
 
 import networkx as nx 
 import random 
