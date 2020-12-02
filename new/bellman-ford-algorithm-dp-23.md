@@ -42,9 +42,9 @@
 
 **实施**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program for Bellman-Ford's single source 
 // shortest path algorithm. 

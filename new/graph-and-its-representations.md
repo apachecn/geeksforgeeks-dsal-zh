@@ -34,9 +34,9 @@
 
 请注意，在以下实现中，我们使用动态数组（Java 中为 C ++ / ArrayList 中的向量）表示邻接列表，而不是链接列表。 向量实现具有缓存友好性的优点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A simple representation of graph using STL 
 #include<bits/stdc++.h> 
@@ -84,7 +84,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // A C Program to demonstrate adjacency list  
 // representation of graphs 
@@ -202,9 +202,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to demonstrate Graph representation 
 // using ArrayList in Java 
@@ -327,9 +327,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to demonstrate Graph representation  
 // using LinkedList in C#  

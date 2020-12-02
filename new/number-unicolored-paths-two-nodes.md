@@ -34,9 +34,9 @@ Explanation : There are three paths from 2 to 5
 
 **注意**：颜色数量将始终小于边数。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code to find unicolored paths 
 #include <bits/stdc++.h> 

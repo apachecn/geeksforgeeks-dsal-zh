@@ -45,9 +45,9 @@ Output:
 **方法**：可以使用 Kruskal 算法找到最小生成树来解决给定的问题。
 我们在图中找到了度数最大的顶点。 首先，我们将执行与该顶点有关的所有边的合并，然后执行普通的 Kruskal 算法。 这为我们提供了最佳的生成树。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the approach 
 import java.util.*; 

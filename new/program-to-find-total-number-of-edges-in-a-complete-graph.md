@@ -29,9 +29,9 @@ Output : Edges = 10
 
 以下是上述想法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the 
 // number of edges in a complete graph 
@@ -62,9 +62,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the 
 // number of edges in a complete graph 
@@ -93,9 +93,9 @@ static int totEdge(int n)
 
 ```
 
-## Python 3
+## Python
 
-```
+```py
 
 # Python 3 implementation to   
 # find the number of edges  
@@ -122,9 +122,9 @@ if __name__ == "__main__" :
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find  
 // the number of edges in a 

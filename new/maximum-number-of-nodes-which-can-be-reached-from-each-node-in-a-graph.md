@@ -37,9 +37,9 @@ Output :6 6 6 6 6 6 2 2
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of the above approach
 #include <bits/stdc++.h>
@@ -140,9 +140,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the above approach
 import java.io.*;

@@ -28,9 +28,9 @@ Output : Yes
 **实现**：
 以下是上述步骤的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find out whether a given graph can be 
 // converted to two Cliques or not. 

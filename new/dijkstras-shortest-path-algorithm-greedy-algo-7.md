@@ -41,9 +41,9 @@ Dijkstra 的算法与 [Prim 的最小生成树](https://www.geeksforgeeks.org/pr
 
 我们使用布尔数组 sptSet []表示 SPT 中包含的一组顶点。 如果值 sptSet [v]为 true，则顶点 v 包含在 SPT 中，否则不包含。 数组 dist []用于存储所有顶点的最短距离值。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program for Dijkstra's single source shortest path algorithm. 
 // The program is for adjacency matrix representation of the graph 
@@ -138,9 +138,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program for Dijkstra's single source shortest path algorithm. 
 // The program is for adjacency matrix representation of the graph 
@@ -241,9 +241,9 @@ class ShortestPath {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program for Dijkstra's single  
 # source shortest path algorithm. The program is  
@@ -331,9 +331,9 @@ g.dijkstra(0);
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program for Dijkstra's single 
 // source shortest path algorithm. 

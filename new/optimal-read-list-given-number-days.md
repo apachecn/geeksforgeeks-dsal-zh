@@ -42,9 +42,9 @@ Output: Day 1:  Chapter 1
 2）使用 DFS 查找最佳路径。
 3）打印找到的最佳路径。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ DFS solution to schedule chapters for reading in 
 // given days 

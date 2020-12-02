@@ -29,9 +29,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the maximum 
 // number of edges for triangle free graph 
@@ -61,9 +61,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the maximum  
 // number of edges for triangle free graph  
@@ -95,9 +95,9 @@ class GFG 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the maximum  
 // number of edges for triangle free graph  

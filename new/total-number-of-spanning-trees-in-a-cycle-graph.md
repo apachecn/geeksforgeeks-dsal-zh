@@ -34,9 +34,9 @@ Output: Total Spanning tree = 4
 
 **以下是必需的实现**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find number of 
 // spanning trees 

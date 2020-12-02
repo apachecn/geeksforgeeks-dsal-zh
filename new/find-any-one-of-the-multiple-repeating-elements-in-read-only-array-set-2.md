@@ -53,9 +53,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code for the above approach 
 #include <bits/stdc++.h> 
@@ -112,9 +112,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code for the above approach 
 class GFG{ 
@@ -224,9 +224,9 @@ findDuplicate(arr)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for the above approach 
 using System; 

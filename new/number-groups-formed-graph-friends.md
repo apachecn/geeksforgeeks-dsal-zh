@@ -38,9 +38,9 @@ of every group are (1, 4), (2, 4), (3, 4).
 
 用简单的公式（N1）*（N2）* ....（Nn）来计算我们形成新群体的方式数量，其中 Ni 是第 i 个群体中的人数。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count number of existing
 // groups and number of new groups that can
@@ -147,9 +147,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count number of
 // existing groups and number of 

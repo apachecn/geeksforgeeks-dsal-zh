@@ -33,9 +33,9 @@ Output : Adjacency Matrix of output graph :
 
 ![graph 1](img/f79fe8dfe09d9c9b727686d85df98513.png)![graph 2](img/631ad157b01333a5c2a661ca4fc74b6d.png)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program for minimizing graph 
 #include <bits/stdc++.h> 
@@ -108,9 +108,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for 
 // minimizing graph 
@@ -263,9 +263,9 @@ if __name__ == "__main__": 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for 
 // minimizing graph 

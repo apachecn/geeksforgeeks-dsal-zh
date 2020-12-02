@@ -28,9 +28,9 @@ Shortest distance from 0 to 2 is 1
 
 以下是上述想法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to implement single source 
 // shortest path for a Binary Graph 

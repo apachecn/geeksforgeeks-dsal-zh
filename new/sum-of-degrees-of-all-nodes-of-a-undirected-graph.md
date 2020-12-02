@@ -18,9 +18,9 @@ Output : sum= 8
 **蛮力逼近**
 我们将添加图的每个节点的度数并打印总和。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of above approach 
 #include <bits/stdc++.h> 

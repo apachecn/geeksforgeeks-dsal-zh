@@ -22,9 +22,9 @@ Explanation : There are 2 trees
 3.如果某些节点尚未访问，请再次执行 DFS 遍历。
 4.计数将给出森林中的树木数量。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to count number of trees in 
 // a forest. 
@@ -81,9 +81,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count number of trees in a forest. 
 import java.io.*;  
@@ -215,9 +215,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count number of trees in a forest. 
 using System; 

@@ -30,9 +30,9 @@ The graph contains a negative cycle.
 
 任何节点与自身的距离始终为零。 但是在某些情况下，如本例所示，当我们进一步从 4 遍历到 1 时，距离变为-2，即 1 与 1 的距离变为-2。 这是我们的收获，我们只需要检查节点与自身的距离，如果结果为负，我们将检测到所需的负周期。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to check if there is a negative weight 
 // cycle using Floyd Warshall Algorithm 
@@ -130,9 +130,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to check if there is a negative weight 
 // cycle using Floyd Warshall Algorithm 
@@ -353,9 +353,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to check if there 
 // is a negative weight cycle 

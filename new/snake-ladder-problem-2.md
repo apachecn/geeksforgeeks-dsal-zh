@@ -21,9 +21,9 @@ c）最后通过 2 达到 30。
 
 以下是上述想法的实现。 输入由两件事表示，第一是“ N”，它是给定板上的单元数，第二是大小为 N 的数组“ move [0…N-1]”。输入 move [i]为-1 如果没有蛇且 i 上没有梯子，则 move [i]包含蛇或 i 上梯子的目标单元格索引。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find minimum number of dice throws required to 
 // reach last cell from first cell of a given snake and ladder 
@@ -132,9 +132,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find minimum number of dice  
 // throws required to reach last cell from first  
@@ -344,9 +344,9 @@ print("Min Dice throws required is {0}".
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find minimum  
 // number of dice throws required 

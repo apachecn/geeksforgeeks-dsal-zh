@@ -10,9 +10,9 @@
 
 以下是上述想法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 /// C++ program to find the probability  
 // that we do not cross boundary of a  

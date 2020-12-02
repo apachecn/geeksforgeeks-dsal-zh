@@ -13,9 +13,9 @@
 
 以下是此简单解决方案的实现
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count walks from u to
 // v with exactly k edges
@@ -63,9 +63,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count walks from u to v with exactly k edges
 import java.util.*;
@@ -163,9 +163,9 @@ print(countwalks(graph, u, v, k))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count walks from u to
 // v with exactly k edges
@@ -296,9 +296,9 @@ function countwalks( $graph, $u, $v, $k)
 
 **<u>有效方法：</u>** 可以使用 [**动态编程**](https://www.geeksforgeeks.org/dynamic-programming-set-1/) 优化解决方案。 这个想法是建立一个 3D 表，其中第一维是源，第二维是目标，第三维是从源到目标的边数，其值是走数。 像其他[动态编程问题](https://www.geeksforgeeks.org/tag/dynamic-programming/)一样，以自下而上的方式填充 3D 表。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count walks from
 // u to v with exactly k edges
@@ -361,9 +361,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count walks from
 // u to v with exactly k edges
@@ -499,9 +499,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count walks from u to v
 // with exactly k edges

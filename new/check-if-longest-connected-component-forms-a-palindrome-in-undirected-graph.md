@@ -28,9 +28,9 @@
 **方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的连接组件。 在每次遍历时，如果连接的组件的当前长度大于连接的组件的全局长度的长度，则更新最长的连接的组件。 最后，检查最长的连接组件形成回文。
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to check if
 // longest connected component is 
@@ -226,9 +226,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to check if 
 // longest connected component is 

@@ -27,9 +27,9 @@ minimum weight Hamiltonian Cycle :
 
 以下是上述想法的实现
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to implement traveling salesman
 // problem using naive approach.
@@ -85,9 +85,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to implement 
 // traveling salesman problem 
@@ -301,7 +301,7 @@ if __name__ == "__main__":
 
 ```
 
-**Output**
+输出：
 
 ```
 80

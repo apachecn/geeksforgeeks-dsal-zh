@@ -127,9 +127,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // JAVA program to print all 
 // paths from a source to 
@@ -259,9 +259,9 @@ public class Graph {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to print all paths from a source to destination. 
 
@@ -335,9 +335,9 @@ g.printAllPaths(s, d)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print all 
 // paths from a source to 

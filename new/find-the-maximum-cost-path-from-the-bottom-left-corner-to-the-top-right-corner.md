@@ -29,9 +29,9 @@ Output : 24
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find maximum cost to reach  
 // top right corner from bottom left corner 

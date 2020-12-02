@@ -30,9 +30,9 @@ Output: Order of characters is 'c', 'a', 'b'
 
 以下是上述算法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to order of characters in an alien language 
 #include<bits/stdc++.h> 

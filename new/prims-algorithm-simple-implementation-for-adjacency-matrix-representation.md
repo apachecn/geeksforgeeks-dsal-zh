@@ -7,9 +7,9 @@
 
 [先前的文章](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)中讨论的实现使用两个数组来找到连接这两个集合的最小权重边。 在这里，我们使用一个 inMST [V]。 如果顶点 i 包含在 MST 中，则 MST [i]的值将为 true。 在每一遍中，我们仅考虑那些边，以使该边的一个顶点包含在 MST 中，而另一个不包含。 选择一条边后，将两个顶点都标记为包含在 MST 中。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A simple C++ implementation to find minimum  
 // spanning tree for adjacency representation. 

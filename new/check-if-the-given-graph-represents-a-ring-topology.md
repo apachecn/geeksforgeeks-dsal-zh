@@ -30,9 +30,9 @@ Output : NO
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to check if the given graph 
 // represents a Ring topology 

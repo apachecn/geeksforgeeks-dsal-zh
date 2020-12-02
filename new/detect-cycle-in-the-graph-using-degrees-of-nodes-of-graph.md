@@ -142,9 +142,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the approach
 import java.util.*;
@@ -376,9 +376,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the approach
 using System;

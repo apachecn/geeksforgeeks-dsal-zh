@@ -36,9 +36,9 @@ The graph contains a negative cycle.
 
 第 3 步的想法是，如果图形不包含负权重循环，则第 2 步可确保最短距离。 如果我们再遍历所有边缘一次，并且获得任意顶点的较短路径，那么权重周期将为负。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to check if a graph contains negative
 // weight cycle using Bellman-Ford algorithm. This program
@@ -177,9 +177,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check if a graph contains negative 
 // weight cycle using Bellman-Ford algorithm. This program 
@@ -337,9 +337,9 @@ No
 **如何处理断开的图形（如果无法从源到达循环）？**
 如果断开给定图形的连接，上述算法和程序可能无法正常工作。 当所有顶点都可以从源顶点 0 到达时，它就可以工作。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program for Bellman-Ford's single source
 // shortest path algorithm.
@@ -508,9 +508,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program for Bellman-Ford's single source 
 // shortest path algorithm. 

@@ -41,9 +41,9 @@
 ***如何实现以上算法？***
 我们使用布尔数组 mstSet []表示 MST 中包含的一组顶点。 如果值 mstSet [v]为 true，则顶点 v 包含在 MST 中，否则不包含。 数组 key []用于存储所有顶点的键值。 另一个数组 parent []，用于在 MST 中存储父节点的索引。 父数组是用于显示构造的 MST 的输出数组。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program for Prim's Minimum  
 // Spanning Tree (MST) algorithm. The program is  
@@ -157,7 +157,7 @@ int main() 
 
 ## C
 
-```
+```c
 
 // A C program for Prim's Minimum 
 // Spanning Tree (MST) algorithm. The program is 
@@ -264,9 +264,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program for Prim's Minimum Spanning Tree (MST) algorithm. 
 // The program is for adjacency matrix representation of the graph 
@@ -380,9 +380,9 @@ class MST {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A Python program for Prim's Minimum Spanning Tree (MST) algorithm. 
 # The program is for adjacency matrix representation of the graph 
@@ -469,9 +469,9 @@ g.primMST();
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program for Prim's Minimum 
 // Spanning Tree (MST) algorithm. 

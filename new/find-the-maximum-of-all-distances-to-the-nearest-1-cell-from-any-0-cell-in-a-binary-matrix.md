@@ -36,9 +36,9 @@ distance of 4 cells from the only
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to find the maximum
 // distance from a 0-cell to a 1-cell
@@ -109,9 +109,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to find the maximum
 // distance from a 0-cell to a 1-cell
@@ -194,9 +194,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find the maximum
 // distance from a 0-cell to a 1-cell
@@ -296,9 +296,9 @@ public static void Main(String[] args)
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to find the maximum
 // distance from a 0-cell to a 1-cell
@@ -383,9 +383,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the maximum
 // distance from a 0-cell to a 1-cell
@@ -485,9 +485,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find 
 // the maximum distance 
@@ -619,9 +619,9 @@ public static void Main(String[] args)
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to find the maximum
 // distance from a 0-cell to a 1-cell
@@ -713,9 +713,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the maximum
 // distance from a 0-cell to a 1-cell
@@ -811,7 +811,7 @@ public static void main(String[] args)
 
 ```
 
-**Output**
+输出：
 
 ```
 4

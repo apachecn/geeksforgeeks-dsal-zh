@@ -29,9 +29,9 @@ Output: K-Cores :
 
 以下是上述想法的实现。 请注意，以下程序仅打印 k 个核的顶点，但由于我们修改了邻接表，因此可以轻松扩展以打印完整的 k 个核。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find K-Cores of a graph 
 #include<bits/stdc++.h> 
@@ -206,9 +206,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find K-Cores of a graph 
 import java.util.*; 
@@ -385,9 +385,9 @@ class GFG
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find K-Cores of a graph 
 from collections import defaultdict 
@@ -514,9 +514,9 @@ g2.printKCores(k)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find K-Cores of a graph
 using System;

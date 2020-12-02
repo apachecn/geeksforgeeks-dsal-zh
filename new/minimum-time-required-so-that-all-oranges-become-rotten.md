@@ -280,9 +280,9 @@ Max time incurred: 2
 
 *   **实施**：[
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find minimum time required to make all
 // oranges rotten
@@ -443,9 +443,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 //Java program to find minimum time required to make all
 //oranges rotten
@@ -625,9 +625,9 @@ public class RotOrange
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find minimum time 
 // required to make all oranges rotten 

@@ -23,9 +23,9 @@ For example, consider the below graph.
 
 以下是上述步骤的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print all topological sorts of a graph 
 #include <bits/stdc++.h> 
@@ -155,9 +155,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 //Java program to print all topolgical sorts of a graph 
 import java.util.*; 

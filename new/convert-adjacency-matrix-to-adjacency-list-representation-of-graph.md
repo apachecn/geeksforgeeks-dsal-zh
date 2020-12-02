@@ -30,9 +30,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include<bits/stdc++.h> 
 using namespace std; 
@@ -92,9 +92,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to convert adjacency 
 // matrix representation to 
@@ -164,9 +164,9 @@ public class GFG {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to convert Adjacency matrix 
 # representation to Adjacency List 
@@ -196,9 +196,9 @@ for i in AdjList:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to convert adjacency 
 // matrix representation to 

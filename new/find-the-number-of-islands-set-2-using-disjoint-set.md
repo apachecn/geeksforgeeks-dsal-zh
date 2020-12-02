@@ -33,9 +33,9 @@
 
 以下是上述步骤的 Java 实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to fnd number of islands  
 // using Disjoint Set data structure. 
@@ -219,9 +219,9 @@ int main(void)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to fnd number of islands using Disjoint 
 // Set data structure. 
@@ -544,9 +544,9 @@ print("Number of Islands is:", countIslands(a))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to fnd number of islands using Disjoint 
 // Set data structure. 

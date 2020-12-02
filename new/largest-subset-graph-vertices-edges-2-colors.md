@@ -59,9 +59,9 @@ C [4] [4]：
 
 <u>步骤 III：</u>现在，我们可以看到每个顶点具有 1 个以上不同的颜色边缘。 因此，子集中的顶点总数为 4。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find size of subset of graph vertex 
 // such that each vertex has more than 1 color edges 
@@ -134,9 +134,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find size of  
 // subset of graph vertex such that  
@@ -293,9 +293,9 @@ print(subsetGraph(C))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find size of  
 // subset of graph vertex such that  

@@ -25,9 +25,9 @@ Output:  Following words of dictionary are present
 
 想法是将每个字符都视为起始字符，并找到所有以此字符开头的单词。 可以使用[深度优先遍历](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)找到所有字符开头的单词。 我们从每个像元开始进行深度优先遍历。 我们会跟踪访问过的单元格，以确保一个单词只被考虑一次。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for Boggle game 
 #include <cstring> 
@@ -108,9 +108,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for Boggle game 
 class GFG { 
@@ -186,9 +186,9 @@ class GFG {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for Boggle game 
 using System; 

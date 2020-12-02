@@ -61,9 +61,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the shortest path 
 // with minimum edges in a graph 
@@ -173,9 +173,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the shortest path  
 // with minimum edges in a graph  
@@ -294,9 +294,9 @@ class GFG 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find the shortest path 
 # with minimum edges in a graph 

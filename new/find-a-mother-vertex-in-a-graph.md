@@ -46,9 +46,9 @@ Output : 5
 
 下面是上述算法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find a mother vertex in O(V+E) time 
 #include <bits/stdc++.h> 
@@ -152,9 +152,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find a mother  
 // vertex in O(V+E) time  
@@ -266,9 +266,9 @@ static int motherVertex(ArrayList<ArrayList<Integer>>g,
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # program to find a mother vertex in O(V+E) time 
 from collections import defaultdict 

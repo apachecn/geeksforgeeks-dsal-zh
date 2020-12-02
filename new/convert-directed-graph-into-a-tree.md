@@ -23,9 +23,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to convert directed graph into tree 
 #include <bits/stdc++.h> 

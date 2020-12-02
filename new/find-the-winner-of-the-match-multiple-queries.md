@@ -30,9 +30,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find winner of the match 
 #include <bits/stdc++.h> 

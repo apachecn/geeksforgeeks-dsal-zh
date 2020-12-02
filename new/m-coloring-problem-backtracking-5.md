@@ -184,9 +184,9 @@ Solution Exists: Following are the assigned colors
 5.  如果任何递归函数返回 true，则中断循环并返回 true。
 6.  如果没有任何对策函数返回 true，则返回 false。
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <stdbool.h>
 #include <stdio.h>
@@ -326,9 +326,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 /* Java program for solution of 
    M Coloring problem using backtracking */
@@ -462,9 +462,9 @@ public class mColoringProblem
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program for solution of M Coloring 
 # problem using backtracking
@@ -520,9 +520,9 @@ g.graphColouring(m)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 /* C# program for solution of M Coloring problem 
 using backtracking */
@@ -669,9 +669,9 @@ Solution Exists: Following are the assigned colors
 
 访问所有节点后，返回 true（因为在旅行时找不到违反条件）。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program for the above approach
 #include <bits/stdc++.h>

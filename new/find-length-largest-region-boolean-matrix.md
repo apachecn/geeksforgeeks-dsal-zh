@@ -42,9 +42,9 @@ other as 4\. So largest region: 4
 
 以下是上述想法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Program to find the length of the largest
 // region in boolean 2D-matrix
@@ -149,9 +149,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the length of the largest
 // region in boolean 2D-matrix
@@ -339,9 +339,9 @@ print(largestRegion(M))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find the length of
 // the largest region in boolean 2D-matrix
@@ -444,7 +444,7 @@ class GFG
 
 ```
 
-**Output**
+输出：
 
 ```
 6

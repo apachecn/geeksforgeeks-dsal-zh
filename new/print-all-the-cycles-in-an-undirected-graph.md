@@ -23,9 +23,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print all the cycles
 // in an undirected graph
@@ -153,9 +153,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print all the cycles 
 // in an undirected graph 
@@ -427,9 +427,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print all
 // the cycles in an undirected 

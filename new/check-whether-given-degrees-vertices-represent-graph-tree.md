@@ -40,9 +40,9 @@ Output : Graph
 
 因此，基本上我们需要检查所有度的和是否为 2 *（n-1）或否。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check whether input degree 
 // sequence is graph or tree 
@@ -78,9 +78,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check whether input degree  
 // sequence is graph or tree  
@@ -124,9 +124,9 @@ class GFG 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to check whether input degree 
 # sequence is graph or tree 
@@ -151,9 +151,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to check whether input  
 // degree sequence is graph or tree  

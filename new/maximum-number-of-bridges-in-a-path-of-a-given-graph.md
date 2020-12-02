@@ -41,9 +41,9 @@ and (3 - 4) in the path from 1 to 4.
 
 以下是上述方法的实现
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the
 // maximum number of bridges
@@ -266,9 +266,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the
 // maximum number of bridges
@@ -535,9 +535,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find the
 // maximum number of bridges

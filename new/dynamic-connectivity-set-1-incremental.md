@@ -55,9 +55,9 @@ connected or not
 
 下面给出了实现，此处我们通过等级压缩和路径压缩使用[并集](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of incremental connectivity 
 #include<bits/stdc++.h> 
@@ -162,9 +162,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of  
 // incremental connectivity 
@@ -371,9 +371,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of  
 // incremental connectivity 

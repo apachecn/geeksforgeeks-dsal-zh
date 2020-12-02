@@ -31,9 +31,9 @@ ABCV - ABCD - EBCD - EBAD
 
 以下是上述想法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find length  
 // of the shortest chain 
@@ -143,9 +143,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find length 
 // of the shortest chain 
@@ -263,9 +263,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find length of the shortest chain 
 // transformation from source to target 
@@ -381,7 +381,7 @@ public static void Main(String[] args)
 
 ```
 
-**Output**
+输出：
 
 ```
 Length of shortest chain is: 7
@@ -401,9 +401,9 @@ Length of shortest chain is: 7
 
 在这里，通过这种方法，我们找到了起始词和给定词典列表中所有词的所有中间词，并维护了中间词的映射和原始词的向量（映射<string vector="">>）。 例如，对于单词“ POON”，中间单词是“ * OON”，“ P * ON”，“ PO * N”，“ POO *”。 然后，我们从起始单词开始执行 BFS 遍历，并将一对起始单词和距离（pair（word，distance））推入队列，直到到达目标单词。 那么，距离就是我们的答案。</string>
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find length  
 // of the shortest chain 
@@ -515,7 +515,7 @@ int main()
 
 ```
 
-**Output**
+输出：
 
 ```
 Length of shortest chain is: 7

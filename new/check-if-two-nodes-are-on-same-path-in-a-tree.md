@@ -54,9 +54,9 @@ end
 **实现**：
 下面是上述伪代码的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check if given pairs lie on same 
 // path or not. 
@@ -141,9 +141,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check if given  
 // pairs lie on same path or not. 
@@ -331,9 +331,9 @@ print("Yes") if query(2, 6) else print("No")
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to check if given  
 // pairs lie on same path or not. 

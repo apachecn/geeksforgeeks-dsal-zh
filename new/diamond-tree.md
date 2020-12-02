@@ -85,9 +85,9 @@ Structre will look like
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ programm to create the diamond 
 // like structre of Binary Tree 

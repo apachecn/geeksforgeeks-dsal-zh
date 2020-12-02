@@ -30,9 +30,9 @@
 
 下面是上述方法的实现：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for the above approach 
 import java.util.ArrayList; 
@@ -172,9 +172,9 @@ true
 
 以下是有效方法的实现：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for the above approach 
 import java.awt.*; 

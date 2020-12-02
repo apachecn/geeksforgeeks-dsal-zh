@@ -31,9 +31,9 @@ Here, a generic tree is sometimes also called an N-ary tree or N-way tree where
 **方法 2**：
 在 O（n）时间内为 N 元树生成图，并在 O（n）时间内将 BFS 应用于存储的图，同时执行 BFS 可以存储最大达到的级别。 该解决方案进行了两次迭代以找到 N 元树的高度。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code to find height of N-ary
 // tree in O(n)
@@ -254,9 +254,9 @@ Height of N-ary Tree=4
 将节点 7 标记为已访问
 。因此，我们仅处理一次 N 元树中的每个节点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code to find height of N-ary
 // tree in O(n) (Efficient Approach)
@@ -332,9 +332,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to find height of N-ary
 // tree in O(n) (Efficient Approach)
@@ -487,9 +487,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to find height of N-ary
 // tree in O(n) (Efficient Approach)

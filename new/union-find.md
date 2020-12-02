@@ -44,9 +44,9 @@
 
 根据以上说明，以下是实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A union-find algorithm to detect cycle in a graph
 #include <bits/stdc++.h>
@@ -158,7 +158,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // A union-find algorithm to detect cycle in a graph
 #include <stdio.h>
@@ -272,9 +272,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program for union-find algorithm to detect cycle in a graph
 import java.util.*;
@@ -376,9 +376,9 @@ class Graph
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python Program for union-find algorithm to detect cycle in a undirected graph
 # we have one egde for any two vertex i.e 1-2 is either 1-2 or 2-1 but not both
@@ -443,9 +443,9 @@ else :
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program for union-find 
 // algorithm to detect cycle 

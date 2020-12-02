@@ -31,9 +31,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to detect if a path
 // exists between any two vertices
@@ -235,9 +235,9 @@ Yes
 **高效解决方案**，
 我们可以使用 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 或 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 查找从 u 到 v 的路径。以下是基于 BFS 的解决方案
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check if there is exist a path between
 // two vertices of an undirected graph.

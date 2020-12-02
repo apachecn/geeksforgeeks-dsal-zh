@@ -52,9 +52,9 @@ for each edge(src,dest) in Edges
 
 该算法的总时间复杂度为 O（V + E）
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to check if there is a cycle in 
 // directed graph using BFS.
@@ -170,9 +170,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check if there is a cycle in 
 // directed graph using BFS.
@@ -381,9 +381,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to check if there is a cycle in 
 // directed graph using BFS.

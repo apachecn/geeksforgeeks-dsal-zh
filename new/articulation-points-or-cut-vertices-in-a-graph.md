@@ -41,9 +41,9 @@ some descendant of u to w.
 
 以下是 Tarjan 用于查找发音点的算法的 C ++，Java 和 Python 实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to find articulation points in an undirected graph 
 #include<iostream> 
@@ -201,9 +201,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to find articulation points in an undirected graph 
 import java.io.*; 
@@ -362,9 +362,9 @@ class Graph
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find articulation points in an undirected graph 
 
@@ -487,9 +487,9 @@ g3.AP()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to find articulation  
 // points in an undirected graph 

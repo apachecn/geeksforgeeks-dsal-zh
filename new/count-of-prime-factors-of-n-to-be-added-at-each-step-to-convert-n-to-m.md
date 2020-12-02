@@ -38,9 +38,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the minimum
 // steps required to convert a number
@@ -151,9 +151,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the minimum
 // steps required to convert a number
@@ -291,9 +291,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find the minimum
 // steps required to convert a number

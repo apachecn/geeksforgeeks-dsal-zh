@@ -41,9 +41,9 @@
 此公式还涵盖单个顶点可能具有自环的情况。
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation for the
 // above approach.
@@ -91,9 +91,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation for the
 // above approach.
@@ -146,9 +146,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation for the
 // above approach.

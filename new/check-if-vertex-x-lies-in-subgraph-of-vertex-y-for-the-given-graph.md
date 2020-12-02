@@ -21,9 +21,9 @@
 **方法**：的想法是使用[深度优先搜索（DFS）](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)。 初始化中的两个数组*和*中的*初始化，以保持遍历顶点的开始时间和结束标记的时间，直到遍历顶点。 如果第二个顶点的开始时间小于第一个顶点的开始时间，并且第一个顶点的结束时间小于第二个顶点的结束时间，则返回 true，否则返回 false。
 以下是上述方法的实现：* 
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to check if vertex X 
 // lies in subgraph of vertex Y 
@@ -127,9 +127,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to check if vertex X 
 // lies in subgraph of vertex Y 
@@ -348,9 +348,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to check if vertex X 
 // lies in subgraph of vertex Y 

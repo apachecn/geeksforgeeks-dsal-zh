@@ -13,9 +13,9 @@
 
 该实现使用图形的[邻接表表示](http://en.wikipedia.org/wiki/Adjacency_list)。 [STL](http://en.wikipedia.org/wiki/Standard_Template_Library) 的[列表容器](http://www.yolinux.com/TUTORIALS/LinuxTutorialC++STL.html#LIST)用于存储 BFS 遍历所需的相邻节点列表和节点队列。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Program to print BFS traversal from a given 
 // source vertex. BFS(int s) traverses vertices  
@@ -115,9 +115,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print BFS traversal from a given source vertex. 
 // BFS(int s) traverses vertices reachable from s. 
@@ -277,9 +277,9 @@ g.BFS(2)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print BFS traversal  
 // from a given source vertex.  

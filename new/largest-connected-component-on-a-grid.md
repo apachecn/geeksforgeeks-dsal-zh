@@ -31,9 +31,9 @@
 
 下面是上述方法的说明：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to print the largest 
 // connected component in a grid 

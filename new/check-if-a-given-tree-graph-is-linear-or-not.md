@@ -43,9 +43,9 @@ NO
 
 **方法**：仅当 n-2 个节点的 indegree == 2 或节点数 n == 1 时，给定的树才是线性的。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java Program to check whether a graph is 
 // Linear or not
@@ -180,9 +180,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# Program to check whether a graph is 
 // Linear or not

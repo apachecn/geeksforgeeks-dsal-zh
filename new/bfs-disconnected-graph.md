@@ -16,9 +16,9 @@ unvisited vertex of given graph.
 
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of modified BFS 
 #include<bits/stdc++.h> 
@@ -96,9 +96,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of modified BFS  
 import java.util.*; 
@@ -272,9 +272,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of modified BFS  
 using System; 

@@ -30,9 +30,9 @@
 
 以下是上述算法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to fin maximum cash flow among a set of persons 
 #include<iostream> 

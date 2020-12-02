@@ -24,9 +24,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find minimum
 // number of edges between any two
@@ -159,9 +159,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find minimum 
 // number of edges between any two 
@@ -385,9 +385,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find minimum 
 // number of edges between any two 

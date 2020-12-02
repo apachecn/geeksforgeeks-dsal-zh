@@ -29,9 +29,9 @@ n is 2.
 
 想法是使用给定的规则集形成数组元​​素的有向图。 形成图表时，我们不会进行自我循环，因为值 arr [i]％n 等于 0 表示没有移动。 最后，我们的任务减少到有向图中的[检测周期。 为了检测周期，我们使用 DFS，在 DFS 中，如果到达被访问的节点和递归调用堆栈，则说存在一个周期。](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check if a given array is cyclic or not 
 #include<bits/stdc++.h> 
@@ -98,9 +98,9 @@ int main(void)
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check if  
 // a given array is cyclic or not  

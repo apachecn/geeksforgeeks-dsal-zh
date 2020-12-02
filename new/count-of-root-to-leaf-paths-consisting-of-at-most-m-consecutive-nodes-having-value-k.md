@@ -44,9 +44,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to implement
 // the above approach
@@ -136,9 +136,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to implement
 // the above approach
@@ -330,9 +330,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to implement
 // the above approach

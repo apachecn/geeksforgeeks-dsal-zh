@@ -18,9 +18,9 @@ changed tree is shown on the right side.
 假设当某个节点被选为 dfs 的起始节点时，树中的反转总数为 R，则 **如果要从节点 i 到达其他每个节点，则需要将路径 i 的所有后边缘反转到起始节点，并且还需要将节点 i 以外的所有其他后边缘反转到起始节点路径。** 第一部分将是（节点 i 与起始节点的距离–节点 i 的后边缘数）​​，因为我们要反转从节点 i 到起始节点的路径中的边缘，它将是总边缘（即距离）减去从 从节点到节点 i 的起始节点（即节点 i 的后边缘计数）。 第二部分将是（树 R 的总边缘反转或总后边缘–节点 i 的后边缘计数）。 在每个节点上计算了该值之后，我们将选择其中的最小值作为结果。
 在下面的代码中，在给定的边缘方向上添加了权重 0，在相反的方向上添加了权重 1，该权重用于在 dfs 方法中计算反转边缘。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find min edge reversal to 
 // make every node reachable from root 
@@ -158,9 +158,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find min edge reversal to  
 // make every node reachable from root  
@@ -318,9 +318,9 @@ public static void main(String args[])
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find min edge reversal to  
 // make every node reachable from root 

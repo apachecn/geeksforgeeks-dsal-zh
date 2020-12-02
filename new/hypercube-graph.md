@@ -20,9 +20,9 @@ Output : 4
 
 所有超立方体图都是哈密顿量，阶次为**的超立方体图具有（2 ^ n）个顶点**，对于输入 n 作为图的阶次，我们必须找到 2 的幂。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find vertices in a hypercube  
 // graph of order n 
@@ -48,9 +48,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find vertices in  
 // a hypercube graph of order n  
@@ -100,9 +100,9 @@ print(power(n))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find vertices in  
 // a hypercube graph of order n  

@@ -53,9 +53,9 @@
 
 下面是上述方法的实现
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count the number of walks
 // of length N where cost of each walk is
@@ -149,9 +149,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count the number of walks
 // of length N where cost of each walk is
@@ -346,9 +346,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count the number of walks
 // of length N where cost of each walk is

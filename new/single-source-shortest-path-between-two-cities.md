@@ -23,9 +23,9 @@
 
 下面是我们方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for the above approach 
 #include <bits/stdc++.h> 
@@ -172,9 +172,9 @@ int main()
 
 下面是我们方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program of the above approach 
 #include <bits/stdc++.h> 
@@ -294,9 +294,9 @@ int main()
 
 这是我们方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for the above approach 
 #include <bits/stdc++.h> 
@@ -401,9 +401,9 @@ int main()
 
 下面是上述方法的实现
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program of the above Approach 
 #include <bits/stdc++.h> 

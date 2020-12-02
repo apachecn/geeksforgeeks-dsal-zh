@@ -45,9 +45,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find minimum possible 
 // changes required in the matrix 
@@ -214,9 +214,9 @@ int main()
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find minimum 
 // possible changes required 

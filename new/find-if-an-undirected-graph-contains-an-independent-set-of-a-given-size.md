@@ -143,9 +143,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to check if a 
 // given graph contains an 
@@ -313,9 +313,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to check if a 
 // given graph contains an 

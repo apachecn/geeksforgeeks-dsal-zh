@@ -11,9 +11,9 @@
 
 我们使用父级数组来跟踪某个顶点的父级顶点，因此我们不会将访问的父级视为循环。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to detect cycle in an undirected graph 
 // using BFS. 

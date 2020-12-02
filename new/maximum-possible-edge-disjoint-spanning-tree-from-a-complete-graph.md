@@ -58,9 +58,9 @@ Max Edge-disjoint spanning tree = floor(N / 2)
 
 以下是查找可能的最大边缘不相交生成树数量的程序。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the maximum number of  
 // Edge-Disjoint Spanning tree possible 

@@ -37,9 +37,9 @@ Output:  2 -> 1 -> 3
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation 
 #include <bits/stdc++.h> 

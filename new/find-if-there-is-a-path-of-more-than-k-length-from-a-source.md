@@ -38,9 +38,9 @@ than 61.
 
 以下是上述想法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Program to find if there is a simple path with 
 // weight more than k 

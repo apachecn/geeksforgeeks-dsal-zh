@@ -22,9 +22,9 @@
 ………………if（dist [v] > dist [u] + weight（u，v））
 …………………………dist [v] = dist [u] +权重（u，v）
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find single source shortest paths for Directed Acyclic Graphs 
 #include<iostream> 
@@ -169,9 +169,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find single source shortest paths in Directed Acyclic Graphs 
 import java.io.*; 
@@ -318,9 +318,9 @@ class ShortestPath
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find single source shortest paths 
 # for Directed Acyclic Graphs Complexity :OV(V+E) 
@@ -413,9 +413,9 @@ g.shortestPath(s)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find single source shortest 
 // paths in Directed Acyclic Graphs 

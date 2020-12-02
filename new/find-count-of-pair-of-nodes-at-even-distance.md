@@ -39,9 +39,9 @@ Output: 4
 
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find 
 // the count of nodes 

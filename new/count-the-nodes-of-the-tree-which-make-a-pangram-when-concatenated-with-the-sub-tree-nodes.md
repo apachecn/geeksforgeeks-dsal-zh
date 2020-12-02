@@ -18,9 +18,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of the approach
 #include <bits/stdc++.h>
@@ -100,9 +100,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the approach
 import java.util.*;
@@ -268,9 +268,9 @@ print(countTotalPangram(n))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of 
 // the above approach

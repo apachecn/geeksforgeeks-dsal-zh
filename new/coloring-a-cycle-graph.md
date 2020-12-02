@@ -36,9 +36,9 @@ Output : No. of colors require is: 2
 所需颜色= 3
 ![](img/08cf65dd8111b8128baca91d7e0ad460.png)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find number of colors 
 // required to color a cycle graph 
@@ -73,9 +73,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find number of colors 
 // required to color a cycle graph 
@@ -148,9 +148,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find number of colors 
 // required to color a cycle graph 

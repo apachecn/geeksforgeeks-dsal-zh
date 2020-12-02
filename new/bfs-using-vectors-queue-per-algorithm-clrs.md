@@ -49,9 +49,9 @@ BFS(G,s)
 
 第一次遍历完成
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to implement BFS as per CLRS  
 // algorithm. 

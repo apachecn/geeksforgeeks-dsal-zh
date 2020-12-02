@@ -14,9 +14,9 @@
 
 这个想法是使用[先前文章](https://www.geeksforgeeks.org/count-possible-paths-source-destination-exactly-k-edges/)中讨论的方法浏览从 u 到 v 的所有长度为 k 的路径，并返回最短路径的权重。 **简单解决方案**是从 u 开始，转到所有相邻的顶点，然后对 k 为 k-1，源为相邻顶点，目标为 v 的相邻顶点递归。以下是此简单的 C ++和 Java 实现 解。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find shortest path with exactly k edges 
 #include <bits/stdc++.h> 
@@ -67,9 +67,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Dynamic Programming based Java program to find shortest path 
 // with exactly k edges 
@@ -180,9 +180,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // Dynamic Programming based C# program to  
 // find shortest pathwith exactly k edges 
@@ -251,9 +251,9 @@ Weight of the shortest path is 9
 上述函数的最坏情况下的时间复杂度是 O（V <sup>k</sup> ），其中 V 是给定图中顶点的数量。 我们可以通过绘制递归树来简单地分析时间复杂度。 最坏的情况发生在完整的图形上。 在最坏的情况下，递归树的每个内部节点都将恰好有 V 个子级。
 我们可以使用 **[动态编程](https://www.geeksforgeeks.org/dynamic-programming-set-1/)** 优化上述解决方案。 这个想法是建立一个 3D 表，其中第一维是源，第二维是目标，第三维是从源到目标的边数，其值是走数。 像其他[动态编程问题](https://www.geeksforgeeks.org/tag/dynamic-programming/)一样，我们以自下而上的方式填充 3D 表。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Dynamic Programming based C++ program to find shortest path with 
 // exactly k edges 
@@ -324,9 +324,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Dynamic Programming based Java program to find shortest path with 
 // exactly k edges 
@@ -477,9 +477,9 @@ print("Weight of the shortest path is",
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // Dynamic Programming based C# program to find  
 // shortest path with exactly k edges  

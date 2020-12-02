@@ -72,9 +72,9 @@
 
 下面是上述算法的 C ++实现。 该实现使用上面讨论的方法 2 查找度数。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to print topological 
 // sorting of a graph using indegrees. 

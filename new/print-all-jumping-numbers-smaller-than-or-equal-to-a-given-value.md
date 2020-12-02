@@ -55,9 +55,9 @@ and so on.
 
 以下是上述想法基于 BFS 的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Finds and prints all jumping numbers smaller than or 
 // equal to x. 

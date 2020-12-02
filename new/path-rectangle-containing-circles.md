@@ -39,9 +39,9 @@ Output : Not Possible
 
 下面是上述想法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find out path in
 // a rectangle containing circles.
@@ -340,7 +340,7 @@ if __name__ == '__main__':
 
 ```
 
-**Output**
+输出：
 
 ```
 Possible

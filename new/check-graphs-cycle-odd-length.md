@@ -36,9 +36,9 @@
 
 下面是检查图形是否具有奇数循环的代码。 该代码基本上检查图是否为 Bipartite。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find out whether a given graph is 
 // Bipartite or not 

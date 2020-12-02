@@ -22,9 +22,9 @@
 
 以下是拓扑排序的实现。 请参见断开的图形的深度[第一次遍历代码，并注意此处给出的第二个代码与下面的代码之间的区别。](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to print topological 
 // sorting of a DAG 
@@ -137,9 +137,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to print topological 
 // sorting of a DAG 
@@ -235,9 +235,9 @@ class Graph {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to print topological sorting of a DAG 
 from collections import defaultdict 
@@ -301,9 +301,9 @@ g.topologicalSort()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to print topological 
 // sorting of a DAG 
@@ -404,7 +404,7 @@ class Graph {
 
 ```
 
-**Output**
+输出：
 
 ```
 Following is a Topological Sort of the given graph 

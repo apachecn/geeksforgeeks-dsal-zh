@@ -36,9 +36,9 @@
 
 下面是一个非常简单的实现，表示使用 BFS 进行双向搜索的概念。 此实现考虑没有任何权重的无向路径。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for Bidirectional BFS search
 // to check path between two vertices

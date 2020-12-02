@@ -48,9 +48,9 @@ Explanation: The 2 paths between A and C are:
 
 **实施**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count all paths from a 
 // source to a destination. 

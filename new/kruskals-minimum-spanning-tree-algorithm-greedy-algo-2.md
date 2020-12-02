@@ -85,9 +85,9 @@ Weight   Src    Dest
 
 以下是上述想法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for Kruskal's algorithm
 //  to find Minimum Spanning Tree of a
@@ -295,7 +295,7 @@ int main()
 
 ## C
 
-```
+```c
 
 // C program for Kruskal's algorithm to find Minimum
 // Spanning Tree of a given connected, undirected and
@@ -493,9 +493,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for Kruskal's algorithm to 
 // find Minimum Spanning Tree of a given 
@@ -696,9 +696,9 @@ class Graph {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program for Kruskal's algorithm to find
 # Minimum Spanning Tree of a given connected,
@@ -814,9 +814,9 @@ g.KruskalMST()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Code for above approach
 using System;
@@ -1013,7 +1013,7 @@ class Graph {
 
 ```
 
-**Output**
+输出：
 
 ```
 Following are the edges in the constructed MST

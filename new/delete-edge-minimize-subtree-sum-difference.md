@@ -23,9 +23,9 @@ edge 3-6,  subtree sum difference = 21 - 2 = 19
 在下面的代码中，另一个数组子树用于将根于节点 i 的子树的总和存储在子树[i]中。 每次使用当前节点索引和父索引调用 DFS，以仅在每个节点上遍历子节点。
 请参阅以下代码，以更好地理解。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to minimize subtree sum 
 // difference by one edge deletion 

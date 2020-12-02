@@ -238,9 +238,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check if a given  
 // directed graph is Eulerian or not  
@@ -438,9 +438,9 @@ public static void main(String[] args) throws Exception
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to check if a given directed graph is Eulerian or not 
 CHARS = 26

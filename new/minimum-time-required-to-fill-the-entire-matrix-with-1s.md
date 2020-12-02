@@ -34,9 +34,9 @@
 
 以下代码是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to calculate the number of steps
 // in fill all entire matrix with '1'
@@ -150,9 +150,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to calculate the
 // number of steps in fill all 
@@ -298,9 +298,9 @@ public static void main(String[] args)
 
 ```
 
-## Python 3
+## Python
 
-```
+```py
 
 # Python 3 program to calculate the number of steps
 # in fill all entire matrix with '1'
@@ -401,9 +401,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to calculate the
 // number of steps in fill all 

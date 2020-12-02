@@ -35,9 +35,9 @@ NODE 4:     7 - 7
 此处，节点 1 的范围是 1-7（所有节点），因此将在所有节点上执行更新和查询。 像 2 这样没有子节点的叶子节点只会更新范围 2-2（仅自身），这证明我们的范围数组 tin 和 tout 是正确的。 类似地，所有节点的 tin 和 tout 确定了查询范围并在段树中更新。
 以下是该方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of the above approach 
 
@@ -189,9 +189,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the above approach 
 import java.util.*; 
@@ -489,9 +489,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the above approach 
 using System; 

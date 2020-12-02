@@ -23,9 +23,9 @@
 
 ![](img/1a7ade280bb2d188f22f2de91cda7c74.png)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to count number of shortest 
 // paths from a given source to every other 
@@ -121,9 +121,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count number of shortest  
 // paths from a given source to every other  
@@ -316,9 +316,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count number of shortest  
 // paths from a given source to every other  

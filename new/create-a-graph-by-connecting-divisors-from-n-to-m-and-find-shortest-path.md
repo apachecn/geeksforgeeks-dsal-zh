@@ -164,9 +164,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for the above approach 
 import java.util.*; 
@@ -442,9 +442,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for the above approach 
 using System; 

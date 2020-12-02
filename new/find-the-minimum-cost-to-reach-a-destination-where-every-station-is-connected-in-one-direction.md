@@ -35,9 +35,9 @@ minCost(0, N-1) = MIN { cost[0][n-1],
 
 以下是上述递归公式的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A naive recursive solution to find min cost path from station 0 
 // to station N-1 
@@ -98,9 +98,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java naive recursive solution to find min cost path from station 0 
 // to station N-1 
@@ -155,9 +155,9 @@ class shortest_path
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find min cost path  
 # from station 0 to station N-1 
@@ -191,9 +191,9 @@ print "The Minimum cost to reach station %d is %d" % \
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# naive recursive solution to find min 
 // cost path from station 0 to station N-1 
@@ -355,9 +355,9 @@ c）dist [2] + cost [2] [3 ]
 
 以下是上述想法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A Dynamic Programming based solution to find min cost 
 // to reach station N-1 from station 0\. 

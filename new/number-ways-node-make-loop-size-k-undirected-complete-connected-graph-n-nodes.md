@@ -35,9 +35,9 @@ f（n，k）*（（n -1）+1）/（n – 1）=（n – 1） <sup>k – 1</sup> +
 
 以下是此方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to find number of cycles of length 
 // k in a graph with n nodes. 
@@ -67,9 +67,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to find number of 
 // cycles of length k in a graph 
@@ -136,9 +136,9 @@ print (numOfways(n, k))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to find number of cycles 
 // of length k in a graph with n nodes. 

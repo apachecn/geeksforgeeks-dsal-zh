@@ -37,9 +37,9 @@ Output : 3
 
 以下是此方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count number if sink nodes 
 #include<bits/stdc++.h> 

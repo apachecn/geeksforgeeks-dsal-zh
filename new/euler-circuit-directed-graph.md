@@ -21,9 +21,9 @@
 
 以下方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to check if a given directed graph is Eulerian or not
 #include<iostream>
@@ -178,9 +178,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to check if a given directed graph is Eulerian or not
 
@@ -419,9 +419,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to check if a given 
 // directed graph is Eulerian or not

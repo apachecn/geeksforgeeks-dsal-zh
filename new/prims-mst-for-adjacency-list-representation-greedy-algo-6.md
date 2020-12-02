@@ -29,9 +29,9 @@
 对“最小堆”中的其余节点重复上述步骤，直到“最小堆”变为空
 ] [![](img/ae64c938f36beae884d9dbc4af34383f.png "Fig-1")](https://www.geeksforgeeks.org/wp-content/uploads/MST5.jpg)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C / C++ program for Prim's MST for adjacency list representation of graph 
 
@@ -328,9 +328,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for Prim's MST for 
 // adjacency list representation of graph 
@@ -509,9 +509,9 @@ public class prims {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A Python program for Prims's MST for  
 # adjacency list representation of graph 

@@ -31,9 +31,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the connected component 
 // with maximum number of edges 

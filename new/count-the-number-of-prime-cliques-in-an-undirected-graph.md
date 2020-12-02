@@ -28,9 +28,9 @@
 
 **下面是上述方法的实现**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to Count the number 
 // of Prime Cliques in an undirected graph 

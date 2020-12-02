@@ -33,9 +33,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find the Minimum Operations 
 // to modify values of all tree vertices to zero 

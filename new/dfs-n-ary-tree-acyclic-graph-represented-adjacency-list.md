@@ -24,9 +24,9 @@ Output : 1 2 4 3 5
 
 下面是实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* CPP code to perform DFS of given tree : */
 #include <bits/stdc++.h> 

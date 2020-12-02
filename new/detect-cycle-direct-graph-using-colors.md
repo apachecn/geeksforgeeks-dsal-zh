@@ -51,9 +51,9 @@
 
 **实施**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A DFS based approach to find if there is a cycle 
 // in a directed graph.  This approach strictly follows 

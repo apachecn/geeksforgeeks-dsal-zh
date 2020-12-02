@@ -19,9 +19,9 @@
 **如何检查连通性？**
 由于图形是无向的，因此我们可以从任何顶点开始 BFS 或 DFS，并检查是否所有顶点均可达。 如果所有顶点都是可到达的，则图已连接，否则未连接。](https://www.geeksforgeeks.org/detect-cycle-undirected-graph/) 
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ Program to check whether a graph is tree or not 
 #include<iostream> 
@@ -130,9 +130,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java Program to check whether a graph is tree or not  
 import java.io.*;  
@@ -250,9 +250,9 @@ class Graph 
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python Program to check whether  
 # a graph is tree or not 
@@ -341,9 +341,9 @@ print "Graph is a Tree" if g2.isTree() == True \
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# Program to check whether  
 // a graph is tree or not 

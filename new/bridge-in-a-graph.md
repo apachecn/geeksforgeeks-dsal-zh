@@ -24,9 +24,9 @@
 
 以下是上述方法的 C ++和 Java 实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to find bridges in a given undirected graph 
 #include<iostream> 
@@ -168,9 +168,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to find bridges in a given undirected graph 
 import java.io.*; 
@@ -314,9 +314,9 @@ class Graph
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find bridges in a given undirected graph 
 #Complexity : O(V+E) 
@@ -424,9 +424,9 @@ g3.bridge()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to find bridges  
 // in a given undirected graph  

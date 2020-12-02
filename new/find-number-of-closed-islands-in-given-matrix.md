@@ -45,9 +45,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for the above approach
 #include <bits/stdc++.h>
@@ -151,9 +151,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for the above approach
 import java.util.*;
@@ -254,9 +254,9 @@ class GFG {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for the above approach
 using System;
@@ -360,7 +360,7 @@ class GFG {
 
 ```
 
-**Output**
+输出：
 
 ```
 2
@@ -374,9 +374,9 @@ class GFG {
 
 **对方法 1 的改进**：在上述方法 1 中，我们看到两次调用 DFS 遍历（一次是在拐角单元格为“ 1”时，然后是在不在拐角处的单元格为“ 1”） '并且不会被访问）。 我们仅使用 1 次 DFS 遍历即可解决此问题。 想法是为不在拐角处的值为'1'的单元格调用 DFS，这样做时，如果我们在拐角处找到了值为'1'的单元格，则意味着不应将其视为孤岛 。 代码如下所示：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for the above approach
 #include <bits/stdc++.h>
@@ -483,7 +483,7 @@ int main()
 
 ```
 
-**Output**
+输出：
 
 ```
 2
@@ -500,9 +500,9 @@ int main()
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for the above approach
 #include <bits/stdc++.h>
@@ -648,7 +648,7 @@ int main()
 
 ```
 
-**Output**
+输出：
 
 ```
 2
@@ -666,9 +666,9 @@ int main()
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for the above approach
 #include <bits/stdc++.h>
@@ -862,7 +862,7 @@ int main()
 
 ```
 
-**Output**
+输出：
 
 ```
 2

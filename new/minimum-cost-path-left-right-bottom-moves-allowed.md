@@ -24,9 +24,9 @@ The chosen least cost path is shown in green.
 使用类似于先前问题的动态编程无法解决此问题，因为此处的当前状态不仅取决于右侧和底部单元，还取决于左侧和上部单元。 我们使用 [dijkstra 的算法](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)解决了这个问题。 网格的每个像元代表一个顶点，相邻像元代表相邻的顶点。 我们不会从这些单元格中绘制出明确的图形，而是将使用 dijkstra 算法中的矩阵。
 在下面的代码[中使用了 Dijkstra 算法的实现](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-set-in-stl/)。 更改以下实现的代码以应对矩阵表示的隐式图。 另请参见下面的代码中 dx 和 dy 数组的使用，这些数组用于简化访问每个像元的相邻顶点的过程。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to get least cost path in a grid from 
 // top-left to bottom-right 
@@ -154,9 +154,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to get least cost path  
 // in a grid from top-left to bottom-right 

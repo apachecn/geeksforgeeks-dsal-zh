@@ -42,9 +42,9 @@ Output : -1
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <bits/stdc++.h> 
 using namespace std; 

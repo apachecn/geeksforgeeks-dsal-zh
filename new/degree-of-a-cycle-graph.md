@@ -40,9 +40,9 @@ Output: Degree is 10
 
 **程序 1**：对于 4 个顶点的循环图
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of above program. 
 

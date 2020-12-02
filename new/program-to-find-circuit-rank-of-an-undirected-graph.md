@@ -48,9 +48,9 @@ Circuit Rank =  Edges - (Vertices - 1)
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to find Circuit Rank of an Undirected Graph 
 #include <bits/stdc++.h> 

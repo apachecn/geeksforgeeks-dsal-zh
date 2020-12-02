@@ -73,9 +73,9 @@ i.e., 0->1->3->4->1->1->2->0
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to print Eulerian circuit in given 
 // directed graph using Hierholzer algorithm 

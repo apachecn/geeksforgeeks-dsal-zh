@@ -45,7 +45,7 @@ T3 -> R1
 
 ## C
 
-```
+```c
 
 #include <iostream> 
 #include <string.h> 
@@ -127,9 +127,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 import java.util.*; 
 class GFG  
@@ -308,9 +308,9 @@ max_flow = maxBPM(table)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the above approach 
 using System; 

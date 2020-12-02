@@ -22,9 +22,9 @@ Output: A wins
 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 将用于找出两个节点之间的路径，并将它们一一标记为 1 或 2，A 标记为 1，B 标记为 2，然后将所有相邻的未访问节点标记为 各自的值，然后计算 A 和 B 的节点数。
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of the above approach
 #include <bits/stdc++.h>
@@ -152,9 +152,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the 
 // above approach
@@ -434,9 +434,9 @@ findWinner()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the 
 // above approach

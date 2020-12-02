@@ -24,9 +24,9 @@ Explanation: As there is no path that
 
 我们应用广度优先搜索来访问图的每个顶点。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the 
 // path in Peterson graph 

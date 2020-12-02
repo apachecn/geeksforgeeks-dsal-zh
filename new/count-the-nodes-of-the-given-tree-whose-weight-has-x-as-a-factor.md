@@ -16,9 +16,9 @@
 
 **实施**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of the approach 
 #include <bits/stdc++.h> 

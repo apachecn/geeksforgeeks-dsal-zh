@@ -15,9 +15,9 @@
 
 以下是上述贪婪算法的 C ++和 Java 实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to implement greedy algorithm for graph coloring 
 #include <iostream> 
@@ -125,9 +125,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to implement greedy algorithm for graph coloring 
 import java.io.*; 

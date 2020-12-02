@@ -33,9 +33,9 @@
 
 以下是上述算法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check if a given directed graph is strongly  
 // connected or not 
@@ -161,9 +161,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check if a given directed graph is strongly 
 // connected or not 
@@ -292,9 +292,9 @@ class Graph
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to check if a given directed graph is strongly  
 # connected or not 

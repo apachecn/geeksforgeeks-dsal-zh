@@ -29,9 +29,9 @@ Output : Hamiltonian cycles = 3
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for implementation of the  
 // above program 

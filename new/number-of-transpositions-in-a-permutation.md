@@ -54,9 +54,9 @@ Output: 3
 
 下面是上述方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP Program to find the number of 
 // transpositions in a permutation 

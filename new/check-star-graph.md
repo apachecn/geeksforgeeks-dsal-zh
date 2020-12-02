@@ -31,9 +31,9 @@ Output : Not a Star graph
 *   对于 S2，必须有两个顶点，每个顶点的度数为 1，或者可以说，这两个顶点通过一条边连接。
 *   对于 Sn（n> 2），只需检查上述标准即可。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP to find whether given graph is star or not 
 #include<bits/stdc++.h> 
@@ -91,9 +91,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find whether  
 // given graph is star or not 
@@ -230,9 +230,9 @@ else :
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# to find whether given 
 // graph is star or not 

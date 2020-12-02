@@ -10,9 +10,9 @@
 
 我们在[先前的文章](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)中讨论了 Kruskal 算法的一种实现。 在这篇文章中，讨论了邻接矩阵的一种更简单的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Simple C++ implementation for Kruskal's 
 // algorithm 

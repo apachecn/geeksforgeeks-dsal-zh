@@ -38,9 +38,9 @@
 
 ![](img/6d272676d10e4cb2538f74e1a37f619a.png)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C / C++ program for Dijkstra's 
 // shortest path algorithm for adjacency
@@ -433,9 +433,9 @@ int main()
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A Python program for Dijkstra's shortest 
 # path algorithm for adjacency

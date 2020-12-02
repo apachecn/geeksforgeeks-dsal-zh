@@ -35,9 +35,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find 
 // hexadecimal equivalents of 
@@ -299,9 +299,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find  
 // hexadecimal equivalents of  

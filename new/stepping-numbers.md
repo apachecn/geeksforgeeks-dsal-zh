@@ -19,9 +19,9 @@ Output : 10, 12
 
 在这种方法中，使用蛮力方法来遍历从 n 到 m 的所有整数，并检查它是否是一个步进数。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to find all the Stepping Number in [n, m] 
 #include<bits/stdc++.h> 
@@ -83,9 +83,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to find all the Stepping Number in [n, m] 
 class Main 
@@ -143,9 +143,9 @@ class Main
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to find all  
 // the Stepping Number in [n, m] 
@@ -278,9 +278,9 @@ The other stepping numbers will be 3, 4, 5, 6, 7, 8, 9.
 
 **基于 BFS 的解决方案**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to find all the Stepping Number from N=n 
 // to m using BFS Approach 
@@ -365,9 +365,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to find all the Stepping Number in 
 // range [n, m] 
@@ -458,9 +458,9 @@ class Main
 
 **基于 DFS 的解决方案**
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to find all the Stepping Numbers 
 // in range [n, m] using DFS Approach 
@@ -533,9 +533,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to find all the Stepping Numbers 
 // in range [n, m] using DFS Approach 

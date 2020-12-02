@@ -27,9 +27,9 @@ dfs(K, node, -1, tree)
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print 
 // the nearest K neighbour 

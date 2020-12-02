@@ -34,9 +34,9 @@
 
 第二次迭代保证给出最长为 2 个边长的所有最短路径。 该算法将所有边缘再处理 2 次。 在第二次迭代后将距离最小化，因此第三次和第四次迭代不会更新距离。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program for Bellman-Ford's single source 
 // shortest path algorithm. 

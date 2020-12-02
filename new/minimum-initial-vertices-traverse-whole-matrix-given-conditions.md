@@ -37,9 +37,9 @@ satisfies all the conditions stated above.
 **这是如何工作的？**
 我们需要访问所有顶点并达到最大值，我们必须从它们开始。 如果两个最大值不相邻，则必须同时选择两个。 如果两个最大值相邻，则可以选择其中任意一个，因为允许移动到等值邻居。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find minimum initial
 // vertices to reach whole matrix.

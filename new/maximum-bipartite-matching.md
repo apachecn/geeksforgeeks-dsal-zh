@@ -38,9 +38,9 @@
 
 如果 bmp（）返回 true，则表示流网络中存在一条扩充路径，并且 maxBPM（）中将 1 个流单位添加到结果中。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to find maximal 
 // Bipartite matching. 
@@ -138,9 +138,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to find maximal 
 // Bipartite matching. 
@@ -249,9 +249,9 @@ class GFG
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find  
 # maximal Bipartite matching. 
@@ -328,9 +328,9 @@ print ("Maximum number of applicants that can get job is %d " % g.maxBPM())
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to find maximal 
 // Bipartite matching. 

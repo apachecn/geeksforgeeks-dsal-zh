@@ -45,9 +45,9 @@
 也可以使用深度优先搜索来实现此解决方案。
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to solve water 
 // supply problem using BFS
@@ -150,9 +150,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to solve water 
 // supply problem using BFS
@@ -367,9 +367,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to solve water 
 // supply problem using BFS

@@ -20,9 +20,9 @@
 **方法**：在树上执行 [dfs](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，并跟踪其与`x`的总和具有最小设置位的节点。 如果两个或更多节点的设置位数相等，则选择数量最少的一个。
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of the approach
 #include <bits/stdc++.h>
@@ -84,9 +84,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the approach
 import java.util.*;
@@ -221,9 +221,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the approach 
 using System; 

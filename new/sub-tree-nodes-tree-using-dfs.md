@@ -45,9 +45,9 @@ Subtree of node 4 is 5 6
 5.  现在遍历 adj [1]，当遍历 adj [2]时，它仅包含节点 2，它不包含任何元素，它将中断并结束 end [1] = 2。
 6.  同样，遍历所有节点并将 dfs_order 存储在数组中以找到节点的子树。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code to print subtree of all nodes 
 #include<bits/stdc++.h> 

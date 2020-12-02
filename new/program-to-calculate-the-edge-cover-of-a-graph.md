@@ -38,9 +38,9 @@ Edge Cover = ceil (no. of vertices / 2)
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find Edge Cover 
 #include <bits/stdc++.h> 

@@ -26,9 +26,9 @@
 预计算斐波纳契数并将其存储在 HashSet 中。 如本文章[中所述，使用 DFS 方法遍历顶点并生成 Connected 组件。 检查所有长度是否都存在于预先计算的斐波那契数的 HashSet 中。
 以下是上述方法的实现：](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check if the length of 
 // all connected components are a 
@@ -124,9 +124,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check if the length of 
 // all connected components are a 
@@ -230,9 +230,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to check if the length of 
 // all connected components are a 
@@ -361,9 +361,9 @@ Yes
 该方法基本上避免了斐波那契预计算，并使用简单的公式来检查各个长度是否为斐波那契数。 检测 N 是否为斐波那契数的公式是找到 **5N <sup>2</sup> + 4** 和 **5N <sup>2</sup> – 4** 的值，以及 检查它们是否是**完美正方形**。 所述制剂是由 I Gessel 配制的，可以从[这个](http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibFormula.html#section5)链接中引用。 该程序的其余部分具有与上述类似的方法，即通过 DFS 遍历计算连接的组件。
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check if the length of 
 // all connected components are a 
@@ -458,9 +458,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to check if the length of 
 // all connected components are a 
@@ -565,9 +565,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to check if the 
 // length of all connected 

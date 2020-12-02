@@ -36,9 +36,9 @@
 **方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连接组件，如本文的[中所述。 对于每个连接的组件，将根据 **Kadane 的算法**分析阵列并计算最大连续子阵列和，如](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[此](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)文章中所述。 设置一个全局变量，该变量在每次迭代时都与局部和值进行比较以获得最终结果。
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find
 // largest subarray sum among
@@ -199,9 +199,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to implement
 // the above approach
@@ -543,7 +543,7 @@ if __name__=="__main__":
 
 ```
 
-**Output**
+输出：
 
 ```
 Maximum subarray sum among all connected components = 5

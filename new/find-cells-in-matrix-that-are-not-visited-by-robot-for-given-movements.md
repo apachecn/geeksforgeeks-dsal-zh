@@ -31,9 +31,9 @@
 
 下面的代码实现了上面讨论的方法：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the
 // unvisited cells of the matrix

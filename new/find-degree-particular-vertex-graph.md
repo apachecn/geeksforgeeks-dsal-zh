@@ -35,9 +35,9 @@ Output : 2
 
 下面是该方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find degree of a vertex.
 #include<iostream>
@@ -135,9 +135,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find degree of a vertex.
 
@@ -302,9 +302,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find degree of a vertex.
 using System;
@@ -390,7 +390,7 @@ class GFG
 
 ```
 
-**Output**
+输出：
 
 ```
 3

@@ -22,9 +22,9 @@ Output: 4
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of above approach 
 #include <bits/stdc++.h> 
@@ -84,9 +84,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of above approach 
 import java.util.*; 
@@ -160,9 +160,9 @@ public static void main(String[] args)
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python implementation of above approach 
 import math 
@@ -214,9 +214,9 @@ print(findMinTime(arr, P, n))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of above approach 
 using System; 

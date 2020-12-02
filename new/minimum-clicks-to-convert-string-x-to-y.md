@@ -52,9 +52,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code for above program. 
 #include <bits/stdc++.h> 

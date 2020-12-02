@@ -29,9 +29,9 @@ iii）目标
 
 以下是上述想法的实现。 请注意，该解决方案仅计算步骤。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count number of 
 // steps to reach a point
@@ -77,9 +77,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count number of
 // steps to reach a point
@@ -179,9 +179,9 @@ print("No. of steps required",
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count number of
 // steps to reach a point

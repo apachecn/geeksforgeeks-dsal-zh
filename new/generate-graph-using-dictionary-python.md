@@ -58,9 +58,9 @@ def generate_edges(graph):
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program for 
 # validation of a graph
@@ -120,9 +120,9 @@ print(generate_edges(graph))
     使用 Python 字典，我们可以在 Graph 中找到从一个节点到另一节点的路径。 这个想法类似于图形中的 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。
     在该函数中，路径最初是一个空列表。 在开始时，如果开始节点与结束节点匹配，则函数将返回路径。 否则，代码将前进并击中起始节点的所有值，并使用递归搜索路径。
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to generate the first
 # path of the graph from the nodes provided
@@ -162,9 +162,9 @@ print(find_path(graph, 'd', 'c'))
 2.  **程序生成从一个节点到另一节点的所有可能路径。** ：
     在上面讨论的程序中，我们生成了第一个可能的路径。 现在，让我们生成从开始节点到结束节点的所有可能路径。 基本功能与上述代码的功能相同。 产生差异的地方不是立即返回第一条路径，而是将该路径保存在以下示例中名为“路径”的列表中。 最后，在遍历所有可能的方式之后，它返回路径列表。 如果没有从起点到终点的路径，则返回 None。
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to generate the all possible
 # path of the graph from the nodes provided
@@ -205,9 +205,9 @@ print(find_all_paths(graph, 'd', 'c'))
 2.  **程序生成最短路径。** ：
     为使所有路径都最短，我们使用了一些不同的方法，如下所示。 在这种情况下，当我们获得从起始节点到结束节点的路径时，我们将路径的长度与一个名为 shortest 的变量进行比较，该变量使用 None 值初始化。 如果生成的路径的长度小于最短的长度，则如果最短的值不为 None，则将新生成的路径设置为最短的值。 同样，如果没有路径，则返回 None
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to generate shortest path
 

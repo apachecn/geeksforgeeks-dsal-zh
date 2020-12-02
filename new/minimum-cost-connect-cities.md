@@ -34,9 +34,9 @@ Output : 106
 
 **先决条件**：[MST Prim 的算法](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code to find out minimum cost
 // path to connect all the cities
@@ -149,9 +149,9 @@ int main() {
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to find out minimum cost 
 // path to connect all the cities 

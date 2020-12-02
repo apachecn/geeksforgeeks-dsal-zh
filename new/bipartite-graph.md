@@ -23,9 +23,9 @@
 4.这样，将颜色分配给所有顶点，使其满足 m = 2 的 m 方向着色问题的所有约束。
 5.在分配颜色时，如果我们发现用相同颜色着色的邻居 作为当前顶点，则该图不能用 2 个顶点着色（或图不是 Bipartite）](https://www.geeksforgeeks.org/backttracking-set-5-m-coloring-problem/)
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find out whether a  
 // given graph is Bipartite or not 
@@ -112,9 +112,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find out whether  
 // a given graph is Bipartite or not 
@@ -205,9 +205,9 @@ class Bipartite
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find out whether a  
 # given graph is Bipartite or not 
@@ -286,9 +286,9 @@ print "Yes" if g.isBipartite(0) else "No"
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find out whether  
 // a given graph is Bipartite or not 
@@ -393,9 +393,9 @@ Yes
 仅在连接图形时上述算法才有效。 在上面的代码中，我们总是从源 0 开始，并假定从源 0 访问顶点。 一个重要的观察结果是没有边缘的图也是 Bipartite。 请注意，“ Bipartite”条件表示所有边缘应从一组到另一组。
 我们可以扩展以上代码，以处理未连接图形的情况。 对所有尚未访问的顶点重复调用上述方法的想法。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find out whether 
 // a given graph is Bipartite or not. 
@@ -489,9 +489,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // JAVA Code to check whether a given 
 // graph is Bipartite or not 
@@ -593,9 +593,9 @@ class Bipartite {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python3 program to find out whether a 
 # given graph is Bipartite or not 
@@ -683,9 +683,9 @@ print "Yes" if g.isBipartite() else "No"
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Code to check whether a given 
 // graph is Bipartite or not 
@@ -854,7 +854,7 @@ print("Yes" if g.isBipartite() else "No")
 
 ```
 
-**Output**
+输出：
 
 ```
 Yes
@@ -867,9 +867,9 @@ Yes
 **1\.** 可以使用 DFS 算法检查图的二部性吗？ 如果是，怎么办？
 解决方案：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find out whether a given graph is Bipartite or not. 
 // Using recursion. 
@@ -928,9 +928,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find out whether 
 // a given graph is Bipartite or not. 
@@ -1051,9 +1051,9 @@ if __name__ == "__main__": 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find out whether 
 // a given graph is Bipartite or not. 
@@ -1124,7 +1124,7 @@ class GFG 
 
 ```
 
-**Output**
+输出：
 
 ```
 Yes

@@ -25,9 +25,9 @@ Output :  The Dominant Set S= { a, d, f } or { e, c } and more.
 *   返回第 2 步，并重复操作（如果图形中仍留有一些边）
 *   最终集 S 是图形的一个主导集
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the Dominant Set of a graph 
 #include <bits/stdc++.h> 
@@ -91,9 +91,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the Dominant Set of a graph 
 import java.util.*; 
@@ -164,9 +164,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find the Dominant Set of a graph 
 using System; 

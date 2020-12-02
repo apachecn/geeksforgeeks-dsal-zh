@@ -27,9 +27,9 @@ Output : 9
 因此，我们遍历所有顶点，计算其邻接列表的大小之和，最后返回 sum / 2。 下面的想法
 的实现
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count number of edge in 
 // undirected graph 

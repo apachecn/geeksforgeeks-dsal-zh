@@ -32,9 +32,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to print the
 // Difference Between sum of degrees
@@ -109,9 +109,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to print the
 // difference between sum of degrees
@@ -267,9 +267,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to print the
 // difference between sum of degrees

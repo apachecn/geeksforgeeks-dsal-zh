@@ -16,9 +16,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the lexicographically 
 // smallest traversal of a graph 

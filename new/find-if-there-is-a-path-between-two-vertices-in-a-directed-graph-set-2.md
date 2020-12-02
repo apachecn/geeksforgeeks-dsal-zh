@@ -26,9 +26,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find if there is a
 // path between two vertices in a
@@ -96,9 +96,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find if there is a path 
 // between two vertices in a directed graph
@@ -230,9 +230,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find if there is a path 
 // between two vertices in a directed graph

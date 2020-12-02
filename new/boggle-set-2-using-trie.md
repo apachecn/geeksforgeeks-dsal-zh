@@ -82,9 +82,9 @@ if we have seen this element first time then make it visited.
 
 以下是上述想法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for Boggle game 
 #include <bits/stdc++.h> 

@@ -17,9 +17,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to check if the 
 // incoming edges in a vertex of directed 
@@ -89,9 +89,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to check if the 
 // incoming edges in a vertex of directed 
@@ -235,9 +235,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to check if the 
 // incoming edges in a vertex of directed 

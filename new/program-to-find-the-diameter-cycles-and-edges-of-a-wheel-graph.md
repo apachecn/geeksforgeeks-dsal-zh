@@ -51,9 +51,9 @@ Diameter = if vertices = 4, Diameter = 1
 
 以下是所需的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to find the diameter,  
 // cycles and edges of a Wheel Graph 

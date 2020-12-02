@@ -49,9 +49,9 @@
 
 **实施**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ Program to detect  
 // cycle in an undirected graph 
@@ -187,9 +187,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java Program to detect cycle in an undirected graph 
 import java.io.*; 
@@ -321,9 +321,9 @@ class Graph
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python Program to detect cycle in an undirected graph 
 from collections import defaultdict 
@@ -422,9 +422,9 @@ else :
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to detect cycle in an undirected graph 
 using System; 

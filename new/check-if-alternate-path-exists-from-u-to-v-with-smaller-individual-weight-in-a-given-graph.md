@@ -31,9 +31,9 @@
 
 下面是上述方法的实现：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for above approach 
 

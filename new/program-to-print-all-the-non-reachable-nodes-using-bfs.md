@@ -40,9 +40,9 @@ Output: 3 4 5 6 7
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count non-reachable nodes
 // from a given source using BFS.
@@ -125,9 +125,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count non-reachable nodes
 // from a given source using BFS.
@@ -289,9 +289,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to count non-reachable nodes
 // from a given source using BFS.

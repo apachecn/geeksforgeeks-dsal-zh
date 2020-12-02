@@ -27,9 +27,9 @@ and no cell is accessible from it.
 
 以下是此方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count number of pair of positions 
 // in matrix which are not accessible 

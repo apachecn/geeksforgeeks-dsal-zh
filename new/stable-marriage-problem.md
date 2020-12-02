@@ -38,9 +38,9 @@ while there exist a free man m who still has a woman w to propose to
 
 以下是上述算法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for stable marriage problem 
 #include <iostream> 

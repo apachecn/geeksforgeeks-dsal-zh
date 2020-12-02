@@ -37,9 +37,9 @@ Minimum cost = 50\.
 
 因此，答案是最小元素与除最小元素外的所有元素之和的*乘积。*
 
-## C ++
+## C++
 
-```
+```cpp
 
 // cpp code for Minimum Cost Required to connect weighted nodes 
 #include <bits/stdc++.h> 

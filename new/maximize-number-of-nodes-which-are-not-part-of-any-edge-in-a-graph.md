@@ -27,9 +27,9 @@ We can construct a complete graph on 4 vertices using 6 edges.
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to illustrate above approach 
 #include <bits/stdc++.h> 

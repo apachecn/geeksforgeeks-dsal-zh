@@ -49,9 +49,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the 
 // minimum colors required to 
@@ -143,9 +143,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to find the 
 // minimum colors required to 
@@ -250,9 +250,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to find the 
 // minimum colors required to 

@@ -56,9 +56,9 @@ while there are untried conflagrations
 **回溯解决方案的实现**
 以下是回溯解决方案的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ program for solution of Hamiltonian  
 Cycle problem using backtracking */

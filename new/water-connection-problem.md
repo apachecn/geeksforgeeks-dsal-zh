@@ -47,9 +47,9 @@ Therefore, our answer is 3 followed by
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find efficient 
 // solution for the network 
@@ -154,9 +154,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find efficient 
 // solution for the network 
@@ -364,9 +364,9 @@ solve(arr)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find efficient  
 // solution for the network  

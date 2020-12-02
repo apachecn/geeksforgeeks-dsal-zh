@@ -18,9 +18,9 @@ Only the weights of the nodes 2, 3 and 5 are palindromes.
 
 **实施**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of the approach 
 #include <bits/stdc++.h> 

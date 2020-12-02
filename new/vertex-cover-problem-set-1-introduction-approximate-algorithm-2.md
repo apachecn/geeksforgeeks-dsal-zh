@@ -29,9 +29,9 @@
 [ **实现**：
 以下是上述近似算法的 C ++和 Java 实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Program to print Vertex Cover of a given undirected graph
 #include<iostream>
@@ -122,9 +122,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to print Vertex
 // Cover of a given undirected graph
@@ -300,9 +300,9 @@ g.printVertexCover()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program to print Vertex
 // Cover of a given undirected

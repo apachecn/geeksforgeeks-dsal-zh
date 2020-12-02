@@ -30,9 +30,9 @@ be kept in order to move scale alternatively.
 
 请参见下面的代码以更好地了解
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print weights for alternating 
 // the weighting scale 

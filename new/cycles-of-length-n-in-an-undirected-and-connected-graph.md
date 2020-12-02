@@ -29,9 +29,9 @@ same cycles and hence will be counted as 1.
 
 还有一点要注意的是，每个顶点为其形成的每个循环找到 2 个重复的循环。 对于上述示例，第 0 个<sup>顶点找到两个重复周期，即 **0-> 3-> 2-> 1-> 0** 和 **0- > 1-> 2-> 3-> 0** 。 因此总计数必须除以 2，因为每个循环都被计数两次。</sup>
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP Program to count cycles of length n 
 // in a given graph. 
@@ -114,9 +114,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to calculate cycles of 
 // length n in a given graph 
@@ -281,9 +281,9 @@ print("Total cycles of length ",n," are ",countCycles(graph, n))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to calculate cycles of 
 // length n in a given graph 

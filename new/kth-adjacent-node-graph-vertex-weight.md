@@ -43,9 +43,9 @@ node 2 is node 0.
 
 以下是此方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find Kth node weight after s 
 // orting of nodes directly connected to a node. 

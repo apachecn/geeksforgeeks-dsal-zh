@@ -55,9 +55,9 @@ bridge_detect[v] = min(bridge_detect[u], bridge_detect[v])
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for the above approach
 
@@ -215,9 +215,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for the above approach
 import java.util.*;

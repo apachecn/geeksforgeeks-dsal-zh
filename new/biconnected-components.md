@@ -21,9 +21,9 @@
 想法是将访问的边沿存储在堆栈中，而 DFS 在图形上并继续寻找[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)（在上图中突出显示）。 一旦找到[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/) u，从节点 u 开始进行 DFS 时访问的所有边将形成一个[双向连接的组件](https://en.wikipedia.org/wiki/Biconnected_component)。 当一个[连接的组件](https://en.wikipedia.org/wiki/Connected_component_%28graph_theory%29)的 DFS 完成时，堆栈中存在的所有边将形成一个双连接的组件。
 如果图形中没有[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)，则图形是双向连接的，因此将有一个双向连接的组件，即图形本身。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to find biconnected components in a given undirected graph 
 #include <iostream> 
@@ -208,9 +208,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to find biconnected components in a given 
 // undirected graph 
@@ -391,9 +391,9 @@ class Graph {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find biconnected components in a given 
 # undirected graph 
@@ -527,9 +527,9 @@ print ("Above are % d biconnected components in graph" %(g.count));
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to find biconnected components in a given  
 // undirected graph  

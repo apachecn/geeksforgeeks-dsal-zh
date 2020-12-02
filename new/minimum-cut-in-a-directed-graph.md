@@ -29,9 +29,9 @@
 
 以下是上述方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for finding minimum cut using Ford-Fulkerson 
 #include <iostream> 

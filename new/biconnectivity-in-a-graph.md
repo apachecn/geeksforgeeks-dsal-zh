@@ -33,9 +33,9 @@
 
 以下是上述方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to find if a given undirected graph is
 // biconnected
@@ -205,9 +205,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to find if a given undirected graph is
 // biconnected
@@ -394,9 +394,9 @@ class Graph
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A Python program to find if a given undirected graph is
 # biconnected
@@ -528,9 +528,9 @@ print "Yes" if g5.isBC() else "No"
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to find if a given undirected
 // graph is biconnected

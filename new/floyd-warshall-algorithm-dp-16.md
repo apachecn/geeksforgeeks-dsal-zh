@@ -44,9 +44,9 @@ Shortest distance matrix
 
 以下是 Floyd Warshall 算法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program for Floyd Warshall Algorithm  
 #include <bits/stdc++.h> 

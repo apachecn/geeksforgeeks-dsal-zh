@@ -31,9 +31,9 @@ By connecting 1 to 3, we can create a Euler Circuit.
 
 以下是此方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find minimum edge required 
 // to make Euler Circuit 

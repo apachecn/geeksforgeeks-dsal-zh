@@ -18,9 +18,9 @@
 
 以下是 Kosaraju 算法的 C ++实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Implementation of Kosaraju's algorithm to print all SCCs 
 #include <iostream> 

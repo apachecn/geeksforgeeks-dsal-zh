@@ -75,9 +75,9 @@ find（2）= > 0，find（4）= > 0，它们都有相同的根父级
 因此，存在一个循环 图形。
 我们不再进一步检查图中的循环。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to implement Union-Find with union 
 // by rank and path compression. 

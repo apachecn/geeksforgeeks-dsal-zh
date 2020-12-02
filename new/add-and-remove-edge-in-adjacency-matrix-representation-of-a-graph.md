@@ -54,9 +54,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to add and remove edge 
 // in the adjacency matrix of a graph 
@@ -187,9 +187,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to add and remove edge 
 // in the adjacency matrix of a graph 
@@ -429,9 +429,9 @@ obj.displayAdjacencyMatrix();
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to add and remove edge  
 // in adjacency matrix representation  

@@ -30,9 +30,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of the
 // above approach
@@ -155,9 +155,9 @@ int32_t main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the
 // above approach
@@ -413,9 +413,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of the
 // above approach

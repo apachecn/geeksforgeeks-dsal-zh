@@ -36,9 +36,9 @@
 
 **实施**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print DFS traversal from
 // a given vertex in a  given graph
@@ -129,9 +129,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print DFS
 //mtraversal from a given given
@@ -288,9 +288,9 @@ g.DFS(2)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print DFS traversal
 // from a given graph
@@ -403,9 +403,9 @@ Following is Depth First Traversal (starting from vertex 2)
 
 **实施**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print DFS
 // traversal for a given given
@@ -493,9 +493,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print DFS
 // traversal from a given given
@@ -582,9 +582,9 @@ class Graph {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to print DFS
 # traversal for complete graph
@@ -651,9 +651,9 @@ g.DFS()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print DFS
 // traversal from a given given

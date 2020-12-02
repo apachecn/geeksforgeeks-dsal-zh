@@ -32,9 +32,9 @@ Output:
 
 以下是上述想法的实现–
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to replace all of the O's in the matrix
 // with their shortest distance from a guard
@@ -158,9 +158,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to replace all of the O's
 // in the matrix with their shortest 

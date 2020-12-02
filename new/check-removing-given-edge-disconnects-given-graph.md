@@ -16,9 +16,9 @@
 2）从任何顶点查找所有可到达的顶点。 在下面的实现中，我们选择了第一个顶点。
 3）如果可达节点数为 V，则返回 false [给出的不是网桥]。 其他返回是。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check if removing an 
 // edge disconnects a graph or not. 

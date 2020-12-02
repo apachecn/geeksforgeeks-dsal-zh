@@ -53,9 +53,9 @@ Pseudo Code: count += min(right_down[i], right_up[i]);
 
 以下是计算给定二叉树中存在的等腰三角形数目的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 /* C++ program for calculating number of  
 isosceles triangles present in a binary tree */

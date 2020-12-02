@@ -25,9 +25,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to implement 
 // the above approach 
@@ -182,9 +182,9 @@ int32_t main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to implement 
 // the above approach 
@@ -354,9 +354,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to implement 
 // the above approach 

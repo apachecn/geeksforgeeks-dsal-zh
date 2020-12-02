@@ -22,9 +22,9 @@ and has highest product are, 1-3-5  and  7-8-6-2
 实现细节：
 输入是一棵树，但其中没有指定的根，因为我们只有边的集合。 该树表示为无向图。 我们遍历邻接表。 对于每个边缘，我们在其两侧找到了最大长度的路径（移除边缘后）。 我们跟踪由边缘去除引起的最大产品量。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find maximum product of two
 // non-intersecting paths
@@ -127,9 +127,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find maximum product
 // of two non-intersecting paths

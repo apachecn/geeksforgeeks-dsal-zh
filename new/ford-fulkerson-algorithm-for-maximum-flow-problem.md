@@ -36,9 +36,9 @@ The following is simple idea of Ford-Fulkerson algorithm:
 
 以下是 Ford-Fulkerson 算法的实现。 为了简单起见，图形表示为 2D 矩阵。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for implementation of Ford Fulkerson algorithm 
 #include <iostream> 
@@ -155,9 +155,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program for implementation of Ford Fulkerson algorithm 
 import java.util.*; 
@@ -284,9 +284,9 @@ class MaxFlow
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program for implementation of Ford Fulkerson algorithm 
 
@@ -386,9 +386,9 @@ print ("The maximum possible flow is %d " % g.FordFulkerson(source, sink))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for implementation  
 // of Ford Fulkerson algorithm 

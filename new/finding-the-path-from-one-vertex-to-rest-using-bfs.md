@@ -39,9 +39,9 @@ Output:
 
 下面是上述方法的实现：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of the approach 
 import java.util.ArrayList; 

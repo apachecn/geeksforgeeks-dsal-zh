@@ -37,9 +37,9 @@ Output: 39
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code to find 
 // the minimum cost to 

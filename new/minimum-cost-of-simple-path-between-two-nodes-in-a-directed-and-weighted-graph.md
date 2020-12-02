@@ -47,9 +47,9 @@ The minimum cost simple path between 0 and 2 is given by:
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code for printing Minimum Cost
 // Simple Path between two given nodes
@@ -141,9 +141,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code for printing Minimum Cost
 // Simple Path between two given nodes

@@ -109,9 +109,9 @@ that when find() is called next time for 1, 2 or 3, the path to root is reduced.
 两种技术相辅相成。 每个操作的时间复杂度甚至小于 O（Logn）。 实际上，摊销的时间复杂度实际上变为小的常数。
 以下是基于等级和路径压缩的实现，以在图中查找循环。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A union by rank and path compression based program to
 // detect cycle in a graph
@@ -249,9 +249,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A union by rank and path compression
 // based program to detect cycle in a graph
@@ -375,9 +375,9 @@ class Graph
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # A union by rank and path compression based
 # program to detect cycle in a graph
@@ -475,9 +475,9 @@ else:
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A union by rank and path compression
 // based program to detect cycle in a graph
@@ -602,7 +602,7 @@ class Graph {
 
 ```
 
-**Output**
+输出：
 
 ```
 Graph contains cycle

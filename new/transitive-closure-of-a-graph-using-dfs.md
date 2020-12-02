@@ -112,9 +112,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // JAVA program to print transitive 
 // closure of a graph. 
@@ -225,9 +225,9 @@ public class Graph {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to print transitive closure of a graph 
 from collections import defaultdict 

@@ -13,9 +13,9 @@
 相同的方法也可以应用于一般树。 从所有叶节点开始指针，每次都向内移动一步，继续合并在移动时重叠的指针，最后在某个顶点上将只保留一个指针，或者在相距一距离处保留两个指针。 这些节点代表顶点的根，它将最小化树的高度。
 因此，如上所述，根据树的结构，最小高度只能有一个根或最多两个根。 对于实现，我们将不使用实际的指针，而是遵循类似 BFS 的方法，首先将所有叶节点推入队列，然后将其从树中删除，将下一个新叶节点推入队列，此过程将 直到我们的树中只有 1 或 2 个节点，它们代表结果。
 
-## C ++
+## C++
 
-```
+```cpp
 
 //  C++ program to find root which gives minimum height to tree
 #include <bits/stdc++.h>
@@ -122,9 +122,9 @@ int main()
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to find root which gives minimum
 # height to tree
@@ -206,7 +206,7 @@ for i in res:
 
 ```
 
-**Output**
+输出：
 
 ```
 3 4 

@@ -19,9 +19,9 @@ D 取决于 C，即 1
 
 想法是检查邻接列表，并从每个顶点中找到多少个边并返回边的总数。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the sum of dependencies 
 #include <bits/stdc++.h> 
@@ -62,9 +62,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the sum of dependencies 
 

@@ -28,9 +28,9 @@ DFSUtil(v)
 
 下面是上述算法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print connected components in
 // an undirected graph
@@ -123,9 +123,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to print connected components in
 // an undirected graph
@@ -210,9 +210,9 @@ class Graph
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to print connected
 # components in an undirected graph
@@ -276,9 +276,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C++ program to print connected components in
 // an undirected graph

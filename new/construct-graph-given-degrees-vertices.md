@@ -37,9 +37,9 @@ given conditions.
 
 根据以上说明，以下是实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to generate a graph for a 
 // given fixed degrees 
@@ -92,9 +92,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to generate a graph for a 
 // given fixed degrees 
@@ -209,9 +209,9 @@ if __name__ == '__main__': 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to generate a graph for a 
 // given fixed degrees 

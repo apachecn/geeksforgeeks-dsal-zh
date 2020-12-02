@@ -41,9 +41,9 @@ would take more operations.
 1）当我们从数字中减去 1 且如果其变为< 0（即负数）时，则没有理由从其创建下一个节点（根据输入约束，数字 x 和 y 为 正）。
 2）另外，如果我们已经创建了号码，则没有理由再次创建它。 即我们维护一个访问数组。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find minimum number of steps needed 
 // to convert a number x into y with two operations 
@@ -118,9 +118,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find minimum  
 // number of steps needed to 

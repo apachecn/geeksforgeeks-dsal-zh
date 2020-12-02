@@ -53,9 +53,9 @@ jump[k][j] =   it points 2^jth parent of k
 
 **<u>实现</u>**：下面是实现上述算法的代码，以查找 O（logn）时间复杂度的任何节点的任何父代。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to implement Jump pointer algorithm
 #include <bits/stdc++.h>

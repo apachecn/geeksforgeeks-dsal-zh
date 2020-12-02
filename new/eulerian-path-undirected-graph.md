@@ -41,9 +41,9 @@ Output : "No Solution"
 
 在过程路径变量之后，保持欧拉路径。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Efficient C++ program to
 // find out Eulerian path
@@ -166,9 +166,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Efficient Java program to 
 // find out Eulerian path 
@@ -299,9 +299,9 @@ class GFG
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // Efficient C# program to 
 // find out Eulerian path 

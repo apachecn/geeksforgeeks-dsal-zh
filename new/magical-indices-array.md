@@ -51,9 +51,9 @@ Magical indices = 3, 4
 
 **实施**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find number of magical  
 // indices in the given array. 

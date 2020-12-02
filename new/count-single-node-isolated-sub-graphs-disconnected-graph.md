@@ -22,9 +22,9 @@ Out of these, the only component forming singleton graph is {4}.
 
 下面是表示形式：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code to count the singleton sub-graphs 
 // in a disconnected graph 

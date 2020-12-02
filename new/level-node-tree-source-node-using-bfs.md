@@ -46,9 +46,9 @@ Explanation:
 
 **实施**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP Program to determine level of each node 
 // and print level 

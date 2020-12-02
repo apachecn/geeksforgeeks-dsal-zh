@@ -27,9 +27,9 @@ Explanation: 11101 is a multiple of 17\.
 代码的主要优化调整是使用一组模块化值，如果以前曾出现过具有相同 mod 值的字符串，我们不会将此新字符串推送到我们的队列中。 不解释新字符串的原因如下：
 令 x 和 y 为字符串，它具有相同的模数值。 令 x 为较小的一个。 令 z 为另一个字符串，该字符串在附加到 y 时会给我们提供一个可被 N 整除的数字。 因此，我们可以放心地忽略 y，因为最小的结果只能通过 x 获得。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ code to get the smallest multiple of N with
 // binary digits only.
@@ -96,9 +96,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java code to get the smallest multiple
 // of N with binary digits only.
@@ -205,9 +205,9 @@ print( getMinimumMultipleOfBinaryDigit(n))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# code to get the smallest 
 // multiple of N with binary 

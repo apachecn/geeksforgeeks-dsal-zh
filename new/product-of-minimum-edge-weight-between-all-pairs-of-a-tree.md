@@ -56,9 +56,9 @@ Output :
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Implementation of above approach 
 #include <bits/stdc++.h> 

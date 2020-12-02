@@ -26,9 +26,9 @@ Dfs step-wise(including backtracking) is:
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print the complete
 // DFS-traversal of graph

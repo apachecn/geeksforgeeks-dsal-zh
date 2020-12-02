@@ -26,9 +26,9 @@ Output : 8
 我们可以遍历所有节点对，并检查它们是否是互素的。 如果它们不是互质的，我们将它们连接起来。 创建图表后，我们将应用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来找到最大组件尺寸。
 以下是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <bits/stdc++.h> 
 using namespace std; 
@@ -89,9 +89,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 import java.util.*; 
 
@@ -230,9 +230,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to implement  
 // the above approach 
@@ -350,9 +350,9 @@ public static void Main(String[] args)
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 #include <bits/stdc++.h> 
 
@@ -486,9 +486,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to implement  
 // the above approach 
@@ -630,9 +630,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to implement  
 // the above approach 

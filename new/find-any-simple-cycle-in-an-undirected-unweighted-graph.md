@@ -44,9 +44,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the
 // simple cycle in the given path
@@ -191,9 +191,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation to 
 // find the simple cycle 
@@ -372,9 +372,9 @@ public static void main(String[] args)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation to 
 // find the simple cycle 

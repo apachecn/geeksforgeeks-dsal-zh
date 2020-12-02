@@ -95,9 +95,9 @@ while (set < limit) 
 
 我们使用闲聊的技巧来生成大小为 x（0 < x <= V), that is, to check whether we have a '1' or '0' at any index x in isCover[] array.
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to find size of minimum vertex 
 // cover using Binary Search 

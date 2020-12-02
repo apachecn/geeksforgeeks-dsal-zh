@@ -41,9 +41,9 @@ Step 4: The minimum of the values calculated above is the
 
 请证明问题 9.2 [的解决方案在此处](https://courses.csail.mit.edu/6.046/fall01/handouts/ps9sol.pdf)，以证明上述步骤可以找到最小的平均重量。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find minimum average
 // weight of a cycle in connected and
@@ -151,9 +151,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find minimum average 
 // weight of a cycle in connected and 
@@ -365,9 +365,9 @@ print(minAvgWeight())
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find minimum 
 // average weight of a cycle 

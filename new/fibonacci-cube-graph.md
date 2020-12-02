@@ -30,9 +30,9 @@ Output : 3
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code to find vertices in a fibonacci 
 // cube graph of order n 

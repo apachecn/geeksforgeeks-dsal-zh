@@ -39,9 +39,9 @@ edges 4 and 5\. Since, 4 is already connected to
 
 下面是实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code to print maximum edges such that 
 // Tree remains a Bipartite graph 

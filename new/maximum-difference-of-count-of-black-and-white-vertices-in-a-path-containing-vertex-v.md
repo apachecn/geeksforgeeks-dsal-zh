@@ -54,9 +54,9 @@ Output: 1
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find maximum
 // difference between count of
@@ -161,9 +161,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find maximum
 // difference between count of
@@ -358,9 +358,9 @@ maximumDifference(V, color, 9, dp, c, g)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find maximum
 // difference between count of

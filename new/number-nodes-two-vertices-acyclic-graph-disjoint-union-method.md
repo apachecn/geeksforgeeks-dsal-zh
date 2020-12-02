@@ -34,9 +34,9 @@ between 1 and 3\.
 
 以下是上述方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to calculate number 
 // of nodes between two nodes 

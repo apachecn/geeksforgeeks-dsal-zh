@@ -28,9 +28,9 @@ Output: Shortest path length is:5
 以下面的未加权图为例：
 以下是找到最短路径的完整算法：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP code for printing shortest path between
 // two vertices of unweighted graph
@@ -165,9 +165,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find shortest path in an undirected
 // graph
@@ -309,9 +309,9 @@ public class pathUnweighted {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find shortest 
 // path in an undirected graph

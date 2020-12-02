@@ -45,9 +45,9 @@
 4.  为所有相邻的空白和未访问单元格调用递归函数。
 5.  如果任何递归函数返回 true，则取消标记该单元格并返回 true，否则取消标记该单元格并返回 false。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find path between two
 // cell in matrix
@@ -318,9 +318,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find path between two
 // cell in matrix
@@ -486,9 +486,9 @@ YES
 5.  检查所有相邻的单元格（如果未访问），并将它们空白插入队列。
 6.  如果未到达目的地，则返回 true。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find path
 // between two cell in matrix
@@ -641,9 +641,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find path between two
 // cell in matrix

@@ -22,9 +22,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the
 // maximum comake_paironent size
@@ -123,9 +123,9 @@ int main()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find the
 // maximum comake_paironent size
@@ -256,9 +256,9 @@ public static void Main(string[] args)
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation to find the maximum
 // component size after the addition of

@@ -141,9 +141,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A BFS based solution to count number of  
 // islands in a graph.  
@@ -259,9 +259,9 @@ public static void main(String[] args) 
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A BFS based solution to count number of  
 // islands in a graph.  

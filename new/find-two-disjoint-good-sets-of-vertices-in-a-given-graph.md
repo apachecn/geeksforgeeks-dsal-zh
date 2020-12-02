@@ -24,9 +24,9 @@
 观察结果之一是，没有 U 和 V 在同一集合中的边缘 UV。两个好的集合构成了图的二等分，因此该图必须是二分的 。 而且两党也足够。 在上阅读有关分区[的信息。
 以下是上述方法的实现：](https://www.geeksforgeeks.org/bipartite-graph/) 
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find two disjoint
 // good sets of vertices in a given graph
@@ -115,9 +115,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find two disjoint 
 // good sets of vertices in a given graph 
@@ -224,9 +224,9 @@ class GFG
 
 ```
 
-## Python 3
+## Python
 
-```
+```py
 
 # Python 3 program to find two disjoint
 # good sets of vertices in a given graph
@@ -307,9 +307,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find two 
 // disjoint good sets of 

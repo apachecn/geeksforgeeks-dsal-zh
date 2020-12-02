@@ -38,9 +38,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count total number of 
 // ways to reach destination in a graph 

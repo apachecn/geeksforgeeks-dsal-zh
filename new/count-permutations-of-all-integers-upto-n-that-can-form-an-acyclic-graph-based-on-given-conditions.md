@@ -40,9 +40,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of above approach
 #include <bits/stdc++.h>
@@ -67,9 +67,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java implementation of 
 // the above approach
@@ -120,9 +120,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# implementation of 
 // the above approach
@@ -152,7 +152,7 @@ public static void Main()
 
 ```
 
-**Output**
+输出：
 
 ```
 8

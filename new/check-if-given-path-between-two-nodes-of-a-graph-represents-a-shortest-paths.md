@@ -27,9 +27,9 @@ Output: YES
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program for  
 // the above approach 

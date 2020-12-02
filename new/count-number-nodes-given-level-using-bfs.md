@@ -54,9 +54,9 @@ Output : 3
 级别[6] =级别[2] +1，即级别[6] = 1 +1 =2。
 然后，计算级别 1 处的节点数 （即，l = 2）是 4（节点：-3、4、5、6）
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to print
 // count of nodes
@@ -273,9 +273,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to print count of nodes 
 // at given level. 

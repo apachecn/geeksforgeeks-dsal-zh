@@ -17,9 +17,9 @@
 
 下面是使用 Tarjan 算法查找给定图形的 SCC 的程序：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the SCC using 
 // Tarjan's algorithm (single DFS) 
@@ -211,9 +211,9 @@ int main()
 
 下面是使用 Kosaraju 的算法查找给定图形的 SCC 的程序：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to print the SCC of the 
 // graph using Kosaraju's Algorithm 

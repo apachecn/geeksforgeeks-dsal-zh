@@ -41,9 +41,9 @@
 
 下面是上述方法的实现：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to implement 
 // the above approach 

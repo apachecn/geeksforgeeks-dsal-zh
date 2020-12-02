@@ -83,9 +83,9 @@ for the above as follows:
 
 邻接矩阵
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find whether a universal sink 
 // exists in a directed graph 
@@ -301,9 +301,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find whether a universal sink  
 // exists in a directed graph  

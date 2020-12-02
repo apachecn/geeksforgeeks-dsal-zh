@@ -26,9 +26,9 @@
 
  **下面是上述方法的实现
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program of the
 // above approach
@@ -133,9 +133,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program of the 
 // above approach

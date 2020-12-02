@@ -23,9 +23,9 @@
 
 下面是该方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ implementation of the above approach 
 

@@ -19,9 +19,9 @@ from (4, 5) to (1, 1) (4, 5) -> (5, 3) -> (3, 2)
 
 下面的代码实现了 BFS 来搜索单元格，其中每个单元格包含其坐标和距起始节点的距离。 在最坏的情况下，以下代码访问电路板上的所有单元，从而使最坏情况下的时间复杂度为 O（N ^ 2）
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find minimum steps to reach to 
 // specific cell in minimum moves by Knight 

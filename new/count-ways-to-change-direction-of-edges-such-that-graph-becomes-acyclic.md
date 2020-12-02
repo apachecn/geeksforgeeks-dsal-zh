@@ -41,9 +41,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to count the
 // number of ways to change
@@ -184,9 +184,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to count the number
 // of ways to change the direction

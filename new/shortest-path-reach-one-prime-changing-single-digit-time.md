@@ -20,9 +20,9 @@ Output : 0
 
 这个问题可以通过 *[BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/)* 解决，这对于初学者来说是一个非常有趣的问题。 我们首先使用 Eratosthenes 筛网[的技术找出直到 9999 的所有 4 位素数。 然后使用这些数字通过邻接表](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)形成[图。 形成邻接表后，我们使用简单的 BFS 解决了该问题。](https://www.geeksforgeeks.org/graph-and-its-representations/) 
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to reach a prime number from  
 // another by changing single digits and  

@@ -34,9 +34,9 @@ Output : Minimum 1
 
 下面是上述方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find maximum/minimum number 
 // of isolated vertices. 

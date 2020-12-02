@@ -29,9 +29,9 @@ Transitive closure of above graphs is
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // Program for transitive closure
 // using Floyd Warshall Algorithm
@@ -151,9 +151,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Program for transitive closure
 // using Floyd Warshall Algorithm
@@ -268,9 +268,9 @@ class GraphClosure
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program for transitive closure using Floyd Warshall Algorithm 
 #Complexity : O(V^3)
@@ -338,9 +338,9 @@ g.transitiveClosure(graph)
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# Program for transitive closure 
 // using Floyd Warshall Algorithm 
@@ -457,7 +457,7 @@ class GFG
 
 ```
 
-**Output**
+输出：
 
 ```
 Following matrix is transitiveclosure of the given graph

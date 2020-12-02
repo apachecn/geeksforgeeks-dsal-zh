@@ -17,9 +17,9 @@ The Output for above example should be following edges in any order.
 
 下面是解决方案，我们打印了可以添加到给定 DAG 中的所有边缘，而无需进行任何循环。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find maximum edges after adding 
 // which graph still remains a DAG

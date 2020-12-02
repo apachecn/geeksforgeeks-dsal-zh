@@ -58,9 +58,9 @@ Edges in MST
 
 以下是上述步骤的 C ++实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find Minimum Spanning Tree 
 // of a graph using Reverse Delete Algorithm 

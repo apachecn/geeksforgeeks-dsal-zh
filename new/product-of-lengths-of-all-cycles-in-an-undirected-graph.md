@@ -27,9 +27,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find the 
 // product of lengths of cycle 
@@ -162,9 +162,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find the  
 // product of lengths of cycle 
@@ -445,9 +445,9 @@ if __name__ == "__main__":
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find the  
 // product of lengths of cycle 

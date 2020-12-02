@@ -64,9 +64,9 @@ M(3, 4)  M(3, 5)  M(3, 4)  M(3, 5) M(3, 6)  M(3, 6)
 **实现细节**：
 以下实现假定从第一阶段（源）到最后阶段（目标）从 0 到 N-1 编号节点。 我们还假设输入图是多阶段的。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // CPP program to find shortest distance 
 // in a multistage graph. 
@@ -136,9 +136,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find shortest distance  
 // in a multistage graph. 
@@ -276,9 +276,9 @@ print(shortestDist(graph))
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find shortest distance  
 // in a multistage graph. 

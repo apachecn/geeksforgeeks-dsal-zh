@@ -20,9 +20,9 @@ Count of triangles = trace(A3) / 6
 
 下面是上述公式的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program for finding 
 // number of triangles in an 

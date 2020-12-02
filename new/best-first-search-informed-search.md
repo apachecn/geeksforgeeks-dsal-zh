@@ -64,9 +64,9 @@ We remove H from pq.  Since our goal
 
 以下是上述想法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to implement Best First Search using priority
 // queue
@@ -145,9 +145,9 @@ int main()
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 from queue import PriorityQueue
 v = 14
@@ -204,7 +204,7 @@ best_first_search(source, target, v)
 
 ```
 
-**Output**
+输出：
 
 ```
 0 1 3 2 8 9 

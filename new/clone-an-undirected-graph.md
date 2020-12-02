@@ -18,9 +18,9 @@
 在克隆图之前和之后进行 BFS 遍历。 在 BFS 遍历中，显示节点的值及其地址/引用。
 如果两个遍历的值相同但地址/引用不同，则比较显示节点的顺序，而不是克隆的图正确。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to Clone an Undirected Graph 
 #include<bits/stdc++.h> 
@@ -164,9 +164,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to Clone an Undirected Graph 
 import java.util.*; 

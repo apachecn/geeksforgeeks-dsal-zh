@@ -30,9 +30,9 @@
 
 下面是上述方法的实现：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ Program to find weight of
 // minimum spanning tree in a
@@ -133,9 +133,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java Program to find weight of 
 // minimum spanning tree in a 

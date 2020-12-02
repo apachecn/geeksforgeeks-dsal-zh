@@ -42,9 +42,9 @@ Output: No King in danger
 
 下面是此方法的实现。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to implement the 
 // above approach
@@ -388,9 +388,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 public class Gfg {
 
@@ -683,9 +683,9 @@ public class Gfg {
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 using System;
 

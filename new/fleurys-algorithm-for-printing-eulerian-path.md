@@ -214,9 +214,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program print Eulerian Trail 
 // in a given Eulerian or Semi-Eulerian Graph 
@@ -389,9 +389,9 @@ public class Graph {
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program print Eulerian Trail in a given Eulerian or Semi-Eulerian Graph 
 
@@ -511,9 +511,9 @@ g3.printEulerTour()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program print Eulerian Trail 
 // in a given Eulerian or Semi-Eulerian Graph 

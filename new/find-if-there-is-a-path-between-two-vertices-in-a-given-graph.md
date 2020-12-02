@@ -35,9 +35,9 @@ Explanation: There is no path from 3 to 6
 
 **实现**：使用 BFS 从第一顶点查找第二顶点的可达性的 C ++，Java 和 Python 代码。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to check if there is exist a path between two vertices 
 // of a graph. 

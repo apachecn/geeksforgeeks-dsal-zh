@@ -34,9 +34,9 @@
 **这是如何工作的？**
 在欧拉路径中，每次我们访问顶点 v 时，都会经过两个未访问的边缘，且端点的端点为 v。因此，欧拉路径中的所有中顶点必须具有均匀的度数。 对于欧拉循环，任何顶点都可以是中间顶点，因此所有顶点都必须具有偶数度。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program to check if a given graph is Eulerian or not 
 #include<iostream> 
@@ -200,9 +200,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program to check if a given graph is Eulerian or not 
 import java.io.*; 
@@ -366,9 +366,9 @@ class Graph
 
 ```
 
-## 蟒蛇
+## Python
 
-```
+```py
 
 # Python program to check if a given graph is Eulerian or not 
 #Complexity : O(V+E) 
@@ -504,9 +504,9 @@ g5.test()
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // A C# program to check if a given graph is Eulerian or not 
 using System; 

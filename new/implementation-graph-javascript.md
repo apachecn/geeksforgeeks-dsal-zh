@@ -17,9 +17,9 @@
 在本文中，我们将使用**邻接表**来表示图，因为在大多数情况下，它比其他表示具有一定的优势。
 现在让我们看一下 Graph 类的示例-
 
-## 爪哇
+## Java
 
-```
+```java
 
 // create a graph class
 class Graph {
@@ -48,9 +48,9 @@ class Graph {
 
 1.  **addVertex（v）** –将顶点 *v* 作为键添加到 *adjList* ，并使用数组初始化其值。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // add vertex to the graph
 addVertex(v)
@@ -64,9 +64,9 @@ addVertex(v)
 
 2.  **addEdge（src，dest）** –在 *src* 和 *dest* 之间添加一条边。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // add edge to the graph
 addEdge(v, w)
@@ -85,9 +85,9 @@ addEdge(v, w)
 1.  为了添加边，我们获得了相应 *src* 顶点的邻接列表，并将 *dest* 添加到邻接列表中。
 2.  **printGraph（）** –打印顶点及其邻接列表。
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Prints the vertex and adjacency list
 printGraph()
@@ -122,9 +122,9 @@ printGraph()
 
 现在我们将使用图类来实现上面显示的图：
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Using the above implemented graph class
 var g = new Graph(6);
@@ -168,9 +168,9 @@ BFS 和 DFS 的实施：
 
 1.  **bfs（startingNode）** –它从给定的 *startingNode* 中执行广度优先搜索
 
-## 爪哇
+## Java
 
-```
+```java
 
 // function to performs BFS
 bfs(startingNode)
@@ -216,9 +216,9 @@ bfs(startingNode)
     让我们使用上述方法并沿图
     遍历
 
-## 爪哇
+## Java
 
-```
+```java
 
 // prints
 // BFS
@@ -234,9 +234,9 @@ g.bfs('A');
 
 2.  **dfs（startingNode）** –它在图形上执行深度优先遍历
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Main DFS method
 dfs(startingNode)
@@ -269,9 +269,9 @@ DFSUtil(vert, visited)
     包含 DFS 算法的实现。
     让我们使用上面的例子 沿图遍历的方法
 
-## 爪哇
+## Java
 
-```
+```java
 
 // prints
 // DFS

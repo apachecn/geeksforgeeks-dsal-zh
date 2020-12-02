@@ -401,9 +401,9 @@
 
 **实施**：
 
-## C ++
+## C++
 
-```
+```cpp
 
 // An Iterative C++ program to do DFS traversal from 
 // a given source vertex. DFS(int s) traverses vertices 

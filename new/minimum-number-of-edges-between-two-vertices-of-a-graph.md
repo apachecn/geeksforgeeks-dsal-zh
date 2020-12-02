@@ -63,9 +63,9 @@ int minEdgeBFS(int u, int v, int n)
 }
 ```
 
-## C ++
+## C++
 
-```
+```cpp
 
 // C++ program to find minimum edge
 // between given two vertex of Graph
@@ -143,9 +143,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // Java program to find minimum edge
 // between given two vertex of Graph
@@ -311,9 +311,9 @@ if __name__ == '__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program to find minimum edge 
 // between given two vertex of Graph 

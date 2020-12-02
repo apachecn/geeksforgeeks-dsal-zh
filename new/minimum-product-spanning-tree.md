@@ -29,9 +29,9 @@ Minimum Product that we can obtain is
 
 在下面的代码中，我们首先从给定的输入图构造了对数图，然后将该图作为 prim 的 MST 算法的输入，这将使树的权重总和最小化。 由于修改图的权重是实际输入图的对数，因此我们实际上最小化了生成树权重的乘积。
 
-## C ++
+## C++
 
-```
+```cpp
 
 // A C++ program for getting minimum product
 // spanning tree The program is for adjacency matrix
@@ -170,9 +170,9 @@ int main()
 
 ```
 
-## 爪哇
+## Java
 
-```
+```java
 
 // A Java program for getting minimum product
 // spanning tree The program is for adjacency matrix
@@ -475,9 +475,9 @@ if __name__=='__main__':
 
 ```
 
-## C＃
+## C#
 
-```
+```cs
 
 // C# program for getting minimum product
 // spanning tree The program is for adjacency matrix
