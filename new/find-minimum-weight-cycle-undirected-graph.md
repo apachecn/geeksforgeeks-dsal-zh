@@ -39,7 +39,7 @@ Minimum weighed cycle : 7 + 1 + 6 = 14 or
 
 ```
 
-下面的想法的 C ++实现
+下面的想法的 C++实现
 
 ```
 

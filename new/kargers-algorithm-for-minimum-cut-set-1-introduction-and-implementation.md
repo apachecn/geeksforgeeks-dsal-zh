@@ -45,7 +45,7 @@
 
 ![Karger1](img/af87ad77e52cc6578d62038dab20cf19.png)
 
-下面是上述算法的 C ++实现。 输入图表示为边的集合，[联合查找数据结构](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)用于跟踪组件。
+下面是上述算法的 C++实现。 输入图表示为边的集合，[联合查找数据结构](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)用于跟踪组件。
 
 ```
 

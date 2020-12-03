@@ -24,13 +24,13 @@
 
 距 0 的距离为 4：5（4- [ > 0）
 
-**方法**：该问题类似于 [Dijkstra 的问题。](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/) 。想法是使用 Dijkstra 的算法。 为了找到所有顶点到给定目标顶点之间的最短距离，我们反转了有向图的所有边，并在 dijkstra 算法中将目标顶点用作源顶点。 由于现在所有边都反转了，因此计算从目标顶点到所有其他顶点的最短距离类似于计算从所有顶点到给定目标顶点的最短距离。
+**方法**：该问题类似于 [Dijkstra 的问题。](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/) 。想法是使用 Dijkstra 算法。 为了找到所有顶点到给定目标顶点之间的最短距离，我们反转了有向图的所有边，并在 dijkstra 算法中将目标顶点用作源顶点。 由于现在所有边都反转了，因此计算从目标顶点到所有其他顶点的最短距离类似于计算从所有顶点到给定目标顶点的最短距离。
 
 反转边后，图形如下所示：
 
 ![](img/2918215f534b0a038d166d136d7709aa.png)
 
-现在，按照 Dijkstra 的算法，计算距目标顶点最短的距离作为源顶点。
+现在，按照 Dijkstra 算法，计算距目标顶点最短的距离作为源顶点。
 
 下面是上述方法的实现：
 

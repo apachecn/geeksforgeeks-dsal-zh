@@ -18,7 +18,7 @@ Johnson 算法的详细解释已经在[先前的文章](https://www.geeksforgeek
 
 3.  重新加权原始图形的边。 对于每个边（u，v），将新权重分配为“原始权重+ h [u] – h [v]”。
 
-4.  删除添加的顶点，并为每个顶点运行 [Dijkstra 的算法](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)。
+4.  删除添加的顶点，并为每个顶点运行 [Dijkstra 算法](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)。
 
 **示例**：
 
@@ -194,7 +194,7 @@ Vertex 3: 0
 
 ```
 
-**时间复杂度**：上述算法的时间复杂度为![O(V^3 + V*E)](img/55f33671be35d1b9117f0eba4d2a240f.png "Rendered by QuickLaTeX.com")，因为 Dijkstra 的算法将![O(n^2)](img/598be626cedc018633480e0f69670fd8.png "Rendered by QuickLaTeX.com")用于邻接矩阵。 注意，通过使用邻接表代替邻接矩阵来表示图，可以使上述算法更加有效。
+**时间复杂度**：上述算法的时间复杂度为![O(V^3 + V*E)](img/55f33671be35d1b9117f0eba4d2a240f.png "Rendered by QuickLaTeX.com")，因为 Dijkstra 算法将![O(n^2)](img/598be626cedc018633480e0f69670fd8.png "Rendered by QuickLaTeX.com")用于邻接矩阵。 注意，通过使用邻接表代替邻接矩阵来表示图，可以使上述算法更加有效。
 
 
 

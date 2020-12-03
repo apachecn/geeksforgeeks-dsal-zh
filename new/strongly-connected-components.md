@@ -22,7 +22,7 @@
 
 ![SCCGraph2](img/97fa10c45083f3edfb0ee634ca9bd326.png)
 
-以下是 Kosaraju 算法的 C ++实现。
+以下是 Kosaraju 算法的 C++实现。
 
 ## C++
 

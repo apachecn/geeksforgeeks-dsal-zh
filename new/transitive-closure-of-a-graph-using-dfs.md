@@ -25,7 +25,7 @@ Transitive closure of above graphs is
 
 以下是上述想法的实现。 该代码使用输入图的邻接表表示，并构建矩阵 tc [V] [V]，使得如果从 u 可以到达 v，则 tc [u] [v]为真。
 
-## C / C ++
+## C / C++
 
 ```
 

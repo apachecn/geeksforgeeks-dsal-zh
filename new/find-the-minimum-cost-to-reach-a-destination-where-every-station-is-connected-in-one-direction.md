@@ -329,9 +329,9 @@ The Minimum cost to reach station 4 is 65
 
 由于此问题具有动态编程问题的两个属性（（请参见[此](https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/)和[ 与其他典型的[动态编程（DP）问题一样，通过存储子问题的解决方案并以自下而上的方式解决问题，可以避免相同子问题的](https://www.geeksforgeeks.org/archives/tag/dynamic-programming)重新计算。
 
-一种动态编程解决方案是创建 2D 表并使用上述给定的递归公式填充表。 该解决方案所需的额外空间为 O（N <sup>2</sup> ），时间复杂度为 O（N <sup>3</sup> ）
+一种动态编程解决方案是创建 2D 表并使用上述给定的递归公式填充表。 该解决方案所需的额外空间为`O(N^2)`，时间复杂度为 O（N <sup>3</sup> ）
 
-我们可以使用 O（N）个额外空间和 O（N <sup>2</sup> ）时间来解决此问题。 该想法基于以下事实：给定的输入矩阵是有向无环图（DAG）。 DAG 中的最短路径可以使用以下文章中讨论的方法来计算。
+我们可以使用 O（N）个额外空间和`O(N^2)`时间来解决此问题。 该想法基于以下事实：给定的输入矩阵是有向无环图（DAG）。 DAG 中的最短路径可以使用以下文章中讨论的方法来计算。
 
 [有向无环图](https://www.geeksforgeeks.org/shortest-path-for-directed-acyclic-graphs/)中的最短路径
 

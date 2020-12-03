@@ -30,7 +30,7 @@
 
 ![Adjacency Matrix Representation](img/e6ce2df9f47474d523e582301bb05396.png "adjacency_matrix_representation")
 
-*优点：*表示更易于实现和遵循。 移除边需要 O（1）时间。 诸如从顶点“ u”到顶点“ v”是否存在边的查询是有效的，可以执行 O（1）。
+*优点：*表示更易于实现和遵循。 移除边需要`O(1)`时间。 诸如从顶点“ u”到顶点“ v”是否存在边的查询是有效的，可以执行`O(1)`。
 
 *缺点：*占用更多空间 O（V ^ 2）。 即使图是稀疏的（包含较少的边数），它也会占用相同的空间。 添加一个顶点是 O（V ^ 2）时间。
 
@@ -42,7 +42,7 @@
 
 ![Adjacency List Representation of Graph](img/2c37d703328bcef494fbd4617b0f46df.png "adjacency_list_representation")
 
-请注意，在以下实现中，我们使用动态数组（Java 中为 C ++ / ArrayList 中的向量）表示邻接列表，而不是链接列表。 向量实现具有缓存友好性的优点。
+请注意，在以下实现中，我们使用动态数组（Java 中为 C++ / ArrayList 中的向量）表示邻接列表，而不是链接列表。 向量实现具有缓存友好性的优点。
 
 ## C++
 

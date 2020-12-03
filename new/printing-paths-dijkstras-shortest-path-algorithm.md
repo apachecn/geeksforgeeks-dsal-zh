@@ -52,7 +52,7 @@ void printPath(int parent[], int j)
 
 以下是完整的实现
 
-## C / C ++
+## C / C++
 
 ```
 

@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/widest-path-problem-practical-application-of-dijkstras-algorithm/](https://www.geeksforgeeks.org/widest-path-problem-practical-application-of-dijkstras-algorithm/)
 
-强烈建议先使用优先级队列阅读 [Dijkstra 的算法。](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/)
+强烈建议先使用优先级队列阅读 [Dijkstra 算法。](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/)
 
 最宽路径问题是在图**的两个顶点之间找到路径的问题，该路径最大化了路径**中最小权重边的权重。 请参见下图以了解问题所在：
 

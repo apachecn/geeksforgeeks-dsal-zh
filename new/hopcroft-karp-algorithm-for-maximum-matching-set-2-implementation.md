@@ -22,7 +22,7 @@
 
 一旦找到扩展路径，就可以使用 DFS（深度优先搜索）将扩展路径添加到当前匹配中。 DFS 只需遵循 BFS 设置距离数组即可。 如果 v 在 BFS 中紧挨着 u，它将填充 pairU [u]和 pairV [v]中的值。
 
-下面是上述 Hopkroft Karp 算法的 C ++实现。
+下面是上述 Hopkroft Karp 算法的 C++实现。
 
 ```
 

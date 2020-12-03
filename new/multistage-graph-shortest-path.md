@@ -365,7 +365,7 @@ class GFG 
 
 ```
 
-**时间复杂度**：O（n <sup>2</sup> ）
+**时间复杂度**：`O(N^2)`
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 

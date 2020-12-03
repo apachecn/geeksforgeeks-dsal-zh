@@ -48,7 +48,7 @@ bool DLS(src, target, limit)
 
 的实现
 
-## C / C ++
+## C / C++
 
 ```
 

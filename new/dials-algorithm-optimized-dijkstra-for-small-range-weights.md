@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/dials-algorithm-optimized-dijkstra-for-small-range-weights/](https://www.geeksforgeeks.org/dials-algorithm-optimized-dijkstra-for-small-range-weights/)
 
-用邻接表表示实现时，Dijkstra 的最短路径算法在 O（Elog V）时间中运行（有关详细信息，请参见 [C 实现](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)和[基于 STL 的 C ++实现](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-set-in-stl/)）。
+用邻接表表示实现时，Dijkstra 的最短路径算法在 O（Elog V）时间中运行（有关详细信息，请参见 [C 实现](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)和[基于 STL 的 C++实现](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-set-in-stl/)）。
 
 ```
 ![](img/da02f5d7c69985e8d8ae59d54ad78c89.png "Fig-1")
@@ -23,7 +23,7 @@ Output :
 
 **如果最大权重较小（或边权重范围较小），我们能否优化 Dijkstra 的最短路径算法以使其优于 O（E log V）？**
 
-例如，在上图中，最大权重为 14。很多时候，边上的权重范围处于较小范围内（即，所有边权重都可以映射为 0、1、2。w 其中 w 是一个小数）。 在这种情况下，可以通过使用不同的数据结构存储区来修改 Dijkstra 的算法，这被称为 dijkstra 算法的拨号实现。 时间复杂度为 **O（E + WV）**，其中 W 是图的任意边上的最大权重，因此我们可以看到，如果 W 小，则此实现比传统算法运行得快得多。 以下是重要观察。
+例如，在上图中，最大权重为 14。很多时候，边上的权重范围处于较小范围内（即，所有边权重都可以映射为 0、1、2。w 其中 w 是一个小数）。 在这种情况下，可以通过使用不同的数据结构存储区来修改 Dijkstra 算法，这被称为 dijkstra 算法的拨号实现。 时间复杂度为 **O（E + WV）**，其中 W 是图的任意边上的最大权重，因此我们可以看到，如果 W 小，则此实现比传统算法运行得快得多。 以下是重要观察。
 
 *   任何两个节点之间的最大距离可以为最大 w（V – 1）（w 是最大边权重，两个顶点之间可以有最大 V-1 边）。
 

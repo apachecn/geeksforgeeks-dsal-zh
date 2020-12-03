@@ -23,7 +23,7 @@
 > **输出**：是
 > **说明**：顶点 3 从顶点 1 经由顶点 2 或 4。
 
-**天真的方法**：
+**朴素的方法**：
 
 的想法是使用 [Floyd Warshall 算法](http://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/)。 为了解决该问题，我们需要尝试所有范围为 **[1，N]** 的中间顶点，然后检查：
 

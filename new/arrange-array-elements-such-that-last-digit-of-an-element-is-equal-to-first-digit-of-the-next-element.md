@@ -2,19 +2,21 @@
 
 > 原文： [https://www.geeksforgeeks.org/arrange-array-elements-such-that-last-digit-of-an-element-is-equal-to-first-digit-of-the-next-element/](https://www.geeksforgeeks.org/arrange-array-elements-such-that-last-digit-of-an-element-is-equal-to-first-digit-of-the-next-element/)
 
-给定整数数组 **arr []** ，任务是排列数组元素，以使元素的最后一位等于下一个元素的第一位。
+给定整数数组`arr[]`，任务是排列数组元素，以使元素的最后一位等于下一个元素的第一位。
 
 **示例**：
 
-> **输入**：arr [] = {123，321}
-> **输出**：123321
+> **输入**：`arr[] = {123, 321}`
+>
+> **输出**：`123 321`
 > 
-> **输入**：arr [] = {451，378，123，1254}
-> **输出**：1254 451 123378
+> **输入**：`arr[] = {451, 378, 123, 1254}`
+>
+> **输出**：`1254 451 123 378`
 
-**天真的方法**：找到数组元素的所有排列，然后打印满足所需条件的排列好的数组。 此方法的时间复杂度为 **O（N！）**
+**朴素的方法**：找到数组元素的所有排列，然后打印满足所需条件的排列好的数组。 此方法的时间复杂度为`O(N!)`。
 
-**有效方法**：创建一个有向图，其中如果节点[表示的数字]的最后一位数字是从节点`A`到节点`B`的有向边，`A`等于节点`B`表示的数字的第一位。 现在，找到所形成图的[欧拉路径](https://www.geeksforgeeks.org/fleurys-algorithm-for-printing-eulerian-path/)。 上述算法的复杂度为 **O（E * E）**，其中`E`是图中的边数。
+**有效方法**：创建一个有向图，其中如果节点[表示的数字]的最后一位数字是从节点`A`到节点`B`的有向边，`A`等于节点`B`表示的数字的第一位。 现在，找到所形成图的[欧拉路径](https://www.geeksforgeeks.org/fleurys-algorithm-for-printing-eulerian-path/)。 上述算法的复杂度为`O(E * E)`，其中`E`是图中的边数。
 
 下面是上述方法的实现：
 

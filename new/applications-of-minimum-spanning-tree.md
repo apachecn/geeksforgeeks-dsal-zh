@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/applications-of-minimum-spanning-tree/](https://www.geeksforgeeks.org/applications-of-minimum-spanning-tree/)
 
-最小生成树（MST）问题：给定连接图 G 具有正的边权重，找到连接所有顶点的边的最小权重集。
+最小生成树（MST）问题：给定连接图`G`具有正的边权重，找到连接所有顶点的边的最小权重集。
 
 MST 是各种应用程序的基本问题。
 
@@ -40,13 +40,11 @@ MST 是各种应用程序的基本问题。
 
 **聚类分析**
 
-k 聚类问题可以看作是找到一个 MST 并删除了 k-1 个最昂贵的
-
-边。
+K 聚类问题可以看作是找到一个 MST 并删除了`k-1`个最昂贵的边。
 
 **来源**：
 
 [http://www.cs.princeton.edu/courses/archive/spr07/cos226/lectures/mst.pdf](http://www.cs.princeton.edu/courses/archive/spr07/cos226/lectures/mst.pdf)
 
-[http： //www.ics.uci.edu/~eppstein/161/960206.html](http://www.ics.uci.edu/~eppstein/161/960206.html)
+[http://www.ics.uci.edu/~eppstein/161/960206.html](http://www.ics.uci.edu/~eppstein/161/960206.html)
 

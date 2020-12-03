@@ -57,7 +57,7 @@ The diagram clearly shows no cycle
 
 *   **Implementation:**
 
-    ## C ++
+    ## C++
 
     ```
 

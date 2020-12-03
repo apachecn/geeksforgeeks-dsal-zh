@@ -23,7 +23,7 @@ Output : 8
 
 ```
 
-**天真的方法**：
+**朴素的方法**：
 
 我们可以遍历所有节点对，并检查它们是否是互素的。 如果它们不是互质的，我们将它们连接起来。 创建图表后，我们将应用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来找到最大组件尺寸。
 
@@ -336,7 +336,7 @@ public static void Main(String[] args)
 
 ```
 
-时间复杂度：O（N <sup>2</sup> ）
+时间复杂度：`O(N^2)`
 
 **有效方法**
 

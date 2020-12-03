@@ -14,7 +14,7 @@
 > **说明**：
 > 公共顶点为 4，路径为 0-> 4-> 3-> 1-> 4-> 0
 
-**方法**：的想法是使用 [Dijkstra 的算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)。 使用 Dijkstra 的算法找到从源到目标的最短路径以及从目标到源的最短路径时，除源和目标顶点外，可能不会导致至少有一个公共节点的路径。
+**方法**：的想法是使用 [Dijkstra 算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)。 使用 Dijkstra 算法找到从源到目标的最短路径以及从目标到源的最短路径时，除源和目标顶点外，可能不会导致至少有一个公共节点的路径。
 
 *   假设`s`为源顶点，`d`为目标顶点，`v`为从源到目标以及从目标到源的路径中共有的中间节点。 最短的路径对，因此 v 在这两个路径的交点处是路径： **s-> v-> d-> v-> s** 及其长度 是
 

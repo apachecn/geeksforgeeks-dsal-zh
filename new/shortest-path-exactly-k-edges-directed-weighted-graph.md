@@ -12,7 +12,7 @@
 
 ![graph1](img/9e9e3feefaf8a349f55d519ec574bfca.png)
 
-这个想法是使用[先前文章](https://www.geeksforgeeks.org/count-possible-paths-source-destination-exactly-k-edges/)中讨论的方法浏览从 u 到 v 的所有长度为 k 的路径，并返回最短路径的权重。 **简单解决方案**是从 u 开始，转到所有相邻的顶点，然后对 k 为 k-1，源为相邻顶点，目标为 v 的相邻顶点递归。以下是此简单的 C ++和 Java 实现 解。
+这个想法是使用[先前文章](https://www.geeksforgeeks.org/count-possible-paths-source-destination-exactly-k-edges/)中讨论的方法浏览从 u 到 v 的所有长度为 k 的路径，并返回最短路径的权重。 **简单解决方案**是从 u 开始，转到所有相邻的顶点，然后对 k 为 k-1，源为相邻顶点，目标为 v 的相邻顶点递归。以下是此简单的 C++和 Java 实现 解。
 
 ## C++
 

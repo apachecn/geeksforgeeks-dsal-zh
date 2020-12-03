@@ -356,7 +356,7 @@ Address of Node GraphNode@55f96302
 
 ```
 
-用 C ++输出：
+用 C++输出：
 
 ```
 BFS Traversal before cloning

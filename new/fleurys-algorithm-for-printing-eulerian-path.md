@@ -46,13 +46,13 @@
 
 有关更多示例，请参见[此](http://www.math.ku.edu/~jmartin/courses/math105-F11/Lectures/chapter5-part2.pdf)和[此](http://www.austincc.edu/powens/+Topics/HTML/05-6/05-6.html)。
 
-以下是上述算法的 C ++实现。 在以下代码中，假定给定的图形具有欧拉径或电路。 主要重点是打印欧拉小径或电路。 我们可以使用 [isEulerian（）](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)首先检查给定图中是否有 Eulerian Trail 或 Circuit。
+以下是上述算法的 C++实现。 在以下代码中，假定给定的图形具有欧拉径或电路。 主要重点是打印欧拉小径或电路。 我们可以使用 [isEulerian（）](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)首先检查给定图中是否有 Eulerian Trail 或 Circuit。
 
 我们首先找到起点，该起点必须是奇数个顶点（如果有奇数个顶点），并将其存储在变量“ u”中。 如果奇数顶点为零，则从顶点“ 0”开始。 我们调用 printEulerUtil（）从 u 开始打印 Euler 游览。 我们遍历 u 的所有相邻顶点，如果只有一个相邻顶点，我们会立即考虑。 如果相邻顶点不止一个，则仅当边 u-v 不是桥时才考虑相邻 v。 如何查找给定的边是否为桥？ 我们计算从 u 可到达的顶点数。 我们删除边 u-v，并再次从 u 计算可达顶点的数量。 如果可到达的顶点数量减少，则边 u-v 是桥。 为了计算可到达的顶点，我们可以使用 BFS 或 DFS，我们在上面的代码中使用了 DFS。 函数 DFSCount（u）返回可从 u 到达的顶点数。
 
 处理完一条边后（包括在 Euler 游览中），我们将其从图形中删除。 要删除边，我们在邻接列表中将顶点条目替换为-1。 请注意，仅删除节点可能不起作用，因为代码是递归的，并且父调用可能在邻接列表的中间。
 
-## C / C ++
+## C / C++
 
 ```
 

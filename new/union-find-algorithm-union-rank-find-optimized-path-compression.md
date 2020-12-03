@@ -19,7 +19,7 @@ Output: Graph does not contain Cycle.
 
 先决条件：[不交集（或并集）](https://www.geeksforgeeks.org/union-find/)，[通过等级和路径压缩的并集](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
 
-我们已经讨论了[联合查找循环](https://www.geeksforgeeks.org/union-find/)的方法。 在这里，我们讨论通过路径压缩查找，在这种情况下，它经过稍微修改以比原始方法更快地工作，因为每次上图时我们都跳过一个级别。 查找功能的实现是迭代的，因此不涉及开销。优化查找功能的时间复杂度为 O（log *（n）），即迭代对数，对于重复调用收敛到 O（1）。
+我们已经讨论了[联合查找循环](https://www.geeksforgeeks.org/union-find/)的方法。 在这里，我们讨论通过路径压缩查找，在这种情况下，它经过稍微修改以比原始方法更快地工作，因为每次上图时我们都跳过一个级别。 查找功能的实现是迭代的，因此不涉及开销。优化查找功能的时间复杂度为 O（log *（n）），即迭代对数，对于重复调用收敛到`O(1)`。
 
 请参考此链接以获取
 

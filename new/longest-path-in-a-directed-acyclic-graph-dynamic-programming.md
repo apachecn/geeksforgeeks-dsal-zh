@@ -17,9 +17,9 @@
 > ![](img/3ab0d1f8a45f5a4bdaa8e06d1aed288d.png)
 > **输出**：3
 
-**简单方法**：天真的方法是使用 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 计算来自每个节点的最长路径的长度。
+**简单方法**：朴素的方法是使用 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 计算来自每个节点的最长路径的长度。
 
-该方法的时间复杂度为 O（N <sup>2</sup> ）。
+该方法的时间复杂度为`O(N^2)`。
 
 **有效方法**：一种有效方法是一起使用[动态编程](http://www.geeksforgeeks.org/dynamic-programming/)和 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 在图中找到最长路径。
 

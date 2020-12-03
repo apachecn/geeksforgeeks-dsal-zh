@@ -28,9 +28,9 @@
 > 1 至 4 = 1，
 > 1 至 5 = 1
 
-**天真的方法**：一个简单的解决方案是创建补图，并在该图上使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)来查找到所有节点的距离。
+**朴素的方法**：一个简单的解决方案是创建补图，并在该图上使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)来查找到所有节点的距离。
 
- ***时间复杂度**：O（n <sup>2</sup> ）用于创建补图，而 O（n + m）用于广度优先搜索。
+ ***时间复杂度**：`O(N^2)`用于创建补图，而 O（n + m）用于广度优先搜索。
 
 **高效方法**：的想法是使用**改进的广度优先搜索**来计算答案，然后无需构造补图。
 

@@ -31,7 +31,7 @@ distance of 4 cells from the only
 
 ```
 
-**方法 1：天真的方法**
+**方法 1：朴素的方法**
 
 对于每个 0 单元，计算其与每个 1 单元的距离并存储最小值。 所有这些最小距离中的最大值就是答案。
 
@@ -826,7 +826,7 @@ public static void main(String[] args)
 
 **时间复杂度**：*O（M * N）*
 
-**辅助空间**：*O（1）*
+**辅助空间**：*`O(1)`*
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 

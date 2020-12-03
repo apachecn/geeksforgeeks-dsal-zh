@@ -81,7 +81,7 @@ Component                Cheapest Edge that connects
 
 下面是上述算法的实现。 输入图表示为边的集合，[联合查找数据结构](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)用于跟踪组件。
 
-## C / C ++
+## C / C++
 
 ```
 

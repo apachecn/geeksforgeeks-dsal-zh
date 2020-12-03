@@ -47,7 +47,7 @@ is 1\. Similarly, all the distance can be calculated.
 
 *   **Implementation:**
 
-    ## C ++
+    ## C++
 
     ```
 
@@ -383,7 +383,7 @@ is 1\. Similarly, all the distance can be calculated.
 
         对于矩阵中的每个元素，都要遍历矩阵，并且有 N * M 个元素，因此时间复杂度为 O（N <sup>2</sup> * M <sup>2</sup> ）。
 
-    *   **空间复杂度**：O（1）。
+    *   **空间复杂度**：`O(1)`。
 
         不需要多余的空间。
 

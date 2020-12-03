@@ -26,7 +26,7 @@
 
 **先决条件**：有关深度优先遍历的所有应用，请参见此文章的[。
 
-以下是简单的深度优先遍历的实现。 C ++实现使用图形的](https://www.geeksforgeeks.org/archives/11644)[邻接表表示](https://www.geeksforgeeks.org/graph-and-its-representations/)。 [STL](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/) 的[列表容器](http://www.yolinux.com/TUTORIALS/LinuxTutorialC++STL.html#LIST)用于存储相邻节点的列表。
+以下是简单的深度优先遍历的实现。 C++实现使用图形的](https://www.geeksforgeeks.org/archives/11644)[邻接表表示](https://www.geeksforgeeks.org/graph-and-its-representations/)。 [STL](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/) 的[列表容器](http://www.yolinux.com/TUTORIALS/LinuxTutorialC++STL.html#LIST)用于存储相邻节点的列表。
 
 **<u>解决方案：</u>**
 

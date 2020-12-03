@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/construct-graph-given-degrees-vertices/](https://www.geeksforgeeks.org/construct-graph-given-degrees-vertices/)
 
-这是一个 C ++程序，用于为给定的度数序列生成图，该算法为给定的度数序列生成无向图，它不包括自边和多边。
+这是一个 C++程序，用于为给定的度数序列生成图，该算法为给定的度数序列生成无向图，它不包括自边和多边。
 
 **示例**：
 

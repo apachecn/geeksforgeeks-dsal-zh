@@ -1,4 +1,4 @@
-# 旅行商问题| 设置 1（天真和动态编程）
+# 旅行商问题| 设置 1（朴素和动态编程）
 
 > 原文： [https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/](https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/)
 
@@ -14,7 +14,7 @@
 
 以下是旅行商问题的不同解决方案。
 
-**天真的解决方案**：
+**朴素的解决方案**：
 
 1）将城市 1 作为起点和终点。
 

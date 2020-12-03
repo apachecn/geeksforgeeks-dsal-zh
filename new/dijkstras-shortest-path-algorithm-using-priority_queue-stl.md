@@ -23,15 +23,15 @@ Output :
 
 我们已经讨论了 Dijkstra 最短 Path 的实现。
 
-*   [Dijkstra 的邻接矩阵表示算法（在 C / C ++中，时间复杂度为 O（v <sup>2</sup> ）](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)
+*   [Dijkstra 的邻接矩阵表示算法（在 C / C++中，时间复杂度为 O（v <sup>2</sup> ）](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)
 
 *   [Dijkstra 的邻接表表示算法（在 C 中，时间复杂度为 O（ELogV））](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)
 
-*   [Dijkstra 在 STL 中使用集合的最短路径算法（在具有时间复杂度 O（ELogV）的 C ++中）](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-set-in-stl/)
+*   [Dijkstra 在 STL 中使用集合的最短路径算法（在具有时间复杂度 O（ELogV）的 C++中）](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-set-in-stl/)
 
 第二种实现方式是时间复杂度更好，但是由于我们已经实现了自己的优先级队列，因此实现起来确实很复杂。
 
-第三种实现更简单，因为它使用 STL。 第三个实现的问题是，它使用 set，而 set 又使用了 Self-Balancing Binary Search Trees。 对于 Dijkstra 的算法，始终建议使用堆（或优先级队列），因为所需的操作（提取最小和减小键）要与堆（或优先级队列）的特性相匹配。 但是，问题是，priority_queue 不支持减小键。 要解决此问题，请不要更新密钥，而要再插入一个副本。 因此，我们允许优先级队列中具有相同顶点的多个实例。 这种方法不需要减少按键操作，并且具有以下重要属性。
+第三种实现更简单，因为它使用 STL。 第三个实现的问题是，它使用 set，而 set 又使用了 Self-Balancing Binary Search Trees。 对于 Dijkstra 算法，始终建议使用堆（或优先级队列），因为所需的操作（提取最小和减小键）要与堆（或优先级队列）的特性相匹配。 但是，问题是，priority_queue 不支持减小键。 要解决此问题，请不要更新密钥，而要再插入一个副本。 因此，我们允许优先级队列中具有相同顶点的多个实例。 这种方法不需要减少按键操作，并且具有以下重要属性。
 
 *   每当减少顶点的距离时，我们就会在 priority_queue 中再添加一个顶点实例。 即使存在多个实例，我们也只考虑最小距离的实例，而忽略其他实例。
 
@@ -71,7 +71,7 @@ Output :
 
 ```
 
-以下是上述想法的 C ++实现。
+以下是上述想法的 C++实现。
 
 ```
 

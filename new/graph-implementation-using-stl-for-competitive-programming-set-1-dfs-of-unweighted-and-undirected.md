@@ -16,7 +16,7 @@
 
 *   [vector：](http://quiz.geeksforgeeks.org/vector-sequence-containers-the-c-standard-template-library-stl-set-1/)一个序列容器。 在这里，我们使用它来存储所有顶点的邻接列表。 我们使用顶点数作为该向量的索引。
 
-想法是将图表示为向量数组，以使每个向量都表示顶点的邻接表。 以下是用于 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)的完整的基于 STL 的 C ++程序。
+想法是将图表示为向量数组，以使每个向量都表示顶点的邻接表。 以下是用于 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)的完整的基于 STL 的 C++程序。
 
 ```
 
@@ -95,7 +95,7 @@ int main()
 
 [使用 STL 中的集的 Dijkstra 最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-set-in-stl/)
 
-[Kruskal 的 在 C ++中使用 STL 的最小生成树](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-using-stl-in-c/)
+[Kruskal 的 在 C++中使用 STL 的最小生成树](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-using-stl-in-c/)
 
 [在 STL](https://www.geeksforgeeks.org/prims-algorithm-using-priority_queue-stl/) 中使用 priority_queue 的 Prim 算法
 

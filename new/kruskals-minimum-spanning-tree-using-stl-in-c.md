@@ -1,4 +1,4 @@
-# 在 C ++中使用 STL 的 Kruskal 最小生成树
+# 在 C++中使用 STL 的 Kruskal 最小生成树
 
 > 原文： [https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-using-stl-in-c/](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-using-stl-in-c/)
 
@@ -73,7 +73,7 @@ for each (u, v) taken from the sorted list  E
 
 ```
 
-下面是上述算法的 C ++实现。
+下面是上述算法的 C++实现。
 
 ```
 

@@ -38,7 +38,7 @@ Explanation: There is no path from 3 to 6
 
 6.  由于在 BFS 中未到达目标，因此返回 false。
 
-**实现**：使用 BFS 从第一顶点查找第二顶点的可达性的 C ++，Java 和 Python 代码。
+**实现**：使用 BFS 从第一顶点查找第二顶点的可达性的 C++，Java 和 Python 代码。
 
 ## C++
 

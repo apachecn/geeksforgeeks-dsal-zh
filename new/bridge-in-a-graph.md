@@ -28,7 +28,7 @@
 
 这个想法类似于 [O（V + E）用于铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)的算法。 我们对给定的图形进行 DFS 遍历。 在 DFS 树中，如果不存在任何其他选择来从 u 植根于 v 的子树中到达 u 或 u 的祖先，则边（u，v）（u 是 DFS 树中 v 的父级）被桥接。如[先前的文章](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)，值 low [v]表示从以 v 为根的子树可访问的最早访问顶点。*边（u，v）成为桥的条件是“ low [v] > disc [u]”* 。
 
-以下是上述方法的 C ++和 Java 实现。
+以下是上述方法的 C++和 Java 实现。
 
 ## C++
 

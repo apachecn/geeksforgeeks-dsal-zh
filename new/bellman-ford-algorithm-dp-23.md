@@ -4,7 +4,7 @@
 
 给定一个图和图中的源顶点 *src* ，找到从 *src* 到给定图中所有顶点的最短路径。 该图可能包含负权重边。
 
-我们已经讨论了 [Dijkstra 的算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)。 Dijkstra 的算法是贪婪算法，时间复杂度为 O（VLogV）（使用斐波那契堆）。 *Dijkstra 不适用于负负边的图表，Bellman-Ford 可以处理此类图表。 Bellman-Ford 也比 Dijkstra 简单，并且非常适合分布式系统。 但是 Bellman-Ford 的时间复杂度是 O（VE），比 Dijkstra 大。*
+我们已经讨论了 [Dijkstra 算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)。 Dijkstra 算法是贪婪算法，时间复杂度为 O（VLogV）（使用斐波那契堆）。 *Dijkstra 不适用于负负边的图表，Bellman-Ford 可以处理此类图表。 Bellman-Ford 也比 Dijkstra 简单，并且非常适合分布式系统。 但是 Bellman-Ford 的时间复杂度是 O（VE），比 Dijkstra 大。*
 
 **算法**
 

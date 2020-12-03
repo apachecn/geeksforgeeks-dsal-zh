@@ -64,9 +64,9 @@ Output : No
 
 3）如果创建的图形具有[欧拉回路](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)，则返回 true，否则返回 false。
 
-以下是上述算法的 C ++和 Python 实现。
+以下是上述算法的 C++和 Python 实现。
 
-## C / C ++
+## C / C++
 
 ```
 

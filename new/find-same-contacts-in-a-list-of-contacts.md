@@ -274,7 +274,7 @@ if __name__ == '__main__':
 
 ```
 
-**时间复杂度**：O（n <sup>2</sup> ）其中，n 是触点数。
+**时间复杂度**：`O(N^2)`其中，n 是触点数。
 
 感谢 [Gaurav Ahirwar](http://qa.geeksforgeeks.org/user/Mr.Lazy) 提供了上述解决方案。
 

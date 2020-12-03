@@ -19,9 +19,9 @@
 > **输入**：arr [] = {4，5，7，6，7，5，4，4，6，4}，jumps [] = {1,2,3,3,5,2 、、 7、2、4、1}
 > **输出**：1 1 2 2 1 1 -1 1 1 2
 
-**天真的方法**：解决问题的最简单方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并对每个数组元素 **arr [i]执行[广度优先遍历](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) ]** ，方法是反复将 arr [i – jumps [i]] 和 **arr [i + jumps [i]]** 转换为**，直到出现无效索引为止， 转换，检查数组元素是否与前一个元素具有相反的奇偶校验。 相应地打印每个数组元素所需的最小跳转数。**
+**朴素的方法**：解决问题的最简单方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并对每个数组元素 **arr [i]执行[广度优先遍历](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) ]** ，方法是反复将 arr [i – jumps [i]] 和 **arr [i + jumps [i]]** 转换为**，直到出现无效索引为止， 转换，检查数组元素是否与前一个元素具有相反的奇偶校验。 相应地打印每个数组元素所需的最小跳转数。**
 
-***时间复杂度**：O（N <sup>2</sup> ）*
+***时间复杂度**：`O(N^2)`*
 
 ***辅助空间**：O（N）*
 

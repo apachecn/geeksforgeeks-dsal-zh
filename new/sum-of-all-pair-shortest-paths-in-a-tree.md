@@ -27,7 +27,7 @@
 > 节点 1 和 3 之间的路径权重之和 节点 2 和 3 = 3
 > 因此，总和= 1 + 3 + 6 + 2 + 5 + 3 = 20。
 
-**天真的方法**：最简单的方法是使用 Floyd Warshall 算法在[中找到每对顶点之间的最短路径。 在预先计算每对节点之间最短路径的成本之后，请打印所有最短路径的总和。](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/)
+**朴素的方法**：最简单的方法是使用 Floyd Warshall 算法在[中找到每对顶点之间的最短路径。 在预先计算每对节点之间最短路径的成本之后，请打印所有最短路径的总和。](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/)
 
 下面是上述方法的实现：
 
@@ -792,7 +792,7 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：O（N <sup>2</sup> ），其中 N 是顶点数。*
+***时间复杂度**：`O(N^2)`，其中 N 是顶点数。*
 
 ***辅助空间**：O（N）*
 

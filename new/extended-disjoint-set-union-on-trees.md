@@ -26,7 +26,7 @@
 > 查询 1：在子树 2 中没有正好出现 2 次数字
 > 查询 2：子树 4 中-1 出现了两次
 
-**天真的方法**：的想法是使用 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 遍历遍历树，并计算与子树的每个顶点关联的数的频率`V`并存储 导致哈希图。 遍历后，我们只需要遍历哈希图以检查给定的频率数是否存在。
+**朴素的方法**：的想法是使用 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 遍历遍历树，并计算与子树的每个顶点关联的数的频率`V`并存储 导致哈希图。 遍历后，我们只需要遍历哈希图以检查给定的频率数是否存在。
 
 下面是上述方法的实现：
 

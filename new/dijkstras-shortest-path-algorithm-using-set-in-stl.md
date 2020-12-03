@@ -23,17 +23,17 @@ Output :
 
 我们已经讨论了 Dijkstra 最短 Path 的实现。
 
-*   [Dijkstra 的邻接矩阵表示算法（在 C / C ++中，时间复杂度为 O（v <sup>2</sup> ）](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)
+*   [Dijkstra 的邻接矩阵表示算法（在 C / C++中，时间复杂度为 O（v <sup>2</sup> ）](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)
 
 *   [Dijkstra 的邻接表表示算法（在 C 中，时间复杂度为 O（ELogV））](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)
 
-第二种实现方式是时间复杂度更好，但是由于我们已经实现了自己的优先级队列，因此实现起来确实很复杂。 STL 提供 [priority_queue](http://geeksquiz.com/priority-queue-container-adaptors-the-c-standard-template-library-stl/) ，但提供的优先级队列不支持减少键和删除操作。 在 Dijkstra 的算法中，我们需要一个优先级队列，以及下面对优先级队列的操作：
+第二种实现方式是时间复杂度更好，但是由于我们已经实现了自己的优先级队列，因此实现起来确实很复杂。 STL 提供 [priority_queue](http://geeksquiz.com/priority-queue-container-adaptors-the-c-standard-template-library-stl/) ，但提供的优先级队列不支持减少键和删除操作。 在 Dijkstra 算法中，我们需要一个优先级队列，以及下面对优先级队列的操作：
 
 *   ExtractMin：从尚未找到最短距离的所有那些顶点中，我们需要获得具有最小距离的顶点。
 
 *   DecreaseKey：提取顶点后，我们需要更新其相邻顶点的距离，如果新距离较小，则在数据结构中更新该距离。
 
-以上操作可以通过 c ++ STL 的 [set 数据结构轻松实现，set 将其所有键按排序顺序保留，因此最小距离顶点将始终在开始处，我们可以从那里提取它，这是 ExtractMin 操作 如果任何顶点的距离变小，则更新相应的其他相邻顶点，然后删除其先前的条目并插入新的更新条目，即 DecreaseKey 操作。](http://geeksquiz.com/set-associative-containers-the-c-standard-template-library-stl/)
+以上操作可以通过 C++ STL 的 [set 数据结构轻松实现，set 将其所有键按排序顺序保留，因此最小距离顶点将始终在开始处，我们可以从那里提取它，这是 ExtractMin 操作 如果任何顶点的距离变小，则更新相应的其他相邻顶点，然后删除其先前的条目并插入新的更新条目，即 DecreaseKey 操作。](http://geeksquiz.com/set-associative-containers-the-c-standard-template-library-stl/)
 
 下面是基于集合数据结构的算法。
 
@@ -70,7 +70,7 @@ Output :
    paths. 
 ```
 
-以下是上述想法的 C ++实现。
+以下是上述想法的 C++实现。
 
 ```
 
@@ -223,7 +223,7 @@ Vertex   Distance from Source
 
 ```
 
-时间复杂度：C ++中的设置通常使用自平衡二进制搜索树来实现。 因此，设置操作（如插入，删除）的时间复杂度为对数，而上述解决方案的时间复杂度为 O（ELogV））。
+时间复杂度：C++中的设置通常使用自平衡二进制搜索树来实现。 因此，设置操作（如插入，删除）的时间复杂度为对数，而上述解决方案的时间复杂度为 O（ELogV））。
 
  **[Dijkstra 使用 STL 的 priority_queue 的最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/)** 
 

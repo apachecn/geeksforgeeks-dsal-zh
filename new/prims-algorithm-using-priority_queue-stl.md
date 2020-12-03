@@ -28,7 +28,7 @@ Note :  There are two possible MSTs, the other
 
 我们在下面讨论了 Prim 的 MST 实现。
 
-*   [Prim 的邻接矩阵表示算法（在 C / C ++中，时间复杂度为 O（v <sup>2</sup> ）](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/)
+*   [Prim 的邻接矩阵表示算法（在 C / C++中，时间复杂度为 O（v <sup>2</sup> ）](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/)
 
 *   [Prim 的邻接表表示算法（在 C 中，时间复杂度为 O（ELogV））](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-mst-for-adjacency-list-representation/)
 
@@ -84,7 +84,7 @@ Note :  There are two possible MSTs, the other
 
 ```
 
-以下是上述想法的 C ++实现。
+以下是上述想法的 C++实现。
 
 ```
 

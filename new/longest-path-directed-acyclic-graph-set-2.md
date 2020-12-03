@@ -21,7 +21,7 @@ for every adjacent vertex v of every vertex u in topological order
 
 一旦找到了源顶点的所有最短路径，最长路径就是对最短路径的求反。
 
-以下是其 C ++实现–
+以下是其 C++实现–
 
 ```
 

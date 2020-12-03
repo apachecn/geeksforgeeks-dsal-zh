@@ -24,7 +24,7 @@ Johnson 算法的思想是为每个顶点分配权重。 令分配给顶点 u �
 
 **3）**重新加权原始图形的边。 对于每个边（u，v），将新权重分配为“原始权重+ h [u] – h [v]”。
 
-**4）**删除添加的顶点，并为每个顶点运行 [Dijkstra 的算法](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)。
+**4）**删除添加的顶点，并为每个顶点运行 [Dijkstra 算法](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)。
 
 **变换如何确保非负的权重边？**
 

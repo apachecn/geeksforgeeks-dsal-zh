@@ -60,7 +60,7 @@ low [u] = min（low [u]，disc [v]）;
 
 下面是实现 Tarjan 算法以打印所有 SCC 的方法。
 
-## C / C ++
+## C / C++
 
 ```
 

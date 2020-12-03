@@ -24,7 +24,7 @@
 
 以下是上述算法的实现。 大部分代码取自[此处](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)。
 
-## C / C ++
+## C / C++
 
 ```
 

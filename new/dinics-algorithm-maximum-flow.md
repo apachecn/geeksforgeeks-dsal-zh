@@ -95,7 +95,7 @@
 
 <center>**实现**：</center>
 
-下面是 Dinic 算法的 c ++实现：
+下面是 Dinic 算法的 C++实现：
 
 ```
 

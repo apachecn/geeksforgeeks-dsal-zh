@@ -4,7 +4,7 @@
 
 给定一个图和图中的一个源顶点，找到从源到给定图中所有顶点的最短路径。
 
-Dijkstra 的算法与 [Prim 的最小生成树](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)算法非常相似。 与 Prim 的 MST 一样，我们以给定的源为根生成 *SPT（最短路径树）*。 我们维护两组，一组包含最短路径树中包含的顶点，另一组包含尚未包含在最短路径树中的顶点。 在算法的每个步骤中，我们都找到一个顶点，该顶点在另一个集合中（尚未包括在内），并且与源的距离最小。
+Dijkstra 算法与 [Prim 的最小生成树](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)算法非常相似。 与 Prim 的 MST 一样，我们以给定的源为根生成 *SPT（最短路径树）*。 我们维护两组，一组包含最短路径树中包含的顶点，另一组包含尚未包含在最短路径树中的顶点。 在算法的每个步骤中，我们都找到一个顶点，该顶点在另一个集合中（尚未包括在内），并且与源的距离最小。
 
 以下是 Dijkstra 算法使用的详细步骤，以查找从单个源顶点到给定图中所有其他顶点的最短路径。
 
@@ -485,7 +485,7 @@ Vertex   Distance from Source
 
 **4）**实现的时间复杂度为 O（V ^ 2）。 如果使用邻接表表示输入[图，则可以在二进制堆的帮助下将其减小为 O（E log V）。 有关更多详细信息，请参见](https://www.geeksforgeeks.org/graph-and-its-representations/) [Dijkstra 的邻接表表示算法](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)。
 
-**5）** Dijkstra 的算法不适用于负周期为负的图形，它可能会为负边界的图形提供正确的结果。 对于负边沿和周期为负的图形，可以使用 [Bellman-Ford 算法](http://en.wikipedia.org/wiki/Bellman-Ford_algorithm)，我们很快将在单独的文章中进行讨论。
+**5）** Dijkstra 算法不适用于负周期为负的图形，它可能会为负边界的图形提供正确的结果。 对于负边沿和周期为负的图形，可以使用 [Bellman-Ford 算法](http://en.wikipedia.org/wiki/Bellman-Ford_algorithm)，我们很快将在单独的文章中进行讨论。
 
 [Dijkstra 的邻接表表示算法](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)
 

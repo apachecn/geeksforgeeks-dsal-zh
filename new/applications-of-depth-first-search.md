@@ -14,13 +14,13 @@
 
 **3）路径查找**
 
-我们可以专门研究 DFS 算法，以找到两个给定顶点 u 和 z 之间的路径。
+我们可以专门研究 DFS 算法，以找到两个给定顶点`u`和`z`之间的路径。
 
-i）以 u 为起始顶点调用 DFS（G，u）。
+i）以`u`为起始顶点调用`DFS(G, u)`。
 
-ii）使用堆栈 S 跟踪起始顶点和当前顶点之间的路径。
+ii）使用堆栈`S`跟踪起始顶点和当前顶点之间的路径。
 
-iii）一旦遇到目标顶点 z，就将路径作为堆栈的
+iii）一旦遇到目标顶点`z`，就将路径作为堆栈的
 
 内容返回
 
@@ -28,7 +28,7 @@ iii）一旦遇到目标顶点 z，就将路径作为堆栈的
 
 **4）[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)**
 
-拓扑排序主要用于根据作业之间的给定依赖性来调度作业。 在计算机科学中，这种类型的应用出现在指令调度，重新计算电子表格中的公式值时公式单元格评估的顺序，逻辑综合，确定要在 makefile 中执行的编译任务的顺序，数据序列化以及解析链接器中的符号依存关系[2]。 ]。
+拓扑排序主要用于根据作业之间的给定依赖性来调度作业。 在计算机科学中，这种类型的应用出现在指令调度，重新计算电子表格中的公式值时公式单元格评估的顺序，逻辑综合，确定要在 makefile 中执行的编译任务的顺序，数据序列化以及解析链接器中的符号依存关系[2]。
 
 **5）测试图是否为[二分图](http://en.wikipedia.org/wiki/Bipartite_graph)**
 
@@ -42,7 +42,7 @@ iii）一旦遇到目标顶点 z，就将路径作为堆栈的
 
 [http://www8.cs.umu.se/kurser/TDBAfl/VT06/algorithms/LEC/LECTUR16/NODE16.HTM](http://www8.cs.umu.se/kurser/TDBAfl/VT06/algorithms/LEC/LECTUR16/NODE16.HTM)
 
-[http：// en。 wikipedia.org/wiki/深度优先搜索](http://en.wikipedia.org/wiki/Depth-first_search)
+[http://en.wikipedia.org/wiki/Depth-first_search](http://en.wikipedia.org/wiki/Depth-first_search)
 
 [http://www.personal.kent.edu/~rmuhamma/Algorithms/MyAlgorithms/GraphAlgor/depthSearch.htm](http://www.personal.kent.edu/~rmuhamma/Algorithms/MyAlgorithms/GraphAlgor/depthSearch.htm)
 

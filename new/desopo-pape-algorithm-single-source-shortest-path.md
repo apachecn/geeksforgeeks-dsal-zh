@@ -4,7 +4,7 @@
 
 给定一个图和**加权无向图**中的源顶点 **src** ，找到从 src 到给定图中所有顶点的最短路径。 该图可能包含负权重边。
 
-针对此问题，我们已经讨论了 [Dijkstra 的算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)和 [Bellman-Ford 算法](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)。 但是 D’Esopo-Pape 算法在大多数情况下的效果都很好。 但是，在某些情况下会花费指数时间。
+针对此问题，我们已经讨论了 [Dijkstra 算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)和 [Bellman-Ford 算法](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)。 但是 D’Esopo-Pape 算法在大多数情况下的效果都很好。 但是，在某些情况下会花费指数时间。
 
 ## [推荐：请先在“ ***<u>实践</u>*** ”上解决它，然后再继续进行解决。](https://practice.geeksforgeeks.org/problems/negative-weight-cycle/0)
 

@@ -22,7 +22,7 @@ Output : zyxwvuptrqonmsbdlkjihgfeca
 
 ```
 
-**天真的方法**：蛮力方法是检查所有可能的顺序，并检查其中是否满足给定的单词顺序。 考虑到英语中有 **26 个**字母，因此有 **26 个！** 可以作为有效订单的排列数。 考虑到我们检查每一对来验证订单，此方法的复杂度达到 **O（26！* N ^ 2）**，远远超出了实际首选的时间复杂度。
+**朴素的方法**：蛮力方法是检查所有可能的顺序，并检查其中是否满足给定的单词顺序。 考虑到英语中有 **26 个**字母，因此有 **26 个！** 可以作为有效订单的排列数。 考虑到我们检查每一对来验证订单，此方法的复杂度达到 **O（26！* N ^ 2）**，远远超出了实际首选的时间复杂度。
 
 **使用拓扑排序**：此解决方案需要[图及其以邻接表](https://www.geeksforgeeks.org/graph-and-its-representations/)， [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 和[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)表示的知识。
 

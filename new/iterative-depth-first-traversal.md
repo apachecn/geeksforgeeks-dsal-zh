@@ -44,7 +44,7 @@
 
 *   **Implementation of Iterative DFS:** *This is similar to [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/), the only difference is queue is replaced by stack.*
 
-    ## C ++
+    ## C++
 
     ```
 
