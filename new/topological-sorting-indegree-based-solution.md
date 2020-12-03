@@ -63,7 +63,7 @@
         indegree[dest]++
     ```
 
-    时间复杂度：O（V + E）
+    时间复杂度：`O(V + E)`
 
 2.  Traverse the list for every node and then increment the in-degree of all the nodes connected to it by 1.
 
@@ -74,9 +74,9 @@
                 indegree[dest]++;
     ```
 
-    时间复杂度：外层 for 循环将执行 V 次，内层 for 循环将执行 E 次，因此总时间复杂度为 O（V + E）。
+    时间复杂度：外层 for 循环将执行 V 次，内层 for 循环将执行 E 次，因此总时间复杂度为`O(V + E)`。
 
-    该算法的总时间复杂度为 O（V + E）
+    该算法的总时间复杂度为`O(V + E)`
 
 下面是上述算法的 C++实现。 该实现使用上面讨论的方法 2 查找度数。
 

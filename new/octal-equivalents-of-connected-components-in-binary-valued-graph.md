@@ -17,7 +17,7 @@
 > 链= 0 0 0 八进制等效值= 0
 > 链= 1 1 八进制等效值= 3
 > **说明**：
-> 在第一个连接的组件的情况下，二进制链为[0，1]
+> 在第一个连通组件的情况下，二进制链为[0，1]
 > 因此，二进制字符串=“ 01”且二进制数= 01
 > 因此，八进制等效项为 1
 > 
@@ -31,7 +31,7 @@
 > 链= 1 1 0 八进制等效值= 6
 > 链= 1 0 八进制等效值= 2
 
-**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连接组件，如本文的[中所述。 对于每个连接的组件，将显示二进制字符串，并根据二进制值（如](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[本文](https://www.geeksforgeeks.org/convert-binary-number-octal/)中所述）计算等效的八进制值并进行打印。
+**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连接组件，如本文的[中所述。 对于每个连通组件，将显示二进制字符串，并根据二进制值（如](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[本文](https://www.geeksforgeeks.org/convert-binary-number-octal/)中所述）计算等效的八进制值并进行打印。
 
 下面是上述方法的实现：
 

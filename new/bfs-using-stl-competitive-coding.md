@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/bfs-using-stl-competitive-coding/](https://www.geeksforgeeks.org/bfs-using-stl-competitive-coding/)
 
-使用 STL 中的[队列](https://www.geeksforgeeks.org/queue-cpp-stl/)和[向量](https://www.geeksforgeeks.org/vector-in-cpp-stl/)的 BFS 基于 STL 的简单实现。 邻接表是使用 vector 的向量表示的。
+使用 STL 中的[队列](https://www.geeksforgeeks.org/queue-cpp-stl/)和[向量](https://www.geeksforgeeks.org/vector-in-cpp-stl/)的 BFS 基于 STL 的简单实现。 邻接表是使用向量表示的。
 
 ```
 In BFS, we start with a node.

@@ -1,4 +1,4 @@
-# 牢固连接的组件
+# 牢固连通组件
 
 > 原文： [https://www.geeksforgeeks.org/strongly-connected-components/](https://www.geeksforgeeks.org/strongly-connected-components/)
 
@@ -6,7 +6,7 @@
 
 ![SCC](img/140d82107bd6614a3e437643e94cbce4.png)
 
-我们可以使用 [Kosaraju 的算法](http://en.wikipedia.org/wiki/Kosaraju%27s_algorithm)在 O（V + E）时间内找到所有强连通的组件。 以下是详细的 Kosaraju 的算法。
+我们可以使用 [Kosaraju 的算法](http://en.wikipedia.org/wiki/Kosaraju%27s_algorithm)在`O(V + E)`时间内找到所有强连通的组件。 以下是详细的 Kosaraju 的算法。
 
 1.  创建一个空堆栈'S'，并进行图的 DFS 遍历。 在 DFS 遍历中，在为顶点的相邻顶点调用递归 DFS 之后，将顶点推入堆栈。 在上图中，如果从顶点 0 开始 DFS，则堆栈中的顶点分别为 1，2，4，3，0。
 

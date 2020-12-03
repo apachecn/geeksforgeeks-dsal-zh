@@ -16,7 +16,7 @@
 
 我们也可以**从每个顶点开始 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) V 倍**。 如果有任何 DFS 不能访问所有顶点，则图没有牢固连接。 该算法花费 O（V *（V + E））时间，这与密集图的传递闭合相同。
 
-更好的主意可以是 **[强连接组件（SCC）](https://www.geeksforgeeks.org/strongly-connected-components/)算法**。 我们可以找到 O（V + E）时间中的所有 SCC。 如果 SCC 的数量为 1，则表示图形连接牢固。 因为找到所有 SCC，所以 SCC 的算法会做额外的工作。
+更好的主意可以是 **[强连接组件（SCC）](https://www.geeksforgeeks.org/strongly-connected-components/)算法**。 我们可以找到`O(V + E)`时间中的所有 SCC。 如果 SCC 的数量为 1，则表示图形连接牢固。 因为找到所有 SCC，所以 SCC 的算法会做额外的工作。
 
 以下是 **Kosaraju 基于 DFS 的简单算法，该算法执行图形的两个 DFS 遍历**：
 
@@ -393,7 +393,7 @@ Yes
 No
 ```
 
-**时间复杂度**：上述实现的时间复杂度与[深度优先搜索](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)相同，如果该图是使用邻接列表表示形式表示的，则为 O（V + E）。
+**时间复杂度**：上述实现的时间复杂度与[深度优先搜索](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)相同，如果该图是使用邻接列表表示形式表示的，则为`O(V + E)`。
 
 **我们可以进一步改善吗？**
 

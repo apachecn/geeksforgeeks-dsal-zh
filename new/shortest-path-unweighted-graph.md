@@ -23,11 +23,11 @@ Output: Shortest path length is:5
 
 一种解决方案是使用 [Bellman-Ford](https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/) 解决 O（VE）时间。 如果没有负的重量循环，那么我们可以使用 [Dijkstra 算法](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)在 O（E + VLogV）时间内求解。
 
-由于该图是未加权的，因此我们可以在 O（V + E）时间内解决此问题。 这个想法是使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)的修改版本，在此过程中，我们在进行广度优先搜索的同时会不断存储给定顶点的前身。 即使图形中存在负权重循环，该算法也将起作用。
+由于该图是未加权的，因此我们可以在`O(V + E)`时间内解决此问题。 这个想法是使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)的修改版本，在此过程中，我们在进行广度优先搜索的同时会不断存储给定顶点的前身。 即使图形中存在负权重循环，该算法也将起作用。
 
 我们首先初始化一个数组 dist [0，1，…。，v-1]，以便 dist [i]存储顶点 i 与源顶点的距离以及数组 pred [0，1，…..，v -1]，这样 pred [i]代表从源开始的广度优先搜索中顶点 i 的直接前任。
 
-现在我们获得了从数组 d 到`O(1)`的时间，从源到任何其他顶点的路径长度，对于打印从源到任何顶点的路径，我们可以使用数组 p，这将花费 O（V） 最坏情况下的时间为 V，因为 V 是数组 P 的大小。因此，算法的大部分时间都花在了从给定源进行广度优先搜索的过程中，我们知道这需要 O（V + E）时间。 因此，我们算法的时间复杂度为 O（V + E）。
+现在我们获得了从数组 d 到`O(1)`的时间，从源到任何其他顶点的路径长度，对于打印从源到任何顶点的路径，我们可以使用数组 p，这将花费 O（V） 最坏情况下的时间为 V，因为 V 是数组 P 的大小。因此，算法的大部分时间都花在了从给定源进行广度优先搜索的过程中，我们知道这需要`O(V + E)`时间。 因此，我们算法的时间复杂度为`O(V + E)`。
 
 以下面的未加权图为例：
 
@@ -496,7 +496,7 @@ Path is::
 
 ```
 
-时间复杂度：O（V + E）
+时间复杂度：`O(V + E)`
 
 辅助空间：O（V）
 

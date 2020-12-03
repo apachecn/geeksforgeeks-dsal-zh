@@ -1,10 +1,10 @@
-# 检查树是否可以拆分为 K 个相等连接的组件
+# 检查树是否可以拆分为 K 个相等连通组件
 
 > 原文： [https://www.geeksforgeeks.org/check-if-a-tree-can-be-split-into-k-equal-connected-components/](https://www.geeksforgeeks.org/check-if-a-tree-can-be-split-into-k-equal-connected-components/)
 
 给定一棵树的[邻接表](https://www.geeksforgeeks.org/add-and-remove-vertex-in-adjacency-list-representation-of-graph/)表示和一个整数`K`，任务是查找给定的树是否可以分为`K`等于 [是否使用组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)。
 
-**注意**：如果两个连接的组件包含相等数量的节点，则称它们相等。
+**注意**：如果两个连通组件包含相等数量的节点，则称它们相等。
 
 **示例**：
 
@@ -21,7 +21,7 @@
 
 **方法**：
 
-的想法是在`N`个节点的给定树上使用[深度优先搜索（DFS）](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)遍历，以查找给定树是否可以 分为`K`等于[连接的组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)。 以下是步骤：
+的想法是在`N`个节点的给定树上使用[深度优先搜索（DFS）](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)遍历，以查找给定树是否可以 分为`K`等于[连通组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)。 以下是步骤：
 
 1.  从树的根开始 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)。
 
@@ -29,7 +29,7 @@
 
 3.  如果节点数等于**（N / K）**，则我们得到了[连接组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)中的一个。
 
-4.  如果（ **N / K** ）个节点的[个连接组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)的集合总数等于`K`。 然后，可以将给定的图分解为`K`等于[连接的组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)。
+4.  如果（ **N / K** ）个节点的[个连接组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)的集合总数等于`K`。 然后，可以将给定的图分解为`K`等于[连通组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)。
 
 下面是上述方法的实现：
 
@@ -443,7 +443,7 @@ YES
 
 ```
 
-**时间复杂度**：O（V + E），其中 V 是顶点数，E 是边数
+**时间复杂度**：`O(V + E)`，其中 V 是顶点数，E 是边数
 
 
 

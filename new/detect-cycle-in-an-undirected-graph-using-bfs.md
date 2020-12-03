@@ -6,7 +6,7 @@
 
 ![cycleGraph](img/5334e5d8a548c03f16f3f27689404a7f.png)
 
-我们已经讨论了有向图的[循环检测。 我们还讨论了](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)[联合查找算法，用于无向图中的循环检测。](https://www.geeksforgeeks.org/union-find/) 。 联合查找算法的时间复杂度为 O（ELogV）。 像有向图一样，我们可以使用 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 来检测 O（V + E）时间中无向图的周期。 我们已经讨论了用于无向图中用于循环检测的[基于 DFS 的解决方案。](https://www.geeksforgeeks.org/detect-cycle-undirected-graph/)
+我们已经讨论了有向图的[循环检测。 我们还讨论了](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)[联合查找算法，用于无向图中的循环检测。](https://www.geeksforgeeks.org/union-find/) 。 联合查找算法的时间复杂度为 O（ELogV）。 像有向图一样，我们可以使用 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 来检测`O(V + E)`时间中无向图的周期。 我们已经讨论了用于无向图中用于循环检测的[基于 DFS 的解决方案。](https://www.geeksforgeeks.org/detect-cycle-undirected-graph/)
 
 本文讨论了基于 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 的解决方案。 我们对给定的图形进行 BFS 遍历。 对于每个访问的顶点“ v”，如果存在一个相邻的“ u”，使得 u 已被访问并且 u 不是 v 的父代，则图中存在一个循环。 如果找不到任何顶点的相邻像素，则表示没有循环。 这种方法的假设是，任意两个顶点之间没有平行边。
 

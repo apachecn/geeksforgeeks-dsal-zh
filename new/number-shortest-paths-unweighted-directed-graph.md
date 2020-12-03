@@ -445,7 +445,7 @@ Numbers of shortest Paths are: 1 1 1 2 2 2 4
 
 ```
 
-**时间复杂度：O（V + E）**
+**时间复杂度：`O(V + E)`**
 
 
 

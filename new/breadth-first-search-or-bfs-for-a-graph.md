@@ -408,7 +408,7 @@ Following is Breadth First Traversal (starting from vertex 2)
 
 请注意，以上代码仅遍历从给定源顶点可到达的顶点。 从给定的顶点可能无法到达所有顶点（例如，“断开连接的图”）。 要打印所有顶点，我们可以修改 BFS 函数以从所有节点开始一遍遍遍（例如 [DFS 修改版本](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)）。
 
-时间复杂度：O（V + E），其中 V 是图形中顶点的数量，E 是图形中边的数量。
+时间复杂度：`O(V + E)`，其中 V 是图形中顶点的数量，E 是图形中边的数量。
 
 **您可能还会喜欢以下内容**：
 

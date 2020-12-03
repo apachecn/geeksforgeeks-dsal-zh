@@ -8,11 +8,11 @@
 
 ***定义***
 
-节点{\ displaystyle v} v 的中间性由以下表达式给出：
+节点`v`的中间性由以下表达式给出：
 
 ![ g(v)=\sum _{{s\neq v\neq t}}{\frac  {\sigma _{{st}}(v)}{\sigma _{{st}}}}](img/ed3a525b9694eb7878ae5ac3af43de8a.png "Rendered by QuickLaTeX.com")
 
-其中![ \sigma_{st}](img/e4aece61033f804c7049e530e4bcecde.png "Rendered by QuickLaTeX.com")是从节点![s](img/27afaf2b0e3eaea3d7e963f3f9a730e2.png "Rendered by QuickLaTeX.com")到节点![ t](img/c9c2148481ddde233dd09ea71ac06c48.png "Rendered by QuickLaTeX.com")的最短路径总数，![ \sigma_{st}(v)](img/780b1a229426e9b739788b26d42b1168.png "Rendered by QuickLaTeX.com")是通过![ v](img/0cee31e9a8eb7995804b7f41d3845812.png "Rendered by QuickLaTeX.com")的那些路径的数量。
+其中![ \sigma_{st}](img/e4aece61033f804c7049e530e4bcecde.png "Rendered by QuickLaTeX.com")是从节点`s`到节点`t`的最短路径总数，![ \sigma_{st}(v)](img/780b1a229426e9b739788b26d42b1168.png "Rendered by QuickLaTeX.com")是通过`v`的那些路径的数量。
 
 注意，节点的中间性中心与总索引所暗示的节点对数成比例。 因此，可以通过除以不包括![ v](img/0cee31e9a8eb7995804b7f41d3845812.png "Rendered by QuickLaTeX.com")的节点对的数量来重新缩放计算，以使![g\in [0,1]](img/3b5cb87b61e4d3d0e18e8dfd60f385c0.png "Rendered by QuickLaTeX.com")成为可能。 对于有向图，通过![ (N-1)(N-2)](img/8c4dd24fd05b798d088fadef41231cd1.png "Rendered by QuickLaTeX.com")进行划分；对于无向图，由![ (N-1)(N-2)/2](img/183eb681d707128041e16ee48d8c836d.png "Rendered by QuickLaTeX.com")进行划分，其中![ N](img/d73551c7c27f3005e675d3aaad33ae32.png "Rendered by QuickLaTeX.com")是巨型组件中节点的数量。 请注意，这会缩放为可能的最高值，其中每个最短路径都跨越一个节点。 通常不是这种情况，可以执行标准化而不会损失精度
 
@@ -130,7 +130,7 @@ def betweenness_centrality(G, k=None, normalized=True, weight=None,
 
 ```
 
-上面的函数是使用 networkx 库调用的，一旦安装了该库，您就可以最终使用它，并且以下代码必须用 python 编写，以实现节点之间的中间性。
+上面的函数是使用 NetworkX 库调用的，一旦安装了该库，您就可以最终使用它，并且以下代码必须用 Python 编写，以实现节点之间的中间性。
 
 ```
 

@@ -244,11 +244,11 @@ E =边数
 
 V =节点数
 
-BFS 的 O（V + E）
+BFS 的`O(V + E)`
 
 在最坏的情况下，将为给定中存在的每个节点显示所有 V 节点，即图中仅一个组件，因此需要 O（n * V）时间。
 
-最坏情况下的时间复杂度：O（V + E）+ O（n * V）
+最坏情况下的时间复杂度：`O(V + E)`+ O（n * V）
 
 本文由 **Chirag Agarwal** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

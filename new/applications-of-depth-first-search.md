@@ -30,9 +30,9 @@
 
 5.  **测试图是否为[二分图](http://en.wikipedia.org/wiki/Bipartite_graph)**
 
-当我们第一次发现新顶点时，可以对 BFS 或 DFS 进行扩充，对它的父对面着色，并为彼此的边 ，检查它是否未链接相同颜色的两个顶点。 任何连接的组件中的第一个顶点可以是红色或黑色！ 有关详细信息，请参见此的[。](http://www8.cs.umu.se/kurser/TDBAfl/VT06/algorithms/LEC/LECTUR16/NODE16.HTM)
+当我们第一次发现新顶点时，可以对 BFS 或 DFS 进行扩充，对它的父对面着色，并为彼此的边 ，检查它是否未链接相同颜色的两个顶点。 任何连通组件中的第一个顶点可以是红色或黑色！ 有关详细信息，请参见此的[。](http://www8.cs.umu.se/kurser/TDBAfl/VT06/algorithms/LEC/LECTUR16/NODE16.HTM)
 
-6.  **查找图的强连通组件**如果存在从图的每个顶点到每个其他顶点的路径，则有向图称为强连接。 （请参阅[此](https://www.geeksforgeeks.org/strongly-connected-components/)，这是基于 DFS 的算法，用于查找强连接的组件）
+6.  **查找图的强连通组件**如果存在从图的每个顶点到每个其他顶点的路径，则有向图称为强连接。 （请参阅[此](https://www.geeksforgeeks.org/strongly-connected-components/)，这是基于 DFS 的算法，用于查找强连通组件）
 
 7.  **仅使用一种解决方案**解决难题，例如迷宫。 （通过仅在访问集中的当前路径上包括节点，DFS 可以适用于找到迷宫的所有解决方案。）
 

@@ -26,7 +26,7 @@
 
     If any problem is in NP, then, given a *‘certificate’*, which is a solution to the problem and an instance of the problem (a graph G and a positive integer K, in this case), we will be able to verify (check whether the solution given is correct or not) the certificate in polynomial time.
 
-    证书是顶点的**子集 V'**，其中包括属于集团的顶点。 我们可以通过检查属于该解决方案的每对顶点是否相邻来验证此解决方案，只需简单地验证它们彼此共享一条边即可。 可以在多项式时间内，即 **O（V + E）**，使用以下策略来完成图形 **G（V，E）**：
+    证书是顶点的**子集 V'**，其中包括属于集团的顶点。 我们可以通过检查属于该解决方案的每对顶点是否相邻来验证此解决方案，只需简单地验证它们彼此共享一条边即可。 可以在多项式时间内，即 **`O(V + E)`**，使用以下策略来完成图形 **G（V，E）**：
 
     ```
     flag=true

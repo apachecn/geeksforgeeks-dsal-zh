@@ -27,7 +27,7 @@
 > 
 > ![Way6](img/6fe32a49949ef2d94c022ffc6cb43c4d.png)
 
-**方法**：的想法是检查[连接的组件](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)是否形成循环。
+**方法**：的想法是检查[连通组件](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)是否形成循环。
 
 *   如果组件是路径，那么我们将边定向，就不会形成循环。
 
@@ -483,7 +483,7 @@ if __name__ == "__main__":
 
 ```
 
-**时间复杂度**：O（V + E）
+**时间复杂度**：`O(V + E)`
 
 
 

@@ -1,12 +1,10 @@
-# 根据 CLRS 的算法，使用向量&的
-
-# BFS 排队
+# 根据 CLRS 的算法，使用向量队列的 BFS
 
 > 原文： [https://www.geeksforgeeks.org/bfs-using-vectors-queue-per-algorithm-clrs/](https://www.geeksforgeeks.org/bfs-using-vectors-queue-per-algorithm-clrs/)
 
 [使用](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) [CLRS 书](https://www.amazon.in/Introduction-Algorithms-Eastern-Economy-Thomas/dp/8120340078?tag=googinhydr18418-21)中给出的算法对图进行广度优先搜索遍历。
 
-BFS 是遍历图形的方法之一。 之所以这样命名，是因为它在边界的宽度上均匀地扩展了已发现和未发现顶点之间的边界。 这意味着该算法首先在距离 u 的 k + 1 处发现顶点之前，先找到距离 k 的所有与“ u”相连的顶点。 CLRS 中给出的算法使用“颜色”的概念来检查顶点是完全还是部分或未被发现。 它还跟踪顶点 u 与源 s 的距离。
+BFS 是遍历图形的方法之一。 之所以这样命名，是因为它在边界的宽度上均匀地扩展了已发现和未发现顶点之间的边界。 这意味着该算法首先在距离`u`的`k + 1`处发现顶点之前，先找到距离`k`的所有与`u`相连的顶点。 CLRS 中给出的算法使用“颜色”的概念来检查顶点是完全还是部分或未被发现。 它还跟踪顶点`u`与源`s`的距离。
 
 ```
 BFS(G,s)
@@ -31,7 +29,7 @@ BFS(G,s)
 
 ```
 
-它产生一个以根 s 包含所有可到达顶点的“广度优先的树”。 让我们看一个简单的有向图，看看 BFS 如何遍历它。
+它产生一个以`s`为根并包含所有可到达顶点的“广度优先的树”。 让我们看一个简单的有向图，看看 BFS 如何遍历它。
 
 ![](img/6125eea6987dde7853f7b179a7e67d62.png)
 

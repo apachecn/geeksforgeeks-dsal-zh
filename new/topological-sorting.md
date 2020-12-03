@@ -414,7 +414,7 @@ Following is a Topological Sort of the given graph
 
 **复杂度分析**：
 
-*   **时间复杂度**：O（V + E）。
+*   **时间复杂度**：`O(V + E)`。
 
     上面的算法只是带有额外堆栈的 DFS。 因此，时间复杂度与 DFS 相同。
 
@@ -430,7 +430,7 @@ Following is a Topological Sort of the given graph
 
 **相关文章**：
 
-[Kahn 的拓扑排序算法](https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/)：另一种 O（V + E）算法。
+[Kahn 的拓扑排序算法](https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/)：另一种`O(V + E)`算法。
 
 [有向无环图](https://www.geeksforgeeks.org/all-topological-sorts-of-a-directed-acyclic-graph/)的所有拓扑排序
 

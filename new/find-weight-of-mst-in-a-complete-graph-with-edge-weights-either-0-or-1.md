@@ -26,7 +26,7 @@
 
 1.  将权重为 1 的所有边的给定[图](https://www.geeksforgeeks.org/graph-and-its-representations/)存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
 
-2.  使用[设置](http://www.geeksforgeeks.org/set-in-cpp-stl/)来存储不包含在任何 **0 权重** [连接的组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)中的顶点。
+2.  使用[设置](http://www.geeksforgeeks.org/set-in-cpp-stl/)来存储不包含在任何 **0 权重** [连通组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)中的顶点。
 
 3.  对于当前存储在[集](http://www.geeksforgeeks.org/set-in-cpp-stl/)中的每个顶点，执行 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)并将组件数增加 1，并从 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)中删除所有访问的顶点 [设置](http://www.geeksforgeeks.org/set-in-cpp-stl/)。
 

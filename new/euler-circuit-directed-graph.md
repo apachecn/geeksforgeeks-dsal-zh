@@ -18,7 +18,7 @@
 
 2.  In 度等于每个顶点的 out 度。
 
-我们可以使用 [Kosaraju 基于 DFS 的简单算法](https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/)来检测单个连接的组件。
+我们可以使用 [Kosaraju 基于 DFS 的简单算法](https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/)来检测单个连通组件。
 
 要比较度和度，我们需要存储每个顶点的度和度。 可以通过邻接表的大小来获得出局程度。 可以通过创建大小等于顶点数的数组来存储度数。
 
@@ -600,7 +600,7 @@ Given directed graph is eulerian
 
 ```
 
-上述实现的时间复杂度为 O（V + E），因为 [Kosaraju 的算法](https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/)需要 O（V + E）的时间。 运行 [Kosaraju 的算法](https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/)后，我们遍历所有顶点，并比较度数和度数，这需要 O（V）时间。
+上述实现的时间复杂度为`O(V + E)`，因为 [Kosaraju 的算法](https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/)需要`O(V + E)`的时间。 运行 [Kosaraju 的算法](https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/)后，我们遍历所有顶点，并比较度数和度数，这需要 O（V）时间。
 
 请参阅以下内容作为此应用程序。
 

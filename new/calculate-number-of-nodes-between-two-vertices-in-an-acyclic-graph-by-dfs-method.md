@@ -422,7 +422,7 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：O（V + E）*
+***时间复杂度**：`O(V + E)`*
 
 ***辅助空间**：O（V）*
 

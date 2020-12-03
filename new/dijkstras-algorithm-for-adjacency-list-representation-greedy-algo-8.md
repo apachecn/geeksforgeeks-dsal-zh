@@ -10,7 +10,7 @@
 
 我们讨论了 [Dijkstra 算法及其用于邻接矩阵表示的实现 图](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)。 矩阵表示的时间复杂度为 O（V ^ 2）。 在这篇文章中，讨论了用于邻接表表示的 O（ELogV）算法。
 
-如前一篇文章所述，在 Dijkstra 算法中，维护了两组，一组包含 SPT（最短路径树）中已包含的顶点列表，另一组包含尚未包含的顶点。 使用邻接表表示，可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 在 O（V + E）时间内遍历图的所有顶点。 这个想法是使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 遍历图形的所有顶点，并使用最小堆存储尚未包含在 SPT 中的顶点（或尚未确定最短距离的顶点）。 Min Heap 用作优先级队列，以从尚未包含的顶点集中获取最小距离顶点。 对于 Min Heap，诸如 extract-min 和 reduce-key 值之类的操作的时间复杂度为 O（LogV）。
+如前一篇文章所述，在 Dijkstra 算法中，维护了两组，一组包含 SPT（最短路径树）中已包含的顶点列表，另一组包含尚未包含的顶点。 使用邻接表表示，可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 在`O(V + E)`时间内遍历图的所有顶点。 这个想法是使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 遍历图形的所有顶点，并使用最小堆存储尚未包含在 SPT 中的顶点（或尚未确定最短距离的顶点）。 Min Heap 用作优先级队列，以从尚未包含的顶点集中获取最小距离顶点。 对于 Min Heap，诸如 extract-min 和 reduce-key 值之类的操作的时间复杂度为 O（LogV）。
 
 以下是详细步骤。
 
@@ -691,7 +691,7 @@ Vertex   Distance from Source
 
 ```
 
-**时间复杂度**：上面的代码/算法的时间复杂度看起来为 O（V ^ 2），因为有两个嵌套的 while 循环。 如果仔细观察，可以发现内部循环中的语句执行了 O（V + E）次（类似于 BFS）。 内部循环具有 reduceKey（）操作，该操作需要 O（LogV）时间。 因此总体时间复杂度为 O（E + V）* O（LogV），即 O（（E + V）* LogV）= O（ELogV）。
+**时间复杂度**：上面的代码/算法的时间复杂度看起来为 O（V ^ 2），因为有两个嵌套的 while 循环。 如果仔细观察，可以发现内部循环中的语句执行了`O(V + E)`次（类似于 BFS）。 内部循环具有 reduceKey（）操作，该操作需要 O（LogV）时间。 因此总体时间复杂度为 O（E + V）* O（LogV），即 O（（E + V）* LogV）= O（ELogV）。
 
 请注意，以上代码使用二进制堆实现优先级队列。 使用斐波那契堆可以将时间复杂度降低到 O（E + VLogV）。 原因是，斐波那契堆需要`O(1)`时间来进行减键操作，而二进制堆需要 O（Logn）时间。
 

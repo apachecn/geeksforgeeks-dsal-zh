@@ -1,20 +1,20 @@
-# 无向图中的连接的组件
+# 无向图中的连通组件
 
 > 原文： [https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)
 
-给定一个无向图，一行一行地打印所有连接的组件。 例如，考虑下图。
+给定一个无向图，一行一行地打印所有连通组件。 例如，考虑下图。
 
 ![SCCUndirected](img/a79d2e5fa34c51c9a36a83b4578d9478.png)
 
 **我们强烈建议您最小化您的浏览器，然后自己尝试。**
 
-我们在以下文章中讨论了用于在有向图中找到强连接的组件的算法。
+我们在以下文章中讨论了用于在有向图中找到强连通组件的算法。
 
 [Kosaraju 的算法，用于牢固连接组件](https://www.geeksforgeeks.org/strongly-connected-components/)。
 
-[塔里安（Tarjan）查找强连接的组件的算法](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)
+[塔里安（Tarjan）查找强连通组件的算法](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)
 
-为无向图找到连接的组件是一件容易的事。 我们只需要从每个未访问的顶点开始执行 BFS 或 DFS，就可以获得所有紧密连接的组件。 以下是基于 DFS 的步骤。
+为无向图找到连通组件是一件容易的事。 我们只需要从每个未访问的顶点开始执行 BFS 或 DFS，就可以获得所有紧密连通组件。 以下是基于 DFS 的步骤。
 
 ```
 1) Initialize all vertices as not visited.
@@ -383,7 +383,7 @@ int main()
 
 ```
 
-上述解决方案的时间复杂度为 O（V + E），因为它对给定的图形执行简单的 DFS。
+上述解决方案的时间复杂度为`O(V + E)`，因为它对给定的图形执行简单的 DFS。
 
 如果发现任何不正确的内容，或者想共享有关上述主题的更多信息，请发表评论
 

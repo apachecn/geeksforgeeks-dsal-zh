@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/comparision-between-tarjans-and-kosarajus-algorithm/](https://www.geeksforgeeks.org/comparision-between-tarjans-and-kosarajus-algorithm/)
 
-[**<u>Tarjan 算法</u>**](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/) ****：Tarjan 算法是一种有效的图形算法，可用于查找 [**强连接的组件 通过使用线性时间复杂度中仅使用一个**](https://www.geeksforgeeks.org/strongly-connected-components/) **[DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)的有向图中的** （ **SCC** ）。
+[**<u>Tarjan 算法</u>**](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/) ****：Tarjan 算法是一种有效的图形算法，可用于查找 [**强连通组件 通过使用线性时间复杂度中仅使用一个**](https://www.geeksforgeeks.org/strongly-connected-components/) **[DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)的有向图中的** （ **SCC** ）。
 
 **工作**：
 
@@ -213,9 +213,9 @@ int main()
 
 *   [通过使用](https://www.geeksforgeeks.org/transpose-graph/)[邻接表](https://www.geeksforgeeks.org/graph-and-its-representations/)反转原始图。
 
-*   然后在反向图上执行另一个 DFS 遍历，将源顶点作为堆栈顶部的顶点。 当在反转图上运行的 DFS 完成时，所有被访问的节点将形成一个紧密连接的组件。
+*   然后在反向图上执行另一个 DFS 遍历，将源顶点作为堆栈顶部的顶点。 当在反转图上运行的 DFS 完成时，所有被访问的节点将形成一个紧密连通组件。
 
-*   如果剩余任何节点或不访问任何节点，则表示图中存在多个强连接的组件。
+*   如果剩余任何节点或不访问任何节点，则表示图中存在多个强连通组件。
 
 *   因此，从堆栈顶部弹出顶点，直到找到有效的未访问节点。 在所有当前未访问的节点中，这将具有最高的完成时间。
 
@@ -409,7 +409,7 @@ int main()
 
 **<u>时间复杂度</u>**：
 
-Tarjan 算法和 Kosaraju 算法的时间复杂度为 **O（V + E）**，其中`V`表示一组顶点，`E`表示图形的边集。 Tarjan 的算法的常数因子比 Kosaraju 的算法低得多。 在 Kosaraju 的算法中，图形的[遍历至少 2 次，因此常数因子可以是两倍。 在执行第二个 DFS 时，我们可以使用 Kosaraju 的算法打印正在进行的 **SCC** 。 在执行 Tarjan 算法时，找到 **SCC** 子树的头后，需要花费更多时间来打印 **SCC** 。](https://www.geeksforgeeks.org/algorithms-gq/graph-traversals-gq/)
+Tarjan 算法和 Kosaraju 算法的时间复杂度为 **`O(V + E)`**，其中`V`表示一组顶点，`E`表示图形的边集。 Tarjan 的算法的常数因子比 Kosaraju 的算法低得多。 在 Kosaraju 的算法中，图形的[遍历至少 2 次，因此常数因子可以是两倍。 在执行第二个 DFS 时，我们可以使用 Kosaraju 的算法打印正在进行的 **SCC** 。 在执行 Tarjan 算法时，找到 **SCC** 子树的头后，需要花费更多时间来打印 **SCC** 。](https://www.geeksforgeeks.org/algorithms-gq/graph-traversals-gq/)
 
 **<u>总结</u>**：
 

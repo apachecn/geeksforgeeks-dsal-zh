@@ -1,14 +1,14 @@
-# 双向连接的组件
+# 双向连通组件
 
 > 原文： [https://www.geeksforgeeks.org/biconnected-components/](https://www.geeksforgeeks.org/biconnected-components/)
 
-[双向连接的组件](https://en.wikipedia.org/wiki/Biconnected_component)是最大的[双向连接的](https://en.wikipedia.org/wiki/Biconnected_graph) [子图](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#Subgraphs)。
+[双向连通组件](https://en.wikipedia.org/wiki/Biconnected_component)是最大的[双向连接的](https://en.wikipedia.org/wiki/Biconnected_graph) [子图](https://en.wikipedia.org/wiki/Glossary_of_graph_theory#Subgraphs)。
 
-[双向图](https://en.wikipedia.org/wiki/Biconnected_graph)在此处已有讨论。 在本文中，我们将看到如何使用 John Hopcroft 和 Robert Tarjan 的算法在图形中查找[双向连接的组件](https://en.wikipedia.org/wiki/Biconnected_component)。
+[双向图](https://en.wikipedia.org/wiki/Biconnected_graph)在此处已有讨论。 在本文中，我们将看到如何使用 John Hopcroft 和 Robert Tarjan 的算法在图形中查找[双向连通组件](https://en.wikipedia.org/wiki/Biconnected_component)。
 
 ![Biconnected Components](img/2297f78330cce4c1ef0865e29a801210.png)
 
-在上图中，以下是双向连接的组件：
+在上图中，以下是双向连通组件：
 
 *   4–2 3–4 3–1 2–3 1–2
 
@@ -22,9 +22,9 @@
 
 该算法基于[强连接组件](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)文章中讨论的 Disc 和低值。
 
-想法是将访问的边沿存储在堆栈中，而 DFS 在图形上并继续寻找[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)（在上图中突出显示）。 一旦找到[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/) u，从节点 u 开始进行 DFS 时访问的所有边将形成一个[双向连接的组件](https://en.wikipedia.org/wiki/Biconnected_component)。 当一个[连接的组件](https://en.wikipedia.org/wiki/Connected_component_%28graph_theory%29)的 DFS 完成时，堆栈中存在的所有边将形成一个双连接的组件。
+想法是将访问的边沿存储在堆栈中，而 DFS 在图形上并继续寻找[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)（在上图中突出显示）。 一旦找到[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)`u`，从节点`u`开始进行 DFS 时访问的所有边将形成一个[双向连通组件](https://en.wikipedia.org/wiki/Biconnected_component)。 当一个[连通组件](https://en.wikipedia.org/wiki/Connected_component_%28graph_theory%29)的 DFS 完成时，堆栈中存在的所有边将形成一个双连通组件。
 
-如果图形中没有[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)，则图形是双向连接的，因此将有一个双向连接的组件，即图形本身。
+如果图形中没有[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)，则图形是双向连接的，因此将有一个双向连通组件，即图形本身。
 
 ## C++
 

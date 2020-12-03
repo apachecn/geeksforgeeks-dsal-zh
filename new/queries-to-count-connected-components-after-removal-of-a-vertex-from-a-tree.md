@@ -1,4 +1,4 @@
-# 查询从树中删除顶点后对连接的组件进行计数的方法
+# 查询从树中删除顶点后对连通组件进行计数的方法
 
 > 原文： [https://www.geeksforgeeks.org/queries-to-count-connected-components-after-removal-of-a-vertex-from-a-tree/](https://www.geeksforgeeks.org/queries-to-count-connected-components-after-removal-of-a-vertex-from-a-tree/)
 
@@ -29,7 +29,7 @@
 
 **方法**：的想法是观察在**树**中，每当删除一个节点时，连接到该节点的节点就会分离。 因此，连接组件的[计数等于已删除节点](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)的[度。
 
-因此，方法是预先计算并在阵列中存储每个节点](https://www.geeksforgeeks.org/find-degree-particular-vertex-graph/)的[度。 对于每个查询，连接的组件数只是查询中相应节点的程度。](https://www.geeksforgeeks.org/print-the-degree-of-every-node-from-the-given-prufer-sequence/)
+因此，方法是预先计算并在阵列中存储每个节点](https://www.geeksforgeeks.org/find-degree-particular-vertex-graph/)的[度。 对于每个查询，连通组件数只是查询中相应节点的程度。](https://www.geeksforgeeks.org/print-the-degree-of-every-node-from-the-given-prufer-sequence/)
 
 下面是上述方法的实现：
 

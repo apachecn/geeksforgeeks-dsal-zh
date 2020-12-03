@@ -122,7 +122,7 @@ Thus, there is no possible assignment in such a case.
 
 **实施观点的结论**：
 
-如果 X 和![\bar{X}](img/4984e36db71f55a531274f258b6f7956.png "Rendered by QuickLaTeX.com")都位于同一 SCC（牢固连接的组件）中，则 CNF 不能满足要求。
+如果 X 和![\bar{X}](img/4984e36db71f55a531274f258b6f7956.png "Rendered by QuickLaTeX.com")都位于同一 SCC（牢固连通组件）中，则 CNF 不能满足要求。
 
 有向图的强连接组件具有节点，因此可以从该 SCC 中的每个其他节点到达每个节点。
 

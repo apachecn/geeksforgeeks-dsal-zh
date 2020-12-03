@@ -54,7 +54,7 @@ connected or not
 
 ```
 
-为了解决增量连接[的问题，使用了不相交的数据结构](https://www.geeksforgeeks.org/union-find/)。 在此，每个连接的组件代表一个集合，如果两个节点属于同一集合，则表示它们已连接。
+为了解决增量连接[的问题，使用了不相交的数据结构](https://www.geeksforgeeks.org/union-find/)。 在此，每个连通组件代表一个集合，如果两个节点属于同一集合，则表示它们已连接。
 
 下面给出了实现，此处我们通过等级压缩和路径压缩使用[并集](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
 

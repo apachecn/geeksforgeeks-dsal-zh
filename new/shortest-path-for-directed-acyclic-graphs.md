@@ -6,7 +6,7 @@
 
 给定加权有向无环图和图中的源顶点，找到从给定源到所有其他顶点的最短路径。
 
-对于一般的加权图，我们可以使用 [Bellman-Ford 算法](https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/)以 O（VE）时间计算单源最短距离。 对于没有负权重的图，我们可以做得更好，并使用 [Dijkstra 算法](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)在 O（E + VLogV）时间内计算单个源的最短距离。 有向无环图（DAG）我们还能做得更好吗？ 我们可以计算 DAG 的单源最短距离（O（V + E）时间）。 这个想法是使用[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。
+对于一般的加权图，我们可以使用 [Bellman-Ford 算法](https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/)以 O（VE）时间计算单源最短距离。 对于没有负权重的图，我们可以做得更好，并使用 [Dijkstra 算法](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)在 O（E + VLogV）时间内计算单个源的最短距离。 有向无环图（DAG）我们还能做得更好吗？ 我们可以计算 DAG 的单源最短距离（`O(V + E)`时间）。 这个想法是使用[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。
 
 我们将到所有顶点的距离初始化为无穷大，到源的距离初始化为 0，然后找到图的拓扑排序。 [图的拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)表示图的线性排序（请参见下面的图（b）是图（a）的线性表示）。 一旦我们有了拓扑顺序（或线性表示），我们便按拓扑顺序逐一处理所有顶点。 对于每个要处理的顶点，我们使用当前顶点的距离来更新其相邻的距离。
 
@@ -578,7 +578,7 @@ Following are shortest distances from source 1
 INF 0 2 6 5 3 
 ```
 
-**时间复杂度**：拓扑排序的时间复杂度为 O（V + E）。 找到拓扑顺序后，该算法将处理所有顶点，并且对于每个顶点，它将为所有相邻顶点运行一个循环。 图中的相邻顶点总数为 O（E）。 因此，内部循环运行 O（V + E）次。 因此，该算法的总时间复杂度为 O（V + E）。
+**时间复杂度**：拓扑排序的时间复杂度为`O(V + E)`。 找到拓扑顺序后，该算法将处理所有顶点，并且对于每个顶点，它将为所有相邻顶点运行一个循环。 图中的相邻顶点总数为 O（E）。 因此，内部循环运行`O(V + E)`次。 因此，该算法的总时间复杂度为`O(V + E)`。
 
 参考文献：
 

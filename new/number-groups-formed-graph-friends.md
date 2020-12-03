@@ -35,7 +35,7 @@ of every group are (1, 4), (2, 4), (3, 4).
 
 ```
 
-要计算组数，我们只需要计算给定无向图中的[个连接的组件。 使用](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/) [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 或 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 可以很容易地计算连接的组件。 由于这是无向图，因此对于每个朋友，从深度不限的顶点开始的深度优先搜索的次数等于形成的组数。
+要计算组数，我们只需要计算给定无向图中的[个连通组件。 使用](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/) [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 或 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 可以很容易地计算连通组件。 由于这是无向图，因此对于每个朋友，从深度不限的顶点开始的深度优先搜索的次数等于形成的组数。
 
 用简单的公式（N1）*（N2）* ....（Nn）来计算我们形成新群体的方式数量，其中 Ni 是第 i 个群体中的人数。
 

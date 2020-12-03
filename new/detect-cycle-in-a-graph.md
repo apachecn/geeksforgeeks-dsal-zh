@@ -426,15 +426,15 @@ The diagram clearly shows no cycle
 
 *   **Complexity Analysis:**
 
-    *   **时间复杂度**：O（V + E）。 此方法的
+    *   **时间复杂度**：`O(V + E)`。 此方法的
 
-        时间复杂度与 [DFS 遍历](https://www.geeksforgeeks.org/archives/18212)的时间复杂度相同，即 O（V + E）。
+        时间复杂度与 [DFS 遍历](https://www.geeksforgeeks.org/archives/18212)的时间复杂度相同，即`O(V + E)`。
 
     *   **空间复杂度**：O（V）。
 
         要存储访问和递归堆栈，需要 O（V）空间。
 
-在下面的文章中，讨论了另一种 O（V + E）方法：
+在下面的文章中，讨论了另一种`O(V + E)`方法：
 
 [使用颜色](https://www.geeksforgeeks.org/detect-cycle-direct-graph-using-colors/)在直接图中检测周期
 

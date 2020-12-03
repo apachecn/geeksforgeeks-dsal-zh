@@ -424,7 +424,7 @@ public static void Main(String []args)
 
 ```
 
-上述算法的时间复杂度为 O（V + E）。
+上述算法的时间复杂度为`O(V + E)`。
 
 **精确算法**：
 

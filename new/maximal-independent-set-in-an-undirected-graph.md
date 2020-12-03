@@ -6,7 +6,7 @@
 
 > **独立集**：图形中的独立集是一组顶点，它们之间不直接相互连接。
 
-**注意**：假设至少有一种方法可以从图中的任何顶点遍历到另一个顶点，即图中具有一个[连接的组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)。
+**注意**：假设至少有一种方法可以从图中的任何顶点遍历到另一个顶点，即图中具有一个[连通组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)。
 
 **示例**：
 

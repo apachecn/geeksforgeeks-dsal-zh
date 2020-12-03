@@ -446,7 +446,7 @@ int main()
 
 ```
 
-**时间复杂度**： *O（V + E）*
+**时间复杂度**： *`O(V + E)`*
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 

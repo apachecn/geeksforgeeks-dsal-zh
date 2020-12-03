@@ -1,10 +1,10 @@
 # 图形
 
-中要删除的最大边数，以完全包含 K 个连接的组件
+中要删除的最大边数，以完全包含 K 个连通组件
 
 > 原文： [https://www.geeksforgeeks.org/maximum-number-of-edges-to-be-removed-to-contain-exactly-k-connected-components-in-the-graph/](https://www.geeksforgeeks.org/maximum-number-of-edges-to-be-removed-to-contain-exactly-k-connected-components-in-the-graph/)
 
-给定[无向图](https://www.geeksforgeeks.org/graph-and-its-representations/)`G`，其中`N`个节点，`M`边和整数`K`， 找到可以去除的边的最大数量，以使去除边后剩下的`K`[连接的组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)完全相同。 如果图形不能包含`K`连接组件，请打印`-1`。
+给定[无向图](https://www.geeksforgeeks.org/graph-and-its-representations/)`G`，其中`N`个节点，`M`边和整数`K`， 找到可以去除的边的最大数量，以使去除边后剩下的`K`[连通组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)完全相同。 如果图形不能包含`K`连接组件，请打印`-1`。
 
 **示例**：
 
@@ -29,7 +29,7 @@
 
     > **C <sub>1</sub> – 1 + C <sub>2</sub> – 1 +…+ C <sub>c</sub> – 1 = C <sub>1</sub> + C <sub>2</sub> +…+ C <sub>c</sub> – C = N – C** ，其中`N`是数组数。
 
-*   通过移除 **M –（N – C）**边，上述条件将为我们提供`C`连接的组件，因为**需要 **N – C** 边 C** 组件。 要获得`K`组件，必须去除**（K – C）**的更多边。
+*   通过移除 **M –（N – C）**边，上述条件将为我们提供`C`连通组件，因为**需要 **N – C** 边 C** 组件。 要获得`K`组件，必须去除**（K – C）**的更多边。
 
 *   因此，要去除的边的总数为：
 
@@ -41,7 +41,7 @@
 
 2.  如果`C`大于`K`，则打印`-1`。
 
-3.  其他打印 **M – N + K** ，其中`N`是节点数，`M`是边数，需要`K`连接的组件数。
+3.  其他打印 **M – N + K** ，其中`N`是节点数，`M`是边数，需要`K`连通组件数。
 
 下面是上述方法的实现：
 

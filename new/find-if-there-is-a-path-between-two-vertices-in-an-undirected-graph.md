@@ -354,7 +354,7 @@ int main()
 There is a path from 1 to 3
 ```
 
-***时间复杂度**：O（V + E）*
+***时间复杂度**：`O(V + E)`*
 
 ***辅助空间**：O（V）*
 

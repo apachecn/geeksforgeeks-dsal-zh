@@ -569,7 +569,7 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：O（V + E），其中 V 是节点数，E 是边数。*
+***时间复杂度**：`O(V + E)`，其中 V 是节点数，E 是边数。*
 
 ***辅助空间**：O（V）*
 

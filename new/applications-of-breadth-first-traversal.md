@@ -26,7 +26,7 @@
 
 1.  **路径查找**我们可以使用广度优先遍历或深度优先遍历来查找两个顶点之间是否存在路径。
 
-2.  **查找一个连接的组件内的所有节点**：我们可以使用广度优先或深度优先遍历来查找给定节点可到达的所有节点。
+2.  **查找一个连通组件内的所有节点**：我们可以使用广度优先或深度优先遍历来查找给定节点可到达的所有节点。
 
 [Prim 的最小生成树](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/)和 [Dijkstra 的单一源最短路径](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)等许多算法都使用类似于广度优先搜索的结构。
 

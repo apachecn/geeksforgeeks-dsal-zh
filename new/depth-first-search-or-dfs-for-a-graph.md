@@ -392,7 +392,7 @@ Following is Depth First Traversal (starting from vertex 2)
 
 **复杂度分析**：
 
-*   **时间复杂度**：O（V + E），其中 V 是顶点数量，E 是图形中边的数量。
+*   **时间复杂度**：`O(V + E)`，其中 V 是顶点数量，E 是图形中边的数量。
 
 *   **空间复杂度**：O（V）。
 
@@ -770,7 +770,7 @@ Following is Depth First Traversal
 
 **复杂度分析**：
 
-*   **时间复杂度**：O（V + E），其中 V 是顶点数量，E 是图形中边的数量。
+*   **时间复杂度**：`O(V + E)`，其中 V 是顶点数量，E 是图形中边的数量。
 
 *   **空间复杂度**：O（V）。
 

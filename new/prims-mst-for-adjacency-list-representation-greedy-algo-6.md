@@ -10,7 +10,7 @@
 
 我们已经讨论了 [Prim 算法以及图](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)的邻接矩阵表示的实现。 矩阵表示的时间复杂度为 O（V ^ 2）。 在这篇文章中，讨论了用于邻接表表示的 O（ELogV）算法。
 
-如前一篇文章所述，在 Prim 的算法中，维护了两组，一组包含 MST 中已包含的顶点列表，另一组包含尚未包含的顶点。 使用邻接表表示，可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 在 O（V + E）时间内遍历图的所有顶点。 这个想法是使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 遍历图的所有顶点，并使用最小堆存储尚未包含在 MST 中的顶点。 Min Heap 用作优先级队列，以从 [cut](http://en.wikipedia.org/wiki/Cut_%28graph_theory%29) 获得最小权重边。 Min Heap 用作操作的时间复杂性，如提取最小元素，并且在 Min Heap 中将键值减小为 O（LogV）。
+如前一篇文章所述，在 Prim 的算法中，维护了两组，一组包含 MST 中已包含的顶点列表，另一组包含尚未包含的顶点。 使用邻接表表示，可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 在`O(V + E)`时间内遍历图的所有顶点。 这个想法是使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 遍历图的所有顶点，并使用最小堆存储尚未包含在 MST 中的顶点。 Min Heap 用作优先级队列，以从 [cut](http://en.wikipedia.org/wiki/Cut_%28graph_theory%29) 获得最小权重边。 Min Heap 用作操作的时间复杂性，如提取最小元素，并且在 Min Heap 中将键值减小为 O（LogV）。
 
 以下是详细步骤。
 
@@ -762,7 +762,7 @@ graph.PrimMST()
 2 - 8
 ```
 
-**时间复杂度**：上面的代码/算法的时间复杂度看起来为 O（V ^ 2），因为有两个嵌套的 while 循环。 如果仔细观察，可以发现内部循环中的语句执行了 O（V + E）次（类似于 BFS）。 内部循环具有 reduceKey（）操作，该操作需要 O（LogV）时间。 因此，总体时间复杂度为 O（E + V）* O（LogV），即 O（（E + V）* LogV）= O（ELogV）（对于连通图，V = O（E））
+**时间复杂度**：上面的代码/算法的时间复杂度看起来为 O（V ^ 2），因为有两个嵌套的 while 循环。 如果仔细观察，可以发现内部循环中的语句执行了`O(V + E)`次（类似于 BFS）。 内部循环具有 reduceKey（）操作，该操作需要 O（LogV）时间。 因此，总体时间复杂度为 O（E + V）* O（LogV），即 O（（E + V）* LogV）= O（ELogV）（对于连通图，V = O（E））
 
 **参考**：
 

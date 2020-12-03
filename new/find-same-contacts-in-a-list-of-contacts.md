@@ -34,7 +34,7 @@ Therefore, contact[0] and contact[2] are also same.
 
 输入基本上是一个结构数组。 一个结构包含三个字段，以便任何字段都可以表示有关联系人的任何详细信息。
 
-这个想法是首先使用给定的数组创建联系人图。 在图中，如果两个顶点都具有相同的用户名，相同的电子邮件或相同的电话号码，则它们在顶点 i 与顶点 j 之间会有一条边。 一旦构建了图，任务就减少到在无向图中找到[连接的组件。 我们可以通过从每个未访问的顶点开始执行](http://geeksquiz.com/connected-components-in-an-undirected-graph/) [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 或 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 来找到连接的组件。 在下面的代码中，使用了 DFS。
+这个想法是首先使用给定的数组创建联系人图。 在图中，如果两个顶点都具有相同的用户名，相同的电子邮件或相同的电话号码，则它们在顶点 i 与顶点 j 之间会有一条边。 一旦构建了图，任务就减少到在无向图中找到[连通组件。 我们可以通过从每个未访问的顶点开始执行](http://geeksquiz.com/connected-components-in-an-undirected-graph/) [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 或 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 来找到连通组件。 在下面的代码中，使用了 DFS。
 
 以下是此想法的实现。
 

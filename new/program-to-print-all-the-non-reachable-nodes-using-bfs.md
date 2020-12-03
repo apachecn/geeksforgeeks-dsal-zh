@@ -6,7 +6,7 @@
 
 **例如**：
 
-> 考虑以下具有两个断开连接的组件的无向图：
+> 考虑以下具有两个断开连通组件的无向图：
 > 
 > ![](img/212cc661346e6205814c9cdd5b2cc25f.png)
 > 
@@ -36,7 +36,7 @@ Output: 3 4 5 6 7
 
 *   为此，我们可以使用 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 或 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。 [本文的设置 1](https://www.geeksforgeeks.org/count-number-non-reachable-nodes/) 实现了 DFS 方法。 在本文中，将使用 BFS 方法。
 
-*   我们从给定的来源进行 BFS。 由于给定的图是无向的，所以属于断开连接的组件的所有顶点都是不可访问的节点。 为此，我们使用访问数组，该数组用于跟踪 BFS 中未访问的顶点。
+*   我们从给定的来源进行 BFS。 由于给定的图是无向的，所以属于断开连通组件的所有顶点都是不可访问的节点。 为此，我们使用访问数组，该数组用于跟踪 BFS 中未访问的顶点。
 
 *   [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 是一种遍历算法，该算法从选定的节点（源节点或起始节点）开始遍历，并逐层遍历图形，从而探索相邻节点（直接连接到源节点的节点）。 然后，移至下一级邻居节点。
 

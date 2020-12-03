@@ -1,4 +1,4 @@
-# Tarjan 的算法，用于查找强连接的组件
+# Tarjan 的算法，用于查找强连通组件
 
 > 原文： [https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)
 
@@ -12,7 +12,7 @@ Tarjan 算法基于以下事实：
 
 1\. DFS 搜索产生 DFS 树/林
 
-2.强连接的组件形成 DFS 树的子树。
+2.强连通组件形成 DFS 树的子树。
 
 3.如果可以找到此类子树的头，则可以打印/存储该子树中的所有节点（包括头），这将是一个 SCC。
 

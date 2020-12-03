@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/largest-subarray-sum-of-all-connected-components-in-undirected-graph/](https://www.geeksforgeeks.org/largest-subarray-sum-of-all-connected-components-in-undirected-graph/)
 
-给定一个[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)并具有`V`顶点和`E`边，任务是在所有连接的组件中找到**最大连续子数组和** 图的
+给定一个[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)并具有`V`顶点和`E`边，任务是在所有连通组件中找到**最大连续子数组和** 图的
 
 **范例**：
 
@@ -13,9 +13,9 @@
 > ![](img/38f453c3576dd1efb0541064ba42e1d3.png)
 > 
 > **输出**：
-> 所有连接的组件中的最大子阵列总和= 5
+> 所有连通组件中的最大子阵列总和= 5
 > **说明**：
-> 连接的组件和最大子阵列总和如下：
+> 连通组件和最大子阵列总和如下：
 > [3， 2]：最大子数组总和= 3 + 2 =`5`
 > [4，-2，0]：最大子阵列总和= 4
 > [-1，-5]：最大子阵列总和= -1
@@ -25,16 +25,16 @@
 > ![](img/0469faf5dd8ad49f7eaecef521a06ecb.png)
 > 
 > **输出**：
-> 所有连接的组件之间的最大子阵列总数= 9
+> 所有连通组件之间的最大子阵列总数= 9
 > **说明**：
-> 连接的组件和最大子阵列总数如下：
+> 连通组件和最大子阵列总数如下：
 > [-3 ]：最大子阵列总和= -3
 > [-2，7，1，-1]：最大子阵列总和= 7 + 1 = 8
 > [4，0，5]：最大子阵列总和= 4 + 0 + 5 =`9`，
 > [-4、6]：最大子阵列总和= 6
 > 因此，最大连续子阵列总和= 9
 
-**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连接组件，如本文的[中所述。 对于每个连接的组件，将根据 **Kadane 的算法**分析阵列并计算最大连续子阵列和，如](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[此](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)文章中所述。 设置一个全局变量，该变量在每次迭代时都与局部和值进行比较以获得最终结果。
+**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连接组件，如本文的[中所述。 对于每个连通组件，将根据 **Kadane 的算法**分析阵列并计算最大连续子阵列和，如](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[此](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)文章中所述。 设置一个全局变量，该变量在每次迭代时都与局部和值进行比较以获得最终结果。
 
 以下是上述方法的实现：
 
@@ -553,7 +553,7 @@ Maximum subarray sum among all connected components = 5
 
 **时间复杂度**：*O（V <sup>2</sup> ）*。
 
-DFS 算法需要 O（V + E）时间来运行，其中 V，E 是顶点 和无向图的边。 此外，在每次迭代中都会找到最大的连续子数组总和，这需要额外的 O（V）才能根据 Kadane 的算法计算并返回结果。 因此，整体复杂度为 **O（V <sup>2</sup> ）**
+DFS 算法需要`O(V + E)`时间来运行，其中 V，E 是顶点 和无向图的边。 此外，在每次迭代中都会找到最大的连续子数组总和，这需要额外的 O（V）才能根据 Kadane 的算法计算并返回结果。 因此，整体复杂度为 **O（V <sup>2</sup> ）**
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 

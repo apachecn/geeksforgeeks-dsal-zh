@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/maximum-sum-of-values-of-nodes-among-all-connected-components-of-an-undirected-graph/](https://www.geeksforgeeks.org/maximum-sum-of-values-of-nodes-among-all-connected-components-of-an-undirected-graph/)
 
-给定具有`V`顶点和`E`边的无向图。 每个节点都被分配了一个给定的值。 任务是在图中所有连接的组件中找到具有最大值总和的连接链。
+给定具有`V`顶点和`E`边的无向图。 每个节点都被分配了一个给定的值。 任务是在图中所有连通组件中找到具有最大值总和的连接链。
 
 **范例**：
 
@@ -27,7 +27,7 @@
 > 
 > **输出**：最大总和= 105
 
-**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)方法来跟踪所有连接的组件。 临时变量用于汇总连接链的各个值的所有值。 在每次遍历连接的组件时，将迄今为止最大的值与当前值进行比较并相应地进行更新。 遍历所有连接的组件后，答案最大。
+**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)方法来跟踪所有连通组件。 临时变量用于汇总连接链的各个值的所有值。 在每次遍历连通组件时，将迄今为止最大的值与当前值进行比较并相应地进行更新。 遍历所有连通组件后，答案最大。
 
 下面是上述方法的实现：
 
