@@ -91,9 +91,9 @@ Before we proceed to below example, we need to make sure that we understand resi
 
 每当我们将顶点 u 的流量推入或添加到 v 时，我们都会在残差图中进行以下更新：
 
-1）我们从 u 到 v 的边容量中减去流量。如果边的容量变为 0，则 边不再存在于残差图中。
+1.  我们从 u 到 v 的边容量中减去流量。如果边的容量变为 0，则 边不再存在于残差图中。
 
-2）我们将流量增加到从 v 到 u 的边容量。
+2.  我们将流量增加到从 v 到 u 的边容量。
 
 ```
 For example, consider two vertices u an v.

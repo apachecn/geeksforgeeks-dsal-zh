@@ -14,9 +14,9 @@
 
 如果满足以下条件，则有向图具有欧拉循环（来源： [Wiki](http://en.wikipedia.org/wiki/Eulerian_path#Properties) ）
 
-1）所有非零度的顶点都属于单个[强连通分量[](https://www.geeksforgeeks.org/strongly-connected-components/) 。
+1.  所有非零度的顶点都属于单个[强连通分量[](https://www.geeksforgeeks.org/strongly-connected-components/) 。
 
-2）In 度等于每个顶点的 out 度。
+2.  In 度等于每个顶点的 out 度。
 
 我们可以使用 [Kosaraju 基于 DFS 的简单算法](https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/)来检测单个连接的组件。
 

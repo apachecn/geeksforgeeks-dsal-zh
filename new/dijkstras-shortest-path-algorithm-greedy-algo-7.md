@@ -10,11 +10,11 @@ Dijkstra 算法与 [Prim 的最小生成树](https://www.geeksforgeeks.org/prims
 
 算法
 
-**1）**创建一个集 *sptSet* （最短路径树集），该集合可跟踪最短路径树中包含的顶点，即距源的最小距离为 计算并最终确定。 最初，此集合为空。
+1.  创建一个集 *sptSet* （最短路径树集），该集合可跟踪最短路径树中包含的顶点，即距源的最小距离为 计算并最终确定。 最初，此集合为空。
 
-**2）**为输入图中的所有顶点分配距离值。 将所有距离值初始化为 INFINITE。 将源顶点的距离值指定为 0，以便首先拾取它。
+2.  为输入图中的所有顶点分配距离值。 将所有距离值初始化为 INFINITE。 将源顶点的距离值指定为 0，以便首先拾取它。
 
-**3）**虽然 *sptSet* 并未包含所有顶点
+3.  虽然 *sptSet* 并未包含所有顶点
 
 …。 **a）**选取 *sptSet* 中不存在且具有最小距离值的顶点 u。
 
@@ -477,15 +477,15 @@ Vertex   Distance from Source
 
 **注意**：
 
-**1）**该代码计算最短距离，但不计算路径信息。 我们可以创建一个父数组，在更新距离时更新父数组（例如 [prim 的实现](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)），并使用它显示从源到不同顶点的最短路径。
+1.  该代码计算最短距离，但不计算路径信息。 我们可以创建一个父数组，在更新距离时更新父数组（例如 [prim 的实现](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)），并使用它显示从源到不同顶点的最短路径。
 
-**2）**该代码用于无向图，相同的 dijkstra 函数也可用于有向图。
+2.  该代码用于无向图，相同的 dijkstra 函数也可用于有向图。
 
-**3）**该代码查找从源到所有顶点的最短距离。 如果我们在最短的距离只关心从源到单个目标，我们可以在拾取最小距离顶点等于目标（该算法的步骤 3.A）打破的循环。
+3.  该代码查找从源到所有顶点的最短距离。 如果我们在最短的距离只关心从源到单个目标，我们可以在拾取最小距离顶点等于目标（该算法的步骤 3.A）打破的循环。
 
-**4）**实现的时间复杂度为 O（V ^ 2）。 如果使用邻接表表示输入[图，则可以在二进制堆的帮助下将其减小为 O（E log V）。 有关更多详细信息，请参见](https://www.geeksforgeeks.org/graph-and-its-representations/) [Dijkstra 的邻接表表示算法](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)。
+4.  实现的时间复杂度为 O（V ^ 2）。 如果使用邻接表表示输入[图，则可以在二进制堆的帮助下将其减小为 O（E log V）。 有关更多详细信息，请参见](https://www.geeksforgeeks.org/graph-and-its-representations/) [Dijkstra 的邻接表表示算法](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)。
 
-**5）** Dijkstra 算法不适用于负周期为负的图形，它可能会为负边界的图形提供正确的结果。 对于负边沿和周期为负的图形，可以使用 [Bellman-Ford 算法](http://en.wikipedia.org/wiki/Bellman-Ford_algorithm)，我们很快将在单独的文章中进行讨论。
+5.   Dijkstra 算法不适用于负周期为负的图形，它可能会为负边界的图形提供正确的结果。 对于负边沿和周期为负的图形，可以使用 [Bellman-Ford 算法](http://en.wikipedia.org/wiki/Bellman-Ford_algorithm)，我们很快将在单独的文章中进行讨论。
 
 [Dijkstra 的邻接表表示算法](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)
 

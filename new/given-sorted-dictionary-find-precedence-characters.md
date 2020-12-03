@@ -20,15 +20,15 @@ Output: Order of characters is 'c', 'a', 'b'
 
 这个想法是创建一个字符图，然后找到所创建图的[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。 以下是详细步骤。
 
-1）创建图 *g* ，其顶点数量等于给定外语中字母的大小。 例如，如果字母大小为 5，则单词中可以有 5 个字符。 最初，图中没有边。
+1.  创建图 *g* ，其顶点数量等于给定外语中字母的大小。 例如，如果字母大小为 5，则单词中可以有 5 个字符。 最初，图中没有边。
 
-2）对给定排序数组中的每对相邻单词进行跟随。
+2.  对给定排序数组中的每对相邻单词进行跟随。
 
 …..a）令当前单词对为 *word1* 和 *word2* 。 逐个比较两个单词的字符并找到第一个不匹配的字符。
 
 …..b）在 *g* 中从 *word1* 的不匹配字符到 *word2* 的不匹配字符创建一条边。
 
-3）打印上面创建的图的[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。
+3.  打印上面创建的图的[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。
 
 以下是上述算法的实现。
 

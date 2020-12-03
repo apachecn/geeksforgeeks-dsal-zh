@@ -38,9 +38,9 @@ The path covered starting from 4 is
 
 **有效解决方案**基于以下步骤。
 
-1）使用数组索引作为节点创建有向图。 我们从 i 到节点（arr [i] + 1）％n 添加一条边。
+1.  使用数组索引作为节点创建有向图。 我们从 i 到节点（arr [i] + 1）％n 添加一条边。
 
-2）创建图后，我们使用 Kosaraju 的算法
+2.  创建图后，我们使用 Kosaraju 的算法
 
 找到了所有[强连接的组件。3）最后，我们返回了各个强连接组件中的节点总数。](https://www.geeksforgeeks.org/strongly-connected-components/)
 

@@ -18,13 +18,13 @@ Johnson 算法的思想是为每个顶点分配权重。 令分配给顶点 u �
 
 **算法**：
 
-**1）**令给定图为 G。向图添加新顶点 s，将新顶点的边添加至 G 的所有顶点。让修改后的图 成为 G'。
+1.  令给定图为 G。向图添加新顶点 s，将新顶点的边添加至 G 的所有顶点。让修改后的图 成为 G'。
 
-**2）**在 s 为源的 G’上运行 [Bellman-Ford 算法](https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/)。 令由 Bellman-Ford 计算的距离为 h [0]，h [1]，.. h [V-1]。 如果我们发现负体重循环，则返回。 请注意，负权重循环无法由新顶点 s 创建，因为 s 没有边。 所有边均来自。
+2.  在 s 为源的 G’上运行 [Bellman-Ford 算法](https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/)。 令由 Bellman-Ford 计算的距离为 h [0]，h [1]，.. h [V-1]。 如果我们发现负体重循环，则返回。 请注意，负权重循环无法由新顶点 s 创建，因为 s 没有边。 所有边均来自。
 
-**3）**重新加权原始图形的边。 对于每个边（u，v），将新权重分配为“原始权重+ h [u] – h [v]”。
+3.  重新加权原始图形的边。 对于每个边（u，v），将新权重分配为“原始权重+ h [u] – h [v]”。
 
-**4）**删除添加的顶点，并为每个顶点运行 [Dijkstra 算法](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)。
+4.  删除添加的顶点，并为每个顶点运行 [Dijkstra 算法](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)。
 
 **变换如何确保非负的权重边？**
 

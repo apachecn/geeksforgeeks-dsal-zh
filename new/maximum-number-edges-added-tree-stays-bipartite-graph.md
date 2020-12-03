@@ -31,15 +31,15 @@ edges 4 and 5\. Since, 4 is already connected to
 
 ```
 
-1）对图形进行简单的 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) （或 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) ）遍历，并用两种颜色对其进行着色。
+1.  对图形进行简单的 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) （或 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) ）遍历，并用两种颜色对其进行着色。
 
-2）在着色的同时，还要跟踪用两种颜色着色的节点数。 设两个计数为 count_color <sub>0</sub> 和 count_color <sub>1</sub> 。
+2.  在着色的同时，还要跟踪用两种颜色着色的节点数。 设两个计数为 count_color <sub>0</sub> 和 count_color <sub>1</sub> 。
 
-3）现在我们知道二元图可以具有的最大边数是 count_color <sub>0</sub> x count_color <sub>1</sub> 。
+3.  现在我们知道二元图可以具有的最大边数是 count_color <sub>0</sub> x count_color <sub>1</sub> 。
 
-4）我们还知道具有 n 个节点的树具有 n-1 个边。
+4.  我们还知道具有 n 个节点的树具有 n-1 个边。
 
-5）因此，我们的答案是 count_color <sub>0</sub> x count_color <sub>1</sub> –（n-1）。
+5.  因此，我们的答案是 count_color <sub>0</sub> x count_color <sub>1</sub> –（n-1）。
 
 下面是实现：
 

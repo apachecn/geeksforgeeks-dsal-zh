@@ -56,13 +56,13 @@ Output : No
 
 以下是该算法的详细步骤。
 
-1）创建一个有向图 g，其顶点数等于字母的大小。 在下面的程序中，我们创建了具有 26 个顶点的图形。
+1.  创建一个有向图 g，其顶点数等于字母的大小。 在下面的程序中，我们创建了具有 26 个顶点的图形。
 
-2）对给定的字符串数组中的每个字符串执行以下操作。
+2.  对给定的字符串数组中的每个字符串执行以下操作。
 
 …..a）在给定图形的第一个字符到最后一个字符之间添加一条边。
 
-3）如果创建的图形具有[欧拉回路](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)，则返回 true，否则返回 false。
+3.  如果创建的图形具有[欧拉回路](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)，则返回 true，否则返回 false。
 
 以下是上述算法的 C++和 Python 实现。
 

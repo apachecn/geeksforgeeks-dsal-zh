@@ -26,7 +26,7 @@
 
 [![maximum_matching2](img/1b344d84622c1d060ab6c0de74ff6624.png) ](https://media.geeksforgeeks.org/wp-content/cdn-uploads/maximum_matching21.png) * **
 
-2）找到最大流量。***
+2.  找到最大流量。***
 
 我们使用 [Ford-Fulkerson 算法](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)在步骤 1 中建立的流量网络中找到最大流量。最大流量实际上是我们正在寻找的 MBP。
 

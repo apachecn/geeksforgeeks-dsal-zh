@@ -16,13 +16,13 @@
 
 **朴素的解决方案**：
 
-1）将城市 1 作为起点和终点。
+1.  将城市 1 作为起点和终点。
 
-2）生成所有（n-1）个！ [城市的排列[H​​TG5]。
+2.  生成所有（n-1）个！ [城市的排列[H​​TG5]。
 
-3）计算每个排列的成本，并跟踪最小成本排列。
+3.  计算每个排列的成本，并跟踪最小成本排列。
 
-4）以最小的成本返回排列。](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)
+4.  以最小的成本返回排列。](https://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/)
 
 时间复杂度：Θ（n！）
 

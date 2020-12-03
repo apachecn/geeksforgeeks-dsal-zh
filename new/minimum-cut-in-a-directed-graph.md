@@ -24,11 +24,11 @@
 
 以下是打印最小切割的所有边的步骤。
 
-**1）**运行 Ford-Fulkerson 算法，并考虑最终的[残差图](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)。
+1.  运行 Ford-Fulkerson 算法，并考虑最终的[残差图](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)。
 
-**2）**在残差图中找到可从源到达的一组顶点。
+2.  在残差图中找到可从源到达的一组顶点。
 
-**3）**从可达顶点到非可达顶点的所有边都是最小切割边。 打印所有此类边。
+3.  从可达顶点到非可达顶点的所有边都是最小切割边。 打印所有此类边。
 
 以下是上述方法的实现。
 

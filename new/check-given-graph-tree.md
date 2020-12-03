@@ -12,9 +12,9 @@
 
 如果无向图具有以下属性，则它是树。
 
-1）没有周期。
+1.  没有周期。
 
-2）图形已连接。
+2.  图形已连接。
 
 对于无向图，我们可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 或 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 来检测以上两个属性。
 

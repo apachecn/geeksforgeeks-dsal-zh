@@ -430,9 +430,9 @@ public static void Main(String []args)
 
 尽管该问题是 NP 完全问题，但对于以下类型的图形，可以在多项式时间内解决。
 
-1）[二部图](https://www.geeksforgeeks.org/bipartite-graph/)，
+1.  [二部图](https://www.geeksforgeeks.org/bipartite-graph/)，
 
-2）[树图](http://geeksquiz.com/check-given-graph-tree/)
+2.  [树图](http://geeksquiz.com/check-given-graph-tree/)
 
 检查是否存在大小小于或等于给定数 k 的顶点覆盖的问题 如果 k 由 O（LogV）限定，也可以在多项式时间内求解（请参阅[，](http://en.wikipedia.org/wiki/Vertex_cover#Fixed-parameter_tractability)）。
 

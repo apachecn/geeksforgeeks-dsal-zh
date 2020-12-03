@@ -8,11 +8,11 @@
 
 我们可以使用 [Kosaraju 的算法](http://en.wikipedia.org/wiki/Kosaraju%27s_algorithm)在 O（V + E）时间内找到所有强连通的组件。 以下是详细的 Kosaraju 的算法。
 
-**1）**创建一个空堆栈'S'，并进行图的 DFS 遍历。 在 DFS 遍历中，在为顶点的相邻顶点调用递归 DFS 之后，将顶点推入堆栈。 在上图中，如果从顶点 0 开始 DFS，则堆栈中的顶点分别为 1，2，4，3，0。
+1.  创建一个空堆栈'S'，并进行图的 DFS 遍历。 在 DFS 遍历中，在为顶点的相邻顶点调用递归 DFS 之后，将顶点推入堆栈。 在上图中，如果从顶点 0 开始 DFS，则堆栈中的顶点分别为 1，2，4，3，0。
 
-**2）**所有圆弧的反向以获得转置图 。
+2.  所有圆弧的反向以获得转置图 。
 
-**3）**当 S 不为空时，从 S 逐一弹出顶点。 让弹出的顶点为“ v”。 将 v 作为源并执行 DFS（调用 [DFSUtil（v）](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)）。 从 v 开始的 DFS 会打印 v 的强连接部分。在上面的示例中，我们以 0、3、4、2、1（从堆栈中弹出的一个）顺序处理顶点。
+3.  当 S 不为空时，从 S 逐一弹出顶点。 让弹出的顶点为“ v”。 将 v 作为源并执行 DFS（调用 [DFSUtil（v）](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)）。 从 v 开始的 DFS 会打印 v 的强连接部分。在上面的示例中，我们以 0、3、4、2、1（从堆栈中弹出的一个）顺序处理顶点。
 
 **这是如何工作的？**
 
