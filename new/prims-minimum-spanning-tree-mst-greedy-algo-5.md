@@ -629,7 +629,7 @@ Edge   Weight
 
 ```
 
-上面程序的时间复杂度是 O（V ^ 2）。 如果使用邻接表表示输入[图，则可以借助二进制堆将 Prim 算法的时间复杂度降低到 O（E log V）。 有关更多详细信息，请参见](https://www.geeksforgeeks.org/archives/27134) [Prim 的 MST，用于邻接列表表示](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-mst-for-adjacency-list-representation/)。
+上面程序的时间复杂度是`O(V ^ 2)`。 如果使用邻接表表示输入[图，则可以借助二进制堆将 Prim 算法的时间复杂度降低到 O（E log V）。 有关更多详细信息，请参见](https://www.geeksforgeeks.org/archives/27134) [Prim 的 MST，用于邻接列表表示](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-mst-for-adjacency-list-representation/)。
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

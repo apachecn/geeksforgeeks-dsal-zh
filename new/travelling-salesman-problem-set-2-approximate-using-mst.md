@@ -1,4 +1,4 @@
-# 旅行商问题| 设置 2（使用 MST 估算）
+# 旅行商问题 | 系列 2（使用 MST 估算）
 
 > 原文： [https://www.geeksforgeeks.org/travelling-salesman-problem-set-2-approximate-using-mst/](https://www.geeksforgeeks.org/travelling-salesman-problem-set-2-approximate-using-mst/)
 

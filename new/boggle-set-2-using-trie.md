@@ -1,4 +1,4 @@
-# Boggle | 第 2 组（使用 Trie）
+# Boggle | 系列 2（使用 Trie）
 
 > 原文： [https://www.geeksforgeeks.org/boggle-set-2-using-trie/](https://www.geeksforgeeks.org/boggle-set-2-using-trie/)
 
@@ -30,7 +30,7 @@ Explanation:
 
 我们在下面的文章中讨论了基于 Graph DFS 的解决方案。
 
-[Boggle（在一个字符板上查找所有可能的单词）| 设置 1](https://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/)
+[Boggle（在一个字符板上查找所有可能的单词） | 系列 1](https://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/)
 
 在这里，我们讨论基于 [Trie](https://www.geeksforgeeks.org/trie-insert-and-search/) 的解决方案，它比基于 DFS 的解决方案更好。
 

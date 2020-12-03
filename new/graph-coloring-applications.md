@@ -1,4 +1,4 @@
-# 图形着色| 第 1 组（简介和应用）
+# 图形着色 | 系列 1（简介和应用）
 
 > 原文： [https://www.geeksforgeeks.org/graph-coloring-applications/](https://www.geeksforgeeks.org/graph-coloring-applications/)
 

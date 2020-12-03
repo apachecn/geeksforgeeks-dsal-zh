@@ -1,4 +1,4 @@
-# 顶点覆盖问题| 第 1 组（简介和近似算法）
+# 顶点覆盖问题 | 系列 1（简介和近似算法）
 
 > 原文： [https://www.geeksforgeeks.org/vertex-cover-problem-set-1-introduction-approximate-algorithm-2/](https://www.geeksforgeeks.org/vertex-cover-problem-set-1-introduction-approximate-algorithm-2/)
 

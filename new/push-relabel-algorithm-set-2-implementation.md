@@ -1,10 +1,10 @@
-# 推送重新标记算法| 第 2 组（实施）
+# 推送重新标记算法 | 系列 2（实施）
 
 > 原文： [https://www.geeksforgeeks.org/push-relabel-algorithm-set-2-implementation/](https://www.geeksforgeeks.org/push-relabel-algorithm-set-2-implementation/)
 
 我们强烈建议在继续本文之前先参考以下文章。
 
-[推送重新标记算法| 第 1 组（简介和插图）](https://www.geeksforgeeks.org/push-relabel-algorithm-set-1-introduction-and-illustration/)
+[推送重新标记算法 | 系列 1（简介和插图）](https://www.geeksforgeeks.org/push-relabel-algorithm-set-1-introduction-and-illustration/)
 
 **问题陈述**：给定一个图，该图表示每个边都具有容量的流网络。 还给定图中的两个顶点*源*'s'和*接收器*'t'，找出具有以下约束的从 s 到 t 的最大可能流量：
 

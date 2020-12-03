@@ -1,4 +1,4 @@
-# 分配问题的匈牙利算法| 第 1 组（简介）
+# 分配问题的匈牙利算法 | 系列 1（简介）
 
 > 原文： [https://www.geeksforgeeks.org/hungarian-algorithm-assignment-problem-set-1-introduction/](https://www.geeksforgeeks.org/hungarian-algorithm-assignment-problem-set-1-introduction/)
 

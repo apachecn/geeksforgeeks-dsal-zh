@@ -32,7 +32,7 @@
 
 *优点：*表示更易于实现和遵循。 移除边需要`O(1)`时间。 诸如从顶点“ u”到顶点“ v”是否存在边的查询是有效的，可以执行`O(1)`。
 
-*缺点：*占用更多空间 O（V ^ 2）。 即使图是稀疏的（包含较少的边数），它也会占用相同的空间。 添加一个顶点是 O（V ^ 2）时间。
+*缺点：*占用更多空间`O(V ^ 2)`。 即使图是稀疏的（包含较少的边数），它也会占用相同的空间。 添加一个顶点是`O(V ^ 2)`时间。
 
 有关相邻矩阵的 Python 实现示例，请参见此的[。](https://ide.geeksforgeeks.org/9je5j6jJ13)
 
@@ -424,7 +424,7 @@ Output:
 
 ```
 
-*优点：*节省空间 O（| V | + | E |）。 在最坏的情况下，图中可能有 C（V，2）个边，因此会占用 O（V ^ 2）空间。 添加顶点更容易。
+*优点：*节省空间 O（| V | + | E |）。 在最坏的情况下，图中可能有 C（V，2）个边，因此会占用`O(V ^ 2)`空间。 添加顶点更容易。
 
 *缺点：*诸如从顶点 u 到顶点 v 是否存在边的查询效率不高，可以执行 O（V）。
 
@@ -434,9 +434,9 @@ Output:
 
 **相关文章**：
 
-[使用 STL 进行竞争性编程的图形表示| 集合 1（无权重和无向 DFS）](https://www.geeksforgeeks.org/graph-representation-using-stl-for-competitive-programming-set-1-dfs-of-unweighted-and-undirected/)
+[使用 STL 进行竞争性编程的图形表示 | 系列 1（无权重和无向 DFS）](https://www.geeksforgeeks.org/graph-representation-using-stl-for-competitive-programming-set-1-dfs-of-unweighted-and-undirected/)
 
-[使用 STL 进行竞争性编程的图形实现| 设置 2（加权图）](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-2-weighted-graph/)
+[使用 STL 进行竞争性编程的图形实现 | 系列 2（加权图）](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-2-weighted-graph/)
 
 本文由 [Aashish Barnwal](https://www.facebook.com/barnwal.aashish) 编写，并由 GeeksforGeeks 小组审阅。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

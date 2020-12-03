@@ -551,9 +551,9 @@ Maximum number of applicants that can get job is 5
 
 您可能还希望在下面看到：
 
-[Hopcroft–Karp 最大匹配算法| 设置 1（简介）](https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-1-introduction/)
+[Hopcroft–Karp 最大匹配算法 | 系列 1（简介）](https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-1-introduction/)
 
-[Hopcroft–Karp 最大匹配算法| 第 2 组（实施）](https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-2-implementation/)
+[Hopcroft–Karp 最大匹配算法 | 系列 2（实施）](https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-2-implementation/)
 
 **参考**：
 

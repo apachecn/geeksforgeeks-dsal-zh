@@ -1,4 +1,4 @@
-# 骑士达成目标的最低限度步骤| 设置 1
+# 骑士达成目标的最低限度步骤 | 系列 1
 
 > 原文： [https://www.geeksforgeeks.org/minimum-steps-reach-target-knight/](https://www.geeksforgeeks.org/minimum-steps-reach-target-knight/)
 

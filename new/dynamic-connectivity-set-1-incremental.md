@@ -1,4 +1,4 @@
-# 动态连接| 设置 1（增量）
+# 动态连接 | 系列 1（增量）
 
 > 原文： [https://www.geeksforgeeks.org/dynamic-connectivity-set-1-incremental/](https://www.geeksforgeeks.org/dynamic-connectivity-set-1-incremental/)
 

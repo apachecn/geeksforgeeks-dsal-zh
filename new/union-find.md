@@ -1,4 +1,4 @@
-# 不交集（或联合查找）| 设置 1（无向图中的检测周期）
+# 不交集（或联合查找） | 系列 1（无向图中的检测周期）
 
 > 原文： [https://www.geeksforgeeks.org/union-find/](https://www.geeksforgeeks.org/union-find/)
 
@@ -588,9 +588,9 @@ https://youtu.be/mHz-mx-8lJ8?list=PLqM7alHXFySEaZgcg7uRYJFBnYMLti-nh
 
 **相关文章**：
 
-[联合查找算法| 集合 2（按等级和路径压缩的并集） 第 2 组（Kruskal 的最小生成树算法）](http://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)，
+[联合查找算法 | 系列 2（按等级和路径压缩的并集） 第 2 组（Kruskal 的最小生成树算法）](http://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)，
 
-[作业排序问题| 第 2 组（使用不交集）](http://www.geeksforgeeks.org/job-sequencing-using-disjoint-set-union/)
+[作业排序问题 | 系列 2（使用不交集）](http://www.geeksforgeeks.org/job-sequencing-using-disjoint-set-union/)
 
 本文由 [Aashish Barnwal](https://www.facebook.com/barnwal.aashish) 编译，并由 GeeksforGeeks 团队进行了审查。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

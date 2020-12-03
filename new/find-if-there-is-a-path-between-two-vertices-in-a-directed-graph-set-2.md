@@ -1,4 +1,4 @@
-# 查找有向图中两个顶点之间是否存在路径| 设置 2
+# 查找有向图中两个顶点之间是否存在路径 | 系列 2
 
 > 原文： [https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-directed-graph-set-2/](https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-directed-graph-set-2/)
 

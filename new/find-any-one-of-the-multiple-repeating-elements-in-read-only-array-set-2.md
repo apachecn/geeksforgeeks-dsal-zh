@@ -1,4 +1,4 @@
-# 在只读数组中找到多个重复元素中的任何一个| 设置 2
+# 在只读数组中找到多个重复元素中的任何一个 | 系列 2
 
 > 原文： [https://www.geeksforgeeks.org/find-any-one-of-the-multiple-repeating-elements-in-read-only-array-set-2/](https://www.geeksforgeeks.org/find-any-one-of-the-multiple-repeating-elements-in-read-only-array-set-2/)
 

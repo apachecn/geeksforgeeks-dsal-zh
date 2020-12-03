@@ -1,4 +1,4 @@
-# 用于最大匹配的 Hopcroft-Karp 算法| 第 1 组（简介）
+# 用于最大匹配的 Hopcroft-Karp 算法 | 系列 1（简介）
 
 > 原文： [https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-1-introduction/](https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-1-introduction/)
 
@@ -40,7 +40,7 @@ Hopcroft Karp 算法基于以下概念。
 
 集合 2 中讨论了 Hopcroft Karp 算法的实现。
 
-[用于最大匹配的 Hopcroft-Karp 算法| 第 2 组（实施）](https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-2-implementation/)
+[用于最大匹配的 Hopcroft-Karp 算法 | 系列 2（实施）](https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-2-implementation/)
 
  **参考**：
 

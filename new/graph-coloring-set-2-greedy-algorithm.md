@@ -1,4 +1,4 @@
-# 图形着色| 第 2 组（贪婪算法）
+# 图形着色 | 系列 2（贪婪算法）
 
 > 原文： [https://www.geeksforgeeks.org/graph-coloring-set-2-greedy-algorithm/](https://www.geeksforgeeks.org/graph-coloring-set-2-greedy-algorithm/)
 

@@ -1,4 +1,4 @@
-# 查找是否可以将字符串数组链接成一个圆| 设置 1
+# 查找是否可以将字符串数组链接成一个圆 | 系列 1
 
 > 原文： [https://www.geeksforgeeks.org/given-array-strings-find-strings-can-chained-form-circle/](https://www.geeksforgeeks.org/given-array-strings-find-strings-can-chained-form-circle/)
 
@@ -579,7 +579,7 @@ Can be chained
 Can't be chained 
 ```
 
-[查找是否可以将字符串数组链接成一个圆| 设置 2](https://www.geeksforgeeks.org/find-array-strings-can-chained-form-circle-set-2/)
+[查找是否可以将字符串数组链接成一个圆 | 系列 2](https://www.geeksforgeeks.org/find-array-strings-can-chained-form-circle-set-2/)
 
 本文由 **Piyush Gupta** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 

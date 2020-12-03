@@ -1,4 +1,4 @@
-# 一些有趣的最短路径问题| 设置 1
+# 一些有趣的最短路径问题 | 系列 1
 
 > 原文： [https://www.geeksforgeeks.org/interesting-shortest-path-questions-set-1/](https://www.geeksforgeeks.org/interesting-shortest-path-questions-set-1/)
 

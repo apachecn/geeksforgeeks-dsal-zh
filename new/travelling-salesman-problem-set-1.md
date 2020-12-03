@@ -1,4 +1,4 @@
-# 旅行商问题| 设置 1（朴素和动态编程）
+# 旅行商问题 | 系列 1（朴素和动态编程）
 
 > 原文： [https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/](https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/)
 
@@ -48,7 +48,7 @@ Else if size of S is greater than 2.
 
 我们将很快讨论旅行商问题的近似算法。
 
-下一篇文章：[旅行商问题| 设置 2](https://www.geeksforgeeks.org/travelling-salesman-problem-set-2-approximate-using-mst/)
+下一篇文章：[旅行商问题 | 系列 2](https://www.geeksforgeeks.org/travelling-salesman-problem-set-2-approximate-using-mst/)
 
 **参考**：
 

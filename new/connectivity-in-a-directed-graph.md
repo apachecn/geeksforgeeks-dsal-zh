@@ -1,4 +1,4 @@
-# 检查图形是否牢固连接| 设置 1（使用 DFS 的 Kosaraju）
+# 检查图形是否牢固连接 | 系列 1（使用 DFS 的 Kosaraju）
 
 > 原文： [https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/](https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/)
 

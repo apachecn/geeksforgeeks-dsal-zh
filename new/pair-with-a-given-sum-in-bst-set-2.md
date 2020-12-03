@@ -1,4 +1,4 @@
-# 与 BST 中的给定总和配对| 设置 2
+# 与 BST 中的给定总和配对 | 系列 2
 
 > 原文： [https://www.geeksforgeeks.org/pair-with-a-given-sum-in-bst-set-2/](https://www.geeksforgeeks.org/pair-with-a-given-sum-in-bst-set-2/)
 

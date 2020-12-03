@@ -1,4 +1,4 @@
-# 联合查找算法| 第 2 组（按等级和路径压缩合并）
+# 联合查找算法 | 系列 2（按等级和路径压缩合并）
 
 > 原文： [https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
 
@@ -611,11 +611,11 @@ Graph contains cycle
 
 **相关文章**：
 
-[联合查找算法| 集合 1（无向图中的检测周期）](https://www.geeksforgeeks.org/union-find/)
+[联合查找算法 | 系列 1（无向图中的检测周期）](https://www.geeksforgeeks.org/union-find/)
 
 [脱节集数据结构（Java 实现）](https://www.geeksforgeeks.org/disjoint-set-data-structures-java-implementation/)
 
-[贪婪算法| 第 2 组（Kruskal 的最小生成树算法）](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)，
+[贪婪算法 | 系列 2（Kruskal 的最小生成树算法）](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)，
 
 [作业排序问题| 组 2（使用不交集）](https://www.geeksforgeeks.org/job-sequencing-using-disjoint-set-union/)
 

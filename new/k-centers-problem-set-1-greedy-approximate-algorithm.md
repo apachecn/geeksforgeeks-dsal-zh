@@ -1,4 +1,4 @@
-# K 中心问题| 设置 1（贪婪近似算法）
+# K 中心问题 | 系列 1（贪婪近似算法）
 
 > 原文： [https://www.geeksforgeeks.org/k-centers-problem-set-1-greedy-approximate-algorithm/](https://www.geeksforgeeks.org/k-centers-problem-set-1-greedy-approximate-algorithm/)
 

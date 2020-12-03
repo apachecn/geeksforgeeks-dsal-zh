@@ -1,4 +1,4 @@
-# 检查给定的有向图是否牢固连接| 第 2 组（使用 BFS 的 Kosaraju）
+# 检查给定的有向图是否牢固连接 | 系列 2（使用 BFS 的 Kosaraju）
 
 > 原文： [https://www.geeksforgeeks.org/check-given-directed-graph-strongly-connected-set-2-kosaraju-using-bfs/](https://www.geeksforgeeks.org/check-given-directed-graph-strongly-connected-set-2-kosaraju-using-bfs/)
 

@@ -1,4 +1,4 @@
-# 三星半导体研究所（SSIR 软件）实习生/ FTE | 第 3 组
+# 三星半导体研究所（SSIR 软件）实习生/ FTE | 系列 3
 
 > 原文： [https://www.geeksforgeeks.org/samsung-semiconductor-institute-of-researchssir-software-intern-fte-set-3/](https://www.geeksforgeeks.org/samsung-semiconductor-institute-of-researchssir-software-intern-fte-set-3/)
 

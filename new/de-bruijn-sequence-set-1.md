@@ -1,4 +1,4 @@
-# De Bruijn 序列| 设置 1
+# De Bruijn 序列 | 系列 1
 
 > 原文： [https://www.geeksforgeeks.org/de-bruijn-sequence-set-1/](https://www.geeksforgeeks.org/de-bruijn-sequence-set-1/)
 

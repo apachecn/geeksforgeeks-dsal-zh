@@ -1,4 +1,4 @@
-# 使用 STL 进行竞争性编程的图形实现| 设置 2（加权图）
+# 使用 STL 进行竞争性编程的图形实现 | 系列 2（加权图）
 
 > 原文： [https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-2-weighted-graph/](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-2-weighted-graph/)
 

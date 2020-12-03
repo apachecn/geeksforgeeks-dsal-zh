@@ -27,7 +27,7 @@ Note :  There are two possible MSTs, the other
 
 我们下面讨论了 Kruskal 的 MST 实现。
 
-[贪心算法| 第 2 组（Kruskal 的最小生成树算法）](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)
+[贪心算法 | 系列 2（Kruskal 的最小生成树算法）](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)
 
 以下是使用 Kruskal 算法查找 MST 的步骤
 

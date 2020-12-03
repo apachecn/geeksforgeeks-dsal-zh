@@ -483,7 +483,7 @@ Vertex   Distance from Source
 
 3.  该代码查找从源到所有顶点的最短距离。 如果我们在最短的距离只关心从源到单个目标，我们可以在拾取最小距离顶点等于目标（该算法的步骤 3.A）打破的循环。
 
-4.  实现的时间复杂度为 O（V ^ 2）。 如果使用邻接表表示输入[图，则可以在二进制堆的帮助下将其减小为 O（E log V）。 有关更多详细信息，请参见](https://www.geeksforgeeks.org/graph-and-its-representations/) [Dijkstra 的邻接表表示算法](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)。
+4.  实现的时间复杂度为`O(V ^ 2)`。 如果使用邻接表表示输入[图，则可以在二进制堆的帮助下将其减小为 O（E log V）。 有关更多详细信息，请参见](https://www.geeksforgeeks.org/graph-and-its-representations/) [Dijkstra 的邻接表表示算法](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)。
 
 5.   Dijkstra 算法不适用于负周期为负的图形，它可能会为负边界的图形提供正确的结果。 对于负边沿和周期为负的图形，可以使用 [Bellman-Ford 算法](http://en.wikipedia.org/wiki/Bellman-Ford_algorithm)，我们很快将在单独的文章中进行讨论。
 

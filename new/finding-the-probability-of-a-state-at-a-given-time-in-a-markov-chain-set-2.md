@@ -1,4 +1,4 @@
-# 查找马尔可夫链中给定时间的状态概率| 设置 2
+# 查找马尔可夫链中给定时间的状态概率 | 系列 2
 
 > 原文： [https://www.geeksforgeeks.org/finding-the-probability-of-a-state-at-a-given-time-in-a-markov-chain-set-2/](https://www.geeksforgeeks.org/finding-the-probability-of-a-state-at-a-given-time-in-a-markov-chain-set-2/)
 

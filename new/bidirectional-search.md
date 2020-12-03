@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/bidirectional-search/](https://www.geeksforgeeks.org/bidirectional-search/)
 
-搜索图形是一个非常著名的问题，并且有很多实际用途。 我们已经在这里讨论了 [](https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-given-graph/) ，如何使用 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 从源顶点开始搜索目标顶点。 在使用 BFS / DFS 的普通图搜索中，我们通常从源顶点到目标顶点**沿一个方向开始搜索，但是如果同时从两个方向开始搜索该怎么办。**
+搜索图形是一个非常著名的问题，并且有很多实际用途。 我们已经在这里讨论了 [](https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-given-graph/) ，如何使用 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 从源顶点开始搜索目标顶点。 在使用 BFS/DFS 的普通图搜索中，我们通常从源顶点到目标顶点**沿一个方向开始搜索，但是如果同时从两个方向开始搜索该怎么办。**
 
 双向搜索是一种图搜索算法，可以找到通往目标顶点的最小路径形式。 它同时运行两个搜索–
 
@@ -24,7 +24,7 @@
 
 因为在许多情况下它速度更快，所以可以大大减少所需的勘探量。
 
-假设树的分支因子为`b`，目标顶点到源的距离为`d`，则正常的 BFS / DFS 搜索复杂度将为 *O（b [ <sup>d</sup> ）。* 另一方面，如果我们执行两次搜索操作，则每次搜索的复杂度将为 *O（b <sup>d / 2</sup> ）*，总复杂度将为 *O （b <sup>d / 2</sup> + b <sup>d / 2</sup> ）*远小于 *O（b <sup>d</sup> ）*。
+假设树的分支因子为`b`，目标顶点到源的距离为`d`，则正常的 BFS/DFS 搜索复杂度将为`O(b ^ d)`。另一方面，如果我们执行两次搜索操作，则每次搜索的复杂度将为`O(b ^ (d/2))`，总复杂度将为 `O(b ^ (d/2) + b ^ (d/2))`远小于`O(b ^ d)`。
 
 **何时使用双向方法？**
 
@@ -40,7 +40,7 @@
 
 *   最佳性：如果将 BFS 用于搜索并且路径成本统一，则是最佳选择。
 
-*   时空复杂度：时空复杂度为 *O（b <sup>d / 2</sup> ）。*
+*   时空复杂度：时空复杂度为`O(b ^ (d/2))`。
 
 下面是一个非常简单的实现，表示使用 BFS 进行双向搜索的概念。 此实现考虑没有任何权重的无向路径。
 

@@ -1,4 +1,4 @@
-# Karger 的“最小切割”算法| 第 2 组（分析和应用）
+# Karger 的“最小切割”算法 | 系列 2（分析和应用）
 
 > 原文： [https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-2-analysis-and-applications/](https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-2-analysis-and-applications/)
 

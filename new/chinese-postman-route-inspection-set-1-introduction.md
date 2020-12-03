@@ -1,4 +1,4 @@
-# 中国邮递员或路线检查| 第 1 组（简介）
+# 中国邮递员或路线检查 | 系列 1（简介）
 
 > 原文： [https://www.geeksforgeeks.org/chinese-postman-route-inspection-set-1-introduction/](https://www.geeksforgeeks.org/chinese-postman-route-inspection-set-1-introduction/)
 

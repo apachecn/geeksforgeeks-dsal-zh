@@ -1,4 +1,4 @@
-# 证明集团决策问题是 NP 完全的| 设置 2
+# 证明集团决策问题是 NP 完全的 | 系列 2
 
 > 原文： [https://www.geeksforgeeks.org/proof-that-clique-decision-problem-is-np-complete-set-2/](https://www.geeksforgeeks.org/proof-that-clique-decision-problem-is-np-complete-set-2/)
 

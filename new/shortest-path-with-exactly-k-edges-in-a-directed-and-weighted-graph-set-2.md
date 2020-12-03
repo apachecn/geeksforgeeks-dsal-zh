@@ -1,4 +1,4 @@
-# 在有向图和加权图中具有恰好 k 个边的最短路径| 设置 2
+# 在有向图和加权图中具有恰好 k 个边的最短路径 | 系列 2
 
 > 原文： [https://www.geeksforgeeks.org/shortest-path-with-exactly-k-edges-in-a-directed-and-weighted-graph-set-2/](https://www.geeksforgeeks.org/shortest-path-with-exactly-k-edges-in-a-directed-and-weighted-graph-set-2/)
 

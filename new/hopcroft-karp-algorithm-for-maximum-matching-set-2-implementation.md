@@ -1,10 +1,10 @@
-# 用于最大匹配的 Hopcroft-Karp 算法| 第 2 组（实施）
+# 用于最大匹配的 Hopcroft-Karp 算法 | 系列 2（实施）
 
 > 原文： [https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-2-implementation/](https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-2-implementation/)
 
 我们强烈建议您先参考以下帖子。
 
-[用于最大匹配的 Hopcroft-Karp 算法| 第 1 组（简介）](https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-1-introduction/)
+[用于最大匹配的 Hopcroft-Karp 算法 | 系列 1（简介）](https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-1-introduction/)
 
 在开始实施之前，没有什么要注意的重要事情。
 

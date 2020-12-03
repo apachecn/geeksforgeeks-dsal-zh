@@ -1,4 +1,4 @@
-# 查找是否可以将字符串数组链接成一个圆| 设置 2
+# 查找是否可以将字符串数组链接成一个圆 | 系列 2
 
 > 原文： [https://www.geeksforgeeks.org/find-array-strings-can-chained-form-circle-set-2/](https://www.geeksforgeeks.org/find-array-strings-can-chained-form-circle-set-2/)
 

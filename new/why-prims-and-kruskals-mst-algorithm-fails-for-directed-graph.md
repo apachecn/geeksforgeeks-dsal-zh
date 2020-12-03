@@ -6,7 +6,7 @@
 
 *   [图及其表示](https://www.geeksforgeeks.org/graph-and-its-representations/)
 
-*   [贪心算法| 设置 5（Prim 的最小生成树（MST））](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)
+*   [贪心算法 | 系列 5（Prim 的最小生成树（MST））](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)
 
 *   [Kruskal 的最小生成树算法| 贪婪算法 2](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
 

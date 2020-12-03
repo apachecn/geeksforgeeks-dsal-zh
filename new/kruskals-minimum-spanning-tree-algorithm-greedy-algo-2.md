@@ -22,9 +22,9 @@
 
 步骤 2 使用[联合查找算法](https://www.geeksforgeeks.org/union-find/)检测周期。 因此，我们建议您先阅读以下内容。
 
-[联合查找算法| 集合 1（图形中的检测周期）](https://www.geeksforgeeks.org/union-find/)，
+[联合查找算法 | 系列 1（图形中的检测周期）](https://www.geeksforgeeks.org/union-find/)，
 
-[联合查找算法| 集合 2（按等级和路径压缩的并集）](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
+[联合查找算法 | 系列 2（按等级和路径压缩的并集）](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
 
 该算法是贪婪算法。 贪婪的选择是选择重量最小的边沿，该边沿不会在到目前为止构造的 MST 中引起循环。 让我们以一个示例来理解它：考虑以下输入图。
 

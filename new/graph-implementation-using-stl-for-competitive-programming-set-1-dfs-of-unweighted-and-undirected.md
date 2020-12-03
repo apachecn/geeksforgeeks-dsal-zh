@@ -1,4 +1,4 @@
-# 使用 STL 进行竞争性编程的图形实现| 设置 1（未加权和无向的 DFS）
+# 使用 STL 进行竞争性编程的图形实现 | 系列 1（未加权和无向的 DFS）
 
 > 原文： [https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-1-dfs-of-unweighted-and-undirected/](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-1-dfs-of-unweighted-and-undirected/)
 
@@ -89,7 +89,7 @@ int main()
 
 **以下是相关文章**：
 
-[使用 STL 进行竞争性编程的图形实现| 集合 2（加权图）](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-2-weighted-graph/)
+[使用 STL 进行竞争性编程的图形实现 | 系列 2（加权图）](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-2-weighted-graph/)
 
 [使用 STL 的 priority_queue 的 Dijkstra 最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/)
 

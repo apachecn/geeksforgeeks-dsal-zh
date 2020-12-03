@@ -1,4 +1,4 @@
-# 推送重新标记算法| 第 1 组（简介和插图）
+# 推送重新标记算法 | 系列 1（简介和插图）
 
 > 原文： [https://www.geeksforgeeks.org/push-relabel-algorithm-set-1-introduction-and-illustration/](https://www.geeksforgeeks.org/push-relabel-algorithm-set-1-introduction-and-illustration/)
 
@@ -167,7 +167,7 @@ to one edge shown above.
 
 上面的示例取自[此处](http://melodi.ee.washington.edu/~bilmes/grg/pushrelabel1.ppt)。
 
-[推送重新标记算法| 第 2 组（实施）](https://www.geeksforgeeks.org/push-relabel-algorithm-set-2-implementation/)
+[推送重新标记算法 | 系列 2（实施）](https://www.geeksforgeeks.org/push-relabel-algorithm-set-2-implementation/)
 
 本文由 **Siddharth Lalwani** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，那么您也可以写一篇文章，并将您的文章邮寄到 contribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
