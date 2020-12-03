@@ -4,7 +4,7 @@
 
 **先决条件**：
 
-*   [图形的 BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
+*   [图的 BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 
 *   [Python 词典](https://www.geeksforgeeks.org/python-dictionary/)
 

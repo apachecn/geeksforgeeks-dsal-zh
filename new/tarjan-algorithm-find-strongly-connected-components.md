@@ -18,7 +18,7 @@ Tarjan 算法基于以下事实：
 
 4.从一个 SCC 到另一个 SCC 没有后边（可以有交叉边，但是在处理图形时将不使用交叉边）。
 
-为了找到 SCC 的头部，我们计算了椎间盘和低位阵列（如[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)，[桥](https://www.geeksforgeeks.org/bridge-in-a-graph/)，[双连接组件](https://www.geeksforgeeks.org/biconnectivity-in-a-graph/)一样）。 如前几篇文章中所述，low [u]表示可以从以 u 为根的子树中找到的最早访问的顶点（发现时间最短的顶点）。 如果 disc [u] = low [u]，则节点 u 为头。
+为了找到 SCC 的头部，我们计算了椎间盘和低位数组（如[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)，[桥](https://www.geeksforgeeks.org/bridge-in-a-graph/)，[双连接组件](https://www.geeksforgeeks.org/biconnectivity-in-a-graph/)一样）。 如前几篇文章中所述，low [u]表示可以从以 u 为根的子树中找到的最早访问的顶点（发现时间最短的顶点）。 如果 disc [u] = low [u]，则节点 u 为头。
 
 下图说明了该方法：
 

@@ -1,4 +1,4 @@
-# 查找到达阵列末端的最小移动次数
+# 查找到达数组末端的最小移动次数
 
 > 原文： [https://www.geeksforgeeks.org/find-the-minimum-number-of-moves-to-reach-end-of-the-array/](https://www.geeksforgeeks.org/find-the-minimum-number-of-moves-to-reach-end-of-the-array/)
 

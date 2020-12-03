@@ -56,7 +56,7 @@ bridge_detect[v] = min(bridge_detect[u], bridge_detect[v])
 
 ```
 
-*   将当前的 **Edges（v，u）**对作为从节点 v 到节点 u 的有向边存储在对阵列中（例如 **arr [] []** ）。
+*   将当前的 **Edges（v，u）**对作为从节点 v 到节点 u 的有向边存储在对数组中（例如 **arr [] []** ）。
 
 *   如果给定图中存在任何桥接，则打印**“ -1”** 。
 

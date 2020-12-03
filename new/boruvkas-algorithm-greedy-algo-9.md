@@ -1,4 +1,4 @@
-# Boruvka 的算法| 贪婪的 Algo-9
+# Boruvka 的算法 | 贪心算法 9
 
 > 原文： [https://www.geeksforgeeks.org/boruvkas-algorithm-greedy-algo-9/](https://www.geeksforgeeks.org/boruvkas-algorithm-greedy-algo-9/)
 
@@ -10,7 +10,7 @@
 
 [Prim 的最小生成树算法](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/)
 
-在这篇文章中，讨论了 Boruvka 的算法。 与 Prim 和 Kruskal 一样，Borvuka 的算法也是 Greedy 算法。 下面是完整的算法。
+在这篇文章中，讨论了 Boruvka 的算法。 与 Prim 和 Kruskal 一样，Borvuka 的算法也是贪心算法。 下面是完整的算法。
 
 ```
 1) Input is a connected, weighted and un-directed graph.
@@ -33,7 +33,7 @@
 
 ![](img/16aae8065a8aa7bda0a6d79e0df2b85a.png "Fig 0") 
 
-最初，MST 为空。 每个顶点都是单一成分，在下图中以蓝色突出显示。
+最初，MST 为空。 每个顶点都是单一组件，在下图中以蓝色突出显示。
 
 ![4](img/c50c8942a605ae42d229d2b5f3dbc6be.png)
 
@@ -53,11 +53,11 @@ Component                Cheapest Edge that connects
   {8}                           2-8 
 ```
 
-最便宜的边以绿色突出显示。 现在，MST 变为{0-1、2-8、2-3、3-4、5-6、6-7}。
+最便宜的边以绿色突出显示。 现在，MST 变为`{0-1, 2-8, 2-3, 3-4, 5-6, 6-7}`。
 
 ![1](img/3ba7ab0a44789d7a8d95fa622f2e5522.png) 
 
-在上述步骤之后，成分为{{0,1}，{2,3,4,8}，{5,6,7}}。 组件被蓝色包围。
+在上述步骤之后，组件为`{{0,1}, {2,3,4,8}, {5,6,7}}`。 组件被蓝色包围。
 
 ![13](img/b4704e60efe313c13b963f758f47838e.png)
 
@@ -71,11 +71,11 @@ Component                Cheapest Edge that connects
   {5,6,7}                      2-5
 ```
 
-最便宜的边以绿色突出显示。 现在，MST 变为{0-1、2-8、2-3、3-4、5-6、6-7、1-2、2-5}
+最便宜的边以绿色突出显示。 现在，MST 变为`{0-1, 2-8, 2-3, 3-4, 5-6, 6-7, 1-2, 2-5}`
 
 ![14](img/ce464d804a2606766fe286ad19a92c4f.png)
 
-在这一阶段，只有一个具有全部边的分量{0、1、2、3、4、5、6、7、8}。 由于仅剩一个组件，因此我们停止并返回 MST。
+在这一阶段，只有一个具有全部边的组件`{0, 1, 2, 3, 4, 5, 6, 7, 8}`。 由于仅剩一个组件，因此我们停止并返回 MST。
 
 **实现**：
 

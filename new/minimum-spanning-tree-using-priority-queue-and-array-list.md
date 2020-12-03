@@ -1,4 +1,4 @@
-# 使用优先级队列和阵列列表的最小生成树
+# 使用优先级队列和数组列表的最小生成树
 
 > 原文： [https://www.geeksforgeeks.org/minimum-spanning-tree-using-priority-queue-and-array-list/](https://www.geeksforgeeks.org/minimum-spanning-tree-using-priority-queue-and-array-list/)
 

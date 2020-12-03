@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-if-the-array-can-be-sorted-using-swaps-between-given-indices-only/](https://www.geeksforgeeks.org/check-if-the-array-can-be-sorted-using-swaps-between-given-indices-only/)
 
-给定大小为`N`的数组 **arr []** ，该数组由以随机顺序排列的 **[0，N – 1]** 范围内的不同整数组成。 还给出了几对，其中每对表示可以交换数组元素的索引。 允许的交换数量没有限制。 任务是查找是否有可能使用这些交换以升序排列阵列。 如果可能，请打印**是**，否则打印**否**。
+给定大小为`N`的数组 **arr []** ，该数组由以随机顺序排列的 **[0，N – 1]** 范围内的不同整数组成。 还给出了几对，其中每对表示可以交换数组元素的索引。 允许的交换数量没有限制。 任务是查找是否有可能使用这些交换以升序排列数组。 如果可能，请打印**是**，否则打印**否**。
 
 **示例**：
 

@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/boggle-set-2-using-trie/](https://www.geeksforgeeks.org/boggle-set-2-using-trie/)
 
-给定字典，这是一种在字典和 M x N 板中进行查询的方法，其中每个单元格都有一个字符。 查找可以由一系列相邻字符组成的所有可能单词。 请注意，我们可以移至 8 个相邻字符中的任何一个，但一个单词不应包含同一单元格的多个实例。
+给定字典，这是一种在字典和`M x N`板中进行查询的方法，其中每个单元格都有一个字符。 查找可以由一系列相邻字符组成的所有可能单词。 请注意，我们可以移至 8 个相邻字符中的任何一个，但一个单词不应包含同一单元格的多个实例。
 
 **示例**：
 
@@ -28,15 +28,15 @@ Explanation:
 
 ```
 
-我们在下面的文章中讨论了基于 Graph DFS 的解决方案。
+我们在下面的文章中讨论了基于图的 DFS 的解决方案。
 
 [Boggle（在一个字符板上查找所有可能的单词） | 系列 1](https://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/)
 
 在这里，我们讨论基于 [Trie](https://www.geeksforgeeks.org/trie-insert-and-search/) 的解决方案，它比基于 DFS 的解决方案更好。
 
-给定字典 dictionary [] = {“ GEEKS”，“ FOR”，“ QUIZ”，“ GO”}
+给定字典`dictionary[] = {"GEEKS", "FOR", "QUIZ", "GO"}`
 
-1.创建一个空的 trie，并将给定字典的所有单词插入 trie
+1.创建一个空的 Trie，并将给定字典的所有单词插入 Trie
 
 ```
 After insertion, Trie looks like(leaf nodes are in RED)
@@ -54,11 +54,9 @@ After insertion, Trie looks like(leaf nodes are in RED)
 
 ```
 
-2.之后，我们仅在 boggle [] []中选择那些是 Trie
+2.之后，我们仅在`boggle[][]`中选择那些是 Trie 根节点的字符。让我们在上面选择`boggle[0][0] = 'G'`，`boggle[2][0] = 'Q'`（它们都存在于`boggle`矩阵中）
 
-根节点的字符。让我们在上面选择'G'boggle [0] [0]，'Q'boggle [2] [ 0]（它们都存在于 boggle 矩阵中）
-
-3.在 trie 中搜索一个单词，该单词以我们在步骤 2 中选择的字符开头
+3.在 Trie 中搜索一个单词，该单词以我们在步骤 2 中选择的字符开头
 
 ```
 1) Create bool visited boolean matrix (Visited[M][N] = false )
