@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/add-and-remove-vertex-in-adjacency-matrix-representation-of-graph/](https://www.geeksforgeeks.org/add-and-remove-vertex-in-adjacency-matrix-representation-of-graph/)
 
-**图**是一组实体的表示，其中一些实体对通过连接链接。 互连的实体由称为顶点的点表示，并且顶点之间的连接称为边。 形式上，图是一对集合（V，E），其中 V 是顶点的集合，而 E 是连接一对顶点的边的集合。
+**图**是一组实体的表示，其中一些实体对通过连接链接。 互连的实体由称为顶点的点表示，并且顶点之间的连接称为边。 形式上，图是一对集合`(V, E)`，其中`V`是顶点的集合，而`E`是连接一对顶点的边的集合。
 
 ![](img/0367379dfea54de2e5d62bef4d18ce2c.png)
 
