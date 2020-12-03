@@ -290,7 +290,7 @@ int main()
 
 **时间复杂度**：O（Stops * N * N），其中 N 是队列中城市和规模的乘积
 
-**辅助空间**：O（N）
+**辅助空间**：`O(N)`
 
 **方法 3：使用** [Dijkstra 算法](https://www.geeksforgeeks.org/c-program-for-dijkstras-shortest-path-algorithm-greedy-algo-7/)
 

@@ -149,7 +149,7 @@ for i in maximalIndependentSet:
 
 ***时间复杂度**：O（2 <sup>N</sup> ）
 
-**辅助空间**：O（N）*
+**辅助空间**：`O(N)`*
 
 
 

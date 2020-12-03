@@ -582,7 +582,7 @@ graph contains cycle
 
 ```
 
-请注意， *union（）*和 *find（）*的实现是幼稚的，在最坏的情况下需要 O（n）时间。 可以使用 *Union by Rank 或 Height* 将这些方法改进为 O（Logn）。 我们很快将在另一篇文章中讨论*排名*联盟。
+请注意， *union（）*和 *find（）*的实现是幼稚的，在最坏的情况下需要`O(N)`时间。 可以使用 *Union by Rank 或 Height* 将这些方法改进为 O（Logn）。 我们很快将在另一篇文章中讨论*排名*联盟。
 
 https://youtu.be/mHz-mx-8lJ8?list=PLqM7alHXFySEaZgcg7uRYJFBnYMLti-nh
 

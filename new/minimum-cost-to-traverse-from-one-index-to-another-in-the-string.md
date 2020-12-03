@@ -36,7 +36,7 @@
 
 4.  在此设置中，可以运行 [0-1 BFS](https://www.geeksforgeeks.org/0-1-bfs-shortest-path-binary-graph/) 来查找从索引“ i”到索引“ j”的最短路径。
 
-**时间复杂度**：O（N ^ 2）–顶点数为 O（N ^ 2）
+**时间复杂度**：`O(N^2)`–顶点数为`O(N^2)`
 
 **有效方法**：
 
@@ -48,7 +48,7 @@
 
 4.  然后， [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 可以在这个新图中从代表 S [i]的节点运行到代表 S [j]的节点
 
-**时间复杂度**：O（N）
+**时间复杂度**：`O(N)`
 
 下面是上述方法的实现：
 

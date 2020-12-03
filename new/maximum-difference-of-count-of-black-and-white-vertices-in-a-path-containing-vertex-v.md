@@ -482,7 +482,7 @@ public static void Main(String[] args)
 
 ```
 
-**时间复杂度**：*O（N）*，其中 N 是树中的顶点数。
+**时间复杂度**：*`O(N)`*，其中 N 是树中的顶点数。
 
 
 

@@ -418,9 +418,9 @@ No
 
 ```
 
-**时间复杂度**：*O（N）*；
+**时间复杂度**：*`O(N)`*；
 
-**辅助空间**：*O（N）*
+**辅助空间**：*`O(N)`*
 
 **方法 2 –使用 DFS**：下面讨论[深度优先搜索（DFS）](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)方法：
 
@@ -764,7 +764,7 @@ No
 
 ```
 
-**时间复杂度**：*O（N）*辅助空间： *O（N）*
+**时间复杂度**：*`O(N)`*辅助空间： *`O(N)`*
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 

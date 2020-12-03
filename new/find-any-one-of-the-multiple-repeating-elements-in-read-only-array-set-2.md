@@ -18,7 +18,7 @@
 > **说明**：
 > 5 是数组中重复的数字之一。
 
-在[先前的文章](https://www.geeksforgeeks.org/find-one-multiple-repeating-elements-read-array/)中，我们讨论了同一篇文章，但篇幅复杂 *O（N）和 O（sqrt（N））*。
+在[先前的文章](https://www.geeksforgeeks.org/find-one-multiple-repeating-elements-read-array/)中，我们讨论了同一篇文章，但篇幅复杂 *`O(N)`和 O（sqrt（N））*。
 
 **方法**：此方法基于 [Floyd 的草龟与野兔算法](//www.geeksforgeeks.org/detect-loop-in-a-linked-list/)（**循环检测算法**）。
 
@@ -305,7 +305,7 @@ public static void Main(String []args)
 
 ```
 
-**时间复杂度**：*O（N）*
+**时间复杂度**：*`O(N)`*
 
 **辅助空间**：*`O(1)`*
 
