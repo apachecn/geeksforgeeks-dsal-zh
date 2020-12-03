@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/path-with-smallest-product-of-edges-with-weight-1/](https://www.geeksforgeeks.org/path-with-smallest-product-of-edges-with-weight-1/)
 
-给定一个有向图，其中有**个 N** 个节点和 **E 个**边缘，其中每个边缘的权重为 **> 1** ，还给出了源`S`和目的地`D`。 任务是找到从`S`到`D`的边的最小积的路径。 如果没有从`S`到`D`的路径，则打印`-1`。
+给定一个有向图，其中有**个 N** 个节点和 **E 个**边，其中每个边的权重为 **> 1** ，还给出了源`S`和目的地`D`。 任务是找到从`S`到`D`的边的最小积的路径。 如果没有从`S`到`D`的路径，则打印`-1`。
 
 **示例**：
 

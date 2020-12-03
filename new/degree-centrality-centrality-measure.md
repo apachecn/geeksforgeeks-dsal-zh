@@ -11,7 +11,7 @@
 对于具有![|V| ](img/81c8e3a613489be835f65f60edfd760f.png "Rendered by QuickLaTeX.com")顶点和![|E|](img/e51a37aa424237f472ffaf7960dd903e.png "Rendered by QuickLaTeX.com")边的给定图![G:=(V,E)](img/35fd59b45bd6e5b55589cd4526181960.png "Rendered by QuickLaTeX.com")，顶点![v](img/4e5b6a045192ef6498ad9dc76f6749da.png "Rendered by QuickLaTeX.com")的度中心定义为
 
 ![C_{D}(v)=\deg(v)](img/5c085fc7db251fb695735d8351c2993b.png "Rendered by QuickLaTeX.com")
-对于图中所有节点的度中心度，在图的密集邻接矩阵表示中采用![\Theta(V^2)](img/d63b3dcad11caba9a6f8fec730abbca9.png "Rendered by QuickLaTeX.com")，对于边缘，在稀疏矩阵表示中采用![\Theta(E)](img/44d1cc30483caa80ab0c43b6667eaae9.png "Rendered by QuickLaTeX.com")。
+对于图中所有节点的度中心度，在图的密集邻接矩阵表示中采用![\Theta(V^2)](img/d63b3dcad11caba9a6f8fec730abbca9.png "Rendered by QuickLaTeX.com")，对于边，在稀疏矩阵表示中采用![\Theta(E)](img/44d1cc30483caa80ab0c43b6667eaae9.png "Rendered by QuickLaTeX.com")。
 
 节点级别的中心性定义可以扩展到整个图，在这种情况下，我们所说的是图中心化。 令![v*](img/b147be2121aa0e71e3050c682b33412f.png "Rendered by QuickLaTeX.com")为![G](img/96d783c7d76e5834a097a794b3cf074e.png "Rendered by QuickLaTeX.com")中具有最高度中心度的节点。 令![X:=(Y,Z)](img/0941caa4615058c25fb8cb3fb594e9fb.png "Rendered by QuickLaTeX.com")为使以下数量最大化的![|Y|](img/3642523848f27f19602aa4ab912ff314.png "Rendered by QuickLaTeX.com")节点连接图（其中![y*](img/cbc1248677a4e00498d52a68b468738f.png "Rendered by QuickLaTeX.com")为![X](img/59b7a374463461b94c69694c7948bf35.png "Rendered by QuickLaTeX.com")中度中心度最高的节点）：
 

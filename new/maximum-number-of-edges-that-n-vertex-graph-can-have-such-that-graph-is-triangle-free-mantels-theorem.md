@@ -16,7 +16,7 @@
 > **说明**：
 > 如果 3 顶点图中有三个边，它将 有一个三角形。
 
-**方法**：可以使用[曼特尔定理](https://en.wikipedia.org/wiki/Tur%C3%A1n%27s_theorem#Mantel's_theorem)解决此问题，该定理指出图形中不包含任何三角形的最大边数是 floor（n <sup>2</sup> / 4 ）。 换句话说，必须删除几乎一半的边缘才能获得无三角形的图形。
+**方法**：可以使用[曼特尔定理](https://en.wikipedia.org/wiki/Tur%C3%A1n%27s_theorem#Mantel's_theorem)解决此问题，该定理指出图形中不包含任何三角形的最大边数是 floor（n <sup>2</sup> / 4 ）。 换句话说，必须删除几乎一半的边才能获得无三角形的图形。
 
 **Mantel 定理是如何工作的？**
 对于任何[图](https://www.geeksforgeeks.org/graph-and-its-representations/)，这样该图是无三角形的，那么对于任何顶点 Z 只能连接到 x 和 y 中任一顶点，即对于 x 和 y 之间连接的任何边 y，d（x）+ d（y）≤N，其中 d（x）和 d（y）是顶点 x 和 y 的度数。

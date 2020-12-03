@@ -18,7 +18,7 @@
 
 **方法**：这个想法是对图形使用 [BFS 遍历。 步骤如下：](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 
-1.  创建一个有向图，使给定图的边缘方向相反。
+1.  创建一个有向图，使给定图的边方向相反。
 2.  创建[队列](http://www.geeksforgeeks.org/queue-data-structure/)，并将**节点 0** 推送到队列中。
 3.  在图表上进行 BFS 遍历期间，请执行以下操作：
     *   从队列中弹出前端节点（例如 **current_node** ）。

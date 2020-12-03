@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-number-of-nodes-to-be-removed-such-that-no-subtree-has-more-than-k-nodes/](https://www.geeksforgeeks.org/minimum-number-of-nodes-to-be-removed-such-that-no-subtree-has-more-than-k-nodes/)
 
-给定一棵树，其中`N`个节点的值从`1`到`N`和**（N – 1）**边，数字为 **K [** 的任务是从树中删除最少数量的节点，以便每个子树最多具有`K`个节点。 移除节点会将边缘从该节点移除到所有其他连接的节点。
+给定一棵树，其中`N`个节点的值从`1`到`N`和**（N – 1）**边，数字为 **K [** 的任务是从树中删除最少数量的节点，以便每个子树最多具有`K`个节点。 移除节点会将边从该节点移除到所有其他连接的节点。
 
 **示例**：
 

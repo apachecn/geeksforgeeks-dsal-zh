@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/number-of-trees-whose-sum-of-degrees-of-all-the-vertices-is-l/](https://www.geeksforgeeks.org/number-of-trees-whose-sum-of-degrees-of-all-the-vertices-is-l/)
 
-给定一个整数`L`，它是某棵树的所有顶点的度数之和。 任务是找到所有这些不同的树（标记为树）的计数。 如果两棵树至少具有一个不同的边缘，则它们是不同的。
+给定一个整数`L`，它是某棵树的所有顶点的度数之和。 任务是找到所有这些不同的树（标记为树）的计数。 如果两棵树至少具有一个不同的边，则它们是不同的。
 
 **示例**：
 

@@ -17,7 +17,7 @@
 本文基本上将讨论 G（n，p）模型，其中 n 是要创建的节点数，p 定义每个节点相互连接的可能性。
 
 **G（n，p）的性质**
-使用上述符号，G（n，p）中的图形平均具有![{\binom{n}{2}}p](img/b67c8689a4825f5fb9a335d18384500e.png "Rendered by QuickLaTeX.com")边缘。 任何特定顶点的度分布都是二项式的：
+使用上述符号，G（n，p）中的图形平均具有![{\binom{n}{2}}p](img/b67c8689a4825f5fb9a335d18384500e.png "Rendered by QuickLaTeX.com")边。 任何特定顶点的度分布都是二项式的：
 
 ![P(deg(v)=k)=\binom{n-1}{k}{p^k}{1-p^{n-1-k}}](img/c7d3d1e53413eeb7b694c6afed8ceed0.png "Rendered by QuickLaTeX.com")
 
@@ -44,7 +44,7 @@ G（n，p）模型以概率 p 选择每个可能的边。
 函数 binomial_graph（）和 erdos_renyi_graph（）是此函数的别名。
 
 *参数：n（int）-节点数。
-p（浮点数）–边缘创建的概率。
+p（浮点数）–边创建的概率。
 种子（int，可选）–随机数生成器的种子（默认=无）。
 有向（布尔型，可选（默认= False））–如果为 True，则此函数返回有向图。*
 

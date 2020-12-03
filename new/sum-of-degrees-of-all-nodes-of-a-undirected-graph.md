@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/sum-of-degrees-of-all-nodes-of-a-undirected-graph/](https://www.geeksforgeeks.org/sum-of-degrees-of-all-nodes-of-a-undirected-graph/)
 
-给定图的边缘列表，我们必须找到无向图的所有节点的度数之和。
+给定图的边列表，我们必须找到无向图的所有节点的度数之和。
 **范例**
 ![](img/b2088932180352eba20c13c87009b183.png)
 **范例**：

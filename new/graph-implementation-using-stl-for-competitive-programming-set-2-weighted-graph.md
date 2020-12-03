@@ -9,7 +9,7 @@
 我们使用两个 STL 容器来表示图：
 
 *   [vector：](http://quiz.geeksforgeeks.org/vector-sequence-containers-the-c-standard-template-library-stl-set-1/)一个序列容器。 在这里，我们使用它来存储所有顶点的邻接列表。 我们使用顶点数作为该向量的索引。
-*   [对：](http://quiz.geeksforgeeks.org/pair-simple-containers-the-c-standard-template-library-stl/)一个简单的容器，用于存储元素对。 在这里，我们使用它来存储相邻的顶点数量和连接到相邻边缘的权重。
+*   [对：](http://quiz.geeksforgeeks.org/pair-simple-containers-the-c-standard-template-library-stl/)一个简单的容器，用于存储元素对。 在这里，我们使用它来存储相邻的顶点数量和连接到相邻边的权重。
 
 这个想法是使用一对向量的向量。 下面的代码实现相同。
 

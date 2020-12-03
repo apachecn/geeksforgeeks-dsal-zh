@@ -18,11 +18,11 @@ Dfs step-wise(including backtracking) is:
 
 ```
 
-**注意**：刚刚在上图中添加了边缘之间的权重，它在 DFS 遍历中没有任何作用。
+**注意**：刚刚在上图中添加了边之间的权重，它在 DFS 遍历中没有任何作用。
 
 ![](img/2d27ed151c265904449bc33d2524394b.png)
 
-**方法：此处将使用** [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 和[回溯](http://www.geeksforgeeks.org/backtracking-algorithms/)。 首先，使用 DFS 同时访问每个节点，并跟踪先前使用的边缘和父节点。 如果某个节点的所有相邻节点都已被访问过，则使用上次使用的边缘回溯并打印该节点。 继续执行步骤，在每一步，父节点将成为当前节点。 继续上述步骤，找到图形的完整 DFS 遍历。
+**方法：此处将使用** [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 和[回溯](http://www.geeksforgeeks.org/backtracking-algorithms/)。 首先，使用 DFS 同时访问每个节点，并跟踪先前使用的边和父节点。 如果某个节点的所有相邻节点都已被访问过，则使用上次使用的边回溯并打印该节点。 继续执行步骤，在每一步，父节点将成为当前节点。 继续上述步骤，找到图形的完整 DFS 遍历。
 
 下面是上述方法的实现：
 

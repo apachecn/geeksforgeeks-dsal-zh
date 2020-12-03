@@ -1,4 +1,4 @@
-# 程序来查找轮图的直径，周期和边缘
+# 程序来查找轮图的直径，周期和边
 
 > 原文： [https://www.geeksforgeeks.org/program-to-find-the-diameter-cycles-and-edges-of-a-wheel-graph/](https://www.geeksforgeeks.org/program-to-find-the-diameter-cycles-and-edges-of-a-wheel-graph/)
 

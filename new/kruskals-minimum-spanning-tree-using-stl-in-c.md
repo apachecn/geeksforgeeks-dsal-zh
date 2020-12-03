@@ -31,8 +31,8 @@ Note :  There are two possible MSTs, the other
 
 以下是使用 Kruskal 算法查找 MST 的步骤
 
-1.  按重量的递减顺序对所有边缘进行排序。
-2.  选择最小的边缘。 检查它是否与形成的生成树形成一个循环。 如果未形成循环，则包括该边。 否则，将其丢弃。
+1.  按重量的递减顺序对所有边进行排序。
+2.  选择最小的边。 检查它是否与形成的生成树形成一个循环。 如果未形成循环，则包括该边。 否则，将其丢弃。
 3.  重复步骤 2，直到生成树中有（V-1）个边。
 
 以下是对我们使用 STL 实施 Kruskal 算法的一些关键点。
@@ -253,7 +253,7 @@ int main()
 ```
 
 **优化**：
-上面的代码可以优化，以在所选边的数量变为 V-1 时停止 Kruskal 的主循环。 我们知道 MST 具有 V-1 边缘，并且在选择 V-1 边缘后没有点迭代。 我们没有添加此优化来使代码保持简单。
+上面的代码可以优化，以在所选边的数量变为 V-1 时停止 Kruskal 的主循环。 我们知道 MST 具有 V-1 边，并且在选择 V-1 边后没有点迭代。 我们没有添加此优化来使代码保持简单。
 
 **参考**：
 [Cormen Leiserson Rivest and Stein（CLRS）3 的算法简介](http://www.amazon.in/Introduction-Algorithms-Thomas-H-Cormen/dp/8120340078/ref=sr_1_1?ie=UTF8&qid=1459619144&sr=8-1&keywords=clrs)

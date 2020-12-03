@@ -3,7 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/count-the-number-of-walks-of-length-n-where-cost-of-each-walk-is-equal-to-a-given-number/](https://www.geeksforgeeks.org/count-the-number-of-walks-of-length-n-where-cost-of-each-walk-is-equal-to-a-given-number/)
 
 给定一个加权的无向图，步长 N 和 CostX。任务是计算长度 N 的不同步长 W 的数量，以使 **Cost（W）= X** 。
-我们将步行的成本 W 定义为步行沿边缘的权重中的最大值。
+我们将步行的成本 W 定义为步行沿边的权重中的最大值。
 节点从 1 到 n 编号。 该图不包含任何多个边或自环。
 
 **示例**：

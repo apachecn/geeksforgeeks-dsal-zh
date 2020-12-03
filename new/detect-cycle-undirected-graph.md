@@ -31,8 +31,8 @@
 *   [有向图](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)的循环检测。
 *   [联合查找算法，用于无向图中的循环检测。](https://www.geeksforgeeks.org/union-find/)
 
-**方法**：从每个未访问的节点运行 DFS。 [深度优先遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)可用于检测图形中的循环。 连接图的 DFS 生成一棵树。 仅在图形中存在后边缘的情况下，图形中才会存在一个循环。 后边缘是将节点连接到其自身（自循环）或 DFS 生成的树中其祖先之一的边缘。
-要找到其任何祖先的后边缘，请保留一个访问数组，如果有任何访问节点的后边缘，则存在一个循环并返回 true。
+**方法**：从每个未访问的节点运行 DFS。 [深度优先遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)可用于检测图形中的循环。 连接图的 DFS 生成一棵树。 仅在图形中存在后边的情况下，图形中才会存在一个循环。 后边是将节点连接到其自身（自循环）或 DFS 生成的树中其祖先之一的边。
+要找到其任何祖先的后边，请保留一个访问数组，如果有任何访问节点的后边，则存在一个循环并返回 true。
 **算法**：
 
 1.  使用给定数量的边和顶点创建图形。

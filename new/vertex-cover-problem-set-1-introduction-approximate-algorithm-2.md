@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/vertex-cover-problem-set-1-introduction-approximate-algorithm-2/](https://www.geeksforgeeks.org/vertex-cover-problem-set-1-introduction-approximate-algorithm-2/)
 
-无向图的顶点覆盖是其顶点的子集，因此对于图的每个边（u，v），“ u”或“ v”都在顶点覆盖中。 尽管名称为“顶点覆盖”，但该集合覆盖了给定图形的所有边缘。 ***给定一个无向图，顶点覆盖问题是找到最小尺寸的顶点覆盖*** 。
+无向图的顶点覆盖是其顶点的子集，因此对于图的每个边（u，v），“ u”或“ v”都在顶点覆盖中。 尽管名称为“顶点覆盖”，但该集合覆盖了给定图形的所有边。 ***给定一个无向图，顶点覆盖问题是找到最小尺寸的顶点覆盖*** 。
 以下是一些示例。
 
 ![VertexCover](img/87bd7bd460f0e2648534ae16a5fd4969.png)

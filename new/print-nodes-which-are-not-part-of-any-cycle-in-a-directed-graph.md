@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/print-nodes-which-are-not-part-of-any-cycle-in-a-directed-graph/](https://www.geeksforgeeks.org/print-nodes-which-are-not-part-of-any-cycle-in-a-directed-graph/)
 
-给定有向[图](https://www.geeksforgeeks.org/introduction-to-graphs/) G`N`个节点和`E`由值 **[0，N – 1]** 和[的节点组成的边 类型为[`u`，`v`}的 2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/) **Edges [] [2]** ，表示顶点之间的[定向边缘 和`v`。 任务是在给定图`G`中找到不属于任何周期的节点。](https://www.geeksforgeeks.org/minimum-number-of-edges-between-two-vertices-of-a-graph/)
+给定有向[图](https://www.geeksforgeeks.org/introduction-to-graphs/) G`N`个节点和`E`由值 **[0，N – 1]** 和[的节点组成的边 类型为[`u`，`v`}的 2D 数组](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/) **Edges [] [2]** ，表示顶点之间的[定向边 和`v`。 任务是在给定图`G`中找到不属于任何周期的节点。](https://www.geeksforgeeks.org/minimum-number-of-edges-between-two-vertices-of-a-graph/)
 
 **示例**：
 

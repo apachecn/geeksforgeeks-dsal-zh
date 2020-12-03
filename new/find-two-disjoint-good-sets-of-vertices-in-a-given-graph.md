@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/find-two-disjoint-good-sets-of-vertices-in-a-given-graph/](https://www.geeksforgeeks.org/find-two-disjoint-good-sets-of-vertices-in-a-given-graph/)
 
-给定具有`N`个顶点和`M`边的无向非加权图。 任务是找到两个不相交的良好顶点集。 如果对于图中的每个边缘 UV，至少一个端点属于 X（即，U 或 V 或 U 和 V 都属于 X），则集合 X 被称为良好。
+给定具有`N`个顶点和`M`边的无向非加权图。 任务是找到两个不相交的良好顶点集。 如果对于图中的每个边 UV，至少一个端点属于 X（即，U 或 V 或 U 和 V 都属于 X），则集合 X 被称为良好。
 如果无法进行此类设置，则打印-1。
 **范例**：
 
@@ -21,7 +21,7 @@
 > **输出**：-1
 
 **方法**：
-观察结果之一是，没有 U 和 V 在同一集合中的边缘 UV。两个好的集合构成了图的二等分，因此该图必须是二分的 。 而且两党也足够。 在上阅读有关分区[的信息。
+观察结果之一是，没有 U 和 V 在同一集合中的边 UV。两个好的集合构成了图的二等分，因此该图必须是二分的 。 而且两党也足够。 在上阅读有关分区[的信息。
 以下是上述方法的实现：](https://www.geeksforgeeks.org/bipartite-graph/) 
 
 ## C++

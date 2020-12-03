@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-if-alternate-path-exists-from-u-to-v-with-smaller-individual-weight-in-a-given-graph/](https://www.geeksforgeeks.org/check-if-alternate-path-exists-from-u-to-v-with-smaller-individual-weight-in-a-given-graph/)
 
-给定一个有向加权图，该图具有 **N 个**顶点和 **M 个**边缘以及一个边缘**（U，V）**。 任务是查找是否存在从`U`到`V`的替代路径，替代路径中边的单个权重小于直接路径的权重。 如果存在，则打印**是**，否则打印**否**。
+给定一个有向加权图，该图具有 **N 个**顶点和 **M 个**边以及一个边**（U，V）**。 任务是查找是否存在从`U`到`V`的替代路径，替代路径中边的单个权重小于直接路径的权重。 如果存在，则打印**是**，否则打印**否**。
 
 **范例**
 
@@ -25,8 +25,8 @@
 **方法**：
 
 *   使用[深度优先搜索（DFS）遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)遍历给定的[有向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)和起始顶点`U`。
-*   在 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)期间，如果任何边缘的权重大于有向边缘，则不包括该路径。
-*   如果到达顶点`V`，而遍历路径中每个边缘的权重小于有向边缘，则存在替代路径。
+*   在 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)期间，如果任何边的权重大于有向边，则不包括该路径。
+*   如果到达顶点`V`，而遍历路径中每个边的权重小于有向边，则存在替代路径。
 *   另外，在顶点`U`和顶点`V`之间没有其他路径。
 
 下面是上述方法的实现：

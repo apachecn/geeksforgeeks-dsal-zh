@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-if-incoming-edges-in-a-vertex-of-directed-graph-is-equal-to-vertex-itself-or-not/](https://www.geeksforgeeks.org/check-if-incoming-edges-in-a-vertex-of-directed-graph-is-equal-to-vertex-itself-or-not/)
 
-给定**有向图 G（V，E）**具有`V`顶点和`E`边，任务是检查给定图的所有顶点， 顶点中的传入边缘等于或不等于顶点本身。
+给定**有向图 G（V，E）**具有`V`顶点和`E`边，任务是检查给定图的所有顶点， 顶点中的传入边等于或不等于顶点本身。
 **范例**：
 
 > **输入**：
@@ -13,7 +13,7 @@
 > **说明**：
 > 对于顶点 0，有 0 个输入边，对于顶点 1，有 1 个输入边。 顶点 2 和 3 相同。
 
-**方法**：想法是遍历每个顶点的邻接列表，并从 i 开始增加具有输入边缘的每个顶点的边缘计数。 对每个顶点重复上述步骤，然后检查所有等于或不等于顶点值的顶点的度数。
+**方法**：想法是遍历每个顶点的邻接列表，并从 i 开始增加具有输入边的每个顶点的边计数。 对每个顶点重复上述步骤，然后检查所有等于或不等于顶点值的顶点的度数。
 
 下面是上述方法的实现：
 

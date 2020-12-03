@@ -4,7 +4,7 @@
 
 给定一个表示流网络的图形，其中每个边都有容量。 还给定图中的两个顶点*源*'s'和*接收器*'t'，请找到具有以下约束的从 s 到 t 的最大可能流量：
 
-**a）**边缘上的流量不超过边缘的给定容量。
+**a）**边上的流量不超过边的给定容量。
 
 **b）**除 s 和 t 之外，每个顶点的流入流量等于流出流量。
 
@@ -41,7 +41,7 @@ Push-Relabel 方法比 Ford-Fulkerson 算法更有效。 本文讨论了 Goldber
                             Total Outflow from u
     ```
 
-*   像福特富尔克森。 每个边缘都有一个**流量**（指示电流）和一个**容量**
+*   像福特富尔克森。 每个边都有一个**流量**（指示电流）和一个**容量**
 
 以下是完整算法的抽象步骤。
 
@@ -75,7 +75,7 @@ Push-Relabel 算法中有三个主要操作
        excess flow is equal to capacity initially.
     ```
 
-2.  **Push（）**用于从流量过大的节点产生流量。 如果顶点有多余的流动，并且有一个相邻的高度较小（在残差图中），我们将流动从顶点推到相邻的较低高度。 通过管道（边缘）的推动流量等于多余流量和边缘容量的最小值。
+2.  **Push（）**用于从流量过大的节点产生流量。 如果顶点有多余的流动，并且有一个相邻的高度较小（在残差图中），我们将流动从顶点推到相邻的较低高度。 通过管道（边）的推动流量等于多余流量和边容量的最小值。
 3.  **Relabel（）**操作用于顶点流动过多且相邻顶点都不处于较低高度的情况。 我们基本上增加了顶点的高度，以便可以执行 push（）。 为了增加高度，我们选择相邻的最小高度（在残差图中，即可以添加流量的相邻高度）并对其加 1。
 
 注意，以上操作是在残差图上执行的（例如 [Ford-Fulkerson](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/) ）。
@@ -85,7 +85,7 @@ Push-Relabel 算法中有三个主要操作
 Before we proceed to below example, we need to make sure that we understand residual graph (See [this](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/) for more details of residual graph). Residual graph is different from graphs shown.
 
 每当我们将顶点 u 的流量推入或添加到 v 时，我们都会在残差图中进行以下更新：
-1）我们从 u 到 v 的边缘容量中减去流量。如果边缘的容量变为 0，则 边缘不再存在于残差图中。
+1）我们从 u 到 v 的边容量中减去流量。如果边的容量变为 0，则 边不再存在于残差图中。
 2）我们将流量增加到从 v 到 u 的边容量。
 
 ```

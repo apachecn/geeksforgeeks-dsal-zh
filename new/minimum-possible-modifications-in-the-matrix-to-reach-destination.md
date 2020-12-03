@@ -210,7 +210,7 @@ int main()
 **时间复杂度**：![O(N * M * log(N * M))](img/f11bb75c1e4c23de4e450c4b21a0492c.png "Rendered by QuickLaTeX.com")
 
 **方法 2**
-此处，边缘权重为 0，仅 1，即 0-1 图。 使用 [0-1 BFS](https://www.geeksforgeeks.org/0-1-bfs-shortest-path-binary-graph/) 可找到此类图中的最短路径。
+此处，边权重为 0，仅 1，即 0-1 图。 使用 [0-1 BFS](https://www.geeksforgeeks.org/0-1-bfs-shortest-path-binary-graph/) 可找到此类图中的最短路径。
 
 下面是上述方法的实现：
 

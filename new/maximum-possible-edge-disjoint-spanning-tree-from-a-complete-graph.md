@@ -1,10 +1,10 @@
-# 来自完整图形的最大可能边缘不交集生成树
+# 来自完整图形的最大可能边不交集生成树
 
 > 原文： [https://www.geeksforgeeks.org/maximum-possible-edge-disjoint-spanning-tree-from-a-complete-graph/](https://www.geeksforgeeks.org/maximum-possible-edge-disjoint-spanning-tree-from-a-complete-graph/)
 
-给出具有 N 个顶点的完整图形。 任务是找出可能的边缘不相交生成树的最大数量。
+给出具有 N 个顶点的完整图形。 任务是找出可能的边不相交生成树的最大数量。
 
-**边缘不相交的生成树**是生成树，其中集合中没有两个树具有相同的边缘。
+**边不相交的生成树**是生成树，其中集合中没有两个树具有相同的边。
 
 **示例**：
 
@@ -31,7 +31,7 @@ Max Edge-disjoint spanning tree = floor(N / 2)
 **具有 4 个顶点的完整图形**
 
 ![](img/62884a6753c17da0729b20c1daf93bd6.png)
-上图的所有可能的边缘不相交生成树是：
+上图的所有可能的边不相交生成树是：
 
 ![](img/a4b8c4e60320a5b5fb10827670a34f7e.png)
 
@@ -46,7 +46,7 @@ Max Edge-disjoint spanning tree = floor(N / 2)
 **具有 5 个顶点的完整图形**
 
 ![](img/4159aa187b2a9d6516417a8abaff8d58.png)
-上图的所有可能的边缘不相交生成树是：
+上图的所有可能的边不相交生成树是：
 
 ![](img/f6c0fdfb1def5e8368a17e0dc7077248.png)
 
@@ -56,7 +56,7 @@ Max Edge-disjoint spanning tree = floor(N / 2)
 
 乙
 
-以下是查找可能的最大边缘不相交生成树数量的程序。
+以下是查找可能的最大边不相交生成树数量的程序。
 
 ## C++
 

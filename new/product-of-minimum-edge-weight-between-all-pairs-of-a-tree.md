@@ -1,8 +1,8 @@
-# 所有树对之间的最小边缘权重的乘积
+# 所有树对之间的最小边权重的乘积
 
 > 原文： [https://www.geeksforgeeks.org/product-of-minimum-edge-weight-between-all-pairs-of-a-tree/](https://www.geeksforgeeks.org/product-of-minimum-edge-weight-between-all-pairs-of-a-tree/)
 
-给定一棵具有 N 个顶点和 N-1 个边的树。 让我们定义一个函数 F（a，b），它等于节点 a 和 b 之间的路径中的最小边缘权重。 任务是计算所有此类 F（a，b）的乘积。 这里 a＆b 是无序对，而 a！= b。
+给定一棵具有 N 个顶点和 N-1 个边的树。 让我们定义一个函数 F（a，b），它等于节点 a 和 b 之间的路径中的最小边权重。 任务是计算所有此类 F（a，b）的乘积。 这里 a＆b 是无序对，而 a！= b。
 
 因此，基本上，我们需要找到以下值：
 
@@ -11,7 +11,7 @@
 
 ```
 
-在输入中，我们将得到 N 的值，然后是 N-1 行。 每行包含 3 个整数 u，v，w，表示节点 u 和 v 之间的边缘，其权重为 w。 由于乘积将非常大，因此请以 10 ^ 9 + 7 为模输出。
+在输入中，我们将得到 N 的值，然后是 N-1 行。 每行包含 3 个整数 u，v，w，表示节点 u 和 v 之间的边，其权重为 w。 由于乘积将非常大，因此请以 10 ^ 9 + 7 为模输出。
 **范例**：
 
 ```

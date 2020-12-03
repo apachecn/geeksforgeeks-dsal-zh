@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/maximum-cost-path-in-an-undirected-graph-such-that-no-edge-is-visited-twice-in-a-row/](https://www.geeksforgeeks.org/maximum-cost-path-in-an-undirected-graph-such-that-no-edge-is-visited-twice-in-a-row/)
 
-给定一个具有`N`个顶点和`M`边的无向图，并且每个顶点与一个成本相关联，并给出源顶点`S`。 任务是从源顶点`S`找到最大成本路径，以使没有边缘连续 2 次或更多次被访问。
+给定一个具有`N`个顶点和`M`边的无向图，并且每个顶点与一个成本相关联，并给出源顶点`S`。 任务是从源顶点`S`找到最大成本路径，以使没有边连续 2 次或更多次被访问。
 
 **示例**：
 
@@ -582,7 +582,7 @@ public static void Main(String[] args)
 ```
 
 **时间复杂度**：*O（N + M）*其中 N 是顶点数，M 是边数。
-**辅助空间**：*O（N + M）*其中 N 是多个顶点，M 是许多边缘。
+**辅助空间**：*O（N + M）*其中 N 是多个顶点，M 是许多边。
 
 
 

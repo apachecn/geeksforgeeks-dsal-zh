@@ -1,10 +1,10 @@
-# 为边缘分配方向，以便有向图保持非循环状态
+# 为边分配方向，以便有向图保持非循环状态
 
 > 原文： [https://www.geeksforgeeks.org/assign-directions-to-edges-so-that-the-directed-graph-remains-acyclic/](https://www.geeksforgeeks.org/assign-directions-to-edges-so-that-the-directed-graph-remains-acyclic/)
 
 给定一个有向和无向边的图。 考虑到有向边不会形成循环。 如何将方向分配给无方向的边，以便图形（所有有向边）即使分配后也保持非循环状态？
 
-例如，在下图中，蓝色边缘没有方向。
+例如，在下图中，蓝色边没有方向。
 
 ![first](img/24ab473aa3943ecf7b07b8cee9a168a4.png)
 

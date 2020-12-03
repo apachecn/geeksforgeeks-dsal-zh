@@ -231,7 +231,7 @@ int main()
 ```
 
 时间复杂度：O（E（E log V））
-对于每个边缘，我们运行 Dijkstra 的最短路径算法，因此在所有时间复杂度 E <sup>2</sup> logV 上。
+对于每个边，我们运行 Dijkstra 的最短路径算法，因此在所有时间复杂度 E <sup>2</sup> logV 上。
 套装 2 | 我们将讨论优化算法以在无向图中找到最小权重循环。
 本文由 **[Nishant Singh](https://practice.geeksforgeeks.org/user-profile.php?user=_code)** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 

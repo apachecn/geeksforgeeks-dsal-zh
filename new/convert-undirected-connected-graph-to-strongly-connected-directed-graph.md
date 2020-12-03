@@ -34,7 +34,7 @@
 *   遍历当前节点的[邻接列表](https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/)并执行以下操作：
     *   如果在调用 DFS 时再次遍历任何边，则忽略该边。
     *   如果子节点（**节点 u** ）的顺序大于父节点（**节点 v** ）的顺序，则忽略此当前边，就像 **Edges（v，u ）**已被处理。
-    *   如果找到任何后边缘，则将当前父节点（**节点 v** ）的桥边缘更新为：
+    *   如果找到任何后边，则将当前父节点（**节点 v** ）的桥边更新为：
 
 ```
  bridge_detect[v] = min(order[u], bridge_detect[v]); 

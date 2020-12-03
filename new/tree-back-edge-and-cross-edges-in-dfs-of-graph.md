@@ -1,6 +1,6 @@
 # 图形
 
-的 DFS 中的树，后方，边缘和交叉边缘
+的 DFS 中的树，后方，边和交叉边
 
 > 原文： [https://www.geeksforgeeks.org/tree-back-edge-and-cross-edges-in-dfs-of-graph/](https://www.geeksforgeeks.org/tree-back-edge-and-cross-edges-in-dfs-of-graph/)
 
@@ -8,13 +8,13 @@
 
 ![](img/ccb89ebf2342ee76774615a59d17a814.png)
 
-**树边缘**：这是在图上应用 DFS 后获得的树中存在的边缘。 所有绿色边都是树边。
+**树边**：这是在图上应用 DFS 后获得的树中存在的边。 所有绿色边都是树边。
 
-**前缘**：这是一个边缘（u，v），使得 v 为后代，但不属于 DFS 树。 **1 到 8** 的边缘是前向边缘。
+**前缘**：这是一个边（u，v），使得 v 为后代，但不属于 DFS 树。 **1 到 8** 的边是前向边。
 
-**后边缘**：这是一条边缘（u，v），使得 v 是边缘 u 的祖先，但不是 DFS 树的一部分。 从 **6 到 2** 的边缘是后边缘。 [后边缘的存在指示有向图](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)中的一个循环。
+**后边**：这是一条边（u，v），使得 v 是边 u 的祖先，但不是 DFS 树的一部分。 从 **6 到 2** 的边是后边。 [后边的存在指示有向图](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)中的一个循环。
 
-**交叉边缘**：这是连接两个节点的边缘，因此两个节点之间没有任何祖先和后代关系。 从节点 **5 到 4** 的边缘为交叉边缘。
+**交叉边**：这是连接两个节点的边，因此两个节点之间没有任何祖先和后代关系。 从节点 **5 到 4** 的边为交叉边。
 
 
 

@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/print-all-neigbour-nodes-within-distance-k/](https://www.geeksforgeeks.org/print-all-neigbour-nodes-within-distance-k/)
 
-给定一个`N`个节点，`E`边缘，一个节点`X`和距离`K`的图形。 任务是打印距`X`距离`K`的所有节点。
+给定一个`N`个节点，`E`边，一个节点`X`和距离`K`的图形。 任务是打印距`X`距离`K`的所有节点。
 
 > **输入**：
 > ![](img/65b88bb626e719c2731da58538a65152.png)

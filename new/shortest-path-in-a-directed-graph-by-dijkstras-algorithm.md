@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/shortest-path-in-a-directed-graph-by-dijkstras-algorithm/](https://www.geeksforgeeks.org/shortest-path-in-a-directed-graph-by-dijkstras-algorithm/)
 
-给定图中的[有向图](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)和**源顶点**，任务是在给定图中对边缘加权的非给定图中找到从源顶点到目标顶点的最短距离和路径。 否定），并从父顶点定向到源顶点。
+给定图中的[有向图](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)和**源顶点**，任务是在给定图中对边加权的非给定图中找到从源顶点到目标顶点的最短距离和路径。 否定），并从父顶点定向到源顶点。
 
 **方法**：
 

@@ -105,7 +105,7 @@ Thus, there is no possible assignment in such a case.
 **结论**：如果任意两个变量![X](img/59b7a374463461b94c69694c7948bf35.png "Rendered by QuickLaTeX.com")和![\bar{X}](img/4984e36db71f55a531274f258b6f7956.png "Rendered by QuickLaTeX.com")处于循环中，即![path(\bar{A} \rightarrow B) \& path({B} \rightarrow A)](img/48eef735295e78678f653988e9d3b681.png "Rendered by QuickLaTeX.com")都存在，则 CNF 不能满足要求。 否则，可能存在分配并且 CNF 是可满足的。
 请注意，由于以下隐含属性，我们使用路径：
 如果我们具有![(A \Rightarrow B) \& (B \Rightarrow C),  then  A \Rightarrow C](img/0684baa4a07e52f5396f5fe776cad8ce.png "Rendered by QuickLaTeX.com")
-因此，如果我们在隐含图中有路径，则与具有 直接边缘。
+因此，如果我们在隐含图中有路径，则与具有 直接边。
 
 **实施观点的结论**：
 如果 X 和![\bar{X}](img/4984e36db71f55a531274f258b6f7956.png "Rendered by QuickLaTeX.com")都位于同一 SCC（牢固连接的组件）中，则 CNF 不能满足要求。

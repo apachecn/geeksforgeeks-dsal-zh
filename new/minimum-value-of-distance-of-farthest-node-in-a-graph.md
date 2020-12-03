@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-value-of-distance-of-farthest-node-in-a-graph/](https://www.geeksforgeeks.org/minimum-value-of-distance-of-farthest-node-in-a-graph/)
 
-给定一个无环无向图，它具有 2D [数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr [] []** 形式的 **N 个**节点和 **N-1 个**边缘。 其每行由两个数字 **L 和 R** 组成，表示 **L 和 R** 之间的边缘。 对于树中的每个节点`X`，令 **dis（X）**表示从`X`到最远节点的边数。 任务是找到给定图的 **dis（x）**的最小值。
+给定一个无环无向图，它具有 2D [数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr [] []** 形式的 **N 个**节点和 **N-1 个**边。 其每行由两个数字 **L 和 R** 组成，表示 **L 和 R** 之间的边。 对于树中的每个节点`X`，令 **dis（X）**表示从`X`到最远节点的边数。 任务是找到给定图的 **dis（x）**的最小值。
 
 **示例**：
 

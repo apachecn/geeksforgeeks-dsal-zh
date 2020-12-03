@@ -30,7 +30,7 @@ Output : 106
 
 ```
 
-**方法**：在这里，我们必须通过成本最低的路径连接所有城市。 这样做的方法是找出城市地图的最小生成树（ [MST](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/) ）（即，每个城市都是该图的一个节点，并且城市之间的所有受损道路都是边缘）。 总成本是在最小生成树中添加路径边缘值。
+**方法**：在这里，我们必须通过成本最低的路径连接所有城市。 这样做的方法是找出城市地图的最小生成树（ [MST](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/) ）（即，每个城市都是该图的一个节点，并且城市之间的所有受损道路都是边）。 总成本是在最小生成树中添加路径边值。
 
 **先决条件**：[MST Prim 的算法](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/)
 

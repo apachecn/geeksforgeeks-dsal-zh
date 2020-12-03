@@ -1,4 +1,4 @@
-# 计算从源到目的地的所有可能的走行，且边缘恰好有 k 个
+# 计算从源到目的地的所有可能的走行，且边恰好有 k 个
 
 > 原文： [https://www.geeksforgeeks.org/count-possible-paths-source-destination-exactly-k-edges/](https://www.geeksforgeeks.org/count-possible-paths-source-destination-exactly-k-edges/)
 

@@ -2,9 +2,9 @@
 
 > 原文： [https://www.geeksforgeeks.org/print-all-possible-paths-in-a-dag-from-vertex-whose-indegree-is-0/](https://www.geeksforgeeks.org/print-all-possible-paths-in-a-dag-from-vertex-whose-indegree-is-0/)
 
-给定一个有向无环图（DAG），它具有 **N 个**顶点和 **M 个**边缘，任务是打印从入度为零的顶点开始的所有路径。
+给定一个有向无环图（DAG），它具有 **N 个**顶点和 **M 个**边，任务是打印从入度为零的顶点开始的所有路径。
 
-> 顶点的度数是顶点进入边缘的总数。
+> 顶点的度数是顶点进入边的总数。
 
 **示例**：
 
@@ -22,7 +22,7 @@
 > 4-> 1
 > 5-> 0
 > 5-> 2-> 3-> 1
-> **输入**：N = 6，边缘[] = {{0，5}}
+> **输入**：N = 6，边[] = {{0，5}}
 > **输出**：所有可能的路径：
 > 0 5
 > **说明 **：

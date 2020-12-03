@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/count-nodes-having-bitwise-xor-of-all-edges-in-their-path-from-the-root-equal-to-k/](https://www.geeksforgeeks.org/count-nodes-having-bitwise-xor-of-all-edges-in-their-path-from-the-root-equal-to-k/)
 
-给定[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，它由`N`个节点和两个整数`R`和`K`组成。 树的每个边缘都有一个与之关联的正整数，形式为 **{u，v，w}** ，其中边缘**（u，v）**的权重为`w`。 任务是计算从根`R`到`S`的路径中所有边的 [S 的所有边的`S`节点数 到`K`。](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/)
+给定[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，它由`N`个节点和两个整数`R`和`K`组成。 树的每个边都有一个与之关联的正整数，形式为 **{u，v，w}** ，其中边**（u，v）**的权重为`w`。 任务是计算从根`R`到`S`的路径中所有边的 [S 的所有边的`S`节点数 到`K`。](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/)
 
 **示例**：
 

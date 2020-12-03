@@ -14,7 +14,7 @@
 
 ***局部聚类系数***
 
-图![G=(V,E)](img/093e437fd3c691acd835cb9ffa5a0562.png "Rendered by QuickLaTeX.com")正式由一组顶点 V 和它们之间的一组边 E 组成。 边缘![e_{ij}](img/6b0903e8ddacdad971d1a46a99662457.png "Rendered by QuickLaTeX.com")将顶点![v_{i}](img/cb924d771c71bd8bf6a87939ce81bccb.png "Rendered by QuickLaTeX.com")与顶点![v_{j}](img/7685dddc7b96ee1ca8f79432d98fb175.png "Rendered by QuickLaTeX.com")连接起来。
+图![G=(V,E)](img/093e437fd3c691acd835cb9ffa5a0562.png "Rendered by QuickLaTeX.com")正式由一组顶点 V 和它们之间的一组边 E 组成。 边![e_{ij}](img/6b0903e8ddacdad971d1a46a99662457.png "Rendered by QuickLaTeX.com")将顶点![v_{i}](img/cb924d771c71bd8bf6a87939ce81bccb.png "Rendered by QuickLaTeX.com")与顶点![v_{j}](img/7685dddc7b96ee1ca8f79432d98fb175.png "Rendered by QuickLaTeX.com")连接起来。
 
 顶点![v_{i}](img/cb924d771c71bd8bf6a87939ce81bccb.png "Rendered by QuickLaTeX.com")的邻域![N_{i}](img/8f7b4420594293e11edefda488ab698c.png "Rendered by QuickLaTeX.com")定义为其直接相连的邻居，如下所示：
 
@@ -25,10 +25,10 @@
 然后，顶点![v_{i}](img/cb924d771c71bd8bf6a87939ce81bccb.png "Rendered by QuickLaTeX.com")的局部聚类系数![C_{i}](img/84d4f071ee3cf587c00e1def95891948.png "Rendered by QuickLaTeX.com")由其邻域内顶点之间的链接比例除以它们之间可能存在的链接数量得出。 对于有向图，![e_{ij}](img/6b0903e8ddacdad971d1a46a99662457.png "Rendered by QuickLaTeX.com")与![e_{{ji}}](img/7a65037debb0bfa172c0bf4c43e36a03.png "Rendered by QuickLaTeX.com")不同，因此，对于每个邻域![N_{i}](img/8f7b4420594293e11edefda488ab698c.png "Rendered by QuickLaTeX.com")，在邻域内的各个顶点之间可能存在![k_{i}(k_{i}-1)](img/c47f3976760f968c758a967aa6126016.png "Rendered by QuickLaTeX.com")链接（![k_{i}](img/41ee20bc9066043034cb8c25009908e3.png "Rendered by QuickLaTeX.com")是顶点的邻居数） ）。 因此，有向图的局部聚类系数为[2]
 
 ![C_{i}={\frac  {|\{e_{{jk}}:v_{j},v_{k}\in N_{i},e_{{jk}}\in E\}|}{k_{i}(k_{i}-1)}}](img/570958f96bc2d0bf00dfe4e3a636237b.png "Rendered by QuickLaTeX.com")。
-无向图具有![e_{ij}](img/6b0903e8ddacdad971d1a46a99662457.png "Rendered by QuickLaTeX.com")和![e_{{ji}}](img/7a65037debb0bfa172c0bf4c43e36a03.png "Rendered by QuickLaTeX.com")相同的属性。 因此，如果顶点![ v_{i}](img/6019813edcf4c2d859177d171e2e7b3b.png "Rendered by QuickLaTeX.com")具有![ k_{i}](img/d5a3f51ad3e06658ade4fc0685778ad7.png "Rendered by QuickLaTeX.com")邻居，则![{\frac  {k_{i}(k_{i}-1)}{2}}](img/f8ff6716ef12e4f8330b0cc42b262291.png "Rendered by QuickLaTeX.com")边缘可能会存在于邻域内的各个顶点之间。 因此，无向图的局部聚类系数可以定义为
+无向图具有![e_{ij}](img/6b0903e8ddacdad971d1a46a99662457.png "Rendered by QuickLaTeX.com")和![e_{{ji}}](img/7a65037debb0bfa172c0bf4c43e36a03.png "Rendered by QuickLaTeX.com")相同的属性。 因此，如果顶点![ v_{i}](img/6019813edcf4c2d859177d171e2e7b3b.png "Rendered by QuickLaTeX.com")具有![ k_{i}](img/d5a3f51ad3e06658ade4fc0685778ad7.png "Rendered by QuickLaTeX.com")邻居，则![{\frac  {k_{i}(k_{i}-1)}{2}}](img/f8ff6716ef12e4f8330b0cc42b262291.png "Rendered by QuickLaTeX.com")边可能会存在于邻域内的各个顶点之间。 因此，无向图的局部聚类系数可以定义为
 
 ![C_{i}={\frac  {2|\{e_{{jk}}:v_{j},v_{k}\in N_{i},e_{{jk}}\in E\}|}{k_{i}(k_{i}-1)}}](img/ebe54f3c627731a33a0bed22a08990e6.png "Rendered by QuickLaTeX.com")。
-令![\lambda _{G}(v)](img/fc3d22f4db9ccb3d1c6ab3ea10cdef91.png "Rendered by QuickLaTeX.com")为无向图 G 的![v\in V(G)](img/e35b61368c7198017c8d5dc30fe2e349.png "Rendered by QuickLaTeX.com")上的三角形数。即，![ \lambda _{G}(v)](img/4c0215ff98a7861f35acf600fd7dd76d.png "Rendered by QuickLaTeX.com")是具有 3 条边和 3 个顶点的 G 子图的数目，其中之一为 v。 ![\tau _{G}(v)](img/29c5a27103680becdc683d82d6134b90.png "Rendered by QuickLaTeX.com")是![v\in G](img/aa4a870dfd3a15113d8a53d1a82b282c.png "Rendered by QuickLaTeX.com")上的三元组数。 也就是说，![\tau _{G}(v)](img/29c5a27103680becdc683d82d6134b90.png "Rendered by QuickLaTeX.com")是具有 2 个边缘和 3 个顶点的子图的数量（不必诱导），其中一个是 v，并且 v 入射到两个边缘。 然后我们也可以将聚类系数定义为
+令![\lambda _{G}(v)](img/fc3d22f4db9ccb3d1c6ab3ea10cdef91.png "Rendered by QuickLaTeX.com")为无向图 G 的![v\in V(G)](img/e35b61368c7198017c8d5dc30fe2e349.png "Rendered by QuickLaTeX.com")上的三角形数。即，![ \lambda _{G}(v)](img/4c0215ff98a7861f35acf600fd7dd76d.png "Rendered by QuickLaTeX.com")是具有 3 条边和 3 个顶点的 G 子图的数目，其中之一为 v。 ![\tau _{G}(v)](img/29c5a27103680becdc683d82d6134b90.png "Rendered by QuickLaTeX.com")是![v\in G](img/aa4a870dfd3a15113d8a53d1a82b282c.png "Rendered by QuickLaTeX.com")上的三元组数。 也就是说，![\tau _{G}(v)](img/29c5a27103680becdc683d82d6134b90.png "Rendered by QuickLaTeX.com")是具有 2 个边和 3 个顶点的子图的数量（不必诱导），其中一个是 v，并且 v 入射到两个边。 然后我们也可以将聚类系数定义为
 lue
 ![C_{i}={\frac  {\lambda _{G}(v)}{\tau _{G}(v)}}](img/0739e2b56c6fe070dd00d0fc58c56b2c.png "Rendered by QuickLaTeX.com")。
 很容易证明前面两个定义是相同的，因为

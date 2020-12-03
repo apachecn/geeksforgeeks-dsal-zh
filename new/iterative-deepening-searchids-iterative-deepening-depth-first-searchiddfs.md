@@ -4,7 +4,7 @@
 
 遍历图形有两种常用方法： [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 和 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。 考虑到一个巨大的高度和宽度的树（或图），由于以下原因，BFS 和 DFS 都不太有效。
 
-1.  **DFS** 首先遍历经过根的一个相邻节点，然后遍历下一个相邻节点。 这种方法的问题是，如果有一个节点靠近根，但在 DFS 探索的前几个子树中没有，那么 DFS 很晚到达该节点。 同样，DFS 可能找不到到节点的最短路径（就边缘数而言）。
+1.  **DFS** 首先遍历经过根的一个相邻节点，然后遍历下一个相邻节点。 这种方法的问题是，如果有一个节点靠近根，但在 DFS 探索的前几个子树中没有，那么 DFS 很晚到达该节点。 同样，DFS 可能找不到到节点的最短路径（就边数而言）。
 
 ![iddfs3](img/d6de95744e5fb4eafba90e772f537210.png)
 

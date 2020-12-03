@@ -10,7 +10,7 @@
 
 ![](img/1794d872c7e9598253c6fb194f43b423.png)
 
-一个简单的社交网络：节点代表人物或演员，节点之间的边缘代表演员之间的某种关系
+一个简单的社交网络：节点代表人物或演员，节点之间的边代表演员之间的某种关系
 
 Katz 中心性通过测量直接邻居（一级节点）以及网络中通过这些直接邻居连接到正在考虑的节点的所有其他节点的数量，来计算网络中某个节点的相对影响。 但是，与远方邻居的连接会受到衰减系数![\alpha](img/da2f298cb7c1dd3024c0cfda151c6997.png "Rendered by QuickLaTeX.com")的惩罚。 一对节点之间的每个路径或连接均分配有权重，该权重由![\alpha](img/da2f298cb7c1dd3024c0cfda151c6997.png "Rendered by QuickLaTeX.com")确定，节点之间的距离为![\alpha ^{d}](img/732b180c5d826985eac576a8b233027a.png "Rendered by QuickLaTeX.com")。
 

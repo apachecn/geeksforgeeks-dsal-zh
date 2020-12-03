@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/maximize-shortest-path-between-given-vertices-by-adding-a-single-edge/](https://www.geeksforgeeks.org/maximize-shortest-path-between-given-vertices-by-adding-a-single-edge/)
 
-给定`N`个节点和`M`顶点的无向图。 你还给出一个`K`边缘为**中选择[]** 。 通过在给定选定边的任意两个顶点之间添加单个边来最大化节点`1`到节点`N`之间的最短路径长度的任务。
+给定`N`个节点和`M`顶点的无向图。 你还给出一个`K`边为**中选择[]** 。 通过在给定选定边的任意两个顶点之间添加单个边来最大化节点`1`到节点`N`之间的最短路径长度的任务。
 **注意**：您可以在任意两个选定的顶点之间添加一条边，而这些顶点之间已经有一条边。
 
 > **输入**：N = 5，M = 4，K = 2，已选择[] = {2，4}。

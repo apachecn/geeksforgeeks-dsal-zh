@@ -1,4 +1,4 @@
-# 删除边缘以最小化子树总和差异
+# 删除边以最小化子树总和差异
 
 > 原文： [https://www.geeksforgeeks.org/delete-edge-minimize-subtree-sum-difference/](https://www.geeksforgeeks.org/delete-edge-minimize-subtree-sum-difference/)
 

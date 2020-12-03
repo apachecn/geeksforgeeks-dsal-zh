@@ -686,7 +686,7 @@ Vertex   Distance from Source
 1.  该代码计算出最短距离，但不计算路径信息。 我们可以创建一个父数组，在更新距离时更新父数组（例如 [prim 的实现](https://www.geeksforgeeks.org/prims-mst-for-adjacency-list-representation-greedy-algo-6/)），并使用它显示从源到不同顶点的最短路径。
 2.  该代码用于无向图，相同的 dijekstra 函数也可用于有向图。
 3.  该代码查找从源到所有顶点的最短距离。 如果我们在最短的距离只关心从源到单个目标，我们可以打破 for 循环时所拾取最小距离顶点等于目标（算法的步骤 3.A）。
-4.  Dijkstra 的算法不适用于负边缘为负的图表。 对于负负边的图形，可以使用 [Bellman-Ford 算法](http://en.wikipedia.org/wiki/Bellman-Ford_algorithm)，我们将在单独的文章中讨论它。
+4.  Dijkstra 的算法不适用于负边为负的图表。 对于负负边的图形，可以使用 [Bellman-Ford 算法](http://en.wikipedia.org/wiki/Bellman-Ford_algorithm)，我们将在单独的文章中讨论它。
     [Dijkstra 最短路径算法中的打印路径](https://www.geeksforgeeks.org/printing-paths-dijkstras-shortest-path-algorithm/)
     [Dijkstra 使用 STL 中设置的最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-set-in-stl/)
 

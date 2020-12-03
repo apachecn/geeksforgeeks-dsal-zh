@@ -7,7 +7,7 @@
 Webcrawler 是[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)算法的非常重要的应用。 这个想法是整个互联网可以用有向图表示：
 
 *   与顶点->域/ URL /网站。
-*   边缘->连接。
+*   边->连接。
 
 **示例**：
 ![](img/baf808dcd460e2777e956fc619f71617.png)

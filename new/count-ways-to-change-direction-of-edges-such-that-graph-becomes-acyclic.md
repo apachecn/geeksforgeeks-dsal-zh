@@ -29,7 +29,7 @@
 
 **方法**：的想法是检查[连接的组件](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)是否形成循环。
 
-*   如果组件是路径，那么我们将边缘定向，就不会形成循环。
+*   如果组件是路径，那么我们将边定向，就不会形成循环。
 *   如果组件具有一个具有 N 个边的循环，则有 **2 <sup>N</sup>** 种方式可以排列所有边，其中只有两种方式可以形成一个循环。 因此，存在**（2 <sup>N</sup> – 2）**种方法来更改边，以使图形变为非循环。
 
 **步骤**：

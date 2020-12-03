@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/paths-travel-nodes-using-edgeseven-bridges-konigsberg/](https://www.geeksforgeeks.org/paths-travel-nodes-using-edgeseven-bridges-konigsberg/)
 
-有 n 个节点，这些节点之间有 m 个桥。 使用每个边缘（如果可能）打印通过每个节点的可能路径，仅通过每个边缘一次。
+有 n 个节点，这些节点之间有 m 个桥。 使用每个边（如果可能）打印通过每个节点的可能路径，仅通过每个边一次。
 
 ![](img/ed0ac67af5c2b609c4fece2759ea1fd1.png)
 

@@ -1,4 +1,4 @@
-# 使用 Dijkstra 降低边缘成本的最低成本
+# 使用 Dijkstra 降低边成本的最低成本
 
 > 原文： [https://www.geeksforgeeks.org/minimum-cost-using-dijkstra-by-reducing-cost-of-an-edge/](https://www.geeksforgeeks.org/minimum-cost-using-dijkstra-by-reducing-cost-of-an-edge/)
 

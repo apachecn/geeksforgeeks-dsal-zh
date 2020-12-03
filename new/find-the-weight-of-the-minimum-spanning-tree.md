@@ -2,11 +2,11 @@
 
 > 原文： [https://www.geeksforgeeks.org/find-the-weight-of-the-minimum-spanning-tree/](https://www.geeksforgeeks.org/find-the-weight-of-the-minimum-spanning-tree/)
 
-给定一个具有 **N 个节点**和 **M 个边缘**的连接的无向加权图。 任务是执行给定的查询并找到最小生成树的权重。 查询分为三种类型：
+给定一个具有 **N 个节点**和 **M 个边**的连接的无向加权图。 任务是执行给定的查询并找到最小生成树的权重。 查询分为三种类型：
 
 1.  **查询（1）**->查找最小生成树的权重。
 2.  **query（2，x，y）**->将节点`x`和`y`到`0`的边的权重更改 。
-3.  **query（3，x，y）**->将节点`x`和`y`之间的边缘权重恢复为其**原始权重[** 。
+3.  **query（3，x，y）**->将节点`x`和`y`之间的边权重恢复为其**原始权重[** 。
 
 **示例**：
 

@@ -1,4 +1,4 @@
-# 从源到目标的边缘数为偶数的最短路径
+# 从源到目标的边数为偶数的最短路径
 
 > 原文： [https://www.geeksforgeeks.org/shortest-path-with-even-number-of-edges-from-source-to-destination/](https://www.geeksforgeeks.org/shortest-path-with-even-number-of-edges-from-source-to-destination/)
 

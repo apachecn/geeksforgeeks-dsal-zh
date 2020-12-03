@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/detect-cycle-in-directed-graph-using-topological-sort/](https://www.geeksforgeeks.org/detect-cycle-in-directed-graph-using-topological-sort/)
 
-给定一个**有向图**，该图由 **N 个**顶点和 **M 个**边缘以及一组 **Edges [] []** 组成 图形是否使用[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)来包含循环。
+给定一个**有向图**，该图由 **N 个**顶点和 **M 个**边以及一组 **Edges [] []** 组成 图形是否使用[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)来包含循环。
 
 > 有向图的拓扑排序是其顶点的线性排序，这样，对于从顶点`U`到顶点`V`的每个**有向边 U-> V** ， **在订购中，U 在 V** 之前。
 

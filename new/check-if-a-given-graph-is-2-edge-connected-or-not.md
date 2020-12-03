@@ -4,7 +4,7 @@
 
 给定无向[图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)`G`，并具有`V`顶点和`E`边，任务是检查图是否为 2 边连接 或不。
 
-> 如果在删除图形的任何边缘时，图形仍然保持连接状态，即不包含[桥](https://www.geeksforgeeks.org/bridge-in-a-graph/?ref=rp)，则该图形被称为 **2 边连接**。
+> 如果在删除图形的任何边时，图形仍然保持连接状态，即不包含[桥](https://www.geeksforgeeks.org/bridge-in-a-graph/?ref=rp)，则该图形被称为 **2 边连接**。
 
 **示例**：
 
@@ -24,7 +24,7 @@
 > **说明**：
 > 移除顶点 3 和顶点 4 之间的边后，该图不再连接。 因此，该图不是 2 边连接的。
 
-**朴素的方法**：朴素的方法是检查是否除去了任何边`X`，是否连接了其余图形 **G – X** 。 如果在逐个删除每个边时图形仍然保持连接，则它是 2 边连接图形。 要实现上述想法，请移除一条边并从任意顶点执行[深度优先搜索（DFS）](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)或[广度优先搜索（BFS）](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)，然后检查是否覆盖了所有顶点。 对所有`E`边缘重复此过程。 如果无法遍历所有顶点的任何边缘，请打印**否**。 否则，打印**是**。
+**朴素的方法**：朴素的方法是检查是否除去了任何边`X`，是否连接了其余图形 **G – X** 。 如果在逐个删除每个边时图形仍然保持连接，则它是 2 边连接图形。 要实现上述想法，请移除一条边并从任意顶点执行[深度优先搜索（DFS）](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)或[广度优先搜索（BFS）](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)，然后检查是否覆盖了所有顶点。 对所有`E`边重复此过程。 如果无法遍历所有顶点的任何边，请打印**否**。 否则，打印**是**。
 
 ***时间复杂度**：O（E *（V + E））*
 ***辅助空间**：O（1）*
@@ -33,7 +33,7 @@
 
 1.  创建大小为`V`的数组 **noOfEdges []** ，该数组将存储连接到节点的边数。
 2.  对于每个边**（u，v）**，增加节点`u`和`v`的边数。
-3.  现在，在数组 **noOfEdges []** 上进行迭代，并检查是否有任何边缘仅连接了 1 个边缘。 如果是，则**图不是 2 边连接的**。
+3.  现在，在数组 **noOfEdges []** 上进行迭代，并检查是否有任何边仅连接了 1 个边。 如果是，则**图不是 2 边连接的**。
 4.  否则，图形是 2 边连接的。
 
 下面是上述方法的实现：

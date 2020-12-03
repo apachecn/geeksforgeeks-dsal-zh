@@ -4,13 +4,13 @@
 
 > 原文： [https://www.geeksforgeeks.org/count-the-number-of-prime-cliques-in-an-undirected-graph/](https://www.geeksforgeeks.org/count-the-number-of-prime-cliques-in-an-undirected-graph/)
 
-给定一个具有 **N 个**节点和`E`边缘的图，任务是计算其大小为给定图中节点的质数或质数的团数。
+给定一个具有 **N 个**节点和`E`边的图，任务是计算其大小为给定图中节点的质数或质数的团数。
 
 > **集团**是给定图的完整子图。
 
 **示例**：
 
-> **输入**：N = 5，边缘[] = {{1，2}，{2，3}，{3，1}，{4，3}，{4，5}，{5， 3}}
+> **输入**：N = 5，边[] = {{1，2}，{2，3}，{3，1}，{4，3}，{4，5}，{5， 3}}
 > ![](img/c033c0b07a93e1431256b4aff3e6e671.png) 
 > **输出**：8
 > **说明**：

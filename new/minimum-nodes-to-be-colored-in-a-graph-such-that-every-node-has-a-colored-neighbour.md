@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/minimum-nodes-to-be-colored-in-a-graph-such-that-every-node-has-a-colored-neighbour/](https://www.geeksforgeeks.org/minimum-nodes-to-be-colored-in-a-graph-such-that-every-node-has-a-colored-neighbour/)
 
-给定具有`V`节点和`E`边缘的图形`G`，任务是为不超过 **floor（V / 2）**节点着色 使得每个节点在至少 1 个单位的距离处具有*至少一个有色节点*。 图的任何两个连接节点之间的距离始终精确为 1 个单位。 打印需要着色的节点。
+给定具有`V`节点和`E`边的图形`G`，任务是为不超过 **floor（V / 2）**节点着色 使得每个节点在至少 1 个单位的距离处具有*至少一个有色节点*。 图的任何两个连接节点之间的距离始终精确为 1 个单位。 打印需要着色的节点。
 
 **示例**：
 

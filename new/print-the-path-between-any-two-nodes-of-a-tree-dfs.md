@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/print-the-path-between-any-two-nodes-of-a-tree-dfs/](https://www.geeksforgeeks.org/print-the-path-between-any-two-nodes-of-a-tree-dfs/)
 
-给定一棵具有 **N-1** 个边缘的节点`N`和一对节点`P`的树。 任务是使用 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 查找并打印树的两个给定节点之间的路径。
+给定一棵具有 **N-1** 个边的节点`N`和一对节点`P`的树。 任务是使用 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 查找并打印树的两个给定节点之间的路径。
 
 ```
 Input: N = 10

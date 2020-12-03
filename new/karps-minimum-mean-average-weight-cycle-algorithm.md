@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/karps-minimum-mean-average-weight-cycle-algorithm/](https://www.geeksforgeeks.org/karps-minimum-mean-average-weight-cycle-algorithm/)
 
-给定带非负边权重的有向[强连接图](https://www.geeksforgeeks.org/strongly-connected-components/)。 我们将一个循环的平均权重定义为该循环的所有边缘权重之和除以 no。 的边缘。 我们的任务是在图表的所有有向循环中找到最小平均权重。
+给定带非负边权重的有向[强连接图](https://www.geeksforgeeks.org/strongly-connected-components/)。 我们将一个循环的平均权重定义为该循环的所有边权重之和除以 no。 的边。 我们的任务是在图表的所有有向循环中找到最小平均权重。
 **例如**：[
 
 ```

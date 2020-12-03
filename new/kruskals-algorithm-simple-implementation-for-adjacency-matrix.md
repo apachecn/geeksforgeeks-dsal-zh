@@ -4,8 +4,8 @@
 
 以下是使用 [Kruskal 算法](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)查找 MST 的步骤
 
-> **1\.** 对所有边缘按其权重的非降序排序。
-> **2\.** 选取最小的边缘。 检查它是否与形成的生成树形成一个循环。 如果未形成循环，则包括该边。 否则，将其丢弃。
+> **1\.** 对所有边按其权重的非降序排序。
+> **2\.** 选取最小的边。 检查它是否与形成的生成树形成一个循环。 如果未形成循环，则包括该边。 否则，将其丢弃。
 > **3\.** 重复步骤 2，直到生成树中有（V-1）个边。
 
 我们在[先前的文章](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)中讨论了 Kruskal 算法的一种实现。 在这篇文章中，讨论了邻接矩阵的一种更简单的实现。

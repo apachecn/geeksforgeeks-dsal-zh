@@ -8,7 +8,7 @@
 **2。** [图及其表示](https://www.geeksforgeeks.org/graph-and-its-representations/)
 
 我们已经讨论了 [Prim 算法以及图](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)的邻接矩阵表示的实现。 矩阵表示的时间复杂度为 O（V ^ 2）。 在这篇文章中，讨论了用于邻接表表示的 O（ELogV）算法。
-如前一篇文章所述，在 Prim 的算法中，维护了两组，一组包含 MST 中已包含的顶点列表，另一组包含尚未包含的顶点。 使用邻接表表示，可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 在 O（V + E）时间内遍历图的所有顶点。 这个想法是使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 遍历图的所有顶点，并使用最小堆存储尚未包含在 MST 中的顶点。 Min Heap 用作优先级队列，以从 [cut](http://en.wikipedia.org/wiki/Cut_%28graph_theory%29) 获得最小权重边缘。 Min Heap 用作操作的时间复杂性，如提取最小元素，并且在 Min Heap 中将键值减小为 O（LogV）。
+如前一篇文章所述，在 Prim 的算法中，维护了两组，一组包含 MST 中已包含的顶点列表，另一组包含尚未包含的顶点。 使用邻接表表示，可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 在 O（V + E）时间内遍历图的所有顶点。 这个想法是使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 遍历图的所有顶点，并使用最小堆存储尚未包含在 MST 中的顶点。 Min Heap 用作优先级队列，以从 [cut](http://en.wikipedia.org/wiki/Cut_%28graph_theory%29) 获得最小权重边。 Min Heap 用作操作的时间复杂性，如提取最小元素，并且在 Min Heap 中将键值减小为 O（LogV）。
 
 以下是详细步骤。
 **1）**创建大小为 V 的最小堆，其中 V 是给定图中顶点的数量。 最小堆的每个节点都包含顶点号和顶点的键值。
@@ -22,9 +22,9 @@
 最初，对于所有其他顶点，第一个顶点的关键值为 0，INF 为无穷大。 因此从最小堆中提取顶点 0，并更新与 0（1 和 7）相邻的顶点的键值。 最小堆包含顶点 0 以外的所有顶点。
 绿色的顶点是 MST 中包含的顶点。
 ![](img/1dc515cdf61e19cfa8c73ea1ac12135d.png "Fig-2") 
-由于在 Min Heap 的所有节点中顶点 1 的键值最小，因此从 Min Heap 中提取它，并且更新了与 1 相邻的顶点的键值（更新了 Key （如果顶点在“最小堆”中，并且先前的键值大于 1 到相邻边缘的权重）。 最小堆包含除顶点 0 和 1 之外的所有顶点。 与 7 相邻的顶点的更新（如果顶点在 Min Heap 中并且先前的键值大于从 7 到相邻边缘的权重，则更新键）。 最小堆包含除顶点 0、1 和 7 之外的所有顶点。
+由于在 Min Heap 的所有节点中顶点 1 的键值最小，因此从 Min Heap 中提取它，并且更新了与 1 相邻的顶点的键值（更新了 Key （如果顶点在“最小堆”中，并且先前的键值大于 1 到相邻边的权重）。 最小堆包含除顶点 0 和 1 之外的所有顶点。 与 7 相邻的顶点的更新（如果顶点在 Min Heap 中并且先前的键值大于从 7 到相邻边的权重，则更新键）。 最小堆包含除顶点 0、1 和 7 之外的所有顶点。
 ![](img/5b0180de55a947f0707e79ee89c09562.png "Fig-4") 
-由于顶点 6 的键值在“最小堆”中的所有节点中最小，因此从“最小堆”和“最大堆”中提取 更新与 6 相邻的顶点的关键值（如果顶点在 Min Heap 中并且先前的关键值大于从 6 到相邻边缘的权重，则更新关键）。 “最小堆”包含除顶点 0、1、7 和 6 以外的所有顶点。
+由于顶点 6 的键值在“最小堆”中的所有节点中最小，因此从“最小堆”和“最大堆”中提取 更新与 6 相邻的顶点的关键值（如果顶点在 Min Heap 中并且先前的关键值大于从 6 到相邻边的权重，则更新关键）。 “最小堆”包含除顶点 0、1、7 和 6 以外的所有顶点。
 ![](img/324459e8bbafe5f5a6cffbd058ccf36d.png "Fig-4") 
 对“最小堆”中的其余节点重复上述步骤，直到“最小堆”变为空
 ] ![](img/ae64c938f36beae884d9dbc4af34383f.png "Fig-1")

@@ -2,9 +2,9 @@
 
 > 原文： [https://www.geeksforgeeks.org/number-unicolored-paths-two-nodes/](https://www.geeksforgeeks.org/number-unicolored-paths-two-nodes/)
 
-给定一个无向的有色图（[的边缘为有色](https://en.wikipedia.org/wiki/Edge_coloring)），并带有源顶点“ s”和目标顶点“ d”，请打印从给定“ s”到“ d”的路径数，以使该路径 是 UniColored（路径中的边缘具有相同的颜色）。
+给定一个无向的有色图（[的边为有色](https://en.wikipedia.org/wiki/Edge_coloring)），并带有源顶点“ s”和目标顶点“ d”，请打印从给定“ s”到“ d”的路径数，以使该路径 是 UniColored（路径中的边具有相同的颜色）。
 
-边缘是彩色的，这里的颜色用数字表示。 最多，不同颜色的数量将成为边缘的数量。
+边是彩色的，这里的颜色用数字表示。 最多，不同颜色的数量将成为边的数量。
 ![Capture](img/7edc6620530c341feb3096b7e2ce5e0c.png)
 
 ```

@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/finding-minimum-vertex-cover-graph-using-binary-search/](https://www.geeksforgeeks.org/finding-minimum-vertex-cover-graph-using-binary-search/)
 
-无向图的[顶点覆盖](https://www.geeksforgeeks.org/vertex-cover-problem-set-1-introduction-approximate-algorithm-2/)是其顶点的子集，因此对于图的每个边缘（u，v），“ u”或“ v”都在顶点覆盖中。 图可能有很多顶点覆盖。
+无向图的[顶点覆盖](https://www.geeksforgeeks.org/vertex-cover-problem-set-1-introduction-approximate-algorithm-2/)是其顶点的子集，因此对于图的每个边（u，v），“ u”或“ v”都在顶点覆盖中。 图可能有很多顶点覆盖。
 
 **问题**对于具有 V 个顶点和 m 个边的无向连接图，找到最小尺寸的顶点覆盖的大小，即具有最小基数的顶点覆盖的基数。
 
@@ -69,7 +69,7 @@ do following for every subset.
 
 由于`k`之前没有索引将为'1'，并且`k`（包括两端）之后的每个索引都将为'1'，因此该数组已排序，因此可以进行二进制搜索。 HTG4] k 是答案。
 
-因此，我们可以应用二进制搜索来查找覆盖所有边缘的最小尺寸的顶点集（此问题等同于在 isCover []中找到最后一个 1）。 现在的问题是如何生成给定大小的所有子集。 这个想法是使用 Gosper 的骇客。
+因此，我们可以应用二进制搜索来查找覆盖所有边的最小尺寸的顶点集（此问题等同于在 isCover []中找到最后一个 1）。 现在的问题是如何生成给定大小的所有子集。 这个想法是使用 Gosper 的骇客。
 
 **什么是 Gosper 的骇客？**
 戈斯珀（Gosper）的骇客技巧是一种获得设置了相同位数的下一个数字的技术。 因此，我们从右开始设置前 x 位，并生成 x 位已设置的下一个数字，直到该数字小于 2 <sup>V</sup> 为止。 这样，我们可以生成设置了 x 位的所有 <sup>V</sup> Cx 号。

@@ -26,7 +26,7 @@
 **天真的方法**：
 的想法是使用 [Floyd Warshall 算法](http://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/)。 为了解决该问题，我们需要尝试所有范围为 **[1，N]** 的中间顶点，然后检查：
 
-1.  如果两个节点之间已经存在直接边缘。
+1.  如果两个节点之间已经存在直接边。
 2.  或者，我们具有从节点`i`到中间节点`k`的路径，以及从节点`k`到节点`j`的路径。
 
 下面是上述方法的实现：

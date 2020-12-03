@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/sum-of-minimum-element-at-each-depth-of-a-given-non-cyclic-graph/](https://www.geeksforgeeks.org/sum-of-minimum-element-at-each-depth-of-a-given-non-cyclic-graph/)
 
-给定一个具有`V`个节点和`E`边缘以及一个源节点`S`的非循环图，任务是计算每个级别上最小元素的总和 给定图中来自源节点`S`的数据。
+给定一个具有`V`个节点和`E`边以及一个源节点`S`的非循环图，任务是计算每个级别上最小元素的总和 给定图中来自源节点`S`的数据。
 **范例**：
 
 > **输入**：S = 0，以下为给定图形。

@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/desopo-pape-algorithm-single-source-shortest-path/](https://www.geeksforgeeks.org/desopo-pape-algorithm-single-source-shortest-path/)
 
-给定一个图和**加权无向图**中的源顶点 **src** ，找到从 src 到给定图中所有顶点的最短路径。 该图可能包含负权重边缘。
+给定一个图和**加权无向图**中的源顶点 **src** ，找到从 src 到给定图中所有顶点的最短路径。 该图可能包含负权重边。
 
 针对此问题，我们已经讨论了 [Dijkstra 的算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)和 [Bellman-Ford 算法](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)。 但是 D’Esopo-Pape 算法在大多数情况下的效果都很好。 但是，在某些情况下会花费指数时间。
 
@@ -22,7 +22,7 @@
 4.  从队列开始弹出顶点，直到队列为空，并对每个弹出的顶点执行以下步骤（让`U`为弹出的顶点）：
     *   将顶点`U`设置为不存在于队列中。
     *   对于`U`的每个相邻顶点`V`，检查其当前的最小 **Distance [V]** 是否大于通过`U`的距离，
-        ，即**距离[U] +连接 U 和 V 的边缘的重量**。
+        ，即**距离[U] +连接 U 和 V 的边的重量**。
     *   If yes, update Distance[V] = Distance[U] + weight of edge connecting U and V.
         Check If V is not present in the queue with the help of Boolean Array:
         1.  如果`V`首次进入队列，请在队列的**后面附加 V，并借助布尔数组将顶点 V 设置为队列中存在的值。**

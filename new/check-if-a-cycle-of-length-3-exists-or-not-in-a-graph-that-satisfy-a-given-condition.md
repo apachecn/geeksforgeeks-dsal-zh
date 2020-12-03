@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-if-a-cycle-of-length-3-exists-or-not-in-a-graph-that-satisfy-a-given-condition/](https://www.geeksforgeeks.org/check-if-a-cycle-of-length-3-exists-or-not-in-a-graph-that-satisfy-a-given-condition/)
 
-给定**的数组 **Arr** N 个**整数，它们代表图形的节点。 在[按位与](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/)不等于**零**的那些对之间定义边缘。 任务是查找图中是否存在长度为 3 的循环。
+给定**的数组 **Arr** N 个**整数，它们代表图形的节点。 在[按位与](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/)不等于**零**的那些对之间定义边。 任务是查找图中是否存在长度为 3 的循环。
 
 **示例**：
 

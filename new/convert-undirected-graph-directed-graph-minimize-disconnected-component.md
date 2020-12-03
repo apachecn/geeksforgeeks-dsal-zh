@@ -3,7 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/convert-undirected-graph-directed-graph-minimize-disconnected-component/](https://www.geeksforgeeks.org/convert-undirected-graph-directed-graph-minimize-disconnected-component/)
 
 给定**无向图**，任务是在将该图转换为有向图之后，找到弱连接节点的最小数量。
-**弱连接的节点**：节点的 in 度（传入边缘数）为 0。
+**弱连接的节点**：节点的 in 度（传入边数）为 0。
 
 **先决条件**：[BFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
 

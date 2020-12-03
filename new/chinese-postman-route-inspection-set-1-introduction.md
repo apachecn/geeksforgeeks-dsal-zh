@@ -2,14 +2,14 @@
 
 > 原文： [https://www.geeksforgeeks.org/chinese-postman-route-inspection-set-1-introduction/](https://www.geeksforgeeks.org/chinese-postman-route-inspection-set-1-introduction/)
 
-[中文邮递员问题](https://en.wikipedia.org/wiki/Route_inspection_problem)是[欧拉回路](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)问题针对无向图的一种变体。 欧拉巡回赛是一条封闭的步道，一旦起点和终点位置相同，它就会覆盖每个边缘。 为连通图和无向图定义了中国邮递员问题。 问题在于找到最短路径或电路，该路径或电路至少访问一次图形的每个边缘。
+[中文邮递员问题](https://en.wikipedia.org/wiki/Route_inspection_problem)是[欧拉回路](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)问题针对无向图的一种变体。 欧拉巡回赛是一条封闭的步道，一旦起点和终点位置相同，它就会覆盖每个边。 为连通图和无向图定义了中国邮递员问题。 问题在于找到最短路径或电路，该路径或电路至少访问一次图形的每个边。
 
 **如果输入图包含欧拉电路，则问题的解决方案是欧拉电路**。
 如果“ <u>所有顶点的偶数度为</u>”，则无向且连通的图具有欧拉循环。
 
 ![chinese-postman](img/f2d3d702d9c5730ce4f84fe939a8837b.png)
 
-无论是加权图还是不加权图，如果有，中国邮递员路线始终与欧拉环路相同。 在加权图中，Postman 巡回赛的最小可能权重是我们通过欧拉回路获得的所有边缘权重的总和。 我们无法缩短路线，因为我们必须至少一次访问所有边缘。
+无论是加权图还是不加权图，如果有，中国邮递员路线始终与欧拉环路相同。 在加权图中，Postman 巡回赛的最小可能权重是我们通过欧拉回路获得的所有边权重的总和。 我们无法缩短路线，因为我们必须至少一次访问所有边。
 
 **如果输入图不包含欧拉电路**，
 在这种情况下，任务将减少为以下内容。

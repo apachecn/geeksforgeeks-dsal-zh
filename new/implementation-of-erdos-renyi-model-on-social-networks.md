@@ -4,7 +4,7 @@
 
 **先决条件**：[社交网络简介](https://www.geeksforgeeks.org/introduction-to-social-networks-using-networkx-in-python/)，[鄂尔多斯-仁伊模型](https://www.geeksforgeeks.org/erdos-renyl-model-generating-random-graphs/)
 
-Erdos Renyi 模型用于在社交网络上创建随机网络或图形。 在 Erdos Reny 模型中，每个边缘都有固定的概率出现，而与网络中的边缘无关地不存在。
+Erdos Renyi 模型用于在社交网络上创建随机网络或图形。 在 Erdos Reny 模型中，每个边都有固定的概率出现，而与网络中的边无关地不存在。
 
 ### 使用 Erdos-Renyi 模型实施社交网络：
 
@@ -58,7 +58,7 @@ N = int(input())
 
 ```
 
-**步骤 4）**现在取 *P* ，即来自用户的边缘概率。
+**步骤 4）**现在取 *P* ，即来自用户的边概率。
 
 ## Python
 

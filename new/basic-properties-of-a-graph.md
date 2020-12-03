@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/basic-properties-of-a-graph/](https://www.geeksforgeeks.org/basic-properties-of-a-graph/)
 
-图是由节点和边组成的非线性数据结构。 节点有时也称为顶点，边缘是连接图形中任意两个节点的线或圆弧。
+图是由节点和边组成的非线性数据结构。 节点有时也称为顶点，边是连接图形中任意两个节点的线或圆弧。
 
 图的属性根据其结构基本上用于图的表征。 我们使用与图论领域相关的特定术语来定义这些属性。 在本文中，我们将讨论图的一些属性，这些属性如下：
 

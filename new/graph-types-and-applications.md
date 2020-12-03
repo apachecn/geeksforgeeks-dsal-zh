@@ -4,8 +4,8 @@
 
 **先决条件**：[图论基础–第 1 组](https://www.geeksforgeeks.org/mathematics-graph-theory-basics-set-1/)，[图论基础–第 2 组](https://www.geeksforgeeks.org/mathematics-graph-theory-basics/)
 
-图 G =（V，E）由一组顶点 V = {V1，V2，...组成。 。 。 }和边集 E = {E1，E2，。。 。 。 }。 一组无序的不同顶点对，其元素称为图 G 的边缘，这样，每个边缘都由无序的顶点对（Vi，Vj）标识。
-如果存在与 Vi 和 Vj 关联的边 Ek，则顶点（Vi，Vj）被称为相邻。 在这种情况下，Vi 和 Vj 被称为端点，并且边缘 Ek 被称为 Vi 和 Vj 的连接/接头。
+图 G =（V，E）由一组顶点 V = {V1，V2，...组成。 。 。 }和边集 E = {E1，E2，。。 。 。 }。 一组无序的不同顶点对，其元素称为图 G 的边，这样，每个边都由无序的顶点对（Vi，Vj）标识。
+如果存在与 Vi 和 Vj 关联的边 Ek，则顶点（Vi，Vj）被称为相邻。 在这种情况下，Vi 和 Vj 被称为端点，并且边 Ek 被称为 Vi 和 Vj 的连接/接头。
 
 ![](img/afb9b65db4a7e42da83486c8b5802e05.png)
 
@@ -43,7 +43,7 @@
 
     ![](img/9013cbdfd65759a887fcd174346d25ab.png)
 
-*   **带标签的图形**：如果图形的顶点和边缘都标有名称，数据或权重，则称为带标签的图形。 也称为*加权图*。
+*   **带标签的图形**：如果图形的顶点和边都标有名称，数据或权重，则称为带标签的图形。 也称为*加权图*。
     ![](img/7e19d541aa5e40f0ae6d68040cacb27c.png)
 *   **Digraph Graph:** A graph G = (V, E) with a mapping f such that every edge maps onto some ordered pair of vertices (Vi, Vj) is called Digraph. It is also called *Directed Graph*. Ordered pair (Vi, Vj) means an edge between Vi and Vj with an arrow directed from Vi to Vj.
     Here in the figure:

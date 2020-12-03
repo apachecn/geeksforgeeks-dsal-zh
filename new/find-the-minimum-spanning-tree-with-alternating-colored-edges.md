@@ -1,4 +1,4 @@
-# 找出边缘交替的最小生成树
+# 找出边交替的最小生成树
 
 > 原文： [https://www.geeksforgeeks.org/find-the-minimum-spanning-tree-with-alternating-colored-edges/](https://www.geeksforgeeks.org/find-the-minimum-spanning-tree-with-alternating-colored-edges/)
 
@@ -16,9 +16,9 @@
 
 **方法**：
 
-*   我们在这里进行的第一个观察是，每一种此类的生成树都是链。 为了证明这一点，假设我们有一棵不是链的树，并且其中的每条路径都由交替的边组成。 然后我们可以推断出至少 1 个节点的阶数为 3。在这 3 个边缘中，至少 2 个具有相同的颜色。 使用这两个边的路径将永远不会遵循条件，因此，此类树始终是链。
+*   我们在这里进行的第一个观察是，每一种此类的生成树都是链。 为了证明这一点，假设我们有一棵不是链的树，并且其中的每条路径都由交替的边组成。 然后我们可以推断出至少 1 个节点的阶数为 3。在这 3 个边中，至少 2 个具有相同的颜色。 使用这两个边的路径将永远不会遵循条件，因此，此类树始终是链。
 *   现在我们可以使用 bitmask-dp
-    dp [mask（2 ^ n）] [Node（n）] [col_of_last_edge（2）]找到一条成本最低且边缘交替的链，其中 mask 是我们节点的位掩码 已添加到链中。 Node 是我们添加到链中的最后一个节点。col_of_last_edge 是用于连接 Node 的边的颜色。
+    dp [mask（2 ^ n）] [Node（n）] [col_of_last_edge（2）]找到一条成本最低且边交替的链，其中 mask 是我们节点的位掩码 已添加到链中。 Node 是我们添加到链中的最后一个节点。col_of_last_edge 是用于连接 Node 的边的颜色。
 *   为了从 1 状态过渡到另一状态，我们访问最后一个节点的邻接列表，并使用颜色为！= col_of_last_edge 的边。
 
 下面是上述方法的实现：

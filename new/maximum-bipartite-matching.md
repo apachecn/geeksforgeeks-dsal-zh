@@ -18,7 +18,7 @@
 `M`轴距`B`ipartite`M`附着（ **MBP** ）问题 可以通过将其转换为流动网络来解决（请参阅[此](http://www.youtube.com/watch?v=NlQqmEXuiC8)视频，以了解我们如何得出此结论）。 以下是步骤。
 
 [![maximum_matching2](img/9848259377187df035fa4007e289b9c8.png) ](https://media.geeksforgeeks.org/wp-content/cdn-uploads/maximum_matching2.png) *** 1）建立流网络*** 
-流网络中必须有源和汇。 因此，我们添加了一个来源，并向所有申请人添加了该来源的边。 同样，将所有作业的边添加到接收器。 每个边缘的容量标记为 1 个单位。
+流网络中必须有源和汇。 因此，我们添加了一个来源，并向所有申请人添加了该来源的边。 同样，将所有作业的边添加到接收器。 每个边的容量标记为 1 个单位。
 
 [![maximum_matching2](img/1b344d84622c1d060ab6c0de74ff6624.png) ](https://media.geeksforgeeks.org/wp-content/cdn-uploads/maximum_matching21.png) * **
 

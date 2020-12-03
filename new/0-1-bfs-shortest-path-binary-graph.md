@@ -20,7 +20,7 @@ Shortest distance from 0 to 2 is 1
 
 ```
 
-在图形的正常 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 中，所有边缘的权重均等，但在 0-1 BFS 中，某些边缘的权重为 0，而某些边缘的权重为 1。 在这种情况下，我们将不使用布尔数组来标记访问的节点，但是在每一步中，我们都会检查最佳距离条件。 我们使用[双端队列](http://quiz.geeksforgeeks.org/deque-set-1-introduction-applications/)存储该节点。 在执行 BFS 时，如果找到权重= 0 的边，则将节点推入双头队列的前面，如果找到权重= 1 的边，则将其推入双头队列的后面。
+在图形的正常 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 中，所有边的权重均等，但在 0-1 BFS 中，某些边的权重为 0，而某些边的权重为 1。 在这种情况下，我们将不使用布尔数组来标记访问的节点，但是在每一步中，我们都会检查最佳距离条件。 我们使用[双端队列](http://quiz.geeksforgeeks.org/deque-set-1-introduction-applications/)存储该节点。 在执行 BFS 时，如果找到权重= 0 的边，则将节点推入双头队列的前面，如果找到权重= 1 的边，则将其推入双头队列的后面。
 
 该方法类似于 [Dijkstra](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/) ，如果到节点的最短距离被前一个节点放宽，则仅将其推入队列。
 

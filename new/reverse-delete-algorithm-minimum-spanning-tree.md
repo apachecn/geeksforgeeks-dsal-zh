@@ -4,9 +4,9 @@
 
 > 原文： [https://www.geeksforgeeks.org/reverse-delete-algorithm-minimum-spanning-tree/](https://www.geeksforgeeks.org/reverse-delete-algorithm-minimum-spanning-tree/)
 
-反向删除算法与 [Kruskal 算法](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)密切相关。 在 Kruskal 的算法中，我们要做的是：按权重的增加顺序对边缘进行排序。 排序后，我们以递增顺序一个接一个地拾取边缘。 如果在生成树中包含 V-1 个边（直到 V =顶点数）之前不包含任何周期，则将当前选取的边包括在内。
+反向删除算法与 [Kruskal 算法](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)密切相关。 在 Kruskal 的算法中，我们要做的是：按权重的增加顺序对边进行排序。 排序后，我们以递增顺序一个接一个地拾取边。 如果在生成树中包含 V-1 个边（直到 V =顶点数）之前不包含任何周期，则将当前选取的边包括在内。
 
-在反向删除算法中，我们以**的权重按**的顺序递减所有边缘。 排序后，我们以降序一个接一个地拾取边缘。 如果**排除当前沿会导致电流图**中的断开连接，则包括**。 如果删除边缘不会导致图形断开，则主要思想是删除边缘。**
+在反向删除算法中，我们以**的权重按**的顺序递减所有边。 排序后，我们以降序一个接一个地拾取边。 如果**排除当前沿会导致电流图**中的断开连接，则包括**。 如果删除边不会导致图形断开，则主要思想是删除边。**
 
 算法
 
@@ -54,7 +54,7 @@ Edges in MST
 (6, 7) 
 ```
 
- **注意**：在相同重量边缘的情况下，我们可以选择相同重量边缘的任何边缘。
+ **注意**：在相同重量边的情况下，我们可以选择相同重量边的任何边。
 
 以下是上述步骤的 C ++实现。
 

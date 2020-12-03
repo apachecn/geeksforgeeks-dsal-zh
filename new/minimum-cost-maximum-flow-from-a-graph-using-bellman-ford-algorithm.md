@@ -22,7 +22,7 @@
 > **输出**：6 8
 
 **方法**：
-成本网络中的负周期是循环的，周期中所有边的成本之和为负。 可以使用 [Bellman Ford 算法](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)检测到它们。 应该将它们消除，因为实际上不允许通过这样的循环。 考虑一个**负成本周期**，如果所有流程都必须经过该周期，则总成本始终在每个完成的周期中减少。 这将导致**的需求无限循环，从而使总成本**降至最低。 因此，每当成本网络包含负周期时，这意味着可以进一步最小化成本（通过流过周期的另一侧而不是当前考虑的那一侧）。 通过使[瓶颈容量](https://en.wikipedia.org/wiki/Bottleneck_(production)#:~:text=In%20production%20and%20project%20management, customers%2C%20and%20low%20employee%20morale.)流经循环中的所有边缘，可以消除一旦检测到的负循环。
+成本网络中的负周期是循环的，周期中所有边的成本之和为负。 可以使用 [Bellman Ford 算法](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)检测到它们。 应该将它们消除，因为实际上不允许通过这样的循环。 考虑一个**负成本周期**，如果所有流程都必须经过该周期，则总成本始终在每个完成的周期中减少。 这将导致**的需求无限循环，从而使总成本**降至最低。 因此，每当成本网络包含负周期时，这意味着可以进一步最小化成本（通过流过周期的另一侧而不是当前考虑的那一侧）。 通过使[瓶颈容量](https://en.wikipedia.org/wiki/Bottleneck_(production)#:~:text=In%20production%20and%20project%20management, customers%2C%20and%20low%20employee%20morale.)流经循环中的所有边，可以消除一旦检测到的负循环。
 
 现在，看看什么是供需节点：
 
@@ -31,10 +31,10 @@
 > 
 > **每个节点上的供应（或需求）** =流出节点的总流量–流入节点的总流量
 
-通过向瓶颈周期的所有边缘发送瓶颈容量来解决负周期问题，可以解决给定的问题。 另外，由于涉及需求节点，因此调用 [Bellman Ford 算法](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)。
+通过向瓶颈周期的所有边发送瓶颈容量来解决负周期问题，可以解决给定的问题。 另外，由于涉及需求节点，因此调用 [Bellman Ford 算法](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)。
 请按照以下步骤解决问题：
 
-*   将边缘的**容量和该边缘**的**成本存储在两个单独的阵列中。**
+*   将边的**容量和该边**的**成本存储在两个单独的阵列中。**
 *   给定源节点`S`和宿节点`T`，拾取边沿 **p <sub>i</sub>** ，需求节点 **d <sub>a [</sub>** 和节点 **dist** 之间的距离，搜索是否有可能从`S`到`T`流动。
 *   如果存在流，则计算距离，**值= dist + pi – pi [k] – cost [k]** 。
 *   将 **dist []** 中的距离值与**值**比较，并不断更新，直到获得**最小流量**。

@@ -3,7 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/minimum-cut-in-a-directed-graph/](https://www.geeksforgeeks.org/minimum-cut-in-a-directed-graph/)
 
 在流网络中，s-t 切割是要求源“ s”和接收器“ t”位于不同子集中的切割，并且它由从源侧到接收器侧的边组成。 s-t 剪切的容量由剪切集中每个边的容量之和定义。 （来源： [Wiki](http://en.wikipedia.org/wiki/Cut_(graph_theory)) ）
-这里讨论的问题是找到给定网络的最小容量 s-t cut。 预期输出是最小切割的所有边缘。
+这里讨论的问题是找到给定网络的最小容量 s-t cut。 预期输出是最小切割的所有边。
 
 例如，在以下流网络中，示例性截割为{{0，1}，{0、2}}，{{0、2}，{1、2}，{1、3}}等。 最小 st 剪切为{{1，3}，{4，3}，{4 5}}，其容量为 12 + 7 + 4 = 23。
 
@@ -17,15 +17,15 @@
 
 [最大流量最小割定理](http://en.wikipedia.org/wiki/Max-flow_min-cut_theorem)指出，在流动网络中，最大流量等于最小割割的能力。 有关该定理的证明，请参见 [CLRS 书](http://www.flipkart.com/introduction-algorithms-3/p/itmczynzhyhxv2gs?pid=9788120340077&affid=sandeepgfg)。
 
-从福特福克森公司，我们可以获得最小切割能力。 如何打印形成最小切割的所有边缘？ 这个想法是使用[残差图](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)。
+从福特福克森公司，我们可以获得最小切割能力。 如何打印形成最小切割的所有边？ 这个想法是使用[残差图](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)。
 
-以下是打印最小切割的所有边缘的步骤。
+以下是打印最小切割的所有边的步骤。
 
 **1）**运行 Ford-Fulkerson 算法，并考虑最终的[残差图](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)。
 
 **2）**在残差图中找到可从源到达的一组顶点。
 
-**3）**从可达顶点到非可达顶点的所有边都是最小切割边。 打印所有此类边缘。
+**3）**从可达顶点到非可达顶点的所有边都是最小切割边。 打印所有此类边。
 
 以下是上述方法的实现。
 

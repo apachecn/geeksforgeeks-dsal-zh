@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/longest-path-in-a-directed-acyclic-graph-dynamic-programming/](https://www.geeksforgeeks.org/longest-path-in-a-directed-acyclic-graph-dynamic-programming/)
 
-给定有向图`G`，其中 *N 个顶点*和 *M 个边缘*。 任务是在 Graph 中找到最长的有向路径的长度。
+给定有向图`G`，其中 *N 个顶点*和 *M 个边*。 任务是在 Graph 中找到最长的有向路径的长度。
 
 **注意**：定向路径的长度是其中的边数。
 
