@@ -225,7 +225,7 @@ Vertex   Distance from Source
 
 时间复杂度：C++中的设置通常使用自平衡二进制搜索树来实现。 因此，设置操作（如插入，删除）的时间复杂度为对数，而上述解决方案的时间复杂度为 O（ELogV））。
 
- **[Dijkstra 使用 STL 的 priority_queue 的最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/)** 
+ [**Dijkstra 使用 STL 的 priority_queue 的最短路径算法**](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/) 
 
 本文由 [Utkarsh Trivedi](http://qa.geeksforgeeks.org/user/utkarsh111) 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。
 

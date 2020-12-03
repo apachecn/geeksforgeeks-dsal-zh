@@ -2,9 +2,9 @@
 
 > 原文： [https://www.geeksforgeeks.org/travelling-salesman-problem-implementation-using-backtracking/](https://www.geeksforgeeks.org/travelling-salesman-problem-implementation-using-backtracking/)
 
-**[旅行推销员问题（TSP）：](https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/)** 给定一组城市和每对城市之间的距离，问题在于找到一条最短的路线，该路线只精确地访问每个城市一次并返回 到起点
+[**旅行推销员问题（TSP）：**](https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/) 给定一组城市和每对城市之间的距离，问题在于找到一条最短的路线，该路线只精确地访问每个城市一次并返回 到起点
 
-注意 **[哈密顿循环](https://www.geeksforgeeks.org/backtracking-set-7-hamiltonian-cycle/)** 和 TSP 之间的差异。 汉密尔顿循环问题是要找出是否存在一次游览每个城市一次的旅行。 在这里，我们知道存在汉密尔顿游历（因为该图是完整的），并且实际上存在许多此类游历，问题是找到最小权重的汉密尔顿环。
+注意 [**哈密顿循环**](https://www.geeksforgeeks.org/backtracking-set-7-hamiltonian-cycle/) 和 TSP 之间的差异。 汉密尔顿循环问题是要找出是否存在一次游览每个城市一次的旅行。 在这里，我们知道存在汉密尔顿游历（因为该图是完整的），并且实际上存在许多此类游历，问题是找到最小权重的汉密尔顿环。
 
 例如，考虑图中所示的图表。 图中的 TSP 巡视为 1-> 2-> 4-> 3-> 1.巡视的成本为 10 + 25 + 30 + 15，即 80。
 

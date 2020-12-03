@@ -26,7 +26,7 @@
 
 *   为了最大程度地减少所需的操作次数，请使所有字母最多等于出现在这些位置的字母，只需对字符串执行 [DFS 遍历](https://www.geeksforgeeks.org/iterative-depth-first-traversal/)即可轻松找到。
 
-*   对所有未访问的节点，在创建的图形上执行 **[DFS 遍历](https://www.geeksforgeeks.org/print-the-dfs-traversal-step-wise-backtracking-also/)** ：
+*   对所有未访问的节点，在创建的图形上执行 [**DFS 遍历**](https://www.geeksforgeeks.org/print-the-dfs-traversal-step-wise-backtracking-also/) ：
 
     *   在该遍历中访问的字符中找到频率最高的最大元素（例如 **maxFrequency** ）。
 

@@ -16,7 +16,7 @@
 
 ![ford_fulkerson2](img/0cc230058968c39cad925949a53ee714.png)
 
-先决条件： **[最大流量问题简介](https://www.geeksforgeeks.org/max-flow-problem-introduction/)**
+先决条件： [**最大流量问题简介**](https://www.geeksforgeeks.org/max-flow-problem-introduction/)
 
 ```
 Ford-Fulkerson Algorithm 
@@ -535,7 +535,7 @@ public class MaxFlow
 The maximum possible flow is 23
 ```
 
-福特·富尔克森算法的上述实现称为 **[Edmonds-Karp 算法](http://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm)** 。 Edmonds-Karp 的想法是在 Ford Fulkerson 实现中使用 BFS，因为 BFS 总是选择一条边数最少的路径。 使用 BFS 时，最坏情况下的时间复杂度可以降低为 O（VE <sup>2</sup> ）。 尽管在 BFS 花费 O（V <sup>2</sup> ）时间的情况下，上述实现仍使用邻接矩阵表示，但上述实现的时间复杂度为 O（EV <sup>3</sup> ）（请参阅 [CLRS 书](http://www.flipkart.com/introduction-algorithms-3rd/p/itmczynzhyhxv2gs?pid=9788120340077&affid=sandeepgfg) （用于证明时间复杂度）
+福特·富尔克森算法的上述实现称为 [**Edmonds-Karp 算法**](http://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm) 。 Edmonds-Karp 的想法是在 Ford Fulkerson 实现中使用 BFS，因为 BFS 总是选择一条边数最少的路径。 使用 BFS 时，最坏情况下的时间复杂度可以降低为 O（VE <sup>2</sup> ）。 尽管在 BFS 花费 O（V <sup>2</sup> ）时间的情况下，上述实现仍使用邻接矩阵表示，但上述实现的时间复杂度为 O（EV <sup>3</sup> ）（请参阅 [CLRS 书](http://www.flipkart.com/introduction-algorithms-3rd/p/itmczynzhyhxv2gs?pid=9788120340077&affid=sandeepgfg) （用于证明时间复杂度）
 
 这是一个重要的问题，因为它在许多实际情况下都会出现。 例如，在给定的流量限制下最大化传输，在计算机网络中最大化数据包流。
 

@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/count-total-ways-to-reach-destination-from-source-in-an-undirected-graph/](https://www.geeksforgeeks.org/count-total-ways-to-reach-destination-from-source-in-an-undirected-graph/)
 
-给定 **[无向图](https://www.geeksforgeeks.org/graph-and-its-representations/)** ，源顶点**'s'**和目标顶点**'d'**，任务就是 **计算从给定**的**到**'d'**的总路径**。
+给定 [**无向图**](https://www.geeksforgeeks.org/graph-and-its-representations/) ，源顶点**'s'**和目标顶点**'d'**，任务就是 **计算从给定**的**到**'d'**的总路径**。
 
 **范例**
 

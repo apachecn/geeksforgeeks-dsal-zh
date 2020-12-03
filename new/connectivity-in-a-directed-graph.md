@@ -12,7 +12,7 @@
 
 **有向图该怎么办？**
 
-一个简单的想法是使用全对最短路径算法，例如 **[Floyd Warshall](https://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/) 或找到图的[传递闭包](https://www.geeksforgeeks.org/transitive-closure-of-a-graph/)** 。 该方法的时间复杂度为 O（v <sup>3</sup> ）。
+一个简单的想法是使用全对最短路径算法，例如 [**Floyd Warshall**](https://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/) 或找到图的[传递闭包](https://www.geeksforgeeks.org/transitive-closure-of-a-graph/) 。 该方法的时间复杂度为 O（v <sup>3</sup> ）。
 
 我们也可以**从每个顶点开始 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) V 倍**。 如果有任何 DFS 不能访问所有顶点，则图没有牢固连接。 该算法花费 O（V *（V + E））时间，这与密集图的传递闭合相同。
 

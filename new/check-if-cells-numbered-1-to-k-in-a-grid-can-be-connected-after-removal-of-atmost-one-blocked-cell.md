@@ -30,7 +30,7 @@ Atleast two cells need to be unblocked.
 
 ```
 
-**方法**：从编号为 **1 到 K** 的单元中执行 **[BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/)** ，并用它所属的组件标记每个单元。 检查是否有相邻单元属于不同组件的阻塞单元。 如果存在，则可以通过解锁该单元来进行连接。 否则，这是不可能的。
+**方法**：从编号为 **1 到 K** 的单元中执行 [**BFS**](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) ，并用它所属的组件标记每个单元。 检查是否有相邻单元属于不同组件的阻塞单元。 如果存在，则可以通过解锁该单元来进行连接。 否则，这是不可能的。
 
 **示例**：
 

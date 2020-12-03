@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/proof-that-subgraph-isomorphism-problem-is-np-complete/](https://www.geeksforgeeks.org/proof-that-subgraph-isomorphism-problem-is-np-complete/)
 
-**[子图同构问题](https://www.geeksforgeeks.org/mathematics-graph-isomorphisms-connectivity/)**：我们有两个无向图 G <sub>1</sub> 和 G <sub>2</sub> 。 问题是检查 G <sub>1</sub> 是否与 G <sub>2</sub> 的子图同构。
+[**子图同构问题**](https://www.geeksforgeeks.org/mathematics-graph-isomorphisms-connectivity/)：我们有两个无向图 G <sub>1</sub> 和 G <sub>2</sub> 。 问题是检查 G <sub>1</sub> 是否与 G <sub>2</sub> 的子图同构。
 
 **图同构**：如果两个图 A 和 B 具有相同的顶点和边数，则它们是同构的，并且保留了边连通性。 在图 A 和 B 的顶点集之间存在双射。因此，当且仅当 f（u），f（v）在 B 中相邻时，两个顶点 u，v 在 A 中彼此相邻（f 是 a 双射）。
 

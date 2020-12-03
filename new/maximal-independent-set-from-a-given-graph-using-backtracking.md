@@ -6,9 +6,9 @@
 
 给定具有`V`顶点和`E`边的**无向图**，任务是打印所有**独立集**并找到 **最大独立集**。
 
-> **[独立集](https://www.geeksforgeeks.org/mathematics-independent-sets-covering-and-matching/)** 是一组顶点，因此该组中的任何两个顶点之间都没有直接的边。
+> [**独立集**](https://www.geeksforgeeks.org/mathematics-independent-sets-covering-and-matching/) 是一组顶点，因此该组中的任何两个顶点之间都没有直接的边。
 
-> **[最大独立集](https://www.geeksforgeeks.org/largest-independent-set-problem-dp-26/)** 是顶点数最多的独立集。
+> [**最大独立集**](https://www.geeksforgeeks.org/largest-independent-set-problem-dp-26/) 是顶点数最多的独立集。
 
 **注意**：对于一个给定的图形，可以有多个独立和最大独立集。
 

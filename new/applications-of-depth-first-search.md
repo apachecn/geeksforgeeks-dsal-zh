@@ -24,7 +24,7 @@
 
 有关详细信息，请参见此的[。](http://ww3.algorithmdesign.net/handouts/DFS.pdf)
 
-4.  **[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)**
+4.  [**拓扑排序**](https://www.geeksforgeeks.org/topological-sorting/)
 
 拓扑排序主要用于根据作业之间的给定依赖性来调度作业。 在计算机科学中，这种类型的应用出现在指令调度，重新计算电子表格中的公式值时公式单元格评估的顺序，逻辑综合，确定要在 makefile 中执行的编译任务的顺序，数据序列化以及解析链接器中的符号依存关系[2]。
 

@@ -22,7 +22,7 @@
 
 *   [STL 向量容器](https://www.geeksforgeeks.org/vector-in-cpp-stl/)用于存储 BFS 遍历所需的相邻节点列表和节点队列。
 
-*   **[DP 阵列](https://www.geeksforgeeks.org/dynamic-programming/)** 用于存储节点到源的距离。 每次我们从一个节点移动到另一个节点时，距离都会增加 1。如果到达节点的距离小于以前的距离，我们将更新`DP[node]`中存储的值。
+*   [**DP 阵列**](https://www.geeksforgeeks.org/dynamic-programming/) 用于存储节点到源的距离。 每次我们从一个节点移动到另一个节点时，距离都会增加 1。如果到达节点的距离小于以前的距离，我们将更新`DP[node]`中存储的值。
 
 **下面是上述方法的实现**：
 
