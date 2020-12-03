@@ -25,6 +25,7 @@
 由于 pair 对实现图算法不方便，因此我们首先将其转换为图。 如果任务 u 是任务 v 的先决条件，我们将添加从节点 u 到节点 v 的有向边。
 
 **使用 BFS 的拓扑排序**
+
 在这里，我们使用 [Kahn 的算法对拓扑进行排序](https://www.geeksforgeeks.org/topological-sorting-indegree-based-solution/)。 BFS 使用每个节点的度数。 我们将首先尝试查找度数为 0 的节点。 如果我们不这样做，则图中必须有一个循环，并且返回 false。 否则，我们找到了一个。 我们将其度数设置为-1，以防止再次访问它，并将其所有邻居的度数减少 1。此过程将重复 n（节点数）次。
 
 ```
@@ -119,6 +120,7 @@ int main()
 ```
 
 **使用 DFS 进行拓扑排序**：
+
 在此实现中，我们使用[基于 DFS 的算法进行拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。
 
 ```

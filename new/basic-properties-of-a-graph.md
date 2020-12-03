@@ -7,6 +7,7 @@
 图的属性根据其结构基本上用于图的表征。 我们使用与图论领域相关的特定术语来定义这些属性。 在本文中，我们将讨论图的一些属性，这些属性如下：
 
 1.  **Distance between two Vertices**
+
     It is basically the number of edges that are available in the shortest path between vertex A and vertex B.If there is more than one edge which is used two connect two vertices then we basically considered the shortest path as the distance between these two vertices.
 
     ```
@@ -17,7 +18,9 @@
     ```
 
     让我们通过一个例子来理解这一点：
+
     ![](img/08dbc601e31f48522d98a3988b67e3f2.png)
+
     在上图中，我们尝试找出顶点 b 和 d 之间的距离。
 
     ```
@@ -32,6 +35,7 @@
     ```
 
 2.  **Eccentricity of a Vertex**
+
     Maximum distance from a vertex to all other vertices is considered as the Eccentricity of that vertex.
 
     ```
@@ -42,6 +46,7 @@
     ```
 
     让我们尝试使用以下示例来理解这一点。
+
     ![](img/08dbc601e31f48522d98a3988b67e3f2.png)
 
     ```
@@ -58,6 +63,7 @@
     ```
 
 3.  **Radius of a Connected Graph**
+
     The minimum value of eccentricity from all vertices is basically considered as the radius of connected graph.
 
     ```
@@ -68,6 +74,7 @@
     ```
 
     让我们尝试使用以下示例来理解这一点。
+
     ![](img/08dbc601e31f48522d98a3988b67e3f2.png)
 
     ```
@@ -78,6 +85,7 @@
     ```
 
 4.  **Diameter of A Connected Graph**
+
     Unlike the radius of the connected graph here we basically used the maximum value of eccentricity from all vertices to determine the diameter of the graph.
 
     ```
@@ -88,6 +96,7 @@
     ```
 
     让我们尝试使用以下示例来理解这一点。
+
     ![](img/08dbc601e31f48522d98a3988b67e3f2.png)
 
     ```
@@ -98,6 +107,7 @@
     ```
 
 5.  **Central Point and Centre**
+
     The vertex having minimum eccentricity is considered as the central point of the graph.And the sets of all central point is considered as the centre of Graph.
 
     ```
@@ -108,6 +118,7 @@
     ```
 
     让我们尝试使用以下示例来理解这一点。
+
     ![](img/08dbc601e31f48522d98a3988b67e3f2.png)
 
     ```

@@ -17,6 +17,7 @@ Output : 5
 ```
 
 ***什么是岛屿？***
+
 一组相连的 1s 形成一个岛。 例如，下面的矩阵包含 5 个岛
 
 ```
@@ -29,6 +30,7 @@ Output : 5
 ```
 
 这是标准问题的一种变体：[已连接组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)。 无向图的连接部分是一个子图，其中每两个顶点通过一条路径相互连接，并且不与子图外部的其他顶点连接。
+
 例如，下面的图形具有三个连接的组件。
 
 ![](img/6f4d30e79bc2c91466c6c30130582262.png "islands")

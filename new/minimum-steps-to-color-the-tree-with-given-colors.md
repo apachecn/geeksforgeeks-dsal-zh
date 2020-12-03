@@ -19,6 +19,7 @@
 > **输出**：3
 
 **方法**：在顶点 1 调用 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 函数，最初将答案保持为零。 只要子节点和父节点的颜色不同，就增加答案。
+
 请参阅以下代码，以更好地理解。
 
 下面是上述方法的实现：

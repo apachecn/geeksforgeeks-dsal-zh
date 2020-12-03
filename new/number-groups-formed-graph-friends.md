@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/number-groups-formed-graph-friends/](https://www.geeksforgeeks.org/number-groups-formed-graph-friends/)
 
 给定 n 个朋友和他们的友谊关系，找到存在的小组总数。 以及可以由每个现有组中的人组成的新组的方式数量。
+
 如果未与任何人建立任何关系，则该人没有任何组，而是单独组成一个组。 如果 a 是 b 的朋友，b 是 c 的朋友，则 b 和 c 组成一个组。
 
 **示例**：
@@ -363,5 +364,6 @@ No. of new groups that can be formed are 8
 **时间复杂度**：O（N + R），其中 N 是人数，R 是关系数。
 
 本文由 [**Raj**](https://www.facebook.com/raja.vikramaditya.7) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

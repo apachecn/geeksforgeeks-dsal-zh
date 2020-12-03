@@ -28,14 +28,17 @@
 **方法**：
 
 *   这里的主要思想是使用 matrix（2D array），如果最短路径对任何一对节点都发生更改，它将跟踪下一个要指向的节点。 最初，两个节点 u 和 v 之间的最短路径是 v（即 u-> v 的直接边）。
+
 *   Initialising the **Next** array
 
     > 如果路径存在于两个节点之间，则 **Next [u] [v] = v**
+
     > 否则我们设置 **Next [u] [v] = -1**
 
 *   Modification in Floyd Warshall Algorithm
 
     > 在**内部，如果 Floyd Warshall 算法**的条件成立，我们将添加语句 Next [i] [j] = Next [i] [k]
+
     > （这意味着我们找到了 i，j 之间的最短路径 通过中间节点 k）。
 
     如果条件如下所示，这就是我们的
@@ -48,6 +51,7 @@
     }
 
     ```** 
+
 ***   For constructing path using these nodes we’ll simply start looping through the node`u`while updating its value to next[u][v] until we reach node`v`.
 
     ```

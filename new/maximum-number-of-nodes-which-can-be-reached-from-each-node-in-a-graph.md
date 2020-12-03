@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/maximum-number-of-nodes-which-can-be-reached-from-each-node-in-a-graph/](https://www.geeksforgeeks.org/maximum-number-of-nodes-which-can-be-reached-from-each-node-in-a-graph/)
 
 给定一个具有 N 个节点和它们之间的 K 个双向边的图，可以找到特定节点可到达的节点数。 如果我们可以使用任意数量的边在 X 处开始并在 Y 处结束，则可以说两个节点 X 和 Y 是可到达的。
+
 **注意：节点自身可达。**
 
 ```
@@ -32,7 +33,9 @@ Output :6 6 6 6 6 6 2 2
 ```
 
 **方法**：
+
 要查找从特定节点可到达的节点数，要观察的一件事是，只有当节点 X 位于相同连接的组件中时，我们才能从节点 X 到达节点 Y。
+
 由于该图是双向的，因此连接的组件中的任何节点都与同一连接的组件中的其他任何节点相同。 因此，对于特定的节点 X，可到达的节点数将是该特定组件中的节点数。使用深度优先搜索来找到答案。
 
 下面是上述方法的实现：

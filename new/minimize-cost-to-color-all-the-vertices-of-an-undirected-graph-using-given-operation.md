@@ -21,9 +21,11 @@
 > **输出**：5
 
 **方法**：[
+
 ]请按照以下步骤解决问题：
 
 *   从给定节点可到达的所有节点形成[连接组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)。
+
 *   因此，对于每个连接的组件，请使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)，找到图的连接组件中的最小成本节点。
 
 下面是上述方法的实现：
@@ -422,6 +424,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（V + E）*
+
 ***辅助空间**：O（V）*
 
 

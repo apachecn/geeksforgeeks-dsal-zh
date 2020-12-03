@@ -27,16 +27,23 @@
 > 因此，打印 4 和 5。
 
 **天真的方法**：最简单的方法是[为给定图中的每个节点检测有向图](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)中的周期，并仅打印不属于给定周期中任何周期的那些节点 图形。
+
 ***时间复杂度**：O（V *（V + E）），其中 V 是顶点数，E 是边数。*
+
 ***辅助空间**：O（V）*
 
 **高效方法**：为了优化上述方法，其思想是在给定图中的任何循环时，将中间节​​点存储为**访问循环节点**。 要实现此部分，请使用辅助数组 **cyclePart []** ，该数组将在执行 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)时存储中间循环节点。 步骤如下：
 
 *   初始化大小为`N`的辅助数组 **cyclePart []** ，使得如果 **cyclePart [i] = 0** ，则 **i <sup>th</sup>** 节点在任何周期内都不存在。
+
 *   初始化大小为`N`的辅助数组 **recStack []** ，以便通过将访问的节点标记为 **true 将其存储在[递归](https://www.geeksforgeeks.org/recursion/)堆栈中。** 。
+
 *   在给定的图形上对每个未访问的节点执行 DFS 遍历，然后执行以下操作：
+
     *   现在，在给定图中找到一个循环，只要找到一个循环，就将 **cyclePart []** 中的节点标记为 **true** ，因为该节点是循环的一部分。
+
     *   如果在[递归](https://www.geeksforgeeks.org/recursion/)调用中访问了任何**节点**并且为 **recStack [node]** 也为 true，则该节点是循环的一部分，然后将该节点标记为 **是**。
+
 *   在执行 **DFS 遍历**之后，[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/) **cyclePart []** 并打印所有标记为**假**的节点，因为这些节点是 不是任何周期的一部分。
 
 下面是上述方法的实现：
@@ -231,6 +238,7 @@ int main()
 ```
 
 ***时间复杂度**：O（V + E）*
+
 ***空间复杂度**：O（V）*
 
 

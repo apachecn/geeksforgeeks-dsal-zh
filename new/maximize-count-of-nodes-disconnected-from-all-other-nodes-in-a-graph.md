@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/maximize-count-of-nodes-disconnected-from-all-other-nodes-in-a-graph/](https://www.geeksforgeeks.org/maximize-count-of-nodes-disconnected-from-all-other-nodes-in-a-graph/)
 
 给定两个整数`N`和`E`，它们表示[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)的节点数和边数，因此任务是最大化 在不使用任何自环的情况下，未连接到图中的任何其他节点。
+
 **范例**：
 
 > **输入**：N = 5，E = 1
@@ -17,10 +18,15 @@
 **方法**：该方法基于以下思想：为了使断开连接的节点数最大化，只有在每两个不同的节点都连接好之后，才会将新节点添加到图中。 以下是解决此问题的步骤：
 
 1.  初始化两个变量**和 **rem** ，分别存储连接的节点和未分配的边。**
+
 2.  如果 **rem** 变为 0，则所需答案将为 **N – curr** 。
+
 3.  否则，将 **curr** 的值增加 1。
+
 4.  因此，当前步骤中保持每两个不同节点连接所需的最大边为 **min（rem，curr）**。 从 **rem** 中减去它，并增加 **curr** 。
+
 5.  重复此过程，直到 **rem** 减小为零。
+
 6.  最后，打印 **N – curr** 。
 
 下面是上述方法的实现：
@@ -239,6 +245,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（E）*
+
 ***辅助空间**：O（1）*
 
 

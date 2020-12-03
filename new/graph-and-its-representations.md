@@ -3,31 +3,41 @@
 > 原文： [https://www.geeksforgeeks.org/graph-and-its-representations/](https://www.geeksforgeeks.org/graph-and-its-representations/)
 
 图是一种数据结构，由以下两个部分组成：
+
 **1\.** 一组有限的顶点，也称为节点。
+
 **2\.** 形式有限的一组有序对，其形式为（u，v），称为边。 该对有序，因为在有向图（二向图）的情况下（u，v）与（v，u）不同。 形式为（u，v）的对表示从顶点 u 到顶点 v 有一条边。这些边可能包含权重/值/成本。
 
 图用于表示许多现实生活中的应用程序：图用于表示网络。 网络可以包括城市或电话网络或电路网络中的路径。 图形还用于诸如 linkedIn，Facebook 之类的社交网络中。 例如，在 Facebook 中，每个人都用一个顶点（或节点）表示。 每个节点都是一个结构，并包含诸如个人 ID，姓名，性别和语言环境之类的信息。 有关图表的更多应用，请参见此的[。](http://en.wikipedia.org/wiki/Graph_theory#Applications)
 
 以下是具有 5 个顶点的无向图的示例。
+
 ![](img/bf0ecf4aed9c34e052191baf40164fa2.png "graph_representation1")
 
 以下两个是图形的最常用表示形式。
+
 **1\.** 邻接矩阵
+
 **2\.** 邻接列表
+
 也有其他表示，例如，事件矩阵和事件列表。 图形表示的选择取决于具体情况。 这完全取决于要执行的操作类型和易用性。
 
 **邻接矩阵**：
+
 邻接矩阵是 2D 数组，大小为 V x V，其中 V 是图形中的顶点数。 假设 2D 数组为 adj [] []，则槽 adj [i] [j] = 1 表示从顶点 i 到顶点 j 有一条边。 无向图的邻接矩阵始终是对称的。 邻接矩阵也用于表示加权图。 如果 adj [i] [j] = w，则从顶点 i 到顶点 j 的权重为 w 的边。
 
 上面的示例图的邻接矩阵为：
+
 ![Adjacency Matrix Representation](img/e6ce2df9f47474d523e582301bb05396.png "adjacency_matrix_representation")
 
 *优点：*表示更易于实现和遵循。 移除边需要 O（1）时间。 诸如从顶点“ u”到顶点“ v”是否存在边的查询是有效的，可以执行 O（1）。
 
 *缺点：*占用更多空间 O（V ^ 2）。 即使图是稀疏的（包含较少的边数），它也会占用相同的空间。 添加一个顶点是 O（V ^ 2）时间。
+
 有关相邻矩阵的 Python 实现示例，请参见此的[。](https://ide.geeksforgeeks.org/9je5j6jJ13)
 
 **邻接列表**：
+
 使用列表数组。 数组的大小等于顶点数。 令数组为 array []。 入口数组[i]表示与第**，*，*，**个顶点相邻的顶点列表。 该表示也可以用于表示加权图。 边的权重可以表示为成对列表。 以下是上图的邻接列表表示。
 
 ![Adjacency List Representation of Graph](img/2c37d703328bcef494fbd4617b0f46df.png "adjacency_list_representation")
@@ -419,10 +429,13 @@ Output:
 *缺点：*诸如从顶点 u 到顶点 v 是否存在边的查询效率不高，可以执行 O（V）。
 
 参考：
+
 [http://en.wikipedia.org/wiki/Graph_%28abstract_data_type%29](http://en.wikipedia.org/wiki/Graph_%28abstract_data_type%29)
 
 **相关文章**：
+
 [使用 STL 进行竞争性编程的图形表示| 集合 1（无权重和无向 DFS）](https://www.geeksforgeeks.org/graph-representation-using-stl-for-competitive-programming-set-1-dfs-of-unweighted-and-undirected/)
+
 [使用 STL 进行竞争性编程的图形实现| 设置 2（加权图）](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-2-weighted-graph/)
 
 本文由 [Aashish Barnwal](https://www.facebook.com/barnwal.aashish) 编写，并由 GeeksforGeeks 小组审阅。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。

@@ -9,9 +9,11 @@
 **b）**除 s 和 t 之外，每个顶点的流入流量等于流出流量。
 
 例如，请考虑以下 CLRS 书中的图表。
+
 ![ford_fulkerson1](img/568b1131326471bed1ddb97bf1399c90.png)
 
 上图中的最大可能流量为 23。
+
 ![ford_fulkerson2](img/0cc230058968c39cad925949a53ee714.png)
 
 我们已经讨论了 [Ford Fulkerson 算法](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)，该算法使用扩展路径来计算最大流量。
@@ -27,7 +29,9 @@ Push-Relabel 方法比 Ford-Fulkerson 算法更有效。 本文讨论了 Goldber
 **与福特富尔克森**的区别
 
 *   推入重贴标签算法在更局限的地方工作。 推入重贴标签算法一次不会在一个顶点上工作，而不是检查整个残差网络以找到增广路径（来源：CLRS 书）。
+
 *   在 Ford-Fulkerson 中，每个顶点（源和汇除外）的总流出和总流入之间的净差保持为 0。Push-Relabel 算法允许流入超过最终流出之前的流出。 在最终流中，除源和接收器外，所有其他器的净差为 0。
+
 *   时间复杂度明智地提高了效率。
 
 推入重贴标签算法（考虑流体流动问题）背后的直觉是，我们将边视为水管和节点是关节。 该水源被认为是最高水位，它将水输送到所有相邻节点。 一旦节点中有多余的水，它会**将**水推到较小的节点。 如果水被局部困在顶点处，则顶点被**重新标记为**，这意味着其高度会增加。
@@ -76,6 +80,7 @@ Push-Relabel 算法中有三个主要操作
     ```
 
 2.  **Push（）**用于从流量过大的节点产生流量。 如果顶点有多余的流动，并且有一个相邻的高度较小（在残差图中），我们将流动从顶点推到相邻的较低高度。 通过管道（边）的推动流量等于多余流量和边容量的最小值。
+
 3.  **Relabel（）**操作用于顶点流动过多且相邻顶点都不处于较低高度的情况。 我们基本上增加了顶点的高度，以便可以执行 push（）。 为了增加高度，我们选择相邻的最小高度（在残差图中，即可以添加流量的相邻高度）并对其加 1。
 
 注意，以上操作是在残差图上执行的（例如 [Ford-Fulkerson](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/) ）。
@@ -85,7 +90,9 @@ Push-Relabel 算法中有三个主要操作
 Before we proceed to below example, we need to make sure that we understand residual graph (See [this](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/) for more details of residual graph). Residual graph is different from graphs shown.
 
 每当我们将顶点 u 的流量推入或添加到 v 时，我们都会在残差图中进行以下更新：
+
 1）我们从 u 到 v 的边容量中减去流量。如果边的容量变为 0，则 边不再存在于残差图中。
+
 2）我们将流量增加到从 v 到 u 的边容量。
 
 ```
@@ -107,46 +114,55 @@ to one edge shown above.
 ```
 
 1.  初始给定流程图。
+
     ![pushrelabel1](img/7e0967b8f18740c26d835c41c1f6601c.png)
 
 .
 
 3.  在 PreFlow 操作之后。 在残差图中，从 A 到 S 的边为容量 3，从 S 到 A 的边为无。
+
     ![pushrelabel2](img/f2be4224279f4f1e0948c4207f3b7984.png)
 
 .
 
 5.  高亮显示的顶点被重新标记（高度变为 1），因为它有过多的流量，并且没有相邻的顶点具有较小的高度。 新高度等于相邻高度的最小值加 1.在残差图中，顶点 A 有两个相邻，一个是 S，另一个是 B.S 的高度是 4，B 的高度是 0.这两个的最小值 heights 是 0。我们取最小值并加 1。
+
     ![pushrelabel3](img/90e1509ccda298d51926c011f34afd4c.png)
 
 .
 
 7.  突出显示的顶点有过多的流动，并且相邻的顶点的高度较低，因此发生 push（）。 顶点 A 的多余流量为 2，边（A，B）的容量为 1。因此，推动的流量为 1（两个值的最小值）。
+
     ![pushrelabel4](img/6e833f3c48fefea399983543bd97e8d6.png)
 
 .
 
 11.  高亮显示的顶点被重新标记（高度变为 1），因为它有过多的流量，并且没有相邻的顶点具有较小的高度。
+
     ![pushrelabel5](img/028c850291ece28559302a29140efa1d.png)
 
 .
 
 13.  高亮显示的顶点有多余的流量，并且相邻顶点的高度较低，因此 flow（）从 B 推到 T。
+
     ![pushrelabel6](img/d3ee525186844735b0e8bd43418800bc.png)
 
 .
 
 15.  高亮显示的顶点被重新标记（高度变为 5），因为它有过多的流量，并且没有相邻的顶点具有较小的高度。
+
     ![pushrelabel7](img/1de69e111ae8fd01f1cfc68803c0df8c.png)
 
 .
 
 17.  突出显示的顶点有过多的流动，并且相邻的顶点的高度较低，因此发生 push（）。
+
     ![pushrelabel8](img/1312efa8fdcb4d4213f7c726dfc5dc60.png)
 
 .
 
 19.  高亮显示的顶点被重新标记（高度增加 1），因为它有过多的流量，并且没有相邻的顶点具有较小的高度。
+
     ![pushrelabel9](img/0989522c81d8bdff9c2704a45c1e7c59.png)
 
 上面的示例取自[此处](http://melodi.ee.washington.edu/~bilmes/grg/pushrelabel1.ppt)。

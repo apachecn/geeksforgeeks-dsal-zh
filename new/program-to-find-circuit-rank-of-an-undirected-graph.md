@@ -44,6 +44,7 @@ Circuit Rank =  Edges - (Vertices - 1)
 因此，上图的电路等级= 3。
 
 在下图中可以看到，通过从上图中删除 3 个边（a-d，a-e，c-d），可以删除所有循环。
+
 ![](img/c0b2f03e751928f996ad3af5fb9462e7.png)
 
 下面是上述方法的实现：

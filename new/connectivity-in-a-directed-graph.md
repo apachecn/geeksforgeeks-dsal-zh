@@ -19,6 +19,7 @@
 更好的主意可以是 **[强连接组件（SCC）](https://www.geeksforgeeks.org/strongly-connected-components/)算法**。 我们可以找到 O（V + E）时间中的所有 SCC。 如果 SCC 的数量为 1，则表示图形连接牢固。 因为找到所有 SCC，所以 SCC 的算法会做额外的工作。
 
 以下是 **Kosaraju 基于 DFS 的简单算法，该算法执行图形的两个 DFS 遍历**：
+
 **1）**将所有顶点初始化为未访问。
 
 **2）**从任意顶点 v 开始进行图的 DFS 遍历。如果 DFS 遍历没有访问所有顶点，则返回 false。
@@ -395,12 +396,15 @@ No
 **时间复杂度**：上述实现的时间复杂度与[深度优先搜索](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)相同，如果该图是使用邻接列表表示形式表示的，则为 O（V + E）。
 
 **我们可以进一步改善吗？**
+
 上述方法需要两次遍历图。 我们可以使用 [Tarjan 的算法来查找图是否是强连通的，并使用](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/) [Tarjan 算法查找强连通的分量](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)。
 
 **练习**：
+
 在上述算法中可以使用 BFS 代替 DFS 吗？ 参见[此](https://www.geeksforgeeks.org/check-given-directed-graph-strongly-connected-set-2-kosaraju-using-bfs/)。
 
 **参考**：
+
 [http://www.ieor.berkeley.edu/~hochbaum/files/ieor266-2012.pdf](http://www.ieor.berkeley.edu/~hochbaum/files/ieor266-2012.pdf)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。

@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/maximum-sum-of-values-of-nodes-among-all-connected-components-of-an-undirected-graph/](https://www.geeksforgeeks.org/maximum-sum-of-values-of-nodes-among-all-connected-components-of-an-undirected-graph/)
 
 给定具有`V`顶点和`E`边的无向图。 每个节点都被分配了一个给定的值。 任务是在图中所有连接的组件中找到具有最大值总和的连接链。
+
 **范例**：
 
 > **输入**：V = 7，E = 4

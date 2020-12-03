@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/find-weight-of-mst-in-a-complete-graph-with-edge-weights-either-0-or-1/](https://www.geeksforgeeks.org/find-weight-of-mst-in-a-complete-graph-with-edge-weights-either-0-or-1/)
 
 给定`N`个顶点的无向加权完整[图](https://www.geeksforgeeks.org/graph-and-its-representations/)。 确切有**个 M** 边的权重为 1，其余所有可能的边的权重为 0。[数组](https://www.geeksforgeeks.org/array-data-structure/) **arr [] []** 给出了一组权重的边 1.任务是计算此[图](https://www.geeksforgeeks.org/graph-and-its-representations/)的[最小生成树](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)的总权重。
+
 **范例**：
 
 > **输入**：N = 6，M = 11，arr [] [] = {（1 3），（1 4），（1 5），（1 6），（2 3），（2 4），（2 5），（2 6），（3 4），（3 5），（3 6）}
@@ -20,12 +21,17 @@
 > ![](img/77daeb31552860fe8fb9b7ec2fb3eaba.png)
 
 **方法**：
+
 对于 **N 个**节点的给定[图](https://www.geeksforgeeks.org/graph-and-its-representations/)作为[连接组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)，我们需要 **N-1 **1 个权重**边的**边。 以下是步骤：
 
 1.  将权重为 1 的所有边的给定[图](https://www.geeksforgeeks.org/graph-and-its-representations/)存储在[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)中。
+
 2.  使用[设置](http://www.geeksforgeeks.org/set-in-cpp-stl/)来存储不包含在任何 **0 权重** [连接的组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)中的顶点。
+
 3.  对于当前存储在[集](http://www.geeksforgeeks.org/set-in-cpp-stl/)中的每个顶点，执行 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)并将组件数增加 1，并从 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)中删除所有访问的顶点 [设置](http://www.geeksforgeeks.org/set-in-cpp-stl/)。
+
 4.  在 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)期间，将[向量](http://www.geeksforgeeks.org/vector-in-cpp-stl/)中的 **0 权重**顶点和另一个[集](http://www.geeksforgeeks.org/set-in-cpp-stl/)中的 1 权重顶点包括在内。 对[向量](http://www.geeksforgeeks.org/vector-in-cpp-stl/)中包含的所有顶点运行 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)。
+
 5.  然后，将最小生成树的总权重指定为组件数– 1。
 
 下面是上述方法的实现：

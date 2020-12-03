@@ -3,10 +3,15 @@
 > 原文： [https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
 
 ***什么是最小生成树？***
+
 给定一个连接且无向的图，该图的*生成树*是一个子图，它是一棵树并将所有顶点连接在一起。 单个图可以具有许多不同的生成树。 加权，连接和无向图的*最小生成树（MST）*或最小权重生成树是权重小于或等于其他所有生成树的权重的生成树。 生成树的权重是赋予生成树的每个边的权重之和。
+
 *最小生成树有几个边？*
+
 最小生成树具有（V – 1）个边，其中 V 是给定图中顶点的数量。
+
 *最小生成树的应用是什么？*
+
 有关 MST 的应用，请参见此的[。](https://www.geeksforgeeks.org/applications-of-minimum-spanning-tree/)
 
 以下是使用 Kruskal 算法查找 MST 的步骤
@@ -16,8 +21,11 @@
 > **3\.** 重复步骤 2，直到生成树中有（V-1）个边。
 
 步骤 2 使用[联合查找算法](https://www.geeksforgeeks.org/union-find/)检测周期。 因此，我们建议您先阅读以下内容。
+
 [联合查找算法| 集合 1（图形中的检测周期）](https://www.geeksforgeeks.org/union-find/)，
+
 [联合查找算法| 集合 2（按等级和路径压缩的并集）](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
+
 该算法是贪婪算法。 贪婪的选择是选择重量最小的边沿，该边沿不会在到目前为止构造的 MST 中引起循环。 让我们以一个示例来理解它：考虑以下输入图。
 
 ![](img/16aae8065a8aa7bda0a6d79e0df2b85a.png)
@@ -46,6 +54,7 @@ Weight   Src    Dest
 ```
 
 现在从排序的边列表中逐个拾取所有边。
+
 **1。** *拾取边 7-6：*没有形成循环，包括在内。
 
 ![](img/ef52836116212616ec4e020d7e6fb8dc.png)
@@ -67,16 +76,19 @@ Weight   Src    Dest
 ![](img/07dceee1b79c3d8fdb01b6fc1675661c.png)
 
 **6\.** *拾取边 8-6：*由于包括该边会导致循环，因此请将其丢弃。
+
 **7\.** *拾取边 2-3：*没有形成循环，包括在内。
 
 ![](img/684fb002a4ac669b7e851865c942bb27.png)
 
 **8\.** *拾取边 7-8：*由于包括该边会导致循环，因此请将其丢弃。
+
 **9\.** *拾取边 0-7：*没有形成循环，包括在内。
 
 ![](img/cc7834c40baa57b0d211f2be6496afa2.png)
 
 **10\.** *拾取边 1-2：*由于包括该边会导致循环，因此请将其丢弃。
+
 **11\.** *拾取边 3-4：*没有形成循环，包括在内。
 
 ![](img/cf20377c93d0f3cfcdea78862ccdab2d.png)
@@ -1027,6 +1039,8 @@ Minimum Cost Spanning Tree: 19
 **时间复杂度**：O（ElogE）或 O（ElogV）。 边排序需要 O（ELogE）时间。 排序后，我们遍历所有边并应用 find-union 算法。 查找和联合操作最多需要 O（LogV）时间。 因此，总体复杂度为 O（ELogE + ELogV）时间。 E 的值最多为 O（V <sup>2</sup> ），因此 O（LogV）等于 O（LogE）。 因此，总体时间复杂度为 O（ElogE）或 O（ElogV）
 
 参考文献：
+
 [http://www.ics.uci.edu/~eppstein/161/960206.html](http://www.ics.uci.edu/~eppstein/161/960206.html)
+
 本文由 [Aashish Barnwal](https://www.facebook.com/barnwal.aashish) 编译，并由 GeeksforGeeks 团队进行了审核。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

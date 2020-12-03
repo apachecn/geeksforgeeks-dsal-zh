@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/check-if-vertex-x-lies-in-subgraph-of-vertex-y-for-the-given-graph/](https://www.geeksforgeeks.org/check-if-vertex-x-lies-in-subgraph-of-vertex-y-for-the-given-graph/)
 
 给定**无向图**以及两个**顶点 X 和 Y** ，我们的任务是检查顶点 X 是否位于顶点 Y 的子图中。
+
 **示例**：[
 
 > ![](img/5e63bc0d89b8ea6626336dfe8bc402fa.png)
@@ -19,6 +20,7 @@
 > 1 的子图包含{2、3、4、5、6}，所以 6 位于 1 的子图中。
 
 **方法**：的想法是使用[深度优先搜索（DFS）](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)。 初始化中的两个数组*和*中的*初始化，以保持遍历顶点的开始时间和结束标记的时间，直到遍历顶点。 如果第二个顶点的开始时间小于第一个顶点的开始时间，并且第一个顶点的结束时间小于第二个顶点的结束时间，则返回 true，否则返回 false。
+
 以下是上述方法的实现：* 
 
 ## C++
@@ -480,6 +482,7 @@ Yes
 ```
 
 ***时间复杂度**：O（V + E）*
+
 ***空间复杂度**：O（3 * N）*
 
 

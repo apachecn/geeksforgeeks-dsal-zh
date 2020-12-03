@@ -3,8 +3,11 @@
 > 原文： [https://www.geeksforgeeks.org/traveling-salesman-problem-tsp-implementation/](https://www.geeksforgeeks.org/traveling-salesman-problem-tsp-implementation/)
 
 [旅行推销员问题（TSP）：](https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/)给定一组城市以及每对城市之间的距离，问题在于找到一条最短的路线，该路线可以精确地访问每个城市一次并返回起点。
+
 注意[哈密顿循环](https://www.geeksforgeeks.org/backtracking-set-7-hamiltonian-cycle/)和 TSP 之间的差异。 汉密尔顿周期问题是要找出是否存在一次游览每个城市一次的旅行。 在这里，我们知道存在汉密尔顿巡回赛（因为该图是完整的），实际上，存在许多此类巡回赛，问题在于找到最小权重的汉密尔顿循环。
+
 例如，请考虑右侧图中所示的图表。 图中的 TSP 巡视是 1-2-4-3-1。 这次旅行的费用是 10 + 25 + 30 + 15，即 80。
+
 问题是一个著名的 NP 难题。 没有针对此问题的多项式时间已知解决方案。
 
 ![](img/e0fbf0b86cd4d64a04da0cf2b2bc3efb.png)
@@ -21,8 +24,11 @@ minimum weight Hamiltonian Cycle :
 在本文中，将讨论一个简单解决方案的实现。
 
 1.  将城市 1 作为起点和终点。 由于路线是循环的，因此我们可以将任何点视为起点。
+
 2.  生成所有（n-1）个！ 城市的排列。
+
 3.  计算每个排列的成本，并跟踪最小成本排列。
+
 4.  以最小的成本返回排列。
 
 以下是上述想法的实现

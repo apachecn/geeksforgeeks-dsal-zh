@@ -30,6 +30,7 @@
     > **C <sub>1</sub> – 1 + C <sub>2</sub> – 1 +…+ C <sub>c</sub> – 1 = C <sub>1</sub> + C <sub>2</sub> +…+ C <sub>c</sub> – C = N – C** ，其中`N`是数组数。
 
 *   通过移除 **M –（N – C）**边，上述条件将为我们提供`C`连接的组件，因为**需要 **N – C** 边 C** 组件。 要获得`K`组件，必须去除**（K – C）**的更多边。
+
 *   因此，要去除的边的总数为：
 
     > **M –（N – C）+（K – C）= M – N + K**
@@ -37,7 +38,9 @@
 请按照以下步骤解决问题：
 
 1.  [计算给定图形](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)中存在的已连接组件的数量。 令计数为`C`。
+
 2.  如果`C`大于`K`，则打印`-1`。
+
 3.  其他打印 **M – N + K** ，其中`N`是节点数，`M`是边数，需要`K`连接的组件数。
 
 下面是上述方法的实现：
@@ -143,6 +146,7 @@ countRemovedEdges(N, M, K)
 ```
 
 ***时间复杂度**：O（N + M）*
+
 ***辅助空间**：O（M + N）*
 
 

@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/maximize-shortest-path-between-given-vertices-by-adding-a-single-edge/](https://www.geeksforgeeks.org/maximize-shortest-path-between-given-vertices-by-adding-a-single-edge/)
 
 给定`N`个节点和`M`顶点的无向图。 你还给出一个`K`边为**中选择[]** 。 通过在给定选定边的任意两个顶点之间添加单个边来最大化节点`1`到节点`N`之间的最短路径长度的任务。
+
 **注意**：您可以在任意两个选定的顶点之间添加一条边，而这些顶点之间已经有一条边。
 
 > **输入**：N = 5，M = 4，K = 2，已选择[] = {2，4}。
@@ -33,13 +34,21 @@
 **方法**：的想法是使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)查找从顶点`1`和`N`到每个选定顶点的距离。 对于选定的顶点 i，令 **x <sub>i</sub>** 表示到节点 1 的距离， **y <sub>i</sub>** 表示到节点**的距离。 N** 。 步骤如下：
 
 1.  维护一个二维矩阵（例如 **dist [2] []** ），该矩阵具有`2`行和`N`列。
+
 2.  在第一行中，使用 BFS 遍历保持节点`1`与图形中其他顶点之间的最短距离。
+
 3.  在第二行中，使用 BFS 遍历保持节点`N`与图形的其他顶点之间的最短距离。
+
 4.  现在，从[选择的中选择两个选择的顶点`a`和`b`以最小化 min（xa + yb，ya + xb）的值。 为此，请执行以下操作：
+
     *   创建一个向量对，并将（x <sub>i</sub> – y <sub>i</sub> ）的值与它们各自的选定节点一起存储。
+
     *   [对上述](https://www.geeksforgeeks.org/sorting-vector-of-pairs-in-c-set-1-sort-by-first-and-second/)对向量进行排序。
+
     *   最好将**初始化为 0** ，将 **max 初始化为-INF** 。
+
     *   现在遍历上述向量对，并为每个选定的节点（例如 a）将**最佳**的值更新为最大值（best，max + dist [1] [a]），并将 max 更新为最大值（（ 最大值，dist [0] [a]）。
+
 5.  经过上述操作后，**的最大值（dist [0] [N-1]和最佳+1）**给出了最短的最小路径。
 
 下面是上述方法的实现：
@@ -303,6 +312,7 @@ public static void main (String[] args)
 ```
 
 ***时间复杂度**：O（N * log N + M）*
+
 ***辅助空间**：O（N）*
 
 

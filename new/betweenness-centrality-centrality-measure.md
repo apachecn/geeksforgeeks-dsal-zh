@@ -17,19 +17,25 @@
 注意，节点的中间性中心与总索引所暗示的节点对数成比例。 因此，可以通过除以不包括![ v](img/0cee31e9a8eb7995804b7f41d3845812.png "Rendered by QuickLaTeX.com")的节点对的数量来重新缩放计算，以使![g\in [0,1]](img/3b5cb87b61e4d3d0e18e8dfd60f385c0.png "Rendered by QuickLaTeX.com")成为可能。 对于有向图，通过![ (N-1)(N-2)](img/8c4dd24fd05b798d088fadef41231cd1.png "Rendered by QuickLaTeX.com")进行划分；对于无向图，由![ (N-1)(N-2)/2](img/183eb681d707128041e16ee48d8c836d.png "Rendered by QuickLaTeX.com")进行划分，其中![ N](img/d73551c7c27f3005e675d3aaad33ae32.png "Rendered by QuickLaTeX.com")是巨型组件中节点的数量。 请注意，这会缩放为可能的最高值，其中每个最短路径都跨越一个节点。 通常不是这种情况，可以执行标准化而不会损失精度
 
 ![{\mbox{normal}}(g(v))={\frac  {g(v)-\min(g)}{\max(g)-\min(g)}}](img/5e910222fcd769882cf7784175cb4868.png "Rendered by QuickLaTeX.com")
+
 会导致：
 
 ![ \max(normal)=1](img/cc81ca78e8b56722ab03cecb5c070574.png "Rendered by QuickLaTeX.com")
+
 ![ \min(normal)=0](img/54234953da5ca2d03d398f6d7323b8f9.png "Rendered by QuickLaTeX.com")
+
 注意，这始终是从较小范围到较大范围的缩放比例，因此不会损失精度。
 
 ***加权网络***
+
 在加权网络中，连接节点的链接不再视为二进制交互，而是按其容量，影响，频率等按比例进行加权， 这不仅增加了拓扑效应，还增加了网络内部异构的另一个维度。 节点在加权网络中的强度由其相邻边的权重之和得出。
 
 ![ s_{{i}}=\sum _{{j=1}}^{{N}}a_{{ij}}w_{{ij}}](img/a0a95caf85bb442f2fd73799d3ff6573.png "Rendered by QuickLaTeX.com")
+
 其中![ a_{ij}](img/eaf82fc986502804443cc4bedca91fef.png "Rendered by QuickLaTeX.com")和![ w_{ij}](img/8fa70ae99a1cef5303db163235193d31.png "Rendered by QuickLaTeX.com")分别是节点![ i](img/3a2ba36c8e4291c2cd213ceabc5973ae.png "Rendered by QuickLaTeX.com")和![ j](img/679ee478a61eaab867b75af9fc9fad1d.png "Rendered by QuickLaTeX.com")之间的邻接关系和权重矩阵。 类似于在无标度网络中发现的度数的幂律分布，给定节点的强度也遵循幂律分布。
 
 ![ s(k)\approx k^{\beta }](img/5563227959b13ea64ec87a7161aada41.png "Rendered by QuickLaTeX.com")
+
 对介于中间的顶点![ b](img/8446b80aee76e02e980458eb46a4cd27.png "Rendered by QuickLaTeX.com")的强度平均值![ s(b)](img/f247014c37531c2d920e0aca4d653768.png "Rendered by QuickLaTeX.com")的研究表明，可以通过缩放形式来近似功能行为
 
 ![ s(b)\approx b^{{\alpha }}](img/ce225fccd49629c2390034557e988802.png "Rendered by QuickLaTeX.com")

@@ -53,110 +53,175 @@
 ```cpp
 
 // C++ Program to implement
+
 // the above approach
+
 #include <bits/stdc++.h>
+
 using namespace std;
 
 // Maximum number of nodes or
+
 // vertices that can be present
+
 // in the graph
+
 #define MAX_NODES 100005
 
 // Store the parent of each vertex
+
 int parent[MAX_NODES];
 
 // Stores the size of each set
+
 int size_set[MAX_NODES];
 
 // Function to initialize the
+
 // parent of each vertices
+
 void make_set(int v)
+
 {
+
     parent[v] = v;
+
     size_set[v] = 1;
+
 }
 
 // Function to find the representative
+
 // of the set which contain element v
+
 int find_set(int v)
+
 {
+
     if (v == parent[v])
+
         return v;
 
     // Path compression technique to
+
     // optimize the time complexity
+
     return parent[v]
+
            = find_set(parent[v]);
+
 }
 
 // Function to merge two different set
+
 // into a single set by finding the
+
 // representative of each set and merge
+
 // the smallest set with the larger one
+
 void union_set(int a, int b)
+
 {
 
     // Finding the set representative
+
     // of each element
+
     a = find_set(a);
+
     b = find_set(b);
 
     // Check if they have different set
+
     // repersentative
+
     if (a != b) {
 
         // Compare the set sizes
+
         if (size_set[a] < size_set[b])
+
             swap(a, b);
 
         // Assign parent of smaller set
+
         // to the larger one
+
         parent[b] = a;
 
         // Add the size of smaller set
+
         // to the larger one
+
         size_set[a] += size_set[b];
+
     }
+
 }
 
 // Function to check the vertices
+
 // are on the same set or not
+
 string check(int a, int b)
+
 {
+
     a = find_set(a);
+
     b = find_set(b);
 
     // Check if they have same
+
     // set representative or not
+
     return (a == b) ? "Yes" : "No";
+
 }
 
 // Driver Code
+
 int main()
+
 {
+
     int n = 5, m = 3;
 
     make_set(1);
+
     make_set(2);
+
     make_set(3);
+
     make_set(4);
+
     make_set(5);
 
     // Connected vertices and taking
+
     // them into single set
+
     union_set(1, 3);
+
     union_set(3, 4);
+
     union_set(3, 5);
 
     // Number of queries
+
     int q = 3;
 
     // Function call
+
     cout << check(1, 5) << endl;
+
     cout << check(3, 2) << endl;
+
     cout << check(5, 2) << endl;
 
     return 0;
+
 }
 
 ```
@@ -166,112 +231,181 @@ int main()
 ```java
 
 // Java Program to implement
+
 // the above approach
+
 import java.util.*;
+
 class GFG{
 
 // Maximum number of nodes or
+
 // vertices that can be present
+
 // in the graph
+
 static final int MAX_NODES = 100005;
 
 // Store the parent of each vertex
+
 static int []parent = new int[MAX_NODES];
 
 // Stores the size of each set
+
 static int []size_set = new int[MAX_NODES];
 
 // Function to initialize the
+
 // parent of each vertices
+
 static void make_set(int v)
+
 {
+
     parent[v] = v;
+
     size_set[v] = 1;
+
 }
 
 // Function to find the representative
+
 // of the set which contain element v
+
 static int find_set(int v)
+
 {
+
     if (v == parent[v])
+
         return v;
 
     // Path compression technique to
+
     // optimize the time complexity
+
     return parent[v] = find_set(parent[v]);
+
 }
 
 // Function to merge two different set
+
 // into a single set by finding the
+
 // representative of each set and merge
+
 // the smallest set with the larger one
+
 static void union_set(int a, int b)
+
 {
 
     // Finding the set representative
+
     // of each element
+
     a = find_set(a);
+
     b = find_set(b);
 
     // Check if they have different set
+
     // repersentative
+
     if (a != b) {
 
         // Compare the set sizes
+
         if (size_set[a] < size_set[b]) 
+
         {
+
             a = a+b;
+
             b = a-b;
+
             a = a-b;
+
         }
 
         // Assign parent of smaller set
+
         // to the larger one
+
         parent[b] = a;
 
         // Add the size of smaller set
+
         // to the larger one
+
         size_set[a] += size_set[b];
+
     }
+
 }
 
 // Function to check the vertices
+
 // are on the same set or not
+
 static String check(int a, int b)
+
 {
+
     a = find_set(a);
+
     b = find_set(b);
 
     // Check if they have same
+
     // set representative or not
+
     return (a == b) ? "Yes" : "No";
+
 }
 
 // Driver Code
+
 public static void main(String[] args)
+
 {
+
     int n = 5, m = 3;
 
     make_set(1);
+
     make_set(2);
+
     make_set(3);
+
     make_set(4);
+
     make_set(5);
 
     // Connected vertices and taking
+
     // them into single set
+
     union_set(1, 3);
+
     union_set(3, 4);
+
     union_set(3, 5);
 
     // Number of queries
+
     int q = 3;
 
     // Function call
+
     System.out.print(check(1, 5) + "\n");
+
     System.out.print(check(3, 2) + "\n");
+
     System.out.print(check(5, 2) + "\n");
+
 }
+
 }
 
 // This code is contributed by Rohit_ranjan
@@ -283,112 +417,171 @@ public static void main(String[] args)
 ```py
 
 # Python3 Program to implement
+
 # the above approach
 
 # Maximum number of nodes or
+
 # vertices that can be present
+
 # in the graph
+
 MAX_NODES = 100005
 
 # Store the parent of each vertex
+
 parent = [0 for i in range(MAX_NODES)];
 
 # Stores the size of each set
+
 size_set = [0 for i in range(MAX_NODES)];
 
 # Function to initialize the
+
 # parent of each vertices
+
 def make_set(v):
 
     parent[v] = v;
+
     size_set[v] = 1;
 
 # Function to find the 
+
 # representative of the 
+
 # set which contain element v
+
 def find_set(v):
 
     if (v == parent[v]):
+
         return v;
 
     # Path compression technique to
+
     # optimize the time complexity
+
     parent[v] = find_set(parent[v]);
 
     return parent[v]
 
 # Function to merge two 
+
 # different set into a 
+
 # single set by finding the
+
 # representative of each set 
+
 # and merge the smallest set 
+
 # with the larger one
+
 def union_set(a, b):
 
     # Finding the set 
+
     # representative 
+
     # of each element
+
     a = find_set(a);
+
     b = find_set(b);
 
     # Check if they have 
+
     # different set 
+
     # repersentative
+
     if (a != b):
 
         # Compare the set sizes
+
         if (size_set[a] < 
+
             size_set[b]):
+
             swap(a, b);
 
         # Assign parent of 
+
         # smaller set to 
+
         # the larger one
+
         parent[b] = a;
 
         # Add the size of smaller set
+
         # to the larger one
+
         size_set[a] += size_set[b];
 
 # Function to check the vertices
+
 # are on the same set or not
+
 def check(a, b):
 
     a = find_set(a);
+
     b = find_set(b);
 
     # Check if they have same
+
     # set representative or not
+
     if a == b:
+
         return ("Yes")
+
     else:
+
         return ("No")
 
 # Driver code      
+
 if __name__=="__main__":
 
     n = 5
+
     m = 3;
 
     make_set(1);
+
     make_set(2);
+
     make_set(3);
+
     make_set(4);
+
     make_set(5);
 
     # Connected vertices 
+
     # and taking them 
+
     # into single set
+
     union_set(1, 3);
+
     union_set(3, 4);
+
     union_set(3, 5);
 
     # Number of queries
+
     q = 3;
 
     # Function call
+
     print(check(1, 5))
+
     print(check(3, 2))
+
     print(check(5, 2))
 
 # This code is contributed by rutvik_56
@@ -400,114 +593,183 @@ if __name__=="__main__":
 ```cs
 
 // C# program to implement
+
 // the above approach
+
 using System;
 
 class GFG{
 
 // Maximum number of nodes or
+
 // vertices that can be present
+
 // in the graph
+
 static readonly int MAX_NODES = 100005;
 
 // Store the parent of each vertex
+
 static int []parent = new int[MAX_NODES];
 
 // Stores the size of each set
+
 static int []size_set = new int[MAX_NODES];
 
 // Function to initialize the
+
 // parent of each vertices
+
 static void make_set(int v)
+
 {
+
     parent[v] = v;
+
     size_set[v] = 1;
+
 }
 
 // Function to find the representative
+
 // of the set which contain element v
+
 static int find_set(int v)
+
 {
+
     if (v == parent[v])
+
         return v;
 
     // Path compression technique to
+
     // optimize the time complexity
+
     return parent[v] = find_set(parent[v]);
+
 }
 
 // Function to merge two different set
+
 // into a single set by finding the
+
 // representative of each set and merge
+
 // the smallest set with the larger one
+
 static void union_set(int a, int b)
+
 {
 
     // Finding the set representative
+
     // of each element
+
     a = find_set(a);
+
     b = find_set(b);
 
     // Check if they have different set
+
     // repersentative
+
     if (a != b)
+
     {
 
         // Compare the set sizes
+
         if (size_set[a] < size_set[b]) 
+
         {
+
             a = a + b;
+
             b = a - b;
+
             a = a - b;
+
         }
 
         // Assign parent of smaller set
+
         // to the larger one
+
         parent[b] = a;
 
         // Add the size of smaller set
+
         // to the larger one
+
         size_set[a] += size_set[b];
+
     }
+
 }
 
 // Function to check the vertices
+
 // are on the same set or not
+
 static String check(int a, int b)
+
 {
+
     a = find_set(a);
+
     b = find_set(b);
 
     // Check if they have same
+
     // set representative or not
+
     return (a == b) ? "Yes" : "No";
+
 }
 
 // Driver Code
+
 public static void Main(String[] args)
+
 {
+
     //int n = 5, m = 3;
 
     make_set(1);
+
     make_set(2);
+
     make_set(3);
+
     make_set(4);
+
     make_set(5);
 
     // Connected vertices and taking
+
     // them into single set
+
     union_set(1, 3);
+
     union_set(3, 4);
+
     union_set(3, 5);
 
     // Number of queries
+
     //int q = 3;
 
     // Function call
+
     Console.Write(check(1, 5) + "\n");
+
     Console.Write(check(3, 2) + "\n");
+
     Console.Write(check(5, 2) + "\n");
+
 }
+
 }
 
 // This code is contributed by Amit Katiyar
@@ -517,13 +779,17 @@ public static void Main(String[] args)
 **Output:** 
 
 ```
+
 Yes
+
 No
+
 No
 
 ```
 
 ***时间复杂度**：O（N + M + sizeof（Q））*
+
 ***辅助空间**：O（N）*
 
 

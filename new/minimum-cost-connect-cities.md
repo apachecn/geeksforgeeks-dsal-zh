@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/minimum-cost-connect-cities/](https://www.geeksforgeeks.org/minimum-cost-connect-cities/)
 
 有 n 个城市，其中一些城市之间有道路。 不知何故，所有道路同时遭到破坏。 我们必须修整道路以再次连接城市。 维修特定道路需要一定的费用。 找出通过修路连接所有城市的最低成本。 输入采用矩阵（城市）形式，如果 city [i] [j] = 0，则城市 i 和 j 之间没有任何道路，如果 city [i] [j] = a> 0，则重建城市的成本 城市 i 和城市 j 之间的路径是 a。 打印出连接所有城市的最低成本。
+
 确保在道路损坏之前所有城市都已连接。
 
 **示例**：

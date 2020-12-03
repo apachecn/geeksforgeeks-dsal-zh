@@ -7,9 +7,11 @@
 Webcrawler 是[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)算法的非常重要的应用。 这个想法是整个互联网可以用有向图表示：
 
 *   与顶点->域/ URL /网站。
+
 *   边->连接。
 
 **示例**：
+
 ![](img/baf808dcd460e2777e956fc619f71617.png)
 
 **方法**：该算法的工作原理是解析网站的原始 HTML，并在获取的数据中查找其他 URL。 如果存在 URL，则将其添加到[队列](http://www.geeksforgeeks.org/queue-data-structure/)，并以广度优先搜索的方式访问它们。
@@ -194,9 +196,13 @@ Website found: https://www.apple.com
 **应用程序**：这种 Web 搜寻器用于获取 Web 的重要参数，例如：
 
 1.  什么是经常访问的网站？
+
 2.  整个网络中哪些重要的网站？
+
 3.  社交网络上的有用信息：Facebook，Twitter 等。
+
 4.  谁是一群人中最受欢迎的人？
+
 5.  谁是公司中最重要的软件工程师？
 
 

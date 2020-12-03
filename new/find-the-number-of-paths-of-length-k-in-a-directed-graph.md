@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/find-the-number-of-paths-of-length-k-in-a-directed-graph/](https://www.geeksforgeeks.org/find-the-number-of-paths-of-length-k-in-a-directed-graph/)
 
 给定一个有向非加权图，该图具有`N`个顶点和一个整数`K`。 任务是找到每对顶点**（u，v）**的长度`K`的路径数。 路径不必很简单，即可以在一条路径中多次访问顶点和边。
+
 该图表示为[邻接矩阵](http://www.geeksforgeeks.org/graph-and-its-representations/)，其中值 **G [i] [j] = 1** 表示从顶点`i`到 顶点`j`和 **G [i] [j] = 0** 表示从`i`到`j`没有边。
 
 **示例**：
@@ -34,6 +35,7 @@
 **先决条件**：[矩阵乘幂](http://www.geeksforgeeks.org/matrix-exponentiation/)，[矩阵乘法](https://www.geeksforgeeks.org/c-program-multiply-two-matrices/)
 
 **方法**：很明显，给定的邻接矩阵是在 **k = 1** 的情况下问题的答案。 它包含每对顶点之间长度为`1`的路径数。
+
 假设某些`k`的答案是 **Mat <sub>k</sub>** ，而 **k +1** 的答案是 **Mat <sub>k +1</sub>** 。
 
 **Mat <sub>k + 1</sub> [i] [j] = ∑ <sub>p = 1</sub> <sup>N</sup> Mat <sub>k</sub> [i] [p ] * G [p] [j]**

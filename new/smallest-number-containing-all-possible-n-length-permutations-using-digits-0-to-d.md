@@ -24,6 +24,7 @@
 > “ 03322312113020100”是最小长度的字符串 包含上述所有排列。
 
 **方法**：
+
 附加“ 0” N-1 次，并以当前状态在字符串上调用 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 。 所有 D 字符一一附加。 每次附加后，请检查是否访问了新字符串。 如果是这样，请将其插入 [HashSet](http://www.geeksforgeeks.org/hashset-in-java/) ，以将其标记为已访问，然后在答案中添加此字符。 在最后的 D 个字符上递归调用 DFS 函数。 重复此过程，直到从 D 位开始的所有可能的 N 长度的子字符串都附加到该字符串为止。 打印生成的最终字符串。
 
 下面是上述方法的实现：

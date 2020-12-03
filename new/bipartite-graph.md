@@ -15,12 +15,19 @@
 ![Bipartite3](img/a3ee6e7039d82a4ce6579be45994fd2f.png)
 
 *检查图形是否为二分的算法：*
+
 一种方法是使用着色问题中的[回溯算法检查图形是否为 2 色。
+
 以下是使用广度优先搜索（BFS）来查找给定图是否为 Birpartite 的简单算法。
+
 1.将 RED 颜色分配给源顶点（放入 U 集）。
+
 2.用 BLUE 颜色为所有邻居着色（放入组 V）。
+
 3.用红色为所有邻居的邻居上色（放入 U 集）。
+
 4.这样，将颜色分配给所有顶点，使其满足 m = 2 的 m 方向着色问题的所有约束。
+
 5.在分配颜色时，如果我们发现用相同颜色着色的邻居 作为当前顶点，则该图不能用 2 个顶点着色（或图不是 Bipartite）](https://www.geeksforgeeks.org/backttracking-set-5-m-coloring-problem/)
 
 ## C++
@@ -391,6 +398,7 @@ Yes
 ```
 
 仅在连接图形时上述算法才有效。 在上面的代码中，我们总是从源 0 开始，并假定从源 0 访问顶点。 一个重要的观察结果是没有边的图也是 Bipartite。 请注意，“ Bipartite”条件表示所有边应从一组到另一组。
+
 我们可以扩展以上代码，以处理未连接图形的情况。 对所有尚未访问的顶点重复调用上述方法的想法。
 
 ## C++
@@ -864,7 +872,9 @@ Yes
 **上述方法的时间复杂度**与广度优先搜索相同。 在上面的实现中是 O（V ^ 2），其中 V 是顶点数。
 
 **练习**：，
+
 **1\.** 可以使用 DFS 算法检查图的二部性吗？ 如果是，怎么办？
+
 解决方案：
 
 ## C++
@@ -1131,7 +1141,10 @@ Yes
 ```
 
 **参考**：
+
 [http://en.wikipedia.org/wiki/Graph_coloring](http://en.wikipedia.org/wiki/Graph_coloring)
+
 [http://en.wikipedia.org/wiki/Bipartite_graph [](http://en.wikipedia.org/wiki/Bipartite_graph)
+
 本文由 [Aashish Barnwal](https://www.facebook.com/barnwal.aashish?fref=ts) 编译。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请写评论
 

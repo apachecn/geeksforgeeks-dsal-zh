@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/minimum-number-of-edges-between-two-vertices-of-a-graph-using-dfs/](https://www.geeksforgeeks.org/minimum-number-of-edges-between-two-vertices-of-a-graph-using-dfs/)
 
 给定无向图 **G（V，E）**，其中`N`个顶点，`M`边。 我们需要找到给定顶点对**（u，v）**之间的最小边数。
+
 我们已经使用 [BFS 方法](https://www.geeksforgeeks.org/minimum-number-of-edges-between-two-vertices-of-a-graph/)讨论了这个问题，这里我们将使用 DFS 方法。
 
 **示例**：

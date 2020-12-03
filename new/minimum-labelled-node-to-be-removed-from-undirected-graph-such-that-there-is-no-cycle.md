@@ -22,13 +22,17 @@
 **高效方法**：想法是在给定图上应用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)，并观察形成的 dfs 树。
 
 *   [后边](https://www.geeksforgeeks.org/tree-back-edge-and-cross-edges-in-dfs-of-graph/)被称为不是构建的 DFS 树的一部分的边，并且是某个节点 v 与 v 的祖先之一之间的边。
+
 *   显然，图的所有那些不属于 DFS 树的边都是后边。
+
 *   如果图中没有后沿，则图中没有循环。 因此，在这种情况下，答案将是`-1`。
 
 如果图中有[个后边](https://www.geeksforgeeks.org/tree-back-edge-and-cross-edges-in-dfs-of-graph/)，则我们需要找到最小边。 为此，我们需要检查在从图形中删除特定边时是否删除了循环。 因此，让`v`是我们当前正在检查的顶点。 因此，必须在**以下条件之后加上顶点 v** ，以便在移除时不会导致循环：
 
 *  `v`必须位于连接图中每个[后边](https://www.geeksforgeeks.org/tree-back-edge-and-cross-edges-in-dfs-of-graph/)端点的树路径上。
+
     **证明**：假设存在一些后沿 x-y，使得 v 不在树路径上。 如果删除 v，我们仍然可以从 x 遍历到 y，并通过后边返回 x，表明该循环没有删除。
+
 *   v 的子树必须具有至 v 的任何祖先的至多一个后边。 和 z 是 v 的祖先。如果删除 v，显然仍然存在一个循环，该循环包括 w 到 y 之间的路径，x 到 z 的路径以及两个后边 wx 和 yz，即，不删除循环。
 
 因此，其思想是跟踪后边，并为节点的任何祖先节点的子树中的后边数量提供指示器。 为了跟踪后边，我们将使用[修改的 DFS 图形着色算法](https://www.geeksforgeeks.org/detect-cycle-direct-graph-using-colors/)。

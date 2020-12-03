@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/word-ladder-length-of-shortest-chain-to-reach-a-target-word/](https://www.geeksforgeeks.org/word-ladder-length-of-shortest-chain-to-reach-a-target-word/)
 
 给定一本字典，以及两个单词“开始”和“目标”（长度相同）。 查找从“开始”到“目标”的最小链的长度（如果存在），以使链中的相邻单词仅相差一个字符，并且链中的每个单词都是有效单词，即它存在于字典中。 可以假设词典中存在“目标”单词，并且所有词典单词的长度都相同。
+
 **例如**：
 
 ```
@@ -21,12 +22,17 @@ ABCV - ABCD - EBCD - EBAD
 ```
 
 **<u>解决方案：</u>** 这个想法是使用 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 。
+
 **方法**：
 
 1.  从给定的起始词开始。
+
 2.  将单词推入队列
+
 3.  运行循环，直到队列为空
+
 4.  遍历所有与其相邻（相差一个字符）的单词，并将该单词推入队列（对于 BFS）
+
 5.  继续这样做，直到找到目标单词或遍历所有单词为止。
 
 以下是上述想法的实现。
@@ -393,6 +399,7 @@ Length of shortest chain is: 7
 *   **时间复杂度**：O（n²m），其中 m 是字典中最初的条目数，n 是字符串的大小。
 
 *   **辅助空间**：O（m * n），其中 m 是存储在队列中的字符串。
+
     因此，空间复杂度为 O（m * n）。
 
 **替代实现：（维护中间词和原始词的映射）**：
@@ -523,5 +530,6 @@ Length of shortest chain is: 7
 ```
 
 感谢 Gaurav Ahirwar 和 Rajnish Kumar Jha 提供了上述解决方案。
+
 如果发现任何不正确的内容，或者您​​想分享有关上述主题的更多信息，请发表评论。
 

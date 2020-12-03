@@ -19,11 +19,17 @@
 **方法**：这个想法是对图形使用 [BFS 遍历。 步骤如下：](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 
 1.  创建一个有向图，使给定图的边方向相反。
+
 2.  创建[队列](http://www.geeksforgeeks.org/queue-data-structure/)，并将**节点 0** 推送到队列中。
+
 3.  在图表上进行 BFS 遍历期间，请执行以下操作：
+
     *   从队列中弹出前端节点（例如 **current_node** ）。
+
     *   在反向图中遍历当前节点的[邻接表](https://www.geeksforgeeks.org/add-and-remove-vertex-in-adjacency-list-representation-of-graph/)，并将未访问的那些节点压入队列。
+
     *   在反向图中遍历当前节点的[邻接表](https://www.geeksforgeeks.org/add-and-remove-vertex-in-adjacency-list-representation-of-graph/)，并将未访问的那些节点压入队列。
+
     *   在上述步骤中插入到队列中的总节点数需要反转的边数，因为连接到当前节点并且在图中尚未访问的节点无法到达**节点 0** ，因此，我们需要扭转他们的方向。 将以上步骤中的节点数添加到最终数。
 
 下面是上述方法的实现：
@@ -147,6 +153,7 @@ int main()
 ```
 
 **时间复杂度**：*O（V + E）*其中 V 是顶点数，E 是边数。
+
 **辅助空间**：*O（V）*其中 V 是顶点数。
 
 

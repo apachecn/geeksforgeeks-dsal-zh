@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/count-nodes-within-k-distance-from-all-nodes-in-a-set/](https://www.geeksforgeeks.org/count-nodes-within-k-distance-from-all-nodes-in-a-set/)
 
 给定一个带有一些标记节点且正数为 K 的无向树，我们需要打印与所有标记节点之间的距离小于 K 的所有此类节点的计数，这意味着与所有标记节点之间的距离小于 K 的每个节点都应 被计入结果。
+
 **示例**：[
 
 ![](img/869b2c19f6bb0d69b1f321331e29212d.png)
@@ -18,6 +19,7 @@ so answer will be 6
 ```
 
 我们可以使用广度优先搜索解决此问题。 在这个问题中要观察的主要事情是，如果考虑所有成对的标记节点，找到两个彼此之间最大距离的标记节点，则如果一个节点与这两个节点的距离都小于 K，则它将是 与所有标记节点之间的距离小于 K，因为这两个节点代表所有标记节点的极限，如果一个节点位于此极限内，则它与所有标记节点之间的距离将小于 K。
+
 如上面的示例，节点 1 和节点 4 是最远的标记节点，因此距这两个节点的距离小于 3 的节点也距节点 2 的距离也小于 3。 现在我们可以通过对任意随机节点进行 bfs 来获得第一个远距离标记节点，对第二个远距离标记节点可以通过对刚从第一个 bfs 中找到的标记节点进行另一个 bfs 来获得，在这个 bfs 中我们还可以找到所有节点的距离 从第一个远距离标记节点开始，并找到所有节点与第二个远距离标记节点的距离，我们将再做一次 bfs，因此在完成这三个 bfs 之后，我们可以获得从两个极端标记节点到所有节点的距离，可以与 K 进行比较以了解 哪些节点在所有标记节点的 K 距离范围内。
 
 ## C++
@@ -266,5 +268,6 @@ if __name__ == '__main__':
 ```
 
 本文由 [**Utkarsh Trivedi**](https://in.linkedin.com/in/utkarsh-trivedi-253069a7) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

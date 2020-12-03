@@ -249,6 +249,7 @@ Weight of the shortest path is 9
 ```
 
 上述函数的最坏情况下的时间复杂度是 O（V <sup>k</sup> ），其中 V 是给定图中顶点的数量。 我们可以通过绘制递归树来简单地分析时间复杂度。 最坏的情况发生在完整的图形上。 在最坏的情况下，递归树的每个内部节点都将恰好有 V 个子级。
+
 我们可以使用 **[动态编程](https://www.geeksforgeeks.org/dynamic-programming-set-1/)** 优化上述解决方案。 这个想法是建立一个 3D 表，其中第一维是源，第二维是目标，第三维是从源到目标的边数，其值是走数。 像其他[动态编程问题](https://www.geeksforgeeks.org/tag/dynamic-programming/)一样，我们以自下而上的方式填充 3D 表。
 
 ## C++

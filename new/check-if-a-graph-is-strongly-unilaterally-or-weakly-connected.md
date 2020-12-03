@@ -29,9 +29,13 @@
 **方法**：
 
 1.  对于要为[，**，强连通的**，](https://www.geeksforgeeks.org/strongly-connected-components/)的图，请使用[中讨论的方法遍历给定的路径矩阵。此](https://www.geeksforgeeks.org/traverse-a-given-matrix-using-recursion/)文章检查单元格中的所有值是否均为`1`与否。 如果是，则打印**“强连接图”** ，否则检查其他两个图。
+
 2.  对于要为**单边连接**的图，请使用[本文](https://www.geeksforgeeks.org/traverse-a-given-matrix-using-recursion/)文章中讨论的方法遍历给定的路径矩阵，并检查以下内容：
+
     *   如果主对角线上的所有值均为 **1s** ，除此以外的所有其他值均为 **0s** 。
+
     *   如果主对角线以下的所有值均为 **1s** ，除此以外的所有值均为 **0s** 。
+
 3.  如果满足以上两个条件之一，则给定图为**单边连接**，否则图为**弱连接图**。
 
 下面是上述方法的实现：
@@ -608,6 +612,7 @@ Unilaterally Connected
 ```
 
 **时间复杂度**：*O（N <sup>2</sup> ）*。
+
 **辅助空间**：*O（1）*
 
 

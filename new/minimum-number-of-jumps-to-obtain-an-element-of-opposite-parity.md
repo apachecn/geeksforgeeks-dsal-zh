@@ -22,19 +22,29 @@
 **天真的方法**：解决问题的最简单方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并对每个数组元素 **arr [i]执行[广度优先遍历](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) ]** ，方法是反复将 arr [i – jumps [i]] 和 **arr [i + jumps [i]]** 转换为**，直到出现无效索引为止， 转换，检查数组元素是否与前一个元素具有相反的奇偶校验。 相应地打印每个数组元素所需的最小跳转数。**
 
 ***时间复杂度**：O（N <sup>2</sup> ）*
+
 ***辅助空间**：O（N）*
 
 **高效方法**：为了优化上述方法，其思想是将[多源 BFS](https://www.geeksforgeeks.org/multi-source-shortest-path-in-unweighted-graph/) 分别用于偶数和奇数数组元素。 请按照以下步骤解决问题：
 
 1.  初始化[向量](https://www.geeksforgeeks.org/vector-in-cpp-stl/)，例如 **ans []** ，以存储每个数组元素到达相对奇偶校验元素所需的最小跳转。
+
 2.  初始化向量， **Adj []** 的[数组，以存储生成的图](https://www.geeksforgeeks.org/array-of-vectors-in-c-stl/)的[邻接表。](https://www.geeksforgeeks.org/graph-and-its-representations/)
+
 3.  对于每个索引的有效跳转的每对**（i，j）**，数组的`i`通过将边初始化为**（j，i）**来创建一个倒置图形。 。
+
 4.  对奇数元素执行**多源 BFS 遍历**。 执行以下步骤：
+
     *   [将包含奇数数组元素的所有索引推入](https://www.geeksforgeeks.org/queuepush-and-queuepop-in-cpp-stl/)到[队列](https://www.geeksforgeeks.org/queue-data-structure/)中，并将所有这些节点标记为同时访问。
+
     *   迭代直到[队列为非空](https://www.geeksforgeeks.org/queueempty-queuesize-c-stl/)并执行以下操作：
+
         *   弹出出现在队列前面[的节点，并检查现在连接到该节点的任何节点是否具有相同的奇偶校验。 如果发现为真，则将子节点的**距离更新为 **1 +父节点的距离。****](https://www.geeksforgeeks.org/queuefront-queueback-c-stl/)
+
         *   将子节点标记为已访问并将其推入队列。
+
 5.  对偶数元素执行**多源 BFS 遍历**并将距离存储在 **ans []** 中。
+
 6.  完成上述步骤后，打印存储在 **ans []** 中的值作为结果。
 
 下面是上述方法的实现：
@@ -275,6 +285,7 @@ if __name__=='__main__':
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

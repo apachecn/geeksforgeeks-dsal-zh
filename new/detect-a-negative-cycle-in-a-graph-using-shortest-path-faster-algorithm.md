@@ -31,12 +31,15 @@
 **方法**：这个想法是使用[最短路径更快算法（SPFA）](https://www.geeksforgeeks.org/shortest-path-faster-algorithm/)查找是否存在负循环，并且该负循环可以从图中的源顶点到达。 请按照以下步骤解决问题：
 
 *   将数组 **dis []** 初始化为大数值，将 **vis []** 初始化为 false，将 **cnt []** 初始化为存储顶点松弛次数的计数 。
+
 *   [使用](https://www.geeksforgeeks.org/algorithms-gq/graph-traversals-gq/) [SPFA 算法](https://www.geeksforgeeks.org/shortest-path-faster-algorithm/)遍历图形。
+
 *   每当顶点松弛时，增加每个顶点的计数。
 
 > 术语**松弛**表示如果通过包含通过顶点`v`的路径可以改善与顶点`v`连接的所有顶点的成本，则更新这些成本。
 
 *   停止算法并在 **N <sup>th</sup>** 时间某个顶点放松后立即打印**是**，因为只有`N`顶点 即从`0`到 **N – 1** 。
+
 *   否则，打印**“否”** 。
 
 下面是上述方法的实现：
@@ -545,6 +548,7 @@ Yes
 ```
 
 ***时间复杂度**：O（N * M），其中 N 是顶点数，M 是边数。*
+
 ***辅助空间**：O（N + M）*
 
 

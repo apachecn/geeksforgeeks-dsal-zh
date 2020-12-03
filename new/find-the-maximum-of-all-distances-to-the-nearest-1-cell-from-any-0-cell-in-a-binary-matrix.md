@@ -32,6 +32,7 @@ distance of 4 cells from the only
 ```
 
 **方法 1：天真的方法**
+
 对于每个 0 单元，计算其与每个 1 单元的距离并存储最小值。 所有这些最小距离中的最大值就是答案。
 
 下面是上述方法的实现：
@@ -290,6 +291,7 @@ public static void Main(String[] args)
 ```
 
 **时间复杂度**：*O（M * N * P）*，其中网格的大小为 **M * N** ，`P`的计数为 1 -细胞。
+
 **辅助空间**：*O（P）*
 
 **方法 2：使用** [**BFS**](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 。 我们可以找到的最大层数就是答案。
@@ -608,13 +610,17 @@ public static void Main(String[] args)
 ```
 
 **时间复杂度**：*O（M * N）*
+
 **辅助空间**：*O（M * N）*
 
 **方法 3：使用** [**动态编程**](http://www.geeksforgeeks.org/dynamic-programming/)
 
 *   不断更新已行驶的最大距离的矩阵。
+
 *   从矩阵的左上角**（0，0）**到右下角遍历。 令 grid [i] [j]代表距左侧或上方最近的 1 个像元（或者当然是其自身）的最大距离。
+
 *   从右下到左上进行第二遍，更新网格阵列，将单元格 **grid [i] [j]** 定义为 **grid [i] *的最小值* [ j]** ， **grid [i + 1] [j]** 和 **grid [i] [j + 1]** 。
+
 *   在从右下到左上的遍历期间跟踪最大值，并在末尾返回该值。 如果值为 0，即网格仅填充 0 或仅填充 1，则返回-1。
 
 下面是上述方法的实现：
@@ -819,6 +825,7 @@ public static void main(String[] args)
 ```
 
 **时间复杂度**：*O（M * N）*
+
 **辅助空间**：*O（1）*
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)

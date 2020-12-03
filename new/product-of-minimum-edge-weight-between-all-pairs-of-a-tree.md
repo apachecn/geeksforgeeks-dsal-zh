@@ -12,6 +12,7 @@
 ```
 
 在输入中，我们将得到 N 的值，然后是 N-1 行。 每行包含 3 个整数 u，v，w，表示节点 u 和 v 之间的边，其权重为 w。 由于乘积将非常大，因此请以 10 ^ 9 + 7 为模输出。
+
 **范例**：
 
 ```
@@ -45,6 +46,7 @@ Output :
 ```
 
 如果我们仔细观察，就会发现如果有一组节点的最小边权重为 w，并且向该集中添加了一个节点，该节点通过权重 W 的边沿将节点与整个集连接起来，使得 W <w then="" path="" formed="" between="" recently="" added="" node="" to="" all="" nodes="" present="" in="" the="" set="" will="" have="" minimum="" weight="" w.="">因此，在这里我们可以应用[不交集并集](https://www.geeksforgeeks.org/disjoint-set-data-structures/)概念来解决该问题。
+
 首先，根据递减的权重对数据结构进行排序。 最初将所有节点分配为一个集合。 现在，当我们合并两个集合时，请执行以下操作：</w>
 
 ```

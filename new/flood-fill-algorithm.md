@@ -31,8 +31,11 @@
 **BFS 方法**：的想法是使用 [BFS 遍历](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)将颜色替换为新颜色。
 
 *   创建一个空的[队列](http://www.geeksforgeeks.org/queue-data-structure/)说 *Q* 。
+
 *   按下输入中指定的像素的起始位置，并为其应用替换颜色。
+
 *   迭代直到`Q`不为空，然后弹出前节点（像素位置）。
+
 *   检查与当前像素相邻的像素，如果有效则推入队列（未用替换色上色，并且颜色与旧颜色相同）。
 
 下面是上述方法的实现：

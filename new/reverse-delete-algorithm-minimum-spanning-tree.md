@@ -25,19 +25,25 @@
 ```
 
 **插图**：
+
 让我们用以下示例理解：
+
 ![](img/8dc4df6d86d36d8246549dc9f7b13def.png "Fig-1")
 
 如果我们删除权重 14 的最高权重边，则图形不会断开连接，因此我们将其删除。
+
 ![reversedelete2](img/0f421a99d312f34017ab4d909d3286e6.png)
 
 接下来，我们删除 11，因为删除它不会断开图形。
+
 ![reversedelete3](img/707dfbfa02184450f35d6819603fda0c.png)
 
 接下来，我们删除 10 个，因为删除它不会断开图形。
+
 ![reversedelete4](img/b8d22a0349158fb346c01e57faf0ff0b.png)
 
 接下来是 9。我们无法删除 9，因为删除它会导致断开连接。
+
 ![reversedelete5](img/f351f1f7d2b35f793222045a09a9db3f.png)
 
 我们将以这种方式继续进行下去，最终的 MST 仍将保持其优势。

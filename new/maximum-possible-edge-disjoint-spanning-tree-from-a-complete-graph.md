@@ -31,6 +31,7 @@ Max Edge-disjoint spanning tree = floor(N / 2)
 **具有 4 个顶点的完整图形**
 
 ![](img/62884a6753c17da0729b20c1daf93bd6.png)
+
 上图的所有可能的边不相交生成树是：
 
 ![](img/a4b8c4e60320a5b5fb10827670a34f7e.png)
@@ -46,6 +47,7 @@ Max Edge-disjoint spanning tree = floor(N / 2)
 **具有 5 个顶点的完整图形**
 
 ![](img/4159aa187b2a9d6516417a8abaff8d58.png)
+
 上图的所有可能的边不相交生成树是：
 
 ![](img/f6c0fdfb1def5e8368a17e0dc7077248.png)

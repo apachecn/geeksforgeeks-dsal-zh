@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/number-of-cyclic-elements-in-an-array-where-we-can-jump-according-to-value/](https://www.geeksforgeeks.org/number-of-cyclic-elements-in-an-array-where-we-can-jump-according-to-value/)
 
 给定 n 个整数的数组 arr []。 对于每个值 arr [i]，考虑周期中的数组元素，我们可以顺时针
+
 移至 arr [i] +1。 我们需要计算数组中的循环元素。 如果一个元素是循环的，则从该元素开始并移至 arr [i] + 1 会导致相同的元素。
 
 例子：
@@ -36,8 +37,11 @@ The path covered starting from 4 is
 一种**简单解决方案**是一个接一个地检查所有元素。 我们从每个元素 arr [i]开始遵循简单路径，然后转到 arr [i] +1。如果返回到 arr [i]以外的其他访问元素，则不计算 arr [i]。 该解决方案的时间复杂度为 O（n <sup>2</sup> ）
 
 **有效解决方案**基于以下步骤。
+
 1）使用数组索引作为节点创建有向图。 我们从 i 到节点（arr [i] + 1）％n 添加一条边。
+
 2）创建图后，我们使用 Kosaraju 的算法
+
 找到了所有[强连接的组件。3）最后，我们返回了各个强连接组件中的节点总数。](https://www.geeksforgeeks.org/strongly-connected-components/)
 
 ```
@@ -187,6 +191,7 @@ int main()
 ```
 
 时间复杂度：O（n）
+
 辅助空间：O（n）注意，只有 O（n）个边。
 
 本文由 [**Mohak Agrawal**](https://auth.geeksforgeeks.org/profile.php?user=agrawalmohak99&list=practice) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

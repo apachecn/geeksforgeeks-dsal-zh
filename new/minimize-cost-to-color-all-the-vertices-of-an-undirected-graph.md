@@ -24,21 +24,29 @@
 > 由于所有顶点均已着色，因此成本为 0。
 
 **方法**：
+
 的想法是，**使用 [DFS 遍历](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)计算无色顶点的子图**的数量。
+
 为使未着色的**未着色** [**子图**](https://www.geeksforgeeks.org/find-all-cliques-of-size-k-in-an-undirected-graph/) 的着色成本降至最低，需要执行以下任一操作：
 
 *   为子图着色
+
 *   在任何有色和无色顶点之间添加一条边。
 
 根据 ***eCost** 和 **vCost*** 的最小值，需要选择以上两个步骤之一。
+
 如果未着色子图的数量由`X`给出，则为所有顶点着色的总成本由 ***X×min（eCost，vCost）**给出 ]* 。
 
 请按照以下步骤查找未着色子图的数量：
 
 1.  在所有有色顶点上执行 DFS 遍历，并将它们标记为已访问以将其标识为有色。
+
 2.  在步骤 1 的 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 之后未访问的顶点是未着色的顶点。
+
 3.  对于每个未着色的顶点，使用 [DFS 标记从该顶点可以访问的所有顶点。](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)
+
 4.  在步骤 3 出现 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 的未着色顶点的数量是子图 **X 的数量。**
+
 5.  通过公式 ***X×min（eCost，vCost）计算为所有顶点着色的总成本。***
 
 下面是上述方法的实现：
@@ -518,6 +526,7 @@ public static void Main(string[] args)
 ```
 
 ***时间复杂度**：O（N + M）*
+
 ***辅助空间**：O（N）*
 
 

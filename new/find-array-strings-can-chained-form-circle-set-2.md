@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/find-array-strings-can-chained-form-circle-set-2/](https://www.geeksforgeeks.org/find-array-strings-can-chained-form-circle-set-2/)
 
 给定一个字符串数组，查找给定的字符串是否可以链接形成一个圆。 如果 X 的最后一个字符与 Y 的第一个字符相同，则可以将一个字符串 X 放在另一个字符串 Y 之前，放在一个圆圈中。
+
 **示例**：
 
 ```
@@ -46,8 +47,11 @@ Output : No
 ## [我们强烈建议您单击此处并进行实践，然后再继续解决方案。](https://practice.geeksforgeeks.org/problem-page.php?pid=995)
 
 我们在下面的文章中讨论了解决此问题的一种方法。
+
 [查找是否可以将字符串数组链接成一个圆| Set 1](https://www.geeksforgeeks.org/given-array-strings-find-strings-can-chained-form-circle/)
+
 在本文中，讨论了另一种方法。 我们通过将其视为图形问题来解决此问题，其中顶点将是字符串的第一个和最后一个字符，如果两个顶点是同一字符串的第一个和最后一个字符，我们将在两个顶点之间绘制一条边，因此 图中的边将与数组中的字符串数相同。
+
 下图给出了一些字符串数组的图形表示。
 
 ![](img/cc7e4fd0d126ef3a21f812d1cd54be44.png)
@@ -55,9 +59,11 @@ Output : No
 现在，在图形表示之后可以清楚地看到，如果图形顶点之间可能存在循环，那么我们可以对字符串重新排序，否则无法重新排序。 如上图示例所示，可以在字符串的第一和第三数组中找到一个循环，而在字符串的第二个数组中找不到一个循环。 现在要检查**此图是否可以具有遍历所有顶点**的循环，我们将检查两个条件，
 
 1.  每个顶点的 Indegree 和 Outdegree 应该相同。
+
 2.  该图应牢固连接。
 
 通过为每个字符保留两个数组，可以很容易地检查第一个条件。 检查一个图是否有一个遍历所有顶点的循环与检查完整的有向图是否牢固连接是相同的，因为如果它有一个遍历所有顶点的循环，那么我们可以从任何其他顶点到达任何顶点 就是说，该图将被牢固地连接，并且对于反向语句也可以给出相同的参数。
+
 现在，为了检查第二种情况，我们将只运行任何字符的 DFS 并从中访问所有可达的顶点，如果图形具有循环，则在此 DFS 之后应访问所有的顶点，如果访问了所有的顶点，则 我们将返回 true，否则返回 false，因此**在单个 DFS 中访问所有顶点会标记字符串**之间的可能排序。
 
 ## C++
@@ -287,5 +293,6 @@ Ordering is possible
 ```
 
 本文由 [**Utkarsh Trivedi**](https://in.linkedin.com/in/utkarsh-trivedi-253069a7) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

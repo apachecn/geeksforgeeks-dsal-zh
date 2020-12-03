@@ -31,9 +31,13 @@
 **方法**：可以使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)方法解决该问题。 请按照以下步骤解决问题：
 
 1.  用`0`初始化变量**和**和 **xor** ，以存储对数和当前边的 [xor](http://www.geeksforgeeks.org/calculate-xor-1-n/) 。
+
 2.  [使用](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)从给定的根顶点`R`遍历给定的树。
+
 3.  对于每个节点`u`，请访问其相邻节点。
+
 4.  对于每个边 **{u，v}** ，如果 **xor** 等于`K`，则将**和**递增`1`。 否则，对于当前边沿 **{u，v，w}** ，将 **xor** 更新为 **xor =（xor ^ w）**，其中^是按位的 [XOR](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/) 。
+
 5.  遍历后，将存储在计数器**和**中的值打印为对数。
 
 下面是上述方法的实现：
@@ -446,6 +450,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N），其中`N`是节点数。*
+
 ***辅助空间**：O（N）*
 
 

@@ -3,18 +3,25 @@
 > 原文： [https://www.geeksforgeeks.org/paranthesis-theorem/](https://www.geeksforgeeks.org/paranthesis-theorem/)
 
 **括号定理**用于图的 [DFS 中。 它指出，深度优先搜索树中的后代具有有趣的属性。 如果 **v 是 u** 的后代，则 v 的**发现时间晚于`u`的发现时间。
+
 在图 g =（V，E）的任何**](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) **[DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)中，对于任何两个顶点 u 和 v，下列条件之一完全成立**：
 
 *   间隔 **[d [u]，f [u]]** 和 **[d [v]，f [v]]** 完全不相交，并且 u 或 v 是另一个的后代 在深度优先的森林中。
+
 *   间隔 **[d [u]，f [u]]** 包含在间隔 **[d [v]，f [v]]** 中，并且 u 是 v in 的后代。 一棵深度优先的树。
+
 *   间隔 **[d [u]，f [u]]** 完全包含在间隔 **[d [v]，f [v]]** 中，并且 v 是 u 的后代 在深度优先的树中。
 
 **边分类**：
+
 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)可用于对输入图 G =（V，E）的边进行分类。 可以根据深度优先林定义四种边类型：
 
 1.  **树边**：它是在图上应用 DFS 后获得的树中存在的边。
+
 2.  **前边**：这是一个边（u，v），使得 v 是后代，但不是 DFS 树的一部分。
+
 3.  **后边**：这是一条边（u，v），因此 v 是边 u 的祖先，但不是 DFS 树的一部分。 后边的存在指示有向图中的循环。
+
 4.  **交叉边**：这是连接两个节点的一条边，这样两个节点之间就没有任何祖先和后代关系。
 
 给定`N`顶点和`M`边的[图](https://www.geeksforgeeks.org/graph-and-its-representations/)，任务是将 M 边分类为[树边，前向边，向后边和交叉 边](https://www.geeksforgeeks.org/tree-back-edge-and-cross-edges-in-dfs-of-graph/)。
@@ -55,10 +62,15 @@
 **方法**：
 
 1.  在给定图上使用 DFS 遍历，以发现发现时间和完成时间以及每个节点的父级。
+
 2.  通过使用括号定理，可以在以下条件下对给定边进行分类：
+
     *   **树边**：对于任何边**（U，V）**，如果节点 U 是节点 V 的**父级**，则**（U，V）**是给定图的**树边**。
+
     *   **前边**：对于任何边**（U，V）**，如果**节点 V** **的发现时间和完成时间与发现时间完全重叠** **节点 U** 的结束时间，则**（U，V）**是给定图的**前缘**。
+
     *   **后边**：对于任何边**（U，V）**，如果**节点 U** **的发现时间和完成时间与发现时间完全重叠** **节点 V** 的结束时间，则**（U，V）**是给定图的**向后边**。
+
     *   **交叉边**：对于任何边**（U，V）**，如果**节点 U** **的发现时间和完成时间与**不重叠， **节点 V** 的发现时间和完成时间，则**（U，V）**是给定图的**交叉边**。
 
 下面是上述方法的实现：

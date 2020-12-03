@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/count-of-different-groups-using-graph/](https://www.geeksforgeeks.org/count-of-different-groups-using-graph/)
 
 给定具有`N`个节点的图，这些节点的值分别为`P`或`M`。 还给定 **K 个**整数对，作为**（x，y）**表示图形中的边，使得如果**将**连接到`b`并且`b`连接到`c`，然后`a`和`c`也将连接。
+
 单个连接的组件称为组。 该组可以同时具有`P`和`M`值。 如果`P`的值大于`M`的值，则该组称为`P`，对`M`产生影响。 如果 **P 的**和 **M 的**的数目相等，则称为中性基团。 任务是找到受影响的`P`，受影响的`M`和**中性**组的数量。
 
 **示例**：

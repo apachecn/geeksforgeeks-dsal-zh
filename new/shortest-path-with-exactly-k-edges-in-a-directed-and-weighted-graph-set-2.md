@@ -19,6 +19,7 @@
 > **说明**：最短路径为 1- > 2- > 3- > 1 -> 2- > 3。
 
 **方法**：针对该问题的 **O（V ^ 3 * K）**方法已在[先前的文章中进行了讨论。](https://www.geeksforgeeks.org/shortest-path-exactly-k-edges-directed-weighted-graph/) 在本文中，讨论了用于解决此问题的 **O（E * K）**方法。
+
 的想法是使用[动态编程](https://www.geeksforgeeks.org/dynamic-programming/)解决此问题。
 
 设 dp [X] [J]为从节点`S`到节点`X`的最短路径，总共使用正好`J`边。 使用此方法，可以将 dp [X] [J + 1]计算为：
@@ -32,10 +33,15 @@ for all Y which has an edge from Y to X.
 可以通过以下步骤计算问题的结果：
 
 1.  初始化一个数组，dis []的初始值为'inf'，但 dis [S]的值为 0。
+
 2.  当我等于 1 – K 时，运行一个循环
+
     *   初始化一个数组 dis1 []，其初始值为'inf'。
+
     *   对于图中的每个边，
+
         dis1 [edge.second] = min（dis1 [edge.second]，dis [edge.first] + weight（edge））
+
 3.  如果 dist [d]为无穷大，则返回-1，否则返回 dist [d]。
 
 下面是上述方法的实现：

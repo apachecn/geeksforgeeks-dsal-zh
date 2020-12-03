@@ -5,9 +5,11 @@
 在先前的[之后的](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/)中，仅执行具有特定顶点的 BFS，即，假定所有顶点都可以从起始顶点到达。 但是在断开图或从所有顶点无法访问的任何顶点的情况下，先前的实现将不会提供所需的输出，因此在本文中，将在 BFS 中进行修改。
 
 ![](img/e0f654fe4d94e99a980e9a0c2ad21d29.png)
+
 所有顶点都是可到达的。 因此，对于以上图形，简单的 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 将起作用。
 
 ![graph](img/e82088dc94b9cda81be39cbf1511482f.png) 
+
 如上图所示，顶点 1 不能从所有顶点到达，因此简单的 BFS 不适用于该顶点。
 
 ```

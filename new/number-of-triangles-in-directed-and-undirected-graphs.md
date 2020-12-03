@@ -22,7 +22,9 @@ directed graph.
 我们已经讨论了基于图跟踪的[方法，该方法适用于无向图。 在本文中，我们讨论了一种新方法，该方法更简单，并且适用于有向图和无向图。](https://www.geeksforgeeks.org/number-of-triangles-in-a-undirected-graph/)
 
 这个想法是使用三个嵌套循环来考虑每个三元组（i，j，k）并检查上述条件（从 i 到 j，从 j 到 k 到从 k 到 i 到 k 的边）
+
 HTG1]无向图，可以将三元组（i，j，k）置换为六个组合（有关详细信息，请参见[先前的文章](https://www.geeksforgeeks.org/number-of-triangles-in-a-undirected-graph/)）。 因此，我们将总数除以 6 得到三角形的实际数量。
+
 在**有向图**的情况下，排列数将为 3（随着节点的顺序变得相关）。 因此，在这种情况下，三角形的总数将通过将总数除以 3 得到。例如，考虑下面给出的有向图
 
 以下是实现。

@@ -5,9 +5,13 @@
 如果任意两个顶点之间有两条不相交的路径，则无向图称为 Biconnected。 在“双向图”中，任意两个顶点之间都有一个简单的循环。
 
 按照惯例，由一条边连接的两个节点形成一个双向图，但这不能验证上述属性。 对于具有两个以上顶点的图形，必须具有上述属性才能进行双向连接。
+
 或换句话说：
+
 在以下情况下，图被称为 Biconnected：
+
 1）它是已连接的，即可以通过一条简单的路径从每个其他顶点到达每个顶点。
+
 2）即使删除了任何顶点，图形仍保持连接状态。
 
 以下是一些示例。
@@ -23,10 +27,13 @@
 ![Biconnected5](img/bcc6414985f5c389aa10cee5e8cb8cea.png)
 
 **有关更多示例，请参见** [**此**](http://mathworld.wolfram.com/BiconnectedGraph.html) **。**
+
 **如何查找给定图是否为 Biconnected？**
 
 *如果一个已连接的图已连接并且没有任何* [*铰接点*](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/) ，则该图为 Biconnected。 我们主要需要检查图中的两件事。
+
 1）图形已连接。
+
 2）图中没有连接点。
 
 我们从任何顶点开始进行 DFS 遍历。 在 DFS 遍历中，我们检查是否存在任何铰接点。 如果找不到任何铰接点，则该图为 Biconnected。 最后，我们需要检查 DFS 中是否所有顶点均可到达。 如果所有顶点都不可达，则该图甚至没有连接。
@@ -761,6 +768,8 @@ Yes
 **时间复杂度**：上面的功能是带有附加数组的简单 DFS。 因此，时间复杂度与 DFS 相同，对于图的邻接表表示，它的时间复杂度为 O（V + E）。
 
 **参考**：
+
 [http://www.cs.purdue.edu/homes/ayg/CS251/slides/chap9d.pdf](http://www.cs.purdue.edu/homes/ayg/CS251/slides/chap9d.pdf)
+
 如果发现任何内容，请写评论 错误，或者您想共享有关上述主题的更多信息。
 

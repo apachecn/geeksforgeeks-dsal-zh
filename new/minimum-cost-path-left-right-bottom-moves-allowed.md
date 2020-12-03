@@ -3,10 +3,15 @@
 > 原文： [https://www.geeksforgeeks.org/minimum-cost-path-left-right-bottom-moves-allowed/](https://www.geeksforgeeks.org/minimum-cost-path-left-right-bottom-moves-allowed/)
 
 给定一个二维网格，该网格的每个像元都包含整数成本，代表通过该像元所要经过的成本，我们需要找到一条从左上角像元到右下角像元的路径，从而使总成本最小。
+
 **注意**：假定在输入矩阵中不存在负成本周期。
+
 此问题是以下问题的扩展。
+
 [允许最小和最小移动的最小成本路径。](https://www.geeksforgeeks.org/dynamic-programming-set-6-min-cost-path/)
+
 在先前的问题中，只允许向右和向底部移动，但是在此问题中，我们被允许从底部，向上，向右和向左移动，即沿所有四个方向移动。
+
 示例：
 
 ```
@@ -22,6 +27,7 @@ The chosen least cost path is shown in green.
 ```
 
 使用类似于先前问题的动态编程无法解决此问题，因为此处的当前状态不仅取决于右侧和底部单元，还取决于左侧和上部单元。 我们使用 [dijkstra 的算法](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)解决了这个问题。 网格的每个像元代表一个顶点，相邻像元代表相邻的顶点。 我们不会从这些单元格中绘制出明确的图形，而是将使用 dijkstra 算法中的矩阵。
+
 在下面的代码[中使用了 Dijkstra 算法的实现](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-set-in-stl/)。 更改以下实现的代码以应对矩阵表示的隐式图。 另请参见下面的代码中 dx 和 dy 数组的使用，这些数组用于简化访问每个像元的相邻顶点的过程。
 
 ## C++
@@ -303,5 +309,6 @@ throws IOException
 ```
 
 本文由 [**Utkarsh Trivedi**](https://in.linkedin.com/in/utkarsh-trivedi-253069a7) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

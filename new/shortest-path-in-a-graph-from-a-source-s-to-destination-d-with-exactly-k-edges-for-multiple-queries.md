@@ -19,9 +19,13 @@
 **方法**：
 
 *   可以通过[动态编程](https://www.geeksforgeeks.org/dynamic-programming/)创建线性解决方案来解决此问题。
+
 *   初始化 [2-d 数组](https://www.geeksforgeeks.org/multidimensional-arrays-in-java/)，dp [N] [2 * N]的初始值为'inf'，但 dp [S] [0]为 0。
+
 *   对图形进行预处理，以找到{0 到 N-1}之间的每个边长，到源的每个节点的最短距离。 数组 dp [] []将用于存储预处理结果。
+
 *   对于预处理，对范围[1，2 * N-1]中的 J 运行循环，以找到图中每个边的 dp [X] [J]，其中 **dp [X] [J]** 是从节点'S'到节点'X'的最短路径，总共使用了精确的'J'边。
+
 *   我们可以借助递归关系找到 dp [X] [J + 1]：
 
 > dp [edge.second] [i] = **min** （dp [edge.second] [i]，dp [edge.first] [i-1] + weight（edge））
@@ -274,6 +278,7 @@ if __name__ == "__main__" :
 ```
 
 **时间复杂度**：O（Q + N * E）
+
 **空间复杂度**：O（N * N）
 
 

@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/maximum-number-of-bridges-in-a-path-of-a-given-graph/](https://www.geeksforgeeks.org/maximum-number-of-bridges-in-a-path-of-a-given-graph/)
 
 给定[无向图](https://www.geeksforgeeks.org/graph-and-its-representations/)，任务是计算给定图的任意两个顶点之间的[桥](https://www.geeksforgeeks.org/bridge-in-a-graph/)的最大数量。
+
 **范例**：
 
 ```
@@ -30,13 +31,19 @@ and (3 - 4) in the path from 1 to 4.
 ```
 
 **方法**：[
+
 ]请按照以下步骤解决问题：
 
 *   [找到图中的所有桥](https://www.geeksforgeeks.org/bridge-in-a-graph/)并将它们存储在[向量](https://www.geeksforgeeks.org/vector-in-cpp-stl/)中。
+
 *   删除所有的桥将图形缩小为较小的分量。
+
 *   这些小组件没有任何桥接，它们是[弱连接组件](https://www.geeksforgeeks.org/convert-undirected-graph-directed-graph-minimize-disconnected-component/)，其中没有桥接。
+
 *   生成由以桥为边的桥连接的节点组成的树。
+
 *   现在，任何节点之间路径中的最大桥等于该树的直径。
+
 *   因此，找到该树的[直径](https://www.geeksforgeeks.org/diameter-tree-using-dfs/)并将其打印为答案。
 
 以下是上述方法的实现
@@ -815,6 +822,7 @@ public static void Main(String[] args)
 ```
 
 **时间复杂度**：O（N + M）
+
 **辅助空间**：O（N + M）
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)

@@ -17,7 +17,9 @@
 > **输出**：2.82843
 
 **方法**：蛮力方法是将每个节点与每个其他节点连接，类似地，将其他`N`个节点连接起来，但在最坏的情况下，时间复杂度将为 **N <sup>N</sup>** 。
+
 另一种方法是找到具有欧几里得距离的每对顶点的成本，并且那些相连的对的成本为`0`。
+
 在知道了每对的代价之后，我们将 [Kruskal 算法](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)应用于最小生成树，它将产生连接图的最小代价。 请注意，对于 Kruskal 算法，您必须具有[不交集集合联合（DSU）](https://www.geeksforgeeks.org/disjoint-set-data-structures/)的知识。
 
 下面是上述方法的实现：

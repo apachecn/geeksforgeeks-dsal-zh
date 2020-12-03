@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/print-all-jumping-numbers-smaller-than-or-equal-to-a-given-value/](https://www.geeksforgeeks.org/print-all-jumping-numbers-smaller-than-or-equal-to-a-given-value/)
 
 如果数字中的所有相邻数字相差 1，则该数字称为跳号。“ 9”和“ 0”之间的差异不视为 1。
+
 所有单个数字都被视为跳号。 例如，7，8987 和 4343456 是跳跃数，而 796 和 89098 不是。
 
 给定正数 x，请打印所有小于或等于 x 的跳数。 数字可以按任何顺序打印。

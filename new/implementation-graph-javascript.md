@@ -3,18 +3,23 @@
 > 原文： [https://www.geeksforgeeks.org/implementation-graph-javascript/](https://www.geeksforgeeks.org/implementation-graph-javascript/)
 
 在本文中，我们将在 JavaScript 中实现 [Graph 数据结构](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)。 图是一种非线性数据结构。 图`G`包含一组顶点`V`和一组边线`E`。 Graph 在计算机科学中有许多应用。
+
 **图基本上分为两大类**：
 
 *   **有向图（图）** –边具有方向的位置。
+
 *   **无向图** –边不代表任何有向图
 
 有多种表示图表的方法：-
 
 *   **邻接矩阵**
+
 *   **邻接列表**
 
 还有其他几种方式，例如入射矩阵等，但是这两种方式最常用。 有关邻接矩阵和列表的说明，请参见[图及其表示](https://www.geeksforgeeks.org/graph-and-its-representations/)。
+
 在本文中，我们将使用**邻接表**来表示图，因为在大多数情况下，它比其他表示具有一定的优势。
+
 现在让我们看一下 Graph 类的示例-
 
 ## Java
@@ -44,6 +49,7 @@ class Graph {
 ```
 
 上面的示例显示了*图*类的框架。 我们定义了两个私有变量，即 *noOfVertices* 来存储图中的顶点数，以及 *AdjList* ，后者存储特定顶点的邻接表。 我们使用 ES6 提供的 **Map** Object 来实现邻接表。 映射的键包含一个顶点，值包含一个相邻节点的数组。
+
 现在，我们实现在图表上执行基本操作的功能：
 
 1.  **addVertex（v）** –将顶点 *v* 作为键添加到 *adjList* ，并使用数组初始化其值。
@@ -83,6 +89,7 @@ addEdge(v, w)
 ```
 
 1.  为了添加边，我们获得了相应 *src* 顶点的邻接列表，并将 *dest* 添加到邻接列表中。
+
 2.  **printGraph（）** –打印顶点及其邻接列表。
 
 ## Java
@@ -116,6 +123,7 @@ printGraph()
 ```
 
 让我们看一下图表
+
 的示例
 
 ![Graph Example](img/9ec5681572d3ba738f4e2b61e45805af.png)
@@ -162,6 +170,7 @@ g.printGraph();
 我们将实现最常见的图遍历算法：
 
 *   [图](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/)的广度优先遍历
+
 *   [图](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)的深度优先遍历
 
 BFS 和 DFS 的实施：
@@ -213,7 +222,9 @@ bfs(startingNode)
 ```
 
 1.  在以上方法中，我们已经实现了 BFS 算法。 [队列](https://www.geeksforgeeks.org/implementation-queue-javascript/)用于保留未访问的节点。
+
     让我们使用上述方法并沿图
+
     遍历
 
 ## Java
@@ -266,7 +277,9 @@ DFSUtil(vert, visited)
 ```
 
 1.  在上面的示例中， *dfs（startingNode）*用于初始化访问数组， *DFSutil（vert，Visited）*。
+
     包含 DFS 算法的实现。
+
     让我们使用上面的例子 沿图遍历的方法
 
 ## Java
@@ -286,6 +299,7 @@ g.dfs('A');
 ![DFS on Graph](img/4f1209f7a3e0dc5d4c13adae84641c6d.png)
 
 本文由 **Sumit Ghosh** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 
 ![full-stack-img](img/1e356a15f348bce3fafac1fccfa8fbd6.png)

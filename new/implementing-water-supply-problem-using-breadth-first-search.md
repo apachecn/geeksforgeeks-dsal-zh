@@ -3,12 +3,17 @@
 > 原文： [https://www.geeksforgeeks.org/implementing-water-supply-problem-using-breadth-first-search/](https://www.geeksforgeeks.org/implementing-water-supply-problem-using-breadth-first-search/)
 
 给定使用 **N-1** 条道路连接的 **N 个**城市。 在城市 **[i，i + 1]** 之间，从[1]到 N-1 的所有`i`都有一条边。
+
 该任务是建立供水连接。 将供水设置在一个城市中，然后使用公路运输将水从该城市输送到其他城市。 某些城市被封锁，这意味着水无法通过该特定城市。 确定可以供水的最大城市数。
+
 **输入格式**：
 
 *   第一行包含一个整数> strong> N，表示城市数。
+
 *   接下来的 N-1 行包含两个以空格分隔的整数 **u v** ，表示在
+
     城市 u 和 v 之间的道路。
+
 *   下一行包含 N 个以空格分隔的整数，如果第个城市的**被阻止，则为 1，否则为 0。**
 
 **示例**：
@@ -40,9 +45,13 @@
 > 3、5、6 和 7 供应水，因此最多 5 个城市被供水。
 
 **方法**：
+
 在本文中，将讨论基于 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 的解决方案。
+
 我们在每个城市上进行广度优先搜索，并检查以下两项内容：该城市未被阻止且该城市未被访问。 如果这两个条件都返回 true，则我们从该城市进行广度优先搜索，并计算可以供水的城市数量。
+
 也可以使用深度优先搜索来实现此解决方案。
+
 以下是上述方法的实现：
 
 ## C++

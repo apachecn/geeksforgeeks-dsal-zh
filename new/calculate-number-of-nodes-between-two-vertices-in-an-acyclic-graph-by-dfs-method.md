@@ -23,8 +23,11 @@
 **方法**：也可以使用[此](https://www.geeksforgeeks.org/number-nodes-two-vertices-acyclic-graph-disjoint-union-method/)文章中所述的[脱节联合](https://www.geeksforgeeks.org/union-find/)方法解决该问题。 解决此问题的另一种方法是使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)方法解决。 请按照以下步骤解决此问题：
 
 *   初始化被访问数组**与[]** ，以标记已经访问过的节点。 将所有节点标记为 0，即未访问。
+
 *   执行 DFS 查找 ***src*** 和 ***dest 之间路径中存在的节点数。***
+
 *   ***src*** 和 ***dest*** 之间的节点数等于它们与 2 之间的路径长度之差，即 ***（pathSrcToDest – 2*** ）。
+
 *   由于图形是非循环的且相互连接，因此 ***src*** 和 ***dest 之间始终只有一条路径。***
 
 下面是上述算法的实现。
@@ -420,6 +423,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（V + E）*
+
 ***辅助空间**：O（V）*
 
 

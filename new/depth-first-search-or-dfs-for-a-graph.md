@@ -25,13 +25,19 @@
 > ![](img/def377ed85130fe8c5056325ec0f3116.png)
 
 **先决条件**：有关深度优先遍历的所有应用，请参见此文章的[。
+
 以下是简单的深度优先遍历的实现。 C ++实现使用图形的](https://www.geeksforgeeks.org/archives/11644)[邻接表表示](https://www.geeksforgeeks.org/graph-and-its-representations/)。 [STL](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/) 的[列表容器](http://www.yolinux.com/TUTORIALS/LinuxTutorialC++STL.html#LIST)用于存储相邻节点的列表。
+
 **<u>解决方案：</u>**
 
 *   **方法**：深度优先搜索是一种用于遍历或搜索树或图形数据结构的算法。 该算法从根节点开始（在图形的情况下，选择一些任意节点作为根节点），并在回溯之前尽可能沿着每个分支进行探索。 因此，基本思想是从根节点或任意节点开始，标记该节点，然后移至相邻的未标记节点，然后继续此循环，直到没有未标记的相邻节点为止。 然后回溯并检查其他未标记的节点并遍历它们。 最后打印路径中的节点。
+
 *   **算法**：
+
     1.  创建一个递归函数，该函数采用节点和已访问数组的索引。
+
     2.  将当前节点标记为已访问并打印该节点。
+
     3.  遍历所有相邻和未标记的节点，并使用相邻节点的索引调用递归函数。
 
 **实施**：
@@ -387,18 +393,27 @@ Following is Depth First Traversal (starting from vertex 2)
 **复杂度分析**：
 
 *   **时间复杂度**：O（V + E），其中 V 是顶点数量，E 是图形中边的数量。
+
 *   **空间复杂度**：O（V）。
+
     由于，因此需要一个额外的 V 大小的访问数组。
 
 **<u>处理断开连接图</u>**
 
 *   **解决方案**：这将通过处理拐角处的情况发生。
+
     上面的代码仅遍历从给定源顶点可到达的顶点。 像“断开图”的情况一样，可能无法从给定的顶点到达所有顶点。 要完成此类图的 DFS 遍历，请在 DFS 之后从所有未访问的节点运行 DFS。
+
     *递归功能保持不变。*
+
 *   **算法**：
+
     1.  创建一个递归函数，该函数采用节点和已访问数组的索引。
+
     2.  将当前节点标记为已访问并打印该节点。
+
     3.  遍历所有相邻和未标记的节点，并使用相邻节点的索引调用递归函数。
+
     4.  运行从 0 到顶点数的循环，并检查是否在以前的 DFS 中未访问该节点，然后使用当前节点调用递归函数。
 
 **实施**：
@@ -756,13 +771,17 @@ Following is Depth First Traversal
 **复杂度分析**：
 
 *   **时间复杂度**：O（V + E），其中 V 是顶点数量，E 是图形中边的数量。
+
 *   **空间复杂度**：O（V）。
+
     由于需要一个额外的 V 大小的访问数组。
 
 https://youtu.be/Y40bRyPQQr0
 
 *   [**DFS 的应用。**](https://www.geeksforgeeks.org/applications-of-depth-first-search/)
+
 *   [**图**](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 的广度优先遍历
+
 *   [**关于 DFS 的最新文章**](https://www.geeksforgeeks.org/tag/dfs/)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。

@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/detect-cycle-in-an-undirected-graph-using-bfs/](https://www.geeksforgeeks.org/detect-cycle-in-an-undirected-graph-using-bfs/)
 
 给定无向图，如何检查图中是否存在循环？ 例如，下图具有循环 1-0-2-1。
+
 ![cycleGraph](img/5334e5d8a548c03f16f3f27689404a7f.png)
 
 我们已经讨论了有向图的[循环检测。 我们还讨论了](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)[联合查找算法，用于无向图中的循环检测。](https://www.geeksforgeeks.org/union-find/) 。 联合查找算法的时间复杂度为 O（ELogV）。 像有向图一样，我们可以使用 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 来检测 O（V + E）时间中无向图的周期。 我们已经讨论了用于无向图中用于循环检测的[基于 DFS 的解决方案。](https://www.geeksforgeeks.org/detect-cycle-undirected-graph/)

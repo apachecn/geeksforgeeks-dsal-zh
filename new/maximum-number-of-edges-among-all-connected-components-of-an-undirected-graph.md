@@ -26,7 +26,9 @@
 **方法**：
 
 *   使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)，分别找到所有连接组件中每个边的度数之和。
+
 *   现在，根据[握手引理](https://www.geeksforgeeks.org/handshaking-lemma-and-interesting-tree-properties/)，无向图的连接部分中的边总数等于其所有顶点度的总和的一半。
+
 *   在所有连接的组件中打印最大数量的边。
 
 下面是上述方法的实现：

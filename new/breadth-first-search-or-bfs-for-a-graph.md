@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 
 [图形的广度优先遍历（或搜索）](http://en.wikipedia.org/wiki/Breadth-first_search)类似于树的广度优先遍历（请参阅[的方法 2](https://www.geeksforgeeks.org/level-order-tree-traversal/) ）。 这里唯一要注意的是，与树不同，图可能包含循环，因此我们可能会再次来到同一节点。 为了避免多次处理节点，我们使用布尔访问数组。 为了简单起见，假设所有顶点都可以从起始顶点到达。
+
 例如，在下图中，我们从顶点 2 开始遍历。当到达顶点 0 时，我们将寻找它的所有相邻顶点。 2 也是 0 的相邻顶点。如果我们不标记访问的顶点，那么 2 将再次被处理，它将成为一个非终止过程。 下图的广度优先遍历为 2、0、3、1。
 
 ![](img/40ca76ea468053c881ac72e49e82f1e2.png "BFS")
@@ -394,10 +395,15 @@ Following is Breadth First Traversal (starting from vertex 2)
 ```
 
 **插图**：
+
 ![bfs1](img/2374f932bb1eeaa8af84105d8e3e0b02.png) ![bfs2](img/92eac379ec48d2cad3acc6a96a5ac66d.png)
+
 ![bfs3](img/da3e6f20ab79bb00338e1821679c4491.png) ![bfs4](img/d90e2f97f46f164547ee6a560f9e6e5a.png)
+
 ![bfs6](img/8cf3ab42764940f806dd368ffbe02bf2.png) ![bfs7](img/316708c5d85f91d40ff979e0570a32df.png)
+
 ![bfs8](img/3bc0d1416919f65df9c30a42e90843cd.png) ![bfs9](img/6aef6820f47ff5914f04fc0af0c67733.png)
+
 ![bfs10](img/a924342829918eee029caca6d7d99bb8.png) ![bfs11](img/5a8068303de4f0bcbdea8212f57b53fb.png)
 
 请注意，以上代码仅遍历从给定源顶点可到达的顶点。 从给定的顶点可能无法到达所有顶点（例如，“断开连接的图”）。 要打印所有顶点，我们可以修改 BFS 函数以从所有节点开始一遍遍遍（例如 [DFS 修改版本](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)）。
@@ -407,8 +413,11 @@ Following is Breadth First Traversal (starting from vertex 2)
 **您可能还会喜欢以下内容**：
 
 *   [关于 BFS 的最新文章](https://www.geeksforgeeks.org/tag/bfs/)
+
 *   [深度优先遍历](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)
+
 *   [广度优先遍历的应用](https://www.geeksforgeeks.org/applications-of-breadth-first-traversal/)
+
 *   [深度优先搜索的应用](https://www.geeksforgeeks.org/applications-of-depth-first-search/)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。

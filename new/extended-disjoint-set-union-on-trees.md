@@ -157,17 +157,25 @@ true
 ```
 
  ***时间复杂度**：*O（N * Q）*由于在每个查询中，都需要遍历树。
+
 **辅助空间**：*O（N + E + Q）**
 
 **有效方法**：的想法是对上述方法使用[扩展不相交集并集](https://www.geeksforgeeks.org/disjoint-set-data-structures/)：
 
 1.  创建一个数组， **size []** 存储子树的大小。
+
 2.  创建一个哈希图数组 **map []** ，即 map [V] [X] =子树`V`中总数为`X`的总顶点。
+
 3.  通过调用 dfsSize（）使用 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 遍历计算每个子树的大小。
+
 4.  通过调用 dfs（V，p）使用 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 遍历，计算 map [V]的值。
+
 5.  在遍历中，要计算**映射[V]** ，请选择最大尺寸 **bigU** 除外的`V`的相邻顶点，除了父顶点 **p [** 。
+
 6.  对于联接操作，将 map [bigU]的引用传递给 map [V]，即 **map [V] = map [bigU]** 。
+
 7.  以及除父顶点`p`和 **bigU** 顶点之外的所有相邻顶点的[astn]合并图，`u`至 **map [V]** 。
+
 8.  现在，检查**映射[V]** 是否包含频率 F。 如果是，则打印**为真**，否则打印**为假**。
 
 以下是有效方法的实现：

@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/convert-undirected-graph-directed-graph-minimize-disconnected-component/](https://www.geeksforgeeks.org/convert-undirected-graph-directed-graph-minimize-disconnected-component/)
 
 给定**无向图**，任务是在将该图转换为有向图之后，找到弱连接节点的最小数量。
+
 **弱连接的节点**：节点的 in 度（传入边数）为 0。
 
 **先决条件**：[BFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
@@ -28,9 +29,11 @@ Output : 1 disconnected components
 ```
 
 **说明**：
+
 ![](img/572e0755074ba6b76bf2e20d022c7bdb.png)
 
 **方法**：我们找到了一个节点，该节点可帮助一次遍历最大节点。 为了覆盖所有可能的路径，为此使用了 [DFS 图遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)技术。
+
 执行上述步骤来遍历图形。 现在，再次遍历图并检查哪些节点的度数为 0。
 
 ```

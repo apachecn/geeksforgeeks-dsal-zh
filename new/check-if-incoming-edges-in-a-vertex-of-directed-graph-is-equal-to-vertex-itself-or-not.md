@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/check-if-incoming-edges-in-a-vertex-of-directed-graph-is-equal-to-vertex-itself-or-not/](https://www.geeksforgeeks.org/check-if-incoming-edges-in-a-vertex-of-directed-graph-is-equal-to-vertex-itself-or-not/)
 
 给定**有向图 G（V，E）**具有`V`顶点和`E`边，任务是检查给定图的所有顶点， 顶点中的传入边等于或不等于顶点本身。
+
 **范例**：
 
 > **输入**：
@@ -326,6 +327,7 @@ Yes
 ```
 
 ***时间复杂度**：O（V + E）*
+
 ***辅助空间复杂度**：O（V）*
 
 

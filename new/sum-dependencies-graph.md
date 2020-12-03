@@ -9,12 +9,19 @@
 ![](img/861b9765248f37fc18c5a58502341020.png)
 
 **示例**：
+
 对于图中的图形，
+
 A 取决于 C 和 D，即 2
+
 B 取决于 C，即 1
+
 D 取决于 C，即 1
+
 并且 C 不依赖任何内容。
+
 因此回答-> 0 +1 + 1 + 2 = 4
+
 询问： [Flipkart 面试](https://www.geeksforgeeks.org/flipkart-interview-set-11/)
 
 想法是检查邻接列表，并从每个顶点中找到多少个边并返回边的总数。
@@ -165,5 +172,6 @@ Sum of dependencies is 4
 时间复杂度：O（V），其中 V 是图形中的顶点数。
 
 本文由 [**Sahil Chhabra（akku）**](https://www.facebook.com/sahil.chhabra.965) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

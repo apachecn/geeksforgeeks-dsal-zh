@@ -21,8 +21,11 @@
 **方法**：
 
 *   **Adding a Vertex in the Graph:** To add a vertex in the graph, the adjacency list can be iterated to the place where the insertion is required and the new node can be created using linked list implementation. For example, if 5 needs to be added between vertex 2 and vertex 3 such that vertex 3 points to vertex 5 and vertex 5 points to vertex 2, then a new edge is created between vertex 5 and vertex 3 and a new edge is created from vertex 5 and vertex 2\. After adding the vertex, the adjacency list changes to:
+
     ![](img/a41d00ebf877564af49f853196be553b.png)
+
 *   **Removing a Vertex in the Graph**: To delete a vertex in the graph, iterate through the list of each vertex if an edge is present or not. If the edge is present, then delete the vertex in the same way as delete is performed in a linked list. For example, the adjacency list translates to the below list if vertex 4 is deleted from the list:
+
     ![](img/c36f14798e774c10b3567b6bf6248d2c.png)
 
 下面是上述方法的实现：

@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/minimum-number-of-edges-that-need-to-be-added-to-form-a-triangle/](https://www.geeksforgeeks.org/minimum-number-of-edges-that-need-to-be-added-to-form-a-triangle/)
 
 给定具有`N`个顶点和`N`边的无向图。 没有两个边连接同一对顶点。 三角形是一组三个不同的顶点，这样，每对顶点通过一条边连接，即，三个不同的顶点`u`，`v`和`w`是 如果图形包含边线**（u，v）**，**（v，w）**和**（v，u）**则为三角形。
+
 该任务是找到需要添加到给定图形的最小边数，以使该图形包含至少一个三角形。
 
 **示例**：
@@ -25,8 +26,11 @@ Output: 2
 **方法**：初始化 **ans = 3** ，这是形成三角形所需的最大边数。 现在，对于每个可能的顶点三元组，有四种情况：
 
 1.  **情况 1**：如果存在节点`i`，`j`和`k`，使得从**（i，j ）**，**（j，k）**和**（k，i）**，则答案为`0`。
+
 2.  **情况 2**：如果存在节点`i`，`j`和`k`，使得仅连接了两对顶点，则单个边为 需要形成一个三角形。 因此，更新 **ans = min（ans，1）**。
+
 3.  **情况 3**：否则，如果仅连接一对顶点，则 **ans = min（ans，2）**。
+
 4.  **情况 4**：当没有边时，则 **ans = min（ans，3）**。
 
 最后打印**和**。

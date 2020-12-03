@@ -106,6 +106,7 @@ Possible to finish all tasks
 ```
 
 **使用 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/)**
+
 BFS 可使用拓扑排序的思想来解决它。 如果可以进行拓扑排序，则意味着没有周期，并且可以完成所有任务。
 
 BFS 使用每个节点的度数。 我们将首先尝试查找度数为 0 的节点。 如果我们不这样做，则图中必须有一个循环，并且返回 false。 否则，我们找到了一个。 我们将其度数设置为-1，以防止再次访问它，并将其所有邻居的度数减少 1。此过程将重复 n（节点数）次。 如果没有返回 false，则返回 true。
@@ -185,6 +186,7 @@ Possible to finish all tasks
 ```
 
 **参考**：
+
 https://leetcode.com/problems/course-schedule/
 
 

@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/all-vertex-pairs-connected-with-exactly-k-edges-in-a-graph/](https://www.geeksforgeeks.org/all-vertex-pairs-connected-with-exactly-k-edges-in-a-graph/)
 
 给定一个表示为邻接矩阵和整数“ k”的有向图，任务是找到与确切的“ k”边连接的所有顶点对。
+
 另外，找到可以在完全 k 个边中链接两个顶点的方式。
 
 **示例**：
@@ -42,6 +43,7 @@ Output :
 **方法**：
 
 *   我们将邻接矩阵本身乘以“ k”次。
+
 *   在结果矩阵中，`res[i][j]`是可以从覆盖精确到'k'边的顶点'i'到达顶点'j'的方式数量。
 
 下面是上述方法的实现：

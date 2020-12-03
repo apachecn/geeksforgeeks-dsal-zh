@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/largest-component-size-in-a-graph-formed-by-connecting-non-co-prime-nodes/](https://www.geeksforgeeks.org/largest-component-size-in-a-graph-formed-by-connecting-non-co-prime-nodes/)
 
 给定一个具有 N 个节点的图，它们的值在数组 A 中定义，任务是通过连接非互素节点在图中找到最大的组件大小。 如果两个节点 U 和 V 不互质，则它们之间的边为边，这意味着 A [U]和 A [V]的最大公约数应大于 1。
+
 **示例**：
 
 ```
@@ -23,7 +24,9 @@ Output : 8
 ```
 
 **天真的方法**：
+
 我们可以遍历所有节点对，并检查它们是否是互素的。 如果它们不是互质的，我们将它们连接起来。 创建图表后，我们将应用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来找到最大组件尺寸。
+
 以下是上述方法的实现：
 
 ## C++
@@ -338,14 +341,19 @@ public static void Main(String[] args)
 **有效方法**
 
 *   对于任何两个非互质数，它们必须至少具有一个公因子。 因此，最好遍历所有对，而不是遍历每个节点值。 想法是将具有共同因素的数字组成一个小组。
+
 *   可以使用橡皮擦的[筛网有效地完成素数分解。 为了将节点组合在一起，我们将使用](https://www.geeksforgeeks.org/sieve-of-eratosthenes/)[不交集数据结构（按等级和路径压缩的并集）](https://www.geeksforgeeks.org/disjoint-set-data-structures/)。
+
 *   The following information will be stored :
 
     > par [i]- > 表示节点 i 的父节点。
+
     > size [i]- > 表示组成节点 i 所属节点的大小。
+
     > id [p]- > 表示节点素数 p 首先被视为 A [i]的因子
 
 *   对于每个节点值，我们将分解素因数并将其存储在集合 S 中。对 S 的每个元素进行迭代。如果首次将素数视为某个因数（id [p]为零），则将 此素数与当前索引的 ID。 如果已经标记了该素数，则只需将此节点与 id [p]合并即可。
+
     这样，所有节点最终都将属于某个组件，而 size [i]将是我所属的组件节点的大小。
 
 下面是上述方法的实现：

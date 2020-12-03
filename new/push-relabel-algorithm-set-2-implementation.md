@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/push-relabel-algorithm-set-2-implementation/](https://www.geeksforgeeks.org/push-relabel-algorithm-set-2-implementation/)
 
 我们强烈建议在继续本文之前先参考以下文章。
+
 [推送重新标记算法| 第 1 组（简介和插图）](https://www.geeksforgeeks.org/push-relabel-algorithm-set-1-introduction-and-illustration/)
 
 **问题陈述**：给定一个图，该图表示每个边都具有容量的流网络。 还给定图中的两个顶点*源*'s'和*接收器*'t'，找出具有以下约束的从 s 到 t 的最大可能流量：
@@ -12,9 +13,11 @@
 **b）**除 s 和 t 之外，每个顶点的流入流量等于流出流量。
 
 例如，请考虑以下 CLRS 书中的图表。
+
 ![ford_fulkerson1](img/568b1131326471bed1ddb97bf1399c90.png)
 
 上图中的最大可能流量为 23。
+
 ![ford_fulkerson2](img/0cc230058968c39cad925949a53ee714.png)
 
 ```
@@ -48,6 +51,7 @@ Push-Relabel 算法中有三个主要操作
     ```
 
 2.  **Push（）**用于从流量过大的节点产生流量。 如果顶点有多余的流动，并且有一个相邻的高度较小（在残差图中），我们将流动从顶点推到相邻的较低高度。 通过管道（边）的推动流量等于多余流量和边容量的最小值。
+
 3.  **Relabel（）**操作用于顶点流动过多且相邻顶点都不处于较低高度的情况。 我们基本上增加了顶点的高度，以便可以执行 push（）。 为了增加高度，我们选择相邻的最小高度（在残差图中，即可以添加流量的相邻高度）并对其加 1。
 
 <center>**Implementation:**</center>

@@ -5,7 +5,9 @@
 给定一个包含用户名，电子邮件和电话号码的联系人列表（顺序不限）。 识别相同的联系人（即，同一个人有多个联系人），并将相同的联系人一起输出。
 
 注意：
+
 1）联系人可以以任何顺序存储其三个字段，即电话号码可以出现在用户名之前，或者用户名可以出现在电话号码之前。
+
 2）如果两个联系人具有相同的用户名或电子邮件或电话号码，则它们是相同的。
 
 **示例**：
@@ -29,8 +31,11 @@ Therefore, contact[0] and contact[2] are also same.
 ```
 
 **我们强烈建议您最小化浏览器，然后自己尝试。**
+
 输入基本上是一个结构数组。 一个结构包含三个字段，以便任何字段都可以表示有关联系人的任何详细信息。
+
 这个想法是首先使用给定的数组创建联系人图。 在图中，如果两个顶点都具有相同的用户名，相同的电子邮件或相同的电话号码，则它们在顶点 i 与顶点 j 之间会有一条边。 一旦构建了图，任务就减少到在无向图中找到[连接的组件。 我们可以通过从每个未访问的顶点开始执行](http://geeksquiz.com/connected-components-in-an-undirected-graph/) [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 或 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 来找到连接的组件。 在下面的代码中，使用了 DFS。
+
 以下是此想法的实现。
 
 ## C++
@@ -270,6 +275,7 @@ if __name__ == '__main__':
 ```
 
 **时间复杂度**：O（n <sup>2</sup> ）其中，n 是触点数。
+
 感谢 [Gaurav Ahirwar](http://qa.geeksforgeeks.org/user/Mr.Lazy) 提供了上述解决方案。
 
 **另一种方法：（使用联合查找）**
@@ -415,6 +421,7 @@ int main()
 ```
 
 **时间复杂度**：O（N *α（N）），其中 N 是接触数，α是[阿克曼逆函数](https://en.wikipedia.org/wiki/Ackermann_function)
+
 **空间复杂度**：上）
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。

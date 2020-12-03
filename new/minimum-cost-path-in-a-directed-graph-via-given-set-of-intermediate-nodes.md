@@ -25,17 +25,25 @@
 > 因此， 路径= 3 + 5 + 4 = 12
 
 **方法**：
+
 要解决此问题，其想法是使用[广度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)遍历。 **BFS** 通常用于在图形中查找[最短路径，并且所有节点到源，中间节点和目标的最小距离可以通过](https://www.geeksforgeeks.org/shortest-path-unweighted-graph/) [BFS 计算[](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 。
 
 请按照以下步骤解决问题：
 
 *   将 **minSum** 初始化为 **INT_MAX** 。
+
 *   使用 **BFS** 从源节点`S`遍历图形。
+
 *   将源的每个相邻节点标记为新源，然后从该节点执行 **BFS** 。
+
 *   一旦遇到目标节点`D`，则检查是否访问了所有中间节点。
+
 *   如果访问了所有中间节点，则更新 **minSum** 并返回最小值。
+
 *   如果未访问所有中间节点，则返回 **minSum** 。
+
 *   将来源标记为未访问。
+
 *   打印获得的 **minSum** 的最终值。
 
 下面是上述方法的实现：
@@ -316,6 +324,7 @@ public static void main(String[] args)
 ```
 
 ***时间复杂度**：O（N + M）*
+
 ***辅助空间**：O（N + M）*
 
 

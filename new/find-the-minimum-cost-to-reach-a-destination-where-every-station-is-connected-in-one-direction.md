@@ -326,6 +326,7 @@ The Minimum cost to reach station 4 is 65
 ```
 
 上述实现的时间复杂度是指数的，因为它尝试了从 0 到 N-1 的所有可能路径。 上述解决方案多次解决了相同的 subrpoblems（可以通过为 minCostPathRec（0，5）绘制递归树来看到。
+
 由于此问题具有动态编程问题的两个属性（（请参见[此](https://www.geeksforgeeks.org/overlapping-subproblems-property-in-dynamic-programming-dp-1/)和[ 与其他典型的[动态编程（DP）问题一样，通过存储子问题的解决方案并以自下而上的方式解决问题，可以避免相同子问题的](https://www.geeksforgeeks.org/archives/tag/dynamic-programming)重新计算。
 
 一种动态编程解决方案是创建 2D 表并使用上述给定的递归公式填充表。 该解决方案所需的额外空间为 O（N <sup>2</sup> ），时间复杂度为 O（N <sup>3</sup> ）
@@ -343,12 +344,17 @@ The Minimum cost to reach station 4 is 65
 2）站点 1 的最低成本为 cost [0] [1]，即 di​​st [1] = cost [0] [1]
 
 3）站点 2 的最低成本是以下两个中的最小值。
+
 a）dist [0] + cost [0] [2]
+
 b）dist [1] + cost [1] [2]
 
 3）站点 3 的最低成本是以下三个的最小值。
+
 a）dist [0] + cost [0] [3]
+
 b）dist [1] + cost [1] [3]
+
 c）dist [2] + cost [2] [3 ]
 
 类似地，计算 dist [4]，dist [5]，…dist [N-1]。

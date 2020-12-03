@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/printing-pre-and-post-visited-times-in-dfs-of-a-graph/](https://www.geeksforgeeks.org/printing-pre-and-post-visited-times-in-dfs-of-a-graph/)
 
 [深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)（DFS）将图形的所有顶点标记为已访问。 因此，为了使 DFS 有用，还可以存储一些其他信息。 例如，运行 DFS 时顶点的访问顺序。
+
 访问前和访问后号码是在图形上运行 DFS 时可以存储的额外信息，这些信息实际上非常有用。 访问前编号指示节点进入递归堆栈的时间，访问后编号指示节点从 DFS 递归堆栈中出来的时间。
 
 **示例**：

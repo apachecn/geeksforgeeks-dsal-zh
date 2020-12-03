@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/find-shortest-distance-guard-bank/](https://www.geeksforgeeks.org/find-shortest-distance-guard-bank/)
 
 给定一个填充有“ O”，“ G”和“ W”的矩阵，其中“ O”代表开放空间，“ G”代表守卫，“ W”代表银行的墙。 将矩阵中的所有 O 替换成与警卫的最短距离，而又不能穿过任何墙壁。 同样，在输出矩阵中，将防护装置替换为 0，将墙壁替换为-1。
+
 预期的**对于 M x N 矩阵，时间复杂度**为 O（MN）。
 
 例子：

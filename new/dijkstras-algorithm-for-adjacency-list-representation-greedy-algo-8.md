@@ -3,21 +3,33 @@
 > 原文： [https://www.geeksforgeeks.org/dijkstras-algorithm-for-adjacency-list-representation-greedy-algo-8/](https://www.geeksforgeeks.org/dijkstras-algorithm-for-adjacency-list-representation-greedy-algo-8/)
 
 我们建议阅读以下两篇文章，作为这篇文章的先决条件。
+
 **1\.** [贪婪算法| 集合 7（Dijkstra 最短路径算法）](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
+
 **2\.** [图及其表示](https://www.geeksforgeeks.org/graph-and-its-representations/)
+
 我们讨论了 [Dijkstra 算法及其用于邻接矩阵表示的实现 图](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)。 矩阵表示的时间复杂度为 O（V ^ 2）。 在这篇文章中，讨论了用于邻接表表示的 O（ELogV）算法。
+
 如前一篇文章所述，在 Dijkstra 的算法中，维护了两组，一组包含 SPT（最短路径树）中已包含的顶点列表，另一组包含尚未包含的顶点。 使用邻接表表示，可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 在 O（V + E）时间内遍历图的所有顶点。 这个想法是使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 遍历图形的所有顶点，并使用最小堆存储尚未包含在 SPT 中的顶点（或尚未确定最短距离的顶点）。 Min Heap 用作优先级队列，以从尚未包含的顶点集中获取最小距离顶点。 对于 Min Heap，诸如 extract-min 和 reduce-key 值之类的操作的时间复杂度为 O（LogV）。
+
 以下是详细步骤。
+
 **1）**创建大小为 V 的最小堆，其中 V 是给定图中顶点的数量。 最小堆的每个节点都包含顶点数和顶点的距离值。
+
 **2）**初始化以源顶点为根的 Min Heap（分配给源顶点的距离值为 0）。 分配给所有其他顶点的距离值为 INF（无限）。
+
 **3）**当 Min Heap 不为空时，请执行以下操作
+
 ….. **a）**从 Min Heap 中提取具有最小距离值节点的顶点。 令提取的顶点为 u。
+
 ….. **b）**。对于 u 的每个相邻顶点 v，检查 v 是否在 Min Heap 中。 如果 v 在“最小堆”中并且距离值大于 u-v 的权重加上 u 的距离值，则更新 v 的距离值。
+
 让我们用以下示例理解。 假设给定的源顶点为 0
 
 ![](img/8dc4df6d86d36d8246549dc9f7b13def.png)
 
 最初，所有其他顶点的源顶点距离值为 0，INF 为无穷大。 因此，从“最小堆”中提取源顶点，并更新与 0（1 和 7）相邻的顶点的距离值。 最小堆包含除顶点 0 以外的所有顶点。
+
 绿色的顶点是已确定最小距离的顶点，而不是最小堆
 
 ![](img/76ea13a59330249851bce81847828de2.png)
@@ -680,18 +692,27 @@ Vertex   Distance from Source
 ```
 
 **时间复杂度**：上面的代码/算法的时间复杂度看起来为 O（V ^ 2），因为有两个嵌套的 while 循环。 如果仔细观察，可以发现内部循环中的语句执行了 O（V + E）次（类似于 BFS）。 内部循环具有 reduceKey（）操作，该操作需要 O（LogV）时间。 因此总体时间复杂度为 O（E + V）* O（LogV），即 O（（E + V）* LogV）= O（ELogV）。
+
 请注意，以上代码使用二进制堆实现优先级队列。 使用斐波那契堆可以将时间复杂度降低到 O（E + VLogV）。 原因是，斐波那契堆需要 O（1）时间来进行减键操作，而二进制堆需要 O（Logn）时间。
+
 **注意**：
 
 1.  该代码计算出最短距离，但不计算路径信息。 我们可以创建一个父数组，在更新距离时更新父数组（例如 [prim 的实现](https://www.geeksforgeeks.org/prims-mst-for-adjacency-list-representation-greedy-algo-6/)），并使用它显示从源到不同顶点的最短路径。
+
 2.  该代码用于无向图，相同的 dijekstra 函数也可用于有向图。
+
 3.  该代码查找从源到所有顶点的最短距离。 如果我们在最短的距离只关心从源到单个目标，我们可以打破 for 循环时所拾取最小距离顶点等于目标（算法的步骤 3.A）。
+
 4.  Dijkstra 的算法不适用于负边为负的图表。 对于负负边的图形，可以使用 [Bellman-Ford 算法](http://en.wikipedia.org/wiki/Bellman-Ford_algorithm)，我们将在单独的文章中讨论它。
+
     [Dijkstra 最短路径算法中的打印路径](https://www.geeksforgeeks.org/printing-paths-dijkstras-shortest-path-algorithm/)
+
     [Dijkstra 使用 STL 中设置的最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-set-in-stl/)
 
 **参考**：
+
 [Clifford Stein，Thomas H. Cormen，Charles E. Leiserson，Ronald L.的算法简介](http://www.flipkart.com/introduction-algorithms-8120340078/p/itmczynzhyhxv2gs?pid=9788120340077&affid=sandeepgfg)
+
 [Sanjoy Dasgupta，Christos Papadimitriou 的算法 ，乌麦什·瓦济拉尼](http://www.flipkart.com/algorithms-0070636613/p/itmczynvb7p2zacz?pid=9780070636613&affid=sandeepgfg)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。

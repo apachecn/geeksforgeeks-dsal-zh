@@ -21,10 +21,13 @@ Transitive closure of above graphs is
 ```
 
 该图以邻接矩阵的形式给出，例如“ graph [V] [V]”，其中如果从顶点 i 到顶点 j 的边或 i 等于 j，则 graph [i] [j]为 1，否则为 graph [i] [j]为 0。
+
 [可以使用 Floyd Warshall 算法](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/)，我们可以使用 [Floyd Warshall](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/) 计算距离矩阵 dist [V] [V]，如果 dist [i] [j]是无穷大，则 j 不能从 I 到达。否则，j 可达，并且 dist [i] [j]的值将小于 V。
+
 我们不是直接使用 Floyd Warshall，而是 可以针对此特定问题在时间和空间上对其进行优化。 以下是优化：
 
 1.  代替整数结果矩阵（在 floyd warshall 中为 [dist [V] [V]），我们可以创建布尔可达性矩阵达到[V] [V]（节省空间）。 如果可以从 i 到达 j，则到达[i] [j]的值将为 1，否则为 0。](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/)
+
 2.  代替使用算术运算，我们可以使用逻辑运算。 对于算术运算“ +”，使用逻辑和“ &&”，对于最小值，使用逻辑或“ ||”。 （我们以恒定的因子节省时间。但是时间复杂度相同）
 
 下面是上述方法的实现：
@@ -469,9 +472,14 @@ Following matrix is transitiveclosure of the given graph
 ```
 
 **时间复杂度**：O（V <sup>3</sup> ）其中 V 是给定图中顶点的数量。
+
 参见以下文章中的 O（V <sup>2</sup> ）解决方案。
+
 [使用 DFS 进行图的传递闭合](https://www.geeksforgeeks.org/transitive-closure-of-a-graph-using-dfs/)
+
 **参考文献**：
+
 [Clifford Stein，Thomas H. Cormen，Charles E. Leiserson， Ronald L.](http://www.flipkart.com/introduction-algorithms-8120340078/p/itmczynzhyhxv2gs?pid=9788120340077&affid=sandeepgfg)
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请写评论。
 

@@ -3,10 +3,15 @@
 > 原文： [https://www.geeksforgeeks.org/find-minimum-numbers-moves-needed-move-one-cell-matrix-another/](https://www.geeksforgeeks.org/find-minimum-numbers-moves-needed-move-one-cell-matrix-another/)
 
 给定一个 N X N 矩阵（M），该矩阵填充有 1，0，2，3。 找到从源移动到目的地（接收器）所需的最少移动次数。 而仅遍历空白单元格。 您可以上下左右移动。
+
 单元格`1`的值表示源。
+
 单元格`2`的值表示目的地。
+
 单元格`3`的值表示空白单元格。
+
 单元格**的值 0** 表示空白墙。
+
 **注意**：只有一个来源和一个目的地。它们可能从来源到目的地（汇）的路径不止一个。在矩阵中的每一步我们都认为是“ 1”
 
 **示例**：
@@ -26,6 +31,7 @@ Output : 4
 ```
 
 询问： [Adob​​e 访谈](https://www.geeksforgeeks.org/adobe-interview-experience-set-41-software-engineer/)
+
 。 ![minimum_move](img/0309f6e58e9c0be41d7d925357545272.png) 
 
 这个想法是使用 Level 图（广度优先遍历）。 将每个像元视为一个节点，并将任意两个相邻像元之间的每个边界作为一条边。 所以 Node 的总数是 N * N。

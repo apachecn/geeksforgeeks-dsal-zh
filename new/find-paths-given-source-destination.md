@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/find-paths-given-source-destination/](https://www.geeksforgeeks.org/find-paths-given-source-destination/)
 
 给定有向图，源顶点“ s”和目标顶点“ d”，打印从给定“ s”到“ d”的所有路径。
+
 考虑以下有向图。 令 s 为 2，d 为 3。从 2 到 3 有 4 条不同的路径。
 
 ![allPaths](img/3bae321fd72c187df30b2e6e2e308f87.png)
@@ -12,9 +13,13 @@
 **方法**：
 
 1.  想法是对给定的有向图进行[深度优先遍历](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)。
+
 2.  从源开始 DFS 遍历。
+
 3.  继续将访问的顶点存储在数组中或 HashMap 中说“ path []”。
+
 4.  如果到达目标顶点，则打印 path []的内容。
+
 5.  重要的是将 path []中的当前顶点也标记为已访问，以使遍历不会循环进行。
 
 以下是上述想法的实现。
@@ -481,8 +486,11 @@ Following are all different paths from 2 to 3
 **复杂度分析**：，
 
 *   **时间复杂度**：O（V ^ V）。
+
     时间复杂度是多项式。 从每个顶点可以从当前顶点访问 v 个顶点。
+
 *   **辅助空间**：O（V ^ V）。
+
     要存储路径，需要 V ^ V 空间。
 
 本文由 **Shivam Gupta** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。

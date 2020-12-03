@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/minimum-possible-modifications-in-the-matrix-to-reach-destination/](https://www.geeksforgeeks.org/minimum-possible-modifications-in-the-matrix-to-reach-destination/)
 
 给定大小为 **N x M** 的矩阵，该矩阵由整数 **1、2、3** 和`4`组成。
+
 每个值代表该单元格可能发生的移动：
 
 ```
@@ -33,14 +34,19 @@
 > **输出**：2
 
 **先决条件**：
+
 1\. [Djikstra 的算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
+
 2\. [0-1 BFS](https://www.geeksforgeeks.org/0-1-bfs-shortest-path-binary-graph/)
 
 **方法 1**
 
 *   让我们将 2D 矩阵的每个像元视为加权图的一个节点，每个节点最多可以有四个连接的节点（可能是四个方向）。 每个边的权重为：
+
     *   如果节点 U 的运动方向指向 V，则 weight（U，V）= 0，否则
+
     *   重量（U，V）= 1
+
 *   现在，这基本上可以简化为最短路径问题，可以使用 [Djikstra 算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)进行计算
 
 下面是上述方法的实现：
@@ -210,6 +216,7 @@ int main()
 **时间复杂度**：![O(N * M * log(N * M))](img/f11bb75c1e4c23de4e450c4b21a0492c.png "Rendered by QuickLaTeX.com")
 
 **方法 2**
+
 此处，边权重为 0，仅 1，即 0-1 图。 使用 [0-1 BFS](https://www.geeksforgeeks.org/0-1-bfs-shortest-path-binary-graph/) 可找到此类图中的最短路径。
 
 下面是上述方法的实现：

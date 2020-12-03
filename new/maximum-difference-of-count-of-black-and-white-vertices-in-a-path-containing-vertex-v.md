@@ -48,8 +48,11 @@ Output: 1
 **方法**：的想法是使用[动态编程](http://www.geeksforgeeks.org/dynamic-programming/)的概念来解决此问题。
 
 *   首先，为颜色阵列和白色创建向量，按 1，对于黑色，按-1。
+
 *   创建一个数组 dp []，以计算包含顶点 V 的某些子树中白色和黑色顶点数目之间的最大可能差。
+
 *   现在，使用[深度遍历树，首先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)遍历并更新 dp []数组中的值。
+
 *   最后，dp []数组中存在的最小值是必需的答案。
 
 下面是上述方法的实现：

@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/check-given-directed-graph-strongly-connected-set-2-kosaraju-using-bfs/](https://www.geeksforgeeks.org/check-given-directed-graph-strongly-connected-set-2-kosaraju-using-bfs/)
 
 给定一个有向图，请找出该图是否牢固连接。 如果在任意两对顶点之间存在路径，则有向图是牢固连接的。 检查有向图的连通性的方法有很多，但是一种优化的方法是 [Kosaraju 基于 DFS 的简单算法](https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/)。
+
 Kosaraju 基于 BFS 的简单算法的工作原理也与基于 DFS 的算法相同。
 
 ```
@@ -33,11 +34,13 @@ that does two BFS traversals of graph:
 <center>**Example 1 :**</center>
 
 Given a directed to check if it is strongly connected or not.
+
 ![graph 1](img/64445ed5b2cb865cf075840c278ac365.png)
 
 步骤 1：从顶点 2 开始，获得的 BFS 为 2 3 4 0 1
 
 第 2 步：反转给定图后，我们得到了列出的图。
+
 ![graph 1](img/cf130974782093cdb0c722ace0f2aae2.png)
 
 步骤 3：再次从顶点 2 开始，BFS 为 2 1 4 0 3
@@ -49,11 +52,13 @@ Given a directed to check if it is strongly connected or not.
 <center>**Example 2 :**</center>
 
 Given a directed to check if it is strongly connected or not.
+
 ![graph 2](img/56a919d9382e183deee188ff09e84a30.png)
 
 步骤 1：从顶点 2 开始，获得的 BFS 为 2 3 4
 
 第 2 步：反转给定图后，我们得到了列出的图。
+
 ![graph 2](img/ed270ef0aa0e217d58fecaabd9725ca2.png)
 
 步骤 3：再次从顶点 2 开始，BFS 为 2 1 0
@@ -227,6 +232,7 @@ No
 **时间复杂度**：如果使用邻接矩阵表示来表示图，则上述实现的时间复杂度与广度优先搜索相同，即为 O（V + E）。
 
 **我们可以进一步改善吗？**
+
 上述方法需要两次遍历图。 我们可以使用 [Tarjan 的算法来查找图是否是强连通的，并使用](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/) [Tarjan 算法查找强连通的分量](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)。
 
 本文由 **[Shivam Pradhan（anuj_charm）](https://www.facebook.com/anuj.charm)** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

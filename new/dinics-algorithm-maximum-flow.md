@@ -7,16 +7,21 @@
 给定一个表示流网络的图，其中每个边都有容量。 还给定图中的两个顶点源“ s”和宿“ t”，找出具有以下约束的从 s 到 t 的最大可能流量：
 
 1.  边上的流量不超过边的给定容量。
+
 2.  除 s 和 t 以外，每个顶点的流入流量等于流出流量。
 
 例如，在下面的输入图
+
 ![](img/1562ee6afb3dda3793c7c5269c85a8d3.png)
+
 中，最大 s-t 流量为 19，如下所示。
+
 ![](img/52f79858af1806920e9421ec635830d7.png)
 
 <center>**Background :**</center>
 
 1.  [最大流量问题简介](https://www.geeksforgeeks.org/max-flow-problem-introduction/)：我们介绍了最大流量问题，讨论了贪婪算法，并介绍了残差图。
+
 2.  [Ford-Fulkerson 算法和 Edmond Karp 实现](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)：我们讨论了 Ford-Fulkerson 算法及其实现。 我们还详细讨论了残差图。
 
 [Edmond Karp 实施](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/)的时间复杂度为 O（VE <sup>2</sup> ）。 在本文中，我们将讨论一种新的 Dinic 算法，该算法是一种更快的算法，采用 O（EV [HT G4] 2 ）。
@@ -24,6 +29,7 @@
 与 Edmond Karp 的算法一样，Dinic 的算法使用以下概念：
 
 1.  如果残差图中没有`s`至`t`路径，则流量最大。
+
 2.  BFS 循环使用。 虽然在两种算法中使用 BFS 的方式有所不同。
 
 在 Edmond 的 Karp 算法中，我们使用 BFS 查找扩展路径并通过该路径发送流。 在 Dinic 的算法中，我们使用 BFS 来检查是否可以增加流量并构建水位图。 在**级别图**中，我们将级别分配给所有节点，一个节点的级别是该节点到源的最短距离（以边数表示）。 一旦构建了级别图，我们便使用该级别图发送多个流。 这就是为什么它比 Edmond Karp 更好的原因。 在 Edmond Karp 中，我们仅发送通过 BFS 找到的路径发送的流。
@@ -48,27 +54,41 @@
 <center>**Illustration :**</center>
 
 初始残差图（与给定图相同）
+
 ![](img/1562ee6afb3dda3793c7c5269c85a8d3.png)
+
 总流量= 0
 
 **第一次迭代**：我们使用 BFS 向所有节点分配级别。 我们还会检查是否有更多流量（或残差图中有 s-t 路径）。
+
 ![](img/ee386df1c7791a54bc725a244d44483a.png)
 
 现在，我们发现使用级别来阻塞流（意味着每个流路径的级别都应为 0、1、2、3）。 我们一起发送三个流。 与我们一次发送一个流的 Edmond Karp 相比，这是优化的地方。
+
 路径 s – 1 – 3 – t 上有 4 个流量单位。
+
 路径 s – 1 – 4 – t 上有 6 个流量单位。
+
 路径 s – 2 – 4 – t 上有 4 个流量单位。
+
 总流量=总流量+ 4 + 6 + 4 = 14
 
 一轮迭代后，残差图变为以下。
+
 ![](img/8c9fbd97a10191696184a9254b125837.png)
+
 **第二个迭代**：我们使用上面修改的残差图的 BFS 为所有节点分配新级别。 我们还会检查是否有更多流量（或残差图中有 s-t 路径）。
+
 ![](img/68dc372390a0efe54b182ecade4ca012.png)
+
 现在，我们发现使用级别来阻塞流（意味着每个流路径的级别都应为 0、1、2、3、4）。 这次我们只能发送一个流。
+
 路径 s 上的 5 个流量单位– 2 – 4 – 3 – t
+
 总流量=总流量+ 5 = 19
 
 新的残差图为
+
 ![](img/1ba095d71193c5e7f507f6a079a769fa.png)
 
 **第三次迭代**：我们运行 BFS 并创建一个级别图。 我们还会检查是否有更多流量，并仅在可能的情况下进行。 这次残差图中没有 s-t 路径，因此我们终止了算法。
@@ -300,7 +320,9 @@ Maximum flow 23
 **时间复杂度**：O（EV <sup>2</sup> ）。 进行 BFS 构造级别图需要 O（E）时间。 发送更多流量直到达到阻塞流量需要 O（VE）时间。 外循环最多运行 O（V）时间。 在每次迭代中，我们构造新的级别图并找到阻塞流。 可以证明，级别的数量在每次迭代中至少增加了一个（请参见下面的参考视频作为证明）。 因此，外循环最多运行 O（V）次。 因此，总的时间复杂度为 O（EV <sup>2</sup> ）。
 
 **参考文献**：
+
 [https://en.wikipedia.org/wiki/Dinic's_algorithm](https://en.wikipedia.org/wiki/Dinic's_algorithm)
+
 [https://www.youtube.com/watch？ v = uM06jHdIC70](https://www.youtube.com/watch?v=uM06jHdIC70)
 
 本文由 **[Nishant Singh](https://practice.geeksforgeeks.org/user-profile.php?user=_code)** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

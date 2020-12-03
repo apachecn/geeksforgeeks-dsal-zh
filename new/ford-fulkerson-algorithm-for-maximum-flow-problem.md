@@ -9,8 +9,11 @@
 **b）**除 s 和 t 之外，每个顶点的流入流量等于流出流量。
 
 例如，请考虑以下 CLRS 书中的图表。
+
 ![ford_fulkerson1](img/568b1131326471bed1ddb97bf1399c90.png) 
+
 上图中的最大可能流量为 23。
+
 ![ford_fulkerson2](img/0cc230058968c39cad925949a53ee714.png)
 
 先决条件： **[最大流量问题简介](https://www.geeksforgeeks.org/max-flow-problem-introduction/)**
@@ -27,9 +30,13 @@ The following is simple idea of Ford-Fulkerson algorithm:
 **时间复杂度**：上述算法的时间复杂度为 O（max_flow * E）。 我们在存在扩展路径的情况下运行循环。 在最坏的情况下，每次迭代可能会增加 1 个单位流。 因此，时间复杂度变为 O（max_flow * E）。
 
 **如何实现以上简单算法？**
+
 让我们首先定义残差图的概念，这是理解实现所必需的。 流量网络的
+
 ***残留图*** 是表示其他可能流量的图。 如果残差图中存在从源到汇的路径，则可以增加流量。 残差图的每个边都有一个称为 ***剩余容量*** 的值，该值等于边的原始容量减去电流。 剩余容量基本上是边的当前容量。
+
 现在让我们讨论实现细节。 如果残差图的两个顶点之间没有边，则残差能力为 0。 我们可以将残差图初始化为原始图，因为没有初始流量，并且初始残差容量等于原始容量。 要找到增广路径，我们可以对残差图进行 BFS 或 DFS。 我们在以下实现中使用了 BFS。 使用 BFS，我们可以找出从源到接收器的路径。 BFS 还建立了 parent []数组。 使用 parent []数组，我们遍历找到的路径，并通过找到路径上的最小剩余容量来查找通过该路径的可能流。 稍后，我们将找到的路径流添加到总体流中。
+
 重要的是，我们需要更新残差图中的残差容量。 我们从沿路径的所有边减去路径流，然后沿反向边添加路径流。我们需要沿反向边添加路径流，因为以后可能需要反向发送流（例如，请参见以下链接）。
 
 [https://www.geeksforgeeks.org/max-flow-problem-introduction/](https://www.geeksforgeeks.org/max-flow-problem-introduction/)
@@ -535,10 +542,13 @@ The maximum possible flow is 23
 [Dinc 的最大流量算法。](https://www.geeksforgeeks.org/dinics-algorithm-maximum-flow/)
 
 **练习**：
+
 修改以上实现，使其在 O（VE <sup>2</sup> ）时间内运行。
 
 **参考**：
+
 [http://www.stanford.edu/class/cs97si/08-network-flow-problems.pdf](http://www.stanford.edu/class/cs97si/08-network-flow-problems.pdf)
+
 [算法导论 3 Clifford Stein，Thomas H. Cormen，Charles E. Leiserson 和 Ronald L. Rivest 撰写的版本](http://www.flipkart.com/introduction-algorithms-3rd/p/itmczynzhyhxv2gs?pid=9788120340077&affid=sandeepgfg)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。

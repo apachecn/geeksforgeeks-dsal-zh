@@ -23,12 +23,17 @@
 > distance [] = {3 ，4，3，2，3，4}，距离的最小值为 1。
 
 **方法**：
+
 的想法是使用 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)解决此问题。 步骤如下：
 
 1.  对于任何节点（例如**或**），都使用 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)遍历图，节点自身的距离为 0。
+
 2.  对于节点**和**的每个递归调用，请不断更新[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)中节点**和**的递归节点的距离（例如 **distance []** ）。
+
 3.  通过在每次对 Node a 的递归调用中获取最大距离，可以给出**和**最远**节点之间的边数。**
+
 4.  对图中的所有节点重复上述步骤，并继续更新距离[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)（ **distance []** ）中每个节点的最远节点距离。
+
 5.  数组 **distance []** 的最小值是所需的结果。
 
 下面是上述方法的实现：

@@ -28,6 +28,7 @@ Explanation : Total 5 step required.
 ```
 
 可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 解决此问题。 我们可以将给定的数组视为未加权图，其中每个顶点在下一个和上一个数组元素上都有两个边，而在具有相同值的数组元素上有更多边。 现在，为了快速处理第三种类型的边，我们保留 10 个[向量](http://quiz.geeksforgeeks.org/vector-sequence-containers-the-c-standard-template-library-stl-set-1/)，这些向量存储所有存在数字 0 至 9 的索引。 在上面的示例中，对应于 0 的向量将存储[0，12]，2 个索引，其中给定数组中发生了 0。
+
 使用了另一个布尔数组，因此我们不会多次访问同一索引。 由于我们正在使用 BFS，并且 BFS 逐级进行，因此可以保证最佳的最小步长。
 
 ## C++

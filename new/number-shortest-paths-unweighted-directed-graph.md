@@ -5,20 +5,29 @@
 > 原文： [https://www.geeksforgeeks.org/number-shortest-paths-unweighted-directed-graph/](https://www.geeksforgeeks.org/number-shortest-paths-unweighted-directed-graph/)
 
 给定非加权有向图，可以是循环的也可以是非循环的。 打印从给定顶点到每个顶点的最短路径数。 例如，考虑下图。 顶点 0 到顶点 0 有一条最短路径（从每个顶点到其自身只有一条最短路径），顶点 0 到顶点 2 之间有一条最短路径（0-> 2），从顶点 0 有 4 条不同的最短路径 到第 6 点：
+
 1\. 0- > 1- > 3- > 4- > 6
+
 2\. 0- > 1- > 3- > 5- > 6
+
 3\. 0- > 2- > 3- > 4- > 6
+
 4\. 0- > 2- > 3- > 5- > 6
+
 ![](img/2957de24448a243ad1993424b59e0978.png)
 
 这个想法是使用 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 。 我们使用两个名为 dist []和 paths []的数组，dist []代表距源顶点的最远距离，而 paths []代表从源顶点到每个顶点的最短路径数。 最初，dist []中的所有元素都是无穷大，除了源顶点等于 0，因为它到源顶点的距离是 0，而 path []中的所有元素都是 0，除了源顶点等于 1，因为 每个顶点都有一条通往自己的最短路径。 之后，我们开始使用 BFS 方式遍历图形。
+
 然后，对于每个顶点 X 的每个邻居 Y：
 
 1）如果 dist [Y]> dist [X] +1 将 dist [Y]减小为 dist [X] +1，并将顶点 X 的路径数分配给顶点 Y 的路径数。
 
 2）否则，如果 dist [Y] = dist [X] + 1，则将顶点 X 的路径数添加到顶点 Y 的路径数。
+
 例如：
+
 让我们看下面的内容 图形。 源顶点为 0。假设我们遍历顶点 2，检查所有邻居，只有 3。因为遍历顶点 1 时已经访问了顶点 3，dist [3] = 2 且 path [3] = 1 。第二个条件为 true，这意味着已找到其他最短路径，因此我们将顶点 3 的路径数，顶点 2 的路径数加到
+
 。 5：
 
 ![](img/1a7ade280bb2d188f22f2de91cda7c74.png)

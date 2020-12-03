@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/finding-in-and-out-degrees-of-all-vertices-in-a-graph/](https://www.geeksforgeeks.org/finding-in-and-out-degrees-of-all-vertices-in-a-graph/)
 
 给定一个有向图，任务是计算图的每个顶点的内外度。
+
 **范例**：
 
 ```

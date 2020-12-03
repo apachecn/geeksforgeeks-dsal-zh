@@ -36,7 +36,9 @@
 **方法**：
 
 *   这个想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的连接组件，如[此](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)文章中所述。
+
 *   对于每个连接的组件，将存储二进制字符串并计算等效的十进制值。
+
 *   设置一个全局最大值，该最大值与每次迭代后获得的最大十进制等效值进行比较以获得最终结果。
 
 下面是上述方法的实现：
@@ -609,7 +611,9 @@ if __name__ == "__main__":
 ```
 
 **复杂度分析**：
+
 **时间复杂度**：O（V <sup>2</sup> ）
+
 DFS 算法需要 O（V + E）时间来运行，其中 V，E 是无向图的顶点和边。 此外，在每次迭代中都会找到十进制等效项，这需要额外的 O（V）来计算并返回结果。 因此，整体复杂度为 **O（V <sup>2</sup> ）**
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)

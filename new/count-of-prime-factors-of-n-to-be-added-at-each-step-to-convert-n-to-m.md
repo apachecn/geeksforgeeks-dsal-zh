@@ -21,19 +21,31 @@
 > 无法转换 N = 2 至 M = 3
 
 **方法**：
+
 该问题可以通过使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 获得达到 M 的最小步长和[硅酮筛网](http://www.geeksforgeeks.org/sieve-of-eratosthenes/)来预先计算质数来解决。
+
 请按照以下步骤解决问题：
 
 *   使用 Sieve 存储并预计算所有素数。
+
 *   现在，如果 N 已经等于 M，则打印 0，因为不需要加法运算。
+
 *   将此问题可视化为执行 **BFS** 的图形问题。 在每个级别上，通过添加质数来存储上一级别中 N 的值可获得的数字。
+
 *   现在，首先在队列中插入**（N，0）**，其中 N 表示该值，0 表示达到该值的操作数。
+
 *   在队列的每个级别，通过提取 [front（）](https://www.geeksforgeeks.org/queuefront-queueback-c-stl/)处的元素来逐个遍历所有元素，然后执行以下操作：
+
     1.  将 **q.front（）。first（）**存储在 **newNum** 中，将 **q.front（）。second（）**存储在**距离**中，其中 **newNum** 是当前值，**距离**是达到该值所需的操作次数。
+
     2.  将 **newNum** 的所有素因子存储在[集](https://www.geeksforgeeks.org/set-in-cpp-stl/)中。
+
     3.  如果 **newNum** 等于`M`，则打印距离，因为它是所需的最小操作。
+
     4.  如果 **newNum** 大于 M，则中断。
+
     5.  否则，newNum 小于 M。因此，通过逐个添加其主要因子 i 来更新 newNum，并将**（newNum + i，距离+ 1）**存储在队列中，并为下一级重复上述步骤 。
+
 *   如果搜索继续到队列变空的级别，则意味着无法从 N 获得 M。打印-1。
 
 下面是上述方法的实现：
@@ -440,6 +452,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N * log（N））*
+
 ***辅助空间**：O（N）*
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)

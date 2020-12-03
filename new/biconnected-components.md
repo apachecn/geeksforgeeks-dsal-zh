@@ -11,14 +11,19 @@
 在上图中，以下是双向连接的组件：
 
 *   4–2 3–4 3–1 2–3 1–2
+
 *   8–9
+
 *   8–5 7–8 5–7
+
 *   6–0 5–6 1–5 0–1
+
 *   10–11
 
 该算法基于[强连接组件](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)文章中讨论的 Disc 和低值。
 
 想法是将访问的边沿存储在堆栈中，而 DFS 在图形上并继续寻找[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)（在上图中突出显示）。 一旦找到[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/) u，从节点 u 开始进行 DFS 时访问的所有边将形成一个[双向连接的组件](https://en.wikipedia.org/wiki/Biconnected_component)。 当一个[连接的组件](https://en.wikipedia.org/wiki/Connected_component_%28graph_theory%29)的 DFS 完成时，堆栈中存在的所有边将形成一个双连接的组件。
+
 如果图形中没有[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)，则图形是双向连接的，因此将有一个双向连接的组件，即图形本身。
 
 ## C++

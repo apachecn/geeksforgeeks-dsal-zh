@@ -17,8 +17,11 @@
 **方法 1：使用** [**深度优先搜索**](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)
 
 1.  探索当前节点，并继续探索其子节点。
+
 2.  使用[映射](http://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/)以成对的形式存储访问的节点，并以停靠点和距离作为值。
+
 3.  如果键存在于地图中，则打破递归树。
+
 4.  找到每个递归树的答案（最低成本）并将其返回。
 
 下面是我们方法的实现：
@@ -160,14 +163,19 @@ int main()
 ```
 
 **时间复杂度**：O（V + E），其中 V 是节点数，E 是边。
+
 **辅助空间**：O（V）
 
 **方法 2：使用** [广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 
 1.  这个想法是使用[队列](http://www.geeksforgeeks.org/queue-data-structure/)执行 BFS 遍历。
+
 2.  从当前节点执行遍历，并将根节点插入队列。
+
 3.  遍历队列并浏览当前节点及其同级节点。 然后将节点的同级节点插入队列。
+
 4.  在探索每个同级时，如果成本较低，则继续在队列中推送条目，并更新最低成本。
+
 5.  经过上述遍历后，打印最低成本。
 
 下面是我们方法的实现：
@@ -281,15 +289,21 @@ int main()
 ```
 
 **时间复杂度**：O（Stops * N * N），其中 N 是队列中城市和规模的乘积
+
 **辅助空间**：O（N）
 
 **方法 3：使用** [Dijkstra 算法](https://www.geeksforgeeks.org/c-program-for-dijkstras-shortest-path-algorithm-greedy-algo-7/)
 
 1.  更新所有顶点到源的距离。
+
 2.  未从源直接连接的顶点将标记为无穷大，并且将以正确的距离更新直接连接的顶点。
+
 3.  从源开始，然后提取下一个最小顶点。 这样可以确保最低的成本。
+
 4.  在每个步骤进行边松弛： ***D 表示距离**， **w 表示权重***
+
     1.  如果 D [u] + w（u，z）
+
     2.  D [z] = D [u] + w（u，z）
 
 这是我们方法的实现：
@@ -390,13 +404,17 @@ int main()
 ```
 
 **时间复杂度**：O（E + V log V）其中 V 是节点数，E 是边。
+
 **辅助空间**：O（V）
 
 **方法 4：使用** [Bellmon Ford](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)
 
  **1.  初始化从源到所有顶点的距离为无穷远，到源本身的距离为 0。
+
 2.  在每个步骤进行边松弛：D 表示距离，w 表示权重
+
     *   如果 D [u] + w（u，z）
+
 3.  对该算法进行了修改以解决给定的问题，而不是放宽图表 V-1 的次数，我们将针对给定的停止次数进行处理。
 
 下面是上述方法的实现
@@ -478,6 +496,7 @@ int main()
 ```
 
 **时间复杂度**：O（E * V）其中 V 是节点数，E 是边。
+
 **辅助空间**：O（V）
 
 

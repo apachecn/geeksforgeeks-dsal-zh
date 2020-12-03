@@ -13,6 +13,7 @@ with 3 connected components:
 ```
 
 **方法**：
+
 的想法是采用与[克隆连接图](https://www.geeksforgeeks.org/clone-an-undirected-graph/)相同的方法，但是对于每个节点，以便我们可以克隆具有多个连接组件的图。
 
 我们将使用 GraphNode 类和 Graph 类。 Graph 类是强制性的，因为我们可能有多个连接的组件（请参见上面的示例），并且我们不能仅以 GraphNode 作为输入来处理它们。 对于 Graph 类，我们实际需要的是 GraphNodes 列表。 两种方法都可以列出节点列表而不是创建类。

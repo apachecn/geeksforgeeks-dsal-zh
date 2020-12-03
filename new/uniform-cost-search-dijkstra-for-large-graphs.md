@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/uniform-cost-search-dijkstra-for-large-graphs/](https://www.geeksforgeeks.org/uniform-cost-search-dijkstra-for-large-graphs/)
 
 [统一费用搜索](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Practical_optimizations_and_infinite_graphs)是 [Dijikstra 算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)的变体。 在这里，我们没有插入所有顶点到优先级队列中，而是仅插入源，然后在需要时一个接一个地插入。 在每一步中，我们都会检查项目是否已经在优先级队列中（使用访问数组）。 如果是，则执行减少键，否则将其插入。
+
 Dijsktra 的这种变体对于无限图和太大而无法在内存中表示的图很有用。 统一成本搜索主要用于人工智能。
 
 **示例**：
@@ -171,9 +172,13 @@ Minimum cost from 0 to 6 is = 3
 ```
 
 **复杂度**：O（m ^（1 + floor（l / e）））
+
 其中，
+
 m 是节点具有的最大邻居数。
+
 l 是节点的长度。 进入目标状态的最短路径
+
 e 是最低的边成本
 
 

@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/minimum-initial-vertices-traverse-whole-matrix-given-conditions/](https://www.geeksforgeeks.org/minimum-initial-vertices-traverse-whole-matrix-given-conditions/)
 
 我们为每个矩阵提供了一个包含不同值的矩阵。 我们的目标是找到矩阵中的最小位置集，以便可以从集合中的位置开始遍历整个矩阵。
+
 我们可以在以下条件下遍历矩阵：
 
 *   我们只能移动到其值小于或等于当前单元格值的邻居。 单元的邻居定义为与给定单元共享一侧的单元。
@@ -32,9 +33,11 @@ satisfies all the conditions stated above.
 ```
 
 从以上示例中，我们可以轻松地识别出，为了使用最小数量的职位，我们必须从具有最高像元值的职位开始。 因此，我们选择矩阵中包含最高值的位置。 我们将具有最高值的顶点放在单独的数组中。 从
+
 最大值开始，我们在每个顶点上执行 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。 如果在 dfs 中遇到任何未访问的顶点，则必须将此顶点包含在集合中。 处理完所有单元后，该集合将包含所需的顶点。
 
 **这是如何工作的？**
+
 我们需要访问所有顶点并达到最大值，我们必须从它们开始。 如果两个最大值不相邻，则必须同时选择两个。 如果两个最大值相邻，则可以选择其中任意一个，因为允许移动到等值邻居。
 
 ## C++

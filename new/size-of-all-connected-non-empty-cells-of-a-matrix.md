@@ -20,13 +20,19 @@
 > **输出**：5 4 3
 
 **方法**：
+
 的想法是在矩阵上使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 和[递归](https://www.geeksforgeeks.org/recursion/)。
+
 请按照以下步骤操作：
 
 *   初始化[队列数据结构](https://www.geeksforgeeks.org/queue-data-structure/)并插入一个单元格（ **mat [i] [j] = 1** ）。
+
 *   对插入的单元格执行 **BFS** ，并遍历其相邻单元格。
+
 *   检查边界条件，并检查当前元素是否为`1`，然后将其翻转为`0`。
+
 *   标记访问的单元格并更新连接的非空单元格的大小。
+
 *   最后，打印获得的所有连接尺寸。
 
 下面是上述方法的实现：
@@ -270,6 +276,7 @@ public static void main (String[] args)
 ```
 
 ***时间复杂度**：O（row * col）*
+
 ***辅助空间**：O（row * col）*
 
 

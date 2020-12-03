@@ -29,10 +29,13 @@ Explanation:
 ```
 
 我们在下面的文章中讨论了基于 Graph DFS 的解决方案。
+
 [Boggle（在一个字符板上查找所有可能的单词）| 设置 1](https://www.geeksforgeeks.org/boggle-find-possible-words-board-characters/)
 
 在这里，我们讨论基于 [Trie](https://www.geeksforgeeks.org/trie-insert-and-search/) 的解决方案，它比基于 DFS 的解决方案更好。
+
 给定字典 dictionary [] = {“ GEEKS”，“ FOR”，“ QUIZ”，“ GO”}
+
 1.创建一个空的 trie，并将给定字典的所有单词插入 trie
 
 ```
@@ -52,7 +55,9 @@ After insertion, Trie looks like(leaf nodes are in RED)
 ```
 
 2.之后，我们仅在 boggle [] []中选择那些是 Trie
+
 根节点的字符。让我们在上面选择'G'boggle [0] [0]，'Q'boggle [2] [ 0]（它们都存在于 boggle 矩阵中）
+
 3.在 trie 中搜索一个单词，该单词以我们在步骤 2 中选择的字符开头
 
 ```

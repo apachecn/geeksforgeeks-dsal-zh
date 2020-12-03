@@ -17,13 +17,21 @@
 **方法**：的想法是从给定的字符串索引创建[图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，并执行 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)以查找所需的更改次数。 请按照以下步骤解决此问题：
 
 *   将总计为的变量**初始化为`0`，以存储所需的更改计数。**
+
 *   根据给定的条件，从字符串创建图形，并在最终字符串中的所有位置 **i，K − i + 1，K + i，2K − i + 1、2K + i，3K − i + 1，…对于所有 **1≤i≤K** 的**应该相等。
+
 *   在 **[0，N]** 范围内进行迭代，并在索引`i`和**（N – i – 1）**之间添加无方向的边。
+
 *   在 **[0，N – M]** 范围内迭代，并在索引`i`和**（i + K）**之间添加无方向的边。
+
 *   为了最大程度地减少所需的操作次数，请使所有字母最多等于出现在这些位置的字母，只需对字符串执行 [DFS 遍历](https://www.geeksforgeeks.org/iterative-depth-first-traversal/)即可轻松找到。
+
 *   对所有未访问的节点，在创建的图形上执行 **[DFS 遍历](https://www.geeksforgeeks.org/print-the-dfs-traversal-step-wise-backtracking-also/)** ：
+
     *   在该遍历中访问的字符中找到频率最高的最大元素（例如 **maxFrequency** ）。
+
     *   通过 **DFS 遍历**中所有已访问字符的计数与上一步中的最大频率之差，更新字符的更改总数。
+
 *   完成上述步骤后，打印**总计**的值作为结果。
 
 下面是上述方法的实现：
@@ -142,6 +150,7 @@ int main()
 ```
 
 ***时间复杂度**：O（N）*
+
 ***辅助空间**：O（N）*
 
 

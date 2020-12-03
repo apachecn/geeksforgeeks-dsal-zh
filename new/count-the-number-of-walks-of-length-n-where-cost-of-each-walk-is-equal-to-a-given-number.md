@@ -3,7 +3,9 @@
 > 原文： [https://www.geeksforgeeks.org/count-the-number-of-walks-of-length-n-where-cost-of-each-walk-is-equal-to-a-given-number/](https://www.geeksforgeeks.org/count-the-number-of-walks-of-length-n-where-cost-of-each-walk-is-equal-to-a-given-number/)
 
 给定一个加权的无向图，步长 N 和 CostX。任务是计算长度 N 的不同步长 W 的数量，以使 **Cost（W）= X** 。
+
 我们将步行的成本 W 定义为步行沿边的权重中的最大值。
+
 节点从 1 到 n 编号。 该图不包含任何多个边或自环。
 
 **示例**：
@@ -38,6 +40,7 @@
 > **输出**：12
 
 *   这个想法是要预先计算编号。 将所有可能成本的每个顶点的长度为 N 的步长存储在 2-D 矩阵中，我们将此矩阵称为 B.这些值可以通过在给定的无向图上运行 DFS 来计算。
+
     例如，
 
 ![](img/d452d734b482b1117bba3cd4f97b95f5.png)
@@ -45,7 +48,9 @@
 矩阵 B 的给定快照显示了存储在其中的值。 这里 B（i，j）表示不。 从顶点 i 开始的长度为 N 的步数具有步长 j 的代价。
 
 *   我们维护一维数组 **Maxedge** ，其中我们将长度为 N 的步行成本保持不变。当步行长度小于 N 且有一些成本 X 与 edge（ u，v）。
+
     我们为 **length == N** 设置了一个基本条件，为此我们更新了数组`B`并返回了调用。
+
 *   在计算矩阵 B 之后，我们只需将所有具有**成本= x** 的顶点的步数相加即可简单地计算步数。
 
 > Ans + = B [i] [x];

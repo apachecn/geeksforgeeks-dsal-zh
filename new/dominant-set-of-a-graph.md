@@ -3,7 +3,9 @@
 > 原文： [https://www.geeksforgeeks.org/dominant-set-of-a-graph/](https://www.geeksforgeeks.org/dominant-set-of-a-graph/)
 
 在图论中，图 G =（V，E）的支配集是 V 的子集 D，使得不在 D 中的每个顶点都与 D 的至少一个成员相邻。支配数是 a 中的顶点数。 G 的最小控制集。
+
 ![](img/e0fb6d9ab5aefed6b68e750109f9fdbd.png)
+
 示例：
 
 ```
@@ -16,13 +18,19 @@ Output :  The Dominant Set S= { a, d, f } or { e, c } and more.
 ```
 
 可以相信，可能没有找到所有图的最小控制集的有效算法，但是存在有效的近似算法。
+
 **算法**：
 
 *   首先，我们必须将集合“ S”初始化为空
+
 *   取连接顶点的图的任意边“ e”（例如 A 和 B）
+
 *   将 A 和 B 之间的一个顶点（假设 A）添加到集合 S 中
+
 *   删除连接到 A 的图形中的所有边
+
 *   返回第 2 步，并重复操作（如果图形中仍留有一些边）
+
 *   最终集 S 是图形的一个主导集
 
 ## C++

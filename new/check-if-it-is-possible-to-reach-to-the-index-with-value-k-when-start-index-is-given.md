@@ -20,12 +20,19 @@
 **方法 1 –使用 BFS** 下面讨论[广度优先搜索（BFS）](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)方法：
 
 *   将起始索引`S`作为源节点，并将其插入[队列](http://www.geeksforgeeks.org/queue-data-structure/)中。
+
 *   当队列不为空时，请执行以下操作：
+
     1.  从队列顶部弹出 **temp** 元素。
+
     2.  如果**临时**已被访问或它超出了绑定索引的数组，则转到步骤 1。
+
     3.  否则将其标记为已访问。
+
     4.  现在，如果 **temp** 是值为`K`的数组的索引，则打印**为“是”** 。
+
     5.  否则，从 temp 到**（temp + arr [temp]）**，**（temp – arr [temp]）**两个可能的目的地，并将其推入队列。
+
 *   如果在上述步骤之后未达到具有`K`值的索引，则打印**“否”** 。
 
 下面是上述方法的实现：
@@ -412,15 +419,21 @@ No
 ```
 
 **时间复杂度**：*O（N）*；
+
 **辅助空间**：*O（N）*
 
 **方法 2 –使用 DFS**：下面讨论[深度优先搜索（DFS）](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)方法：
 
 1.  初始化数组 **Visited []** ，以将访问顶点标记为 true。
+
 2.  从起始索引`S`开始，然后使用[递归](http://www.geeksforgeeks.org/recursion/)深入探索其他索引。
+
 3.  在每个递归调用中，我们检查该索引是否有效或以前没有访问过。 如果不是这样，则返回 false。
+
 4.  否则，如果该索引值为`K`，则返回 true。
+
 5.  否则，将该索引标记为已访问，并根据当前索引 i 递归处理 **i + arr [i]** 和 **i – arr [i]** 。
+
 6.  如果任何递归调用返回 true，则意味着我们可以到达值`K`的索引，并打印**“是”** 其他打印**“否”** 。
 
 下面是上述方法的实现：

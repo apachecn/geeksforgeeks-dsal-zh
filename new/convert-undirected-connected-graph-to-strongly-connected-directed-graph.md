@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/convert-undirected-connected-graph-to-strongly-connected-directed-graph/](https://www.geeksforgeeks.org/convert-undirected-connected-graph-to-strongly-connected-directed-graph/)
 
 给定`N`个顶点和`M`边的[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，任务是向给定的 M 边分配方向，以使图成为[强连通 组件](https://www.geeksforgeeks.org/strongly-connected-components/)。 如果图形无法转换为牢固连接的组件，则打印**“ -1”** 。
+
 **范例**：
 
 > **输入**：N = 5，Edges [] [] = {{0，1}，{0，2}，{1，2}，{1，4}，{2，3}，{ 3，4}}
@@ -30,10 +31,15 @@
 **方法**：我们知道在任何有向图中，只要该图的所有顶点都是某个循环的一部分，就可以说它在**强连接组件（SCC）**中。 当且仅当[图中包含任何桥](https://www.geeksforgeeks.org/bridge-in-a-graph/)时，给定的无向图才构成 SCC。 步骤如下：
 
 *   我们将使用数组 **mark []** 来存储 DFS 遍历期间的访问节点， **order []** 来存储访问节点的索引号，以及 **bridge_detect [] [** 以存储给定图中存在的任何桥。
+
 *   从顶点`1`开始 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)。
+
 *   遍历当前节点的[邻接列表](https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/)并执行以下操作：
+
     *   如果在调用 DFS 时再次遍历任何边，则忽略该边。
+
     *   如果子节点（**节点 u** ）的顺序大于父节点（**节点 v** ）的顺序，则忽略此当前边，就像 **Edges（v，u ）**已被处理。
+
     *   如果找到任何后边，则将当前父节点（**节点 v** ）的桥边更新为：
 
 ```
@@ -42,6 +48,7 @@
 ```
 
 *   否则，对当前子节点执行 DFS 遍历，然后对当前节点重复步骤 3。
+
 *   在更新 DFS 调用当前节点之后，将网桥更新为：
 
 ```
@@ -50,7 +57,9 @@ bridge_detect[v] = min(bridge_detect[u], bridge_detect[v])
 ```
 
 *   将当前的 **Edges（v，u）**对作为从节点 v 到节点 u 的有向边存储在对阵列中（例如 **arr [] []** ）。
+
 *   如果给定图中存在任何桥接，则打印**“ -1”** 。
+
 *   否则打印存储在 **arr [] []** 中的有向边。
 
 下面是上述方法的实现：

@@ -32,7 +32,9 @@ Note :  There are two possible MSTs, the other
 以下是使用 Kruskal 算法查找 MST 的步骤
 
 1.  按重量的递减顺序对所有边进行排序。
+
 2.  选择最小的边。 检查它是否与形成的生成树形成一个循环。 如果未形成循环，则包括该边。 否则，将其丢弃。
+
 3.  重复步骤 2，直到生成树中有（V-1）个边。
 
 以下是对我们使用 STL 实施 Kruskal 算法的一些关键点。
@@ -46,6 +48,7 @@ Note :  There are two possible MSTs, the other
     此处，在外部对（即<int>对）中，第一个元素对应于一条边的代价，而第二个元素本身就是一对，并包含两个边的顶点。</int>
 
 2.  使用内置的 [std :: sort](https://www.geeksforgeeks.org/sort-c-stl/) 以非降序对边进行排序； 默认情况下，sort 函数以非降序排序。
+
 3.  我们使用[联合查找算法](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)来检查当前边是否已添加到当前 MST 中，它是否构成了一个循环。 如果是，则将其丢弃，否则将其包含（联合）。
 
 **伪代码**：
@@ -253,9 +256,11 @@ int main()
 ```
 
 **优化**：
+
 上面的代码可以优化，以在所选边的数量变为 V-1 时停止 Kruskal 的主循环。 我们知道 MST 具有 V-1 边，并且在选择 V-1 边后没有点迭代。 我们没有添加此优化来使代码保持简单。
 
 **参考**：
+
 [Cormen Leiserson Rivest and Stein（CLRS）3 的算法简介](http://www.amazon.in/Introduction-Algorithms-Thomas-H-Cormen/dp/8120340078/ref=sr_1_1?ie=UTF8&qid=1459619144&sr=8-1&keywords=clrs)
 
 时间复杂度和逐步说明已在[上一篇有关 Kruskal 算法的文章中进行了讨论。](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)

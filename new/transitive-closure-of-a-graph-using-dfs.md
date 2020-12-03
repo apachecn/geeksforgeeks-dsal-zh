@@ -20,6 +20,7 @@ Transitive closure of above graphs is
 以下是算法的抽象步骤。
 
 1.  创建一个矩阵 tc [V] [V]，该矩阵最终将具有给定图的传递闭合。 将 tc [] []的所有条目初始化为 0。
+
 2.  为图的每个节点调用 DFS，以标记 tc [] []中的可达顶点。 在递归调用 DFS 时，如果在 tc [] []中已将相邻顶点标记为可达，则我们不会为相邻顶点调用 DFS。
 
 以下是上述想法的实现。 该代码使用输入图的邻接表表示，并构建矩阵 tc [V] [V]，使得如果从 u 可以到达 v，则 tc [u] [v]为真。
@@ -300,6 +301,7 @@ Transitive closure matrix is
 ```
 
 **参考**：
+
 [http://www.cs.princeton.edu/courses/archive/spr03/cs226/lectures/digraph.4up.pdf](http://www.cs.princeton.edu/courses/archive/spr03/cs226/lectures/digraph.4up.pdf)
 
 本文由 **Aditya Goel** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请发表评论。

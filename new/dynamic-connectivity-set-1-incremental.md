@@ -5,12 +5,15 @@
 动态连通性是一种数据结构，可动态维护有关图的已连接组件的信息。 用简单的话来说，假设有一个图 G（V，E），其中没有。 的顶点 V 是恒定的，但不是。 边 E 的变化是可变的。 可以通过三种方式更改边数
 
 1.  增量连接性：仅将边线添加到图形中。
+
 2.  递减连通性：仅从图形中删除边。
+
 3.  完全动态连接：边线可以删除也可以添加到图形中。
 
 在本文中，仅讨论**增量连接**。 主要有两个需要处理的操作。
 
 1.  一条边被添加到图形中。
+
 2.  关于两个节点 x 和 y 的信息，无论它们是否在相同的连接组件中。
 
 **示例**：
@@ -502,6 +505,7 @@ Yes
 每个操作的摊销时间复杂度为 O（alpha（n）），其中 alpha 是[逆阿克曼函数](https://en.wikipedia.org/wiki/Ackermann_function#Inverse)，几乎是恒定的。
 
 **参考**：
+
 [https://en.wikipedia.org/wiki/Dynamic_connectivity](https://en.wikipedia.org/wiki/Dynamic_connectivity)
 
 本文由 **Ayush Jha** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

@@ -23,6 +23,7 @@ and 5.
 ```
 
 这个想法是从给定的输入顶点（u）之一执行 BFS。 在执行 BFS 时，请维护一个 distance [n]数组，并将其对所有顶点初始化为零。 现在，假设在 BFS 期间，顶点 x 从队列中弹出，并且我们将所有相邻的未访问顶点（i）推回队列，同时我们应该更新 **distance [i] = distance [x] + 1;** 。
+
 最后，distance [v]给出 u 和 v 之间的最小边数。
 
 **算法**：
@@ -424,5 +425,6 @@ public static void Main(string []args)
 ```
 
 本文由 [Shivam Pradhan（anuj_charm）](https://www.facebook.com/anuj.charm)提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

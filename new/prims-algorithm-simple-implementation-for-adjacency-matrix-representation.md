@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/prims-algorithm-simple-implementation-for-adjacency-matrix-representation/](https://www.geeksforgeeks.org/prims-algorithm-simple-implementation-for-adjacency-matrix-representation/)
 
 我们已经讨论了 [Prim 算法以及图](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)的邻接矩阵表示的实现。
+
 如前一篇文章所述，在 [Prim 的算法](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)中，保留了两组，一组包含 MST 中已包含的顶点列表，另一组包含尚未包含的顶点。 在每次迭代中，我们都将连接两个集合的边中的最小权重边考虑在内。
 
 [先前的文章](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)中讨论的实现使用两个数组来找到连接这两个集合的最小权重边。 在这里，我们使用一个 inMST [V]。 如果顶点 i 包含在 MST 中，则 MST [i]的值将为 true。 在每一遍中，我们仅考虑那些边，以使该边的一个顶点包含在 MST 中，而另一个不包含。 选择一条边后，将两个顶点都标记为包含在 MST 中。

@@ -12,7 +12,9 @@ The Output for above example should be following edges in any order.
 ```
 
 如上例所示，我们在一个方向上添加了所有边，只是为了避免自己陷入循环。 这是解决这个问题的技巧。 我们以[拓扑顺序](https://www.geeksforgeeks.org/topological-sorting/)对所有节点进行排序，并创建从节点到右侧所有节点（如果尚未存在）的边。
+
 怎么说呢，不可能再增加边了？ 原因是我们从左到右添加了所有可能的边，如果要添加更多的边，我们需要从右到左做边，但是从右到左添加边我们肯定会创建一个循环，因为它的对应部分是从左到右 边已经被添加到图形中，创建循环不是我们所需要的。
+
 因此，解决方案如下进行，我们按拓扑顺序考虑节点，如果从左到右没有任何边，我们将创建它。
 
 下面是解决方案，我们打印了可以添加到给定 DAG 中的所有边，而无需进行任何循环。
@@ -272,5 +274,6 @@ if __name__=='__main__':
 ```
 
 本文由 [**Utkarsh Trivedi**](https://in.linkedin.com/in/utkarsh-trivedi-253069a7) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

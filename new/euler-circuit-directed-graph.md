@@ -11,8 +11,11 @@
 ![SCC](img/9e1c827b849f0553285ca6b86920c751.png)
 
 **如何检查有向图是否为欧拉式？**
+
 如果满足以下条件，则有向图具有欧拉循环（来源： [Wiki](http://en.wikipedia.org/wiki/Eulerian_path#Properties) ）
+
 1）所有非零度的顶点都属于单个[强连通分量[](https://www.geeksforgeeks.org/strongly-connected-components/) 。
+
 2）In 度等于每个顶点的 out 度。
 
 我们可以使用 [Kosaraju 基于 DFS 的简单算法](https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/)来检测单个连接的组件。
@@ -600,6 +603,7 @@ Given directed graph is eulerian
 上述实现的时间复杂度为 O（V + E），因为 [Kosaraju 的算法](https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/)需要 O（V + E）的时间。 运行 [Kosaraju 的算法](https://www.geeksforgeeks.org/connectivity-in-a-directed-graph/)后，我们遍历所有顶点，并比较度数和度数，这需要 O（V）时间。
 
 请参阅以下内容作为此应用程序。
+
 [查找给定的字符串数组是否可以链接形成一个圆](https://www.geeksforgeeks.org/given-array-strings-find-strings-can-chained-form-circle/)。
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。

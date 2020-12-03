@@ -3,7 +3,9 @@
 > 原文： [https://www.geeksforgeeks.org/coloring-a-cycle-graph/](https://www.geeksforgeeks.org/coloring-a-cycle-graph/)
 
 **循环：-**循环是一条边和顶点的路径，其中顶点可以从其自身到达。 换句话说，这是一次封闭式步行。
+
 **偶数周期：-**其中存在偶数个顶点的数被称为偶数周期。
+
 **奇数循环：-**其中存在奇数个顶点的奇数循环被称为。
 
 给定循环图中的顶点数。 任务是确定为图形着色所需的颜色数，以使没有两个相邻的顶点具有相同的颜色。
@@ -25,15 +27,19 @@ Output : No. of colors require is: 2
 ```
 
 **示例 1：偶数周期**：顶点数= 4
+
 ![](img/0ce8abc1f3366b98a40ab9b20a0a2f77.png)
 
 所需颜色= 2
+
 ![](img/f20c2802b13db54d94a793a06bc50848.png)
 
 **示例 2：奇周期**：顶点数= 5
+
 ![](img/060606b16e9b2cf9e8ac9582321b7e45.png)
 
 所需颜色= 3
+
 ![](img/08cf65dd8111b8128baca91d7e0ad460.png)
 
 ## C++

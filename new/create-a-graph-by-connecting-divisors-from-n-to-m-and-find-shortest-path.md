@@ -22,8 +22,11 @@
 **方法**：的想法是[找到除自身以外的每个数字中最大的因子](https://www.geeksforgeeks.org/largest-divisor-for-each-element-in-an-array-other-than-1-and-the-number-itself/)，并通过连接这些因子创建图，然后找到它们之间的最短路径。 步骤如下：
 
 1.  找到`M`的最大公因数并将其存储并设置为`M`。
+
 2.  现在，在`M`不等于 1 之前，请重复上述步骤，并将生成的因子存储在数组 **mfactor []** 中。
+
 3.  以`N`为数字，重复**步骤 1** 和**步骤 2** ，并将生成的因子存储在数组 **nfactor []** 中。
+
 4.  现在，遍历两个数组 **mfactor []** 和 **mfactor []** ，并打印最短路径。
 
 下面是上述方法的实现：
@@ -612,6 +615,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（log（max（M，N））*
+
 ***辅助空间**：O（N）*
 
 

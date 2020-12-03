@@ -7,6 +7,7 @@
 ![negative_cycle](img/425a4d791640aa1b3e6d0c72a65b71dd.png)
 
 在图表的各种应用中都可以找到负权重。 例如，如果您沿着路径行进，则无需为路径付费，而可以得到一些好处。
+
 示例：
 
 ```
@@ -26,12 +27,19 @@ The graph contains a negative cycle.
 这个想法是使用 [Bellman Ford 算法](https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/)。
 
 下面是算法查找，是否可以从给定来源获得负负重循环。
+
 **1）**初始化从源到所有顶点的距离为无穷大，到源自身的距离为 0。创建大小为| V |的数组 dist []。 除了 dist [src]（其中 src 是源顶点）之外的所有值都为无穷大。
+
 **2）**此步骤计算最短距离。 跟随| V | -1 次，其中| V | 是给定图中的顶点数。
+
 ….. **a）**对每个边 uv 执行以下操作
+
 ………………如果 dist [v] > dist [u] +边 uv 的权重，则更新 dist [v]
+
 ………………….dist [v] = dist [u] +边 uv 的权重
+
 **3）**此步骤报告在权重周期中是否存在负的权重周期 图形。 对每个边 u-v 执行以下操作
+
 ……如果 dist [v] > dist [u] +边 uv 的权重，则“图形包含负权重周期”
 
 第 3 步的想法是，如果图形不包含负权重循环，则第 2 步可确保最短距离。 如果我们再遍历所有边一次，并且获得任意顶点的较短路径，那么权重周期将为负。
@@ -330,11 +338,13 @@ No
 ```
 
 **它是如何工作的？**
+
 如 [Bellman Ford 算法](https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/)中所讨论的，对于给定源，它首先计算路径中最多具有一个边的最短距离。 然后，它计算出带有 2 个边的最短路径，依此类推。 在第 i 次外循环迭代之后，将计算最多 i 个边的最短路径。 可以有最大| V |。 –在任何简单路径中都有 1 条边，这就是为什么外循环运行| v |的原因 – 1 次。 如果存在负的权重循环，则再进行一次迭代将缩短路径。
 
 ![](img/b253bca4a058ab4f01efa8d110c145e2.png)
 
 **如何处理断开的图形（如果无法从源到达循环）？**
+
 如果断开给定图形的连接，上述算法和程序可能无法正常工作。 当所有顶点都可以从源顶点 0 到达时，它就可以工作。
 
 ## C++
@@ -712,5 +722,6 @@ No
 [**使用 Floyd Warshall**](https://www.geeksforgeeks.org/detecting-negative-cycle-using-floyd-warshall/) 检测负周期
 
 本文由 **kartik** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

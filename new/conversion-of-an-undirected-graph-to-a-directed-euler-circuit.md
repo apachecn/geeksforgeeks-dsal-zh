@@ -26,8 +26,11 @@
 **方法**：
 
 1.  First, we need to make sure the [given Undirected Graph is Eulerian or not](https://www.geeksforgeeks.org/eulerian-path-and-circuit/). If the undirected graph is not Eulerian we cannot convert it to a Directed Eulerian Graph.
+
     *   要检查它，我们只需要计算每个节点的度数即可。 如果所有节点的**度**为**甚至**且不等于 0，则该图为欧拉式。
+
 2.  We will be using [Depth First Search Traversal](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) to assign the directions.
+
     *   在遍历时，我们将设置从父对象到子对象的边的方向。 我们将维护一个地图，以确保仅对边进行一次遍历。
 
 下面是上述算法的实现：
@@ -158,6 +161,7 @@ int main()
 ```
 
 ***时间复杂度**：O（（V + E）* log（E））
+
 **空间复杂度**：O（max（V，E））*
 
 

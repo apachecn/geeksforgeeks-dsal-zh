@@ -168,6 +168,7 @@ int main()
 ```
 
 **时间复杂度**：O（（N + M）* logN），其中 N 是节点数，M 是边数。
+
 **辅助空间**：O（N + M）
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)

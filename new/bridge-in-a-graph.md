@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/bridge-in-a-graph/](https://www.geeksforgeeks.org/bridge-in-a-graph/)
 
 无向连接图中的边是桥，如果移除它会断开图的连接。 对于断开的无向图，定义相似，桥是边移除，从而增加了断开的组件数。
+
 与[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)相似，网桥表示连接的网络中的漏洞，对于设计可靠的网络很有用。 例如，在有线计算机网络中，铰接点指示关键计算机，而网桥指示关键电线或连接。
 
 以下是一些示例图，其中的桥用红色突出显示。
@@ -10,16 +11,21 @@
 ![Bridge1](img/d3cbe238e5fd85cf5bf27779e6a25080.png) ](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Bridge1.png) [ ![Bridge2](img/0fe1908006c211a7e35358b1cdf0277b.png) ](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Bridge2.png) [ ![Bridge3](img/3c3e3a9f1d8302eab53de4ffde5f17ca.png)
 
 **如何找到给定图中的所有桥？**
+
 一种简单的方法是一个接一个地删除所有边，并查看是否去除边会导致图形断开。 以下是连接图的简单方法步骤。
 
 1）对于每个边（u，v），执行以下操作
+
 …..a）从图形
+
 中删除（u，v）..…b）查看图形是否保持连接状态（我们可以使用 BFS 或 DFS）
+
 …..c）将（u，v）添加回图形。
 
 对于使用邻接表表示的图，上述方法的时间复杂度为 O（E *（V + E））。 我们可以做得更好吗？
 
 **一种 O（V + E）算法，用于查找所有桥梁**
+
 这个想法类似于 [O（V + E）用于铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)的算法。 我们对给定的图形进行 DFS 遍历。 在 DFS 树中，如果不存在任何其他选择来从 u 植根于 v 的子树中到达 u 或 u 的祖先，则边（u，v）（u 是 DFS 树中 v 的父级）被桥接。如[先前的文章](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)，值 low [v]表示从以 v 为根的子树可访问的最早访问顶点。*边（u，v）成为桥的条件是“ low [v] > disc [u]”* 。
 
 以下是上述方法的 C ++和 Java 实现。
@@ -590,9 +596,13 @@ Bridges in third graph
 **时间复杂度**：上面的功能是带有附加数组的简单 DFS。 因此，时间复杂度与 DFS 相同，对于图的邻接表表示，它的时间复杂度为 O（V + E）。
 
 **参考**：
+
 [https://www.cs.washington.edu/education/courses/421/04su/slides/artic.pdf](https://www.cs.washington.edu/education/courses/421/04su/slides/artic.pdf)
+
 [http： //www.slideshare.net/TraianRebedea/algorithm-design-and-complexity-course-8](http://www.slideshare.net/TraianRebedea/algorithm-design-and-complexity-course-8)
+
 [http://faculty.simpson.edu/lydia.sinapova/www/cmsc250/LN250_Weiss/ L25-Connectivity.htm](http://faculty.simpson.edu/lydia.sinapova/www/cmsc250/LN250_Weiss/L25-Connectivity.htm)
+
 [http://www.youtube.com/watch?v=bmyyxNyZKzI](http://www.youtube.com/watch?v=bmyyxNyZKzI)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。

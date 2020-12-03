@@ -9,33 +9,49 @@
 我们已经讨论了 [Kosaraju 用于强连接组件](https://www.geeksforgeeks.org/strongly-connected-components/)的算法。 先前讨论的算法需要图的两个 DFS 遍历。 在这篇文章中，讨论了 [Tarjan 的算法](http://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm)，该算法仅需要遍历一个 DFS。
 
 Tarjan 算法基于以下事实：
+
 1\. DFS 搜索产生 DFS 树/林
+
 2.强连接的组件形成 DFS 树的子树。
+
 3.如果可以找到此类子树的头，则可以打印/存储该子树中的所有节点（包括头），这将是一个 SCC。
+
 4.从一个 SCC 到另一个 SCC 没有后边（可以有交叉边，但是在处理图形时将不使用交叉边）。
 
 为了找到 SCC 的头部，我们计算了椎间盘和低位阵列（如[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)，[桥](https://www.geeksforgeeks.org/bridge-in-a-graph/)，[双连接组件](https://www.geeksforgeeks.org/biconnectivity-in-a-graph/)一样）。 如前几篇文章中所述，low [u]表示可以从以 u 为根的子树中找到的最早访问的顶点（发现时间最短的顶点）。 如果 disc [u] = low [u]，则节点 u 为头。
 
 下图说明了该方法：
+
 ![](img/4e27ee09b250ab3075ad39165a6565e7.png)
 
 强连通组件仅与有向图有关，而 Disc 和 Low 值与有向图和无向图都有关，因此在上图中，我们采用了无向图。
 
 在上图中，我们显示了一个图及其 DFS 树之一（同一图上可能有不同的 DFS 树，具体取决于遍历边的顺序）。
+
 在 DFS 树中，连续箭头是树边，而虚线箭头是后边（ [DFS 树边](http://en.wikipedia.org/wiki/Depth-first_search#Output_of_a_depth-first_search)
+
 每个节点的 Disc 和 Low 值在图中显示为（Disc / Low）。 HTG4] **光盘**：这是遍历 DFS 时访问节点 1 <sup>st</sup> 时间的时间，对于 DFS 树中的节点 A，B，C，..，J，光盘值 是 1，2，3，..，10。
+
 **低**：在 DFS 树中，树的边将我们从祖先节点转到其后代之一，例如，从节点 C 到树 边沿可以将我们带到节点 G，节点 I 等，后沿可以将我们从后代节点向后移到其祖先之一，例如，从节点 G，后沿可以将我们带到 E 或 C。 将树和后边放在一起，那么我们可以看到，如果从一个节点开始遍历，则可以通过树边向下穿过树，然后通过后边向上穿过，例如，从节点 E 可以向下到 G 和 然后上升到 C。类似地，从 E，我们可以下降到 I 或 J a 然后上升到 F。节点的“低”值通过该节点的子树告诉最高可达到的祖先（具有最小的 Disc 值）。 因此，对于任何节点，“低”值始终等于其“光盘”值（节点是其自身的祖先）。 然后我们查看它的子树，看看是否有任何节点可以将我们带到其任何祖先。 如果子树中有多个后边将我们带到不同的祖先，则我们选择具有最小 Disc 值（即最高的一个）的后边。 如果我们看节点 F，它有两个子树。 带有节点 G 的子树将我们带到 E 和 C。另一个子树将我们带回到 F。 在这里，最高的祖先是 C，其中 F 可以到达，因此 F 的低值是 3（C 的 Disc 值）。
+
 根据以上讨论，应该清楚 B，C 和 D 的低值为 1（因为 A 是 B，C 和 D 可以到达的最高节点）。 同样，E，F，G 的低值是 3，H，I，J 的低值是 6。
 
 对于任何节点 u，当 DFS 启动时，会将 Low 设置为其 Disc 1 <sup>st</sup> 。
+
 然后稍后将在 DFS 的每个子 v 上逐一执行，u 的低值可以将其更改为两种情况：
+
 **Case1（树边）**：如果节点 v 不是 已经访问过，然后在 v 的 DFS 完成之后，low [u]和 low [v]的最小值将更新为 low [u]。
+
 low [u] = min（low [u]，low [v]）;
+
 **情况 2（后边）**：当子 v 已被访问时，low [u]和 Disc [v]的最小值将更新为 low [u]。
+
 low [u] = min（low [u]，disc [v]）;
+
 在第二种情况下，我们可以取 low [v]代替 disc [v]吗？ 。 答案是**否**。 如果您认为答案为何为**否**，则您可能已经了解了低和碟片概念。
 
 ![edge-types](img/9cd8757e193da9fcca2443569d467807.png) 
+
 相同的低和圆盘值有助于解决其他图形问题，例如[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)，[桥](https://www.geeksforgeeks.org/bridge-in-a-graph/)和[双向连接组件](https://www.geeksforgeeks.org/biconnectivity-in-a-graph/)。
 
 为了跟踪植根于头部的子树，我们可以使用堆栈（在访问时保持推送节点）。 找到头节点后，从堆栈中弹出所有节点，直到您离开堆栈为止。

@@ -9,10 +9,15 @@
 **工作**：
 
 *   在节点上执行 DFS 遍历，以便在遇到强连接组件的子树时将其删除。
+
 *   然后分配两个值：
+
     *   第一个值是第一次浏览节点时的计数器值。
+
     *   第二值存储从初始节点可到达的最低节点值，该节点不是另一个 **SCC** 的一部分。
+
 *   探索节点时，将它们压入[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)中。
+
 *   如果有节点的任何未开发子节点，则对其进行探索，并分别更新分配的值。
 
 下面是使用 Tarjan 算法查找给定图形的 SCC 的程序：
@@ -203,10 +208,15 @@ int main()
 **工作**：
 
 *   在给定的图形上执行 DFS 遍历，并跟踪每个节点的完成时间。 可以通过使用[堆栈](https://www.geeksforgeeks.org/stack-data-structure/)来执行此过程。
+
 *   当在图形上运行 DFS 遍历的过程完成时，将源顶点放在堆栈上。 这样，完成时间最高的节点将位于堆栈的顶部。
+
 *   [通过使用](https://www.geeksforgeeks.org/transpose-graph/)[邻接表](https://www.geeksforgeeks.org/graph-and-its-representations/)反转原始图。
+
 *   然后在反向图上执行另一个 DFS 遍历，将源顶点作为堆栈顶部的顶点。 当在反转图上运行的 DFS 完成时，所有被访问的节点将形成一个紧密连接的组件。
+
 *   如果剩余任何节点或不访问任何节点，则表示图中存在多个强连接的组件。
+
 *   因此，从堆栈顶部弹出顶点，直到找到有效的未访问节点。 在所有当前未访问的节点中，这将具有最高的完成时间。
 
 下面是使用 Kosaraju 的算法查找给定图形的 SCC 的程序：
@@ -398,9 +408,11 @@ int main()
 ```
 
 **<u>时间复杂度</u>**：
+
 Tarjan 算法和 Kosaraju 算法的时间复杂度为 **O（V + E）**，其中`V`表示一组顶点，`E`表示图形的边集。 Tarjan 的算法的常数因子比 Kosaraju 的算法低得多。 在 Kosaraju 的算法中，图形的[遍历至少 2 次，因此常数因子可以是两倍。 在执行第二个 DFS 时，我们可以使用 Kosaraju 的算法打印正在进行的 **SCC** 。 在执行 Tarjan 算法时，找到 **SCC** 子树的头后，需要花费更多时间来打印 **SCC** 。](https://www.geeksforgeeks.org/algorithms-gq/graph-traversals-gq/)
 
 **<u>总结</u>**：
+
 两种方法具有相同的线性时间复杂度，但是 **SCC** 计算的技术或过程完全不同。 Tarjan 的方法仅取决于 **DFS** 中的节点记录来对图进行分区，而 Kosaraju 的方法在图上执行两个 DFS（如果要保持原始图不变，则执行 3 DFS），并且非常相似 查找图的拓扑排序的方法。
 
 

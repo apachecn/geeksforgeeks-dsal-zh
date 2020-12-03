@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/count-of-all-cycles-without-any-inner-cycle-in-a-given-graph/](https://www.geeksforgeeks.org/count-of-all-cycles-without-any-inner-cycle-in-a-given-graph/)
 
 给定**无向图**，该图由编号为 **[0，N-1]** 和`E`边的`N`个顶点组成。 周期数，以使一个周期的任何顶点子集不会形成另一个周期。
+
 **范例**：[
 
 > **输入**：N = 2，E = 2，边沿= [{0，1}，{1，0}]
@@ -24,6 +25,7 @@
 > 不考虑诸如 5-> 0-> 2-> 1-> 5 之类的循环，因为它包含内部循环{5-> 0-> 1}和{0-> 1-> 2}。
 
 **方法**：
+
 由于 V 顶点需要 V 边以形成 1 个周期，因此可以使用以下公式表示所需的周期数：
 
 ```
@@ -39,6 +41,7 @@
 > {5，0，1} ，{0，1，2}，{3，0，2}和{1，2，4}。
 
 此公式还涵盖单个顶点可能具有自环的情况。
+
 以下是上述方法的实现：
 
 ## C++
@@ -205,6 +208,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（E）*
+
 ***辅助空间**：O（N）*
 
 

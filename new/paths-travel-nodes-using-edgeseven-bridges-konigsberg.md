@@ -28,9 +28,11 @@ Output : "No Solution"
 ```
 
 它是图论中最著名的问题之一，被称为“柯尼斯堡七桥”问题。 1735 年，著名数学家莱昂哈德·欧拉（Leonhard Euler）解决了这个问题。这个问题也被认为是图论的开端。
+
 当时的问题是：普鲁士的克尼格斯堡市周围有 7 座桥梁，连接 4 个土地。 是否有任何方法可以从任何地方出发并穿过每座桥梁一次且只有一次？ 请参阅[这些维基百科图片](https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg#/media/File:7_bridges.svg)以获得更多清晰度。
 
 欧拉首先引入图论来解决这个问题。 他将每个区域视为图形的一个节点，并将它们之间的每个桥视为它们之间的边。 现在，他计算了该图中是否存在任何[欧拉路径](https://www.geeksforgeeks.org/mathematics-euler-hamiltonian-paths/)。 如果有一条欧拉路径，那么就没有解决方案。
+
 这里的问题是 1735 年问题的广义版本。
 
 下面是实现：

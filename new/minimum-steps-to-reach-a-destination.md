@@ -3,24 +3,35 @@
 > 原文： [https://www.geeksforgeeks.org/minimum-steps-to-reach-a-destination/](https://www.geeksforgeeks.org/minimum-steps-to-reach-a-destination/)
 
 给定一个从-infinity 到+ infinity 的数字线。 您从 0 开始，可以向左或向右移动。 条件是，在我采取行动时，您将采取步骤。
+
 a）确定是否可以达到给定的数字 x
+
 b）找到达到给定数字 x 的最佳方法（如果我们确实可以达到）。 例如，可以 2 步达到 3，（0，1）（1，3）和 4 可以 3 步达到（0，-1），（-1，1）（1，4）。
+
 来源： [Flipkart 面试问题](https://www.geeksforgeeks.org/flipkart-interview-experience-set-30for-sde-2/)
 
 需要注意的重要一点是，我们可以到达任何目的地，因为总是可以进行长度为 1 的移动。在任何步骤 i，我们都可以向前移动 i，然后向后移动 i +1。
+
 下面是一个递归解决方案 作者 Arpit Thapar [在这里](https://www.geeksforgeeks.org/flipkart-interview-experience-set-30for-sde-2/)。
+
 1）由于距 0 的+ 5 和– 5 的距离相同，因此我们找到了目的地绝对值的答案。
 
 2）我们使用一个递归函数作为参数：
+
 i）源顶点
+
 ii）最后一步的值
+
 iii）目标
 
 3）如果在任何时候源顶点=目标； 返回步骤数。
 
 4）否则我们可以朝两个可能的方向前进。 在两种情况下，都应采取最少的步骤。
+
 从任何顶点我们可以转到：
+
 （电流源+最后一步+1）和
+
 （电流源–最后一步-1）
 
 5）如果在任何时候我们位置的绝对值超过目的地的绝对值，那么很直觉的是，从这里不可能出现最短路径。 因此，我们将步长设为 INT_MAX，以便当我将两种可能性中的最小值时，将消除这一可能性。
@@ -289,6 +300,7 @@ No. of steps required to reach 11 is 5
 ```
 
 感谢 Arpit Thapar 提供上述算法和实现。
+
 **优化解决方案**：[找出在无限线上达到目标的最小移动量](https://www.geeksforgeeks.org/find-minimum-moves-reach-target-infinite-line/)
 
 本文由 Abhay 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。

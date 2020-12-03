@@ -16,6 +16,7 @@ Output: maximum length of cable = 12
 ```
 
 **方法 1（简单 DFS）**
+
 我们为给定的城市地图创建无向图，并从每个城市进行 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 以查找最大电缆长度。 在遍历时，我们寻找到达当前城市的电缆总长度，如果没有访问它的相邻城市，则为其调用 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，但是如果当前节点访问了所有相邻城市，则更新 max_length 的值 如果 max_length 的先前值小于电缆总长度的当前值。
 
 ## C++

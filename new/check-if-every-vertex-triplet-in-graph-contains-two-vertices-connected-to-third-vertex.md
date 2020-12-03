@@ -21,7 +21,9 @@
 **方法**：请按照以下步骤解决问题–
 
 *   [通过](https://www.geeksforgeeks.org/algorithms-gq/graph-traversals-gq/) [DFS 遍历技术](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)从任何组件遍历图形，并维护两个变量以存储组件最小值和组件最大值。
+
 *   将每个分量的最大值和最小值存储在向量中。
+
 *   现在，如果任意两个分量的最小值和最大值间隔中都有一个交集，则将存在一个有效的（a
 
  **下面是上述方法的实现
@@ -375,6 +377,7 @@ Yes
 ```
 
 **时间复杂度**：O（N + E）
+
 **辅助空间**：O（N）
 
 

@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/hypercube-graph/](https://www.geeksforgeeks.org/hypercube-graph/)
 
 给出的输入是图 n 的顺序（连接到节点的最大边数），您必须在 n 阶的 Hypercube 图中找到顶点数。
+
  **示例**：
 
 ```

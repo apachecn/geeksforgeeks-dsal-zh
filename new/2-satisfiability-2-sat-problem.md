@@ -7,15 +7,19 @@
 布尔可满足性或简单地 **SAT** 是确定布尔公式是否可满足或无法满足的问题。
 
 *   **可满足**：如果可以为布尔变量分配值，从而使公式变为 TRUE，则可以说该公式是可满足的。
+
 *   **无法满足**：如果无法分配此类值，那么我们说该公式无法满足。
 
 **示例**：
 
 *   ![F = A \wedge \bar{B}](img/50c51e662a0fb2798ad3add9374154d2.png "Rendered by QuickLaTeX.com")是可满足的，因为 A = TRUE 而 B = FALSE 使 F = TRUE。
+
 *   ![G = A \wedge \bar{A}](img/411b9c148767992b00beb8f8151c77a3.png "Rendered by QuickLaTeX.com") , is unsatisfiable, because:
 
     | ![A](img/cc10d3b72431cdd6ba563d3cc2a57d7f.png "Rendered by QuickLaTeX.com") | ![\bar{A}](img/996972300e2bf0ed25f5357e4ce5c403.png "Rendered by QuickLaTeX.com") | ![G](img/96d783c7d76e5834a097a794b3cf074e.png "Rendered by QuickLaTeX.com") |
+
     | 真正 | 假 | 假 |
+
     | 假 | 真正 | 假 |
 
 **注意**：布尔可满足性问题是 [NP 完整](https://en.wikipedia.org/wiki/NP-completeness)（有关证明，请参考< a href =“ https://en.wikipedia.org/wiki/Cook%E2%80 ％93Levin_theorem“ target =” _ b ![](img/a3df0d612e936b5537c2c574fb95019b.png) lank“ > Cook's Theorem）。
@@ -26,6 +30,7 @@
 > 。
 
 为了更好地理解这一点，首先让我们看看什么是合取范式（CNF）或也称为和积（POS）。
+
 **CNF**：CNF 是子句的连接（AND），其中每个子句都是析取（OR）。
 
 现在，2-SAT 将 SAT 问题限制为仅表示为 CNF 且每个子句仅具有 **2 项**（也称为 **2-CNF** ）的布尔公式。
@@ -56,6 +61,7 @@ Output : The given expression is unsatisfiable.
 **![(A \vee B)](img/aaba6a74be9243f2fee1e4717f059db6.png "Rendered by QuickLaTeX.com") = TRUE**
 
 *   如果 A = 0，则 B 必须为 1，即![(\bar{A} \Rightarrow B)](img/37a6b7075649a42724d96717bd22c512.png "Rendered by QuickLaTeX.com")
+
 *   如果 B = 0，则 A 必须为 1，即![(\bar{B} \Rightarrow A)](img/567f67cd09f4e03d0887b7f91b53ef35.png "Rendered by QuickLaTeX.com")
 
 从而，
@@ -65,13 +71,17 @@ Output : The given expression is unsatisfiable.
 ```
 
 现在，我们可以将 CNF 表示为蕴涵。 因此，我们为 CNF 的每个子句创建一个具有 2 条边的隐含图。
+
 ![(A \vee B)](img/aaba6a74be9243f2fee1e4717f059db6.png "Rendered by QuickLaTeX.com")在隐含图中表示为![edge(\bar{A} \rightarrow B) \ & edge(\bar{B} \rightarrow A)](img/0b469a9f6893c3f44bc038614a2ad9c1.png "Rendered by QuickLaTeX.com")
+
 。因此，对于带有'm'子句的布尔公式，我们制作具有以下含义的隐含图：
 
 *   每个子句 2 条边，即“ 2m”条边。
+
 *   布尔公式中涉及的每个布尔变量 1 个节点。
 
 让我们看一个蕴涵图的例子。
+
 **![F = (x1 \vee x2) \wedge (\bar{x2} \vee x3) \wedge (\bar{x1} \vee \bar{x2}) \wedge (x3 \vee x4) \wedge (\bar{x3} \vee x5) \wedge (\bar{x4} \vee \bar{x5}) \wedge (\bar{x3} \vee x4)](img/96b3fa0487a0efc58ae6bc3303412449.png "Rendered by QuickLaTeX.com")**
 
 ![](img/65cd9961ac488bce964909fbcc63db4b.png)
@@ -103,13 +113,19 @@ Thus, there is no possible assignment in such a case.
 ```
 
 **结论**：如果任意两个变量![X](img/59b7a374463461b94c69694c7948bf35.png "Rendered by QuickLaTeX.com")和![\bar{X}](img/4984e36db71f55a531274f258b6f7956.png "Rendered by QuickLaTeX.com")处于循环中，即![path(\bar{A} \rightarrow B) \& path({B} \rightarrow A)](img/48eef735295e78678f653988e9d3b681.png "Rendered by QuickLaTeX.com")都存在，则 CNF 不能满足要求。 否则，可能存在分配并且 CNF 是可满足的。
+
 请注意，由于以下隐含属性，我们使用路径：
+
 如果我们具有![(A \Rightarrow B) \& (B \Rightarrow C),  then  A \Rightarrow C](img/0684baa4a07e52f5396f5fe776cad8ce.png "Rendered by QuickLaTeX.com")
+
 因此，如果我们在隐含图中有路径，则与具有 直接边。
 
 **实施观点的结论**：
+
 如果 X 和![\bar{X}](img/4984e36db71f55a531274f258b6f7956.png "Rendered by QuickLaTeX.com")都位于同一 SCC（牢固连接的组件）中，则 CNF 不能满足要求。
+
 有向图的强连接组件具有节点，因此可以从该 SCC 中的每个其他节点到达每个节点。
+
 现在，如果 X 和![\bar{X}](img/4984e36db71f55a531274f258b6f7956.png "Rendered by QuickLaTeX.com")位于同一 SCC 上，则我们肯定会出现![path(\bar{A} \rightarrow B) \& path({B} \rightarrow A)](img/48eef735295e78678f653988e9d3b681.png "Rendered by QuickLaTeX.com")，因此得出结论。
 
 可以使用 [Kosaraju 的算法](https://www.geeksforgeeks.org/strongly-connected-components/)在 O（E + V）中完成 SCC 的检查

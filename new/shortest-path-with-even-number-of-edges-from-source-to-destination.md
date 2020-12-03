@@ -27,6 +27,7 @@
 > 从 1（源节点）到 4（目标节点）没有偶数长度的路径。
 
 **方法**：
+
 创建一个新图形（ **G’**）。 对于初始图`G`中的每个节点`V`，创建两个新节点 **V_even** 和 **V_odd** 。
 
 > 此处， **V_odd** 将表示为（（V * 10）+ 1）， **V_even** 将表示为（（V * 10）+ 2）。
@@ -35,7 +36,9 @@
 现在，对于`G`中的每个边（ **U，V** ），在 **G'**，**（U_even，V_odd）**中添加两个新边 和**（U_odd，V_even）**。 最后，使用 [Dijkstra 最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)找到从**（source_even）**节点到**（destination_even）**节点的最短路径。
 
 对于输入 1（以上）中给出的图， **G'**可以表示为：
+
 ![Graph G'](img/30374498d27916be9bbe92bf95bc8541.png)
+
 从图 **G'**可以看出 从**（1_even）**到**（5_even）**的偶数长度路径。 因此，奇数长度的路径在 **G’**中分离，并且可以获得所需的最短路径。
 
 下面是上述方法的实现：

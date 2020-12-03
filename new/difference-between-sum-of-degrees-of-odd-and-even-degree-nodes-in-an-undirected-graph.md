@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/difference-between-sum-of-degrees-of-odd-and-even-degree-nodes-in-an-undirected-graph/](https://www.geeksforgeeks.org/difference-between-sum-of-degrees-of-odd-and-even-degree-nodes-in-an-undirected-graph/)
 
 给定[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，其中 **N 个**顶点且 **M 个**边，任务是找到奇数度节点和偶度度节点的度和之间的绝对差 在无向图中。
+
 **范例**：
 
 > **输入**：N = 4，边[] [] = {{1，2}，{1，3}，{1，4}，{2，3}，{2，4}，{ 3，4}}
@@ -28,6 +29,7 @@
 **方法**：
 
 1.  对于每个顶点，度可以通过给定图形在相应顶点处的 [](https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/) ，[邻接表](https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/)的长度来计算。
+
 2.  计算奇数度节点和偶数度节点的度数之和，然后打印出差异。
 
 下面是上述方法的实现：

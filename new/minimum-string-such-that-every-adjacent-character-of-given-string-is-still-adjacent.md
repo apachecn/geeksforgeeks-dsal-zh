@@ -20,6 +20,7 @@
 **方法**：想法是准备一个[图](https://www.geeksforgeeks.org/graph-and-its-representations/)类似的结构，其中图的每个相邻节点表示字符串的相邻字符。 在两种情况下，无法使用这种类型的字符串–
 
 *   一个字符包含三个或更多相邻字符。
+
 *   如果两个字符不只有一个相邻字符，则长度为 1 的字符串除外。
 
 如果满足上述条件的字符串为真，则只需[用](https://www.geeksforgeeks.org/algorithms-gq/graph-traversals-gq/)[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)遍历图，则遍历的路径将是最小长度的字符串。 DFS 的源顶点将是只有一个相邻字符的任何一个字符。

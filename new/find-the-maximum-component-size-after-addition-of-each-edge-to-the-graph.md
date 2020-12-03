@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/find-the-maximum-component-size-after-addition-of-each-edge-to-the-graph/](https://www.geeksforgeeks.org/find-the-maximum-component-size-after-addition-of-each-edge-to-the-graph/)
 
 给定一个数组 **arr [] []** ，该数组包含要用来构造具有`N`个节点的无向​​图`G`的图的边， 在构造图形时，在添加每个边后找到图形中的最大组件尺寸。
+
 **范例**：
 
 > **输入**：N = 4，arr [] [] = {{1，2}，{3，4}，{2，3}}
@@ -250,8 +251,11 @@ public static void Main(string[] args)
 **高效方法**：的想法是使用[不交集（按秩和路径压缩合并）](https://www.geeksforgeeks.org/disjoint-set-data-structures/)的概念来更有效地解决该问题。
 
 *   每个节点最初在其内部都是不相交的集合。 随着边的添加，不相交的集合会合并在一起，形成更大的分量。 在不相交集合的实现中，我们将基于组件的大小来建立排名系统，即在执行两个组件的合并时，将较大的组件根作为合并操作之后的最终根。
+
 *   在每次添加边后找到最大大小分量的一种方法是遍历大小数组（size [i]表示节点'i'所属的分量的大小），但这在图中的节点数较少时效率很低 高。
+
 *   一种更有效的方法是将所有根的组件大小存储在某些有序的数据结构中，例如[集](https://www.geeksforgeeks.org/hashing-set-1-introduction/)。
+
 *   当两个组件合并时，我们要做的就是从集合中删除以前的组件大小，然后添加组合的组件大小。 因此，在每一步中，我们都可以找到对数复杂度最大的组件。
 
 下面是上述方法的实现：

@@ -20,8 +20,11 @@
 **方法**：在这里，我们需要保留相邻列表的两个副本，一个用于正向差异，另一个用于负向差异。 与 [Dijkstras 算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)一样，采用[优先级队列](https://www.geeksforgeeks.org/priority-queue-set-1-introduction/)，并一次保留四个变量，即，
 
 1.  **成本**：存储到当前节点为止的路径成本。
+
 2.  **阶段**：一个整数变量，用于指示下一步需要采取的元素，如果前一个值为负，则需要为正值，否则为负。
+
 3.  **权重**：最后访问的节点的权重。
+
 4.  **顶点**：上次访问的顶点。
 
 对于每个顶点，根据所需条件（阶段值）推入相邻的顶点。 请参阅代码以获得更好的理解。

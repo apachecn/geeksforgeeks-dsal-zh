@@ -3,7 +3,9 @@
 > 原文： [https://www.geeksforgeeks.org/path-rectangle-containing-circles/](https://www.geeksforgeeks.org/path-rectangle-containing-circles/)
 
 有一个 m * n 矩形矩阵，其左上（开始）位置为（1，1），右下（结束）位置为（m * n）。 有 k 个圆，每个圆的半径为 r。 查找是否有从头到尾的任何路径而不碰任何圆圈。
+
 输入包含 m，n，k，r 的值以及两个整数 X 和 Y 的数组，每个数组的长度为 k。 （X [i]，Y [i]）是第<sup>个第</sup>个圆的中心。
+
 **来源**：[Directi 访谈](https://www.geeksforgeeks.org/directi-interview-set-5-campus/)
 
 **示例**：
@@ -33,8 +35,11 @@ Output : Not Possible
 **算法**：
 
 1.  取大小为 m * n 的数组。 将所有单元格初始化为 0。
+
 2.  对于矩形的每个像元，检查它是否在任何圆内（通过计算该像元到每个圆的距离）。 如果它在任何圆圈内，请将该单元格的值更改为-1（“已阻止”）。
+
 3.  现在，从起始单元格开始应用 BFS，如果可以到达某个单元格，则将该单元格的值更改为 1。
+
 4.  如果结尾单元格的值为 1，则返回“可能”，否则返回“不可能”。
 
 下面是上述想法的实现：

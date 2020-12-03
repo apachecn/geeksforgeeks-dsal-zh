@@ -3,11 +3,13 @@
 > 原文： [https://www.geeksforgeeks.org/check-if-the-length-of-all-connected-components-is-a-fibonacci-number/](https://www.geeksforgeeks.org/check-if-the-length-of-all-connected-components-is-a-fibonacci-number/)
 
 给定具有`V`顶点和`E`边的无向图，任务是找到图的所有连接部分，并检查它们的每个长度是否都是**斐波那契数**。
+
 例如，考虑下图。
 
 ![](img/04b31f134d4b95d9099a2af641344cf3.png)
 
 如上所述，连接的组件的长度是 2、3 和 2，它们是斐波那契数。
+
 **示例**：[
 
 > **输入**：E = 4，V = 7
@@ -23,7 +25,9 @@
 > **说明**：连接的组件{1}，{2、3、4、5}，{6、7、8}，{9 的长度 ，10}分别为 1，`4`，3、2。
 
 **方法**：
+
 预计算斐波纳契数并将其存储在 HashSet 中。 如本文章[中所述，使用 DFS 方法遍历顶点并生成 Connected 组件。 检查所有长度是否都存在于预先计算的斐波那契数的 HashSet 中。
+
 以下是上述方法的实现：](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)
 
 ## C++
@@ -355,10 +359,15 @@ Yes
 ```
 
 **复杂度分析**：
+
 程序的整体复杂度主要由三个因素决定，即深度优先遍历，从 Fibonacci 容器中识别元素以及对 Fibonacci 进行预计算 顺序。 DFS 遍历的时间复杂度为 **O（E + V）**，其中 E 和 V 是图形的边和顶点。 需要花费 **O（1）**时间复杂度来检查 HashSet 中是否存在特定长度。 初始预计算的时间复杂度为 O（N），其中 N 是斐波那契数列所存储的数字。
+
 时间复杂度： *O（N）*。
+
 **有效方法**：
+
 该方法基本上避免了斐波那契预计算，并使用简单的公式来检查各个长度是否为斐波那契数。 检测 N 是否为斐波那契数的公式是找到 **5N <sup>2</sup> + 4** 和 **5N <sup>2</sup> – 4** 的值，以及 检查它们是否是**完美正方形**。 所述制剂是由 I Gessel 配制的，可以从[这个](http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibFormula.html#section5)链接中引用。 该程序的其余部分具有与上述类似的方法，即通过 DFS 遍历计算连接的组件。
+
 以下是上述方法的实现：
 
 ## C++
@@ -689,7 +698,9 @@ Yes
 ```
 
 **复杂度分析**：
+
 时间复杂度：O（V + E）
+
 此方法避免了较早的预先计算，并使用数学公式来检测各个长度是否为斐波那契数。 因此，可以在恒定时间 **O（1）**和恒定空间中实现计算，因为它避免了使用任何 HashSet 来存储斐波那契数。 因此，仅通过 DFS 遍历即可确定此方法中程序的整体复杂性。 因此，复杂度为 **O（E + V）**，其中 E 和 V 是无向图的边和顶点数。
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)

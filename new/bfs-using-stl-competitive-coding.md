@@ -18,6 +18,7 @@ In BFS, we start with a node.
 ```
 
 下面是一个从源顶点 1 开始的 BFS 示例。请注意，图形可能存在多个 BFS（甚至来自特定顶点）。
+
 ![](img/2937b8f5e49cbc777eff03ed060e459e.png)
 
 有关 BFS 的更多详细信息，请参阅此帖子的[。](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph)

@@ -3,10 +3,13 @@
 > 原文： [https://www.geeksforgeeks.org/level-ancestor-problem/](https://www.geeksforgeeks.org/level-ancestor-problem/)
 
 [级祖先问题](https://en.wikipedia.org/wiki/Level_ancestor_problem)是将给定的根树 T 预处理为数据结构的问题，该数据结构可以确定从树根到给定深度的给定节点的祖先。 这里，树中任何节点的**深度**是从树的根部到节点的最短路径上的边数。
+
 给定树表示为具有 n 个节点和 **n-1 个边**的**无向连通图**。
 
 解决上述查询的想法是使用**跳转指针算法**并在 **O（n log n）**时间和答案级别祖先查询中对树进行预处理。 logn）时间。 在跳转指针中，有一个从节点 N 到第 N 个第 j 个祖先的指针，对于
+
 j = 1、2、4、8，...，依此类推。 我们将这些指针称为跳转 <sub>N</sub> [i]，其中
+
 跳转 <sub>u</sub> [i] = LA（N，depth（N）– 2 <sup>i</sup> ）。
 
 当要求算法处理查询时，我们使用这些跳转指针反复跳转树。 跳转次数最多为 log n，因此可以在 O（logn）时间内回答查询。
@@ -14,6 +17,7 @@ j = 1、2、4、8，...，依此类推。 我们将这些指针称为跳转 <sub
 因此，我们存储每个节点的 **2 <sup>i</sup> 祖先**，并且还从树的根中找到每个节点的深度。
 
 现在我们的任务简化为找到节点 N 的第（depth（N）– 2 <sup>i</sup> ）个祖先。让我们将 X 表示为（depth（N）– 2 <sup>i</sup> ）并让[ X 的`b`位是由 s1，s2，s3，... sb 表示的**设置位**（1）。
+
 **X = 2 <sup>（s1）</sup> + 2 <sup>（s2）</sup> +…+ 2 <sup>（sb）</sup>**
 
 现在的问题是如何从树的根中找到每个节点的 2 个 <sup>j</sup> 祖先以及每个节点的深度？

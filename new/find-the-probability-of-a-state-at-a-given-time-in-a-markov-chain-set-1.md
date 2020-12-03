@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/find-the-probability-of-a-state-at-a-given-time-in-a-markov-chain-set-1/](https://www.geeksforgeeks.org/find-the-probability-of-a-state-at-a-given-time-in-a-markov-chain-set-1/)
 
 给定马尔可夫链 G，如果我们从时间 t = 0 的状态 S 开始，我们就有在时间 t = T 到达状态 F 的概率。
+
 A [Markov 链](https://en.wikipedia.org/wiki/Markov_chain)是一个随机过程 包括各种状态以及从一种状态迁移到另一种状态的可能性。 我们可以使用有向图来表示它，其中节点代表状态，边代表从一个节点到另一个节点的概率。 从一个节点移动到另一个节点需要花费单位时间。 对于每个节点，出局边的关联概率之和为 1。
 
 考虑给定的马尔可夫链（G），如下图所示：
@@ -343,6 +344,7 @@ after starting from 4 is 0.284992
 ```
 
 **时间复杂度**：O（N <sup>2</sup> * T）
+
 **空间复杂度**：O（N * T）
 
 

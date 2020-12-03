@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/nodes-with-prime-degree-in-an-undirected-graph/](https://www.geeksforgeeks.org/nodes-with-prime-degree-in-an-undirected-graph/)
 
 给定[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，其中 **N 个**顶点且 **M 个**边，任务是打印给定图的度为[素数的所有节点](https://www.geeksforgeeks.org/prime-numbers/) 。
+
 **范例**：
 
 > **输入**：N = 4，arr [] [] = {{1，2}，{1，3}，{1，4}，{2，3}，{2，4}，{ 3，4}}
@@ -27,7 +28,9 @@
 **方法**：
 
 1.  使用 Eratosthenes 的[筛网](http://www.geeksforgeeks.org/sieve-of-eratosthenes/)计算最多 10 <sup>5</sup> 的质数。
+
 2.  对于每个顶点，度可以通过给定图在相应顶点处的[邻接表](https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/)的长度来计算。
+
 3.  打印给定图的度为[质数](https://www.geeksforgeeks.org/prime-numbers/)的那些顶点。
 
 下面是上述方法的实现：

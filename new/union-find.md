@@ -3,16 +3,23 @@
 > 原文： [https://www.geeksforgeeks.org/union-find/](https://www.geeksforgeeks.org/union-find/)
 
 [*不相交集数据结构*](http://en.wikipedia.org/wiki/Disjoint-set_data_structure) 是一种数据结构，可跟踪划分为多个不相交（不重叠）子集的元素集。 [*联合查找算法*](http://en.wikipedia.org/wiki/Disjoint-set_data_structure) 是对这样的数据结构执行两个有用操作的算法：
+
 ***查找**：* 确定哪个 特定元素所在的子集。这可用于确定两个元素是否在同一子集中。
+
 ***联合**：* 将两个子集合并为一个子集。
+
 在这篇文章中，我们将讨论不交集数据结构的应用。 该应用程序将检查给定图是否包含循环。
+
 *联合查找算法*可用于检查无向图是否包含循环。 注意，我们已经讨论了用于检测周期的[算法。 这是基于*联合查找*的另一种方法。 此方法假定图表不包含任何自环。
+
 我们可以跟踪一维数组中的子集，我们称其为父级[]。
+
 让我们考虑下图：](http://www.geeksforgeeks.org/archives/18516) 
 
 ![cycle-in-graph](img/1ea01f69a0b830381c4c00cf41ed2aa6.png)
 
 对于每个边，使用边的两个顶点制作子集。 如果两个顶点都在同一子集中，则会找到一个循环。
+
 最初，父阵列的所有插槽均初始化为-1（意味着每个子集中只有一项）。
 
 ```
@@ -22,6 +29,7 @@
 ```
 
 现在一一处理所有边。
+
 *边 0-1：*查找顶点 0 和 1 所在的子集。 由于它们位于不同的子集中，因此我们将它们合并。 对于采用并集，请将节点 0 设为节点 1 的父级，反之亦然。
 
 ```
@@ -39,7 +47,9 @@
 ```
 
 *边沿 0-2：* 0 在子集 2 中，而 2 在子集 2 中。因此，包括此边沿将形成一个循环。
+
 0 的子集如何与 2 相同？
+
 0- > 1- > 2 // 1 是 0 的父级，2 是 1 的父级
 
 根据以上说明，以下是实现：
@@ -573,9 +583,14 @@ graph contains cycle
 ```
 
 请注意， *union（）*和 *find（）*的实现是幼稚的，在最坏的情况下需要 O（n）时间。 可以使用 *Union by Rank 或 Height* 将这些方法改进为 O（Logn）。 我们很快将在另一篇文章中讨论*排名*联盟。
+
 https://youtu.be/mHz-mx-8lJ8?list=PLqM7alHXFySEaZgcg7uRYJFBnYMLti-nh
+
 **相关文章**：
+
 [联合查找算法| 集合 2（按等级和路径压缩的并集） 第 2 组（Kruskal 的最小生成树算法）](http://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)，
+
 [作业排序问题| 第 2 组（使用不交集）](http://www.geeksforgeeks.org/job-sequencing-using-disjoint-set-union/)
+
 本文由 [Aashish Barnwal](https://www.facebook.com/barnwal.aashish) 编译，并由 GeeksforGeeks 团队进行了审查。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
 

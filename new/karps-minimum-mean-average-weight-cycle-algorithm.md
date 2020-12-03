@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/karps-minimum-mean-average-weight-cycle-algorithm/](https://www.geeksforgeeks.org/karps-minimum-mean-average-weight-cycle-algorithm/)
 
 给定带非负边权重的有向[强连接图](https://www.geeksforgeeks.org/strongly-connected-components/)。 我们将一个循环的平均权重定义为该循环的所有边权重之和除以 no。 的边。 我们的任务是在图表的所有有向循环中找到最小平均权重。
+
 **例如**：[
 
 ```
@@ -512,10 +513,16 @@ public static void Main(String[] args)
 ```
 
 在这里，没有循环的图形将返回值为-1。
+
 **参考**：
+
 [https://courses.csail.mit.edu/6.046/fall01/handouts/ps9sol.pdf](https://courses.csail.mit.edu/6.046/fall01/handouts/ps9sol.pdf)
+
 [https：/ /www.hackerearth.com/practice/notes/karp-minimum-mean-weighted-cycle/](https://www.hackerearth.com/practice/notes/karp-minimum-mean-weighted-cycle/)
+
 算法简介第三版，第 681 页，作者：Thomas H. Cormen，Charles E. Leiserson，Ronald L.Rivest 和 Clifford Stein
+
 本文由 **Ayush Jha** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，也可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

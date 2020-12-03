@@ -3,7 +3,9 @@
 > 原文： [https://www.geeksforgeeks.org/check-which-player-visits-more-number-of-nodes/](https://www.geeksforgeeks.org/check-which-player-visits-more-number-of-nodes/)
 
 给定具有`N`个节点的树。 两个玩家`A`和`B`分别从节点`1`和节点`N`开始。`A`可以访问到`A`已经访问过的节点的所有相邻节点，但是不能访问`B`已经访问过的任何节点，对于**也是如此 B** 也。
+
 访问更多城市的玩家获胜。 如果双方都发挥最佳，则找到获胜的玩家。
+
 **范例**：
 
 ```
@@ -19,7 +21,9 @@ Output: A wins
 ```
 
 **方法**：最佳解决方案是，播放器都开始访问位于连接节点`1`和节点`N`的路径中的节点。 这是因为一个玩家无法访问另一玩家已经访问过的节点，因此每个玩家都将尝试限制另一玩家可以访问的节点数。 然后，很容易计算每个玩家可以访问的节点数并找出获胜者。
+
 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 将用于找出两个节点之间的路径，并将它们一一标记为 1 或 2，A 标记为 1，B 标记为 2，然后将所有相邻的未访问节点标记为 各自的值，然后计算 A 和 B 的节点数。
+
 下面是上述方法的实现：
 
 ## C++

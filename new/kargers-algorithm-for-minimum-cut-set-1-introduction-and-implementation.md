@@ -3,9 +3,11 @@
 > 原文： [https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-1-introduction-and-implementation/](https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-1-introduction-and-implementation/)
 
 给定一个无向，无权的图，找到最小的切口（将图分成两个部分的最小边数）。
+
 输入图可能具有平行边。
 
 例如，考虑以下示例，最小的切割具有 2 条边。
+
 ![Kargerfirst](img/bb64a670c03f0b38c6cf837cc5547987.png)
 
 一个简单的解决方案使用[基于最大流量的](https://www.geeksforgeeks.org/ford-fulkerson-algorithm-for-maximum-flow-problem/) [s-t 切割算法](https://www.geeksforgeeks.org/minimum-cut-in-a-directed-graph/)来找到最小切割。 将每对顶点视为源“ s”和宿“ t”，并调用最小 s-t 割算法以找到 s-t 割。 返回所有 s-t 削减的最小值。 该算法的最佳时间复杂度是图形的 O（V <sup>5</sup> ）。 [怎么样？ 总共有 V <sup>2</sup> 对，一对的 s-t cut 算法需要 O（V * E）时间，并且 E = O（V [V <sup>2</sup> ）]。
@@ -26,11 +28,15 @@
 让我们通过给出的例子来理解上述算法。
 
 假设第一个随机选择的顶点为连接顶点 0 和 1 的**和**。我们删除该边并收缩图形（合并顶点 0 和 1）。 我们得到下图。
+
 ![Karger2](img/54e16daac2bd73e9a2a589b49555c826.png)
 
 让下一个随机选取的边为“ d”。 我们删除该边并合并顶点（0,1）和 3。
+
 ![Karger3](img/23c57a0319e902740a66b54a8eed6d0a.png) 
+
 我们需要删除图中的自环。 因此，我们删除了边'c'
+
 ![Karger4](img/452e44e3bac2aee39ceeeee07bd0ccac.png)
 
 现在图有两个顶点，所以我们停下来。 结果图中的边数是由 Karger 算法产生的割线。
@@ -253,6 +259,7 @@ Cut found by Karger's randomized algo is 2
 在本文中，我们讨论了简单的 Karger 算法，并发现该算法并不总是产生最小切割。 上述算法产生最小切割，其概率大于或等于 1 /（n <sup>2</sup> ）。 请参阅下一篇[Karl's Algortihm 的分析和应用[》，其中讨论了应用，这种可能性的证明和改进。](https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-2-analysis-and-applications/)
 
 **参考**：
+
 [http://en.wikipedia.org/wiki/Karger%27s_algorithm](http://en.wikipedia.org/wiki/Karger%27s_algorithm)
 
 [https://www.youtube.com/watch?v=P0l8jMDQTEQ](https://www.youtube.com/watch?v=P0l8jMDQTEQ)

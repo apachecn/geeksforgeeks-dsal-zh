@@ -5,6 +5,7 @@
 **先决条件**：
 
 *   [图形的 BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
+
 *   [Python 词典](https://www.geeksforgeeks.org/python-dictionary/)
 
 在本文中，我们将研究如何构建无向图，然后使用 Python 语言中的字典轻松地找到该图的两个节点/顶点之间的最短路径。

@@ -3,15 +3,25 @@
 > 原文： [https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/](https://www.geeksforgeeks.org/prims-minimum-spanning-tree-mst-greedy-algo-5/)
 
 我们已经讨论了 [Kruskal 的最小生成树](https://www.geeksforgeeks.org/archives/26604)算法。 像 Kruskal 算法一样，Prim 算法也是[贪婪算法](https://www.geeksforgeeks.org/archives/18528)。 它从一棵空的生成树开始。 这个想法是维持两组顶点。 第一组包含 MST 中已包含的顶点，另一组包含尚未包含的顶点。 在每一步中，它都会考虑连接两组的所有边，并从这些边中选取最小权重边。 拾取边后，它将边的另一个端点移动到包含 MST 的集合。
+
 在图论中，将连接图形中两组顶点的一组边线称为[。 *因此，在 Prim 算法的每一步中，我们都会找到一个割线（两套，其中一组包含 MST 中已经包含的顶点，另一组包含其余顶点），从割中选取最小权重边并包含此顶点 MST 集（包含已经包含的顶点的集）。*
+
 ***Prim 的算法如何工作？*** Prim 算法的思想很简单，生成树意味着必须连接所有顶点。 因此，必须连接两个不相交的顶点子集（如上所述），以形成*生成*树。 并且它们必须以最小重量边连接，以使其成为*最小*生成树。
+
 ***算法***
+
 **1）**创建一个集合 *mstSet* ，该集合跟踪已包含在 MST 中的顶点。
+
 **2）**为输入图中的所有顶点分配一个键值。 将所有键值初始化为 INFINITE。 将第一个顶点的键值指定为 0，以便首先选择它。
+
 **3）**虽然 mstSet 不包括所有顶点
+
 …。 **a）**选取 *mstSet* 中不存在且具有最小键值的顶点 *u* 。
+
 …。 **b）**将 *u* 包括到 mstSet 中。
+
 …。 **c）**更新 *u* 的所有相邻顶点的键值。 要更新键值，请遍历所有相邻的顶点。 对于每个相邻顶点 *v* ，如果边 *uv* 的权重小于 *v* 的先前键值，则将键值更新为 *uv 的权重*
+
 使用键值的想法是从](http://en.wikipedia.org/wiki/Cut_%28graph_theory%29)[切割](http://en.wikipedia.org/wiki/Cut_(graph_theory))中挑选最小的重量边。 关键值仅用于尚未包含在 MST 中的顶点，这些顶点的关键值指示将其连接到 MST 中包含的一组顶点的最小权重边。
 
 让我们通过以下示例来理解：
@@ -39,6 +49,7 @@
 ![](img/ae64c938f36beae884d9dbc4af34383f.png)
 
 ***如何实现以上算法？***
+
 我们使用布尔数组 mstSet []表示 MST 中包含的一组顶点。 如果值 mstSet [v]为 true，则顶点 v 包含在 MST 中，否则不包含。 数组 key []用于存储所有顶点的键值。 另一个数组 parent []，用于在 MST 中存储父节点的索引。 父数组是用于显示构造的 MST 的输出数组。
 
 ## C++

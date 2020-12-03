@@ -19,6 +19,7 @@
 **方法**：想法是将图形表示为向量的数组，以使每个向量都代表顶点的邻接表。
 
 *   **添加边**：添加边是通过将由该边连接的两个顶点插入彼此的列表中来完成的。 例如，如果必须在`(u, v)`之间添加边，则`u`将存储在`v`的向量列表和`v`存储在`u`的向量列表中。 （[`push_back`](https://www.geeksforgeeks.org/vectorpush_back-vectorpop_back-c-stl/)）
+
 *   **删除边**：要删除`(u, v)`之间的边，将遍历`u`的邻接表，直到找到`v`从中删除。 对`v`执行相同的操作。（[`erase`](https://www.geeksforgeeks.org/vectorclear-vectorerase-c-stl/)）
 
 下面是该方法的实现：

@@ -15,6 +15,7 @@ Minimum Product that we can obtain is
 ```
 
 可以使用标准的最小生成树算法（例如 [krushkal](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/) 和 [prim](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/) ）算法解决此问题，但是我们需要修改图以使用这些算法。 最小生成树算法尝试最小化权重的总和，这里我们需要最小化权重的总和。 我们可以使用[对数](https://en.wikipedia.org/wiki/Logarithm)的属性来克服此问题。
+
 我们知道，
 
 ```
@@ -23,6 +24,7 @@ Minimum Product that we can obtain is
 ```
 
 我们可以用图的对数值代替图的每个权重，然后应用任何最小生成树算法，该算法将尝试最小化 log（wi）的总和，从而使权重乘积最小。
+
 例如图表，步骤如下图所示。
 
 ![](img/5cd96440873d950937a0dbb2bedcea7b.png)
@@ -639,5 +641,6 @@ Minimum Obtainable product is 180
 ```
 
 本文由 [**Utkarsh Trivedi**](https://in.linkedin.com/in/utkarsh-trivedi-253069a7) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+
 如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
 

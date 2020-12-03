@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/print-all-possible-shortest-chains-to-reach-a-target-word/](https://www.geeksforgeeks.org/print-all-possible-shortest-chains-to-reach-a-target-word/)
 
 给定两个字符串**开头**和**目标**（长度相同）和字符串 **str []** 列表，任务是打印所有可能的最小序列开头 从**开始从**到**目标**，如果序列中的相邻单词仅相差一个字符，并且序列中的每个单词都出现在给定列表中。
+
 **注意**：可以假设**目标**单词出现在列表中，并且所有单词的长度相同。 如果出现多个序列，请打印所有序列。
 
 **示例**：
@@ -17,8 +18,11 @@
 **方法**：可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 解决问题。这里的棘手部分是执行路径的 [BFS](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) 而不是单词。 请按照以下步骤解决问题：
 
 1.  初始化变量，例如 **res** ，以存储所有可能的最短路径。
+
 2.  创建一个[设置](https://www.geeksforgeeks.org/set-in-cpp-stl/)将所有访问过的单词存储在当前路径中，当当前路径完成后，擦除所有访问过的单词。
+
 3.  对于每个当前单词，通过将每个字符从“ a”更改为“ z”，找到 **str []** 中可能存在的下一个单词，并找到所有可能的路径。
+
 4.  最后，打印所有可能的路径。
 
 ## C++

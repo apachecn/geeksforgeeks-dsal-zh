@@ -7,6 +7,7 @@
 给定一个无向图和一组顶点，从给定集中存在的每个顶点中找到所有可到达的节点。
 
 考虑下面具有 2 个未连接组件的无向图。
+
 ![GraphEx1](img/7f4cdf40d66fc20a674b0c5b7ac379f8.png)
 
 ```
@@ -20,6 +21,7 @@ Reachable nodes from 5 are 5, 6, 7
 <center>**Method 1 (Simple)**</center>
 
 One straight forward solution is to do a [BFS traversal](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) for every node present in the set and then find all the reachable nodes.
+
 Assume that we need to find reachable nodes for n nodes, the time complexity for this solution would be O(n*(V+E)) where V is number of nodes in the graph and E is number of edges in the graph. Please note that we need to call BFS as a separate call for every node without using the visited array of previous traversals because a same vertex may need to be printed multiple times. This seems to be an effective solution but consider the case when E = Θ(V<sup>2</sup>) and n = V, time complexity becomes O(V<sup>3</sup>).
 
 <center>**Method 2 (Efficient)**</center>
@@ -39,7 +41,9 @@ component, visit[u] is equal to visit[v]
 ```
 
 要存储可达节点，请使用映射`m`，其中键作为组件号，值作为向量，用于存储所有可达节点。
+
 要找到节点`u`的可到达节点，请返回 **m [visit [u]]**
+
 查看下面的伪代码，以了解如何分配组件编号。
 
 ```
@@ -56,7 +60,9 @@ for i=1 to n
 ```
 
 对于示例中显示的图形，访问数组将是。
+
 ![VisitArray (2)](img/aca9d6f66af66522838c4b039b0860f8.png) 
+
 对于节点 1、2、3 和 4，组件号为 1。对于节点 5、6 和 7，组件号为 2。
 
 以上想法的 C ++实现
@@ -231,10 +237,15 @@ Reachable Nodes from 5 are
 ```
 
 **时间复杂度分析**：
+
 n =给定集合的大小
+
 E =边数
+
 V =节点数
+
 BFS 的 O（V + E）
+
 在最坏的情况下，将为给定中存在的每个节点显示所有 V 节点，即图中仅一个组件，因此需要 O（n * V）时间。
 
 最坏情况下的时间复杂度：O（V + E）+ O（n * V）

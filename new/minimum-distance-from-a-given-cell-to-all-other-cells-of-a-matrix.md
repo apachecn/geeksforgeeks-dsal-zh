@@ -23,11 +23,15 @@
 > 3 3 3 3 3
 
 **方法**：
+
 请按照以下步骤解决问题：
 
 *   将初始像元的距离分配为`0`。
+
 *   初始化[队列](http://www.geeksforgeeks.org/queue-data-structure/)，然后将 **{X，Y}** 对插入**队列**中。
+
 *   进行迭代，直到**队列**不为空，并为每个未访问的单元分配当前距离，然后使用[[G] [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 技术。
+
 *   在末尾打印每个单元格的距离。
 
 下面是上述方法的实现：
@@ -420,6 +424,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（R * C）*
+
 ***辅助空间**：O（R * C）*
 
 

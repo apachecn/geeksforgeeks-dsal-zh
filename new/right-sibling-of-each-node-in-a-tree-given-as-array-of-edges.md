@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/right-sibling-of-each-node-in-a-tree-given-as-array-of-edges/](https://www.geeksforgeeks.org/right-sibling-of-each-node-in-a-tree-given-as-array-of-edges/)
 
 给定一棵树，其中 *N 个*节点和 *E* 个边（每个边由两个整数表示， *X，Y* 表示 X 是 Y 的父级）， 任务是将所有具有正确兄弟姐妹的节点打印在单独的行中。
+
 如果特定节点没有右兄弟，则打印 *-1* 。
 
 **示例**：
@@ -32,8 +33,11 @@
 **方法**：的主要思想是使用[广度优先遍历](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)。
 
 *   最初，根节点和“ -1”值将被推入队列。 将树中特定级别的每个节点都推入队列后，必须推“ -1”以确保该级别中的最后一个节点没有右兄弟。
+
 *   从队列中弹出每个节点后，队列前面的节点将始终是弹出节点的右兄弟节点。
+
 *   如果弹出节点的值为-1，则表示当前级别已被访问；如果队列不为空，则表示该级别的先前节点中至少有一个未访问的子级。
+
 *   当队列为非空时，请重复上述步骤。
 
 下面是上述方法的实现：

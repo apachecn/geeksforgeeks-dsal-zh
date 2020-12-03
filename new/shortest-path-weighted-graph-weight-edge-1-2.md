@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/shortest-path-weighted-graph-weight-edge-1-2/](https://www.geeksforgeeks.org/shortest-path-weighted-graph-weight-edge-1-2/)
 
 给定一个有向图，其中每个边的权重为 1 或 2，找到从给定源顶点“ s”到给定目标顶点“ t”的最短路径。 预期时间复杂度为 O（V + E）。
+
 一个简单的解决方案是使用 [Dijkstra 最短路径算法](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)，我们可以获得 O（E + VLogV）时间中的最短路径。
 
 **如何在 O（V + E）时间内完成？** 的想法是使用 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 。 关于 BFS 的一个重要发现是，BFS 中使用的路径在任何两个顶点之间始终具有最少数量的边。 因此，如果所有边的权重相同，则可以使用 BFS 查找最短路径。 对于此问题，我们可以修改图形并将权重 2 的所有边均分成权重 1 的两个边。 在修改后的图中，我们可以使用 BFS 查找最短路径。

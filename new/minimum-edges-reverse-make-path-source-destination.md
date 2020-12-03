@@ -16,9 +16,11 @@ But for first path only two edges need to be reversed, so answer will be 2 only.
 ```
 
 假设给定图的版本不同，则可以解决此问题。 在此版本中，我们制作与每个边相对应的反向边，并为该边分配权重 1，为原始边分配权重 0。 经过上述修改后，上方图形如下所示：
+
  ![](img/8300ba266b752a4d1a60bfd1dd611855.png)
 
 现在我们可以看到，我们以如下方式修改了图形：如果我们朝原始边移动，则不会产生任何成本，但是如果我们朝反向边 1 移动，则会增加成本。 因此，如果将 [Dijkstra 的最短路径](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)从给定的源应用到此经修改的图形上，那么这将使我们从源到目标的最小开销，即从源到目标的最小边沿反转。
+
 下面是基于以上概念的代码。
 
 ```

@@ -16,6 +16,7 @@
 **方法**：由于图形完成，因此边的总数为 **E = N *（N – 1）/ 2** 。 现在有两种情况
 
 1.  如果`E`是**甚至是**，那么您必须删除奇数个边，因此，通道总数为![ ^EC_1 + ^EC_3 + ^EC_5 + .... + ^EC_{E-1} ](img/5197eca012300c97f9176821d990c1b9.png "Rendered by QuickLaTeX.com")，与![2^{(E-1)}](img/4f460ba2807aea13e798c06e088715f0.png "Rendered by QuickLaTeX.com")等效。
+
 2.  如果`E`为**奇数**，那么您必须删除偶数个边，因此，通道总数为![ ^EC_0 + ^EC_2 + ^EC_4 + .... + ^EC_{E-1} ](img/f49433a3cb83f5b238525826a0a80838.png "Rendered by QuickLaTeX.com")，与![2^{(E-1)}](img/4f460ba2807aea13e798c06e088715f0.png "Rendered by QuickLaTeX.com")等效。
 
 **注意**，如果 **N = 1** ，则答案将是`0`。

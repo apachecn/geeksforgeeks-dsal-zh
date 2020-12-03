@@ -45,8 +45,11 @@
 **方法**：的想法是使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)（DFS）解决此问题。
 
 *   获取有向图作为输入。
+
 *   在图上执行 DFS，并浏览图的所有节点。
+
 *   在探索节点的邻居时，将 1 加到 count 上，最后返回 count，这表示依赖项的数量。
+
 *   最后，找到具有最小依赖性的节点。
 
 下面是上述方法的实现：

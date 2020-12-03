@@ -3,13 +3,17 @@
 > 原文： [https://www.geeksforgeeks.org/water-jug-problem-using-bfs/](https://www.geeksforgeeks.org/water-jug-problem-using-bfs/)
 
 您会得到一公升的水罐和一公升的水罐。 两个水罐最初都是空的。 水壶上没有标记，可以测量较小的数量。 您必须使用水壶来测量 d 小于 n 的 d 升水。
+
 （X，Y）对应于以下状态：X 代表 Jug1 中的水量，Y 代表 Jug2 中的水量。
+
 确定从初始状态（xi，yi）到最终状态（xf， yf），其中（xi，yi）是（0，0），表示两个水罐最初都是空的，而（xf，yf）表示状态可能是（0，d）或（d，0）。
 
 您可以执行的操作是：
 
 1.  清空一个水罐，（X，Y）->（0，Y）清空一个水罐 1
+
 2.  装满水罐，（0，0）->（X，0）装满水罐 1
+
 3.  从一个水罐倒水到另一个水罐，直到其中一个水罐倒空或装满为止，（X，Y）->（X-d，Y + d）
 
 例子：

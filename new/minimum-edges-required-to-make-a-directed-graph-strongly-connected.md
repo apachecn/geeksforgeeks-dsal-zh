@@ -27,13 +27,19 @@
 > 因此，所需的最小边数为 3。
 
 **方法**：
+
 对于[强连通图](https://www.geeksforgeeks.org/strongly-connected-components/)，每个顶点的[入度和出度](https://www.geeksforgeeks.org/finding-in-and-out-degrees-of-all-vertices-in-a-graph/)至少应为， ] *`1`* 。 因此，为了使图牢固连接，每个顶点必须具有输入边和输出边。 使图牢固连接所需的传入边和传出边的最大数量为使其牢固连接所需的最小边。
+
 请按照以下步骤解决问题：
 
 *   使用 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 找出图的每个顶点的度数和度数。
+
 *   如果顶点的入度或出度大于 *1* ，则仅将其视为 *1* 。
+
 *   计算给定图**的总度数和度数。**
+
 *   然后，通过 ***max（N-totalIndegree，N-totalOutdegree）给出使图牢固连接所需的最小边数。***
+
 *   打印最小边数作为结果。
 
 下面是上述方法的实现：
@@ -490,6 +496,7 @@ public static void Main(String[] args)
 ```
 
 **时间复杂度**：O（N + M）
+
 **辅助空间**：O（N）
 
 

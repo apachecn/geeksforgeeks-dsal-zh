@@ -18,12 +18,15 @@ Output : 3
 ```
 
 斐波那契立方体图类似于[超立方体图](https://www.geeksforgeeks.org/hypercube-graph/)，但顶点的[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)。 在斐波那契立方体图中，只有 1 个顶点的度为 n，其余所有度的度均小于 n。
+
 阶 n 的斐波那契立方体图具有 F（n + 2）个顶点，其中 F（n）是第 n 个[斐波那契数](https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/)，
+
 斐波那契数列：1、1、2、3 ，5、8、13、21、34………………。
 
 ![](img/9f6afb7bdc0ed485a62f680367e03f48.png)
 
 对于输入 n（作为图的顺序），在位置 n + 2 处找到相应的斐波那契数。
+
 其中 F（n）= F（n – 1）+ F（n – 2）
 
 **方法**：找到第（n + 2）个斐波那契数。

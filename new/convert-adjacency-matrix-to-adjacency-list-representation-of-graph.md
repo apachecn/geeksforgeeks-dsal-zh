@@ -5,7 +5,9 @@
 > 原文： [https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/](https://www.geeksforgeeks.org/convert-adjacency-matrix-to-adjacency-list-representation-of-graph/)
 
 **先决条件**：[图及其表示](https://www.geeksforgeeks.org/graph-and-its-representations/)
+
 给定图的[邻接矩阵表示。 任务是将给定的邻接矩阵转换为邻接列表表示形式。
+
 **范例**：](https://www.geeksforgeeks.org/graph-and-its-representations/)
 
 > **输入**：arr [] [] = [[0，0，1]，[0，0，1]，[1，1，0]]

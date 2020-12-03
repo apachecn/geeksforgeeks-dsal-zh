@@ -29,11 +29,13 @@ Note :  There are two possible MSTs, the other
 我们在下面讨论了 Prim 的 MST 实现。
 
 *   [Prim 的邻接矩阵表示算法（在 C / C ++中，时间复杂度为 O（v <sup>2</sup> ）](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/)
+
 *   [Prim 的邻接表表示算法（在 C 中，时间复杂度为 O（ELogV））](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-mst-for-adjacency-list-representation/)
 
 第二种实现方式是时间复杂度更好，但是由于我们已经实现了自己的优先级队列，因此实现起来确实很复杂。 STL 提供 [priority_queue](http://geeksquiz.com/priority-queue-container-adaptors-the-c-standard-template-library-stl/) ，但提供的优先级队列不支持减小键操作。 在 Prim 的算法中，我们需要[优先级队列](http://geeksquiz.com/binary-heap/)及以下对优先级队列的操作：
 
 *   ExtractMin：从尚未包含在 MST 中的所有那些顶点中，我们需要获得具有最小键值的顶点。
+
 *   DecreaseKey：提取顶点后，我们需要更新其相邻顶点的关键点，如果新关键点较小，则在数据结构中进行更新。
 
 此处讨论的算法 [](https://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-mst-for-adjacency-list-representation/) 可以修改，这样就不再需要减小密钥。 这样做的想法是，不将所有顶点插入优先级队列中，而仅插入那些不是 MST 且已通过 MST 中包含的顶点进行访问的顶点。 我们在 MST []中的单独布尔数组中跟踪 MST 中包含的顶点。

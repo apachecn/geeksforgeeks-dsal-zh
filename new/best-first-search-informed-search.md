@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/best-first-search-informed-search/](https://www.geeksforgeeks.org/best-first-search-informed-search/)
 
 先决条件： [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) ， [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)
+
 在 BFS 和 DFS 中，当我们在一个节点上时，可以将任何相邻节点视为下一个节点。 因此，BFS 和 DFS 都在不考虑任何成本函数的情况下盲目探索路径。 最佳优先搜索的想法是使用评估函数来确定哪个最有前途，然后再进行探索。 最佳优先搜索属于启发式搜索或知情搜索类别。
 
 我们使用优先级队列来存储节点成本。 因此，实现是 BFS 的变体，我们只需要将 Queue 更改为 PriorityQueue。
@@ -213,10 +214,13 @@ best_first_search(source, target, v)
 **分析**：
 
 *   最佳优先搜索的最坏情况时间复杂度是 O（n * Log n），其中 n 是节点数。 最坏的情况是，在达到目标之前，我们可能必须访问所有节点。 请注意，优先级队列是使用最小（或最大）堆实现的，插入和删除操作需要 O（log n）时间。
+
 *   算法的性能取决于设计成本或评估功能的程度。
 
 **相关文章**：
+
 [A *搜索算法](https://www.geeksforgeeks.org/a-search-algorithm/)
+
 本文由 **Shambhavi Singh** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。

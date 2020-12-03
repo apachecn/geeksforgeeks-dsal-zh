@@ -28,6 +28,7 @@
 > **查询 3**：删除值为 2 的节点会导致边（ 0，2）。 因此，其余图具有 1 个连接的分量：[0、1、3、4、5、6]
 
 **方法**：的想法是观察在**树**中，每当删除一个节点时，连接到该节点的节点就会分离。 因此，连接组件的[计数等于已删除节点](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)的[度。
+
 因此，方法是预先计算并在阵列中存储每个节点](https://www.geeksforgeeks.org/find-degree-particular-vertex-graph/)的[度。 对于每个查询，连接的组件数只是查询中相应节点的程度。](https://www.geeksforgeeks.org/print-the-degree-of-every-node-from-the-given-prufer-sequence/)
 
 下面是上述方法的实现：
@@ -331,6 +332,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（E + Q），其中 E 是边数（E = N – 1），Q 是查询数。*
+
 ***辅助空间**：O（V），其中 V 是顶点的个数。*
 
 

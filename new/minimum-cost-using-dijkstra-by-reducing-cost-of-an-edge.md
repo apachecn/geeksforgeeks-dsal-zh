@@ -21,14 +21,21 @@
 **方法**：的想法是考虑每个方面，并尝试通过降低成本来最大程度地降低总体成本。 主要思想是将源到目标的路径分解成源到任何顶点`u`的路径，即**路径（1 到 u）**以及从目标到任何顶点`v`，即所有 u 和 v 的**路径（从 n 到 v）**。以下是步骤：
 
 1.  执行 [Dijkstra 算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)，以查找来自源**节点 1** 的所有顶点的单个源最短路径，并将其存储为 **dist_from_source []** 的数组。
+
 2.  执行 Dijkstra 算法，查找来自源**节点 N** 的所有顶点的单个源最短路径，并将其存储为 **dist_from_dest []** 的数组。
+
 3.  将最小成本（例如 **minCost** ）初始化为最大值。
+
 4.  Traverse the given edges and for each edges reduce the current cost to half and update the minimum cost as:
 
     > minCost = min（minCost，dist_from_source [u] + c / 2 + dist_from_dest [v]）
+
     > 其中，
+
     > c 是当前边沿的成本，
+
     > dist_from_source [u]是从节点 1 到路径的成本 到 u
+
     > dist_from_source [v]是从节点 v 到 N 的路径成本
 
 5.  完成上述步骤后，打印 **minCost** 的值。
@@ -198,6 +205,7 @@ int main()
 ```
 
 ***时间复杂度**：O（N + M），其中 N 是节点数，M 是边数。
+
 **辅助空间**：O（N），其中 N 是节点数。*
 
 

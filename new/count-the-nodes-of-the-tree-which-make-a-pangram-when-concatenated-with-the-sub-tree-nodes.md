@@ -3,6 +3,7 @@
 > 原文： [https://www.geeksforgeeks.org/count-the-nodes-of-the-tree-which-make-a-pangram-when-concatenated-with-the-sub-tree-nodes/](https://www.geeksforgeeks.org/count-the-nodes-of-the-tree-which-make-a-pangram-when-concatenated-with-the-sub-tree-nodes/)
 
 给定一棵树，以及所有节点的权重（以字符串的形式），任务是对那些节点的权重字符串与子树节点的字符串连接在一起时，成为节点进行计数。
+
 **Pangram**：Pangram 是包含英语字母表中每个字母的句子。
 
 **示例**：，
@@ -383,8 +384,11 @@ public static void Main(String[] args)
 **<u>复杂度分析：</u>**
 
 *   **时间复杂度**：O（N * S）。
+
     在 dfs 中，树的每个节点都处理一次，因此，如果树中总共有 N 个节点，则由于 dfs 而导致的复杂度为 O（N）。 同样，为了处理每个节点，将 Pangram（）函数用于复杂度为 O（S）的每个节点，其中 S 是子树中所有权重字符串的长度之和，并且由于对每个节点都执行了此操作，因此 这部分的总时间复杂度变为 O（N * S）。 因此，最终时间复杂度为 O（N * S）。
+
 *   **辅助空间**：O（1）。
+
     不需要任何额外的空间，因此空间复杂度是恒定的。
 
 

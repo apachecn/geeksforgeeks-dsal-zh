@@ -5,6 +5,7 @@
 > 原文： [https://www.geeksforgeeks.org/sum-of-minimum-element-at-each-depth-of-a-given-non-cyclic-graph/](https://www.geeksforgeeks.org/sum-of-minimum-element-at-each-depth-of-a-given-non-cyclic-graph/)
 
 给定一个具有`V`个节点和`E`边以及一个源节点`S`的非循环图，任务是计算每个级别上最小元素的总和 给定图中来自源节点`S`的数据。
+
 **范例**：
 
 > **输入**：S = 0，以下为给定图形。
@@ -33,9 +34,13 @@
 **方法**：的想法是使用 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)。 步骤如下：
 
 1.  初始化一个数组（例如 **arr []** ）以在每个级别存储最小元素。
+
 2.  从给定的具有可变深度（最初为`0`）的源节点`S`开始 DFS 遍历。
+
 3.  更新数组 **arr []** 中当前深度的最小值。
+
 4.  通过从前一个递归调用增加 depth 的值来递归地为子节点递归，以便可以相应地更新对应深度处的最小值。
+
 5.  完成上述步骤后， **arr []** 中存储的值总和就是所需的总和。
 
 下面是上述方法的实现：
@@ -484,6 +489,7 @@ public static void Main() 
 ```
 
 **时间复杂度**：*O（V + E）*
+
 **辅助空间**：*O（V）*
 
 

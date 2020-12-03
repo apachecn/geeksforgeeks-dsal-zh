@@ -23,6 +23,7 @@
 **方法**：的想法是维护两个数组 **dis []** ，该数组维护行进路径的距离， **Visited []** 维护访问顶点的距离。 使用成对的 [2D 向量](https://www.geeksforgeeks.org/2d-vector-in-cpp-with-user-defined-size/)存储图形。 该对中的第一个值是目标节点，第二个值是与之关联的成本。 现在，在图形上运行 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。 每个顶点都会出现以下两个条件：
 
 1.  如果未访问下一个要到达的节点，则 **dis** 数组将使用值 dis [current_node] +从 2D 向量中找到的新边的成本（即，当前节点到要到达的下一个节点，以及 使用未访问的同一节点调用同一函数。
+
 2.  如果访问了该节点，则将下一个要到达的节点的距离与到达下一个节点的边的 disc +成本进行比较。 如果它们相等，则将布尔变量标志更新为 true，并为下一个顶点继续循环。
 
 下面是上述方法的实现：

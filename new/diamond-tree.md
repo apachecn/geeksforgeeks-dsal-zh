@@ -5,6 +5,7 @@
 给定数字`K`，任务是创建树的菱形结构，该结构遵循以下两个条件：
 
 1.  树的前 K 个级别应该是平衡的二叉树，节点的值应从 1 开始并从左到右递增。
+
 2.  接下来的 K – 1 级应该通过合并每对节点及其总和作为子节点来形成菱形结构。
 
 **示例**：
@@ -80,7 +81,9 @@ Structre will look like
 **方法**：
 
 1.  首先使用[级顺序遍历](https://www.geeksforgeeks.org/level-order-tree-traversal/)创建 [K 级平衡二叉树](https://www.geeksforgeeks.org/binary-tree-set-3-types-of-binary-tree/)，并给出从 1 开始并从左向右递增的值。
+
 2.  现在开始通过使用级别顺序对两个节点求和来合并级别
+
 3.  最后，打印二叉树的每个级别
 
 下面是上述方法的实现：

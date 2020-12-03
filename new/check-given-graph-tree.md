@@ -11,12 +11,19 @@
 ![cycleGraph](img/5334e5d8a548c03f16f3f27689404a7f.png)
 
 如果无向图具有以下属性，则它是树。
+
 1）没有周期。
+
 2）图形已连接。
+
 对于无向图，我们可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 或 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 来检测以上两个属性。
+
 **如何检测无向图中的周期？**
+
 我们可以使用 BFS 或 DFS。 对于每个访问的顶点“ v”，如果存在一个相邻的“ u”，使得 u 已被访问并且 u 不是 v 的父代，则图中存在一个循环。 如果我们找不到任何顶点相邻的顶点，则说没有循环（有关更多详细信息，请参见无向图中的[检测循环）。
+
 **如何检查连通性？**
+
 由于图形是无向的，因此我们可以从任何顶点开始 BFS 或 DFS，并检查是否所有顶点均可达。 如果所有顶点都是可到达的，则图已连接，否则未连接。](https://www.geeksforgeeks.org/detect-cycle-undirected-graph/) 
 
 ## C++

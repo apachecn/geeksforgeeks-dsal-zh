@@ -36,8 +36,11 @@ other as 4\. So largest region: 4
 **方法**：
 
 1.  2D 矩阵中的一个单元最多可以连接 8 个邻居。
+
 2.  因此，在 DFS 中，对该单元的 8 个邻居进行递归调用。
+
 3.  保持访问过的哈希图，以跟踪所有访问过的单元格。
+
 4.  还要跟踪每个 DFS 中访问过的 1，并更新最大长度区域。
 
 以下是上述想法的实现。
@@ -453,8 +456,11 @@ class GFG
 **复杂度分析**：
 
 *   **时间复杂度**：O（ROW * COL）。
+
     在最坏的情况下，将访问所有单元，因此时间复杂度为 O（ROW * COL）。
+
 *   **辅助空间**：O（ROW * COL）。
+
     要存储访问的节点，需要 O（ROW * COL）空间。
 
 本文由 [**Nishant Singh**](https://practice.geeksforgeeks.org/user-profile.php?user=_code) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

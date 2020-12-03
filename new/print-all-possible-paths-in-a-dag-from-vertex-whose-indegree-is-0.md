@@ -35,7 +35,9 @@
 `0`
 
 4.  创建一个布尔数组 **indeg0** ，该数组为 indeg 为零的所有那些顶点存储一个真值。
+
 5.  在所有 indeg 为 0 的顶点上应用 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 。
+
 6.  打印从入度为 0 的顶点到出度为零的顶点开始的所有路径。
 
 > **插图**：
@@ -138,6 +140,7 @@ All possible paths:
 ```
 
 ***时间复杂度**：O（N + E） <sup>2</sup>*
+
 ***辅助空间**：O（N）*
 
 

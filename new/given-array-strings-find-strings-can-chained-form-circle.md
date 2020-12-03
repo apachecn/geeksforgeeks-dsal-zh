@@ -47,9 +47,11 @@ Output : No
 这个想法是创建所有字符的有向图，然后在图中确定它们是否为[欧拉回路](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)。
 
 下图给出了一些字符串数组的图形表示形式，
+
  ![](img/cc7e4fd0d126ef3a21f812d1cd54be44.png)
 
 如果存在[欧拉回路](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)，则可以形成链，否则就不会形成。
+
 请注意，只有在每个顶点的度和度相同且所有非零度顶点形成单个强连通分量的情况下，有向图才具有[欧拉回路](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)。
 
 以下是该算法的详细步骤。
@@ -57,6 +59,7 @@ Output : No
 1）创建一个有向图 g，其顶点数等于字母的大小。 在下面的程序中，我们创建了具有 26 个顶点的图形。
 
 2）对给定的字符串数组中的每个字符串执行以下操作。
+
 …..a）在给定图形的第一个字符到最后一个字符之间添加一条边。
 
 3）如果创建的图形具有[欧拉回路](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)，则返回 true，否则返回 false。

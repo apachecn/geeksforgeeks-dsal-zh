@@ -5,9 +5,11 @@
 我们在[图及其表示](https://www.geeksforgeeks.org/graph-and-its-representations/)中介绍了图基础。 在本文中，将使用基于 STL 的不同表示形式，这有助于使用[向量](http://quiz.geeksforgeeks.org/vector-sequence-containers-the-c-standard-template-library-stl-set-1/)快速实现图形。 该实现用于图形的邻接表表示。
 
 以下是具有 5 个顶点的示例无向图和无权图。
+
 ![8](img/1ef79a5320e6115e8c3ada572164793e.png)
 
 下面是该图的邻接列表表示。
+
 ![9 (1)](img/218bff5938529b5ffa08e970848d05ad.png)
 
 我们在 STL 中使用向量来使用邻接表表示实现图形。
@@ -86,10 +88,15 @@ int main()
 ```
 
 **以下是相关文章**：
+
 [使用 STL 进行竞争性编程的图形实现| 集合 2（加权图）](https://www.geeksforgeeks.org/graph-implementation-using-stl-for-competitive-programming-set-2-weighted-graph/)
+
 [使用 STL 的 priority_queue 的 Dijkstra 最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/)
+
 [使用 STL 中的集的 Dijkstra 最短路径算法](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-set-in-stl/)
+
 [Kruskal 的 在 C ++中使用 STL 的最小生成树](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-using-stl-in-c/)
+
 [在 STL](https://www.geeksforgeeks.org/prims-algorithm-using-priority_queue-stl/) 中使用 priority_queue 的 Prim 算法
 
 本文由 **Shubham Gupta** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，那么您也可以写一篇文章，并将您的文章邮寄到 contribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。

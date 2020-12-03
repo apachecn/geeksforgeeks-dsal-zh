@@ -3,11 +3,13 @@
 > 原文： [https://www.geeksforgeeks.org/vertex-cover-problem-set-1-introduction-approximate-algorithm-2/](https://www.geeksforgeeks.org/vertex-cover-problem-set-1-introduction-approximate-algorithm-2/)
 
 无向图的顶点覆盖是其顶点的子集，因此对于图的每个边（u，v），“ u”或“ v”都在顶点覆盖中。 尽管名称为“顶点覆盖”，但该集合覆盖了给定图形的所有边。 ***给定一个无向图，顶点覆盖问题是找到最小尺寸的顶点覆盖*** 。
+
 以下是一些示例。
 
 ![VertexCover](img/87bd7bd460f0e2648534ae16a5fd4969.png)
 
 [顶点覆盖问题](http://en.wikipedia.org/wiki/Vertex_cover)是已知的 [NP 完全问题](https://www.geeksforgeeks.org/np-completeness-set-1/)，即，除非 P = NP，否则没有多项式时间解。 虽然有解决问题的近似多项式时间算法。 以下是从 [CLRS 书](http://www.flipkart.com/introduction-algorithms-english-3rd/p/itmdwxyrafdburzg?pid=9788120340077&affid=sandeepgfg)中改编的简单近似算法。
+
 **顶点覆盖的近似算法**：[
 
 ```
@@ -25,8 +27,11 @@
 ![vertexCover](img/994520baa83d60d915bcebafd01d5e8e.png)
 
 **以上算法的效果如何？**
+
 可以证明上述近似算法从未找到大小大于最小可能顶点覆盖范围大小两倍的顶点覆盖层（请参阅[此](http://www.personal.kent.edu/~rmuhamma/Algorithms/MyAlgorithms/AproxAlgor/vertexCover.htm)作为证明）
+
 [ **实现**：
+
 以下是上述近似算法的 C ++和 Java 实现。
 
 ## C++
@@ -420,11 +425,18 @@ public static void Main(String []args)
 ```
 
 上述算法的时间复杂度为 O（V + E）。
+
 **精确算法**：
+
 尽管该问题是 NP 完全问题，但对于以下类型的图形，可以在多项式时间内解决。
+
 1）[二部图](https://www.geeksforgeeks.org/bipartite-graph/)，
+
 2）[树图](http://geeksquiz.com/check-given-graph-tree/)
+
 检查是否存在大小小于或等于给定数 k 的顶点覆盖的问题 如果 k 由 O（LogV）限定，也可以在多项式时间内求解（请参阅[，](http://en.wikipedia.org/wiki/Vertex_cover#Fixed-parameter_tractability)）。
+
 我们将很快讨论顶点覆盖的精确算法。
+
 本文由 **Shubham** 提供。 如果发现任何不正确的地方，或者您想分享有关上述主题的更多信息，请写评论
 

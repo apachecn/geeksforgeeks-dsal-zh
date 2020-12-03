@@ -19,7 +19,9 @@
 ***由 Karger 算法产生的剪切为 Min-Cut 的概率大于或等于 1 /（n <sup>2</sup> ）***
 
 **证明**：
+
 假设给定图形具有唯一的 Min-Cut，并且 Min-Cut 中存在 C 边，且边为{e <sub>1</sub> e e <sub>2</sub> ，e <sub>3</sub> ，.. e <sub>c</sub> }。 当且仅当集合{e <sub>1</sub> ，e <sub>2</sub> ，e <sub>3</sub> ，.. e 中的任何一个边都没有时，Karger 算法才会产生此 Min-Cut。 <sub>c</sub> }在上述算法的主 while 循环中被删除。
+
 ![KargerProbability](img/e8d8284397f976edd3dbeee36b304968.png)
 
 ```
@@ -98,9 +100,11 @@ P[S1' ∩  S2' ∩ S3'  ∩.......... ∩ Sn-2']
 ```
 
 **如何增加成功的可能性？**
+
 上述基本算法成功的可能性很小。 例如，对于具有 10 个节点的图，找到最小切割的概率大于或等于 1/100。 可以通过重复运行基本算法并返回找到的所有削减的最小值来增加概率。
 
 **应用程序**：
+
 **1）**在战争情况下，一个政党有兴趣寻找破坏敌人通信网络的最小链接数。
 
 **2）**最小割问题可用于研究网络的可靠性（可能出现故障的最小边数量）。
@@ -112,7 +116,9 @@ P[S1' ∩  S2' ∩ S3'  ∩.......... ∩ Sn-2']
 **5）**匹配问题（有向图中最小割的 NC 算法将导致二部图中最大匹配的 NC 算法）
 
 **来源**：
+
 [https://www.youtube.com/watch?v=-UuivvyHPas](https://www.youtube.com/watch?v=-UuivvyHPas)
+
 [http://disi.unal.edu.co /~gjhernandezp/psc/lectures/02/MinCut.pdf]( http://disi.unal.edu.co/~gjhernandezp/psc/lectures/02/MinCut.pdf)
 
 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。

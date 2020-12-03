@@ -499,13 +499,17 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N <sup>3</sup> ），其中 N 是顶点数。*
+
 ***辅助空间**：O（N）*
 
 **高效方法**：的想法是对每个顶点使用 [](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) [DFS 算法](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)，并使用 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，每个顶点的访问成本 可以在线性时间内找到此顶点的顶点。 请按照以下步骤解决问题：
 
 1.  遍历节点`0`至 **N – 1** 。
+
 2.  对于每个节点`i`，使用 [DFS](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) 找到访问其他每个顶点的成本总和，其中源将为节点`i`，让我们用 **S <sub>i</sub>** 。
+
 3.  现在，计算 **S = S <sub>0</sub> + S <sub>1</sub> +…+ S <sub>N-1</sub>** 。 将`S`除以`2`，因为每个路径都计算两次。
+
 4.  完成上述步骤后，打印获得的总和`S`的值。
 
 下面是上述方法的实现：
@@ -789,6 +793,7 @@ public static void Main(String[] args)
 ```
 
 ***时间复杂度**：O（N <sup>2</sup> ），其中 N 是顶点数。*
+
 ***辅助空间**：O（N）*
 
 

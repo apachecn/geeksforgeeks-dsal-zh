@@ -37,9 +37,13 @@ Output: Day 1:  Chapter 1
 感谢 [Armadillo](https://www.geeksforgeeks.org/amazon-interview-experience-set-170/) 在评论中提出了这个想法。
 
 这个想法是从第 1 章开始，做一个 DFS 来找到边数为“ k”的汇点。 继续将访问的顶点存储在一个名为“ path []”的数组中。 如果到达目标顶点，并且路径总和小于最佳路径，则更新最佳分配 optimistic_path []。 请注意，该图是 DAG，因此在 DFS 期间无需照顾周期。
+
 接下来是相同的 C ++实现，邻接矩阵用于表示图。 以下程序主要分为四个阶段。
+
 1）构造有向无环图。
+
 2）使用 DFS 查找最佳路径。
+
 3）打印找到的最佳路径。
 
 ## C++

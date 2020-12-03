@@ -9,6 +9,7 @@
 我们在以下文章中讨论了 Dijkstra 的最短路径算法。
 
 *   [Dijkstra 用于邻接矩阵表示的最短路径](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)
+
 *   [Dijkstra 邻接列表表示的最短路径](https://www.geeksforgeeks.org/greedy-algorithms-set-7-dijkstras-algorithm-for-adjacency-list-representation/)
 
 上面讨论的实现仅找到最短的距离，但没有打印路径。 在这篇文章中，讨论了路径的打印。
