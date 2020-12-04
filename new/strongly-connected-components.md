@@ -1,4 +1,4 @@
-# 牢固连通组件
+# 强连通组件
 
 > 原文： [https://www.geeksforgeeks.org/strongly-connected-components/](https://www.geeksforgeeks.org/strongly-connected-components/)
 

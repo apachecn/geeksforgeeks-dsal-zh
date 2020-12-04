@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/convert-undirected-connected-graph-to-strongly-connected-directed-graph/](https://www.geeksforgeeks.org/convert-undirected-connected-graph-to-strongly-connected-directed-graph/)
 
-给定`N`个顶点和`M`边的[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，任务是向给定的 M 边分配方向，以使图成为[强连通 组件](https://www.geeksforgeeks.org/strongly-connected-components/)。 如果图形无法转换为牢固连通组件，则打印**“ -1”** 。
+给定`N`个顶点和`M`边的[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，任务是向给定的 M 边分配方向，以使图成为[强连通 组件](https://www.geeksforgeeks.org/strongly-connected-components/)。 如果图形无法转换为强连通组件，则打印**“ -1”** 。
 
 **范例**：
 

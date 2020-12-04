@@ -10,9 +10,9 @@
 
 我们在以下文章中讨论了用于在有向图中找到强连通组件的算法。
 
-[Kosaraju 的算法，用于牢固连通组件](https://www.geeksforgeeks.org/strongly-connected-components/)。
+[Kosaraju 的算法，用于强连通组件](https://www.geeksforgeeks.org/strongly-connected-components/)。
 
-[塔里安（Tarjan）查找强连通组件的算法](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)
+[查找强连通组件的 Tarjan 算法](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)
 
 为无向图找到连通组件是一件容易的事。 我们只需要从每个未访问的顶点开始执行 BFS 或 DFS，就可以获得所有紧密连通组件。 以下是基于 DFS 的步骤。
 
