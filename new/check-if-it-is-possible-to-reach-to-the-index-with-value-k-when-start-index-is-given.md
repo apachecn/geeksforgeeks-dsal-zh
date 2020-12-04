@@ -2,38 +2,45 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-if-it-is-possible-to-reach-to-the-index-with-value-k-when-start-index-is-given/](https://www.geeksforgeeks.org/check-if-it-is-possible-to-reach-to-the-index-with-value-k-when-start-index-is-given/)
 
-给定`N`个正整数和两个正整数`S`和`K`的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务 从索引`S`到达值为`K`的数组的位置。 我们只能从当前索引`i`移至索引**（i + arr [i]）**或**（i – arr [i]）**。 如果有一种方法可以到达值`K`的数组的位置，则打印**“是”** ，否则打印**“否”** 。
+给定`N`个正整数和两个正整数`S`和`K`的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)`arr[]`，任务是从索引`S`到达值为`K`的数组的位置。 我们只能从当前索引`i`移至索引`i + arr[i]`或`i – arr[i]`。 如果有一种方法可以到达值`K`的数组的位置，则打印`Yes`，否则打印`No`。
 
 **示例**：
 
-> **输入**：arr [] = {4，2，3，0，3，1，2}，S = 5，K =0。
+> **输入**：`arr[] = {4, 2, 3, 0, 3, 1, 2}, S = 5, K = 0`
+>
 > **输出**：`Yes`
+>
 > **解释**：
+>
 > 最初我们位于元素 5 的索引 5，因此可以向前或向后移动一步。 因此，到达索引 3 的值为 0 的所有可能方法是：
-> 索引 5->索引 4->索引 1->索引 3
-> 索引 5->索引 6- >索引 4->索引 1->索引 3。由于有可能达到索引 3，因此我们的输出为 yes。
+>
+> `索引 5 -> 索引 4 -> 索引 1 -> 索引 3`
+>
+> `索引 5 -> 索引 6 -> 索引 4 -> 索引 1 -> 索引 3`。由于有可能达到索引 3，因此我们的输出为`yes`。
 > 
-> **输入**：arr [] = {0，3，2，1，2}，S = 2，K = 3
+> **输入**：`arr[] = {0, 3, 2, 1, 2}, S = 2, K = 3`
+>
 > **输出**：`No`
-> **说明 **：［HTG8］无法通过值 3 到达索引 1。
+>
+> **说明**：无法通过值 3 到达索引 1。
 
-**方法 1 –使用 BFS** 下面讨论[广度优先搜索（BFS）](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)方法：
+**方法 1 – 使用 BFS** 下面讨论[广度优先搜索（BFS）](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)方法：
 
 *   将起始索引`S`作为源节点，并将其插入[队列](http://www.geeksforgeeks.org/queue-data-structure/)中。
 
 *   当队列不为空时，请执行以下操作：
 
-    1.  从队列顶部弹出 **temp** 元素。
+    1.  从队列顶部弹出`temp`元素。
 
-    2.  如果**临时**已被访问或它超出了绑定索引的数组，则转到步骤 1。
+    2.  如果`temp`已被访问或它超出了绑定索引的数组，则转到步骤 1。
 
     3.  否则将其标记为已访问。
 
-    4.  现在，如果 **temp** 是值为`K`的数组的索引，则打印**为“是”** 。
+    4.  现在，如果`temp`是值为`K`的数组的索引，则打印`yes`。
 
-    5.  否则，从 temp 到**（temp + arr [temp]）**，**（temp – arr [temp]）**两个可能的目的地，并将其推入队列。
+    5.  否则，从`temp`到`temp + arr[temp]`，`temp – arr[temp]`两个可能的目的地，并将其推入队列。
 
-*   如果在上述步骤之后未达到具有`K`值的索引，则打印**“否”** 。
+*   如果在上述步骤之后未达到具有`K`值的索引，则打印`No`。
 
 下面是上述方法的实现：
 
@@ -422,19 +429,19 @@ No
 
 **辅助空间**：*`O(N)`*
 
-**方法 2 –使用 DFS**：下面讨论[深度优先搜索（DFS）](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)方法：
+**方法 2 – 使用 DFS**：下面讨论[深度优先搜索（DFS）](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)方法：
 
-1.  初始化数组 **Visited []** ，以将访问顶点标记为 true。
+1.  初始化数组`Visited[]`，以将访问顶点标记为`true`。
 
 2.  从起始索引`S`开始，然后使用[递归](http://www.geeksforgeeks.org/recursion/)深入探索其他索引。
 
-3.  在每个递归调用中，我们检查该索引是否有效或以前没有访问过。 如果不是这样，则返回 false。
+3.  在每个递归调用中，我们检查该索引是否有效或以前没有访问过。 如果不是这样，则返回`false`。
 
-4.  否则，如果该索引值为`K`，则返回 true。
+4.  否则，如果该索引值为`K`，则返回`true`。
 
-5.  否则，将该索引标记为已访问，并根据当前索引 i 递归处理 **i + arr [i]** 和 **i – arr [i]** 。
+5.  否则，将该索引标记为已访问，并根据当前索引 i 递归处理`i + arr[i]`和`i – arr[i]`。
 
-6.  如果任何递归调用返回 true，则意味着我们可以到达值`K`的索引，并打印**“是”** 其他打印**“否”** 。
+6.  如果任何递归调用返回`true`，则意味着我们可以到达值`K`的索引，并打印`Yes`否则打印`No`。
 
 下面是上述方法的实现：
 

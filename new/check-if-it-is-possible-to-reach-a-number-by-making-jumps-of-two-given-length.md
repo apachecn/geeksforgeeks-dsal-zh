@@ -2,13 +2,13 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-if-it-is-possible-to-reach-a-number-by-making-jumps-of-two-given-length/](https://www.geeksforgeeks.org/check-if-it-is-possible-to-reach-a-number-by-making-jumps-of-two-given-length/)
 
-给定起始位置“ k”和两个跳跃大小“ d1”和“ d2”，我们的任务是找到可能的达到“ x”的最小跳跃次数。
+给定起始位置`k`和两个跳跃大小`d1`和`d2`，我们的任务是找到可能的达到`x`的最小跳跃次数。
 
-在任何位置 P，我们都可以跳到位置：
+在任何位置`P`，我们都可以跳到位置：
 
-*   **P + d1** 和 **P – d1**
+*   `P + d1`和`P – d1`
 
-*   **P + d2** 和 **P – d2**
+*   `P + d2`和`P – d2`
 
 **示例**：
 
@@ -24,7 +24,7 @@ Output : -1
 
 ```
 
-在[的上一篇文章](https://www.geeksforgeeks.org/reach-the-numbers-by-making-jumps-of-two-given-lengths/)中，我们讨论了一种通过跳两个给定长度来检查 K 是否可到达数字列表的策略。
+在[的上一篇文章](https://www.geeksforgeeks.org/reach-the-numbers-by-making-jumps-of-two-given-lengths/)中，我们讨论了一种通过跳两个给定长度来检查`K`是否可到达数字列表的策略。
 
 在这里，我们没有给出数字列表，而是给我们一个整数`x`，如果可以从`k`到达整数，则任务是找到所需的最小步数或跳跃数。
 
@@ -32,19 +32,19 @@ Output : -1
 
 **方法**解决此问题：
 
-*   从`k`检查“ x”是否可达。 如果满足**（x – k）％gcd（d1，d2）= 0** ，则可以从 k 获得数字`x`。
+*   从`k`检查`x`是否可达。 如果满足`(x – k) % gcd(d1, d2) = 0`，则可以从`k`获得数字`x`。
 
-*   如果 x 可达：
+*   如果`x`可达：
 
     1.  维护哈希表以存储已访问的位置。
 
-    2.  从位置 k 开始应用 bfs 算法。
+    2.  从位置`k`开始应用 bfs 算法。
 
-    3.  如果您以“ stp”步长到达位置 P，则可以以“ stp + 1”步长到达 p + d1 位置。
+    3.  如果您以`stp`步长到达位置`P`，则可以以`stp + 1`步长到达`p + d1`位置。
 
-    4.  如果位置 P 是要求的位置“ x”，那么达到 P 的步骤就是答案
+    4.  如果位置`P`是要求的位置`x`，那么达到`P`的步骤就是答案
 
-下图描述了算法如何找出达到 k = 10，d1 = 4 和 d2 = 6 时 x = 8 所需的步数。
+下图描述了算法如何找出达到`k = 10`，`d1 = 4`，`d2 = 6`，`x = 8`时所需的步数。
 
 ![Algo Example](https://docs.google.com/drawings/d/e/2PACX-1vQNc-ChldajMUiKj_gyuUb4IrdhU7cCl-CLDSnA_slb_nU47DBOWqvE-ME35jMpaU6-vF4Jj1abOrrH/pub?w=1440&h=1080)
 
