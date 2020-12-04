@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-given-graph-tree/](https://www.geeksforgeeks.org/check-given-graph-tree/)
 
-编写一个函数，如果给定的无向图是树，则返回 true，否则返回 false。 例如，以下图形是一棵树。
+编写一个函数，如果给定的无向图是树，则返回`true`，否则返回`false`。 例如，以下图形是一棵树。
 
 ![cycleGraph](img/3047851920973d5ea37f3b9a565ec8b3.png)
 
@@ -20,7 +20,7 @@
 
 **如何检测无向图中的周期？**
 
-我们可以使用 BFS 或 DFS。 对于每个访问的顶点“ v”，如果存在一个相邻的“ u”，使得 u 已被访问并且 u 不是 v 的父代，则图中存在一个循环。 如果我们找不到任何顶点相邻的顶点，则说没有循环（有关更多详细信息，请参见无向图中的[检测循环）。
+我们可以使用 BFS 或 DFS。 对于每个访问的顶点`v`，如果存在一个相邻的`u`，使得`u`已被访问并且`u`不是`v`的父代，则图中存在一个循环。 如果我们找不到任何顶点相邻的顶点，则说没有循环（有关更多详细信息，请参见无向图中的[检测循环）。
 
 **如何检查连通性？**
 
@@ -56,8 +56,8 @@ Graph::Graph(int V)
 
 void Graph::addEdge(int v, int w) 
 { 
-    adj[v].push_back(w); // Add w to v’s list. 
-    adj[w].push_back(v); // Add v to w’s list. 
+    adj[v].push_back(w); // Add w to v's list. 
+    adj[w].push_back(v); // Add v to w's list. 
 } 
 
 // A recursive function that uses visited[] and parent to 

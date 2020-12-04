@@ -14,13 +14,13 @@
 
 下面给出的是检查图的二部性的算法。
 
-*   使用 *color []* 数组为每个表示相反颜色的节点存储 0 或 1。
+*   使用`color[]`数组为每个表示相反颜色的节点存储 0 或 1。
 
 *   从任何节点调用函数 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。
 
-*   如果先前尚未访问过节点 u，则将！color [v]分配给 color [u]，然后再次调用 DFS 来访问连接到 u 的节点。
+*   如果先前尚未访问过节点`u`，则将`!color[v]`分配给`color[u]`，然后再次调用 DFS 来访问连接到`u`的节点。
 
-*   如果在任何时候 color [u]等于！color [v]，则该节点是二分的。
+*   如果在任何时候`color[u]`等于`!color[v]`，则该节点是二分的。
 
 *   修改 DFS 函数，使其在最后返回一个布尔值。
 

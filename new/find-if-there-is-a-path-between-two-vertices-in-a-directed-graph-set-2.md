@@ -11,11 +11,11 @@
 > ![](img/40ca76ea468053c881ac72e49e82f1e2.png)
 > 
 > **输入**：（u，v）=（1，3）
-> **输出**：是
+> **输出**：`Yes`
 > **说明**：1 至 3，1-> 2-> 3
 > 
 > **输入**：（u，v）=（3，6）
-> **输出**：否
+> **输出**：`No`
 > **说明**：3 至 6
 
 [这里讨论了](https://www.geeksforgeeks.org/find-if-there-is-a-path-between-two-vertices-in-a-given-graph/) [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 或 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 的解决方案。

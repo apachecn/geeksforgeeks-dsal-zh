@@ -7,13 +7,13 @@
 Kosaraju 基于 BFS 的简单算法的工作原理也与基于 DFS 的算法相同。
 
 ```
-Following is Kosaraju’s BFS based simple algorithm
+Following is Kosaraju's BFS based simple algorithm
 that does two BFS traversals of graph:
 1) Initialize all vertices as not visited.
 
 2) Do a BFS traversal of graph starting from 
    any arbitrary vertex v. If BFS traversal 
-   doesn’t visit all vertices, then return false.
+   doesn't visit all vertices, then return false.
 
 3) Reverse all edges (or find transpose or reverse 
    of graph)
@@ -22,12 +22,12 @@ that does two BFS traversals of graph:
 
 5) Again do a BFS traversal of reversed graph starting
    from same vertex v (Same as step 2). If BFS traversal
-   doesn’t visit all vertices, then return false. 
+   doesn't visit all vertices, then return false. 
    Otherwise, return true.
 
 ```
 
-如果可以从一个顶点 v 到达每个节点，并且每个节点可以到达相同的顶点 v，则该图又很简单，则该图是牢固连接的。 在步骤 2 中，我们检查是否所有顶点都可以从 v 到达。在步骤 5 中，我们检查所有顶点是否都可以到达 v（在反向图中，如果所有顶点都可以从 v 到达，则所有顶点都可以在原始图中到达 v。）
+如果可以从一个顶点`v`到达每个节点，并且每个节点可以到达相同的顶点`v`，则该图又很简单，则该图是牢固连接的。 在步骤 2 中，我们检查是否所有顶点都可以从`v`到达。在步骤 5 中，我们检查所有顶点是否都可以到达`v`（在反向图中，如果所有顶点都可以从`v`到达，则所有顶点都可以在原始图中到达`v`。）
 
 **举例说明**：
 
@@ -37,15 +37,15 @@ Given a directed to check if it is strongly connected or not.
 
 ![graph 1](img/64445ed5b2cb865cf075840c278ac365.png)
 
-步骤 1：从顶点 2 开始，获得的 BFS 为 2 3 4 0 1
+步骤 1：从顶点 2 开始，获得的 BFS 为`2 3 4 0 1`
 
-第 2 步：反转给定图后，我们得到了列出的图。
+步骤 2：反转给定图后，我们得到了列出的图。
 
 ![graph 1](img/cf130974782093cdb0c722ace0f2aae2.png)
 
-步骤 3：再次从顶点 2 开始，BFS 为 2 1 4 0 3
+步骤 3：再次从顶点 2 开始，BFS 为`2 1 4 0 3`
 
-第 4 步：两种情况下（第 1 步和第 3 步）的顶点均不可见。
+步骤 4：两种情况下（第 1 步和第 3 步）的顶点均不可见。
 
 步骤 5：因此，给定图是牢固连接的。
 
@@ -55,13 +55,13 @@ Given a directed to check if it is strongly connected or not.
 
 ![graph 2](img/56a919d9382e183deee188ff09e84a30.png)
 
-步骤 1：从顶点 2 开始，获得的 BFS 为 2 3 4
+步骤 1：从顶点 2 开始，获得的 BFS 为`2 3 4`
 
-第 2 步：反转给定图后，我们得到了列出的图。
+步骤 2：反转给定图后，我们得到了列出的图。
 
 ![graph 2](img/ed270ef0aa0e217d58fecaabd9725ca2.png)
 
-步骤 3：再次从顶点 2 开始，BFS 为 2 1 0
+步骤 3：再次从顶点 2 开始，BFS 为`2 1 0`
 
 步骤 4：原始图形中的顶点 0、1 和反向图形中的 3、4 保持不变。
 
@@ -151,7 +151,7 @@ Graph Graph::getTranspose()
 
 void Graph::addEdge(int v, int w) 
 { 
-    adj[v].push_back(w); // Add w to v’s list. 
+    adj[v].push_back(w); // Add w to v's list. 
 } 
 
 // The main function that returns true if graph 
@@ -168,7 +168,7 @@ bool Graph::isSC()
     // from first vertex. 
     BFSUtil(0, visited); 
 
-    // If BFS traversal doesn’t visit all 
+    // If BFS traversal doesn't visit all 
     // vertices, then return false. 
     for (int i = 0; i < V; i++) 
         if (visited[i] == false) 
