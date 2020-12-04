@@ -463,7 +463,7 @@ if __name__ == '__main__':
 ```
 Path exist between 0 and 14
 Intersection at: 7
-*****Path*****
+****Path****
 0 4 6 7 8 10 14 
 
 ```

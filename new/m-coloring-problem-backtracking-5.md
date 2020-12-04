@@ -6,13 +6,13 @@
 
 **输入输出格式**：，
 
-***输入**：*
+**输入**：
 
 1.  二维数组 graph [V] [V]，其中 V 是图形中的顶点数，而 graph [V] [V]是图形的邻接矩阵表示。 如果存在从 i 到 j 的直接边，则值 graph [i] [j]为 1，否则 graph [i] [j]为 0。
 
 2.  整数 m，它是可以使用的最大颜色数。
 
-***输出**：*
+**输出**：
 
 数组 color [V]，其数字应为 1 到 m。 color [i]应该表示分配给第 i 个顶点的颜色。 如果图形不能用 m 种颜色上色，则代码也应返回 false。
 
@@ -184,9 +184,9 @@ Solution Exists: Following are the assigned colors
 
     共有 O（m ^ V）种颜色组合。 因此，时间复杂度为 O（m ^ V）。
 
-*   **空间复杂度**：O（V）。
+*   **空间复杂度**：`O(V)`。
 
-    要存储输出数组，需要 O（V）空间。
+    要存储输出数组，需要`O(V)`空间。
 
 **<u>方法 2</u> **：[回溯](http://www.geeksforgeeks.org/backtracking-algorithms/)。
 
@@ -678,9 +678,9 @@ Solution Exists: Following are the assigned colors
 
     共有 O（m ^ V）种颜色组合。 因此，时间复杂度为 O（m ^ V）。 上限时间复杂度保持不变，但平均时间将减少。
 
-*   **空间复杂度**：O（V）。
+*   **空间复杂度**：`O(V)`。
 
-    要存储输出数组，需要 O（V）空间。
+    要存储输出数组，需要`O(V)`空间。
 
 **<u>方法 3：</u>** 使用 BFS
 

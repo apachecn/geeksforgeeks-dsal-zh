@@ -46,7 +46,7 @@ Dijkstra 算法与 [Prim 的最小生成树](https://www.geeksforgeeks.org/prims
 
 ![](img/27e81882c6218fbc68b69457ed5c8404.png "Fig-1")
 
-***如何实现以上算法？***
+**如何实现以上算法？**
 
 我们使用布尔数组 sptSet []表示 SPT 中包含的一组顶点。 如果值 sptSet [v]为 true，则顶点 v 包含在 SPT 中，否则不包含。 数组 dist []用于存储所有顶点的最短距离值。
 

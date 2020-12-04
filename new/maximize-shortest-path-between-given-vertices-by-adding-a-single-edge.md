@@ -311,9 +311,9 @@ public static void main (String[] args)
 
 ```
 
-***时间复杂度**：O（N * log N + M）*
+**时间复杂度**：O（N * log N + M）
 
-***辅助空间**：`O(N)`*
+**辅助空间**：`O(N)`
 
 
 

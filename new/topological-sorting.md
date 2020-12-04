@@ -418,7 +418,7 @@ Following is a Topological Sort of the given graph
 
     上面的算法只是带有额外堆栈的 DFS。 因此，时间复杂度与 DFS 相同。
 
-*   **辅助空间**：O（V）。
+*   **辅助空间**：`O(V)`。
 
     堆栈需要额外的空间。
 

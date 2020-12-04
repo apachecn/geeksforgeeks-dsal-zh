@@ -498,9 +498,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：O（N <sup>3</sup> ），其中 N 是顶点数。*
+**时间复杂度**：O（N <sup>3</sup> ），其中 N 是顶点数。
 
-***辅助空间**：`O(N)`*
+**辅助空间**：`O(N)`
 
 **高效方法**：的想法是对每个顶点使用 [](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/) [DFS 算法](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)，并使用 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，每个顶点的访问成本 可以在线性时间内找到此顶点的顶点。 请按照以下步骤解决问题：
 
@@ -792,9 +792,9 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：`O(N^2)`，其中 N 是顶点数。*
+**时间复杂度**：`O(N^2)`，其中 N 是顶点数。
 
-***辅助空间**：`O(N)`*
+**辅助空间**：`O(N)`
 
 
 

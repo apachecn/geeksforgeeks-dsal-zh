@@ -164,7 +164,7 @@ int main()
 
 **时间复杂度**：`O(V + E)`，其中 V 是节点数，E 是边。
 
-**辅助空间**：O（V）
+**辅助空间**：`O(V)`
 
 **方法 2：使用** [广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)
 
@@ -405,7 +405,7 @@ int main()
 
 **时间复杂度**：O（E + V log V）其中 V 是节点数，E 是边。
 
-**辅助空间**：O（V）
+**辅助空间**：`O(V)`
 
 **方法 4：使用** [Bellmon Ford](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)
 
@@ -497,7 +497,7 @@ int main()
 
 **时间复杂度**：O（E * V）其中 V 是节点数，E 是边。
 
-**辅助空间**：O（V）
+**辅助空间**：`O(V)`
 
 
 

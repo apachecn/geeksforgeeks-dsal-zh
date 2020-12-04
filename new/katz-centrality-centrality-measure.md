@@ -16,7 +16,7 @@ Katz 中心性通过测量直接邻居（一级节点）以及网络中通过这
 
 例如，在右图中，假设正在测量 John 的中心性，并且假设![\alpha =0.5](img/8ff60291469b7d7d94bc9f7e77a86abe.png "Rendered by QuickLaTeX.com")。 分配给将 John 与他的直接邻居 Jane 和 Bob 连接的每个链接的权重将为![(0.5)^{1}=0.5](img/96341ce47e9e0abdad4c5955337ea0c6.png "Rendered by QuickLaTeX.com")。 由于 Jose 通过 Bob 间接连接到 John，因此分配给该连接（由两个链接组成）的权重将为![(0.5)^{2}=0.25](img/cbab3cf08eb1acde1988b2c555e2d6e0.png "Rendered by QuickLaTeX.com")。 类似地，通过阿齐兹和简分配给阿涅塔与约翰之间的连接的权重将为![(0.5)^{3}=0.125](img/0927c08df316ea3197cb1b9ec4cd8b40.png "Rendered by QuickLaTeX.com")，通过迭戈，何塞和鲍勃分配给阿涅塔与约翰之间的连接的权重将为![(0.5)^{4}=0.0625](img/44c7e44c046093b8781c7f3d73d21954.png "Rendered by QuickLaTeX.com")。
 
-***数学公式***
+**数学公式**
 
 令 A 为所考虑网络的邻接矩阵。 A 的元素![(a_{ij})](img/5f54ffaa6f387c18a5b655962e57c714.png "Rendered by QuickLaTeX.com")是变量，如果节点 i 连接到节点 j 则值为 1，否则为 0。 A 的幂表示通过中间节点在两个节点之间存在（或不存在）链接。 例如，在矩阵![A^{3}](img/727519fd0542662541ed38ef90818702.png "Rendered by QuickLaTeX.com")中，如果元素![(a_{2,12})=1](img/14fe14cf47bc297d8123aa27185efc7b.png "Rendered by QuickLaTeX.com")表示节点 2 和节点 12 通过节点 2 的某些第一级和第二级邻居连接。如果![ C_{\mathrm {Katz} }(i)](img/8e34c970e6b8071a7a56408788910bfa.png "Rendered by QuickLaTeX.com")表示节点 i 的 Katz 中心性，则在数学上 ：
 

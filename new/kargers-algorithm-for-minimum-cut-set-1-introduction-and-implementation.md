@@ -254,7 +254,7 @@ Contracting edge 0-3
 Cut found by Karger's randomized algo is 2
 ```
 
-***请注意，以上程序基于随机函数的结果，可能会产生不同的输出。***
+**请注意，以上程序基于随机函数的结果，可能会产生不同的输出。**
 
 在本文中，我们讨论了简单的 Karger 算法，并发现该算法并不总是产生最小切割。 上述算法产生最小切割，其概率大于或等于 1 /（n <sup>2</sup> ）。 请参阅下一篇[Karl's Algortihm 的分析和应用[》，其中讨论了应用，这种可能性的证明和改进。](https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-2-analysis-and-applications/)
 

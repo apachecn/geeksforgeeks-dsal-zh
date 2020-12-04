@@ -126,7 +126,7 @@ p（浮点数）–边创建的概率。
 
 接下来，我们将使用库 networkx 讨论 python 中的自我图和各种其他类型的图。
 
-***参考文献***
+**参考文献**
 
 *   [https://zh.wikipedia.org/wiki/Erd%C5%91s%E2%80%93R%C3%A9nyi_model](https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93R%C3%A9nyi_model)*   [http://networkx.readthedocs.io/en/networkx-1.10/index.html](http://networkx.readthedocs.io/en/networkx-1.10/index.html)
 

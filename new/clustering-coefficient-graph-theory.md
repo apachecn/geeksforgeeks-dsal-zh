@@ -8,11 +8,11 @@
 
 该度量有两个版本：全局和局部。 全局版本旨在总体上指示网络中的群集，而本地版本则指示单个节点的嵌入性。
 
-***全局聚类系数***
+**全局聚类系数**
 
 全局聚类系数基于节点的三元组。 一个三元组由三个连接的节点组成。 因此，三角形包含三个封闭的三胞胎，一个在每个节点上居中（n.b.这意味着三角形中的三个三胞胎来自节点的重叠选择）。 全局聚类系数是封闭的三元组（或 3 个三角形）在三元组总数（开放和封闭的总数）中的数量。 Luce 和 Perry（1949）进行了首次测量。 该措施可以指示整个网络（全局）中的群集，并且可以应用于无向和有向网络。
 
-***局部聚类系数***
+**局部聚类系数**
 
 图![G=(V,E)](img/093e437fd3c691acd835cb9ffa5a0562.png "Rendered by QuickLaTeX.com")正式由一组顶点 V 和它们之间的一组边 E 组成。 边![e_{ij}](img/6b0903e8ddacdad971d1a46a99662457.png "Rendered by QuickLaTeX.com")将顶点![v_{i}](img/cb924d771c71bd8bf6a87939ce81bccb.png "Rendered by QuickLaTeX.com")与顶点![v_{j}](img/7685dddc7b96ee1ca8f79432d98fb175.png "Rendered by QuickLaTeX.com")连接起来。
 
@@ -119,7 +119,7 @@ def average_clustering(G, trials=1000):
 
 在本系列的下一篇文章中，我们将讨论针对任何给定网络的另一种集中度度量。
 
-***参考文献***
+**参考文献**
 
 *   [https://en.wikipedia.org/wiki/Clustering_coefficient](https://en.wikipedia.org/wiki/Clustering_coefficient)*   [http://networkx.readthedocs.io/en/networkx-1.10/index.html](http://networkx.readthedocs.io/en/networkx-1.10/index.html)
 

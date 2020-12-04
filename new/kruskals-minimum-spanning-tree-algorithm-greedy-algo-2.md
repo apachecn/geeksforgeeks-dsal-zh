@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
 
-***什么是最小生成树？***
+**什么是最小生成树？**
 
 给定一个连接且无向的图，该图的*生成树*是一个子图，它是一棵树并将所有顶点连接在一起。 单个图可以具有许多不同的生成树。 加权，连接和无向图的*最小生成树（MST）*或最小权重生成树是权重小于或等于其他所有生成树的权重的生成树。 生成树的权重是赋予生成树的每个边的权重之和。
 

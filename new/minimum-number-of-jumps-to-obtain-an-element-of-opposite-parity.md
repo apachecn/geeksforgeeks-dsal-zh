@@ -21,9 +21,9 @@
 
 **朴素的方法**：解决问题的最简单方法是[遍历数组](https://www.geeksforgeeks.org/c-program-to-traverse-an-array/)，并对每个数组元素 **arr [i]执行[广度优先遍历](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/) ]** ，方法是反复将 arr [i – jumps [i]] 和 **arr [i + jumps [i]]** 转换为**，直到出现无效索引为止， 转换，检查数组元素是否与前一个元素具有相反的奇偶校验。 相应地打印每个数组元素所需的最小跳转数。**
 
-***时间复杂度**：`O(N^2)`*
+**时间复杂度**：`O(N^2)`
 
-***辅助空间**：`O(N)`*
+**辅助空间**：`O(N)`
 
 **高效方法**：为了优化上述方法，其思想是将[多源 BFS](https://www.geeksforgeeks.org/multi-source-shortest-path-in-unweighted-graph/) 分别用于偶数和奇数数组元素。 请按照以下步骤解决问题：
 
@@ -284,9 +284,9 @@ if __name__=='__main__':
 3 2 -1 1 -1
 ```
 
-***时间复杂度**：`O(N)`*
+**时间复杂度**：`O(N)`
 
-***辅助空间**：`O(N)`*
+**辅助空间**：`O(N)`
 
 
 

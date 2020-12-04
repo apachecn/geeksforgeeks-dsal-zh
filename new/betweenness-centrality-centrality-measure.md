@@ -6,7 +6,7 @@
 
 中间性中心性在网络理论中得到广泛应用：它代表节点之间相互站立的程度。 例如，在电信网络中，具有较高中间度中心度的节点将对网络具有更多控制权，因为更多信息将通过该节点。 中间性中心性被设计为中心性的一般度量：它适用于网络理论中的各种问题，包括与社会网络，生物学，运输和科学合作有关的问题。
 
-***定义***
+**定义**
 
 节点`v`的中间性由以下表达式给出：
 
@@ -26,7 +26,7 @@
 
 注意，这始终是从较小范围到较大范围的缩放比例，因此不会损失精度。
 
-***加权网络***
+**加权网络**
 
 在加权网络中，连接节点的链接不再视为二进制交互，而是按其容量，影响，频率等按比例进行加权， 这不仅增加了拓扑效应，还增加了网络内部异构的另一个维度。 节点在加权网络中的强度由其相邻边的权重之和得出。
 
@@ -163,7 +163,7 @@ def betweenness_centrality(G, k=None, normalized=True, weight=None,
 
 以上结果是一个字典，描述了每个节点之间的中间性中心值。 以上是我关于集中度度量的文章系列的扩展。 保持联网！！！
 
-***参考文献***
+**参考文献**
 
 *   [https://en.wikipedia.org/wiki/Betweenness_centrality](https://en.wikipedia.org/wiki/Betweenness_centrality)*   [http://networkx.readthedocs.io/en/networkx-1.10/index.html](http://networkx.readthedocs.io/en/networkx-1.10/index.html)
 

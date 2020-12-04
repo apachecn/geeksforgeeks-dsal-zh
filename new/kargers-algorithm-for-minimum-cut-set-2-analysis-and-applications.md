@@ -16,7 +16,7 @@
 
 如前一篇文章所述， [Karger 的算法](https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-1-introduction-and-implementation/)并非总能找到最小切割。 在这篇文章中，讨论了找到最小切割的可能性。
 
-***由 Karger 算法产生的剪切为 Min-Cut 的概率大于或等于 1 /（n <sup>2</sup> ）***
+**由 Karger 算法产生的剪切为 Min-Cut 的概率大于或等于 1 /（n <sup>2</sup> ）**
 
 **证明**：
 
@@ -45,7 +45,7 @@ events happen.
 So the required probability is P[S1' ∩ S2' ∩ S3' ∩  ............]
 ```
 
-***在第一次迭代中选择最小切割边的概率**：*
+**在第一次迭代中选择最小切割边的概率**：
 
 ```
 Let us calculate  P[S1']
@@ -66,7 +66,7 @@ From above two facts, we can conclude below.
   P[S1] <= c (cn 2) <="2/n" p[s1] <= c (cn 2) <="2/n" p[s<sub>1<sup>'</sup>] >= (1-2/n) ------------(1)=>=>=></sub>
 ```
 
-***在第二次迭代中选择最小切割边的可能性**：*
+**在第二次迭代中选择最小切割边的可能性**：
 
 ```
 
@@ -84,7 +84,7 @@ we can replace n by n-1 in inequality (1).  So we get.
   P[S1' ∩  S2'] >= (1-2/n) x (1-2/(n-1))
 ```
 
-***在所有迭代中选择最小切割边的概率**：*
+**在所有迭代中选择最小切割边的概率**：
 
 ```
 

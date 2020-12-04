@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/degree-centrality-centrality-measure/](https://www.geeksforgeeks.org/degree-centrality-centrality-measure/)
 
-***度***
+**度**
 
 在图论中，图的顶点的度（或价）是入射到该顶点的边数，循环数为 2。[1] 顶点的程度![ v](img/0cee31e9a8eb7995804b7f41d3845812.png "Rendered by QuickLaTeX.com")表示为![ \deg(v)](img/23b3cacf06da31721004ac0b9f0d0567.png "Rendered by QuickLaTeX.com")或![ \deg v](img/247bc1d98e6c904c2ee121d320b12bf7.png "Rendered by QuickLaTeX.com")。 以![\Delta ](img/af3a9a417b4b5ca5d36b52c478070cf3.png "Rendered by QuickLaTeX.com")（G）表示的图 G 的最大度和以![\delta ](img/ce7b15c54a2188b2b8529beda0739b50.png "Rendered by QuickLaTeX.com")（G）表示的图的最小度是其顶点的最大和最小度。 在右边的图中，最大次数是 5，最小次数是 0。在规则图中，所有次数都是相同的，因此我们可以说图的次数。
 

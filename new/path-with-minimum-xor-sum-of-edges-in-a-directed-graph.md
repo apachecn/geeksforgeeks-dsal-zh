@@ -206,7 +206,7 @@ if __name__ == '__main__':
 
 ```
 
-***时间复杂度**：O（（E + V）logV）*
+**时间复杂度**：O（（E + V）logV）
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 

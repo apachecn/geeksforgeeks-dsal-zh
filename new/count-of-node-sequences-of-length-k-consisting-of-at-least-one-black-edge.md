@@ -575,7 +575,7 @@ public static void Main(String[] args)
 
 ```
 
-***时间复杂度**：`O(N)`，因为 DFS 遍历需要 O（Vertices + Edges）== O（N +（N-1））==`O(N)`）复杂度。*
+**时间复杂度**：`O(N)`，因为 DFS 遍历需要 O（Vertices + Edges）== O（N +（N-1））==`O(N)`）复杂度。
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 

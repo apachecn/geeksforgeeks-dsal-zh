@@ -123,7 +123,7 @@ def barabasi_albert_graph(n, m, seed=None):
 
 因此，我想进一步描述有关 NetworkX 库及其模块的更多信息，这些模块主要侧重于网络的中心性度量（尤其是无标度模型）。
 
-***参考文献***
+**参考文献**
 
 *   [https://zh.wikipedia.org/wiki/Barab%C3%A1si%E2%80%93Albert_model](https://en.wikipedia.org/wiki/Barab%C3%A1si%E2%80%93Albert_model)*   [http://networkx.readthedocs.io/en/networkx-1.10/index.html](http://networkx.readthedocs.io/en/networkx-1.10/index.html)
 

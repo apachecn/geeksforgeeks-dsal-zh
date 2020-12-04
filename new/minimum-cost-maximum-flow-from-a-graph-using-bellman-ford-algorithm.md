@@ -239,9 +239,9 @@ public class MinCostMaxFlow {
 
 ```
 
-***时间复杂度**：O（V <sup>2</sup> * E <sup>2</sup> ）其中 V 是顶点数，E 是边数。*
+**时间复杂度**：O（V <sup>2</sup> * E <sup>2</sup> ）其中 V 是顶点数，E 是边数。
 
-***辅助空间**：O（V）*
+**辅助空间**：`O(V)`
 
 
 

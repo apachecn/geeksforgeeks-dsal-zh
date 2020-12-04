@@ -195,7 +195,7 @@ int main()
 
 ```
 
-***时间复杂度**：（E * log（V））*
+**时间复杂度**：（E * log（V））
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 

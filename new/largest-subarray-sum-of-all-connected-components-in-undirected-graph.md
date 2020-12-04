@@ -553,7 +553,7 @@ Maximum subarray sum among all connected components = 5
 
 **时间复杂度**：*O（V <sup>2</sup> ）*。
 
-DFS 算法需要`O(V + E)`时间来运行，其中 V，E 是顶点 和无向图的边。 此外，在每次迭代中都会找到最大的连续子数组总和，这需要额外的 O（V）才能根据 Kadane 的算法计算并返回结果。 因此，整体复杂度为 **O（V <sup>2</sup> ）**
+DFS 算法需要`O(V + E)`时间来运行，其中 V，E 是顶点 和无向图的边。 此外，在每次迭代中都会找到最大的连续子数组总和，这需要额外的`O(V)`才能根据 Kadane 的算法计算并返回结果。 因此，整体复杂度为 **O（V <sup>2</sup> ）**
 
 ![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
 
