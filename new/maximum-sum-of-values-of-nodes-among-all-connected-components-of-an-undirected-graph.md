@@ -1,6 +1,6 @@
 # 无向图
 
-的所有连接组件之间的节点值的最大和。
+的所有连通组件之间的节点值的最大和。
 
 > 原文： [https://www.geeksforgeeks.org/maximum-sum-of-values-of-nodes-among-all-connected-components-of-an-undirected-graph/](https://www.geeksforgeeks.org/maximum-sum-of-values-of-nodes-among-all-connected-components-of-an-undirected-graph/)
 

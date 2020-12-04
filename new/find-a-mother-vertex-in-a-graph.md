@@ -36,7 +36,7 @@ Output : 5
 
 **我们可以做得更好吗？**
 
-我们可以在`O(V + E)`时间找到母顶点。 这个想法是基于 [Kosaraju 的强连接组件算法](https://www.geeksforgeeks.org/strongly-connected-components/)的。 在强连接的零部件图中，母顶点始终是零部件图中源零部件的顶点。 这个想法是基于以下事实。
+我们可以在`O(V + E)`时间找到母顶点。 这个想法是基于 [Kosaraju 的强连通组件算法](https://www.geeksforgeeks.org/strongly-connected-components/)的。 在强连接的零部件图中，母顶点始终是零部件图中源零部件的顶点。 这个想法是基于以下事实。
 
 如果存在母顶点（或多个顶点），则母顶点之一是 DFS 中最后完成的顶点。 （或者母顶点在 DFS 遍历中具有最大的完成时间）。
 

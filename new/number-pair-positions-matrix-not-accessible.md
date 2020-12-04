@@ -23,7 +23,7 @@ and no cell is accessible from it.
 
 ```
 
-将每个像元视为一个节点，编号从 1 到 N * N。 可以使用（x – 1）* N + y 将每个像元（x，y）映射到数字。 现在，将每个给定的允许路径视为节点之间的一条边。 这将形成连接组件的不相交集合。 现在，使用[深度优先遍历](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)或[宽度优先遍历](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/)，我们可以轻松地找到节点的数量或连接组件的大小，例如 x。 现在，不可访问的路径数为 x *（N * N – x）。 这样，我们可以找到每个连接路径的不可访问路径。
+将每个像元视为一个节点，编号从 1 到 N * N。 可以使用（x – 1）* N + y 将每个像元（x，y）映射到数字。 现在，将每个给定的允许路径视为节点之间的一条边。 这将形成连通组件的不相交集合。 现在，使用[深度优先遍历](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/)或[宽度优先遍历](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/)，我们可以轻松地找到节点的数量或连通组件的大小，例如 x。 现在，不可访问的路径数为 x *（N * N – x）。 这样，我们可以找到每个连接路径的不可访问路径。
 
 以下是此方法的实现：
 

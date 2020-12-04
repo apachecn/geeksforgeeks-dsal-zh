@@ -1,10 +1,10 @@
 # 程序，用于计算无向图
 
-中已连接组件的数量
+中已连通组件的数量
 
 > 原文： [https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)
 
-给定无向图`g`，任务是打印图中的连接组件数。
+给定无向图`g`，任务是打印图中的连通组件数。
 
 **示例**：
 

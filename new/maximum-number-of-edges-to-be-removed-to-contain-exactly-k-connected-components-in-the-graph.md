@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/maximum-number-of-edges-to-be-removed-to-contain-exactly-k-connected-components-in-the-graph/](https://www.geeksforgeeks.org/maximum-number-of-edges-to-be-removed-to-contain-exactly-k-connected-components-in-the-graph/)
 
-给定[无向图](https://www.geeksforgeeks.org/graph-and-its-representations/)`G`，其中`N`个节点，`M`边和整数`K`， 找到可以去除的边的最大数量，以使去除边后剩下的`K`[连通组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)完全相同。 如果图形不能包含`K`连接组件，请打印`-1`。
+给定[无向图](https://www.geeksforgeeks.org/graph-and-its-representations/)`G`，其中`N`个节点，`M`边和整数`K`， 找到可以去除的边的最大数量，以使去除边后剩下的`K`[连通组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)完全相同。 如果图形不能包含`K`连通组件，请打印`-1`。
 
 **示例**：
 
@@ -12,7 +12,7 @@
 > ![](img/e4ed15f16980e5ceaea7e359e166c17d.png) 
 > **输出**：1
 > **说明**：
-> 一种可能的方法是删除边线[1、2]。 然后将有 2 个连接组件，如下所示：
+> 一种可能的方法是删除边线[1、2]。 然后将有 2 个连通组件，如下所示：
 > ![](img/9279f0184ceb9aade8675b0a968814dc.png)
 > 
 > **输入**：N = 3，M = 3，K = 3，边线[] [] = {{1，2}，{2，3}，{3，1}}
@@ -21,11 +21,11 @@
 > **说明**：可以去除所有边以形成 3 个相连的组件，如下所示：
 > ![](img/81335323897c797dbe9c9630fc1a9c2a.png)
 
-**方法**：为了解决给定的问题，[计算给定图形](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)中存在的连接组件的数量。 令计数为`C`。 观察到，如果`C`大于`K`，那么由于连接零件的数量只会增加，因此不可能去除边会产生`K`连接的零件。 否则，答案将始终存在。
+**方法**：为了解决给定的问题，[计算给定图形](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)中存在的连通组件的数量。 令计数为`C`。 观察到，如果`C`大于`K`，那么由于连接零件的数量只会增加，因此不可能去除边会产生`K`连接的零件。 否则，答案将始终存在。
 
 为了解决该问题，需要进行以下观察：
 
-*   假设 C <sub>1</sub> ，C <sub>2</sub> ，…，C <sub>c</sub> 是每个连接组件中的节点数。 然后，除去边后，每个组件的边必须为 C <sub>1</sub> – 1，C <sub>2</sub> – 1，…，C <sub>c</sub> -1。 因此，
+*   假设 C <sub>1</sub> ，C <sub>2</sub> ，…，C <sub>c</sub> 是每个连通组件中的节点数。 然后，除去边后，每个组件的边必须为 C <sub>1</sub> – 1，C <sub>2</sub> – 1，…，C <sub>c</sub> -1。 因此，
 
     > **C <sub>1</sub> – 1 + C <sub>2</sub> – 1 +…+ C <sub>c</sub> – 1 = C <sub>1</sub> + C <sub>2</sub> +…+ C <sub>c</sub> – C = N – C** ，其中`N`是数组数。
 
@@ -37,7 +37,7 @@
 
 请按照以下步骤解决问题：
 
-1.  [计算给定图形](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)中存在的已连接组件的数量。 令计数为`C`。
+1.  [计算给定图形](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)中存在的已连通组件的数量。 令计数为`C`。
 
 2.  如果`C`大于`K`，则打印`-1`。
 

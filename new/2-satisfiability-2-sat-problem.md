@@ -124,7 +124,7 @@ Thus, there is no possible assignment in such a case.
 
 如果 X 和![\bar{X}](img/4984e36db71f55a531274f258b6f7956.png "Rendered by QuickLaTeX.com")都位于同一 SCC（牢固连通组件）中，则 CNF 不能满足要求。
 
-有向图的强连接组件具有节点，因此可以从该 SCC 中的每个其他节点到达每个节点。
+有向图的强连通组件具有节点，因此可以从该 SCC 中的每个其他节点到达每个节点。
 
 现在，如果 X 和![\bar{X}](img/4984e36db71f55a531274f258b6f7956.png "Rendered by QuickLaTeX.com")位于同一 SCC 上，则我们肯定会出现![path(\bar{A} \rightarrow B) \& path({B} \rightarrow A)](img/48eef735295e78678f653988e9d3b681.png "Rendered by QuickLaTeX.com")，因此得出结论。
 

@@ -1,10 +1,10 @@
 # 二进制值图
 
-的所有连接组件之间可能的最大十进制等效项
+的所有连通组件之间可能的最大十进制等效项
 
 > 原文： [https://www.geeksforgeeks.org/maximum-decimal-equivalent-possible-among-all-connected-components-of-a-binary-valued-graph/](https://www.geeksforgeeks.org/maximum-decimal-equivalent-possible-among-all-connected-components-of-a-binary-valued-graph/)
 
-给定**二进制值** [无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，并带有`V`顶点和`E`边，任务是在所有 图的连接组件。 可以将二进制值图视为仅将二进制数**（0 或 1）**作为顶点值。
+给定**二进制值** [无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，并带有`V`顶点和`E`边，任务是在所有 图的连通组件。 可以将二进制值图视为仅将二进制数**（0 或 1）**作为顶点值。
 
 **示例**：
 
@@ -14,7 +14,7 @@
 > 
 > **输出**：3
 > **说明**：
-> 所连接组件的十进制当量如下：
+> 所连通组件的十进制当量如下：
 > [0，1]：最大可能的十进制当量= 2 [（ 10） <sub>2</sub> ]
 > [0，0，0]：最大可能的十进制当量= 2
 > [1，1]：最大可能的十进制当量= 3
@@ -35,7 +35,7 @@
 
 **方法**：
 
-*   这个想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的连接组件，如[此](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)文章中所述。
+*   这个想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的连通组件，如[此](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)文章中所述。
 
 *   对于每个连通组件，将存储二进制字符串并计算等效的十进制值。
 

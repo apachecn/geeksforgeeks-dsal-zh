@@ -1,6 +1,6 @@
 # 无向图
 
-中所有连接组件的最大子数组总和
+中所有连通组件的最大子数组总和
 
 > 原文： [https://www.geeksforgeeks.org/largest-subarray-sum-of-all-connected-components-in-undirected-graph/](https://www.geeksforgeeks.org/largest-subarray-sum-of-all-connected-components-in-undirected-graph/)
 
@@ -34,7 +34,7 @@
 > [-4、6]：最大子数组总和= 6
 > 因此，最大连续子数组总和= 9
 
-**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连接组件，如本文的[中所述。 对于每个连通组件，将根据 **Kadane 的算法**分析数组并计算最大连续子数组和，如](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[此](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)文章中所述。 设置一个全局变量，该变量在每次迭代时都与局部和值进行比较以获得最终结果。
+**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连通组件，如本文的[中所述。 对于每个连通组件，将根据 **Kadane 的算法**分析数组并计算最大连续子数组和，如](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[此](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)文章中所述。 设置一个全局变量，该变量在每次迭代时都与局部和值进行比较以获得最终结果。
 
 以下是上述方法的实现：
 

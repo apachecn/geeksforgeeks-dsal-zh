@@ -1,10 +1,10 @@
 # 无向图
 
-的所有连接组件中的最小元素的总和
+的所有连通组件中的最小元素的总和
 
 > 原文： [https://www.geeksforgeeks.org/sum-of-the-minimum-elements-in-all-connected-components-of-an-undirected-graph/](https://www.geeksforgeeks.org/sum-of-the-minimum-elements-in-all-connected-components-of-an-undirected-graph/)
 
-给定 N 个数字组成的数组 A，其中 A <sub>i</sub> 表示第（i + 1）<sup>个</sup>节点的值。 还给出了 M 对边，其中 u 和 v 表示通过边连接的节点。 任务是在给定无向图的所有连接组件中找到最小元素的总和。 如果一个节点与其他任何节点均无连接，则将其视为具有一个节点的组件。
+给定 N 个数字组成的数组 A，其中 A <sub>i</sub> 表示第（i + 1）<sup>个</sup>节点的值。 还给出了 M 对边，其中 u 和 v 表示通过边连接的节点。 任务是在给定无向图的所有连通组件中找到最小元素的总和。 如果一个节点与其他任何节点均无连接，则将其视为具有一个节点的组件。
 
 **示例**：
 

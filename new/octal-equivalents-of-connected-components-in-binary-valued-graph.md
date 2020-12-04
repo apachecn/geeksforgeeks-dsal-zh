@@ -1,10 +1,10 @@
 # 二进制值图
 
-中连接组件的八进制等效项
+中连通组件的八进制等效项
 
 > 原文： [https://www.geeksforgeeks.org/octal-equivalents-of-connected-components-in-binary-valued-graph/](https://www.geeksforgeeks.org/octal-equivalents-of-connected-components-in-binary-valued-graph/)
 
-给定**二进制值** [无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，并带有`V`顶点和`E`边，任务是找到**八进制等效项** 图中所有已连接组件的]。 可以将二进制值图视为仅将二进制数**（0 或 1）**作为顶点值。
+给定**二进制值** [无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，并带有`V`顶点和`E`边，任务是找到**八进制等效项** 图中所有已连通组件的]。 可以将二进制值图视为仅将二进制数**（0 或 1）**作为顶点值。
 
 **示例**：
 
@@ -31,7 +31,7 @@
 > 链= 1 1 0 八进制等效值= 6
 > 链= 1 0 八进制等效值= 2
 
-**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连接组件，如本文的[中所述。 对于每个连通组件，将显示二进制字符串，并根据二进制值（如](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[本文](https://www.geeksforgeeks.org/convert-binary-number-octal/)中所述）计算等效的八进制值并进行打印。
+**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连通组件，如本文的[中所述。 对于每个连通组件，将显示二进制字符串，并根据二进制值（如](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[本文](https://www.geeksforgeeks.org/convert-binary-number-octal/)中所述）计算等效的八进制值并进行打印。
 
 下面是上述方法的实现：
 

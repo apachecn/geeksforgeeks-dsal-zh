@@ -38,7 +38,7 @@ and (3 - 4) in the path from 1 to 4.
 
 *   删除所有的桥将图形缩小为较小的分量。
 
-*   这些小组件没有任何桥接，它们是[弱连接组件](https://www.geeksforgeeks.org/convert-undirected-graph-directed-graph-minimize-disconnected-component/)，其中没有桥接。
+*   这些小组件没有任何桥接，它们是[弱连通组件](https://www.geeksforgeeks.org/convert-undirected-graph-directed-graph-minimize-disconnected-component/)，其中没有桥接。
 
 *   生成由以桥为边的桥连接的节点组成的树。
 

@@ -42,7 +42,7 @@ The path covered starting from 4 is
 
 2.  创建图后，我们使用 Kosaraju 的算法
 
-找到了所有[强连通组件。3）最后，我们返回了各个强连接组件中的节点总数。](https://www.geeksforgeeks.org/strongly-connected-components/)
+找到了所有[强连通组件。3）最后，我们返回了各个强连通组件中的节点总数。](https://www.geeksforgeeks.org/strongly-connected-components/)
 
 ```
 

@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/strongly-connected-components/](https://www.geeksforgeeks.org/strongly-connected-components/)
 
-如果所有对顶点之间都有路径，则有向图是牢固连接的。 有向图的强连接组件（ **SCC** ）是最大的强连接子图。 例如，下图中有 3 个 SCC。
+如果所有对顶点之间都有路径，则有向图是牢固连接的。 有向图的强连通组件（ **SCC** ）是最大的强连接子图。 例如，下图中有 3 个 SCC。
 
 ![SCC](img/140d82107bd6614a3e437643e94cbce4.png)
 

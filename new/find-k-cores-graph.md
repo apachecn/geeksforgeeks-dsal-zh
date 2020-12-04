@@ -4,7 +4,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/find-k-cores-graph/](https://www.geeksforgeeks.org/find-k-cores-graph/)
 
-给定一个图 G 和一个整数 K，该图的 K 核是在小于 k 的所有度数顶点都被删除之后剩下的连接组件（来源 [Wiki](https://en.wikipedia.org/wiki/Degeneracy_%28graph_theory%29) ）
+给定一个图 G 和一个整数 K，该图的 K 核是在小于 k 的所有度数顶点都被删除之后剩下的连通组件（来源 [Wiki](https://en.wikipedia.org/wiki/Degeneracy_%28graph_theory%29) ）
 
 **示例**：
 

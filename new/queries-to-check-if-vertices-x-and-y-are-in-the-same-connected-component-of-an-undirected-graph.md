@@ -1,10 +1,10 @@
 # 查询顶点 X 和 Y 是否在无向图
 
-的相同连接组件中
+的相同连通组件中
 
 > 原文： [https://www.geeksforgeeks.org/queries-to-check-if-vertices-x-and-y-are-in-the-same-connected-component-of-an-undirected-graph/](https://www.geeksforgeeks.org/queries-to-check-if-vertices-x-and-y-are-in-the-same-connected-component-of-an-undirected-graph/)
 
-给定**无向图**，该图由`N`个顶点和`M`个边组成，并查询类型为 **{X ，Y}** ，任务是检查顶点`X`和`Y`是否在图形的相同连接组件中。
+给定**无向图**，该图由`N`个顶点和`M`个边组成，并查询类型为 **{X ，Y}** ，任务是检查顶点`X`和`Y`是否在图形的相同连通组件中。
 
 **示例**：
 
@@ -20,7 +20,7 @@
 > 
 > **输出**：`Yes`否否
 > **说明**：
-> 从给定的图中可以看出，顶点{1，5}在相同的连接组件中。
+> 从给定的图中可以看出，顶点{1，5}在相同的连通组件中。
 > 但是{3，2}和{5，2}来自不同的组件。
 > **输入**：Q [] [] = {{1，9}，{2，8}，{3，5}，{7，9}}。
 > 图：
@@ -34,7 +34,7 @@
 > 
 > **输出**：`No`是否是
 > **说明**：
-> 从给定的图中可以看出，顶点{2，8}和{7，9}是 来自相同的连接组件。
+> 从给定的图中可以看出，顶点{2，8}和{7，9}是 来自相同的连通组件。
 > 但是{1，9}和{3，5}来自不同的组件。
 
 **方法**：的想法是使用[不交集联合](https://www.geeksforgeeks.org/union-find/)解决该问题。 使用的不相交集并集数据结构的基本接口如下：

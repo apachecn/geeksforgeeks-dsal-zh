@@ -19,7 +19,7 @@ Output: 4
 
 **方法**：这个问题似乎是一个典型的数学问题，但是如果我们仔细观察它，就会发现我们只需要找到置换循环，即连接的分量（由元素运动的循环形成）和数量 每个连通组件中节点的数量表示该整数在该特定周期中返回其原始位置的时间。
 
-对于整体图形，对每个已连接组件的节点计数进行 [LCM](https://www.geeksforgeeks.org/program-to-find-lcm-of-two-numbers/) ，这就是答案。
+对于整体图形，对每个已连通组件的节点计数进行 [LCM](https://www.geeksforgeeks.org/program-to-find-lcm-of-two-numbers/) ，这就是答案。
 
 下面是上述方法的实现：
 

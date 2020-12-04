@@ -20,7 +20,7 @@
 
 *   10–11
 
-该算法基于[强连接组件](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)文章中讨论的 Disc 和低值。
+该算法基于[强连通组件](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)文章中讨论的 Disc 和低值。
 
 想法是将访问的边沿存储在堆栈中，而 DFS 在图形上并继续寻找[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)（在上图中突出显示）。 一旦找到[铰接点](https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/)`u`，从节点`u`开始进行 DFS 时访问的所有边将形成一个[双向连通组件](https://en.wikipedia.org/wiki/Biconnected_component)。 当一个[连通组件](https://en.wikipedia.org/wiki/Connected_component_%28graph_theory%29)的 DFS 完成时，堆栈中存在的所有边将形成一个双连通组件。
 

@@ -1,12 +1,12 @@
 # 无向图
 
-的所有连接组件之间的最大边数
+的所有连通组件之间的最大边数
 
 > 原文： [https://www.geeksforgeeks.org/maximum-number-of-edges-among-all-connected-components-of-an-undirected-graph/](https://www.geeksforgeeks.org/maximum-number-of-edges-among-all-connected-components-of-an-undirected-graph/)
 
 给定整数'N'和'K'其中，N 是无向图的顶点数，'K'表示同一图中的边数（每个边由一对整数表示，其中 i，j 表示 顶点“ i”直接连接到图中的顶点“ j”）。
 
-任务是在给定图中找到所有已连接组件中的最大边数。
+任务是在给定图中找到所有已连通组件中的最大边数。
 
 **示例**：
 
@@ -25,7 +25,7 @@
 
 **方法**：
 
-*   使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)，分别找到所有连接组件中每个边的度数之和。
+*   使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)，分别找到所有连通组件中每个边的度数之和。
 
 *   现在，根据[握手引理](https://www.geeksforgeeks.org/handshaking-lemma-and-interesting-tree-properties/)，无向图的连接部分中的边总数等于其所有顶点度的总和的一半。
 

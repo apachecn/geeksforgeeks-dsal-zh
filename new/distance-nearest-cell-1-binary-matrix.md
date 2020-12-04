@@ -581,7 +581,7 @@ is 1\. Similarly, all the distance can be calculated.
 
 *   **Complexity Analysis:**
 
-    *   **时间复杂度**：O（N * M）。
+    *   **时间复杂度**：`O(N * M)`。
 
         在 BFS 遍历中，每个元素仅被遍历一次，因此时间复杂度为 O（M * N）。
 

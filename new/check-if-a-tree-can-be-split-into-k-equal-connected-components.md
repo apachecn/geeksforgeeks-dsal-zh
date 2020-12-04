@@ -1,4 +1,4 @@
-# 检查树是否可以拆分为 K 个相等连通组件
+# 检查树是否可以拆分为`K`个相等连通组件
 
 > 原文： [https://www.geeksforgeeks.org/check-if-a-tree-can-be-split-into-k-equal-connected-components/](https://www.geeksforgeeks.org/check-if-a-tree-can-be-split-into-k-equal-connected-components/)
 
@@ -8,14 +8,14 @@
 
 **示例**：
 
-> **输入**：N = 15，K = 5
-> Beow 是给定的树，其 Number 节点= 15
+> **输入**：`N = 15, K = 5`
+> `Beow`是给定的树，其节点数为 15
 > 
 > ![](img/89b25e00dc4b850cdf3164fd62731582.png)
 > 
 > **输出**：`Yes`
 > **说明**：
-> 以下是可制作的 5 个连接组件数：
+> 以下是可制作的 5 个连通组件数：
 > 
 > ![](img/2402b4eb4ce2ded53f7405a6fae5d0b7.png)
 
@@ -27,9 +27,9 @@
 
 2.  对于在 [DFS 遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)期间未访问的每个顶点，对该顶点递归调用 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) ，以在每个 DFS 递归调用期间保持遍历的节点数。
 
-3.  如果节点数等于**（N / K）**，则我们得到了[连接组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)中的一个。
+3.  如果节点数等于`N / K`，则我们得到了[连通组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)中的一个。
 
-4.  如果（ **N / K** ）个节点的[个连接组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)的集合总数等于`K`。 然后，可以将给定的图分解为`K`等于[连通组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)。
+4.  如果`N / K`个节点的[个连通组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)的集合总数等于`K`。 然后，可以将给定的图分解为`K`等于[连通组件](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)。
 
 下面是上述方法的实现：
 
@@ -443,7 +443,7 @@ YES
 
 ```
 
-**时间复杂度**：`O(V + E)`，其中 V 是顶点数，E 是边数
+**时间复杂度**：`O(V + E)`，其中`V`是顶点数，`E`是边数
 
 
 
