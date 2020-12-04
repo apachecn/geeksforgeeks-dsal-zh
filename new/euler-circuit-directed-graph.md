@@ -1,4 +1,4 @@
-# 有向图中的欧拉电路
+# 有向图中的欧拉环路
 
 > 原文： [https://www.geeksforgeeks.org/euler-circuit-directed-graph/](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)
 

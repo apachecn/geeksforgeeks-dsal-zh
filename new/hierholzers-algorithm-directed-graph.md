@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/hierholzers-algorithm-directed-graph/](https://www.geeksforgeeks.org/hierholzers-algorithm-directed-graph/)
 
-给定有向欧拉图，打印[欧拉电路](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)。 欧拉电路是遍历图的每个边的路径，并且该路径在起始顶点处终止。
+给定有向欧拉图，打印[欧拉环路](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)。 欧拉环路是遍历图的每个边的路径，并且该路径在起始顶点处终止。
 
 **示例**：
 
@@ -21,7 +21,7 @@ by following the edges as indicated in the output.
 
 ```
 
-我们已经讨论了[问题，找出给定图是否为欧拉](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)。 在这篇文章中，讨论了打印欧拉路径或电路的算法。 使用 [Fleury 算法](https://www.geeksforgeeks.org/fleurys-algorithm-for-printing-eulerian-path/)可以解决相同的问题，但是其复杂度为 O（E * E）。 使用 Heirholzer 的算法，我们可以找到以 O（E）表示的电路/路径，即线性时间。
+我们已经讨论了[问题，找出给定图是否为欧拉](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)。 在这篇文章中，讨论了打印欧拉路径或环路的算法。 使用 [Fleury 算法](https://www.geeksforgeeks.org/fleurys-algorithm-for-printing-eulerian-path/)可以解决相同的问题，但是其复杂度为 O（E * E）。 使用 Heirholzer 的算法，我们可以找到以 O（E）表示的环路/路径，即线性时间。
 
 下面是算法：ref（ [wiki](https://en.wikipedia.org/wiki/Eulerian_path#Hierholzer.27s_algorithm) ）。 请记住，如果满足以下条件，则有向图具有欧拉循环（1）具有非零度的所有顶点都属于单个强连通分量。 （2）每个顶点的度数和度数相同。 该算法假定给定图具有欧拉回路。
 

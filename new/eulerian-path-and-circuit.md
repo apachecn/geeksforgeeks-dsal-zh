@@ -692,7 +692,7 @@ graph has a Euler cycle
 
 [有向图的欧拉路径和回路。](https://www.geeksforgeeks.org/euler-circuit-directed-graph/)
 
-[Fleury 的算法可打印欧拉路径或电路吗？](https://www.geeksforgeeks.org/fleurys-algorithm-for-printing-eulerian-path/)
+[Fleury 的算法可打印欧拉路径或环路吗？](https://www.geeksforgeeks.org/fleurys-algorithm-for-printing-eulerian-path/)
 
 **参考**：
 

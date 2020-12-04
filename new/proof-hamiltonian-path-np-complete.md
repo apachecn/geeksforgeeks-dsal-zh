@@ -35,7 +35,7 @@ where c is certificate or proof that w is a member of A.
 
 为了证明 HAMPATH 是 NP-Complete，我们必须证明 HAMPATH 在 NP 中。 为了证明 HAMPATH 在 NP 中，我们必须有一个多项式时间验证器。 即使我们没有快速的多项式时间算法来确定图形是否包含 HAMPATH，如果以某种方式发现了这样的路径（可能是通过指数时间蛮力搜索），我们也可以轻松地算出该路径是否为 HAMPATH。 多项式时间内是否使用 HAMPATH。 在这里，证书将是 G 中从 s 到 t 本身的哈密顿路径。 因此 HAMPATH 在 NP 中得到了证明。
 
-因此，现在我们必须证明 NP 类的每个问题都是 HAMPATH 可简化的多项式时间，以显示其 NP 完全性。 相反，我们将证明 3SAT（先前由 SAT 证明的 NP 完全问题（电路可满足性问题））可以多项式化为 HAMPATH。 我们将给定的 *cnf* （合取范式）形式转换为图形，其中小工具（模拟变量和子句的结构）将模拟变量和子句（与![\vee](img/1e913ed1f5e02af630f529bff8fa3061.png "Rendered by QuickLaTeX.com")连接的几个文字或变量）。 现在我们必须证明![3SAT$\leqslant_P$HAMPATH](img/b314593d6cc2eb25df1a7d7f41fe4436.png "Rendered by QuickLaTeX.com")
+因此，现在我们必须证明 NP 类的每个问题都是 HAMPATH 可简化的多项式时间，以显示其 NP 完全性。 相反，我们将证明 3SAT（先前由 SAT 证明的 NP 完全问题（环路可满足性问题））可以多项式化为 HAMPATH。 我们将给定的 *cnf* （合取范式）形式转换为图形，其中小工具（模拟变量和子句的结构）将模拟变量和子句（与![\vee](img/1e913ed1f5e02af630f529bff8fa3061.png "Rendered by QuickLaTeX.com")连接的几个文字或变量）。 现在我们必须证明![3SAT$\leqslant_P$HAMPATH](img/b314593d6cc2eb25df1a7d7f41fe4436.png "Rendered by QuickLaTeX.com")
 
 对于每个 3-cnf 公式![$\Phi](img/fa07f008f69719ecc0f2fe06a9728661.png "Rendered by QuickLaTeX.com")，我们将展示如何使用 s 和 t 建立图 G，其中 s 和 t iff 之间存在哈密顿路径![$\Phi$](img/29cc89f527de867ad484d04629e403ed.png "Rendered by QuickLaTeX.com")是可满足的。
 

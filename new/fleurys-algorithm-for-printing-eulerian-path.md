@@ -1,14 +1,14 @@
-# Fleury 的欧拉路径或电路打印算法
+# Fleury 的欧拉路径或环路打印算法
 
 > 原文： [https://www.geeksforgeeks.org/fleurys-algorithm-for-printing-eulerian-path/](https://www.geeksforgeeks.org/fleurys-algorithm-for-printing-eulerian-path/)
 
 [欧拉路径](http://en.wikipedia.org/wiki/Eulerian_path)是图中的一条路径，该路径恰好访问每个边一次。 欧拉回路是一条始于和终止于同一顶点的欧拉路径。
 
-强烈建议您先阅读以下有关 Euler 路径和电路的文章。
+强烈建议您先阅读以下有关 Euler 路径和环路的文章。
 
 [https://www.geeksforgeeks.org/eulerian-path-and-circuit/](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)
 
-在上述文章中，我们讨论了找出给定图是否为欧拉图的问题。 在这篇文章中，讨论了打印欧拉路径或电路的算法。
+在上述文章中，我们讨论了找出给定图是否为欧拉图的问题。 在这篇文章中，讨论了打印欧拉路径或环路的算法。
 
 以下是 Fleury 的用于打印欧拉足迹或自行车道的算法（来源 [Ref1](http://www.math.ku.edu/~jmartin/courses/math105-F11/Lectures/chapter5-part2.pdf) ）。
 
@@ -32,7 +32,7 @@
 
 ![Eule3](img/137bfbae133886b21c58f95b77a07568.png) 
 
-顶点“ 0”只有一个边，因此我们将其选中，将其删除，然后移至顶点“ 1”。 欧拉巡回赛成为“ 2-0 0-1”。
+顶点“ 0”只有一个边，因此我们将其选中，将其删除，然后移至顶点“ 1”。 欧拉环路成为“ 2-0 0-1”。
 
 ![Euler4](img/9f092238b28d00a2d0320d7fe1d8ef29.png)
 
@@ -46,7 +46,7 @@
 
 有关更多示例，请参见[此](http://www.math.ku.edu/~jmartin/courses/math105-F11/Lectures/chapter5-part2.pdf)和[此](http://www.austincc.edu/powens/+Topics/HTML/05-6/05-6.html)。
 
-以下是上述算法的 C++实现。 在以下代码中，假定给定的图形具有欧拉径或电路。 主要重点是打印欧拉小径或电路。 我们可以使用 [isEulerian（）](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)首先检查给定图中是否有 Eulerian Trail 或 Circuit。
+以下是上述算法的 C++实现。 在以下代码中，假定给定的图形具有欧拉径或环路。 主要重点是打印欧拉小径或环路。 我们可以使用 [isEulerian（）](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)首先检查给定图中是否有 Eulerian Trail 或 Circuit。
 
 我们首先找到起点，该起点必须是奇数个顶点（如果有奇数个顶点），并将其存储在变量“ u”中。 如果奇数顶点为零，则从顶点“ 0”开始。 我们调用 printEulerUtil（）从 u 开始打印 Euler 游览。 我们遍历 u 的所有相邻顶点，如果只有一个相邻顶点，我们会立即考虑。 如果相邻顶点不止一个，则仅当边 u-v 不是桥时才考虑相邻 v。 如何查找给定的边是否为桥？ 我们计算从 u 可到达的顶点数。 我们删除边 u-v，并再次从 u 计算可达顶点的数量。 如果可到达的顶点数量减少，则边 u-v 是桥。 为了计算可到达的顶点，我们可以使用 BFS 或 DFS，我们在上面的代码中使用了 DFS。 函数 DFSCount（u）返回可从 u 到达的顶点数。
 

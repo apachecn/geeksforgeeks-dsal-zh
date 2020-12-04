@@ -4,7 +4,7 @@
 
 [旅行推销员问题（TSP）：](https://www.geeksforgeeks.org/travelling-salesman-problem-set-1/)给定一组城市以及每对城市之间的距离，问题在于找到一条最短的路线，该路线可以精确地访问每个城市一次并返回起点。
 
-注意[哈密顿循环](https://www.geeksforgeeks.org/backtracking-set-7-hamiltonian-cycle/)和 TSP 之间的差异。 汉密尔顿周期问题是要找出是否存在一次游览每个城市一次的旅行。 在这里，我们知道存在汉密尔顿巡回赛（因为该图是完整的），实际上，存在许多此类巡回赛，问题在于找到最小权重的汉密尔顿循环。
+注意[哈密顿循环](https://www.geeksforgeeks.org/backtracking-set-7-hamiltonian-cycle/)和 TSP 之间的差异。 汉密尔顿周期问题是要找出是否存在一次游览每个城市一次的旅行。 在这里，我们知道存在汉密尔顿环路（因为该图是完整的），实际上，存在许多此类环路，问题在于找到最小权重的汉密尔顿循环。
 
 例如，请考虑右侧图中所示的图表。 图中的 TSP 巡视是 1-2-4-3-1。 这次旅行的费用是 10 + 25 + 30 + 15，即 80。
 
