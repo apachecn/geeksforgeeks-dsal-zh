@@ -159,9 +159,9 @@ public static void Main()
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // PHP implementation to find  

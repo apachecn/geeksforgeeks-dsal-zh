@@ -259,9 +259,9 @@ class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // A PHP naive recursive solution to find min cost path from station 0  

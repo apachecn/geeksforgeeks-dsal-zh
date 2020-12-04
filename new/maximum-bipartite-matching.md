@@ -446,9 +446,9 @@ class GFG
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // A PHP program to find maximal 

@@ -26,19 +26,15 @@ Output : No. of colors require is: 2
 
 ```
 
-**示例 1：偶数周期**：顶点数= 4
+**示例 1：偶数周期**：顶点数为 4，所需颜色为 2
 
 ![](img/0ce8abc1f3366b98a40ab9b20a0a2f77.png)
 
-所需颜色= 2
-
 ![](img/f20c2802b13db54d94a793a06bc50848.png)
 
-**示例 2：奇周期**：顶点数= 5
+**示例 2：奇数周期**：顶点数为 5，所需颜色为 3
 
 ![](img/060606b16e9b2cf9e8ac9582321b7e45.png)
-
-所需颜色= 3
 
 ![](img/08cf65dd8111b8128baca91d7e0ad460.png)
 
@@ -197,9 +193,9 @@ public static void Main () 
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // PHP program to find number of colors 

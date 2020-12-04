@@ -205,7 +205,7 @@ class GFG 
 
 ## PHP
 
-```
+```php
 
 <?php 
 // PHP program to check whether input  

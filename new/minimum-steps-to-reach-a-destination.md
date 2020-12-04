@@ -244,9 +244,9 @@ class GFG
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php
 // PHP program to count number 

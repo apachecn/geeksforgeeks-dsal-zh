@@ -304,7 +304,7 @@ is 1\. Similarly, all the distance can be calculated.
 
     ```
 
-    ## 的 PHP
+    ## PHP
 
     ```
 

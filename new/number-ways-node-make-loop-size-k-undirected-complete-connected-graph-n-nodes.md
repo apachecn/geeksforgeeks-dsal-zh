@@ -182,9 +182,9 @@ class GFG {
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // PHP Program to find number 

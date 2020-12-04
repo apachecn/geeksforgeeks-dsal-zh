@@ -134,9 +134,9 @@ class GfG
 
 ```
 
-## 的 PHP
+## PHP
 
-```
+```php
 
 <?php 
 // PHP program to find vertices in  
