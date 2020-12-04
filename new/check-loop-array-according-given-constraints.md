@@ -2,7 +2,7 @@
 
 > 原文： [https://www.geeksforgeeks.org/check-loop-array-according-given-constraints/](https://www.geeksforgeeks.org/check-loop-array-according-given-constraints/)
 
-给定数组 arr [0..n-1]的正数和负数，我们需要确定数组中是否存在具有给定运动规则的循环。 如果 i 索引处的数字为正，则将 arr [i]％n 向前移动，即下一个要访问的索引为（i + arr [i]）％n。 相反，如果为负，则向后移动 arr [i]％n 步，即，下一个要访问的索引为（i – arr [i]）％n。 这里 n 是数组的大小。 如果 arr [i]％n 的值为零，则表示从索引 i 开始没有移动。
+给定数组`arr[0..n-1]`的正数和负数，我们需要确定数组中是否存在具有给定运动规则的循环。 如果`i`索引处的数字为正，则将`arr[i] % n`向前移动，即下一个要访问的索引为`(i + arr[i]) % n`。 相反，如果为负，则向后移动`arr[i] % n`步，即，下一个要访问的索引为`(i - arr[i]) % n`。 这里`n`是数组的大小。 如果`arr[i] % n`的值为零，则表示从索引`i`开始没有移动。
 
 **示例**：
 
@@ -27,7 +27,7 @@ n is 2.
 
 注意，自循环不被视为一个循环。 例如，{0}不是循环的。
 
-想法是使用给定的规则集形成数组元​​素的有向图。 形成图表时，我们不会进行自我循环，因为值 arr [i]％n 等于 0 表示没有移动。 最后，我们的任务减少到有向图中的[检测周期。 为了检测周期，我们使用 DFS，在 DFS 中，如果到达被访问的节点和递归调用堆栈，则说存在一个周期。](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)
+想法是使用给定的规则集形成数组元​​素的有向图。 形成图表时，我们不会进行自我循环，因为值`arr[i] % n`等于 0 表示没有移动。 最后，我们的任务减少到有向图中的[周期检测](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/)。 为了检测周期，我们使用 DFS，在 DFS 中，如果到达被访问的节点和递归调用堆栈，则说存在一个周期。
 
 ## C++
 
