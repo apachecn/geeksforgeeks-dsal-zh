@@ -1,4 +1,4 @@
-# GeeksForGeeks 中文系列教程
+# GeeksForGeeks 数据结构和算法中文教程
 
 > 原文：[GeeksForGeeks](https://geeksforgeeks.org/)
 > 
@@ -6,8 +6,8 @@
 > 
 > 苟利国家生死以，岂因祸福避趋之。——《赴戍登程口占示家人二首》
 
-* [在线阅读](https://g4g.apachecn.org)
-* [在线阅读（Gitee）](https://apachecn.gitee.io/geeksforgeeks-zh/)
+* [在线阅读](https://g4g-dsal.apachecn.org)
+* [在线阅读（Gitee）](https://apachecn.gitee.io/geeksforgeeks-dsal-zh/)
 * [ApacheCN 学习资源](http://docs.apachecn.org/)
 
 ## 下载
@@ -15,24 +15,24 @@
 ### Docker
 
 ```
-docker pull apachecn0/geeksforgeeks-zh
-docker run -tid -p <port>:80 apachecn0/geeksforgeeks-zh
+docker pull apachecn0/geeksforgeeks-dsal-zh
+docker run -tid -p <port>:80 apachecn0/geeksforgeeks-dsal-zh
 # 访问 http://localhost:{port} 查看文档
 ```
 
 ### PYPI
 
 ```
-pip install geeksforgeeks-zh
-geeksforgeeks-zh <port>
+pip install geeksforgeeks-dsal-zh
+geeksforgeeks-dsal-zh <port>
 # 访问 http://localhost:{port} 查看文档
 ```
 
 ### NPM
 
 ```
-npm install -g geeksforgeeks-zh
-geeksforgeeks-zh <port>
+npm install -g geeksforgeeks-dsal-zh
+geeksforgeeks-dsal-zh <port>
 # 访问 http://localhost:{port} 查看文档
 ```
 
@@ -50,7 +50,7 @@ geeksforgeeks-zh <port>
 
 ### 其他
 
-*   在我们的 [apachecn/geeksforgeeks-zh](https://github.com/apachecn/geeksforgeeks-zh) github 上提 issue.
+*   在我们的 [apachecn/geeksforgeeks-zh](https://github.com/apachecn/geeksforgeeks-dsal-zh) github 上提 issue.
 *   发邮件到 Email: `apachecn@163.com`.
 *   在我们的 [组织学习交流群](http://www.apachecn.org/organization/348.html) 中联系群主/管理员即可.
 
