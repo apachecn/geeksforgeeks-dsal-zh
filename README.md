@@ -52,7 +52,7 @@ geeksforgeeks-dsal-zh <port>
 
 ### 其他
 
-*   在我们的 [apachecn/geeksforgeeks-zh](https://github.com/apachecn/geeksforgeeks-dsal-zh) github 上提 issue.
+*   在我们的 [apachecn/geeksforgeeks-dsal-zh](https://github.com/apachecn/geeksforgeeks-dsal-zh) github 上提 issue.
 *   发邮件到 Email: `apachecn@163.com`.
 *   在我们的 [组织学习交流群](http://www.apachecn.org/organization/348.html) 中联系群主/管理员即可.
 
