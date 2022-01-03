@@ -4,6 +4,8 @@
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 > 
+> 阶段：机翻（1）
+> 
 > 苟利国家生死以，岂因祸福避趋之。——《赴戍登程口占示家人二首》
 
 * [在线阅读](https://g4g-dsal.apachecn.org)
