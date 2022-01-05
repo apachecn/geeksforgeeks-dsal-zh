@@ -1,33 +1,41 @@
-# 程序，用于计算无向图
+# 计算无向图中连接组件数量的程序
 
-中已连通组件的数量
+> 原文:[https://www . geesforgeks . org/program-to-count-number-of-connected-in-an-directed-graph/](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)
 
-> 原文： [https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/](https://www.geeksforgeeks.org/program-to-count-number-of-connected-components-in-an-undirected-graph/)
+给定一个无向图 **g** ，任务是打印图中连接组件的数量。
 
-给定无向图`g`，任务是打印图中的连通组件数。
+**示例:**
 
-**示例**：
-
-> **输入**：
+> **输入:**
 > 
 > ![](img/2feb9cd1e65ab689e267091dda45f117.png)
 > 
-> **输出**：3
-> 连接了三个组件：
-> 1 – 5、0 – 2 – 4 和 3
+> **输出:** 3
+> 有三个相连的组件:
+> 1–5、0–2–4 和 3
 
-**方法**：的想法是使用变量**计数**存储连通组件数，并执行以下步骤：
+**进场:**
+
+DFS 访问给定顶点的所有连通顶点。
+
+当迭代所有顶点时，每当我们看到未访问的节点时，这是因为到目前为止，DFS 还没有访问过该节点。
+
+这意味着它没有连接到任何以前访问过的节点，也就是说，它不是以前组件的一部分。
+
+这意味着，在访问这个节点之前，我们刚刚访问完所有的
+
+节点前一个组件，现在该组件已经完成，所以我们需要在完成一个组件时增加组件计数器
+
+其思想是使用变量计数来存储连接组件的数量，并执行以下步骤:
 
 1.  将所有顶点初始化为未访问。
+2.  对于所有顶点，检查是否有顶点未被访问，然后对该顶点执行离散傅立叶变换，并将变量**计数**增加 1。
 
-2.  对于所有顶点，检查是否尚未访问顶点，然后在该顶点上执行 DFS，并将变量**计数**递增 1。
-
-下面是上述方法的实现：
+下面是上述方法的实现:
 
 ## C++
 
-```cpp
-
+```
 // C++ program for above approach
 #include <bits/stdc++.h>
 using namespace std;
@@ -115,148 +123,87 @@ int main()
 
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
-// Java program for above approach
-import java.io.*;
+```
 import java.util.*;
+class Graph {
+    private int V; // No. of vertices in graph.
 
-public class ConnectedComponentCount
-{
+    private LinkedList<Integer>[] adj; // Adjacency List
+                                       // representation
 
-    private int v;
-    private int e;
-    private Map<Integer, 
-                HashSet<Integer>> adjMap;
-    private static Map<Integer, 
-                       Integer> visited;
+    ArrayList<ArrayList<Integer> > components
+        = new ArrayList<>();
 
-    ConnectedComponentCount(int vertices)
+    @SuppressWarnings("unchecked") Graph(int v)
     {
-        v = vertices;
-        adjMap = new HashMap<Integer, 
-                        HashSet<Integer>>(); 
-        visited = new HashMap<Integer, 
-                                  Integer>();
+        V = v;
+        adj = new LinkedList[v];
+
+        for (int i = 0; i < v; i++)
+            adj[i] = new LinkedList();
     }
 
-    // Function to add edges
-    private void addEdge(int s, int d)
+    void addEdge(int u, int w)
     {
-        adjMap.putIfAbsent(s, 
-                     new HashSet<Integer>());
-        adjMap.putIfAbsent(d, 
-                     new HashSet<Integer>());
-        adjMap.get(s).add(d);
-        adjMap.get(s).add(s);
-        adjMap.get(d).add(s);
-        adjMap.get(d).add(d);
-        visited.put(s, 0);
-        visited.put(d, 0);
+        adj[u].add(w);
+        adj[w].add(u); // Undirected Graph.
     }
 
-    // To mark vertices which can be visites
-    private void findDFS(int vertex)
+    void DFSUtil(int v, boolean[] visited,
+                 ArrayList<Integer> al)
     {
+        visited[v] = true;
+        al.add(v);
+        System.out.print(v + " ");
+        Iterator<Integer> it = adj[v].iterator();
 
-        // Mark as visited
-        visited.put(vertex,1);
+        while (it.hasNext()) {
+            int n = it.next();
+            if (!visited[n])
+                DFSUtil(n, visited, al);
+        }
+    }
 
-        // Print the vertex
-        System.out.println("vertex " + vertex + 
-                                   " visited");
-        for(Integer child : adjMap.get(vertex))
-        {
-            if(visited.get(child) == 0){
-               findDFS(child);
+    void DFS()
+    {
+        boolean[] visited = new boolean[V];
+
+        for (int i = 0; i < V; i++) {
+            ArrayList<Integer> al = new ArrayList<>();
+            if (!visited[i]) {
+                DFSUtil(i, visited, al);
+                components.add(al);
             }
         }
     }
 
-    // Function to print graph
-    private void printGraph()
+    int ConnecetedComponents() { return components.size(); }
+}
+public class Main {
+    public static void main(String[] args)
     {
-        for(HashSet<Integer> v : 
-                          adjMap.values())
-        {
-            System.out.println(v.toString());
-        }
-    }
+        Graph g = new Graph(6);
 
-    // Driver Code
-    public static void main(String args[])
-    {
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number 
-                           of vertices (V): ");
-        int vertices = sc.nextInt();
-
-        System.out.println("Enter the number 
-                                of edges (E): ");
-        int edges = sc.nextInt();
-
-        // To count total number of
-        // components
-        int ccCount = 0;
-
-        ConnectedComponentCount ccc = 
-                 new ConnectedComponentCount(
-                                      vertices);
-
-        // Input of edges
-        while (edges > 0)
-        {
-            System.out.println("Enter the 
-                                nodes s & d: ");
-            int s = sc.nextInt();
-            int d = sc.nextInt();
-            ccc.addEdge(s,d);
-            edges-- ;
-        }
-
-        // Function to print graph                      
-        ccc.printGraph();
-
-        // Traversing every node 
-        for(Integer vertex : visited.keySet())
-        {
-
-            // Check if vertex is already
-            // visited  or not
-            if(visited.get(vertex) == 0)
-            {
-
-                // Function Call for findDFS
-                ccc.findDFS(vertex);
-
-                // Print Component Found
-                System.out.println("CC Found");
-
-                // Increase the counter
-                ccCount++;
-            }
-        }
-
-        // Print number of components                        
-        System.out.println("Number of cc component: "
-                                        + ccCount);
+        g.addEdge(1, 5);
+        g.addEdge(0, 2);
+        g.addEdge(2, 4);
+        System.out.println("Graph DFS:");
+        g.DFS();
+        System.out.println(
+            "\nNumber of Conneceted Components: "
+            + g.ConnecetedComponents());
     }
 }
-
-//The code is contributed by Alfred Skaria
-
+// Code contributed by Madhav Chittlangia.
 ```
 
-## Python
+## 蟒蛇 3
 
-```py
-
+```
 # Python3 program for above approach
 
 # Graph class represents a undirected graph
@@ -279,7 +226,7 @@ class Graph:
         # Mark all the vertices as not visited
         visited = [False for i in range(self.V)]
 
-        # To store the number of connected 
+        # To store the number of connected
         # components
         count = 0
 
@@ -307,7 +254,7 @@ class Graph:
         self.adj[v].append(w)
         self.adj[w].append(v)
 
-# Driver code        
+# Driver code       
 if __name__=='__main__':
 
     g = Graph(5)
@@ -318,21 +265,10 @@ if __name__=='__main__':
     print(g.NumberOfconnectedComponents())
 
 # This code is contributed by rutvik_56
-
 ```
 
-输出：
+**Output**
 
 ```
 2
 ```
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

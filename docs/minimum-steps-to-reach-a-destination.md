@@ -1,55 +1,43 @@
-# 到达目的地的最少步骤
+# 到达目的地的最少步数
 
-> 原文： [https://www.geeksforgeeks.org/minimum-steps-to-reach-a-destination/](https://www.geeksforgeeks.org/minimum-steps-to-reach-a-destination/)
+> Original: [https://www.geeksforgeeks.org/minimum-steps-to-reach-a-destination/](https://www.geeksforgeeks.org/minimum-steps-to-reach-a-destination/)
 
-给定一个从-infinity 到+ infinity 的数字线。 您从 0 开始，可以向左或向右移动。 条件是，在我采取行动时，您将采取步骤。
+给定一条从-无穷大到+无穷大的数线。你从 0 开始，可以向左也可以向右。条件是，在我的行动中，你要迈出步伐。
+a)找到你是否能到达给定的数字 x
+b)找到到达给定的数字 x 的最佳方式，如果我们确实能到达的话。例如，3 可以在 2 个步骤中到达，(0，1) (1，3)，4 可以在 3 个步骤中到达(0，-1)，(-1，1) (1，4)。
+来源: [Flipkart 采访提问](https://www.geeksforgeeks.org/flipkart-interview-experience-set-30for-sde-2/)
 
-a）确定是否可以达到给定的数字 x
+需要注意的重要一点是，我们可以到达任何目的地，因为总是有可能进行长度为 1 的移动。在任何一步 I，我们都可以向前 I，然后向后 i + 1。
+下面是 Arpit Thapar [在这里](https://www.geeksforgeeks.org/flipkart-interview-experience-set-30for-sde-2/)建议的递归解。
+1)由于 0 到+ 5 和-5 的距离相同，因此我们找到了目的地绝对值的答案。
 
-b）找到达到给定数字 x 的最佳方法（如果我们确实可以达到）。 例如，可以 2 步达到 3，（0，1）（1，3）和 4 可以 3 步达到（0，-1），（-1，1）（1，4）。
+2)我们使用递归函数，该函数将以下参数作为参数:
+i)源顶点
+ii)最后一步的值
+iii)目的地
 
-来源： [Flipkart 面试问题](https://www.geeksforgeeks.org/flipkart-interview-experience-set-30for-sde-2/)
+3)如果在任一点源顶点=目的地；返回步数。
 
-需要注意的重要一点是，我们可以到达任何目的地，因为总是可以进行长度为 1 的移动。在任何步骤 i，我们都可以向前移动 i，然后向后移动 i +1。
+4)否则我们可以朝两个可能的方向走。在这两种情况下，采取最少的步骤。
+从任意一个顶点我们都可以到:
+(电流源+最后一步+1)和
+(电流源-最后一步-1)
 
-下面是一个递归解决方案 作者 Arpit Thapar [在这里](https://www.geeksforgeeks.org/flipkart-interview-experience-set-30for-sde-2/)。
+5)如果在任何一点，我们位置的绝对值超过了我们目的地的绝对值，那么从这里走最短路径是不可能的，这是很直观的。因此，我们将步长值设为 INT_MAX，这样，当我取两种可能性中的最小值时，这一个被消除了。
 
-1.  由于距 0 的+ 5 和– 5 的距离相同，因此我们找到了目的地绝对值的答案。
+如果我们不使用这最后一步，程序进入无限递归并给出运行时错误。
 
-2.  我们使用一个递归函数作为参数：
-
-i）源顶点
-
-ii）最后一步的值
-
-iii）目标
-
-3.  如果在任何时候源顶点=目标； 返回步骤数。
-
-4.  否则我们可以朝两个可能的方向前进。 在两种情况下，都应采取最少的步骤。
-
-从任何顶点我们可以转到：
-
-（电流源+最后一步+1）和
-
-（电流源–最后一步-1）
-
-5.  如果在任何时候我们位置的绝对值超过目的地的绝对值，那么很直觉的是，从这里不可能出现最短路径。 因此，我们将步长设为 INT_MAX，以便当我将两种可能性中的最小值时，将消除这一可能性。
-
-如果我们不使用最后一步，则该程序将进入 INFINITE 递归并给出 RUN TIME ERROR。
-
-以下是上述想法的实现。 请注意，该解决方案仅计算步骤。
+以下是上述想法的实现。请注意，该解决方案只计算步骤。
 
 ## C++
 
-```cpp
-
-// C++ program to count number of 
+```
+// C++ program to count number of
 // steps to reach a point
 #include<bits/stdc++.h>
 using namespace std;
 
-// Function to count number of steps 
+// Function to count number of steps
 // required to reach a destination
 
 // source -> source vertex
@@ -58,14 +46,14 @@ using namespace std;
 int steps(int source, int step, int dest)
 {
     // base cases
-    if (abs(source) > (dest)) 
+    if (abs(source) > (dest))
          return INT_MAX;
     if (source == dest) return step;
 
     // at each point we can go either way
 
     // if we go on positive side
-    int pos = steps(source + step + 1, 
+    int pos = steps(source + step + 1,
                       step + 1, dest);
 
     // if we go on negative side
@@ -85,18 +73,16 @@ int main()
                         << steps(0, 0, dest);
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
+```
 // Java program to count number of
 // steps to reach a point
 import java.io.*;
 
-class GFG 
+class GFG
 {
 
     // Function to count number of steps
@@ -109,10 +95,10 @@ class GFG
                                 int dest)
     {
         // base cases
-        if (Math.abs(source) > (dest)) 
+        if (Math.abs(source) > (dest))
             return Integer.MAX_VALUE;
 
-        if (source == dest) 
+        if (source == dest)
             return step;
 
         // at each point we can go either way
@@ -122,7 +108,7 @@ class GFG
                         step + 1, dest);
 
         // if we go on negative side
-        int neg = steps(source - step - 1, 
+        int neg = steps(source - step - 1,
                         step + 1, dest);
 
         // minimum of both cases
@@ -140,13 +126,11 @@ class GFG
 }
 
 // This code is contributed by Prerna Saini
-
 ```
 
-## Python
+## 蟒蛇 3
 
-```py
-
+```
 # python program to count number of
 # steps to reach a point
 import sys
@@ -161,12 +145,12 @@ def steps(source, step, dest):
 
     #base cases
     if (abs(source) > (dest)) :
-        return sys.maxsize 
+        return sys.maxsize
 
     if (source == dest):
         return step
 
-    # at each point we can go 
+    # at each point we can go
     # either way
 
     # if we go on positive side
@@ -174,7 +158,7 @@ def steps(source, step, dest):
                     step + 1, dest)
 
     # if we go on negative side
-    neg = steps(source - step - 1, 
+    neg = steps(source - step - 1,
                     step + 1, dest)
 
     # minimum of both cases
@@ -183,22 +167,20 @@ def steps(source, step, dest):
 # Driver Code
 dest = 11;
 print("No. of steps required",
-               " to reach " ,dest , 
+               " to reach " ,dest ,
         " is " , steps(0, 0, dest));
 
 # This code is contributed by Sam007.
-
 ```
 
 ## C#
 
-```cs
-
+```
 // C# program to count number of
 // steps to reach a point
 using System;
 
-class GFG 
+class GFG
 {
     // Function to count number of steps
     // required to reach a destination
@@ -210,10 +192,10 @@ class GFG
                                 int dest)
     {
         // base cases
-        if (Math.Abs(source) > (dest)) 
+        if (Math.Abs(source) > (dest))
             return int.MaxValue;
 
-        if (source == dest)     
+        if (source == dest)    
             return step;
 
         // at each point we can go either way
@@ -223,7 +205,7 @@ class GFG
                         step + 1, dest);
 
         // if we go on negative side
-        int neg = steps(source - step - 1, 
+        int neg = steps(source - step - 1,
                         step + 1, dest);
 
         // minimum of both cases
@@ -235,25 +217,23 @@ class GFG
     {
         int dest = 11;
         Console.WriteLine("No. of steps required"+
-                             " to reach " + dest + 
+                             " to reach " + dest +
                       " is " + steps(0, 0, dest));
     }
 }
 
 // This code is contributed by Sam007
-
 ```
 
-## PHP
+## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```php
-
+```
 <?php
-// PHP program to count number 
+// PHP program to count number
 // of steps to reach a point
 
-// Function to count number 
-// of steps required to reach 
+// Function to count number
+// of steps required to reach
 // a destination
 
 // source -> source vertex
@@ -262,16 +242,16 @@ class GFG
 function steps($source, $step, $dest)
 {
     // base cases
-    if (abs($source) > ($dest)) 
+    if (abs($source) > ($dest))
         return PHP_INT_MAX;
-    if ($source == $dest) 
+    if ($source == $dest)
         return $step;
 
-    // at each point we 
+    // at each point we
     // can go either way
 
     // if we go on positive side
-    $pos = steps($source + $step + 1, 
+    $pos = steps($source + $step + 1,
                    $step + 1, $dest);
 
     // if we go on negative side
@@ -289,19 +269,59 @@ echo "No. of steps required to reach ",
 
 // This code is contributed by aj_36
 ?>
-
 ```
 
-**输出**：
+## java 描述语言
+
+```
+<script>
+// JavaScript program to count number of
+// steps to reach a point
+
+// Function to count number of steps
+// required to reach a destination
+
+// source -> source vertex
+// step -> value of last step taken
+// dest -> destination vertex
+function steps(source, step, dest)
+{
+
+    // base cases
+    if (Math.abs(source) > (dest))
+        return Number.MAX_SAFE_INTEGER;
+    if (source == dest) return step;
+
+    // at each point we can go either way
+    // if we go on positive side
+    let pos = steps(source + step + 1,
+                    step + 1, dest);
+
+    // if we go on negative side
+    let neg = steps(source - step - 1,
+                    step + 1, dest);
+
+    // minimum of both cases
+    return Math.min(pos, neg);
+}
+
+// Driver code
+    let dest = 11;
+    document.write("No. of steps required to reach "
+                            + dest + " is "
+                        + steps(0, 0, dest));
+
+// This code is contributed by Surbhi Tyagi.
+</script>
+```
+
+**输出:**
 
 ```
 No. of steps required to reach 11 is 5
-
 ```
 
 感谢 Arpit Thapar 提供上述算法和实现。
+**优化解决方案:** [找到到达无限线上目标的最小移动量](https://www.geeksforgeeks.org/find-minimum-moves-reach-target-infinite-line/)
 
-**优化解决方案**：[找出在无限线上达到目标的最小移动量](https://www.geeksforgeeks.org/find-minimum-moves-reach-target-infinite-line/)
-
-本文由 Abhay 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
-
+本文由 Abhay 供稿。如果你发现任何不正确的地方，或者你想分享更多关于上面讨论的话题的信息，请写评论。

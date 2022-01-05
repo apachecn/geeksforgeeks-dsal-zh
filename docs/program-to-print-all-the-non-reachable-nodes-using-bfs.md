@@ -1,18 +1,18 @@
-# 打印所有不可访问节点的程序| 使用 BFS
+# 程序打印所有不可到达的节点|使用 BFS
 
-> 原文： [https://www.geeksforgeeks.org/program-to-print-all-the-non-reachable-nodes-using-bfs/](https://www.geeksforgeeks.org/program-to-print-all-the-non-reachable-nodes-using-bfs/)
+> 原文:[https://www . geesforgeks . org/program-to-print-所有不可到达的节点-使用-bfs/](https://www.geeksforgeeks.org/program-to-print-all-the-non-reachable-nodes-using-bfs/)
 
-给定[无向图](https://www.geeksforgeeks.org/graph-and-its-representations/)和**顶点集**，我们必须使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)打印给定头节点中的所有不可访问节点。
+给定一个[无向图](https://www.geeksforgeeks.org/graph-and-its-representations/)和一组**顶点**，我们必须使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)打印给定头节点的所有不可达节点。
 
-**例如**：
+**例如:**
 
-> 考虑以下具有两个断开连通组件的无向图：
+> 考虑下面有两个断开组件的无向图:
 > 
 > ![](img/212cc661346e6205814c9cdd5b2cc25f.png)
 > 
-> 在此图中，如果我们将 0 视为头节点，则节点 0、1 和 2 是可到达的。 我们将所有可达节点标记为已访问。 所有未标记为已访问的节点，即节点 3 和 4 都是不可访问的节点。
+> 在这个图中，如果我们认为 0 是头节点，那么节点 0、1 和 2 是可达的。我们将所有可到达的节点标记为已访问。所有那些没有被标记为被访问的节点，即节点 3 和 4 是不可到达的节点。
 
-**示例**：
+**示例:**
 
 ```
 Input: 5
@@ -32,20 +32,17 @@ Input: 8
 Output: 3 4 5 6 7
 ```
 
-**方法**：
+**进场:**
 
-*   为此，我们可以使用 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 或 [DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。 [本文的设置 1](https://www.geeksforgeeks.org/count-number-non-reachable-nodes/) 实现了 DFS 方法。 在本文中，将使用 BFS 方法。
+*   为此，我们可以使用 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 或 [DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 。[本文第 1 集](https://www.geeksforgeeks.org/count-number-non-reachable-nodes/)实现了 DFS 方法。本文采用了 BFS 方法。
+*   我们从给定的来源做 BFS。由于给定的图是无向的，属于断开组件的所有顶点都是不可达的节点。为此，我们使用访问数组，该数组用于跟踪 BFS 的非访问顶点。
+*   [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 是一种遍历算法，它从选定的节点(源或起始节点)开始遍历，并逐层遍历图形，从而探索相邻节点(直接连接到源节点的节点)。然后，向下一级邻居节点移动。
 
-*   我们从给定的来源进行 BFS。 由于给定的图是无向的，所以属于断开连通组件的所有顶点都是不可访问的节点。 为此，我们使用访问数组，该数组用于跟踪 BFS 中未访问的顶点。
-
-*   [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 是一种遍历算法，该算法从选定的节点（源节点或起始节点）开始遍历，并逐层遍历图形，从而探索相邻节点（直接连接到源节点的节点）。 然后，移至下一级邻居节点。
-
-下面是上述方法的实现：
+下面是上述方法的实现:
 
 ## C++
 
-```cpp
-
+```
 // C++ program to count non-reachable nodes
 // from a given source using BFS.
 
@@ -124,13 +121,11 @@ int main()
 
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
+```
 // Java program to count non-reachable nodes
 // from a given source using BFS.
 import java.util.*;
@@ -213,53 +208,51 @@ public static void main(String[] args)
 }
 
 // This code is contributed by sapnasingh4991
-
 ```
 
-## Python
+## 蟒蛇 3
 
-```py
+```
+# Python3 program to count non-reachable
+# nodes from a given source using BFS
 
-# Python3 program to count non-reachable 
-# nodes from a given source using BFS 
-
-# Function to add an edge to graph 
+# Function to add an edge to graph
 def add_edge(adj, v, w):
 
-    # Add w to v’s list 
+    # Add w to v’s list
     adj[v].append(w)
 
-    # Add v to w's list 
+    # Add v to w's list
     adj[w].append(v)
 
-# BFS traversal of the vertices 
-# reachable from starting node 
+# BFS traversal of the vertices
+# reachable from starting node
 def BFS(adj, s, v):
 
-    # Mark all the vertices 
-    # as not visited 
+    # Mark all the vertices
+    # as not visited
     visited = [False for i in range(v)]
 
-    # Create a queue for BFS 
+    # Create a queue for BFS
     q = []
 
-    # Mark the current node as 
-    # visited and enqueue it 
+    # Mark the current node as
+    # visited and enqueue it
     q.append(s)
     visited[s] = True
 
     while (len(q) != 0):
 
-        # Dequeue a vertex from 
-        # queue 
+        # Dequeue a vertex from
+        # queue
         p = q[0]
-        q.pop(0) 
+        q.pop(0)
 
-        # Get all adjacent vertices 
-        # of the dequeued vertex p. 
-        # If a adjacent has not been 
-        # visited, then mark it 
-        # visited and enqueue it 
+        # Get all adjacent vertices
+        # of the dequeued vertex p.
+        # If a adjacent has not been
+        # visited, then mark it
+        # visited and enqueue it
         for it in adj[p]:
             if (not visited[it]):
                 visited[it] = True
@@ -271,30 +264,28 @@ def BFS(adj, s, v):
 
     print()
 
-# Driver code 
+# Driver code
 if __name__=='__main__':
 
-    # Create a graph given in 
-    # the above diagram 
+    # Create a graph given in
+    # the above diagram
     adj = [[] for i in range(8)]
 
     add_edge(adj, 0, 1)
-    add_edge(adj, 0, 2) 
-    add_edge(adj, 1, 2) 
-    add_edge(adj, 3, 4) 
-    add_edge(adj, 4, 5) 
-    add_edge(adj, 6, 7) 
+    add_edge(adj, 0, 2)
+    add_edge(adj, 1, 2)
+    add_edge(adj, 3, 4)
+    add_edge(adj, 4, 5)
+    add_edge(adj, 6, 7)
 
-    BFS(adj, 0, 8) 
+    BFS(adj, 0, 8)
 
 # This code is contributed by rutvik_56
-
 ```
 
 ## C#
 
-```cs
-
+```
 // C# program to count non-reachable nodes
 // from a given source using BFS.
 using System;
@@ -377,7 +368,6 @@ public static void Main(String[] args)
 }
 
 // This code is contributed by 29AjayKumar
-
 ```
 
 **Output:** 
@@ -385,13 +375,3 @@ public static void Main(String[] args)
 ```
 3 4 5 6 7
 ```
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

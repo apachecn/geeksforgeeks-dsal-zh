@@ -1,12 +1,10 @@
-# 除去重量最小的边以外的所有外出边
+# 移除除最小重量边缘外的所有输出边缘
 
-> 原文： [https://www.geeksforgeeks.org/minimum-weighted-graph/](https://www.geeksforgeeks.org/minimum-weighted-graph/)
+> 原文:[https://www.geeksforgeeks.org/minimum-weighted-graph/](https://www.geeksforgeeks.org/minimum-weighted-graph/)
 
-给定一个有 n 个节点的有向图。 对于每个节点，删除具有最小权重的除输出边外的所有输出边。 对每个节点应用此删除操作，然后打印最终图形，该图形保留在图形的每个节点最多具有一个输出边的位置，并且权重最小。
-
-**注意**：为方便起见，此处的图形存储为邻接矩阵。
-
-**范例**：
+给定一个有 n 个节点的有向图。对于每个节点，删除除具有最小权重的输出边之外的所有输出边。对每个节点应用这个删除操作，然后打印最后剩下的图，其中图的每个节点最多有一个输出边，该边的权重也最小。
+**注:**这里，为了方便起见，图存储为邻接矩阵。
+T4【示例】T5:
 
 ```
 Input : Adjacency Matrix of input graph :
@@ -24,438 +22,483 @@ Output : Adjacency Matrix of output graph :
 2 | 0  2  0  0  
 3 | 1  0  0  0
 4 | 0  0  1  0
-
 ```
 
-对于图的邻接矩阵的每一行，保留最小元素（零除外），其余全部为零。 对输入矩阵的每一行都执行此操作。 最后，打印结果矩阵。
-
-**示例**：
-
-![graph 1](img/f79fe8dfe09d9c9b727686d85df98513.png)![graph 2](img/631ad157b01333a5c2a661ca4fc74b6d.png)
+对于图的邻接矩阵的每一行，保留最小的元素(除了零)，其余的都为零。对输入矩阵的每一行都这样做。最后，打印结果矩阵。
+**例:**
 
 ## C++
 
-```cpp
+```
+// CPP program for minimizing graph
+#include <bits/stdc++.h>
 
-// CPP program for minimizing graph 
-#include <bits/stdc++.h> 
+using namespace std;
 
-using namespace std; 
+// Utility function for
+// finding min of a row
+int minFn(int arr[])
+{
+    int min = INT_MAX;
 
-// Utility function for 
-// finding min of a row 
-int minFn(int arr[]) 
-{ 
-    int min = INT_MAX; 
+    for (int i = 0; i < 4; i++)
+        if (min > arr[i])
+            min = arr[i];
+    return min;
+}
 
-    for (int i = 0; i < 4; i++) 
-        if (min > arr[i]) 
-            min = arr[i]; 
-    return min; 
-} 
+// Utility function for minimizing graph
+void minimizeGraph(int arr[][4])
+{
+    int min;
 
-// Utility function for minimizing graph 
-void minimizeGraph(int arr[][4]) 
-{ 
-    int min; 
+    // Set empty edges to INT_MAX
+    for (int i = 0; i < 4; i++)
+        for (int j = 0; j < 4; j++)
+            if (arr[i][j] == 0)
+                arr[i][j] = INT_MAX;
 
-    // Set empty edges to INT_MAX 
-    for (int i = 0; i < 4; i++) 
-        for (int j = 0; j < 4; j++) 
-            if (arr[i][j] == 0) 
-                arr[i][j] = INT_MAX; 
+    // Finding minimum of each row
+    // and deleting rest of edges
+    for (int i = 0; i < 4; i++) {
 
-    // Finding minimum of each row 
-    // and deleting rest of edges 
-    for (int i = 0; i < 4; i++) { 
+        // Find minimum element of row
+        min = minFn(arr[i]);
 
-        // Find minimum element of row 
-        min = minFn(arr[i]); 
-
-        for (int j = 0; j < 4; j++) { 
-            // If edge value is not min 
-            // set it to zero, also 
-            // edge value INT_MAX denotes that 
-            // initially edge value was zero 
-            if (!(arr[i][j] == min) || (arr[i][j] == INT_MAX)) 
-                arr[i][j] = 0; 
+        for (int j = 0; j < 4; j++) {
+            // If edge value is not min
+            // set it to zero, also
+            // edge value INT_MAX denotes that
+            // initially edge value was zero
+            if (!(arr[i][j] == min) || (arr[i][j] == INT_MAX))
+                arr[i][j] = 0;
             else
-                min = 0; 
-        } 
-    } 
+                min = 0;
+        }
+    }
 
-    // Print result; 
-    for (int i = 0; i < 4; i++) { 
-        for (int j = 0; j < 4; j++) 
-            cout << arr[i][j] << " "; 
-        cout << "\n"; 
-    } 
-} 
+    // Print result;
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++)
+            cout << arr[i][j] << " ";
+        cout << "\n";
+    }
+}
 
-// Driver Program 
-int main() 
-{ 
-    // Input Graph 
-    int arr[4][4] = { 1, 2, 4, 0, 
-                      0, 0, 0, 5, 
-                      0, 2, 0, 3, 
-                      0, 0, 0, 0 }; 
+// Driver Program
+int main()
+{
+    // Input Graph
+    int arr[4][4] = { 1, 2, 4, 0,
+                      0, 0, 0, 5,
+                      0, 2, 0, 3,
+                      0, 0, 0, 0 };
 
-    minimizeGraph(arr); 
+    minimizeGraph(arr);
 
-    return 0; 
-} 
-
+    return 0;
+}
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
+```
+// Java program for
+// minimizing graph
+import java.io.*;
+import java.util.*;
+import java.lang.*;
 
-// Java program for 
-// minimizing graph 
-import java.io.*; 
-import java.util.*; 
-import java.lang.*; 
+class GFG {
 
-class GFG { 
+    // Utility function for
+    // finding min of a row
+    static int minFn(int arr[])
+    {
+        int min = Integer.MAX_VALUE;
 
-    // Utility function for 
-    // finding min of a row 
-    static int minFn(int arr[]) 
-    { 
-        int min = Integer.MAX_VALUE; 
+        for (int i = 0;
+             i < arr.length; i++)
+            if (min > arr[i])
+                min = arr[i];
+        return min;
+    }
 
-        for (int i = 0; 
-             i < arr.length; i++) 
-            if (min > arr[i]) 
-                min = arr[i]; 
-        return min; 
-    } 
+    // Utility function
+    // for minimizing graph
+    static void minimizeGraph(int arr[][])
+    {
+        int min;
 
-    // Utility function 
-    // for minimizing graph 
-    static void minimizeGraph(int arr[][]) 
-    { 
-        int min; 
+        // Set empty edges
+        // to INT_MAX
+        for (int i = 0;
+             i < arr.length; i++)
+            for (int j = 0;
+                 j < arr.length; j++)
+                if (arr[i][j] == 0)
+                    arr[i][j] = Integer.MAX_VALUE;
 
-        // Set empty edges 
-        // to INT_MAX 
-        for (int i = 0; 
-             i < arr.length; i++) 
-            for (int j = 0; 
-                 j < arr.length; j++) 
-                if (arr[i][j] == 0) 
-                    arr[i][j] = Integer.MAX_VALUE; 
+        // Finding minimum of each
+        // row and deleting rest
+        // of edges
+        for (int i = 0;
+             i < arr.length; i++) {
 
-        // Finding minimum of each 
-        // row and deleting rest 
-        // of edges 
-        for (int i = 0; 
-             i < arr.length; i++) { 
+            // Find minimum
+            // element of row
+            min = minFn(arr[i]);
 
-            // Find minimum 
-            // element of row 
-            min = minFn(arr[i]); 
-
-            for (int j = 0; 
-                 j < arr.length; j++) { 
-                // If edge value is not 
-                // min set it to zero, 
-                // also edge value INT_MAX 
-                // denotes that initially 
-                // edge value was zero 
-                if ((arr[i][j] != min) || (arr[i][j] == Integer.MAX_VALUE)) 
-                    arr[i][j] = 0; 
+            for (int j = 0;
+                 j < arr.length; j++) {
+                // If edge value is not
+                // min set it to zero,
+                // also edge value INT_MAX
+                // denotes that initially
+                // edge value was zero
+                if ((arr[i][j] != min) || (arr[i][j] == Integer.MAX_VALUE))
+                    arr[i][j] = 0;
                 else
-                    min = 0; 
-            } 
-        } 
+                    min = 0;
+            }
+        }
 
-        // Print result; 
-        for (int i = 0; 
-             i < arr.length; i++) { 
-            for (int j = 0; 
-                 j < arr.length; j++) 
-                System.out.print(arr[i][j] + " "); 
-            System.out.print("\n"); 
-        } 
-    } 
+        // Print result;
+        for (int i = 0;
+             i < arr.length; i++) {
+            for (int j = 0;
+                 j < arr.length; j++)
+                System.out.print(arr[i][j] + " ");
+            System.out.print("\n");
+        }
+    }
 
-    // Driver Code 
-    public static void main(String[] args) 
-    { 
-        // Input Graph 
-        int arr[][] = { { 1, 2, 4, 0 }, 
-                        { 0, 0, 0, 5 }, 
-                        { 0, 2, 0, 3 }, 
-                        { 0, 0, 0, 0 } }; 
+    // Driver Code
+    public static void main(String[] args)
+    {
+        // Input Graph
+        int arr[][] = { { 1, 2, 4, 0 },
+                        { 0, 0, 0, 5 },
+                        { 0, 2, 0, 3 },
+                        { 0, 0, 0, 0 } };
 
-        minimizeGraph(arr); 
-    } 
-} 
-
+        minimizeGraph(arr);
+    }
+}
 ```
 
-## Python
+## 蟒蛇 3
 
-```py
+```
+# Python3 program for minimizing graph
 
-# Python3 program for minimizing graph  
+# Utility function for finding min of a row
+def minFn(arr):
 
-# Utility function for finding min of a row  
-def minFn(arr):  
+    minimum = float('inf')
 
-    minimum = float('inf')  
+    for i in range(0, len(arr)):
+        if minimum > arr[i]:
+            minimum = arr[i]
+    return minimum
 
-    for i in range(0, 4):  
-        if minimum > arr[i]:  
-            minimum = arr[i]  
-    return minimum 
+# Utility function for minimizing graph
+def minimizeGraph(arr):
 
-# Utility function for minimizing graph  
-def minimizeGraph(arr):  
+    # Set empty edges to INT_MAX
+    n=len(arr)
+    for i in range(0, n):
+        for j in range(0, n):
+            if arr[i][j] == 0:
+                arr[i][j] = float('inf')
 
-    # Set empty edges to INT_MAX  
-    for i in range(0, 4):  
-        for j in range(0, 4):  
-            if arr[i][j] == 0:  
-                arr[i][j] = float('inf')  
+    # Finding minimum of each row
+    # and deleting rest of edges
+    for i in range(0, n):
 
-    # Finding minimum of each row  
-    # and deleting rest of edges  
-    for i in range(0, 4):  
+        # Find minimum element of row
+        minimum = minFn(arr[i])
 
-        # Find minimum element of row  
-        minimum = minFn(arr[i])  
+        for j in range(0, n):
 
-        for j in range(0, 4): 
-
-            # If edge value is not min  
-            # set it to zero, also  
-            # edge value INT_MAX denotes that  
-            # initially edge value was zero  
-            if ((not(arr[i][j] == minimum)) or 
-                    (arr[i][j] == float('inf'))):  
+            # If edge value is not min
+            # set it to zero, also
+            # edge value INT_MAX denotes that
+            # initially edge value was zero
+            if ((not(arr[i][j] == minimum)) or
+                    (arr[i][j] == float('inf'))):
                 arr[i][j] = 0
-            else: 
+            else:
                 minimum = 0
 
-    # Print result  
-    for i in range(0, 4):  
-        for j in range(0, 4):  
-            print(arr[i][j], end = " ")  
-        print()  
+    # Print result
+    for i in range(0, n):
+        for j in range(0, n):
+            print(arr[i][j], end = " ")
+        print()
 
-# Driver Code  
-if __name__ == "__main__":  
+# Driver Code
+if __name__ == "__main__":
 
-    # Input Graph  
-    arr = [[1, 2, 4, 0],  
-           [0, 0, 0, 5],  
-           [0, 2, 0, 3],  
-           [0, 0, 0, 0]]  
+    # Input Graph
+    arr = [[1, 2, 4, 0],
+           [0, 0, 0, 5],
+           [0, 2, 0, 3],
+           [0, 0, 0, 0]]
 
-    minimizeGraph(arr)  
+    minimizeGraph(arr)
 
-# This code is contributed by  
-# Rituraj Jain 
-
+# This code is contributed by
+# Rituraj Jain
 ```
 
 ## C#
 
-```cs
+```
+// C# program for
+// minimizing graph
+using System;
 
-// C# program for 
-// minimizing graph 
-using System; 
+class GFG {
 
-class GFG { 
+    // Utility function for
+    // finding min of a row
+    static int minFn(int[] arr)
+    {
+        int min = int.MaxValue;
 
-    // Utility function for 
-    // finding min of a row 
-    static int minFn(int[] arr) 
-    { 
-        int min = int.MaxValue; 
+        for (int i = 0;
+             i < arr.Length; i++)
+            if (min > arr[i])
+                min = arr[i];
+        return min;
+    }
 
-        for (int i = 0; 
-             i < arr.Length; i++) 
-            if (min > arr[i]) 
-                min = arr[i]; 
-        return min; 
-    } 
+    // Utility function
+    // for minimizing graph
+    static void minimizeGraph(int[, ] arr)
+    {
+        int min;
 
-    // Utility function 
-    // for minimizing graph 
-    static void minimizeGraph(int[, ] arr) 
-    { 
-        int min; 
+        // Set empty edges
+        // to INT_MAX
+        for (int i = 0;
+             i < arr.GetLength(0); i++)
+            for (int j = 0;
+                 j < arr.GetLength(1); j++)
+                if (arr[i, j] == 0)
+                    arr[i, j] = int.MaxValue;
 
-        // Set empty edges 
-        // to INT_MAX 
-        for (int i = 0; 
-             i < arr.GetLength(0); i++) 
-            for (int j = 0; 
-                 j < arr.GetLength(1); j++) 
-                if (arr[i, j] == 0) 
-                    arr[i, j] = int.MaxValue; 
+        // Finding minimum of each
+        // row and deleting rest
+        // of edges
+        for (int i = 0; i < arr.GetLength(0); i++) {
 
-        // Finding minimum of each 
-        // row and deleting rest 
-        // of edges 
-        for (int i = 0; i < arr.GetLength(0); i++) { 
+            // Find minimum
+            // element of row
+            min = minFn(GetRow(arr, i));
 
-            // Find minimum 
-            // element of row 
-            min = minFn(GetRow(arr, i)); 
-
-            for (int j = 0; 
-                 j < arr.GetLength(1); j++) { 
-                // If edge value is not 
-                // min set it to zero, 
-                // also edge value INT_MAX 
-                // denotes that initially 
-                // edge value was zero 
-                if ((arr[i, j] != min) || (arr[i, j] == int.MaxValue)) 
-                    arr[i, j] = 0; 
+            for (int j = 0;
+                 j < arr.GetLength(1); j++) {
+                // If edge value is not
+                // min set it to zero,
+                // also edge value INT_MAX
+                // denotes that initially
+                // edge value was zero
+                if ((arr[i, j] != min) || (arr[i, j] == int.MaxValue))
+                    arr[i, j] = 0;
                 else
-                    min = 0; 
-            } 
-        } 
+                    min = 0;
+            }
+        }
 
-        // Print result; 
-        for (int i = 0; 
-             i < arr.GetLength(0); i++) { 
-            for (int j = 0; 
-                 j < arr.GetLength(1); j++) 
-                Console.Write(arr[i, j] + " "); 
-            Console.Write("\n"); 
-        } 
-    } 
+        // Print result;
+        for (int i = 0;
+             i < arr.GetLength(0); i++) {
+            for (int j = 0;
+                 j < arr.GetLength(1); j++)
+                Console.Write(arr[i, j] + " ");
+            Console.Write("\n");
+        }
+    }
 
-    public static int[] GetRow(int[, ] matrix, int row) 
-    { 
-        var rowLength = matrix.GetLength(1); 
-        var rowVector = new int[rowLength]; 
+    public static int[] GetRow(int[, ] matrix, int row)
+    {
+        var rowLength = matrix.GetLength(1);
+        var rowVector = new int[rowLength];
 
-        for (var i = 0; i < rowLength; i++) 
-            rowVector[i] = matrix[row, i]; 
+        for (var i = 0; i < rowLength; i++)
+            rowVector[i] = matrix[row, i];
 
-        return rowVector; 
-    } 
+        return rowVector;
+    }
 
-    // Driver Code 
-    public static void Main(String[] args) 
-    { 
-        // Input Graph 
-        int[, ] arr = { { 1, 2, 4, 0 }, 
-                        { 0, 0, 0, 5 }, 
-                        { 0, 2, 0, 3 }, 
-                        { 0, 0, 0, 0 } }; 
+    // Driver Code
+    public static void Main(String[] args)
+    {
+        // Input Graph
+        int[, ] arr = { { 1, 2, 4, 0 },
+                        { 0, 0, 0, 5 },
+                        { 0, 2, 0, 3 },
+                        { 0, 0, 0, 0 } };
 
-        minimizeGraph(arr); 
-    } 
-} 
+        minimizeGraph(arr);
+    }
+}
 
-// This code contributed by Rajput-Ji 
-
+// This code contributed by Rajput-Ji
 ```
 
-## PHP
+## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```php
+```
+<?php
+// PHP program for minimizing graph
 
-<?php 
-// PHP program for minimizing graph 
+// Utility function for finding
+// min of a row
+function minFn($arr)
+{
+    $min = PHP_INT_MAX;
 
-// Utility function for finding  
-// min of a row  
-function minFn($arr)  
-{  
-    $min = PHP_INT_MAX;  
+    for ($i = 0; $i < 4; $i++)
+        if ($min > $arr[$i])
+            $min = $arr[$i];
+    return $min;
+}
 
-    for ($i = 0; $i < 4; $i++)  
-        if ($min > $arr[$i])  
-            $min = $arr[$i];  
-    return $min;  
-}  
+// Utility function for minimizing graph
+function minimizeGraph($arr)
+{
+    $min;
 
-// Utility function for minimizing graph  
-function minimizeGraph($arr)  
-{  
-    $min;  
+    // Set empty edges to INT_MAX
+    for ($i = 0; $i < 4; $i++)
+        for ($j = 0; $j < 4; $j++)
+            if ($arr[$i][$j] == 0)
+                $arr[$i][$j] = PHP_INT_MAX;
 
-    // Set empty edges to INT_MAX  
-    for ($i = 0; $i < 4; $i++)  
-        for ($j = 0; $j < 4; $j++)  
-            if ($arr[$i][$j] == 0)  
-                $arr[$i][$j] = PHP_INT_MAX;  
+    // Finding minimum of each row
+    // and deleting rest of edges
+    for ($i = 0; $i < 4; $i++)
+    {
 
-    // Finding minimum of each row  
-    // and deleting rest of edges  
-    for ($i = 0; $i < 4; $i++) 
-    {  
+        // Find minimum element of row
+        $min = minFn($arr[$i]);
 
-        // Find minimum element of row  
-        $min = minFn($arr[$i]);  
-
-        for ($j = 0; $j < 4; $j++)  
-        {  
-            // If edge value is not min  
-            // set it to zero, also  
-            // edge value INT_MAX denotes that  
-            // initially edge value was zero  
-            if (!($arr[$i][$j] == $min) ||  
-                 ($arr[$i][$j] == PHP_INT_MAX))  
-                $arr[$i][$j] = 0;  
+        for ($j = 0; $j < 4; $j++)
+        {
+            // If edge value is not min
+            // set it to zero, also
+            // edge value INT_MAX denotes that
+            // initially edge value was zero
+            if (!($arr[$i][$j] == $min) ||
+                 ($arr[$i][$j] == PHP_INT_MAX))
+                $arr[$i][$j] = 0;
             else
-                $min = 0;  
-        }  
-    }  
+                $min = 0;
+        }
+    }
 
-    // Print result;  
-    for ($i = 0; $i < 4; $i++) 
-    {  
-        for ($j = 0; $j < 4; $j++)  
-            echo $arr[$i][$j], " ";  
-        echo "\n";  
-    }  
-}  
+    // Print result;
+    for ($i = 0; $i < 4; $i++)
+    {
+        for ($j = 0; $j < 4; $j++)
+            echo $arr[$i][$j], " ";
+        echo "\n";
+    }
+}
 
-// Driver Code 
+// Driver Code
 
-// Input Graph  
-$arr = array(array(1, 2, 4, 0),  
-             array(0, 0, 0, 5),  
-             array(0, 2, 0, 3),  
-             array(0, 0, 0, 0));  
+// Input Graph
+$arr = array(array(1, 2, 4, 0),
+             array(0, 0, 0, 5),
+             array(0, 2, 0, 3),
+             array(0, 0, 0, 0));
 
-minimizeGraph($arr);  
+minimizeGraph($arr);
 
-// This code is contributed by ajit. 
-?> 
-
+// This code is contributed by ajit.
+?>
 ```
 
-**Output:**
+## java 描述语言
+
+```
+<script>
+
+// Javascript program for minimizing graph
+
+// Utility function for
+// finding min of a row
+function minFn(arr)
+{
+    var min = 1000000000;
+
+    for (var i = 0; i < 4; i++)
+        if (min > arr[i])
+            min = arr[i];
+    return min;
+}
+
+// Utility function for minimizing graph
+function minimizeGraph(arr)
+{
+    var min;
+
+    // Set empty edges to INT_MAX
+    for (var i = 0; i < 4; i++)
+        for (var j = 0; j < 4; j++)
+            if (arr[i][j] == 0)
+                arr[i][j] = 1000000000;
+
+    // Finding minimum of each row
+    // and deleting rest of edges
+    for (var i = 0; i < 4; i++) {
+
+        // Find minimum element of row
+        min = minFn(arr[i]);
+
+        for (var j = 0; j < 4; j++) {
+            // If edge value is not min
+            // set it to zero, also
+            // edge value INT_MAX denotes that
+            // initially edge value was zero
+            if (!(arr[i][j] == min) || (arr[i][j] == 1000000000))
+                arr[i][j] = 0;
+            else
+                min = 0;
+        }
+    }
+
+    // Print result;
+    for (var i = 0; i < 4; i++) {
+        for (var j = 0; j < 4; j++)
+            document.write( arr[i][j] + " ");
+        document.write( "<br>");
+    }
+}
+
+// Driver Program
+// Input Graph
+var arr = [ [1, 2, 4, 0],
+                  [0, 0, 0, 5],
+                  [0, 2, 0, 3],
+                  [0, 0, 0, 0 ]];
+minimizeGraph(arr);
+
+// This code is contributed by noob2000.
+</script>
+```
+
+**Output:** 
 
 ```
 1 0 0 0 
 0 0 0 5 
 0 2 0 0 
 0 0 0 0
-
 ```
 
-**时间复杂度**：`O(N^2)`
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+**时间复杂度** : O(n^2)

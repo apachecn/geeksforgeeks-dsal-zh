@@ -1,12 +1,10 @@
-# 程序，用于查找完整图形中的边总数
+# 计算完整图形中边总数的程序
 
-> 原文： [https://www.geeksforgeeks.org/program-to-find-total-number-of-edges-in-a-complete-graph/](https://www.geeksforgeeks.org/program-to-find-total-number-of-edges-in-a-complete-graph/)
+> 原文:[https://www . geeksforgeeks . org/program-to-find-完整图中的总边数/](https://www.geeksforgeeks.org/program-to-find-total-number-of-edges-in-a-complete-graph/)
 
-给定一个图的 N 个顶点。 任务是在 N 个顶点的*完整图*中找到可能的边总数。
-
-**完全图**：完全图是其中每对顶点通过一条边连接的图。
-
-**范例**：
+给定图的 N 个顶点。任务是找到一个由 N 个顶点组成的*完整图*中可能的边的总数。
+**完全图:**完全图是每对顶点都由一条边连接的图。
+**示例** :
 
 ```
 Input : N = 3
@@ -14,195 +12,198 @@ Output : Edges = 3
 
 Input : N = 5
 Output : Edges = 10
-
 ```
 
-在 N 个顶点的完整图中，可能的边总数为：
+由 N 个顶点组成的完整图中可能的边的总数可以表示为，
 
-> **N 个顶点的完整图中的边总数** =（n *（n – 1））/ 2
+> **由 N 个顶点组成的完整图的边总数**=(N *(N-1))/2
 
-**示例 1**：下面是 N = 5 个顶点的完整图形。
+**例 1:** 下面是一个 N = 5 个顶点的完全图。
 
 ![](img/d25ffc569c864782538221a3cdd2ac22.png)
 
-上面完整图中的边总数= 10 =（5）*（5-1）/ 2。
-
-以下是上述想法的实现：
+上述完全图的边总数= 10 = (5)*(5-1)/2。
+以下是上述思路的实现:
 
 ## C++
 
-```cpp
+```
+// C++ implementation to find the
+// number of edges in a complete graph
 
-// C++ implementation to find the 
-// number of edges in a complete graph 
+#include <bits/stdc++.h>
+using namespace std;
 
-#include <bits/stdc++.h> 
-using namespace std; 
+// Function to find the total number of
+// edges in a complete graph with N vertices
+int totEdge(int n)
+{
+    int result = 0;
 
-// Function to find the total number of 
-// edges in a complete graph with N vertices 
-int totEdge(int n) 
-{ 
-    int result = 0; 
+    result = (n * (n - 1)) / 2;
 
-    result = (n * (n - 1)) / 2; 
+    return result;
+}
 
-    return result; 
-} 
+// Driver Code
+int main()
+{
+    int n = 6;
 
-// Driver Code 
-int main() 
-{ 
-    int n = 6; 
+    cout << totEdge(n);
 
-    cout << totEdge(n); 
-
-    return 0; 
-} 
-
+    return 0;
+}
 ```
 
-## Java
-
-```java
-
-// Java implementation to find the 
-// number of edges in a complete graph 
-
-class GFG { 
-
-// Function to find the total number of 
-// edges in a complete graph with N vertices 
-static int totEdge(int n) 
-{ 
-    int result = 0; 
-
-    result = (n * (n - 1)) / 2; 
-
-    return result; 
-} 
-
-    // Driver Code 
-    public static void main(String []args) 
-    { 
-        int n = 6; 
-        System.out.println(totEdge(n)); 
-    } 
-
-} 
+## Java 语言(一种计算机语言，尤用于创建网站)
 
 ```
+// Java implementation to find the
+// number of edges in a complete graph
 
-## Python
+class GFG {
 
-```py
+// Function to find the total number of
+// edges in a complete graph with N vertices
+static int totEdge(int n)
+{
+    int result = 0;
 
-# Python 3 implementation to   
-# find the number of edges  
-# in a complete graph  
+    result = (n * (n - 1)) / 2;
 
-# Function to find the total  
-# number of edges in a complete 
-# graph with N vertices 
-def totEdge(n) : 
+    return result;
+}
+
+    // Driver Code
+    public static void main(String []args)
+    {
+        int n = 6;
+        System.out.println(totEdge(n));
+    }
+
+}
+```
+
+## 蟒蛇 3
+
+```
+# Python 3 implementation to 
+# find the number of edges
+# in a complete graph
+
+# Function to find the total
+# number of edges in a complete
+# graph with N vertices
+def totEdge(n) :
 
     result = (n * (n - 1)) // 2
 
-    return result 
+    return result
 
-# Driver Code 
-if __name__ == "__main__" : 
+# Driver Code
+if __name__ == "__main__" :
 
     n = 6
 
-    print(totEdge(n)) 
+    print(totEdge(n))
 
-# This code is contributed 
-# by ANKITRAI1 
-
+# This code is contributed
+# by ANKITRAI1
 ```
 
 ## C#
 
-```cs
+```
+// C# implementation to find
+// the number of edges in a
+// complete graph
+using System;
 
-// C# implementation to find  
-// the number of edges in a 
-// complete graph 
-using System; 
+class GFG
+{
 
-class GFG  
-{ 
+// Function to find the total
+// number of edges in a complete
+// graph with N vertices
+static int totEdge(int n)
+{
+    int result = 0;
 
-// Function to find the total  
-// number of edges in a complete  
-// graph with N vertices 
-static int totEdge(int n) 
-{ 
-    int result = 0; 
+    result = (n * (n - 1)) / 2;
 
-    result = (n * (n - 1)) / 2; 
+    return result;
+}
 
-    return result; 
-} 
+// Driver Code
+public static void Main()
+{
+    int n = 6;
+    Console.Write(totEdge(n));
+}
+}
 
-// Driver Code 
-public static void Main() 
-{ 
-    int n = 6; 
-    Console.Write(totEdge(n)); 
-} 
-} 
-
-// This code is contributed  
-// by ChitraNayal 
-
+// This code is contributed
+// by ChitraNayal
 ```
 
-## PHP
-
-```php
-
-<?php 
-// PHP implementation to find  
-// the number of edges in a  
-// complete graph  
-
-// Function to find the total  
-// number of edges in a complete 
-// graph with N vertices  
-function totEdge($n)  
-{  
-    $result = 0;  
-
-    $result = ($n * ($n - 1)) / 2;  
-
-    return $result;  
-}  
-
-// Driver Code  
-$n = 6;  
-echo totEdge($n);  
-
-// This code is contributed 
-// by Shivi_Aggarwal 
-?> 
+## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
 ```
+<?php
+// PHP implementation to find
+// the number of edges in a
+// complete graph
 
-**Output:**
+// Function to find the total
+// number of edges in a complete
+// graph with N vertices
+function totEdge($n)
+{
+    $result = 0;
+
+    $result = ($n * ($n - 1)) / 2;
+
+    return $result;
+}
+
+// Driver Code
+$n = 6;
+echo totEdge($n);
+
+// This code is contributed
+// by Shivi_Aggarwal
+?>
+```
+
+## java 描述语言
+
+```
+<script>
+
+// Javascript implementation to find the
+// number of edges in a complete graph
+
+// Function to find the total number of
+// edges in a complete graph with N vertices
+function totEdge(n)
+{
+    var result = 0;
+
+    result = (n * (n - 1)) / 2;
+
+    return result;
+}
+
+// Driver Code
+var n = 6;
+document.write( totEdge(n));
+
+</script>
+```
+
+**Output:** 
 
 ```
 15
-
 ```
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

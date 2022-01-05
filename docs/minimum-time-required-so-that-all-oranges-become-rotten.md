@@ -1,19 +1,18 @@
-# 腐烂所有橘子所需的最短时间
+# 腐烂所有橙子所需的最短时间
 
-> 原文： [https://www.geeksforgeeks.org/minimum-time-required-so-that-all-oranges-become-rotten/](https://www.geeksforgeeks.org/minimum-time-required-so-that-all-oranges-become-rotten/)
+> 原文:[https://www . geeksforgeeks . org/最短时间要求-所有橙子都变烂/](https://www.geeksforgeeks.org/minimum-time-required-so-that-all-oranges-become-rotten/)
 
-给定尺寸为 m * n 的矩阵，其中矩阵中的每个单元格可以具有值 0、1 或 2，其含义如下：
+给定 m*n 维的矩阵，其中矩阵中的每个单元可以具有值 0、1 或 2，其具有以下含义:
 
 ```
 0: Empty cell
 1: Cells have fresh oranges
-2: Cells have rotten oranges 
-
+2: Cells have rotten oranges
 ```
 
-确定什么是最短时间才能使所有橙变烂。 索引为[i，j]的腐烂橙可以腐烂索引为[i-1，j]，[i + 1，j]，[i，j-1]，[i，j + 1]的其他鲜橙（向上 ，向下，向左和向右）。 如果不可能腐烂每个橙色，则只需返回-1。
+确定使所有橙子腐烂所需的最短时间。索引[i，j]处的腐烂橙子可以在索引[i-1，j]，[i+1，j]，[i，j-1]，[i，j+1](上，下，左，右)处腐烂其他新鲜橙子。如果不可能腐烂每个橙子，那么只需返回-1。
 
-**范例**：
+**示例:**
 
 ```
 Input:  arr[][C] = { {2, 1, 0, 2, 1},
@@ -59,31 +58,22 @@ At 2nd time frame:
 {1, 0, 0, 2, 2}
 ...
 The 1 at the bottom left corner of the matrix is never rotten.
-
 ```
 
-**<u>朴素的解决方案：</u>**
+**<u>天真解:</u>**
 
-*   **方法**：这个想法很基础。 多轮遍历所有橙子。 在每一轮中，将橙子旋转到上一轮中腐烂的橙子的相邻位置。
+*   **进场:**思路很基本。在多个回合中遍历所有橙子。在每一轮中，将橙子腐烂到上一轮中腐烂的橙子的相邻位置。
+*   **算法:**
+    1.  创建一个变量 *no = 2* 和 *changed = false*
+    2.  运行一个循环，直到矩阵中没有在迭代中改变的单元。
+    3.  运行嵌套循环并遍历矩阵。如果矩阵的元素等于*否*，那么如果相邻元素的值等于 1，即没有腐烂，则将相邻元素分配为否+ 1，更新变为真。
+    4.  遍历矩阵，检查是否有任何单元格为 1。如果存在 1，返回-1
+    5.  否则返回 no–2
+*   **实施:**
 
-*   **算法**：
-
-    1.  创建变量*否= 2* 和*已更改=假*
-
-    2.  循环运行，直到矩阵的任何单元都没有在迭代中更改。
-
-    3.  运行一个嵌套循环并遍历矩阵。 如果矩阵的元素等于*，则不会*，如果相邻元素的值等于 1，即不腐烂，则将相邻元素分配为 no + 1，即更新为 true。
-
-    4.  遍历矩阵并检查是否有任何一个单元格为 1。如果存在 1，则返回-1
-
-    5.  其他返回– 2
-
-*   **实施**：[
-
-## CPP14
+## C++14
 
 ```
-
 // C++ program to rot all oranges when u can move
 // in all the four direction from a rotten orange
 #include <bits/stdc++.h>
@@ -166,22 +156,126 @@ int main()
 
     return 0;
 }
-
 ```
 
-## Python
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```py
+```
+// Java program to rot all oranges when u can move
+// in all the four direction from a rotten orange
+class GFG{
 
-# Python3 program to rot all 
+static int R = 3;
+static int C = 5;
+
+// Check if i, j is under the array
+// limits of row and column
+static boolean issafe(int i, int j)
+{
+    if (i >= 0 && i < R &&
+        j >= 0 && j < C)
+        return true;
+
+    return false;
+}
+
+static int rotOranges(int v[][])
+{
+    boolean changed = false;
+    int no = 2;
+
+    while (true)
+    {
+        for(int i = 0; i < R; i++)
+        {
+            for(int j = 0; j < C; j++)
+            {
+
+                // Rot all other oranges present at
+                // (i+1, j), (i, j-1), (i, j+1), (i-1, j)
+                if (v[i][j] == no)
+                {
+                    if (issafe(i + 1, j) &&
+                             v[i + 1][j] == 1)
+                    {
+                        v[i + 1][j] = v[i][j] + 1;
+                        changed = true;
+                    }
+                    if (issafe(i, j + 1) &&
+                             v[i][j + 1] == 1)
+                    {
+                        v[i][j + 1] = v[i][j] + 1;
+                        changed = true;
+                    }
+                    if (issafe(i - 1, j) &&
+                             v[i - 1][j] == 1)
+                    {
+                        v[i - 1][j] = v[i][j] + 1;
+                        changed = true;
+                    }
+                    if (issafe(i, j - 1) &&
+                             v[i][j - 1] == 1)
+                    {
+                        v[i][j - 1] = v[i][j] + 1;
+                        changed = true;
+                    }
+                }
+            }
+        }
+
+        // If no rotten orange found it means all
+        // oranges rottened now
+        if (!changed)
+            break;
+
+        changed = false;
+        no++;
+    }
+
+    for(int i = 0; i < R; i++)
+    {
+        for(int j = 0; j < C; j++)
+        {
+
+            // If any orange is found to be
+            // not rotten then ans is not possible
+            if (v[i][j] == 1)
+                return -1;
+        }
+    }
+
+    // Because initial value for a rotten
+    // orange was 2
+    return no - 2;
+}
+
+// Driver Code
+public static void main(String[] args)
+{
+    int v[][] = { { 2, 1, 0, 2, 1 },
+                  { 1, 0, 1, 2, 1 },
+                  { 1, 0, 0, 2, 1 } };
+
+    System.out.println("Max time incurred: " +
+                       rotOranges(v));
+}
+}
+
+// This code is contributed by divyesh072019
+```
+
+## 蟒蛇 3
+
+```
+# Python3 program to rot all
 # oranges when u can move
-# in all the four direction 
+# in all the four direction
 # from a rotten orang
 R = 3
 C = 5
 
 # Check if i, j is under the
-# array limits of row and 
+# array limits of row and
 # column
 def issafe(i, j):
 
@@ -199,8 +293,8 @@ def rotOranges(v):
             for j in range(C):
 
                 # Rot all other oranges
-                # present at (i+1, j), 
-                # (i, j-1), (i, j+1), 
+                # present at (i+1, j),
+                # (i, j-1), (i, j+1),
                 # (i-1, j)
                 if (v[i][j] == no):
                     if (issafe(i + 1, j) and
@@ -223,7 +317,7 @@ def rotOranges(v):
                         v[i][j - 1] = v[i][j] + 1
                         changed = True
 
-        # if no rotten orange found 
+        # if no rotten orange found
         # it means all oranges rottened
         # now
         if (not changed):
@@ -235,7 +329,7 @@ def rotOranges(v):
         for j in range(C):
 
             # if any orange is found
-            # to be not rotten then 
+            # to be not rotten then
             # ans is not possible
             if (v[i][j] == 1):
                 return -1
@@ -255,54 +349,209 @@ if __name__ == "__main__":
            rotOranges(v))
 
 # This code is contributed by Chitranayal
+```
 
+## C#
+
+```
+// C# program to rot all oranges when u can move
+// in all the four direction from a rotten orange
+using System;
+class GFG {
+
+    static int R = 3;
+    static int C = 5;
+
+    // Check if i, j is under the array
+   // limits of row and column
+    static bool issafe(int i, int j)
+    {
+        if (i >= 0 && i < R && j >= 0 && j < C)
+            return true;
+        return false;
+    }
+
+    static int rotOranges(int[,] v)
+    {
+        bool changed = false;
+        int no = 2;
+        while (true) {
+            for (int i = 0; i < R; i++) {
+                for (int j = 0; j < C; j++) {
+
+                    // Rot all other oranges present at
+                    // (i+1, j), (i, j-1), (i, j+1), (i-1, j)
+                    if (v[i, j] == no) {
+                        if (issafe(i + 1, j) && v[i + 1, j] == 1) {
+                            v[i + 1, j] = v[i, j] + 1;
+                            changed = true;
+                        }
+                        if (issafe(i, j + 1) && v[i, j + 1] == 1) {
+                            v[i, j + 1] = v[i, j] + 1;
+                            changed = true;
+                        }
+                        if (issafe(i - 1, j) && v[i - 1, j] == 1) {
+                            v[i - 1, j] = v[i, j] + 1;
+                            changed = true;
+                        }
+                        if (issafe(i, j - 1) && v[i, j - 1] == 1) {
+                            v[i, j - 1] = v[i, j] + 1;
+                            changed = true;
+                        }
+                    }
+                }
+            }
+
+            // if no rotten orange found it means all
+            // oranges rottened now
+            if (!changed)
+                break;
+            changed = false;
+            no++;
+        }
+
+        for (int i = 0; i < R; i++) {
+            for (int j = 0; j < C; j++) {
+
+                // if any orange is found to be
+                // not rotten then ans is not possible
+                if (v[i, j] == 1)
+                    return -1;
+            }
+        }
+
+        // Because initial value for a rotten
+        // orange was 2
+        return no - 2;
+    }
+
+  static void Main() {
+
+    int[ , ] v = { { 2, 1, 0, 2, 1 },
+                { 1, 0, 1, 2, 1 },
+                { 1, 0, 0, 2, 1 } };
+
+    Console.Write("Max time incurred: " + rotOranges(v));
+  }
+}
+
+// This code is contributed by divyeshrabadiya07
+```
+
+## java 描述语言
+
+```
+<script>
+    // Javascript program to rot all oranges when u can move
+    // in all the four direction from a rotten orange
+    let R = 3;
+    let C = 5;
+
+    // Check if i, j is under the array limits of row and column
+    function issafe(i, j)
+    {
+        if (i >= 0 && i < R && j >= 0 && j < C)
+            return true;
+        return false;
+    }
+
+    function rotOranges(v)
+    {
+        let changed = false;
+        let no = 2;
+        while (true) {
+            for (let i = 0; i < R; i++) {
+                for (let j = 0; j < C; j++) {
+
+                    // Rot all other oranges present at
+                    // (i+1, j), (i, j-1), (i, j+1), (i-1, j)
+                    if (v[i][j] == no) {
+                        if (issafe(i + 1, j) && v[i + 1][j] == 1) {
+                            v[i + 1][j] = v[i][j] + 1;
+                            changed = true;
+                        }
+                        if (issafe(i, j + 1) && v[i][j + 1] == 1) {
+                            v[i][j + 1] = v[i][j] + 1;
+                            changed = true;
+                        }
+                        if (issafe(i - 1, j) && v[i - 1][j] == 1) {
+                            v[i - 1][j] = v[i][j] + 1;
+                            changed = true;
+                        }
+                        if (issafe(i, j - 1) && v[i][j - 1] == 1) {
+                            v[i][j - 1] = v[i][j] + 1;
+                            changed = true;
+                        }
+                    }
+                }
+            }
+
+            // if no rotten orange found it means all
+            // oranges rottened now
+            if (!changed)
+                break;
+            changed = false;
+            no++;
+        }
+
+        for (let i = 0; i < R; i++) {
+            for (let j = 0; j < C; j++) {
+
+                // if any orange is found to be
+                // not rotten then ans is not possible
+                if (v[i][j] == 1)
+                    return -1;
+            }
+        }
+
+        // Because initial value for a rotten
+        // orange was 2
+        return no - 2;
+    }
+
+// Driver code
+    let v = [ [ 2, 1, 0, 2, 1 ],
+                    [ 1, 0, 1, 2, 1 ],
+                    [ 1, 0, 0, 2, 1 ] ];
+
+    document.write("Max time incurred: " + rotOranges(v));
+
+    // This code is contributed by mukesh07.
+</script>
 ```
 
 **Output:** 
 
 ```
 Max time incurred: 2
-
 ```
 
-*   **复杂度分析**：
+*   **复杂度分析:**
+    *   **时间复杂度** : O((R*C) * (R *C))。
+        矩阵需要一次又一次的遍历，直到矩阵没有变化，这种情况最多可以发生(R *C)/2 次。所以时间复杂度是 O((R * C) * (R *C))。
+    *   **空间复杂度:** O(1)。
+        不需要额外空间。
 
-    *   **时间复杂度**：O（max（R，C）* R * C）。
+**<u>高效解决方案</u>**
 
-        矩阵需要反复遍历，直到矩阵没有变化为止，这可能发生 max（R，C）次。 因此，时间复杂度为 O（max（R，C）* R * C）。
+*   **方法:**思路是用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)。橘子腐烂的条件是当它们接触到其他腐烂的橘子时。这类似于广度优先搜索，在广度优先搜索中，图形被分成层或圆，搜索是从较低或较近的层到较深或较高的层进行的。在以前的方法中，这个想法是基于 BFS 的，但实施效果差且效率低。要找到值为*否*的元素，必须遍历整个矩阵。因此，可以通过使用 BFS 的这种有效方法来减少时间。
 
-    *   **空间复杂度**：`O(1)`。
-
-        不需要多余的空间。
-
-**<u>有效解决方案</u>**
-
-*   **方法**：的想法是使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)。 橘子变烂的条件是当它们与其他烂橘子接触时。 这类似于广度优先搜索，在该搜索中，图形被分为层或圆，并且搜索从较低或较近的层到较深或较高的层进行。 在以前的方法中，该想法基于 BFS，但实现起来很差且效率低下。 为了找到其值为*而不是*的元素，必须遍历整个矩阵。 因此，使用这种 BFS 的有效方法可以减少时间。
-
-*   **算法**：
-
+*   **算法:**
     1.  创建一个空队列 *Q* 。
-
-        1.  找到所有烂橙并将其排队到 Q。此外，排队一个定界符以指示下一个时间范围的开始。
-
-        2.  Q 不为空时运行循环
-
-        3.  在未达到 Q 的定界符时执行以下操作
-
-    2.  从队列中取出一个橙色，将所有相邻的橙色腐烂。 在腐烂相邻对象时，请确保时间范围仅增加一次。 如果没有相邻的橙子，则时间范围不会增加。
-
-    3.  使旧的定界符出队，并使新的定界符入队。 在上一个时间范围内烂掉的橙子位于两个定界符之间。
-
-*   **以上方法的空运行**：[
+        1.  找到所有腐烂的橙子，把它们排队到 q。此外，排队一个分隔符来指示下一个时间帧的开始。
+        2.  当 Q 不为空时运行循环
+        3.  当没有到达 Q 中的分隔符时，请执行以下操作
+    2.  从队列中取出一个橙子，腐烂所有相邻的橙子。当腐烂相邻的时候，确保时间框架只增加一次。如果没有相邻的橙子，则时间范围不会增加。
+    3.  将旧分隔符出列，并将新分隔符入队。在前一个时间框架中腐烂的橙子位于两个分隔符之间。
+*   **上述方法的试运行:**
 
 ![](img/12c909a5ec6a114a5aff7c3b8cb94792.png)
 
-*   **实施**：[
+*   **实施:**
 
 ## C++
 
-```cpp
-
+```
 // C++ program to find minimum time required to make all
 // oranges rotten
 #include<bits/stdc++.h>
@@ -442,7 +691,7 @@ int rotOranges(int arr[][C])
         // If Queue was empty than no rotten oranges left to process so exit
     }
 
-    // Return -1 if all arranges could not rot, otherwise -1.
+    // Return -1 if all arranges could not rot, otherwise return ans.
     return (checkall(arr))? -1: ans;
 }
 
@@ -459,20 +708,18 @@ int main()
          cout << "Time required for all oranges to rot => " << ans << endl;
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
+```
 //Java program to find minimum time required to make all
 //oranges rotten
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class RotOrange 
+public class RotOrange
 {
     public final static int R = 3;
     public final static int C = 5;
@@ -520,7 +767,7 @@ public class RotOrange
     {
         // Create a queue of cells
         Queue<Ele> Q=new LinkedList<>();
-        Ele temp; 
+        Ele temp;
         int ans = 0;
          // Store all the cells having rotten orange in first time frame
         for (int i=0; i < R; i++)
@@ -594,7 +841,7 @@ public class RotOrange
                     }
 
                  // Check bottom adjacent cell if it can be rotten
-                 if (isValid(temp.x, temp.y-1) && arr[temp.x][temp.y-1] == 1) 
+                 if (isValid(temp.x, temp.y-1) && arr[temp.x][temp.y-1] == 1)
                  {
                         if (!flag)
                         {
@@ -613,7 +860,7 @@ public class RotOrange
 
             // If oranges were rotten in current frame than separate the
             // rotten oranges using delimiter for the next frame for processing.
-            if (!Q.isEmpty()) 
+            if (!Q.isEmpty())
             {
                 Q.add(new Ele(-1,-1));
             }
@@ -621,13 +868,13 @@ public class RotOrange
             // If Queue was empty than no rotten oranges left to process so exit
         }
 
-        // Return -1 if all arranges could not rot, otherwise -1.s
+        // Return -1 if all arranges could not rot, otherwise ans
         return (checkAll(arr))? -1: ans;
 
     }
 
     // Driver program
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
         int arr[][] = { {2, 1, 0, 2, 1},
                         {1, 0, 1, 2, 1},
@@ -641,15 +888,162 @@ public class RotOrange
 
 }
 //This code is contributed by Sumit Ghosh
+```
 
+## 蟒蛇 3
+
+```
+# Python3 program to find minimum time required to make all
+# oranges rotten
+from collections import deque
+
+# function to check whether a cell is valid / invalid
+def isvalid(i, j):
+    return (i >= 0 and j >= 0 and i < 3 and j < 5)
+
+# Function to check whether the cell is delimiter
+# which is (-1, -1)
+def isdelim(temp):
+    return (temp[0] == -1 and temp[1] == -1)
+
+# Function to check whether there is still a fresh
+# orange remaining
+def checkall(arr):
+    for i in range(3):
+       for j in range(5):
+          if (arr[i][j] == 1):
+             return True
+    return False
+
+# This function finds if it is
+# possible to rot all oranges or not.
+# If possible, then it returns
+# minimum time required to rot all,
+# otherwise returns -1
+def rotOranges(arr):
+
+    # Create a queue of cells
+    Q = deque()
+    temp = [0, 0]
+    ans = 1
+
+    # Store all the cells having
+    # rotten orange in first time frame
+    for i in range(3):
+       for j in range(5):
+            if (arr[i][j] == 2):
+                temp[0]= i
+                temp[1] = j
+                Q.append([i, j])
+
+    # Separate these rotten oranges
+    # from the oranges which will rotten
+    # due the oranges in first time
+    # frame using delimiter which is (-1, -1)
+    temp[0] = -1
+    temp[1] = -1
+    Q.append([-1, -1])
+    # print(Q)
+
+    # Process the grid while there are
+    # rotten oranges in the Queue
+    while False:
+
+        # This flag is used to determine
+        # whether even a single fresh
+        # orange gets rotten due to rotten
+        # oranges in current time
+        # frame so we can increase
+        # the count of the required time.
+        flag = False
+        print(len(Q))
+
+        # Process all the rotten
+        # oranges in current time frame.
+        while not isdelim(Q[0]):
+            temp = Q[0]
+            print(len(Q))
+
+            # Check right adjacent cell that if it can be rotten
+            if (isvalid(temp[0] + 1, temp[1]) and arr[temp[0] + 1][temp[1]] == 1):
+
+                # if this is the first orange to get rotten, increase
+                # count and set the flag.
+                if (not flag):
+                    ans, flag =ans + 1, True
+
+                # Make the orange rotten
+                arr[temp[0] + 1][temp[1]] = 2
+
+                # append the adjacent orange to Queue
+                temp[0] += 1
+                Q.append(temp)
+
+                temp[0] -= 1 # Move back to current cell
+
+            # Check left adjacent cell that if it can be rotten
+            if (isvalid(temp[0] - 1, temp[1]) and arr[temp[0] - 1][temp[1]] == 1):
+                if (not flag):
+                    ans, flag =ans + 1, True
+                arr[temp[0] - 1][temp[1]] = 2
+                temp[0] -= 1
+                Q.append(temp) # append this cell to Queue
+                temp[0] += 1
+
+            # Check top adjacent cell that if it can be rotten
+            if (isvalid(temp[0], temp[1] + 1) and arr[temp[0]][temp[1] + 1] == 1):
+                if (not flag):
+                    ans, flag = ans + 1, True
+                arr[temp[0]][temp[1] + 1] = 2
+                temp[1] += 1
+                Q.append(temp) # Push this cell to Queue
+                temp[1] -= 1
+
+            # Check bottom adjacent cell if it can be rotten
+            if (isvalid(temp[0], temp[1] - 1) and arr[temp[0]][temp[1] - 1] == 1):
+                if (not flag):
+                    ans, flag = ans + 1, True
+                arr[temp[0]][temp[1] - 1] = 2
+                temp[1] -= 1
+                Q.append(temp) # append this cell to Queue
+            Q.popleft()
+
+        # Pop the delimiter
+        Q.popleft()
+
+        # If oranges were rotten in
+        # current frame than separate the
+        # rotten oranges using delimiter
+        # for the next frame for processing.
+        if (len(Q) == 0):
+            temp[0] = -1
+            temp[1] = -1
+            Q.append(temp)
+
+        # If Queue was empty than no rotten oranges left to process so exit
+
+    # Return -1 if all arranges could not rot, otherwise return ans.
+    return ans + 1 if(checkall(arr)) else -1
+
+# Driver program
+if __name__ == '__main__':
+    arr = [[2, 1, 0, 2, 1],
+         [1, 0, 1, 2, 1],
+         [1, 0, 0, 2, 1]]
+    ans = rotOranges(arr)
+    if (ans == -1):
+        print("All oranges cannot rotn")
+    else:
+        print("Time required for all oranges to rot => " , ans)
+
+        # This code is contributed by mohit kumar 29
 ```
 
 ## C#
 
-```cs
-
-// C# program to find minimum time 
-// required to make all oranges rotten 
+```
+// C# program to find minimum time
+// required to make all oranges rotten
 using System;
 using System.Collections.Generic;
 
@@ -658,8 +1052,8 @@ class GFG
     public const int R = 3;
     public const int C = 5;
 
-    // structure for storing 
-    // coordinates of the cell 
+    // structure for storing
+    // coordinates of the cell
     public class Ele
     {
         public int x = 0;
@@ -672,22 +1066,22 @@ class GFG
     }
 
     // function to check whether a cell
-    // is valid / invalid 
+    // is valid / invalid
     public static bool isValid(int i, int j)
     {
-        return (i >= 0 && j >= 0 && 
+        return (i >= 0 && j >= 0 &&
                 i < R && j < C);
     }
 
-    // Function to check whether the cell 
-    // is delimiter which is (-1, -1) 
+    // Function to check whether the cell
+    // is delimiter which is (-1, -1)
     public static bool isDelim(Ele temp)
     {
         return (temp.x == -1 && temp.y == -1);
     }
 
-    // Function to check whether there 
-    // is still a fresh orange remaining 
+    // Function to check whether there
+    // is still a fresh orange remaining
     public static bool checkAll(int[][] arr)
     {
         for (int i = 0; i < R; i++)
@@ -703,19 +1097,19 @@ class GFG
         return false;
     }
 
-    // This function finds if it is possible 
+    // This function finds if it is possible
     // to rot all oranges or not. If possible,
-    // then it returns minimum time required 
-    // to rot all, otherwise returns -1 
+    // then it returns minimum time required
+    // to rot all, otherwise returns -1
     public static int rotOranges(int[][] arr)
     {
-        // Create a queue of cells 
+        // Create a queue of cells
         LinkedList<Ele> Q = new LinkedList<Ele>();
         Ele temp;
         int ans = 0;
 
         // Store all the cells having rotten
-        // orange in first time frame 
+        // orange in first time frame
         for (int i = 0; i < R; i++)
         {
         for (int j = 0; j < C; j++)
@@ -727,58 +1121,58 @@ class GFG
         }
         }
 
-        // Separate these rotten oranges from 
-        // the oranges which will rotten 
+        // Separate these rotten oranges from
+        // the oranges which will rotten
         // due the oranges in first time frame
-        // using delimiter which is (-1, -1) 
+        // using delimiter which is (-1, -1)
         Q.AddLast(new Ele(-1,-1));
 
-        // Process the grid while there are 
-        // rotten oranges in the Queue 
+        // Process the grid while there are
+        // rotten oranges in the Queue
         while (Q.Count > 0)
         {
-            // This flag is used to determine 
-            // whether even a single fresh 
-            // orange gets rotten due to rotten 
+            // This flag is used to determine
+            // whether even a single fresh
+            // orange gets rotten due to rotten
             // oranges in current time frame so
-            // we can increase the count of the 
-            // required time. 
+            // we can increase the count of the
+            // required time.
             bool flag = false;
 
             // Process all the rotten oranges
-            // in current time frame. 
+            // in current time frame.
             while (!isDelim(Q.First.Value))
             {
                 temp = Q.First.Value;
 
                 // Check right adjacent cell that
-                // if it can be rotten 
-                if (isValid(temp.x + 1, temp.y) && 
+                // if it can be rotten
+                if (isValid(temp.x + 1, temp.y) &&
                         arr[temp.x + 1][temp.y] == 1)
                 {
                     if (!flag)
                     {
-                        // if this is the first orange 
-                        // to get rotten, increase 
-                        // count and set the flag. 
+                        // if this is the first orange
+                        // to get rotten, increase
+                        // count and set the flag.
                         ans++;
                         flag = true;
                     }
 
-                    // Make the orange rotten 
+                    // Make the orange rotten
                     arr[temp.x + 1][temp.y] = 2;
 
-                    // push the adjacent orange to Queue 
+                    // push the adjacent orange to Queue
                     temp.x++;
                     Q.AddLast(new Ele(temp.x,temp.y));
 
-                    // Move back to current cell 
+                    // Move back to current cell
                     temp.x--;
                 }
 
-                // Check left adjacent cell that 
-                // if it can be rotten 
-                if (isValid(temp.x - 1, temp.y) && 
+                // Check left adjacent cell that
+                // if it can be rotten
+                if (isValid(temp.x - 1, temp.y) &&
                         arr[temp.x - 1][temp.y] == 1)
                 {
                         if (!flag)
@@ -790,13 +1184,13 @@ class GFG
                         temp.x--;
 
                         // push this cell to Queue
-                        Q.AddLast(new Ele(temp.x,temp.y)); 
+                        Q.AddLast(new Ele(temp.x,temp.y));
                         temp.x++;
                 }
 
-                // Check top adjacent cell that 
-                // if it can be rotten 
-                if (isValid(temp.x, temp.y + 1) && 
+                // Check top adjacent cell that
+                // if it can be rotten
+                if (isValid(temp.x, temp.y + 1) &&
                         arr[temp.x][temp.y + 1] == 1)
                 {
                         if (!flag)
@@ -808,13 +1202,13 @@ class GFG
                         temp.y++;
 
                         // Push this cell to Queue
-                        Q.AddLast(new Ele(temp.x,temp.y)); 
+                        Q.AddLast(new Ele(temp.x,temp.y));
                         temp.y--;
                 }
 
                 // Check bottom adjacent cell
-                // if it can be rotten 
-                if (isValid(temp.x, temp.y - 1) && 
+                // if it can be rotten
+                if (isValid(temp.x, temp.y - 1) &&
                         arr[temp.x][temp.y - 1] == 1)
                 {
                         if (!flag)
@@ -826,35 +1220,35 @@ class GFG
                         temp.y--;
 
                         // push this cell to Queue
-                        Q.AddLast(new Ele(temp.x,temp.y)); 
+                        Q.AddLast(new Ele(temp.x,temp.y));
                 }
                 Q.RemoveFirst();
 
             }
 
-            // Pop the delimiter 
+            // Pop the delimiter
             Q.RemoveFirst();
 
-            // If oranges were rotten in current 
-            // frame than separate the rotten 
-            // oranges using delimiter for the 
-            // next frame for processing. 
+            // If oranges were rotten in current
+            // frame than separate the rotten
+            // oranges using delimiter for the
+            // next frame for processing.
             if (Q.Count > 0)
             {
                 Q.AddLast(new Ele(-1,-1));
             }
 
-            // If Queue was empty than no rotten 
-            // oranges left to process so exit 
+            // If Queue was empty than no rotten
+            // oranges left to process so exit
         }
 
         // Return -1 if all arranges could
-        // not rot, otherwise -1.s 
+        // not rot, otherwise ans
         return (checkAll(arr)) ? -1: ans;
 
     }
 
-    // Driver Code 
+    // Driver Code
     public static void Main(string[] args)
     {
         int[][] arr = new int[][]
@@ -878,29 +1272,19 @@ class GFG
 }
 
 // This code is contributed by Shrikant13
-
 ```
 
-*   **输出**：
+**Output**
 
 ```
 Time required for all oranges to rot => 2
-
 ```
 
-*   **复杂度分析**：
-
-    *   **时间复杂度**：O（R * C）。
-
-        矩阵的每个元素只能插入一次队列，因此迭代的上限为 O（R * C），即元素数。 因此，时间复杂度为 O（R * C）。
-
-    *   **空间复杂度**：O（R * C）。
-
-        要将元素存储在队列中，需要 O（R * C）空间。
+*   **复杂度分析:**
+    *   **时间复杂度:** O( R *C)。
+        矩阵的每个元素只能插入队列一次，所以迭代的上界是 O(R*C)，即元素的个数。所以时间复杂度是 O(R *C)。
+    *   **空间复杂度:** O(R*C)。
+        要将元素存储在队列中，需要 O(R*C)空间。
 
 *感谢 Gaurav Ahirwar 提出上述解决方案。*
-
-如果发现任何不正确的内容，或者想共享有关上述
-
-主题的更多信息，请发表评论
-
+如果发现有不正确的地方，请写评论，或者想分享更多关于以上讨论话题的信息

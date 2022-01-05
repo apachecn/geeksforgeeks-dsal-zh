@@ -1,44 +1,41 @@
-# 二进制值图
+# 二进制值图中连通分量的八进制等价图
 
-中连通组件的八进制等效项
+> 原文:[https://www . geeksforgeeks . org/八进制等值二进制值连接组件图/](https://www.geeksforgeeks.org/octal-equivalents-of-connected-components-in-binary-valued-graph/)
 
-> 原文： [https://www.geeksforgeeks.org/octal-equivalents-of-connected-components-in-binary-valued-graph/](https://www.geeksforgeeks.org/octal-equivalents-of-connected-components-in-binary-valued-graph/)
+给定一个具有 **V** 顶点和 **E** 边的**二进制值** [无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，任务是找到该图所有连通分支的**八进制等价图**。二进制值图可以被认为只有二进制数 **(0 或 1)** 作为顶点值。
 
-给定**二进制值** [无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，并带有`V`顶点和`E`边，任务是找到**八进制等效项** 图中所有已连通组件的]。 可以将二进制值图视为仅将二进制数**（0 或 1）**作为顶点值。
+**示例:**
 
-**示例**：
-
-> **输入**：E = 4，V = 7
+> **输入:** E = 4，V = 7
 > 
 > ![](img/fb50e4ce31778dd68a347b016976fde7.png)
 > 
-> **输出**：
-> 链= 0 1 八进制等效值= 1
-> 链= 0 0 0 八进制等效值= 0
-> 链= 1 1 八进制等效值= 3
-> **说明**：
-> 在第一个连通组件的情况下，二进制链为[0，1]
-> 因此，二进制字符串=“ 01”且二进制数= 01
-> 因此，八进制等效项为 1
+> **输出:**
+> Chain = 0 1 八进制当量= 1
+> Chain = 0 0 0 八进制当量= 0
+> Chain = 1 1 八进制当量= 3
+> **解释:**
+> 对于第一个连接的组件，二进制链是[0，1]
+> 因此，二进制字符串=“01”和二进制数= 01
+> 因此，八进制当量是 1
 > 
-> **输入**：E = 6，V = 10
+> **输入:** E = 6，V = 10
 > 
 > ![](img/83927206790a724c02078daf19b731bf.png)
 > 
-> **输出**：
-> 链= 1 [八进制等效值] 1
-> 链= 0 0 1 0 八进制等效值= 2
-> 链= 1 1 0 八进制等效值= 6
-> 链= 1 0 八进制等效值= 2
+> **输出:**
+> 链= 1 八进制当量= 1
+> 链= 0 0 1 0 八进制当量= 2
+> 链= 1 1 0 八进制当量= 6
+> 链= 1 0 八进制当量= 2
 
-**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连通组件，如本文的[中所述。 对于每个连通组件，将显示二进制字符串，并根据二进制值（如](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[本文](https://www.geeksforgeeks.org/convert-binary-number-octal/)中所述）计算等效的八进制值并进行打印。
+**方法:**想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的连接组件，如[这篇](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)文章所述。对于每个连接的组件，显示二进制字符串，并根据二进制值计算等效的八进制值(如本文中所述)并打印。
 
-下面是上述方法的实现：
+下面是上述方法的实现:
 
 ## C++
 
-```cpp
-
+```
 // C++ implementation to find
 // octal equivalents of
 // all connected components
@@ -251,16 +248,14 @@ int main()
     octalValue(graph, V, values);
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
-// Java implementation to find 
-// octal equivalents of all 
-// connected components 
+```
+// Java implementation to find
+// octal equivalents of all
+// connected components
 import java.io.*;
 import java.util.*;
 
@@ -281,7 +276,7 @@ static void depthFirst(int v,
     // Store the connected chain
     storeChain.add(v);
 
-    for(int i : graph.get(v)) 
+    for(int i : graph.get(v))
     {
         if (visited[i] == false)
         {
@@ -321,8 +316,8 @@ static String octal(String bin)
 
     // Add min 0's in the beginning to make
     // left substring length divisible by 3
-    for(int i = 1; 
-            i <= (3 - len_left % 3) % 3; 
+    for(int i = 1;
+            i <= (3 - len_left % 3) % 3;
             i++)
         bin = '0' + bin;
 
@@ -335,7 +330,7 @@ static String octal(String bin)
 
         // Add min 0's in the end to make right
         // substring length divisible by 3
-        for(int i = 1; 
+        for(int i = 1;
                 i <= (3 - len_right % 3) % 3;
                 i++)
             bin = bin + '0';
@@ -391,7 +386,7 @@ static void octalValue(List<List<Integer>> graph,
     // Following loop invokes DFS algorithm
     for(int i = 1; i <= vertices; i++)
     {
-        if (visited[i] == false) 
+        if (visited[i] == false)
         {
 
             // Variable to hold
@@ -422,7 +417,7 @@ static void octalValue(List<List<Integer>> graph,
             // Printing binary chain
             System.out.print("Chain = ");
 
-            for(int j = 0; j < sizeChain; j++) 
+            for(int j = 0; j < sizeChain; j++)
             {
                 System.out.print(chainValues[j] + " ");
             }
@@ -432,7 +427,7 @@ static void octalValue(List<List<Integer>> graph,
             // Converting the array with vertex
             // values to a binary string
             String s = "";
-            for(int j = 0; j < sizeChain; j++) 
+            for(int j = 0; j < sizeChain; j++)
             {
                 String s1 = String.valueOf(
                     chainValues[j]);
@@ -488,7 +483,6 @@ public static void main(String[] args)
 }
 
 // This code is contributed by jithin
-
 ```
 
 **Output:** 
@@ -499,13 +493,3 @@ Chain = 0 0 0     Octal equivalent = 0
 Chain = 1 1     Octal equivalent = 3
 
 ```
-
-![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

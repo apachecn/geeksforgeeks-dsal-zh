@@ -1,65 +1,54 @@
-# 有向无环图
+# 有向无环图给出的每项工作完成所需的最短时间
 
-给出了每个作业要完成的最短时间
+> 原文:[https://www . geeksforgeeks . org/每项工作需要完成的最短时间-有向无环图给出的时间/](https://www.geeksforgeeks.org/minimum-time-taken-by-each-job-to-be-completed-given-by-a-directed-acyclic-graph/)
 
-> 原文： [https://www.geeksforgeeks.org/minimum-time-taken-by-each-job-to-be-completed-given-by-a-directed-acyclic-graph/](https://www.geeksforgeeks.org/minimum-time-taken-by-each-job-to-be-completed-given-by-a-directed-acyclic-graph/)
+给定一个具有 **V** 顶点和 **E** 边的**有向无环图**，其中每个边 **{U，V}** 代表作业 **U** 和 **V** ，使得作业 **V** 只能在作业 **U** 完成后才能开始。任务是确定每个作业完成所需的最短时间，其中每个作业需要单位时间来完成。
 
-给定具有`V`顶点和`E`边的**有向无环图**，其中每个边 **{U，V}** 表示作业`U`和`V`，这样只能在完成作业`U`之后才能启动作业`V`。 任务是确定每个作业要花费的最短时间，其中每个作业需要花费单位时间才能完成。
+**示例:**
 
-**示例**：
-
-> **输入**：N **=** 10，E = 13，如下图所示：
+> **输入:** N **=** 10，E = 13，下面是给定的图形:
 > 
-> ![](img/8eb7b09a7a7f533669de0c59a52b5ecf.png)
+> [![](img/8eb7b09a7a7f533669de0c59a52b5ecf.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200804212533/Semester1.png)
 > 
-> **输出**：1 1 2 2 2 3 4 5 2 6 [
-> **说明**：
-> 从头开始作业 1 和 2，并以 1 个时间单位完成它们。
-> 由于作业 3、4、5 和 9 仅依赖一个作业（即，作业 3、4 和 5 的第一作业，作业 9 的第二作业）。 因此，我们可以在第一个时间单位开始这些作业，并在完成相关任务后在第二个时间单位完成这些作业。
+> **输出:**1 1 2 2 3 4 5 2 6
+> **说明:**
+> 在开始时启动作业 1 和 2，并在 1 个单位时间内完成。
+> 从那时起，作业 3、4、5 和 9 仅依赖于一个作业(即作业 3、4 和 5 的第一个作业和作业 9 的第二个作业)。因此，我们可以在第一个时间单位开始这些作业，并在从属作业完成后的第二个时间单位完成这些作业。
 > 同样，
-> 作业 6 仅在完成第三和第四作业之后才能完成。 因此，请在第二时间单位启动它，并在第三时间单位完成它。
-> 作业 7 仅在作业 6 完成后才能完成。 因此，您可以在第 3 个时间单位启动它，并在第 4 个时间单位完成它。
-> 只能在完成第 4、5 和 7 个作业后完成作业 8。 因此，以第 4 个时间单位启动它，并以第 5 个时间单位完成它。
-> 仅在完成第 8 个作业后才能完成作业 10。 因此，以第 5 个时间单位启动它，并以第 6 个时间单位完成它。
+> 作业 6 只能在第 3、4 个作业完成后才能进行。所以，在第二个时间单位开始，在第三个时间单位完成。
+> 作业 7 只能在作业 6 完成后才能完成。所以，你可以在第三个时间单位开始，在第四个时间单位完成。
+> 作业 8 只能在第 4、第 5 和第 7 个作业完成后才能完成。所以，在第四个时间单位开始，在第五个时间单位完成。
+> 第 10 项工作只有在第 8 项工作完成后才能进行。所以，在第五个时间单位开始，在第六个时间单位完成。
 > 
-> **输入**：N = 7，E = 7，如下图所示：
+> **输入:** N = 7，E = 7，下面是给定的图形:
 > 
-> ![](img/7a181f9958b3a737cff0630f726eb5e8.png)
+> [![](img/7a181f9958b3a737cff0630f726eb5e8.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200808013603/Semester2.png)
 > 
-> **输出**：1 2 3 3 3 4 4 ??
-> **说明**：
-> 从头开始作业 1，并在第一时间单位完成。
-> 作业 2 仅在完成第一个作业后才能完成。 因此，以第一时间单位启动它，并以第二时间单位完成它。
-> 因为，作业 3、4 和 5 仅依赖于第二个作业。 因此，在第二时间单位开始这些作业，并在第三时间单位完成这些作业。
-> 只有在完成第 3 和第 4 个作业后才能完成作业 6。 因此，请在第 3 个时间单位启动它，并在第 4 个时间单位完成它。
-> 仅在完成第 5 个作业后才能完成作业 7。 因此，请在第 3 小时开始，并在第 4 个时间单位完成它。
+> **输出:**1 2 3 3 4 4
+> **说明:**
+> 在开始时启动作业 1，并在第一个时间单位完成。
+> 作业 2 只能在第一个作业完成后进行。所以，在第一个时间单位开始，在第二个时间单位完成。
+> 从那时起，作业 3、4 和 5 只依赖于第二个作业。所以，在第二个时间单位开始这些工作，在第三个时间单位完成这些工作。
+> 作业 6 只能在第 3 个和第 4 个作业完成后才能完成。所以，在第三个时间单位开始，在第四个时间单位完成。
+> 作业 7 只能在第 5 个作业完成后才能完成。所以，在第三个小时开始，在第四个时间单位完成。
 
-**方法**：仅当完成所有作为作业先决条件的作业时，才能启动该作业。 因此，该想法是针对给定网络使用[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。 步骤如下：
+**方法:**只有当作为作业先决条件的所有作业都完成时，作业才能启动。因此，想法是对给定的网络使用[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。以下是步骤:
 
 1.  完成不依赖于任何其他作业的作业。
+2.  创建一个数组**in gree[]**来存储给定网络中每个节点的从属节点计数。
+3.  初始化一个[队列](https://www.geeksforgeeks.org/queue-data-structure/)并推送所有**指数为【】**为 0 的顶点。
+4.  将定时器初始化为 1，存储当前队列大小(比如**大小**)，并执行以下操作:
+    *   从队列中弹出该节点，直到大小为 **0** ，并将该节点的结束时间更新为**计时器**。
+    *   当从队列中弹出节点(比如节点 **U** )时，减少与其连接的每个节点的**索引**。
+    *   如果在上述步骤中任何节点的**一致**为 **0** ，则在队列中插入该节点。
+    *   完成上述所有步骤后，增加定时器。
+5.  在我们遍历了上面步骤中的每个节点之后，打印所有节点的完成时间。
 
-2.  创建数组 **inDegree []** ，以存储给定网络中每个节点的从属节点数。
-
-3.  初始化[队列](https://www.geeksforgeeks.org/queue-data-structure/)，并推送 **inDegree []** 为 0 的所有顶点。
-
-4.  将计时器初始化为 1 并存储当前队列大小（例如**大小**），然后执行以下操作：
-
-    *   从队列中弹出节点，直到大小为`0`，然后将此节点的完成时间更新为**计时器**。
-
-    *   从队列中弹出节点（例如，节点`U`）时，将减少与其连接的每个节点的 **inDegree** 。
-
-    *   如果在上述步骤中任何节点的 **inDegree** 为`0`，则将该节点插入队列。
-
-    *   完成上述所有步骤后，增加计时器。
-
-5.  在上述步骤中遍历每个节点后，打印所有节点的完成时间。
-
-下面是上述方法的实现：
+下面是上述方法的实现:
 
 ## C++
 
-```cpp
-
+```
 // C++ program for the above approach
 #include <bits/stdc++.h>
 using namespace std;
@@ -126,16 +115,11 @@ void printOrder(int n, int m)
             // the current node
             indegree[adj]--;
 
-            if (job[adj] < 1 + job[cur]) {
-
-                // Update the time
-                job[adj] = max(job[adj],
-                               1 + job[cur]);
-            }
-
             // Push its adjacent elements
-            if (indegree[adj] == 0)
+            if (indegree[adj] == 0) {
+                job[adj] = job[cur] + 1;
                 q.push(adj);
+            }
         }
     }
 
@@ -173,13 +157,11 @@ int main()
     printOrder(n, m);
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
+```
 // Java program for the above approach
 import java.util.*;
 
@@ -255,17 +237,11 @@ static void printOrder(int n, int m)
             // the current node
             indegree[adj]--;
 
-            if (job[adj] < 1 + job[cur])
-            {
-
-                // Update the time
-                job[adj] = Math.max(job[adj],
-                                1 + job[cur]);
-            }
-
             // Push its adjacent elements
-            if (indegree[adj] == 0)
+            if (indegree[adj] == 0){
+                job[adj] = 1 + job[cur];
                 q.add(adj);
+            }
         }
     }
 
@@ -308,14 +284,12 @@ public static void main(String[] args)
 }
 }
 
-// This code is contributed by Amit Katiyar 
-
+// This code is contributed by Amit Katiyar
 ```
 
-## Python
+## 蟒蛇 3
 
-```py
-
+```
 # Python3 program for the above approach
 from collections import defaultdict
 
@@ -325,20 +299,20 @@ class Graph:
     def __init__(self, vertices, edges):
 
         # Dictionary containing adjacency List
-        self.graph = defaultdict(list) 
+        self.graph = defaultdict(list)
 
         # No. of vertices
-        self.n = vertices  
+        self.n = vertices 
 
         # No. of edges
-        self.m = edges  
+        self.m = edges 
 
     # Function to add an edge to graph
     def addEdge(self, u, v):
         self.graph[u].append(v)
 
-    # Function to find the minimum time 
-    # needed by each node to get the task 
+    # Function to find the minimum time
+    # needed by each node to get the task
     def printOrder(self, n, m):
 
         # Create a vector to store indegrees of all
@@ -355,7 +329,7 @@ class Graph:
         # the job i can be done
         job = [0] * (self.n + 1)
 
-        # Create an queue and enqueue all 
+        # Create an queue and enqueue all
         # vertices with indegree 0
         q = []
 
@@ -378,18 +352,14 @@ class Graph:
                 # Decrease in-degree of
                 # the current node
                 indegree[adj] -= 1
-                if (job[adj] < 1 + job[cur]):
-
-                    # Update the time
-                    job[adj] = max(job[adj], 
-                               1 + job[cur])
 
                 # Push its adjacent elements
                 if (indegree[adj] == 0):
+                    job[adj] =  1 + job[cur]
                     q.append(adj)
 
-        # Print the time to complete 
-        # the job 
+        # Print the time to complete
+        # the job
         for i in range(1, n + 1):
             print(job[i], end = " ")
 
@@ -422,13 +392,11 @@ g.addEdge(8, 10)
 g.printOrder(n, m)
 
 # This code is contributed by Aanchal Tiwari
-
 ```
 
 ## C#
 
-```cs
-
+```
 // C# program for the above approach
 using System;
 using System.Collections.Generic;
@@ -504,17 +472,11 @@ static void printOrder(int n, int m)
             // the current node
             indegree[adj]--;
 
-            if (job[adj] < 1 + job[cur])
-            {
-
-                // Update the time
-                job[adj] = Math.Max(job[adj],
-                                1 + job[cur]);
-            }
-
             // Push its adjacent elements
-            if (indegree[adj] == 0)
+            if (indegree[adj] == 0){
+                job[adj] = 1 + job[cur];
                 q.Enqueue(adj);
+            }
         }
     }
 
@@ -558,27 +520,14 @@ public static void Main(String[] args)
 }
 }
 
-// This code is contributed by Amit Katiyar 
-
+// This code is contributed by Amit Katiyar
 ```
 
 **Output:** 
 
 ```
 1 1 2 2 2 3 4 5 2 6
-
 ```
 
-**时间复杂度**：`O(V + E)`，其中 V 是节点数，E 是边数。
-
-**辅助空间**：`O(V)`
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+***时间复杂度:** O(V+E)，其中 V 为节点数，E 为边数。*
+***辅助空间:** O(V)*

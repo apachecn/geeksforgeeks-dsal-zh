@@ -1,32 +1,27 @@
-# 证明哈密顿循环是 NP 完整的
+# 哈密顿圈是 NP 完全的证明
 
-> 原文： [https://www.geeksforgeeks.org/proof-that-hamiltonian-cycle-is-np-complete/](https://www.geeksforgeeks.org/proof-that-hamiltonian-cycle-is-np-complete/)
+> 原文:[https://www . geesforgeks . org/proof-Hamiltonian-cycle-is-NP-complete/](https://www.geeksforgeeks.org/proof-that-hamiltonian-cycle-is-np-complete/)
 
-**先决条件**：[NP 完整性](https://www.geeksforgeeks.org/np-completeness-set-1/)，[哈密顿循环](https://www.geeksforgeeks.org/hamiltonian-cycle-backtracking-6/)。
+**先决条件:**[NP-完全性](https://www.geeksforgeeks.org/np-completeness-set-1/)[哈密顿圈](https://www.geeksforgeeks.org/hamiltonian-cycle-backtracking-6/)。
 
-**哈密顿周期**：无向图 G =（V，E）中的一个周期，该周期恰好遍历每个顶点一次。
+**哈密顿圈:**无向图 G =(V，E)中恰好遍历每个顶点一次的圈。
 
-**问题陈述**：给定一个图 G（V，E），问题是要确定该图是否包含由属于 V 的所有顶点组成的哈密顿环。
+**问题陈述:**给定一个图 G(V，E)，问题是确定该图是否包含由属于 V 的所有顶点组成的哈密顿圈。
+**解释–**
+问题的一个实例是指定给问题的输入。独立集问题的一个例子是图 G (V，E)，问题是检查图在 G 中是否可以有哈密顿圈
+由于 NP-Complete 问题，顾名思义，是一个既有 NP 又有 NP-hard 的问题，所以证明问题是 NP-Complete 的陈述由两部分组成:
 
-**说明–**
+> 1.  The problem itself lies in NP class.
+> 2.  All other problems in NP class can be reduced to that by polynomial time.
+>     (b is a polynomial time reducible to c, expressed as ![B$\leqslant_P$C](img/704e99eabfa939687e3f42fed6bce836.png "Rendered by QuickLaTeX.com"))
 
-问题的一个实例是为问题指定的输入。 独立集问题的一个实例是图 G（V，E），问题是检查该图是否可以在 G 中具有哈密顿循环。
+如果仅满足第二个条件，则问题称为 **NP-Hard** 。
 
-由于 NP 完全问题从定义上讲是一个问题 NP 和 NP 都是硬性的，关于问题是 NP 完全的陈述的证明包括两个部分：
+但是不可能把每一个 NP 问题都化为另一个 NP 问题来一直展示它的 NP 完全性。这就是为什么如果我们想展示一个问题是 NP-Complete，我们只是展示这个问题在 **NP** 中，如果有 **NP-Complete** 问题可以简化为这个，那么我们就完成了，即如果 B 是 NP-Complete，而![B$\leqslant_P$C](img/704e99eabfa939687e3f42fed6bce836.png "Rendered by QuickLaTeX.com")是 NP 中的 C，那么 C 就是 NP-Complete。
 
-> 1.  问题本身在 NP 类中。
-> 2.  NP 类中的所有其他问题都可以用多项式时间简化。
->     （B 是可简化为 C 的多项式时间，表示为 ![B$\leqslant_P$C](img/704e99eabfa939687e3f42fed6bce836.png "Rendered by QuickLaTeX.com") ）。
-
-如果仅满足第二条件，则该问题称为 **NP-Hard** 。
-
-但是不可能将每个 NP 问题都简化为另一个 NP 问题以始终显示其 NP 完整性。 这就是为什么如果我们想证明问题是 NP-Complete，我们只是证明问题出在 **NP** 中，并且如果可以解决 **NP-Complete** 问题，那么我们 完成，即如果 B 是 NP-Complete 且![B$\leqslant_P$C](img/704e99eabfa939687e3f42fed6bce836.png "Rendered by QuickLaTeX.com")对于 NP 中的 C，则 C 是 NP-Complete。
-
-1.  **Hamiltonian Cycle is in NP**
-
-    If any problem is in NP, then, given a *‘certificate’*, which is a solution to the problem and an instance of the problem (a graph G and a positive integer k, in this case), we will be able to verify (check whether the solution given is correct or not) the certificate in polynomial time.
-
-    The certificate is a sequence of vertices forming Hamiltonian Cycle in the graph. We can validate this solution by verifying that all the vertices belong to the graph and each pair of vertices belonging to the solution are adjacent. This can be done in polynomial time, that is **O(V +E)** using the following strategy for graph G(V, E):
+1.  **哈密顿圈在 NP 中**
+    如果有任何问题在 NP 中，那么，给定一个*‘证书’*，这是问题的解和问题的一个实例(在这种情况下是一个图 G 和一个正整数 k)，我们将能够在多项式时间内验证(检查给出的解是否正确)证书。
+    证书是图中形成哈密顿圈的顶点序列。我们可以通过验证所有顶点都属于该图，并且属于该解的每对顶点都是相邻的来验证该解。这可以在多项式时间内完成，即 **O(V +E)** 对图 G(V，E)使用以下策略:
 
     ```
     flag=true
@@ -41,35 +36,19 @@
     ```
 
 2.  **Hamiltonian Cycle is NP Hard**
-
     In order to prove the Hamiltonian Cycle is NP-Hard, we will have to reduce a known NP-Hard problem to this problem. We will carry out a reduction from the [Hamiltonian Path problem](https://www.geeksforgeeks.org/proof-hamiltonian-path-np-complete/) to the Hamiltonian Cycle problem.
-
     Every instance of the Hamiltonian Path problem consisting of a graph **G =(V, E)** as the input can be converted to Hamiltonian Cycle problem consisting of graph **G’ = (V’, E’)**. We will construct the graph G’ in the following way:
+    *   **V'** =添加原始图 G 的顶点 V，并添加一个额外的顶点 **V <sub>新的</sub>** ，这样图的所有连接的顶点都连接到这个顶点。顶点数增加 1， **V' =V+1** 。
+    *   **E'** =添加原始图 G 的边 E，并在新添加的顶点和图的原始顶点之间添加新的边。边数增加顶点数 V，即 **E'=E+V** 。
 
-    *   **V'** =添加原始图 G 的顶点 V 并添加一个附加顶点 **V <sub>新</sub>** ，以使该图连接的所有顶点都连接到该顶点 。 顶点数增加 1， **V’= V + 1** 。
+    新的图 G’可以在多项式时间内获得，通过给新的顶点添加新的边，这需要 O(V)时间。这种减少可以通过以下两种说法来证明:
 
-    *   **E’** =添加原始图形 G 的边 E，并在新添加的顶点和图形的原始顶点之间添加新的边。 边数增加了顶点数 V，即 **E’= E + V** 。
-
-    通过向新顶点添加新边（需要`O(V)`时间），可以在多项式时间内获得新图形 G’。 可以通过以下两个权利要求证明这种减少：
-
-    *   让我们假设图 G 包含一个覆盖图的`V`顶点的哈密顿路径，该顶点从一个随机顶点开始，例如 **V <sub>起点</sub>** 到终点 Vend，现在 因为我们将所有顶点连接到 G'中的任意新顶点 **V <sub>新</sub>** 。
-
-        通过使用边线 **V <sub>端</sub>** 至 **V <sub>新</sub>** 和 V <sub>新的</sub>至 V <sub>分别启动</sub>。 现在，图形 **G’**包含一个遍历所有顶点的闭合循环。
-
-    *   我们假设图 **G’**具有通过所有顶点的*哈密顿周期*，包括 **V <sub>新</sub>** 。 现在将其转换为*哈密顿路径*，我们在循环中移除了与顶点 **V <sub>新</sub>** 对应的边。 生成的路径将覆盖图形的顶点 V，并将仅覆盖它们一次。
+    *   让我们假设图 G 包含覆盖图的 **V** 顶点的哈密尔顿路径，从一个随机的顶点开始说 **V <sub>开始</sub>T5】并在 Vend 结束，现在既然我们将所有的顶点连接到图 G 中任意的新顶点 **V <sub>new</sub>** 。
+        我们通过使用边**V<sub>end</sub>T14】到**V<sub>new</sub>T18】和 V <sub>new</sub> 到 V <sub>start</sub> 分别将原来的哈密顿路径扩展到一个哈密顿圈。图形**G’**现在包含遍历所有顶点一次的闭合循环。******
+    *   我们假设图**G’**具有通过所有顶点的*哈密顿圈*，包括 **V <sub>新</sub>** 。现在将其转换为*哈密顿路径*，我们移除循环中顶点 **V <sub>新</sub>** 对应的边。得到的路径将覆盖图的顶点 V，并且只覆盖它们一次。
 
 ![](img/d9b00fa90d6075f95e8f88f1c7cab58a.png)
 
-因此，我们可以说图 **G’**包含*哈密顿循环*，而图`G`包含*哈密顿路径*。 因此，可以将*哈密顿循环*问题的任何实例简化为*哈密顿路径*问题的实例。 因此，*哈密顿循环*是 **NP-Hard** 。
+因此我们可以说图**G’**包含一个*哈密顿圈*if 图 **G** 包含一个*哈密顿路径*。因此，*哈密顿圈*问题的任何实例都可以简化为*哈密顿路径*问题的实例。因此*哈密顿圈*是 **NP-Hard** 。
 
-**结论**：由于*哈密顿循环*都是 **NP 问题**和 **NP-Hard** 两者。 因此，这是一个 **NP 完全**问题。
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+**结论:**既然，*哈密顿圈*既是，一个**NP-问题**又是 **NP-Hard** 。所以是一个 **NP-Complete** 问题。
