@@ -1,0 +1,17 @@
+# 前 20 名链表面试问题
+
+> 原文:[https://www . geesforgeks . org/top-20-链表-面试-问题/](https://www.geeksforgeeks.org/top-20-linked-list-interview-question/)
+
+[**链表上的【近期文章】**](https://www.geeksforgeeks.org/category/linked-list/)
+
+**[**【链表中的‘编码问题’**](https://practice.geeksforgeeks.org/explore/?category%5b%5d=Linked%20List&page=1)**
+
+**[**【链接列表上的测验】**](https://www.geeksforgeeks.org/data-structure-gq/linked-list-gq/) [**【链接列表上的视频】**](https://www.youtube.com/playlist?list=PLqM7alHXFySH41ZxzrPNj2pAYPOI8ITe7)**
+
+***   [Print the middle of a given linked list](https://www.geeksforgeeks.org/write-a-c-function-to-print-the-middle-of-the-linked-list/)*   [Flat linked list](https://www.geeksforgeeks.org/flattening-a-linked-list/)*   [Delete the element equal to zero in the linked list](https://www.careercup.com/question?id=5717797377146880)*   [Delete the middle of the linked list](https://practice.geeksforgeeks.org/problems/delete-middle-of-linked-list/1)*   [Delete duplicate elements](https://practice.geeksforgeeks.org/problems/remove-duplicate-element-from-sorted-linked-list/1) from the sorted linked list.*   [Add 1](https://www.geeksforgeeks.org/add-1-number-represented-linked-list/) to the number expressed as a linked list.*   [Given size](https://practice.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1)*   [Detect the loop in the linked list](https://practice.geeksforgeeks.org/problems/detect-loop-in-linked-list/1)*   [Remove the loop in the linked list](https://practice.geeksforgeeks.org/problems/remove-loop-in-linked-list/1)*   [Find the nth node](https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1) from the end of the linked list.*   [The function checks whether the single linked list is palindrome](https://www.geeksforgeeks.org/function-to-check-if-a-singly-linked-list-is-palindrome/)*   [Reverse replace the K node](https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list/) in the single linked list.*   [Delete the last occurrence of](https://www.geeksforgeeks.org/delete-last-occurrence-of-an-item-from-linked-list/)*   [N nodes after deleting M nodes in the linked list.](https://www.geeksforgeeks.org/delete-n-nodes-after-m-nodes-of-a-linked-list/)*   [Merge one linked list into another linked list in alternate position.](https://www.geeksforgeeks.org/merge-a-linked-list-into-another-linked-list-at-alternate-positions/)*   [Write a function to delete the linked list.](https://www.geeksforgeeks.org/write-a-function-to-delete-a-linked-list/)*   [Write a function to reverse the nodes of the linked list.](https://www.geeksforgeeks.org/write-a-function-to-reverse-the-nodes-of-a-linked-list/)*   [Why do arrays give priority to quick sorting and linked lists give priority to merging sorting?](https://www.geeksforgeeks.org/why-quick-sort-preferred-for-arrays-and-merge-sort-for-linked-lists/)*   [Linked list in Java](https://www.geeksforgeeks.org/linked-list-in-java/)**
+
+**[链表上的所有文章](https://www.geeksforgeeks.org/data-structures/linked-list/)**
+
+**本文由 **Ayushmaan Bansal** 供稿。如果你喜欢 GeeksforGeeks 并想投稿，你也可以使用[write.geeksforgeeks.org](https://write.geeksforgeeks.org)写一篇文章或者把你的文章邮寄到 review-team@geeksforgeeks.org。看到你的文章出现在极客博客主页上，帮助其他极客。**
+
+**如果你发现任何不正确的地方，或者你想分享更多关于上面讨论的话题的信息，请写评论。**

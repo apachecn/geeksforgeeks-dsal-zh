@@ -1,10 +1,10 @@
 # 未加权图中的最短路径
 
-> 原文： [https://www.geeksforgeeks.org/shortest-path-unweighted-graph/](https://www.geeksforgeeks.org/shortest-path-unweighted-graph/)
+> 原文:[https://www . geeksforgeeks . org/最短路径-未加权图/](https://www.geeksforgeeks.org/shortest-path-unweighted-graph/)
 
-给定一个未加权的图，一个源和一个目标，我们需要以最佳方式找到图中从源到目标的最短路径。
+给定一个未加权的图、一个源和一个目的地，我们需要以最佳方式在图中找到从源到目的地的最短路径。
 
-![unweighted graph](img/b3e34b954861ece5127b60ffd3a37874.png)
+[![unweighted graph](img/b3e34b954861ece5127b60ffd3a37874.png)](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/exampleFigure-1.png)
 
 8 个顶点的未加权图
 
@@ -18,25 +18,18 @@ Input: source vertex is = 2 and destination vertex is = 6.
 Output: Shortest path length is:5
         Path is::
         2 1 0 3 4 6
-
 ```
 
-一种解决方案是使用 [Bellman-Ford](https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/) 解决 O（VE）时间。 如果没有负的重量循环，那么我们可以使用 [Dijkstra 算法](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)在 O（E + VLogV）时间内求解。
-
-由于该图是未加权的，因此我们可以在`O(V + E)`时间内解决此问题。 这个想法是使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)的修改版本，在此过程中，我们在进行广度优先搜索的同时会不断存储给定顶点的前身。 即使图形中存在负权重循环，该算法也将起作用。
-
-我们首先初始化一个数组 dist [0，1，…。，v-1]，以便 dist [i]存储顶点 i 与源顶点的距离以及数组 pred [0，1，…..，v -1]，这样 pred [i]代表从源开始的广度优先搜索中顶点 i 的直接前任。
-
-现在我们获得了从数组 d 到`O(1)`的时间，从源到任何其他顶点的路径长度，对于打印从源到任何顶点的路径，我们可以使用数组 p，这将花费`O(V)` 最坏情况下的时间为 V，因为 V 是数组 P 的大小。因此，算法的大部分时间都花在了从给定源进行广度优先搜索的过程中，我们知道这需要`O(V + E)`时间。 因此，我们算法的时间复杂度为`O(V + E)`。
-
-以下面的未加权图为例：
-
-以下是找到最短路径的完整算法：
+一种解决方案是使用[行李员–福特](https://www.geeksforgeeks.org/dynamic-programming-set-23-bellman-ford-algorithm/)在 O(VE)时间内解决。如果没有负权重循环，那么我们可以使用[迪克斯特拉算法](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)在 0(E+VLogV)时间内求解。
+由于图是不加权的，我们可以在 O(V + E)时间内解决这个问题。这个想法是使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)的修改版本，在这个版本中，我们在进行广度优先搜索的同时，继续存储给定顶点的前身。
+我们首先初始化一个数组 dist[0，1，…。，v-1]使得 dist[i]存储顶点 I 到源顶点和数组 pred[0，1，…的距离..，v-1]使得 pred[i]表示从源开始的广度优先搜索中顶点 I 的直接前身。
+现在我们从数组 d 中得到从源到任何其他顶点的路径长度，在 O(1)时间内，为了打印从源到任何顶点的路径，我们可以使用数组 p，在最坏的情况下，这将花费 O(V)时间，因为 V 是数组 p 的大小。因此，算法的大部分时间都花在从给定的源进行广度优先搜索上，我们知道这需要 O(V+E)时间。因此，我们算法的时间复杂度是 O(V+E)。
+以下面的未加权图为例:
+下面是寻找最短路径的完整算法:
 
 ## C++
 
-```cpp
-
+```
 // CPP code for printing shortest path between
 // two vertices of unweighted graph
 #include <bits/stdc++.h>
@@ -167,13 +160,11 @@ int main()
     printShortestDistance(adj, source, dest, v);
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
+```
 // Java program to find shortest path in an undirected
 // graph
 import java.util.ArrayList;
@@ -189,7 +180,7 @@ public class pathUnweighted {
         int v = 8;
 
         // Adjacency list for storing which vertices are connected
-        ArrayList<ArrayList<Integer>> adj = 
+        ArrayList<ArrayList<Integer>> adj =
                             new ArrayList<ArrayList<Integer>>(v);
         for (int i = 0; i < v; i++) {
             adj.add(new ArrayList<Integer>());
@@ -234,7 +225,7 @@ public class pathUnweighted {
         int dist[] = new int[v];
 
         if (BFS(adj, s, dest, v, pred, dist) == false) {
-            System.out.println("Given source and destination" + 
+            System.out.println("Given source and destination" +
                                          "are not connected");
             return;
         }
@@ -311,14 +302,137 @@ public class pathUnweighted {
     }
 }
 // This code is contributed by Sahil Vaid
+```
 
+## 蟒蛇 3
+
+```
+# Python3 code for printing shortest path between
+# two vertices of unweighted graph
+
+# utility function to form edge between two vertices
+# source and dest
+def add_edge(adj, src, dest):
+
+    adj[src].append(dest);
+    adj[dest].append(src);
+
+# a modified version of BFS that stores predecessor
+# of each vertex in array p
+# and its distance from source in array d
+def BFS(adj, src, dest, v, pred, dist):
+
+    # a queue to maintain queue of vertices whose
+    # adjacency list is to be scanned as per normal
+    # DFS algorithm
+    queue = []
+
+    # boolean array visited[] which stores the
+    # information whether ith vertex is reached
+    # at least once in the Breadth first search
+    visited = [False for i in range(v)];
+
+    # initially all vertices are unvisited
+    # so v[i] for all i is false
+    # and as no path is yet constructed
+    # dist[i] for all i set to infinity
+    for i in range(v):
+
+        dist[i] = 1000000
+        pred[i] = -1;
+
+    # now source is first to be visited and
+    # distance from source to itself should be 0
+    visited[src] = True;
+    dist[src] = 0;
+    queue.append(src);
+
+    # standard BFS algorithm
+    while (len(queue) != 0):
+        u = queue[0];
+        queue.pop(0);
+        for i in range(len(adj[u])):
+
+            if (visited[adj[u][i]] == False):
+                visited[adj[u][i]] = True;
+                dist[adj[u][i]] = dist[u] + 1;
+                pred[adj[u][i]] = u;
+                queue.append(adj[u][i]);
+
+                # We stop BFS when we find
+                # destination.
+                if (adj[u][i] == dest):
+                    return True;
+
+    return False;
+
+# utility function to print the shortest distance
+# between source vertex and destination vertex
+def printShortestDistance(adj, s, dest, v):
+
+    # predecessor[i] array stores predecessor of
+    # i and distance array stores distance of i
+    # from s
+    pred=[0 for i in range(v)]
+    dist=[0 for i in range(v)];
+
+    if (BFS(adj, s, dest, v, pred, dist) == False):
+        print("Given source and destination are not connected")
+
+    # vector path stores the shortest path
+    path = []
+    crawl = dest;
+    crawl = dest;
+    path.append(crawl);
+
+    while (pred[crawl] != -1):
+        path.append(pred[crawl]);
+        crawl = pred[crawl];
+
+    # distance from source is in distance array
+    print("Shortest path length is : " + str(dist[dest]), end = '')
+
+    # printing path from source to destination
+    print("\nPath is : : ")
+
+    for i in range(len(path)-1, -1, -1):
+        print(path[i], end=' ')
+
+# Driver program to test above functions
+if __name__=='__main__':
+
+    # no. of vertices
+    v = 8;
+
+    # array of vectors is used to store the graph
+    # in the form of an adjacency list
+    adj = [[] for i in range(v)];
+
+    # Creating graph given in the above diagram.
+    # add_edge function takes adjacency list, source
+    # and destination vertex as argument and forms
+    # an edge between them.
+    add_edge(adj, 0, 1);
+    add_edge(adj, 0, 3);
+    add_edge(adj, 1, 2);
+    add_edge(adj, 3, 4);
+    add_edge(adj, 3, 7);
+    add_edge(adj, 4, 5);
+    add_edge(adj, 4, 6);
+    add_edge(adj, 4, 7);
+    add_edge(adj, 5, 6);
+    add_edge(adj, 6, 7);
+    source = 0
+    dest = 7;
+    printShortestDistance(adj, source, dest, v);
+
+    # This code is contributed by rutvik_56
 ```
 
 ## C#
 
-```cs
-
-// C# program to find shortest 
+```
+// C# program to find shortest
 // path in an undirected graph
 using System;
 using System.Collections.Generic;
@@ -330,21 +444,21 @@ public static void Main(String []args)
   // No of vertices
   int v = 8;
 
-  // Adjacency list for storing 
+  // Adjacency list for storing
   // which vertices are connected
-  List<List<int>> adj = 
+  List<List<int>> adj =
             new List<List<int>>(v);
 
-  for (int i = 0; i < v; i++) 
+  for (int i = 0; i < v; i++)
   {
     adj.Add(new List<int>());
   }
 
-  // Creating graph given in the 
-  // above diagram. add_edge 
-  // function takes adjacency list, 
-  // source and destination vertex 
-  // as argument and forms an edge 
+  // Creating graph given in the
+  // above diagram. add_edge
+  // function takes adjacency list,
+  // source and destination vertex
+  // as argument and forms an edge
   // between them.
   addEdge(adj, 0, 1);
   addEdge(adj, 0, 3);
@@ -357,36 +471,36 @@ public static void Main(String []args)
   addEdge(adj, 5, 6);
   addEdge(adj, 6, 7);
   int source = 0, dest = 7;
-  printShortestDistance(adj, source, 
+  printShortestDistance(adj, source,
                         dest, v);
 }
 
-// function to form edge between 
+// function to form edge between
 // two vertices source and dest
-private static void addEdge(List<List<int>> adj, 
+private static void addEdge(List<List<int>> adj,
                             int i, int j)
 {
   adj[i].Add(j);
   adj[j].Add(i);
 }
 
-// function to print the shortest 
-// distance and path between source 
+// function to print the shortest
+// distance and path between source
 // vertex and destination vertex
 private static void printShortestDistance(List<List<int>> adj,
                                           int s, int dest, int v)
 {
-  // predecessor[i] array stores 
-  // predecessor of i and distance 
+  // predecessor[i] array stores
+  // predecessor of i and distance
   // array stores distance of i
   // from s
   int []pred = new int[v];
   int []dist = new int[v];
 
-  if (BFS(adj, s, dest, 
+  if (BFS(adj, s, dest,
           v, pred, dist) == false)
   {
-    Console.WriteLine("Given source and destination" + 
+    Console.WriteLine("Given source and destination" +
                       "are not connected");
     return;
   }
@@ -396,74 +510,74 @@ private static void printShortestDistance(List<List<int>> adj,
   int crawl = dest;
   path.Add(crawl);
 
-  while (pred[crawl] != -1) 
+  while (pred[crawl] != -1)
   {
     path.Add(pred[crawl]);
     crawl = pred[crawl];
   }
 
   // Print distance
-  Console.WriteLine("Shortest path length is: " + 
+  Console.WriteLine("Shortest path length is: " +
                      dist[dest]);
 
   // Print path
   Console.WriteLine("Path is ::");
 
-  for (int i = path.Count - 1; 
-           i >= 0; i--) 
+  for (int i = path.Count - 1;
+           i >= 0; i--)
   {
     Console.Write(path[i] + " ");
   }
 }
 
-// a modified version of BFS that 
-// stores predecessor of each vertex 
-// in array pred and its distance 
+// a modified version of BFS that
+// stores predecessor of each vertex
+// in array pred and its distance
 // from source in array dist
-private static bool BFS(List<List<int>> adj, 
-                        int src, int dest, 
-                        int v, int []pred, 
+private static bool BFS(List<List<int>> adj,
+                        int src, int dest,
+                        int v, int []pred,
                         int []dist)
 {
-  // a queue to maintain queue of 
-  // vertices whose adjacency list 
+  // a queue to maintain queue of
+  // vertices whose adjacency list
   // is to be scanned as per normal
   // BFS algorithm using List of int type
   List<int> queue = new List<int>();
 
-  // bool array visited[] which 
-  // stores the information whether 
-  // ith vertex is reached at least 
+  // bool array visited[] which
+  // stores the information whether
+  // ith vertex is reached at least
   // once in the Breadth first search
   bool []visited = new bool[v];
 
-  // initially all vertices are 
-  // unvisited so v[i] for all i 
-  // is false and as no path is 
-  // yet constructed dist[i] for 
+  // initially all vertices are
+  // unvisited so v[i] for all i
+  // is false and as no path is
+  // yet constructed dist[i] for
   // all i set to infinity
-  for (int i = 0; i < v; i++) 
+  for (int i = 0; i < v; i++)
   {
     visited[i] = false;
     dist[i] = int.MaxValue;
     pred[i] = -1;
   }
 
-  // now source is first to be 
-  // visited and distance from 
+  // now source is first to be
+  // visited and distance from
   // source to itself should be 0
   visited[src] = true;
   dist[src] = 0;
   queue.Add(src);
 
   // bfs Algorithm
-  while (queue.Count != 0) 
+  while (queue.Count != 0)
   {
     int u = queue[0];
     queue.RemoveAt(0);
 
-    for (int i = 0; 
-             i < adj[u].Count; i++) 
+    for (int i = 0;
+             i < adj[u].Count; i++)
     {
       if (visited[adj[u][i]] == false)
       {
@@ -472,7 +586,7 @@ private static bool BFS(List<List<int>> adj,
         pred[adj[u][i]] = u;
         queue.Add(adj[u][i]);
 
-        // stopping condition (when we 
+        // stopping condition (when we
         // find our destination)
         if (adj[u][i] == dest)
           return true;
@@ -484,7 +598,6 @@ private static bool BFS(List<List<int>> adj,
 }
 
 // This code is contributed by Rajput-Ji
-
 ```
 
 **Output:** 
@@ -493,19 +606,7 @@ private static bool BFS(List<List<int>> adj,
 Shortest path length is : 2
 Path is::
 0 3 7
-
 ```
 
-时间复杂度：`O(V + E)`
-
-辅助空间：`O(V)`
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+时间复杂度:O(V + E)
+辅助空间:O(V)

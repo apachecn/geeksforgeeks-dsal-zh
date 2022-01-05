@@ -1,44 +1,33 @@
-# 查询以更新的方式查找矩阵中已连接的非空单元的计数
+# 查询矩阵中连接的非空单元格的计数并更新
 
-> 原文： [https://www.geeksforgeeks.org/queries-to-find-the-count-of-connected-non-empty-cells-in-a-matrix-with-updates/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-connected-non-empty-cells-in-a-matrix-with-updates/)
+> 原文:[https://www . geeksforgeeks . org/query-to-find-count-of-connected-non-empty-cells-in-a-matrix-with-updates/](https://www.geeksforgeeks.org/queries-to-find-the-count-of-connected-non-empty-cells-in-a-matrix-with-updates/)
 
-给定由`N`行和`M`列组成的布尔矩阵 **mat [] []** ，初始填充为`0`），整数`K`并查询类型{X，Y}的 **Q [] []** ，任务是替换 **mat [X] [Y] = 1** （非空单元），并计算给定矩阵中连接的非空单元的数量。
+给定一个由 **N** 行和 **M** 列组成的布尔矩阵 **mat[][]** ，最初用 **0** 的(空单元格)填充，一个整数 **K** 并查询{X，Y}类型的 **Q[][]** ，任务是替换 **mat[X][Y] = 1** (非空单元格)，并计算给定矩阵中连接的非空单元格的数量。
+**示例:**
 
-**范例**：
+> **输入:** N = 3，M = 3，K = 4，Q[][] = {{0，0}，{1，1}，{1，0}，{1，2}}
+> **输出:**1 2 1
+> 1**解释:**T8】最初，mat[][] = {{0，0，0}，{0，0，0}，{0，0，0}}
+> 查询 1: mat[][] = {{1，0，0}} Count = 2
+> 查询 1: mat[][] = {{1，0，0}，{1，1，0}，{0，0，0}}，Count = 1
+> 查询 1: mat[][] = {{1，0，0}，{1，1，1}，{0，0，0}}，Count = 1
+> **输入:** N = 2，M = 2，K = 2，Q[][] = {{0，0}，{0，1 } }【0
 
-> **输入**：N = 3，M = 3，K = 4，Q [] [] = {{0，0}，{1，1}，{1，0}，{1，2} }
-> **输出**：1 2 1 1
-> **说明**：
-> 最初，mat [] [] = {{0，0，0}，{0， 0，0}，{0，0，0}}。
-> 查询 1：mat [] [] = {{1，0，0}，{0，0，0}，{0，0，0}} ，Count = 1
-> 查询 1：mat [] [] = {{1，0，0}，{0，1，0}，{0，0，0}}，Count = 2
-> 查询 1 ：mat [] [] = {{1，0，0}，{1，1，0}，{0，0，0}}，计数=1。
-> 查询 1：mat [] [] = {{ 1，0，0}，{1，1，1}，{0，0，0}}，计数= 1
-> **输入**：N = 2，M = 2，K = 2， Q [] [] = {{0，0}，{0，1}}}
-> **输出**：1 1
+**方法:**
+问题可以使用[不相交集合数据结构](https://www.geeksforgeeks.org/disjoint-set-data-structures/)来解决。按照以下步骤解决问题:
 
-**方法**：
+*   因为最初矩阵中没有 **1** ，所以**计数= 0** 。
+*   通过执行线性映射**索引= X * M + Y** ，将二维问题转化为经典的[联合查找](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)，其中 **M** 为列长。
+*   在每个查询中设置一个**索引**后，增加**计数**。
+*   如果 4 个相邻单元格中有一个非空单元格:
+    *   对当前**索引**和**相邻单元格**执行并集操作(连接两套)。
+    *   递减**计数**为两台机组连接。
 
-可以使用[不交集数据结构](https://www.geeksforgeeks.org/disjoint-set-data-structures/)解决该问题。 请按照以下步骤解决问题：
-
-*   由于最初矩阵中没有`1`，因此 **count = 0** 。
-
-*   通过执行线性映射 **index = X * M + Y** ，将二维问题转换为经典[联合查找](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)，其中`M`是列长 。
-
-*   在每个查询中设置**索引**后，增加**计数**。
-
-*   如果四个相邻单元格中的任何一个都存在非空单元格：
-
-    *   对相邻单元格的当前**索引**和**进行联合操作（连接两个 Set）。**
-
-    *   连接两个 Set 时，递减**计数**。
-
-下面是上述方法的实现：
+下面是上述方法的实现:
 
 ## C++
 
-```cpp
-
+```
 // C++ program to implement
 // the above approach
 #include <bits/stdc++.h>
@@ -185,13 +174,11 @@ int main()
     for (int i = 0; i < K; i++)
         cout << result[i] << " ";
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
+```
 // Java program to implement
 // the above approach
 import java.util.*;
@@ -347,21 +334,19 @@ public static void main(String[] args)
 }
 
 // This code is contributed by Amit Katiyar
-
 ```
 
-## Python
+## 蟒蛇 3
 
-```py
-
+```
 # Python 3 program to implement
 # the above approach
 
 # Count of connected cells
 ctr = 0
 
-# Function to return the 
-# representative of the Set 
+# Function to return the
+# representative of the Set
 # to which x belongs
 def find(parent, x):
 
@@ -373,14 +358,14 @@ def find(parent, x):
         return x
 
     # Otherwise
-    parent[x] = find(parent, 
+    parent[x] = find(parent,
                      parent[x])
 
     # Path Compression
     return parent[x]
 
-# Unites the set that 
-# includes x and the 
+# Unites the set that
+# includes x and the
 # set that includes y
 def setUnion(parent,
              rank, x, y):
@@ -409,12 +394,12 @@ def setUnion(parent,
 
     else:
 
-        # Then move x under y 
-        # (doesn't matter which 
+        # Then move x under y
+        # (doesn't matter which
         # one goes where)
         parent[parentx] = parenty
 
-        # And increment the result 
+        # And increment the result
         # tree's rank by 1
         rank[parenty] += 1
 
@@ -422,7 +407,7 @@ def setUnion(parent,
 # connected cells in the matrix
 def solve(n, m, query):
 
-    global ctr 
+    global ctr
 
     # Store result for queries
     result = [0] * len(query)
@@ -436,7 +421,7 @@ def solve(n, m, query):
     for i in range (n * m):
         parent[i] = i
 
-    # Stores the rank(depth) 
+    # Stores the rank(depth)
     # of each node
     rank = [1] * (n * m)
 
@@ -464,25 +449,25 @@ def solve(n, m, query):
         if (x > 0 and
             grid[m * (x - 1) + y] == 1):
             setUnion(parent, rank,
-                     m * x + y, 
+                     m * x + y,
                      m * (x - 1) + y)
 
         if (y > 0 and
             grid[m * (x) + y - 1] == 1):
             setUnion(parent, rank,
-                     m * x + y, 
+                     m * x + y,
                      m * (x) + y - 1)
 
         if (x < n - 1 and
             grid[m * (x + 1) + y] == 1):
             setUnion(parent, rank,
-                     m * x + y, 
+                     m * x + y,
                      m * (x + 1) + y)
 
         if (y < m - 1 and
             grid[m * (x) + y + 1] == 1):
             setUnion(parent, rank,
-                     m * x + y, 
+                     m * x + y,
                      m * (x) + y + 1)
 
         # Store result.
@@ -504,13 +489,11 @@ if __name__ == "__main__":
         print (result[i], end = " ")
 
 # This code is contributed by Chitranayal
-
 ```
 
 ## C#
 
-```cs
-
+```
 // C# program to implement
 // the above approach
 using System;
@@ -541,7 +524,7 @@ static int find(int []parent, int x)
 // Unites the set that includes
 // x and the set that includes y
 static void setUnion(int[] parent,
-                     int[] rank, 
+                     int[] rank,
                      int x, int y)
 {
 
@@ -664,26 +647,168 @@ public static void Main(String[] args)
 }
 
 // This code is contributed by sapnasingh4991
+```
 
+## java 描述语言
+
+```
+<script>
+
+// Javascript program to implement
+// the above approach
+
+// Count of connected cells
+let ctr = 0;
+
+// Function to return the representative
+// of the Set to which x belongs
+function find(parent,x)
+{
+    // If x is parent of itself
+    if (parent[x] == x)
+
+        // x is representative
+        // of the Set
+        return x;
+
+    // Otherwise
+    parent[x] = find(parent, parent[x]);
+
+    // Path Compression
+    return parent[x];
+}
+
+// Unites the set that includes
+// x and the set that includes y
+function setUnion(parent,rank,x,y)
+{
+    // Find the representatives(or the
+    // root nodes) for x an y
+    let parentx = find(parent, x);
+    let parenty = find(parent, y);
+
+    // If both are in the same set
+    if (parenty == parentx)
+        return;
+
+    // Decrement count
+    ctr--;
+
+    // If x's rank is less than y's rank
+    if (rank[parentx] < rank[parenty])
+    {
+        parent[parentx] = parenty;
+    }
+
+    // Otherwise
+    else if (rank[parentx] > rank[parenty])
+    {
+        parent[parenty] = parentx;
+    }
+    else
+    {
+
+        // Then move x under y (doesn't matter
+        // which one goes where)
+        parent[parentx] = parenty;
+
+        // And increment the result tree's
+        // rank by 1
+        rank[parenty]++;
+    }
+}
+
+// Function to count the number of
+// connected cells in the matrix
+function solve(n,m,query)
+{
+    // Store result for queries
+    let result = new Array(query.length);
+
+    // Store representative of
+    // each element
+    let parent = new Array(n * m);
+
+    // Initially, all elements
+    // are in their own set
+    for(let i = 0; i < n * m; i++)
+        parent[i] = i;
+
+    // Stores the rank(depth) of each node
+    let rank = new Array(n * m);
+
+    let grid = new Array(n * m);
+
+    for(let i=0;i<(n*m);i++)
+    {
+        rank[i]=0;
+        grid[i]=false;
+    }
+
+    for(let i = 0; i < query.length; i++)
+    {
+        let x = query[i][0];
+        let y = query[i][1];
+
+        // If the grid[x*m + y] is already
+        // set, store the result
+        if (grid[m * x + y] == true)
+        {
+            result[i] = ctr;
+            continue;
+        }
+
+        // Set grid[x*m + y] to 1
+        grid[m * x + y] = true;
+
+        // Increment count.
+        ctr++;
+
+        // Check for all adjacent cells
+        // to do a Union with neighbour's
+        // set if neighbour is also 1
+        if (x > 0 && grid[m * (x - 1) + y] == true)
+            setUnion(parent, rank,
+                     m * x + y, m * (x - 1) + y);
+
+        if (y > 0 && grid[m * (x) + y - 1] == true)
+            setUnion(parent, rank,
+                     m * x + y, m * (x) + y - 1);
+
+        if (x < n - 1 && grid[m * (x + 1) + y] == true)
+            setUnion(parent, rank,
+                     m * x + y, m * (x + 1) + y);
+
+        if (y < m - 1 && grid[m * (x) + y + 1] == true)
+            setUnion(parent, rank,
+                     m * x + y, m * (x) + y + 1);
+
+        // Store result.
+        result[i] = ctr;
+    }
+    return result;
+}
+
+// Driver Code
+let N = 3, M = 3, K = 4;
+let query = [[ 0, 0 ],
+                      [ 1, 1 ],
+                      [ 1, 0 ],
+                      [ 1, 2 ]];
+
+let result = solve(N, M, query);
+for(let i = 0; i < K; i++)
+    document.write(result[i] + " ");
+
+// This code is contributed by avanitrachhadiya2155
+</script>
 ```
 
 **Output:** 
 
 ```
 1 2 1 1
-
 ```
 
-**时间复杂度**：O（N * M * sizeof（Q））
-
-**辅助空间**：`O(N * M)`
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+***时间复杂度:**O(N * M * sizeof(Q))*
+***辅助空间:** O(N*M)*

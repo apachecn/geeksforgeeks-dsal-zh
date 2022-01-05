@@ -1,44 +1,40 @@
-# 在网格中仅覆盖一次所有无障碍块的唯一路径
+# 在一个网格中恰好覆盖每个无障碍物区块一次的唯一路径
 
-> 原文： [https://www.geeksforgeeks.org/unique-paths-covering-every-non-obstacle-block-exactly-once-in-a-grid/](https://www.geeksforgeeks.org/unique-paths-covering-every-non-obstacle-block-exactly-once-in-a-grid/)
+> 原文:[https://www . geesforgeks . org/unique-path-cover-even-non-barrier-grid-恰好一次/](https://www.geeksforgeeks.org/unique-paths-covering-every-non-obstacle-block-exactly-once-in-a-grid/)
 
-给定具有`4`类型块的网格 **grid [] []** ：
+给定一个带有 **4** 类型块的网格**网格[][]** :
 
-*  `1`代表起始块。 恰好有一个起点。
+*   **1** 代表起始块。只有一个起点。
+*   **2** 代表结束块。结局只有一个。
+*   **0** 代表我们可以走过的空街区。
+*   **-1** 代表我们无法跨越的障碍。
 
-*  `2`表示结束块。 恰好有一个结尾块。
+任务是计算从起始块到结束块的路径数，以便每个非障碍块恰好被覆盖一次。
 
-*  `0`代表我们可以走过去的空白块。
+**示例:**
 
-*  `-1`代表我们无法走过的障碍。
-
-任务是计算从起始块到结束块的路径数，以使每个无障碍块恰好覆盖​​一次。
-
-**示例**：
-
-> **输入**：grid [] [] = {
+> **输入:**网格[][] = {
 > {1，0，0，0}，
 > {0，0，0，0}，
-> {0，0，2 ，-1}}
-> **输出**：2
-> 以下是涵盖所有非障碍块的唯一路径：
+> {0，0，2，-1} }
+> **输出:** 2
+> 以下是覆盖所有非障碍物的唯一路径:
 > 
 > ![](img/92fcd72e71bc38b15905d2efe9a385d1.png)
 > 
-> **输入**：grid [] [] = {
+> **输入:**网格[][] = {
 > {1，0，0，0}，
 > {0，0，0，0}，
-> {0，0，0 ，2}}
-> **输出**：4
+> {0，0，0，2} }
+> **输出:** 4
 
-**方法**：我们可以在此处使用简单的 DFS 进行回溯。 我们可以通过计算途中遇到的所有障碍物并最终将其与可用的障碍物总数进行比较（如果它们匹配），来检查特定路径是否覆盖了所有非障碍障碍物，然后将其添加为有效解决方案。
+**方法:**这里我们可以用简单的 DFS 加回溯。我们可以通过计算路上遇到的所有障碍物，并最终将其与可用的障碍物总数进行比较，来检查特定路径是否覆盖了所有非障碍物障碍物，如果匹配，则将其添加为有效的解决方案。
 
-下面是上述方法的实现：
+下面是上述方法的实现:
 
 ## C++
 
-```cpp
-
+```
 // C++ implementation of the approach
 #include <bits/stdc++.h>
 using namespace std;
@@ -128,84 +124,186 @@ int main()
     cout << uniquePaths(grid);
     return 0;
 }
-
 ```
 
-## Python
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```py
+```
+// Java implementation of the approach
+import java.util.Arrays;
+class GFG
+{
+  static int ans = 0;
 
-# Python3 implementation of the approach 
+  // Function for dfs.
+  // i, j ==> Current cell indexes
+  // vis ==> To mark visited cells
+  // ans ==> Result
+  // z ==> Current count 0s visited
+  // z_count ==> Total 0s present
+  static void dfs(int i, int j, int[][] grid,
+                  boolean[][] vis, int z, int z_count)
+  {
+    int n = grid.length, m = grid[0].length;
 
-# Function for dfs. 
-# i, j ==> Current cell indexes 
-# vis ==> To mark visited cells 
-# ans ==> Result 
-# z ==> Current count 0s visited 
-# z_count ==> Total 0s present 
+    // Mark the block as visited
+    vis[i][j] = true;
+    if (grid[i][j] == 0)
+
+      // update the count
+      z++;
+
+    // If end block reached
+    if (grid[i][j] == 2)
+    {
+
+      // If path covered all the non-
+      // obstacle blocks
+      if (z == z_count)
+        ans++;
+      vis[i][j] = false;
+      return;
+    }
+
+    // Up
+    if (i >= 1 && !vis[i - 1][j] && grid[i - 1][j] != -1)
+      dfs(i - 1, j, grid, vis, z, z_count);
+
+    // Down
+    if (i < n - 1 && !vis[i + 1][j] && grid[i + 1][j] != -1)
+      dfs(i + 1, j, grid, vis, z, z_count);
+
+    // Left
+    if (j >= 1 && !vis[i][j - 1] && grid[i][j - 1] != -1)
+      dfs(i, j - 1, grid, vis, z, z_count);
+
+    // Right
+    if (j < m - 1 && !vis[i][j + 1] && grid[i][j + 1] != -1)
+      dfs(i, j + 1, grid, vis, z, z_count);
+
+    // Unmark the block (unvisited)
+    vis[i][j] = false;
+  }
+
+  // Function to return the count of the unique paths
+  static int uniquePaths(int[][] grid)
+  {
+    int z_count = 0; // Total 0s present
+    int n = grid.length, m = grid[0].length;
+
+    boolean[][] vis = new boolean[n][m];
+    for (int i = 0; i < n; i++)
+    {
+      Arrays.fill(vis[i], false);
+    }
+    int x = 0, y = 0;
+    for (int i = 0; i < n; ++i)
+    {
+      for (int j = 0; j < m; ++j)
+      {
+
+        // Count non-obstacle blocks
+        if (grid[i][j] == 0)
+          z_count++;
+        else if (grid[i][j] == 1)
+        {
+
+          // Starting position
+          x = i;
+          y = j;
+        }
+      }
+    }
+    dfs(x, y, grid, vis, 0, z_count);
+    return ans;
+  }
+
+  // Driver code
+  public static void main(String[] args)
+  {
+
+    int[][] grid = { { 1, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 2, -1 } };
+    System.out.println(uniquePaths(grid));
+  }
+}
+
+// This code is contributed by sanjeev2552
+```
+
+## 蟒蛇 3
+
+```
+# Python3 implementation of the approach
+
+# Function for dfs.
+# i, j ==> Current cell indexes
+# vis ==> To mark visited cells
+# ans ==> Result
+# z ==> Current count 0s visited
+# z_count ==> Total 0s present
 def dfs(i, j, grid, vis, ans, z, z_count):
 
     n = len(grid)
     m = len(grid[0])
 
-    # Mark the block as visited 
+    # Mark the block as visited
     vis[i][j] = 1
 
     if (grid[i][j] == 0):
 
-        # Update the count 
+        # Update the count
         z += 1
 
-    # If end block reached 
+    # If end block reached
     if (grid[i][j] == 2):
 
-        # If path covered all the non- 
-        # obstacle blocks 
+        # If path covered all the non-
+        # obstacle blocks
         if (z == z_count):
             ans += 1
 
         vis[i][j] = 0
 
-        return grid, vis, ans 
+        return grid, vis, ans
 
-    # Up 
+    # Up
     if (i >= 1 and not vis[i - 1][j] and
-                      grid[i - 1][j] != -1): 
-        grid, vis, ans = dfs(i - 1, j, grid, 
-                             vis, ans, z, 
+                      grid[i - 1][j] != -1):
+        grid, vis, ans = dfs(i - 1, j, grid,
+                             vis, ans, z,
                              z_count)
 
-    # Down 
+    # Down
     if (i < n - 1 and not vis[i + 1][j] and
-                         grid[i + 1][j] != -1): 
-        grid, vis, ans = dfs(i + 1, j, grid, 
-                             vis, ans, z, 
+                         grid[i + 1][j] != -1):
+        grid, vis, ans = dfs(i + 1, j, grid,
+                             vis, ans, z,
                              z_count)
 
-    # Left 
+    # Left
     if (j >= 1 and not vis[i][j - 1] and
-                      grid[i][j - 1] != -1): 
-        grid, vis, ans = dfs(i, j - 1, grid, 
-                             vis, ans, z, 
-                             z_count) 
+                      grid[i][j - 1] != -1):
+        grid, vis, ans = dfs(i, j - 1, grid,
+                             vis, ans, z,
+                             z_count)
 
-    # Right 
+    # Right
     if (j < m - 1 and not vis[i][j + 1] and
-                         grid[i][j + 1] != -1): 
+                         grid[i][j + 1] != -1):
         grid, vis, ans = dfs(i, j + 1, grid,
                              vis, ans, z,
-                             z_count) 
+                             z_count)
 
-    # Unmark the block (unvisited) 
+    # Unmark the block (unvisited)
     vis[i][j] = 0
 
     return grid, vis, ans
 
-# Function to return the count 
-# of the unique paths 
-def uniquePaths(grid): 
+# Function to return the count
+# of the unique paths
+def uniquePaths(grid):
 
-    # Total 0s present 
+    # Total 0s present
     z_count = 0
     n = len(grid)
     m = len(grid[0])
@@ -228,25 +326,229 @@ def uniquePaths(grid):
 
                 # Starting position
                 x = i
-                y = j 
+                y = j
 
-    grid, vis, ans = dfs(x, y, grid, 
+    grid, vis, ans = dfs(x, y, grid,
                          vis, ans, 0,
                          z_count)
 
     return ans
 
-# Driver code 
+# Driver code
 if __name__=='__main__':
 
-    grid = [ [ 1, 0, 0, 0 ], 
+    grid = [ [ 1, 0, 0, 0 ],
              [ 0, 0, 0, 0 ],
              [ 0, 0, 2, -1 ] ]
 
     print(uniquePaths(grid))
 
 # This code is contributed by rutvik_56
+```
 
+## C#
+
+```
+// C# implementation of the approach
+using System;
+class GFG {
+
+  static int ans = 0;
+
+  // Function for dfs.
+  // i, j ==> Current cell indexes
+  // vis ==> To mark visited cells
+  // ans ==> Result
+  // z ==> Current count 0s visited
+  // z_count ==> Total 0s present
+  static void dfs(int i, int j, int[,] grid,
+                  bool[,] vis, int z, int z_count)
+  {
+    int n = grid.GetLength(0), m = grid.GetLength(1);
+
+    // Mark the block as visited
+    vis[i,j] = true;
+    if (grid[i,j] == 0)
+
+      // update the count
+      z++;
+
+    // If end block reached
+    if (grid[i,j] == 2)
+    {
+
+      // If path covered all the non-
+      // obstacle blocks
+      if (z == z_count)
+        ans++;
+      vis[i,j] = false;
+      return;
+    }
+
+    // Up
+    if (i >= 1 && !vis[i - 1,j] && grid[i - 1,j] != -1)
+      dfs(i - 1, j, grid, vis, z, z_count);
+
+    // Down
+    if (i < n - 1 && !vis[i + 1,j] && grid[i + 1,j] != -1)
+      dfs(i + 1, j, grid, vis, z, z_count);
+
+    // Left
+    if (j >= 1 && !vis[i,j - 1] && grid[i,j - 1] != -1)
+      dfs(i, j - 1, grid, vis, z, z_count);
+
+    // Right
+    if (j < m - 1 && !vis[i,j + 1] && grid[i,j + 1] != -1)
+      dfs(i, j + 1, grid, vis, z, z_count);
+
+    // Unmark the block (unvisited)
+    vis[i,j] = false;
+  }
+
+  // Function to return the count of the unique paths
+  static int uniquePaths(int[,] grid)
+  {
+    int z_count = 0; // Total 0s present
+    int n = grid.GetLength(0), m = grid.GetLength(1);
+
+    bool[,] vis = new bool[n,m];
+    for (int i = 0; i < n; i++)
+    {
+        for(int j = 0; j < m; j++)
+        {
+            vis[i,j] = false;
+        }
+    }
+    int x = 0, y = 0;
+    for (int i = 0; i < n; ++i)
+    {
+      for (int j = 0; j < m; ++j)
+      {
+
+        // Count non-obstacle blocks
+        if (grid[i,j] == 0)
+          z_count++;
+        else if (grid[i,j] == 1)
+        {
+
+          // Starting position
+          x = i;
+          y = j;
+        }
+      }
+    }
+    dfs(x, y, grid, vis, 0, z_count);
+    return ans;
+  }
+
+  // Driver code
+  static void Main() {
+    int[,] grid = { { 1, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 2, -1 } };
+    Console.WriteLine(uniquePaths(grid));
+  }
+}
+
+// This code is contributed by divyesh072019.
+```
+
+## java 描述语言
+
+```
+<script>
+    // Javascript implementation of the approach
+    let ans = 0;
+
+    // Function for dfs.
+    // i, j ==> Current cell indexes
+    // vis ==> To mark visited cells
+    // ans ==> Result
+    // z ==> Current count 0s visited
+    // z_count ==> Total 0s present
+    function dfs(i, j, grid, vis, z, z_count)
+    {
+      let n = grid.length, m = grid[0].length;
+
+      // Mark the block as visited
+      vis[i][j] = true;
+      if (grid[i][j] == 0)
+
+        // update the count
+        z++;
+
+      // If end block reached
+      if (grid[i][j] == 2)
+      {
+
+        // If path covered all the non-
+        // obstacle blocks
+        if (z == z_count)
+          ans++;
+        vis[i][j] = false;
+        return;
+      }
+
+      // Up
+      if (i >= 1 && !vis[i - 1][j] && grid[i - 1][j] != -1)
+        dfs(i - 1, j, grid, vis, z, z_count);
+
+      // Down
+      if (i < n - 1 && !vis[i + 1][j] && grid[i + 1][j] != -1)
+        dfs(i + 1, j, grid, vis, z, z_count);
+
+      // Left
+      if (j >= 1 && !vis[i][j - 1] && grid[i][j - 1] != -1)
+        dfs(i, j - 1, grid, vis, z, z_count);
+
+      // Right
+      if (j < m - 1 && !vis[i][j + 1] && grid[i][j + 1] != -1)
+        dfs(i, j + 1, grid, vis, z, z_count);
+
+      // Unmark the block (unvisited)
+      vis[i][j] = false;
+    }
+
+    // Function to return the count of the unique paths
+    function uniquePaths(grid)
+    {
+      let z_count = 0; // Total 0s present
+      let n = grid.length, m = grid[0].length;
+
+      let vis = new Array(n);
+      for (let i = 0; i < n; i++)
+      {
+          vis[i] = new Array(m);
+        for(let j = 0; j < m; j++)
+        {
+            vis[i][j] = false;
+        }
+      }
+      let x = 0, y = 0;
+      for (let i = 0; i < n; ++i)
+      {
+        for (let j = 0; j < m; ++j)
+        {
+
+          // Count non-obstacle blocks
+          if (grid[i][j] == 0)
+            z_count++;
+          else if (grid[i][j] == 1)
+          {
+
+            // Starting position
+            x = i;
+            y = j;
+          }
+        }
+      }
+      dfs(x, y, grid, vis, 0, z_count);
+      return ans;
+    }
+
+    let grid = [ [ 1, 0, 0, 0 ], [ 0, 0, 0, 0 ], [ 0, 0, 2, -1 ] ];
+    document.write(uniquePaths(grid));
+
+// This code is contributed by decode2207.
+</script>
 ```
 
 **Output:** 
@@ -255,12 +557,5 @@ if __name__=='__main__':
 2
 ```
 
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+**时间复杂度:** O(行*列)
+T3】辅助空间: O(行*列)

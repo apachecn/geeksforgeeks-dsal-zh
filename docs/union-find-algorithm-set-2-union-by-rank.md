@@ -1,13 +1,12 @@
-# 联合查找算法 | 系列 2（按等级和路径压缩合并）
+# 联合-查找算法|集合 2(按等级和路径压缩联合)
 
-> 原文： [https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
+> 原文:[https://www . geesforgeks . org/union-find-algorithm-set-2-按等级合并/](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
 
-在[之前的文章](https://www.geeksforgeeks.org/union-find/)中，我们介绍了*联合查找算法*，并将其用于检测图中的循环。 我们对子集使用以下 *union（）*和 *find（）*操作。
+在[之前的帖子](https://www.geeksforgeeks.org/union-find/)中，我们介绍了*联合查找算法*，并用它来检测图中的循环。我们对子集使用了以下*联合()*和*查找()*操作。
 
-## CPP
+## C++
 
 ```
-
 // Naive implementation of find
 int find(int parent[], int i)
 {
@@ -23,10 +22,100 @@ void Union(int parent[], int x, int y)
     int yset = find(parent, y);
     parent[xset] = yset;
 }
-
 ```
 
-上面的 *union（）*和 *find（）*朴素，最坏的情况下时间复杂度是线性的。 创建用来表示子集的树可能会倾斜，并且可能变得像链表一样。 以下是最坏情况的示例。
+## Java 语言(一种计算机语言，尤用于创建网站)
+
+```
+// Naive implementation of find
+static int find(int parent[], int i)
+{
+    if (parent[i] == -1)
+        return i;
+    return find(parent, parent[i]);
+}
+
+// Naive implementation of union()
+static void Union(int parent[], int x, int y)
+{
+    int xset = find(parent, x);
+    int yset = find(parent, y);
+    parent[xset] = yset;
+}
+
+// This code is contributed by divyesh072019
+```
+
+## 蟒蛇 3
+
+```
+# Naive implementation of find
+def find(parent, i):
+
+    if (parent[i] == -1):
+        return i
+
+    return find(parent, parent[i])
+
+# Naive implementation of union()
+def Union(parent, x, y):
+
+    xset = find(parent, x)
+    yset = find(parent, y)
+    parent[xset] = yset
+
+# This code is contributed by rutvik_56
+```
+
+## C#
+
+```
+// Naive implementation of find
+static int find(int []parent, int i)
+{
+    if (parent[i] == -1)
+        return i;
+
+    return find(parent, parent[i]);
+}
+
+// Naive implementation of union()
+static void Union(int []parent, int x, int y)
+{
+    int xset = find(parent, x);
+    int yset = find(parent, y);
+    parent[xset] = yset;
+}
+
+// This code is contributed by pratham76
+```
+
+## java 描述语言
+
+```
+<script>
+
+// Naive implementation of find
+function find(parent, i)
+{
+    if (parent[i] == -1)
+        return i;
+
+    return find(parent, parent[i]);
+}
+
+// Naive implementation of union()
+function Union(parent, x, y)
+{
+    let xset = find(parent, x);
+    let yset = find(parent, y);
+    parent[xset] = yset;
+}
+
+<script>
+```
+
+上面的 *union()* 和 *find()* 都是幼稚的，最坏的情况时间复杂度是线性的。为表示子集而创建的树可能是倾斜的，并且可能变得像一个链表。下面是一个最坏情况的例子。
 
 ```
 Let there be 4 elements 0, 1, 2, 3
@@ -54,10 +143,9 @@ Do Union(2, 3)
    1
  /
 0
-
 ```
 
-在最坏的情况下，可以将上述操作优化为 *O（Log n）*。 想法是始终将较小的深度树附加在较深树的根下。 将该技术按等级 称为 ***联合。 首选*等级*而不是高度，因为如果使用路径压缩技术（我们在下面进行了讨论），则*等级*并不总是等于高度。 此外，树木的大小（代替高度）也可以用作*等级*。 使用大小作为*等级*也会产生最坏情况的时间复杂度，即 O（Logn）（请参见[此](http://www.brpreiss.com/books/opus4/html/page411.html#theoremsetsi)作为证据）***
+以上操作在最坏的情况下可以优化到 *O(Log n)* 。想法是总是在较深的树的根下附加较小深度的树。这种技术被称为*T3T5 等级联盟。术语*等级*是优选的，而不是高度，因为如果使用路径压缩技术(我们在下面讨论过)，那么*等级*不总是等于高度。另外，树木的大小(代替高度)也可以作为*等级*。使用大小作为*等级*也会产生最坏情况下的时间复杂度为 0(Logn)。*
 
 ```
 Let us see the above example with union by rank
@@ -78,42 +166,40 @@ Do Union(2, 3)
     1    
  /  |  \
 0   2   3
-
 ```
 
-朴素的方法的第二个优化是 ***路径压缩*** 。 想法是在调用 *find（）*时将树展平。 当为元素 x 调用 *find（）*时，返回树的根。 *find（）*操作从 x 向上遍历以查找根。 路径压缩的想法是使找到的根成为 x 的父级，这样我们就不必再次遍历所有中间节点。 如果 x 是子树的根，则 x 下所有节点的路径（到根）也会压缩。
+第二个优化到幼稚的方法是 ***路径压缩*** 。这个想法是在调用 *find()* 时将树压平。当对元素 x 调用 *find()* 时，返回树的根。 *find()* 操作从 x 向上遍历以寻找根。路径压缩的思想是将找到的根作为 x 的父节点，这样我们就不必再次遍历所有中间节点。如果 x 是一个子树的根，那么从 x 下的所有节点到根的路径也会被压缩。
 
 ```
 Let the subset {0, 1, .. 9} be represented as below and find() is called
 for element 3.
-              9
-         /    |    \  
-        4     5      6
-     /     \        /  \
-    0        3     7    8
-            /  \
-           1    2  
-
+             9
+         /   |   \  
+        4    5    6
+       /         /  \
+      0         7    8
+     /        
+    3
+   / \         
+  1   2
 When *find()* is called for 3, we traverse up and find 9 as representative
-of this subset. With path compression, we also make 3 as the child of 9 so 
-that when find() is called next time for 1, 2 or 3, the path to root is reduced.
+of this subset. With path compression, we also make 3 and 0 as the child of 9 so 
+that when find() is called next time for 0, 1, 2 or 3, the path to root is reduced.
 
-               9
-         /    /  \    \
-        4    5    6     3 
-     /           /  \   /  \
-    0           7    8  1   2           
-
+        --------9-------
+      /   /    /  \      \
+     0   4    5    6       3 
+                  /  \    /  \
+                 7    8   1   2
 ```
 
-两种技术相辅相成。 每个操作的时间复杂度甚至小于 O（Logn）。 实际上，摊销的时间复杂度实际上变为小的常数。
+这两种技术相辅相成。每个操作的时间复杂度甚至变得比 O(Logn)还要小。事实上，摊销时间复杂度实际上变成了小常数。
 
-以下是基于等级和路径压缩的实现，以在图中查找循环。
+下面是基于秩和路径压缩的联合实现，用于在图中查找循环。
 
 ## C++
 
-```cpp
-
+```
 // A union by rank and path compression based program to
 // detect cycle in a graph
 #include <stdio.h>
@@ -247,16 +333,14 @@ int main()
 
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
+```
 // A union by rank and path compression
 // based program to detect cycle in a graph
-class Graph 
+class Graph 
 {
     int V, E;
     Edge[] edge;
@@ -266,20 +350,20 @@ class Graph
         V = nV;
         E = nE;
         edge = new Edge[E];
-        for (int i = 0; i < E; i++) 
+        for (int i = 0; i < E; i++) 
         {
             edge[i] = new Edge();
         }
     }
 
     // class to represent edge
-    class Edge 
+    class Edge 
     {
         int src, dest;
     }
 
     // class to represent Subset
-    class subset 
+    class subset 
     {
         int parent;
         int rank;
@@ -373,13 +457,11 @@ class Graph
 
 // This code is contributed
 // by ashwani khemani
-
 ```
 
-## Python
+## 计算机编程语言
 
-```py
-
+```
 # A union by rank and path compression based
 # program to detect cycle in a graph
 from collections import defaultdict
@@ -473,13 +555,11 @@ else:
 
 # This code is contributed by
 # Sampath Kumar Surine
-
 ```
 
 ## C#
 
-```cs
-
+```
 // A union by rank and path compression
 // based program to detect cycle in a graph
 using System;
@@ -505,7 +585,7 @@ class Graph {
     }
 
     // class to represent Subset
-    class subset 
+    class subset 
     {
         public int parent;
         public int rank;
@@ -548,14 +628,14 @@ class Graph {
         int E = graph.E;
 
         subset[] subsets = new subset[V];
-        for (int v = 0; v < V; v++) 
+        for (int v = 0; v < V; v++) 
         {
             subsets[v] = new subset();
             subsets[v].parent = v;
             subsets[v].rank = 0;
         }
 
-        for (int e = 0; e < E; e++) 
+        for (int e = 0; e < E; e++) 
         {
             int x = find(subsets, graph.edge[e].src);
             int y = find(subsets, graph.edge[e].dest);
@@ -600,30 +680,147 @@ class Graph {
 
 // This code is contributed
 // by Arnab Kundu
+```
+
+## java 描述语言
+
+```
+<script>
+// A union by rank and path compression
+// based program to detect cycle in a graph
+
+let V, E;
+let edge;
+
+function Graph(nV,nE)
+{
+    V = nV;
+        E = nE;
+        edge = new Array(E);
+        for (let i = 0; i < E; i++)
+        {
+            edge[i] = new Edge();
+        }
+}
+
+// class to represent edge
+class Edge
+{
+    constructor()
+    {
+        this.src=0;
+        this.dest=0;
+    }
+}
+
+// class to represent Subset
+class subset
+{
+    constructor()
+    {
+        this.parent=0;
+        this.rank=0;
+    }
+}
+
+// A utility function to find
+    // set of an element i (uses
+    // path compression technique)
+function find(subsets,i)
+{
+    if (subsets[i].parent != i)
+            subsets[i].parent
+                = find(subsets, subsets[i].parent);
+        return subsets[i].parent;
+}
+
+// A function that does union
+    // of two sets of x and y
+    // (uses union by rank)
+function Union(subsets,x,y)
+{
+    let xroot = find(subsets, x);
+        let yroot = find(subsets, y);
+
+        if (subsets[xroot].rank < subsets[yroot].rank)
+            subsets[xroot].parent = yroot;
+        else if (subsets[yroot].rank < subsets[xroot].rank)
+            subsets[yroot].parent = xroot;
+        else {
+            subsets[xroot].parent = yroot;
+            subsets[yroot].rank++;
+        }
+}
+
+// The main function to check whether
+    // a given graph contains cycle or not
+function isCycle()
+{
+
+        let subsets = new Array(V);
+        for (let v = 0; v < V; v++) {
+
+            subsets[v] = new subset();
+            subsets[v].parent = v;
+            subsets[v].rank = 0;
+        }
+
+        for (let e = 0; e < E; e++) {
+            let x = find(subsets, edge[e].src);
+            let y = find(subsets, edge[e].dest);
+            if (x == y)
+                return 1;
+            Union(subsets, x, y);
+        }
+        return 0;
+}
+
+// Driver Code
+/* Let us create the following graph
+            0
+            | \
+            | \
+            1-----2 */
+
+        V = 3, E = 3;
+        Graph(V, E);
+
+        // add edge 0-1
+        edge[0].src = 0;
+        edge[0].dest = 1;
+
+        // add edge 1-2
+        edge[1].src = 1;
+        edge[1].dest = 2;
+
+        // add edge 0-2
+        edge[2].src = 0;
+        edge[2].dest = 2;
+
+        if (isCycle() == 1)
+            document.write("Graph contains cycle");
+        else
+            document.write(
+                "Graph doesn't contain cycle");
+
+// This code is contributed by avanitrachhadiya2155
+</script>
 
 ```
 
-输出：
+**Output**
 
 ```
 Graph contains cycle
 ```
 
-**相关文章**：
+**相关文章:**
+[Union-Find 算法|集合 1(检测无向图中的循环)](https://www.geeksforgeeks.org/union-find/)
+[不相交集合数据结构(Java 实现)](https://www.geeksforgeeks.org/disjoint-set-data-structures-java-implementation/)
+[贪婪算法|集合 2 (Kruskal 最小生成树算法)](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)
+[作业排序问题|集合 2(使用不相交集合)](https://www.geeksforgeeks.org/job-sequencing-using-disjoint-set-union/)
 
-[联合查找算法 | 系列 1（无向图中的检测周期）](https://www.geeksforgeeks.org/union-find/)
-
-[脱节集数据结构（Java 实现）](https://www.geeksforgeeks.org/disjoint-set-data-structures-java-implementation/)
-
-[贪婪算法 | 系列 2（Kruskal 的最小生成树算法）](https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/)，
-
-[作业排序问题| 组 2（使用不交集）](https://www.geeksforgeeks.org/job-sequencing-using-disjoint-set-union/)
-
-**参考**：
-
-[http://en.wikipedia.org/wiki/Disjoint-set_data_structure](http://en.wikipedia.org/wiki/Disjoint-set_data_structure)
-
+**参考文献:**
+[【http://en.wikipedia.org/wiki/Disjoint-set_data_structure】](http://en.wikipedia.org/wiki/Disjoint-set_data_structure)
 [IITD 视频讲座](http://www.youtube.com/watch?v=kajZRdXi6fA)
-
-请写评论 如果发现任何不正确的内容，或者想共享有关上述主题的更多信息。
-
+如发现有不正确的地方，或想分享以上讨论话题的更多信息，请写评论。
