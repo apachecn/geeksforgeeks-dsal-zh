@@ -1,28 +1,24 @@
-# 为边分配方向，以便有向图保持非循环状态
+# 给边指定方向，使有向图保持非循环
 
-> 原文： [https://www.geeksforgeeks.org/assign-directions-to-edges-so-that-the-directed-graph-remains-acyclic/](https://www.geeksforgeeks.org/assign-directions-to-edges-so-that-the-directed-graph-remains-acyclic/)
+> 原文:[https://www . geesforgeks . org/assign-directions-to-edges-so-directed-graph-to-edges-保持非循环/](https://www.geeksforgeeks.org/assign-directions-to-edges-so-that-the-directed-graph-remains-acyclic/)
 
-给定一个有向和无向边的图。 考虑到有向边不会形成循环。 如何将方向分配给无方向的边，以便图形（所有有向边）即使分配后也保持非循环状态？
+给定一个有向边和无向边的图。给出了有向边不形成循环的结论。如何给无向边指定方向，使图(有所有有向边)即使在指定后也保持无环？
 
 例如，在下图中，蓝色边没有方向。
 
-![first](img/24ab473aa3943ecf7b07b8cee9a168a4.png)
+[![first](img/24ab473aa3943ecf7b07b8cee9a168a4.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/first.png)
 
-**我们强烈建议您最小化您的浏览器，然后自己尝试。**
+**强烈建议尽量减少浏览器，先自己试试这个。**
 
-这个想法是使用[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。 以下是算法中使用的两个步骤。
+思路是用[拓扑排序](https://www.geeksforgeeks.org/topological-sorting/)。以下是算法中使用的两个步骤。
 
-1.  考虑仅包含有向边的子图，并找到子图的拓扑排序。 在上面的示例中，拓扑排序为`{0, 5, 1, 2, 3, 4}`。 下图显示了以上示例图的拓扑排序。
+**1)** 只考虑有向边的子图，求子图的拓扑排序。在上面的例子中，拓扑排序是{0，5，1，2，3，4}。下图显示了上述示例图的拓扑排序。
+[![second](img/b6fedf12a50179f05abf289ffef56197.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/second.png)
 
-![second](img/b6fedf12a50179f05abf289ffef56197.png)
+**2)** 使用上述拓扑排序为无向边指定方向。对于每条无向边(u，v)，如果在拓扑排序中 u 在 v 之前，则为其指定从 u 到 v 的方向，否则为其指定从 v 到 u 的方向。
+下图显示了示例图中的指定方向。
+[![third](img/16b7cd2d083772f2fccb3cea4f4252b0.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/third.png)
 
-2.  使用上述拓扑排序可将方向分配给无向边。 对于每个无向边`(u, v)`，如果`u`在拓扑排序中位于`v`之前，则将其方向从`u`分配给`v`，否则将其方向从`v`分配给`u`。
+来源:[http://courses . csail . MIT . edu/6.006/old quicks/solutions/Q2-f 2009-sol . pdf](http://courses.csail.mit.edu/6.006/oldquizzes/solutions/q2-f2009-sol.pdf)
 
-下图显示了示例图中分配的方向。
-
-![third](img/16b7cd2d083772f2fccb3cea4f4252b0.png)
-
-来源： [http://courses.csail.mit.edu/6.006/oldquizzes/solutions/q2-f2009-sol.pdf](http://courses.csail.mit.edu/6.006/oldquizzes/solutions/q2-f2009-sol.pdf)
-
-本文由 **Aditya Agrawal** 提供。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
-
+本文由**阿迪蒂亚·阿格沃尔**供稿。如果你发现任何不正确的地方，或者你想分享更多关于上面讨论的话题的信息，请写评论。

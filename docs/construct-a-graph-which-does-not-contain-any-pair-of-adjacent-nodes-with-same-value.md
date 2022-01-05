@@ -1,45 +1,38 @@
-# 构造一个不包含任何一对具有相同值
+# 构建一个不包含任何一对具有相同值的相邻节点的图
 
-的相邻节点的图
+> 原文:[https://www . geesforgeks . org/construct-a-graph-其中不包含任何一对具有相同值的相邻节点/](https://www.geeksforgeeks.org/construct-a-graph-which-does-not-contain-any-pair-of-adjacent-nodes-with-same-value/)
 
-> 原文： [https://www.geeksforgeeks.org/construct-a-graph-which-does-not-contain-any-pair-of-adjacent-nodes-with-same-value/](https://www.geeksforgeeks.org/construct-a-graph-which-does-not-contain-any-pair-of-adjacent-nodes-with-same-value/)
+给定一个由 **N** 个字符组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/)**arr【】**，任务是生成 **N** 个节点和**(N–1)**条边的[图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，使得每个节点 **i** 与字符**arr【I】**相关联，并且没有两个相邻节点具有相同的值。如果可以做出这样的图形，那么用成对的边打印**“可能”**。否则，打印**“不可能”**。
 
-给定由`N`个字符组成的[数组](https://www.geeksforgeeks.org/introduction-to-arrays/) **arr []** ，任务是生成`N`的[图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/) 节点和**（N – 1）**边，使得每个节点`i`与字符 **arr [i]** 关联，并且没有两个相邻节点具有相同的值。 如果可以制作这样的图形，请打印**“可能”** 以及成对的边。 否则，打印**“不可能”** 。
+**示例:**
 
-**示例**：
-
-> **输入**：N = 5，arr [] = {'a'，'b'，'a'，'b'，'c'}
-> **输出**：“可能 ”
-> 1 – 2
-> 1 – 4
-> 1 – 5
-> 5 – 3
-> **说明**：
-> 可以构造为满足给定值的一种可能的图 条件如下：
+> **输入:** N = 5，arr[] = {'a '，' b '，' a '，' b '，' c'}
+> **输出:**“可能的”
+> 1–2
+> 1–4
+> 1–5
+> 5–3
+> **解释:**
+> 一个可以构造满足给定条件的可能图形如下:
 > 
 > ![](img/46aba9370c10c4a45a7ee135be648621.png)
 > 
-> **输入**：N = 3，arr [] = {“ z”，“ z”，“ z”}
-> **输出**：“不可能”
+> **输入:** N = 3，arr[] = {'z '，' z '，' z'}
+> **输出:**“不可能”
 
-**方法**：要构造一个图，以使没有相邻节点具有相同的值，其想法是检查至少**两个唯一值**是否存在。 如果发现是真实的，则可以构造这样的图。 请按照以下步骤操作：
+**方法:**为了构建一个图，使得没有相邻的节点具有相同的值，想法是检查是否至少有**两个唯一的值**存在。如果发现是真的，就可以构造这样一个图。请遵循以下步骤:
 
-*   检查每个节点上是否存在所有值，并且如果所有节点值都与**相同**相同，则无法**来构建图形。**
+*   检查每个节点上存在的所有值，如果所有节点值都是相同的**，则**不可能**构建图形。**
+*   **如果任意两个值**不同**，总会有办法构造这样的图。**
+*   **现在，选择任意两个唯一值，将所有其他值的出现连接到除值本身之外的第一个唯一值。**
+*   **存储第一个唯一值出现的**索引**，除了它的第一次出现，并将所有这些索引连接到第二个唯一值。**
+*   **这样总会有办法构造出这样一个有**(N–1)**条边的图。**
 
-*   如果任何两个值**不同**，总会有一种方法来构造这样的图。
+**下面是上述方法的实现:**
 
-*   现在，选择任意两个唯一值，将除值本身之外的所有其他值的出现连接到第一个唯一值。
+## **C++**
 
-*   存储第一个唯一值出现的**索引**（第一次出现除外），并将所有这些索引连接到第二个唯一值。
-
-*   这样一来，总会有一种方法来构造具有**（N – 1）**边的图。
-
-下面是上述方法的实现：
-
-## C++
-
-```cpp
-
+```
 // C++ program for the above approach
 
 #include <bits/stdc++.h>
@@ -144,62 +137,60 @@ int main()
 
     return 0;
 }
-
 ```
 
-## Java
+## **Java 语言(一种计算机语言，尤用于创建网站)**
 
-```java
-
-// Java program for the 
+```
+// Java program for the
 // above approach
 import java.util.*;
 class GFG{
 
 static class pair
-{ 
-  int first, second; 
-  public pair(int first, 
-              int second)  
-  { 
-    this.first = first; 
-    this.second = second; 
-  }    
-} 
+{
+  int first, second;
+  public pair(int first,
+              int second) 
+  {
+    this.first = first;
+    this.second = second;
+  }   
+}
 
 // Function that prints the edges of
 // the generated graph
 static void printConnections(Vector<pair > store,
-                             Vector<Integer> ind, 
+                             Vector<Integer> ind,
                              int ind1)
 {
   // First print connections
   // stored in store[]
-  for (pair pr : store) 
+  for (pair pr : store)
   {
-    System.out.print(pr.first + " " + 
+    System.out.print(pr.first + " " +
                      pr.second + "\n");
   }
 
   // Check if there is more than one
   // occurrence of 1st unique element
-  if (ind.size() != 0) 
+  if (ind.size() != 0)
   {
     // Print all other occurrence
     // of 1st unique element with
     // second unique element
-    for (int x : ind) 
+    for (int x : ind)
     {
-      System.out.print(ind1 + " " + 
+      System.out.print(ind1 + " " +
                       (x + 1) + "\n");
     }
   }
 }
 
-// Function to conthe graph such
+// Function to construct the graph such
 // that the every adjacent nodes have
 // different value
-static void constructGraph(char arr[], 
+static void constructGraph(char arr[],
                            int N)
 {
   Vector<Integer> ind = new Vector<>();
@@ -213,11 +204,11 @@ static void constructGraph(char arr[],
   int count = 0;
   int ind1=-1;
 
-  for (int i = 1; i <= N - 1; ++i) 
+  for (int i = 1; i <= N - 1; ++i)
   {
     // Check for the second
     // unique occurrence
-    if (arr[i] != x) 
+    if (arr[i] != x)
     {
       // Store indices of 2nd
       // unique occurrence
@@ -242,8 +233,8 @@ static void constructGraph(char arr[],
   }
 
   // If count is zero then it's not
-  // possible to conthe graph
-  if (count == 0) 
+  // possible to construct the graph
+  if (count == 0)
   {
     System.out.print("Not Possible");
   }
@@ -252,11 +243,11 @@ static void constructGraph(char arr[],
   // element is present
   else
   {
-    System.out.print("Possible" + 
+    System.out.print("Possible" +
                      "\n");
 
     // Print the edges
-    printConnections(store, 
+    printConnections(store,
                      ind, ind1);
   }
 }
@@ -266,9 +257,9 @@ public static void main(String[] args)
 {
   int N = 5;
 
-  // Given array having 
+  // Given array having
   // node values
-  char arr[] = {'a', 'b', 
+  char arr[] = {'a', 'b',
                 'a', 'b', 'c'};
 
   // Function Call
@@ -277,13 +268,11 @@ public static void main(String[] args)
 }
 
 // This code is contributed by Amit Katiyar
-
 ```
 
-## Python
+## **蟒蛇 3**
 
-```py
-
+```
 # Python3 program for the above approach
 
 # Function that prints the edges of
@@ -369,64 +358,62 @@ if __name__ == '__main__':
     constructGraph(arr, N)
 
 # This code is contributed by mohit kumar 29
-
 ```
 
-## C#
+## **C#**
 
-```cs
-
-// C# program for the 
+```
+// C# program for the
 // above approach
 using System;
 using System.Collections.Generic;
 class GFG{
 
 public class pair
-{ 
-  public int first, 
-  second; 
-  public pair(int first, 
-              int second)  
-  { 
-    this.first = first; 
-    this.second = second; 
-  }    
-} 
+{
+  public int first,
+  second;
+  public pair(int first,
+              int second) 
+  {
+    this.first = first;
+    this.second = second;
+  }   
+}
 
 // Function that prints the edges of
 // the generated graph
 static void printConnections(List<pair > store,
-                             List<int> ind, 
+                             List<int> ind,
                              int ind1)
 {
   // First print connections
   // stored in store[]
-  foreach (pair pr in store) 
+  foreach (pair pr in store)
   {
-    Console.Write(pr.first + " " + 
+    Console.Write(pr.first + " " +
                   pr.second + "\n");
   }
 
   // Check if there is more than one
   // occurrence of 1st unique element
-  if (ind.Count != 0) 
+  if (ind.Count != 0)
   {
     // Print all other occurrence
     // of 1st unique element with
     // second unique element
-    foreach (int x in ind) 
+    foreach (int x in ind)
     {
-      Console.Write(ind1 + " " + 
+      Console.Write(ind1 + " " +
                    (x + 1) + "\n");
     }
   }
 }
 
-// Function to conthe graph such
+// Function to construct the graph such
 // that the every adjacent nodes have
 // different value
-static void constructGraph(char []arr, 
+static void constructGraph(char []arr,
                            int N)
 {
   List<int> ind = new List<int>();
@@ -440,11 +427,11 @@ static void constructGraph(char []arr,
   int count = 0;
   int ind1=-1;
 
-  for (int i = 1; i <= N - 1; ++i) 
+  for (int i = 1; i <= N - 1; ++i)
   {
     // Check for the second
     // unique occurrence
-    if (arr[i] != x) 
+    if (arr[i] != x)
     {
       // Store indices of 2nd
       // unique occurrence
@@ -469,8 +456,8 @@ static void constructGraph(char []arr,
   }
 
   // If count is zero then it's not
-  // possible to conthe graph
-  if (count == 0) 
+  // possible to construct the graph
+  if (count == 0)
   {
     Console.Write("Not Possible");
   }
@@ -479,11 +466,11 @@ static void constructGraph(char []arr,
   // element is present
   else
   {
-    Console.Write("Possible" + 
+    Console.Write("Possible" +
                      "\n");
 
     // Print the edges
-    printConnections(store, 
+    printConnections(store,
                      ind, ind1);
   }
 }
@@ -493,9 +480,9 @@ public static void Main(String[] args)
 {
   int N = 5;
 
-  // Given array having 
+  // Given array having
   // node values
-  char []arr = {'a', 'b', 
+  char []arr = {'a', 'b',
                 'a', 'b', 'c'};
 
   // Function Call
@@ -504,10 +491,125 @@ public static void Main(String[] args)
 }
 
 // This code is contributed by gauravrajput1
-
 ```
 
-**Output:** 
+## **java 描述语言**
+
+```
+<script>
+
+// Javascript program for the
+// above approach
+
+// Function that prints the edges of
+// the generated graph
+function printConnections(store, ind, ind1)
+{
+
+    // First print connections
+    // stored in store[]
+    for(let pr = 0; pr < store.length; pr++)
+    {
+        document.write(store[pr][0] + " " +
+                       store[pr][1] + "<br>");
+    }
+
+    // Check if there is more than one
+    // occurrence of 1st unique element
+    if (ind.length != 0)
+    {
+
+        // Print all other occurrence
+        // of 1st unique element with
+        // second unique element
+        for(let x = 0; x < ind.length; x++)
+        {
+            document.write(ind1 + " " +
+                        (ind[x] + 1) + "<br>");
+        }
+    }
+}
+
+// Function to construct the graph such
+// that the every adjacent nodes have
+// different value
+function constructGraph(arr, N)
+{
+    let ind = [];
+
+    // Stores pair of edges formed
+    let store = [];
+
+    // Stores first unique occurrence
+    let x = arr[0];
+
+    let count = 0;
+    let ind1 = -1;
+
+    for(let i = 1; i <= N - 1; ++i)
+    {
+
+        // Check for the second
+        // unique occurrence
+        if (arr[i] != x)
+        {
+
+            // Store indices of 2nd
+            // unique occurrence
+            ind1 = i + 1;
+
+            // To check if arr has only
+            // 1 unique element or not
+            count++;
+
+            // Store the connections of all
+            // unique elements with Node 1
+            store.push([1, i + 1]);
+        }
+
+        // If value at node (i + 1) is
+        // same as value at Node 1 then
+        // store its indices
+        else
+        {
+            ind.push(i);
+        }
+    }
+
+    // If count is zero then it's not
+    // possible to construct the graph
+    if (count == 0)
+    {
+        document.write("Not Possible");
+    }
+
+    // If more than 1 unique
+    // element is present
+    else
+    {
+        document.write("Possible" + "<br>");
+
+        // Print the edges
+        printConnections(store, ind, ind1);
+    }
+}
+
+// Driver Code
+let N = 5;
+
+// Given array having
+// node values
+let arr = [ 'a', 'b', 'a', 'b', 'c' ];
+
+// Function Call
+constructGraph(arr, N);
+
+// This code is contributed by unknown2108
+
+</script>
+```
+
+****Output:** 
 
 ```
 Possible
@@ -515,19 +617,7 @@ Possible
 1 4
 1 5
 5 3
+```** 
 
-```
-
-**时间复杂度**：`O(N)`
-
-**辅助空间**：`O(N)`
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+*****时间复杂度:**O(N)*
+T5**辅助空间:** O(N)**

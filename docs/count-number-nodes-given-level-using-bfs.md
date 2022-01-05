@@ -1,10 +1,10 @@
-# 使用 BFS 计算树中给定级别的节点数。
+# 使用 BFS 计数树中给定级别的节点数。
 
-> 原文： [https://www.geeksforgeeks.org/count-number-nodes-given-level-using-bfs/](https://www.geeksforgeeks.org/count-number-nodes-given-level-using-bfs/)
+> 原文:[https://www . geesforgeks . org/count-number-nodes-给定级别-use-bfs/](https://www.geeksforgeeks.org/count-number-nodes-given-level-using-bfs/)
 
-给定一棵表示为无向图的树。 计算给定级别 l 的节点数。 可以假设顶点 0 是树的根。
+给定一个表示为无向图的树。计算给定级别 l 的节点数。可以假设顶点 0 是树的根。
 
-**示例**：
+**示例:**
 
 ```
 Input :   7
@@ -25,20 +25,16 @@ Input : 6
         2 5
         2
 Output : 3
-
 ```
 
-[BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 是一种遍历算法，它从选定的节点（源或起始节点）开始遍历，并明智地遍历图形层，从而探索相邻节点（直接连接到源节点的节点）。 然后，移至下一级邻居节点。
+[BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 是一种遍历算法，从选定的节点(源或起始节点)开始遍历，并逐层遍历图形，从而探索相邻节点(直接连接到源节点的节点)。然后，向下一级邻居节点移动。
+顾名思义，遍历图广度如下:
+**1。**首先水平移动，访问当前图层的所有节点。
+**2。**移至下一层。
 
-就像名称 BFS 所建议的那样，按以下方式遍历图形的广度：
+在这段代码中，当访问每个节点时，该节点的级别设置为其父节点级别的增量，即级别[子] =级别[父] + 1。每个节点的级别就是这样确定的。根节点位于树中的零级。
 
-**1\.** 首先水平移动并访问当前层的所有节点。
-
-**2\.** 移至下一层。
-
-在此代码中，访问每个节点时，该节点的级别设置为其父节点的级别增加，即 level [child] = level [parent] +1。这就是确定每个节点的级别的方式 。 根节点位于树中的零级。
-
-**说明**：
+**说明:**
 
 ```
      0         Level 0
@@ -46,27 +42,19 @@ Output : 3
   1     2      Level 1
 / |\    |
 3 4 5   6      Level 2
-
 ```
 
-给定一棵具有 7 个节点和 6 个边的树，其中节点 0 位于 0 级别。 级别 1 可以更新为：级别[1] =级别[0] +1，因为 0 是父节点 1。类似地，可以通过将其他节点的父级别增加 1 来更新其他节点的级别。
-
-级别[2] =级别[0] + 1，即级别[2] = 0 +1 =1。
-
-级别[3] =级别[1] + 1，即级别[3] = 1 + 1 =2。
-
-级别[4] =级别[1] + 1，即级别[4] = 1 +1 =2。
-
-级别[5] =级别[1] + 1，即级别[5] ] = 1 +1 =2。
-
-级别[6] =级别[2] +1，即级别[6] = 1 +1 =2。
-
-然后，计算级别 1 处的节点数 （即，l = 2）是 4（节点：-3、4、5、6）
+给定一棵有 7 个节点和 6 条边的树，其中节点 0 位于 0 级。级别 1 可以更新为:级别[1] =级别[0] +1，因为 0 是 1 的父节点。类似地，其他节点的级别可以通过在其父节点的级别上添加 1 来更新。
+level[2] = level[0] + 1，即 level[2] = 0 + 1 = 1。
+等级[3] =等级[1] + 1，即等级[3] = 1 + 1 = 2。
+等级[4] =等级[1] + 1，即等级[4] = 1 + 1 = 2。
+等级[5] =等级[1] + 1，即等级[5] = 1 + 1 = 2。
+等级[6] =等级[2] + 1，即等级[6] = 1 + 1 = 2。
+那么，处于级别 l(即 l=2)的节点数的计数是 4(节点:- 3，4，5，6)
 
 ## C++
 
-```cpp
-
+```
 // C++ Program to print
 // count of nodes
 // at given level.
@@ -165,10 +153,10 @@ int Graph::BFS(int s, int l)
     }
 
     int count = 0;
-    for (int i = 0; i < V; i++) 
+    for (int i = 0; i < V; i++)
         if (level[i] == l)
-            count++;    
-    return count;  
+            count++;   
+    return count; 
 }
 
 // Driver program to test
@@ -190,13 +178,133 @@ int main()
 
     return 0;
 }
-
 ```
 
-## Python
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```py
+```
+// Java Program to print
+// count of nodes
+// at given level.
+import java.util.*;
 
+// This class represents
+// a directed graph
+// using adjacency
+// list representation
+class Graph
+{
+
+  // No. of vertices
+  int V;
+
+  // Pointer to an
+  // array containing
+  // adjacency lists
+  Vector<Integer>[] adj;
+
+  // Constructor
+  @SuppressWarnings("unchecked")
+  Graph(int V)
+  {
+    adj = new Vector[V];
+    for (int i = 0; i < adj.length; i++)
+    {
+      adj[i] = new Vector<>();
+    }
+    this.V = V;
+  }
+
+  void addEdge(int v, int w)
+  {
+
+    // Add w to v’s list.
+    adj[v].add(w);
+
+    // Add v to w's list.
+    adj[w].add(v);
+  }
+
+  int BFS(int s, int l)
+  {
+
+    // Mark all the vertices
+    // as not visited
+    boolean[] visited = new boolean[V];
+    int[] level = new int[V];
+
+    for (int i = 0; i < V; i++)
+    {
+      visited[i] = false;
+      level[i] = 0;
+    }
+
+    // Create a queue for BFS
+    Queue<Integer> queue = new LinkedList<>();
+
+    // Mark the current node as
+    // visited and enqueue it
+    visited[s] = true;
+    queue.add(s);
+    level[s] = 0;
+    int count = 0;
+    while (!queue.isEmpty())
+    {
+
+      // Dequeue a vertex from
+      // queue and print it
+      s = queue.peek();
+      queue.poll();
+
+      Vector<Integer> list = adj[s];
+      // Get all adjacent vertices
+      // of the dequeued vertex s.
+      // If a adjacent has not been
+      // visited, then mark it
+      // visited and enqueue it
+      for (int i : list)
+      {
+        if (!visited[i])
+        {
+          visited[i] = true;
+          level[i] = level[s] + 1;
+          queue.add(i);
+        }
+      }
+
+      count = 0;
+      for (int i = 0; i < V; i++)
+        if (level[i] == l)
+          count++;
+    }
+    return count;
+  }
+}
+class GFG {
+
+  // Driver code
+  public static void main(String[] args)
+  {
+
+    // Create a graph given
+    // in the above diagram
+    Graph g = new Graph(6);
+    g.addEdge(0, 1);
+    g.addEdge(0, 2);
+    g.addEdge(1, 3);
+    g.addEdge(2, 4);
+    g.addEdge(2, 5);
+    int level = 2;
+    System.out.print(g.BFS(0, level));
+  }
+}
+
+// This code is contributed by Rajput-Ji
+```
+
+## 蟒蛇 3
+
+```
 # Python3 program to print
 # count of nodes at given level.
 from collections import deque
@@ -236,7 +344,7 @@ def BFS(s, l):
     while (len(queue) > 0):
 
         # Dequeue a vertex from
-        # queue and prit
+        # queue and print
         s = queue.popleft()
         #queue.pop_front()
 
@@ -279,30 +387,28 @@ if __name__ == '__main__':
     print(BFS(0, level))
 
 # This code is contributed by mohit kumar 29
-
 ```
 
 ## C#
 
-```cs
-
-// C# program to print count of nodes 
-// at given level. 
+```
+// C# program to print count of nodes
+// at given level.
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-// This class represents 
-// a directed graph 
-// using adjacency 
-// list representation 
+// This class represents
+// a directed graph
+// using adjacency
+// list representation
 class Graph{
 
-// No. of vertices     
-private int _V; 
+// No. of vertices    
+private int _V;
 
-LinkedList<int>[] _adj; 
+LinkedList<int>[] _adj;
 
 public Graph(int V)
 {
@@ -318,15 +424,15 @@ public Graph(int V)
 public void AddEdge(int v, int w)
 {
 
-    // Add w to v’s list. 
+    // Add w to v’s list.
     _adj[v].AddLast(w);
 }
 
 public int BreadthFirstSearch(int s,int l)
 {
 
-    // Mark all the vertices 
-    // as not visited 
+    // Mark all the vertices
+    // as not visited
     bool[] visited = new bool[_V];
     int[] level = new int[_V];
 
@@ -336,19 +442,19 @@ public int BreadthFirstSearch(int s,int l)
         level[i] = 0;
     }
 
-    // Create a queue for BFS 
+    // Create a queue for BFS
     LinkedList<int> queue = new LinkedList<int>();
 
-    // Mark the current node as 
-    // visited and enqueue it 
+    // Mark the current node as
+    // visited and enqueue it
     visited[s] = true;
     level[s] = 0;
-    queue.AddLast(s);         
+    queue.AddLast(s);        
 
     while(queue.Any())
     {
 
-        // Dequeue a vertex from 
+        // Dequeue a vertex from
         // queue and print it
         s = queue.First();
 
@@ -357,7 +463,7 @@ public int BreadthFirstSearch(int s,int l)
 
         LinkedList<int> list = _adj[s];
 
-        foreach(var val in list)             
+        foreach(var val in list)            
         {
             if (!visited[val])
             {
@@ -383,8 +489,8 @@ class GFG{
 static void Main(string[] args)
 {
 
-    // Create a graph given 
-    // in the above diagram 
+    // Create a graph given
+    // in the above diagram
     Graph g = new Graph(6);
 
     g.AddEdge(0, 1);
@@ -400,22 +506,111 @@ static void Main(string[] args)
 }
 
 // This code is contributed by anvudemy1
-
 ```
 
-**输出**：
+## java 描述语言
+
+```
+<script>
+
+// JavaScript Program to print
+// count of nodes
+// at given level.
+
+    let V;
+   // Pointer to an
+  // array containing
+ // adjacency lists
+    let adj=new Array(1001);
+    for(let i=0;i<adj.length;i++)
+    {
+        adj[i]=[];
+    }
+
+    function addEdge(v,w)
+    {
+    // Add w to v’s list.
+    adj[v].push(w);
+
+    // Add v to w's list.
+    adj[w].push(v);
+    }
+
+    function BFS(s,l)
+    {
+        V=100;
+     // Mark all the vertices
+    // as not visited
+    let visited = new Array(V);
+    let level = new Array(V);
+
+    for (let i = 0; i < V; i++)
+    {
+      visited[i] = false;
+      level[i] = 0;
+    }
+
+    // Create a queue for BFS
+    let queue = [];
+
+    // Mark the current node as
+    // visited and enqueue it
+    visited[s] = true;
+    queue.push(s);
+    level[s] = 0;
+    let count = 0;
+    while (queue.length!=0)
+    {
+
+      // Dequeue a vertex from
+      // queue and print it
+      s = queue[0];
+      queue.shift();
+
+      let list = adj[s];
+      // Get all adjacent vertices
+      // of the dequeued vertex s.
+      // If a adjacent has not been
+      // visited, then mark it
+      // visited and enqueue it
+      for (let i=0;i<list.length;i++)
+      {
+        if (!visited[list[i]])
+        {
+          visited[list[i]] = true;
+          level[list[i]] = level[s] + 1;
+          queue.push(list[i]);
+        }
+      }
+
+      count = 0;
+      for (let i = 0; i < V; i++)
+        if (level[i] == l)
+          count++;
+    }
+    return count;
+  }
+
+// Driver code
+
+// Create a graph given
+    // in the above diagram
+addEdge(0, 1)
+addEdge(0, 2)
+addEdge(1, 3)
+addEdge(2, 4)
+addEdge(2, 5)
+
+let level = 2;
+document.write(BFS(0, level));
+
+// This code is contributed by unknown2108
+
+</script>
+```
+
+**输出:**
 
 ```
  3
-
 ```
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

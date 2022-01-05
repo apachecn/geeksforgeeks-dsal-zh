@@ -1,50 +1,36 @@
 # 最小生成树问题的应用
 
-> 原文： [https://www.geeksforgeeks.org/applications-of-minimum-spanning-tree/](https://www.geeksforgeeks.org/applications-of-minimum-spanning-tree/)
+> 原文:[https://www . geeksforgeeks . org/最小生成树应用/](https://www.geeksforgeeks.org/applications-of-minimum-spanning-tree/)
 
-最小生成树（MST）问题：给定连接图`G`具有正的边权重，找到连接所有顶点的边的最小权重集。
+最小生成树问题:给定具有正边权重的连通图 G，找到连接所有顶点的最小边权重集。
 
-MST 是各种应用程序的基本问题。
+MST 是具有多种应用的基本问题。
 
 **网络设计。**
+*–电话、电气、液压、电视电缆、电脑、道路*
+标准应用是针对像电话网络设计这样的问题。你有一个有几个办公室的企业；你想租用电话线把它们连接起来；电话公司收取不同的费用来连接不同的城市。你想要一套线路，以最低的总成本连接你所有的办公室。它应该是一个生成树，因为如果一个网络不是一个树，你总是可以删除一些边缘，节省资金。
 
-*–电话，电气，液压，电视电缆，计算机，道路*
+**NP 难问题的近似算法。**
+*—[旅行推销员问题](http://en.wikipedia.org/wiki/Travelling_salesman_problem)、[斯坦纳树](http://en.wikipedia.org/wiki/Steiner_tree_problem)*
+一个不太明显的应用是最小生成树可以用来近似解决旅行推销员问题。定义这个问题的一个方便的正式方法是找到访问每个点至少一次的最短路径。
 
-标准应用是针对类似于电话网络设计的问题。 您的公司有多个办事处； 您想租用电话线以将它们彼此连接； 电话公司则收取不同的费用以连接不同的城市对。 您需要一组线路以最低的总成本连接所有办公室。 它应该是一棵生成树，因为如果网络不是一棵树，您总是可以去除一些边并节省资金。
+请注意，如果你有一个路径访问所有的点恰好一次，这是一种特殊的树。例如，在上面的例子中，十六个生成树中的十二个实际上是路径。如果有一条路径多次访问一些顶点，您总是可以删除一些边来得到一棵树。所以总的来说，最小二乘权重小于旅行商权重，因为它是在一个严格更大的集合上的最小化。
 
-**NP 难题的近似算法。**
+另一方面，如果你在最小生成树周围画一条路径跟踪，你跟踪每条边两次，访问所有的点，所以 TSP 权重小于 MST 权重的两倍。因此，这次旅行是最佳的两倍。
 
-*– [旅行业务员问题](http://en.wikipedia.org/wiki/Travelling_salesman_problem)， [Steiner 树](http://en.wikipedia.org/wiki/Steiner_tree_problem)*
-
-一个不太明显的应用是最小生成树可用于近似求解 旅行商问题。 定义此问题的简便正式方法是找到至少一次访问每个点的最短路径。
-
-请注意，如果您有一条路径仅能一次访问所有点，则这是一种特殊的树。 例如，在上面的示例中，十六棵生成树中的十二棵实际上是路径。 如果您有一条路径不止一次访问某些顶点，则始终可以放下一些边以获得一棵树。 因此，一般来说，MST 的权重要比 TSP 的权重小，因为它是在严格的更大范围内最小化的。
-
-另一方面，如果在最小生成树周围绘制路径跟踪，则每个边跟踪两次并访问所有点，因此 TSP 权重小于 MST 权重的两倍。 因此，此行程是最佳行程的两倍。
-
-**间接应用程序。**
-
+**间接应用。**
 –最大瓶颈路径
-
-–用于纠错的 LDPC 码
-
-–具有 Renyi 熵的图像配准
-
-–学习用于实时人脸验证的显着特征
-
-–减少序列中的数据存储 蛋白质中的氨基酸
-
-–模拟湍流中颗粒相互作用的局部性
-
+–用于纠错的 LDPC 代码
+–与仁义熵的图像配准
+–学习实时人脸验证的显著特征
+–减少蛋白质中氨基酸测序的数据存储
+–湍流流体流中粒子相互作用的模型局部性
 –以太网桥接的自动配置协议，以避免网络中的循环
 
 **聚类分析**
+k 聚类问题可以看作是找到一个 MST 并删除 k-1 最
+昂贵的边。
 
-K 聚类问题可以看作是找到一个 MST 并删除了`k-1`个最昂贵的边。
-
-**来源**：
-
-[http://www.cs.princeton.edu/courses/archive/spr07/cos226/lectures/mst.pdf](http://www.cs.princeton.edu/courses/archive/spr07/cos226/lectures/mst.pdf)
-
+**来源:**
+[http://www . cs . Princeton . edu/courses/archive/SPR 07/cos 226/讲座/MST . pdf](http://www.cs.princeton.edu/courses/archive/spr07/cos226/lectures/mst.pdf)
 [http://www.ics.uci.edu/~eppstein/161/960206.html](http://www.ics.uci.edu/~eppstein/161/960206.html)
-

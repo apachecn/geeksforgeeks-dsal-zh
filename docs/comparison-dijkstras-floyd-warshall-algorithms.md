@@ -1,28 +1,23 @@
-# Dijkstra 算法与 Floyd-Warshall 算法的比较
+# 迪杰斯特拉算法和弗洛伊德-沃肖尔算法的比较
 
-> 原文： [https://www.geeksforgeeks.org/comparison-dijkstras-floyd-warshall-algorithms/](https://www.geeksforgeeks.org/comparison-dijkstras-floyd-warshall-algorithms/)
+> 原文:[https://www . geeksforgeeks . org/comparison-dijkstras-Floyd-war shall-algorithms/](https://www.geeksforgeeks.org/comparison-dijkstras-floyd-warshall-algorithms/)
 
-**主要用途**：
+**主要目的:**
 
-*   [Dijkstra 算法](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/)是单源最短算法或 SSSP 算法的一个示例，即，给定一个源顶点，它将找到从源到所有其他顶点的最短路径。
+*   [Dykstra algorithm](https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/) is an example of single-source shortest or SSSP algorithm, that is, given a source vertex, it finds the shortest path from the source to all other vertices.
+*   [Freud Washer's algorithm](https://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/) is an example of all-pair shortest path algorithm, which means that it calculates the shortest path between all node pairs.
 
-*   [Floyd Warshall 算法](https://www.geeksforgeeks.org/dynamic-programming-set-16-floyd-warshall-algorithm/)是全对最短路径算法的一个示例，这意味着它计算所有节点对之间的最短路径。
+**时间复杂度:**
 
-**时间复杂度**：
+*   Time complexity of Dykstra algorithm: O(E log V)
+*   Freud Washer's Time Complexity: O (v <sup>3</sup> )
 
-*   Dijkstra 算法的时间复杂度：`O(E log V)`
+**其他点:**
 
-*   Floyd Warshall 的时间复杂度：`O(V ^ 3)`
+*   We can use Dijskstra's shortest path algorithm to find all pairs of shortest paths by running it on each vertex. But the time complexity of this one is O(VE Log V), which can reach (v <sup>3</sup> logv) in the worst case.
+*   Another important difference between algorithms is that they work for distributed systems. Unlike Dijkstra's algorithm, Floyd Warshall can be implemented in a distributed system, which makes it suitable for data structures like Graph of Graphs.
+*   Finally, Freud Washer is suitable for negative edges, but there is no [negative period](https://www.geeksforgeeks.org/detect-negative-cycle-graph-bellman-ford/) , while Dykstra algorithm is not suitable for negative edges.
 
-**其他要点**：
+本文由**vinet Joshi**供稿。如果你喜欢 GeeksforGeeks 并想投稿，你也可以使用[contribute.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org)写一篇文章或者把你的文章邮寄到 contribute@geeksforgeeks.org。看到你的文章出现在极客博客主页上，帮助其他极客。
 
-*   我们可以使用 Dijskstra 的最短路径算法，通过为每个顶点运行所有对最短路径，来查找所有对最短路径。 但是，此方法的时间复杂度为`O(VE Log V)`，在最坏的情况下可以变为`V ^ 3 Log V`。
-
-*   算法之间的另一个重要区别因素是它们致力于分布式系统。 与 Dijkstra 算法不同，Floyd Warshall 可以在分布式系统中实现，使其适用于诸如 Graph Graphs（在地图中使用）之类的数据结构。
-
-*   最后，Floyd Warshall 适用于负边，但没有[负周期](https://www.geeksforgeeks.org/detect-negative-cycle-graph-bellman-ford/)，而 Dijkstra 算法不适用于负边。
-
-本文由 **Vineet Joshi** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
-
+如果你发现任何不正确的地方，或者你想分享更多关于上面讨论的话题的信息，请写评论。

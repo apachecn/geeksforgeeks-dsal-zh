@@ -1,41 +1,34 @@
-# 检查图形中的每个顶点三元组是否包含连接到第三个顶点的两个顶点
+# 检查图中的每个顶点三元组是否包含两个连接到第三个顶点的顶点
 
-> 原文： [https://www.geeksforgeeks.org/check-if-every-vertex-triplet-in-graph-contains-two-vertices-connected-to-third-vertex/](https://www.geeksforgeeks.org/check-if-every-vertex-triplet-in-graph-contains-two-vertices-connected-to-third-vertex/)
+> 原文:[https://www . geesforgeks . org/check-如果图中的每个顶点都包含三个顶点-连接到第三个顶点/](https://www.geeksforgeeks.org/check-if-every-vertex-triplet-in-graph-contains-two-vertices-connected-to-third-vertex/)
 
-给定[无向图](https://www.geeksforgeeks.org/detect-cycle-undirected-graph/)，其中`N`个顶点且`K`个边，任务是检查图中三个顶点的每个组合是否存在两个顶点，其中 连接到第三顶点。 换句话说，对于每个顶点三元组`(a, b, c)`，如果在`a`和`c`之间存在一条路径，那么也应该存在一个`b`和`c`之间的路径。
+给定一个具有 **N** 顶点和 **K** 边的[无向图](https://www.geeksforgeeks.org/detect-cycle-undirected-graph/)，任务是检查对于图中三个顶点的每一个组合，是否存在连接到第三个顶点的两个顶点。换句话说，对于每个顶点三元组 **(a，b，c)** ，如果 **a** 和 **c** 之间存在路径，那么 **b** 和 **c** 之间也应该存在路径。
 
-**示例**：
+**示例:**
 
-> **输入**：`N = 4, K = 3, edge: = 1 -> 2, 2 -> 3, 3 -> 4`
+> **输入:** N = 4，K = 3
+> 边:1 - > 2，2 - > 3，3 - > 4
+> **输出:** YES
+> **说明:**
+> 由于整个图形是连通的，上述条件始终有效。
 > 
-> **输出**：`Yes`
->
-> **说明**：
->
-> 由于连接了整个图形，因此上述条件始终有效。
-> 
-> **输入**：`N = 5, K = 3, edge = 1 -> 3, 3 -> 4, 2 -> 5`
->
-> **输出**：`No`
->
-> **解释**：
->
-> 如果我们考虑三元组`(1, 2, 3)`，则顶点 1 和 3 之间有一条路径，但顶点 2 和 3 之间没有任何路径。
+> **输入:** N = 5，K = 3
+> 边:1 - > 3，3 - > 4，2 - > 5。
+> **输出:**否
+> **解释:**
+> 如果我们考虑三元组(1，2，3)，那么顶点 1 和 3 之间有路径，但是顶点 2 和 3 之间没有路径。
 
-**方法**：请按照以下步骤解决问题–
+**方法:**按照以下步骤解决问题–
 
-*   [通过](https://www.geeksforgeeks.org/algorithms-gq/graph-traversals-gq/) [DFS 遍历技术](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)从任何组件遍历图形，并维护两个变量以存储组件最小值和组件最大值。
+*   [通过](https://www.geeksforgeeks.org/algorithms-gq/graph-traversals-gq/) [DFS 遍历技术](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)从任意组件遍历图形，并维护两个变量来存储组件最小值和组件最大值。
+*   将每个分量的最大值和最小值存储在一个向量中。
+*   现在，如果任何两个分量在其最小值和最大值区间有交集，那么将存在一个有效的(a < b < c)三元组。因此，两个组件都应该连接。否则，图形无效。
 
-*   将每个组件的最大值和最小值存储在向量中。
-
-*   现在，如果任意两个组件的最小值和最大值间隔中都有一个交集，则将存在一个有效的三元组
-
-下面是上述方法的实现：
+下面是上述方法的实现
 
 ## C++
 
-```cpp
-
+```
 // C++ program of the
 // above approach
 
@@ -136,14 +129,12 @@ int main()
 
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
-// Java program of the 
+```
+// Java program of the
 // above approach
 import java.util.*;
 import java.lang.*;
@@ -169,7 +160,7 @@ static void addEdge(ArrayList<ArrayList<Integer>> adj,
     adj.get(v).add(u);
 }
 
-static void DFSUtil(int u, 
+static void DFSUtil(int u,
                     ArrayList<ArrayList<Integer>> adj,
                     boolean[] visited,
                     int componentMin,
@@ -212,7 +203,7 @@ static boolean isValid(ArrayList<pair> v)
 }
 
 // Function for the DFS Traversal
-static void DFS(ArrayList<ArrayList<Integer>> adj, 
+static void DFS(ArrayList<ArrayList<Integer>> adj,
                 int V)
 {
    ArrayList<pair> v = new ArrayList<>();
@@ -222,7 +213,7 @@ static void DFS(ArrayList<ArrayList<Integer>> adj,
 
     for(int u = 1; u <= V; u++)
     {
-        if (visited[u] == false) 
+        if (visited[u] == false)
         {
             int componentMax = u;
             int componentMin = u;
@@ -267,13 +258,11 @@ public static void main (String[] args)
 }
 
 // This code is contributed by offbeat
-
 ```
 
-## Python
+## 蟒蛇 3
 
-```py
-
+```
 # Python3 program of the
 # above approach
 
@@ -285,7 +274,7 @@ def addEdge(adj, u, v):
     adj[v].append(u)
     return adj
 
-def DFSUtil(u, adj, visited, 
+def DFSUtil(u, adj, visited,
             componentMin, componentMax):
 
     visited[u] = True
@@ -298,7 +287,7 @@ def DFSUtil(u, adj, visited,
     for i in range(len(adj[u])):
         if (visited[adj[u][i]] == False):
             visited, componentMax, componentMin = DFSUtil(
-                adj[u][i], adj, visited, componentMin, 
+                adj[u][i], adj, visited, componentMin,
                 componentMax)
 
     return visited, componentMax, componentMin
@@ -370,26 +359,258 @@ if __name__=="__main__":
     DFS(adj, N)
 
 # This code is contributed by rutvik_56
+```
 
+## C#
+
+```
+// C# program of the
+// above approach
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+class GFG{
+
+class pair
+{
+    public int first, second;
+    public pair(int first, int second)
+    {
+        this.first = first;
+        this.second = second;
+    }
+}
+
+// Function to add edge into
+// the graph
+static void addEdge(ArrayList adj,
+                    int u, int v)
+{
+    ((ArrayList)adj[u]).Add(v);
+    ((ArrayList)adj[v]).Add(u);
+}
+
+static void DFSUtil(int u, ArrayList adj,
+                    bool[] visited,
+                    int componentMin,
+                    int componentMax)
+{
+    visited[u] = true;
+
+    // Finding the maximum and
+    // minimum values in each component
+    componentMax = Math.Max(componentMax, u);
+    componentMin = Math.Min(componentMin, u);
+
+    for(int i = 0; i < ((ArrayList)adj[u]).Count; i++)
+        if (visited[(int)((ArrayList)adj[u])[i]] == false)
+            DFSUtil((int)((ArrayList)adj[u])[i], adj, visited,
+                    componentMin, componentMax);
+}
+
+// Function for checking whether
+// the given graph is valid or not
+static bool isValid(ArrayList v)
+{
+    int MAX = -1;
+    bool ans = false;
+
+    // Checking for intersecting intervals
+    foreach(pair i in v)
+    {
+
+        // If intersection is found
+        if (i.first <= MAX)
+        {
+
+            // Graph is not valid
+            ans = true;
+        }
+        MAX = Math.Max(MAX, i.second);
+    }
+    return (ans == false ? true : false);
+}
+
+// Function for the DFS Traversal
+static void DFS(ArrayList adj,
+                int V)
+{
+   ArrayList v = new ArrayList();
+
+   // Traversing for every vertex
+   bool[] visited = new bool[V + 1];
+
+    for(int u = 1; u <= V; u++)
+    {
+        if (visited[u] == false)
+        {
+            int componentMax = u;
+            int componentMin = u;
+
+            DFSUtil(u, adj, visited,
+                    componentMin,
+                    componentMax);
+
+            // Storing maximum and minimum
+            // values of each component
+            v.Add(new pair(componentMin,
+                           componentMax));
+        }
+    }
+
+    bool check = isValid(v);
+
+    if (check)
+        Console.WriteLine("Yes");
+    else
+        Console.WriteLine("No");
+
+    return;
+}
+
+// Driver code
+public static void Main(string[] args)
+{
+    int N = 4;
+
+    ArrayList adj = new ArrayList();
+
+    for(int i = 0; i <= N + 1; i++)
+        adj.Add(new ArrayList());
+
+    addEdge(adj, 1, 2);
+    addEdge(adj, 2, 3);
+    addEdge(adj, 3, 4);
+
+    DFS(adj, N);
+}
+}
+
+// This code is contributed by pratham76
+```
+
+## java 描述语言
+
+```
+<script>
+
+// JavaScript program of the
+// above approach
+
+class pair
+{
+    constructor(first, second)
+    {
+        this.first = first;
+        this.second = second;
+    }
+}
+
+// Function to add edge into
+// the graph
+function addEdge(adj,u, v)
+{
+    (adj[u]).push(v);
+    (adj[v]).push(u);
+}
+
+function DFSUtil(u, adj, visited, componentMin, componentMax)
+{
+    visited[u] = true;
+
+    // Finding the maximum and
+    // minimum values in each component
+    componentMax = Math.max(componentMax, u);
+    componentMin = Math.min(componentMin, u);
+
+    for(var i = 0; i < (adj[u]).length; i++)
+        if (visited[(adj[u])[i]] == false)
+            DFSUtil((adj[u])[i], adj, visited,
+                    componentMin, componentMax);
+}
+
+// Function for checking whether
+// the given graph is valid or not
+function isValid(v)
+{
+    var MAX = -1;
+    var ans = false;
+
+    // Checking for intersecting intervals
+    for(var i of v)
+    {
+
+        // If intersection is found
+        if (i.first <= MAX)
+        {
+
+            // Graph is not valid
+            ans = true;
+        }
+        MAX = Math.max(MAX, i.second);
+    }
+    return (ans == false ? true : false);
+}
+
+// Function for the DFS Traversal
+function DFS(adj, V)
+{
+   var v = [];
+
+   // Traversing for every vertex
+   var visited = Array(V+1).fill(false);
+
+    for(var u = 1; u <= V; u++)
+    {
+        if (visited[u] == false)
+        {
+            var componentMax = u;
+            var componentMin = u;
+
+            DFSUtil(u, adj, visited,
+                    componentMin,
+                    componentMax);
+
+            // Storing maximum and minimum
+            // values of each component
+            v.push(new pair(componentMin,
+                           componentMax));
+        }
+    }
+
+    var check = isValid(v);
+
+    if (check)
+        document.write("Yes");
+    else
+        document.write("No");
+
+    return;
+}
+
+// Driver code
+var N = 4;
+
+var adj = [];
+
+for(var i = 0; i <= N + 1; i++)
+    adj.push(new Array());
+
+addEdge(adj, 1, 2);
+addEdge(adj, 2, 3);
+addEdge(adj, 3, 4);
+
+DFS(adj, N);
+
+</script>
 ```
 
 **Output:** 
 
 ```
 Yes
-
 ```
 
-**时间复杂度**：`O(N + E)`
-
-**辅助空间**：`O(N)`
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。**
+**时间复杂度:**O(N+E)
+T3】辅助空间: O(N)

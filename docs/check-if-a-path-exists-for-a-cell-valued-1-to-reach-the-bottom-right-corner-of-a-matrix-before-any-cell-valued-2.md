@@ -1,59 +1,43 @@
-# 检查值为 1 的单元格是否在到达值为 2 的任何单元格之前到达矩阵右下角的路径
+# 检查值为 1 的单元格在值为 2 的单元格之前是否存在到达矩阵右下角的路径
 
-> 原文： [https://www.geeksforgeeks.org/check-if-a-path-exists-for-a-cell-valued-1-to-reach-the-bottom-right-corner-of-a-matrix-before-any-cell-valued-2/](https://www.geeksforgeeks.org/check-if-a-path-exists-for-a-cell-valued-1-to-reach-the-bottom-right-corner-of-a-matrix-before-any-cell-valued-2/)
+> 原文:[https://www . geesforgeks . org/check-if-a-path-exists-for-a-cell-value-1-to-reach-a-matrix-右下角-any-cell-value-2/](https://www.geeksforgeeks.org/check-if-a-path-exists-for-a-cell-valued-1-to-reach-the-bottom-right-corner-of-a-matrix-before-any-cell-valued-2/)
 
-给定尺寸为`N * M`的矩阵`arr[][]`，其元素为`0`，`1`和`2`。 矩阵中只有一个值`1`的单元格。 任务是检查`1`是否有可能在值`2`的任何单元格之前到达右下角，或者不使用以下操作：
+给定尺寸为 **N * M** 的矩阵 **arr[][]** ，具有元素 **0** 、 **1** 和 **2** 。矩阵中只有一个值为 **1** 的单元格。任务是检查 **1** 是否有可能在任何有值的单元格 **2** 之前到达右下角，或者不使用以下操作:
 
-*  `2`可以在 1 个单位时间内在所有四个方向上复制 1 个单位。
+*   **2** 可以在 1 个单位的时间内在所有四个方向复制自身 1 个单位。
+*   **1** 如果该位置的元素为 **0** ，则只能在所有四个方向中的一个方向上移动。
 
-*  `1`仅可以在所有四个方向中的一个方向上移动，前提是该位置的元素为`0`。
+如果值为 **1** 的单元格到达右下角的时间少于或等于任何值为 **2** 的单元格到达右下角的时间，则打印“**是”**。否则，打印“**1”**。
 
-如果值`1`的单元格比任何值`2`的单元格在少于或相等的时间内到达右下角，请打印`Yes`。 否则，打印`No`。
+**示例:**
 
-**示例**：
-
-> **输入**：`N = 3, M = 3, arr[][] = {{0, 2, 0}, {0, 1, 0}, {0, 0, 0}}`
->
-> **输出**：`Yes`
->
-> **说明**：
->
-> 1 可以移动 2 步到右下角 ，`2`可以移动 3 步到右下角。
->
-> 由于值 1 的单元格比值 2 的单元格先到达。因此，打印是。
+> **输入:** N = 3，M = 3，arr[][] = {{0，2，0}，{0，1，0}，{0，0，0}}
+> **输出**:是
+> **说明:**
+> 1 可以在 2 次移动中移动到右下角，2 可以在 3 次移动中移动到右下角。
+> 因为值为 1 的单元格比值为 2 的单元格先到达。因此，打印“是”。
 > 
-> **输入**：`N = 3, M = 3, arr[][] = {{0, 2, 0}, {0, 1, 0}, {0, 2, 0}}`
->
-> **输出**：`No`
->
-> **说明**：
->
-> 1 可以移动 2 步到右下角，而单元格最后一行的 2 可以移动 1 步到右下角。
->
-> 因为值 2 的单元格比值 1 的单元格先到达。因此，打印`No`。
+> **输入:** N = 3，M = 3，arr[][] = {{0，2，0}，{0，1，0}，{0，2，0}}
+> **输出:**否
+> **说明:**
+> 1 在 2 次移动中可以移动到右下角，单元格最后一行的 2 在 1 次移动中可以移动到右下角。
+> 因为值为 2 的单元格比值为 1 的单元格先到达。因此，打印编号。
 
-**方法**：这个想法是使用[多源 BFS](https://www.geeksforgeeks.org/multi-source-shortest-path-in-unweighted-graph/) 。 要执行多源 BFS 遍历，请按指定顺序以[双端队列](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/)将矩阵中存在的`1`和`2`的所有位置相加。 通过弹出添加的位置并添加尚未访问的相邻位置，对该出队执行 [BFS](http://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 。 请按照以下步骤解决问题：
+**进场:**思路是使用[多源 BFS](https://www.geeksforgeeks.org/multi-source-shortest-path-in-unweighted-graph/) 。要执行多源 BFS 遍历，将矩阵中存在的所有 **1** 和 **2** 的位置以指定的顺序添加到一个[德格](https://www.geeksforgeeks.org/deque-set-1-introduction-applications/)中。通过弹出添加的位置并添加尚未访问的相邻位置，对该出列执行 [BFS](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph/) 。按照以下步骤解决问题:
 
-1.  为多源 BFS 创建双端队列。
+1.  为多源 BFS 创建出列。
+2.  首先在前面加上 **1** 的位置，然后在后面加上 **2** 的位置。这是因为如果 **1** 和 **2** 同时到达右下方，则 **1** 被认为超过了 **2** 。
+3.  从出列的前面弹出元素，直到出列为空，然后执行以下操作:
+    *   如果弹出的位置已经被访问过，进入下一个位置。
+    *   如果该位置未被访问，检查其是否为右下位置，以及检查其中的元素是否为 **1** 。如果发现是真的，那么打印**是**。
+    *   否则，对于所有四个方向，在**出列**中插入当前位置。
+4.  一旦上述操作结束，如果未发现值为 **1** 的单元格到达右下角位置，则打印**否**。
 
-2.  首先，在前面添加`1`的位置，然后在后面添加`2`的位置。 这是因为如果`1`和`2`同时到达右下角，则`1`被认为比`2`高。
-
-3.  从出队队列的前面弹出元素，直到出队队列为空，然后执行以下操作：
-
-    *   如果弹出位置已被访问，则继续下一个位置。
-
-    *   如果没有访问该位置，请检查该位置是否在右下角，以及检查其中的元素是否为`1`。 如果发现是真的，则打印**是**。
-
-    *   否则，对于所有四个方向，将当前位置插入**出队**中。
-
-4.  完成上述操作后，如果未找到值`1`的单元到达右下位置，则打印 **No** 。
-
-下面是上述方法的实现：
+下面是上述方法的实现:
 
 ## C++
 
-```cpp
-
+```
 // C++ program for the above approach
 
 #include <bits/stdc++.h>
@@ -130,7 +114,7 @@ bool reachesBottom(vector<vector<int> >& a)
         }
     }
 
-    // If 1 can't reach the botton
+    // If 1 can't reach the bottom
     // right then return false
     return false;
 }
@@ -153,13 +137,11 @@ int main()
 
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
+```
 // Java program for the above approach
 import java.util.*;
 import java.lang.*;
@@ -224,7 +206,7 @@ static boolean reachesBottom(int[][] a)
         a[i][j] = 1;
 
         // If 1 reached corner first
-        if (t == 1 && (i == n - 1 && 
+        if (t == 1 && (i == n - 1 &&
                        j == m - 1))
         {
             return true;
@@ -236,7 +218,7 @@ static boolean reachesBottom(int[][] a)
             int nj = j + dy[d];
 
             // Insert new point in queue
-            if (ni >= 0 && ni < n && 
+            if (ni >= 0 && ni < n &&
                 nj >= 0 && nj < m)
             {
                 q.addLast(new int[]{ ni, nj, t });
@@ -244,7 +226,7 @@ static boolean reachesBottom(int[][] a)
         }
     }
 
-    // If 1 can't reach the botton
+    // If 1 can't reach the bottom
     // right then return false
     return false;
 }
@@ -271,13 +253,11 @@ public static void main (String[] args)
 }
 
 // This code is contributed by offbeat
-
 ```
 
-## Python
+## 蟒蛇 3
 
-```py
-
+```
 # Python3 program for the above approach
 from collections import deque
 
@@ -340,7 +320,7 @@ def reachesBottom(a):
                 nj >= 0 and nj < m):
                 q.append([ni, nj, t])
 
-    # If 1 can't reach the botton
+    # If 1 can't reach the bottom
     # right then return false
     return False
 
@@ -359,14 +339,12 @@ if __name__ == '__main__':
         print("NO")
 
 # This code is contributed by mohit kumar 29
-
 ```
 
 ## C#
 
-```cs
-
-// C# program for 
+```
+// C# program for
 // the above approach
 using System;
 using System.Collections.Generic;
@@ -375,7 +353,7 @@ class GFG{
 // Function to check if cell with
 // value 1 doesn't reaches the bottom
 // right cell or not
-static bool reachesBottom(int [,]a, 
+static bool reachesBottom(int [,]a,
                           int n, int m)
 {
   // Initialise the deque
@@ -424,7 +402,7 @@ static bool reachesBottom(int [,]a,
     a[i, j] = 1;
 
     // If 1 reached corner first
-    if (t == 1 && (i == n - 1 && 
+    if (t == 1 && (i == n - 1 &&
                    j == m - 1))
     {
       return true;
@@ -436,7 +414,7 @@ static bool reachesBottom(int [,]a,
       int nj = j + dy[d];
 
       // Insert new point in queue
-      if (ni >= 0 && ni < n && 
+      if (ni >= 0 && ni < n &&
           nj >= 0 && nj < m)
       {
         q.Enqueue(new int[]{ni, nj, t});
@@ -444,7 +422,7 @@ static bool reachesBottom(int [,]a,
     }
   }
 
-  // If 1 can't reach the botton
+  // If 1 can't reach the bottom
   // right then return false
   return false;
 }
@@ -470,26 +448,112 @@ public static void Main(String[] args)
 }
 
 // This code is contributed by gauravrajput1
+```
 
+## java 描述语言
+
+```
+<script>
+
+// Javascript program for the above approach
+
+// Function to check if cell with
+// value 1 doesn't reaches the bottom
+// right cell or not
+function reachesBottom(a)
+{
+    // Number of rows and columns
+    var n = a.length;
+    var m = a[0].length;
+
+    // Initialise the deque
+    var q = [];
+
+    // Traverse the matrix
+    for (var i = 0; i < n; i++) {
+
+        for (var j = 0; j < m; j++) {
+
+            // Push 1 to front of queue
+            if (a[i][j] == 1) {
+                q.slice(0,0,[i, j, 1]);
+            }
+
+            // Push 2 to back of queue
+            else if (a[i][j] == 2) {
+                q.push([i, j, 2 ]);
+            }
+
+            a[i][j] = 0;
+        }
+    }
+
+    // Store all the possible direction
+    // of the current cell
+    var dx = [-1, 0, 1, 0 ];
+    var dy = [ 0, 1, 0, -1 ];
+
+    // Run multi-source BFS
+    while (!q.length) {
+
+        // Get the front element
+        var front = q[0];
+
+        // Pop the front element
+        q.shift();
+
+        var i = front[0], j = front[1];
+        var t = front[2];
+
+        if (a[i][j])
+            continue;
+
+        a[i][j] = 1;
+
+        // If 1 reached corner first
+        if (t == 1 && (i == n - 1
+                        && j == m - 1)) {
+            return true;
+        }
+
+        for (var d = 0; d < 4; d++) {
+            var ni = i + dx[d];
+            var nj = j + dy[d];
+
+            // Insert new point in queue
+            if (ni >= 0 && ni < n
+               && nj >= 0 && nj < m) {
+                q.push([ ni, nj, t ]);
+            }
+        }
+    }
+
+    // If 1 can't reach the bottom
+    // right then return false
+    return false;
+}
+
+// Driver Code
+// Given matrix
+var matrix = [[ 0, 2, 0 ],
+                             [ 0, 1, 0 ],
+                             [0, 2, 0 ]];
+// Function Call
+if (reachesBottom(matrix)) {
+    document.write( "YES");
+}
+else {
+    document.write( "NO");
+}
+
+</script>
 ```
 
 **Output:** 
 
 ```
 NO
-
 ```
 
-**时间复杂度**：`O(N * M)`
-
-**辅助空间**：`O(N * M)`
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+***时间复杂度:** O(N*M)*
+***辅助空间:** O(N*M)*

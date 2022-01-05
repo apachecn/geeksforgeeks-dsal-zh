@@ -1,8 +1,8 @@
-# 使用 STL 进行竞争编码的 BFS
+# BFS 使用 STL 进行竞争编码
 
-> 原文： [https://www.geeksforgeeks.org/bfs-using-stl-competitive-coding/](https://www.geeksforgeeks.org/bfs-using-stl-competitive-coding/)
+> 原文:[https://www . geesforgeks . org/bfs-using-STL-competitive-coding/](https://www.geeksforgeeks.org/bfs-using-stl-competitive-coding/)
 
-使用 STL 中的[队列](https://www.geeksforgeeks.org/queue-cpp-stl/)和[向量](https://www.geeksforgeeks.org/vector-in-cpp-stl/)的 BFS 基于 STL 的简单实现。 邻接表是使用向量表示的。
+一个基于 STL 的 BFS 的简单实现，在 STL 中使用[队列](https://www.geeksforgeeks.org/queue-cpp-stl/)和[向量](https://www.geeksforgeeks.org/vector-in-cpp-stl/)。邻接表用向量的向量来表示。
 
 ```
 In BFS, we start with a node.
@@ -14,84 +14,82 @@ In BFS, we start with a node.
     b) Print f
     c) Enqueue all not yet visited adjacent
        of f and mark them visited.
-
 ```
 
-下面是一个从源顶点 1 开始的 BFS 示例。请注意，图形可能存在多个 BFS（甚至来自特定顶点）。
+下面是从源顶点 1 开始的 BFS 示例。请注意，一个图可以有多个 bfs(甚至从一个特定的顶点)。
 
-![](img/2937b8f5e49cbc777eff03ed060e459e.png)
+![BFS using STL for competitive coding](img/2937b8f5e49cbc777eff03ed060e459e.png)
 
-有关 BFS 的更多详细信息，请参阅此帖子的[。](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph)
+更多 BFS 详情，请参考[本帖](https://www.geeksforgeeks.org/breadth-first-traversal-for-a-graph)。
+这里的代码经过简化，可以用于竞争性编码。
 
-此处的代码经过简化，可用于竞争性编码。
+## 卡片打印处理机（Card Print Processor 的缩写）
 
 ```
+// A Quick implementation of BFS using
+// vectors and queue
+#include <bits/stdc++.h>
+#define pb push_back
 
-// A Quick implementation of BFS using 
-// vectors and queue 
-#include <bits/stdc++.h> 
-#define pb push_back 
+using namespace std;
 
-using namespace std; 
+vector<bool> v;
+vector<vector<int> > g;
 
-vector<bool> v; 
-vector<vector<int> > g; 
+void edge(int a, int b)
+{
+    g[a].pb(b);
 
-void edge(int a, int b) 
-{ 
-    g[a].pb(b); 
+    // for undirected graph add this line
+    // g[b].pb(a);
+}
 
-    // for undirected graph add this line 
-    // g[b].pb(a); 
-} 
+void bfs(int u)
+{
+    queue<int> q;
 
-void bfs(int u) 
-{ 
-    queue<int> q; 
+    q.push(u);
+    v[u] = true;
 
-    q.push(u); 
-    v[u] = true; 
+    while (!q.empty()) {
 
-    while (!q.empty()) { 
+        int f = q.front();
+        q.pop();
 
-        int f = q.front(); 
-        q.pop(); 
+        cout << f << " ";
 
-        cout << f << " "; 
+        // Enqueue all adjacent of f and mark them visited 
+        for (auto i = g[f].begin(); i != g[f].end(); i++) {
+            if (!v[*i]) {
+                q.push(*i);
+                v[*i] = true;
+            }
+        }
+    }
+}
 
-        // Enqueue all adjacent of f and mark them visited  
-        for (auto i = g[f].begin(); i != g[f].end(); i++) { 
-            if (!v[*i]) { 
-                q.push(*i); 
-                v[*i] = true; 
-            } 
-        } 
-    } 
-} 
+// Driver code
+int main()
+{
+    int n, e;
+    cin >> n >> e;
 
-// Driver code 
-int main() 
-{ 
-    int n, e; 
-    cin >> n >> e; 
+    v.assign(n, false);
+    g.assign(n, vector<int>());
 
-    v.assign(n, false); 
-    g.assign(n, vector<int>()); 
+    int a, b;
+    for (int i = 0; i < e; i++) {
+        cin >> a >> b;
+        edge(a, b);
+    }
 
-    int a, b; 
-    for (int i = 0; i < e; i++) { 
-        cin >> a >> b; 
-        edge(a, b); 
-    } 
+    for (int i = 0; i < n; i++) {
+        if (!v[i])
+            bfs(i);
+    }
 
-    for (int i = 0; i < n; i++) { 
-        if (!v[i]) 
-            bfs(i); 
-    } 
-
-    return 0; 
-} 
-
+    return 0;
+}
 ```
 
 ```
@@ -110,11 +108,7 @@ Input:
 
 Output:
 0 1 2 3 4 5 6 7
-
 ```
 
-本文由 [**Nikhil Mahendran**](https://auth.geeksforgeeks.org/profile.php?user=Nikhil Mahendran) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
-
-![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
+本文由 [**尼基尔·马亨德兰**](https://auth.geeksforgeeks.org/profile.php?user=Nikhil Mahendran) 供稿。如果你喜欢 GeeksforGeeks 并想投稿，你也可以使用[write.geeksforgeeks.org](https://write.geeksforgeeks.org)写一篇文章或者把你的文章邮寄到 review-team@geeksforgeeks.org。看到你的文章出现在极客博客主页上，帮助其他极客。
+如果发现有不正确的地方，或者想分享更多关于上述话题的信息，请写评论。

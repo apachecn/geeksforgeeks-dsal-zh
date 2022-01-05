@@ -1,20 +1,16 @@
-# 无向图中的连通组件
+# 无向图中的连通分量
 
-> 原文： [https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)
+> 原文:[https://www . geeksforgeeks . org/连接组件无向图/](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)
 
-给定一个无向图，一行一行地打印所有连通组件。 例如，考虑下图。
+给定一个无向图，逐行打印所有连接的组件。例如，考虑下面的图表。
 
 ![SCCUndirected](img/a79d2e5fa34c51c9a36a83b4578d9478.png)
 
-**我们强烈建议您最小化您的浏览器，然后自己尝试。**
-
-我们在以下文章中讨论了用于在有向图中找到强连通组件的算法。
-
-[Kosaraju 的算法，用于强连通组件](https://www.geeksforgeeks.org/strongly-connected-components/)。
-
-[查找强连通组件的 Tarjan 算法](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)
-
-为无向图找到连通组件是一件容易的事。 我们只需要从每个未访问的顶点开始执行 BFS 或 DFS，就可以获得所有紧密连通组件。 以下是基于 DFS 的步骤。
+**强烈建议尽量减少浏览器，先自己试试这个。**
+我们在下面的文章中讨论了在有向图中寻找强连通分支的算法。
+[小泽一郎的强连通分量算法](https://www.geeksforgeeks.org/strongly-connected-components/)。
+[塔尔扬寻找强连通分支的算法](https://www.geeksforgeeks.org/tarjan-algorithm-find-strongly-connected-components/)
+寻找无向图的连通分支是一个更容易的任务。我们只需要从每个未访问的顶点开始进行 BFS 或离散傅立叶变换，就可以得到所有强连通的分量。以下是基于 DFS 的步骤。
 
 ```
 1) Initialize all vertices as not visited.
@@ -27,15 +23,13 @@ DFSUtil(v)
 2) Print 'v'
 3) Do following for every adjacent 'u' of 'v'.
      If 'u' is not visited, then recursively call DFSUtil(u)
-
 ```
 
 下面是上述算法的实现。
 
 ## C++
 
-```cpp
-
+```
 // C++ program to print connected components in
 // an undirected graph
 #include <iostream>
@@ -124,13 +118,11 @@ int main()
 
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
+```
 // Java program to print connected components in
 // an undirected graph
 import java.util.ArrayList;
@@ -211,13 +203,11 @@ class Graph
         g.connectedComponents();
     }
 }
-
 ```
 
-## Python
+## 计算机编程语言
 
-```py
-
+```
 # Python program to print connected
 # components in an undirected graph
 
@@ -277,13 +267,11 @@ if __name__ == "__main__":
     print(cc)
 
 # This code is contributed by Abhishek Valsan
-
 ```
 
 ## C#
 
-```cs
-
+```
 // C++ program to print connected components in
 // an undirected graph
 #include <iostream>
@@ -372,18 +360,180 @@ int main()
 
     return 0;
 }
-
 ```
 
-**输出**：
+## java 描述语言
+
+```
+<script>
+// Javascript program to print connected components in
+// an undirected graph
+
+// A user define class to represent a graph.
+    // A graph is an array of adjacency lists.
+    // Size of array will be V (number of vertices
+    // in graph)
+let V;
+let adjListArray=[];
+
+// constructor
+function Graph(v)
+{   
+    V = v
+
+        // define the size of array as
+        // number of vertices
+
+        // Create a new list for each vertex
+        // such that adjacent nodes can be stored
+
+        for (let i = 0; i < V; i++) {
+            adjListArray.push([]);
+        }
+}
+
+// Adds an edge to an undirected graph
+function addEdge(src,dest)
+{
+    // Add an edge from src to dest.
+        adjListArray[src].push(dest);
+
+        // Since graph is undirected, add an edge from dest
+        // to src also
+        adjListArray[dest].push(src);
+}
+
+function DFSUtil(v,visited)
+{
+    // Mark the current node as visited and print it
+        visited[v] = true;
+        document.write(v + " ");
+
+        // Recur for all the vertices
+        // adjacent to this vertex
+        for (let x = 0; x < adjListArray[v].length; x++)
+        {
+            if (!visited[adjListArray[v][x]])
+                DFSUtil(adjListArray[v][x], visited);
+        }
+}
+
+function connectedComponents()
+{
+    // Mark all the vertices as not visited
+        let visited = new Array(V);
+        for(let i = 0; i < V; i++)
+        {
+            visited[i] = false;
+        }
+        for (let v = 0; v < V; ++v)
+        {
+            if (!visited[v])
+            {
+                // print all reachable vertices
+                // from v
+                DFSUtil(v, visited);
+                document.write("<br>");
+            }
+        }
+}
+
+// Driver code
+Graph(5);
+
+addEdge(1, 0);
+addEdge(2, 3);
+addEdge(3, 4);
+document.write(
+"Following are connected components<br>");
+connectedComponents();
+
+// This code is contributed by rag2127
+</script>
+```
+
+**输出:**
 
 ```
 0 1
 2 3 4
-
 ```
 
-上述解决方案的时间复杂度为`O(V + E)`，因为它对给定的图形执行简单的 DFS。
+上述解的时间复杂度为 O(V + E)，因为它对给定的图进行简单的离散傅立叶变换。
 
-如果发现任何不正确的内容，或者想共享有关上述主题的更多信息，请发表评论
+这可以使用时间复杂度为 O(N)的[不相交集并](https://www.geeksforgeeks.org/union-find/)来解决。DSU 解决方案更容易理解一个工具。
 
+算法:
+
+！。声明一个大小为 n 的数组 arr，其中 n 是节点总数。
+
+2.对于数组 arr 的每个索引 I，该值表示第 I 个顶点的父节点是谁。例如 arr[0]=3，那么我们可以说顶点 0 的父顶点是 3。
+
+3.将每个节点初始化为其父节点，然后在将它们添加到一起时，相应地更改它们的父节点。
+
+## C++
+
+```
+#include <bits/stdc++.h>
+using namespace std;
+int merge(int* parent, int x)
+{
+    if (parent[x] == x)
+        return x;
+    return merge(parent, parent[x]);
+}
+int connectedcomponents(int n, vector<vector<int> >& edges)
+{
+    int parent[n];
+    for (int i = 0; i < n; i++) {
+        parent[i] = i;
+    }
+    for (auto x : edges) {
+        parent[merge(parent, x[0])] = merge(parent, x[1]);
+    }
+    int ans = 0;
+    for (int i = 0; i < n; i++) {
+        ans += (parent[i] == i);
+    }
+    for (int i = 0; i < n; i++) {
+        parent[i] = merge(parent, parent[i]);
+    }
+    map<int, list<int> > m;
+    for (int i = 0; i < n; i++) {
+        m[parent[i]].push_back(i);
+    }
+    for (auto it = m.begin(); it != m.end(); it++) {
+        list<int> l = it->second;
+        for (auto x : l) {
+            cout << x << " ";
+        }
+        cout << endl;
+    }
+    return ans;
+}
+int main()
+{
+    int n = 5;
+    vector<int> e1 = { 0, 1 };
+    vector<int> e2 = { 2, 3 };
+    vector<int> e3 = { 3, 4 };
+    vector<vector<int> > e;
+    e.push_back(e1);
+    e.push_back(e2);
+    e.push_back(e3);
+    int a = connectedcomponents(n, e);
+    cout << "total no. of connected components are: " << a
+         << endl;
+    return 0;
+}
+```
+
+**Output**
+
+```
+0 1 
+2 3 4 
+total no. of connected components are: 2
+```
+
+如果您发现任何不正确的地方，或者您想分享关于上面讨论的主题的更多信息，请写评论

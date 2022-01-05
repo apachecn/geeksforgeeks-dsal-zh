@@ -1,72 +1,53 @@
-# 3 色是 NP 完整版
+# 3-着色为 NP 完成
 
-> 原文： [https://www.geeksforgeeks.org/3-coloring-is-np-complete/](https://www.geeksforgeeks.org/3-coloring-is-np-complete/)
+> 原文:[https://www.geeksforgeeks.org/3-coloring-is-np-complete/](https://www.geeksforgeeks.org/3-coloring-is-np-complete/)
 
-**先决条件**：[NP 完整性](https://www.geeksforgeeks.org/np-completeness-set-1/)和[图形着色](https://www.geeksforgeeks.org/graph-coloring-applications/)
+**先决条件:**[NP-完全性](https://www.geeksforgeeks.org/np-completeness-set-1/)[图形着色](https://www.geeksforgeeks.org/graph-coloring-applications/)
 
-**<u>图 K 着色问题</u>**：无向图的 K 着色问题是将颜色分配给图的节点，使得没有两个相邻的顶点具有相同的颜色，并且[ **最多使用 K 种**颜色来完成图形的着色。
+**<u>图 K-着色问题</u> :** 无向图的 K-着色问题是将颜色分配给图的节点，使得没有两个相邻的顶点具有相同的颜色，**最多使用 K** 种颜色来完成对图的着色。
 
-**<u>问题陈述</u>**：给定一个图 **G（V，E）**和整数 K = 3，任务是确定该图是否可以使用[ **最多 3 种**颜色，因此不会给两个相邻的顶点提供相同的颜色。
+**<u>问题陈述</u> :** 给定一个图 **G(V，E)** 和一个整数 K = 3，任务是确定该图是否可以使用**最多 3 种**颜色进行着色，使得没有两个相邻顶点被赋予相同的颜色。
 
-**<u>说明</u>** ：
+**<u>解释</u>** :
+问题的一个实例是指定给问题的输入。**3-着色问题**的一个实例是无向图 **G (V，E)** ，任务是检查每个顶点 **V** 是否存在可能的颜色分配，仅使用 3 种不同的颜色，每个相邻的颜色不同。由于 NP-Complete 问题是同时存在于 **NP** 和 **NP-hard** 中的问题，因此证明问题是 NP-Complete 的陈述由两部分组成:
 
-问题的一个实例是为问题指定的输入。 **3 色问题**的一个实例是无向图 **G（V，E）**，任务是检查每个顶点是否有可能的颜色分配`V`仅使用 3 种不同的颜色，每个邻居的颜色也不同。 由于 NP-Complete 问题是 **NP** 和 **NP-hard** 都存在的问题，因此证明问题为 NP-Complete 的陈述的证据包括两部分：
+> 1.  The problem itself lies in **NP class** .
+> 2.  All other problems in NP class can be reduced to that by polynomial time. (b can be reduced to c by polynomial time and expressed as b ≤ p <sup>c</sup> )
 
-> 1.  问题本身在 **NP 类** 中。
-> 2.  NP 类中的所有其他问题都可以通过多项式时间归约。
+如果**第二个条件**仅被满足，那么问题被称为 **NP-Hard** 。
 
-如果仅满足**第二条件**，则该问题称为 **NP-Hard** 。
+但是不可能把每一个 NP 问题都化为另一个 NP 问题来一直展示它的 NP 完全性。因此，要证明一个问题是 NP-Complete，那么证明这个问题是在 **NP** 中，任何 **NP-Complete 问题**都可以简化为这个问题，即如果 B 是 NP-Complete，B≤P <sup>C</sup> 那么对于 NP 中的 C，那么 C 就是 NP-Complete。因此，使用以下两个命题可以得出**图 K-着色问题**是 NP-完全的结论:
 
-但是不可能将每个 NP 问题都简化为另一个 NP 问题以始终显示其 NP 完整性。 因此，要表明问题是 NP-Complete，则证明问题出在 **NP** 中，并且可以将任何 **NP-Complete 问题**还原为该问题，即，如果 B 是 NP-Complete 且 B≤P <sup>C</sup> ，然后对于 NP 中的 C，则 C 为 NP-完全。 因此，可以得出以下结论，**图 K 着色问题**是 NP-完全的：
+**3-着色问题在 NP 中:**
+如果 NP 中有任何问题，那么，给一个证书，它是问题的解决方案和问题的实例(A 图 **G(V，E)** 和颜色的分配 **{c <sub>1</sub> ，c <sub>2</sub> ，c <sub>3</sub> }** ，其中每个顶点从这三种颜色中被分配一种颜色 **{c <sub>1 c <sub>2</sub> ，c <sub>3</sub> }</sub>** ，则可以验证(检查给出的解是否正确)该证书在多项式时间内。 这可以通过以下方式实现:
 
-**NP 中有 3 种颜色的问题**：
+> 对于图形 G 中的每条边{u，v}，验证颜色 c(u)！= c(v)
 
-如果 NP 中有任何问题，则给定证书，该证书可以解决问题和问题的实例（图表 **G （V，E）**和颜色 **{c <sub>1</sub> ，c <sub>2</sub> ，c <sub>3</sub> }** 的分配 顶点从这三种颜色中分配了一种颜色 **{c <sub>1</sub> ，c <sub>2</sub> ，c <sub>3</sub> }** ），则可以对其进行验证 （检查给出的解是否正确）证明证书在多项式时间内。 这可以通过以下方式完成：
+因此，可以在图的多项式时间内相对于它的边 0(V+E)检查赋值的正确性。
 
-> 对于图 G 中的每个边{u，v}，验证颜色 c（u）！= c（v）
+**3-着色问题是 NP-Hard:**
+为了证明 3-着色问题是 NP-Hard，执行从已知的 NP-Hard 问题到该问题的约简。进行一个简化，从 3-SAT 问题可以简化为 3-着色问题。让我们假设 3-SAT 问题有一个关于 n 个变量的 m 个子句的 3-SAT 公式，由 **x <sub>1</sub> 、x <sub>2</sub> 、…、x <sub>n</sub>** 表示。然后，可以通过以下方式从公式中构建图表:
 
-因此，可以检查赋值相对于其边`O(V + E)`的图形多项式时间的正确性。
+1.  对于每个变量**x<sub>I</sub>T3】在图中构造一个顶点**v<sub>I</sub>T7】和一个顶点 **v <sub>i'</sub>** 表示变量 **x <sub>i</sub>** 的否定。****
+2.  对于 m 中的每个子句 c，添加对应于值 c1，c1，…，c5 的 5 个顶点。
+3.  另外添加了三个不同颜色的顶点，分别表示值“真”、“假”和“底”。
+4.  在这三个附加顶点 **T，F，B** 之间添加边，形成一个三角形。
+5.  在顶点**v<sub>I</sub>T3】和**v<sub>I’</sub>T7】和 Base (B)之间添加边，形成三角形。****
 
-**3 色问题是 NP-Hard**：
+**以下约束对于图 G 是正确的:**
 
-为了证明 3 色问题是 NP-Hard，请将已知的 NP-Hard 问题简化为该问题。 进行还原，从而可以将 3-SAT 问题简化为三色问题。 让我们假设 3-SAT 问题的 3-SAT 公式具有 n 个变量的 m 个子句，这些变量由 **x <sub>1</sub> ，x <sub>2</sub> ，…，x <sub>表示 n</sub>** 。 然后可以通过以下方式从公式构造图形：
+1.  对于每对顶点**v<sub>I</sub>T3】和**v<sub>I’</sub>T7】，其中一个被赋予真值，另一个被赋予假值。****
+2.  对于 m 子句中的每个子句 c，至少有一个文字必须持有真值，该值才为真。
 
-1.  对于每个变量 **x <sub>i</sub>** ，在图中构造一个顶点 **v <sub>i</sub>** ，并构造一个顶点 **v <sub>i'[</sub>** 表示变量 **x <sub>i</sub>** 的取反。
+因此，可以通过输入节点 u、V、w 为公式中的每个子句**c =(u V V w)**构建一个小的 OR- gadget 图，并将 gadget 的输出节点连接到 False 和 Base 特殊节点。
 
-2.  对于 m 中的每个子句 c，添加 5 个对应于值 c1，c1，...，c5 的顶点。
+让我们考虑公式 **f = (u' V v V w')** 和 **(u V v V w')**
 
-3.  另外添加了三个不同颜色的顶点，分别表示值 True，False 和 Base（T，F，B）。
+[![](img/91ed583a31e66c2205093ea691708066.png)](https://media.geeksforgeeks.org/wp-content/uploads/20200918133430/Gaph11.jpg)
 
-4.  在这三个附加顶点 **T，F，B** 之间添加边以形成三角形。
+**现在可以用下面两个命题来证明约简:**
+我们假设 3-SAT 公式有一个令人满意的赋值，那么在每个子句中，至少有一个文字 **x <sub>i</sub>** 必须为真，因此，相应的**v<sub>I</sub>T10】可以赋给一个 true 颜色，**v<sub>I’</sub>T14】赋给 FALSE。现在，扩展一下，对于每个子句，对应的 OR-gadget 图可以是 3 色的。因此，图形可以是 3 色的。****
 
-5.  在顶点 **v <sub>i</sub>** 和 **v <sub>i’</sub>** 和底边（B）之间添加边以形成三角形。
+让我们考虑图 G 是 3-可着色的，所以如果顶点 vi 被指定为真彩色，相应地变量 x <sub>i</sub> 被指定为真。这将形成一个法律真相分配。此外，对于任何子句 **C <sub>j</sub> = (x V y V z)** ，不可能所有三个文字 x，y，z 都为假。因为在这种情况下， **C <sub>j</sub>** 的 OR-gadget 图的输出必须被着色为 False。这是一个矛盾，因为输出连接到 Base 和 False。因此，3-SAT 条款有一个令人满意的分配。
 
-**以下限制适用于图 G**：
-
-1.  对于每个顶点对 **v <sub>i</sub>** v **v <sub>i'</sub>** ，每个顶点都被分配为 TRUE 值，而另一个为 FALSE 。
-
-2.  对于 m 个子句中的每个子句 c，至少一个文字必须具有 TRUE 值，该值才为 true。
-
-因此，可以通过输入节点 u，v，w 为公式中的每个子句 **c =（u V v V w）**构造一个小的 OR-gadget 图，并将 gadget 的输出节点连接到两个 False 和 Base 特殊节点。
-
-让我们考虑公式 **f =（u’V v V w’）**和**（u V v V w’）**
-
-![](img/91ed583a31e66c2205093ea691708066.png)
-
-**现在可以通过以下两个命题证明这种减少**：
-
-让我们假设 3-SAT 公式具有令人满意的赋值，然后在每个子句中，至少一个文字 **x <sub>i</sub>** 必须为真，因此，可以将相应的 **v <sub>i</sub>** 分配为真彩色，而 **v <sub>i'</sub>** 为 FALSE。 现在，将其扩展，对于每个子句，对应的 OR 小工具图可以是 3 色的。 因此，该图可以是 3 色的。
-
-让我们考虑图 G 是 3 色的，因此，如果将顶点 vi 分配为真色，则将变量 x <sub>i</sub> 对应为真。 这将构成合法的事实分配。 同样，对于任何子句 **C <sub>j</sub> =（x V y V z）**，不可能所有三个文字 x，y，z 都是 False。 因为在这种情况下， **C <sub>j</sub>** 的 OR 小工具图的输出必须着色为 False。 这是一个矛盾，因为输出连接到 Base 和 False。 因此，存在对 3-SAT 子句的满意分配。
-
-**<u>结论</u>**：因此，3 色是 **NP 完全**问题。
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+**<u>结论</u> :** 因此，3-着色是一个 **NP-Complete** 问题。

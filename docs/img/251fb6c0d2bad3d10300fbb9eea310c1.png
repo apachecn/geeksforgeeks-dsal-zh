@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>wp-content/uploads/Graph_odd_cycle_2.jpg</Key><RequestId>C95F204AAEE67B61</RequestId><HostId>S//XyOPlsv9KDXw8tw1RwooLtxCUqeOpYYahpg7wrSjU6qkEEMmcx9RxgYYBxZFTSdYQ4DFPn9E=</HostId></Error>
+<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>T3FA693REGZEMNV4</RequestId><HostId>gg2qob7ByAgTVEHqn6HZL1wH0/REmBpU9Dy2FhYMWxJNfV27CVRSQAnTfOzbUHhNui0SzNTlsxI=</HostId></Error>

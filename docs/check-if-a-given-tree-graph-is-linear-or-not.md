@@ -1,6 +1,6 @@
-# 检查给定的树图是否为线性图
+# 检查给定的树形图是否是线性的
 
-> 原文： [https://www.geeksforgeeks.org/check-if-a-given-tree-graph-is-linear-or-not/](https://www.geeksforgeeks.org/check-if-a-given-tree-graph-is-linear-or-not/)
+> 原文:[https://www . geesforgeks . org/check-如果给定的树图是线性的或不线性的/](https://www.geeksforgeeks.org/check-if-a-given-tree-graph-is-linear-or-not/)
 
 给定一个树，检查它是否是线性的。
 
@@ -21,7 +21,7 @@
 Not linear
 ```
 
-**示例**：
+**例:**
 
 ```
 Input : 3
@@ -41,18 +41,96 @@ Output :
 NO
 ```
 
-**方法**：仅当`n-2`个节点的`indegree == 2`或节点数`n == 1`时，给定的树才是线性的。
+**方法:**给定的树只有在其 n-2 个节点具有索引== 2 或节点数 n==1 时才是线性的。
+
+## c++
+
+```
+// A C++ program to check whether a graph is
+// Linear or not
+#include<bits/stdc++.h>
+using namespace std;
+
+// This class represents a undirected graph
+// using adjacency list representation
+class Graph
+{
+    public:
+
+    // No. of vertices
+    int V;
+
+    // Constructor
+    Graph(int v)
+    {
+        V = v;
+    }
+
+    // Function to add an edge into the graph
+    void addEdge(vector<int> adj[], int v, int w)
+    {
+        adj[v].push_back(w);
+        adj[w].push_back(v);
+    }
+
+    // Returns true if the graph is linear,
+    // else false.
+    bool isLinear(vector<int> adj[])
+    {
+
+        // If the number of vertice is 1 then
+        // the tree is always Linear
+        if (V == 1)
+            return true;
+
+        int count = 0;
+
+        // Counting the number of vertices
+        // with indegree 2
+        for(int i = 0; i < V; i++)
+        {
+            if (adj[i].size() == 2)
+                count++;
+        }
+        if (count == V - 2)
+            return true;
+        else
+            return false;
+    }
+};
+
+// Driver code
+int main()
+{
+
+    // Create a graph given in the
+    // above example
+    Graph g1(3);
+
+    vector<int> adj[g1.V];
+
+    g1.addEdge(adj, 0, 1);
+    g1.addEdge(adj, 0, 2);
+    if (g1.isLinear(adj))
+        cout << "YES";
+    else
+        cout << "NO";
+
+    return 0;
+}
+
+// This code is contributed by pratham76
+```
 
 ## Java
 
-```java
-
-// A Java Program to check whether a graph is 
+```
+// A Java Program to check whether a graph is
 // Linear or not
 import java.io.*;
 import java.util.*;
 
-// This class represents a undirected graph 
+// This class represents a undirected graph
 // using adjacency list representation
 class Graph {
     private int V; // No. of vertices
@@ -76,7 +154,7 @@ class Graph {
         adj[w].add(v);
     }
 
-    // Returns true if the graph is linear, 
+    // Returns true if the graph is linear,
     // else false.
     boolean isLinear()
     {
@@ -111,24 +189,22 @@ class Graph {
             System.out.println("NO");
     }
 }
-
 ```
 
-## Python
+## python 3
 
-```py
-
-# A Python3 Program to check whether a 
+```
+# A Python3 Program to check whether a
 # graph is Linear or not
 
-# This class represents a undirected 
+# This class represents a undirected
 # graph using adjacency list representation
 class Graph:
 
     def __init__(self, v):
 
           # No. of vertices
-        self.V = v 
+        self.V = v
 
         # Adjacency List
         self.adj = [[] for i in range(v)]
@@ -140,11 +216,11 @@ class Graph:
         self.adj[v].append(w)
         self.adj[w].append(v)
 
-    # Returns true if the graph is 
+    # Returns true if the graph is
     # linear, else false.
     def isLinear(self):
 
-        # If the number of vertice is 
+        # If the number of vertice is
           # 1 then the tree is always Linear
         if (self.V == 1):
             return True
@@ -177,21 +253,19 @@ if __name__=='__main__':
         print("NO")
 
 # This code is contributed by rutvik_56
-
 ```
 
-## C#
+## c#
 
-```cs
-
-// A C# Program to check whether a graph is 
+```
+// A C# Program to check whether a graph is
 // Linear or not
 using System;
 using System.Collections.Generic;
 
-// This class represents a undirected graph 
+// This class represents a undirected graph
 // using adjacency list representation
-public class Graph 
+public class Graph
 {
     private int V; // No. of vertices
 
@@ -214,7 +288,7 @@ public class Graph
         adj[w].Add(v);
     }
 
-    // Returns true if the graph is linear, 
+    // Returns true if the graph is linear,
     // else false.
     bool isLinear()
     {
@@ -226,7 +300,7 @@ public class Graph
 
         // Counting the number of vertices
         // with indegree 2
-        for (int i = 0; i < V; i++) 
+        for (int i = 0; i < V; i++)
         {
             if (adj[i].Count == 2)
                 count++;
@@ -252,21 +326,73 @@ public class Graph
 }
 
 // This code is contributed by 29AjayKumar
-
 ```
 
-**输出**：
+## Javascript
+
+```
+<script>
+
+// A Javascript program to check
+// whether a graph is Linear or not
+let V;
+let adj;
+
+// Function to add an edge into the graph
+function addEdge(v, w)
+{
+    adj[v].push(w);
+    adj[w].push(v);
+}
+
+// Returns true if the graph is linear,
+// else false.
+function isLinear()
+{
+
+    // If the number of vertice is 1 then
+    // the tree is always Linear
+    if (V == 1)
+        return true;
+
+    let count = 0;
+
+    // Counting the number of vertices
+    // with indegree 2
+    for(let i = 0; i < V; i++)
+    {
+        if (adj[i].length == 2)
+            count++;
+    }
+    if (count == V - 2)
+        return true;
+    else
+        return false;
+}
+
+// Driver code
+
+// Create a graph given in the above example
+V = 3;
+adj = new Array(V)
+for(let i = 0; i < V; ++i)
+    adj[i] = [];
+
+addEdge(0, 1);
+addEdge(0, 2);
+
+if (isLinear())
+    document.write("YES");
+else
+    document.write("NO");
+
+// This code is contributed by suresh07
+
+</script>
+```
+
+**输出:**
 
 ```
 YES
 ```
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。

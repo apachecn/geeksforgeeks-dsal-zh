@@ -1,10 +1,10 @@
-# 检查给定的顶点度代表图还是树
+# 检查给定的顶点度数是代表图形还是树
 
-> 原文： [https://www.geeksforgeeks.org/check-whether-given-degrees-vertices-represent-graph-tree/](https://www.geeksforgeeks.org/check-whether-given-degrees-vertices-represent-graph-tree/)
+> 原文:[https://www . geesforgeks . org/check-是否-给定-度-顶点-表示-图-树/](https://www.geeksforgeeks.org/check-whether-given-degrees-vertices-represent-graph-tree/)
 
-给定顶点数和每个顶点的阶数，其中顶点数为`1, 2, ..., n`。 任务是识别它是图还是树。 可以假定该图形已连接。
+给定顶点数和每个顶点的度，其中顶点数是 1，2，3，…n。任务是识别它是图还是树。可以假设图是连通的。
 
-**示例**：
+**示例:**
 
 ```
 Input : 5
@@ -29,215 +29,202 @@ Output : Graph
 
 ```
 
-顶点的度由进入或从其离开的边的数量给出。
+顶点的**度由入射或出射的边数给出。
+这可以简单地利用树木的特性来完成，比如–**
 
-只需使用树的属性即可完成：
+1.  树是**连接的**，没有**循环**，而图可以有循环。
+2.  树正好有 **n-1** 条边，而图没有这样的约束。
+3.  给出了输入图是连通的。我们需要至少 n-1 条边来连接 n 个节点。
 
-1.  树是**连接的**，树没有**循环**，而图形可以有循环。
+如果我们取所有度数的总和，每条边将被计算两次。因此，对于具有 **n** 个顶点和**n–1**条边的树，所有度数的总和应为**2 *(n–1)**。详见[握手引理](https://www.geeksforgeeks.org/handshaking-lemma-and-interesting-tree-properties/)。
 
-2.  树没有`n-1`边，而图没有这种约束。
-
-3.  假设输入图已连接。 我们至少需要`n-1`个边来连接`n`个节点。
-
-如果我们取所有度的总和，则每个边将被计数两次。 因此，对于具有`n`个顶点和`n – 1`边的树，所有度数之和应为`2 * (n – 1)`。 有关详细信息，请参考[握手引理](https://www.geeksforgeeks.org/handshaking-lemma-and-interesting-tree-properties/)。
-
-因此，基本上我们需要检查所有度的和是否为`2 * (n-1)`或否。
+所以基本上我们需要检查所有度数的总和是 2*(n-1)还是不是。
 
 ## C++
 
-```cpp
+```
+// C++ program to check whether input degree
+// sequence is graph or tree
+#include<bits/stdc++.h>
+using namespace std;
 
-// C++ program to check whether input degree 
-// sequence is graph or tree 
-#include<bits/stdc++.h> 
-using namespace std; 
+// Function returns true for tree
+// false for graph
+bool check(int degree[], int n)
+{
+    // Find sum of all degrees
+    int deg_sum = 0;
+    for (int i = 0; i < n; i++)
+        deg_sum += degree[i];
 
-// Function returns true for tree 
-// false for graph 
-bool check(int degree[], int n) 
-{ 
-    // Find sum of all degrees 
-    int deg_sum = 0; 
-    for (int i = 0; i < n; i++) 
-        deg_sum += degree[i]; 
+    // Graph is tree if sum is equal to 2(n-1)
+    return (2*(n-1) == deg_sum);
+}
 
-    // Graph is tree if sum is equal to 2(n-1) 
-    return (2*(n-1) == deg_sum); 
-} 
+// Driver program to test above function
+int main()
+{
+    int n = 5;
+    int degree[] = {2, 3, 1, 1, 1};
 
-// Driver program to test above function 
-int main() 
-{ 
-    int n = 5; 
-    int degree[] = {2, 3, 1, 1, 1}; 
-
-    if (check(degree, n)) 
-        cout << "Tree"; 
+    if (check(degree, n))
+        cout << "Tree";
     else
-        cout << "Graph"; 
+        cout << "Graph";
 
-    return 0; 
-} 
-
+    return 0;
+}
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
+```
+// Java program to check whether input degree 
+// sequence is graph or tree 
+class GFG 
+{
 
-// Java program to check whether input degree  
-// sequence is graph or tree  
-class GFG  
-{ 
+    // Function returns true for tree 
+    // false for graph 
+    static boolean check(int degree[], int n)
+    {
+        // Find sum of all degrees 
+        int deg_sum = 0;
+        for (int i = 0; i < n; i++) 
+        {
+            deg_sum += degree[i];
+        }
 
-    // Function returns true for tree  
-    // false for graph  
-    static boolean check(int degree[], int n) 
-    { 
-        // Find sum of all degrees  
-        int deg_sum = 0; 
-        for (int i = 0; i < n; i++)  
-        { 
-            deg_sum += degree[i]; 
-        } 
+        // Graph is tree if sum is equal to 2(n-1) 
+        return (2 * (n - 1) == deg_sum);
+    }
 
-        // Graph is tree if sum is equal to 2(n-1)  
-        return (2 * (n - 1) == deg_sum); 
-    } 
+    // Driver code 
+    public static void main(String[] args)
+    {
+        int n = 5;
+        int degree[] = {2, 3, 1, 1, 1};
 
-    // Driver code  
-    public static void main(String[] args) 
-    { 
-        int n = 5; 
-        int degree[] = {2, 3, 1, 1, 1}; 
-
-        if (check(degree, n)) 
-        { 
-            System.out.println("Tree"); 
-        }  
+        if (check(degree, n))
+        {
+            System.out.println("Tree");
+        } 
         else 
-        { 
-            System.out.println("Graph"); 
-        } 
-    } 
-}  
+        {
+            System.out.println("Graph");
+        }
+    }
+} 
 
-// This code has been contributed  
-// by 29AjayKumar 
-
+// This code has been contributed 
+// by 29AjayKumar
 ```
 
-## Python
+## 计算机编程语言
 
-```py
+```
+# Python program to check whether input degree
+# sequence is graph or tree
+def check(degree, n):
 
-# Python program to check whether input degree 
-# sequence is graph or tree 
-def check(degree, n): 
+    # Find sum of all degrees
+    deg_sum = sum(degree)
 
-    # Find sum of all degrees 
-    deg_sum = sum(degree) 
-
-    # It is tree if sum is equal to 2(n-1) 
-    if (2*(n-1) == deg_sum): 
+    # It is tree if sum is equal to 2(n-1)
+    if (2*(n-1) == deg_sum):
         return True
-    else: 
+    else:
         return False
 
-#main 
+#main
 n = 5
-degree = [2, 3, 1, 1, 1]; 
-if (check(degree, n)): 
+degree = [2, 3, 1, 1, 1];
+if (check(degree, n)):
     print "Tree"
-else: 
+else:
     print "Graph"
-
 ```
 
 ## C#
 
-```cs
+```
+// C# program to check whether input 
+// degree sequence is graph or tree 
+using System;
 
-// C# program to check whether input  
-// degree sequence is graph or tree  
-using System; 
+class GFG 
+{
 
-class GFG  
-{ 
+    // Function returns true for tree 
+    // false for graph 
+    static bool check(int[] degree, int n)
+    {
+        // Find sum of all degrees 
+        int deg_sum = 0;
+        for (int i = 0; i < n; i++) 
+        {
+            deg_sum += degree[i];
+        }
 
-    // Function returns true for tree  
-    // false for graph  
-    static bool check(int[] degree, int n) 
-    { 
-        // Find sum of all degrees  
-        int deg_sum = 0; 
-        for (int i = 0; i < n; i++)  
-        { 
-            deg_sum += degree[i]; 
-        } 
+        // Graph is tree if sum is 
+        // equal to 2(n-1) 
+        return (2 * (n - 1) == deg_sum);
+    }
 
-        // Graph is tree if sum is  
-        // equal to 2(n-1)  
-        return (2 * (n - 1) == deg_sum); 
-    } 
+    // Driver code 
+    public static void Main()
+    {
+        int n = 5;
+        int[] degree = {2, 3, 1, 1, 1};
 
-    // Driver code  
-    public static void Main() 
-    { 
-        int n = 5; 
-        int[] degree = {2, 3, 1, 1, 1}; 
-
-        if (check(degree, n)) 
-        { 
-            Console.WriteLine("Tree"); 
-        }  
+        if (check(degree, n))
+        {
+            Console.WriteLine("Tree");
+        } 
         else
-        { 
-            Console.WriteLine("Graph"); 
-        } 
-    } 
-}  
+        {
+            Console.WriteLine("Graph");
+        }
+    }
+} 
 
-// This code has been contributed  
-// by Akanksha Rai 
-
+// This code has been contributed 
+// by Akanksha Rai
 ```
 
-## PHP
+## 服务器端编程语言（Professional Hypertext Preprocessor 的缩写）
 
-```php
+```
+<?php
+// PHP program to check whether input 
+// degree sequence is graph or tree
 
-<?php 
-// PHP program to check whether input  
-// degree sequence is graph or tree 
+// Function returns true for tree
+// false for graph
+function check(&$degree, $n)
+{
+    // Find sum of all degrees
+    $deg_sum = 0;
+    for ($i = 0; $i < $n; $i++)
+        $deg_sum += $degree[$i];
 
-// Function returns true for tree 
-// false for graph 
-function check(&$degree, $n) 
-{ 
-    // Find sum of all degrees 
-    $deg_sum = 0; 
-    for ($i = 0; $i < $n; $i++) 
-        $deg_sum += $degree[$i]; 
+    // Graph is tree if sum is 
+    // equal to 2(n-1)
+    return (2 * ($n - 1) == $deg_sum);
+}
 
-    // Graph is tree if sum is  
-    // equal to 2(n-1) 
-    return (2 * ($n - 1) == $deg_sum); 
-} 
+// Driver Code
+$n = 5;
+$degree = array(2, 3, 1, 1, 1);
 
-// Driver Code 
-$n = 5; 
-$degree = array(2, 3, 1, 1, 1); 
-
-if (check($degree, $n)) 
-    echo "Tree"; 
+if (check($degree, $n))
+    echo "Tree";
 else
-    echo "Graph"; 
+    echo "Graph";
 
-// This code is contributed by  
-// Shivi_Aggarwal 
-?> 
-
+// This code is contributed by 
+// Shivi_Aggarwal
+?>
 ```
 
 **Output:**
@@ -247,7 +234,6 @@ Tree
 
 ```
 
-本文由 [**Ayush Khanduri**](https://in.linkedin.com/in/ayush-khanduri-b4ab87106) 贡献。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由 **[阿育什·坎德里](https://in.linkedin.com/in/ayush-khanduri-b4ab87106)** 供稿。如果你喜欢 GeeksforGeeks 并想投稿，你也可以使用[contribute.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org)写一篇文章或者把你的文章邮寄到 contribute@geeksforgeeks.org。看到你的文章出现在极客博客主页上，帮助其他极客。
 
-如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
-
+如果你发现任何不正确的地方，或者你想分享更多关于上面讨论的话题的信息，请写评论。

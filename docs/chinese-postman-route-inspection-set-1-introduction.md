@@ -1,26 +1,23 @@
-# 邮递或路线检查 | 系列 1（简介）
+# 中国邮递员或路线检查|第一套(介绍)
 
-> 原文： [https://www.geeksforgeeks.org/chinese-postman-route-inspection-set-1-introduction/](https://www.geeksforgeeks.org/chinese-postman-route-inspection-set-1-introduction/)
+> 原文:[https://www . geesforgeks . org/Chinese-postman-route-inspection-set-1-introduction/](https://www.geeksforgeeks.org/chinese-postman-route-inspection-set-1-introduction/)
 
-[邮递员问题](https://en.wikipedia.org/wiki/Route_inspection_problem)是[欧拉回路](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)问题针对无向图的一种变体。 欧拉环路是一条封闭的步道，一旦起点和终点位置相同，它就会覆盖每个边。 为连通图和无向图定义了中国邮递员问题。 问题在于找到最短路径或环路，该路径或环路至少访问一次图形的每个边。
+[中国邮差问题](https://en.wikipedia.org/wiki/Route_inspection_problem)是无向图的[欧拉回路](https://www.geeksforgeeks.org/eulerian-path-and-circuit/)问题的变种。欧拉回路是一个封闭的行走，一旦开始和结束位置相同，它就覆盖每条边。中国邮差问题定义为连通图和无向图。问题是找到访问图的每条边至少一次的最短路径或迂回路径。
 
-**如果输入图包含欧拉环路，则问题的解决方案是欧拉环路**。
-
-如果“所有顶点为偶数度”，则无向且连通的图具有欧拉循环。
+**如果输入图包含欧拉回路，那么问题的一个解就是欧拉回路**
+如果“<u>所有顶点都有偶度</u>，则无向图和连通图都有欧拉循环。
 
 ![chinese-postman](img/f2d3d702d9c5730ce4f84fe939a8837b.png)
 
-无论是加权图还是不加权图，如果有，中国邮递员路线始终与欧拉环路相同。 在加权图中，邮递员环路的最小可能权重是我们通过欧拉回路获得的所有边权重的总和。 我们无法缩短路线，因为我们必须至少一次访问所有边。
+不管图是加权的还是不加权的，中国邮差路线如果存在的话，总是和欧拉回路一样。在加权图中，邮差旅行的最小可能权重是我们通过欧拉回路得到的所有边权重之和。我们不能走一条更短的路线，因为我们必须访问所有的边-至少一次。
 
-**如果输入图不包含欧拉环路**，
-
-在这种情况下，任务将减少为以下内容。
-
-1.  在未加权图中，要复制的最小边数，以便给定图转换为具有欧拉循环的图。
+**如果输入图形不包含欧拉回路**
+在这种情况下，任务简化为如下。
+1)在未加权图中，复制的最小边数，以便给定的图转换成具有欧拉循环的图。
 
 ![chinese-postman2](img/72aa5243b49f75bdd563ccbf8e4db4c9.png)
 
-2.  在加权图中，要复制的最小边的总权重使给定图转换为具有欧拉循环的图。
+2)在加权图中，要复制的边的最小总权重，以便给定的图转换成具有欧拉循环的图。
 
 ![chinese-postman-3](img/3bd734b5179924f6240dfe996e978051.png)
 
@@ -44,10 +41,9 @@ step 7 : Weight of Chinese Postman Tour is sum of all
          edges in the modified graph.
 step 8 : Print Euler Circuit of the modified graph. 
          This Euler Circuit is Chinese Postman Tour.   
-
 ```
 
-**插图**：
+插图:
 
 ```
                3
@@ -70,7 +66,6 @@ Total : 5
 
 We add edges ac, ce, bd and df to the original graph and
 create a modified graph.
-
 ```
 
 ![img038](img/9e8dcba61222ed9807835d32489344ca.png)
@@ -82,16 +77,12 @@ Optimal chinese postman route is of length : 5 + 23 =
 Chinese Postman Route :  
 a - b - d - f - d - b - f - e - c - a - c - e - a 
 This route is Euler Circuit of the modified graph. 
-
 ```
 
-**参考**：
+**参考文献:**
+[【https://en.wikipedia.org/wiki/Route_inspection_problem】](https://en.wikipedia.org/wiki/Route_inspection_problem)
+[http://www . suffolkmaths . co . uk/pages/数学系% 20 project/project/Topology % 20 和% 20 graph % 20 theory/Chinese % 20 postman % 20 problem . pdf](http://www.suffolkmaths.co.uk/pages/Maths%20Projects/Projects/Topology%20and%20Graph%20Theory/Chinese%20Postman%20Problem.pdf)
 
-[https://en.wikipedia.org/wiki/Route_inspection_problem](https://en.wikipedia.org/wiki/Route_inspection_problem)
+本文由 [**尼尚辛格**](https://practice.geeksforgeeks.org/user-profile.php?user=_code) 供稿。如果你喜欢 GeeksforGeeks 并想投稿，你也可以使用[write.geeksforgeeks.org](https://write.geeksforgeeks.org)写一篇文章或者把你的文章邮寄到 review-team@geeksforgeeks.org。看到你的文章出现在极客博客主页上，帮助其他极客。
 
-[http://www.suffolkmaths.co.uk/pages/Maths%20Projects/Projects/Topology%20and%20Graph%20Theory/Chinese%20Postman%20Problem.pdf](http://www.suffolkmaths.co.uk/pages/Maths%20Projects/Projects/Topology%20and%20Graph%20Theory/Chinese%20Postman%20Problem.pdf)
-
-本文由 [**Nishant Singh**](https://practice.geeksforgeeks.org/user-profile.php?user=_code) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
-
+如果你发现任何不正确的地方，或者你想分享更多关于上面讨论的话题的信息，请写评论。

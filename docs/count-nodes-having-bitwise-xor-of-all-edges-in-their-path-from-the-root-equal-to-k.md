@@ -1,51 +1,47 @@
-# 计数从根到其路径中所有边的所有边的按位 XOR 等于 K 的节点
+# 计算从根开始的路径中所有边的按位异或等于 K 的节点数
 
-> 原文： [https://www.geeksforgeeks.org/count-nodes-having-bitwise-xor-of-all-edges-in-their-path-from-the-root-equal-to-k/](https://www.geeksforgeeks.org/count-nodes-having-bitwise-xor-of-all-edges-in-their-path-from-the-root-equal-to-k/)
+> 原文:[https://www . geesforgeks . org/count-nodes-with-bitwise-xor-of-in-the-path-from-root-equal-k/](https://www.geeksforgeeks.org/count-nodes-having-bitwise-xor-of-all-edges-in-their-path-from-the-root-equal-to-k/)
 
-给定[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)，它由`N`个节点和两个整数`R`和`K`组成。 树的每个边都有一个与之关联的正整数，形式为 **{u，v，w}** ，其中边**（u，v）**的权重为`w`。 任务是计算从根`R`到`S`的路径中所有边的 [S 的所有边的`S`节点数 到`K`。](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/)
+给定一个由 **N** 节点和两个整数 **R** 和 **K** 组成的[二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/)。树的每条边都有一个与之关联的正整数，以 **{u，v，w}** 的形式给出，其中边 **(u，v)** 有权重 **w** 。任务是计算从根 **R** 到 **S** 的路径中所有边的[按位异或](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/)的节点数 **S** 等于 **K** 。
 
-**示例**：
+**示例:**
 
-> **输入**：R = 1，K = 0，N = 7，Edges [] [] = {{1,2,3}，{1，3，1}，{2，4，3} ，{2、5、4}，{3、6、1}，{3、7、2}}
-> **输出**：2
-> **说明**：[HTG8 给定二叉树的表示形式：
+> **输入:** R = 1，K = 0，N = 7，边[][] = {{1，2，3}，{1，3，1}，{2，4，3}，{2，5，4}，{3，6，1}，{3，7，2}}
+> **输出:** 2
+> **解释:**
+> 给定二叉树的表示:
 > 
 > ![](img/fab03d8ba91f1d13a13682aa14b48b62.png)
 > 
-> 接下来的一对节点在连接它们的路径中具有边的按位 XOR，即 K = 0：
-> 对 1：（1，4）=（3 ^ 3）= 0
-> 对 2：（1，6）= （1 ^ 1）= 0
+> 以下节点对连接它们的路径中的边进行按位异或运算，结果为 K = 0:
+> 对 1: (1，4) = (3 ^ 3) = 0
+> 对 2: (1，6) = (1 ^ 1) = 0
 > 
-> **输入**：R = 1，K = 0，N = 9，Edges [] [] = {{1,2,3}，{1，3，2}，{2，4，3} ，{2，5，4}，{3，6，1}，{3，7，2}，{6，8，3}，{6，9，7}}
-> **输出**：3
-> **解释**：
-> 给定二叉树的表示如下：
+> **输入:** R = 1，K = 0，N = 9，Edges[][] = {{1，2，3}，{1，3，2}，{2，4，3}，{2，5，4}，{3，6，1}，{3，7，2}，{6，8，3}，{6，9，7}}
+> **输出:** 3
+> **解释:**
+> 给定二叉树的表示如下:
 > 
 > ![](img/6dd83bc0b42f31d6cdbc35c5e54dfe89.png)
 > 
-> 接下来的一对节点在连接它们的路径中具有边的按位 XOR：K = 0：
-> 对 1：（1，4）=（3 ^ 3）= 0
-> 对 2：（1，8）= （2 ^ 1 ^ 3）= 0
-> 对 3：（1，7）=（2 ^ 2）= 0
+> 以下节点对连接它们的路径中的边进行按位异或运算，结果为 K = 0:
+> 对 1: (1，4) = (3 ^ 3) = 0
+> 对 2: (1，8) = (2 ^ 1 ^ 3) = 0
+> 对 3: (1，7) = (2 ^ 2) = 0
 
-**方法**：可以使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)方法解决该问题。 请按照以下步骤解决问题：
+**方法:**使用[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)方法可以解决问题。按照以下步骤解决问题:
 
-1.  用`0`初始化变量**和**和 **xor** ，以存储对数和当前边的 [xor](http://www.geeksforgeeks.org/calculate-xor-1-n/) 。
+1.  初始化变量 **ans** 和 **xor** 与 **0** 来存储边对的数量和当前的 [xor](https://www.geeksforgeeks.org/calculate-xor-1-n/) 。
+2.  [从给定的根顶点 **R** 开始，使用](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)遍历给定的树。
+3.  对于每个节点 **u** ，访问其相邻节点。
+4.  对于每条边 **{u，v}** ，如果**异或**等于 **K** ，则将 **ans** 增加 **1** 。否则，对于当前边沿 **{u，v，w}** ，更新 **xor** 为 **xor = (xor^w)** ，其中^为[位 XOR](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/) 。
+5.  遍历后，将计数器**和**中存储的值打印成对数。
 
-2.  [使用](https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/)[深度优先搜索](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)从给定的根顶点`R`遍历给定的树。
-
-3.  对于每个节点`u`，请访问其相邻节点。
-
-4.  对于每个边 **{u，v}** ，如果 **xor** 等于`K`，则将**和**递增`1`。 否则，对于当前边沿 **{u，v，w}** ，将 **xor** 更新为 **xor =（xor ^ w）**，其中^是按位的 [XOR](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/) 。
-
-5.  遍历后，将存储在计数器**和**中的值打印为对数。
-
-下面是上述方法的实现：
+下面是上述方法的实现:
 
 ## C++
 
-```cpp
-
+```
 // C++ program for the above approach
 #include <bits/stdc++.h>
 using namespace std;
@@ -114,8 +110,8 @@ int main()
 
     // Given edges
     vector<vector<int> > edges
-        = { { 1, 2, 3 }, { 1, 3, 1 }, 
-            { 2, 4, 3 }, { 2, 5, 4 }, 
+        = { { 1, 2, 3 }, { 1, 3, 1 },
+            { 2, 4, 3 }, { 2, 5, 4 },
             { 3, 6, 1 }, { 3, 7, 2 } };
 
     // Number of vertices
@@ -126,63 +122,61 @@ int main()
 
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
-// Java program for the 
+```
+// Java program for the
 // above approach
 import java.util.*;
 class GFG{
 
 static class pair
-{ 
-  int first, second; 
-  public pair(int first, 
-              int second)  
-  { 
-    this.first = first; 
-    this.second = second; 
-  }    
-} 
+{
+  int first, second;
+  public pair(int first,
+              int second) 
+  {
+    this.first = first;
+    this.second = second;
+  }   
+}
 
 // Initialize the adjacency list
 // to represent the tree
-static Vector<pair> []adj = 
+static Vector<pair> []adj =
        new Vector[100005];
 
 // Marks visited / unvisited
 // vertices
-static int visited[] = 
+static int visited[] =
        new int[100005];
 
-// Stores the required 
+// Stores the required
 // count of nodes
 static int ans = 0;
 
-// DFS to visit each 
+// DFS to visit each
 // vertex
-static void dfs(int node, 
-                int xorr, 
+static void dfs(int node,
+                int xorr,
                 int k)
 {
   // Mark the current node
   // as visited
   visited[node] = 1;
 
-  // Update the counter 
+  // Update the counter
   // xor is K
-  if (node != 1 && 
+  if (node != 1 &&
       xorr == k)
     ans++;
 
   // Visit adjacent nodes
-  for (pair x : adj[node]) 
+  for (pair x : adj[node])
   {
-    if (visited[x.first] != 1) 
+    if (visited[x.first] != 1)
     {
       // Calculate Bitwise XOR of
       // edges in the path
@@ -195,7 +189,7 @@ static void dfs(int node,
   }
 }
 
-// Function to conthe tree and
+// Function to construct the tree and
 // print required count of nodes
 static void countNodes(int N, int K,
                        int R, int[][] edges)
@@ -203,7 +197,7 @@ static void countNodes(int N, int K,
   // Add edges
   for (int i = 0; i < N - 1; i++)
   {
-    int u = edges[i][0], 
+    int u = edges[i][0],
         v = edges[i][1],
     w = edges[i][2];
     adj[u].add(new pair(v, w ));
@@ -225,11 +219,11 @@ public static void main(String[] args)
   for (int i = 0; i < adj.length; i++)
     adj[i] = new Vector<pair>();
   // Given edges
-  int[][] edges = {{1, 2, 3}, 
-                   {1, 3, 1},  
-                   {2, 4, 3}, 
-                   {2, 5, 4}, 
-                   {3, 6, 1}, 
+  int[][] edges = {{1, 2, 3},
+                   {1, 3, 1}, 
+                   {2, 4, 3},
+                   {2, 5, 4},
+                   {3, 6, 1},
                    {3, 7, 2}};
 
   // Number of vertices
@@ -241,13 +235,11 @@ public static void main(String[] args)
 }
 
 // This code is contributed by 29AjayKumar
-
 ```
 
-## Python
+## 蟒蛇 3
 
-```py
-
+```
 # Python3 program for the above approach
 
 # Initialize the adjacency list
@@ -321,65 +313,63 @@ if __name__ == '__main__':
     countNodes(N, K, R, edges)
 
 # This code is contributed by mohit kumar 29
-
 ```
 
 ## C#
 
-```cs
-
-// C# program for the 
+```
+// C# program for the
 // above approach
 using System;
 using System.Collections.Generic;
 class GFG{
 
 public class pair
-{ 
-  public int first, 
-             second; 
-  public pair(int first, 
-              int second)  
-  { 
-    this.first = first; 
-    this.second = second; 
-  }    
-} 
+{
+  public int first,
+             second;
+  public pair(int first,
+              int second) 
+  {
+    this.first = first;
+    this.second = second;
+  }   
+}
 
 // Initialize the adjacency list
 // to represent the tree
-static List<pair> []adj = 
+static List<pair> []adj =
        new List<pair>[100005];
 
 // Marks visited / unvisited
 // vertices
-static int []visited = 
+static int []visited =
        new int[100005];
 
-// Stores the required 
+// Stores the required
 // count of nodes
 static int ans = 0;
 
-// DFS to visit each 
+// DFS to visit each
 // vertex
-static void dfs(int node, 
-                int xorr, 
+static void dfs(int node,
+                int xorr,
                 int k)
 {
   // Mark the current node
   // as visited
   visited[node] = 1;
 
-  // Update the counter 
+  // Update the counter
   // xor is K
-  if (node != 1 && 
+  if (node != 1 &&
       xorr == k)
     ans++;
 
   // Visit adjacent nodes
-  foreach (pair x in adj[node]) 
+  foreach (pair x in adj[node])
   {
-    if (visited[x.first] != 1) 
+    if (visited[x.first] != 1)
     {
       // Calculate Bitwise XOR of
       // edges in the path
@@ -392,7 +382,7 @@ static void dfs(int node,
   }
 }
 
-// Function to conthe tree and
+// Function to construct the tree and
 // print required count of nodes
 static void countNodes(int N, int K,
                        int R, int[,] edges)
@@ -423,11 +413,11 @@ public static void Main(String[] args)
     adj[i] = new List<pair>();
 
   // Given edges
-  int[,] edges = {{1, 2, 3}, 
-                   {1, 3, 1},  
-                   {2, 4, 3}, 
-                   {2, 5, 4}, 
-                   {3, 6, 1}, 
+  int[,] edges = {{1, 2, 3},
+                   {1, 3, 1}, 
+                   {2, 4, 3},
+                   {2, 5, 4},
+                   {3, 6, 1},
                    {3, 7, 2}};
 
   // Number of vertices
@@ -439,26 +429,96 @@ public static void Main(String[] args)
 }
 
 // This code is contributed by 29AjayKumar
+```
 
+## java 描述语言
+
+```
+<script>
+// Javascript program for the above approach
+
+// Initialize the adjacency list
+// to represent the tree
+let adj = [];
+for (let i = 0; i < 100005; i++) {
+    adj.push([])
+}
+
+// Marks visited / unvisited vertices
+let visited = new Array(100005).fill(0);
+
+// Stores the required count of nodes
+let ans = 0;
+
+// DFS to visit each vertex
+function dfs(node, xorr, k) {
+    // Mark the current node
+    // as visited
+    visited[node] = 1;
+
+    // Update the counter xor is K
+    if (node != 1 && xorr == k)
+        ans++;
+
+    // Visit adjacent nodes
+    for (let x of adj[node]) {
+
+        if (!visited[x[0]]) {
+
+            // Calculate Bitwise XOR of
+            // edges in the path
+            let xorr1 = xorr ^ x[1];
+
+            // Recursive call to dfs function
+            dfs(x[0], xorr1, k);
+        }
+    }
+}
+
+// Function to construct the tree and
+// print required count of nodes
+function countNodes(N, K, R, edges) {
+
+    // Add edges
+    for (let i = 0; i < N - 1; i++) {
+        let u = edges[i][0], v = edges[i][1],
+            w = edges[i][2];
+        adj[u].push([v, w]);
+        adj[v].push([u, w]);
+    }
+
+    dfs(R, 0, K);
+
+    // Print answer
+    document.write(ans + "<br>");
+}
+
+// Driver Code
+
+// Given K and R
+let K = 0, R = 1;
+
+// Given edges
+let edges
+    = [[1, 2, 3], [1, 3, 1],
+       [2, 4, 3], [2, 5, 4],
+       [3, 6, 1], [3, 7, 2]];
+
+// Number of vertices
+let N = edges.length;
+
+// Function call
+countNodes(N, K, R, edges);
+
+// This code is contributed by _saurabh_jaiswal
+</script>
 ```
 
 **Output:** 
 
 ```
 2
-
 ```
 
-**时间复杂度**：`O(N)`，其中`N`是节点数。
-
-**辅助空间**：`O(N)`
-
-
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+***时间复杂度:** O(N)其中 **N** 为节点数。*
+***辅助空间:** O(N)*

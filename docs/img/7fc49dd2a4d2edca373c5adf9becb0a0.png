@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>wp-content/uploads/Graphs-300x225.jpg</Key><RequestId>FE2BFA31D590D36C</RequestId><HostId>hsFR55QeO86IolTmG8gw9G2V69OlHhkWVeKVtymLuUcpsZLGM5KVjUHTEYYqApuoCTFL6s3LbBs=</HostId></Error>
+<Error><Code>AccessDenied</Code><Message>Access Denied</Message><RequestId>WFX2K634PTT64S00</RequestId><HostId>ad5VNJMMlOk91iu4NQq3lOZhM4O09Eo6eDEqMiocUMXUgh/Ux+95ZA742DBas3gKfJ32JDw8jTM=</HostId></Error>

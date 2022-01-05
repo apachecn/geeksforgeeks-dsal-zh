@@ -1,35 +1,31 @@
-# 检查哪个玩家访问了更多数量的节点
+# 检查哪个玩家访问的节点数更多
 
-> 原文： [https://www.geeksforgeeks.org/check-which-player-visits-more-number-of-nodes/](https://www.geeksforgeeks.org/check-which-player-visits-more-number-of-nodes/)
+> 原文:[https://www . geesforgeks . org/check-哪些玩家-访问-更多-节点数/](https://www.geeksforgeeks.org/check-which-player-visits-more-number-of-nodes/)
 
-给定具有`N`个节点的树。 两个玩家`A`和`B`分别从节点`1`和节点`N`开始。`A`可以访问到`A`已经访问过的节点的所有相邻节点，但是不能访问`B`已经访问过的任何节点，对于`B`也是如此。
+给定一个节点为 **N** 的树。两个玩家 **A** 和 **B** 分别从节点 **1** 和节点 **N** 开始。 **A** 可以访问 **A** 已经访问过的节点的所有相邻节点，但是不能访问 **B** 已经访问过的任何节点，同样 **B** 也是如此。
+访问城市多的玩家获胜。如果双方都打得很好，找到获胜的玩家。
 
-访问更多城市的玩家获胜。 如果双方都发挥最佳，则找到获胜的玩家。
-
-**范例**：
+**示例:**
 
 ```
 Input: 
-
 ```
 
 ![](img/b308f25de62b94ea76db3757a5fb4984.png)
 
 ```
 Output: A wins
-
 ```
 
-**方法**：最佳解决方案是，播放器都开始访问位于连接节点`1`和节点`N`的路径中的节点。 这是因为一个玩家无法访问另一玩家已经访问过的节点，因此每个玩家都将尝试限制另一玩家可以访问的节点数。 然后，很容易计算每个玩家可以访问的节点数并找出获胜者。
+**方法:**最优解是玩家开始访问位于连接节点 **1** 和节点 **N** 的路径中的节点。这是因为一个玩家不能访问另一个玩家已经访问过的节点，所以每个玩家都会试图限制另一个玩家可以访问的节点数量。然后就很容易统计每个玩家可以访问的节点数，找出赢家。
 
-[DFS](http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 将用于找出两个节点之间的路径，并将它们一一标记为 1 或 2，`A`标记为 1，`B`标记为 2，然后将所有相邻的未访问节点标记为各自的值，然后计算`A`和`B`的节点数。
+[DFS](https://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/) 将用于找出两个节点之间的路径，并逐个标记它们，如 1 或 2，1 代表 A，2 代表 B，然后用各自的值标记所有相邻的未访问节点，然后计算 A 和 B 的节点数。
 
-下面是上述方法的实现：
+下面是上述方法的实现:
 
 ## C++
 
-```cpp
-
+```
 // C++ implementation of the above approach
 #include <bits/stdc++.h>
 using namespace std;
@@ -90,7 +86,7 @@ void mark(int i, int visited[], int c)
     else
         c_B++;
 
-    // Dfs for all its unvisted adjacent nodes
+    // Dfs for all its unvisited adjacent nodes
     for (int j = 0; j < graph[i].size(); j++)
         if (!visited[graph[i][j]])
             mark(graph[i][j], visited, c);
@@ -114,7 +110,7 @@ void findWinner()
             visited[path[i]] = 2, c_B++;
     }
 
-    // Mark all the adjacent unvisted nodes
+    // Mark all the adjacent unvisited nodes
     for (int i = 0; i < path.size(); i++)
         mark(path[i],
              visited,
@@ -153,14 +149,12 @@ int main()
 
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
-// Java implementation of the 
+```
+// Java implementation of the
 // above approach
 import java.util.*;
 class GFG{
@@ -175,30 +169,30 @@ static int found = 0, n;
 // Path and temporary vector
 static Vector<Integer> path =
        new Vector<>();
-static Vector<Integer> temp = 
+static Vector<Integer> temp =
        new Vector<>();
 
 // Count of A and B
 static int c_A = 0, c_B = 0;
 
-// Function to find the path 
+// Function to find the path
 // connecting 1 to n
-static void find(int i, 
+static void find(int i,
                  int prev)
 {
   // Push the ith node
   temp.add(i);
 
-  // If we reached our 
+  // If we reached our
   // destination
-  if (i == n) 
+  if (i == n)
   {
     path = (temp);
     return;
   }
-  for (int j = 0; 
+  for (int j = 0;
            j < graph[i].size(); j++)
-    if (graph[i].get(j) != prev) 
+    if (graph[i].get(j) != prev)
     {
       // Dfs for its children
       find(graph[i].get(j), i);
@@ -208,13 +202,13 @@ static void find(int i,
   temp.remove(temp.size() - 1);
 }
 
-// Function to mark all the 
+// Function to mark all the
 // adjacent unvisited nodes
-static void mark(int i, 
-                 int visited[], 
+static void mark(int i,
+                 int visited[],
                  int c)
 {
-  if (visited[i] > 0) 
+  if (visited[i] > 0)
   {
     // Increase the count
     if (c == 1)
@@ -231,16 +225,16 @@ static void mark(int i,
   else
     c_B++;
 
-  // Dfs for all its unvisted 
+  // Dfs for all its unvisited
   // adjacent nodes
   for (int j = 0;
            j < graph[i].size(); j++)
     if (visited[graph[i].get(j)] > 0)
-      mark(graph[i].get(j), 
+      mark(graph[i].get(j),
            visited, c);
 }
 
-// Function to find the winner 
+// Function to find the winner
 // among the players
 static void findWinner()
 {
@@ -249,12 +243,12 @@ static void findWinner()
 
   int visited[] = new int[n + 1];
 
-  for (int i = 0; 
-           i < path.size(); i++) 
+  for (int i = 0;
+           i < path.size(); i++)
   {
     // Mark nodes visited by
     // A as 1 and B as 2
-    if (i < Math.ceil(path.size() / 2.0)) 
+    if (i < Math.ceil(path.size() / 2.0))
     {
       visited[path.get(i)] = 1;
       c_A++;
@@ -266,9 +260,9 @@ static void findWinner()
     }
   }
 
-  // Mark all the adjacent 
-  // unvisted nodes
-  for (int i = 0; 
+  // Mark all the adjacent
+  // unvisited nodes
+  for (int i = 0;
            i < path.size(); i++)
     mark(path.get(i),
          visited,
@@ -288,7 +282,7 @@ public static void main(String[] args)
 {
   n = 7;
   graph = new Vector[n + 1];
-  for (int i = 0; 
+  for (int i = 0;
            i < graph.length; i++)
     graph[i] = new Vector<Integer>();
 
@@ -311,13 +305,11 @@ public static void main(String[] args)
 }
 
 // This code is contributed by Amit Katiyar
-
 ```
 
-## Python
+## 蟒蛇 3
 
-```py
-
+```
 # Python3 implementation of the above approach
 from math import ceil, floor
 
@@ -379,7 +371,7 @@ def mark(i, visited, c):
     else:
         c_B += 1
 
-    # Dfs for all its unvisted adjacent nodes
+    # Dfs for all its unvisited adjacent nodes
     for j in graph[i]:
         if (visited[j] == 0):
             mark(j, visited, c)
@@ -404,7 +396,7 @@ def findWinner():
             visited[path[i]] = 2
             c_B += 1
 
-    # Mark all the adjacent unvisted nodes
+    # Mark all the adjacent unvisited nodes
     for i in path:
         mark(i, visited, visited[i])
 
@@ -435,14 +427,12 @@ graph[4].append(1)
 findWinner()
 
 # This code is contributed by Mohit Kumar
-
 ```
 
 ## C#
 
-```cs
-
-// C# implementation of the 
+```
+// C# implementation of the
 // above approach
 using System;
 using System.Collections.Generic;
@@ -458,30 +448,30 @@ static int found = 0, n;
 // Path and temporary vector
 static List<int> path =
        new List<int>();
-static List<int> temp = 
+static List<int> temp =
        new List<int>();
 
 // Count of A and B
 static int c_A = 0, c_B = 0;
 
-// Function to find the path 
+// Function to find the path
 // connecting 1 to n
-static void find(int i, 
+static void find(int i,
                  int prev)
 {
   // Push the ith node
   temp.Add(i);
 
-  // If we reached our 
+  // If we reached our
   // destination
-  if (i == n) 
+  if (i == n)
   {
     path = (temp);
     return;
   }
-  for (int j = 0; 
+  for (int j = 0;
            j < graph[i].Count; j++)
-    if (graph[i][j] != prev) 
+    if (graph[i][j] != prev)
     {
       // Dfs for its children
       find(graph[i][j], i);
@@ -491,13 +481,13 @@ static void find(int i,
   temp.Remove(temp.Count - 1);
 }
 
-// Function to mark all the 
+// Function to mark all the
 // adjacent unvisited nodes
-static void mark(int i, 
-                 int []visited, 
+static void mark(int i,
+                 int []visited,
                  int c)
 {
-  if (visited[i] > 0) 
+  if (visited[i] > 0)
   {
     // Increase the count
     if (c == 1)
@@ -514,16 +504,16 @@ static void mark(int i,
   else
     c_B++;
 
-  // Dfs for all its unvisted 
+  // Dfs for all its unvisited
   // adjacent nodes
   for (int j = 0;
            j < graph[i].Count; j++)
     if (visited[graph[i][j]] > 0)
-      mark(graph[i][j], 
+      mark(graph[i][j],
            visited, c);
 }
 
-// Function to find the winner 
+// Function to find the winner
 // among the players
 static void findWinner()
 {
@@ -532,12 +522,12 @@ static void findWinner()
 
   int []visited = new int[n + 1];
 
-  for (int i = 0; 
-           i < path.Count; i++) 
+  for (int i = 0;
+           i < path.Count; i++)
   {
     // Mark nodes visited by
     // A as 1 and B as 2
-    if (i < Math.Ceiling(path.Count / 2.0)) 
+    if (i < Math.Ceiling(path.Count / 2.0))
     {
       visited[path[i]] = 1;
       c_A++;
@@ -549,9 +539,9 @@ static void findWinner()
     }
   }
 
-  // Mark all the adjacent 
-  // unvisted nodes
-  for (int i = 0; 
+  // Mark all the adjacent
+  // unvisited nodes
+  for (int i = 0;
            i < path.Count; i++)
     mark(path[i],
          visited,
@@ -572,7 +562,7 @@ public static void Main(String[] args)
   n = 7;
   graph = new List<int>[n + 1];
 
-  for (int i = 0; 
+  for (int i = 0;
            i < graph.Length; i++)
     graph[i] = new List<int>();
 
@@ -595,22 +585,161 @@ public static void Main(String[] args)
 }
 
 // This code is contributed by shikhasingrajput
+```
 
+## java 描述语言
+
+```
+<script>
+
+// Javascript implementation of the
+// above approach
+
+// Vector to store Tree
+let graph;
+
+// To check if there
+// is path or not
+let found = 0, n;
+
+// Path and temporary vector
+let path = [];
+let temp = [];
+
+// Count of A and B
+let c_A = 0, c_B = 0;
+
+// Function to find the path
+// connecting 1 to n
+function find(i, prev)
+{
+
+    // Push the ith node
+    temp.push(i);
+
+    // If we reached our
+    // destination
+    if (i == n)
+    {
+        path = (temp);
+        return;
+    }
+    for(let j = 0;
+            j < graph[i].length; j++)
+    {
+        if (graph[i][j] != prev)
+        {
+            // Dfs for its children
+            find(graph[i][j], i);
+        }
+    }
+    // Remove the node
+    temp.pop();
+}
+
+// Function to mark all the
+// adjacent unvisited nodes
+function mark(i, visited, c)
+{
+    if (visited[i] > 0)
+    {
+
+        // Increase the count
+        if (c == 1)
+            c_A++;
+        else
+            c_B++;
+    }
+
+    visited[i] = c;
+
+    // Increase the count
+    if (c == 1)
+        c_A++;
+    else
+        c_B++;
+
+    // Dfs for all its unvisited
+    // adjacent nodes
+    for(let j = 0;
+            j < graph[i].length; j++)
+        if (visited[graph[i][j]] > 0)
+            mark(graph[i][j], visited, c);
+}
+
+// Function to find the winner
+// among the players
+function findWinner()
+{
+
+    // Finds the path
+    find(1, -1);
+
+    let visited = new Array(n + 1);
+
+    for(let i = 0;
+            i < path.length; i++)
+    {
+
+        // Mark nodes visited by
+        // A as 1 and B as 2
+        if (i < Math.ceil(path.length / 2.0))
+        {
+            visited[path[i]] = 1;
+            c_A++;
+        }
+        else
+        {
+            visited[path[i]] = 2;
+            c_B++;
+        }
+    }
+
+    // Mark all the adjacent
+    // unvisited nodes
+    for(let i = 0;
+            i < path.length; i++)
+        mark(path[i], visited,
+             visited[path[i]]);
+
+    if (c_A > c_B)
+        document.write("A wins");
+    else if (c_A < c_B)
+        document.write("B wins");
+    else
+        document.write("Draw");
+}
+
+// Driver code
+n = 7;
+graph = new Array(n + 1);
+for(let i = 0;
+        i < graph.length; i++)
+    graph[i] = [];
+
+// Graph
+graph[6].push(4);
+graph[4].push(6);
+graph[6].push(5);
+graph[5].push(6);
+graph[5].push(7);
+graph[7].push(5);
+graph[5].push(2);
+graph[2].push(5);
+graph[3].push(4);
+graph[4].push(3);
+graph[1].push(4);
+graph[4].push(1);
+
+findWinner();
+
+// This code is contributed by patel2127
+
+</script>
 ```
 
 **Output:** 
 
 ```
 A wins
-
 ```
-
-![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
