@@ -1,47 +1,44 @@
-# 无向图
+# 无向图中所有连通分量的最大子阵和
 
-中所有连通组件的最大子数组总和
+> 原文:[https://www . geeksforgeeks . org/最大子阵列-无向图中所有连接组件之和/](https://www.geeksforgeeks.org/largest-subarray-sum-of-all-connected-components-in-undirected-graph/)
 
-> 原文： [https://www.geeksforgeeks.org/largest-subarray-sum-of-all-connected-components-in-undirected-graph/](https://www.geeksforgeeks.org/largest-subarray-sum-of-all-connected-components-in-undirected-graph/)
+给定一个具有 **V** 顶点和 **E** 边的[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)，任务是在图的所有连通分量中找到**最大连续子阵和**。
 
-给定一个[无向图](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)并具有`V`顶点和`E`边，任务是在所有连通组件中找到**最大连续子数组和** 图的
+**示例:**
 
-**范例**：
-
-> **输入**：E = 4，V = 7
+> **输入:** E = 4，V = 7
 > 
 > ![](img/38f453c3576dd1efb0541064ba42e1d3.png)
 > 
-> **输出**：
-> 所有连通组件中的最大子数组总和= 5
-> **说明**：
-> 连通组件和最大子数组总和如下：
-> [3， 2]：最大子数组总和= 3 + 2 =`5`
-> [4，-2，0]：最大子数组总和= 4
-> [-1，-5]：最大子数组总和= -1
-> 因此，最大连续子数组总和= 5
-> **输入**：E = 6，V = 10
+> **输出:**
+> 所有连通分量中最大子阵和= 5
+> **说明:**
+> 连通分量和最大子阵和如下:
+> 【3，2】:最大子阵和= 3+2 =**5**
+> 【4，-2，0】:最大子阵和= 4
+> 【-1，-5】:最大子阵和= -1
+> 所以，最大邻接子阵和= 5
+> 
+> **输入:** E = 6，V = 10
 > 
 > ![](img/0469faf5dd8ad49f7eaecef521a06ecb.png)
 > 
-> **输出**：
-> 所有连通组件之间的最大子数组总数= 9
-> **说明**：
-> 连通组件和最大子数组总数如下：
-> [-3 ]：最大子数组总和= -3
-> [-2，7，1，-1]：最大子数组总和= 7 + 1 = 8
-> [4，0，5]：最大子数组总和= 4 + 0 + 5 =`9`，
-> [-4、6]：最大子数组总和= 6
-> 因此，最大连续子数组总和= 9
+> **输出:**
+> 所有连通分量中最大子阵和= 9
+> **说明:**
+> 连通分量和最大子阵和如下:
+> 【-3】:最大子阵和=-3
+> 【-2，7，1，-1】:最大子阵和= 7+1 = 8
+> 【4，0，5】:最大子阵和= 4+0+5 =**9**
+> 【-4，6】:最大子阵和=
 
-**方法**：的想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的已连通组件，如本文的[中所述。 对于每个连通组件，将根据 **Kadane 的算法**分析数组并计算最大连续子数组和，如](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)[此](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/)文章中所述。 设置一个全局变量，该变量在每次迭代时都与局部和值进行比较以获得最终结果。
+**方法:**想法是使用[深度优先搜索遍历](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)来跟踪无向图中的连接组件，如[这篇](https://www.geeksforgeeks.org/connected-components-in-an-undirected-graph/)文章所述。对于每个连接的组件，分析阵列，并基于**卡丹算法**计算最大连续子阵列和，如本文所述。设置一个全局变量，在每次迭代时与局部和值进行比较，以获得最终结果。
 
-以下是上述方法的实现：
+下面是上述方法的实现:
 
 ## C++
 
-```cpp
-
+```
 // C++ implementation to find
 // largest subarray sum among
 // all connected components
@@ -198,23 +195,23 @@ int main()
     maxSubarraySum(graph, V, values);
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
-// Java program to implement
-// the above approach
+```
+// Java implementation to find
+// largest subarray sum among
+// all connected components
 import java.io.*;
 import java.util.*;
+
 class GFG{
 
 // Function to traverse the undirected
 // graph using the Depth first traversal
 static void depthFirst(int v, List<List<Integer>> graph,
-                       boolean[] visited, 
+                       boolean[] visited,
                        List<Integer> storeChain)
 {
   // Marking the visited
@@ -224,14 +221,14 @@ static void depthFirst(int v, List<List<Integer>> graph,
   // Store the connected chain
   storeChain.add(v);
 
-  for (int i : graph.get(v)) 
+  for (int i : graph.get(v))
   {
-    if (visited[i] == false) 
+    if (visited[i] == false)
     {
       // Recursive call to
       // the DFS algorithm
-      depthFirst(i, graph, 
-                 visited, 
+      depthFirst(i, graph,
+                 visited,
                  storeChain);
     }
   }
@@ -240,7 +237,7 @@ static void depthFirst(int v, List<List<Integer>> graph,
 // Function to return maximum
 // subarray sum of each connected
 // component using Kadane's Algorithm
-static int subarraySum(int arr[], 
+static int subarraySum(int arr[],
                        int n)
 {
   int maxSubarraySum = arr[0];
@@ -249,13 +246,13 @@ static int subarraySum(int arr[],
   // Following loop finds maximum
   // subarray sum based on Kadane's
   // algorithm
-  for (int i = 1; i < n; i++) 
+  for (int i = 1; i < n; i++)
   {
-    currentMax = Math.max(arr[i], arr[i] + 
+    currentMax = Math.max(arr[i], arr[i] +
                           currentMax);
 
     // Global maximum subarray sum
-    maxSubarraySum = Math.max(maxSubarraySum, 
+    maxSubarraySum = Math.max(maxSubarraySum,
                               currentMax);
   }
 
@@ -277,11 +274,11 @@ static void maxSubarraySum(List<List<Integer>> graph,
   // maximum subarray sum
   int maxSum = Integer.MIN_VALUE;
 
-  // Following loop invokes DFS 
+  // Following loop invokes DFS
   // algorithm
-  for (int i = 1; i <= vertices; i++) 
+  for (int i = 1; i <= vertices; i++)
   {
-    if (visited[i] == false) 
+    if (visited[i] == false)
     {
       // Variable to hold
       // temporary length
@@ -292,24 +289,24 @@ static void maxSubarraySum(List<List<Integer>> graph,
       int tempSum;
 
       // Container to store each chain
-      List<Integer> storeChain = 
+      List<Integer> storeChain =
            new ArrayList<Integer>();
 
       // DFS algorithm
-      depthFirst(i, graph, 
+      depthFirst(i, graph,
                  visited, storeChain);
 
-      // Variable to hold each 
+      // Variable to hold each
       // chain size
       sizeChain = storeChain.size();
 
       // Container to store values
       // of vertices of individual chains
-      int[] chainValues = 
+      int[] chainValues =
             new int[sizeChain + 1];
 
       // Storing the values of each chain
-      for (int j = 0; j < sizeChain; j++) 
+      for (int j = 0; j < sizeChain; j++)
       {
         int temp = values.get(storeChain.get(j) - 1);
         chainValues[j] = temp;
@@ -317,12 +314,12 @@ static void maxSubarraySum(List<List<Integer>> graph,
 
       // Function call to find maximum
       // subarray sum of current connection
-      tempSum = subarraySum(chainValues, 
+      tempSum = subarraySum(chainValues,
                             sizeChain);
 
       // Conditional to store current
       // maximum subarray sum
-      if (tempSum > maxSum) 
+      if (tempSum > maxSum)
       {
         maxSum = tempSum;
       }
@@ -340,7 +337,7 @@ public static void main(String[] args)
 {
   // Initializing graph in the
   // form of adjacency list
-  List<List<Integer>> graph = 
+  List<List<Integer>> graph =
        new ArrayList();
 
   for (int i = 0; i < 1001; i++)
@@ -352,7 +349,7 @@ public static void main(String[] args)
 
   // Assigning the values for each
   // vertex of the undirected graph
-  List<Integer> values = 
+  List<Integer> values =
        new ArrayList<Integer>();
 
   values.add(3);
@@ -379,24 +376,22 @@ public static void main(String[] args)
 }
 
 // This code is contributed by jithin
-
 ```
 
-## Python
+## 蟒蛇 3
 
-```py
-
+```
 # Python3 implementation to find
 # largest subarray sum among
 # all connected components
 import sys
 
-# Function to traverse 
-# the undirected graph 
-# using the Depth first 
+# Function to traverse
+# the undirected graph
+# using the Depth first
 # traversal
-def depthFirst(v, graph, 
-               visited, 
+def depthFirst(v, graph,
+               visited,
                storeChain):
 
     # Marking the visited
@@ -412,8 +407,8 @@ def depthFirst(v, graph,
             # Recursive call to
             # the DFS algorithm
             depthFirst(i, graph,
-                       visited, 
-                       storeChain);        
+                       visited,
+                       storeChain);       
 
 # Function to return maximum
 # subarray sum of each connected
@@ -433,15 +428,15 @@ def subarraySum(arr, n):
 
         # Global maximum subarray sum
         maxSubarraySum = max(maxSubarraySum,
-                             currentMax);    
+                             currentMax);   
 
     # Returning the sum
     return maxSubarraySum;
 
-# Function to find the 
-# maximum subarray sum 
+# Function to find the
+# maximum subarray sum
 # among all connected components
-def maxSubarraySum(graph, 
+def maxSubarraySum(graph,
                    vertices, values):
 
     # Initializing boolean array
@@ -452,30 +447,30 @@ def maxSubarraySum(graph,
     # maximum subarray sum
     maxSum = -sys.maxsize;
 
-    # Following loop invokes 
+    # Following loop invokes
     # DFS algorithm
-    for i in range(1, vertices + 1):    
+    for i in range(1, vertices + 1):   
         if (visited[i] == False):
 
             # Variable to hold
             # temporary length
             sizeChain = 0
 
-            # Variable to hold 
-            # temporary maximum 
+            # Variable to hold
+            # temporary maximum
             # subarray sum values
             tempSum = 0;
 
-            # Container to store 
+            # Container to store
             # each chain
             storeChain = [];
 
             # DFS algorithm
-            depthFirst(i, graph, 
-                       visited, 
+            depthFirst(i, graph,
+                       visited,
                        storeChain);
 
-            # Variable to hold each 
+            # Variable to hold each
             # chain size
             sizeChain = len(storeChain)
 
@@ -484,9 +479,9 @@ def maxSubarraySum(graph,
             chainValues = [0 for i in range(sizeChain + 1)];
 
             # Storing the values of each chain
-            for i in range(sizeChain):        
+            for i in range(sizeChain):       
                 temp = values[storeChain[i] - 1];
-                chainValues[i] = temp;            
+                chainValues[i] = temp;           
 
             # Function call to find maximum
             # subarray sum of current connection
@@ -496,12 +491,12 @@ def maxSubarraySum(graph,
             # Conditional to store current
             # maximum subarray sum
             if (tempSum > maxSum):
-                maxSum = tempSum;            
+                maxSum = tempSum;           
 
     # Printing global maximum subarray sum
-    print("Maximum subarray sum among all ", 
+    print("Maximum subarray sum among all ",
            end = '');
-    print("connected components = ", 
+    print("connected components = ",
            end = '')
     print(maxSum)
 
@@ -516,8 +511,8 @@ if __name__=="__main__":
     E = 4;
     V = 7;
 
-    # Assigning the values 
-    # for each vertex of the 
+    # Assigning the values
+    # for each vertex of the
     # undirected graph
     values = [];
     values.append(3);
@@ -528,7 +523,7 @@ if __name__=="__main__":
     values.append(-1);
     values.append(-5);
 
-    # Constructing the 
+    # Constructing the
     # undirected graph
     graph[1].append(2);
     graph[2].append(1);
@@ -542,25 +537,367 @@ if __name__=="__main__":
     maxSubarraySum(graph, V, values);
 
 # This code is contributed by rutvik_56
-
 ```
 
-输出：
+## C#
+
+```
+// C# implementation to find
+// largest subarray sum among
+// all connected components
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+class GFG{
+
+// Function to traverse the undirected
+// graph using the Depth first traversal
+static void depthFirst(int v, List<List<int>> graph,
+                       bool[] visited,
+                       List<int> storeChain)
+{
+
+  // Marking the visited
+  // vertex as true
+  visited[v] = true;
+
+  // Store the connected chain
+  storeChain.Add(v);
+
+  foreach (int i in graph[v])
+  {
+    if (visited[i] == false)
+    {
+
+      // Recursive call to
+      // the DFS algorithm
+      depthFirst(i, graph,
+                 visited,
+                 storeChain);
+    }
+  }
+}
+
+// Function to return maximum
+// subarray sum of each connected
+// component using Kadane's Algorithm
+static int subarraySum(int []arr,
+                       int n)
+{
+  int maxSubarraySum = arr[0];
+  int currentMax = arr[0];
+
+  // Following loop finds maximum
+  // subarray sum based on Kadane's
+  // algorithm
+  for(int i = 1; i < n; i++)
+  {
+    currentMax = Math.Max(arr[i], arr[i] +
+                          currentMax);
+
+    // Global maximum subarray sum
+    maxSubarraySum = Math.Max(maxSubarraySum,
+                              currentMax);
+  }
+
+  // Returning the sum
+  return maxSubarraySum;
+}
+
+// Function to find the maximum subarray
+// sum among all connected components
+static void maxSubarraySum(List<List<int>> graph,
+                           int vertices,
+                           List<int> values)
+{
+
+  // Initializing boolean array
+  // to mark visited vertices
+  bool[] visited = new bool[1001];
+
+  // maxSum stores the
+  // maximum subarray sum
+  int maxSum = -1000000;
+
+  // Following loop invokes DFS
+  // algorithm
+  for(int i = 1; i <= vertices; i++)
+  {
+    if (visited[i] == false)
+    {
+
+      // Variable to hold
+      // temporary length
+      int sizeChain;
+
+      // Variable to hold temporary
+      // maximum subarray sum values
+      int tempSum;
+
+      // Container to store each chain
+      List<int> storeChain = new List<int>();
+
+      // DFS algorithm
+      depthFirst(i, graph,
+                 visited, storeChain);
+
+      // Variable to hold each
+      // chain size
+      sizeChain = storeChain.Count;
+
+      // Container to store values
+      // of vertices of individual chains
+      int[] chainValues = new int[sizeChain + 1];
+
+      // Storing the values of each chain
+      for(int j = 0; j < sizeChain; j++)
+      {
+        int temp = values[storeChain[j] - 1];
+        chainValues[j] = temp;
+      }
+
+      // Function call to find maximum
+      // subarray sum of current connection
+      tempSum = subarraySum(chainValues,
+                            sizeChain);
+
+      // Conditional to store current
+      // maximum subarray sum
+      if (tempSum > maxSum)
+      {
+        maxSum = tempSum;
+      }
+    }
+  }
+
+  // Printing global maximum subarray sum
+  Console.Write("Maximum subarray sum among all ");
+  Console.Write("connected components = ");
+  Console.Write(maxSum);
+}
+
+// Driver code
+public static void Main(string[] args)
+{
+
+  // Initializing graph in the
+  // form of adjacency list
+  List<List<int>> graph = new List<List<int>>();
+
+  for(int i = 0; i < 1001; i++)
+    graph.Add(new List<int>());
+
+  // Defining the number
+  // of edges and vertices
+  int V = 7;
+
+  // Assigning the values for each
+  // vertex of the undirected graph
+  List<int> values = new List<int>();
+
+  values.Add(3);
+  values.Add(2);
+  values.Add(4);
+  values.Add(-2);
+  values.Add(0);
+  values.Add(-1);
+  values.Add(-5);
+
+  // Constructing the undirected
+  // graph
+  graph[1].Add(2);
+  graph[2].Add(1);
+  graph[3].Add(4);
+  graph[4].Add(3);
+  graph[4].Add(5);
+  graph[5].Add(4);
+  graph[6].Add(7);
+  graph[7].Add(6);
+
+  maxSubarraySum(graph, V, values);
+}
+}
+
+// This code is contributed by pratham76
+```
+
+## java 描述语言
+
+```
+<script>
+    // Javascript implementation to find
+    // largest subarray sum among
+    // all connected components
+
+    // Function to traverse the undirected
+    // graph using the Depth first traversal
+    function depthFirst(v, graph, visited, storeChain)
+    {
+
+      // Marking the visited
+      // vertex as true
+      visited[v] = true;
+
+      // Store the connected chain
+      storeChain.push(v);
+
+      for(let i = 0; i < graph[v].length; i++)
+      {
+        if (visited[graph[v][i]] == false)
+        {
+
+          // Recursive call to
+          // the DFS algorithm
+          depthFirst(graph[v][i], graph,
+                     visited,
+                     storeChain);
+        }
+      }
+    }
+
+    // Function to return maximum
+    // subarray sum of each connected
+    // component using Kadane's Algorithm
+    function subarraySum(arr, n)
+    {
+      let maxSubarraySum = arr[0];
+      let currentMax = arr[0];
+
+      // Following loop finds maximum
+      // subarray sum based on Kadane's
+      // algorithm
+      for(let i = 1; i < n; i++)
+      {
+        currentMax = Math.max(arr[i], arr[i] +
+                              currentMax);
+
+        // Global maximum subarray sum
+        maxSubarraySum = Math.max(maxSubarraySum,
+                                  currentMax);
+      }
+
+      // Returning the sum
+      return maxSubarraySum;
+    }
+
+    // Function to find the maximum subarray
+    // sum among all connected components
+    function maxSubarraySum(graph, vertices, values)
+    {
+
+      // Initializing boolean array
+      // to mark visited vertices
+      let visited = new Array(1001);
+      visited.fill(false);
+
+      // maxSum stores the
+      // maximum subarray sum
+      let maxSum = -1000000;
+
+      // Following loop invokes DFS
+      // algorithm
+      for(let i = 1; i <= vertices; i++)
+      {
+        if (visited[i] == false)
+        {
+
+          // Variable to hold
+          // temporary length
+          let sizeChain;
+
+          // Variable to hold temporary
+          // maximum subarray sum values
+          let tempSum;
+
+          // Container to store each chain
+          let storeChain = [];
+
+          // DFS algorithm
+          depthFirst(i, graph,
+                     visited, storeChain);
+
+          // Variable to hold each
+          // chain size
+          sizeChain = storeChain.length;
+
+          // Container to store values
+          // of vertices of individual chains
+          let chainValues = new Array(sizeChain + 1);
+
+          // Storing the values of each chain
+          for(let j = 0; j < sizeChain; j++)
+          {
+            let temp = values[storeChain[j] - 1];
+            chainValues[j] = temp;
+          }
+
+          // Function call to find maximum
+          // subarray sum of current connection
+          tempSum = subarraySum(chainValues,
+                                sizeChain);
+
+          // Conditional to store current
+          // maximum subarray sum
+          if (tempSum > maxSum)
+          {
+            maxSum = tempSum;
+          }
+        }
+      }
+
+      // Printing global maximum subarray sum
+      document.write("Maximum subarray sum among all ");
+      document.write("connected components = ");
+      document.write(maxSum);
+    }
+
+    // Initializing graph in the
+    // form of adjacency list
+    let graph = [];
+
+    for(let i = 0; i < 1001; i++)
+      graph.push([]);
+
+    // Defining the number
+    // of edges and vertices
+    let V = 7;
+
+    // Assigning the values for each
+    // vertex of the undirected graph
+    let values = [];
+
+    values.push(3);
+    values.push(2);
+    values.push(4);
+    values.push(-2);
+    values.push(0);
+    values.push(-1);
+    values.push(-5);
+
+    // Constructing the undirected
+    // graph
+    graph[1].push(2);
+    graph[2].push(1);
+    graph[3].push(4);
+    graph[4].push(3);
+    graph[4].push(5);
+    graph[5].push(4);
+    graph[6].push(7);
+    graph[7].push(6);
+
+    maxSubarraySum(graph, V, values);
+
+// This code is contributed by suresh07.
+</script>
+```
+
+**Output**
 
 ```
 Maximum subarray sum among all connected components = 5
 ```
 
-**时间复杂度**：*O（V <sup>2</sup> ）*。
-
-DFS 算法需要`O(V + E)`时间来运行，其中 V，E 是顶点 和无向图的边。 此外，在每次迭代中都会找到最大的连续子数组总和，这需要额外的`O(V)`才能根据 Kadane 的算法计算并返回结果。 因此，整体复杂度为 **O（V <sup>2</sup> ）**
-
-![competitive-programming-img](img/5211864e7e7a28eeeb039fa5d6073a24.png)
-
-* * *
-
-* * *
-
-如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](https://contribute.geeksforgeeks.org/) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果您发现任何不正确的地方，请单击下面的“改进文章”按钮，以改进本文。
+**时间复杂度:***O(V<sup>2</sup>)*
+DFS 算法运行需要 O(V + E)时间，其中 V、E 是无向图的顶点和边。此外，在每次迭代中找到最大连续子阵列和，这需要额外的 O(V)来计算并基于卡丹算法返回结果。因此，整体复杂度为 **O(V <sup>2</sup> )**
+**辅助空间:** O(V)

@@ -1,64 +1,182 @@
-# 查找矩阵
+# 查找矩阵中两个单元格之间是否有路径
 
-中两个单元之间是否存在路径
+> 原文:[https://www . geesforgeks . org/find-when-path-two-cells-matrix/](https://www.geeksforgeeks.org/find-whether-path-two-cells-matrix/)
 
-> 原文： [https://www.geeksforgeeks.org/find-whether-path-two-cells-matrix/](https://www.geeksforgeeks.org/find-whether-path-two-cells-matrix/)
+给定 N×N 矩阵，用 1，0，2，3 填充。查找从源到目的地是否有可能的路径，仅遍历空白单元格。你可以上下左右移动。
 
-给定 N X N 矩阵，其中用 1，0，2，3 填充。查找是否存在从源到目标的路径，仅遍历空白单元格。 您可以上下左右移动。
+*   单元格 **1** 的值表示来源。
+*   单元格 **2** 的值表示目的地。
+*   单元格 **3** 的值表示空白单元格。
+*   单元格 **0** 的值表示空白墙。
 
-*   单元格`1`的值表示源。
+注意:只有一个源和一个目标(接收器)。
 
-*   单元格`2`的值表示目标。
+**示例:**
 
-*   单元格`3`的值表示空白单元格。
-
-*   单元格`0`的值表示空白墙。
-
-注意：只有一个来源和一个目的地（接收器）。
-
-**示例**：[
-
-> **输入**：
-> M [3] [3] = {{0，3，2}，
-> {3，3，0}，
-> {1，3，0}} ;
-> **输出**：`Yes`
-> **说明**：
+> **输入:**
+> M[3][3] = {{ 0，3，2 }，
+> { 3，3，0 }，
+> { 1，3，0 } }；
+> **输出:**是
+> **说明:**
 > 
 > ![](img/ee04296cbd643e6545a058ca6b6c0282.png)
 > 
-> **输入**：，
-> M [4] [4] = {{0，3，1，0}，
-> {3，0，3，3}，
-> {2，3 ，0，3}，
-> {0，3，3，3}};
-> **输出**：`Yes`
-> **说明**：
+> **输入:**
+> M[4][4] = {{ 0，3，1，0 }，
+> { 3，0，3，3 }，
+> { 2，3，0，3 }，
+> { 0，3，3，3 } }；
+> **输出:**是
+> **说明:**
 > 
 > ![](img/3d697308a05396dfd784266e5bc93381.png)
 
-提问人： [Adob​​e 访谈](https://www.geeksforgeeks.org/adobe-interview-experience-set-41-software-engineer/) [
+问于: [Adobe 面试](https://www.geeksforgeeks.org/adobe-interview-experience-set-41-software-engineer/)
 
-**<u>简单解决方案：</u>** 递归。
+**<u>简单解法:</u>** 递归。
+**方法:**在每个矩阵中找到单元格的源索引，然后递归地在矩阵中找到从源索引到目的地的路径。该算法包括递归查找所有路径，直到找到到达目的地的最终路径。
 
-**方法**：在每个矩阵中找到单元的源索引，然后递归地找到从源索引到矩阵中目标的路径。 该算法涉及递归地找到所有路径，直到找到到达目的地的最终路径。
+**算法:**
 
-**算法**：
+1.  遍历矩阵，找到矩阵的起始索引。
+2.  创建一个接受索引和访问矩阵的递归函数。
+3.  标记当前单元格，并检查当前单元格是否是目标单元格。如果当前单元格是目标单元格，则返回 true。
+4.  为所有相邻的空单元格和未访问的单元格调用递归函数。
+5.  如果任何递归函数返回 true，则取消单元格标记并返回 true，否则取消单元格标记并返回 false。
 
-1.  遍历矩阵并找到矩阵的起始索引。
+## C++
 
-2.  创建一个采用索引和访问矩阵的递归函数。
+```
+// C++ program to find path between two
+// cell in matrix
+#include <iostream>
+using namespace std;
+#define N 4
 
-3.  标记当前单元格，然后检查当前单元格是否为目的地。 如果当前单元格是目的地，则返回 true。
+// Method for checking boundaries
+bool isSafe(int i, int j, int matrix[][N])
+{
+  if (i >= 0 && i < N && j >= 0 && j < N)
+    return true;
+  return false;
+}
 
-4.  为所有相邻的空白和未访问单元格调用递归函数。
+// Returns true if there is a
+// path from a source (a
+// cell with value 1) to a
+// destination (a cell with
+// value 2)
+bool isPath(int matrix[][N], int i, int j,
+            bool visited[][N])
+{
+  // Checking the boundaries, walls and
+  // whether the cell is unvisited
+  if (isSafe(i, j, matrix) && matrix[i][j] != 0
+      && !visited[i][j])
+  {
+    // Make the cell visited
+    visited[i][j] = true;
 
-5.  如果任何递归函数返回 true，则取消标记该单元格并返回 true，否则取消标记该单元格并返回 false。
+    // if the cell is the required
+    // destination then return true
+    if (matrix[i][j] == 2)
+      return true;
 
-## Java
+    // traverse up
+    bool up = isPath(matrix, i - 1, j, visited);
 
-```java
+    // if path is found in up
+    // direction return true
+    if (up)
+      return true;
 
+    // traverse left
+    bool left = isPath(matrix, i, j - 1, visited);
+
+    // if path is found in left
+    // direction return true
+    if (left)
+      return true;
+
+    // traverse down
+    bool down = isPath(matrix, i + 1, j, visited);
+
+    // if path is found in down
+    // direction return true
+    if (down)
+      return true;
+
+    // traverse right
+    bool right = isPath(matrix, i, j + 1, visited);
+
+    // if path is found in right
+    // direction return true
+    if (right)
+      return true;
+  }
+
+  // no path has been found
+  return false;
+}
+
+// Method for finding and printing
+// whether the path exists or not
+void isPath(int matrix[][N])
+{
+
+  // Defining visited array to keep
+  // track of already visited indexes
+  bool visited[N][N];
+
+  // Flag to indicate whether the
+  // path exists or not
+  bool flag = false;
+  for (int i = 0; i < N; i++)
+  {
+    for (int j = 0; j < N; j++)
+    {
+      // if matrix[i][j] is source
+      // and it is not visited
+      if (matrix[i][j] == 1 && !visited[i][j])
+
+        // Starting from i, j and
+        // then finding the path
+        if (isPath(matrix, i, j, visited))
+        {
+
+          // if path exists
+          flag = true;
+          break;
+        }
+    }
+  }
+  if (flag)
+    cout << "YES";
+  else
+    cout << "NO";
+}
+
+// Driver program to
+// check above function
+int main()
+{
+  int matrix[N][N] = { { 0, 3, 0, 1 },
+                      { 3, 0, 3, 3 },
+                      { 2, 3, 3, 3 },
+                      { 0, 3, 3, 3 } };
+
+  // calling isPath method
+  isPath(matrix);
+  return 0;
+}
+
+// This code is contributed by sudhanshugupta2019a.
+```
+
+## Java 语言(一种计算机语言，尤用于创建网站)
+
+```
 // Java program to find path between two
 // cell in matrix
 class Path {
@@ -101,7 +219,7 @@ class Path {
             System.out.println("NO");
     }
 
-    // Method for checking boundries
+    // Method for checking boundaries
     public static boolean isSafe(
         int i, int j,
         int matrix[][])
@@ -126,7 +244,7 @@ class Path {
         boolean visited[][])
     {
 
-        // Checking the boundries, walls and
+        // Checking the boundaries, walls and
         // whether the cell is unvisited
         if (
             isSafe(i, j, matrix)
@@ -200,14 +318,12 @@ class Path {
 }
 
 /* This code is contributed by Madhu Priya */
-
 ```
 
-## Python
+## 蟒蛇 3
 
-```py
-
-# Python3 program to find 
+```
+# Python3 program to find
 # path between two cell in matrix
 
 # Method for finding and printing
@@ -233,7 +349,7 @@ def isPath(matrix, n):
 
                 # Starting from i, j and
                 # then finding the path
-                if (checkPath(matrix, i, 
+                if (checkPath(matrix, i,
                               j, visited)):
 
                     # If path exists
@@ -244,7 +360,7 @@ def isPath(matrix, n):
     else:
         print("NO")
 
-# Method for checking boundries
+# Method for checking boundaries
 def isSafe(i, j, matrix):
 
     if (i >= 0 and i < len(matrix) and
@@ -260,7 +376,7 @@ def isSafe(i, j, matrix):
 def checkPath(matrix, i, j,
               visited):
 
-    # Checking the boundries, walls and
+    # Checking the boundaries, walls and
     # whether the cell is unvisited
     if (isSafe(i, j, matrix) and
         matrix[i][j] != 0 and not
@@ -284,7 +400,7 @@ def checkPath(matrix, i, j,
            return True
 
         # Traverse left
-        left = checkPath(matrix, i, 
+        left = checkPath(matrix, i,
                          j - 1, visited)
 
         # If path is found in left
@@ -293,7 +409,7 @@ def checkPath(matrix, i, j,
            return True
 
         # Traverse down
-        down = checkPath(matrix, i + 1, 
+        down = checkPath(matrix, i + 1,
                          j, visited)
 
         # If path is found in down
@@ -302,7 +418,7 @@ def checkPath(matrix, i, j,
            return True
 
         # Traverse right
-        right = checkPath(matrix, i, 
+        right = checkPath(matrix, i,
                           j + 1, visited)
 
         # If path is found in right
@@ -325,13 +441,11 @@ if __name__ == "__main__":
     isPath(matrix, 4)
 
 # This code is contributed by Chitranayal
-
 ```
 
 ## C#
 
-```cs
-
+```
 // C# program to find path between two
 // cell in matrix
 using System;
@@ -363,7 +477,7 @@ static void isPath(int[,] matrix, int n)
 
                 // Starting from i, j and
                 // then finding the path
-                if (isPath(matrix, i, j, 
+                if (isPath(matrix, i, j,
                            visited))
                 {
 
@@ -379,11 +493,11 @@ static void isPath(int[,] matrix, int n)
         Console.WriteLine("NO");
 }
 
-// Method for checking boundries
+// Method for checking boundaries
 public static bool isSafe(int i, int j,
                           int[,] matrix)
 {
-    if (i >= 0 && i < matrix.GetLength(0) && 
+    if (i >= 0 && i < matrix.GetLength(0) &&
         j >= 0 && j < matrix.GetLength(1))
         return true;
 
@@ -393,15 +507,15 @@ public static bool isSafe(int i, int j,
 // Returns true if there is a path from
 // a source (a cell with value 1) to a
 // destination (a cell with value 2)
-public static bool isPath(int[,] matrix, int i, 
+public static bool isPath(int[,] matrix, int i,
                           int j, bool[,] visited)
 {
 
-    // Checking the boundries, walls and
+    // Checking the boundaries, walls and
     // whether the cell is unvisited
-    if (isSafe(i, j, matrix) && 
+    if (isSafe(i, j, matrix) &&
            matrix[i, j] != 0 &&
-         !visited[i, j]) 
+         !visited[i, j])
     {
 
         // Make the cell visited
@@ -422,7 +536,7 @@ public static bool isPath(int[,] matrix, int i,
             return true;
 
         // Traverse left
-        bool left = isPath(matrix, i, 
+        bool left = isPath(matrix, i,
                            j - 1, visited);
 
         // If path is found in left
@@ -453,7 +567,7 @@ public static bool isPath(int[,] matrix, int i,
     return false;
 }
 
-// Driver code   
+// Driver code  
 static void Main()
 {
     int[,] matrix = { { 0, 3, 0, 1 },
@@ -467,486 +581,154 @@ static void Main()
 }
 
 // This code is contributed by divyeshrabadiya07
-
 ```
 
-**Output:** 
+## java 描述语言
 
 ```
-YES
+<script>
 
-```
-
-**复杂度分析**：
-
-*   **时间复杂度**：O（4 <sup>n * m</sup> ）。
-
-    对于每个单元，可以有 4 个相邻的未访问单元，因此时间复杂度为 O（4 <sup>n * m</sup> ）。
-
-*   **空间复杂度**：`O(N * M)`。
-
-    需要空间来存储访问的数组。
-
-**<u>有效解决方案：</u>** 图。
-
-**方法**：的想法是使用[广度优先搜索](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)。 将每个单元视为一个节点，并将任何两个相邻单元之间的每个边界作为一条边。 因此，Node 的总数为 N *N。
-
-因此，想法是从起始单元开始进行广度优先搜索，直到找到结束单元。
-
-**算法**：
-
-1.  创建一个具有 N * N 个节点（顶点）的空图，将所有节点推入图中，并记下源顶点和宿顶点。
-
-2.  现在在图上应用 BFS，创建一个队列并将源节点插入该队列
-
-3.  运行循环，直到队列大小大于 0
-
-4.  删除队列的最前面的节点，如果目标返回 true，则检查该节点是否为目标。 标记节点
-
-5.  检查所有相邻的单元格（如果未访问），并将它们空白插入队列。
-
-6.  如果未到达目的地，则返回 true。
-
-## C++
-
-```cpp
-
-// C++ program to find path
-// between two cell in matrix
-#include <bits/stdc++.h>
-using namespace std;
-#define N 4
-
-class Graph {
-    int V;
-    list<int>* adj;
-
-public:
-    Graph(int V)
-    {
-        this->V = V;
-        adj = new list<int>[V];
-    }
-    void addEdge(int s, int d);
-    bool BFS(int s, int d);
-};
-
-// add edge to graph
-void Graph::addEdge(int s, int d)
-{
-    adj[s].push_back(d);
-}
-
-// BFS function to find path
-// from source to sink
-bool Graph::BFS(int s, int d)
-{
-    // Base case
-    if (s == d)
-        return true;
-
-    // Mark all the vertices as not visited
-    bool* visited = new bool[V];
-    for (int i = 0; i < V; i++)
-        visited[i] = false;
-
-    // Create a queue for BFS
-    list<int> queue;
-
-    // Mark the current node as visited and
-    // enqueue it
-    visited[s] = true;
-    queue.push_back(s);
-
-    // it will be used to get all adjacent
-    // vertices of a vertex
-    list<int>::iterator i;
-
-    while (!queue.empty()) {
-        // Dequeue a vertex from queue
-        s = queue.front();
-        queue.pop_front();
-
-        // Get all adjacent vertices of the
-        // dequeued vertex s. If a adjacent has
-        // not been visited, then mark it visited
-        // and enqueue it
-        for (
-            i = adj[s].begin(); i != adj[s].end(); ++i) {
-            // If this adjacent node is the
-            // destination node, then return true
-            if (*i == d)
-                return true;
-
-            // Else, continue to do BFS
-            if (!visited[*i]) {
-                visited[*i] = true;
-                queue.push_back(*i);
-            }
-        }
-    }
-
-    // If BFS is complete without visiting d
-    return false;
-}
-
-bool isSafe(int i, int j, int M[][N])
-{
-    if (
-        (i < 0 || i >= N)
-        || (j < 0 || j >= N)
-        || M[i][j] == 0)
-        return false;
-    return true;
-}
-
-// Returns true if there is
-// a path from a source (a
-// cell with value 1) to a
-// destination (a cell with
-// value 2)
-bool findPath(int M[][N])
-{
-    // source and destination
-    int s, d;
-    int V = N * N + 2;
-    Graph g(V);
-
-    // create graph with n*n node
-    // each cell consider as node
-    // Number of current vertex
-    int k = 1;
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) {
-            if (M[i][j] != 0) {
-                // connect all 4 adjacent
-                // cell to current cell
-                if (isSafe(i, j + 1, M))
-                    g.addEdge(k, k + 1);
-                if (isSafe(i, j - 1, M))
-                    g.addEdge(k, k - 1);
-                if (i < N - 1 && isSafe(i + 1, j, M))
-                    g.addEdge(k, k + N);
-                if (i > 0 && isSafe(i - 1, j, M))
-                    g.addEdge(k, k - N);
-            }
-
-            // Source index
-            if (M[i][j] == 1)
-                s = k;
-
-            // Destination index
-            if (M[i][j] == 2)
-                d = k;
-            k++;
-        }
-    }
-
-    // find path Using BFS
-    return g.BFS(s, d);
-}
-
-// driver program to check
-// above function
-int main()
-{
-    int M[N][N] = { { 0, 3, 0, 1 },
-                    { 3, 0, 3, 3 },
-                    { 2, 3, 3, 3 },
-                    { 0, 3, 3, 3 } };
-
-    (findPath(M) == true) ? cout << "Yes" : cout << "No" << endl;
-
-    return 0;
-}
-
-```
-
-## Java
-
-```java
-
-// Java program to find path between two
+// JavaScript program to find path between two
 // cell in matrix
-import java.util.*;
 
-class Graph {
-    int V;
-    List<List<Integer> > adj;
+    // Method for finding and printing
+    // whether the path exists or not
+function isPath(matrix,n)
+{
 
-    Graph(int V)
-    {
-        this.V = V;
-        adj = new ArrayList<>(V);
-        for (int i = 0; i < V; i++) {
-            adj.add(i, new ArrayList<>());
-        }
-    }
-
-    // add edge to graph
-    void addEdge(int s, int d)
-    {
-        adj.get(s).add(d);
-    }
-
-    // BFS function to find path
-    // from source to sink
-    boolean BFS(int s, int d)
-    {
-        // Base case
-        if (s == d)
-            return true;
-
-        // Mark all the vertices as not visited
-        boolean[] visited = new boolean[V];
-
-        // Create a queue for BFS
-        Queue<Integer> queue
-            = new LinkedList<>();
-
-        // Mark the current node as visited and
-        // enqueue it
-        visited[s] = true;
-        queue.offer(s);
-
-        // it will be used to get all adjacent
-        // vertices of a vertex
-        List<Integer> edges;
-
-        while (!queue.isEmpty()) {
-            // Dequeue a vertex from queue
-            s = queue.poll();
-
-            // Get all adjacent vertices of the
-            // dequeued vertex s. If a adjacent has
-            // not been visited, then mark it visited
-            // and enqueue it
-            edges = adj.get(s);
-            for (int curr : edges) {
-                // If this adjacent node is the
-                // destination node, then return true
-                if (curr == d)
-                    return true;
-
-                // Else, continue to do BFS
-                if (!visited[curr]) {
-                    visited[curr] = true;
-                    queue.offer(curr);
+    // Defining visited array to keep
+        // track of already visited indexes
+        let visited = new Array(n);
+            for(let i=0;i<n;i++)
+            {
+                visited[i]=new Array(n);
+                for(let j=0;j<n;j++)
+                {
+                    visited[i][j]=false;
                 }
             }
+
+        // Flag to indicate whether the
+        // path exists or not
+        let flag = false;
+
+        for (let i = 0; i < n; i++) {
+            for (let j = 0; j < n; j++) {
+                // if matrix[i][j] is source
+                // and it is not visited
+                if (
+                    matrix[i][j] == 1
+                    && !visited[i][j])
+
+                    // Starting from i, j and
+                    // then finding the path
+                    if (checkPath(
+                            matrix, i, j, visited)) {
+                        // if path exists
+                        flag = true;
+                        break;
+                    }
+            }
         }
+        if (flag)
+            document.write("YES<br>");
+        else
+            document.write("NO<br>");
+}
 
-        // If BFS is complete without visiting d
+// Method for checking boundaries
+function isSafe(i,j,matrix)
+{
+    if (
+            i >= 0 && i < matrix.length
+            && j >= 0
+            && j < matrix[0].length)
+            return true;
         return false;
-    }
+}
 
-    static boolean isSafe(
-        int i, int j, int[][] M)
-    {
-        int N = M.length;
-        if (
-            (i < 0 || i >= N)
-            || (j < 0 || j >= N)
-            || M[i][j] == 0)
-            return false;
-        return true;
-    }
-
-    // Returns true if there is a
+// Returns true if there is a
     // path from a source (a
     // cell with value 1) to a
     // destination (a cell with
     // value 2)
-    static boolean findPath(int[][] M)
-    {
-        // Source and destination
-        int s = -1, d = -1;
-        int N = M.length;
-        int V = N * N + 2;
-        Graph g = new Graph(V);
+function checkPath(matrix,i,j,visited)
+{
+    // Checking the boundaries, walls and
+        // whether the cell is unvisited
+        if (
+            isSafe(i, j, matrix)
+            && matrix[i][j] != 0
+            && !visited[i][j]) {
+            // Make the cell visited
+            visited[i][j] = true;
 
-        // Create graph with n*n node
-        // each cell consider as node
-        int k = 1; // Number of current vertex
-        for (int i = 0; i < N; i++) {
-            for (int j = 0; j < N; j++) {
-                if (M[i][j] != 0) {
+            // if the cell is the required
+            // destination then return true
+            if (matrix[i][j] == 2)
+                return true;
 
-                    // connect all 4 adjacent
-                    // cell to current cell
-                    if (isSafe(i, j + 1, M))
-                        g.addEdge(k, k + 1);
-                    if (isSafe(i, j - 1, M))
-                        g.addEdge(k, k - 1);
-                    if (i < N - 1
-                        && isSafe(i + 1, j, M))
-                        g.addEdge(k, k + N);
-                    if (i > 0 && isSafe(i - 1, j, M))
-                        g.addEdge(k, k - N);
-                }
+            // traverse up
+            let up = checkPath(
+                matrix, i - 1,
+                j, visited);
 
-                // source index
-                if (M[i][j] == 1)
-                    s = k;
+            // if path is found in up
+            // direction return true
+            if (up)
+                return true;
 
-                // destination index
-                if (M[i][j] == 2)
-                    d = k;
-                k++;
-            }
+            // traverse left
+            let left
+                = checkPath(
+                    matrix, i, j - 1, visited);
+
+            // if path is found in left
+            // direction return true
+            if (left)
+                return true;
+
+            // traverse down
+            let down = checkPath(
+                matrix, i + 1, j, visited);
+
+            // if path is found in down
+            // direction return true
+            if (down)
+                return true;
+
+            // traverse right
+            let right
+                = checkPath(
+                    matrix, i, j + 1,
+                    visited);
+
+            // if path is found in right
+            // direction return true
+            if (right)
+                return true;
         }
-
-        // find path Using BFS
-        return g.BFS(s, d);
-    }
-
-    // Driver program to check above function
-    public static void main(
-        String[] args) throws Exception
-    {
-        int[][] M = { { 0, 3, 0, 1 },
-                      { 3, 0, 3, 3 },
-                      { 2, 3, 3, 3 },
-                      { 0, 3, 3, 3 } };
-
-        System.out.println(
-            ((findPath(M)) ? "Yes" : "No"));
-    }
+        // no path has been found
+        return false;
 }
 
-// This code is contributed by abhay379201
+// driver program to
+// check above function
+let matrix= [[ 0, 3, 0, 1 ],
+             [ 3, 0, 3, 3 ],
+             [ 2, 3, 3, 3 ],
+             [ 0, 3, 3, 3 ]];
 
+        // calling isPath method
+        isPath(matrix, 4);
+
+// This code is contributed by ab2127
+
+</script>
 ```
 
-## Python
-
-```py
-
-# Python3 program to find path between two 
-# cell in matrix 
-from collections import defaultdict
-class Graph:
-    def __init__(self):
-        self.graph = defaultdict(list)
-
-    # add edge to graph
-    def addEdge(self, u, v):
-        self.graph[u].append(v)
-
-    # BFS function to find path from source to sink     
-    def BFS(self, s, d):
-
-        # Base case
-        if s == d:
-            return True
-
-        # Mark all the vertices as not visited 
-        visited = [False]*(len(self.graph) + 1)
-
-        # Create a queue for BFS 
-        queue = []
-        queue.append(s)
-
-        # Mark the current node as visited and 
-        # enqueue it 
-        visited[s] = True
-        while(queue):
-
-            # Dequeue a vertex from queue
-            s = queue.pop(0)
-
-            # Get all adjacent vertices of the 
-            # dequeued vertex s. If a adjacent has 
-            # not been visited, then mark it visited 
-            # and enqueue it 
-            for i in self.graph[s]:
-
-                # If this adjacent node is the destination 
-                # node, then return true 
-                if i == d:
-                    return True
-
-                # Else, continue to do BFS 
-                if visited[i] == False:
-                    queue.append(i)
-                    visited[i] = True
-
-        # If BFS is complete without visiting d
-        return False
-
-def isSafe(i, j, matrix):
-    if i >= 0 and i <= len(matrix) and j >= 0 and j <= len(matrix[0]):
-        return True
-    else:
-        return False
-
-# Returns true if there is a path from a source (a 
-# cell with value 1) to a destination (a cell with 
-# value 2)
-def findPath(M):
-    s, d = None, None # source and destination 
-    N = len(M)
-    g = Graph()
-
-    # create graph with n * n node 
-    # each cell consider as node 
-    k = 1 # Number of current vertex
-    for i in range(N):
-        for j in range(N):
-            if (M[i][j] != 0):
-
-                # connect all 4 adjacent cell to 
-                # current cell 
-                if (isSafe(i, j + 1, M)):
-                    g.addEdge(k, k + 1)
-                if (isSafe(i, j - 1, M)):
-                    g.addEdge(k, k - 1)
-                if (isSafe(i + 1, j, M)):
-                    g.addEdge(k, k + N)
-                if (isSafe(i - 1, j, M)):
-                    g.addEdge(k, k - N)
-
-            if (M[i][j] == 1):
-                s = k
-
-            # destination index     
-            if (M[i][j] == 2):
-                d = k
-            k += 1
-
-    # find path Using BFS 
-    return g.BFS(s, d)
-
-# Driver code 
-if __name__=='__main__':
-    M =[[0, 3, 0, 1], [3, 0, 3, 3], [2, 3, 3, 3], [0, 3, 3, 3]]
-    if findPath(M):
-        print("Yes")
-    else:
-        print("No")
-
-# This Code is Contributed by Vikash Kumar 37
+**Output**
 
 ```
-
-**Output:** 
-
+YES
 ```
-Yes
-
-```
-
-**复杂度分析**：
-
-*   **时间复杂度**：`O(N * M)`。
-
-    矩阵的每个单元仅被访问一次，因此时间复杂度为`O(N * M)`。
-
-*   **空间复杂度**：`O(N * M)`。
-
-    需要空间来存储访问的数组并创建队列。
-
-本文由 [**Nishant Singh**](https://practice.geeksforgeeks.org/user-profile.php?user=_code) 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
-
-如果发现任何不正确的内容，或者想分享有关上述主题的更多信息，请发表评论。
-

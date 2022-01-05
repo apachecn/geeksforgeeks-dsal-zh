@@ -1,12 +1,11 @@
-# 查找距银行后卫的最短距离
+# 寻找距离银行警卫的最短距离
 
-> 原文： [https://www.geeksforgeeks.org/find-shortest-distance-guard-bank/](https://www.geeksforgeeks.org/find-shortest-distance-guard-bank/)
+> 原文:[https://www . geesforgeks . org/find-最短距离-守卫-银行/](https://www.geeksforgeeks.org/find-shortest-distance-guard-bank/)
 
-给定一个填充有“ O”，“ G”和“ W”的矩阵，其中“ O”代表开放空间，“ G”代表守卫，“ W”代表银行的墙。 将矩阵中的所有 O 替换成与警卫的最短距离，而又不能穿过任何墙壁。 同样，在输出矩阵中，将防护装置替换为 0，将墙壁替换为-1。
+给定一个由“O”、“G”和“W”填充的矩阵，其中“O”代表开放空间，“G”代表防护装置，“W”代表银行中的墙壁。将矩阵中的所有 O 替换为与守卫的最短距离，并且不能穿过任何墙壁。此外，在输出矩阵中用 0 替换防护，用-1 替换墙壁。
+对于 M×N 矩阵，期望的**时间复杂度**是 O(MN)。
 
-预期的**对于 M x N 矩阵，时间复杂度**为 O（MN）。
-
-例子：
+示例:
 
 ```
 O ==> Open Space
@@ -26,17 +25,15 @@ Output:
   1  2  3 -1  2
   0 -1 -1 -1  1
   1  2  2  1  0
-
 ```
 
-这个想法是做 BFS。 我们首先将所有包含防护的单元排队，然后循环直到队列不为空。 对于循环的每次迭代，我们将前单元从队列中出队，并针对其四个相邻单元中的每一个，如果单元是一个开放区域，并且尚未计算出其与后卫的距离，我们将更新其距离并将其入队。 最后，在 BFS 程序结束后，我们将打印距离矩阵。
+这个想法就是做 BFS。我们首先将包含保护的所有单元排队，并循环直到队列不为空。对于循环的每次迭代，我们将前面的单元从队列中出列，对于它的四个相邻单元中的每一个，如果单元是一个开放区域，并且它与保护的距离还没有计算出来，我们将更新它的距离并将其入队。最后，BFS 程序结束后，我们打印距离矩阵。
 
-以下是上述想法的实现–
+以下是上述想法的实施–
 
 ## C++
 
-```cpp
-
+```
 // C++ program to replace all of the O's in the matrix
 // with their shortest distance from a guard
 #include <bits/stdc++.h>
@@ -156,16 +153,14 @@ int main()
 
     return 0;
 }
-
 ```
 
-## Java
+## Java 语言(一种计算机语言，尤用于创建网站)
 
-```java
-
+```
 // Java program to replace all of the O's
-// in the matrix with their shortest 
-// distance from a guard 
+// in the matrix with their shortest
+// distance from a guard
 package Graphs;
 
 import java.util.LinkedList;
@@ -173,11 +168,11 @@ import java.util.Queue;
 
 public class MinDistanceFromaGuardInBank{
 
-// Store dimensions of the matrix 
+// Store dimensions of the matrix
 int M = 5;
 int N = 5;
 
-class Node 
+class Node
 {
     int i, j, dist;
     Node(int i, int j, int dist)
@@ -190,12 +185,12 @@ class Node
 
 // These arrays are used to get row
 // and column numbers of 4 neighbors
-// of a given cell 
+// of a given cell
 int row[] = { -1, 0, 1, 0 };
 int col[] = { 0, 1, 0, -1 };
 
-// Return true if row number and 
-// column number is in range 
+// Return true if row number and
+// column number is in range
 boolean isValid(int i, int j)
 {
     if ((i < 0 || i > M - 1) ||
@@ -205,69 +200,69 @@ boolean isValid(int i, int j)
     return true;
 }
 
-// Return true if current cell is 
-// an open area and its distance 
-// from guard is not calculated yet 
+// Return true if current cell is
+// an open area and its distance
+// from guard is not calculated yet
 boolean isSafe(int i, int j, char matrix[][],
                               int output[][])
 {
-    if (matrix[i][j] != 'O' || 
+    if (matrix[i][j] != 'O' ||
         output[i][j] != -1)
         return false;
 
     return true;
 }
 
-// Function to replace all of the O's 
+// Function to replace all of the O's
 // in the matrix with their shortest
-// distance from a guard 
+// distance from a guard
 void findDistance(char matrix[][])
 {
     int output[][] = new int[M][N];
     Queue<Node> q = new LinkedList<Node>();
 
     // Finding Guards location and
-    // adding into queue 
+    // adding into queue
     for(int i = 0; i < M; i++)
     {
         for(int j = 0; j < N; j++)
         {
 
-            // Initialize each cell as -1 
+            // Initialize each cell as -1
             output[i][j] = -1;
 
             if (matrix[i][j] == 'G')
             {
                 q.add(new Node(i, j, 0));
 
-                // Guard has 0 distance 
+                // Guard has 0 distance
                 output[i][j] = 0;
             }
         }
     }
 
-    // Do till queue is empty 
+    // Do till queue is empty
     while (!q.isEmpty())
     {
 
         // Get the front cell in the queue
-        // and update its adjacent cells 
+        // and update its adjacent cells
         Node curr = q.peek();
         int x = curr.i;
         int y = curr.j;
         int dist = curr.dist;
 
-        // Do for each adjacent cell 
-        for (int i = 0; i < 4; i++) 
+        // Do for each adjacent cell
+        for (int i = 0; i < 4; i++)
         {
 
             // If adjacent cell is valid, has
             // path and not visited yet,
-            // en-queue it. 
+            // en-queue it.
             if (isValid(x + row[i], y + col[i]))
             {
                 if (isSafe(x + row[i], y + col[i],
-                           matrix, output)) 
+                           matrix, output))
                 {
                     output[x + row[i]][y + col[i]] = dist + 1;
                     q.add(new Node(x + row[i],
@@ -277,13 +272,13 @@ void findDistance(char matrix[][])
             }
         }
 
-        // Dequeue the front cell as 
-        // its distance is found 
+        // Dequeue the front cell as
+        // its distance is found
         q.poll();
     }
 
-    // Print output matrix 
-    for(int i = 0; i < M; i++) 
+    // Print output matrix
+    for(int i = 0; i < M; i++)
     {
         for(int j = 0; j < N; j++)
         {
@@ -302,7 +297,7 @@ public static void main(String args[])
                         { 'G', 'W', 'W', 'W', 'O' },
                         { 'O', 'O', 'O', 'O', 'G' } };
 
-    MinDistanceFromaGuardInBank g = 
+    MinDistanceFromaGuardInBank g =
     new MinDistanceFromaGuardInBank();
 
     g.findDistance(matrix);
@@ -310,13 +305,11 @@ public static void main(String args[])
 }
 
 // This code is contributed by Shobhit Yadav
-
 ```
 
-## Python
+## 蟒蛇 3
 
-```py
-
+```
 # Python3 program to replace all of the O's in the matrix
 # with their shortest distance from a guard
 from collections import deque as queue
@@ -407,10 +400,297 @@ matrix = [['O', 'O', 'O', 'O', 'G'],
 findDistance(matrix)
 
 # This code is contributed by mohit kumar 29
-
 ```
 
-**输出**：
+## C#
+
+```
+// C# program to replace all of the O's
+// in the matrix with their shortest
+// distance from a guard
+using System;
+using System.Collections.Generic;
+public class Node
+{
+  public int i, j, dist;
+  public Node(int i, int j, int dist)
+  {
+    this.i = i;
+    this.j = j;
+    this.dist = dist;
+  }
+}
+
+public class MinDistanceFromaGuardInBank
+{
+
+  // Store dimensions of the matrix
+  static int M = 5;
+  static int N = 5;
+
+  // These arrays are used to get row
+  // and column numbers of 4 neighbors
+  // of a given cell
+  static int[] row = { -1, 0, 1, 0 };
+  static int[] col = { 0, 1, 0, -1 };
+
+  // Return true if row number and
+  // column number is in range
+
+  static bool isValid(int i, int j)
+  {
+    if ((i < 0 || i > M - 1) || (j < 0 || j > N - 1))
+      return false;
+
+    return true;
+  }
+
+  // Return true if current cell is
+  // an open area and its distance
+  // from guard is not calculated yet
+
+  static bool isSafe(int i, int j, char[,] matrix,int[,] output)
+  {
+    if (matrix[i,j] != 'O' || output[i,j] != -1)
+    {
+      return false;
+    }
+    return true;
+  }
+
+  // Function to replace all of the O's
+  // in the matrix with their shortest
+  // distance from a guard
+  static void findDistance(char[,] matrix)
+  {
+    int[,] output = new int[M,N];
+    Queue<Node> q = new Queue<Node>();
+
+    // Finding Guards location and
+    // adding into queue
+    for(int i = 0; i < M; i++)
+    {
+      for(int j = 0; j < N; j++)
+      {
+
+        // Initialize each cell as -1
+        output[i, j] = -1;
+
+        if (matrix[i, j] == 'G')
+        {
+          q.Enqueue(new Node(i, j, 0));
+
+          // Guard has 0 distance
+          output[i, j] = 0;
+        }
+      }
+    }
+
+    // Do till queue is empty
+    while (q.Count != 0)
+    {
+      // Get the front cell in the queue
+      // and update its adjacent cells
+      Node curr = q.Peek();  
+
+      int x = curr.i;
+      int y = curr.j;
+      int dist = curr.dist;
+
+      // Do for each adjacent cell
+      for (int i = 0; i < 4; i++)
+      {
+
+        // If adjacent cell is valid, has
+        // path and not visited yet,
+        // en-queue it.     
+        if (isValid(x + row[i], y + col[i]))
+        {
+          if (isSafe(x + row[i], y + col[i],matrix, output))
+          {
+            output[x + row[i] , y + col[i]] = dist + 1;
+            q.Enqueue(new Node(x + row[i],y + col[i],dist + 1));
+          }
+        }
+      }
+
+      // Dequeue the front cell as
+      // its distance is found
+      q.Dequeue();
+
+    }
+
+    // Print output matrix
+    for(int i = 0; i < M; i++)
+    {
+      for(int j = 0; j < N; j++)
+      {
+        Console.Write(output[i,j] + " ");
+      }
+      Console.WriteLine();
+    }
+  }
+
+  // Driver code
+  static public void Main ()
+  {
+    char[,] matrix ={ { 'O', 'O', 'O', 'O', 'G' },
+                     { 'O', 'W', 'W', 'O', 'O' },
+                     { 'O', 'O', 'O', 'W', 'O' },
+                     { 'G', 'W', 'W', 'W', 'O' },
+                     { 'O', 'O', 'O', 'O', 'G' } };
+
+    findDistance(matrix);
+  }
+}
+
+// This code is contributed by avanitrachhadiya2155
+```
+
+## java 描述语言
+
+```
+<script>
+// Javascript program to replace all of the O's
+// in the matrix with their shortest
+// distance from a guard
+
+// Store dimensions of the matrix
+let M = 5;
+let N = 5;
+
+class Node
+{
+    constructor(i,j,dist)
+    {
+        this.i = i;
+        this.j = j;
+        this.dist = dist;
+    }
+}
+
+// These arrays are used to get row
+// and column numbers of 4 neighbors
+// of a given cell
+let row=[-1, 0, 1, 0];
+let col=[0, 1, 0, -1 ];
+
+// Return true if row number and
+// column number is in range
+function isValid(i,j)
+{
+    if ((i < 0 || i > M - 1) ||
+        (j < 0 || j > N - 1))
+        return false;
+
+    return true;
+}
+
+// Return true if current cell is
+// an open area and its distance
+// from guard is not calculated yet
+function isSafe(i,j,matrix,output)
+{
+    if (matrix[i][j] != 'O' ||
+        output[i][j] != -1)
+        return false;
+
+    return true;
+}
+
+// Function to replace all of the O's
+// in the matrix with their shortest
+// distance from a guard
+function findDistance(matrix)
+{
+    let output = new Array(M);
+
+    for(let i=0;i<M;i++)
+    {
+        output[i]=new Array(N);
+    }
+    let q = [];
+
+    // Finding Guards location and
+    // adding into queue
+    for(let i = 0; i < M; i++)
+    {
+        for(let j = 0; j < N; j++)
+        {
+
+            // Initialize each cell as -1
+            output[i][j] = -1;
+
+            if (matrix[i][j] == 'G')
+            {
+                q.push(new Node(i, j, 0));
+
+                // Guard has 0 distance
+                output[i][j] = 0;
+            }
+        }
+    }
+
+    // Do till queue is empty
+    while (q.length!=0)
+    {
+
+        // Get the front cell in the queue
+        // and update its adjacent cells
+        let curr = q[0];
+        let x = curr.i;
+        let y = curr.j;
+        let dist = curr.dist;
+
+        // Do for each adjacent cell
+        for (let i = 0; i < 4; i++)
+        {
+
+            // If adjacent cell is valid, has
+            // path and not visited yet,
+            // en-queue it.
+            if (isValid(x + row[i], y + col[i]))
+            {
+                if (isSafe(x + row[i], y + col[i],
+                           matrix, output))
+                {
+                    output[x + row[i]][y + col[i]] = dist + 1;
+                    q.push(new Node(x + row[i],
+                                   y + col[i],
+                                   dist + 1));
+                }
+            }
+        }
+
+        // Dequeue the front cell as
+        // its distance is found
+        q.shift();
+    }
+
+    // Print output matrix
+    for(let i = 0; i < M; i++)
+    {
+        for(let j = 0; j < N; j++)
+        {
+            document.write(output[i][j] + " ");
+        }
+        document.write("<br>");
+    }
+}
+
+// Driver code
+let matrix=[[ 'O', 'O', 'O', 'O', 'G' ],
+                        [ 'O', 'W', 'W', 'O', 'O' ],
+                        [ 'O', 'O', 'O', 'W', 'O' ],
+                        [ 'G', 'W', 'W', 'W', 'O' ],
+                        [ 'O', 'O', 'O', 'O', 'G' ]];
+findDistance(matrix);
+
+// This code is contributed by ab2127
+</script>
+```
+
+**输出:**
 
 ```
   3  3  2  1  0
@@ -418,10 +698,8 @@ findDistance(matrix)
   1  2  3 -1  2
   0 -1 -1 -1  1
   1  2  2  1  0
-
 ```
 
-本文由 **Aditya Goel** 提供。 如果您喜欢 GeeksforGeeks 并希望做出贡献，则还可以使用 [tribution.geeksforgeeks.org](http://www.contribute.geeksforgeeks.org) 撰写文章，或将您的文章邮寄至 tribution@geeksforgeeks.org。 查看您的文章出现在 GeeksforGeeks 主页上，并帮助其他 Geeks。
+本文由**阿迪蒂亚·戈尔**供稿。如果你喜欢 GeeksforGeeks 并想投稿，你也可以使用[write.geeksforgeeks.org](https://write.geeksforgeeks.org)写一篇文章或者把你的文章邮寄到 review-team@geeksforgeeks.org。看到你的文章出现在极客博客主页上，帮助其他极客。
 
-如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
-
+如果你发现任何不正确的地方，或者你想分享更多关于上面讨论的话题的信息，请写评论。

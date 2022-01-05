@@ -1,8 +1,8 @@
-# Karger 的“最小切割”算法 | 系列 2（分析和应用）
+# 最小割集 2 的卡尔格算法(分析与应用)
 
-> 原文： [https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-2-analysis-and-applications/](https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-2-analysis-and-applications/)
+> 原文:[https://www . geeksforgeeks . org/kar gers-最小割集算法-2-分析和应用/](https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-2-analysis-and-applications/)
 
-下面我们介绍和讨论了集合 1 中的 [Karger 算法](https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-1-introduction-and-implementation/)。
+我们已经在下面介绍和讨论了第 1 集的[卡尔格算法](https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-1-introduction-and-implementation/)。
 
 ```
 1)  Initialize contracted graph CG as copy of original graph
@@ -14,15 +14,13 @@
 3) Return cut represented by two vertices.
 ```
 
-如前一篇文章所述， [Karger 的算法](https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-1-introduction-and-implementation/)并非总能找到最小切割。 在这篇文章中，讨论了找到最小切割的可能性。
+如前一篇文章所述，[卡尔格算法](https://www.geeksforgeeks.org/kargers-algorithm-for-minimum-cut-set-1-introduction-and-implementation/)并不总是能找到最小割。在这篇文章中，讨论了找到最小割的概率。
 
-**由 Karger 算法产生的剪切为 Min-Cut 的概率大于或等于 1 /（n <sup>2</sup> ）**
+***卡尔格算法产生的割为最小割的概率大于等于 1/(n <sup>2</sup> )***
 
-**证明**：
-
-假设给定图形具有唯一的 Min-Cut，并且 Min-Cut 中存在 C 边，且边为{e <sub>1</sub> e e <sub>2</sub> ，e <sub>3</sub> ，.. e <sub>c</sub> }。 当且仅当集合{e <sub>1</sub> ，e <sub>2</sub> ，e <sub>3</sub> ，.. e 中的任何一个边都没有时，Karger 算法才会产生此 Min-Cut。 <sub>c</sub> }在上述算法的主 while 循环中被删除。
-
-![KargerProbability](img/e8d8284397f976edd3dbeee36b304968.png)
+**证明:**
+假设给定图有唯一的最小割，且最小割中有 C 条边，边为{e <sub>1</sub> ，e <sub>2</sub> ，e <sub>3</sub> ，..e <sub>c</sub> }。当且仅当集合{e <sub>1</sub> 、e <sub>2</sub> 、e <sub>3</sub> 中没有边时，卡尔格算法才会产生此最小割，..e <sub>c</sub> 在上述算法的主 while 循环中迭代删除。
+[![KargerProbability](img/e8d8284397f976edd3dbeee36b304968.png)](https://media.geeksforgeeks.org/wp-content/cdn-uploads/KargerProbability.png)
 
 ```
 c is number of edges in min-cut
@@ -45,7 +43,7 @@ events happen.
 So the required probability is P[S1' ∩ S2' ∩ S3' ∩  ............]
 ```
 
-**在第一次迭代中选择最小切割边的概率**：
+***第一次迭代选择最小割边的概率:***
 
 ```
 Let us calculate  P[S1']
@@ -66,7 +64,7 @@ From above two facts, we can conclude below.
   P[S1] <= c (cn 2) <="2/n" p[s1] <= c (cn 2) <="2/n" p[s<sub>1<sup>'</sup>] >= (1-2/n) ------------(1)=>=>=></sub>
 ```
 
-**在第二次迭代中选择最小切割边的可能性**：
+***第二次迭代选择最小割边的概率:***
 
 ```
 
@@ -84,7 +82,7 @@ we can replace n by n-1 in inequality (1).  So we get.
   P[S1' ∩  S2'] >= (1-2/n) x (1-2/(n-1))
 ```
 
-**在所有迭代中选择最小切割边的概率**：
+***在所有迭代中选择最小割边的概率:***
 
 ```
 
@@ -99,27 +97,22 @@ P[S1' ∩  S2' ∩ S3'  ∩.......... ∩ Sn-2']
 >= 1/n2 
 ```
 
-**如何增加成功的可能性？**
+**如何增加成功概率？**
+以上基本算法成功的概率很少。例如，对于有 10 个节点的图，找到最小割的概率大于或等于 1/100。通过重复运行基本算法并返回找到的所有切割的最小值，可以增加概率。
 
-上述基本算法成功的可能性很小。 例如，对于具有 10 个节点的图，找到最小切割的概率大于或等于 1/100。 可以通过重复运行基本算法并返回找到的所有削减的最小值来增加概率。
+**应用程序:**
+**1)** 在战争情况下，一方会有兴趣找到破坏敌方通信网络的最小数量的链路。
 
-**应用程序**：
+**2)** 最小割问题可用于研究网络的可靠性(可失效的最小边数)。
 
-1.  在战争情况下，一个政党有兴趣寻找破坏敌人通信网络的最小链接数。
+**3)** 网络优化研究(求最大流量)。
 
-2.  最小割问题可用于研究网络的可靠性（可能出现故障的最小边数量）。
+**4)** 聚类问题(像关联规则一样的边)匹配问题(有向图中最小割的 [NC](https://en.wikipedia.org/wiki/NC_%28complexity%29) 算法将导致二分图中最大匹配的 [NC](https://en.wikipedia.org/wiki/NC_%28complexity%29) 算法)
 
-3.  网络优化研究（查找最大流量）。
+**5)** 匹配问题(有向图中最小割的 NC 算法将导致二分图中最大匹配的 NC 算法)
 
-4.  聚类问题（类似于关联规则的边）匹配问题（针对有向图的最小割的 [NC](https://en.wikipedia.org/wiki/NC_%28complexity%29) 算法将导致最大匹配的 [NC](https://en.wikipedia.org/wiki/NC_%28complexity%29) 算法 在二部图中）
+**资料来源:**
+[https://www . YouTube . com/watch？v =-uuivvyhpas](https://www.youtube.com/watch?v=-UuivvyHPas)
+[http://disi . unal . edu . co/~ ghernandezp/PSC/readings/02/mincut . pdf](http://disi.unal.edu.co/~gjhernandezp/psc/lectures/02/MinCut.pdf)
 
-5.  匹配问题（有向图中最小割的 NC 算法将导致二部图中最大匹配的 NC 算法）
-
-**来源**：
-
-[https://www.youtube.com/watch?v=-UuivvyHPas](https://www.youtube.com/watch?v=-UuivvyHPas)
-
-[http://disi.unal.edu.co /~gjhernandezp/psc/lectures/02/MinCut.pdf]( http://disi.unal.edu.co/~gjhernandezp/psc/lectures/02/MinCut.pdf)
-
-如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
-
+如果你发现任何不正确的地方，或者你想分享更多关于上面讨论的话题的信息，请写评论。

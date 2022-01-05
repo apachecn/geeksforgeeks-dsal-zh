@@ -1,39 +1,31 @@
-# Kruskal 的最小生成树算法| 贪婪算法 2
+# 克鲁斯卡尔最小生成树算法|贪婪算法-2
 
-> 原文： [https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
+> 原文:[https://www . geesforgeks . org/kruskals-最小生成树-算法-greedy-algo-2/](https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/)
 
-**什么是最小生成树？**
+***什么是最小生成树？***
+给定一个连通无向图，该图的*生成树*是将所有顶点连接在一起的树。一个图可以有许多不同的生成树。加权、连通、无向图的*最小生成树(MST)* 或最小权重生成树是权重小于或等于所有其他生成树的权重的生成树。生成树的权重是赋予生成树每条边的权重之和。
+*最小生成树有几条边？*
+最小生成树有(V–1)条边，其中 V 是给定图中的顶点数。
+**最小生成树有哪些应用？*
+MST 的应用见[本](https://www.geeksforgeeks.org/applications-of-minimum-spanning-tree/)。*
 
-给定一个连接且无向的图，该图的*生成树*是一个子图，它是一棵树并将所有顶点连接在一起。 单个图可以具有许多不同的生成树。 加权，连接和无向图的*最小生成树（MST）*或最小权重生成树是权重小于或等于其他所有生成树的权重的生成树。 生成树的权重是赋予生成树的每个边的权重之和。
+*以下是使用克鲁斯卡尔算法寻找最小二乘的步骤*
 
-*最小生成树有几个边？*
+> ***1。**按权重非递减顺序对所有边进行排序。
+> T3】2。挑最小的边。检查它是否与到目前为止形成的生成树形成一个循环。如果没有形成循环，包括这条边。否则，丢弃它。
+> **3。**重复步骤#2，直到生成树中有(V-1)条边。*
 
-最小生成树具有（V – 1）个边，其中 V 是给定图中顶点的数量。
+*步骤 2 使用[联合查找算法](https://www.geeksforgeeks.org/union-find/)来检测周期。所以我们建议阅读以下帖子作为先决条件。
+[联合-查找算法|集合 1(检测图中的循环)](https://www.geeksforgeeks.org/union-find/)
+[联合-查找算法|集合 2(按等级和路径压缩进行联合)](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
+该算法是一个贪婪算法。贪婪选择是选择最小权重边，它不会导致到目前为止构造的最小权重边的循环。让我们用一个例子来理解它:考虑下面的输入图。* 
 
-*最小生成树的应用是什么？*
+*![Kruskal’s Minimum Spanning Tree Algorithm](img/1ee232d001c96ce86be6600cbad70b9c.png)*
 
-有关 MST 的应用，请参见此的[。](https://www.geeksforgeeks.org/applications-of-minimum-spanning-tree/)
-
-以下是使用 Kruskal 算法查找 MST 的步骤
-
-> **1\.** 对所有边按其权重的非降序排序。
-> **2\.** 选取最小的边。 检查它是否与形成的生成树形成一个循环。 如果未形成循环，则包括该边。 否则，将其丢弃。
-> **3\.** 重复步骤 2，直到生成树中有（V-1）个边。
-
-步骤 2 使用[联合查找算法](https://www.geeksforgeeks.org/union-find/)检测周期。 因此，我们建议您先阅读以下内容。
-
-[联合查找算法 | 系列 1（图形中的检测周期）](https://www.geeksforgeeks.org/union-find/)，
-
-[联合查找算法 | 系列 2（按等级和路径压缩的并集）](https://www.geeksforgeeks.org/union-find-algorithm-set-2-union-by-rank/)
-
-该算法是贪婪算法。 贪婪的选择是选择重量最小的边沿，该边沿不会在到目前为止构造的 MST 中引起循环。 让我们以一个示例来理解它：考虑以下输入图。
-
-![](img/16aae8065a8aa7bda0a6d79e0df2b85a.png)
-
-该图包含 9 个顶点和 14 个边。 因此，形成的最小生成树将具有（9 – 1）= 8 个边。
+*该图包含 9 个顶点和 14 条边。因此，形成的最小生成树将具有(9–1)= 8 条边。*
 
 ```
-After sorting:
+*After sorting:
 
 Weight   Src    Dest
 1         7      6
@@ -49,468 +41,54 @@ Weight   Src    Dest
 9         3      4
 10        5      4
 11        1      7
-14        3      5
-
+14        3      5*
 ```
 
-现在从排序的边列表中逐个拾取所有边。
+*现在从排序后的边列表
+**1 中逐个拾取所有边。** *挑边 7-6:* 没有周期形成，包括它。* 
 
-**1。** *拾取边 7-6：*没有形成循环，包括在内。
+*![Kruskal’s Minimum Spanning Tree Algorithm](img/e288a4a81279bdccccac7f5fa058579c.png)*
 
-![](img/ef52836116212616ec4e020d7e6fb8dc.png)
+***2。** *挑边 8-2:* 没有形成循环，包括它。* 
 
-**2\.** *拾取边 8-2：*没有形成循环，包括在内。
+*![Kruskal’s Minimum Spanning Tree Algorithm](img/e7c114884b6ee51334055060f7c35e8a.png)*
 
-![](img/ba809f0e834369f5d2b5150dc3a2d6c1.png)
+***3。** *挑边 6-5:* 没有形成循环，包括它。* 
 
-**3\.** *拾取边 6-5：*没有形成循环，包括在内。
+*![Kruskal’s Minimum Spanning Tree Algorithm](img/a36737009fba9932cfb018192062e4fc.png)*
 
-![](img/df5895dd7cec4e53db3404b14d6963a6.png)
+***4。** *挑边 0-1:* 没有形成循环，包括它。* 
 
-**4\.** *拾取边 0-1：*没有形成循环，包括在内。
+*![Kruskal’s Minimum Spanning Tree Algorithm](img/2592573d76b52bd01bde1c20cd2618b1.png)*
 
-![](img/7779af8af2c0b05ab377687254cb19a8.png)
+***5。** *挑边 2-5:* 没有形成循环，包括它。* 
 
-**5\.** *拾取边 2-5：*没有形成循环，包括在内。
+*![Kruskal’s Minimum Spanning Tree Algorithm](img/cd422f4fab90fb7a60db1cab44f090ea.png)*
 
-![](img/07dceee1b79c3d8fdb01b6fc1675661c.png)
+***6。** *拾取 8-6 号边:*由于包含此边会导致循环，因此将其丢弃。
+**7。** *挑边 2-3:* 没有形成循环，包含它。* 
 
-**6\.** *拾取边 8-6：*由于包括该边会导致循环，因此请将其丢弃。
+*![Kruskal’s Minimum Spanning Tree Algorithm](img/aa57e56bc99679f3a413cc15071076a5.png)*
 
-**7\.** *拾取边 2-3：*没有形成循环，包括在内。
+***8。** *拾取边 7-8:* 由于包含此边会导致循环，因此将其丢弃。
+**9。** *挑边 0-7:* 没有形成循环，包含它。* 
 
-![](img/684fb002a4ac669b7e851865c942bb27.png)
+*![Kruskal’s Minimum Spanning Tree Algorithm](img/259f16abdf613951d7f4a93ea7cf4e11.png)*
 
-**8\.** *拾取边 7-8：*由于包括该边会导致循环，因此请将其丢弃。
+***10。** *拾取边 1-2:* 由于包含此边会导致循环，因此将其丢弃。
+**11。** *挑边 3-4:* 没有形成循环，包含它。* 
 
-**9\.** *拾取边 0-7：*没有形成循环，包括在内。
+*![Kruskal’s Minimum Spanning Tree Algorithm](img/6361724b03cae99f6504eb3f73a5690b.png)*
 
-![](img/cc7834c40baa57b0d211f2be6496afa2.png)
+*由于包含的边数等于(V–1)，算法到此为止。* 
 
-**10\.** *拾取边 1-2：*由于包括该边会导致循环，因此请将其丢弃。
+*下面是上述想法的实现:*
 
-**11\.** *拾取边 3-4：*没有形成循环，包括在内。
-
-![](img/cf20377c93d0f3cfcdea78862ccdab2d.png)
-
-由于包含的边数等于（V – 1），因此算法在此处停止。
-
-以下是上述想法的实现：
-
-## C++
-
-```cpp
-
-// C++ program for Kruskal's algorithm
-//  to find Minimum Spanning Tree of a
-//  given connected, undirected and weighted
-//  graph
-#include <bits/stdc++.h>
-using namespace std;
-
-// a structure to represent a 
-// weighted edge in graph
-class Edge {
-public:
-    int src, dest, weight;
-};
-
-// a structure to represent a connected, 
-// undirected and weighted graph
-class Graph {
-public:
-
-    // V-> Number of vertices, E-> Number of edges
-    int V, E;
-
-    // graph is represented as an array of edges.
-    // Since the graph is undirected, the edge
-    // from src to dest is also edge from dest
-    // to src. Both are counted as 1 edge here.
-    Edge* edge;
-};
-
-// Creates a graph with V vertices and E edges
-Graph* createGraph(int V, int E)
-{
-    Graph* graph = new Graph;
-    graph->V = V;
-    graph->E = E;
-
-    graph->edge = new Edge[E];
-
-    return graph;
-}
-
-// A structure to represent a subset for union-find
-class subset {
-public:
-    int parent;
-    int rank;
-};
-
-// A utility function to find set of an element i
-// (uses path compression technique)
-int find(subset subsets[], int i)
-{
-    // find root and make root as parent of i
-    // (path compression)
-    if (subsets[i].parent != i)
-        subsets[i].parent
-            = find(subsets, subsets[i].parent);
-
-    return subsets[i].parent;
-}
-
-// A function that does union of two sets of x and y
-// (uses union by rank)
-void Union(subset subsets[], int x, int y)
-{
-    int xroot = find(subsets, x);
-    int yroot = find(subsets, y);
-
-    // Attach smaller rank tree under root of high
-    // rank tree (Union by Rank)
-    if (subsets[xroot].rank < subsets[yroot].rank)
-        subsets[xroot].parent = yroot;
-    else if (subsets[xroot].rank > subsets[yroot].rank)
-        subsets[yroot].parent = xroot;
-
-    // If ranks are same, then make one as root and
-    // increment its rank by one
-    else {
-        subsets[yroot].parent = xroot;
-        subsets[xroot].rank++;
-    }
-}
-
-// Compare two edges according to their weights.
-// Used in qsort() for sorting an array of edges
-int myComp(const void* a, const void* b)
-{
-    Edge* a1 = (Edge*)a;
-    Edge* b1 = (Edge*)b;
-    return a1->weight > b1->weight;
-}
-
-// The main function to construct MST using Kruskal's
-// algorithm
-void KruskalMST(Graph* graph)
-{
-    int V = graph->V;
-    Edge result[V]; // Tnis will store the resultant MST
-    int e = 0; // An index variable, used for result[]
-    int i = 0; // An index variable, used for sorted edges
-
-    // Step 1: Sort all the edges in non-decreasing
-    // order of their weight. If we are not allowed to
-    // change the given graph, we can create a copy of
-    // array of edges
-    qsort(graph->edge, graph->E, sizeof(graph->edge[0]),
-          myComp);
-
-    // Allocate memory for creating V ssubsets
-    subset* subsets = new subset[(V * sizeof(subset))];
-
-    // Create V subsets with single elements
-    for (int v = 0; v < V; ++v) 
-    {
-        subsets[v].parent = v;
-        subsets[v].rank = 0;
-    }
-
-    // Number of edges to be taken is equal to V-1
-    while (e < V - 1 && i < graph->E) 
-    {
-        // Step 2: Pick the smallest edge. And increment
-        // the index for next iteration
-        Edge next_edge = graph->edge[i++];
-
-        int x = find(subsets, next_edge.src);
-        int y = find(subsets, next_edge.dest);
-
-        // If including this edge does't cause cycle,
-        // include it in result and increment the index
-        // of result for next edge
-        if (x != y) {
-            result[e++] = next_edge;
-            Union(subsets, x, y);
-        }
-        // Else discard the next_edge
-    }
-
-    // print the contents of result[] to display the
-    // built MST
-    cout << "Following are the edges in the constructed "
-            "MST\n";
-    int minimumCost = 0;
-    for (i = 0; i < e; ++i) 
-    {
-        cout << result[i].src << " -- " << result[i].dest
-             << " == " << result[i].weight << endl;
-        minimumCost = minimumCost + result[i].weight;
-    }
-    // return;
-    cout << "Minimum Cost Spanning Tree: " << minimumCost
-         << endl;
-}
-
-// Driver code
-int main()
-{
-    /* Let us create following weighted graph
-            10
-        0--------1
-        | \ |
-    6| 5\ |15
-        | \ |
-        2--------3
-            4 */
-    int V = 4; // Number of vertices in graph
-    int E = 5; // Number of edges in graph
-    Graph* graph = createGraph(V, E);
-
-    // add edge 0-1
-    graph->edge[0].src = 0;
-    graph->edge[0].dest = 1;
-    graph->edge[0].weight = 10;
-
-    // add edge 0-2
-    graph->edge[1].src = 0;
-    graph->edge[1].dest = 2;
-    graph->edge[1].weight = 6;
-
-    // add edge 0-3
-    graph->edge[2].src = 0;
-    graph->edge[2].dest = 3;
-    graph->edge[2].weight = 5;
-
-    // add edge 1-3
-    graph->edge[3].src = 1;
-    graph->edge[3].dest = 3;
-    graph->edge[3].weight = 15;
-
-    // add edge 2-3
-    graph->edge[4].src = 2;
-    graph->edge[4].dest = 3;
-    graph->edge[4].weight = 4;
-
-    // Function call
-    KruskalMST(graph);
-
-    return 0;
-}
-
-// This code is contributed by rathbhupendra
+## *Java 语言(一种计算机语言，尤用于创建网站)*
 
 ```
-
-## C
-
-```c
-
-// C program for Kruskal's algorithm to find Minimum
-// Spanning Tree of a given connected, undirected and
-// weighted graph
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-// a structure to represent a weighted edge in graph
-struct Edge {
-    int src, dest, weight;
-};
-
-// a structure to represent a connected, undirected
-// and weighted graph
-struct Graph {
-    // V-> Number of vertices, E-> Number of edges
-    int V, E;
-
-    // graph is represented as an array of edges.
-    // Since the graph is undirected, the edge
-    // from src to dest is also edge from dest
-    // to src. Both are counted as 1 edge here.
-    struct Edge* edge;
-};
-
-// Creates a graph with V vertices and E edges
-struct Graph* createGraph(int V, int E)
-{
-    struct Graph* graph = new Graph;
-    graph->V = V;
-    graph->E = E;
-
-    graph->edge = new Edge[E];
-
-    return graph;
-}
-
-// A structure to represent a subset for union-find
-struct subset {
-    int parent;
-    int rank;
-};
-
-// A utility function to find set of an element i
-// (uses path compression technique)
-int find(struct subset subsets[], int i)
-{
-    // find root and make root as parent of i
-    // (path compression)
-    if (subsets[i].parent != i)
-        subsets[i].parent
-            = find(subsets, subsets[i].parent);
-
-    return subsets[i].parent;
-}
-
-// A function that does union of two sets of x and y
-// (uses union by rank)
-void Union(struct subset subsets[], int x, int y)
-{
-    int xroot = find(subsets, x);
-    int yroot = find(subsets, y);
-
-    // Attach smaller rank tree under root of high
-    // rank tree (Union by Rank)
-    if (subsets[xroot].rank < subsets[yroot].rank)
-        subsets[xroot].parent = yroot;
-    else if (subsets[xroot].rank > subsets[yroot].rank)
-        subsets[yroot].parent = xroot;
-
-    // If ranks are same, then make one as root and
-    // increment its rank by one
-    else
-    {
-        subsets[yroot].parent = xroot;
-        subsets[xroot].rank++;
-    }
-}
-
-// Compare two edges according to their weights.
-// Used in qsort() for sorting an array of edges
-int myComp(const void* a, const void* b)
-{
-    struct Edge* a1 = (struct Edge*)a;
-    struct Edge* b1 = (struct Edge*)b;
-    return a1->weight > b1->weight;
-}
-
-// The main function to construct MST using Kruskal's
-// algorithm
-void KruskalMST(struct Graph* graph)
-{
-    int V = graph->V;
-    struct Edge
-        result[V]; // Tnis will store the resultant MST
-    int e = 0; // An index variable, used for result[]
-    int i = 0; // An index variable, used for sorted edges
-
-    // Step 1:  Sort all the edges in non-decreasing
-    // order of their weight. If we are not allowed to
-    // change the given graph, we can create a copy of
-    // array of edges
-    qsort(graph->edge, graph->E, sizeof(graph->edge[0]),
-          myComp);
-
-    // Allocate memory for creating V ssubsets
-    struct subset* subsets
-        = (struct subset*)malloc(V * sizeof(struct subset));
-
-    // Create V subsets with single elements
-    for (int v = 0; v < V; ++v) {
-        subsets[v].parent = v;
-        subsets[v].rank = 0;
-    }
-
-    // Number of edges to be taken is equal to V-1
-    while (e < V - 1 && i < graph->E) {
-        // Step 2: Pick the smallest edge. And increment
-        // the index for next iteration
-        struct Edge next_edge = graph->edge[i++];
-
-        int x = find(subsets, next_edge.src);
-        int y = find(subsets, next_edge.dest);
-
-        // If including this edge does't cause cycle,
-        // include it in result and increment the index
-        // of result for next edge
-        if (x != y) {
-            result[e++] = next_edge;
-            Union(subsets, x, y);
-        }
-        // Else discard the next_edge
-    }
-
-    // print the contents of result[] to display the
-    // built MST
-    printf(
-        "Following are the edges in the constructed MST\n");
-    int minimumCost = 0;
-    for (i = 0; i < e; ++i)
-    {
-        printf("%d -- %d == %d\n", result[i].src,
-               result[i].dest, result[i].weight);
-        minimumCost += result[i].weight;
-    }
-    printf("Minimum Cost Spanning tree : %d",minimumCost);
-    return;
-}
-
-// Driver program to test above functions
-int main()
-{
-    /* Let us create following weighted graph
-             10
-        0--------1
-        |  \     |
-       6|   5\   |15
-        |      \ |
-        2--------3
-            4       */
-    int V = 4; // Number of vertices in graph
-    int E = 5; // Number of edges in graph
-    struct Graph* graph = createGraph(V, E);
-
-    // add edge 0-1
-    graph->edge[0].src = 0;
-    graph->edge[0].dest = 1;
-    graph->edge[0].weight = 10;
-
-    // add edge 0-2
-    graph->edge[1].src = 0;
-    graph->edge[1].dest = 2;
-    graph->edge[1].weight = 6;
-
-    // add edge 0-3
-    graph->edge[2].src = 0;
-    graph->edge[2].dest = 3;
-    graph->edge[2].weight = 5;
-
-    // add edge 1-3
-    graph->edge[3].src = 1;
-    graph->edge[3].dest = 3;
-    graph->edge[3].weight = 15;
-
-    // add edge 2-3
-    graph->edge[4].src = 2;
-    graph->edge[4].dest = 3;
-    graph->edge[4].weight = 4;
-
-    KruskalMST(graph);
-
-    return 0;
-}
-
-```
-
-## Java
-
-```java
-
-// Java program for Kruskal's algorithm to 
-// find Minimum Spanning Tree of a given 
+*// Java program for Kruskal's algorithm to
+// find Minimum Spanning Tree of a given
 //connected, undirected and  weighted graph
 import java.util.*;
 import java.lang.*;
@@ -518,11 +96,11 @@ import java.io.*;
 
 class Graph {
     // A class to represent a graph edge
-    class Edge implements Comparable<Edge> 
+    class Edge implements Comparable<Edge>
     {
         int src, dest, weight;
 
-        // Comparator function used for 
+        // Comparator function used for
         // sorting edgesbased on their weight
         public int compareTo(Edge compareEdge)
         {
@@ -530,9 +108,9 @@ class Graph {
         }
     };
 
-    // A class to represent a subset for 
+    // A class to represent a subset for
     // union-find
-    class subset 
+    class subset
     {
         int parent, rank;
     };
@@ -550,11 +128,11 @@ class Graph {
             edge[i] = new Edge();
     }
 
-    // A utility function to find set of an 
+    // A utility function to find set of an
     // element i (uses path compression technique)
     int find(subset subsets[], int i)
     {
-        // find root and make root as parent of i 
+        // find root and make root as parent of i
         // (path compression)
         if (subsets[i].parent != i)
             subsets[i].parent
@@ -563,23 +141,23 @@ class Graph {
         return subsets[i].parent;
     }
 
-    // A function that does union of two sets 
+    // A function that does union of two sets
     // of x and y (uses union by rank)
     void Union(subset subsets[], int x, int y)
     {
         int xroot = find(subsets, x);
         int yroot = find(subsets, y);
 
-        // Attach smaller rank tree under root 
+        // Attach smaller rank tree under root
         // of high rank tree (Union by Rank)
-        if (subsets[xroot].rank 
+        if (subsets[xroot].rank
             < subsets[yroot].rank)
             subsets[xroot].parent = yroot;
-        else if (subsets[xroot].rank 
+        else if (subsets[xroot].rank
                  > subsets[yroot].rank)
             subsets[yroot].parent = xroot;
 
-        // If ranks are same, then make one as 
+        // If ranks are same, then make one as
         // root and increment its rank by one
         else {
             subsets[yroot].parent = xroot;
@@ -592,13 +170,13 @@ class Graph {
     void KruskalMST()
     {
         // Tnis will store the resultant MST
-        Edge result[] = new Edge[V]; 
+        Edge result[] = new Edge[V];
 
         // An index variable, used for result[]
-        int e = 0; 
+        int e = 0;
 
         // An index variable, used for sorted edges
-        int i = 0; 
+        int i = 0;
         for (i = 0; i < V; ++i)
             result[i] = new Edge();
 
@@ -608,13 +186,13 @@ class Graph {
         // array of edges
         Arrays.sort(edge);
 
-        // Allocate memory for creating V ssubsets
+        // Allocate memory for creating V subsets
         subset subsets[] = new subset[V];
         for (i = 0; i < V; ++i)
             subsets[i] = new subset();
 
         // Create V subsets with single elements
-        for (int v = 0; v < V; ++v) 
+        for (int v = 0; v < V; ++v)
         {
             subsets[v].parent = v;
             subsets[v].rank = 0;
@@ -623,12 +201,11 @@ class Graph {
         i = 0; // Index used to pick next edge
 
         // Number of edges to be taken is equal to V-1
-        while (e < V - 1) 
+        while (e < V - 1)
         {
             // Step 2: Pick the smallest edge. And increment
             // the index for next iteration
-            Edge next_edge = new Edge();
-            next_edge = edge[i++];
+            Edge next_edge = edge[i++];
 
             int x = find(subsets, next_edge.src);
             int y = find(subsets, next_edge.dest);
@@ -704,15 +281,13 @@ class Graph {
         graph.KruskalMST();
     }
 }
-// This code is contributed by Aakash Hasija
-
+// This code is contributed by Aakash Hasija*
 ```
 
-## Python
+## *计算机编程语言*
 
-```py
-
-# Python program for Kruskal's algorithm to find
+```
+*# Python program for Kruskal's algorithm to find
 # Minimum Spanning Tree of a given connected,
 # undirected and weighted graph
 
@@ -769,11 +344,11 @@ class Graph:
         # An index variable, used for result[]
         e = 0
 
-        # Step 1:  Sort all the edges in 
+        # Step 1:  Sort all the edges in
         # non-decreasing order of their
         # weight.  If we are not allowed to change the
         # given graph, we can create a copy of graph
-        self.graph = sorted(self.graph, 
+        self.graph = sorted(self.graph,
                             key=lambda item: item[2])
 
         parent = []
@@ -795,8 +370,8 @@ class Graph:
             y = self.find(parent, v)
 
             # If including this edge does't
-            #  cause cycle, include it in result 
-            #  and increment the indexof result 
+            #  cause cycle, include it in result
+            #  and increment the indexof result
             # for next edge
             if x != y:
                 e = e + 1
@@ -805,7 +380,7 @@ class Graph:
             # Else discard the edge
 
         minimumCost = 0
-        print "Edges in the constructed MST"
+        print ("Edges in the constructed MST")
         for u, v, weight in result:
             minimumCost += weight
             print("%d -- %d == %d" % (u, v, weight))
@@ -822,15 +397,13 @@ g.addEdge(2, 3, 4)
 # Function call
 g.KruskalMST()
 
-# This code is contributed by Neelam Yadav
-
+# This code is contributed by Neelam Yadav*
 ```
 
-## C#
+## *C#*
 
-```cs
-
-// C# Code for above approach
+```
+*// C# Code for above approach
 using System;
 
 class Graph {
@@ -843,14 +416,14 @@ class Graph {
         // based on their weight
         public int CompareTo(Edge compareEdge)
         {
-            return this.weight 
+            return this.weight
                    - compareEdge.weight;
         }
     }
 
-    // A class to represent 
+    // A class to represent
     // a subset for union-find
-    public class subset 
+    public class subset
     {
         public int parent, rank;
     };
@@ -909,7 +482,7 @@ class Graph {
     {
         // This will store the
         // resultant MST
-        Edge[] result = new Edge[V]; 
+        Edge[] result = new Edge[V];
         int e = 0; // An index variable, used for result[]
         int i
             = 0; // An index variable, used for sorted edges
@@ -922,7 +495,7 @@ class Graph {
         // a copy of array of edges
         Array.Sort(edge);
 
-        // Allocate memory for creating V ssubsets
+        // Allocate memory for creating V subsets
         subset[] subsets = new subset[V];
         for (i = 0; i < V; ++i)
             subsets[i] = new subset();
@@ -936,7 +509,7 @@ class Graph {
         i = 0; // Index used to pick next edge
 
         // Number of edges to be taken is equal to V-1
-        while (e < V - 1) 
+        while (e < V - 1)
         {
             // Step 2: Pick the smallest edge. And increment
             // the index for next iteration
@@ -1021,11 +594,132 @@ class Graph {
     }
 }
 
-// This code is contributed by Aakash Hasija
-
+// This code is contributed by Aakash Hasija*
 ```
 
-输出：
+## *C++*
+
+```
+*#include <bits/stdc++.h>
+using namespace std;
+// DSU data structure
+//  path compression + rank by union
+
+class DSU
+{
+    int *parent;
+    int *rank;
+
+public:
+    DSU(int n)
+    {
+        parent = new int[n];
+        rank = new int[n];
+
+        for (int i = 0; i < n; i++)
+        {
+            parent[i] = -1;
+            rank[i] = 1;
+        }
+    }
+
+    // Find function
+    int find(int i)
+    {
+        if (parent[i] == -1)
+            return i;
+
+        return parent[i] = find(parent[i]);
+    }
+    // union function
+    void unite(int x, int y)
+    {
+        int s1 = find(x);
+        int s2 = find(y);
+
+        if (s1 != s2)
+        {
+            if (rank[s1] < rank[s2])
+            {
+                parent[s1] = s2;
+                rank[s2] += rank[s1];
+            }
+            else
+            {
+                parent[s2] = s1;
+                rank[s1] += rank[s2];
+            }
+        }
+    }
+};
+
+class Graph
+{
+    vector<vector<int>> edgelist;
+    int V;
+
+public:
+    Graph(int V)
+    {
+        this->V = V;
+    }
+
+    void addEdge(int x, int y, int w)
+    {
+        edgelist.push_back({w, x, y});
+    }
+
+    int kruskals_mst()
+    {
+        // 1\. Sort all edges
+        sort(edgelist.begin(), edgelist.end());
+
+        // Initialize the DSU
+        DSU s(V);
+        int ans = 0;
+        for (auto edge : edgelist)
+        {
+            int w = edge[0];
+            int x = edge[1];
+            int y = edge[2];
+
+            // take that edge in MST if it does form a cycle
+            if (s.find(x) != s.find(y))
+            {
+                s.unite(x, y);
+                ans += w;
+            }
+        }
+        return ans;
+    }
+};
+int main()
+{
+    Graph g(4);
+    g.addEdge(0, 1, 1);
+    g.addEdge(1, 3, 3);
+    g.addEdge(3, 2, 4);
+    g.addEdge(2, 0, 2);
+    g.addEdge(0, 3, 2);
+    g.addEdge(1, 2, 2);
+
+    // int n, m;
+    // cin >> n >> m;
+
+    // Graph g(n);
+    // for (int i = 0; i < m; i++)
+    // {
+    //     int x, y, w;
+    //     cin >> x >> y >> w;
+    //     g.addEdge(x, y, w);
+    // }
+
+    cout << g.kruskals_mst();
+    return 0;
+}*
+```
+
+***Output**
 
 ```
 Following are the edges in the constructed MST
@@ -1033,14 +727,11 @@ Following are the edges in the constructed MST
 0 -- 3 == 5
 0 -- 1 == 10
 Minimum Cost Spanning Tree: 19
+```* 
 
-```
+***时间复杂度:** O(ElogE)或 O(ElogV)。边的排序需要时间。排序后，我们遍历所有边，并应用查找-并集算法。查找和联合操作最多需要 0(LogV)时间。所以整体复杂度是 O(ELogE + ELogV)时间。E 的值最多可以是 O(V <sup>2</sup> ，所以 O(LogV)就是 O(LogE)一样。因此，整体时间复杂度为 O(ElogE)或 O(ElogV)*
 
-**时间复杂度**：O（ElogE）或 O（ElogV）。 边排序需要 O（ELogE）时间。 排序后，我们遍历所有边并应用 find-union 算法。 查找和联合操作最多需要 O（LogV）时间。 因此，总体复杂度为 O（ELogE + ELogV）时间。 E 的值最多为 O（V <sup>2</sup> ），因此 O（LogV）等于 O（LogE）。 因此，总体时间复杂度为 O（ElogE）或 O（ElogV）
-
-参考文献：
-
-[http://www.ics.uci.edu/~eppstein/161/960206.html](http://www.ics.uci.edu/~eppstein/161/960206.html)
-
-本文由 [Aashish Barnwal](https://www.facebook.com/barnwal.aashish) 编译，并由 GeeksforGeeks 团队进行了审核。 如果发现任何不正确的地方，或者想分享有关上述主题的更多信息，请写评论。
-
+*参考文献:
+[【http://www.ics.uci.edu/~eppstein/161/960206.html】](http://www.ics.uci.edu/~eppstein/161/960206.html)
+[【http://en.wikipedia.org/wiki/Minimum_spanning_tree】](http://en.wikipedia.org/wiki/Minimum_spanning_tree)
+本文由[aashis Barnwal](https://www.facebook.com/barnwal.aashish)编辑，GeeksforGeeks 团队审核。如果你发现任何不正确的地方，或者你想分享更多关于上面讨论的话题的信息，请写评论。*
